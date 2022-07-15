@@ -1,8 +1,8 @@
 ## Usage
 Usage for now, will generalise later
-1. Run `hansard_0_download.py` to download all session files
-2. Run `generate_markup.py`, remember to specify which session to process. This will add markup tags to bold and italic text, output as a file in the `output_hansard` folder.
-   1. Run `generate_hansard.py`, remember to specify which session to process. This will generate a `output.txt` that details speakers and content in a machine-friendly format.
+1. Run `hansard_0_download.py` to download all session files.
+2. Run `generate_markup.py`, remember to specify which session to process. This will add markup tags to bold and italic text, output as a file in the `output_hansard` folder. Bold markup will then be processed in the later step as segments.
+3. Run `generate_hansard.py`, remember to specify which session to process. This will generate 3 files in the `analysis_hansard` folder: parquet, logs and output (string representation of Pandas DataFrame)
 
 ### Notes
 

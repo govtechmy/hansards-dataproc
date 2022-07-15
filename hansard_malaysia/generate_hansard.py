@@ -1,9 +1,11 @@
 import re
 import pdfplumber
+import numpy as np
+import pandas as pd
 
 pdf_code = "DR.16.11.2021"
-fonts = set()
 hansard_code = "14-04-02-14"
+analysis_dir = "analysis_hansard"
 
 
 def parse_markup(text):
@@ -57,8 +59,9 @@ with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
             # remove the PDF code in the first line
             all_text += ''.join(f.readlines()[1:])
 
-    # ignore the preface and prayers
+    # ignore the preface and prayers for now
     all_text = all_text.split("mempengerusikan Mesyuarat***]___")[1]
+    # remove timestamps for now
     all_text = remove_timestamps(all_text)
     # separate chunks by boldness
     sentences = parse_markup(all_text)
@@ -73,39 +76,51 @@ with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
     sentences = new_sentences
 
     # print(sentences)
-    parsed_categories = []
-    category = []
     j = 0
     category_id = -1
     logs = ""
+    question_num = -1
+    table = []
     while j < len(sentences):
         if sentences[j][0].strip() == '':
             j += 1
             continue
-        if sentences[j][1] and re.match(r'\d+\.', sentences[j][0].strip()):
+        question_num_search_result = re.search('\d+\.', sentences[j][0])
+        if sentences[j][1] and question_num_search_result:
+            question_num = question_num_search_result.group().strip('.')
+            print("Question number detected: ", question_num)
+            logs += "Question number detected: " + question_num + "\n"
             # detect question number
-            print("Question number detected")
-            logs += "Question number detected\n"
-            print(sentences[j][0])
-            logs += sentences[j][0] + '\n'
+            speaker = ""
+            unpack = sentences[j][0].split(question_num)
+            if len(unpack) == 2:
+                speaker = unpack[1]
+                print("Possible speaker: ", speaker)
+                logs += "Possible speaker: " + speaker + '\n'
+            else:
+                raise ValueError("Unpack size > 2", str(unpack))
             j += 1
             continue
         if category_id + 1 < len(categories) and categories[category_id + 1] in sentences[j][0]:
             print("NEW CATEGORY DETECTED:", categories[category_id + 1])
             logs += "NEW CATEGORY DETECTED: " + categories[category_id + 1] + '\n'
-            parsed_categories.append([categories[category_id], category])
-            category = []
             category_id += 1
             j += 1
             continue
         if sentences[j][1] and not sentences[j + 1][1]:
-            author = sentences[j][0]
-            speech = sentences[j + 1][0]
+            author = sentences[j][0].replace(':', '')
+            speech = sentences[j + 1][0].strip()
             print("author:", author)
             logs += "author: " + author + '\n'
             print("speech:", speech)
             logs += "speech: " + speech + '\n'
-            category.append([author, speech])
+            row = [
+                categories[category_id],
+                question_num,
+                author,
+                speech
+            ]
+            table.append(row)
             j += 1
         else:
             print("ignoring", sentences[j][0])
@@ -116,8 +131,19 @@ with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
 #     text = f.read()
 #     assert "K A N D U N G A N" in text
 
-with open('output.txt', 'w') as f:
-    f.write(str(parsed_categories))
 
-with open('logs.txt', 'w') as f:
+# convert to numpy array
+table = np.array(table)
+
+# convert to pandas dataframe
+df = pd.DataFrame(data=table, columns=["category", "category_remark", "speaker", "content"])
+print(df.head().to_string())
+print(df.tail().to_string())
+
+df.to_parquet(analysis_dir + '/' + hansard_code + '.parquet')
+
+with open(analysis_dir + '/' + hansard_code + '-output.txt', 'w') as f:
+    f.write(df.to_string())
+
+with open(analysis_dir + '/' + hansard_code + '-logs.txt', 'w') as f:
     f.write(logs)
