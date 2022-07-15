@@ -2,6 +2,15 @@ import os
 from PyPDF2 import PdfReader
 from tqdm import tqdm
 
+# Results
+"""
+"JAWAPAN-JAWAPAN MENTERI BAGI PERTANYAAN-PERTANYAAN",
+"JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN",
+"RANG UNDANG-UNDANG DIBAWA KE DALAM MESYUARAT",
+"USUL-USUL",
+"RANG UNDANG-UNDANG"
+"""
+
 phrases = {}
 for filename in tqdm(os.listdir("src_hansard")):
     f = os.path.join("src_hansard", filename)

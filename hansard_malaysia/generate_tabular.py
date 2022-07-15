@@ -1,3 +1,4 @@
+import os
 import re
 import pdfplumber
 import numpy as np
@@ -5,7 +6,7 @@ import pandas as pd
 
 pdf_code = "DR.16.11.2021"
 hansard_code = "14-04-02-14"
-analysis_dir = "analysis_hansard"
+analysis_dir = "analysis_hansard/" + hansard_code
 
 
 def parse_markup(text):
@@ -139,6 +140,9 @@ table = np.array(table)
 df = pd.DataFrame(data=table, columns=["category", "category_remark", "speaker", "content"])
 print(df.head().to_string())
 print(df.tail().to_string())
+
+if not os.path.isdir(analysis_dir):
+    os.mkdir(analysis_dir)
 
 df.to_parquet(analysis_dir + '/' + hansard_code + '.parquet')
 

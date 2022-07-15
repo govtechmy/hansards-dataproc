@@ -1,0 +1,4 @@
+# This file allows the folder to exist in git.
+# This folder contains markup-styled Hansard to be generated via generate_markup.py
+*
+!.gitignore

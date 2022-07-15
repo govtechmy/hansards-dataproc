@@ -1,0 +1,4 @@
+# This file allows the folder to exist in git.
+# This folder contains analysis results to be generated via generate_tabular.py
+*
+!.gitignore
