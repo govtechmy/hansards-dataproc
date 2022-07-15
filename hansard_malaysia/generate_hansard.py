@@ -117,7 +117,7 @@ with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
 #     assert "K A N D U N G A N" in text
 
 with open('output.txt', 'w') as f:
-    f.write(str(categories))
+    f.write(str(parsed_categories))
 
 with open('logs.txt', 'w') as f:
     f.write(logs)
