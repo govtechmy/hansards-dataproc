@@ -4,11 +4,7 @@ import re
 import pdfplumber
 import numpy as np
 import pandas as pd
-
-pdf_code = "DR.16.11.2021"
-hansard_code = "14-04-02-14"
-analysis_dir = "analysis_hansard/" + hansard_code
-
+import generate_markup
 
 def parse_markup(text):
     segments = []
@@ -58,27 +54,90 @@ def export_hansard(table):
         f.write(logs)
 
 
+def clean_segments(_segments):
+    # remove ghost spaces
+    # eg. the space between <> is non-bold, while the rest is bold: Tuan M. Kulasegaran [Ipoh< >Barat]
+    print("removing ghost spaces")
+    print("number of segments:", len(_segments))
+    new_segments = []
+    i = 1
+    while i < len(_segments) - 1:
+        if _segments[i][0] == ' ' and _segments[i - 1][1] == _segments[i + 1][1]:
+            new_segments[-1][0] += _segments[i + 1][0]
+            i += 1
+        else:
+            new_segments.append(_segments[i])
+        i += 1
+    _segments = new_segments
+    print("number of segments:", len(_segments))
+
+    # remove ghost bold whitespaces (not just spaces)
+    print("removing ghost whitespaces")
+    _segments = [segment for segment in _segments if segment[0].strip()]
+    print("number of segments:", len(_segments))
+
+    print("Combining adjacent non-bold segments")
+    new_segments = [_segments[0]]
+    for i in range(1, len(_segments)):
+        if not _segments[i][1] and not new_segments[-1][1]:
+            # if ghost spaces separate non-bold paragraphs, stitch them back
+            new_segments[-1][0] += ' ' + _segments[i][0]
+        else:
+            new_segments.append(_segments[i])
+    _segments = new_segments
+    print("number of segments:", len(_segments))
+
+    # strip whitespaces
+    _segments = [[segment[0].strip(), segment[1]] for segment in _segments]
+    return _segments
+
+
+def get_categories(hansard_code):
+    with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
+        for idx, page in enumerate(pdf.pages):
+            layout_text = page.extract_text().replace(' ', '')
+            # get first page with texts
+            if "KANDUNGAN" in layout_text:
+                all_text = generate_markup.process_file(hansard_code, page_num=idx)
+                break
+    print(all_text)
+    _segments = parse_markup(all_text)
+    print(len(_segments))
+    _segments = clean_segments(_segments)
+    bolds = []
+    for segment in _segments:
+        if segment[1]:
+            bolds.append(segment[0].replace(':',''))
+    # remove the first bold (kandungan)
+    return bolds[1:]
+
+
 if __name__ == "__main__":
+    pdf_code = "DR.16.11.2021"
+    hansard_code = "14-04-02-14"
+    analysis_dir = "analysis_hansard/" + hansard_code
+    categories = get_categories(hansard_code)
+    print(categories)
     # TODO: categories parse from "K A N D U N G A N"
-    categories = [
-        # 14-04-01-17
-        "USUL MENANGGUHKAN BACAAN KALI YANG KEDUA DAN KETIGA RANG UNDANG-UNDANG",
-        "JAWAPAN-JAWAPAN MENTERI BAGI PERTANYAAN-PERTANYAAN",
-        "JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN",
-        # 14-04-01-17
-        "USUL",
-        "RANG UNDANG-UNDANG DIBAWA KE DALAM MESYUARAT",
-        # 14-04-01-17
-        "USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 76:",
-        # 14-04-01-16
-        "USUL MENTERI DI BAWAH P.M. 86(5)",
-        # 14-04-01-13
-        "USUL MENANGGUHKAN MESYUARAT DI BAWAH P.M. 18(1)",
-        "USUL-USUL",
-        "RANG UNDANG-UNDANG",
-        # 14-04-01-17
-        "USUL-USUL MENTERI KEWANGAN:"
-    ]
+    # categories = [
+    #     # 14-04-01-17
+    #     "USUL MENANGGUHKAN BACAAN KALI YANG KEDUA DAN KETIGA RANG UNDANG-UNDANG",
+    #     "JAWAPAN-JAWAPAN MENTERI BAGI PERTANYAAN-PERTANYAAN",
+    #     "JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN",
+    #     # 14-04-01-17
+    #     "USUL",
+    #     "RANG UNDANG-UNDANG DIBAWA KE DALAM MESYUARAT",
+    #     # 14-04-01-17
+    #     "USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 76:",
+    #     # 14-04-01-16
+    #     "USUL MENTERI DI BAWAH P.M. 86(5)",
+    #     # 14-04-01-13
+    #     "USUL MENANGGUHKAN MESYUARAT DI BAWAH P.M. 18(1)",
+    #     "USUL-USUL",
+    #     "RANG UNDANG-UNDANG",
+    #     # 14-04-01-17
+    #     "USUL-USUL MENTERI KEWANGAN:"
+    # ]
 
     dir_path = "output_hansard/" + hansard_code
 
@@ -116,39 +175,7 @@ if __name__ == "__main__":
             pprint.pprint(segments, log_file)
         print("number of segments:", len(segments))
 
-        # remove ghost spaces
-        # eg. the space between <> is non-bold, while the rest is bold: Tuan M. Kulasegaran [Ipoh< >Barat]
-        print("removing ghost spaces")
-        new_segments = []
-        i = 1
-        while i < len(segments) - 1:
-            if segments[i][0] == ' ' and segments[i - 1][1] == segments[i + 1][1]:
-                new_segments[-1][0] += segments[i + 1][0]
-                i += 1
-            else:
-                new_segments.append(segments[i])
-            i += 1
-        segments = new_segments
-        print("number of segments:", len(segments))
-
-        # remove ghost bold whitespaces (not just spaces)
-        print("removing ghost whitespaces")
-        segments = [segment for segment in segments if segment[0].strip()]
-        print("number of segments:", len(segments))
-
-        print("Combining adjacent non-bold segments")
-        new_segments = [segments[0]]
-        for i in range(1, len(segments)):
-            if not segments[i][1] and not new_segments[-1][1]:
-                # if ghost spaces separate non-bold paragraphs, stitch them back
-                new_segments[-1][0] += ' ' + segments[i][0]
-            else:
-                new_segments.append(segments[i])
-        segments = new_segments
-        print("number of segments:", len(segments))
-
-        # strip whitespaces
-        segments = [[segment[0].strip(), segment[1]] for segment in segments]
+        segments = clean_segments(segments)
 
         # print(segments)
         j = 0

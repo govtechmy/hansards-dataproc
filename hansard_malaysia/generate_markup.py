@@ -65,12 +65,15 @@ def process_file(hansard_code, page_num=-1):
             os.mkdir(dir_path)
         if page_num != -1:
             with open(dir_path + "/" + str(page_num) + ".txt", 'w') as f:
-                f.write(add_markup(pdf.pages[page_num].chars, dir_path))
+                output = add_markup(pdf.pages[page_num].chars, dir_path)
+                f.write(output)
         else:
             for idx, page in enumerate(tqdm(pdf.pages)):
                 with open(dir_path + "/" + str(idx) + ".txt", 'w') as f:
                     # add markup for bold and italics
-                    f.write(add_markup(page.chars, dir_path))
+                    output = add_markup(page.chars, dir_path)
+                    f.write(output)
+    return output
 
 
 if __name__ == "__main__":
