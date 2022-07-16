@@ -47,7 +47,7 @@ def add_markup(chars):
             sentence = ['', 1]
             text += "***"
             bold_streak = True
-        
+
         sentence[0] += char['text']
         # if "Italic" in char["fontname"] and not italic_streak:
         #     text += "___"
@@ -55,8 +55,8 @@ def add_markup(chars):
         text += char['text']
     if sentence[0]:
         sentences.append(sentence)
-    
-    with open(dir_path + '/' + 'analysis.txt','w') as f:
+
+    with open(dir_path + '/' + 'analysis.txt', 'w') as f:
         pprint.pprint(sentences, f)
     return text
 
@@ -74,7 +74,7 @@ with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
 # with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
 #     with open(dir_path + "/" + str(10) + "-layout.txt", 'w') as f:
 #         f.write(pdf.pages[10].extract_text(layout=True))
-        
+
 
 # with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
 #     with open(dir_path + "/" + str(10) + "-extract.txt", 'w') as f:

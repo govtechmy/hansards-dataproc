@@ -73,7 +73,7 @@ with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
     all_text = remove_timestamps(all_text)
     print("number of text:", len(all_text))
 
-    with open(analysis_dir + "/raw_text.txt", "w") as f:
+    with open(analysis_dir + "/cleaned_text.txt", "w") as f:
         f.write(all_text)
 
     # separate chunks by boldness
@@ -87,9 +87,9 @@ with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
     print("removing ghost spaces")
     new_segments = []
     i = 1
-    while i < len(segments)-1:
-        if segments[i][0] == ' ' and segments[i-1][1] == segments[i+1][1]:
-            new_segments[-1][0] += segments[i+1][0]
+    while i < len(segments) - 1:
+        if segments[i][0] == ' ' and segments[i - 1][1] == segments[i + 1][1]:
+            new_segments[-1][0] += segments[i + 1][0]
             i += 1
         else:
             new_segments.append(segments[i])
@@ -113,22 +113,30 @@ with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
     segments = new_segments
     print("number of segments:", len(segments))
 
+    # strip whitespaces
+    segments = [[segment[0].strip(), segment[1]] for segment in segments]
+
     # print(segments)
     j = 0
     category_id = -1
     logs = ""
     question_num = -1
     table = []
-    
+
     print(segments[:5])
     while j < len(segments):
-        if category_id + 1 < len(categories) and categories[category_id + 1] in segments[j][0]:
-            print("NEW CATEGORY DETECTED: " + categories[category_id + 1])
-            logs += "NEW CATEGORY DETECTED: " + categories[category_id + 1] + '\n'
-            category_id += 1
-            j += 1
-            continue
         if j + 1 < len(segments) and segments[j][1] and segments[j + 1][1]:
+            if category_id + 1 < len(categories) and categories[category_id + 1] in segments[j][0]:
+                print("NEW CATEGORY DETECTED:" + categories[category_id + 1])
+                logs += "NEW CATEGORY DETECTED: " + categories[category_id + 1] + '\n'
+                category_id += 1
+                j += 1
+                continue
+            elif re.match(r'\d+\.',segments[j][0]):
+                question_num = segments[j][0].split('.')[0]
+                print("QUESTION NUMBER DETECTED:", question_num)
+                j += 1
+                continue
             print("double bold, ignoring:", segments[j][0])
             logs += "double bold, ignoring: " + segments[j][0] + '\n'
             j += 1
@@ -149,6 +157,10 @@ with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
         #     continue
         if j + 1 < len(segments) and segments[j][1] and not segments[j + 1][1]:
             author = segments[j][0].replace(':', '')
+            if re.match(r'\d+\.', author):
+                question_num = author.split('.')[0]
+                author = '.'.join(author.split('.')[1:])
+                print("QUESTION NUMBER DETECTED:", question_num)
             speech = segments[j + 1][0].strip()
             logs += "author: " + author + '\n'
             logs += "speech: " + speech + '\n'
