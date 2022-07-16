@@ -1,14 +1,10 @@
 import pprint
-
 import pdfplumber
 import os
 from tqdm import tqdm
 
-hansard_code = "14-04-02-14"
-dir_path = "output_hansard/" + hansard_code
 
-
-def add_markup(chars):
+def add_markup(chars, dir_path):
     chars.append({'text': '', 'fontname': ''})
     prev_char = ''
     new_chars = []
@@ -61,14 +57,25 @@ def add_markup(chars):
     return text
 
 
-with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
-    print("adding markup...")
-    for idx, page in enumerate(tqdm(pdf.pages)):
+def process_file(hansard_code, page_num=-1):
+    dir_path = "output_hansard/" + hansard_code
+    with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
+        # print("adding markup...")
         if not os.path.isdir(dir_path):
             os.mkdir(dir_path)
-        with open(dir_path + "/" + str(idx) + ".txt", 'w') as f:
-            # add markup for bold and italics
-            f.write(add_markup(page.chars))
+        if page_num != -1:
+            with open(dir_path + "/" + str(page_num) + ".txt", 'w') as f:
+                f.write(add_markup(pdf.pages[page_num].chars, dir_path))
+        else:
+            for idx, page in enumerate(tqdm(pdf.pages)):
+                with open(dir_path + "/" + str(idx) + ".txt", 'w') as f:
+                    # add markup for bold and italics
+                    f.write(add_markup(page.chars, dir_path))
+
+
+if __name__ == "__main__":
+    hansard_code = "14-04-02-14"
+    process_file(hansard_code)
 
 # for special generation
 # with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
