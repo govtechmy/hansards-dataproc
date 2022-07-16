@@ -1,3 +1,5 @@
+import pprint
+
 import pdfplumber
 import os
 from tqdm import tqdm
@@ -7,9 +9,6 @@ dir_path = "output_hansard/" + hansard_code
 
 
 def add_markup(chars):
-    text = ""
-    bold_streak = False
-    italic_streak = False
     chars.append({'text': '', 'fontname': ''})
     prev_char = ''
     new_chars = []
@@ -19,12 +18,15 @@ def add_markup(chars):
             # can optimise below?
             new_chars = new_chars[:-1]
             char['text'] = '\n'
-            # remove boldness
-            # char["fontname"] = char["fontname"].replace("Arial-BoldItalicMT", "Arial-ItalicMT")
-            # char["fontname"] = char["fontname"].replace("Arial-BoldMT", "ArialMT")
         new_chars.append(char)
         prev_char = char['text']
     chars = new_chars
+
+    sentences = []
+    sentence = ["", -1]
+    text = ""
+    bold_streak = False
+    italic_streak = False
     for char in chars:
         # if "Italic" not in char["fontname"] and italic_streak:
         #     text += "___"
@@ -35,17 +37,27 @@ def add_markup(chars):
             continue
 
         if "Bold" not in char["fontname"] and bold_streak:
+            sentences.append(sentence)
+            sentence = ['', 1]
             text += "***"
             bold_streak = False
 
         if "Bold" in char["fontname"] and not bold_streak:
+            sentences.append(sentence)
+            sentence = ['', 1]
             text += "***"
             bold_streak = True
+        
+        sentence[0] += char['text']
         # if "Italic" in char["fontname"] and not italic_streak:
         #     text += "___"
         #     italic_streak = True
         text += char['text']
-
+    if sentence[0]:
+        sentences.append(sentence)
+    
+    with open(dir_path + '/' + 'analysis.txt','w') as f:
+        pprint.pprint(sentences, f)
     return text
 
 

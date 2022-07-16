@@ -11,21 +11,21 @@ analysis_dir = "analysis_hansard/" + hansard_code
 
 
 def parse_markup(text):
-    sentences = []
-    sentence = text[:2]
+    segments = []
+    segment = text[:2]
     bold = False
     for i in range(2, len(text)):
-        sentence += text[i]
+        segment += text[i]
         if text[i - 2:i + 1] == '***':
-            sentence = sentence[:-3]
+            segment = segment[:-3]
             if bold:
-                package = [sentence, 1]
+                package = [segment, 1]
             else:
-                package = [sentence, 0]
-            sentences.append(package)
+                package = [segment, 0]
+            segments.append(package)
             bold = not bold
-            sentence = ""
-    return sentences
+            segment = ""
+    return segments
 
 
 def remove_timestamps(text):
@@ -67,72 +67,78 @@ with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
     all_text = re.sub(r'\[[A-Za-z’()\- ]+ \*\*\*mempengerusikan Mesyuarat\*\*\*]', '', all_text)
     print("number of text:", len(all_text))
 
-    # ignore the preface and prayers for now
-    # all_text = all_text.split("mempengerusikan Mesyuarat***]")[1]
-
     # remove timestamps for now
     print("removing timestamps")
     all_text = remove_timestamps(all_text)
+    print("number of text:", len(all_text))
 
-    # separate chunks by boldness
     with open(analysis_dir + "/raw_text.txt", "w") as f:
         f.write(all_text)
-    sentences = parse_markup(all_text)
-    with open(analysis_dir + "/sentences.log", "w") as log_file:
-        pprint.pprint(sentences, log_file)
-    print("number of sentences:", len(sentences))
+
+    # separate chunks by boldness
+    segments = parse_markup(all_text)
+    with open(analysis_dir + "/segments.log", "w") as log_file:
+        pprint.pprint(segments, log_file)
+    print("number of segments:", len(segments))
 
     # remove ghost spaces
+    # eg. the space between <> is non-bold, while the rest is bold: Tuan M. Kulasegaran [Ipoh< >Barat]
     print("removing ghost spaces")
-    new_sentences = []
+    new_segments = []
     i = 1
-    while i < len(sentences)-1:
-        if sentences[i][0] == ' ' and sentences[i-1][1] == sentences[i+1][1]:
-            new_sentences[-1][0] += sentences[i+1][0]
+    while i < len(segments)-1:
+        if segments[i][0] == ' ' and segments[i-1][1] == segments[i+1][1]:
+            new_segments[-1][0] += segments[i+1][0]
             i += 1
         else:
-            new_sentences.append(sentences[i])
+            new_segments.append(segments[i])
         i += 1
-    sentences = new_sentences
-    # remove ghost bold spaces
-    sentences = [sentence for sentence in sentences if sentence[0].strip()]
-    new_sentences = [sentences[0]]
-    for i in range(1, len(sentences)):
-        if not sentences[i][1] and not new_sentences[-1][1]:
-            # if ghost spaces separate non-bold paragraphs, stitch them back
-            new_sentences[-1][0] += ' ' + sentences[i][0]
-        else:
-            new_sentences.append(sentences[i])
-    sentences = new_sentences
-    print("number of sentences:", len(sentences))
+    segments = new_segments
+    print("number of segments:", len(segments))
 
-    # print(sentences)
+    # remove ghost bold whitespaces (not just spaces)
+    print("removing ghost whitespaces")
+    segments = [segment for segment in segments if segment[0].strip()]
+    print("number of segments:", len(segments))
+
+    print("Combining adjacent non-bold segments")
+    new_segments = [segments[0]]
+    for i in range(1, len(segments)):
+        if not segments[i][1] and not new_segments[-1][1]:
+            # if ghost spaces separate non-bold paragraphs, stitch them back
+            new_segments[-1][0] += ' ' + segments[i][0]
+        else:
+            new_segments.append(segments[i])
+    segments = new_segments
+    print("number of segments:", len(segments))
+
+    # print(segments)
     j = 0
     category_id = -1
     logs = ""
     question_num = -1
     table = []
     
-    print(sentences[:5])
-    while j < len(sentences):
-        if category_id + 1 < len(categories) and categories[category_id + 1] in sentences[j][0]:
+    print(segments[:5])
+    while j < len(segments):
+        if category_id + 1 < len(categories) and categories[category_id + 1] in segments[j][0]:
             print("NEW CATEGORY DETECTED: " + categories[category_id + 1])
             logs += "NEW CATEGORY DETECTED: " + categories[category_id + 1] + '\n'
             category_id += 1
             j += 1
             continue
-        if j + 1 < len(sentences) and sentences[j][1] and sentences[j + 1][1]:
-            print("double bold, ignoring:", sentences[j][0])
-            logs += "double bold, ignoring: " + sentences[j][0] + '\n'
+        if j + 1 < len(segments) and segments[j][1] and segments[j + 1][1]:
+            print("double bold, ignoring:", segments[j][0])
+            logs += "double bold, ignoring: " + segments[j][0] + '\n'
             j += 1
             continue
-        question_num_search_result = re.search('\d+\.', sentences[j][0])
-        # if sentences[j][1] and question_num_search_result:
+        question_num_search_result = re.search('\d+\.', segments[j][0])
+        # if segments[j][1] and question_num_search_result:
         #     question_num = question_num_search_result.group().strip('.')
         #     logs += "Question number detected: " + question_num + "\n"
         #     # detect question number
         #     speaker = ""
-        #     unpack = sentences[j][0].split(question_num)
+        #     unpack = segments[j][0].split(question_num)
         #     if len(unpack) == 2:
         #         speaker = unpack[1]
         #         logs += "Possible speaker: " + speaker + '\n'
@@ -140,9 +146,9 @@ with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
         #     #     raise ValueError("Unpack size > 2", str(unpack))
         #     j += 1
         #     continue
-        if j + 1 < len(sentences) and sentences[j][1] and not sentences[j + 1][1]:
-            author = sentences[j][0].replace(':', '')
-            speech = sentences[j + 1][0].strip()
+        if j + 1 < len(segments) and segments[j][1] and not segments[j + 1][1]:
+            author = segments[j][0].replace(':', '')
+            speech = segments[j + 1][0].strip()
             logs += "author: " + author + '\n'
             logs += "speech: " + speech + '\n'
             row = [
@@ -154,8 +160,8 @@ with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
             table.append(row)
             j += 1
         else:
-            print("ignoring with status ", sentences[j][1], sentences[j][0])
-            logs += "ignoring: " + sentences[j][0] + '\n'
+            print("ignoring with status ", segments[j][1], segments[j][0])
+            logs += "ignoring: " + segments[j][0] + '\n'
         j += 1
 
 # with open("output_hansard/14-04-01-02-plumber/2-layout.txt") as f:
