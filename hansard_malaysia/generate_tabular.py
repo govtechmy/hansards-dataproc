@@ -33,6 +33,7 @@ def remove_timestamps(text):
     text = re.sub(r'■\*\*\*\d{4}', '***', text)
     text = re.sub(r'\*\*\*■\d{4}\*\*\*', '', text)
     text = re.sub(r'■\d{4}', '', text)
+    text = re.sub(r'\d{1,2}\.\d{2} ((tgh)|(ptg))\.', '', text)
     return text
 
 
