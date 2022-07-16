@@ -1,4 +1,5 @@
 import os
+import pprint
 import re
 import pdfplumber
 import numpy as np
@@ -53,28 +54,57 @@ with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
         if layout_text[:16] == pdf_code + '  1':
             first_page = idx
             break
-    nxt = 0
+    print('first page:', first_page)
     all_text = ""
     for idx in range(first_page, len(pdf.pages)):
         with open(dir_path + "/" + str(idx) + ".txt", 'r') as f:
             # remove the PDF code in the first line
             all_text += ''.join(f.readlines()[1:])
 
+    # ignore special texts in the format [XX mempengerusikan Mesyuarat]
+    # for example: [Timbalan Yang di-Pertua (Dato’ Mohd Rashid Hasnon) mempengerusikan Mesyuarat]
+    print("number of text:", len(all_text))
+    all_text = re.sub(r'\[[A-Za-z’()\- ]+ \*\*\*mempengerusikan Mesyuarat\*\*\*]', '', all_text)
+    print("number of text:", len(all_text))
+
     # ignore the preface and prayers for now
-    all_text = all_text.split("mempengerusikan Mesyuarat***]___")[1]
+    # all_text = all_text.split("mempengerusikan Mesyuarat***]")[1]
+
     # remove timestamps for now
+    print("removing timestamps")
     all_text = remove_timestamps(all_text)
+
     # separate chunks by boldness
+    with open(analysis_dir + "/raw_text.txt", "w") as f:
+        f.write(all_text)
     sentences = parse_markup(all_text)
+    with open(analysis_dir + "/sentences.log", "w") as log_file:
+        pprint.pprint(sentences, log_file)
+    print("number of sentences:", len(sentences))
+
+    # remove ghost spaces
+    print("removing ghost spaces")
+    new_sentences = []
+    i = 1
+    while i < len(sentences)-1:
+        if sentences[i][0] == ' ' and sentences[i-1][1] == sentences[i+1][1]:
+            new_sentences[-1][0] += sentences[i+1][0]
+            i += 1
+        else:
+            new_sentences.append(sentences[i])
+        i += 1
+    sentences = new_sentences
     # remove ghost bold spaces
-    sentences = [sentence for sentence in sentences if not sentence[1] or sentence[0].strip()]
+    sentences = [sentence for sentence in sentences if sentence[0].strip()]
     new_sentences = [sentences[0]]
     for i in range(1, len(sentences)):
         if not sentences[i][1] and not new_sentences[-1][1]:
+            # if ghost spaces separate non-bold paragraphs, stitch them back
             new_sentences[-1][0] += ' ' + sentences[i][0]
         else:
             new_sentences.append(sentences[i])
     sentences = new_sentences
+    print("number of sentences:", len(sentences))
 
     # print(sentences)
     j = 0
@@ -82,38 +112,38 @@ with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
     logs = ""
     question_num = -1
     table = []
+    
+    print(sentences[:5])
     while j < len(sentences):
-        if sentences[j][0].strip() == '':
-            j += 1
-            continue
-        question_num_search_result = re.search('\d+\.', sentences[j][0])
-        if sentences[j][1] and question_num_search_result:
-            question_num = question_num_search_result.group().strip('.')
-            print("Question number detected: ", question_num)
-            logs += "Question number detected: " + question_num + "\n"
-            # detect question number
-            speaker = ""
-            unpack = sentences[j][0].split(question_num)
-            if len(unpack) == 2:
-                speaker = unpack[1]
-                print("Possible speaker: ", speaker)
-                logs += "Possible speaker: " + speaker + '\n'
-            else:
-                raise ValueError("Unpack size > 2", str(unpack))
-            j += 1
-            continue
         if category_id + 1 < len(categories) and categories[category_id + 1] in sentences[j][0]:
-            print("NEW CATEGORY DETECTED:", categories[category_id + 1])
+            print("NEW CATEGORY DETECTED: " + categories[category_id + 1])
             logs += "NEW CATEGORY DETECTED: " + categories[category_id + 1] + '\n'
             category_id += 1
             j += 1
             continue
-        if sentences[j][1] and not sentences[j + 1][1]:
+        if j + 1 < len(sentences) and sentences[j][1] and sentences[j + 1][1]:
+            print("double bold, ignoring:", sentences[j][0])
+            logs += "double bold, ignoring: " + sentences[j][0] + '\n'
+            j += 1
+            continue
+        question_num_search_result = re.search('\d+\.', sentences[j][0])
+        # if sentences[j][1] and question_num_search_result:
+        #     question_num = question_num_search_result.group().strip('.')
+        #     logs += "Question number detected: " + question_num + "\n"
+        #     # detect question number
+        #     speaker = ""
+        #     unpack = sentences[j][0].split(question_num)
+        #     if len(unpack) == 2:
+        #         speaker = unpack[1]
+        #         logs += "Possible speaker: " + speaker + '\n'
+        #     # else:
+        #     #     raise ValueError("Unpack size > 2", str(unpack))
+        #     j += 1
+        #     continue
+        if j + 1 < len(sentences) and sentences[j][1] and not sentences[j + 1][1]:
             author = sentences[j][0].replace(':', '')
             speech = sentences[j + 1][0].strip()
-            print("author:", author)
             logs += "author: " + author + '\n'
-            print("speech:", speech)
             logs += "speech: " + speech + '\n'
             row = [
                 categories[category_id],
@@ -124,7 +154,7 @@ with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
             table.append(row)
             j += 1
         else:
-            print("ignoring", sentences[j][0])
+            print("ignoring with status ", sentences[j][1], sentences[j][0])
             logs += "ignoring: " + sentences[j][0] + '\n'
         j += 1
 
@@ -138,8 +168,8 @@ table = np.array(table)
 
 # convert to pandas dataframe
 df = pd.DataFrame(data=table, columns=["category", "category_remark", "speaker", "content"])
-print(df.head().to_string())
-print(df.tail().to_string())
+# print(df.head().to_string())
+# print(df.tail().to_string())
 
 if not os.path.isdir(analysis_dir):
     os.mkdir(analysis_dir)

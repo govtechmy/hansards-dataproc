@@ -5,6 +5,7 @@ from tqdm import tqdm
 hansard_code = "14-04-02-14"
 dir_path = "output_hansard/" + hansard_code
 
+
 def add_markup(chars):
     text = ""
     bold_streak = False
@@ -19,36 +20,38 @@ def add_markup(chars):
             new_chars = new_chars[:-1]
             char['text'] = '\n'
             # remove boldness
-            char["fontname"] = char["fontname"].replace("Arial-BoldItalicMT", "Arial-ItalicMT")
-            char["fontname"] = char["fontname"].replace("Arial-BoldMT", "ArialMT")
+            # char["fontname"] = char["fontname"].replace("Arial-BoldItalicMT", "Arial-ItalicMT")
+            # char["fontname"] = char["fontname"].replace("Arial-BoldMT", "ArialMT")
         new_chars.append(char)
         prev_char = char['text']
     chars = new_chars
     for char in chars:
-        if "Italic" not in char["fontname"] and italic_streak:
-            text += "___"
-            italic_streak = False
+        # if "Italic" not in char["fontname"] and italic_streak:
+        #     text += "___"
+        #     italic_streak = False
+        if char['text'] == '\n' and bold_streak:
+            # newlines separates two bold segments
+            text += "******"
+            continue
+
         if "Bold" not in char["fontname"] and bold_streak:
-            if text.strip()[-3:] == '***':
-                # delete ghost segments
-                text = text.strip()[:-3]
-            else:
-                text += "***"
+            text += "***"
             bold_streak = False
 
         if "Bold" in char["fontname"] and not bold_streak:
             text += "***"
             bold_streak = True
-        if "Italic" in char["fontname"] and not italic_streak:
-            text += "___"
-            italic_streak = True
+        # if "Italic" in char["fontname"] and not italic_streak:
+        #     text += "___"
+        #     italic_streak = True
         text += char['text']
 
     return text
 
+
 with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
     print("adding markup...")
-    for idx, page in tqdm(enumerate(pdf.pages)):
+    for idx, page in enumerate(tqdm(pdf.pages)):
         if not os.path.isdir(dir_path):
             os.mkdir(dir_path)
         with open(dir_path + "/" + str(idx) + ".txt", 'w') as f:
@@ -56,9 +59,25 @@ with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
             f.write(add_markup(page.chars))
 
 # for special generation
-# with pdfplumber.open('src_hansard/hansard_14-04-01-13.pdf') as pdf:
-#     with open("output_hansard/14-04-01-02-plumber/" + str(10) + "-layout.txt", 'w') as f:
+# with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
+#     with open(dir_path + "/" + str(10) + "-layout.txt", 'w') as f:
 #         f.write(pdf.pages[10].extract_text(layout=True))
+        
+
+# with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
+#     with open(dir_path + "/" + str(10) + "-extract.txt", 'w') as f:
+#         f.write(pdf.pages[10].extract_text())
+
+# with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
+#     with open(dir_path + "/" + str(10) + "-plain.txt", 'w') as f:
+#         f.write(''.join([x['text'] for x in pdf.pages[10].chars]))
+
+# with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
+#     text = ''
+#     for page in tqdm(pdf.pages[10:]):
+#         text += ''.join([x['text'] for x in page.chars])
+#     with open(dir_path + "/plain.txt", 'w') as f:
+#         f.write(text)
 
 # for special generation
 # with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
