@@ -89,6 +89,20 @@ def clean_segments(_segments):
     _segments = new_segments
     print("number of segments:", len(_segments))
 
+    # separate Dewan annotations
+    # new_segments = []
+    # for _segment in _segments:
+    #     if not _segment[1]:
+    #         lst = re.compile('\n *\[').split(_segment[0])
+    #         # lst = _segment[0].split('\n[')
+    #         if lst[0]:
+    #             new_segments.append([lst[0], 0])
+    #         for i in lst[1:]:
+    #             new_segments.append(['[' + i, 0])
+    #     else:
+    #         new_segments.append(_segment)
+    # _segments = new_segments
+
     # strip whitespaces
     _segments = [[segment[0].strip(), segment[1]] for segment in _segments]
     return _segments
@@ -168,8 +182,9 @@ if __name__ == "__main__":
 
         # ignore special texts in the format [XX mempengerusikan Mesyuarat]
         # for example: [Timbalan Yang di-Pertua (Dato’ Mohd Rashid Hasnon) mempengerusikan Mesyuarat]
+        # as they cut inside dialogue mid-speech
         print("number of text:", len(all_text))
-        all_text = re.sub(r'\[[A-Za-z’()\- ]+ \*\*\*mempengerusikan Mesyuarat\*\*\*]', '', all_text)
+        all_text = re.sub(r'\[[A-Za-z’\'()\- ]+ mempengerusikan Mesyuarat]', '', all_text)
         print("number of text:", len(all_text))
 
         # remove timestamps for now
@@ -199,9 +214,20 @@ if __name__ == "__main__":
         j += 1
         while j < len(segments):
             # ignore known, special bold segments
-            if "MALAYSIA DEWAN RAKYAT PARLIMEN" in segments[j][0] \
-                    or ('[' == segments[j][0][0] and ']' == segments[j][0][-1]):
-                print("ignoring special segment:", segments[j][0])
+            if '[' == segments[j][0][0] and ']' == segments[j][0][-1]:
+                # DEWAN annotations
+                print("annotates",segments[j][0])
+                author = "DEWAN"
+                speech = segments[j][0].strip()
+                logs += "author: " + author + '\n'
+                logs += "speech: " + speech + '\n'
+                row = [
+                    current_category,
+                    question_num,
+                    author,
+                    speech
+                ]
+                table.append(row)
                 j += 1
                 continue
             if not segments[j][1]:
@@ -210,6 +236,7 @@ if __name__ == "__main__":
                 speech = segments[j][0].strip()
                 logs += "author: " + author + '\n'
                 logs += "speech: " + speech + '\n'
+                print("text without author:", speech)
                 row = [
                     current_category,
                     question_num,
@@ -225,8 +252,8 @@ if __name__ == "__main__":
             if segments[j][1] and segments[j][0].isupper():
                 # after initiation, conditions are less strict: text can be lowercase (eg. Bacaan kali...)
                 # additionally, separate title from speakers (usually with [ ]) and numbering
-                while segments[j][1] and not re.search(r'[\[\]]',segments[j][0]) \
-                        and not re.search(r'\d+\.',segments[j][0].strip()):
+                while segments[j][1] and not re.search(r'[\[\]]', segments[j][0]) \
+                        and not re.search(r'\d+\.', segments[j][0].strip()):
                     # while bold
                     if new_category:
                         new_category += '; '

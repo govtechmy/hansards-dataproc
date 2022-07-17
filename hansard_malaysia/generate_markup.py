@@ -18,11 +18,10 @@ def add_markup(chars, dir_path):
         prev_char = char['text']
     chars = new_chars
 
-    sentences = []
-    sentence = ["", -1]
     text = ""
     bold_streak = False
     italic_streak = False
+    in_bracket = False
     for char in chars:
         # if "Italic" not in char["fontname"] and italic_streak:
         #     text += "___"
@@ -33,27 +32,26 @@ def add_markup(chars, dir_path):
             continue
 
         if "Bold" not in char["fontname"] and bold_streak:
-            sentences.append(sentence)
-            sentence = ['', 1]
             text += "***"
             bold_streak = False
 
-        if "Bold" in char["fontname"] and not bold_streak:
-            sentences.append(sentence)
-            sentence = ['', 1]
+        if char['text'] == '[' and not bold_streak:
+            # to prevent bold inside Dewan annotations
+            # eg. [Rang undang-undang dimaklumkan kepada Majlis sekarang]
+            in_bracket = True
+
+        if "Bold" in char["fontname"] and not bold_streak and not in_bracket and char['text'] != ' ':
             text += "***"
             bold_streak = True
 
-        sentence[0] += char['text']
+        if char['text'] == ']':
+            in_bracket = False
+
         # if "Italic" in char["fontname"] and not italic_streak:
         #     text += "___"
         #     italic_streak = True
         text += char['text']
-    if sentence[0]:
-        sentences.append(sentence)
 
-    with open(dir_path + '/' + 'analysis.txt', 'w') as f:
-        pprint.pprint(sentences, f)
     return text
 
 
