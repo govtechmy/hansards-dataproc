@@ -6,6 +6,7 @@ import numpy as np
 import pandas as pd
 import generate_markup
 
+
 def parse_markup(text):
     segments = []
     segment = text[:2]
@@ -107,7 +108,7 @@ def get_categories(hansard_code):
     bolds = []
     for segment in _segments:
         if segment[1]:
-            bolds.append(segment[0].replace(':',''))
+            bolds.append(segment[0].replace(':', ''))
     # remove the first bold (kandungan)
     return bolds[1:]
 
@@ -187,7 +188,7 @@ if __name__ == "__main__":
         print(segments[:5])
         while j < len(segments):
             if j + 1 < len(segments) and segments[j][1] and segments[j + 1][1]:
-                if category_id + 1 < len(categories) and categories[category_id + 1] in segments[j][0]:
+                if category_id + 1 < len(categories) and categories[category_id + 1] == segments[j][0]:
                     print("NEW CATEGORY DETECTED:" + categories[category_id + 1])
                     logs += "NEW CATEGORY DETECTED: " + categories[category_id + 1] + '\n'
                     question_num = -1
