@@ -31,6 +31,7 @@ def remove_timestamps(text):
     text = re.sub(r'\*\*\*■\d{4}\*\*\*', '', text)
     text = re.sub(r'■\d{4}', '', text)
     text = re.sub(r'\d{1,2}\.\d{2} ((tgh)|(ptg)|(pg))\.', '', text)
+    text = re.sub(r'\d{1,2}\.\d{2} ((tgh)|(ptg)|(pg))', '', text)
     return text
 
 
@@ -118,7 +119,7 @@ def get_categories(hansard_code):
 
 
 if __name__ == "__main__":
-    hansard_code = "14-04-02-15"
+    hansard_code = "14-04-01-17"
     df = pd.read_csv('sessions.csv', parse_dates=['date'])
     df.date = df.date.dt.date
     sessions = df.session.tolist()
@@ -129,7 +130,6 @@ if __name__ == "__main__":
         os.mkdir(analysis_dir)
     categories = get_categories(hansard_code)
     print(categories)
-    # TODO: categories parse from "K A N D U N G A N"
     # categories = [
     #     # 14-04-01-17
     #     "USUL MENANGGUHKAN BACAAN KALI YANG KEDUA DAN KETIGA RANG UNDANG-UNDANG",
@@ -194,6 +194,9 @@ if __name__ == "__main__":
         question_num = -1
         table = []
         current_category = "NO CATEGORY DETECTED"
+        while "DOA" not in segments[j][0]:
+            j += 1
+        j += 1
         while j < len(segments):
             # ignore known, special bold segments
             if "MALAYSIA DEWAN RAKYAT PARLIMEN" in segments[j][0] \
@@ -218,16 +221,17 @@ if __name__ == "__main__":
                 continue
 
             new_category = ""
-            while segments[j][1] and segments[j][0][-1] != ':' and not re.match(r'\d+\. ',segments[j][0]):
-                # while bold
-                if new_category:
-                    new_category += ' '
-                new_category += segments[j][0]
-                if "JAWAPAN-JAWAPAN " in new_category:
-                    # known pattern (only single line for this category)
-                    # the following author does not have colon
-                    segments[j + 1][0] += ':'
-                j += 1
+            # initiate category parsing if is bold and all uppercase
+            if segments[j][1] and segments[j][0].isupper():
+                # after initiation, conditions are less strict: text can be lowercase (eg. Bacaan kali...)
+                # additionally, separate title from speakers (usually with [ ]) and numbering
+                while segments[j][1] and not re.search(r'[\[\]]',segments[j][0]) \
+                        and not re.search(r'\d+\.',segments[j][0].strip()):
+                    # while bold
+                    if new_category:
+                        new_category += '; '
+                    new_category += segments[j][0]
+                    j += 1
             if new_category:
                 current_category = new_category
                 question_num = -1
@@ -239,7 +243,7 @@ if __name__ == "__main__":
                 if re.match(r'\d+\.', segments[j][0]):
                     question_num = segments[j][0].split('.')[0]
                     print("QUESTION NUMBER DETECTED:", question_num)
-                    logs += "QUESTION NUMBER DETECTED:" + question_num + '\n'
+                    logs += "QUESTION NUMBER DETECTED: " + question_num + '\n'
                     j += 1
                     continue
                 print("double bold, ignoring:", segments[j][0])
@@ -255,6 +259,7 @@ if __name__ == "__main__":
                     question_num = author.split('.')[0]
                     author = '.'.join(author.split('.')[1:])
                     print("QUESTION NUMBER DETECTED:", question_num)
+                    logs += "QUESTION NUMBER DETECTED: " + question_num + '\n'
                 speech = segments[j + 1][0].strip()
                 logs += "author: " + author + '\n'
                 logs += "speech: " + speech + '\n'
