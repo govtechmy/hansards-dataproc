@@ -20,3 +20,10 @@ Usage for now, will generalise later
   - '/Arial-ItalicMT',
   - '/ArialMT',
   - '/TimesNewRomanPSMT'
+- When parsing _JAWAPAN-JAWAPAN MENTERI BAGI PERTANYAAN-PERTANYAAN_ or _JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN_, an MP will start without ":", but the subsequent dialogue has ":". For example
+> 1. Datuk Robert Lawson Chuat [Betong] minta Menteri Perdagangan Dalam... 
+> 
+> Menteri Perdagangan Dalam Negeri dan Hal Ehwal Pengguna [Dato Sri Alexander Nanta Linggi]: Terima kasih Tuan Yang di-Pertua dan..
+> 
+> Tuan Yang di-Pertua: Terima kasih. Soalan tambahan pertama.
+- `14-04-2-15` shows that a subtopic change can happen and acknowledged in formatting mid-dialogue.

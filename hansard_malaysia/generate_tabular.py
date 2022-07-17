@@ -30,7 +30,7 @@ def remove_timestamps(text):
     text = re.sub(r'■\*\*\*\d{4}', '***', text)
     text = re.sub(r'\*\*\*■\d{4}\*\*\*', '', text)
     text = re.sub(r'■\d{4}', '', text)
-    text = re.sub(r'\d{1,2}\.\d{2} ((tgh)|(ptg))\.', '', text)
+    text = re.sub(r'\d{1,2}\.\d{2} ((tgh)|(ptg)|(pg))\.', '', text)
     return text
 
 
@@ -110,13 +110,23 @@ def get_categories(hansard_code):
         if segment[1]:
             bolds.append(segment[0].replace(':', ''))
     # remove the first bold (kandungan)
-    return bolds[1:]
+    bolds = bolds[1:]
+    # sometimes bullet points are single bold segments, remove them if no alphanumeric content is present
+    bolds = [bold for bold in bolds if re.search(r'\w+', bold)]
+
+    return bolds
 
 
 if __name__ == "__main__":
-    pdf_code = "DR.16.11.2021"
-    hansard_code = "14-04-02-14"
+    hansard_code = "14-04-02-15"
+    df = pd.read_csv('sessions.csv', parse_dates=['date'])
+    df.date = df.date.dt.date
+    sessions = df.session.tolist()
+    session_date = dict(zip(df.session, df.date))
+    pdf_code = "DR." + session_date[hansard_code].strftime('%d.%m.%Y')
     analysis_dir = "analysis_hansard/" + hansard_code
+    if not os.path.isdir(analysis_dir):
+        os.mkdir(analysis_dir)
     categories = get_categories(hansard_code)
     print(categories)
     # TODO: categories parse from "K A N D U N G A N"
@@ -180,33 +190,66 @@ if __name__ == "__main__":
 
         # print(segments)
         j = 0
-        category_id = -1
         logs = ""
         question_num = -1
         table = []
-
-        print(segments[:5])
+        current_category = "NO CATEGORY DETECTED"
         while j < len(segments):
+            # ignore known, special bold segments
+            if "MALAYSIA DEWAN RAKYAT PARLIMEN" in segments[j][0] \
+                    or ('[' == segments[j][0][0] and ']' == segments[j][0][-1]):
+                print("ignoring special segment:", segments[j][0])
+                j += 1
+                continue
+            if not segments[j][1]:
+                # not bold, text without author
+                author = "DEWAN"
+                speech = segments[j][0].strip()
+                logs += "author: " + author + '\n'
+                logs += "speech: " + speech + '\n'
+                row = [
+                    current_category,
+                    question_num,
+                    author,
+                    speech
+                ]
+                table.append(row)
+                j += 1
+                continue
+
+            new_category = ""
+            while segments[j][1] and segments[j][0][-1] != ':' and not re.match(r'\d+\. ',segments[j][0]):
+                # while bold
+                if new_category:
+                    new_category += ' '
+                new_category += segments[j][0]
+                if "JAWAPAN-JAWAPAN " in new_category:
+                    # known pattern (only single line for this category)
+                    # the following author does not have colon
+                    segments[j + 1][0] += ':'
+                j += 1
+            if new_category:
+                current_category = new_category
+                question_num = -1
+                print("New category:", current_category)
+                logs += "New category:" + current_category + '\n'
+                continue
             if j + 1 < len(segments) and segments[j][1] and segments[j + 1][1]:
-                if category_id + 1 < len(categories) and categories[category_id + 1] == segments[j][0]:
-                    print("NEW CATEGORY DETECTED:" + categories[category_id + 1])
-                    logs += "NEW CATEGORY DETECTED: " + categories[category_id + 1] + '\n'
-                    question_num = -1
-                    category_id += 1
-                    j += 1
-                    continue
-                elif re.match(r'\d+\.', segments[j][0]):
+                # double bold
+                if re.match(r'\d+\.', segments[j][0]):
                     question_num = segments[j][0].split('.')[0]
                     print("QUESTION NUMBER DETECTED:", question_num)
+                    logs += "QUESTION NUMBER DETECTED:" + question_num + '\n'
                     j += 1
                     continue
                 print("double bold, ignoring:", segments[j][0])
                 logs += "double bold, ignoring: " + segments[j][0] + '\n'
                 j += 1
                 continue
-            question_num_search_result = re.search('\d+\.', segments[j][0])
 
+            question_num_search_result = re.search('\d+\.', segments[j][0])
             if j + 1 < len(segments) and segments[j][1] and not segments[j + 1][1]:
+                # typical author-speech
                 author = segments[j][0].replace(':', '')
                 if re.match(r'\d+\.', author):
                     question_num = author.split('.')[0]
@@ -216,7 +259,7 @@ if __name__ == "__main__":
                 logs += "author: " + author + '\n'
                 logs += "speech: " + speech + '\n'
                 row = [
-                    categories[category_id],
+                    current_category,
                     question_num,
                     author,
                     speech
