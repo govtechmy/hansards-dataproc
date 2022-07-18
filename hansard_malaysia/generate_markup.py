@@ -1,18 +1,18 @@
-import pprint
 import pdfplumber
 import os
 from tqdm import tqdm
 
 
-def add_markup(chars, dir_path):
+def add_markup(chars):
     chars.append({'text': '', 'fontname': ''})
     prev_char = ''
     new_chars = []
     for char in chars:
-        # double spaces act like break points between bold sentences
+        # there are no newlines in chars, they are represented by double spaces
+        # this is especially important between bold sentences
         if char['text'] == ' ' and prev_char == ' ':
-            # can optimise below?
-            new_chars = new_chars[:-1]
+            # delete previous space
+            new_chars.pop()
             char['text'] = '\n'
         new_chars.append(char)
         prev_char = char['text']
@@ -20,32 +20,40 @@ def add_markup(chars, dir_path):
 
     text = ""
     bold_streak = False
-    italic_streak = False
-    in_bracket = False
+    # italic_streak = False
+    in_annotation = False
+    # adding bold markup
     for char in chars:
         # if "Italic" not in char["fontname"] and italic_streak:
         #     text += "___"
         #     italic_streak = False
         if char['text'] == '\n' and bold_streak:
             # newlines separates two bold segments
+            # so markup must be separate as well
             text += "******"
             continue
 
         if "Bold" not in char["fontname"] and bold_streak:
+            # end of bold segment
             text += "***"
             bold_streak = False
 
         if char['text'] == '[' and not bold_streak:
-            # to prevent bold inside Dewan annotations
+            # to prevent bold inside annotations
             # eg. [Rang undang-undang dimaklumkan kepada Majlis sekarang]
-            in_bracket = True
+            # but prevent debolding speaker context
+            # eg. Tuan Chan Ming Kai [Alor Setar]:
+            in_annotation = True
 
-        if "Bold" in char["fontname"] and not bold_streak and not in_bracket and char['text'] != ' ':
+        if "Bold" in char["fontname"] and not bold_streak \
+                and not in_annotation and char['text'] != ' ':
+            # start of bold segment
+            # annotations are enforced to be non-bold and spaces cannot be start of a bold segment
             text += "***"
             bold_streak = True
 
         if char['text'] == ']':
-            in_bracket = False
+            in_annotation = False
 
         # if "Italic" in char["fontname"] and not italic_streak:
         #     text += "___"
@@ -62,14 +70,14 @@ def process_file(hansard_code, page_num=-1):
         if not os.path.isdir(dir_path):
             os.mkdir(dir_path)
         if page_num != -1:
+            # special invocation for single page parsing
             with open(dir_path + "/" + str(page_num) + ".txt", 'w') as f:
-                output = add_markup(pdf.pages[page_num].chars, dir_path)
+                output = add_markup(pdf.pages[page_num].chars)
                 f.write(output)
         else:
             for idx, page in enumerate(tqdm(pdf.pages)):
                 with open(dir_path + "/" + str(idx) + ".txt", 'w') as f:
-                    # add markup for bold and italics
-                    output = add_markup(page.chars, dir_path)
+                    output = add_markup(page.chars)
                     f.write(output)
     return output
 
