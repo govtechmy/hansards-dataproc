@@ -30,3 +30,5 @@ Usage for now, will generalise later
 - Speakers usually have [] to give context of who they are representing (either representing their constituency or a ministry). Sometimes the speaker will not have [] further down in the discussion if they already appeared before with []. The Tuan Yang di-Pertua doesn't have [].
 - The parser can detect boldness and italics accurately, but it cannot detect underlines nor give information on text sizes. To some extent, it will detect newlines and replace it with double spaces.
 - Timestamps are removed as it is hard to extract them and place them correctly in the table, as they can occur out and in of the dialogue.
+- Sometimes title from table of contents (TOC) have slight difference from in-text. In that case, use the in-text version.
+- Why we don't parse subtopic from TOC: subtopic does not show up in TOC for _RANG UNDANG-UNDANG DIBAWA KE DALAM MESYUARAT_

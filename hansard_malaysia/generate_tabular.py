@@ -110,39 +110,58 @@ def clean_segments(_segments):
 
 def get_categories(hansard_code):
     with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
+        # locate KANDUNGAN
         for idx, page in enumerate(pdf.pages):
             layout_text = page.extract_text().replace(' ', '')
-            # get first page with texts
             if "KANDUNGAN" in layout_text:
                 all_text = generate_markup.process_file(hansard_code, page_num=idx)
                 break
-    print(all_text)
     _segments = parse_markup(all_text)
-    print(len(_segments))
     _segments = clean_segments(_segments)
+    # remove the first segment (kandungan)
+    assert _segments[0][0].replace(' ', '') == "KANDUNGAN"
+    _segments = _segments[1:]
+
+    # for table of contents, it is better to join consecutive bold segments
+    # since separate categories must be separated by a non-bold segment (Halaman X)
+    new_segments = []
+    for segment in _segments:
+        if segment[1] and new_segments and new_segments[-1][1]:
+            new_segments[-1][0] += " " + segment[0]
+        else:
+            new_segments.append(segment)
+    _segments = new_segments
+
     bolds = []
     for segment in _segments:
         if segment[1]:
             bolds.append(segment[0].replace(':', ''))
-    # remove the first bold (kandungan)
-    bolds = bolds[1:]
     # sometimes bullet points are single bold segments, remove them if no alphanumeric content is present
     bolds = [bold for bold in bolds if re.search(r'\w+', bold)]
 
     return bolds
 
 
-if __name__ == "__main__":
-    hansard_code = "14-04-01-17"
+def get_date_of_session(session):
+    """
+    :param session: the code of the session eg. 14-04-01-17
+    :return: session date in the format dd.mm.yyyy
+    """
     df = pd.read_csv('sessions.csv', parse_dates=['date'])
     df.date = df.date.dt.date
-    sessions = df.session.tolist()
     session_date = dict(zip(df.session, df.date))
-    pdf_code = "DR." + session_date[hansard_code].strftime('%d.%m.%Y')
+    session_date = session_date[session].strftime('%d.%m.%Y')
+    return session_date
+
+
+if __name__ == "__main__":
+    hansard_code = "14-04-01-17"
+    pdf_code = "DR." + get_date_of_session(hansard_code)
     analysis_dir = "analysis_hansard/" + hansard_code
     if not os.path.isdir(analysis_dir):
         os.mkdir(analysis_dir)
     categories = get_categories(hansard_code)
+    print("Extracted categories")
     print(categories)
     # categories = [
     #     # 14-04-01-17
@@ -164,7 +183,7 @@ if __name__ == "__main__":
     #     "USUL-USUL MENTERI KEWANGAN:"
     # ]
 
-    dir_path = "output_hansard/" + hansard_code
+    markup_dir = "output_hansard/" + hansard_code
 
     with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
         for idx, page in enumerate(pdf.pages):
@@ -176,7 +195,7 @@ if __name__ == "__main__":
         print('first page:', first_page)
         all_text = ""
         for idx in range(first_page, len(pdf.pages)):
-            with open(dir_path + "/" + str(idx) + ".txt", 'r') as f:
+            with open(markup_dir + "/" + str(idx) + ".txt", 'r') as f:
                 # remove the PDF code in the first line
                 all_text += ''.join(f.readlines()[1:])
 
@@ -184,7 +203,7 @@ if __name__ == "__main__":
         # for example: [Timbalan Yang di-Pertua (Dato’ Mohd Rashid Hasnon) mempengerusikan Mesyuarat]
         # as they cut inside dialogue mid-speech
         print("number of text:", len(all_text))
-        all_text = re.sub(r'\[[A-Za-z’\'()\- ]+ mempengerusikan Mesyuarat]', '', all_text)
+        all_text = re.sub(r'\[[A-Za-z’\'()\-\. ]+ mempengerusikan Mesyuarat]', '', all_text)
         print("number of text:", len(all_text))
 
         # remove timestamps for now
@@ -209,6 +228,7 @@ if __name__ == "__main__":
         question_num = -1
         table = []
         current_category = "NO CATEGORY DETECTED"
+        category_id = -1
         while "DOA" not in segments[j][0]:
             j += 1
         j += 1
@@ -217,7 +237,7 @@ if __name__ == "__main__":
             if '[' == segments[j][0][0] and ']' == segments[j][0][-1]:
                 # this section should be remove and deprecated
                 # DEWAN annotations
-                print("annotates",segments[j][0])
+                print("annotates", segments[j][0])
                 author = "DEWAN"
                 speech = segments[j][0].strip()
                 logs += "author: " + author + '\n'
@@ -252,18 +272,27 @@ if __name__ == "__main__":
             # initiate category parsing if is bold and all uppercase
             if segments[j][1] and segments[j][0].isupper():
                 # after initiation, conditions are less strict: text can be lowercase (eg. Bacaan kali...)
-                # additionally, separate title from speakers (usually with [ ]) and numbering
-                while segments[j][1] and not re.search(r'[\[\]]', segments[j][0]) \
-                        and not re.search(r'\d+\.', segments[j][0].strip()):
+                # additionally, separate title from speakers (usually with [ ]) and numbering at start
+                while segments[j][1] and (segments[j][0].isupper() or (not re.search(r'\[[A-Za-z’\'()\-\. ]+(]:?)$', segments[j][0].strip()) \
+                        and not re.search(r'\A\d+\.', segments[j][0].strip()))):
                     # while bold
                     if new_category:
-                        new_category += '; '
+                        new_category += ' '
                     new_category += segments[j][0]
                     j += 1
             if new_category:
-                current_category = new_category
-                question_num = -1
+                if not new_category.startswith(categories[category_id+1]):
+                    raise AssertionError("New category not in TOC. Found:",new_category,
+                                         "expected to contain:",categories[category_id+1])
+                current_category = categories[category_id+1]
+                new_category=new_category[len(categories[category_id+1]):]
+                category_id += 1
+                if new_category:
+                    question_num = new_category
+                else:
+                    question_num = -1
                 print("New category:", current_category)
+                print("subtopic:", question_num)
                 logs += "New category:" + current_category + '\n'
                 continue
             if j + 1 < len(segments) and segments[j][1] and segments[j + 1][1]:
