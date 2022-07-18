@@ -215,6 +215,7 @@ if __name__ == "__main__":
         while j < len(segments):
             # ignore known, special bold segments
             if '[' == segments[j][0][0] and ']' == segments[j][0][-1]:
+                # this section should be remove and deprecated
                 # DEWAN annotations
                 print("annotates",segments[j][0])
                 author = "DEWAN"

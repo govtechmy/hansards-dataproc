@@ -8,7 +8,7 @@ Usage for now, will generalise later
 ### Notes
 
 - As of 14 July 2022, 17 November 2021 (14-04-02-15) has the last _Penyata Rasmi_; the statements after all have the status _Naskhah belum disemak_
-- Categories encountered are, in their order of appearance in _KANDUNGAN_
+- Common (but not exhaustive) categories encountered are, in their order of appearance in _KANDUNGAN_
   - JAWAPAN-JAWAPAN MENTERI BAGI PERTANYAAN-PERTANYAAN
   - JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,
   - RANG UNDANG-UNDANG DIBAWA KE DALAM MESYUARAT,
@@ -27,3 +27,6 @@ Usage for now, will generalise later
 > 
 > Tuan Yang di-Pertua: Terima kasih. Soalan tambahan pertama.
 - `14-04-2-15` shows that a subtopic change can happen and acknowledged in formatting mid-dialogue.
+- Speakers usually have [] to give context of who they are representing (either representing their constituency or a ministry). Sometimes the speaker will not have [] further down in the discussion if they already appeared before with []. The Tuan Yang di-Pertua doesn't have [].
+- The parser can detect boldness and italics accurately, but it cannot detect underlines nor give information on text sizes. To some extent, it will detect newlines and replace it with double spaces.
+- Timestamps are removed as it is hard to extract them and place them correctly in the table, as they can occur out and in of the dialogue.
