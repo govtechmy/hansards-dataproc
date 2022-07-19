@@ -22,7 +22,7 @@ if __name__ == "__main__":
             status[session] = 1
         except AssertionError as err:
             print("Errors detected:", err)
-            print("Abandoning", session)
+            print("Quiting", session)
             failed.append(session)
             status[session] = 0
 
