@@ -135,9 +135,11 @@ def get_categories(hansard_code):
         if segment[1]:
             bolds.append(segment[0].replace(':', ''))
     # sometimes bullet points are single bold segments, remove them if no alphanumeric content is present
-    bolds = [bold for bold in bolds if re.search(r'\w+', bold)]
+    categories = [bold for bold in bolds if re.search(r'\w+', bold)]
 
-    return bolds
+    if "USUL-USUL" in categories:
+        categories[categories.index("USUL-USUL")] = "USUL"
+    return categories
 
 
 def get_date_of_session(session):
@@ -165,7 +167,7 @@ def get_content(hansard_code):
         print('first page:', first_page)
         all_text = ""
         for idx in range(first_page, len(pdf.pages)):
-            with open('preprocessed_hansard/' + hansard_code +'/' + str(idx) + ".txt", 'r') as f:
+            with open('preprocessed_hansard/' + hansard_code + '/' + str(idx) + ".txt", 'r') as f:
                 # remove the PDF code in the first line
                 all_text += ''.join(f.readlines()[1:])
     return all_text
@@ -177,7 +179,6 @@ def segments_to_dataframe(segments, categories, hansard_code):
     subtopic = -1
     table = []
     current_category = "NO CATEGORY DETECTED"
-    category_id = -1
     while "DOA" not in segments[j][0]:
         j += 1
     j += 1
@@ -230,13 +231,16 @@ def segments_to_dataframe(segments, categories, hansard_code):
                 new_category += segments[j][0]
                 j += 1
         if new_category:
-            if not new_category.startswith(categories[category_id + 1]):
+            candidate_category = ""
+            for category in categories:
+                if new_category.startswith(category):
+                    candidate_category = category
+                    break
+            if not candidate_category:
                 raise AssertionError("New category not in TOC.\nFound:" + new_category +
-                                     "\n Expected to contain:" + categories[
-                                         category_id + 1] + "\nEdit the TOC category and rerun.")
-            current_category = categories[category_id + 1]
-            new_category = new_category[len(categories[category_id + 1]):]
-            category_id += 1
+                                     "\nEdit the TOC category and rerun.")
+            current_category = candidate_category
+            new_category = new_category[len(candidate_category):]
             if new_category:
                 subtopic = new_category
             else:
@@ -287,7 +291,7 @@ def segments_to_dataframe(segments, categories, hansard_code):
 
     # convert to pandas dataframe
     df = pd.DataFrame(data=table, columns=["category", "category_remark", "speaker", "content"])
-    
+
     # save logs
     with open('analysis_hansard/' + hansard_code + '/' + hansard_code + '-logs.txt', 'w') as f:
         f.write(logs)
@@ -296,7 +300,7 @@ def segments_to_dataframe(segments, categories, hansard_code):
 
 def process_file(hansard_code):
     # check if it is final version
-    with open("preprocessed_hansard/"+hansard_code+'/0.txt','r') as f:
+    with open("preprocessed_hansard/" + hansard_code + '/0.txt', 'r') as f:
         if "Naskhah belum disemak" in f.read():
             return -1
     analysis_dir = "analysis_hansard/" + hansard_code
@@ -330,7 +334,7 @@ def process_file(hansard_code):
     dataframe = segments_to_dataframe(segments, categories, hansard_code)
 
     export_hansard(dataframe, hansard_code)
-    
+
     return 0
 
     # authors = list(authors)

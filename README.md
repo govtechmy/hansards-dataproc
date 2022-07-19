@@ -37,3 +37,5 @@ Usage for now, will generalise later
 - Sometimes title from table of contents (TOC) have slight difference from in-text. In that case, use the in-text version.
 - Why we don't parse subtopic from TOC: subtopic does not show up in TOC for _RANG UNDANG-UNDANG DIBAWA KE DALAM MESYUARAT_
 - The DR.dd.mm.yyyy is not consistent: the dd can be zero-padded or not.
+- TOC will say "USUL-USUL" but in-text the title is usually "USUL"
+- Sometimes, USUL will somehow go under RANG UNDANG-UNDANG, ans some categories will go before others, ignoring the TOC order.
