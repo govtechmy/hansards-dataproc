@@ -2,6 +2,7 @@
 Usage for now, will generalise later
 1. Install requirements `pip install -r requirements.txt`
 2. Run `main.py`
+3. Find `output/failed.txt`. Investigate and resolve errors by running `generate_tabular.py` with a specific session and fix by editing the markup files in the `preprocessed` folders.
 
 ### To run a specific session only
 1. Run `download_hansard.py` to download all session files into `src_hansard`.

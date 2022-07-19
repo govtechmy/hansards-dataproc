@@ -295,6 +295,10 @@ def segments_to_dataframe(segments, categories):
 
 
 def process_file(hansard_code):
+    # check if it is final version
+    with open("output_hansard/"+hansard_code+'/0.txt','r') as f:
+        if "Naskhah belum disemak" in f.read():
+            return -1
     analysis_dir = "analysis_hansard/" + hansard_code
     if not os.path.isdir(analysis_dir):
         os.mkdir(analysis_dir)
@@ -326,6 +330,8 @@ def process_file(hansard_code):
     dataframe = segments_to_dataframe(segments, categories)
 
     export_hansard(dataframe, hansard_code)
+    
+    return 0
 
     # authors = list(authors)
     # authors.sort(key=lambda item: (-len(item), item))
