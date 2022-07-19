@@ -36,3 +36,4 @@ Usage for now, will generalise later
 - Timestamps are removed as it is hard to extract them and place them correctly in the table, as they can occur out and in of the dialogue.
 - Sometimes title from table of contents (TOC) have slight difference from in-text. In that case, use the in-text version.
 - Why we don't parse subtopic from TOC: subtopic does not show up in TOC for _RANG UNDANG-UNDANG DIBAWA KE DALAM MESYUARAT_
+- The DR.dd.mm.yyyy is not consistent: the dd can be zero-padded or not.

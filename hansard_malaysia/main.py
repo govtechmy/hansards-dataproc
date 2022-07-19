@@ -8,7 +8,7 @@ if __name__ == "__main__":
     # to manage a specific session, please run generate_markup and generate_tabular on their own
 
     # comment line below if PDFs have been downloaded
-    download_hansard.download_hansards()
+    # download_hansard.download_hansards()
 
     df = pd.read_csv('sessions.csv', parse_dates=['date'])
     sessions = df.session.tolist()
@@ -21,13 +21,12 @@ if __name__ == "__main__":
     # comment section below if files have been preprocessed
     for session in sessions:
         print("Processing", session)
-        generate_markup.process_file(session)
+        # generate_markup.process_file(session)
 
     print("All markup complete. Begin parsing markup")
     for session in sessions:
         print("Parsing", session)
         try:
-            print(session, "success")
             status[session] = generate_tabular.process_file(session)
             if status[session] == -1:
                 # not final version, cannot process

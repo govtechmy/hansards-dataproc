@@ -159,7 +159,7 @@ def get_content(hansard_code):
             with open('preprocessed_hansard/' + hansard_code + '/' + str(idx) + '.txt', 'r') as f:
                 text = f.readlines()
             # get first page with texts
-            if text and text[0].strip() == pdf_code + ' 1':
+            if text and text[0].strip().endswith(pdf_code[-8:] + ' 1'):
                 first_page = idx
                 break
         print('first page:', first_page)
@@ -171,7 +171,7 @@ def get_content(hansard_code):
     return all_text
 
 
-def segments_to_dataframe(segments, categories):
+def segments_to_dataframe(segments, categories, hansard_code):
     j = 0
     logs = ""
     subtopic = -1
@@ -327,7 +327,7 @@ def process_file(hansard_code):
     # remove ghost whitespaces
     segments = clean_segments(segments)
 
-    dataframe = segments_to_dataframe(segments, categories)
+    dataframe = segments_to_dataframe(segments, categories, hansard_code)
 
     export_hansard(dataframe, hansard_code)
     
