@@ -4,7 +4,6 @@ import re
 import pdfplumber
 import numpy as np
 import pandas as pd
-import generate_markup
 
 
 def parse_markup(text):
@@ -22,6 +21,8 @@ def parse_markup(text):
             segments.append(package)
             bold = not bold
             segment = ""
+    if segment:
+        segments.append([segment, bold])
     return segments
 
 
@@ -109,14 +110,18 @@ def clean_segments(_segments):
 
 
 def get_categories(hansard_code):
+    _all_text = ""
     with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
         # locate KANDUNGAN
         for idx, page in enumerate(pdf.pages):
-            layout_text = page.extract_text().replace(' ', '')
-            if "KANDUNGAN" in layout_text:
-                all_text = generate_markup.process_file(hansard_code, page_num=idx)
+            with open('output_hansard/'+hansard_code+'/'+str(idx)+'.txt','r') as f:
+                _all_text = f.read()
+            if "KANDUNGAN" in _all_text.replace(' ',''):
+                found = True
                 break
-    _segments = parse_markup(all_text)
+    assert _all_text
+    assert found
+    _segments = parse_markup(_all_text)
     _segments = clean_segments(_segments)
     # remove the first segment (kandungan)
     assert _segments[0][0].replace(' ', '') == "KANDUNGAN"
@@ -154,6 +159,26 @@ def get_date_of_session(session):
     return session_date
 
 
+
+def get_content(hansard_code):
+    with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
+        for idx, page in enumerate(pdf.pages):
+            with open('output_hansard/' + hansard_code + '/' + str(idx) + '.txt', 'r') as f:
+                text = f.readlines()
+            # get first page with texts
+            print(text[0].strip())
+            if text[0].strip() == pdf_code + ' 1':
+                first_page = idx
+                break
+        print('first page:', first_page)
+        all_text = ""
+        for idx in range(first_page, len(pdf.pages)):
+            with open(markup_dir + "/" + str(idx) + ".txt", 'r') as f:
+                # remove the PDF code in the first line
+                all_text += ''.join(f.readlines()[1:])
+    return all_text
+
+
 if __name__ == "__main__":
     hansard_code = "14-04-01-17"
     pdf_code = "DR." + get_date_of_session(hansard_code)
@@ -163,174 +188,151 @@ if __name__ == "__main__":
     categories = get_categories(hansard_code)
     print("Extracted categories")
     print(categories)
-    # categories = [
-    #     # 14-04-01-17
-    #     "USUL MENANGGUHKAN BACAAN KALI YANG KEDUA DAN KETIGA RANG UNDANG-UNDANG",
-    #     "JAWAPAN-JAWAPAN MENTERI BAGI PERTANYAAN-PERTANYAAN",
-    #     "JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN",
-    #     # 14-04-01-17
-    #     "USUL",
-    #     "RANG UNDANG-UNDANG DIBAWA KE DALAM MESYUARAT",
-    #     # 14-04-01-17
-    #     "USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 76:",
-    #     # 14-04-01-16
-    #     "USUL MENTERI DI BAWAH P.M. 86(5)",
-    #     # 14-04-01-13
-    #     "USUL MENANGGUHKAN MESYUARAT DI BAWAH P.M. 18(1)",
-    #     "USUL-USUL",
-    #     "RANG UNDANG-UNDANG",
-    #     # 14-04-01-17
-    #     "USUL-USUL MENTERI KEWANGAN:"
-    # ]
 
     markup_dir = "output_hansard/" + hansard_code
 
-    with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
-        for idx, page in enumerate(pdf.pages):
-            layout_text = page.extract_text()
-            # get first page with texts
-            if layout_text[:16] == pdf_code + '  1':
-                first_page = idx
-                break
-        print('first page:', first_page)
-        all_text = ""
-        for idx in range(first_page, len(pdf.pages)):
-            with open(markup_dir + "/" + str(idx) + ".txt", 'r') as f:
-                # remove the PDF code in the first line
-                all_text += ''.join(f.readlines()[1:])
+    all_text = get_content(hansard_code)
 
-        # ignore special texts in the format [XX mempengerusikan Mesyuarat]
-        # for example: [Timbalan Yang di-Pertua (Dato’ Mohd Rashid Hasnon) mempengerusikan Mesyuarat]
-        # as they cut inside dialogue mid-speech
-        print("number of text:", len(all_text))
-        all_text = re.sub(r'\[[A-Za-z’\'()\-\. ]+ mempengerusikan Mesyuarat]', '', all_text)
-        print("number of text:", len(all_text))
+    # ignore special texts in the format [XX mempengerusikan Mesyuarat]
+    # for example: [Timbalan Yang di-Pertua (Dato’ Mohd Rashid Hasnon) mempengerusikan Mesyuarat]
+    # as they cut inside dialogue mid-speech
+    print("number of text:", len(all_text))
+    all_text = re.sub(r'\[[A-Za-z’\'()\-\. ]+ mempengerusikan Mesyuarat]', '', all_text)
+    print("number of text:", len(all_text))
 
-        # remove timestamps for now
-        print("removing timestamps")
-        all_text = remove_timestamps(all_text)
-        print("number of text:", len(all_text))
+    # remove timestamps for now
+    print("removing timestamps")
+    all_text = remove_timestamps(all_text)
+    print("number of text:", len(all_text))
 
-        with open(analysis_dir + "/cleaned_text.txt", "w") as f:
-            f.write(all_text)
+    with open(analysis_dir + "/cleaned_text.txt", "w") as f:
+        f.write(all_text)
 
-        # separate chunks by boldness
-        segments = parse_markup(all_text)
-        with open(analysis_dir + "/segments.log", "w") as log_file:
-            pprint.pprint(segments, log_file)
-        print("number of segments:", len(segments))
+    # separate chunks by boldness
+    segments = parse_markup(all_text)
+    with open(analysis_dir + "/segments.log", "w") as log_file:
+        pprint.pprint(segments, log_file)
+    print("number of segments:", len(segments))
 
-        segments = clean_segments(segments)
+    segments = clean_segments(segments)
 
-        # print(segments)
-        j = 0
-        logs = ""
-        question_num = -1
-        table = []
-        current_category = "NO CATEGORY DETECTED"
-        category_id = -1
-        while "DOA" not in segments[j][0]:
-            j += 1
+    j = 0
+    logs = ""
+    subtopic = -1
+    table = []
+    current_category = "NO CATEGORY DETECTED"
+    category_id = -1
+    while "DOA" not in segments[j][0]:
         j += 1
-        while j < len(segments):
-            # ignore known, special bold segments
-            if '[' == segments[j][0][0] and ']' == segments[j][0][-1]:
-                # this section should be remove and deprecated
-                # DEWAN annotations
-                print("annotates", segments[j][0])
-                author = "DEWAN"
-                speech = segments[j][0].strip()
-                logs += "author: " + author + '\n'
-                logs += "speech: " + speech + '\n'
-                row = [
-                    current_category,
-                    question_num,
-                    author,
-                    speech
-                ]
-                table.append(row)
-                j += 1
-                continue
-            if not segments[j][1]:
-                # not bold, text without author
-                author = "DEWAN"
-                speech = segments[j][0].strip()
-                logs += "author: " + author + '\n'
-                logs += "speech: " + speech + '\n'
-                print("text without author:", speech)
-                row = [
-                    current_category,
-                    question_num,
-                    author,
-                    speech
-                ]
-                table.append(row)
-                j += 1
-                continue
-
-            new_category = ""
-            # initiate category parsing if is bold and all uppercase
-            if segments[j][1] and segments[j][0].isupper():
-                # after initiation, conditions are less strict: text can be lowercase (eg. Bacaan kali...)
-                # additionally, separate title from speakers (usually with [ ]) and numbering at start
-                while segments[j][1] and (segments[j][0].isupper() or (not re.search(r'\[[A-Za-z’\'()\-\. ]+(]:?)$', segments[j][0].strip()) \
-                        and not re.search(r'\A\d+\.', segments[j][0].strip()))):
-                    # while bold
-                    if new_category:
-                        new_category += ' '
-                    new_category += segments[j][0]
-                    j += 1
-            if new_category:
-                if not new_category.startswith(categories[category_id+1]):
-                    raise AssertionError("New category not in TOC. Found:",new_category,
-                                         "expected to contain:",categories[category_id+1])
-                current_category = categories[category_id+1]
-                new_category=new_category[len(categories[category_id+1]):]
-                category_id += 1
-                if new_category:
-                    question_num = new_category
-                else:
-                    question_num = -1
-                print("New category:", current_category)
-                print("subtopic:", question_num)
-                logs += "New category:" + current_category + '\n'
-                continue
-            if j + 1 < len(segments) and segments[j][1] and segments[j + 1][1]:
-                # double bold
-                if re.match(r'\d+\.', segments[j][0]):
-                    question_num = segments[j][0].split('.')[0]
-                    print("QUESTION NUMBER DETECTED:", question_num)
-                    logs += "QUESTION NUMBER DETECTED: " + question_num + '\n'
-                    j += 1
-                    continue
-                print("double bold, ignoring:", segments[j][0])
-                logs += "double bold, ignoring: " + segments[j][0] + '\n'
-                j += 1
-                continue
-
-            question_num_search_result = re.search('\d+\.', segments[j][0])
-            if j + 1 < len(segments) and segments[j][1] and not segments[j + 1][1]:
-                # typical author-speech
-                author = segments[j][0].replace(':', '')
-                if re.match(r'\d+\.', author):
-                    question_num = author.split('.')[0]
-                    author = '.'.join(author.split('.')[1:])
-                    print("QUESTION NUMBER DETECTED:", question_num)
-                    logs += "QUESTION NUMBER DETECTED: " + question_num + '\n'
-                speech = segments[j + 1][0].strip()
-                logs += "author: " + author + '\n'
-                logs += "speech: " + speech + '\n'
-                row = [
-                    current_category,
-                    question_num,
-                    author,
-                    speech
-                ]
-                table.append(row)
-                j += 1
-            else:
-                print("ignoring with status ", segments[j][1], segments[j][0])
-                logs += "ignoring: " + segments[j][0] + '\n'
+    j += 1
+    authors = set()
+    while j < len(segments):
+        # ignore known, special bold segments
+        if '[' == segments[j][0][0] and ']' == segments[j][0][-1]:
+            # DEWAN annotations
+            print("annotates", segments[j][0])
+            author = "DEWAN"
+            speech = segments[j][0].strip()
+            logs += "author: " + author + '\n'
+            logs += "speech: " + speech + '\n'
+            row = [
+                current_category,
+                subtopic,
+                author,
+                speech
+            ]
+            table.append(row)
             j += 1
+            continue
+        if not segments[j][1]:
+            # not bold, text without author
+            author = "DEWAN"
+            speech = segments[j][0].strip()
+            logs += "author: " + author + '\n'
+            logs += "speech: " + speech + '\n'
+            print("text without author:", speech)
+            row = [
+                current_category,
+                subtopic,
+                author,
+                speech
+            ]
+            authors.add(author)
+            table.append(row)
+            j += 1
+            continue
+
+        new_category = ""
+        # initiate category parsing if is bold and all uppercase
+        if segments[j][1] and segments[j][0].isupper():
+            # after initiation, conditions are less strict: text can be lowercase (eg. Bacaan kali...)
+            # additionally, separate title from speakers (usually with [ ]) and numbering at start
+            while segments[j][1] and (segments[j][0].isupper() or (not re.search(r'\[[A-Za-z’\'()\-\. ]+(]:?)$', segments[j][0].strip()) \
+                    and not re.search(r'\A\d+\.', segments[j][0].strip()))):
+                # while bold
+                if new_category:
+                    new_category += ' '
+                new_category += segments[j][0]
+                j += 1
+        if new_category:
+            if not new_category.startswith(categories[category_id+1]):
+                raise AssertionError("New category not in TOC.\nFound:"+new_category+
+                                     "\n Expected to contain:"+categories[category_id+1]+"\nEdit the TOC category and rerun.")
+            current_category = categories[category_id+1]
+            new_category=new_category[len(categories[category_id+1]):]
+            category_id += 1
+            if new_category:
+                subtopic = new_category
+            else:
+                subtopic = -1
+            print("New category:", current_category)
+            print("subtopic:", subtopic)
+            logs += "New category:" + current_category + '\n'
+            continue
+        if j + 1 < len(segments) and segments[j][1] and segments[j + 1][1]:
+            # double bold
+            if re.match(r'\d+\.', segments[j][0]) and "JAWAPAN-JAWAPAN" in current_category:
+                subtopic = segments[j][0].split('.')[0]
+                logs += "QUESTION NUMBER DETECTED: " + subtopic + '\n'
+                j += 1
+                continue
+            subtopic = segments[j][0].strip()
+            print("double bold, new subtopic:", subtopic)
+            logs += "double bold, new subtopic: " + subtopic + '\n'
+            j += 1
+            continue
+
+        question_num_search_result = re.search('\d+\.', segments[j][0])
+        if j + 1 < len(segments) and segments[j][1] and not segments[j + 1][1]:
+            # typical author-speech
+            author = segments[j][0].replace(':', '')
+            if re.match(r'\d+\.', author):
+                subtopic = author.split('.')[0]
+                author = '.'.join(author.split('.')[1:])
+                logs += "QUESTION NUMBER DETECTED: " + subtopic + '\n'
+            author=author.strip()
+            speech = segments[j + 1][0].strip()
+            logs += "author: " + author + '\n'
+            logs += "speech: " + speech + '\n'
+            row = [
+                current_category,
+                subtopic,
+                author,
+                speech
+            ]
+            authors.add(author)
+            table.append(row)
+            j += 1
+        else:
+            print("ignoring with status ", segments[j][1], segments[j][0])
+            logs += "ignoring: " + segments[j][0] + '\n'
+        j += 1
 
     export_hansard(table)
+
+    authors = list(authors)
+    authors.sort(key=lambda item: (-len(item), item))
+    print("Number of speakers:", len(authors))
+    print("Check if the speakers below are indeed, speakers:")
+    print('\n'.join(authors[:5]))
+    print('\n'.join(authors[-5:]))

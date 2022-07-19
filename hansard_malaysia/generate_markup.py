@@ -71,11 +71,17 @@ def process_file(hansard_code, page_num=-1):
             os.mkdir(dir_path)
         if page_num != -1:
             # special invocation for single page parsing
+            with open(dir_path + "/" + str(page_num) + "-raw.txt", 'w') as f:
+                output = ''.join([char['text'] for char in pdf.pages[page_num].chars])
+                f.write(output)
             with open(dir_path + "/" + str(page_num) + ".txt", 'w') as f:
                 output = add_markup(pdf.pages[page_num].chars)
                 f.write(output)
         else:
             for idx, page in enumerate(tqdm(pdf.pages)):
+                with open(dir_path + "/" + str(idx) + "-raw.txt", 'w') as f:
+                    output = ''.join([char['text'] for char in page.chars])
+                    f.write(output)
                 with open(dir_path + "/" + str(idx) + ".txt", 'w') as f:
                     output = add_markup(page.chars)
                     f.write(output)
