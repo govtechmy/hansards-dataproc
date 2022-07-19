@@ -6,7 +6,7 @@ Usage for now, will generalise later
 
 ### To run a specific session only
 1. Run `download_hansard.py` to download all session files into `src_hansard`.
-2. Run `generate_markup.py`, remember to specify which session to process. This will add markup tags to bold and italic text, output as a folder of files in the `output_hansard` folder. Bold markup will then be processed in the later step as segments.
+2. Run `generate_markup.py`, remember to specify which session to process. This will add markup tags to bold and italic text, output as a folder of files in the `preprocessed_hansard` folder. Bold markup will then be processed in the later step as segments.
 3. Run `generate_tabular.py`, remember to specify which session to process. This will generate 3 files in a folder in the `analysis_hansard` folder: parquet, logs and output (string representation of Pandas DataFrame)
 
 ### Notes

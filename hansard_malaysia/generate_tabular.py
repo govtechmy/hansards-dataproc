@@ -107,7 +107,7 @@ def get_categories(hansard_code):
     with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
         # locate KANDUNGAN
         for idx, page in enumerate(pdf.pages):
-            with open('output_hansard/' + hansard_code + '/' + str(idx) + '.txt', 'r') as f:
+            with open('preprocessed_hansard/' + hansard_code + '/' + str(idx) + '.txt', 'r') as f:
                 _all_text = f.read()
             if "KANDUNGAN" in _all_text.replace(' ', ''):
                 found = True
@@ -156,7 +156,7 @@ def get_content(hansard_code):
     pdf_code = "DR." + get_date_of_session(hansard_code)
     with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
         for idx, page in enumerate(pdf.pages):
-            with open('output_hansard/' + hansard_code + '/' + str(idx) + '.txt', 'r') as f:
+            with open('preprocessed_hansard/' + hansard_code + '/' + str(idx) + '.txt', 'r') as f:
                 text = f.readlines()
             # get first page with texts
             if text and text[0].strip() == pdf_code + ' 1':
@@ -165,7 +165,7 @@ def get_content(hansard_code):
         print('first page:', first_page)
         all_text = ""
         for idx in range(first_page, len(pdf.pages)):
-            with open('output_hansard/' + hansard_code +'/' + str(idx) + ".txt", 'r') as f:
+            with open('preprocessed_hansard/' + hansard_code +'/' + str(idx) + ".txt", 'r') as f:
                 # remove the PDF code in the first line
                 all_text += ''.join(f.readlines()[1:])
     return all_text
@@ -296,7 +296,7 @@ def segments_to_dataframe(segments, categories):
 
 def process_file(hansard_code):
     # check if it is final version
-    with open("output_hansard/"+hansard_code+'/0.txt','r') as f:
+    with open("preprocessed_hansard/"+hansard_code+'/0.txt','r') as f:
         if "Naskhah belum disemak" in f.read():
             return -1
     analysis_dir = "analysis_hansard/" + hansard_code
@@ -306,7 +306,7 @@ def process_file(hansard_code):
     print("Extracted categories")
     print(categories)
 
-    markup_dir = "output_hansard/" + hansard_code
+    markup_dir = "preprocessed_hansard/" + hansard_code
 
     all_text = get_content(hansard_code)
 

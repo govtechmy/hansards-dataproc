@@ -64,7 +64,7 @@ def add_markup(chars):
 
 
 def process_file(hansard_code, page_num=-1):
-    dir_path = "output_hansard/" + hansard_code
+    dir_path = "preprocessed_hansard/" + hansard_code
     with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
         # print("adding markup...")
         if not os.path.isdir(dir_path):

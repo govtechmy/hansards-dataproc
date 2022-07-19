@@ -21,7 +21,7 @@ for session in tqdm(sessions[:30]):
                 target_page = idx
                 break
     generate_markup.process_file(session, target_page)
-    with open("output_hansard/" + session + "/" + str(target_page) + '.txt', 'r') as f:
+    with open("preprocessed_hansard/" + session + "/" + str(target_page) + '.txt', 'r') as f:
         all_text = f.read()
     segments = generate_tabular.parse_markup(all_text)
     for segment in segments:
