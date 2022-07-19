@@ -36,14 +36,10 @@ def remove_timestamps(text):
     return text
 
 
-def export_hansard(table):
-    # convert to numpy array
-    table = np.array(table)
-
-    # convert to pandas dataframe
-    df = pd.DataFrame(data=table, columns=["category", "category_remark", "speaker", "content"])
+def export_hansard(df, hansard_code):
     # print(df.head().to_string())
     # print(df.tail().to_string())
+    analysis_dir = "analysis_hansard/" + hansard_code
 
     if not os.path.isdir(analysis_dir):
         os.mkdir(analysis_dir)
@@ -52,9 +48,6 @@ def export_hansard(table):
 
     with open(analysis_dir + '/' + hansard_code + '-output.txt', 'w') as f:
         f.write(df.to_string())
-
-    with open(analysis_dir + '/' + hansard_code + '-logs.txt', 'w') as f:
-        f.write(logs)
 
 
 def clean_segments(_segments):
@@ -114,9 +107,9 @@ def get_categories(hansard_code):
     with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
         # locate KANDUNGAN
         for idx, page in enumerate(pdf.pages):
-            with open('output_hansard/'+hansard_code+'/'+str(idx)+'.txt','r') as f:
+            with open('output_hansard/' + hansard_code + '/' + str(idx) + '.txt', 'r') as f:
                 _all_text = f.read()
-            if "KANDUNGAN" in _all_text.replace(' ',''):
+            if "KANDUNGAN" in _all_text.replace(' ', ''):
                 found = True
                 break
     assert _all_text
@@ -159,63 +152,26 @@ def get_date_of_session(session):
     return session_date
 
 
-
 def get_content(hansard_code):
+    pdf_code = "DR." + get_date_of_session(hansard_code)
     with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
         for idx, page in enumerate(pdf.pages):
             with open('output_hansard/' + hansard_code + '/' + str(idx) + '.txt', 'r') as f:
                 text = f.readlines()
             # get first page with texts
-            print(text[0].strip())
-            if text[0].strip() == pdf_code + ' 1':
+            if text and text[0].strip() == pdf_code + ' 1':
                 first_page = idx
                 break
         print('first page:', first_page)
         all_text = ""
         for idx in range(first_page, len(pdf.pages)):
-            with open(markup_dir + "/" + str(idx) + ".txt", 'r') as f:
+            with open('output_hansard/' + hansard_code +'/' + str(idx) + ".txt", 'r') as f:
                 # remove the PDF code in the first line
                 all_text += ''.join(f.readlines()[1:])
     return all_text
 
 
-if __name__ == "__main__":
-    hansard_code = "14-04-01-17"
-    pdf_code = "DR." + get_date_of_session(hansard_code)
-    analysis_dir = "analysis_hansard/" + hansard_code
-    if not os.path.isdir(analysis_dir):
-        os.mkdir(analysis_dir)
-    categories = get_categories(hansard_code)
-    print("Extracted categories")
-    print(categories)
-
-    markup_dir = "output_hansard/" + hansard_code
-
-    all_text = get_content(hansard_code)
-
-    # ignore special texts in the format [XX mempengerusikan Mesyuarat]
-    # for example: [Timbalan Yang di-Pertua (Dato’ Mohd Rashid Hasnon) mempengerusikan Mesyuarat]
-    # as they cut inside dialogue mid-speech
-    print("number of text:", len(all_text))
-    all_text = re.sub(r'\[[A-Za-z’\'()\-\. ]+ mempengerusikan Mesyuarat]', '', all_text)
-    print("number of text:", len(all_text))
-
-    # remove timestamps for now
-    print("removing timestamps")
-    all_text = remove_timestamps(all_text)
-    print("number of text:", len(all_text))
-
-    with open(analysis_dir + "/cleaned_text.txt", "w") as f:
-        f.write(all_text)
-
-    # separate chunks by boldness
-    segments = parse_markup(all_text)
-    with open(analysis_dir + "/segments.log", "w") as log_file:
-        pprint.pprint(segments, log_file)
-    print("number of segments:", len(segments))
-
-    segments = clean_segments(segments)
-
+def segments_to_dataframe(segments, categories):
     j = 0
     logs = ""
     subtopic = -1
@@ -225,12 +181,11 @@ if __name__ == "__main__":
     while "DOA" not in segments[j][0]:
         j += 1
     j += 1
-    authors = set()
     while j < len(segments):
         # ignore known, special bold segments
         if '[' == segments[j][0][0] and ']' == segments[j][0][-1]:
             # DEWAN annotations
-            print("annotates", segments[j][0])
+            print("annotation:", segments[j][0])
             author = "DEWAN"
             speech = segments[j][0].strip()
             logs += "author: " + author + '\n'
@@ -257,7 +212,6 @@ if __name__ == "__main__":
                 author,
                 speech
             ]
-            authors.add(author)
             table.append(row)
             j += 1
             continue
@@ -267,19 +221,21 @@ if __name__ == "__main__":
         if segments[j][1] and segments[j][0].isupper():
             # after initiation, conditions are less strict: text can be lowercase (eg. Bacaan kali...)
             # additionally, separate title from speakers (usually with [ ]) and numbering at start
-            while segments[j][1] and (segments[j][0].isupper() or (not re.search(r'\[[A-Za-z’\'()\-\. ]+(]:?)$', segments[j][0].strip()) \
-                    and not re.search(r'\A\d+\.', segments[j][0].strip()))):
+            while segments[j][1] and (
+                    segments[j][0].isupper() or (not re.search(r'\[[A-Za-z’\'()\-\. ]+(]:?)$', segments[j][0].strip()) \
+                                                 and not re.search(r'\A\d+\.', segments[j][0].strip()))):
                 # while bold
                 if new_category:
                     new_category += ' '
                 new_category += segments[j][0]
                 j += 1
         if new_category:
-            if not new_category.startswith(categories[category_id+1]):
-                raise AssertionError("New category not in TOC.\nFound:"+new_category+
-                                     "\n Expected to contain:"+categories[category_id+1]+"\nEdit the TOC category and rerun.")
-            current_category = categories[category_id+1]
-            new_category=new_category[len(categories[category_id+1]):]
+            if not new_category.startswith(categories[category_id + 1]):
+                raise AssertionError("New category not in TOC.\nFound:" + new_category +
+                                     "\n Expected to contain:" + categories[
+                                         category_id + 1] + "\nEdit the TOC category and rerun.")
+            current_category = categories[category_id + 1]
+            new_category = new_category[len(categories[category_id + 1]):]
             category_id += 1
             if new_category:
                 subtopic = new_category
@@ -302,7 +258,6 @@ if __name__ == "__main__":
             j += 1
             continue
 
-        question_num_search_result = re.search('\d+\.', segments[j][0])
         if j + 1 < len(segments) and segments[j][1] and not segments[j + 1][1]:
             # typical author-speech
             author = segments[j][0].replace(':', '')
@@ -310,7 +265,7 @@ if __name__ == "__main__":
                 subtopic = author.split('.')[0]
                 author = '.'.join(author.split('.')[1:])
                 logs += "QUESTION NUMBER DETECTED: " + subtopic + '\n'
-            author=author.strip()
+            author = author.strip()
             speech = segments[j + 1][0].strip()
             logs += "author: " + author + '\n'
             logs += "speech: " + speech + '\n'
@@ -320,19 +275,66 @@ if __name__ == "__main__":
                 author,
                 speech
             ]
-            authors.add(author)
             table.append(row)
             j += 1
         else:
-            print("ignoring with status ", segments[j][1], segments[j][0])
+            print("ignoring with boldness ", segments[j][1], segments[j][0])
             logs += "ignoring: " + segments[j][0] + '\n'
         j += 1
 
-    export_hansard(table)
+    # convert to numpy array
+    table = np.array(table)
 
-    authors = list(authors)
-    authors.sort(key=lambda item: (-len(item), item))
-    print("Number of speakers:", len(authors))
-    print("Check if the speakers below are indeed, speakers:")
-    print('\n'.join(authors[:5]))
-    print('\n'.join(authors[-5:]))
+    # convert to pandas dataframe
+    df = pd.DataFrame(data=table, columns=["category", "category_remark", "speaker", "content"])
+    
+    # save logs
+    with open('analysis_hansard/' + hansard_code + '/' + hansard_code + '-logs.txt', 'w') as f:
+        f.write(logs)
+    return df
+
+
+def process_file(hansard_code):
+    analysis_dir = "analysis_hansard/" + hansard_code
+    if not os.path.isdir(analysis_dir):
+        os.mkdir(analysis_dir)
+    categories = get_categories(hansard_code)
+    print("Extracted categories")
+    print(categories)
+
+    markup_dir = "output_hansard/" + hansard_code
+
+    all_text = get_content(hansard_code)
+
+    # ignore special texts in the format [XX mempengerusikan Mesyuarat]
+    # for example: [Timbalan Yang di-Pertua (Dato’ Mohd Rashid Hasnon) mempengerusikan Mesyuarat]
+    # as they cut inside dialogue mid-speech
+    all_text = re.sub(r'\[[A-Za-z’\'()\-\. ]+ mempengerusikan Mesyuarat]', '', all_text)
+
+    # remove timestamps for now
+    all_text = remove_timestamps(all_text)
+
+    with open(analysis_dir + "/cleaned_text.txt", "w") as f:
+        f.write(all_text)
+
+    # separate chunks by boldness
+    segments = parse_markup(all_text)
+
+    # remove ghost whitespaces
+    segments = clean_segments(segments)
+
+    dataframe = segments_to_dataframe(segments, categories)
+
+    export_hansard(dataframe, hansard_code)
+
+    # authors = list(authors)
+    # authors.sort(key=lambda item: (-len(item), item))
+    # print("Number of speakers:", len(authors))
+    # print("Check if the speakers below are indeed, speakers:")
+    # print('\n'.join(authors[:5]))
+    # print('\n'.join(authors[-5:]))
+
+
+if __name__ == "__main__":
+    hansard_code = "14-03-k01-01"
+    process_file(hansard_code)
