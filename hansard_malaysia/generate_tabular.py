@@ -6,6 +6,7 @@ import numpy as np
 import pandas as pd
 import argparse
 
+
 def parse_markup(text):
     segments = []
     segment = text[:2]
@@ -37,14 +38,22 @@ def remove_timestamps(text):
 
 
 def export_hansard(df, hansard_code):
-    # print(df.head().to_string())
-    # print(df.tail().to_string())
     analysis_dir = "analysis_hansard/" + hansard_code
-
     if not os.path.isdir(analysis_dir):
         os.mkdir(analysis_dir)
+    # print(df.head().to_string())
+    # print(df.tail().to_string())
+    # print(df.category)
+    df.category = pd.Categorical(df.category)
+    category_df = df[['category']].copy()
+    category_df['code'] = df.category.cat.codes
+    category_df = category_df.drop_duplicates()
+    category_df.to_parquet(analysis_dir + '/' + hansard_code + '-category.parquet')
+    df['category'] = df.category.cat.codes
 
     df.to_parquet(analysis_dir + '/' + hansard_code + '.parquet')
+    with open(analysis_dir + '/' + hansard_code + '-cat-output.csv', 'w') as f:
+        f.write(category_df.to_csv(index=False))
 
     with open(analysis_dir + '/' + hansard_code + '-output.txt', 'w') as f:
         f.write(df.to_string())
@@ -237,8 +246,9 @@ def segments_to_dataframe(segments, categories, hansard_code):
                     candidate_category = category
                     break
             if not candidate_category:
-                raise AssertionError("New category not in TOC.\nFound:" + new_category +
-                                     "\nEdit the TOC category and rerun.")
+                raise AssertionError("New category not in TOC.\nFound:" + new_category + "\nAvailable categories: \n"
+                                     + '\n'.join(categories)
+                                     + "\nIf only slight typo, edit TOC and rerun")
             current_category = candidate_category
             new_category = new_category[len(candidate_category):]
             if new_category:
