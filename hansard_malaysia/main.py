@@ -2,13 +2,19 @@ import download_hansard
 import pandas as pd
 import generate_markup
 import generate_tabular
+import argparse
+
 
 if __name__ == "__main__":
-    # This is for bulk actions
-    # to manage a specific session, please run generate_markup and generate_tabular on their own
-
-    # comment line below if PDFs have been downloaded
-    # download_hansard.download_hansards()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--skipdownload", help="Skip downloading Hansards", action="store_true")
+    parser.add_argument("--skipmarkup", help="Skip adding markup", action="store_true")
+    args = parser.parse_args()
+    if args.skipdownload:
+        print("Skipping downloads")
+    else:
+        print("Downloading Hansards...")
+        download_hansard.download_hansards()
 
     df = pd.read_csv('sessions.csv', parse_dates=['date'])
     sessions = df.session.tolist()
@@ -18,12 +24,15 @@ if __name__ == "__main__":
     success = []
 
     # generate markup for all files
-    # comment section below if files have been preprocessed
-    for session in sessions:
-        print("Processing", session)
-        # generate_markup.process_file(session)
+    if args.skipmarkup:
+        print("Skipping adding markup")
+    else:
+        print("Adding markup...")
+        for session in sessions:
+            print("Processing", session)
+            generate_markup.process_file(session)
 
-    print("All markup complete. Begin parsing markup")
+    print("Processing markup files...")
     for session in sessions:
         print("Parsing", session)
         try:

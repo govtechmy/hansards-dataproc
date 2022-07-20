@@ -1,3 +1,5 @@
+import argparse
+
 import pdfplumber
 import os
 from tqdm import tqdm
@@ -89,8 +91,10 @@ def process_file(hansard_code, page_num=-1):
 
 
 if __name__ == "__main__":
-    hansard_code = "14-04-01-17"
-    process_file(hansard_code)
+    parser = argparse.ArgumentParser()
+    parser.add_argument("hansard_code", help="The session code eg. 14-04-01-16")
+    args = parser.parse_args()
+    process_file(args.hansard_code)
 
 # for special generation
 # with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:

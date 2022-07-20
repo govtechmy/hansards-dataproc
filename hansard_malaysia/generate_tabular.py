@@ -4,7 +4,7 @@ import re
 import pdfplumber
 import numpy as np
 import pandas as pd
-
+import argparse
 
 def parse_markup(text):
     segments = []
@@ -346,5 +346,7 @@ def process_file(hansard_code):
 
 
 if __name__ == "__main__":
-    hansard_code = "14-03-k01-01"
-    process_file(hansard_code)
+    parser = argparse.ArgumentParser()
+    parser.add_argument("hansard_code", help="The session code eg. 14-04-01-16")
+    args = parser.parse_args()
+    process_file(args.hansard_code)
