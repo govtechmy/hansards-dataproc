@@ -9,8 +9,8 @@ If the program terminates in the later stage due to uncaught errors (unlikely), 
 
 ### To run a specific session only
 1. Make sure the Hansards PDF are already downloaded. If not, run `download_hansard.py` to download all session files into `src_hansard`.
-2. Run `generate_markup.py XX-XX-XX-XX`, where XX-XX-XX-XX is the session code (eg. 14-04-01-16). This will add markup tags to bold and italic text, output as a folder of files in the `preprocessed_hansard` folder. Bold markup will then be processed in the next step to determine segments.
-3. Run `generate_tabular.py XX-XX-XX-XX`, where XX-XX-XX-XX is the session code. This will generate 3 files in the `analysis_hansard/XX-XX-XX-XX` folder: parquet, logs and output (string representation of Pandas DataFrame)
+2. Run `python3 generate_markup.py XX-XX-XX-XX`, where XX-XX-XX-XX is the session code (eg. 14-04-01-16). This will add markup tags to bold and italic text, output as a folder of files in the `preprocessed_hansard` folder. Bold markup will then be processed in the next step to determine segments.
+3. Run `python3 generate_tabular.py XX-XX-XX-XX`, where XX-XX-XX-XX is the session code. This will generate 3 files in the `analysis_hansard/XX-XX-XX-XX` folder: parquet, logs and output (string representation of Pandas DataFrame)
 
 ## Notes
 
