@@ -49,12 +49,21 @@ def export_hansard(df, hansard_code):
     category_df['code'] = df.category.cat.codes
     category_df = category_df.drop_duplicates()
     category_df.to_parquet(analysis_dir + '/' + hansard_code + '-category.parquet')
+    with open(analysis_dir + '/' + hansard_code + '-category.csv', 'w') as f:
+        f.write(category_df.to_csv(index=False))
+
+    df.category_remark = pd.Categorical(df.category_remark)
+    subtopic_df = df[['category_remark']].copy()
+    subtopic_df['code'] = df.category_remark.cat.codes
+    subtopic_df = subtopic_df.drop_duplicates()
+
+    subtopic_df.to_parquet(analysis_dir + '/' + hansard_code + '-subtopic.parquet')
+    with open(analysis_dir + '/' + hansard_code + '-subtopic.csv', 'w') as f:
+        f.write(subtopic_df.to_csv(index=False))
+
     df['category'] = df.category.cat.codes
 
     df.to_parquet(analysis_dir + '/' + hansard_code + '.parquet')
-    with open(analysis_dir + '/' + hansard_code + '-cat-output.csv', 'w') as f:
-        f.write(category_df.to_csv(index=False))
-
     with open(analysis_dir + '/' + hansard_code + '-output.txt', 'w') as f:
         f.write(df.to_string())
 
