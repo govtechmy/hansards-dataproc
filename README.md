@@ -1,15 +1,18 @@
+This project aims to digitalise the Malaysian Dewan Rakyat Hansards from the PDFs available at the [official Parliament website](https://www.parlimen.gov.my/hansard-dewan-rakyat.html).
+
 ## Usage
-Usage for now, will generalise later
 1. Install requirements `pip install -r requirements.txt`
 2. `cd hansard_malaysia`
 3. Bulk process with `python3 main.py`
+
+If the program terminates in the later stage due to uncaught errors (unlikely), you can rerun the program and skip downloading files and adding markup with `-skipdownload` and `-skipmarkup` respectively.
 
 ### To run a specific session only
 1. Make sure the Hansards PDF are already downloaded. If not, run `download_hansard.py` to download all session files into `src_hansard`.
 2. Run `generate_markup.py XX-XX-XX-XX`, where XX-XX-XX-XX is the session code (eg. 14-04-01-16). This will add markup tags to bold and italic text, output as a folder of files in the `preprocessed_hansard` folder. Bold markup will then be processed in the next step to determine segments.
 3. Run `generate_tabular.py XX-XX-XX-XX`, where XX-XX-XX-XX is the session code. This will generate 3 files in the `analysis_hansard/XX-XX-XX-XX` folder: parquet, logs and output (string representation of Pandas DataFrame)
 
-### Notes
+## Notes
 
 - As of 14 July 2022, 17 November 2021 (14-04-02-15) has the last _Penyata Rasmi_; the statements after all have the status _Naskhah belum disemak_
 - Common (but not exhaustive) categories encountered are, in their order of appearance in _KANDUNGAN_
