@@ -58,7 +58,7 @@ def remove_constituency(speaker):
     # for TOC list
     speaker = re.sub("\([A-Za-z ]+\)$", '', speaker)
     # for in-text
-    return re.sub("\[[A-Za-z ]+\]$", '', speaker).strip()
+    return re.sub("\[[A-Za-z’\'()\-\. ]+\]$", '', speaker).strip()
 
 
 def get_raw_name(speaker):
