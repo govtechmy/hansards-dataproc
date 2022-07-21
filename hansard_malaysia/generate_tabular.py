@@ -5,6 +5,8 @@ import pdfplumber
 import numpy as np
 import pandas as pd
 import argparse
+import analyse_speakers
+from hashlib import sha256
 
 
 def parse_markup(text):
@@ -42,11 +44,18 @@ def export_hansard(df, hansard_code):
     if not os.path.isdir(analysis_dir):
         os.mkdir(analysis_dir)
 
+    # remove titles and constituencies
+    df['speaker'] = df['speaker'].apply(lambda x: analyse_speakers.get_raw_name(x))
+
     with open(analysis_dir + '/' + hansard_code + '-plain.csv', 'w') as f:
         f.write(df.to_csv())
     # print(df.head().to_string())
     # print(df.tail().to_string())
     # print(df.category)
+
+    # replace speaker names with their hashes
+    df['speaker'] = df['speaker'].apply(lambda x: sha256(x.encode("utf-8")).hexdigest()[:6])
+
     df.category = pd.Categorical(df.category)
     category_df = df[['category']].copy()
     category_df['code'] = df.category.cat.codes
