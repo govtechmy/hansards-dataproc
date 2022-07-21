@@ -41,6 +41,9 @@ def export_hansard(df, hansard_code):
     analysis_dir = "analysis_hansard/" + hansard_code
     if not os.path.isdir(analysis_dir):
         os.mkdir(analysis_dir)
+
+    with open(analysis_dir + '/' + hansard_code + '-plain.csv', 'w') as f:
+        f.write(df.to_csv())
     # print(df.head().to_string())
     # print(df.tail().to_string())
     # print(df.category)
@@ -52,9 +55,9 @@ def export_hansard(df, hansard_code):
     with open(analysis_dir + '/' + hansard_code + '-category.csv', 'w') as f:
         f.write(category_df.to_csv(index=False))
 
-    df.category_remark = pd.Categorical(df.category_remark)
-    subtopic_df = df[['category_remark']].copy()
-    subtopic_df['code'] = df.category_remark.cat.codes
+    df.subtopic = pd.Categorical(df.subtopic)
+    subtopic_df = df[['subtopic']].copy()
+    subtopic_df['code'] = df.subtopic.cat.codes
     subtopic_df = subtopic_df.drop_duplicates()
 
     subtopic_df.to_parquet(analysis_dir + '/' + hansard_code + '-subtopic.parquet')
@@ -64,8 +67,8 @@ def export_hansard(df, hansard_code):
     df['category'] = df.category.cat.codes
 
     df.to_parquet(analysis_dir + '/' + hansard_code + '.parquet')
-    with open(analysis_dir + '/' + hansard_code + '-output.txt', 'w') as f:
-        f.write(df.to_string())
+    with open(analysis_dir + '/' + hansard_code + '-encoded.csv', 'w') as f:
+        f.write(df.to_csv())
 
 
 def clean_segments(_segments):
@@ -241,7 +244,8 @@ def segments_to_dataframe(segments, categories, hansard_code):
             # after initiation, conditions are less strict: text can be lowercase (eg. Bacaan kali...)
             # additionally, separate title from speakers (usually with [ ]) and numbering at start
             while segments[j][1] and (
-                    segments[j][0].isupper() or (not re.search(r'\[[A-Za-z’\'()\-\. ]+(]:?)$', segments[j][0].strip()) \
+                    segments[j][0].isupper() or (not re.search(r'\[[A-Za-z’\'()\-\. ]+(]:?)$', segments[j][0].strip())
+                                                 and not "Tuan Yang di-Pertua:" == segments[j][0].strip()
                                                  and not re.search(r'\A\d+\.', segments[j][0].strip()))):
                 # while bold
                 if new_category:
@@ -309,7 +313,7 @@ def segments_to_dataframe(segments, categories, hansard_code):
     table = np.array(table)
 
     # convert to pandas dataframe
-    df = pd.DataFrame(data=table, columns=["category", "category_remark", "speaker", "content"])
+    df = pd.DataFrame(data=table, columns=["category", "subtopic", "speaker", "content"])
 
     # save logs
     with open('analysis_hansard/' + hansard_code + '/' + hansard_code + '-logs.txt', 'w') as f:
