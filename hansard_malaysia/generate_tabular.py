@@ -54,7 +54,13 @@ def export_hansard(df, hansard_code):
     # print(df.category)
 
     # replace speaker names with their hashes
+    speaker_df = df[['speaker']].copy()
     df['speaker'] = df['speaker'].apply(lambda x: sha256(x.encode("utf-8")).hexdigest()[:6])
+    speaker_df['code'] = df['speaker']
+    speaker_df = speaker_df.drop_duplicates()
+    speaker_df.to_parquet(analysis_dir + '/' + hansard_code + '-speaker.parquet')
+    with open(analysis_dir + '/' + hansard_code + '-speaker.csv', 'w') as f:
+        f.write(speaker_df.to_csv(index=False))
 
     df.category = pd.Categorical(df.category)
     category_df = df[['category']].copy()
