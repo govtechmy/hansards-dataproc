@@ -2,14 +2,12 @@ import os
 import pprint
 import re
 import warnings
-
 import pdfplumber
-import numpy as np
 import pandas as pd
 import argparse
 import analyse_speakers
 from hashlib import sha256
-import logging
+
 
 def parse_markup(text):
     segments = []
@@ -46,16 +44,14 @@ def export_hansard(df, hansard_code):
     if not os.path.isdir(analysis_dir):
         os.mkdir(analysis_dir)
 
-    with open(analysis_dir + '/' + hansard_code + '-plain.csv', 'w') as f:
-        f.write(df.to_csv())
-
     # remove titles and constituencies
     # df['speaker'] = df['speaker'].apply(lambda x: analyse_speakers.get_raw_name(x))
 
     # use constituencies or roles
     df['speaker'] = df['speaker'].apply(lambda x: get_role(x))
 
-    with open(analysis_dir + '/' + hansard_code + '-by-role.csv', 'w') as f:
+    df.to_parquet(analysis_dir + '/' + hansard_code + '-plain.parquet')
+    with open(analysis_dir + '/' + hansard_code + '-plain.csv', 'w') as f:
         f.write(df.to_csv(index=False))
     # print(df.head().to_string())
     # print(df.tail().to_string())
@@ -89,7 +85,7 @@ def export_hansard(df, hansard_code):
 
     df['category'] = df.category.cat.codes
 
-    df.to_parquet(analysis_dir + '/' + hansard_code + '.parquet')
+    df.to_parquet(analysis_dir + '/' + hansard_code + '-encoded.parquet')
     with open(analysis_dir + '/' + hansard_code + '-encoded.csv', 'w') as f:
         f.write(df.to_csv())
 
@@ -371,8 +367,7 @@ def segments_to_dataframe(segments, categories, hansard_code):
             warnings.warn(f"ignoring statement (bold: {segments[j][1]}): {segments[j][0]}")
             logs += "ignoring: " + segments[j][0] + '\n'
         j += 1
-    
-    
+
     # extracting DEWAN annotations
     new_table = []
     for row in table:
@@ -384,7 +379,7 @@ def segments_to_dataframe(segments, categories, hansard_code):
                 if annotation.strip() in ["[Ketawa]", "[Tepuk]"]:
                     # action belongs to the speaker
                     continue
-                speaker_text, text = text.split(annotation,1)
+                speaker_text, text = text.split(annotation, 1)
                 new_table += [
                     row[:-1] + [speaker_text.strip()],
                     row[:-2] + ["DEWAN", annotation.strip()]
@@ -405,7 +400,7 @@ def segments_to_dataframe(segments, categories, hansard_code):
         if category not in used_categories:
             warned = True
             warnings.warn(f"Unused category: {category}")
-    
+
     if not warned:
         print("All categories used")
 
