@@ -380,10 +380,13 @@ def segments_to_dataframe(segments, categories, hansard_code):
                     # action belongs to the speaker
                     continue
                 speaker_text, text = text.split(annotation, 1)
-                new_table += [
-                    row[:-1] + [speaker_text.strip()],
+                if speaker_text.strip():
+                    new_table.append(
+                        row[:-1] + [speaker_text.strip()]
+                    )
+                new_table.append(
                     row[:-2] + ["DEWAN", annotation.strip()]
-                ]
+                )
             if text.strip():
                 new_table.append(
                     row[:-1] + [text.strip()]
