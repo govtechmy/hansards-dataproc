@@ -1,13 +1,15 @@
 import os
 import pprint
 import re
+import warnings
+
 import pdfplumber
 import numpy as np
 import pandas as pd
 import argparse
 import analyse_speakers
 from hashlib import sha256
-
+import logging
 
 def parse_markup(text):
     segments = []
@@ -44,11 +46,17 @@ def export_hansard(df, hansard_code):
     if not os.path.isdir(analysis_dir):
         os.mkdir(analysis_dir)
 
-    # remove titles and constituencies
-    df['speaker'] = df['speaker'].apply(lambda x: analyse_speakers.get_raw_name(x))
-
     with open(analysis_dir + '/' + hansard_code + '-plain.csv', 'w') as f:
         f.write(df.to_csv())
+
+    # remove titles and constituencies
+    # df['speaker'] = df['speaker'].apply(lambda x: analyse_speakers.get_raw_name(x))
+
+    # use constituencies or roles
+    df['speaker'] = df['speaker'].apply(lambda x: get_role(x))
+
+    with open(analysis_dir + '/' + hansard_code + '-by-role.csv', 'w') as f:
+        f.write(df.to_csv(index=False))
     # print(df.head().to_string())
     # print(df.tail().to_string())
     # print(df.category)
@@ -138,6 +146,44 @@ def clean_segments(_segments):
     return _segments
 
 
+role_of_speaker = {}
+
+
+def get_role(speaker):
+    # for in-text use
+    # there are multiple forms
+    # Timbalan Yang di-Pertua [Dato’ Mohd Rashid Hasnon]
+    # Tuan Noor Amin bin Ahmad [Kangar]
+    # Timbalan Menteri di Jabatan Perdana Menteri (Parlimen dan Undang- undang) [Datuk Wira Hajah Mas Ermieyati binti Samsudin]
+    # Datuk Wira Hajah Mas Ermieyati binti Samsudin
+    if '[' not in speaker:
+        if speaker == "Tuan Yang di-Pertua" or speaker == "Tuan Pengerusi" or speaker == "DEWAN":
+            return speaker
+        else:
+            raw_name = analyse_speakers.remove_titles(speaker)
+            if raw_name in role_of_speaker:
+                return role_of_speaker[raw_name]
+            else:
+                # Attempt to get role from MP list
+                df_mp = pd.read_csv("mp_2021-07-26.csv")
+                possible_row = df_mp.loc[df_mp['mp'] == raw_name]
+                if not possible_row.empty:
+                    return possible_row.seat.item()
+                else:
+                    warnings.warn(f"Unrecognised speaker: {raw_name}")
+                    return raw_name
+    segments = speaker.split('[')
+    # remove ]
+    segments[1] = segments[1][:-1]
+    segments = [segment.strip() for segment in segments]
+    if "Menteri" in segments[0] or "Yang di-Pertua" in segments[0]:
+        role_of_speaker[analyse_speakers.remove_titles(segments[1])] = segments[0]
+        return segments[0]
+    else:
+        role_of_speaker[analyse_speakers.remove_titles(segments[0])] = segments[1]
+        return segments[1]
+
+
 def get_categories(hansard_code):
     _all_text = ""
     with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
@@ -210,6 +256,7 @@ def get_content(hansard_code):
 
 
 def segments_to_dataframe(segments, categories, hansard_code):
+    used_categories = set()
     j = 0
     logs = ""
     subtopic = -1
@@ -279,12 +326,13 @@ def segments_to_dataframe(segments, categories, hansard_code):
                                      + "\nIf only slight typo, edit TOC and rerun")
             current_category = candidate_category
             new_category = new_category[len(candidate_category):]
+            print("New category:", current_category)
+            used_categories.add(current_category)
             if new_category:
-                subtopic = new_category
+                subtopic = new_category.strip().rstrip('-').strip()
+                print("New subtopic:", subtopic)
             else:
                 subtopic = -1
-            print("New category:", current_category)
-            print("subtopic:", subtopic)
             logs += "New category:" + current_category + '\n'
             continue
         if j + 1 < len(segments) and segments[j][1] and segments[j + 1][1]:
@@ -294,7 +342,7 @@ def segments_to_dataframe(segments, categories, hansard_code):
                 logs += "QUESTION NUMBER DETECTED: " + subtopic + '\n'
                 j += 1
                 continue
-            subtopic = segments[j][0].strip()
+            subtopic = segments[j][0].strip().rstrip('-').strip()
             print("double bold, new subtopic:", subtopic)
             logs += "double bold, new subtopic: " + subtopic + '\n'
             j += 1
@@ -320,15 +368,46 @@ def segments_to_dataframe(segments, categories, hansard_code):
             table.append(row)
             j += 1
         else:
-            print("ignoring with boldness ", segments[j][1], segments[j][0])
+            warnings.warn(f"ignoring statement (bold: {segments[j][1]}): {segments[j][0]}")
             logs += "ignoring: " + segments[j][0] + '\n'
         j += 1
-
-    # convert to numpy array
-    table = np.array(table)
+    
+    
+    # extracting DEWAN annotations
+    new_table = []
+    for row in table:
+        text = row[-1]
+        matches = re.findall(r'\n *\[[^\[]+]', text)
+        if matches:
+            for match in matches:
+                annotation = match
+                if annotation.strip() in ["[Ketawa]", "[Tepuk]"]:
+                    # action belongs to the speaker
+                    continue
+                speaker_text, text = text.split(annotation,1)
+                new_table += [
+                    row[:-1] + [speaker_text.strip()],
+                    row[:-2] + ["DEWAN", annotation.strip()]
+                ]
+            if text.strip():
+                new_table.append(
+                    row[:-1] + [text.strip()]
+                )
+        else:
+            new_table.append(row)
+    table = new_table
 
     # convert to pandas dataframe
     df = pd.DataFrame(data=table, columns=["category", "subtopic", "speaker", "content"])
+
+    warned = False
+    for category in categories:
+        if category not in used_categories:
+            warned = True
+            warnings.warn(f"Unused category: {category}")
+    
+    if not warned:
+        print("All categories used")
 
     # save logs
     with open('analysis_hansard/' + hansard_code + '/' + hansard_code + '-logs.txt', 'w') as f:
@@ -345,6 +424,9 @@ def process_file(hansard_code):
     if not os.path.isdir(analysis_dir):
         os.mkdir(analysis_dir)
     categories = get_categories(hansard_code)
+    # checks for USUL-USUL before USUL
+    categories.sort()
+    categories.reverse()
     print("Extracted categories")
     print(categories)
 
