@@ -89,7 +89,6 @@ def get_role(speaker):
         return segments[1]
 
 
-
 if __name__ == "__main__":
 
     hansard_code = "14-04-02-15"
