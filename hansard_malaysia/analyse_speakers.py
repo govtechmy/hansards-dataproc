@@ -1,3 +1,5 @@
+import pdfplumber
+
 import generate_tabular
 import re
 
@@ -66,6 +68,26 @@ def get_raw_name(speaker):
     speaker = remove_titles(speaker)
     speaker = remove_constituency(speaker)
     return speaker.strip()
+
+
+def get_role(speaker):
+    # for in-text use
+    # there are multiple forms
+    # Timbalan Yang di-Pertua [Dato’ Mohd Rashid Hasnon]
+    # Tuan Noor Amin bin Ahmad [Kangar]
+    # Timbalan Menteri di Jabatan Perdana Menteri (Parlimen dan Undang- undang) [Datuk Wira Hajah Mas Ermieyati binti Samsudin]
+    if speaker == "Tuan Yang di-Pertua":
+        return speaker
+    assert '[' in speaker
+    segments = speaker.split('[')
+    # remove ]
+    segments[1] = segments[1][-1:]
+    segments = [segment.strip() for segment in segments]
+    if "Menteri" or "Yang di-Pertua" in segments[0]:
+        return segments[0]
+    else:
+        return segments[1]
+
 
 
 if __name__ == "__main__":
