@@ -86,6 +86,9 @@ def process_file(hansard_code, page_num=-1):
                 f.write(output)
         else:
             for idx, page in enumerate(tqdm(pdf.pages)):
+                # with open(dir_path + "/" + str(idx) + "-raw.txt", 'w') as f:
+                #     output = ''.join([char['text'] for char in page.chars])
+                #     f.write(output)
                 with open(dir_path + "/" + str(idx) + ".txt", 'w') as f:
                     output = add_markup(page.chars)
                     f.write(output)

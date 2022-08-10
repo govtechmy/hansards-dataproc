@@ -307,7 +307,7 @@ def segments_to_dataframe(segments, categories, hansard_code):
                     candidate_category = category
                     break
             if not candidate_category:
-                raise AssertionError("New category not in TOC.\nFound:" + new_category + "\nAvailable categories: \n"
+                raise AssertionError("New category not in TOC.\nFound: " + new_category + "\nAvailable categories: \n"
                                      + '\n'.join(categories)
                                      + "\nIf only slight typo, edit TOC and rerun")
             current_category = candidate_category
@@ -365,7 +365,7 @@ def segments_to_dataframe(segments, categories, hansard_code):
     new_table = []
     for row in table:
         text = row[-1]
-        matches = re.findall(r'\n *\[[^\[]+] *(?=[\[\n|$])', text)
+        matches = re.findall(r'\n *\[[^\[]+] *(?=[\[\n]|$)', text)
         if matches:
             for match in matches:
                 annotation = match
@@ -387,6 +387,10 @@ def segments_to_dataframe(segments, categories, hansard_code):
         else:
             new_table.append(row)
     table = new_table
+    
+    for row in table:
+        if '[Mesyuarat' in row[3] and row[2] != "DEWAN":
+            warnings.warn(f"Possible trailing annotation:\n" + str(row))
 
     # convert to pandas dataframe
     df = pd.DataFrame(data=table, columns=["category", "subtopic", "speaker", "content"], dtype="string")
