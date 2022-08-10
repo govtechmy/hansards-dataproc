@@ -53,7 +53,7 @@ def export_hansard(df, hansard_code, df_speakers):
         speaker_series = df_speakers.loc[df_speakers['name'] == speaker_name, 'seat_name'].values
         if speaker_series.size != 0:
             speaker_seat_name = speaker_series[0]
-            if speaker_seat_name == role_of_speaker[speaker_name]:
+            if speaker_seat_name == role_of_speaker[speaker_name].replace('–','-'):
                 # role is just constituency, skip
                 continue
         df_speakers.loc[df_speakers['name'] == speaker_name, 'role'] = role_of_speaker[speaker_name]
@@ -112,13 +112,13 @@ def clean_segments(_segments):
     _segments = stitch_segments(_segments, '\n')
 
     # remove redundant italic markup
-    _segments = [[re.sub('___ *___', ' ', segment[0]), segment[1]] for segment in _segments]
+    _segments = [[re.sub('___ +___', ' ', segment[0]), segment[1]] for segment in _segments]
     _segments = [segment for segment in _segments if segment[0].strip()]
     _segments = stitch_segments(_segments)
 
     _segments = [[segment[0].replace('______', ''), segment[1]] for segment in _segments]
-    _segments = [segment for segment in _segments if segment[0].strip()]
-    _segments = stitch_segments(_segments)
+    _segments = [segment for segment in _segments if segment[0]]
+    _segments = stitch_segments(_segments, '')
 
     _segments = [[re.sub('___\n *___', '\n', segment[0]), segment[1]] for segment in _segments]
     _segments = [segment for segment in _segments if segment[0].strip()]
