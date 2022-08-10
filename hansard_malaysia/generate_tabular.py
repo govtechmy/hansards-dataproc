@@ -34,8 +34,8 @@ def remove_timestamps(text):
     text = re.sub(r'■\*\*\*\d{4}', '***', text)
     text = re.sub(r'\*\*\*■\d{4}\*\*\*', '', text)
     text = re.sub(r'■\d{4}', '', text)
-    text = re.sub(r'\d{1,2}\.\d{2} ((tgh)|(ptg)|(pg))\.', '', text)
-    text = re.sub(r'\d{1,2}\.\d{2} ((tgh)|(ptg)|(pg))', '', text)
+    text = re.sub(r'\d{1,2}\.\d{2} ((tgh)|(ptg)|(pg)|(mlm))\.', '', text)
+    text = re.sub(r'\d{1,2}\.\d{2} ((tgh)|(ptg)|(pg)|(mlm))', '', text)
     return text
 
 
@@ -152,7 +152,7 @@ def get_role(speaker, df_speakers):
     # Timbalan Menteri di Jabatan Perdana Menteri (Parlimen dan Undang- undang) [Datuk Wira Hajah Mas Ermieyati binti Samsudin]
     # Datuk Wira Hajah Mas Ermieyati binti Samsudin
     if '[' not in speaker:
-        if speaker == "Tuan Yang di-Pertua" or speaker == "Tuan Pengerusi" or speaker == "DEWAN":
+        if speaker in ["Tuan Yang di-Pertua", 'Beberapa Ahli', "Tuan Pengerusi", "DEWAN"]:
             return speaker
         else:
             raw_name = analyse_speakers.remove_titles(speaker)
@@ -372,9 +372,8 @@ def segments_to_dataframe(segments, categories, hansard_code):
     new_table = []
     for row in table:
         text = row[-1]
-        matches = re.findall(r'\n *\[[^\[]+]', text)
+        matches = re.findall(r'\n *\[[^\[]+] *(?![A-Za-z])', text)
         if matches:
-            print(matches)
             for match in matches:
                 annotation = match
                 if annotation.strip() in ["[Ketawa]", "[Tepuk]"]:
@@ -418,6 +417,7 @@ def process_file(hansard_code):
     # check if it is final version
     with open("preprocessed_hansard/" + hansard_code + '/0.txt', 'r') as f:
         if "Naskhah belum disemak" in f.read():
+            print("Aborting due to unfinalised Hansard")
             return -1
     analysis_dir = "analysis_hansard/" + hansard_code
     if not os.path.isdir(analysis_dir):
@@ -450,13 +450,6 @@ def process_file(hansard_code):
     export_hansard(dataframe, hansard_code, df_speakers)
 
     return 0
-
-    # authors = list(authors)
-    # authors.sort(key=lambda item: (-len(item), item))
-    # print("Number of speakers:", len(authors))
-    # print("Check if the speakers below are indeed, speakers:")
-    # print('\n'.join(authors[:5]))
-    # print('\n'.join(authors[-5:]))
 
 
 if __name__ == "__main__":

@@ -148,7 +148,7 @@ def get_speakers_from_toc(hansard_code):
             if prev_title:
                 sections[prev_title] = cur_list
                 cur_list = []
-            prev_title = re.sub(r'[:\- ]+$', '', segment[0]).lstrip()
+            prev_title = re.sub(r'[:\- ]+$', '', segment[0]).lstrip().lower()
         else:
             cur_list.append(segment[0])
     # add last item
@@ -159,34 +159,34 @@ def get_speakers_from_toc(hansard_code):
         assert len(content) == 1
         sections[title] = get_speaker_list_from_string(content[0])
 
-    assert "Ahli-Ahli Yang Hadir" in sections or "Ahli-Ahli Yang Tidak Hadir" in sections
-    assert "Senator Yang Hadir Sama" in sections or "Senator Yang Tidak Hadir" in sections
+    assert "ahli-ahli yang hadir" in sections or "ahli-ahli yang tidak hadir" in sections
+    assert "senator yang hadir sama" in sections or "senator yang tidak hadir" in sections
 
     attendance = []
-    if "Ahli-Ahli Yang Hadir" in sections:
-        for mp in sections["Ahli-Ahli Yang Hadir"]:
+    if "ahli-ahli yang hadir" in sections:
+        for mp in sections["ahli-ahli yang hadir"]:
             row = analyse_speaker(mp)
             row.append(1)
-            row.append("MP")
+            row.append("mp")
             attendance.append(row)
-    if "Ahli-Ahli Yang Tidak Hadir" in sections:
-        for mp in sections["Ahli-Ahli Yang Tidak Hadir"]:
+    if "ahli-ahli yang tidak hadir" in sections:
+        for mp in sections["ahli-ahli yang tidak hadir"]:
             row = analyse_speaker(mp)
             row.append(0)
-            row.append("MP")
+            row.append("mp")
             attendance.append(row)
     # assert len(attendance) == 222
-    if "Senator Yang Hadir Sama" in sections:
-        for mp in sections["Senator Yang Hadir Sama"]:
+    if "senator yang hadir sama" in sections:
+        for mp in sections["senator yang hadir sama"]:
             row = analyse_speaker(mp)
             row.append(1)
-            row.append("Senator")
+            row.append("senator")
             attendance.append(row)
-    if "Senator Yang Tidak Hadir" in sections:
-        for mp in sections["Senator Yang Tidak Hadir"]:
+    if "senator yang tidak hadir" in sections:
+        for mp in sections["senator yang tidak hadir"]:
             row = analyse_speaker(mp)
             row.append(0)
-            row.append("Senator")
+            row.append("senator")
             attendance.append(row)
 
     # corrections
