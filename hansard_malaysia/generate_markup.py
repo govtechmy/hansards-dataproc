@@ -33,7 +33,7 @@ def add_markup(chars):
             text += "******"
             continue
 
-        if "Bold" not in char["fontname"]:
+        if "Bold" not in char["fontname"] and char['text'] != ' ':
             if bold_streak:
                 # end of bold segment
                 text += "***"

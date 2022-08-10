@@ -132,6 +132,8 @@ def get_speakers_from_toc(hansard_code):
                 break
         all_text += cur_text
 
+    # remove italics
+    all_text = all_text.replace('___','')
     segments = generate_tabular.parse_markup(all_text)
     # remove empty spaces
     segments = [x for x in segments if x[0].strip()]
@@ -191,8 +193,8 @@ def get_speakers_from_toc(hansard_code):
 
     # corrections
     for row in attendance:
-        if row[1] == "Kulim Bandar Baharu":
-            row[1] = "Kulim-Bandar Baharu"
+        if row[2] == "Kulim Bandar Baharu":
+            row[2] = "Kulim-Bandar Baharu"
 
     df = pd.DataFrame(attendance, columns=['name', 'honour_title', 'seat_name', 'role', 'attendance', 'membership'])
     return df

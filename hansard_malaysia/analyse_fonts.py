@@ -44,7 +44,7 @@ def walk(obj, fnt, emb):
 
 
 if __name__ == '__main__':
-    fname = 'src_hansard/hansard_14-04-01-13.pdf'
+    fname = 'src_hansard/hansard_14-04-01-04.pdf'
     pdf = PdfFileReader(fname)
     fonts = set()
     embedded = set()

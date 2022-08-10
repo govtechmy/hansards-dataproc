@@ -33,9 +33,8 @@ def remove_timestamps(text):
     # removing irregular formatting of timestamps
     text = re.sub(r'■\*\*\*\d{4}', '***', text)
     text = re.sub(r'\*\*\*■\d{4}\*\*\*', '', text)
-    text = re.sub(r'■\d{4}', '', text)
-    text = re.sub(r'\d{1,2}\.\d{2} ((tgh)|(ptg)|(pg)|(mlm))\.', '', text)
-    text = re.sub(r'\d{1,2}\.\d{2} ((tgh)|(ptg)|(pg)|(mlm))', '', text)
+    text = re.sub(r'■\d{4}\.?', '', text)
+    text = re.sub(r'\d{1,2}\.\d{2} ((tgh)|(ptg)|(pg)|(mlm))\.?', '', text)
     return text
 
 
@@ -120,7 +119,20 @@ def clean_segments(_segments):
     _segments = [[re.sub('___ *___', ' ', segment[0]), segment[1]] for segment in _segments]
     _segments = [[re.sub('___\n *___', '\n', segment[0]), segment[1]] for segment in _segments]
     _segments = [[segment[0].replace('______', ''), segment[1]] for segment in _segments]
+    print("number of segments:", len(_segments))
+    print("removing more empty segments")
     _segments = [segment for segment in _segments if segment[0].strip()]
+    print("number of segments:", len(_segments))
+    print("Combining adjacent non-bold segments")
+    new_segments = [_segments[0]]
+    for i in range(1, len(_segments)):
+        if not _segments[i][1] and not new_segments[-1][1]:
+            # if ghost newlines whitespaces non-bold paragraphs, stitch them back
+            new_segments[-1][0] += ' ' + _segments[i][0]
+        else:
+            new_segments.append(_segments[i])
+    _segments = new_segments
+    print("number of segments:", len(_segments))
 
     # separate Dewan annotations
     # new_segments = []
@@ -138,6 +150,7 @@ def clean_segments(_segments):
 
     # strip whitespaces
     _segments = [[segment[0].strip(), segment[1]] for segment in _segments]
+
     return _segments
 
 
@@ -152,7 +165,8 @@ def get_role(speaker, df_speakers):
     # Timbalan Menteri di Jabatan Perdana Menteri (Parlimen dan Undang- undang) [Datuk Wira Hajah Mas Ermieyati binti Samsudin]
     # Datuk Wira Hajah Mas Ermieyati binti Samsudin
     if '[' not in speaker:
-        if speaker in ["Tuan Yang di-Pertua", 'Beberapa Ahli', "Tuan Pengerusi", "DEWAN"]:
+        if speaker in ["Tuan Yang di-Pertua", 'Beberapa Ahli', "Tuan Pengerusi",
+                       "DEWAN", 'Timbalan Yang di-Pertua', 'Seorang Ahli']:
             return speaker
         else:
             raw_name = analyse_speakers.remove_titles(speaker)
