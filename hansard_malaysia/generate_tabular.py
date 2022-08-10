@@ -84,7 +84,11 @@ def clean_segments(_segments):
 
     # remove ghost bold whitespaces (not just spaces)
     print("removing ghost whitespaces")
-    _segments = [segment for segment in _segments if segment[0].strip()]
+    _segments = [segment for segment in _segments if segment[0].strip(' ')]
+    print("number of segments:", len(_segments))
+
+    print("removing ghost whitespaces (italics)")
+    _segments = [segment for segment in _segments if segment[0].replace('___', '')]
     print("number of segments:", len(_segments))
 
     print("Combining adjacent non-bold segments")
@@ -97,6 +101,26 @@ def clean_segments(_segments):
             new_segments.append(_segments[i])
     _segments = new_segments
     print("number of segments:", len(_segments))
+
+    print("removing ghost newlines")
+    _segments = [segment for segment in _segments if segment[0].strip('\n')]
+    print("number of segments:", len(_segments))
+    print("Combining adjacent non-bold segments")
+    new_segments = [_segments[0]]
+    for i in range(1, len(_segments)):
+        if not _segments[i][1] and not new_segments[-1][1]:
+            # if ghost newlines separate non-bold paragraphs, stitch them back
+            new_segments[-1][0] += '\n' + _segments[i][0]
+        else:
+            new_segments.append(_segments[i])
+    _segments = new_segments
+    print("number of segments:", len(_segments))
+
+    # remove redundant italic markup
+    _segments = [[re.sub('___ *___', ' ', segment[0]), segment[1]] for segment in _segments]
+    _segments = [[re.sub('___\n *___', '\n', segment[0]), segment[1]] for segment in _segments]
+    _segments = [[segment[0].replace('______', ''), segment[1]] for segment in _segments]
+    _segments = [segment for segment in _segments if segment[0].strip()]
 
     # separate Dewan annotations
     # new_segments = []
@@ -163,6 +187,7 @@ def get_categories(hansard_code):
             with open('preprocessed_hansard/' + hansard_code + '/' + str(idx) + '.txt', 'r') as f:
                 _all_text = f.read()
             if "KANDUNGAN" in _all_text.replace(' ', ''):
+                print(f'TOC at page {idx}')
                 found = True
                 break
     assert _all_text
@@ -230,7 +255,7 @@ def segments_to_dataframe(segments, categories, hansard_code):
     used_categories = set()
     j = 0
     logs = ""
-    subtopic = -1
+    subtopic = ''
     table = []
     current_category = "NO CATEGORY DETECTED"
     while "DOA" not in segments[j][0]:
@@ -303,7 +328,7 @@ def segments_to_dataframe(segments, categories, hansard_code):
                 subtopic = new_category.strip().rstrip('-').strip()
                 print("New subtopic:", subtopic)
             else:
-                subtopic = -1
+                subtopic = ''
             logs += "New category:" + current_category + '\n'
             continue
         if j + 1 < len(segments) and segments[j][1] and segments[j + 1][1]:
@@ -349,6 +374,7 @@ def segments_to_dataframe(segments, categories, hansard_code):
         text = row[-1]
         matches = re.findall(r'\n *\[[^\[]+]', text)
         if matches:
+            print(matches)
             for match in matches:
                 annotation = match
                 if annotation.strip() in ["[Ketawa]", "[Tepuk]"]:
@@ -371,7 +397,7 @@ def segments_to_dataframe(segments, categories, hansard_code):
     table = new_table
 
     # convert to pandas dataframe
-    df = pd.DataFrame(data=table, columns=["category", "subtopic", "speaker", "content"])
+    df = pd.DataFrame(data=table, columns=["category", "subtopic", "speaker", "content"], dtype=str)
 
     warned = False
     for category in categories:

@@ -22,7 +22,7 @@ def add_markup(chars):
 
     text = ""
     bold_streak = False
-    # italic_streak = False
+    italic_streak = False
     in_annotation = False
     # adding bold markup
     for char in chars:
@@ -32,25 +32,39 @@ def add_markup(chars):
         if char['text'] == '\n' and bold_streak:
             # newlines separates two bold segments
             # so markup must be separate as well
+            assert not italic_streak
             text += "******"
             continue
 
-        if "Bold" not in char["fontname"] and bold_streak:
-            # end of bold segment
-            text += "***"
-            bold_streak = False
+        if "Bold" not in char["fontname"]:
+            if bold_streak:
+                # end of bold segment
+                text += "***"
+                bold_streak = False
+            if "Italic" in char["fontname"] and not italic_streak and not in_annotation:
+                text += "___"
+                italic_streak = True
+            elif "Italic" not in char["fontname"] and italic_streak:
+                text += "___"
+                italic_streak = False
 
         if char['text'] == '[' and not bold_streak:
             # to prevent bold inside annotations
             # eg. [Rang undang-undang dimaklumkan kepada Majlis sekarang]
             # but prevent debolding speaker context
             # eg. Tuan Chan Ming Kai [Alor Setar]:
+            if italic_streak:
+                italic_streak = False
+                text += "___"
             in_annotation = True
 
         if "Bold" in char["fontname"] and not bold_streak \
                 and not in_annotation and char['text'] != ' ':
             # start of bold segment
             # annotations are enforced to be non-bold and spaces cannot be start of a bold segment
+            if italic_streak:
+                italic_streak = False
+                text += "___"
             text += "***"
             bold_streak = True
 
