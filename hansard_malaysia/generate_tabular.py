@@ -39,55 +39,30 @@ def remove_timestamps(text):
     return text
 
 
-def export_hansard(df, hansard_code):
-    analysis_dir = "analysis_hansard/" + hansard_code
+def export_hansard(df, hansard_code, df_speakers):
+    analysis_dir = f"analysis_hansard/{hansard_code}"
+    output_dir = f"release/{hansard_code}"
     if not os.path.isdir(analysis_dir):
         os.mkdir(analysis_dir)
-
-    # remove titles and constituencies
-    # df['speaker'] = df['speaker'].apply(lambda x: analyse_speakers.get_raw_name(x))
+    if not os.path.isdir(output_dir):
+        os.mkdir(output_dir)
 
     # use constituencies or roles
-    df['speaker'] = df['speaker'].apply(lambda x: get_role(x))
+    df['speaker'] = df['speaker'].apply(lambda x: get_role(x, df_speakers))
 
-    df.to_parquet(analysis_dir + '/' + hansard_code + '-plain.parquet')
-    with open(analysis_dir + '/' + hansard_code + '-plain.csv', 'w') as f:
-        f.write(df.to_csv(index=False))
-    # print(df.head().to_string())
-    # print(df.tail().to_string())
-    # print(df.category)
+    for speaker_name in role_of_speaker:
+        speaker_series = df_speakers.loc[df_speakers['name'] == speaker_name, 'seat_name'].values
+        if speaker_series.size != 0:
+            speaker_seat_name = speaker_series[0]
+            if speaker_seat_name == role_of_speaker[speaker_name]:
+                # role is just constituency, skip
+                continue
+        df_speakers.loc[df_speakers['name'] == speaker_name, 'role'] = role_of_speaker[speaker_name]
+    df_speakers.to_csv(f"{analysis_dir}/speakers.csv", index=False)
+    df_speakers.to_parquet(f"{output_dir}/speakers.parquet", index=False)
 
-    # replace speaker names with their hashes
-    speaker_df = df[['speaker']].copy()
-    df['speaker'] = df['speaker'].apply(lambda x: sha256(x.encode("utf-8")).hexdigest()[:6])
-    speaker_df['code'] = df['speaker']
-    speaker_df = speaker_df.drop_duplicates()
-    speaker_df.to_parquet(analysis_dir + '/' + hansard_code + '-speaker.parquet')
-    with open(analysis_dir + '/' + hansard_code + '-speaker.csv', 'w') as f:
-        f.write(speaker_df.to_csv(index=False))
-
-    df.category = pd.Categorical(df.category)
-    category_df = df[['category']].copy()
-    category_df['code'] = df.category.cat.codes
-    category_df = category_df.drop_duplicates()
-    category_df.to_parquet(analysis_dir + '/' + hansard_code + '-category.parquet')
-    with open(analysis_dir + '/' + hansard_code + '-category.csv', 'w') as f:
-        f.write(category_df.to_csv(index=False))
-
-    df.subtopic = pd.Categorical(df.subtopic)
-    subtopic_df = df[['subtopic']].copy()
-    subtopic_df['code'] = df.subtopic.cat.codes
-    subtopic_df = subtopic_df.drop_duplicates()
-
-    subtopic_df.to_parquet(analysis_dir + '/' + hansard_code + '-subtopic.parquet')
-    with open(analysis_dir + '/' + hansard_code + '-subtopic.csv', 'w') as f:
-        f.write(subtopic_df.to_csv(index=False))
-
-    df['category'] = df.category.cat.codes
-
-    df.to_parquet(analysis_dir + '/' + hansard_code + '-encoded.parquet')
-    with open(analysis_dir + '/' + hansard_code + '-encoded.csv', 'w') as f:
-        f.write(df.to_csv())
+    df.to_csv(f"{analysis_dir}/hansard.csv", index=False)
+    df.to_parquet(f"{output_dir}/hansard.parquet", index=False)
 
 
 def clean_segments(_segments):
@@ -145,7 +120,7 @@ def clean_segments(_segments):
 role_of_speaker = {}
 
 
-def get_role(speaker):
+def get_role(speaker, df_speakers):
     # for in-text use
     # there are multiple forms
     # Timbalan Yang di-Pertua [Dato’ Mohd Rashid Hasnon]
@@ -158,13 +133,13 @@ def get_role(speaker):
         else:
             raw_name = analyse_speakers.remove_titles(speaker)
             if raw_name in role_of_speaker:
+                # get role from previous introduction
                 return role_of_speaker[raw_name]
             else:
                 # Attempt to get role from MP list
-                df_mp = pd.read_csv("mp_2021-07-26.csv")
-                possible_row = df_mp.loc[df_mp['mp'] == raw_name]
+                possible_row = df_speakers.loc[df_speakers['name'] == raw_name]
                 if not possible_row.empty:
-                    return possible_row.seat.item()
+                    return possible_row.seat_name.item()
                 else:
                     warnings.warn(f"Unrecognised speaker: {raw_name}")
                     return raw_name
@@ -428,9 +403,9 @@ def process_file(hansard_code):
     print("Extracted categories")
     print(categories)
 
-    markup_dir = "preprocessed_hansard/" + hansard_code
-
     all_text = get_content(hansard_code)
+
+    df_speakers = analyse_speakers.get_speakers_from_toc(hansard_code)
 
     # ignore special texts in the format [XX mempengerusikan Mesyuarat]
     # for example: [Timbalan Yang di-Pertua (Dato’ Mohd Rashid Hasnon) mempengerusikan Mesyuarat]
@@ -451,7 +426,7 @@ def process_file(hansard_code):
 
     dataframe = segments_to_dataframe(segments, categories, hansard_code)
 
-    export_hansard(dataframe, hansard_code)
+    export_hansard(dataframe, hansard_code, df_speakers)
 
     return 0
 

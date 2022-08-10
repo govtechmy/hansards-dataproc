@@ -3,13 +3,21 @@ import pandas as pd
 import time
 
 
-def download_hansards():
+def download_hansards(start_from="2021-07-26"):
     df = pd.read_csv('sessions.csv', parse_dates=['date'])
     df.date = df.date.dt.date
     sessions = df.session.tolist()
     session_date = dict(zip(df.session, df.date))
 
+    ok = False
     for s in sessions:
+        raw_date_string = session_date[s].strftime('%Y-%m-%d')
+        print(raw_date_string)
+        if not ok:
+            if raw_date_string == start_from:
+                ok = True
+            else:
+                continue
         print(s)
         tdate = session_date[s].strftime('%d%m%Y')
         url_hansard = 'https://www.parlimen.gov.my/files/hindex/pdf/DR-' + tdate + '.pdf'
@@ -18,4 +26,4 @@ def download_hansards():
 
 
 if __name__ == "__main__":
-    download_hansards()
+    download_hansards('2022-07-18')

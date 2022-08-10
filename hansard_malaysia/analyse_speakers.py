@@ -1,12 +1,12 @@
+import pandas as pd
 import pdfplumber
 
 import generate_tabular
 import re
 
 titles = [
-    "YB.",
+    "YB Tuan",
     "YB",
-    "YAB.",
     "YAB",
     "Senator",
     "Tan Sri",
@@ -20,15 +20,12 @@ titles = [
     "Dato Wira",
     "Dato'",
     "Dato",
-    "Tuan",
     "Datuk Seri Panglima",
     "Datuk Seri",
     "Datuk Wira",
     "Datuk",
     "Haji",
-    "Ir.",
     "Ir",
-    "Dr.",
     "Dr",
     "Puan",
     "Tun",
@@ -38,22 +35,46 @@ titles = [
 
 def remove_titles(speaker):
     removal_request = 1
+    speaker = speaker.replace('’', "'")
+    speaker = speaker.replace('.', "")
+    speaker = speaker.strip()
     while removal_request:
         removal_request = 0
         for title in titles:
             if speaker.startswith(title):
                 speaker = speaker[len(title):].strip()
                 removal_request = 1
-            elif speaker.startswith(title.replace("'", "’")):
-                speaker = speaker[len(title):].strip()
-                removal_request = 1
-    return speaker
+    return speaker.strip()
 
 
 def remove_role(speaker):
     if "–" not in speaker:
         return speaker
     return speaker.split("–")[0].strip()
+
+
+def get_role(speaker):
+    if "–" not in speaker:
+        return ""
+    return speaker.split("–")[1].strip()
+
+
+def analyse_speaker(speaker):
+    role = ''
+    constituency = ''
+    if '-' in speaker:
+        speaker, role = speaker.split('–')
+    speaker = speaker.strip()
+    if ')' == speaker[-1]:
+        constituency = re.search("\([A-Za-z ]+\)$", speaker).group(0)
+        speaker = speaker[:-len(constituency)].strip()
+        constituency = constituency[1:-1]
+    honor_title = speaker
+    speaker = remove_titles(speaker)
+    constituency = constituency.strip()
+    if constituency == "Petrajaya":
+        constituency = "Petra Jaya"
+    return [speaker.strip(), honor_title.strip(), constituency.strip(), role.strip()]
 
 
 def remove_constituency(speaker):
@@ -70,7 +91,7 @@ def get_raw_name(speaker):
     return speaker.strip()
 
 
-def get_role(speaker):
+def get_role_intext(speaker):
     # for in-text use
     # there are multiple forms
     # Timbalan Yang di-Pertua [Dato’ Mohd Rashid Hasnon]
@@ -89,29 +110,94 @@ def get_role(speaker):
         return segments[1]
 
 
-if __name__ == "__main__":
+def get_speaker_list_from_string(speakers_string):
+    return [x.strip() for x in re.compile("[0-9]+.").split(speakers_string) if x.strip()]
 
-    hansard_code = "14-04-02-15"
 
-    with open("preprocessed_hansard/" + hansard_code + "/2.txt", 'r') as f:
-        all_text = ''.join(f.readlines()[1:])
-
-    with open("preprocessed_hansard/" + hansard_code + "/3.txt", 'r') as f:
-        all_text += ''.join(f.readlines()[1:])
-
-    with open("preprocessed_hansard/" + hansard_code + "/4.txt", 'r') as f:
-        all_text += ''.join(f.readlines()[1:])
-
-    with open("preprocessed_hansard/" + hansard_code + "/5.txt", 'r') as f:
-        all_text += ''.join(f.readlines()[1:])
+def get_speakers_from_toc(hansard_code):
+    with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
+        total_page_num = len(pdf.pages)
+    started = False
+    all_text = ''
+    for idx in range(total_page_num):
+        with open("preprocessed_hansard/" + hansard_code + f"/{idx + 1}.txt", 'r') as f:
+            cur_text = ''.join(f.readlines()[1:])
+        if not started:
+            if "SENARAI KEHADIRAN AHLI-AHLI PARLIMEN" in cur_text:
+                started = True
+            else:
+                continue
+        else:
+            if "DEWAN RAKYAT" in cur_text:
+                break
+        all_text += cur_text
 
     segments = generate_tabular.parse_markup(all_text)
     # remove empty spaces
-    segments = [x for x in segments if x[0]]
-    # remove bold
-    segments = [x for x in segments if not x[1]]
-    speakers_string = ''.join([x[0] for x in segments])
-    speakers = [x.strip() for x in re.compile("[0-9]+\.").split(speakers_string)]
-    speakers = [get_raw_name(speaker) for speaker in speakers]
-    for speaker in speakers:
-        print(speaker)
+    segments = [x for x in segments if x[0].strip()]
+    # remove titles
+    while segments[0][0].isupper():
+        segments.pop(0)
+
+    # each bold from now is a new section
+    sections = {}
+    prev_title = ""
+    cur_list = []
+    for segment in segments:
+        if segment[1]:
+            if prev_title:
+                sections[prev_title] = cur_list
+                cur_list = []
+            prev_title = re.sub(r'[:\- ]+$', '', segment[0]).lstrip()
+        else:
+            cur_list.append(segment[0])
+    # add last item
+    assert not segments[-1][1]
+    sections[prev_title] = cur_list
+
+    for title, content in sections.items():
+        assert len(content) == 1
+        sections[title] = get_speaker_list_from_string(content[0])
+
+    assert "Ahli-Ahli Yang Hadir" in sections or "Ahli-Ahli Yang Tidak Hadir" in sections
+    assert "Senator Yang Hadir Sama" in sections or "Senator Yang Tidak Hadir" in sections
+
+    attendance = []
+    if "Ahli-Ahli Yang Hadir" in sections:
+        for mp in sections["Ahli-Ahli Yang Hadir"]:
+            row = analyse_speaker(mp)
+            row.append(1)
+            row.append("MP")
+            attendance.append(row)
+    if "Ahli-Ahli Yang Tidak Hadir" in sections:
+        for mp in sections["Ahli-Ahli Yang Tidak Hadir"]:
+            row = analyse_speaker(mp)
+            row.append(0)
+            row.append("MP")
+            attendance.append(row)
+    # assert len(attendance) == 222
+    if "Senator Yang Hadir Sama" in sections:
+        for mp in sections["Senator Yang Hadir Sama"]:
+            row = analyse_speaker(mp)
+            row.append(1)
+            row.append("Senator")
+            attendance.append(row)
+    if "Senator Yang Tidak Hadir" in sections:
+        for mp in sections["Senator Yang Tidak Hadir"]:
+            row = analyse_speaker(mp)
+            row.append(0)
+            row.append("Senator")
+            attendance.append(row)
+
+    # corrections
+    for row in attendance:
+        if row[1] == "Kulim Bandar Baharu":
+            row[1] = "Kulim-Bandar Baharu"
+
+    df = pd.DataFrame(attendance, columns=['name', 'honour_title', 'seat_name', 'role', 'attendance', 'membership'])
+    return df
+
+
+if __name__ == "__main__":
+    hansard_code = "14-04-01-17"
+    get_speakers_from_toc(hansard_code)
