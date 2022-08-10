@@ -127,6 +127,8 @@ def clean_segments(_segments):
     # strip whitespaces
     _segments = [[segment[0].strip(), segment[1]] for segment in _segments]
 
+    # convert double spaces to newlines
+    _segments = [[segment[0].replace('  ', '\n'), segment[1]] for segment in _segments]
     return _segments
 
 
@@ -337,6 +339,12 @@ def segments_to_dataframe(segments, categories, hansard_code):
         if j + 1 < len(segments) and segments[j][1] and not segments[j + 1][1]:
             # typical author-speech
             author = segments[j][0].replace(':', '')
+            if re.match(r'\d', segments[j][0]) and segments[j + 1][
+                0].strip() == '.' and "JAWAPAN-JAWAPAN" in current_category:
+                subtopic = segments[j][0]
+                logs += "QUESTION NUMBER DETECTED: " + subtopic + '\n'
+                j += 2
+                continue
             if re.match(r'\d+\.', author):
                 subtopic = author.split('.')[0]
                 author = '.'.join(author.split('.')[1:])
@@ -374,9 +382,14 @@ def segments_to_dataframe(segments, categories, hansard_code):
                     continue
                 speaker_text, text = text.split(annotation, 1)
                 if speaker_text.strip():
-                    new_table.append(
-                        row[:-1] + [speaker_text.strip()]
-                    )
+                    if speaker_text.strip()[0] == '[' and speaker_text.strip()[-1] == ']' and speaker_text.count('[') == 1:
+                        new_table.append(
+                            row[:-2] + ["DEWAN", speaker_text.strip()]
+                        )
+                    else:
+                        new_table.append(
+                            row[:-1] + [speaker_text.strip()]
+                        )
                 new_table.append(
                     row[:-2] + ["DEWAN", annotation.strip()]
                 )
@@ -387,7 +400,7 @@ def segments_to_dataframe(segments, categories, hansard_code):
         else:
             new_table.append(row)
     table = new_table
-    
+
     for row in table:
         if '[Mesyuarat' in row[3] and row[2] != "DEWAN":
             warnings.warn(f"Possible trailing annotation:\n" + str(row))
@@ -433,7 +446,7 @@ def process_file(hansard_code):
     # remove timestamps for now
     all_text = remove_timestamps(all_text)
 
-    with open(analysis_dir + "/cleaned_text.txt", "w") as f:
+    with open(analysis_dir + "/removed_timestamps.txt", "w") as f:
         f.write(all_text)
 
     # separate chunks by boldness
@@ -443,6 +456,9 @@ def process_file(hansard_code):
     print(f"number of segments before cleaning: {len(segments)}")
     segments = clean_segments(segments)
     print(f"number of segments after cleaning: {len(segments)}")
+
+    with open(analysis_dir + "/cleaned_segments.txt", "w") as f:
+        f.write('\n~~~\n'.join([s[0] for s in segments]))
 
     dataframe = segments_to_dataframe(segments, categories, hansard_code)
 
