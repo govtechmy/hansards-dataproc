@@ -64,14 +64,28 @@ def export_hansard(df, hansard_code, df_speakers):
     df.to_parquet(f"{output_dir}/hansard.parquet", index=False)
 
 
+def stitch_segments(_segments, glue=" "):
+    # stitch neighboring non-bold segments
+    new_segments = [_segments[0]]
+    for i in range(1, len(_segments)):
+        if not _segments[i][1] and not new_segments[-1][1]:
+            new_segments[-1][0] += glue + _segments[i][0]
+        else:
+            new_segments.append(_segments[i])
+    return new_segments
+
+
+def log_to_file(filename, string):
+    with open(filename, 'w') as f:
+        f.write(string)
+
+
 def clean_segments(_segments):
     # remove ghost spaces
     # eg. the space between <> is non-bold, while the rest is bold: Tuan M. Kulasegaran [Ipoh< >Barat]
-    print("removing ghost spaces")
-    print("number of segments:", len(_segments))
     new_segments = []
     i = 1
-    while i < len(_segments) - 1:
+    while i < len(_segments):
         if _segments[i][0] == ' ' and _segments[i - 1][1] == _segments[i + 1][1]:
             new_segments[-1][0] += _segments[i + 1][0]
             i += 1
@@ -79,74 +93,31 @@ def clean_segments(_segments):
             new_segments.append(_segments[i])
         i += 1
     _segments = new_segments
-    print("number of segments:", len(_segments))
 
-    # remove ghost bold whitespaces (not just spaces)
-    print("removing ghost whitespaces")
+    # remove segments that only have spaces
     _segments = [segment for segment in _segments if segment[0].strip(' ')]
-    print("number of segments:", len(_segments))
 
-    print("removing ghost whitespaces (italics)")
-    _segments = [segment for segment in _segments if segment[0].replace('___', '')]
-    print("number of segments:", len(_segments))
+    # remove segments that only have spaces or italic markup
+    _segments = [segment for segment in _segments if segment[0].replace('___', '').strip(' ')]
 
-    print("Combining adjacent non-bold segments")
-    new_segments = [_segments[0]]
-    for i in range(1, len(_segments)):
-        if not _segments[i][1] and not new_segments[-1][1]:
-            # if ghost spaces separate non-bold paragraphs, stitch them back
-            new_segments[-1][0] += ' ' + _segments[i][0]
-        else:
-            new_segments.append(_segments[i])
-    _segments = new_segments
-    print("number of segments:", len(_segments))
+    _segments = stitch_segments(_segments)
 
-    print("removing ghost newlines")
+    # remove segments that only have newlines
     _segments = [segment for segment in _segments if segment[0].strip('\n')]
-    print("number of segments:", len(_segments))
-    print("Combining adjacent non-bold segments")
-    new_segments = [_segments[0]]
-    for i in range(1, len(_segments)):
-        if not _segments[i][1] and not new_segments[-1][1]:
-            # if ghost newlines separate non-bold paragraphs, stitch them back
-            new_segments[-1][0] += '\n' + _segments[i][0]
-        else:
-            new_segments.append(_segments[i])
-    _segments = new_segments
-    print("number of segments:", len(_segments))
+    _segments = stitch_segments(_segments, '\n')
 
     # remove redundant italic markup
     _segments = [[re.sub('___ *___', ' ', segment[0]), segment[1]] for segment in _segments]
-    _segments = [[re.sub('___\n *___', '\n', segment[0]), segment[1]] for segment in _segments]
-    _segments = [[segment[0].replace('______', ''), segment[1]] for segment in _segments]
-    print("number of segments:", len(_segments))
-    print("removing more empty segments")
     _segments = [segment for segment in _segments if segment[0].strip()]
-    print("number of segments:", len(_segments))
-    print("Combining adjacent non-bold segments")
-    new_segments = [_segments[0]]
-    for i in range(1, len(_segments)):
-        if not _segments[i][1] and not new_segments[-1][1]:
-            # if ghost newlines whitespaces non-bold paragraphs, stitch them back
-            new_segments[-1][0] += ' ' + _segments[i][0]
-        else:
-            new_segments.append(_segments[i])
-    _segments = new_segments
-    print("number of segments:", len(_segments))
+    _segments = stitch_segments(_segments)
 
-    # separate Dewan annotations
-    # new_segments = []
-    # for _segment in _segments:
-    #     if not _segment[1]:
-    #         lst = re.compile('\n *\[').split(_segment[0])
-    #         # lst = _segment[0].split('\n[')
-    #         if lst[0]:
-    #             new_segments.append([lst[0], 0])
-    #         for i in lst[1:]:
-    #             new_segments.append(['[' + i, 0])
-    #     else:
-    #         new_segments.append(_segment)
-    # _segments = new_segments
+    _segments = [[segment[0].replace('______', ''), segment[1]] for segment in _segments]
+    _segments = [segment for segment in _segments if segment[0].strip()]
+    _segments = stitch_segments(_segments)
+
+    _segments = [[re.sub('___\n *___', '\n', segment[0]), segment[1]] for segment in _segments]
+    _segments = [segment for segment in _segments if segment[0].strip()]
+    _segments = stitch_segments(_segments, '\n')
 
     # strip whitespaces
     _segments = [[segment[0].strip(), segment[1]] for segment in _segments]
@@ -379,6 +350,9 @@ def segments_to_dataframe(segments, categories, hansard_code):
             j += 1
         else:
             warnings.warn(f"ignoring statement (bold: {segments[j][1]}): {segments[j][0]}")
+            if table:
+                print("previous row is", str(table[-1]))
+                print(f'index {j} of length {len(segments)}')
             logs += "ignoring: " + segments[j][0] + '\n'
         j += 1
 
@@ -457,7 +431,9 @@ def process_file(hansard_code):
     segments = parse_markup(all_text)
 
     # remove ghost whitespaces
+    print(f"number of segments before cleaning: {len(segments)}")
     segments = clean_segments(segments)
+    print(f"number of segments after cleaning: {len(segments)}")
 
     dataframe = segments_to_dataframe(segments, categories, hansard_code)
 
