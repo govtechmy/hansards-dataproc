@@ -257,7 +257,7 @@ def segments_to_dataframe(segments, categories, hansard_code):
     logs = ""
     subtopic = ''
     table = []
-    current_category = "NO CATEGORY DETECTED"
+    current_category = ""
     while "DOA" not in segments[j][0]:
         j += 1
     j += 1
@@ -397,7 +397,7 @@ def segments_to_dataframe(segments, categories, hansard_code):
     table = new_table
 
     # convert to pandas dataframe
-    df = pd.DataFrame(data=table, columns=["category", "subtopic", "speaker", "content"], dtype=str)
+    df = pd.DataFrame(data=table, columns=["category", "subtopic", "speaker", "content"], dtype="string")
 
     warned = False
     for category in categories:
