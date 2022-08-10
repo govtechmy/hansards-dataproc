@@ -34,7 +34,7 @@ def remove_timestamps(text):
     text = re.sub(r'■\*\*\*\d{4}', '***', text)
     text = re.sub(r'\*\*\*■\d{4}\*\*\*', '', text)
     text = re.sub(r'■\d{4}\.?', '', text)
-    text = re.sub(r'\d{1,2}\.\d{2} ((tgh)|(ptg)|(pg)|(mlm))\.?', '', text)
+    text = re.sub(r'\d{1,2}\.\d{2} ?((tgh)|(ptg)|(pg)|(mlm))\.?', '', text)
     return text
 
 
@@ -120,7 +120,7 @@ def clean_segments(_segments):
     _segments = [segment for segment in _segments if segment[0]]
     _segments = stitch_segments(_segments, '')
 
-    _segments = [[re.sub('___\n *___', '\n', segment[0]), segment[1]] for segment in _segments]
+    _segments = [[re.sub('___[\n ]+___', '\n', segment[0]), segment[1]] for segment in _segments]
     _segments = [segment for segment in _segments if segment[0].strip()]
     _segments = stitch_segments(_segments, '\n')
 
@@ -317,7 +317,7 @@ def segments_to_dataframe(segments, categories, hansard_code):
             print("New category:", current_category)
             used_categories.add(current_category)
             if new_category:
-                subtopic = new_category.strip().rstrip('-').strip()
+                subtopic = new_category.strip().rstrip('-').rstrip('–').strip()
                 print("New subtopic:", subtopic)
             else:
                 subtopic = ''
@@ -330,7 +330,7 @@ def segments_to_dataframe(segments, categories, hansard_code):
                 logs += "QUESTION NUMBER DETECTED: " + subtopic + '\n'
                 j += 1
                 continue
-            subtopic = segments[j][0].strip().rstrip('-').strip()
+            subtopic = segments[j][0].strip().rstrip('-').rstrip('–').strip()
             print("double bold, new subtopic:", subtopic)
             logs += "double bold, new subtopic: " + subtopic + '\n'
             j += 1
