@@ -365,7 +365,7 @@ def segments_to_dataframe(segments, categories, hansard_code):
     new_table = []
     for row in table:
         text = row[-1]
-        matches = re.findall(r'\n *\[[^\[]+] *(?![A-Za-z])', text)
+        matches = re.findall(r'\n *\[[^\[]+] *(?=[\[\n|$])', text)
         if matches:
             for match in matches:
                 annotation = match
