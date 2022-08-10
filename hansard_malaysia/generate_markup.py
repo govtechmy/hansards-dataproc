@@ -26,9 +26,6 @@ def add_markup(chars):
     in_annotation = False
     # adding bold markup
     for char in chars:
-        # if "Italic" not in char["fontname"] and italic_streak:
-        #     text += "___"
-        #     italic_streak = False
         if char['text'] == '\n' and bold_streak:
             # newlines separates two bold segments
             # so markup must be separate as well
@@ -71,9 +68,6 @@ def add_markup(chars):
         if char['text'] == ']':
             in_annotation = False
 
-        # if "Italic" in char["fontname"] and not italic_streak:
-        #     text += "___"
-        #     italic_streak = True
         text += char['text']
 
     return text
@@ -87,17 +81,11 @@ def process_file(hansard_code, page_num=-1):
             os.mkdir(dir_path)
         if page_num != -1:
             # special invocation for single page parsing
-            with open(dir_path + "/" + str(page_num) + "-raw.txt", 'w') as f:
-                output = ''.join([char['text'] for char in pdf.pages[page_num].chars])
-                f.write(output)
             with open(dir_path + "/" + str(page_num) + ".txt", 'w') as f:
                 output = add_markup(pdf.pages[page_num].chars)
                 f.write(output)
         else:
             for idx, page in enumerate(tqdm(pdf.pages)):
-                with open(dir_path + "/" + str(idx) + "-raw.txt", 'w') as f:
-                    output = ''.join([char['text'] for char in page.chars])
-                    f.write(output)
                 with open(dir_path + "/" + str(idx) + ".txt", 'w') as f:
                     output = add_markup(page.chars)
                     f.write(output)
@@ -109,30 +97,3 @@ if __name__ == "__main__":
     parser.add_argument("hansard_code", help="The session code eg. 14-04-01-16")
     args = parser.parse_args()
     process_file(args.hansard_code)
-
-# for special generation
-# with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
-#     with open(dir_path + "/" + str(10) + "-layout.txt", 'w') as f:
-#         f.write(pdf.pages[10].extract_text(layout=True))
-
-
-# with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
-#     with open(dir_path + "/" + str(10) + "-extract.txt", 'w') as f:
-#         f.write(pdf.pages[10].extract_text())
-
-# with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
-#     with open(dir_path + "/" + str(10) + "-plain.txt", 'w') as f:
-#         f.write(''.join([x['text'] for x in pdf.pages[10].chars]))
-
-# with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
-#     text = ''
-#     for page in tqdm(pdf.pages[10:]):
-#         text += ''.join([x['text'] for x in page.chars])
-#     with open(dir_path + "/plain.txt", 'w') as f:
-#         f.write(text)
-
-# for special generation
-# with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
-#     special_id = 15
-#     with open(dir_path + '/' + str(special_id) + ".txt", 'w') as f:
-#         f.write(add_markup(pdf.pages[special_id].chars))
