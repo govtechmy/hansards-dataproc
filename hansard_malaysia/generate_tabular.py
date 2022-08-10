@@ -63,6 +63,11 @@ def export_hansard(df, hansard_code, df_speakers):
     df.to_csv(f"{analysis_dir}/hansard.csv", index=False)
     df.to_parquet(f"{output_dir}/hansard.parquet", index=False)
 
+    # export categories for logging and verification
+    category_df = df[['category', 'subtopic']].copy()
+    category_df = category_df.drop_duplicates()
+    category_df.to_csv(f'{analysis_dir}/category.csv', index=False)
+
 
 def stitch_segments(_segments, glue=" "):
     # stitch neighboring non-bold segments
