@@ -433,11 +433,6 @@ def process_file(hansard_code):
 
     df_speakers = analyse_speakers.get_speakers_from_toc(hansard_code)
 
-    # ignore special texts in the format [XX mempengerusikan Mesyuarat]
-    # for example: [Timbalan Yang di-Pertua (Dato’ Mohd Rashid Hasnon) mempengerusikan Mesyuarat]
-    # as they cut inside dialogue mid-speech
-    all_text = re.sub(r'\[[A-Za-z’\'()\-\. ]+ mempengerusikan Mesyuarat]', '', all_text)
-
     # remove timestamps for now
     all_text = remove_timestamps(all_text)
 
