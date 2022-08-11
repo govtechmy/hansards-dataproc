@@ -88,10 +88,10 @@ def log_to_file(filename, string):
 def clean_segments(_segments):
     # remove ghost spaces
     # eg. the space between <> is non-bold, while the rest is bold: Tuan M. Kulasegaran [Ipoh< >Barat]
-    new_segments = []
+    new_segments = [_segments[0]]
     i = 1
-    while i < len(_segments):
-        if _segments[i][0] == ' ' and _segments[i - 1][1] == _segments[i + 1][1]:
+    while i < len(_segments) :
+        if i < len(_segments) - 1 and _segments[i][0] == ' ' and _segments[i - 1][1] == _segments[i + 1][1]:
             new_segments[-1][0] += _segments[i + 1][0]
             i += 1
         else:
@@ -186,6 +186,9 @@ def get_categories(hansard_code):
     assert found
     _segments = parse_markup(_all_text)
     _segments = clean_segments(_segments)
+    # skip first segment Diterbitkan Oleh:\nSEKSYEN PENYATA RASMI PARLIMEN MALAYSIA
+    assert "Diterbitkan Oleh:\nSEKSYEN PENYATA RASMI PARLIMEN MALAYSIA" in _segments[0][0]
+    _segments.pop(0)
     # remove the first segment (kandungan)
     assert _segments[0][0].replace(' ', '') == "KANDUNGAN"
     _segments = _segments[1:]
