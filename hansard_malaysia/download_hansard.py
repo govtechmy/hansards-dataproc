@@ -3,7 +3,7 @@ import pandas as pd
 import time
 
 
-def download_hansards(start_from="2021-07-26"):
+def download_hansards(start_from="2019-03-11"):
     df = pd.read_csv('sessions.csv', parse_dates=['date'])
     df.date = df.date.dt.date
     sessions = df.session.tolist()
@@ -26,4 +26,4 @@ def download_hansards(start_from="2021-07-26"):
 
 
 if __name__ == "__main__":
-    download_hansards('2022-07-18')
+    download_hansards('2018-07-16')
