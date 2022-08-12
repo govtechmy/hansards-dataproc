@@ -64,6 +64,9 @@ def analyse_speaker(speaker):
     constituency = ''
     if '-' in speaker:
         speaker, role = speaker.split('–')
+        role = role.replace('Tuan Yang di-Pertua', 'Yang di-Pertua')
+        if 'Yang di-Pertua' not in role:
+            print(f'Check that {role} is a role')
     speaker = speaker.strip()
     if ')' == speaker[-1]:
         constituency = re.search("\([A-Za-z ]+\)$", speaker).group(0)

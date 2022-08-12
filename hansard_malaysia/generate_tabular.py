@@ -38,6 +38,54 @@ def remove_timestamps(text):
     return text
 
 
+def get_bare_name(name):
+    extended_titles = analyse_speakers.titles + ['Tuan']
+    for title in extended_titles:
+        name = name.replace(title, '')
+    return re.sub('  +', ' ', name)
+
+
+def similarity_score(name_1, name_2):
+    extended_titles = analyse_speakers.titles + ['Tuan']
+    name_1 = get_bare_name(name_1)
+    name_2 = get_bare_name(name_2)
+    for joint in [' bin ', ' binti ']:
+        if joint in name_1 and joint in name_2:
+            name_1_first, name_1_last = name_1.split(joint)
+            name_2_first, name_2_last = name_2.split(joint)
+            result_1 = similarity_score(name_1_first, name_2_first)
+            result_2 = similarity_score(name_1_last, name_2_last)
+            if result_1 and result_2:
+                return result_1 + result_2
+    name_1_list = name_1.split()
+    name_2_list = name_2.split()
+    matches = []
+    for chunk in name_1_list:
+        if chunk in name_2_list:
+            matches.append(chunk)
+    if not len(matches):
+        return 0
+    indexes = []
+    for chunk in matches:
+        indexes.append(name_2_list.index(chunk))
+        name_2_list.pop(name_2_list.index(chunk))
+    if sorted(indexes) != indexes:
+        return 0
+    indexes = []
+    for chunk in matches:
+        indexes.append(name_1_list.index(chunk))
+        name_1_list.pop(name_1_list.index(chunk))
+    if sorted(indexes) != indexes:
+        return 0
+
+    return len(indexes)
+
+
+def get_closest_mp(name, df_speakers):
+    df_speakers['score'] = df_speakers['name'].apply(lambda x: similarity_score(name, x))
+    return df_speakers.loc[df_speakers['score'] == df_speakers['score'].max(), ['name']].values[0][0]
+
+
 def export_hansard(df, hansard_code, df_speakers):
     analysis_dir = f"analysis_hansard/{hansard_code}"
     output_dir = f"release/{hansard_code}"
@@ -49,14 +97,46 @@ def export_hansard(df, hansard_code, df_speakers):
     # use constituencies or roles
     df['speaker'] = df['speaker'].apply(lambda x: get_role(x, df_speakers))
 
+    # save role-person information to separate parquet
     for speaker_name in role_of_speaker:
-        speaker_series = df_speakers.loc[df_speakers['name'] == speaker_name, 'seat_name'].values
-        if speaker_series.size != 0:
-            speaker_seat_name = speaker_series[0]
-            if speaker_seat_name == role_of_speaker[speaker_name].replace('–','-'):
-                # role is just constituency, skip
+        # check if role is a constituency
+        role = role_of_speaker[speaker_name].replace('–', '-')
+        speaker_series = df_speakers.loc[df_speakers['seat_name'] == role, ['name']].values
+        if speaker_series.size == 1:
+            # constituency match
+            possible_speaker_match = speaker_series[0][0]
+            if not similarity_score(possible_speaker_match, speaker_name):
+                # score is zero between names
+                print(
+                    f"WARN: Same constituency ({role}) but different names:\n{possible_speaker_match}\n{speaker_name}")
+            else:
+                # constituency and name match
+                if similarity_score(possible_speaker_match, speaker_name) < len(get_bare_name(speaker_name).split()) / 2:
+                    print(
+                        f"WARN: Same constituency but low similarity score:\n{possible_speaker_match}\n{speaker_name}")
                 continue
-        df_speakers.loc[df_speakers['name'] == speaker_name, 'role'] = role_of_speaker[speaker_name]
+        elif speaker_series.size == 0:
+            # not a constituency, probably an add-on role, have to match with name
+            speaker_series = df_speakers.loc[df_speakers['name'] == speaker_name, 'name'].values
+            if speaker_series.size == 1:
+                # found exact match
+                current_role = df_speakers.loc[df_speakers['name'] == speaker_name, 'role'].values[0]
+                if current_role and current_role != role_of_speaker[speaker_name]:
+                    print(f"WARN: Role collision\nOLD: {current_role}\nNew: {role_of_speaker[speaker_name]}")
+                df_speakers.loc[df_speakers['name'] == speaker_name, 'role'] = role_of_speaker[speaker_name]
+            else:
+                # no exact name match, have to approximate
+                possible_speaker_match = get_closest_mp(speaker_name, df_speakers)
+                print(f'WARN: Matching speaker to MP list:\n{possible_speaker_match}\n{speaker_name}')
+                current_role = df_speakers.loc[df_speakers['name'] == possible_speaker_match, 'role'].values[0]
+                if current_role and current_role != role_of_speaker[speaker_name]:
+                    print(f"WARN: Role collision\nOLD: {current_role}\nNew: {role_of_speaker[speaker_name]}")
+                df_speakers.loc[df_speakers['name'] == possible_speaker_match, 'role'] = role_of_speaker[speaker_name]
+        elif speaker_series.size > 1:
+            print(f"WARN: Name collision for: {speaker_name}")
+        else:
+            print(f"WARN: Cannot find speaker in MP list: {speaker_name}")
+
     df_speakers.to_csv(f"{analysis_dir}/speakers.csv", index=False)
     df_speakers.to_parquet(f"{output_dir}/speakers.parquet", index=False)
 
@@ -90,7 +170,7 @@ def clean_segments(_segments):
     # eg. the space between <> is non-bold, while the rest is bold: Tuan M. Kulasegaran [Ipoh< >Barat]
     new_segments = [_segments[0]]
     i = 1
-    while i < len(_segments) :
+    while i < len(_segments):
         if i < len(_segments) - 1 and _segments[i][0] == ' ' and _segments[i - 1][1] == _segments[i + 1][1]:
             new_segments[-1][0] += _segments[i + 1][0]
             i += 1
@@ -135,6 +215,12 @@ def clean_segments(_segments):
 role_of_speaker = {}
 
 
+def remove_tuan(name):
+    if name.startswith("Tuan"):
+        name = name[len("Tuan"):].strip()
+    return name
+
+
 def get_role(speaker, df_speakers):
     # for in-text use
     # there are multiple forms
@@ -142,12 +228,15 @@ def get_role(speaker, df_speakers):
     # Tuan Noor Amin bin Ahmad [Kangar]
     # Timbalan Menteri di Jabatan Perdana Menteri (Parlimen dan Undang- undang) [Datuk Wira Hajah Mas Ermieyati binti Samsudin]
     # Datuk Wira Hajah Mas Ermieyati binti Samsudin
+
     if '[' not in speaker:
-        if speaker in ["Tuan Yang di-Pertua", 'Beberapa Ahli', "Tuan Pengerusi",
-                       "DEWAN", 'Timbalan Yang di-Pertua', 'Seorang Ahli']:
+        if speaker == "Tuan Yang di-Pertua":
+            return "Yang di-Pertua"
+        elif speaker in ['Beberapa Ahli', "Tuan Pengerusi",
+                         "DEWAN", 'Timbalan Yang di-Pertua', 'Seorang Ahli']:
             return speaker
         else:
-            raw_name = analyse_speakers.remove_titles(speaker)
+            raw_name = remove_tuan(analyse_speakers.remove_titles(speaker))
             if raw_name in role_of_speaker:
                 # get role from previous introduction
                 return role_of_speaker[raw_name]
@@ -157,7 +246,7 @@ def get_role(speaker, df_speakers):
                 if not possible_row.empty:
                     return possible_row.seat_name.item()
                 else:
-                    warnings.warn(f"Unrecognised speaker: {raw_name}")
+                    print(f"WARN: Unrecognised speaker: {raw_name}")
                     return raw_name
     segments = speaker.split('[')
     # remove ]
@@ -186,8 +275,9 @@ def get_categories(hansard_code):
     assert found
     _segments = parse_markup(_all_text)
     _segments = clean_segments(_segments)
-    # skip first segment Diterbitkan Oleh:\nSEKSYEN PENYATA RASMI PARLIMEN MALAYSIA
-    assert "Diterbitkan Oleh:\nSEKSYEN PENYATA RASMI PARLIMEN MALAYSIA" in _segments[0][0]
+    # skip first segment Diterbitkan Oleh:\nSEKSYEN PENYATA RASMI
+    if "Diterbitkan Oleh:\nSEKSYEN PENYATA RASMI" not in _segments[0][0]:
+        raise AssertionError(f"TOC page does not start with publisher but: {_segments[0][0]}")
     _segments.pop(0)
     # remove the first segment (kandungan)
     assert _segments[0][0].replace(' ', '') == "KANDUNGAN"
@@ -365,7 +455,7 @@ def segments_to_dataframe(segments, categories, hansard_code):
             table.append(row)
             j += 1
         else:
-            warnings.warn(f"ignoring statement (bold: {segments[j][1]}): {segments[j][0]}")
+            print(f"WARN: ignoring statement (bold: {segments[j][1]}): {segments[j][0]}")
             if table:
                 print("previous row is", str(table[-1]))
                 print(f'index {j} of length {len(segments)}')
@@ -385,7 +475,8 @@ def segments_to_dataframe(segments, categories, hansard_code):
                     continue
                 speaker_text, text = text.split(annotation, 1)
                 if speaker_text.strip():
-                    if speaker_text.strip()[0] == '[' and speaker_text.strip()[-1] == ']' and speaker_text.count('[') == 1:
+                    if speaker_text.strip()[0] == '[' and speaker_text.strip()[-1] == ']' and speaker_text.count(
+                            '[') == 1:
                         new_table.append(
                             row[:-2] + ["DEWAN", speaker_text.strip()]
                         )
@@ -406,7 +497,7 @@ def segments_to_dataframe(segments, categories, hansard_code):
 
     for row in table:
         if '[Mesyuarat' in row[3] and row[2] != "DEWAN":
-            warnings.warn(f"Possible trailing annotation:\n" + str(row))
+            print(f"WARN: Possible trailing annotation:\n" + str(row))
 
     # convert to pandas dataframe
     df = pd.DataFrame(data=table, columns=["category", "subtopic", "speaker", "content"], dtype="string")
@@ -415,7 +506,7 @@ def segments_to_dataframe(segments, categories, hansard_code):
     for category in categories:
         if category not in used_categories:
             warned = True
-            warnings.warn(f"Unused category: {category}")
+            print(f"WARN: Unused category: {category}")
 
     if not warned:
         print("All categories used")
