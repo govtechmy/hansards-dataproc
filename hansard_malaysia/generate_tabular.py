@@ -42,8 +42,8 @@ def get_bare_name(name):
     name = analyse_speakers.remove_titles(name)
     extended_titles = analyse_speakers.titles + ['Tuan']
     for title in extended_titles:
-        name = name.replace(title, '')
-    return re.sub('  +', ' ', name)
+        name = name.replace(title+' ', ' ')
+    return re.sub('  +', ' ', name).strip()
 
 
 def similarity_score(name_1, name_2):
@@ -105,20 +105,20 @@ def export_hansard(df, hansard_code, df_speakers):
     # save role-person information to separate parquet
     for speaker_name in role_of_speaker:
         # check if role is a constituency
-        role = role_of_speaker[speaker_name].replace('–', '-')
-        speaker_series = df_speakers.loc[df_speakers['seat_name'] == role, ['name']].values
+        new_role = role_of_speaker[speaker_name].replace('–', '-')
+        speaker_series = df_speakers.loc[df_speakers['seat_name'] == new_role, ['name']].values
         if speaker_series.size == 1:
             # constituency match
             possible_speaker_match = speaker_series[0][0]
             if not similarity_score(possible_speaker_match, speaker_name):
                 # score is zero between names
                 print(
-                    f"WARN: Same constituency ({role}) but different names:\n{possible_speaker_match}\n{speaker_name}")
+                    f"WARN: Same constituency ({new_role}) but different names:\nIn text: {speaker_name}\nIn list: {possible_speaker_match}")
             else:
                 # constituency and name match
                 if similarity_score(possible_speaker_match, speaker_name) < len(get_bare_name(speaker_name).split()) / 2:
                     print(
-                        f"WARN: Same constituency ({role}) but low similarity score:\n{possible_speaker_match}\n{speaker_name}")
+                        f"WARN: Same constituency ({new_role}) but low similarity score:\nIn text: {speaker_name}\nIn list: {possible_speaker_match}")
                 continue
         elif speaker_series.size == 0:
             # not a constituency, probably an add-on role, have to match with name
@@ -126,17 +126,17 @@ def export_hansard(df, hansard_code, df_speakers):
             if speaker_series.size == 1:
                 # found exact match
                 current_role = df_speakers.loc[df_speakers['name'] == speaker_name, 'role'].values[0]
-                if current_role and current_role != role_of_speaker[speaker_name]:
-                    print(f"WARN: Role collision for {speaker_name}\nOLD: {current_role}\nNew: {role_of_speaker[speaker_name]}")
-                df_speakers.loc[df_speakers['name'] == speaker_name, 'role'] = role_of_speaker[speaker_name]
+                if current_role and current_role != new_role:
+                    print(f"WARN: Role collision for {speaker_name}\nOLD: {current_role}\nNew: {new_role}")
+                df_speakers.loc[df_speakers['name'] == speaker_name, 'role'] = new_role
             else:
                 # no exact name match, have to approximate
                 possible_speaker_match = get_closest_mp(speaker_name, df_speakers)
-                print(f'WARN: Matching speaker to MP list:\nIn text: {speaker_name}\nIn list: {possible_speaker_match}')
+                print(f'WARN: Matching speaker to MP list:\nIn text: {speaker_name} (as {new_role})\nIn list: {possible_speaker_match}')
                 current_role = df_speakers.loc[df_speakers['name'] == possible_speaker_match, 'role'].values[0]
-                if current_role and current_role != role_of_speaker[speaker_name]:
-                    print(f"WARN: Role collision for {speaker_name}\nOLD: {current_role}\nNew: {role_of_speaker[speaker_name]}")
-                df_speakers.loc[df_speakers['name'] == possible_speaker_match, 'role'] = role_of_speaker[speaker_name]
+                if current_role and current_role != new_role:
+                    print(f"WARN: Role collision for {speaker_name}\nOLD: {current_role}\nNew: {new_role}")
+                df_speakers.loc[df_speakers['name'] == possible_speaker_match, 'role'] = new_role
         elif speaker_series.size > 1:
             print(f"WARN: Name collision for: {speaker_name}")
         else:
@@ -227,6 +227,7 @@ def remove_tuan(name):
 
 
 def get_role(speaker, df_speakers):
+    speaker = speaker.strip()
     # for in-text use
     # there are multiple forms
     # Timbalan Yang di-Pertua [Dato’ Mohd Rashid Hasnon]
@@ -257,6 +258,7 @@ def get_role(speaker, df_speakers):
                     return raw_name
     segments = speaker.split('[')
     # remove ]
+    assert len(segments) == 2
     segments[1] = segments[1][:-1]
     segments = [segment.strip() for segment in segments]
     if [x for x in ['Menteri', 'Yang di-Pertua', 'Pengerusi'] if x in segments[0]]:
@@ -266,7 +268,9 @@ def get_role(speaker, df_speakers):
         speaker_name = analyse_speakers.remove_titles(segments[0])
         speaker_role = segments[1]
     speaker_name = remove_tuan(analyse_speakers.remove_titles(speaker_name))
-    role_of_speaker[speaker_name] = speaker_role
+    role_of_speaker[speaker_name] = speaker_role.replace('Tuan','').strip()
+    assert speaker_name
+    assert speaker_role
     return speaker_role
 
 
@@ -565,6 +569,7 @@ def process_file(hansard_code):
     dataframe = segments_to_dataframe(segments, categories, hansard_code)
     df_speakers = analyse_speakers.get_speakers_from_toc(hansard_code)
     export_hansard(dataframe, hansard_code, df_speakers)
+    print(f'Done processing {hansard_code}')
 
     return 0
 

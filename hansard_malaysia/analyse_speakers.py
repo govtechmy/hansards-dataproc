@@ -7,6 +7,7 @@ import re
 titles = [
     "YB Tuan",
     "YB Senator Tuan",
+    "Yang Berhormat",
     "YB",
     "YAB",
     "Senator",
