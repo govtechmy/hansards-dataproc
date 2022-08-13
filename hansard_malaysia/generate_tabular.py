@@ -6,6 +6,7 @@ import pdfplumber
 import pandas as pd
 import argparse
 import analyse_speakers
+import util_lis
 from hashlib import sha256
 
 
@@ -47,8 +48,8 @@ def get_bare_name(name):
 
 
 def similarity_score(name_1, name_2):
-    name_1 = get_bare_name(name_1)
-    name_2 = get_bare_name(name_2)
+    name_1 = get_bare_name(name_1).lower()
+    name_2 = get_bare_name(name_2).lower()
     for joint in [' bin ', ' binti ']:
         if joint in name_1 and joint in name_2:
             name_1_first, name_1_last = name_1.split(joint)
@@ -62,27 +63,16 @@ def similarity_score(name_1, name_2):
     name_1_list = name_1.split()
     name_2_list = name_2.split()
     matches = []
+    seq = []
     for chunk in name_1_list:
         if chunk in name_2_list:
-            name_2_list.pop(name_2_list.index(chunk))
+            seq.append(name_2_list.index(chunk))
+            name_2_list[name_2_list.index(chunk)] = '!VOID'
             matches.append(chunk)
     if not len(matches):
         return 0
-    indexes = []
-    name_2_list = name_2.split()
-    for chunk in matches:
-        indexes.append(name_2_list.index(chunk))
-        name_2_list.pop(name_2_list.index(chunk))
-    if sorted(indexes) != indexes:
-        return 0
-    indexes = []
-    for chunk in matches:
-        indexes.append(name_1_list.index(chunk))
-        name_1_list.pop(name_1_list.index(chunk))
-    if sorted(indexes) != indexes:
-        return 0
-
-    return len(indexes)
+    lis = util_lis.longest_subsequence(seq)
+    return len(lis)
 
 
 def get_closest_mp(name, df_speakers):
@@ -251,6 +241,12 @@ def get_role(speaker, df_speakers):
                 possible_row = df_speakers.loc[df_speakers['name'] == raw_name]
                 if not possible_row.empty:
                     return possible_row.seat_name.item()
+                possible_speaker_match = get_closest_mp(raw_name, df_speakers)
+                if similarity_score(possible_speaker_match, raw_name) >= len(
+                        get_bare_name(raw_name).split()) / 2:
+                    print(f'WARN: Accepted speaker match to MP list:\nIn text: {raw_name}\nIn list: {possible_speaker_match}')
+                    role_of_speaker[raw_name] = df_speakers.loc[df_speakers['name'] == possible_speaker_match, ['seat_name']].values[0][0]
+                    return possible_speaker_match
                 else:
                     print(f"WARN: Unrecognised speaker: {raw_name}")
                     df_speakers.to_csv('error-log-speakers.csv')
