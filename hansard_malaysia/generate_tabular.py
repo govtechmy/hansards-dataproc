@@ -64,10 +64,12 @@ def similarity_score(name_1, name_2):
     matches = []
     for chunk in name_1_list:
         if chunk in name_2_list:
+            name_2_list.pop(name_2_list.index(chunk))
             matches.append(chunk)
     if not len(matches):
         return 0
     indexes = []
+    name_2_list = name_2.split()
     for chunk in matches:
         indexes.append(name_2_list.index(chunk))
         name_2_list.pop(name_2_list.index(chunk))
@@ -116,7 +118,7 @@ def export_hansard(df, hansard_code, df_speakers):
                 # constituency and name match
                 if similarity_score(possible_speaker_match, speaker_name) < len(get_bare_name(speaker_name).split()) / 2:
                     print(
-                        f"WARN: Same constituency but low similarity score:\n{possible_speaker_match}\n{speaker_name}")
+                        f"WARN: Same constituency ({role}) but low similarity score:\n{possible_speaker_match}\n{speaker_name}")
                 continue
         elif speaker_series.size == 0:
             # not a constituency, probably an add-on role, have to match with name
@@ -257,7 +259,7 @@ def get_role(speaker, df_speakers):
     # remove ]
     segments[1] = segments[1][:-1]
     segments = [segment.strip() for segment in segments]
-    if "Menteri" in segments[0] or "Yang di-Pertua" in segments[0]:
+    if [x for x in ['Menteri', 'Yang di-Pertua', 'Pengerusi'] if x in segments[0]]:
         speaker_name = analyse_speakers.remove_titles(segments[1])
         speaker_role = segments[0]
     else:
@@ -284,7 +286,7 @@ def get_categories(hansard_code):
     _segments = parse_markup(_all_text)
     _segments = clean_segments(_segments)
     # skip first segment Diterbitkan Oleh:\nSEKSYEN PENYATA RASMI
-    if "Diterbitkan Oleh:\nSEKSYEN PENYATA RASMI" not in _segments[0][0]:
+    if "Diterbitkan Oleh:" not in _segments[0][0]:
         raise AssertionError(f"TOC page does not start with publisher but: {_segments[0][0]}")
     _segments.pop(0)
     # remove the first segment (kandungan)
