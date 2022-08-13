@@ -39,6 +39,7 @@ def remove_timestamps(text):
 
 
 def get_bare_name(name):
+    name = analyse_speakers.remove_titles(name)
     extended_titles = analyse_speakers.titles + ['Tuan']
     for title in extended_titles:
         name = name.replace(title, '')
@@ -46,7 +47,6 @@ def get_bare_name(name):
 
 
 def similarity_score(name_1, name_2):
-    extended_titles = analyse_speakers.titles + ['Tuan']
     name_1 = get_bare_name(name_1)
     name_2 = get_bare_name(name_2)
     for joint in [' bin ', ' binti ']:
@@ -57,6 +57,8 @@ def similarity_score(name_1, name_2):
             result_2 = similarity_score(name_1_last, name_2_last)
             if result_1 and result_2:
                 return result_1 + result_2
+            else:
+                return 0
     name_1_list = name_1.split()
     name_2_list = name_2.split()
     matches = []
@@ -82,7 +84,8 @@ def similarity_score(name_1, name_2):
 
 
 def get_closest_mp(name, df_speakers):
-    df_speakers['score'] = df_speakers['name'].apply(lambda x: similarity_score(name, x))
+    df_speakers = df_speakers.copy()
+    df_speakers['score'] = df_speakers['name'].apply(lambda x: int(similarity_score(name, x)))
     return df_speakers.loc[df_speakers['score'] == df_speakers['score'].max(), ['name']].values[0][0]
 
 
@@ -122,15 +125,15 @@ def export_hansard(df, hansard_code, df_speakers):
                 # found exact match
                 current_role = df_speakers.loc[df_speakers['name'] == speaker_name, 'role'].values[0]
                 if current_role and current_role != role_of_speaker[speaker_name]:
-                    print(f"WARN: Role collision\nOLD: {current_role}\nNew: {role_of_speaker[speaker_name]}")
+                    print(f"WARN: Role collision for {speaker_name}\nOLD: {current_role}\nNew: {role_of_speaker[speaker_name]}")
                 df_speakers.loc[df_speakers['name'] == speaker_name, 'role'] = role_of_speaker[speaker_name]
             else:
                 # no exact name match, have to approximate
                 possible_speaker_match = get_closest_mp(speaker_name, df_speakers)
-                print(f'WARN: Matching speaker to MP list:\n{possible_speaker_match}\n{speaker_name}')
+                print(f'WARN: Matching speaker to MP list:\nIn text: {speaker_name}\nIn list: {possible_speaker_match}')
                 current_role = df_speakers.loc[df_speakers['name'] == possible_speaker_match, 'role'].values[0]
                 if current_role and current_role != role_of_speaker[speaker_name]:
-                    print(f"WARN: Role collision\nOLD: {current_role}\nNew: {role_of_speaker[speaker_name]}")
+                    print(f"WARN: Role collision for {speaker_name}\nOLD: {current_role}\nNew: {role_of_speaker[speaker_name]}")
                 df_speakers.loc[df_speakers['name'] == possible_speaker_match, 'role'] = role_of_speaker[speaker_name]
         elif speaker_series.size > 1:
             print(f"WARN: Name collision for: {speaker_name}")
@@ -247,17 +250,22 @@ def get_role(speaker, df_speakers):
                     return possible_row.seat_name.item()
                 else:
                     print(f"WARN: Unrecognised speaker: {raw_name}")
+                    df_speakers.to_csv('error-log-speakers.csv')
+                    log_to_file('dict_log.txt', str(role_of_speaker))
                     return raw_name
     segments = speaker.split('[')
     # remove ]
     segments[1] = segments[1][:-1]
     segments = [segment.strip() for segment in segments]
     if "Menteri" in segments[0] or "Yang di-Pertua" in segments[0]:
-        role_of_speaker[analyse_speakers.remove_titles(segments[1])] = segments[0]
-        return segments[0]
+        speaker_name = analyse_speakers.remove_titles(segments[1])
+        speaker_role = segments[0]
     else:
-        role_of_speaker[analyse_speakers.remove_titles(segments[0])] = segments[1]
-        return segments[1]
+        speaker_name = analyse_speakers.remove_titles(segments[0])
+        speaker_role = segments[1]
+    speaker_name = remove_tuan(analyse_speakers.remove_titles(speaker_name))
+    role_of_speaker[speaker_name] = speaker_role
+    return speaker_role
 
 
 def get_categories(hansard_code):
@@ -535,8 +543,6 @@ def process_file(hansard_code):
 
     all_text = get_content(hansard_code)
 
-    df_speakers = analyse_speakers.get_speakers_from_toc(hansard_code)
-
     # remove timestamps for now
     all_text = remove_timestamps(all_text)
 
@@ -555,7 +561,7 @@ def process_file(hansard_code):
         f.write('\n~~~\n'.join([s[0] for s in segments]))
 
     dataframe = segments_to_dataframe(segments, categories, hansard_code)
-
+    df_speakers = analyse_speakers.get_speakers_from_toc(hansard_code)
     export_hansard(dataframe, hansard_code, df_speakers)
 
     return 0

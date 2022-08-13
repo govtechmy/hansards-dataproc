@@ -6,6 +6,7 @@ import re
 
 titles = [
     "YB Tuan",
+    "YB Senator Tuan",
     "YB",
     "YAB",
     "Senator",
@@ -34,6 +35,7 @@ titles = [
 
 
 def remove_titles(speaker):
+    speaker = speaker.strip()
     removal_request = 1
     speaker = speaker.replace('’', "'")
     speaker = speaker.replace('.', "")
