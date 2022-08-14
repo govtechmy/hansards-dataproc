@@ -130,7 +130,7 @@ def get_speakers_from_toc(hansard_code):
         with open("preprocessed_hansard/" + hansard_code + f"/{idx + 1}.txt", 'r') as f:
             cur_text = ''.join(f.readlines()[1:])
         if not started:
-            if "SENARAI KEHADIRAN AHLI-AHLI PARLIMEN" in cur_text:
+            if "KEHADIRAN AHLI-AHLI PARLIMEN" in cur_text:
                 started = True
             else:
                 continue
