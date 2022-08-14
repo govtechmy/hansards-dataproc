@@ -81,11 +81,14 @@ def get_closest_mp(name, df_speakers):
     return df_speakers.loc[df_speakers['score'] == df_speakers['score'].max(), ['name']].values[0][0]
 
 
-def export_hansard(df, hansard_code, df_speakers):
+def export_hansard(df, hansard_code, df_speakers, finalised):
     analysis_dir = f"analysis_hansard/{hansard_code}"
     output_dir = f"release/{hansard_code}"
-    if not os.path.isdir(analysis_dir):
-        os.mkdir(analysis_dir)
+    if not finalised:
+        analysis_dir += "-not-finalised"
+        output_dir += "-not-finalised"
+
+    assert os.path.isdir(analysis_dir)
     if not os.path.isdir(output_dir):
         os.mkdir(output_dir)
 
@@ -231,7 +234,7 @@ def get_role(speaker, df_speakers):
         if speaker == "Tuan Yang di-Pertua":
             return "Yang di-Pertua"
         elif speaker in ['Beberapa Ahli', "Tuan Pengerusi",
-                         "DEWAN", 'Timbalan Yang di-Pertua', 'Seorang Ahli']:
+                         "DEWAN", 'Timbalan Yang di-Pertua', 'Seorang Ahli', 'LAMPIRAN']:
             return speaker
         else:
             raw_name = remove_tuan(analyse_speakers.remove_titles(speaker))
@@ -269,7 +272,8 @@ def get_role(speaker, df_speakers):
         speaker_role = segments[1]
     speaker_name = remove_tuan(analyse_speakers.remove_titles(speaker_name))
     role_of_speaker[speaker_name] = speaker_role.replace('Tuan', '').strip()
-    assert speaker_name
+    if not speaker_name:
+        print("WARN: EMPTY SPEAKER NAME")
     assert speaker_role
     return speaker_role
 
@@ -317,8 +321,8 @@ def get_categories(hansard_code):
     # sometimes bullet points are single bold segments, remove them if no alphanumeric content is present
     categories = [bold for bold in bolds if re.search(r'\w+', bold)]
 
-    # remove trailing –
-    categories = [bold.strip().strip('–').strip() for bold in categories]
+    # remove trailing – and -
+    categories = [bold.strip().strip('–').strip().strip('-').strip() for bold in categories]
 
     if "USUL-USUL" in categories:
         categories[categories.index("USUL-USUL")] = "USUL"
@@ -340,7 +344,7 @@ def get_date_of_session(session):
 def get_content(hansard_code):
     hansard_date = get_date_of_session(hansard_code)
     day, month, year = [re.sub('^0', '', x) for x in hansard_date.split('.')]
-    hansard_date_2 = '.'.join([day,month,year])
+    hansard_date_2 = '.'.join([day, month, year])
     with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
         for idx, page in enumerate(pdf.pages):
             with open('preprocessed_hansard/' + hansard_code + '/' + str(idx) + '.txt', 'r') as f:
@@ -359,7 +363,7 @@ def get_content(hansard_code):
     return all_text
 
 
-def segments_to_dataframe(segments, categories, hansard_code):
+def segments_to_dataframe(segments, categories, analysis_dir):
     used_categories = set()
     j = 0
     logs = ""
@@ -406,7 +410,7 @@ def segments_to_dataframe(segments, categories, hansard_code):
 
         new_category = ""
         # initiate category parsing if is bold and all uppercase (remove i as it can be in bill title)
-        if segments[j][1] and segments[j][0].replace('i','').isupper():
+        if segments[j][1] and segments[j][0].replace('i', '').isupper() and not "LAMPIRAN" == segments[j][0]:
             # after initiation, conditions are less strict: text can be lowercase (eg. Bacaan kali...)
             # additionally, separate title from speakers (usually with [ ]) and numbering at start
             while segments[j][1] and (
@@ -536,23 +540,22 @@ def segments_to_dataframe(segments, categories, hansard_code):
         print("All categories used")
 
     # save logs
-    with open('analysis_hansard/' + hansard_code + '/' + hansard_code + '-logs.txt', 'w') as f:
+    with open(analysis_dir + '/logs.txt', 'w') as f:
         f.write(logs)
     return df
 
 
 def process_file(hansard_code):
+    analysis_dir = "analysis_hansard/" + hansard_code
     # check if it is final version
     with open("preprocessed_hansard/" + hansard_code + '/0.txt', 'r') as f:
         if "Naskhah belum disemak" in f.read():
-            print("Aborting due to unfinalised Hansard")
             finalised = False
+            analysis_dir += '-not-finalised'
+            print("WARN: HANSARD NOT FINALISED")
         else:
             finalised = True
-    analysis_dir = "analysis_hansard/" + hansard_code
-    if not finalised:
-        analysis_dir += '-not-finalised'
-        print("WARN: HANSARD NOT FINALISED")
+
     if not os.path.isdir(analysis_dir):
         os.mkdir(analysis_dir)
     categories = get_categories(hansard_code)
@@ -581,9 +584,9 @@ def process_file(hansard_code):
     with open(analysis_dir + "/cleaned_segments.txt", "w") as f:
         f.write('\n~~~\n'.join([s[0] for s in segments]))
 
-    dataframe = segments_to_dataframe(segments, categories, hansard_code)
+    dataframe = segments_to_dataframe(segments, categories, analysis_dir)
     df_speakers = analyse_speakers.get_speakers_from_toc(hansard_code)
-    export_hansard(dataframe, hansard_code, df_speakers)
+    export_hansard(dataframe, hansard_code, df_speakers, finalised)
     print(f'Done processing {hansard_code}')
 
     return 0
