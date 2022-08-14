@@ -22,6 +22,7 @@ titles = [
     "Dato Wira",
     "Dato'",
     "Dato",
+    "Datuk Seri Utama",
     "Datuk Seri Panglima",
     "Datuk Seri",
     "Datuk Wira",
@@ -168,7 +169,8 @@ def get_speakers_from_toc(hansard_code):
         sections[title] = get_speaker_list_from_string(content[0])
 
     assert "ahli-ahli yang hadir" in sections or "ahli-ahli yang tidak hadir" in sections
-    assert "senator yang hadir sama" in sections or "senator yang tidak hadir" in sections
+    if not ("senator yang hadir sama" in sections or "senator yang tidak hadir" in sections):
+        print("WARN: No senators present")
 
     attendance = []
     if "ahli-ahli yang hadir" in sections:

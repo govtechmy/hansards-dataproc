@@ -43,7 +43,7 @@ def get_bare_name(name):
     name = analyse_speakers.remove_titles(name)
     extended_titles = analyse_speakers.titles + ['Tuan']
     for title in extended_titles:
-        name = name.replace(title+' ', ' ')
+        name = name.replace(title + ' ', ' ')
     return re.sub('  +', ' ', name).strip()
 
 
@@ -106,7 +106,8 @@ def export_hansard(df, hansard_code, df_speakers):
                     f"WARN: Same constituency ({new_role}) but different names:\nIn text: {speaker_name}\nIn list: {possible_speaker_match}")
             else:
                 # constituency and name match
-                if similarity_score(possible_speaker_match, speaker_name) < len(get_bare_name(speaker_name).split()) / 2:
+                if similarity_score(possible_speaker_match, speaker_name) < len(
+                        get_bare_name(speaker_name).split()) / 2:
                     print(
                         f"WARN: Same constituency ({new_role}) but low similarity score:\nIn text: {speaker_name}\nIn list: {possible_speaker_match}")
                 continue
@@ -122,7 +123,8 @@ def export_hansard(df, hansard_code, df_speakers):
             else:
                 # no exact name match, have to approximate
                 possible_speaker_match = get_closest_mp(speaker_name, df_speakers)
-                print(f'WARN: Matching speaker to MP list:\nIn text: {speaker_name} (as {new_role})\nIn list: {possible_speaker_match}')
+                print(
+                    f'WARN: Matching speaker to MP list:\nIn text: {speaker_name} (as {new_role})\nIn list: {possible_speaker_match}')
                 current_role = df_speakers.loc[df_speakers['name'] == possible_speaker_match, 'role'].values[0]
                 if current_role and current_role != new_role:
                     print(f"WARN: Role collision for {speaker_name}\nOLD: {current_role}\nNew: {new_role}")
@@ -244,8 +246,10 @@ def get_role(speaker, df_speakers):
                 possible_speaker_match = get_closest_mp(raw_name, df_speakers)
                 if similarity_score(possible_speaker_match, raw_name) >= len(
                         get_bare_name(raw_name).split()) / 2:
-                    print(f'WARN: Accepted speaker match to MP list:\nIn text: {raw_name}\nIn list: {possible_speaker_match}')
-                    role_of_speaker[raw_name] = df_speakers.loc[df_speakers['name'] == possible_speaker_match, ['seat_name']].values[0][0]
+                    print(
+                        f'WARN: Accepted speaker match to MP list:\nIn text: {raw_name}\nIn list: {possible_speaker_match}')
+                    role_of_speaker[raw_name] = \
+                        df_speakers.loc[df_speakers['name'] == possible_speaker_match, ['seat_name']].values[0][0]
                     return possible_speaker_match
                 else:
                     print(f"WARN: Unrecognised speaker: {raw_name}")
@@ -264,7 +268,7 @@ def get_role(speaker, df_speakers):
         speaker_name = analyse_speakers.remove_titles(segments[0])
         speaker_role = segments[1]
     speaker_name = remove_tuan(analyse_speakers.remove_titles(speaker_name))
-    role_of_speaker[speaker_name] = speaker_role.replace('Tuan','').strip()
+    role_of_speaker[speaker_name] = speaker_role.replace('Tuan', '').strip()
     assert speaker_name
     assert speaker_role
     return speaker_role
@@ -286,12 +290,14 @@ def get_categories(hansard_code):
     _segments = parse_markup(_all_text)
     _segments = clean_segments(_segments)
     # skip first segment Diterbitkan Oleh:\nSEKSYEN PENYATA RASMI
-    if "Diterbitkan Oleh:" not in _segments[0][0]:
-        raise AssertionError(f"TOC page does not start with publisher but: {_segments[0][0]}")
-    _segments.pop(0)
-    # remove the first segment (kandungan)
-    assert _segments[0][0].replace(' ', '') == "KANDUNGAN"
-    _segments = _segments[1:]
+    if "Diterbitkan Oleh:".lower() not in _segments[0][0].lower():
+        print(f"WARN: (relevant for 14-04 onwards) TOC page does not start with publisher but: {_segments[0][0]}")
+    while True:
+        if _segments[0][0].replace(' ', '') == "KANDUNGAN":
+            _segments.pop(0)
+            break
+        else:
+            _segments.pop(0)
 
     # for table of contents, it is better to join consecutive bold segments
     # since separate categories must be separated by a non-bold segment (Halaman X)
@@ -309,6 +315,9 @@ def get_categories(hansard_code):
             bolds.append(segment[0].replace(':', ''))
     # sometimes bullet points are single bold segments, remove them if no alphanumeric content is present
     categories = [bold for bold in bolds if re.search(r'\w+', bold)]
+
+    # remove trailing –
+    categories = [bold[:-1].strip() for bold in bolds if bold[-1] == '–']
 
     if "USUL-USUL" in categories:
         categories[categories.index("USUL-USUL")] = "USUL"
@@ -328,13 +337,18 @@ def get_date_of_session(session):
 
 
 def get_content(hansard_code):
-    pdf_code = "DR." + get_date_of_session(hansard_code)
+    hansard_date = get_date_of_session(hansard_code)
+    day, month, year = [re.sub('^0', '', x) for x in hansard_date.split('.')]
+    pdf_code = "DR." + hansard_date
+    pdf_code_2 = f"DR.{day}.{month}.{year}"
+    print(pdf_code_2)
     with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
         for idx, page in enumerate(pdf.pages):
             with open('preprocessed_hansard/' + hansard_code + '/' + str(idx) + '.txt', 'r') as f:
                 text = f.readlines()
             # get first page with texts
-            if text and text[0].strip().endswith(pdf_code[-8:] + ' 1'):
+            if text and \
+                    (text[0].strip().endswith(f'{pdf_code} 1') or text[0].strip().endswith(f'{pdf_code_2} 1')):
                 first_page = idx
                 break
         print('first page:', first_page)
@@ -392,8 +406,8 @@ def segments_to_dataframe(segments, categories, hansard_code):
             continue
 
         new_category = ""
-        # initiate category parsing if is bold and all uppercase
-        if segments[j][1] and segments[j][0].isupper():
+        # initiate category parsing if is bold and all uppercase (remove i as it can be in bill title)
+        if segments[j][1] and segments[j][0].replace('i','').isupper():
             # after initiation, conditions are less strict: text can be lowercase (eg. Bacaan kali...)
             # additionally, separate title from speakers (usually with [ ]) and numbering at start
             while segments[j][1] and (
