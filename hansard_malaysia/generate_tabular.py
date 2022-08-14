@@ -290,8 +290,9 @@ def get_categories(hansard_code):
     _segments = parse_markup(_all_text)
     _segments = clean_segments(_segments)
     # skip first segment Diterbitkan Oleh:\nSEKSYEN PENYATA RASMI
-    if "Diterbitkan Oleh:".lower() not in _segments[0][0].lower():
-        print(f"WARN: (relevant for 14-04 onwards) TOC page does not start with publisher but: {_segments[0][0]}")
+    # if "Diterbitkan Oleh:".lower() not in _segments[0][0].lower():
+    #     # (relevant for 14-04 onwards) and finalised
+    #     print(f"WARN: TOC page does not start with publisher but: {_segments[0][0]}")
     while True:
         if _segments[0][0].replace(' ', '') == "KANDUNGAN":
             _segments.pop(0)
@@ -317,7 +318,7 @@ def get_categories(hansard_code):
     categories = [bold for bold in bolds if re.search(r'\w+', bold)]
 
     # remove trailing –
-    categories = [bold[:-1].strip() for bold in bolds if bold[-1] == '–']
+    categories = [bold.strip().strip('–').strip() for bold in categories]
 
     if "USUL-USUL" in categories:
         categories[categories.index("USUL-USUL")] = "USUL"
@@ -339,16 +340,14 @@ def get_date_of_session(session):
 def get_content(hansard_code):
     hansard_date = get_date_of_session(hansard_code)
     day, month, year = [re.sub('^0', '', x) for x in hansard_date.split('.')]
-    pdf_code = "DR." + hansard_date
-    pdf_code_2 = f"DR.{day}.{month}.{year}"
-    print(pdf_code_2)
+    hansard_date_2 = '.'.join([day,month,year])
     with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
         for idx, page in enumerate(pdf.pages):
             with open('preprocessed_hansard/' + hansard_code + '/' + str(idx) + '.txt', 'r') as f:
                 text = f.readlines()
             # get first page with texts
             if text and \
-                    (text[0].strip().endswith(f'{pdf_code} 1') or text[0].strip().endswith(f'{pdf_code_2} 1')):
+                    (text[0].strip().endswith(f'{hansard_date} 1') or text[0].strip().endswith(f'{hansard_date_2} 1')):
                 first_page = idx
                 break
         print('first page:', first_page)
@@ -413,6 +412,7 @@ def segments_to_dataframe(segments, categories, hansard_code):
             while segments[j][1] and (
                     segments[j][0].isupper() or (not re.search(r'\[[A-Za-z’\'()\-\. ]+(]:?)$', segments[j][0].strip())
                                                  and not "Tuan Yang di-Pertua:" == segments[j][0].strip()
+                                                 and not "Yang di-Pertuan Agong:" == segments[j][0].strip()
                                                  and not re.search(r'\A\d+\.', segments[j][0].strip()))):
                 # while bold
                 if new_category:
@@ -546,8 +546,13 @@ def process_file(hansard_code):
     with open("preprocessed_hansard/" + hansard_code + '/0.txt', 'r') as f:
         if "Naskhah belum disemak" in f.read():
             print("Aborting due to unfinalised Hansard")
-            return -1
+            finalised = False
+        else:
+            finalised = True
     analysis_dir = "analysis_hansard/" + hansard_code
+    if not finalised:
+        analysis_dir += '-not-finalised'
+        print("WARN: HANSARD NOT FINALISED")
     if not os.path.isdir(analysis_dir):
         os.mkdir(analysis_dir)
     categories = get_categories(hansard_code)
