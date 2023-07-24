@@ -8,6 +8,7 @@ import argparse
 import analyse_speakers
 import util_lis
 from hashlib import sha256
+import sys
 
 
 def parse_markup(text):
@@ -106,14 +107,15 @@ def export_hansard(df, hansard_code, df_speakers, finalised):
             if not similarity_score(possible_speaker_match, speaker_name):
                 # score is zero between names
                 print(
-                    f"WARN: Same constituency ({new_role}) but different names:\nIn text: {speaker_name}\nIn list: {possible_speaker_match}")
+                    f"WARN: Same constituency ({new_role}) but different names:\n"
+                    f"In text: {speaker_name}\nIn list: {possible_speaker_match}")
             else:
                 # constituency and name match
                 if similarity_score(possible_speaker_match, speaker_name) < len(
                         get_bare_name(speaker_name).split()) / 2:
                     print(
                         f"WARN: Same constituency ({new_role}) but low similarity score:\nIn text: {speaker_name}\nIn list: {possible_speaker_match}")
-                continue
+            continue
         elif speaker_series.size == 0:
             # not a constituency, probably an add-on role, have to match with name
             speaker_series = df_speakers.loc[df_speakers['name'] == speaker_name, 'name'].values
@@ -173,6 +175,18 @@ def clean_segments(_segments):
     while i < len(_segments):
         if i < len(_segments) - 1 and _segments[i][0] == ' ' and _segments[i - 1][1] == _segments[i + 1][1]:
             new_segments[-1][0] += _segments[i + 1][0]
+            i += 1
+        else:
+            new_segments.append(_segments[i])
+        i += 1
+    _segments = new_segments
+
+    # reunite stray bolds eg. Rahmani Rahim<.> Assalamualaikum
+    new_segments = [_segments[0]]
+    i = 1
+    while i < len(_segments):
+        if i < len(_segments) - 1 and _segments[i][0].strip() == '.' and _segments[i - 1][1] == _segments[i + 1][1]:
+            new_segments[-1][0] += '.'
             i += 1
         else:
             new_segments.append(_segments[i])
@@ -271,19 +285,20 @@ def get_role(speaker, df_speakers):
         speaker_name = analyse_speakers.remove_titles(segments[0])
         speaker_role = segments[1]
     speaker_name = remove_tuan(analyse_speakers.remove_titles(speaker_name))
-    role_of_speaker[speaker_name] = speaker_role.replace('Tuan', '').strip()
+    role_of_speaker[speaker_name] = remove_tuan(speaker_role).strip()
     if not speaker_name:
         print("WARN: EMPTY SPEAKER NAME")
     assert speaker_role
     return speaker_role
 
 
-def get_categories(hansard_code):
+def get_categories(hansard_date):
     _all_text = ""
-    with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
+    year = hansard_date[-4:]
+    with pdfplumber.open('src_hansard/downloads/' + year + '/DR-' + hansard_date + '.pdf') as pdf:
         # locate KANDUNGAN
         for idx, page in enumerate(pdf.pages):
-            with open('preprocessed_hansard/' + hansard_code + '/' + str(idx) + '.txt', 'r') as f:
+            with open('preprocessed_hansard/' + hansard_date + '/' + str(idx) + '.txt', 'r') as f:
                 _all_text = f.read()
             if "KANDUNGAN" in _all_text.replace(' ', ''):
                 print(f'TOC at page {idx}')
@@ -329,25 +344,15 @@ def get_categories(hansard_code):
     return categories
 
 
-def get_date_of_session(session):
-    """
-    :param session: the code of the session eg. 14-04-01-17
-    :return: session date in the format dd.mm.yyyy
-    """
-    df = pd.read_csv('sessions.csv', parse_dates=['date'])
-    df.date = df.date.dt.date
-    session_date = dict(zip(df.session, df.date))
-    session_date = session_date[session].strftime('%d.%m.%Y')
-    return session_date
-
-
-def get_content(hansard_code):
-    hansard_date = get_date_of_session(hansard_code)
-    day, month, year = [re.sub('^0', '', x) for x in hansard_date.split('.')]
+def get_content(hansard_date):
+    day = hansard_date[:2]
+    month = hansard_date[2:4]
+    year = hansard_date[-4:]
+    day, month, year = [re.sub('^0', '', x) for x in [day, month, year]]
     hansard_date_2 = '.'.join([day, month, year])
-    with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
+    with pdfplumber.open('src_hansard/downloads/' + year + '/DR-' + hansard_date + '.pdf') as pdf:
         for idx, page in enumerate(pdf.pages):
-            with open('preprocessed_hansard/' + hansard_code + '/' + str(idx) + '.txt', 'r') as f:
+            with open('preprocessed_hansard/' + hansard_date + '/' + str(idx) + '.txt', 'r') as f:
                 text = f.readlines()
             # get first page with texts
             if text and \
@@ -357,7 +362,7 @@ def get_content(hansard_code):
         print('first page:', first_page)
         all_text = ""
         for idx in range(first_page, len(pdf.pages)):
-            with open('preprocessed_hansard/' + hansard_code + '/' + str(idx) + ".txt", 'r') as f:
+            with open('preprocessed_hansard/' + hansard_date + '/' + str(idx) + ".txt", 'r') as f:
                 # remove the PDF code in the first line
                 all_text += ''.join(f.readlines()[1:])
     return all_text
@@ -429,14 +434,17 @@ def segments_to_dataframe(segments, categories, analysis_dir):
                 if new_category.startswith(category):
                     candidate_category = category
                     break
-            if not candidate_category:
-                raise AssertionError("New category not in TOC.\nFound: " + new_category + "\nAvailable categories: \n"
-                                     + '\n'.join(categories)
-                                     + "\nIf only slight typo, edit TOC and rerun")
-            current_category = candidate_category
-            new_category = new_category[len(candidate_category):]
-            print("New category:", current_category)
-            used_categories.add(current_category)
+
+            if candidate_category:
+                current_category = candidate_category
+                new_category = new_category[len(candidate_category):]
+                print("New category:", current_category)
+                used_categories.add(current_category)
+            else:
+                print("New category not in TOC.\nFound: " + new_category + "\nAvailable categories: \n"
+                      + '\n'.join(categories)
+                      + "\nIf only slight typo, edit TOC and rerun. Now we just treat as subtopic.")
+
             if new_category:
                 subtopic = new_category.strip().rstrip('-').rstrip('–').strip()
                 print("New subtopic:", subtopic)
@@ -545,10 +553,10 @@ def segments_to_dataframe(segments, categories, analysis_dir):
     return df
 
 
-def process_file(hansard_code):
-    analysis_dir = "analysis_hansard/" + hansard_code
+def process_file(hansard_date):
+    analysis_dir = "analysis_hansard/" + hansard_date
     # check if it is final version
-    with open("preprocessed_hansard/" + hansard_code + '/0.txt', 'r') as f:
+    with open("preprocessed_hansard/" + hansard_date + '/0.txt', 'r') as f:
         if "Naskhah belum disemak" in f.read():
             finalised = False
             analysis_dir += '-not-finalised'
@@ -558,20 +566,28 @@ def process_file(hansard_code):
 
     if not os.path.isdir(analysis_dir):
         os.mkdir(analysis_dir)
-    categories = get_categories(hansard_code)
+
+    sys.stdout = open(analysis_dir + "/warnings.txt", "w")
+    if '-not-finalised' in analysis_dir:
+        print("WARN: HANSARD NOT FINALISED")
+    categories = get_categories(hansard_date)
     # checks for USUL-USUL before USUL
     categories.sort()
     categories.reverse()
     print("Extracted categories")
     print(categories)
 
-    all_text = get_content(hansard_code)
+    all_text = get_content(hansard_date)
 
     # remove timestamps for now
     all_text = remove_timestamps(all_text)
 
     with open(analysis_dir + "/removed_timestamps.txt", "w") as f:
         f.write(all_text)
+
+    # clean up Dato’******Seri
+    all_text = all_text.replace('Dato’******Seri', 'Dato’ Seri')
+    all_text = all_text.replace('***Dato\'******', '***Dato\'')
 
     # separate chunks by boldness
     segments = parse_markup(all_text)
@@ -585,15 +601,15 @@ def process_file(hansard_code):
         f.write('\n~~~\n'.join([s[0] for s in segments]))
 
     dataframe = segments_to_dataframe(segments, categories, analysis_dir)
-    df_speakers = analyse_speakers.get_speakers_from_toc(hansard_code)
-    export_hansard(dataframe, hansard_code, df_speakers, finalised)
-    print(f'Done processing {hansard_code}')
+    df_speakers = analyse_speakers.get_speakers_from_toc(hansard_date)
+    export_hansard(dataframe, hansard_date, df_speakers, finalised)
+    print(f'Done processing {hansard_date}')
 
     return 0
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("hansard_code", help="The session code eg. 14-04-01-16")
+    parser.add_argument("hansard_date", help="The session code eg. 01032023")
     args = parser.parse_args()
-    process_file(args.hansard_code)
+    process_file(args.hansard_date)

@@ -31,6 +31,7 @@ titles = [
     "Ir",
     "Dr",
     "Puan",
+    "Tuan",
     "Tun",
     "Hajah"
 ]
@@ -66,11 +67,12 @@ def get_role(speaker):
 def analyse_speaker(speaker):
     role = ''
     constituency = ''
-    if '-' in speaker:
-        speaker, role = speaker.split('–')
+    last_comma_index = speaker.rfind(',')
+    if last_comma_index != -1:
+        # the speaker has a role
+        role = speaker[:last_comma_index].strip()
+        speaker = speaker[last_comma_index+1:].strip()
         role = role.replace('Tuan Yang di-Pertua', 'Yang di-Pertua')
-        if 'Yang di-Pertua' not in role:
-            print(f'Check that {role} is a role')
     speaker = speaker.strip()
     if ')' == speaker[-1]:
         constituency = re.search("\([A-Za-z ]+\)$", speaker).group(0)
@@ -121,13 +123,14 @@ def get_speaker_list_from_string(speakers_string):
     return [x.strip() for x in re.compile("[0-9]+.").split(speakers_string) if x.strip()]
 
 
-def get_speakers_from_toc(hansard_code):
-    with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
+def get_speakers_from_toc(hansard_date):
+    year = hansard_date[-4:]
+    with pdfplumber.open('src_hansard/downloads/' + year + '/DR-' + hansard_date + '.pdf') as pdf:
         total_page_num = len(pdf.pages)
     started = False
     all_text = ''
     for idx in range(total_page_num):
-        with open("preprocessed_hansard/" + hansard_code + f"/{idx + 1}.txt", 'r') as f:
+        with open("preprocessed_hansard/" + hansard_date + f"/{idx + 1}.txt", 'r') as f:
             cur_text = ''.join(f.readlines()[1:])
         if not started:
             if "KEHADIRAN AHLI-AHLI PARLIMEN" in cur_text:
@@ -140,13 +143,16 @@ def get_speakers_from_toc(hansard_code):
         all_text += cur_text
 
     # remove italics
-    all_text = all_text.replace('___','')
+    all_text = all_text.replace('___', '')
     segments = generate_tabular.parse_markup(all_text)
     # remove empty spaces
     segments = [x for x in segments if x[0].strip()]
     # remove titles
     while segments[0][0].isupper():
         segments.pop(0)
+    # to prevent overspilling like: KEHADIRAN AHLI-AHLI PARLIMEN 1 MAC 2023 Ahli-Ahli Yang Hadir
+    if "ahli-ahli yang hadir" in segments[0][0].lower():
+        segments[0][0] = "ahli-ahli yang hadir"
 
     # each bold from now is a new section
     sections = {}
@@ -172,6 +178,8 @@ def get_speakers_from_toc(hansard_code):
     if not ("senator yang hadir sama" in sections or "senator yang tidak hadir" in sections):
         print("WARN: No senators present")
 
+    # print(sections)
+
     attendance = []
     if "ahli-ahli yang hadir" in sections:
         for mp in sections["ahli-ahli yang hadir"]:
@@ -186,8 +194,11 @@ def get_speakers_from_toc(hansard_code):
             row.append("mp")
             attendance.append(row)
     # assert len(attendance) == 222
-    if "senator yang hadir sama" in sections:
-        for mp in sections["senator yang hadir sama"]:
+    if "senator yang hadir sama" in sections or "senator yang turut hadir" in sections:
+        section_name = "senator yang hadir sama"
+        if section_name not in sections:
+            section_name = "senator yang turut hadir"
+        for mp in sections[section_name]:
             row = analyse_speaker(mp)
             row.append(1)
             row.append("senator")
@@ -209,5 +220,6 @@ def get_speakers_from_toc(hansard_code):
 
 
 if __name__ == "__main__":
-    hansard_code = "14-04-01-17"
-    get_speakers_from_toc(hansard_code)
+    hansard_code = "01032023"
+    result = get_speakers_from_toc(hansard_code)
+    result

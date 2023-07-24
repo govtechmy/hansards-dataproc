@@ -6,7 +6,7 @@ from pprint import pprint
 Results:
 Font List
 ['/Arial-BoldItalicMT',
- '/Arial-BoldMT',
+ '/Arial-BoldMT',–
  '/Arial-ItalicMT',
  '/ArialMT',
  '/TimesNewRomanPSMT']

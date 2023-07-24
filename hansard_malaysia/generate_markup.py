@@ -73,9 +73,10 @@ def add_markup(chars):
     return text
 
 
-def process_file(hansard_code, page_num=-1):
-    dir_path = "preprocessed_hansard/" + hansard_code
-    with pdfplumber.open('src_hansard/hansard_' + hansard_code + '.pdf') as pdf:
+def process_file(hansard_date, page_num=-1):
+    dir_path = "preprocessed_hansard/" + hansard_date
+    year = hansard_date[-4:]
+    with pdfplumber.open('src_hansard/downloads/' + year + '/DR-' + hansard_date + '.pdf') as pdf:
         # print("adding markup...")
         if not os.path.isdir(dir_path):
             os.mkdir(dir_path)
@@ -97,6 +98,6 @@ def process_file(hansard_code, page_num=-1):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("hansard_code", help="The session code eg. 14-04-01-16")
+    parser.add_argument("hansard_date", help="The session code eg. 01032023")
     args = parser.parse_args()
-    process_file(args.hansard_code)
+    process_file(args.hansard_date)
