@@ -1,11 +1,10 @@
 import argparse
-
 import pdfplumber
 import os
 from tqdm import tqdm
 
 
-def add_markup(chars):
+def add_markup(chars, newlines_only=False):
     chars.append({'text': '', 'fontname': ''})
     prev_char = ''
     new_chars = []
@@ -20,6 +19,9 @@ def add_markup(chars):
         prev_char = char['text']
     chars = new_chars
 
+    if newlines_only:
+        return ''.join([x['text'] for x in chars])
+
     text = ""
     bold_streak = False
     italic_streak = False
@@ -30,10 +32,11 @@ def add_markup(chars):
             # newlines separates two bold segments
             # so markup must be separate as well
             assert not italic_streak
-            text += "******"
+            text += "***\n***"
             continue
 
         if "Bold" not in char["fontname"] and char['text'] != ' ':
+            # we allow single non-bold spaces connecting bold segments
             if bold_streak:
                 # end of bold segment
                 text += "***"
@@ -87,11 +90,11 @@ def process_file(hansard_date, page_num=-1):
                 f.write(output)
         else:
             for idx, page in enumerate(tqdm(pdf.pages)):
-                with open(dir_path + "/" + str(idx) + "-raw.txt", 'w') as f:
-                    output = ''.join([char['text'] for char in page.chars])
-                    f.write(output)
                 with open(dir_path + "/" + str(idx) + ".txt", 'w') as f:
                     output = add_markup(page.chars)
+                    f.write(output)
+                with open(dir_path + "/" + str(idx) + "-raw.txt", 'w') as f:
+                    output = add_markup(page.chars, newlines_only=True)
                     f.write(output)
     return output
 

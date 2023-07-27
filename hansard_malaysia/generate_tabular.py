@@ -9,6 +9,14 @@ import analyse_speakers
 import util_lis
 from hashlib import sha256
 import sys
+from titles import titles as titles
+
+category_tags = {
+    "PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN": "LISAN",  # 15th Parliament
+    "WAKTU PERTANYAAN-PERTANYAAN MENTERI": "MENTERI",  # 15th Parliament
+    "USUL": "USUL",
+    "RANG UNDANG-UNDANG": "UNDANG"
+}
 
 
 def parse_markup(text):
@@ -42,7 +50,7 @@ def remove_timestamps(text):
 
 def get_bare_name(name):
     name = analyse_speakers.remove_titles(name)
-    extended_titles = analyse_speakers.titles + ['Tuan']
+    extended_titles = titles + ['Tuan']
     for title in extended_titles:
         name = name.replace(title + ' ', ' ')
     return re.sub('  +', ' ', name).strip()
@@ -82,9 +90,10 @@ def get_closest_mp(name, df_speakers):
     return df_speakers.loc[df_speakers['score'] == df_speakers['score'].max(), ['name']].values[0][0]
 
 
-def export_hansard(df, hansard_code, df_speakers, finalised):
-    analysis_dir = f"analysis_hansard/{hansard_code}"
-    output_dir = f"release/{hansard_code}"
+def export_hansard(df, hansard_date, df_speakers, finalised):
+    ymd_hansard_date = f'{hansard_date[-4:]}-{hansard_date[2:4]}-{hansard_date[:2]}'
+    analysis_dir = "analysis_hansard/" + ymd_hansard_date
+    output_dir = f"release/{hansard_date}"
     if not finalised:
         analysis_dir += "-not-finalised"
         output_dir += "-not-finalised"
@@ -146,7 +155,7 @@ def export_hansard(df, hansard_code, df_speakers, finalised):
     df.to_parquet(f"{output_dir}/hansard.parquet", index=False)
 
     # export categories for logging and verification
-    category_df = df[['category', 'subtopic']].copy()
+    category_df = df[['category', 'subtopic', 'tag']].copy()
     category_df = category_df.drop_duplicates()
     category_df.to_csv(f'{analysis_dir}/category.csv', index=False)
 
@@ -185,8 +194,9 @@ def clean_segments(_segments):
     new_segments = [_segments[0]]
     i = 1
     while i < len(_segments):
-        if i < len(_segments) - 1 and _segments[i][0].strip() == '.' and _segments[i - 1][1] == _segments[i + 1][1]:
-            new_segments[-1][0] += '.'
+        if i < len(_segments) - 1 and _segments[i][0].strip() in ['.', ','] \
+                and _segments[i - 1][1] == _segments[i + 1][1]:
+            new_segments[-1][0] += _segments[i][0].strip()
             i += 1
         else:
             new_segments.append(_segments[i])
@@ -223,6 +233,7 @@ def clean_segments(_segments):
 
     # convert double spaces to newlines
     _segments = [[segment[0].replace('  ', '\n'), segment[1]] for segment in _segments]
+
     return _segments
 
 
@@ -292,6 +303,24 @@ def get_role(speaker, df_speakers):
     return speaker_role
 
 
+def upper_lower_ratio(text):
+    upper = sum(1 for c in text if c.isupper())
+    lower = sum(1 for c in text if c.islower())
+    if lower == 0:
+        return 9999
+    return upper / lower
+
+
+def speaker_probability(text):
+    # go through analyze_speakers.titles and check if any of them are in text
+    # if so, return 1
+    # if not, return 0
+    for title in titles + ['bin', 'binti']:
+        if title in text:
+            return 1
+    return 0
+
+
 def get_categories(hansard_date):
     _all_text = ""
     year = hansard_date[-4:]
@@ -323,18 +352,19 @@ def get_categories(hansard_date):
     # since separate categories must be separated by a non-bold segment (Halaman X)
     new_segments = []
     for segment in _segments:
-        if segment[1] and new_segments and new_segments[-1][1]:
+        if segment[1] and upper_lower_ratio(segment[0]) > 1 \
+                and new_segments and new_segments[-1][1]:
             new_segments[-1][0] += " " + segment[0]
         else:
             new_segments.append(segment)
     _segments = new_segments
 
-    bolds = []
+    bolds_and_most_uppercase = []
     for segment in _segments:
-        if segment[1]:
-            bolds.append(segment[0].replace(':', ''))
+        if segment[1] and upper_lower_ratio(segment[0]) > 1:
+            bolds_and_most_uppercase.append(segment[0].replace(':', ''))
     # sometimes bullet points are single bold segments, remove them if no alphanumeric content is present
-    categories = [bold for bold in bolds if re.search(r'\w+', bold)]
+    categories = [bold for bold in bolds_and_most_uppercase if re.search(r'\w+', bold)]
 
     # remove trailing – and -
     categories = [bold.strip().strip('–').strip().strip('-').strip() for bold in categories]
@@ -414,15 +444,19 @@ def segments_to_dataframe(segments, categories, analysis_dir):
             continue
 
         new_category = ""
-        # initiate category parsing if is bold and all uppercase (remove i as it can be in bill title)
-        if segments[j][1] and segments[j][0].replace('i', '').isupper() and not "LAMPIRAN" == segments[j][0]:
+        # initiate category parsing if is bold and all uppercase
+        if segments[j][1] and upper_lower_ratio(segments[j][0]) > 1 and not "LAMPIRAN" == segments[j][0]:
+            new_category = segments[j][0]
+            j += 1
             # after initiation, conditions are less strict: text can be lowercase (eg. Bacaan kali...)
             # additionally, separate title from speakers (usually with [ ]) and numbering at start
             while segments[j][1] and (
-                    segments[j][0].isupper() or (not re.search(r'\[[A-Za-z’\'()\-\. ]+(]:?)$', segments[j][0].strip())
-                                                 and not "Tuan Yang di-Pertua:" == segments[j][0].strip()
-                                                 and not "Yang di-Pertuan Agong:" == segments[j][0].strip()
-                                                 and not re.search(r'\A\d+\.', segments[j][0].strip()))):
+                    upper_lower_ratio(segments[j][0]) > 1 or (
+                    not re.search(r'\[[A-Za-z’\'()\-\. ]+(]:?)$', segments[j][0].strip())
+                    and not "Tuan Yang di-Pertua:" == segments[j][0].strip()
+                    and not "Yang di-Pertuan Agong:" == segments[j][0].strip()
+                    and not (speaker_probability(segments[j][0]) and segments[j][0][-1] == ':')
+                    and not re.search(r'\A\d+\.', segments[j][0].strip()))):
                 # while bold
                 if new_category:
                     new_category += ' '
@@ -437,24 +471,25 @@ def segments_to_dataframe(segments, categories, analysis_dir):
 
             if candidate_category:
                 current_category = candidate_category
-                new_category = new_category[len(candidate_category):]
                 print("New category:", current_category)
                 used_categories.add(current_category)
+                subtopic = new_category[len(candidate_category):]
             else:
-                print("New category not in TOC.\nFound: " + new_category + "\nAvailable categories: \n"
-                      + '\n'.join(categories)
-                      + "\nIf only slight typo, edit TOC and rerun. Now we just treat as subtopic.")
+                print("New category not in TOC.\nFound: " + new_category +
+                      "\nSee start of warnings.txt for available categories" +
+                      "\nIf only slight typo, edit TOC and rerun. Now we just treat as subtopic.")
+                subtopic = new_category
 
-            if new_category:
-                subtopic = new_category.strip().rstrip('-').rstrip('–').strip()
-                print("New subtopic:", subtopic)
-            else:
-                subtopic = ''
+            if subtopic:
+                subtopic = subtopic.strip().rstrip('-').rstrip('–').strip()
+                if re.match(r'\d+\.', subtopic):
+                    subtopic = subtopic.rstrip('.')
+                print("New subtopic from category residual:", subtopic)
             logs += "New category:" + current_category + '\n'
             continue
         if j + 1 < len(segments) and segments[j][1] and segments[j + 1][1]:
             # double bold
-            if re.match(r'\d+\.', segments[j][0]) and "JAWAPAN-JAWAPAN" in current_category:
+            if re.match(r'\d+\.', segments[j][0].strip()):
                 subtopic = segments[j][0].split('.')[0]
                 logs += "QUESTION NUMBER DETECTED: " + subtopic + '\n'
                 j += 1
@@ -550,11 +585,22 @@ def segments_to_dataframe(segments, categories, analysis_dir):
     # save logs
     with open(analysis_dir + '/logs.txt', 'w') as f:
         f.write(logs)
+
+    # get tags for each row by matching with category_tags as a prefix
+    def get_tag(x):
+        for category_key in category_tags:
+            if x.startswith(category_key):
+                return category_tags[category_key]
+        return ''
+
+    df['tag'] = df['category'].apply(get_tag)
+
     return df
 
 
 def process_file(hansard_date):
-    analysis_dir = "analysis_hansard/" + hansard_date
+    ymd_hansard_date = f'{hansard_date[-4:]}-{hansard_date[2:4]}-{hansard_date[:2]}'
+    analysis_dir = "analysis_hansard/" + ymd_hansard_date
     # check if it is final version
     with open("preprocessed_hansard/" + hansard_date + '/0.txt', 'r') as f:
         if "Naskhah belum disemak" in f.read():
@@ -588,6 +634,8 @@ def process_file(hansard_date):
     # clean up Dato’******Seri
     all_text = all_text.replace('Dato’******Seri', 'Dato’ Seri')
     all_text = all_text.replace('***Dato\'******', '***Dato\'')
+    # delete ******
+    all_text = re.sub(r'\*{6,}', '', all_text)
 
     # separate chunks by boldness
     segments = parse_markup(all_text)
@@ -613,3 +661,5 @@ if __name__ == "__main__":
     parser.add_argument("hansard_date", help="The session code eg. 01032023")
     args = parser.parse_args()
     process_file(args.hansard_date)
+
+# process_file('06032023')

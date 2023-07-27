@@ -7,3 +7,4 @@
 /hansard_malaysia/error-log-speakers.csv
 /hansard_malaysia/todo-penggal-1.csv
 /hansard_malaysia/todo-penggal-3.csv
+!/hansard_malaysia/upload_to_s3.py
