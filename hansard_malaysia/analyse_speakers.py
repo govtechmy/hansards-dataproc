@@ -1,7 +1,6 @@
 import pandas as pd
 import pdfplumber
-
-import generate_tabular
+from markup_parser import parse_markup
 import re
 from titles import titles as titles
 
@@ -113,7 +112,7 @@ def get_speakers_from_toc(hansard_date):
 
     # remove italics
     all_text = all_text.replace('___', '')
-    segments = generate_tabular.parse_markup(all_text)
+    segments = parse_markup(all_text)
     # remove empty spaces
     segments = [x for x in segments if x[0].strip()]
     # remove titles
@@ -143,13 +142,23 @@ def get_speakers_from_toc(hansard_date):
         assert len(content) == 1
         sections[title] = get_speaker_list_from_string(content[0])
 
-    assert "ahli-ahli yang hadir" in sections or "ahli-ahli yang tidak hadir" in sections
+    everyone_came = False
+    if "ahli-ahli yang hadir" not in sections and "ahli-ahli yang tidak hadir" not in sections:
+        print("WARN: No attendance title like 'ahli-ahli yang hadir' or 'ahli-ahli yang tidak hadir'")
+        # assuming everyone came like 2023-19-12
+        everyone_came = True
     if not ("senator yang hadir sama" in sections or "senator yang tidak hadir" in sections):
         print("WARN: No senators present")
 
     # print(sections)
 
     attendance = []
+    if everyone_came:
+        for mp in sections[""]:
+            row = analyse_speaker(mp)
+            row.append(1)
+            row.append("mp")
+            attendance.append(row)
     if "ahli-ahli yang hadir" in sections:
         for mp in sections["ahli-ahli yang hadir"]:
             row = analyse_speaker(mp)

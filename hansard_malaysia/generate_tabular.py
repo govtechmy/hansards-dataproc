@@ -10,6 +10,7 @@ import util_lis
 from hashlib import sha256
 import sys
 from titles import titles as titles
+from markup_parser import parse_markup
 
 category_tags = {
     "PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN": "LISAN",  # 15th Parliament
@@ -17,26 +18,6 @@ category_tags = {
     "USUL": "USUL",
     "RANG UNDANG-UNDANG": "UNDANG"
 }
-
-
-def parse_markup(text):
-    segments = []
-    segment = text[:2]
-    bold = False
-    for i in range(2, len(text)):
-        segment += text[i]
-        if text[i - 2:i + 1] == '***':
-            segment = segment[:-3]
-            if bold:
-                package = [segment, 1]
-            else:
-                package = [segment, 0]
-            segments.append(package)
-            bold = not bold
-            segment = ""
-    if segment:
-        segments.append([segment, bold])
-    return segments
 
 
 def remove_timestamps(text):
@@ -286,7 +267,7 @@ def get_role(speaker, df_speakers):
                     return raw_name
     segments = speaker.split('[')
     # remove ]
-    assert len(segments) == 2
+    assert len(segments) == 2 , f"speaker: {speaker}"
     segments[1] = segments[1][:-1]
     segments = [segment.strip() for segment in segments]
     if [x for x in ['Menteri', 'Yang di-Pertua', 'Pengerusi'] if x in segments[0]]:
@@ -541,8 +522,8 @@ def segments_to_dataframe(segments, categories, analysis_dir):
         if matches:
             for match in matches:
                 annotation = match
-                if annotation.strip() in ["[Ketawa]", "[Tepuk]"]:
-                    # action belongs to the speaker
+                if "Ketawa" in annotation.strip() or "Tepuk" in annotation.strip() or "Dewan riuh" in annotation.strip():
+                    # keep it inside the speaker's content
                     continue
                 speaker_text, text = text.split(annotation, 1)
                 if speaker_text.strip():
@@ -613,7 +594,8 @@ def process_file(hansard_date):
     if not os.path.isdir(analysis_dir):
         os.mkdir(analysis_dir)
 
-    sys.stdout = open(analysis_dir + "/warnings.txt", "w")
+    # redirect stdout to file
+    # sys.stdout = open(analysis_dir + "/warnings.txt", "w")
     if '-not-finalised' in analysis_dir:
         print("WARN: HANSARD NOT FINALISED")
     categories = get_categories(hansard_date)
@@ -642,6 +624,11 @@ def process_file(hansard_date):
 
     # remove ghost whitespaces
     print(f"number of segments before cleaning: {len(segments)}")
+
+    # before cleaning save segments to file
+    with open(analysis_dir + "/precleaned-segments.txt", "w") as f:
+        f.write('\n~~~\n'.join([s[0] for s in segments]))
+
     segments = clean_segments(segments)
     print(f"number of segments after cleaning: {len(segments)}")
 
@@ -657,9 +644,8 @@ def process_file(hansard_date):
 
 
 if __name__ == "__main__":
+    process_file('19122022')
     parser = argparse.ArgumentParser()
     parser.add_argument("hansard_date", help="The session code eg. 01032023")
     args = parser.parse_args()
     process_file(args.hansard_date)
-
-# process_file('06032023')

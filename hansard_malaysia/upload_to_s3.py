@@ -1,26 +1,17 @@
 import boto3
 import os
 
-IGNORED_FILES = ['.DS_Store', '.gitignore']
-IGNORED_FOLDERS = ['archive_14th_parliament_4th_session']
-
 def upload_files_to_s3(folder_path, bucket_name, destination_folder):
     # Initialize the S3 client
     s3 = boto3.client('s3')
 
     # Iterate through files in the folder
-    for root, dirs, files in os.walk(folder_path):
-        # Remove ignored folders from the iteration
-        dirs[:] = [d for d in dirs if d not in IGNORED_FOLDERS]
-
+    for root, _, files in os.walk(folder_path):
         for file in files:
             file_path = os.path.join(root, file)
 
-            # Skip files in the IGNORED_FILES list
-            if file in IGNORED_FILES:
-                continue
-
             # Generate the S3 object key (path within the bucket)
+            # Use os.path.join to ensure correct path separator for different platforms
             relative_path = os.path.relpath(file_path, folder_path)
             s3_key = os.path.join(destination_folder, relative_path)
 
@@ -39,3 +30,4 @@ if __name__ == "__main__":
     bucket_name = "dgmy-private-hansards"
     destination_folder = "processed"  # Specify the desired folder inside the bucket
 
+    upload_files_to_s3(folder_path, bucket_name, destination_folder)

@@ -4,7 +4,9 @@ import os
 from tqdm import tqdm
 
 
-def add_markup(chars, newlines_only=False):
+def add_markup(chars, newlines_only=False, pure_raw=False):
+    if pure_raw:
+        return ''.join([x['text'] for x in chars])
     chars.append({'text': '', 'fontname': ''})
     prev_char = ''
     new_chars = []
@@ -93,8 +95,11 @@ def process_file(hansard_date, page_num=-1):
                 with open(dir_path + "/" + str(idx) + ".txt", 'w') as f:
                     output = add_markup(page.chars)
                     f.write(output)
-                with open(dir_path + "/" + str(idx) + "-raw.txt", 'w') as f:
+                with open(dir_path + "/" + str(idx) + "-newlines.txt", 'w') as f:
                     output = add_markup(page.chars, newlines_only=True)
+                    f.write(output)
+                with open(dir_path + "/" + str(idx) + "-raw.txt", 'w') as f:
+                    output = add_markup(page.chars, pure_raw=True)
                     f.write(output)
     return output
 
