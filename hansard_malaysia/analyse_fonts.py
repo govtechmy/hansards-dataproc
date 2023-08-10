@@ -19,6 +19,45 @@ Unembedded Fonts
  '/TimesNewRomanPSMT'}
 """
 
+
+'''
+01032023
+Font List
+['/Arial-BoldItalicMT',
+ '/Arial-BoldMT',
+ '/Arial-ItalicMT',
+ '/ArialMT',
+ '/BCDEEE+Calibri',
+ '/TimesNewRomanPS-BoldMT',
+ '/TimesNewRomanPSMT']
+
+Unembedded Fonts
+{'/Arial-BoldItalicMT',
+ '/Arial-BoldMT',
+ '/Arial-ItalicMT',
+ '/ArialMT',
+ '/TimesNewRomanPS-BoldMT',
+ '/TimesNewRomanPSMT'}
+
+'''
+
+'''
+DR-01112021
+Font List
+['/Arial-BoldItalicMT',
+ '/Arial-BoldMT',
+ '/Arial-ItalicMT',
+ '/ArialMT',
+ '/TimesNewRomanPSMT']
+
+Unembedded Fonts
+{'/Arial-BoldItalicMT',
+ '/Arial-BoldMT',
+ '/Arial-ItalicMT',
+ '/ArialMT',
+ '/TimesNewRomanPSMT'}
+ '''
+
 def walk(obj, fnt, emb):
     """
     If there is a key called 'BaseFont', that is a font that is used in the document.
@@ -44,7 +83,7 @@ def walk(obj, fnt, emb):
 
 
 if __name__ == '__main__':
-    fname = 'src_hansard/hansard_14-04-01-04.pdf'
+    fname = 'src_hansard/2021/DR-01112021.pdf'
     pdf = PdfFileReader(fname)
     fonts = set()
     embedded = set()
@@ -79,3 +118,16 @@ if __name__ == '__main__':
     if unembedded:
         print('\nUnembedded Fonts')
         pprint(unembedded)
+    
+    
+    # print example text for each font type
+    for font in fonts:
+        print(font)
+        for page in pdf.pages:
+            obj = page.get_object()
+            if type(obj) == PyPDF2.generic.ArrayObject:
+                for i in obj:
+                    if hasattr(i, 'keys'):
+                        f, e = walk(i, fonts, embedded)
+                        if font in f:
+                            print(i)

@@ -44,3 +44,6 @@ If the program terminates in the later stage due to uncaught errors (unlikely), 
 - The DR.dd.mm.yyyy is not consistent: the dd can be zero-padded or not.
 - TOC will say "USUL-USUL" but in-text the title is usually "USUL"
 - Sometimes, USUL will somehow go under RANG UNDANG-UNDANG, ans some categories will go before others, ignoring the TOC order.
+- We cannot make any useful parsing using font sizes.
+- The current way of creating bold and italics files makes it convenient to check using a simple text editor and line numbers.
+- parsing 2018 takes 3 to 4 seconds per page, giving around 1 minute per Hansard.
