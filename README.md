@@ -47,3 +47,5 @@ If the program terminates in the later stage due to uncaught errors (unlikely), 
 - We cannot make any useful parsing using font sizes.
 - The current way of creating bold and italics files makes it convenient to check using a simple text editor and line numbers.
 - parsing 2018 takes 3 to 4 seconds per page, giving around 1 minute per Hansard.
+- extract_text has different layout than using page.chars, the latter does not retain most whitespaces, and use different text flow (see second page "Diterbitkan...", page.chars will put it at the top of the page even though it is at the bottom).
+- We get the formatting using extract_words(extra_attrs=['fontname']). This will also segment words based on homogeneity of fontnames.
