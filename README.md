@@ -49,3 +49,14 @@ If the program terminates in the later stage due to uncaught errors (unlikely), 
 - parsing 2018 takes 3 to 4 seconds per page, giving around 1 minute per Hansard.
 - extract_text has different layout than using page.chars, the latter does not retain most whitespaces, and use different text flow (see second page "Diterbitkan...", page.chars will put it at the top of the page even though it is at the bottom).
 - We get the formatting using extract_words(extra_attrs=['fontname']). This will also segment words based on homogeneity of fontnames.
+
+# On header rows
+- Most Hansards start with the page number 1 in the same page of DOA except 14.3.2018, which starts with 11.
+- 29.11.2018 when parsed displays the page numbers as 1  1 instead of 11
+- 12.11.2019 displays as 12.11.201
+
+# Usage
+- Run preprocess.py to get the four output files of plaintext, binary bold and italic files (as 0, 1, or whitespaces). This file will only process the content from DOA onwards (ignores table of contents and MP attendance).
+
+# Edits
+- 12112019 replaced header dates from 12.11.201 to 12.11.2019
