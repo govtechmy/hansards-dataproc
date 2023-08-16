@@ -1,6 +1,6 @@
 import os
 import preprocess
-import tabulate
+import tabulate_hansard
 from tqdm import tqdm
 
 
@@ -20,6 +20,10 @@ filenames += get_filenames_in_folder("src_hansard/2019")
 filenames += get_filenames_in_folder("src_hansard/2018")
 hansard_dates = [x[3:3 + 8] for x in filenames]
 
+# reset global files
+with open("category_scores.csv", "w") as f:
+    f.write("")
+
 for hansard_date in tqdm(hansard_dates):
     # preprocess.preprocess_file(hansard_date)
-    tabulate.tabulate(hansard_date)
+    tabulate_hansard.tabulate(hansard_date)

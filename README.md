@@ -55,6 +55,9 @@ If the program terminates in the later stage due to uncaught errors (unlikely), 
 - 29.11.2018 when parsed displays the page numbers as 1  1 instead of 11
 - 12.11.2019 displays as 12.11.201
 
+# On parsing Table of Contents
+- 17072018 does not bold its categories.
+
 # Usage
 - Run preprocess.py to get the four output files of plaintext, binary bold and italic files (as 0, 1, or whitespaces). This file will only process the content from DOA onwards (ignores table of contents and MP attendance).
 
