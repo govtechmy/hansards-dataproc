@@ -11,12 +11,12 @@ def is_header(text):
     # DR.28.3.2023 1
     # 2                                                               DR 8.3.2018
     # DR 8.3.2018                                                                  1
-    return re.fullmatch(r'[ \.\d]*DR[ \.\d]*\n', text)
+    return re.fullmatch(r'[ .\d]*DR[ .\d]*\n', text)
 
 
 def is_timestamp(text):
     text = text.strip()
-    return re.search(r'(■|◼||▪) ?\d{4}\.?', text) or \
+    return re.search(r'[■◼▪] ?\d{4}\.?', text) or \
            re.search(r'^ *\d{1,2}[.:] ?\d ?\d ?((pg)|(PG)|(pagi)|(tgh)|(Tgh)|(ptg)|(Ptg)|(petang)|(mlm)|(malam))\.?',
                      text) or \
            re.search(r'^\d{4}$', text)
@@ -212,17 +212,11 @@ def tabulate(hansard_date):
             if 'Mesyuarat dimulakan' in text[row_id]:
                 current['timestamp'] = text[row_id].split('pukul')[-1].strip()
             continue
-
-        # due to the nature of parsing the layout, sometimes single spaces are parsed as double
-        # to reduce inconsistencies, we replace all double spaces with single spaces
-        text[row_id] = text[row_id].replace('  ', ' ')
-
-        # indentation is not uniform either, and can mess with author recognition
+        
+        # discard the trailing newline
         text[row_id] = text[row_id].strip()
-
-        # ignore the horizontal line on the DOA page
-        if re.fullmatch(r'^[_-]+$', text[row_id]):
-            continue
+        bold[row_id] = bold[row_id].strip()
+        italics[row_id] = italics[row_id].strip()
 
         # determine whether the current line is a continuation of speech
         if '1' not in bold[row_id] and not (

@@ -151,6 +151,33 @@ def preprocess(hansard_date):
         bold = bold[:start_idx + 1] + plainly_formatted_table + bold[end_idx:]
         italics = italics[:start_idx + 1] + plainly_formatted_table + italics[end_idx:]
 
+    # Done with table parsing
+
+    for row_id in range(len(text)):
+        # due to the nature of parsing the layout, sometimes single spaces are parsed as double
+        # to reduce inconsistencies, we replace all double spaces with single spaces
+        # unless it is a table
+        if text[row_id] != '' and text[row_id][0] != '|':
+            text[row_id] = text[row_id].replace('  ', ' ')
+            bold[row_id] = bold[row_id].replace('  ', ' ')
+            italics[row_id] = text[row_id].replace('  ', ' ')
+
+        # indentation is not uniform either, and can mess with author recognition
+        text[row_id] = text[row_id].strip() + '\n'
+        bold[row_id] = bold[row_id].strip() + '\n'
+        italics[row_id] = text[row_id].strip() + '\n'
+
+        # ignore the horizontal line on the DOA page
+        if re.fullmatch(r'^[_-]+$', text[row_id].strip()):
+            text[row_id] = '\n'
+            bold[row_id] = '\n'
+            italics[row_id] = '\n'
+
+    # delete excessive newlines
+    text = [row for row in text if row != '\n']
+    bold = [row for row in bold if row != '\n']
+    italics = [row for row in italics if row != '\n']
+
     with open(f'{output_dir_path}plaintext.txt', 'w') as f:
         f.writelines(text)
     with open(f'{output_dir_path}bold.txt', 'w') as f:

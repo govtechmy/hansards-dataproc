@@ -110,7 +110,7 @@ def parse_hansard(hansard_date):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("hansard_date", help="hansard_date eg. 23052023",
-                        default="16082018", nargs="?")
+                        default="16072019", nargs="?")
     # Parse arguments
     args = parser.parse_args()
     parse_hansard(args.hansard_date)
