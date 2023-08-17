@@ -185,7 +185,9 @@ def preprocess(hansard_date):
             assert page_num == expected_page_num, \
                 f'Page number {page_num} does not match expected {expected_page_num}'
             expected_page_num += 1
-            continue
+            text[row_id] = '\n'
+            bold[row_id] = '\n'
+            italics[row_id] = '\n'
         # due to the nature of parsing the layout, sometimes single spaces are parsed as double
         # to reduce inconsistencies, we replace all double spaces with single spaces
         # unless it is a table
