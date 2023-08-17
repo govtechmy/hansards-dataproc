@@ -1,9 +1,11 @@
-"""Uses the output of preprocess.py to generate the csv file of speeches"""
+"""Generate the csv file of speeches for a given Hansard.
+"""
 import argparse
 import os
 import re
 from thefuzz import process
 import json
+import csv
 
 
 def is_timestamp(text):
@@ -59,7 +61,6 @@ def category_probability(text, categories):
 
 
 def get_author_and_speech(text):
-    assert text.strip() == text, f'Expected "{text.strip()}" but got "{text}"'
     author = ''
     speech = ''
     subtopic = ''
@@ -129,7 +130,21 @@ def get_author_and_speech(text):
         # Speaker of the House
         speech = text.split(':', maxsplit=1)[1]
         author = 'Setiausaha'
+    elif re.search(r'] ?:', text) and '[' not in text:
+        # some of the unparsed authors are due to an extra ]
+        author, speech, subtopic = get_author_and_speech(re.sub(r'] ?:', ':', text, 1))
+        # TODO add these into a warning file for double-checking
+    elif ':' in text and '[' in text and ']' not in text:
+        # some of the unparsed authors are due to a missing ]
+        author, speech, subtopic = get_author_and_speech(text.replace(':', ']:', 1))
+        # TODO add these into a warning file for double-checking
+    # we do not allow the missing of a colon
     return author, speech, subtopic
+
+
+def explode_speech(current):
+    return [current['level-1'], current['level-2'], current['level-3'],
+            current['timestamp'], current['author'], current['speech']]
 
 
 def tabulate(hansard_date):
@@ -170,9 +185,10 @@ def tabulate(hansard_date):
     }
     current = blank_speech
     row_id = -1
+    dewan_tangguh = False
     while row_id + 1 < num_rows:
         row_id += 1
-        
+
         # run until DOA first
         if 'DOA' == text[row_id].strip():
             doa_seen = True
@@ -182,11 +198,6 @@ def tabulate(hansard_date):
             if 'Mesyuarat dimulakan' in text[row_id]:
                 current['timestamp'] = text[row_id].split('pukul')[-1].strip()
             continue
-
-        # discard the trailing newline
-        text[row_id] = text[row_id].strip()
-        bold[row_id] = bold[row_id].strip()
-        italics[row_id] = italics[row_id].strip()
 
         # determine whether the current line is a continuation of speech
         if '1' not in bold[row_id] and not (
@@ -198,6 +209,11 @@ def tabulate(hansard_date):
             # these includes empty lines
             current['speech'] += text[row_id]
         else:
+            if text[row_id].strip().lower() == "lampiran":
+                # end of Hansard
+                if not dewan_tangguh:
+                    print(f'Lampiran found without dewan tangguh: {text[row_id]}')
+                break
             if prop_of_1_among_binary(italics[row_id]) > 0.8 and \
                     text[row_id].startswith('['):
                 # Annotations, examples below
@@ -206,7 +222,10 @@ def tabulate(hansard_date):
                 # [Dewan ditangguhkan pada pukul 4.59 petang] 
                 # [Sesi Waktu Pertanyaan-pertanyaan Menteri tamat] 
                 # [Soalan No.4 – Y.B. Tuan M. Kulasegaran (Ipoh Barat) tidak hadir]
-                speeches.append(current)
+                if text[row_id].startswith('[Dewan ditangguhkan') or \
+                        text[row_id].startswith('[Mesyuarat ditangguhkan'):
+                    dewan_tangguh = True
+                speeches.append(explode_speech(current))
                 current['author'] = "ANNOTATIONS"
                 current['speech'] = ''
                 add_idx = 0
@@ -221,15 +240,16 @@ def tabulate(hansard_date):
             # either timestamp, new category, new author or the like
             if is_timestamp(text[row_id]):
                 # timestamp
-                speeches.append(current)
+                speeches.append(explode_speech(current))
                 current['speech'] = ''
                 current['timestamp'] = text[row_id].strip()
                 continue
 
             author, speech, subtopic = get_author_and_speech(text[row_id])
             if author != '':
-                speeches.append(current)
+                speeches.append(explode_speech(current))
                 current['author'] = author
+                assert speech[-1] == '\n', f"Speech does not end with newline: {speech}"
                 current['speech'] = speech
                 if subtopic:
                     current['level-2'] = subtopic
@@ -238,11 +258,10 @@ def tabulate(hansard_date):
 
             # sometimes the author has too long name and overflow to second line
             if row_id + 1 < num_rows:
-                concat_rows = text[row_id] + ' ' + text[row_id + 1].strip()
-                concat_rows = concat_rows.strip().replace('  ', ' ')  # still strip since text could be newline
+                concat_rows = f'{text[row_id].strip()} {text[row_id + 1]}'
                 author, speech, subtopic = get_author_and_speech(concat_rows)
                 if author != '':
-                    speeches.append(current)
+                    speeches.append(explode_speech(current))
                     current['author'] = author
                     current['speech'] = speech
                     if subtopic:
@@ -250,30 +269,6 @@ def tabulate(hansard_date):
                         current['level-3'] = ""
                     # add to the loop counter additionally
                     row_id += 1
-                    continue
-
-            # many of the unparsed authors are due to an erroneous ]  or a missing ]
-            if re.search(r'] ?:', text[row_id]) and '[' not in text[row_id]:
-                author, speech, subtopic = get_author_and_speech(re.sub(r'] ?:', ':', text[row_id], 1))
-                # TODO add these into a warning file for double-checking
-                if author != '':
-                    speeches.append(current)
-                    current['author'] = author
-                    current['speech'] = speech
-                    if subtopic:
-                        current['level-2'] = subtopic
-                        current['level-3'] = ""
-                    continue
-            if ':' in text[row_id] and '[' in text[row_id] and ']' not in text[row_id]:
-                author, speech, subtopic = get_author_and_speech(text[row_id].replace(':', ']:', 1))
-                # TODO add these into a warning file for double-checking
-                if author != '':
-                    speeches.append(current)
-                    current['author'] = author
-                    current['speech'] = speech
-                    if subtopic:
-                        current['level-2'] = subtopic
-                        current['level-3'] = ""
                     continue
 
             if upper_lower_ratio(text[row_id]) < 1 and (
@@ -294,15 +289,16 @@ def tabulate(hansard_date):
             if current['speech'] == "":
                 # most likely a subtopic immediately following a category
                 # usually a chain of bolds
+                # TODO warn
                 add_idx = 1
                 current['level-2'] = text[row_id]
                 current['level-3'] = ""
                 # allow empty lines as separator
                 while row_id + add_idx < num_rows and \
-                        (bold[row_id + add_idx].strip() == '' or prop_of_1_among_binary(bold[row_id + add_idx]) > 0.8):
-                    current['level-2'] += ' ' + text[row_id + add_idx].strip()
+                        prop_of_1_among_binary(bold[row_id + add_idx]) > 0.8:
+                    current['level-2'] += text[row_id + add_idx]
                     add_idx += 1
-                # TODO warn
+                row_id += add_idx - 1
                 continue
             elif upper_lower_ratio(text[row_id]) > 1:
                 # could be a new category
@@ -316,23 +312,14 @@ def tabulate(hansard_date):
                 # ANGGARAN PEMBANGUNAN 2023
                 if text[row_id].strip() in categories:
                     # direct match
-                    speeches.append(current)
+                    speeches.append(explode_speech(current))
                     current['author'] = ""
                     current['level-1'] = text[row_id].strip()
                     current['level-2'] = ""
                     current['level-3'] = ""
                     current['speech'] = ""
                     continue
-                if category_probability(text[row_id].strip(), categories) > 0.9:
-                    # high probability match
-                    speeches.append(current)
-                    current['author'] = ""
-                    current['level-1'] = text[row_id].strip()
-                    current['level-2'] = ""
-                    current['level-3'] = ""
-                    current['speech'] = ""
-                    continue
-                # keep elongating the category scope until the category scores go down
+                # keep elongating the category scope until the category score goes down
                 add_idx = 1
                 current_category = text[row_id].strip()
                 current_category_probability = category_probability(current_category, categories)
@@ -343,7 +330,7 @@ def tabulate(hansard_date):
                     current_category_probability = category_probability(current_category, categories)
                     add_idx += 1
                 if current_category_probability > 0.9:
-                    speeches.append(current)
+                    speeches.append(explode_speech(current))
                     current['author'] = ""
                     current['level-1'] = current_category
                     current['level-2'] = ""
@@ -354,7 +341,8 @@ def tabulate(hansard_date):
                         f.write(f'{hansard_date},{current_category},{current_category_probability}\n')
                     continue
                 # could be a capitalised subtopic
-                speeches.append(current)
+                # TODO WARN
+                speeches.append(explode_speech(current))
                 current['author'] = ""
                 current['speech'] = ""
                 current['level-3'] = ""
@@ -362,22 +350,22 @@ def tabulate(hansard_date):
                 current['level-2'] = text[row_id]
                 # allow empty lines as separator
                 while row_id + add_idx < num_rows and \
-                        (bold[row_id + add_idx].strip() == '' or prop_of_1_among_binary(bold[row_id + add_idx]) > 0.8):
-                    current['level-2'] += ' ' + text[row_id + add_idx].strip()
+                        prop_of_1_among_binary(bold[row_id + add_idx]) > 0.8:
+                    current['level-2'] += text[row_id + add_idx]
                     add_idx += 1
-                # TODO warn
+                row_id += add_idx - 1
                 continue
             else:
                 # these are lower-cased bold sentences
                 # most likely a level-3 subtopic
                 if re.search(r'Yang (Tidak )?((Bersetuju)|(Hadir)|(Mengundi)):', text[row_id]):
-                    speeches.append(current)
+                    speeches.append(explode_speech(current))
                     current['author'] = ""
                     current['speech'] = ""
                     current['level-3'] = text[row_id].strip()
                     continue
                 elif re.search(r'^Bacaan Kali Yang', text[row_id]):
-                    speeches.append(current)
+                    speeches.append(explode_speech(current))
                     current['author'] = ""
                     current['speech'] = ""
                     current['level-3'] = text[row_id].strip()
@@ -385,35 +373,61 @@ def tabulate(hansard_date):
                 elif re.search(r'^(Maksud)|(Kepala)|(Fasal)|(Bab)|(Tajuk)|(Jadual)[A-Za-z0-9-[\], ]+[–-]',
                                text[row_id]):
                     # TODO warn
-                    speeches.append(current)
+                    speeches.append(explode_speech(current))
                     add_idx = 1
                     current['author'] = ""
                     current['speech'] = ""
-                    current['level-3'] = text[row_id].strip()
+                    current['level-3'] = text[row_id]
+                    # it could be followed by similar level-3 markers
                     while row_id + add_idx < num_rows and \
-                            (bold[row_id + add_idx].strip() == '' or prop_of_1_among_binary(
-                                bold[row_id + add_idx]) > 0.8) and \
+                            prop_of_1_among_binary(bold[row_id + add_idx]) > 0.8 and \
                             re.search(r'^(Maksud)|(Kepala)|(Fasal)|(Bab)|(Tajuk)|(Jadual)[A-Za-z0-9-[\], ]+[–-]',
                                       text[row_id + add_idx]):
-                        current['level-3'] += '\n' + text[row_id + add_idx].strip()
+                        current['level-3'] += text[row_id + add_idx]
                         add_idx += 1
                     row_id += add_idx - 1
                     continue
-                elif hansard_date == "02112018" and \
-                        (re.search(r'^Strategi \d+:', text[row_id]) or re.search(r' [–-]$', text[row_id])):
-                    # during the budget 02112018
-                    speeches.append(current)
-                    current['author'] = ""
-                    current['speech'] = ""
-                    current['level-3'] = text[row_id].strip()
-                    continue
-            print(f'WARN: {text[row_id]}')
+
+            if re.fullmatch(r'Perutusan [Dd]aripada Dewan Negara [kK]epada Dewan Rakyat', text[row_id].strip()):
+                # common title of this document
+                # treat as continuation of speech
+                current['speech'] += text[row_id]
+                continue
+
+            if hansard_date == "02112018" and \
+                    (re.search(r'^Strategi \d+:', text[row_id]) or re.search(r' [–-]$', text[row_id].strip())):
+                # during the budget 02112018
+                speeches.append(explode_speech(current))
+                current['author'] = ""
+                current['speech'] = ""
+                current['level-3'] = text[row_id].strip()
+                continue
+
+            if hansard_date == '12032019' and text[row_id].strip() == "Pada 7 Januari 2019:":
+                # treat as continuation of speech
+                current['speech'] += text[row_id]
+                continue
+
+            if hansard_date == '18102018' and text[row_id].strip() == "“Bahawa Dewan ini,":
+                # treat as continuation of speech
+                current['speech'] += text[row_id]
+                continue
+
+            # unhandled case
+            print(f'WARN UNHANDLED BOLD: {text[row_id]}')
+
+    speeches.append(explode_speech(current))
+    # export speeches to csv
+    with open(f'{dir_path}result.csv', mode='w', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerow(['level-1', 'level-2', 'level-3', 'timestamp', 'author', 'speech'])
+        writer.writerows(speeches)
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("hansard_date", help="hansard_date eg. 23052023",
-                        default="04042023", nargs="?")
+                        default="07032018", nargs="?")
     # Parse arguments
     args = parser.parse_args()
     tabulate(args.hansard_date)

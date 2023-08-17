@@ -37,9 +37,14 @@
         [
             [
                 [
-                    "Bil. \n(i)",
-                    "Program \nProgram Jaminan Bekalan Makanan",
-                    "(RM juta) \n42"
+                    "Bil.",
+                    "Program",
+                    "Peruntukan  \n(RM juta)"
+                ],
+                [
+                    "(i)",
+                    "Program Jaminan Bekalan Makanan",
+                    "42"
                 ],
                 [
                     "(ii)",

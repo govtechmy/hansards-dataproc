@@ -62,5 +62,6 @@ If the program terminates in the later stage due to uncaught errors (unlikely), 
 # Usage
 - Run preprocess.py to get the four output files of plaintext, binary bold and italic files (as 0, 1, or whitespaces). This file will only process the content from DOA onwards (ignores table of contents and MP attendance).
 
-# Edits
-- 12112019 replaced header dates from 12.11.201 to 12.11.2019
+# Notes
+- level-2 can have multilines, but level-1 must be on one single line. Example
+- We only parse an annotation as its own without an author when it does not have any bold. This is because sometimes [Bangun] goes on a new line just because the author name is long e.g. 27032018 pg 29

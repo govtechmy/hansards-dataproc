@@ -19,7 +19,9 @@ import json
 def not_invisible_rect(obj):
     if obj["object_type"] != "rect":
         return True
-    return obj["non_stroking_color"] < 0.95
+    if isinstance(obj["non_stroking_color"], int):
+        return obj["non_stroking_color"] < 0.9
+    return not (min(obj["non_stroking_color"]) > 0.9)
 
 
 def parse_hansard(hansard_date):
@@ -110,7 +112,7 @@ def parse_hansard(hansard_date):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("hansard_date", help="hansard_date eg. 23052023",
-                        default="16072019", nargs="?")
+                        default="18082020", nargs="?")
     # Parse arguments
     args = parser.parse_args()
     parse_hansard(args.hansard_date)
