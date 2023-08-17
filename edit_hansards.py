@@ -40,12 +40,7 @@ def replace(hansard_date, old_text_snippet, new_text_snippet, new_bold_snippet, 
     print(f"{hansard_date} Num changes made: {num_edits}")
 
 
-if __name__ == "__main__":
-    replace("12112019",
-            "DR 12.11.201 ",
-            "DR 12.11.2019 ",
-            "00 0000000000 ",
-            "00 0000000000 ")
+def edit_hansards():
     replace("20072022",
             "Tuan Pengerusi [Dato’ Ramli bin Dato’ Mohd Nor [Cameron Highlands)]:",
             "Tuan Pengerusi [Dato’ Ramli bin Dato’ Mohd Nor (Cameron Highlands)]:",
@@ -76,3 +71,12 @@ if __name__ == "__main__":
             "Khairuddin bin Aman Razali]: Terima kasih Tuan yang di-Pertua. Terima kasih Yang",
             "1111111111 111 1111 11111111 000000 00000 0000 0000 0000000000 000000 00000 0000",
             "0000000000 000 0000 00000000 000000 00000 0000 0000 0000000000 000000 00000 0000")
+    replace('17112021',
+            'Timbalan Menteri Sumber Manusia [Tuan Haji Awang bin Hashim:]',
+            'Timbalan Menteri Sumber Manusia [Tuan Haji Awang bin Hashim]:',
+            '11111111 1111111 111111 1111111 11111 1111 11111 111 11111111',
+            '00000000 0000000 000000 0000000 00000 0000 00000 000 00000000')
+
+
+if __name__ == "__main__":
+    edit_hansards()

@@ -54,6 +54,7 @@ If the program terminates in the later stage due to uncaught errors (unlikely), 
 - Most Hansards start with the page number 1 in the same page of DOA except 14.3.2018, which starts with 11.
 - 29.11.2018 when parsed displays the page numbers as 1  1 instead of 11
 - 12.11.2019 displays as 12.11.201
+- We decide to remove them in pretabulation as it can jut between important chunks as in DR. 22.5.2023 page 108.
 
 # On parsing Table of Contents
 - 17072018 does not bold its categories.

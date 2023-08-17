@@ -1,4 +1,4 @@
-"""Insert tables and replace double spaces with single spaces, as well as other standardisations.
+"""Insert tables, remove headers, replace double spaces with single spaces and other standardisations.
 """
 import argparse
 import os
@@ -7,6 +7,28 @@ import re
 import list_to_markdown
 import json
 
+
+def is_header(text):
+    # returns the page number if it is the following form, else None
+    # DR.28.3.2023 1
+    # 2                                                               DR 8.3.2018
+    # DR 8.3.2018                                                                  1
+    return re.fullmatch(r'[ .\d]*DR[ .\d]*\n', text)
+
+
+def get_page_number(header_text):
+    header_text = header_text.strip()
+    # special case of 12.11.2019
+    if '12.11.201 ' in header_text:
+        header_text = header_text.replace('12.11.201 ', '12.11.2019 ')
+    if header_text.startswith('DR'):
+        # some numbers might be in the form 1  1
+        # some years are 2023.
+        # some years missing end (2019 becomes 201)
+        # get the page number after the year
+        return re.split(r'\d{4}\.?', header_text)[-1].replace(' ', '')
+    else:
+        return header_text.split('DR')[0].replace(' ', '')
 
 def mimic_table_as_plaintext(table):
     table_text = ''
@@ -152,20 +174,30 @@ def preprocess(hansard_date):
         italics = italics[:start_idx + 1] + plainly_formatted_table + italics[end_idx:]
 
     # Done with table parsing
-
+    expected_page_num = -1
     for row_id in range(len(text)):
+        # discard header rows
+        if is_header(text[row_id]):
+            page_num = int(get_page_number(text[row_id]))
+            if expected_page_num == -1:
+                expected_page_num = page_num
+            # makes sure all pages are all accounted for
+            assert page_num == expected_page_num, \
+                f'Page number {page_num} does not match expected {expected_page_num}'
+            expected_page_num += 1
+            continue
         # due to the nature of parsing the layout, sometimes single spaces are parsed as double
         # to reduce inconsistencies, we replace all double spaces with single spaces
         # unless it is a table
         if text[row_id] != '' and text[row_id][0] != '|':
             text[row_id] = text[row_id].replace('  ', ' ')
             bold[row_id] = bold[row_id].replace('  ', ' ')
-            italics[row_id] = text[row_id].replace('  ', ' ')
+            italics[row_id] = italics[row_id].replace('  ', ' ')
 
         # indentation is not uniform either, and can mess with author recognition
         text[row_id] = text[row_id].strip() + '\n'
         bold[row_id] = bold[row_id].strip() + '\n'
-        italics[row_id] = text[row_id].strip() + '\n'
+        italics[row_id] = italics[row_id].strip() + '\n'
 
         # ignore the horizontal line on the DOA page
         if re.fullmatch(r'^[_-]+$', text[row_id].strip()):
@@ -189,7 +221,7 @@ def preprocess(hansard_date):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("hansard_date", help="hansard_date eg. 12102021",
-                        default="05102021", nargs="?")
+                        default="12112019", nargs="?")
     # Parse arguments
     args = parser.parse_args()
     preprocess(args.hansard_date)

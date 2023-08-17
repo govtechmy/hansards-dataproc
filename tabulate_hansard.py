@@ -6,14 +6,6 @@ from thefuzz import process
 import json
 
 
-def is_header(text):
-    # returns the page number if it is the following form, else None
-    # DR.28.3.2023 1
-    # 2                                                               DR 8.3.2018
-    # DR 8.3.2018                                                                  1
-    return re.fullmatch(r'[ .\d]*DR[ .\d]*\n', text)
-
-
 def is_timestamp(text):
     text = text.strip()
     return re.search(r'[■◼▪] ?\d{4}\.?', text) or \
@@ -29,18 +21,6 @@ def is_timestamp(text):
 def prop_of_1_among_binary(text):
     assert re.fullmatch(r'[01\s]*', text), f'Expected binary string but got "{text}"'
     return text.count('1') / (text.count('0') + text.count('1'))
-
-
-def get_page_number(header_text):
-    header_text = header_text.strip()
-    if header_text.startswith('DR'):
-        # some numbers might be in the form 1  1
-        # some years are 2023.
-        # some years missing end (2019 becomes 201)
-        # get the page number after the year
-        return re.split(r'\d{4}\.?', header_text)[-1].replace(' ', '')
-    else:
-        return header_text.split('DR')[0].replace(' ', '')
 
 
 def upper_lower_ratio(text):
@@ -177,7 +157,6 @@ def tabulate(hansard_date):
     assert len(text) == len(bold) == len(italics), \
         f'Length of text, bold and italics do not match: {len(text)} vs {len(bold)} vs {len(italics)}'
 
-    expected_page_num = -1
     doa_seen = False
     num_rows = len(text)
     speeches = []
@@ -193,16 +172,7 @@ def tabulate(hansard_date):
     row_id = -1
     while row_id + 1 < num_rows:
         row_id += 1
-        # discard header rows
-        if is_header(text[row_id]):
-            page_num = int(get_page_number(text[row_id]))
-            if expected_page_num == -1:
-                expected_page_num = page_num
-            # makes sure all pages are all accounted for
-            assert page_num == expected_page_num, \
-                f'Page number {page_num} does not match expected {expected_page_num}'
-            expected_page_num += 1
-            continue
+        
         # run until DOA first
         if 'DOA' == text[row_id].strip():
             doa_seen = True
@@ -212,7 +182,7 @@ def tabulate(hansard_date):
             if 'Mesyuarat dimulakan' in text[row_id]:
                 current['timestamp'] = text[row_id].split('pukul')[-1].strip()
             continue
-        
+
         # discard the trailing newline
         text[row_id] = text[row_id].strip()
         bold[row_id] = bold[row_id].strip()
@@ -220,13 +190,34 @@ def tabulate(hansard_date):
 
         # determine whether the current line is a continuation of speech
         if '1' not in bold[row_id] and not (
-                text[row_id].startswith('[') and (text[row_id].endswith(']') or ']' not in text[row_id])
+                prop_of_1_among_binary(italics[row_id]) > 0.8 and
+                text[row_id].startswith('[')
         ):
             # if the whole line is not bolded and is not an annotation ie. starts with [,
             # then most likely it is a continuation of speech
             # these includes empty lines
             current['speech'] += text[row_id]
         else:
+            if prop_of_1_among_binary(italics[row_id]) > 0.8 and \
+                    text[row_id].startswith('['):
+                # Annotations, examples below
+                # [Tuan Yang di-Pertua mempengerusikan Jawatankuasa] 
+                # [Majlis Mesyuarat bersidang semula] 
+                # [Dewan ditangguhkan pada pukul 4.59 petang] 
+                # [Sesi Waktu Pertanyaan-pertanyaan Menteri tamat] 
+                # [Soalan No.4 – Y.B. Tuan M. Kulasegaran (Ipoh Barat) tidak hadir]
+                speeches.append(current)
+                current['author'] = "ANNOTATIONS"
+                current['speech'] = ''
+                add_idx = 0
+                while row_id + add_idx < num_rows and \
+                        ']' not in text[row_id + add_idx]:
+                    current['speech'] += text[row_id + add_idx]
+                    add_idx += 1
+                row_id += add_idx
+                # TODO extract timestamps from annotations if present
+                continue
+
             # either timestamp, new category, new author or the like
             if is_timestamp(text[row_id]):
                 # timestamp
@@ -261,42 +252,6 @@ def tabulate(hansard_date):
                     row_id += 1
                     continue
 
-            if text[row_id][0] == '[' and text[row_id][-1] == ']':
-                # Annotations, examples below
-                # [Tuan Yang di-Pertua mempengerusikan Jawatankuasa] 
-                # [Majlis Mesyuarat bersidang semula] 
-                # [Dewan ditangguhkan pada pukul 4.59 petang] 
-                # [Sesi Waktu Pertanyaan-pertanyaan Menteri tamat] 
-                # [Soalan No.4 – Y.B. Tuan M. Kulasegaran (Ipoh Barat) tidak hadir]
-                speeches.append(current)
-                current['author'] = "NO AUTHOR"
-                current['speech'] = text[row_id].strip()
-                # TODO extract timestamps from annotations if present
-                continue
-
-            # similarly annotations can span two lines
-            if row_id + 1 < num_rows:
-                concat_rows = text[row_id] + ' ' + text[row_id + 1].strip()
-                concat_rows = concat_rows.replace('  ', ' ')
-                if concat_rows[0] == '[' and concat_rows[-1] == ']':
-                    speeches.append(current)
-                    current['author'] = "NO AUTHOR"
-                    current['speech'] = concat_rows.strip()
-                    # add to the loop counter additionally
-                    row_id += 1
-                    continue
-            # or 3 lines
-            if row_id + 2 < num_rows:
-                concat_rows = text[row_id] + ' ' + text[row_id + 1].strip() + ' ' + text[row_id + 2].strip()
-                concat_rows = concat_rows.replace('  ', ' ')
-                if concat_rows[0] == '[' and concat_rows[-1] == ']':
-                    speeches.append(current)
-                    current['author'] = "NO AUTHOR"
-                    current['speech'] = concat_rows.strip()
-                    # add to the loop counter additionally
-                    row_id += 1
-                    continue
-
             # many of the unparsed authors are due to an erroneous ]  or a missing ]
             if re.search(r'] ?:', text[row_id]) and '[' not in text[row_id]:
                 author, speech, subtopic = get_author_and_speech(re.sub(r'] ?:', ':', text[row_id], 1))
@@ -321,10 +276,19 @@ def tabulate(hansard_date):
                         current['level-3'] = ""
                     continue
 
-            if prop_of_1_among_binary(bold[row_id]) < 0.5 or bold[row_id].count('0') > 5:
+            if upper_lower_ratio(text[row_id]) < 1 and (
+                    prop_of_1_among_binary(bold[row_id]) < 0.8 or bold[row_id].count('0') > 5):
                 # most likely it is just a stray bold
                 # TODO warn
                 current['speech'] += text[row_id]
+                # sometimes stray bolds go over a line as annotations
+                # Perbelanjaan Pembangunan 2023 dalam Jawatankuasa sebuah-buah Majlis.” [Hari 
+                # Kesepuluh]
+                if row_id + 1 < num_rows and '[' in text[row_id] and \
+                        ']' not in text[row_id] and ']' in text[row_id + 1] and \
+                        prop_of_1_among_binary(italics[row_id + 1]) > 0.5:
+                    current['speech'] += text[row_id + 1]
+                    row_id += 1
                 continue
 
             if current['speech'] == "":
@@ -449,7 +413,7 @@ def tabulate(hansard_date):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("hansard_date", help="hansard_date eg. 23052023",
-                        default="02112018", nargs="?")
+                        default="04042023", nargs="?")
     # Parse arguments
     args = parser.parse_args()
     tabulate(args.hansard_date)
