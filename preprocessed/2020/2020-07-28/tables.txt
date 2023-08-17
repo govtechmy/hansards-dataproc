@@ -1,303 +1,33 @@
 [
     [
         20,
+        9,
         [
             [
                 [
-                    "",
-                    "Institusi",
-                    "",
+                    "Institusi \nPendidikan",
                     "Unit (buah)",
-                    "",
-                    "Jumlah agihan",
-                    ""
-                ],
-                [
-                    null,
-                    "Pendidikan",
-                    null,
-                    null,
-                    null,
-                    "(RM/Juta)",
-                    null
+                    "Jumlah agihan \n(RM/Juta)"
                 ],
                 [
                     "Tahfiz",
-                    null,
-                    null,
                     "979",
-                    "6,372",
-                    null,
-                    null
+                    "6,372"
                 ],
                 [
                     "Pondok",
-                    null,
-                    null,
                     "204",
-                    "1.373",
-                    null,
-                    null
+                    "1.373"
                 ],
                 [
                     "Sekolah Agama",
-                    null,
-                    null,
                     "647",
-                    "10.657",
-                    null,
-                    null
+                    "10.657"
                 ],
                 [
                     "",
-                    null,
-                    null,
                     "Jumlah keseluruhannya",
-                    "19",
-                    null,
-                    null
-                ]
-            ]
-        ]
-    ],
-    [
-        27,
-        [
-            [
-                [
-                    null,
-                    "Coalition"
-                ],
-                [
-                    "for Epidemic Preparedness Innovations (CEPI). Penyertaan Malaysia sebagai ahli CEPI",
-                    null
-                ],
-                [
-                    "membolehkan Malaysia mendapatkan akses kepada pembangunan vaksin, pemindahan",
-                    null
-                ],
-                [
-                    "teknologi dan kepakaran baharu kepada penyelidik tempatan. CEPI juga telah menaja",
-                    null
-                ],
-                [
-                    "beberapa syarikat dan institusi yang sedang membangunkan vaksin COVID-19 seperti",
-                    null
-                ],
-                [
-                    "Moderna dan Oxford AstraZeneca yang kedua-duanya sekarang berada dalam ujian",
-                    null
-                ],
-                [
-                    "klinikal fasa tiga.",
-                    null
-                ]
-            ],
-            [
-                [
-                    null,
-                    "CEPI juga komited kepada pengagihan vaksin secara adil dan terbuka dengan"
-                ],
-                [
-                    "kos  yang  sederhana  untuk  seluruh  dunia.  Malaysia  juga  sedang  berusaha  untuk",
-                    null
-                ],
-                [
-                    "berbincang dengan pihak negara China berkenaan dengan pembangunan vaksin oleh",
-                    null
-                ],
-                [
-                    "syarikat dan institusi dari negara tersebut. China sekarang mempunyai beberapa syarikat",
-                    null
-                ],
-                [
-                    "dan institusi yang sudah sampai ke tahap yang ke hadapan seperti CanSino Bio yang",
-                    null
-                ],
-                [
-                    "diberi kelulusan terhad oleh Kerajaan China dan Sino Farm yang sedang melaksanakan",
-                    null
-                ],
-                [
-                    "ujian klinikal fasa tiga di Emiriah Arab Bersatu (UAE) dan SinoVac yang sedang",
-                    null
-                ],
-                [
-                    "melaksanakan ujian klinikal fasa ketiga di Brazil.",
-                    null
-                ]
-            ],
-            [
-                [
-                    null,
-                    "Esok petang, saya dijadualkan untuk mengadakan sidang video bersama"
-                ],
-                [
-                    "dengan rakan sejawatan saya di China, Wang Ji Gang berkenaan hal ini termasuk",
-                    null
-                ],
-                [
-                    "kemungkinan  Malaysia  mendapat  akses  kepada  vaksin  daripada  China  sekiranya",
-                    null
-                ],
-                [
-                    "Kementerian Kesihatan Malaysia mendapati ia sesuai, selamat dan berkesan untuk",
-                    null
-                ],
-                [
-                    "digunakan.",
-                    null
-                ]
-            ]
-        ]
-    ],
-    [
-        28,
-        [
-            [
-                [
-                    null,
-                    "Malaysia  pada  masa  kini  dalam  usaha  untuk  melengkapkan  ekosistem"
-                ],
-                [
-                    "pembangunan vaksin.  Pembangunan vaksin ini akan mengambil masa dan memerlukan",
-                    null
-                ],
-                [
-                    "perancangan serta kajian yang teliti.",
-                    null
-                ]
-            ],
-            [
-                [
-                    null,
-                    "Mesyuarat Sains Negara yang dipengerusikan oleh Yang Amat Berhormat"
-                ],
-                [
-                    "Perdana Menteri pada 14 Julai 2020 telah bersetuju MOSTI dan Kementerian Kesihatan",
-                    null
-                ],
-                [
-                    "Malaysia  menyediakan  road  map  pembangunan  vaksin  negara  untuk  negara  kita",
-                    null
-                ],
-                [
-                    "mempunyai kemampuan  untuk  menghasilkan  vaksin  manusia  dalam  jangka  masa",
-                    null
-                ],
-                [
-                    "sederhana sekali gus mempunyai keselamatan dan kemandirian (vaccine security and",
-                    null
-                ],
-                [
-                    "self-reliance) tanpa bergantung sepenuhnya kepada import seperti mana yang berlaku",
-                    null
-                ],
-                [
-                    "sekarang.",
-                    null
-                ]
-            ],
-            [
-                [
-                    null,
-                    "Merujuk kepada pembangunan vaksin COVID-19, ia bukan hanya melibatkan"
-                ],
-                [
-                    "penghasilan vaksin semata-mata.  Ia bermula dengan memahami bahan genetik virus",
-                    null
-                ],
-                [
-                    "SARS-CoV-2 itu sendiri.  Maklumat genom ini digunakan untuk membangunkan vaksin.",
-                    null
-                ],
-                [
-                    "Malaysia melalui Malaysian Geonomic Institute, Makmal Kesihatan Awam Kebangsaan,",
-                    null
-                ],
-                [
-                    "Institut Pendidikan Perubatan (IMR) dan Universiti Malaya telah berjaya menjuju genom",
-                    null
-                ],
-                [
-                    "dari 20 sampel virus yang dipencil daripada pesakit di negara kita dan maklumat tersebut",
-                    null
-                ],
-                [
-                    "dihantar ke Global Initiative on Sharing All Influenza Data (GISAID) yang diguna oleh",
-                    null
-                ],
-                [
-                    "saintis di seluruh dunia untuk membangunkan vaksin.",
-                    null
-                ]
-            ],
-            [
-                [
-                    null,
-                    "Selain  daripada  itu,  penglibatan  pemain  industri  tempatan  juga  sedang"
-                ],
-                [
-                    "dilaksanakan seperti menyediakan pengeluaran vaksin pada peringkat fill and finish",
-                    null
-                ],
-                [
-                    "apabila vaksin ditemui kelak. Ini membolehkan Malaysia membeli vaksin tersebut dengan",
-                    null
-                ],
-                [
-                    "volume yang besar dan melaksanakan fill and finish di negara kita di mana dua buah",
-                    null
-                ],
-                [
-                    "syarikat berkaitan kerajaan GLC telah dikenal pasti untuk menyediakan kemudahan",
-                    null
-                ],
-                [
-                    "tersebut. Ini boleh membantu kerajaan memulakan proses imunisasi dengan lebih cepat.",
-                    null
-                ],
-                [
-                    "Terima kasih.",
-                    null
-                ]
-            ],
-            [
-                [
-                    "Tuan Yang di-Pertua: Terima kasih Yang Berhormat Menteri.  Dipersilakan"
-                ],
-                [
-                    "Yang Berhormat Parit untuk soalan tambahan pertama."
-                ]
-            ],
-            [
-                [
-                    null,
-                    "Dato\u2019 Mohd Nizar bin Haji Zakaria [Parit]:  Terima kasih Tuan Yang di-Pertua."
-                ],
-                [
-                    "Tahniah kepada Yang Berhormat Menteri yang telah pun menjelaskan secara detil",
-                    null
-                ],
-                [
-                    "tentang  vaksin  ini,  khususnya  COVID-19  ini.  Saya  ingin  bertanya  kepada  Yang",
-                    null
-                ],
-                [
-                    "Berhormat Menteri, apakah betul kerajaan sudah bersetuju untuk melantik dua buah",
-                    null
-                ],
-                [
-                    "syarikat  iaitu  Pharma  Niaga  dan  juga  Duopharma  untuk  membolehkan  proses",
-                    null
-                ],
-                [
-                    "pembotolan fill and finish vaksin COVID-19 dilakukan di negara ini kerana lebih murah",
-                    null
-                ],
-                [
-                    "dan mudah?",
-                    null
+                    "19"
                 ]
             ]
         ]

@@ -1,172 +1,90 @@
 [
     [
         46,
+        37,
         [
             [
                 [
-                    "",
                     "Tahun",
-                    "",
-                    "",
                     "Pendapatan (RM)",
-                    "",
-                    "",
-                    "Untung dan Rugi (RM)",
-                    ""
+                    "Untung dan Rugi (RM)"
                 ],
                 [
                     "2017",
-                    null,
-                    null,
                     "223.6 bilion",
-                    null,
-                    null,
-                    "Untung 45.5 bilion",
-                    null,
-                    null
+                    "Untung 45.5 bilion"
                 ],
                 [
                     "2018",
-                    null,
-                    null,
                     "251 bilion",
-                    null,
-                    null,
-                    "Untung 55.3 bilion",
-                    null,
-                    null
+                    "Untung 55.3 bilion"
                 ],
                 [
                     "2019",
-                    null,
-                    null,
                     "240.3 bilion",
-                    null,
-                    null,
-                    "Untung 40.5 bilion",
-                    null,
-                    null
+                    "Untung 40.5 bilion"
                 ],
                 [
                     "2020",
-                    null,
-                    null,
                     "178.7 bilion",
-                    null,
-                    null,
-                    "Rugi 21 bilion",
-                    null,
-                    null
+                    "Rugi 21 bilion"
                 ],
                 [
                     "2021",
-                    null,
-                    null,
                     "248 bilion",
-                    null,
-                    null,
-                    "Untung 48.6 bilion",
-                    null,
-                    null
+                    "Untung 48.6 bilion"
                 ]
             ]
         ]
     ],
     [
         50,
+        41,
         [
             [
                 [
                     "Kaum",
-                    "",
                     "Simpanan median \nApril 2020",
                     "Simpanan median \nDisember 2022",
-                    "",
-                    "",
-                    "Penurunan",
-                    ""
-                ],
-                [
-                    null,
-                    null,
-                    null,
-                    null,
-                    null,
-                    null,
-                    "simpanan",
-                    null
+                    "Penurunan \nsimpanan"
                 ],
                 [
                     "Bumiputera",
                     "RM15,541",
-                    null,
                     "RM4,937",
-                    null,
-                    "RM10,604",
-                    null,
-                    null
+                    "RM10,604"
                 ],
                 [
                     "Melayu",
                     "RM16,938",
-                    null,
                     "RM5,529",
-                    null,
-                    "RM11,409",
-                    null,
-                    null
+                    "RM11,409"
                 ],
                 [
                     "Bumiputera \nlain",
                     "RM10,591",
-                    null,
                     "RM3,302",
-                    null,
-                    "RM7,298",
-                    null,
-                    null
+                    "RM7,298"
                 ],
                 [
                     "Cina",
                     "RM45,756",
-                    null,
                     "RM45,162",
-                    null,
-                    "RM594",
-                    null,
-                    null
+                    "RM594"
                 ]
             ],
             [
                 [
                     "Kaum",
-                    "",
                     "Simpanan median \nApril 2020",
                     "Simpanan median \nDisember 2022",
-                    "",
-                    "",
-                    "Penurunan",
-                    ""
-                ],
-                [
-                    null,
-                    null,
-                    null,
-                    null,
-                    null,
-                    null,
-                    "simpanan",
-                    null
+                    "Penurunan \nsimpanan"
                 ],
                 [
                     "India",
                     "RM25,724",
-                    null,
                     "RM14,929",
-                    null,
-                    "RM10,785",
-                    null,
-                    null
+                    "RM10,785"
                 ]
             ]
         ]

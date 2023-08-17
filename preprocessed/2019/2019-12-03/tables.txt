@@ -1,106 +1,53 @@
 [
     [
         90,
+        79,
         [
             [
                 [
-                    "",
                     "Bil.",
-                    "",
-                    "",
                     "Kategori",
-                    "",
-                    "",
-                    "Bil. Syarikat (buah)",
-                    ""
+                    "Bil. Syarikat (buah)"
                 ],
                 [
                     "(i)",
-                    null,
-                    null,
                     "Makanan dan minuman",
-                    null,
-                    null,
-                    "382",
-                    null,
-                    null
+                    "382"
                 ],
                 [
                     "(ii)",
-                    null,
-                    null,
                     "Perkhidmatan dan penyelenggaraan",
-                    null,
-                    null,
-                    "99",
-                    null,
-                    null
+                    "99"
                 ],
                 [
                     "(iii)",
-                    null,
-                    null,
                     "Pusat pelajaran dan asuhan kanak-kanak",
-                    null,
-                    null,
-                    "96",
-                    null,
-                    null
+                    "96"
                 ],
                 [
                     "(iv)",
-                    null,
-                    null,
                     "Pakaian dan aksesori",
-                    null,
-                    null,
-                    "87",
-                    null,
-                    null
+                    "87"
                 ],
                 [
                     "(v)",
-                    null,
-                    null,
                     "Rawatan kecantikan dan kesihatan",
-                    null,
-                    null,
-                    "84",
-                    null,
-                    null
+                    "84"
                 ],
                 [
                     "(vi)",
-                    null,
-                    null,
                     "Telekomunikasi, elektronik, teknologi \nmaklumat dan komunikasi",
-                    null,
-                    null,
-                    "29",
-                    null,
-                    null
+                    "29"
                 ],
                 [
                     "(vii)",
-                    null,
-                    null,
                     "Kedai serbaneka dan pasar raya",
-                    null,
-                    null,
-                    "19",
-                    null,
-                    null
+                    "19"
                 ],
                 [
                     "(viii)",
-                    null,
-                    null,
                     "Lain-lain perniagaan",
-                    null,
-                    null,
-                    "103",
-                    null,
-                    null
+                    "103"
                 ]
             ]
         ]

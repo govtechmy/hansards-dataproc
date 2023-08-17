@@ -1,73 +1,38 @@
 [
     [
         27,
+        16,
         [
             [
                 [
-                    "",
                     "Tahun",
-                    "",
-                    "",
                     "Jumlah",
-                    "",
-                    "",
-                    "Peratus",
-                    ""
+                    "Peratus"
                 ],
                 [
                     "2013",
-                    null,
-                    null,
                     "2,936",
-                    null,
-                    null,
-                    "20.81",
-                    null,
-                    null
+                    "20.81"
                 ],
                 [
                     "2014",
-                    null,
-                    null,
                     "2,852",
-                    null,
-                    null,
-                    "20.22",
-                    null,
-                    null
+                    "20.22"
                 ],
                 [
                     "2015",
-                    null,
-                    null,
                     "2,731",
-                    null,
-                    null,
-                    "19.35",
-                    null,
-                    null
+                    "19.35"
                 ],
                 [
                     "2016",
-                    null,
-                    null,
                     "2,732",
-                    null,
-                    null,
-                    "19.36",
-                    null,
-                    null
+                    "19.36"
                 ],
                 [
                     "2017",
-                    null,
-                    null,
                     "2,857",
-                    null,
-                    null,
-                    "20.25",
-                    null,
-                    null
+                    "20.25"
                 ]
             ]
         ]

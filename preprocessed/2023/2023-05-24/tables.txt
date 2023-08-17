@@ -1,79 +1,44 @@
 [
     [
         11,
+        6,
         [
             [
                 [
-                    "",
                     "Jenis Komoditi Makanan Utama",
-                    "",
-                    "",
-                    "Peratusan (%)",
-                    ""
+                    "Peratusan (%)"
                 ],
                 [
                     "Beras",
-                    null,
-                    null,
-                    "65",
-                    null,
-                    null
+                    "65"
                 ],
                 [
                     "Daging ayam",
-                    null,
-                    null,
-                    "99.9",
-                    null,
-                    null
+                    "99.9"
                 ],
                 [
                     "Telur ayam",
-                    null,
-                    null,
-                    "114.4",
-                    null,
-                    null
+                    "114.4"
                 ],
                 [
                     "Daging lembu atau kerbau",
-                    null,
-                    null,
-                    "18.9",
-                    null,
-                    null
+                    "18.9"
                 ],
                 [
                     "Susu segar",
-                    null,
-                    null,
-                    "56.7",
-                    null,
-                    null
+                    "56.7"
                 ],
                 [
                     "Sayur-sayuran",
-                    null,
-                    null,
-                    "46.7",
-                    null,
-                    null
+                    "46.7"
                 ],
                 [
                     "Buah-buahan",
-                    null,
-                    null,
-                    "77.4",
-                    null,
-                    null
+                    "77.4"
                 ],
                 [
                     "Ikan makanan",
-                    null,
-                    null,
-                    "91.7",
-                    null,
-                    null
+                    "91.7"
                 ]
             ]
         ]

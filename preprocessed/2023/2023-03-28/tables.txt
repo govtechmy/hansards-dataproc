@@ -1,101 +1,59 @@
 [
     [
         30,
+        25,
         [
             [
                 [
-                    "",
                     "Negeri",
-                    "",
-                    "",
-                    "Ringgit Malaysia",
-                    ""
+                    "Ringgit Malaysia"
                 ],
                 [
                     "Pahang",
-                    null,
-                    null,
-                    "178,487,500",
-                    null,
-                    null
+                    "178,487,500"
                 ],
                 [
                     "Selangor",
-                    null,
-                    null,
-                    "508,000,621",
-                    null,
-                    null
+                    "508,000,621"
                 ],
                 [
                     "Kelantan",
-                    null,
-                    null,
-                    "50,652,500",
-                    null,
-                    null
+                    "50,652,500"
                 ],
                 [
                     "Kedah",
-                    null,
-                    null,
-                    "7,811,500",
-                    null,
-                    null
+                    "7,811,500"
                 ],
                 [
                     "Terengganu",
-                    null,
-                    null,
-                    "17,016,500",
-                    null,
-                    null
+                    "17,016,500"
                 ],
                 [
                     "Melaka",
-                    null,
-                    null,
-                    "21,312,500",
-                    null,
-                    null
+                    "21,312,500"
                 ],
                 [
                     "Wilayah Persekutuan",
-                    null,
-                    null,
-                    "5,100,017",
-                    null,
-                    null
+                    "5,100,017"
                 ],
                 [
                     "Negeri Sembilan",
-                    null,
-                    null,
-                    "26,446,000",
-                    null,
-                    null
+                    "26,446,000"
                 ],
                 [
                     "Perak",
-                    null,
-                    null,
-                    "2,390,500",
-                    null,
-                    null
+                    "2,390,500"
                 ],
                 [
                     "Johor",
-                    null,
-                    null,
-                    "9,914,000",
-                    null,
-                    null
+                    "9,914,000"
                 ]
             ]
         ]
     ],
     [
         31,
+        26,
         [
             [
                 [
@@ -111,57 +69,32 @@
     ],
     [
         54,
+        49,
         [
             [
                 [
                     "Bil",
                     "Sekolah",
-                    "",
-                    "Jumlah Bilik",
-                    "",
-                    "",
-                    "Peruntukan",
-                    ""
-                ],
-                [
-                    null,
-                    null,
-                    null,
-                    "Darjah",
-                    null,
-                    null,
-                    "(RM)",
-                    null
+                    "Jumlah Bilik \nDarjah",
+                    "Peruntukan \n(RM)"
                 ],
                 [
                     "1.",
                     "Sekolah Kebangsaan \nSetia Alam 2",
                     "34 buah",
-                    null,
-                    null,
-                    "54 juta",
-                    null,
-                    null
+                    "54 juta"
                 ],
                 [
                     "2.",
                     "Sekolah Kebangsaan \nPaya Dusun, \nTerengganu",
                     "24 buah",
-                    null,
-                    null,
-                    "55 juta",
-                    null,
-                    null
+                    "55 juta"
                 ],
                 [
                     "3.",
                     "Sekolah Menengah \nKebangsaan Dudong, \nSibu, Sarawak",
                     "42 buah",
-                    null,
-                    null,
-                    "110 juta",
-                    null,
-                    null
+                    "110 juta"
                 ]
             ]
         ]

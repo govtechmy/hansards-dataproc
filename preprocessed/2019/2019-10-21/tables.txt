@@ -1,258 +1,172 @@
 [
     [
         20,
+        9,
         [
             [
                 [
-                    "",
                     "Jantina",
-                    "Bilangan (orang)",
-                    ""
+                    "Bilangan (orang)"
                 ],
                 [
                     "Lelaki",
-                    null,
-                    "166,116",
-                    null
+                    "166,116"
                 ],
                 [
                     "Wanita",
-                    null,
-                    "98,076",
-                    null
+                    "98,076"
                 ]
             ],
             [
                 [
-                    "",
                     "Julat Umur",
-                    "Bilangan (orang)",
-                    ""
+                    "Bilangan (orang)"
                 ],
                 [
                     "12 sehingga 20 tahun",
-                    null,
-                    "2,865",
-                    null
+                    "2,865"
                 ],
                 [
                     "21 sehingga 59 tahun",
-                    null,
-                    "162,856",
-                    null
+                    "162,856"
                 ],
                 [
                     "60 tahun dan ke atas",
-                    null,
-                    "98,471",
-                    null
+                    "98,471"
                 ]
             ],
             [
                 [
-                    "",
                     "Negara",
-                    "Bilangan (orang)",
-                    ""
+                    "Bilangan (orang)"
                 ],
                 [
                     "Indonesia",
-                    null,
-                    "135,701",
-                    null
+                    "135,701"
                 ],
                 [
                     "Filipina",
-                    null,
-                    "38,131",
-                    null
+                    "38,131"
                 ],
                 [
                     "Republik India",
-                    null,
-                    "10,283",
-                    null
+                    "10,283"
                 ]
             ],
             [
                 [
-                    "",
                     "Jantina",
-                    "Bilangan (orang)",
-                    ""
+                    "Bilangan (orang)"
                 ],
                 [
                     "Lelaki",
-                    null,
-                    "11,543,827",
-                    null
+                    "11,543,827"
                 ],
                 [
                     "Wanita",
-                    null,
-                    "11,491,076",
-                    null
+                    "11,491,076"
                 ]
             ]
         ]
     ],
     [
         21,
+        10,
         [
             [
                 [
                     "Julat Umur",
-                    "",
-                    "",
-                    "Bilangan (orang)",
-                    ""
+                    "Bilangan (orang)"
                 ],
                 [
                     "12 sehingga 20 tahun",
-                    null,
-                    "4,137,879",
-                    null,
-                    null
+                    "4,137,879"
                 ],
                 [
                     "21 sehingga 59 tahun",
-                    null,
-                    "15,500,729",
-                    null,
-                    null
+                    "15,500,729"
                 ],
                 [
                     "60 tahun dan ke atas",
-                    null,
-                    "3,396,295",
-                    null,
-                    null
+                    "3,396,295"
                 ]
             ],
             [
                 [
                     "Tahun",
-                    "",
-                    "",
-                    "Jumlah (keping)",
-                    ""
+                    "Jumlah (keping)"
                 ],
                 [
                     "2017",
-                    null,
-                    "461,147",
-                    null,
-                    null
+                    "461,147"
                 ],
                 [
                     "2018",
-                    null,
-                    "460,559",
-                    null,
-                    null
+                    "460,559"
                 ],
                 [
                     "2019",
-                    null,
-                    "323,583",
-                    null,
-                    null
+                    "323,583"
                 ]
             ]
         ]
     ],
     [
         29,
+        18,
         [
             [
                 [
-                    "",
                     "Warganegara",
-                    "",
-                    "",
-                    "Bilangan (Orang)",
-                    ""
+                    "Bilangan (Orang)"
                 ],
                 [
                     "Bangladesh",
-                    null,
-                    null,
-                    "707",
-                    null,
-                    null
+                    "707"
                 ],
                 [
                     "India",
-                    null,
-                    null,
-                    "409",
-                    null,
-                    null
+                    "409"
                 ],
                 [
                     "China",
-                    null,
-                    null,
-                    "165",
-                    null,
-                    null
+                    "165"
                 ],
                 [
                     "Pakistan",
-                    null,
-                    null,
-                    "156",
-                    null,
-                    null
+                    "156"
                 ]
             ]
         ]
     ],
     [
         91,
+        80,
         [
             [
                 [
                     "Tarikh",
-                    "",
-                    "Pesakit",
-                    ""
-                ],
-                [
-                    null,
-                    null,
-                    "(bil./orang)",
-                    null
+                    "Pesakit  \n(bil./orang)"
                 ],
                 [
                     "Isnin",
-                    "280 - 300",
-                    null,
-                    null
+                    "280 - 300"
                 ],
                 [
                     "Selasa",
-                    "180 - 200",
-                    null,
-                    null
+                    "180 - 200"
                 ],
                 [
                     "Rabu",
-                    "180 - 200",
-                    null,
-                    null
+                    "180 - 200"
                 ],
                 [
                     "Khamis",
-                    "280 - 300",
-                    null,
-                    null
+                    "280 - 300"
                 ],
                 [
                     "Jumaat",
-                    "180 - 200",
-                    null,
-                    null
+                    "180 - 200"
                 ]
             ]
         ]

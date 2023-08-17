@@ -1,47 +1,28 @@
 [
     [
         31,
+        20,
         [
             [
                 [
-                    "",
                     "Negara",
-                    "",
-                    "",
-                    "Bil. (orang)",
-                    ""
+                    "Bil. (orang)"
                 ],
                 [
                     "Indonesia",
-                    null,
-                    null,
-                    "24,005",
-                    null,
-                    null
+                    "24,005"
                 ],
                 [
                     "India",
-                    null,
-                    null,
-                    "12,097",
-                    null,
-                    null
+                    "12,097"
                 ],
                 [
                     "China",
-                    null,
-                    null,
-                    "7,242",
-                    null,
-                    null
+                    "7,242"
                 ],
                 [
                     "Lain-lain negara",
-                    null,
-                    null,
-                    "13,847",
-                    null,
-                    null
+                    "13,847"
                 ]
             ]
         ]

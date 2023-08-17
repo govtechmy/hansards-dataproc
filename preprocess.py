@@ -16,14 +16,20 @@ from tqdm import tqdm
 import json
 
 
+def not_invisible_rect(obj):
+    if obj["object_type"] != "rect":
+        return True
+    return obj["non_stroking_color"] != 1
+
+
 def preprocess_file(hansard_date):
     year = hansard_date[-4:]
     bold = []
     italics = []
     tables = []
     text = ''
-
-    dir_path = f"preprocessed/{year}/"
+    base_path = os.path.dirname(os.path.realpath(__file__))
+    dir_path = f"{base_path}/preprocessed/{year}/"
     if not os.path.isdir(dir_path):
         os.mkdir(dir_path)
     sortable_date = f'{hansard_date[-4:]}-{hansard_date[2:4]}-{hansard_date[:2]}'  # YYYY-MM-DD
@@ -32,20 +38,25 @@ def preprocess_file(hansard_date):
         os.mkdir(dir_path)
 
     doa_seen = False
-    with pdfplumber.open('src_hansard/' + year + '/DR-' + hansard_date + '.pdf') as pdf:
+    doa_idx = -1
+    with pdfplumber.open(f'{base_path}/src_hansard/{year}/DR-{hansard_date}.pdf') as pdf:
         for idx, page in enumerate(tqdm(pdf.pages)):
-            if 'DOA' in page.extract_text():
-                doa_seen = True
             if not doa_seen:
-                continue
+                if 'DOA' in page.extract_text():
+                    doa_seen = True
+                    doa_idx = idx
+                else:
+                    continue
             text += page.extract_text() + '\n'  # add newline to separate pages
-            current_tables = page.extract_tables()  # if there are tables, add them to the list
+            current_tables = page.filter(
+                not_invisible_rect).extract_tables({"snap_tolerance": 10})  # if there are tables, add them to the list
             if current_tables:
                 # add page number
-                tables += [[idx, current_tables]]  # first wrapping is for appending. Want to preserve array structure
+                tables += [[idx, idx - doa_idx + 1,
+                            current_tables]]  # first wrapping is for appending. Want to preserve array structure
                 # the structure is then
                 # [ # master array
-                #   [ page number,
+                #   [ page number, page number relative to DOA,
                 #       tables
                 #   ]
                 # ]
@@ -99,7 +110,7 @@ def preprocess_file(hansard_date):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("hansard_date", help="hansard_date eg. 23052023",
-                        default="28032023", nargs="?")
+                        default="08122021", nargs="?")
     # Parse arguments
     args = parser.parse_args()
     preprocess_file(args.hansard_date)

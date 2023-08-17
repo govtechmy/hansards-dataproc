@@ -1,424 +1,84 @@
 [
     [
         21,
+        10,
         [
             [
                 [
                     "Kaum",
-                    "",
-                    "Bilangan",
-                    ""
-                ],
-                [
-                    null,
-                    null,
-                    "(% /Peratus)",
-                    null
+                    "Bilangan  \n(% /Peratus)"
                 ],
                 [
                     "Melayu",
-                    "79.66",
-                    null,
-                    null
+                    "79.66"
                 ],
                 [
                     "Bumiputera Sabah dan Sarawak",
-                    "5.5",
-                    null,
-                    null
+                    "5.5"
                 ],
                 [
                     "India",
-                    "3.21",
-                    null,
-                    null
+                    "3.21"
                 ],
                 [
                     "Cina",
-                    "1.6",
-                    null,
-                    null
+                    "1.6"
                 ],
                 [
                     "Orang Asal",
-                    "0.25",
-                    null,
-                    null
+                    "0.25"
                 ],
                 [
                     "Lain-lain",
-                    "1.84",
-                    null,
-                    null
+                    "1.84"
                 ]
             ]
         ]
     ],
     [
         84,
+        73,
         [
             [
                 [
-                    "",
                     "Tahun",
-                    "",
-                    "",
-                    "Peratus (%)",
-                    ""
+                    "Peratus (%)"
                 ],
                 [
                     "2009",
-                    null,
-                    null,
-                    "14.0",
-                    null,
-                    null
+                    "14.0"
                 ],
                 [
                     "2010",
-                    null,
-                    null,
-                    "14.0",
-                    null,
-                    null
+                    "14.0"
                 ],
                 [
                     "2011",
-                    null,
-                    null,
-                    "15.0",
-                    null,
-                    null
+                    "15.0"
                 ],
                 [
                     "2012",
-                    null,
-                    null,
-                    "16.0",
-                    null,
-                    null
+                    "16.0"
                 ],
                 [
                     "2013",
-                    null,
-                    null,
-                    "16.0",
-                    null,
-                    null
+                    "16.0"
                 ],
                 [
                     "2014",
-                    null,
-                    null,
-                    "15.0",
-                    null,
-                    null
+                    "15.0"
                 ],
                 [
                     "2015",
-                    null,
-                    null,
-                    "12.0",
-                    null,
-                    null
+                    "12.0"
                 ],
                 [
                     "2016",
-                    null,
-                    null,
-                    "12.0",
-                    null,
-                    null
+                    "12.0"
                 ],
                 [
                     "2017",
-                    null,
-                    null,
-                    "12.5",
-                    null,
-                    null
-                ]
-            ]
-        ]
-    ],
-    [
-        157,
-        [
-            [
-                [
-                    null,
-                    "rapporteur on poverty yang telah melawat Malaysia dan"
-                ],
-                [
-                    "juga berjumpa dengan beberapa kumpulan yang dikatakan kumpulan kepentingan yang",
-                    null
-                ],
-                [
-                    "bekerja  dengan  isu  kemiskinan,  berpendapat  bahawa  kadar  kemiskinan  di  Malaysia",
-                    null
-                ],
-                [
-                    "sepatutnya adalah di antara 16 peratus dan 20 peratus bukan 0.4 peratus yang dikatakan.",
-                    null
-                ]
-            ],
-            [
-                [
-                    "Saya bercadang supaya Kementerian Hal Ehwal Ekonomi mengulang kaji garis"
-                ],
-                [
-                    "kemiskinan atau poverty line income supaya isu-isu yang berkaitan dengan kemiskinan lebih"
-                ],
-                [
-                    "mencerminkan realiti terkini."
-                ]
-            ],
-            [
-                [
-                    null,
-                    "Isu yang seterusnya Tuan Yang di-Pertua adalah berkait dengan gaji minimum."
-                ],
-                [
-                    "Saya ingin mengucapkan tahniah kepada kerajaan, terima kasih kepada kerajaan kerana",
-                    null
-                ],
-                [
-                    "bercadang untuk meningkatkan gaji minimum ke RM1,200, walaupun hanya dilaksanakan di",
-                    null
-                ],
-                [
-                    "bandar-bandar utama. Persoalan saya, mengapa cadangan kerajaan hanya berhenti setakat",
-                    null
-                ],
-                [
-                    "sahaja di bandar-bandar utama? Bagaimana kerajaan akan mendefinisikan bandar-bandar",
-                    null
-                ],
-                [
-                    "utama memandangkan 87 peratus daripada seluruh negara boleh diklasifikasikan sebagai",
-                    null
-                ],
-                [
-                    "kawasan bandar.",
-                    null
-                ]
-            ],
-            [
-                [
-                    "So, saya ingat kerajaan mesti memberi satu kriteria untuk menentukan mana-"
-                ],
-                [
-                    "manakah bandar-bandar utama dan mana-mana bandar yang tidak utama. Menurut kajian"
-                ],
-                [
-                    "dan pengiraan gaji hidup yang diperkenalkan oleh Bank Negara Malaysia pada tahun 2017,"
-                ],
-                [
-                    "gaji hidup di Kuala Lumpur bagi seorang individu adalah RM2,700 sebulan. Bagi seorang"
-                ],
-                [
-                    "pasangan dengan dua anak pula adalah RM6,500 sebulan. Nilai anggaran Bank Negara"
-                ],
-                [
-                    "Malaysia tidak jauh daripada Buku Panduan Belanjawanku yang dikeluarkan oleh KWSP"
-                ],
-                [
-                    "ataupun EPF untuk warga Lembah Klang pada awal tahun ini. Bagi individu perseorangan"
-                ],
-                [
-                    "adalah RM2,490 manakala sebuah pasangan dengan dua orang anak adalah lebih kurang"
-                ],
-                [
-                    "RM6,620"
-                ]
-            ],
-            [
-                [
-                    "Masalahnya Tuan Yang di-Pertua ialah hampir 50 peratus pekerja dewasa di Kuala"
-                ],
-                [
-                    "Lumpur memperoleh gaji kurang daripada RM2,500 sebulan pada tahun 2016. Untuk"
-                ],
-                [
-                    "merealisasikan inspirasi Income Concept Shared Prospertity Vision 2030, di sini saya"
-                ],
-                [
-                    "menyeru kerajaan menaikkan gaji minimum dengan gaji hidup. Minimum wage dengan a"
-                ],
-                [
-                    "living wage untuk memastikan rakyat yang telah menyumbang tenaga buruh kepada ekonomi"
-                ],
-                [
-                    "negara boleh hidup dengan lebih bermaruah dan menampung kos hidup yang semakin"
-                ],
-                [
-                    "melambung tinggi"
-                ]
-            ],
-            [
-                [
-                    null,
-                    "Cadangan saya Tuan Yang di-Pertua kepada kerajaan supaya merujuk kepada"
-                ],
-                [
-                    "sistem di UK, di mana mereka ada kadar Gaji Minimum Negara, National Minimum Wage dan",
-                    null
-                ],
-                [
-                    "Gaji Hidup Negara ataupun National Living Wage. Perbezaan adalah berdasarkan umur",
-                    null
-                ],
-                [
-                    "pekerja. Saya berasa peningkatan gaji minimum adalah penting bagi pekerja berumur 25",
-                    null
-                ],
-                [
-                    "tahun dan ke atas. Ini adalah kerana mereka memerlukan perlindungan gaji yang lebih tinggi",
-                    null
-                ],
-                [
-                    "sewaktu  kebanyakan  daripada  mereka  akan  membina  keluarga  baharu,  selepas",
-                    null
-                ],
-                [
-                    "perkahwinan dan sebagainya.",
-                    null
-                ]
-            ],
-            [
-                [
-                    null,
-                    "Seterusnya Tuan Yang di-Pertua, sumbangan pampasan tenaga pekerja ataupun"
-                ],
-                [
-                    "dalam bahasa Inggeris, Compensation of the employees (CE). Ini adalah kepada KDNK.  Ini",
-                    null
-                ],
-                [
-                    "adalah ukuran atau gaji yang dibayar kepada pekerja secara keseluruhan di Malaysia",
-                    null
-                ],
-                [
-                    "berbanding dengan KDNK. Soalan di depan kita ialah bagaimana untuk mencapai sasaran",
-                    null
-                ],
-                [
-                    "Shared Prosperity Vision 2030 iaitu sebanyak 48 peratus daripada KDNK akan pergi kepada",
-                    null
-                ],
-                [
-                    "golongan pekerja.",
-                    null
-                ]
-            ],
-            [
-                [
-                    null,
-                    "This is the challenge, how do we make sure that the government workers in this"
-                ],
-                [
-                    "country realize the 48 percent. Pada masa ini, tahap pencapaian compensation of the",
-                    null
-                ],
-                [
-                    "employees ialah 35.7 peratus KDNK. Akan tetapi, cabaran yang telah dikemukakan oleh",
-                    null
-                ],
-                [
-                    "shared prosperity vision adalah 48 peratus. Persoalan saya kepada Yang Berhormat Menteri",
-                    null
-                ],
-                [
-                    "Sumber Manusia ialah apakah langkah kerajaan yang akan diambil untuk menambah baik",
-                    null
-                ],
-                [
-                    "dan memperkukuhkan Undang-undang Buruh untuk memastikan kerajaan dapat mencapai",
-                    null
-                ],
-                [
-                    "sasaran tersebut.",
-                    null
-                ]
-            ]
-        ]
-    ],
-    [
-        158,
-        [
-            [
-                [
-                    null,
-                    "Bagaimana  Wawasan  Kemakmuran  Bersama  boleh  dilaksanakan  supaya"
-                ],
-                [
-                    "pengagihan kekayaan dan hasil pertumbuhan ekonomi dapat manfaat kepada golongan",
-                    null
-                ],
-                [
-                    "pekerja di Malaysia. Tuan Yang di-Pertua, akhir sekali dalam seksyen ini. Saya ingin tanya",
-                    null
-                ],
-                [
-                    "kepada pihak kerajaan khususnya Kementerian Hal Ehwal Ekonomi ialah bilakah pelan",
-                    null
-                ],
-                [
-                    "implementation ataupun pelan implementasi shared prosperity vision termasuk sasaran-",
-                    null
-                ],
-                [
-                    "sasaran tertentu akan dikemukakan. Ini adalah penting dan saya percaya kerajaan harus",
-                    null
-                ],
-                [
-                    "memberi priority keutamaan kepada pelan implementation.",
-                    null
-                ]
-            ],
-            [
-                [
-                    "Tuan Haji Awang bin Hashim [Pendang]: Yang Berhormat Klang, sekejap sahaja."
-                ],
-                [
-                    "Hendak sentuh isu.  Terima kasih Tuan Yang di-Pertua, terima kasih kepada Yang Berhormat"
-                ],
-                [
-                    "Klang. Saya hendak sentuh sedikit. Saya tertarik dengan ucapan Yang Berhormat Klang"
-                ],
-                [
-                    "berkenaan dengan..."
-                ]
-            ],
-            [
-                [
-                    "Tuan Haji Awang bin Hashim [Pendang]: Yang Berhormat Klang berkenaan"
-                ],
-                [
-                    "dengan pemuda tadi. Saya hendak tanya minta kita buat satu sistem yang boleh kita bantu"
-                ],
-                [
-                    "anak muda kita berkenaan dengan sekarang ini dibelenggu dengan hutang PTPTN dan juga"
-                ],
-                [
-                    "kos hidup yang tinggi. Adakah kita boleh buat satu cadangan untuk caucus  membincangkan"
-                ],
-                [
-                    "anak-anak muda semua ini kerana mereka ini adalah generasi akan mengambil alih negara."
-                ],
-                [
-                    "Saya hendak minta pandangan daripada Yang Berhormat Klang. Saya nampak sedap tadi,"
-                ],
-                [
-                    "benda yang dibangkitkan"
-                ]
-            ],
-            [
-                [
-                    "Timbalan Yang di-Pertua [Tuan Nga Kor Ming]: Sila menggulung Yang Berhormat"
-                ],
-                [
-                    "Klang."
+                    "12.5"
                 ]
             ]
         ]
