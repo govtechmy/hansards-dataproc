@@ -1,5 +1,5 @@
 import os
-import preprocess
+import parse_pdf
 import tabulate_hansard
 from tqdm import tqdm
 
@@ -30,5 +30,5 @@ with open("category_scores.csv", "w") as f:
     f.write("")
 
 for hansard_date in tqdm(hansard_dates):
-    # preprocess.preprocess_file(hansard_date)
+    # parse_pdf.parse_hansard(hansard_date)
     tabulate_hansard.tabulate(hansard_date)

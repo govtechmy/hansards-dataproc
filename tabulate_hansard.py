@@ -167,11 +167,12 @@ def tabulate(hansard_date):
 
     # the strategy is to iterate across rows
     # store the contents of the preprocessed text file in a list
-    with open(f"preprocessed/{year}/{sortable_date}/plaintext.txt", 'r') as f:
+    input_dir = f"parsed_pdf/{year}/{sortable_date}/"
+    with open(f"{input_dir}plaintext.txt", 'r') as f:
         text = f.readlines()
-    with open(f"preprocessed/{year}/{sortable_date}/bold.txt", 'r') as f:
+    with open(f"{input_dir}bold.txt", 'r') as f:
         bold = f.readlines()
-    with open(f"preprocessed/{year}/{sortable_date}/italics.txt", 'r') as f:
+    with open(f"{input_dir}italics.txt", 'r') as f:
         italics = f.readlines()
     assert len(text) == len(bold) == len(italics), \
         f'Length of text, bold and italics do not match: {len(text)} vs {len(bold)} vs {len(italics)}'

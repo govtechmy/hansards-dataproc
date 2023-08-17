@@ -22,14 +22,14 @@ def not_invisible_rect(obj):
     return obj["non_stroking_color"] != 1
 
 
-def preprocess_file(hansard_date):
+def parse_hansard(hansard_date):
     year = hansard_date[-4:]
     bold = []
     italics = []
     tables = []
     text = ''
     base_path = os.path.dirname(os.path.realpath(__file__))
-    dir_path = f"{base_path}/preprocessed/{year}/"
+    dir_path = f"{base_path}/parsed_pdf/{year}/"
     if not os.path.isdir(dir_path):
         os.mkdir(dir_path)
     sortable_date = f'{hansard_date[-4:]}-{hansard_date[2:4]}-{hansard_date[:2]}'  # YYYY-MM-DD
@@ -113,4 +113,4 @@ if __name__ == "__main__":
                         default="12112019", nargs="?")
     # Parse arguments
     args = parser.parse_args()
-    preprocess_file(args.hansard_date)
+    parse_hansard(args.hansard_date)

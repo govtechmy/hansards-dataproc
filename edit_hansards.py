@@ -13,7 +13,7 @@ def replace(hansard_date, old_text_snippet, new_text_snippet, new_bold_snippet, 
         f"and new_italics_snippet ({new_italics_snippet.replace(' ', '')}) must be of the same length"
     year = hansard_date[-4:]
     sortable_date = f'{hansard_date[-4:]}-{hansard_date[2:4]}-{hansard_date[:2]}'  # YYYY-MM-DD
-    dir_path = f"preprocessed/{year}/{sortable_date}/"
+    dir_path = f"parsed_pdf/{year}/{sortable_date}/"
     with open(dir_path + 'plaintext.txt', 'r') as f:
         text = f.readlines()
     with open(dir_path + 'bold.txt', 'r') as f:
