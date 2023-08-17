@@ -21,6 +21,11 @@ filenames += get_filenames_in_folder("src_hansard/2018")
 hansard_dates = [x[3:3 + 8] for x in filenames]
 
 # reset global files
+# for preprocessing
+# with open("hansards_with_tables.txt", "w") as f:
+#     f.write("")
+
+# for tabulation
 with open("category_scores.csv", "w") as f:
     f.write("")
 

@@ -110,7 +110,7 @@ def preprocess_file(hansard_date):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("hansard_date", help="hansard_date eg. 23052023",
-                        default="08122021", nargs="?")
+                        default="12112019", nargs="?")
     # Parse arguments
     args = parser.parse_args()
     preprocess_file(args.hansard_date)
