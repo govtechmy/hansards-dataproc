@@ -1,5 +1,6 @@
 import os
 import parse_pdf
+import pretabulation_processing
 import tabulate_hansard
 from tqdm import tqdm
 
@@ -25,10 +26,20 @@ hansard_dates = [x[3:3 + 8] for x in filenames]
 # with open("hansards_with_tables.txt", "w") as f:
 #     f.write("")
 
-# for tabulation
-with open("category_scores.csv", "w") as f:
+# for pre-tabulation
+with open("matched_tables.txt", "w") as f:
     f.write("")
 
+# for tabulation
+# with open("category_scores.csv", "w") as f:
+#     f.write("")
+
 for hansard_date in tqdm(hansard_dates):
-    # parse_pdf.parse_hansard(hansard_date)
-    tabulate_hansard.tabulate(hansard_date)
+    try:
+        # parse_pdf.parse_hansard(hansard_date)
+        pretabulation_processing.preprocess(hansard_date)
+        # tabulate_hansard.tabulate(hansard_date)
+    except Exception as e:
+        print(e)
+        print("Error at " + hansard_date)
+        continue

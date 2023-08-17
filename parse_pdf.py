@@ -19,7 +19,7 @@ import json
 def not_invisible_rect(obj):
     if obj["object_type"] != "rect":
         return True
-    return obj["non_stroking_color"] != 1
+    return obj["non_stroking_color"] < 0.95
 
 
 def parse_hansard(hansard_date):
@@ -49,7 +49,7 @@ def parse_hansard(hansard_date):
                     continue
             text += page.extract_text() + '\n'  # add newline to separate pages
             current_tables = page.filter(
-                not_invisible_rect).extract_tables({"snap_tolerance": 10})  # if there are tables, add them to the list
+                not_invisible_rect).extract_tables({"snap_tolerance": 9})  # if there are tables, add them to the list
             if current_tables:
                 # add page number
                 tables += [[idx, idx - doa_idx + 1,
@@ -98,7 +98,7 @@ def parse_hansard(hansard_date):
         f.write(spaced_bold)
     with open(dir_path + "italics.txt", 'w') as f:
         f.write(spaced_italics)
-    with open(dir_path + "tables.txt", 'w') as f:
+    with open(dir_path + "tables.json", 'w') as f:
         json.dump(tables, f, indent=4)
 
     # for global logging
@@ -110,7 +110,7 @@ def parse_hansard(hansard_date):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("hansard_date", help="hansard_date eg. 23052023",
-                        default="12112019", nargs="?")
+                        default="16082018", nargs="?")
     # Parse arguments
     args = parser.parse_args()
     parse_hansard(args.hansard_date)

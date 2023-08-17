@@ -167,7 +167,7 @@ def tabulate(hansard_date):
 
     # the strategy is to iterate across rows
     # store the contents of the preprocessed text file in a list
-    input_dir = f"parsed_pdf/{year}/{sortable_date}/"
+    input_dir = f"pretabulation/{year}/{sortable_date}/"
     with open(f"{input_dir}plaintext.txt", 'r') as f:
         text = f.readlines()
     with open(f"{input_dir}bold.txt", 'r') as f:
