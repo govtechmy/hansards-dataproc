@@ -30,6 +30,7 @@ def get_page_number(header_text):
     else:
         return header_text.split('DR')[0].replace(' ', '')
 
+
 def mimic_table_as_plaintext(table):
     table_text = ''
     for row in table:
@@ -166,8 +167,9 @@ def preprocess(hansard_date):
             f'{num_text_chars_included_after_anchor} vs {num_table_chars_after_anchor}'
 
         # replace the entire block between start_idx and end_idx with the table
+        table = [[cell.replace('\n', '') for cell in row] for row in table]
         markdown_table = list_to_markdown.make_markdown_table(table).split('\n')[:-1]  # remove trailing newline
-        markdown_table = [row + '\n' for row in markdown_table]
+        markdown_table = [row.replace('\n', '') + '\n' for row in markdown_table]  # remove in-cell newlines
         plainly_formatted_table = [re.sub(r'\S', '0', row) for row in markdown_table]
         text = text[:start_idx + 1] + markdown_table + text[end_idx:]
         bold = bold[:start_idx + 1] + plainly_formatted_table + bold[end_idx:]
@@ -223,7 +225,7 @@ def preprocess(hansard_date):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("hansard_date", help="hansard_date eg. 12102021",
-                        default="18082020", nargs="?")
+                        default="21022023", nargs="?")
     # Parse arguments
     args = parser.parse_args()
     preprocess(args.hansard_date)

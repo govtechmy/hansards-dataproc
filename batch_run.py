@@ -29,12 +29,12 @@ hansard_dates = [x[3:3 + 8] for x in filenames]
 #     parse_pdf.parse_hansard(hansard_date)
 
 # for pre-tabulation
-# with open("matched_tables.txt", "w") as f:
-#     f.write("")
-# for hansard_date in tqdm(hansard_dates):
-#     pretabulation_processing.preprocess(hansard_date)
-# 
-# edit_hansards.edit_hansards()
+with open("matched_tables.txt", "w") as f:
+    f.write("")
+for hansard_date in tqdm(hansard_dates):
+    pretabulation_processing.preprocess(hansard_date)
+
+edit_hansards.edit_hansards()
 
 # for tabulation
 with open("warnings/matched_categories.csv", "w") as f:

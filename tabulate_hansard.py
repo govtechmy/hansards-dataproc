@@ -140,7 +140,7 @@ def get_author_and_speech(text, warn=''):
 def insert_speech(current):
     if current['speech'] == '':
         return []
-    return [[current['level-1'], current['level-2'], current['level-3'],
+    return [[current['level_1'], current['level_2'], current['level_3'],
              current['timestamp'], current['author'], current['speech']]]
 
 
@@ -176,9 +176,9 @@ def tabulate(hansard_date):
         "author": '',
         "speech": '',
         "timestamp": '',
-        "level-1": '',
-        "level-2": '',
-        "level-3": '',
+        "level_1": '',
+        "level_2": '',
+        "level_3": '',
     }
     current = blank_speech
     row_id = -1
@@ -235,8 +235,8 @@ def tabulate(hansard_date):
                 assert speech[-1] == '\n', f"Speech does not end with newline: {speech}"
                 current['speech'] = speech
                 if subtopic:
-                    current['level-2'] = subtopic
-                    current['level-3'] = ""
+                    current['level_2'] = subtopic
+                    current['level_3'] = ""
                 continue
 
             # sometimes the author has too long name and overflow to second line
@@ -248,8 +248,8 @@ def tabulate(hansard_date):
                     current['author'] = author
                     current['speech'] = speech
                     if subtopic:
-                        current['level-2'] = subtopic
-                        current['level-3'] = ""
+                        current['level_2'] = subtopic
+                        current['level_3'] = ""
                     # add to the loop counter additionally
                     row_id += 1
                     continue
@@ -298,18 +298,18 @@ def tabulate(hansard_date):
                 # TODO extract timestamps from annotations if present
                 continue
 
-            if current['author'] == "" and current['level-1'] != '':
-                # most likely a level-2 immediately following a level-1
+            if current['author'] == "" and current['level_1'] != '':
+                # most likely a level_2 immediately following a level_1
                 # usually a chain of bolds
                 # TODO warn
                 add_idx = 1
-                current['level-2'] = text[row_id]
-                current['level-3'] = ""
+                current['level_2'] = text[row_id]
+                current['level_3'] = ""
                 while row_id + add_idx < num_rows and \
                         prop_of_1_among_binary(bold[row_id + add_idx]) > 0.8 and \
                         not is_timestamp(text[row_id + add_idx]) and \
                         not get_author_and_speech(text[row_id + add_idx])[0]:
-                    current['level-2'] += text[row_id + add_idx]
+                    current['level_2'] += text[row_id + add_idx]
                     add_idx += 1
                 row_id += add_idx - 1
                 continue
@@ -328,9 +328,9 @@ def tabulate(hansard_date):
                     # direct match
                     speeches += insert_speech(current)
                     current['author'] = ""
-                    current['level-1'] = text[row_id].strip()
-                    current['level-2'] = ""
-                    current['level-3'] = ""
+                    current['level_1'] = text[row_id].strip()
+                    current['level_2'] = ""
+                    current['level_3'] = ""
                     current['speech'] = ""
                     continue
                 # keep elongating the category scope and try fuzzy matching until the category score goes down
@@ -346,9 +346,9 @@ def tabulate(hansard_date):
                 if current_category_probability > 0.9:
                     speeches += insert_speech(current)
                     current['author'] = ""
-                    current['level-1'] = current_category
-                    current['level-2'] = ""
-                    current['level-3'] = ""
+                    current['level_1'] = current_category
+                    current['level_2'] = ""
+                    current['level_3'] = ""
                     current['speech'] = ""
                     row_id += add_idx - 1
                     with open("warnings/matched_categories.csv", 'a') as f:
@@ -359,29 +359,29 @@ def tabulate(hansard_date):
                 speeches += insert_speech(current)
                 current['author'] = ""
                 current['speech'] = ""
-                current['level-3'] = ""
+                current['level_3'] = ""
                 add_idx = 1
-                current['level-2'] = text[row_id]
+                current['level_2'] = text[row_id]
                 # allow empty lines as separator
                 while row_id + add_idx < num_rows and \
                         prop_of_1_among_binary(bold[row_id + add_idx]) > 0.8 \
                         and not is_timestamp(text[row_id + add_idx]) \
                         and get_author_and_speech(text[row_id + add_idx])[0] == "":
-                    current['level-2'] += text[row_id + add_idx]
+                    current['level_2'] += text[row_id + add_idx]
                     add_idx += 1
                 row_id += add_idx - 1
                 continue
 
             # these are lower-cased bold sentences
-            # most likely a level-3 subtopic
+            # most likely a level_3 subtopic
             if re.search(r'Yang (Tidak )?((Bersetuju)|(Hadir)|(Mengundi)):', text[row_id]) or \
                     re.search(r'^Bacaan Kali Yang', text[row_id]):
                 speeches += insert_speech(current)
                 current['author'] = ""
                 current['speech'] = ""
-                current['level-3'] = text[row_id].strip()
-                if current['level-2'] == "":
-                    print(f'CHECK: level-2 not taken but inserting level-3: {text[row_id]}')
+                current['level_3'] = text[row_id].strip()
+                if current['level_2'] == "":
+                    print(f'CHECK: level_2 not taken but inserting level_3: {text[row_id]}')
                 continue
             elif re.search(r'^(Maksud)|(Kepala)|(Fasal)|(Bab)|(Tajuk)|(Jadual)[A-Za-z0-9-[\], ]+[–-]',
                            text[row_id]):
@@ -390,17 +390,17 @@ def tabulate(hansard_date):
                 add_idx = 1
                 current['author'] = ""
                 current['speech'] = ""
-                current['level-3'] = text[row_id]
-                # it could be followed by similar level-3 markers
+                current['level_3'] = text[row_id]
+                # it could be followed by similar level_3 markers
                 while row_id + add_idx < num_rows and \
                         prop_of_1_among_binary(bold[row_id + add_idx]) > 0.8 and \
                         re.search(r'^(Maksud)|(Kepala)|(Fasal)|(Bab)|(Tajuk)|(Jadual)[A-Za-z0-9-[\], ]+[–-]',
                                   text[row_id + add_idx]):
-                    current['level-3'] += text[row_id + add_idx]
+                    current['level_3'] += text[row_id + add_idx]
                     add_idx += 1
                 row_id += add_idx - 1
-                if current['level-2'] == "":
-                    print(f'CHECK: level-2 not taken but inserting level-3: {text[row_id]}')
+                if current['level_2'] == "":
+                    print(f'CHECK: level_2 not taken but inserting level_3: {text[row_id]}')
                 continue
 
             # special cases
@@ -419,7 +419,7 @@ def tabulate(hansard_date):
                 speeches += insert_speech(current)
                 current['author'] = ""
                 current['speech'] = ""
-                current['level-3'] = text[row_id].strip()
+                current['level_3'] = text[row_id].strip()
                 continue
             elif hansard_date == '12032019' and text[row_id].strip() == "Pada 7 Januari 2019:":
                 # treat as continuation of speech
@@ -442,7 +442,7 @@ def tabulate(hansard_date):
     # export speeches to csv
     with open(f'{dir_path}result.csv', mode='w', newline='') as file:
         writer = csv.writer(file)
-        writer.writerow(['level-1', 'level-2', 'level-3', 'timestamp', 'author', 'speech'])
+        writer.writerow(['level_1', 'level_2', 'level_3', 'timestamp', 'author', 'speech'])
         writer.writerows(speeches)
 
 
