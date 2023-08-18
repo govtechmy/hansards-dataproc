@@ -11,9 +11,13 @@ import csv
 def is_timestamp(text):
     text = text.strip()
     return re.search(r'[■◼▪] ?\d{4}\.?', text) or \
-           re.search(r'^ *\d{1,2}[.:] ?\d ?\d ?((pg)|(PG)|(pagi)|(tgh)|(Tgh)|(ptg)|(Ptg)|(petang)|(mlm)|(malam))\.?',
+           re.search(r'^ *\d{1,2}[.:] ?\d ?\d ?((pg)|(PG)|(pagi)|(tgh)|(Tgh)|'
+                     r'(ptg)|(Ptg)|(petang)|(mlm)|(malam)|(pm))\.?',
                      text) or \
            re.search(r'^\d{4}$', text)
+    # the first two major types are
+    # 1.  ■ 1030 which is in regular 10 minute intervals
+    # 2.  10.03 tgh. which has irregular appearances
     # Tgh is for 18102018
     # PG is for 16072018
     # space between last digits is for 05112019
@@ -47,7 +51,7 @@ def category_probability(text, categories):
     return match_score / 100
 
 
-def get_author_and_speech(text):
+def get_author_and_speech(text, warn=''):
     author = ''
     speech = ''
     subtopic = ''
@@ -78,7 +82,7 @@ def get_author_and_speech(text):
         # Tuan Pengerusi Timbalan Yang di-Pertua [Tuan Nga Kor Ming]: Tidak apa, tidak
         # allows () as they can have constituencies too
         author, speech = text.split(':', maxsplit=1)
-    elif re.search(r'^\d{1,2}\.? [A-Za-z `.’\'@/\-()]+\[[A-Za-z \-]+]:? [Mm]inta', text):
+    elif re.search(r'^\d{1,2}\.? [A-Za-z `.’\'@\/\-()]+\[[A-Za-z \-]+]:? *[Mm](em)?inta', text):
         # JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN
         # 1. Tuan Tan Kok Wai [Cheras] minta Menteri Pembangunan Usahawan menyatakan,
         author, speech = text.split('inta', maxsplit=1)
@@ -115,15 +119,21 @@ def get_author_and_speech(text):
         # Speaker of the House
         speech = text.split(':', maxsplit=1)[1]
         author = 'Setiausaha'
-    elif re.search(r'] ?:', text) and '[' not in text:
+    elif not warn and re.search(r'] ?:', text) and '[' not in text.split(':', maxsplit=1)[0]:
         # some of the unparsed authors are due to an extra ]
-        author, speech, subtopic = get_author_and_speech(re.sub(r'] ?:', ':', text, 1))
-        # TODO add these into a warning file for double-checking
-    elif ':' in text and '[' in text and ']' not in text:
+        author, speech, subtopic = get_author_and_speech(re.sub(r'] ?:', ':', text, 1), warn=text)
+    elif not warn and ':' in text and '[' in text and ']' not in text:
         # some of the unparsed authors are due to a missing ]
-        author, speech, subtopic = get_author_and_speech(text.replace(':', ']:', 1))
-        # TODO add these into a warning file for double-checking
-    # we do not allow the missing of a colon
+        author, speech, subtopic = get_author_and_speech(text.replace(':', ']:', 1), warn=text)
+    elif not warn and ':' not in text and \
+            re.search(r'^((Tuan)|(Datuk)|(Dato)|(Tan Sri)|(Puan)|(Dr\.)|(YM)|(Ustaz)|(Tun)|'
+                      r'(Laksamana)|(Mejar)|(Komander)|(Seri Paduka)|(Tengku)|(Hajah)|(Raja)|(Brig)|(Datin))'
+                      r'[A-Za-z `.’\'@/\-()]+\[[A-Za-z \-–]+]', text):
+        # some of the unparsed authors are due to a missing colon :
+        author, speech, subtopic = get_author_and_speech(text.replace(']', ']:', 1), warn=text)
+    if author != '' and warn != '':
+        with open('warnings/autocorrected_authors.txt', 'a') as f:
+            f.write(warn + '\n')
     return author, speech, subtopic
 
 
@@ -186,43 +196,29 @@ def tabulate(hansard_date):
             continue
 
         # determine whether the current line is a continuation of speech
-        if '1' not in bold[row_id] and not (
-                prop_of_1_among_binary(italics[row_id]) > 0.8 and
-                text[row_id].startswith('[')
-        ):
-            # if the whole line is not bolded and is not an annotation ie. starts with [,
+        if '1' not in bold[row_id]:
+            # if there is no bold in a line
             # then most likely it is a continuation of speech
-            # these includes empty lines
+            # these includes annotations without bold e.g. [Tepuk]
+            # for annotations, do a look ahead to ensure that it is not a bolded one
+            if prop_of_1_among_binary(italics[row_id]) > 0.5 and \
+                    '[' in text[row_id] and not text[row_id + 1].startswith('[') and \
+                    row_id + 1 < num_rows and '1' in bold[row_id + 1] \
+                    and re.search(r'mempengerusikan (([Mm]esyuarat)|(Jawatankuasa))', text[row_id + 1]):
+                text[row_id + 1] = text[row_id] + text[row_id + 1]
+                bold[row_id + 1] = bold[row_id] + bold[row_id + 1]
+                italics[row_id + 1] = italics[row_id] + italics[row_id + 1]
+                continue
+
             current['speech'] += text[row_id]
         else:
+            if row_id == 793:
+                print()
             if text[row_id].strip().lower() == "lampiran":
                 # end of Hansard
                 if not dewan_tangguh:
                     print(f'Lampiran found without dewan tangguh: {text[row_id]}')
                 break
-            if prop_of_1_among_binary(italics[row_id]) > 0.8 and \
-                    text[row_id].startswith('['):
-                # Annotations, examples below
-                # [Tuan Yang di-Pertua mempengerusikan Jawatankuasa] 
-                # [Majlis Mesyuarat bersidang semula] 
-                # [Dewan ditangguhkan pada pukul 4.59 petang] 
-                # [Sesi Waktu Pertanyaan-pertanyaan Menteri tamat] 
-                # [Soalan No.4 – Y.B. Tuan M. Kulasegaran (Ipoh Barat) tidak hadir]
-                if text[row_id].startswith('[Dewan ditangguhkan') or \
-                        text[row_id].startswith('[Mesyuarat ditangguhkan'):
-                    dewan_tangguh = True
-                speeches += insert_speech(current)
-                current['author'] = "ANNOTATIONS"
-                current['speech'] = ''
-                add_idx = 0
-                while row_id + add_idx < num_rows and prop_of_1_among_binary(italics[row_id + add_idx]) > 0.8:
-                    current['speech'] += text[row_id + add_idx]
-                    add_idx += 1
-                    if text[row_id + add_idx - 1].strip().endswith(']'):
-                        break
-                row_id += add_idx - 1
-                # TODO extract timestamps from annotations if present
-                continue
 
             # either timestamp, new category, new author or the like
             if is_timestamp(text[row_id]):
@@ -258,38 +254,67 @@ def tabulate(hansard_date):
                     row_id += 1
                     continue
 
-            if upper_lower_ratio(text[row_id]) < 1 and (
-                    prop_of_1_among_binary(bold[row_id]) < 0.8 or bold[row_id].count('0') > 5):
+            if bold[row_id].count('1') < 4:
                 # most likely it is just a stray bold
-                # TODO warn
-                current['speech'] += text[row_id]
+                stray_bold = text[row_id]
+                num_bold = bold[row_id].count('1')
                 # sometimes stray bolds go over a line as annotations
                 # Perbelanjaan Pembangunan 2023 dalam Jawatankuasa sebuah-buah Majlis.” [Hari 
                 # Kesepuluh]
                 if row_id + 1 < num_rows and '[' in text[row_id] and \
                         ']' not in text[row_id] and ']' in text[row_id + 1] and \
                         prop_of_1_among_binary(italics[row_id + 1]) > 0.5:
-                    current['speech'] += text[row_id + 1]
+                    stray_bold += text[row_id + 1]
+                    num_bold += bold[row_id + 1].count('1')
                     row_id += 1
+                current['speech'] += stray_bold
+                with open("warnings/stray_bolds.txt", 'a') as f:
+                    f.write(f'{hansard_date} with num bold: {num_bold}\n{stray_bold}\n')
                 continue
 
-            if current['speech'] == "":
-                # most likely a subtopic immediately following a category
+            if prop_of_1_among_binary(italics[row_id]) > 0.8:
+                if not text[row_id].startswith('['):
+                    print(f'ERROR: annotation without starting [: {text[row_id]}')
+                # Annotations, examples below
+                # this will also take care quite a lot of bolds
+                # [Tuan Yang di-Pertua mempengerusikan Jawatankuasa] 
+                # [Majlis Mesyuarat bersidang semula] 
+                # [Dewan ditangguhkan pada pukul 4.59 petang] 
+                # [Sesi Waktu Pertanyaan-pertanyaan Menteri tamat] 
+                # [Soalan No.4 – Y.B. Tuan M. Kulasegaran (Ipoh Barat) tidak hadir]
+                if text[row_id].startswith('[Dewan ditangguhkan') or \
+                        text[row_id].startswith('[Mesyuarat ditangguhkan'):
+                    dewan_tangguh = True
+                speeches += insert_speech(current)
+                current['author'] = "ANNOTATIONS"
+                current['speech'] = ''
+                add_idx = 0
+                while row_id + add_idx < num_rows and prop_of_1_among_binary(italics[row_id + add_idx]) > 0.8:
+                    current['speech'] += text[row_id + add_idx]
+                    add_idx += 1
+                    if text[row_id + add_idx - 1].strip().endswith(']'):
+                        break
+                row_id += add_idx - 1
+                # TODO extract timestamps from annotations if present
+                continue
+
+            if current['author'] == "" and current['level-1'] != 1:
+                # most likely a level-2 immediately following a level-1
                 # usually a chain of bolds
                 # TODO warn
                 add_idx = 1
                 current['level-2'] = text[row_id]
                 current['level-3'] = ""
-                # allow empty lines as separator
                 while row_id + add_idx < num_rows and \
                         prop_of_1_among_binary(bold[row_id + add_idx]) > 0.8 and \
                         not is_timestamp(text[row_id + add_idx]) and \
-                        get_author_and_speech(text[row_id + add_idx])[0] == "":
+                        not get_author_and_speech(text[row_id + add_idx])[0]:
                     current['level-2'] += text[row_id + add_idx]
                     add_idx += 1
                 row_id += add_idx - 1
                 continue
-            elif upper_lower_ratio(text[row_id]) > 1:
+
+            if upper_lower_ratio(text[row_id]) > 1:
                 # could be a new category
                 # Only possible to parse as category when the speech is non-empty
                 # see example below where otherwise the USUL will start a new category
@@ -308,7 +333,7 @@ def tabulate(hansard_date):
                     current['level-3'] = ""
                     current['speech'] = ""
                     continue
-                # keep elongating the category scope until the category score goes down
+                # keep elongating the category scope and try fuzzy matching until the category score goes down
                 add_idx = 1
                 current_category = text[row_id].strip()
                 current_category_probability = category_probability(current_category, categories)
@@ -346,46 +371,49 @@ def tabulate(hansard_date):
                     add_idx += 1
                 row_id += add_idx - 1
                 continue
-            else:
-                # these are lower-cased bold sentences
-                # most likely a level-3 subtopic
-                if re.search(r'Yang (Tidak )?((Bersetuju)|(Hadir)|(Mengundi)):', text[row_id]):
-                    speeches += insert_speech(current)
-                    current['author'] = ""
-                    current['speech'] = ""
-                    current['level-3'] = text[row_id].strip()
-                    continue
-                elif re.search(r'^Bacaan Kali Yang', text[row_id]):
-                    speeches += insert_speech(current)
-                    current['author'] = ""
-                    current['speech'] = ""
-                    current['level-3'] = text[row_id].strip()
-                    continue
-                elif re.search(r'^(Maksud)|(Kepala)|(Fasal)|(Bab)|(Tajuk)|(Jadual)[A-Za-z0-9-[\], ]+[–-]',
-                               text[row_id]):
-                    # TODO warn
-                    speeches += insert_speech(current)
-                    add_idx = 1
-                    current['author'] = ""
-                    current['speech'] = ""
-                    current['level-3'] = text[row_id]
-                    # it could be followed by similar level-3 markers
-                    while row_id + add_idx < num_rows and \
-                            prop_of_1_among_binary(bold[row_id + add_idx]) > 0.8 and \
-                            re.search(r'^(Maksud)|(Kepala)|(Fasal)|(Bab)|(Tajuk)|(Jadual)[A-Za-z0-9-[\], ]+[–-]',
-                                      text[row_id + add_idx]):
-                        current['level-3'] += text[row_id + add_idx]
-                        add_idx += 1
-                    row_id += add_idx - 1
-                    continue
 
+            # these are lower-cased bold sentences
+            # most likely a level-3 subtopic
+            if re.search(r'Yang (Tidak )?((Bersetuju)|(Hadir)|(Mengundi)):', text[row_id]) or \
+                    re.search(r'^Bacaan Kali Yang', text[row_id]):
+                speeches += insert_speech(current)
+                current['author'] = ""
+                current['speech'] = ""
+                current['level-3'] = text[row_id].strip()
+                if current['level-2'] == "":
+                    print(f'CHECK: level-2 not taken but inserting level-3: {text[row_id]}')
+                continue
+            elif re.search(r'^(Maksud)|(Kepala)|(Fasal)|(Bab)|(Tajuk)|(Jadual)[A-Za-z0-9-[\], ]+[–-]',
+                           text[row_id]):
+                # TODO warn
+                speeches += insert_speech(current)
+                add_idx = 1
+                current['author'] = ""
+                current['speech'] = ""
+                current['level-3'] = text[row_id]
+                # it could be followed by similar level-3 markers
+                while row_id + add_idx < num_rows and \
+                        prop_of_1_among_binary(bold[row_id + add_idx]) > 0.8 and \
+                        re.search(r'^(Maksud)|(Kepala)|(Fasal)|(Bab)|(Tajuk)|(Jadual)[A-Za-z0-9-[\], ]+[–-]',
+                                  text[row_id + add_idx]):
+                    current['level-3'] += text[row_id + add_idx]
+                    add_idx += 1
+                row_id += add_idx - 1
+                if current['level-2'] == "":
+                    print(f'CHECK: level-2 not taken but inserting level-3: {text[row_id]}')
+                continue
+
+            # special cases
             if re.fullmatch(r'Perutusan [Dd]aripada Dewan Negara [kK]epada Dewan Rakyat', text[row_id].strip()):
                 # common title of this document
                 # treat as continuation of speech
                 current['speech'] += text[row_id]
                 continue
-
-            if hansard_date == "02112018" and \
+            elif re.search(r'^[“"]?((Bahawa)|(BAHAWA)|(DAN BAHAWA)|(Dengan ini)|(DENGAN INI))', text[row_id]):
+                # treat as continuation of speech
+                current['speech'] += text[row_id]
+                continue
+            elif hansard_date == "02112018" and \
                     (re.search(r'^Strategi \d+:', text[row_id]) or re.search(r' [–-]$', text[row_id].strip())):
                 # during the budget 02112018
                 speeches += insert_speech(current)
@@ -393,17 +421,16 @@ def tabulate(hansard_date):
                 current['speech'] = ""
                 current['level-3'] = text[row_id].strip()
                 continue
-
-            if hansard_date == '12032019' and text[row_id].strip() == "Pada 7 Januari 2019:":
+            elif hansard_date == '12032019' and text[row_id].strip() == "Pada 7 Januari 2019:":
                 # treat as continuation of speech
                 current['speech'] += text[row_id]
                 continue
-
-            if hansard_date == '18102018' and text[row_id].strip() == "“Bahawa Dewan ini,":
+            elif hansard_date in ['06062023', '12062023', '27092021', '18102018', '18102018', '05122019']:
+                # these Hansard has bunch of bolded words as first word due to some important speeches
+                # we checked them and they are all ok
                 # treat as continuation of speech
                 current['speech'] += text[row_id]
                 continue
-
             # unhandled case
             print(f'WARN UNHANDLED BOLD: {text[row_id]}')
             current['speech'] += text[row_id]
@@ -422,7 +449,7 @@ def tabulate(hansard_date):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("hansard_date", help="hansard_date eg. 23052023",
-                        default="13072020", nargs="?")
+                        default="09032022", nargs="?")
     # Parse arguments
     args = parser.parse_args()
     tabulate(args.hansard_date)
