@@ -298,7 +298,7 @@ def tabulate(hansard_date):
                 # TODO extract timestamps from annotations if present
                 continue
 
-            if current['author'] == "" and current['level-1'] != 1:
+            if current['author'] == "" and current['level-1'] != '':
                 # most likely a level-2 immediately following a level-1
                 # usually a chain of bolds
                 # TODO warn
@@ -449,7 +449,7 @@ def tabulate(hansard_date):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("hansard_date", help="hansard_date eg. 23052023",
-                        default="09032022", nargs="?")
+                        default="13032023", nargs="?")
     # Parse arguments
     args = parser.parse_args()
     tabulate(args.hansard_date)
