@@ -2,17 +2,18 @@ This project aims to digitalise the Malaysian Dewan Rakyat Hansards from the PDF
 
 ## Usage
 1. Install requirements `pip install -r requirements.txt`
-2. `cd hansard_malaysia`
-3. Bulk process with `python3 main.py`
+2. Bulk process with `python3 batch_run.py` (check the file and uncomment the wanted processes as this is still in active development)
 
-If the program terminates in the later stage due to uncaught errors (unlikely), you can rerun the program and skip downloading files and adding markup with `-skipdownload` and `-skipmarkup` respectively.
+![](README_images/usage.png)
 
-### To run a specific session
-1. Make sure the Hansards PDF are already downloaded. If not, run `download_hansard.py` to download all session files into `src_hansard`. You can also specify the start date.
-2. Run `python3 generate_markup.py XX-XX-XX-XX`, where XX-XX-XX-XX is the session code (eg. 14-04-01-16). This will add markup tags to bold and italic text, output as a folder of files in the `preprocessed_hansard` folder. Bold markup will then be processed in the next step to determine segments.
-3. Run `python3 generate_tabular.py XX-XX-XX-XX`, where XX-XX-XX-XX is the session code. This will generate analysis files in the `analysis_hansard/XX-XX-XX-XX` folder and production files in the `release/XX-XX-XX-XX` folder.
-4. Due to the irregularity in formatting across the Hansards, most likely there are warnings to be resolved when running `generate_tabular.py`. Resolve them by editing the preprocessed files. Most often you have to remove the bold markup for words that should not be marked as bold, since we use boldness to detect speakers and titles.
-5. Additional checks can be done by checking the `DEWAN` statements, the `speakers.csv` and `category.csv`. Another good check if to go through the annotations (by searching for `[`) in `hansard.csv`.
+To be specific,
+Run `parse_pdf.py` to get the four output files of plaintext, binary bold and italic files (as 0, 1, or whitespaces) and tables.json. Th parsing will only process the content from DOA onwards (ignores table of contents and MP attendance).
+
+Run `pretabulation_processing.py` to insert tables and to remove header rows, and other processing.
+
+Run `edit_hansards.py` to edit the hansards to fix known any errors to ease tabulation.
+
+Run `tabulate_hansards.py` to tabulate the hansards into a CSV file.'
 
 ## Notes
 
@@ -58,9 +59,6 @@ If the program terminates in the later stage due to uncaught errors (unlikely), 
 
 # On parsing Table of Contents
 - 17072018 does not bold its categories.
-
-# Usage
-- Run preprocess.py to get the four output files of plaintext, binary bold and italic files (as 0, 1, or whitespaces). This file will only process the content from DOA onwards (ignores table of contents and MP attendance).
 
 # Notes
 - level-2 can have multilines, but level-1 must be on one single line. Example
