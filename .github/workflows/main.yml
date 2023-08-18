@@ -10,5 +10,5 @@ jobs:
         with:
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           src_repo: data-gov-my/dataproc-hansard
-          dst_repo: jeqcho/public-hansard-review
+          dest_repo: jeqcho/public-hansard-review
           copy_assets: true
