@@ -19,12 +19,13 @@ import json
 def not_invisible_rect(obj):
     if obj["object_type"] != "rect":
         return True
-    if isinstance(obj["non_stroking_color"], int):
+    if isinstance(obj["non_stroking_color"], int) or isinstance(obj["non_stroking_color"], float):
         return obj["non_stroking_color"] < 0.9
     return not (min(obj["non_stroking_color"]) > 0.9)
 
 
 def parse_hansard(hansard_date):
+    print(f"Parsing {hansard_date}")
     year = hansard_date[-4:]
     bold = []
     italics = []

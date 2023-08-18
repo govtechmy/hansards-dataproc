@@ -23,18 +23,18 @@ filenames += get_filenames_in_folder("src_hansard/2018")
 hansard_dates = [x[3:3 + 8] for x in filenames]
 
 # for preprocessing
-# with open("hansards_with_tables.txt", "w") as f:
-#     f.write("")
-# for hansard_date in tqdm(hansard_dates):
-#     parse_pdf.parse_hansard(hansard_date)
+with open("hansards_with_tables.txt", "w") as f:
+    f.write("")
+for hansard_date in tqdm(hansard_dates):
+    parse_pdf.parse_hansard(hansard_date)
 
 # for pre-tabulation
-# with open("matched_tables.txt", "w") as f:
-#     f.write("")
-# for hansard_date in tqdm(hansard_dates):
-#     pretabulation_processing.preprocess(hansard_date)
-# 
-# edit_hansards.edit_hansards()
+with open("matched_tables.txt", "w") as f:
+    f.write("")
+for hansard_date in tqdm(hansard_dates):
+    pretabulation_processing.preprocess(hansard_date)
+
+edit_hansards.edit_hansards()
 
 # for tabulation
 with open("category_scores.csv", "w") as f:
