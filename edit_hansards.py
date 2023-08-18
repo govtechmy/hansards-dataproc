@@ -191,6 +191,11 @@ def edit_hansards():
             'pembangkang.\nTimbalan Yang di-Pertua [Dato’ Mohd Rashid Hasnon]: Silakan\n',
             '000000000000\n11111111 1111 111111111 111111 1111 111111 11111111 0000000\n',
             'none')
+    replace('15122021',
+            '9. Datuk Zakaria bin Mohd. Edris @ Tubau [Libaran] mintra Menteri\n',
+            '9. Datuk Zakaria bin Mohd. Edris @ Tubau [Libaran] minta Menteri\n',
+            '11 11111 1111111 111 11111 11111 1 11111 111111111 00000 0000000\n',
+            'none')
 
 
 if __name__ == "__main__":
