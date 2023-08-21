@@ -193,7 +193,7 @@ def preprocess(hansard_date):
         # due to the nature of parsing the layout, sometimes single spaces are parsed as double
         # to reduce inconsistencies, we replace all double spaces with single spaces
         # unless it is a table
-        if text[row_id] != '' and text[row_id][0] != '|':
+        while '  ' in text[row_id] and text[row_id] != '' and text[row_id][0] != '|':
             text[row_id] = text[row_id].replace('  ', ' ')
             bold[row_id] = bold[row_id].replace('  ', ' ')
             italics[row_id] = italics[row_id].replace('  ', ' ')

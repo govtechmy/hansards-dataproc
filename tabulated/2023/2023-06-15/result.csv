@@ -1,5 +1,5 @@
 level_1,level_2,level_3,timestamp,author,speech
-,,,10.00 pagi,ANNOTATIONS,"[Timbalan Yang di-Pertua (Dato’ Ramli bin Dato’ Mohd Nor)
+,,,10.00 pagi,ANNOTATION,"[Timbalan Yang di-Pertua (Dato’ Ramli bin Dato’ Mohd Nor)
 mempengerusikan Mesyuarat]"
 WAKTU PERTANYAAN-PERTANYAAN MENTERI,1.,,10.00 pagi,Dato' Azman bin Nasrudin [Padang Serai],"minta  Menteri Perladangan dan
 Komoditi menyatakan bantuan segera yang dilaksanakan oleh kementerian dalam
@@ -227,8 +227,8 @@ Berhormat Lumut. Yang Berhormat Lumut, saya difahamkan Yang Berhormat ada
 pelawat, ingin menyambut mereka. Silakan, seminit."
 WAKTU PERTANYAAN-PERTANYAAN MENTERI,1.,,■1020,Komander Nordin bin Ahmad Ismail TLDM (B) [Lumut],"Saya hendak
 maklumkan Persatuan Veteran ATM dari cawangan Pangkor, Parlimen Lumut ada
-dalam Dewan seramai empat orang. Sila bangun. Bangun, bangun. Bagi hormat.
-[Tepuk]"
+dalam Dewan seramai empat orang. Sila bangun. Bangun, bangun. Bagi hormat."
+WAKTU PERTANYAAN-PERTANYAAN MENTERI,1.,,■1020,ANNOTATION,[Tepuk]
 WAKTU PERTANYAAN-PERTANYAAN MENTERI,1.,,■1020,Timbalan Yang di-Pertua [Dato’ Ramli bin Dato' Mohd Nor],Terima kasih.
 WAKTU PERTANYAAN-PERTANYAAN MENTERI,1.,,■1020,Komander Nordin bin Ahmad Ismail TLDM (B) [Lumut],"Terima kasih
 Tuan Yang di-Pertua."
@@ -262,7 +262,9 @@ dan kita boleh bangunkan maklumat jenis-jenis game online gambling ini, platform
 yang mereka gunakan, operators mereka, mastermind di sebaliknya.
 Kita juga tahu bagaimana trend online gambling ini, websitenya,
 operatorsnya. Sedang saya jawab ini Tuan Yang di-Pertua, aktiviti ini sedang
-berlangsung. Ini contoh. [Menunjukkan pangkalan data menggunakan tablet]. Lebih
+berlangsung. Ini contoh."
+WAKTU PERTANYAAN-PERTANYAAN MENTERI,2.,,■1020,ANNOTATION,[Menunjukkan pangkalan data menggunakan tablet]
+WAKTU PERTANYAAN-PERTANYAAN MENTERI,2.,,■1020,Menteri Dalam Negeri [Datuk Seri Saifuddin Nasution bin Ismail],". Lebih
 100 laman web. Cuma kita ini orang baik, kita tidak masuklah. Ini satu minggu kalau
 ekor dia sahaja, judi ekor. Dia banyak jenis ya, ekor sahaja. Itu 200,000,000
 anggaran seminggu. Ingat senang ke? Saya boleh baca sini ya. Senang sahaja. Ia
@@ -403,9 +405,12 @@ menyambut tetamu anda."
 WAKTU PERTANYAAN-PERTANYAAN MENTERI,2.,,■1030,Tuan Sanisvara Nethaji Rayer a/l Rajaji [Jelutong],"Terima kasih Tuan
 Yang di-Pertua yang tegas dan budiman. Saya ingin mengambil kesempatan untuk
 mengucapkan selamat datang kepada pelawat-pelawat dari kawasan Parlimen saya
-di Jelutong. Terima kasih. [Tepuk] Yang terdiri daripada ADUN Batu Lanchang, Yang
+di Jelutong. Terima kasih."
+WAKTU PERTANYAAN-PERTANYAAN MENTERI,2.,,■1030,ANNOTATION,[Tepuk]
+WAKTU PERTANYAAN-PERTANYAAN MENTERI,2.,,■1030,Tuan Sanisvara Nethaji Rayer a/l Rajaji [Jelutong],"Yang terdiri daripada ADUN Batu Lanchang, Yang
 Berhormat Eh Ti Ong dan Yang Berhormat Lim Su Kim dari Sungai Pinang. Terima
-kasih. [Tepuk]"
+kasih."
+WAKTU PERTANYAAN-PERTANYAAN MENTERI,2.,,■1030,ANNOTATION,[Tepuk]
 WAKTU PERTANYAAN-PERTANYAAN MENTERI,2.,,■1030,Timbalan Yang di-Pertua [Dato' Ramli bin Dato' Mohd Nor],"Terima kasih
 Yang Berhormat Jelutong. Kita terus ke soalan berikutnya. Dipersilakan Puan
 Isnaraissah Munirah binti Majilis @ Fakharudy, Yang Berhormat Kota Belud."
@@ -556,15 +561,15 @@ masa tidak berapa lama lagi, insya-Allah."
 WAKTU PERTANYAAN-PERTANYAAN MENTERI,3.,,■1050,Timbalan Yang di-Pertua [Dato' Ramli bin Dato' Mohd Nor],"Yang
 Berhormat, sekarang tamatlah sesi untuk Waktu Pertanyaan-pertanyaan Menteri
 pada hari ini, terima kasih Yang Berhormat."
-WAKTU PERTANYAAN-PERTANYAAN MENTERI,3.,,■1050,ANNOTATIONS,[Sesi Waktu Pertanyaan-pertanyaan Menteri tamat ]
+WAKTU PERTANYAAN-PERTANYAAN MENTERI,3.,,■1050,ANNOTATION,[Sesi Waktu Pertanyaan-pertanyaan Menteri tamat ]
 PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1050,Timbalan Yang di-Pertua [Dato' Ramli bin Dato' Mohd Nor],"Kita mulakan
 sesi Pertanyaan-pertanyaan Bagi Jawab Lisan dengan mempersilakan Tuan Yusuf
 bin Abd Wahab. Yang Berhormat Tanjong Manis."
 PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1050,Tuan Yusuf bin Abd Wahab [Tanjong Manis],"Terima kasih Tuan Yang di-
 Pertua, Tuan Yusuf bin Abd Wahab.
 Selamat Gawai Gayu Guru,
-Soalan Tanjong Manis nombor satu.
-[Dewan tepuk]"
+Soalan Tanjong Manis nombor satu."
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1050,ANNOTATION,[Dewan tepuk]
 PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1.,,■1050,Tuan Yusuf bin Abd Wahab [Tanjong Manis],"minta  Menteri Kerja Raya
 menyatakan apakah status terkini projek Lebuh Raya Pan Borneo di Sarawak.
 Apakah kerja-kerja penyenggaraan selepas tamat pembinaan akan diswastakan dan
@@ -696,7 +701,9 @@ PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1.,,■1100,Timbalan Yang di-Pertua [Dato
 Duduk."
 PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1.,,■1100,Tuan Mohd Sany bin Hamzan [Hulu Langat],Amaran kali ketiga.
 PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1.,,■1100,Timbalan Yang di-Pertua [Dato’ Ramli bin Dato’ Mohd Nor],"Cukup.
-Duduk... [Ketawa] Silakan soalan nombor 2, Yang Berhormat Padang Terap, Tuan
+Duduk..."
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1.,,■1100,ANNOTATION,[Ketawa]
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1.,,■1100,Timbalan Yang di-Pertua [Dato’ Ramli bin Dato’ Mohd Nor],"Silakan soalan nombor 2, Yang Berhormat Padang Terap, Tuan
 Nurul Amin bin Hamid."
 PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,2.,,■1100,Tuan Nurul Amin bin Hamid [Padang Terap],"minta  Menteri Pertanian dan
 Keterjaminan Makanan menyatakan, langkah-langkah yang telah dan sedang
@@ -1295,7 +1302,7 @@ PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,6.,,■1140,Tuan Rushdan bin Rusmi [Padan
 menyatakan langkah-langkah kawalan yang telah, sedang dan akan diambil bagi
 memastikan ekonomi gig mampu memberikan kemampanan ekonomi dalam
 kehidupan sekarang."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,6.,,■1140,Timbalan Menteri Sumber Manusia [Tuan Mustapha @ Mohd Yunus bin Sakmud],"Terima kasih Tuan Yang di-Pertua.  Bismillahi Rahmani Rahim,
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,6.,,■1140,Timbalan Menteri Sumber Manusia [Tuan Mustapha @ Mohd Yunus bin Sakmud],"Terima kasih Tuan Yang di-Pertua. Bismillahi Rahmani Rahim,
 Assalamualaikum warahmatullahi wabarakatuh dan salam Malaysia Madani. Terima
 kasih kepada persoalan yang ditimbulkan oleh Yang Berhormat Padang Besar atas
 keprihatinan beliau tentang nasib pekerja gig di negara ini.
@@ -1330,7 +1337,7 @@ memuktamadkan garis panduan pekerja gig p-hailing 2023. Garis panduan ini
 dirangka bertujuan untuk mengharmonikan hubungan syarikat penyedia platform dan
 pekerja gig. Ini juga sebagai satu langkah sementara, dengan izin, entry measure
 yang bersesuaian untuk mengawal selia aktiviti pekerjaan gig sebelum mewujudkan
-satu dasar atau akta berkaitan yang bersesuaian.  Memandangkan pasaran
+satu dasar atau akta berkaitan yang bersesuaian. Memandangkan pasaran
 pekerjaan ini pesat berkembang, dan sentiasa berubah-ubah sifatnya. Sekian,
 terima kasih."
 PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,6.,,■1150,Timbalan Yang di-Pertua [Dato’ Ramli bin Dato’ Mohd Nor],"Yang
@@ -1381,10 +1388,11 @@ Terakhir Tuan Yang di-Pertua, hendak buat akta ini Yang Berhormat
 Timbalan Menteri lama lagi kerana apa, ini sudah perbincangan hampir dua ke-tiga
 tahun, sejak tiga tahun kebelakangan ini. Kenapa kita tidak pinda sahaja definisi
 kerja dalam Undang-undang Buruh supaya memasukkan elemen pekerja gig, dan
-apa dasar kementerian berkaitan perkara ini.  Hendak buat akta lama, Yang
+apa dasar kementerian berkaitan perkara ini. Hendak buat akta lama, Yang
 Berhormat Timbalan Menteri, jadi pinda sedikit sahaja, dan bawalah ke Dewan ini.
 Saya yakin Ahli-ahli Dewan akan bersetuju kerana ia memberi peluang yang besar
-kepada anak-anak muda. Terima kasih, Tuan Yang di-Pertua... [Tepuk]"
+kepada anak-anak muda. Terima kasih, Tuan Yang di-Pertua..."
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,6.,,■1150,ANNOTATION,[Tepuk]
 PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,6.,,■1150,Timbalan Yang di-Pertua [Dato’ Ramli bin Dato’ Mohd Nor],"Yang
 Berhormat Timbalan Menteri."
 PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,6.,,■1150,Tuan Mustapha @ Mohd Yunus bin Sakmud,"Terima kasih, Yang
@@ -1411,7 +1419,7 @@ PDRM untuk meluluskan lesen menjual bunga api; dan
 (b) jumlah orang yang dijatuhkan hukuman kerana menjual bunga
 api dan mercun secara haram atau tidak mematuhi Explosive
 Rules 1923, ataupun Akta Letupan 1957."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,7.,,■1150,Timbalan Menteri Dalam Negeri [Datuk Seri Dr. Shamsul Anuar bin Nasarah],"Bismillahi Rahmani Rahim.  Assalamualaikum warahmatullahi
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,7.,,■1150,Timbalan Menteri Dalam Negeri [Datuk Seri Dr. Shamsul Anuar bin Nasarah],"Bismillahi Rahmani Rahim. Assalamualaikum warahmatullahi
 wabarakatuh dan salam sejahtera. Terima kasih, Tuan Yang di-Pertua.
 Terima kasih sahabat saya Yang Berhormat Gopeng. Untuk makluman Ahli
 Yang Berhormat, syarat-syarat yang dikenakan oleh PDRM bagi kelulusan lesen
@@ -1458,9 +1466,9 @@ dan bunga api ini, ia tertakluk antaranya di bawah Akta Bahan Letupan 1957 dan
 Akta 357. Memang semua aktiviti pembakaran bunga api dan mercun mesti mengikut
 peraturan-peraturan yang ditetapkan dan ketika ini kita hanya benarkan pada musim
 perayaan tertentu sahaja atau acara-acara yang dibenarkan."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,7.,,■1200,ANNOTATIONS,"[Timbalan Yang di-Pertua (Puan Alice Lau Kiong Yieng) mempengerusikan
-Mesyuarat]
-Mana-mana pihak yang melanggar peraturan-peraturan yang ditetapkan, kita
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,7.,,■1200,ANNOTATION,"[Timbalan Yang di-Pertua (Puan Alice Lau Kiong Yieng) mempengerusikan
+Mesyuarat]"
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,7.,,■1200,Datuk Seri Dr. Shamsul Anuar bin Nasarah,"Mana-mana pihak yang melanggar peraturan-peraturan yang ditetapkan, kita
 akan ambil tindakan. Malah, pihak-pihak yang mahu terlibat dengan industri ini mesti
 mematuhi syarat-syarat tertentu. Misalnya kalau di negara ini tidak ada syarikat yang
 buat bunga api setakat hari tetapi ada dua puluh tujuh syarikat yang hanya
@@ -1468,8 +1476,10 @@ dibenarkan mengimport. Itu pun mengimport terhad kepada 45 jenis bunga api, jeni
 ‘happy boom’ termasuk ‘pop pop’ yang dibenarkan daripada negara China sahaja.
 Maknanya kawalan yang kita buat memang ketat untuk menjaga keselamatan.
 Terima kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,7.,,■1200,Tuan Zakri bin Hassan [Kangar],[Bangun]
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,7.,,■1200,Tuan Kamal bin Ashaari [Kuala Krau],[Bangun]
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,7.,,■1200,Tuan Zakri bin Hassan [Kangar],
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,7.,,■1200,ANNOTATION,[Bangun]
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,7.,,■1200,Tuan Kamal bin Ashaari [Kuala Krau],
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,7.,,■1200,ANNOTATION,[Bangun]
 PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,7.,,■1200,Timbalan Yang di-Pertua [Puan Alice Lau Kiong Yieng],"Yang Berhormat
 Kangar."
 PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,7.,,■1200,Tuan Zakri bin Hassan [Kangar],"Terima kasih Tuan Yang di-Pertua.
@@ -1673,7 +1683,7 @@ untuk berdepan dengan kesan perubahan iklim."
 PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,9.,,■1210,Timbalan Yang di-Pertua [Puan Alice Lau Kiong Yieng],"Yang Berhormat,
 sekarang tamatlah sesi untuk waktu pertanyaan-pertanyaan bagi jawab lisan pada
 hari ini. Terima kasih Yang Berhormat."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,9.,,■1210,ANNOTATIONS,[Sesi untuk Pertanyaan-pertanyaan bagi Jawab Lisan tamat]
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,9.,,■1210,ANNOTATION,[Sesi untuk Pertanyaan-pertanyaan bagi Jawab Lisan tamat]
 USUL,"WAKTU MESYUARAT DAN URUSAN DIBEBASKAN
 DARIPADA PERATURAN MESYUARAT",,12.18 tgh.,"Timbalan Menteri di Jabatan Perdana Menteri (Hal Ehwal Sabah, Sarawak dan Tugas-tugas Khas) [Datuk Ugak anak Kumbong]","Tuan Yang di-
 Pertua:
@@ -1692,8 +1702,9 @@ USUL,"WAKTU MESYUARAT DAN URUSAN DIBEBASKAN
 DARIPADA PERATURAN MESYUARAT",,12.18 tgh.,Timbalan Yang di-Pertua [Puan Alice Lau Kiong Yieng],"Ahli-ahli Yang
 Berhormat, sekarang saya kemukakan masalah kepada Majlis untuk diputuskan.
 Masalahnya ialah bahawa usul seperti yang dikemukakan tadi hendaklah
-disetujukan.
-[Usul dikemuka bagi diputuskan; dan disetujukan]"
+disetujukan."
+USUL,"WAKTU MESYUARAT DAN URUSAN DIBEBASKAN
+DARIPADA PERATURAN MESYUARAT",,12.18 tgh.,ANNOTATION,[Usul dikemuka bagi diputuskan; dan disetujukan]
 USUL PERKARA TERTENTU BERKENAAN KEPENTINGAN ORANG RAMAI YANG BERKEHENDAK DISEGERAKAN DI BAWAH P.M. 18(1),KECICIRAN PELAJAR SIJIL PELAJARAN MALAYSIA (SPM),,12.19 tgh.,Dato' Seri Dr. Shahidan bin Kassim [Arau],"Diam, sebab ini Setiausaha
 jemput saya. Ini kehebatan yang luar biasa ya."
 USUL PERKARA TERTENTU BERKENAAN KEPENTINGAN ORANG RAMAI YANG BERKEHENDAK DISEGERAKAN DI BAWAH P.M. 18(1),KECICIRAN PELAJAR SIJIL PELAJARAN MALAYSIA (SPM),,■1220,Dato' Seri Dr. Shahidan bin Kassim [Arau],"Tuan Yang di-Pertua, saya mohon supaya dirundingkan di bawah Peraturan
@@ -1709,7 +1720,7 @@ berbanding dengan 10,681 orang pelajar yang tidak hadir pada tahun 2021.
 Peningkatan ini adalah amat membimbangkan kerana pelajar adalah
 generasi pewaris kepimpinan bangsa dan negara. Kebanyakan pelajar lepasan SPM
 lebih memilih untuk melibatkan diri dalam pekerjaan sektor perkilangan dan
-perkhidmatan penghantaran makanan atau barangan.  Terdapat juga segelintir
+perkhidmatan penghantaran makanan atau barangan. Terdapat juga segelintir
 pelajar lepasan SPM yang memilih untuk tidak menyambung pengajian lebih tinggi
 mahupun bekerja hingga menjerumuskan diri kepada masalah sosial. Sebagai
 contoh, Bahagian Siasatan dan Penguatkuasaan Trafik Batu Pahat baru-baru ini
@@ -1729,12 +1740,13 @@ awal dapat dilaksanakan oleh kerajaan. Oleh yang demikian, saya merasakan Usul
 ini perlu disegerakan untuk dibincangkan. Ini kerana melibatkan perkara tertentu
 iaitu trend peningkatan pelajar yang tidak hadir menduduki peperiksaan SPM dan
 tidak menyambung pengajian di peringkat lebih tinggi. Kalau kami memerintah, kami
-akan selesaikan benda ini. [Ketawa]"
+akan selesaikan benda ini."
+USUL PERKARA TERTENTU BERKENAAN KEPENTINGAN ORANG RAMAI YANG BERKEHENDAK DISEGERAKAN DI BAWAH P.M. 18(1),KECICIRAN PELAJAR SIJIL PELAJARAN MALAYSIA (SPM),,■1220,ANNOTATION,[Ketawa]
 USUL PERKARA TERTENTU BERKENAAN KEPENTINGAN ORANG RAMAI YANG BERKEHENDAK DISEGERAKAN DI BAWAH P.M. 18(1),KECICIRAN PELAJAR SIJIL PELAJARAN MALAYSIA (SPM),,■1220,Timbalan Yang di-Pertua [Puan Alice Lau Kiong Yieng],"Ahli-ahli Yang
 Berhormat, Tuan Yang di-Pertua telah menerima satu pemberitahu Usul di bawah
 Peraturan Mesyuarat 18(1) oleh Yang Berhormat Arau pada hari Selasa 13 Jun 2023.
 Teks Usul itu adalah seperti yang dibacakan oleh Ahli Yang Berhormat Arau
-sebentar tadi.  Bagi membolehkan perkara ini dipertimbangkan oleh Majlis
+sebentar tadi. Bagi membolehkan perkara ini dipertimbangkan oleh Majlis
 Mesyuarat, Tuan Yang di-Pertua hendaklah berpuas hati bahawa perkara yang
 dibangkitkan oleh Yang Berhormat itu memenuhi tiga syarat. Syarat yang pertama
 ialah bahawa perkara itu tertentu. Syarat yang kedua ia adalah bagi kepentingan
@@ -1793,7 +1805,8 @@ di-Pertua, saya tidak boleh duduk."
 USUL PERKARA TERTENTU BERKENAAN KEPENTINGAN ORANG RAMAI YANG BERKEHENDAK DISEGERAKAN DI BAWAH P.M. 18(1),KECICIRAN PELAJAR SIJIL PELAJARAN MALAYSIA (SPM),,■1220,"Timbalan Yang di-Pertua, [Puan Alice Lau Kiong Yieng]",Telah ditolak.
 USUL PERKARA TERTENTU BERKENAAN KEPENTINGAN ORANG RAMAI YANG BERKEHENDAK DISEGERAKAN DI BAWAH P.M. 18(1),KECICIRAN PELAJAR SIJIL PELAJARAN MALAYSIA (SPM),,■1220,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"Okey, saya bangun di bawah
 Peraturan Mesyuarat 25. Tuan Yang di-Pertua tengok Peraturan Mesyuarat 25. Saya
-boleh bangun untuk bawa usul persendirian. Ya, silakan. [Ketawa]"
+boleh bangun untuk bawa usul persendirian. Ya, silakan."
+USUL PERKARA TERTENTU BERKENAAN KEPENTINGAN ORANG RAMAI YANG BERKEHENDAK DISEGERAKAN DI BAWAH P.M. 18(1),KECICIRAN PELAJAR SIJIL PELAJARAN MALAYSIA (SPM),,■1220,ANNOTATION,[Ketawa]
 USUL PERKARA TERTENTU BERKENAAN KEPENTINGAN ORANG RAMAI YANG BERKEHENDAK DISEGERAKAN DI BAWAH P.M. 18(1),KECICIRAN PELAJAR SIJIL PELAJARAN MALAYSIA (SPM),,■1220,"Timbalan Yang di-Pertua, [Puan Alice Lau Kiong Yieng]","Yang Berhormat
 Arau, saya rujuk kepada Peraturan Mesyuarat 43, keputusan Pengerusi adalah
 muktamad. Okey, itu sahaja."
@@ -1834,7 +1847,9 @@ USUL PERKARA TERTENTU BERKENAAN KEPENTINGAN ORANG RAMAI YANG BERKEHENDAK DISEGER
 bangun Peraturan Mesyuarat 25."
 USUL PERKARA TERTENTU BERKENAAN KEPENTINGAN ORANG RAMAI YANG BERKEHENDAK DISEGERAKAN DI BAWAH P.M. 18(1),KECICIRAN PELAJAR SIJIL PELAJARAN MALAYSIA (SPM),,■1220,"Timbalan Yang di-Pertua, [Puan Alice Lau Kiong Yieng]","Sila baca apa
 lagi?"
-USUL PERKARA TERTENTU BERKENAAN KEPENTINGAN ORANG RAMAI YANG BERKEHENDAK DISEGERAKAN DI BAWAH P.M. 18(1),KECICIRAN PELAJAR SIJIL PELAJARAN MALAYSIA (SPM),,■1220,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"Dia ini... [Ketawa] Tuan Yang
+USUL PERKARA TERTENTU BERKENAAN KEPENTINGAN ORANG RAMAI YANG BERKEHENDAK DISEGERAKAN DI BAWAH P.M. 18(1),KECICIRAN PELAJAR SIJIL PELAJARAN MALAYSIA (SPM),,■1220,Dato’ Seri Dr. Shahidan bin Kassim [Arau],Dia ini...
+USUL PERKARA TERTENTU BERKENAAN KEPENTINGAN ORANG RAMAI YANG BERKEHENDAK DISEGERAKAN DI BAWAH P.M. 18(1),KECICIRAN PELAJAR SIJIL PELAJARAN MALAYSIA (SPM),,■1220,ANNOTATION,[Ketawa]
+USUL PERKARA TERTENTU BERKENAAN KEPENTINGAN ORANG RAMAI YANG BERKEHENDAK DISEGERAKAN DI BAWAH P.M. 18(1),KECICIRAN PELAJAR SIJIL PELAJARAN MALAYSIA (SPM),,■1220,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"Tuan Yang
 di-Pertua sebut apa lagi, sedih saya. “Dengan izin Tuan Yang di-Pertua, sekurang-
 kurangnya dua jam sebelum mesyuarat dimulakan seorang Ahli bolehlah
 mengeluarkan penerangan sendiri pada waktu yang ditetapkan menurut Peraturan
@@ -1880,7 +1895,8 @@ USUL PERKARA TERTENTU BERKENAAN KEPENTINGAN ORANG RAMAI YANG BERKEHENDAK DISEGER
 datang dulu."
 USUL PERKARA TERTENTU BERKENAAN KEPENTINGAN ORANG RAMAI YANG BERKEHENDAK DISEGERAKAN DI BAWAH P.M. 18(1),KECICIRAN PELAJAR SIJIL PELAJARAN MALAYSIA (SPM),,■1220,Tuan Wan Ahmad Fayhsal bin Wan Ahmad Kamal [Machang],"Okey, dia
 masuk nanti saya akan tanya dia balik ya? Okey."
-USUL PERKARA TERTENTU BERKENAAN KEPENTINGAN ORANG RAMAI YANG BERKEHENDAK DISEGERAKAN DI BAWAH P.M. 18(1),KECICIRAN PELAJAR SIJIL PELAJARAN MALAYSIA (SPM),,■1220,Seorang Ahli,[Bercakap tanpa menggunakan pembesar suara]
+USUL PERKARA TERTENTU BERKENAAN KEPENTINGAN ORANG RAMAI YANG BERKEHENDAK DISEGERAKAN DI BAWAH P.M. 18(1),KECICIRAN PELAJAR SIJIL PELAJARAN MALAYSIA (SPM),,■1220,Seorang Ahli,
+USUL PERKARA TERTENTU BERKENAAN KEPENTINGAN ORANG RAMAI YANG BERKEHENDAK DISEGERAKAN DI BAWAH P.M. 18(1),KECICIRAN PELAJAR SIJIL PELAJARAN MALAYSIA (SPM),,■1220,ANNOTATION,[Bercakap tanpa menggunakan pembesar suara]
 USUL PERKARA TERTENTU BERKENAAN KEPENTINGAN ORANG RAMAI YANG BERKEHENDAK DISEGERAKAN DI BAWAH P.M. 18(1),KECICIRAN PELAJAR SIJIL PELAJARAN MALAYSIA (SPM),,■1220,Tuan Wan Ahmad Fayhsal bin Wan Ahmad Kamal [Machang],"Okay, all
 right."
 USUL PERKARA TERTENTU BERKENAAN KEPENTINGAN ORANG RAMAI YANG BERKEHENDAK DISEGERAKAN DI BAWAH P.M. 18(1),KECICIRAN PELAJAR SIJIL PELAJARAN MALAYSIA (SPM),,■1220,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"Tuan Yang di-Pertua, Peraturan
@@ -1899,8 +1915,9 @@ rasa terganggu dengan perbuatannya. Saya nak rujuk dia kepada Jawatankuasa
 Hak dan Kebebasan supaya dia dibicarakan. Terima kasih"
 RANG UNDANG-UNDANG DIBAWA KE DALAM MESYUARAT,"RANG UNDANG-UNDANG MAKANAN (PINDAAN) 2023
 Bacaan Kali Yang Pertama",,■1230,Timbalan Yang di-Pertua [Puan Alice Lau Kiong Yieng],"Yang Berhormat
-Arau pun banyak ganggu Dewan.
-[Tepuk]"
+Arau pun banyak ganggu Dewan."
+RANG UNDANG-UNDANG DIBAWA KE DALAM MESYUARAT,"RANG UNDANG-UNDANG MAKANAN (PINDAAN) 2023
+Bacaan Kali Yang Pertama",,■1230,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG DIBAWA KE DALAM MESYUARAT,"RANG UNDANG-UNDANG MAKANAN (PINDAAN) 2023
 Bacaan Kali Yang Pertama",,■1230,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"Tuan Yang di-Pertua, Tuan
 Yang di-Pertua tengok mana saya ganggu Ahli Yang Berhormat berucap? Pasal dia
@@ -1920,7 +1937,9 @@ USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,12.30 tgh.,Men
 sebelum saya memulakan Usul, saya ingin mengambil kesempatan ini untuk
 mengucapkan terima kasih dan selamat datang kepada rakan-rakan saya tadi dan
 sukarelawan dan juga ahli komuniti daripada Pejabat Parlimen Sekijang Tuan Yang
-di-Pertua. [Disampuk] Ya, mereka dah keluar sebentar tadi.
+di-Pertua."
+USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,12.30 tgh.,ANNOTATION,[Disampuk]
+USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,12.30 tgh.,Menteri Kesihatan [Dr. Zaliha binti Mustafa],"Ya, mereka dah keluar sebentar tadi.
 Bismillahi Rahmani Rahim. Assalamualaikum warahmatullahi wabarakatuh.
 Salam sejahtera dan salam Malaysia Madani. Tuan Yang di-Pertua, dengan
 sukacitanya, saya berdiri di Dewan yang mulia ini untuk mengemukakan satu Usul
@@ -2365,8 +2384,10 @@ reform yang diperlukan, dan reform yang diperlukan itu membawa beberapa
 pendekatan ataupun ia akan terkait dan melibatkan beberapa pendekatan
 mekanisme, dan antara lainnya MOF, KKM menjadi strategic purchaser.
 Untuk MOF menjadi strategic purchaser dan fasiliti-fasiliti itu menjadi
-autonomous seperti mana yang disebutkan di dalam ini... [Merujuk kepada Kertas
-Putih] Saya yakin ramai yang kurang faham dari sudut itu tetapi saya ingin tekankan
+autonomous seperti mana yang disebutkan di dalam ini..."
+USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,■1300,ANNOTATION,"[Merujuk kepada Kertas
+Putih]"
+USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,■1300,Datuk Seri Dr. Haji Dzulkefly bin Ahmad [Kuala Selangor],"Saya yakin ramai yang kurang faham dari sudut itu tetapi saya ingin tekankan
 bahawa, to perform that kita mesti ada satu pendekatan pembiayaan yang sifatnya-
 pendekatan kewangan yang di pool dan prepaid. Kita berbelanja secara tidak efisien
 Tuan Yang di-Pertua.
@@ -2605,7 +2626,9 @@ ingin menekankan dalam prinsip kertas putih ini memang adalah, agar proses ini
 secara beransur-ansur dan universal healthcare coverage adalah prinsip yang kita
 tegakkan. Maka orang miskin akan sentiasa dilindungi.
 Keempat, health in all policies. Ini kita perlu menangani kemiskinan sebagai
-penentu [Tidak jelas] pada kesihatan. Kita kena menyediakan pendidikan berkualiti,
+penentu"
+USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,1.21 tgh.,ANNOTATION,[Tidak jelas]
+USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,1.21 tgh.,Dr. Kelvin Yii Lee Wuen [Bandar Kuching],"pada kesihatan. Kita kena menyediakan pendidikan berkualiti,
 akses saksama untuk perkhidmatan semua, melindungi alam sekitar, melawan dan
 membaik pulih perubahan iklim, memastikan keselamatan makanan, merancang
 untuk pembangunan yang lebih hijau, ruang yang lebih selamat, bandar yang lebih
@@ -2691,7 +2714,7 @@ juga di entiti-entiti kesihatan kita yang saya dimaklumkan sebahagian besarnya
 sudah lapuk dan tidak boleh digunakan. Malah menyusahkan kepada penjawat-
 penjawat awam kita untuk menyampaikan perkhidmatan dengan baik.
 Perkara yang kedua yang saya hendak sebutkan adalah berkaitan dengan fi
-yang akan dikaji semula.  Cuma saya mengharapkan supaya akhirnya nanti
+yang akan dikaji semula. Cuma saya mengharapkan supaya akhirnya nanti
 golongan rentan, B40 yang kurang pendapatan ini tidak akan dikesampingkan. Tidak
 apalah apa pun kaedahnya, sama ada mungkin kita akan come out dengan satu
 insurans kesihatan nasional dan sebagainya, tetapi ini harus difikirkan bagaimana
@@ -2759,13 +2782,14 @@ waktunya. Malah saya harap bahawa kertas putih ini akan terus hidup dan perlu
 berjalan terus dalam tempoh 15 tahun.
 Saya melihat bahawa sektor kesihatan awam ini sebenarnya merupakan satu
 elemen penting dalam masyarakat bahkan dalam negara. Al-quran mengangkat
-prinsip ini dengan menyebut dalam sebahagian daripada Surah Al-Maidah, ayat 32.
-[Membaca sepotong ayat al-quran], “Dan barang siapa yang memelihara kehidupan
+prinsip ini dengan menyebut dalam sebahagian daripada Surah Al-Maidah, ayat 32."
+USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,1.35 tgh.,ANNOTATION,[Membaca sepotong ayat al-quran]
+USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,1.35 tgh.,Tuan Syed Ibrahim bin Syed Noh [Ledang],", “Dan barang siapa yang memelihara kehidupan
 seorang manusia maka seolah-olah dia memelihara kehidupan seluruh manusia.”
 Tuan Yang di-Pertua, berkenaan dengan penyampaian perkhidmatan
 kesihatan kita sedar bahawa untuk kita hendak mencapai satu negara sihat dan
 sistem kesihatan yang saksama, berdaya tahan ia mestilah bermula dengan sistem
-perkhidmatan yang cekap dan kukuh.  Maknanya kalau datang ribut, wabak
+perkhidmatan yang cekap dan kukuh. Maknanya kalau datang ribut, wabak
 mahupun badai penuaan pun tonggaknya tetap kukuh.
 Kontradiksinya ialah sekiranya asas perkhidmatan kesihatan ini tidak terbela,
 ia akan merencatkan. Ia akan menggagalkan inisiatif kesihatan awam dan boleh
@@ -2846,8 +2870,9 @@ bangunan-bangunan hospital serta klinik-klinik yang usang, uzur dan daif. Itu be
 dikira dengan peralatan perkhidmatan kesihatan yang sudah ketinggalan zaman.
 Maka dengan itu, besarlah harapan Tanjong Karang agar Kertas Putih Kesihatan ini
 dapat membangunkan satu dasar kesihatan negara yang lebih komprehensif,
-inklusif, mampan dan berdaya tahan. [Tepuk]
-Iltizam kertas putih Dasar Kesihatan Negara mestilah menjurus kepada
+inklusif, mampan dan berdaya tahan."
+USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,1.41 tgh.,ANNOTATION,[Tepuk]
+USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,1.41 tgh.,Dato' Dr. Zulkafperi bin Hanapi [Tanjong Karang],"Iltizam kertas putih Dasar Kesihatan Negara mestilah menjurus kepada
 membangunkan sebuah negara bangsa yang terdiri daripada individu, keluarga dan
 masyarakat yang sihat melalui satu sistem kesihatan yang adil, mampu
 pembiayaan– Saya ulang, mampu pembiayaan, cekap dan berteknologi tinggi. Satu
@@ -2914,7 +2939,8 @@ konsep dasar kesihatan negara bersama akta pembiayaan kesihatan bagi
 menyediakan pelan kesihatan rakyat yang kompetitif, inklusif, mampan dan lestari.
 Oleh yang demikian, Tanjong Karang dengan ini menyokong penuh untuk
 mengangkat dan menambah baik pembangunan kertas putih Dasar Kesihatan
-Negara ini, demi kesihatan rakyat dan negara. Sekian, terima kasih. [Tepuk]"
+Negara ini, demi kesihatan rakyat dan negara. Sekian, terima kasih."
+USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,1.41 tgh.,ANNOTATION,[Tepuk]
 USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,1.41 tgh.,Timbalan Yang di-Pertua [Puan Alice Lau Kiong Yieng],"Terima kasih
 Yang Berhormat Tanjong Karang. Saya jemput Yang Berhormat Betong."
 USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,1.48 tgh.,Dr. Richard Rapu @ Aman anak Begri [Betong],"Terima kasih Tuan Yang
@@ -3071,7 +3097,7 @@ susah untuk kita akses masuk dan keluar ke hospital. Minta satu lagi pintu masuk
 Sekian, terima kasih."
 USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,■1400,Timbalan Yang di-Pertua [Puan Alice Lau Kiong Yieng],"Terima kasih
 Yang Berhormat Sabak Bernam, saya jemput Yang Berhormat Rasah."
-USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,■1400,ANNOTATIONS,"[Timbalan Yang di-Pertua (Dato' Ramli bin Dato' Mohd Nor)
+USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,■1400,ANNOTATION,"[Timbalan Yang di-Pertua (Dato' Ramli bin Dato' Mohd Nor)
 mempengerusikan Mesyuarat]"
 USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,2.01 ptg.,Tuan Cha Kee Chin [Rasah],"Terima kasih kepada Tuan Yang di-Pertua
 atas peluang yang diberikan untuk saya membahaskan kali pertama kertas putih
@@ -3154,7 +3180,7 @@ Berhormat kena bekerjasama dengan sayalah. Kita persilakan Yang Berhormat
 Kulim-Bandar Baharu."
 USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,2.07 ptg.,Tuan Roslan bin Hashim [Kulim-Bandar Baharu],"Baik, terima kasih
 kepada Tuan Yang di-Pertua kerana memberi ruang. Saya cuba berhenti untuk lima
-minit yang diberikan.  Kulim-Bandar Baharu mengucapkan tahniah kepada
+minit yang diberikan. Kulim-Bandar Baharu mengucapkan tahniah kepada
 Kementerian Kesihatan Malaysia kerana mencadangkan pembentangan kertas putih
 kesihatan untuk dibahaskan dan diperincikan untuk ditambah baik bagi memberi
 kesejahteraan kepada rakyat terutamanya rakyat di luar bandar yang masih lagi jauh
@@ -3658,7 +3684,7 @@ Saya ingin bertanya kepada Yang Berhormat Menteri berkenaan keperluan,
 persiapan urusan tele-rundingan kepada pesakit. Adakah tenaga Sumber Manusia
 perlu ditambah bagi kaedah yang dicadangkan ini dan apakah implikasi kewangan
 termasuk dalam penyediaan peralatan berkaitan telekomunikasi?
-Seterusnya,  saya merujuk kepada halaman 46 berkenaan cadangan
+Seterusnya, saya merujuk kepada halaman 46 berkenaan cadangan
 penstrukturan semula dengan memberi autonomi penyedia perkhidmatan penjagaan
 kesihatan termasuk perolehan peralatan dan fasiliti kesihatan yang diharapkan dapat
 mengurangkan birokrasi dan meningkatkan tahap efisien."
@@ -3673,9 +3699,9 @@ boleh diubah dan diberi kelonggaran? Mengambil contoh beberapa buah hospital
 yang memberi pilihan kepada kakitangan wanita untuk mengenakan pakaian yang
 lebih bersesuaian. Contohnya Hospital USM Kubang Kerian dan Pusat Perubatan
 Sultan Ahmad Shah, Kuantan. Tahniah saya ucapkan kepada kedua-dua hospital
-tersebut yang memberikan pilihan etika pakaian yang lebih baik buat pekerja...
-[Tepuk]
-Tuan Yang di-Pertua, dalam strategi tonggak keempat yang memperkukuh
+tersebut yang memberikan pilihan etika pakaian yang lebih baik buat pekerja..."
+USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,■1450,ANNOTATION,[Tepuk]
+USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,■1450,Tuan Wan Razali bin Wan Nor [Kuantan],"Tuan Yang di-Pertua, dalam strategi tonggak keempat yang memperkukuh
 urus tadbir sistem kesihatan turut dinyatakan berkenaan tindakan bagi memantapkan
 tenaga kerja seperti yang dinyatakan pada halaman 47. Antara fokus yang
 ditekankan berkaitan pendidikan dan latihan, saya ingin mendapatkan pengesahan
@@ -3692,16 +3718,17 @@ Terengganu, negeri Kedah yang telah menggunakan kuasa yang diperoleh dengan
 menoktahkan operasi kedai judi dan yang paling terkini, Perlis yang telah
 mengeluarkan notis tidak akan memperbaharui dan meluluskan lesen judi baharu.
 Kita doa dan usahakan bersama agar negeri-negeri lain juga mengambil langkah
-yang sama seperti negeri yang diperintah oleh Kerajaan Perikatan Nasional...
-[Tepuk]
-Langkah ini perlu agar ia dapat membantu Kementerian Kesihatan dalam
+yang sama seperti negeri yang diperintah oleh Kerajaan Perikatan Nasional..."
+USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,■1450,ANNOTATION,[Tepuk]
+USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,■1450,Tuan Wan Razali bin Wan Nor [Kuantan],"Langkah ini perlu agar ia dapat membantu Kementerian Kesihatan dalam
 mengurangkan jumlah pesakit mental dan juga membantu mengurangkan
 perbelanjaan kerajaan.Diharapkan kesungguhan usaha pihak Kementerian
 Kesihatan bagi mereformasikan sistem kesihatan ke arah yang lebih berdaya tahan
 dan berkebajikan dapat dicapai.
 Akhirnya, saya ingin mengucapkan ribuan terima kasih kepada seluruh warga
 kerja Kementerian Kesihatan yang sentiasa komited dalam usaha memastikan setiap
-rakyat mendapat perkhidmatan kesihatan yang terbaik. Sekian... [Tepuk]"
+rakyat mendapat perkhidmatan kesihatan yang terbaik. Sekian..."
+USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,■1450,ANNOTATION,[Tepuk]
 USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,■1450,Timbalan Yang di-Pertua [Dato’ Ramli bin Dato’ Mohd Nor],"Terima kasih
 Yang Berhormat Kuantan.
 Berikutannya dipersilakan Yang Berhormat Bentong."
@@ -3831,7 +3858,8 @@ Rahim. Assalamualaikum warahmatullahi wabarakatuh dan selamat petang. Terima
 kasih kepada Tuan Yang di-Pertua, memberi ruang untuk saya membahaskan
 Kertas Putih Kesihatan. Temerloh mengucapkan terima kasih kepada semua
 petugas kesihatan terutama frontliner yang sentiasa berhadapan dengan tugas yang
-mencabar demi kesejahteraan rakyat... [Tepuk]"
+mencabar demi kesejahteraan rakyat..."
+USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,2.59 ptg.,ANNOTATION,[Tepuk]
 USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,■1500,Puan Hajah Salamiah binti Mohd Nor [Temerloh],"Kertas Putih, saya hendak merujuk kepada tonggak pertama-
 mentraformasikan penyampaian perkhidmatan kesihatan. Temerloh ingin merujuk
 kepada permohonan Persatuan Hospital Swasta Malaysia. Presidennya Dr. Kuljit
@@ -3948,7 +3976,7 @@ USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,■1510,Timbal
 Yang Berhormat kapar, dipersilakan Yang Berhormat Jelutong."
 USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,3.11 ptg.,Tuan Sanisvara Nethaji Rayer a/l Rajaji [Jelutong],"Terima kasih Tuan
 Yang di-Pertua. Saya berterima kasih atas kesempatan yang telah diberikan untuk
-saya bersama-sama turut serta dalam perbahasan.  Saya terpanggil untuk
+saya bersama-sama turut serta dalam perbahasan. Saya terpanggil untuk
 memberikan beberapa pendapat saya dalam perbahasan ini.
 Pertama, saya menggunakan kesempatan ini untuk merakamkan ucapan
 terima kasih kepada semua pihak yang telah menyediakan Kertas Putih. Pada masa
@@ -4033,7 +4061,9 @@ USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,3.11 ptg.,Timb
 dahulu. Dengan izin, I wanted to call your name, you dah bangun dahulu. Nanti
 kejap. So, saya dera sedikit.
 Dipersilakan Yang Berhormat Batu, sekarang bangun."
-USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,3.08 ptg.,Tuan Prabakaran a/l M Parameswaran [Batu],"[Ketawa] Terima kasih Tuan
+USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,3.08 ptg.,Tuan Prabakaran a/l M Parameswaran [Batu],
+USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,3.08 ptg.,ANNOTATION,[Ketawa]
+USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,3.08 ptg.,Tuan Prabakaran a/l M Parameswaran [Batu],"Terima kasih Tuan
 Yang di-Pertua. Saya ingin mohon maaf sebab tadi saya terpaksa keluar untuk
 menghadiri press conference bersama-sama dengan Wakil-wakil Rakyat yang lain,
 dan saya terus kepada point saya.
@@ -4053,7 +4083,7 @@ membuka satu lembaran baharu ke dalam ekosistem kesihatan di mana ia mampu
 menterjemahkan sebuah sistem perkhidmatan yang lebih efisien, tepat dan berkesan.
 Batu melihat Kertas Putih Kesihatan ini harus mengambil berat isu-isu yang
 saban hari berlaku di peringkat lapangan, walau kadangkala ia hanyalah masalah-
-masalah terpencil.  Masalah keterbatasan dan kekangan dalam pentadbiran
+masalah terpencil. Masalah keterbatasan dan kekangan dalam pentadbiran
 kesihatan akan menyukarkan pengguna di mana majoriti pengguna merupakan
 rakyat biasa.
 Secara purata rakyat harus memperuntukkan sekurang-kurangnya empat jam
@@ -4076,14 +4106,14 @@ Dari sudut pentadbiran hospital, kekurangan tenaga pakar merupakan satu
 masalah yang tidak pernah ada kesudahan. Saya mengetahui secara umum di mana
 masalah ini akan diatasi secara berperingkat dengan melakukan penyerapan.
 Usaha ini harus dipuji akan tetapi bagaimana proses penyerapan akan dilakukan
-sepanjang tempoh beberapa tahun mendatang?  Apakah kriteria yang akan
+sepanjang tempoh beberapa tahun mendatang? Apakah kriteria yang akan
 digunakan dalam proses penyerapan tersebut?
 Batu juga ingin menyentuh isu pangkalan data yang menyimpan data-data
 pesakit di mana pada hari ini ia disimpan secara manual. Pada era negara serba
 maju dari sudut teknologi maklumat, bagaimana data pesakit tidak mampu diakses
-di antara jabatan.  Kadangkala dalam satu buah hospital yang sama mereka
+di antara jabatan. Kadangkala dalam satu buah hospital yang sama mereka
 memerlukan laporan pesakit di antara jabatan sehingga melibatkan satu masa yang
-lama. Ada kalanya sehingga sehari selepas diminta.  Perkara ini pastinya
+lama. Ada kalanya sehingga sehari selepas diminta. Perkara ini pastinya
 merencatkan prestasi dalam sesebuah pentadbiran dan pencapaian perkhidmatan
 kepada pengguna turut terencat kerana masalah sebegini.
 Tuan Yang di-Pertua, sebagai perkongsian data yang menyentuh urusan
@@ -4140,7 +4170,7 @@ kerajaan.
 Tuan Yang di-Pertua, menghadapi masyarakat menua ataupun ageing
 society juga meningkatkan bebanan kepada facilities dan juga anggota KKM. Oleh
 yang demikian, jumlah doktor dan kakitangan kesihatan lain wajib berada dalam
-keadaan yang optimum.  Pada masa yang sama, kecepatan perkembangan
+keadaan yang optimum. Pada masa yang sama, kecepatan perkembangan
 teknologi perubatan dan pengkhususan disiplin perubatan semakin mendalam dalam
 pelbagai subkepakaran memerlukan kepada keperluan penyediaan talent yang
 terbaik dalam negara untuk penerusan pengajian perubatan.
@@ -4162,7 +4192,7 @@ sudut tenaga pakar dan facility. Sehingga pada hari ini, Hospital Jerantut masih
 mempunyai Doktor Pakar in house yang boleh dirujuk dan bertugas sepenuh masa
 khususnya di wad kecemasan dan wad perubatan medical. Masalah di Jerantut
 bukan terpencil, ia telah dikongsi oleh Ahli Parlimen yang lain. Lebih-lebih lagi oleh
-rakan-rakan Ahli Parlimen kami di Malaysia Timur.  Pada masa yang sama,
+rakan-rakan Ahli Parlimen kami di Malaysia Timur. Pada masa yang sama,
 perkhidmatan dikotomi awam dan swasta ini sedikit sebanyak memburukkan lagi
 keadaan dari sudut kepakaran, Doktor Pakar yang tidak cukup, teknologi, hasil ujian
 makmal dan pengimejan yang tidak menyeluruh.
@@ -4227,7 +4257,8 @@ kesihatan.
 Namun demikian, perkhidmatan kesihatan yang disediakan di klinik-klinik
 kesihatan tersebut amatlah terhad di mana terdapat kekurangan kelengkapan dan
 peralatan seperti mesin X-ray, pusat dialisis dan sebagainya di kawasan tersebut..."
-USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,3.30 ptg.,Tuan Yusuf bin Abd Wahab [Tanjong Manis],[Bangun]
+USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,3.30 ptg.,Tuan Yusuf bin Abd Wahab [Tanjong Manis],
+USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,3.30 ptg.,ANNOTATION,[Bangun]
 USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,3.30 ptg.,Tuan Mohamad Shafizan Haji Kepli [Batang Lupar],"Saya mengambil
 contoh di kawasan saya di Batang Lupar. Misalnya ada penduduk yang terpaksa
 mendapatkan rawatan hemodialisis setiap seminggu di bandar dan pekan lain yang
@@ -4515,7 +4546,8 @@ USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,3.50 ptg.,Timb
 duduk. Fasal ada dua orang pembahas tarik diri. Saya akan gantikan tempat mereka
 yang tarik diri dua orang ini diambil oleh Yang Berhormat Kota Belud dan Yang
 Berhormat Jempol."
-USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,3.50 ptg.,Dato’ Haji Shamsulkahar bin Mohd Deli [Jempol],[Berdiri]
+USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,3.50 ptg.,Dato’ Haji Shamsulkahar bin Mohd Deli [Jempol],
+USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,3.50 ptg.,ANNOTATION,[Berdiri]
 USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,3.50 ptg.,Timbalan Yang di-Pertua [Dato' Ramli bin Dato' Mohd Nor],"Sebentar ya.
 Duduk dahulu. Berikutannya, dipersilakan Yang Berhormat Bakri."
 USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,3.50 ptg.,Tuan Tan Hong Pin [Bakri],Terima kasih.
@@ -4545,12 +4577,12 @@ lagi bebanan kewangan kepada mereka. Tambahan pula kemudahan penjagaan
 kesihatan primer sektor awam hanya merangkumi 28 peratus daripada jumlah
 keseluruhan kemudahan penjagaan primer. Manakala, sebanyak 72 peratus adalah
 milikan sektor swasta."
-USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,3.57 ptg.,ANNOTATIONS,"[Timbalan Yang di-Pertua (Puan Alice Lau Kiong Yieng) memepengerusikan
-Mesyuarat]
-Walau bagaimanapun, kemudahan penjagaan kesihatan primer sektor awam
+USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,3.57 ptg.,ANNOTATION,"[Timbalan Yang di-Pertua (Puan Alice Lau Kiong Yieng) memepengerusikan
+Mesyuarat]"
+USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,3.57 ptg.,Tuan Tan Hong Pin [Bakri],"Walau bagaimanapun, kemudahan penjagaan kesihatan primer sektor awam
 perlu menampung sebanyak 64 peratus daripada keseluruhan pesakit. Sementara
 36 peratus pesakit memilih untuk mendapatkan rawatan di sektor swasta."
-USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,■1600,ANNOTATIONS,"Ini jelas menunjukkan bahawa beban yang ditanggung oleh sektor kesihatan
+USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,■1600,Tuan Tan Hong Pin [Bakri],"Ini jelas menunjukkan bahawa beban yang ditanggung oleh sektor kesihatan
 awam dan kemudahan penjagaan kesihatan primer perlu dirancang mengikut
 pertambahan populasi setempat. Oleh sebab itu, selain pembinaan klinik kesihatan
 awam atau menaik taraf klinik kesihatan sekarang, kerjasama yang erat antara sektor
@@ -4796,7 +4828,9 @@ USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,4.19 ptg.,Tuan
 Yang di-Pertua. Bismillahi Rahmani Rahim. Terima kasih kerana memberi ruang
 kepada saya untuk mengambil kesempatan dalam perbahasan Kertas Putih
 Kesihatan.
-Saya mulakan dengan sabda Nabi SAW. [Membaca sepotong Hadis] “Dua
+Saya mulakan dengan sabda Nabi SAW."
+USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,4.19 ptg.,ANNOTATION,[Membaca sepotong Hadis]
+USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,4.19 ptg.,Tuan Abdul Latiff bin Abdul Rahman [Kuala Krai],"“Dua
 kenikmatan yang sering dilupakan oleh kebanyakan manusia adalah kesihatan dan
 waktu yang lapang”."
 USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,■1620,Tuan Abdul Latiff bin Abdul Rahman [Kuala Krai],"Tuan Yang di-Pertua, sistem kesihatan Malaysia menghadapi cabaran yang
@@ -5220,7 +5254,7 @@ USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,■1650,Datuk 
 Pertua. Terima kasih kepada Yang Berhormat Menteri. Yang Berhormat Menteri,
 saya hendak bangkitkan berkenaan dengan Hospital Pendang masih lagi tidak
 mencukupi pakar-pakar dan terpaksa bila ada penyakit-penyakit yang kritikal, kita
-kena minta dari Hospital besar Sultanah Bahiyah.  Jadi saya minta Yang
+kena minta dari Hospital besar Sultanah Bahiyah. Jadi saya minta Yang
 Berhormat Menteri beri perhatian untuk penuhkan permintaan di Pendang ini."
 USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,■1650,Dr. Zaliha binti Mustafa,"Insya-Allah, Yang Berhormat Pendang.
 Memang kita sedang membuat pemetaan tentang keperluan-keperluan petugas
@@ -5239,7 +5273,7 @@ Berhormat ada lihat kenyataan media saya, saya ada menjawab sebenarnya
 tetapi kalau hendak nanti saya jawab secara bertulis juga boleh. Terima kasih.
 Mengenai pemantauan reformasi sistem kesihatan, pembahas daripada
 Yang Berhormat Kuala Langat, Yang Berhormat Bandar Kuching juga tadi, Yang
-Berhormat Ledang dan Yang Berhormat Sabak Bernam.  Sememangnya
+Berhormat Ledang dan Yang Berhormat Sabak Bernam. Sememangnya
 kementerian sedar bahawa pelaksanaan reformasi yang dicadangkan di dalam
 Kertas Putih Kesihatan memerlukan komitmen yang panjang dan berterusan.
 Oleh itu menerusi Kertas Putih ini, satu badan pemantau atau badan pemantauan
@@ -5262,7 +5296,7 @@ mereformasi sistem kesihatan terdahulu namun cabaran suasana ekonomi dan
 politik negara telah mengekang hala tuju reformasi sistem kesihatan terdahulu.
 Walau bagaimanapun, kementerian tetap berusaha untuk melakukan
 perubahan bagi memastikan sistem kesihatan mampu kekal menyediakan
-perkhidmatan kesihatan kepada rakyat.  Kertas Putih Kesihatan yang
+perkhidmatan kesihatan kepada rakyat. Kertas Putih Kesihatan yang
 dibentangkan pada hari ini berbeza kerana ia mengambil kira input daripada
 semua pihak berkepentingan termasuk daripada Ahli-ahli Parlimen untuk
 mendapatkan sokongan dan memastikan hala tuju reformasi sistem kesihatan ini
@@ -5282,7 +5316,9 @@ untuk memberi pertimbangan yang sewajarnya dan sama-sama kita luluskan
 Kertas Putih Kesihatan ini demi masa depan kesihatan kita.
 Saya ingin mengambil kesempatan ini mengucapkan ribuan terima kasih
 kepada pasukan Kementerian Kesihatan dalam penyediaan Kertas Putih
-Kesihatan ini. [Tepuk] Terima kasih kepada semua Ahli-ahli Yang Berhormat yang
+Kesihatan ini."
+USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,■1650,ANNOTATION,[Tepuk]
+USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,■1650,Dr. Zaliha binti Mustafa,"Terima kasih kepada semua Ahli-ahli Yang Berhormat yang
 telah mengambil bahagian dalam perbahasan Kertas Putih Kesihatan.
 Sekian sahaja, Tuan Yang di-Pertua. Penggulungan saya untuk
 Kementerian Kesihatan Malaysia. Terima kasih."
@@ -5290,8 +5326,8 @@ USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,■1650,Timbal
 Yang Berhormat Menteri. Ahli-ahli Yang Berhormat, sekarang saya kemukakan
 masalah kepada Majlis bagi diputuskan. Masalahnya ialah bahawa usul seperti
 yang dikemukakan oleh Yang Berhormat Menteri Kesihatan di nombor satu itu
-tadi hendaklah disetujukan.
-[Usul dikemuka bagi diputuskan; dan disetujukan]"
+tadi hendaklah disetujukan."
+USUL MENTERI KESIHATAN DI BAWAH P.M 27(3),KERTAS PUTIH KESIHATAN,,■1650,ANNOTATION,[Usul dikemuka bagi diputuskan; dan disetujukan]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA HASIL DALAM NEGERI
 MALAYSIA(PINDAAN) 2023
 Bacaan Kali Yang Kedua dan Ketiga",,4.57 ptg.,Timbalan Menteri Kewangan [Datuk Seri Haji Ahmad bin Haji Maslan],"Tuan Yang di-Pertua. Assalamualaikum warahmatullahi wabarakatuh, salam
@@ -5547,7 +5583,10 @@ an RUU untuk menyedapkan hati tetapi sebenarnya tidak mencapai maksud sebenar
 pindaan ini dibuat dengan memberikan keistimewaan kepada Sabah dan Sarawak.
 Bagi saya, itulah langkah awal pematuhan Malaysian Agreement 1963. MA63
 cannot be merely a song tetapi pada realitinya Sabah hanya bendang yang apabila
-padi sudah dituai, jerami dibiar mereput dan terbakar. Sekian, terima kasih. [Tepuk]"
+padi sudah dituai, jerami dibiar mereput dan terbakar. Sekian, terima kasih."
+RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA HASIL DALAM NEGERI
+MALAYSIA(PINDAAN) 2023
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA HASIL DALAM NEGERI
 MALAYSIA(PINDAAN) 2023
 Bacaan Kali Yang Kedua dan Ketiga",,■1710,Timbalan Yang di-Pertua [Puan Alice Lau Kiong Yieng],"Terima kasih
@@ -5610,8 +5649,13 @@ terkebelakang kerana kita tidak memahami semangat MA63 yang dikehendakkan
 oleh masyarakat yang berada di Sabah dan Sarawak. Walaupun kita memberi kuasa
 yang penuh kepada Yang Amat Berhormat Menteri dan absolute power ini tidak
 sepatutnya dilakukan dalam pindaan ini tanpa mengambil kira pandangan Ketua
-Menteri Sabah atau Primer Sarawak. [Tepuk]
-Sekiranya tempoh yang diberikan ini adalah merupakan tempoh yang tiga
+Menteri Sabah atau Primer Sarawak."
+RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA HASIL DALAM NEGERI
+MALAYSIA(PINDAAN) 2023
+Bacaan Kali Yang Kedua dan Ketiga",,5.17 ptg.,ANNOTATION,[Tepuk]
+RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA HASIL DALAM NEGERI
+MALAYSIA(PINDAAN) 2023
+Bacaan Kali Yang Kedua dan Ketiga",,5.17 ptg.,Dato' Indera Mohd Shahar bin Abdullah [Paya Besar],"Sekiranya tempoh yang diberikan ini adalah merupakan tempoh yang tiga
 tahun sepertimana yang disebutkan oleh Yang Berhormat Putrajaya sebentar tadi
 dan kita telah meletakkan dahulunya berkedudukan atau berpengalaman, kita pinda
 letak “dan” lagi. Kemudiannya dalam seksyen 9, kita mengatakan Menteri boleh
@@ -5691,7 +5735,7 @@ tersilap dalam menentukan peratusan ini, kita perlu melihat kepada bajet negara 
 jumlah yang disumbang oleh pendapatan Lembaga Hasil Dalam Negeri.
 Sebagai contoh, bajet yang dibuat dalam tahun 2023, sebanyak RM388
 bilion, tetapi jangkaan hasil kutipan cukai Lembaga Hasil Dalam Negeri adalah
-sebanyak RM176 bilion.  Lebih kurang 45 peratus atau 46 peratus daripada
+sebanyak RM176 bilion. Lebih kurang 45 peratus atau 46 peratus daripada
 keseluruhan bajet. Maknanya, perlu ada peratusan yang ditentukan dalam pelaburan
 yang dibuat bagi menjamin kepentingan perbelanjaan pembangunan wang negara.
 Terima kasih Tuan Yang di-Pertua."
@@ -5741,7 +5785,10 @@ kalau hendak membatalkan pelantikan, mesti mendapat persetujuan daripada Ketua
 Menteri Sabah dan juga Primer Sarawak. Setujukah Yang Berhormat Tuaran?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA HASIL DALAM NEGERI
 MALAYSIA(PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,5.26 ptg.,Seorang Ahli,Betul. [Tepuk]
+Bacaan Kali Yang Kedua dan Ketiga",,5.26 ptg.,Seorang Ahli,Betul.
+RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA HASIL DALAM NEGERI
+MALAYSIA(PINDAAN) 2023
+Bacaan Kali Yang Kedua dan Ketiga",,5.26 ptg.,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA HASIL DALAM NEGERI
 MALAYSIA(PINDAAN) 2023
 Bacaan Kali Yang Kedua dan Ketiga",,5.26 ptg.,Datuk Seri Panglima Madius bin Tangau [Tuaran],"Saya sangat setuju,
@@ -5751,8 +5798,13 @@ Sarawak. Adakah Menteri Hal Ehwal Sabah dan Sarawak ini telah berbincang
 dengan Menteri Kewangan dalam perkara ini? Adakah ia telah dirunding bagaimana
 pindaan ini dapat dibuat? Jelas di sini, bagi saya tidak ada perundingan. Kalau dia
 mewakili Sabah, dia mewakili Sarawak kenapa tidak dirujuk kepada Ketua Menteri
-Sabah dan juga kepada Primer Sarawak? [Disampuk]
-Itu adalah sangat penting, sebab saya bersetuju dengan Yang Berhormat
+Sabah dan juga kepada Primer Sarawak?"
+RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA HASIL DALAM NEGERI
+MALAYSIA(PINDAAN) 2023
+Bacaan Kali Yang Kedua dan Ketiga",,5.26 ptg.,ANNOTATION,[Disampuk]
+RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA HASIL DALAM NEGERI
+MALAYSIA(PINDAAN) 2023
+Bacaan Kali Yang Kedua dan Ketiga",,5.26 ptg.,Datuk Seri Panglima Madius bin Tangau [Tuaran],"Itu adalah sangat penting, sebab saya bersetuju dengan Yang Berhormat
 Kota Belud bahawa keadaan politik boleh berubah, Kerajaan Persekutuan mungkin
 berlainan dengan Kerajaan Sabah kepimpinannya. Akan tetapi, hak itu adalah hak.
 Seperti juga apa yang dikatakan oleh Yang Berhormat Kota Belud. Perkara 112C
@@ -5959,8 +6011,13 @@ perkara yang fundamental berkenaan perkara ini.
 Kita dengar baru sebentar tadi daripada Yang Berhormat Pendang, Ahli
 Parlimen dari blok pembangkang dari Semenanjung Malaysia dan saya Ahli Parlimen
 dari Semenanjung Malaysia, blok kerajaan. Saya susahlah kalau macam gini hendak
-menyokong dengan sudah mendengar daripada stakeholders. [Tepuk]
-Jadi Tuan Yang di-Pertua dan Yang Berhormat Timbalan Menteri, RUU
+menyokong dengan sudah mendengar daripada stakeholders."
+RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA HASIL DALAM NEGERI
+MALAYSIA(PINDAAN) 2023
+Bacaan Kali Yang Kedua dan Ketiga",,5.40 ptg.,ANNOTATION,[Tepuk]
+RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA HASIL DALAM NEGERI
+MALAYSIA(PINDAAN) 2023
+Bacaan Kali Yang Kedua dan Ketiga",,5.40 ptg.,Tuan Hassan bin Abdul Karim [Pasir Gudang],"Jadi Tuan Yang di-Pertua dan Yang Berhormat Timbalan Menteri, RUU
 tembakau kita boleh tangguh, rujuk pada Select Committee, mengapa pula RUU ini
 hendak pinda ini yang berkaitan constitutional law, Perlembagaan ini berkaitan
 dengan perjanjian MA63. Ertinya kita kena cermat dan perlulah kita dengar wakil
@@ -5974,15 +6031,38 @@ kedaulatan wilayah kita, Sabah ini, kita ucap tahniah dan syabas. Itu pendirian 
 tegas daripada kerajaan. Itu daripada aspek luar negara. Akan tetapi di dalam
 negara, bagaimana hak Sabah dan Sarawak? Negara kita ini Tuan Yang di-Pertua,
 ialah negara federalism. Tidak wujud Malaysia ini kalau tidak ada negeri-negeri,
-wilayah-wilayah ini. [Tepuk]
-Jadi, mesti ada mesti ada prinsip desentralisasi. Agih-agihkan kuasa ini.
-Jangan semuanya berpusat di Putrajaya dari Semenanjung Malaysia. [Tepuk] Ini
+wilayah-wilayah ini."
+RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA HASIL DALAM NEGERI
+MALAYSIA(PINDAAN) 2023
+Bacaan Kali Yang Kedua dan Ketiga",,5.40 ptg.,ANNOTATION,[Tepuk]
+RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA HASIL DALAM NEGERI
+MALAYSIA(PINDAAN) 2023
+Bacaan Kali Yang Kedua dan Ketiga",,5.40 ptg.,Tuan Hassan bin Abdul Karim [Pasir Gudang],"Jadi, mesti ada mesti ada prinsip desentralisasi. Agih-agihkan kuasa ini.
+Jangan semuanya berpusat di Putrajaya dari Semenanjung Malaysia."
+RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA HASIL DALAM NEGERI
+MALAYSIA(PINDAAN) 2023
+Bacaan Kali Yang Kedua dan Ketiga",,5.40 ptg.,ANNOTATION,[Tepuk]
+RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA HASIL DALAM NEGERI
+MALAYSIA(PINDAAN) 2023
+Bacaan Kali Yang Kedua dan Ketiga",,5.40 ptg.,Tuan Hassan bin Abdul Karim [Pasir Gudang],"Ini
 prinsipnya. Kita hormati negara-negara, negeri-negeri di Semenanjung Malaysia.
 Terengganu, Kelantan, Kedah, Johor, Negeri Sembilan dan semuanya. Begitu juga
-Sabah dan Sarawak, bukan negeri, dia wilayah. [Tepuk] Dia bukan negeri. Dia
+Sabah dan Sarawak, bukan negeri, dia wilayah."
+RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA HASIL DALAM NEGERI
+MALAYSIA(PINDAAN) 2023
+Bacaan Kali Yang Kedua dan Ketiga",,5.40 ptg.,ANNOTATION,[Tepuk]
+RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA HASIL DALAM NEGERI
+MALAYSIA(PINDAAN) 2023
+Bacaan Kali Yang Kedua dan Ketiga",,5.40 ptg.,Tuan Hassan bin Abdul Karim [Pasir Gudang],"Dia bukan negeri. Dia
 wilayah. Kita sudah— Dewan ini, kita sudah pinda Perlembagaannya. Jadi, takkanlah
 kuasa hendak lantik satu wakil dari Sabah, satu wakil dari Sarawak, Perdana Menteri
-di Putrajaya yang lantik. [Tepuk] Apa peranan kita?
+di Putrajaya yang lantik."
+RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA HASIL DALAM NEGERI
+MALAYSIA(PINDAAN) 2023
+Bacaan Kali Yang Kedua dan Ketiga",,5.40 ptg.,ANNOTATION,[Tepuk]
+RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA HASIL DALAM NEGERI
+MALAYSIA(PINDAAN) 2023
+Bacaan Kali Yang Kedua dan Ketiga",,5.40 ptg.,Tuan Hassan bin Abdul Karim [Pasir Gudang],"Apa peranan kita?
 Ketua Menteri Sabah, Premier Sarawak. Ini dua wilayah yang berdaulat, yang
 ada di dalam sistem kerajaan federalism. Saya bercakap soal federalism ini, saya
 pernah dulu menjadi pengerusi select committee berkenaan federalism dan negeri-
@@ -5990,7 +6070,10 @@ negeri ini. Jadi saya percaya, kerajaan tentu sanggup. Bukan kita kalah, tangguh
 dulu. Kita ada select committee ya. Kita rujuk kepada select committee. Kalau soal
 tembakau, merokok kita boleh bersabar, mengapa tidak dalam soal kutipan hasil
 cukai negeri ini yang ada disebut hitam putih di dalam Perlembagaan Persekutuan.
-Demikian sahaja Tuan Yang di-Pertua, terima kasih. [Tepuk]"
+Demikian sahaja Tuan Yang di-Pertua, terima kasih."
+RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA HASIL DALAM NEGERI
+MALAYSIA(PINDAAN) 2023
+Bacaan Kali Yang Kedua dan Ketiga",,5.40 ptg.,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA HASIL DALAM NEGERI
 MALAYSIA(PINDAAN) 2023
 Bacaan Kali Yang Kedua dan Ketiga",,5.40 ptg.,Timbalan Yang di-Pertua [Puan Alice Lau Kiong Yieng],"Terima kasih
@@ -6011,8 +6094,13 @@ Soalan Temerloh, berapakah anggaran bajet yang akan diperuntukkan
 kerana pasti akan meningkatkan perbelanjaan kerana akan meningkatkan
 perjawatan. Walau bagaimanapun, kita lihat suara-suara yang kita dengar daripada
 wakil MP Sabah dan Sarawak tadi, Temerloh menyokong apa yang disuarakan oleh
-mereka. [Tepuk]
-Dalam fasal 4, meminda seksyen 9 Akta 533, Menteri boleh melantik dan
+mereka."
+RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA HASIL DALAM NEGERI
+MALAYSIA(PINDAAN) 2023
+Bacaan Kali Yang Kedua dan Ketiga",,5.44 ptg.,ANNOTATION,[Tepuk]
+RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA HASIL DALAM NEGERI
+MALAYSIA(PINDAAN) 2023
+Bacaan Kali Yang Kedua dan Ketiga",,5.44 ptg.,Puan Hajah Salamiah binti Mohd Nor [Temerloh],"Dalam fasal 4, meminda seksyen 9 Akta 533, Menteri boleh melantik dan
 dibatalkan pelantikan pada bila-bila masa tanpa memberi sebarang sebab. Soalan
 Temerloh, adakah pelantikan jawatan ini dipengaruhi oleh kuasa politik semata-
 mata? Wajarkah perjawatan boleh dibatalkan pada bila-bila masa tanpa sebab? Ia
@@ -6115,7 +6203,10 @@ sekali Akta KWSP, Akta KWAP, Akta LADA dan banyak lagi akta lain. Semua Menteri
 kena rujuk kepada orang-orang tertentu sebelum buat keputusan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA HASIL DALAM NEGERI
 MALAYSIA(PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,■1750,Datuk Seri Panglima Madius bin Tangau [Tuaran],[Berdiri]
+Bacaan Kali Yang Kedua dan Ketiga",,■1750,Datuk Seri Panglima Madius bin Tangau [Tuaran],
+RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA HASIL DALAM NEGERI
+MALAYSIA(PINDAAN) 2023
+Bacaan Kali Yang Kedua dan Ketiga",,■1750,ANNOTATION,[Berdiri]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA HASIL DALAM NEGERI
 MALAYSIA(PINDAAN) 2023
 Bacaan Kali Yang Kedua dan Ketiga",,■1750,Datuk Seri Haji Ahmad bin Haji Maslan,"Jadi, ini satu perkara. Saya
@@ -6183,7 +6274,13 @@ Sarawak. Akan tetapi bagaimanakah untuk kita mengayatkan perkara-perkara
 tersebut? Saya kira ia perlulah dibawa ke select committee sebagaimana yang
 dipersetujui.
 Oleh itu, dengan kuasa-kuasa yang ada entah seksyen yang mana, saya
-dengan ini bersetuju pada Ahli-ahli Yang Berhormat. [Tepuk] Akan tetapi sebelum
+dengan ini bersetuju pada Ahli-ahli Yang Berhormat."
+RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA HASIL DALAM NEGERI
+MALAYSIA(PINDAAN) 2023
+Bacaan Kali Yang Kedua dan Ketiga",,■1750,ANNOTATION,[Tepuk]
+RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA HASIL DALAM NEGERI
+MALAYSIA(PINDAAN) 2023
+Bacaan Kali Yang Kedua dan Ketiga",,■1750,Datuk Seri Haji Ahmad bin Haji Maslan,"Akan tetapi sebelum
 bersetuju, lain kali datanglah apabila orang ajak berbincang."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA HASIL DALAM NEGERI
 MALAYSIA(PINDAAN) 2023
@@ -6244,7 +6341,7 @@ Bacaan Kali Yang Kedua dan Ketiga",,■1750,Datuk Seri Panglima Madius bin Tanga
 pegawai-pegawai dia sendiri pun tidak tahu bahawa ini telah dibincangkan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA HASIL DALAM NEGERI
 MALAYSIA(PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,■1750,ANNOTATIONS,[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
+Bacaan Kali Yang Kedua dan Ketiga",,■1750,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA HASIL DALAM NEGERI
 MALAYSIA(PINDAAN) 2023
 Bacaan Kali Yang Kedua dan Ketiga",,■1750,Datuk Seri Haji Ahmad bin Haji Maslan,"Sudah bawa di Kabinet. Kabinet
@@ -6257,7 +6354,9 @@ dapatkan clearance dahulu."
 USUL,"MENANGGUHKAN BACAAN KALI YANG KEDUA DAN KETIGA
 RANG UNDANG-UNDANG DI BAWAH P.M. 62",,■1750,Datuk Seri Haji Ahmad bin Haji Maslan,"Tuan Yang di-Pertua, di bawah
 Peraturan Mesyuarat 62, atas nasihat SUDR, maka rang undang-undang ini
-ditangguhkan untuk bacaan kali kedua pada sidang yang akan datang. [Tepuk]"
+ditangguhkan untuk bacaan kali kedua pada sidang yang akan datang."
+USUL,"MENANGGUHKAN BACAAN KALI YANG KEDUA DAN KETIGA
+RANG UNDANG-UNDANG DI BAWAH P.M. 62",,■1750,ANNOTATION,[Tepuk]
 USUL,"MENANGGUHKAN BACAAN KALI YANG KEDUA DAN KETIGA
 RANG UNDANG-UNDANG DI BAWAH P.M. 62",,■1750,Puan Isnaraissah Munirah binti Majilis @ Fakharudy [Kota Belud],Terima kasih Yang Berhormat Menteri.
 USUL,"MENANGGUHKAN BACAAN KALI YANG KEDUA DAN KETIGA
@@ -6265,12 +6364,25 @@ RANG UNDANG-UNDANG DI BAWAH P.M. 62",,■1750,Tuan Haji Mohd Hasnizan bin Harun 
 Sarawak."
 USUL,"MENANGGUHKAN BACAAN KALI YANG KEDUA DAN KETIGA
 RANG UNDANG-UNDANG DI BAWAH P.M. 62",,■1750,Tuan Yang di-Pertua,"Baik, hari last ini begitulah ya. Relaks, relaks."
-USUL-USUL MENTERI KEWANGAN,"AKTA PENDANAAN KERAJAAN 1983 [AKTA 275] – MEMINDAH BAKI
+USUL-USUL MENTERI KEWANGAN,AKTA PENDANAAN KERAJAAN 1983,,■1800,ANNOTATION,[AKTA 275]
+USUL-USUL MENTERI KEWANGAN,"– MEMINDAH BAKI
 TERIMAAN TERBITAN PELABURAN KERAJAAN MALAYSIA KE
-KUMPULAN WANG PEMBANGUNAN",,6.00 ptg.,Timbalan Menteri Kewangan [Datuk Seri Haji Ahmad bin Haji Maslan],"Ada sesiapa yang minta tangguh tadi? [Ketawa] Tuan Yang di-Pertua, saya mohon
+KUMPULAN WANG PEMBANGUNAN",,6.00 ptg.,Timbalan Menteri Kewangan [Datuk Seri Haji Ahmad bin Haji Maslan],Ada sesiapa yang minta tangguh tadi?
+USUL-USUL MENTERI KEWANGAN,"– MEMINDAH BAKI
+TERIMAAN TERBITAN PELABURAN KERAJAAN MALAYSIA KE
+KUMPULAN WANG PEMBANGUNAN",,6.00 ptg.,ANNOTATION,[Ketawa]
+USUL-USUL MENTERI KEWANGAN,"– MEMINDAH BAKI
+TERIMAAN TERBITAN PELABURAN KERAJAAN MALAYSIA KE
+KUMPULAN WANG PEMBANGUNAN",,6.00 ptg.,Timbalan Menteri Kewangan [Datuk Seri Haji Ahmad bin Haji Maslan],"Tuan Yang di-Pertua, saya mohon
 mencadangkan:
 ""Bahawa mengikut peruntukan 4(b) Akta Pendanaan Kerajaan
-1983 [Akta 275], mengambil ketetapan supaya kerajaan memindahkan
+1983"
+USUL-USUL MENTERI KEWANGAN,"– MEMINDAH BAKI
+TERIMAAN TERBITAN PELABURAN KERAJAAN MALAYSIA KE
+KUMPULAN WANG PEMBANGUNAN",,6.00 ptg.,ANNOTATION,[Akta 275]
+USUL-USUL MENTERI KEWANGAN,"– MEMINDAH BAKI
+TERIMAAN TERBITAN PELABURAN KERAJAAN MALAYSIA KE
+KUMPULAN WANG PEMBANGUNAN",,6.00 ptg.,Timbalan Menteri Kewangan [Datuk Seri Haji Ahmad bin Haji Maslan],", mengambil ketetapan supaya kerajaan memindahkan
 sebanyak RM27,000 juta di bawah seksyen 3(1) Akta yang sama, iaitu
 baki wang terimaan Terbitan Pelaburan Kerajaan Malaysia Malaysian
 Government Investment Issue (MGII) sehingga akhir Mei tahun 2023
@@ -6279,7 +6391,13 @@ Tuan Yang di-Pertua, saya mohon untuk membentangkan satu resolusi
 berkaitan ketetapan pindahan Wang Terbitan Pelaburan Kerajaan Malaysia dengan
 izin Malaysian Government Investment Issue (MGII) ke Kumpulan Wang
 Pembangunan (KWP) mengikut keperluan sub seksyen 4(b) Akta Pendanaan
-Kerajaan 1983 [Akta 275].
+Kerajaan 1983"
+USUL-USUL MENTERI KEWANGAN,"– MEMINDAH BAKI
+TERIMAAN TERBITAN PELABURAN KERAJAAN MALAYSIA KE
+KUMPULAN WANG PEMBANGUNAN",,6.00 ptg.,ANNOTATION,[Akta 275]
+USUL-USUL MENTERI KEWANGAN,"– MEMINDAH BAKI
+TERIMAAN TERBITAN PELABURAN KERAJAAN MALAYSIA KE
+KUMPULAN WANG PEMBANGUNAN",,6.00 ptg.,Timbalan Menteri Kewangan [Datuk Seri Haji Ahmad bin Haji Maslan],".
 Resolusi ini dibentangkan supaya kerajaan memindahkan baki wang
 terimaan Terbitan Pelaburan Kerajaan Malaysia dengan izin MGII sehingga akhir Mei
 tahun 2023 sebanyak RM27,000 juta atau RM27.0 bilion ke Kumpulan Wang
@@ -6297,7 +6415,13 @@ KWP pula terdiri daripada terimaan Terbitan Sekuriti Kerajaan Malaysia dengan iz
 Malaysia Government Securities (MGS), Terbitan Pelaburan Kerajaan Malaysia
 dengan izin Malaysia Government Investment Issue (MGII), bil perbendaharaan dan
 pinjaman luar negeri.
-Subseksyen 4(b) [Akta 275] memperuntukkan bahawa terimaan daripada
+Subseksyen 4(b)"
+USUL-USUL MENTERI KEWANGAN,"– MEMINDAH BAKI
+TERIMAAN TERBITAN PELABURAN KERAJAAN MALAYSIA KE
+KUMPULAN WANG PEMBANGUNAN",,6.00 ptg.,ANNOTATION,[Akta 275]
+USUL-USUL MENTERI KEWANGAN,"– MEMINDAH BAKI
+TERIMAAN TERBITAN PELABURAN KERAJAAN MALAYSIA KE
+KUMPULAN WANG PEMBANGUNAN",,6.00 ptg.,Timbalan Menteri Kewangan [Datuk Seri Haji Ahmad bin Haji Maslan],"memperuntukkan bahawa terimaan daripada
 Terbitan Pelaburan Kerajaan Malaysia dengan izin Malaysia Government Investment
 Issue (MGII) hanya boleh dipindahkan kepada Kumpulan Wang Pembangunan
 setelah mendapat kelulusan Dewan Rakyat dengan resolusi.
@@ -6310,25 +6434,31 @@ berkaitan ketetapan pemindahan baki wang terimaan Terbitan Pelaburan Kerajaan
 Malaysia (MGII) sehingga akhir Mei tahun 2023 sebanyak RM27,000 juta atau RM27
 bilion ke kumpulan wang pembangunan KWP. Dimohon agar pemindahan ini
 diluluskan oleh Dewan Rakyat."
-USUL-USUL MENTERI KEWANGAN,"AKTA PENDANAAN KERAJAAN 1983 [AKTA 275] – MEMINDAH BAKI
+USUL-USUL MENTERI KEWANGAN,"– MEMINDAH BAKI
 TERIMAAN TERBITAN PELABURAN KERAJAAN MALAYSIA KE
 KUMPULAN WANG PEMBANGUNAN",,6.00 ptg.,Tuan Yang di-Pertua,Terima kasih. Ada yang menyokong?
-USUL-USUL MENTERI KEWANGAN,"AKTA PENDANAAN KERAJAAN 1983 [AKTA 275] – MEMINDAH BAKI
+USUL-USUL MENTERI KEWANGAN,"– MEMINDAH BAKI
 TERIMAAN TERBITAN PELABURAN KERAJAAN MALAYSIA KE
 KUMPULAN WANG PEMBANGUNAN",,6.00 ptg.,"Timbalan Menteri Pembangunan Wanita, Keluarga dan Masyarakat [Puan Hajah Raj Munni binti Sabu]",Saya mohon menyokong.
-USUL-USUL MENTERI KEWANGAN,"AKTA PENDANAAN KERAJAAN 1983 [AKTA 275] – MEMINDAH BAKI
+USUL-USUL MENTERI KEWANGAN,"– MEMINDAH BAKI
 TERIMAAN TERBITAN PELABURAN KERAJAAN MALAYSIA KE
 KUMPULAN WANG PEMBANGUNAN",,6.00 ptg.,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, masalah sekarang ini
-terbuka untuk dibahas. Ada yang hendak bahas? Tiada.
-[Tiada perbahasan]"
-USUL-USUL MENTERI KEWANGAN,"AKTA PENDANAAN KERAJAAN 1983 [AKTA 275] – MEMINDAH BAKI
+terbuka untuk dibahas. Ada yang hendak bahas? Tiada."
+USUL-USUL MENTERI KEWANGAN,"– MEMINDAH BAKI
+TERIMAAN TERBITAN PELABURAN KERAJAAN MALAYSIA KE
+KUMPULAN WANG PEMBANGUNAN",,6.00 ptg.,ANNOTATION,[Tiada perbahasan]
+USUL-USUL MENTERI KEWANGAN,"– MEMINDAH BAKI
 TERIMAAN TERBITAN PELABURAN KERAJAAN MALAYSIA KE
 KUMPULAN WANG PEMBANGUNAN",,6.00 ptg.,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, sekarang saya kemukakan
 masalah kepada Majlis untuk diputuskan. Masalahnya ialah bahawa Usul Yang
 Berhormat Menteri Kewangan seperti tertera dalam Aturan Urusan Mesyuarat dan
-Usul-usul hari ini di nombor tiga hendaklah disetujukan.
-[Usul dikemuka bagi diputuskan; dan disetujukan]"
-USUL-USUL MENTERI KEWANGAN,AKTA KASTAM 1967 – PERINTAH KASTAM,,6.04 ptg.,Timbalan Menteri Kewangan [Datuk Seri Haji Ahmad bin Haji Maslan],"Tuan Yang di-Pertua, yang ini ada sesiapa tak setuju? [Ketawa] Tuan Yang di-
+Usul-usul hari ini di nombor tiga hendaklah disetujukan."
+USUL-USUL MENTERI KEWANGAN,"– MEMINDAH BAKI
+TERIMAAN TERBITAN PELABURAN KERAJAAN MALAYSIA KE
+KUMPULAN WANG PEMBANGUNAN",,6.00 ptg.,ANNOTATION,[Usul dikemuka bagi diputuskan; dan disetujukan]
+USUL-USUL MENTERI KEWANGAN,AKTA KASTAM 1967 – PERINTAH KASTAM,,6.04 ptg.,Timbalan Menteri Kewangan [Datuk Seri Haji Ahmad bin Haji Maslan],"Tuan Yang di-Pertua, yang ini ada sesiapa tak setuju?"
+USUL-USUL MENTERI KEWANGAN,AKTA KASTAM 1967 – PERINTAH KASTAM,,6.04 ptg.,ANNOTATION,[Ketawa]
+USUL-USUL MENTERI KEWANGAN,AKTA KASTAM 1967 – PERINTAH KASTAM,,6.04 ptg.,Timbalan Menteri Kewangan [Datuk Seri Haji Ahmad bin Haji Maslan],"Tuan Yang di-
 Pertua, saya mohon mencadangkan:
 ""Bahawa Dewan ini mengambil ketetapan iaitu menurut kuasa
 yang ditetapkan padanya oleh subseksyen 11(2), Akta Kastam 1967
@@ -6427,13 +6557,13 @@ USUL-USUL MENTERI KEWANGAN,AKTA KASTAM 1967 – PERINTAH KASTAM,,■1810,Tuan Ya
 menyokong?"
 USUL-USUL MENTERI KEWANGAN,AKTA KASTAM 1967 – PERINTAH KASTAM,,■1810,"Timbalan Menteri Pembangunan Wanita, Keluarga dan Masyarakat [Puan Hajah Raj Munni binti Sabu]","Tuan Yang di-Pertua, saya mohon menyokong."
 USUL-USUL MENTERI KEWANGAN,AKTA KASTAM 1967 – PERINTAH KASTAM,,■1810,Tuan Yang di-Pertua,"Terima kasih, Ahli yang berhormat masalah sekarang
-ini terbuka untuk dibahas. Ada yang hendak bahas?
-[Tiada perbahasan]"
+ini terbuka untuk dibahas. Ada yang hendak bahas?"
+USUL-USUL MENTERI KEWANGAN,AKTA KASTAM 1967 – PERINTAH KASTAM,,■1810,ANNOTATION,[Tiada perbahasan]
 USUL-USUL MENTERI KEWANGAN,AKTA KASTAM 1967 – PERINTAH KASTAM,,■1810,Tuan Yang di-Pertua,"Baik Ahli Yang Berhormat sekarang saya kemukakan
 masalah kepada Majlis bagi diputuskan. Masalahnya ialah bahawa Usul seperti yang
 dikemukakan oleh Yang Berhormat Menteri Kewangan di bawah Nombor 4, dalam
-Aturan Urusan Mesyuarat dan Usul-usul hari ini hendaklah di setujukan.
-[Usul dikemuka bagi diputuskan; dan disetujukan]"
+Aturan Urusan Mesyuarat dan Usul-usul hari ini hendaklah di setujukan."
+USUL-USUL MENTERI KEWANGAN,AKTA KASTAM 1967 – PERINTAH KASTAM,,■1810,ANNOTATION,[Usul dikemuka bagi diputuskan; dan disetujukan]
 USUL-USUL MENTERI KEWANGAN,"AKTA LEVI KEUNTUNGAN LUAR BIASA 1998 – PERINTAH LEVI
 KEUNTUNGAN LUAR BIASA BUAH KELAPA SAWIT 2023",,6.13 ptg.,Timbalan Menteri Kewangan [Datuk Seri Haji Ahmad bin Haji Maslan],"Tuan Yang di-Pertua, saya mohon mencadangkan
 “Bahawa Dewan ini mengambil ketetapan iaitu menurut kuasa yang
@@ -6540,8 +6670,9 @@ KEUNTUNGAN LUAR BIASA BUAH KELAPA SAWIT 2023",,6.18 ptg.,Tuan Yang di-Pertua,"Ad
 Berhormat sekarang saya kemukakan masalah pada Majlis bagi diputuskan.
 Masalahnya ialah bahawa Usul seperti yang dikemukakan oleh Yang Berhormat
 Menteri kewangan di bawah Nombor 5 dalam Aturan Urusan Mesyuarat dan Usul-
-usul hari ini hendaklah disetujukan.
-[Usul dikemuka bagi diputuskan; dan disetujukan]"
+usul hari ini hendaklah disetujukan."
+USUL-USUL MENTERI KEWANGAN,"AKTA LEVI KEUNTUNGAN LUAR BIASA 1998 – PERINTAH LEVI
+KEUNTUNGAN LUAR BIASA BUAH KELAPA SAWIT 2023",,6.18 ptg.,ANNOTATION,[Usul dikemuka bagi diputuskan; dan disetujukan]
 USUL-USUL MENTERI KEWANGAN,AKTA EKSAIS 1976 – PERINTAH DUTI EKSAIS,,6.20 ptg.,Timbalan Menteri Kewangan [Tuan Sim Chee Keong],"Tuan Yang di-
 Pertua, Saya mohon mencadangkan:
 ""Bahawa Dewan ini mengambil ketetapan iaitu menurut kuasa yang
@@ -6618,8 +6749,8 @@ undang. Sehubungan itu, saya mohon untuk mencadangkan."
 USUL-USUL MENTERI KEWANGAN,AKTA EKSAIS 1976 – PERINTAH DUTI EKSAIS,,6.20 ptg.,Tuan Yang di-Pertua,Ada yang menyokong?
 USUL-USUL MENTERI KEWANGAN,AKTA EKSAIS 1976 – PERINTAH DUTI EKSAIS,,6.20 ptg.,"Timbalan Menteri Pembangunan Wanita, Keluarga dan Masyarakat [Puan Hajah Raj Munni binti Sabu]","Tuan Yang di-Pertua, saya mohon menyokong."
 USUL-USUL MENTERI KEWANGAN,AKTA EKSAIS 1976 – PERINTAH DUTI EKSAIS,,6.20 ptg.,Tuan Yang di-Pertua,"Terima kasih. Ahli Yang Berhormat, masalah
-sekarang ini terbuka untuk dibahas.
-[Beberapa ahli bangun]"
+sekarang ini terbuka untuk dibahas."
+USUL-USUL MENTERI KEWANGAN,AKTA EKSAIS 1976 – PERINTAH DUTI EKSAIS,,6.20 ptg.,ANNOTATION,[Beberapa ahli bangun]
 USUL-USUL MENTERI KEWANGAN,AKTA EKSAIS 1976 – PERINTAH DUTI EKSAIS,,6.20 ptg.,Tuan Yang di-Pertua,Silakan Yang Berhormat Pasir Gudang.
 USUL-USUL MENTERI KEWANGAN,AKTA EKSAIS 1976 – PERINTAH DUTI EKSAIS,,6.26 ptg.,Tuan Hassan bin Abdul Karim [Pasir Gudang],"Terima kasih Tuan Yang
 di-Pertua. Usul berkenaan cukai eksais ini perkara yang penting dan saya ada
@@ -6674,7 +6805,8 @@ Berhormat Perdana Menteri kita memaklumkan bahawa beliau boleh flip-flop dalam
 membuat keputusan, demi rakyat. Saya kira kalau ini dilihat sebagai flip-flop untuk
 memasukkan semula nikotin kepada Akta Racun, saya kira ini demi rakyat juga, demi
 kesihatan awam dan juga demi rang undang-undang yang akan kita perbahaskan
-Akta Kawalan Produk Merokok Demi Kesihatan Awam. Terima kasih. [Tepuk]"
+Akta Kawalan Produk Merokok Demi Kesihatan Awam. Terima kasih."
+USUL-USUL MENTERI KEWANGAN,AKTA EKSAIS 1976 – PERINTAH DUTI EKSAIS,,■1830,ANNOTATION,[Tepuk]
 USUL-USUL MENTERI KEWANGAN,AKTA EKSAIS 1976 – PERINTAH DUTI EKSAIS,,■1830,Tuan Yang di-Pertua,"Sila, Yang Berhormat Kapar."
 USUL-USUL MENTERI KEWANGAN,AKTA EKSAIS 1976 – PERINTAH DUTI EKSAIS,,6.32 ptg.,Dr. Hajah Halimah Ali [Kapar],"Terima kasih, Tuan Yang di-Pertua. Sedikit
 sahaja. Saya setuju dengan kedua-dua kawan pembahas saya tadi.
@@ -6809,8 +6941,8 @@ USUL-USUL MENTERI KEWANGAN,AKTA EKSAIS 1976 – PERINTAH DUTI EKSAIS,,■1840,Tu
 Yang Berhormat, sekarang saya kemukakan masalah kepada Majlis bagi
 diputuskan. Masalahnya ialah bahawa usul seperti yang dikemukakan oleh Yang
 Berhormat Menteri Kewangan di bawah nombor enam dalam Aturan Urusan
-Mesyuarat dan usul-usul hari ini hendaklah disetujukan.
-[Usul dikemuka bagi diputuskan; dan disetujukan]"
+Mesyuarat dan usul-usul hari ini hendaklah disetujukan."
+USUL-USUL MENTERI KEWANGAN,AKTA EKSAIS 1976 – PERINTAH DUTI EKSAIS,,■1840,ANNOTATION,[Usul dikemuka bagi diputuskan; dan disetujukan]
 USUL-USUL MENTERI KEWANGAN,AKTA CUKAI JUALAN 2018 – PERINTAH CUKAI JUALAN,,6.43 ptg.,Timbalan Menteri Kewangan [Tuan Sim Chee Keong],"Saya lagi Tuan
 Yang di-Pertua. Saya mohon mencadangkan;
 ""Bahawa Majlis ini mengambil ketetapan iaitu menurut kuasa
@@ -6859,14 +6991,14 @@ USUL-USUL MENTERI KEWANGAN,AKTA CUKAI JUALAN 2018 – PERINTAH CUKAI JUALAN,,6.4
 sekarang saya kemukakan masalah kepada Majlis bagi diputuskan. Masalahnya
 ialah bahawa usul seperti yang dikemukakan oleh Yang Berhormat Menteri
 Kewangan di bawah nombor tujuh dalam Aturan Urusan Mesyuarat dan usul-usul
-hari ini hendaklah disetujukan.
-[Usul dikemuka bagi diputuskan; dan disetujukan]"
+hari ini hendaklah disetujukan."
+USUL-USUL MENTERI KEWANGAN,AKTA CUKAI JUALAN 2018 – PERINTAH CUKAI JUALAN,,6.46 ptg.,ANNOTATION,[Usul dikemuka bagi diputuskan; dan disetujukan]
 USUL-USUL MENTERI KEWANGAN,AKTA CUKAI JUALAN 2018 – PERINTAH CUKAI JUALAN,,6.46 ptg.,Tuan Yang di-Pertua,"Alhamdulillah, Ahli-ahli Yang Berhormat, Mesyuarat
 Kedua Penggal Kedua Parlimen Kelima Belas telah berlangsung selama 11 hari
 mulai hari Isnin, 22 Mei 2023 hingga hari Khamis, 15 Jun 2023. Mesyuarat kali ini
 menyaksikan Dewan Rakyat telah menempah sejarah kerana buat pertama kalinya
-Usul Laporan Ketua Audit Negara dibahas dan diluluskan di Dewan yang mulia ini.
-[Tepuk]"
+Usul Laporan Ketua Audit Negara dibahas dan diluluskan di Dewan yang mulia ini."
+USUL-USUL MENTERI KEWANGAN,AKTA CUKAI JUALAN 2018 – PERINTAH CUKAI JUALAN,,6.46 ptg.,ANNOTATION,[Tepuk]
 USUL-USUL MENTERI KEWANGAN,AKTA CUKAI JUALAN 2018 – PERINTAH CUKAI JUALAN,,6.46 ptg.,Tuan Mohd Sany bin Hamzan [Hulu Langat],"Walaupun pembangkang
 boikot."
 USUL-USUL MENTERI KEWANGAN,AKTA CUKAI JUALAN 2018 – PERINTAH CUKAI JUALAN,,6.46 ptg.,Tuan Jamaludin bin Yahya [Pasir Salak],Tiada dalam Perlembagaan.
@@ -6900,4 +7032,4 @@ Berhormat yang telah pun diberikan peluang untuk menunaikan rukun Islam kelima
 ini. Semoga mendapat haji yang mabrur dan diberkati oleh Allah.
 Ahli-ahli Yang Berhormat, mesyuarat hari ini ditangguhkan sehingga satu
 tarikh yang tidak ditetapkan. Terima kasih."
-USUL-USUL MENTERI KEWANGAN,AKTA CUKAI JUALAN 2018 – PERINTAH CUKAI JUALAN,,6.46 ptg.,ANNOTATIONS,[Dewan ditangguhkan pada pukul 6.50 petang]
+USUL-USUL MENTERI KEWANGAN,AKTA CUKAI JUALAN 2018 – PERINTAH CUKAI JUALAN,,6.46 ptg.,ANNOTATION,[Dewan ditangguhkan pada pukul 6.50 petang]

@@ -1,5 +1,5 @@
 level_1,level_2,level_3,timestamp,author,speech
-,,,10.00 pagi,ANNOTATIONS,[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
+,,,10.00 pagi,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
 MENGANGKAT SUMPAH,"PEMASYHURAN TUAN YANG DI-PERTUA
 MENGALU-ALUKAN AHLI BARU",,10.00 pagi,,"Ahli Yang Berhormat yang tersebut di bawah ini telah mengangkat sumpah:
 - Yang Berhormat Datuk Seri Anwar Ibrahim [Port Dickson]"
@@ -37,9 +37,9 @@ PERUTUSAN DARIPADA DEWAN NEGARA,,,10.00 pagi,Tuan Yang di-Pertua,"Ahli-ahli Yang
 perutusan daripada Yang di-Pertua Dewan Negara yang menyatakan keputusan Dewan itu
 kepada rang undang-undang yang telah diluluskan oleh Dewan Rakyat dalam sidang
 Parlimen
-Penggal yang lalu.
-[Setiausaha membacakan Perutusan]
-“20 Ogos 2018
+Penggal yang lalu."
+PERUTUSAN DARIPADA DEWAN NEGARA,,,10.00 pagi,ANNOTATION,[Setiausaha membacakan Perutusan]
+PERUTUSAN DARIPADA DEWAN NEGARA,,,10.00 pagi,Tuan Yang di-Pertua,"“20 Ogos 2018
 Perutusan Daripada Dewan Negara kepada Dewan Rakyat
 Tuan Yang di-Pertua Dewan Rakyat,
 Dewan Negara telah meluluskan rang undang-undang yang berikut tanpa pindaan:
@@ -197,7 +197,9 @@ dalam situasi ini, adakah Malaysia terikat dan terdorong sama ada dengan Amerika
 dengan China walaupun kita tahu kita mengamalkan dasar berkecuali?"
 JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1020,Tun Dr. Mahathir bin Mohamad,"Tuan Yang di-Pertua, Malaysia melalui Kerajaan
 Pakatan Harapan ini mempunyai dasar tidak campur tangan dalam apa jenis peperangan
-sama sekali. [Tepuk] Atas sebab itu, kita tidak menyertai peperangan ini.
+sama sekali."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1020,ANNOTATION,[Tepuk]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1020,Tun Dr. Mahathir bin Mohamad,"Atas sebab itu, kita tidak menyertai peperangan ini.
 Namun demikian, kita sedar bahawa peperangan dagangan ini mungkin mempunyai
 kesan ke atas kita. Sehingga kini belum terdapat kesan yang ketara di negara kita.
 Dagangan kita masih terus bersama dengan negara China dan negara Amerika. Jika pun
@@ -362,8 +364,9 @@ ini disebabkan pengurusan. Buang pengurusan itu, ambil pengurusan yang lebih cek
 sokong. Apa tunggu lagi? Terima kasih."
 JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,Dato’ Seri Mohamed Azmin bin Ali,"Terima kasih Yang Berhormat Pasir Salak. Oleh
 sebab itu saya nyatakan tadi, Kerajaan Pakatan Harapan telah mengambil ketetapan untuk
-meletakkan pengurusan baru FELDA mulai Julai 2018. [Dewan tepuk]
-Masalah yang dihadapi ialah kita mewarisi legasi pentadbiran UMNO dan Barisan
+meletakkan pengurusan baru FELDA mulai Julai 2018."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,ANNOTATION,[Dewan tepuk]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,Dato’ Seri Mohamed Azmin bin Ali,"Masalah yang dihadapi ialah kita mewarisi legasi pentadbiran UMNO dan Barisan
 Nasional yang apabila diberikan amanah, mereka curang, melakukan rasuah dan
 penyelewengan."
 JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,Dato’ Sri Haji Tajuddin bin Abdul Rahman [Pasir Salak],"Itu sudahlah. Saya ingat
@@ -375,8 +378,9 @@ JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,Dato’ Sri Haji Ta
 dibangkitkan soal-soal itu lagi. Do it better now. All the best to you."
 JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,Tuan Yang di-Pertua,"Okay, point’s taken. Silakan Yang Berhormat Menteri."
 JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,Dato’ Seri Mohamed Azmin bin Ali,"Sebenarnya, saya menyokong kenyataan Yang
-Berhormat Pasir Salak bahawa pengurusan yang tidak cekap harus dipecat dan dibuang.
-[Dewan tepuk] Itulah yang kita telah lakukan tetapi itu pun hendak jadi calon di Parlimen Port
+Berhormat Pasir Salak bahawa pengurusan yang tidak cekap harus dipecat dan dibuang."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,ANNOTATION,[Dewan tepuk]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,Dato’ Seri Mohamed Azmin bin Ali,"Itulah yang kita telah lakukan tetapi itu pun hendak jadi calon di Parlimen Port
 Dickson, yang disokong oleh anggota UMNO dan juga UMNO Bahagian.
 Jadi saya harap Yang Berhormat Pasir Salak boleh memberikan kuliah ini kepada
 mereka mengapa kita mengambil tindakan. Kita mahu membela peneroka-peneroka FELDA
@@ -430,7 +434,8 @@ perkara ini tidak boleh dilakukan kerana ia akan menjejaskan pengurusan kewangan
 keluarga peneroka FELDA yang berkenaan.
 Perkara yang kedua tentang bagaimana– tentang apa tadi Yang Berhormat Kubang
 Kerian?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,Dato’ Tuan Ibrahim bin Tuan Man [Kubang Kerian],"[Bercakap tanpa
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,Dato’ Tuan Ibrahim bin Tuan Man [Kubang Kerian],
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,ANNOTATION,"[Bercakap tanpa
 menggunakan pembesar suara]"
 JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,Dato’ Seri Mohamed Azmin bin Ali,"Pemotongan. Ya pemotongan ini kita telah ada
 persetujuan di antara pihak FELDA dan juga peneroka yang mengambil pilihan tersebut. Oleh
@@ -452,7 +457,9 @@ berapakah jumlah pengurangan hasil pendapatan kerajaan apabila GST dihapuskan da
 apakah strategi kerajaan untuk menampung semula kekurangan hasil pendapatan tersebut."
 JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,Menteri Kewangan [Tuan Lim Guan Eng],"Terima kasih Tuan Yang di-Pertua.
 Saya ingin mengucapkan tahniah kepada Yang Berhormat Port Dickson kerana kembalinya
-ke Parlimen dengan memenangi majoriti yang lebih besar. [Tepuk] Sungguhpun peratusan
+ke Parlimen dengan memenangi majoriti yang lebih besar."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,ANNOTATION,[Tepuk]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,Menteri Kewangan [Tuan Lim Guan Eng],"Sungguhpun peratusan
 undi yang keluar undi telah turun dan menghadapi parti pembangkang yang bersatu di bawah
 satu calon tetapi mendapat majoriti 25,360 undi. Tahniah, syabas kepada beliau dan juga
 Pakatan Harapan.
@@ -501,8 +508,9 @@ sememangnya benar bahawa GST mempunyai kesan secara langsung menaikkan kadar
 inflasi. Akan tetapi apabila GST dikurangkan, kita yakin bahawa kadar inflasi akan
 berkurangan kalau dibandingkan dengan GST.
 Di sini saya ingin tegaskan sekali lagi seperti yang saya sebut dalam sesi Parlimen
-sebelum ini bahawa kerajaan tidak pernah menjamin bahawa harga barang tidak akan naik.
-[Dewan riuh] Akan tetapi yang kita jamin selama ini ialah bahawa sekiranya ada kenaikan
+sebelum ini bahawa kerajaan tidak pernah menjamin bahawa harga barang tidak akan naik."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,ANNOTATION,[Dewan riuh]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,Tuan Lim Guan Eng,"Akan tetapi yang kita jamin selama ini ialah bahawa sekiranya ada kenaikan
 harga maka..."
 JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,Tuan Yang di-Pertua,Benarkan Yang Berhormat menjawab terlebih dahulu.
 JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,Dato’ Seri Dr. Shahidan bin Kassim [Arau],Bagi Anwar Ibrahim ambil alih lah.
@@ -510,11 +518,14 @@ JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,Tuan Lim Guan Eng,"
 Berhormat boleh tunjuk di mana saya ada sebut bahawa SST akan melibatkan kekurangan
 itu harga, saya rasa tolonglah berikan petunjuk kepada saya. Akan tetapi sekiranya tidak
 boleh tunjuk bukti, jangan lah cuba untuk melayangkan atau pun menyebarkan fitnah jahat
-yang tidak berasas ini. [Dewan riuh]
-Tuan Yang di-Pertua, saya rasa..."
+yang tidak berasas ini."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,ANNOTATION,[Dewan riuh]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,Tuan Lim Guan Eng,"Tuan Yang di-Pertua, saya rasa..."
 JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,Dato’ Seri Dr. Shahidan bin Kassim [Arau],Perdana Menteri sebut.
 JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,Tuan Lim Guan Eng,"Keputusan pilihan raya kecil Port Dickson telah membuktikan
-bahawa menyebarkan fitnah jahat tidak laku lagi. [Dewan ketawa] Rakyat telah memberikan
+bahawa menyebarkan fitnah jahat tidak laku lagi."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,ANNOTATION,[Dewan ketawa]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,Tuan Lim Guan Eng,"Rakyat telah memberikan
 keputusan. Fitnah adalah perkara lapuk, tidak ada modal lagi. Biar kita tujukan kepada fakta
 angka yang sebenarnya, baru lah ini akan dapat sokongan daripada rakyat. Sekian, terima
 kasih."
@@ -667,7 +678,7 @@ sistem i-Pesakit daripada PPUM;
 memaksimumkan ruang niaga dan ruang pengiklanan;
 (iii) menawarkan perkhidmatan makmal kepada pihak-pihak yang
 memerlukan seperti hospital swasta dan lain-lain pihak yang
-berkenaan.  Antara hospital swasta yang menggunakan
+berkenaan. Antara hospital swasta yang menggunakan
 perkhidmatan makmal PPUM adalah KPJ dan Mahkota Medical
 Centre; dan
 (iv) menganjurkan program latihan yang berteraskan klinikal dan
@@ -711,9 +722,11 @@ Menteri sama ada boleh diselaraskan, diharmonikan agar tidak wujud sebarang sala
 Terima kasih."
 JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1110,Dr. Maszlee bin Malik,"Terima kasih Tuan Yang di-Pertua. Saya terlupa tadi,
 sepatutnya soalan ke enam, kita lompat soalan ketujuh. Lupa hendak mengucapkan tahniah
-kepada Yang Berhormat Port Dickson di atas kembalinya ke Dewan Rakyat. [Dewan tepuk]
-Lewat, tidak apa. Biar lewat daripada tak ada langsung. [Ketawa]
-Okey, terima kasih kepada Yang Berhormat Lembah Pantai kerana soalan
+kepada Yang Berhormat Port Dickson di atas kembalinya ke Dewan Rakyat."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1110,ANNOTATION,[Dewan tepuk]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1110,Dr. Maszlee bin Malik,"Lewat, tidak apa. Biar lewat daripada tak ada langsung."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1110,ANNOTATION,[Ketawa]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1110,Dr. Maszlee bin Malik,"Okey, terima kasih kepada Yang Berhormat Lembah Pantai kerana soalan
 diutarakan. Ia persoalan bukan baru mengenai hospital pengajar universiti. Sekali lagi saya
 ingin terangkan tentang perbezaan ketara di antara hospital pengajar universiti dengan
 hospital di bawah Kementerian Kesihatan Malaysia. Hospital di bawah Kementerian
@@ -815,7 +828,7 @@ sawit dan produk berasaskan sawit adalah dari sumber yang mampan menepati Standa
 Pensijilan Minyak Sawit Mampan Malaysia (MSPO) menjelang Disember 2019. Sekian."
 JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1120,Datuk Seri Dr. Adham bin Baba [Tenggara],"Tuan Yang di-Pertua, Yang
 Berhormat Menteri, terima kasih. Saya tengok harga sawit pada April RM479, Mei RM469,
-September RM431, Oktober RM410.  Yang Berhormat Menteri, kita lihat data tadi
+September RM431, Oktober RM410. Yang Berhormat Menteri, kita lihat data tadi
 menunjukkan harga sawit merosot. Kita di pihak rakyat yang merupakan pekebun kecil,
 peladang dan juga peneroka mendapati kesan kekecewaan ini akibat kos penyelenggaraan
 ladang mereka, kebun pun terus meningkat dan tidak berkurangan tetapi harga belian
@@ -833,7 +846,7 @@ JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1120,Tuan Yang di-Pertua
 JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1120,Datuk Seri Dr. Adham bin Baba [Tenggara],Untuk tambahan sahaja tadi.
 JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1120,Tuan Yang di-Pertua,Kita ada empat minit sahaja.
 JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1120,Datuk Seri Dr. Adham bin Baba [Tenggara],"Okey, Tuan Yang di-Pertua, hendak
-tolong.  Apakah kenyataan Yang Amat Berhormat Perdana Menteri untuk hentikan
+tolong. Apakah kenyataan Yang Amat Berhormat Perdana Menteri untuk hentikan
 perladangan atau tanam kelapa sawit baru-baru ini sudah dibincangkan dengan kementerian
 Yang Berhormat dan apakah ini kepastian yang boleh diberikan kepada masyarakat?"
 JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1120,Tuan Yang di-Pertua,Silakan.
@@ -905,7 +918,8 @@ bagi subsidi. Yang Berhormat Kinabatangan, bukan insentif, itu dipanggil subsidi
 Kementerian saya juga telah pun hantar kepada Kementerian Kewangan untuk memohon
 penambahan subsidi bagi pekebun sawit kita. Kita lihatlah, tunggu lah bajet yang akan
 datang, sama ada ini diluluskan ataupun tidak.
-Kedua ialah tentang— soalan apa itu? [Dewan riuh]"
+Kedua ialah tentang— soalan apa itu?"
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1130,ANNOTATION,[Dewan riuh]
 JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1130,Seorang Ahli,"Dia suka, dia suka you itu."
 JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1130,Puan Teresa Kok Suh Sim,I tahu dia suka saya. Soalan yang kedua adalah apa?
 JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1130,Beberapa Ahli,"Biofuel, biofuel."
@@ -929,7 +943,7 @@ semua ini kita perlu sokongan daripada Ahli-ahli Yang Berhormat di Dewan ini."
 JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1130,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Menteri. Dengan itu tamatlah
 sesi Jawab Lisan. Saya mengambil masa lima minit lebih daripada biasa oleh kerana kita
 telah menggunakan lima minit awal pagi tadi."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1130,ANNOTATIONS,[Sesi untuk Pertanyaan-pertanyaan bagi Jawab Lisan tamat]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1130,ANNOTATION,[Sesi untuk Pertanyaan-pertanyaan bagi Jawab Lisan tamat]
 RANG UNDANG-UNDANG DIBAWA KE DALAM MESYUARAT,"USUL
 WAKTU MESYUARAT DAN URUSAN
 DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,■1130,,"Rang Undang-undang bernama suatu akta untuk meminda Akta Jalan, Parit dan
@@ -961,12 +975,16 @@ RANG UNDANG-UNDANG DIBAWA KE DALAM MESYUARAT,"USUL
 WAKTU MESYUARAT DAN URUSAN
 DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.37 pg.,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, sekarang saya kemukakan
 masalah kepada Majlis untuk diputuskan. Masalahnya ialah usul seperti yang dikemukakan
-tadi hendaklah disetujukan.
-[Usul dikemuka bagi diputuskan; dan disetujukan]"
+tadi hendaklah disetujukan."
+RANG UNDANG-UNDANG DIBAWA KE DALAM MESYUARAT,"USUL
+WAKTU MESYUARAT DAN URUSAN
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.37 pg.,ANNOTATION,[Usul dikemuka bagi diputuskan; dan disetujukan]
 USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,11.38 pg.,Menteri Luar Negeri [Dato’ Saifuddin Abdullah],"Dengan izin Tuan Yang di-
 Pertua, sebelum saya membacakan usul ini, izinkan saya untuk merakamkan ucapan
 setinggi-tinggi tahniah kepada Dato’ Seri Anwar Ibrahim yang telah memenangi Pilihan raya
-Kecil Port Dickson... [Tepuk] dan mengucapkan selamat kembali sekali lagi ke Dewan yang
+Kecil Port Dickson..."
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,11.38 pg.,ANNOTATION,[Tepuk]
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,11.38 pg.,Menteri Luar Negeri [Dato’ Saifuddin Abdullah],"dan mengucapkan selamat kembali sekali lagi ke Dewan yang
 mulia ini. Usul dari Kementerian Luar Negeri berbunyi seperti berikut;
 “BAHAWA Yang Amat Berhormat Perdana Menteri Malaysia telah
 menyampaikan ucapan pertama beliau selaku Perdana Menteri Malaysia
@@ -992,8 +1010,8 @@ menyokong kelestarian perkembangan ekonomi, politik dan sosial di dalam
 negara kita sendiri.
 DENGAN INI DEWAN mengambil ketetapan seperti berikut:
 (i) bersetuju dengan hala tuju dasar luar Malaysia baharu seperti
-yang telah  dinyatakan dalam ucapan Yang Amat
-Berhormat Perdana Menteri di  Perhimpunan Agung PBB
+yang telah dinyatakan dalam ucapan Yang Amat
+Berhormat Perdana Menteri di Perhimpunan Agung PBB
 yang ke-73 pada 28 September 2018; dan
 (ii) memutuskan supaya ucapan Yang Amat Berhormat Perdana
 Menteri di Perhimpunan Agung PBB tersebut dijadikan sebagai
@@ -1176,9 +1194,9 @@ PBB itu dan ia adalah satu pengalaman yang amat menguja. Sesiapa yang berucap
 contohnya pada tahun 2015 diwakili oleh Yang Berhormat Pekan. Kemudian pada tahun
 2016, Yang Berhormat Kimanis. Pada tahun 2017, Yang Berhormat Bagan Datuk dan kita
 mengutarakan beberapa perkara yang sebahagian diterima oleh peringkat antarabangsa."
-USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,11.57 pg.,ANNOTATIONS,"[Timbalan Yang di-Pertua (Dato' Mohd Rashid Hasnon) mempengerusikan
-Mesyuarat]
-Dalam kerangka asas dasar luar Malaysia Baharu ini, saya ingin mencadangkan
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,11.57 pg.,ANNOTATION,"[Timbalan Yang di-Pertua (Dato' Mohd Rashid Hasnon) mempengerusikan
+Mesyuarat]"
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,11.57 pg.,Datuk Seri Haji Ahmad bin Haji Maslan [Pontian],"Dalam kerangka asas dasar luar Malaysia Baharu ini, saya ingin mencadangkan
 lima perkara untuk difikirkan oleh Yang Berhormat Menteri Luar Negeri. Pertama ialah dalam
 kerangka asas dasar luar Malaysia itu, perlu ada kenyataan untuk mempromosi dan
 melaksanakan dasar perdagangan yang bebas dan adil. Dasar perdagangan luar negara kita
@@ -1187,7 +1205,7 @@ kita hasratkan. Kita telah menandatangani tidak silap saya ada 13 perjanjian per
 bebas. Saya kira apakah yang perlu lagi negara lain yang kita perlu tambah segala perjanjian
 perdagangan bebas ini supaya segala eksport kita akan bertambah dan negara kita akan
 lebih makmur. Itu yang pertama."
-USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1200,ANNOTATIONS,"Kedua, selain daripada kita mempromosikan perdagangan dan melaksanakan, kita
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1200,Datuk Seri Haji Ahmad bin Haji Maslan [Pontian],"Kedua, selain daripada kita mempromosikan perdagangan dan melaksanakan, kita
 juga perlu mempromosi dan melaksanakan dasar pelaburan yang bebas dan adil.
 Perdagangan dan pelaburan ini adalah dua perkara yang berbeza. Maksudnya kalau ada
 syarikat-syarikat di negara kita ingin melabur di mana-mana negara dalam dunia, syarikat-
@@ -1274,7 +1292,7 @@ negara itu, Palestin adalah isu umat Islam di seluruh dunia. Ada disebut oleh Ya
 Berhormat Langkawi tentang Myanmar. Isu Rohingya ini Tuan Yang di-Pertua, ia adalah isu
 kemanusiaan. Ia bukan isu-isu Myanmar semata-mata, ia adalah isu-isu yang menyebabkan
 hak asasi manusia."
-USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1210,ANNOTATIONS,"Oleh sebab itu, Yang Berhormat Bagan Datuk misalnya pernah melawat Cox's
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1210,Datuk Seri Haji Ahmad bin Haji Maslan [Pontian],"Oleh sebab itu, Yang Berhormat Bagan Datuk misalnya pernah melawat Cox's
 Bazar, Yang Berhormat Pekan pernah melawat Gaza. Saya hendak tanya bila Yang Amat
 Berhormat Langkawi akan pergi ke Palestin? Bila Yang Amat Berhormat Langkawi akan pergi
 ke Myanmar untuk membantu menyelesaikan masalah ini.
@@ -1444,7 +1462,8 @@ ialah suatu yang hebat dan kita pernah lakukannya. Jadi, silakan Yang Berhormat 
 USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1220,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"Saya terpanggil untuk bertanya
 apabila Yang Berhormat menyebut bahawa gandingan Yang Amat Berhormat Perdana
 Menteri, Yang Berhormat Port Dickson. Bilakah Yang Berhormat Port Dickson akan dilantik
-menjadi Timbalan Perdana Menteri? Sebab Yang Berhormat sebut gandingan tadi. [Dewan
+menjadi Timbalan Perdana Menteri? Sebab Yang Berhormat sebut gandingan tadi."
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1220,ANNOTATION,"[Dewan
 Ketawa]"
 USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1220,Dato’ Johari bin Abdul [Sungai Petani],"Tuan Yang di-Pertua, kita cakap benda
 yang serius, benda yang besar. Jadi, sudah tentulah benda-benda yang kita anggap sipi-sipi
@@ -1559,10 +1578,12 @@ barukah, bukan memperkenalkan sesuatu. I have no quarrels on that. Akan tetapi, 
 Yang Berhormat mengatakan bahawa ini tidak dilaksanakan— human rights, saya sendiri
 pergi ke Geneva, dalam debate human rights. I have been to more than 70 over countries.
 So, give yourself a chance. Ini nasihat saya sebagai mantan Menteri Luar. Cuma saya
-nasihatkan kepada Yang Berhormat, sebelum berucap, study first, belajar dulu. [Tepuk]
-Barangkali kalau balik ke kawasan cakap begini, boleh diterima, with due respect. Akan tetapi
+nasihatkan kepada Yang Berhormat, sebelum berucap, study first, belajar dulu."
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1230,ANNOTATION,[Tepuk]
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1230,Dato’ Sri Anifah bin Aman [Kimanis],"Barangkali kalau balik ke kawasan cakap begini, boleh diterima, with due respect. Akan tetapi
 di sini, malangnya mantan Menteri Luar ada secara kebetulan di dalam Dewan. Terima kasih,
-Tuan Yang di-Pertua. [Tepuk]"
+Tuan Yang di-Pertua."
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1230,ANNOTATION,[Tepuk]
 USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1230,Dato’ Seri Dr. Shahidan bin Kassim [Arau],Penjelasan. Penjelasan.
 USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1230,Timbalan Yang di-Pertua [Dato' Mohd Rashid Hasnon],"Terima kasih Yang
 Berhormat Kimanis."
@@ -1637,7 +1658,7 @@ dunia yang kita anggap insan ini memiliki high-energy level, dengan izin, pada u
 Tuan Yang di-Pertua, Yang Amat Berhormat Perdana Menteri saya kira meneruskan
 ketegasannya sejak tahun 1981 tahun lagi. Meneruskan prinsip keterbukaan, ketegasan dan
 menjadikan pandangan Malaysia ini sebagai tanda aras, tindak laku kepada negara kuasa
-besar yang lain.  Secara mudahnya, Tuan Yang di-Pertua— saya suka bermadah
+besar yang lain. Secara mudahnya, Tuan Yang di-Pertua— saya suka bermadah
 sebenarnya— Perdana Menteri kita ini, saya anggap kalau terapung di awang-awangan, dia
 tetap akan menjadi kejora. Kalau terlontar ke dataran, tetap akan menjadi permata. Kalau
 dihumban ke lautan sekalipun, tetap akan menjadi mutiara. Hatta, kalau dicampak ke laut,
@@ -1828,7 +1849,7 @@ tahu bahawa kemudiannya boleh diberi pembebasan dan pelepasan oleh mahkamah.
 Perkara lain yang disebut oleh Perdana Menteri berkaitan dengan Dasar Luar
 Malaysia Baharu. Saya kira Yang Berhormat Kimanis telah memberikan satu statement yang
 jelas tadi berkaitan dengan Dasar Luar Negara Malaysia. Apa yang kita hendak bawa dalam
-hubungan antarabangsa?  Hubungan antarabangsa adalah hubungan perdagangan,
+hubungan antarabangsa? Hubungan antarabangsa adalah hubungan perdagangan,
 hubungan diplomatik, hubungan serantau dan pelbagai kenyataan telah dikeluarkan oleh
 agensi kerajaan dan juga persatuan-persatuan perdagangan khususnya yang melibatkan
 hubungan antara Malaysia dan China. Apabila beberapa perkara yang rasa semacam tidak
@@ -1871,8 +1892,10 @@ keterlaluan kepada negara kerana tanggungan atas perjanjian-perjanjian tertentu 
 membolehkan negara ini dalam keadaan yang kritikal. Jadi saya harap Yang Berhormat
 Padang Terap jelas dalam soal dasar kerangka yang telah kita hidangkan kepada rakyat.
 Terima kasih."
-USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,12.51 tgh.,Dato’ Seri Mahdzir Khalid [Padang Terap],Layak menjadi Menteri MITI. [Ketawa]
-USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,12.51 tgh.,Beberapa Ahli,[Ketawa]
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,12.51 tgh.,Dato’ Seri Mahdzir Khalid [Padang Terap],Layak menjadi Menteri MITI.
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,12.51 tgh.,ANNOTATION,[Ketawa]
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,12.51 tgh.,Beberapa Ahli,
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,12.51 tgh.,ANNOTATION,[Ketawa]
 USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,12.51 tgh.,Tuan Haji Awang bin Hashim [Pendang],"Terima kasih Yang Berhormat Padang
 Terap, terima kasih Yang Berhormat Tuan Yang di-Pertua. Saya hendak menyentuh
 berkenaan dengan hubungan diplomatik yang disebut tadi yang mana akan menimbulkan
@@ -1893,14 +1916,16 @@ Padang Terap."
 USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,12.51 tgh.,Dato’ Seri Mahdzir Khalid [Padang Terap],"Yang Berhormat Kapar, saya tengok
 ucapan baik. Boleh jadi Yang Berhormat Menteri bila Yang Berhormat Port Dickson jadi
 Perdana Menteri nanti."
-USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,12.51 tgh.,Beberapa Ahli,[Ketawa]
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,12.51 tgh.,Beberapa Ahli,
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,12.51 tgh.,ANNOTATION,[Ketawa]
 USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,12.51 tgh.,Dato’ Seri Mahdzir Khalid [Padang Terap],"Hubungan luar negara Malaysia
 mestilah jelas."
 USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,12.51 tgh.,Timbalan Yang di-Pertua [Dato’ Mohd Rashid Hasnon],"Yang Berhormat
 Padang Terap. Yang Berhormat Tuan Yang di-Pertua cakap sini. Yang Berhormat Padang
 Terap masa sudah pukul 1, boleh sambung kemudian dan saya hendak memaklumkan ada
 beberapa pembahas lagi. Kita telah ada lima pembahas."
-USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,12.51 tgh.,Dato’ Seri Mahdzir Khalid [Padang Terap],"[Bercakap tanpa menggunakan
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,12.51 tgh.,Dato’ Seri Mahdzir Khalid [Padang Terap],
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,12.51 tgh.,ANNOTATION,"[Bercakap tanpa menggunakan
 pembesar suara]"
 USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,12.51 tgh.,Timbalan Yang di-Pertua [Dato’ Mohd Rashid Hasnon],"Selepas daripada itu
 ya. Saya cuma hendak memaklumkan ada beberapa lagi. Yang Berhormat Ledang, Yang
@@ -1908,9 +1933,9 @@ Berhormat Hulu Langat, Yang Berhormat Kota Bharu, Yang Berhormat Rembau,Yang
 Berhormat Tuaran, Yang Berhormat Arau dan juga Yang Berhormat Lembah Pantai yang
 akan berbahas selepas daripada ini. Jadi, Ahli-ahli Yang Berhormat, kita berhenti rehat.
 Terima kasih."
-USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,12.51 tgh.,ANNOTATIONS,[Mesyuarat ditempohkan pada pukul 1.01 tengah hari]
-USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,12.51 tgh.,ANNOTATIONS,[Mesyuarat disambung semula pada pukul 2.30 petang]
-USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,12.51 tgh.,ANNOTATIONS,[Timbalan Yang di-Pertua (Tuan Nga Kor Ming) mempengerusikan Mesyuarat]
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,12.51 tgh.,ANNOTATION,[Mesyuarat ditempohkan pada pukul 1.01 tengah hari]
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,12.51 tgh.,ANNOTATION,[Mesyuarat disambung semula pada pukul 2.30 petang]
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,12.51 tgh.,ANNOTATION,[Timbalan Yang di-Pertua (Tuan Nga Kor Ming) mempengerusikan Mesyuarat]
 USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,2.32 ptg.,Timbalan Yang di-Pertua [Tuan Nga Kor Ming],"Ahli-ahli Yang Berhormat,
 perbahasan diteruskan. Saya jemput Yang Berhormat Padang Terap. Yang Berhormat ada
 lima minit lagi. Dipersilakan."
@@ -2198,7 +2223,8 @@ stronger stand, dengan izin, berkenaan dengan Myanmar, kita tidak lagi akan memb
 sokongan kepada State Counsellor Aung San Suu Kyi, maka apakah sebenarnya tindakan
 kita yang kita hendak buat? Kalau sekiranya kerajaan dahulu kita fokus kepada misi
 kemanusiaan, dengan flotila, dengan field hospital dan sebagainya, tetapi sekarang ini..."
-USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,2.51 ptg.,Dr. Azman bin Ismail [Kuala Kedah],[Bangun]
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,2.51 ptg.,Dr. Azman bin Ismail [Kuala Kedah],
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,2.51 ptg.,ANNOTATION,[Bangun]
 USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,2.51 ptg.,Brig. Jen. Khairy Jamaluddin Abu Bakar [Rembau],"Duduk. Sekarang ini kita
 hendak melihat bagaimana kita hendak pastikan bahawa dalam konteks kita akan ada
 constructive engagement dalam ASEAN? Dalam hal ini, kita tidak lagi boleh membiarkan
@@ -2219,7 +2245,8 @@ termasuk dahulu zaman Yang Amat Berhormat Perdana Menteri jadi Perdana Menteri k
 pertama sampailah ke hari ini. Akan tetapi saya cuma ingin menyatakan bahawa ini bukan
 satu-satunya root cause, dengan izin, kepada keganasan yang berlaku di negara pada hari
 ini."
-USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,2.51 ptg.,Tuan Noor Amin bin Ahmad [Kangar],[Bangun]
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,2.51 ptg.,Tuan Noor Amin bin Ahmad [Kangar],
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,2.51 ptg.,ANNOTATION,[Bangun]
 USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,2.51 ptg.,Timbalan Yang di-Pertua [Tuan Nga Kor Ming],"Yang Berhormat Kangar hendak
 mencelah. Tidak dibenarkan."
 USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,2.51 ptg.,Brig. Jen. Khairy Jamaluddin Abu Bakar [Rembau],"Kalau kita melihat kepada
@@ -2397,12 +2424,13 @@ perkara itu. Itu sahaja dari saya, saya ucapkan terima kasih."
 USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1510,Timbalan Yang di-Pertua [Tuan Nga Kor Ming],"Terima kasih Yang Berhormat
 Ledang. Seterusnya saya ingin menjemput Ahli Yang Berhormat yang duduk jauh di hujung
 Dewan. Walaupun jaraknya jauh tetapi dekat di mata, saya menjemput Yang Berhormat Jeli,
-dipersilakan. [Tepuk meja]"
+dipersilakan."
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1510,ANNOTATION,[Tepuk meja]
 USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,3.12 ptg.,Dato’ Sri Mustapa bin Mohamed [Jeli],"Assalammualaikum warahmatullahi
 wabarakatuh. Terima kasih Tuan Yang di-Pertua atas kata-kata semangat walaupun jauh
 tetapi dekat di hati, insya-Allah."
-USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,3.12 ptg.,Timbalan Yang di-Pertua [Tuan Nga Kor Ming],"Dekat di mata, ikut perintah tetap.
-[Ketawa]"
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,3.12 ptg.,Timbalan Yang di-Pertua [Tuan Nga Kor Ming],"Dekat di mata, ikut perintah tetap."
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,3.12 ptg.,ANNOTATION,[Ketawa]
 USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,3.12 ptg.,Dato’ Sri Mustapa bin Mohamed [Jeli],"Terima kasih, dekat di mata, dekat di hati.
 Saya Tuan Yang di-Pertua, merujuk kepada usul Yang Berhormat Menteri Luar. Kerangkanya
 antara lain ialah untuk memperkasakan Kementerian Luar. Seterusnya rujukan kepada
@@ -2512,7 +2540,7 @@ boleh juga diteroka oleh Kementerian Luar. Terima kasih."
 USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1520,Dato’ Sri Mustapa bin Mohamed [Jeli],"Terima kasih Yang Berhormat Kangar,
 terima kasih, Tuan Yang di-Pertua. Akhir sekali saya ingin tekankan tentang pelaksanaan,
 kita semua sedar bahawa apa jua perancangan, indah mana pun kalau lemah sistemnya,
-pelaksanaannya tidak akan ke mana.  Oleh itu saya harap kerajaan serius dalam
+pelaksanaannya tidak akan ke mana. Oleh itu saya harap kerajaan serius dalam
 melaksanakan usul yang dibentang tadi dan harus ada regular reviews, dengan izin untuk
 melihat kelemahan-kelemahan dan mungkin dilaporkan kepada select committee.
 Yang Berhormat Menteri sebut tentang cadangan untuk menubuhkan select
@@ -2524,8 +2552,9 @@ sumber kewangan, kena cukup kekuatan, pastikan bahawa kita benar-benar mendapat
 faedah daripada satu dasar luar yang progresif yang memberi faedah yang cukup baik
 kepada negara kita. Terima kasih, Tuan Yang di-Pertua."
 USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1520,Timbalan Yang di-Pertua [Tuan Nga Kor Ming],"Terima kasih Yang Berhormat
-Jeli atas ucapan yang berpijak atas bumi yang nyata dan sudah jadi bebas. [Tepuk]
-Seterusnya, saya menjemput Yang Berhormat Klang. Sila."
+Jeli atas ucapan yang berpijak atas bumi yang nyata dan sudah jadi bebas."
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1520,ANNOTATION,[Tepuk]
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1520,Timbalan Yang di-Pertua [Tuan Nga Kor Ming],"Seterusnya, saya menjemput Yang Berhormat Klang. Sila."
 USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,3.23 ptg.,Tuan Charles Anthony Santiago [Klang],"Terima kasih, Tuan Yang di-Pertua.
 Tuan Yang di-Pertua, saya ingin mengucapkan tahniah kepada kerajaan baru Malaysia
 khususnya Menteri Luar Negeri kerana membentangkan usul kerangka dasar luar negeri
@@ -2627,7 +2656,8 @@ mereka telah dibunuh dan dibuang dekat sungai. This is actually an unacceptable 
 and our region, we kept quiet, except for Malaysia. I must say even though it’s the former
 government, we must thank and therefore I think Malaysia must continue to put pressure
 kepada Myanmar’s Government and bring them to the International Criminal Court."
-USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1530,Tuan Su Keong Siong [Kampar],[Bangun]
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1530,Tuan Su Keong Siong [Kampar],
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1530,ANNOTATION,[Bangun]
 USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1530,Tuan Charles Santiago [Klang],"Juga kalau saya boleh cadang supaya we also
 support in having arms banned against The Myanmar Army. Ini saya fikir adalah penting.
 Walaupun kerajaan baru di Malaysia mengatakan bahawa kita terus menghormati prinsip
@@ -2661,7 +2691,7 @@ USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA B
 Klang. Sekarang saya menjemput suara dari Sabah dan Sarawak, Yang Berhormat Tuaran
 dipersilakan."
 USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,3.34 ptg.,Datuk Seri Panglima Madius Tangau [Tuaran],"Terima kasih Tuan Yang di-
-Pertua.  Saya bangun untuk turut membahas usul yang dibawa oleh Menteri Luar
+Pertua. Saya bangun untuk turut membahas usul yang dibawa oleh Menteri Luar
 mencadangkan supaya Dewan ini bersetuju dengan hala tuju dasar luar Malaysia yang baru
 seperti mana yang telah dinyatakan dalam ucapan Yang Amat Berhormat Perdana Menteri
 di Perhimpunan Bangsa-bangsa Bersatu yang Ke-73 di New York pada 28 September 2018
@@ -2792,10 +2822,16 @@ Saya ingin memetik, kalau kita boleh lihat fasal maqasid syariah yang ingin kita
 terapkan dalam dasar-dasar kerajaan, yang mana dasar ini tidak perlu ditakuti oleh rakyat
 Malaysia dan penjawat-penjawat awam ketika membantu untuk melaksanakan dasar yang
 kita bina ini. Ini kerana dalam maqasid syariah itu, kalau Imam Ibnu Qayyim pernah
-menyebutkan dengan izin, [Berucap dalam bahasa Arab] “Untuk mencapai dan
+menyebutkan dengan izin,"
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,3.44 ptg.,ANNOTATION,[Berucap dalam bahasa Arab]
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,3.44 ptg.,Ustaz Haji Hasanuddin bin Mohd Yunus [Hulu Langat],"“Untuk mencapai dan
 melaksanakan kepentingan orang ramai bukan hanya kepentingan orang Islam tetapi
-kepentingan orang ramai...”, [Berucap dalam bahasa Arab] “...untuk orang ramai, untuk
-hamba-hamba Tuhan. Kedua, [Berucap dalam bahasa Arab] dan juga dengan izin, iaitu
+kepentingan orang ramai...”,"
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,3.44 ptg.,ANNOTATION,[Berucap dalam bahasa Arab]
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,3.44 ptg.,Ustaz Haji Hasanuddin bin Mohd Yunus [Hulu Langat],"“...untuk orang ramai, untuk
+hamba-hamba Tuhan. Kedua,"
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,3.44 ptg.,ANNOTATION,[Berucap dalam bahasa Arab]
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,3.44 ptg.,Ustaz Haji Hasanuddin bin Mohd Yunus [Hulu Langat],"dan juga dengan izin, iaitu
 dengan juga untuk menolak sebarang yang boleh merugikan sebarang yang boleh
 merosakkan kepentingan orang ramai.
 Dua perkara ini menjadi satu dasar dalam ilmu maqasid syariah iaitu kita ingin
@@ -2857,7 +2893,9 @@ di depan Baginda ialah jemaah haji yang terdiri daripada orang-orang Islam, teta
 beberapa perenggan yang di hadapannya orang Islam tetapi Baginda menyebut tentang
 manusia dan ini lah yang saya katakan masuk dalam maqasid syariah yang ingin kita
 terapkan dalam negara kita ini.
-Apabila disebutkan, [Membaca sepotong ayat Al-Quran] sehingga akhir. Prophet
+Apabila disebutkan,"
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1550,ANNOTATION,[Membaca sepotong ayat Al-Quran]
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1550,Ustaz Haji Hasanuddin bin Mohd Yunus [Hulu Langat],"sehingga akhir. Prophet
 Muhammad SAW bersabda, “Wahai manusia... sedangkan di hadapannya jemaah haji, orang
 Islam, tetapi seolah-olah dia berpesan kepada manusia dan berpesan kepada orang Islam
 supaya memastikan bahawa sesungguhnya darah manusia iaitu nyawa, harta mereka juga
@@ -2952,9 +2990,9 @@ kesiapsagaan Wisma Putra, sama ada dari segi sumber manusia ataupun dari segi
 peruntukan yang diperlukan memandangkan cabaran yang telah disenaraikan? Sebenarnya
 banyak kerjanya. Jika tidak mencukupi, apakah yang akan diusahakan? Memandangkan
 keadaan ekonomi yang telah ditinggalkan kepada kita daripada pentadbiran yang terdahulu."
-USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1600,ANNOTATIONS,"[Timbalan Yang di-Pertua (Dato' Mohd Rashid Hasnon) mempengerusikan
-Mesyuarat]
-Pada masa yang sama, saya juga ingin bertanya berkaitan dengan isu koordinasi.
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1600,ANNOTATION,"[Timbalan Yang di-Pertua (Dato' Mohd Rashid Hasnon) mempengerusikan
+Mesyuarat]"
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1600,Tuan Ahmad Fahmi bin Mohamed Fadzil [Lembah Pantai],"Pada masa yang sama, saya juga ingin bertanya berkaitan dengan isu koordinasi.
 Ini kerana, Yang Berhormat Menteri, saya pasti kita semua sedar bila mana kita lihat kepada
 beberapa perkara seperti contohnya Trans-Pacific Partnership dahulu, TPP dan juga isu-isu
 keselamatan seperti Yaman, seperti Syria dan juga isu-isu berkaitan dengan rantau Asia
@@ -3009,7 +3047,8 @@ mengalami satu pengalaman dihalau oleh pihak ekstremis di Rakhine ketika kita me
 bantuan. Mereka mengatakan bahawa kamu daripada luar, daripada Malaysia tidak perlu
 campur tangan dalam urusan kami. Padahal kita menyatakan ketika ini kita sedang
 membantu kepada manusia yang tertindas di wilayah sana. Terima kasih."
-USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1600,Tuan Hassan bin Abdul Karim [Pasir Gudang],[Bangun]
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1600,Tuan Hassan bin Abdul Karim [Pasir Gudang],
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1600,ANNOTATION,[Bangun]
 USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1600,Tuan Ahmad Fahmi bin Mohamed Fadzil [Lembah Pantai],"Terima kasih Yang
 Berhormat Sik. Saya tertarik dengan isu ini. Mungkin pendirian daripada Wisma Putra,
 Kementerian Luar Negeri boleh perjelaskan apa sebenarnya yang kita maksudkan bila kita
@@ -3042,7 +3081,9 @@ neutral, baik dengan jiran. Saya hendak dengar sangat apa Yang Berhormat Menteri
 Negeri hendak bawa kata baharu ini, kerangka baharu ini. Kerajaan baharu tetapi Malaysia
 macam itu juga, tidak ada beza. Tidak nampak apa yang baharu. Tengok jalan raya serupa
 sahaja. Bangunan di luar, bangunan itu juga. Sekolah, hospital itu juga. Apa yang baharu?
-Yang baharu... [Disampuk] Kita tengah tunggu lagi."
+Yang baharu..."
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1600,ANNOTATION,[Disampuk]
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1600,Dato’ Sri Haji Tajuddin bin Abdul Rahman [Pasir Salak],Kita tengah tunggu lagi.
 USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1600,Seorang Ahli,Tidak ada rasuah sudah.
 USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1600,Dato’ Sri Haji Tajuddin bin Abdul Rahman [Pasir Salak],"Apabila bercakap soal
 dasar luar, I am sure, dengan izin, Yang Berhormat Menteri Luar Negeri akan bercakap soal
@@ -3171,7 +3212,8 @@ ada celahan Yang Berhormat."
 USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,4.14 ptg.,Dato’ Seri Dr. Shahidan bin Kassim [Arau],Celah mana?
 USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,4.14 ptg.,Puan Kasthuriraani a/p Patto [Batu Kawan],"Di sini, Yang Berhormat Batu Kawan."
 USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,4.14 ptg.,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"Saya sudah puji you, cukuplah."
-USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,4.14 ptg.,Puan Kasthuriraani a/p Patto [Batu Kawan],"Apa dia, mana ada puji. [Ketawa]"
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,4.14 ptg.,Puan Kasthuriraani a/p Patto [Batu Kawan],"Apa dia, mana ada puji."
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,4.14 ptg.,ANNOTATION,[Ketawa]
 USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,4.14 ptg.,Dato’ Seri Dr. Shahidan bin Kassim [Arau],You sebut sembilan tahun.
 USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,4.14 ptg.,Puan Kasthuriraani a/p Patto [Batu Kawan],"Saya hendak menjelaskan, 61 tahun
 memang kami telah mewarisi isu-isu daripada Barisan Nasional. Akan tetapi sembilan tahun
@@ -3208,7 +3250,9 @@ parti-parti politik Asia daripada 56 buah negara Asia berkumpul untuk mengadakan
 konvensyen tiga kali setahun. Malaysia harus..."
 USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1620,Dato’ Dr. Noraini Ahmad [Parit Sulong],Boleh cakap siapa pengerusi dia?
 USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1620,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"Pengerusinya sayalah, ada interest
-sedikitlah. [Dewan ketawa] Saya pengerusi mewakili UMNO jadi adalah wakil DAP, PKR,
+sedikitlah."
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1620,ANNOTATION,[Dewan ketawa]
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1620,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"Saya pengerusi mewakili UMNO jadi adalah wakil DAP, PKR,
 PAS, semua parti-parti boleh hadir. Konvensyen yang berikutnya adalah di Moscow pada
 bulan November ini. Siapa yang hendak hadir beritahu, penginapan free dan lain-lain lagi ya."
 USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1620,Tuan Noor Amin bin Ahmad [Kangar],Minta penjelasan sedikit.
@@ -3262,7 +3306,7 @@ supaya kita tidak membiarkan kenyataan kita hanya setakat kenyataan tetapi kita 
 kena bekerja.
 Dalam negara juga kita hendak menunjukkan bahawa kita betul-betul mengerakkan
 anti keganasan dan sebagainya. Bahagian anti keganasan Bukit Aman kena memastikan
-supaya  mereka juga tidak memihak, jangan ada bahagian keganasan Bukit Aman
+supaya mereka juga tidak memihak, jangan ada bahagian keganasan Bukit Aman
 mentafsirkan kitab Ibnu Taymiyyah. Mana boleh, polis tidak boleh polis bukan ulama untuk
 mentafsirkan kitab Ibnu Taymiyyah. Dia kata Ibnu Taymiyyah telah ditulis beratus tahun dan
 ditafsirkan oleh ulama-ulama dan kita tidak ada masalah dari segi tafsiran tetapi di sini Bukit
@@ -3311,8 +3355,9 @@ luar tadi menyebut bahawa ini pasal UNCLOS dan sebagainya. China tidak mengiktir
 UNCLOS. Dia tidak mengiktiraf UNCLOS jadi macam mana kita dok pegang kepada
 UNCLOS dalam keadaan dia tidak mengiktiraf. Dia pergi ke Philippines, dia tidak iktiraf
 UNCLOS. Laut China Selatan ini Tuan Yang di-Pertua, untuk makluman Tuan Yang di-Pertua
-dari segi general knowledge sahaja kan. [Dewan ketawa]
-Malaysia, puak-puak ini banyak tidak faham semua. Malaysia dipisahkan oleh laut
+dari segi general knowledge sahaja kan."
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1620,ANNOTATION,[Dewan ketawa]
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1620,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"Malaysia, puak-puak ini banyak tidak faham semua. Malaysia dipisahkan oleh laut
 yang bukan hak kita. Laut China Selatan daripada Vietnam sampai 200 batu nautika,
 Indonesia daripada Pulau Natuna 200 batu nautika akhirnya telah memisahkan Malaysia
 Barat dengan juga Malaysia Timur. Kita tidak bersambung pun laut kita. Jadi Laut China
@@ -3327,7 +3372,7 @@ Laut China Selatan ialah dipunyai oleh negara-negara Vietnam, Indonesia, Malaysi
 Philippines bukan orang lain."
 USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1630,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"Jadi, kalau sekiranya ada kapal asing datang ke sini, maka inilah sampai masanya
 harus selesaikan perkara ini. Orang Sarawak pertikai, kenapa kita tidak boleh pertahankan
-masalah keselamatan yang melibatkan negeri Sarawak?  Mereka juga memberikan
+masalah keselamatan yang melibatkan negeri Sarawak? Mereka juga memberikan
 sumbangan kepada Kerajaan Persekutuan. Setiap kali kita jawab, Wisma Putra akan jawab..."
 USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1630,Timbalan Yang di-Pertua [Dato' Mohd Rashid Hasnon],"Yang Berhormat Arau,
 time’s up..."
@@ -3335,7 +3380,9 @@ USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA B
 bukan jawapan. Jawapannya, kita kena tangani kapal ini berada di sini. Kenapa mereka
 berada di sini pada tahun 2013? Saya ambil tindakan. Akan tetapi, itulah kemampuan yang
 saya buat selepas itu kerajaan tidak bersambung. Kalau, bersambung, saya akan mengambil
-tindakan yang lagi hebat. [Dewan ketawa] Akan tetapi, kita minta supaya kerajaan ini
+tindakan yang lagi hebat."
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1630,ANNOTATION,[Dewan ketawa]
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1630,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"Akan tetapi, kita minta supaya kerajaan ini
 teruskan usaha ini dan pastikan tidak ada kapal asing ataupun kapal pemerintah negara asing
 berada di dalam kawasan laut kita. Terima kasih, Tuan Yang di-Pertua."
 USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1630,Timbalan Yang di-Pertua [Dato' Mohd Rashid Hasnon],"Terima kasih, Yang
@@ -3361,7 +3408,7 @@ Akan tetapi, janji, pledge untuk menandatangani dokumen-dokumen hak asasi
 manusia ini merupakan satu keazaman politik yang begitu kuat dan untuk menunjukkan
 kepada luar negara, bahawa kita komited untuk melindungi hak asasi manusia, walaupun kita
 mempunyai kesukaran. Ya lah, kalau dari respons Yang Berhormat Rembau, kita tahu
-kenapa kerajaan dahulu tidak mahu meratifikasikan.  Ini kerana, mereka tidak mahu
+kenapa kerajaan dahulu tidak mahu meratifikasikan. Ini kerana, mereka tidak mahu
 menghadapi masalah dan kesukaran itu. Mereka tidak mahu menangani masalah itu dan
 mereka sapu ke bawah permaidani, sweep under the carpet.
 Kalau tadi Yang Berhormat Rembau, hendak cakap dia setuju atau tidak setuju
@@ -3407,7 +3454,9 @@ USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA B
 dengan Yang Berhormat Tanjong Malim. Saya tanya perkara yang simple, setuju kah tidak
 kalau memberikan kesan kepada peruntukan Perlembagaan? Yang Berhormat Tanjong
 Malim berikan jawapan samar. Samalah."
-USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,4.31 ptg.,Tuan Chang Lih Kang [Tanjong Malim],"Mana sama. [Ketawa] Tidak apa, tidak
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,4.31 ptg.,Tuan Chang Lih Kang [Tanjong Malim],Mana sama.
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,4.31 ptg.,ANNOTATION,[Ketawa]
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,4.31 ptg.,Tuan Chang Lih Kang [Tanjong Malim],"Tidak apa, tidak
 apa. Maksudnya, kita apabila mahu meratifikasikan convention itu kita kena melalui satu
 proses yang panjang termasuk legislative process. Maksudnya, akan dibawa ke dalam
 Dewan yang mulia ini untuk kita sama-sama membuat keputusan. Kalau Yang Berhormat
@@ -3754,7 +3803,9 @@ selesa bincang soal hak asasi manusia. Saya bab ini tahulah sedikit sebab saya p
 anggota kerajaan yang dulu."
 USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1710,Menteri Luar Negeri [Dato’ Saifuddin Abdullah],"Sebut sahaja hak asasi manusia, masa saya jadi Timbalan Menteri Pengajian Tinggi,
 nak pinda Seksyen 15 AUKU pun Kabinet disiplinkan saya. Usah nak cerita benda-benda
-lain, Ahli-ahli Yang Berhormat. Kena panggil dengan Perdana Menteri. [Tepuk] Nak cerita
+lain, Ahli-ahli Yang Berhormat. Kena panggil dengan Perdana Menteri."
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1710,ANNOTATION,[Tepuk]
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1710,Menteri Luar Negeri [Dato’ Saifuddin Abdullah],"Nak cerita
 pinda Seksyen 15 AUKU sahaja. Kena peringatan oleh Kabinet. Selepas itu nak mengaku
 kerajaan yang dahulu tidak mengabaikan hak asasi manusia. Ahli-ahli Yang Berhormat, nak
 syarah biar tepat pada – ukur baju di badan sendirilah.
@@ -3774,8 +3825,9 @@ jawatankuasa teknikal ini, dia ulang-ulang alasan untuk tidak ratifikasi daripad
 untuk ratifikasi. Apa kaedah mencari jalan untuk ratifikasi? Saya bagi satu contoh. Disebut
 oleh Yang Berhormat Tanjung Malim tadi tentang CAT. Tentang anti-torture. Tentulah
 bermula dengan moratorium tentang capital punishment. Ini kerajaan sekarang buat.
-Kerajaan dahulu tidak buat. [Tepuk]
-Jadi kena ada itu. Kena ada proses itu. Kena diadakan. Jadi ini yang sedang kita
+Kerajaan dahulu tidak buat."
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1710,ANNOTATION,[Tepuk]
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1710,Menteri Luar Negeri [Dato’ Saifuddin Abdullah],"Jadi kena ada itu. Kena ada proses itu. Kena diadakan. Jadi ini yang sedang kita
 lakukan. Sebab itu saya kata, saya berseloroh dengan jawatankuasa teknikal itu, Tuan Yang
 di-Pertua. Saya kata agaknya kerja tukar nama. Tidak boleh guna jawatankuasa teknikal.
 Asyik dok cari alasan teknikal sahaja. Dia kena ubah nama agaknya jadi jawatankuasa
@@ -3791,7 +3843,7 @@ penghujahan. Ada waktunya untuk tidak ratifikasi. Kita overstretch Perkara 153 s
 seolah-olah Perkara 153 meliputi segala benda di bawah matahari sedangkan Perkara 153
 tidak meliputi semua benda matahari. Itu maksudnya. Jadi kalau itu digunakan, maka sampai
 bila pun tidak akan selesai usaha untuk ratifikasi.
-Alasan yang kedua yang selalu digunakan ialah alasan agama.  Sekali lagi
+Alasan yang kedua yang selalu digunakan ialah alasan agama. Sekali lagi
 pendekatan hurufiah yang digunakan atau pendekatan Maqasid Syariah yang digunakan.
 Pendekatan yang lebih mementingkan the higher objective yakni objektif yang lebih tinggi
 atau membaca secara literal termasuklah pemahaman tentang misalnya nikah bawah umur
@@ -3821,7 +3873,7 @@ raja. Jadi saya sebut itu bukan kerana nak cari alasan.
 Saya nak pergi terus kepada the crux of the matter dalam hal ini. Dalam hal ini, sekian
 lama jawatankuasa teknikal di Wisma Putra baik di kamar Peguam Negara, memang inilah
 the crux of the matter yang tidak membenarkan kita untuk meratifikasi at least this one
-convention.  Jadi dalam hal ini, walaupun apa jua usaha kita untuk menggalakkan
+convention. Jadi dalam hal ini, walaupun apa jua usaha kita untuk menggalakkan
 engagement dan sebagainya, kita akan pulang kepada perkara-perkara yang telah dipateri
 kemas ini yang mempunyai masalah.
 Jadi bagi saya, saya iktiraf usaha ke arah ratifikasi. But it still comes back to that. Jadi
@@ -3867,8 +3919,9 @@ Pada Mac 2016, Pesuruhjaya Tinggi PBB untuk Hak Asasi Manusia menyatakan
 kekhuatirannya dengan kekangan terhadap ruang demokratik di Malaysia, ini termasuk
 penggubalan dan pelaksanaan Akta Majlis Keselamatan Negara dan Akta Pencegahan
 Keganasan serta pemenjaraan Yang Berhormat Port Dickson yang dinilai oleh PBB sebagai
-arbitrary detention. [Dewan tepuk]
-Pelapor-pelapor khas PBB bagi isu-isu hak asasi manusia juga sentiasa menghantar
+arbitrary detention."
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1720,ANNOTATION,[Dewan tepuk]
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1720,Dato’ Saifuddin Abdullah,"Pelapor-pelapor khas PBB bagi isu-isu hak asasi manusia juga sentiasa menghantar
 aduan kepada Kerajaan BN atas pelbagai kejadian. Ini termasuk penahanan Yang Berhormat
 Petaling Jaya di bawah SOSMA, pengharaman laman-laman–– semasa itu dia belum lagi
 Yang Berhormat, sekarang Yang Berhormat. Pengharaman laman-laman web yang
@@ -3881,12 +3934,15 @@ pada tahun 2016, bukan pada tahun 2017. Mungkin Yang Berhormat Kimanis boleh mer
 kepada panggilan telefon yang tergesa-gesa oleh Menteri Luar Negeri sebuah negara.
 Tuan Yang di-Pertua, lain kali duduk Dewan ini biar beradab sikit. Kalau tidak, saya
 malu jadi Menteri Luar Negeri mengganti Menteri Luar Negeri yang ganas dan kasar macam
-ini. [Dewan tepuk]
-Soal China dibangkitkan, dari segi perdagangan Perdana Menteri telah menjawab
+ini."
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1720,ANNOTATION,[Dewan tepuk]
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1720,Dato’ Saifuddin Abdullah,"Soal China dibangkitkan, dari segi perdagangan Perdana Menteri telah menjawab
 sebelum ini dan juga pagi tadi. Tentang keselamatan Laut China Selatan, saya berterima
 kasih kepada Yang Berhormat Arau, sebelum ini pun saya sudah jawab soalan Yang
 Berhormat. Pada masa itu Yang Berhormat ada soalan tapi masa itu Yang Berhormat tidak
-sihat. Jadi– [ketawa] tapi sudah dijawab dan saya difahamkan Yang Berhormat pun tahu
+sihat. Jadi–"
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1720,ANNOTATION,[ketawa]
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1720,Dato’ Saifuddin Abdullah,"tapi sudah dijawab dan saya difahamkan Yang Berhormat pun tahu
 jawapan itu.
 Soal UNCLOS, itu mahu tidak mahu, kita harus menerimanya. Sekarang ini kita
 sedang berusaha untuk meningkatkan daripada hanya ada declaration of conduct supaya
@@ -4072,8 +4128,8 @@ semasa, setiap tahun Kerajaan Malaysia memberikan bantuan kepada United Nations 
 and Works Agency (UNRWA) dan lebih dahsyat sekarang ini UNRWA langsung tidak dapat
 bantuan daripada kuasa besar seperti Amerika Syarikat. Tanggungjawab kita besar dan kita
 akan teruskan bantuan ini."
-USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1740,ANNOTATIONS,"[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
-Sungai Petani ada menyebut tentang kita perlu menjadi champion kepada negara-
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1740,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1740,Dato’ Saifuddin Abdullah,"Sungai Petani ada menyebut tentang kita perlu menjadi champion kepada negara-
 negara Islam seperti dahulu. Saya yakin perkara ini akan diteruskan, kita terus menjuarai isu-
 isu negara-negara Islam dan negara-negara kecil tetapi di samping kaedah-kaedah yang
 sedia ada, saya fikir, Kerajaan Pakatan Harapan juga akan champion isu-isu negara Islam
@@ -4300,7 +4356,9 @@ pendekatan yang akan diambil oleh kerajaan? Terima kasih."
 USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1800,Dato’ Saifuddin Abdullah,"Kerajaan tentunya tidak akan kompromi soal Sabah ini.
 Filipina, dia buatlah penstrukturan semula dan dia kempen macam mana pun di kalangan
 rakyat mereka, kita tidak akan sekali-kali membenarkan walau seinci pun bumi Sabah
-terlepas daripada Persekutuan Malaysia. [Dewan tepuk] Kita mengiktiraf bahawa Sabah dan
+terlepas daripada Persekutuan Malaysia."
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1800,ANNOTATION,[Dewan tepuk]
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1800,Dato’ Saifuddin Abdullah,"Kita mengiktiraf bahawa Sabah dan
 Sarawak bersama-sama dengan Semenanjung Tanah Melayu membentuk Persekutuan
 Malaysia yang ada pada hari ini. Jadi, jaminan daripada kerajaan ialah kita tidak akan sekali-
 kali melayan permintaan daripada mereka.
@@ -4326,13 +4384,15 @@ kami tidak cukup RM133 juta. Saya tulis kepada Menteri Kewangan selepas berbinca
 dengan Yang Amat Berhormat Perdana Menteri. Menteri Kewangan kata, “Kita memang tidak
 ada duit”, tetapi dalam pada tidak ada duit itu, dia bantu juga. Saya minta RM50 juta, dia bagi
 RM40 juta. Terima kasihlah Menteri Kewangan. Saya sudah puji ini, lepas ini bagi lah banyak
-sedikit. [Dewan ketawa]
-Saya hendak cerita, saya hendak bagi tiga contoh saja. Ini kebajikan pegawai-
+sedikit."
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1800,ANNOTATION,[Dewan ketawa]
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1800,Dato’ Saifuddin Abdullah,"Saya hendak cerita, saya hendak bagi tiga contoh saja. Ini kebajikan pegawai-
 pegawai kita di Malawakil. Tuan Yang di-Pertua, cuba bayangkan, oleh sebab tidak cukup
 bajet, kita ada duta yang dihantar untuk lebih daripada satu negara. Jadi dia duduk negara
 ‘A’, tetapi dia kena jaga negara ‘B’. Dia hendak terbang pergi ke negara ‘B’ untuk menghantar
-credentials itu pun, Wisma Putra kata tangguh dulu sebab duit tiada. Punyalah azabnya, daif
-[Ketawa]. Dia boleh memandu kereta, tetapi kena jaga standard lah. Takkanlah duta kita pergi
+credentials itu pun, Wisma Putra kata tangguh dulu sebab duit tiada. Punyalah azabnya, daif"
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1800,ANNOTATION,[Ketawa]
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1800,Dato’ Saifuddin Abdullah,". Dia boleh memandu kereta, tetapi kena jaga standard lah. Takkanlah duta kita pergi
 naik kereta lapan jam ke negara ‘B’. Dia kenalah naik kapal terbang. Kalau naik kapal terbang
 takkan hendak naik ekonomi. Dia kenalah naik Business Class. Bukan hendak suruh dia stylo,
 tetapi hendak jaga statuslah. Takkanlah daif sangat.
@@ -4343,7 +4403,9 @@ pengangkutan dia. Keduanya, ada yang terpaksa melalui kawasan-kawasan yang mungk
 tidak begitu sesuai untuk seorang pegawai diplomatik. Ada kuarters kita yang rosak tetapi ini
 nasib baik Menteri Kewangan sudah bagi duit, kami boleh repair lah.
 Contoh yang paling tragis ialah kuarters pegawai kita di Paris yang bocor, sampai ia
-ganggu rumah sebelah, rumah sebelah sudah saman kita sudah [Ketawa]. Jadi ini apa
+ganggu rumah sebelah, rumah sebelah sudah saman kita sudah"
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1800,ANNOTATION,[Ketawa]
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1800,Dato’ Saifuddin Abdullah,". Jadi ini apa
 namanya, keadaan. Jadi Yang Berhormat Menteri Kewangan, dengarlah keluhan Menteri
 Luar Negeri yang telah disampaikan oleh Yang Berhormat Lembah Pantai. Saya tidak plan
 dia pun. Dia dengan penuh prihatin menyebut soal ini.
@@ -4422,8 +4484,9 @@ kerja-kerja yang lebih baik bagi membantu pelarian dan mereka yang menjadi mangs
 Rakhine State yakni orang-orang Rohingya. Yang Berhormat Arau tak nak mencelah kah?
 Hendak sokong bajet kah, apa-apa? Tak payah lah, tak payah lah. Saya tanya sahaja. Tuan
 Yang di-Pertua, saya ucapkan banyak-banyak terima kasih.."
-USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1810,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"Sedikit, sedikit sahaja. [Dewan riuh]
-Saya harap Menteri Luar ini jadi Menteri Luar yang hebat seperti Allahyarham Ghazali Shafie,
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1810,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"Sedikit, sedikit sahaja."
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1810,ANNOTATION,[Dewan riuh]
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1810,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"Saya harap Menteri Luar ini jadi Menteri Luar yang hebat seperti Allahyarham Ghazali Shafie,
 jadi macam tu ya. Kita hendak bertaraf itu ya.Ini ialah di antara dan saya ingat Yang
 Berhormat nampaknya jalan ke situ ada, jalan yang agak dekat di situ. Akan tetapi, Menteri
 Kewangan kena tolonglah ya. Kalau tidak nanti apa yang diucapkan oleh Yang Amat
@@ -4476,11 +4539,13 @@ waktunya kita berkalih sedikit dan kita membuat pengecualian daripada dasar demi
 keselamatan negara dan demi untuk memastikan kepentingan negara di luar, di peringkat
 antarabangsa sentiasa terjamin. Terima kasih Tuan Yang di-Pertua, Assalammualaikum
 warahmatullahi wabarakatuh."
-USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1810,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Menteri. [Dewan tepuk] Ahli-
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1810,Tuan Yang di-Pertua,Terima kasih Yang Berhormat Menteri.
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1810,ANNOTATION,[Dewan tepuk]
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1810,Tuan Yang di-Pertua,"Ahli-
 ahli Yang Berhormat, sekarang saya kemukakan masalah kepada Majlis bagi diputuskan.
 Masalahnya ialah bahawa usul Yang Berhormat Menteri Luar Negeri seperti yang tertera
-dalam Aturan Urusan Mesyuarat hari ini di bawah Perkara 1, hendaklah disetujukan.
-[Usul dikemuka bagi diputuskan; dan disetujukan]"
+dalam Aturan Urusan Mesyuarat hari ini di bawah Perkara 1, hendaklah disetujukan."
+USUL MENTERI LUAR NEGERI DI BAWAH P.M. 27(3),KERANGKA ASAS DASAR LUAR MALAYSIA BAHARU,,■1810,ANNOTATION,[Usul dikemuka bagi diputuskan; dan disetujukan]
 USUL MENTERI KEWANGAN,Akta Pendanaan Kerajaan 1983,,6.19 ptg.,Menteri Kewangan [Tuan Lim Guan Eng],"Terima kasih Tuan Yang di-Pertua.
 Tuan Yang di-Pertua, saya mohon membentangkan satu resolusi berkaitan ketetapan
 mengenai pemindahan wang Terbitan Pelaburan Kerajaan Malaysia (MGII) daripada Akaun
@@ -4496,7 +4561,7 @@ yang terdapat dalam akaun Kumpulan Wang Pembangunan adalah melalui pindahan dari
 Akaun Pinjaman Disatukan.
 Seksyen 4(b) Akta Pendanaan Kerajaan 1983 memperuntukkan bahawa terimaan
 daripada Terbitan Pelaburan Kerajaan hanya boleh dipindahkan kepada Kumpulan Wang
-Pembangunan setelah mendapat kelulusan Dewan Rakyat dengan resolusi.  Untuk
+Pembangunan setelah mendapat kelulusan Dewan Rakyat dengan resolusi. Untuk
 makluman Ahli Yang Berhormat, sekuriti pinjaman berasaskan syariah ini telah diterbitkan
 oleh kerajaan di bawah Akta Pendanaan Kerajaan 1983 dan antara tujuan utama terbitan
 berasaskan syariah adalah bagi meningkatkan pembangunan pasaran kewangan Islam.
@@ -4511,8 +4576,8 @@ USUL MENTERI KEWANGAN,Akta Pendanaan Kerajaan 1983,,6.19 ptg.,Tuan Yang di-Pertu
 untuk dibahas. Akan tetapi saya tidak pun menerima senarai pembahas, tidak ada bahas?
 Ahli-ahli Yang Berhormat, sekarang saya kemukakan masalah kepada Majlis bagi
 diputuskan. Masalahnya ialah bahawa usul Yang Berhormat Menteri Kewangan seperti yang
-tertera dalam Aturan Urusan Mesyuarat hari ini di bawah Perkara 2, hendaklah disetujukan.
-[Usul dikemuka bagi diputuskan; dan disetujukan]
-Ahli-ahli Yang Berhormat, mesyuarat hari ini ditangguhkan sehingga jam 10.00 pagi,
+tertera dalam Aturan Urusan Mesyuarat hari ini di bawah Perkara 2, hendaklah disetujukan."
+USUL MENTERI KEWANGAN,Akta Pendanaan Kerajaan 1983,,6.19 ptg.,ANNOTATION,[Usul dikemuka bagi diputuskan; dan disetujukan]
+USUL MENTERI KEWANGAN,Akta Pendanaan Kerajaan 1983,,6.19 ptg.,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, mesyuarat hari ini ditangguhkan sehingga jam 10.00 pagi,
 hari Selasa 16 Oktober 2018. Assalammualaikum warahmatullahi wabarakatuh."
-USUL MENTERI KEWANGAN,Akta Pendanaan Kerajaan 1983,,6.19 ptg.,ANNOTATIONS,[Dewan ditangguhkan pada pukul 6.22 petang]
+USUL MENTERI KEWANGAN,Akta Pendanaan Kerajaan 1983,,6.19 ptg.,ANNOTATION,[Dewan ditangguhkan pada pukul 6.22 petang]

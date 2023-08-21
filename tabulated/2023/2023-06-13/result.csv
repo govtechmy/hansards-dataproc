@@ -1,5 +1,5 @@
 level_1,level_2,level_3,timestamp,author,speech
-,,,10.00 pagi,ANNOTATIONS,"[Timbalan Yang di-Pertua (Dato’ Ramli bin Dato’ Mohd Nor)
+,,,10.00 pagi,ANNOTATION,"[Timbalan Yang di-Pertua (Dato’ Ramli bin Dato’ Mohd Nor)
 mempengerusikan Mesyuarat]"
 ,,,10.00 pagi,WAKTU PERTANYAAN-PERTANYAAN MENTERI Dato' Dr. Zulkafperi bin Hanapi [Tanjong Karang],"Peraturan Dewan. Tuan
 Yang di-Pertua."
@@ -47,12 +47,16 @@ Yang Amat Berhormat Perdana Menteri dan Menteri Kewangan menjawab ..."
 ,,,10.00 pagi,Timbalan Yang di-Pertua [Dato’ Ramli bin Dato' Mohd Nor],"Yang
 Berhormat Tanjong Karang, saya guna bahasa yang paling senang. Apa dia isunya?
 Direct to the point. Kalau nak cerita, panjang itu."
-,,,10.00 pagi,Tuan Mohd Sany bin Hamzan [Hulu Langat],"[Bercakap tanpa pembesar
-suara] Kalau nak ceramah, tunggu malam."
+,,,10.00 pagi,Tuan Mohd Sany bin Hamzan [Hulu Langat],
+,,,10.00 pagi,ANNOTATION,"[Bercakap tanpa pembesar
+suara]"
+,,,10.00 pagi,Tuan Mohd Sany bin Hamzan [Hulu Langat],"Kalau nak ceramah, tunggu malam."
 ,,,10.00 pagi,Timbalan Yang di-Pertua [Dato’ Ramli bin Dato' Mohd Nor],"Ha, tahu pun
 Yang Berhormat Hulu Langat."
-,,,10.00 pagi,Tuan Mohd Sany bin Hamzan [Hulu Langat],"[Bercakap tanpa pembesar
-suara] Kalau nak ceramah, tunggu malam."
+,,,10.00 pagi,Tuan Mohd Sany bin Hamzan [Hulu Langat],
+,,,10.00 pagi,ANNOTATION,"[Bercakap tanpa pembesar
+suara]"
+,,,10.00 pagi,Tuan Mohd Sany bin Hamzan [Hulu Langat],"Kalau nak ceramah, tunggu malam."
 ,,,10.00 pagi,Dato' Dr. Zulkafperi bin Hanapi [Tanjong Karang],"Terima kasih. Yang
 Amat Berhormat Perdana Menteri menjawab, “Terima kasih Yang Berhormat Bagan
 Serai. Pertama, memang telah dirujuk Ke Bawah Duli Yang Maha Mulia Yang di-
@@ -79,15 +83,20 @@ Yang Berhormat Tanjong Karang. Menghala ke situ kan?"
 saya. Alright."
 ,,,10.00 pagi,Dato' Dr. Zulkafperi bin Hanapi [Tanjong Karang],Terima kasih.
 ,,,10.00 pagi,Timbalan Yang di-Pertua [Dato’ Ramli bin Dato' Mohd Nor],"Kita di Dewan
-ini, segala-galanya dengan apa polemik sekalipun, kita pegang kepada ini
-[Mengangkat Buku Peraturan Dewan Rakyat]. Dia punya bapa ialah ini, The
-Constitution, Perlembagaan. [Mengangkat Buku Perlembagaan Persekutuan]. Apa
+ini, segala-galanya dengan apa polemik sekalipun, kita pegang kepada ini"
+,,,10.00 pagi,ANNOTATION,[Mengangkat Buku Peraturan Dewan Rakyat]
+,,,10.00 pagi,Timbalan Yang di-Pertua [Dato’ Ramli bin Dato' Mohd Nor],". Dia punya bapa ialah ini, The
+Constitution, Perlembagaan."
+,,,10.00 pagi,ANNOTATION,[Mengangkat Buku Perlembagaan Persekutuan]
+,,,10.00 pagi,Timbalan Yang di-Pertua [Dato’ Ramli bin Dato' Mohd Nor],". Apa
 Yang Berhormat bangkitkan itu semuanya teratur dalam ini. So, Yang Berhormat,
 Perkara-perkara 18,17 ada kan? So, Yang Berhormat kalau tak puas hati pun, ada
 peraturannya. Please do it, dengan izin. Usulkan kepada Tuan Yang di-Pertua dan
 akan dijawab sebagaimana yang saya nyatakan tadi.
-Baik siapa sekalipun, anybody. We stick to this and this [Mengangkat Buku
-Peraturan Dewan Rakyat dan Buku Perlembagaan Persekutuan]. Ha ini kanan,
+Baik siapa sekalipun, anybody. We stick to this and this"
+,,,10.00 pagi,ANNOTATION,"[Mengangkat Buku
+Peraturan Dewan Rakyat dan Buku Perlembagaan Persekutuan]"
+,,,10.00 pagi,Timbalan Yang di-Pertua [Dato’ Ramli bin Dato' Mohd Nor],". Ha ini kanan,
 Perlembagaan dan kiri, Peraturan. Semua ada. Kalau saya nak baca, Yang
 Berhormat ini saya rasa dah setengah tahun dah ini."
 ,,,10.00 pagi,Dato' Dr. Zulkafperi bin Hanapi [Tanjong Karang],"Tuan Yang di-Pertua,
@@ -115,7 +124,9 @@ perbelanjaan dan pemantauan Belanjawan Negara."
 ,1.,,■1010,Perdana Menteri dan Menteri Kewangan [Dato' Seri Anwar bin Ibrahim],"Tuan Yang di-Pertua, terima kasih Yang Berhormat Parit Sulong.
 Saya tidak keberatan pun hendak jawab Yang Berhormat Tanjong Karang
 supaya perkara ini jangan berlarutan, jangan tipu masyarakat, dan mengelirukan
-Dewan dan rakyat... [Tepuk] Kita guna agama dan cuba mengelirukan rakyat tetapi
+Dewan dan rakyat..."
+,1.,,■1010,ANNOTATION,[Tepuk]
+,1.,,■1010,Perdana Menteri dan Menteri Kewangan [Dato' Seri Anwar bin Ibrahim],"Kita guna agama dan cuba mengelirukan rakyat tetapi
 oleh kerana saya patuh kepada peraturan, itu terserah kepada keputusan Tuan Yang
 di-Pertua, apakah boleh atau saya teruskan jawapan ini?"
 ,1.,,■1010,Timbalan Yang di-Pertua [Dato' Ramli bin Dato' Mohd Nor],"Baik Yang
@@ -124,7 +135,8 @@ Amat Berhormat Tambun, silakan."
 ,1.,,■1010,Timbalan Yang di-Pertua [Dato' Ramli bin Dato' Mohd Nor],Ya.
 ,1.,,■1010,Dato' Seri Anwar bin Ibrahim,Tidak boleh ulas yang...?
 ,1.,,■1010,Timbalan Yang di-Pertua [Dato' Ramli bin Dato' Mohd Nor],Boleh.
-,1.,,■1010,Dato' Seri Anwar bin Ibrahim,Baik... [Ketawa]
+,1.,,■1010,Dato' Seri Anwar bin Ibrahim,Baik...
+,1.,,■1010,ANNOTATION,[Ketawa]
 ,1.,,■1010,Timbalan Yang di-Pertua [Dato' Ramli bin Dato' Mohd Nor],"Yang Amat
 Berhormat Perdana Menteri, tempoh ini merupakan hak Yang Amat Berhormat
 Perdana Menteri."
@@ -144,8 +156,9 @@ barang yang dilarang – menurut keputusan Majlis Raja-Raja. Jadi itu yang kita
 lakukan.
 Yang saya menghadap Ke Bawah Duli Sultan Selangor atas Titah Tuanku,
 itu bukan soal keputusan lama. Yang Berhormat Tanjong Karang fahamkan- Sultan
-Selangor itu Sultan kamu, di negeri Selangor. Baca... [Tepuk]
-Apakah yang Sultan Selangor sebut? Iaitu dalam soal perakuan Kabinet
+Selangor itu Sultan kamu, di negeri Selangor. Baca..."
+,1.,,■1010,ANNOTATION,[Tepuk]
+,1.,,■1010,Dato' Seri Anwar bin Ibrahim,"Apakah yang Sultan Selangor sebut? Iaitu dalam soal perakuan Kabinet
 tentang tidak membolehkan “Allah” digunakan di Semenanjung Tanah Melayu
 diperkenankan. Kemudian, kelonggaran untuk Sabah dan Sarawak- saya jelaskan.
 Dan kemudian, oleh sebab ada pindaan, Tuanku memberi pandangan sebaiknya
@@ -238,7 +251,9 @@ adakah dibenarkan soalan tambahan? Itu saja persoalan saya."
 ,1.,,■1010,Timbalan Yang di-Pertua [Dato' Ramli bin Dato' Mohd Nor],"Tidak
 dibenarkan. Duduk."
 ,1.,,■1010,Datuk Seri Takiyuddin bin Hassan [Kota Bharu],"Ha, tidak benar, tidak
-benarlah, jawab tidak benar... [Dewan riuh] Tidak benar, tidak benarlah."
+benarlah, jawab tidak benar..."
+,1.,,■1010,ANNOTATION,[Dewan riuh]
+,1.,,■1010,Datuk Seri Takiyuddin bin Hassan [Kota Bharu],"Tidak benar, tidak benarlah."
 ,1.,,■1010,Timbalan Yang di-Pertua [Dato' Ramli bin Dato' Mohd Nor],Jelas.
 ,1.,,■1010,Tuan Sabri bin Azit [Jerai],Benarkanlah Tuan Yang di-Pertua.
 ,1.,,■1010,Datuk Seri Takiyuddin bin Hassan [Kota Bharu],"For the purpose of record
@@ -253,7 +268,8 @@ di-Pertua, perkara ini dibangkit, seolah-olah tidak boleh tanya.
 Saya hendak beritahu, tanya soalan kemudian, ikut peraturan dengan
 kebenaran Speaker, walaupun ini Prime Minister Question Time sudah ada soalan,
 saya berikan sedikit ruang tadi. Kalau ada soalan tambahan bangkit, saya akan
-jawab kemudian. Tidak ada masalah... [Tepuk]"
+jawab kemudian. Tidak ada masalah..."
+,1.,,■1010,ANNOTATION,[Tepuk]
 ,1.,,■1010,Timbalan Yang di-Pertua [Dato' Ramli bin Dato' Mohd Nor],Baik.
 ,1.,,■1010,Tuan Mohd Sany bin Hamzan [Hulu Langat],"Ini macamlah PM kita
 mahulah."
@@ -352,7 +368,8 @@ tersebut serta berhati-hati apabila mengeluarkan kenyataan, terutamanya
 melibatkan kepentingan awam tanpa mengelirukan mana-mana pihak.
 Kedua, saya ingin bertanya adakah kerajaan sedar bahawa dasar flip-flop
 boleh menjejaskan keyakinan orang ramai di sebalik janji tata kelola termasuk isu U-
-turn. Baharu-baharu ini... [Pembesar suara dimatikan]"
+turn. Baharu-baharu ini..."
+,1.,,■1020,ANNOTATION,[Pembesar suara dimatikan]
 ,1.,,■1020,Timbalan Yang di-Pertua [Dato’ Ramli bin Dato' Mohd Nor],"Yang
 Berhormat, soalan."
 ,1.,,■1020,Dato' Dr. Zulkafperi bin Hanapi [Tanjong Karang],"Ya, soalan saya. Dasar
@@ -370,19 +387,19 @@ Tanjong Karang hendak jadi juara siapa? Keputusan JPA ini keputusan lama. Ada
 rekod. Saya hadir mesyuarat JPA, memang ada keputusan lama untuk mengkaji
 semula dan menghentikan. Apabila saya pengerusikan, jadi yang diumumkan itu
 keputusan lama. Apabila saya pengerusikan mesyuarat JPA, keputusannya, yang
-saya buat sambung biasiswa.
-[Tepuk]
-Begitu juga tentang ayam dan telur. Keputusan dia habis Jun. Itu keputusan
+saya buat sambung biasiswa."
+,1.,,■1020,ANNOTATION,[Tepuk]
+,1.,,■1020,Dato’ Seri Anwar bin Ibrahim,"Begitu juga tentang ayam dan telur. Keputusan dia habis Jun. Itu keputusan
 lama. Jadi kementerian hanya umumkan keputusan. Rujuk kepada Menteri
-Kewangan dan Perdana Menteri, saya kata, sambung.
-[Tepuk]
-Keputusan pengumuman itu bukan flip-flop. Keputusan lama. Diumum ikut
+Kewangan dan Perdana Menteri, saya kata, sambung."
+,1.,,■1020,ANNOTATION,[Tepuk]
+,1.,,■1020,Dato’ Seri Anwar bin Ibrahim,"Keputusan pengumuman itu bukan flip-flop. Keputusan lama. Diumum ikut
 prosesnya, tetapi apabila dimaklumkan kepada saya, diteliti balik, ini akan
 membebankan rakyat, Raya Haji dekat, kita tolonglah rakyat. Beza Yang Berhormat
 Tanjong Karang yang dok tak berapa puas hati kerana flip-flop. Kalaupun flip-flop
-untuk membantu rakyat, saya akan flip-flop.
-[Tepuk]
-Ya, buat apa tidak mahu flip-flop, tetapi bebankan rakyat. Kalau tidak mahu
+untuk membantu rakyat, saya akan flip-flop."
+,1.,,■1020,ANNOTATION,[Tepuk]
+,1.,,■1020,Dato’ Seri Anwar bin Ibrahim,"Ya, buat apa tidak mahu flip-flop, tetapi bebankan rakyat. Kalau tidak mahu
 flip-flop, keputusan Kabinet dahulu, masa Perikatan Nasional apa dia? Naik elektrik
 untuk semua. Saya tukar, makna Perdana Menteri Tambun tukar. Flip-flop tidak
 bebankan rakyat. Tak naik lagi."
@@ -390,8 +407,8 @@ bebankan rakyat. Tak naik lagi."
 tak betul, tak betul, tak betul. Banyak pembohongan dalam Dewan."
 ,1.,,■1020,Dato’ Seri Anwar bin Ibrahim,"Apa tidak betul? Saya ada rekod. Jawapan
 Kota Bharu, ada rekod di Parlimen."
-,1.,,■1020,Datuk Awang bin Hashim [Pendang],"Apalah PM?
-[Dewan riuh]"
+,1.,,■1020,Datuk Awang bin Hashim [Pendang],Apalah PM?
+,1.,,■1020,ANNOTATION,[Dewan riuh]
 ,1.,,■1020,Dato’ Seri Anwar bin Ibrahim,Saya naikkan tahun hadapan.
 ,1.,,■1020,Dato’ Rosol bin Wahid [Hulu Terengganu],"Kota Raja kata nak hentikan.
 Kota Raja bagi tahu nak hentikan susidi."
@@ -474,8 +491,8 @@ negatif aktiviti ekonomi maritim di Pelabuhan Tanjong Pelepas..."
 ,2.,,■1030,Timbalan Yang di-Pertua [Dato’ Ramli bin Dato' Mohd Nor],"Yang
 Berhormat Kota Bharu, soalan. Dengan izin, what is the question?"
 ,2.,,■1030,Datuk Seri Takiyuddin bin Hassan [Kota Sabah],"...Manakala Pelabuhan
-Tawau Sabah akan ...
-[Pembesar suara dimatikan]"
+Tawau Sabah akan ..."
+,2.,,■1030,ANNOTATION,[Pembesar suara dimatikan]
 ,2.,,■1030,Timbalan Yang di-Pertua [Dato’ Ramli bin Dato' Mohd Nor],"Yang
 Berhormat, ini bukan ruang untuk Yang Berhormat bersyarah. Direct to the question.
 Kalau hendak ikut macam itu, masa sudah lebih dua minit. Please get to the point,
@@ -507,28 +524,39 @@ Yang di-Pertua."
 ,2.,,■1030,Dato’ Seri Anwar bin Ibrahim,"Terima kasih Yang Berhormat Kota Baharu.
 Apa dia soalan Yang Berhormat Kota Baharu? “Ramai berpandangan”, “pakar
 maritim”, siapa punya pandangan? Pakar mana yang membicarakan?"
-,2.,,■1030,Tuan Hassan bin Abdul Karim [Pasir Gudang],[Bangun]
-,2.,,■1030,Tuan Lo Su Fui [Tawau],[Bangun]
-,2.,,■1030,Datuk Seri Panglima Mohd Shafie bin Haji Apdal [Semporna],[Bangun]
+,2.,,■1030,Tuan Hassan bin Abdul Karim [Pasir Gudang],
+,2.,,■1030,ANNOTATION,[Bangun]
+,2.,,■1030,Tuan Lo Su Fui [Tawau],
+,2.,,■1030,ANNOTATION,[Bangun]
+,2.,,■1030,Datuk Seri Panglima Mohd Shafie bin Haji Apdal [Semporna],
+,2.,,■1030,ANNOTATION,[Bangun]
 ,2.,,■1030,Dato’ Seri Anwar bin Ibrahim,"Kemudian “telah melanggar”, yang mana?
 Peraturan mana, peruntukan mana? Dia peguam, bincang samar-samar begini tidak
 payah peguam, ketua kampung pun boleh."
-,2.,,■1040,Dato’ Seri Anwar bin Ibrahim,"Peguam ini harus spesifik [Tepuk][Ketawa].
-[Disampuk] Ya, hendak marah apa, jawablah. Nombor satu, apakah
+,2.,,■1040,Dato’ Seri Anwar bin Ibrahim,Peguam ini harus spesifik
+,2.,,■1040,ANNOTATION,[Tepuk]
+,2.,,■1040,ANNOTATION,[Ketawa]
+,2.,,■1040,Dato’ Seri Anwar bin Ibrahim,.
+,2.,,■1040,ANNOTATION,[Disampuk]
+,2.,,■1040,Dato’ Seri Anwar bin Ibrahim,"Ya, hendak marah apa, jawablah. Nombor satu, apakah
 pandangan pihak berkepentingan? Johor, Tuanku Sultan telah dimaklumkan bahawa
 sempadan ini tiga batu nautika (nautical miles), dari kawasan. Ini jauh tidak termasuk
 perbatasan Johor, satu. Sabah, Sabah tidak dimeterai dalam hal ini. Ketua Menteri
 Sabah dimaklumkan bahawa memuktamadkan Pulau Sebatik dan kawasan yang
 melibatkan Tawau dan Sabah, itu ditangguhkan sehingga ada persetujuan baharu
 kerana kita belum bersetuju.
-Saya sudah cakap tadi, dengarlah. [Tepuk] Soalan kedua, pakar maritim.
+Saya sudah cakap tadi, dengarlah."
+,2.,,■1040,ANNOTATION,[Tepuk]
+,2.,,■1040,Dato’ Seri Anwar bin Ibrahim,"Soalan kedua, pakar maritim.
 Pakar maritim mana? Saya sudah sebut nama-nama Kementerian Luar Jabatan
 Maritim, MKN, Peguam Negara, Jabatan Ukur dan Pemetaan dan Hidrografi
 Malaysia. Menteri Luar dan Kementerian Luar yang banyak menjalankan tugas itu
 tetapi sebelum saya meterai, perjumpaan akhir saya masih berdepan dengan
 mereka. Jadi pakar-pakar ini mengesahkan. Ada pakar baharu yang Yang Berhormat
 Kota Baharu hendak sebut, carilah. Sebut kepada saya nama siapa. Ini pakai
-semberono sahaja [Tepuk].
+semberono sahaja"
+,2.,,■1040,ANNOTATION,[Tepuk]
+,2.,,■1040,Dato’ Seri Anwar bin Ibrahim,".
 Baik, mengikut peraturan asal sempadan one to one, tidak ada pelanggaran
 langsung. Hal yang dipersetujui adalah yang dipersetujui oleh semua pakar kita, yang
 tidak dipersetujui yang kita agak ambil berat sedikit tentang kawasan perairan
@@ -542,7 +570,9 @@ Perjanjian 2009 itu telah dibantah oleh Kerajaan Malaysia. Saya telah maklum
 kepada Presiden Jokowi bahawa kita tidak boleh terima yang ini kerana ia
 menjejaskan kepentingan Malaysia.
 Jadi penjelasan saya, keempat-empat soalan ini, itu hanya digunakan
-sebagai ruang politik murahan. Oleh sebab mana mungkin [Dewan riuh] ya kalau
+sebagai ruang politik murahan. Oleh sebab mana mungkin"
+,2.,,■1040,ANNOTATION,[Dewan riuh]
+,2.,,■1040,Dato’ Seri Anwar bin Ibrahim,"ya kalau
 disebut. Ya, ya pakar mana? Sebut pakar mana? Perjanjian mana yang dilanggar?
 Peruntukan mana yang dilanggar? Kawasan mana yang diserahkan kepada
 Indonesia yang mengabaikan kepentingan kita? Hal yang saya sebut tadi yang kita
@@ -552,9 +582,12 @@ persetujui. Walaupun saya sudah minta pegawai-pegawai cari jalan, runding supaya
 ada win win situation.
 Saudara sebut tentang Sipadan Ligitan. Sipadan Ligitan itu tengok rekod
 yang pergi runding dengan Presiden Suharto itu saya, selaku Timbalan Perdana
-Menteri [Tepuk] untuk mengambil keputusan dipersetujui oleh Presiden Suharto
+Menteri"
+,2.,,■1040,ANNOTATION,[Tepuk]
+,2.,,■1040,Dato’ Seri Anwar bin Ibrahim,"untuk mengambil keputusan dipersetujui oleh Presiden Suharto
 untuk bawa Sipadan Ligitan. Hendak mengamuk fasal apa?"
-,2.,,■1040,Dato’ Mohd Isam bin Mohd Isa [Tampin],[Ketawa]
+,2.,,■1040,Dato’ Mohd Isam bin Mohd Isa [Tampin],
+,2.,,■1040,ANNOTATION,[Ketawa]
 ,2.,,■1040,Timbalan Yang di-Pertua [Dato’ Ramli bin Dato' Mohd Nor],"Yang
 Berhormat Pagoh, saya beri laluan kepada Yang Berhormat Tampin. Duduk Yang
 Berhormat."
@@ -562,11 +595,15 @@ Berhormat."
 Yang di-Pertua. Terima kasih saya ucapkan kepada Yang Amat Berhormat Tambun
 atas jawapan yang cukup jelas sebentar tadi, sekali gus menjawab segala tohmahan
 dan dakwaan yang dilemparkan terhadap kerajaan berhubung isu sempadan maritim
-ini. [Tepuk]
-Juga saya ingin mengucapkan tahniah dan syabas kepada kerajaan hari ini
+ini."
+,2.,,■1040,ANNOTATION,[Tepuk]
+,2.,,■1040,Dato’ Mohd Isam bin Mohd Isa [Tampin],"Juga saya ingin mengucapkan tahniah dan syabas kepada kerajaan hari ini
 kerana kebijaksanaan kerajaan hari ini Malaysia telah menang pertikaian mahkamah
-berkaitan tuntutan waris Sultan Sulu. [Tepuk]
-Soalan saya, apakah lagi perkara yang ingin dicapai, diam sekejap [Ketawa].
+berkaitan tuntutan waris Sultan Sulu."
+,2.,,■1040,ANNOTATION,[Tepuk]
+,2.,,■1040,Dato’ Mohd Isam bin Mohd Isa [Tampin],"Soalan saya, apakah lagi perkara yang ingin dicapai, diam sekejap"
+,2.,,■1040,ANNOTATION,[Ketawa]
+,2.,,■1040,Dato’ Mohd Isam bin Mohd Isa [Tampin],".
 Soalan saya, apakah lagi perkara yang ingin dicapai oleh kerajaan dalam tempoh
 lima tahun mendatang menerusi hubungan akrab yang sedang terjalin bersama
 Indonesia dalam bidang ekonomi, perdagangan dan juga pelaburan supaya dapat
@@ -599,8 +636,10 @@ hujah terutamanya Jabatan Peguam Negara, barulah kita tandatangani. Itu pun ada
 had yang tidak dapat dipersetujui lagi."
 ,2.,,■1040,Timbalan Yang di-Pertua [Dato’ Ramli bin Dato' Mohd Nor],"Berikutan itu,
 Yang Berhormat Pagoh."
-,2.,,■1040,Tan Sri Dato’ Haji Mahiaddin bin Haji Md Yassin [Pagoh],"[Berucap tanpa
-menggunakan pembesar suara] Tidak boleh buka."
+,2.,,■1040,Tan Sri Dato’ Haji Mahiaddin bin Haji Md Yassin [Pagoh],
+,2.,,■1040,ANNOTATION,"[Berucap tanpa
+menggunakan pembesar suara]"
+,2.,,■1040,Tan Sri Dato’ Haji Mahiaddin bin Haji Md Yassin [Pagoh],Tidak boleh buka.
 ,2.,,■1040,Timbalan Yang di-Pertua [Dato’ Ramli bin Dato' Mohd Nor],"Mic Yang
 Berhormat."
 ,2.,,■1040,Tan Sri Dato’ Haji Mahiaddin bin Haji Md Yassin [Pagoh],"Yang Amat
@@ -660,7 +699,9 @@ sebagai negara sahabat dan harus kita tingkatkan kerjasama dalam semua bidang.
 Kita tidak mahu beberapa masalah perbezaan yang didapati antara kita menjejaskan
 hubungan dua hala.
 Jadi – Tapi muktamad pendirian kita adalah tidak mungkin kita korbankan
-satu inci pun tanah negara kita [Tepuk]."
+satu inci pun tanah negara kita"
+,2.,,■1050,ANNOTATION,[Tepuk]
+,2.,,■1050,Dato’ Seri Anwar bin Ibrahim,.
 ,2.,,■1050,Datuk Seri Panglima Mohd Shafie bin Haji Apdal [Semporna],"Tuan Yang
 di-Pertua. Tuan Yang di-Pertua."
 ,2.,,■1050,Timbalan Yang di-Pertua [Dato' Ramli bin Dato' Mohd Nor],"Yang
@@ -784,7 +825,7 @@ Yang Berhormat. Minta maaf Yang Berhormat saya ‘sudah tutup kedai’ untuk soa
 pada hari ini.
 Yang Berhormat, sekarang tamatlah sesi Waktu Pertanyaan Perdana Menteri
 pada hari ini terima kasih Yang Berhormat."
-,3.,,■1100,ANNOTATIONS,[Sesi Waktu Pertanyaan-pertanyaan Menteri tamat ]
+,3.,,■1100,ANNOTATION,[Sesi Waktu Pertanyaan-pertanyaan Menteri tamat ]
 PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1.,,■1100,Datuk Seri Panglima Haji Mohd Shafie bin Haji Apdal [Semporna],"minta 
 Menteri Sumber Manusia menyatakan, persiapan kementerian dan majikan bagi
 menyokong peralihan pekerjaan masa depan melalui struktur pendidikan, kemahiran
@@ -1161,7 +1202,7 @@ kita, apakah langkah-langkah daripada segi content STEM dan juga ekosistem
 sistem pendidikan kita supaya kita boleh meningkatkan lagi pelajar-pelajar yang
 menceburi dalam bidang STEM ini untuk kebaikan masa depan ekonomi dan anak-
 anak muda kita. Sekian, terima kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,3.,,■1130,ANNOTATIONS,"[Timbalan Yang di-Pertua (Puan Alice Lau Kiong Yieng) mempengerusikan
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,3.,,■1130,ANNOTATION,"[Timbalan Yang di-Pertua (Puan Alice Lau Kiong Yieng) mempengerusikan
 Mesyuarat]"
 PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,3.,,■1130,Datuk Ahmad Amzad bin Mohamed @ Hashim [Kuala Terengganu],"Tuan
 Yang di-Pertua, minta satu soalan lagi."
@@ -1226,7 +1267,9 @@ sumber air bawah tanah melalui sistem telaga tiub atau tube
 well bagi mengatasi masalah kekurangan sumber air semasa
 musim panas dan menggunakan sungkupan atau mulching
 untuk mengekalkan kelembapan tanaman; dan
-(v) pembuatan silaj dan... [Tidak jelas] bagi sektor ternakan di
+(v) pembuatan silaj dan..."
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,4.,,■1130,ANNOTATION,[Tidak jelas]
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,4.,,■1130,Timbalan Menteri Pertanian dan Keterjaminan Makanan [Tuan Chan Foong Hin],"bagi sektor ternakan di
 musim terdapat banyak rumput yang bertujuan sebagai
 konsekuensi makanan dan ternakan jika berlaku kekurangan
 rumput segar semasa musim panas melanda. Melalui pelbagai
@@ -1552,16 +1595,22 @@ pendatang tanpa izin dan seksyen 55E, Akta Imigresen 1959/63 iaitu membenarkan
 pendatang tanpa izin di premis.
 Sekiranya mereka didapati melakukan kesalahan-kesalahan, maka orang itu
 hendaklah ditangkap bagi tempoh 24 jam termasuk masa perjalanan. Sekiranya ada
-keperluan penahanan lanjut di bawah seksyen 117 Kanun Prosedur Jenayah [Akta
-593] dihadapkan ke Majistret."
+keperluan penahanan lanjut di bawah seksyen 117 Kanun Prosedur Jenayah"
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,6.,,■1150,ANNOTATION,"[Akta
+593]"
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,6.,,■1150,Datuk Seri Dr. Shamsul Anuar bin Nasarah,dihadapkan ke Majistret.
 PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,6.,,■1200,Datuk Seri Dr. Shamsul Anuar bin Nasarah,"Yang Berhormat, saya hendak sebut ada soalan yang berkaitan dengan
 ganjaran tadi. Jabatan Imigresen Malaysia sentiasa memberi pertimbangan dalam
 memberikan ganjaran kepada orang awam yang memberi maklumat mengenai PATI.
 Oleh sebab itu kita galakkan orang awam bekerjasama dengan kita untuk beri
 maklumat-maklumat.
 Pemberian ganjaran ini selaras dengan peruntukan undang-undang di bawah
-seksyen 5(c), Akta Imigresen 1859/63 [Akta 155], dan juga seksyen 12C Akta
-Pasport 1966 [Akta 503] iaitu ketua pengarah boleh memberi imbuhan iaitu
+seksyen 5(c), Akta Imigresen 1859/63"
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,6.,,■1200,ANNOTATION,[Akta 155]
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,6.,,■1200,Datuk Seri Dr. Shamsul Anuar bin Nasarah,", dan juga seksyen 12C Akta
+Pasport 1966"
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,6.,,■1200,ANNOTATION,[Akta 503]
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,6.,,■1200,Datuk Seri Dr. Shamsul Anuar bin Nasarah,"iaitu ketua pengarah boleh memberi imbuhan iaitu
 sebagaimana difikirkan patut dibayar kepada mana-mana orang bagi apa-apa
 perkhidmatan yang diberikan berhubung dengan pengesanan pendakwaan bagi satu
 kesalahan di bawah akta ini. Terima kasih Tuan Yang di-Pertua."
@@ -1593,7 +1642,9 @@ peringkat penguatkuasaan, perancangan dan kajian. Antara langkah
 penguatkuasaan dan perancangan yang dilaksanakan oleh JAS seperti berikut:
 (i) mempertingkatkan penguatkuasaan bagi punca-punca
 pencemaran yang tertakluk di bawah Akta Kualiti Alam
-Sekeliling 1974 [Akta 127] dan peraturan-peraturan di
+Sekeliling 1974"
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,7.,,■1200,ANNOTATION,[Akta 127]
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,7.,,■1200,"Timbalan Menteri Sumber Asli, Alam Sekitar dan Perubahan Iklim [Dato’ Sri Huang Tiong Sii]","dan peraturan-peraturan di
 bawahnya seperti kawalan pada air fluent perindustrian dan
 kawalan kepada projek-projek yang tertakluk kepada kelulusan
 laporan environmental impact assessment;
@@ -1634,7 +1685,9 @@ bertanya, apakah kekangan yang dihadapi bagi memastikan bahawa sungai yang
 tercemar tersebut dapat dibaikpulih ke tahap yang memuaskan? Terima kasih."
 PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,7.,,■1200,Dato’ Sri Huang Tiong Sii,"Terima kasih Tuan Yang di-Pertua, terima kasih
 Yang Berhormat Pekan. Selain daripada penguatkuasaan melalui Akta Kualiti Alam
-Sekeliling 1974 [Akta 127] oleh Jabatan Alam Sekitar (JAS) bagi tujuan membaik
+Sekeliling 1974"
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,7.,,■1200,ANNOTATION,[Akta 127]
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,7.,,■1200,Dato’ Sri Huang Tiong Sii,"oleh Jabatan Alam Sekitar (JAS) bagi tujuan membaik
 pulih sungai-sungai di Malaysia, kementerian melalui Jabatan Pengairan dan Saliran
 (JPS) telah memperkenalkan pelaksanaan konsep secara natural-based solutions,
 dan pembabitan komuniti melalui pembinaan Denai Sungai Kebangsaan (DSK).
@@ -1694,7 +1747,8 @@ PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,7.,,■1210,Tuan Sanisvara Nethaji Rayer 
 PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,7.,,■1210,Timbalan Yang di-Pertua [Puan Alice Lau Kiong Yieng],"Okey. Peraturan
 Mesyuarat 36(6), “Seseorang Ahli tidak boleh mengeluarkan sangkaan jahat ke atas
 siapa-siapa Ahli lain”. Yang Berhormat Tasek Gelugor tidak menuju kepada siapa-
-siapa Ahli... [Tepuk]"
+siapa Ahli..."
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,7.,,■1210,ANNOTATION,[Tepuk]
 PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,7.,,■1210,Tuan Sanisvara Nethaji Rayer a/l Rajaji [Jelutong],"Itu membuat
 kenyataan terhadap Ketua Menteri, yang juga merupakan Yang Berhormat Batu
 Kawan."
@@ -1741,7 +1795,7 @@ PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,7.,,■1210,Timbalan Yang di-Pertua [Puan
 soalan nombor 8, Yang Berhormat Setiu tidak ada dalam Dewan.
 Jadi, kita pergi soalan nombor 9, Datuk Seri Jalaluddin bin Alias, Yang
 Berhormat Jelebu."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,7.,,■1210,ANNOTATIONS,[Soalan No.8 – YB. Tuan Shaharizukirnain bin Abd Kadir (Setiu) tidak hadir]
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,7.,,■1210,ANNOTATION,[Soalan No.8 – YB. Tuan Shaharizukirnain bin Abd Kadir (Setiu) tidak hadir]
 PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,7.,,■1210,Tuan Haji Ahmad Fadhli bin Shaari [Pasir Mas],"Tuan Yang di-Pertua,
 minta petua. Masa kita sampai 12.30, kah?"
 PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,7.,,■1210,Timbalan Yang di-Pertua [Puan Alice Lau Kiong Yieng],"Ya 12.30, kerana
@@ -1856,8 +1910,9 @@ dan juga pandangan daripada pemikiran Yang Berhormat Jelebu itu sendiri supaya..
 Sudah balik? Belum balik, supaya pada masa hadapan kita boleh lihat
 perancangan yang lebih tersusun dan lebih rapi. Jadi tidak perlu kita bincang di
 Parlimen kerana soalan yang dikemukakan oleh Yang Berhormat Jelebu ini sudah
-berkali-kali. Saya harap ini kali terakhirlah Yang Berhormat Jelebu untuk tahun ini...
-[Ketawa] Bertanyakan soalan mengenai pelancongan. Sekian, terima kasih."
+berkali-kali. Saya harap ini kali terakhirlah Yang Berhormat Jelebu untuk tahun ini..."
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,9.,,■1220,ANNOTATION,[Ketawa]
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,9.,,■1220,Tuan Khairul Firdaus bin Akbar Khan,"Bertanyakan soalan mengenai pelancongan. Sekian, terima kasih."
 PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,9.,,■1220,Datuk Seri Jalaluddin bin Alias [Jelebu],"Tuan Yang di-Pertua, Yang
 Berhormat Timbalan Menteri. Ini bukan cara kementerian jawab soalan. Kalau Yang
 Berhormat Timbalan Menteri, tengok di kementerian, saya kemukakan surat dan
@@ -1908,7 +1963,8 @@ yang lain.
 Insya-Allah, kita akan ambil sedia maklum dan mesej yang telah disampaikan
 oleh Yang Berhormat Jelebu tadi kita akan ambil secara serius kerana kita tahu niat
 Yang Berhormat Jelebu ini tidak lain, tidak bukan untuk memastikan Negeri Sembilan
-itu maju ke hadapan. Sekian, terima kasih... [Ketawa]"
+itu maju ke hadapan. Sekian, terima kasih..."
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,9.,,■1220,ANNOTATION,[Ketawa]
 PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,9.,,■1220,Timbalan Yang di-Pertua [Puan Alice Lau Kiong Yieng],"Saya jemput
 Dato' Khlir bin Mohd Nor, Yang Berhormat Ketereh."
 PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,10.,,■1220,Dato' Khlir bin Mohd Nor [Ketereh],"minta  Menteri Dalam Negeri
@@ -2026,7 +2082,7 @@ PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,10.,,■1230,Dato' Khlir bin Mohd Nor [Ke
 PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,10.,,■1230,Timbalan Yang di-Pertua [Puan Alice Lau Kiong Yieng,"Yang Berhormat,
 sekarang tamatlah sesi untuk Pertanyaan-pertanyaan bagi Jawapan Lisan pada hari
 ini. Terima kasih Yang Berhormat."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,10.,,■1230,ANNOTATIONS,[Sesi Pertanyaan-pertanyaan bagi Jawab Lisan tamat]
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,10.,,■1230,ANNOTATION,[Sesi Pertanyaan-pertanyaan bagi Jawab Lisan tamat]
 PENERANGAN DARIPADA MENTERI PERDAGANGAN DALAM NEGERI DAN KOS SARA HIDUP DI BAWAH P.M 14(1)(i),"KEBENARAN PENGELUARAN
 GULA PUTIH BERTAPIS JERNIH",,12.31 tgh.,Menteri Perdagangan Dalam Negeri dan Kos Sara Hidup [Datuk Seri Salahuddin bin Ayub],"Bismillahi Rahmani Rahim. Tuan Yang di-Pertua, terima
 kasih diucapkan atas keizinan untuk saya memberikan penerangan yang lebih
@@ -2230,7 +2286,7 @@ meningkat. Walaupun ada telur yang harganya RM13 tetapi grednya di bawah
 daripada Gred C. Itu perkara yang sepatutnya diberi perhatian juga oleh pihak
 kementerian.
 Tuan Yang di-Pertua, gula bertapis yang dikawal, harganya RM2.85, ya Yang
-Berhormat Menteri.  Kemudian diminta oleh syarikat-syarikat untuk hendak
+Berhormat Menteri. Kemudian diminta oleh syarikat-syarikat untuk hendak
 menaikkan RM1 menjadi RM3.85 dan saya yakin Yang Berhormat Menteri atau
 kerajaan tidak akan membenarkan kenaikan tersebut. Manakala gula yang putih
 tetapi jernih, premium harganya RM4.60 bezanya yang besar antara RM2.85 dengan
@@ -2304,9 +2360,11 @@ GULA PUTIH BERTAPIS JERNIH",,12.53 tgh.,Tuan Haji Azli bin Yusof [Shah Alam],"..
 kita."
 PENERANGAN DARIPADA MENTERI PERDAGANGAN DALAM NEGERI DAN KOS SARA HIDUP DI BAWAH P.M 14(1)(i),"KEBENARAN PENGELUARAN
 GULA PUTIH BERTAPIS JERNIH",,12.53 tgh.,Tuan M. Kulasegaran a/l Murugeson [Ipoh Barat],"Yang Berhormat, Yang
-Berhormat saya satu minit.  Saya hendak tanya pandangan yang terkini
+Berhormat saya satu minit. Saya hendak tanya pandangan yang terkini
 menunjukkan bahawa gula ini adalah satu item toxic dan patut diharamkan. Adakah
-Yang Berhormat setuju dengan pandangan tersebut?... [Dewan riuh]"
+Yang Berhormat setuju dengan pandangan tersebut?..."
+PENERANGAN DARIPADA MENTERI PERDAGANGAN DALAM NEGERI DAN KOS SARA HIDUP DI BAWAH P.M 14(1)(i),"KEBENARAN PENGELUARAN
+GULA PUTIH BERTAPIS JERNIH",,12.53 tgh.,ANNOTATION,[Dewan riuh]
 PENERANGAN DARIPADA MENTERI PERDAGANGAN DALAM NEGERI DAN KOS SARA HIDUP DI BAWAH P.M 14(1)(i),"KEBENARAN PENGELUARAN
 GULA PUTIH BERTAPIS JERNIH",,12.53 tgh.,Tuan Haji Azli bin Yusof [Shah Alam],"Saya bukannya doktor untuk hendak
 memberikan jawapan yang tepat kepada apa yang dipersoalkan oleh Yang
@@ -2316,7 +2374,7 @@ kita. Kita pun tahu ada orang yang boleh collapse kalau tidak cukup bekalan gula
 dalam badan kita.
 Jadi, apa yang penting ia harus balance tidak kurang dan tidak berlebihan
 yang penting bekalan gula harus cukup bagi negara kita dan cukup dengan harga
-yang dikawal oleh kerajaan.  Dengan pelbagai usaha yang dilakukan itu saya
+yang dikawal oleh kerajaan. Dengan pelbagai usaha yang dilakukan itu saya
 ucapkan tahniah kepada Yang Berhormat Menteri KPDN. Terima kasih."
 PENERANGAN DARIPADA MENTERI PERDAGANGAN DALAM NEGERI DAN KOS SARA HIDUP DI BAWAH P.M 14(1)(i),"KEBENARAN PENGELUARAN
 GULA PUTIH BERTAPIS JERNIH",,12.53 tgh.,Timbalan Yang di-Pertua [Puan Alice Lau Kiong Yieng],"Terima kasih,
@@ -2358,11 +2416,11 @@ Ahli-ahli Yang Berhormat, memandangkan sekarang jam telah menunjukkan
 pukul 1 tengah hari, saya menangguhkan Mesyuarat sekarang, dan akan
 bersambung semula jam 2.30 petang."
 PENERANGAN DARIPADA MENTERI PERDAGANGAN DALAM NEGERI DAN KOS SARA HIDUP DI BAWAH P.M 14(1)(i),"KEBENARAN PENGELUARAN
-GULA PUTIH BERTAPIS JERNIH",,12.58 tgh.,ANNOTATIONS,[Mesyuarat ditempohkan pada pukul 1.02 tengah hari]
+GULA PUTIH BERTAPIS JERNIH",,12.58 tgh.,ANNOTATION,[Mesyuarat ditempohkan pada pukul 1.02 tengah hari]
 PENERANGAN DARIPADA MENTERI PERDAGANGAN DALAM NEGERI DAN KOS SARA HIDUP DI BAWAH P.M 14(1)(i),"KEBENARAN PENGELUARAN
-GULA PUTIH BERTAPIS JERNIH",,■1430,ANNOTATIONS,[Mesyuarat disambung semula pada pukul 2.30 petang]
+GULA PUTIH BERTAPIS JERNIH",,■1430,ANNOTATION,[Mesyuarat disambung semula pada pukul 2.30 petang]
 PENERANGAN DARIPADA MENTERI PERDAGANGAN DALAM NEGERI DAN KOS SARA HIDUP DI BAWAH P.M 14(1)(i),"KEBENARAN PENGELUARAN
-GULA PUTIH BERTAPIS JERNIH",,■1430,ANNOTATIONS,"[Timbalan Yang di-Pertua (Puan Alice Lau Kiong Yieng) mempengerusikan
+GULA PUTIH BERTAPIS JERNIH",,■1430,ANNOTATION,"[Timbalan Yang di-Pertua (Puan Alice Lau Kiong Yieng) mempengerusikan
 Mesyuarat]"
 PENERANGAN DARIPADA MENTERI PERDAGANGAN DALAM NEGERI DAN KOS SARA HIDUP DI BAWAH P.M 14(1)(i),"KEBENARAN PENGELUARAN
 GULA PUTIH BERTAPIS JERNIH",,■1430,Timbalan Yang di-Pertua [Puan Alice Lau Kiong Yieng],"Saya jemput
@@ -2404,8 +2462,11 @@ ditawarkan lebih tinggi. Oleh itu, permintaan mereka lah yang dipenuhi kerana ha
 lebih yang ditawar oleh pasaran luar. Jadi, menurut kerangka pemikiran sistem
 kapitalis, masalah gula boleh diselesaikan dengan menaikkan harga gula, setara
 dengan apa yang dibayar oleh pasaran luar. Adakah kerangka ini boleh disebut
-sebagai ihtikar ataupun monopoli? Sedangkan Nabi Muhammad SAW bersabda
-[Membaca sepotong Hadis] “Monopoli hanya dilakukan oleh orang yang bersalah”.
+sebagai ihtikar ataupun monopoli? Sedangkan Nabi Muhammad SAW bersabda"
+PENERANGAN DARIPADA MENTERI PERDAGANGAN DALAM NEGERI DAN KOS SARA HIDUP DI BAWAH P.M 14(1)(i),"KEBENARAN PENGELUARAN
+GULA PUTIH BERTAPIS JERNIH",,2.32 ptg.,ANNOTATION,[Membaca sepotong Hadis]
+PENERANGAN DARIPADA MENTERI PERDAGANGAN DALAM NEGERI DAN KOS SARA HIDUP DI BAWAH P.M 14(1)(i),"KEBENARAN PENGELUARAN
+GULA PUTIH BERTAPIS JERNIH",,2.32 ptg.,Tuan Abdul Latiff bin Abdul Rahman [Kuala Krai],"“Monopoli hanya dilakukan oleh orang yang bersalah”.
 Sistem ekonomi Islam tidak menjadikan mekanisme harga semata sebagai
 alat pengagihan kerana mekanisme harga menyebabkan golongan yang tidak
 mampu membayar lebih tidak dapat memenuhi keperluan penerima dengan
@@ -2696,7 +2757,7 @@ PENERANGAN DARIPADA MENTERI PERDAGANGAN DALAM NEGERI DAN KOS SARA HIDUP DI BAWAH
 GULA PUTIH BERTAPIS JERNIH",,■1500,Datuk Seri Salahuddin bin Ayub,"Saya sebagai Menteri yang ada pada hari ini akan mengambil tanggungjawab
 penuh supaya kita mengawal harga yang boleh kita kawal, bersubsidi kawalan ini
 demi kepentingan rakyat. Terima kasih."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1500,,"Aturan Urusan Mesyuarat dibaca bagi menyambung semula pertimbangan
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1500,,"Aturan Urusan Mesyuarat dibaca bagi menyambung semula pertimbangan
 ke atas “Usul Yang Berhormat Menteri di Jabatan Perdana Menteri untuk
 membahaskan Laporan Tahunan dan Penyata Kewangan Suruhanjaya Hak Asasi
 Manusia Malaysia (SUHAKAM) bagi Tahun 2020”
@@ -2738,8 +2799,10 @@ masyarakat, dan
 dan melindungi hak asasi manusia Malaysia. Dewan yang mulia ini
 menyeru agar semua pihak bersama-sama bertanggungjawab dan
 bersatu hati dan menyokong kerajaan agar pelaksanaan syor,
-pandangan dan cadangan yang terkandung dalam laporan tersebut"
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1500,Timbalan Yang di-Pertua [Puan Alice Lau Kiong Yieng],"Saya akan baca
+pandangan dan cadangan yang terkandung dalam laporan tersebut
+dapat disahkan dan diluluskan.”"
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1500,ANNOTATION,[12 Jun 2023]
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1500,Timbalan Yang di-Pertua [Puan Alice Lau Kiong Yieng],"Saya akan baca
 senarai pembahas dahulu. Yang Berhormat Jelebu, Yang Berhormat Seputeh, Yang
 Berhormat Pasir Mas, Yang Berhormat Rasah, Yang Berhormat Bukit Bendera, Yang
 Berhormat Pokok Sena, Yang Berhormat Pasir Gudang, Yang Berhormat Raub,
@@ -2750,7 +2813,7 @@ Berhormat Batang Sadong, Yang Berhormat Tenom, Yang Berhormat Lubok Antu,
 Yang Berhormat Sungai Petani dan Yang Berhormat Batu Pahat.
 Saya akan menjemput Yang Berhormat Jelebu. Setiap pembahas diberi
 lapan minit sahaja."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,3.01 ptg.,Datuk Seri Jalaluddin bin Alias [Jelebu],"Terima kasih Tuan Yang di-
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,3.01 ptg.,Datuk Seri Jalaluddin bin Alias [Jelebu],"Terima kasih Tuan Yang di-
 Pertua kerana memberikan peluang kepada saya untuk membahaskan perkara yang
 berkaitan. Saya cuma hendak sentuh satu perkara sahaja yakni berkaitan dengan
 masyarakat Orang Asli.
@@ -2796,7 +2859,7 @@ beberapa kawasan Parlimen sebelum ini. Isu tanah, tiga sahaja Tuan Yang di-Pertu
 Pertama, iaitu tanah bagi penempatan mereka. kemudian tanah pertanian
 dan juga kawasan rayau. Ini tiga isu utama yang sampai hari ini belum lagi dapat kita
 laksanakan sampai ke peringkat yang boleh memenuhi sebahagian daripada
-keperluan keluarga dan juga  masyarakat Orang Asli. Saya percaya Ahli-ahli
+keperluan keluarga dan juga masyarakat Orang Asli. Saya percaya Ahli-ahli
 Parlimen yang lain juga sama. Apabila pergi berjumpa dengan masyarakat Orang
 Asli, ini adalah perjuangan pertama yang mereka perjuangkan.
 Berkenaan dengan tanah ini Tuan Yang di-Pertua, penempatan Orang Asli
@@ -2842,7 +2905,9 @@ Untuk rekod Dewan, saya sebut seksyen 62 Kanun Tanah Negara memberi
 kuasa kepada pihak berkuasa negeri untuk merizabkan mana-mana tanah kerajaan
 negeri bagi maksud awam. Peruntukan ini boleh digunakan oleh mana-mana
 kerajaan negeri untuk merizabkan tanah Orang Asli selain daripada peruntukan yang
-terdapat dalam [Akta 134] Inilah yang saya harapkan supaya dapat kita selesaikan
+terdapat dalam"
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,3.01 ptg.,ANNOTATION,[Akta 134]
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,3.01 ptg.,Datuk Seri Jalaluddin bin Alias [Jelebu],"Inilah yang saya harapkan supaya dapat kita selesaikan
 untuk kepentingan masyarakat Orang Asli ini. Oleh sebab itu Tuan Yang di-Pertua,
 dengan mengambil kira hak asasi dan kepentingan masyarakat ini, maka saya
 berharap kerajaan dapat meneliti semula syarat-syarat permohonan kelulusan bagi
@@ -2867,7 +2932,7 @@ perhatian.
 Apa yang penting sekali saya nak sebut di Dewan Rakyat ini ialah
 penempatan masyarakat Orang Asli yang memeluk agama Islam masih lagi tidak
 dapat kita selesaikan secara total sekarang."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1510,Datuk Seri Jalaluddin bin Alias [Jelebu],"Saya nak ucap tahniah kepada Yang Amat Berhormat Menteri Besar Negeri
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1510,Datuk Seri Jalaluddin bin Alias [Jelebu],"Saya nak ucap tahniah kepada Yang Amat Berhormat Menteri Besar Negeri
 Sembilan kerana telah mengemukakan Program Baiturrahmah, yakni menggunakan
 duit zakat untuk membina beberapa buah rumah Orang Asli di kawasan Negeri
 Sembilan tetapi masih boleh dipertingkatkan Tuan Yang di-Pertua.
@@ -2878,9 +2943,9 @@ Kalau lima buah atau 10 buah rumah kita boleh bina setahun, maka dalam tempoh
 lima tahun, kita boleh selesaikan hampir sebahagian besar masalah kedudukan dan
 penempatan bagi masyarakat orang Islam di perkampungan Orang Asli yang
 terdapat di kawasan Negeri Sembilan khususnya. Terima kasih Tuan Yang di-Pertua."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1510,Timbalan Yang di-Pertua [Puan Alice Lau Kiong Yieng],"Terima kasih
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1510,Timbalan Yang di-Pertua [Puan Alice Lau Kiong Yieng],"Terima kasih
 Yang Berhormat Jelebu. Saya jemput Yang Berhormat Seputeh."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,3.11 ptg.,Puan Teresa Kok Suh Sim [Seputeh],"Terima kasih Tuan Yang di-Pertua.
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,3.11 ptg.,Puan Teresa Kok Suh Sim [Seputeh],"Terima kasih Tuan Yang di-Pertua.
 Terlebih dahulu, saya ingin menyatakan penghargaan dan pujian kepada kerajaan
 kerana membenarkan Laporan Tahunan 2020 SUHAKAM dibuka untuk perbahasan.
 Saya difahamkan, Laporan SUHAKAM pernah dibuka untuk perbahasan pada kali
@@ -2990,7 +3055,7 @@ menjalankan amalan-amalan terbaik (best practices) berkenaan dalam perniagaan.
 Sekarang, kita juga memperkenalkan dengan Environment, Social and Governance
 (ESG) Due Diligence sebagai tambahan kepada tradisional due diligence yang sedia
 ada."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1520,Puan Teresa Kok Suh Sim [Seputeh],"Namun, saya bimbang bahawa ESG ini hanya superficial sekiranya tidak
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1520,Puan Teresa Kok Suh Sim [Seputeh],"Namun, saya bimbang bahawa ESG ini hanya superficial sekiranya tidak
 disertai dengan penguatkuasaan oleh kerajaan seperti apa yang dilaksanakan di
 negara-negara lain. Jadi saya ingin minta Suruhanjaya Syarikat mempertimbangkan
 mewajibkan human rights auditing sebelum syarikat-syarikat ini memperbaharui
@@ -3008,9 +3073,9 @@ sebagaimana yang telah dicadangkan oleh SUHAKAM sebelum ini demi
 menunjukkan komitmen kita kepada kelestarian alam sekitar.
 Saya dengan ini menyokong penuh laporan Tahunan Suruhanjaya Hak Asasi
 Manusia Malaysia 2020. Sekian, terima kasih."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1520,Timbalan Yang di-Pertua [Puan Alice Lau Kiong Yieng],"Terima kasih
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1520,Timbalan Yang di-Pertua [Puan Alice Lau Kiong Yieng],"Terima kasih
 Yang Berhormat Seputeh. Saya jemput Yang Berhormat Pasir Mas."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,3.21 ptg.,Tuan Haji Ahmad Fadhli bin Shaari [Pasir Mas],"Bismillahi Rahmani
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,3.21 ptg.,Tuan Haji Ahmad Fadhli bin Shaari [Pasir Mas],"Bismillahi Rahmani
 Rahim. Assalamualaikum warahmatullahi wabarakatuh dan salam sejahtera. Terima
 kasih Tuan Yang di-Pertua memberikan peluang kepada saya untuk turut
 membahaskan Laporan Tahunan Suruhanjaya Hak Asasi Manusia Malaysia iaitu
@@ -3020,7 +3085,9 @@ salah satu tajuk kecilnya iaitu Islam dan hak asasi. Saya ingin mengulangi pendi
 ataupun pernyataan bahawa Islam merupakan sebuah agama yang mengiktiraf hak
 asasi manusia. Dalam laporan ini sendiri pada muka surat 194 dinukilkan ayat Al-
 Quran yang menegaskan tentang persoalan ini.
-Firman Allah SWT, [Membaca sepotong ayat Al-Quran] yang bermaksud,
+Firman Allah SWT,"
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,3.21 ptg.,ANNOTATION,[Membaca sepotong ayat Al-Quran]
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,3.21 ptg.,Tuan Haji Ahmad Fadhli bin Shaari [Pasir Mas],"yang bermaksud,
 “Dan sungguh Kami telah memuliakan anak cucu Adam dan kami angkut mereka di
 darat dan di laut dan Kami beri kepada mereka rezeki dari yang baik-baik dan Kami
 lebihkan mereka di atas banyak makhluk yang Kami ciptakan dengan kelebihan yang
@@ -3050,9 +3117,13 @@ ketika berlakunya Perintah Kawalan Pergerakan.
 Sekalipun umat Islam mempunyai hak untuk datang ke masjid, solat
 berjemaah dan sebagainya, namun berasaskan kepada prinsip menjaga nyawa,
 kerajaan terpaksa mengambil pendirian untuk mengehadkan kebebasan tersebut. Di
-dalam Islam, kita tahu bahawa beberapa kaedah yang diajar seperti [Berucap dalam
-bahasa Arab] dar' al-mafasid muqaddam 'ala jalb al-mashalih. Menolak kemudaratan
-itu lebih baik daripada kita mengambil manfaat, [Berucap dalam bahasa Arab] akhafu
+dalam Islam, kita tahu bahawa beberapa kaedah yang diajar seperti"
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,3.21 ptg.,ANNOTATION,"[Berucap dalam
+bahasa Arab]"
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,3.21 ptg.,Tuan Haji Ahmad Fadhli bin Shaari [Pasir Mas],"dar' al-mafasid muqaddam 'ala jalb al-mashalih. Menolak kemudaratan
+itu lebih baik daripada kita mengambil manfaat,"
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,3.21 ptg.,ANNOTATION,[Berucap dalam bahasa Arab]
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,3.21 ptg.,Tuan Haji Ahmad Fadhli bin Shaari [Pasir Mas],"akhafu
 adh-dhararain dan sebagainya. Istilah-istilah seperti inilah yang menjadi panduan
 kerajaan pada masa itu tidak membenarkan umat Islam untuk mengimarahkan
 rumah-rumah ibadat termasuk juga mereka yang bukan Islam. Justeru, laporan
@@ -3097,23 +3168,23 @@ kita rasa agak kurang senang dengan laporan ini tetapi dalam kita berdepan denga
 nilai yang telah ditetapkan dalam Perlembagaan Persekutuan, kalaupun terpaksa
 kita menghadapi indeks yang buruk seperti ini, saya kira ia berbaloi sebenarnya. Ini
 kerana dalam masa yang sama..."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,3.21 ptg.,Tuan Chow Yu Hui [Raub],Minta celah.
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,3.21 ptg.,Tuan Haji Ahmad Fadhli bin Shaari [Pasir Mas],Sila.
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,3.21 ptg.,Tuan Chow Yu Hui [Raub],"Minta celah. Saya hendak tanya kepada Yang
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,3.21 ptg.,Tuan Chow Yu Hui [Raub],Minta celah.
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,3.21 ptg.,Tuan Haji Ahmad Fadhli bin Shaari [Pasir Mas],Sila.
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,3.21 ptg.,Tuan Chow Yu Hui [Raub],"Minta celah. Saya hendak tanya kepada Yang
 Berhormat Pasir Mas, jam tangan yang dirampas oleh KDN ada unsur LGBT di
 dalamnya. Adakah pelangi adalah satu unsur LGBT?"
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,3.21 ptg.,Tuan Haji Ahmad Fadhli bin Shaari [Pasir Mas],Kurang jelas.
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,3.21 ptg.,Tuan Chow Yu Hui [Raub],"Jam yang dirampas oleh KDN tadi Yang
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,3.21 ptg.,Tuan Haji Ahmad Fadhli bin Shaari [Pasir Mas],Kurang jelas.
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,3.21 ptg.,Tuan Chow Yu Hui [Raub],"Jam yang dirampas oleh KDN tadi Yang
 Berhormat Pasir Mas kata ada unsur-unsur LGBT. Saya hendak tanya, apa unsur-
 unsur LGBT dalam jam itu?"
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,3.21 ptg.,Tuan Haji Ahmad Fadhli bin Shaari [Pasir Mas],"Terima kasih kepada
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,3.21 ptg.,Tuan Haji Ahmad Fadhli bin Shaari [Pasir Mas],"Terima kasih kepada
 Yang Berhormat bertanya. Saya hanya berdasarkan kepada apa yang dinyatakan
 dalam laporan media dan saya membaca laporan media bahawa menteri juga
 menyebut adanya tulisan LGBT di jam tersebut. Namun, ada juga di sana penafian
 daripada syarikat pengeluar berkenaan."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,3.21 ptg.,Tuan Chow Yu Hui [Raub],"Ya syarikat Swatch sudah menafikan ada unsur
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,3.21 ptg.,Tuan Chow Yu Hui [Raub],"Ya syarikat Swatch sudah menafikan ada unsur
 LGBT, ada perkataan LGBT. So, apa laporan media kamu baca?"
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,3.21 ptg.,Tuan Haji Ahmad Fadhli bin Shaari [Pasir Mas],"Ya sebab itu saya kata
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,3.21 ptg.,Tuan Haji Ahmad Fadhli bin Shaari [Pasir Mas],"Ya sebab itu saya kata
 saya berdasarkan laporan media. Saya sendiri tidak terlibat dalam rampasan
 tersebut. Menteri datang ke tempat kita pun tidak beritahu kita, apatah lagi hendak
 rampas jam. Jadi, berdasarkan laporan media ada tulisan. Jadi kalau syarikat
@@ -3139,11 +3210,11 @@ ini perlu dipertahankan kerana ia merupakan institusi yang baik dan institusi ya
 mulia tetapi ia tidak boleh diambil kesempatan untuk mengelabui pandangan
 anggota masyarakat untuk memohon derma terhadap perkara apatah lagi jika ia
 tidak wujud."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1530,Tuan Haji Ahmad Fadhli bin Shaari [Pasir Mas],"Seterusnya saya juga ingin merujuk kepada- sedikit lagi Tuan Yang di-
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1530,Tuan Haji Ahmad Fadhli bin Shaari [Pasir Mas],"Seterusnya saya juga ingin merujuk kepada- sedikit lagi Tuan Yang di-
 Pertua..."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1530,Timbalan Yang di-Pertua [Puan Alice Lau Kiong Yieng],"Sila gulung Yang
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1530,Timbalan Yang di-Pertua [Puan Alice Lau Kiong Yieng],"Sila gulung Yang
 Berhormat."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1530,Tuan Haji Ahmad Fadhli bin Shaari [Pasir Mas],"...Iaitu permohonan
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1530,Tuan Haji Ahmad Fadhli bin Shaari [Pasir Mas],"...Iaitu permohonan
 daripada Laporan SUHAKAM ini sendiri. Pada muka surat 2012 saya mendapati
 bahawa SUHAKAM telah memohon peruntukan dana yang mencukupi bagi aktiviti
 mereka. Pada tahun 2020 SUHAKAM menerima geran mengurus RM12.45 juta dan
@@ -3152,34 +3223,38 @@ SUHAKAM ini perlu kepada dana daripada pihak kerajaan.
 Namun, dalam masa yang sama, sudah tentu sebagai Ahli Parlimen kami
 juga perlukan dana untuk bekerja. Jadi, saya bimbang dalam keadaan kita hendak
 terbitkan hak asasi manusia, mangsa penindasan hak asasi manusia ialah kami Ahli-
-ahli Pembangkang yang tidak menerima sebarang dana... [Tepuk]
-Hendak bayar gaji kerani, pegawai khas pun kami terpaksa guna duit gaji
+ahli Pembangkang yang tidak menerima sebarang dana..."
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1530,ANNOTATION,[Tepuk]
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1530,Tuan Haji Ahmad Fadhli bin Shaari [Pasir Mas],"Hendak bayar gaji kerani, pegawai khas pun kami terpaksa guna duit gaji
 sendiri. Satu sen pun tidak ada peruntukan daripada kerajaan. Jadi, saya tahu
 kawan-kawan saya di sebelah kerajaan setuju dengan saya. Yang Berhormat
 Tampin setuju, tidak?"
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1530,Dato’ Mohd Isam bin Mohd Isa [Tampin],"[Bercakap tanpa menggunakan
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1530,Dato’ Mohd Isam bin Mohd Isa [Tampin],
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1530,ANNOTATION,"[Bercakap tanpa menggunakan
 pembesar suara]"
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1530,Tuan Haji Ahmad Fadhli bin Shaari [Pasir Mas],"Setuju tidak dapat kah,
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1530,Tuan Haji Ahmad Fadhli bin Shaari [Pasir Mas],"Setuju tidak dapat kah,
 atau setuju macam mana?"
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1530,Dato’ Mohd Isam bin Mohd Isa [Tampin],"[Bercakap tanpa menggunakan
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1530,Dato’ Mohd Isam bin Mohd Isa [Tampin],
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1530,ANNOTATION,"[Bercakap tanpa menggunakan
 pembesar suara]"
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1530,Tuan Haji Ahmad Fadhli bin Shaari [Pasir Mas],"Boleh, saya boleh
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1530,Tuan Haji Ahmad Fadhli bin Shaari [Pasir Mas],"Boleh, saya boleh
 berunding dan rundingan telah pun dihantar. Kalau hendak saya berunding, saya
 boleh berunding, tidak ada masalah. Ini pun saya minta dengan penuh elok. Kalau
-hendak saya berpantun, pun boleh.  Hendak sembah silat pun boleh, tetapi
+hendak saya berpantun, pun boleh. Hendak sembah silat pun boleh, tetapi
 sebolehnya bagilah peruntukan.
 Kalau SUHAKAM hendak mohon RM12.45 juta ini, saya yakin kita boleh bagi,
 apatah lagi sebagai Ahli Parlimen yang dipilih oleh rakyat- yang disebut kelmarin oleh
 Yang Berhormat Tumpat. Janganlah menjadikan kami ini sebagai penindasan hak
 asasi manusia. Kalau perlu, mungkin SUHAKAM boleh masukkan penindasan
 terhadap Ahli Parlimen ini sebagai satu laporan dalam laporan 2023. Terima kasih
-Tuan Yang di-Pertua... [Tepuk]"
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1530,Tuan Abdul Latiff bin Abdul Rahman [Kuala Krai],Setuju.
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1530,Tuan Syahredzan bin Johan [Bangi],"Runding Yang Berhormat, runding-
+Tuan Yang di-Pertua..."
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1530,ANNOTATION,[Tepuk]
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1530,Tuan Abdul Latiff bin Abdul Rahman [Kuala Krai],Setuju.
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1530,Tuan Syahredzan bin Johan [Bangi],"Runding Yang Berhormat, runding-
 runding."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1530,Timbalan Yang di-Pertua [Puan Alice Lau Kiong Yieng],"Terima kasih
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1530,Timbalan Yang di-Pertua [Puan Alice Lau Kiong Yieng],"Terima kasih
 Yang Berhormat Pasir Mas. Saya jemput Yang Berhormat Rasah."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,3.32 ptg.,Tuan Cha Kee Chin [Rasah],"Terima kasih Tuan Yang di-Pertua atas
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,3.32 ptg.,Tuan Cha Kee Chin [Rasah],"Terima kasih Tuan Yang di-Pertua atas
 peluang untuk saya mengambil bahagian dalam membahaskan Laporan SUHAKAM
 2020. Ini kali kedua saya berpeluang dalam Dewan yang mulia ini untuk
 membahaskan laporan daripada SUHAKAM. Saya masih ingat empat tahun dahulu
@@ -3279,9 +3354,9 @@ hari ini dapat diperluaskan, diperkasakan- supaya rakyat Malaysia sentiasa
 dilindungi daripada sebarang pencabulan ataupun ketidakadilan yang berlaku yang
 menjejaskan hak asasi rakyat Malaysia. Itu sahaja perbahasan saya. Terima kasih
 Tuan Yang di-Pertua."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1540,Timbalan Yang di-Pertua [Puan Alice Lau Kiong Yieng],"Terima kasih
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1540,Timbalan Yang di-Pertua [Puan Alice Lau Kiong Yieng],"Terima kasih
 Yang Berhormat Rasah. Saya jemput Yang Berhormat Bukit Bendera."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,3.40 ptg.,Puan Syerleena binti Abdul Rashid [Bukit Bendera],"Terima kasih kepada
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,3.40 ptg.,Puan Syerleena binti Abdul Rashid [Bukit Bendera],"Terima kasih kepada
 Tuan Yang di-Pertua. Assalamualaikum kepada semua, salam sejahtera, salam
 Malaysia Madani. Terima kasih kepada Tuan Yang di-Pertua kerana memberi ruang
 dan juga peluang pada Bukit Bendera untuk membahaskan Laporan Tahunan 2020
@@ -3386,9 +3461,9 @@ Akan tetapi dengan jumlah kanak-kanak tanpa kewarganegaraan di negara
 kita, pendidikan dan juga penjagaan kesihatan merupakan hak asasi semua manusia
 dan harus kita berikan tumpuan dan bantuan kepada anak-anak. Jadi di sini Tuan
 Yang di-Pertua, Bukit Bendera menyokong. Terima kasih."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,3.40 ptg.,Timbalan Yang di-Pertua [Puan Alice Lau Kiong Yieng],"Terima kasih
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,3.40 ptg.,Timbalan Yang di-Pertua [Puan Alice Lau Kiong Yieng],"Terima kasih
 Yang Berhormat Bukit Bendera. Saya jemput Yang Berhormat Pokok Sena."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,3.49 ptg.,Dato' Haji Ahmad bin Saad @ Yahaya [Pokok Sena],"Assalamualaikum
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,3.49 ptg.,Dato' Haji Ahmad bin Saad @ Yahaya [Pokok Sena],"Assalamualaikum
 dan salam sejahtera. Tuan Yang di-Pertua, saya ingin ucapkan banyak terima kasih
 kerana diberi peluang untuk membahaskan Laporan SUHAKAM Tahun 2020, pada
 sesi petang hari ini.
@@ -3399,7 +3474,7 @@ sepatutnya siap pada tahun 2021. Jadi persoalan saya yang ingin saya tanya ialah
 apakah hasil kajian tersebut? Apa yang menjadi kebimbangan kita merupakan
 objektif terhadap projek kajian ini sendiri sebenarnya lebih cenderung untuk
 mempromosi dan menyokong penyertaan Malaysia ke dalam baki triti antarabangsa."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1550,Dato' Haji Ahmad bin Saad @ Yahaya [Pokok Sena],"Sepatutnya kita terlebih dahulu meneliti kerangka perundangan dan dasar
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1550,Dato' Haji Ahmad bin Saad @ Yahaya [Pokok Sena],"Sepatutnya kita terlebih dahulu meneliti kerangka perundangan dan dasar
 agama dan budaya serta adat dan norma negara kita Malaysia. Kemudian barulah
 membuat penilaian yang jujur dan berobjektif terhadap keperluan untuk meratifikasi
 triti antarabangsa.
@@ -3455,7 +3530,7 @@ negeri menyebabkan kes-kes murtad mahupun keluar Islam tidak dapat ditangani
 secara menyeluruh. Ini kerana kita memerlukan satu set garis panduan dan proses
 penasihatan akidah yang wajar diteliti secara mendalam.
 Sebagai contoh Tuan Yang di-Pertua, Siti Fatimah Tan Abdullah, satu kes
-lama.  Iaitu seorang wanita yang memeluk agama Islam melalui perkahwinan
+lama. Iaitu seorang wanita yang memeluk agama Islam melalui perkahwinan
 kemudian ditinggalkan oleh pasangannya. Mahkamah Tinggi Syariah membenarkan
 beliau tidak lagi Islam kerana beliau sendiri tidak mengamalkan ajaran Islam dan
 masih sepenuhnya berpegang kepada ajaran Buddha meskipun selepas memeluk
@@ -3475,9 +3550,9 @@ Selain itu, saya juga mengharapkan agar penubuhan pusat pemurnian akidah
 bagi proses Istitabah dan dapat diperluaskan ke seluruh negara bagi mengatasi isu
 keluar agama ini. Kita memerlukan satu- dasar yang progresif bagi menangani isu
 ini. Terima kasih Tuan Yang di-Pertua."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1550,Timbalan Yang di-Pertua [Puan Alice Lau Kiong Yieng],"Terima kasih
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1550,Timbalan Yang di-Pertua [Puan Alice Lau Kiong Yieng],"Terima kasih
 Yang Berhormat Pokok Sena. Saya jemput Yang Berhormat Pasir Gudang."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,3.57 ptg.,Tuan Hassan bin Abdul Karim [Pasir Gudang],"Terima kasih Tuan Yang
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,3.57 ptg.,Tuan Hassan bin Abdul Karim [Pasir Gudang],"Terima kasih Tuan Yang
 di-Pertua. Pasir Gudang memulakan perbahasan ini dengan menyentuh berkenaan
 Rumusan Eksekutif yang terdapat dalam Laporan Tahunan 2020 Suruhanjaya
 SUHAKAM.
@@ -3498,7 +3573,7 @@ Jadi, saya minta Kementerian Dalam Negeri untuk jelaskan perkara ini. Saya
 amat sedih baca laporan iaitu keluarga, isteri Encik Amri telah dapat permohonan di
 mahkamah untuk mendapatkan dokumen sulit tentang bagaimana kes suaminya
 hilang."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1600,Tuan Hassan bin Abdul Karim [Pasir Gudang],"Akan tetapi kerajaan kemukakan permohonan untuk menolak permohonan
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1600,Tuan Hassan bin Abdul Karim [Pasir Gudang],"Akan tetapi kerajaan kemukakan permohonan untuk menolak permohonan
 itu dan ini tak patut. Mahkamah, apa salahnya bagilah kepada isteri itu tahu apa jadi
 kepada suaminya.
 Jadi saya tak nak salahkan kerajaan yang ada sekarang. Kehilangan ini sejak
@@ -3529,15 +3604,15 @@ tidak adil untuk laporan ini menyebut perkara itu sebab laporan ini hanya tahun 
 Saya minta SUHAKAM yang akan datang ini laporkan pendirian SUHAKAM.
 Adakah ia bersetuju darurat itu diadakan? Adakah dia bersetuju Parlimen digantung?
 Saya sebagai Ahli Parlimen- ya, nampak Yang Berhormat Bangi."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1600,Tuan Syahredzan bin Johan [Bangi],"Yang Berhormat Pasir Gudang, Yang
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1600,Tuan Syahredzan bin Johan [Bangi],"Yang Berhormat Pasir Gudang, Yang
 Berhormat setuju tak dengan saya bahawa dengan penggantungan Parlimen
 tersebut, ia merupakan satu pelanggaran hak asasi manusia, rakyat Malaysia yang
 telah mengundi dalam pilihan raya, telah memilih Wakil Rakyat mereka?"
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1600,Tuan Hassan bin Abdul Karim [Pasir Gudang],"Tuan Yang di-Pertua, untuk
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1600,Tuan Hassan bin Abdul Karim [Pasir Gudang],"Tuan Yang di-Pertua, untuk
 persoalan yang dikemukakan oleh Yang Berhormat Bangi itu, saya bersetuju ia satu
 pelanggaran."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1600,ANNOTATIONS,"[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
-Saya sebagai rakyat biasa, sebagai Ahli Parlimen dan Tuan Yang di-Pertua
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1600,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1600,Tuan Hassan bin Abdul Karim [Pasir Gudang],"Saya sebagai rakyat biasa, sebagai Ahli Parlimen dan Tuan Yang di-Pertua
 pun boleh mengesahkan beberapa orang Ahli Parlimen kita termasuk Perdana
 Menteri waktu itu Ketua Pembangkang telah mencabar di mahkamah tentang
 penggantungan Parlimen dan proklamasi darurat dari Mahkamah Tinggi sampai
@@ -3545,9 +3620,9 @@ Mahkamah Rayuan sehinggalah ke Mahkamah Persekutuan. Jadi saya mohon
 kepada SUHAKAM yang ada sekarang ini supaya membentangkan pendiriannya
 dalam laporannya yang akan datang dan kita akan teliti bersama. Sekian, Tuan Yang
 di-Pertua. Terima kasih."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1600,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Pasir Gudang.
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1600,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Pasir Gudang.
 Sekarang saya jemput Yang Berhormat Raub."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,4.05 ptg.,Tuan Chow Yu Hui [Raub],"Terima kasih Tuan Yang di-Pertua. Saya
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,4.05 ptg.,Tuan Chow Yu Hui [Raub],"Terima kasih Tuan Yang di-Pertua. Saya
 mengalu-alukan langkah kerajaan untuk membentangkan dan membahaskan
 Laporan SUHAKAM Tahun 2020. Langkah ini penting kerana mengiktiraf hak asasi
 manusia sebagai asas negara kita.
@@ -3605,7 +3680,7 @@ tahanan. Lebih-lebih lagi, IPCC tidak berkuasa untuk mewajibkan penyerahan
 dokumen dan bukti sekiranya dianggap menggugat keselamatan atau kepentingan
 negara.
 Ketiga, kekurangan kuasa penguatkuasaan."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1610,Tuan Chow Yu Hui [Raub],"Suruhanjaya tersebut hanya berkuasa merujukkan hasil siasatan dan
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1610,Tuan Chow Yu Hui [Raub],"Suruhanjaya tersebut hanya berkuasa merujukkan hasil siasatan dan
 cadangan tindakan kepada Suruhanjaya Pasukan Polis. IPCC tidak berkuasa
 mengarahkan Suruhanjaya Pasukan Polis mengambil tindakan atau melaporkan
 tindakan susulannya kepada IPCC. Oleh itu, saya mencadangkan RUU IPCC
@@ -3621,7 +3696,7 @@ untuk meningkatkan peruntukan tahunan SUHAKAM dalam Bajet 2024 bagi
 memastikan SUHAKAM menjalankan mandat secara efektif menurut Prinsip Paris.
 Tuan Yang di-Pertua, saya selanjutnya mencadangkan bahawa SUHAKAM
 memperluaskan skop pemantauannya dan memberi perhatian kepada isu land
-grabbing.  Maksudnya kerajaan negeri memberi milik tanah yang luas kepada
+grabbing. Maksudnya kerajaan negeri memberi milik tanah yang luas kepada
 korporat swasta besar dan mengabaikan pekebun-pekebun tempatan yang telah
 lama mengusahakan tanah yang sama. Saya memberi contoh, sejak tahun 1970-
 an, kerajaan negeri telah menggalakkan pekebun-pekebun di Raub untuk meneroka
@@ -3648,26 +3723,26 @@ untuk memperoleh nafkah melalui pekerjaan yang dipilih secara bebas dan akan
 mengambil langkah yang sesuai untuk melindungi hak ini.
 Akhir sekali, saya menegaskan bahawa supaya SUHAKAM perlu
 diperkasakan bagi melindungi dan mempromosi hak asas manusia."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1610,Tuan Roslan bin Hashim [Kulim-Bandar Baharu],"Yang Berhormat Raub,
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1610,Tuan Roslan bin Hashim [Kulim-Bandar Baharu],"Yang Berhormat Raub,
 Yang Berhormat Raub minta laluan."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1610,Tuan Chow Yu Hui [Raub],Silakan.
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1610,Tuan Roslan bin Hashim [Kulim-Bandar Baharu],"Terima kasih Yang
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1610,Tuan Chow Yu Hui [Raub],Silakan.
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1610,Tuan Roslan bin Hashim [Kulim-Bandar Baharu],"Terima kasih Yang
 Berhormat Raub. Tadi saya dengar apa yang Yang Berhormat Raub cakap tadi
 tentang tanah durian yang ditanam di Raub. Saya rasa itu bukan termasuk dalam
 hak asasi manusia, itu merupakan pencerobohan. Saya rasa perlu diperbetulkan."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1610,Tuan Chow Yu Hui [Raub],"Inilah apa yang sebelah sana anggap tetapi
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1610,Tuan Chow Yu Hui [Raub],"Inilah apa yang sebelah sana anggap tetapi
 mereka sudah menanam di sana beberapa puluh tahun sejak 70-an. Ini merupakan
 hak asasi mereka untuk prioriti untuk dapat geran ataupun kebenaran untuk
 menanam."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1610,Tuan Roslan bin Hashim [Kulim-Bandar Baharu],"Yang Berhormat Raub,
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1610,Tuan Roslan bin Hashim [Kulim-Bandar Baharu],"Yang Berhormat Raub,
 Yang Berhormat Raub."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1610,Tuan Chow Yu Hui [Raub],Kenapakah ini bukan hak asasi manusia?
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1610,Tuan Roslan bin Hashim [Kulim-Bandar Baharu],"Ya, sebelum kita
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1610,Tuan Chow Yu Hui [Raub],Kenapakah ini bukan hak asasi manusia?
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1610,Tuan Roslan bin Hashim [Kulim-Bandar Baharu],"Ya, sebelum kita
 hendak masuk satu buah kawasan atau tanah, kita mesti ada hak. Kita mesti buat
 permohonan dan sudah dapat baru kita boleh masuk."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1610,Tuan Yang di-Pertua,"Yang Berhormat Kulim Bandar Baharu, Yang
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1610,Tuan Yang di-Pertua,"Yang Berhormat Kulim Bandar Baharu, Yang
 Berhormat Kulim Bandar Baharu."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1610,Tuan Chow Yu Hui [Raub],"Kerajaan- saya hendak tegaskan di sini mereka-
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1610,Tuan Chow Yu Hui [Raub],"Kerajaan- saya hendak tegaskan di sini mereka-
 tanam di sana kerana Kerajaan Negeri Pahang pada masa 70-an menggalakkan
 mereka menanam di tanah sana. Sudah beberapa puluh tahun mereka di sana.
 Kenapakah tanah itu boleh dipajakkan kepada syarikat besar dan bukan bagi
@@ -3679,9 +3754,9 @@ mandatnya. Akhir sekali, saya juga minta Yang Berhormat Menteri turut memberi
 satu garis masa kepada pindaan menjelaskan kelemahan akta sedia ada dan
 menerangkan cara perkasakan SUHAKAM. Sekian, terima kasih. Saya mohon
 menyokong."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1610,Tuan Yang di-Pertua,"Terima kasih. Saya jemput Yang Berhormat Bagan
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1610,Tuan Yang di-Pertua,"Terima kasih. Saya jemput Yang Berhormat Bagan
 Serai."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,4.15 ptg.,Datuk Idris bin Ahmad [Bagan Serai],"Assalamualaikum warahmatullahi
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,4.15 ptg.,Datuk Idris bin Ahmad [Bagan Serai],"Assalamualaikum warahmatullahi
 wabarakatuh dan salam sejahtera. Terima kasih kepada Tuan Yang di-Pertua. Hak
 asasi manusia dijelaskan sebagai hak yang dipunyai oleh seorang individu atas
 kapasiti sebagai manusia dan meliputi pelbagai skop kehidupan. Antaranya hak
@@ -3696,8 +3771,10 @@ Islam adalah agama yang mula-mula memperakui dan mendaulatkan hak asasi
 manusia.
 Sebagai contoh, perubahan dari zaman Jahiliyah di mana kaum wanita dan
 kanak-kanak perempuan dizalimi, dibunuh kerana jantinanya sebagaimana Allah
-Ta’ala rakamkan dalam al-Quran dalam Surah An-Nahl ayat 58...  [Membaca
-sepotong ayat al-Quran] “Apabila dikhabarkan kepada seorang daripada mereka
+Ta’ala rakamkan dalam al-Quran dalam Surah An-Nahl ayat 58..."
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,4.15 ptg.,ANNOTATION,"[Membaca
+sepotong ayat al-Quran]"
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,4.15 ptg.,Datuk Idris bin Ahmad [Bagan Serai],"“Apabila dikhabarkan kepada seorang daripada mereka
 bahawa ia dapat anak perempuan, muramlah mukanya sepanjang hari kerana
 menanggung dukacita sedang ia menahan perasaan marah dalam hati”.
 Kedatangan Islam mengangkat maruah dan martabat wanita seiring dengan laki-laki.
@@ -3707,7 +3784,7 @@ menjauhkan diri daripada Tuhan, maka tidak rasional usaha atau pandangan itu
 dilihat sebagai satu bentuk tindakan menegakkan haknya sebagai insan atas nama
 hak asasi manusia. Berbeza dengan perspektif Islam, pemikir-pemikir Barat lebih
 cenderung mengaitkan hak asasi manusia dengan kedaulatan dan kebebasan
-individu semata-mata.  Bagi golongan ini dan para pendukungnya, hak asasi
+individu semata-mata. Bagi golongan ini dan para pendukungnya, hak asasi
 manusia dan kebebasan individu adalah bersifat mutlak dan kepentingan individu
 mengatasi daripada kepentingan manusia sejagat.
 Saya percaya pihak SUHAKAM juga berusaha bersungguh-sungguh dalam
@@ -3729,11 +3806,11 @@ PBT telah menghalang kelulusan penggunaan rumah kedai sebagai tempat
 pembelajaran melalui Surat Pekeliling serta menyukarkan proses surat kelulusan
 penggunaan bangunan dan diarahkan supaya ditutup. Kesukaran kelulusan bomba
 dan kesihatan juga sebahagian daripada proses kelulusan PBT. Ini berlaku di PBT
-Shah Alam, Subang Jaya dan Petaling Jaya.  Akibatnya JAIS tidak dapat
+Shah Alam, Subang Jaya dan Petaling Jaya. Akibatnya JAIS tidak dapat
 mengeluarkan surat kelulusan pendaftaran sekolah sementara atau tetap. Ini akan
 mengakibatkan pelajar tidak boleh mengambil peperiksaan Ujian Penilaian Kelas
 KAFA (UPKK) dan Penilaian Sekolah Rendah Agama (PSRA)."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1620,Datuk Idris bin Ahmad [Bagan Serai],"Perkara ini amat menggusarkan pihak pentadbir sekolah, ibu bapa dan juga
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1620,Datuk Idris bin Ahmad [Bagan Serai],"Perkara ini amat menggusarkan pihak pentadbir sekolah, ibu bapa dan juga
 murid. Ini kerana, sekolah yang beroperasi ini sudah pun lama berlalu, tiba-tiba
 mengalami kesulitan dan kesusahan kepada pengusaha.
 Tuan Yang di-Pertua, bercakap berkenaan dengan hak asasi juga, dalam
@@ -3742,9 +3819,10 @@ laporan ini dilaporkan tentang perjalanan pilihan raya daripada muka surat 81 hi
 dibangkitkan oleh Yang Berhormat Pasir Mas dan juga Yang Berhormat Tumpat
 berkenaan dengan hak asasi kepada Ahli Parlimen Pembangkang. Sedang kita
 berbincang hak asasi manusia, sedar atau tidak Ahli Parlimen Pembangkang juga
-diseksa zahir dan batin. Sepatutnya Ahli Parlimen- Wakil Rakyat... [Ketawa]"
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1620,Tuan Yang di-Pertua,Termasuk batin ya.
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1620,Datuk Idris bin Ahmad [Bagan Serai],"Sepatutnya Ahli Parlimen ini kita
+diseksa zahir dan batin. Sepatutnya Ahli Parlimen- Wakil Rakyat..."
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1620,ANNOTATION,[Ketawa]
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1620,Tuan Yang di-Pertua,Termasuk batin ya.
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1620,Datuk Idris bin Ahmad [Bagan Serai],"Sepatutnya Ahli Parlimen ini kita
 analis sebagai law maker, pembuat dasar. Sudah tentu kita datang ke sini untuk
 membuat bincang berkenaan rang undang-undang dan sebagainya. Akan tetapi
 realiti yang kami hadapi menjadi pegawai kebajikan, bomba, kadang sesetengah Tok
@@ -3754,15 +3832,16 @@ berada di kawasan luar bandar yang rakyat memang rapat dengan kami. Mereka
 tidak tahu yang kami tidak ada peruntukan apabila berlaku satu musibah, Wakil
 Rakyat lah yang menjadi tumpuan.
 Tuan Yang di-Pertua pun ada pengalaman...."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1620,Tuan Yang di-Pertua,15 tahun.
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1620,Datuk Idris bin Ahmad [Bagan Serai],"15 tahun. Kita ada pengalaman. Itu
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1620,Tuan Yang di-Pertua,15 tahun.
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1620,Datuk Idris bin Ahmad [Bagan Serai],"15 tahun. Kita ada pengalaman. Itu
 berlaku. Pengalaman saya sendiri di Bagan Serai. Tempat baharu saya, kebetulan
 tempat selalu dilanggar dengan ribut. Hampir 70 buah rumah yang dilanda ribut. Kita
 pergi bolehlah bagi dekat RM100-200 tetapi kadang-kadang tidak sampai hati juga
 hendak bagi. Jadi, setiap hari pejabat saya ada minta bantuan. Kadang-kadang ada
 hendak minta buat gigi palsu.
-Tidak bagi, kita tengok kesian dia baca Al-Fatihah tidak betul... [Ketawa]
-Kadang-kadang hendak bawa ke hospital. Memang dia perlu. Kita tahu bukan dia
+Tidak bagi, kita tengok kesian dia baca Al-Fatihah tidak betul..."
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1620,ANNOTATION,[Ketawa]
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1620,Datuk Idris bin Ahmad [Bagan Serai],"Kadang-kadang hendak bawa ke hospital. Memang dia perlu. Kita tahu bukan dia
 tipu. Dia perlu. Memang dia perlu. Kita tengok background dia. Kita check tengok,
 kadang-kadang hendak buat temu janji dengan pakar di Kuala Lumpur. Kadang-
 kadang hendak bayar bil tertunggak, NGO-NGO, PIBG dan sekolah dan sebagainya.
@@ -3773,14 +3852,15 @@ reimburse duit kita dahulu. Kemudian, kita claim dekat Pejabat Daerah berkenaan
 dengan pendahuluan yang kita dapat. Untuk makluman semua, untuk saya sendiri
 dan juga kawan-kawan yang lain, gaji kita ini sebenarnya dapat setelah masuk dalam
 slip kita RM25,448.15."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1620,Tuan Mohd Sany bin Hamzan [Hulu Langat],"Yang Berhormat Bagan
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1620,Tuan Mohd Sany bin Hamzan [Hulu Langat],"Yang Berhormat Bagan
 Serai."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1620,Datuk Idris bin Ahmad [Bagan Serai],Sudah masa habis.
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1620,Tuan Mohd Sany bin Hamzan [Hulu Langat],"Tanya sedikit sahaja. Sebab
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1620,Datuk Idris bin Ahmad [Bagan Serai],Sudah masa habis.
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1620,Tuan Mohd Sany bin Hamzan [Hulu Langat],"Tanya sedikit sahaja. Sebab
 dahulu PM ada sebut minta Pembangkang bincang. Sudah pergi bincang kah? Itu
 soalan saya yang pertama. Kemudian yang kedua, hendak tanya gigi Yang
-Berhormat Bagan Serai okey? Tiada gigi palsu?... [Ketawa]"
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1620,Datuk Idris bin Ahmad [Bagan Serai],"Okey. Hendak sebut ini berkenaan
+Berhormat Bagan Serai okey? Tiada gigi palsu?..."
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1620,ANNOTATION,[Ketawa]
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1620,Datuk Idris bin Ahmad [Bagan Serai],"Okey. Hendak sebut ini berkenaan
 dengan wang yang kita belanja ini. Untuk Pusat sahaja kita bayar kepada parti
 sebanyak RM4,000. Kepada kawasan Bagan Serai, RM1,000. Sewa pusat khidmat,
 RM100. Air, api RM1,000. Tiga orang staf RM4,800. Untuk kita petrol, tol semua
@@ -3797,7 +3877,7 @@ Jadi, sebab itu Tuan Yang di-Pertua, apa yang saya sebutkan tadi iaitu untuk
 kita melihat berkenaan dengan yang perlu juga diberikan perhatian ketika kita
 membincangkan berkenaan dengan hak asasi manusia. Terima kasih Tuan Yang di-
 Pertua, terima kasih semua."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1620,Tuan Yang di-Pertua,"Baik. Terima kasih. Sebelum saya menjemput Ahli
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1620,Tuan Yang di-Pertua,"Baik. Terima kasih. Sebelum saya menjemput Ahli
 Yang Berhormat seterusnya, saya hendak bacakan nama-nama yang akan ambil
 bahagian hari ini dan insya-Allah kalau tidak sempat hari ini, kita sambung pada esok
 hari isu perbincangan Laporan Tahunan SUHAKAM 2020.
@@ -3808,7 +3888,7 @@ Berhormat Bakri, Yang Berhormat Batang Sadong, Yang Berhormat Tenom, Yang
 Berhormat Lubuk Hantu, Yang Berhormat Sungai Petani dan Yang Berhormat Batu
 Pahat.
 Untuk itu, saya jemput Yang Berhormat Petaling Jaya. Silakan."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,4.26 ptg.,Tuan Lee Chean Chung [Petaling Jaya],"Terima kasih kepada Tuan Yang
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,4.26 ptg.,Tuan Lee Chean Chung [Petaling Jaya],"Terima kasih kepada Tuan Yang
 di-Pertua atas peluang yang diberikan kepada saya untuk menyertai perbahasan
 laporan tahunan SUHAKAM di Dewan yang mulia ini.
 Tuan Yang di-Pertua, sebagai wakil rakyat, saya berpendapat bahawa
@@ -3854,7 +3934,7 @@ Walaupun begitu, golongan Rohingya telah pun menjadi sebahagian
 daripada tenaga kerja dalam industri berintensiti buruh utama di Malaysia yang
 menghadapi isu yang disebut di atas walaupun mereka tidak dibenarkan bekerja
 secara formal atau sah."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1630,Tuan Lee Chean Chung [Petaling Jaya],"Oleh itu kita perlu mencari jalan penyelesaian untuk menangani isu mengenai
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1630,Tuan Lee Chean Chung [Petaling Jaya],"Oleh itu kita perlu mencari jalan penyelesaian untuk menangani isu mengenai
 pengambilan pelarian dan pencari suaka. Salah satu cara ialah membenarkan
 pelarian mendaftar dan bekerja sebagai pekerja asing berdasarkan undang-undang
 sedia ada dengan sedikit pindaan. Dengan ini pelarian boleh sumbang lebih banyak
@@ -3905,10 +3985,10 @@ kehidupan dan memanfaatkan potensi mereka sebagai penyumbang yang berharga
 kepada masyarakat. Ia tanggungjawab moral kita untuk berdiri untuk hak-hak
 pelarian. Sekian sahaja ucapan perbahasan saya. Terima kasih Tuan Yang di-
 Pertua."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1630,Tuan Yang di-Pertua,"Terima kasih. Seterusnya saya jemput Yang
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1630,Tuan Yang di-Pertua,"Terima kasih. Seterusnya saya jemput Yang
 Berhormat Kepong. Yang Berhormat Kepong tiada. Baik saya jemput Yang
 Berhormat Kuala Krau."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,4.34 ptg.,Tuan Kamal bin Ashaari [Kuala Krau],"Assalamualaikum warahmatullahi
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,4.34 ptg.,Tuan Kamal bin Ashaari [Kuala Krau],"Assalamualaikum warahmatullahi
 wabarakatuh dan salam sejahtera. Tuan Yang di-Pertua, terima kasih terutamanya
 kerana memberi ruang untuk saya membahaskan Laporan SUHAKAM pada hari ini.
 Dalam masa yang terhad ini saya hanya menumpukan dalam beberapa
@@ -3970,7 +4050,7 @@ sikap individualistik dan kebebasan yang melampau. Kita sering menuntut perkara
 berkaitan hak tetapi tidak ramai yang mempersoalkan berkaitan tentang
 tanggungjawab sedangkan perkara hak itu akan tertunai apabila kita melaksanakan
 tanggungjawab yang dipertanggungjawabkan kepada kita."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■ 1640,Tuan Kamal bin Ashaari [Kuala Krau],"Persoalan ini menjadi kekeliruan masyarakat, antara hak dan tanggungjawab
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■ 1640,Tuan Kamal bin Ashaari [Kuala Krau],"Persoalan ini menjadi kekeliruan masyarakat, antara hak dan tanggungjawab
 yang dituntut tidak seimbang dengan tanggungjawab sehingga setiap orang berfikir
 tentang hak diri mereka masing-masing. Sedangkan tidak ada sesiapa pun yang
 beroleh hak mereka, jika tanggungjawab itu dilaksanakan. Berasaskan kepada
@@ -4009,9 +4089,9 @@ orang yang pernah bertanya, kita sering mempertanyakan tentang hak asasi
 manusia tetapi jangan lupa kita adalah hak Allah dan hak Allah mesti dipenuhi,
 melaksanakan hak-Nya sebelum kita dipertanggungjawabkan di hadapan Allah
 SWT. Sekian, Tuan Yang di-Pertua. Assalamualaikum warahmatullahi wabarakatuh."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■ 1640,Tuan Yang di-Pertua,"Waalaikumsalam warahmatullahi wabarakatuh. Saya
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■ 1640,Tuan Yang di-Pertua,"Waalaikumsalam warahmatullahi wabarakatuh. Saya
 jemput Yang Berhormat Gopeng."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,4.43 ptg.,Tuan Tan Kar Hing [Gopeng],"Terima kasih kepada Tuan Yang di-Pertua
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,4.43 ptg.,Tuan Tan Kar Hing [Gopeng],"Terima kasih kepada Tuan Yang di-Pertua
 kerana mengizinkan saya untuk turut mengambil bahagian dalam perbahasan
 Laporan Tahunan SUHAKAM tahun 2020. Terlebih dahulu, saya ingin mengucapkan
 syabas dan tahniah kepada Kerajaan Madani kerana telah pun membentangkan dan
@@ -4099,30 +4179,35 @@ berbuat demikian telah pun menemui tindakan dan hukuman. Seperti segelintir
 pemimpin di sebelah sana yang mengatakan bermacam-macam tentang larangan
 azannya, tentang sokongan jual arak, LGBT, terima dana, judi, anti-Islam, dapat
 dana DAP dan sebagainya."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1650,Tuan Tan Kar Hing [Gopeng],"Saya harap, perkara ini tidak boleh kita bertoleransi atas hujah-hujah mereka
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1650,Tuan Tan Kar Hing [Gopeng],"Saya harap, perkara ini tidak boleh kita bertoleransi atas hujah-hujah mereka
 yang sengaja menimbulkan kekeliruan dan kebencian. Bagi saya, ia berita palsu
 yang akan mengundang ketidakharmonian yang berlaku di kalangan masyarakat
 kita. Ini terbukti bahawasanya semua itu adalah fitnah, pembohongan, sama ada
 mereka telah pun menerima hukuman yang setimpal dengan kesalahan mereka
 ataupun mereka telah pun memohon maaf secara terbuka."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1650,Tuan Roslan bin Hashim [Kulim-Bandar Baharu],"Yang Berhormat
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1650,Tuan Roslan bin Hashim [Kulim-Bandar Baharu],"Yang Berhormat
 Gopeng, minta laluan Yang Berhormat Gopeng."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1650,Tuan Tan Kar Hing [Gopeng],"Boleh, sila."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1650,Tuan Roslan bin Hashim [Kulim-Bandar Baharu],"Saya nak minta
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1650,Tuan Tan Kar Hing [Gopeng],"Boleh, sila."
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1650,Tuan Roslan bin Hashim [Kulim-Bandar Baharu],"Saya nak minta
 pandangan Yang Berhormat Gopeng tentang pendakwaan rasuah yang terpilih. Ada
-setengah-setengah di pihak sini... [Merujuk kepada blok pembangkang], diambil
-tindakan secepat mungkin dan ada di sebelah sana... [Merujuk kepada blok
-kerajaan], ditinggalkan dan disilentkan."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1650,Tuan Tan Kar Hing [Gopeng],Kes mana?
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1650,Tuan Roslan bin Hashim [Kulim-Bandar Baharu],"Adakah ini merupakan
+setengah-setengah di pihak sini..."
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1650,ANNOTATION,[Merujuk kepada blok pembangkang]
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1650,Tuan Roslan bin Hashim [Kulim-Bandar Baharu],", diambil
+tindakan secepat mungkin dan ada di sebelah sana..."
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1650,ANNOTATION,"[Merujuk kepada blok
+kerajaan]"
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1650,Tuan Roslan bin Hashim [Kulim-Bandar Baharu],", ditinggalkan dan disilentkan."
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1650,Tuan Tan Kar Hing [Gopeng],Kes mana?
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1650,Tuan Roslan bin Hashim [Kulim-Bandar Baharu],"Adakah ini merupakan
 salah satu daripada penganiayaan dalam hak asasi manusia?"
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1650,Tuan Tan Kar Hing [Gopeng],"Kes mana? Kes mana selective prosecution?
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1650,Tuan Tan Kar Hing [Gopeng],"Kes mana? Kes mana selective prosecution?
 Boleh sebut?"
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1650,Tuan Roslan bin Hashim [Kulim-Bandar Baharu],Macam isu kapal LCS.
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1650,Tuan Tan Kar Hing [Gopeng],"Dalam siasatan. Sudah bagi tahu kan?
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1650,Tuan Roslan bin Hashim [Kulim-Bandar Baharu],Macam isu kapal LCS.
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1650,Tuan Tan Kar Hing [Gopeng],"Dalam siasatan. Sudah bagi tahu kan?
 Selepas itu? Itu isu hak asasi manusia kah atau apa? Tak apa, saya teruskan. Tak
-apa, tak apa. Boleh, terima kasih. [Ketawa]
-Akan tetapi saya ingin menyatakan sokongan saya terhadap syor dalam
+apa, tak apa. Boleh, terima kasih."
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1650,ANNOTATION,[Ketawa]
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1650,Tuan Tan Kar Hing [Gopeng],"Akan tetapi saya ingin menyatakan sokongan saya terhadap syor dalam
 laporan tersebut. Bahawasanya seruan kepada kerajaan untuk membaharui undang-
 undang seperti Akta Komunikasi dan Multimedia 1998 dan akta ucapan kebencian
 sebagai usaha untuk menangani masalah ucapan kebencian, berita palsu yang kini
@@ -4147,9 +4232,9 @@ dan saya ucapkan tahniah lah kepada Kerajaan Madani kerana telah pun
 membentangkan dan membenarkan kita untuk berbahas. Saya menyokong
 sepenuhnya segala syor yang termaktub dalam Laporan SUHAKAM tahun 2020.
 Terima kasih."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1650,Tuan Yang di-Pertua,"Baik, terima kasih. Seterusnya, saya jemput Yang
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1650,Tuan Yang di-Pertua,"Baik, terima kasih. Seterusnya, saya jemput Yang
 Berhormat Jelutong."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,4.53 ptg.,Tuan Sanisvara Nethaji Rayer a/l Rajaji [Jelutong],"Terima kasih Tuan
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,4.53 ptg.,Tuan Sanisvara Nethaji Rayer a/l Rajaji [Jelutong],"Terima kasih Tuan
 Yang di-Pertua. Pertamanya, saya ingin merakamkan penghargaan kepada pasukan
 SUHAKAM yang telah pun membentangkan laporan di Dewan yang mulia ini. Pada
 masa yang sama, saya berterima kasih kepada Tuan Yang di-Pertua, kepada
@@ -4213,72 +4298,74 @@ Akan tetapi sekarang, saya ingin tanya. Saya bukan membuat tuduhan. Saya
 ingin tanya, adakah Ketua Polis Negara ketika itu bertindak disebabkan telah diberi
 arahan untuk berbuat demikian? Oleh siapa? Adakah arahannya datang daripada
 Tun Dr. Mahathir? Saya ingin tanya."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1700,Tuan Haji Mohd Misbahul Munir bin Masduki [Parit Buntar],"Jelutong,
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1700,Tuan Haji Mohd Misbahul Munir bin Masduki [Parit Buntar],"Jelutong,
 minta laluan."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1700,Tuan Sanisvara Nethaji Rayer a/l Rajaji [Jelutong],"Sahabat saya Parit
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1700,Tuan Sanisvara Nethaji Rayer a/l Rajaji [Jelutong],"Sahabat saya Parit
 Buntar."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1700,Tuan Haji Mohd Misbahul Munir bin Masduki [Parit Buntar],Boleh?
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1700,Tuan Sanisvara Nethaji Rayer a/l Rajaji [Jelutong],"Okey, saya bagi."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1700,Tuan Haji Mohd Misbahul Munir bin Masduki [Parit Buntar],"Terima kasih.
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1700,Tuan Haji Mohd Misbahul Munir bin Masduki [Parit Buntar],Boleh?
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1700,Tuan Sanisvara Nethaji Rayer a/l Rajaji [Jelutong],"Okey, saya bagi."
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1700,Tuan Haji Mohd Misbahul Munir bin Masduki [Parit Buntar],"Terima kasih.
 Tadi Yang Berhormat Jelutong sebut seorang bekas Perdana Menteri yang
 bertanggungjawab ke atas isu Dato’ Seri Anwar. Soalan saya, mengapa sewaktu
 bekas Ahli Parlimen Langkawi yang menjadi Perdana Menteri zaman Pakatan
 Harapan memerintah tahun 2018 hari itu, Jelutong tidak bangkitkan isu ini dan minta
 supaya Tun Dr. Mahathir diseret ke mahkamah?"
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1700,Tuan Sanisvara Nethaji Rayer a/l Rajaji [Jelutong],"Soalan yang baik.
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1700,Tuan Sanisvara Nethaji Rayer a/l Rajaji [Jelutong],"Soalan yang baik.
 Saya ingin jawab Tuan Yang di-Pertua. Ketika itu beliau bersama-sama dengan
 kami, prinsip perjuangannya bersama-sama dengan kami. Sekarang beliau telah ikut
 dengan PAS dan PAS bersama-sama dengan beliau. Saya ingin jawab, saya ingin
 jawab."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1700,Tuan Haji Mohd Misbahul Munir bin Masduki [Parit Buntar],So...
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1700,Tuan Haji Mohd Hasnizan bin Harun [Hulu Selangor],Agak-agaklah bang.
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1700,Tuan Tan Kar Hing [Gopeng],"Sebahagian sahaja, bukan semua PAS.
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1700,Tuan Haji Mohd Misbahul Munir bin Masduki [Parit Buntar],So...
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1700,Tuan Haji Mohd Hasnizan bin Harun [Hulu Selangor],Agak-agaklah bang.
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1700,Tuan Tan Kar Hing [Gopeng],"Sebahagian sahaja, bukan semua PAS.
 Sebahagian sahaja."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1700,Tuan Haji Mohd Misbahul Munir bin Masduki [Parit Buntar],"Yang
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1700,Tuan Haji Mohd Misbahul Munir bin Masduki [Parit Buntar],"Yang
 Berhormat Jelutong, soalnya..."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1700,Tuan Haji Ahmad Fadhli bin Shaari [Pasir Mas],"Satu jawapan yang baik
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1700,Tuan Haji Ahmad Fadhli bin Shaari [Pasir Mas],"Satu jawapan yang baik
 dari Yang Berhormat Jelutong."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1700,Tuan Sanisvara Nethaji Rayer a/l Rajaji [Jelutong],"Saya jawab, saya
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1700,Tuan Sanisvara Nethaji Rayer a/l Rajaji [Jelutong],"Saya jawab, saya
 jawab."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1700,Tuan Haji Mohd Misbahul Munir bin Masduki [Parit Buntar],"Soalnya, apa
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1700,Tuan Haji Mohd Misbahul Munir bin Masduki [Parit Buntar],"Soalnya, apa
 yang Langkawi buat kezaliman kepada Tambun hari itu sama juga, mengapa tidak
 dibangkitkan waktu itu?"
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1700,Tuan Sanisvara Nethaji Rayer a/l Rajaji [Jelutong],"Tuan Yang di-Pertua,
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1700,Tuan Sanisvara Nethaji Rayer a/l Rajaji [Jelutong],"Tuan Yang di-Pertua,
 saya ingin jawab. Bagi saya peluang jawab."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1700,Tuan Haji Mohd Misbahul Munir bin Masduki [Parit Buntar],"Mengapa
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1700,Tuan Haji Mohd Misbahul Munir bin Masduki [Parit Buntar],"Mengapa
 tidak bangkit waktu itu? Sekarang baru bangkit."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1700,Tuan Sanisvara Nethaji Rayer a/l Rajaji [Jelutong],"Yang Berhormat, saya
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1700,Tuan Sanisvara Nethaji Rayer a/l Rajaji [Jelutong],"Yang Berhormat, saya
 ingin jawab. Bagi peluang saya jawab. Masa itu Tun Dr. Mahathir tidak sesat.
 Sekarang bersama-sama PAS, Tun Dr. Mahathir sudah sesat."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1700,Tuan Haji Mohd Misbahul Munir bin Masduki [Parit Buntar],"Oh, sebab
-dia tidak bersama kamu, kamu tuduh dia sesat Jelutong. Apalah Jelutong ini.
-[Ketawa]"
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1700,Tuan Haji Mohd Hasnizan bin Harun [Hulu Selangor],"Jelutong tidak betul
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1700,Tuan Haji Mohd Misbahul Munir bin Masduki [Parit Buntar],"Oh, sebab
+dia tidak bersama kamu, kamu tuduh dia sesat Jelutong. Apalah Jelutong ini."
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1700,ANNOTATION,[Ketawa]
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1700,Tuan Haji Mohd Hasnizan bin Harun [Hulu Selangor],"Jelutong tidak betul
 ini. Adoi."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1700,Tuan Haji Mohd Misbahul Munir bin Masduki [Parit Buntar],"Tukar tajuk
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1700,Tuan Haji Mohd Misbahul Munir bin Masduki [Parit Buntar],"Tukar tajuk
 lainlah Jelutong. Tidak payah ungkit benda lama-lama."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1700,Tuan Haji Mohd Hasnizan bin Harun [Hulu Selangor],"Sembang lebih,
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1700,Tuan Haji Mohd Hasnizan bin Harun [Hulu Selangor],"Sembang lebih,
 sembang kencang."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1700,Tuan Sanisvara Nethaji Rayer a/l Rajaji [Jelutong],"Permintaan saya Tuan
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1700,Tuan Sanisvara Nethaji Rayer a/l Rajaji [Jelutong],"Permintaan saya Tuan
 Yang di-Pertua."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1700,Tuan Yang di-Pertua,"Okey, okey."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1700,Tuan Sanisvara Nethaji Rayer a/l Rajaji [Jelutong],"Permintaan saya,
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1700,Tuan Yang di-Pertua,"Okey, okey."
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1700,Tuan Sanisvara Nethaji Rayer a/l Rajaji [Jelutong],"Permintaan saya,
 kalau perkara itu dilakukan oleh Rahim Noor, Ketua Polis Negara di atas arahan.
 Saya bukan buat tuduhan, saya tanya sahaja, siasat perkara itu dan kita bawa Tun
 Dr. Mahathir untuk menghadapi pertuduhan sebab tidak ada had masa. Masa tidak
 mencukupi Tuan Yang di-Pertua. Akan tetapi saya..."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1700,Tuan Yang di-Pertua,"[Ketawa] Landing, landing."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1700,Tuan Haji Mohd Misbahul Munir bin Masduki [Parit Buntar],Jelutong.
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1700,Tuan Sanisvara Nethaji Rayer a/l Rajaji [Jelutong],"Kali pertama saya lihat
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1700,Tuan Yang di-Pertua,
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1700,ANNOTATION,[Ketawa]
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1700,Tuan Yang di-Pertua,"Landing, landing."
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1700,Tuan Haji Mohd Misbahul Munir bin Masduki [Parit Buntar],Jelutong.
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1700,Tuan Sanisvara Nethaji Rayer a/l Rajaji [Jelutong],"Kali pertama saya lihat
 gambar The Untold Story berani mendedahkan apa yang berlaku kepada seorang
 insan biasa yang memperjuangkan hak rakyat Malaysia. Ini adalah perkara yang
 patut kita lihat, beri perhatian dan saya menggunakan kesempatan ini untuk minta
 Menteri Dalam Negeri, Ketua Polis Negara ambil perhatian. Kalau boleh, ambil
 tindakan. Terima kasih Tuan Yang di-Pertua."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1700,Tuan Yang di-Pertua,"Baik, terima kasih. Sekarang saya jemput Yang
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1700,Tuan Yang di-Pertua,"Baik, terima kasih. Sekarang saya jemput Yang
 Berhormat Arau. Silakan dengan gajet dia. Nampak Yang Berhormat Arau ada gajet
 hari ini. Betulkan gajet itu dahulu. Silakan."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,5.02 ptg.,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"Ya, sedikit Tuan Yang di-
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,5.02 ptg.,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"Ya, sedikit Tuan Yang di-
 Pertua. Bismillahi Rahmani Rahim. Assalamualaikum warahmatullahi wabarakatuh.
 Sebagaimana biasa apa khabar rakyat Malaysia, apa khabar orang muda? Jangan
 lupa solat. Tuan Yang di-Pertua yang cukup saya kasihi, seperti yang kita sedia
@@ -4353,189 +4440,198 @@ Parlimen semua nampak kami, kamu sudah nampak kami. Kami macam kamu juga,
 cuma kami ini cantik macam Tuan Yang di-Pertua, kami pakai tie, kamu tidak pakai.
 Kami macam kamu. Tiba-tiba hak asasi kami sebagai Ahli Parlimen
 dinafikan, hak kami untuk dapat peruntukan dinafikan. Kerajaan mencabuli hak asasi
-manusia. [Tepuk] Wahai rakyat yang dikasihi sekalian, orang muda tukar kerajaan
+manusia."
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,5.02 ptg.,ANNOTATION,[Tepuk]
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,5.02 ptg.,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"Wahai rakyat yang dikasihi sekalian, orang muda tukar kerajaan
 ini, kerajaan.."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,5.02 ptg.,Tuan Mohd Sany bin Hamzan [Hulu Langat],"Yang Berhormat Arau, sudah
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,5.02 ptg.,Tuan Mohd Sany bin Hamzan [Hulu Langat],"Yang Berhormat Arau, sudah
 runding kah Yang Berhormat Arau? Runding, runding? Yang Berhormat Arau."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,5.02 ptg.,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"...Untuk membolehkan kita
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,5.02 ptg.,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"...Untuk membolehkan kita
 akan beri perhatian yang serius dan beri keadilan kepada semua. Kalau kita
 memerintah, kita pastikan peruntukan Ahli Parlimen akan diberikan."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,5.02 ptg.,Tuan Mohd Sany bin Hamzan [Hulu Langat],"Arau, soal berkaitan dengan
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,5.02 ptg.,Tuan Mohd Sany bin Hamzan [Hulu Langat],"Arau, soal berkaitan dengan
 bajet itu Arau, Arau, soal berkaitan dengan bajet itu..."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,5.02 ptg.,Tuan Haji Mohd Hasnizan bin Harun [Hulu Selangor],"Hulu Langat jangan
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,5.02 ptg.,Tuan Haji Mohd Hasnizan bin Harun [Hulu Selangor],"Hulu Langat jangan
 kacaulah. Duduklah. Tidak payah kacau, tidak payah kacau. Duduk, duduk."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,5.02 ptg.,Tuan Mohd Sany bin Hamzan [Hulu Langat],"Hulu Selangor duduk. Duduk,
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,5.02 ptg.,Tuan Mohd Sany bin Hamzan [Hulu Langat],"Hulu Selangor duduk. Duduk,
 duduk. Hulu Selangor duduk. Yang Berhormat Arau ..."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,5.02 ptg.,Dato’ Seri Dr. Shahidan bin Kassim [Arau],Tuan Yang di-Pertua ...
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,5.02 ptg.,Tuan Haji Mohd Hasnizan bin Harun [Hulu Selangor],Hulu Langat duduk.
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,5.02 ptg.,Tuan Mohd Sany bin Hamzan [Hulu Langat],"Arau, saya hendak tanya
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,5.02 ptg.,Dato’ Seri Dr. Shahidan bin Kassim [Arau],Tuan Yang di-Pertua ...
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,5.02 ptg.,Tuan Haji Mohd Hasnizan bin Harun [Hulu Selangor],Hulu Langat duduk.
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,5.02 ptg.,Tuan Mohd Sany bin Hamzan [Hulu Langat],"Arau, saya hendak tanya
 Arau, sudah bincangkah? Sudah pergi bincang?"
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,5.02 ptg.,Dato’ Seri Dr. Shahidan bin Kassim [Arau],Duduk! Penyamun.
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,5.02 ptg.,Tuan Mohd Sany bin Hamzan [Hulu Langat],Saya berdiri.
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,5.02 ptg.,Dato’ Seri Dr. Shahidan bin Kassim [Arau],Kamu duduk!
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,5.02 ptg.,Tuan Mohd Sany bin Hamzan [Hulu Langat],Saya berdiri.
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,5.02 ptg.,Dato’ Seri Dr. Shahidan bin Kassim [Arau],Kamu duduk!
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,5.02 ptg.,Tuan Mohd Sany bin Hamzan [Hulu Langat],Saya berdiri.
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,5.02 ptg.,Tuan Yang di-Pertua,"Hulu Langat, kena minta Hulu Langat. Hulu Langat
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,5.02 ptg.,Dato’ Seri Dr. Shahidan bin Kassim [Arau],Duduk! Penyamun.
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,5.02 ptg.,Tuan Mohd Sany bin Hamzan [Hulu Langat],Saya berdiri.
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,5.02 ptg.,Dato’ Seri Dr. Shahidan bin Kassim [Arau],Kamu duduk!
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,5.02 ptg.,Tuan Mohd Sany bin Hamzan [Hulu Langat],Saya berdiri.
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,5.02 ptg.,Dato’ Seri Dr. Shahidan bin Kassim [Arau],Kamu duduk!
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,5.02 ptg.,Tuan Mohd Sany bin Hamzan [Hulu Langat],Saya berdiri.
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,5.02 ptg.,Tuan Yang di-Pertua,"Hulu Langat, kena minta Hulu Langat. Hulu Langat
 kena minta."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,5.02 ptg.,Tuan Mohd Sany bin Hamzan [Hulu Langat],Saya berdiri. Nampak ini?
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,5.02 ptg.,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"Orang yang tidak ikut
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,5.02 ptg.,Tuan Mohd Sany bin Hamzan [Hulu Langat],Saya berdiri. Nampak ini?
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,5.02 ptg.,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"Orang yang tidak ikut
 peraturan, hari ini saya bertolak ansur."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,5.02 ptg.,Dato' Wira Dr. Ku Abd Rahman bin Ku Ismail [Kubang Pasu],"Point of
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,5.02 ptg.,Dato' Wira Dr. Ku Abd Rahman bin Ku Ismail [Kubang Pasu],"Point of
 order."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,5.02 ptg.,Tuan Mohd Sany bin Hamzan [Hulu Langat],"Panggil saya penyamun.
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,5.02 ptg.,Tuan Mohd Sany bin Hamzan [Hulu Langat],"Panggil saya penyamun.
 Penyangak!"
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,5.02 ptg.,Dato’ Seri Dr. Shahidan bin Kassim [Arau],Penyamun!
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,5.02 ptg.,Tuan Mohd Sany bin Hamzan [Hulu Langat],Penyangak!
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,5.02 ptg.,Dato' Wira Dr. Ku Abd Rahman bin Ku Ismail [Kubang Pasu],"Point of
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,5.02 ptg.,Dato’ Seri Dr. Shahidan bin Kassim [Arau],Penyamun!
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,5.02 ptg.,Tuan Mohd Sany bin Hamzan [Hulu Langat],Penyangak!
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,5.02 ptg.,Dato' Wira Dr. Ku Abd Rahman bin Ku Ismail [Kubang Pasu],"Point of
 order Tuan Yang di-Pertua, point of order."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,5.02 ptg.,Tuan Mohd Sany bin Hamzan [Hulu Langat],"Perompak! Penyangak,
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,5.02 ptg.,Tuan Mohd Sany bin Hamzan [Hulu Langat],"Perompak! Penyangak,
 perompak!"
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,5.02 ptg.,Tuan Yang di-Pertua,"Hulu Langat, Hulu Langat."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,5.02 ptg.,Dato' Wira Dr. Ku Abd Rahman bin Ku Ismail [Kubang Pasu],"Point of
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,5.02 ptg.,Tuan Yang di-Pertua,"Hulu Langat, Hulu Langat."
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,5.02 ptg.,Dato' Wira Dr. Ku Abd Rahman bin Ku Ismail [Kubang Pasu],"Point of
 order Tuan Yang di-Pertua."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Tuan Yang di-Pertua,Ya.
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Dato' Wira Dr. Ku Abd Rahman bin Ku Ismail [Kubang Pasu],"Point of
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Tuan Yang di-Pertua,Ya.
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Dato' Wira Dr. Ku Abd Rahman bin Ku Ismail [Kubang Pasu],"Point of
 order."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Tuan Mohd Sany bin Hamzan [Hulu Langat],"Bahasa Arau ini memang
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Tuan Mohd Sany bin Hamzan [Hulu Langat],"Bahasa Arau ini memang
 bahasa yang tidak baik. Orang Selangor tidak boleh terima orang macam ini."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Tuan Yang di-Pertua,Hulu Langat.
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Dato' Wira Dr. Ku Abd Rahman bin Ku Ismail [Kubang Pasu],"Kalau tidak
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Tuan Yang di-Pertua,Hulu Langat.
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Dato' Wira Dr. Ku Abd Rahman bin Ku Ismail [Kubang Pasu],"Kalau tidak
 boleh ikut point of order, tidak boleh jadi Ahli Parlimen."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Tuan Mohd Sany bin Hamzan [Hulu Langat],"Cakap orang penyamun,
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Tuan Mohd Sany bin Hamzan [Hulu Langat],"Cakap orang penyamun,
 siapa penyamun? Awak berkawan dengan penyamun."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Tuan Yang di-Pertua,Hulu Langat.
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Tuan Mohd Sany bin Hamzan [Hulu Langat],"Kes Jana Wibawa awak
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Tuan Yang di-Pertua,Hulu Langat.
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Tuan Mohd Sany bin Hamzan [Hulu Langat],"Kes Jana Wibawa awak
 tunggu..."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Dato' Wira Dr. Ku Abd Rahman bin Ku Ismail [Kubang Pasu],"Point of
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Dato' Wira Dr. Ku Abd Rahman bin Ku Ismail [Kubang Pasu],"Point of
 order."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Tuan Mohd Sany bin Hamzan [Hulu Langat],"Cakap orang penyamun,
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Tuan Mohd Sany bin Hamzan [Hulu Langat],"Cakap orang penyamun,
 cakap elok-eloklah sedikit. Tidak ada bahasa, tidak ada adab."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Tuan Haji Mohd Hasnizan bin Harun [Hulu Selangor],"Tuan Yang di-
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Tuan Haji Mohd Hasnizan bin Harun [Hulu Selangor],"Tuan Yang di-
 Pertua, dia yang mulakan dahulu."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Tuan Mohd Sany bin Hamzan [Hulu Langat],"Sudah tua tetapi perangai
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Tuan Mohd Sany bin Hamzan [Hulu Langat],"Sudah tua tetapi perangai
 teruk."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Tuan Yang di-Pertua,"Hulu Langat, satu, duduk. Duduk Arau sekejap."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Dato' Wira Dr. Ku Abd Rahman bin Ku Ismail [Kubang Pasu],"Point of
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Tuan Yang di-Pertua,"Hulu Langat, satu, duduk. Duduk Arau sekejap."
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Dato' Wira Dr. Ku Abd Rahman bin Ku Ismail [Kubang Pasu],"Point of
 order."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Tuan Yang di-Pertua,Point of order.
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Dato' Wira Dr. Ku Abd Rahman bin Ku Ismail [Kubang Pasu],"Tuan Yang
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Tuan Yang di-Pertua,Point of order.
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Dato' Wira Dr. Ku Abd Rahman bin Ku Ismail [Kubang Pasu],"Tuan Yang
 di-Pertua, 35(1). “Seorang ahli yang hendak bercakap hendaklah bangun di
 tempatnya dan apabila dipanggil...” ataupun dalam hal ini diberi laluan oleh
 pembahas. Tuan Yang di-Pertua, ini bukan pertama kali Hulu Langat buat macam
 ini. Sudah berkali-kali. Saya minta Tuan Yang di-Pertua mengambil tindakan yang
-sebaiknya supaya kita jaga harmoni Parlimen kita ini. Itu sahaja Tuan Yang di-Pertua.
-[Tepuk]"
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Tuan Yang di-Pertua,"Insya-Allah. Arau. Saya tambah dua minit lagi Arau,
+sebaiknya supaya kita jaga harmoni Parlimen kita ini. Itu sahaja Tuan Yang di-Pertua."
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,ANNOTATION,[Tepuk]
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Tuan Yang di-Pertua,"Insya-Allah. Arau. Saya tambah dua minit lagi Arau,
 silakan."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"Yang Berhormat, SUHAKAM
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"Yang Berhormat, SUHAKAM
 saya hendak bagi tahu, hak kami sebagai Ahli Parlimen dicabuli oleh seorang
-manusia di sana. [Merujuk kepada blok Kerajaan] Ini hak bercakap. Saya tidak bagi,
+manusia di sana."
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,ANNOTATION,[Merujuk kepada blok Kerajaan]
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"Ini hak bercakap. Saya tidak bagi,
 tidak bagilah. Kamu tunggu masa kamu. Peruntukan kami tidak dibagi, selepas itu
 dia bangkit tidak berhenti.
 Maaf Tuan Yang di-Pertua, Tuan Yang di-Pertua bagi amaran banyak kali.
 Semua Tuan Yang di-Pertua bagi amaran, tetapi dia duduk situlah."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Dato’ Mohd Isam bin Mohd Isa [Tampin],"Arau, bagi Tampin sedikit Arau."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Tuan Tan Kar Hing [Gopeng],Boleh minta laluan?
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"Tidak bergerak. Hak Ahli
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Dato’ Mohd Isam bin Mohd Isa [Tampin],"Arau, bagi Tampin sedikit Arau."
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Tuan Tan Kar Hing [Gopeng],Boleh minta laluan?
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"Tidak bergerak. Hak Ahli
 Parlimen pun telah dicabul..."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Tuan Tan Kar Hing [Gopeng],"Hulu Langat tidak boleh, Gopeng bolehkah?"
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"Jadi kepada orang-orang
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Tuan Tan Kar Hing [Gopeng],"Hulu Langat tidak boleh, Gopeng bolehkah?"
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"Jadi kepada orang-orang
 muda, ini masa untuk kita kalih sokong Perikatan Nasional..."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Tuan Tan Kar Hing [Gopeng],"Minta laluan boleh? Arau, bolehkah atau tidak
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Tuan Tan Kar Hing [Gopeng],"Minta laluan boleh? Arau, bolehkah atau tidak
 boleh?"
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Dato’ Mohd Isam bin Mohd Isa [Tampin],"Arau, Yang Berhormat Tampin
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Dato’ Mohd Isam bin Mohd Isa [Tampin],"Arau, Yang Berhormat Tampin
 sedikit, Tampin."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"Akhir sekali Tuan Yang di-
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"Akhir sekali Tuan Yang di-
 Pertua..."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Tuan Tan Kar Hing [Gopeng],Boleh? Arau.
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Tuan Yang di-Pertua,Arau hendak bagi tidak?
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Tuan Tan Kar Hing [Gopeng],Boleh tidak?
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Dato’ Seri Dr. Shahidan bin Kassim [Arau],Tuan Yang di-Pertua kata...
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Tuan Tan Kar Hing [Gopeng],Yang ini mungkin tambah satu minit.
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"Saya bagi 30 second, saya
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Tuan Tan Kar Hing [Gopeng],Boleh? Arau.
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Tuan Yang di-Pertua,Arau hendak bagi tidak?
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Tuan Tan Kar Hing [Gopeng],Boleh tidak?
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Dato’ Seri Dr. Shahidan bin Kassim [Arau],Tuan Yang di-Pertua kata...
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Tuan Tan Kar Hing [Gopeng],Yang ini mungkin tambah satu minit.
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"Saya bagi 30 second, saya
 berhentikan."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Tuan Yang di-Pertua,Siapa Yang Berhormat Arau?
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Dato’ Mohd Isam bin Mohd Isa [Tampin],"Tampin, Tampin."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"Siapa yang bangun dahulu,
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Tuan Yang di-Pertua,Siapa Yang Berhormat Arau?
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Dato’ Mohd Isam bin Mohd Isa [Tampin],"Tampin, Tampin."
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"Siapa yang bangun dahulu,
 silakan."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Dato’ Mohd Isam bin Mohd Isa [Tampin],"Tampin, Tampin."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Tuan Tan Kar Hing [Gopeng],Baik.
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Tuan Yang di-Pertua,"Sila Tampin. Sila Tampin. Tampin dahulu, silakan."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"Tidak apa, UMDAP pun boleh,
-ini pun boleh. No problem. [Ketawa]"
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Dato’ Mohd Isam bin Mohd Isa [Tampin],"Arau, sejak sekian lama
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Dato’ Mohd Isam bin Mohd Isa [Tampin],"Tampin, Tampin."
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Tuan Tan Kar Hing [Gopeng],Baik.
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Tuan Yang di-Pertua,"Sila Tampin. Sila Tampin. Tampin dahulu, silakan."
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"Tidak apa, UMDAP pun boleh,
+ini pun boleh. No problem."
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,ANNOTATION,[Ketawa]
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Dato’ Mohd Isam bin Mohd Isa [Tampin],"Arau, sejak sekian lama
 mengenai peruntukan kepada pembangkang, memang tidak adapun. Kenapa hari
 ini baru timbul. Cuma penggal lepas ada sedikit waktu Yang Berhormat Bera menjadi
 Perdana Menteri ada peruntukan sebab ada MoU. So, sekarang ini kalau hendak
 pun berunding, bincang hendak sign MoU, apakah saja boleh. Tidak perlulah
 mengatakan itu hak asasikah..."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"Okey, cukup Yang Berhormat,
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"Okey, cukup Yang Berhormat,
 sudah faham, sudah faham. Okey, Tampin baik. Saya hendak bagi tahu..."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Tuan Tan Kar Hing [Gopeng],Saya hendak sambung sedikit boleh?
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"...Yang Berhormat, kerajaan
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Tuan Tan Kar Hing [Gopeng],Saya hendak sambung sedikit boleh?
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"...Yang Berhormat, kerajaan
 sekarang Kerajaan Madani, Kerajaan Perpaduan. Dahulu kerajaan nama-nama
 macam-macam. Ini Kerajaan Madani-Perpaduan. Di manakah dalam Peraturan
 Parlimen yang membolehkan awak tahan kami punya peruntukan? Di mana? Di
 mana dalam bajet yang mengatakan peruntukan ini khas untuk PH, kami tidak ada.
 Kami boleh ambil tindakan."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Dato’ Mohd Isam bin Mohd Isa [Tampin],"Sudah bagi peluang untuk
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Dato’ Mohd Isam bin Mohd Isa [Tampin],"Sudah bagi peluang untuk
 berbincang- berbincanglah Arau."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Dato’ Seri Dr. Shahidan bin Kassim [Arau],Diamlah kamu. [Ketawa]
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Tuan Yang di-Pertua,"Tampin, Gopeng duduk."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Seorang ahli,Arau...
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"Tampin duduk, sorry Tampin.
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Dato’ Seri Dr. Shahidan bin Kassim [Arau],Diamlah kamu.
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,ANNOTATION,[Ketawa]
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Tuan Yang di-Pertua,"Tampin, Gopeng duduk."
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Seorang ahli,Arau...
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"Tampin duduk, sorry Tampin.
 Jangan marah."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Tuan Yang di-Pertua,Silakan Arau.
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"Saya kasihan kat awak, kalau
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Tuan Yang di-Pertua,Silakan Arau.
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"Saya kasihan kat awak, kalau
 awak masuk ke sini kita akan pastikan kita akan buat yang terbaik."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Tuan Tan Kar Hing [Gopeng],"Orang suruh bincang, tidak mahu bincang."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"Akhir sekali Tuan Yang di-
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Tuan Tan Kar Hing [Gopeng],"Orang suruh bincang, tidak mahu bincang."
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"Akhir sekali Tuan Yang di-
 Pertua, saya minta janganlah mencabuli hak asasi manusia. Di peringkat atas dahulu
 selesai. Di peringkat Ahli Parlimen. Kami tidak minta duit..."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Datuk Awang bin Hashim [Pendang],"Arau, minta laluan. Arau, tanya
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Datuk Awang bin Hashim [Pendang],"Arau, minta laluan. Arau, tanya
 sedikit boleh tidak?"
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"Ya, ya."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Datuk Awang bin Hashim [Pendang],"Arau, kalau Arau jadi kerajaan, Yang
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"Ya, ya."
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Datuk Awang bin Hashim [Pendang],"Arau, kalau Arau jadi kerajaan, Yang
 Berhormat Arau hendak bagi tidak kepada..."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"Saya jadi kerajaan, hari ini jadi
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"Saya jadi kerajaan, hari ini jadi
 kerajaan besok saya bagi."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Tuan Tan Kar Hing [Gopeng],"Tipulah, tipulah. Dahulu Arau jadi Menteri,
-tipu.
-[Dewan riuh]"
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Tuan Mohd Sany bin Hamzan [Hulu Langat],"Dahulu jadi kerajaan, tidak
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Tuan Tan Kar Hing [Gopeng],"Tipulah, tipulah. Dahulu Arau jadi Menteri,
+tipu."
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,ANNOTATION,[Dewan riuh]
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Tuan Mohd Sany bin Hamzan [Hulu Langat],"Dahulu jadi kerajaan, tidak
 bagi, ini semua hipokrit. Tipu."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Tuan Tan Kar Hing [Gopeng],Jadi kerajaan mimpi sahajalah.
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Dato’ Seri Dr. Shahidan bin Kassim [Arau],...akan diberi peruntukan...
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Tuan Tan Kar Hing [Gopeng],"Kalau nak jadi kerajaan mimpi sahajalah.
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Tuan Tan Kar Hing [Gopeng],Jadi kerajaan mimpi sahajalah.
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Dato’ Seri Dr. Shahidan bin Kassim [Arau],...akan diberi peruntukan...
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Tuan Tan Kar Hing [Gopeng],"Kalau nak jadi kerajaan mimpi sahajalah.
 Dahulu jadi Menteri tidak bagi sekarang retorik. Pandai tipu sahaja Arau."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Dato’ Seri Dr. Shahidan bin Kassim [Arau],...meletakkan keadilan.
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Tuan Yang di-Pertua,"Okey Arau, masa cukup Yang Berhormat."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Dato’ Seri Dr. Shahidan bin Kassim [Arau],Ini sekejap ini...
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Tuan Yang di-Pertua,Saya sudah bagi dua minit
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Tuan Mohd Sany bin Hamzan [Hulu Langat],"Arau punya show sudah
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Dato’ Seri Dr. Shahidan bin Kassim [Arau],...meletakkan keadilan.
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Tuan Yang di-Pertua,"Okey Arau, masa cukup Yang Berhormat."
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Dato’ Seri Dr. Shahidan bin Kassim [Arau],Ini sekejap ini...
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Tuan Yang di-Pertua,Saya sudah bagi dua minit
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Tuan Mohd Sany bin Hamzan [Hulu Langat],"Arau punya show sudah
 habis. Duduk Arau."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Tuan Tan Kar Hing [Gopeng],TikTok sudah habis.
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Tuan Mohd Sany bin Hamzan [Hulu Langat],"Arau punya show sudah
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Tuan Tan Kar Hing [Gopeng],TikTok sudah habis.
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Tuan Mohd Sany bin Hamzan [Hulu Langat],"Arau punya show sudah
 habis, Yang Berhormat Arau tipu, tipu."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"...apabila saya cakap, saya
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"...apabila saya cakap, saya
 tunai janji. Perkataan tipu tidak timbul daripada kami. Kami adalah orang-orang PN
 yang sentiasa mengamalkan sesuatu baik. Kami orang yang mengamalkan agama
 yang baik."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Tuan Tan Kar Hing [Gopeng],"Yang lain mungkin, Arau bukan. yang lain
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Tuan Tan Kar Hing [Gopeng],"Yang lain mungkin, Arau bukan. yang lain
 mungkin, tetapi Arau bukan. Arau kuat tipu."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"Kami tidak ekstremis, kami
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"Kami tidak ekstremis, kami
 tidak perkauman. Yang perkauman duduk belah sana sekarang. Yang anti apakah
-itu – yang ultrakiasu dengan izin juga di sana. [Merujuk kepada blok kerajaan] Kami
+itu – yang ultrakiasu dengan izin juga di sana."
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,ANNOTATION,[Merujuk kepada blok kerajaan]
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Dato’ Seri Dr. Shahidan bin Kassim [Arau],"Kami
 semua baik-baik. Terima kasih Tuan Yang di-Pertua. Semoga Allah SWT berkati.
 Assalamualaikum warahmatullahi wabarakatuh."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1710,Tuan Yang di-Pertua,"Baik, terima kasih. Arau, gadget boleh offkan
-sekarang, gadget. [Ketawa]
-Okey, saya jemput Yang Berhormat Miri."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,5.14 ptg.,Tuan Chiew Choon Man [Miri],"Terima kasih Tuan Yang di-Pertua kerana
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Tuan Yang di-Pertua,"Baik, terima kasih. Arau, gadget boleh offkan
+sekarang, gadget."
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,ANNOTATION,[Ketawa]
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1710,Tuan Yang di-Pertua,"Okey, saya jemput Yang Berhormat Miri."
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,5.14 ptg.,Tuan Chiew Choon Man [Miri],"Terima kasih Tuan Yang di-Pertua kerana
 memberi peluang kepada saya untuk membahaskan laporan SUHAKAM. Saya akan
 fokuskan kepada dua isu utama, di bawah laporan tentang Pejabat Sarawak dan juga
-orang asal Sarawak.  Pertama sekali iaitu di muka surat 91, berkenaan isu
+orang asal Sarawak. Pertama sekali iaitu di muka surat 91, berkenaan isu
 kewarganegaraan telah mendominasi kategori aduan yang diterima oleh Pejabat
 Sarawak. Seperti yang kita sering hadapi di mana-mana tempat, dua isu
 kewarganegaraan utama yang sering berlaku adalah seperti berikut:
@@ -4601,7 +4697,7 @@ kesedaran ibu bapa, anak-anak pula yang akan dihukum oleh sistem kita dengan
 menafikan hak mereka untuk mendapatkan pendidikan.
 Akhir sekali saya ingin menyentuh kepada isu orang asal di Sarawak secara
 khususnya hak dan adat anak negeri."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1720,Tuan Chiew Choon Man [Miri],"Saya ingin mengucapkan setinggi-tinggi penghargaan kepada Yang Amat
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1720,Tuan Chiew Choon Man [Miri],"Saya ingin mengucapkan setinggi-tinggi penghargaan kepada Yang Amat
 Berhormat Perdana Menteri yang telah bersetuju untuk memberikan peruntukan
 tambahan sebanyak RM10 juta bagi melaksanakan kerja pengukuran tanah adat hak
 bumiputera atau NCR di Sarawak.
@@ -4631,9 +4727,9 @@ kerajaan akan memandang berat terhadap perumahan dalam kalangan rakyat kita
 kerana sekiranya kita tidak mempedulikan mereka atau terus membiarkan mereka
 hidup dalam kesusahan, ini juga satu penafian terhadap hak asasi manusia rakyat
 kita. Sekian, terima kasih."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,■1720,Tuan Yang di-Pertua,"Terima kasih. Seterusnya, saya jemput Yang
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,■1720,Tuan Yang di-Pertua,"Terima kasih. Seterusnya, saya jemput Yang
 Berhormat Batang Sadong."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,5.22 ptg.,Puan Rodiyah binti Sapiee [Batang Sadong],"Assalamualaikum
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,5.22 ptg.,Puan Rodiyah binti Sapiee [Batang Sadong],"Assalamualaikum
 warahmatullahi wabarakatuh dan salam sejahtera Tuan Yang di-Pertua.
 Terima kasih di atas peluang yang diberikan untuk Batang Sadong
 membahaskan Laporan Tahunan 2020 Suruhanjaya Hak Asasi Manusia
@@ -4721,8 +4817,8 @@ berpendapat peratusan ini akan terus meningkat. Isu kesihatan mental di Malaysia
 dikaitkan dengan tingkah laku bunuh diri di mana 1,142 kes dilaporkan pada tahun
 2021 dan 631 kes dilaporkan pada tahun 2020. Jadi, peningkatan kes adalah
 sebanyak 80 peratus. Selain itu, dua minit ya Tuan Yang di-Pertua?"
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,5.22 ptg.,Tuan Yang di-Pertua,Silakan.
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,5.22 ptg.,Puan Rodiyah binti Sapiee [Batang Sadong],"Terima kasih. Selain itu,
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,5.22 ptg.,Tuan Yang di-Pertua,Silakan.
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,5.22 ptg.,Puan Rodiyah binti Sapiee [Batang Sadong],"Terima kasih. Selain itu,
 orang dewasa yang ada masalah kesihatan mental juga boleh mempengaruhi kanak-
 kanak. Satu daripada 20 orang kanak-kanak berusia lima hingga sembilan tahun di
 Malaysia mempunyai masalah kesejahteraan mental. KKM merekodkan 424,000
@@ -4735,7 +4831,7 @@ SUHAKAM dalam membongkar lebih banyak kes yang mencabuli hak asasi manusia
 dan mempromosikan pendidikan hak asasi manusia di Malaysia. Adalah amat perlu
 untuk memastikan segala hak dan kebajikan setiap rakyat Malaysia terus dipelihara
 dan dilindungi. Sekian, terima kasih dari Batang Sadong."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,5.22 ptg.,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Batang Sadong. Yang
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,5.22 ptg.,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Batang Sadong. Yang
 Berhormat Batang Sadong adalah pembahas terakhir hari ini. Kita masih lagi ada
 lima orang iaitu Yang Berhormat Bakri, Yang Berhormat Tenom, Yang Berhormat
 Lubok Antu, Yang Berhormat Sungai Petani dan Yang Berhormat Batu Pahat. Jadi,
@@ -4743,4 +4839,4 @@ saya minta lima orang ini sambung esoklah ya. Kita hendak balik awallah hari ini
 Ahli-ahli Yang Berhormat, Mesyuarat Dewan hari ini ditangguhkan hingga jam
 10 pagi, hari Rabu, 14 Jun 2023, sekian. Assalamualaikum warahmatullahi
 wabarakatuh dan selamat beristirahat. Terima kasih."
-USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),dapat disahkan dan diluluskan.” [12 Jun 2023],,5.22 ptg.,ANNOTATIONS,[Dewan ditangguhkan pada pukul 5.32 petang]
+USUL MENTERI DI JABATAN PERDANA MENTERI DI BAWAH P.M. 27(3),"Bahawa dalam SUHAKAM melaksanakan mandatnya, mempromosi",,5.22 ptg.,ANNOTATION,[Dewan ditangguhkan pada pukul 5.32 petang]

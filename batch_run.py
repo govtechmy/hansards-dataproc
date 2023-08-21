@@ -43,5 +43,11 @@ with open("warnings/autocorrected_authors.txt", "w") as f:
     f.write("")
 with open("warnings/stray_bolds.txt", "w") as f:
     f.write("")
+with open("warnings/capitalised_level_2.txt", "w") as f:
+    f.write("")
+with open("warnings/level_2_following_level_1.txt", "w") as f:
+    f.write("")
+with open("warnings/in-text-bold.txt", "w") as f:
+    f.write("")
 for hansard_date in tqdm(hansard_dates):
     tabulate_hansard.tabulate(hansard_date)

@@ -1,5 +1,5 @@
 level_1,level_2,level_3,timestamp,author,speech
-,,,10.00 pagi,ANNOTATIONS,[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
+,,,10.00 pagi,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
 ,,,10.00 pagi,Dato’ Seri Anwar bin Ibrahim [Port Dickson],"Peraturan Mesyuarat, Tuan
 Yang di-Pertua."
 ,,,10.00 pagi,Tuan Yang di-Pertua,Yang Berhormat Ketua Pembangkang.
@@ -106,8 +106,10 @@ boleh? Apakah perkara yang sama?"
 ,,,■1010,Tuan P. Prabakaran [Batu],Perkara sama.
 ,,,■1010,Tuan Mohamed Hanipa bin Maidin [Sepang],Perkara sama.
 ,,,■1010,Tuan Yang di-Pertua,"Kalau perkara sama, Yang Berhormat Puchong."
-,,,■1010,Tuan P. Prabakaran [Batu],"Sini sama, Tuan Yang di-Pertua. [Mengangkat
-tangan] Tuan Yang di-Pertua tidak nampak belakang."
+,,,■1010,Tuan P. Prabakaran [Batu],"Sini sama, Tuan Yang di-Pertua."
+,,,■1010,ANNOTATION,"[Mengangkat
+tangan]"
+,,,■1010,Tuan P. Prabakaran [Batu],Tuan Yang di-Pertua tidak nampak belakang.
 ,,,■1010,Tuan Gobind Singh Deo [Puchong],"Ya, terima kasih."
 ,,,■1010,Tuan Yang di-Pertua,"Saya perasan mikrofon ini kalau empat orang atau lebih
 tekan butang pada masa yang sama ia akan tidak bunyi terus."
@@ -127,7 +129,8 @@ penjelasan itu semua kemudian saya akan buat keputusan."
 ,,,■1010,Tuan P. Prabakaran [Batu],"Tuan Yang di-Pertua sini, Batu, Batu."
 ,,,■1010,Tuan Yang di-Pertua,Hari ini lah...
 ,,,■1010,Tuan Gobind Singh Deo [Puchong],More or less when? Today?
-,,,■1010,Dato’ Ngeh Koo Ham [Beruas],[Bangun]
+,,,■1010,Dato’ Ngeh Koo Ham [Beruas],
+,,,■1010,ANNOTATION,[Bangun]
 ,,,■1010,Tuan Yang di-Pertua,"Mengenai Yang Berhormat Sepang juga serupa tetapi
 saya kena jumpa Yang Berhormat Sepang sedikit untuk discuss pasal permohonan Yang
 Berhormat Sepang untuk saya refuse itu. Boleh saya jumpa Yang Berhormat Sepang
@@ -141,7 +144,9 @@ kerana menimbulkan..."
 ,,,■1010,Tuan Mohamed Hanipa bin Maidin [Sepang],"Tuan Yang di-Pertua, saya
 mencadangkan kita dengar dahulu usul-usul berkenaan Peraturan 12 ini."
 ,,,■1010,Tuan Yang di-Pertua,"Tumpang saya ingat, tumpang saya ingat Yang
-Berhormat Pasir Gudang, sebab saya ini impromptu ya. [Ketawa] Tumpang saya ingat.
+Berhormat Pasir Gudang, sebab saya ini impromptu ya."
+,,,■1010,ANNOTATION,[Ketawa]
+,,,■1010,Tuan Yang di-Pertua,"Tumpang saya ingat.
 Mengenai apa Yang Berhormat Pasir Gudang timbulkan itu, itu ialah mengenai 150(3)
 lah sebenarnya ya. Saya tidak boleh buat apa itu interpretasi 150(3) sebagai seorang
 peguam dalam Dewan ini kerana itu bukan kuasa saya tetapi sefahaman saya 150(3) itu
@@ -230,7 +235,8 @@ tidak pun beratus orang yang kena kompaun, kuantum kompaun itu ada yang RM10,000
 dan sebagainya."
 ,,,■1020,Tuan Yang di-Pertua,"Yang Berhormat, Yang Berhormat, itu sebab saya kata
 hari Isnin ini kita bincang semua itu."
-,,,■1020,Tuan Hassan bin Abdul Karim [Pasir Gudang],Hari Isnin sudah... [Ketawa]
+,,,■1020,Tuan Hassan bin Abdul Karim [Pasir Gudang],Hari Isnin sudah...
+,,,■1020,ANNOTATION,[Ketawa]
 ,,,■1020,Beberapa Ahli,Sudah lambat.
 ,,,■1020,Tuan Yang di-Pertua,Yang Berhormat Puchong.
 ,,,■1020,Tuan Hassan bin Abdul Karim [Pasir Gudang],"Darurat sudah tamat, sudah
@@ -276,8 +282,9 @@ Yang di-Pertua boleh memberi pendapat yang menunjukkan bahawa ada beza dalam
 pendapat itu kerana di sini saya akan menjelaskan selepas rundingan singkat, apa kah
 pendapat saya.
 Maka, kalau ada perbezaan pendapat, itu sudah mencukupi untuk Tuan Yang
-di-Pertua buat keputusan supaya usul saya dibenarkan dan perkara ini dibahaskan.
-[Tepuk] It is because at this point bukan soal Tuan Yang di-Pertua buat keputusan."
+di-Pertua buat keputusan supaya usul saya dibenarkan dan perkara ini dibahaskan."
+,,,■1020,ANNOTATION,[Tepuk]
+,,,■1020,Tuan Gobind Singh Deo [Puchong],It is because at this point bukan soal Tuan Yang di-Pertua buat keputusan.
 ,,,■1020,Tuan Yang di-Pertua,"Usul yang mana, usul yang mana?"
 ,,,■1020,Tuan Gobind Singh Deo [Puchong],Usul saya di bawah 36.
 ,,,■1020,Tuan Yang di-Pertua,Usul yang terhadap Yang Berhormat Menteri.
@@ -371,7 +378,8 @@ Yang Berhormat Beruas."
 ,,,■1030,Tuan Mohamed Hanipa bin Maidin [Sepang],Saya juga ya.
 ,,,■1030,Dato’ Ngeh Koo Ham [Beruas],Ya.
 ,,,■1030,Tuan Syed Saddiq bin Syed Abdul Rahman [Muar],"Tuan Yang di-Pertua,
-keputusan...[Pembesar suara dimatikan]"
+keputusan..."
+,,,■1030,ANNOTATION,[Pembesar suara dimatikan]
 ,,,■1030,Tuan Yang di-Pertua,"Yang Berhormat Beruas, ya."
 ,,,■1030,Tuan P. Prabakaran [Batu],"Terima kasih Tuan Yang di-Pertua, Batu tunggu
 lagi."
@@ -467,11 +475,11 @@ please."
 ,,,■1030,Datuk Hajah Azizah binti Mohd Dun [Beaufort],"Interpretasi undang-undang
 Perlembagaan kita. Perkataan di dalam Perlembagaan 150(3). Jadi, hari ini dalam
 Parlimen kita bukan di mahkamah. Kalau ada pihak yang inginkan interpretasinya, maka
-bolehlah memohon kepada mahkamah untuk interpretasi ini Tuan Yang di-Pertua.
-[Dewan riuh]"
+bolehlah memohon kepada mahkamah untuk interpretasi ini Tuan Yang di-Pertua."
+,,,■1030,ANNOTATION,[Dewan riuh]
 ,,,■1030,Tuan Sanisvara Nethaji Rayer a/l Rajaji [Jelutong],Tuan Yang di-Pertua.
-,,,■1030,Tuan Mohamed Hanipa bin Maidin [Sepang],"Tuan Yang di-Pertua.
-[Pembesar suara dimatikan]"
+,,,■1030,Tuan Mohamed Hanipa bin Maidin [Sepang],Tuan Yang di-Pertua.
+,,,■1030,ANNOTATION,[Pembesar suara dimatikan]
 ,,,■1030,Tuan Sanisvara Nethaji Rayer a/l Rajaji [Jelutong],Tuan Yang di-Pertua.
 ,,,■1030,Tuan Yang di-Pertua,Yang Berhormat Sepang orang lama.
 ,,,■1030,Tuan Sanisvara Nethaji Rayer a/l Rajaji [Jelutong],Tuan Yang di-Pertua.
@@ -525,7 +533,8 @@ cukup. Yang Berhormat Sepang buang masa Dewan."
 ,,,■1040,Tuan Mohamed Hanipa bin Maidin [Sepang],"Sesiapa yang tidak tahu itu
 duduk diamlah. Duduk, dengar, diam. Tuan Yang di-Pertua..."
 ,,,■1040,Dato’ Dr. Mohd Khairuddin bin Aman Razali [Kuala Nerus],"Makan ubat
-dahulu itu. [Tidak jelas]"
+dahulu itu."
+,,,■1040,ANNOTATION,[Tidak jelas]
 ,,,■1040,Tuan Mohamed Hanipa bin Maidin [Sepang],"...Tentang kuasa Tuan Yang
 di-Pertua kata..."
 ,,,■1040,Tuan Yang di-Pertua,Yang Berhormat Batu sudah tunggu lama ini.
@@ -544,11 +553,13 @@ artikel-artikel – our order..."
 ,,,■1040,Tuan Yang di-Pertua,"Yang Berhormat follow Perlembagaan Persekutuan dan
 sebagainya..."
 ,,,■1040,Tuan Mohamed Hanipa bin Maidin [Sepang],"90 itu Tuan Yang di-Pertua,
-Tuan Yang di-Pertua ada kuasa.  Boleh suspend the standing order untuk buat
+Tuan Yang di-Pertua ada kuasa. Boleh suspend the standing order untuk buat
 perubahan. Tuan Yang di-Pertua, Tuan Yang di-Pertua tidak pernah langsung rujuk..."
-,,,■1040,Tuan Yang di-Pertua,[Ketawa] Saya hendak suspend Yang Berhormat.
-,,,■1040,Tuan Mohamed Hanipa bin Maidin [Sepang],"Okey
-[Dewan riuh]"
+,,,■1040,Tuan Yang di-Pertua,
+,,,■1040,ANNOTATION,[Ketawa]
+,,,■1040,Tuan Yang di-Pertua,Saya hendak suspend Yang Berhormat.
+,,,■1040,Tuan Mohamed Hanipa bin Maidin [Sepang],Okey
+,,,■1040,ANNOTATION,[Dewan riuh]
 ,,,■1040,Tuan Ahmad Tarmizi bin Sulaiman [Sik],"Itu kuasa Tuan Yang di-Pertua.
 Kuasa Tuan Yang di-Pertua."
 ,,,■1040,Tuan Mohamed Hanipa bin Maidin [Sepang],By all means go ahead.
@@ -617,7 +628,9 @@ berbahas..."
 bersidang..."
 ,,,■1040,Puan Kasthuriraani a/p Patto [Batu Kawan],"Tidak ada masa untuk berbahas
 Yang Berhormat."
-,,,■1040,Datuk Mohd Azis bin Jamman [Sepanggar],"[Menyampuk] ...Hendak bagi
+,,,■1040,Datuk Mohd Azis bin Jamman [Sepanggar],
+,,,■1040,ANNOTATION,[Menyampuk]
+,,,■1040,Datuk Mohd Azis bin Jamman [Sepanggar],"...Hendak bagi
 pandangan..."
 ,,,■1040,Puan Kasthuriraani a/p Patto [Batu Kawan],...Di Dewan.
 ,,,■1040,Dr. Nik Muhammad Zawawi bin Haji Salleh [Pasir Puteh],"Tuan Yang di-
@@ -636,8 +649,8 @@ tidak hendak bising ke tidak ada masa hendak berbahas dalam Dewan?"
 supaya Tuan Yang di-Pertua bertegas dalam perkara ini."
 ,,,■1040,Dato’ Ngeh Koo Ham [Beruas],...Kita bangkitkan untuk dapat jawapan.
 ,,,■1040,Puan Kasthuriraani a/p Patto [Batu Kawan],"...Tidak ada masa untuk
-berbahas di Dewan.
-[Dewan riuh]"
+berbahas di Dewan."
+,,,■1040,ANNOTATION,[Dewan riuh]
 ,,,■1040,Dr. Nik Muhammad Zawawi bin Haji Salleh [Pasir Puteh],...Kita layan...
 ,,,■1040,Puan Kasthuriraani a/p Patto [Batu Kawan],...That is the issue.
 ,,,■1040,Dr. Nik Muhammad Zawawi bin Haji Salleh [Pasir Puteh],"...Rugi masa
@@ -690,8 +703,8 @@ Standing Order 100 in a way which is inconsistent with the standing order.
 So, Standing O rder kita sekarang ada 11(3). 11(3) kata agenda sidang khas
 ditetapkan oleh Yang Amat Berhormat Perdana Menteri. So, whatever power that I am
 going to use under and pursuant to 100 cannot be an inconsistent with 11(3). That is the
-problem that I have Yang Berhormat.
-[Tepuk]"
+problem that I have Yang Berhormat."
+,,,■1040,ANNOTATION,[Tepuk]
 ,,,■1040,Dato’ Ngeh Koo Ham [Beruas],Saya setuju Yang Berhormat.
 ,,,■1040,Tuan Yang di-Pertua,"Kita lawyer, kita faham, kita cakap semua ini. Akan
 tetapi rakyat di luar sana tidak akan faham bagaimanapun that is final point of law which
@@ -723,30 +736,33 @@ boleh berhenti. Yang Berhormat Kota Bharu sudah bangun untuk menjawab."
 ,,,■1040,Tuan Yang di-Pertua,Sebenarnya Yang Berhormat Sepang...
 ,,,■1040,Tuan Sanisvara Nethaji Rayer a/l Rajaji [Jelutong],"Tuan Yang di-Pertua,
 boleh berhenti menjadi spoke person, Yang Berhormat Kota Bharu sudah bangun."
-,,,■1040,Tuan Yang di-Pertua,"Sekejap, sekejap. Sebenarnya yang.
-[Dewan riuh]
-Sabar-sabar. Sebenarnya saya tahu tentang prinsip. Saya amat tahu tentang
+,,,■1040,Tuan Yang di-Pertua,"Sekejap, sekejap. Sebenarnya yang."
+,,,■1040,ANNOTATION,[Dewan riuh]
+,,,■1040,Tuan Yang di-Pertua,"Sabar-sabar. Sebenarnya saya tahu tentang prinsip. Saya amat tahu tentang
 prinsip interpretasi Perlembagaan Persekutuan yang mesti diberi tafsiran yang amat luas
 kerana kes yang decide, salah satu kes yang putuskan perkara itu adalah kes yang saya
 buat sendiri. Saya buat sendiri kes itu dalam kes rujukan Perlembagaan vs Sultan
 Kelantan. Saya buat sendiri kes itu, saya tahu. Dia kata Perlembagaan Persekutuan itu
-mesti ditafsirkan secara meluas.
-[Tepuk]
-Akan tetapi Yang Berhormat, itu adalah prinsip tafsiran. Tafsiran ini apabila
+mesti ditafsirkan secara meluas."
+,,,■1040,ANNOTATION,[Tepuk]
+,,,■1040,Tuan Yang di-Pertua,"Akan tetapi Yang Berhormat, itu adalah prinsip tafsiran. Tafsiran ini apabila
 perkara itu tidak clear, tidak terang maka perlu ditafsir."
 ,,,■1050,Tuan Yang di-Pertua,"Yang saya katakan tadi ini, terang, very clear, dia kata lay, dia tidak kata bill. Dia
 tidak kata must be approved. It’s very clear. So, there is no dengan izin, tidak ada
 keperluan untuk tafsiran pun."
 ,,,■1050,Tuan Mohamed Hanipa bin Maidin [Sepang],"Clear akan ada debate. Tuan
 Yang di Pertua, cara Tuan Yang di-Pertua pusing itu kalah lawyers di mahkamah di dunia
-ini. [Dewan riuh]"
+ini."
+,,,■1050,ANNOTATION,[Dewan riuh]
 ,,,■1050,Dato' Dr. Mohd Khairuddin bin Aman Razali,"Kesalahan itu. Tuduhan kepada
 Tuan Yang di-Pertua itu. Gantung Yang Berhormat Sepang itu, gantung."
 ,,,■1050,Tuan Mohamed Hanipa bin Maidin [Sepang],"Memang Tuan Yang di-Pertua
 pandai pusing, 360 darjah Tuan Yang di-Pertua pusing."
 ,,,■1050,Tuan Gobind Singh Deo [Puchong],Tuan Yang di-Pertua.
 ,,,■1050,Tuan Mohamed Hanipa bin Maidin [Sepang],"Tuan Yang di-Pertua, kalau
-Tuan Yang di-Pertua [Tidak jelas] percayalah."
+Tuan Yang di-Pertua"
+,,,■1050,ANNOTATION,[Tidak jelas]
+,,,■1050,Tuan Mohamed Hanipa bin Maidin [Sepang],percayalah.
 ,,,■1050,Dato' Dr. Mohd Khairuddin bin Aman Razali,"Tuan Yang di-Pertua guna
 kuasa gantung Yang Berhormat Sepang. Gunakan kuasa Tuan Yang di-Pertua."
 ,,,■1050,Tuan Gobind Singh Deo [Puchong],"Tuan Yang di-Pertua, just 10 seconds."
@@ -785,8 +801,8 @@ di-Pertua."
 Pertua."
 ,,,■1050,Tuan Gobind Singh Deo [Puchong],"Tuan Yang di-Pertua, terima kasih."
 ,,,■1050,Dato' Ngeh Koo Ham [Beruas],"Tuan Yang di-Pertua, usul saya sangat jelas.
-Hak saya merayu kepada Dewan...
-[Sistem pembesar suara dimatikan]"
+Hak saya merayu kepada Dewan..."
+,,,■1050,ANNOTATION,[Sistem pembesar suara dimatikan]
 ,,,■1050,Tuan Ramkarpal Singh a/l Karpal Singh [Bukit Gelugor],"Tuan Yang di-
 Pertua, berkenaan isu ini saja."
 ,,,■1050,Tuan Yang di-Pertua,"Boleh kita – Yang Berhormat Puchong ada – Eh bukan
@@ -813,11 +829,13 @@ feel so sorry for you seriously. I feel so sorry for you because of Yang Berhorm
 Bharu, you had been put into a very difficult position dengan izin."
 ,,,■1050,Tuan Yang di-Pertua,"Tidak, I’m not in a difficult position."
 ,,,■1050,Tuan Sanisvara Nethaji Rayer a/l Rajaji [Jelutong],"Akan tetapi, tolonglah
-jangan jadi spokesman, spokesperson. [Dewan riuh] Biarkan Yang Berhormat Kota
+jangan jadi spokesman, spokesperson."
+,,,■1050,ANNOTATION,[Dewan riuh]
+,,,■1050,Tuan Sanisvara Nethaji Rayer a/l Rajaji [Jelutong],"Biarkan Yang Berhormat Kota
 Bharu, kalau Yang Berhormat Kota Bharu berani buat kenyataan, beliau berani tanggung."
 ,,,■1050,Tuan Yang di-Pertua,Okey.
-,,,■1050,Tuan Sanisvara Nethaji Rayer a/l Rajaji [Jelutong],"Tuan Yang di-Pertua.
-[Sistem pembesar suara dimatikan]"
+,,,■1050,Tuan Sanisvara Nethaji Rayer a/l Rajaji [Jelutong],Tuan Yang di-Pertua.
+,,,■1050,ANNOTATION,[Sistem pembesar suara dimatikan]
 ,,,■1050,Tuan Yang di-Pertua,"Yang Berhormat, Yang Berhormat, sekejap. Saya duduk
 saja tadi selepas doa, perkara-perkara ini dibangkitkan dan diminta penjelasan dari saya.
 Saya dah cakap bukan kuasa saya tetapi telah diminta, saya jawablah. Kalau tidak minta,
@@ -845,7 +863,8 @@ kami dah tunggu 260 hari sabar tau."
 minit pun tak sabar."
 ,,,■1050,Tuan Yang di-Pertua,Duduklah.
 ,,,■1050,Tuan Mohamed Hanipa bin Maidin [Sepang],"Selama 53 minit pun Tuan Yang
-di-Pertua tak sabar. Kami... [Sistem pembesar suara dimatikan]"
+di-Pertua tak sabar. Kami..."
+,,,■1050,ANNOTATION,[Sistem pembesar suara dimatikan]
 ,,,■1050,Tuan Yang di-Pertua,"Yang Berhormat Sepang, saya lagi sabar. Yang
 Berhormat Sepang bila bercakap, tidak ada siapa bangkang pun. Saya bila bercakap, 80
 orang bangkang and I take one by one, I take. One by one saya layan. Ya, boleh kita
@@ -889,8 +908,11 @@ betul, tidak betul Tuan Yang di-Pertua. Biar saya correct yang itu."
 ,,,■1050,Tuan Yang di-Pertua,Dah get back pada saya.
 ,,,■1050,Datuk Seri Saifuddin Nasution bin Ismail [Kulim-Bandar Baharu],"Tidak
 semua dalam pengetahuan Yang Berhormat Menteri Undang-undang. Saya sendiri telah
-berjumpa dengan Tuan Yang di-Pertua keesokan harinya. [Dewan riuh] Saya minta maaf,
-perkara paling bahaya bila kita bercakap benda yang kita tidak tahu. [Tepuk]"
+berjumpa dengan Tuan Yang di-Pertua keesokan harinya."
+,,,■1050,ANNOTATION,[Dewan riuh]
+,,,■1050,Datuk Seri Saifuddin Nasution bin Ismail [Kulim-Bandar Baharu],"Saya minta maaf,
+perkara paling bahaya bila kita bercakap benda yang kita tidak tahu."
+,,,■1050,ANNOTATION,[Tepuk]
 ,,,■1050,Tuan Yang di-Pertua,Sebenarnya Yang Berhormat Menteri.
 ,,,■1050,Tuan P. Prabakaran [Batu],"Saya hendak tanya soalan kepada Yang
 Berhormat Menteri."
@@ -900,8 +922,8 @@ Berhormat Kulim Bandar-Baharu kepada Tuan Yang di-Pertua."
 putar belit fakta dalam Dewan yang mulia ini. Yang Berhormat Menteri selalu putar belit
 fakta."
 ,,,■1050,Dato' Takiyuddin bin Hassan,"Apa yang berlaku, sekejap-sekejap. This is my
-floor...
-[Sistem pembesar suara dimatikan]"
+floor..."
+,,,■1050,ANNOTATION,[Sistem pembesar suara dimatikan]
 ,,,■1050,Tuan Yang di-Pertua,Sudahlah.
 ,,,■1050,Dato' Takiyuddin bin Hassan,"Apa pun yang berlaku, yang dilakukan dalam
 pelaksanaan ini, semua boleh dibenarkan hadir. Time-nya sebagaimana di dalam
@@ -914,8 +936,8 @@ petang ataupun 5.45 petang..."
 ,,,■1050,Tuan P. Prabakaran [Batu],"Yang Berhormat Menteri, mohon mencelah. Yang
 Berhormat Menteri, bagi ruang dekat belakang, hendak tanya soalan."
 ,,,■1050,Dato' Takiyuddin bin Hassan,"...Ataupun hari persidangan. Itu saya hendak
-maklumkan. Terima kasih.
-[Sistem pembesar suara dimatikan]"
+maklumkan. Terima kasih."
+,,,■1050,ANNOTATION,[Sistem pembesar suara dimatikan]
 ,,,■1050,Tuan Yang di-Pertua,"Okey, boleh kita teruskan dengan Aturan Urusan
 Mesyuarat. Ya, Yang Berhormat Bukit Gelugor, point of order ya Yang Berhormat Bukit
 Gelugor?"
@@ -948,8 +970,8 @@ Berhormat Ketereh pun ada di sini."
 ,,,■1050,Tuan Sanisvara Nethaji Rayer a/l Rajaji [Jelutong],"Why is that Tuan Yang
 di-Pertua? Why?"
 ,,,■1050,Tuan Ramkarpal Singh a/l Karpal Singh [Bukit Gelugor],"Yang Berhormat
-Ketereh ada di sini.
-[Sistem pembesar suara dimatikan]"
+Ketereh ada di sini."
+,,,■1050,ANNOTATION,[Sistem pembesar suara dimatikan]
 ,,,■1050,Tuan Yang di-Pertua,"Yang Berhormat, Yang Berhormat, sekarang aturan
 urusannya ialah – Yang Berhormat Menteri Kewangan dah tunggu sejam dah. Saya
 hendak mempersilakan Yang Berhormat Menteri Kewangan."
@@ -958,15 +980,16 @@ Menteri-menteri ini menggunakan alasan COVID-19..."
 ,,,■1050,Tuan Sim Tze Tzin [Bayan Baru],"Tuan Yang di-Pertua, tadi Bayan Baru bagi
 laluan kepada Yang Berhormat Pasir Gudang. Perkara baharu."
 ,,,■1050,Tuan Yang di-Pertua,Untuk beri penerangan.
-,,,■1050,Tuan P. Prabakaran [Batu],"Jangan guna alasan COVID-19.
-[Sistem pembesar suara dimatikan]"
+,,,■1050,Tuan P. Prabakaran [Batu],Jangan guna alasan COVID-19.
+,,,■1050,ANNOTATION,[Sistem pembesar suara dimatikan]
 ,,,■1050,Tuan Yang di-Pertua,"Untuk memberi penerangan berkenaan pakej-pakej
 bantuan ekonomi. Silakan."
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,11.00 pg.,Menteri Kewangan [YM Tengku Dato’ Sri Zafrul Tengku Abdul Aziz],"Bismillahir Rahmanir Rahim. Assalammualaikum warahmatullahi wabarakatuh dan
 salam sejahtera."
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,11.00 pg.,Puan Kasthuriraani a/p Patto [Batu Kawan],"Tuan Yang di-Pertua, tadi Yang
 Berhormat Kota Bharu menyatakan bahawa beliau mengambil tindakan ini di atas nasihat
-pakar... [Pembesar suara ditutup]"
+pakar..."
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,11.00 pg.,ANNOTATION,[Pembesar suara ditutup]
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,11.00 pg.,Tuan Yang di-Pertua,"Yang Berhormat, tolong. Tolong. Saya rayu kepada
 Yang Berhormat ya. Kita jalankan Aturan Urusan Mesyuarat dahulu. Maaf ya. Yang
 Berhormat Menteri, silakan."
@@ -1471,7 +1494,9 @@ atas niat ikhlas membela nasib rakyat dan negara.
 Usaha dan kerjasama sebeginilah yang saya pasti rakyat mahukan daripada
 kita."
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1140,Datuk Seri Utama Tengku Zafrul bin Tengku Abdul Aziz,"Walau di masa lain, kita berbeza haluan tetapi di saat negara memerlukan,
-kita ketepikan semua perbezaan itu untuk tangani krisis ini bersama [Tepuk]. Dengan
+kita ketepikan semua perbezaan itu untuk tangani krisis ini bersama"
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1140,ANNOTATION,[Tepuk]
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1140,Datuk Seri Utama Tengku Zafrul bin Tengku Abdul Aziz,". Dengan
 izin, let us uphold the spirit of collaboration for the good of the nation. Truly we can be
 better. United we are stronger together.
 Tuan Yang di-Pertua, saya sudah dengan lafaz wabillahi taufik walhidayah,
@@ -1487,7 +1512,9 @@ Berhormat Bagan mencadangkan bahawa Yang Berhormat Port Dickson akan
 mengambil 10 minit tersebut. Saya dimaklumkan oleh Tuan Yang di-Pertua. Saya jemput
 lepas Yang Berhormat Bagan, masa yang sama tolak 10 minit saya akan jemput Yang
 Berhormat Pekan. Silakan."
-PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,11.42 pg.,Tuan Lim Guan Eng [Bagan],"[Ketawa] Ini kena diskaun macam ini. Terima
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,11.42 pg.,Tuan Lim Guan Eng [Bagan],
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,11.42 pg.,ANNOTATION,[Ketawa]
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,11.42 pg.,Tuan Lim Guan Eng [Bagan],"Ini kena diskaun macam ini. Terima
 kasih Tuan Yang di-Pertua. Terima kasih atas jemputan untuk memulakan perbahasan
 dalam sesi Parlimen Khas ini. Saya amat kesal dengan menyaksikan bilangan jangkitan
 dan juga kematian yang mengerikan hari demi hari yang mencecah rekod setiap hari.
@@ -1578,7 +1605,8 @@ PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STR
 pada tahun lepas dan dijangka menghadapi kerugian yang sama. Akan tetapi tidak ada
 sebarang bantuan untuk membolehkan industri yang menyumbangkan 16 peratus
 kepada GDP untuk terus hidup. Ia macam bayi..."
-PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1150,Tuan Mohamad bin Sabu [Kota Raja],"Yang diabaikan. [Bercakap tanpa
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1150,Tuan Mohamad bin Sabu [Kota Raja],Yang diabaikan.
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1150,ANNOTATION,"[Bercakap tanpa
 menggunakan pembesar suara]"
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1150,Tuan Lim Guan Eng [Bagan],"Bayi yang dibuang. Bayi yang dibuang tanpa
 sebarang bantuan yang bermakna. Kedua, moratorium pinjaman bank tidak bermakna
@@ -1630,9 +1658,12 @@ penganggur.
 Oleh kerana, inilah yang dijanjikan oleh Yang Amat Berhormat Perdana Menteri
 semasa berkempen dalam pilihan raya di Sabah. Ini hanya melibatkan kos tambahan
 RM5 bilion untuk lima bulan akhir tahun ini."
-PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1150,Tuan Cha Kee Chin [Rasah],[Bangun]
-PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1150,Tuan Sim Chee Keong [Bukit Mertajam],[Bangun]
-PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1150,Datuk Seri Panglima Haji Mohd Shafie bin Haji Apdal [Semporna],[Bangun]
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1150,Tuan Cha Kee Chin [Rasah],
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1150,ANNOTATION,[Bangun]
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1150,Tuan Sim Chee Keong [Bukit Mertajam],
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1150,ANNOTATION,[Bangun]
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1150,Datuk Seri Panglima Haji Mohd Shafie bin Haji Apdal [Semporna],
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1150,ANNOTATION,[Bangun]
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1150,Tuan Lim Guan Eng [Bagan],"Kita minta supaya boleh diwujudkan satu sosial
 safety net untuk membantu mereka yang menganggur dan pekerja yang menghadapi
 masalah cash flow."
@@ -1680,9 +1711,9 @@ dan juga penting sekali ialah vaksinasi. Yang Berhormat Rembau semalam menyataka
 daripada 18.8 juta orang dewasa yang mendaftarkan. Oleh sebab 18.8 juta orang dewasa
 rakyat Malaysia yang mendaftar diri merupakan 80.5 peratus daripada populasi dewasa
 di Malaysia, 37.6 juta dos diperlukan."
-PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1200,ANNOTATIONS,"[Timbalan Yang di-Pertua (Dato' Mohd Rashid Hasnon) mempengerusikan
-Mesyuarat]
-Kerajaan sudah terima 26.4 juta dos, kurang 10.2 juta dos. Mengapa tidak boleh
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1200,ANNOTATION,"[Timbalan Yang di-Pertua (Dato' Mohd Rashid Hasnon) mempengerusikan
+Mesyuarat]"
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1200,Tuan Lim Guan Eng [Bagan],"Kerajaan sudah terima 26.4 juta dos, kurang 10.2 juta dos. Mengapa tidak boleh
 beli 10.2 juta dos supaya semua rakyat dewasa yang mendaftarkan diri boleh di vaksin
 dengan serta-merta. Tidak payah tunggu tiga bulan. Mengapa kena tiga bulan? Semalam
 mungkin Yang Berhormat Senator Menteri Kewangan tidak ada, Menteri berkenaan Yang
@@ -1838,7 +1869,7 @@ Oleh kerana jangan kita ulangi kesilapan tahun lepas di mana kerana kita lambat
 tempah akhirnya vaksin lambat sampai yang mengakibatkan kematian yang begitu tinggi,
 kes jangkitan yang begitu tinggi. Sudah sampai masanya kita mengakui kesilapan yang
 berlaku sebelum ini dan sekiranya hati terbuka bersedia untuk kerjasama dengan semua
-pihak seperti yang saya sebut.  Pembangkang sedia berikan kerjasama, berikan
+pihak seperti yang saya sebut. Pembangkang sedia berikan kerjasama, berikan
 peruntukan tambahan RM1.5 bilion untuk beli 10.2 juta dos vaksin yang diperlukan untuk
 pastikan semua yang daftar boleh dapat dengan segera supaya kita boleh bina sebuah
 negara yang normal dan lebih baik lagi. Sekian, terima kasih."
@@ -1847,16 +1878,20 @@ Berhormat Bagan."
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1210,Tuan Lim Lip Eng [Kepong],"Peraturan mesyuarat, peraturan mesyuarat."
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1210,Dato’ Seri Anwar bin Ibrahim [Port Dickson],"Peraturan mesyuarat maaf satu
 minit. Peraturan Mesyuarat 26(q) dan (l) dan (k) dan juga yang penting 36(12). Ini
-merujuk kepada kenyataan yang baru dikeluarkan oleh Istana Negara. [Tepuk]."
+merujuk kepada kenyataan yang baru dikeluarkan oleh Istana Negara."
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1210,ANNOTATION,[Tepuk]
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1210,Dato’ Seri Anwar bin Ibrahim [Port Dickson],.
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1210,Tuan Lim Lip Eng [Kepong],"Derhaka, derhaka."
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1210,Datuk Mohd Azis bin Jamman [Sepanggar],"Dengar bagus, bagus."
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1210,Dato’ Seri Anwar bin Ibrahim [Port Dickson],"Istana Negara mengeluarkan
 kenyataan yang menyebut dengan jelas bahawa kerajaan pimpinan Yang Amat
 Berhormat Perdana Menteri Tan Sri Dato’ Haji Mahiaddin bin Haji Md Yassin melanggar
-prinsip Perlembagaan dan tidak menghormati Institusi Raja. [Tepuk]
-Kedua, menyebut secara khusus dengan atas nama Menteri Jabatan Perdana
+prinsip Perlembagaan dan tidak menghormati Institusi Raja."
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1210,ANNOTATION,[Tepuk]
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1210,Dato’ Seri Anwar bin Ibrahim [Port Dickson],"Kedua, menyebut secara khusus dengan atas nama Menteri Jabatan Perdana
 Menteri Yang Berhormat Datuk Seri Takiyuddin bin Hassan telah mengelirukan Dewan
-Rakyat. [Tepuk]"
+Rakyat."
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1210,ANNOTATION,[Tepuk]
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1210,Tuan Lim Lip Eng [Kepong],Letak jawatan.
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1210,Datuk Mohd Azis bin Jamman [Sepanggar],Rujuk dia!
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1210,Dato’ Seri Anwar bin Ibrahim [Port Dickson],"Tuan Yang di-Pertua, kita
@@ -1872,11 +1907,14 @@ dengan saranan Duli Yang Maha Mulia Raja-raja Melayu. Seri Paduka Baginda
 menegaskan Raja Berperlembagaan dan Demokrasi Parlimen.
 Perkara 150(2b) dibaca dengan Perkara 150(3) Perlembagaan Persekutuan
 secara jelas memperuntukkan kuasa penggubalan dan pembatalan Ordinan-ordinan
-Darurat terletak kepada Seri Paduka Baginda Yang di-Pertuan Agong. [Tepuk]"
+Darurat terletak kepada Seri Paduka Baginda Yang di-Pertuan Agong."
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1210,ANNOTATION,[Tepuk]
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1210,Timbalan Yang di-Pertua [Dato' Mohd Rashid Hasnon],Baik.
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1210,Beberapa Ahli,Daulat Tuanku! Daulat Tuanku!
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1210,Dato’ Seri Anwar bin Ibrahim [Port Dickson],"Maka Seri Paduka Baginda
-Yang di-Pertuan Agong menzahirkan rasa amat dukacita [Tepuk] dengan kenyataan
+Yang di-Pertuan Agong menzahirkan rasa amat dukacita"
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1210,ANNOTATION,[Tepuk]
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1210,Dato’ Seri Anwar bin Ibrahim [Port Dickson],"dengan kenyataan
 dibuat di Parlimen pada 26 Julai iaitu kerajaan telah membatalkan semua ordinan yang
 dimasyhurkan oleh baginda walhal pembatalan belum lagi diperkenankan oleh Yang di-
 Pertuan Agong."
@@ -1888,9 +1926,9 @@ dititahkan kepada Yang Berhormat Datuk Seri Takiyuddin bin Hassan selaku Menteri
 Jabatan Perdana Menteri dan Peguam Negara, Tan Sri Idrus Harun semasa Majlis
 Menghadap secara maya pada 24 Julai bahawa cadangan pembatalan semua Ordinan
 Darurat dibentangkan dan dibahaskan di Parlimen bagi tujuan dirungkaikan telah tidak
-dilaksanakan.
-[Dewan riuh]
-[Tepuk]"
+dilaksanakan."
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1210,ANNOTATION,[Dewan riuh]
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1210,ANNOTATION,[Tepuk]
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1210,Tuan Lim Lip Eng [Kepong],"Derhaka, derhaka."
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1210,Dato’ Seri Haji Salahuddin bin Ayub [Pulai],Memang derhaka.
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1210,Datuk Mohd Azis bin Jamman [Sepanggar],"Derhaka, derhaka."
@@ -1909,15 +1947,17 @@ tanpa pembentangan di Parlimen dan kenyataannya bercanggah serta mengelirukan
 Parlimen.
 Bukan sahaja gagal menghormati prinsip kedaulatan undang-undang yang
 terkandung dalam Rukun Negara malah telah membelakangi fungsi dan kuasa Seri
-Paduka Baginda Yang di-Pertuan Agong [Tepuk] selaku Ketua Umum, Ketua Utama
+Paduka Baginda Yang di-Pertuan Agong"
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1210,ANNOTATION,[Tepuk]
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1210,Dato’ Seri Anwar bin Ibrahim [Port Dickson],"selaku Ketua Umum, Ketua Utama
 Negara seperti termaktub dalam Perlembagaan Persekutuan.
 Baginda bertindak mengikut nasihat Jemaah Menteri seperti terkandung dalam
 Perkara 41 Perlembagaan Persekutuan. Baginda maklum namun Seri Paduka Baginda
 Yang di-Pertuan Agong menzahirkan pandangan bahawa baginda selaku Ketua Utama
 Negara mempunyai kewajipan untuk menyampaikan nasihat dan teguran jika berlaku
-sebarang tindakan yang tidak berperlembagaan oleh mana-mana pihak.
-[Tepuk]
-[Dewan riuh]"
+sebarang tindakan yang tidak berperlembagaan oleh mana-mana pihak."
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1210,ANNOTATION,[Tepuk]
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1210,ANNOTATION,[Dewan riuh]
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1210,Tuan Khalid bin Abd Samad [Shah Alam],Muhyiddin letak jawatan.
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1210,Dato’ Seri Anwar bin Ibrahim [Port Dickson],"Khususnya mereka yang
 melaksanakan fungsi dan kuasa di bawah Duli Yang Maha Mulia Seri Paduka Baginda
@@ -1933,7 +1973,9 @@ pelbagai masalah yang dihadapi rakyat dan negara ketika krisis pandemik COVID-19
 Seri Paduka Baginda Yang di-Pertuan Agong mengambil kesempatan menyeru
 rakyat untuk bersama mendoakan agar negara sentiasa berada di bawah lindungan Allah
 S.W.T, dijauhi dari sebarang musibah dan wabak COVID-19 dapat dibendung serta
-diakhiri dengan segera. [Dewan riuh] [Tepuk]"
+diakhiri dengan segera."
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1210,ANNOTATION,[Dewan riuh]
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1210,ANNOTATION,[Tepuk]
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1210,Timbalan Yang di-Pertua [Dato' Mohd Rashid Hasnon],Terima kasih....
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1210,Dato’ Seri Anwar bin Ibrahim [Port Dickson],Kenyataan ini jelas...
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1210,Tuan P. Prabakaran [Batu],"Hendak mencelah sedikit, Yang Berhormat Port
@@ -1944,28 +1986,33 @@ Dato’ Haji Mahiaddin bin Haji Md Yassin telah melanggar semangat Perlembagaan,
 menghina Institusi Raja Berperlembagaan khususnya Yang di-Pertuan Agong dan ini
 termasuk juga Menteri di Jabatan Perdana Menteri mengelirukan Dewan dan oleh yang
 demikian telah tidak bercakap benar kepada Dewan dan mengelirukan rakyat Malaysia.
-Kita tidak ada pilihan selain menuntut Perdana Menteri meletakkan jawatan.
-[Dewan riuh]
-[Tepuk]"
-PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1210,Beberapa Ahli,[Bangun]
-PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1210,Tuan P. Prabakaran [Batu],"Betul, setuju! Letak jawatan hari ini juga. [Tepuk]
-[Dewan riuh]"
+Kita tidak ada pilihan selain menuntut Perdana Menteri meletakkan jawatan."
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1210,ANNOTATION,[Dewan riuh]
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1210,ANNOTATION,[Tepuk]
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1210,Beberapa Ahli,
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1210,ANNOTATION,[Bangun]
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1210,Tuan P. Prabakaran [Batu],"Betul, setuju! Letak jawatan hari ini juga."
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1210,ANNOTATION,[Tepuk]
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1210,ANNOTATION,[Dewan riuh]
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1210,Timbalan Yang di-Pertua [Dato' Mohd Rashid Hasnon],"Ahli-ahli Yang
 Berhormat, diam, diam. Minta duduk, minta duduk."
-PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Timbalan Yang di-Pertua [Dato' Mohd Rashid Hasnon],[Dewan riuh]
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,ANNOTATION,[Dewan riuh]
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Tuan Cha Kee Chin [Rasah],Mana Tuan Yang di-Pertua?
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Tuan Khalid bin Abd Samad [Shah Alam],Letak jawatan.
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Datuk Seri Haji Shamsul Iskandar @ Yusre bin Haji Mohd Akin [Hang Tuah Jaya],Yang Berhormat Pagoh letak jawatan.
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Tuan Khalid bin Abd Samad [Shah Alam],Letak jawatan! Penipu!
-PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Datuk Seri Haji Shamsul Iskandar @ Yusre bin Haji Mohd Akin [Hang Tuah Jaya],[Tidak jelas]
-PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Tuan Cha Kee Chin [Rasah],"Yang Berhormat Dato’ Takiyuddin.
-[Dewan riuh]
-[Pembesar suara dimatikan]"
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Datuk Seri Haji Shamsul Iskandar @ Yusre bin Haji Mohd Akin [Hang Tuah Jaya],
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,ANNOTATION,[Tidak jelas]
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Tuan Cha Kee Chin [Rasah],Yang Berhormat Dato’ Takiyuddin.
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,ANNOTATION,[Dewan riuh]
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,ANNOTATION,[Pembesar suara dimatikan]
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Timbalan Yang di-Pertua [Dato' Mohd Rashid Hasnon],"Ahli-ahli Yang
-Berhormat...
-[Dewan riuh]"
-PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Tuan Khalid bin Abd Samad [Shah Alam],"[Bercakap tanpa menggunakan
-pembesar suara] Jangan derhaka!"
+Berhormat..."
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,ANNOTATION,[Dewan riuh]
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Tuan Khalid bin Abd Samad [Shah Alam],
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,ANNOTATION,"[Bercakap tanpa menggunakan
+pembesar suara]"
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Tuan Khalid bin Abd Samad [Shah Alam],Jangan derhaka!
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Timbalan Yang di-Pertua [Dato' Mohd Rashid Hasnon],"Saya baru
 dimaklumkan ini merupakan peraturan..."
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Tuan Cha Kee Chin [Rasah],Mana Tuan Yang di-Pertua?
@@ -1990,22 +2037,23 @@ PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STR
 Yang Berhormat Kota Bharu dan juga Yang Berhormat Pagoh untuk meletak jawatan..."
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Tuan Gobind Singh Deo [Puchong],Point of order.
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Dr. Maszlee bin Malik [Simpang Renggam],"...Ia akan menjadi titik hitam
-dalam sejarah negara kita.
-[Pembesar suara dimatikan]"
+dalam sejarah negara kita."
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,ANNOTATION,[Pembesar suara dimatikan]
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Timbalan Yang di-Pertua [Dato' Mohd Rashid Hasnon],"Saya hendak
 peraturan mesyuarat mana? Kita dalam – kena patuh kepada peraturan mesyuarat."
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Dr. Maszlee bin Malik [Simpang Renggam],"Ia akan menjadi precedent untuk
-pemimpin seluruh dunia...
-[Pembesar suara dimatikan]"
+pemimpin seluruh dunia..."
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,ANNOTATION,[Pembesar suara dimatikan]
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Tuan Gobind Singh Deo [Puchong],Tuan Yang di-Pertua..
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Dr. Maszlee bin Malik [Simpang Renggam],"...Dan juga memimpin secara
-diktator.
-[Pembesar suara dimatikan]
-[Dewan riuh]"
+diktator."
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,ANNOTATION,[Pembesar suara dimatikan]
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,ANNOTATION,[Dewan riuh]
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Timbalan Yang di-Pertua [Dato' Mohd Rashid Hasnon],"Yang Berhormat
-Puchong.
-[Dewan riuh]"
-PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Beberapa Ahli,[Berucap tanpa menggunakan pembesar suara]
+Puchong."
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,ANNOTATION,[Dewan riuh]
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Beberapa Ahli,
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,ANNOTATION,[Berucap tanpa menggunakan pembesar suara]
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Timbalan Yang di-Pertua [Dato' Mohd Rashid Hasnon],"Yang Berhormat
 Puchong adakah rujuk yang sama ke?"
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Tuan Gobind Singh Deo [Puchong],"Tuan Yang di-Pertua point of order. Tuan
@@ -2034,10 +2082,10 @@ tahu. Kenapakah Tuan Yang di-Pertua melindungi mereka?"
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Timbalan Yang di-Pertua [Dato' Mohd Rashid Hasnon],"Baik, terima kasih."
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Tuan Gobind Singh Deo [Puchong],"Kenapakah Tuan Yang di-Pertua
 melindungi mereka? Saya mahu satu keputusan sekarang. Minta usul itu dibawa ke
-depan, kita bincang usul itu sekarang.
-[Dewan riuh]
-[Tepuk]
-[Pembesar suara dimatikan]"
+depan, kita bincang usul itu sekarang."
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,ANNOTATION,[Dewan riuh]
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,ANNOTATION,[Tepuk]
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,ANNOTATION,[Pembesar suara dimatikan]
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Timbalan Yang di-Pertua [Dato' Mohd Rashid Hasnon],"Baik, terima kasih.
 Terima kasih Yang Berhormat Puchong. Benda yang sama juga. Baik."
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Tuan Sanisvara Nethaji Rayer a/l Rajaji [Jelutong],"Tuan Yang di-Pertua
@@ -2046,9 +2094,9 @@ PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STR
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Timbalan Yang di-Pertua [Dato' Mohd Rashid Hasnon],"Yang Berhormat
 Jelutong."
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Tuan Gobind Singh Deo [Puchong],"Kalau Tuan Yang di-Pertua tidak boleh
-membawa ke depan usul itu, Tuan Yang di-Pertua pun patut letak jawatan!
-[Dewan tepuk]
-[Pembesar suara dimatikan]"
+membawa ke depan usul itu, Tuan Yang di-Pertua pun patut letak jawatan!"
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,ANNOTATION,[Dewan tepuk]
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,ANNOTATION,[Pembesar suara dimatikan]
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Timbalan Yang di-Pertua [Dato' Mohd Rashid Hasnon],"Terima kasih Yang
 Berhormat Puchong dan juga Yang Berhormat Port Dickson tadi. Ahli-ahli Yang
 Berhormat kita pun baru dapat..."
@@ -2057,7 +2105,8 @@ PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STR
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Dato’ Seri Haji Salahuddin bin Ayub [Pulai],Point of Order 99.
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Tan Sri Noh bin Haji Omar [Tanjong Karang],"Tuan Yang di-Pertua, Tanjong
 Karang."
-PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Seorang Ahli,[Berucap tanpa menggunakan pembesar suara]
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Seorang Ahli,
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,ANNOTATION,[Berucap tanpa menggunakan pembesar suara]
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Timbalan Yang di-Pertua [Dato' Mohd Rashid Hasnon],"Sekarang kita
 sebut— point of order yang mana?"
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Tuan Ramkarpal Singh a/l Karpal Singh [Bukit Gelugor],"Point of order Tuan
@@ -2078,24 +2127,26 @@ PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STR
 saya. Tangguh dahulu."
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Dato’ Seri Haji Salahuddin bin Ayub [Pulai],"Panggil Tuan Yang di-Pertua
 masuk balik, panggil Tuan Yang di-Pertua."
-PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Tan Sri Noh bin Haji Omar [Tanjong Karang],"Tangguh sementara.
-[Dewan riuh]
-[Pembesar suara dimatikan]"
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Tan Sri Noh bin Haji Omar [Tanjong Karang],Tangguh sementara.
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,ANNOTATION,[Dewan riuh]
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,ANNOTATION,[Pembesar suara dimatikan]
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Timbalan Yang di-Pertua [Dato' Mohd Rashid Hasnon],"Baik, terima kasih
-Yang Berhormat Tanjong Karang.
-[Dewan riuh]"
+Yang Berhormat Tanjong Karang."
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,ANNOTATION,[Dewan riuh]
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Tuan Khalid bin Abd Samad [Shah Alam],"Yang Amat Berhormat Perdana
-Menteri masuk, Yang Amat Berhormat Perdana Menteri masuk. [Bercakap tanpa
-menggunakan pembesar suara]
-[Dewan riuh]"
+Menteri masuk, Yang Amat Berhormat Perdana Menteri masuk."
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,ANNOTATION,"[Bercakap tanpa
+menggunakan pembesar suara]"
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,ANNOTATION,[Dewan riuh]
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Timbalan Yang di-Pertua [Dato' Mohd Rashid Hasnon],"Boleh saya
 bercakap? Boleh minta yang lain duduk dahulu. Minta yang lain duduk. Minta Ahli-ahli
-Yang Berhormat duduk dahulu.
-[Dewan riuh]"
-PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Beberapa Ahli,[Bercakap tanpa menggunakan pembesar suara]
+Yang Berhormat duduk dahulu."
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,ANNOTATION,[Dewan riuh]
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Beberapa Ahli,
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,ANNOTATION,[Bercakap tanpa menggunakan pembesar suara]
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Timbalan Yang di-Pertua [Dato' Mohd Rashid Hasnon],"Minta Ahli-ahli Yang
-Berhormat sila duduk dahulu.
-[Dewan riuh]"
+Berhormat sila duduk dahulu."
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,ANNOTATION,[Dewan riuh]
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Datuk Seri Haji Shamsul Iskandar @ Yusre bin Haji Mohd Akin [Hang Tuah Jaya],"Yang Berhormat Pagoh kena masuk Dewan Tuan Yang di-Pertua. Yang
 Berhormat Pagoh."
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Timbalan Yang di-Pertua [Dato' Mohd Rashid Hasnon],"Baik, kita telah
@@ -2107,7 +2158,8 @@ PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STR
 menganggap perkara ini tidak berlaku dan kita tidak boleh..."
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Tuan Sanisvara Nethaji Rayer a/l Rajaji [Jelutong],"Tuan Yang di-Pertua,
 mana Yang Berhormat Kota Bharu? Mana Yang Berhormat Pagoh? Kenapa lari? Kenapa
-tidak datang ke Dewan... [Pembesar suara dimatikan]"
+tidak datang ke Dewan..."
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,ANNOTATION,[Pembesar suara dimatikan]
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Timbalan Yang di-Pertua [Dato' Mohd Rashid Hasnon],"Yang Berhormat
 Jelutong sila duduk dahulu."
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Tuan Cha Kee Chin [Rasah],"Timbalan Yang di-Pertua, tidak ada kuasa sudah.
@@ -2128,34 +2180,35 @@ melengahkan masa. Kena buat keputusan immediate. Ini soal besar."
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Tuan Ma’mun bin Sulaiman [Kalabakan],Buat keputusan secepat mungkin.
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Timbalan Yang di-Pertua [Dato' Mohd Rashid Hasnon],"Setakat kenyataan
 media..."
-PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Tuan Cha Kee Chin [Rasah],"Kita menjunjung...
-[Pembesar suara dimatikan]"
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Tuan Cha Kee Chin [Rasah],Kita menjunjung...
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,ANNOTATION,[Pembesar suara dimatikan]
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Tuan Ma’mun bin Sulaiman [Kalabakan],...Tidak boleh tunggu.
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Timbalan Yang di-Pertua [Dato' Mohd Rashid Hasnon],"Saya perlu rujuk
 kepada Pejabat Timbalan Yang di-Pertua kerana ini adalah Peraturan 36(12). Rujuk
 kepada hak-hak dan kebebasan. Saya tidak mahu hendak mengganggu perbahasan
-bagi kita teruskan sampai waktu pukul 1.00...
-[Dewan riuh]"
+bagi kita teruskan sampai waktu pukul 1.00..."
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,ANNOTATION,[Dewan riuh]
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Timbalan Yang di-Pertua [Dato' Mohd Rashid Hasnon],"Pukul 1.00 dan kita
 masih dalam aturan mesyuarat untuk mendengar pembentangan aturan mesyuarat ini,
-baik.
-[Dewan riuh]"
+baik."
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,ANNOTATION,[Dewan riuh]
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Dr. Maszlee bin Malik [Simpang Renggam],"Tuan Yang di-Pertua, jangan
 derhaka Titah Tuanku."
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Datuk Seri Haji Shamsul Iskandar @ Yusre bin Haji Mohd Akin [Hang Tuah Jaya],Tuan Yang di-Pertua...
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Dr. Maszlee bin Malik [Simpang Renggam],"Tuan Yang di-Pertua, jangan
-derhaka Titah Tuanku.
-[Dewan riuh]
-[Pembesar suara dimatikan]"
+derhaka Titah Tuanku."
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,ANNOTATION,[Dewan riuh]
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,ANNOTATION,[Pembesar suara dimatikan]
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Timbalan Yang di-Pertua [Dato' Mohd Rashid Hasnon],"Saya boleh juga
 tangguh 15 minit boleh, boleh tangguh tetapi saya hendak minta pada Ahli-ahli Yang
-Berhormat, saya hendak teruskan juga. Baik, sila-sila.
-[Dewan riuh]"
+Berhormat, saya hendak teruskan juga. Baik, sila-sila."
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,ANNOTATION,[Dewan riuh]
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Dato’ Sri Bung Moktar bin Radin [Kinabatangan],"Tangguh-tangguh, kena
 tangguh sampai jam 1.00."
-PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Tuan Cha Kee Chin [Rasah],"[Bercakap tanpa menggunakan pembesar suara]
-[Dewan riuh]
-[Pembesar suara dimatikan]"
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Tuan Cha Kee Chin [Rasah],
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,ANNOTATION,[Bercakap tanpa menggunakan pembesar suara]
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,ANNOTATION,[Dewan riuh]
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,ANNOTATION,[Pembesar suara dimatikan]
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Timbalan Yang di-Pertua [Dato' Mohd Rashid Hasnon],"Yang Berhormat
 Semporna 15 minit. Sila."
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Dato’ Sri Dr. Haji Ismail bin Haji Mohamed Said [Kuala Krau],"Tuan Yang di-
@@ -2176,12 +2229,14 @@ PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STR
 dahulu boleh, tangguh dahulu tidak apa."
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Dato’ Sri Bung Moktar bin Radin [Kinabatangan],"Tuan Yang di-Pertua, kita
 tangguhkan Dewan Rakyat sebab isu ini isu serius Perlembagaan."
-PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Tuan Gobind Singh Deo [Puchong],"[Tidak jelas] Kita tangguh untuk semak.
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Tuan Gobind Singh Deo [Puchong],
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,ANNOTATION,[Tidak jelas]
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Tuan Gobind Singh Deo [Puchong],"Kita tangguh untuk semak.
 Jangan kata..."
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Dato’ Sri Bung Moktar bin Radin [Kinabatangan],"Kita tangguh dahulu
 Dewan untuk membincangkan perkara serius."
-PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Tuan Gobind Singh Deo [Puchong],"Tangguh, semak, dapat kepastian.
-[Dewan riuh]"
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Tuan Gobind Singh Deo [Puchong],"Tangguh, semak, dapat kepastian."
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,ANNOTATION,[Dewan riuh]
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Tuan Gobind Singh Deo [Puchong],"Manakah Yang Amat Berhormat Perdana
 Menteri?"
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Dato’ Sri Bung Moktar bin Radin [Kinabatangan],"Kita tangguh dahulu
@@ -2191,8 +2246,8 @@ petang."
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Dato’ Seri Haji Salahuddin bin Ayub [Pulai],"Tangguh, tangguh, tangguh
 Dewan."
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Tan Sri Noh bin Haji Omar [Tanjong Karang],"Tuan Yang di-Pertua
-tangguhlah sampai 2.30 petang. Boleh tangguh.
-[Dewan riuh]"
+tangguhlah sampai 2.30 petang. Boleh tangguh."
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,ANNOTATION,[Dewan riuh]
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Dato’ Seri Haji Salahuddin bin Ayub [Pulai],"Tangguhkan Dewan. Yang
 Berhormat Bera, you say something-lah."
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Tuan Gobind Singh Deo [Puchong],"No, no, no 15 minutes."
@@ -2201,20 +2256,20 @@ PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STR
 Berhormat Perdana Menteri?"
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Dato’ Seri Haji Salahuddin bin Ayub [Pulai],"…You say something, say
 something."
-PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Tuan Gobind Singh Deo [Puchong],"Minta dia datang jawab, tanggungjawab.
-[Dewan riuh]
-[Pembesar suara dimatikan]"
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Tuan Gobind Singh Deo [Puchong],"Minta dia datang jawab, tanggungjawab."
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,ANNOTATION,[Dewan riuh]
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,ANNOTATION,[Pembesar suara dimatikan]
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Timbalan Yang di-Pertua [Dato' Mohd Rashid Hasnon],"Baik, Ahli-ahli Yang
-Berhormat sila duduk. Sila tenang, tenang,tenang.
-[Dewan riuh]"
+Berhormat sila duduk. Sila tenang, tenang,tenang."
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,ANNOTATION,[Dewan riuh]
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,Timbalan Yang di-Pertua [Dato' Mohd Rashid Hasnon],"Baik, Ahli-ahli Yang
 Berhormat saya merujuk kepada Peraturan Mesyuarat 12(2) iaitu untuk menangguhkan
 Mesyuarat ini selama 15 minit untuk saya buat perbincangan di dalam. Sila Yang
 Berhormat, Majlis ditangguhkan."
-PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,ANNOTATIONS,[Mesyuarat ditempohkan pada pukul 12.29 tengah hari]
-PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1230,ANNOTATIONS,[Mesyuarat ditempohkan selama 15 minit]
-PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1240,ANNOTATIONS,[Mesyuarat disambung semula pada pukul 12.45 tengah hari]
-PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1240,ANNOTATIONS,"[Timbalan Yang di-Pertua (Dato’ Mohd Rashid Hasnon) mempengerusikan
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1220,ANNOTATION,[Mesyuarat ditempohkan pada pukul 12.29 tengah hari]
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1230,ANNOTATION,[Mesyuarat ditempohkan selama 15 minit]
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1240,ANNOTATION,[Mesyuarat disambung semula pada pukul 12.45 tengah hari]
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1240,ANNOTATION,"[Timbalan Yang di-Pertua (Dato’ Mohd Rashid Hasnon) mempengerusikan
 Mesyuarat]"
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1240,Tuan Nga Kor Ming [Teluk Intan],Mana Tuan Yang di-Pertua?
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1240,Seorang Ahli,Bukan Tuan Yang di-Pertua ini...
@@ -2222,7 +2277,8 @@ PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STR
 another Tuan Yang di-Pertua, not you."
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1240,Datuk Mohamad bin Alamin [Kimanis],"Tenanglah, tenanglah dulu."
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1240,Tuan Cha Kee Chin [Rasah],"Mana Tuan Yang di-Pertua? Tuan Yang di-
-Pertua jaga abang... [Dewan riuh]"
+Pertua jaga abang..."
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1240,ANNOTATION,[Dewan riuh]
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1240,Tuan Sanisvara Nethaji Rayer a/l Rajaji [Jelutong],"Mana Tuan Yang di-
 Pertua? Where is the Tuan Yang di-Pertua?"
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1240,Tuan M. Kulasegaran [Ipoh Barat],Mana Tuan Yang di-Pertua?
@@ -2236,9 +2292,9 @@ Pertua, Tuan Yang di-Pertua."
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1240,Timbalan Yang di-Pertua [Dato' Mohd Rashid Hasnon],"Saya ulang sekali
 lagi. Untuk menempohkan sehingga pukul 1, dan disambung semula pada pukul 2.30
 petang. Sekian, terima kasih."
-PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1240,ANNOTATIONS,[Mesyuarat ditempohkan pada pukul 12.46 tengah hari]
-PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1430,ANNOTATIONS,[Mesyuarat disambung semula pada pukul 2.30 petang]
-PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1430,ANNOTATIONS,"[Timbalan Yang di-Pertua (Dato’ Sri Azalina Othman Said) mempengerusikan
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1240,ANNOTATION,[Mesyuarat ditempohkan pada pukul 12.46 tengah hari]
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1430,ANNOTATION,[Mesyuarat disambung semula pada pukul 2.30 petang]
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1430,ANNOTATION,"[Timbalan Yang di-Pertua (Dato’ Sri Azalina Othman Said) mempengerusikan
 Mesyuarat]"
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,2.32 ptg.,Timbalan Yang di-Pertua [Dato’ Sri Azalina Othman Said],"Bismillahi
 Rahmani Rahim. Assalamualaikum warahmatullahi wabarakatuh.
@@ -2246,17 +2302,18 @@ Ahli-ahli Yang Berhormat perbincangan masih diadakan berkenaan Aturan
 Pengurusan Mesyuarat pada hari ini. Sehubungan dengan itu, selaras dengan Peraturan
 Mesyuarat 12(2), sekarang ini saya menempohkan mesyuarat pada hari ini sehingga
 pukul 3.30 petang. Terima kasih."
-PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,2.32 ptg.,ANNOTATIONS,[Mesyuarat ditempohkan pada pukul 2.32 petang]
-PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,2.32 ptg.,ANNOTATIONS,[Mesyuarat disambung semula pada pukul 3.30 petang]
-PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,2.32 ptg.,ANNOTATIONS,"[Timbalan Yang di-Pertua (Dato' Mohd Rashid Hasnon) mempengerusikan
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,2.32 ptg.,ANNOTATION,[Mesyuarat ditempohkan pada pukul 2.32 petang]
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,2.32 ptg.,ANNOTATION,[Mesyuarat disambung semula pada pukul 3.30 petang]
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,2.32 ptg.,ANNOTATION,"[Timbalan Yang di-Pertua (Dato' Mohd Rashid Hasnon) mempengerusikan
 Mesyuarat]"
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,3.30 ptg.,Timbalan Yang di-Pertua [Dato' Mohd Rashid Hasnon],"Yang Berhormat,
 pemakluman Tuan Yang di-Pertua. Ahli-ahli Yang Berhormat, Tuan Yang di-Pertua telah
 menerima surat pemakluman daripada Ketua Pengarah Kesihatan yang berbunyi begini.
 Dukacita dimaklumkan, Kementerian Kesihatan Malaysia telah dimaklumkan
 pada 29 Julai 2021, jam 12 tengah hari mengenai dua kes positif COVID-19, yang telah
-hadir ke Parlimen... [Dewan riuh]
-Kes pertama ialah seorang petugas yang telah hadir ke Parlimen sejak hari Isnin
+hadir ke Parlimen..."
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,3.30 ptg.,ANNOTATION,[Dewan riuh]
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,3.30 ptg.,Timbalan Yang di-Pertua [Dato' Mohd Rashid Hasnon],"Kes pertama ialah seorang petugas yang telah hadir ke Parlimen sejak hari Isnin
 26 Julai 2021, sehingga Rabu 28 Julai 2021, dengan nilai kitaran ambangnya- CT value
 18.7- below 20, high viral load and infectivity.
 Manakala kes kedua, dikesan positif pada hari Khamis 29 Julai 2021, semasa
@@ -2273,9 +2330,9 @@ Ujian saringan akan dilakukan di Pintu 3 Blok Utama yang akan mula
 beroperasi- sejak semalam pun. Keutamaan diberikan kepada Ahli-ahli Parlimen.
 Mesyuarat ditempohkan sehingga jam 5.15 petang- Peraturan Mesyuarat 12(2).
 Sekian, terima kasih."
-PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,3.30 ptg.,ANNOTATIONS,[Mesyuarat ditempohkan pada pukul 3.35 petang]
-PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,3.30 ptg.,ANNOTATIONS,[Mesyuarat disambung semula pada pukul 5.08 petang]
-PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1710,ANNOTATIONS,"[Timbalan Yang di-Pertua (Dato’ Mohd Rashid Hasnon) mempengerusikan
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,3.30 ptg.,ANNOTATION,[Mesyuarat ditempohkan pada pukul 3.35 petang]
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,3.30 ptg.,ANNOTATION,[Mesyuarat disambung semula pada pukul 5.08 petang]
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1710,ANNOTATION,"[Timbalan Yang di-Pertua (Dato’ Mohd Rashid Hasnon) mempengerusikan
 Mesyuarat]"
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1710,Timbalan Yang di-Pertua [Dato' Mohd Rashid Hasnon],"Ahli-ahli Yang
 Berhormat sekalian, hasil daripada ujian saringan RTK-Ag Saliva yang masih sedang
@@ -2304,9 +2361,9 @@ PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STR
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1710,Tuan Gobind Singh Deo [Puchong],Apakah ini?
 PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1710,Timbalan Yang di-Pertua [Dato' Mohd Rashid Hasnon],"... Mesyuarat pada
 hari ini ditangguhkan sehingga jam 10 pagi, hari Isnin, 2 Ogos 2021.
-Terima kasih Ahli-ahli Yang Berhormat..
-[Dewan riuh]"
-PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1710,ANNOTATIONS,[Dewan ditangguhkan pada pukul 5.20 petang]
-PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1710,ANNOTATIONS,"Nota:
+Terima kasih Ahli-ahli Yang Berhormat.."
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1710,ANNOTATION,[Dewan riuh]
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1710,ANNOTATION,[Dewan ditangguhkan pada pukul 5.20 petang]
+PENERANGAN DARIPADA Y.B. MENTERI KEWANGAN DI BAWAH P.M. 14(1)(i),LANGKAH DAN STRATEGI SEMUA PAKEJ RANGSANGAN EKONOMI,,■1710,Timbalan Yang di-Pertua [Dato' Mohd Rashid Hasnon],"Nota:
 Mesyuarat Khas Penggal Ketiga Parlimen ke-14 bagi Dewan Rakyat pada Isnin, 2 Ogos 2021
 ditangguhkan ke suatu tarikh yang akan ditetapkan kelak."

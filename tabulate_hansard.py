@@ -64,13 +64,15 @@ def get_author_and_speech(text, warn=''):
     elif re.search(r'^Setiausaha[\[\]A-Za-z `.’\'@/(\-),]*:', text):
         # Secretary of the House
         author, speech = text.split(':', maxsplit=1)
-    elif re.search(r'^(Timbalan )?[Mm]enteri [A-Za-z,()\-& ]+(\[Ekonomi] )?\[[A-Za-z `.’\'@/(\-)]+] ?:', text):
+    elif re.search(r'^(Timbalan )?[Mm]enteri [A-Za-z,()\-& ]+(\[Ekonomi] )?\[[A-Za-z `.’\'@/(\-)\[\]]+] ?:', text):
         # Minister or Deputy Minister
         # allows () at the name part as they can have constituencies too
         # , is for Menteri Pembangunan Wanita, Keluarga dan Masyarakat
         # () is for Menteri di Jabatan Perdana Menteri (Parlimen dan Undang-Undang)
         # - is for Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan
         # Reformasi Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh]: Tuan Yang di-
+        # [] is for Menteri Sumber Manusia [Tuan M. Kulasegaran [Ipoh Barat]]: Cukup Tuan Yang
+        # Timbalan Menteri Pendidikan [Puan Teo Nie Ching [Kulai]]: Tuan Yang di-Pertua,
         author, speech = text.split(':', maxsplit=1)
     elif re.search(r'^((Timbalan )|(Yang Amat Berhormat ))?Perdana [A-Za-z, ]+\[[A-Za-z `.’\'@/(\-)]+]:', text):
         # Prime Minister or Deputy Primer Minister
@@ -121,16 +123,29 @@ def get_author_and_speech(text, warn=''):
         author = 'Setiausaha'
     elif not warn and re.search(r'] ?:', text) and '[' not in text.split(':', maxsplit=1)[0]:
         # some of the unparsed authors are due to an extra ]
+        # this must be double-checked since it could be that it is a missing [ instead of extra ]
         author, speech, subtopic = get_author_and_speech(re.sub(r'] ?:', ':', text, 1), warn=text)
-    elif not warn and ':' in text and '[' in text and ']' not in text:
+    elif not warn and ':' in text and '[' in text and ']:' not in text.replace(' ', '') and \
+            text.count('[') == text.count(']') + 1:
         # some of the unparsed authors are due to a missing ]
         author, speech, subtopic = get_author_and_speech(text.replace(':', ']:', 1), warn=text)
-    elif not warn and ':' not in text and \
-            re.search(r'^((Tuan)|(Datuk)|(Dato)|(Tan Sri)|(Puan)|(Dr\.)|(YM)|(Ustaz)|(Tun)|'
-                      r'(Laksamana)|(Mejar)|(Komander)|(Seri Paduka)|(Tengku)|(Hajah)|(Raja)|(Brig)|(Datin))'
-                      r'[A-Za-z `.’\'@/\-()]+\[[A-Za-z \-–]+]', text):
+    elif text == "10. Datuk Wira Haji Mohd. Anuar Mohd. Tahir [Temerloh] Datuk Wira Haji Mohd.\n":
+        # special case where "minta" is not said in a numbered question
+        # put here before the next elif that will be activated
+        author = 'Datuk Wira Haji Mohd. Anuar Mohd. Tahir [Temerloh]'
+        speech = 'Datuk Wira Haji Mohd.\n'
+        subtopic = "10."
+    elif text == "9. Datuk Dr. Ewon Ebin [Ranau] Menteri Kemajuan Luar Bandar dan Wilayah\n":
+        # special case where "minta" is not said in a numbered question
+        author = 'Datuk Dr. Ewon Ebin [Ranau]'
+        speech = 'Menteri Kemajuan Luar Bandar dan Wilayah\n'
+        subtopic = "9."
+    elif not warn and ']' in text and not text.endswith(']') and \
+            not text.rsplit(']', maxsplit=1)[1].strip().startswith(':') and \
+            text.count('[') == text.count(']'):
         # some of the unparsed authors are due to a missing colon :
-        author, speech, subtopic = get_author_and_speech(text.replace(']', ']:', 1), warn=text)
+        edited_text = ']:'.join(text.rsplit(']', 1))
+        author, speech, subtopic = get_author_and_speech(edited_text, warn=text)
     if author != '' and warn != '':
         with open('warnings/autocorrected_authors.txt', 'a') as f:
             f.write(warn + '\n')
@@ -142,6 +157,48 @@ def insert_speech(current):
         return []
     return [[current['level_1'], current['level_2'], current['level_3'],
              current['timestamp'], current['author'], current['speech']]]
+
+
+def put_annotations_on_new_line(text, bold, italics):
+    # assumptions
+    # 1. [ does not end on a line
+    for row in text:
+        assert row.strip()[-1] != '[', f'Error [ on end of line: {row}'
+    row_id = 0
+    num_unclosed_brackets = 0
+    while row_id < len(text):
+        letter_id = 0
+        while letter_id < len(text[row_id]):
+            if num_unclosed_brackets > 0:
+                # we are currently in an annotation
+                if text[row_id][letter_id] == ']':
+                    num_unclosed_brackets -= 1
+                    if num_unclosed_brackets == 0:
+                        # end of annotation
+                        if text[row_id][:letter_id + 1] == '\n':
+                            assert letter_id + 1 == len(text[row_id])
+                            continue
+                        text[row_id] = text[row_id][:letter_id + 1] + '\n' + text[row_id][letter_id + 1:]
+                        bold[row_id] = bold[row_id][:letter_id + 1] + '\n' + bold[row_id][letter_id + 1:]
+                        italics[row_id] = italics[row_id][:letter_id + 1] + '\n' + italics[row_id][letter_id + 1:]
+                elif text[row_id][letter_id] == '[':
+                    num_unclosed_brackets += 1
+            elif text[row_id][letter_id] == '[' and letter_id + 1 < len(text[row_id]) and \
+                    italics[row_id][letter_id + 1] == '1':
+                # annotation detected
+                num_unclosed_brackets = 1
+                if letter_id - 1 >= 0 and text[row_id][letter_id - 1] != '\n':
+                    # split to newline
+                    text[row_id] = text[row_id][:letter_id] + '\n' + text[row_id][letter_id:]
+                    bold[row_id] = bold[row_id][:letter_id] + '\n' + bold[row_id][letter_id:]
+                    italics[row_id] = italics[row_id][:letter_id] + '\n' + italics[row_id][letter_id:]
+                    letter_id += 1
+            letter_id += 1
+        row_id += 1
+    text = [x.strip() + '\n' for x in (''.join(text)).split('\n') if x.strip()]
+    bold = [x.strip() + '\n' for x in (''.join(bold)).split('\n') if x.strip()]
+    italics = [x.strip() + '\n' for x in (''.join(italics)).split('\n') if x.strip()]
+    return text, bold, italics
 
 
 def tabulate(hansard_date):
@@ -169,6 +226,8 @@ def tabulate(hansard_date):
     assert len(text) == len(bold) == len(italics), \
         f'Length of text, bold and italics do not match: {len(text)} vs {len(bold)} vs {len(italics)}'
 
+    text, bold, italics = put_annotations_on_new_line(text, bold, italics)
+
     doa_seen = False
     num_rows = len(text)
     speeches = []
@@ -185,6 +244,8 @@ def tabulate(hansard_date):
     dewan_tangguh = False
     while row_id + 1 < num_rows:
         row_id += 1
+        if row_id == 795:
+            print()
         # run until DOA first
         if 'DOA' == text[row_id].strip():
             doa_seen = True
@@ -196,24 +257,37 @@ def tabulate(hansard_date):
             continue
 
         # determine whether the current line is a continuation of speech
+        # first check whether it is an annotation
+        if text[row_id].startswith('[') and italics[row_id][1] == '1':
+            if text[row_id].startswith('[Dewan ditangguhkan') or \
+                    text[row_id].startswith('[Mesyuarat ditangguhkan'):
+                dewan_tangguh = True
+            # annotation detected
+            speeches += insert_speech(current)
+            old_author = current['author']
+            current['speech'] = text[row_id]
+            current['author'] = "ANNOTATION"
+            add_idx = 1
+            num_unclosed_brackets = text[row_id].count('[') - text[row_id].count(']')
+            while add_idx + row_id < num_rows and num_unclosed_brackets > 0:
+                current['speech'] += text[row_id + add_idx]
+                num_unclosed_brackets += text[row_id + add_idx].count('[') - text[row_id + add_idx].count(']')
+                if text[row_id + add_idx].startswith('[Dewan ditangguhkan') or \
+                        text[row_id + add_idx].startswith('[Mesyuarat ditangguhkan'):
+                    dewan_tangguh = True
+                add_idx += 1
+            row_id += add_idx - 1
+            speeches += insert_speech(current)
+            current['author'] = old_author
+            current['speech'] = ''
+            continue
+        # now check if it is author or title etc
         if '1' not in bold[row_id]:
             # if there is no bold in a line
             # then most likely it is a continuation of speech
-            # these includes annotations without bold e.g. [Tepuk]
-            # for annotations, do a look ahead to ensure that it is not a bolded one
-            if prop_of_1_among_binary(italics[row_id]) > 0.5 and \
-                    '[' in text[row_id] and not text[row_id + 1].startswith('[') and \
-                    row_id + 1 < num_rows and '1' in bold[row_id + 1] \
-                    and re.search(r'mempengerusikan (([Mm]esyuarat)|(Jawatankuasa))', text[row_id + 1]):
-                text[row_id + 1] = text[row_id] + text[row_id + 1]
-                bold[row_id + 1] = bold[row_id] + bold[row_id + 1]
-                italics[row_id + 1] = italics[row_id] + italics[row_id + 1]
-                continue
-
             current['speech'] += text[row_id]
+            continue
         else:
-            if row_id == 793:
-                print()
             if text[row_id].strip().lower() == "lampiran":
                 # end of Hansard
                 if not dewan_tangguh:
@@ -240,7 +314,9 @@ def tabulate(hansard_date):
                 continue
 
             # sometimes the author has too long name and overflow to second line
-            if row_id + 1 < num_rows:
+            # but make sure this is not an annotation
+            if row_id + 1 < num_rows and \
+                    not (text[row_id + 1].startswith('[') and italics[row_id + 1][1] == '1'):
                 concat_rows = f'{text[row_id].strip()} {text[row_id + 1]}'
                 author, speech, subtopic = get_author_and_speech(concat_rows)
                 if author != '':
@@ -272,46 +348,22 @@ def tabulate(hansard_date):
                     f.write(f'{hansard_date} with num bold: {num_bold}\n{stray_bold}\n')
                 continue
 
-            if prop_of_1_among_binary(italics[row_id]) > 0.8:
-                if not text[row_id].startswith('['):
-                    print(f'ERROR: annotation without starting [: {text[row_id]}')
-                # Annotations, examples below
-                # this will also take care quite a lot of bolds
-                # [Tuan Yang di-Pertua mempengerusikan Jawatankuasa] 
-                # [Majlis Mesyuarat bersidang semula] 
-                # [Dewan ditangguhkan pada pukul 4.59 petang] 
-                # [Sesi Waktu Pertanyaan-pertanyaan Menteri tamat] 
-                # [Soalan No.4 – Y.B. Tuan M. Kulasegaran (Ipoh Barat) tidak hadir]
-                if text[row_id].startswith('[Dewan ditangguhkan') or \
-                        text[row_id].startswith('[Mesyuarat ditangguhkan'):
-                    dewan_tangguh = True
-                speeches += insert_speech(current)
-                current['author'] = "ANNOTATIONS"
-                current['speech'] = ''
-                add_idx = 0
-                while row_id + add_idx < num_rows and prop_of_1_among_binary(italics[row_id + add_idx]) > 0.8:
-                    current['speech'] += text[row_id + add_idx]
-                    add_idx += 1
-                    if text[row_id + add_idx - 1].strip().endswith(']'):
-                        break
-                row_id += add_idx - 1
-                # TODO extract timestamps from annotations if present
-                continue
-
             if current['author'] == "" and current['level_1'] != '':
                 # most likely a level_2 immediately following a level_1
                 # usually a chain of bolds
-                # TODO warn
                 add_idx = 1
                 current['level_2'] = text[row_id]
                 current['level_3'] = ""
                 while row_id + add_idx < num_rows and \
                         prop_of_1_among_binary(bold[row_id + add_idx]) > 0.8 and \
                         not is_timestamp(text[row_id + add_idx]) and \
-                        not get_author_and_speech(text[row_id + add_idx])[0]:
+                        not get_author_and_speech(text[row_id + add_idx])[0] and \
+                        not (text[row_id + add_idx].startswith('[') and italics[row_id + add_idx][1] == '1'):
                     current['level_2'] += text[row_id + add_idx]
                     add_idx += 1
                 row_id += add_idx - 1
+                with open("warnings/level_2_following_level_1.txt", 'a') as f:
+                    f.write(f"{hansard_date}\n{current['level_2']}\n")
                 continue
 
             if upper_lower_ratio(text[row_id]) > 1:
@@ -355,7 +407,6 @@ def tabulate(hansard_date):
                         f.write(f'{hansard_date},{current_category},{current_category_probability}\n')
                     continue
                 # could be a capitalised subtopic
-                # TODO WARN
                 speeches += insert_speech(current)
                 current['author'] = ""
                 current['speech'] = ""
@@ -366,10 +417,13 @@ def tabulate(hansard_date):
                 while row_id + add_idx < num_rows and \
                         prop_of_1_among_binary(bold[row_id + add_idx]) > 0.8 \
                         and not is_timestamp(text[row_id + add_idx]) \
-                        and get_author_and_speech(text[row_id + add_idx])[0] == "":
+                        and get_author_and_speech(text[row_id + add_idx])[0] == "" \
+                        and not text[row_id + add_idx].startswith('Bismilla'):
                     current['level_2'] += text[row_id + add_idx]
                     add_idx += 1
                 row_id += add_idx - 1
+                with open("warnings/capitalised_level_2.txt", 'a') as f:
+                    f.write(f"{hansard_date}\n{current['level_2']}\n")
                 continue
 
             # these are lower-cased bold sentences
@@ -381,11 +435,10 @@ def tabulate(hansard_date):
                 current['speech'] = ""
                 current['level_3'] = text[row_id].strip()
                 if current['level_2'] == "":
-                    print(f'CHECK: level_2 not taken but inserting level_3: {text[row_id]}')
+                    print(f'WARN: level_2 not taken but inserting level_3: {text[row_id]}')
                 continue
             elif re.search(r'^(Maksud)|(Kepala)|(Fasal)|(Bab)|(Tajuk)|(Jadual)[A-Za-z0-9-[\], ]+[–-]',
                            text[row_id]):
-                # TODO warn
                 speeches += insert_speech(current)
                 add_idx = 1
                 current['author'] = ""
@@ -400,7 +453,7 @@ def tabulate(hansard_date):
                     add_idx += 1
                 row_id += add_idx - 1
                 if current['level_2'] == "":
-                    print(f'CHECK: level_2 not taken but inserting level_3: {text[row_id]}')
+                    print(f'WARN: level_2 not taken but inserting level_3: {text[row_id]}')
                 continue
 
             # special cases
@@ -421,18 +474,10 @@ def tabulate(hansard_date):
                 current['speech'] = ""
                 current['level_3'] = text[row_id].strip()
                 continue
-            elif hansard_date == '12032019' and text[row_id].strip() == "Pada 7 Januari 2019:":
-                # treat as continuation of speech
-                current['speech'] += text[row_id]
-                continue
-            elif hansard_date in ['06062023', '12062023', '27092021', '18102018', '18102018', '05122019']:
-                # these Hansard has bunch of bolded words as first word due to some important speeches
-                # we checked them and they are all ok
-                # treat as continuation of speech
-                current['speech'] += text[row_id]
-                continue
             # unhandled case
-            print(f'WARN UNHANDLED BOLD: {text[row_id]}')
+            print(f'WARN IN-TEXT BOLD:\n{text[row_id]}{bold[row_id]}{italics[row_id]}')
+            with open("warnings/in-text-bold.txt", 'a') as f:
+                f.write(f'{hansard_date}\n{text[row_id]}{bold[row_id]}{italics[row_id]}\n')
             current['speech'] += text[row_id]
 
     speeches += insert_speech(current)
@@ -449,7 +494,7 @@ def tabulate(hansard_date):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("hansard_date", help="hansard_date eg. 23052023",
-                        default="13032023", nargs="?")
+                        default="09032022", nargs="?")
     # Parse arguments
     args = parser.parse_args()
     tabulate(args.hansard_date)

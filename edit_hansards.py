@@ -196,6 +196,213 @@ def edit_hansards():
             '9. Datuk Zakaria bin Mohd. Edris @ Tubau [Libaran] minta Menteri\n',
             '11 11111 1111111 111 11111 11111 1 11111 111111111 00000 0000000\n',
             'none')
+    replace('08032023',
+            'Mohd Rafizi bin Ramli: Itu DE asas sebanyak empat peratus untuk Kedah, tujuh\n',
+            'Tuan Mohd Rafizi bin Ramli: Itu DE asas sebanyak empat peratus untuk Kedah, tujuh\n',
+            '1111 1111 111111 111 111111 000 00 0000 00000000 00000 0000000 00000 000000 00000\n',
+            'none')
+    replace('04082022',
+            'RM500. Tuan Lim Guan Eng [Bagan]: Hanya itu cukai jualan sahaja?\n',
+            'RM500.\nTuan Lim Guan Eng [Bagan]: Hanya itu cukai jualan sahaja?\n',
+            '000000\n1111 111 1111 111 11111111 00000 000 00000 000000 0000000\n',
+            'none')
+    replace('07112019',
+            "Taun Pengerusi [Dato' Mohd Rashid Hasnon]: Ya, sila. Masa telah tamat terima\n",
+            "Tuan Pengerusi [Dato' Mohd Rashid Hasnon]: Ya, sila. Masa telah tamat terima\n",
+            '1111 111111111 111111 1111 111111 11111111 000 00000 0000 00000 00000 000000\n',
+            'none')
+    replace('21112019',
+            "Tuan Pengerusi [Dato’ Mohd Rashid Hasnon Tidak apa. Yang Berhormat\n",
+            "Tuan Pengerusi [Dato’ Mohd Rashid Hasnon]: Tidak apa. Yang Berhormat\n",
+            '1111 111111111 111111 1111 111111 11111111 00000 0000 0000 000000000\n',
+            'none')
+    replace('04072019',
+            "Tuan Yang di-Pertua; Yang Berhormat Parit Sulong, habis.\n",
+            "Tuan Yang di-Pertua: Yang Berhormat Parit Sulong, habis.\n",
+            '1111 1111 1111111111 0000 000000000 00000 0000000 000000\n',
+            'none')
+    replace('04072019',
+            "Tuan Yang di-Pertua; Yang Berhormat Kubang Kerian dulu.\n",
+            "Tuan Yang di-Pertua: Yang Berhormat Kubang Kerian dulu.\n",
+            '1111 1111 1111111111 0000 000000000 000000 000000 00000\n',
+            'none')
+    replace('29102019',
+            "Tan Sri Haji Noh bin Haji Omar [Tanjong Karang ...Kes terowong, saya hendak\n",
+            "Tan Sri Haji Noh bin Haji Omar [Tanjong Karang]: ...Kes terowong, saya hendak\n",
+            '111 111 1111 111 111 1111 1111 11111111 11111111 000000 000000000 0000 000000\n',
+            'none')
+    replace('23102019',
+            "Tuan Abdul Latiff bin Abdul Rahman [Kuala Krai Terima kasih Tuan Yang di-\n",
+            "Tuan Abdul Latiff bin Abdul Rahman [Kuala Krai]: Terima kasih Tuan Yang di-\n",
+            '1111 11111 111111 111 11111 111111 111111 111111 000000 00000 0000 0000 000\n',
+            'none')
+    replace('07122021',
+            "Tuan Pengeru’i [Dato' Mohd Rashid Hasnon]: Terima kasih Yang Berhormat\n",
+            "Tuan Pengerusi [Dato' Mohd Rashid Hasnon]: Terima kasih Yang Berhormat\n",
+            '1111 111111111 111111 1111 111111 11111111 000000 00000 0000 000000000\n',
+            'none')
+    replace('13122021',
+            "Tuan Pengrusi [Dato' Mohd Rashid Hasnon]: Baik, terima kasih Yang\n",
+            "Tuan Pengerusi [Dato' Mohd Rashid Hasnon]: Baik, terima kasih Yang\n",
+            '1111 111111111 111111 1111 111111 11111111 00000 000000 00000 0000\n',
+            'none')
+    replace('22112021',
+            "Menteri di Jabatan Perdana Menteri [Ekonomi) [Dato' Sri Mustapa bin\n",
+            "Menteri di Jabatan Perdana Menteri (Ekonomi) [Dato' Sri Mustapa bin\n",
+            '1111111 11 1111111 1111111 1111111 111111111 111111 111 1111111 111\n',
+            'none')
+    replace('22112021',
+            "Menteri di Jabatan Perdana Menteri (Hal Ehwal Agama) (Tuan Haji Idris bin\n",
+            "Menteri di Jabatan Perdana Menteri (Hal Ehwal Agama) [Tuan Haji Idris bin\n",
+            '1111111 11 1111111 1111111 1111111 1111 11111 111111 11111 1111 11111 111\n',
+            'none')
+    replace('22112021',
+            "Haji Ahmad): Assalamualaikum warahmatullahi wabarakatuh dan selamat petang...\n",
+            "Haji Ahmad]: Assalamualaikum warahmatullahi wabarakatuh dan selamat petang...\n",
+            '1111 1111111 000000000000000 00000000000000 00000000000 000 0000000 000000000\n',
+            '0000 0000000 111111111111111 11111111111111 11111111111 000 0000000 000000000\n')
+    replace('08112021',
+            "Tuan Yang di-Pertua; Terima kasih. Yang Berhormat Bintulu.\n",
+            "Tuan Yang di-Pertua: Terima kasih. Yang Berhormat Bintulu.\n",
+            '1111 1111 1111111111 000000 000000 0000 000000000 00000000\n',
+            'none')
+    replace('08112021',
+            "Tuan Yang di-Pertua; Terima kasih. Yang Berhormat Bintulu.\n",
+            "Tuan Yang di-Pertua: Terima kasih. Yang Berhormat Bintulu.\n",
+            '1111 1111 1111111111 000000 000000 0000 000000000 00000000\n',
+            'none')
+    replace('16102018',
+            "[Puan Zuraida binti Kamaruddin: Insya-Allah. Insya-Allah. Because a...\n",
+            "Puan Zuraida binti Kamaruddin: Insya-Allah. Insya-Allah. Because a...\n",
+            '1111 1111111 11111 11111111111 000000000000 000000000000 0000000 0000\n',
+            '0000 0000000 00000 00000000000 111111111111 111111111111 1111111 1111\n')
+    replace('26072018',
+            "Tuan Yang di-Pertua; Tidak bagi peluang?\n",
+            "Tuan Yang di-Pertua: Tidak bagi peluang?\n",
+            '1111 1111 1111111111 00000 0000 00000000\n',
+            'none')
+    replace('22072020',
+            "Puan Teresa Kok [Puan Teresa Kok [Seputeh]: Yang Berhormat Arau mahu\n",
+            "Puan Teresa Kok [Seputeh]: Yang Berhormat Arau mahu\n",
+            '1111 111111 111 1111111111 0000 000000000 0000 0000\n',
+            'none')
+    replace('08122020',
+            "Tuan Yang di-Pertua; Terima kasih Yang Berhormat. Yang Berhormat-Yang\n",
+            "Tuan Yang di-Pertua: Terima kasih Yang Berhormat. Yang Berhormat-Yang\n",
+            '1111 1111 1111111111 000000 00000 0000 0000000000 0000 00000000000000\n',
+            'none')
+    replace('25082020',
+            "Menteri di Jabatan Perdana Menteri (Parlimen dan Undang-undang) Dato’\n",
+            "Menteri di Jabatan Perdana Menteri (Parlimen dan Undang-undang) [Dato’\n",
+            '1111111 11 1111111 1111111 1111111 111111111 111 11111111111111 111111\n',
+            'none')
+    replace('16072019',
+            "Tan Sri Datuk Seri Panglima Haji Annuar bin Haji Musa[ [Ketereh]: Apakah ini\n",
+            "Tan Sri Datuk Seri Panglima Haji Annuar bin Haji Musa [Ketereh]: Apakah ini\n",
+            '111 111 11111 1111 11111111 1111 111111 111 1111 1111 1111111111 000000 000\n',
+            'none')
+    replace('09072019',
+            "Tan Sri Datuk Seri Panglima Haji Annuar bin Haji Musa[ [Ketereh]: Terima kasih\n",
+            "Tan Sri Datuk Seri Panglima Haji Annuar bin Haji Musa [Ketereh]: Terima kasih\n",
+            '111 111 11111 1111 11111111 1111 111111 111 1111 1111 1111111111 000000 00000\n',
+            'none')
+    replace('09072019',
+            "Dato' Haji Salahuddin bin Ayub; Yang Berhormat Setiawangsa dan Yang\n",
+            "Dato' Haji Salahuddin bin Ayub: Yang Berhormat Setiawangsa dan Yang\n",
+            '11111 1111 1111111111 111 11110 0000 000000000 00000000000 000 0000\n',
+            'none')
+    replace('26032019',
+            "tidak? Tuan Khalid bin Abd Samad: Itu kurang bijak lah kalau guna macam itu.\n",
+            "tidak?\nTuan Khalid bin Abd Samad: Itu kurang bijak lah kalau guna macam itu.\n",
+            '000000\n1111 111111 111 111 111111 000 000000 00000 000 00000 0000 00000 0000\n',
+            '000000\n0000 000000 000 000 000000 000 000000 00000 000 00000 0000 00000 0000\n')
+    replace('18072019',
+            "Tuan Yang di-Pertua Yang Berhormat Arau, Yang Berhormat Arau sudah lebih\n",
+            "Tuan Yang di-Pertua: Yang Berhormat Arau, Yang Berhormat Arau sudah lebih\n",
+            '1111 1111 1111111111 0000 000000000 00000 0000 000000000 0000 00000 00000\n',
+            'none')
+    # Yang di-Pertua wasn't italicised
+    replace('11102019',
+            "[Tuan Yang di-Pertua mempengerusikan Mesyuarat]\n",
+            "[Tuan Yang di-Pertua mempengerusikan Mesyuarat]\n",
+            '00000 0000 000000000 111111111111111 1111111110\n',
+            '11111 1111 111111111 111111111111111 1111111111\n')
+
+    replace('28032019',
+            "Tuan Yang di-Pertua; Yang Berhormat Kubang Kerian dulu.\n",
+            "Tuan Yang di-Pertua: Yang Berhormat Kubang Kerian dulu.\n",
+            '1111 1111 1111111111 0000 000000000 000000 000000 00000\n',
+            'none')
+    replace('16102019',
+            "[ Timbalan Yang di-Pertua (Tuan Nga Kor Ming) mempengerusikan Mesyuarat]\n",
+            "[Timbalan Yang di-Pertua (Tuan Nga Kor Ming) mempengerusikan Mesyuarat]\n",
+            '000000000 0000 000000000 00000 000 000 00000 111111111111111 1111111110\n',
+            'all')
+    replace('31102019',
+            "Datuk Seri Dr. Haji Dzulkefly bin Ahmad] Dalam hal perkara vape ya. Vape\n",
+            "Datuk Seri Dr. Haji Dzulkefly bin Ahmad]: Dalam hal perkara vape ya. Vape\n",
+            '11111 1111 111 1111 111111111 111 1111111 00000 000 0000000 0000 000 0000\n',
+            '00000 0000 000 0000 000000000 000 0000000 00000 000 0000000 1111 000 1111\n')
+    replace('03122019',
+            "[Dato’ Seri Dr. Shahidan bin Kassim [Arau]: No, Yang Berhormat Pasir Salak tarik\n",
+            "Dato’ Seri Dr. Shahidan bin Kassim [Arau]: No, Yang Berhormat Pasir Salak tarik\n",
+            '11111 1111 111 11111111 111 111111 1111111 000 0000 000000000 00000 00000 00000\n',
+            '00000 0000 000 00000000 000 000000 0000000 110 0000 000000000 00000 00000 00000\n')
+    replace('06082018',
+            "Tuan Yang di-Pertua; Saya ingat Yang Berhormat Menteri sudah pun menjawab\n",
+            "Tuan Yang di-Pertua: Saya ingat Yang Berhormat Menteri sudah pun menjawab\n",
+            '1111 1111 1111111111 0000 00000 0000 000000000 0000000 00000 000 00000000\n',
+            'none')
+    replace('23072018',
+            "Timbalan Menteri Pendidikan [Puan Teo Nie Ching [Kulai]: Tuan Yang di-Pertua,\n",
+            "Timbalan Menteri Pendidikan [Puan Teo Nie Ching [Kulai]]: Tuan Yang di-Pertua,\n",
+            '11111111 1111111 1111111111 11111 111 111 11111 111111111 0000 0000 0000000000\n',
+            'none')
+    replace('12112018',
+            "Tuan Waytha Moorthy a/l Ponnusamy Terima kasih Yang Berhormat. Mengenai\n",
+            "Tuan Waytha Moorthy a/l Ponnusamy: Terima kasih Yang Berhormat. Mengenai\n",
+            '1111 111111 1111111 111 1111111111 000000 00000 0000 0000000000 00000000\n',
+            'none')
+    replace('21112018',
+            "Tuan Baru Bian Saya akan menjawab secara bertulis, Tuan Yang di-Pertua. Yang\n",
+            "Tuan Baru Bian: Saya akan menjawab secara bertulis, Tuan Yang di-Pertua. Yang\n",
+            '1111 1111 11111 0000 0000 00000000 000000 000000000 0000 0000 0000000000 0000\n',
+            'none')
+    replace('08082018',
+            "Tuan Yang di-Pertua Yang Berhormat Johor Bahru, silakan.\n",
+            "Tuan Yang di-Pertua: Yang Berhormat Johor Bahru, silakan.\n",
+            '1111 1111 1111111111 0000 000000000 00000 000000 00000000\n',
+            'none')
+    replace('02032022',
+            "Timbalan Yang di-Pertua [Dato' Mohd Rashid Hasnon]: Timbalan Yang di-\n",
+            "Timbalan Yang di-",
+            '11111111 1111 111',
+            'none')
+    replace('26082020',
+            "[Timbalan Yang di-Pertua (Dato’ Sri Azalina Othman Said]) mempengerusikan\n",
+            "[Timbalan Yang di-Pertua (Dato’ Sri Azalina Othman Said) mempengerusikan\n",
+            '000000000 0000 000000000 000000 000 0000000 000000 00000 111111111111111\n',
+            'all')
+    replace('12032018',
+            "[Timbalan Yang di-Pertua (Dato’ Sri Haji Ismail bin Haji Mohamed Said])\n",
+            "[Timbalan Yang di-Pertua (Dato’ Sri Haji Ismail bin Haji Mohamed Said)\n",
+            '000000000 0000 000000000 000000 000 0000 000000 000 0000 0000000 00000\n',
+            'all')
+    replace('31072018',
+            "Dato’ Seri Dr. Wan Azizah Wan Ismail] Terima kasih Yang Berhormat Permatang\n",
+            "Dato’ Seri Dr. Wan Azizah Wan Ismail: Terima kasih Yang Berhormat Permatang\n",
+            '11111 1111 111 111 111111 111 1111111 000000 00000 0000 000000000 000000000\n',
+            'none')
+    replace('31072018',
+            "Zuraida binti Kamaruddin: Terima kasih, Yang Berhormat Bukit Bendera. Di antara\n",
+            "Puan Zuraida binti Kamaruddin: Terima kasih, Yang Berhormat Bukit Bendera. Di antara\n",
+            '1111 1111111 11111 11111111111 000000 000000 0000 000000000 00000 00000000 00 000000\n',
+            'none')
+    replace('01112018',
+            "Teresa Kok Suh Sim: Kalau Yang Berhormat hendak jemput saya ataupun...\n",
+            "Puan Teresa Kok Suh Sim: Kalau Yang Berhormat hendak jemput saya ataupun...\n",
+            '1111 111111 111 111 1111 00000 0000 000000000 000000 000000 0000 0000000000\n',
+            'none')
 
 
 if __name__ == "__main__":

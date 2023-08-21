@@ -65,7 +65,7 @@ Run `tabulate_hansards.py` to tabulate the hansards into a CSV file.'
 - We only parse an annotation as its own without an author when it does not have any bold. This is because sometimes [Bangun] goes on a new line just because the author name is long e.g. 27032018 pg 29
 - Sometimes Tepuk can be missing a [ e.g. Tepuk] at 18052020.
 
-# Common in-text annotations
+# Common annotations
 - _Tepuk_
 - _Ketawa_
 - _Dewan ketawa_
