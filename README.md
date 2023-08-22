@@ -60,13 +60,21 @@ Run `tabulate_hansards.py` to tabulate the hansards into a CSV file with the fol
 - 12.11.2019 displays as 12.11.201
 - We decide to remove them in pretabulation as it can jut between important chunks as in DR. 22.5.2023 page 108.
 
+## On markdown
+- The text inside `speech` is formatted as markdown using `*` to wrap italics and `*` to wrap bolds. `***` is for both italics and bolds.
+- There are 7 files with natural occurences of `*`. 22102019, 24112020, 30112020, 15122020, 08112021, 09122021, 13032023. We escape them with `\*`.
 
-## Common annotations
-- _[Tepuk]_
-- _[Ketawa]_
-- _[Dewan ketawa]_
-- _[Dewan riuh]_
-- _[Pembesar suara dimatikan]_
+## On annotations
+- Annotations are usually italicised and wrapped with square brackets [ ].
+- Some occur in-text and some occur on a newline.
+- We parse them as a new row under the "author" `ANNOTATION`.
+- We do not style annotations
+- Common annotations include
+  - _[Tepuk]_
+  - _[Ketawa]_
+  - _[Dewan ketawa]_
+  - _[Dewan riuh]_
+  - _[Pembesar suara dimatikan]_
 
 ## On debugging tables
 - Start jupyter notebook and use `debug_tables.ipynb`. Many real examples are there that culminates in the current way of detecting tables.
@@ -77,6 +85,7 @@ Run `tabulate_hansards.py` to tabulate the hansards into a CSV file with the fol
 | 7 | 8 | 9 |
 ```
 Due to the diversity of tables we do not style the header rows. All formatting inside the table (particularly bold) will be removed.
+- We operate on the assumption that there is no natural occurence of pipes | in the Hansard, which so far holds true.
 
 ## On timestamps
 There are two formats for timestamps
@@ -98,4 +107,4 @@ To minimize edits to the Hansard that is not related to formatting and punctuati
 ## Cautionary notes
 - Be careful when berbelah bahagi shows up. Some Hansards present it differently than others. Usually, it will have the keywords "hadir", "bersetuju", or "undi", and are usually bolded and lowercased, except for 17072019 where it is uppercased and hence parsed as a level_2.
 - 26102021, 05102021, 08122020 have low table matching scores, but they are still a perfect match and you can ignore those errors.
-- 30112020, 29072021, 23032022 have footnotes. Due to its complicated nature, you will have to manually edit this into the end product.
+- 30112020, 29072021, 23032022 have footnotes (not guaranteed to be exhaustive). Due to its complicated nature, you will have to manually edit this into the end product.

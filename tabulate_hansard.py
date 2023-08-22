@@ -88,110 +88,126 @@ def category_probability(text, categories):
     return match_score / 100
 
 
-def get_author_and_speech(text, warn=''):
+def get_author_and_speech(text, bold, italics, warn=''):
     author = ''
     speech = ''
+    speech_bold = ''
+    speech_italics = ''
     subtopic = ''
-    if re.search(r'^(Tuan )?Yang di-Pertua[\[\]A-Za-z `.’\'@/(\-),]*:', text):
-        # Speaker of the House
-        author, speech = text.split(':', maxsplit=1)
-    elif re.search(r'^Timbalan(an)? (Tuan )?Yang [dD]i- ?Pertua[\[\]A-Za-z `.’\'@/(\-),]*:', text):
-        # Deputy Speaker of the House
-        author, speech = text.split(':', maxsplit=1)
-    elif re.search(r'^Setiausaha[\[\]A-Za-z `.’\'@/(\-),]*:', text):
-        # Secretary of the House
-        author, speech = text.split(':', maxsplit=1)
-    elif re.search(
-            r'^(Yang Berhormat )?(Timbalan )?[Mm]enteri [A-Za-z,()\-& ]+(\[Ekonomi] )?\[[A-Za-z `.’\'@/(\-)\[\]]+] ?:',
-            text):
-        # Minister or Deputy Minister
-        # allows () at the name part as they can have constituencies too
+    if re.search(r'^(Tuan )?Yang di-Pertua[\[\]A-Za-z `.’\'@/(\-),]*:', text) or \
+            re.search(r'^Timbalan(an)? (Tuan )?Yang [dD]i- ?Pertua[\[\]A-Za-z `.’\'@/(\-),]*:', text) or \
+            re.search(r'^Setiausaha[\[\]A-Za-z `.’\'@/(\-),]*:', text) or \
+            re.search(r'^(Yang Berhormat )?(Timbalan )?[Mm]enteri [A-Za-z,()\-& ]+(\[Ekonomi] )'
+                      r'?\[[A-Za-z `.’\'@/(\-)\[\]]+] ?:',
+                      text) or \
+            re.search(r'^(Timbalan )?(Tuan )?Pengerusi (Timbalan Yang di-Pertua )?\[[A-Za-z `.’\'@/(\-)]*]:', text) or \
+            re.search(
+                r'^((Tuan)|(Datuk)|(Dato)|(Tan Sri)|(Puan)|(Dr\.)|(YM)|(Ustaz)|(Tun)|(Kapten)|(Haji)|(Ir\.)|(Datu)|(Cik)|'
+                r'(Laksamana)|(Mejar)|(Komander)|(Seri Paduka)|(Tengku)|(Hajah)|(Raja)|(Brig)|(Datin)|(Prof\.) )'
+                r'[A-Za-z `.’\'@/\-()]+:',
+                text) or \
+            re.search(
+                r'^(Yang Berhormat )?'
+                r'((Tuan)|(Datuk)|(Dato)|(Tan Sri)|(Puan)|(Dr\.)|(YM)|(Ustaz)|(Tun)|(Kapten)|(Haji)|(Ir\.)|(Datu)|(Cik)|'
+                r'(Laksamana)|(Mejar)|(Komander)|(Seri Paduka)|(Tengku)|(Hajah)|(Raja)|(Brig)|(Datin)|(Prof\.) )'
+                r'[A-Za-z `.’\'@/(),\-]+\[[A-Za-z \-–]+][ -]?:', text) or \
+            re.search(
+                r'^(Seorang Ahli ?:)|(Seorang ahli:)|(Seoarang ahli:)|(Seseorang Ahli:)|(seorang Ahli:)|'
+                r'(Seorang Ahli Yang Berhormat:)|(Seorang Ahli Berucap)|(\[Seorang Ahli]:)|(Sorang Ahli:)|(Seorang Ali:)|'
+                r'(Beberapa Ahli:)|(Beberapa orang Ahli:)|(Beberapa ahli:)|'
+                r'(Beberapa Ahli Pembangkang:)|(Ahli-ahli:)|(Beberapa Orang Ahli:)|(Beberapa Ali:)', text):
+        # 3. allows () at the name part as they can have constituencies too
         # , is for Menteri Pembangunan Wanita, Keluarga dan Masyarakat
-        # () is for Menteri di Jabatan Perdana Menteri (Parlimen dan Undang-Undang)
-        # - is for Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan
-        # Reformasi Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh]: Tuan Yang di-
-        # [] is for Menteri Sumber Manusia [Tuan M. Kulasegaran [Ipoh Barat]]: Cukup Tuan Yang
-        # Timbalan Menteri Pendidikan [Puan Teo Nie Ching [Kulai]]: Tuan Yang di-Pertua,
-        author, speech = text.split(':', maxsplit=1)
+        # () and - is for Menteri di Jabatan Perdana Menteri (Parlimen dan Undang-Undang)
+        # [] is for Menteri Sumber Manusia [Tuan M. Kulasegaran [Ipoh Barat]]
+        # Timbalan Menteri Pendidikan [Puan Teo Nie Ching [Kulai]]
+
+        # 4. Tuan Pengerusi Timbalan Yang di-Pertua [Tuan Nga Kor Ming]: Tidak apa, tidak
+
+        # 5. continuation of Menteri or Timbalan Menteri using name only, example
+        # Timbalan Menteri di Jabatan Perdana Menteri [Datuk Wira Dr. Md Farid bin Md Rafik]:
+        # Datuk Wira Dr. Md Farid bin Md Rafik:
+
+        # 6. possible MP
+        split_idx = text.find(':')
+        author = text[:split_idx]
+        speech = text[split_idx + 1:]
+        speech_bold = bold[split_idx + 1:]
+        speech_italics = italics[split_idx + 1:]
     elif re.search(r'^((Timbalan )|(Yang Amat Berhormat ))?Perdana [A-Za-z, ]+\[[A-Za-z `.’\'@/(\-)]+]:', text):
         # Prime Minister or Deputy Primer Minister
         # allows () as they can have constituencies too
-        author, speech = text.split(']:', maxsplit=1)
-        author += ']'
-    elif re.search(r'^(Timbalan )?(Tuan )?Pengerusi (Timbalan Yang di-Pertua )?\[[A-Za-z `.’\'@/(\-)]*]:', text):
-        # Chairman of Jawatankuasa
-        # Tuan Pengerusi Timbalan Yang di-Pertua [Tuan Nga Kor Ming]: Tidak apa, tidak
-        # allows () as they can have constituencies too
-        author, speech = text.split(':', maxsplit=1)
+        split_idx = text.find(']:')
+        author = text[:split_idx + 1]
+        speech = text[split_idx + 2:]
+        speech_bold = bold[split_idx + 2:]
+        speech_italics = italics[split_idx + 2:]
     elif re.search(r'^\d{1,2}\.? [A-Za-z `.’\'@\/\-()]+\[[A-Za-z \-]+]:? *[Mm](em)?inta', text):
         # JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN
         # 1. Tuan Tan Kok Wai [Cheras] minta Menteri Pembangunan Usahawan menyatakan,
-        author, speech = text.split('inta', maxsplit=1)
-        author = author[:-1]
+        split_idx = text.find('minta')
+        if split_idx == -1:
+            split_idx = text.find('Minta')
+        author = text[:split_idx].strip()
         if author.endswith(':'):
             author = author[:-1]
-        speech = 'minta ' + speech
+        speech = text[split_idx:]
+        speech_bold = bold[split_idx:]
+        speech_italics = italics[split_idx:]
+        # get the numbering
         subtopic, author = author.split(' ', maxsplit=1)
-    elif re.search(
-            r'^((Tuan)|(Datuk)|(Dato)|(Tan Sri)|(Puan)|(Dr\.)|(YM)|(Ustaz)|(Tun)|(Kapten)|(Haji)|(Ir\.)|(Datu)|(Cik)|'
-            r'(Laksamana)|(Mejar)|(Komander)|(Seri Paduka)|(Tengku)|(Hajah)|(Raja)|(Brig)|(Datin)|(Prof\.) )'
-            r'[A-Za-z `.’\'@/\-()]+:',
-            text):
-        # continuation of Menteri or Timbalan Menteri, example
-        # Timbalan Menteri di Jabatan Perdana Menteri [Datuk Wira Dr. Md Farid bin Md
-        # Rafik]: Bismillahir Rahmanir Rahim.
-        #  Datuk Wira Dr. Md Farid bin Md Rafik:  Bismillahir Rahmanir Rahim.
-        # YM Tengku Dato’ Sri Zafrul Tengku Abdul Aziz: Okey, saya jawab twin deficit
-        # Datuk Dr. Haji Zulkifli Mohamad Al-Bakri: ...Saya hendak minta maaf banyak-
-        author, speech = text.split(':', maxsplit=1)
-    elif re.search(
-            r'^(Yang Berhormat )?'
-            r'((Tuan)|(Datuk)|(Dato)|(Tan Sri)|(Puan)|(Dr\.)|(YM)|(Ustaz)|(Tun)|(Kapten)|(Haji)|(Ir\.)|(Datu)|(Cik)|'
-            r'(Laksamana)|(Mejar)|(Komander)|(Seri Paduka)|(Tengku)|(Hajah)|(Raja)|(Brig)|(Datin)|(Prof\.) )'
-            r'[A-Za-z `.’\'@/(),\-]+\[[A-Za-z \-–]+][ -]?:', text):
-        # possible MP
-        author, speech = text.split(':', maxsplit=1)
-    elif re.search(
-            r'^(Seorang Ahli ?:)|(Seorang ahli:)|(Seoarang ahli:)|(Seseorang Ahli:)|(seorang Ahli:)|'
-            r'(Seorang Ahli Yang Berhormat:)|(Seorang Ahli Berucap)|(\[Seorang Ahli]:)|(Sorang Ahli:)|(Seorang Ali:)|'
-            r'(Beberapa Ahli:)|(Beberapa orang Ahli:)|(Beberapa ahli:)|'
-            r'(Beberapa Ahli Pembangkang:)|(Ahli-ahli:)|(Beberapa Orang Ahli:)|(Beberapa Ali:)', text):
-        # Beberapa orang Ahli is for 09082018
-        author, speech = text.split(':', maxsplit=1)
     elif text.startswith('Setiausaha:'):
         # Speaker of the House
-        speech = text.split(':', maxsplit=1)[1]
-        author = 'Setiausaha'
+        print("this happens")
+        split_idx = text.find(':')
+        author = text[:split_idx]
+        speech = text[split_idx + 1:]
+        speech_bold = bold[split_idx + 1:]
+        speech_italics = italics[split_idx + 1:]
     elif not warn and re.search(r'] ?:', text) and '[' not in text.split(':', maxsplit=1)[0]:
         # some of the unparsed authors are due to an extra ]
         # this must be double-checked since it could be that it is a missing [ instead of extra ]
-        author, speech, subtopic = get_author_and_speech(re.sub(r'] ?:', ':', text, 1), warn=text)
+        edit_idx = re.search(r'] ?:', text).start()
+        edit_text = text[:edit_idx] + text[edit_idx + 1:]
+        edit_bold = bold[:edit_idx] + bold[edit_idx + 1:]
+        edit_italics = italics[:edit_idx] + italics[edit_idx + 1:]
+        author, speech, speech_bold, speech_italics, subtopic = get_author_and_speech(edit_text, edit_bold,
+                                                                                      edit_italics,
+                                                                                      warn=text)
     elif not warn and ':' in text and '[' in text and ']:' not in text.replace(' ', '') and \
             text.count('[') == text.count(']') + 1:
         # some of the unparsed authors are due to a missing ]
-        author, speech, subtopic = get_author_and_speech(text.replace(':', ']:', 1), warn=text)
+        edit_idx = re.search(r':', text).start()
+        edit_text = text[:edit_idx] + ']' + text[edit_idx:]
+        edit_bold = bold[:edit_idx] + '1' + bold[edit_idx:]
+        edit_italics = italics[:edit_idx] + '0' + italics[edit_idx:]
+        author, speech, speech_bold, speech_italics, subtopic = get_author_and_speech(edit_text, edit_bold,
+                                                                                      edit_italics, warn=text)
     elif text == "10. Datuk Wira Haji Mohd. Anuar Mohd. Tahir [Temerloh] Datuk Wira Haji Mohd.\n":
         # special case where "minta" is not said in a numbered question
         # put here before the next elif that will be activated
         author = 'Datuk Wira Haji Mohd. Anuar Mohd. Tahir [Temerloh]'
         speech = 'Datuk Wira Haji Mohd.\n'
+        speech_bold = "00000 0000 0000 00000\n"
+        speech_italics = "00000 0000 0000 00000\n"
         subtopic = "10."
     elif text == "9. Datuk Dr. Ewon Ebin [Ranau] Menteri Kemajuan Luar Bandar dan Wilayah\n":
         # special case where "minta" is not said in a numbered question
         author = 'Datuk Dr. Ewon Ebin [Ranau]'
         speech = 'Menteri Kemajuan Luar Bandar dan Wilayah\n'
+        speech_bold = "0000000 00000000 0000 000000 000 0000000\n"
+        speech_italics = "0000000 00000000 0000 000000 000 0000000\n"
         subtopic = "9."
-    elif 'Menteri di Jabatan Perdana Menteri, Dato’ Sri Azalina Dato’ Othman Said ' \
-         '[Pengerang]: Terima kasih Tuan Pengerusi. Yang Berhormat Kulai, rang undang-undang ini\n' == text:
-        # special case where , is used
-        author = 'Menteri di Jabatan Perdana Menteri, Dato’ Sri Azalina Dato’ Othman Said [Pengerang]'
-        speech = 'Terima kasih Tuan Pengerusi. Yang Berhormat Kulai, rang undang-undang ini\n'
     elif not warn and ']' in text and not text.endswith(']') and \
             not text.rsplit(']', maxsplit=1)[1].strip().startswith(':') and \
             text.count('[') == text.count(']'):
         # some of the unparsed authors are due to a missing colon :
-        edited_text = ']:'.join(text.rsplit(']', 1))
-        author, speech, subtopic = get_author_and_speech(edited_text, warn=text)
+        edit_idx = text.rfind(']')
+        edit_text = text[:edit_idx + 1] + ':' + text[edit_idx + 1:]
+        edit_bold = bold[:edit_idx + 1] + '1' + bold[edit_idx + 1:]
+        edit_italics = italics[:edit_idx + 1] + '0' + italics[edit_idx + 1:]
+        author, speech, speech_bold, speech_italics, subtopic = get_author_and_speech(edit_text, edit_bold,
+                                                                                      edit_italics, warn=text)
     elif re.search(r'^((Abdul Azeez bin Abdul Rahim \[Baling]:)|'
                    r"(Ramli bin Dato' Mohd Nor \[Cameron Highlands]:)|"
                    r"(Ahmad Amzad bin Mohamed @ Hashim \[Kuala Terengganu]:)|"
@@ -206,18 +222,66 @@ def get_author_and_speech(text, warn=''):
         # special cases, the Dewan Rakyat did not give them salutatory titles
         # to minimize word edits, we will just treat them as special cases in the parser
         # instead of using edit_hansards.py
-        author, speech = text.split(':', maxsplit=1)
+        split_idx = text.find(':')
+        author = text[:split_idx]
+        speech = text[split_idx + 1:]
+        speech_bold = bold[split_idx + 1:]
+        speech_italics = italics[split_idx + 1:]
     if author != '' and warn != '':
         with open('warnings/autocorrected_authors.txt', 'a') as f:
             f.write(warn + '\n')
-    return author, speech, subtopic
+    return author, speech, speech_bold, speech_italics, subtopic
 
 
 def insert_speech(current):
     if current['speech'] == '':
         return []
     return [[current['level_1'], current['level_2'], current['level_3'],
-             current['timestamp'], current['author'], current['speech']]]
+             current['timestamp'], current['author'], current['speech'], current['speech_bold'],
+             current['speech_italics']]]
+
+
+def markdownify(text, is_bold, is_italics):
+    text = text.replace('*', '\*')
+    suffix = ''
+    while len(text) > 0 and re.search(r'\s', text[-1]):
+        suffix = text[-1]
+        text = text[:-1]
+    if is_bold:
+        text = f"**{text}**"
+    if is_italics:
+        text = f"*{text}*"
+    return text + suffix
+
+
+def add_formatting(text, bold, italics):
+    assert len(text.replace(' ', '')) == len(bold.replace(' ', '')) == len(
+        italics.replace(' ', '')), \
+        f"Without spaces, text ({text.replace(' ', '')}), " \
+        f"bold ({bold.replace(' ', '')}), " \
+        f"and italics ({italics.replace(' ', '')}) must be of the same length"
+    # begin by separating words into chunks of homogenous formatting
+    if len(text) == 0:
+        return ''
+    assert re.search(r'\S', text[0]), f"First character of text is not a non-whitespace character: {text}"
+    assert re.search(r'\S', bold[0]), f"First character of bold is not a non-whitespace character: {text}"
+    assert re.search(r'\S', italics[0]), f"First character of italics is not a non-whitespace character: {text}"
+    current_text = text[0]
+    current_bold = bold[0]
+    current_italics = italics[0]
+    result = ''
+    for i in range(1, len(text)):
+        if (bold[i] in ['0', '1'] and bold[i] != current_bold) or \
+                (italics[i] in ['0', '1'] and italics[i] != current_italics):
+            result += markdownify(current_text, current_bold == '1', current_italics == '1')
+            current_text = text[i]
+            current_bold = bold[i]
+            current_italics = italics[i]
+        else:
+            current_text += text[i]
+    if current_text != '':
+        result += markdownify(current_text, current_bold == '1', current_italics == '1')
+    return result
 
 
 def put_annotations_on_new_line(text, bold, italics):
@@ -295,6 +359,8 @@ def tabulate(hansard_date):
     blank_speech = {
         "author": '',
         "speech": '',
+        "speech_bold": '',
+        "speech_italics": '',
         "timestamp": '',
         "level_1": '',
         "level_2": '',
@@ -326,11 +392,16 @@ def tabulate(hansard_date):
             speeches += insert_speech(current)
             old_author = current['author']
             current['speech'] = text[row_id]
+            current['speech_bold'] = bold[row_id]
+            current['speech_italics'] = italics[row_id]
             current['author'] = "ANNOTATION"
             add_idx = 1
             num_unclosed_brackets = text[row_id].count('[') - text[row_id].count(']')
+            # keep on looping until we tally up the correct number of brackets
             while add_idx + row_id < num_rows and num_unclosed_brackets > 0:
                 current['speech'] += text[row_id + add_idx]
+                current['speech_bold'] += bold[row_id + add_idx]
+                current['speech_italics'] += italics[row_id + add_idx]
                 num_unclosed_brackets += text[row_id + add_idx].count('[') - text[row_id + add_idx].count(']')
                 if text[row_id + add_idx].startswith('[Dewan ditangguhkan') or \
                         text[row_id + add_idx].startswith('[Mesyuarat ditangguhkan'):
@@ -340,12 +411,16 @@ def tabulate(hansard_date):
             speeches += insert_speech(current)
             current['author'] = old_author
             current['speech'] = ''
+            current['speech_bold'] = ''
+            current['speech_italics'] = ''
             continue
         # now check if it is author or title etc
         if '1' not in bold[row_id]:
             # if there is no bold in a line
             # then most likely it is a continuation of speech
             current['speech'] += text[row_id]
+            current['speech_bold'] += bold[row_id]
+            current['speech_italics'] += italics[row_id]
             continue
         else:
             if text[row_id].strip().lower() == "lampiran":
@@ -359,15 +434,20 @@ def tabulate(hansard_date):
                 # timestamp
                 speeches += insert_speech(current)
                 current['speech'] = ''
+                current['speech_bold'] = ''
+                current['speech_italics'] = ''
                 current['timestamp'] = text[row_id].strip()
                 continue
 
-            author, speech, subtopic = get_author_and_speech(text[row_id])
+            author, speech, speech_bold, speech_italics, subtopic = get_author_and_speech(
+                text[row_id], bold[row_id], italics[row_id])
             if author != '':
                 speeches += insert_speech(current)
                 current['author'] = author
                 assert speech[-1] == '\n', f"Speech does not end with newline: {speech}"
                 current['speech'] = speech
+                current['speech_bold'] = speech_bold
+                current['speech_italics'] = speech_italics
                 if subtopic:
                     current['level_2'] = subtopic
                     current['level_3'] = ""
@@ -378,11 +458,16 @@ def tabulate(hansard_date):
             if row_id + 1 < num_rows and \
                     not (text[row_id + 1].startswith('[') and italics[row_id + 1][1] == '1'):
                 concat_rows = f'{text[row_id].strip()} {text[row_id + 1]}'
-                author, speech, subtopic = get_author_and_speech(concat_rows)
+                concat_rows_bold = f'{bold[row_id].strip()} {bold[row_id + 1]}'
+                concat_rows_italics = f'{italics[row_id].strip()} {italics[row_id + 1]}'
+                author, speech, speech_bold, speech_italics, subtopic = get_author_and_speech(
+                    concat_rows, concat_rows_bold, concat_rows_italics)
                 if author != '':
                     speeches += insert_speech(current)
                     current['author'] = author
                     current['speech'] = speech
+                    current['speech_bold'] = speech_bold
+                    current['speech_italics'] = speech_italics
                     if subtopic:
                         current['level_2'] = subtopic
                         current['level_3'] = ""
@@ -392,11 +477,12 @@ def tabulate(hansard_date):
 
             if bold[row_id].count('1') < 4:
                 # most likely it is just a stray bold
-                stray_bold = text[row_id]
                 num_bold = bold[row_id].count('1')
-                current['speech'] += stray_bold
+                current['speech'] += text[row_id]
+                current['speech_bold'] += bold[row_id]
+                current['speech_italics'] += italics[row_id]
                 with open("warnings/stray_bolds.txt", 'a') as f:
-                    f.write(f'{hansard_date} with num bold: {num_bold}\n{stray_bold}{bold[row_id]}\n')
+                    f.write(f'{hansard_date} with num bold: {num_bold}\n{text[row_id]}{bold[row_id]}\n')
                 continue
 
             if current['author'] == "" and current['speech'] == '' and current['level_1'] != '':
@@ -408,7 +494,8 @@ def tabulate(hansard_date):
                 while row_id + add_idx < num_rows and \
                         prop_of_1_among_binary(bold[row_id + add_idx]) > 0.8 and \
                         not is_timestamp(text[row_id + add_idx]) and \
-                        not get_author_and_speech(text[row_id + add_idx])[0] and \
+                        not get_author_and_speech(text[row_id + add_idx], bold[row_id + add_idx],
+                                                  italics[row_id + add_idx])[0] and \
                         not (text[row_id + add_idx].startswith('[') and italics[row_id + add_idx][1] == '1'):
                     current['level_2'] += text[row_id + add_idx]
                     add_idx += 1
@@ -421,6 +508,8 @@ def tabulate(hansard_date):
                 # categories shouldn't have mixed unbolds
                 # treat them as stray bolds
                 current['speech'] += text[row_id]
+                current['speech_bold'] += bold[row_id]
+                current['speech_italics'] += italics[row_id]
                 with open("warnings/mixed_bolds.txt", 'a') as f:
                     f.write(f'{hansard_date}\n{text[row_id]}{bold[row_id]}\n')
                 continue
@@ -443,6 +532,8 @@ def tabulate(hansard_date):
                     current['level_2'] = ""
                     current['level_3'] = ""
                     current['speech'] = ""
+                    current['speech_bold'] = ""
+                    current['speech_italics'] = ""
                     continue
                 # keep elongating the category scope and try fuzzy matching until the category score goes down
                 add_idx = 1
@@ -461,6 +552,8 @@ def tabulate(hansard_date):
                     current['level_2'] = ""
                     current['level_3'] = ""
                     current['speech'] = ""
+                    current['speech_bold'] = ""
+                    current['speech_italics'] = ""
                     row_id += add_idx - 1
                     with open("warnings/matched_categories.csv", 'a') as f:
                         f.write(f'{hansard_date},{current_category},{current_category_probability}\n')
@@ -469,19 +562,26 @@ def tabulate(hansard_date):
                 speeches += insert_speech(current)
                 current['author'] = ""
                 current['speech'] = ""
+                current['speech_bold'] = ""
+                current['speech_italics'] = ""
                 current['level_3'] = ""
                 add_idx = 1
                 current['level_2'] = text[row_id]
                 # allow empty lines as separator
                 while row_id + add_idx < num_rows and \
-                        prop_of_1_among_binary(bold[row_id + add_idx]) > 0.8 \
-                        and not is_timestamp(text[row_id + add_idx]) \
-                        and get_author_and_speech(text[row_id + add_idx])[0] == "" \
-                        and not text[row_id + add_idx].startswith('Bismilla') \
-                        and (
-                        row_id + add_idx + 1 >= num_rows or
-                        get_author_and_speech(f'{text[row_id + add_idx].strip()} {text[row_id + add_idx + 1]}')[0] == ""
-                ):
+                        prop_of_1_among_binary(bold[row_id + add_idx]) > 0.8 and \
+                        not is_timestamp(text[row_id + add_idx]) and \
+                        get_author_and_speech(text[row_id + add_idx], bold[row_id + add_idx],
+                                              italics[row_id + add_idx])[0] == "" and \
+                        not text[row_id + add_idx].startswith('Bismilla') and \
+                        (
+                                row_id + add_idx + 1 >= num_rows or
+                                get_author_and_speech(
+                                    f'{text[row_id + add_idx].strip()} {text[row_id + add_idx + 1]}',
+                                    f'{bold[row_id + add_idx].strip()} {bold[row_id + add_idx + 1]}',
+                                    f'{italics[row_id + add_idx].strip()} {italics[row_id + add_idx + 1]}'
+                                )[0] == ""
+                        ):
                     current['level_2'] += text[row_id + add_idx]
                     add_idx += 1
                 row_id += add_idx - 1
@@ -496,6 +596,8 @@ def tabulate(hansard_date):
                 speeches += insert_speech(current)
                 current['author'] = ""
                 current['speech'] = ""
+                current['speech_bold'] = ""
+                current['speech_italics'] = ""
                 current['level_3'] = text[row_id].strip()
                 if current['level_2'] == "":
                     print(f'WARN: level_2 not taken but inserting level_3: {text[row_id]}')
@@ -506,6 +608,8 @@ def tabulate(hansard_date):
                 add_idx = 1
                 current['author'] = ""
                 current['speech'] = ""
+                current['speech_bold'] = ""
+                current['speech_italics'] = ""
                 current['level_3'] = text[row_id]
                 # it could be followed by similar level_3 markers
                 while row_id + add_idx < num_rows and \
@@ -520,14 +624,12 @@ def tabulate(hansard_date):
                 continue
 
             # special cases
-            if re.fullmatch(r'Perutusan [Dd]aripada Dewan Negara [kK]epada Dewan Rakyat', text[row_id].strip()):
-                # common title of this document
+            if re.fullmatch(r'Perutusan [Dd]aripada Dewan Negara [kK]epada Dewan Rakyat', text[row_id].strip()) or \
+                    re.search(r'^[“"]?((Bahawa)|(BAHAWA)|(DAN BAHAWA)|(Dengan ini)|(DENGAN INI))', text[row_id]):
                 # treat as continuation of speech
                 current['speech'] += text[row_id]
-                continue
-            elif re.search(r'^[“"]?((Bahawa)|(BAHAWA)|(DAN BAHAWA)|(Dengan ini)|(DENGAN INI))', text[row_id]):
-                # treat as continuation of speech
-                current['speech'] += text[row_id]
+                current['speech_bold'] += bold[row_id]
+                current['speech_italics'] += italics[row_id]
                 continue
             elif hansard_date == "02112018" and \
                     (re.search(r'^Strategi \d+:', text[row_id]) or re.search(r' [–-]$', text[row_id].strip())):
@@ -535,6 +637,8 @@ def tabulate(hansard_date):
                 speeches += insert_speech(current)
                 current['author'] = ""
                 current['speech'] = ""
+                current['speech_bold'] = ""
+                current['speech_italics'] = ""
                 current['level_3'] = text[row_id].strip()
                 continue
             # unhandled case
@@ -542,6 +646,8 @@ def tabulate(hansard_date):
             with open("warnings/in-text-bold.txt", 'a') as f:
                 f.write(f'{hansard_date}\n{text[row_id]}{bold[row_id]}{italics[row_id]}\n')
             current['speech'] += text[row_id]
+            current['speech_bold'] += bold[row_id]
+            current['speech_italics'] += italics[row_id]
 
     speeches += insert_speech(current)
 
@@ -549,6 +655,12 @@ def tabulate(hansard_date):
     for idx in range(len(speeches)):
         for idx2 in range(len(current)):
             speeches[idx][idx2] = speeches[idx][idx2].strip()
+
+    # add in formatting for bold and italics
+    for idx in range(len(speeches)):
+        if speeches[idx][4] != "ANNOTATION":
+            speeches[idx][5] = add_formatting(speeches[idx][5], speeches[idx][6], speeches[idx][7])
+        speeches[idx] = speeches[idx][:-2]
 
     # extract timestamps from annotations
     row_id = -1
@@ -576,13 +688,13 @@ def tabulate(hansard_date):
         f.write(f'\n{hansard_date}\n')
         for timestamp in unique_timestamps:
             f.write(f'{timestamp}\n')
-    prop_bullet = sum([1 for timestamp in unique_timestamps if re.search(r'[■◼▪]', timestamp)]) / len(
-        unique_timestamps)
-    standardised_unique_timestamps = [standardise_timestamp(timestamp) for timestamp in unique_timestamps]
-    if len(unique_timestamps) != len(set(standardised_unique_timestamps)):
-        print(f'WARN: duplicate timestamps detected as different formats: {hansard_date}')
+    # prop_bullet = sum([1 for timestamp in unique_timestamps if re.search(r'[■◼▪]', timestamp)]) / len(
+    #     unique_timestamps)
+    # standardised_unique_timestamps = [standardise_timestamp(timestamp) for timestamp in unique_timestamps]
+    # if len(unique_timestamps) != len(set(standardised_unique_timestamps)):
+    #     print(f'WARN: duplicate timestamps detected as different formats: {hansard_date}')
     # print(f'Prop of bullet timestamps: {prop_bullet}')
-    
+
     old_timestamp_list = [speech[3] for speech in speeches]
     # standardise timestamps into 24 hour format
     for row_id in range(len(speeches)):

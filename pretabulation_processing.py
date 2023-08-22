@@ -65,6 +65,7 @@ def preprocess(hansard_date):
         italics = f.readlines()
     assert len(text) == len(bold) == len(italics), \
         f'Length of text, bold and italics do not match: {len(text)} vs {len(bold)} vs {len(italics)}'
+    assert len([1 for line in text if '|' in line]) == 0, f'Error: pipe found in {text}'
 
     # insert tables
     # load tables from file
@@ -204,10 +205,11 @@ def preprocess(hansard_date):
         italics[row_id] = italics[row_id].strip() + '\n'
 
         # ignore the horizontal line on the DOA page
-        if re.fullmatch(r'^[_-]+$', text[row_id].strip()):
+        if re.fullmatch(r'^ *[_-]+ *$', text[row_id].strip()):
             text[row_id] = '\n'
             bold[row_id] = '\n'
             italics[row_id] = '\n'
+
 
     # delete excessive newlines
     text = [row for row in text if row != '\n']

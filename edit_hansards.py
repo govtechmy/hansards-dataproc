@@ -610,6 +610,17 @@ def edit_hansards():
             '00000000\n11111 1111 11111111 111111 111111 111111111 000000 0000 00000\n',
             'none')
 
+    replace('02042018',
+            "Menteri di Jabatan Perdana Menteri, Dato’ Sri Azalina Dato’ Othman Said\n",
+            "Menteri di Jabatan Perdana Menteri [Dato’ Sri Azalina Dato’ Othman Said\n",
+            'all',
+            'none')
+    replace('02042018',
+            "[Pengerang]: Terima kasih Tuan Pengerusi. Yang Berhormat Kulai, rang undang-undang ini\n",
+            "[Pengerang]]: Terima kasih Tuan Pengerusi. Yang Berhormat Kulai, rang undang-undang ini\n",
+            '1111111111111 000000 00000 0000 0000000000 0000 000000000 000000 0000 0000000000000 000\n',
+            'none')
+
 
 if __name__ == "__main__":
     edit_hansards()
