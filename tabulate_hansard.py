@@ -174,8 +174,11 @@ def get_author_and_speech(text, warn=''):
                    r"(Seri Tiong King Sing \[Bintulu]:)|"
                    r"(Teresa Kok Suh Sim:)|"
                    r"(Zuraida binti Kamaruddin:)|"
+                   r"(Seri Dr\. Adham bin Baba \[Tenggara]:)|"
                    r"(Kelvin Yii Lee Wuen \[Bandar Kuching]:))", text):
         # special cases, the Dewan Rakyat did not give them salutatory titles
+        # to minimize word edits, we will just treat them as special cases in the parser
+        # instead of using edit_hansards.py
         author, speech = text.split(':', maxsplit=1)
     if author != '' and warn != '':
         with open('warnings/autocorrected_authors.txt', 'a') as f:
@@ -366,18 +369,9 @@ def tabulate(hansard_date):
                 # most likely it is just a stray bold
                 stray_bold = text[row_id]
                 num_bold = bold[row_id].count('1')
-                # sometimes stray bolds go over a line as annotations
-                # Perbelanjaan Pembangunan 2023 dalam Jawatankuasa sebuah-buah Majlis.” [Hari 
-                # Kesepuluh]
-                if row_id + 1 < num_rows and '[' in text[row_id] and \
-                        ']' not in text[row_id] and ']' in text[row_id + 1] and \
-                        prop_of_1_among_binary(italics[row_id + 1]) > 0.5:
-                    stray_bold += text[row_id + 1]
-                    num_bold += bold[row_id + 1].count('1')
-                    row_id += 1
                 current['speech'] += stray_bold
                 with open("warnings/stray_bolds.txt", 'a') as f:
-                    f.write(f'{hansard_date} with num bold: {num_bold}\n{stray_bold}\n')
+                    f.write(f'{hansard_date} with num bold: {num_bold}\n{stray_bold}{bold[row_id]}\n')
                 continue
 
             if current['author'] == "" and current['speech'] == '' and current['level_1'] != '':
@@ -396,6 +390,14 @@ def tabulate(hansard_date):
                 row_id += add_idx - 1
                 with open("warnings/level_2_following_level_1.txt", 'a') as f:
                     f.write(f"{hansard_date}\n{current['level_2']}\n")
+                continue
+
+            if prop_of_1_among_binary(bold[row_id]) < 0.9:
+                # categories shouldn't have mixed unbolds
+                # treat them as stray bolds
+                current['speech'] += text[row_id]
+                with open("warnings/mixed_bolds.txt", 'a') as f:
+                    f.write(f'{hansard_date}\n{text[row_id]}{bold[row_id]}\n')
                 continue
 
             if upper_lower_ratio(text[row_id]) > 1:

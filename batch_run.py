@@ -37,6 +37,7 @@ for hansard_date in tqdm(hansard_dates):
 edit_hansards.edit_hansards()
 
 # for tabulation
+# clean these files for new logs
 tabulation_files_for_deletion = [
     "warnings/matched_categories.csv",
     'warnings/timestamp_in_annotation.txt',
@@ -47,6 +48,7 @@ tabulation_files_for_deletion = [
     "warnings/in-text-bold.txt",
     "warnings/annotation_too_long.txt",
     "warnings/uppercased_non_author.txt",
+    "warnings/mixed_bolds.txt",
 ]
 
 for file in tabulation_files_for_deletion:

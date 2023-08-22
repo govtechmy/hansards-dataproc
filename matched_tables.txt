@@ -2775,6 +2775,44 @@ Pahang   5
 
 ___
 
+09072019
+Anchor row is: Terengganu 1
+Table text similarity score is: 100
+Table text is:
+___
+NEGERI PECAHAN SYARIKAT
+Selangor 23
+Pulau Pinang 13
+Johor 5
+Melaka 5
+Kuala Lumpur 4
+Kedah 4
+Perak 2
+Sarawak 1
+Sabah 1
+Kelantan 1
+Terengganu 1
+
+___
+
+Candidate text is:
+___
+NEGERI  PECAHAN SYARIKAT 
+ 
+Selangor   23 
+Pulau Pinang   13 
+Johor   5 
+Melaka   5 
+Kuala Lumpur   4 
+Kedah   4 
+Perak   2 
+Sarawak   1 
+Sabah   1 
+Kelantan   1 
+Terengganu   1 
+
+___
+
 11042019
 Anchor row is: solar 700
 Table text similarity score is: 100
