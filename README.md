@@ -71,6 +71,13 @@ Run `tabulate_hansards.py` to tabulate the hansards into a CSV file with the fol
 ## On debugging tables
 - Start jupyter notebook and use `debug_tables.ipynb`. Many real examples are there that culminates in the current way of detecting tables.
 
+## On timestamps
+There are two formats for timestamps
+1. Those with a bullet point, e.g. `■1350`. These are quite consistent and are in 10 minute increments.
+2. Those with words, e.g. `12.08 tgh.` or `7.17 mlm.`
+
+We also extract timestamps from annotations, e.g. _[Mesyuarat disambung semula pada pukul 2.30 petang]_
+
 ## On warning files
 Please check all files inside `warnings` after each run. For a successful run it is not expected for these files to be empty, and their role is to flag out suspicious cases for manual inspection and most cases are OK. Those that are not OK is on the maintainer to fix through the following
 1. A human mistake in transcribing that is specific to a given Hansard: edit that Hansard with `edit_hansards.py` to fix the issue and maintain reproducibility. For examples, missing ] or :, or authors that did not start on a newline.

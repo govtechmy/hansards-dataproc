@@ -567,7 +567,22 @@ def tabulate(hansard_date):
                 speeches[row_id + add_idx][3] = new_timestamp
                 add_idx += 1
 
-
+    # get unique timestamps while preserving order
+    unique_timestamps = dict.fromkeys([speech[3] for speech in speeches]).keys()
+    with open('dump/all_timestamps.txt', 'a') as f:
+        for timestamp in unique_timestamps:
+            f.write(f'{timestamp}\n')
+    with open('dump/all_timestamps_dated.txt', 'a') as f:
+        f.write(f'\n{hansard_date}\n')
+        for timestamp in unique_timestamps:
+            f.write(f'{timestamp}\n')
+    prop_bullet = sum([1 for timestamp in unique_timestamps if re.search(r'[■◼▪]', timestamp)]) / len(
+        unique_timestamps)
+    standardised_unique_timestamps = [standardise_timestamp(timestamp) for timestamp in unique_timestamps]
+    if len(unique_timestamps) != len(set(standardised_unique_timestamps)):
+        print(f'WARN: duplicate timestamps detected as different formats: {hansard_date}')
+    # print(f'Prop of bullet timestamps: {prop_bullet}')
+    
     old_timestamp_list = [speech[3] for speech in speeches]
     # standardise timestamps into 24 hour format
     for row_id in range(len(speeches)):
