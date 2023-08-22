@@ -49,6 +49,7 @@ tabulation_files_for_deletion = [
     "warnings/annotation_too_long.txt",
     "warnings/uppercased_non_author.txt",
     "warnings/mixed_bolds.txt",
+    "warnings/unsorted_timestamps.txt",
 ]
 
 for file in tabulation_files_for_deletion:

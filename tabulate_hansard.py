@@ -34,6 +34,33 @@ def get_timestamp_from_annotation(text):
     return text.split(" pada pukul ")[1][:-1]
 
 
+def standardise_timestamp(timestamp):
+    numbers = ''.join(re.findall(r'\d+', timestamp))
+    assert len(numbers) != 0
+    if len(numbers) < 3:
+        # 10 pagi
+        numbers += '00'
+    if re.search(r'^[■◼▪] ?\d{4}\.?', timestamp):
+        # if there is a preceding bullet then it is usually in 24h format
+        return numbers
+    elif re.search(r'(pg)|(PG)|(pagi)', timestamp):
+        if len(numbers) == 3:
+            return '0' + numbers
+        else:
+            assert len(numbers) == 4, f'Expected 4 digits but got {numbers} from {timestamp}'
+            return numbers
+    else:
+        # malam, pm, tgh etc
+        # apart from 12pm, all others need to add 12
+        if len(numbers) == 4 and numbers[:2] == '12':
+            return numbers
+        hour = int(numbers[:-2]) + 12
+        if hour >= 24:
+            # they reported it in 24h
+            hour -= 12
+        return str(hour) + numbers[-2:]
+
+
 def prop_of_1_among_binary(text):
     assert re.fullmatch(r'[01\s]*', text), f'Expected binary string but got "{text}"'
     return text.count('1') / (text.count('0') + text.count('1'))
@@ -540,6 +567,12 @@ def tabulate(hansard_date):
                 speeches[row_id + add_idx][3] = new_timestamp
                 add_idx += 1
 
+
+    old_timestamp_list = [speech[3] for speech in speeches]
+    # standardise timestamps into 24 hour format
+    for row_id in range(len(speeches)):
+        speeches[row_id][3] = standardise_timestamp(speeches[row_id][3])
+
     # post-tabulation warnings
     # check if annotation is too long, usually missing ].
     # if without error it is usually [Diputuskan,
@@ -553,6 +586,17 @@ def tabulate(hansard_date):
         if speech[4] != "ANNOTATION" and upper_lower_ratio(speech[4]) > 0.8:
             with open("warnings/uppercased_non_author.txt", 'a') as f:
                 f.write(f'{hansard_date}\n{speech[4]}\n\n')
+
+    # check that timestamps are in order
+    timestamps = [speech[3] for speech in speeches]
+    sorted_timestamps = sorted(timestamps)
+    if timestamps != sorted_timestamps:
+        with open("warnings/unsorted_timestamps.txt", 'a') as f:
+            f.write(f'\n{hansard_date}\n')
+            for idx in range(len(timestamps)):
+                if timestamps[idx] != sorted_timestamps[idx]:
+                    f.write(f'{old_timestamp_list[idx]}, {timestamps[idx]}, {sorted_timestamps[idx]}\n')
+
     # export speeches to csv
     with open(f'{dir_path}result.csv', mode='w', newline='') as file:
         writer = csv.writer(file)
@@ -563,7 +607,7 @@ def tabulate(hansard_date):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("hansard_date", help="hansard_date eg. 23052023",
-                        default="10072019", nargs="?")
+                        default="06032023", nargs="?")
     # Parse arguments
     args = parser.parse_args()
     tabulate(args.hansard_date)
