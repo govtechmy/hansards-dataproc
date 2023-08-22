@@ -26,8 +26,8 @@ def is_timestamp(text):
 
 def has_timestamp_in_annotation(text):
     return " pada pukul " in text
-    
-    
+
+
 def get_timestamp_from_annotation(text):
     assert " pada pukul " in text
     # remove trailing ]
@@ -505,12 +505,21 @@ def tabulate(hansard_date):
             continue
         # the 5th item is the speech
         if has_timestamp_in_annotation(speeches[row_id][5]):
+            with open("warnings/timestamp_in_annotation.txt", 'a') as f:
+                f.write(f'{hansard_date}\n{speeches[row_id][5]}\n\n')
             old_timestamp = speeches[row_id][3]
             new_timestamp = get_timestamp_from_annotation(speeches[row_id][5])
             add_idx = 0
             while row_id + add_idx < len(speeches) and speeches[row_id + add_idx][3] == old_timestamp:
                 speeches[row_id + add_idx][3] = new_timestamp
                 add_idx += 1
+
+    # post-tabulation warnings
+    # check if annotation is too long, usually missing ]
+    for speech in speeches:
+        if speech[4] == "ANNOTATION" and speech[5].count('\n') > 5:
+            with open("warnings/annotation_too_long.txt", 'a') as f:
+                f.write(f'{hansard_date}\n{speech[5]}\n\n')
     # export speeches to csv
     with open(f'{dir_path}result.csv', mode='w', newline='') as file:
         writer = csv.writer(file)

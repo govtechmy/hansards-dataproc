@@ -403,6 +403,150 @@ def edit_hansards():
             "Puan Teresa Kok Suh Sim: Kalau Yang Berhormat hendak jemput saya ataupun...\n",
             '1111 111111 111 111 1111 00000 0000 000000000 000000 000000 0000 0000000000\n',
             'none')
+    replace('14032023',
+            "[Kepala P.14 jadi sebahagian daripada Anggaran Perbelanjaan\n",
+            "[Kepala P.14 jadi sebahagian daripada Anggaran Perbelanjaan]\n",
+            'none',
+            'all')
+    replace('28032023',
+            "Mesyuarat\n",
+            "Mesyuarat]\n",
+            '1111111110\n',
+            'all')
+    replace('30032023',
+            "penyata tersebut.”\n",
+            "penyata tersebut.”]\n",
+            'none',
+            'all')
+    replace('30032023',
+            "[Majlis bersidang dalam Jawatankuasa.\n",
+            "[Majlis bersidang dalam Jawatankuasa]\n",
+            'all',
+            'all')
+    replace('20072022',
+            "undang.\n",
+            "undang.]\n",
+            'none',
+            'all')
+    replace('17032022',
+            "Kelima, Parlimen yang Keempat Belas”.\n",
+            "Kelima, Parlimen yang Keempat Belas”.]\n",
+            'none',
+            'all')
+    replace('26072021',
+            "suara\n",
+            "suara]\n",
+            'none',
+            'all')
+    replace('06082020',
+            "[Timbalan Yang di-Pertua [Dato’ Mohd Rashid Hasnon mempengerusikan\n",
+            "[Timbalan Yang di-Pertua [Dato’ Mohd Rashid Hasnon] mempengerusikan\n",
+            '000000000 0000 000000000 000000 0000 000000 0000000 111111111111111\n',
+            'all')
+    replace('12082020',
+            "sebahagian daripada Jadual\n",
+            "sebahagian daripada Jadual]\n",
+            'none',
+            'all')
+    replace('17082020',
+            "kuasa pada 10 Mac 2020.\"\n",
+            "kuasa pada 10 Mac 2020.\"]\n",
+            'none',
+            'all')
+    replace('11082020',
+            "tersebut.\"\n",
+            "tersebut.\"]\n",
+            'none',
+            'all')
+    replace('02112020',
+            "dalam firman-Nya, [Membaca Surah Quraisy) yang bermaksud, “Kerana kebiasaan aman\n",
+            "dalam firman-Nya, [Membaca Surah Quraisy] yang bermaksud, “Kerana kebiasaan aman\n",
+            'none',
+            '00000 00000000000 11111111 11111 11111111 0000 0000000000 1111111 111111111 1111\n')
+    replace('10082020',
+            "Penggal Ketiga, Parlimen Yang Keempat Belas.”\n",
+            "Penggal Ketiga, Parlimen Yang Keempat Belas.”]\n",
+            'none',
+            'all')
+    replace('02042019',
+            "penyata tersebut.”\n",
+            "penyata tersebut.”]\n",
+            'none',
+            'all')
+    replace('02042019',
+            "mempengerusikan Mesyuarat\n",
+            "mempengerusikan Mesyuarat]\n",
+            'all',
+            'all')
+    replace('09042019',
+            "mempengerusikan Mesyuarat\n",
+            "mempengerusikan Mesyuarat]\n",
+            'all',
+            'all')
+    replace('04072019',
+            "[Timbalan Yang di-Pertua ([Dato’ Mohd Rashid Hasnon) mempengerusikan\n",
+            "[Timbalan Yang di-Pertua (Dato’ Mohd Rashid Hasnon) mempengerusikan\n",
+            '000000000 0000 000000000 000000 0000 000000 0000000 111111111111111\n',
+            'all')
+    # there is many matches for the editing phrase, so we edit the next line instead
+    replace('06122018',
+            "Tuan Yang di-Pertua: Dengan itu Ahli-ahli Yang Berhormat, Mesyuarat Dewan hari\n",
+            "]\nTuan Yang di-Pertua: Dengan itu Ahli-ahli Yang Berhormat, Mesyuarat Dewan hari\n",
+            '0\n1111 1111 1111111111 000000 000 000000000 0000 0000000000 000000000 00000 0000\n',
+            'none')
+
+    replace('27032018',
+            "[Masalah dikemuka bagi diputuskan, dan disetujukan.\n",
+            "[Masalah dikemuka bagi diputuskan, dan disetujukan.]\n",
+            'none',
+            'all')
+    replace('21112018',
+            "apabila saya nak tanya tentang 1MDB. [Dewan riuh\n",
+            "apabila saya nak tanya tentang 1MDB. [Dewan riuh]\n",
+            'none',
+            '0000000 0000 000 00000 0000000 00000 111111 11111\n')
+
+    replace('21112018',
+            "senarai tersebut.”\n",
+            "senarai tersebut.”]\n",
+            'none',
+            'all')
+
+    # there is many matches for the editing phrase, so we edit the next line instead
+    replace('26032018',
+            "Timbalan Yang di-Pertua [Dato' Sri Haji Ismail bin Haji Mohamed Said]: Yang\n",
+            "]\nTimbalan Yang di-Pertua [Dato' Sri Haji Ismail bin Haji Mohamed Said]: Yang\n",
+            '0\n11111111 1111 111111111 111111 111 1111 111111 111 1111 1111111 111111 0000\n',
+            'none')
+
+    replace('16082018',
+            "[[Mesyuarat ditempohkan pada pukul 1.00 tengah hari]\n",
+            "[Mesyuarat ditempohkan pada pukul 1.00 tengah hari]\n",
+            'none',
+            'all')
+    replace('21032023',
+            "Pertua. [Ketawa.\n",
+            "Pertua. [Ketawa]\n",
+            'none',
+            '0000000 11111111\n')
+
+    replace('17082020',
+            "disifatkan telah berkuat kuasa pada 10 Mac 2020.”\n",
+            "disifatkan telah berkuat kuasa pada 10 Mac 2020.”]\n",
+            'none',
+            'all')
+
+    replace('09032023',
+            "hendaklah disahkan.”\n",
+            "hendaklah disahkan.”]\n",
+            'none',
+            'all')
+
+    replace('16082018',
+            "[“Bahawa mengikut Peraturan Mesyuarat 86(5), maka Penyata\n",
+            "“Bahawa mengikut Peraturan Mesyuarat 86(5), maka Penyata\n",
+            'none',
+            'all')
 
 
 if __name__ == "__main__":

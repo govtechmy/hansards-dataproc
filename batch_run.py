@@ -37,17 +37,19 @@ hansard_dates = [x[3:3 + 8] for x in filenames]
 edit_hansards.edit_hansards()
 
 # for tabulation
-with open("warnings/matched_categories.csv", "w") as f:
-    f.write("")
-with open("warnings/autocorrected_authors.txt", "w") as f:
-    f.write("")
-with open("warnings/stray_bolds.txt", "w") as f:
-    f.write("")
-with open("warnings/capitalised_level_2.txt", "w") as f:
-    f.write("")
-with open("warnings/level_2_following_level_1.txt", "w") as f:
-    f.write("")
-with open("warnings/in-text-bold.txt", "w") as f:
-    f.write("")
+tabulation_files_for_deletion = [
+    "warnings/matched_categories.csv",
+    'warnings/timestamp_in_annotation.txt',
+    "warnings/autocorrected_authors.txt",
+    "warnings/stray_bolds.txt",
+    "warnings/capitalised_level_2.txt",
+    "warnings/level_2_following_level_1.txt",
+    "warnings/in-text-bold.txt",
+    "warnings/annotation_too_long.txt",
+]
+
+for file in tabulation_files_for_deletion:
+    if os.path.exists(file):
+        os.remove(file)
 for hansard_date in tqdm(hansard_dates):
     tabulate_hansard.tabulate(hansard_date)
