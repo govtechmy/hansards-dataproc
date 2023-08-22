@@ -244,9 +244,9 @@ def insert_speech(current):
 def markdownify(text, is_bold, is_italics):
     text = text.replace('*', '\*')
     suffix = ''
-    while len(text) > 0 and re.search(r'\s', text[-1]):
-        suffix = text[-1]
-        text = text[:-1]
+    if re.search(r'\s+$', text):
+        suffix = re.search(r'\s+$', text).group(0)
+        text = text.strip()
     if is_bold:
         text = f"**{text}**"
     if is_italics:
