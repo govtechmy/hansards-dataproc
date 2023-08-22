@@ -62,14 +62,21 @@ Run `tabulate_hansards.py` to tabulate the hansards into a CSV file with the fol
 
 
 ## Common annotations
-- _Tepuk_
-- _Ketawa_
-- _Dewan ketawa_
-- _Dewan riuh_
-- _Pembesar suara dimatikan_
+- _[Tepuk]_
+- _[Ketawa]_
+- _[Dewan ketawa]_
+- _[Dewan riuh]_
+- _[Pembesar suara dimatikan]_
 
 ## On debugging tables
 - Start jupyter notebook and use `debug_tables.ipynb`. Many real examples are there that culminates in the current way of detecting tables.
+- Tables will replace the plaintext in the markdown format, e.g.
+```
+| 1 | 2 | 3 |
+| 4 | 5 | 6 |
+| 7 | 8 | 9 |
+```
+Due to the diversity of tables we do not style the header rows. All formatting inside the table (particularly bold) will be removed.
 
 ## On timestamps
 There are two formats for timestamps
@@ -77,6 +84,8 @@ There are two formats for timestamps
 2. Those with words, e.g. `12.08 tgh.` or `7.17 mlm.`
 
 We also extract timestamps from annotations, e.g. _[Mesyuarat disambung semula pada pukul 2.30 petang]_
+
+126 out of 326 Hansards have out of sync timestamps. The bullet points and word-formatted timestamps do not necessarily agree chronologically.
 
 ## On warning files
 Please check all files inside `warnings` after each run. For a successful run it is not expected for these files to be empty, and their role is to flag out suspicious cases for manual inspection and most cases are OK. Those that are not OK is on the maintainer to fix through the following
