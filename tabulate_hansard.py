@@ -24,6 +24,16 @@ def is_timestamp(text):
     # the 4 digits is for 30032023 and 12062023
 
 
+def has_timestamp_in_annotation(text):
+    return " pada pukul " in text
+    
+    
+def get_timestamp_from_annotation(text):
+    assert " pada pukul " in text
+    # remove trailing ]
+    return text.split(" pada pukul ")[1][:-1]
+
+
 def prop_of_1_among_binary(text):
     assert re.fullmatch(r'[01\s]*', text), f'Expected binary string but got "{text}"'
     return text.count('1') / (text.count('0') + text.count('1'))
@@ -481,9 +491,26 @@ def tabulate(hansard_date):
             current['speech'] += text[row_id]
 
     speeches += insert_speech(current)
+
+    # remove trailing newlines
     for idx in range(len(speeches)):
-        for idx2 in range(6):
+        for idx2 in range(len(current)):
             speeches[idx][idx2] = speeches[idx][idx2].strip()
+
+    # extract timestamps from annotations
+    row_id = -1
+    while row_id + 1 < len(speeches):
+        row_id += 1
+        if speeches[row_id][4] != "ANNOTATION":
+            continue
+        # the 5th item is the speech
+        if has_timestamp_in_annotation(speeches[row_id][5]):
+            old_timestamp = speeches[row_id][3]
+            new_timestamp = get_timestamp_from_annotation(speeches[row_id][5])
+            add_idx = 0
+            while row_id + add_idx < len(speeches) and speeches[row_id + add_idx][3] == old_timestamp:
+                speeches[row_id + add_idx][3] = new_timestamp
+                add_idx += 1
     # export speeches to csv
     with open(f'{dir_path}result.csv', mode='w', newline='') as file:
         writer = csv.writer(file)
