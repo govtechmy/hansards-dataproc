@@ -278,8 +278,6 @@ def tabulate(hansard_date):
     dewan_tangguh = False
     while row_id + 1 < num_rows:
         row_id += 1
-        if "158. YB. Tuan Yamani Hafez bin Musa (Sipitang)\n" == text[row_id]:
-            print()
 
         # run until DOA first
         if 'DOA' == text[row_id].strip():
@@ -452,7 +450,11 @@ def tabulate(hansard_date):
                         prop_of_1_among_binary(bold[row_id + add_idx]) > 0.8 \
                         and not is_timestamp(text[row_id + add_idx]) \
                         and get_author_and_speech(text[row_id + add_idx])[0] == "" \
-                        and not text[row_id + add_idx].startswith('Bismilla'):
+                        and not text[row_id + add_idx].startswith('Bismilla') \
+                        and (
+                        row_id + add_idx + 1 >= num_rows or
+                        get_author_and_speech(f'{text[row_id + add_idx].strip()} {text[row_id + add_idx + 1]}')[0] == ""
+                ):
                     current['level_2'] += text[row_id + add_idx]
                     add_idx += 1
                 row_id += add_idx - 1
@@ -539,7 +541,8 @@ def tabulate(hansard_date):
                 add_idx += 1
 
     # post-tabulation warnings
-    # check if annotation is too long, usually missing ], or without erros it is usually [Diputuskan,
+    # check if annotation is too long, usually missing ].
+    # if without error it is usually [Diputuskan,
     for speech in speeches:
         if speech[4] == "ANNOTATION" and speech[5].count('\n') > 5:
             with open("warnings/annotation_too_long.txt", 'a') as f:
@@ -560,7 +563,7 @@ def tabulate(hansard_date):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("hansard_date", help="hansard_date eg. 23052023",
-                        default="17072019", nargs="?")
+                        default="10072019", nargs="?")
     # Parse arguments
     args = parser.parse_args()
     tabulate(args.hansard_date)
