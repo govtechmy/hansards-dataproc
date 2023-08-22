@@ -393,16 +393,6 @@ def edit_hansards():
             "Dato’ Seri Dr. Wan Azizah Wan Ismail: Terima kasih Yang Berhormat Permatang\n",
             '11111 1111 111 111 111111 111 1111111 000000 00000 0000 000000000 000000000\n',
             'none')
-    replace('31072018',
-            "Zuraida binti Kamaruddin: Terima kasih, Yang Berhormat Bukit Bendera. Di antara\n",
-            "Puan Zuraida binti Kamaruddin: Terima kasih, Yang Berhormat Bukit Bendera. Di antara\n",
-            '1111 1111111 11111 11111111111 000000 000000 0000 000000000 00000 00000000 00 000000\n',
-            'none')
-    replace('01112018',
-            "Teresa Kok Suh Sim: Kalau Yang Berhormat hendak jemput saya ataupun...\n",
-            "Puan Teresa Kok Suh Sim: Kalau Yang Berhormat hendak jemput saya ataupun...\n",
-            '1111 111111 111 111 1111 00000 0000 000000000 000000 000000 0000 0000000000\n',
-            'none')
     replace('14032023',
             "[Kepala P.14 jadi sebahagian daripada Anggaran Perbelanjaan\n",
             "[Kepala P.14 jadi sebahagian daripada Anggaran Perbelanjaan]\n",
@@ -547,6 +537,78 @@ def edit_hansards():
             "“Bahawa mengikut Peraturan Mesyuarat 86(5), maka Penyata\n",
             'none',
             'all')
+
+    replace('21032023',
+            "Timbalan Yang dan-Pertua [Puan Alice Lau Kiong Yieng]: Ahli-ahli Yang Berhormat,\n",
+            "Timbalan Yang di-Pertua [Puan Alice Lau Kiong Yieng]: Ahli-ahli Yang Berhormat,\n",
+            '11111111 1111 111111111 11111 11111 111 11111 1111111 000000000 0000 0000000000\n',
+            'none')
+
+    replace('28022023',
+            "Seorang Ahli Sahabat-sahabat kita.\n",
+            "Seorang Ahli: Sahabat-sahabat kita.\n",
+            '1111111 11111 000000000000000 00000\n',
+            'none')
+
+    replace('30032023',
+            "Dewan Rakyat. Kelvin Yii Lee Wuen [Bandar Kuching]: Bandar Kuching.\n",
+            "Dr. Kelvin Yii Lee Wuen [Bandar Kuching]: Bandar Kuching.\n",
+            '111 111111 111 111 1111 1111111 111111111 000000 00000000\n',
+            'none')
+
+    replace('10122018',
+            "Pertua. Tuan Sanisvara Nethaji Rayer a/l Rajaji [Jelutong]: Yang Berhormat jangan\n",
+            "Pertua.\nTuan Sanisvara Nethaji Rayer a/l Rajaji [Jelutong]: Yang Berhormat jangan\n",
+            '0000000\n1111 111111111 1111111 11111 111 111111 11111111111 0000 000000000 000000\n',
+            'none')
+
+    replace('26072021',
+            "pembangkang. Tuan Sanisvara Nethaji Rayer a/l Rajaji [Jelutong]: Saya\n",
+            "pembangkang.\nTuan Sanisvara Nethaji Rayer a/l Rajaji [Jelutong]: Saya\n",
+            '000000000000\n1111 111111111 1111111 11111 111 111111 11111111111 0000\n',
+            'none')
+
+    replace('21102019',
+            "`Dato’ Sri Bung Moktar bin Radin [Kinabatangan]: Macam jadi sarapan pagi saya\n",
+            "Dato’ Sri Bung Moktar bin Radin [Kinabatangan]: Macam jadi sarapan pagi saya\n",
+            '11111 111 1111 111111 111 11111 111111111111111 00000 0000 0000000 0000 0000\n',
+            'none')
+
+    replace('22102019',
+            "Padang Tuan Karupaiya A/L Mutusami [Padang Serai]: Terima kasih Tuan Yang\n",
+            "Tuan Karupaiya A/L Mutusami [Padang Serai]: Terima kasih Tuan Yang\n",
+            '1111 111111111 111 11111111 1111111 1111111 000000 00000 0000 0000\n',
+            'none')
+
+    replace('04042019',
+            "Sri Haji Noh bin Haji Omar [Tanjong Karang]: Tuan Pengerusi, saya tidak\n",
+            "Tan Sri Haji Noh bin Haji Omar [Tanjong Karang]: Tuan Pengerusi, saya tidak\n",
+            '111 111 1111 111 111 1111 1111 11111111 11111111 0000 0000000000 0000 00000\n',
+            'none')
+
+    replace('28112019',
+            "Jasin. Tuan P. Prabakaran [Batu]: Banyak lagi hendak bahas.\n",
+            "Jasin.\nTuan P. Prabakaran [Batu]: Banyak lagi hendak bahas.\n",
+            '000000\n1111 11 1111111111 1111111 000000 0000 000000 000000\n',
+            'none')
+
+    replace('21032018',
+            "sudah.Dato’ Haji Mahfuz bin Haji Omar [Pokok Sena]: ...Ini satu yang bertentangan\n",
+            "sudah.\nDato’ Haji Mahfuz bin Haji Omar [Pokok Sena]: ...Ini satu yang bertentangan\n",
+            '000000\n11111 1111 111111 111 1111 1111 111111 111111 000000 0000 0000 000000000000\n',
+            'none')
+
+    replace('13112018',
+            "Tuan Yang di-Pertua Yang Berhormat Kinabatangan.\n",
+            "Tuan Yang di-Pertua: Yang Berhormat Kinabatangan.\n",
+            '1111 1111 1111111111 0000 000000000 0000000000000\n',
+            'none')
+
+    replace('03122018',
+            "silakan. Datuk Seri Panglima Madius Tangau [Tuaran]: Subjek yang sama.\n",
+            "silakan.\nDatuk Seri Panglima Madius Tangau [Tuaran]: Subjek yang sama.\n",
+            '00000000\n11111 1111 11111111 111111 111111 111111111 000000 0000 00000\n',
+            'none')
 
 
 if __name__ == "__main__":

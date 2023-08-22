@@ -74,7 +74,9 @@ def get_author_and_speech(text, warn=''):
     elif re.search(r'^Setiausaha[\[\]A-Za-z `.’\'@/(\-),]*:', text):
         # Secretary of the House
         author, speech = text.split(':', maxsplit=1)
-    elif re.search(r'^(Timbalan )?[Mm]enteri [A-Za-z,()\-& ]+(\[Ekonomi] )?\[[A-Za-z `.’\'@/(\-)\[\]]+] ?:', text):
+    elif re.search(
+            r'^(Yang Berhormat )?(Timbalan )?[Mm]enteri [A-Za-z,()\-& ]+(\[Ekonomi] )?\[[A-Za-z `.’\'@/(\-)\[\]]+] ?:',
+            text):
         # Minister or Deputy Minister
         # allows () at the name part as they can have constituencies too
         # , is for Menteri Pembangunan Wanita, Keluarga dan Masyarakat
@@ -89,7 +91,7 @@ def get_author_and_speech(text, warn=''):
         # allows () as they can have constituencies too
         author, speech = text.split(']:', maxsplit=1)
         author += ']'
-    elif re.search(r'^((Tuan)|(Timbalan)) Pengerusi (Timbalan Yang di-Pertua )?\[[A-Za-z `.’\'@/(\-)]*]:', text):
+    elif re.search(r'^(Timbalan )?(Tuan )?Pengerusi (Timbalan Yang di-Pertua )?\[[A-Za-z `.’\'@/(\-)]*]:', text):
         # Chairman of Jawatankuasa
         # Tuan Pengerusi Timbalan Yang di-Pertua [Tuan Nga Kor Ming]: Tidak apa, tidak
         # allows () as they can have constituencies too
@@ -104,8 +106,8 @@ def get_author_and_speech(text, warn=''):
         speech = 'minta ' + speech
         subtopic, author = author.split(' ', maxsplit=1)
     elif re.search(
-            r'^((Tuan)|(Datuk)|(Dato)|(Tan Sri)|(Puan)|(Dr\.)|(YM)|(Ustaz)|(Tun)|'
-            r'(Laksamana)|(Mejar)|(Komander)|(Seri Paduka)|(Tengku)|(Hajah)|(Raja)|(Brig)|(Datin))'
+            r'^((Tuan)|(Datuk)|(Dato)|(Tan Sri)|(Puan)|(Dr\.)|(YM)|(Ustaz)|(Tun)|(Kapten)|(Haji)|(Ir\.)|(Datu)|(Cik)|'
+            r'(Laksamana)|(Mejar)|(Komander)|(Seri Paduka)|(Tengku)|(Hajah)|(Raja)|(Brig)|(Datin)|(Prof\.) )'
             r'[A-Za-z `.’\'@/\-()]+:',
             text):
         # continuation of Menteri or Timbalan Menteri, example
@@ -115,11 +117,13 @@ def get_author_and_speech(text, warn=''):
         # YM Tengku Dato’ Sri Zafrul Tengku Abdul Aziz: Okey, saya jawab twin deficit
         # Datuk Dr. Haji Zulkifli Mohamad Al-Bakri: ...Saya hendak minta maaf banyak-
         author, speech = text.split(':', maxsplit=1)
-    elif re.search(r'^[A-Za-z `.’\'@/(),\-]+\[[A-Za-z \-–]+][ -]?:', text):
+    elif re.search(
+            r'^(Yang Berhormat )?'
+            r'((Tuan)|(Datuk)|(Dato)|(Tan Sri)|(Puan)|(Dr\.)|(YM)|(Ustaz)|(Tun)|(Kapten)|(Haji)|(Ir\.)|(Datu)|(Cik)|'
+            r'(Laksamana)|(Mejar)|(Komander)|(Seri Paduka)|(Tengku)|(Hajah)|(Raja)|(Brig)|(Datin)|(Prof\.) )'
+            r'[A-Za-z `.’\'@/(),\-]+\[[A-Za-z \-–]+][ -]?:', text):
         # possible MP
-        # TODO check start with MP salutation eg. Tan Sri or Tuan
         author, speech = text.split(':', maxsplit=1)
-        # TODO sometimes start with numbering eg. 1.
     elif re.search(
             r'^(Seorang Ahli ?:)|(Seorang ahli:)|(Seoarang ahli:)|(Seseorang Ahli:)|(seorang Ahli:)|'
             r'(Seorang Ahli Yang Berhormat:)|(Seorang Ahli Berucap)|(\[Seorang Ahli]:)|(Sorang Ahli:)|(Seorang Ali:)|'
@@ -150,12 +154,27 @@ def get_author_and_speech(text, warn=''):
         author = 'Datuk Dr. Ewon Ebin [Ranau]'
         speech = 'Menteri Kemajuan Luar Bandar dan Wilayah\n'
         subtopic = "9."
+    elif 'Menteri di Jabatan Perdana Menteri, Dato’ Sri Azalina Dato’ Othman Said ' \
+         '[Pengerang]: Terima kasih Tuan Pengerusi. Yang Berhormat Kulai, rang undang-undang ini\n' == text:
+        # special case where , is used
+        author = 'Menteri di Jabatan Perdana Menteri, Dato’ Sri Azalina Dato’ Othman Said [Pengerang]'
+        speech = 'Terima kasih Tuan Pengerusi. Yang Berhormat Kulai, rang undang-undang ini\n'
     elif not warn and ']' in text and not text.endswith(']') and \
             not text.rsplit(']', maxsplit=1)[1].strip().startswith(':') and \
             text.count('[') == text.count(']'):
         # some of the unparsed authors are due to a missing colon :
         edited_text = ']:'.join(text.rsplit(']', 1))
         author, speech, subtopic = get_author_and_speech(edited_text, warn=text)
+    elif re.search(r'^((Abdul Azeez bin Abdul Rahim \[Baling]:)|'
+                   r"(Ramli bin Dato' Mohd Nor \[Cameron Highlands]:)|"
+                   r"(Ahmad Amzad bin Mohamed @ Hashim \[Kuala Terengganu]:)|"
+                   r"(Abdul Latiff bin Abdul Rahman \[Kuala Krai]:)|"
+                   r"(Maria Chin binti Abdullah \[Petaling Jaya]:)|"
+                   r"(Seorang Ahli /Tuan Abdul Latiff bin Abdul Rahman \[Kuala Krai]:)|"
+                   r"(Seri Tiong King Sing \[Bintulu]:)|"
+                   r"(Kelvin Yii Lee Wuen \[Bandar Kuching]:))", text):
+        # special cases, the Dewan Rakyat did not give them salutatory titles
+        author, speech = text.split(':', maxsplit=1)
     if author != '' and warn != '':
         with open('warnings/autocorrected_authors.txt', 'a') as f:
             f.write(warn + '\n')
