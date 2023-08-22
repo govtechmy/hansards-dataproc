@@ -71,3 +71,7 @@ Run `tabulate_hansards.py` to tabulate the hansards into a CSV file.'
 - _Dewan ketawa_
 - _Dewan riuh_
 - _Pembesar suara dimatikan_
+
+# Cautionary notes
+- Be careful when berbelah bahagi shows up. Some Hansards present it differently than others. Usually, it will have the keywords hadir, bersetuju, and undi, and are usually bolded and lowercased, except for 17072019 where it is uppercased and hence parsed as a level_2.
+- 30112020 and 23032022

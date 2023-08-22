@@ -172,6 +172,8 @@ def get_author_and_speech(text, warn=''):
                    r"(Maria Chin binti Abdullah \[Petaling Jaya]:)|"
                    r"(Seorang Ahli /Tuan Abdul Latiff bin Abdul Rahman \[Kuala Krai]:)|"
                    r"(Seri Tiong King Sing \[Bintulu]:)|"
+                   r"(Teresa Kok Suh Sim:)|"
+                   r"(Zuraida binti Kamaruddin:)|"
                    r"(Kelvin Yii Lee Wuen \[Bandar Kuching]:))", text):
         # special cases, the Dewan Rakyat did not give them salutatory titles
         author, speech = text.split(':', maxsplit=1)
@@ -273,8 +275,9 @@ def tabulate(hansard_date):
     dewan_tangguh = False
     while row_id + 1 < num_rows:
         row_id += 1
-        if row_id == 795:
+        if "158. YB. Tuan Yamani Hafez bin Musa (Sipitang)\n" == text[row_id]:
             print()
+
         # run until DOA first
         if 'DOA' == text[row_id].strip():
             doa_seen = True
@@ -377,7 +380,7 @@ def tabulate(hansard_date):
                     f.write(f'{hansard_date} with num bold: {num_bold}\n{stray_bold}\n')
                 continue
 
-            if current['author'] == "" and current['level_1'] != '':
+            if current['author'] == "" and current['speech'] == '' and current['level_1'] != '':
                 # most likely a level_2 immediately following a level_1
                 # usually a chain of bolds
                 add_idx = 1
@@ -534,11 +537,17 @@ def tabulate(hansard_date):
                 add_idx += 1
 
     # post-tabulation warnings
-    # check if annotation is too long, usually missing ]
+    # check if annotation is too long, usually missing ], or without erros it is usually [Diputuskan,
     for speech in speeches:
         if speech[4] == "ANNOTATION" and speech[5].count('\n') > 5:
             with open("warnings/annotation_too_long.txt", 'a') as f:
                 f.write(f'{hansard_date}\n{speech[5]}\n\n')
+
+    # check for uppercased misidentified non-authors
+    for speech in speeches:
+        if speech[4] != "ANNOTATION" and upper_lower_ratio(speech[4]) > 0.8:
+            with open("warnings/uppercased_non_author.txt", 'a') as f:
+                f.write(f'{hansard_date}\n{speech[4]}\n\n')
     # export speeches to csv
     with open(f'{dir_path}result.csv', mode='w', newline='') as file:
         writer = csv.writer(file)
@@ -549,7 +558,7 @@ def tabulate(hansard_date):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("hansard_date", help="hansard_date eg. 23052023",
-                        default="09032022", nargs="?")
+                        default="17072019", nargs="?")
     # Parse arguments
     args = parser.parse_args()
     tabulate(args.hansard_date)

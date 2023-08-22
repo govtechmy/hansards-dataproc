@@ -29,10 +29,10 @@ hansard_dates = [x[3:3 + 8] for x in filenames]
 #     parse_pdf.parse_hansard(hansard_date)
 
 # for pre-tabulation
-# with open("matched_tables.txt", "w") as f:
-#     f.write("")
-# for hansard_date in tqdm(hansard_dates):
-#     pretabulation_processing.preprocess(hansard_date)
+with open("matched_tables.txt", "w") as f:
+    f.write("")
+for hansard_date in tqdm(hansard_dates):
+    pretabulation_processing.preprocess(hansard_date)
 
 edit_hansards.edit_hansards()
 
@@ -46,6 +46,7 @@ tabulation_files_for_deletion = [
     "warnings/level_2_following_level_1.txt",
     "warnings/in-text-bold.txt",
     "warnings/annotation_too_long.txt",
+    "warnings/uppercased_non_author.txt",
 ]
 
 for file in tabulation_files_for_deletion:

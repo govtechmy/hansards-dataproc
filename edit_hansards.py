@@ -599,10 +599,10 @@ def edit_hansards():
             'none')
 
     replace('13112018',
-            "Tuan Yang di-Pertua Yang Berhormat Kinabatangan.\n",
-            "Tuan Yang di-Pertua: Yang Berhormat Kinabatangan.\n",
-            '1111 1111 1111111111 0000 000000000 0000000000000\n',
-            'none')
+            "Tuan Yang di-Pertua Yang Berhormat Kinabatangan. [Dewan riuh] Kita ikut\n",
+            "Tuan Yang di-Pertua: Yang Berhormat Kinabatangan. [Dewan riuh] Kita ikut\n",
+            '1111 1111 1111111111 0000 000000000 0000000000000 000000 00000 0000 0000\n',
+            '0000 0000 0000000000 0000 000000000 0000000000000 111111 11111 0000 0000\n')
 
     replace('03122018',
             "silakan. Datuk Seri Panglima Madius Tangau [Tuaran]: Subjek yang sama.\n",
