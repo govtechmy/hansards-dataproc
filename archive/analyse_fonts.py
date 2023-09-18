@@ -42,7 +42,7 @@ Unembedded Fonts
 '''
 
 '''
-DR-01112021
+DN-01112021
 Font List
 ['/Arial-BoldItalicMT',
  '/Arial-BoldMT',
@@ -83,7 +83,7 @@ def walk(obj, fnt, emb):
 
 
 if __name__ == '__main__':
-    fname = 'src_hansard/2021/DR-01112021.pdf'
+    fname = 'src_hansard/2021/DN-01112021.pdf'
     pdf = PdfFileReader(fname)
     fonts = set()
     embedded = set()

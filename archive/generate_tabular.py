@@ -305,7 +305,7 @@ def speaker_probability(text):
 def get_categories(hansard_date):
     _all_text = ""
     year = hansard_date[-4:]
-    with pdfplumber.open('src_hansard/downloads/' + year + '/DR-' + hansard_date + '.pdf') as pdf:
+    with pdfplumber.open('src_hansard/downloads/' + year + '/DN-' + hansard_date + '.pdf') as pdf:
         # locate KANDUNGAN
         for idx, page in enumerate(pdf.pages):
             with open('preprocessed_hansard/' + hansard_date + '/' + str(idx) + '.txt', 'r') as f:
@@ -361,7 +361,7 @@ def get_content(hansard_date):
     year = hansard_date[-4:]
     day, month, year = [re.sub('^0', '', x) for x in [day, month, year]]
     hansard_date_2 = '.'.join([day, month, year])
-    with pdfplumber.open('src_hansard/downloads/' + year + '/DR-' + hansard_date + '.pdf') as pdf:
+    with pdfplumber.open('src_hansard/downloads/' + year + '/DN-' + hansard_date + '.pdf') as pdf:
         for idx, page in enumerate(pdf.pages):
             with open('preprocessed_hansard/' + hansard_date + '/' + str(idx) + '.txt', 'r') as f:
                 text = f.readlines()

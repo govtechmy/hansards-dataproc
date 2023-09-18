@@ -42,7 +42,7 @@ def parse_hansard(hansard_date):
 
     doa_seen = False
     doa_idx = -1
-    with pdfplumber.open(f'{base_path}/src_hansard/{year}/DR-{hansard_date}.pdf') as pdf:
+    with pdfplumber.open(f'{base_path}/src_hansard/{year}/DN-{hansard_date}.pdf') as pdf:
         for idx, page in enumerate(tqdm(pdf.pages)):
             if not doa_seen:
                 if 'DOA' in page.extract_text():
@@ -50,8 +50,11 @@ def parse_hansard(hansard_date):
                     doa_idx = idx
                 else:
                     continue
-            text += page.extract_text() + '\n'  # add newline to separate pages
-            if hansard_date == "09072019":
+            if hansard_date == "14102021":
+                text += page.extract_text(x_tolerance=1) + '\n'
+            else:
+                text += page.extract_text() + '\n'  # add newline to separate pages
+            if hansard_date == "29042019":
                 # special case where snap tolerance doesn't work
                 current_tables = page.filter(
                     not_invisible_rect).extract_tables()
@@ -118,7 +121,7 @@ def parse_hansard(hansard_date):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("hansard_date", help="hansard_date eg. 23052023",
-                        default="09072019", nargs="?")
+                        default="14102021", nargs="?")
     # Parse arguments
     args = parser.parse_args()
     parse_hansard(args.hansard_date)

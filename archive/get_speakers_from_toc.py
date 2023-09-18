@@ -4,7 +4,7 @@ import generate_tabular
 
 def get_speakers_from_toc(hansard_date):
     year = hansard_date[-4:]
-    with pdfplumber.open('src_hansard/downloads/' + year + '/DR-' + hansard_date + '.pdf') as pdf:
+    with pdfplumber.open('src_hansard/downloads/' + year + '/DN-' + hansard_date + '.pdf') as pdf:
         total_page_num = len(pdf.pages)
     started = False
     all_text = ''

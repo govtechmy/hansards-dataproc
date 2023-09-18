@@ -12,7 +12,7 @@ def get_filenames_in_folder(folder_path_):
 filenames = []
 filenames += get_filenames_in_folder("../src_hansard/2023")
 # for 15th parliament only
-# filenames += ["DR-19122022.pdf", "DR-20122022"]
+# filenames += ["DN-19122022.pdf", "DN-20122022"]
 filenames += get_filenames_in_folder("../src_hansard/2022")
 filenames += get_filenames_in_folder("../src_hansard/2021")
 filenames += get_filenames_in_folder("../src_hansard/2020")

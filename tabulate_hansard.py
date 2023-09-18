@@ -36,7 +36,7 @@ def get_timestamp_from_annotation(text):
 
 def standardise_timestamp(timestamp):
     numbers = ''.join(re.findall(r'\d+', timestamp))
-    assert len(numbers) != 0
+    assert len(numbers) != 0, f'Expected timestamp to have numbers but got {timestamp}'
     if len(numbers) < 3:
         # 10 pagi
         numbers += '00'
@@ -142,9 +142,10 @@ def get_author_and_speech(text, bold, italics, warn=''):
         speech = text[split_idx + 2:]
         speech_bold = bold[split_idx + 2:]
         speech_italics = italics[split_idx + 2:]
-    elif re.search(r'^\d{1,2}\.? [A-Za-z `.’\'@\/\-()]+\[[A-Za-z \-]+]:? *[Mm](em)?inta', text):
+    elif re.search(r'^\d{1,2}\.? [A-Za-z `.’\'@\/\-()]+:? *[Mm](em)?inta', text):
         # JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN
         # 1. Tuan Tan Kok Wai [Cheras] minta Menteri Pembangunan Usahawan menyatakan,
+        # Different from DR in that these don't have constituencies
         split_idx = text.find('minta')
         if split_idx == -1:
             split_idx = text.find('Minta')
@@ -698,7 +699,12 @@ def tabulate(hansard_date):
     old_timestamp_list = [speech[3] for speech in speeches]
     # standardise timestamps into 24 hour format
     for row_id in range(len(speeches)):
-        speeches[row_id][3] = standardise_timestamp(speeches[row_id][3])
+        try:
+            speeches[row_id][3] = standardise_timestamp(speeches[row_id][3])
+        except AssertionError:
+            print(f'WARN: timestamp not in expected format: {hansard_date}\n{speeches[row_id][3]}')
+            with open("warnings/timestamp_not_in_expected_format.txt", 'a') as f:
+                f.write(f'{hansard_date}\n{speeches[row_id][3]}\n\n')
 
     # post-tabulation warnings
     # check if annotation is too long, usually missing ].
@@ -734,7 +740,7 @@ def tabulate(hansard_date):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("hansard_date", help="hansard_date eg. 23052023",
-                        default="06032023", nargs="?")
+                        default="14102021", nargs="?")
     # Parse arguments
     args = parser.parse_args()
     tabulate(args.hansard_date)

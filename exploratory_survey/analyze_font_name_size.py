@@ -31,7 +31,7 @@ def process_file(hansard_date):
     year = hansard_date[-4:]
     size_dict = {}
     font_dict = {}
-    with pdfplumber.open('src_hansard/' + year + '/DR-' + hansard_date + '.pdf') as pdf:
+    with pdfplumber.open('src_hansard/' + year + '/DN-' + hansard_date + '.pdf') as pdf:
         sortable_date = f'{hansard_date[-4:]}-{hansard_date[2:3]}-{hansard_date[:2]}'  # YYYY-MM-DD
         dir_path = f"preprocessed/{sortable_date}/"
         if not os.path.isdir(dir_path):

@@ -29,7 +29,7 @@ def get_categories(hansard_date):
     sortable_date = f'{hansard_date[-4:]}-{hansard_date[2:4]}-{hansard_date[:2]}'  # YYYY-MM-DD
     logged_long_toc = False
     kandungan_seen = False
-    with pdfplumber.open('../src_hansard/' + year + '/DR-' + hansard_date + '.pdf') as pdf:
+    with pdfplumber.open('../src_hansard/' + year + '/DN-' + hansard_date + '.pdf') as pdf:
         for idx, page in enumerate(pdf.pages):
             # skip until TOC
             extracted_text = page.extract_text()

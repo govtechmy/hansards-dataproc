@@ -14,7 +14,7 @@ def get_filenames_in_folder(folder_path_):
 filenames = []
 filenames += get_filenames_in_folder("src_hansard/2023")
 # for 15th parliament only
-# filenames += ["DR-19122022.pdf", "DR-20122022"]
+# filenames += ["DN-19122022.pdf", "DN-20122022"]
 filenames += get_filenames_in_folder("src_hansard/2022")
 filenames += get_filenames_in_folder("src_hansard/2021")
 filenames += get_filenames_in_folder("src_hansard/2020")
@@ -29,11 +29,11 @@ hansard_dates = [x[3:3 + 8] for x in filenames]
 #     parse_pdf.parse_hansard(hansard_date)
 
 # for pre-tabulation
-# with open("matched_tables.txt", "w") as f:
-#     f.write("")
-# for hansard_date in tqdm(hansard_dates):
-#     pretabulation_processing.preprocess(hansard_date)
-# 
+with open("matched_tables.txt", "w") as f:
+    f.write("")
+for hansard_date in tqdm(hansard_dates):
+    pretabulation_processing.preprocess(hansard_date)
+
 # edit_hansards.edit_hansards()
 
 # for tabulation

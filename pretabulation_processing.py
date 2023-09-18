@@ -10,10 +10,10 @@ import json
 
 def is_header(text):
     # returns the page number if it is the following form, else None
-    # DR.28.3.2023 1
-    # 2                                                               DR 8.3.2018
-    # DR 8.3.2018                                                                  1
-    return re.fullmatch(r'[ .\d]*DR[ .\d]*\n', text)
+    # DN.28.3.2023 1
+    # 2                                                               DN 8.3.2018
+    # DN 8.3.2018                                                                  1
+    return re.fullmatch(r'[ .\d]*DN[ .\d]*\n', text)
 
 
 def get_page_number(header_text):
@@ -21,14 +21,14 @@ def get_page_number(header_text):
     # special case of 12.11.2019
     if '12.11.201 ' in header_text:
         header_text = header_text.replace('12.11.201 ', '12.11.2019 ')
-    if header_text.startswith('DR'):
+    if header_text.startswith('DN'):
         # some numbers might be in the form 1  1
         # some years are 2023.
         # some years missing end (2019 becomes 201)
         # get the page number after the year
         return re.split(r'\d{4}\.?', header_text)[-1].replace(' ', '')
     else:
-        return header_text.split('DR')[0].replace(' ', '')
+        return header_text.split('DN')[0].replace(' ', '')
 
 
 def mimic_table_as_plaintext(table):
@@ -72,8 +72,8 @@ def preprocess(hansard_date):
     with open(f"{input_dir}tables.json", 'r') as f:
         wrapped_tables_of_page = json.load(f)
 
-    # 23032022 has highlighted misidentified table
-    if hansard_date == '23032022':
+    # 18102021 has highlighted misidentified table
+    if hansard_date == '18102021':
         wrapped_tables_of_page = []
     # the items are page number, page number since DOA, and tables
     tables_of_page = [page[-1] for page in wrapped_tables_of_page]
@@ -81,11 +81,6 @@ def preprocess(hansard_date):
     for _tables in tables_of_page:
         tables += _tables
 
-    # 051022021 has vertical cells in its third table, need reassignment
-    if hansard_date == '05102021':
-        with open('edit_05102021.json', 'r') as f:
-            edit_05102021 = json.load(f)
-        tables[3] = edit_05102021
     for table in tables:
         # replace None with empty strings
         for row_idx in range(len(table)):
@@ -227,7 +222,7 @@ def preprocess(hansard_date):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("hansard_date", help="hansard_date eg. 12102021",
-                        default="21022023", nargs="?")
+                        default="14102021", nargs="?")
     # Parse arguments
     args = parser.parse_args()
     preprocess(args.hansard_date)

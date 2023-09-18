@@ -81,7 +81,7 @@ def add_markup(chars, newlines_only=False, pure_raw=False):
 def process_file(hansard_date, page_num=-1):
     dir_path = "preprocessed_hansard/" + hansard_date
     year = hansard_date[-4:]
-    with pdfplumber.open('src_hansard/downloads/' + year + '/DR-' + hansard_date + '.pdf') as pdf:
+    with pdfplumber.open('src_hansard/downloads/' + year + '/DN-' + hansard_date + '.pdf') as pdf:
         # print("adding markup...")
         if not os.path.isdir(dir_path):
             os.mkdir(dir_path)
