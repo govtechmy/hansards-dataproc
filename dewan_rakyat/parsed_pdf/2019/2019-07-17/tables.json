@@ -1,0 +1,139 @@
+[
+    [
+        29,
+        16,
+        [
+            [
+                [
+                    "Julat Umur",
+                    "Prevalens (Peratus)"
+                ],
+                [
+                    "18 tahun hingga 19 tahun",
+                    "5.5"
+                ],
+                [
+                    "20 tahun hingga 24 tahun",
+                    "5.9"
+                ],
+                [
+                    "25 tahun hingga 29 tahun",
+                    "8.9"
+                ]
+            ],
+            [
+                [
+                    "Julat Umur",
+                    "Prevalens (Peratus)"
+                ],
+                [
+                    "18 tahun hingga 19 tahun",
+                    "6.7"
+                ],
+                [
+                    "20 tahun hingga 24 tahun",
+                    "9.4"
+                ],
+                [
+                    "25 tahun hingga 29 tahun",
+                    "13.2"
+                ]
+            ]
+        ]
+    ],
+    [
+        30,
+        17,
+        [
+            [
+                [
+                    "Julat Umur",
+                    "Prevalens (Peratus)"
+                ],
+                [
+                    "18 tahun hingga 19 tahun",
+                    "22"
+                ],
+                [
+                    "20 tahun hingga 24 tahun",
+                    "26.5"
+                ],
+                [
+                    "25 tahun hingga 29 tahun",
+                    "33.7"
+                ]
+            ],
+            [
+                [
+                    "Julat Umur",
+                    "Prevalens (Peratus)"
+                ],
+                [
+                    "18 tahun hingga 19 tahun",
+                    "11.7"
+                ],
+                [
+                    "20 tahun hingga 24 tahun",
+                    "12"
+                ],
+                [
+                    "25 tahun hingga 29 tahun",
+                    "18.3"
+                ]
+            ]
+        ]
+    ],
+    [
+        35,
+        22,
+        [
+            [
+                [
+                    "Negeri",
+                    null,
+                    "Peratusan dijual"
+                ],
+                [
+                    "Wilayah Persekutuan Kuala Lumpur",
+                    null,
+                    "89.13"
+                ],
+                [
+                    "Selangor",
+                    null,
+                    "100.00"
+                ],
+                [
+                    "Melaka",
+                    null,
+                    "100.00"
+                ],
+                [
+                    "Pahang",
+                    null,
+                    "94.38"
+                ],
+                [
+                    "Sarawak",
+                    "Lambir",
+                    "99.6"
+                ],
+                [
+                    null,
+                    "Samarahan",
+                    "89.44"
+                ],
+                [
+                    null,
+                    "Sungai Tengah",
+                    "99.54"
+                ],
+                [
+                    "Perak (Seri Iskandar)",
+                    null,
+                    "100.00"
+                ]
+            ]
+        ]
+    ]
+]
