@@ -1,12 +1,7 @@
-/hansard_malaysia/preprocessed_hansard/*
-/hansard_malaysia/src_hansard/*
+/dewan_negara/src_hansard/*
+/dewan_rakyat/src_hansard/*
 .idea
 .DS_Store
-/hansard_malaysia/test_speakers.csv
-/hansard_malaysia/dict_log.txt
-/hansard_malaysia/error-log-speakers.csv
-/hansard_malaysia/todo-penggal-1.csv
-/hansard_malaysia/todo-penggal-3.csv
 !/hansard_malaysia/upload_to_s3.py
 !/secret.json
 !/token.json
