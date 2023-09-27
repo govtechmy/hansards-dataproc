@@ -1,4 +1,4 @@
-This project aims to digitalise the Malaysian Dewan Rakyat Hansards from the PDFs available at the [official Parliament website](https://www.parlimen.gov.my/hansard-dewan-rakyat.html).
+This project aims to digitalise the Malaysian [Dewan Rakyat](https://www.parlimen.gov.my/hansard-dewan-rakyat.html?uweb=dr&) and [Dewan Negara](https://www.parlimen.gov.my/hansard-dewan-negara.html?uweb=dn&) Hansards.
 
 ## Usage
 1. Install requirements `pip install -r requirements.txt`
@@ -8,7 +8,7 @@ This project aims to digitalise the Malaysian Dewan Rakyat Hansards from the PDF
 
 To be specific, these files will be run in order.
 
-Run `parse_pdf.py` to get the four output files of plaintext, binary bold and italic files (as 0, 1, or whitespaces) and tables.json. Th parsing will only process the content from DOA onwards (ignores table of contents and MP attendance).
+Run `parse_pdf.py` to get the four output files of plaintext, binary bold and italic files (as 0, 1, or whitespaces) and tables.json. The parsing will only process the content from DOA onwards (ignores table of contents and MP attendance).
 
 Run `pretabulation_processing.py` to insert tables and to remove header rows, and other processing.
 
