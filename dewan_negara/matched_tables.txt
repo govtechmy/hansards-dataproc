@@ -1,1303 +1,205 @@
-30032023
-Anchor row is: Komunikasi, kandungan dan infrastruktur 6
+06122017
+Anchor row is: Seberang Perai Selatan 165
 Table text similarity score is: 100
 Table text is:
 ___
-SEKTOR DIASPORA MALAYSIA PERATUS (%)
-Minyak, gas dan tenaga 21
-Perkhidmatan kewangan 15
-Perkhidmatan dan profesional 10
-Perubatan dan kesihatan 8
-Komunikasi, kandungan dan infrastruktur 6
+Daerah Jumlah Penerimaan Hujan 
+(mm)
+Timur Laut 289
+Barat Daya 237
+Seberang Perai Utara 372
+Seberang Perai Tengah 327
+Seberang Perai Selatan 165
 
 ___
 
 Candidate text is:
 ___
-SEKTOR DIASPORA MALAYSIA  PERATUS (%) 
-Minyak, gas dan tenaga  21 
-Perkhidmatan kewangan  15 
-Perkhidmatan dan profesional  10 
-Perubatan dan kesihatan  8 
-Komunikasi, kandungan dan infrastruktur  6 
+Daerah  Jumlah Penerimaan Hujan 
+(mm) 
+Timur Laut  289 
+Barat Daya  237 
+Seberang Perai Utara  372 
+Seberang Perai Tengah  327 
+Seberang Perai Selatan  165 
 
 ___
 
-21062023
-Anchor row is: Jumlah 963.65
+14082017
+Anchor row is: Jumlah 28,365
 Table text similarity score is: 100
 Table text is:
 ___
-Tahun Bantuan (RM juta)
-2020 5.4
-2021 113.6
-2022 844.62
-Jumlah 963.65
+Tahun Bilangan Kes Penderaan
+2010 3,257
+2011 3,428
+2012 3,831
+2013 4,119
+2014 4,295
+2015 4,453
+2016 4,982
+Jumlah 28,365
 
 ___
 
 Candidate text is:
 ___
-Tahun  Bantuan (RM juta) 
-2020  5.4 
-2021  113.6 
-2022  844.62 
-Jumlah  963.65 
+Tahun  Bilangan Kes Penderaan 
+2010  3,257 
+2011  3,428 
+2012  3,831 
+2013  4,119 
+2014  4,295 
+2015  4,453 
+2016  4,982 
+Jumlah  28,365 
 
 ___
 
-28032023
-Anchor row is: Kapit 17
+14082017
+Anchor row is: Lain-lain 638
 Table text similarity score is: 100
 Table text is:
 ___
-NEGERI BILANGAN KES SIFILIS
-Kuching 234
-Sibu 89
-Miri 93
-Bintulu 81
-Kapit 17
+Bangsa (Mangsa) Orang
+Melayu 3,518
+Cina 4,089
+India 1,151
+Lain-lain 638
 
 ___
 
 Candidate text is:
 ___
-NEGERI  BILANGAN KES SIFILIS 
-Kuching  234 
-Sibu  89 
-Miri  93 
-Bintulu  81 
-Kapit  17 
+Bangsa (Mangsa)  Orang 
+Melayu  3,518 
+Cina  4,089 
+India  1,151 
+Lain-lain  638 
 
 ___
 
-28032023
-Anchor row is: Kapit 15
+14082017
+Anchor row is: 60 ke atas 575
 Table text similarity score is: 100
 Table text is:
 ___
-NEGERI BILANGAN KES GONORRHEA
-Kuching 213
-Sibu 44
-Miri 48
-Bintulu 55
-Kapit 15
+Umur (Tahun) Orang
+Bawah 25 1,076
+26 hingga 35 1,956
+36 hingga 45 1,220
+46 hingga 59 969
+60 ke atas 575
 
 ___
 
 Candidate text is:
 ___
-NEGERI  BILANGAN KES GONORRHEA 
-Kuching  213 
-Sibu  44 
-Miri  48 
-Bintulu  55 
-Kapit  15 
+Umur (Tahun)  Orang 
+Bawah 25  1,076 
+26 hingga 35  1,956 
+36 hingga 45  1,220 
+46 hingga 59  969 
+60 ke atas  575 
 
 ___
 
-28032023
-Anchor row is: Bintulu 38
+14082017
+Anchor row is: Lain-lain 610
 Table text similarity score is: 100
 Table text is:
 ___
-NEGERI BILANGAN KES HIV
-Kuching 85
-Sibu 15
-Miri 28
-Bintulu 38
-Kapit 6
+Bangsa (Pelaku) Orang
+Melayu 3,528
+Cina 508
+India 1156
+Lain-lain 610
 
 ___
 
 Candidate text is:
 ___
-NEGERI  BILANGAN KES HIV 
-Kuching  85 
-Sibu  15 
-Miri  28 
-Bintulu  38 
-Kapit  6 
+Bangsa (Pelaku)  Orang 
+Melayu  3,528 
+Cina  508 
+India  1156 
+Lain-lain  610 
 
 ___
 
-26062023
-Anchor row is: Jumlah 81,692 2.6 bilion
+14082017
+Anchor row is: 60 ke atas 97
 Table text similarity score is: 100
 Table text is:
 ___
-KES JENAYAH STATISTIK JUMLAH KERUGIAN 
-(RM/JUTA)
-Scam belian online 33,073 365
-Pinjaman tidak wujud 20,360 210
-Love scam 5,761 268
-Phone scam 10,925 637
-Scam pelaburan 10,718 984
-Business e-mail compromise 207 134
-Tipu menggunakan SMS 648 7.5
-Jumlah 81,692 2.6 bilion
+Umur (Tahun) Orang
+Bawah 25 965
+26 hingga 35 2,546
+36 hingga 45 1,530
+46 hingga 59 664
+60 ke atas 97
 
 ___
 
 Candidate text is:
 ___
-KES JENAYAH  STATISTIK  JUMLAH KERUGIAN 
-(RM/JUTA) 
- 
-Scam belian online  33,073  365 
-Pinjaman tidak wujud  20,360  210  
-Love scam  5,761  268 
-Phone scam  10,925  637 
-Scam pelaburan  10,718  984 
-Business e-mail compromise  207  134 
-Tipu menggunakan SMS  648  7.5 
-Jumlah  81,692            2.6 bilion 
+Umur (Tahun)  Orang 
+Bawah 25  965 
+26 hingga 35  2,546 
+36 hingga 45  1,530 
+46 hingga 59  664 
+60 ke atas  97 
 
 ___
 
-03042023
-Anchor row is: 2022 24,295,863
+07122017
+Anchor row is: 2016 156,632 61.0
 Table text similarity score is: 100
 Table text is:
 ___
-Tahun Jumlah kutipan (RM)
-2018 24,768,760
-2019 46,747,851
-2020 11,481,196
-2021 5,111,050
-2022 24,295,863
+Tahun  Bilang Akaun  (RM bilion) 
+2012 191,334 64.1
+2013 204,506 81.2
+2014 183,061 74.0
+2015 157,107 61.9
+2016 156,632 61.0
 
 ___
 
 Candidate text is:
 ___
-Tahun  Jumlah kutipan (RM) 
-2018  24,768,760 
-2019  46,747,851 
-2020  11,481,196 
-2021    5,111,050 
-2022  24,295,863 
+Tahun  Bilang Akaun 
+(RM bilion) 
+2012  191,334  64.1 
+2013  204,506  81.2 
+2014  183,061  74.0 
+2015  157,107  61.9 
+2016  156,632  61.0 
 
 ___
 
-27032023
-Anchor row is: 3. Sains semula jadi, matematik dan statistik 19.6 28
-Table text similarity score is: 94
-Table text is:
-___
-Bil.  Bidang  (%)  graduan  
-1. Kejuruteraan, pembuatan dan pembinaan 25.6 (orang) 
-38
-2. Perniagaan, pentadbiran dan perundangan 21.0 30
-3. Sains semula jadi, matematik dan statistik 19.6 28
-
-___
-
-Candidate text is:
-___
-Bil.  Bidang  graduan  
-(%) 
-(orang) 
-1.  Kejuruteraan, pembuatan dan pembinaan  25.6  38 
-2.  Perniagaan, pentadbiran dan perundangan  21.0  30 
-3.  Sains semula jadi, matematik dan statistik  19.6  28 
-
-___
-
-27032023
-Anchor row is: 2023 (setakat 28 Februari) 75
+13122017
+Anchor row is: 2017 (sehingga Oktober) 4,129
 Table text similarity score is: 100
 Table text is:
 ___
-Tahun Bilangan (kes)
-2019 730
-2020 687
-2021 656
-2022 537
-2023 (setakat 28 Februari) 75
+Tahun Jumlah Pesalah
+2013 4,944
+2014 4,568
+2015 4,027
+2016 4,358
+2017 (sehingga Oktober) 4,129
 
 ___
 
 Candidate text is:
 ___
-Tahun  Bilangan (kes) 
-2019  730 
-2020  687 
-2021  656 
-2022  537 
-2023 (setakat 28 Februari)  75 
-
-___
-
-04042023
-Anchor row is: 3. 2022 5,695
-Table text similarity score is: 100
-Table text is:
-___
-Bil Tahun Jumlah (Kes)
-1. 2020 8,351
-2. 2021 6,554
-3. 2022 5,695
-
-___
-
-Candidate text is:
-___
-Bil  Tahun  Jumlah (Kes) 
-1.  2020  8,351 
-2.  2021  6,554 
-3.  2022  5,695 
-
-___
-
-28032022
-Anchor row is: Tahun Bilangan Aduan
-Table text similarity score is: 100
-Table text is:
-___
-Tahun Bilangan Aduan
-2020 18
-2021 5
-2022 22
-
-___
-
-Candidate text is:
-___
-Tahun  Bilangan Aduan 
-2020  18 
-2021  5 
-2022  22 
-
-___
-
-15122021
-Anchor row is: Jumlah Keseluruhan 4,286
-Table text similarity score is: 100
-Table text is:
-___
-Kawasan Jumlah Lesen
-Bandar Tun Razak 929
-Batu 489
-Bukit Bintang 307
-Cheras 240
-Kepong 194
-Lembah Pantai 258
-Segambut 319
-Seputeh 212
-Setiawangsa 440
-Kawasan Jumlah Lesen
-Titiwangsa 440
-Wangsa Maju 456
-Zon 3 2
-Jumlah Keseluruhan 4,286
-
-___
-
-Candidate text is:
-___
-Kawasan  Jumlah Lesen 
- 
-Bandar Tun Razak  929 
-Batu  489 
-Bukit Bintang  307 
-Cheras  240 
-Kepong  194 
-Lembah Pantai  258 
-Segambut  319 
-Seputeh  212 
-Setiawangsa  440 
-   
-Kawasan  Jumlah Lesen 
-   
-Titiwangsa  440 
-Wangsa Maju  456 
-Zon 3  2 
-Jumlah Keseluruhan  4,286 
-
-___
-
-20122021
-Anchor row is: Sekolah Agama - 229
-Table text similarity score is: 98
-Table text is:
-___
-JENIS SEKOLAH SEKOLAH  SEKOLAH 
-KERAJAAN BANTUAN 
-KERAJAAN
-Sekolah Rendah 5,626 18
-Sekolah Menengah 2,072 4
-Sekolah Jenis Kebangsaan Cina 416 885
-Sekolah Jenis Kebangsaan Tamil 162 365
-Sekolah Mubaligh 10 368
-Conforming School 9 65
-Sekolah Agama - 229
-
-___
-
-Candidate text is:
-___
-  SEKOLAH  SEKOLAH 
-JENIS SEKOLAH  KERAJAAN  BANTUAN 
-KERAJAAN 
-Sekolah Rendah  5,626  18 
-Sekolah Menengah  2,072  4 
-Sekolah Jenis Kebangsaan Cina  416  885 
-Sekolah Jenis Kebangsaan Tamil  162  365 
-Sekolah Mubaligh  10  368 
-Conforming School  9  65 
-Sekolah Agama  -  229 
-
-___
-
-14102021
-Anchor row is: Thailand 1.9
-Table text similarity score is: 100
-Table text is:
-___
-Negara RM/Bilion
-Singapura 6.8
-China 4.2
-Thailand 1.9
-
-___
-
-Candidate text is:
-___
-Negara RM /Bilion
-Singapura 6.8
-China 4.2
-Thailand 1.9
-
-___
-
-21102021
-Anchor row is: Sabah 1,683
-Table text similarity score is: 96
-Table text is:
-___
-NEGERI JUMLAH PETISYEN 
-(PASANGAN BUKAN ISLAM)
-Kedah 1,513
-Perak 3,609
-Perlis 115
-Pahang 1,039
-Melaka 1,295
-Negeri Sembilan 1,975
-Kelantan 210
-Terengganu 83
-Pulau Pinang 4,423
-Sabah 1,683
-
-___
-
-Candidate text is:
-___
-  JUMLAH PETISYEN 
-NEGERI  (PASANGAN BUKAN ISLAM) 
- 
-Kedah  1,513 
-Perak  3,609 
-Perlis  115 
-Pahang  1,039 
-Melaka  1,295 
-Negeri Sembilan  1,975 
-Kelantan  210 
-Terengganu  83 
-Pulau Pinang  4,423 
-Sabah  1,683 
-
-___
-
-21102021
-Anchor row is: Wilayah Persekutuan 12,531
-Table text similarity score is: 100
-Table text is:
-___
-NEGERI JUMLAH PERMOHONAN 
-MAHKAMAH SYARIAH
-Kelantan 15,390
-Melaka 6,791
-Negeri Sembilan 9,730
-Pahang 14,101
-Perak 15,384
-Perlis 3,031
-Pulau Pinang 8,162
-Sabah 13,710
-Sarawak 6,789
-Terengganu 14,672
-Wilayah Persekutuan 12,531
-
-___
-
-Candidate text is:
-___
-NEGERI  JUMLAH PERMOHONAN 
-MAHKAMAH SYARIAH 
- 
-Kelantan  15,390 
-Melaka    6,791 
-Negeri Sembilan   9,730 
-Pahang                          14,101 
-Perak                          15,384 
-Perlis  3,031 
-Pulau Pinang  8,162 
-Sabah                          13,710 
-Sarawak  6,789 
-Terengganu                          14,672 
-Wilayah Persekutuan                          12,531 
-
-___
-
-13102021
-Anchor row is: Jumlah 60,037 100.00
-Table text similarity score is: 94
-Table text is:
-___
-Kaum  Permohonan  Peratusan (%) 
-Melayu 55,072             91.73
-Cina 270 0.45
-India 733 1.22
-Bumiputera Sabah 1,693 2.82
-Bumiputera Sarawak 1,502 2.50
-Orang Asli 162 0.27
-Lain-lain 605 1.01
-Jumlah 60,037 100.00
-
-___
-
-Candidate text is:
-___
-Kaum  Peratusan (%) 
-Permohonan 
-Melayu  55,072              91.73 
-Cina        270  0.45 
-India        733  1.22 
-Bumiputera Sabah     1,693  2.82 
-Bumiputera Sarawak      1,502  2.50 
-Orang Asli         162  0.27 
-Lain-lain         605  1.01 
-Jumlah   60,037            100.00 
-
-___
-
-17122020
-Anchor row is: Luar Negara (Status Warganegara) 1,279
-Table text similarity score is: 100
-Table text is:
-___
-Negeri Bil. Mahasiswa (orang)
-Selangor 66,726
-Johor 58,156
-Kelantan 51,043
-Perak 48,371
-Kuala Lumpur 47,716
-Kedah 42,301
-Sabah 33,382
-Sarawak 32,064
-Pahang 31,246
-Terengganu 28,907
-Pulau Pinang 25,846
-Negeri Sembilan 20,279
-Melaka 16,504
-Perlis 5,654
-Labuan 1,320
-Putrajaya 449
-Luar Negara (Status Warganegara) 1,279
-
-___
-
-Candidate text is:
-___
-Negeri  Bil. Mahasiswa (orang) 
-Selangor  66,726 
-Johor  58,156 
-Kelantan  51,043 
-Perak  48,371 
-Kuala Lumpur  47,716 
-Kedah  42,301 
-Sabah  33,382 
-Sarawak  32,064 
-Pahang  31,246 
-Terengganu  28,907 
-Pulau Pinang  25,846 
-Negeri Sembilan  20,279 
-Melaka  16,504 
-Perlis  5,654 
-Labuan  1,320 
-Putrajaya  449 
-Luar Negara (Status Warganegara)  1,279 
-
-___
-
-09092020
-Anchor row is: Pembangunan sosial dan kerohanian 9,756,026
-Table text similarity score is: 95
-Table text is:
-___
-Program Peruntukan 
-(RM)
-Pembangunan modal insan dan pendidikan 14,431,428
-Pembangunan keusahawanan dan kerjaya 5,943,428
-Pembangunan sosial dan kerohanian 9,756,026
-
-___
-
-Candidate text is:
-___
-Peruntukan 
-Program 
-(RM) 
-Pembangunan modal insan dan pendidikan  14,431,428 
-Pembangunan keusahawanan dan kerjaya   5,943,428 
-Pembangunan sosial dan kerohanian  9,756,026 
-
-___
-
-08092020
-Anchor row is: Lain-lain 458
-Table text similarity score is: 100
-Table text is:
-___
-WARGANEGARA BILANGAN (ORANG)
-Indonesia 4,767
-Myanmar 4,503
-Bangladesh 2,084
-Vietnam 886
-India 529
-China 341
-Cambodia 159
-Thailand 375
-Filipina 311
-Pakistan 189
-Lain-lain 458
-
-___
-
-Candidate text is:
-___
-WARGANEGARA  BILANGAN (ORANG) 
-Indonesia  4,767 
-Myanmar  4,503 
-Bangladesh  2,084 
-Vietnam  886 
-India  529 
-China  341 
-Cambodia  159 
-Thailand  375 
-Filipina  311 
-Pakistan  189 
-Lain-lain  458 
-
-___
-
-21092020
-Anchor row is: ‘PPUM’ 90
-Table text similarity score is: 100
-Table text is:
-___
-Hospital Pengajar Peruntukan (RM/juta)
-PPUM 410
-PPUKM 326
-HUSM 325
-HUIAM 160
-‘PPUM’ 90
-
-___
-
-Candidate text is:
-___
-Hospital Pengajar  Peruntukan (RM/juta) 
-PPUM  410 
-PPUKM  326 
-HUSM  325 
-HUIAM  160 
-‘PPUM’  90 
-
-___
-
-21092020
-Anchor row is: B.63 Kementerian Pendidikan Malaysia 5,923.3
-Table text similarity score is: 100
-Table text is:
-___
- Perkara Perbelanjaan 
-(RM/Juta)
-B.6 Jabatan Perdana Menteri 359.2
-B.10 Perbendaharaan 82.6
-B.15 Kementerian Hal Ehwal Ekonomi 336
-B.23 Kementerian Air, Tanah dan Sumber Asli 155.4
-B.30 Kementerian Tenaga, Sains, Teknologi,  253.9
-Alam Sekitar dan Perubahan Iklim
-B.32 Kementerian Wilayah Persekutuan 70.3
-B.46 Kementerian Sumber Manusia 2.8
-B.63 Kementerian Pendidikan Malaysia 5,923.3
-
-___
-
-Candidate text is:
-___
-  Perkara  Perbelanjaan 
-(RM/Juta) 
-B.6     Jabatan Perdana Menteri  359.2 
-B.10  Perbendaharaan  82.6 
-B.15  Kementerian Hal Ehwal Ekonomi  336 
-B.23  Kementerian Air, Tanah dan Sumber Asli  155.4 
-B.30  Kementerian Tenaga, Sains, Teknologi,  253.9 
-Alam Sekitar dan Perubahan Iklim 
-B.32  Kementerian Wilayah Persekutuan  70.3 
-B.46  Kementerian Sumber Manusia  2.8 
-B.63  Kementerian Pendidikan Malaysia  5,923.3 
-
-___
-
-16122019
-Anchor row is: Johor 10 5
-Table text similarity score is: 96
-Table text is:
-___
-Negeri Projek Bina  Projek Baik 
-Baharu  Pulih 
-(Bil.) (Bil.)
-Pahang 30 10
-Perak 30 15
-Kedah 30 15
-Kelantan 20 15
-Terengganu 20 15
-Selangor 10 5
-Negeri Sembilan 10 5
-Melaka 10 5
-Johor 10 5
-
-___
-
-Candidate text is:
-___
-  Projek Bina  Projek Baik 
-Negeri  Baharu  Pulih 
-(Bil.)  (Bil.) 
-Pahang   30  10 
-Perak   30  15 
-Kedah   30  15 
-Kelantan  20  15 
-Terengganu  20  15 
-Selangor  10    5 
-Negeri Sembilan  10    5 
-Melaka  10    5 
-Johor   10    5 
-
-___
-
-16122019
-Anchor row is: 2019 737,757.88 1,045,008.43
-Table text similarity score is: 100
-Table text is:
-___
-Tahun Bantuan Kebajikan  Bantuan Kebajikan Am 
-Pesakit (RM) (RM)
-2012 312,720.00 384,411.68
-2013 740,181.97 677,102.25
-2014 833,471.92 1,079,639.68
-2015 756,373.06 3,387,440.02
-2016 810,864.29 4,257,661.78
-2017 763,671.74 3,044,414.25
-2018 1,064,004.91 3,905,943.47
-2019 737,757.88 1,045,008.43
-
-___
-
-Candidate text is:
-___
-Tahun  Bantuan Kebajikan  Bantuan Kebajikan Am 
-Pesakit (RM)  (RM) 
-2012     312,720.00     384,411.68 
-2013     740,181.97     677,102.25 
-2014     833,471.92  1,079,639.68 
-2015     756,373.06  3,387,440.02 
-2016     810,864.29  4,257,661.78 
-2017     763,671.74  3,044,414.25 
-2018  1,064,004.91  3,905,943.47 
-2019     737,757.88  1,045,008.43 
-
-___
-
-16122019
-Anchor row is: Konstabel/Lans Koperal sokongan 7
-Table text similarity score is: 100
-Table text is:
-___
-Pangkat Orang (Bil.)
-ASP 1
-Subinspektor 1
-Sarjan Mejar 1
-Sarjan 3
-Koperal 7
-Konstabel/Lans Koperal 44
-Konstabel/Lans Koperal sokongan 7
-
-___
-
-Candidate text is:
-___
-Pangkat  Orang (Bil.) 
-ASP  1 
-Subinspektor  1 
-Sarjan Mejar  1 
-Sarjan  3 
-Koperal  7 
-Konstabel/Lans Koperal  44 
-Konstabel/Lans Koperal sokongan  7 
-
-___
-
-16122019
-Anchor row is: 3. Pertukaran urusan pemangkuan 111
-Table text similarity score is: 100
-Table text is:
-___
-Bil. Kategori Orang (Jum)
-1. Permohonan pertukaran 84
-2. Pertukaran pusingan kerja 108
-3. Pertukaran urusan pemangkuan 111
-
-___
-
-Candidate text is:
-___
-Bil.  Kategori  Orang (Jum) 
-1.  Permohonan pertukaran  84 
-2.  Pertukaran pusingan kerja  108 
-3.  Pertukaran urusan pemangkuan  111 
-
-___
-
-16122019
-Anchor row is: KLIA2 1,236
-Table text similarity score is: 100
-Table text is:
-___
-Lapangan Terbang CCTV (Jum.)
-Kota Kinabalu 238
-Kuching 114
-Pulau Pinang 258
-Langkawi 124
-KLIA 2,164
-KLIA2 1,236
-
-___
-
-Candidate text is:
-___
-Lapangan Terbang  CCTV (Jum.) 
-Kota Kinabalu  238 
-Kuching  114 
-Pulau Pinang  258 
-Langkawi  124 
-KLIA  2,164 
-KLIA2  1,236 
-
-___
-
-22042019
-Anchor row is: 14 Sarawak 250 1,963
-Table text similarity score is: 100
-Table text is:
-___
-BIL. NEGERI ELEKTRIK HIBRID
-1 Perlis 12 107
-2 Kedah 107 519
-3 Pulau Pinang 428 4,230
-4 Perak 64 1,937
-5 Selangor 2,791 3,147
-6 Wilayah Persekutuan 504 25,360
-7 Negeri Sembilan 29 861
-8 Melaka 111 949
-9 Johor 202 5,218
-10 Pahang 114 653
-11 Terengganu 9 308
-12 Kelantan 8 451
-13 Sabah 774 1,278
-14 Sarawak 250 1,963
-
-___
-
-Candidate text is:
-___
-BIL.  NEGERI  ELEKTRIK  HIBRID 
-1  Perlis  12  107 
-2  Kedah  107  519 
-3  Pulau Pinang  428  4,230 
-4  Perak  64  1,937 
-5  Selangor  2,791  3,147 
-6  Wilayah Persekutuan   504  25,360 
-7  Negeri Sembilan   29  861 
-8  Melaka  111  949 
-9  Johor   202  5,218 
-10  Pahang   114  653 
-11  Terengganu   9  308 
-12  Kelantan   8  451 
-13  Sabah  774  1,278 
-14  Sarawak   250  1,963 
-
-___
-
-29042019
-Anchor row is: Jumlah Keseluruhan  20  15,125
-Table text similarity score is: 100
-Table text is:
-___
-Status PPR   Jumlah Projek Jumlah Unit 
-Telah Siap  9  8,778 
-Dalam Pembinaan  8  4,547 
-Dalam Perancangan  3  1,800 
-Jumlah Keseluruhan  20  15,125 
-
-___
-
-Candidate text is:
-___
-Status PPR  Jumlah Projek  Jumlah Unit 
-Telah Siap  9  8,778 
-Dalam Pembinaan  8  4,547 
-Dalam Perancangan  3  1,800 
-Jumlah Keseluruhan  20  15,125 
-
-___
-
-29042019
-Anchor row is: Keseluruhan
-Table text similarity score is: 97
-Table text is:
-___
-Status  Bilangan   Peratus  Unit  Jumlah 
-(%) Pembeli
-  Projek      
-Perancangan awal 68   25  14,135 8,847 
-Sedang Dipulihkan 12   4  3,640 2,532 
-Siap Diduduki dan   198   71  53,130 35,610 
-Selesai
-Jumlah  278   100  70,905 46,989 
-Keseluruhan
-
-___
-
-Candidate text is:
-___
-Status  Bilangan   Peratus  Unit  Jumlah 
-Projek  (%)  Pembeli 
-Perancangan awal  68  25  14,135  8,847 
-Sedang Dipulihkan  12  4  3,640  2,532 
-Siap Diduduki dan   198  71  53,130  35,610 
-Selesai 
-Jumlah  278  100  70,905  46,989 
-Keseluruhan 
-
-___
-
-29042019
-Anchor row is: Sakit  314   45,550
-Table text similarity score is: 100
-Table text is:
-___
-Status Projek   Bilangan Projek   Unit Rumah
-Sakit  314   45,550 
-
-___
-
-Candidate text is:
-___
-Status Projek  Bilangan Projek  Unit Rumah 
-Sakit  314  45,550 
-
-___
-
-29042019
-Anchor row is: Jumlah   45
-Table text similarity score is: 100
-Table text is:
-___
- Negeri   Syarikat Pemegang AP 
-Selangor   16  
-Pulau Pinang   14  
-Johor   8  
-Kedah   3  
-Negeri Sembilan   3  
-Perak   1  
-Jumlah   45  
-
-___
-
-Candidate text is:
-___
-Negeri  Syarikat Pemegang AP 
-Selangor  16 
-Pulau Pinang  14 
-Johor  8 
-Kedah  3 
-Negeri Sembilan  3 
-Perak  1 
-Jumlah  45 
-
-___
-
-30042019
-Anchor row is: Kelantan 5
-Table text similarity score is: 100
-Table text is:
-___
-Negeri Bil. MPKK (buah)
-Kedah 33
-Perlis 11
-Kelantan 5
-Perak 3
-
-___
-
-Candidate text is:
-___
-Negeri  Bil. MPKK (buah) 
-Kedah  33 
-Perlis  11 
-Kelantan  5 
-Perak  3 
-
-___
-
-19122019
-Anchor row is: Lain-lain perniagaan 103
-Table text similarity score is: 100
-Table text is:
-___
-Kategori Jumlah Syarikat
-Makanan dan minuman 382
-Perkhidmatan dan penyelenggaraan 99
-Pusat pelajaran dan asuhan kanak-kanak 96
-Pakaian dan aksesori 87
-Rawatan kecantikan dan kesihatan 84
-Telekomunikasi, elektronik, teknologi maklumat  29
-dan komunikasi
-Kedai serbaneka dan pasar raya 19
-Lain-lain perniagaan 103
-
-___
-
-Candidate text is:
-___
-Kategori  Jumlah Syarikat  
-Makanan dan minuman  382 
-Perkhidmatan dan penyelenggaraan  99 
-Pusat pelajaran dan asuhan kanak-kanak  96 
-Pakaian dan aksesori  87 
-Rawatan kecantikan dan kesihatan  84 
-Telekomunikasi, elektronik, teknologi maklumat  29 
-dan komunikasi 
-Kedai serbaneka dan pasar raya  19 
-Lain-lain perniagaan  103 
-
-___
-
-03092018
-Anchor row is: Pengubahan wang haram 12 9
-Table text similarity score is: 100
-Table text is:
-___
-JENIS-JENIS JENAYAH TAHUN 2014  TAHUN 2016 
-(% / peratus) (% / peratus)
-Penyalahgunaan aset 65 57
-Rasuah 16 30
-Siber 31 30
-Pemalsuan perolehan 16 17
-Penipuan perakaunan 23 17
-Penipuan gadai janji 23 9
-Penipuan sumber manusia 12 9
-Pengubahan wang haram 12 9
-
-___
-
-Candidate text is:
-___
-JENIS-JENIS JENAYAH  TAHUN 2014  TAHUN 2016 
-(% / peratus)  (% / peratus) 
-Penyalahgunaan aset  65  57 
-Rasuah   16  30 
-Siber   31  30 
-Pemalsuan perolehan  16  17 
-Penipuan perakaunan   23  17 
-Penipuan gadai janji  23  9 
-Penipuan sumber manusia  12  9 
-Pengubahan wang haram   12  9 
-
-___
-
-28032018
-Anchor row is: 2017 224
-Table text similarity score is: 100
-Table text is:
-___
-TAHUN BILANGAN NGO
-2014 44
-2015 379
-2016 166
-2017 224
-
-___
-
-Candidate text is:
-___
-TAHUN  BILANGAN NGO 
-2014  44 
-2015  379 
-2016  166 
-2017  224 
-
-___
-
-28032018
-Anchor row is: Koperasi Bela Masyarakat Melaka  Kobemas Hotel Melaka
-Table text similarity score is: 100
-Table text is:
-___
-KOPERASI HOTEL
-Koperasi Permodalan FELDA  Hotel Tenera
-Berhad
-Koperasi Guru-guru Melayu Larut,  Hotel Taiping Perdana
-Matang, Selama dan Dinding 
-Taiping Berhad
-Koperasi Bela Masyarakat Melaka  Kobemas Hotel Melaka
-Berhad
-
-___
-
-Candidate text is:
-___
-KOPERASI  HOTEL 
- 
-Koperasi Permodalan FELDA  Hotel Tenera 
-Berhad  
-Koperasi Guru-guru Melayu Larut,  Hotel Taiping Perdana 
-Matang, Selama dan Dinding 
-Taiping Berhad 
-Koperasi Bela Masyarakat Melaka  Kobemas Hotel Melaka 
-Berhad  
-
-___
-
-26032018
-Anchor row is: Kelantan 2
-Table text similarity score is: 100
-Table text is:
-___
-Negeri (Pembida) Jumlah (Orang)
-Selangor 75
-Pahang 68
-Wilayah Persekutuan 40
-Johor 23
-Pulau Pinang 14
-Perak 10
-Negeri Sembilan 7
-Wilayah Persekutuan Putrajaya 6
-Melaka 5
-Kedah 5
-Terengganu 2
-Kelantan 2
-Sabah 1
-
-___
-
-Candidate text is:
-___
-Negeri (Pembida)  Jumlah (Orang) 
-Selangor  75 
-Pahang  68 
-Wilayah Persekutuan  40 
-Johor  23 
-Pulau Pinang  14 
-Perak  10 
-Negeri Sembilan  7 
-Wilayah Persekutuan Putrajaya  6 
-Melaka  5 
-Kedah  5 
-Terengganu  2 
-Kelantan  2 
-Sabah  1 
-
-___
-
-05042018
-Anchor row is: 2018 200 (setakat ini)
-Table text similarity score is: 100
-Table text is:
-___
-Tahun Jumlah kertas siasatan
-2013 976
-2014 919
-2015 982
-2016 985
-2017 863
-2018 200 (setakat ini)
-
-___
-
-Candidate text is:
-___
-Tahun  Jumlah kertas siasatan 
-2013  976 
-2014  919 
-2015  982 
-2016  985 
-2017  863 
-2018  200 (setakat ini) 
-
-___
-
-06122018
-Anchor row is: Kelantan 19
-Table text similarity score is: 100
-Table text is:
-___
-Negeri Menara Telekomunikasi
-Selangor 8
-Negeri Sembilan 12
-Kedah 1
-Perak 25
-Johor Bahru 11
-Pahang 19
-Kelantan 19
-
-___
-
-Candidate text is:
-___
-Negeri  Menara Telekomunikasi 
-Selangor  8 
-Negeri Sembilan  12 
-Kedah  1 
-Perak  25 
-Johor Bahru  11 
-Pahang  19 
-Kelantan  19 
-
-___
-
-27032018
-Anchor row is: Sabah 2 4
-Table text similarity score is: 100
-Table text is:
-___
-Negeri 2015 2016 2017
-Perlis 2 2 5
-Kedah Bilangan menurun  
-Pulau Pinang 18 10 16
-Perak 8 14 29
-Kuala Lumpur 7 5 7
-Selangor 8 14 29
-Negeri Sembilan 0 3 6
-Melaka 7 6 8
-Johor 9 10 42
-Pahang 14 5 20
-Terengganu 22 3 33
-Sarawak 18 7 32
-Sabah 2 4 
-
-___
-
-Candidate text is:
-___
-Negeri  2015  2016  2017 
-Perlis  2  2  5 
-Kedah  Bilangan menurun 
-Pulau Pinang  18  10  16 
-Perak  8  14  29 
-Kuala Lumpur  7  5  7 
-Selangor  8  14  29 
-Negeri Sembilan  0  3  6 
-Melaka  7  6  8 
-Johor  9  10  42 
-Pahang  14  5  20 
-Terengganu  22  3  33 
-Sarawak  18  7  32 
-Sabah  2  4   
-
-___
-
-19122018
-Anchor row is: Jumlah 417
-Table text similarity score is: 100
-Table text is:
-___
-Barangan Item
-Segar 136
-Kering 25
-Berbungkus (tin, pek, botol) 159
-Minuman 25
-Makanan dan barangan bayi 49
-Kebersihan 23
-Jumlah 417
-
-___
-
-Candidate text is:
-___
-Barangan   Item 
-Segar  136 
-Kering  25 
-Berbungkus (tin, pek, botol)  159 
-Minuman  25 
-Makanan dan barangan bayi  49 
-Kebersihan  23 
-Jumlah  417 
-
-___
-
-19122018
-Anchor row is: Jumlah 19.47 bilion
-Table text similarity score is: 100
-Table text is:
-___
-Kategori Tertunggak Amaun (RM)
-Telah diluluskan 1.45 bilion
-Dalam semakan 9.65 bilion
-Tiada pembekalan bercukai 3.9 bilion
-Isu lepasan 0.95 bilion
-Masih dalam siasatan 3.52 bilion
-Jumlah 19.47 bilion
-
-___
-
-Candidate text is:
-___
-Kategori Tertunggak  Amaun (RM) 
-Telah diluluskan  1.45 bilion 
-Dalam semakan  9.65 bilion 
-Tiada pembekalan bercukai  3.9 bilion 
-Isu lepasan  0.95 bilion 
-Masih dalam siasatan  3.52 bilion 
-Jumlah  19.47 bilion 
-
-___
-
-04042018
-Anchor row is: 2017 861
-Table text similarity score is: 100
-Table text is:
-___
-Tahun Transaksi (RM/Juta)
-2013 668
-2014 743
-2015 795
-2016 822
-2017 861
-
-___
-
-Candidate text is:
-___
-Tahun  Transaksi (RM/Juta) 
-2013  668 
-2014  743 
-2015  795 
-2016  822 
-2017  861 
+Tahun  Jumlah Pesalah 
+2013  4,944 
+2014  4,568 
+2015  4,027 
+2016  4,358 
+2017 (sehingga Oktober)  4,129 
 
 ___
 
