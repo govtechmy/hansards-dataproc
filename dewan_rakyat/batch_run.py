@@ -27,25 +27,39 @@ for year in range(2008, 2017 + 1)[::-1]:
 hansard_dates = [x[3:3 + 8] for x in filenames]
 
 # for preprocessing
-with open("hansards_with_tables.txt", "w") as f:
-    f.write("")
-with open("warnings/hansards_with_parsing_errors.txt", "w") as f:
-    f.write("")
-for hansard_date in tqdm(hansard_dates):
-    try:
-        parse_pdf.parse_hansard(hansard_date)
-    except:
-        # write this filename to file
-        with open("warnings/hansards_with_parsing_errors.txt", "a") as f:
-            f.write(hansard_date + "\n")
-        print("Error parsing " + hansard_date)
-        continue
+# with open("hansards_with_tables.txt", "w") as f:
+#     f.write("")
+# with open("warnings/hansards_with_parsing_errors.txt", "w") as f:
+#     f.write("")
+# for hansard_date in tqdm(hansard_dates):
+#     try:
+#         parse_pdf.parse_hansard(hansard_date)
+#     except:
+#         # write this filename to file
+#         with open("warnings/hansards_with_parsing_errors.txt", "a") as f:
+#             f.write(hansard_date + "\n")
+#         print("Error parsing " + hansard_date)
+#         continue
 
 # for pre-tabulation
-with open("matched_tables.txt", "w") as f:
-    f.write("")
+pre_tabulation_files_for_deletion = [
+    "matched_tables.txt",
+    "errors/error_tables.txt",
+    "errors/pretabulation_errors.txt"
+]
+for file in pre_tabulation_files_for_deletion:
+    if os.path.exists(file):
+        os.remove(file)
 for hansard_date in tqdm(hansard_dates):
-    pretabulation_processing.preprocess(hansard_date)
+    try:
+        pretabulation_processing.preprocess(hansard_date)
+    except Exception as e:
+        print(e)
+        print(f'Error in {hansard_date}')
+        with open("errors/pretabulation_errors.txt", "a") as f:
+            f.write(f"{hansard_date}\n")
+            f.write(f"{e}\n\n")
+        continue
 
 edit_hansards.edit_hansards()
 
@@ -65,10 +79,20 @@ tabulation_files_for_deletion = [
     "warnings/uppercased_non_author.txt",
     "warnings/mixed_bolds.txt",
     "warnings/unsorted_timestamps.txt",
+    "errors/tabulation_errors.txt"
 ]
 
 for file in tabulation_files_for_deletion:
     if os.path.exists(file):
         os.remove(file)
 for hansard_date in tqdm(hansard_dates):
-    tabulate_hansard.tabulate(hansard_date)
+    try:
+        tabulate_hansard.tabulate(hansard_date)
+    except Exception as e:
+        print(e)
+        print(f'Error in {hansard_date}')
+        with open("errors/tabulation_errors.txt", "a") as f:
+            f.write(f"{hansard_date}\n")
+            f.write(f"{e}\n\n")
+        continue
+    
