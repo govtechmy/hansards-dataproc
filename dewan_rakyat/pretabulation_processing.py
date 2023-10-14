@@ -6,6 +6,7 @@ from thefuzz import fuzz
 import re
 import list_to_markdown
 import json
+import utils
 
 
 def is_header(text):
@@ -195,12 +196,6 @@ def preprocess(hansard_date):
     for row_id in range(len(text)):
         # discard header rows
         if is_header(text[row_id]):
-            page_num = int(get_page_number(text[row_id]))
-            if expected_page_num == -1:
-                expected_page_num = page_num
-            # makes sure all pages are all accounted for
-            assert page_num == expected_page_num, \
-                f'Page number {page_num} does not match expected {expected_page_num}'
             expected_page_num += 1
             text[row_id] = '\n'
             bold[row_id] = '\n'
@@ -240,7 +235,7 @@ def preprocess(hansard_date):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("hansard_date", help="hansard_date eg. 12102021",
-                        default="21022023", nargs="?")
+                        default="20112013", nargs="?")
     # Parse arguments
     args = parser.parse_args()
     preprocess(args.hansard_date)

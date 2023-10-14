@@ -29,14 +29,14 @@ hansard_dates = [x[3:3 + 8] for x in filenames]
 # for preprocessing
 # with open("hansards_with_tables.txt", "w") as f:
 #     f.write("")
-# with open("warnings/hansards_with_parsing_errors.txt", "w") as f:
+# with open("errors/hansards_with_parsing_errors.txt", "w") as f:
 #     f.write("")
 # for hansard_date in tqdm(hansard_dates):
 #     try:
 #         parse_pdf.parse_hansard(hansard_date)
 #     except:
 #         # write this filename to file
-#         with open("warnings/hansards_with_parsing_errors.txt", "a") as f:
+#         with open("errors/hansards_with_parsing_errors.txt", "a") as f:
 #             f.write(hansard_date + "\n")
 #         print("Error parsing " + hansard_date)
 #         continue
@@ -95,4 +95,3 @@ for hansard_date in tqdm(hansard_dates):
             f.write(f"{hansard_date}\n")
             f.write(f"{e}\n\n")
         continue
-    

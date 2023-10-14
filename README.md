@@ -20,7 +20,7 @@ Run `tabulate_hansards.py` to tabulate the hansards into a CSV file with the fol
 - level_3
 - timestamp
 - author
-- sppech
+- speech
 
 
 ## On parsing fonts
