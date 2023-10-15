@@ -42,26 +42,26 @@ hansard_dates = [x[3:3 + 8] for x in filenames]
 #         continue
 
 # for pre-tabulation
-pre_tabulation_files_for_deletion = [
-    "matched_tables.txt",
-    "errors/error_tables.txt",
-    "errors/pretabulation_errors.txt"
-]
-for file in pre_tabulation_files_for_deletion:
-    if os.path.exists(file):
-        os.remove(file)
-for hansard_date in tqdm(hansard_dates):
-    try:
-        pretabulation_processing.preprocess(hansard_date)
-    except Exception as e:
-        print(e)
-        print(f'Error in {hansard_date}')
-        with open("errors/pretabulation_errors.txt", "a") as f:
-            f.write(f"{hansard_date}\n")
-            f.write(f"{e}\n\n")
-        continue
-
-edit_hansards.edit_hansards()
+# pre_tabulation_files_for_deletion = [
+#     "matched_tables.txt",
+#     "errors/error_tables.txt",
+#     "errors/pretabulation_errors.txt"
+# ]
+# for file in pre_tabulation_files_for_deletion:
+#     if os.path.exists(file):
+#         os.remove(file)
+# for hansard_date in tqdm(hansard_dates):
+#     try:
+#         pretabulation_processing.preprocess(hansard_date)
+#     except Exception as e:
+#         print(e)
+#         print(f'Error in {hansard_date}')
+#         with open("errors/pretabulation_errors.txt", "a") as f:
+#             f.write(f"{hansard_date}\n")
+#             f.write(f"{e}\n\n")
+#         continue
+# 
+# edit_hansards.edit_hansards()
 
 # for tabulation
 # clean these files for new logs

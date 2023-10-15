@@ -94,8 +94,7 @@ def get_author_and_speech(text, bold, italics, warn=''):
     speech_bold = ''
     speech_italics = ''
     subtopic = ''
-    if re.search(r'^(Tuan )?Yang di-Pertua[\[\]A-Za-z `.’\'@/(\-),]*:', text) or \
-            re.search(r'^Timbalan(an)? (Tuan )?Yang [dD]i- ?Pertua[\[\]A-Za-z `.’\'@/(\-),]*:', text) or \
+    if re.search(r'^(Timbalan(an)? )?(Tuan )?([Yy]ang )?[dD]i-? ?[Pp]ertua[\[\]A-Za-z `.’\'@/(\-),]*:', text) or \
             re.search(r'^Setiausaha[\[\]A-Za-z `.’\'@/(\-),]*:', text) or \
             re.search(r'^(Yang Berhormat )?(Timbalan )?[Mm]enteri [A-Za-z,()\-& ]+(\[Ekonomi] )'
                       r'?\[[A-Za-z `.’\'@/(\-)\[\]]+] ?:',
