@@ -61,7 +61,7 @@ hansard_dates = [x[3:3 + 8] for x in filenames]
 #             f.write(f"{e}\n\n")
 #         continue
 # 
-# edit_hansards.edit_hansards()
+edit_hansards.edit_hansards()
 
 # for tabulation
 # clean these files for new logs

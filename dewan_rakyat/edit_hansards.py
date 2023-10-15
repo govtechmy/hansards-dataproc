@@ -620,6 +620,211 @@ def edit_hansards():
             "[Pengerang]]: Terima kasih Tuan Pengerusi. Yang Berhormat Kulai, rang undang-undang ini\n",
             '1111111111111 000000 00000 0000 0000000000 0000 000000000 000000 0000 0000000000000 000\n',
             'none')
+    replace('30032017',
+            "Haji Ahmad bin Haji Maslan) dan diluluskan)\n",
+            "Haji Ahmad bin Haji Maslan) dan diluluskan]\n",
+            'none',
+            'all')
+    replace('16112017',
+            "[Masalah dikemuka bagi diputuskan, dan disetujukan.\n",
+            "[Masalah dikemuka bagi diputuskan, dan disetujukan.]\n",
+            'none',
+            'all')
+    replace('28112017',
+            "sebahagian daripada Anggaran Pembangunan 2018\n",
+            "sebahagian daripada Anggaran Pembangunan 2018]\n",
+            'none',
+            'all')
+    replace('28112017',
+            "Fasal 1 hingga 2 diperintahkan jadi sebahagian daripada rang undang-undang.\n",
+            "[Fasal 1 hingga 2 diperintahkan jadi sebahagian daripada rang undang-undang.]\n",
+            'none',
+            'all')
+    replace('28112017',
+            "itu di ruangan enam dan tujuh senarai tersebut.”\n",
+            "itu di ruangan enam dan tujuh senarai tersebut.”]\n",
+            'none',
+            'all')
+    replace('28032017',
+            "sembilan dan sepuluh penyata tersebut.” hendaklah disahkan.\n",
+            "sembilan dan sepuluh penyata tersebut.” hendaklah disahkan.]\n",
+            'none',
+            'all')
+    replace('03042017',
+            "[Timbalan Yang di-Pertua [Datuk Seri Dr. Ronald Kiandee) mempengerusikan\n",
+            "[Timbalan Yang di-Pertua (Datuk Seri Dr. Ronald Kiandee) mempengerusikan\n",
+            'none',
+            'all')
+    replace('27032017',
+            "Sembilan dan sepuluh penyata tersebut.”\n",
+            "Sembilan dan sepuluh penyata tersebut.”]\n",
+            'none',
+            'all')
+    replace('13112017',
+            "itu di ruangan enam dan tujuh senarai tersebut.”\n",
+            "itu di ruangan enam dan tujuh senarai tersebut.”]\n",
+            'none',
+            'all')
+    replace('29032016',
+            "[Masalah dikemuka bagi diputuskan, dan disetujukan.\n",
+            "[Masalah dikemuka bagi diputuskan, dan disetujukan.]\n",
+            'none',
+            'all')
+    replace('28032016',
+            "penyata tersebut.\"\n",
+            "penyata tersebut.\"]\n",
+            'none',
+            'all')
+    replace('22112016',
+            "ditangguhkan sehingga jam 10 pagi, hari Rabu 23 November tahun 2016.\n",
+            "ditangguhkan sehingga jam 10 pagi, hari Rabu 23 November tahun 2016.]\n",
+            'none',
+            'all')
+    replace('04042016',
+            "sebagai Jawatankuasa\n",
+            "sebagai Jawatankuasa]\n",
+            'none',
+            'all')
+    replace('07112016',
+            "tersebut.”\n",
+            "tersebut.”]\n",
+            'none',
+            'all')
+    replace('21032016',
+            "Tuan Gobind Singh Deo [Puchong]: [Bangun\n",
+            "Tuan Gobind Singh Deo [Puchong]: [Bangun]\n",
+            '1111 111111 11111 111 1111111111 00000000\n',
+            '0000 000000 00000 000 0000000000 11111111\n')
+    replace('23112015',
+            "[Timbalan Yang di-Pertua ([Datuk Seri Dr. Ronald Kiandee)\n",
+            "[Timbalan Yang di-Pertua (Datuk Seri Dr. Ronald Kiandee)\n",
+            'none',
+            'all')
+    replace('19112013',
+            "[Timbalan Yang di-Pertua ([Datuk Seri Dr. Ronald Kiandee)\n",
+            "[Timbalan Yang di-Pertua (Datuk Seri Dr. Ronald Kiandee)\n",
+            'none',
+            'all')
+    replace('01102013',
+            "[Disampuk Jadi saya harap kita tidak payah hendak risau.\n",
+            "[Disampuk] Jadi saya harap kita tidak payah hendak risau.\n",
+            'none',
+            '1111111111 0000 0000 00000 0000 00000 00000 000000 000000\n')
+    replace('20112013',
+            "[Timbalan Yang di-Pertua [Datuk Ronald Kiandee) mempengerusikan\n",
+            "[Timbalan Yang di-Pertua (Datuk Ronald Kiandee) mempengerusikan\n",
+            'none',
+            'all')
+    replace('18042012',
+            "[[Fasal-fasal 1 hingga 34 dikemukakan kepada Jawatankuasa]\n",
+            "[Fasal-fasal 1 hingga 34 dikemukakan kepada Jawatankuasa]\n",
+            'none',
+            'all')
+    replace('02102012',
+            "Tuan N. Gobalakrishnan [Padang Serai]: [Bangun\n",
+            "Tuan N. Gobalakrishnan [Padang Serai]: [Bangun]\n",
+            '1111 11 11111111111111 1111111 1111111 00000000\n',
+            '0000 00 00000000000000 0000000 0000000 11111111\n')
+    replace('09042012',
+            "sebahagian daripada Jadual.\n",
+            "sebahagian daripada Jadual.]\n",
+            'none',
+            'all')
+    replace('09042012',
+            "sebahagian daripada Jadual.\n",
+            "sebahagian daripada Jadual.]\n",
+            'none',
+            'all')
+    replace('04042012',
+            "ini. [Dewan\n",
+            "ini. [Dewan]\n",
+            'none',
+            '0000 1111111\n')
+    replace('28102015',
+            "[Ketawa Yang Berhormat Kuala Terengganu.\n",
+            "[Ketawa] Yang Berhormat Kuala Terengganu.\n",
+            'none',
+            '11111111 0000 000000000 00000 00000000000\n')
+    replace('30032015',
+            "Jawatankuasa sebuah-buah Majlis”.\n",
+            "Jawatankuasa sebuah-buah Majlis”.]\n",
+            'none',
+            'all')
+    replace('30032015',
+            "Jawatankuasa sebuah-buah Majlis”.\n",
+            "Jawatankuasa sebuah-buah Majlis”.]\n",
+            'none',
+            'all')
+    replace('06042015',
+            "[Timbalan Yang di-Pertua ([Datuk Seri Dr. Ronald Kiandee) mempengerusikan\n",
+            "[Timbalan Yang di-Pertua (Datuk Seri Dr. Ronald Kiandee) mempengerusikan\n",
+            'none',
+            'all')
+    replace('06042015',
+            "[Timbalan Yang di-Pertua ([Datuk Seri Dr. Ronald Kiandee) mempengerusikan\n",
+            "[Timbalan Yang di-Pertua (Datuk Seri Dr. Ronald Kiandee) mempengerusikan\n",
+            'none',
+            'all')
+    replace('06042015',
+            "Beberapa Ahli: [Bercakap tanpa menggunakan pembesar suara\n",
+            "Beberapa Ahli: [Bercakap tanpa menggunakan pembesar suara]\n",
+            '11111111 11111 000000000 00000 00000000000 00000000 000000\n',
+            '00000000 00000 111111111 11111 11111111111 11111111 111111\n')
+    replace('24112015',
+            "[Masalah dikemuka bagi diputuskan, dan disetujukan.\n",
+            "[Masalah dikemuka bagi diputuskan, dan disetujukan.]\n",
+            'none',
+            'all')
+    replace('09042015',
+            "bahagian dia terangkan... [Disampuk Itu sekejap lagi saya akan sambut. Saya rasa benda\n",
+            "bahagian dia terangkan... [Disampuk] Itu sekejap lagi saya akan sambut. Saya rasa benda\n",
+            'none',
+            '00000000 000 000000000000 1111111111 000 0000000 0000 0000 0000 0000000 0000 0000 00000\n')
+    replace('25112014',
+            "senarai tersebut.”\n",
+            "senarai tersebut.”]\n",
+            'none',
+            'all')
+    replace('31032014',
+            "dan butiran projek dalam ruang sembilan dan sepuluh penyata tersebut”.\n",
+            "dan butiran projek dalam ruang sembilan dan sepuluh penyata tersebut”.]\n",
+            'none',
+            'all')
+    replace('18112014',
+            "[Masalah dikemuka bagi diputuskan, dan disetujukan.\n",
+            "[Masalah dikemuka bagi diputuskan, dan disetujukan.]\n",
+            'none',
+            'all')
+    replace('18112014',
+            "[Masalah dikemuka bagi diputuskan, dan disetujukan.\n",
+            "[Masalah dikemuka bagi diputuskan, dan disetujukan.]\n",
+            'none',
+            'all')
+    replace('25112013',
+            "[Tuan Pengerusi [Dato’ Haji Ismail bin Haji Mohamed Said) mempengerusikan\n",
+            "[Tuan Pengerusi (Dato’ Haji Ismail bin Haji Mohamed Said) mempengerusikan\n",
+            'none',
+            'all')
+    replace('03122013',
+            "itu di ruangan enam dan tujuh senarai tersebut.”\n",
+            "itu di ruangan enam dan tujuh senarai tersebut.”]\n",
+            'none',
+            'all')
+    replace('04122013',
+            "[Timbalan Yang di-Pertua [Datuk Ronald Kiandee) mempengerusikan\n",
+            "[Timbalan Yang di-Pertua (Datuk Ronald Kiandee) mempengerusikan\n",
+            'none',
+            'all')
+    replace('29102013',
+            "Dato’ Shamsul Anuar bin Haji Nasarah [Lenggong]: [Bangun\n",
+            "Dato’ Shamsul Anuar bin Haji Nasarah [Lenggong]: [Bangun]\n",
+            '11111 1111111 11111 111 1111 1111111 11111111111 00000000\n',
+            '00000 0000000 00000 000 0000 0000000 00000000000 11111111\n')
+    replace('19112013',
+            "[Timbalan Yang di-Pertua [Datuk Ronald Kiandee) mempengerusikan\n",
+            "[Timbalan Yang di-Pertua (Datuk Ronald Kiandee) mempengerusikan\n",
+            'none',
+            'all')
 
 
 if __name__ == "__main__":
