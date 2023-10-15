@@ -1,7 +1,7 @@
-level_1,level_2,level_3,timestamp,author,speech
-,,,1000,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
+level_1,level_2,level_3,raw_timestamp,timestamp,author,speech
+,,,10.00 pagi,1000,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
 PEMASYHURAN-PEMASYHURAN TUAN YANG DI-PERTUA,"TITAH UCAPAN SERI PADUKA BAGINDA
-YANG DI-PERTUAN AGONG",,1000,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, dengan sukacitanya saya
+YANG DI-PERTUAN AGONG",,10.00 pagi,1000,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, dengan sukacitanya saya
 memaklumkan kepada Majlis ini iaitu pada hari Isnin, 10 Mac 2014, Seri Paduka
 Baginda Yang di-Pertuan Agong dengan limpah kurnia Baginda telah berkenan
 menyampaikan Titah Ucapan Diraja dalam Parlimen. Saya telah menerima salinan
@@ -9,21 +9,21 @@ Titah Ucapan Seri Paduka Baginda itu dan seterusnya sekarang saya mengarahkan
 supaya salinan Titah Ucapan itu dibentangkan di atas meja Mesyuarat dan seterusnya
 dicetak dalam Penyata Rasmi."
 PEMASYHURAN-PEMASYHURAN TUAN YANG DI-PERTUA,"TITAH UCAPAN SERI PADUKA BAGINDA
-YANG DI-PERTUAN AGONG",,1000,ANNOTATION,[Teks Titah Ucapan adalah seperti di LAMPIRAN]
-PEMASYHURAN-PEMASYHURAN TUAN YANG DI-PERTUA,MEMPERKENANKAN AKTA-AKTA,,1000,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, saya suka hendak
+YANG DI-PERTUAN AGONG",,10.00 pagi,1000,ANNOTATION,[Teks Titah Ucapan adalah seperti di LAMPIRAN]
+PEMASYHURAN-PEMASYHURAN TUAN YANG DI-PERTUA,MEMPERKENANKAN AKTA-AKTA,,10.00 pagi,1000,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, saya suka hendak
 memberitahu Majlis ini Seri Paduka Baginda Yang di-Pertuan Agong dengan limpah
 kurnia Baginda telah memperkenankan akta-akta yang telah diluluskan oleh Parlimen
 dalam Mesyuarat Penggal yang lalu seperti berikut:
 1. Akta Perbekalan 2014;
 2. Akta Kewangan 2014; dan
 3. Akta Fi (Jabatan Muzium Malaysia) (Pengesahan) 2013."
-PERUTUSAN DARIPADA DEWAN NEGARA,,,1000,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, saya telah menerima satu
+PERUTUSAN DARIPADA DEWAN NEGARA,,,10.00 pagi,1000,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, saya telah menerima satu
 perutusan daripada Tuan Yang di-Pertua Dewan Negara yang menyatakan persetujuan
 Dewan itu kepada rang undang-undang yang telah diluluskan oleh Dewan Rakyat
 dalam sidang Parlimen Penggal yang lalu.
 Sila Setiausaha baca."
-PERUTUSAN DARIPADA DEWAN NEGARA,,,1000,ANNOTATION,[Setiausaha membacakan Perutusan]
-PERUTUSAN DARIPADA DEWAN NEGARA,,,1000,Tuan Yang di-Pertua,"“17 Disember 2013
+PERUTUSAN DARIPADA DEWAN NEGARA,,,10.00 pagi,1000,ANNOTATION,[Setiausaha membacakan Perutusan]
+PERUTUSAN DARIPADA DEWAN NEGARA,,,10.00 pagi,1000,Tuan Yang di-Pertua,"“17 Disember 2013
 **Perutusan Daripada Dewan Negara kepada Dewan Rakyat**
 Tuan Yang di-Pertua Dewan Rakyat,
 Dewan Negara telah meluluskan Rang Undang-undang berikut tanpa pindaan:
@@ -45,7 +45,7 @@ Dewan Negara telah meluluskan Rang undang-undang berikut tanpa pindaan:
 Yang Ikhlas,
 t.t.
 YANG DI-PERTUA DEWAN NEGARA”"
-PERUTUSAN DARIPADA DEWAN NEGARA,INSIDEN PESAWAT MH370,,1000,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, pada hari Sabtu, 8 Mac
+PERUTUSAN DARIPADA DEWAN NEGARA,INSIDEN PESAWAT MH370,,10.00 pagi,1000,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, pada hari Sabtu, 8 Mac
 2014, negara kita telah dikejutkan dengan suatu insiden yang membabitkan pesawat
 MH370, Syarikat Penerbangan Malaysia yang berlepas dari Kuala Lumpur ke Beijing,
 China.
@@ -56,7 +56,7 @@ Pada kesempatan ini, seluruh Dewan Rakyat yang mulia ini, mendoakan dan
 berharap agar semua usaha mengesan pesawat tersebut akan dipermudahkan oleh
 Allah SWT. Saya juga berharap agar keluarga penumpang dan anak-anak kapal
 pesawat tersebut kekal tabah dan cekal dalam mengharungi dugaan ini. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,1000,Datuk Bung Moktar bin Radin [Kinabatangan],"Terima kasih Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,10.00 pagi,1000,Datuk Bung Moktar bin Radin [Kinabatangan],"Terima kasih Tuan Yang di-
 Pertua. *Assalamualaikum warrahmatullahi wabarakatuh*, selamat sejahtera. Tuan Yang
 di-Pertua, saya juga selaku wakil rakyat mewakili BNBBC juga ingin memohon Dewan
 ini sebab kita tahu sebaik-baik ungkapan yang diangkat ke langit adalah doa.
@@ -69,11 +69,11 @@ Jadi kalau diizinkan Tuan Yang di-Pertua, saya ingin mengajak rakan-rakan
 semua, berdiri kita untuk berdoa, bertafakur memohon ke hadrat Allah SWT sebagai
 tanda sokongan kita kepada penerbangan yang hilang ini, mudah-mudahan dapat kita
 temui dengan seberapa segera dengan membaca Al-Fatihah, Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,1000,ANNOTATION,[Semua Ahli Dewan Rakyat berdiri membaca Al-Fatihah dan bertafakur]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Datuk Bung Moktar bin Radin [Kinabatangan],"minta Perdana Menteri
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,10.00 pagi,1000,ANNOTATION,[Semua Ahli Dewan Rakyat berdiri membaca Al-Fatihah dan bertafakur]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1010,1010,Datuk Bung Moktar bin Radin [Kinabatangan],"minta Perdana Menteri
 menyatakan langkah-langkah konkrit ke arah meringankan bebanan kos sara hidup
 yang semakin hari kian meningkat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Perdana Menteri dan Menteri Kewangan I [Dato' Sri Mohd. Najib bin Tun Abdul Razak],"Tuan Yang di-Pertua, sebelum saya menjawab soalan ini, saya ingin
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1010,1010,Perdana Menteri dan Menteri Kewangan I [Dato' Sri Mohd. Najib bin Tun Abdul Razak],"Tuan Yang di-Pertua, sebelum saya menjawab soalan ini, saya ingin
 nyatakan bagi pihak kerajaan bahawa saya menyokong sepenuhnya apa kenyataan
 yang Tuan Yang di-Pertua telah buat tadi berhubung dengan pesawat MH370 dan
 kerajaan beri jaminan bahawa segala usaha yang kita akan terus lakukan dengan
@@ -168,7 +168,7 @@ sama kualiti dengannya. Sehingga kini, sebanyak 15 buah Kedai Kain 1Malaysia tel
 beroperasi di seluruh negara. Menu Rakyat 1Malaysia di premis-premis makanan
 seperti kantin, restoran, gerai dan kafeteria yang diperluaskan termasuklah di institusi
 pengajian tinggi dan hospital kerajaan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,Perdana Menteri dan Menteri Kewangan I [Dato' Sri Mohd. Najib bin Tun Abdul Razak],"Sehingga kini, sejumlah 4,367 premis telah menyertai Menu Rakyat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1020,1020,Perdana Menteri dan Menteri Kewangan I [Dato' Sri Mohd. Najib bin Tun Abdul Razak],"Sehingga kini, sejumlah 4,367 premis telah menyertai Menu Rakyat
 1Malaysia. Selain itu antara langkah terkini adalah dengan memperkenalkan kempen
 penurunan harga yang telah dilancarkan pada Januari lalu. Kempen ini melibatkan 957
 buah pasar raya di seluruh negara yang menawarkan penjimatan antara 10% hingga
@@ -183,7 +183,7 @@ Tuan Yang di-Pertua, secara keseluruhannya, segala bantuan dan program-
 program tersebut yang saya telah bentangkan tadi, telah membuahkan kesan yang
 diharapkan dan kerajaan akan terus membantu rakyat untuk menangani kos sara hidup
 mereka."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,Datuk Bung Moktar bin Radin [Kinabatangan],"Terima kasih Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1020,1020,Datuk Bung Moktar bin Radin [Kinabatangan],"Terima kasih Tuan Yang di-
 Pertua. Yang Amat Berhormat, kesan kos sara hidup ini memang membebankan rakyat
 terutama sekali mereka yang berpendapatan rendah. Jelas kerajaan memang begitu
 berkomitmen ke arah membantu rakyat yang tertindas ini dengan mewujudkan
@@ -209,31 +209,31 @@ kerajaan tidak berhasrat pun untuk menindas mana-mana rakyat sebab lebih-lebih l
 pembangkang menggunakan isu ini di merata-merata penjuru untuk meyakinkan rakyat
 bahawa inilah kerja Barisan Nasional dan apakah kerajaan juga mungkin melihat
 bahawa penstrukturan subsidi ini..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,Tuan Yang di-Pertua,"Yang Berhormat Kinabatangan, Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1020,1020,Tuan Yang di-Pertua,"Yang Berhormat Kinabatangan, Yang Berhormat
 Kinabatangan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,Datuk Bung Moktar bin Radin [Kinabatangan],"...Perlu dikaji dengan begitu
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1020,1020,Datuk Bung Moktar bin Radin [Kinabatangan],"...Perlu dikaji dengan begitu
 menyeluruh sebab contohnya subsidi minyak..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,Tuan Yang di-Pertua,"Yang Berhormat Kinabatangan, soalan Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1020,1020,Tuan Yang di-Pertua,"Yang Berhormat Kinabatangan, soalan Yang
 Berhormat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,Datuk Bung Moktar bin Radin [Kinabatangan],"Soalan ini Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1020,1020,Datuk Bung Moktar bin Radin [Kinabatangan],"Soalan ini Tuan Yang di-
 Pertua. Contohnya subsidi minyak ini..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,Tuan Yang di-Pertua,Kita mahu dengar daripada Perdana Menteri.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,Datuk Bung Moktar bin Radin [Kinabatangan],"...Dinikmati oleh semua
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1020,1020,Tuan Yang di-Pertua,Kita mahu dengar daripada Perdana Menteri.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1020,1020,Datuk Bung Moktar bin Radin [Kinabatangan],"...Dinikmati oleh semua
 orang? Bukan rakyat yang berpendapatan rendah sahaja. Pendatang asing pun boleh
 menikmatinya, orang kaya pun boleh membeli. Jadi, mungkin ada mekanisme yang
 dikaji oleh kerajaan termasuk kalau boleh saya mencadangkan subsidi minyak ini
 ditiadakan langsung dan kerajaan mencari strategi baru membantu mereka yang
 berpendapatan rendah ini secara menyeluruh dan bukan seperti BR1M yang hanya
 sekali mereka terima. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,Dato’ Sri Mohd. Najib bin Tun Abdul Razak,"Terima kasih Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1020,1020,Dato’ Sri Mohd. Najib bin Tun Abdul Razak,"Terima kasih Tuan Yang di-
 Pertua. Pertamanya, saya terpaksa menterjemahkan apa soalan dalam ucapan ringkas
 Yang Berhormat Kinabatangan tadi."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,Beberapa Ahli,
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,ANNOTATION,[Ketawa]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,Dato’ Sri Mohd. Najib bin Tun Abdul Razak,"Saya dapat kesimpulan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1020,1020,Beberapa Ahli,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1020,1020,ANNOTATION,[Ketawa]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1020,1020,Dato’ Sri Mohd. Najib bin Tun Abdul Razak,"Saya dapat kesimpulan
 bahawa ada dua soalan dalam ucapan ringkas beliau itu."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,ANNOTATION,[Ketawa]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,Dato’ Sri Mohd. Najib bin Tun Abdul Razak,"Pertama, soal
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1020,1020,ANNOTATION,[Ketawa]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1020,1020,Dato’ Sri Mohd. Najib bin Tun Abdul Razak,"Pertama, soal
 *monopolies* ataupun tindakan yang patut diambil oleh kerajaan untuk menguatkuasakan
 Akta Persaingan. Saya bagi contoh yang mana baru-baru ini bila Persatuan Pengeluar
 Ais hendak menaikkan harga *ice block* sebanyak RM2.50 dan *ice cube* ataupun *ice
@@ -248,7 +248,7 @@ peringkat. Tidaklah secara mendadak dan kedua, hasil tambahan kerajaan itu kita
 hendak pulangkan kepada rakyat. Sebahagian mengurangkan beban fiskal dan hutang
 negara ataupun fiskal defisit negara tetapi sebahagian besar lagi kita pulangkan balik
 kepada rakyat melalui penambahan BR1M dan langkah-langkah yang lain."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,Datuk Seri Panglima Haji Abdul Ghapur bin Salleh [Kalabakan],"*Assalamualaikum warahmatullahi wabarakatuh*. Tuan Yang di-Pertua, terima kasih. Kita
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1020,1020,Datuk Seri Panglima Haji Abdul Ghapur bin Salleh [Kalabakan],"*Assalamualaikum warahmatullahi wabarakatuh*. Tuan Yang di-Pertua, terima kasih. Kita
 membelanjakan banyak peruntukan untuk subsidi. Akan tetapi di Pantai Timur untuk
 makluman Yang Amat Berhormat, Pantai Timur Negeri Sabah, semua barang yang
 bersubsidi ini bukan dimakan oleh rakyat kita. Ia hanya sampai dan terus pergi ke
@@ -260,7 +260,7 @@ ada.
 Jadi persoalannya kalau Yang Amat Berhormat boleh mungkin menubuhkan
 satu jawatankuasa untuk meneliti ini semua dan membuat laporan kepada kerajaan
 supaya kita dapat bertindak seperti apa yang dicadangkan. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,Dato’ Sri Mohd. Najib bin Tun Abdul Razak,"Tuan Yang di-Pertua, memang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1020,1020,Dato’ Sri Mohd. Najib bin Tun Abdul Razak,"Tuan Yang di-Pertua, memang
 kerajaan sudah sedar bahawa kaedah subsidi ini membawa kepada banyak ketirisan.
 Hakikatnya, kalau kita tidak ikut pada *price mechanism*, harga pasaran, inilah yang
 akan berlaku. Di mana-mana negara pun ini akan berlaku dan banyak mana pun kita
@@ -271,14 +271,14 @@ pegawai penguatkuasaan pun, masih akan berlaku. Sebab itu kerajaan kata jangka
 panjang kita mesti beralih kepada subsidi bersasar daripada subsidi pukal sebab
 apabila kita pergi subsidi bersasar, kita boleh tentukan yang dapat faedah, rakyat
 Malaysia. Bukan warga asing, bukan penyeludup, bukan pelancong."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,ANNOTATION,[Tepuk]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,Dato’ Sri Mohd. Najib bin Tun Abdul Razak,"Jadi saya berharap bahawa bila langkah ini kita akan lakukan secara
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1020,1020,ANNOTATION,[Tepuk]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1020,1020,Dato’ Sri Mohd. Najib bin Tun Abdul Razak,"Jadi saya berharap bahawa bila langkah ini kita akan lakukan secara
 berterusan ataupun berperingkat-peringkat dan kaedah BR1M itu pun kita boleh
 perbaiki lagi."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1030,Dato’ Sri Mohd. Najib bin Tun Abdul Razak,"Kita tahu ada kelemahan-kelemahan tertentu, tetapi ini baru permulaan. Kita
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1030,1030,Dato’ Sri Mohd. Najib bin Tun Abdul Razak,"Kita tahu ada kelemahan-kelemahan tertentu, tetapi ini baru permulaan. Kita
 akan melakukan penambahbaikan pada BR1M. Akhirnya saya percaya kita akan
 menyelamatkan berbilion-bilion ringgit, duit rakyat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1030,Datuk Zahidi bin Zainul Abidin [Padang Besar],"Tuan Yang di-Pertua,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1030,1030,Datuk Zahidi bin Zainul Abidin [Padang Besar],"Tuan Yang di-Pertua,
 soalan saya kita lihat bahawa dalam kita mengawal kos sara hidup ini, kita lihat tentang
 kenaikan harga yang dibuat oleh kartel yang mengawal harga-harga ini. Ini adalah
 kartel yang dibuat oleh swasta. Namun kita kerajaan kita wujudkan kartel juga. Adakah
@@ -289,15 +289,15 @@ kita wujudkan ini menyusahkan rakyat di mana harga beras yang diimport dan yang
 dijual di negara ini cukup mahal, berbeza. Jadi kita lihat adakah kerajaan bercadang
 untuk buka AP untuk kita kurangkan orang tengah yang kita sering wujudkan. Terima
 kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1030,Dato’ Sri Mohd. Najib bin Tun Abdul Razak,"Tuan Yang di-Pertua, kerajaan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1030,1030,Dato’ Sri Mohd. Najib bin Tun Abdul Razak,"Tuan Yang di-Pertua, kerajaan
 telah pun membuat ketetapan bahawa kita akan melonggarkan semua AP berhubung
 dengan barang makanan yang diimport. Malah sekarang ini sesiapa sahaja yang
 hendak import barang boleh memohon kepada Kementerian Pertanian dan kita tidak
 ada sekatan. Dalam soal beras, kita sedang memerhati perkara ini untuk memastikan
 bahawa ianya tidak merugikan rakyat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1030,ANNOTATION,"[Soalan No.2 - Y.B. Dato' Seri Haji Abdul Hadi bin Awang (Marang) tidak
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1030,1030,ANNOTATION,"[Soalan No.2 - Y.B. Dato' Seri Haji Abdul Hadi bin Awang (Marang) tidak
 hadir]"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Datuk Johari bin Abdul Ghani [Titiwangsa],"minta Menteri Tenaga,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1030,1030,Datuk Johari bin Abdul Ghani [Titiwangsa],"minta Menteri Tenaga,
 Teknologi Hijau dan Air menyatakan:
 (a) bilakah jangkaan pembinaan Loji Air Langat 2 akan
 dilaksanakan dan apakah masalah yang dihadapi oleh
@@ -305,7 +305,7 @@ kementerian bagi memulakan kerja-kerja ini; dan
 (b) apakah tindakan oleh kementerian bagi mengatasi
 kemerosotan paras air yang kritikal di empangan-empangan
 sekitar Lembah Klang baru-baru ini."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,"Timbalan Menteri Tenaga, Teknologi Hijau dan Air [Dato’ Seri Mahdzir Khalid]","*Assalamualaikum warahmatullahi wabarakatuh* Tuan Yang di-Pertua. Terima
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1030,1030,"Timbalan Menteri Tenaga, Teknologi Hijau dan Air [Dato’ Seri Mahdzir Khalid]","*Assalamualaikum warahmatullahi wabarakatuh* Tuan Yang di-Pertua. Terima
 kasih kepada Yang Berhormat Titiwangsa yang mengemukakan soalan mengenai
 dengan pembinaan loji Air Langat 2.
 Tuan Yang di-Pertua, saya mohon untuk menjawab pertanyaan ini bersekali
@@ -361,7 +361,7 @@ mengatasi kemerosotan paras air. Sukalah saya memaklumkan kepada Dewan yang
 mulia ini Tuan Yang di-Pertua, sehingga hari ini Empangan Sungai Selangor baki
 kandungan air mentahnya adalah 41.83%, Empangan Klang Gate, Selangor 52.14%
 dan juga Empangan Kelinci di Negeri Sembilan 54.5%."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,"Timbalan Menteri Tenaga, Teknologi Hijau dan Air [Dato’ Seri Mahdzir Khalid]","Empangan Sungai Selangor dan Empangan Klang Gate adalah dua
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,1040,"Timbalan Menteri Tenaga, Teknologi Hijau dan Air [Dato’ Seri Mahdzir Khalid]","Empangan Sungai Selangor dan Empangan Klang Gate adalah dua
 empangan yang memberi jumlah air mentah untuk dibekalkan ke Selangor, Wilayah
 Persekutuan dan juga Putrajaya. Jadi oleh kerana musim kemarau dan musim kering
 pada waktu ini, maka Kerajaan Negeri Selangor telah memutuskan untuk
@@ -379,7 +379,7 @@ dalam sungai sebelum *intake* iaitu 50mlb setiap hari. Itu adalah sebahagian dar
 usaha untuk memperbanyakkan air mentah di dalam sungai. Jadi untuk
 keseluruhannya pada waktu ini kita sedang terlibat dalam pengagihan bekalan air
 berjadual iaitu catuan air seperti mana yang saya sebutkan tadi. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,Datuk Johari bin Abdul Ghani [Titiwangsa],"Terima kasih di atas jawapan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,1040,Datuk Johari bin Abdul Ghani [Titiwangsa],"Terima kasih di atas jawapan
 yang begitu panjang lebar daripada pihak Timbalan Menteri. Soalan tambahan saya
 ialah kalau kita lihat masalah air ini adalah satu masalah yang agak kritikal sekarang ini.
 Kalau dikaji semula sekiranya Projek Langat 2 ini dapat dibina pada masa yang telah
@@ -394,7 +394,7 @@ Saya juga ingin mengambil maklum bahawa dalam penerangan yang telah
 diberikan oleh Yang Berhormat Timbalan Menteri tadi tidak menyebutkan berapa
 lamakah pembinaan Projek Langat 2 ini dapat disiapkan daripada mula kontrak diberi.
 Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,Dato’ Seri Mahdzir Khalid,"Terima kasih Yang Berhormat Titiwangsa. Tuan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,1040,Dato’ Seri Mahdzir Khalid,"Terima kasih Yang Berhormat Titiwangsa. Tuan
 Yang di-Pertua, berkaitan dengan bekalan air mentah daripada negeri kepada syarikat-
 syarikat pemproses air ataupun konsesi air, saya kira bahawa pada peringkat awal
 sememangnya ada kenyataan yang dikeluarkan oleh pihak kerajaan negeri berkaitan
@@ -420,7 +420,7 @@ Jadi ikut jadual yang diberi adalah bahawa yang terbaru ini adalah pada tahun
 telah meluluskan projek-projek mitigasi bagi membantu bagaimana mempertahankan
 bekalan air yang ada di Wilayah Persekutuan Kuala Lumpur, Putrajaya dan juga di
 negeri Selangor. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,Tan Sri Datuk Seri Panglima Haji Annuar bin Haji Musa [Ketereh],"Tuan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,1040,Tan Sri Datuk Seri Panglima Haji Annuar bin Haji Musa [Ketereh],"Tuan
 Yang di-Pertua, berhubung dengan memorandum persefahaman ke arah penyelesaian
 bekalan air di Selangor termasuk pembinaan loji di Langat 2, telah pun ada kedengaran
 pernyataan-pernyataan berbaur politik yang meragui tentang kandungan dan juga
@@ -442,7 +442,7 @@ daripada kelemahan pengurusan sumber air. Tidakkah kerajaan memikirkan untuk
 masa akan datang perbadanan di peringkat nasional dan menjadikan soal bekalan air
 itu sebagai tanggungjawab Persekutuan dan bukan lagi tanggungjawab kerajaan-
 kerajaan negeri."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,Dato’ Seri Mahdzir Khalid,"Terima kasih Yang Berhormat Ketereh. Tuan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,1040,Dato’ Seri Mahdzir Khalid,"Terima kasih Yang Berhormat Ketereh. Tuan
 Yang di-Pertua, pertamanya mengenai dengan Perjanjian Persefahaman di antara
 Kerajaan Persekutuan dengan Kerajaan Negeri Selangor mengenai bekalan air. Saya
 kira bahawa Yang Amat Berhormat Timbalan Perdana Menteri dan juga Yang Amat
@@ -452,7 +452,7 @@ dimasukkan perkataan dengan izin, *unrevokeable* oleh kedua-dua belah pihak. Jad
 kedua-dua belah pihak telah bersetuju supaya perjanjian ini dipakai bagi menentukan
 bahawa bekalan air di Selangor, Wilayah Persekutuan Kuala Lumpur dan Putrajaya
 dapat diselesaikan secara holistik."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1050,Dato’ Seri Mahdzir Khalid,"Keduanya, berkaitan dengan masalah pengurusan bekalan air di negeri-negeri.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1050,1050,Dato’ Seri Mahdzir Khalid,"Keduanya, berkaitan dengan masalah pengurusan bekalan air di negeri-negeri.
 Dari segi latar belakangnya bahawa keseluruhan pengurusan air sama ada air mentah
 ataupun loji pembersihan air dan juga air bersih yang diagihkan kepada domestik
 ataupun perusahaan adalah di bawah tanggungjawab kerajaan negeri masing-masing.
@@ -478,7 +478,7 @@ antara Kerajaan Persekutuan dan negeri, saya kira air adalah sebahagian daripada
 milik negeri berserta dengan tanah dan juga hasil mahsul yang lain di negeri. Jadi
 sehingga hari ini, saya kira air itu masih lagi di bawah - air mentah, masih lagi di bawah
 pengawalan kerajaan-kerajaan negeri. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1050,Datuk Dr. Abd. Latiff Ahmad [Mersing],"Terima kasih Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1050,1050,Datuk Dr. Abd. Latiff Ahmad [Mersing],"Terima kasih Tuan Yang di-Pertua.
 Terima kasih kerana memberi soalan tambahan dalam masa kecederaan. Kebetulan
 saya terlibat sewaktu dulu-dulu Tuan Yang di-Pertua, menjadi Menteri pengiring
 sewaktu lawatan Perdana Menteri Jepun Junichiro Koizumi ke Malaysia tahun 2001.
@@ -490,24 +490,24 @@ Soalan saya, adakah Kerajaan Negeri Selangor yang diketuai oleh Pakatan Rakyat i
 memang degil, pekak badak dan tidak mahu dengar langsung nasihat ulama-ulama hari
 ini dengan menyelesaikan masalah ini sehingga menyusahkan. Walaupun dia tidak
 ada."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1050,Seorang Ahli,"Bebal, bebal."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1050,Datuk Dr. Abd. Latiff Ahmad [Mersing],"Ya, bebal. Tambahan. Sehingga
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1050,1050,Seorang Ahli,"Bebal, bebal."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1050,1050,Datuk Dr. Abd. Latiff Ahmad [Mersing],"Ya, bebal. Tambahan. Sehingga
 menyusahkan rakyat. Kalau kita dengar ulama-ulama hari ini, benda ini sudah selesai
 dan kita tidak ada masalah air pun. Adakah ini benar?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1050,Dato’ Seri Mahdzir Khalid,"Tuan Yang di-Pertua, bab yang sebelah Pakatan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1050,1050,Dato’ Seri Mahdzir Khalid,"Tuan Yang di-Pertua, bab yang sebelah Pakatan
 Rakyat ini bukan sahaja air dia tidak dengar, semua sekali dia tidak dengar ulama. Itu
 yang jadi macam itu. Kalau dia dengar ulama, dia tidak jadilah sampai kes mahkamah
 semua ini. Jadi, saya kira bahawa itu soalan yang spesifik yang itu, saya jawab yang itu
 sahajalah."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1050,ANNOTATION,[Soalan No. 4 – Dato’ Haji Mahfuz bin Haji Omar (Pokok Sena) tidak hadir]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1050,Datuk Aaron Ago anak Dagang [Kanowit],"minta Perdana Menteri
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1050,1050,ANNOTATION,[Soalan No. 4 – Dato’ Haji Mahfuz bin Haji Omar (Pokok Sena) tidak hadir]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1050,1050,Datuk Aaron Ago anak Dagang [Kanowit],"minta Perdana Menteri
 menyatakan, jumlah peruntukan setiap tahun (bagi lima tahun yang lalu) yang
 digunakan bagi membantu mangsa banjir dan kebakaran di Malaysia mengikut negeri."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1050,Menteri di Jabatan Perdana Menteri [Dato’ Seri Shahidan bin Kassim],"*Bismillahi Rahmani Rahim.* Tuan Yang di-Pertua, marilah kita berdoa kepada Allah
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1050,1050,Menteri di Jabatan Perdana Menteri [Dato’ Seri Shahidan bin Kassim],"*Bismillahi Rahmani Rahim.* Tuan Yang di-Pertua, marilah kita berdoa kepada Allah
 SWT semoga kerusi-kerusi yang kosong ini diisikan oleh Barisan Nasional dalam
 pilihan raya yang akan datang..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1050,ANNOTATION,[Tepuk]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1050,Menteri di Jabatan Perdana Menteri [Dato’ Seri Shahidan bin Kassim],"Tuan Yang di-Pertua, jumlah keseluruhan wang ihsan yang disalurkan bagi
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1050,1050,ANNOTATION,[Tepuk]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1050,1050,Menteri di Jabatan Perdana Menteri [Dato’ Seri Shahidan bin Kassim],"Tuan Yang di-Pertua, jumlah keseluruhan wang ihsan yang disalurkan bagi
 bencana banjir dari tahun 2008 sehingga tahun 2013 adalah seperti berikut. Saya bagi
 angka secara kasar atau secara purata.
 | TAHUN  | NILAI (RM juta) |
@@ -532,7 +532,7 @@ bawah MKN. Namun, atas dasar keprihatinan Kerajaan Pusat, terdapat beberapa
 kejadian kebakaran yang berskala besar dan diisytiharkan sebagai bencana oleh
 jawatankuasa pengurusan daerah yang dipertimbangkan pemberian wang ihsan
 kepada ketua isi rumah menggunakan peruntukan KWABBN."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1050,Datuk Aaron Ago anak Dagang [Kanowit],"Terima kasih kepada jawapan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1050,1050,Datuk Aaron Ago anak Dagang [Kanowit],"Terima kasih kepada jawapan
 Menteri. Banjir yang telah berlaku di beberapa negeri yang lalu terutamanya di Sarawak
 dan Sabah membawa banyak kerugian kepada mangsa. Kes kebakaran sering juga
 berlaku terutamanya di rumah-rumah panjang di Sarawak. Kerajaan juga cuba dari
@@ -548,7 +548,7 @@ bantuan tersebut oleh sebab apa yang telah berlaku baru-baru ini terutamanya man
 banjir, ada yang mendapat bantuan dan ada yang tidak dapat. Mereka yang mahu
 mengadu masalah ini pun tidak tahu ke mana mereka dapat mengadu untuk
 mendapatkan bantuan. Sekian."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1100,Dato' Seri Shahidan bin Kassim,"Tuan Yang di-Pertua, bantuan yang diberi
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1100,1100,Dato' Seri Shahidan bin Kassim,"Tuan Yang di-Pertua, bantuan yang diberi
 oleh MKN ialah wang tunai sebanyak RM500 dan ianya mesti disahkan oleh pejabat
 daerah setelah dihantar kepada Majlis Keselamatan Negara. Tuan Yang di-Pertua,
 bantuan banjir besar yang berlaku baru-baru ini, kita masih belum lagi membuat
@@ -569,7 +569,7 @@ kawasan banjir.
 Terdapat banyak agensi yang memberi bantuan. Tentang MKN kita beri
 RM500. MKN juga bagi bantuan logistik perpindahan dan sama menyelia tempat
 perpindahan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1100,Datuk Raime Unggi [Tenom],"Terima kasih Tuan Yang di-Pertua, terima
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1100,1100,Datuk Raime Unggi [Tenom],"Terima kasih Tuan Yang di-Pertua, terima
 kasih Yang Berhormat Menteri kerana kawasan saya baru-baru ini kena banjir. Terima
 kasih atas lawatan Yang Berhormat Menteri ke kawasan saya bersama-sama dengan
 Yang Amat Berhormat Ketua Menteri meninjau keadaan banjir di Tenom baru-baru ini.
@@ -587,7 +587,7 @@ kekurangan, kekurangan betul dari sudut kelengkapan. Kalau boleh saya minta Yang
 Berhormat Menteri membantu pihak Jawatankuasa Bencana Alam ini dalam
 memperkemaskan gerak kerja jentera apabila berlakunya bencana di suatu kawasan.
 Terima kasih Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1100,Dato' Seri Shahidan bin Kassim,"Tuan Yang di-Pertua, Tenom kita belum
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1100,1100,Dato' Seri Shahidan bin Kassim,"Tuan Yang di-Pertua, Tenom kita belum
 sampaikan bantuan lagi Yang Berhormat. Kita masih menunggu senarai lengkap dari
 Tenom, Beaufort dan juga lain-lain lagi. Kita baru sampaikan di Kota Belud di Sabah.
 Berhubung dengan Jawatankuasa Bencana Alam Peringkat Daerah, jawatankuasa ini
@@ -615,17 +615,17 @@ memudahkan bicara, jawatankuasa ini akan kenal pasti lebih awal lagi untuk
 persediaan supaya stor barangan kita itu diletakkan di tempat yang berdekatan. Kita
 ada di peringkat negeri dan juga di tempat-tempat yang kita jangka memang kawasan
 yang boleh banjir."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1100,ANNOTATION,[Soalan No. 6 – Tuan Tony Pua Kiam Wee (Petaling Jaya Utara) tidak hadir]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1100,Dato' Abdul Manan Ismail [Paya Besar],"minta Menteri Sumber Manusia
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1100,1100,ANNOTATION,[Soalan No. 6 – Tuan Tony Pua Kiam Wee (Petaling Jaya Utara) tidak hadir]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1100,1100,Dato' Abdul Manan Ismail [Paya Besar],"minta Menteri Sumber Manusia
 menyatakan jumlah kes majikan yang gagal mematuhi pelaksanaan gaji minimum yang
 berkuat kuasa 1 Januari 2014 mengikut Akta Majlis Perundingan Gaji Negara 2011."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1100,Menteri Sumber Manusia [Dato' Sri Richard Riot anak Jaem],"Terima
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1100,1100,Menteri Sumber Manusia [Dato' Sri Richard Riot anak Jaem],"Terima
 kasih Tuan Yang di-Pertua, terima kasih Yang Berhormat dari Paya Besar. Tuan Yang
 di-Pertua, untuk makluman Dewan yang mulia ini, Perintah Gaji Minimum 2012 telah
 berkuat kuasa pada 1 Januari 2013 bagi majikan yang menggajikan enam orang
 pekerja dan lebih dan 1 Julai 2013 bagi majikan yang menggajikan lima orang pekerja
 atau kurang."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1110,Menteri Sumber Manusia [Dato' Sri Richard Riot anak Jaem],"Berkenaan status semasa pelaksanaan gaji minimum, kerajaan telah
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1110,1110,Menteri Sumber Manusia [Dato' Sri Richard Riot anak Jaem],"Berkenaan status semasa pelaksanaan gaji minimum, kerajaan telah
 menetapkan mulai 1 Januari 2014 ini, penguatkuasaan gaji minimum akan dijalankan
 sepenuhnya terhadap semua majikan. Keputusan ini dibuat setelah mengambil kira
 penundaan yang telah diberikan oleh kerajaan sepanjang tahun 2013 bagi 1,044
@@ -659,7 +659,7 @@ Manusia sedang meneliti tindakan pendakwaan terhadap 622 majikan yang gagal
 mematuhi penetapan gaji minimum pada tahun 2013. Majikan-majikan ini adalah
 majikan tidak mendapat kelonggaran penangguhan pelaksanaan gaji minimum tempoh
 hari. Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1110,Dato' Abdul Manan Ismail [Paya Besar],"Terima kasih Tuan Yang di-Pertua,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1110,1110,Dato' Abdul Manan Ismail [Paya Besar],"Terima kasih Tuan Yang di-Pertua,
 terima kasih Yang Berhormat Menteri. Kerajaan cukup prihatin yang terdiri daripada
 banyak aduan daripada pekerja-pekerja yang dianiaya oleh majikan yang masih
 berdegil untuk mematuhi Akta Majlis Perunding Gaji Negara 2011. Mengikut seksyen
@@ -669,7 +669,7 @@ tambahan saya, apakah kerajaan berjaya dan memastikan bahawa kebajikan pekerja-
 pekerja dalam negara ini diambil kira sekiranya akta ini tidak dilaksanakan dengan
 sebaik mungkin. Ini kerana ia merupakan masalah yang dihadapi oleh rakyat di negara
 kita khususnya pekerja-pekerja di kalangan orang muda. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1110,Dato' Sri Richard Riot anak Jaem,"Terima kasih Yang Berhormat. Oleh
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1110,1110,Dato' Sri Richard Riot anak Jaem,"Terima kasih Yang Berhormat. Oleh
 kerana pelaksanaan sepenuhnya gaji minimum ini baru berkuat kuasa pada 1 Januari
 2014, maka terlalu awal untuk mendapat *impact* sebenarnya. Akan tetapi izinkan saya
 Tuan Yang di-Pertua untuk memberitahu bahawa iaitu mengenai kedudukan majikan
@@ -698,7 +698,7 @@ minimum hanya diambil sebagai jalan terakhir setelah semua langkah lain seperti
 amaran diendahkan oleh para majikan. Harus juga diingat bahawa semua kes
 pendakwaan di mahkamah hanya dilaksanakan setelah mendapat kebenaran atau
 *consent* daripada Timbalan Pendakwa Raya. Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1120,Dato’ Noraini binti Ahmad [Parit Sulong],"Terima kasih Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1120,1120,Dato’ Noraini binti Ahmad [Parit Sulong],"Terima kasih Tuan Yang di-Pertua.
 Soalan tambahan saya kepada Yang Berhormat Menteri, daripada jumlah yang tadi
 dimaklumkan oleh Yang Berhormat mengenai majikan-majikan yang tidak mematuhi
 Perintah Gaji Minimum ini walaupun tidak mendapat pelepasan. Jumlahnya tadi
@@ -712,7 +712,7 @@ pembayaran gaji minimum. Jadi, apakah tindakan kementerian dalam hal ini? Apakah
 kementerian akan mengenakan atau *impose any charges* dengan izin, terhadap
 syarikat ini dan bilakah syarikat ini akan melaksanakan Perintah Gaji Minimum ini?
 Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1120,Dato’ Sri Richard Riot anak Jaem,"Terima kasih Yang Berhormat Parit Sulong.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1120,1120,Dato’ Sri Richard Riot anak Jaem,"Terima kasih Yang Berhormat Parit Sulong.
 Soalan itu ada kena mengena dengan kementerian saya sendiri iaitu kementerian yang
 sepatutnya mendahului sektor-sektor yang lain. Kita memang faham bahawa kontraktor
 pembersihan, kalau diizinkan saya sebutkan namanya di sini untuk pengetahuan
@@ -728,8 +728,8 @@ Saya tegaskan di sini bahawa mereka telah memberi jaminan, pegawai-pegawai kita
 telah berunding dengan tuan punya syarikat dan mereka telah memberi jaminan
 bahawa gaji minimum ini akan diberikan kepada mereka dalam masa terdekat. Sekian,
 terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1120,ANNOTATION,[Soalan No.8 – Y.B. Dr. Mohd Hatta bin Md. Ramli (Kuala Krai) tidak hadir]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1120,Dato' Wira Mohd. Johari bin Baharum [Kubang Pasu],"minta Menteri
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1120,1120,ANNOTATION,[Soalan No.8 – Y.B. Dr. Mohd Hatta bin Md. Ramli (Kuala Krai) tidak hadir]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,■1120,1120,Dato' Wira Mohd. Johari bin Baharum [Kubang Pasu],"minta Menteri
 Komunikasi dan Multimedia menyatakan mengenai Astro:
 (a) mengapakah Astro sentiasa mendapat hak eksklusif siaran
 langsung sukan terutamanya, yang mana ia telah menyekat
@@ -738,7 +738,7 @@ siaran langsung; dan
 (b) jelaskan terhadap kenaikan harga langganan perkhidmatan
 Astro yang naik mendadak dan adakah ia setimpal dengan
 siaran atau rancangan yang sama ditayangkan berulang kali."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1120,Menteri Komunikasi dan Multimedia [Dato’ Sri Ahmad Shabery Cheek],"Tuan Yang di-Pertua, pertamanya saya ucapkan terima kasih kepada Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,■1120,1120,Menteri Komunikasi dan Multimedia [Dato’ Sri Ahmad Shabery Cheek],"Tuan Yang di-Pertua, pertamanya saya ucapkan terima kasih kepada Yang Berhormat
 Kubang Pasu atas soalan yang dikemukakan. Dua soalan yang ditanya. Pertama sekali
 ialah tentang kenapa Astro mendapat hak eksklusif di dalam rancangan-rancangan
 terutamanya siaran langsung sukan dan menyekat stesen-stesen lain untuk
@@ -762,7 +762,7 @@ tahun lepas iaitu kenaikan sebanyak RM2 bagi pakej keluarga dan RM6 bagi pakej
 sukan yang kita kirakan masih lagi suatu jumlah yang munasabah kerana kita tahu
 bahawa kos *content* sukan adalah merupakan satu kos yang sangat tinggi. Terima
 kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1120,Dato’ Wira Mohd. Johari bin Baharum [Kubang Pasu],"Terima kasih Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,■1120,1120,Dato’ Wira Mohd. Johari bin Baharum [Kubang Pasu],"Terima kasih Yang
 Berhormat. Saya ingin menarik perhatian iaitu berkenaan dengan semasa kita
 memperkenalkan Astro dahulu. Di dalam kempen ia telah dijanjikan supaya tidak ada
 iklan dan sebagainya tetapi akhir-akhir ini kita tengok iklan terlalu banyak di dalam
@@ -773,7 +773,7 @@ banyak lagi stesen berbayar bagi alternatif daripada Astro ini supaya ia dapat m
 perkhidmatan yang lebih baik kepada rakyat dan juga saingan di antara stesen-stesen
 selain daripada Astro yang kita beri eksklusif kepada mereka, yang kita tengok telah
 mengaut keuntungan yang begitu besar."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1120,Dato’ Sri Ahmad Shabery Cheek,"Pertamanya Tuan Yang di-Pertua, saya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,■1120,1120,Dato’ Sri Ahmad Shabery Cheek,"Pertamanya Tuan Yang di-Pertua, saya
 terpaksa menarik balik sebab saya ingin menjawab soalan tadi juga bersama dengan
 soalan yang dikemukakan oleh Yang Berhormat Kota Raja pada 20 Mac dan Yang
 Berhormat Sepanggar pada 27 Mac 2014.
@@ -794,7 +794,7 @@ yang pertama iaitu 42 yang dipanggil *‘*Pakej NJOI Percuma’. Tidak ada negar
 dunia yang memberikan suatu stesen berbayar di mana ia memberikan pakej
 awalannya percuma. Jadi ini adalah merupakan dianggap sebagai suatu kaedah hibrid
 di mana di dalam sistem berbayar itu masih lagi ada yang tidak berbayar."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1130,Dato’ Sri Ahmad Shabery Cheek,"Sebab itu unsur-unsur pengambil iklan dan sebagainya dibenarkan dalam soal
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,■1130,1130,Dato’ Sri Ahmad Shabery Cheek,"Sebab itu unsur-unsur pengambil iklan dan sebagainya dibenarkan dalam soal
 ini tetapi jumlah iklan yang diberikannya adalah terhad. Kedua, kita kena faham di
 dalam sistem tidak berbayar atau percuma, sebenarnya dalam dunia, kita adalah antara
 yang benar-benar murah. Misalnya BBC, kalau di United Kingdom, BBC dianggap
@@ -835,10 +835,10 @@ gunakan dalam konteks negara kita. Mengenai siaran hujan dan sebagainya, kita ju
 telah mengenakan gangguan-gangguan pada had yang ditentukan sahaja yang
 dibenarkan. Kalau tidak, Astro juga akan diambil tindakan. Terima kasih Tuan Yang di-
 Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1130,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, sesi pertanyaan-pertanyaan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,■1130,1130,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, sesi pertanyaan-pertanyaan
 bagi Jawapan Lisan berakhir."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1130,ANNOTATION,[Masa untuk Pertanyaan-pertanyaan bagi Jawab Lisan tamat]
-USUL,JALAN-JALAN MASUK KE PARLIMEN,,1134,Menteri Dalam Negeri [Dato’ Seri Dr. Ahmad Zahid bin Hamidi],"Tuan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,■1130,1130,ANNOTATION,[Masa untuk Pertanyaan-pertanyaan bagi Jawab Lisan tamat]
+USUL,JALAN-JALAN MASUK KE PARLIMEN,,11.34 pg.,1134,Menteri Dalam Negeri [Dato’ Seri Dr. Ahmad Zahid bin Hamidi],"Tuan
 Yang di-Pertua, saya mohon mencadangkan:
 “Bahawa Majlis ini memerintahkan Ketua Polis Negara
 menjaga supaya selama penggal Dewan Rakyat yang ada sekarang,
@@ -850,13 +850,13 @@ supaya jangan ada huru-hara di Bangunan Dewan ini dan
 berhampiran dengan bangunan ini; dan Setiausaha Dewan Rakyat
 hendaklah menyampaikan perintah ini kepada Ketua Polis Negara
 yang tersebut itu”."
-USUL,JALAN-JALAN MASUK KE PARLIMEN,,1134,Timbalan Menteri Kerja Raya [Datuk Rosnah binti Haji Abd. Rashid Shirlin],"Tuan Yang di-Pertua, saya mohon menyokong."
-USUL,JALAN-JALAN MASUK KE PARLIMEN,,1134,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, sekarang saya kemukakan
+USUL,JALAN-JALAN MASUK KE PARLIMEN,,11.34 pg.,1134,Timbalan Menteri Kerja Raya [Datuk Rosnah binti Haji Abd. Rashid Shirlin],"Tuan Yang di-Pertua, saya mohon menyokong."
+USUL,JALAN-JALAN MASUK KE PARLIMEN,,11.34 pg.,1134,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, sekarang saya kemukakan
 masalah kepada Majlis untuk diputuskan. Masalahnya ialah usul seperti yang
 dikemukakan tadi hendaklah disetujukan."
-USUL,JALAN-JALAN MASUK KE PARLIMEN,,1134,ANNOTATION,[Usul dikemuka bagi diputuskan; dan disetujukan]
+USUL,JALAN-JALAN MASUK KE PARLIMEN,,11.34 pg.,1134,ANNOTATION,[Usul dikemuka bagi diputuskan; dan disetujukan]
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1135,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Terima
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,11.35 pg.,1135,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Terima
 kasih Tuan Yang di-Pertua. Sukalah saya mencadangkan:-
 “Bahawa suatu ucapan yang tidak sepertinya
 dipersembahkan kepada Seri Paduka Baginda Yang di-Pertuan
@@ -895,24 +895,24 @@ kanan saya dengan rakan-rakan saya yang tidak kesempatan untuk hadir bersama-
 sama kita. Dalam masa negara saya rasa berdepan dengan peristiwa-peristiwa yang
 penting dan juga ada yang menyayat hati."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1140,Datuk Dr. Abd. Latiff Ahmad [Mersing],
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1140,1140,Datuk Dr. Abd. Latiff Ahmad [Mersing],
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1140,ANNOTATION,[Bangun]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1140,1140,ANNOTATION,[Bangun]
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1140,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Saya
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1140,1140,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Saya
 kalaulah setakat..."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1140,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],"Yang Berhormat
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1140,1140,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],"Yang Berhormat
 Mersing bangun Yang Berhormat."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1140,Datuk Dr. Abd. Latiff Ahmad [Mersing],"Terima kasih Tuan Yang di-Pertua,
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1140,1140,Datuk Dr. Abd. Latiff Ahmad [Mersing],"Terima kasih Tuan Yang di-Pertua,
 terima kasih kakanda Yang Berhormat Johor Bahru. Seingat sejak tertubuhnya
 Parlimen ini, adakah betul atau benar bahawa hari ini adalah hari yang bersejarah, kali
 pertama dalam sejarah Parlimen negara, seorang pembangkang pun tidak hadir, untuk
 memboikot. Saya hendak *confirm* dengan Yang Berhormat Johor baru, adakah
 perbuatan ini luar biasa atau luar tabii?"
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1140,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Tuan
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1140,1140,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Tuan
 Yang di-Pertua, ia pernah berlaku di mana adanya masa pihak pembangkang ingin
 memulau atau boikot kepada persidangan kita. Akan tetapi, apa pun kelakuan yang
 dibawa pada hari ini, ianya berasas kepada sebab-sebab yang membawa saya terasa
@@ -920,15 +920,15 @@ agak gusar.
 Kalaulah katakan kita memboikot sidang Parlimen kerana apa yang telah
 berlaku..."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1140,Dato’ Shamsul Anuar bin Haji Nasarah [Lenggong],
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1140,1140,Dato’ Shamsul Anuar bin Haji Nasarah [Lenggong],
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1140,ANNOTATION,[Bangun]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1140,1140,ANNOTATION,[Bangun]
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1140,Datuk Bung Moktar bin Radin [Kinabatangan],
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1140,1140,Datuk Bung Moktar bin Radin [Kinabatangan],
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1140,ANNOTATION,[Bangun]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1140,1140,ANNOTATION,[Bangun]
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1140,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"...Kerana protes kepada keputusan Tuan Yang di-Pertua ataupun di atas usul daripada
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1140,1140,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"...Kerana protes kepada keputusan Tuan Yang di-Pertua ataupun di atas usul daripada
 kerajaan dan tindakan daripada kerajaan iaitu perkara yang membawa kita membantah
 ialah ada kaitannya dengan Parlimen atau dengan urusan Dewan Rakyat. Saya mudah
 saja menerimanya. Ini kerana itu boleh dikatakan sebagai satu tindakan dan keputusan
@@ -942,17 +942,17 @@ berada di dalam keadaan yang kukuh, dibenar membentuk kerajaan dan kerajaan yang
 dibentuk dalam Parlimen ini pergi ke Putrajaya tetapi mandat rakyat tetap di dalam
 Dewan Rakyat atau Parlimen."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1140,Datuk Bung Moktar bin Radin [Kinabatangan],"Yang Berhormat Johor
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1140,1140,Datuk Bung Moktar bin Radin [Kinabatangan],"Yang Berhormat Johor
 Bahru, boleh minta penjelasan?"
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1140,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],"Ya, Yang
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1140,1140,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],"Ya, Yang
 Berhormat Kinabatangan dan Yang Berhormat Lenggong bangun Yang Berhormat.
 Yang Berhormat Kinabatangan."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1140,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Yang
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1140,1140,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Yang
 Berhormat Kinabatangan."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1140,Datuk Bung Moktar bin Radin [Kinabatangan],"Tuan Yang di-Pertua, saya
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1140,1140,Datuk Bung Moktar bin Radin [Kinabatangan],"Tuan Yang di-Pertua, saya
 sudah empat penggal dalam Dewan Rakyat. Sesi kali ini nampaknya satu musibah bagi
 pembangkang dan saya ingin bertanya Yang Berhormat Johor Bahru, adakah Yang
 Berhormat Johor Bahru ingin mengemukakan pertanyaan kepada Tuan Yang di-Pertua
@@ -967,11 +967,11 @@ Jangan pula *front bench* fikir mereka boleh duduk senang lenang sana. Oleh seba
 pun mungkin boleh untuk jadi *pressure* kepada mereka dalam keadaan-keadaan yang
 tertentu. Terima kasih Yang Berhormat Johor Bahru."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1140,Dato’ Shamsul Anuar bin Haji Nasarah [Lenggong],Lenggong.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1140,1140,Dato’ Shamsul Anuar bin Haji Nasarah [Lenggong],Lenggong.
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1140,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],Ya.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1140,1140,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],Ya.
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1140,Dato’ Shamsul Anuar bin Haji Nasarah [Lenggong],"Terima kasih Tuan
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1140,1140,Dato’ Shamsul Anuar bin Haji Nasarah [Lenggong],"Terima kasih Tuan
 Yang di-Pertua, terima kasih Yang Berhormat Johor Bahru. Saya cuma tidak setuju
 kalau Yang Berhormat Johor Bahru kata tadi rakan-rakan kita di sebelah sana tidak
 berkesempatan untuk hadir. Sebenarnya bukan tidak sempat. Sengaja dirancang untuk
@@ -995,12 +995,12 @@ tindakan ketidakmatangan mereka dan lambang kepada standard pembangkang yang
 langsung tidak mencerminkan tahap kematangan yang tinggi. Saya hendak tanya
 pandangan Yang Berhormat Johor Bahru."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1140,Dato’ Sri Azalina Dato’ Othman Said [Pengerang],"Yang Berhormat Johor
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1140,1140,Dato’ Sri Azalina Dato’ Othman Said [Pengerang],"Yang Berhormat Johor
 Bahru, boleh saya mencelah? Pengerang."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1140,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],Ya.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1140,1140,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],Ya.
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1140,Dato’ Sri Azalina Dato’ Othman Said [Pengerang],"Terima kasih. Yang
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1140,1140,Dato’ Sri Azalina Dato’ Othman Said [Pengerang],"Terima kasih. Yang
 Berhormat Johor Bahru, saya hendak tanya Yang Berhormat Johor Bahru ya, kalau kita
 tengok sifat boikot yang dibuat oleh yang di sebelah kanan itu, sepatutnya bila dia
 menghadiri Parlimen, dia mewakili rakyat yang mengundi dia.
@@ -1014,12 +1014,12 @@ maaf Yang Berhormat Johor Bahru, ini bukan wakil rakyat mithali. Ini kita ini wa
 rakyat mithali. Jadi, saya minta Yang Berhormat Johor Bahru kita buat tindakan kah
 ataupun kita biar mereka biadab dan tidak menghormati rakyat. Terima kasih."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1140,Datuk Shabudin bin Yahaya [Tasek Gelugor],"Yang Berhormat Johor
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1140,1140,Datuk Shabudin bin Yahaya [Tasek Gelugor],"Yang Berhormat Johor
 Bahru, minta laluan sedikit. Yang Berhormat Johor Bahru, satu lagi minta laluan sedikit?"
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1140,ANNOTATION,[Ketawa]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1140,1140,ANNOTATION,[Ketawa]
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1140,Datuk Shabudin bin Yahaya [Tasek Gelugor],"Terima kasih. Terima kasih Yang Berhormat Johor Bahru, Terima kasih Tuan
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1140,1140,Datuk Shabudin bin Yahaya [Tasek Gelugor],"Terima kasih. Terima kasih Yang Berhormat Johor Bahru, Terima kasih Tuan
 Yang di-Pertua.
 Setujukah Yang Berhormat Johor Bahru kalau kita katakan pihak
 pembangkang ini adalah merupakan orang yang paling tidak amanah kepada rakyat
@@ -1038,7 +1038,7 @@ ini bukan setakat hendak guna minyak sahaja, amanah yang diberikan secara terus 
 langsung diabaikan dan pergi membuat perkara-perkara lain yang tidak sewajarnya.
 Setujukah Ahli Parlimen daripada Johor Bahru? Terima kasih."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1140,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Tuan
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1140,1140,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Tuan
 Yang di-Pertua, dalam mukadimah saya sebenarnya sudah menyatakan bahawa
 selaku seorang yang telah melalui atau bernasib baik mendapat pengalaman dalam
 politik negara ini dan juga bertutur dengan pemimpin-pemimpin besar negara bahawa
@@ -1046,7 +1046,7 @@ sepatutnyalah konsep amanah itu antaranya ialah untuk mendahulukan kepentingan
 anak buah dan rakyat yang bergantung kepada kita. Lebih awal daripada kepentingan
 diri kita sendiri."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1150,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Sama ada sebab kepentingan politik atau kepentingan diri kita sebagai
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1150,1150,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Sama ada sebab kepentingan politik atau kepentingan diri kita sebagai
 seorang pemimpin, haruslah kita serahkan dulu tanggungjawab kita, menentukan
 tanggungjawab kita terhadap rakyat dan pengundi-pengundi kita dan negara yang telah
 diberikan kepada kita sebagai amanah itu, harus kita pertahankan.
@@ -1070,18 +1070,18 @@ iaitu Parlimen dengan hal Parlimennya, kehakiman dengan hal kehakimannya,
 eksekutif tidak boleh campur dengan mahkamah dan juga dengan Dewan Rakyat,
 bukankah itu memerlukan kita memisahkannya?"
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1150,Dato’ Othman bin Aziz [Jerlun],
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1150,1150,Dato’ Othman bin Aziz [Jerlun],
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1150,ANNOTATION,[Bangun]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1150,1150,ANNOTATION,[Bangun]
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1150,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Soal
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1150,1150,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Soal
 keputusan mahkamah dan tidak meletakkannya sebagai sebab mengapa kita memulau
 atau memboikot persidangan Parlimen."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1150,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],"Yang Berhormat
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1150,1150,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],"Yang Berhormat
 Jerlun bangun Yang Berhormat."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1150,Dato’ Othman bin Aziz [Jerlun],"Minta laluan Yang Berhormat Johor Bahru.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1150,1150,Dato’ Othman bin Aziz [Jerlun],"Minta laluan Yang Berhormat Johor Bahru.
 Terima kasih. Yang Berhormat Johor Bahru sebut dia sudah enam penggal di
 Parlimen, saya baru kali pertama. Cuma, saya pun tidak pernah tengok gelagat seperti
 yang berlaku hari ini. Saya hendak bertanya dengan Yang Berhormat Johor Bahru.
@@ -1097,7 +1097,7 @@ kaca mata rakyat kerana tidak menghormati keluhuran negara iaitu kita berpayung
 dengan Sultan dan juga Yang di-Pertuan Agong? Jadi mohon Yang Berhormat Johor
 Bahru memberikan komen."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1150,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Tuan
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1150,1150,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Tuan
 Yang di-Pertua, saya rasa mungkin mereka lebih selesa dengan pakaian Barat dalam
 majlis-majlis yang besar seperti ini. Saya tidak mengambil satu pandangan yang terlalu
 berat kepada perkara itu kerana mereka juga berhak memilih pakaian yang diperlukan.
@@ -1119,13 +1119,13 @@ Ini bukan soal sistem atau menunjukkan kita ini terlalu Barat, kita ini tidak
 menghormati tradisi yang ada di negara kita. Di mana lagilah hendak kita meletakkan
 taat setia kita kalau tidak kepada negara kita?..."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1150,ANNOTATION,[Tepuk]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1150,1150,ANNOTATION,[Tepuk]
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1150,Dr. Haji Noor Azmi bin Ghazali [Bagan Serai],
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1150,1150,Dr. Haji Noor Azmi bin Ghazali [Bagan Serai],
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1150,ANNOTATION,[Bangun]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1150,1150,ANNOTATION,[Bangun]
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1150,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Dan
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1150,1150,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Dan
 bagaimanalah kita hendak mendefinisikan negara kita kalau kita tidak mempunyai
 tradisi dan budaya kita di mana ia menjadi satu watak identiti pengenalan kepada
 negara kita dan barulah kita boleh dengan bangganya memanggil diri kita sebagai
@@ -1134,10 +1134,10 @@ perasaan insaf bahawa kita memikul amanah dan tanggungjawab yang telah diberikan
 kepada kita sebagai wakil-wakil rakyat.
 Jadi Tuan Yang di-Pertua, saya rasa banyak pengajaran..."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1150,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],"Ya, ada lagi yang
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1150,1150,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],"Ya, ada lagi yang
 bangun Yang Berhormat."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1150,Dr. Haji Noor Azmi bin Ghazali [Bagan Serai],"Terima kasih Tuan Yang di-
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1150,1150,Dr. Haji Noor Azmi bin Ghazali [Bagan Serai],"Terima kasih Tuan Yang di-
 Pertua, terima kasih Yang Berhormat Johor Bahru. Saya adalah penggal pertama di
 Parlimen ini dan sudah tentunya sebagai orang yang baru, saya terkeliru melihat semua
 di sebelah sana tidak ada pada hari ini.
@@ -1150,7 +1150,7 @@ yang tidak hadir di sebelah sana? Saya percaya tentulah banyak surat yang dihant
 kepada Tuan Yang di-Pertua. Jadi apakah komen Yang Berhormat Johor Bahru,
 adakah ini contoh yang terbaik untuk saya?"
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1150,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Tuan
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1150,1150,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Tuan
 Yang di-Pertua, saya rasa kalau hendak mengikut contoh, kita ikutlah contoh-contoh
 yang ada hari ini ramai yang boleh memberikan contoh teladan yang baik dan saya
 sendiri merasakan bahawa ia bukanlah satu keadaan yang tidak boleh kita atasi.
@@ -1161,21 +1161,21 @@ perbahasan ataupun dalam pengundian ataupun dalam usaha kita untuk
 membentangkan usul tetapi tidak bermakna pula kalau kita kalah di dalam Dewan
 Rakyat bahawa kita tidak boleh menang di luar."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1150,Datuk Bung Moktar bin Radin [Kinabatangan],
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1150,1150,Datuk Bung Moktar bin Radin [Kinabatangan],
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1150,ANNOTATION,[Bangun]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1150,1150,ANNOTATION,[Bangun]
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1150,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Akan
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1150,1150,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Akan
 tetapi apabila kita melakukan perbuatan seperti ini, dengan hanya mementingkan
 kedudukan kita kerana rasanya kita tergugat ataupun terasa marah kerana keputusan
 mahkamah, ia telah menyentuh satu prinsip yang penting."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1150,Datuk Bung Moktar bin Radin [Kinabatangan],"Boleh Yang Berhormat
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1150,1150,Datuk Bung Moktar bin Radin [Kinabatangan],"Boleh Yang Berhormat
 Johor Bahru?"
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1150,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],Ya.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1150,1150,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],Ya.
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1200,Datuk Bung Moktar bin Radin [Kinabatangan],"Minta maaf Yang Berhormat
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1200,1200,Datuk Bung Moktar bin Radin [Kinabatangan],"Minta maaf Yang Berhormat
 Johor Bahru, mencelah sedikit. Saya sebetulnya apabila melihat keadaan hari ini,
 kebelakangan ini pembangkang mengatakan bahawa rakyat yang memilih mereka
 harus diutamakan. Akan tetapi rakyat yang telah memilih mereka tetapi mereka tidak
@@ -1189,16 +1189,16 @@ menggunakan demokrasi konon, keputusan kehakiman dicampuradukkan dengan
 Dewan Rakyat, seharusnya diasingkan. Ini yang penting. Akan tetapi mereka memilih
 jalan buntu, jalan yang tidak direstu oleh demokrasi itu sendiri."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1200,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],"Yang Berhormat
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1200,1200,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],"Yang Berhormat
 Kota Tinggi bangun, Yang Berhormat."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1200,Datuk Noor Ehsanuddin bin Mohd. Harun Narrashid [Kota Tinggi],"Yang
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1200,1200,Datuk Noor Ehsanuddin bin Mohd. Harun Narrashid [Kota Tinggi],"Yang
 Berhormat Johor Bahru, Kota Tinggi."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1200,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],"Yang Berhormat
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1200,1200,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],"Yang Berhormat
 Kota Tinggi bangun."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1200,Datuk Noor Ehsanuddin bin Mohd. Harun Narrashid [Kota Tinggi],"Terima
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1200,1200,Datuk Noor Ehsanuddin bin Mohd. Harun Narrashid [Kota Tinggi],"Terima
 kasih Tuan Yang di-Pertua, terima kasih Yang Berhormat Johor Bahru. Saya tertarik
 dan ingin menyarankan kepada Yang Berhormat Johor Bahru. Apa pandangan Johor
 Bahru, tadi bercakap tentang integriti kita tahu demokrasi yang kita pegang dan kita
@@ -1217,7 +1217,7 @@ sebagai mereka memboikot sidang hari ini kita minta rakyat Kajang boikot mereka
 supaya kita ajar mereka bahawa jangan mereka sewenang-wenangnya memperkosa
 demokrasi yang kita junjung selama ini. Apa pandangan Yang Berhormat Johor Bahru?"
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1200,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Tuan
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1200,1200,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Tuan
 Yang di-Pertua, itu pandangan yang agak tepat kerana antara sebab yang mereka
 berikan ialah mereka tidak puas hati dengan keputusan mahkamah. Itu sudah salah
 kerana apabila mahkamah memberikan keputusan yang memihak kepada mereka,
@@ -1229,20 +1229,20 @@ seperti kebudakan. Kalau tidak kena, tidak dapat, kita melolong, kita marah. Apa
 dapat, kita suka. Ini bukan kematangan yang kita hendak lihat di dalam sistem
 demokrasi mereka."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1200,Puan Mas Ermieyati binti Samsudin [Masjid Tanah],Mohon laluan.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1200,1200,Puan Mas Ermieyati binti Samsudin [Masjid Tanah],Mohon laluan.
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1200,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],"Yang Berhormat
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1200,1200,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],"Yang Berhormat
 Masjid Tanah bangun Yang Berhormat."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1200,Puan Mas Ermieyati binti Samsudin [Masjid Tanah],"Mohon laluan Yang
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1200,1200,Puan Mas Ermieyati binti Samsudin [Masjid Tanah],"Mohon laluan Yang
 Berhormat Johor Bahru."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1200,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Saya
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1200,1200,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Saya
 hendak rujuk juga kepada..."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1200,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],Ya.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1200,1200,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],Ya.
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1200,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Sebentar. Saya hendak rujuk juga kepada sebab mereka tidak ada di sini ini. Ahli
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1200,1200,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Sebentar. Saya hendak rujuk juga kepada sebab mereka tidak ada di sini ini. Ahli
 Parlimen Pembangkang ada di sini kerana hendak hadir dalam penamaan calon
 Pilihanraya Kecil Kajang. Itu pun bukan sesiapa yang menyebabkannya, seperti mana
 Yang Berhormat Kota Tinggi cakap, yang menyebabkan adanya Pilihanraya Kecil
@@ -1265,27 +1265,27 @@ Bandar Tun Razak kekal memegang jawatan Menteri Besar, dia akan juga *insya-Alla
 bertanding jawatan Timbalan Presiden PKR. Kita pun akan mengucapkan selamat maju
 jaya."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1200,Puan Mas Ermieyati binti Samsudin [Masjid Tanah],"Yang Berhormat,
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1200,1200,Puan Mas Ermieyati binti Samsudin [Masjid Tanah],"Yang Berhormat,
 sudah lenguh kaki berdiri."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1200,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Oleh
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1200,1200,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Oleh
 kerana kita pun ada kawan-kawan, ada harapan yang baik bagi mereka. Semoga
 pemilihan di parti PKR itu akan dijalankan dengan cara yang terbaik bukan ikut cara
 dalam parti DAP ya?"
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1200,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],Yang Berhormat.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1200,1200,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],Yang Berhormat.
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1200,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Di
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1200,1200,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Di
 mana mengira setakat bilangan kertas undi banyak ini pun boleh tersalah kira. Jadi,
 oleh sebab itu dalam pertandingan yang sihat ia menjadikan kebaikan kepada kita,
 melihat bagaimana parti-parti politik dalam negara ini berjalan dengan baik. Betul-betul
 memperjuangkan prinsip mereka ditubuhkan. Bagaimana ia memainkan peranan yang
 diamanahkan. Itu harapan kita semua. Itu harapan rakyat semua."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1200,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],"Ya. Yang
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1200,1200,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],"Ya. Yang
 Berhormat Masjid Tanah dan Yang Berhormat Lenggong bangun Yang Berhormat."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1200,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Akan
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1200,1200,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Akan
 tetapi apabila diletakkan jawatan ia menimbulkan soal adakah terlibatnya politik wang
 sehingga melibatkan peletakan jawatan? Adakah ia kerana sesiapa, kalau tidak kerana
 mereka, kerana nafsu yang hendak menjadi Menteri Besar atau kononnya Kajang
@@ -1306,10 +1306,10 @@ menang kawasan-kawasan yang tertentu. Jadi, ini banyak ceritanya Tuan Yang di-
 Pertua, itu sebabnya kadang-kadang saya malas hendak bercakap. Banyak cerita yang
 lain. Sila Yang Berhormat Masjid Tanah."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1200,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],"Yang Berhormat
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1200,1200,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],"Yang Berhormat
 Masjid Tanah."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1200,Puan Mas Ermieyati binti Samsudin [Masjid Tanah],"Terima kasih Yang
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1200,1200,Puan Mas Ermieyati binti Samsudin [Masjid Tanah],"Terima kasih Yang
 Berhormat Johor Bahru. Saya cuma hendak minta Yang Berhormat Johor Bahru beri
 gambaran yang jelas sebab kita melihat hari ini, memanglah saya Ahli Parlimen, orang
 baru sahaja jadi kita melihat contoh daripada kalangan-kalangan pemimpin wakil rakyat
@@ -1322,37 +1322,37 @@ kosong. Satu gambaran yang tidak sihat. Inikah yang hendak ditunjukkan kepada
 golongan orang muda di luar sana? Tidak menghormati perlembagaan, tidak
 menghormati Raja dan negara, Parlimen khususnya."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1200,Dato’ Shamsul Anuar bin Haji Nasarah [Lenggong],
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1200,1200,Dato’ Shamsul Anuar bin Haji Nasarah [Lenggong],
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1200,ANNOTATION,[Bangun]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1200,1200,ANNOTATION,[Bangun]
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1200,Puan Mas Ermieyati binti Samsudin [Masjid Tanah],"Ini yang kita hendak
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1200,1200,Puan Mas Ermieyati binti Samsudin [Masjid Tanah],"Ini yang kita hendak
 tunjukkan kepada generasi orang muda di sana bahawa kalau perkara ini pun tidak
 boleh dilakukan, kalau perkara ini pun tidak menjadi kepentingan kepada mereka,
 bagaimana mereka hendak mentadbir negara?"
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1210,Puan Mas Ermieyati binti Samsudin [Masjid Tanah],"Ini yang kita memperlihatkan bahawa cakap sahaja lebih yang mereka ini
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1210,1210,Puan Mas Ermieyati binti Samsudin [Masjid Tanah],"Ini yang kita memperlihatkan bahawa cakap sahaja lebih yang mereka ini
 kalau *gedegang-gedegung* itu merekalah juaranya dan yang hendak memfitnah
 merekalah juaranya."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1210,Dato’ Shamsul Anuar bin Haji Nasarah [Lenggong],Tuan Yang di-Pertua.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1210,1210,Dato’ Shamsul Anuar bin Haji Nasarah [Lenggong],Tuan Yang di-Pertua.
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1210,Puan Mas Ermieyati binti Samsudin [Masjid Tanah],"Akan tetapi tidak
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1210,1210,Puan Mas Ermieyati binti Samsudin [Masjid Tanah],"Akan tetapi tidak
 memberi contoh yang baik kepada golongan muda seperti saya. Saya masih muda.
 Makan pun tidak sempat lagi sebab itulah saya sudah kurus ini."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1210,Beberapa Ahli,
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1210,1210,Beberapa Ahli,
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1210,ANNOTATION,[Ketawa]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1210,1210,ANNOTATION,[Ketawa]
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1210,Puan Mas Ermieyati binti Samsudin [Masjid Tanah],"Untuk makluman ini.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1210,1210,Puan Mas Ermieyati binti Samsudin [Masjid Tanah],"Untuk makluman ini.
 Jadi saya mohon Yang Berhormat Johor Bahru tolonglah perjelaskan, apakah
 semangat ataupun contoh sebegini yang perlu ada atau pun kita inilah - sebab saya
 melihat di Kajang tadi, saya tengok juga, tidak ada pun, tidak ramai pun yang mereka
 hendak pergi sana, tiada pun. Jadi mungkin mereka masih lagi berada di atas katil
 berselimutkan ini... Saya tidak tahulah, *wallahualam.* Terima kasih."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1210,Dato’ Shamsul Anuar bin Haji Nasarah [Lenggong],"Yang Berhormat Johor
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1210,1210,Dato’ Shamsul Anuar bin Haji Nasarah [Lenggong],"Yang Berhormat Johor
 Bahru, saya... Terima kasih Tuan Yang di-Pertua, terima kasih Yang Berhormat Johor
 Bahru kerana beri ruang. Saya dengar tadi Yang Berhormat Johor Bahru sebut tentang
 PRK Kajang. Saya lihat ini bukan kali pertama Yang Berhormat Permatang Pauh
@@ -1378,7 +1378,7 @@ undang-undang supaya jangan kita benarkan mana-mana pihak atau mana-mana parti
 untuk melakukan sebagaimana yang telah berlaku di Penanti di Permatang Pauh dan
 juga yang terbaru ini sedang berlaku di Kajang. Saya tanya pandangan."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1210,Tuan Haji Ahmad Nazlan bin Idris [Jerantut],"Yang Berhormat Johor Bahru
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1210,1210,Tuan Haji Ahmad Nazlan bin Idris [Jerantut],"Yang Berhormat Johor Bahru
 minta laluan, Yang Berhormat Jerantut. Terima kasih Yang Berhormat Johor Bahru,
 terima kasih Tuan Yang di-Pertua. Saya ingin mendapat penjelasan daripada Yang
 Berhormat Johor Bahru tentang dua perkara yang saya sebagai orang baru dalam
@@ -1397,7 +1397,7 @@ bahawa hari ini merupakan kemuncak penipuan pembangkang kepada rakyat dan
 negara, cakap hendak boikot tetapi sebenarnya mereka beramai-ramai hendak pergi ke
 Kajang. Terima kasih Yang Berhormat Johor Bahru."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1210,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Tuan
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1210,1210,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Tuan
 Yang di-Pertua kalau beramai-ramai, betul-betul pergi ke Kajang, saya rasa untuk
 menghadiri atau menyokong menunjukkan tanda sokongan kepada calon dari PKR
 yang bertanding hari ini. Kalau betul-betul mereka ada, saya rasa itu boleh kita
@@ -1425,42 +1425,42 @@ supaya tidak dibenarkan mana-mana Ahli Parlimen meletakkan jawatan. Saya pun
 serba salah hendak jawab kerana pernah saya meletakkan jawatan sebagai Ahli
 Parlimen."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1210,Beberapa Ahli,
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1210,1210,Beberapa Ahli,
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1210,ANNOTATION,[Ketawa]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1210,1210,ANNOTATION,[Ketawa]
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1210,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Akan
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1210,1210,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Akan
 tetapi saya tidak meletakkan jawatan sebagai Ahli Parlimen untuk memberi ruang beri
 Presiden parti saya bertanding. Akan tetapi saya meletakkan jawatan ketika itu kerana
 rakyat memilih saya sebagai calon UMNO Barisan Nasional. Apabila saya terkeluar
 daripada UMNO baru, saya pun tidak ada parti. Saya tidak diterima oleh UMNO baru.
 Jadi saya pun tidak ada parti. Takkanlah saya hendak menjadi calon Bebas."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1210,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],"Yang Berhormat
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1210,1210,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],"Yang Berhormat
 Rompin bangun Yang Berhormat."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1210,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1210,1210,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1210,ANNOTATION,[Ketawa]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1210,1210,ANNOTATION,[Ketawa]
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1210,Dato’ Sri Dr. Jamaluddin bin Dato’ Mohd. Jarjis [Rompin],"Tidak perasan.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1210,1210,Dato’ Sri Dr. Jamaluddin bin Dato’ Mohd. Jarjis [Rompin],"Tidak perasan.
 Tuan Yang di-Pertua, saya minta penjelasan agak terkeliru sedikit. Dia kata, *“Saya tidak
 letak jawatan bukan saya hendak beri ketua parti saya”.* Saya tidak faham, dia parti
 apakah itu?"
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1210,Beberapa Ahli,
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1210,1210,Beberapa Ahli,
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1210,ANNOTATION,[Ketawa]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1210,1210,ANNOTATION,[Ketawa]
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1210,Dato’ Sri Dr. Jamaluddin bin Dato’ Mohd. Jarjis [Rompin],"Saya sejarah ini
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1210,1210,Dato’ Sri Dr. Jamaluddin bin Dato’ Mohd. Jarjis [Rompin],"Saya sejarah ini
 saya kurang sedikit. Mungkin boleh untuk renungan kita kembali bukan melihat dahulu
 sejarah-sejarah."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1210,Datuk Bung Moktar bin Radin [Kinabatangan],Soalan lagi mengelirukan.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1210,1210,Datuk Bung Moktar bin Radin [Kinabatangan],Soalan lagi mengelirukan.
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1210,ANNOTATION,[Ketawa]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1210,1210,ANNOTATION,[Ketawa]
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1210,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Tuan
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1210,1210,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Tuan
 Yang di-Pertua, saya bukan macam ahli, macam Presiden PKR umpamanya.
 Meletakkan jawatan bagi memberi laluan kepada orang lain iaitu suaminya untuk
 bertanding. Maksudnya, saya tidak meletakkan jawatan sebagai ADUN Kajang, tidak
@@ -1473,17 +1473,17 @@ rekodnya sudah ada. Saya meletakkan jawatan ketika itu bukan atas sebab itu teta
 saya meletakkan jawatan untuk membolehkan saya bertanding sekali lagi. Ia bukan
 untuk parti saya atau presiden parti saya, fasal saya tidak ada parti ketika itu."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1210,Dato’ Sri Dr. Jamaluddin bin Dato’ Mohd. Jarjis [Rompin],"Oh! Tidak ada
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1210,1210,Dato’ Sri Dr. Jamaluddin bin Dato’ Mohd. Jarjis [Rompin],"Oh! Tidak ada
 presidenlah?"
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1210,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Ya,
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1210,1210,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Ya,
 saya tidak ada presiden. Sayalah presidennya agaknya, ya."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1210,Beberapa Ahli,
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1210,1210,Beberapa Ahli,
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1210,ANNOTATION,[Ketawa]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1210,1210,ANNOTATION,[Ketawa]
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1220,Beberapa Ahli,"Jadi saya hendak komen dan memberi jawapan kepada Yang Berhormat
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1220,1220,Beberapa Ahli,"Jadi saya hendak komen dan memberi jawapan kepada Yang Berhormat
 Lenggong, bahawa kalaulah ada undang-undang seperti ini tidak membenarkan
 seseorang itu meletakkan jawatan, saya pun merasakan tentunya tidak adil, ya. Ini
 kerana ada sebab-sebab untuk kita meletakkan jawatan tetapi kita meletakkan jawatan
@@ -1499,9 +1499,9 @@ boleh menggalakkan rakyat terus terkeliru. Bukan soal saya peribadi untuk mendud
 jawatan itu, tetapi ia harus diselesaikan dengan cara yang terbaik. *Alhamdulillah* saya
 balik semula"
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1220,ANNOTATION,[Tepuk]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1220,1220,ANNOTATION,[Tepuk]
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1220,Beberapa Ahli,"sebagai calon UMNO dan calon Barisan Nasional duduk dalam
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1220,1220,Beberapa Ahli,"sebagai calon UMNO dan calon Barisan Nasional duduk dalam
 Dewan Rakyat ini untuk tiga penggal semenjak tahun 2004.
 Jadi, *alhamdulillah* saya rasa contoh yang saya bawa bukan mengajak kepada
 satu keadaan yang mana kita mesti letak jawatan, kena letak. Saya pun tidak
@@ -1523,15 +1523,15 @@ yang memang kita semua faham setelah kita dipilih. Selepas kita mendapat mandat,
 kita lakukan, melaksanakan mandat kita mengikut sumpah kita yang kita lakukan
 apabila kita mengambil tempat kita sebagai Ahli Parlimen."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1220,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],"Yang Berhormat
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1220,1220,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],"Yang Berhormat
 Tanjong Manis bangun Yang Berhormat."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1220,Datuk Hajah Norah Abd. Rahman [Tanjong Manis],"Terima kasih. Terima
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1220,1220,Datuk Hajah Norah Abd. Rahman [Tanjong Manis],"Terima kasih. Terima
 kasih Tuan Yang di-Pertua. Yang Berhormat Johor..."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1220,Seorang Ahli,Johor Bahru.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1220,1220,Seorang Ahli,Johor Bahru.
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1220,Datuk Hajah Norah Abd. Rahman [Tanjong Manis],"Johor Bahru. Dengan
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1220,1220,Datuk Hajah Norah Abd. Rahman [Tanjong Manis],"Johor Bahru. Dengan
 adanya pilihan raya yang akan datang ini di Kajang dan kita dapat melihat daripada
 suami balik ke isteri. Dulu pun sama juga dia buat begitu untuk memainkan atau meraih
 perasaan rakyat kerana dia sangka mungkin rakyat senang atau sedih melihat tangisan
@@ -1542,7 +1542,7 @@ seluruh kawasan Kajang akan terhiba dengan belas kasihan untuk Dato’ Seri Anwa
 Ibrahim? Dengan adanya belas kasihan ini dapatlah mereka menang. Adakah rakyat
 kita terlampau buta hati dan tertipu dengan sandiwara belas kasihan ini? Terima kasih."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1220,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Tuan
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1220,1220,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Tuan
 Yang di-Pertua, saya rasa sebagai wanita Yang Berhormat Tanjong Manis pun
 fahamlah kesan dan impaknya daripada keadaan itu. Kita tidak boleh lari daripada soal
 manusia, emosi manusia dan sudah tentunya kalau pun kita katakan bahawa mereka
@@ -1570,16 +1570,16 @@ golongan-golongan etnik yang lain. Ia menjadi amalan, budaya rakyat Malaysia bah
 dalam masa gembira, dalam masa sedih kita sebagai keluarga akan kembali bersatu
 dan berpadu."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1220,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],"Yang Berhormat
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1220,1220,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],"Yang Berhormat
 Lenggong bangun Yang Berhormat."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1220,Dato’ Shamsul Anuar bin Haji Nasarah [Lenggong],"Boleh Yang Berhormat
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1220,1220,Dato’ Shamsul Anuar bin Haji Nasarah [Lenggong],"Boleh Yang Berhormat
 Johor Bahru?"
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1220,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Ya
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1220,1220,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Ya
 Yang Berhormat Lenggong."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1220,Dato’ Shamsul Anuar bin Haji Nasarah [Lenggong],"Terima kasih Tuan
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1220,1220,Dato’ Shamsul Anuar bin Haji Nasarah [Lenggong],"Terima kasih Tuan
 Yang di-Pertua. Saya bersetuju sangat apa yang disebut oleh Yang Berhormat Johor
 Bahru. Inilah waktu dan ketikanya seluruh rakyat dalam negara ini tanpa kita kira latar
 belakang agama, budaya mesti mempunyai sikap untuk rasa simpati, rasa
@@ -1593,7 +1593,7 @@ sebahagian daripada mangsa, keluarganya rasa hiba dengan peristiwa ini telah
 mengambil tindakan yang saya lihat sebenarnya boleh mengguris perasaan, boleh
 menyusahkan pelbagai pihak."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1230,Dato’ Shamsul Anuar bin Haji Nasarah [Lenggong],"Hari ini kita lihat juga ada sebahagian daripada rakyat negara ini
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1230,1230,Dato’ Shamsul Anuar bin Haji Nasarah [Lenggong],"Hari ini kita lihat juga ada sebahagian daripada rakyat negara ini
 menyalahgunakan media. Media sosial dalam *Facebook* mengeluarkan kenyataan-
 kenyataan yang tidak sepatutnya, menyalahkan kerajaan. Mengatakan kerajaan
 lembap mengambil tindakan, kerajaan lembap mengeluarkan kenyataan dan
@@ -1619,11 +1619,11 @@ menyebabkan pihak berkuasa terpaksa membuat penafian-penafian kerana banyak lagi
 perkara penting yang hendak dilakukan dalam saat yang begitu getir ini. Saya hendak
 tanya pandangan Johor Bahru."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1230,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],"Yang Berhormat
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1230,1230,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],"Yang Berhormat
 Kepala Batas dan Yang Berhormat Sik bangun Yang Berhormat. Ya, Yang Berhormat
 Kepala Batas."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1230,Datuk Seri Reezal Merican [Kepala Batas],"Terima kasih Tuan Yang di-
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1230,1230,Datuk Seri Reezal Merican [Kepala Batas],"Terima kasih Tuan Yang di-
 Pertua dan terima kasih kepada Yang Berhormat Johor Bahru. Saya amat bersetuju
 dengan apa yang dibangkitkan oleh Yang Berhormat Lenggong. Saya begitu terkesan
 bila mana Yang Berhormat Johor Bahru menyentuh soal kejadian kehilangan pesawat
@@ -1647,45 +1647,45 @@ Sewaktu Tuan Yang di-Pertua, juga Johor Bahru dan rakan-rakan, saya
 hendak singkap, hendak nyatakan bahawa dalam suatu hadis yang diriwayatkan oleh
 Tarmizi, Allah SWT cerita kepada Nabi dan Nabi cerita dalam hadis itu. Nabi katakan..."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1230,ANNOTATION,[Membaca sepotong hadis]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1230,1230,ANNOTATION,[Membaca sepotong hadis]
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1230,Datuk Seri Reezal Merican [Kepala Batas],"“Makhluk yang Allah SWT cipta pertama yang Nabi sebut
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1230,1230,Datuk Seri Reezal Merican [Kepala Batas],"“Makhluk yang Allah SWT cipta pertama yang Nabi sebut
 bukan manusia, bukan malaikat, bukan *kawakib*, bukan cakerawala tetapi *al-kalam*,
 pena..."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1230,ANNOTATION,[Bercakap dalam bahasa Arab]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1230,1230,ANNOTATION,[Bercakap dalam bahasa Arab]
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1230,Datuk Seri Reezal Merican [Kepala Batas],Allah kata “Tulislah”. Maka pen bertanya...
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1230,1230,Datuk Seri Reezal Merican [Kepala Batas],Allah kata “Tulislah”. Maka pen bertanya...
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1230,ANNOTATION,[Bercakap dalam bahasa Arab]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1230,1230,ANNOTATION,[Bercakap dalam bahasa Arab]
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1230,Datuk Seri Reezal Merican [Kepala Batas],“Apa yang aku hendak tulis?”...
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1230,1230,Datuk Seri Reezal Merican [Kepala Batas],“Apa yang aku hendak tulis?”...
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1230,ANNOTATION,"[Bercakap dalam
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1230,1230,ANNOTATION,"[Bercakap dalam
 bahasa Arab]"
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1230,Datuk Seri Reezal Merican [Kepala Batas],"“Tulislah takdir perjalanan semua makhluk daripada yang telah lepas
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1230,1230,Datuk Seri Reezal Merican [Kepala Batas],"“Tulislah takdir perjalanan semua makhluk daripada yang telah lepas
 sehinggalah yang sedang berlaku dan yang akan berlaku”..."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1230,ANNOTATION,"[Bercakap dalam bahasa
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1230,1230,ANNOTATION,"[Bercakap dalam bahasa
 Arab]"
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1230,Datuk Seri Reezal Merican [Kepala Batas],"Maknanya kejadian tragedi juga merupakan dalam ruang lingkup penulisan takdir
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1230,1230,Datuk Seri Reezal Merican [Kepala Batas],"Maknanya kejadian tragedi juga merupakan dalam ruang lingkup penulisan takdir
 Allah SWT. Tidak bolehkah kita bersatu untuk memohon sekurangnya pertolongan
 daripada Allah SWT sebagaimana yang dinyatakan..."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1230,ANNOTATION,[Bercakap dalam bahasa Arab]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1230,1230,ANNOTATION,[Bercakap dalam bahasa Arab]
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1230,Datuk Seri Reezal Merican [Kepala Batas],".
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1230,1230,Datuk Seri Reezal Merican [Kepala Batas],".
 Saya hendak tanya Yang Berhormat Johor Bahru. Apakah Yang Berhormat
 Johor Bahru tidak menganggap perbuatan yang dilakukan oleh wakil-wakil rakyat yang
 menggunakan tragedi ini sebagai modal komoditi politik sebagai satu amalan yang
 amat tidak bermaruah dan tidak bermoral? Terima kasih."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1230,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],"Ya, Yang
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1230,1230,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],"Ya, Yang
 Berhormat Sik."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1230,Dr. Mansor bin Haji Abd. Rahman [Sik],"Terima kasih Tuan Yang di-Pertua,
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1230,1230,Dr. Mansor bin Haji Abd. Rahman [Sik],"Terima kasih Tuan Yang di-Pertua,
 terima kasih Yang Berhormat Johor Bahru. Dengan memboikot sesi Parlimen kali ini,
 pagi ini, hari ini oleh pembangkang, maka kita lihat pembangkang secara jelas hanya
 mementingkan kepentingan individu tertentu iaitu Wan Azizah ataupun Anwar Ibrahim,
@@ -1699,7 +1699,7 @@ bersama-sama berusaha memberi sokongan yang kuat kepada kerajaan untuk
 menyelesaikan atau mencari punca tragedi ini. Saya ingin mendapat penjelasan
 daripada Yang Berhormat Johor Bahru."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1230,Dr. Haji Noor Azmi bin Ghazali [Bagan Serai],"Terima kasih Tuan Yang di-
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1230,1230,Dr. Haji Noor Azmi bin Ghazali [Bagan Serai],"Terima kasih Tuan Yang di-
 Pertua, Yang Berhormat Johor Bahru. Saya ingin seiring dengan kehilangan misteri
 MH370 dan sampai kini tidak tahu apa yang sebenarnya yang berlaku. Bermacam-
 macam teori dan sebagainya. Kita sebagai rakyat Malaysia dan juga khususnya Ahli
@@ -1712,24 +1712,24 @@ dengan teknologi yang canggih dan saya rasa kata-kata kita untuk berdoa, berdoa
 dengan sesungguhnya sehingga ada yang berdoa dengan menitiskan air mata. Ini
 jarang sekali dapat dilakukan..."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1230,ANNOTATION,[Membaca sepotong ayat Al-Quran]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1230,1230,ANNOTATION,[Membaca sepotong ayat Al-Quran]
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1230,Dr. Haji Noor Azmi bin Ghazali [Bagan Serai],"“Meminta
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1230,1230,Dr. Haji Noor Azmi bin Ghazali [Bagan Serai],"“Meminta
 pertolongan daripada Allah SWT melalui sabar dan solat”. Jadi Yang Berhormat Johor
 Bahru, saya cadangkan apa kata kalau kita ahli wakil rakyat semua berkumpul untuk
 menunaikan solat hajat. Kita ada ustaz-ustaz kita, Yang Berhormat-Yang Berhormat
 ustaz kita di sini untuk *lead* dalam solat hajat kita dan kita bersama-sama bersungguh-
 sungguh menyatakan pendirian kita, menzahirkan diri kita..."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1230,ANNOTATION,"[Membaca sepotong ayat
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1230,1230,ANNOTATION,"[Membaca sepotong ayat
 Al-Quran]"
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1230,Dr. Haji Noor Azmi bin Ghazali [Bagan Serai],"Allah SWT menyatakan ini supaya kita bersungguh-sungguh berdoa dan
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1230,1230,Dr. Haji Noor Azmi bin Ghazali [Bagan Serai],"Allah SWT menyatakan ini supaya kita bersungguh-sungguh berdoa dan
 Allah akan makbulkan doa kita. Terima kasih."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1230,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],Ya.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1230,1230,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],Ya.
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1230,Dato’ Ikmal Hisham bin Abdul Aziz [Tanah Merah],"Terima kasih. Yang
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1230,1230,Dato’ Ikmal Hisham bin Abdul Aziz [Tanah Merah],"Terima kasih. Yang
 Berhormat Johor Bahru, kita tengok rata-rata kita menyentuh tentang yang berlaku
 dengan MH370. Cuma saya hendak alih sedikit. Kita tengok pihak lawan kita ini, bukan,
 ataupun pihak satu lagilah selalu memperlekehkan dan selalu dia *divert attention,*
@@ -1740,7 +1740,7 @@ rakyat. Ada pula cerita kata sudah *landing* di Nanning dan sebagainya. Dia seol
 cuba hendak mempengaruhi rakyat percaya kerajaan kita ini kerajaan yang dianggap
 tidak prihatin dan cuba hendak mengaburi rakyat."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1240,Dato’ Ikmal Hisham bin Abdul Aziz [Tanah Merah],"Kita tengok macam di Lahad Datu, Tuan Tian Chua, Ahli Parlimen Batu, dia
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1240,1240,Dato’ Ikmal Hisham bin Abdul Aziz [Tanah Merah],"Kita tengok macam di Lahad Datu, Tuan Tian Chua, Ahli Parlimen Batu, dia
 kata, sandiwara*.* Begitu juga macam MH370, dia kata sandiwara juga daripada
 peringkat awal dan yang berlaku kepada anggota polis kita yang ditembak mati di Pulau
 Pinang, wakil rakyat dia kata, pun dia memperlekehkan. Begitu juga Yang Berhormat
@@ -1756,7 +1756,7 @@ sentiasa berterusan membuat tindakan-tindakan yang menyentuh hati. Sebagai conto
 MH370 ini. Peringkat awal kalau kita tengok, semuanya kata, *“Ini hanya sandiwara
 lagi”.* Maka saya harap, apa pendapat Yang Berhormat Johor Bahru? Terima kasih."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1240,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Tuan
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1240,1240,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Tuan
 Yang di-Pertua, saya ucapkan terima kasih kepada rakan-rakan saya yang telah
 menimbulkan berbagai-bagai pandangan. Saya rasa memang begitu penting dalam
 soal kita sebagai rakyat dan negara berhadapan dengan tragedi nasional. Mungkin ia
@@ -1783,9 +1783,9 @@ akan *“move”* juga kerana masalah trafik tidak akan dapat diselesaikan denga
 yang mana ia jelas sebenarnya bukan untuk hendak menjadi wakil kepada rakyat tetapi
 hanya untuk mengisi nafsu, memenuhi nafsu orang politik"
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1240,ANNOTATION,[Tepuk]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1240,1240,ANNOTATION,[Tepuk]
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1240,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Nafsu itu betullah.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1240,1240,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Nafsu itu betullah.
 Kalau *passion,* kalau dikatakan nafsu itu sebagai *passion*, kita mempunyai
 *passion* dari segi seorang wakil rakyat, kita hendak perjuangkan kepentingan rakyat,
 kita hendak wujudkan negara ini sebagai negara yang terbaik yang mana ia mempunyai
@@ -1819,40 +1819,40 @@ budaya seperti ini dipanjang-panjangkan? Dengan sikap, Oh! Ada yang memberi
 komen yang tidak payah kita layanlah. Sebaliknya pula kita lihat bagaimana peminat-
 peminat bola Pahang ya. Betul?... Pahang, Kuantan? Dengan spontan.."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1240,Dato’ Haji Mohd. Zaim bin Abu Hasan [Parit],
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1240,1240,Dato’ Haji Mohd. Zaim bin Abu Hasan [Parit],
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1240,ANNOTATION,[Bangun]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1240,1240,ANNOTATION,[Bangun]
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1240,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],"Ya, Yang
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1240,1240,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],"Ya, Yang
 Berhormat Parit bangun."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1240,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Angkat
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1240,1240,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Angkat
 *“placard”.*"
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1240,Dato’ Haji Mohd. Zaim bin Abu Hasan [Parit],Yang Berhormat Johor Bahru.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1240,1240,Dato’ Haji Mohd. Zaim bin Abu Hasan [Parit],Yang Berhormat Johor Bahru.
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1240,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Angkat
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1240,1240,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Angkat
 *placard*, *”Pray for MH370”*. Ini budak bola ini. Hah! Banding dengan ini, budaya itu."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1240,ANNOTATION,[Disampuk]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1240,1240,ANNOTATION,[Disampuk]
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1240,ANNOTATION,[Ketawa]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1240,1240,ANNOTATION,[Ketawa]
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1240,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Fahaman itu, perasaan keprihatinan itu, simpati itu. Sebagai
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1240,1240,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Fahaman itu, perasaan keprihatinan itu, simpati itu. Sebagai
 manusia yang didorongkan oleh keagamaan kita, kepercayaan kita dan ini yang ustaz-
 ustaz yang bercakap ini apa benda? Takkanlah tidak boleh menyatakan sesuatu yang
 memang sudah menjadi asas agama kita sendiri, dan asas agama-agama lain bahawa
 adanya yang lebih besar daripada kita."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1240,Dato’ Haji Mohd. Zaim bin Abu Hasan [Parit],"Terima kasih Yang
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1240,1240,Dato’ Haji Mohd. Zaim bin Abu Hasan [Parit],"Terima kasih Yang
 Berhormat, terima kasih Tuan Yang di-Pertua. Sedarkah Yang Berhormat Johor Bahru
 bahawa dalam Pakatan mereka, ada tokoh-tokoh ilmuwan agama yang sepatutnya
 merupakan penasihat yang baik kepada tokoh-tokoh pembangkang?"
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1250,Dato’ Haji Mohd. Zaim bin Abu Hasan [Parit],"Apakah mereka telah menjadi ilmuwan agama yang bisu yang tidak mampu
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1250,1250,Dato’ Haji Mohd. Zaim bin Abu Hasan [Parit],"Apakah mereka telah menjadi ilmuwan agama yang bisu yang tidak mampu
 dan berupaya untuk menasihatkan tokoh utama mereka. Sekian, terima kasih."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1250,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Saya
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1250,1250,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Saya
 setuju. Kita pun mestilah berkawan dengan yang baik barulah perangai kita jadi baik.
 Jadi kalaulah kita sudah pun naik ke mimbar mengimamkan solat,
 mengimamkan sembahyang Jumaat, memberi khutbah itu luaran yang dilihat. Apa
@@ -1897,9 +1897,9 @@ sebagainya, suruh pindah luar jauh-jauh. Akan tetapi apabila berlaku tragedi Hig
 Tower yang Timbalan Perdana Menteri ketika itu pun tidak tahu apa hendak buat. Tidak
 adalah pula buatkan Ops Room..."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1250,Dato' Shamsul Anuar bin Haji Nasarah [Lenggong],Siapa itu?
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1250,1250,Dato' Shamsul Anuar bin Haji Nasarah [Lenggong],Siapa itu?
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1250,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Kita
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1250,1250,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Kita
 fahamlah siapa yang sudah mempunyai kuasa bila ada kuasa dan tanggungjawab tidak
 reti dan sebab itulah Tuan Yang di-Pertua walaupun demikian rakyat Malaysia hati
 mereka besar. Hati mereka memang prihatin dan simpati kepada kesusahan yang
@@ -1921,14 +1921,14 @@ Inilah saya rasa pengajaran kita daripada apa yang sedang ditimpa negara.
 Peristiwa MH370 penting untuk pengajaran, penting untuk kesedaran dan keinsafan
 kita. Ia menimbulkan pertanyaan tentang soal umpamanya..."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1250,Dato' Shamsul Anuar bin Haji Nasarah [Lenggong],
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1250,1250,Dato' Shamsul Anuar bin Haji Nasarah [Lenggong],
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1250,ANNOTATION,[Bangun]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1250,1250,ANNOTATION,[Bangun]
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1250,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1250,1250,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat
 Lenggong bangun."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1250,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"...Kawalan keselamatan dan bagaimana soal dua Yang Berhormat Menteri boleh
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1250,1250,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"...Kawalan keselamatan dan bagaimana soal dua Yang Berhormat Menteri boleh
 bercakap berlainan dan sebagainya. Jadi saya berharap jugalah bagi pihak rakan-rakan
 agar bagi mereka yang mempunyai tanggungjawab dan kuasa kedudukan itu juga
 berhati-hatilah dalam keadaan seperti ini, pada masa hari ini janganlah membuat
@@ -1940,35 +1940,35 @@ dalam cara kita mengendalikan krisis ini.
 Saya berterima kasih kerana Yang Berhormat Menteri Pertahanan merangkap
 Yang Berhormat Menteri Pengangkutan mengambil berat, hadir setiap masa"
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1250,ANNOTATION,[Tepuk]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1250,1250,ANNOTATION,[Tepuk]
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1250,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Dan memimpin dari segi memberi keterangan dan makluman. Akan tetapi dalam
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1250,1250,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Dan memimpin dari segi memberi keterangan dan makluman. Akan tetapi dalam
 keadaan itu biarlah seorang anggota Kabinet itu yang bercakap dan kalau perkaranya
 di luar daripada soal untuk mencari pesawat MH370, kita cakaplah kita akan serah
 kepada pihak yang lain. Ini kerana kita kena terima bahawa bagi kita yang sudah agak
 kerap berjalan keluar negara bagaimana sistem kawalan itu juga harus menjadi satu
 yang utama."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1250,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],"Yang Berhormat,
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1250,1250,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],"Yang Berhormat,
 boleh sambung petang nanti Yang Berhormat."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1250,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Terima
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1250,1250,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Terima
 kasih Tuan Yang di-Pertua."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1250,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],"Ahli-ahli Yang
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1250,1250,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],"Ahli-ahli Yang
 Berhormat, mesyuarat ditangguhkan hingga jam 2.30 petang ini."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1300,ANNOTATION,[Mesyuarat ditempohkan pada pukul 1.00 petang]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1.00 petang,1300,ANNOTATION,[Mesyuarat ditempohkan pada pukul 1.00 petang]
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1430,ANNOTATION,[Mesyuarat disambung semula pada pukul 2.30 petang]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,2.30 petang,1430,ANNOTATION,[Mesyuarat disambung semula pada pukul 2.30 petang]
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1430,ANNOTATION,"[Timbalan Yang di-Pertua (Dato' Haji Ismail bin Haji Mohamed Said)
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,2.30 petang,1430,ANNOTATION,"[Timbalan Yang di-Pertua (Dato' Haji Ismail bin Haji Mohamed Said)
 mempengerusikan Mesyuarat]"
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1430,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Sila
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1430,1430,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Sila
 Yang Berhormat Johor Bahru."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1432,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Terima
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,2.32 ptg.,1432,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Terima
 kasih Tuan Yang di-Pertua. Saya ingin meneruskan ucapan saya dengan merujuk
 kepada satu perkara yang sama penting iaitu mengenai soal perumahan mampu milik,
 yang mana sudah pun diisytiharkan dan dimaklumkan oleh pihak pemerintah sebagai
@@ -2038,7 +2038,7 @@ barulah anak lelaki tidur di ruang tamu umpamanya, jadi itu yang menggalakkan,
 membawakan kepada keadaan mereka melepak di pasar raya dan di *mall* dan
 sebagainya."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1440,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Jadi, kalau awal-awal kita merancang supaya sebuah unit kos rendah itu dijual
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1440,1440,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Jadi, kalau awal-awal kita merancang supaya sebuah unit kos rendah itu dijual
 dengan harga RM25,000 tetapi dengan subsidi yang ada sebanyak RM10,000
 walaupun kos pembinaannya RM35,000. Akhirnya kita mencapai satu matlamat iaitu
 mereka dapat kembali balik semula kepada tapak kampung mereka dan kita dapat
@@ -2088,25 +2088,25 @@ sendiri melalui dasar yang sudah ditetapkan boleh mengambil tindakan-tindakan da
 kaedah-kaedah di mana kos yang sebenar kepada pembeli dapat dikurangkan dan
 mampu dibayar oleh pembeli-pembeli."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1440,Dato’ Sri Azalina Dato’ Othman Said [Pengerang],"Yang Berhormat Johor
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1440,1440,Dato’ Sri Azalina Dato’ Othman Said [Pengerang],"Yang Berhormat Johor
 Bahru, minta saya mencelah."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1440,Datuk Nur Jazlan bin Mohamed [Pulai],
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1440,1440,Datuk Nur Jazlan bin Mohamed [Pulai],
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1440,ANNOTATION,[Bangun]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1440,1440,ANNOTATION,[Bangun]
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1440,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Ada
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1440,1440,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Ada
 dua Yang Berhormat bangun. Yang Berhormat Johor Bahru dan Yang Berhormat Pulai."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1440,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Kita
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1440,1440,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Kita
 bagi..."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1440,Datuk Nur Jazlan bin Mohamed [Pulai],*Ladies first.*
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1440,1440,Datuk Nur Jazlan bin Mohamed [Pulai],*Ladies first.*
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1440,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"*Ladies
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1440,1440,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"*Ladies
 first*, okey."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1440,Dato’ Sri Azalina Dato’ Othman Said [Pengerang],"Terima kasih Yang
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1440,1440,Dato’ Sri Azalina Dato’ Othman Said [Pengerang],"Terima kasih Yang
 Berhormat Johor Bahru. Saya sebenarnya hendak ucapkan tahniah kepada Yang
 Berhormat Johor Bahru sebab kalau kita tengok bandar raya Johor Bahru itu sendiri
 telah membangun dengan begitu besar dan kalau kita tengok perumahan bagi
@@ -2140,10 +2140,10 @@ bandar, peratusan untung itu ditetapkan supaya rakyat tidak tertipu dengan geloj
 pemaju-pemaju yang selalunya hendak mencari untung dengan begitu cepat, terima
 kasih Yang Berhormat Johor Bahru."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1440,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Ya,
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1440,1440,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Ya,
 Yang Berhormat Pulai."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1440,Datuk Nur Jazlan bin Mohamed [Pulai],"Terima kasih Yang Berhormat Johor
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1440,1440,Datuk Nur Jazlan bin Mohamed [Pulai],"Terima kasih Yang Berhormat Johor
 Bahru. Kita ini, Pulai dan Johor Bahru memang sebenarnya merupakan wakil rakyat
 untuk kawasan bandar raya Johor Bahru yang jelas mempunyai masalah untuk
 memenuhi permintaan perumahan untuk mereka yang mempunyai *income* yang
@@ -2166,19 +2166,19 @@ tanah, cari tanah tetapi bukan di tempat yang sesuai. Maknanya asalkan ada tanah
 kalau untuk orang Johor Bahru dia buat di kawasan Pontian. Dia beli tanah itu, dia kata
 buat rumah."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1450,Datuk Nur Jazlan bin Mohamed [Pulai],"Akan tetapi rumah ini tidak sesuai untuk orang yang hendak bekerja dalam
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1450,1450,Datuk Nur Jazlan bin Mohamed [Pulai],"Akan tetapi rumah ini tidak sesuai untuk orang yang hendak bekerja dalam
 kawasan Daerah Johor Bahrulah katakan. Jadi adakah wajar juga kerajaan sewenang-
 wenangnya membeli tanah di mana-mana sahaja untuk mencapai matlamat membuat
 rumah mampu milik tanpa memikirkan kesesuaian lokasi dan juga komuniti yang akan
 dibentuk di kawasan perumahan yang dicadangkan itu? Terima kasih."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1450,Dato’ Shamsul Anuar bin Haji Nasarah [Lenggong],"Yang Berhormat Johor
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1450,1450,Dato’ Shamsul Anuar bin Haji Nasarah [Lenggong],"Yang Berhormat Johor
 Bahru."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1450,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Ya,
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1450,1450,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Ya,
 Yang Berhormat Lenggong bangun."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1450,Dato’ Shamsul Anuar bin Haji Nasarah [Lenggong],"Terima kasih Tuan
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1450,1450,Dato’ Shamsul Anuar bin Haji Nasarah [Lenggong],"Terima kasih Tuan
 Yang di-Pertua, terima kasih Yang Berhormat Johor Bahru kerana memberi ruang
 kepada saya. Isu perumahan ini merupakan isu penting dan kita tahu bahawa memang
 rakyat perlukan rumah. Komitmen kerajaan tentang isu perumahan ini memang kita
@@ -2217,7 +2217,7 @@ diperluaskan kepada individu, tanah dia sendiri dia hendak buat, kerajaan beri s
 alangkah ianya baik kepada kita. Saya hendak tanya pandangan Yang Berhormat
 Johor Bahru, itu sahaja."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1450,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Tuan
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1450,1450,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Tuan
 Yang di-Pertua, kalau saya juga boleh menggunakan atau menjawab kepada Yang
 Berhormat Pengerang. Elemen kos ini boleh disesuaikan kepada tanah. Tanah ini
 sebenarnya terpulang kepada pemerintah hendak meletak nilai apa. Kalau dikatakan
@@ -2274,14 +2274,14 @@ setinggan di Kuala Lumpur dan cara penyelesaian yang berperikemanusiaan. Bukan
 kita pindahkan mereka 10 batu keluar Kuala Lumpur. Kita pindahkan di tempat di mana
 mereka menetap sekarang."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1450,Dato’ Wan Mohammad Khair-il Anuar Wan Ahmad [Kuala Kangsar],
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1450,1450,Dato’ Wan Mohammad Khair-il Anuar Wan Ahmad [Kuala Kangsar],
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1450,ANNOTATION,[Bangun]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1450,1450,ANNOTATION,[Bangun]
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1450,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Ya,
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1450,1450,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Ya,
 Yang Berhormat Kuala Kangsar bangun."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1450,Dato’ Wan Mohammad Khair-il Anuar Wan Ahmad [Kuala Kangsar],"Terima
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1450,1450,Dato’ Wan Mohammad Khair-il Anuar Wan Ahmad [Kuala Kangsar],"Terima
 kasih Tuan Yang di-Pertua, terima kasih Yang Berhormat Johor Bahru. Ada pepatah
 Melayu kata, *“Kalau hendak seribu daya, kalau tak hendak seribu dalih”.* Jadi soal
 tanah ini sebenarnya kita yang menentukan penggunaan tanah itu dan juga tentang
@@ -2300,7 +2300,7 @@ nilai ataupun kadar yang wajar untuk pembangunan supaya harga jualan rumah
 mampu milik itu dapat dibeli oleh rakyat dan orang ramai. Apa pandangan Yang
 Berhormat Johor Bahru?"
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1500,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Saya
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1500,1500,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Saya
 bersetuju, Tuan Yang di-Pertua. Maksud saya begini. Bila kita buat satu dasar,
 kerajaan buat dasar, kalau kita hendak laksanakan, kita perlu terbalikkan. Maknanya
 jangan ikut cara dululah. Asyik kita hendak ikut cara dulu, ini caranya, ini cara biasa
@@ -2351,69 +2351,69 @@ memberi manfaat kepada rakyat.
 Jadi Tuan Yang di-Pertua, saya pun tidaklah bertujuan mengambil masa yang
 panjang dalam perbahasan ini."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1500,Beberapa Ahli,
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1500,1500,Beberapa Ahli,
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1500,ANNOTATION,[Menyampuk]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1500,1500,ANNOTATION,[Menyampuk]
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1500,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Kalau
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1500,1500,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Kalau
 hendak sambung, Tuan Yang di-Pertua, saya kena minta izin berhenti sekejap."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1500,Datuk Bung Moktar bin Radin [Kinabatangan],Boleh minta penjelasan?
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1500,1500,Datuk Bung Moktar bin Radin [Kinabatangan],Boleh minta penjelasan?
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1500,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],Ya.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1500,1500,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],Ya.
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1500,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Hendak
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1500,1500,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Hendak
 pergi bilik air."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1500,ANNOTATION,[Ketawa]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1500,1500,ANNOTATION,[Ketawa]
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1500,Datuk Bung Moktar bin Radin [Kinabatangan],"Carikan air, carikan air."
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1500,1500,Datuk Bung Moktar bin Radin [Kinabatangan],"Carikan air, carikan air."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1500,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Yang
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1500,1500,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Yang
 Berhormat Johor Bahru perlu..."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1500,Datuk Bung Moktar bin Radin [Kinabatangan],Minta penjelasan dari saya.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1500,1500,Datuk Bung Moktar bin Radin [Kinabatangan],Minta penjelasan dari saya.
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1500,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Ya,
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1500,1500,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Ya,
 saya."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1500,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Yang
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1500,1500,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Yang
 Berhormat Johor Bahru pergi ke bilik air, ya?"
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1500,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],Ya.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1500,1500,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],Ya.
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1500,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],Sementara mencelah itu bolehlah.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1500,1500,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],Sementara mencelah itu bolehlah.
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1500,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Cakap
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1500,1500,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Cakap
 lama-lama sikit."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1500,Datuk Bung Moktar bin Radin [Kinabatangan],
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1500,1500,Datuk Bung Moktar bin Radin [Kinabatangan],
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1500,ANNOTATION,[Ketawa]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1500,1500,ANNOTATION,[Ketawa]
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1500,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Sila,
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1500,1500,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Sila,
 sila."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1500,Datuk Bung Moktar bin Radin [Kinabatangan],"Terima kasih Tuan Yang di-
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1500,1500,Datuk Bung Moktar bin Radin [Kinabatangan],"Terima kasih Tuan Yang di-
 Pertua. Yang Berhormat Johor Bahru, di bilik air pun boleh dengar juga. Jadi boleh."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1500,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Ya, ya.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1500,1500,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Ya, ya.
 Ya."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1500,Datuk Bung Moktar bin Radin [Kinabatangan],"Jadi saya sebetulnya Tuan
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1500,1500,Datuk Bung Moktar bin Radin [Kinabatangan],"Jadi saya sebetulnya Tuan
 Yang di-Pertua, sistem ataupun dasar yang kita ada ini sudah sedia ada. Memang
 sudah cantik. Apa juga dasar kerajaan yang terjemahkan memang sudah cantik.
 Cuma mungkin..."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1500,Dato’ Shamsul Anuar bin Haji Nasarah [Lenggong],
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1500,1500,Dato’ Shamsul Anuar bin Haji Nasarah [Lenggong],
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1500,ANNOTATION,[Menyampuk]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1500,1500,ANNOTATION,[Menyampuk]
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1500,Datuk Bung Moktar bin Radin [Kinabatangan],
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1500,1500,Datuk Bung Moktar bin Radin [Kinabatangan],
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1500,ANNOTATION,[Ketawa]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1500,1500,ANNOTATION,[Ketawa]
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1500,Datuk Bung Moktar bin Radin [Kinabatangan],"Cuma mungkin kita
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1500,1500,Datuk Bung Moktar bin Radin [Kinabatangan],"Cuma mungkin kita
 perlu *delivery system* kita kena diperbetulkan. Di sinilah masalah kita hadapi. Ini kerana
 dulu saya telah katakan bahawa kerajaan telah menyediakan berbagai-bagai dasar
 yang perlu dilaksanakan tetapi sistem pelaksanaan kita mempunyai kebuntuan di mana
@@ -2441,15 +2441,15 @@ sebagai satu perkara yang *priority* untuk dilaksanakan oleh semua pihak demi
 memastikan kelangsungan dasar kerajaan yang baik itu dapat diterima pakai oleh
 rakyat di peringkat bawah. Terima kasih Yang Berhormat Johor Bahru."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1500,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Ya,
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1500,1500,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Ya,
 Yang Berhormat Pengerang bangun."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1500,Dato’ Sri Azalina Dato’ Othman Said [Pengerang],"Boleh saya tanya Yang
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1500,1500,Dato’ Sri Azalina Dato’ Othman Said [Pengerang],"Boleh saya tanya Yang
 Berhormat Johor Bahru?"
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1500,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],Ya.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1500,1500,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],Ya.
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1500,Dato’ Sri Azalina Dato’ Othman Said [Pengerang],"Saya rasa pertama kali
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1500,1500,Dato’ Sri Azalina Dato’ Othman Said [Pengerang],"Saya rasa pertama kali
 Ahli Parlimen boleh ke bilik air semasa bahas. Saya rasa lepas ini saya pun hendak
 ikut cara Yang Berhormat Johor Bahru. Terima kasih Yang Berhormat Johor Bahru.
 Sebenarnya Yang Berhormat Johor Bahru, saya tertarik dengan ucapan Yang
@@ -2465,7 +2465,7 @@ sebagainya, kenapa dasar itu boleh bertukar? Adakah kerana Menteri bertukar,
 ataupun kerana ada pegawai kerajaan bertukar. Sebagai contoh Ketua Setiausaha
 bertukar dan sebagainya. Ini kerana saya sebagai bekas Menteri pun boleh cakap."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1510,Dato’ Sri Azalina Dato’ Othman Said [Pengerang],"Masa saya Menteri macam-macam buat, bila sudah tukar Menteri, tukar
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1510,1510,Dato’ Sri Azalina Dato’ Othman Said [Pengerang],"Masa saya Menteri macam-macam buat, bila sudah tukar Menteri, tukar
 macam-macam buat. Jadi rakyat dengan izin, menjadi *confuse*. Itu sebabnya saya
 berharap seperti kata Yang Berhormat Kinabatangan, soalan saya pada Yang
 Berhormat Johor Bahru, kenapa boleh berubah? Kenapa boleh pendekatan yang baik,
@@ -2473,7 +2473,7 @@ yang boleh memberi kepada kejayaan, pada maslahat umum ini ditukar? Adakah
 disebabkan kerana ketidakfahaman ataupun disebabkan oleh sifat yang mana tukar
 Menteri, tukar dasar? Terima kasih Yang Berhormat Johor Bahru."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1510,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Tuan
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1510,1510,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Tuan
 Yang di-Pertua, saya berterima kasih atas sistem penyebaran ataupun penyampaian
 komunikasi yang ada, canggih di dalam Parlimen sampai ke bilik air dan juga di ruang-
 ruang jalan kaki boleh dengar. Akhirnya saya tidak *miss* pun apa yang disebutkan oleh
@@ -2501,10 +2501,10 @@ kurangkan kawasan yang lapang dan kemudahan awam. Kita kena juga menambahkan
 supaya adanya keselesaan dari segi rumah mereka. Maksudnya, pendekatannya ialah
 dasar itu sudah baik."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1510,Datuk Bung Moktar bin Radin [Kinabatangan],"Setujukah Yang Berhormat
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1510,1510,Datuk Bung Moktar bin Radin [Kinabatangan],"Setujukah Yang Berhormat
 bahawa di situlah kebijaksanaan itu diperlukan?"
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1510,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Betul
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1510,1510,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Betul
 iaitu bergantung kepada kita. Kepada kita sebagai Ahli Parlimen kerana kita ini berada
 di bawah. Kita bukan cakap teori, kita bukan cakap fasal teori ini, *financial theory*lah,
 kutuk kerajaan ini, satu minta subsidi lebih lepas itu bantai kerajaan kerana apa, ada
@@ -2523,14 +2523,14 @@ berpendapatan rendah dan generasi yang kedua, kita tumpukan ianya dilaksanakan
 bagi faedah dan kepentingan mereka. Barulah betul cara dasar yang kita sokong hari
 ini dapat dilaksanakan dengan baik. Macam mana? Saya bagi contoh tentang..."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1510,Datuk Bung Moktar bin Radin [Kinabatangan],
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1510,1510,Datuk Bung Moktar bin Radin [Kinabatangan],
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1510,ANNOTATION,[Bangun]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1510,1510,ANNOTATION,[Bangun]
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1510,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Ya,
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1510,1510,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Ya,
 Yang Berhormat Kinabatangan bangun Yang Berhormat."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1510,Datuk Bung Moktar bin Radin [Kinabatangan],"Bolehkah Yang Berhormat
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1510,1510,Datuk Bung Moktar bin Radin [Kinabatangan],"Bolehkah Yang Berhormat
 Johor Bahru? Saya terpanggil Yang Berhormat Johor Bahru, melihat Yang Berhormat
 Tenggara duduk selaku Timbalan Menteri Kesejahteraan Bandar, Perumahan dan
 Kerajaan Tempatan. Dahulu pun Yang Berhormat pernah jadi *Backbencher*, jadi
@@ -2550,7 +2550,7 @@ perhatian. Menteri-menteri harus berubah ikut keadaan, panggil KSU kah, ketua-ke
 pengarah, kami mahu dasar kerajaan diubah begini. Jangan dengar cakap mereka
 sebab kita yang membentuk kerajaan ini. Minta Yang Berhormat Johor Bahru."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1510,Dato' Shamsul Anuar bin Haji Nasarah [Lenggong],"Yang Berhormat Johor
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1510,1510,Dato' Shamsul Anuar bin Haji Nasarah [Lenggong],"Yang Berhormat Johor
 Bahru, Yang Berhormat Johor Bahru? Saya hendak respons sedikit dua tiga perkara
 yang disebut tadi. Kita tentu tidak mahu jadi sebagaimana yang berlaku di Pulau
 Pinang. Kita tengok di Pulau Pinang hari ini, bukan sahaja golongan berpendapatan
@@ -2577,7 +2577,7 @@ Hendak sewa rumah pun tidak mampu mahal, hendak beli lagi tidak mampu. Ini semua
 saya nampak seolah-olah satu strategi hendak mengeluarkan golongan berpendapatan
 rendah daripada Pulau Pinang itu. Terima kasih."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1510,Datuk Bung Moktar bin Radin [Kinabatangan],"Tambah sedikit Yang
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1510,1510,Datuk Bung Moktar bin Radin [Kinabatangan],"Tambah sedikit Yang
 Berhormat Johor Bahru. Di Pulau Pinang memang saya melihat, memang betul bahawa
 terdapat unsur-unsur pengusiran daripada Kerajaan DAP di Pulau Pinang kepada suku
 bangsa yang tidak mampu menduduki rumah di bandar. Ini sebab apabila rumah dibina
@@ -2586,14 +2586,14 @@ yang lain tidak mampu miliki rumah. Justeru itu, saya minta Yang Berhormat Johor
 Bahru mencadangkan kepada kerajaan supaya dipantau aktiviti sebegini. Jangan ada
 hakisan suku bangsa ataupun *racist* terlalu ketara di Pulau Pinang ini..."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1510,Datuk Rozman bin Isli [Labuan],
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1510,1510,Datuk Rozman bin Isli [Labuan],
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1510,ANNOTATION,[Bangun]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1510,1510,ANNOTATION,[Bangun]
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1510,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Ya,
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1510,1510,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Ya,
 Yang Berhormat Labuan bangun."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1520,Datuk Rozman bin Isli [Labuan],"Terima kasih Tuan Yang di-Pertua dan
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1520,1520,Datuk Rozman bin Isli [Labuan],"Terima kasih Tuan Yang di-Pertua dan
 terima kasih Yang Berhormat Johor Bahru. Memang pun dasar cantik seperti yang
 dikatakan tetapi saya rasa masih boleh lagi diperbaiki. Terutamanya banyak juga
 kawasan-kawasan yang kerajaan tidak mempunyai tanah yang cukup untuk tujuan
@@ -2603,7 +2603,7 @@ sekiranya kita mengadakan dasar yang mana perumahan-perumahan yang perlu
 dibuat, mesti sekali dengan perumahan mampu milik yang kelasnya untuk mampu milik
 kepada semua *developers* yang kena buat di bandar? Terima kasih."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1520,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Tuan
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1520,1520,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Tuan
 Yang di-Pertua, sebenarnya kadang-kadang walaupun dasar di antara pelaksanaan
 dasar dan sebagainya, ada percanggahan, tidak begitu kemas dan tidak begitu tepat
 dari segi penyampaian ataupun pelaksanaannya. Akan tetapi, kurang-kurang tidaklah
@@ -2663,11 +2663,11 @@ Berhormat Perdana Menteri kenalah dibantu oleh Menteri-menteri. Kalau adanya wak
 daripada Kementerian Perumahan, Kerajaan Tempatan dan Kesejahteraan Bandar, kita
 rasa senang sedikit..."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1520,Datuk Johari bin Abdul Ghani [Titiwangsa],
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1520,1520,Datuk Johari bin Abdul Ghani [Titiwangsa],
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1520,ANNOTATION,[Bangun]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1520,1520,ANNOTATION,[Bangun]
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1520,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Bahawa apa yang dibicarakan di sini akan dapat dilaksanakan, diambil kira dengan
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1520,1520,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Bahawa apa yang dibicarakan di sini akan dapat dilaksanakan, diambil kira dengan
 diberikan kuasa kepada kementerian ini. Kalau kuasa pun kadang-kadang tidak payah
 beri kuasa itu Yang Berhormat. Kalau kita hendak buat, daya hati kita itu, kita punya
 *passion*, nafsu itu, kita punya kehendak itu betul-betul hendak membantu rakyat, betul-
@@ -2676,10 +2676,10 @@ memberikan rumah yang secukupnya pada harga yang mampu dibayar oleh golongan
 berpendapatan rendah. *Insya-Allah* saya rasa Kementerian Perumahan boleh
 memainkan peranan."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1520,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Ya,
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1520,1520,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Ya,
 Yang Berhormat Titiwangsa bangun."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1520,Datuk Johari bin Abdul Ghani [Titiwangsa],"Terima kasih Yang Berhormat,
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1520,1520,Datuk Johari bin Abdul Ghani [Titiwangsa],"Terima kasih Yang Berhormat,
 Tuan Yang di-Pertua. Saya bersetuju dengan pandangan Yang Berhormat Johor Bahru.
 Mengenai isu rumah ini, saya nampak kadang-kadang kerajaan membuat dasar untuk
 memperbanyakkan rumah mampu milik. Kadang-kadang tanah di dalam bandar raya
@@ -2700,12 +2700,12 @@ rumah mampu milik tidak berlaku, maka akhirnya agensi-agensi kerajaan ini jugala
 yang akan dihentam kiri dan kanan tanpa melihat dari segi *implementation* dan dasar
 yang sangat berbeza sama sekali. Apa pandangan Yang Berhormat Johor Bahru?"
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1530,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Terima
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1530,1530,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Terima
 kasih Yang Berhormat Titiwangsa..."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1530,ANNOTATION,[Telefon bimbit berbunyi]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1530,1530,ANNOTATION,[Telefon bimbit berbunyi]
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1530,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Tuan Yang di-Pertua,
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1530,1530,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Tuan Yang di-Pertua,
 saya sedar tentang apa yang berlaku di Wilayah Persekutuan. Inilah sebabnya kalau
 kita tidak ubahkan pendekatan kita, kita lihat ini tanah kerajaan jadi kita hendak
 swastakan kerana kita hendak jadikan Kuala Lumpur ini sebagai bandar raya yang
@@ -2795,7 +2795,7 @@ Ia bermakna kalau *zero rated* segala input kos bahan-bahan yang diperlukan
 untuk tanam beras, baja selepas itu hendak buat *packing* beras dia punya plastik
 ataupun dia punya guni."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1540,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Kalau ada dikenakan GST, GST itu akan ditolak. Bermakna bila kita *zero
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1540,1540,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Kalau ada dikenakan GST, GST itu akan ditolak. Bermakna bila kita *zero
 rated*, GST tidak boleh dimasukkan di dalam harga yang terakhir di peringkat runcit. Itu
 maknanya *zero rated*. Kalau katakan *exempt*, ini mengecualikan pembeli daripada
 membayar GST di peringkat runcit tetapi cukai-cukai GST dalam proses sampai kepada
@@ -2819,11 +2819,11 @@ walaupun *zero rated*. Ia akan naik kerana harga atau cukai akan dikenakan kepad
 punya baja, bungkusan dan berbagai-bagai input yang lain. Ini tidak betul! Kalau *zero
 rated, zero rated!*"
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1540,Dato’ Ahmad Fauzi Zahari [Setiawangsa],
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1540,1540,Dato’ Ahmad Fauzi Zahari [Setiawangsa],
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1540,ANNOTATION,[Bangun]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1540,1540,ANNOTATION,[Bangun]
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1540,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Maknanya kita sebagai rakyat jangan terpengaruh dengan dakyah yang bukan-bukan.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1540,1540,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Maknanya kita sebagai rakyat jangan terpengaruh dengan dakyah yang bukan-bukan.
 Bukan semua NGO ini pandai. Pandai mengelirukan, ya, tetapi bukan bertujuan untuk
 kononnya memperjuangkan rakyat yang tersepit, rakyat yang tertindas.
 Jadi itu sebabnya kadang-kadang kita tengok NGO ini dia punya- wah! Nama
@@ -2865,13 +2865,13 @@ sebab itulah dalam kaedah kita melihat bagaimana negara ini hendak maju, memang
 kita perlu kepada rakyat yang ingin tahu, yang tidak mahu terima bulat-bulat. Baca
 sedikit di internet sudah percaya. Oleh sebab itu yang mustahaknya ialah..."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1540,Dr. Haji Noor Azmi bin Ghazali [Bagan Serai],"Mencelah Yang Berhormat
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1540,1540,Dr. Haji Noor Azmi bin Ghazali [Bagan Serai],"Mencelah Yang Berhormat
 Johor Bahru."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1540,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Yang
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1540,1540,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Yang
 Berhormat Bagan Serai bangun."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1540,Dr. Haji Noor Azmi bin Ghazali [Bagan Serai],"Terima kasih Tuan Yang di-
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1540,1540,Dr. Haji Noor Azmi bin Ghazali [Bagan Serai],"Terima kasih Tuan Yang di-
 Pertua, terima kasih Yang Berhormat Johor Bahru. GST ini bukan benda baru. GST
 adalah penambahbaikan. Yang sudah lama itu SST tetapi banyak orang tidak tahu
 sebab dia terpendam. Apa yang kita lihat sekarang ini, yang ada di surat khabar, di
@@ -2893,7 +2893,7 @@ rakyat, Ahli Parlimen sekali untuk turun menerangkan secara terperinci dan bagi 
 dengan izin, peluang untuk bertanya dengan jelas. Kalau tidak, mereka akan terkeliru
 dan mereka rasa semua orang akan kena. Bukan semua orang akan kena!"
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1550,Dr. Haji Noor Azmi bin Ghazali [Bagan Serai],"Dengan implementasi GST, ada barang yang dahulunya kena *tax,* sekarang
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1550,1550,Dr. Haji Noor Azmi bin Ghazali [Bagan Serai],"Dengan implementasi GST, ada barang yang dahulunya kena *tax,* sekarang
 tidak kena. Ada barang yang dahulu tinggi *tax*nya sekarang makin rendah. Yang ini
 tidak dibesar-besarkan. Yang ini tidak diceritakan. Tujuan GST ini adalah untuk
 mengukuhkan ekonomi negara supaya negara ini boleh pergi ke tahap *developed
@@ -2905,23 +2905,23 @@ Bahru, perlu sekali tidak, kita kerajaan terus turun dan bergerak sehebat mungki
 berterusan sehingga dapat menangkis pemikiran dan tanggapan yang negatif tentang
 GST yang diuar-uarkan sekarang ini? Terima kasih."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1550,Datuk Aaron Ago anak Dagang [Kanowit],Tambah sedikit.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1550,1550,Datuk Aaron Ago anak Dagang [Kanowit],Tambah sedikit.
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1550,Timbalan Yang di Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Ya,
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1550,1550,Timbalan Yang di Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Ya,
 Yang Berhormat Setiawangsa bangun."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1550,Dato' Ahmad Fauzi Zahari [Setiawangsa],Tuan Yang di-Pertua...
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1550,1550,Dato' Ahmad Fauzi Zahari [Setiawangsa],Tuan Yang di-Pertua...
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1550,Timbalan Yang di Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Ada
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1550,1550,Timbalan Yang di Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Ada
 dua yang bangun. Mana satu Yang Berhormat Johor Bahru?"
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1550,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],Sebelah kiri.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1550,1550,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],Sebelah kiri.
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1550,Datuk Aaron Ago anak Dagang [Kanowit],"Sebelah kiri? Okey, terima kasih."
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1550,1550,Datuk Aaron Ago anak Dagang [Kanowit],"Sebelah kiri? Okey, terima kasih."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1550,Timbalan Yang di Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Sebelah kiri. Ya, sila Yang Berhormat Kanowit."
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1550,1550,Timbalan Yang di Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Sebelah kiri. Ya, sila Yang Berhormat Kanowit."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1550,Datuk Aaron Ago anak Dagang [Kanowit],"Saya juga ingin menambah
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1550,1550,Datuk Aaron Ago anak Dagang [Kanowit],"Saya juga ingin menambah
 sedikit apa yang dijelaskan oleh Yang Berhormat Bagan Serai tadi. Perkara begini juga
 yang saya selalu dengar di kawasan lebih-lebih lagi di kawasan pedalaman. Di Kanowit
 kah, di Sibukah, di mana pembangkang sekarang ini dia menggunakan isu ini sebab
@@ -2934,10 +2934,10 @@ tidak disebut lagi. Mereka tidak mengatakan yang telah ada. Jadi, inilah masalah
 apa yang telah dicakapkan tadi ialah perkara yang baru ini akan terus menjadi isu
 politik. Minta penjelasan Yang Berhormat Johor Bahru."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1550,Timbalan Yang di Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Ya,
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1550,1550,Timbalan Yang di Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Ya,
 Yang Berhormat Setiawangsa."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1550,Dato' Ahmad Fauzi Zahari [Setiawangsa],"Yang Berhormat Johor Bahru,
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1550,1550,Dato' Ahmad Fauzi Zahari [Setiawangsa],"Yang Berhormat Johor Bahru,
 setuju kah Yang Berhormat Johor Bahru mengenai GST ini, yang sebenarnya keliru
 bukanlah kita tetapi pembangkang ini dan keinginan mereka untuk mengelirukan rakyat.
 Di dalam Parlimen yang sama ini, pada bulan Oktober yang lepas, kenyataan daripada
@@ -2964,12 +2964,12 @@ agresif menggunakan segala medium yang ada, baik dalam surat khabar, Internet,
 sekolah dan sebagainya untuk memahamkan rakyat bahawa GST ini adalah salah satu
 cukai paling efisien yang kita harus lakukan. Terima kasih."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1550,Tuan Khoo Soo Seang [Tebrau],"Tuan Yang di-Pertua, minta mencelah."
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1550,1550,Tuan Khoo Soo Seang [Tebrau],"Tuan Yang di-Pertua, minta mencelah."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1550,Timbalan Yang di Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Ya,
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1550,1550,Timbalan Yang di Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Ya,
 sila."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1550,Tuan Khoo Soo Seang [Tebrau],"Tadi saya dengar Yang Berhormat
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1550,1550,Tuan Khoo Soo Seang [Tebrau],"Tadi saya dengar Yang Berhormat
 Setiawangsa yang menyebut tentang GST, apabila dilaksanakan di Singapura, ia mula
 daripada 3%. Jadi, saya hendak tanya, saya difahamkan bahawa di Singapura,
 sebelum mereka melaksanakan GST 3% sebenarnya semua barang adalah sifar cukai.
@@ -2980,7 +2980,7 @@ yang 10%, jadi yang naik cuma naik 1%. Yang turun itu 4%. Jadi, kalau kita ambil
 daripada sudut ini, sebenarnya kita jauh lebih munasabah daripada Singapura. Adakah
 Yang Berhormat Johor Bahru bersetuju?"
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1550,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Terima
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1550,1550,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Terima
 kasih Yang Berhormat daripada Tebrau kerana memang betul. Dahulu Singapura kan
 *duty free*. Ia memang sifar cukai ketika itu, bahawa ia menjadi entrepot pelabuhan,
 pelabuhan yang *duty free,* menggalakkan orang datang membeli dan sebagainya akan
@@ -3021,15 +3021,15 @@ rendah daripada kita sudah pun ada GST. Namun begitu, saya rasa ini hanya satu
 helah. Asalkan apa sahaja yang Barisan Nasional hendak perkenalkan, memanglah
 tidak dipersetujui."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1600,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Jadi macam mana untuk kita hendak katakan mesti ada *national reconciliation,*
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1600,1600,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Jadi macam mana untuk kita hendak katakan mesti ada *national reconciliation,*
 macam mana kita hendak katakan kita mesti ada pendamaian, kita kena lihat kepada
 kepentingan negara dan kita hendak lihat kepada permuafakatan. Cakap pun cakap
 tetapi bila berpusingnya kita, dia hentamnya belakang."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1600,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Yang
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1600,1600,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Yang
 Berhormat Jasin bangun."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1600,Datuk Wira Haji Ahmad bin Haji Hamzah [Jasin],"Terima kasih Tuan Yang
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1600,1600,Datuk Wira Haji Ahmad bin Haji Hamzah [Jasin],"Terima kasih Tuan Yang
 di-Pertua, terima kasih Yang Berhormat Johor Bahru. Saya hendak ucap tahniah
 kepada Yang Berhormat Johor Bahru yang mempunyai ketahanan yang cukup hebat
 sekali kerana boleh berbahas sampai tiga jam hari ini. Kadang-kadang kalau tidak ada
@@ -3058,10 +3058,10 @@ bukan sahaja kita akan menyebabkan kerisauan, kebimbangan kepada pengguna-
 pengguna bahkan negara kita tidak akan lebih kompetitif berbanding dengan negara
 lain. Saya minta pandangan daripada Yang Berhormat Johor Bahru. Terima kasih."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1600,ANNOTATION,"[Timbalan Yang di-Pertua (Datuk Seri Ronald Kiandee) mempengerusikan
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1600,1600,ANNOTATION,"[Timbalan Yang di-Pertua (Datuk Seri Ronald Kiandee) mempengerusikan
 Mesyuarat]"
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1600,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Terima
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1600,1600,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Terima
 kasih Yang Berhormat Jasin. Saya tertarik dengan hujah itu bahawa akan ada
 penambahan kepada CPI kita atau pun kepada indeks inflasi kita, indeks harga
 *consumer* kita, yang bagi tahun ini untuk tahun lepas 3.2%. Akan tetapi sebagaimana
@@ -3073,10 +3073,10 @@ kenaikannya balik bukanlah 3.2% campur 1.8% menjadi 5% malahan ia 1.8% kepada
 apa yang dijangka ialah peningkatan kepada CPI itu, bukan maknanya kita tambahkan
 kepada kadar yang sebelumnya."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1600,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],"Yang Berhormat
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1600,1600,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],"Yang Berhormat
 Jasin bangun Yang Berhormat."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1600,Datuk Wira Haji Ahmad bin Haji Hamzah [Jasin],"Kita berharap perkara itu
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1600,1600,Datuk Wira Haji Ahmad bin Haji Hamzah [Jasin],"Kita berharap perkara itu
 berlaku Yang Berhormat Johor Bahru. Kalau ia berdasarkan 1.8% daripada kenaikan
 pada ketika ini CPI, berdasarkan daripada dua faktor. Pertama faktor domestik,
 kenaikan dalaman atau *market force* tetapi apa yang kita bimbangkan sekarang ini dari
@@ -3091,7 +3091,7 @@ tempatan.
 Ini penting Tuan Yang di-Pertua kerana kalau tidak angka inflasi kita akan
 meningkat. Itu yang kita paling bimbang. Terima kasih."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1600,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Yang
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1600,1600,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Yang
 Berhormat Jasin membawa pandangan yang harus diambil perhatian kerana seperti
 mana kalau kita dengar jawapan Yang Amat Berhormat Perdana Menteri pada pagi
 tadi, beberapa perkara dan tindakan yang telah diambil bagi tujuan untuk
@@ -3136,19 +3136,19 @@ dengan melesenkan pengimport dan sebagainya yang harus hanya kepada soal
 kesihatan semata-mata tetapi ia akan boleh membantu mengurangkan suasana kos
 barangan di negara kita..."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1600,Tuan Anuar bin Abd. Manap [Sekijang],
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1600,1600,Tuan Anuar bin Abd. Manap [Sekijang],
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1600,ANNOTATION,[Bangun]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1600,1600,ANNOTATION,[Bangun]
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1600,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"...Atau
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1600,1600,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"...Atau
 kos hidup di negara kita. Sambil itu GST itu boleh.."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1610,Tuan Anuar bin Abd. Manap [Sekijang],"Yang Berhormat Johor Bahru. Yang
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1610,1610,Tuan Anuar bin Abd. Manap [Sekijang],"Yang Berhormat Johor Bahru. Yang
 Berhormat Sekijang."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1610,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],Ya. ya.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1610,1610,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],Ya. ya.
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1610,Tuan Anuar bin Abd. Manap [Sekijang],"Terima kasih Tuan Yang di-Pertua.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1610,1610,Tuan Anuar bin Abd. Manap [Sekijang],"Terima kasih Tuan Yang di-Pertua.
 Sebenarnya sedar kah Yang Berhormat Johor Bahru sebenarnya pengguna rata-
 ratanya sudah mula menilai GST ini sebenarnya memberikan kelebihan kepada
 mereka. Apa yang memberikan kerisauan yang besar ialah pada ramai peniaga-
@@ -3180,10 +3180,10 @@ nanti, adakah rakyat akan dilihat lebih terkejut atau mereka melihat ini adalah 
 satu proses yang baik sebenarnya kepada ekonomi negara untuk mereka dan juga
 kerajaan laksanakan secara bersama."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1610,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Terima
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1610,1610,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Terima
 kasih Yang Berhormat Sekijang. Kepada pertanyaan tadi..."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1610,Tuan Khoo Soo Seang [Tebrau],"Tuan Yang di-Pertua. Yang Berhormat
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1610,1610,Tuan Khoo Soo Seang [Tebrau],"Tuan Yang di-Pertua. Yang Berhormat
 Johor Bahru saya minta mencelah sedikit. Saya fikir sekarang pihak pembangkang
 boleh memain-mainkan isu oleh kerana banyak barangan yang dikenakan cukai
 sekarang kita tidak sedar. Pengguna pun tidak sedar bahawa sudah ada cukai 5%, 6%
@@ -3197,12 +3197,12 @@ Jadi tahun depan boleh elakkan mereka daripada tambah 5% kepada harga sekarang
 sekurang-kurangnya mereka sudah boleh kena tolak *existing* sekarang sebelum
 mereka tambah GST. Adakah Yang Berhormat Johor Bahru bersetuju?"
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1610,Tuan Anuar bin Abd. Manap [Sekijang],"Yang Berhormat Johor Bahru.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1610,1610,Tuan Anuar bin Abd. Manap [Sekijang],"Yang Berhormat Johor Bahru.
 Sedikit lagi, minta izin. Cuma saya hendak tanya dengan Yang Berhormat Johor Bahru
 kita bagi penerangan yang bagus kepada pengguna tetapi adakah kita memberikan
 penerangan kepada peniaga-peniaga ini? Sekian Yang Berhormat Johor Bahru."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1610,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Ini
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1610,1610,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Ini
 yang masalah. Dia sebenarnya kalau saya lihat dari segi pengalaman saya Tuan Yang
 di-Pertua saya pun ada berniaga juga dahulu. Saya buatkan hamburger atau *beef patty*.
 Ikut fahaman saya ketika itu bahawa SST itu atau *sales tax* itu dikenakan kepada
@@ -3255,7 +3255,7 @@ daripada segi perbelanjaan yang sepatutnya. Jadi kalau saya tengok kepada GST
 sebenarnya, memang akan ada *resistance*nya. Memang akan ada peningkatan
 harganya kerana yang menjadi masalah ialah barangan dalam inventori."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1620,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Maknanya sebelum April ada barang-barang lama *stock*. Jadi barang-barang
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1620,1620,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Maknanya sebelum April ada barang-barang lama *stock*. Jadi barang-barang
 ini tidak boleh ada tuntutan cukai yang telah dibayar. Jadi inventori itulah, inventori yang
 lama itu akan dijual pada harga yang lebih tinggi. Itu perkara yang biasa, tetapi akhirnya
 ia akan stabil balik dengan juga membawa kepada penurunan dari segi impak kepada
@@ -3326,9 +3326,9 @@ dan pertimbangan kepada saya dalam membuat ucapan yang agak panjang. Ia luar
 biasa bagi saya dan saya pun rasa selepas ini tidak akan diberikan peluang seperti ini
 lagi untuk saya berucap..."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1620,ANNOTATION,[Menyampuk]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1620,1620,ANNOTATION,[Menyampuk]
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1620,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Kalau tidak diboikot pun mungkin diganggu
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1620,1620,Tan Sri Datuk Seri Utama Shahrir bin Abdul Samad [Johor Bahru],"Kalau tidak diboikot pun mungkin diganggu
 tetapi terus juga akan mengambil masa yang lama.
 Ada lagi? Jadi saya mengucapkan banyak terima kasih juga kepada rakan-
 rakan saya yang dengan taat dan sabar mendengar dan mengambil bahagian untuk
@@ -3337,15 +3337,15 @@ Diraja.
 Sekian Tuan Yang di-Pertua, saya mengucapkan banyak terima kasih.
 *Wassalamualaikum warahmatullaahi wabarakaatuh.*"
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1620,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],"Terima kasih Yang
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1620,1620,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],"Terima kasih Yang
 Berhormat. Yang Berhormat Tanjong Manis."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1628,Datuk Hajah Norah Abd. Rahman [Tanjong Manis],"Terima kasih Tuan
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,4.28 ptg.,1628,Datuk Hajah Norah Abd. Rahman [Tanjong Manis],"Terima kasih Tuan
 Yang di-Pertua..."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1628,ANNOTATION,[Membaca selawat]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,4.28 ptg.,1628,ANNOTATION,[Membaca selawat]
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1628,Datuk Hajah Norah Abd. Rahman [Tanjong Manis],"*Bismillahi Rahmani Rahim. Assalamualaikum
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,4.28 ptg.,1628,Datuk Hajah Norah Abd. Rahman [Tanjong Manis],"*Bismillahi Rahmani Rahim. Assalamualaikum
 warahmatullaahi wabarakaatuh.* Selamat petang, salam 1Malaysia.
 Saya amatlah berterima kasih kerana kita mendapat satu perbahasan yang
 sungguh bernas daripada Yang Berhormat Johor Bahru, panjang lebar dan saya
@@ -3360,7 +3360,7 @@ limpah kurnia dan berkat-Nya, kita Ahli-ahli Parlimen yang telah dipilih oleh ra
 Malaysia dapat berkumpul di sini untuk merancang masa depan bagi semua lapisan
 rakyat negara Malaysia yang kita cintai."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1630,Datuk Hajah Norah Abd. Rahman [Tanjong Manis],"Tuan Yang di-Pertua dan Yang Berhormat Ahli-ahli Dewan Rakyat sekalian,
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1630,1630,Datuk Hajah Norah Abd. Rahman [Tanjong Manis],"Tuan Yang di-Pertua dan Yang Berhormat Ahli-ahli Dewan Rakyat sekalian,
 junjung kasih ke atas Titah Seri Paduka Baginda Yang di-Pertuan Agong Tuanku Al-Haj
 Abdul Halim Mu’adzam Shah Ibni Almarhum Sultan Badlishah telah bermula dengan
 menzahirkan rasa simpati Duli Yang Maha Mulia Tuanku kepada insiden yang telah
@@ -3398,9 +3398,9 @@ ingin datang ke Dewan, tidak ada masalah sebab kerajaan Barisan Nasional dan Ahl
 ahli Yang Berhormat daripada Barisan Nasional akan terus menjalankan tugas untuk
 kebaikan rakyat demi rakyat..."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1630,ANNOTATION,[Tepuk]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1630,1630,ANNOTATION,[Tepuk]
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1630,Datuk Hajah Norah Abd. Rahman [Tanjong Manis],"Jangan lupa kita Ahli-ahli Yang Berhormat, yang
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1630,1630,Datuk Hajah Norah Abd. Rahman [Tanjong Manis],"Jangan lupa kita Ahli-ahli Yang Berhormat, yang
 terhormat mahupun daripada Barisan Nasional ataupun daripada pembangkang
 mempunyai satu kewajipan kepada setiap rakyat dari kawasan kita untuk mewakili
 mereka di dalam Dewan yang mulia ini. Inilah dinamakan wakil rakyat.
@@ -3445,7 +3445,7 @@ Ukuran kejayaan pembangunan bagi negara Malaysia ialah apabila banyak
 negara di Afrika telah menjadikan Malaysia sebagai negara contoh atau model kepada
 pembangunan negara mereka seperti negara Zambia, Nigeria, dan Kenya."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1640,Datuk Hajah Norah Abd. Rahman [Tanjong Manis],"Malaysia juga menjadi sebuah model bagi negara Islam di mana
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1640,1640,Datuk Hajah Norah Abd. Rahman [Tanjong Manis],"Malaysia juga menjadi sebuah model bagi negara Islam di mana
 pembangunan berasaskan syariah seperti Bank Islam, Tabung Haji bagi pengurusan
 jemaah, pembangunan zakat, universiti Islam dan pembangunan syariah Islam menjadi
 kajian dan model kepada pembangunan dan implementasi ekonomi Islam bagi
@@ -3524,7 +3524,7 @@ kejayaan Barisan Nasional di negeri Sarawak sepanjang 44 tahun ialah Kerajaan
 Barisan Nasional membawa pembangunan secara teratur dan berperingkat-peringkat
 sepanjang 44 tahun tersebut."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1650,Datuk Hajah Norah Abd. Rahman [Tanjong Manis],"Tuan Yang di-Pertua, sepanjang 44 tahun Sarawak diterajui oleh dua Ketua
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1650,1650,Datuk Hajah Norah Abd. Rahman [Tanjong Manis],"Tuan Yang di-Pertua, sepanjang 44 tahun Sarawak diterajui oleh dua Ketua
 Menteri iaitu Yang Amat Berbahagia Tun Abdul Rahman Ya'akub selama 11 tahun dan
 Tuan Yang Terutama Pehin Sri *Abdul Taib Mahmud* selama 33 tahun, kedua-dua Ketua
 Menteri tersebut telah begitu banyak melaksanakan pembangunan dari segi fizikal
@@ -3538,7 +3538,7 @@ ekonomi yang mampan dan satu-satunya negeri yang mempunyai pengiktirafan ‘A’
 minus dari *Standard Employ Rating Service*, satu organisasi perbadanan internasional.
 Ini amat membanggakan kita sebagai rakyat Sarawak."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1650,Datuk Aaron Ago anak Dagang [Kanowit],"Ya, mencelah sedikit. Terima
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1650,1650,Datuk Aaron Ago anak Dagang [Kanowit],"Ya, mencelah sedikit. Terima
 kasih Yang Berhormat Tanjong Manis, terima kasih kepada Tuan Yang di-Pertua. Saya
 juga ingin turut bersama Yang Berhormat Tanjong Manis untuk memberi penghargaan
 dan tahniah kepada pucuk pimpinan Barisan Nasional selama ini di negeri Sarawak
@@ -3566,7 +3566,7 @@ meningkat. Maka akan menyulitkan lagi hasrat Kerajaan Negeri Sarawak untuk
 membangunkan negeri Sarawak setaraf dengan negeri-negeri di Semenanjung. Jadi,
 apakah pandangan Yang Berhormat Tanjong Manis dalam hal ini? Terima kasih."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1650,Datuk Hajah Norah Abd. Rahman [Tanjong Manis],"Terima kasih Yang
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1650,1650,Datuk Hajah Norah Abd. Rahman [Tanjong Manis],"Terima kasih Yang
 Berhormat Kanowit. Saya masukkan ucapan Yang Berhormat Kanowit di dalam
 perbahasan saya sekali.
 Memanglah Sarawak satu negeri yang amat luas, *challenges*nya amatlah
@@ -3607,16 +3607,16 @@ sebanyak 968 buah. Kuil Hindu dan Sikh walaupun tak ramai Hindu dan Sikh di
 Sarawak, dahulu cuma ada dua buah dan sekarang ada enam buah. Kuil Buddha 12
 buah dahulu dan sekarang 48 buah."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1650,Dato’ Shamsul Anuar bin Haji Nasarah [Lenggong],"Yang Berhormat
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1650,1650,Dato’ Shamsul Anuar bin Haji Nasarah [Lenggong],"Yang Berhormat
 Tanjong Manis."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1650,Datuk Hajah Norah Abd. Rahman [Tanjong Manis],Ya.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1650,1650,Datuk Hajah Norah Abd. Rahman [Tanjong Manis],Ya.
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1650,Dato’ Shamsul Anuar bin Haji Nasarah [Lenggong],"Terima kasih Tuan
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1650,1650,Dato’ Shamsul Anuar bin Haji Nasarah [Lenggong],"Terima kasih Tuan
 Yang di-Pertua. Saya bersetuju supaya kerajaan memberikan tumpuan kepada usaha-
 usaha untuk pembangunan di negeri Sarawak."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1700,Dato’ Shamsul Anuar bin Haji Nasarah [Lenggong],"Mengambil kira bahawa Sarawak adalah satu negeri yang mempunyai
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1700,1700,Dato’ Shamsul Anuar bin Haji Nasarah [Lenggong],"Mengambil kira bahawa Sarawak adalah satu negeri yang mempunyai
 keluasan yang cukup besar dan memerlukan penumpuan. Saya cukup yakin bahawa
 Yang Amat Berhormat Perdana Menteri dan kerajaan melalui segala kementerian dan
 jenteranya memberikan tumpuan kepada usaha-usaha untuk meningkat, menambah
@@ -3635,7 +3635,7 @@ prasarana atau apa-apa perkara yang pada pandangan Yang Berhormat Tanjong
 Manis perlu diberi penekanan oleh kerajaan dalam soal membangunkan negeri
 Sarawak ini?"
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1700,Datuk Hajah Norah Abd. Rahman [Tanjong Manis],"Terima kasih Yang
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1700,1700,Datuk Hajah Norah Abd. Rahman [Tanjong Manis],"Terima kasih Yang
 Berhormat Lenggong. Hari ini saya sengaja hendak tunjukkan perbezaan
 pembangunan daripada 1974 sampai 2014 kerana banyak pembangunan ini telah
 dijalankan oleh Kerajaan Negeri Sarawak sendiri. Jadi, saya amatlah memohon juga
@@ -3703,7 +3703,7 @@ bertanya khabar dan telah berusaha untuk membantu seperti menyediakan Nuri untuk
 membawa balik jenazah tetapi apakan daya cuacanya tidak mengizinkan kerana masa
 itu hujan sungguh lebat dan tidak membenarkan helikopter itu untuk berangkat."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1710,Datuk Hajah Norah Abd. Rahman [Tanjong Manis],"Jadi *challenges* kita
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1710,1710,Datuk Hajah Norah Abd. Rahman [Tanjong Manis],"Jadi *challenges* kita
 amatlah susah terutamanya di Tanjong Manis di mana di kawasan itu berpulau-pulau.
 Jadi saya cuba untuk membantu rakyat, untuk menenangkan rakyat supaya hari ini
 saya membawa masalah-masalah mereka dan berharap sangatlah kepada
@@ -3730,15 +3730,15 @@ Pusat, kita juga harus memberi kepujian kerana pembangunan yang seimbang untuk
 rakyat dan negara amatlah penting. Tanpa pembangunan yang seimbang, tidaklah
 rakyat di negeri Sarawak merasa kemajuan."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1710,Datuk Noor Ehsanuddin bin Mohd. Harun Narrashid [Kota Tinggi],"Yang
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1710,1710,Datuk Noor Ehsanuddin bin Mohd. Harun Narrashid [Kota Tinggi],"Yang
 Berhormat Tanjong Manis."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1710,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],"Yang Berhormat
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1710,1710,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],"Yang Berhormat
 Kota Tinggi bangun."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1710,Datuk Hajah Norah Abd. Rahman [Tanjong Manis],Ya.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1710,1710,Datuk Hajah Norah Abd. Rahman [Tanjong Manis],Ya.
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1710,Datuk Noor Ehsanuddin bin Mohd. Harun Narrashid [Kota Tinggi],"Terima
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1710,1710,Datuk Noor Ehsanuddin bin Mohd. Harun Narrashid [Kota Tinggi],"Terima
 kasih Tuan Yang di-Pertua. Terima kasih Yang Berhormat Tanjong Manis. Saya ingin
 bertanya kepada Yang Berhormat Tanjong Manis tentang keluasan Sarawak tadi di
 mana seperti kita ketahui baru-baru ini ada beberapa syarikat yang besar khususnya
@@ -3760,7 +3760,7 @@ membangunkan kawasan-kawasan di Sarawak khusus dalam bidang perladangan di
 skala besar dan ini dapat membantu secara makro dan mikro rakyat Sarawak khusus
 dalam bidang perladangan. Terima kasih."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1710,Datuk Hajah Norah Abd. Rahman [Tanjong Manis],"Yang Berhormat Kota
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1710,1710,Datuk Hajah Norah Abd. Rahman [Tanjong Manis],"Yang Berhormat Kota
 Tinggi, terima kasih Yang Berhormat Kota Tinggi. Tadi saya telah membawa isu yang
 sama. Mungkin Yang Berhormat tidak ada di sini tadi dan memanglah kita amat sedih
 kerana Sarawak di*penalize* kerana mempunyai tanah gambut. Ini telah dibuat oleh
@@ -3785,23 +3785,23 @@ terlibat dalam tragedi bot itu.
 Saya juga hendak merakam ucapan terima kasih kepada Yang Berhormat
 Datuk Dr. Haji Wan Junaidi Tuanku Jaafar,Timbalan Menteri Dalam Negeri.."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1710,Timbalan Yang di-Pertua [Datuk Sri Ronald Kiandee],"Ahli Parlimen
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1710,1710,Timbalan Yang di-Pertua [Datuk Sri Ronald Kiandee],"Ahli Parlimen
 Santubong, Yang Berhormat."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1710,Datuk Hajah Norah Abd. Rahman [Tanjong Manis],"Ahli Parlimen
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1710,1710,Datuk Hajah Norah Abd. Rahman [Tanjong Manis],"Ahli Parlimen
 Santubong yang juga turun ke padang, tolong basuh pinggan pun bersama wanita-
 wanita di Kampung Chord. Dia pun tolong makan juga."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1710,ANNOTATION,[Ketawa]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1710,1710,ANNOTATION,[Ketawa]
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1710,Seorang Ahli,Basuh pinggan sahaja?
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1710,1710,Seorang Ahli,Basuh pinggan sahaja?
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1710,Datuk Hajah Norah Abd. Rahman [Tanjong Manis],"Basuh pinggan dan
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1710,1710,Datuk Hajah Norah Abd. Rahman [Tanjong Manis],"Basuh pinggan dan
 tolong makan"
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1710,ANNOTATION,[Ketawa]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1710,1710,ANNOTATION,[Ketawa]
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1710,Datuk Hajah Norah Abd. Rahman [Tanjong Manis],"dan melihat OPS ROOM dan mengkoordinasi masalah-masalah
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1710,1710,Datuk Hajah Norah Abd. Rahman [Tanjong Manis],"dan melihat OPS ROOM dan mengkoordinasi masalah-masalah
 di OPS ROOM ya. Syukur alhamdulillah. Saya juga hendak mengucap terima kasih
 kepada *political secretary* ataupun Setiausaha Politik Ketua Menteri Sarawak, Yang
 Berhormat Abu Seman Jahwie dan juga Yang Berhormat Abdullah bin Saidul, ADUN
@@ -3818,7 +3818,7 @@ RELA, pegawai-pegawai kerajaan termasuk pegawai pejabat daerah, pekerja-pekerja
 sukarelawan dan orang ramai bersatu untuk mengharungi bencana dan untuk bersama
 membantu mencari mangsa."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1720,Datuk Hajah Norah Abd. Rahman [Tanjong Manis],"Tidak lengkaplah kalau saya tidak mengucapkan terima kasih dan
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1720,1720,Datuk Hajah Norah Abd. Rahman [Tanjong Manis],"Tidak lengkaplah kalau saya tidak mengucapkan terima kasih dan
 penghargaan juga kepada Yang Berhormat Datuk Alexander Nanta Linggi, Timbalan
 Menteri Kemajuan Luar Bandar dan Wilayah yang juga telah meluangkan masa untuk
 melawat Pulau Bruit dan mangsa bot karam pada bulan lepas dan juga melawat projek-
@@ -3883,16 +3883,16 @@ Razak. Marilah kita menghadiahkan Al-Fatihah kepada Allahyarham Tun Abdul Razak.
 Semoga Allah SWT mencucuri rahmat kesejahteraan dan kebahagiaan di atasnya dan
 semoga Allahyarham Tun Abdul Razak sentiasa di dalam kebahagiaan dan keamanan."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1720,ANNOTATION,[Semua Ahli Dewan membacakan Al-Fatihah dan bertafakur]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1720,1720,ANNOTATION,[Semua Ahli Dewan membacakan Al-Fatihah dan bertafakur]
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1720,Datuk Hajah Norah Abd. Rahman [Tanjong Manis],"Dengan ini saya menyokong Titah Seri Paduka Baginda Yang di-Pertuan
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1720,1720,Datuk Hajah Norah Abd. Rahman [Tanjong Manis],"Dengan ini saya menyokong Titah Seri Paduka Baginda Yang di-Pertuan
 Agong Tuanku Al-Haj Abdul Halim Mu'adzam Shah ibni Almarhum Sultan Badlishah.
 Sekian, terima kasih. *Wassallam*."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1720,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],"Yang Berhormat
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1720,1720,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],"Yang Berhormat
 Tanah Merah."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1728,Dato’ Ikmal Hisham bin Abdul Aziz [Tanah Merah],"Terima kasih Tuan
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,5.28 ptg.,1728,Dato’ Ikmal Hisham bin Abdul Aziz [Tanah Merah],"Terima kasih Tuan
 Yang di-Pertua kerana memberi saya peluang. Saya ingin menjunjung kasih Titah Seri
 Paduka Baginda Yang di-Pertuan Agong yang disampaikan pada 10 Mac ketika
 merasmikan Dewan yang mulia ini. Saya juga ingin mengucapkan terima kasih untuk
@@ -3912,25 +3912,25 @@ dan pemimpin Barisan Nasional turun padang memantau sendiri harga barang
 termasuk secara mengejut di pasar besar, pasar basah dan pasar raya yang menjadi
 tumpuan rakyat. Ketika ada pihak cuba menggembar-gemburkan bahawa kadar tol..."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1728,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],Yang Berhormat..
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,5.28 ptg.,1728,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],Yang Berhormat..
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1728,Dato’ Ikmal Hisham bin Abdul Aziz [Tanah Merah],Ya.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,5.28 ptg.,1728,Dato’ Ikmal Hisham bin Abdul Aziz [Tanah Merah],Ya.
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1728,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],"Selalunya kita tidak
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,5.28 ptg.,1728,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],"Selalunya kita tidak
 sebut nama ahli, kita sebut jawatan dan kawasan."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1728,Dato’ Ikmal Hisham bin Abdul Aziz [Tanah Merah],"Oh, maaf."
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,5.28 ptg.,1728,Dato’ Ikmal Hisham bin Abdul Aziz [Tanah Merah],"Oh, maaf."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1728,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],"Walau
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,5.28 ptg.,1728,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],"Walau
 bagaimanapun, Yang Berhormat boleh sambung besok."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1728,Dato’ Ikmal Hisham bin Abdul Aziz [Tanah Merah],"Okey. Terima kasih
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,5.28 ptg.,1728,Dato’ Ikmal Hisham bin Abdul Aziz [Tanah Merah],"Okey. Terima kasih
 Tuan Yang di-Pertua."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1728,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],"Ahli-ahli Yang
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,5.28 ptg.,1728,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],"Ahli-ahli Yang
 Berhormat, mesyuarat Dewan hari ini ditangguhkan sehingga jam 10 pagi hari Rabu, 12
 Mac 2014."
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1730,ANNOTATION,[Dewan ditangguhkan pada pukul 5.30 petang]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,5.30 petang,1730,ANNOTATION,[Dewan ditangguhkan pada pukul 5.30 petang]
 USUL,"MENJUNJUNG KASIH TITAH UCAPAN
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1730,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],DR.11.3.2014 I
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,5.30 petang,1730,Timbalan Yang di-Pertua [Datuk Seri Ronald Kiandee],DR.11.3.2014 I

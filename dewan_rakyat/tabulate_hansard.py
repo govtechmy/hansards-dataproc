@@ -697,24 +697,25 @@ def tabulate(hansard_date):
     old_timestamp_list = [speech[3] for speech in speeches]
     # standardise timestamps into 24 hour format
     for row_id in range(len(speeches)):
-        speeches[row_id][3] = standardise_timestamp(speeches[row_id][3])
+        # insert standardised timestamp after old timestamp
+        speeches[row_id].insert(4, standardise_timestamp(speeches[row_id][3]))
 
     # post-tabulation warnings
     # check if annotation is too long, usually missing ].
     # if without error it is usually [Diputuskan,
     for speech in speeches:
-        if speech[4] == "ANNOTATION" and speech[5].count('\n') > 5:
+        if speech[5] == "ANNOTATION" and speech[6].count('\n') > 5:
             with open("warnings/annotation_too_long.txt", 'a') as f:
-                f.write(f'{hansard_date}\n{speech[5]}\n\n')
+                f.write(f'{hansard_date}\n{speech[6]}\n\n')
 
     # check for uppercased misidentified non-authors
     for speech in speeches:
-        if speech[4] != "ANNOTATION" and upper_lower_ratio(speech[4]) > 0.8:
+        if speech[5] != "ANNOTATION" and upper_lower_ratio(speech[5]) > 0.8:
             with open("warnings/uppercased_non_author.txt", 'a') as f:
                 f.write(f'{hansard_date}\n{speech[4]}\n\n')
 
     # check that timestamps are in order
-    timestamps = [speech[3] for speech in speeches]
+    timestamps = [speech[4] for speech in speeches]
     sorted_timestamps = sorted(timestamps)
     if timestamps != sorted_timestamps:
         with open("warnings/unsorted_timestamps.txt", 'a') as f:
@@ -726,7 +727,7 @@ def tabulate(hansard_date):
     # export speeches to csv
     with open(f'{dir_path}result.csv', mode='w', newline='') as file:
         writer = csv.writer(file)
-        writer.writerow(['level_1', 'level_2', 'level_3', 'timestamp', 'author', 'speech'])
+        writer.writerow(['level_1', 'level_2', 'level_3', 'raw_timestamp', 'timestamp', 'author', 'speech'])
         writer.writerows(speeches)
 
 

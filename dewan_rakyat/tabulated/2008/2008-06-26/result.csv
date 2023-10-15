@@ -1,22 +1,22 @@
-level_1,level_2,level_3,timestamp,author,speech
-,,,1000,,[Timbalan Yang di-Pertua (Datuk Ronald Kiandee) **mempengerusikan Mesyuarat**]
-USUL,"Aziz]: Tuan Yang di-Pertua, saya mohon mencadangkan:",,1000,,"“Bahawa mengikut Peraturan Mesyuarat 12(1) Majlis
+level_1,level_2,level_3,raw_timestamp,timestamp,author,speech
+,,,10.00 pagi,1000,,[Timbalan Yang di-Pertua (Datuk Ronald Kiandee) **mempengerusikan Mesyuarat**]
+USUL,"Aziz]: Tuan Yang di-Pertua, saya mohon mencadangkan:",,10.00 pagi,1000,,"“Bahawa mengikut Peraturan Mesyuarat 12(1) Majlis
 Mesyuarat pada hari ini tidak akan ditangguhkan sehingga selesai
 pembentangan usul Kajian Separuh Penggal Rancangan Malaysia
 Kesembilan oleh Yang Amat Berhormat Perdana Menteri
 dicadangkan dan disokong dan selepas itu Majlis Mesyuarat akan
 ditangguhkan sehingga jam 10.00 pagi, hari Isnin, 30 Jun 2008.”"
-USUL,"Aziz]: Tuan Yang di-Pertua, saya mohon mencadangkan:",,1000,Menteri Pengangkutan [Datuk Ong Tee Keat],"Tuan Yang di-Pertua, saya
+USUL,"Aziz]: Tuan Yang di-Pertua, saya mohon mencadangkan:",,10.00 pagi,1000,Menteri Pengangkutan [Datuk Ong Tee Keat],"Tuan Yang di-Pertua, saya
 mohon menyokong."
-USUL,"Aziz]: Tuan Yang di-Pertua, saya mohon mencadangkan:",,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Ahli-ahli Yang
+USUL,"Aziz]: Tuan Yang di-Pertua, saya mohon mencadangkan:",,10.00 pagi,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Ahli-ahli Yang
 Berhormat, sekarang saya kemukakan masalah kepada Majlis untuk diputuskan.
 Masalahnya ialah usul seperti yang dikemukakan tadi hendaklah disetujukan.
 Usul dikemuka bagi diputuskan, dan disetujukan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1000,Datuk Haji Baharum bin Haji Mohamed [Sekijang],"minta Menteri
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,10.00 pagi,1000,Datuk Haji Baharum bin Haji Mohamed [Sekijang],"minta Menteri
 Pengangkutan menyatakan berapakah hasil kutipan sewa tanah milik KTM (Kereta Api
 Tanah Melayu) yang telah dibuat pada tahun 2003, 2004, 2005, 2006 dan 2007 di
 Malaysia dan Singapura."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1000,Menteri Pengangkutan [Datuk Ong Tee Keat],"Tuan Yang di-Pertua,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,10.00 pagi,1000,Menteri Pengangkutan [Datuk Ong Tee Keat],"Tuan Yang di-Pertua,
 tanggungjawab pentadbiran tanah-tanah kereta api adalah terletak atas dua agensi iaitu
 Kereta Api Tanah Melayu Berhad ataupun KTMB dan Perbadanan Aset Kereta Api
 ataupun PAK. KTMB bertanggungjawab atas tanah operasi manakala PAK
@@ -33,11 +33,11 @@ Bagi tanah-tanah rizab dan bukan operasi di bawah pentadbiran PAK.
 Pentadbiran dan kutipan sewa secara aktif dan sistematik oleh PAK hanya dilakukan
 mulai tahun 2005. Jumlah kutipan sewa bagi tahun 2005 hingga 2007, adalah seperti
 berikut:"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,TANAH RIZAB KERETA API,,1000,,"| TAHUN | HASIL SEWA (RM) |
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,TANAH RIZAB KERETA API,,10.00 pagi,1000,,"| TAHUN | HASIL SEWA (RM) |
 |  2005 |     130,750     |
 |  2006 |     197,450     |
 |  2007 |     381,616     |"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,TANAH BUKAN OPERASI,,1000,,"| TAHUN | HASIL SEWA (RM) |
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,TANAH BUKAN OPERASI,,10.00 pagi,1000,,"| TAHUN | HASIL SEWA (RM) |
 |  2005 |     120,700     |
 |  2006 |    1.13 juta    |
 |  2007 |    1.382 juta   |
@@ -50,7 +50,7 @@ PAK dalam tempoh tahun 2003 hingga tahun 2007 adalah seperti berikut:
 |  2006 |         23.83          |
 |  2007 |         21.76          |
 Sekian."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,TANAH BUKAN OPERASI,,1000,Datuk Haji Baharum bin Haji Mohamed [Sekijang],"Terima kasih Tuan Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,TANAH BUKAN OPERASI,,10.00 pagi,1000,Datuk Haji Baharum bin Haji Mohamed [Sekijang],"Terima kasih Tuan Yang
 di-Pertua dan terima kasih kepada Yang Berhormat Menteri yang menjawab soalan
 saya tadi. Soalan tambahan saya. Saya mendapati bahawa tanah-tanah KTM ini
 terutamanya yang terdapat di kiri, kanan landasan ini, banyak yang tidak terurus
@@ -58,14 +58,14 @@ dengan baik.
 Di tempat-tempat yang ada penyewanya, maka teranglah dia, tetapi di tempat
 yang tidak ada penyewa di kiri kanan jalan ini, semak-samun, tempat sarang nyamuk,
 sarang tikus, sarang dadah dan sebagainya..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,TANAH BUKAN OPERASI,,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Soalannya Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,TANAH BUKAN OPERASI,,10.00 pagi,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Soalannya Yang
 Berhormat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,TANAH BUKAN OPERASI,,1000,Datuk Haji Baharum bin Haji Mohamed [Sekijang],"Jadi soalannya Tuan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,TANAH BUKAN OPERASI,,10.00 pagi,1000,Datuk Haji Baharum bin Haji Mohamed [Sekijang],"Jadi soalannya Tuan
 Yang di-Pertua, kalaulah, saya tidak kiralah berapa agensi yang kutip, tetapi saya
 dengar tadi berjuta yang disebutkan oleh Yang Berhormat Menteri ini. Kalau kutipan
 sewanya pun banyak, mengapa duit ini tidak disalurkan untuk membersihkan kawasan-
 kawasan tersebut? Terima kasih Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,TANAH BUKAN OPERASI,,1000,Datuk Ong Tee Keat,"Tuan Yang di-Pertua, saya ucapkan terima kasih
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,TANAH BUKAN OPERASI,,10.00 pagi,1000,Datuk Ong Tee Keat,"Tuan Yang di-Pertua, saya ucapkan terima kasih
 kepada Yang Berhormat Sekijang atas tegurannya. Apa yang dibangkitkan tadi itu
 adalah keadaan di mana tidak terurus baik, kononnya.
 Saya ingin maklumkan Dewan yang mulia ini sesungguhnya, ini juga
@@ -77,8 +77,8 @@ bahawa, kadangkala terdapat juga tanah-tanah kosong, ataupun tanah terbiar yang
 tidak semestinya dalam bidang kuasa KTMB ataupun PAK. Kadangkala petak-petak
 tanah yang bersebelahan dengan tanah KTMB itu pun mudah juga disalah anggap
 sebagai tanah KTMB. Sebenarnya tidak semestinya benar. Sekian."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,TANAH BUKAN OPERASI,,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Yang Berhormat Arau.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,TANAH BUKAN OPERASI,,1000,Dato' Ismail Kasim [Arau],"Terima kasih Tuan Yang di-Pertua dan Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,TANAH BUKAN OPERASI,,10.00 pagi,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Yang Berhormat Arau.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,TANAH BUKAN OPERASI,,10.00 pagi,1000,Dato' Ismail Kasim [Arau],"Terima kasih Tuan Yang di-Pertua dan Yang
 Berhormat Menteri. Arau ada kereta api. Saya ingin bertanya Yang Berhormat Menteri
 berhubung dengan kedudukan atau status tanah KTMB ini. Kalau saya difahamkan
 selepas yang di corporatized, kita lihat tanah ini diberi hak ataupun title atas milik
@@ -92,29 +92,29 @@ dijelaskan setakat ini dengan pihak kerajaan, ia mesti dibuat dengan kadar yang
 segera.
 Jadi saya ingin tanya Yang Berhormat, adakah status tadi telah diubah kepada
 hak sepenuhnya kepada pihak KTMB Sdn Bhd.?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,TANAH BUKAN OPERASI,,1000,Datuk Ong Tee Keat,"Tuan Yang di-Pertua, sebenarnya soalan tadi itu lebih
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,TANAH BUKAN OPERASI,,10.00 pagi,1000,Datuk Ong Tee Keat,"Tuan Yang di-Pertua, sebenarnya soalan tadi itu lebih
 merupakan andaian. Kalaulah ia masih lagi di bawah kelolaan KPTG, dan berapa
 tunggakannya. Sebenarnya saya suka juga mempelawa Yang Berhormat kiranya
 terdapat fakta-fakta ataupun perangkaan yang terkini mengenai tunggakan yang
 dimaksudkan itu, saya memang dan sanggup menyusulinya."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,TANAH BUKAN OPERASI,,1000,Dato’ Ismail Kasim [Arau],"Maksud saya Yang Berhormat sebab apabila
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,TANAH BUKAN OPERASI,,10.00 pagi,1000,Dato’ Ismail Kasim [Arau],"Maksud saya Yang Berhormat sebab apabila
 sebuah syarikat diswastakan ataupun di corporatized, statusnya, mereka mesti
 menjelaskan sebuah premium kepada kerajaan tetapi banyak syarikat swasta seperti
 Pos Malaysia, Padi Beras Nasional Berhad, KTMB, mereka tidak membuat demikian.
 Jadi saya nak tanya Yang Berhormat, adakah pihak KTMB telah membuat penjelasan
 premium itu kepada pihak kerajaan? Itu sahaja."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,TANAH BUKAN OPERASI,,1000,Datuk Ong Tee Keat,"Tuan Yang di-Pertua, sesungguhnya apa yang saya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,TANAH BUKAN OPERASI,,10.00 pagi,1000,Datuk Ong Tee Keat,"Tuan Yang di-Pertua, sesungguhnya apa yang saya
 dimaklumkan setakat ini, pihak KTMB tetap menurut apa yang dikehendaki termasuk
 juga apa yang dibangkitkan oleh Yang Berhormat. Akan tetapi kiranya ada penyewaan
 atau pajakan tanah yang bukan dalam bidang kuasa KTMB atau PAK, maka saya tak
 ada maklumatlah. Itu saya kena jelaskan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,TANAH BUKAN OPERASI,,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat Puan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,TANAH BUKAN OPERASI,,10.00 pagi,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat Puan
 Teo Nie Ching."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1000,Puan Teo Nie Ching [Serdang],"minta Menteri Kerja Raya menyatakan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,10.00 pagi,1000,Puan Teo Nie Ching [Serdang],"minta Menteri Kerja Raya menyatakan
 apakah kemajuan pembinaan terowong yang telah dipersetujui di Kajang Utama/Kajang
 Sentral untuk merentasi lebuh raya SILK dan sebab kelewatan untuk pembinaan
 tersebut."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1000,Menteri Kerja Raya [Dato’ Ir. Mohd. Zin bin Mohamed],"Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,10.00 pagi,1000,Menteri Kerja Raya [Dato’ Ir. Mohd. Zin bin Mohamed],"Tuan Yang di-
 Pertua, untuk makluman Ahli Yang Berhormat, semasa mereka bentuk lebuh raya ini,
 satu pusingan U telah pun disediakan sebelum plaza tol untuk penduduk-penduduk
 taman di persekitaran untuk merentasi lebuh raya SILK.
@@ -128,9 +128,9 @@ Pihak kementerian secara asasnya telah menyediakan lukisan konsep
 terowong, secara detail nya belum lagi dan pembinaan terowong, dan kita akan
 jangkakan jikalau kerjanya berjalan di tapak bina, ia akan mengambil masa 18 bulan
 untuk dilaksanakan, tapi sehingga kini kita masih lagi menunggu kelulusan peruntukan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,10.00 pagi,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat
 Serdang."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1000,Puan Teo Nie Ching [Serdang],"Terima kasih Tuan Yang di-Pertua. Saya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,10.00 pagi,1000,Puan Teo Nie Ching [Serdang],"Terima kasih Tuan Yang di-Pertua. Saya
 juga faham bahawa satu pusingan U telah disediakan. Namun sekarang 7,000
 penduduk-penduduk Taman Kajang Utama terpaksa menempuh laluan sejauh 5km
 untuk pergi ke Bandar Kajang sedangkan kawasan perumahan mereka hanya 500m
@@ -142,7 +142,7 @@ sedarkah kementerian bahawa kegagalan kerajaan untuk memasukkan pembinaan
 terowong ini dalam skop perjanjian konsesi telah mengakibatkan kerugian masa,
 kerugian keselamatan dan kerugian wang. Bila baru kementerian akan bina yang
 terowong itu, yang ambil masa 18 bulan itu?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1000,Dato’ Ir. Mohd. Zin bin Mohamed,"Baik Yang Berhormat. Yang Berhormat,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,10.00 pagi,1000,Dato’ Ir. Mohd. Zin bin Mohamed,"Baik Yang Berhormat. Yang Berhormat,
 pada asanya apa yang disuarakan oleh Yang Berhormat mengenai dengan izinlah,
 teknikal parameternya agak kurang apa ni, kebenarannya. Sebab utama jajaran jalan
 raya ini bukan jajaran yang lama dinaiktaraf. Dia merupakan jajaran baru.
@@ -157,10 +157,10 @@ yang dibina sebelum jalan tol itu melibatkan tentang aspek keselamatan jalan ray
 tak benar sebab pusingan U-turn ini bukan dibuat dengan izin after thought, dia satu
 pusingan yang memang secara reka bentuknya bila dibuat jajaran ini adalah termaktub
 dalam asas pertimbangan untuk mengadakan lebuh raya ini."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat Datu
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,10.00 pagi,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat Datu
 Seri Joseph Pairin Kitingan.
 **[Soalan No.3 -** Y.B. Datu Seri Joseph Pairin Kitingan (Keningau) tidak hadir**]**"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1000,Tuan Johari bin Abdul [Sungai Petani],"minta Menteri Perdagangan Dalam
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,10.00 pagi,1000,Tuan Johari bin Abdul [Sungai Petani],"minta Menteri Perdagangan Dalam
 Negeri Dan Hal Ehwal Pengguna menyatakan:
 (a) adakah kementerian akan mengawal pembukaan
 supermarket dan hypermarket di sesebuah bandar agar
@@ -168,8 +168,8 @@ peniaga-peniaga kecil boleh bernafas: dan
 (b) apakah faedah jangka masa panjang jika terlalu banyak
 supermarket dan hypermarket yang beroperasi di Malaysia
 sedangkan kebanyakannya bukan milik rakyat Malaysia."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Sila Menteri.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1000,Timbalan Menteri Perdagangan Dalam Negeri dan Hal Ehwal Pengguna [Tuan Jelaing anak Mersat],"Terima kasih Datuk Speaker dan terima kasih Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,10.00 pagi,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Sila Menteri.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,10.00 pagi,1000,Timbalan Menteri Perdagangan Dalam Negeri dan Hal Ehwal Pengguna [Tuan Jelaing anak Mersat],"Terima kasih Datuk Speaker dan terima kasih Yang
 Berhormat Sungai Petani. Garis panduan penyertaan asing di dalam sektor
 perdagangan, pengedaran 2004 jelas memberikan penerangan terhadap penyertaan
 asing ke dalam sektor perdagangan pengedaran negara khususnya bagi pengusaha
@@ -201,14 +201,14 @@ memainkan peranan yang penting terhadap pertumbuhan ekonomi negara.
 Antara kesan jangka panjang hypermarket asing ialah:
 (i) kemasukan terus pelaburan asing secara konsisten;
 (ii) pemindahan teknologi;"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,10.00 pagi,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat
 Timbalan Menteri, yang itu tidak ditanya. Kesannya itu tidak ditanya dalam soalan.
 Ringkaskan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1000,Tuan Jelaing anak Mersat,"Soalan (b) kah? Apakah faedah jangka panjang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,10.00 pagi,1000,Tuan Jelaing anak Mersat,"Soalan (b) kah? Apakah faedah jangka panjang
 jika terlalu banyak supermarket dan hypermarke? Boleh saya teruskan, Tuan Yang di-
 Pertua?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Ya, teruskan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1000,Tuan Jelaing anak Mersat,"(iii) pengenalan format-format baru perdagangan pengedaran
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,10.00 pagi,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Ya, teruskan."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,10.00 pagi,1000,Tuan Jelaing anak Mersat,"(iii) pengenalan format-format baru perdagangan pengedaran
 seperti pembinaan pusat pengedaran setempat di dalam
 rantaian pengedaran borong dan runcit; dan
 (iv) pemakaian secara optimum guna tenaga tempatan.
@@ -218,9 +218,9 @@ hypermarket menerusi garis panduan yang telah ditetapkan agar keseimbangan dan
 kepentingan ekonomi negara sentiasa terjaga. Kementerian juga serius dalam
 memastikan penyertaan menyeluruh dan progresif pengusaha tempatan di dalam
 sektor ini."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Baik. Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,10.00 pagi,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Baik. Yang Berhormat
 Sungai Petani."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1000,Tuan Johari bin Abdul [Sungai Petani],"Tuan Yang di-Pertua, soalan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,10.00 pagi,1000,Tuan Johari bin Abdul [Sungai Petani],"Tuan Yang di-Pertua, soalan
 tambahan saya ialah apabila kerajaan meneruskan sesebuah supermarket ataupun
 hypermarket di tempat-tempat tertentu, bolehkah kerajaan pastikan bahawa syarat-
 syarat ditetapkan supaya pertama, produk tempatan diambil kira untuk dipamerkan di
@@ -229,7 +229,7 @@ Kedua, pekerja-pekerja khususnya di peringkat pengurusan (management)
 bukan setakat menjadi tukang sapu ataupun jaga - diambil kira juga supaya penyertaan
 daripada anak tempatan ini dimasukkan dalam syarat untuk ditubuhkan supermarket
 ataupun hypermarket di tempat-tempat tertentu. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1000,Tuan Jelaing anak Mersat,"Terima kasih, Yang Berhormat Sungai Petani.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,10.00 pagi,1000,Tuan Jelaing anak Mersat,"Terima kasih, Yang Berhormat Sungai Petani.
 Tuan Yang di-Pertua, apabila supermarket ataupun hypermarket ditubuhkan di sesuatu
 kawasan jawatankuasa mengadakan perundingan dengan kerajaan tempatan dan
 kerajaan negeri. Baru-baru ini saya sendiri telah pergi ke Giant Supermarket di Melaka
@@ -238,14 +238,14 @@ itu ada lebih kurang 15 buah syarikat tempatan.
 Mengenai soalan kedua tadi, kementerian memang memberi peluang kepada
 anak-anak tempatan di peringkat bahagian pengurusan selain daripada graduan-
 graduan kita yang menjalani latihan di supermarket dan hypermarket. Sekian."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,10.00 pagi,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat
 Tenggara."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1000,Beberapa Ahli,Wah!
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1000,Datuk Halimah binti Mohamed Sadique [Tenggara],"Terima kasih, Tuan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,10.00 pagi,1000,Beberapa Ahli,Wah!
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,10.00 pagi,1000,Datuk Halimah binti Mohamed Sadique [Tenggara],"Terima kasih, Tuan
 Yang di-Pertua. Tidak sia-sia saya pakai baju yang warnanya sama dengan tali leher."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Tidak ada kena
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,10.00 pagi,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Tidak ada kena
 mengena tali leher dengan baju, Yang Berhormat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1000,Datuk Halimah binti Mohamed Sadique [Tenggara],"Bertenang, Ahli-ahli
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,10.00 pagi,1000,Datuk Halimah binti Mohamed Sadique [Tenggara],"Bertenang, Ahli-ahli
 Yang Berhormat. Bertenang. Tuan Yang di-Pertua, soalan saya.
 Adakah kerajaan bercadang untuk menetapkan kuota sekurang-kurangnya
 30% produk di pasar raya seperti hypermarket dikhususkan untuk produk IKS tempatan
@@ -253,23 +253,23 @@ dan mewujudkan peraturan agar pasar raya-pasar raya besar ini menyeragamkan
 terma-terma perniagaan dengan semua IKS? Adakah kerajaan juga bercadang untuk
 mewujudkan satu akta peruncitan yang akan mengawal pasar raya yang besar ini?
 Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1000,Tuan Jelaing anak Mersat,"Terima kasih, Yang Berhormat Tenggara. Tuan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,10.00 pagi,1000,Tuan Jelaing anak Mersat,"Terima kasih, Yang Berhormat Tenggara. Tuan
 Yang di-Pertua, kementerian memang mengambil kira segala-galanya berkaitan
 dengan usaha SME kita ataupun PKS kita di Malaysia supaya mereka mengambil
 bahagian dalam perdagangan seperti ini dan mengatur segala peraturan di mana yang
 30% ataupun lebih sekiranya diperlukan untuk ruang bagi PKS kita di Malaysia.
 Sekian."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1000,Tuan Alexander Nanta Linggi [Kapit],"minta Menteri Pertahanan menyatakan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,10.00 pagi,1000,Tuan Alexander Nanta Linggi [Kapit],"minta Menteri Pertahanan menyatakan
 perjanjian-perjanjian pertahanan kita dengan negara lain di mana perjanjian-perjanjian
 ini adalah penting ke arah kestabilan dan keselamatan bukan sahaja untuk negara kita
 tetapi juga untuk seluruh rantau ini."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1000,Timbalan Menteri Pertahanan [Datuk Wira Abu Seman Yusop],"Terima
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,10.00 pagi,1000,Timbalan Menteri Pertahanan [Datuk Wira Abu Seman Yusop],"Terima
 kasih, Tuan Yang di-Pertua. Tuan Yang di-Pertua, terlebih dahulu saya ingin memohon
 untuk menjawab pertanyaan yang dikemukakan oleh Yang Berhormat Kapit pada hari
 ini bersekali dengan soalan yang dikemukakan oleh Yang Berhormat Ketereh pada 1
 Julai 2008 bagi soalan no. 91 kerana kedua-duanya adalah berkaitan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Baik.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1000,Datuk Wira Abu Seman Yusop,"Terima kasih. Malaysia memang ada
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,10.00 pagi,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Baik.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,10.00 pagi,1000,Datuk Wira Abu Seman Yusop,"Terima kasih. Malaysia memang ada
 mempunyai perjanjian pertahanan iaitu Peraturan Pertahan Lima Negara atau dengan
 izin, Five Power Defence Arrangement atau ringkasnya FPDA yang dianggotai oleh
 Malaysia, Singapura, United Kingdom, New Zealand dan Australia.
@@ -289,8 +289,8 @@ Ia sekali gus telah memantapkan lagi inter-operability di kalangan tentera
 negara-negara anggota. Selain daripada menyumbang ke arah memantapkan benteng
 pertahanan negara, FPDA juga telah dapat mempertingkatkan lagi hubungan diplomatik
 dengan negara-negara anggota."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Yang Berhormat Kapit.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1000,Tuan Alexander Nanta Linggi [Kapit],"Terima kasih, Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,10.00 pagi,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Yang Berhormat Kapit.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,10.00 pagi,1000,Tuan Alexander Nanta Linggi [Kapit],"Terima kasih, Tuan Yang di-Pertua.
 Selain daripada perjanjian yang telah diberikan dalam jawapan itu adakah perjanjian
 pertahanan lain yang merangkumi negara-negara di rantau Asia Tenggara di mana
 Malaysia juga menjadi satu parti dalam perjanjian itu. Adakah perjanjian itu, kalau ada,
@@ -303,7 +303,7 @@ cabaran dan keperluan baru yang mungkin datang dari negara-negara yang
 membangun, yang sedang membangun dengan penuh keghairahan seperti Vietnam
 dan China, negara-negara yang banyak memfokuskan perhatian mereka kepada
 kawasan territory South China Sea ini. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1000,Datuk Wira Abu Seman Yusop,"Terima kasih Tuan Yang di-Pertua. Selain
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,10.00 pagi,1000,Datuk Wira Abu Seman Yusop,"Terima kasih Tuan Yang di-Pertua. Selain
 daripada mengadakan perjanjian pertahanan seperti mana yang telah dibuat di bawah
 FPDA ini, Malaysia juga mempunyai hubungan pertahanan dua hala melalui MoU
 ataupun peraturan dengan beberapa negara.
@@ -318,14 +318,14 @@ perjanjian yang kita telah laksanakan di bawah FPDA ini akan berkuat kuasa seper
 mana yang telah saya nyatakan. Walaupun berkuat kuasa, ianya bukannya satu
 tindakan automatik yang boleh diambil tindakan. Ianya akan dibuat selepas ada
 perundingan di antara negara-negara anggota."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1000,Tuan Saifuddin Nasution bin Ismail [Machang],"Terima kasih Tuan Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,10.00 pagi,1000,Tuan Saifuddin Nasution bin Ismail [Machang],"Terima kasih Tuan Yang
 di-Pertua. Soalan tambahan. Di antara Malaysia dengan Singapura sudah tentu wujud
 juga perjanjian persefahaman tentang pertahanan. Mohon dinyatakan ada atau tidak
 peruntukan membenarkan pesawat-pesawat pejuang Singapura menggunakan ruang
 udara Malaysia untuk tujuan latihan? Jika ada, apa rasional kerajaan
 membenarkannya? Jika tidak, berapa pula kes pencerobohan ruang udara yang
 dilakukan oleh pasukan tentera udara Singapura selama ini?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1000,Datuk Wira Abu Seman Yusop,"Terima kasih Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,10.00 pagi,1000,Datuk Wira Abu Seman Yusop,"Terima kasih Tuan Yang di-Pertua.
 Berkaitan dengan perjanjian di antara Singapura dan Malaysia, seperti mana yang telah
 saya nyatakan tadi bahawa kita hanya ada secara loose arrangement melalui peraturan
 yang mana merupakan lebih kepada kerjasama dalam bidang ketenteraan. Dan ianya
@@ -333,7 +333,7 @@ tidak merangkumi berkaitan dengan penggunaan ruang udara di kawasan Malaysia
 kita, bahawa dari semasa ke semasa apabila kita dapat mengetahui berkaitan dengan
 perkara ini, kita akan berhubung dengan pihak Singapura dan membuat bantahan
 berkaitan dengan perkara ini."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1000,Dr. Mohd Hatta bin Md. Ramli [Kuala Krai],"minta Menteri Perdagangan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,10.00 pagi,1000,Dr. Mohd Hatta bin Md. Ramli [Kuala Krai],"minta Menteri Perdagangan
 Antarabangsa dan Industri menyatakan:
 (a) jumlah dagangan antara Malaysia dengan negara-negara
 OIC sepanjang tempoh Malaysia menjadi Pengerusi OIC
@@ -342,11 +342,11 @@ OIC sepanjang tempoh Malaysia menjadi Pengerusi OIC
 hubungan dagang dengan negara-negara OIC berbanding
 dengan blok-blok ekonomi lain sebagai strategi
 perdagangan antarabangsa Malaysia."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1000,Timbalan Menteri Perdagangan Antarabangsa dan Industri I [Datuk Liew Vui Keong],"Tuan Yang di-Pertua, izinkan saya menjawab soalan daripada Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,10.00 pagi,1000,Timbalan Menteri Perdagangan Antarabangsa dan Industri I [Datuk Liew Vui Keong],"Tuan Yang di-Pertua, izinkan saya menjawab soalan daripada Yang
 Berhormat Kuala Krai bersama-sama dengan soalan Yang Berhormat dari Machang
 yang telah dijadualkan pada 2 Julai."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Baik, Yang Berhormat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1000,Datuk Liew Vui Keong,"Jumlah dagangan antara Malaysia dengan negara-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,10.00 pagi,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Baik, Yang Berhormat."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,10.00 pagi,1000,Datuk Liew Vui Keong,"Jumlah dagangan antara Malaysia dengan negara-
 negara OIC sepanjang tahun 2003 hingga tahun 2008 ini ialah seperti berikut:
 Pada tahun 2003, jumlah ialah RM46.1 bilion dan jumlah tersebut telah pun
 meningkat pada tahun 2004 kepada RM61.6 bilion dan jumlah ini terus meningkat pada
@@ -371,7 +371,7 @@ perdagangan dan pelaburan ke negara UAE, Bahrain, Saudi Arabia pada bulan Mac
 tahun lalu dan ke negara UAE, Kuwait dan Oman pada tahun ini. Langkah terakhir
 diambil ialah dengan mengadakan aktiviti promosi dan seminar pelaburan. Sekian,
 terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1000,Dr. Mohd. Hatta bin Md. Ramli [Kuala Krai],"Terima kasih Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,10.00 pagi,1000,Dr. Mohd. Hatta bin Md. Ramli [Kuala Krai],"Terima kasih Tuan Yang di-
 Pertua dan terima kasih timbalan menteri. Dengan izin, ‘denge jawape’ (dengan
 jawapan) yang diberikan oleh Yang Berhormat Timbalan Menteri tadi, tentulah Dewan
 ingin mengetahui sama ada prestasi yang positif dan meningkat sepanjang tahun,
@@ -384,22 +384,22 @@ saya, Tuan Yang di-Pertua, ialah dalam suasana kegawatan ekonomi global hari ini
 juga yang akan mendatang, dengan kepelbagaian ketidaktentuan ekonomi dan juga
 serangan spekulator terhadap harga-harga barang komoditi, seperti petroleum yang
 memang kita lihat dalam dunia ini dianugerahkan kepada..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Soalannya, Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,10.00 pagi,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Soalannya, Yang
 Berhormat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1000,Beberapa Ahli,"Soalan, soalan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1000,Dr. Mohd. Hatta bin Md. Ramli [Kuala Krai],"...Negara OIC, negara umat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,10.00 pagi,1000,Beberapa Ahli,"Soalan, soalan."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,10.00 pagi,1000,Dr. Mohd. Hatta bin Md. Ramli [Kuala Krai],"...Negara OIC, negara umat
 Islam. Soalan saya..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1000,Beberapa Ahli,"Soalan, soalan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Ya.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1000,Dr. Mohd. Hatta bin Md. Ramli [Kuala Krai],"Kalau gangguan ini, kena
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,10.00 pagi,1000,Beberapa Ahli,"Soalan, soalan."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,10.00 pagi,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Ya.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,10.00 pagi,1000,Dr. Mohd. Hatta bin Md. Ramli [Kuala Krai],"Kalau gangguan ini, kena
 berdiri senyaplah. Jadi soale saya, Dewan ini ingin tahu dan saya juga ingin tahu.
 Apakah rancangan kita yang selain daripada yang disebut oleh timbalan menteri tadi
 bagi memastikan bahawa dagangan antara negara-negara OIC ini mampu membentuk
 ataupun mampu membantu dan mengurangkan serta meringankan kesan negatif
 serangan spekulator ini, khususnya dalam menjaga kita punya sektor food security,
 dengan izin, dan juga kuasa petroleum yang ada pada negara kita. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Baik.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1000,Datuk Liew Vui Keong,"Terima kasih Tuan Yang di-Pertua dengan soalan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,10.00 pagi,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Baik.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,10.00 pagi,1000,Datuk Liew Vui Keong,"Terima kasih Tuan Yang di-Pertua dengan soalan
 daripada Yang Berhormat Kuala Krai. Seperti Yang Berhormat sedia maklum, Malaysia
 baru sahaja menyerahkan jawatan pengerusinya kepada Senegal pada bulan Mac.
 Jadi apa yang akan berlaku kepada penyerahan itu dan sama ada Senegal
@@ -414,9 +414,9 @@ baru ini yang diadakan dengan globalization. Jadi program-program tersebut juga
 termasuk dengan program forbilasasi untuk pegawai-pegawai berkenaan, berkongsi
 pengetahuan di antara member country, mempromosikan organization excellent
 dengan izin, dan juga daya perdagangan Tuan Yang di-Pertua. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,10.00 pagi,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat,
 Ledang."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1000,Ir. Haji Hamim bin Samuri [Ledang],"Terima kasih Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,10.00 pagi,1000,Ir. Haji Hamim bin Samuri [Ledang],"Terima kasih Tuan Yang di-Pertua.
 Sebelum itu, ini ada amanah hendak mengucapkan selamat datang dulu kepada
 masyarakat daripada Felda Penghilir Timur bagi pihak Tenggara.
 Soalan tambahan saya ialah, oleh sebab sekarang Senegal telah pun menjadi
@@ -424,15 +424,15 @@ Pengerusi OIC, sejauh mana Malaysia yang selama ini pernah menjadi Pengerusi OIC
 dengan cemerlang bukan seperti yang didakwa oleh pihak pembangkang, boleh
 mempengaruhi Senegal untuk terus mencapai matlamat dan visi Malaysia selama ini
 sepanjang menjadi Pengerusi OIC? Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1000,Datuk Liew Vui Keong,"Terima kasih Yang Berhormat. Tuan Yang di-Pertua,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,10.00 pagi,1000,Datuk Liew Vui Keong,"Terima kasih Yang Berhormat. Tuan Yang di-Pertua,
 tidaklah dapat dinafikan lagi bahawa Malaysia akan terus memberi sokongan yang
 penuh kepada Senegal untuk menjadi Pengerusi OIC yang cemerlang, gemilang dan
 terbilang. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1000,Tuan Matulidi bin Jusoh [Dungun],"minta Menteri Pembangunan Usahawan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,10.00 pagi,1000,Tuan Matulidi bin Jusoh [Dungun],"minta Menteri Pembangunan Usahawan
 dan Koperasi menyatakan berapakah jumlah perbelanjaan yang telah dikeluarkan untuk
 membiayai latihan dan pinjaman kepada usahawan-usahawan bumiputera dan berapa
 ramai pula bilangan usahawan yang berjaya membuat bayaran balik dan sebaliknya."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1000,Menteri Pembangunan Usahawan dan Koperasi [Dato' Haji Noh bin Haji Omar],"Terima kasih Tuan Yang di-Pertua. Bagi merealisasikan sasaran kementerian
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,10.00 pagi,1000,Menteri Pembangunan Usahawan dan Koperasi [Dato' Haji Noh bin Haji Omar],"Terima kasih Tuan Yang di-Pertua. Bagi merealisasikan sasaran kementerian
 dalam Rancangan Malaysia Kesembilan iaitu mewujudkan 150,000 usahawan baru dan
 memantapkan 25,000 usahawan sedia ada, MECD melalui INSKEN dan juga agensi-
 agensi di bawahnya seperti MARA, TEKUN, Bank Rakyat dan SME Bank telah
@@ -449,16 +449,16 @@ Daripada jumlah pinjaman yang telah diluluskan, seramai 39,413 orang
 peminjam masih gagal menjelaskan pembiayaan pinjaman mengikut jadual berjumlah
 RM0.64 bilion. Sejumlah RM4.66 bilion merupakan jumlah pinjaman dikeluarkan yang
 sedang dikutip daripada 69,317 peminjam pada masa kini. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat bagi
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,10.00 pagi,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat bagi
 Dungun."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1000,Tuan Matulidi bin Jusoh [Dungun],"Terima kasih Yang Berhormat Tuan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,10.00 pagi,1000,Tuan Matulidi bin Jusoh [Dungun],"Terima kasih Yang Berhormat Tuan
 Yang di-Pertua dan Yang Berhormat Menteri. Soalan tambahan, apakah langkah-
 langkah kementerian dalam membentuk jaringan antara usahawan-usahawan
 bumiputera supaya lebih mantap dan berdaya saing sehingga ke peringkat global?
 Kedua, adakah kementerian bercadang untuk menganjurkan satu konvensyen
 usahawan bumiputera peringkat nasional sebagai usaha untuk memperkasa program
 pembangunan usahawan bumiputera? Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1000,Dato' Haji Noh bin Haji Omar,"Terima kasih Yang Berhormat. Untuk kita
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,10.00 pagi,1000,Dato' Haji Noh bin Haji Omar,"Terima kasih Yang Berhormat. Untuk kita
 meramaikan usahawan-usahawan bumiputera di peringkat global, MECD akan
 menganjurkan program gerak usahawan. Dalam program gerak usahawan ini, bukan
 sahaja kita akan mempamerkan ekspo-ekspo, tetapi juga kita akan mengadakan
@@ -473,9 +473,9 @@ untuk mengadakan perjumpaan dan mengadakan seminar bersama-sama dengan
 usahawan-usahawan bumiputera di dalam negara. Dengan adanya pertemuan di
 antara usahawan bumiputera dan juga di luar negara, kita harap jaringan perniagaan
 usahawan bumiputera akan dapat kita tingkatkan di peringkat global. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat Kota
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,10.00 pagi,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat Kota
 Raja."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1000,Dr. Siti Mariah binti Mahmud [Kota Raja],"Terima kasih Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,10.00 pagi,1000,Dr. Siti Mariah binti Mahmud [Kota Raja],"Terima kasih Tuan Yang di-
 Pertua. Soalan tambahan saya ialah, apakah ada skim-skim yang sama untuk
 membiayai latihan dan pinjaman kepada usahawan-usahawan bukan bumiputera
 terutamanya kaum India. Jika ada apakah skim-skim tersebut dan setakat ini berapa
@@ -484,7 +484,7 @@ tidak ada, adakah kementerian atau kerajaan bercadang untuk mewujudkan dana atau
 skim untuk golongan ini?
 Yang Berhormat, kawasan saya mempunyai 28% kaum India dan ramai di
 antara mereka di bawah kategori yang memerlukan pertolongan. Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1000,Dato' Haji Noh bin Haji Omar,"Terima kasih Yang Berhormat Kota Raja yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,10.00 pagi,1000,Dato' Haji Noh bin Haji Omar,"Terima kasih Yang Berhormat Kota Raja yang
 menjadi jurucakap kepada golongan bumiputera. Jurucakap kepada golongan
 bumiputera selalunya Ipoh Barat yang akan tanya soalan ini. Hari ini tahniahlah, Kota
 Raja yang tolong tanya soalan ini.
@@ -511,76 +511,76 @@ memperjuangkan hak setiap rakyat Malaysia. [Tepuk]
 Jadi kalau ada dakwaan yang mengatakan kita tidak membela nasib bukan
 bumiputera ini ialah hanya isu-isu politik murahan yang hari ini dibawa oleh
 pembangkang. [Tepuk]"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1000,Tuan M. Kula Segaran [Ipoh Barat],Ini politik Barisan Nasional.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1000,Dato' Haji Noh bin Haji Omar,"Sebab itulah kita lihat wakil daripada Kota
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,10.00 pagi,1000,Tuan M. Kula Segaran [Ipoh Barat],Ini politik Barisan Nasional.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,10.00 pagi,1000,Dato' Haji Noh bin Haji Omar,"Sebab itulah kita lihat wakil daripada Kota
 Raja pun ingin menjadi jaguh kepada orang bukan bumiputera. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1000,Dr. Haji Mohd. Hayati bin Othman [Pendang],Sampai ke bawah berapa?
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Yang Berhormat...
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1000,Tuan Haji Khalid bin Abd. Samad [Shah Alam],"Point of order, point of
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,10.00 pagi,1000,Dr. Haji Mohd. Hayati bin Othman [Pendang],Sampai ke bawah berapa?
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,10.00 pagi,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Yang Berhormat...
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,10.00 pagi,1000,Tuan Haji Khalid bin Abd. Samad [Shah Alam],"Point of order, point of
 order."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Tuan M. Manogaran.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1000,Dr. Haji Mohd. Hayati bin Othman [Pendang],Sampai ke bawah berapa?
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1000,Tuan Haji Khalid bin Abd. Samad [Shah Alam],"Point of order. Tuan Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,10.00 pagi,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Tuan M. Manogaran.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,10.00 pagi,1000,Dr. Haji Mohd. Hayati bin Othman [Pendang],Sampai ke bawah berapa?
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,10.00 pagi,1000,Tuan Haji Khalid bin Abd. Samad [Shah Alam],"Point of order. Tuan Yang
 di-Pertua, point of order."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Point of order berapa
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,10.00 pagi,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Point of order berapa
 Yang Berhormat?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1000,Tuan Haji Khalid bin Abd. Samad [Shah Alam],36(12).
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"36(12) menyeleweng
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,10.00 pagi,1000,Tuan Haji Khalid bin Abd. Samad [Shah Alam],36(12).
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,10.00 pagi,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"36(12) menyeleweng
 Dewan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1000,Tuan Haji Khalid bin Abd. Samad [Shah Alam],"Ya, pasal hendak jadi
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,10.00 pagi,1000,Tuan Haji Khalid bin Abd. Samad [Shah Alam],"Ya, pasal hendak jadi
 champion."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Tak ada Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,10.00 pagi,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Tak ada Yang
 Berhormat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1000,Tuan Haji Khalid bin Abd. Samad [Shah Alam],"Kita dalam PAS ini kita tak
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,10.00 pagi,1000,Tuan Haji Khalid bin Abd. Samad [Shah Alam],"Kita dalam PAS ini kita tak
 tengok kaum. Kita tengok keadilan..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Baik Yang Berhormat.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1000,Tuan Haji Khalid bin Abd. Samad [Shah Alam],Kita mewakili...
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Cukuplah Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,10.00 pagi,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Baik Yang Berhormat.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,10.00 pagi,1000,Tuan Haji Khalid bin Abd. Samad [Shah Alam],Kita mewakili...
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,10.00 pagi,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Cukuplah Yang
 Berhormat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1000,Tuan Haji Khalid bin Abd. Samad [Shah Alam],Kita mewakili...
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1000,Dr. Haji Mohd. Puad Zarkashi [Batu Pahat],Itu bukan point of order.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1000,Tuan Haji Khalid bin Abd. Samad [Shah Alam],"...Setiap kaum. Ini
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,10.00 pagi,1000,Tuan Haji Khalid bin Abd. Samad [Shah Alam],Kita mewakili...
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,10.00 pagi,1000,Dr. Haji Mohd. Puad Zarkashi [Batu Pahat],Itu bukan point of order.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,10.00 pagi,1000,Tuan Haji Khalid bin Abd. Samad [Shah Alam],"...Setiap kaum. Ini
 perjuangan kita. Lalu tuduhan..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Cukup Yang Berhormat.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1000,Tuan Haji Khalid bin Abd. Samad [Shah Alam],"...Seperti itu yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,10.00 pagi,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Cukup Yang Berhormat.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,10.00 pagi,1000,Tuan Haji Khalid bin Abd. Samad [Shah Alam],"...Seperti itu yang
 mengatakan kita hendak jadi jaguh dan sebagainya adalah..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat cukup
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,10.00 pagi,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat cukup
 Yang Berhormat. Saya sudah dengar ucapan Yang Berhormat tadi."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1000,Tuan Haji Khalid bin Abd. Samad [Shah Alam],"...Satu tindakan yang tidak
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,10.00 pagi,1000,Tuan Haji Khalid bin Abd. Samad [Shah Alam],"...Satu tindakan yang tidak
 bertanggungjawab dan berbau perkauman Tuan Yang di-Pertua. Minta maaf Tuan
 Yang di-Pertua. [Tepuk] Tarik balik."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Saya tidak melihat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,10.00 pagi,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Saya tidak melihat
 sebarang pelanggaran terhadap Peraturan 36(12). Saya jemput Yang Berhormat..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1000,Dato' Haji Noh bin Haji Omar,"Tuan Yang di-Pertua, 36(6). Saya minta..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1000,Tuan M. Kula Segaran [Ipoh Barat],Cukuplah! Cukuplah!
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1000,Tuan Fong Kui Lun [Bukit Bintang],Duduklah!
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1000,Tuan Chua Tian Chang [Batu],Point of order.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1000,Dato' Haji Noh bin Haji Omar,Ini peraturan mesyuarat tak fahamkah?
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1000,Tuan M. Kula Segaran [Ipoh Barat],Peraturan apa?
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1000,Dato' Haji Noh bin Haji Omar,"Tentang peraturan. Duduklah! Duduklah ini
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,10.00 pagi,1000,Dato' Haji Noh bin Haji Omar,"Tuan Yang di-Pertua, 36(6). Saya minta..."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,10.00 pagi,1000,Tuan M. Kula Segaran [Ipoh Barat],Cukuplah! Cukuplah!
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,10.00 pagi,1000,Tuan Fong Kui Lun [Bukit Bintang],Duduklah!
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,10.00 pagi,1000,Tuan Chua Tian Chang [Batu],Point of order.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,10.00 pagi,1000,Dato' Haji Noh bin Haji Omar,Ini peraturan mesyuarat tak fahamkah?
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,10.00 pagi,1000,Tuan M. Kula Segaran [Ipoh Barat],Peraturan apa?
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,10.00 pagi,1000,Dato' Haji Noh bin Haji Omar,"Tentang peraturan. Duduklah! Duduklah ini
 peraturan mesyuarat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Ya, sila, sila Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,10.00 pagi,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Ya, sila, sila Yang
 Berhormat Menteri."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1000,Dato' Haji Noh bin Haji Omar,"Tak tahu peraturankah? 36(6). Dia berniat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,10.00 pagi,1000,Dato' Haji Noh bin Haji Omar,"Tak tahu peraturankah? 36(6). Dia berniat
 jahat dengan saya mengatakan saya bercakap soal perkauman. Saya minta tarik balik
 tuduhan ini. [Tepuk] Saya cakap perkara betul. Ini satu niat jahat sebab Kerajaan
 Barisan Nasional bukan kerajaan yang mengamalkan perkauman tidak seperti
 pembangkang. [Dewan riuh] Tuduhan diberi..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1000,Dr. Haji Mohd. Puad Zarkashi [Batu Pahat],Tarik balik!
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1000,Tuan M. Kula Segaran [Ipoh Barat],Parti UMNO...
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1000,Dato' Haji Noh bin Haji Omar,"Ini maruah saya Tuan Yang di-Pertua, sebab
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,10.00 pagi,1000,Dr. Haji Mohd. Puad Zarkashi [Batu Pahat],Tarik balik!
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,10.00 pagi,1000,Tuan M. Kula Segaran [Ipoh Barat],Parti UMNO...
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,10.00 pagi,1000,Dato' Haji Noh bin Haji Omar,"Ini maruah saya Tuan Yang di-Pertua, sebab
 dalam kawasan ada juga pengundi bukan Melayu."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1000,Tuan M. Kula Segaran [Ipoh Barat],UMNO bukan parti racist.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1000,Dato' Haji Noh bin Haji Omar,Ini tuduhan jahat 36(6).
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Baik Yang Berhormat.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,10.00 pagi,1000,Tuan M. Kula Segaran [Ipoh Barat],UMNO bukan parti racist.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,10.00 pagi,1000,Dato' Haji Noh bin Haji Omar,Ini tuduhan jahat 36(6).
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,10.00 pagi,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Baik Yang Berhormat.
 Ahli-ahli Yang Berhormat..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1000,Tuan Haji Khalid bin Abd. Samad [Shah Alam],"Saya rasa kalau Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,10.00 pagi,1000,Tuan Haji Khalid bin Abd. Samad [Shah Alam],"Saya rasa kalau Yang
 Berhormat..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Sila duduk Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,10.00 pagi,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Sila duduk Yang
 Berhormat Shah Alam. Saya tidak melihat juga sebarang pelanggaran. Itu merupakan
 respons daripada Yang Berhormat Shah Alam kepada jawapan yang diberi oleh
 menteri. Jadi Yang Berhormat saya jemput sekali lagi Tuan M. Manogaran."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1000,Tuan M. Manogaran [Telok Intan],"minta Menteri Sains, Teknologi dan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,10.00 pagi,1000,Tuan M. Manogaran [Telok Intan],"minta Menteri Sains, Teknologi dan
 Inovasi menyatakan:
 (a) berapakah peruntukan yang diagihkan kepada kajian sains
 biologi termasuk biomedik, farmaseutikal (pharmaceuticals)
@@ -590,7 +590,7 @@ sebagai pentas (platform) menghasilkan produk kajian sains.
 Adakah kerajaan berniat meningkatkan saingan dalam
 bidang sains dengan mewujudkan sebuah pusat bagi kajian
 saintifik."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1000,"Menteri Sains, Teknologi dan Inovasi [Datuk Dr. Maximus Johnity Ongkili]","Tuan Yang di-Pertua, terima kasih. Kita cerita sebentar mengenai
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,10.00 pagi,1000,"Menteri Sains, Teknologi dan Inovasi [Datuk Dr. Maximus Johnity Ongkili]","Tuan Yang di-Pertua, terima kasih. Kita cerita sebentar mengenai
 bioteknologi yang neutral daripada politik dan yang banyak Kerajaan Barisan Nasional
 telah pun melaksanakan.
 Tuan Yang di-Pertua, untuk makluman Ahli-ahli Yang Berhormat peruntukan
@@ -634,14 +634,14 @@ berasaskan pengetahuan. Kerajaan pada masa ini sebenarnya tidak perlu
 membangunkan sebuah pusat kajian saintifik kerana kerajaan sebenarnya telah
 membangunkan tiga buah institut khusus bagi tujuan bioteknologi seperti mana yang
 dinyatakan tadi. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1000,Tuan M. Manogaran [Telok Intan],"Terima kasih Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,10.00 pagi,1000,Tuan M. Manogaran [Telok Intan],"Terima kasih Tuan Yang di-Pertua.
 Soalan tambahan saya. Mengapakah negara kita berbanding dengan negara jiran iaitu
 Singapura selalu ketinggalan dalam bidang bioteknologi khususnya biosains,
 biomedicine, dan biopolis dan seumpamanya? Adakah ini disebabkan oleh saintis-
 saintis yang kita ada pada masa ini tidak ada kemampuan atau kemahiran ataupun
 taraf pendidikan pengajian tinggi kita selalu ketinggalan berbanding dengan Singapura?
 Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1000,Datuk Dr. Maximus Johnity Ongkili,"Tuan Yang di-Pertua, sebenarnya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,10.00 pagi,1000,Datuk Dr. Maximus Johnity Ongkili,"Tuan Yang di-Pertua, sebenarnya
 komen tersebut itu tidak betul. Seperti mana yang saya sentuh tadi dalam bidang
 bioteknologi kita mendahului banyak negara-negara lain dirantau ini dan tak payahlah
 kita hendak tiru negara-negara jiran dari cara-cara mereka menerajui biang bioteknologi
@@ -654,13 +654,13 @@ perjanjian MoU dan bernilai RM1 bilion. Ini mencerminkan bahawa kemajuan kita da
 bidang ini lebih sebenarnya mendahului daripada negara-negara lain dirantau ini
 khususnya kekuatan-kekuatan kita dalam bidang agriculture bioteknologi dan
 biodiversiti. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1000,Tuan Khairy Jamaluddin Abu Bakar [Rembau],"Terima kasih Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,10.00 pagi,1000,Tuan Khairy Jamaluddin Abu Bakar [Rembau],"Terima kasih Tuan Yang di-
 Pertua. Memang wajar kita memajukan lagi bidang penyelidikan khususnya dalam
 bidang bioteknologi ini, tetapi daripada tahun 1990 hingga tahun 2005 hanya 17 paten
 baru dihasilkan. Soalan saya ialah, apakah usaha-usaha kerajaan untuk meningkatkan
 paten tempatan sedangkan kita ada banyak sumber asli? Saya khuatir paten untuk flora
 dan fauna kita dibuat oleh saintis asing dan bukan oleh saintis tempatan. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1000,Datuk Dr. Maximus Johnity Ongkili,"Tuan Yang di-Pertua, sememangnya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,10.00 pagi,1000,Datuk Dr. Maximus Johnity Ongkili,"Tuan Yang di-Pertua, sememangnya
 itulah antara milestone dengan izin, yang ditetapkan dalam dasar bioteknologi negara
 kita supaya pencapaian-pencapaian dalam bidang pengeluaran paten itu terus
 meningkat. Akan tetapi untuk membetulkan maklumat tadi, bagi paten-paten setakat
@@ -674,10 +674,10 @@ diterjemahkan bukan sahaja kepada produk dan hasil inovasi yang seperti
 dirancangkan, tetapi boleh diterjemahkan kepada paten-paten. Ini akan terus menjadi
 sasaran untuk mid-term yang dicapai oleh kementerian dalam Kajian Separuh Penggal
 Rancangan Malaysia Ke-9. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1000,Dato’ Seri Ong Ka Ting [Kulai],"minta Perdana Menteri menyatakan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,10.00 pagi,1000,Dato’ Seri Ong Ka Ting [Kulai],"minta Perdana Menteri menyatakan
 perangkaan Keluaran Dalam Negeri Kasar (KDNK) dan pertumbuhan KDNK bagi setiap
 negeri dalam Malaysia dari tahun 2004 sehingga 2008."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1000,Timbalan Menteri di Jabatan Perdana Menteri [Tuan S.K. Devamany],"Tuan Yang di-Pertua, ekonomi Malaysia telah mencatat pertumbuhan yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,10.00 pagi,1000,Timbalan Menteri di Jabatan Perdana Menteri [Tuan S.K. Devamany],"Tuan Yang di-Pertua, ekonomi Malaysia telah mencatat pertumbuhan yang
 menggalakkan dari tahun 2004 hingga 2008. Keluaran Dalam Negeri Kasar (KDNK)
 telah berkembang pada kadar purata 6%.
 Bagi tempoh 2004 sehingga 2007 iaitu:
@@ -723,8 +723,8 @@ hingga 2007 adalah seperti berikut:
 |      Sabah      |  4.2%  |
 |     Sarawak     |  3.9%  |
 Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Yang Berhormat Kulai.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1000,Dato' Seri Ong Ka Ting [Kulai],"Terima kasih Yang Berhormat Timbalan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,10.00 pagi,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Yang Berhormat Kulai.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,10.00 pagi,1000,Dato' Seri Ong Ka Ting [Kulai],"Terima kasih Yang Berhormat Timbalan
 Menteri. Nampaknya memang benar bahawa tidak ada angka yang sedia ada yang
 dimiliki oleh kerajaan tentang perangkaan Keluaran Dalam Negeri Kasar (KDNK) setiap
 negeri tetapi telah dapat jawab bahawa UPE telah mula untuk berusaha.
@@ -740,8 +740,8 @@ Jadi saya ingin bertanya, sama ada Jabatan Perdana Menteri telah pun ada
 rancangan supaya pembangunan ekonomi yang bersepadu itu akan membawa kepada
 akhirnya jumlah KDNK sebenar bagi setiap negeri dan sumbangan KDNK setiap negeri
 itu akan dijadikan sebahagian daripada gambaran yang menyeluruh?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Baik.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1000,Tuan S.K. Devamany,"Terima kasih Yang Berhormat. Tuan Yang di-Pertua,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,10.00 pagi,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Baik.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,10.00 pagi,1000,Tuan S.K. Devamany,"Terima kasih Yang Berhormat. Tuan Yang di-Pertua,
 unjuran KDNK untuk setiap negeri yang kemudiannya akan memberi kesan terhadap
 KDNK negara, tetap menjadi fokus UPE dan juga kerajaan.
 Mungkin untuk makluman Yang Berhormat, untuk 2008, pertumbuhan KDNK
@@ -750,9 +750,9 @@ Malaysia Ke-9 nanti. Perdana Menteri akan membentangkan Kajian Separuh Penggal
 ini, akan memberitahu segala langkah-langkah yang akan memberi kesan terhadap
 KDNK nanti. Perbelanjaan tambahan kerajaan juga akan diumumkan nanti. So, kita
 tunggulah sehingga pengumuman daripada Perdana Menteri. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Baik, Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,10.00 pagi,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Baik, Yang Berhormat
 Pendang."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1000,Dr. Haji Mohd. Hayati bin Othman [Pendang],"Terima kasih Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,10.00 pagi,1000,Dr. Haji Mohd. Hayati bin Othman [Pendang],"Terima kasih Tuan Yang di-
 Pertua, sambungan kepada soalan tambahan kepada Yang Berhormat Kulai tadi, saya
 ingin bertanya.
 Untuk meningkatkan KDNK di sebelah utara adalah kerajaan telah
@@ -760,20 +760,20 @@ melancarkan NCER. Pelancaran sahaja berjumlah RM10.9 juta. Jadi saya ingin tanya
 Setakat ini setelah dua tahun dilancarkan, apakah program-program yang telah
 dijalankan di sebelah negeri-negeri utara ini yang dalam usaha untuk meningkatkan
 KDNK di negeri utara ini..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Baik.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1000,Dr. Haji Mohd. Hayati bin Othman [Pendang],"...Yang telah dijalankan.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,10.00 pagi,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Baik.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,10.00 pagi,1000,Dr. Haji Mohd. Hayati bin Othman [Pendang],"...Yang telah dijalankan.
 Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1000,Tuan S.K. Devamany,"Terima kasih Yang Berhormat. Untuk makluman Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,10.00 pagi,1000,Tuan S.K. Devamany,"Terima kasih Yang Berhormat. Untuk makluman Yang
 Berhormat, pembangunan koridor telah memberi fokus kepada sektor-sektor yang
 mempunyai kekuatan di kawasan masing-masing. Contohnya di utara itu, fokus
 kerajaan dalam pembangunan koridor adalah pertanian maka banyak program-program
 pertanian dan pembangunan sokongan seperti INFRA yang akan memberi sokongan
 kepada pembangunan pertanian itu. Maka saya akan memberi jawapan secara bertulis
 kerana terlalu banyak untuk dibutirkan di sini. Terima kasih Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,10.,,1000,Dato’ Ibrahim Ali [Pasir Mas],"minta Menteri Pengajian Tinggi menyatakan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,10.,,10.00 pagi,1000,Dato’ Ibrahim Ali [Pasir Mas],"minta Menteri Pengajian Tinggi menyatakan
 skop Universiti Kelantan dan cadangan pembangunan fizikal serta kursus-kursus yang
 akan ditawarkan serta pengambilan jumlah pelajar sehingga tahun 2020."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,10.,,1000,Timbalan Menteri Pengajian Tinggi I [Datuk Ir. Haji Idris bin Haji Haron],"Terima kasih Tuan Yang di-Pertua, terima kasih Yang Berhormat Pasir Mas. Untuk
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,10.,,10.00 pagi,1000,Timbalan Menteri Pengajian Tinggi I [Datuk Ir. Haji Idris bin Haji Haron],"Terima kasih Tuan Yang di-Pertua, terima kasih Yang Berhormat Pasir Mas. Untuk
 makluman Ahli Yang Berhormat, skop ataupun tumpuan khusus niche area Universiti
 Malaysia Kelantan adalah keusahawanan dalam bidang sains gunaan, sastera, ikhtisas
 dan kemanusiaan. Subjek keusahawanan yang diajar adalah merentasi setiap program
@@ -796,7 +796,7 @@ UMK juga mensasarkan 60% tenaga pengajar di universiti ini mempunyai
 kelayakan Ph.D pada 2010 dan 75% insya-Allah pada tahun 2020. Yang Berhormat,
 sasaran ini adalah selaras dan telah dimasukkan kesemuanya di dalam Pelan Strategik
 Pengajian Tinggi Negara yang dilancarkan pada tahun 2007 yang lalu. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,10.,,1000,Dato’ Ibrahim Ali [Pasir Mas],"Terima kasih Tuan Yang di-Pertua. Saya ingin
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,10.,,10.00 pagi,1000,Dato’ Ibrahim Ali [Pasir Mas],"Terima kasih Tuan Yang di-Pertua. Saya ingin
 bertanya. Pertama, berdasarkan kursus-kursus yang disebutkan tadi, saya agak
 terperanjat kerana tidak ada kursus-kursus dalam bidang pengajian agama. Yang saya
 hendak tanya, apakah terdapat dalam senarai penawaran kursus pengajian seperti
@@ -812,11 +812,11 @@ hendak tanya, apakah kerajaan bercadang untuk melebarkan lagi cawangan kampus
 supaya meliputi semua daerah, yang juga boleh membantu pembangunan termasuklah
 kita katakan dalam bidang pengajian agama tadi, kawasan Kubang Kerian,
 Perhutanan, Kuala Krai dan Jeli contohnya..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,10.,,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Baik Yang Berhormat.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,10.,,1000,Dato’ Ibrahim Ali [Pasir Mas],"...Dan Pasir Mas pengajian good governance,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,10.,,10.00 pagi,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Baik Yang Berhormat.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,10.,,10.00 pagi,1000,Dato’ Ibrahim Ali [Pasir Mas],"...Dan Pasir Mas pengajian good governance,
 transparency, bersih, cekap dan amanah supaya kawasan ini, fakulti ini lebih baik
 daripada Oxford dan Cambridge University. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,10.,,1000,Datuk Ir. Haji Idris bin Haji Haron,"Terima kasih Tuan Yang di-Pertua, terima
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,10.,,10.00 pagi,1000,Datuk Ir. Haji Idris bin Haji Haron,"Terima kasih Tuan Yang di-Pertua, terima
 kasih Yang Berhormat Pasir Mas. Saya yakin Kementerian Pengajian Tinggi memang
 sentiasa bergerak untuk melahirkan universiti-universiti, IPTA-IPTA bertaraf lebih baik
 daripada Oxford dan Cambridge.
@@ -841,24 +841,24 @@ dan telah pun diiktiraf oleh menteri besar baru-baru ini dalam akhbar.
 Antaranya Universiti Malaysia Kelantan, yang kampusnya terdapat di tiga
 tapak tadi. UiTM Cawangan Machang, USM Kubang Kerian, Universiti Malaya Nilam
 Puri, politeknik dan banyak lagi komuniti-komuniti kolej yang telah disediakan oleh KPT."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,10.,,1000,Dato’ Ibrahim Ali [Pasir Mas],Pasir Mas tidak ada? Pasir Mas tidak ada?
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,10.,,1000,Datuk Ir. Haji Idris bin Haji Haron,"Cadangan Yang Berhormat tadi boleh kita
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,10.,,10.00 pagi,1000,Dato’ Ibrahim Ali [Pasir Mas],Pasir Mas tidak ada? Pasir Mas tidak ada?
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,10.,,10.00 pagi,1000,Datuk Ir. Haji Idris bin Haji Haron,"Cadangan Yang Berhormat tadi boleh kita
 ambil kira mengikut kehendak dan keperluan semasa nanti. Terima kasih Tuan Yang
 di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,10.,,1000,Tuan Ahmad Maslan [Pontian],"Berapakah peratusan pelajar Kelantan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,10.,,10.00 pagi,1000,Tuan Ahmad Maslan [Pontian],"Berapakah peratusan pelajar Kelantan
 dibandingkan pelajar luar Kelantan sekarang ini di UMK? Bagaimana dasar untuk
 menerima pelajar dari selatan Thailand untuk memasuki UMK? Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,10.,,1000,Datuk Ir. Haji Idris bin Haji Haron,"Untuk makluman Yang Berhormat,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,10.,,10.00 pagi,1000,Datuk Ir. Haji Idris bin Haji Haron,"Untuk makluman Yang Berhormat,
 peratusan pelajar Kelantan, saya tidak ada angkanya pada ketika ini. Namun begitu,
 saya percaya saya boleh bekalkan Yang Berhormat angka tersebut.
 Untuk menerima pelajar-pelajar dari selatan Thailand, ia sesuai dengan hasrat
 kementerian, iaitu untuk menyediakan 15% ruang kepada pelajar-pelajar antarabangsa
 apabila universiti ini siap dibina kelak. Terima kasih Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,11.,,1000,Tuan Liang Teck Meng [Simpang Renggam],"minta Menteri Pembangunan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,11.,,10.00 pagi,1000,Tuan Liang Teck Meng [Simpang Renggam],"minta Menteri Pembangunan
 Usahawan dan Koperasi menyatakan tempoh semakan menamatkan pemegang-
 pemegang lesen Kelas F yang tidak aktif dan membuka permohonan semula lesen
 Kelas F kepada kontraktor-kontraktor baru."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,11.,,1000,Menteri Pembangunan Usahawan dan Koperasi [Dato' Haji Noh bin Haji Omar],"Terima kasih Tuan Yang di-Pertua. Kerajaan telah membekukan pendaftaran
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,11.,,10.00 pagi,1000,Menteri Pembangunan Usahawan dan Koperasi [Dato' Haji Noh bin Haji Omar],"Terima kasih Tuan Yang di-Pertua. Kerajaan telah membekukan pendaftaran
 kontraktor Kelas F mulai 8 April 2005. Ini adalah kerana bilangan kontraktor Kelas F
 yang berdaftar adalah melebihi peluang-peluang kerja yang boleh diberikan oleh
 kerajaan. Sehingga 12 Jun 2008, bilangan kontraktor Kelas F yang masih berdaftar
@@ -872,12 +872,12 @@ kementerian sedang mengkaji keberkesanan dasar pembekuan tersebut dan akan
 membukanya pada masa yang sesuai nanti.
 Walau bagaimanapun, kontraktor-kontraktor baru tidak dilarang untuk
 mendaftar di dalam mana-mana kelas sama ada Kelas E, D, C, B atau A. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,11.,,1000,Tuan Liang Teck Meng [Simpang Renggam],"Terima kasih. Soalan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,11.,,10.00 pagi,1000,Tuan Liang Teck Meng [Simpang Renggam],"Terima kasih. Soalan
 tambahan saya ialah, apakah kriteria-kriteria semakan yang diambil oleh kementerian
 bagi menentukan sama ada kontraktor itu aktif atau tidak, memandangkan bilangan
 kontraktor yang berdaftar masih begitu tinggi? Nampaknya matlamat pembekuan ini
 masih tidak tercapai selama tiga tahun ini. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,11.,,1000,Dato' Haji Noh bin Haji Omar,"Terima kasih Yang Berhormat. Antara kriteria
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,11.,,10.00 pagi,1000,Dato' Haji Noh bin Haji Omar,"Terima kasih Yang Berhormat. Antara kriteria
 yang kita ambil ialah ada kontraktor Kelas F, dia tidak memohon pembaharuan
 langsung dan ini melibatkan 3,317 kontraktor. Ada juga di antara mereka yang
 dikenakan tindakan tatatertib seperti mensubkontrakkan ataupun memberikan kepada
@@ -889,20 +889,20 @@ yang dianjurkan oleh PKK khas untuk kontraktor Kelas F, mereka tidak menghadirka
 diri. Semuanya ini menunjukkan bahawa mereka ini tidak lagi berminat untuk menjadi
 kontraktor Kelas F dan sebab-sebab itulah maka pendaftaran mereka dibatalkan.
 Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,11.,,1000,Datuk Bung Moktar bin Radin [Kinabatangan],"Terima kasih Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,11.,,10.00 pagi,1000,Datuk Bung Moktar bin Radin [Kinabatangan],"Terima kasih Tuan Yang di-
 Pertua, Yang Berhormat Menteri. Apakah program yang dirancang oleh kementerian
 untuk mengangkat martabat kontraktor Kelas F ini. Contohnya tahun ini, berapa
 sasaran kumpulan kontraktor Kelas F dikeluarkan daripada status F menjadi naik
 grednya? Sebab kontraktor Kelas F ini tidak boleh dibiarkan bersendirian. Mereka tidak
 boleh mencari makan dengan beribu-ribu Kelas F ini, tetapi peluang kontrak itu kurang.
 Jadi seolah-olah kita membiarkan mereka berenang dalam kolam yang besar..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,11.,,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Baik Yang Berhormat.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,11.,,1000,Datuk Bung Moktar bin Radin [Kinabatangan],"...Jadi saya percaya dengan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,11.,,10.00 pagi,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Baik Yang Berhormat.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,11.,,10.00 pagi,1000,Datuk Bung Moktar bin Radin [Kinabatangan],"...Jadi saya percaya dengan
 kebijaksanaan Yang Berhormat Menteri, walaupun baru menerajui kementerian ini,
 saya berkeyakinan Yang Berhormat ada satu pendekatan ataupun strategi ke arah
 bagaimana mengangkat martabat kontraktor Kelas F ini menjadi kontraktor yang
 berwibawa."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,11.,,1000,Dato' Haji Noh bin Haji Omar,"Terima kasih Yang Berhormat. Sebab itu saya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,11.,,10.00 pagi,1000,Dato' Haji Noh bin Haji Omar,"Terima kasih Yang Berhormat. Sebab itu saya
 nyatakan tadi bahawa langkah pertama kita, kita hendak pastikan bahawa mereka yang
 benar-benar berminat, mereka yang benar-benar ada kualiti untuk kekal sebagai
 kontraktor Kelas F. Kalau kita lihat dalam tempoh pembekuan tahun 2005 sehingga
@@ -921,11 +921,11 @@ ramai.
 Jadi, dalam kajian kita pun, kita dapati bahawa sepatutnya di dalam negara
 kita Kelas F ini mestilah berada di bawah 20,000 orang sahaja berdasarkan kepada
 peruntukan dalam RMK-9 yang diluluskan oleh Dewan yang mulia ini. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,1000,Tuan Haji Taib Azamudden bin Md. Taib [Baling],"minta Menteri Pertanian
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,10.00 pagi,1000,Tuan Haji Taib Azamudden bin Md. Taib [Baling],"minta Menteri Pertanian
 dan Industri Asas Tani menyatakan berapa jumlah tanah-tanah pertanian terbiar yang
 didapati di seluruh negeri di Semenanjung dan nyatakan tanah-tanah pertanian yang
 ditukar syarat kepada tanah pembangunan dan perumahan di negeri-negeri tersebut."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,1000,Timbalan Menteri Pertanian dan Industri Asas Tani [Datuk Hajah Rohani binti Haji Abdul Karim],"Tuan Yang di-Pertua, tanah terbiar ditakrifkan sebagai tanah
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,10.00 pagi,1000,Timbalan Menteri Pertanian dan Industri Asas Tani [Datuk Hajah Rohani binti Haji Abdul Karim],"Tuan Yang di-Pertua, tanah terbiar ditakrifkan sebagai tanah
 milik yang tidak diusahakan selama dua tahun berturut-turut. Tanah terbiar ini
 kebanyakannya adalah tanah bekas sawah yang tidak lagi diusahakan disebabkan
 kekurangan infrastruktur pengairan dan saliran dan di samping pemilik yang telah tua,
@@ -947,7 +947,7 @@ pertanian dengan peruntukan berjumlah RM30 juta.
 Di bawah Pelan Dasar Jaminan Bekalan Makanan iaitu dari tahun 2008
 sehingga tahun 2010, sejumlah RM48 juta telah diperuntukkan untuk membangunkan
 tanah terbiar di seluruh negara. Terima kasih"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,1000,Tuan Haji Taib Azamudden bin Md. Taib [Baling],"Terima kasih Tuan Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,10.00 pagi,1000,Tuan Haji Taib Azamudden bin Md. Taib [Baling],"Terima kasih Tuan Yang
 di-Pertua dan terima kasih kepada Yang Berhormat Menteri. Ekoran daripada
 penjelasan yang telah diberikan tadi, jumlah tanah terbiar yang berpotensi untuk
 dibangunkan lebih daripada 12,000 hektar.
@@ -965,7 +965,7 @@ tanah jelapang padi yang sedia ada sebagaimana di Kedah, Selangor dan negeri-
 negeri lain di Semenanjung supaya tanah-tanah jelapang padi ini tidak terhakis begitu
 berleluasa dengan projek-projek pembangunan dan juga perumahan, misalnya?
 Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,1000,Datuk Hajah Rohani binti Haji Abdul Karim,"Terima kasih Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,10.00 pagi,1000,Datuk Hajah Rohani binti Haji Abdul Karim,"Terima kasih Yang Berhormat
 dari Baling. Yang Berhormat sungguh baik sekali. Semua cadangan Yang Berhormat itu
 dan sebenarnya Yang Berhormat, terima kasih sebab inilah yang kementerian
 usahakan seperti yang dikatakan oleh Yang Berhormat tadi selain pada kita sekarang
@@ -985,8 +985,8 @@ Pada masa yang sama, Yang Berhormat memang diberikan satu peruntukan
 yang begitu besar yang juga menjuruskan kepada insya-Allah di dalam masa-masa
 yang akan datang, kita akan meningkatkan semua SSL kita kepada peratusan yang
 lebih tinggi iaitu SSL, Self Sufficiency Level dengan izin."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,1000,Tuan Yang di-Pertua,Terima kasih.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,1000,Datuk Hajah Rohani binti Haji Abdul Karim,"Jadi Yang Berhormat, terima
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,10.00 pagi,1000,Tuan Yang di-Pertua,Terima kasih.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,10.00 pagi,1000,Datuk Hajah Rohani binti Haji Abdul Karim,"Jadi Yang Berhormat, terima
 kasih Yang Berhormat. Jadi, memang di bawah kementerian sekarang ini dan di bawah
 Dasar Jaminan Bekalan Makanan iaitu tahun ini sahaja, kita diberikan satu jumlah yang
 juga begitu besar di mana dari segi Yang Berhormat mencadangkan tadi untuk kita
@@ -997,22 +997,22 @@ Untuk makluman Yang Berhormat, baru-baru ini kita mengadakan satu
 Mesyuarat Exco Pertanian seluruh negara dan kita mendapat kerjasama yang begitu
 positif daripada semua negeri termasuk lima negeri yang di bawah Kerajaan
 Pembangkang. Terima kasih Yang Berhormat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,1000,Tuan Yang di-Pertua,Terima kasih. Yang Berhormat Titiwangsa.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,1000,Dr. Lo’ Lo’ Mohamad Ghazali [Titiwangsa],"Terima kasih Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,10.00 pagi,1000,Tuan Yang di-Pertua,Terima kasih. Yang Berhormat Titiwangsa.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,10.00 pagi,1000,Dr. Lo’ Lo’ Mohamad Ghazali [Titiwangsa],"Terima kasih Tuan Yang di-
 Pertua. Saya ingin bertanya. Apakah ada langkah-langkah kementerian melalui
 pejabat-pejabat pertanian di daerah-daerah untuk mengenal pasti tanah-tanah terbiar
 termasuk tanah-tanah kebun yang tidak diusahakan? Dengan ini, secara proaktif
 menawarkan khidmat untuk memulihkan dan memajukan tanah-tanah terbiar tersebut
 kerana saya percaya masih ramai lagi rakyat..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,1000,Tuan Yang di-Pertua,Soalan Yang Berhormat?
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,1000,Dr. Lo’ Lo’ Mohamad Ghazali [Titiwangsa],"...Ialah, yang tidak pasti cara-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,10.00 pagi,1000,Tuan Yang di-Pertua,Soalan Yang Berhormat?
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,10.00 pagi,1000,Dr. Lo’ Lo’ Mohamad Ghazali [Titiwangsa],"...Ialah, yang tidak pasti cara-
 cara. Tadi, saya tanya apakah langkah tadi Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,1000,Tuan Yang di-Pertua,"Sila, apakah langkah-langkahnya Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,10.00 pagi,1000,Tuan Yang di-Pertua,"Sila, apakah langkah-langkahnya Yang Berhormat
 Menteri."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,1000,Dr. Lo’ Lo’ Mohamad Ghazali [Titiwangsa],"Tidak pasti cara-cara atau
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,10.00 pagi,1000,Dr. Lo’ Lo’ Mohamad Ghazali [Titiwangsa],"Tidak pasti cara-cara atau
 peluang yang disediakan kementerian. Begitu juga, apakah insentif yang disediakan
 kepada pemilik-pemilik tanah terbiar tersebut? Terima kasih"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,1000,Datuk Hajah Rohani binti Haji Abdul Karim,"Terima kasih Yang Berhormat.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,10.00 pagi,1000,Datuk Hajah Rohani binti Haji Abdul Karim,"Terima kasih Yang Berhormat.
 Seperti saya katakan tadi, daripada statistik yang saya bacakan tadi iaitu daripada
 34,000 hektar tanah terbiar yang dikenal pasti di seluruh Semenanjung, didapati 12,155
 hektar adalah sesuai untuk pertanian dan ini merangkumi semua negeri yang ada di
@@ -1044,7 +1044,7 @@ Untuk makluman Yang Berhormat seperti saya katakan, memang ada
 peruntukan yang telah dikhaskan untuk kita membantu mengadakan peningkatan
 kepada tanaman-tanaman khasnya kepada tanah terbiar. Program yang lain itu
 berjalan seperti dirancangkan. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,1000,Tuan Yang di-Pertua,"Terima kasih menteri. Ahli-ahli Yang Berhormat, jam
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,10.00 pagi,1000,Tuan Yang di-Pertua,"Terima kasih menteri. Ahli-ahli Yang Berhormat, jam
 sekarang 11.31, jadi sesi soal jawab telah pun berakhir dan pada hari kelmarin soalan-
 soalan yang dapat dikemukakan 13, nampaknya pada hari ini undur balik menjadi 12.
 Jadi suka saya ingatkan kepada Ahli-ahli Yang Berhormat lagi iaitu soalan-
@@ -1052,7 +1052,7 @@ soalan tambahan pada minggu depan, harus dipersingkatkan dan jawapan-jawapan
 daripada menteri juga begitu. Soalan yang dibangkitkan sahaja yang perlu dijawab. Jadi
 tidak apa fakta-fakta berlonggok di depan menteri-menteri boleh, tetapi soalan direct itu
 sahaja dijawab. Jangan bawa fakta-fakta yang tidak ditanya. Sila Setiausaha."
-USUL,"Ahmad Badawi]: Tuan Yang di-Pertua, dengan nama Allah yang maha pemurah lagi",,1000,,"maha penyayang, saya dengan suka citanya berdiri di Dewan yang mulia ini untuk
+USUL,"Ahmad Badawi]: Tuan Yang di-Pertua, dengan nama Allah yang maha pemurah lagi",,10.00 pagi,1000,,"maha penyayang, saya dengan suka citanya berdiri di Dewan yang mulia ini untuk
 mengemukakan satu usul mengikut peruntukan Peraturan Mesyuarat 27(3) dalam
 kandungan seperti berikut:
 **“Bahawa Dewan ini,
@@ -1765,7 +1765,7 @@ penyesuaian, bukannya membenarkan pemimpin dan kumpulan tertentu menangguk di
 air keruh dan mengapi-apikan sentimen rakyat dengan janji-janji palsu semata-mata.
 [Tepuk] [Disorak] Perbuatan yang semata-mata untuk merebut kuasa di luar batasan
 demokrasi dan memenuhi agenda peribadi... [Disampuk]"
-USUL,"Ahmad Badawi]: Tuan Yang di-Pertua, dengan nama Allah yang maha pemurah lagi",,1000,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, kita kena dengar ucapan
+USUL,"Ahmad Badawi]: Tuan Yang di-Pertua, dengan nama Allah yang maha pemurah lagi",,10.00 pagi,1000,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, kita kena dengar ucapan
 Yang Amat Berhormat. Ada peluang nanti untuk berbahas.
 **Perdana Menteri:** Sementara saya dan rakan-rakan sejawat termasuk juga
 pegawai-pegawai tinggi dan termasuk juga wakil-wakil dari swasta terus mencari,
@@ -1796,11 +1796,11 @@ Kepada Tuhan yang Maha Adil Lagi Maha Bijaksana, kami mohon padaMu
 supaya Engkau restuilah usaha ini. Berikanlah taufik dan hidayah kepada kami.
 Kuatkanlah iltizam kami dan perkasakanlah istiqamah kami agar kami mencapai hasrat
 dan tujuan kami, kejayaan di dunia serta keredaanMu di alam yang kekal abadi."
-USUL,"Ahmad Badawi]: Tuan Yang di-Pertua, dengan nama Allah yang maha pemurah lagi",,1000,Beberapa Ahli,"Amin.
+USUL,"Ahmad Badawi]: Tuan Yang di-Pertua, dengan nama Allah yang maha pemurah lagi",,10.00 pagi,1000,Beberapa Ahli,"Amin.
 **Perdana Menteri:** Tuan Yang di-Pertua, saya mohon mencadangkan. [Tepuk]"
-USUL,"Ahmad Badawi]: Tuan Yang di-Pertua, dengan nama Allah yang maha pemurah lagi",,1000,Tuan Yang di-Pertua,"Sila, ada Ahli Yang Berhormat yang menyokong."
-USUL,"Ahmad Badawi]: Tuan Yang di-Pertua, dengan nama Allah yang maha pemurah lagi",,1000,Timbalan Perdana Menteri [Dato’ Sri Mohd. Najib bin Tun Haji Abdul Razak],"Tuan Yang di-Pertua, saya mohon menyokong."
-USUL,"Ahmad Badawi]: Tuan Yang di-Pertua, dengan nama Allah yang maha pemurah lagi",,1000,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, seperti mana Yang
+USUL,"Ahmad Badawi]: Tuan Yang di-Pertua, dengan nama Allah yang maha pemurah lagi",,10.00 pagi,1000,Tuan Yang di-Pertua,"Sila, ada Ahli Yang Berhormat yang menyokong."
+USUL,"Ahmad Badawi]: Tuan Yang di-Pertua, dengan nama Allah yang maha pemurah lagi",,10.00 pagi,1000,Timbalan Perdana Menteri [Dato’ Sri Mohd. Najib bin Tun Haji Abdul Razak],"Tuan Yang di-Pertua, saya mohon menyokong."
+USUL,"Ahmad Badawi]: Tuan Yang di-Pertua, dengan nama Allah yang maha pemurah lagi",,10.00 pagi,1000,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, seperti mana Yang
 Berhormat sekalian sedia maklum melalui notis pemberitahuan dan takwim yang telah
 diedarkan, sebanyak lapan hari telah diperuntukkan bagi memutuskan usul ini.
 Sebanyak lima hari telah diperuntukkan untuk perbahasan, dan tiga hari pula

@@ -1,11 +1,11 @@
-level_1,level_2,level_3,timestamp,author,speech
-,,,1000,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1000,Datuk Ir. Dr. Wee Ka Siong [Ayer Hitam],"minta Menteri Kesejahteraan Bandar,
+level_1,level_2,level_3,raw_timestamp,timestamp,author,speech
+,,,10.00 pagi,1000,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,10.00 pagi,1000,Datuk Ir. Dr. Wee Ka Siong [Ayer Hitam],"minta Menteri Kesejahteraan Bandar,
 Perumahan dan Kerajaan Tempatan menyatakan sama ada kementerian mempunyai
 perancangan atau pelan induk untuk membangunkan semua kampung baru di negara ini.
 Berapakah peruntukan yang akan disalurkan kepada semua kampung baru pada tahun
 2014 dan apakah mekanisme penyaluran peruntukan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1000,"Menteri Kesejahteraan Bandar, Perumahan dan Kerajaan Tempatan [Dato' Abd. Rahman Dahlan]","Terima kasih. *Assalamualaikum warahmatullahi wabarakatuh.*
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,10.00 pagi,1000,"Menteri Kesejahteraan Bandar, Perumahan dan Kerajaan Tempatan [Dato' Abd. Rahman Dahlan]","Terima kasih. *Assalamualaikum warahmatullahi wabarakatuh.*
 Terima kasih Yang Berhormat dan Tuan Yang di-Pertua.
 Untuk makluman Ahli Yang Berhormat, kementerian telah menyediakan Pelan
 Induk Kampung Baru ataupun *new villages master plan*, dengan izin pada tahun 2005.
@@ -38,7 +38,7 @@ yang disediakan oleh kerajaan ini akan diagihkan untuk melaksanakan permohonan p
 projek yang dikenal pasti melalui permohonan daripada pemimpin tempatan yang akan
 diproses oleh Pegawai Kemajuan Perkampungan ataupun PKP. Kemudian permohonan ini
 akan dipanjangkan ke KPKT untuk kelulusan. Terima kasih Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1000,Datuk Ir. Dr. Wee Ka Siong [Ayer Hitam],"Tuan Yang di-Pertua, terlebih dahulu
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,10.00 pagi,1000,Datuk Ir. Dr. Wee Ka Siong [Ayer Hitam],"Tuan Yang di-Pertua, terlebih dahulu
 saya ucapkan tahniah kepada Yang Berhormat Menteri kerana dapat menjawab dengan
 begitu jelas sekali. Begitu juga kenyataan Yang Berhormat Menteri pada hari ini melegakan
 semua penduduk di 607 buah kampung-kampung baru ini. Satu berita yang baik kerana
@@ -52,7 +52,7 @@ bahawa pelan pembangunan kampung baru yang telah dibuat pada tahun 2005, bagaima
 kepada KPKT? Ia juga melibatkan kerajaan negeri dan agensi-agensi lain. Bagaimana
 Yang Berhormat memastikan pelaksanaan itu dapat dilakukan dengan sempurna? Terima
 kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1000,Dato' Abd. Rahman Dahlan,"Terima kasih Yang Berhormat Ayer Hitam. Memang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,10.00 pagi,1000,Dato' Abd. Rahman Dahlan,"Terima kasih Yang Berhormat Ayer Hitam. Memang
 sebenarnya proses itu adalah melalui permohonan daripada pemimpin tempatan dan
 melalui gotong-royong kementerian dan proses GRK ini akan kita teruskan. Ini
 memandangkan saya kira itu adalah proses yang terbaik pada masa ini dan cabaran kita
@@ -75,13 +75,13 @@ perkara yang *cost-cutting*, maknanya kementerian lain juga bertanggungjawab dan
 bahagian KPKT kita telah menjalankan tanggungjawab melalui pembangunan infrastruktur
 dan sebagainya tetapi soal tanah contohnya adalah bidang kuasa kementerian lain ataupun
 kerajaan negeri dan juga bahagian pertanian."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Dato' Abd. Rahman Dahlan,"Jadi, apa yang saya ingin cadangkan di sini Yang Berhormat ialah saya akan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1010,1010,Dato' Abd. Rahman Dahlan,"Jadi, apa yang saya ingin cadangkan di sini Yang Berhormat ialah saya akan
 membawa isu ini ke perhatian Kabinet. Sudah tentu saya pasti akan memikirkan bagaimana
 cara untuk menjadikan *master plan* ini sebuah realiti yang lebih efisien dengan mengambil
 kira pembabitan kementerian-kementerian lain yang berada di kampung baru yang
 mempunyai tanggungjawab ke atas kampung baru. Satu cadangan yang baik dan ini akan
 dibawa ke Kabinet. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Dato' Mansor bin Othman [Nibong Tebal],"Terima kasih Tuan Yang di-Pertua
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1010,1010,Dato' Mansor bin Othman [Nibong Tebal],"Terima kasih Tuan Yang di-Pertua
 dan terima kasih pada Menteri. Saya dapati di beberapa tempat kampung baru yang
 semuanya di Pulau Pinang didiami oleh warga emas Tuan Yang di-Pertua dan saya tidak
 pasti di negeri-negeri lain. Akan tetapi di Pulau Pinang, beberapa tempat ini didiami oleh
@@ -91,7 +91,7 @@ untuk menjadikan kampung-kampung baru ini *lively* balik? Umpamanya, menarik min
 kembali generasi muda ke kampung baru? Adakah rancangan pihak kerajaan untuk jadikan
 setengah dari kampung baru ini *new growth centre,* dengan izin, Tuan Yang di-Pertua. Itu
 saja. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Dato' Abd. Rahman Dahlan,"Terima kasih Tuan Yang di-Pertua dan Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1010,1010,Dato' Abd. Rahman Dahlan,"Terima kasih Tuan Yang di-Pertua dan Yang
 Berhormat daripada Nibong Tebal. Dalam Rancangan Pelan Induk Kampung Baru sudah
 tentu kita memikirkan bagaimana untuk membina industri di kawasan-kawasan kampung
 baru ini, terutamanya industri *cottage* ya, dengan izin, iaitu yang ada kaitan dengan *small
@@ -114,21 +114,21 @@ RM1,085,000 untuk tahun 2011 dan pada tahun 2012 naik lagi RM1,426,599. Jadi,
 sebenarnya kerajaan masih lagi membantu semua negeri-negeri juga termasuk Pulau
 Pinang dalam memberi peruntukan untuk kampung baru. Terima kasih, Tuan Yang di-
 Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1010,Dato' Dr. Tan Kee Kwong [Wangsa Maju],"minta Menteri Wilayah Persekutuan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1010,1010,Dato' Dr. Tan Kee Kwong [Wangsa Maju],"minta Menteri Wilayah Persekutuan
 menyatakan jumlah keseluruhan projek *River of Life* dan bilakah projek ini akan tamat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1010,Menteri Wilayah Persekutuan [Datuk Seri Tengku Adnan Tengku Mansor],"*Bismillahi Rahmani Rahim. Assalamualaikum warahmatullahi wabarakaatuh* Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1010,1010,Menteri Wilayah Persekutuan [Datuk Seri Tengku Adnan Tengku Mansor],"*Bismillahi Rahmani Rahim. Assalamualaikum warahmatullahi wabarakaatuh* Tuan Yang di-
 Pertua. Untuk makluman Ahli Yang Berhormat Wangsa Maju, jumlah keseluruhan yang
 diperuntukkan bagi projek *River of Life, Greater* Kuala Lumpur dan Klang Valley
 dianggarkan sebanyak RM4 bilion. Projek ini dijangka akan dapat disiapkan sepenuhnya
 pada tahun 2020. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1010,Dato' Dr. Tan Kee Kwong [Wangsa Maju],"Terima kasih atas jawapan yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1010,1010,Dato' Dr. Tan Kee Kwong [Wangsa Maju],"Terima kasih atas jawapan yang
 ringkas. Saya hendak minta soalan tambahan iaitu satu kampung tradisi, namanya
 Kampung Puah Seberang iaitu luasnya lebih kurang 22 ekar tanah rizab Melayu dan ada 60
 buah keluarga yang duduk di sana lebih kurang 70 tahun. Soalan satu ialah perlukah tidak
 kerajaan ambil semua tanah seluas 22 ekar sebagai *river reserve.* Kedua, pampasan yang
 diberikan oleh kerajaan ialah hanya satu *low cost flat* untuk sewa, wang tunai RM1,000.
 Lepas tolak deposit DBKL, hanya RM602. Ini tidak wajar dan tidak cukup. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1010,Datuk Seri Tengku Adnan Tengku Mansor,"Terima kasih Ahli Yang Berhormat.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1010,1010,Datuk Seri Tengku Adnan Tengku Mansor,"Terima kasih Ahli Yang Berhormat.
 Soalan Yang Berhormat pun ringkas, saya pun jawab ringkaslah. Takkan saya hendak
 jawab panjang lebar. Saya tidak perlu untuk mendapat liputan dalam televisyen. Walau
 macam mana pun saya ucap terima kasih di atas soalan tambahan Yang Berhormat. Untuk
@@ -152,13 +152,13 @@ dipegang ataupun tidak akan membawa kemudaratan kepada rakyat, maka kita terpaks
 melaksanakan, mengambil semua kawasan ini untuk memastikan bahawa tidak ada
 kawasan-kawasan ataupun orang-orang dalam tempat ini melakukan perkara-perkara yang
 tidak diingini yang akan mencemarkan air di dalam sungai tersebut. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1010,Dato' Wan Mohammad Khair-il Anuar Wan Ahmad [Kuala Kangsar],"Terima
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1010,1010,Dato' Wan Mohammad Khair-il Anuar Wan Ahmad [Kuala Kangsar],"Terima
 kasih Tuan Yang di-Pertua, sebenarnya projek *River of Life* ini merupakan satu aset yang
 amat bernilai, yang belum dibangunkan sepenuhnya. Cumanya agak malang sedikit sungai-
 sungai di Kuala Lumpur ini tidak begitu besar dan lebar. Jadi, soalan tambahan saya,
 berapakah sebenarnya jangkaan nilai sumbangan projek *River of Life* ini kepada ekonomi
 negara, khususnya untuk Kuala Lumpur. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1010,Datuk Seri Tengku Adnan Tengku Mansor,"Terima kasih Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1010,1010,Datuk Seri Tengku Adnan Tengku Mansor,"Terima kasih Yang Berhormat
 daripada Kuala Kangsar. Sebenarnya apa yang telah kita lakukan ialah walaupun kita telah
 sebut kos projek ini sebanyak RM4 bilion. Kita menganggarkan kalau semua projek ini telah
 siap, kita berkeyakinan bahawa ia akan memberi pulangan yang lebih tinggi daripada
@@ -176,14 +176,14 @@ tebing-tebing sungai ini dinaikkan taraf dan juga diperbaiki, nilai tanah akan m
 tanah-tanah kerajaan yang berada di tebing-tebing sungai ini akan dijual secara tender
 kepada masyarakat dan kepada sesiapa yang berminat dan kita mendapat pulangan
 semula apa yang telah kita belanjakan. Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1020,Datuk Datu Nasrun bin Datu Mansur [Silam],"minta Menteri Kewangan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1020,1020,Datuk Datu Nasrun bin Datu Mansur [Silam],"minta Menteri Kewangan
 menyatakan langkah yang telah diambil oleh kerajaan untuk memperkasakan sistem
 kewangan Islam sebagai ikonik baharu untuk ekonomi Malaysia serta nyatakan:
 (a) berapakah jumlah sumbangan industri kewangan Islam kepada
 pendapatan negara dari tahun 2003-2013; dan
 (b) apakah kekangan semasa terhadap perkembangan kewangan
 Islam di Malaysia"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1020,Timbalan Menteri Kewangan [Datuk Haji Ahmad bin Haji Maslan],"*Assalamualaikum*, salam sejahtera Tuan Yang di-Pertua. Terima kasih Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1020,1020,Timbalan Menteri Kewangan [Datuk Haji Ahmad bin Haji Maslan],"*Assalamualaikum*, salam sejahtera Tuan Yang di-Pertua. Terima kasih Yang Berhormat
 Silam. Untuk makluman Ahli-ahli Yang Berhormat, Malaysia menyasarkan untuk menjadi
 hab global kewangan Islam dan hab pendidikan kewangan Islam di peringkat antarabangsa.
 Oleh itu, kerajaan menjalankan usaha berterusan untuk memperkasa Industri Kewangan
@@ -225,7 +225,7 @@ Majlis Penasihat Syariah. Contohnya *mudarabah, murabahah, musyarakat, ijarah, w
 dan *istisna’*. Piawaian ini bertujuan untuk mentakrifkan ciri penting prinsip asas Syariah
 yang diterima pakai oleh institusi kewangan Islam di samping meningkatkan kepastian dan
 keyakinan orang ramai terhadap urus niaga kewangan Islam. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1020,Datuk Datu Nasrun bin Datu Mansur [Silam],"Terima kasih Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1020,1020,Datuk Datu Nasrun bin Datu Mansur [Silam],"Terima kasih Tuan Yang di-
 Pertua. Saya amat kagum Tuan Yang di-Pertua, dengan usaha kerajaan yang begitu berani
 menerokai pelbagai bidang untuk dilaksanakan di negara ini termasuklah Bank Islam,
 Takaful dan lain-lain. Berbeza dengan pihak lain yang tidak ada kerja, tidak habis-habis
@@ -237,7 +237,7 @@ pencapaian usaha kerajaan untuk mengantarabangsakan sektor kewangan Islam mengik
 model Malaysia di peringkat antarabangsa dan apakah kaitannya usaha ini dengan *World
 Islamic Economic Forum* yang sedang berjalan di London sekarang ini? Sekian, terima
 kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1020,Datuk Haji Ahmad bin Haji Maslan,"Tuan Yang di-Pertua, antara kejayaan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1020,1020,Datuk Haji Ahmad bin Haji Maslan,"Tuan Yang di-Pertua, antara kejayaan
 Malaysia sebagai Pusat Kewangan Antarabangsa sebagai contoh, kita dalam perbankan
 Islam memiliki aset ketiga terbesar di dunia bernilai 12% daripada *market share,* dengan
 izin ataupun nisbah pasaran. Itu tentang perbankan Islam. Sementara untuk Takaful pula,
@@ -258,7 +258,7 @@ Antara pemimpin-pemimpin utama negara yang datang ialah Turki, Brunei, Jordan,
 Indonesia, Afghanistan, Bangladesh, Morocco, Pakistan, termasuk David Cameron,
 Perdana Menteri Britain dan WIEF ini adalah inisiatif Malaysia dan penaungnya tidak lain
 tidak bukan kepada Perdana Menteri Dato' Sri Mohd. Najib bin Tun Abdul Razak."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1020,Tuan Shamsul Iskandar @ Yusre bin Mohd Akin [Bukit Katil],"Terima kasih
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1020,1020,Tuan Shamsul Iskandar @ Yusre bin Mohd Akin [Bukit Katil],"Terima kasih
 Tuan Yang di-Pertua. Soalan tambahan saya, telah dijelaskan oleh Yang Berhormat
 Menteri tadi bahawa Malaysia mempunyai produk simpanan paling mudah hinggalah
 kepada sukuk daripada segi produk-produk di dalam sistem ekonomi Islam. Cuma saya
@@ -268,7 +268,7 @@ negeri dan tidak ada satu penyelarasan yang strategik di mana kita merasakan bah
 wakaf ini juga merupakan satu perkara yang boleh dikomersialkan? Kalau dikomersialkan
 dengan rangka undang-undang yang lebih efektif, lebih membantu kepada sistem ekonomi
 dan kewangan Islam. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1020,Datuk Haji Ahmad bin Haji Maslan,"Tuan Yang di-Pertua, terima kasih Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1020,1020,Datuk Haji Ahmad bin Haji Maslan,"Tuan Yang di-Pertua, terima kasih Yang
 Berhormat Bukit Katil. Saya tanya semalam ketika sembahyang Zohor, Zohor ke Asar
 semalam, *“Isteri masih di Sabah""* dia kata. Kasihan.
 Ada enam sebenarnya produk kewangan Islam ini. Pertama, Perbankan Islam.
@@ -282,13 +282,13 @@ Bukit Katil sebut iaitu wakaf. Kementerian Kewangan melalui Menterinya telah
 mengumumkan beberapa perkara tentang wakaf pada Bajet 2013 yang lalu dan kita akan
 terus menyusuli apakah yang berlaku daripada segi sistem wakaf ini. Akan tetapi
 percayalah bahawa kerajaan sedang berusaha untuk meningkatkannya. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Tuan Sim Tong Him [Kota Melaka],"Terima kasih Tuan Yang di-Pertua. Saya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1030,1030,Tuan Sim Tong Him [Kota Melaka],"Terima kasih Tuan Yang di-Pertua. Saya
 ingin minta Yang Berhormat Menteri kalau boleh beritahu Dewan yang mulia ini
 perbandingan di antara *Islamic banking* dengan *conventional banking.* Ini kerana memang
 saya berpendapat bahawa ramai rakyat pilih *Islamic banking* pada masa kini. Bolehkah
 Yang Berhormat Menteri berikan satu perbandingan kebaikan dari *Islamic banking* jika
 dibandingkan *conventional banking* ini?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Datuk Haji Ahmad bin Haji Maslan,"Di antara perkaranya perbankan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1030,1030,Datuk Haji Ahmad bin Haji Maslan,"Di antara perkaranya perbankan
 konvensional dan perbankan Islam. Contoh perbankan konvensional ini berasaskan
 pemikiran manusia. Perbankan Islam berasaskan prinsip syariah. Konvensional
 kebanyakan berasaskan *interest*, riba manakala perbankan Islam tiada riba, tiada *interest*
@@ -306,20 +306,20 @@ meminjam itu sebagai rakan kongsi, musyarakah sebagai pelabur dan pengusaha kala
 sistem *mudarabah* sebagai penjual pembeli dan pemberi sewa dan penyewa disebut
 sebagai ijarah. Kalau saya hendak berikan taklimat tentang ini, ia mengambil masa. Saya
 rasa cukuplah sekadar itu. Terima kasih ."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Dato' Ngeh Koo Ham [Beruas],"Boleh dapat penjelasan mengenai hal ini?
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1030,1030,Dato' Ngeh Koo Ham [Beruas],"Boleh dapat penjelasan mengenai hal ini?
 Penjelasan. Ramai yang bukan..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Tuan Yang di-Pertua,"Dalam sesi soal jawab Yang Berhormat tidak ada minta
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1030,1030,Tuan Yang di-Pertua,"Dalam sesi soal jawab Yang Berhormat tidak ada minta
 penjelasan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,ANNOTATION,[Ketawa]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,ANNOTATION,[Dewan riuh]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Dato' Ngeh Koo Ham [Beruas],"Daripada jawapanlah. Kita tidak faham bezanya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1030,1030,ANNOTATION,[Ketawa]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1030,1030,ANNOTATION,[Dewan riuh]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1030,1030,Dato' Ngeh Koo Ham [Beruas],"Daripada jawapanlah. Kita tidak faham bezanya
 bagi *more than form and substance.*"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Tuan Yang di-Pertua,"Tidak mengapa. *Okay, I let you.*"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Dato' Ngeh Koo Ham [Beruas],"*Okay thank you*. Tuan Yang di-Pertua kerana
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1030,1030,Tuan Yang di-Pertua,"Tidak mengapa. *Okay, I let you.*"
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1030,1030,Dato' Ngeh Koo Ham [Beruas],"*Okay thank you*. Tuan Yang di-Pertua kerana
 memang ramai di Malaysia ini..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Tuan Yang di-Pertua,"Tidak mengapa dia minta penjelasan bukan soalan,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1030,1030,Tuan Yang di-Pertua,"Tidak mengapa dia minta penjelasan bukan soalan,
 penjelasan Yang Berhormat. Ini bukan soalan tambahan yang keempat, penjelasan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Dato' Ngeh Koo Ham [Beruas],"Ya penjelasan. Saya hendak tanya sama ada
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1030,1030,Dato' Ngeh Koo Ham [Beruas],"Ya penjelasan. Saya hendak tanya sama ada
 dari segi perbankan Islam ini riba tidak boleh dikenakan ini adalah satu peraturan mutlak
 ataupun prinsipnya supaya tidak menindas. Maksudnya kita mengenakan riba yang terlalu
 tinggi hinggakan menindas. Jadi adakah ia satu prinsip tidak menindas orang yang
@@ -331,7 +331,7 @@ ini memang berdasarkan *market rate of interest,* dikira belakang.
 Jadi bagi ramai kita ini *more form than substance.* Oleh sebab itu saya hendak
 dapat tahu, sebenarnya hakikat perbezaannya dan dari segi peminjam ini keadaan sebenar
 *for to many it is more form than substance. Thank you*."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Tuan Yang di-Pertua,"Okey sebelum Yang Berhormat respons. Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1030,1030,Tuan Yang di-Pertua,"Okey sebelum Yang Berhormat respons. Yang Berhormat
 duduk dahulu Yang Berhormat Menteri, duduk Yang Berhormat. Saya ingatkan kembali ini
 bukan satu *precedent* di mana saya benarkan soalan yang keempat, penjelasan. Budi
 bicara saya, saya benarkan atas sebab bahawa isu ini adalah isu penting yang mendapat
@@ -342,8 +342,8 @@ yang bukan beragama Islam untuk kepentingan bersama. Saya ulang balik *this is n
 precedent that I’m creating.* Jangan ada nanti wakil rakyat esok lusa dia akan berdiri dan
 berkata ini bukan soalan tambahan keempat, ini penjelasan. *No more, this is* sehingga di
 sini sahaja. Sila Menteri."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,ANNOTATION,[Tepuk]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Datuk Haji Ahmad bin Haji Maslan,"Terima kasih. Sebagai contoh dalam senario
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1030,1030,ANNOTATION,[Tepuk]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1030,1030,Datuk Haji Ahmad bin Haji Maslan,"Terima kasih. Sebagai contoh dalam senario
 tahun 1983 hingga 1987 apabila ekonomi merudum. Tahun 1992, 1993, 1997 dan 1998.
 Apa yang berlaku kepada pelanggan-pelanggan bank konvensional? Mereka merana
 kerana pembayaran *interest* boleh menjadi tanpa siling jika BLR terus meningkat. Namun,
@@ -358,11 +358,11 @@ Oleh kerana itu ia ada ketetapan dan tidak seperti apa yang berlaku. Sukacita
 saya gembira kerana Ahli-ahli Yang Berhormat berminat tentang subjek ini. Kita boleh
 mengaturkan taklimat mengenai sistem kewangan Islam dalam sesi ini. Terima kasih Tuan
 Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1030,Tuan Mohamed Azmin bin Ali [Gombak],"minta Perdana Menteri menyatakan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1030,1030,Tuan Mohamed Azmin bin Ali [Gombak],"minta Perdana Menteri menyatakan
 apakah agenda Pemerkasaan Ekonomi Bumiputera (PEB) mampu mengurangkan jurang
 ekonomi dalam masyarakat khususnya ketidaksamaan ekonomi antara kaum termasuk di
 Sabah dan Sarawak."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1030,Menteri di Jabatan Perdana Menteri [Dato' Sri Abdul Wahid Omar],"Terima
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1030,1030,Menteri di Jabatan Perdana Menteri [Dato' Sri Abdul Wahid Omar],"Terima
 kasih Tuan Yang di-Pertua. *Bismillahi Rahmani Rahim, Assalammualaikum warahmatullahi
 wabarakatuh* dan salam sejahtera. Selamat datang juga kepada adik-adik yang berada di
 galeri di atas. Tuan Yang di-Pertua, terima kasih kepada Yang Berhormat Gombak. Izinkan
@@ -418,7 +418,7 @@ mata kepada pihak kerajaan. Jadi saya hendak menyeru kepada rakan-rakan kita di 
 swasta di sana agar bersama-sama melaksanakan dan *embrace* dengan izin, Program
 Pemerkasaan Ekonomi Bumiputera ini untuk sama-sama kita memastikan jurang
 perbezaan antara kaum ini dapat dikurangkan. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1030,Tuan Mohamed Azmin bin Ali [Gombak],"Tuan Yang di-Pertua, saya ingin
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1030,1030,Tuan Mohamed Azmin bin Ali [Gombak],"Tuan Yang di-Pertua, saya ingin
 mengemukakan soalan tambahan dan juga meminta penjelasan. Dua sekali, Tuan Yang di-
 Pertua. Tema perbincangan di kalangan pakar ekonomi hari ini sama ada di peringkat
 tempatan mahupun di peringkat antarabangsa ialah persoalan tentang *income inequality*
@@ -442,7 +442,7 @@ Ekonomi Bumiputera. Apakah pengumuman ini membuktikan bahawa DEB dan juga Model
 Ekonomi Baru (MEB) telah gagal mencapai matlamatnya dan kerajaan juga Perdana
 Menteri terpaksa mengumumkan langkah-langkah baru untuk memperdaya ekonomi
 golongan Bumiputera. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1030,Dato’ Sri Abdul Wahid Omar,"Terima kasih Yang Berhormat Gombak. Tuan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1030,1030,Dato’ Sri Abdul Wahid Omar,"Terima kasih Yang Berhormat Gombak. Tuan
 Yang di-Pertua. Pertama sekali tentang *income inequality* yang disebutkan. Sebenarnya
 kalau ikut *survey* ataupun kajian pendapatan isi rumah yang kita laksanakan untuk tahun
 2012 ini, sebanyak 40% daripada jumlah isi rumah berpendapatan lebih kurang RM3,050
@@ -487,12 +487,12 @@ bumiputera itu tiada kualiti. Ini merupakan satu kenyataan yang saya rasa tidak
 bertanggungjawab. Kalau ramai mereka yang begini, memang susahlah kita hendak
 mencapai Program Pemerkasaan Ekonomi Bumiputera. Jadi saya hendak seru rakan-rakan
 kita di sektor swasta itu menerima dan menjayakan program ini. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1030,Datuk Dr. Makin @ Marcus Mojigoh [Putatan],"Terima kasih Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1030,1030,Datuk Dr. Makin @ Marcus Mojigoh [Putatan],"Terima kasih Tuan Yang di-
 Pertua. Saya mengikut jawapan daripada Yang Berhormat Menteri. Terima kasihlah, Yang
 Berhormat Menteri. Jawapan cantik*, beautiful.* Soalan yang kedua daripada Yang
 Berhormat Gombak pun tidak berapa jelas jawapan sebab ada soalan berkenaan dengan
 Bumiputera daripada Sarawak. Tidak dengar pun jawapannya. Itu satu."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Datuk Dr. Makin @ Marcus Mojigoh [Putatan],"Keduanya, saya lihat program atas pemeriksaan ekonomi bumiputera ini banyak,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,1050,Datuk Dr. Makin @ Marcus Mojigoh [Putatan],"Keduanya, saya lihat program atas pemeriksaan ekonomi bumiputera ini banyak,
 memperkasakan bumiputera. Program-program seperti mana sama macam DEB dulu.
 PPEB itu ditubuhkan. Akan tetapi apa masalahnya? Kononnya bumiputera ini tidak ada
 kualiti, tidak tahu lah dari mana kenyataan itu. Kalau tidak ada kualiti, itu juga salah satu
@@ -507,7 +507,7 @@ Siapa? Siapa di tempat pembinaan? Siapa orangnya? Siapa mandurnya? Cuba tanya
 dengan Menteri? Adakah ini diteruskan, kerja pemantauan, saya tahu lah kalau Yang
 Berhormat Gombak Menteri Besar nanti mungkin dia akan buat ini. Akan tetapi dia tidak
 layak. Minta maaf, tidak layaklah. Sila Menteri."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Dato’ Sri Abdul Wahid Omar,"Terima kasih Yang Berhormat, tentang jurang di
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,1050,Dato’ Sri Abdul Wahid Omar,"Terima kasih Yang Berhormat, tentang jurang di
 antara Semenanjung dan Sabah, Sarawak, memang kita akui bahawa kalau kita lihat
 sebagai contoh Tuan Yang di-Pertua, kadar kemiskinan negara adalah pada kadar 1.7%
 tetapi kalau di negeri Sabah sebagai contoh adalah lebih tinggi, pada kadar 8.1%. Akan
@@ -528,36 +528,36 @@ Yang di-Pertua, memang sukar ataupun lambat hendak mencapai sasaran tersebut. Ol
 sebab itu, saya katakan tadi saya minta sektor swasta yang mempelopori aktiviti ekonomi di
 negara ini memainkan peranan mereka juga. Jadi, bukan *to the exclusion* dengan izin,
 sektor awam ini. Terima kasih Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Datuk Seri Panglima Haji Abdul Ghapur bin Salleh [Kalabakan],"Soalan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,1050,Datuk Seri Panglima Haji Abdul Ghapur bin Salleh [Kalabakan],"Soalan
 tambahan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Tuan Yang di-Pertua,Sila Yang Berhormat.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Datuk Seri Panglima Haji Abdul Ghapur bin Salleh [Kalabakan],"Terima kasih
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,1050,Tuan Yang di-Pertua,Sila Yang Berhormat.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,1050,Datuk Seri Panglima Haji Abdul Ghapur bin Salleh [Kalabakan],"Terima kasih
 Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Tuan Yang di-Pertua,"Dalam soalan ini disebut sahabat sama Sarawak. Tidak
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,1050,Tuan Yang di-Pertua,"Dalam soalan ini disebut sahabat sama Sarawak. Tidak
 mengapa, saya beri sama dua sahabat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Datuk Seri Panglima Haji Abdul Ghapur bin Salleh [Kalabakan],"Saya mahu
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,1050,Datuk Seri Panglima Haji Abdul Ghapur bin Salleh [Kalabakan],"Saya mahu
 tahu..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Tuan Yang di-Pertua,"Perlahan-lahan sedikit Yang Berhormat. Soalan Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,1050,Tuan Yang di-Pertua,"Perlahan-lahan sedikit Yang Berhormat. Soalan Yang
 Berhormat perlahan-lahan sedikit, jangan seperti Yang Berhormat Putatan. Jangan agresif,
 Menteri ini menjawab dengan..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Datuk Seri Panglima Haji Abdul Ghapur bin Salleh [Kalabakan],"Kita
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,1050,Datuk Seri Panglima Haji Abdul Ghapur bin Salleh [Kalabakan],"Kita
 mempunyai dasar dahulu Dasar Ekonomi Baru (DEB) bumiputera. Pertama, saya mahu
 tanya sampai mana dasar ini? Berapa banyak pencapaian? Sama ada 50% kah, 10% atau
 20%? Sekarang kita ada dasar baru PPEB pula. Jadi, kita ini dasar atas dasar. Kita boleh
 nampak kenyataan. Jadi, saya mahu tahu, Menteri mungkin boleh beritahu kita, *target* kita
 untuk PPEB ini sampai bila? Kita mahu tahu sampai bila dan kita mahu tahu, boleh kah
 berjaya dengan dasar yang baru ini? Ini kerana DEB sudah gagal. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Dato’ Sri Abdul Wahid Omar,"Terima kasih Yang Berhormat Kalabakan. Dari
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,1050,Dato’ Sri Abdul Wahid Omar,"Terima kasih Yang Berhormat Kalabakan. Dari
 segi pencapaiannya, seperti yang saya katakan tadi setakat tahun 2011 pemilikan ekuiti di
 kalangan kaum bumiputera adalah sebanyak 23.5%. Dengan adanya program
 pemerkasaan yang telah diumumkan kita berharap agar *target* 30% ini akan dicapai dalam
 masa sebelum tahun 2020. Jadi, ini yang kita sasarkan. Itu yang saya kata kalau yang lain
 semua memainkan peranannya, *insya-Allah* kita akan dapat mencapai sasaran ini dengan
 lebih awal lagi, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1050,Datuk Linda Tsen Thau Lin [Batu Sapi],"minta Menteri Pengangkutan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1050,1050,Datuk Linda Tsen Thau Lin [Batu Sapi],"minta Menteri Pengangkutan
 menyatakan berapa kos dan komponen kerja menaik taraf Lapangan Terbang Sandakan
 dan tarikh kerja dijangka siap."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1050,Timbalan Menteri Pengangkutan [Datuk Ab. Aziz bin Kaprawi],"*Assalamualaikum warahmatullahi wabarakatuh*, Tuan Yang di-Pertua. Projek
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1050,1050,Timbalan Menteri Pengangkutan [Datuk Ab. Aziz bin Kaprawi],"*Assalamualaikum warahmatullahi wabarakatuh*, Tuan Yang di-Pertua. Projek
 menaiktarafkan lapangan terbang Sandakan bertujuan memberi keselesaan kepada
 pengguna-pengguna perkhidmatan kapal udara yang semakin meningkat di Sandakan. Kos
 projek berjumlah RM70 juta dan dijangka siap pada 30 November 2014. Komponen-
@@ -570,11 +570,11 @@ Bagi meningkatkan kecekapan operasi dan keselamatan penumpang, skop projek
 juga melibatkan penambahan kaunter pendaftaran masuk atau pun *check-in counter.*
 Seterusnya penambahan kaunter imigresen, tambahan kamera litar tertutup (CCTV) atau
 pun penyediaan kemudahan lif serta eskalator yang baru."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1050,Datuk Linda Tsen Thau Lin [Batu Sapi],"Terima kasih Tuan Yang di-Pertua,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1050,1050,Datuk Linda Tsen Thau Lin [Batu Sapi],"Terima kasih Tuan Yang di-Pertua,
 soalan tambahan saya adalah apakah langkah-langkah yang diambil untuk mengatasi
 masalah kesesakan lalu lintas di lapangan terbang Sandakan. Khususnya pada masa
 ketibaan dan keberangkatan pesawat-pesawat MAS atau pun AirAsia. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1050,Datuk Ab. Aziz bin Kaprawi,"Tuan Yang di-Pertua, setakat ini kesesakan di
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1050,1050,Datuk Ab. Aziz bin Kaprawi,"Tuan Yang di-Pertua, setakat ini kesesakan di
 lapangan terbang Sandakan tidak begitu ketara kerana penerbangan pada dasarnya tidak
 begitu tinggi kerana mengikut data *passenger* ataupun penumpang, Sandakan pada tahun
 2012 hanya setakat ‘834,626’ penumpang. Kalau dibandingkan dengan KLIA 39 juta hampir
@@ -583,13 +583,13 @@ Untuk makluman MASwings daripada Kota Kinabalu, satu minggu 28 kal. MAS daripada
 Kuala Lumpur ke Sandakan hanya tujuh kali seminggu dan juga AirAsia ke Sandakan
 hanya 21 kali seminggu. Selainnya KK-Sandakan hanya 14 kali seminggu dan KK-
 Sandakan AirAsia 14 kali seminggu. Jadi, kesesakan tidak begitu sangat mendesak."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1100,Tuan Yang di-Pertua,"Yang Berhormat Kota Bharu, soalan spesifik. Sila."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1100,Dato’ Takiyuddin bin Hassan [Kota Bharu],"Terima kasih Tuan Yang di-Pertua,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1100,1100,Tuan Yang di-Pertua,"Yang Berhormat Kota Bharu, soalan spesifik. Sila."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1100,1100,Dato’ Takiyuddin bin Hassan [Kota Bharu],"Terima kasih Tuan Yang di-Pertua,
 terima kasih Menteri yang menjawab. Soalannya spesifik tetapi ubah tempat sikit Tuan
 Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1100,Tuan Yang di-Pertua,
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1100,ANNOTATION,[Ketawa]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1100,Dato’ Takiyuddin bin Hassan [Kota Bharu],"Mengenai lapangan terbang juga
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1100,1100,Tuan Yang di-Pertua,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1100,1100,ANNOTATION,[Ketawa]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1100,1100,Dato’ Takiyuddin bin Hassan [Kota Bharu],"Mengenai lapangan terbang juga
 Tuan Yang di-Pertua. Tuan Yang di-Pertua, kita tahu bahawa lapangan terbang ini berkait
 rapat dengan pelancongan. Oleh sebab itu, lapangan terbang yang maju perlu diberi
 perhatian oleh pihak kerajaan. Saya hendak tanya Yang Berhormat Timbalan Menteri
@@ -607,15 +607,15 @@ meningkat 11% berbanding dengan tahun 2011. Jadi saya hendak tanya Yang Berhorma
 Timbalan Menteri, apakah perancangan kementerian untuk mempertingkatkan Lapangan
 Terbang Kota Bharu terutamanya memanjangkan landasan ataupun *runaway*. Terima
 kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1100,Tuan Yang di-Pertua,"Terpulang pada Yang Berhormat Timbalan Menteri untuk
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1100,1100,Tuan Yang di-Pertua,"Terpulang pada Yang Berhormat Timbalan Menteri untuk
 menjawab atau tidak. Ahli-ahli Yang Berhormat, yang saya ingatkan sama ada soalan itu
 spesifik atau tidak, kita harus bersikap adil kepada Menteri. Kadang-kadang soalan itu
 walaupun relevan, soalan Yang Berhormat Kota Bharu baik tetapi tidak adil bagi Menteri
 kerana saya rasa dia tidak ada fakta. Terpulanglah kepada Menteri menjawab atau tidak."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1100,Datuk Ab. Aziz bin Kaprawi,"Tuan Yang di-Pertua, saya menjawab apa yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1100,1100,Datuk Ab. Aziz bin Kaprawi,"Tuan Yang di-Pertua, saya menjawab apa yang
 maklumat yang saya ada."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1100,Tuan Yang di-Pertua,"Sila, sila."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1100,Datuk Ab. Aziz bin Kaprawi,"Tuan Yang di-Pertua, mengenai penambahbaikan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1100,1100,Tuan Yang di-Pertua,"Sila, sila."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1100,1100,Datuk Ab. Aziz bin Kaprawi,"Tuan Yang di-Pertua, mengenai penambahbaikan
 ataupun pembesaran Lapangan Terbang Sultan Ismail Petra, memang pihak MAB ada
 perancangan untuk membesarkan memandangkan lapangan terbang ini merupakan
 lapangan terbang domestik yang kedua paling pesat dari segi *passenger* atau pun
@@ -623,18 +623,18 @@ penumpang. Pihak MAB sekarang dalam perancangan untuk memperbesarkan, cuma pihak
 MAB ada kekangan kerana kawasan lapangan terbang itu amat kecil dan hampir dengan
 jalan utama. Jadi maka sebab itu perancangan sedang dibuat tetapi belum dimuktamadkan.
 Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1100,Dato’ Takiyuddin bin Hassan [Kota Bharu],"Akan tetapi Yang Berhormat, tanah
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1100,1100,Dato’ Takiyuddin bin Hassan [Kota Bharu],"Akan tetapi Yang Berhormat, tanah
 sudah diambil dan telah diberikan oleh kerajaan negeri. Sekarang ini tanam kelapa sahaja
 tidak buat lagi. Itu yang saya persoalkan. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1100,Datuk Ab. Aziz bin Kaprawi,"Seperti yang saya sebutkan tadi, pihak MAB sedang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1100,1100,Datuk Ab. Aziz bin Kaprawi,"Seperti yang saya sebutkan tadi, pihak MAB sedang
 dalam perancangan membesarkan, cuma ia ada beberapa kekangan. Walau
 bagaimanapun, memang ada dalam perancangan dan *insya-Allah* tidak lama lagi akan
 dimuktamadkan pembesaran Lapangan Terbang Sultan Ismail Petra."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1100,Dr. Izani bin Husin [Pengkalan Chepa],"minta Menteri Pembangunan Wanita,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,■1100,1100,Dr. Izani bin Husin [Pengkalan Chepa],"minta Menteri Pembangunan Wanita,
 Keluarga dan Masyarakat menyatakan adakah kerajaan akan memberi bantuan khas
 kepada semua orang-orang kurang upaya tanpa syarat sama ada mereka mempunyai
 pekerjaan ataupun tidak mempunyai pekerjaan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1100,"Timbalan Menteri Pembangunan Wanita, Keluarga dan Masyarakat [Datuk Hajah Azizah binti Datuk Seri Panglima Mohd. Dun]","Terima kasih Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,■1100,1100,"Timbalan Menteri Pembangunan Wanita, Keluarga dan Masyarakat [Datuk Hajah Azizah binti Datuk Seri Panglima Mohd. Dun]","Terima kasih Tuan Yang di-Pertua.
 *Bismillahi Rahmani Rahim. Assalammualaikum warahmatullaahi wabarakaatuh.*
 Tuan Yang di-Pertua, pada masa ini Kementerian Pembangunan Wanita, Keluarga
 dan Masyarakat belum lagi bercadang untuk memberikan bantuan khas kepada golongan
@@ -686,10 +686,10 @@ menjana pendapatan; dan
 turut ditawarkan kepada golongan OKU untuk meluaskan
 perniagaan.
 Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1100,Tuan Yang di-Pertua,Yang Berhormat Pengkalan Chepa.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1100,Dr. Izani bin Husin [Pengkalan Chepa],Tidak ada soalan tambahan. Jelas.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1100,Tuan Yang di-Pertua,Sila Yang Berhormat Parit Sulong.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1100,Dato’ Noraini binti Ahmad [Parit Sulong],"Terima kasih saya ucapkan kepada
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,■1100,1100,Tuan Yang di-Pertua,Yang Berhormat Pengkalan Chepa.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,■1100,1100,Dr. Izani bin Husin [Pengkalan Chepa],Tidak ada soalan tambahan. Jelas.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,■1100,1100,Tuan Yang di-Pertua,Sila Yang Berhormat Parit Sulong.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,■1100,1100,Dato’ Noraini binti Ahmad [Parit Sulong],"Terima kasih saya ucapkan kepada
 Tuan Yang di-Pertua dan juga Yang Berhormat Menteri yang menjawab soalan pada pagi
 ini. Tidak kita nafikan bahawa bantuan yang diberikan oleh kerajaan ini memang banyak
 membantu meringankan beban penerima-penerima terutamanya yang kita katakan pada
@@ -704,7 +704,7 @@ penerima bantuan khas OKU ini. Jadi, saya harap Yang Berhormat Menteri boleh kon
 dalam Dewan ini dan juga saya mohon sekiranya boleh diberikan secara perincian, secara
 bertulis mengenai data-data penerima Program Galakan Usahawan di bawah Kementerian
 Pembangunan Wanita, Keluarga dan Masyarakat. Terima kasih Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1110,Datuk Hajah Azizah binti Datuk Seri Panglima Mohd. Dun,"Terima kasih
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,■1110,1110,Datuk Hajah Azizah binti Datuk Seri Panglima Mohd. Dun,"Terima kasih
 kepada sahabat saya dari Parit Sulong. Memang selain daripada 1AZAM, memang melalui
 1AZAM itu pun banyak program. Mungkin kita berikan mereka alat untuk menjahit, alat
 untuk memasak dan sebagainya. Jadi termasuklah usahawan-usahawan itu yang terlibat
@@ -740,11 +740,11 @@ alat-alat *prosthetic* ini. Mereka ini nampaknya cukup berjaya. Di sinilah kita 
 mereka dengan memberikan geran pelancaran RM2,700 bagi seorang *one-off* dan juga
 dibantu pula oleh Jabatan Tenaga Kerja yang juga menyediakan bantuan untuk mereka
 memulakan usaha untuk menjadi usahawan. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1110,Tuan Sim Chee Keong [Bukit Mertajam],Tuan Yang di-Pertua.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1110,Tuan Yang di-Pertua,"Saya nampak tadi Yang Berhormat Seputeh berdiri,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,■1110,1110,Tuan Sim Chee Keong [Bukit Mertajam],Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,■1110,1110,Tuan Yang di-Pertua,"Saya nampak tadi Yang Berhormat Seputeh berdiri,
 sekarang tidak berdiri. Tak apa, Yang Berhormat Shah Alam. Okey, Yang Berhormat Shah
 Alam."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1110,Tuan Khalid Abd. Samad [Shah Alam],"Baik, terima kasih Tuan Yang di-Pertua,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,■1110,1110,Tuan Khalid Abd. Samad [Shah Alam],"Baik, terima kasih Tuan Yang di-Pertua,
 terima kasih. Soalan tambahan berhubung dengan OKU ini, kita cukup kagumlah dengan
 senarai kursus-kursus yang disediakan untuk pihak OKU. Saya ingin bertanya sama ada
 pihak kerajaan telah membuat satu kajian sejauh mana kursus-kursus ini telah mencapai
@@ -756,7 +756,7 @@ sebanyak RM2,700, ada tak lagi kelonggaran ataupun keistimewaan yang diberikan k
 syarikat-syarikat yang dikendalikan oleh OKU seperti status perintiskah, *tax exemption*kah
 dan sebagainya. Kalau ada, maka saya harap bahawa pihak Menteri ataupun Timbalan
 Menteri boleh maklumkan kepada Dewan ini. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1110,Datuk Hajah Azizah binti Datuk Seri Panglima Mohd. Dun,"Terima kasih
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,■1110,1110,Datuk Hajah Azizah binti Datuk Seri Panglima Mohd. Dun,"Terima kasih
 kepada sahabat dari Shah Alam. Tak apa, kita dalam Dewan semua bersahabat.
 Sebenarnya untuk makluman Yang Berhormat Shah Alam dan Dewan yang mulia ini, kita
 juga mempunyai program apa yang kita panggil *job coach* di mana pelatih-pelatih yang
@@ -775,10 +775,10 @@ Kementerian Pengangkutan, Kementerian Kewangan. Melalui Kementerian Kewangan ini
 adalah insentif-insentif untuk mereka yang memberi penggajian kepada OKU mendapat
 pelepasan cukai dan lain-lain lagi. Makna yang lain-lain nanti Yang Berhormat, saya akan
 berikan kepada Yang Berhormat secara bertulis, *insya-Allah*. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1110,Datuk Madius bin Tangau [Tuaran],"minta Menteri Dalam Negeri menyatakan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1110,1110,Datuk Madius bin Tangau [Tuaran],"minta Menteri Dalam Negeri menyatakan
 berapakah bilangan pemegang dokumen IMM13 di seluruh negara dan apakah masa
 depan pemegang-pemegang dokumen tersebut."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1110,Timbalan Menteri Dalam Negeri [Datuk Dr. Haji Wan Junaidi bin Tuanku Jaafar],"Terima kasih Yang Berhormat, terima kasih Tuan Yang di-Pertua. Apabila
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1110,1110,Timbalan Menteri Dalam Negeri [Datuk Dr. Haji Wan Junaidi bin Tuanku Jaafar],"Terima kasih Yang Berhormat, terima kasih Tuan Yang di-Pertua. Apabila
 persoalan berhubung dengan imigresen dibangkit di negeri Sarawak dan Sabah, keadaan
 dan cara menanganinya adalah berbeza sedikit dengan cara menangani perkara tersebut
 dan perkara yang sama di Semenanjung Malaysia. Jadi dalam keadaan sedemikian,
@@ -797,11 +797,11 @@ pergolakan yang saya sebut tadi. Keputusan itu ialah dasar perikemanusiaan bertu
 untuk membolehkan pemegang dokumen tersebut bergerak, tinggal, belajar dan bekerja di
 Sabah. Keputusan tersebut telah dibuat sebagai salah satu langkah penyelesaian masalah
 pendatang asing di Sabah pada ketika itu."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1120,Timbalan Menteri Dalam Negeri [Datuk Dr. Haji Wan Junaidi bin Tuanku Jaafar],"Didapati sebanyak 98,427 orang yang telah didaftar. Pada masa sekarang, yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1120,1120,Timbalan Menteri Dalam Negeri [Datuk Dr. Haji Wan Junaidi bin Tuanku Jaafar],"Didapati sebanyak 98,427 orang yang telah didaftar. Pada masa sekarang, yang
 tinggal aktif hanya 60,248 orang sahaja di Sabah. Di Sarawak didapati hanya 287 orang
 pemegang kad IMM13 ini tetapi tidak ada lagi di Semenanjung Malaysia. Sekian, terima
 kasih Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1120,Datuk Madius bin Tangau [Tuaran],"Tuan Yang di-Pertua, soalan tambahan.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1120,1120,Datuk Madius bin Tangau [Tuaran],"Tuan Yang di-Pertua, soalan tambahan.
 Soal pengeluaran dokumen IMM13 ini saya telah bertanya secara konsisten selama lapan
 tahun dalam dua penggal saya di Parlimen dahulu. Pada ketika itu saya diberitahu di
 Dewan yang mulia ini, bilangannya, dokumen yang dikeluarkan sebanyak lebih kurang
@@ -823,7 +823,7 @@ tetapi juga daripada Indonesia selepas konfrontasi 60-an dahulu. Pertanyaan saya
 adakah dokumen IMM13 daripada Indonesia ini ke Sabah masih diperbaharui setiap tahun.
 Begitu juga adakah benar bahawa terdapat lebih 10,000 Rohingya daripada Myanmar diberi
 dokumen IMM13. Apakah benar? Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1120,Datuk Dr. Haji Wan Junaidi Tuanku Jaafar,"Terima kasih Yang Berhormat.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1120,1120,Datuk Dr. Haji Wan Junaidi Tuanku Jaafar,"Terima kasih Yang Berhormat.
 Pemberian IMM13 kepada masyarakat yang didapati di negara kita oleh kerana mereka
 tidak mempunyai dokumen yang sah untuk memasuki negara ini dan sebab-sebabnya
 sebagaimana yang saya sebutkan tadi ialah atas dasar perikemanusiaan. Pemberian itu
@@ -867,7 +867,7 @@ tidak tahu Indonesia, dia tidak tahu dengan Filipina, negara yang mereka tahu ia
 Malaysia. Jadi, dengan landasan itu ada di kalangan mereka ini akan diberi
 kewarganegaraan atas budi bicara dengan memenuhi syarat perundangan yang kita ada
 dalam negara ini. Tuan Yang di-Pertua, sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1120,Puan Teresa Kok Suh Sim [Seputeh],"Terima kasih Tuan Yang di-Pertua. Saya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1120,1120,Puan Teresa Kok Suh Sim [Seputeh],"Terima kasih Tuan Yang di-Pertua. Saya
 sebenarnya mengikut soalan ini yang bertanya apakah masa depan pemegang IMM133 ini.
 Akan tetapi saya sebenarnya hendak tanya, kita lihat di Sabah, ada ramai kanak-kanak, kita
 kata *street children*. Macam bila saya pergi ke Lahad Datu, ramai anak-anak Bajau. Mereka
@@ -886,7 +886,7 @@ Jadi, soalan saya ialah apakah pandangan kerajaan terhadap kanak-kanak *street
 children,* mereka yang dilahirkan di Malaysia tetapi tidak ada dokumentasi ini? Adakah kita
 akan cuba bagi mereka pendidikan supaya mereka mungkin satu hari nanti mereka boleh
 berdikari dan bekerja di Malaysia?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1130,Datuk Dr. Haji Wan Junaidi bin Tuanku Jaafar,"Terima kasih Yang Berhormat.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1130,1130,Datuk Dr. Haji Wan Junaidi bin Tuanku Jaafar,"Terima kasih Yang Berhormat.
 Soalan Sabah lagi, saya tambah sedikit Tuan Yang di-Pertua. Sebenarnya, soalan
 masyarakat yang di bawah IMM13 ini terletak di bawah penyelidikan Suruhanjaya Diraja
 yang sekarang menyelidik di Sabah itu. Jadi, keputusan Suruhanjaya ini akan menjadi satu
@@ -901,10 +901,10 @@ Kalau apa sahaja yang diputuskan, kita akan menggunakan itu sebagai satu *guidel
 mengambil tindakan ke seluruh negara. Jadi Yang Berhormat, Kementerian Dalam Negeri
 adalah mempunyai semangat prihatin dan perikemanusiaan, Yang Berhormat. Terima
 kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1130,ANNOTATION,[Masa untuk Pertanyaan-pertanyaan bagi Jawab Lisan tamat]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1130,Datuk Wira Haji Ahmad bin Haji Hamzah [Jasin],Tuan Yang di-Pertua.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1130,Tuan Yang di-Pertua,Sila Yang Berhormat Jasin.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1130,Datuk Wira Haji Ahmad bin Haji Hamzah [Jasin],"Oleh kerana soalan-soalan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1130,1130,ANNOTATION,[Masa untuk Pertanyaan-pertanyaan bagi Jawab Lisan tamat]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1130,1130,Datuk Wira Haji Ahmad bin Haji Hamzah [Jasin],Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1130,1130,Tuan Yang di-Pertua,Sila Yang Berhormat Jasin.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1130,1130,Datuk Wira Haji Ahmad bin Haji Hamzah [Jasin],"Oleh kerana soalan-soalan
 lisan telah berakhir, izinkan saya bangun untuk membuat sedikit penjelasan daripada Tuan
 Yang di-Pertua. Saya ingin penjelasan daripada Tuan Yang di-Pertua berkenaan dengan
 pemberitahuan saya yang bertarikh pada 24 Oktober 2013 di bawah Peraturan Mesyuarat
@@ -913,7 +913,7 @@ Sepang kepada Jawatankuasa Hak dan Kebebasan di bawah Peraturan Mesyuarat 80
 kerana dia telah mengeluarkan suatu sangkaan jahat kepada Yang Amat Berhormat Pekan.
 Mohon penjelasan daripada Tuan Yang di-Pertua berkenaan kedudukan pemberitahuan
 saya itu. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1130,Tuan Yang di-Pertua,"Terima kasih. Ini untuk makluman Ahli Yang Berhormat,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1130,1130,Tuan Yang di-Pertua,"Terima kasih. Ini untuk makluman Ahli Yang Berhormat,
 saya terima satu notis daripada Yang Berhormat Jasin bertarikh pada 24 Oktober mengenai
 dengan satu insiden yang berlaku. Saya perlu untuk buat keputusan mengenai dengan hal
 ini kerana notis secara bertulis telah dihantar kepada saya. Pada ketika perkara itu berlaku,
@@ -921,7 +921,7 @@ konon hujah daripada Yang Berhormat Sepang yang mengatakan bahawa - *I just take
 offending word*. Antara lain dia sebut bahawa*, “Ia bermula daripada MCA dengan UMNO
 sendiri di mana ucapan daripada Yang Berhormat Pekan pada ketika itu, Ketua Pemuda,
 dia bercakap, “Marilah kita titiskan darah Cina dengan keris”.*"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1130,Datuk Wira Haji Ahmad bin Haji Hamzah [Jasin],"Tuan Yang di-Pertua, izinkan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1130,1130,Datuk Wira Haji Ahmad bin Haji Hamzah [Jasin],"Tuan Yang di-Pertua, izinkan
 saya memberikan sedikit penjelasan di atas perkara yang telah berlaku pada 23 hari bulan
 yang lalu. Sebenarnya, latar belakang isu ini adalah berkenaan dengan ucapan Yang
 Berhormat Sepang pada hari Rabu 23 Oktober 2013, kira-kira jam 12.30 tengah hari hingga
@@ -942,8 +942,8 @@ Berhormat Pekan pernah membuat kenyataan sedemikian. Tuan Yang di-Pertua, perkat
 sedemikian yang ditujukan kepada seorang pemimpin ulung kita iaitu Yang Amat Berhormat
 Pekan sebagai Perdana Menteri Malaysia boleh menimbulkan fahaman jahat kepada
 Perdana Menteri Malaysia sebagai anti kaum Cina. Jadi padahal, Yang Berhormat..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1130,ANNOTATION,[Disampuk]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1130,Datuk Wira Haji Ahmad bin Haji Hamzah [Jasin],"Ini *floor* saya, biar saya bercakap dahulu.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1130,1130,ANNOTATION,[Disampuk]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1130,1130,Datuk Wira Haji Ahmad bin Haji Hamzah [Jasin],"Ini *floor* saya, biar saya bercakap dahulu.
 Padahal, rakyat tahu bahawa Yang Amat Berhormat Perdana Menteri tidak pernah
 pun meminggirkan ataupun mengamalkan diskriminasi terhadap mana-mana kaum di
 Malaysia. Apatah lagi mahu menitiskan darah kaum Cina di Malaysia. Saya dengan keras
@@ -955,8 +955,8 @@ Yang Berhormat Sepang telah pun melanggar Peraturan 36(6) iaitu “*Seseorang ah
 boleh mengeluarkan sangkaan jahat ke atas siapa-siapa ahli lain”*. Oleh itu Tuan Yang di-
 Pertua, saya mahu supaya Yang Berhormat Sepang dirujuk kepada Jawatankuasa Hak dan
 Kebebasan. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1130,ANNOTATION,[Tepuk]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1130,Tuan Yang di-Pertua,"Terima kasih, terima kasih Ahli-ahli Yang Berhormat.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1130,1130,ANNOTATION,[Tepuk]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1130,1130,Tuan Yang di-Pertua,"Terima kasih, terima kasih Ahli-ahli Yang Berhormat.
 Setiap ada perkara berlaku seperti begini, sebenarnya yang menanggung masalah adalah
 saya dan timbalan-timbalan saya. Itu sebab setiap kali apabila bersidang, saya sering kali
 ingatkan kepada Yang Berhormat, apabila mengeluarkan hujah, perkataan-perkataan yang
@@ -978,7 +978,7 @@ berpendirian apa yang disebut itu tadi, masih berpegang kepada itu, jadi saya te
 ambil tindakan yang lain menurut Peraturan Mesyuarat. Akan tetapi kalau Yang Berhormat
 Sepang mengatakan bahawa itu tidak apa yang saya sebut dan ada alasan-alasan tertentu
 ataupun apa, saya akan dengar. Jadi saya boleh buat *ruling.* Sila Yang Berhormat Sepang."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1130,Tuan Mohamed Hanipa bin Maidin [Sepang],"Terima kasih kepada Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1130,1130,Tuan Mohamed Hanipa bin Maidin [Sepang],"Terima kasih kepada Yang
 Berhormat Tuan Yang di-Pertua. Terima kasih juga kepada Yang Berhormat Jasin. Saya
 merasa amat bersyukur kerana Yang Berhormat Jasin mengemukakan isu ini. Saya hendak
 ceritakan sedikit latar belakangnya. Pertamanya, sebelum Yang Berhormat Jasin membuat
@@ -990,24 +990,24 @@ UMNO Malaysia.”* Ini saya tidak ada sebut pun *“...sambil menghunus keris.�
 tidak ada sebut. Menyatakan, “*Marilah kita mandikan...”*. Saya tidak ada sebut
 *“...mandikan...”* pun. Dia kata saya kata *“...darah, titis darah Cina”.* Selepas itu dia kata
 pula, “...*sebanyak satu juta orang*.*”* Ini pun saya tak sebut."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Tuan Mohamed Hanipa bin Maidin [Sepang],"Jadi Yang Berhormat Jasin, kalau ingin bermain, kata orang, *play with fire*, saya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Tuan Mohamed Hanipa bin Maidin [Sepang],"Jadi Yang Berhormat Jasin, kalau ingin bermain, kata orang, *play with fire*, saya
 juga boleh menggunakan di bawah Peraturan Mesyuarat 36(12) untuk rujuk Yang
 Berhormat Jasin kepada jawatankuasa juga. Oleh sebab beliau menuduh saya bercakap
 yang tidak tentu. Itu yang pertama"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,ANNOTATION,[Dewan riuh]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Tuan Yang di-Pertua,"Ahli Yang Berhormat, Ahli-ahli Yang Berhormat, Ahli-ahli
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,ANNOTATION,[Dewan riuh]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Tuan Yang di-Pertua,"Ahli Yang Berhormat, Ahli-ahli Yang Berhormat, Ahli-ahli
 Yang Berhormat yang lain, tolong senyap dulu. Sila."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Tuan Mohamed Hanipa bin Maidin [Sepang],"Itu yang pertama. Yang keduanya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Tuan Mohamed Hanipa bin Maidin [Sepang],"Itu yang pertama. Yang keduanya
 Tuan Yang di-Pertua, saya bukan berucap pada masa itu sebagai seorang pembahas.
 Saya hanya bertanya kepada Yang Berhormat Tanjong Karang. Oleh sebab beliaulah yang
 memulakan ucapan tentang Operasi Lalang. Jadi saya bertanyakan"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,ANNOTATION,[Disampuk]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Tuan Mohamed Hanipa bin Maidin [Sepang],"Tuan Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,ANNOTATION,[Disampuk]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Tuan Mohamed Hanipa bin Maidin [Sepang],"Tuan Yang
 di-Pertua, bagi saya peluang untuk... Tuan Yang di-Pertua bagi saya peluang, jadi saya
 harap..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Tuan Yang di-Pertua,"Sila, sila, sila. Ahli-ahli Yang Berhormat yang lain, tolong
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Tuan Yang di-Pertua,"Sila, sila, sila. Ahli-ahli Yang Berhormat yang lain, tolong
 senyap dulu. Kita selesaikan isu ini dengan cara baik. Sila Yang Berhormat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Tuan Mohamed Hanipa bin Maidin [Sepang],"Tuan Yang di-Pertua, apabila
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Tuan Mohamed Hanipa bin Maidin [Sepang],"Tuan Yang di-Pertua, apabila
 Yang Berhormat Tanjong Karang menyatakan tentang Operasi Lalang dan nampaknya
 menuduh pembangkang, jadi saya bertanyakan, bukankah itu bermula daripada UMNO dan
 MCA? Saya mengakui memang saya ada menyebut perkataan yang *“marilah kita titiskan
@@ -1029,27 +1029,27 @@ Kita bukan *perfect.* Kalau sekiranya tidak betul, saya bersedia untuk meminta m
 mengharapkan apa yang dinyatakan *Wikipedia* itu juga, kalau sekiranya Yang Berhormat
 Pekan merasakan ini tidak betul, sila buat laporan, sila ambil tindakan juga kepada
 *Wikipedia*. Ini supaya nama Perdana Menteri kita boleh dibersihkan. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Datuk Wira Haji Ahmad bin Haji Hamzah [Jasin],Tuan Yang di-Pertua...
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Tuan Yang di-Pertua,Sila.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Datuk Wira Haji Ahmad bin Haji Hamzah [Jasin],"Tuan Yang di-Pertua, saya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Datuk Wira Haji Ahmad bin Haji Hamzah [Jasin],Tuan Yang di-Pertua...
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Tuan Yang di-Pertua,Sila.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Datuk Wira Haji Ahmad bin Haji Hamzah [Jasin],"Tuan Yang di-Pertua, saya
 menyambut baik penerangan daripada Yang Berhormat Sepang. Ini kerana seharusnya
 sebagai seorang Ahli yang telah diberi amanah oleh rakyat, bukan sahaja kita mesti
 bersikap jujur bahkan kita mestilah berdiri daripada apa yang kita telah sebutkan. Bagi saya
 Tuan Yang di-Pertua, kalau saya ada membuat apa juga kesilapan, saya bersedia dirujuk
 kepada Jawatankuasa Tatatertib"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,ANNOTATION,[Tepuk]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Datuk Wira Haji Ahmad bin Haji Hamzah [Jasin],"Akan tetapi apa yang saya hendak sebut di sini,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,ANNOTATION,[Tepuk]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Datuk Wira Haji Ahmad bin Haji Hamzah [Jasin],"Akan tetapi apa yang saya hendak sebut di sini,
 *Hansard* ini telah pun dikeluarkan. Cukup jelas menunjukkan, kalau kita sudah cakap, kita
 kata ya, apa salah kan? Kalau kita minta maaf, rugi kah kita? Ular yang menyusur akar,
 tidak akan hilang bisanya"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,ANNOTATION,[Tepuk]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Datuk Wira Haji Ahmad bin Haji Hamzah [Jasin],"Tuan Yang di-Pertua, dalam *Hansard* ini bertarikh 23 hari bulan, ada disebut
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,ANNOTATION,[Tepuk]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Datuk Wira Haji Ahmad bin Haji Hamzah [Jasin],"Tuan Yang di-Pertua, dalam *Hansard* ini bertarikh 23 hari bulan, ada disebut
 dengan terang sekali. Tidak ada pernah menyebut pun ‘*WikiLeaks’*. Tidak ada!"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,ANNOTATION,[Disampuk]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Datuk Wira Haji Ahmad bin Haji Hamzah [Jasin],"*Wikipedia*, tidak ada sebut pun. Dia ada sebut di sini.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,ANNOTATION,[Disampuk]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Datuk Wira Haji Ahmad bin Haji Hamzah [Jasin],"*Wikipedia*, tidak ada sebut pun. Dia ada sebut di sini.
 *“Tuan Mohamed Hanipa bin Maidin*"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,ANNOTATION,[Sepang]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Datuk Wira Haji Ahmad bin Haji Hamzah [Jasin],"*. “Terima kasih Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,ANNOTATION,[Sepang]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Datuk Wira Haji Ahmad bin Haji Hamzah [Jasin],"*. “Terima kasih Yang Berhormat
 Tanjong Karang...”* Masa itu dia mencelah *- “Yang Berhormat Tanjong Karang telah
 membabitkan tentang Operasi Lalang yang mengatakan bahawa ia dicetuskan oleh
 pembangkang. Akan tetapi saya hendak tanya, adakah saya rasa, saya khuatirlah takut
@@ -1058,38 +1058,38 @@ hendak katakan, kalau betul Yang Berhormat Tanjong Karang bersikap jujur, ini se
 yang tidak boleh hendak dinafikan. Ia bermula daripada MCA dan UMNO sendiri, di mana
 ucapan daripada Yang Berhormat Pekan”.* Disebut itu dengan jelas*. “...Pada ketika itu,
 Ketua Pemuda, dia bercakap*"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,ANNOTATION,[Disampuk]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Datuk Wira Haji Ahmad bin Haji Hamzah [Jasin],"*.* Hansard tidak salah*. “... Dia bercakap*, *marilah
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,ANNOTATION,[Disampuk]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Datuk Wira Haji Ahmad bin Haji Hamzah [Jasin],"*.* Hansard tidak salah*. “... Dia bercakap*, *marilah
 kita titiskan darah Cina dengan keris.”* Itu ucapan dia.
 Selepas itu, Yang Berhormat Pasir Salak bangun menentang. Kalau beliau tidak
 menggunakan perkataan tersebut, takkanlah Yang Berhormat Menteri, Timbalan Menteri
 pun bangun menentang. Yang Berhormat Tanjong Karang bangun menentang. Jadi,
 janganlah hendaknya kita nafikan apa yang telah kita sebut. Kita sama-sama, kalau boleh
 dapat menerima hakikat bahawa sebagai manusia, kita boleh buat apa jua kesilapan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Tuan Yang di-Pertua,Terima kasih.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Datuk Wira Haji Ahmad bin Haji Hamzah [Jasin],"Akan tetapi kesilapan itu
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Tuan Yang di-Pertua,Terima kasih.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Datuk Wira Haji Ahmad bin Haji Hamzah [Jasin],"Akan tetapi kesilapan itu
 sebagai satu pelajaran kepada kita."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Tuan Yang di-Pertua,"Terima kasih, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Datuk Wira Haji Ahmad bin Haji Hamzah [Jasin],"Terima kasih Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Tuan Yang di-Pertua,"Terima kasih, terima kasih."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Datuk Wira Haji Ahmad bin Haji Hamzah [Jasin],"Terima kasih Tuan Yang di-
 Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Tuan Mohamed Hanipa bin Maidin [Sepang],"Tuan Yang di-Pertua, saya pun
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Tuan Mohamed Hanipa bin Maidin [Sepang],"Tuan Yang di-Pertua, saya pun
 telah kata tadi, saya sudah bagi penjelasan. Saya dah kata"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,ANNOTATION,[Dewan riuh]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Tuan Mohamed Hanipa bin Maidin [Sepang],"Tidak, sini..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, Ahli-Ahli Yang Berhormat. Ahli-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,ANNOTATION,[Dewan riuh]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Tuan Mohamed Hanipa bin Maidin [Sepang],"Tidak, sini..."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, Ahli-Ahli Yang Berhormat. Ahli-
 ahli Yang Berhormat yang lain, diam dulu Ahli-ahli Yang Berhormat yang lain."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Tuan Mohamed Hanipa bin Maidin [Sepang],Saya tak tahulah.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Tuan Yang di-Pertua,"Yang Berhormat Sepang, Yang Berhormat Sepang, duduk
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Tuan Mohamed Hanipa bin Maidin [Sepang],Saya tak tahulah.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Tuan Yang di-Pertua,"Yang Berhormat Sepang, Yang Berhormat Sepang, duduk
 dulu Yang Berhormat. Nanti saya fikir."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Datuk Bung Moktar bin Radin [Kinabatangan],"Dah lama putar belit. Ini dalam
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Datuk Bung Moktar bin Radin [Kinabatangan],"Dah lama putar belit. Ini dalam
 Dewan Rakyat. Jangan putar belit!"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Tuan Yang di-Pertua,"Ahli Yang Berhormat! Yang Berhormat Kinabatangan, Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Tuan Yang di-Pertua,"Ahli Yang Berhormat! Yang Berhormat Kinabatangan, Yang
 Berhormat Kinabatangan, duduk Yang Berhormat Kinabatangan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Datuk Bung Moktar bin Radin [Kinabatangan],"Tuan Yang di-Pertua, dalam
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Datuk Bung Moktar bin Radin [Kinabatangan],"Tuan Yang di-Pertua, dalam
 mahkamah beginilah kerja dia, putar belit, pusing-pusing."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Tuan Yang di-Pertua,"Ahli Yang Berhormat Kinabatangan, duduk dulu."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Tuan Chong Chieng Jen [Bandar Kuching],Tuan Yang di-Pertua...
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Tuan Yang di-Pertua,"Yang Berhormat Bandar Kuching, jangan campur dulu.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Tuan Yang di-Pertua,"Ahli Yang Berhormat Kinabatangan, duduk dulu."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Tuan Chong Chieng Jen [Bandar Kuching],Tuan Yang di-Pertua...
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Tuan Yang di-Pertua,"Yang Berhormat Bandar Kuching, jangan campur dulu.
 Saya belum lagi buat keputusan.
 Ahli-ahli Yang Berhormat, Ahli-ahli Yang Berhormat, dengar baik-baik. Yang
 Berhormat Sepang dengar baik-baik. Bermakna, sebelum pun saya buat tindakan seperti
@@ -1101,8 +1101,8 @@ penjelasan tadi. Jadi apabila Yang Berhormat Jasin bercakap begitu, bermakna dal
 betul atau tidak? Kalau apa yang tertulis dalam *Hansard* itu betul atau tidak, pendirian saya,
 interpretasi saya, apabila saya rujuk kepada Peraturan Mesyuarat 36(6), betul ada
 perlanggaran peraturan mesyuarat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,ANNOTATION,[Tepuk]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat yang lain, belum lagi saya siap Yang Berhormat. Tinggal
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,ANNOTATION,[Tepuk]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat yang lain, belum lagi saya siap Yang Berhormat. Tinggal
 lagi Yang Berhormat Sepang sebagai *practicing lawyer*, kalau kita umpamanya di
 mahkamah *pleads guilty, there is no such thing is conditional pleading guilty, either yes or
 no.* Di dalam soal ini, kalau Yang Berhormat mempertikaikan apa yang tertulis dalam
@@ -1110,110 +1110,110 @@ no.* Di dalam soal ini, kalau Yang Berhormat mempertikaikan apa yang tertulis da
 tetapi dalam hal ini tidak perlu ada penjelasan lanjut kerana yang berlaku adalah dalam
 Dewan, semua dalam *Hansard*. Cuma Yang Berhormat sekarang ini fikir baik-baik. Tarik
 balik apa yang tertulis itu atau tidak. Kalau Yang Berhormat..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Tuan Mohamed Hanipa bin Maidin [Sepang],
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,ANNOTATION,[Bangun]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Tuan Yang di-Pertua,"Nanti dulu Yang Berhormat. Kalau Yang Berhormat mahu
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Tuan Mohamed Hanipa bin Maidin [Sepang],
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,ANNOTATION,[Bangun]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Tuan Yang di-Pertua,"Nanti dulu Yang Berhormat. Kalau Yang Berhormat mahu
 tarik balik, bermakna isu *settle.* Kalau juga Yang Berhormat tidak tarik balik, saya ada dua
 pilihan. Satu, sama ada saya kata *prima facie* ada kes untuk dirujuk kepada Jawatankuasa
 Hak dan Kebebasan ataupun saya sendiri boleh buat *ruling* di bawah Peraturan Mesyuarat
 36(6). Ada dua di situ Yang Berhormat. Sila."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Tuan Mohamed Hanipa bin Maidin [Sepang],"Tuan Yang di-Pertua, tadi saya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Tuan Mohamed Hanipa bin Maidin [Sepang],"Tuan Yang di-Pertua, tadi saya
 sudah menyatakan bahawa saya mengakui apa yang saya nyatakan dalam *Hansard* itu.
 Takkan saya hendak bercakap berbeza dengan apa yang ditulis dalam *Hansard*. Saya
 mengatakan, cuma saya katakan, yang saya bercakap itu sebab atas dasar kepercayaan
 saya, benda itu benar. Akan tetapi kalau sekiranya didapati benda ini tidak benar, memang
 saya bersedia dan saya bersedia tarik balik dan saya minta maaf. Tidak ada masalah."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Beberapa Ahli,Tariklah!
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,ANNOTATION,[Dewan riuh]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Tuan Mohamed Hanipa bin Maidin [Sepang],"Saya tarik balik. Okeylah. Tidak
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Beberapa Ahli,Tariklah!
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,ANNOTATION,[Dewan riuh]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Tuan Mohamed Hanipa bin Maidin [Sepang],"Saya tarik balik. Okeylah. Tidak
 apa, untuk hendak menyenangkan hati-hati pihak, saya tarik balik. Saya minta maaf"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,ANNOTATION,[Ketawa]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Tuan Yang di-Pertua,
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,ANNOTATION,[Ketawa]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Tuan Yang di-Pertua,"Okey, okey"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,ANNOTATION,[Dewan riuh]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Tuan Mohamed Hanipa bin Maidin [Sepang],"Kalau itu yang mereka rasa
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,ANNOTATION,[Ketawa]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Tuan Yang di-Pertua,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,ANNOTATION,[Ketawa]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Tuan Yang di-Pertua,"Okey, okey"
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,ANNOTATION,[Dewan riuh]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Tuan Mohamed Hanipa bin Maidin [Sepang],"Kalau itu yang mereka rasa
 seronok."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Tuan Yang di-Pertua,"Okey, Ahli-ahli Yang Berhormat, ya, ya. Terima kasih Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Tuan Yang di-Pertua,"Okey, Ahli-ahli Yang Berhormat, ya, ya. Terima kasih Yang
 Berhormat Sepang, terima kasih Yang Berhormat Sepang."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Datuk Bung Moktar bin Radin [Kinabatangan],Ini Tuan Yang di-Pertua...
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Datuk Dr. Abdul Latiff Ahmad [Mersing],"Eh, kita tak kisahlah..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Tuan Yang di-Pertua,Ahli-ahli Yang Berhormat...
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Tuan Abdullah Sani [Kuala Langat],"Yang Berhormat Kinabatangan, duduklah!"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Seorang Ahli,Tarik balik dan mohon maaf!
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Datuk Bung Moktar bin Radin [Kinabatangan],"Tuan Yang di-Pertua, ini bukan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Datuk Bung Moktar bin Radin [Kinabatangan],Ini Tuan Yang di-Pertua...
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Datuk Dr. Abdul Latiff Ahmad [Mersing],"Eh, kita tak kisahlah..."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Tuan Yang di-Pertua,Ahli-ahli Yang Berhormat...
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Tuan Abdullah Sani [Kuala Langat],"Yang Berhormat Kinabatangan, duduklah!"
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Seorang Ahli,Tarik balik dan mohon maaf!
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Datuk Bung Moktar bin Radin [Kinabatangan],"Tuan Yang di-Pertua, ini bukan
 soal senang, hati tidak senang"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,ANNOTATION,[Dewan riuh]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Tuan Yang di-Pertua,Ahli-ahli Yang Berhormat...
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Datuk Bung Moktar bin Radin [Kinabatangan],"Ini soal menghormati Perdana
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,ANNOTATION,[Dewan riuh]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Tuan Yang di-Pertua,Ahli-ahli Yang Berhormat...
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Datuk Bung Moktar bin Radin [Kinabatangan],"Ini soal menghormati Perdana
 Menteri..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Dato’ Shamsul Anuar bin Haji Nasarah [Lenggong],"Minta dia tarik, tarik ikhlas
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Dato’ Shamsul Anuar bin Haji Nasarah [Lenggong],"Minta dia tarik, tarik ikhlas
 Tuan Yang di-Pertua..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Datuk Bung Moktar bin Radin [Kinabatangan],"Tuan Yang di-Pertua, ini Dewan,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Datuk Bung Moktar bin Radin [Kinabatangan],"Tuan Yang di-Pertua, ini Dewan,
 bukan di pasar."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Datuk Dr. Abdul Latiff Ahmad [Mersing],"Eh! Ini *freshie, freshie...*"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Tuan Chong Chieng Jen [Bandar Kuching],"Tuan Yang di-Pertua, Tuan Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Datuk Dr. Abdul Latiff Ahmad [Mersing],"Eh! Ini *freshie, freshie...*"
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Tuan Chong Chieng Jen [Bandar Kuching],"Tuan Yang di-Pertua, Tuan Yang
 di-Pertua..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Dato’ Shamsul Anuar bin Haji Nasarah [Lenggong],"Takut macam ini, lain kali
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Dato’ Shamsul Anuar bin Haji Nasarah [Lenggong],"Takut macam ini, lain kali
 dia buat lagi. Tarik balik begitu sahaja Tuan Yang di-Pertua"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,ANNOTATION,[Dewan riuh]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Dato’ Shamsul Anuar bin Haji Nasarah [Lenggong],"Ya, samalah
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,ANNOTATION,[Dewan riuh]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Dato’ Shamsul Anuar bin Haji Nasarah [Lenggong],"Ya, samalah
 Yang Berhormat Kuala Langat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Tuan Chong Chieng Jen [Bandar Kuching],"Tuan Yang di-Pertua, Tuan Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Tuan Chong Chieng Jen [Bandar Kuching],"Tuan Yang di-Pertua, Tuan Yang
 di-Pertua..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Dato’ Shamsul Anuar bin Haji Nasarah [Lenggong],"Ha, nampak benarlah
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Dato’ Shamsul Anuar bin Haji Nasarah [Lenggong],"Ha, nampak benarlah
 penakut. Kalau berani sila. Lain kali buat lagi."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Tuan Yang di-Pertua,"Boleh tak Yang Berhormat Bandar Kuching, Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Tuan Yang di-Pertua,"Boleh tak Yang Berhormat Bandar Kuching, Yang
 Berhormat Lenggong, yang berdiri itu tolong duduklah Yang Berhormat"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,ANNOTATION,[Ketawa]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Tuan Yang di-Pertua,"Duduk,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,ANNOTATION,[Ketawa]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Tuan Yang di-Pertua,"Duduk,
 duduk.
 Soal ini adalah soal di antara Notis yang diberi kepada saya dan respons daripada
 Yang Berhormat Sepang. Saya yang buat keputusan Ahli-ahli Yang Berhormat*.*"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,ANNOTATION,[Tepuk]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Tuan Yang di-Pertua,"*That’s it*, jelas. Cuma kita ambil ini sebagai iktibar. Lain kali kalau berhujah, ingat risiko.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,ANNOTATION,[Tepuk]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Tuan Yang di-Pertua,"*That’s it*, jelas. Cuma kita ambil ini sebagai iktibar. Lain kali kalau berhujah, ingat risiko.
 Ingat. Itu sebab sentiasa saya ingatkan. Jadi bagi saya, saya anggap isu ini *settle,* kerana
 saya berpuas hati, dia kata, dia tarik balik, dia minta maaf."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,ANNOTATION,[Tepuk]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,ANNOTATION,[Disampuk]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1140,Datuk Seri Reezal Merican [Kepala Batas],Mohon maaflah.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1150,Tuan Yang di-Pertua,"Akan tetapi biasanya orang-orang politik ini ada sahaja
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,ANNOTATION,[Tepuk]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,ANNOTATION,[Disampuk]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1140,1140,Datuk Seri Reezal Merican [Kepala Batas],Mohon maaflah.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1150,1150,Tuan Yang di-Pertua,"Akan tetapi biasanya orang-orang politik ini ada sahaja
 ekoran-ekoran daripada apa yang disebut. Dia kata kalau menyenangkan hati. Jadi saya
 senang hati, tidakkah Ahli-ahli Yang Berhormat yang lain tidak senang hati?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1150,Beberapa Ahli,
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1150,ANNOTATION,[Ketawa]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1150,Tuan Chong Chieng Jen [Bandar Kuching],Tuan Yang di-Pertua...
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1150,Tuan Yang di-Pertua,"Yang Berhormat Bandar Kuching, apa lagi Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1150,1150,Beberapa Ahli,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1150,1150,ANNOTATION,[Ketawa]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1150,1150,Tuan Chong Chieng Jen [Bandar Kuching],Tuan Yang di-Pertua...
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1150,1150,Tuan Yang di-Pertua,"Yang Berhormat Bandar Kuching, apa lagi Yang Berhormat
 Bandar Kuching?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1150,Datuk Bung Moktar bin Radin [Kinabatangan],Apalah!
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1150,Tuan Yang di-Pertua,"Orang lain senang hati, Yang Berhormat Bandar Kuching
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1150,1150,Datuk Bung Moktar bin Radin [Kinabatangan],Apalah!
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1150,1150,Tuan Yang di-Pertua,"Orang lain senang hati, Yang Berhormat Bandar Kuching
 tidak senang hati sebab apa?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1150,Tuan Chong Chieng Jen [Bandar Kuching],Tuan Yang di-Pertua...
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1150,Datuk Bung Moktar bin Radin [Kinabatangan],"Apa lagi Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1150,1150,Tuan Chong Chieng Jen [Bandar Kuching],Tuan Yang di-Pertua...
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1150,1150,Datuk Bung Moktar bin Radin [Kinabatangan],"Apa lagi Yang Berhormat
 Bandar Kuching mahu?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1150,Tuan Chong Chieng Jen [Bandar Kuching],"Tuan Yang di-Pertua, beri saya satu
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1150,1150,Tuan Chong Chieng Jen [Bandar Kuching],"Tuan Yang di-Pertua, beri saya satu
 minit sahaja. Ya, memang ini isu di antara notis ini sudah habis tetapi isu pokoknya sama
 ada Yang Berhormat Pekan ada sebut perkataan ini. Itulah yang penting. Ini, ini..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1150,Tuan Yang di-Pertua,"Yang Berhormat, Yang Berhormat..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1150,Datuk Abdul Azeez bin Abdul Rahim [Baling],
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1150,ANNOTATION,[Bangun]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1150,Datuk Bung Moktar bin Radin [Kinabatangan],
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1150,ANNOTATION,[Bangun]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1150,Tuan Yang di-Pertua,Dia sebut
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1150,ANNOTATION,[Dewan riuh]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1150,Datuk Bung Moktar bin Radin [Kinabatangan],"Isu pentingnya, Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1150,1150,Tuan Yang di-Pertua,"Yang Berhormat, Yang Berhormat..."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1150,1150,Datuk Abdul Azeez bin Abdul Rahim [Baling],
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1150,1150,ANNOTATION,[Bangun]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1150,1150,Datuk Bung Moktar bin Radin [Kinabatangan],
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1150,1150,ANNOTATION,[Bangun]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1150,1150,Tuan Yang di-Pertua,Dia sebut
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1150,1150,ANNOTATION,[Dewan riuh]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1150,1150,Datuk Bung Moktar bin Radin [Kinabatangan],"Isu pentingnya, Yang Berhormat
 Pekan tidak ada sebut. Fahamkan Yang Berhormat Bandar Kuching"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1150,ANNOTATION,[Dewan riuh]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1150,Datuk Bung Moktar bin Radin [Kinabatangan],"Apa lagi
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1150,1150,ANNOTATION,[Dewan riuh]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1150,1150,Datuk Bung Moktar bin Radin [Kinabatangan],"Apa lagi
 Yang Berhormat Bandar Kuching mahu?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1150,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat yang lain duduk dahulu. Ini isu
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1150,1150,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat yang lain duduk dahulu. Ini isu
 baru lagi Yang Berhormat. Duduk! Tiga orang Ahli Yang Berhormat, duduk!"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1150,Tuan Chong Chieng Jen [Bandar Kuching],Saya rasa ini...
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1150,Tuan Yang di-Pertua,"Yang Berhormat Bandar Kuching, duduk Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1150,1150,Tuan Chong Chieng Jen [Bandar Kuching],Saya rasa ini...
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1150,1150,Tuan Yang di-Pertua,"Yang Berhormat Bandar Kuching, duduk Yang Berhormat
 Bandar Kuching."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1150,Tuan Chong Chieng Jen [Bandar Kuching],"Ini isu pokok. Isu pokok ini kalau
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1150,1150,Tuan Chong Chieng Jen [Bandar Kuching],"Ini isu pokok. Isu pokok ini kalau
 kita ada sebut perkara ini..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1150,Tuan Yang di-Pertua,"Yang Berhormat Bandar Kuching, duduk! Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1150,1150,Tuan Yang di-Pertua,"Yang Berhormat Bandar Kuching, duduk! Yang Berhormat
 Bandar Kuching *practicing lawyer.* Apa yang disebut oleh Yang Berhormat Sepang itu
 adalah apa yang tertulis dalam media di luar sana. Perkara yang tertulis di luar bukan
 menjadi tanggungjawab Ahli-ahli Yang Berhormat untuk menafikan. *Some people choose to
@@ -1222,17 +1222,17 @@ perkara-perkara begitu Ahli-ahli Yang Berhormat, jangan. Ini kerana apabila kita
 pun di Dewan, apabila kita bawa laporan daripada media ataupun lain-lain dokumen,
 peraturan mesyuarat juga mengatakan, *you must be responsible for those thing that you
 bring in.* Apa lagi perkara yang di luar, *so that is no issue*"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1150,ANNOTATION,[Dewan riuh]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1150,Tuan Sim Chee Keong [Bukit Mertajam],"Ada haiwan kah dalam Dewan ini Tuan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1150,1150,ANNOTATION,[Dewan riuh]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1150,1150,Tuan Sim Chee Keong [Bukit Mertajam],"Ada haiwan kah dalam Dewan ini Tuan
 Yang di-Pertua?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1150,Tuan Yang di-Pertua,"*So there is no more issue,* Yang Berhormat. Isu selesai.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1150,1150,Tuan Yang di-Pertua,"*So there is no more issue,* Yang Berhormat. Isu selesai.
 Terima kasih Yang Berhormat Jasin, terima kasih Yang Berhormat Sepang. Terima kasih
 Yang Berhormat Bandar Kuching."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1150,,"Aturan Urusan Mesyuarat dibacakan bagi menyambung semula perbahasan yang
+ANGGARAN PEMBANGUNAN 2014",,■1150,1150,,"Aturan Urusan Mesyuarat dibacakan bagi menyambung semula perbahasan yang
 ditangguhkan atas masalah, “Bahawa Rang Undang-undang Perbekalan 2014 dibacakan
 kali yang kedua sekarang” dan “Bahawa Usul yang berikut ini dirujuk kepada Jawatankuasa
 sebuah-buah Majlis.”
@@ -1242,12 +1242,12 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1150,ANNOTATION,[Akta 406]
+ANGGARAN PEMBANGUNAN 2014",,■1150,1150,ANNOTATION,[Akta 406]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1150,,", membuat ketetapan iaitu suatu
+ANGGARAN PEMBANGUNAN 2014",,■1150,1150,,", membuat ketetapan iaitu suatu
 jumlah wang sebanyak tidak lebih dari empat puluh enam bilion empat
 ratus sembilan puluh sembilan juta sembilan ratus sembilan puluh
 sembilan ribu ringgit (RM46,499,999,000) dibelanjakan daripada
@@ -1262,19 +1262,19 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1150,ANNOTATION,[30 Oktober 2013]
+ANGGARAN PEMBANGUNAN 2014",,■1150,1150,ANNOTATION,[30 Oktober 2013]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1150,Tuan Yang di-Pertua,"Saya difahamkan bahawa yang berhujah daripada
+ANGGARAN PEMBANGUNAN 2014",,■1150,1150,Tuan Yang di-Pertua,"Saya difahamkan bahawa yang berhujah daripada
 Penampang. Yang Berhormat telah mengambil masa beberapa minit. Saya difahamkan ada
 16 minit lagi. Jadi sila hormati masa. Sila, Yang Berhormat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1152,Tuan Ignatius Dorell Leiking [Penampang],"Terima kasih Tuan Yang di-Pertua.
+ANGGARAN PEMBANGUNAN 2014",,11.52pg.,1152,Tuan Ignatius Dorell Leiking [Penampang],"Terima kasih Tuan Yang di-Pertua.
 Saya juga ingin berterima kasih kepada siaran langsung daripada RTM-Parlimen dan PAS
 TV sebab rakan-rakan kita di Sabah dapat bersama-sama dengan kita, Ahli-Ahli Parlimen
 dalam perbahasan semalam dan hari ini.
@@ -1284,12 +1284,12 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1152,ANNOTATION,[Ketawa]
+ANGGARAN PEMBANGUNAN 2014",,11.52pg.,1152,ANNOTATION,[Ketawa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1152,Tuan Ignatius Dorell Leiking [Penampang],"Yang
+ANGGARAN PEMBANGUNAN 2014",,11.52pg.,1152,Tuan Ignatius Dorell Leiking [Penampang],"Yang
 Berhormat Parit Sulong pun. *A few second* sudah itu. *So anyway,* saya telah berbahas
 semalam berkenaan dengan memansuhkan Polisi Kabotaj dan rakan-rakan semua telah
 menghantar SMS dan juga mesej bahawa kerajaan patut membuat dua pilihan di Sabah.
@@ -1318,13 +1318,13 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1152,ANNOTATION,"[Timbalan Yang di-Pertua (Datuk Ronald Kiandee) mempengerusikan
+ANGGARAN PEMBANGUNAN 2014",,11.52pg.,1152,ANNOTATION,"[Timbalan Yang di-Pertua (Datuk Ronald Kiandee) mempengerusikan
 Mesyuarat]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1152,Tuan Ignatius Dorell Leiking [Penampang],"Maka saya berpendapat, penyelesaian jangka panjang untuk masalah ini adalah
+ANGGARAN PEMBANGUNAN 2014",,11.52pg.,1152,Tuan Ignatius Dorell Leiking [Penampang],"Maka saya berpendapat, penyelesaian jangka panjang untuk masalah ini adalah
 dengan membina sebuah hospital baru di Bandar Satelit Kota Kinabalu iaitu Daerah
 Penampang. Saya amat yakin bahawa kehadiran sebuah hospital yang baru di Penampang
 mampu mengurangkan kesesakan yang sedang dialami di Hospital Queen Elizabeth serta
@@ -1370,7 +1370,7 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1200,Tuan Ignatius Dorell Leiking [Penampang],"Walau bagaimanapun, pelbagai insiden yang terjadi di persada nasional baru-baru
+ANGGARAN PEMBANGUNAN 2014",,■1200,1200,Tuan Ignatius Dorell Leiking [Penampang],"Walau bagaimanapun, pelbagai insiden yang terjadi di persada nasional baru-baru
 ini telah turut sama membabitkan Sabah dan Sarawak. Insiden-insiden ini telah
 memperlihatkan bagaimana mekanisme atau pun instrumen-instrumen perlindungan Sabah
 dan Sarawak yang lebih dikenali sebagai *Inter-Governmental Report* yang di *attach*kan di
@@ -1457,23 +1457,23 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1200,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Boleh gulung Yang
+ANGGARAN PEMBANGUNAN 2014",,■1200,1200,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Boleh gulung Yang
 Berhormat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1200,Tuan Ignatius Dorell Leiking [Penampang],*Sorry?*
+ANGGARAN PEMBANGUNAN 2014",,■1200,1200,Tuan Ignatius Dorell Leiking [Penampang],*Sorry?*
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1200,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Gulung.
+ANGGARAN PEMBANGUNAN 2014",,■1200,1200,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Gulung.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1200,Tuan Ignatius Dorell Leiking [Penampang],"Berkenaan dengan isu 20 perkara.
+ANGGARAN PEMBANGUNAN 2014",,■1200,1200,Tuan Ignatius Dorell Leiking [Penampang],"Berkenaan dengan isu 20 perkara.
 Dengan itu Tuan Yang di-Pertua, saya tahu bahawa ramai Ahli Yang Berhormat dari
 Semenanjung Malaysia faham dengan keadaan di Sabah dan Sarawak. Saya telah pun
 berbincang dengan sebahagian daripada kamu baik daripada Barisan Nasional dan
@@ -1499,7 +1499,7 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1210,Tuan Ignatius Dorell Leiking [Penampang],"Dengan izin, *we deserved what we should have* sebagai rakan kongsi di
+ANGGARAN PEMBANGUNAN 2014",,■1210,1210,Tuan Ignatius Dorell Leiking [Penampang],"Dengan izin, *we deserved what we should have* sebagai rakan kongsi di
 Persekutuan Malaysia, dan semuanya terpulang kepada anda semua Ahli-ahli Yang
 Berhormat dari *Borneo* yang di dalam Dewan ini. Harus diingat, kita semua mempunyai
 tanggungjawab moral untuk memastikan agar Sabah dan Sarawak bergerak ke arah yang
@@ -1510,26 +1510,26 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1210,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Yang Berhormat...
+ANGGARAN PEMBANGUNAN 2014",,■1210,1210,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Yang Berhormat...
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1210,Tuan Ignatius Dorell Leiking [Penampang],"Tuan Yang di-Pertua, saya mohon
+ANGGARAN PEMBANGUNAN 2014",,■1210,1210,Tuan Ignatius Dorell Leiking [Penampang],"Tuan Yang di-Pertua, saya mohon
 mencadang, dan tolak cadangan dalam bajet yang tidak adil kepada Sabah dan Sarawak.
 Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1210,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Ya, saya ingatkan bahawa
+ANGGARAN PEMBANGUNAN 2014",,■1210,1210,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Ya, saya ingatkan bahawa
 semalam telah diputuskan perbahasan selepas Yang Berhormat Penampang ini, tidak
 melebihi 15 minit."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1210,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat Seputeh
+ANGGARAN PEMBANGUNAN 2014",,■1210,1210,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat Seputeh
 hendak baca surat Yang Berhormat Bakri? Saya baca surat Yang Berhormat Bakri, *“Sila
 beri seorang 10 minit berucap, sebab sekurang-kurangnya ada 40 orang belum berucap.
 Harap dipertimbangkan. Terima kasih - Yang Berhormat Bakri"".*"
@@ -1537,53 +1537,53 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1210,Dr. Mansor bin Haji Abd. Rahman [Sik],"Tidak cukup. Selama 10 minit tidak
+ANGGARAN PEMBANGUNAN 2014",,■1210,1210,Dr. Mansor bin Haji Abd. Rahman [Sik],"Tidak cukup. Selama 10 minit tidak
 cukup."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1210,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Ya, sila Yang Berhormat Sik."
+ANGGARAN PEMBANGUNAN 2014",,■1210,1210,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Ya, sila Yang Berhormat Sik."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1212,Dr. Mansor bin Haji Abd. Rahman [Sik],"Terima kasih Tuan Yang di-Pertua.
+ANGGARAN PEMBANGUNAN 2014",,12.12 tgh.,1212,Dr. Mansor bin Haji Abd. Rahman [Sik],"Terima kasih Tuan Yang di-Pertua.
 *Assalamumalaikum warahmatullaahi wabarakaatuh*. Salam 1Malaysia"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1212,ANNOTATION,"[Mengucapkan salam
+ANGGARAN PEMBANGUNAN 2014",,12.12 tgh.,1212,ANNOTATION,"[Mengucapkan salam
 dalam bahasa Cina,Tamil dan Siam]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1212,Dr. Mansor bin Haji Abd. Rahman [Sik],"Saya bersama-sama dengan Yang Berhormat Alor Gajah dan juga Yang
+ANGGARAN PEMBANGUNAN 2014",,12.12 tgh.,1212,Dr. Mansor bin Haji Abd. Rahman [Sik],"Saya bersama-sama dengan Yang Berhormat Alor Gajah dan juga Yang
 Berhormat-Yang Berhormat lain ingin mengucapkan selamat datang kepada pengundi-
 pengundi Alor Gajah dari Melaka"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1212,ANNOTATION,[Tepuk]
+ANGGARAN PEMBANGUNAN 2014",,12.12 tgh.,1212,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1212,Dr. Mansor bin Haji Abd. Rahman [Sik],Saya ingin memulakan perbahasan saya dengan sebaris ayat
+ANGGARAN PEMBANGUNAN 2014",,12.12 tgh.,1212,Dr. Mansor bin Haji Abd. Rahman [Sik],Saya ingin memulakan perbahasan saya dengan sebaris ayat
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1212,ANNOTATION,"[Membaca
+ANGGARAN PEMBANGUNAN 2014",,12.12 tgh.,1212,ANNOTATION,"[Membaca
 beberapa potong ayat Al-Quran]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1212,Dr. Mansor bin Haji Abd. Rahman [Sik],"Tuan Yang di-Pertua, pertama kali saya ingin
+ANGGARAN PEMBANGUNAN 2014",,12.12 tgh.,1212,Dr. Mansor bin Haji Abd. Rahman [Sik],"Tuan Yang di-Pertua, pertama kali saya ingin
 mengucapkan tahniah dan sangat berterima kasih kepada Yang Amat Berhormat Perdana
 Menteri kerana telah membentangkan sebuah bajet yang begitu mantap dan jitu yang
 merangkumi semua lapisan rakyat bagi memacu Malaysia ke arah sebuah negara yang
@@ -1675,7 +1675,7 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1220,Dr. Mansor bin Haji Abd. Rahman [Sik],"Dalam hal ini Tuan Yang di-Pertua, secara spesifiknya saya meminta agar
+ANGGARAN PEMBANGUNAN 2014",,■1220,1220,Dr. Mansor bin Haji Abd. Rahman [Sik],"Dalam hal ini Tuan Yang di-Pertua, secara spesifiknya saya meminta agar
 kerajaan memberi peruntukan kepada jalan luar bandar di Parlimen Sik. Jalan utama di
 dalam Dewan Undangan Jeneri yang menyusuri sebelah barat Banjaran Bukit Enggang ke
 Belantik sudah teruk dan rosak. Nampak seperti jalan tahun 80-an ataupun 90-an. Mestilah
@@ -1699,12 +1699,12 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1220,ANNOTATION,[Tepuk]
+ANGGARAN PEMBANGUNAN 2014",,■1220,1220,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1220,Dr. Mansor bin Haji Abd. Rahman [Sik],"Kita mengharapkan dari peruntukan RM450 juta Bekalan Air Bersih Luar Bandar di
+ANGGARAN PEMBANGUNAN 2014",,■1220,1220,Dr. Mansor bin Haji Abd. Rahman [Sik],"Kita mengharapkan dari peruntukan RM450 juta Bekalan Air Bersih Luar Bandar di
 bahagikan dan disalurkan kerana masih banyak kawasan-kawasan yang tidak dapat
 bekalan air bersih. Begitu juga dengan bekalan elektrik dan peruntukan bajet yang banyak.
 Peruntukan baik pulih 20,000 buah rumah sebanyak RM180 juta saya harap dapat
@@ -1717,37 +1717,37 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1220,Dato' Takiyuddin bin Hassan [Kota Bharu],Minta laluan Yang Berhormat Sik.
+ANGGARAN PEMBANGUNAN 2014",,■1220,1220,Dato' Takiyuddin bin Hassan [Kota Bharu],Minta laluan Yang Berhormat Sik.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1220,Dr. Mansor bin Haji Abd. Rahman [Sik],Anak manakan.
+ANGGARAN PEMBANGUNAN 2014",,■1220,1220,Dr. Mansor bin Haji Abd. Rahman [Sik],Anak manakan.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1220,Dato' Takiyuddin bin Hassan [Kota Bharu],"Boleh? Ya, ‘pak manakan’."
+ANGGARAN PEMBANGUNAN 2014",,■1220,1220,Dato' Takiyuddin bin Hassan [Kota Bharu],"Boleh? Ya, ‘pak manakan’."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1220,Dr. Mansor bin Haji Abd. Rahman [Sik],Hendak tolong kah?
+ANGGARAN PEMBANGUNAN 2014",,■1220,1220,Dr. Mansor bin Haji Abd. Rahman [Sik],Hendak tolong kah?
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1220,Dato' Takiyuddin bin Hassan [Kota Bharu],"Tolong, tolong."
+ANGGARAN PEMBANGUNAN 2014",,■1220,1220,Dato' Takiyuddin bin Hassan [Kota Bharu],"Tolong, tolong."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1220,Dr. Mansor bin Haji Abd. Rahman [Sik],"Tolong, okey."
+ANGGARAN PEMBANGUNAN 2014",,■1220,1220,Dr. Mansor bin Haji Abd. Rahman [Sik],"Tolong, okey."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1220,Dato' Takiyuddin bin Hassan [Kota Bharu],"Terima kasih Tuan Yang di-Pertua,
+ANGGARAN PEMBANGUNAN 2014",,■1220,1220,Dato' Takiyuddin bin Hassan [Kota Bharu],"Terima kasih Tuan Yang di-Pertua,
 terima kasih ‘pak sedara’ Sik. Tadi Yang Berhormat sebut mengenai keperluan jalan-jalan
 kampung, mini tar dan sebagainya. Jadi, minta daripada Kementerian Luar Bandar untuk
 memperbanyakkan di kawasan luar bandar seumpama Sik.
@@ -1765,18 +1765,18 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1220,Dr. Mansor bin Haji Abd. Rahman [Sik],"Ini bukan hendak tolong ini. Saya ingat
+ANGGARAN PEMBANGUNAN 2014",,■1220,1220,Dr. Mansor bin Haji Abd. Rahman [Sik],"Ini bukan hendak tolong ini. Saya ingat
 peruntukan sampai takat itu, maka jalan pun sampai takat itulah"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1220,ANNOTATION,[Ketawa]
+ANGGARAN PEMBANGUNAN 2014",,■1220,1220,ANNOTATION,[Ketawa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1220,Dr. Mansor bin Haji Abd. Rahman [Sik],"Tuan Yang di-
+ANGGARAN PEMBANGUNAN 2014",,■1220,1220,Dr. Mansor bin Haji Abd. Rahman [Sik],"Tuan Yang di-
 Pertua, dari segi akses internet kita mendengar banyak aduan sistem telekomunikasi tidak
 terdapat di kawasan luar bandar. Justeru itu, kita menyambut baik apabila 1,000 pemancar
 telekomunikasi akan dibina dalam tempoh tiga tahun dengan pelaburan sebanyak RM1.5
@@ -1812,18 +1812,18 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1220,Datuk Bung Moktar bin Radin [Kinabatangan],"Boleh minta penjelasan Yang
+ANGGARAN PEMBANGUNAN 2014",,■1220,1220,Datuk Bung Moktar bin Radin [Kinabatangan],"Boleh minta penjelasan Yang
 Berhormat?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1220,Dr. Mansor bin Haji Abd. Rahman [Sik],Sila.
+ANGGARAN PEMBANGUNAN 2014",,■1220,1220,Dr. Mansor bin Haji Abd. Rahman [Sik],Sila.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1220,Datuk Bung Moktar bin Radin [Kinabatangan],"Terima kasih Tuan Yang di-
+ANGGARAN PEMBANGUNAN 2014",,■1220,1220,Datuk Bung Moktar bin Radin [Kinabatangan],"Terima kasih Tuan Yang di-
 Pertua. Yang Berhormat, kita sedar bahawa kerajaan begitu prihatin untuk membantu terus
 kepada rakyat dalam bidang kesihatan dan kita nampak berbilion-bilion ringgit disediakan
 sama ada melalui klinik kesihatan, perubatan dan sebagainya. Kerajaan juga prihatin
@@ -1838,13 +1838,13 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1220,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat, boleh
+ANGGARAN PEMBANGUNAN 2014",,■1220,1220,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat, boleh
 gulung Yang Berhormat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1220,Dr. Mansor bin Haji Abd. Rahman [Sik],"Ya, sedikit. Saya masukkan ucapan
+ANGGARAN PEMBANGUNAN 2014",,■1220,1220,Dr. Mansor bin Haji Abd. Rahman [Sik],"Ya, sedikit. Saya masukkan ucapan
 Yang Berhormat Kinabatangan dalam ucapan saya. Penyakit buah pinggang yang kronik
 dan *end stage* ini terpaksa melakukan hemodialisis. Kerajaan akan membekalkan secara
 percuma kit rawatan *Continuous Ambulatory Peritoneal Dialysis* (CAPD) yang bernilai
@@ -1853,19 +1853,19 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1220,Dr. Haji Noor Azmi bin Ghazali [Bagan Serai],"Yang Berhormat Sik sekejap
+ANGGARAN PEMBANGUNAN 2014",,■1220,1220,Dr. Haji Noor Azmi bin Ghazali [Bagan Serai],"Yang Berhormat Sik sekejap
 boleh? Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1220,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat tidak ada
+ANGGARAN PEMBANGUNAN 2014",,■1220,1220,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat tidak ada
 masa dah Yang Berhormat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1220,Dr. Haji Noor Azmi bin Ghazali [Bagan Serai],"Satu minit Tuan Yang di-Pertua.
+ANGGARAN PEMBANGUNAN 2014",,■1220,1220,Dr. Haji Noor Azmi bin Ghazali [Bagan Serai],"Satu minit Tuan Yang di-Pertua.
 Boleh? Satu minit. Pertamanya terima kasih kerajaan kerana prihatin berikan CAPD ini
 secara percuma. Setujukah Yang Berhormat Sik yang saya tekankan sekarang ini
 mencegah adalah lebih baik dari merawat dan lebih mudah dan lebih murah. Dan *CKD –
@@ -1879,7 +1879,7 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1230,Dr. Mansor bin Haji Abd. Rahman [Sik],"Saya sangat setuju dengan Yang
+ANGGARAN PEMBANGUNAN 2014",,■1230,1230,Dr. Mansor bin Haji Abd. Rahman [Sik],"Saya sangat setuju dengan Yang
 Berhormat Bagan Serai dan masuk dalam teks ucapan saya. Tindakan kerajaan ini
 memberi CAPD yang percuma. Adalah satu rawatan yang bijak kerana CAPD lebih murah
 kosnya berbanding dengan proses hemodialisis dalam jangka masa panjang. Setiap kali
@@ -1897,54 +1897,54 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1230,Puan Teresa Kok Suh Sim [Seputeh],"Tuan Yang di-Pertua, tidak boleh sebut
+ANGGARAN PEMBANGUNAN 2014",,■1230,1230,Puan Teresa Kok Suh Sim [Seputeh],"Tuan Yang di-Pertua, tidak boleh sebut
 nama. Ahli Yang Berhormatlah, sebut kawasan Yang Berhormat Pekan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1230,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Ya, yang itu betul Yang
+ANGGARAN PEMBANGUNAN 2014",,■1230,1230,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Ya, yang itu betul Yang
 Berhormat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1230,Dr. Mansor bin Haji Abd. Rahman [Sik],"Terima kasih, masuk ucapan saya.
+ANGGARAN PEMBANGUNAN 2014",,■1230,1230,Dr. Mansor bin Haji Abd. Rahman [Sik],"Terima kasih, masuk ucapan saya.
 Terima kasih Yang Berhormat Seputeh, terima kasih banyak."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1230,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Itu tidak perlu masuk dalam
+ANGGARAN PEMBANGUNAN 2014",,■1230,1230,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Itu tidak perlu masuk dalam
 ucapan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1230,Dr. Mansor bin Haji Abd. Rahman [Sik],"Terima kasih kepada Yang Berhormat
+ANGGARAN PEMBANGUNAN 2014",,■1230,1230,Dr. Mansor bin Haji Abd. Rahman [Sik],"Terima kasih kepada Yang Berhormat
 Pekan. Akhir sekali, saya akhiri ucapan saya dengan ayat"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1230,ANNOTATION,"[Membaca sepotong ayat al-
+ANGGARAN PEMBANGUNAN 2014",,■1230,1230,ANNOTATION,"[Membaca sepotong ayat al-
 Quran]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1230,Dr. Mansor bin Haji Abd. Rahman [Sik],*.* Sik mohon menyokong.
+ANGGARAN PEMBANGUNAN 2014",,■1230,1230,Dr. Mansor bin Haji Abd. Rahman [Sik],*.* Sik mohon menyokong.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1230,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat Kuala
+ANGGARAN PEMBANGUNAN 2014",,■1230,1230,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat Kuala
 Terengganu."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1233,Dato' Raja Kamarul Bahrin Shah [Kuala Terengganu],"*Assalamualaikum
+ANGGARAN PEMBANGUNAN 2014",,12.33 tgh.,1233,Dato' Raja Kamarul Bahrin Shah [Kuala Terengganu],"*Assalamualaikum
 warrahmatullahi wabarakatuh, bismillahi rahmanir rahim.* Tuan Yang di-Pertua, Dewan
 Rakyat telah pun mendengar pembentangan Belanjawan 2014 pada 25 Oktober tentang
 dasar perbelanjaan kerajaan dan apa yang ketara adalah cara menangani isu-isu dari
@@ -2024,7 +2024,7 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1240,Dato' Raja Kamarul Bahrin Shah [Kuala Terengganu],"Sama juga saya ingin katakan di sini. Pada sidang Parlimen Pertama tahun ini,
+ANGGARAN PEMBANGUNAN 2014",,■ 1240,1240,Dato' Raja Kamarul Bahrin Shah [Kuala Terengganu],"Sama juga saya ingin katakan di sini. Pada sidang Parlimen Pertama tahun ini,
 saya telah menyatakan dan meminta Kementerian Kerja Raya menyatakan, siapakah yang
 bersalah dalam keadaan runtuhnya bumbung Stadium Terengganu. Ini kali ketiga Parlimen
 bersidang tahun ini tetapi masih juga tidak ada jawapan. Jadi, ironi pada isu masjid tadi
@@ -2045,7 +2045,7 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1240,Tuan Idris bin Haji Ahmad [Bukit Gantang],"Yang Berhormat Kuala Terengganu,
+ANGGARAN PEMBANGUNAN 2014",,■ 1240,1240,Tuan Idris bin Haji Ahmad [Bukit Gantang],"Yang Berhormat Kuala Terengganu,
 Yang Berhormat Kuala Terengganu, minta laluan. Banyak Yang Berhormat Kuala
 Terengganu mendedahkan tentang bagaimana projek-projek runtuh dan juga Laporan
 Audit. Soalan saya ialah bersetuju atau tidak Yang Berhormat Kuala Terengganu, perkara
@@ -2059,7 +2059,7 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1240,Dato’ Raja Kamarul Bahrin Shah [Kuala Terengganu],"Ya, terima kasih Yang
+ANGGARAN PEMBANGUNAN 2014",,■ 1240,1240,Dato’ Raja Kamarul Bahrin Shah [Kuala Terengganu],"Ya, terima kasih Yang
 Berhormat. Saya amat bersetuju bahawasanya banyak arahan diberi tanpa bertulis dan
 banyak profesional yang bertugas dalam kerajaan merasa sangat *frustration* kerana
 pandangan mereka, profesionalisme mereka tidak diberi pandangan yang sepatutnya. Itu
@@ -2103,24 +2103,24 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1240,Seorang Ahli,Hidup Melayu!
+ANGGARAN PEMBANGUNAN 2014",,■ 1240,1240,Seorang Ahli,Hidup Melayu!
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1240,Dato’ Raja Kamarul Bahrin Shah [Kuala Terengganu],"Hidup Melayu!
+ANGGARAN PEMBANGUNAN 2014",,■ 1240,1240,Dato’ Raja Kamarul Bahrin Shah [Kuala Terengganu],"Hidup Melayu!
 *Supermarket* kedua yang Sabasun cadangkan untuk dibina di Gong Badak ditolak dan
 tanah diambil balik, sementara sebuah Giant yang baru naik di sebelah."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1240,Beberapa Ahli,Hidup Melayu! Hidup Melayu!
+ANGGARAN PEMBANGUNAN 2014",,■ 1240,1240,Beberapa Ahli,Hidup Melayu! Hidup Melayu!
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1240,Dato’ Raja Kamarul Bahrin Shah [Kuala Terengganu],"Ini hidup Melayu
+ANGGARAN PEMBANGUNAN 2014",,■ 1240,1240,Dato’ Raja Kamarul Bahrin Shah [Kuala Terengganu],"Ini hidup Melayu
 sebelum TPPA lagi. Bayangkan apabila TPPA diadakan, di manakah Melayu akan
 merempat? Kalau kita betullah hendak memperkasakan Melayu, soalnya Melayu mana?
 Sabasun bukan minta subsidi, bukan minta tanah dan bukan minta geran. Hanya
@@ -2132,18 +2132,18 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1240,ANNOTATION,[Tepuk]
+ANGGARAN PEMBANGUNAN 2014",,■ 1240,1240,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1240,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Ya, boleh gulung, Yang
+ANGGARAN PEMBANGUNAN 2014",,■ 1240,1240,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Ya, boleh gulung, Yang
 Berhormat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1240,Dato’ Raja Kamarul Bahrin Shah [Kuala Terengganu],"Saya ingin menyatakan
+ANGGARAN PEMBANGUNAN 2014",,■ 1240,1240,Dato’ Raja Kamarul Bahrin Shah [Kuala Terengganu],"Saya ingin menyatakan
 di sini, tempayan yang bocor, sebelum ditambah air, baik ditampal dahulu. Saya juga ingin
 katakan di sini - selalu saya katakan tentang minyak Sabah, Sarawak dan Terengganu.
 *Di mana ada hutan dan semak,
@@ -2154,17 +2154,17 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1240,ANNOTATION,[Ketawa]
+ANGGARAN PEMBANGUNAN 2014",,■ 1240,1240,ANNOTATION,[Ketawa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1240,ANNOTATION,[Tepuk]
+ANGGARAN PEMBANGUNAN 2014",,■ 1240,1240,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1240,Dato’ Raja Kamarul Bahrin Shah [Kuala Terengganu],"Inilah yang menjadi penyakit kita. Tentang transformasi modal insan, kita ingin
+ANGGARAN PEMBANGUNAN 2014",,■ 1240,1240,Dato’ Raja Kamarul Bahrin Shah [Kuala Terengganu],"Inilah yang menjadi penyakit kita. Tentang transformasi modal insan, kita ingin
 menyatakan di sini. Pupuk sikap amanah amat penting. Bukan profesional yang hebat
 kerana kita cukup profesional. Akan tetapi bagaimana profesional pun, kalau tidak amanah,
 tidak ada integriti, kebocoran, ketirisan akan terus berlaku. Timbalan Perdana Menteri iaitu
@@ -2193,7 +2193,7 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1250,Dato’ Raja Kamarul Bahrin Shah [Kuala Terengganu],"Akan tetapi dalam masa yang sama Perbendaharaan juga yang meminta
+ANGGARAN PEMBANGUNAN 2014",,■1250,1250,Dato’ Raja Kamarul Bahrin Shah [Kuala Terengganu],"Akan tetapi dalam masa yang sama Perbendaharaan juga yang meminta
 konsultan memberi diskaun yang bukan-bukan. Konsultan di minta beri diskaun dan juga
 masuk tender. Konsultan yang sepatutnya jaga kontrak di minta masuk tender, pemborong
 yang sepatut dijaga diberi cara rundingan terus. Bagaimana itu Tuan Yang di-Pertua?
@@ -2216,13 +2216,13 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1250,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat Kuala
+ANGGARAN PEMBANGUNAN 2014",,■1250,1250,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat Kuala
 Kangsar."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1251,Dato’ Wan Mohammad Khair-il Anuar Wan Ahmad [Kuala Kangsar],"Terima
+ANGGARAN PEMBANGUNAN 2014",,12.51 tgh.,1251,Dato’ Wan Mohammad Khair-il Anuar Wan Ahmad [Kuala Kangsar],"Terima
 kasih Tuan Yang di-Pertua, *Bismillahi Rahmani Rahim.* Tuan Yang di-Pertua, Memperteguh
 Ketahanan Ekonomi, Memperkasa Transformasi dan Melaksana Janji. Begitulah tema Bajet
 2014 yang telah dibentangkan oleh Yang Amat Berhormat Perdana Menteri pada hari
@@ -2327,54 +2327,54 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1251,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat sambung
+ANGGARAN PEMBANGUNAN 2014",,12.51 tgh.,1251,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat sambung
 petang ini Yang Berhormat. Ahli-ahli Yang Berhormat mesyuarat ditangguhkan sehingga
 jam 2.30 petang ini."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1251,Dato’ Wan Mohammad Khair-il Anuar Wan Ahmad [Kuala Kangsar],"Ya, terima
+ANGGARAN PEMBANGUNAN 2014",,12.51 tgh.,1251,Dato’ Wan Mohammad Khair-il Anuar Wan Ahmad [Kuala Kangsar],"Ya, terima
 kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1300,ANNOTATION,[Mesyuarat ditempohkan pada pukul 1.00 petang]
+ANGGARAN PEMBANGUNAN 2014",,1.00 petang,1300,ANNOTATION,[Mesyuarat ditempohkan pada pukul 1.00 petang]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1430,Dato’ Wan Mohammad Khair-il Anuar Wan Ahmad [Kuala Kangsar],***Mesyuarat disambung semula pada pukul 2.30 petang.***
+ANGGARAN PEMBANGUNAN 2014",,■1430,1430,Dato’ Wan Mohammad Khair-il Anuar Wan Ahmad [Kuala Kangsar],***Mesyuarat disambung semula pada pukul 2.30 petang.***
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1430,ANNOTATION,"[Timbalan Yang di-Pertua (Dato' Haji Ismail bin Mohamed Said)
+ANGGARAN PEMBANGUNAN 2014",,■1430,1430,ANNOTATION,"[Timbalan Yang di-Pertua (Dato' Haji Ismail bin Mohamed Said)
 mempengerusikan Mesyuarat]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1430,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Mohamed Said],"*Bismillahi
+ANGGARAN PEMBANGUNAN 2014",,■1430,1430,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Mohamed Said],"*Bismillahi
 Rahmani Rahim. Assalamualaikum warahmatullahi wabarakaatuh*. Yang Berhormat Kuala
 Kangsar, masih berminat hendak sambung?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1430,Dato' Wan Mohammad Khair-il Anuar Wan Ahmad [Kuala Kangsar],"*Yes,* ya.
+ANGGARAN PEMBANGUNAN 2014",,■1430,1430,Dato' Wan Mohammad Khair-il Anuar Wan Ahmad [Kuala Kangsar],"*Yes,* ya.
 Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1430,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Mohamed Said],Tiga minit.
+ANGGARAN PEMBANGUNAN 2014",,■1430,1430,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Mohamed Said],Tiga minit.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1432,Dato' Wan Mohammad Khair-il Anuar Wan Ahmad [Kuala Kangsar],"Terima
+ANGGARAN PEMBANGUNAN 2014",,2.32 ptg.,1432,Dato' Wan Mohammad Khair-il Anuar Wan Ahmad [Kuala Kangsar],"Terima
 kasih Tuan Yang di-Pertua kerana mengizinkan saya untuk menyambung perbahasan saya
 berkaitan dengan keselamatan dan juga perlombongan. Sejarah lalu telah menceritakan
 bahawa beberapa siri Perang Larut yang berpunca dari pertelingkahan antara dua
@@ -2445,12 +2445,12 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1432,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Mohamed Said],"Ya, gulung."
+ANGGARAN PEMBANGUNAN 2014",,2.32 ptg.,1432,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Mohamed Said],"Ya, gulung."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1432,Dato' Wan Mohammad Khair-il Anuar Wan Ahmad [Kuala Kangsar],"Ya,
+ANGGARAN PEMBANGUNAN 2014",,2.32 ptg.,1432,Dato' Wan Mohammad Khair-il Anuar Wan Ahmad [Kuala Kangsar],"Ya,
 hendak gulung. Jadi kita harap pihak swasta dapat berperanan untuk membantu menyusun
 semula masyarakat kerana apabila kaum bumiputera diperkasakan bukan bersama-sama
 sahaja kita membantu ekonomi negara malahan membantu memperkukuhkan bukan
@@ -2475,7 +2475,7 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1440,Dato' Wan Mohammad Khair-il Anuar Wan Ahmad [Kuala Kangsar],"Pengguna sepatutnya mendapat harga barangan dengan lebih murah kerana
+ANGGARAN PEMBANGUNAN 2014",,■1440,1440,Dato' Wan Mohammad Khair-il Anuar Wan Ahmad [Kuala Kangsar],"Pengguna sepatutnya mendapat harga barangan dengan lebih murah kerana
 cukai berganda seperti dalam sektor perhotelan dan F&B diganti dengan hanya satu cukai
 sahaja. Rakyat terbanyak akan menikmati perkhidmatan kerajaan dengan lebih banyak dan
 murah dalam jangka masa yang panjang kerana perolehan cukai yang meningkat.
@@ -2506,48 +2506,48 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1440,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Ya, sila
+ANGGARAN PEMBANGUNAN 2014",,■1440,1440,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Ya, sila
 Yang Berhormat Raub."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1442,Dato' Mohd. Ariff Sabri bin Abdul Aziz [Raub],"*Assalamualaikum
+ANGGARAN PEMBANGUNAN 2014",,2.42 ptg.,1442,Dato' Mohd. Ariff Sabri bin Abdul Aziz [Raub],"*Assalamualaikum
 warahmatullaahi wabarakaatuh.*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1442,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Yang
+ANGGARAN PEMBANGUNAN 2014",,2.42 ptg.,1442,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Yang
 Berhormat Kuala Langat boleh rehat dahulu. Sakit tekak itu. Mengganggu Ahli yang lain
 berucap."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1442,Dato' Mohd. Ariff Sabri bin Abdul Aziz [Raub],"Tuan Yang di-Pertua, kalau kita
+ANGGARAN PEMBANGUNAN 2014",,2.42 ptg.,1442,Dato' Mohd. Ariff Sabri bin Abdul Aziz [Raub],"Tuan Yang di-Pertua, kalau kita
 hendak bincang GST..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1442,Seorang Ahli,
+ANGGARAN PEMBANGUNAN 2014",,2.42 ptg.,1442,Seorang Ahli,
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1442,ANNOTATION,[Bercakap tanpa menggunakan pembesar suara]
+ANGGARAN PEMBANGUNAN 2014",,2.42 ptg.,1442,ANNOTATION,[Bercakap tanpa menggunakan pembesar suara]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1442,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"*Mike* tidak
+ANGGARAN PEMBANGUNAN 2014",,2.42 ptg.,1442,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"*Mike* tidak
 dengar tetapi telinga saya dengar."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1442,Dato' Mohd. Ariff Sabri bin Abdul Aziz [Raub],"...Kalau kita hendak bincang
+ANGGARAN PEMBANGUNAN 2014",,2.42 ptg.,1442,Dato' Mohd. Ariff Sabri bin Abdul Aziz [Raub],"...Kalau kita hendak bincang
 GST ini bukan dalam masa 15 atau 20 minit. Ia boleh mengambil masa dua tiga jam, baru
 betul-betul bagus atau tidak bagus. Akan tetapi terima kasih Tuan Yang di-Pertua kerana
 memberi saya peluang untuk memberi sedikit pandangan mengenai Bajet 2014. Saya
@@ -2585,14 +2585,14 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1442,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Yang
+ANGGARAN PEMBANGUNAN 2014",,2.42 ptg.,1442,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Yang
 Berhormat Raub pandang ke belakang, pandang siapa? Yang Berhormat Lanang atau
 Yang Berhormat Kota Melaka?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1442,Dato' Mohd. Ariff Sabri bin Abdul Aziz [Raub],"Meluluskannya satu
+ANGGARAN PEMBANGUNAN 2014",,2.42 ptg.,1442,Dato' Mohd. Ariff Sabri bin Abdul Aziz [Raub],"Meluluskannya satu
 tanggungjawab yang berat maka hari ini kita membahaskannya, berdebat dan bertukar
 pandangan.
 Tuan Yang di-Pertua, ini bukan duit yang boleh diperlakukan sesuka hati. Cubaan
@@ -2610,23 +2610,23 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1442,ANNOTATION,[Ketawa]
+ANGGARAN PEMBANGUNAN 2014",,2.42 ptg.,1442,ANNOTATION,[Ketawa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1442,Dato' Mohd. Ariff Sabri bin Abdul Aziz [Raub],"Bapa kencing berdiri, anak kencing berlari. *Father urinate
+ANGGARAN PEMBANGUNAN 2014",,2.42 ptg.,1442,Dato' Mohd. Ariff Sabri bin Abdul Aziz [Raub],"Bapa kencing berdiri, anak kencing berlari. *Father urinate
 standing, son urinated running*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1442,ANNOTATION,[Ketawa]
+ANGGARAN PEMBANGUNAN 2014",,2.42 ptg.,1442,ANNOTATION,[Ketawa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1442,Dato' Mohd. Ariff Sabri bin Abdul Aziz [Raub],"Jadi, kita mesti melihat kepada RM262.4 bilion ini dan bagaimana ianya
+ANGGARAN PEMBANGUNAN 2014",,2.42 ptg.,1442,Dato' Mohd. Ariff Sabri bin Abdul Aziz [Raub],"Jadi, kita mesti melihat kepada RM262.4 bilion ini dan bagaimana ianya
 ditadbirkan sebab duit ini bukanlah yang duit kerajaan hasilkan. Ia datang daripada cukai
 dan hutang. Kekayaan dicipta oleh kilang-kilang di ladang-ladang, di pasar tani, di pasar
 borong, di dalam bilik lembaga pengarah syarikat. Oleh kerana demikian, setiap
@@ -2651,12 +2651,12 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1442,ANNOTATION,[Berucap dalam bahasa Arab]
+ANGGARAN PEMBANGUNAN 2014",,2.42 ptg.,1442,ANNOTATION,[Berucap dalam bahasa Arab]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1442,Dato' Mohd. Ariff Sabri bin Abdul Aziz [Raub],"Kamu suruh orang buat baik tetapi kamu
+ANGGARAN PEMBANGUNAN 2014",,2.42 ptg.,1442,Dato' Mohd. Ariff Sabri bin Abdul Aziz [Raub],"Kamu suruh orang buat baik tetapi kamu
 gagal mengingatkan diri kamu melakukan kebaikan itu terlebih dahulu.
 Sayang kerajaan tidak lakukan apa yang dikhutbahkan. Kerajaan mengelak dari
 nasihat ini dengan berhutang dan menanggung defisit. Ekonomik sebetulnya ialah satu
@@ -2671,7 +2671,7 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1450,Dato' Mohd. Ariff Sabri bin Abdul Aziz [Raub],"Kita menyembunyikan perbelanjaan oleh GLC umpamanya yang kita telah
+ANGGARAN PEMBANGUNAN 2014",,■1450,1450,Dato' Mohd. Ariff Sabri bin Abdul Aziz [Raub],"Kita menyembunyikan perbelanjaan oleh GLC umpamanya yang kita telah
 diberitahu beberapa hari yang lalu, sudah mencecah RM93 bilion. Kalau campur dengan
 hutang *public sector* yang saya jangka, penghujung tahun ini sudah pun mencapai RM458
 bilion, campur dengan *off budget* punya *contingent liabilities* yang sudah mencecah RM150
@@ -2724,24 +2724,24 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1450,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Boleh
+ANGGARAN PEMBANGUNAN 2014",,■1450,1450,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Boleh
 gulung Yang Berhormat Raub."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1450,Dato’ Mohd. Ariff Sabri bin Abdul Aziz [Raub],Ya.
+ANGGARAN PEMBANGUNAN 2014",,■1450,1450,Dato’ Mohd. Ariff Sabri bin Abdul Aziz [Raub],Ya.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1450,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Boleh
+ANGGARAN PEMBANGUNAN 2014",,■1450,1450,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Boleh
 gulung."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1450,Dato’ Mohd. Ariff Sabri bin Abdul Aziz [Raub],"Satu langkah yang baik. Boleh
+ANGGARAN PEMBANGUNAN 2014",,■1450,1450,Dato’ Mohd. Ariff Sabri bin Abdul Aziz [Raub],"Satu langkah yang baik. Boleh
 gulung, saya tidak bercakap pemerkasaan ekonomi bumiputera. RPGT ini adalah untuk
 mengekang spekulasi hartanah. Spekulasi menyebabkan harga tanah - walaupun kita
 berbeza pendirian politik, tetapi apa yang dicakapkan oleh Yang Berhormat Kuala Kangsar
@@ -2781,12 +2781,12 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1450,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],Habis.
+ANGGARAN PEMBANGUNAN 2014",,■1450,1450,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],Habis.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1450,Dato’ Mohd. Ariff Sabri bin Abdul Aziz [Raub],"Tidak, sikit lagi.
+ANGGARAN PEMBANGUNAN 2014",,■1450,1450,Dato’ Mohd. Ariff Sabri bin Abdul Aziz [Raub],"Tidak, sikit lagi.
 BR1M, sebab BR1M semalam ada- 2 minit lagi Tuan Yang di-Pertua. Semalam
 wakil daripada Yang Berhormat Parit Sulong ada sebut BR1M, jadi saya hendak sentuh
 sedikit. Pemberian *income transfer* dalam bentuk BR1M dan bantuan-bantuan lain adalah
@@ -2809,7 +2809,7 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1500,Dato’ Mohd. Ariff Sabri bin Abdul Aziz [Raub],"Jadi saya amat setuju. Semalam ada satu cadangan daripada wakil Barisan
+ANGGARAN PEMBANGUNAN 2014",,■1500,1500,Dato’ Mohd. Ariff Sabri bin Abdul Aziz [Raub],"Jadi saya amat setuju. Semalam ada satu cadangan daripada wakil Barisan
 Nasional supaya BR1M ini disampaikan melalui pejabat daerah ataupun urus setia bukan
 lagi diberi melalui Wakil-Wakil Rakyat, Ahli-ahli Parlimen yang berkelahi sesama sendiri nak
 berebut nak bagi BR1M. Saya diberitahu Tuan Yang di-Pertua, apabila BR1M 1.0 dan
@@ -2821,36 +2821,36 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1500,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Ya, tiga
+ANGGARAN PEMBANGUNAN 2014",,■1500,1500,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Ya, tiga
 minit saya bagi bantuan masa 1Malaysia kepada Yang Berhormat Raub."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1500,Dato' Mohd. Ariff Sabri bin Abdul Aziz [Raub],Terima kasih.
+ANGGARAN PEMBANGUNAN 2014",,■1500,1500,Dato' Mohd. Ariff Sabri bin Abdul Aziz [Raub],Terima kasih.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1500,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Bantuan
+ANGGARAN PEMBANGUNAN 2014",,■1500,1500,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Bantuan
 masa 1Malaysia."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1500,Dato' Mohd. Ariff Sabri bin Abdul Aziz [Raub],"Satu negeri, daripada satu
+ANGGARAN PEMBANGUNAN 2014",,■1500,1500,Dato' Mohd. Ariff Sabri bin Abdul Aziz [Raub],"Satu negeri, daripada satu
 negeri."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1500,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Sila, Yang
+ANGGARAN PEMBANGUNAN 2014",,■1500,1500,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Sila, Yang
 Berhormat Sibuti."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1501,Tuan Haji Ahmad Lai bin Bujang [Sibuti],"*Bismillahi Rahmani Rahim.
+ANGGARAN PEMBANGUNAN 2014",,3.01 ptg.,1501,Tuan Haji Ahmad Lai bin Bujang [Sibuti],"*Bismillahi Rahmani Rahim.
 Assalamualaikum warahmatullaahi wabarakaatuh*. Terima kasih Tuan Yang di-Pertua,
 terima kasih saya ucapkan kerana memberi peluang kepada saya untuk mengambil
 bahagian dalam perbahasan Bajet 2014 kali ini.
@@ -2930,7 +2930,7 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1510,Tuan Haji Ahmad Lai bin Bujang [Sibuti],"Ini kerana rumah pusaka keluarga tidak mampu menampung pertambahan jumlah
+ANGGARAN PEMBANGUNAN 2014",,■1510,1510,Tuan Haji Ahmad Lai bin Bujang [Sibuti],"Ini kerana rumah pusaka keluarga tidak mampu menampung pertambahan jumlah
 keluarga daripada setahun ke setahun. Selain daripada kawasan luar bandar, ini juga
 mampu menjana ekonomi serta ramai pasangan muda menetap terus di kampung. Sejak
 tahun 2009, saya melihat ada meningkatnya ketara dalam pemilikan rumah mesra rakyat
@@ -2974,13 +2974,13 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1510,Timbalan Yang di Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Ya,
+ANGGARAN PEMBANGUNAN 2014",,■1510,1510,Timbalan Yang di Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Ya,
 gulung."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1510,Tuan Haji Ahmad Lai bin Bujang [Sibuti],"Eh, cepat juga? Lagi banyak ini. Saya
+ANGGARAN PEMBANGUNAN 2014",,■1510,1510,Tuan Haji Ahmad Lai bin Bujang [Sibuti],"Eh, cepat juga? Lagi banyak ini. Saya
 *prepare* untuk setengah jam. Kesihatan. Terima kasih lah Yang Berhormat Menteri-menteri
 yang dahulu yang melawat kawasan saya, berjanji untuk menaik taraf klinik di Batu Niah,
 *insya-Allah* ditepati. Bajet banyak ini."
@@ -2988,13 +2988,13 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1510,Timbalan Yang di Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Isu
+ANGGARAN PEMBANGUNAN 2014",,■1510,1510,Timbalan Yang di Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Isu
 setempat boleh peringkat Jawatankuasa nanti."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1510,Tuan Haji Ahmad Lai bin Bujang [Sibuti],"Ya, bolehlah. Akan tetapi klinik ini
+ANGGARAN PEMBANGUNAN 2014",,■1510,1510,Tuan Haji Ahmad Lai bin Bujang [Sibuti],"Ya, bolehlah. Akan tetapi klinik ini
 sebab janji hospital dahulu, hospital sudah tidak bangun, maka klinik naik taraf, tolonglah
 klinik dua tempat ini, di Bekenu dan di Niah.
 Sedikit lagi Tuan Yang di-Pertua. Kepada Yang Berhormat Menteri Belia dan
@@ -3016,13 +3016,13 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1510,Timbalan Yang di Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Ya,
+ANGGARAN PEMBANGUNAN 2014",,■1510,1510,Timbalan Yang di Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Ya,
 terima kasih. Yang Berhormat Nibong Tebal."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1518,Dato' Mansor bin Othman [Nibong Tebal],"Terima kasih Yang Berhormat Tuan
+ANGGARAN PEMBANGUNAN 2014",,3.18 ptg.,1518,Dato' Mansor bin Othman [Nibong Tebal],"Terima kasih Yang Berhormat Tuan
 Yang di-Pertua. *Assalamualaikum warahmatullahi wabarakaatuh,* dan salam sejahtera.
 Mula-mula sekali hendak ucap Selamat Deepavali kepada rakan-rakan yang akan
 menyambut. Terima kasih.
@@ -3046,7 +3046,7 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1520,Dato' Mansor bin Othman [Nibong Tebal],"Tuan Yang di-Pertua, saya tidak ada masalah dengan ini malah saya sokong kuat
+ANGGARAN PEMBANGUNAN 2014",,■1520,1520,Dato' Mansor bin Othman [Nibong Tebal],"Tuan Yang di-Pertua, saya tidak ada masalah dengan ini malah saya sokong kuat
 ini. Malah saya juga tuntut supaya banyak lagi seperti tanah wakaf, Baitulmal, wang zakat
 patut difikirkan semula bagaimana boleh dimanfaatkan untuk memperkasakan bumiputera
 ini. Begitu juga kepada masyarakat India malah Perdana Menteri mengucapkan “*Romba
@@ -3073,18 +3073,18 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1520,Dato' Takiyuddin bin Hassan [Kota Bharu],"Yang Berhormat Nibong Tebal
+ANGGARAN PEMBANGUNAN 2014",,■1520,1520,Dato' Takiyuddin bin Hassan [Kota Bharu],"Yang Berhormat Nibong Tebal
 minta laluan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1520,Dato' Mansor bin Othman [Nibong Tebal],Saya minta maaf...
+ANGGARAN PEMBANGUNAN 2014",,■1520,1520,Dato' Mansor bin Othman [Nibong Tebal],Saya minta maaf...
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1520,Dato' Takiyuddin bin Hassan [Kota Bharu],"Setengah minit, setengah minit.
+ANGGARAN PEMBANGUNAN 2014",,■1520,1520,Dato' Takiyuddin bin Hassan [Kota Bharu],"Setengah minit, setengah minit.
 Okey, terima kasih Tuan Yang di-Pertua. Tadi Yang Berhormat Nibong Tebal ada menyebut
 sumbangan dalam bajet ini sebanyak RM50 juta kepada masyarakat India. Saya hendak
 tanya pandangan Yang Berhormat Nibong Tebal, dalam Bajet 2013 yang tahun lepas,
@@ -3095,7 +3095,7 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1520,Dato' Mansor bin Othman [Nibong Tebal],"Terima kasih Yang Berhormat Kota
+ANGGARAN PEMBANGUNAN 2014",,■1520,1520,Dato' Mansor bin Othman [Nibong Tebal],"Terima kasih Yang Berhormat Kota
 Bharu. Sebenarnya saya akan sentuh dalam pelaksanaan sebab fokus perbahasan saya ini
 adalah dalam aspek pelaksanaan Tuan Yang di-Pertua. Kalau boleh kita masukkan
 persoalan itu dalam ini, dalam ucapan saya juga.
@@ -3160,7 +3160,7 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1530,Dato' Mansor bin Othman [Nibong Tebal],"Ini pengumuman *on the spot* ini. Ini bermakna apa? Saya semasa mula-mula buat
+ANGGARAN PEMBANGUNAN 2014",,■1530,1530,Dato' Mansor bin Othman [Nibong Tebal],"Ini pengumuman *on the spot* ini. Ini bermakna apa? Saya semasa mula-mula buat
 projek ini dulu, pada masa itu Yang Berhormat Jeli dan juga Yang Berhormat Besut adalah
 Menteri dan Timbalan Menteri yang bertanggungjawab. Saya kata okey kalau hendak dapat
 pulangan politik, tetapi kalau hendak mendapat kejayaan pelaksanaan projek ini, jangan
@@ -3186,13 +3186,13 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1530,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Ya,
+ANGGARAN PEMBANGUNAN 2014",,■1530,1530,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Ya,
 gulung."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1530,Dato’ Mansor bin Othman [Nibong Tebal],"Ya, kita sambut baik terutama sekali
+ANGGARAN PEMBANGUNAN 2014",,■1530,1530,Dato’ Mansor bin Othman [Nibong Tebal],"Ya, kita sambut baik terutama sekali
 dalam bidang sains, teknologi dan inovasi. Akan tetapi dalam masa yang sama, *the soft
 research* ataupun penyelidikan dalam bidang sosioekonomi yang memberi input besar
 kepada pembentukan dan pelaksanaan dasar kerajaan, perlu juga diberi perhatian. Kalau
@@ -3230,13 +3230,13 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1530,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Ya, Yang
+ANGGARAN PEMBANGUNAN 2014",,■1530,1530,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Ya, Yang
 Berhormat Tenom."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1535,Datuk Raime Unggi [Tenom],"Terima kasih Tuan Yang di-Pertua kerana memberi
+ANGGARAN PEMBANGUNAN 2014",,3.35 ptg.,1535,Datuk Raime Unggi [Tenom],"Terima kasih Tuan Yang di-Pertua kerana memberi
 saya peluang juga untuk melibatkan dalam perbahasan pada petang ini. Saya berusaha
 untuk menepati masa yang telah diperuntukkan oleh Tuan Yang di-Pertua.
 Terima kasih kepada Allah SWT kerana terus memberi saya kekuatan untuk
@@ -3296,7 +3296,7 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1540,Datuk Raime Unggi [Tenom],"Akan tetapi apa yang menjadi masalah ialah ada pihak tertentu yang cuba
+ANGGARAN PEMBANGUNAN 2014",,■1540,1540,Datuk Raime Unggi [Tenom],"Akan tetapi apa yang menjadi masalah ialah ada pihak tertentu yang cuba
 menjadikan isu NCR ini sebagai isu duri dalam daging bagi Kerajaan Barisan Nasional
 terutama pada setiap kali Pilihan Raya Umum. Isu NCR membabitkan kaum Bumiputera
 yang tinggal di luar bandar dan juga pedalaman. Persoalannya Tuan Yang di-Pertua
@@ -3406,13 +3406,13 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1540,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Ya,
+ANGGARAN PEMBANGUNAN 2014",,■1540,1540,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Ya,
 gulung."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1540,Datuk Raime Unggi [Tenom],"Ya. Tuan Yang di-Pertua, bagi negeri Sabah
+ANGGARAN PEMBANGUNAN 2014",,■1540,1540,Datuk Raime Unggi [Tenom],"Ya. Tuan Yang di-Pertua, bagi negeri Sabah
 pelaksanaan pembangunan luar bandar perlu sentiasa ditambah baik dan memberikan
 keutamaan kepada pembangunan di suatu kawasan supaya dapat menambah keyakinan
 rakyat kepada usaha yang telah dilakukan oleh pihak kerajaan. Perlu diingat, masih banyak
@@ -3437,7 +3437,7 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1550,Datuk Raime Unggi [Tenom],"Dalam Bajet 2014 tahun hadapan kerajaan telah mengumumkan bonus serta
+ANGGARAN PEMBANGUNAN 2014",,■1550,1550,Datuk Raime Unggi [Tenom],"Dalam Bajet 2014 tahun hadapan kerajaan telah mengumumkan bonus serta
 menambah baik 81 skim perkhidmatan dari pelbagai peringkat yang melibatkan 613,743
 kakitangan awam. Saya mohon supaya pihak JPA segerakan untuk umumkan apakah
 penambahbaikan 81 skim yang telah diumumkan itu. Saya berharap dalam 81 skim
@@ -3457,13 +3457,13 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1550,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Terima
+ANGGARAN PEMBANGUNAN 2014",,■1550,1550,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Terima
 kasih. Yang Berhormat Pengkalan Chepa."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1551,Dr. Izani bin Husin [Pengkalan Chepa],"*Bismillahi Rahmani Rahim.
+ANGGARAN PEMBANGUNAN 2014",,3.51 ptg.,1551,Dr. Izani bin Husin [Pengkalan Chepa],"*Bismillahi Rahmani Rahim.
 Assalamualaikum warahmatullahi wabarakatuh. Hubbulwatan minal iman*. Sayangkan
 negara sebahagian daripada iman.
 Terima kasih Tuan Yang di-Pertua kerana memberi peluang kepada saya untuk
@@ -3477,12 +3477,12 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1551,ANNOTATION,[Berucap dalam bahasa Arab]
+ANGGARAN PEMBANGUNAN 2014",,3.51 ptg.,1551,ANNOTATION,[Berucap dalam bahasa Arab]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1551,Dr. Izani bin Husin [Pengkalan Chepa],"Milik Allah, apa yang di langit, apa yang di
+ANGGARAN PEMBANGUNAN 2014",,3.51 ptg.,1551,Dr. Izani bin Husin [Pengkalan Chepa],"Milik Allah, apa yang di langit, apa yang di
 bumi, apa yang ada di antara langit dan bumi juga di dalam perut bumi.
 Tuan Yang di-Pertua, bajet adalah perkara biasa bagi sebuah kerajaan negeri atau
 pun keluarga atau pun negara. Kalau kita lihat bajet yang dibentangkan baru-baru ini
@@ -3556,7 +3556,7 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1600,Dr. Izani bin Husin [Pengkalan Chepa],"Kedua, kenapa rasional lapangan terbang ini perlu dinaiktarafkan. Pertama, tanah
+ANGGARAN PEMBANGUNAN 2014",,■1600,1600,Dr. Izani bin Husin [Pengkalan Chepa],"Kedua, kenapa rasional lapangan terbang ini perlu dinaiktarafkan. Pertama, tanah
 telah diambil sejak akhir 70-an. Ada lagi jaraknya lebih kurang satu kilometer, boleh
 dipanjangkan *airport* itu. Lapangan terbang itu dulunya adalah namanya Lapangan Terbang
 Pengkalan Chepa dan kawasannya pun kawasan saya, kawasan Pengkalan Chepa dan
@@ -3590,12 +3590,12 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1600,ANNOTATION,[Tepuk]
+ANGGARAN PEMBANGUNAN 2014",,■1600,1600,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1600,Dr. Izani bin Husin [Pengkalan Chepa],"Berikanlah royalti itu kepada kerajaan yang sah, yang dipilih oleh rakyat. Sekali lagi
+ANGGARAN PEMBANGUNAN 2014",,■1600,1600,Dr. Izani bin Husin [Pengkalan Chepa],"Berikanlah royalti itu kepada kerajaan yang sah, yang dipilih oleh rakyat. Sekali lagi
 saya ulangi, saya mendesak dan juga merayu bagi pihak rakyat Kelantan, berilah royalti ini
 kepada rakyat Kelantan melalui kerajaan negeri yang sah, yang dipilih oleh rakyat.
 Tuan Yang di-Pertua, seperkara lagi yang saya ingin sebut hari ini ialah perkara
@@ -3624,13 +3624,13 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1600,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Ya, boleh gulung Yang
+ANGGARAN PEMBANGUNAN 2014",,■1600,1600,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Ya, boleh gulung Yang
 Berhormat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1600,Dr. Izani bin Husin [Pengkalan Chepa],"Mengenai GST, saya rasa saya tidak
+ANGGARAN PEMBANGUNAN 2014",,■1600,1600,Dr. Izani bin Husin [Pengkalan Chepa],"Mengenai GST, saya rasa saya tidak
 masuk campur dalam GST ini kerana ramai sudah menyentuhnya. Cuma bagi saya GST ini
 tidak lebih daripada pukat tunda. Semua dia gasak. Islam suruh kita kutip daripada orang-
 orang kaya raya, *multimillionaire*, kita kutip daripada orang miskin. Kita bangga juga dengan
@@ -3646,12 +3646,12 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1600,ANNOTATION,[Membaca beberapa potong ayat al-Quran]
+ANGGARAN PEMBANGUNAN 2014",,■1600,1600,ANNOTATION,[Membaca beberapa potong ayat al-Quran]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1600,Dr. Izani bin Husin [Pengkalan Chepa],"Nanti di akhirat nanti kita lihat orang-
+ANGGARAN PEMBANGUNAN 2014",,■1600,1600,Dr. Izani bin Husin [Pengkalan Chepa],"Nanti di akhirat nanti kita lihat orang-
 orang *Mujrimun*, orang-orang yang berdosa, orang-orang rasuah, salah guna kuasa,
 mencuri, merompak dan sebagainya tunduk terpaku dalam keadaan terhina. Mereka
 mengakui mereka melihat dan mereka mendengar. Mereka mengakui kerana mereka
@@ -3661,12 +3661,12 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1600,ANNOTATION,[Membaca sepotong ayat al-Quran]
+ANGGARAN PEMBANGUNAN 2014",,■1600,1600,ANNOTATION,[Membaca sepotong ayat al-Quran]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1600,Dr. Izani bin Husin [Pengkalan Chepa],"Antara
+ANGGARAN PEMBANGUNAN 2014",,■1600,1600,Dr. Izani bin Husin [Pengkalan Chepa],"Antara
 maksudnya, hantarlah aku balik ke dunia semula, aku akan beramal soleh dan buat baik.
 Jadi sama-samalah kita ambil ingatan kerana kita semua sayang kepada negara ini.
 *Wallahu a’lam*. Terima kasih."
@@ -3674,12 +3674,12 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1600,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Yang Berhormat Limbang.
+ANGGARAN PEMBANGUNAN 2014",,■1600,1600,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Yang Berhormat Limbang.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1608,Tuan Haji Hasbi bin Haji Habibollah [Limbang],"Terima kasih Tuan Yang di-
+ANGGARAN PEMBANGUNAN 2014",,4.08 ptg.,1608,Tuan Haji Hasbi bin Haji Habibollah [Limbang],"Terima kasih Tuan Yang di-
 Pertua kerana memberi peluang kepada saya untuk membahaskan Bajet 2014. Pertama
 sekali saya mengucapkan tahniah dan syabas kepada Yang Amat Berhormat Pekan atas
 pembentangan Bajet 2014.
@@ -3701,7 +3701,7 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1610,Tuan Haji Hasbi bin Haji Habibollah [Limbang],"Tuan Yang di-Pertua, kerajaan mengambil inisiatif bijak dan berhemah dengan
+ANGGARAN PEMBANGUNAN 2014",,■1610,1610,Tuan Haji Hasbi bin Haji Habibollah [Limbang],"Tuan Yang di-Pertua, kerajaan mengambil inisiatif bijak dan berhemah dengan
 menyediakan bantuan kepada golongan berpendapatan rendah dan mudah terjejas.
 Program kebajikan yang diperkenalkan kerajaan sebagai sebahagian daripada inisiatif
 jaringan keselamatan sosial terbukti telah memberi manfaat kepada 514,066 kumpulan
@@ -3823,7 +3823,7 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1620,Tuan Haji Hasbi bin Haji Habibollah [Limbang],"Jadi, saya minta dalam bajet ini akan diberi keutamaan untuk menyambung
+ANGGARAN PEMBANGUNAN 2014",,■1620,1620,Tuan Haji Hasbi bin Haji Habibollah [Limbang],"Jadi, saya minta dalam bajet ini akan diberi keutamaan untuk menyambung
 daripada Simpang Ukong ke pekan kecil Nanga Mendamit ini. Satu lagi ialah di kawasan
 bekalan air luar bandar ini juga kawasan Ulu Pandaruan. Dalam penggal lepas sehinggalah
 pada awal tahun ini, paip air sudah siap. Semua paip telah ditanam, pili bomba semua
@@ -3868,24 +3868,24 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1620,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Kawasan saya Yang
+ANGGARAN PEMBANGUNAN 2014",,■1620,1620,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Kawasan saya Yang
 Berhormat, ada 10 kampung atas air."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1620,Tuan Haji Hasbi bin Haji Habibollah [Limbang],"Inilah sepatutnya perkara ini
+ANGGARAN PEMBANGUNAN 2014",,■1620,1620,Tuan Haji Hasbi bin Haji Habibollah [Limbang],"Inilah sepatutnya perkara ini
 diambil perhatian oleh semua pihak."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1620,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Masukkan itulah ya.
+ANGGARAN PEMBANGUNAN 2014",,■1620,1620,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Masukkan itulah ya.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1620,Tuan Haji Hasbi bin Haji Habibollah [Limbang],"Boleh dimasukkan ucapan Tuan
+ANGGARAN PEMBANGUNAN 2014",,■1620,1620,Tuan Haji Hasbi bin Haji Habibollah [Limbang],"Boleh dimasukkan ucapan Tuan
 Yang di-Pertua ke dalam ucapan saya. Jadi, perkara ini mungkin kecil. Tidak tahulah kalau
 hendak tunggu tempat siapa hangus dahulu baru hendak bagi. Jangan lupa kami di
 kampung-kampung di atas air ini. Kampung Tuan Yang di-Pertua dan sebagainya. Perkara
@@ -3934,38 +3934,38 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1620,Tuan Ignatius Dorell Leiking [Penampang],Yang Berhormat.
+ANGGARAN PEMBANGUNAN 2014",,■1620,1620,Tuan Ignatius Dorell Leiking [Penampang],Yang Berhormat.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1620,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Sekejap Yang Berhormat.
+ANGGARAN PEMBANGUNAN 2014",,■1620,1620,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Sekejap Yang Berhormat.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1620,Tuan Haji Hasbi bin Haji Habibollah [Limbang],"*Sorry, I cannot give you. I have
+ANGGARAN PEMBANGUNAN 2014",,■1620,1620,Tuan Haji Hasbi bin Haji Habibollah [Limbang],"*Sorry, I cannot give you. I have
 lots of things to say.*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1620,Tuan Ignatius Dorell Leiking [Penampang],*Just to add*...
+ANGGARAN PEMBANGUNAN 2014",,■1620,1620,Tuan Ignatius Dorell Leiking [Penampang],*Just to add*...
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1620,Tuan Haji Hasbi bin Haji Habibollah [Limbang],"*Sorry, please*."
+ANGGARAN PEMBANGUNAN 2014",,■1620,1620,Tuan Haji Hasbi bin Haji Habibollah [Limbang],"*Sorry, please*."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1620,Tuan Ignatius Dorell Leiking [Penampang],Okey.
+ANGGARAN PEMBANGUNAN 2014",,■1620,1620,Tuan Ignatius Dorell Leiking [Penampang],Okey.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1620,Tuan Haji Hasbi bin Haji Habibollah [Limbang],"Saya minta supaya pasport biru
+ANGGARAN PEMBANGUNAN 2014",,■1620,1620,Tuan Haji Hasbi bin Haji Habibollah [Limbang],"Saya minta supaya pasport biru
 ini kalau hendak blok pun saya faham, pasport merah supaya orang tidak lari ke luar
 negara. Kalau pasport biru itu tidak boleh pergi ke mana, melintas Brunei sahaja, tidak
 boleh pergi mana. Naik kapal terbang pun boleh pergi Kota Kinabalu, pergi Kuching sahaja
@@ -3980,24 +3980,24 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1620,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat, habiskan
+ANGGARAN PEMBANGUNAN 2014",,■1620,1620,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat, habiskan
 yang satu itu, selepas itu gulung."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1620,Tuan Haji Hasbi bin Haji Habibollah [Limbang],"Boleh. Belum gulung lagi Tuan
+ANGGARAN PEMBANGUNAN 2014",,■1620,1620,Tuan Haji Hasbi bin Haji Habibollah [Limbang],"Boleh. Belum gulung lagi Tuan
 Yang di-Pertua."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1620,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Sudah masuk waktu, habis."
+ANGGARAN PEMBANGUNAN 2014",,■1620,1620,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Sudah masuk waktu, habis."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1620,Tuan Haji Hasbi bin Haji Habibollah [Limbang],"Okey, iaitu tentang menteri
+ANGGARAN PEMBANGUNAN 2014",,■1620,1620,Tuan Haji Hasbi bin Haji Habibollah [Limbang],"Okey, iaitu tentang menteri
 yang lepas iaitu masalah mendapan kuala Sungai Limbang. Sekarang ini kampung-
 kampung sepanjang Sungai Limbang kalau ada pasang besar, sekaki dimasuki air.
 Semuanya disebabkan oleh mendapan di kuala Limbang. Akan tetapi telah pun diluluskan
@@ -4025,12 +4025,12 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1620,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Yang Berhormat Lanang.
+ANGGARAN PEMBANGUNAN 2014",,■1620,1620,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Yang Berhormat Lanang.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1630,Puan Alice Lau Kiong Yieng [Lanang],"Terima kasih Tuan Yang di-Pertua
+ANGGARAN PEMBANGUNAN 2014",,4.30 ptg.,1630,Puan Alice Lau Kiong Yieng [Lanang],"Terima kasih Tuan Yang di-Pertua
 kerana memberi peluang kepada saya untuk membahaskan usul Bajet 2014 di Dewan yang
 mulia ini.
 Tuan Yang di-Pertua, pada pendapat saya, Laporan Ketua Audit Negara
@@ -4077,43 +4077,43 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1630,Tuan Manivannan a/l Gowindasamy [Kapar],
+ANGGARAN PEMBANGUNAN 2014",,4.30 ptg.,1630,Tuan Manivannan a/l Gowindasamy [Kapar],
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1630,ANNOTATION,[Bangun]
+ANGGARAN PEMBANGUNAN 2014",,4.30 ptg.,1630,ANNOTATION,[Bangun]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1630,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat Kapar
+ANGGARAN PEMBANGUNAN 2014",,4.30 ptg.,1630,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat Kapar
 bangun, Yang Berhormat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1630,Tuan Manivannan a/l Gowindasamy [Kapar],"Gula, gula, gula."
+ANGGARAN PEMBANGUNAN 2014",,4.30 ptg.,1630,Tuan Manivannan a/l Gowindasamy [Kapar],"Gula, gula, gula."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1630,Puan Alice Lau Kiong Yieng [Lanang],Satu minit sahaja.
+ANGGARAN PEMBANGUNAN 2014",,4.30 ptg.,1630,Puan Alice Lau Kiong Yieng [Lanang],Satu minit sahaja.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1630,Tuan Manivannan a/l Gowindasamy [Kapar],Setengah minit.
+ANGGARAN PEMBANGUNAN 2014",,4.30 ptg.,1630,Tuan Manivannan a/l Gowindasamy [Kapar],Setengah minit.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1630,Puan Alice Lau Kiong Yieng [Lanang],"Ya, setengah minit."
+ANGGARAN PEMBANGUNAN 2014",,4.30 ptg.,1630,Puan Alice Lau Kiong Yieng [Lanang],"Ya, setengah minit."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1630,Tuan Manivannan a/l Gowindasamy [Kapar],"Terima kasih. Ini tentang
+ANGGARAN PEMBANGUNAN 2014",,4.30 ptg.,1630,Tuan Manivannan a/l Gowindasamy [Kapar],"Terima kasih. Ini tentang
 kekurangan subsidi gula, diumumkan tanpa menghiraukan sentimen kaum India. Kerajaan
 Barisan Nasional tidak langsung peka kepada perayaan Deepavali yang diraikan oleh kaum
 India di Malaysia. Amat jelas kenaikan harga gula akan membawa satu kesukaran kepada
@@ -4123,7 +4123,7 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1630,Puan Alice Lau Kiong Yieng [Lanang],"Masukkan ucapan Yang Berhormat
+ANGGARAN PEMBANGUNAN 2014",,4.30 ptg.,1630,Puan Alice Lau Kiong Yieng [Lanang],"Masukkan ucapan Yang Berhormat
 Kapar dalam ucapan saya. Ini adalah ‘janji dicapati’. Hari ini, persatuan *bakery* di Sarawak
 telah mengumumkan kenaikan harga sebanyak 15% ke atas semua roti mulai bulan
 Disember 2013. Ini amat membebankan rakyat jelata.
@@ -4175,7 +4175,7 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1640,Puan Alice Lau Kiong Yieng [Lanang],"Banyak lagi jalan akses utama ke rumah panjang tidak bertar dan sentiasa dinaiki
+ANGGARAN PEMBANGUNAN 2014",,■1640,1640,Puan Alice Lau Kiong Yieng [Lanang],"Banyak lagi jalan akses utama ke rumah panjang tidak bertar dan sentiasa dinaiki
 air serta berlumpur ketika musim hujan. Laluannya juga berbatu-batu bergantung kepada
 musim-musim tertentu. Malah mereka yang berasal daripada kaum Iban dan turut
 berbangga dengan kaum mereka. Walaupun tidak menikmati kehidupan sempurna di
@@ -4209,22 +4209,22 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1640,Tuan Haji Mohd Fasiah bin Mohd. Fakeh [Sabak Bernam],
+ANGGARAN PEMBANGUNAN 2014",,■1640,1640,Tuan Haji Mohd Fasiah bin Mohd. Fakeh [Sabak Bernam],
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1640,ANNOTATION,[Bangun]
+ANGGARAN PEMBANGUNAN 2014",,■1640,1640,ANNOTATION,[Bangun]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1640,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Yang Berhormat Labuan.
+ANGGARAN PEMBANGUNAN 2014",,■1640,1640,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Yang Berhormat Labuan.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1643,Tuan Rozman bin Isli [Labuan],"Terima kasih Tuan Yang di-Pertua. Setelah
+ANGGARAN PEMBANGUNAN 2014",,4.43 ptg.,1643,Tuan Rozman bin Isli [Labuan],"Terima kasih Tuan Yang di-Pertua. Setelah
 menghayati perincian inti pati Belanjawan 2014 yang di bentangkan oleh Yang Amat
 Berhormat Perdana Menteri merangkap Menteri Kewangan pada 25 Oktober 2013 di
 Dewan yang mulia ini. Saya merasakan tiada ungkapan yang lebih tepat selain daripada
@@ -4280,18 +4280,18 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1643,Tuan Liang Teck Meng [Simpang Renggam],Yang Berhormat boleh...
+ANGGARAN PEMBANGUNAN 2014",,4.43 ptg.,1643,Tuan Liang Teck Meng [Simpang Renggam],Yang Berhormat boleh...
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1643,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat Simpang
+ANGGARAN PEMBANGUNAN 2014",,4.43 ptg.,1643,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat Simpang
 Renggam, Yang Berhormat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1643,Tuan Liang Teck Meng [Simpang Renggam],"Yang Berhormat Labuan, boleh?
+ANGGARAN PEMBANGUNAN 2014",,4.43 ptg.,1643,Tuan Liang Teck Meng [Simpang Renggam],"Yang Berhormat Labuan, boleh?
 Saya minta penjelasan Yang Berhormat sebab ada setengah pihak yang telah pun
 menganggarkan dia membuat pengiraan bahawa *target*nya keluarga berpendapatan yang
 mana isi rumahnya kurang daripada RM2,000. Dia kira-kira GST akan dikenakan bila
@@ -4300,7 +4300,7 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1650,Tuan Liang Teck Meng [Simpang Renggam],"Di samping itu, kerajaan pula bagi BR1M sebanyak RM650. Jadi, ada satu
+ANGGARAN PEMBANGUNAN 2014",,■1650,1650,Tuan Liang Teck Meng [Simpang Renggam],"Di samping itu, kerajaan pula bagi BR1M sebanyak RM650. Jadi, ada satu
 persepsi yang wujud di kalangan awam bahawa kerajaan bagi duit masuk poket kanan,
 lepas itu keluarkan dari poket kiri. Jadi, pandangan Yang Berhormat, perlu tidak kita - sebab
 saya tidak percaya dengan pembangkang, maka perlukah kita minta satu penjelasan yang
@@ -4309,64 +4309,64 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1650,Tuan Rozman bin Isli [Labuan],"Kita keluar dari satu poket dengan amaun yang
+ANGGARAN PEMBANGUNAN 2014",,■1650,1650,Tuan Rozman bin Isli [Labuan],"Kita keluar dari satu poket dengan amaun yang
 lebih kecil dibandingkan dengan amaun yang masuk pula di poket yang lain. Sebenarnya
 itulah yang sedang berlaku."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1650,Tuan Sim Chee Keong [Bukit Mertajam],"Bermakna, setujulah keluar poket kiri,
+ANGGARAN PEMBANGUNAN 2014",,■1650,1650,Tuan Sim Chee Keong [Bukit Mertajam],"Bermakna, setujulah keluar poket kiri,
 masuk poket kanan. Setuju ya?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1650,Tuan Khalid bin Abd. Samad [Shah Alam],Sedikit.
+ANGGARAN PEMBANGUNAN 2014",,■1650,1650,Tuan Khalid bin Abd. Samad [Shah Alam],Sedikit.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1650,Tuan Rozman bin Isli [Labuan],"Saya ada 15 minit sahaja ini Yang Berhormat
+ANGGARAN PEMBANGUNAN 2014",,■1650,1650,Tuan Rozman bin Isli [Labuan],"Saya ada 15 minit sahaja ini Yang Berhormat
 Shah Alam."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1650,Tuan Khalid bin Abd. Samad [Shah Alam],"Seminit sahaja, seminit sahaja."
+ANGGARAN PEMBANGUNAN 2014",,■1650,1650,Tuan Khalid bin Abd. Samad [Shah Alam],"Seminit sahaja, seminit sahaja."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1650,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Kalau tidak bagi, bagi tahu.
+ANGGARAN PEMBANGUNAN 2014",,■1650,1650,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Kalau tidak bagi, bagi tahu.
 Kita suruh duduk Yang Berhormat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1650,Tuan Rozman bin Isli [Labuan],"Saya teruskan. Bagi momentum dahulu,
+ANGGARAN PEMBANGUNAN 2014",,■1650,1650,Tuan Rozman bin Isli [Labuan],"Saya teruskan. Bagi momentum dahulu,
 barulah syok nanti."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1650,Tuan Khalid bin Abd. Samad [Shah Alam],
+ANGGARAN PEMBANGUNAN 2014",,■1650,1650,Tuan Khalid bin Abd. Samad [Shah Alam],
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1650,ANNOTATION,[Ketawa]
+ANGGARAN PEMBANGUNAN 2014",,■1650,1650,ANNOTATION,[Ketawa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1650,Tuan Khalid bin Abd. Samad [Shah Alam],"Tidak, ini sebelum dapat
+ANGGARAN PEMBANGUNAN 2014",,■1650,1650,Tuan Khalid bin Abd. Samad [Shah Alam],"Tidak, ini sebelum dapat
 stim, saya masuk. Nanti bila sudah dapat stim, susah hendak masuk."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1650,Tuan Rozman bin Isli [Labuan],"Nantilah, nanti. Sebab itulah saya perkatakan
+ANGGARAN PEMBANGUNAN 2014",,■1650,1650,Tuan Rozman bin Isli [Labuan],"Nantilah, nanti. Sebab itulah saya perkatakan
 tadi saya tidak setuju disebabkan ianya bukan satu program *piecemeal* tetapi ia adalah satu
 program holistik di mana bajet ini mengambil kira semua lapisan. Saya yakin ramai bijak
 pandai kita daripada sebelah rakan-rakan pembangkang sebenarnya yang menghadapi
@@ -4418,13 +4418,13 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1650,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Ya boleh gulung, boleh
+ANGGARAN PEMBANGUNAN 2014",,■1650,1650,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Ya boleh gulung, boleh
 gulung Yang Berhormat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1650,Tuan Rozman bin Isli [Labuan],"Sebagai contoh, industri berprestasi tinggi yang
+ANGGARAN PEMBANGUNAN 2014",,■1650,1650,Tuan Rozman bin Isli [Labuan],"Sebagai contoh, industri berprestasi tinggi yang
 ingin kita majukan ataupun rancakkan, *oil and gas*. Saya melihat banyak kawasan baru
 yang ingin dimajukan sebagai kawasan hab minyak dan gas. Ingin saya sebutkan di sini
 bahawa ada juga sebenarnya kawasan-kawasan yang memang sudah secara *natural* maju
@@ -4445,7 +4445,7 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1700,Tuan Rozman bin Isli [Labuan],"Apa yang saya maksudkan adalah sekarang ini jalan-jalan raya tidak cukup di
+ANGGARAN PEMBANGUNAN 2014",,■1700,1700,Tuan Rozman bin Isli [Labuan],"Apa yang saya maksudkan adalah sekarang ini jalan-jalan raya tidak cukup di
 Labuan, trafik jam nya begitu teruk dan kawasan-kawasan industri di Labuan pun memang
 tidak cukup sehingga kita mempunyai *list* yang panjang. Sehingga PBT di Labuan terpaksa
 menghadapi pelabur-pelabur yang marah sebab tidak ada tanah-tanah industri yang
@@ -4454,12 +4454,12 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1700,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Yang Berhormat.
+ANGGARAN PEMBANGUNAN 2014",,■1700,1700,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Yang Berhormat.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1700,Tuan Rozman bin Isli [Labuan],"Hal-hal yang lain seperti kargo terminal, *Airport*
+ANGGARAN PEMBANGUNAN 2014",,■1700,1700,Tuan Rozman bin Isli [Labuan],"Hal-hal yang lain seperti kargo terminal, *Airport*
 Labuan cantik, besar tetapi tidak ada kargo terminal. Sekarang ini *average,* secara purata 8
 *flight international* ke Labuan *on* kargolah. Kita kargo *international* tetapi *passenger* tidak
 *international* tetapi kargo terminalnya tidak ada. Jadi, saya harap ia diberi perhatian, begitu
@@ -4472,35 +4472,35 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1700,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Yang Berhormat...
+ANGGARAN PEMBANGUNAN 2014",,■1700,1700,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Yang Berhormat...
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1700,Tuan Rozman bin Isli [Labuan],Jikalau saya sebut memang tidak cukup masa...
+ANGGARAN PEMBANGUNAN 2014",,■1700,1700,Tuan Rozman bin Isli [Labuan],Jikalau saya sebut memang tidak cukup masa...
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1700,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Memang tidak cukup Yang
+ANGGARAN PEMBANGUNAN 2014",,■1700,1700,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Memang tidak cukup Yang
 Berhormat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1700,Tuan Rozman bin Isli [Labuan],"Jadi jikalau begitu tidak payah sebutlah.
+ANGGARAN PEMBANGUNAN 2014",,■1700,1700,Tuan Rozman bin Isli [Labuan],"Jadi jikalau begitu tidak payah sebutlah.
 Ingatkan..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1700,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Kalau tidak sempat itu tulis
+ANGGARAN PEMBANGUNAN 2014",,■1700,1700,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Kalau tidak sempat itu tulis
 surat kepada Menteri sahaja Yang Berhormat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1700,Tuan Rozman bin Isli [Labuan],"Okey tetapi penting, saya ada sedikit lagi Tuan
+ANGGARAN PEMBANGUNAN 2014",,■1700,1700,Tuan Rozman bin Isli [Labuan],"Okey tetapi penting, saya ada sedikit lagi Tuan
 Yang di-Pertua. Ini memang sesuatu yang amat penting iaitu hospital kekurangan doktor,
 *burn unit* pun tiada, di Labuan ini, kita *oil and gas* banyak yang *accident* nya adalah
 kebakaran, terkena *chemical.* Apabila bawa ke hospital, hospital akan menjadi panik sebab
@@ -4519,40 +4519,40 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1700,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat, esok kita
+ANGGARAN PEMBANGUNAN 2014",,■1700,1700,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat, esok kita
 balik. Berhentilah."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1700,Beberapa Ahli,
+ANGGARAN PEMBANGUNAN 2014",,■1700,1700,Beberapa Ahli,
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1700,ANNOTATION,[Ketawa]
+ANGGARAN PEMBANGUNAN 2014",,■1700,1700,ANNOTATION,[Ketawa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1700,ANNOTATION,[Bercakap tanpa menggunakan pembesar suara]
+ANGGARAN PEMBANGUNAN 2014",,■1700,1700,ANNOTATION,[Bercakap tanpa menggunakan pembesar suara]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1700,Tuan Rozman bin Isli [Labuan],"Baiklah Tuan Yang di-Pertua. Seperti yang saya
+ANGGARAN PEMBANGUNAN 2014",,■1700,1700,Tuan Rozman bin Isli [Labuan],"Baiklah Tuan Yang di-Pertua. Seperti yang saya
 perkatakan tadi..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1700,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Sudah hampir tamat Yang
+ANGGARAN PEMBANGUNAN 2014",,■1700,1700,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Sudah hampir tamat Yang
 Berhormat, berhentilah."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1700,Tuan Rozman bin Isli [Labuan],"Saya ingin tutup. Saya berharap jentera
+ANGGARAN PEMBANGUNAN 2014",,■1700,1700,Tuan Rozman bin Isli [Labuan],"Saya ingin tutup. Saya berharap jentera
 pelaksana dan urus tadbir kerajaan akan lebih cekap, efisien dan berhemah mengikut garis
 panduan *good governance* yang lebih jitu dan telus seperti yang diperkatakan oleh Yang
 Amat Berhormat Perdana Menteri semasa pembentangan bajet baru-baru ini. Saya
@@ -4561,18 +4561,18 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1700,ANNOTATION,[Tepuk]
+ANGGARAN PEMBANGUNAN 2014",,■1700,1700,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1700,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat Kuala
+ANGGARAN PEMBANGUNAN 2014",,■1700,1700,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat Kuala
 Kedah."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1703,Dr. Azman bin Ismail [Kuala Kedah],"Terima kasih Tuan Yang di-Pertua.
+ANGGARAN PEMBANGUNAN 2014",,5.03 ptg.,1703,Dr. Azman bin Ismail [Kuala Kedah],"Terima kasih Tuan Yang di-Pertua.
 Bismillaahir Rahmaanir Rahiim, *insya-Allah* saya tidak akan membuang masa dan terus
 kepada poin. Saya mengucapkan tahniah kepada Yang Amat Berhormat Perdana Menteri
 kerana membentangkan bajet dengan sifatnya ketua kerajaan dan seperti mana semua
@@ -4625,24 +4625,24 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1703,Dato’ Ikmal Hisham bin Abdul Aziz [Tanah Merah],"Yang Berhormat, hendak
+ANGGARAN PEMBANGUNAN 2014",,5.03 ptg.,1703,Dato’ Ikmal Hisham bin Abdul Aziz [Tanah Merah],"Yang Berhormat, hendak
 mencelah boleh?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1703,Dr. Azman bin Ismail [Kuala Kedah],"Minta maaf, mohon maaf, tidak ada masa."
+ANGGARAN PEMBANGUNAN 2014",,5.03 ptg.,1703,Dr. Azman bin Ismail [Kuala Kedah],"Minta maaf, mohon maaf, tidak ada masa."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1703,Dato’ Ikmal Hisham bin Abdul Aziz [Tanah Merah],"Tidak ada masa. Jangan
+ANGGARAN PEMBANGUNAN 2014",,5.03 ptg.,1703,Dato’ Ikmal Hisham bin Abdul Aziz [Tanah Merah],"Tidak ada masa. Jangan
 laju sangat. Macam semput-semput."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1703,Dr. Azman bin Ismail [Kuala Kedah],"*Please,* kerajaan perlu bersama dengan
+ANGGARAN PEMBANGUNAN 2014",,5.03 ptg.,1703,Dr. Azman bin Ismail [Kuala Kedah],"*Please,* kerajaan perlu bersama dengan
 segala pengilang pemproses makanan dan duduk berbincang dengan masalah isu ini
 *hidden sugars.* Gula terselindung, ini sangat penting dan itulah yang menyumbang kepada
 diabetes, kepada strok dan sakit jantung, kanser dan lain-lain lagi. Bukan gula yang kita
@@ -4667,53 +4667,53 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1710,Dr. Azman bin Ismail [Kuala Kedah],"Semoga ini dapat dimanfaatkan oleh Kerajaan Barisan Nasional. Kita syorkan
+ANGGARAN PEMBANGUNAN 2014",,■1710,1710,Dr. Azman bin Ismail [Kuala Kedah],"Semoga ini dapat dimanfaatkan oleh Kerajaan Barisan Nasional. Kita syorkan
 umur 35 tahun di atas sebab-sebab yang kita beri. Panggil dan buat *mass screening,* maka
 kemudian mengelakkan dan mencegah ..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1710,Dr. Haji Noor Azmi bin Ghazali [Bagan Serai],Yang Berhormat Kuala Kedah.
+ANGGARAN PEMBANGUNAN 2014",,■1710,1710,Dr. Haji Noor Azmi bin Ghazali [Bagan Serai],Yang Berhormat Kuala Kedah.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1710,Dr. Azman bin Ismail [Kuala Kedah],"Saya minta maaf, sila duduk. Minta maaf."
+ANGGARAN PEMBANGUNAN 2014",,■1710,1710,Dr. Azman bin Ismail [Kuala Kedah],"Saya minta maaf, sila duduk. Minta maaf."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1710,Dr. Haji Noor Azmi bin Ghazali [Bagan Serai],"*Please*, kawan. Kawan, boleh?"
+ANGGARAN PEMBANGUNAN 2014",,■1710,1710,Dr. Haji Noor Azmi bin Ghazali [Bagan Serai],"*Please*, kawan. Kawan, boleh?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1710,Dr. Azman bin Ismail [Kuala Kedah],"*Please*. Kawan baik saya pun saya, saya
+ANGGARAN PEMBANGUNAN 2014",,■1710,1710,Dr. Azman bin Ismail [Kuala Kedah],"*Please*. Kawan baik saya pun saya, saya
 tidak ada masa."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1710,Dr. Haji Noor Azmi bin Ghazali [Bagan Serai],"Kawan, boleh? Sepuluh saat,
+ANGGARAN PEMBANGUNAN 2014",,■1710,1710,Dr. Haji Noor Azmi bin Ghazali [Bagan Serai],"Kawan, boleh? Sepuluh saat,
 sepuluh saat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1710,Dr. Azman bin Ismail [Kuala Kedah],"Saya tidak ada masa. Ini akan
+ANGGARAN PEMBANGUNAN 2014",,■1710,1710,Dr. Azman bin Ismail [Kuala Kedah],"Saya tidak ada masa. Ini akan
 mengelakkan daripada jadi komplikasi dan dapat menyelamatkan banyak wang rakyat. Itu
 syor kita. Ya, memang kawan baik saya semasa 80-an dahulu sampai sekarang..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1710,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Sama-sama doktor?
+ANGGARAN PEMBANGUNAN 2014",,■1710,1710,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Sama-sama doktor?
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1710,Dr. Azman bin Ismail [Kuala Kedah],"Ya, daripada 20-an tetapi sekarang dia
+ANGGARAN PEMBANGUNAN 2014",,■1710,1710,Dr. Azman bin Ismail [Kuala Kedah],"Ya, daripada 20-an tetapi sekarang dia
 sudah 50-an, saya baru 30-an.
 Jadi, itu perkara yang perlu diberi perhatian yang cukup khusus dan kerana saya
 dimarahi oleh orang-orang tempatan saya. Sebut cakap kesihatan, tidak sebut tentang
@@ -4781,13 +4781,13 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1710,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat Sabak
+ANGGARAN PEMBANGUNAN 2014",,■1710,1710,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat Sabak
 Bernam."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1715,Tuan Haji Mohd Fasiah bin Mohd. Fakeh [Sabak Bernam],"*Bismillahi Rahmani
+ANGGARAN PEMBANGUNAN 2014",,5.15 ptg.,1715,Tuan Haji Mohd Fasiah bin Mohd. Fakeh [Sabak Bernam],"*Bismillahi Rahmani
 Rahim. Assalamualaikum warahmatullaahi wabarakaatuh.* Terima kasih kerana diberi
 peluang dalam masa yang begitu singkat untuk membahaskan Bajet 2014 dan juga Rang
 Undang-undang Bajet 2014.
@@ -4843,7 +4843,7 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1720,Tuan Haji Mohd Fasiah bin Mohd. Fakeh [Sabak Bernam],"Langkah kerajaan memberikan peruntukan yang besar iaitu 21% daripada
+ANGGARAN PEMBANGUNAN 2014",,■1720,1720,Tuan Haji Mohd Fasiah bin Mohd. Fakeh [Sabak Bernam],"Langkah kerajaan memberikan peruntukan yang besar iaitu 21% daripada
 keseluruhan daripada peruntukan tahun 2014 adalah membuktikan komitmen dan
 kesungguhan kerajaan bagi membangunkan dan memartabatkan bidang pendidikan bagi
 menghasilkan modal insan yang berkebolehan untuk mengisi keperluan modal insan bagi
@@ -4976,33 +4976,33 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1720,Puan Teresa Kok Suh Sim [Seputeh],"Eh, ini sangkaan salahlah."
+ANGGARAN PEMBANGUNAN 2014",,■1720,1720,Puan Teresa Kok Suh Sim [Seputeh],"Eh, ini sangkaan salahlah."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1720,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Yang Berhormat.
+ANGGARAN PEMBANGUNAN 2014",,■1720,1720,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Yang Berhormat.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1720,Puan Teresa Kok Suh Sim [Seputeh],"Oleh sebab banyak peruntukan berjuta-
+ANGGARAN PEMBANGUNAN 2014",,■1720,1720,Puan Teresa Kok Suh Sim [Seputeh],"Oleh sebab banyak peruntukan berjuta-
 juta ringgit diberikan kepada JAIS dan MAIS juga."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1720,Tuan Haji Mohd Fasiah bin Mohd. Fakeh [Sabak Bernam],Ya.
+ANGGARAN PEMBANGUNAN 2014",,■1720,1720,Tuan Haji Mohd Fasiah bin Mohd. Fakeh [Sabak Bernam],Ya.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1720,Puan Teresa Kok Suh Sim [Seputeh],"Fakta salah, minta tarik balik."
+ANGGARAN PEMBANGUNAN 2014",,■1720,1720,Puan Teresa Kok Suh Sim [Seputeh],"Fakta salah, minta tarik balik."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1720,Tuan Haji Mohd Fasiah bin Mohd. Fakeh [Sabak Bernam],"Tuan Yang di-
+ANGGARAN PEMBANGUNAN 2014",,■1720,1720,Tuan Haji Mohd Fasiah bin Mohd. Fakeh [Sabak Bernam],"Tuan Yang di-
 Pertua, saya sebagai ahli jawatankuasa surau dan saya tengok surau di kawasan saya
 sendiri tidak pernah kerajaan negeri membantu. Hal ini kerana saya adalah ketua
 cawangan di situ, saya mengambil perhatian dan saya memohon peruntukan daripada
@@ -5012,12 +5012,12 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1720,ANNOTATION,[Tepuk]
+ANGGARAN PEMBANGUNAN 2014",,■1720,1720,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1720,Tuan Haji Mohd Fasiah bin Mohd. Fakeh [Sabak Bernam],"Akhirnya saya ingin mengucapkan syabas kepada Kerajaan Barisan Nasional
+ANGGARAN PEMBANGUNAN 2014",,■1720,1720,Tuan Haji Mohd Fasiah bin Mohd. Fakeh [Sabak Bernam],"Akhirnya saya ingin mengucapkan syabas kepada Kerajaan Barisan Nasional
 yang terus mendapat kepercayaan rakyat untuk memimpin negara dalam PRU yang ke-13.
 Kejayaan ini adalah bukti kepimpinan transformatif BN diterima baik rakyat. Bajet 2014
 adalah bajet bukan sahaja untuk memperteguh ekonomi dalam menghadapi suasana
@@ -5033,7 +5033,7 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1720,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Terima kasih Yang
+ANGGARAN PEMBANGUNAN 2014",,■1720,1720,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Terima kasih Yang
 Berhormat. Ahli-ahli Yang Berhormat, saya ingin maklumkan bahawa pada hari Isnin, 4
 November dan 5 November, hari Selasa tidak ada persidangan Dewan sempena hari-hari
 tersebut – sempena cuti sambutan Awal Muharam. Saya juga ingin mengucapkan Selamat
@@ -5044,4 +5044,4 @@ RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2014
 Bacaan Kali Yang Kedua
 DAN
 USUL
-ANGGARAN PEMBANGUNAN 2014",,1733,ANNOTATION,[Dewan ditangguhkan pada pukul 5.33 petang]
+ANGGARAN PEMBANGUNAN 2014",,5.33 petang,1733,ANNOTATION,[Dewan ditangguhkan pada pukul 5.33 petang]

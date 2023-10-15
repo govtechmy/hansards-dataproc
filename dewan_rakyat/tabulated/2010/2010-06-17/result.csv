@@ -1,7 +1,7 @@
-level_1,level_2,level_3,timestamp,author,speech
-,,,1000,,"[Timbalan Yang di-Pertua (Datuk Dr. Wan Junaidi bin Tuanku Jaafar)
+level_1,level_2,level_3,raw_timestamp,timestamp,author,speech
+,,,10.00 pagi,1000,,"[Timbalan Yang di-Pertua (Datuk Dr. Wan Junaidi bin Tuanku Jaafar)
 **mempengerusikan Mesyuarat**]"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1000,Datuk Wira Ahmad Hamzah [Jasin],"minta Menteri Pertahanan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,10.00 pagi,1000,Datuk Wira Ahmad Hamzah [Jasin],"minta Menteri Pertahanan
 menyatakan:
 (a) jumlah anggota pertahanan negara yang bertugas di
 luar negara di bawah panji-panji Pertubuhan Bangsa-
@@ -9,7 +9,7 @@ Bangsa Bersatu (PBB); dan
 (b) bagaimanakah pengalaman dan pendedahan di luar
 negara ini dapat diguna pakai untuk kebajikan dan
 kemajuan bidang pertahanan negara."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1000,Timbalan Menteri Pertahanan [Datuk Dr. Haji Abdul Latiff bin Ahmad],"Tuan Yang di-Pertua terima kasih soalan daripada Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,10.00 pagi,1000,Timbalan Menteri Pertahanan [Datuk Dr. Haji Abdul Latiff bin Ahmad],"Tuan Yang di-Pertua terima kasih soalan daripada Yang Berhormat
 Jasin. Pada masa ini, seramai 849 anggota Angkatan Tentera Malaysia (ATM)
 sedang berkhidmat di bawah panji-panji Pertubuhan Bangsa-Bangsa Bersatu
 iaitu di mana 109 petugas di pelbagai negara, sementara 740 petugas di
@@ -35,7 +35,7 @@ permintaan daripada pihak PBB serta keupayaan serta sifat profesionalisme
 anggota ATM dalam memenuhi keperluan penugasan, ia telah mencerminkan
 negara kita bersedia dan komited dalam membantu keamanan dunia. Terima
 kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1000,Datuk Wira Ahmad Hamzah [Jasin],"Terima kasih Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,10.00 pagi,1000,Datuk Wira Ahmad Hamzah [Jasin],"Terima kasih Tuan Yang di-
 Pertua, terima kasih Yang Berhormat Timbalan Menteri. Soalan tambahan
 saya, pasukan misi pengaman Angkatan Tentera Malaysia telah
 mengharumkan nama negara - terkenal dengan keberanian dan juga disiplin
@@ -52,22 +52,22 @@ Kedua, adakah kerajaan membuat apa-apa pemotongan daripada
 elaun yang dibayar kepada pasukan pengaman? Ini kerana dimaklumkan ada
 negara-negara yang lain menjadikannya sebagai satu pendapatan dan
 menolak elaun yang dibayar kepada pasukan itu. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1000,Datuk Dr. Haji Abdul Latiff bin Ahmad,"Tuan Yang di-Pertua, terima
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,10.00 pagi,1000,Datuk Dr. Haji Abdul Latiff bin Ahmad,"Tuan Yang di-Pertua, terima
 kasih soalan tambahan daripada Yang Berhormat Jasin yang juga bekas
 perajurit berpangkat kapten. Tuan Yang di-Pertua, itu Amerika ia hendak buat,
 ia hendak ambil nama walaupun yang menyelamatkan suasana di Somalia
 adalah anggota kita, dan kita beri ia darjah PGB - ia sekarang berpangkat
 Kolonel. Itu ia punya hal, tetapi ia tidak boleh tipu sejarah. Amerika, ia bukan
 sahaja macam-macam, ia control juga Hollywood."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1000,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Itu Hollywood yang punya Yang Berhormat, bukan Amerika Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,10.00 pagi,1000,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Itu Hollywood yang punya Yang Berhormat, bukan Amerika Yang
 Berhormat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1000,Datuk Dr. Haji Abdul Latiff bin Ahmad,"Tidak kisahlah itu, Hollywood
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,10.00 pagi,1000,Datuk Dr. Haji Abdul Latiff bin Ahmad,"Tidak kisahlah itu, Hollywood
 dengan Amerika lebih kurang sama sahaja - propaganda Amerika. Akan tetapi
 soalan yang diutarakan oleh Yang Berhormat Jasin bagaimana anggota kita
 sebagai contoh di UNIFIL Lebanon, kita asal dahulu 80 orang sahaja - itu
 empat tahun dahulu tetapi, ia berkembang sepuluh kali ganda menjelang tahun
 2010, menjadi 800 orang."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Datuk Dr. Haji Abdul Latiff bin Ahmad,"Ini sebenarnya menandakan bahawa bukan sahaja PBB mengiktiraf
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1010,1010,Datuk Dr. Haji Abdul Latiff bin Ahmad,"Ini sebenarnya menandakan bahawa bukan sahaja PBB mengiktiraf
 tetapi masyarakat di situ mengiktiraf dan kita semua tahu anggota ATM yang
 berada menyertai misi-misi seperti UNIFIL adalah pelbagai agama. Lebanon
 adalah negara yang pelbagai agama, ada Syiah, ada 74 agama walaupun ada
@@ -86,7 +86,7 @@ diberi oleh PBB, kita elaun yang sedia ada kita tidak kacau malah sekarang ini
 RM800 kita bagi tambahan, gaji tidak kacau, elaun lagi RM800 bagi pada isteri
 supaya isteri tidak rasa susah bila suami dia berada di perbatasan misi
 keamanan di mana-mana negara di dunia. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Dato’ Kamarudin Jaafar [Tumpat],"Terima kasih Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1010,1010,Dato’ Kamarudin Jaafar [Tumpat],"Terima kasih Tuan Yang di-
 Pertua. Yang Berhormat Jasin menyebut tentang bagaimana kita di Somalia
 menyelamatkan tentera Amerika tetapi gambaran yang diberikan oleh Amerika
 ialah merekalah yang hero dan kita sebaliknya. Dalam pada itu, negara kita
@@ -96,14 +96,14 @@ diberikan layanan yang begitu istimewa oleh kerajaan kita. Begitu juga baru-
 baru ini Kementerian Pertahanan mengumumkan bahawa ada latihan bersama
 dengan tentera Amerika dan ini diumumkan oleh menteri dengan penuh
 kebanggaan bahawa kita ini dapat berserta dengan tentera Amerika Syarikat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ya, soalan Yang Berhormat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Dato’ Kamarudin Jaafar [Tumpat],"Jadi soalan saya Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1010,1010,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ya, soalan Yang Berhormat."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1010,1010,Dato’ Kamarudin Jaafar [Tumpat],"Jadi soalan saya Tuan Yang di-
 Pertua ialah tidakkah kementerian bercadang untuk mengadakan hubungan
 ketenteraan, latihan bersama dengan negara-negara Islam seperti Iran, Turki
 yang mana Turki telah menunjukkan kehebatannya dalam bertentangan
 dengan negara-negara yang ditakuti termasuk Amerika Syarikat iaitu negara
 Israel ini. Jadi apakah pandangan Yang Berhormat Timbalan Menteri."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Datuk Dr. Haji Abdul Latiff bin Ahmad,"Yang Berhormat Tumpat,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1010,1010,Datuk Dr. Haji Abdul Latiff bin Ahmad,"Yang Berhormat Tumpat,
 terima kasih soalan tambahan. Kalau kita lepaskan peluang, mana-mana
 peluang untuk rakyat tempatan mendapat nikmat ekonomi umpamanya
 kebetulan carriernya lalu dan minta kerjasama daripada negara kita.
@@ -127,7 +127,7 @@ yang dibina oleh Turki adalah daripada teknologi Amerika. Jadi kalau kita
 bekerjasama dengan Turki, tidak ada masalah. Yang kita takut ini bekerjasama
 dengan parti politik Turki untuk menjatuhkan Kerajaan Barisan Nasional, itu
 yang kita takut. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Terima kasih Yang Berhormat. Jadi saya memperingatkan satu lagi
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1010,1010,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Terima kasih Yang Berhormat. Jadi saya memperingatkan satu lagi
 perkara Yang Berhormat. Pada sebelum tahun 2004, kita hanya ada satu jam
 untuk soal jawab pagi-pagi. Akan tetapi lepas itu kita berfikir pada ketika itu
 hanya 10 soalan boleh naik atau 11, 12 soalan boleh naik. Jadi hasrat kita
@@ -135,17 +135,17 @@ menambah setengah jam ialah supaya dapat sampai 17 ataupun 20 soalan
 naik tetapi malang sekali kebelakangan ini orang berucap bukan menyoal.
 Jadi saya memintalah mengikut syarat-syarat Parlimen dan konvensyen
 Parlimen, soalan jangan berhujah, bagi soalan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1010,Dato’ Haji Wan Abd. Rahim Wan Abdullah [Kota Bharu],"minta
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1010,1010,Dato’ Haji Wan Abd. Rahim Wan Abdullah [Kota Bharu],"minta
 Menteri Belia dan Sukan menyatakan berapakah perbelanjaan yang
 diperuntukkan oleh kerajaan dalam menyambut Hari Belia Negara 2010 di
 Putrajaya. Sila senaraikan kesan-kesan positif yang dihasilkan daripada
 sambutan itu."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1010,Menteri Belia dan Sukan [Dato' Ahmad Shabery Cheek],"Tuan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1010,1010,Menteri Belia dan Sukan [Dato' Ahmad Shabery Cheek],"Tuan
 Yang di-Pertua, saya mohon menjawab soalan ini bersama dengan soalan
 yang dikemukakan oleh Yang Berhormat Tumpat bertarikh 6 Julai 2010 kerana
 ianya berkaitan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1010,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Ya.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1010,Dato' Ahmad Shabery Cheek,"Untuk makluman Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1010,1010,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Ya.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1010,1010,Dato' Ahmad Shabery Cheek,"Untuk makluman Tuan Yang di-
 Pertua dan Ahli-ahli Yang Berhormat sekalian, sambutan Hari Belia Negara
 yang diadakan pada bulan lepas iaitu pada tanggal 14, 15 dan 16 Mei dibuat
 secara besar sekali di mana keseluruhan bandar Putrajaya telah dijadikan
@@ -168,7 +168,7 @@ ialah kira-kira 250,000 orang semuanya yang membanjiri Putrajaya selama
 tiga hari tersebut dan ramai belia termasuk daripada Kelantan, Selangor, Pulau
 Pinang dan Kedah datang melalui persatuan-persatuan belia dan Majlis Belia
 Negeri dan daerah masing-masing."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1010,Dato’ Haji Wan Abd. Rahim Wan Abdullah [Kota Bharu],"Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1010,1010,Dato’ Haji Wan Abd. Rahim Wan Abdullah [Kota Bharu],"Yang
 Berhormat Tuan Yang di-Pertua, saya ucapkan terima kasih di atas
 perbelanjaan yang begitu besar yang disediakan oleh pihak kerajaan. Saya
 hendak tanya adakah Yang Berhormat Menteri sedar bahawa tanggapan
@@ -176,7 +176,7 @@ umum di kalangan warga belia di seluruh negara ialah kerajaan masih belum
 memberikan keutamaan kepada belia oleh kerana kerajaan tidak menyediakan
 tempat kepada Ketua Pemuda Barisan Nasional yang dikira sebagai belia
 nombor satu negara di dalam kerajaan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Dato' Ahmad Shabery Cheek,"Ini sudah tidak ada kena-mengena
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1020,1020,Dato' Ahmad Shabery Cheek,"Ini sudah tidak ada kena-mengena
 dengan soalan asal. Akan tetapi saya rasa terima kasih kerana mengakui
 bahawa kerajaan memberikan peruntukan yang besar. Sebenarnya pada
 sambutan Hari Belia RM1 juta itu adalah jumlah perbelanjaan yang dianggap
@@ -191,7 +191,7 @@ ada bagi sumbangan jangan timbullah tentang soal pelantikan. Tentang siapa
 yang dipilih siapa yang tidak dipilih untuk berada dalam pentadbiran dan
 sebagainya. Itu adalah hak Perdana Menteri dan saya percaya Perdana
 Menteri ada kebijaksanaan beliau dalam soal ini."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Datuk Haji Mohamad bin Haji Aziz [Sri Gading],"Assalamualaikum
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1020,1020,Datuk Haji Mohamad bin Haji Aziz [Sri Gading],"Assalamualaikum
 Warahmatullaahi Wabarakaatuh. Salam sejahtera selamat pagi. Terima kasih
 Tuan Yang di-Pertua. Tidak dinafikan, tidak dinafikan bahawa kementerian,
 tidak dinafikan bahawa kementerian memang memberikan tumpuan yang
@@ -203,18 +203,18 @@ negara. Apakah berbaloi segala program dan perbelanjaan?
 Ambil contoh, kekalahan kita dalam pertandingan Piala Thomas -
 Badminton. Kalah di rumah tangga sendiri. Jangan hendak salahkan sesiapa
 tetapi BAM. [Disampuk] Tidak ini soal semangat, semangat, semangat juang."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ya, soalan Yang Berhormat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Datuk Haji Mohamad bin Haji Aziz [Sri Gading],"Ini soalan Tuan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1020,1020,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ya, soalan Yang Berhormat."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1020,1020,Datuk Haji Mohamad bin Haji Aziz [Sri Gading],"Ini soalan Tuan
 Yang di-Pertua. Kenapa boleh kalah di rumah tangga sendiri? Soal skill soal
 lain, soal kesungguhan memperjuangkan nama negara di depan laman sendiri
 keliling saudara mara, ibu bapa, jiran tetangga, rakyat tempatan kita boleh
 tersungkur. Maknanya lemahnya semangat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ya, panjang sudah Yang Berhormat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Datuk Haji Mohamad bin Haji Aziz [Sri Gading],"Saya harap bukan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1020,1020,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ya, panjang sudah Yang Berhormat."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1020,1020,Datuk Haji Mohamad bin Haji Aziz [Sri Gading],"Saya harap bukan
 sahaja pemain gantung raket, ini jurulatih dia, pengurus dia, pengerusi
 jawatankuasa dia pun harus gantung raket. [Disampuk] Ini perasaan malu,
 bola lain masa. Apa pendapat Yang Berhormat Menteri?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Dato' Ahmad Shabery Cheek,"Tuan Yang di-Pertua satu unsur yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1020,1020,Dato' Ahmad Shabery Cheek,"Tuan Yang di-Pertua satu unsur yang
 penting dalam semangat kesukanan ini ialah sedia menerima menang kalah.
 Kalau semangat ini kita terapkan dalam kehidupan kita, kita tidak jadi macam
 pembangkang. Kalau dia menang dia kata rakyat suka pada dia. Kalau kalah
@@ -249,31 +249,31 @@ bilion penduduk berapa banyak kita kena bayar. Jadi dalam soal ini kalah
 menang soal biasa. Afrika Selatan terus dengan penganjurannya. Tenis
 misalnya Wimbledon dianggap sebagai satu daripada kejohanan yang boleh
 terbaik di dunia..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Datuk Haji Mohamad bin Haji Aziz [Sri Gading],"Boleh saya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1020,1020,Datuk Haji Mohamad bin Haji Aziz [Sri Gading],"Boleh saya
 mencelah Tuan Yang di-Pertua?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Jangan Yang Berhormat. Saya sudah hendak mencelah Menteri
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1020,1020,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Jangan Yang Berhormat. Saya sudah hendak mencelah Menteri
 Yang Berhormat. Yang Berhormat Sri Gading jangan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Dato' Ahmad Shabery Cheek,"Walaupun British kalah, walaupun kita
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1020,1020,Dato' Ahmad Shabery Cheek,"Walaupun British kalah, walaupun kita
 tidak dengar pun pemain Britain yang berjaya saya rasakan bahawa ..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Datuk Haji Mohamad bin Haji Aziz [Sri Gading],Saya saja test ...
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Sudah cukuplah Yang Berhormat Menteri sudah banyak itu. Saya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1020,1020,Datuk Haji Mohamad bin Haji Aziz [Sri Gading],Saya saja test ...
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1020,1020,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Sudah cukuplah Yang Berhormat Menteri sudah banyak itu. Saya
 sudah terima penjelasan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Dato' Ahmad Shabery Cheek,"Saya rasakan bahawa Thomas Cup
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1020,1020,Dato' Ahmad Shabery Cheek,"Saya rasakan bahawa Thomas Cup
 kita tetap berjaya walaupun kita kalah tetapi kita melihat Malaysia tetap berjaya
 di dalam pertandingan Thomas Cup baru-baru ini. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Terima kasih Yang Berhormat. Saya menerima penjelasan tetapi kita
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1020,1020,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Terima kasih Yang Berhormat. Saya menerima penjelasan tetapi kita
 hendak menang juga sekali sekala."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1020,Tuan Teng Boon Soon [Tebrau],"minta Menteri Penerangan,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1020,1020,Tuan Teng Boon Soon [Tebrau],"minta Menteri Penerangan,
 Komunikasi dan Kebudayaan menyatakan adakah kebebasan sebaran am di
 Malaysia masih amat terhad seperti yang ditonjolkan dalam satu kajian global
 oleh Freedom House di Amerika Syarikat dengan “Press Freedom Ranking”
 141 dalam ulasan “Malaysia Press Still Not Free”."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1020,"Menteri Penerangan, Komunikasi dan Kebudayaan [Dato' Seri Utama Dr. Rais Yatim]","Tuan Yang di-Pertua saya mohon menjawab
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1020,1020,"Menteri Penerangan, Komunikasi dan Kebudayaan [Dato' Seri Utama Dr. Rais Yatim]","Tuan Yang di-Pertua saya mohon menjawab
 pertanyaan ini bersekali dengan pertanyaan Yang Berhormat dari Cheras dan
 Yang Berhormat dari Tumpat bertarikh 29 Jun 2010. Ini kerana menyentuh
 tentang perkara yang sama iaitu kebebasan media."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1020,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Baik.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1020,Dato' Seri Utama Dr. Rais Yatim,"Terima kasih Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1020,1020,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Baik.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1020,1020,Dato' Seri Utama Dr. Rais Yatim,"Terima kasih Tuan Yang di-Pertua.
 Tahap kebebasan media masa berbeza-beza antara satu negara dengan yang
 lain. Nilai-nilai kehidupan di sesebuah benua seperti di Amerika, Eropah, Asia,
 Afrika misalnya membentuk nilai-nilai dan kaedah yang mempengaruhi media
@@ -296,7 +296,7 @@ Tuan Yang di-Pertua dalam konteks ini apa yang disebut sebagai
 sebaran am atau media massa di Malaysia sedang rancak berkembang.
 Bukan terhad seperti Yang Berhormat sangkakan itu.
 (cid:1)(cid:1)(cid:1)(cid:1)"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,2230,Dato' Seri Utama Dr. Rais Yatim,"Dalam konteks ini juga lantaran sesuatu media massa itu bebas
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,2230,Dato' Seri Utama Dr. Rais Yatim,"Dalam konteks ini juga lantaran sesuatu media massa itu bebas
 melahirkan pendapat termasuk mengkritik kerajaan, laporan Freedom House
 di Amerika Syarikat itu hanya merupakan laporan sekelumit yakni tidak lebih
 dari laporan kerusi selesa atau dengan izin, armchair reporting. Media sebagai
@@ -306,7 +306,7 @@ undang-undang di sesebuah negara. Semua badan penyiaran elektronik sama
 ada media rasmi kerajaan mahupun pemegang lesen adalah berperanan
 memastikan kandungan yang disiarkan mematuhi undang-undang negara dan
 bantu mewujudkan masyarakat prihatin serta bertanggungjawab."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,2230,Tuan Teng Boon Soon [Tebrau],"Terima kasih Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,2230,Tuan Teng Boon Soon [Tebrau],"Terima kasih Yang Berhormat
 Menteri yang telah memberikan jawapan yang amat menyeluruh dan teliti.
 Tuan Yang di-Pertua, kebebasan sebaran am boleh menjadi faktor pemangkin
 kepada ketelusan kerajaan. UNESCO telah menjadikan dengan izin, freedom
@@ -321,7 +321,7 @@ massa untuk bersama-sama menyempurnakan komitmen antarabangsa ini
 supaya peristiwa seperti produser TV ditamatkan perkhidmatan dengan
 alasan yang kurang meyakinkan tidak menjadi isu yang menjejaskan nama
 baik negara."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,2230,Dato’ Seri Utama Dr. Rais Yatim,"Tuan Yang di-Pertua, terima kasih
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,2230,Dato’ Seri Utama Dr. Rais Yatim,"Tuan Yang di-Pertua, terima kasih
 kepada Yang Berhormat Tebrau. Sesungguhnya, semua kenyataan yang
 diluahkan oleh beliau sebentar tadi kita tidak ada mempunyai apa-apa
 percanggahan pendapat, iaitu kebebasan untuk mengeluarkan fakta serta
@@ -344,7 +344,7 @@ menerusi media massa. Dalam konteks itulah, huraian sekiranya diperlukan
 boleh diberi terhadap kes-kes yang dikemukakan dari semasa ke semasa.
 Dalam pada itu pegangan kita terhadap hak untuk menerima pandangan dan
 sebaran am tetap terasas."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,2230,Dr. Tan Seng Giaw [Kepong],"Tuan Yang di-Pertua, soalan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,2230,Dr. Tan Seng Giaw [Kepong],"Tuan Yang di-Pertua, soalan
 tambahan. Saya sedari bahawa Yang Berhormat tadi telah sebutkan dengan
 sebaran am sekarang itu dan teknologi baru internet, jalur lebar dan
 sebagainya memang keadaan media massa sudah berubah. Sedemikian itu
@@ -352,8 +352,8 @@ adakah Yang Berhormat mencadangkan supaya negara ini mengkaji....
 [Disampuk] Itu soalan, Yang Berhormat Putatan tidak tahu apa soalan dan apa
 retoriknya. Saya mencadangkan Yang Berhormat bagi dia lesenlah itu
 mengenai penerangan apakah soalan dan apakah itu bukan soalan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,2230,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Tidak mengapa, soalan tambahan sahaja Yang Berhormat Kepong."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,2230,Dr. Tan Seng Giaw [Kepong],"Saya tengok apakah itu pendapat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,2230,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Tidak mengapa, soalan tambahan sahaja Yang Berhormat Kepong."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,2230,Dr. Tan Seng Giaw [Kepong],"Saya tengok apakah itu pendapat
 Yang Berhormat mengenai kita mengkaji semula, kerana ini keadaan yang
 berubah dan dengan sedemikian kita adakan dasar tertentu supaya kebenaran
 dapat ditonjolkan di dalam semua jenis media dan sekarang memang pihak
@@ -363,7 +363,7 @@ Kedua, pihak kerajaan kata apa yang disebutkan oleh kerajaan itu
 semua benar belaka dan sebagainya. Ini memang satu pendapat yang
 bertentangan dan bagaimana kita dapat mengatasi selaras dengan
 perkembangan semasa."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,2230,Dato’ Seri Utama Dr. Rais Yatim,"Tuan Yang di-Pertua, diucapkan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,2230,Dato’ Seri Utama Dr. Rais Yatim,"Tuan Yang di-Pertua, diucapkan
 terima kasih kepada Yang Berhormat Kepong. Pandangan beliau itu
 sebenarnya agak lunak, menyeluruh dan pihak kerajaan saya fikir tiada
 halangan untuk menerima pandangan yang positif untuk memperbaiki lagi
@@ -389,16 +389,16 @@ pihak-pihak yang mentadbir tetapi rakyat itu mempunyai haknya. Hal ini adalah
 penting tetapi kepentingan tersebut tertakluk kepada undang-undang tanah air
 dan kita perlu menghormati undang-undang yang telah kita dibuat sama ada
 kita suka ataupun tidak dengan hal-hal yang bersabit demikian."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,2230,Tuan Haji Ab. Aziz Ab. Kadir [Ketereh],"minta Menteri Kemajuan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1030,2230,Tuan Haji Ab. Aziz Ab. Kadir [Ketereh],"minta Menteri Kemajuan
 Luar Bandar dan Wilayah menyatakan berapakah peratusan pelajar-pelajar
 MRSM yang datang daripada keluarga yang berpendapatan rendah.
 Perincikan jumlahnya mengikut negeri."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,2230,Timbalan Menteri Kemajuan Luar Bandar dan Wilayah I [Dato’ Haji Hasan bin Malek],"Tuan Yang di-Pertua, kepada Yang Berhormat daripada
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1030,2230,Timbalan Menteri Kemajuan Luar Bandar dan Wilayah I [Dato’ Haji Hasan bin Malek],"Tuan Yang di-Pertua, kepada Yang Berhormat daripada
 Ketereh terima kasih di atas soalan. Untuk makluman Ahli Yang Berhormat,
 sehingga Mac 2010 daripada seramai 29,592 orang pelajar Maktab Rendah
 Sains Mara atau pendeknya MRSM di seluruh negara terdapat 54.79% atau
 16,212 orang pelajar daripada keluarga yang berpendapatan rendah."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1040,Timbalan Menteri Kemajuan Luar Bandar dan Wilayah I [Dato’ Haji Hasan bin Malek],"Dalam konteks ini, MARA mengklasifikasikan pendapatan rendah
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1040,1040,Timbalan Menteri Kemajuan Luar Bandar dan Wilayah I [Dato’ Haji Hasan bin Malek],"Dalam konteks ini, MARA mengklasifikasikan pendapatan rendah
 adalah pendapatan yang kurang daripada RM2,500. Atas permintaan Yang
 Berhormat yang meminta perincian jumlah pelajar tersebut mengikut negeri, ia
 adalah seperti berikut:
@@ -417,7 +417,7 @@ adalah seperti berikut:
 |    Terengganu   |                             1,705                             |    5.76   |
 Jadi jumlah keseluruhannya ialah sebagaimana saya sebut tadi,
 16,212 orang dengan peratusannya ialah 54.79%. Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1040,Tuan Haji Ab. Aziz Ab. Kadir [Ketereh],"Terima kasih Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1040,1040,Tuan Haji Ab. Aziz Ab. Kadir [Ketereh],"Terima kasih Tuan Yang di-
 Pertua, terima kasih Yang Berhormat Menteri. Saya melihat kepada peratusan
 yang lebih rendah kemasukan ke MRSM di Sabah dan Sarawak. Mungkin ada
 sesuatu yang tidak kena dari segi penilaian kemasukan ataupun syarat-syarat
@@ -430,7 +430,7 @@ saya rasa kriteria kemasukan ini perlu diubah. Adakah kementerian bercadang
 untuk membuat penilaian baru bahawa kemasukan ke MRSM ini bukan hanya
 bergantung keutamaannya kepada pencapaian UPSR ataupun PMR? Sekian,
 terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1040,Dato’ Haji Hasan bin Malek,"Terima kasih Yang Berhormat Ketereh,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1040,1040,Dato’ Haji Hasan bin Malek,"Terima kasih Yang Berhormat Ketereh,
 satu pandangan yang baik. Sebenarnya kriteria pemilihan kita untuk tujuan
 pengambilan pelajar ini sebenarnya konsisten dari dahulu hinggalah sekarang,
 iaitu kita bukan sahaja mengambil kira pendapatan terutamanya tetapi juga
@@ -447,7 +447,7 @@ ratanya daripada kawasan-kawasan luar bandar. Walau bagaimanapun, kalau
 sekiranya Yang Berhormat ada memikirkan sesuatu kriteria lain yang perlu kita
 tekankan lagi, pihak kementerian bersedia untuk mempertimbangkan dan
 mengambil kira pandangan Yang Berhormat. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1040,Tuan Haji Mohd. Nor bin Othman [Hulu Terengganu],"Terima kasih
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1040,1040,Tuan Haji Mohd. Nor bin Othman [Hulu Terengganu],"Terima kasih
 Tuan Yang di-Pertua. Sebelum itu saya ingin merakamkan ucapan tahniah
 kepada timbalan menteri kerana dapat menantu.
 Tuan Yang di-Pertua, tidak terhingga lagi besarnya sumbangan
@@ -465,7 +465,7 @@ supaya pelajar-pelajar yang keluar nanti bukan sahaja berasaskan kepada
 pengetahuan, tetapi mempunyai kemahiran yang tinggi yang boleh
 melanjutkan pelajaran ke peringkat yang lebih tinggi serta memenuhi pasaran
 yang sedia ada? Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1040,Dato’ Haji Hasan bin Malek,"Terima kasih Yang Berhormat Hulu
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1040,1040,Dato’ Haji Hasan bin Malek,"Terima kasih Yang Berhormat Hulu
 Terengganu. Bagi menjawab soalan tersebut, kita mengakui bahawa MRSM ini
 memang kita menekankan soal akademik. Walau bagaimanapun, soal-soal
 yang ada hubung kaitnya dengan kemahiran dari segi vokasional dan
@@ -478,21 +478,21 @@ Misalnya dalam Dewan ini sendiri pun, ramai di antara mereka adalah
 lepasan dari MRSM. Kalau tidak silap saya, Yang Berhormat Kubang Pasu
 dari MRSM. Begitu juga Angkasawan Negara, juga berkelulusan dari MRSM.
 Jadi..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1040,Beberapa Ahli,[Menyampuk]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1040,Dato’ Haji Hasan bin Malek,"Ya? Oh! Yang Berhormat Jerlun. Minta
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1040,1040,Beberapa Ahli,[Menyampuk]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1040,1040,Dato’ Haji Hasan bin Malek,"Ya? Oh! Yang Berhormat Jerlun. Minta
 maaf, bukan Yang Berhormat Kubang Pasu. Saya ingat Yang Berhormat
 Kubang Pasu tadi, minta maaf. Yang Berhormat Jerlun ialah lepasan MRSM.
 Begitu juga Angkasawan Negara dari Negeri Sembilan adalah lulusan MRSM.
 Jadi, pandangan daripada Yang Berhormat tadi memang kita ambil kira dan
 kita cuba hasilkan – akademik baik, kurikulum baik, malahan the rounded
 person yang hendak kita lahirkan. Terima kasih. Itu jawapan saya."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1040,Dato' Lilah bin Yasin [Jempol],"minta Menteri Kerja Raya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1040,1040,Dato' Lilah bin Yasin [Jempol],"minta Menteri Kerja Raya
 menyatakan:-
 (a) bilakah Projek Bahau bypass hendak dilaksanakan;
 dan
 (b) apakah perancangan kerajaan untuk mengatasi
 kesesakan di bandar Bahau."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1040,Timbalan Menteri Kerja Raya [Dato’ Yong Khoon Seng],"Tuan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1040,1040,Timbalan Menteri Kerja Raya [Dato’ Yong Khoon Seng],"Tuan
 Yang di-Pertua, untuk makluman Ahli Yang Berhormat, projek membina jalan
 Bahau bypass telah dikenal pasti di dalam Kajian Semula Pembangunan
 Rangkaian Jalan Raya Fasa 1 (Highway Network Development Plan Phase 1
@@ -519,11 +519,11 @@ adalah di bawah bidang kuasa pihak berkuasa tempatan iaitu Majlis Daerah
 Jempol. Kesibukan aktiviti tempatan dan kenderaan yang melalui bandar
 Bahau ini telah menyebabkan berlakunya kesesakan lalu lintas terutamanya
 pada waktu puncak, hari Jumaat dan di musim perayaan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1050,Timbalan Menteri Kerja Raya [Dato’ Yong Khoon Seng],"Pembinaan jalan Bahau bypass ini dapat mengelakkan kenderaan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1050,1050,Timbalan Menteri Kerja Raya [Dato’ Yong Khoon Seng],"Pembinaan jalan Bahau bypass ini dapat mengelakkan kenderaan
 through trafik daripada Gemas, Serting ke Kemayan. Sebaliknya memasuki
 bandar Bahau yang dapat melancarkan pergerakan lalu lintas setempat.
 Seterusnya mengurangkan kesesakan di kawasan yang terlibat. Sekian."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1050,Dato’ Lilah bin Yasin [Jempol],"Terima kasih Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1050,1050,Dato’ Lilah bin Yasin [Jempol],"Terima kasih Tuan Yang di-Pertua.
 Bahau adalah merupakan tempat untuk peneroka-peneroka FELDA yang
 berjaya dibangunkan oleh kerajaan apabila mereka mendapat pendapatan
 yang agak baik dan mereka berbelanja di Bahau. Bukan sahaja FELDA di
@@ -533,7 +533,7 @@ harus diberikan keutamaan dalam memetakan peruntukan dalam Rancangan
 Malaysia Kesepuluh. Bolehkah Yang Berhormat Timbalan Menteri masukkan
 lagi satu peruntukan untuk membangunkan Bahau Ring Road untuk mengatasi
 masalah kesesakan di Bahau dalam Rancangan Malaysia Kesepuluh."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1050,Dato’ Yong Khoon Seng,"Terima kasih Yang Berhormat. Sebenarnya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1050,1050,Dato’ Yong Khoon Seng,"Terima kasih Yang Berhormat. Sebenarnya
 saya dalam Dewan ini sering kali mendengar ucapan dari Yang Berhormat
 Jempol, selalunya memang timbulkan masalah kesesakan di Bahau dan
 meminta adakan satu laluan bypass untuk mengelakkan kesesakan. Cara kita
@@ -545,19 +545,19 @@ kalau dapat mengambil, bertemu dengan pihak kerajaan negeri supaya
 menentukan projek ini sangat akan diberi keutamaan dan cara ini kita mungkin
 dapat meluluskan secepat mungkin. Yang sangat penting tadi link road ini
 yang di mana pergi ke Kuala Pilah atau di sebelah utara sebelah timur?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1050,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Yang Berhormat, jangan berdialog Yang Berhormat. Kalau ada
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1050,1050,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Yang Berhormat, jangan berdialog Yang Berhormat. Kalau ada
 jawapan, bagi jawapan, kalau tidak ada, tidak payah."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1050,Dato’ Yong Khoon Seng,"Saya tanya sahaja. Lebih baik... [Ketawa]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1050,1050,Dato’ Yong Khoon Seng,"Saya tanya sahaja. Lebih baik... [Ketawa]
 lebih baik saya menyuruh Yang Berhormat Jempol sila menjalankan
 pertemuan dengan pihak kerajaan negeri supaya kerajaan negeri akan
 memberikan keutamaan kepada projek yang kita sentuh di sini. Supaya ia
 akan diluluskan secepat mungkin. Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1050,Tuan Abdullah Sani Abdul Hamid [Kuala Langat],"minta Menteri
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,■1050,1050,Tuan Abdullah Sani Abdul Hamid [Kuala Langat],"minta Menteri
 Perdagangan Dalam Negeri, Koperasi dan Kepenggunaan menyatakan
 kenapa sehingga kini kerajaan masih lagi tidak mengumumkan apakah ‘pricing
 mechanisme’ yang diguna pakai bagi menetapkan harga petrol di stesen-
 stesen minyak di seluruh negara."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1050,"Timbalan Menteri Perdagangan Dalam Negeri, Koperasi dan Kepenggunaan I [Dato’ Tan Lian Hoe]","Terima kasih Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,■1050,1050,"Timbalan Menteri Perdagangan Dalam Negeri, Koperasi dan Kepenggunaan I [Dato’ Tan Lian Hoe]","Terima kasih Tuan Yang di-Pertua.
 Penentuan harga runcit produk petroleum di Malaysia ditentukan melalui
 kaedah automatic pricing mechanisme (APM). Kaedah ini telah diguna pakai
 sejak tahun 1983. Satu artikel berkenaan dengan APM telah dikeluarkan pada
@@ -573,8 +573,8 @@ alpha, kos operasi, margin syarikat minyak, margin pengusaha, cukai jualan
 dan subsidi.
 Tuan Yang di-Pertua, izinkan saya terangkan secara terperinci
 komponen-komponen di dalam APM dan kos-kosnya."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1050,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Panjang Yang Berhormat?
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1050,Dato’ Tan Lian Hoe,"Sikit sahaja. Panjang juga. Okey, komponen
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,■1050,1050,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Panjang Yang Berhormat?
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,■1050,1050,Dato’ Tan Lian Hoe,"Sikit sahaja. Panjang juga. Okey, komponen
 dalam APM ialah:
 (i) Kos Produk (MOPS) - Malaysia menggunakan harga
 purata harian Mean of Platts (MOPS) di pasaran Platts
@@ -608,7 +608,7 @@ menetapkan harga runcit petrol dan diesel. Berdasarkan kaedah ini, kerajaan
 akan menaikkan harga runcit petrol dan diesel apabila kos-kos produk naik di
 paras di mana kerajaan mengecualikan semua cukai jualan dan menghabiskan
 subsidi 30 sen seliter. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1050,Tuan Abdullah Sani Abdul Hamid [Kuala Langat],"Terima kasih
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,■1050,1050,Tuan Abdullah Sani Abdul Hamid [Kuala Langat],"Terima kasih
 Tuan Yang di-Pertua. Soalan tambahan saya, sebelum itu mukadimahnya
 ialah rakyat keliru daripada harga per barrel petrol pada kadar USD135
 harganya ialah RM2.70. Sekarang ini per barrel sekitar USD63-USD64. Jadi
@@ -618,7 +618,7 @@ apakah dengan formula yang konsisten pricing mechanisme ini kita boleh
 mengawal malah rakyat diberitahu secara terang dan jelas harga semasa dan
 dibolehkan rakyat mengikuti perkembangan semasa kenaikan harga minyak.
 Sekian."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1050,Dato’ Tan Lian Hoe,"Terima kasih di atas pertanyaan Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,■1050,1050,Dato’ Tan Lian Hoe,"Terima kasih di atas pertanyaan Yang
 Berhormat. Untuk makluman Yang Berhormat, sebenarnya mechanisme ini
 telah pun diguna pakai untuk di seluruh negara ASEAN. Sebenarnya pihak
 kerajaan tidak mengelirukan rakyat. Untuk makluman Yang Berhormat,
@@ -629,7 +629,7 @@ produk petroleum. Walaupun harga mentah ini adalah dikatakan rendah tetapi
 kita mesti memasuki kos-kos yang lain yang telah pun saya sebutkan untuk
 menentukan harga minyak di pasaran iaitu RON97, RON95 dan diesel. Terima
 kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1100,Tuan Khairy Jamaluddin [Rembau],"Terima kasih Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,■1100,1100,Tuan Khairy Jamaluddin [Rembau],"Terima kasih Tuan Yang di-
 Pertua. Soalan saya kepada Yang Berhormat Timbalan Menteri, kita ambil
 maklum tentang APM yang telah dijelaskan tadi. Namun soalan saya mudah.
 Beberapa kali kita sebut terutamanya dalam pembentangan Rancangan
@@ -640,7 +640,7 @@ petrol yang disubsidikan.
 Jadi adakah Yang Berhormat Timbalan Menteri boleh bagi komitmen
 bilakah skim subsidi yang baru ini akan diperkenalkan dalam pasaran? Terima
 kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1100,Dato’ Tan Lian Hoe,"Terima kasih Yang Berhormat Rembau.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,■1100,1100,Dato’ Tan Lian Hoe,"Terima kasih Yang Berhormat Rembau.
 Memang kita sedia maklum bahawa semua di antara kita ini begitu prihatin
 tentang skim subsidi yang baru ini yang hendak bila akan dilancarkan.
 Sebenarnya pihak kementerian dan kerajaan sedang mengkaji secara
@@ -651,11 +651,11 @@ So, untuk makluman Yang Berhormat Rembau, ini dalam kajian dan
 akan diumumkan oleh kementerian ataupun kerajaan setelah kita mengambil
 kira pandangan-pandangan daripada rakyat secara keseluruhan. Terima
 kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1100,Datuk Mohd. Nasir Ibrahim Fikri [Kuala Nerus],"minta Menteri Dalam
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1100,1100,Datuk Mohd. Nasir Ibrahim Fikri [Kuala Nerus],"minta Menteri Dalam
 Negeri menyatakan apakah terdapat garis panduan yang dibuat terhadap
 penayangan filem dari luar termasuk filem yang bertentangan dengan budaya
 kita."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1100,Timbalan Menteri Dalam Negeri I [Datuk Wira Abu Seman bin Haji Yusop],"Terima kasih Tuan Yang di-Pertua. Sebelum saya meneruskan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1100,1100,Timbalan Menteri Dalam Negeri I [Datuk Wira Abu Seman bin Haji Yusop],"Terima kasih Tuan Yang di-Pertua. Sebelum saya meneruskan
 jawapan saya ini, saya ingin mengalu-alukan kehadiran rombongan dari MIC
 Bahagian Lumut, Perak. [Tepuk]
 Tuan Yang di-Pertua, saya mengucapkan terima kasih kepada Yang
@@ -681,13 +681,13 @@ di dalam pembuatan filem iaitu:
 Aspek-aspek ini perlu diberi perhatian serius dan tidak dieksploitasi
 hingga boleh membawa akibat yang tidak diingini kepada masyarakat dan
 negara kita. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1100,Datuk Mohd. Nasir Ibrahim Fikri [Kuala Nerus],"Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1100,1100,Datuk Mohd. Nasir Ibrahim Fikri [Kuala Nerus],"Tuan Yang di-
 Pertua, soalan tambahan saya. Saya mohon pihak kementerian
 memperjelaskan dasar penapisan filem di Malaysia dan apakah rasionalnya
 penayangan filem yang tidak melambangkan semangat Gagasan 1Malaysia.
 Pada masa kini, kita lihat filem-filem dari Korea, Sepanyol dan Filipina banyak
 ditayangkan dalam televisyen di negara kita."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1100,Datuk Wira Abu Seman bin Haji Yusop,"Terima kasih Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1100,1100,Datuk Wira Abu Seman bin Haji Yusop,"Terima kasih Tuan Yang di-
 Pertua. Sehubungan dasar berkaitan dengan penapisan filem, ada dipaparkan
 dalam garis panduan penapisan filem yang dikeluarkan oleh Kementerian
 Dalam Negeri. Kalau Yang Berhormat hendak mengetahui lebih terperinci,
@@ -731,7 +731,7 @@ kita hari ini Lembaga Penapisan Filem akan mengambil perhatian dan akan
 menyuarakan kepada pembuat-pembuat filem supaya filem-filem yang dibuat
 ini dimasukkan unsur-unsur berkaitan dengan konsep 1Malaysia ini. Terima
 kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1100,Tuan M. Kulasegaran [Ipoh Barat],"Terima kasih Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1100,1100,Tuan M. Kulasegaran [Ipoh Barat],"Terima kasih Tuan Yang di-
 Pertua. Tuan Yang di-Pertua, bila Yang Berhormat Timbalan Menteri
 memberikan jawapan mengatakan bahawa satu di antara perkara dalam
 penapisan gambar-gambar adalah supaya tidak ada unsur-unsur negatif. Kita
@@ -740,17 +740,17 @@ perlu merangkumi apa yang telah berada di 1Malaysia. Akan tetapi kita tahu
 oleh ramai di antara rakyat di negara ini.
 Bolehkah di antaranya kuota dan diskriminasi bumiputera dan bukan
 bumiputera yang tidak ada makna langsung."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1100,Beberapa Ahli,[Menyampuk] [Dewan riuh]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1100,Tuan M. Kulasegaran [Ipoh Barat],"Itu perkara yang kita perlu fikir.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1100,1100,Beberapa Ahli,[Menyampuk] [Dewan riuh]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1100,1100,Tuan M. Kulasegaran [Ipoh Barat],"Itu perkara yang kita perlu fikir.
 Jadi macam mana, Tuan Yang di-Pertua?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1100,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Tidak apa, tidak apa. Terus sahaja, Yang Berhormat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1100,Tuan M. Kulasegaran [Ipoh Barat],"Itu suara Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1100,1100,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Tidak apa, tidak apa. Terus sahaja, Yang Berhormat."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1100,1100,Tuan M. Kulasegaran [Ipoh Barat],"Itu suara Yang Berhormat
 Rompin."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1100,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ya. Memang dia patut bersuara, Yang Berhormat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1100,Tuan M. Kulasegaran [Ipoh Barat],"Dia patut berada di Amerika.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1100,1100,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ya. Memang dia patut bersuara, Yang Berhormat."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1100,1100,Tuan M. Kulasegaran [Ipoh Barat],"Dia patut berada di Amerika.
 Dia berada di sini."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1100,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Tidak apa, Yang Berhormat. Teruskan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1100,Tuan M. Kulasegaran [Ipoh Barat],"Jadi soalan saya adalah ini.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1100,1100,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Tidak apa, Yang Berhormat. Teruskan."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1100,1100,Tuan M. Kulasegaran [Ipoh Barat],"Jadi soalan saya adalah ini.
 Bahawa dengan institusi dan cara-cara lain di mana kita boleh ada akses
 secara internat, secara DVD dan sebagainya. Apakah rasional kerajaan
 supaya kita perlu ada penapisan filem-filem di mana kami faham, ada sedikit
@@ -758,34 +758,34 @@ yang kami tahu, adalah untuk diguna pakai oleh kerajaan untuk digunakan
 bagi menyebarkan mesej mereka dan mesej mereka bertentangan dengan
 kesedaran rakyat di negara ini. Adakah kerajaan sedar bahawa ini adalah satu
 kesalahan dan tidak ada - no political morality dalam hal itu."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1110,Tuan M. Kulasegaran [Ipoh Barat],"Adakah satu di antara commisioner yang ada di sana, yang dilantik.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1110,1110,Tuan M. Kulasegaran [Ipoh Barat],"Adakah satu di antara commisioner yang ada di sana, yang dilantik.
 Saya difahamkan semasa sebaran filem di sana, ramai di antara mereka
 tertidur, yang terdapat dalam media massa baru-baru ini."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1110,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Ya sudah jelas Yang Berhormat.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1110,Tuan M. Kulasegaran [Ipoh Barat],"Filem ‘Mulaar’, whatever it is.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1110,1110,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Ya sudah jelas Yang Berhormat.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1110,1110,Tuan M. Kulasegaran [Ipoh Barat],"Filem ‘Mulaar’, whatever it is.
 Banned... Apakah asasnya?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1110,Datuk Wira Abu Seman bin Haji Yusop,"Terima kasih Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1110,1110,Datuk Wira Abu Seman bin Haji Yusop,"Terima kasih Tuan Yang di-
 Pertua. Soalan permulaan yang dikemukakan oleh Yang Berhormat Ipoh Barat
 adalah berunsurkan politik. Yang tidak setuju dengan 1Malaysia ialah
 pembangkang. Jadi apa yang kita hendak hiraukan, cuma orang
 pembangkang sahaja yang tidak setuju."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1110,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Tidak apalah Yang Berhormat. Jawab itu sahaja.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1110,Datuk Wira Abu Seman bin Haji Yusop,"Jadi saya rasa saya tidak
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1110,1110,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Tidak apalah Yang Berhormat. Jawab itu sahaja.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1110,1110,Datuk Wira Abu Seman bin Haji Yusop,"Jadi saya rasa saya tidak
 perlulah menjawab soalan Yang Berhormat Ipoh Barat secara terperinci.
 [Ketawa]"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1110,Tuan M. Kulasegaran [Ipoh Barat],"Takutlah. Takut yang saya kata
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1110,1110,Tuan M. Kulasegaran [Ipoh Barat],"Takutlah. Takut yang saya kata
 itu benar tidak boleh jawab. Yang Berhormat tidak boleh jawab."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1110,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Yang Berhormat, tidak apa Yang Berhormat. Dia tidak takut Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1110,1110,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Yang Berhormat, tidak apa Yang Berhormat. Dia tidak takut Yang
 Berhormat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1110,Dr. Dzulkefly Ahmad [Kuala Selangor],"Pembangkang ada 48%
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1110,1110,Dr. Dzulkefly Ahmad [Kuala Selangor],"Pembangkang ada 48%
 rakyat, ingat sedikit."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1110,Tuan M. Kulasegaran [Ipoh Barat],"You are paid to answer my
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1110,1110,Tuan M. Kulasegaran [Ipoh Barat],"You are paid to answer my
 friend!"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1110,Tuan Wong Ho Leng [Sibu],"minta Menteri Sumber Manusia
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1110,1110,Tuan Wong Ho Leng [Sibu],"minta Menteri Sumber Manusia
 menyatakan rancangan Kerajaan Persekutuan untuk menghentikan atau
 mengurangkan masalah “brain drain” sama ada pelajar atau tenaga kerja
 mahir dan tidak mahir di Sibu."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1110,Timbalan Menteri Sumber Manusia [Dato’ Maznah binti Mazlan],"Yang Berhormat Tuan Yang di-Pertua, terima kasih kepada Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1110,1110,Timbalan Menteri Sumber Manusia [Dato’ Maznah binti Mazlan],"Yang Berhormat Tuan Yang di-Pertua, terima kasih kepada Yang Berhormat
 Sibu di atas soalan. Soalan Yang Berhormat khusus mengenai masalah brain
 drain di Sibu, saya mohon memberi jawapan yang menyeluruh mengenai
 perkara ini.
@@ -814,7 +814,7 @@ bawah Kementerian Sains Teknologi dan Inovasi akan digabungkan di bawah
 Talent Corporation. Talent Corporation akan mewujudkan satu pelan modal
 insan berkemahiran yang bersepadu dan bertindak sebagai pusat sehenti bagi
 urusan-urusan pelaksanaan pelan tersebut. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1110,Tuan Chong Chieng Jen [Bandar Kuching],"Terima kasih Tuan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1110,1110,Tuan Chong Chieng Jen [Bandar Kuching],"Terima kasih Tuan
 Yang di-Pertua. Nampaknya Yang Berhormat Timbalan Menteri lari daripada
 soalan itu kerana soalan itu spesifik. Biarlah saya memberitahu Yang
 Berhormat Timbalan Menteri bahawa masalah brain drain di Sibu adalah
@@ -823,34 +823,34 @@ ramai daripada pemuda, pekerja, kalau Yang Berhormat Timbalan Menteri
 nampak itu question, skilled and unskilled worker, bukan sahaja yang skilled
 bahkan yang unskilled worker pun lari daripada Sibu kerana tidak ada peluang
 ekonomi."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1110,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Ringkas Yang Berhormat.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1110,Tuan Chong Chieng Jen [Bandar Kuching],"Ya. Dia tidak faham
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1110,1110,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Ringkas Yang Berhormat.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1110,1110,Tuan Chong Chieng Jen [Bandar Kuching],"Ya. Dia tidak faham
 itu..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1110,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ya, ya."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1110,Tuan Chong Chieng Jen [Bandar Kuching],Saya menjelaskan.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1110,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Yang Berhormat sudah sebut tadi.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1110,Tuan Chong Chieng Jen [Bandar Kuching],"Kejadian ketiadaan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1110,1110,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ya, ya."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1110,1110,Tuan Chong Chieng Jen [Bandar Kuching],Saya menjelaskan.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1110,1110,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Yang Berhormat sudah sebut tadi.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1110,1110,Tuan Chong Chieng Jen [Bandar Kuching],"Kejadian ketiadaan
 peluang ekonomi adalah kerana polisi kerajaan yang hanya mementingkan
 segelintir orang. Syarikat yang rapat atau ada kaitan dengan Ketua Menteri,
 ahli-ahli Ketua Menteri Sarawak... [Dewan riuh]"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1110,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Yang Berhormat itu sudah terkeluar Yang Berhormat. Terkeluar.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1110,Tuan Chong Chieng Jen [Bandar Kuching],"Ini adalah sebab brain
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1110,1110,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Yang Berhormat itu sudah terkeluar Yang Berhormat. Terkeluar.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1110,1110,Tuan Chong Chieng Jen [Bandar Kuching],"Ini adalah sebab brain
 drain di Sibu dan apakah tindakan atau cara untuk menyelesaikan masalah ini
 iaitu kekurangan peluang ekonomi. Lack of economy opportunity yang berada
 di Sibu dan tumpuan kontrak-kontrak kerajaan dan polisi untuk mementingkan
 kroni-kroni Barisan Nasional sahaja."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1110,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Baik.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1110,Tuan Chong Chieng Jen [Bandar Kuching],"Inilah soalan saya yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1110,1110,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Baik.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1110,1110,Tuan Chong Chieng Jen [Bandar Kuching],"Inilah soalan saya yang
 ingin Yang Berhormat Timbalan Menteri jawab."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1110,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Yang Berhormat bukan Barisan Nasional. Saya Barisan Nasional juga
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1110,1110,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Yang Berhormat bukan Barisan Nasional. Saya Barisan Nasional juga
 Yang Berhormat. Duduk Yang Berhormat. Sila."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1110,Dato’ Maznah binti Mazlan,"Yang Berhormat Tuan Yang di-Pertua,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1110,1110,Dato’ Maznah binti Mazlan,"Yang Berhormat Tuan Yang di-Pertua,
 soalan ini mengenai dengan brain drain dan kalau Yang Berhormat Bandar
 Kuching mengatakan bahawa saya lari daripada soalan. Saya ingin
 menegaskan bahawa Yang Berhormat Sibu pun tidak tanya tentang detail dan
 apa sebenarnya masalah dan persoalannya tetapi saya ingin memaklumkan..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1110,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Yang Berhormat Sibu, duduk Yang Berhormat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1110,Dato’ Maznah binti Mazlan,"Saya ingin memaklumkan bahawa
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1110,1110,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Yang Berhormat Sibu, duduk Yang Berhormat."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1110,1110,Dato’ Maznah binti Mazlan,"Saya ingin memaklumkan bahawa
 sekiranya Yang Berhormat ingin maklumat-maklumat terperinci mengenai
 dengan data-data dan juga mengenai dengan kedudukan pekerja. Saya ingin
 memaklumkan bahawa di Sibu sendiri pada masa ini terdapat 210,000 tenaga
@@ -875,100 +875,100 @@ nyatakan tadi. Sibu sebagai salah satu daripada tempat ataupun kawasan
 yang ada di negara ini, sudah tentu akan mendapat manfaat terutama sekali
 jika Ahli Parlimennya bijak untuk menggunakan kesempatan dan peluang-
 peluang yang ada ini. Terima kasih. [Ketawa]"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1110,Puan Fong Po Kuan [Batu Gajah],[Bangun]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1110,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ya, Yang Berhormat, duduk Yang Berhormat. Duduk sahaja Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1110,1110,Puan Fong Po Kuan [Batu Gajah],[Bangun]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1110,1110,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ya, Yang Berhormat, duduk Yang Berhormat. Duduk sahaja Yang
 Berhormat. Saya hendak tanya soalan di sini, my understanding of this
 question dengan izin, adalah soalan brain drain di Sibu. Kalau hendak tanya
 soalan lain Yang Berhormat saya tidak beri. Yang Berhormat Batu Gajah."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1110,Puan Fong Po Kuan [Batu Gajah],"[Bercakap tanpa menggunakan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1110,1110,Puan Fong Po Kuan [Batu Gajah],"[Bercakap tanpa menggunakan
 pembesar suara]"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1110,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Yang Berhormat Batu Gajah, kalau brain drain saya tidak benar."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1110,Puan Fong Po Kuan [Batu Gajah],"Tadi Yang Berhormat Timbalan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1110,1110,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Yang Berhormat Batu Gajah, kalau brain drain saya tidak benar."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1110,1110,Puan Fong Po Kuan [Batu Gajah],"Tadi Yang Berhormat Timbalan
 Menteri kata brain drain seluruh negara."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1110,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Okey, Yang Berhormat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1110,Puan Fong Po Kuan [Batu Gajah],"Yang Berhormat Timbalan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1110,1110,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Okey, Yang Berhormat."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1110,1110,Puan Fong Po Kuan [Batu Gajah],"Yang Berhormat Timbalan
 Menteri kata boleh brain drain seluruh negara."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1110,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Okey, okey. Maknanya saya tidak perlu tanya lagilah."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1110,Puan Fong Po Kuan [Batu Gajah],"Akan tetapi dia boleh jawab
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1110,1110,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Okey, okey. Maknanya saya tidak perlu tanya lagilah."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1110,1110,Puan Fong Po Kuan [Batu Gajah],"Akan tetapi dia boleh jawab
 seluruh negara, tidak boleh saya sambung untuk mendapat penjelasan seluruh
 negara brain drain?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1110,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Jangan melenting Yang Berhormat.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1110,Puan Fong Po Kuan [Batu Gajah],"No, no, no, maaf Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1110,1110,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Jangan melenting Yang Berhormat.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1110,1110,Puan Fong Po Kuan [Batu Gajah],"No, no, no, maaf Tuan Yang di-
 Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1110,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Saya tidak melenting Yang Berhormat. Jangan melenting.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1110,Puan Fong Po Kuan [Batu Gajah],"Tuan Yang di-Pertua, tadi Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1110,1110,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Saya tidak melenting Yang Berhormat. Jangan melenting.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1110,1110,Puan Fong Po Kuan [Batu Gajah],"Tuan Yang di-Pertua, tadi Yang
 Berhormat Timbalan Menteri kata brain drain seluruh negara. Jadi saya
 hendak bangkitkan pertanyaan berkenaan brain drain seluruh negara."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1110,Tuan Mohd. Yusmadi bin Mohd. Yusoff [Balik Pulau],[Bangun]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1110,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Okey, Yang Berhormat Balik Pulau tolong duduk dahulu. Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1110,1110,Tuan Mohd. Yusmadi bin Mohd. Yusoff [Balik Pulau],[Bangun]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1110,1110,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Okey, Yang Berhormat Balik Pulau tolong duduk dahulu. Yang
 Berhormat Sibu pun duduk juga. Saya hendak dealing dengan Yang
 Berhormat Batu Gajah."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1110,Tuan Wong Ho Leng [Sibu],Ini soalan saya.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1110,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],You hendak tanya atau tidak tanya?
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1110,Puan Fong Po Kuan [Batu Gajah],Hendak tanya.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1110,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Duduk. Yang Berhormat Sibu hendak tanya? Soalan asal.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1120,Tuan Wong Ho Leng [Sibu],"Hendak proteslah, Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1110,1110,Tuan Wong Ho Leng [Sibu],Ini soalan saya.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1110,1110,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],You hendak tanya atau tidak tanya?
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1110,1110,Puan Fong Po Kuan [Batu Gajah],Hendak tanya.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1110,1110,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Duduk. Yang Berhormat Sibu hendak tanya? Soalan asal.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1120,1120,Tuan Wong Ho Leng [Sibu],"Hendak proteslah, Yang Berhormat
 Timbalan Menteri tidak jawab soalan saya. [Dewan riuh] [Ketawa]"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1120,Tuan Chong Chieng Jen [Bandar Kuching],"Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1120,1120,Tuan Chong Chieng Jen [Bandar Kuching],"Yang Berhormat
 Timbalan Menteri tidak faham, tidak faham keadaan di Sibu..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1120,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Sudah, sudah Yang Berhormat. [Dewan riuh]"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1120,Puan Fong Po Kuan [Batu Gajah],"Soalan tambahan ketiga Tuan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1120,1120,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Sudah, sudah Yang Berhormat. [Dewan riuh]"
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1120,1120,Puan Fong Po Kuan [Batu Gajah],"Soalan tambahan ketiga Tuan
 Yang di-Pertua. Tuan Yang di-Pertua, soalan tambahan ketiga. Brain drain!
 Brain drain!"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1120,Tuan Chong Chieng Jen [Bandar Kuching],"...Itu menunjukkan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1120,1120,Tuan Chong Chieng Jen [Bandar Kuching],"...Itu menunjukkan
 bahawa Kerajaan Persekutuan mengabaikan Sibu, Sarawak."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1120,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Sudah Yang Berhormat, sudah Yang Berhormat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1120,Tuan Chong Chieng Jen [Bandar Kuching],"....Menganaktirikan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1120,1120,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Sudah Yang Berhormat, sudah Yang Berhormat."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1120,1120,Tuan Chong Chieng Jen [Bandar Kuching],"....Menganaktirikan
 Sarawak."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1120,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Sudah Yang Berhormat.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1120,Tuan Chong Chieng Jen [Bandar Kuching],"...Soalan saya pun tidak
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1120,1120,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Sudah Yang Berhormat.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1120,1120,Tuan Chong Chieng Jen [Bandar Kuching],"...Soalan saya pun tidak
 faham!"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1120,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Sudah, sudah Yang Berhormat. Saya sudah buat keputusan Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1120,1120,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Sudah, sudah Yang Berhormat. Saya sudah buat keputusan Yang
 Berhormat. Oleh sebab soalan Yang Berhormat Sibu, ia kata tidak jawab tetapi
 Yang Berhormat Timbalan Menteri kata sudah jawab.
 Jadi Yang Berhormat Batu Gajah, ia hendak soalan brain drain di
 seluruh negara, saya fikir ini soalan Yang Berhormat Sibu. Jadi, saya buat
 keputusan supaya kita berpindah kepada Yang Berhormat Tuan Matulidi bin
 Jusoh."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1120,Puan Fong Po Kuan [Batu Gajah],"Maaf Tuan Yang di-Pertua. Sejak
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1120,1120,Puan Fong Po Kuan [Batu Gajah],"Maaf Tuan Yang di-Pertua. Sejak
 bila kita mengecilkan atau menyempitkan persoalan?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1120,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Tidak mengapa Yang Berhormat.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1120,Puan Fong Po Kuan [Batu Gajah],"Sebab jelas Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1120,1120,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Tidak mengapa Yang Berhormat.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1120,1120,Puan Fong Po Kuan [Batu Gajah],"Sebab jelas Yang Berhormat
 Timbalan Menteri kata brain drain seluruh negara. Ini menyatakan jelas
 bahawa pihak kita boleh tanya berkenaan brain drain seluruh negara."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1120,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Baik Yang Berhormat, duduk Yang Berhormat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1120,Puan Fong Po Kuan [Batu Gajah],"Jadi itu prosedur yang bukan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1120,1120,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Baik Yang Berhormat, duduk Yang Berhormat."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1120,1120,Puan Fong Po Kuan [Batu Gajah],"Jadi itu prosedur yang bukan
 baik..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1120,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Yang Berhormat...
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1120,Puan Fong Po Kuan [Batu Gajah],"Tuan Yang di-Pertua, maaf ya.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1120,1120,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Yang Berhormat...
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1120,1120,Puan Fong Po Kuan [Batu Gajah],"Tuan Yang di-Pertua, maaf ya.
 Mengecilkan - narrow down persoalan yang boleh kita tanya..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1120,Dato’ Haji Lilah Yasin [Jempol],Ini soal asal Yang Berhormat Sibu.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1120,Puan Fong Po Kuan [Batu Gajah],...Kepada Sibu sahaja?
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1120,Dato’ Haji Lilah Yasin [Jempol],"...Tadi Yang Berhormat Jempol pun
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1120,1120,Dato’ Haji Lilah Yasin [Jempol],Ini soal asal Yang Berhormat Sibu.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1120,1120,Puan Fong Po Kuan [Batu Gajah],...Kepada Sibu sahaja?
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1120,1120,Dato’ Haji Lilah Yasin [Jempol],"...Tadi Yang Berhormat Jempol pun
 Tuan Yang di-Pertua bagi satu."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1120,Puan Fong Po Kuan [Batu Gajah],"Jadi saya pohon Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1120,1120,Puan Fong Po Kuan [Batu Gajah],"Jadi saya pohon Tuan Yang di-
 Pertua, soalan tambahan ketiga, dengan izin Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1120,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Tidak lagi Yang Berhormat, saya sudah buat keputusan. Sila Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1120,1120,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Tidak lagi Yang Berhormat, saya sudah buat keputusan. Sila Yang
 Berhormat Menteri, menjawab soalan nombor sembilan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1120,Tuan Matulidi bin Jusoh [Dungun],"Belum lagi. Belum lagi ditanya.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1120,1120,Tuan Matulidi bin Jusoh [Dungun],"Belum lagi. Belum lagi ditanya.
 Belum lagi ditanya Tuan Yang di-Pertua. [Ketawa]"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1120,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ya, sila Yang Berhormat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1120,Timbalan Menteri Pengajian Tinggi II [Dato’ Saifuddin bin Abdullah],[Bangun]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1120,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Yang Berhormat duduk dahulu, duduk dahulu. Apabila saya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1120,1120,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ya, sila Yang Berhormat."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1120,1120,Timbalan Menteri Pengajian Tinggi II [Dato’ Saifuddin bin Abdullah],[Bangun]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1120,1120,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Yang Berhormat duduk dahulu, duduk dahulu. Apabila saya
 memanggil Yang Berhormat, Yang Berhormat bangkit. Yang bising-bising kiri,
 kanan itu yang mendengar. Orang yang memberi arahan ialah Tuan Yang di-
 Pertua, Yang Berhormat. Jadi itulah sebabnya saya confused sebab Yang
 Berhormat mendengar Yang Berhormat Batu Gajah, tidak dengar saya."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1120,Tuan Lim Lip Eng [Segambut],"Sokong, sokong."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1120,Seorang Ahli,"Teruskan, sila, sila."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1120,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Sila Yang Berhormat Menteri.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1120,Tuan Matulidi Jusoh [Dungun],"minta Menteri Pengajian Tinggi
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1120,1120,Tuan Lim Lip Eng [Segambut],"Sokong, sokong."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1120,1120,Seorang Ahli,"Teruskan, sila, sila."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1120,1120,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Sila Yang Berhormat Menteri.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,■1120,1120,Tuan Matulidi Jusoh [Dungun],"minta Menteri Pengajian Tinggi
 menyatakan apakah langkah yang telah diambil oleh kerajaan bagi
 memastikan IPT bergerak seiring dan memenuhi dasar Model Baru Ekonomi
 (MBE) untuk menjadikan negara berpendapatan tinggi dan juga menjadi IPT
 sebagai pemangkin dan pelopor utama untuk menjayakan ekonomi
 berasaskan pengetahuan dan inovasi."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1120,Timbalan Menteri Pengajian Tinggi II [Dato’ Saifuddin bin Abdullah],"Terima kasih Tuan Yang di-Pertua. Soalan ini merujuk kepada
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,■1120,1120,Timbalan Menteri Pengajian Tinggi II [Dato’ Saifuddin bin Abdullah],"Terima kasih Tuan Yang di-Pertua. Soalan ini merujuk kepada
 dasar Model Baru Ekonomi. Saya minta izin Tuan Yang di-Pertua untuk saya
 menjawab soalan Yang Berhormat Dungun sekadar berdasarkan tiga prinsip
 Model Baru Ekonomi yakni negara berpendapatan tinggi, keterangkuman dan
@@ -1027,7 +1027,7 @@ juga mencadangkan dasar-dasar baru untuk
 pembangunan negara sesuai dengan keperluan
 sebuah ekonomi yang berasaskan ilmu dan inovasi.
 Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1120,Tuan Matulidi Jusoh [Dungun],"Terima kasih jawapan daripada
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,■1120,1120,Tuan Matulidi Jusoh [Dungun],"Terima kasih jawapan daripada
 Yang Berhormat Timbalan Menteri sebentar tadi. Kita memahami bahawa IPT
 dalam negara kita ini sentiasa memperbaiki prestasi dalam mengejar Model
 Baru Ekonomi.
@@ -1040,7 +1040,7 @@ memainkan peranan utama dalam menggerakkan aktiviti penyelidikan,
 pembangunan dan pengkomersialan serta impak pengiktirafan sebuah lagi
 IPTA iaitu UTM sebagai universiti penyelidikan dalam RMKe-10 selain
 daripada Universiti Malaya, UKM, UPM dan USM yang sedia ada."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1120,Dato’ Saifuddin bin Abdullah,"Terima kasih Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,■1120,1120,Dato’ Saifuddin bin Abdullah,"Terima kasih Tuan Yang di-Pertua.
 Memang IPT di negara kita menjalankan fungsi-fungsi yang dianggap
 kontemporari, misalnya menjalankan program-program akademik yang diiktiraf
 oleh agensi profesional dan akreditasi, melaksanakan kurikulum untuk
@@ -1073,7 +1073,7 @@ fundamental dan lazimnya dilakukan oleh universiti. Menyeimbangkannya
 dengan research ataupun penyelidikan yang bersifat aplikasi yang lazimnya
 dilakukan oleh industri. Oleh sebab itu kita sedang melipatgandakan
 kerjasama antara universiti IPT dengan industri."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1130,Dato’ Saifuddin bin Abdullah,"Yang kedua ialah soal impak research itu. Kita tidak mahu juga jika
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,■1130,1130,Dato’ Saifuddin bin Abdullah,"Yang kedua ialah soal impak research itu. Kita tidak mahu juga jika
 kita terlalu asyik melakukan penyelidikan tetapi penyelidikan itu hanya sekadar
 untuk penyelidikan, melibatkan wang yang besar dan dana yang besar tetapi
 impaknya kepada masyarakat khususnya kepada pembangunan negara
@@ -1082,11 +1082,11 @@ tetapi kita tidak optimum dalam kita melakukan penyelidikan dan
 pembangunan tersebut. Pokoknya Tuan Yang di-Pertua ialah kita cuba untuk
 memastikan penyelidikan itu ada keberhasilannya yang nyata untuk
 pembangunan negara. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1130,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Yang Berhormat Batu Gajah.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1130,Puan Fong Po Kuan [Batu Gajah],"Terima kasih Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,■1130,1130,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Yang Berhormat Batu Gajah.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,■1130,1130,Puan Fong Po Kuan [Batu Gajah],"Terima kasih Tuan Yang di-
 Pertua. Saya menyambut baik tindakan yang diambil."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1130,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ringkas Yang Berhormat, masa kita."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1130,Puan Fong Po Kuan [Batu Gajah],"Saya menyambut baik tindakan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,■1130,1130,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ringkas Yang Berhormat, masa kita."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,■1130,1130,Puan Fong Po Kuan [Batu Gajah],"Saya menyambut baik tindakan
 yang diambil oleh kementerian untuk menambah kualiti staf akademik di IPTA
 bagi mencapai hasrat kerajaan melahirkan graduan yang bertaraf dunia dan
 menjadikan negara berpendapatan tinggi serta maju.
@@ -1100,12 +1100,12 @@ golongan cream negara kita.
 Jadi walaupun kita ada universiti yang bertaraf dunia tetapi cream
 negara kita tidak dikekalkan kerana mereka berasa kecewa kerajaan tidak bagi
 biasiswa kepada mereka dan mereka akan ditawarkan tempat di luar negara."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1130,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Yang Berhormat masa kita sudah suntuk Yang Berhormat.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1130,Puan Fong Po Kuan [Batu Gajah],"Apakah peranan kementerian
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,■1130,1130,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Yang Berhormat masa kita sudah suntuk Yang Berhormat.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,■1130,1130,Puan Fong Po Kuan [Batu Gajah],"Apakah peranan kementerian
 dalam situasi sedemikian? Lain yang dicakap oleh kementerian, lain yang
 dibuat oleh Jabatan Perdana Menteri. Jadi saya pohon penjelasan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1130,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Saya pohon penjelasan.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1130,Dato' Saifuddin bin Abdullah,"Tidak betul Tuan Yang di-Pertua
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,■1130,1130,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Saya pohon penjelasan.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,■1130,1130,Dato' Saifuddin bin Abdullah,"Tidak betul Tuan Yang di-Pertua
 kalau dikatakan lain dibuat oleh kementerian lain, lain yang dibuat oleh
 kementerian ini. Kita sentiasa berhubung dan kita ada persefahaman tentang
 apa yang diumumkan dan apa yang dilakukan.
@@ -1114,12 +1114,12 @@ tidak fikir masa mengizinkan tetapi jawapan yang ringkasnya antara lain, satu
 daripada mungkin 100 jawapan ialah universiti kita pun sudah sampai ke satu
 tahap yang tinggi dan boleh menampung pelajar-pelajar kita yang baik-baik itu.
 Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1130,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Terima kasih Yang Berhormat. Sekian sahaja sesi pertanyaan-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,■1130,1130,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Terima kasih Yang Berhormat. Sekian sahaja sesi pertanyaan-
 pertanyaan bagi jawab lisan pada pagi ini.
 **[Masa untuk Pertanyaan-pertanyaan bagi Jawab Lisan telah
 tamat]**
 [Tuan Yang di-Pertua **mempengerusikan Mesyuarat]**"
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1130,,"Aturan Urusan Mesyuarat dibacakan bagi menyambung semula
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1130,1130,,"Aturan Urusan Mesyuarat dibacakan bagi menyambung semula
 perbahasan yang ditangguhkan atas masalah:
 “**Bahawa Dewan ini**,
 **menyedari** akan cabaran pertumbuhan ekonomi serta
@@ -1146,14 +1146,14 @@ tanggungjawab yang murni untuk menjayakan pelan
 transformasi ke arah negara berpendapatan tinggi dan maju,
 berdaya tahan dan berdaya saing, demi untuk meningkatkan
 kesejahteraan rakyat Malaysia”. **[16 Jun 2010]**"
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1130,Tuan Yang di-Pertua,"Yang Berhormat Padang Terap sila
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1130,1130,Tuan Yang di-Pertua,"Yang Berhormat Padang Terap sila
 menyambung. 18 minit lagi Yang Berhormat."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1133,Tuan Mohd. Nasir bin Zakaria [Padang Terap],"Assalamualaikum
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,11.33 pg.,1133,Tuan Mohd. Nasir bin Zakaria [Padang Terap],"Assalamualaikum
 Warahmatullahi Wabarakaatuh. Terima kasih Tuan Yang di-Pertua, Ahli-ahli
 Dewan sekalian. Saya ingin sambung perbahasan. Kelmarin saya sempat
 bagi salam sahaja."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1133,Beberapa Ahli,[Ketawa]
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1133,Tuan Mohd. Nasir bin Zakaria [Padang Terap],"Hari ini tinggal 18
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,11.33 pg.,1133,Beberapa Ahli,[Ketawa]
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,11.33 pg.,1133,Tuan Mohd. Nasir bin Zakaria [Padang Terap],"Hari ini tinggal 18
 minit. Terima kasih. Jadi ada beberapa perkara yang saya ingin bangkitkan.
 Pertama ialah berkenaan dengan Akta GSA yang telah mewujudkan FELDA,
 Group Settlement Act ataupun Akta Penempatan Beramai-ramai. Saya ingin
@@ -1236,7 +1236,7 @@ Jelas sekali ada beberapa pihak membangkitkan tentang tidak sahnya
 dan juga batalnya pemilikan oleh FELDA Plantation ini yang bercanggah
 dengan Akta GSA yang hanya membenarkan pemilikan dalam bentuk individu
 dan juga koperasi."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1140,Tuan Mohd. Nasir bin Zakaria [Padang Terap],"Seterusnya yang saya ingin bangkitkan ialah berlakunya diskriminasi
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1140,1140,Tuan Mohd. Nasir bin Zakaria [Padang Terap],"Seterusnya yang saya ingin bangkitkan ialah berlakunya diskriminasi
 iaitu senjata utama yang digunakan oleh pentadbiran FELDA untuk mengugut
 peneroka yang enggan tunduk kepada sistem FELDA, seolah-olah FELDA
 mempunyai hak untuk mengusir peneroka dari rancangan FELDA. Jadi, oleh
@@ -1365,12 +1365,12 @@ sepatutnya mereka ambil yang menyebabkan berlaku kecelaruan. Masa, duit
 lagi yang terpaksa mereka tanggung, dan kos-kos yang ada di sana
 disebabkan oleh kelemahan. Pihak Jabatan Penuntut Malaysia, Kaherah atau
 pun JPMK minta terima kemunasabahan dia."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1150,Tuan Mohd. Nasir bin Zakaria [Padang Terap],"Antara alasan yang diberikan kepada pelajar-pelajar ini apabila
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1150,1150,Tuan Mohd. Nasir bin Zakaria [Padang Terap],"Antara alasan yang diberikan kepada pelajar-pelajar ini apabila
 mereka tidak boleh masuk ialah pelajar tiba lewat di Mesir, sedangkan pelajar
 tidak pernah dimaklumkan oleh pihak kementerian bilakah tarikh yang
 sepatutnya mereka datang untuk mendaftar di universiti. Ini..."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1150,Tuan Yang di-Pertua,"Yang Berhormat, dua minit lagi."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1150,Dato’ Mahfuz bin Haji Omar [Pokok Sena],"Kedua, alasan yang
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1150,1150,Tuan Yang di-Pertua,"Yang Berhormat, dua minit lagi."
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1150,1150,Dato’ Mahfuz bin Haji Omar [Pokok Sena],"Kedua, alasan yang
 diberikan ialah pelajar lewat menghantar slip keputusan pemeriksaan. Ini juga
 tidak dimaklumkan kepada pelajar-pelajar. Masalah visa pelajar. Pelajar tidak
 boleh memperoleh visa kerana tidak ada pengesahan pembelajaran dan juga
@@ -1410,19 +1410,19 @@ Mesir sudah ada program karnival sukan rakyat, juara rakyat untuk pelajar-
 pelajar Timur Tengah. Apa rasionalnya di sini? Kalaulah pegawai-pegawai
 disibukkan dengan aktiviti-aktiviti persatuan pelajar ini, bagaimanakah mereka
 boleh menjaga kebajikan pelajar-pelajar dan juga mahasiswa kita di sana?"
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1150,Dato’ Mahfuz bin Haji Omar [Pokok Sena],[Bangun]
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1150,Tuan Mohd. Nasir bin Zakaria [Padang Terap],"Laluan, Yang
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1150,1150,Dato’ Mahfuz bin Haji Omar [Pokok Sena],[Bangun]
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1150,1150,Tuan Mohd. Nasir bin Zakaria [Padang Terap],"Laluan, Yang
 Berhormat Pokok Sena."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1150,Dato’ Mahfuz bin Haji Omar [Pokok Sena],Penjelasan...
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1150,Tuan Yang di-Pertua,"Yang Berhormat, saya kata tadi dua minit lagi.
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1150,1150,Dato’ Mahfuz bin Haji Omar [Pokok Sena],Penjelasan...
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1150,1150,Tuan Yang di-Pertua,"Yang Berhormat, saya kata tadi dua minit lagi.
 Sekarang beri laluan pula sama Yang Berhormat Pokok Sena."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1150,Dato’ Mahfuz bin Haji Omar [Pokok Sena],"Sedikit, sedikit sahaja
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1150,1150,Dato’ Mahfuz bin Haji Omar [Pokok Sena],"Sedikit, sedikit sahaja
 Tuan Yang di-Pertua. Berkaitan dengan pelajar Mesir..."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1150,Tuan Yang di-Pertua,"Nanti kalau saya panggil teman yang selepas
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1150,1150,Tuan Yang di-Pertua,"Nanti kalau saya panggil teman yang selepas
 Yang Berhormat, saya kasi penalize menggunakan masa Yang Berhormat."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1150,Dato’ Mahfuz bin Haji Omar [Pokok Sena],Saya minta penjelasan...
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1150,Tuan Yang di-Pertua,Sila.
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1150,Dato’ Mahfuz bin Haji Omar [Pokok Sena],"...Adakah Yang
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1150,1150,Dato’ Mahfuz bin Haji Omar [Pokok Sena],Saya minta penjelasan...
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1150,1150,Tuan Yang di-Pertua,Sila.
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1150,1150,Dato’ Mahfuz bin Haji Omar [Pokok Sena],"...Adakah Yang
 Berhormat bersetuju bahawa kerajaan harus mengambil tindakan segera ke
 atas seorang pelajar daripada Malaysia yang baru mendaftarkan diri di
 American University di Mesir untuk membuat Master yang kini hilang apabila
@@ -1436,7 +1436,7 @@ membawa mereka ini.
 Jadi, adakah Yang Berhormat bersetuju bahawa nampak kerajaan kita,
 Kementerian Luar Negeri khususnya kedutaan kita lambat mengambil tindakan
 bagi menyelesaikan persoalan ini? Minta penjelasan."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1150,Tuan Mohd. Nasir bin Zakaria [Padang Terap],"Terima kasih Tuan
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1150,1150,Tuan Mohd. Nasir bin Zakaria [Padang Terap],"Terima kasih Tuan
 Yang di-Pertua. Bos saya kena bagi juga. Yang Berhormat Pokok Sena
 bangkitkan tentang seorang pelajar kita yang hilang. Ini satu perkara yang
 serius. Apa yang dilakukan oleh pegawai-pegawai kita? Pegawai-pegawai kita
@@ -1458,16 +1458,16 @@ Berhormat Timbalan Menteri kelmarin hebat, prasarananya hebat tetapi
 pembangunan modal insannya cukup bermasalah dan perlu dikaji semula.
 Saya ingat itulah ucapan saya. Terima kasih kepada Tuan Yang di-Pertua.
 Assalammualaikum Warahmatullaahi Wabarakaatuh."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1150,Tuan Yang di-Pertua,"Yang Berhormat memakan masa tadi tiga minit
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1150,1150,Tuan Yang di-Pertua,"Yang Berhormat memakan masa tadi tiga minit
 daripada kawan. Kalau saya panggil nanti wakil daripada PAS, saya akan tolak
 yang tiga minit. [Ketawa] Cuma dengan cara begini sahaja Ahli-ahli Yang
 Berhormat akan berdisiplin."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1150,Dato’ Mahfuz bin Haji Omar [Pokok Sena],"Saya tidak makan masa
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1150,1150,Dato’ Mahfuz bin Haji Omar [Pokok Sena],"Saya tidak makan masa
 dia."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1150,Tuan Yang di-Pertua,"Sila Yang Berhormat Kanowit. Yang Berhormat
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1150,1150,Tuan Yang di-Pertua,"Sila Yang Berhormat Kanowit. Yang Berhormat
 Kanowit kena begitu juga. Kalau lebih masa, teman yang berucap kemudian
 akan dikurangkan masa. Sila."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1156,Datuk Aaron Ago anak Dagang [Kanowit],"Terima kasih Tuan Yang
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,11.56 pg.,1156,Datuk Aaron Ago anak Dagang [Kanowit],"Terima kasih Tuan Yang
 di-Pertua kerana memberi saya peluang untuk bersama-sama berbahas
 Rancangan Malaysia Kesepuluh yang telah dibentangkan oleh Yang Amat
 Berhormat Perdana Menteri pada tempoh hari.
@@ -1510,7 +1510,7 @@ Oleh sebab itu, apa yang telah disasarkan oleh kerajaan - walaupun ia
 memang ada tercatat dalam Rancangan Malaysia Kesepuluh, iaitu
 menekankan atau pertolongan kepada rakyat 40% yang berpendapatan
 rendah ini."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1200,Datuk Aaron Ago anak Dagang [Kanowit],"Saya melihat apa yang telah dicatatkan dalam Rancangan Malaysia
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1200,1200,Datuk Aaron Ago anak Dagang [Kanowit],"Saya melihat apa yang telah dicatatkan dalam Rancangan Malaysia
 Kesepuluh untuk menolong rakyat-rakyat yang miskin atau yang
 berpendapatan rendah ini yang 70% adalah dari kawasan pedalaman. Saya
 amat khuatir sebab pada sekarang ini di kawasan saya sendiri, apabila
@@ -1619,7 +1619,7 @@ mendalam untuk memberi mereka the working culture, budaya untuk bekerja
 supaya kita – lebih-lebih lagi rakyat bumiputera ini boleh sama-sama
 mempunyai budaya kerja yang sama dengan kaum yang lain seperti Cina dan
 India."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1210,Datuk Aaron Ago anak Dagang [Kanowit],"Daripada segi ini, saya pun fikir adakah ia menjadi satu halangan yang
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1210,1210,Datuk Aaron Ago anak Dagang [Kanowit],"Daripada segi ini, saya pun fikir adakah ia menjadi satu halangan yang
 amat sangat daripada kita mengejar kuota yang sekarang disebutkan kita
 perlukan bagi bumiputera mencapai kuota 30% ekuiti. Akan tetapi saya melihat
 daripada segi kuota 30% ekuiti ini ia hanya daripada segi ekuiti, bukan dari
@@ -1647,9 +1647,9 @@ itu, saya harap apa yang telah dicatatkan dalam Rancangan Malaysia ini untuk
 menjurus pada meningkatkan pendapatan kita untuk lebih tinggi lagi adalah
 amat dialu-alukan. Tuan Yang di-Pertua, itu sahajalah perkara yang saya ingin
 sentuh pada masa ini. Terima kasih."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1210,Beberapa Ahli,[Bangun]
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1210,Tuan Yang di-Pertua,Yang Berhormat Gopeng.
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1213,Dr. Lee Boon Chye [Gopeng],"Terima kasih Tuan Yang di-Pertua.
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1210,1210,Beberapa Ahli,[Bangun]
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1210,1210,Tuan Yang di-Pertua,Yang Berhormat Gopeng.
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,12.13 tgh.,1213,Dr. Lee Boon Chye [Gopeng],"Terima kasih Tuan Yang di-Pertua.
 Sekarang kita dalam perbahasan Rancangan Malaysia Kesepuluh. Ini
 sememangnya merupakan satu dokumen yang agak komprehensif dan akan
 menentukan hala tuju pengurusan ekonomi lima tahun yang akan datang dan
@@ -1706,7 +1706,7 @@ Sarawak adalah 93.2%. Pencapaian setakat ini 72.6%. Sarawak telah
 mengorbankan sebahagian besar tanah dan hutan untuk digunakan bagi
 menjana elektrik 2,400 megawatt di Bakun dan enjin hendak mula start tetapi
 tidak tahu ke mana elektrik ini akan disalurkan setakat ini."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1220,Dr. Lee Boon Chye [Gopeng],"Adakah ini akan disalurkan untuk rakyat di negeri Sarawak ataupun
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1220,1220,Dr. Lee Boon Chye [Gopeng],"Adakah ini akan disalurkan untuk rakyat di negeri Sarawak ataupun
 semata-mata untuk beberapa kilang aluminium? Kita lihat di Sarawak
 khususnya ada kelebihan elektrik yang dijana tetapi ramai khususnya mereka
 di dalam rumah panjang, di kawasan pedalaman tidak dapat bekalan elektrik.
@@ -1785,8 +1785,8 @@ Adakah Kementerian Kesihatan atau Kementerian Pengajian Tinggi akan
 mengehadkan bilangan doktor yang dilatih di kolej tempatan ataupun di
 universiti-universiti tempatan? Jadi, ini sahaja yang saya mohon jawapan
 daripada Yang Berhormat Menteri. Sekian, terima kasih."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1220,Tuan Yang di-Pertua,Yang Berhormat Pengerang.
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1228,Dato’ Sri Azalina Dato’ Othman Said [Pengerang],"Tuan Yang di-
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1220,1220,Tuan Yang di-Pertua,Yang Berhormat Pengerang.
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,12.28 tgh.,1228,Dato’ Sri Azalina Dato’ Othman Said [Pengerang],"Tuan Yang di-
 Pertua, saya ingin memulakan bahas dengan mengucapkan tahniah kepada
 Yang Amat Berhormat Perdana Menteri atas Usul Rancangan Malaysia
 Kesepuluh pada 10 Jun 2010 yang ingin membawa Malaysia ke tahap negara
@@ -1804,7 +1804,7 @@ tentang mewujudkan modal insan kelas pertama.
 Kalau kita juga melihat kepada aspek majikan untuk memilih pekerja,
 kita tengok dalam negara kita, ramai majikan yang lebih berminat untuk
 mengambil pekerja-pekerja asing daripada pekerja tempatan."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1230,Dato’ Sri Azalina Dato’ Othman Said [Pengerang],"Kita tahu salah satu daripada sebabnya adalah berkenaan dengan isu
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1230,1230,Dato’ Sri Azalina Dato’ Othman Said [Pengerang],"Kita tahu salah satu daripada sebabnya adalah berkenaan dengan isu
 pembayaran yang lebih murah dalam aspek gaji, yang tidak termasuk
 pembayaran insurans dan juga cukai. Perkara inilah sepatutnya - dalam usul,
 saya ingin mencadangkan supaya kerajaan perlu mewujudkan satu penekanan
@@ -1834,8 +1834,8 @@ dilihat dengan izin, parking di kawasan pengairan air laut Malaysia. Dilihat
 dalam jumlah yang begitu banyak.
 Tuan Yang di-Pertua dan Ahli-ahli Yang Berhormat, kalau kita tengok
 dalam negara kita..."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1230,Datuk Abd. Rahman Dahlan [Kota Belud],[Bangun]
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1230,Dato’ Sri Azalina Dato’ Othman Said [Pengerang],"Kita hanya
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1230,1230,Datuk Abd. Rahman Dahlan [Kota Belud],[Bangun]
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1230,1230,Dato’ Sri Azalina Dato’ Othman Said [Pengerang],"Kita hanya
 mengenakan caj parking sebanyak 20 sen bagi setiap satu tan yang
 menyebabkan banyak kapal-kapal dagang melihat apabila mereka meletakkan
 kapal dagang di perairan Malaysia itu begitu murah, berbanding dengan kapal-
@@ -1849,7 +1849,7 @@ Kita memang tahu dan saya ucapkan tahniah kepada Jabatan Alam
 Sekitar yang begitu cepat menyelesaikan masalah tumpahan minyak di
 kawasan saya. Walau bagaimanapun, saya ingin mencadangkan perlu
 diwujudkan agensi perlindungan alam sekitar yang bebas."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1230,Datuk Abd. Rahman Dahlan [Kota Belud],"Yang Berhormat, boleh
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1230,1230,Datuk Abd. Rahman Dahlan [Kota Belud],"Yang Berhormat, boleh
 minta penjelasan sikit? Terima kasih, Tuan Yang di-Pertua, isu tentang
 tumpahan minyak ini adalah satu isu yang besar. Implikasinya cukup besar.
 Apa yang berlaku di Gulf of Mexico itu akan menjadi pengajaran kepada kita.
@@ -1867,7 +1867,7 @@ pandangan Yang Berhormat? Saya minta pandangan Yang Berhormat,
 apakah perlu sekarang ini, Malaysia meletakkan tanggungjawab mengenai
 tumpahan minyak ini kepada agensi yang mempunyai aset seperti APMM,
 ataupun Jabatan Laut? Terima kasih."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1230,Dato’ Sri Azalina Dato’ Othman Said [Pengerang],"Terima kasih,
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1230,1230,Dato’ Sri Azalina Dato’ Othman Said [Pengerang],"Terima kasih,
 Tuan Yang di-Pertua, sebenarnya inilah masalah yang berlaku bila bercakap
 tentang tumpahan minyak di perairan Malaysia. Apa yang berlaku selalunya
 prosedurnya sudah tentu Jabatan Alam Sekitar dijadikan pengerusi dalam
@@ -1917,7 +1917,7 @@ negara kita perlu dilihat sebagai satu masalah yang begitu serius dan
 diletakkan hanya di bawah Jabatan Alam Sekitar. Bagi saya tidak efektif dan
 tidak dapat melindungi apa yang dituntut oleh rakyat. Ya, Yang Berhormat
 Pasir Salak."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1230,Dato’ Haji Tajuddin Abdul Rahman [Pasir Salak],"Terima kasih
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1230,1230,Dato’ Haji Tajuddin Abdul Rahman [Pasir Salak],"Terima kasih
 Tuan Yang di-Pertua, dan juga Yang Berhormat. Yang Berhormat sebut tadi
 bahawa cadangkan penubuhan satu agensi. Saya dapati tiap-tiap kali bila ada
 satu masalah, satu agensi. Satu perkara satu agensi. Berapa agensi agaknya
@@ -1938,11 +1938,11 @@ tempatan, majlis bandaran dan sebagainya. Membiarkan longkang-longkang
 sebu, parit-parit sebu, bau busuk di kedai-kedai makan, di gerai-gerai makan,
 taman-taman permainan dan tandas-tandas awam. Ini semua persekitaran
 yang kadang-kadang menjijikkan dan meloyakan."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1240,Dato’ Haji Tajuddin Abdul Rahman [Pasir Salak],"Macam mana pelancong sama ada dalam negeri atau luar negeri
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1240,1240,Dato’ Haji Tajuddin Abdul Rahman [Pasir Salak],"Macam mana pelancong sama ada dalam negeri atau luar negeri
 hendak pergi melancong ke tempat-tempat seperti ini. Saya minta Yang
 Berhormat tolong beri saranan apa yang patutlah kepada mereka ini. Terima
 kasih."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1240,Datuk Seri Azalina binti Othman Said [Pengerang],"Terima kasih
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1240,1240,Datuk Seri Azalina binti Othman Said [Pengerang],"Terima kasih
 Yang Berhormat Pasir Salak. Sebenarnya Yang Berhormat Pasir Salak, yang
 saya bercakap sekarang ialah kita mempunyai seksyen 34 kalau tidak silap
 saya di bawah satu akta yang disebut Akta Kualiti Alam Sekitar 1974. Memang
@@ -1998,8 +1998,8 @@ dunia melihat Malaysia sebagai negara yang berbeza. Dengan itu saya
 memohon alam sekitar dijadikan keutamaan. Dengan itu Tuan Yang di-Pertua,
 saya memohon menyokong usul Rancangan Malaysia Kesepuluh. Terima
 kasih."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1240,Tuan Yang di-Pertua,Yang Berhormat Rasah.
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1243,Tuan Loke Siew Fook [Rasah],"Terima kasih Tuan Yang di-Pertua.
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1240,1240,Tuan Yang di-Pertua,Yang Berhormat Rasah.
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,12.43 tgh.,1243,Tuan Loke Siew Fook [Rasah],"Terima kasih Tuan Yang di-Pertua.
 Tuan Yang di-Pertua, dalam Rancangan Malaysia Kesepuluh yang telah
 dibentangkan oleh Yang Amat Berhormat Perdana Menteri pada minggu lepas.
 Rancangan ini berteraskan kepada sepuluh idea utama. Idea yang kelima
@@ -2047,8 +2047,8 @@ Bayangkan kalau tidak ada lagi biasiswa daripada kerajaan, tidak ada
 bantuan daripada kerajaan. Anak-anak Malaysia yang miskin, yang tidak
 berkemampuan termasuk anak-anak Melayu sendiri - di Permatang Pauh, di
 Machang, di Pekan, di Rasah, di Sabah, di Kota Belud..."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1243,Datuk Abd. Rahman Dahlan [Kota Belud],[Ketawa]
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1243,Tuan Loke Siew Fook [Rasah],"...Ramai anak-anak kita yang tidak
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,12.43 tgh.,1243,Datuk Abd. Rahman Dahlan [Kota Belud],[Ketawa]
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,12.43 tgh.,1243,Tuan Loke Siew Fook [Rasah],"...Ramai anak-anak kita yang tidak
 berkemampuan, tidak akan ada peluang untuk menimba pengalaman yang
 berharga ini. Jadi dasar ini tidak boleh kita sokong bahawa kita
 mengurangkan perbelanjaan untuk biasiswa keluar negara untuk anak-anak
@@ -2085,27 +2085,27 @@ cemerlang dalam SPM kita berikan biasiswa mereka untuk belajar pra-
 universiti dahulu. Selepas pra-universiti, kita baru menilai kelayakan mereka
 untuk dihantar ke universiti-universiti terunggul di luar negara dan
 pengkhususan pengajian hanya akan dilakukan selepas mereka menduduki..."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1243,Dato’ Haji Tajuddin Abdul Rahman [Pasir Salak],Penjelasan.
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1243,Tuan Loke Siew Fook [Rasah],...Menduduki prauniversiti.
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1243,Dato’ Haji Tajuddin Abdul Rahman [Pasir Salak],Boleh?
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1243,Tuan Loke Siew Fook [Rasah],Sekejap.
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1243,Dato’ Haji Tajuddin Abdul Rahman [Pasir Salak],"Terima kasih
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,12.43 tgh.,1243,Dato’ Haji Tajuddin Abdul Rahman [Pasir Salak],Penjelasan.
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,12.43 tgh.,1243,Tuan Loke Siew Fook [Rasah],...Menduduki prauniversiti.
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,12.43 tgh.,1243,Dato’ Haji Tajuddin Abdul Rahman [Pasir Salak],Boleh?
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,12.43 tgh.,1243,Tuan Loke Siew Fook [Rasah],Sekejap.
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,12.43 tgh.,1243,Dato’ Haji Tajuddin Abdul Rahman [Pasir Salak],"Terima kasih
 Yang Berhormat Rasah. Tuan Yang di-Pertua, saya dengar tadi Yang
 Berhormat Rasah menyebut soal tidak bersetuju dengan langkah atau
 tindakan kerajaan menghantar ataupun mengurangkan atau menghentikan
 penghantaran pelajar ke luar negeri. Saya rasa ini salah maklumat."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1250,Dato’ Haji Tajuddin Abdul Rahman [Pasir Salak],"Dengan izin, you are being misinformed. Misinformed. Oleh sebab apa
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1250,1250,Dato’ Haji Tajuddin Abdul Rahman [Pasir Salak],"Dengan izin, you are being misinformed. Misinformed. Oleh sebab apa
 and misinfrormed then you are misleading people in the Dewan. Sebab apa
 saya kata begitu, Yang Amat Berhormat Perdana Menteri sudah buat
 kenyataan pun. Saya baca tetapi malangnya mungkin Yang Berhormat Rasah
 tidak baca iaitu Perdana Menteri kata penghantaran pelajar diteruskan untuk
 kursus-kursus yang kritikal dan juga ke universiti-universiti yang tinggi."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1250,Tuan Loke Siew Fook [Rasah],"Baik, saya faham."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1250,Dato’ Haji Tajuddin Abdul Rahman [Pasir Salak],"Ini jelas ada
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1250,1250,Tuan Loke Siew Fook [Rasah],"Baik, saya faham."
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1250,1250,Dato’ Haji Tajuddin Abdul Rahman [Pasir Salak],"Ini jelas ada
 penjelasan daripada Yang Amat Berhormat Perdana Menteri. Jadi, dengan
 sebab itu untuk membuat satu ucapan yang panjang lebar mengelirukan ini,
 saya rasa tidak supaya jangan dibuat oleh Yang Berhormat ini. Ya."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1250,Tuan Loke Siew Fook [Rasah],"Baik. Terima kasih. Saya rasa kita
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1250,1250,Tuan Loke Siew Fook [Rasah],"Baik. Terima kasih. Saya rasa kita
 tahu bahawa apa yang dikatakan bajet tidak cukup. Kena kurangkan jumlah
 pelajar yang dihantar. Itu yang dikatakan oleh Menteri di Jabatan Perdana
 Menteri dan juga Perdana Menteri sendiri.
@@ -2196,15 +2196,15 @@ ladang, sejumlah RM109 juta akan diperuntukkan dalam tempoh 2011 dan
 2012 untuk membekal air yang dirawat kepada lebih kurang 182 ladang yang
 berkeluasan kurang daripada seribu ekar dan terletak kurang lima kilometer
 daripada paip utama..."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1250,Tuan N. Gobalakrishnan [Padang Serai],[Bangun]
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1250,Tuan Loke Siew Fook [Rasah],"Ini selepas 50 tahun baru kita
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1250,1250,Tuan N. Gobalakrishnan [Padang Serai],[Bangun]
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1250,1250,Tuan Loke Siew Fook [Rasah],"Ini selepas 50 tahun baru kita
 bercakap pasal air dirawat. 50 tahun dalam sembilan rancangan Malaysia tidak
 pernah ada seolah-olah akses kepada air bersih pun tidak ada. Jikalau
 bukannya mujurlah masyarakat India tahun 2008 memberikan sokongan yang
 padu kepada Pakatan Rakyat, sekarang baru kerajaan lihat perlu ada air yang
 bersih kepada masyarakat India. Saya rasa ini bukan sahaja masalah yang
 dihadapi masyarakat India. Sila."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1250,Tuan N. Gobalakrishnan [Padang Serai],"Terima kasih Yang
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1250,1250,Tuan N. Gobalakrishnan [Padang Serai],"Terima kasih Yang
 Berhormat Rasah. Saya juga hendak tanya kepada Yang Berhormat Rasah,
 kalaulah kerajaan betul-betul prihatin mahu bantu dengan peruntukan yang
 sebegitu, bukankah lebih elok kalau kerajaan menentukan gaji minimum
@@ -2213,7 +2213,7 @@ kehidupan hari ini di mana kadar kemiskinan ditetapkan lebih daripada seribu
 lebih ringgit. Jikalau kerajaan dapat buat satu dasar supaya setiap pekerja
 ladang dan semua industri di negara ini gaji minimum mesti lebih daripada
 RM1,200 bukan kah elok. Saya minta pendapat Yang Berhormat Rasah."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1250,Tuan Loke Siew Fook [Rasah],"Terima kasih Yang Berhormat
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1250,1250,Tuan Loke Siew Fook [Rasah],"Terima kasih Yang Berhormat
 Padang Serai. Saya setuju. Saya akan masukkan perkara ini sekarang iaitu
 kita kena lihat apa masalah yang dihadapi oleh pekerja ladang seperti
 dikatakan gaji minimum tidak ada. Ada yang mendapat upah atau gaji RM15
@@ -2231,46 +2231,46 @@ Kita nampak apabila kita berkempen semasa Pilihan Raya Kecil Bagan
 Pinang, kita masuk ke ladang Sua Betong, di Siliau dan sebagainya anak-anak
 di tempat itu di kawasan itu dalam kawasan Dewan Undangan Negeri bekas
 Naib Presiden UMNO sendiri..."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1250,Datuk Dr. Marcus Mojigoh [Putatan],"Yang Berhormat, ini kita lihat
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1250,1250,Datuk Dr. Marcus Mojigoh [Putatan],"Yang Berhormat, ini kita lihat
 dalam rancangan ini semua terkandung semua ini. Apa Yang Berhormat
 sentuh itu..."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1250,Tuan Loke Siew Fook [Rasah],Saya tidak beri laluan.
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1250,Tuan N. Gobalakrishnan [Padang Serai],"Duduklah, sudah hendak
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1250,1250,Tuan Loke Siew Fook [Rasah],Saya tidak beri laluan.
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1250,1250,Tuan N. Gobalakrishnan [Padang Serai],"Duduklah, sudah hendak
 habis... [Bercakap tanpa menggunakan pembesar suara]"
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1250,Tuan Yang di-Pertua,Ada tiga minit lagi Yang Berhormat.
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1250,Tuan Loke Siew Fook [Rasah],Ada...?
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1250,Tuan Yang di-Pertua,Ada tiga minit.
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1250,Tuan Loke Siew Fook [Rasah],"Ya. Tuan Yang di-Pertua, saya tidak
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1250,1250,Tuan Yang di-Pertua,Ada tiga minit lagi Yang Berhormat.
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1250,1250,Tuan Loke Siew Fook [Rasah],Ada...?
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1250,1250,Tuan Yang di-Pertua,Ada tiga minit.
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1250,1250,Tuan Loke Siew Fook [Rasah],"Ya. Tuan Yang di-Pertua, saya tidak
 cukup masa."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1250,Datuk Dr. Marcus Makin Mojigoh [Putatan],"Saya rasa kena semua
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1250,1250,Datuk Dr. Marcus Makin Mojigoh [Putatan],"Saya rasa kena semua
 orang di sini. Bukan satu rakyat sahaja, semua kaum di sini tetapi, Yang
 Berhormat tuduh..."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1250,Tuan Loke Siew Fook [Rasah],"Yang Berhormat duduk dahulu.
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1250,1250,Tuan Loke Siew Fook [Rasah],"Yang Berhormat duduk dahulu.
 Jangan kacau masa saya."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1250,Datuk Dr. Marcus Mojigoh [Putatan],"...Kepada orang India sahaja?
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1250,1250,Datuk Dr. Marcus Mojigoh [Putatan],"...Kepada orang India sahaja?
 Banyak lagi orang yang susah dan lebih miskin daripada mereka."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1250,Tuan N. Gobalakrishnan [Padang Serai],"Duduklah, semalam sudah
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1250,1250,Tuan N. Gobalakrishnan [Padang Serai],"Duduklah, semalam sudah
 cakap. Jangan halang orang hendak cakap... [Bercakap tanpa menggunakan
 pembesar suara]"
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1250,Tuan Loke Siew Fook [Rasah],Terima kasih.
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1250,Datuk Dr. Marcus Mojigoh [Putatan],Duduk dahulu.
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1250,Tuan N. Gobalakrishnan [Padang Serai],"Duduk... [Bercakap tanpa
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1250,1250,Tuan Loke Siew Fook [Rasah],Terima kasih.
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1250,1250,Datuk Dr. Marcus Mojigoh [Putatan],Duduk dahulu.
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1250,1250,Tuan N. Gobalakrishnan [Padang Serai],"Duduk... [Bercakap tanpa
 menggunakan pembesar suara]"
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1250,Datuk Dr. Marcus Mojigoh [Putatan],"Siapa yang Speaker ini...?
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1250,1250,Datuk Dr. Marcus Mojigoh [Putatan],"Siapa yang Speaker ini...?
 Perasan! Bila jadi Speaker?"
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1250,Tuan Yang di-Pertua,"Yang Berhormat Rasah ada tiga minit lagi
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1250,1250,Tuan Yang di-Pertua,"Yang Berhormat Rasah ada tiga minit lagi
 alang-alang."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1250,Tuan Loke Siew Fook [Rasah],"Boleh saya sambung selepas makan
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1250,1250,Tuan Loke Siew Fook [Rasah],"Boleh saya sambung selepas makan
 tengah hari?"
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1250,Tuan Yang di-Pertua,"Lepas makan tengah hari baru tiga minit,
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1250,1250,Tuan Yang di-Pertua,"Lepas makan tengah hari baru tiga minit,
 apalah you ini."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1250,Tuan Loke Siew Fook [Rasah],"Tadi ada, saya baru 12 minit Tuan
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1250,1250,Tuan Loke Siew Fook [Rasah],"Tadi ada, saya baru 12 minit Tuan
 Yang di-Pertua."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1250,Tuan Yang di-Pertua,"Yang Berhormat Rasah, saya yang kira masa."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1250,Tuan N. Gobalakrishnan [Padang Serai],"Bagi Yang Berhormat
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1250,1250,Tuan Yang di-Pertua,"Yang Berhormat Rasah, saya yang kira masa."
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1250,1250,Tuan N. Gobalakrishnan [Padang Serai],"Bagi Yang Berhormat
 Putatan sudah lima minit... [Bercakap tanpa menggunakan pembesar suara]"
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1250,Tuan Yang di-Pertua,Sila habiskan.
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1250,Tuan Loke Siew Fook [Rasah],"Seperti yang saya katakan kerajaan
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1250,1250,Tuan Yang di-Pertua,Sila habiskan.
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1250,1250,Tuan Loke Siew Fook [Rasah],"Seperti yang saya katakan kerajaan
 perlu melihat kepada bagaimana untuk meningkatkan taraf hidup pendidikan
 mereka. Apa yang penting ialah saya menyeru kerajaan supaya melihat
 kepada taraf pendidikan mereka, buat satu dasar ataupun program untuk
@@ -2280,9 +2280,9 @@ kurangnya kalau mereka tidak mampu untuk keluar daripada ladang, kerajaan
 patut menghantar mereka ke sekolah berasrama penuh supaya memastikan
 mereka ada peluang untuk mendapatkan sekolah sekurang-kurangnya
 pendidikan menengah."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1250,Tuan N. Gobalakrishnan [Padang Serai],"Perdana Menteri kita buta
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1250,1250,Tuan N. Gobalakrishnan [Padang Serai],"Perdana Menteri kita buta
 itulah... [Bercakap tanpa menggunakan pembesar suara]"
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1250,Tuan Loke Siew Fook [Rasah],"Point yang terakhir berkenaan
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1250,1250,Tuan Loke Siew Fook [Rasah],"Point yang terakhir berkenaan
 dengan Greater KL. Saya ingin kerana masa tidak mengizinkan tidak dapat
 menghuraikan. Greater KL ini saya mengharapkan kerajaan jangan lihat
 kepada 20 kilometer daripada Kuala Lumpur sahaja. Greater KL sepatutnya
@@ -2327,18 +2327,18 @@ pemberian biasiswa yang lebih kepada pelajar-pelajar cemerlang. Itu yang
 diminta oleh masyarakat Cina bukannya lesen judi bola.
 Jadi, saya harap kalau kita hendak cakap bahawa lesen judi bola ini
 perlu diberikan kerana kerajaan tidak cukup wang..."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1250,Datuk Dr. Marcus Mojigoh [Putatan],Yang Berhormat.
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1250,Tuan Yang di-Pertua,Sila gulung Yang Berhormat Rasah. Sila.
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1250,Tuan Loke Siew Fook [Rasah],Ha?
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1250,Datuk Dr. Marcus Mojigoh [Putatan],Beri laluan Yang Berhormat.
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1250,Tuan Yang di-Pertua,"Gulung Yang Berhormat. Sudah tiga minit
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1250,1250,Datuk Dr. Marcus Mojigoh [Putatan],Yang Berhormat.
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1250,1250,Tuan Yang di-Pertua,Sila gulung Yang Berhormat Rasah. Sila.
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1250,1250,Tuan Loke Siew Fook [Rasah],Ha?
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1250,1250,Datuk Dr. Marcus Mojigoh [Putatan],Beri laluan Yang Berhormat.
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1250,1250,Tuan Yang di-Pertua,"Gulung Yang Berhormat. Sudah tiga minit
 lebih."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1250,Datuk Dr. Marcus Mojigoh [Putatan],Soal lesen judi bola...
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1250,Tuan Yang di-Pertua,Jangan ganggu dia Yang Berhormat Putatan.
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1250,Tuan Loke Siew Fook [Rasah],"Yang Berhormat Putatan sudah
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1250,1250,Datuk Dr. Marcus Mojigoh [Putatan],Soal lesen judi bola...
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1250,1250,Tuan Yang di-Pertua,Jangan ganggu dia Yang Berhormat Putatan.
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1250,1250,Tuan Loke Siew Fook [Rasah],"Yang Berhormat Putatan sudah
 cakap."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1250,Datuk Dr. Marcus Mojigoh [Putatan],Saya bagi laluan semalam.
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1250,Tuan Loke Siew Fook [Rasah],"Saya tidak cukup masa, jika saya
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1250,1250,Datuk Dr. Marcus Mojigoh [Putatan],Saya bagi laluan semalam.
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1250,1250,Tuan Loke Siew Fook [Rasah],"Saya tidak cukup masa, jika saya
 ada masa saya bagi. Saya tidak cukup masa Yang Berhormat Putatan.
 Saya hendak gulung bahawa ialah masyarakat Cina tidak minta lesen
 judi bola ini. Masyarakat Cina telah mengatakan bahawa apa yang kita ada
@@ -2351,22 +2351,22 @@ mana-mana.
 Saya mewakili 35,000 pengundi Cina di kawasan saya tidak ada
 seorang pun datang ke pejabat saya kata minta kerajaan bagi lesen judi. Tidak
 ada."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1250,Tuan Yang di-Pertua,Terima kasih Yang Berhormat Rasah.
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1250,Tuan Loke Siew Fook [Rasah],"Saya rasa itu perlu dilihat dan
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1250,1250,Tuan Yang di-Pertua,Terima kasih Yang Berhormat Rasah.
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1250,1250,Tuan Loke Siew Fook [Rasah],"Saya rasa itu perlu dilihat dan
 jangan terlalu banyak flip flop bagi pihak kerajaan. Dengan itu saya
 mengucapkan terima kasih Tuan Yang di-Pertua."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1250,Tuan Yang di-Pertua,"Terima kasih. Ahli-ahli Yang Berhormat
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1250,1250,Tuan Yang di-Pertua,"Terima kasih. Ahli-ahli Yang Berhormat
 mesyuarat kita ditangguhkan sehingga jam 2.30 petang.
 **Mesyuarat ditangguhkan pada pukul 1.05 petang.
 Mesyuarat disambung semula pada pukul 2.30 petang.**"
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1430,Tuan Yang di-Pertua,"[Timbalan Yang di-Pertua (Datuk Ronald Kiandee) **mempengerusikan
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1430,1430,Tuan Yang di-Pertua,"[Timbalan Yang di-Pertua (Datuk Ronald Kiandee) **mempengerusikan
 Mesyuarat]**"
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1430,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Tiada siapa
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1430,1430,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Tiada siapa
 yang bangunkah?"
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1430,Beberapa Ahli,[Bangun]
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1430,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1430,1430,Beberapa Ahli,[Bangun]
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1430,1430,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat
 Labuan."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1432,Datuk Haji Yusof Haji Mahal [Labuan],"Terima kasih Tuan Yang di-
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,2.32 ptg.,1432,Datuk Haji Yusof Haji Mahal [Labuan],"Terima kasih Tuan Yang di-
 Pertua memberikan ruang untuk Labuan mengikuti perbahasan pada hari ini.
 Assalaamualaikum Warahmatullaahi Wabarakaatuh. Terlebih dahulu ingin
 saya mengucapkan tahniah kepada Yang Amat Berhormat Perdana Menteri di
@@ -2450,7 +2450,7 @@ negara. Sebagai contoh produk makanan laut contohnya dengan izin seafood
 yang diproses di Labuan perlu mendapat pensijilan VHM untuk membolehkan
 dieksport atau dipasarkan ke negeri-negeri lain seperti Sabah, Sarawak dan
 Semenanjung."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1440,Datuk Haji Yusof Haji Mahal [Labuan],"Bagi Persijilan Halal pula, terdapat dua standard. Bagi negeri yang
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1440,1440,Datuk Haji Yusof Haji Mahal [Labuan],"Bagi Persijilan Halal pula, terdapat dua standard. Bagi negeri yang
 memiliki Majlis Agama Islam sendiri seperti JAHEINS untuk Sabah, JAIJ untuk
 Johor dan JAIS untuk Selangor masing-masing mengeluarkan Persijilan Halal
 Negeri dan hanya diiktiraf penggunaan sijil tersebut oleh negeri yang
@@ -2561,7 +2561,7 @@ adalah satu bukti bahawa Kerajaan Barisan Nasional yang dipimpin oleh Yang
 Amat Berhormat Perdana Menteri Dato’ Sri Mohd. Najib bin Tun Abdul Razak
 adalah ikhlas dan amat prihatin terhadap nasib dan kebajikan rakyat
 terutamanya rakyat di Pulau Labuan."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1450,Datuk Haji Yusof Haji Mahal [Labuan],"Yang terakhir Tuan Yang di-Pertua, ingin saya turut membahaskan
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1450,1450,Datuk Haji Yusof Haji Mahal [Labuan],"Yang terakhir Tuan Yang di-Pertua, ingin saya turut membahaskan
 mengenai infrastruktur maritim yang termasuk dalam peruntukan bajet
 Rancangan Malaysia Kesepuluh, yang mana kalau kita lihat dalam buku
 Rancangan Malaysia Kesepuluh yang tebal ini, kerajaan telah pun
@@ -2608,9 +2608,9 @@ laluan alur laut antara Labuan dan Tanah Besar Sabah dapat kita pendekkan
 supaya laluan alur yang pendek sehingga membolehkan kapal ataupun feri
 antara Labuan dan Tanah Besar Sabah dapat dipercepatkan. Kalaulah pada
 saat ini..."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1450,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat,
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1450,1450,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat,
 terima kasih, masa habis."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1450,Datuk Haji Yussof bin Haji Mahal [Labuan],"Bagi saya satu minit
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1450,1450,Datuk Haji Yussof bin Haji Mahal [Labuan],"Bagi saya satu minit
 Tuan Yang di-Pertua untuk menutup. Kalaulah benda ini ada alternatif yang
 lain, sekurang-kurangnya perjalanan antara Labuan dari Menumbok itu dapat
 kita percepatkan. Kalau sekarang satu jam setengah, mungkin dengan alur
@@ -2622,9 +2622,9 @@ dan Model Ekonomi Baru, dengan izin Allah SWT, saya optimis dan bahawa
 Rancangan Malaysia Kesepuluh akan dapat dilaksanakan dengan jayanya dan
 cita-cita merealisasikan Wawasan 2020 akan tercapai, insya-Allah. Sekian,
 terima kasih, saya turut menyokong."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1450,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1450,1450,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat
 Pokok Sena."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1455,Dato' Haji Mahfuz bin Omar [Pokok Sena],"Terima kasih Tuan Yang
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,2.55 ptg.,1455,Dato' Haji Mahfuz bin Omar [Pokok Sena],"Terima kasih Tuan Yang
 di-Pertua. Pertama, saya ingin mendapat penjelasan daripada pihak kerajaan.
 Apa peranan Boston Consulting Group dan juga McKinsey & Co. dan Ethos
 Consulting dalam penyediaan Rancangan Malaysia Kesepuluh ini? Saya lihat
@@ -2634,11 +2634,11 @@ diterbitkan oleh Unit Perancang Ekonomi, seolah-olahnya disediakan oleh
 orang lain. Unit Perancang Ekonomi hanya menjadi penerbit kepada buku
 Rancangan Malaysia Kesepuluh ini. Jadi saya hendak tahu apa peranan
 ketiga-tiga syarikat konsultan tadi? Kalau benar, berapakah kos ..."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1455,Puan Nurul Izzah Anwar [Lembah Pantai],"Mohon laluan Yang
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,2.55 ptg.,1455,Puan Nurul Izzah Anwar [Lembah Pantai],"Mohon laluan Yang
 Berhormat, hendak tambah sedikit."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1455,Dato' Haji Mahfuz bin Omar [Pokok Sena],"Berapakah kos yang
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,2.55 ptg.,1455,Dato' Haji Mahfuz bin Omar [Pokok Sena],"Berapakah kos yang
 dibayar kepada ketiga-tiga syarikat itu? Sila."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1455,Puan Nurul Izzah Anwar [Lembah Pantai],"Terima kasih Yang
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,2.55 ptg.,1455,Puan Nurul Izzah Anwar [Lembah Pantai],"Terima kasih Yang
 Berhormat Pokok Sena dan terima kasih Tuan Yang di-Pertua. Sebenarnya
 saya pun hendak tambah, saya dapat daripada jawapan Parlimen saya pada
 sesi lepas tentang berapa yang dibelanjakan oleh kerajaan untuk membayar
@@ -2647,7 +2647,7 @@ Jawapan yang saya dapat untuk McKinsey, Ethos dan juga untuk Ernst &
 Young, dibayar RM6.5 juta hanya untuk mengadakan makmal-makmal, lapan
 kesemuanya. Jadi saya harap Yang Berhormat Pokok Sena dapat tanyakan
 juga apakah akhirnya hasil daripada bayaran ini? Terima kasih."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1455,Dato' Haji Mahfuz bin Omar [Pokok Sena],"Ya, itu yang saya
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,2.55 ptg.,1455,Dato' Haji Mahfuz bin Omar [Pokok Sena],"Ya, itu yang saya
 hendak pergi bahawa itu satu yang sangat jelas. Kalau dalam pembentukan
 makmal-makmal yang disebut tadi bahawa peranan mereka juga terlibat, dan
 saya juga ingin tahu apa peranan mereka dalam penyediaan Rancangan
@@ -2660,9 +2660,9 @@ bidang ekonomi utama dalam negara ini iaitu minyak dan gas sebagai yang
 utama, saya tidak nampak apa-apa perubahan ke arah untuk menjadikan ini
 sebagai satu sumber ke arah membantu negara mencapai ke tahap negara
 berpendapatan tinggi..."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1455,Dato’ Shamsul Anuar bin Haji Nasarah [Lenggong],"Yang
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,2.55 ptg.,1455,Dato’ Shamsul Anuar bin Haji Nasarah [Lenggong],"Yang
 Berhormat Pokok Sena, Yang Berhormat Pokok Sena."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1455,Dato' Haji Mahfuz bin Omar [Pokok Sena],"Sekejap, saya hendak
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,2.55 ptg.,1455,Dato' Haji Mahfuz bin Omar [Pokok Sena],"Sekejap, saya hendak
 habiskan dulu. Ini kerana, saya lihat bahawa ia masih berada pada lingkaran
 yang lama. Sepatutnya bagi saya bahawa kalau kita letakkan minyak dan gas
 ini sebagai satu pendapatan yang utama dalam bidang ekonomi negara ini,
@@ -2677,11 +2677,11 @@ bahawa kalau di Australia sahaja, ada 20 buah syarikat operator carigali,
 sedangkan kita di sini – syarikat yang Australia itu memang Australia punya,
 bukan luar punya. Sedangkan, kita hanya ada satu syarikat Malaysia iaitu
 Petronas Carigali..."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1455,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Hendak bagi
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,2.55 ptg.,1455,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Hendak bagi
 jalan Yang Berhormat?"
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1455,Dato’ Shamsul Anuar bin Haji Nasarah [Lenggong],"Dah terlepas
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,2.55 ptg.,1455,Dato’ Shamsul Anuar bin Haji Nasarah [Lenggong],"Dah terlepas
 dah itu."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1455,Dato' Haji Mahfuz bin Omar [Pokok Sena],"Saya tidak bagi jalan,
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,2.55 ptg.,1455,Dato' Haji Mahfuz bin Omar [Pokok Sena],"Saya tidak bagi jalan,
 saya tidak ada masa, 20 minit. Sedangkan, kita lihat bahawa yang lahir di
 negara kita ini kebanyakannya ialah kontraktor kepada operator carigali. Ia
 sangat berbeza antara operator carigali dengan kontraktor kepada operator
@@ -2695,7 +2695,7 @@ kepada meminda akta pada tahun 1987 dan akhirnya kepada tahun 1998
 dengan mewujudkan Suruhanjaya Telekomunikasi dan Multimedia dan
 akhirnya menjadikan Telekom hanya sebagai badan operator, bukan sebagai
 administrator."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1500,Dato' Haji Mahfuz bin Omar [Pokok Sena],"Jadi sekarang ini kita lihat bahawa mewujudkan persaingan yang
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1500,1500,Dato' Haji Mahfuz bin Omar [Pokok Sena],"Jadi sekarang ini kita lihat bahawa mewujudkan persaingan yang
 banyak syarikat telekomunikasi di negara Malaysia. Jadi sebab itu kalau kita
 hendak melihat bahawa kita akan mencapai negara berpendapatan tinggi,
 maka inilah yang harus dilakukan. Saya tidak tahu kenapa ketiga-tiga
@@ -2785,13 +2785,13 @@ panjang. Walaupun mereka mengatakan ia akan kekal, ia sebagai tapak
 warisan tetapi akhirnya tapak warisan itu akan dikembangkan menjadi
 kompleks perniagaan dan sebagainya untuk menguntungkan kroni-kroni
 tertentu seperti mana yang berlaku kepada Kem Sungai Besi."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1500,Tuan Jeff Ooi Chuan Aun [Jelutong],"Yang Berhormat Pokok Sena,
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1500,1500,Tuan Jeff Ooi Chuan Aun [Jelutong],"Yang Berhormat Pokok Sena,
 Yang Berhormat Pokok Sena minta laluan."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1500,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat,
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1500,1500,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat,
 Yang Berhormat cuma ada lapan minit Yang Berhormat."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1500,Dato' Mahfuz bin Haji Omar [Pokok Sena],"Ya, saya sampai 3.15
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1500,1500,Dato' Mahfuz bin Haji Omar [Pokok Sena],"Ya, saya sampai 3.15
 petang, saya difahamkan sampai 3.15 petang. Sekejap sahaja."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1500,Tuan Jeff Ooi Chuan Aun [Jelutong],"Terima kasih Tuan Yang di-
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1500,1500,Tuan Jeff Ooi Chuan Aun [Jelutong],"Terima kasih Tuan Yang di-
 Pertua dan terima kasih kepada Yang Berhormat Pokok Sena. Saya ingin
 hendak tanya Yang Berhormat Pokok Sena sama ada setuju dengan saya.
 Bahawa kalaulah kita betul-betul mematuhi amanat dan separation of power.
@@ -2800,7 +2800,7 @@ Ini kerana sekarang ini Dewan Rakyat executive yang membuat cadangan
 supaya dipindah. Takkan pemindahan Parlimen itu iaitu satu-satunya tempat
 untuk legislative ditentukan oleh executive? Apa pandangan Yang Berhormat
 Pokok Sena?"
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1500,Dato' Mahfuz bin Haji Omar [Pokok Sena],"Ya, sepatutnya
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1500,1500,Dato' Mahfuz bin Haji Omar [Pokok Sena],"Ya, sepatutnya
 maknanya kita harus dirunding. Ini hak keistimewaan ataupun hak kesenangan
 hak kemudahan yang harus dimiliki oleh Ahli-Ahli Parlimen. Sepatutnya Ahli-
 Ahli Parlimen harus dirunding melalui jawatankuasa-jawatankuasa yang telah
@@ -2823,7 +2823,7 @@ hakikatnya, sememangnya ada berlaku peningkatan kos daripada asalnya
 yang diawardkan kepada Syarikat Maya Maju itu RM600 juta ataupun RM650
 juta.
 (cid:1)(cid:1)(cid:1)(cid:1)"
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1510,Dato' Mahfuz bin Haji Omar [Pokok Sena],"Hari ini telah pun meningkat kos tambahan iaitu antara RM150 ke
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1510,1510,Dato' Mahfuz bin Haji Omar [Pokok Sena],"Hari ini telah pun meningkat kos tambahan iaitu antara RM150 ke
 RM200 juta untuk apa? Interior design makanya hiasan dalaman, sedangkan
 asalnya kertas itu cadangan Maya Maju ialah RM1.1 bilion. Pada waktu itu
 penggal yang lalu, saya tidak menjadi Ahli Parlimen tetapi saya antara orang
@@ -2897,9 +2897,9 @@ Malaysia Kesepuluh ini yang boleh ditunjuk oleh pihak kerajaan bahawa
 bagaimana cara hendak membunuh ‘tikus-tikus’ dan ‘lipas-lipas’ yang duduk
 dalam ‘restoran tomyam pok tek’ Rancangan Malaysia Kesepuluh ini. Sekian,
 terima kasih."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1510,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Terima kasih,
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1510,1510,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Terima kasih,
 Yang Berhormat. Yang Berhormat Sabak Bernam."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1515,Datuk Abd. Rahman Bakri [Sabak Bernam],"Bismillaahir Rahmaanir
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,3.15 ptg.,1515,Datuk Abd. Rahman Bakri [Sabak Bernam],"Bismillaahir Rahmaanir
 Rahiim. Assalamualaikum Warahmatullaahi Wabarakaatuh dan salam
 1Malaysia. Terima kasih kepada Tuan Yang di-Pertua kerana memberi Sabak
 Bernam kesempatan untuk turut serta membahaskan Rancangan Malaysia
@@ -2945,14 +2945,14 @@ jawatan Pegawai Hal Ehwal Islam di Jabatan Islam Wilayah Persekutuan
 profesion agama dan seterusnya meningkatkan syariat Islam.
 Tuan Yang di-Pertua, saya ingin menyentuh teras strategik kelima iaitu
 mewujudkan persekitaran kondusif ..."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1515,Dato’ Haji Ismail bin Mohamed Said [Kuala Krau],"Tuan Yang di-
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,3.15 ptg.,1515,Dato’ Haji Ismail bin Mohamed Said [Kuala Krau],"Tuan Yang di-
 Pertua..."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1515,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat,
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,3.15 ptg.,1515,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat,
 hendak bagi jalan, Yang Berhormat?"
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1515,Dato’ Haji Ismail bin Mohamed Said [Kuala Krau],Satu sahaja.
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1515,Datuk Abd. Rahman Bakri [Sabak Bernam],"Saya ada 20 minit
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,3.15 ptg.,1515,Dato’ Haji Ismail bin Mohamed Said [Kuala Krau],Satu sahaja.
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,3.15 ptg.,1515,Datuk Abd. Rahman Bakri [Sabak Bernam],"Saya ada 20 minit
 sahaja ini."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1515,Dato’ Haji Ismail bin Mohamed Said [Kuala Krau],"Satu sahaja
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,3.15 ptg.,1515,Dato’ Haji Ismail bin Mohamed Said [Kuala Krau],"Satu sahaja
 tentang penguatkuasaan undang-undang di bawah Mahkamah Syariah. Yang
 Berhormat Sabak Bernam, kita lihat banyak kes yang melibatkan Mahkamah
 Syariah ini kerana kekurangan pengalaman dan juga kemahiran dalam
@@ -2963,11 +2963,11 @@ peranan dan saranan Yang Berhormat Sabak Bernam yang mengatakan
 bahawa semua pegawai di bawah pejabat agama dan daerah ini hendaklah
 diberikan pendedahan dan juga tangga gaji mereka ini dinaikkan setaraf
 dengan jabatan-jabatan kerajaan yang lain. Mohon penjelasan."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1515,Datuk Abd. Rahman Bakri [Sabak Bernam],"Terima kasihlah kepada
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,3.15 ptg.,1515,Datuk Abd. Rahman Bakri [Sabak Bernam],"Terima kasihlah kepada
 Yang Berhormat Kuala Krau, saya harap pihak kerajaan dan kementerian yang
 bertanggungjawab dan mengkaji apa yang dipersoalkan oleh Yang Berhormat
 Kuala Krau. Kalau saya jawab, saya jadi menterilah... [Ketawa]"
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1520,Datuk Abd. Rahman Bakri [Sabak Bernam],"Tuan Yang di-Pertua, pada tahun 2020 nanti dianggarkan terdapat 3.4
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1520,1520,Datuk Abd. Rahman Bakri [Sabak Bernam],"Tuan Yang di-Pertua, pada tahun 2020 nanti dianggarkan terdapat 3.4
 juta warga emas. Saya mengalu-alukan hasrat kerajaan untuk meningkatkan
 kerjasama antara kerajaan, badan bukan kerajaan dan swasta untuk
 membawa penglibatan aktif warga emas dalam aktiviti sosial dan ekonomi
@@ -3076,16 +3076,16 @@ dilakukan secara terbuka. Aktiviti pencerobohan dan mencuri pasir lombong
 masih berleluasa ketika ini. Antaranya berlaku di Sungai Rasah, Sungai Long,
 Kampung Kundang, Kuang dan termasuk juga kawasan Menteri Besar
 Selangor sendiri di Bestari Jaya."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1520,Dato’ Shamsul Anuar bin Haji Nasarah [Lenggong],"Yang
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1520,1520,Dato’ Shamsul Anuar bin Haji Nasarah [Lenggong],"Yang
 Berhormat Sabak Bernam, laluan sedikit."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1520,Tuan Abd. Rahman Bakri [Sabak Bernam],Kerja...
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1520,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Hendak bagi
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1520,1520,Tuan Abd. Rahman Bakri [Sabak Bernam],Kerja...
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1520,1520,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Hendak bagi
 jalan, Yang Berhormat?"
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1520,Tuan Abd. Rahman Bakri [Sabak Bernam],"Masa ada sedikit
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1520,1520,Tuan Abd. Rahman Bakri [Sabak Bernam],"Masa ada sedikit
 sangatlah."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1520,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Dia tidak
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1520,1520,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Dia tidak
 bagilah, Lenggong, duduklah."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1520,Tuan Abd. Rahman Bakri [Sabak Bernam],"Kerja pencerobohan ini
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1520,1520,Tuan Abd. Rahman Bakri [Sabak Bernam],"Kerja pencerobohan ini
 dikatakan sudah sampai ke tahap yang mana paip penyedut atau palong
 sudah dipasang di lombong bagi menjalankan aktiviti penggalian dengan lebih
 mendalam. Saya ingin mendapatkan penjelasan kerajaan berhubung isu curi
@@ -3120,14 +3120,14 @@ yang menghubungkan dan mengeratkan sesama ummah dan
 menyambungkan silaturahim bagi perpaduan ummah. Wabillahitaufik
 walhidayah, Assalamualaikum Warahmatullaahi Wabarakaatuh. Terima kasih.
 Sabak Bernam mohon menyokong, Tuan Yang di-Pertua."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1520,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1520,1520,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat
 Bakri."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1529,Tuan Er Teck Hwa [Bakri],"Terima kasih Tuan Yang di-Pertua
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,3.29 ptg.,1529,Tuan Er Teck Hwa [Bakri],"Terima kasih Tuan Yang di-Pertua
 memberikan peluang untuk membahaskan RMKe-10 yang telah dibentang
 oleh Perdana Menteri pada 10 Jun. Sungguhpun isu perjudian sudah banyak
 kali dibangkitkan oleh rakan-rakan saya dalam perbahasan RMKe-10, namun
 saya ingin berikan sedikit pendapat supaya kerajaan boleh menangani isu ini."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1530,Tuan Er Teck Hwa [Bakri],"Satu kenyataan yang dikeluarkan oleh Tun Dr. Mahathir pada 14 Jun
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1530,1530,Tuan Er Teck Hwa [Bakri],"Satu kenyataan yang dikeluarkan oleh Tun Dr. Mahathir pada 14 Jun
 di BERNAMA bahawa “Mungkin pendapat saya berbeza sedikit dengan orang
 lain. Sama ada lesen judi dikeluar atau tidak, judi tetap berlaku di negara kita
 kerana orang-orang Cina memang suka berjudi”. Dalam pendapat beliau,
@@ -3137,12 +3137,12 @@ Menteri yang telah menerajui negara kita selama 22 tahun. Kenyataan Tun Dr.
 Mahathir tidak boleh diambil kira sebagai pendapat peribadi sahaja. Apa yang
 dikatakan oleh beliau mewakili mentalitinya. Apakah kewarasan seorang
 pemimpin mengamalkan..."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1530,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat,
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1530,1530,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat,
 tulis pakai tangankah itu Yang Berhormat?"
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1530,Tuan Er Teck Hwa [Bakri],"Tidak... [Ketawa] [Dewan riuh] ...Set
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1530,1530,Tuan Er Teck Hwa [Bakri],"Tidak... [Ketawa] [Dewan riuh] ...Set
 mentaliti yang lain semasa pemerintahan dan selepas pencen?"
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1530,Seorang Ahli,Mengapa bising-bising lagi?
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1530,Tuan Er Teck Hwa [Bakri],"Sepertimana “I have change my mode”
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1530,1530,Seorang Ahli,Mengapa bising-bising lagi?
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1530,1530,Tuan Er Teck Hwa [Bakri],"Sepertimana “I have change my mode”
 yang disebutkan oleh Menteri Penerangan kita pada tahun lepas? Tentunya
 tidak! Mentalitinya memang tidak berubah sebelum dan selepas beliau letak
 jawatan dan juga mewakili persepsi Barisan Nasional dan UMNO terhadap
@@ -3167,9 +3167,9 @@ menghapuskan aktiviti-aktiviti haram di negara kita?
 Sekiranya Yang Berhormat Menteri Dalam Negeri menghadapi
 kesulitan untuk mendapatkan maklumat tentang perjudian haram ini, mungkin
 saya boleh berikan sikit maklumat untuk beliau."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1530,Dato’ Haji Ismail bin Mohamed Said [Kuala Krau],"Yang Berhormat
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1530,1530,Dato’ Haji Ismail bin Mohamed Said [Kuala Krau],"Yang Berhormat
 Kota Melaka, jangan kacaulah."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1530,Tuan Er Teck Hwa [Bakri],"Tolong saya sahaja. Ketua sindiket judi
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1530,1530,Tuan Er Teck Hwa [Bakri],"Tolong saya sahaja. Ketua sindiket judi
 haram yang saya ingin sebutkan di sini ialah Lee Mok Nyean atau dikenali
 sebagai Henry. Beliau berasal dari Sitiawan, Perak dan merupakan agen judi
 haram yang terbesar di Pantai Barat Semenanjung dan aktif di kawasan
@@ -3184,11 +3184,11 @@ Laman web yang bernama www.cmd368.com dan
 www.mansion88.com merupakan agen perjudian bola secara haram yang
 terbesar di negara kita. Walaupun laman web judi ini didaftarkan di negara
 asing, tetapi ia sebenarnya diuruskan oleh warganegara Malaysia."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1530,Tuan Khalid Abd. Samad [Shah Alam],"Terima kasih Yang
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1530,1530,Tuan Khalid Abd. Samad [Shah Alam],"Terima kasih Yang
 Berhormat Bakri. Saya..."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1530,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1530,1530,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat
 Bakri, duduk dahulu Yang Berhormat Bakri. Hendak bagi jalan, duduk."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1530,Tuan Khalid Abd. Samad [Shah Alam],"Bagi, bagi... Ia bagi Tuan
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1530,1530,Tuan Khalid Abd. Samad [Shah Alam],"Bagi, bagi... Ia bagi Tuan
 Yang di-Pertua. Saya ucapkan tahniahlah kepada Yang Berhormat Bakri. Ia
 tidak ada polis, ia tidak ada jawatankuasa, ia tidak ada apa-apa, kakitangan
 atau apa tetapi ia tahu semua maklumat ini ya. Amat malulah Barisan
@@ -3206,7 +3206,7 @@ semakin teruk?
 Tidak bolehlah kita kata, “Oh, kalau sekarang kita haramkan pun orang
 buat, maka bila kita halalkan pun tidak ada beza.” Pasti akan ada beza. Betul
 atau tidak Yang Berhormat Bakri? Terima kasih."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1530,Tuan Er Teck Hwa [Bakri],"Saya memang setuju dan ucapan ini
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1530,1530,Tuan Er Teck Hwa [Bakri],"Saya memang setuju dan ucapan ini
 masuk dalam ucapan saya. [Ketawa]
 Seterusnya orang di belakang laman web tersebut bernama Wind
 yang berada di Kuala Lumpur. Pejabat beliau di Bangsar Village. Nombor
@@ -3219,12 +3219,12 @@ Bookie sindiket perjudian secara haram yang satu lagi ialah bernama
 Alex, merupakan seorang tauke empat nombor ekor haram yang terkenal di
 Bahau, Negeri Sembilan. Seorang lagi anggota sindiket perjudian Chan Kin
 Foy, nombor telefon 012-3843034."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1530,Seorang Ahli,Yang Berhormat ada main?
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1530,Tuan Er Teck Hwa [Bakri],"Tidak ada. Saya memang tidak main.
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1530,1530,Seorang Ahli,Yang Berhormat ada main?
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1530,1530,Tuan Er Teck Hwa [Bakri],"Tidak ada. Saya memang tidak main.
 [Ketawa] Beliau ada satu akaun di Maybank yang bernombor 114423024792,
 kawasan operasinya ialah Aman Puri, Kepong."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1540,Tuan Sim Tong Him [Kota Melaka],"Catat, catat. Seorang catat."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1540,Tuan Er Teck Hwa [Bakri],"Saya boleh menyenaraikan nama bookie
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1540,1540,Tuan Sim Tong Him [Kota Melaka],"Catat, catat. Seorang catat."
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1540,1540,Tuan Er Teck Hwa [Bakri],"Saya boleh menyenaraikan nama bookie
 judi haram dan Ah Long di Dewan yang mulia ini tetapi masa tidak
 mengizinkan saya membuat begitu.
 Saya cuma ingin mendapatkan penjelasan dari kerajaan, sekiranya
@@ -3247,23 +3247,23 @@ dan produk-produk elektronik. Kerajaan sebegini bukan bergantung
 sepenuhnya kepada dasar kerajaan, tetapi usaha bebas institusi yang
 bernama Academia Sinica atau nama Cina disebutkan sebagai... [Menyebut
 istilah dalam bahasa Mandarin]"
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1540,Datuk Haji Yusof Haji Mahal [Labuan],[Bangun]
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1540,Tuan Er Teck Hwa [Bakri],"Academia Sinica ditubuhkan pada tahun
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1540,1540,Datuk Haji Yusof Haji Mahal [Labuan],[Bangun]
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1540,1540,Tuan Er Teck Hwa [Bakri],"Academia Sinica ditubuhkan pada tahun
 1928 dan ia merupakan satu institusi penyelidikan dan pembangunan tertinggi
 di negara China."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1540,Datuk Haji Yusof Haji Mahal [Labuan],Minta laluan.
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1540,Tuan Er Teck Hwa [Bakri],"Selepas - Sekejap lagi, ya. Selepas
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1540,1540,Datuk Haji Yusof Haji Mahal [Labuan],Minta laluan.
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1540,1540,Tuan Er Teck Hwa [Bakri],"Selepas - Sekejap lagi, ya. Selepas
 kerajaan Parti Kuomintang berpindah ke Taiwan pada tahun..."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1540,Datuk Haji Yusof Haji Mahal [Labuan],Kawan ini.
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1540,Tuan Er Teck Hwa [Bakri],"Boleh. Sekejap, ya. Pada tahun 1949,
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1540,1540,Datuk Haji Yusof Haji Mahal [Labuan],Kawan ini.
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1540,1540,Tuan Er Teck Hwa [Bakri],"Boleh. Sekejap, ya. Pada tahun 1949,
 Academia Sinica ditubuhkan semula di Taipei. Pada tahun 60-an, Kerajaan
 Taiwan menghantar beribu-ribu orang pelajar ke negara barat seperti Amerika,
 Jerman, Jepun, Swiss dan sebagainya untuk mempelajari teknologi baru
 dalam bidang pertanian dan elektronik."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1540,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1540,1540,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat
 Labuan bangun, Yang Berhormat. Hendak bagi?"
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1540,Tuan Er Teck Hwa [Bakri],Okey.
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1540,Datuk Haji Yusof Haji Mahal [Labuan],"Kawan satu hotel. Terima
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1540,1540,Tuan Er Teck Hwa [Bakri],Okey.
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1540,1540,Datuk Haji Yusof Haji Mahal [Labuan],"Kawan satu hotel. Terima
 kasih Tuan Yang di-Pertua dan juga Yang Berhormat Bakri. Memandangkan
 Ahli Parlimen Bakri mempunyai data yang begitu lengkap mengenai penama-
 penama ahli-ahli judi ini, apakah boleh macam Yang Berhormat Bakri buat
@@ -3272,10 +3272,10 @@ bukti sudah ada untuk memudahkan. Nombor telefon pun sudah ada untuk
 memudahkan pihak berkuasa bertindak untuk menangkap ahli-ahli judi.
 Apakah Yang Berhormat Bakri sanggup menjadi saksi kalau ada laporan
 tersebut? Terima kasih."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1540,Tuan Er Teck Hwa [Bakri],"Sebagai Ahli Parlimen, saya akan jadi
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1540,1540,Tuan Er Teck Hwa [Bakri],"Sebagai Ahli Parlimen, saya akan jadi
 saksi. Saya tengok apa tindakan menteri dulu... [Disorak]"
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1540,Seorang Ahli,Siasat dululah.
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1540,Tuan Er Teck Hwa [Bakri],"Saya tengok Ketua Polis macam mana.
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1540,1540,Seorang Ahli,Siasat dululah.
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1540,1540,Tuan Er Teck Hwa [Bakri],"Saya tengok Ketua Polis macam mana.
 Selesai masalah ini dahulu.
 Pelajar-pelajar yang dihantar ke negara Barat bukan sahaja tamat
 pengajian mereka tetapi juga bekerja di koperasi besar di negara-negara
@@ -3302,9 +3302,9 @@ dalam jangka masa panjang sehingga berpuluh-puluh tahun lamanya. SME
 dan EKS kita sepatutnya diberikan peluang untuk melanjutkan kajian
 penyelidikan berdasarkan dari kajian institusi akademik luar negara supaya
 hasil pengajian ini boleh dikomersialkan dalam arena dunia."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1540,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Satu minit lagi,
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1540,1540,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Satu minit lagi,
 Yang Berhormat."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1540,Tuan Er Teck Hwa [Bakri],"Akhirnya, saya mencadangkan supaya
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1540,1540,Tuan Er Teck Hwa [Bakri],"Akhirnya, saya mencadangkan supaya
 kerajaan menyerahkan tugas ini kepada penyelidik-penyelidik akademik.
 Tubuhkan satu institusi yang berasingan dari penglibatan politik dan
 memberikan satu suasana yang lebih bebas supaya mereka boleh
@@ -3314,15 +3314,15 @@ Nasional. Sekiranya pemimpin-pemimpin kita cukup inovasi dalam membuat
 keputusan dasar dan strategi dalam pembangunan negara, kenapa kita masih
 tidak dapat bersaing dengan negara jiran kita, Singapura yang kekurangan
 dana alam semula jadi. Terima kasih."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1540,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1540,1540,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat
 Hulu Selangor."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1549,Tuan P. Kamalanathan a/l P. Panchanathan [Hulu Selangor],"Terima kasih Tuan Yang di-Pertua. Salam sejahtera dan salam 1Malaysia
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,3.49 ptg.,1549,Tuan P. Kamalanathan a/l P. Panchanathan [Hulu Selangor],"Terima kasih Tuan Yang di-Pertua. Salam sejahtera dan salam 1Malaysia
 saya ingin ucapkan kepada Tuan Yang di-Pertua Dewan yang mulia ini serta
 rakan-rakan Yang Berhormat. Setelah membaca dan meneliti Rancangan
 Malaysia Kesepuluh ini, saya sangat yakin yang rancangan ini mempunyai
 kesemua ciri-ciri yang diperlukan untuk meningkatkan lagi taraf hidup dan
 kemakmuran semua penduduk bumi yang bertuah ini."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1550,Tuan P. Kamalanathan a/l P. Panchanathan [Hulu Selangor],"Kesemua aspek yang diberikan tumpuan dalam rancangan ini akan
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1550,1550,Tuan P. Kamalanathan a/l P. Panchanathan [Hulu Selangor],"Kesemua aspek yang diberikan tumpuan dalam rancangan ini akan
 membolehkan kita memerdekakan diri daripada menjadi sebuah negara yang
 terjerat sebagai negara berpendapatan sederhana dan melonjak kepada
 menjadi negara berpendapatan tinggi yang mempunyai daya saing kental yang
@@ -3375,10 +3375,10 @@ sekolah modal bantuan tersebut dan wang yang dijimatkan boleh digunakan
 untuk perkara dan aktiviti lain yang membawa faedah kepada pelajar-pelajar
 sekolah. Keputusan kerajaan untuk menambahkan nisbah guru siswazah di
 sekolah rendah dari 28% hingga ke 60%.."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1550,Tuan Sim Tong Him [Kota Melaka],Boleh minta jalan?
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1550,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1550,1550,Tuan Sim Tong Him [Kota Melaka],Boleh minta jalan?
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1550,1550,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat
 Kota Melaka, hendak beri Yang Berhormat?"
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1550,Tuan P. Kamalanathan a/l P. Panchanathan [Hulu Selangor],"Beri
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1550,1550,Tuan P. Kamalanathan a/l P. Panchanathan [Hulu Selangor],"Beri
 saya habiskan ucapan saya... [Ketawa]
 Keputusan kerajaan untuk menambahkan nisbah guru siswazah dalam
 sekolah rendah daripada 28% hingga ke 60% pasti akan membantu
@@ -3404,43 +3404,43 @@ untuk mencapai matlamat meningkatkan kualiti dan pendapat masyarakat
 miskin ini.
 Selain itu rancangan kerajaan untuk membina 78,000 buah rumah
 mampu milik bagi setiap..."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1550,Tuan Sim Tong Him [Kota Melaka],Hendak minta jalan bolehkah?
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1550,Tuan P. Kamalanathan a/l P. Panchanathan [Hulu Selangor],"Tidak
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1550,1550,Tuan Sim Tong Him [Kota Melaka],Hendak minta jalan bolehkah?
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1550,1550,Tuan P. Kamalanathan a/l P. Panchanathan [Hulu Selangor],"Tidak
 boleh, saya hendak cakap. Beri saya peluang cakap boleh tidak?"
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1550,Tuan Sim Tong Him [Kota Melaka],Boleh!
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1550,Tuan P. Kamalanathan a/l P. Panchanathan [Hulu Selangor],Terima kasih.
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1550,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat,
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1550,1550,Tuan Sim Tong Him [Kota Melaka],Boleh!
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1550,1550,Tuan P. Kamalanathan a/l P. Panchanathan [Hulu Selangor],Terima kasih.
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1550,1550,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat,
 tidak perlu marah-marah Yang Berhormat."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1550,Tuan Sim Tong Him [Kota Melaka],Mencelah sedikit sahaja...
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1550,Tuan P. Kamalanathan a/l P. Panchanathan [Hulu Selangor],"Selain itu rancangan kerajaan untuk... Tidak Tuan Yang di-Pertua. Mencelah,
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1550,1550,Tuan Sim Tong Him [Kota Melaka],Mencelah sedikit sahaja...
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1550,1550,Tuan P. Kamalanathan a/l P. Panchanathan [Hulu Selangor],"Selain itu rancangan kerajaan untuk... Tidak Tuan Yang di-Pertua. Mencelah,
 asyik mencelah sahaja!"
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1550,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Sebentar Yang
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1550,1550,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Sebentar Yang
 Berhormat, mencelah ini dibenarkan oleh peraturan mesyuarat."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1550,Tuan P. Kamalanathan a/l P. Panchanathan [Hulu Selangor],"Saya
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1550,1550,Tuan P. Kamalanathan a/l P. Panchanathan [Hulu Selangor],"Saya
 tidak beri laluan."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1550,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Kalau Yang
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1550,1550,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Kalau Yang
 Berhormat tidak beri jalan, Yang Berhormat beritahu dengan Tuan Yang di-
 Pertua..."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1550,Tuan Sim Tong Him [Kota Melaka],Jangan marah.
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1550,Tuan P. Kamalanathan a/l P. Panchanathan [Hulu Selangor],"Saya
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1550,1550,Tuan Sim Tong Him [Kota Melaka],Jangan marah.
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1550,1550,Tuan P. Kamalanathan a/l P. Panchanathan [Hulu Selangor],"Saya
 tidak beri laluan."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1550,Tuan Sim Tong Him [Kota Melaka],Nanti tidak...
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1550,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat!
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1550,1550,Tuan Sim Tong Him [Kota Melaka],Nanti tidak...
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1550,1550,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat!
 Yang Berhormat Hulu Selangor, kalau Speaker bercakap Yang Berhormat
 kena diam."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1550,Tuan P. Kamalanathan a/l P. Panchanathan [Hulu Selangor],"Minta
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1550,1550,Tuan P. Kamalanathan a/l P. Panchanathan [Hulu Selangor],"Minta
 maaf Tuan Yang di-Pertua."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1550,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Ya, mencelah ini
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1550,1550,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Ya, mencelah ini
 dibenarkan dalam peraturan mesyuarat."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1550,Tuan P. Kamalanathan a/l P. Panchanathan [Hulu Selangor],Okey.
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1550,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Jika Yang
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1550,1550,Tuan P. Kamalanathan a/l P. Panchanathan [Hulu Selangor],Okey.
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1550,1550,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Jika Yang
 Berhormat tidak beri jalan beritahu dengan saya, saya akan beritahu dengan
 yang bangun itu untuk duduk."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1550,Tuan P. Kamalanathan a/l P. Panchanathan [Hulu Selangor],"Saya
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1550,1550,Tuan P. Kamalanathan a/l P. Panchanathan [Hulu Selangor],"Saya
 akan turut Tuan Yang di-Pertua."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1550,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1550,1550,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat
 tidak perlu marah-marah. Terima kasih Yang Berhormat."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1550,Tuan P. Kamalanathan a/l P. Panchanathan [Hulu Selangor],"Terima kasih Tuan Yang di-Pertua. Terima kasih.
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1550,1550,Tuan P. Kamalanathan a/l P. Panchanathan [Hulu Selangor],"Terima kasih Tuan Yang di-Pertua. Terima kasih.
 Selain itu rancangan kerajaan untuk membina 78,000 buah rumah
 mampu milik untuk setiap segmen masyarakat juga pasti disambut baik oleh
 semua pelosok masyarakat Malaysia yang belum memiliki tempat kediaman
@@ -3508,7 +3508,7 @@ dan bertungkus-lumus untuk mendapatkan keputusan peperiksaan yang
 unggul. Selepas mendapat keputusannya yang sangat berjaya hati pelajar
 tersebut berkecai apabila mendapat tahu bahawa dia tidak mendapat biasiswa
 yang akan membolehkannya mengikuti kursus yang diimpikan olehnya."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1600,Tuan P. Kamalanathan a/l P. Panchanathan [Hulu Selangor],"Cuba bayangkan perasaan pelajar tersebut apabila mendapat tahu
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1600,1600,Tuan P. Kamalanathan a/l P. Panchanathan [Hulu Selangor],"Cuba bayangkan perasaan pelajar tersebut apabila mendapat tahu
 yang pelajar yang mendapat keputusan yang tidak sehebat dirinya sendiri
 mendapat peluang pembelajaran tersebut. Bagaimanakah kita akan dapat
 menerangkan mengapa hal sedemikian berlaku kepada pelajar tersebut?
@@ -3617,8 +3617,8 @@ tanah tumpahnya darahku Malaysia”. Saya berdoa agar segala impian dan
 objektif RMKe-10 akan direalisasikan secepat mungkin dan sejaya mungkin.
 Saya menyokong tanpa berbelah bahagi Rancangan Malaysia Kesepuluh.
 Sekian, terima kasih. [Menyebut perkataan dalam bahasa Tamil]"
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1600,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ya, Yang Berhormat Lembah Pantai."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1606,Puan Nurul Izzah Anwar [Lembah Pantai],"Terima kasih Tuan Yang
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1600,1600,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ya, Yang Berhormat Lembah Pantai."
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,4.06 ptg.,1606,Puan Nurul Izzah Anwar [Lembah Pantai],"Terima kasih Tuan Yang
 di-Pertua atas peluang bagi Lembah Pantai untuk turut serta dalam
 perbahasan ini. Assalamualaikum Warahmatullaahi Wabarakaatuh, salam
 sejahtera. Saya akan terus pergi kepada teras pertumbuhan Rancangan
@@ -3657,7 +3657,7 @@ Namun saya lihat daripada kapasiti inovasi sedia ada, kita berhadapan
 dengan banyak rintangan. Bilangan penyelidik sekarang turun daripada 21.3
 setiap 1,000 tenaga buruh pada tahun 2004 kepada hanya 20.3 pada tahun
 2008."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1610,Puan Nurul Izzah Anwar [Lembah Pantai],"Nisbah perbelanjaan kasar bagi R&D (Research and Development)
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1610,1610,Puan Nurul Izzah Anwar [Lembah Pantai],"Nisbah perbelanjaan kasar bagi R&D (Research and Development)
 daripada KDNK menurun daripada 0.69% pada tahun 2004 kepada 0.21%
 pada tahun 2008.
 Justeru, misi kita adalah untuk meneliti rancangan-rancangan
@@ -3789,7 +3789,7 @@ Dunia, kita melihat ranking FIFA. Jadi bukan dua atau tiga ranking lain.
 Maksudnya, agak pelik apabila dalam pembentangan RMKe-10, ranking World
 Economic Forum yang digunakan bertahun-tahun sebelum ini diketepikan dan
 tidak lagi kedengaran."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1620,Puan Nurul Izzah Anwar [Lembah Pantai],"Saya fikir kita perlu konsisten. Rujuk organisasi yang sama untuk
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1620,1620,Puan Nurul Izzah Anwar [Lembah Pantai],"Saya fikir kita perlu konsisten. Rujuk organisasi yang sama untuk
 meneliti prestasi kita. Memang manis apabila kita memetik data Institute for
 Management Development. Akan tetapi memuji diri sendiri, menggunakan
 indeks yang jarang digunakan, boleh diinterpretasikan sebagai menggunakan
@@ -3855,8 +3855,8 @@ Bukan semata-mata untuk mengkritik Kerajaan Barisan Nasional (BN). Ini satu
 perkembangan yang baik. Malangnya, rang undang-undang memberi
 maklumat yang kerajaan bentangkan pada persidangan Parlimen yang lepas
 lebih tertumpu pada menghukum pemberi maklumat yang salah."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1620,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Ada dua minit lagi Yang Berhormat.
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1620,Puan Nurul Izzah Anwar [Lembah Pantai],"Okey. Saya teruskan.
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1620,1620,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Ada dua minit lagi Yang Berhormat.
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1620,1620,Puan Nurul Izzah Anwar [Lembah Pantai],"Okey. Saya teruskan.
 Saya mahu sebut juga Tuan Yang di-Pertua, di mana inovasi dipengaruhi oleh
 struktur institusi. Sebentar tadi Ahli Parlimen Bakri sebut tentang majlis niche
 yang dipengerusikan oleh Perdana Menteri. Tentunya tidak boleh kita
@@ -3892,9 +3892,9 @@ terbuka. Jangan beri kepada Gamuda dan MMC, perlu ada keadilan dan
 ketelusan dalam hal ini. Kita tidak mahu akhirnya Prasarana terpaksa masuk
 untuk menyelamatkan lagi syarikat-syarikat ini seperti yang berlaku
 sebelumnya. Terima kasih Tuan Yang di-Pertua. Saya mohon mencadang."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1620,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Terima kasih Yang Berhormat kerana menetapkan masa. Terima
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1620,1620,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Terima kasih Yang Berhormat kerana menetapkan masa. Terima
 kasih. Ya, Yang Berhormat Limbang."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1628,Tuan Haji Hasbi Haji Habibollah [Limbang],"Assalamualaikum
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,4.28 ptg.,1628,Tuan Haji Hasbi Haji Habibollah [Limbang],"Assalamualaikum
 Warahmatullaahi Wabarakaatuh. Terima kasih Tuan Yang di-Pertua kerana
 memberi peluang kepada saya untuk turut serta membahaskan Usul RMKe-10
 yang dibentangkan oleh Yang Amat Berhormat Perdana Menteri. Tuan Yang
@@ -3919,7 +3919,7 @@ warga emas terutamanya di kampung-kampung, di luar-luar bandar dan di
 pedalaman yang memohon wang saraan hidup. Memang betul ada di antara
 mereka mempunyai anak-anak. Akan tetapi mereka juga mempunyai keluarga
 sendiri dan sukar untuk membiayai dan menjaga orang tua mereka."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1630,Tuan Haji Hasbi Haji Habibollah [Limbang],"Namun mereka sendiri tidak dapat memberi apa-apa bantuan untuk
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1630,1630,Tuan Haji Hasbi Haji Habibollah [Limbang],"Namun mereka sendiri tidak dapat memberi apa-apa bantuan untuk
 ibu bapa mereka selain daripada makan atau pun minum bersama-sama. Jadi,
 saya mencadangkan kepada kerajaan melalui Jabatan Kebajikan, sekiranya
 apalah menimbang bantuan untuk warga emas contohnya yang berumur 65
@@ -4011,16 +4011,16 @@ Jadi, akhirnya anak-anak ini terpaksalah – saya ingin menyatakan guru
 besar sekolah tersebut, saya puji usaha dia walaupun mengambil tindakan,
 walaupun melanggar polisi bahawasanya murid-murid prasekolah tidak boleh
 di asrama, dia benarkan diam di situ."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1630,Puan Hajah Zuraida Kamaruddin [Ampang],[Bangun]
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1630,Tuan Haji Hasbi Haji Habibollah [Limbang],"Oleh sebab mereka ini
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1630,1630,Puan Hajah Zuraida Kamaruddin [Ampang],[Bangun]
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1630,1630,Tuan Haji Hasbi Haji Habibollah [Limbang],"Oleh sebab mereka ini
 kalau dia balik pada hujung minggu, mereka tidak akan balik ke sekolah."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1630,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Hendak beri ruang dengan Yang Berhormat Ampang Yang
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1630,1630,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Hendak beri ruang dengan Yang Berhormat Ampang Yang
 Berhormat?"
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1630,Tuan Haji Hasbi Haji Habibollah [Limbang],"Minta maaf. Saya
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1630,1630,Tuan Haji Hasbi Haji Habibollah [Limbang],"Minta maaf. Saya
 hendak habiskan saya punya..."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1630,Puan Hajah Zuraida Kamaruddin [Ampang],"[Bercakap tanpa
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1630,1630,Puan Hajah Zuraida Kamaruddin [Ampang],"[Bercakap tanpa
 menggunakan pembesar suara]"
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1630,Tuan Haji Hasbi Haji Habibollah [Limbang],"...Perbahasan saya.
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1630,1630,Tuan Haji Hasbi Haji Habibollah [Limbang],"...Perbahasan saya.
 Jadi, inilah yang terjadi. Jadi, saya minta sebab memang ini menjadi dasar
 bahawa murid prasekolah tidak dibenarkan di asrama tetapi kita haruslah
 mengikut melihat keadaan, situasi, suasana dan tempat itu sendiri sebab
@@ -4055,7 +4055,7 @@ Parlimen Limbang iaitu pertama sekali ialah projek Jalan Meritam, Telahak,
 Bong Abai, Pengkalan Rejap, Sungai Poyan – Fasa 3. Keduanya ialah projek
 pembinaan Jalan Bawang Obor, Pekan Medamit ke Rumah Jampong,
 Melaban dan Mentawai – Fasa 2."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1640,Tuan Haji Hasbi Haji Habibollah [Limbang],"Oleh sebab projek fasa pertama sedang pun diukur, pada masa ini di
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1640,1640,Tuan Haji Hasbi Haji Habibollah [Limbang],"Oleh sebab projek fasa pertama sedang pun diukur, pada masa ini di
 bawah konsultasi sedang pun direka bentuk. Ini adalah dalam Rancangan
 Malaysia Kesembilan di bawah NKRA. Jadi yang ini saya minta ianya
 dimasukkan, akan diteruskan dalam Rancangan Malaysia Kesepuluh sebagai
@@ -4071,8 +4071,8 @@ terutamanya agro base industry untuk memberi dan membuka peluang-
 peluang pekerjaan seterusnya menambah pendapatan penduduk tempatan
 serta seterusnya menaikkan taraf sosioekonomi penduduk luar bandar di
 Limbang. Dengan ini saya menyokong, terima kasih."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1640,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Yang Berhormat Tawau.
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1641,Datuk Chua Soon Bui [Tawau],"Terima kasih saya ucapkan kepada
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1640,1640,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Yang Berhormat Tawau.
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,4.41 ptg.,1641,Datuk Chua Soon Bui [Tawau],"Terima kasih saya ucapkan kepada
 Tuan Yang di-Pertua, memberi peluang kepada saya untuk membahaskan
 Rancangan Malaysia Kesepuluh. Jika kerajaan komited untuk mencapai status
 negara berpendapatan tinggi dan purata pendapatan RM38,850 setahun pada
@@ -4156,7 +4156,7 @@ tradisi kerana ia telah dipinggirkan oleh pihak-pihak berkuasa yang tidak
 bertanggungjawab.
 Perkara yang ketiga, bekalan tenaga hijau yang berterusan untuk
 Sabah khususnya dan di Tawau."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1650,Datuk Chua Soon Bui [Tawau],"Saya sekali lagi merujuk pada cadangan loji jana kuasa arang batu di
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1650,1650,Datuk Chua Soon Bui [Tawau],"Saya sekali lagi merujuk pada cadangan loji jana kuasa arang batu di
 Sahabat, Lahad Datu. Adakah loji janakuasa arang batu ini cukup bernilai
 untuk mengorbankan segala sumber semula jadi biodiversiti yang kaya dalam
 alam sekitar dan rakyat di Sabah. Contohnya seperti terumbu karang terbesar,
@@ -4255,16 +4255,16 @@ lagi rakyat di Sabah harus menderita? Apakah langkah-langkah tambahan
 yang akan diambil untuk mengatasi masalah kemiskinan di Sabah dan Tawau
 di bawah Rancangan Malaysia Kesepuluh? Dengan itu sekian, dan terima
 kasih."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1650,Beberapa Ahli,[Bangun]
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1650,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Yang Berhormat Hulu Terengganu.
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1659,Tuan Haji Mohd. Nor Othman [Hulu Terengganu],"Terima kasih
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1650,1650,Beberapa Ahli,[Bangun]
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1650,1650,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Yang Berhormat Hulu Terengganu.
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,4.59 ptg.,1659,Tuan Haji Mohd. Nor Othman [Hulu Terengganu],"Terima kasih
 Tuan Yang di-Pertua kerana memberikan ruang kepada saya untuk mengambil
 bahagian dalam perbahasan Rancangan Malaysia Kesepuluh pada petang ini.
 Tuan Yang di-Pertua, saya mengucapkan tahniah dan terima kasih
 kepada Yang Amat Berhormat Perdana Menteri kerana berjaya
 membentangkan Rancangan Malaysia Kesepuluh dan saya menyokong
 penuh."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1700,Tuan Haji Mohd. Nor Othman [Hulu Terengganu],"Ini kerana Rancangan Malaysia Kesepuluh ini merupakan satu
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1700,1700,Tuan Haji Mohd. Nor Othman [Hulu Terengganu],"Ini kerana Rancangan Malaysia Kesepuluh ini merupakan satu
 perancangan yang menyeluruh yang memberi kekuatan kepada negara kita,
 yang boleh membawa negara kita terus maju, walaupun kita dengar bahawa
 pihak pembangkang merasakan dan meramalkan bahawa Rancangan
@@ -4293,9 +4293,9 @@ wakil rakyat daripada PKR dan DAP sudah tidak tahan lagi dengan
 kebusukannya dan kemudian keluar seorang demi seorang menandakan
 bahawa busuk dan buruknya rumah restoran yang mereka diami. Mungkin ahli
 yang boleh menghidu bau busuk itu sahaja yang sanggup bertahan."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1700,Datuk Bung Moktar bin Radin [Kinabatangan],[Bangun]
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1700,Tuan Haji Mohd. Nor Othman [Hulu Terengganu],Ya.
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1700,Datuk Bung Moktar bin Radin [Kinabatangan],"Terima kasih Yang
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1700,1700,Datuk Bung Moktar bin Radin [Kinabatangan],[Bangun]
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1700,1700,Tuan Haji Mohd. Nor Othman [Hulu Terengganu],Ya.
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1700,1700,Datuk Bung Moktar bin Radin [Kinabatangan],"Terima kasih Yang
 Berhormat, terima kasih Tuan Yang di-Pertua, sedikit sahaja. Bak kata
 pepatah Melayu, “Kuman jauh di lautan dia nampak tetapi gajah depan mata
 dia tidak nampak”. Bercelaru dalam pakatan pembangkang ini, hari-hari, bulan-
@@ -4304,7 +4304,7 @@ campur untuk dia lompat, apabila dia lompat, dia tuduh kita yang uruskan.
 Akan tetapi dia tidak tahan dengan bau busuk dengan kerenah dalam parti dia,
 maka dia melompat tetapi dia tuduh kita membuat andaian macam-macam.
 Minta pandangan Yang Berhormat."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1700,Tuan Haji Mohd. Nor Othman [Hulu Terengganu],"Ya, itulah yang
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1700,1700,Tuan Haji Mohd. Nor Othman [Hulu Terengganu],"Ya, itulah yang
 saya katakan tadi, bila rumah tangga sendiri baunya busuk maka dia mencari
 kesalahan orang lain untuk terus menggambarkan bahawa yang salah bukan
 mereka, yang salah orang lain. Akan tetapi saya amat yakin, bau busuk itu
@@ -4359,12 +4359,12 @@ seumpama ini menyebabkan kurangnya pemikiran-pemikiran yang luar biasa,
 kurangnya inovasi dan kreativiti kerana ianya tidak menepati sebagaimana
 skema yang telah ditetapkan oleh pihak yang menentukan markah yang akan
 diberi. Tuan Yang di-Pertua..."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1700,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Saya menghargai ucapan Yang Berhormat, pertama kali orang sebut
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1700,1700,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Saya menghargai ucapan Yang Berhormat, pertama kali orang sebut
 ini."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1700,Tuan Haji Mohd. Nor Othman [Hulu Terengganu],"Tuan Yang di-
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1700,1700,Tuan Haji Mohd. Nor Othman [Hulu Terengganu],"Tuan Yang di-
 Pertua, terima kasih atas penghargaan yang diberikan dan terima kasih yang
 diucapkan."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1710,Tuan Haji Mohd. Nor Othman [Hulu Terengganu],"Dalam pengajaran peperiksaan secara pengajaran yang berasaskan
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1710,1710,Tuan Haji Mohd. Nor Othman [Hulu Terengganu],"Dalam pengajaran peperiksaan secara pengajaran yang berasaskan
 exam oriented ini, menyebabkan unsur-unsur pendidikan yang lain seperti
 pembelajaran sepanjang hayat, unsur-unsur nilai murni, pembentukan sahsiah
 merupakan unsur-unsur sampingan yang hanya menjadi penambahbaikan
@@ -4445,8 +4445,8 @@ maksimum.
 Tuan Yang di-Pertua, saya melahirkan rasa sukacita dengan
 kementerian kita, dengan kerajaan kita untuk melahirkan lebih ramai
 usahawan..."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1710,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tunku Jaafar],Ada satu minit lagi Yang Berhormat.
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1710,Tuan Haji Mohd. Nor Othman [Hulu Terengganu],"Satu minit lagi?
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1710,1710,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tunku Jaafar],Ada satu minit lagi Yang Berhormat.
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1710,1710,Tuan Haji Mohd. Nor Othman [Hulu Terengganu],"Satu minit lagi?
 Saya rasa baru lima minit bercakap. Tidak mengapalah. Saya hendak bawa
 satu kes bagaimana keghairahan kerajaan kita dalam usaha membangunkan
 usahawan-usahawan muda kita ini, diambil kesempatan oleh agensi-agensi,
@@ -4464,9 +4464,9 @@ Anak-anak muda ini merasakan mereka telah tertipu kerana janji-janji
 yang diberikan oleh syarikat ini tidak ditunaikan. Anak-anak muda ini
 menyalahkan kepada pihak kerajaan. Pada masa itu, di bawah Kementerian
 Pembangunan Usahawan dan Koperasi."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1710,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tunku Jaafar],"Ya, masa Yang Berhormat.
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1710,1710,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tunku Jaafar],"Ya, masa Yang Berhormat.
 (cid:2)(cid:2)(cid:2)(cid:2)**1720**"
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1710,Tuan Haji Mohd. Nor Othman [Hulu Terengganu],"Saya tidak
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1710,1710,Tuan Haji Mohd. Nor Othman [Hulu Terengganu],"Saya tidak
 salahkan kepada anak-anak muda menyalahkan kerajaan kerana mengikut
 rekod yang ada pada saya, bahawa surat-surat daripada kementerian ini juga
 turut sama terlibat dan ketika kempen untuk mendapatkan penglibatan anak-
@@ -4480,8 +4480,8 @@ mereka pertolongan supaya mereka tidak rasa mereka ditipu bukan sahaja
 oleh syarikat berkenaan tetapi juga oleh pihak kerajaan. Tuan Yang di-Pertua,
 saya ingin menyokong. Sekian, Assalamualaikum Warahmatullaahi
 Wabarakaatuh."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1710,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Yang Berhormat Baling.
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1721,Tuan Haji Taib Azamudden Md. Taib [Baling],"Assalamualaikum
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,■1710,1710,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Yang Berhormat Baling.
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,5.21 ptg.,1721,Tuan Haji Taib Azamudden Md. Taib [Baling],"Assalamualaikum
 Warahmatullaahi Wabarakaatuh. Terima kasih Tuan Yang di-Pertua kerana
 memberi peluang kepada saya untuk dapat bersama-sama membahaskan
 Rancangan Malaysia Kesepuluh atau RMKe-10 pada petang ini walaupun di
@@ -4561,19 +4561,19 @@ terhenti kepada sejauh mana kedudukan, ketinggian akhlak yang ada pada
 mereka.” [Menyebut perkataan dalam bahasa Arab] “Tetapi sebaliknya, kalau
 akhlak dan tingkah laku masyarakat itu sendiri, rakyat itu sendiri hilang, maka
 turut ranap juga bangsa itu sendiri."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1721,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Yang Berhormat kalau belum habis, sambung hari Isnin."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1721,Tuan Haji Taib Azamudden Md. Taib [Baling],"Terima kasih Tuan
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,5.21 ptg.,1721,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Yang Berhormat kalau belum habis, sambung hari Isnin."
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,5.21 ptg.,1721,Tuan Haji Taib Azamudden Md. Taib [Baling],"Terima kasih Tuan
 Yang di-Pertua."
-USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,1721,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ahli-ahli Yang Berhormat, saya tangguhkan dahulu persidangan
+USUL,RANCANGAN MALAYSIA KESEPULUH (2011-2015),,5.21 ptg.,1721,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ahli-ahli Yang Berhormat, saya tangguhkan dahulu persidangan
 Dewan dan minta Menteri membacakan Usul Ucapan Penangguhan."
-USUL,"[Datuk Saravanan a/l Murugan]: Tuan Yang di-Pertua, saya mohon",,1721,,"mencadangkan:
+USUL,"[Datuk Saravanan a/l Murugan]: Tuan Yang di-Pertua, saya mohon",,5.21 ptg.,1721,,"mencadangkan:
 “Bahawa mengikut Peraturan Mesyuarat 16(3),
 mesyuarat ini ditangguhkan sekarang.”"
-USUL,"[Datuk Saravanan a/l Murugan]: Tuan Yang di-Pertua, saya mohon",,1721,"Timbalan Menteri Penerangan, Komunikasi dan Kebudayaan I [Dato’ Joseph Salang anak Gandum]","Tuan Yang di-Pertua, saya mohon
+USUL,"[Datuk Saravanan a/l Murugan]: Tuan Yang di-Pertua, saya mohon",,5.21 ptg.,1721,"Timbalan Menteri Penerangan, Komunikasi dan Kebudayaan I [Dato’ Joseph Salang anak Gandum]","Tuan Yang di-Pertua, saya mohon
 menyokong."
 USUL,"UCAPAN-UCAPAN PENANGGUHAN
 Pesuruhjaya Bangunan Kuala Lumpur Gagal
-Selesai Masalah Pembeli Unit Kondominium City Gardens",,1730,Tuan Fong Kui Lun [Bukit Bintang],"Terima kasih Tuan Yang di-
+Selesai Masalah Pembeli Unit Kondominium City Gardens",,5.30 ptg.,1730,Tuan Fong Kui Lun [Bukit Bintang],"Terima kasih Tuan Yang di-
 Pertua. Dalam ucapan penangguhan ini, saya ingin membangkitkan kes yang
 dihadapi oleh para pembeli unit Kondominium City Gardens yang terletak di
 Persiaran Raja Chulan, Kuala Lumpur yang merupakan projek penswastaan di
@@ -4633,10 +4633,10 @@ dan tindakan ke atas pemaju dan JMB palsu tersebut dengan segera. Sekian,
 terima kasih."
 USUL,"UCAPAN-UCAPAN PENANGGUHAN
 Pesuruhjaya Bangunan Kuala Lumpur Gagal
-Selesai Masalah Pembeli Unit Kondominium City Gardens",,1730,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Yang Berhormat Menteri, sila."
+Selesai Masalah Pembeli Unit Kondominium City Gardens",,5.30 ptg.,1730,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Yang Berhormat Menteri, sila."
 USUL,"UCAPAN-UCAPAN PENANGGUHAN
 Pesuruhjaya Bangunan Kuala Lumpur Gagal
-Selesai Masalah Pembeli Unit Kondominium City Gardens",,1735,Timbalan Menteri Wilayah Persekutuan dan Kesejahteraan Bandar [Datuk Saravanan a/l Murugan],"Terima kasih Tuan Yang di-Pertua. Ahli
+Selesai Masalah Pembeli Unit Kondominium City Gardens",,5.35 ptg.,1735,Timbalan Menteri Wilayah Persekutuan dan Kesejahteraan Bandar [Datuk Saravanan a/l Murugan],"Terima kasih Tuan Yang di-Pertua. Ahli
 Yang Berhormat Bukit Bintang telah membangkitkan empat perkara mengenai
 isu kondominium City Gardens di dalam ucapan penangguhannya. Sebelum
 saya memberikan jawapan kepada keempat-empat perkara itu, izinkan saya
@@ -4696,7 +4696,7 @@ pemilik asal tanah bahawa pengeluaran notis memanggil mesyuarat itu telah
 cuba dipalsukan."
 USUL,"UCAPAN-UCAPAN PENANGGUHAN
 Pesuruhjaya Bangunan Kuala Lumpur Gagal
-Selesai Masalah Pembeli Unit Kondominium City Gardens",,1740,Timbalan Menteri Wilayah Persekutuan dan Kesejahteraan Bandar [Datuk Saravanan a/l Murugan],"Tuan Yang di-Pertua, isu yang terakhir ialah dakwaan bahawa pemaju
+Selesai Masalah Pembeli Unit Kondominium City Gardens",,■1740,1740,Timbalan Menteri Wilayah Persekutuan dan Kesejahteraan Bandar [Datuk Saravanan a/l Murugan],"Tuan Yang di-Pertua, isu yang terakhir ialah dakwaan bahawa pemaju
 dan Joint Management Committee enggan mematuhi arahan-arahan daripada
 Pesuruhjaya Bangunan, Kementerian Perumahan dan Kerajaan Tempatan,
 PKNS dan Jabatan Tanah dan Galian Wilayah Persekutuan. Dalam hal ini
@@ -4726,12 +4726,12 @@ balik dan menguatkuasakan undang-undang yang sedia ada supaya kita
 membela nasib rakyat. Terima kasih Tuan Yang di-Pertua."
 USUL,"UCAPAN-UCAPAN PENANGGUHAN
 Pesuruhjaya Bangunan Kuala Lumpur Gagal
-Selesai Masalah Pembeli Unit Kondominium City Gardens",,1740,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Terima kasih Yang Berhormat.
+Selesai Masalah Pembeli Unit Kondominium City Gardens",,■1740,1740,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Terima kasih Yang Berhormat.
 **Keperitan Keluarga Penagih Dadah Akibat
 Pendekatan Kerajaan**"
 USUL,"UCAPAN-UCAPAN PENANGGUHAN
 Pesuruhjaya Bangunan Kuala Lumpur Gagal
-Selesai Masalah Pembeli Unit Kondominium City Gardens",,1742,Dr. M. Jeyakumar Devaraj [Sungai Siput],"Terima kasih Tuan Yang
+Selesai Masalah Pembeli Unit Kondominium City Gardens",,5.42 ptg.,1742,Dr. M. Jeyakumar Devaraj [Sungai Siput],"Terima kasih Tuan Yang
 di-Pertua. Saya ingin menarik perhatian Dewan ini pada kesusahan yang
 dihadapi oleh isteri dan anak-anak penagih-penagih dadah yang ditahan oleh
 kerajaan. Pushpalatha a/p Balakrishnan, berumur 30 tahun mempunyai empat
@@ -4778,10 +4778,10 @@ gejala sosial. Adakah Kementerian Dalam Negeri bercadang mengubahsuai
 pendekatan terhadap kes kencing positif? Terima kasih."
 USUL,"UCAPAN-UCAPAN PENANGGUHAN
 Pesuruhjaya Bangunan Kuala Lumpur Gagal
-Selesai Masalah Pembeli Unit Kondominium City Gardens",,1742,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Sila Yang Berhormat Timbalan Menteri.
+Selesai Masalah Pembeli Unit Kondominium City Gardens",,5.42 ptg.,1742,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Sila Yang Berhormat Timbalan Menteri.
 USUL,"UCAPAN-UCAPAN PENANGGUHAN
 Pesuruhjaya Bangunan Kuala Lumpur Gagal
-Selesai Masalah Pembeli Unit Kondominium City Gardens",,1745,Timbalan Menteri Dalam Negeri II [Dato’ Lee Chee Leong],"Tuan
+Selesai Masalah Pembeli Unit Kondominium City Gardens",,5.45 ptg.,1745,Timbalan Menteri Dalam Negeri II [Dato’ Lee Chee Leong],"Tuan
 Yang di-Pertua, saya mengucapkan terima kasih di atas keprihatinan Yang
 Berhormat Sungai Siput berkenaan isu dan permasalahan berkaitan gejala
 penagihan dadah ini. Untuk makluman Ahli Yang Berhormat, penagih dadah
@@ -4825,7 +4825,7 @@ menagih semula ketika menjalani program pengawasan dalam komuniti
 selama dua tahun."
 USUL,"UCAPAN-UCAPAN PENANGGUHAN
 Pesuruhjaya Bangunan Kuala Lumpur Gagal
-Selesai Masalah Pembeli Unit Kondominium City Gardens",,1750,Timbalan Menteri Dalam Negeri II [Dato’ Lee Chee Leong],"Ini disebabkan pelbagai faktor seperti kurangnya sokongan keluarga
+Selesai Masalah Pembeli Unit Kondominium City Gardens",,■1750,1750,Timbalan Menteri Dalam Negeri II [Dato’ Lee Chee Leong],"Ini disebabkan pelbagai faktor seperti kurangnya sokongan keluarga
 dan masyarakat, bekalan data di sesuatu kawasan, tiada pekerjaan dan
 mereka yang tidak ada daya tahan. Penagihan juga merupakan sejenis
 penyakit kronik yang berulang yang perlukan rawatan berulang kali. Itulah
@@ -4871,7 +4871,7 @@ langkah awal untuk mencegah seseorang terjebak dengan dadah dan
 seterusnya menjadi seorang penagih dadah. Sekian terima kasih."
 USUL,"UCAPAN-UCAPAN PENANGGUHAN
 Pesuruhjaya Bangunan Kuala Lumpur Gagal
-Selesai Masalah Pembeli Unit Kondominium City Gardens",,1750,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Yang Berhormat, terima kasih Yang Berhormat. Akan tetapi saya
+Selesai Masalah Pembeli Unit Kondominium City Gardens",,■1750,1750,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Yang Berhormat, terima kasih Yang Berhormat. Akan tetapi saya
 rasa kecewa dan terhiris mendengar usul ini. Anak-anak dan keluarganya
 patutnya tidak terkena. Bantulah, dan tunjukkanlah ciri-ciri kemanusiaan
 sedikit untuk membantu keluarga-keluarga sedemikian dan seterusnya pada

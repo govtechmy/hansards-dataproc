@@ -12,14 +12,14 @@ def get_filenames_in_folder(folder_path_):
 
 
 filenames = []
-# filenames += get_filenames_in_folder("src_hansard/2023")
+filenames += get_filenames_in_folder("src_hansard/2023")
 # for 15th parliament only
 # filenames += ["DR-19122022.pdf", "DR-20122022"]
-# filenames += get_filenames_in_folder("src_hansard/2022")
-# filenames += get_filenames_in_folder("src_hansard/2021")
-# filenames += get_filenames_in_folder("src_hansard/2020")
-# filenames += get_filenames_in_folder("src_hansard/2019")
-# filenames += get_filenames_in_folder("src_hansard/2018")
+filenames += get_filenames_in_folder("src_hansard/2022")
+filenames += get_filenames_in_folder("src_hansard/2021")
+filenames += get_filenames_in_folder("src_hansard/2020")
+filenames += get_filenames_in_folder("src_hansard/2019")
+filenames += get_filenames_in_folder("src_hansard/2018")
 # loop through years 2008-2017 in desceding order
 for year in range(2008, 2017 + 1)[::-1]:
     filenames += get_filenames_in_folder("src_hansard/" + str(year))
@@ -61,7 +61,7 @@ hansard_dates = [x[3:3 + 8] for x in filenames]
 #             f.write(f"{e}\n\n")
 #         continue
 # 
-edit_hansards.edit_hansards()
+# edit_hansards.edit_hansards()
 
 # for tabulation
 # clean these files for new logs

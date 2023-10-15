@@ -1,6 +1,6 @@
-level_1,level_2,level_3,timestamp,author,speech
-,,,1000,,[Tuan Yang di-Pertua **mempengerusikan Mesyuarat**]
-PEMASYHURAN TUAN YANG DI-PERTUA,MEMPERKENANKAN AKTA-AKTA,,1000,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, saya suka hendak memberitahu
+level_1,level_2,level_3,raw_timestamp,timestamp,author,speech
+,,,10.00 pagi,1000,,[Tuan Yang di-Pertua **mempengerusikan Mesyuarat**]
+PEMASYHURAN TUAN YANG DI-PERTUA,MEMPERKENANKAN AKTA-AKTA,,10.00 pagi,1000,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, saya suka hendak memberitahu
 Majlis ini iaitu Seri Paduka Baginda Yang di-Pertuan Agong dengan limpah kurnia Baginda
 telah memperkenankan akta-akta yang telah diluluskan oleh Parlimen dalam Mesyuarat
 Penggal yang lalu seperti berikut:
@@ -12,7 +12,7 @@ Penggal yang lalu seperti berikut:
 6. Akta Perkapalan Saudagar (Pencemaran Minyak) (Pindaan)
 2011; dan
 7. Akta Timbang Tara (Pindaan) 2011."
-PERUTUSAN DARIPADA DEWAN NEGARA,,,1000,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, saya telah menerima satu
+PERUTUSAN DARIPADA DEWAN NEGARA,,,10.00 pagi,1000,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, saya telah menerima satu
 perutusan daripada Tuan Yang di-Pertua Dewan Negara yang menyatakan persetujuan
 Dewan itu kepada rang undang-undang yang telah diluluskan oleh Dewan Rakyat dalam
 sidang Parlimen penggal yang lalu.
@@ -35,11 +35,11 @@ Minyak) (Pindaan) 2010; dan
 Yang Ikhlas,
 t.t.
 YANG DI-PERTUA DEWAN NEGARA”"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1000,Puan Hajah Nancy Shukri [Batang Sadong],"minta Perdana Menteri menyatakan,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,10.00 pagi,1000,Puan Hajah Nancy Shukri [Batang Sadong],"minta Perdana Menteri menyatakan,
 kenapakah masih wujudnya masalah pemberian biasiswa dan tempat di universiti di
 kalangan pelajar cemerlang yang mendapat keputusan 9A dalam peperiksaan Sijil
 Pelajaran Malaysia."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1000,Menteri di Jabatan Perdana Menteri [Dato' Seri Mohamed Nazri Abdul Aziz],"Tuan Yang di-Pertua, saya mohon izin untuk menjawab soalan ini bersekali dengan soalan-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,10.00 pagi,1000,Menteri di Jabatan Perdana Menteri [Dato' Seri Mohamed Nazri Abdul Aziz],"Tuan Yang di-Pertua, saya mohon izin untuk menjawab soalan ini bersekali dengan soalan-
 soalan oleh Yang Berhormat Sibu, Yang Berhormat Kulai, Yang Berhormat Batu Gajah dan
 Yang Berhormat Rasah yang dibangkitkan di dalam Dewan pada hari ini serta Yang
 Berhormat Simpang Renggam pada 14 Jun 2011; Yang Berhormat Kota Raja dan Yang
@@ -48,8 +48,8 @@ pada 21 Jun 2011; Yang Berhormat Petaling Jaya Selatan pada 23 Jun 2011; Yang
 Berhormat Jelutong pada 27 Jun 2011 dan Yang Berhormat Wangsa Maju serta Yang
 Berhormat Ranau pada 28 Jun 2011 kerana soalan-soalan tersebut menyentuh isu yang
 sama iaitu Program Ijazah Luar Negara 2011."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1000,Tuan Yang di-Pertua,Sila.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1000,Dato' Seri Mohamed Nazri Abdul Aziz,"Tuan Yang di-Pertua, pada setiap tahun
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,10.00 pagi,1000,Tuan Yang di-Pertua,Sila.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,10.00 pagi,1000,Dato' Seri Mohamed Nazri Abdul Aziz,"Tuan Yang di-Pertua, pada setiap tahun
 kerajaan menyediakan program penajaan yang dikendalikan oleh JPA kepada pelajar
 cemerlang lepasan SPM bagi mengikuti pengajian ke luar negara menerusi Program Ijazah
 Luar Negara (PILN) dan dalam negara di bawah Program Ijazah Dalam Negara (PIDN)
@@ -70,7 +70,7 @@ pemilihan adalah berdasarkan kecemerlangan akademik diberikan markah 85 peratus,
 kokurikulum – 10 peratus, dan temu duga – lima peratus. Latar belakang dan sosioekonomi
 calon tidak diambil kira. Kategori II – biasiswa berasaskan komposisi kaum. Sebanyak 60
 peratus daripada jumlah biasiswa yang disediakan iaitu sebanyak 900 tempat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Dato' Seri Mohamed Nazri Abdul Aziz,"Di bawah kategori ini pemilihan adalah berdasarkan kecemerlangan akademik 75
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1010,1010,Dato' Seri Mohamed Nazri Abdul Aziz,"Di bawah kategori ini pemilihan adalah berdasarkan kecemerlangan akademik 75
 peratus markah diberi, kokurikulum 10 peratus, latar belakang sosioekonomi keluarga 10
 peratus dan temu duga 5 peratus. Pembahagian biasiswa adalah mengikut peratusan
 komposisi rakyat Malaysia.
@@ -159,10 +159,10 @@ berhubung kesanggupan kerajaan untuk mendedahkan senarai penerima biasiswa berse
 markah yang diperoleh adalah menjadi dasar kerajaan untuk tidak mendedahkan senarai
 penerima biasiswa dan markah merit yang mereka peroleh kepada umum untuk
 memelihara kerahsiaan dan hak individu tersebut. Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Puan Hajah Nancy Shukri [Batang Sadong],"Terima kasih Tuan Yang di-Pertua,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1010,1010,Puan Hajah Nancy Shukri [Batang Sadong],"Terima kasih Tuan Yang di-Pertua,
 terima kasih Yang Berhormat Menteri kerana datang untuk menjawab sendiri soalan
 tersebut."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,Puan Hajah Nancy Shukri [Batang Sadong],"Dari jawapan yang komprehensif tadi Yang Berhormat Menteri, saya hendak tanya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1020,1020,Puan Hajah Nancy Shukri [Batang Sadong],"Dari jawapan yang komprehensif tadi Yang Berhormat Menteri, saya hendak tanya
 di sini. Saya percaya kerajaan mempunyai perancangan secara menyeluruh mengenai
 bidang-bidang yang akan ditawarkan untuk ditaja kepada pelajar-pelajar cemerlang ini.
 Sebelum ini juga, saya rasa dua hari yang lepas saya juga membaca dari akhbar. Menteri
@@ -174,7 +174,7 @@ memang sudah menunjuk kecemerlangannya untuk mendapatkan biasiswa untuk
 melanjutkan pelajaran di luar negara bagi membolehkan pelajar kita dapat pendedahan dari
 luar negara untuk dibandingkan serta dijadikan satu pengalaman dikongsi di negara kita.
 Terima kasih Yang Berhormat Menteri."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,Dato' Seri Mohamed Nazri Abdul Aziz,"Tuan Yang di-Pertua, perancangan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1020,1020,Dato' Seri Mohamed Nazri Abdul Aziz,"Tuan Yang di-Pertua, perancangan
 kerajaan bagi lepasan SPM adalah berdasarkan kepada dasar-dasar semasa kerajaan
 yang ditetapkan dari semasa ke semasa.
 Jadi pada masa ini, memang betullah iaitu fokus penajaan adalah dalam bidang-
@@ -195,7 +195,7 @@ peratus wawancara. Jadi, sebab itu untuk menjawab pertanyaan Yang Berhormat sebe
 tadi, memang pergigian merupakan bidang kritikal bagi kita dan kalau dia mendapat markah
 yang mengatasi kita punya target, sudah tentu dia akan mendapat tempat untuk belajar
 dalam bidang pergigian di luar negara."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,Puan Fong Po Kuan [Batu Gajah],"Terima kasih Tuan Yang di-Pertua. Episod
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1020,1020,Puan Fong Po Kuan [Batu Gajah],"Terima kasih Tuan Yang di-Pertua. Episod
 pemberian biasiswa JPA ini jelas menunjukkan bahawa dalam Barisan Nasional tiada
 kongsi kuasa. Sementara Yang Berhormat menyatakan bahawa tiada isu berkenaan arahan
 Kabinet tidak timbul tetapi anggota komponen Barisan Nasional telah membuat dakwaan
@@ -212,7 +212,7 @@ biasiswa agar mereka boleh dapat bersama dalam negara menyumbang dalam
 pembangunan negara. Saya mohon mengapa kerajaan tidak boleh mengadakan ketelusan,
 kalau tiada ketelusan tidak akan boleh berjaya dalam mengekalkan golongan cemerlang
 dalam negara ini."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,Dato' Seri Mohamed Nazri Abdul Aziz,"Kalau sekalipun kita tidak menyenaraikan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1020,1020,Dato' Seri Mohamed Nazri Abdul Aziz,"Kalau sekalipun kita tidak menyenaraikan
 nama mereka yang telah berjaya, itu bukan bermakna kita tidak telus kerana kita
 mengadakan - JPA tidak interview mereka yang memohon untuk mendapat biasiswa. Kita
 mempunyai panel-panel yang terdiri daripada academician daripada universiti-universiti
@@ -240,10 +240,10 @@ kalau yang cerdik kita simpan di sini, dia juga akan meningkatkan mutu pusat pen
 tinggi awam dalam negara. Jadi, itulah sebabnya mengapa kita lakukan perkara ini dan
 sebenarnya tidak ada apa benda yang kita hendak sembunyikan dalam pembahagian
 biasiswa JPA ini."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,Dato’ Ibrahim Ali [Pasir Mas],"Tuan Yang di-Pertua, boleh soalan satu lagi?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,Tuan Yang di-Pertua,"Ya, saya benarkan satu soalan lagi memandangkan isu ini
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1020,1020,Dato’ Ibrahim Ali [Pasir Mas],"Tuan Yang di-Pertua, boleh soalan satu lagi?"
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1020,1020,Tuan Yang di-Pertua,"Ya, saya benarkan satu soalan lagi memandangkan isu ini
 penting. Yang Berhormat Kulai, sebab dia ada tanya soalan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,Tan Sri Dato’ Seri Ong Ka Ting [Kulai],"Terima kasih Tuan Yang di-Pertua. Saya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1020,1020,Tan Sri Dato’ Seri Ong Ka Ting [Kulai],"Terima kasih Tuan Yang di-Pertua. Saya
 memang faham apa yang diterangkan oleh Yang Berhormat Menteri. Baru-baru ini saya
 juga baca dalam surat khabar, Yang Berhormat Menteri telah mengatakan kerajaan sedang
 menimbang, mungkin akan membatalkan pemberian biasiswa kepada pelajar cemerlang
@@ -254,7 +254,7 @@ mengikuti kursus-kursus di universiti yang terkenal. Kalau pada peringkat itu ke
 melepaskan mereka, maka negara jiran akan menawarkan biasiswa ASEAN dan
 sebagainya, jadi kita akan hilang talent. Jadi, ini adalah satu perkara kerajaan perlu berhati-
 hati sebelum buat keputusan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1030,Dato’ Seri Mohamed Nazri Abdul Aziz,"Tuan Yang di-Pertua, saya ucap terima
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1030,1030,Dato’ Seri Mohamed Nazri Abdul Aziz,"Tuan Yang di-Pertua, saya ucap terima
 kasih kepada Yang Berhormat Kulai. Dia pun dahulu sebahagian daripada pentadbiran. Dia
 faham. Jadi sebenarnya saya hendak sebut, saya kata bukan kerajaan sudah buat
 keputusan. Saya kata kita menerima feedback daripada pelbagai pihak berkenaan dengan
@@ -294,18 +294,18 @@ akan balik kerana keluarga dia di sini. Yang masalahnya ialah mereka tidak mahu 
 Jadi sebab itu kita fikirkan ini semua, kita dapat feedback dan kita cuba bincangkan pada
 tahun hadapan apakah keputusan sebenar yang kita hendak buat dalam soal pemberian
 biasiswa selepas SPM. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1030,Tan Sri Dato’ Seri Abdul Khalid bin Ibrahim [Bandar Tun Razak],"minta Menteri
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1030,1030,Tan Sri Dato’ Seri Abdul Khalid bin Ibrahim [Bandar Tun Razak],"minta Menteri
 Tenaga, Teknologi Hijau dan Air menyatakan, laporan Malaysia Water Industry Guide 2010
 menyatakan, nilai purata non-revenue water (NRW) adalah 36.63 peratus melibatkan 1.8
 bilion meter padu air serta kerugian RM1.64 bilion. Apakah langkah yang telah diambil
 untuk mengatasi masalah air tidak terhasil (NRW)."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1030,"Menteri Tenaga, Teknologi Hijau dan Air [Dato’ Sri Peter Chin Fah Kui]","Tuan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1030,1030,"Menteri Tenaga, Teknologi Hijau dan Air [Dato’ Sri Peter Chin Fah Kui]","Tuan
 Yang di-Pertua, terlebih dahulu saya memohon keizinan untuk menjawab pertanyaan Ahli
 Yang Berhormat Bandar Tun Razak ini bersekali dengan pertanyaan yang dikemukakan
 oleh Ahli Yang Berhormat Gombak yang dijadualkan pada 16 Jun 2011 yang akan datang.
 Kedua-dua pertanyaan tersebut menyentuh isu yang sama."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1030,Tuan Yang di-Pertua,Sila.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1030,Dato’ Sri Peter Chin Fah Kui,"Untuk makluman Ahli-ahli Yang Berhormat, di
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1030,1030,Tuan Yang di-Pertua,Sila.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1030,1030,Dato’ Sri Peter Chin Fah Kui,"Untuk makluman Ahli-ahli Yang Berhormat, di
 negara kita ini, kadar air tidak berhasil atau NRW diklasifikasikan kepada dua kategori iaitu
 kehilangan fizikal yang disebabkan kebocoran paip dan kehilangan komersil yang berpunca
 daripada kecurian air, ketidaktetapan pada bacaan meter, kegunaan bagi penyelenggaraan
@@ -343,7 +343,7 @@ Pada masa yang sama, SPAN juga telah menetapkan supaya setiap operator air
 mempunyai program penurunan kadar NRW yang sistematik. Program tersebut perlu
 dilaksanakan mengikut jadual dan Key Performance Indicator (KPI) yang telah ditetapkan
 agar pengurangan kadar NRW di setiap negeri dapat dicapai sasarannya."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1040,Dato’ Sri Peter Chin Fah Kui,"Tuan Yang di-Pertua, pada kerajaan kadar NRW memang dianggap satu isu
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1040,1040,Dato’ Sri Peter Chin Fah Kui,"Tuan Yang di-Pertua, pada kerajaan kadar NRW memang dianggap satu isu
 penting yang perlu ditangani. Isu ini merupakan salah satu faktor yang membawa kepada
 usaha-usaha mentransformasikan industri perkhidmatan air yang sekarang ini sedang
 dilaksanakan oleh kerajaan. Program Transformasi ini dilaksanakan melalui penstrukturan
@@ -354,7 +354,7 @@ saya menyeru setiap operator air di negara ini untuk memberikan komitmen yang
 berterusan kepada program-program pengurangan kadar NRW yang telah ditetapkan.
 Dengan adanya pemantauan SPAN, saya percaya setiap operator air akan sedaya upaya
 berusaha untuk mencapai KPI dan NRW masing-masing. Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1040,Tan Sri Dato' Seri Abdul Khalid bin Ibrahim [Bandar Tun Razak],"Terima kasih
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1040,1040,Tan Sri Dato' Seri Abdul Khalid bin Ibrahim [Bandar Tun Razak],"Terima kasih
 Tuan Yang di-Pertua. Daripada pengalaman negeri Selangor, sama ada Yang Berhormat
 Menteri maklum atau tidak bahawa syarikat yang telah dilantik untuk mengepalai
 penswastaan pengurusan air ini tidak dapat menjalankan tugas yang terbaik oleh sebab
@@ -369,7 +369,7 @@ sebulan. Akan tetapi hasilnya tidak terdapat pengurangan dari segi NRW ini iaitu
 pengurangan ketirisan air tersebut. Apakah langkah-langkah yang kementerian perlu
 jalankan supaya perkara ini tidak berlaku tetapi hanya kepastian untuk menyelesaikan
 masalah-masalah ini iaitu ingin menaikkan harga air secara berterusan?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1040,Dato' Sri Peter Chin Fah Kui,"Terima kasih Yang Berhormat Bandar Tun Razak.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1040,1040,Dato' Sri Peter Chin Fah Kui,"Terima kasih Yang Berhormat Bandar Tun Razak.
 Saya ingin sebut dalam soalan Yang Berhormat pun dinyatakan bahawa salah satu
 masalah yang dihadapi oleh pihak operator air di negeri Selangor iaitu SYABAS ialah tidak
 cukup kewangan. Mereka menghadapi masalah ini Yang Berhormat adalah diperhatikan
@@ -400,12 +400,12 @@ Ahli-ahli Yang Berhormat, Yang Berhormat Bandar Tun Razak pun ada menyebut
 mengenai bayaran kepada CEO SYABAS. Ini saya rasa tidak termasuk dalam apa yang
 kita bincangkanlah. Kalaulah isu itu suatu hari nanti boleh ditanya, tanyalah soalan yang
 tepat tentang isu ini dan saya boleh jawab."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1040,Tuan Yang di-Pertua,Yang Berhormat Arau.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1040,Dato' Ismail Kassim [Arau],[Bangun]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1040,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, baru dua soalan yang kita dapat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1040,1040,Tuan Yang di-Pertua,Yang Berhormat Arau.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1040,1040,Dato' Ismail Kassim [Arau],[Bangun]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1040,1040,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, baru dua soalan yang kita dapat
 kendalikan. Jadi, dipercepatkan soalan itu dan jawapan daripada Yang Berhormat Menteri
 pun dipercepatkan juga."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1040,Dato' Ismail Kassim [Arau],"Terima kasih Tuan Yang di-Pertua dan Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1040,1040,Dato' Ismail Kassim [Arau],"Terima kasih Tuan Yang di-Pertua dan Yang
 Berhormat Menteri. Industri ini kalau kita lihat ia memerlukan pemahaman kedua-dua pihak
 iaitu pihak konsesi dan juga pengguna. Cuma di sini saya ingin bangkitkan kalau pelaburan
 besar yang terpaksa dibuat di dalam industri ini ia dari segi ROI nya, return of investment
@@ -415,13 +415,13 @@ revenue water (RNW) ini melibatkan banyak perkara terutamanya apabila Yang Berho
 Menteri bangkitkan soal kehilangan fizikal yang menyebabkan atau melibatkan pengguna
 mengubah suai meter, penyambungan secara haram, dan lain-lain juga tunggakan-
 tunggakan yang tidak diperjelaskan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,Dato' Ismail Kassim [Arau],"Jadi, bagaimana tindakan yang boleh dilakukan oleh pihak kerajaan selain
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1050,1050,Dato' Ismail Kassim [Arau],"Jadi, bagaimana tindakan yang boleh dilakukan oleh pihak kerajaan selain
 daripada perbincangan dengan pihak kerajaan negeri untuk kita menyelesaikan masalah ini
 untuk memberikan perkhidmatan yang terbaik dalam bekalan air negara ini supaya isu ini
 tidak sering dipolitikkan yang menjadikan ianya satu isu yang cukup besar dan
 menyebabkan pengguna selalu merasakan mereka sahaja di pihak yang benar. Apa
 pandangan pihak Dato’ Sri pula."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,Dato' Sri Peter Chin Fah Kui,"Terima kasih Yang Berhormat. Pertamanya kita
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1050,1050,Dato' Sri Peter Chin Fah Kui,"Terima kasih Yang Berhormat. Pertamanya kita
 kena ada program untuk mengurangkan NRW ini secara berterusan iaitu setiap tahun kita
 kena melaburkan satu angka yang cukup besar supaya kita dapat menukarkan paip yang
 usang, membuat projek-projek yang berkaitan dengan kebocoran paip dan sebagainya. Ini
@@ -437,28 +437,28 @@ yang usang dan sebagainya. Kalau pihak SYABAS tidak dibenarkan untuk melabur, ma
 mana SYABAS sebaliknya kena turunkan dia punya another bill, tak boleh. Kita kena
 pelaburan yang cukup, setiap tahun kita kena melabur dan kita tak boleh henti. Kalau kita
 henti, di Selangor hari ini saya nampak kadar NRW sudah naik."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,Tan Sri Dato' Abd. Khalid bin Ibrahim [Bandar Tun Razak],"Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1050,1050,Tan Sri Dato' Abd. Khalid bin Ibrahim [Bandar Tun Razak],"Tuan Yang di-
 Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,Dato' Sri Peter Chin Fah Kui,"Nanti saya habis dulu... [Dewan riuh] Kadar NRW
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1050,1050,Dato' Sri Peter Chin Fah Kui,"Nanti saya habis dulu... [Dewan riuh] Kadar NRW
 sudah naik sebab kita tidak labur dan apa sebab kita tidak melabur? Sebab kita tidak
 dibenarkan untuk melabur. Ini masalah."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,Tan Sri Dato' Abdul Khalid bin Ibrahim [Bandar Tun Razak],"Saya hendak
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1050,1050,Tan Sri Dato' Abdul Khalid bin Ibrahim [Bandar Tun Razak],"Saya hendak
 memberikan penjelasan sedikit sahaja."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,Tuan Yang di-Pertua,"Yang Berhormat, Yang Berhormat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,Tan Sri Dato' Abdul Khalid bin Ibrahim [Bandar Tun Razak],Sedikit sahaja.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,Dato' Shamsul Anuar Nasarah [Lenggong],"Tidak tahu peraturan kah? Tidak
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1050,1050,Tuan Yang di-Pertua,"Yang Berhormat, Yang Berhormat."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1050,1050,Tan Sri Dato' Abdul Khalid bin Ibrahim [Bandar Tun Razak],Sedikit sahaja.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1050,1050,Dato' Shamsul Anuar Nasarah [Lenggong],"Tidak tahu peraturan kah? Tidak
 tahu peraturan kah?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,Dato' Haji Lilah Yasin [Jempol],"Nama sahaja Menteri Besar Selangor. Mana
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1050,1050,Dato' Haji Lilah Yasin [Jempol],"Nama sahaja Menteri Besar Selangor. Mana
 boleh soal macam ini."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,Tuan Yang di-Pertua,Ini sesi soal jawab Yang Berhormat.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,Dato' Shamsul Anuar Nasarah [Lenggong],Ini bukan DUN Selangor.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,Tan Sri Dato' Abdul Khalid bin Ibrahim [Bandar Tun Razak],"Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1050,1050,Tuan Yang di-Pertua,Ini sesi soal jawab Yang Berhormat.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1050,1050,Dato' Shamsul Anuar Nasarah [Lenggong],Ini bukan DUN Selangor.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1050,1050,Tan Sri Dato' Abdul Khalid bin Ibrahim [Bandar Tun Razak],"Tuan Yang di-
 Pertua, saya hendak beri penjelasan. Sebabnya kita tak beri sebab kosnya lebih daripada
 biasa. Itu sahaja."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,Tuan Yang di-Pertua,"Terima kasih, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,Datuk Bung Moktar bin Radin [Kinabatangan],"Tuan Yang di-Pertua, saya tidak
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1050,1050,Tuan Yang di-Pertua,"Terima kasih, terima kasih."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1050,1050,Datuk Bung Moktar bin Radin [Kinabatangan],"Tuan Yang di-Pertua, saya tidak
 tahu apa sudah nasib soalan saya nombor lima ini. Dua soalan satu jam sudah."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1050,Dato' Seri Tiong King Sing [Bintulu],"minta Menteri Perdagangan dalam Negeri,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1050,1050,Dato' Seri Tiong King Sing [Bintulu],"minta Menteri Perdagangan dalam Negeri,
 Koperasi dan Kepenggunaan menyatakan:
 (a) apakah pelan jangka masa panjang kerajaan dalam menangani
 fenomena kenaikan harga minyak global terutamanya
@@ -467,7 +467,7 @@ beban hidup rakyat; dan
 (b) apakah persediaan syarikat-syarikat petroleum dalam
 menyediakan kemudahan stesen-stesen NGV dalam usaha
 menggalakkan penggunaan NGV sebagai bahan bakar alternatif."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1050,Timbalan Menteri Pertanian dan Industri Asas Tani II [Datuk Hajah Rohani binti Abdul Karim],"Tuan Yang di-Pertua, untuk menjawab soalan,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1050,1050,Timbalan Menteri Pertanian dan Industri Asas Tani II [Datuk Hajah Rohani binti Abdul Karim],"Tuan Yang di-Pertua, untuk menjawab soalan,
 (a) Bagi tahun 2010, subsidi yang telah dibayar oleh kerajaan bagi
 petrol adalah sebanyak RM3.459 bilion, diesel sebanyak RM4.03
 bilion dan LPG sebanyak RM1.622 bilion. Rasionalisasi terkini
@@ -559,8 +559,8 @@ bumi dan sebagainya. Ingin dimaklumkan juga bahawa harga
 NGV di negara ini adalah yang terendah iaitu 68 sen seliter
 berbanding harga pasaran iaitu RM1.48 sen seliter.
 Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1050,Tuan Yang di-Pertua,Yang Berhormat Bintulu.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1100,Dato’ Seri Tiong King Sing [Bintulu],"Terima kasih Tuan Yang di-Pertua. Terima
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1050,1050,Tuan Yang di-Pertua,Yang Berhormat Bintulu.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1100,1100,Dato’ Seri Tiong King Sing [Bintulu],"Terima kasih Tuan Yang di-Pertua. Terima
 kasih atas jawapan Yang Berhormat Timbalan Menteri tadi yang dijawab. Yang Berhormat
 Timbalan Menteri, kita sebagai wakil rakyat bersama-sama dari Sarawak. Memang tadi
 saya dengar Petronas akan komited hendak bina NGV di Miri untuk berkhidmat di Sarawak,
@@ -575,16 +575,16 @@ kementerian berbincang sama Kementerian Kewangan, kita pertimbangkan semula teng
 macam mana boleh bantu balik rakyat. Contoh macam 3,000 CC ke bawah, kita road tax
 boleh dihapuskan. Sekurang-kurangnya kita boleh dapat bantu sama rakyat. Yang
 Berhormat Timbalan Menteri, saya minta jawapan dan penjelasan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1100,Datuk Hajah Rohani binti Abdul Karim,"Tuan Yang di-Pertua, terima kasih Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1100,1100,Datuk Hajah Rohani binti Abdul Karim,"Tuan Yang di-Pertua, terima kasih Yang
 Berhormat dari Bintulu. Saya faham, saya memang dari Sarawak, memang kita banyak
 bahagian di Sarawak. Akan tetapi seperti saya katakan tadi, perancangan adalah untuk
 satu bermula di Miri dahulu stesen NGV dan di Sabah di Kota Kinabalu. Seperti saya
 katakan tadi Yang Berhormat, hanya Petronas sahaja yang mengendalikan untuk
 pembinaan stesen NGV ini. Oleh yang demikian, seperti saya katakan tadi, bahawa..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1100,Dato’ Seri Tiong King Sing [Bintulu],"Tuan Yang di-Pertua, harap Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1100,1100,Dato’ Seri Tiong King Sing [Bintulu],"Tuan Yang di-Pertua, harap Yang
 Berhormat Timbalan Menteri faham. Petronas mula daripada hari pertama daripada Bintulu,
 bukan daripada Miri."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1100,Datuk Hajah Rohani binti Abdul Karim,"Okey, terima kasih Yang Berhormat.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1100,1100,Datuk Hajah Rohani binti Abdul Karim,"Okey, terima kasih Yang Berhormat.
 Terima kasih Yang Berhormat. Saya tahu Yang Berhormat di Bintulu pun ada gas juga.
 Yang Berhormat, terima kasih. Selepas ini saya rasa jawapan kita ini akan juga didengar
 oleh pegawai-pegawai yang ada supaya – di dalam perancangan dikatakan bermula di Miri
@@ -598,9 +598,9 @@ Jadi tadi saya telah bertanya juga kepada pegawai saya, keseluruhan kereta yang
 ada enjin yang fitted, dengan izin, dengan NGV, hanya 46,000 buah kereta di seluruh
 negara tidak termasuk Sabah dan Sarawak. Jadi oleh yang demikian, kita kena pastikan
 kereta itu ada dahulu baru kita buat stesen. Ini kerana kalau stesen ada kereta tidak ada..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1100,Dato’ Seri Tiong King Sing [Bintulu],"Yang Berhormat, Tuan Yang di-Pertua,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1100,1100,Dato’ Seri Tiong King Sing [Bintulu],"Yang Berhormat, Tuan Yang di-Pertua,
 kalau kereta sudah pasang, NGV tiada, mahu isi apa?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1100,Datuk Hajah Rohani binti Abdul Karim,"Ya. Sebenarnya Yang Berhormat,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1100,1100,Datuk Hajah Rohani binti Abdul Karim,"Ya. Sebenarnya Yang Berhormat,
 samalah Yang Berhormat stesen dengan kereta. Bermakna, iaitu bak kata bahasa Inggeris,
 chicken and egg yang mana... Akan tetapi Yang Berhormat, sekarang ini di seluruh negara
 ada 46,000 kereta yang dengan izin, fitted dengan NGV. Seperti saya katakan, dalam
@@ -618,7 +618,7 @@ Berhormat untuk diteliti dan dipertimbangkan iaitu di mana kapasiti kereta itu r
 mereka bolehlah diberi keistimewaan yang lain supaya dapat menjimatkan juga dari segi
 kos-kos untuk kita membiayai kereta-kereta kita yang ada khasnya bagi mereka yang
 berpendapatan rendah. Terima kasih Yang Berhormat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1100,Dato' Mahfuz bin Haji Omar [Pokok Sena],"Terima kasih Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1100,1100,Dato' Mahfuz bin Haji Omar [Pokok Sena],"Terima kasih Tuan Yang di-Pertua.
 Assalamualaikum warahmatullaahi wabarakaatuh. Tuan Yang di-Pertua, Yang Berhormat
 Timbalan Menteri, berkaitan dengan isu subsidi ini. Kerajaan selalu berhujah iaitu
 penstrukturan semula subsidi, padahal struktur kah, apa kah, harga naik. Tujuannya ialah
@@ -650,7 +650,7 @@ Yang Berhormat kata tadi bahawa tindakan kerajaan ialah mengawal harga-harga
 barang keperluan. Akan tetapi Yang Berhormat kena ingat, selepas naik baru kawal.
 Patutnya kawal jangan naik. Ini sudah naikkan harga minyak, naikkan harga gula, lepas itu
 kata kawal. Ini siapa pun boleh jawab macam itu."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1100,Datuk Hajah Rohani binti Abdul Karim,"Yang Berhormat, terima kasihlah Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1100,1100,Datuk Hajah Rohani binti Abdul Karim,"Yang Berhormat, terima kasihlah Yang
 Berhormat dari Pokok Sena. Inilah yang saya katakan tadi Yang Berhormat. Bila kerajaan
 membuat sesuatu, semuanya dia nampak negatif. Akan tetapi Yang Berhormat tidak pernah
 terfikir jangka masa panjang. Kalaulah kita tidak membuat rasionalisasi subsidi ini, apa yang
@@ -658,16 +658,16 @@ akan terjadi kepada negara kita jangka masa panjang? Di sebelah sana hendak maca
 macam. Hendak hospital, hendak sekolah, hendak scholarship itu tadi. Berapa orang yang
 cakap scholarship hendak hantar semua 500 orang pergi scholarship. Akan tetapi Yang
 Berhormat sebelah sana terfikirkah dari mana datang segala ini?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1100,Dato' Shamsul Anuar Nasarah [Lenggong],"Baru hendak belajar negara
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1100,1100,Dato' Shamsul Anuar Nasarah [Lenggong],"Baru hendak belajar negara
 kebajikan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1110,Datuk Hajah Rohani binti Abdul Karim,"Kita perlu balance Yang Berhormat. Kita
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1110,1110,Datuk Hajah Rohani binti Abdul Karim,"Kita perlu balance Yang Berhormat. Kita
 perlu balance dan kalau kerajaan pun, kita membuat rasionalisasi subsidi. Kita melihat
 sektor-sektor tertentu Yang Berhormat. Bukan kita Yang Berhormat hendak membebankan
 pengguna. Selepas itu apabila tadi saya baca cara-cara hendak kita membantu
 mengurangkan bebanan kepada pengguna, macam-macam pula kata sudah naik harga,
 macam mana hendak kawal. Jadi Yang Berhormat ini.."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1110,Datuk Bung Moktar bin Radin [Kinabatangan],Pembangkang macam itulah.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1110,Datuk Hajah Rohani binti Abdul Karim,"Yang Berhormat, Yang Berhormat, kita
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1110,1110,Datuk Bung Moktar bin Radin [Kinabatangan],Pembangkang macam itulah.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1110,1110,Datuk Hajah Rohani binti Abdul Karim,"Yang Berhormat, Yang Berhormat, kita
 buat simulasi Yang Berhormat. Sebelum apa-apa subsidi ini, kita buat simulasi. Kalau gula
 naik 20 sen, kalau ikut sebenar-benarnya tidak adalah harga kopi itu naik 20 sen juga. Kita
 buat simulasi.
@@ -682,28 +682,28 @@ ini, mereka caj kan harga transport tidak terkawal. Jadi kalau kita tarik sediki
 mereka, itu pun bukan tarik semua Yang Berhormat. Kita tarik sedikit dan dia beli harga
 RM1.80 sen pun harga subsidi juga. Jadi Yang Berhormat, sekali-skala Yang Berhormat
 tengoklah kebaikan. Apa kerajaan Barisan Nasional buat untuk negara."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1110,Dato' Mahfuz bin Haji Omar [Pokok Sena],"Tidak ada kebaikan pun. Teruk
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1110,1110,Dato' Mahfuz bin Haji Omar [Pokok Sena],"Tidak ada kebaikan pun. Teruk
 rakyat ini."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1110,Datuk Hajah Rohani binti Abdul Karim,"Untuk semua Yang Berhormat.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1110,1110,Datuk Hajah Rohani binti Abdul Karim,"Untuk semua Yang Berhormat.
 Termasuk penyokong Yang Berhormat pun kita jaga."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1110,Dato' Mahfuz bin Haji Omar [Pokok Sena],"Kalau hak baik kita sokong. Ini benda
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1110,1110,Dato' Mahfuz bin Haji Omar [Pokok Sena],"Kalau hak baik kita sokong. Ini benda
 tak baiklah."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1110,Datuk Hajah Rohani binti Abdul Karim,"Kita bukan kata subsidi untuk Barisan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1110,1110,Datuk Hajah Rohani binti Abdul Karim,"Kita bukan kata subsidi untuk Barisan
 Nasional, tidak. Untuk semua Yang Berhormat. Jadi tenang-tenanglah Yang Berhormat dan
 fikir panjang-panjang demi rakyat dan negara yang kita cintai."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1110,Dato' Mahfuz bin Haji Omar [Pokok Sena],"Yang Berhormat Bintulu pun tidak
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1110,1110,Dato' Mahfuz bin Haji Omar [Pokok Sena],"Yang Berhormat Bintulu pun tidak
 setuju dengan Yang Berhormat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1110,Dato’ Seri Haji Abdul Hadi bin Awang [Marang],"minta Menteri Belia dan Sukan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1110,1110,Dato’ Seri Haji Abdul Hadi bin Awang [Marang],"minta Menteri Belia dan Sukan
 menyatakan, apakah motif sebenar Himpunan Sejuta Belia yang diadakan pada bulan Mei
 2011 yang lepas serta pembentukan kumpulan sukarelawan di kalangan belia bagi
 melahirkan belia yang sanggup memberi sumbangan kepada masyarakat dalam apa jua
 keadaan apabila diperlukan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1110,Menteri Belia dan Sukan [Dato’ Sri Ahmad Shabery Cheek],"Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1110,1110,Menteri Belia dan Sukan [Dato’ Sri Ahmad Shabery Cheek],"Tuan Yang di-
 Pertua, saya mohon untuk menjawab soalan daripada Yang Berhormat Marang bersekali
 dengan soalan yang dikemukakan oleh Yang Berhormat Bukit Katil bertarikh 13 Jun 2011
 kerana ia menyentuh isu yang sama."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1110,Tuan Yang di-Pertua,Sila.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1110,Dato’ Sri Ahmad Shabery Cheek,"Tuan Yang di-Pertua, Himpunan Sejuta Belia
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1110,1110,Tuan Yang di-Pertua,Sila.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1110,1110,Dato’ Sri Ahmad Shabery Cheek,"Tuan Yang di-Pertua, Himpunan Sejuta Belia
 yang diadakan pada tanggal 27, 28 dan 29 Mei yang lalu di Putrajaya adalah himpunan
 besar yang memaparkan kekuatan tenaga, bakat, kreativiti dan semangat kerja berpasukan
 para belia kita. Lebih dari 230 acara sepanjang himpunan tersebut berjaya memberikan
@@ -716,7 +716,7 @@ kesukarelawan dalam masyarakat kita dalam pelbagai bidang yang lain juga selepas
 Pelbagai pihak swasta turut bekerjasama dan mengambil peluang memaparkan jenama
 masing-masing menjadikan himpunan ini sangat berjaya tanpa menelan belanja yang tinggi
 dari kerajaan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1110,Dato’ Seri Haji Abdul Hadi bin Awang [Marang],"Soalan tambahan saya,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1110,1110,Dato’ Seri Haji Abdul Hadi bin Awang [Marang],"Soalan tambahan saya,
 bolehkah Yang Berhormat menyatakan apakah program pengisian secara terperinci ke arah
 yang terpenting dalam erti belia ialah membangun insan dari segi keilmuannya, moralnya,
 perpaduan di kalangan kaum masyarakat majmuk yang sangat penting. Ini perlu diberi
@@ -725,7 +725,7 @@ Bolehkah Yang Berhormat menyatakan pencapaian kehadiran dalam perhimpunan
 itu? Kenapakah langkah-langkah susulan yang diambil terhadap belia yang tidak ambil tahu
 langsung tentang kewajipan bermasyarakat kerana dibejati oleh gejala-gejala negatif.
 Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1110,Dato’ Sri Ahmad Shabery Cheek,"Tuan Yang di-Pertua, terima kasih Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1110,1110,Dato’ Sri Ahmad Shabery Cheek,"Tuan Yang di-Pertua, terima kasih Yang
 Berhormat Marang di atas soalan tambahan.
 Dari segi jumlah kehadiran, sebenarnya kalau Yang Berhormat hadir ataupun
 rakan-rakan Yang Berhormat hadir, Yang Berhormat akan terpegun dengan melihat
@@ -733,14 +733,14 @@ kehadiran yang begitu ramai sekali sepanjang tiga hari perhimpunan tersebut... [
 Cumanya kalau tidak hadir mungkin dia tidak dapat tengok. Saya hendak bawa video pun
 takut Yang Berhormat tak percaya, video boleh jadi bahan bukti... [Dewan riuh] Saya boleh
 tunjukkan dengan video sekali kalau hendak..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1110,Dato' Shamsul Anuar Nasarah [Lenggong],"Besi tidak boleh jadi bukti, itu besi."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1110,Dato’ Sri Ahmad Shabery Cheek,Mungkin itu besi. Akan tetapi dalam soal ini..
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1110,Datuk Bung Moktar bin Radin [Kinabatangan],"Video tidak boleh pakailah, dia
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1110,1110,Dato' Shamsul Anuar Nasarah [Lenggong],"Besi tidak boleh jadi bukti, itu besi."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1110,1110,Dato’ Sri Ahmad Shabery Cheek,Mungkin itu besi. Akan tetapi dalam soal ini..
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1110,1110,Datuk Bung Moktar bin Radin [Kinabatangan],"Video tidak boleh pakailah, dia
 besilah."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1110,Dato’ Sri Ahmad Shabery Cheek,"Akan tetapi dalam soal ini Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1110,1110,Dato’ Sri Ahmad Shabery Cheek,"Akan tetapi dalam soal ini Tuan Yang di-
 Pertua, seluruh Putrajaya sebenarnya menjadi..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1110,Dato' Shamsul Anuar Nasarah [Lenggong],Besi tidak boleh jadi bukti.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1110,Dato’ Sri Ahmad Shabery Cheek,"Tuan Yang di-Pertua, seluruh Putrajaya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1110,1110,Dato' Shamsul Anuar Nasarah [Lenggong],Besi tidak boleh jadi bukti.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1110,1110,Dato’ Sri Ahmad Shabery Cheek,"Tuan Yang di-Pertua, seluruh Putrajaya
 dijadikan pentas di mana pada waktu itulah kita dapat melihat bahawa selama ini pelbagai
 aktiviti, kegiatan, inisiatif, kreativiti para belia yang kadang-kadang kita tidak terfikir. Kita
 hanya fikir perkara yang negatif. Mat rempit, kita fikir tentang soal lepak dan sebagainya.
@@ -760,7 +760,7 @@ Putrajaya yang dahulunya daripada parti PAS mengatakan kalau dia memerintah, dia
 hendak gadai Putrajaya. Belia kata, indahnya Putrajaya, banyaknya peluang untuk mereka.
 Saya kira ini adalah satu manifestasi kepada banyak perkara positif yang ditunjukkan oleh
 para belia kita."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1110,Datuk Haji Mohamad bin Haji Aziz (Sri Gading),"Terima kasih Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1110,1110,Datuk Haji Mohamad bin Haji Aziz (Sri Gading),"Terima kasih Tuan Yang di-
 Pertua. Assalamualaikum warrahmatullaahi wabarakaatuh. Soalan tambahan Tuan Yang di-
 Pertua. Saya hendak ucapkan sejuta tahniah, sejuta syabas kepada pihak kementerian,
 pihak kerajaan, pihak belia yang berjaya sebenar-benarnya sangat berjayalah Perhimpunan
@@ -779,10 +779,10 @@ akan mewujudkan Parlimen Belia Malaysia. Saya harap Parlimen Belia Malaysia ini 
 benar-benar nanti kita dapat mendengar yang diwakili oleh berbagai-bagai golongan belia
 serta suara-suara belia untuk kita guna pakai dalam mengacukan acuan untuk negara kita
 pada masa akan datang. Terima kasih Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1110,Dato’ Sri Ahmad Shabery Cheek,"Tuan Yang di-Pertua, terima kasih kepada
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1110,1110,Dato’ Sri Ahmad Shabery Cheek,"Tuan Yang di-Pertua, terima kasih kepada
 Yang Berhormat Sri Gading di atas pertamanya, penghargaan yang diberikan. Keduanya
 cadangan-cadangan yang telah dikemukakan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1120,Dato’ Sri Ahmad Shabery Cheek,"Pertamanya, saranan Yang Amat Berhormat Perdana Menteri mengenai
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1120,1120,Dato’ Sri Ahmad Shabery Cheek,"Pertamanya, saranan Yang Amat Berhormat Perdana Menteri mengenai
 perhimpunan yang akan datang diwujudkan perhimpunan dua juta pula. Insya-Allah,
 kementerian saya bersama dengan rakan-rakan kongsi yang lain termasuk persatuan-
 persatuan belia termasuk pihak swasta kerana pihak swasta sudah melihat potensi kepada
@@ -840,18 +840,18 @@ Kita bertuah sekarang ini kerana Perdana Menteri kita muda dan yang hendak
 ganti semua tua-tua. Yang hendak jadi ketua pembangkang lebih tua daripada dia, daripada
 DAP pun saya rasa tua-tua belaka. Jadi, kita hendak bina yang muda. Sebab itu kita kena
 latih mereka ini daripada yang muda lagi, di peringkat awal."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1120,Dato' Mahfuz bin Haji Omar [Pokok Sena],"Timbalan Perdana Menteri pun lebih
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1120,1120,Dato' Mahfuz bin Haji Omar [Pokok Sena],"Timbalan Perdana Menteri pun lebih
 tua daripada Perdana Menteri."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1120,Dato' Sri Ahmad Shabery Cheek,"Mereka tidak boleh hendak berjanji negara
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1120,1120,Dato' Sri Ahmad Shabery Cheek,"Mereka tidak boleh hendak berjanji negara
 berkebajikan tetapi daripada mana wang datang mereka tidak tahu."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1120,Dato' Mahfuz bin Haji Omar [Pokok Sena],"Timbalan Perdana Menteri lebih tua
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1120,1120,Dato' Mahfuz bin Haji Omar [Pokok Sena],"Timbalan Perdana Menteri lebih tua
 daripada Perdana Menteri."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1120,Dato' Sri Ahmad Shabery Cheek,"Macam berbeza orang tanya apabila bola
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1120,1120,Dato' Sri Ahmad Shabery Cheek,"Macam berbeza orang tanya apabila bola
 antara Kelantan dan Terengganu apa beza. Negara berkebajikan Kelantan dengan negara
 berkebajikan Terengganu, masing-masing hendak beri cuti. Terengganu diberi cuti apabila
 menang, Kelantan diberi cuti apabila kalah. Jadi, ini antara beza antara negeri berkebajikan
 yang dibuat. Terima kasih Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1120,Datuk Bung Moktar bin Radin [Kinabatangan],"minta Menteri Pelajaran
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1120,1120,Datuk Bung Moktar bin Radin [Kinabatangan],"minta Menteri Pelajaran
 menyatakan:
 (a) pewujudan sekolah vokasional swasta untuk melahirkan tenaga
 kerja berkemahiran tinggi di kalangan belia dan beliawanis di
@@ -859,7 +859,7 @@ negara ini secara government funded programme; dan
 (b) rancangan kerajaan mewujudkan lebih banyak sekolah
 menengah agama di negara ini terutama di kawasan luar bandar
 seperti di Parlimen Kinabatangan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1120,Timbalan Menteri Pelajaran II [Dr. Haji Mohd. Puad bin Zarkashi],"Terima kasih
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1120,1120,Timbalan Menteri Pelajaran II [Dr. Haji Mohd. Puad bin Zarkashi],"Terima kasih
 Tuan Yang di-Pertua. Assalamualaikum warahmatullaahi wabarakaatuh, salam sejahtera
 dan salam 1Malaysia.
 (a) Tuan Yang di-Pertua, untuk makluman Ahli Yang Berhormat,
@@ -893,7 +893,7 @@ Pagoh termasuk SMKA Keningau dan cadangan pembinaan
 SMKA Lahad Datu seperti yang telah diumumkan oleh Yang
 Amat Berhormat Timbalan Perdana Menteri.
 Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1120,Datuk Bung Moktar bin Radin [Kinabatangan],"Terima kasih Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1120,1120,Datuk Bung Moktar bin Radin [Kinabatangan],"Terima kasih Tuan Yang di-
 Pertua. Yang Berhormat, soalan tambahan. Setahu saya kementerian menyedari bahawa
 keperluan negara kita menjelang negara maju iaitu memastikan modal insan kita, tenaga
 kerja kita terdiri daripada golongan-golongan yang berkepakaran tinggi, mempunyai
@@ -910,7 +910,7 @@ dalam masa yang sama negara kita boleh mengeluarkan pula pelajar-pelajar yang ma
 menguasai teknologi tinggi untuk dipasarkan dalam negara kita mahupun dan luar negara.
 Apakah kementerian juga berhasrat untuk mewujudkan sekolah menengah agama di
 Kinabatangan. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1130,Dr. Haji Mohd. Puad bin Zarkashi,"Terima kasih Yang Berhormat. Saya jawab
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1130,1130,Dr. Haji Mohd. Puad bin Zarkashi,"Terima kasih Yang Berhormat. Saya jawab
 yang kedua dulu. Setakat ini kita belum ada cadangan membina SMKA di Kinabatangan.
 Mengenai yang pertama tadi Yang Berhormat sebab itu kita seperti mana yang saya sebut
 kita memang akan melakukan transformasi kepada pendidikan VOKTEK ini mulai tahun
@@ -932,7 +932,7 @@ kita supaya dapat melahirkan masyarakat yang berpendapatan tinggi. Terima kasih.
 **[Masa untuk Pertanyaan-pertanyaan bagi Jawab Lisan tamat]**"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1132,Menteri Pertanian dan Industri Asas Tani [Datuk Seri Noh bin Haji Omar],"Tuan Yang di-Pertua, saya mohon mencadangkan iaitu bahawa rang undang-undang
+Bacaan Kali Yang Kedua dan Ketiga",,11.32 pg.,1132,Menteri Pertanian dan Industri Asas Tani [Datuk Seri Noh bin Haji Omar],"Tuan Yang di-Pertua, saya mohon mencadangkan iaitu bahawa rang undang-undang
 bernama suatu akta untuk mengadakan peruntukan bagi perkhidmatan kuarantin dan
 pemeriksaan Malaysia bagi Maksud mengadakan perkhidmatan bersepadu yang
 berhubung dengan kuarantin pemeriksaan dan penguatkuasaan di pintu masuk stesen
@@ -1016,7 +1016,7 @@ dan mel, pengambilan sampel, pengeluaran permit import dan eksport ikan hidup.
 Penyediaan rawatan kuarantin serta perkhidmatan kuarantin untuk binatang yang diimport."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1140,Menteri Pertanian dan Industri Asas Tani [Datuk Seri Noh bin Haji Omar],"Operasi MAQIS pada masa ini melibatkan lima akta di bawah Kementerian
+Bacaan Kali Yang Kedua dan Ketiga",,■1140,1140,Menteri Pertanian dan Industri Asas Tani [Datuk Seri Noh bin Haji Omar],"Operasi MAQIS pada masa ini melibatkan lima akta di bawah Kementerian
 Pertanian dan Industri Asas Tani iaitu Akta Kualiti Tumbuhan 1976 Akta 167, Akta
 Perikanan 1985 Akta 317, Akta Binatang 1953 Akta 647, Akta Lembaga Kemajuan Ikan
 Malaysia 1971 Akta 49 dan Akta Lembaga Pemasaran Pertanian Persekutuan 1965 Akta
@@ -1127,7 +1127,7 @@ mempunyai perosak, penyakit atau bahan cemar atau yang diserang oleh perosak, pe
 atau bahan cemar."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1150,Menteri Pertanian dan Industri Asas Tani [Datuk Seri Noh bin Haji Omar],"Fasal 15, menjadikannya suatu kesalahan bagi mana-mana orang yang tidak
+Bacaan Kali Yang Kedua dan Ketiga",,■1150,1150,Menteri Pertanian dan Industri Asas Tani [Datuk Seri Noh bin Haji Omar],"Fasal 15, menjadikannya suatu kesalahan bagi mana-mana orang yang tidak
 mematuhi syarat import atau eksport sebagaimana yang dinyatakan dalam permit license
 atau perakuan.
 Tuan Yang di-Pertua, Bahagian VI rang undang-undang memperuntukkan
@@ -1191,17 +1191,17 @@ kerjasama daripada semua pihak termasuklah daripada Ahli-ahli Yang Berhormat sek
 Tuan Yang di-Pertua saya mohon mencadangkan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1150,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Terima
+Bacaan Kali Yang Kedua dan Ketiga",,■1150,1150,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Terima
 kasih Yang Berhormat. Ada yang menyokong?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1150,"Timbalan Menteri Penerangan, Komunikasi dan Kebudayaan I [Dato' Joseph Salang anak Gandum]",Tuan Yang di-Pertua saya mohon menyokong.
+Bacaan Kali Yang Kedua dan Ketiga",,■1150,1150,"Timbalan Menteri Penerangan, Komunikasi dan Kebudayaan I [Dato' Joseph Salang anak Gandum]",Tuan Yang di-Pertua saya mohon menyokong.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1150,Beberapa Ahli,[Bangun]
+Bacaan Kali Yang Kedua dan Ketiga",,■1150,1150,Beberapa Ahli,[Bangun]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1150,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Terima
+Bacaan Kali Yang Kedua dan Ketiga",,■1150,1150,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Terima
 kasih Yang Berhormat. Duduk dahulu.
 Ahli-ahli Yang Berhormat masalah di hadapan Majlis ialah rang undang-undang
 bernama suatu akta untuk mengadakan peruntukan bagi Perkhidmatan Kuarantin dan
@@ -1214,7 +1214,7 @@ yang berkaitan dengannya di baca kali yang kedua sekarang dan dibuka untuk dibah
 Ya, Yang Berhormat, sila."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1156,Tan Sri Datuk Seri Joseph Pairin Kitingan [Keningau],"Terima kasih Tuan
+Bacaan Kali Yang Kedua dan Ketiga",,11.56 pg.,1156,Tan Sri Datuk Seri Joseph Pairin Kitingan [Keningau],"Terima kasih Tuan
 Yang di-Pertua. Saya bangun untuk mengambil bahagian dalam pembentangan rang
 undang-undang yang baru sahaja dibentangkan oleh Yang Berhormat Menteri sebentar
 tadi. Disebabkan terutama sekali nampaknya rang undang-undang ini adalah satu rang
@@ -1234,24 +1234,24 @@ itu kalau daripada sebut efficiency kita telah menunjukkan bahawa kita telah pun
 mempunyai jentera yang begitu efisien sekali."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1156,Dato' Abd. Rahman Dahlan [Kota Belud],Yang Berhormat boleh?
+Bacaan Kali Yang Kedua dan Ketiga",,11.56 pg.,1156,Dato' Abd. Rahman Dahlan [Kota Belud],Yang Berhormat boleh?
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1156,Tan Sri Datuk Seri Joseph Pairin Kitingan [Keningau],"Ini bererti bahawa akta
+Bacaan Kali Yang Kedua dan Ketiga",,11.56 pg.,1156,Tan Sri Datuk Seri Joseph Pairin Kitingan [Keningau],"Ini bererti bahawa akta
 yang bakal diadakan ini, rang undang-undang ini perlu mengambil kira peranan negeri
 Sabah dan jabatannya dan juga undang-undang yang berkenaan di mana keperluan untuk
 meminta kebenaran daripada negeri Sabah adalah amat-amat penting sekali."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1156,Dato' Abd. Rahman Dahlan [Kota Belud],"Yang Berhormat boleh mencelah?
+Bacaan Kali Yang Kedua dan Ketiga",,11.56 pg.,1156,Dato' Abd. Rahman Dahlan [Kota Belud],"Yang Berhormat boleh mencelah?
 Yang Berhormat Kota Belud, Kota Belud sebelah sini."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1156,Tan Sri Datuk Seri Joseph Pairin Kitingan [Keningau],"Mana dia?... [Ketawa]
+Bacaan Kali Yang Kedua dan Ketiga",,11.56 pg.,1156,Tan Sri Datuk Seri Joseph Pairin Kitingan [Keningau],"Mana dia?... [Ketawa]
 Dipersilakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1156,Dato' Abd. Rahman Dahlan [Kota Belud],"Terima kasih, terima kasih Tuan Yang
+Bacaan Kali Yang Kedua dan Ketiga",,11.56 pg.,1156,Dato' Abd. Rahman Dahlan [Kota Belud],"Terima kasih, terima kasih Tuan Yang
 di-Pertua. Oleh kerana Yang Berhormat pernah menjadi Ketua Menteri dan sekarang ini
 Timbalan Ketua Menteri yang berkhidmat kepada rakyat dengan begitu baik sekali.
 Saya ingin bertanya kepada Yang Berhormat sama ada akta ini kuasa-kuasa yang
@@ -1261,7 +1261,7 @@ Jadi saya minta pandangan Yang Berhormat, yang ini State List ataupun Concurrent
 antara Federal? Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1200,Tan Sri Datuk Seri Joseph Pairin Kitingan [Keningau],"Ini adalah di dalam
+Bacaan Kali Yang Kedua dan Ketiga",,■1200,1200,Tan Sri Datuk Seri Joseph Pairin Kitingan [Keningau],"Ini adalah di dalam
 bidang kuasa bersama di dalam schedule. Apa yang penting di sini, mengikut rekod yang
 saya telah baca, memang ada perbincangan di antara negeri dan juga kementerian
 Kerajaan Persekutuan. Namun, pendapat daripada kerajaan negeri, jabatan yang
@@ -1289,11 +1289,11 @@ persetujuan dan kebenaran daripada negeri Sabah. Sekian, terima kasih Tuan Yang 
 Pertua."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1200,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ya Yang
+Bacaan Kali Yang Kedua dan Ketiga",,■1200,1200,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ya Yang
 Berhormat, sila."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1204,Tuan Salahuddin Haji Ayub [Kubang Kerian],"Terima kasih Tuan Yang di-
+Bacaan Kali Yang Kedua dan Ketiga",,12.04 tgh.,1204,Tuan Salahuddin Haji Ayub [Kubang Kerian],"Terima kasih Tuan Yang di-
 Pertua kerana memberi peluang untuk saya mengambil bahagian di dalam perbahasan
 Rang Undang-undang Perkhidmatan Kuarantin dan Pemeriksaan Malaysia 2010. Aktanya
 akta baru, yang cuba untuk mencakupi isu-isu yang berkaitan dengan kuarantin yang saya
@@ -1346,7 +1346,7 @@ arahan Kementerian Pertanian menebang dan menghapuskan, membakar pokok-pokok
 koko ini kerana untuk mengelakkan ataupun mengawal daripada wabak ini terjadi."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1210,Tuan Salahuddin Haji Ayub [Kubang Kerian],"Jadi, ini pernah berlaku dalam negara kita dan saya juga yakin dan percaya
+Bacaan Kali Yang Kedua dan Ketiga",,■1210,1210,Tuan Salahuddin Haji Ayub [Kubang Kerian],"Jadi, ini pernah berlaku dalam negara kita dan saya juga yakin dan percaya
 bahawa satu jawapan yang tepat tentang bagaimana datangnya ulat pengorek ini masih
 lagi tidak dapat kita satu jawapan yang tepat. Ini telah menyebabkan kerugian yang besar
 yang telah dua kali berlaku dalam dekad 80-an yang mana pekebun-pekebun kecil dan
@@ -1376,14 +1376,14 @@ daripada sebarang kesan kesihatan yang melibatkan rakyat dalam negara ini. Terim
 Tuan Yang di-Pertua."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1210,Beberapa Ahli,[Bangun]
+Bacaan Kali Yang Kedua dan Ketiga",,■1210,1210,Beberapa Ahli,[Bangun]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1210,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Terima
+Bacaan Kali Yang Kedua dan Ketiga",,■1210,1210,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Terima
 kasih. Yang Berhormat Pasir Mas."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1213,Dato’ Ibrahim Ali [Pasir Mas],"Terima kasih Tuan Yang di-Pertua. saya ingin
+Bacaan Kali Yang Kedua dan Ketiga",,12.13 tgh.,1213,Dato’ Ibrahim Ali [Pasir Mas],"Terima kasih Tuan Yang di-Pertua. saya ingin
 merujuk Rang Undang-Undang Perkhidmatan Kuarantin dan Pemeriksaan Malaysia yang
 dibentangkan oleh Yang Berhormat Menteri Pertanian dan Industri Asas Tani. Tuan Yang
 di-Pertua, saya mengalu-alukan rang undang-undang ini. Akan tetapi, ingin menarik
@@ -1447,7 +1447,7 @@ boleh lepas. Jadi, ini persoalan yang paling besar dalam pelaksanaan rang undang
 ini."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1220,Dato’ Ibrahim Ali [Pasir Mas],"Ini yang saya khuatir. Saya takut nanti ianya semata-mata rang undang-undang
+Bacaan Kali Yang Kedua dan Ketiga",,■1220,1220,Dato’ Ibrahim Ali [Pasir Mas],"Ini yang saya khuatir. Saya takut nanti ianya semata-mata rang undang-undang
 tetapi pelaksanaannya tidak berkesan kerana saya percaya mereka yang terlibat ini adalah
 ahli-ahli perniagaan yang berdagang dengan jumlah yang besar, dengan lori, treler dan
 mereka boleh melakukan apa sahaja untuk melepasi kepentingan perniagaan mereka.
@@ -1554,11 +1554,11 @@ Jadi Tuan Yang di-Pertua, itu sahaja pandangan saya dan saya berharap
 mendapat perhatian Yang Berhormat Menteri. Sekian, terima kasih dan saya menyokong."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1230,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ya,
+Bacaan Kali Yang Kedua dan Ketiga",,■1230,1230,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ya,
 Yang Berhormat Kuala Kedah."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1231,Tuan Ahmad Kassim [Kuala Kedah],"Bismillaahir Rahmaanir Rahiim. Terima
+Bacaan Kali Yang Kedua dan Ketiga",,12.31 tgh.,1231,Tuan Ahmad Kassim [Kuala Kedah],"Bismillaahir Rahmaanir Rahiim. Terima
 kasih Tuan Yang di-Pertua. Saya ingin turut berbahas dalam Rang Undang-Undang
 Perkhidmatan Kuarantin dan Pemeriksaan Malaysia 2010 yang telah dibentangkan oleh
 Yang Berhormat Menteri sebentar tadi. Sedikit pandangan daripada Yang Berhormat Pasir
@@ -1661,7 +1661,7 @@ menyebabkan siput gondang emas ini memasuki negara dan akhirnya menyebabkan satu
 bencana kepada industri padi dalam negara."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1240,Tuan Ahmad Kassim [Kuala Kedah],"Akhir sekali Tuan Yang di-Pertua, tentang kuasa tangkapan dan penyitaan iaitu
+Bacaan Kali Yang Kedua dan Ketiga",,■1240,1240,Tuan Ahmad Kassim [Kuala Kedah],"Akhir sekali Tuan Yang di-Pertua, tentang kuasa tangkapan dan penyitaan iaitu
 satu kuasa yang pada saya agak berlebihan diberikan kepada pihak penguatkuasaan
 kerana boleh menangkap dan menyita tanpa waran. Saya sebenarnya tidak bersetuju
 dengan pandangan Yang Berhormat Pasir Mas sebentar tadi. Pada saya, untuk
@@ -1678,11 +1678,11 @@ supaya barangan, ternakan ataupun tanaman tersebut ditahan untuk siasatan. Jadi,
 sekadar itu sahaja Tuan Yang di-Pertua, terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1240,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ya,
+Bacaan Kali Yang Kedua dan Ketiga",,■1240,1240,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ya,
 Yang Berhormat Batang Sadong."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1241,Puan Hajah Nancy binti Shukri [Batang Sadong],"Terima kasih Tuan Yang di-
+Bacaan Kali Yang Kedua dan Ketiga",,12.41 tgh.,1241,Puan Hajah Nancy binti Shukri [Batang Sadong],"Terima kasih Tuan Yang di-
 Pertua. Saya turut menyokong Rang Undang-undang Perkhidmatan Kuarantin dan
 Pemeriksaan Malaysia 2010. Saya mengucapkan tahniah juga kepada kementerian kerana
 membawa rang undang-undang ini yang menunjukkan satu peningkatan baru. Namun
@@ -1727,11 +1727,11 @@ telah menjadi isu pada masa kini. Jadi dengan itu Tuan Yang di-Pertua, saya meny
 asalkan ianya telah ada konsultasi dengan negeri Sarawak. Sekian, terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1241,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ya,
+Bacaan Kali Yang Kedua dan Ketiga",,12.41 tgh.,1241,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ya,
 Yang Berhormat Jasin."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1247,Datuk Wira Ahmad bin Hamzah [Jasin],"Terima kasih Tuan Yang di-Pertua
+Bacaan Kali Yang Kedua dan Ketiga",,12.47 tgh.,1247,Datuk Wira Ahmad bin Hamzah [Jasin],"Terima kasih Tuan Yang di-Pertua
 kerana memberi saya peluang untuk turut membahaskan tentang Rang Undang-undang
 Perkhidmatan Kuarantin dan Pemeriksaan Malaysia 2010. Saya melihat bahawa rang
 undang-undang adalah satu langkah yang cukup proaktif daripada pihak kerajaan dalam
@@ -1761,7 +1761,7 @@ juga mikro organisma perlu dipertingkatkan. Bahan-bahan cemar yang berbahaya dar
 negara boleh menjejaskan sektor pertanian negara."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1250,Datuk Wira Ahmad bin Hamzah [Jasin],"Antara penyakit dan perosak yang berbahaya adalah penyakit hawar daun
+Bacaan Kali Yang Kedua dan Ketiga",,■1250,1250,Datuk Wira Ahmad bin Hamzah [Jasin],"Antara penyakit dan perosak yang berbahaya adalah penyakit hawar daun
 Amerika Selatan ataupun SALB pada tanaman getah yang terdapat di America Tropic yang
 menyebabkan sehingga sekarang, tanaman getah di rantau tersebut tidak dapat dimajukan
 juga penyakit layu fusarium yang menyakiti tanaman kelapa sawit di Afrika Tengah juga
@@ -1840,11 +1840,11 @@ radioaktif sebelum kita benarkan ia dipasarkan dalam negara kita. Tuan Yang di-P
 saya menyokong."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1250,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ya,
+Bacaan Kali Yang Kedua dan Ketiga",,■1250,1250,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ya,
 Yang Berhormat Rantau Panjang."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1259,Puan Siti Zailah Mohd. Yusoff [Rantau Panjang],"Terima kasih Tuan Yang di-
+Bacaan Kali Yang Kedua dan Ketiga",,12.59 tgh.,1259,Puan Siti Zailah Mohd. Yusoff [Rantau Panjang],"Terima kasih Tuan Yang di-
 Pertua kerana memberikan peluang kepada saya untuk turut menyokong Rang Undang-
 undang Perkhidmatan Kuarantin dan Pemeriksaan Malaysia 2010. Dalam masa yang
 terhad ini saya mengambil point penting sahaja. Yang pertama iaitu saya ingin penjelasan
@@ -1864,36 +1864,36 @@ keselamatan. Yang seterusnya iaitu yang berkaitan dengan...
 Berhormat, masa tidak ada, Yang Berhormat. Jam kita sudah pukul satu."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1259,Puan Siti Zailah Mohd. Yusoff [Rantau Panjang],"Okey, setakat itulah. Terima
+Bacaan Kali Yang Kedua dan Ketiga",,12.59 tgh.,1259,Puan Siti Zailah Mohd. Yusoff [Rantau Panjang],"Okey, setakat itulah. Terima
 kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1259,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Hendak
+Bacaan Kali Yang Kedua dan Ketiga",,12.59 tgh.,1259,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Hendak
 sambung tengah hari, Yang Berhormat?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1259,Puan Siti Zailah Mohd. Yusoff [Rantau Panjang],"Sudah tidak sambung sebab
+Bacaan Kali Yang Kedua dan Ketiga",,12.59 tgh.,1259,Puan Siti Zailah Mohd. Yusoff [Rantau Panjang],"Sudah tidak sambung sebab
 saya ada tugas."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1259,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Sambung tengah hari?
+Bacaan Kali Yang Kedua dan Ketiga",,12.59 tgh.,1259,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Sambung tengah hari?
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1259,Puan Siti Zailah Mohd. Yusoff [Rantau Panjang],"Tidak. Tidak sambung. Saya
+Bacaan Kali Yang Kedua dan Ketiga",,12.59 tgh.,1259,Puan Siti Zailah Mohd. Yusoff [Rantau Panjang],"Tidak. Tidak sambung. Saya
 ada tugas."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1259,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Sudah
+Bacaan Kali Yang Kedua dan Ketiga",,12.59 tgh.,1259,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Sudah
 tamatlah itu?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1259,Puan Siti Zailah Mohd. Yusoff [Rantau Panjang],Sudah. Okey.
+Bacaan Kali Yang Kedua dan Ketiga",,12.59 tgh.,1259,Puan Siti Zailah Mohd. Yusoff [Rantau Panjang],Sudah. Okey.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1259,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Cakaplah 15 second lagi, Yang Berhormat."
+Bacaan Kali Yang Kedua dan Ketiga",,12.59 tgh.,1259,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Cakaplah 15 second lagi, Yang Berhormat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1259,Puan Siti Zailah Mohd. Yusoff [Rantau Panjang],"Ya kah? Okey, yang akhir
+Bacaan Kali Yang Kedua dan Ketiga",,12.59 tgh.,1259,Puan Siti Zailah Mohd. Yusoff [Rantau Panjang],"Ya kah? Okey, yang akhir
 sekali Tuan Yang di-Pertua iaitu saya ingin mengharapkan iaitu penguatkuasaan di mana
 kita tidak mahu berlakunya rasuah sebab penelitian yang kita dapati sempena saya buat
 tinjauan kepada pembawa-pembawa makanan, sayuran dan sebagainya ini, mereka
@@ -1904,10 +1904,10 @@ memastikan tidak adanya rasuah dan penyalahgunaan kuasa supaya benar-benar ia
 memberi keselamatan kepada negara. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1259,Datuk Alexander Nanta Linggi [Kapit],[Bangun]
+Bacaan Kali Yang Kedua dan Ketiga",,12.59 tgh.,1259,Datuk Alexander Nanta Linggi [Kapit],[Bangun]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1259,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Yang
+Bacaan Kali Yang Kedua dan Ketiga",,12.59 tgh.,1259,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Yang
 Berhormat Kapit, tidak ada masa lagi, Yang Berhormat. Jadi saya sebut nama yang tengah
 hari nanti, pukul 2.30 petanglah Yang Berhormat ya.
 Ahli-ahli Yang Berhormat, sesi persidangan pagi telah tamat dan ditangguhkan
@@ -1918,11 +1918,11 @@ Mesyuarat disambung semula pada pukul 2.30 petang**
 Mesyuarat**]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1259,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Jemput Yang Berhormat
+Bacaan Kali Yang Kedua dan Ketiga",,12.59 tgh.,1259,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Jemput Yang Berhormat
 Kapit."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1432,Datuk Alexander Nanta Linggi [Kapit],"Terima kasih Tuan Yang di-Pertua. Tuan
+Bacaan Kali Yang Kedua dan Ketiga",,2.32 ptg.,1432,Datuk Alexander Nanta Linggi [Kapit],"Terima kasih Tuan Yang di-Pertua. Tuan
 Yang di-Pertua, saya hanya hendak menyentuh sedikit perkara sahaja berkenaan dengan
 Rang Undang-undang Perkhidmatan Kuarantin dan Pemeriksaan Malaysia 2010 yang telah
 dibentangkan oleh Kementerian Pertanian dan Industri Asas Tani.
@@ -1975,10 +1975,10 @@ pada kita. It is a natural persempadanan. Jadi, itulah sedikit pandangan saya Tu
 Pertua. Sekian, terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1432,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Yang Berhormat Bakri.
+Bacaan Kali Yang Kedua dan Ketiga",,2.32 ptg.,1432,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Yang Berhormat Bakri.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1438,Tuan Er Teck Hwa [Bakri],"Terima kasih Tuan Yang di-Pertua kerana memberi
+Bacaan Kali Yang Kedua dan Ketiga",,2.38 ptg.,1438,Tuan Er Teck Hwa [Bakri],"Terima kasih Tuan Yang di-Pertua kerana memberi
 peluang kepada saya untuk mengambil bahagian dalam perbahasan Rang Undang-undang
 Perkhidmatan Kuarantin dan Pemeriksaan Malaysia 2010...Pada sesi pagi tadi, Yang
 Berhormat Kubang Kerian telah menyentuh mengenai penyakit tanaman yang berlaku di
@@ -1992,7 +1992,7 @@ bunga Tulip yang diimport dari Holland. Telur lalat yang dibawa oleh bunga Tulip
 menyebabkan pembiakan lalat secara meluas berlaku di Cameron Highlands."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1440,Tuan Er Teck Hwa [Bakri],"Maka saya minta Menteri menyatakan apakah mekanisme yang sedia ada dan
+Bacaan Kali Yang Kedua dan Ketiga",,■1440,1440,Tuan Er Teck Hwa [Bakri],"Maka saya minta Menteri menyatakan apakah mekanisme yang sedia ada dan
 berapakah pakar-pakar yang kini dalam kementerian mampu mengatasi masalah
 penyebaran penyakit-penyakit dan bakteria ini.
 Di samping itu, saya juga khuatir mengenai kecekapan penguatkuasaan kerajaan
@@ -2014,11 +2014,11 @@ diimport. Sekiranya berlaku kesalahan oleh pegawai penguat kuasa, apakah bentuk
 hukuman atau penalti yang akan dikenakan? Sekian, terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1440,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat Tangga
+Bacaan Kali Yang Kedua dan Ketiga",,■1440,1440,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat Tangga
 Batu."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1442,Datuk Ir. Haji Idris bin Haji Haron [Tangga Batu],"Terima kasih Tuan Yang di-
+Bacaan Kali Yang Kedua dan Ketiga",,2.42 ptg.,1442,Datuk Ir. Haji Idris bin Haji Haron [Tangga Batu],"Terima kasih Tuan Yang di-
 Pertua. Saya juga hendak terlibat bersama kerana baru-baru ini saya berada di luar negara
 dan dapat merasakan disebabkan oleh kelemahan sistem perkhidmatan kuarantin dan juga
 pemeriksaan beberapa buah negara di Eropah telah menyebabkan the outbreak of E-Coli
@@ -2084,7 +2084,7 @@ atau peluang untuk berlaku ketirisan di dalam mengenakan caj-caj yang kadangkala
 dapat menjangka."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1450,Datuk Ir. Haji Idris bin Haji Haron [Tangga Batu],"Sebagai contoh, kalau kita menyimpan haiwan seperti kuda, lembu dan
+Bacaan Kali Yang Kedua dan Ketiga",,■1450,1450,Datuk Ir. Haji Idris bin Haji Haron [Tangga Batu],"Sebagai contoh, kalau kita menyimpan haiwan seperti kuda, lembu dan
 sebagainya. Saya isytihar kepentingan Tuan Yang di-Pertua, saya Presiden Ekuestrian
 Kelab Melaka dan pernah membawa masuk kuda ke negara dan terpaksa membayar caj
 yang begitu tinggi. Ini kerana kelebihan masa kuda itu dikurung di pusat kuarantin ini dan
@@ -2112,10 +2112,10 @@ ini. Supaya Melaka akan terkenal dengan pusat-pusat perkhidmatan yang bertaraf
 antarabangsa. Terima kasih Tuan Yang di-Pertua."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1450,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Yang Berhormat Tawau.
+Bacaan Kali Yang Kedua dan Ketiga",,■1450,1450,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Yang Berhormat Tawau.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1453,Datuk Chua Soon Bui [Tawau],"Terima kasih Tuan Yang di-Pertua, memberi
+Bacaan Kali Yang Kedua dan Ketiga",,2.53 ptg.,1453,Datuk Chua Soon Bui [Tawau],"Terima kasih Tuan Yang di-Pertua, memberi
 peluang kepada saya untuk membahaskan Rang Undang-undang Perkhidmatan Kuarantin
 dan Pemeriksaan Malaysia 2010.
 Saya ingin minta penjelasan Kementerian Pertanian berkaitan isu kandungan rang
@@ -2173,10 +2173,10 @@ import adalah selamat untuk negara kita? Adakah sebarang denda dikenakan kepada
 pembekal yang bersalah dari luar negeri. Dengan itu sekian, terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1453,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Yang Berhormat Rembau.
+Bacaan Kali Yang Kedua dan Ketiga",,2.53 ptg.,1453,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Yang Berhormat Rembau.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1500,Tuan Khairy Jamaluddin [Rembau],"Bismillaahir Rahmaanir Rahiim.
+Bacaan Kali Yang Kedua dan Ketiga",,3.00 ptg.,1500,Tuan Khairy Jamaluddin [Rembau],"Bismillaahir Rahmaanir Rahiim.
 Assalamualaikum warahmatullaahi wabarakaatuh dan salam 1Malaysia. Terima kasih Tuan
 Yang di-Pertua.
 Sebelum saya membahaskan rang undang-undang ini saya mengucapkan tahniah
@@ -2277,7 +2277,7 @@ sebenarnya daging ‘kerbau pencen’ daripada India. Di samping itu India masih
 bebas daripada penyakit kuku dan mulut atau Foot-and-Mouth Disease (FMD)."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1510,Tuan Khairy Jamaluddin [Rembau],"Oleh sebab itulah Indonesia contohnya telah memberhentikan pengimportan
+Bacaan Kali Yang Kedua dan Ketiga",,■1510,1510,Tuan Khairy Jamaluddin [Rembau],"Oleh sebab itulah Indonesia contohnya telah memberhentikan pengimportan
 daging kerbau dari India. Pada masa yang sama, Malaysia juga belum terlepas daripada
 senarai negara-negara Foot-and-Mouth Disease (FMD) sungguhpun kita sedang berusaha
 ke arah itu menjelang tahun 2015.
@@ -2347,11 +2347,11 @@ bahawa penindihan dari segi akta-akta dan undang-undang ini tidak terus berlaku.
 sahaja Tuan Yang di-Pertua. Saya ucapkan terima kasih. Saya menyokong."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1510,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat Pokok
+Bacaan Kali Yang Kedua dan Ketiga",,■1510,1510,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat Pokok
 Sena."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1516,Dato' Mahfuz bin Haji Omar [Pokok Sena],"Terima kasih Tuan Yang di-Pertua
+Bacaan Kali Yang Kedua dan Ketiga",,3.16 ptg.,1516,Dato' Mahfuz bin Haji Omar [Pokok Sena],"Terima kasih Tuan Yang di-Pertua
 yang turut mengizinkan saya untuk membahaskan Rang Undang-undang Perkhidmatan
 Kuarantin dan Pemeriksaan Malaysia 2010. Kita bersetuju ke arah untuk mengemas kini
 dan untuk memastikan supaya wujud satu undang-undang yang lebih menyeluruh. Akan
@@ -2398,7 +2398,7 @@ diberikan kepada BERNAS. BERNAS hanya akan sambung balik untuk – saya tidak in
 memberikan sesuatu yang baik."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1520,Dato' Mahfuz bin Haji Omar [Pokok Sena],"Harus dilihat juga keluaran perlu sama ada beras kepada BERNAS ataupun
+Bacaan Kali Yang Kedua dan Ketiga",,■1520,1520,Dato' Mahfuz bin Haji Omar [Pokok Sena],"Harus dilihat juga keluaran perlu sama ada beras kepada BERNAS ataupun
 daging, sayur dan sebagainya ialah bagaimana orang yang mendapat AP itu memperoleh
 keuntungan yang besar sedangkan kita yang menjadi pengguna di dalam negara kita ini
 mendapat barangan yang pertama dari segi harga yang tidak begitu baik.
@@ -2416,10 +2416,10 @@ AP. Jadi saya tunjuk contoh bahawa kita tidak mahu nanti bahawa dalam isu-isu AP
 Kementerian Pertanian ini. Maknanya macam BERNAS dia dapat duit cukup besar..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1520,Seorang Ahli,[Menyampuk]
+Bacaan Kali Yang Kedua dan Ketiga",,■1520,1520,Seorang Ahli,[Menyampuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1520,Dato’ Mahfuz bin Haji Omar [Pokok Sena],"Betul. Saya boleh bawa keluar fakta
+Bacaan Kali Yang Kedua dan Ketiga",,■1520,1520,Dato’ Mahfuz bin Haji Omar [Pokok Sena],"Betul. Saya boleh bawa keluar fakta
 berkaitan dengan soal AP, AP kereta. Ini saya bawa contoh ya. Saya tidak sampai lagi nanti
 saya bahaslah dalam waktu bajet kah nanti. Maknanya AP kereta menunjukkan bahawa
 ramai maknanya kerajaan terlepas. Padahal kalau kita ke syarikat-syarikat yang betul-betul
@@ -2431,26 +2431,26 @@ kata kena bagi dekat kawan itu. Dia kena bayar RM40,000 kepada kawan itu. Tidak 
 apa. Ini otak sewel pun payah..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1520,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Yang Berhormat.
+Bacaan Kali Yang Kedua dan Ketiga",,■1520,1520,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Yang Berhormat.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1520,Dato’ Mahfuz bin Haji Omar [Pokok Sena],Ya.
+Bacaan Kali Yang Kedua dan Ketiga",,■1520,1520,Dato’ Mahfuz bin Haji Omar [Pokok Sena],Ya.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1520,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Kereta tidak masuk
+Bacaan Kali Yang Kedua dan Ketiga",,■1520,1520,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Kereta tidak masuk
 kuarantin."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1520,Dato’ Mahfuz bin Haji Omar [Pokok Sena],"Ya, ya. Tidak apa. Saya tunjuk
+Bacaan Kali Yang Kedua dan Ketiga",,■1520,1520,Dato’ Mahfuz bin Haji Omar [Pokok Sena],"Ya, ya. Tidak apa. Saya tunjuk
 contoh, Saya tunjuk contoh, saya tunjuk contoh. Ini kadang-kadang UMNO ini dia meroyan
 tidak tahan puja. Ini UMNO ini penyakit meroyan ini... [Ketawa] Itu yang kena kuarantin ini
 mereka ini juga pun..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1520,Beberapa Ahli,[Ketawa]
+Bacaan Kali Yang Kedua dan Ketiga",,■1520,1520,Beberapa Ahli,[Ketawa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1520,Dato’ Mahfuz bin Haji Omar [Pokok Sena],"Yang Berhormat Batu Pahat ini kena
+Bacaan Kali Yang Kedua dan Ketiga",,■1520,1520,Dato’ Mahfuz bin Haji Omar [Pokok Sena],"Yang Berhormat Batu Pahat ini kena
 kuarantin ini nampaknya. Saya ingat Yang Berhormat Kota Belud setuju kita kuarantin Yang
 Berhormat Batu Pahat ini... [Ketawa] Baik, saya balik sebab saya Yang Berhormat Menteri
 sekarang ini maknanya ini sekarang isu yang perlu dilihat bahawa kita tidak mahu nanti
@@ -2481,10 +2481,10 @@ mana mungkin boleh wujud daripada persoalan yang sedang kita bincangkan ini. Jad
 mohon penjelasan daripada Yang Berhormat Menteri. Sekian."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1520,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Yang Berhormat Labuan.
+Bacaan Kali Yang Kedua dan Ketiga",,■1520,1520,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Yang Berhormat Labuan.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1528,Datuk Haji Yusof Haji Mahal [Labuan],"Terima kasih Tuan Yang di-Pertua.
+Bacaan Kali Yang Kedua dan Ketiga",,3.28 ptg.,1528,Datuk Haji Yusof Haji Mahal [Labuan],"Terima kasih Tuan Yang di-Pertua.
 Labuan juga ingin turut serta membahaskan Rang Undang-Undang Perkhidmatan
 Kuarantin dan Pemeriksaan Malaysia 2010. Saya rasa perkhidmatan kuarantin dan
 pemeriksaan ini adalah tindakan yang bijak dan tepat oleh kerajaan pada hari ini untuk
@@ -2528,7 +2528,7 @@ dan Sarawak saya rasa kalau Labuan yang termasuk inilah pintu masuk yang akan me
 pintu laluan sistem kuarantin yang akan dilaksanakan oleh MAQIS nanti."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1530,Datuk Haji Yusof Haji Mahal [Labuan],"Kedua, apakah pegawai ataupun penguat kuasa MAQIS yang sedia ada atau yang
+Bacaan Kali Yang Kedua dan Ketiga",,■1530,1530,Datuk Haji Yusof Haji Mahal [Labuan],"Kedua, apakah pegawai ataupun penguat kuasa MAQIS yang sedia ada atau yang
 bakal dilantik nanti memiliki kepakaran-kepakaran yang berkaitan bagi melaksanakan
 tugas-tugas penguatkuasaan seperti mengenal pasti sesuatu kesalahan sebelum
 melakukan penyitaan atau penahanan dan pengambilan sampel dan yang lain-lain? Juga,
@@ -2562,13 +2562,13 @@ negara lain di sekitar kita tidak menerima dan mengiktiraf daging kerbau pencen 
 ini, saya rasa kita juga harus menolak daging tersebut..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1530,Datuk Dr. Marcus Mojigoh [Putatan],Yang Berhormat Labuan.
+Bacaan Kali Yang Kedua dan Ketiga",,■1530,1530,Datuk Dr. Marcus Mojigoh [Putatan],Yang Berhormat Labuan.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1530,Datuk Haji Yusof Haji Mahal [Labuan],Ya.
+Bacaan Kali Yang Kedua dan Ketiga",,■1530,1530,Datuk Haji Yusof Haji Mahal [Labuan],Ya.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1530,Datuk Dr. Marcus Mojigoh [Putatan],"Ini berkenaan dengan isu yang
+Bacaan Kali Yang Kedua dan Ketiga",,■1530,1530,Datuk Dr. Marcus Mojigoh [Putatan],"Ini berkenaan dengan isu yang
 dibangkitkan. Terima kasih Tuan Yang di-Pertua. Saya minta penjelasan daripada sahabat
 saya Yang Berhormat Labuan oleh sebab mengetengahkan masalah daging ini. Pagi tadi
 kita dengar perbahasan daripada Ahli Parlimen Keningau dan kita juga dengar daripada
@@ -2588,7 +2588,7 @@ Pusat apabila melaksanakan rang undang-undang ini nanti. Saya minta masukkan dal
 ucapan Yang Berhormatlah."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1530,Datuk Haji Yusof Haji Mahal [Labuan],"Terima kasih. Sebenarnya Yang
+Bacaan Kali Yang Kedua dan Ketiga",,■1530,1530,Datuk Haji Yusof Haji Mahal [Labuan],"Terima kasih. Sebenarnya Yang
 Berhormat Putatan, kalau dikira, rang undang-undang ini cukup baik untuk seluruh negara.
 Kita tidak seharusnya menolak rang undang-undang tersebut. Akan tetapi yang penting
 ialah preparation atau persiapan awal kita. Sebelum kita melaksanakan rang undang-
@@ -2606,11 +2606,11 @@ persiapan yang lengkap harus kita sediakan sebelum kita melaksanakan rang undang
 undang tersebut. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1530,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat Indera
+Bacaan Kali Yang Kedua dan Ketiga",,■1530,1530,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat Indera
 Mahkota."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1536,Tuan Azan Ismail [Indera Mahkota],"Terima kasih Tuan Yang di-Pertua. Saya
+Bacaan Kali Yang Kedua dan Ketiga",,3.36 ptg.,1536,Tuan Azan Ismail [Indera Mahkota],"Terima kasih Tuan Yang di-Pertua. Saya
 melihat rang undang-undang yang dicadangkan ini dengan jelas menggariskan bahawa
 akan wujud satu implikasi kewangan yang tidak dapat ditentukan berapakah jumlahnya buat
 masa ini.
@@ -2651,7 +2651,7 @@ terlepas pandang atau ketidakcekapan menguruskan kemasukan ataupun pemeriksaan-
 pemeriksaan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1540,Tuan Azan Ismail [Indera Mahkota],"Bukan sahaja dari segi kesihatan ataupun bukan dari segi kualiti pemakanan tetapi
+Bacaan Kali Yang Kedua dan Ketiga",,■1540,1540,Tuan Azan Ismail [Indera Mahkota],"Bukan sahaja dari segi kesihatan ataupun bukan dari segi kualiti pemakanan tetapi
 juga dari segi ataupun aspek percukaian ataupun revenue, dengan izin, ataupun hasil itu
 sendiri. Ketidakcekapan ini saya nampak ada asasnya oleh kerana telah ada enam akta
 terdahulu dan kita perlukan satu akta yang baru untuk mentadbir secara keseluruhannya.
@@ -2678,7 +2678,7 @@ menangani penyeludupan ini mana mungkin perkara ini orang kata menjadi pertikaia
 begitu hangat sekarang."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1540,Tuan Ahmad Kasim [Kuala Kedah],"Yang Berhormat Indera Mahkota minta
+Bacaan Kali Yang Kedua dan Ketiga",,■1540,1540,Tuan Ahmad Kasim [Kuala Kedah],"Yang Berhormat Indera Mahkota minta
 pandangan sikit Indera Mahkota. Oleh sebab Yang Berhormat Indera Mahkota sebut soal
 kuarantin di sempadan tadi dengan pihak Kastam, saya difahamkan apabila mana-mana
 pihak yang menahan satu kontena bahan makanan ini untuk membuka kontena tersebut
@@ -2696,7 +2696,7 @@ mengatasi. Adakah rang undang-undang ini pada pandangan Yang Berhormat Indera
 Mahkota boleh mengatasi isu ini, terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1540,Tuan Azan Ismail [Indera Mahkota],"Terima kasih Yang Berhormat Kuala Kedah.
+Bacaan Kali Yang Kedua dan Ketiga",,■1540,1540,Tuan Azan Ismail [Indera Mahkota],"Terima kasih Yang Berhormat Kuala Kedah.
 Sepatutnya memang tepat sekali cadangan ataupun mengemukakan kepada Dewan hari ini
 akta yang ketujuh daripada enam yang telah pun ada yang berkaitan dengan perkara yang
 sama sepatutnya dapat menutup ataupun menyelesaikan masalah tadi.
@@ -2736,10 +2736,10 @@ mereka ini melanggar ataupun tidak dapat... [Sambil menunjukkan isyarat tangan]
 Potong?..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1540,Seorang Ahli,[Menyampuk] [Ketawa]
+Bacaan Kali Yang Kedua dan Ketiga",,■1540,1540,Seorang Ahli,[Menyampuk] [Ketawa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1540,Tuan Azan Ismail [Indera Mahkota],"Dan begitu juga seperti Akta Persaingan
+Bacaan Kali Yang Kedua dan Ketiga",,■1540,1540,Tuan Azan Ismail [Indera Mahkota],"Dan begitu juga seperti Akta Persaingan
 yang kita juga telah luluskan. Saya tidak tahulah. Akan tetapi saya harap Menteri untuk
 tengok lah sekiranya ada sudah enam akta yang lain mungkin juga ada akta-akta lain yang
 perlu juga dikatakan sebagai spesifik untuk pentadbiran akta ini dimasukkan perkara
@@ -2760,10 +2760,10 @@ prospek tertentu, saya rasa ini adalah satu perkara yang tidak begitu baik. Teri
 Tuan Yang di-Pertua."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1540,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Yang Berhormat Ranau.
+Bacaan Kali Yang Kedua dan Ketiga",,■1540,1540,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Yang Berhormat Ranau.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1550,Datuk Siringan Gubat [Ranau],"Terima kasih Tuan Yang di-Pertua, saya juga
+Bacaan Kali Yang Kedua dan Ketiga",,■1550,1550,Datuk Siringan Gubat [Ranau],"Terima kasih Tuan Yang di-Pertua, saya juga
 terpanggil untuk turut sama membahaskan rang undang-undang suatu akta untuk
 mengadakan peruntukan untuk perkhidmatan kuarantin dan pemeriksaan Malaysia bagi
 maksud mengadakan perkhidmatan bersepadu yang berhubung dengan kuarantin
@@ -2789,20 +2789,20 @@ dipersoalkan seperti mana yang kita dengar banyak daripada cadangan-cadangan dan
 keraguan daripada Ahli-ahli yang lain terutama sekali terhadap pelaksanaannya..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1550,Datuk Abd. Rahman Dahlan [Kota Belud],"Boleh mencelah Yang Berhormat
+Bacaan Kali Yang Kedua dan Ketiga",,■1550,1550,Datuk Abd. Rahman Dahlan [Kota Belud],"Boleh mencelah Yang Berhormat
 Ranau?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1550,Datuk Siringan Gubat [Ranau],"Jangan dahulu, pendek sahaja ini."
+Bacaan Kali Yang Kedua dan Ketiga",,■1550,1550,Datuk Siringan Gubat [Ranau],"Jangan dahulu, pendek sahaja ini."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1550,Datuk Abd. Rahman Dahlan [Kota Belud],[Ketawa] Membantu sedikit.
+Bacaan Kali Yang Kedua dan Ketiga",,■1550,1550,Datuk Abd. Rahman Dahlan [Kota Belud],[Ketawa] Membantu sedikit.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1550,Datuk Siringan Gubat [Ranau],"Ya, okey teruskan."
+Bacaan Kali Yang Kedua dan Ketiga",,■1550,1550,Datuk Siringan Gubat [Ranau],"Ya, okey teruskan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1550,Datuk Abd. Rahman Dahlan [Kota Belud],"[Ketawa] Tuan Yang di-Pertua, terima
+Bacaan Kali Yang Kedua dan Ketiga",,■1550,1550,Datuk Abd. Rahman Dahlan [Kota Belud],"[Ketawa] Tuan Yang di-Pertua, terima
 kasih. Tadi Yang Berhormat Ranau ada mengatakan tentang keupayaan Jabatan Kuarantin
 Negeri Sabah di dalam menangani isu-isu yang ada kaitan dengan penyakit dan
 pemeriksaan haiwan dan daging yang masuk ke Negeri Sabah. Saya dimaklumkan bahawa
@@ -2814,7 +2814,7 @@ bukti yang mengatakan bahawa Jabatan Kuarantin di Negeri Sabah itu adalah satu j
 yang memang menjalankan tugas dengan baik."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1550,Datuk Siringan Gubat [Ranau],"Terima kasih kepada Yang Berhormat Kota
+Bacaan Kali Yang Kedua dan Ketiga",,■1550,1550,Datuk Siringan Gubat [Ranau],"Terima kasih kepada Yang Berhormat Kota
 Belud, Tuan Yang di-Pertua itu betul. Semasa saya di kementerian pertanian dahulu, kadar
 wabak terutama sekali GA ataupun penyakit babilah itu dan penyakit babi ini berlaku di
 Semenanjung tetapi tidak berlaku di Sabah disebabkan pencegahan ataupun kuarantin
@@ -2825,15 +2825,15 @@ pentadbiran sistem kuarantin yang sudah menunjukkan kebaikannya ataupun
 keberkesanannya. Tuan Yang di-Pertua..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1550,Datuk Seri Panglima Wilfred Mojilip Bumburing [Tuaran],"Yang Berhormat
+Bacaan Kali Yang Kedua dan Ketiga",,■1550,1550,Datuk Seri Panglima Wilfred Mojilip Bumburing [Tuaran],"Yang Berhormat
 Ranau, boleh mencelah sedikit ini macam Yang Berhormat Kota Belud, bantu ini. Ada masa
 lagi kan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1550,Datuk Siringan Gubat [Ranau],Okey.
+Bacaan Kali Yang Kedua dan Ketiga",,■1550,1550,Datuk Siringan Gubat [Ranau],Okey.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1550,Datuk Seri Panglima Wilfred Mojilip Bumburing [Tuaran],"Tadi Yang Berhormat
+Bacaan Kali Yang Kedua dan Ketiga",,■1550,1550,Datuk Seri Panglima Wilfred Mojilip Bumburing [Tuaran],"Tadi Yang Berhormat
 telah menyentuh tentang the concern ataupun the concern of State government for
 example, Sabah mengenai dengan soal kuarantin ini. Memang kita mengakui bahawa
 selama ini sistem kuarantin di Sabah ini memang in good place, hanya Tuan Yang di-
@@ -2862,7 +2862,7 @@ tetapi di antara wilayah-wilayah Malaysia ini juga perlu untuk diselaraskan bagi
 rakyat Malaysia di dalam hal ini, terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1550,Datuk Siringan Gubat [Ranau],"Terima kasih kepada Yang Berhormat Ahli
+Bacaan Kali Yang Kedua dan Ketiga",,■1550,1550,Datuk Siringan Gubat [Ranau],"Terima kasih kepada Yang Berhormat Ahli
 Parlimen Tuaran kerana menimbulkan perkara tersebut dan saya masukkan keterangan
 beliau di dalam ucapan saya. Mungkin itu perkara yang isolated tetapi di sebaliknya
 menunjukkan bahawa kuarantin perkhidmatan di Sabah ini lebih berhati-hati dan tidak akan
@@ -2870,7 +2870,7 @@ mengabaikan tanggungjawab yang begitu efisien sekali. Tuan Yang di-Pertua, pada
 akhirnya saya ingin menyentuh mengenai dengan rang undang-undang ini."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1600,Datuk Siringan Gubat [Ranau],"Saya sudah menyentuh beberapa kekhuatiran dan juga sebagai rayuanlah bagi
+Bacaan Kali Yang Kedua dan Ketiga",,■1600,1600,Datuk Siringan Gubat [Ranau],"Saya sudah menyentuh beberapa kekhuatiran dan juga sebagai rayuanlah bagi
 Sabah ini supaya kementerian yang berkenaan walaupun rang undang-undang ini
 diluluskan nanti biarlah Sabah jangan dilibatkan dahulu terutama sekali apabila
 pelaksanaannya. Dapatkan persetujuan daripada kerajaan Sabah sebelum dilanjutkan.
@@ -2881,11 +2881,11 @@ kerajaan membuat persetujuan dan untuk pelaksanaan rang undang-undang ini. Sekia
 dan terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1600,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Yang
+Bacaan Kali Yang Kedua dan Ketiga",,■1600,1600,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Yang
 Berhormat Beruas. Selepas itu Yang Berhormat Menteri menjawab."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1601,Dato’ Ngeh Koo Ham [Beruas],"Terima kasih Tuan Yang di-Pertua. Saya hanya
+Bacaan Kali Yang Kedua dan Ketiga",,4.01 ptg.,1601,Dato’ Ngeh Koo Ham [Beruas],"Terima kasih Tuan Yang di-Pertua. Saya hanya
 ada satu perkara yang ingin saya bangkitkan.
 Sungguhpun kita sudah ada enam undang-undang berkenaan dengan barang
 makanan dan soal mengenai import atau eksport barangan, tetapi masih pada masa
@@ -2910,11 +2910,11 @@ permit ini - menghadapi masalah apabila mereka hendak mengimport ataupun eksport
 barangan yang memerlukan permit atau lesen ini. Terima kasih Tuan Yang di-Pertua."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1601,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Yang
+Bacaan Kali Yang Kedua dan Ketiga",,4.01 ptg.,1601,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Yang
 Berhormat Menteri, sila."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1603,Menteri Pertanian dan Industri Asas Tani [Datuk Seri Noh bin Haji Omar],"Terima kasih Tuan Yang di-Pertua. Saya ucapkan jutaan terima kasih kepada semua Ahli
+Bacaan Kali Yang Kedua dan Ketiga",,4.03 ptg.,1603,Menteri Pertanian dan Industri Asas Tani [Datuk Seri Noh bin Haji Omar],"Terima kasih Tuan Yang di-Pertua. Saya ucapkan jutaan terima kasih kepada semua Ahli
 Yang Berhormat yang telah pun memberikan pandangan serta sokongan pada rang
 undang-undang ini. Segala teguran dan cadangan penambahbaikan akan diambil perhatian
 dalam melaksanakan secara terbaik terhadap rang undang-undang ini. Semua Ahli Yang
@@ -2963,22 +2963,22 @@ bagaimanapun, kita lihat dalam akta ini bahawa penguat kuasa ini juga kita boleh
 daripada orang awam."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1603,Dato’ Ibrahim Ali [Pasir Mas],[Bangun]
+Bacaan Kali Yang Kedua dan Ketiga",,4.03 ptg.,1603,Dato’ Ibrahim Ali [Pasir Mas],[Bangun]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1603,Datuk Seri Noh bin Haji Omar,"Jadi, ini kita ucapkan terima kasih banyak kerana
+Bacaan Kali Yang Kedua dan Ketiga",,4.03 ptg.,1603,Datuk Seri Noh bin Haji Omar,"Jadi, ini kita ucapkan terima kasih banyak kerana
 ramai Ahli Yang Berhormat menitikberatkan mengenai penguatkuasaan. Memang benar.
 Kalau undang-undang ada tetapi tidak ada penguatkuasaan yang setimpal, maka undang-
 undang tidak akan ada makna. Ya."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1603,Dato’ Ibrahim Ali [Pasir Mas],Sedikit sahaja Yang Berhormat Menteri.
+Bacaan Kali Yang Kedua dan Ketiga",,4.03 ptg.,1603,Dato’ Ibrahim Ali [Pasir Mas],Sedikit sahaja Yang Berhormat Menteri.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1603,Datuk Seri Noh bin Haji Omar,Silakan.
+Bacaan Kali Yang Kedua dan Ketiga",,4.03 ptg.,1603,Datuk Seri Noh bin Haji Omar,Silakan.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1603,Dato’ Ibrahim Ali [Pasir Mas],"Jumlah lembu Yang Berhormat Menteri sebut yang
+Bacaan Kali Yang Kedua dan Ketiga",,4.03 ptg.,1603,Dato’ Ibrahim Ali [Pasir Mas],"Jumlah lembu Yang Berhormat Menteri sebut yang
 diimport pada tahun lalu, 154,000 tadi adakah lembu-lembu ini semuanya lembu yang sihat-
 sihat? Pernahkah lembu-lembu ini ada yang sudah dikuarantinkan sebelum ini dan dari segi
 penyakitnya berapa peratus? Ini kerana perlu juga diketahui sejumlah yang begitu besar
@@ -2986,7 +2986,7 @@ kita hendak tahu dan memastikan bahawa semua lembu ini sihat. Maknanya akal dan
 fikiran semuanya sihat lembu ini walaupun binatang tetapi sihat. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1603,Datuk Seri Noh bin Haji Omar,"Terima kasih Yang Berhormat. Kalau sekarang
+Bacaan Kali Yang Kedua dan Ketiga",,4.03 ptg.,1603,Datuk Seri Noh bin Haji Omar,"Terima kasih Yang Berhormat. Kalau sekarang
 pun Yang Berhormat duduk dekat sempadan, sebelum lembu-lembu ini dibenarkan dibawa
 masuk terus ke negara kita, lembu ini diwajibkan ditempatkan di premis-premis kuarantin
 yang ada dan di situ nantilah pihak pegawai veterinar akan membuat pemeriksaan sama
@@ -2995,7 +2995,7 @@ premis kuarantin ini sebenarnya telah pun ada standard-standardnya yang telah di
 oleh pihak Jabatan Veterinar. Ini kerana itulah undang-undang ini kita perlu satukan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1610,Datuk Seri Noh bin Haji Omar,"Apa yang kita lihat sekarang ini yang dikatakan dibuat secara pentadbiran. Apabila
+Bacaan Kali Yang Kedua dan Ketiga",,■1610,1610,Datuk Seri Noh bin Haji Omar,"Apa yang kita lihat sekarang ini yang dikatakan dibuat secara pentadbiran. Apabila
 disebut mengenai veterinar, kita perlu mengikut undang-undang di bawah Jabatan Akta
 Veterinar. Jadi veterinar ada standardnya. Kalau hendak import ikan perlu ikut pula undang-
 undang LKIM. Kalau hendak import buah-buahan dan sayur-sayuran, ini di bawah Akta
@@ -3012,7 +3012,7 @@ satukan nanti bermakna semua pegawai.., yang terlibat boleh memberikan tumpuan k
 satu-satu barang produk pertanian yang kita import, ya."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1610,Tuan Ahmad Kasim [Kuala Kedah],"Yang Berhormat Menteri, terima kasih.
+Bacaan Kali Yang Kedua dan Ketiga",,■1610,1610,Tuan Ahmad Kasim [Kuala Kedah],"Yang Berhormat Menteri, terima kasih.
 Berkaitan dengan penguatkuasaan ini ada dua isu di sini.
 Pertamanya tentang kemahiran penguatkuasaan itu di dalam bidang yang mereka
 hendak kuat kuasa sebab dalam bidang pertanian dengan bidang penternakan ini jauh
@@ -3025,7 +3025,7 @@ terlalu besar kepada pihak penguatkuasaan boleh menyita dan boleh membuat tangka
 tanpa waran. Ini yang saya minta penjelasan tentang penguatkuasaan. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1610,Datuk Seri Noh bin Haji Omar,"Ada satu tempat Yang Berhormat perlu sampai
+Bacaan Kali Yang Kedua dan Ketiga",,■1610,1610,Datuk Seri Noh bin Haji Omar,"Ada satu tempat Yang Berhormat perlu sampai
 tetapi saya pun boleh jawab juga. tetapi saya akan jawab bila Yang Berhormat punya
 sampai nanti. Akan tetapi Yang Berhormat kata pengkhususan ini memang sekarang ini
 kalau kita pergi di pusat-pusat pengkhususan ini ia masing-masing ada pengkhususan
@@ -3049,7 +3049,7 @@ daripada tadi seperti perikanan, FAMA, pertanian, dan veterinar. Ini kita akan b
 dan akan bawa semula ke dalam Parlimen ini."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1610,Tuan Ahmad Kasim [Kuala Kedah],"Jadi Yang Berhormat Menteri, kalau begitu
+Bacaan Kali Yang Kedua dan Ketiga",,■1610,1610,Tuan Ahmad Kasim [Kuala Kedah],"Jadi Yang Berhormat Menteri, kalau begitu
 maknanya akta ini masih lagi belum menyelesaikan masalah birokrasi sebab sekiranya
 seorang pengimport itu ingin mengimport barangan bermakna dia masih lagi terikat dengan
 akta-akta yang sebelum ini. Jadi apa yang kita maksudkan kewujudan Rang undang-
@@ -3058,7 +3058,7 @@ Akan tetapi sekiranya tidak menyelesaikan masalah kerenah birokrasi ini tidak ad
 makna kewujudan akta ini. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1610,Datuk Seri Noh bin Haji Omar,"Ini hendak menyelesaikan masalah kewujudan
+Bacaan Kali Yang Kedua dan Ketiga",,■1610,1610,Datuk Seri Noh bin Haji Omar,"Ini hendak menyelesaikan masalah kewujudan
 birokrasi yang ada sekarang lah. Itu sebab dalam borang ini kata, jika ada pertindihan di
 antara akta ini dengan akta yang sedia ada bertulis maka akta ini will private. Ia lebihlah.
 Jadi sementara kita hendak pinda ada beberapa akta yang kita tengok ada juga yang
@@ -3095,10 +3095,10 @@ Veterinar oleh pihak berkuasa veterinar dari negara pengeksport. Yang Berhormat 
 Kedah juga membangkitkan kuasa permintaan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1610,Tuan Salahuddin Haji Ayub [Kubang Kerian],[Bangun]
+Bacaan Kali Yang Kedua dan Ketiga",,■1610,1610,Tuan Salahuddin Haji Ayub [Kubang Kerian],[Bangun]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1610,Tuan Ahmad Kasim [Kuala Kedah],"Yang Berhormat Menteri, sedikit sahaja
+Bacaan Kali Yang Kedua dan Ketiga",,■1610,1610,Tuan Ahmad Kasim [Kuala Kedah],"Yang Berhormat Menteri, sedikit sahaja
 berkaitan dengan caj itu. Terima kasih Tuan Yang di-Pertua.
 Saya setuju sekiranya barangan ataupun bahan itu sihat, kalau berpenyakit. Akan
 tetapi sekiranya pihak penguat kuasa tahan satu barangan, tumbuhan ataupun
@@ -3111,7 +3111,7 @@ pengimport sedangkan mereka tidak bersalah. Jadi ini yang saya bangkitkan. Minta
 penjelasan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1620,Datuk Seri Haji Noh bin Haji Omar,"Caj ini sebenarnya adalah sewa yang
+Bacaan Kali Yang Kedua dan Ketiga",,■1620,1620,Datuk Seri Haji Noh bin Haji Omar,"Caj ini sebenarnya adalah sewa yang
 dikenakan kepada kemudahan yang disediakan. Kalau kata hendak bawa masuk lembu,
 jadi bila masuk lembu ini mesti ada tempat premis untuk kuarantin. Jadi kalau kita hendak
 letak lembu di tempat kuarantin ini tentulah ada syarikat yang membuat tempat kuarantin.
@@ -3125,7 +3125,7 @@ pendaratan sebagai contoh. Itu caj-caj yang dikenakan. Jadi kalau dia sihat dan 
 ada tempoh yang kita tentukan dia boleh masuk maka tidak perlu dikuarantin lebih lama."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1620,Tuan Ahmad Kasim [Kuala Kedah],"Yang Berhormat Menteri, saya setuju tapi
+Bacaan Kali Yang Kedua dan Ketiga",,■1620,1620,Tuan Ahmad Kasim [Kuala Kedah],"Yang Berhormat Menteri, saya setuju tapi
 sekiranya tempoh kuarantin itu satu minggu pegawai penguasa mengesyaki bahawa lembu
 ini ada penyakit jadi tempoh lebih daripada tempoh masa kuarantin itu contohnya
 dilanjutkan sampai tempoh seminggu lagi. Bermakna dua minggu. Jadi minggu kedua caj
@@ -3136,7 +3136,7 @@ Jadi tempoh seminggu yang berikutnya yang saya persoalkan. Kalau tempoh seminggu
 kuarantin yang diwajibkan kita terima. Itu tidak ada masalah. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1620,Datuk Seri Haji Noh bin Haji Omar,"Saya faham. Ini jelas apabila kita
+Bacaan Kali Yang Kedua dan Ketiga",,■1620,1620,Datuk Seri Haji Noh bin Haji Omar,"Saya faham. Ini jelas apabila kita
 menimbulkan keraguan. Ada syak. Bagi saya lebih baik kita hendak menjaga. Kita syak ini
 kerana apa kita tahan kerana kita hendak menjaga kepentingan orang ramai. Kalau ada
 seekor atau dua ekor kita lepaskan kerana kita fikirkan nanti kalau tahan dia seminggu
@@ -3159,19 +3159,19 @@ tidak ada apa-apa penyakit sebab penyakit ini lebih mudah kita cegah daripada ki
 atasi. Yang Berhormat tadi tidak bercakap hendak bercakap juga?..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1620,Dr. Mohd. Hatta bin Md. Ramli [Kuala Krai],Isu kesihatan ini...
+Bacaan Kali Yang Kedua dan Ketiga",,■1620,1620,Dr. Mohd. Hatta bin Md. Ramli [Kuala Krai],Isu kesihatan ini...
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1620,Datuk Seri Haji Noh bin Haji Omar,"Yang Berhormat doktor, orang doktor..."
+Bacaan Kali Yang Kedua dan Ketiga",,■1620,1620,Datuk Seri Haji Noh bin Haji Omar,"Yang Berhormat doktor, orang doktor..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1620,Dr. Mohd. Hatta bin Md. Ramli [Kuala Krai],Dia boleh belaka.
+Bacaan Kali Yang Kedua dan Ketiga",,■1620,1620,Dr. Mohd. Hatta bin Md. Ramli [Kuala Krai],Dia boleh belaka.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1620,Datuk Seri Haji Noh bin Haji Omar,Dua-dua boleh ya?
+Bacaan Kali Yang Kedua dan Ketiga",,■1620,1620,Datuk Seri Haji Noh bin Haji Omar,Dua-dua boleh ya?
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1620,Dr. Mohd. Hatta bin Md. Ramli [Kuala Krai],"Kalau datang depan kita kena layan
+Bacaan Kali Yang Kedua dan Ketiga",,■1620,1620,Dr. Mohd. Hatta bin Md. Ramli [Kuala Krai],"Kalau datang depan kita kena layan
 semua. Terima kasih Tuan Yang di-Pertua. Kalau lembu daripada Thailand saya mungkin
 boleh bersetuju kalau ada lanjutan daripada tempoh kuarantin daripada tempoh yang
 ditetapkan. Katalah seminggu kalau perlu lebih munasabah sebab perjalanan
@@ -3189,7 +3189,7 @@ melaksanakan dan inilah latihan yang kita rasa perlu bagi pegawai-pegawai di pus
 MAQIS. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1620,Datuk Seri Haji Noh bin Haji Omar,"Terima kasih Yang Berhormat. Saya setuju
+Bacaan Kali Yang Kedua dan Ketiga",,■1620,1620,Datuk Seri Haji Noh bin Haji Omar,"Terima kasih Yang Berhormat. Saya setuju
 dengan pandangan Yang Berhormat. Kalau kita tengok dia mudah dikenali ataupun kita
 tengok dia memang tidak ada penyakit memang kita akan lepaskan. Kita pun tidak hendak
 simpan lama-lama dekat kuarantin takut nanti penuh di pusat kuarantin itu. Jadi kalau boleh
@@ -3234,7 +3234,7 @@ kerajaan telah menetapkan semua rumah sembelih di India perlu diaudit setiap tah
 Langkah ini telah berjaya memastikan jaminan keselamatan daging berkenaan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1630,Datuk Seri Haji Noh bin Haji Omar,"Yang Berhormat Rembau juga bertanyakan bilakah pindaan berbangkit akan
+Bacaan Kali Yang Kedua dan Ketiga",,■1630,1630,Datuk Seri Haji Noh bin Haji Omar,"Yang Berhormat Rembau juga bertanyakan bilakah pindaan berbangkit akan
 dibuat terhadap Akta Binatang 1953, Akta Kuarantin Tumbuhan 1976, Akta LKIM 1971,
 Akta FAMA dan Akta Perikanan 1985 untuk mengelakkan pertindihan kuasa untuk
 memastikan bahawa MAQIS dapat dijalankan secara berkesan. Pindaan berbangkit ke atas
@@ -3340,7 +3340,7 @@ penyakit dan perosak. Pemeriksaan secara rawak dibuat bagi mengaudit keberkesana
 sistem tersebut."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1640,Tuan Ahmad Kasim [Kuala Kedah],"Yang Berhormat Menteri, sikit. Saya sabar
+Bacaan Kali Yang Kedua dan Ketiga",,■1640,1640,Tuan Ahmad Kasim [Kuala Kedah],"Yang Berhormat Menteri, sikit. Saya sabar
 menunggu sebab soalan saya yang saya bangkitkan berkaitan dengan IQC tadi belum
 dijawab dan saya rasa selepas daripada itu pun pembahas ada membangkitkan soal Pusat
 Kuarantin Antarabangsa (IQC) ini yang rasanya Ketua Pengarah Veterinar telah umumkan.
@@ -3353,7 +3353,7 @@ penjelasan. Adakah Yang Berhormat Menteri akan memberikan penjelasan dalam ucapa
 ini? Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1640,Datuk Seri Noh bin Haji Omar,"Saya tidak pasti kalau Yang Berhormat kata
+Bacaan Kali Yang Kedua dan Ketiga",,■1640,1640,Datuk Seri Noh bin Haji Omar,"Saya tidak pasti kalau Yang Berhormat kata
 Ketua Pengarah Veterinar ada membuat kenyataan. Saya tidak pasti tetapi yang setahu
 saya bahawa dalam perancangan kementerian, kita tidak pernah bincang lagilah ini.
 Mungkin semasa dia buat kenyataan, kemungkinanlah pandangan beliau pada masa itu.
@@ -3363,7 +3363,7 @@ kemungkinanlah. Saya kena check balik dengan Ketua Pengarah saya masa bila dia b
 kenyataan ini."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1640,Tuan Ahmad Kasim [Kuala Kedah],"Pada 6 Januari dan peruntukan sebanyak
+Bacaan Kali Yang Kedua dan Ketiga",,■1640,1640,Tuan Ahmad Kasim [Kuala Kedah],"Pada 6 Januari dan peruntukan sebanyak
 RM10 juta akan ditempatkan. Cadangannya sebuah pulau dengan keluasan sebanyak
 8,937 hektar. Jadi ini di antara perkara yang serius yang melibatkan perbelanjaan
 kementerian dan sebagainya. Jadi sepatutnya pihak Menteri lebih mengetahui tentang hal
@@ -3372,18 +3372,18 @@ kewujudan pusat-pusat kuarantin di seluruh sempadan negara. Jadi perlu penjelasa
 Berhormat Menteri."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1640,Datuk Seri Noh bin Haji Omar,"Tidak apa. Saya, bagi masa. Saya kena check
+Bacaan Kali Yang Kedua dan Ketiga",,■1640,1640,Datuk Seri Noh bin Haji Omar,"Tidak apa. Saya, bagi masa. Saya kena check
 baliklah dengan Ketua Pengarah Veterinar. Dia pun ada dekat luar. Jadi kalau dengar ini
 saya minta dia kena bagi nota dengan sayalah. Saya tidak pasti. Akan tetapi yang saya
 tahu dalam perancangan kita tidak ada perkara inilah. Saya kena check balik."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1640,Tuan Ahmad Kasim [Kuala Kedah],"Ini rujuk Kementerian Penerangan punya
+Bacaan Kali Yang Kedua dan Ketiga",,■1640,1640,Tuan Ahmad Kasim [Kuala Kedah],"Ini rujuk Kementerian Penerangan punya
 laman web PMR - www.penerangan.gov.my. Saya tidak tahu gov.my itu daripada mana
 tetapi rasanya government Malaysialah. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1640,Datuk Seri Noh bin Haji Omar,"Oh! Dalam inilah. Tidak apalah. Saya akan
+Bacaan Kali Yang Kedua dan Ketiga",,■1640,1640,Datuk Seri Noh bin Haji Omar,"Oh! Dalam inilah. Tidak apalah. Saya akan
 tengok. Kadang-kadang, kalau mungkin betul mungkin tidak tetapi selalunya perkara yang
 hendak dibuat ini kita bincang di dalam mesyuarat pembangunan. Kita ada bajet kita.
 Dalam setiap tahun, kementerian ada bajet dan dalam bajet ini kita sudah ada berapa
@@ -3393,14 +3393,14 @@ makluman dan pengetahuan saya apa yang Ketua Pengarah maksudkan. Jadi, saya inga
 saya kena bagi jawapan bertulislah dengan Yang Berhormat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1640,Tuan Ahmad Kasim [Kuala Kedah],"Saya rasa mungkin pengurusan Yang
+Bacaan Kali Yang Kedua dan Ketiga",,■1640,1640,Tuan Ahmad Kasim [Kuala Kedah],"Saya rasa mungkin pengurusan Yang
 Berhormat Menteri ini efisien. Jadi maksudnya memberikan – efisien dalam erti kata
 memberikan tanggungjawab itu kepada pihak jabatan untuk memberikan kenyataan. Itu
 tidak ada masalah. Itu lebih baik. Saya pun bersetuju sekiranya sistem itu dilaksanakan.
 Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1640,Datuk Seri Noh bin Haji Omar,"Okey. Yang Berhormat Tawau bertanya
+Bacaan Kali Yang Kedua dan Ketiga",,■1640,1640,Datuk Seri Noh bin Haji Omar,"Okey. Yang Berhormat Tawau bertanya
 mengapakah hasil laut dan rumpai air tidak termasuk dalam kawalan kuarantin ini. Hasil laut
 dan rumpai air termasuk dalam kawalan kuarantin fasa dua yang mentakrifkan ikan yang
 mempunyai erti yang sama yang diberikan kepadanya di bawah Akta Perikanan 1985. Di
@@ -3419,13 +3419,13 @@ dapat permit untuk dia eksport dan juga kena ada sijil kesihatan daripada Jabata
 Veterinar."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1640,Dato’ Ngeh Koo Ham [Beruas],"Penjelasan. Jadi untuk eksport sarang burung ini,
+Bacaan Kali Yang Kedua dan Ketiga",,■1640,1640,Dato’ Ngeh Koo Ham [Beruas],"Penjelasan. Jadi untuk eksport sarang burung ini,
 kita mesti dapat sijil daripada veterinar? Ini kerana dulu dikatakan Jabatan PERHILITAN
 tidak payah lagilah. Jadi kalau pasti supaya yang eksport ini dia tahu dengan pasti kerana
 sekarang ada keraguan yang timbul."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1640,Datuk Seri Noh bin Haji Omar,"Sekarang ini, kerajaan telah pun memutuskan
+Bacaan Kali Yang Kedua dan Ketiga",,■1640,1640,Datuk Seri Noh bin Haji Omar,"Sekarang ini, kerajaan telah pun memutuskan
 bahawa jabatan yang bertanggungjawab untuk mengeluarkan sijil kepada sarang burung
 walit ini ialah Jabatan Veterinar melainkan Sabah. Sabah still di bawah Jabatan
 PERHILITAN. Jadi kita telah pun keluarkan garis panduan kepada semua negeri
@@ -3435,7 +3435,7 @@ juga kita telah edarkan dan mana-mana pengusaha burung walit yang berminat, mere
 juga boleh mendapatkannya daripada kementerian."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1640,Puan Fong Po Kuan [Batu Gajah],"Minta penjelasan. Memandangkan Yang
+Bacaan Kali Yang Kedua dan Ketiga",,■1640,1640,Puan Fong Po Kuan [Batu Gajah],"Minta penjelasan. Memandangkan Yang
 Berhormat Menteri menyentuh berkenaan garis panduan yang dikeluarkan oleh pihak
 kementerian, saya hendak tahu mengapakah dikenakan caj RM15 untuk senaskhah dan
 tidak disiarkan maklumat ini di laman web sebab saya terpaksa membeli sesalinan daripada
@@ -3452,26 +3452,26 @@ penternakan burung walit di kawasan perumahan sebelum garis panduan ini dikeluar
 Jadi saya pohon penjelasan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1640,Datuk Seri Noh bin Haji Omar,"Terima kasih Yang Berhormat. Saya rasa untuk
+Bacaan Kali Yang Kedua dan Ketiga",,■1640,1640,Datuk Seri Noh bin Haji Omar,"Terima kasih Yang Berhormat. Saya rasa untuk
 kita hendak membuat – tadi caj, biasalah Yang Berhormat. Benda ini kita print. Macam kata
 borang, borang hari ini percuma saja. Kita tidak ada kenakan bayaran. Akan tetapi ini
 peraturan yang tebal. Tebal, kita cetak, kita print dan kita jual RM15. Kalau dia hendak beli.
 Kalau dia tidak mahu beli, is no problem. Bukannya paksa. Kalau tidak mahu beli...."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1650,Puan Fong Po Kuan [Batu Gajah],"Apa salah letakkan maklumat ini dalam laman
+Bacaan Kali Yang Kedua dan Ketiga",,■1650,1650,Puan Fong Po Kuan [Batu Gajah],"Apa salah letakkan maklumat ini dalam laman
 web."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1650,Datuk Seri Noh bin Haji Omar,Ya?
+Bacaan Kali Yang Kedua dan Ketiga",,■1650,1650,Datuk Seri Noh bin Haji Omar,Ya?
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1650,Puan Fong Po Kuan [Batu Gajah],"Laman web. Sediakan maklumat ini dalam
+Bacaan Kali Yang Kedua dan Ketiga",,■1650,1650,Puan Fong Po Kuan [Batu Gajah],"Laman web. Sediakan maklumat ini dalam
 laman web agar orang ramai boleh akses kalau mereka berminat dengan penternakan.
 Ada isu berkenaan dengan penternakan. Siarkan maklumat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1650,Datuk Seri Noh bin Haji Omar,"Yang Berhormat, yang ini kita baru lulus sahaja
+Bacaan Kali Yang Kedua dan Ketiga",,■1650,1650,Datuk Seri Noh bin Haji Omar,"Yang Berhormat, yang ini kita baru lulus sahaja
 panduan ini. Kita hendak luluskan panduan ini juga mengambil masa. Kita bincang dengan
 persatuan-persatuan yang terlibat dengan industri burung walit. Kemudian sama jugalah
 kita kata kena bincang dengan Sabah, dengan Sarawak yang ada undang-undang yang
@@ -3494,7 +3494,7 @@ perkara-perkara ini dan semuanya ini kita fikir bahawa rakyat kena dahulukan, de
 rakyat kita kena beri keutamaan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1650,Datuk Seri Panglima Wilfred Mojilip Bumburing [Tuaran],"Yang Berhormat,
+Bacaan Kali Yang Kedua dan Ketiga",,■1650,1650,Datuk Seri Panglima Wilfred Mojilip Bumburing [Tuaran],"Yang Berhormat,
 minta penjelasan sedikit, Tuaran ya. Yang Berhormat, ini berkaitan dengan permit
 perusahaan burung walit. Saya minta penjelasan daripada kementerian. Sekarang ini tadi
 Yang Berhormat mengatakan bahawa yang diberi peranan untuk pengeluaran permit ialah
@@ -3527,7 +3527,7 @@ telah mengambil langkah-langkah untuk memastikan bahawa barangan ikan umpamanya,
 masuk ke negara kita, sashimi contohnya, dan tidak dicemari oleh nuklear ini. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1650,Datuk Seri Noh bin Haji Omar,"Terima kasih Yang Berhormat. Yang pertama ini
+Bacaan Kali Yang Kedua dan Ketiga",,■1650,1650,Datuk Seri Noh bin Haji Omar,"Terima kasih Yang Berhormat. Yang pertama ini
 mengenai burung walit. Burung walit ini adalah kebenaran, sebelum ada garis panduan ini,
 ini cuma garis panduan sahaja. Mungkin satu masa nanti kadang-kadang kita tengok, kalau
 ia boleh memberikan kesan, ia boleh menjadikannya satu akta. Jadi, garis panduan ini
@@ -3548,16 +3548,16 @@ kerjasamalah daripada kerajaan tempatan dan juga pejabat-pejabat daerah. Tadi me
 benih ini, kalau saya tidak silap..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1650,Puan Fong Po Kuan [Batu Gajah],Boleh minta penjelasan sedikit?
+Bacaan Kali Yang Kedua dan Ketiga",,■1650,1650,Puan Fong Po Kuan [Batu Gajah],Boleh minta penjelasan sedikit?
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1650,Datuk Seri Noh bin Haji Omar,"Ya, nanti. Mengenai biji benih ini tadi, ini pun
+Bacaan Kali Yang Kedua dan Ketiga",,■1650,1650,Datuk Seri Noh bin Haji Omar,"Ya, nanti. Mengenai biji benih ini tadi, ini pun
 kalau tidak silap dia masuk dalam tafsiran di bawah akta tumbuhan yang mana sekarang ini
 pun kalau hendak bawa masuk benih ini kita kena buat kajian dahulu sebelum kita
 benarkan untuk digunakan di Malaysia. Ya, Yang Berhormat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1650,Puan Fong Po Kuan [Batu Gajah],"Terima kasih Yang Berhormat Menteri. Saya
+Bacaan Kali Yang Kedua dan Ketiga",,■1650,1650,Puan Fong Po Kuan [Batu Gajah],"Terima kasih Yang Berhormat Menteri. Saya
 hendak tahu siapakah yang memberikan keputusan terakhir dalam pemberian lesen kepada
 penternakan burung walit ini sebab saya difahamkan bahawa lesen diberikan oleh Majlis
 kena daftar dengan Jabatan Veterinar. Akan tetapi apabila timbul bantahan orang ramai,
@@ -3571,7 +3571,7 @@ penternakan ini baru mula tiga-empat bulan sebelum garis panduan ini di adakan d
 bangunan kedai yang baru. Jadi, saya pohon penjelasan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1650,Datuk Seri Noh bin Haji Omar,"Baik. Yang ada kuasa meluluskan sijil ini ialah
+Bacaan Kali Yang Kedua dan Ketiga",,■1650,1650,Datuk Seri Noh bin Haji Omar,"Baik. Yang ada kuasa meluluskan sijil ini ialah
 veterinar, sebelum Jabatan Veterinar hendak bagi sijil ini, ia mesti mendapat surat daripada
 pihak berkuasa. Jadi, ada dua isu. Satu ialah apa berlaku kepada sarang burung walit yang
 dibuat sebelum garis panduan ini keluar. Yang mana sebelum garis panduan ini keluar,
@@ -3590,7 +3590,7 @@ ini seperti mana yang saya nyatakan tadi bahawa memang banyak lagi mereka yang
 pengurusan burung walit ini yang sepatunya berdaftar tetapi masih lagi belum berdaftar."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1700,Datuk Seri Noh bin Haji Omar,"Kita ada bagi tempoh, saya dah lupa tempoh itu. Jadi sebab itu kita adakan garis
+Bacaan Kali Yang Kedua dan Ketiga",,■1700,1700,Datuk Seri Noh bin Haji Omar,"Kita ada bagi tempoh, saya dah lupa tempoh itu. Jadi sebab itu kita adakan garis
 panduan ini untuk kita nak menyelaraskan dulu sebab sebelum ini memang tak ada
 undang-undang ini, suka hati sahaja nak buat. Dalam kebun sayur boleh, kebun rumah
 boleh. Pergi dekat Setiawan pun memang banyak, dia beli rumah bukannya dia nak buat
@@ -3611,79 +3611,79 @@ ada lagi dalam bajet. Kalau ada pun permohonan ini diminta pada tahun 2011. Itu 
 dikenal pasti tapaklah, Yang Berhormat. Saya ingat itu sahajalah yang saya hendak jawab."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1700,Dato' Mahfuz bin Haji Omar [Pokok Sena],Pokok Sena.
+Bacaan Kali Yang Kedua dan Ketiga",,■1700,1700,Dato' Mahfuz bin Haji Omar [Pokok Sena],Pokok Sena.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1700,Datuk Seri Noh bin Haji Omar,"Saya pun peliklah, bila Yang Berhormat Pokok
+Bacaan Kali Yang Kedua dan Ketiga",,■1700,1700,Datuk Seri Noh bin Haji Omar,"Saya pun peliklah, bila Yang Berhormat Pokok
 Sena punya soalan ini selalu depa tertinggal lah."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1700,Datuk Chua Soon Bui [Tawau],Yang Berhormat Menteri.
+Bacaan Kali Yang Kedua dan Ketiga",,■1700,1700,Datuk Chua Soon Bui [Tawau],Yang Berhormat Menteri.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1700,Dato' Mahfuz bin Haji Omar [Pokok Sena],"Tak ada kah jawapan untuk saya di
+Bacaan Kali Yang Kedua dan Ketiga",,■1700,1700,Dato' Mahfuz bin Haji Omar [Pokok Sena],"Tak ada kah jawapan untuk saya di
 situ?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1700,Datuk Seri Noh bin Haji Omar,"Tak ada, jawapan untuk Yang Berhormat Pokok
+Bacaan Kali Yang Kedua dan Ketiga",,■1700,1700,Datuk Seri Noh bin Haji Omar,"Tak ada, jawapan untuk Yang Berhormat Pokok
 Sena tak ada."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1700,Dato' Mahfuz bin Haji Omar [Pokok Sena],"Saya sampai Yang Berhormat nak
+Bacaan Kali Yang Kedua dan Ketiga",,■1700,1700,Dato' Mahfuz bin Haji Omar [Pokok Sena],"Saya sampai Yang Berhormat nak
 terlena pun saya tegur."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1700,Datuk Chua Soon Bui [Tawau],"Yang Berhormat Menteri, minta penjelasan."
+Bacaan Kali Yang Kedua dan Ketiga",,■1700,1700,Datuk Chua Soon Bui [Tawau],"Yang Berhormat Menteri, minta penjelasan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1700,Datuk Seri Noh bin Haji Omar,"Sebab bila dengar Yang Berhormat bercakap tadi
+Bacaan Kali Yang Kedua dan Ketiga",,■1700,1700,Datuk Seri Noh bin Haji Omar,"Sebab bila dengar Yang Berhormat bercakap tadi
 mungkin tak berapa minat, itu yang saya boleh tidur. Pegawai pun tertidur kat luar. Dua kali
 dah bila time Yang Berhormat. Ya, Yang Berhormat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1700,Datuk Chua Soon Bui [Tawau],Tawau.
+Bacaan Kali Yang Kedua dan Ketiga",,■1700,1700,Datuk Chua Soon Bui [Tawau],Tawau.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1700,Datuk Seri Noh bin Haji Omar,Sudah jawab dah tadi Yang Berhormat Tawau.
+Bacaan Kali Yang Kedua dan Ketiga",,■1700,1700,Datuk Seri Noh bin Haji Omar,Sudah jawab dah tadi Yang Berhormat Tawau.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1700,Datuk Chua Soon Bui [Tawau],"Bukan, ada satu perkara yang penting."
+Bacaan Kali Yang Kedua dan Ketiga",,■1700,1700,Datuk Chua Soon Bui [Tawau],"Bukan, ada satu perkara yang penting."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1700,Datuk Seri Noh bin Haji Omar,"Hah, apa itu?"
+Bacaan Kali Yang Kedua dan Ketiga",,■1700,1700,Datuk Seri Noh bin Haji Omar,"Hah, apa itu?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1700,Datuk Chua Soon Bui [Tawau],"Saya nak tahu kenapa Jeti Tawau bukan tempat
+Bacaan Kali Yang Kedua dan Ketiga",,■1700,1700,Datuk Chua Soon Bui [Tawau],"Saya nak tahu kenapa Jeti Tawau bukan tempat
 masuk rasmi melalui laut seperti yang disenaraikan dengan Sandakan, Kudat, Lahad Datu
 dan sebagainya kerana ini adalah satu pintu yang terpenting untuk Tawau."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1700,Datuk Seri Noh bin Haji Omar,"Tak apalah Yang Berhormat, ini kita boleh
+Bacaan Kali Yang Kedua dan Ketiga",,■1700,1700,Datuk Seri Noh bin Haji Omar,"Tak apalah Yang Berhormat, ini kita boleh
 bincang, kita boleh tambah. Itu tidak ada masalah daripada segi peraturan dan sekarang ini
 pun saya kata tadi undang-undang ini tidak akan kita laksanakan di Sabah dan Sarawak.
 Jadi bila semasa kita hendak laksanakan di Sabah dan Sarawak nanti, kemudian kita boleh
 tengok baliklah Yang Berhormat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1700,Datuk Chua Soon Bui [Tawau],"Ya, kerana ini mungkin akan memberi satu impak
+Bacaan Kali Yang Kedua dan Ketiga",,■1700,1700,Datuk Chua Soon Bui [Tawau],"Ya, kerana ini mungkin akan memberi satu impak
 yang besar juga dan dari pihak Indonesia ..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1700,Datuk Seri Noh bin Haji Omar,"Tidak Yang Berhormat, akta ini kita tidak akan
+Bacaan Kali Yang Kedua dan Ketiga",,■1700,1700,Datuk Seri Noh bin Haji Omar,"Tidak Yang Berhormat, akta ini kita tidak akan
 kuatkuasakan di Sabah. Ini hanya yang ada dalam ini. Kita tidak akan kuatkuasakan di
 Sabah dan Sarawak."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1700,Datuk Chua Soon Bui [Tawau],Jadi saya presume ini sudah been left out.
+Bacaan Kali Yang Kedua dan Ketiga",,■1700,1700,Datuk Chua Soon Bui [Tawau],Jadi saya presume ini sudah been left out.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1700,Datuk Seri Noh bin Haji Omar,Sudah apa?
+Bacaan Kali Yang Kedua dan Ketiga",,■1700,1700,Datuk Seri Noh bin Haji Omar,Sudah apa?
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1700,Datuk Chua Soon Bui [Tawau],This is been left out from the senarai sini.
+Bacaan Kali Yang Kedua dan Ketiga",,■1700,1700,Datuk Chua Soon Bui [Tawau],This is been left out from the senarai sini.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1700,Datuk Seri Noh bin Haji Omar,"Tidak, dia bila apabila nanti kalau kita hendak
+Bacaan Kali Yang Kedua dan Ketiga",,■1700,1700,Datuk Seri Noh bin Haji Omar,"Tidak, dia bila apabila nanti kalau kita hendak
 buat atau hendak laksanakan di Sabah dan Sarawak, kita hanya laksanakan sekiranya
 kerajaan negeri bersetuju tapi daripada ucapan-ucapan daripada Sabah dan Sarawak
 sebentar tadi nampaknya semua tidak bersetuju. Jadi kalau semua Sabah dan Sarawak
@@ -3691,10 +3691,10 @@ tidak bersetuju, kita tidak akan laksanakanlah di Sabah dan juga di Sarawak ya Y
 Berhormat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1700,Datuk Chua Soon Bui [Tawau],Okey.
+Bacaan Kali Yang Kedua dan Ketiga",,■1700,1700,Datuk Chua Soon Bui [Tawau],Okey.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1700,Datuk Seri Noh bin Haji Omar,"Tuan Yang di-Pertua, ini Yang Berhormat Pokok
+Bacaan Kali Yang Kedua dan Ketiga",,■1700,1700,Datuk Seri Noh bin Haji Omar,"Tuan Yang di-Pertua, ini Yang Berhormat Pokok
 Sena inilah sudah dua kali dah, dulu tertinggal. Yang Berhormat ada berkaki dengan
 pegawai saya kah? Bila Yang Berhormat cakap, jangan susah-susah catat. Yang ini Menteri
 perlu jawab, off hand. Baik, nasib baik saya ada catat sikit. Yang Berhormat bangkit pasal
@@ -3732,67 +3732,67 @@ yang telah ditetapkan. Jadi kalau daripada segi kualiti dia semua ini apabila MA
 dikuatkuasakan maka ia akan tertakluk di bawah Undang-undang MAQIS."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1700,Tuan Er Teck Hwa [Bakri],[Bangun]
+Bacaan Kali Yang Kedua dan Ketiga",,■1700,1700,Tuan Er Teck Hwa [Bakri],[Bangun]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1700,Datuk Seri Noh bin Haji Omar,"Jadi, kalau saya tidak silap Yang Berhormat,
+Bacaan Kali Yang Kedua dan Ketiga",,■1700,1700,Datuk Seri Noh bin Haji Omar,"Jadi, kalau saya tidak silap Yang Berhormat,
 sayur tidak ada AP, ikan ada. Ikan ada kita bagi market AP dan ikan ini kita sudah beri
 kepada lebih 2000 orang untuk import ikan. Ya, Yang Berhormat? Ada lagi?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1700,Dato' Mahfuz bin Haji Omar [Pokok Sena],"Terima kasih. Ada lagi, ada yang
+Bacaan Kali Yang Kedua dan Ketiga",,■1700,1700,Dato' Mahfuz bin Haji Omar [Pokok Sena],"Terima kasih. Ada lagi, ada yang
 tidak jawab lagi pasal BERNAS, itu saya tanya juga itu. Saya minta jawapan itu. Berkaitan
 tadi kata ada tempoh kan, tempoh untuk kita mengelakkan Ali Baba dan sebagainya seperti
 yang disebutkan tadi tetapi kalau dalam tempoh itu dia pergi jual AP itu dekat orang,
 macam mana hendak elak Ali Baba kah apa? Dalam tempoh itu dia pergi jual."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1700,Tuan Er Teck Hwa [Bakri],"Menteri, boleh jawab sekali?"
+Bacaan Kali Yang Kedua dan Ketiga",,■1700,1700,Tuan Er Teck Hwa [Bakri],"Menteri, boleh jawab sekali?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1700,Datuk Seri Noh bin Haji Omar,"Hah, okey."
+Bacaan Kali Yang Kedua dan Ketiga",,■1700,1700,Datuk Seri Noh bin Haji Omar,"Hah, okey."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1700,Tuan Er Teck Hwa [Bakri],"Minta maaf ya. Tadi Menteri jawab cakap sayuran
+Bacaan Kali Yang Kedua dan Ketiga",,■1700,1700,Tuan Er Teck Hwa [Bakri],"Minta maaf ya. Tadi Menteri jawab cakap sayuran
 tidak payah AP tapi dalam laman web FAMA sana saya tengok kebun sayur kena AP..
 Dalam laman web FAMA saya tengok ada sayur kubis."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1700,Datuk Seri Noh bin Haji Omar,"Sayur ini kecuali kubis yang saya ingat sebab
+Bacaan Kali Yang Kedua dan Ketiga",,■1700,1700,Datuk Seri Noh bin Haji Omar,"Sayur ini kecuali kubis yang saya ingat sebab
 ramai orang jumpa minta AP kubis."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1700,Tuan Er Teck Hwa [Bakri],Memang sayur ini...
+Bacaan Kali Yang Kedua dan Ketiga",,■1700,1700,Tuan Er Teck Hwa [Bakri],Memang sayur ini...
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1700,Datuk Seri Noh bin Haji Omar,"Kubis ini kita buat, fahamlah, betullah kubis perlu
+Bacaan Kali Yang Kedua dan Ketiga",,■1700,1700,Datuk Seri Noh bin Haji Omar,"Kubis ini kita buat, fahamlah, betullah kubis perlu
 ada permit."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1700,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Yang
+Bacaan Kali Yang Kedua dan Ketiga",,■1700,1700,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Yang
 Berhormat, kita habis pukul 5.30 Yang Berhormat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1700,Datuk Seri Noh bin Haji Omar,"Ya. Kubis memang perlu ada permit sebab
+Bacaan Kali Yang Kedua dan Ketiga",,■1700,1700,Datuk Seri Noh bin Haji Omar,"Ya. Kubis memang perlu ada permit sebab
 hendak menjaga kepentingan pengusaha-pengusaha kubis di Cameron Highlands.
 Dia ada kuota, jadi kuota yang kita perlu import tidak boleh lebih daripada kuota
 yang telah ditetapkan supaya apabila kubis dibawa masuk, tidak memberi kesan kepada
 penanam-penanam kubis di dalam negara terutamanya di Cameron Highlands."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1700,Tuan Er Teck Hwa [Bakri],"Macam ini, jika kubis dari China punya baru perlu ada
+Bacaan Kali Yang Kedua dan Ketiga",,■1700,1700,Tuan Er Teck Hwa [Bakri],"Macam ini, jika kubis dari China punya baru perlu ada
 AP, negara lain tidak payah?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1700,Datuk Seri Noh bin Haji Omar,"Tidak, semua kenalah. Semua kubis tak kiralah
+Bacaan Kali Yang Kedua dan Ketiga",,■1700,1700,Datuk Seri Noh bin Haji Omar,"Tidak, semua kenalah. Semua kubis tak kiralah
 daripada Indonesia kah atau daripada China pun memang kena."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1700,Tuan Er Teck Hwa [Bakri],"Okey. Bila kerajaan akan menghapuskan permit
+Bacaan Kali Yang Kedua dan Ketiga",,■1700,1700,Tuan Er Teck Hwa [Bakri],"Okey. Bila kerajaan akan menghapuskan permit
 sebab persatuan sayur-sayuran mengharapkan kerajaan boleh menghapuskan AP ini."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1700,Datuk Seri Noh bin Haji Omar,"Boleh, kalau Yang Berhormat boleh memberitahu
+Bacaan Kali Yang Kedua dan Ketiga",,■1700,1700,Datuk Seri Noh bin Haji Omar,"Boleh, kalau Yang Berhormat boleh memberitahu
 penanam kubis di Cameron Highlands, there’s is no problem tetapi esok kalau penanam-
 penanam sayur kubis Cameron Highlands tunjuk perasaan, Yang Berhormat hendak
 bertanggungjawab? Macam baru-baru ini dalam dua tahun lepas bila berlaku kubis jatuh
@@ -3804,50 +3804,50 @@ Jadi mungkin satu hari nanti apabila kita telah lihat sasaran kita sudah tercapa
 perlu beri kuotalah. Jadi... Apa lagi?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Tuan Er Teck Hwa [Bakri],"Yang Berhormat Menteri saya tidak faham lagi. Ia
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Tuan Er Teck Hwa [Bakri],"Yang Berhormat Menteri saya tidak faham lagi. Ia
 seperti kopi pun perlu APkah?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Datuk Seri Noh bin Haji Omar,Ya?
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Datuk Seri Noh bin Haji Omar,Ya?
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Tuan Er Teck Hwa [Bakri],"Kopi, kopi."
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Tuan Er Teck Hwa [Bakri],"Kopi, kopi."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Datuk Seri Noh bin Haji Omar,"Kopi ini di bawah kementerian lain. Ia bukan di
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Datuk Seri Noh bin Haji Omar,"Kopi ini di bawah kementerian lain. Ia bukan di
 kementerian saya."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Tuan Er Teck Hwa [Bakri],Akan tetapi di laman web FAMA cerita tentang ia ada.
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Tuan Er Teck Hwa [Bakri],Akan tetapi di laman web FAMA cerita tentang ia ada.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Datuk Seri Noh bin Haji Omar,Oh! Ya. Ia soal kopi .
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Datuk Seri Noh bin Haji Omar,Oh! Ya. Ia soal kopi .
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Tuan Er Teck Hwa [Bakri],Ya.
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Tuan Er Teck Hwa [Bakri],Ya.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Datuk Seri Noh bin Haji Omar,"Kopi pun perlu sebab kita ada tanam kopi yang
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Datuk Seri Noh bin Haji Omar,"Kopi pun perlu sebab kita ada tanam kopi yang
 mana kita ada jaga kepentingan..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Timbalan Yang di-Pertua [Datuk Dr. Haji Wan Junaidi bin Tuanku Jaafar],Yang Berhormat.
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Timbalan Yang di-Pertua [Datuk Dr. Haji Wan Junaidi bin Tuanku Jaafar],Yang Berhormat.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Datuk Seri Noh bin Haji Omar,Kopi sebentar tadi.
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Datuk Seri Noh bin Haji Omar,Kopi sebentar tadi.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Timbalan Yang di-Pertua [Datuk Dr. Haji Wan Junaidi bin Tuanku Jaafar],"Yang Berhormat, saya cadangkan mintalah jawapan daripada Yang Berhormat Menteri
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Timbalan Yang di-Pertua [Datuk Dr. Haji Wan Junaidi bin Tuanku Jaafar],"Yang Berhormat, saya cadangkan mintalah jawapan daripada Yang Berhormat Menteri
 bersurat supaya tanya apakah benda yang kita perlu AP, pengeksportan sayur, dan
 makanannya."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Tuan Er Teck Hwa [Bakri],"Ini kerana ada persatuan-persatuan tanya kita
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Tuan Er Teck Hwa [Bakri],"Ini kerana ada persatuan-persatuan tanya kita
 mengapakah perlu AP? Barang ini biasa sahaja dan mana-mana pun boleh dapat.
 Mengapakah kerajaan tetapkan perlu ada AP apabila dihapuskan?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Datuk Seri Noh bin Haji Omar,"Apa juga Yang Berhormat, AP ini tujuannya ialah
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Datuk Seri Noh bin Haji Omar,"Apa juga Yang Berhormat, AP ini tujuannya ialah
 untuk kita menjaga kepentingan peladang-peladang, petani, dan nelayan di dalam negara
 kita. Oleh sebab itu kita perlu ada kuota. Kalau kita lihat masih lagi tidak cukup, kategori
 beri tidak ada masalah. Kalau tiga bulan sahaja Yang Berhormat, Yang Berhormat Pokok
@@ -3861,7 +3861,7 @@ Setiap hari Selasa iaitu esok saya sengaja minta naikkan soalan Yang Berhormat n
 enam kalau tidak silap. Jadi, tunggu esoklah kita jawab soalan benar. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Timbalan Yang di-Pertua [Datuk Dr. Haji Wan Junaidi bin Tuanku Jaafar],"Terima kasih Yang Berhormat. Ahli-Ahli Yang Berhormat sekarang saya kemukakan
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Timbalan Yang di-Pertua [Datuk Dr. Haji Wan Junaidi bin Tuanku Jaafar],"Terima kasih Yang Berhormat. Ahli-Ahli Yang Berhormat sekarang saya kemukakan
 masalah kepada Majlis bagi diputuskan. Masalahnya ialah bahawa rang undang-undang ini
 dibacakan kali yang kedua sekarang.
 Masalah dikemuka bagi diputuskan, dan disetujukan.
@@ -3873,7 +3873,7 @@ Majlis bersidang dalam Jawatankuasa
 Fasal-fasal dikemukakan kepada Jawatankuasa."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 50 –,1713,Dr. Mohd. Hatta bin Md. Ramli [Kuala Krai],"Terima kasih Tuan Pengerusi.
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 50 –,5.13 ptg.,1713,Dr. Mohd. Hatta bin Md. Ramli [Kuala Krai],"Terima kasih Tuan Pengerusi.
 Saya ingin membangkitkan beberapa perkara yang mungkin tidaklah isu besar tetapi harus
 mendapat perhatian. Pertamanya mengenai tafsiran bagi karkas. Saya mungkin
 menganggap karkas ini suatu yang telah diterima dalam bahasa kita daripada perkataan
@@ -3916,11 +3916,11 @@ besar diberikan sehingga boleh menjejaskan keadilan di satu pihak yang lain? Tua
 Pengerusi, terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 50 –,1713,Tuan Pengerusi [Datuk Dr. Haji Wan Junaidi bin Tuanku Jaafar],"Ya, Yang
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 50 –,5.13 ptg.,1713,Tuan Pengerusi [Datuk Dr. Haji Wan Junaidi bin Tuanku Jaafar],"Ya, Yang
 Berhormat Kuala Kedah."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 50 –,1717,Tuan Haji Ahmad Kasim [Kuala Kedah],"Terima kasih Tuan Pengerusi. Saya
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 50 –,5.17 ptg.,1717,Tuan Haji Ahmad Kasim [Kuala Kedah],"Terima kasih Tuan Pengerusi. Saya
 ingin membangkitkan di bawah Perkara 2 berkaitan dengan soal akta yang dikecualikan di
 bawah Perkara 2(2). Sekiranya terdapat apa-apa ketidakselarasan antara peruntukan akta
 ini dengan undang-undang yang bertulis yang berkaitan kecuali Akta Makanan 1983 [Akta
@@ -3944,7 +3944,7 @@ Untuk makluman Yang Berhormat Menteri, industri ataupun perniagaan dalam bidang
 pertanian ini sangat berkait rapat dengan tempoh masa."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 50 –,1720,Tuan Haji Ahmad Kasim [Kuala Kedah],"Oleh sebab itu, sekiranya sesuatu bahan tanaman ataupun penternakan dalam
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 50 –,■1720,1720,Tuan Haji Ahmad Kasim [Kuala Kedah],"Oleh sebab itu, sekiranya sesuatu bahan tanaman ataupun penternakan dalam
 bidang pertanian khususnya, masa itu adalah sebahagian daripada perkara yang sangat
 penting. Dia bukan macam industri yang tidak rosak sebab lagi tempoh masa lebih lama,
 bahan itu akan makin rendah kosnya. Seperti kita beli ikanlah. Kalau makin lama tempoh
@@ -3957,18 +3957,18 @@ memanfaatkan bahannya ataupun bagaimana pihak kerajaan hendak menyelesaikan di
 bawah perkara kompaun kesalahan ini? Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 50 –,1720,Tuan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ya, Yang
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 50 –,■1720,1720,Tuan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ya, Yang
 Berhormat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 50 –,1720,Dr. Che Rosli Che Mat [Hulu Langat],Yang Berhormat Hulu Langat sedikit.
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 50 –,■1720,1720,Dr. Che Rosli Che Mat [Hulu Langat],Yang Berhormat Hulu Langat sedikit.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 50 –,1720,Tuan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Yang Berhormat
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 50 –,■1720,1720,Tuan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Yang Berhormat
 Hulu Langat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 50 –,1720,Dr. Che Rosli Che Mat [Hulu Langat],"Tuan Pengerusi, saya ingin mendapat
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 50 –,■1720,1720,Dr. Che Rosli Che Mat [Hulu Langat],"Tuan Pengerusi, saya ingin mendapat
 penjelasan Perkara 19(1), (3), (4) dan 21. Saya difahamkan akta ini merangkumi
 perkhidmatan kuarantin, tumbuhan, haiwan dan seterusnya mikroorganisma dan
 sebagainyalah. Akan tetapi apabila saya baca dari segi penggeledahan dan penyitaan
@@ -3979,11 +3979,11 @@ peralatan, tumbuhan, binatang, karkas dan sebagainya. Begitulah seterusnya (b), 
 19(4) dan juga dalam 21. Jadi saya minta penjelasan. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 50 –,1720,Tuan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ya Yang
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 50 –,■1720,1720,Tuan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ya Yang
 Berhormat Menteri."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 50 –,1720,Tuan Er Teck Hwa [Bakri],"Tuan Pengerusi boleh sambung sedikit sahaja? Saya
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 50 –,■1720,1720,Tuan Er Teck Hwa [Bakri],"Tuan Pengerusi boleh sambung sedikit sahaja? Saya
 hendak tanya Yang Berhormat Menteri tentang kuasa penangkapan. Perkara 18(2) –
 seseorang pegawai penguat kuasa yang membuat penangkapan di bawah subseksyen (1)
 hendaklah tanpa kelengahan yang tidak perlu membawa orang yang ditangkap itu ke balai
@@ -3992,11 +3992,11 @@ Adakah ini bermakna, jika tiada balai polis yang berdekatan, pihak pegawai kemen
 boleh menahan sesuka hati? Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 50 –,1720,Tuan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Sila Yang
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 50 –,■1720,1720,Tuan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Sila Yang
 Berhormat Menteri."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 50 –,1720,Datuk Seri Noh bin Haji Omar,"Terima kasih kepada Ahli-ahli Yang Berhormat
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 50 –,■1720,1720,Datuk Seri Noh bin Haji Omar,"Terima kasih kepada Ahli-ahli Yang Berhormat
 yang telah pun memberikan pandangan. Ini daripada mana tadi? Yang Berhormat Kuala
 Krai. Ini mengenai bangkai.
 Ertinya bangkai binatang. Bangkai ini kita hendak panggil apa kalau istilah yang
@@ -4041,14 +4041,14 @@ kata penggeledahan dan juga penyitaan dengan waran. So, saya tidak faham apa Yan
 Berhormat..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 50 –,1720,Dr. Che Rosli Che Mat [Hulu Langat],"Maksudnya dalam perbincangan kita,
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 50 –,■1720,1720,Dr. Che Rosli Che Mat [Hulu Langat],"Maksudnya dalam perbincangan kita,
 perkhidmatan kuarantin ini hanya tumbuhan, haiwan, karkas dan sebagainya. Akan tetapi
 apabila penyataan itu ia termasuk buku, komputer, peralatan semuanya itu. Itu yang saya
 tidak faham. Adakah kemungkinan silap diambil daripada akta lain masuk ke situ. Kalau
 tengok 19(1), 19(1)(a), (b),(c), kemudiannya 19(3), (4) dan 21. Itu yang sama maksud."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 50 –,1720,Datuk Seri Noh bin Haji Omar,"Okey, yang ini ialah prosedur dari segi
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 50 –,■1720,1720,Datuk Seri Noh bin Haji Omar,"Okey, yang ini ialah prosedur dari segi
 penggeledahan. Jadi dia punya rawatan ini dia bagi jelaslah. Ini sebab dalam kuarantin,
 walaupun ia kuarantin tetapi dalam kita hendak menahan seseorang itu, dia kena ada
 dokumen-dokumen. Jadi oleh sebab itu kalau ada dokumen-dokumen dan sijil ataupun
@@ -4078,7 +4078,7 @@ mengapa dia kena tahan dan sebagainya itu let the court decide lah.
 Okey, terima kasih Yang Berhormat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERKHIDMATAN KUARANTIN
 DAN PEMERIKSAAN MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 50 –,1730,Datuk Seri Noh bin Haji Omar,"**Fasal-fasal 1 hingga 50** diperintahkan jadi sebahagian daripada rang undang-
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 50 –,■1730,1730,Datuk Seri Noh bin Haji Omar,"**Fasal-fasal 1 hingga 50** diperintahkan jadi sebahagian daripada rang undang-
 undang.
 **Jadual** diperintah jadi sebahagian daripada rang undang-undang.
 Rang Undang-undang dimaklumkan kepada Majlis sekarang.
@@ -4086,15 +4086,15 @@ Majlis Mesyuarat bersidang semula.
 Rang undang-undang dilaporkan dengan tiada pindaan; dibacakan kali yang ketiga
 dan diluluskan."
 USUL,"MENANGGUHKAN MESYUARAT DI BAWAH
-PERATURAN MESYUARAT 16(3)",,1732,Timbalan Menteri Kewangan II [Dato' Dr. Awang Adek Hussin],"Tuan Yang di-
+PERATURAN MESYUARAT 16(3)",,5.32 ptg.,1732,Timbalan Menteri Kewangan II [Dato' Dr. Awang Adek Hussin],"Tuan Yang di-
 Pertua, saya mohon mencadangkan:
 “Bahawa mengikut Peraturan Mesyuarat 16(3), Mesyuarat ini
 ditangguhkan sekarang.”"
 USUL,"MENANGGUHKAN MESYUARAT DI BAWAH
-PERATURAN MESYUARAT 16(3)",,1732,Timbalan Menteri Dalam Negeri I [Datuk Wira Abu Seman Yusop],"Tuan Yang
+PERATURAN MESYUARAT 16(3)",,5.32 ptg.,1732,Timbalan Menteri Dalam Negeri I [Datuk Wira Abu Seman Yusop],"Tuan Yang
 di-Pertua, saya mohon menyokong."
 USUL,"UCAPAN-UCAPAN PENANGGUHAN
-Rumah Untuk Keluarga Berpendapatan Bawah RM3,000 di Bandar",,1740,Dr. M. Jeyakumar Devaraj [Sungai Siput],"Terima kasih. Artikel di muka surat
+Rumah Untuk Keluarga Berpendapatan Bawah RM3,000 di Bandar",,5.40 ptg.,1740,Dr. M. Jeyakumar Devaraj [Sungai Siput],"Terima kasih. Artikel di muka surat
 B4 Starbiz bertarikh 17 Mei 2011 bertajuk, “No takers for 4,516 houses under ‘My First
 Home Scheme” menyatakan bahawa respons rakyat pada tawaran pinjaman 100 peratus
 kepada pekerja sektor swasta dengan gaji di bawah RM3,000 adalah begitu lemah.
@@ -4130,10 +4130,10 @@ mempunyai kemudahan asas seperti rumah yang selesa supaya mereka dapat
 melengkapkan anak-anak mereka untuk menyumbang kepada ekonomi berpendapatan
 tinggi yang kita inginkan. Terima kasih."
 USUL,"UCAPAN-UCAPAN PENANGGUHAN
-Rumah Untuk Keluarga Berpendapatan Bawah RM3,000 di Bandar",,1740,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ya, sila
+Rumah Untuk Keluarga Berpendapatan Bawah RM3,000 di Bandar",,5.40 ptg.,1740,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ya, sila
 Yang Berhormat Timbalan Menteri."
 USUL,"UCAPAN-UCAPAN PENANGGUHAN
-Rumah Untuk Keluarga Berpendapatan Bawah RM3,000 di Bandar",,1737,Timbalan Menteri Kewangan II [Dato' Dr. Awang Adek Hussin],"Tuan Yang di-
+Rumah Untuk Keluarga Berpendapatan Bawah RM3,000 di Bandar",,5.37 ptg.,1737,Timbalan Menteri Kewangan II [Dato' Dr. Awang Adek Hussin],"Tuan Yang di-
 Pertua, Skim Rumah Pertama Ku yang telah dilancarkan pada 8 Mac 2011 oleh Yang Amat
 Berhormat Perdana Menteri adalah bertujuan membantu golongan muda yang baru bekerja
 dan berpendapatan tidak lebih daripada RM3,000 sebulan untuk memiliki rumah pertama
@@ -4168,7 +4168,7 @@ Memandangkan golongan sasaran adalah golongan muda yang mempunyai tempoh
 bekerja yang masih panjang, pembayaran balik tidak seharusnya menimbulkan masalah
 kepada mereka."
 USUL,"UCAPAN-UCAPAN PENANGGUHAN
-Rumah Untuk Keluarga Berpendapatan Bawah RM3,000 di Bandar",,1740,Timbalan Menteri Kewangan II [Dato' Dr. Awang Adek Hussin],"Apa pun dalam jangka masa panjang pemilikan rumah adalah lebih baik daripada
+Rumah Untuk Keluarga Berpendapatan Bawah RM3,000 di Bandar",,■1740,1740,Timbalan Menteri Kewangan II [Dato' Dr. Awang Adek Hussin],"Apa pun dalam jangka masa panjang pemilikan rumah adalah lebih baik daripada
 penyewaan rumah. Bagi membantu rakyat terutamanya golongan muda yang menghadapi
 masalah kewangan, kerajaan telah memperkenalkan Program Pengurusan Wang Ringgit
 Secara Berhemah. Selain itu, Agensi Kaunseling dan Pengurusan Kredit (AKPK) juga
@@ -4176,7 +4176,7 @@ menyediakan perkhidmatan nasihat dan bantuan berhubung dengan pengurusan kredit
 kepada peminjam individu dan bakal peminjam. Sekian, terima kasih.
 **Ancaman “Menang Jadi Arang, Kalah Jadi Abu”**"
 USUL,"UCAPAN-UCAPAN PENANGGUHAN
-Rumah Untuk Keluarga Berpendapatan Bawah RM3,000 di Bandar",,1741,Tuan Jeff Ooi Chuan Aun [Jelutong],"Tuan Yang di-Pertua, ucapan
+Rumah Untuk Keluarga Berpendapatan Bawah RM3,000 di Bandar",,5.41 ptg.,1741,Tuan Jeff Ooi Chuan Aun [Jelutong],"Tuan Yang di-Pertua, ucapan
 penangguhan saya bertajuk Ancaman “Menang Jadi Arang, Kalah Jadi Abu”. Sudahkah
 Malaysia berjaya berhijrah ke satu era yang sungguh liberal di mana rakyat berbilang
 bangsanya kini kebal daripada sentimen perkauman seperti yang sering diapi-apikan oleh
@@ -4219,10 +4219,10 @@ speech-seditious-or-normal.html. Seluruh anak Malaysia khuatir jika jihad tercet
 Perang Salib berjangkit sudah pasti yang menang jadi arang, yang kalah jadi abu.
 Beginikah nasib Malaysia."
 USUL,"UCAPAN-UCAPAN PENANGGUHAN
-Rumah Untuk Keluarga Berpendapatan Bawah RM3,000 di Bandar",,1741,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ya,
+Rumah Untuk Keluarga Berpendapatan Bawah RM3,000 di Bandar",,5.41 ptg.,1741,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ya,
 Yang Berhormat."
 USUL,"UCAPAN-UCAPAN PENANGGUHAN
-Rumah Untuk Keluarga Berpendapatan Bawah RM3,000 di Bandar",,1741,Timbalan Menteri Dalam Negeri I [Datuk Wira Abu Seman bin Haji Yusop],"Tuan Yang di-Pertua, saya mengucapkan terima kasih kepada Yang Berhormat Jelutong di
+Rumah Untuk Keluarga Berpendapatan Bawah RM3,000 di Bandar",,5.41 ptg.,1741,Timbalan Menteri Dalam Negeri I [Datuk Wira Abu Seman bin Haji Yusop],"Tuan Yang di-Pertua, saya mengucapkan terima kasih kepada Yang Berhormat Jelutong di
 atas ucapan penangguhan yang telah dibangkitkan tersebut.
 Tuan Yang di-Pertua, untuk makluman Ahli Yang Berhormat dan Dewan yang
 mulia ini kerajaan amat serius dan akan mengambil tindakan tegas mengikut peruntukan
@@ -4262,7 +4262,7 @@ Yang Berhormat hendaklah sentiasa berhati-hati di dalam mengeluarkan sesuatu
 pernyataan terutama sekali yang menyentuh perkara-perkara sensitif yang boleh
 menggugat keselamatan negara dan juga ketenteraman awam. Sekian, terima kasih."
 USUL,"UCAPAN-UCAPAN PENANGGUHAN
-Rumah Untuk Keluarga Berpendapatan Bawah RM3,000 di Bandar",,1741,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Terima
+Rumah Untuk Keluarga Berpendapatan Bawah RM3,000 di Bandar",,5.41 ptg.,1741,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Terima
 kasih. Ahli-ahli Yang Berhormat Mesyuarat Dewan telah ditangguhkan dan akan bersidang
 semula pada jam 10 pagi hari Selasa, 14 Jun 2011.
 **Dewan ditangguhkan pada pukul 5.50 petang.**"

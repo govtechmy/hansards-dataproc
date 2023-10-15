@@ -1,9 +1,9 @@
-level_1,level_2,level_3,timestamp,author,speech
-,,,1000,,[Tuan Yang di-Pertua **mempengerusikan Mesyuarat]**
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1000,Datuk Haji Mohamad bin Haji Aziz [Sri Gading],"minta Menteri Pengajian Tinggi
+level_1,level_2,level_3,raw_timestamp,timestamp,author,speech
+,,,10.00 pagi,1000,,[Tuan Yang di-Pertua **mempengerusikan Mesyuarat]**
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,10.00 pagi,1000,Datuk Haji Mohamad bin Haji Aziz [Sri Gading],"minta Menteri Pengajian Tinggi
 menyatakan, jumlah pecahan pelajar mengikut kaum yang telah berjaya menukar pinjaman
 PTPTN kepada biasiswa sejak skim ini diperkenalkan sehingga tahun 2012."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1000,Timbalan Menteri Pengajian Tinggi I [Datuk Dr. Hou Kok Chung],"Tuan Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,10.00 pagi,1000,Timbalan Menteri Pengajian Tinggi I [Datuk Dr. Hou Kok Chung],"Tuan Yang
 di-Pertua, untuk makluman Ahli Yang Berhormat, dasar pinjaman boleh ubah ataupun
 pengecualian bayaran balik telah diperkenalkan mulai tahun 2003. Dasar tersebut adalah
 terpakai kepada semua pelajar IPTA mahupun IPTS peminjam PTPTN yang mendapat
@@ -20,7 +20,7 @@ peratus pelajar Melayu dengan amaun sebanyak RM58,068,697; seramai 506 orang ata
 3.8 peratus pelajar India dengan amaun sebanyak RM15,745,000; dan selebihnya seramai
 159 orang lagi atau 1.2 peratus daripada lain-lain kaum dengan amaun sebanyak
 ‘RM3,810’. Sekian."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1000,Datuk Haji Mohamad bin Haji Aziz [Sri Gading],"Terima kasih Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,10.00 pagi,1000,Datuk Haji Mohamad bin Haji Aziz [Sri Gading],"Terima kasih Tuan Yang di-
 Pertua. Terima kasih Yang Berhormat Timbalan Menteri. Alhamdulillah Tuan Yang di-
 Pertua, syukur kita rakyat Malaysia kerana dianugerahkan Kerajaan Barisan Nasional yang
 mementingkan kesejahteraan rakyat. Hebat Barisan Nasional. Pendidikan dalam negara ini
@@ -36,8 +36,8 @@ Yang Berhormat Ipoh Barat kah, ini Yang Berhormat Bukit Bintang kena dengar
 baik-baik termasuk rakan saya Yang Berhormat Batu Gajah. Dengar baik-baik ya ini Yang
 Berhormat Kota Melaka. Barisan Nasional memang cukup baiklah. Itu kena akuilah, Yang
 Berhormat Ipoh Barat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1000,Tuan M. Kulasegaran [Ipoh Barat],"Soalan, soalan, soalan?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1000,Datuk Haji Mohamad bin Haji Aziz [Sri Gading],"Soalan akan sampai... [Ketawa]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,10.00 pagi,1000,Tuan M. Kulasegaran [Ipoh Barat],"Soalan, soalan, soalan?"
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,10.00 pagi,1000,Datuk Haji Mohamad bin Haji Aziz [Sri Gading],"Soalan akan sampai... [Ketawa]
 Perdana Menteri macam Yang Berhormat Timbalan Menteri kata tadi, memang ada dasar
 menukar pinjaman kepada biasiswa dan saya bersyukur semua rakyat dilayan dengan
 sama. Sama ada dia Melayu, sama ada dia Cina, sama ada dia India kalau dia punya
@@ -51,10 +51,10 @@ sekali gus. Sejauh mana sambutannya Yang Berhormat Timbalan Menteri ya, dan bera
 jumlah yang terlibat? Bagaimana pula mereka dulu meminjam dan membayar pinjaman
 PTPTN, selepas itu mereka sebenarnya dipindahkan menjadi biasiswa kerana mendapat
 first-class honor?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Datuk Haji Mohamad bin Haji Aziz [Sri Gading],"Dia dapat first-class honor, dia layak untuk menukar daripada pinjaman kepada
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1010,1010,Datuk Haji Mohamad bin Haji Aziz [Sri Gading],"Dia dapat first-class honor, dia layak untuk menukar daripada pinjaman kepada
 biasiswa. Apakah mereka ini, wang mereka akan dikembalikan semula oleh PTPTN kerana
 mereka begitu cemerlang dalam pelajaran mereka? Terima kasih Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Datuk Dr. Hou Kok Chung,"Tuan Yang di-Pertua, untuk makluman Ahli Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1010,1010,Datuk Dr. Hou Kok Chung,"Tuan Yang di-Pertua, untuk makluman Ahli Yang
 Berhormat, pelajar first class honors yang telah membuat bayaran balik kepada PTPTN
 akan dipulangkan balik sepenuhnya apabila permohonan mereka diluluskan. Seramai 628
 orang peminjam telah dibayar balik yang melibatkan RM2.4 juta.
@@ -77,17 +77,17 @@ kuasa mulai 1 Oktober 2012 sehingga 30 Oktober 2012, seramai 2,962 orang peminja
 telah tampil untuk menjelaskan sepenuhnya pinjaman dengan amaun berjumlah RM15 juta.
 Daripada jumlah tersebut, 191 peminjam adalah dalam kategori senarai hitam dengan
 bayaran balik berjumlah RM1.2 juta. Sekian."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Datuk Haji Mohamad bin Haji Aziz [Sri Gading],Terima kasih Menteri.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Tuan M. Kulasegaran [Ipoh Barat],"Terima kasih Tuan Yang di-Pertua. Soalan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1010,1010,Datuk Haji Mohamad bin Haji Aziz [Sri Gading],Terima kasih Menteri.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1010,1010,Tuan M. Kulasegaran [Ipoh Barat],"Terima kasih Tuan Yang di-Pertua. Soalan
 tambahan. Tuan Yang di-Pertua, bila kita kata kita mendapat macam-macam manfaat
 daripada kerajaan, anak-anak kita mendapat biasiswa dan hampir-hampir dapat percuma di
 negara ini. Ini adalah kewajipan satu-satu kerajaan yang baik. Kewajipan, kerana they are
 private enterprise… [Disampuk] Itu adalah kewajipan sesuatu kerajaan. Pada ketika ini,
 diskaun-diskaun yang diberi dan bermacam-macam insentif diberi bukan kerana kerelaan
 kerajaan..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Datuk Haji Mohamad bin Haji Aziz [Sri Gading],"Kalau kewajipan, kenapa
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1010,1010,Datuk Haji Mohamad bin Haji Aziz [Sri Gading],"Kalau kewajipan, kenapa
 negara jiran kena bayar duit?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Tuan M. Kulasegaran [Ipoh Barat],"Kerana situasi di mana cadangan Pakatan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1010,1010,Tuan M. Kulasegaran [Ipoh Barat],"Kerana situasi di mana cadangan Pakatan
 Rakyat untuk menghapuskan atau memansuhkan sistem PTPTN tersebut. Maka mereka
 datang dengan alternatif ini. Akan tetapi tidak apalah. Kalau hendak copycat tidak jadi
 masalah... [Disampuk] Hanya dengan setakat menolong masyarakat. Jangan lupa Tuan
@@ -104,7 +104,7 @@ satu yang praktikal.
 Maka, adakah kerajaan sudi meminta maaf kerana apa yang mereka telah buat...
 [Ketawa] Mengimplementasikan cadangan kita yang praktikal, yang baik dan bagus untuk
 semua. Win-win situation. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Datuk Dr. Hou Kok Chung,"Tuan Yang di-Pertua, terima kasih Yang Berhormat.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1010,1010,Datuk Dr. Hou Kok Chung,"Tuan Yang di-Pertua, terima kasih Yang Berhormat.
 Pendidikan percuma bukan satu kewajipan, tetapi ialah satu rancangan. Ini menunjukkan
 bahawa Kerajaan Barisan Nasional memang merupakan kerajaan yang bertanggungjawab.
 Jadi yang paling penting, kita mesti ada satu rancangan untuk masa panjang. Sekarang,
@@ -118,11 +118,11 @@ satu rancangan yang baik. Kita mesti ada satu rancangan yang panjang supaya pela
 ataupun penduduk kita dapat menikmati semua yang sedia ada di dalam sesebuah negara.
 Saya rasa itu yang paling penting. Bertanggungjawab, ikhlas, konsisten- saya rasa ini
 semua yang penting untuk sebuah kerajaan untuk menjalankan tugasnya. Sekian."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1010,Tuan Fong Kui Lun [Bukit Bintang],"minta Menteri Kewangan menyatakan,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1010,1010,Tuan Fong Kui Lun [Bukit Bintang],"minta Menteri Kewangan menyatakan,
 bilangan pembayar cukai mengikut kategori pendapatan dan pekerjaan, jumlah hasil dan
 bilangan pembayar dan kategori mereka yang gagal membayar cukai pendapatan
 sepanjang lima tahun."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1010,Timbalan Menteri Kewangan II [Dato' Donald Lim Siang Chai],"Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1010,1010,Timbalan Menteri Kewangan II [Dato' Donald Lim Siang Chai],"Tuan Yang di-
 Pertua, untuk makluman Yang Berhormat, Borang Nyata Cukai Pendapatan Individu yang
 disediakan oleh Lembaga Hasil Dalam Negeri (LHDN) bagi maksud pelaporan dan
 pembayaran cukai pendapatan, tidak memasukkan maklumat pekerjaan mana-mana
@@ -142,13 +142,13 @@ Ini bermakna, seorang individu itu dikenakan cukai hanya selepas pendapatan
 dijumlahkan dan kemudian ditolak pelepasan cukai dan rebet cukai yang layak. Untuk
 makluman Yang Berhormat secara amnya jumlah hasil cukai pendapatan individu dan
 bilangan pembayar cukai sepanjang tempoh lima tahun iaitu adalah seperti berikut, bagi:"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Timbalan Menteri Kewangan II [Dato' Donald Lim Siang Chai],"(i) tahun 2007, anggarannya lebih kurang 760,000;
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■ 1020,1020,Timbalan Menteri Kewangan II [Dato' Donald Lim Siang Chai],"(i) tahun 2007, anggarannya lebih kurang 760,000;
 (ii) tahun 2008, lebih kurang 1.1 juta orang;
 (iii) tahun 2009, lebih kurang 730,000 orang;
 (iv) tahun 2010, lebih kurang 640,000 orang, dan;
 (v) tahun 2011, lebih kurang 840,000 orang.
 Sekian."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Tuan Fong Kui Lun [Bukit Bintang],"Terima kasih Tuan Yang di-Pertua, soalan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■ 1020,1020,Tuan Fong Kui Lun [Bukit Bintang],"Terima kasih Tuan Yang di-Pertua, soalan
 tambahan. Memandangkan hukuman dan penalti yang dibenarkan di bawah Bahagian VIII,
 Akta Cukai Pendapatan Tahun 1967, berbagai-bagai dan tinggi serta mendapat bantahan
 pembayar-pembayar cukai pendapatan. Adakah kerajaan sedia menimbang untuk
@@ -184,7 +184,7 @@ Malaysia hanya 1.78 juta orang bayar cukai dan amaun ini RM20 bilion. Kalau band
 dengan jumlah revenue untuk negara kita iaitu RM185 bilion, memang hanya 12 peratus
 sahaja. Oleh itu kita harap dengan ada minimum wages lebih ramai rakyat Malaysia boleh
 bayar cukai. Kita harap ini adalah apa yang kita hendak tengok. Sekian."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Datuk Dr. Marcus Mojigoh [Putatan],"Terima kasih Tuan Yang di-Pertua. Soalan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■ 1020,1020,Datuk Dr. Marcus Mojigoh [Putatan],"Terima kasih Tuan Yang di-Pertua. Soalan
 saya sebaliknya yang rakyat hendak tanya Tuan Yang di-Pertua, ialah kerajaan Lembaga
 Hasil Dalam Negeri memungut cukai, minta bayar daripada pembayar cukai tetapi ada
 cukai-cukai yang terlebih bayar kepada kerajaan. Berapakah jumlah yang masih belum
@@ -206,16 +206,16 @@ menyebabkan kelewatan di dalam proses bayaran balik kepada pembayar iaitu:
 (vi) BNCP dikemukakan pada tarikh akhir.
 Untuk makluman Yang Berhormat setelah kita ada e-Filling ini memang tuntutan
 membayar balik ini kita 80 peratus kita selesai dalam tempoh 30 hari, dan balance 90 hari."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1020,Datuk Bung Moktar bin Radin [Kinabatangan],"minta Menteri Kemajuan Luar
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■ 1020,1020,Datuk Bung Moktar bin Radin [Kinabatangan],"minta Menteri Kemajuan Luar
 Bandar dan Wilayah menyatakan tentang, status permohonan jalan raya di Kinabatangan
 seperti Jalanraya Kampung Sinar Jaya, Jalanraya Kampung Keramuak, Jalanraya
 Kampung Kuamut dan Jalanraya Kampung Balat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1020,Timbalan Menteri Kemajuan Luar Bandar dan Wilayah II [Datuk Joseph Entulu anak Belaun],"Tuan Yang di-Pertua, terima kasih Yang Berhormat dari
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■ 1020,1020,Timbalan Menteri Kemajuan Luar Bandar dan Wilayah II [Datuk Joseph Entulu anak Belaun],"Tuan Yang di-Pertua, terima kasih Yang Berhormat dari
 Kinabatangan. Untuk makluman Yang Berhormat, kementerian telah menyenaraikan projek
 tersebut di bawah program jalan luar bandar RMKe-10 dan pelaksanaannya tertakluk
 kepada kelulusan Unit Perancangan Ekonomi, Jabatan Perdana Menteri. Sekian, terima
 kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1020,Datuk Bung Moktar bin Radin [Kinabatangan],"Tuan Yang di-Pertua, mula-mula
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■ 1020,1020,Datuk Bung Moktar bin Radin [Kinabatangan],"Tuan Yang di-Pertua, mula-mula
 jawapan tadi sedap saya dengar tetapi apabila tertakluk itu saya rasa ada pertikaian yang
 hendak saya kalau boleh dirungkaikan. Bolehkah kementerian meyakinkan pihak EPU
 bahawa jalan-jalan ini sudah menelan masa terlalu panjang. Perjalanannya berliku-liku,
@@ -225,7 +225,7 @@ jalan ini terlampau- apabila hujan putuslah hubungan antara masyarakat dengan
 masyarakat. Sedangkan pembangkang datang sana dia kata Barisan Nasional sudah
 memerintah lebih 50 tahun, jalan ini pun tidak boleh. Bagi kita menang jalan ini kita buat.
 Jadi saya mintalah kalau boleh yakinkan saya untuk meyakinkan pengundi-pengundi saya."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1020,Datuk Joseph Entulu anak Belaun,"Tuan Yang di-Pertua, kalau mengikut
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■ 1020,1020,Datuk Joseph Entulu anak Belaun,"Tuan Yang di-Pertua, kalau mengikut
 keinginan, saya secara peribadi memang saya setuju. Akan tetapi kalau dilihat dari segi
 peruntukan untuk tahun 2013, untuk jalan luar bandar kita cuma dapat siling
 keseluruhannya untuk Malaysia ialah RM992.33 juta dan untuk negeri Sabah kita cuma
@@ -234,7 +234,7 @@ Kinabatangan tadi, kalau kesemuanya diluluskan ia memerlukan peruntukan sebanyak
 RM184 juta iaitu lebih tiga kali ganda apa yang diperuntukkan untuk negeri Sabah. Walau
 bagaimanapun, saya akan membawa kes ini kepada kementerian dan mudah-mudahan jika
 tidak kesemuanya tetapi ada yang dapat kita pertimbangkan nanti. Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Tuan Mohamed Azmin Ali [Gombak],"Terima kasih Tuan Yang di-Pertua. Saya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1030,1030,Tuan Mohamed Azmin Ali [Gombak],"Terima kasih Tuan Yang di-Pertua. Saya
 mendengar jawapan yang diberikan oleh Yang Berhormat Timbalan Menteri sebentar tadi.
 Bahawa pembinaan jalan di Kinabatangan seperti Jalanraya Kampung Sinar Jaya,
 Jalanraya Kampung Keramuak, Jalanraya Kampung Kuamut dan Jalanraya Kampung Balat
@@ -250,7 +250,7 @@ menjimatkan kosnya, apakah kementerian bersedia untuk memastikan pembinaan jalan
 raya ini secara tender terbuka supaya prinsip value for money itu dapat dipertahankan. Kita
 dapat mengurangkan kos pembinaan jalan raya memandangkan peruntukan yang diberikan
 kepada rakyat Sabah itu terlalu kecil oleh Kerajaan Barisan Nasional."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Datuk Joseph Entulu anak Belaun,"Tuan Yang di-Pertua, Kerajaan Barisan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1030,1030,Datuk Joseph Entulu anak Belaun,"Tuan Yang di-Pertua, Kerajaan Barisan
 Nasional tidak bersikap hanya menabur janji. Kita adalah kerajaan yang bertanggungjawab,
 bukan seperti Pakatan Rakyat yang selalu menjanjikan bintang dan bulan.
 Apa yang dicadangkan oleh Yang Berhormat Gombak bukan perkara yang baru.
@@ -258,10 +258,10 @@ Memang banyak yang kita laksanakan projek-projek ini melalui tender terbuka. Aka
 saya difahamkan Kerajaan Pakatan Rakyat juga banyak menggunakan selektif tender,
 direct nego dan sebagainya. Jadi, tidak perlulah mengajar itik berenang. Sekian, terima
 kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1030,Dato' Haji Wan Abd Rahim Wan Abdullah [Kota Bharu],"minta Menteri Kerja
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1030,1030,Dato' Haji Wan Abd Rahim Wan Abdullah [Kota Bharu],"minta Menteri Kerja
 Raya menyatakan usaha yang dibuat bagi mengelakkan kesesakan berterusan laluan jalan
 raya KL-KB terutamanya pada musim perayaan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1030,Timbalan Menteri Kerja Raya [Dato’ Yong Khoon Seng],"Tuan Yang di-Pertua
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1030,1030,Timbalan Menteri Kerja Raya [Dato’ Yong Khoon Seng],"Tuan Yang di-Pertua
 terima kasih. Terima kasih juga dengan Yang Berhormat Kota Bharu. Untuk makluman Ahli
 Yang Berhormat, isu kesesakan di jalan raya semasa musim perayaan sememangnya
 merupakan fenomena yang sering berlaku di negara ini. Khususnya, melibatkan laluan
@@ -301,7 +301,7 @@ Keseluruhan jajaran LPT2 ini dijangka akan siap dan dibuka pada bulan Ogos
 2014. Manakala perancangan Kerajaan untuk membina Lebuhraya Pantai Timur Fasa 3
 (LPT3) ke Kelantan akan diberikan pertimbangan untuk dilaksanakan dalam tempoh
 Rancangan Malaysia Ke-11. Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1030,Dato' Haji Wan Abd Rahim Wan Abdullah [Kota Bharu],"Tuan Yang di-Pertua,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1030,1030,Dato' Haji Wan Abd Rahim Wan Abdullah [Kota Bharu],"Tuan Yang di-Pertua,
 soalan tambahan. Saya menggunakan laluan Kota Bharu ke Kuala Lumpur setiap minggu
 apabila datang ke Parlimen. Kadang-kadang saya berasa agak terkilan dan cemburu
 dengan kawan-kawan daripada utara tanah air yang hanya mengambil lima jam untuk
@@ -322,7 +322,7 @@ tidak akan reda dengan perbuatan ini. Soalan saya, sampai bilakah penderaan dan
 diskriminasi dan sikap menganaktirikan kami di Kelantan ini, sehingga perjalanan terutama
 sekali di musim-musim perayaan ini dapat dirasai sama keselesaannya seperti negeri-
 negeri lain. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1040,Dato’ Yong Khoon Seng,"Tuan Yang di-Pertua, tidak adil kita cakap politik dalam
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1040,1040,Dato’ Yong Khoon Seng,"Tuan Yang di-Pertua, tidak adil kita cakap politik dalam
 sesi ini sebab bertanya mengenai jalan, kesesakan, saya akan jawab. Kalau kita kata
 Kelantan dianiayai, bagaimana Sabah dan Sarawak? Tidak ada juga. Ini mengikut
 peruntukan yang kita ada, kita akan bangunkan, kalau kesesakan bukan sahaja di
@@ -338,7 +338,7 @@ Saya di sini juga akan memberitahu, LPT3 yang akan sambung dari Terengganu
 ke Kelantan telah pun kita bincang dan akan diambil dalam RMKe-11, ini telah pun
 dicadangkan. Saya tidak cakap janji, jangan lain kali datang sini cakap saya sudah janji.
 Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1040,Dato’ Ismail bin Abd. Muttalib [Maran],"Terima kasih Tuan Yang di-Pertua,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1040,1040,Dato’ Ismail bin Abd. Muttalib [Maran],"Terima kasih Tuan Yang di-Pertua,
 terima kasih Timbalan Menteri. Sebenarnya ramai rakyat Kelantan berterima kasih kepada
 Kerajaan Barisan Nasional tapi pembangkang ini dia tidak berterima kasih walaupun dia
 guna kemudahan Kerajaan Barisan Nasional. Saya hendak tanya Timbalan Menteri,
@@ -359,7 +359,7 @@ digunakan sebagai jalan alternatif, apakah kerajaan bercadang untuk menaik taraf
 jalan ini supaya ada sebahagian daripada pengguna boleh menggunakan jalan lama ini
 apabila mereka bertemu dengan kesesakan di lebuh-lebuh raya yang ada sekarang. Terima
 kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1040,Dato’ Yong Khoon Seng,"Tuan Yang di-Pertua, terima kasih Yang Berhormat.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1040,1040,Dato’ Yong Khoon Seng,"Tuan Yang di-Pertua, terima kasih Yang Berhormat.
 Sebenarnya saya berpendapat seiring dengan Yang Berhormat tadi, kita perlu juga
 memperbaiki jalan-jalan alternatif dan kita perlu beri para pengguna semasa musim
 perayaan untuk gunakan jalan-jalan alternatif yang sedia ada dan kita berusaha untuk
@@ -371,11 +371,11 @@ Sistem ini perlu kita bekerjasama dengan pihak SPAD, dengan pihak kementerian
 yang lain, Jabatan Keselamatan Jalan Raya supaya semua kita dapat mempertingkatkan
 ITS ini supaya para pengguna boleh mengikut nasihat dalam GPS ini untuk berjalan lancar
 di jalan raya. Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1040,Ir. Haji Hamim bin Samuri [Ledang],"minta Menteri Sains, Teknologi dan Inovasi
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1040,1040,Ir. Haji Hamim bin Samuri [Ledang],"minta Menteri Sains, Teknologi dan Inovasi
 menyatakan, apakah keberkesanan dalam pelaksanaan Tahun Sains dan Gerakan Inovasi
 Nasional 2012 (SGI2012) setakat ini dan adakah ia mencapai tujuan dan matlamatnya serta
 sampai ke akar umbi."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1040,"Menteri Sains, Teknologi dan Inovasi [Datuk Seri Dr. Maximus Johnity Ongkili]","Terima kasih Tuan Yang di-Pertua dan seterusnya kepada Yang Berhormat Ledang bagi
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1040,1040,"Menteri Sains, Teknologi dan Inovasi [Datuk Seri Dr. Maximus Johnity Ongkili]","Terima kasih Tuan Yang di-Pertua dan seterusnya kepada Yang Berhormat Ledang bagi
 soalan yang kelima.
 Tuan Yang di-Pertua, saya mohon untuk menjawab soalan ini sekali dengan soalan
 nombor 13 yang dijadualkan pada 20 November 2012 daripada Ahli Yang Berhormat
@@ -416,7 +416,7 @@ untuk membantu mereka mengenal pasti inovasi-inovasi serta akses kepada produk d
 perkhidmatan yang berkualiti. Program-program ini, inovasi inclusive yang akan
 dilaksanakan sama ada top-down atau bottom-up akan memberi nilai tambah kepada
 cetusan idea dan hasil inovasi individu, masyarakat setempat, institusi ataupun syarikat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1050,"Menteri Sains, Teknologi dan Inovasi [Datuk Seri Dr. Maximus Johnity Ongkili]","Pelbagai program dan aktiviti berteraskan kreativiti dan inovasi yang dilaksanakan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1050,1050,"Menteri Sains, Teknologi dan Inovasi [Datuk Seri Dr. Maximus Johnity Ongkili]","Pelbagai program dan aktiviti berteraskan kreativiti dan inovasi yang dilaksanakan
 seluruh Malaysia untuk mendekati rakyat daripada segenap lapisan bagi menghayati dan
 membudayakan sains dan inovasi melalui suntikan pemikiran, pengetahuan dan aplikasi.
 Semasa Tahun Sains dan Gerakan Inovasi Nasional 2012 ini, sejumlah 554
@@ -429,7 +429,7 @@ dilaksanakan dan bagi WIF Kuala Lumpur yang baru selesai bukan sahaja ia satu fo
 antarabangsa dalam bidang inovasi tetapi juga sekali gus telah pun mengadakan
 BioMalaysia dan Nano Malaysia serta pameran National Innovation Conference and
 Exhibition. Sekian."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1050,Ir. Haji Hamim bin Samuri [Ledang],"Yang Berhormat Tuan Yang di-Pertua dan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1050,1050,Ir. Haji Hamim bin Samuri [Ledang],"Yang Berhormat Tuan Yang di-Pertua dan
 Yang Berhormat Menteri, sekarang bulan November. Bulan depan bulan Disember, sudah
 hendak habis tahun. Jadi Tuan Yang di-Pertua, saya hendak bertanya, apakah impak besar
 yang kita boleh rasa dengan signifikan daripada SGI 2012 ini? Maknanya sesuatu yang
@@ -444,7 +444,7 @@ Saya menjurus kepada masyarakat-masyarakat desa supaya mereka juga dapat
 menerima impak daripada SGI ini dan saya yakin dan ingin bertanya jawapan yang konkrit
 hasil daripada WIF itu yang boleh disalurkan kepada masyarakat desa dari segi inovasi
 mereka. Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1050,Datuk Seri Dr. Maximus Johnity Ongkili,"Tuan Yang di-Pertua, terima kasih
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1050,1050,Datuk Seri Dr. Maximus Johnity Ongkili,"Tuan Yang di-Pertua, terima kasih
 kepada Yang Berhormat Ledang atas soalan tersebut. Sepertimana yang saya telah
 gariskan dalam jawapan asal tadi, usaha untuk menyemarakkan pengertian serta juga
 penangkapan atau internalizing, dengan izin. Ertinya, inovasi dan kreativiti telah kita
@@ -494,20 +494,20 @@ seluruh dunia, Kuala Lumpur menjadi pusat pemikiran dalam bidang inovasi juga pa
 pameran tahunan, kita akan memperluaskan dan merentasi pihak dan juga sambil itu dan
 pameran ini matching of inventers dan dengan korporat sektor yang mahu
 mengkomersialkan produk-produk yang dipamerkan. Thank you."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1050,Tuan Er Teck Hwa [Bakri],"Terima kasih Tuan Yang di-Pertua yang bijaksana
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1050,1050,Tuan Er Teck Hwa [Bakri],"Terima kasih Tuan Yang di-Pertua yang bijaksana
 memberi peluang kepada Bakri tanya soalan kepada Menteri. Di sini saya hendak tanya
 Yang Berhormat Menteri, apakah kementerian menggalakkan penggunaan pelbagai bahasa
 dalam pelaksanaan SGI 2010 atau hanya mengguna pakai bahasa antarabangsa dalam
 Bahasa Malaysia sahaja? Berapakah jumlah pegawai kementerian yang boleh
 berkomunikasi dalam bahasa-bahasa utama di Malaysia agar SGI 2012 ini dapat mencapai
 objektifnya kepada seluruh rakyat Malaysia? Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1050,Datuk Seri Dr. Maximus Johnity Ongkili,"Bidang sains, teknologi dan inovasi ini
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1050,1050,Datuk Seri Dr. Maximus Johnity Ongkili,"Bidang sains, teknologi dan inovasi ini
 sememangnya dia neutral kepada bahasa walaupun secara praktikal dengan izin, talking
 about innovation in English, dan Bahasa Malaysia, Bahasa Melayu itu menjadi asas. Akan
 tetapi dalam keseluruhan program-program dan karnival khususnya yang kita kendalikan
 enam, seluruh negara. Misalnya satu di Sabah, satu di Sarawak, zon utara satu, zon timur
 satu, zon sentral satu, dan zon tengah satu."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1100,Datuk Seri Dr. Maximus Johnity Ongkili,"Mengenai workshop dan bengkel-bengkel yang dikendalikan, sememangnya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1100,1100,Datuk Seri Dr. Maximus Johnity Ongkili,"Mengenai workshop dan bengkel-bengkel yang dikendalikan, sememangnya
 penyampaian dalam Bahasa Malaysia dan di mana yang relevan dalam bahasa Inggeris.
 Akan tetapi jika ada pihak-pihak yang memerlukan pengertian kerana dia dalam golongan
 misalnya di Sabah Sarawak ataupun yang lain itu tidak fasih dalam Bahasa Malaysia,
@@ -536,7 +536,7 @@ adalah amat penting sekali.
 menyatakan, berapa ramaikah pendatang asing yang ditangkap melakukan aktiviti yang
 tidak bermoral terutamanya pelacuran sejak 2008. Nyatakan dari mana negara asal
 mereka."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1100,Timbalan Menteri Dalam Negeri I [Datuk Wira Abu Seman bin Haji Yusop],"Terima kasih Tuan Yang di-Pertua dan Yang Berhormat Bagan Serai yang telah
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1100,1100,Timbalan Menteri Dalam Negeri I [Datuk Wira Abu Seman bin Haji Yusop],"Terima kasih Tuan Yang di-Pertua dan Yang Berhormat Bagan Serai yang telah
 mengemukakan pertanyaan ini. Untuk makluman Yang Berhormat dan juga Dewan yang
 mulia ini bagi tempoh 2008 hingga September 2012, sebanyak 46,135 orang pelacur warga
 asing ditahan oleh unit maksiat PDRM kerana disyaki terlibat dalam kegiatan mencari
@@ -553,7 +553,7 @@ butirannya secara bertulis memandangkan terdapat banyak negara yang terlibat.
 Tuan Yang di-Pertua, sehubungan dengan tindakan yang diambil ke atas mereka
 yang terlibat dalam kegiatan berkenaan, sejumlah 5,921 kes telah dituduh di mahkamah di
 bawah Undang-undang Kanun Keseksaan. Terima kasih Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1100,Tuan Mohsin Fadzli Samsuri [Bagan Serai],"Terima kasih Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1100,1100,Tuan Mohsin Fadzli Samsuri [Bagan Serai],"Terima kasih Tuan Yang di-Pertua.
 Mengenai dengan jawapan Yang Berhormat Timbalan Menteri tadi, memanglah kita
 perhatikan maklumat yang diberikan memang dari tahun 2008 hingga tahun 2010 iaitu
 meningkat daripada 5,956 ke 12,631, begitu banyak sekali peningkatannya. Begitu juga kita
@@ -567,9 +567,9 @@ kerana ditipu oleh sindiket-sindiket atau ejen-ejen atau individu yang menjalank
 ini dengan pujuk rayu seperti janji mendapatkan pekerjaan dengan gaji yang lumayan,
 memberi sogokan kemewahan hidup dan sebagainya. Apa yang kita perhatikan iaitu
 mengenai dengan..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1100,Tuan Yang di-Pertua,"Yang Berhormat, jangan berucap dan memberi kenyataan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1100,1100,Tuan Yang di-Pertua,"Yang Berhormat, jangan berucap dan memberi kenyataan
 Yang Berhormat. Tanya soalan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1100,Tuan Mohsin Fadzli Samsuri [Bagan Serai],"Bukan, sebenarnya apa yang kita
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1100,1100,Tuan Mohsin Fadzli Samsuri [Bagan Serai],"Bukan, sebenarnya apa yang kita
 perhatikan- terima kasih atas ingatan tersebut. Apa yang soalkan sekarang ini iaitu kalau
 kita perhatikan begitu banyak sekali ditahan, jadi sekarang in berapakah belanja untuk
 membiayai pesalah yang dijatuhi hukuman? Itu pertama.
@@ -577,7 +577,7 @@ Kedua, berapakah jumlah sama ada ibu ayam atau bapa ayam dan juga pelacur
 tadi yang mengulangi kegiatan tersebut. Jadi sambil daripada itu yang saya hendak tahu
 iaitu apakah tindakan yang telah diambil oleh Kementerian Dalam Negeri terhadap mereka
 yang telah menjadi mangsa pelacuran ini? Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1100,Datuk Wira Abu Seman bin Haji Yusop,"Terima kasih Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1100,1100,Datuk Wira Abu Seman bin Haji Yusop,"Terima kasih Tuan Yang di-Pertua.
 Sehubungan dengan kegiatan pelacuran yang berlaku di dalam negara bahawa kerajaan
 memang sedar di mana pelacuran terutamanya dalam mendapatkan langganan untuk
 persundalan ini yang mana pihak berkuasa sentiasa mengambil tindakan untuk
@@ -600,17 +600,17 @@ selamatkan kerana disyaki menjadi mangsa pelacuran. Daripada jumlah itu, kita te
 mendapati 569 orang telah sah menjadi mangsa. Oleh kerana itu, kita menempatkan
 mereka di rumah perlindungan di bawah Perintah Perlindungan Mahkamah. Selain daripada
 itu, tindakan juga diambil kepada mereka yang menjalankan pemerdagangan orang ini."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1110,Datuk Wira Abu Seman bin Haji Yusop,"Yang mana kalau daripada segi tindakan yang kita telah ambil kepada mereka
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1110,1110,Datuk Wira Abu Seman bin Haji Yusop,"Yang mana kalau daripada segi tindakan yang kita telah ambil kepada mereka
 yang menjalankan aktiviti pemerdagangan orang ini, sebanyak 460 tangkapan yang telah
 kita buat di mana seramai 326 orang yang melakukan aktiviti memperdagangkan orang
 telah didakwa di mahkamah dan 102 kes telah berjaya disabitkan kesalahan. Jadi, inilah
 tindakan-tindakan yang mana kita cuba membanteras dan menangani masalah pelacuran
 yang berada di dalam negara."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1110,Tuan Mohsin Fadzil Samsuri [Bagan Serai],"Apa bentuk hukuman yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1110,1110,Tuan Mohsin Fadzil Samsuri [Bagan Serai],"Apa bentuk hukuman yang
 dikenakan Yang Berhormat Menteri? Hukuman yang dikenakan apa bentuknya?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1110,Datuk Wira Abu Seman bin Haji Yusop,"Hukuman adalah dipenjarakan atau
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1110,1110,Datuk Wira Abu Seman bin Haji Yusop,"Hukuman adalah dipenjarakan atau
 didenda atau kedua-dua bersekali."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1110,Datuk Wira Ir. Haji Idris bin Haji Haron [Tangga Batu],"Terima kasih Tuan Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1110,1110,Datuk Wira Ir. Haji Idris bin Haji Haron [Tangga Batu],"Terima kasih Tuan Yang
 di-Pertua. Yang Berhormat Timbalan Menteri, satu inisiatif kerajaan yang saya kira dalam
 kaedah membina satu sistem kawalan iaitu Construction Labor Exchange Centre ataupun in
 short, ringkasnya dipanggil CLEP. CLEP ini dapat mengawal pergerakan pendatang asing,
@@ -625,7 +625,7 @@ kegiatan-kegiatan persundalan ini. Jadi, apakah bentuk program yang diaturkan ol
 kementerian di dalam melatih pegawai-pegawai kita di peringat pintu-pintu masuk supaya
 secara scan physical ini mereka boleh tahu yang masuk itu adalah terbitan daripada
 jenayah-jenayah terancang ini. Terima kasih Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1110,Datuk Wira Abu Seman bin Haji Yusop,"Terima kasih Tuan Yang di-Pertua dan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1110,1110,Datuk Wira Abu Seman bin Haji Yusop,"Terima kasih Tuan Yang di-Pertua dan
 terima kasih Yang Berhormat Tangga Batu. Sehubungan dengan kawalan berkaitan dengan
 kes-kes yang melibatkan pelacuran ini, biasanya apa yang telah dilakukan oleh pihak
 penguat kuasa terutamanya di pintu-pintu masuk, mereka kenal pasti di antara mereka
@@ -635,11 +635,11 @@ mereka, maka tindakan di bawah undang-undang akan diambil.
 Selain daripada itu, seperti mana yang dilihat pada hari ini di mana kebanyakan
 tindakan-tindakan ini bukan sahaja diambil di bawah kes-kes berkaitan dengan kemoralan,
 bahkan juga tindakan diambil berkaitan dengan Akta Anti Pemerdagangan Orang 2007."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1110,Datin Linda Tsen Thau Lin [Batu Sapi],"minta Menteri Pembangunan Wanita,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1110,1110,Datin Linda Tsen Thau Lin [Batu Sapi],"minta Menteri Pembangunan Wanita,
 Keluarga dan Masyarakat menyatakan, apakah langkah-langkah yang telah diambil untuk
 meningkatkan ekonomi dan kebajikan wanita di Sabah, khususnya wanita miskin di dalam
 dan di luar bandar."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1110,"Timbalan Menteri Pembangunan Wanita, Keluarga dan Masyarakat [Datuk Heng Seai Kie]","Terima kasih Yang Berhormat. Tuan Yang di-Pertua, golongan wanita
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1110,1110,"Timbalan Menteri Pembangunan Wanita, Keluarga dan Masyarakat [Datuk Heng Seai Kie]","Terima kasih Yang Berhormat. Tuan Yang di-Pertua, golongan wanita
 merupakan hampir separuh daripada penduduk di negara ini. Sehubungan itu, aspek
 kesejahteraan dan kepentingan terbaik wanita amat dititikberatkan dan merupakan satu
 daripada agenda utama kerajaan. Sehubungan ini, antara inisiatif-inisiatif yang telah diambil
@@ -684,11 +684,11 @@ Kesejahteraan Emosi Wanita yang telah dilaksanakan adalah seperti Program Litera
 Undang-undang bagi mewujudkan kesedaran wanita terhadap hak perundangan mereka.
 Program ini telah dilaksanakan sejak tahun 2009 dan melibatkan peruntukan sebanyak
 RM22,000 dengan memanfaatkan seramai 331 orang wanita Sabah."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1120,"Timbalan Menteri Pembangunan Wanita, Keluarga dan Masyarakat [Datuk Heng Seai Kie]","Ketiga ialah Program Keusahawanan Boleh iaitu U-Boleh yang diadakan pada
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1120,1120,"Timbalan Menteri Pembangunan Wanita, Keluarga dan Masyarakat [Datuk Heng Seai Kie]","Ketiga ialah Program Keusahawanan Boleh iaitu U-Boleh yang diadakan pada
 bulan Mei 2012 serta memanfaatkan seramai 60 orang wanita Sabah yang melibatkan
 bukan hanya aspek keusahawanan tetapi juga meliputi motivasi diri dan pengurusan emosi.
 Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1120,Datin Linda Tsen Thau Lin [Batu Sapi],"Terima kasih Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1120,1120,Datin Linda Tsen Thau Lin [Batu Sapi],"Terima kasih Tuan Yang di-Pertua.
 Terima kasih Yang Berhormat Timbalan Menteri. Soalan tambahan, daripada jumlah rakyat
 miskin yang dikenal pasti miskin di dalam sistem e-Kasih, berapakah jumlah rakyat yang
 telah berjaya dikeluarkan daripada kepompong kemiskinan khususnya di negeri Sabah
@@ -696,7 +696,7 @@ terutamanya golongan wanita? Apakah jenis bantuan yang telah diberi oleh Kemente
 Pembangunan Wanita, Keluarga dan Masyarakat kepada golongan ibu tunggal di Sabah?
 Berapakah bilangan penerima bantuan dan jumlah peruntukan yang digunakan? Sekian,
 terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1120,Datuk Heng Seai Kie,"Terima kasih Yang Berhormat Batu Sapi atas soalan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1120,1120,Datuk Heng Seai Kie,"Terima kasih Yang Berhormat Batu Sapi atas soalan
 tambahan yang telah dikemukakan. Tuan Yang di-Pertua, mengikut taksiran daripada ICU
 iaitu Unit Penyelarasan Pelaksanaan, seseorang itu boleh dikatakan keluar daripada
 kepompong kemiskinan sekiranya pendapatan keluarganya adalah lebih daripada RM1,500
@@ -730,12 +730,12 @@ kanak rakyat Sabah adalah seramai 10,381 orang yang mana 40 peratus daripadanya 
 4,153 orang adalah ibu tunggal. Sementara bagi bantuan am pula, daripada jumlah
 penerima bantuan rakyat Sabah yang berjumlah 17,702 orang, 20 peratus daripadanya iaitu
 3,541 orang adalah merupakan ibu tunggal. Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1120,Tuan Che Uda bin Che Nik [Sik],"minta Menteri Pelajaran menyatakan, sejauh
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1120,1120,Tuan Che Uda bin Che Nik [Sik],"minta Menteri Pelajaran menyatakan, sejauh
 mana kementerian menyedari bahawa Pekeliling Ikhtisas Bil. 13/2008, Bil. 5/2009, dan Bil.
 14/2010 memberi kuasa yang terlalu luas kepada sekolah dan PIBG untuk mengenakan
 yuran kepada murid/pelajar. Adakah kementerian berhasrat untuk mengeluarkan pekeliling
 baru yang mengehadkan kadar yuran tambahan yang selaras untuk semua sekolah."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1120,Timbalan Menteri Pelajaran ll [Dr. Haji Mohd. Puad bin Zarkashi],"Terima kasih
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1120,1120,Timbalan Menteri Pelajaran ll [Dr. Haji Mohd. Puad bin Zarkashi],"Terima kasih
 Tuan Yang di-Pertua. Assalamualaikum warahmatullaahi wabarakaatuh, salam sejahtera
 dan salam 1Malaysia.
 Tuan Yang di-Pertua, untuk makluman Ahli Yang Berhormat, Kerajaan Malaysia
@@ -771,17 +771,17 @@ pendaftar sekolah iaitu Pengarah Pelajaran Negeri untuk kelulusan dan tertakluk 
 semua surat Pekeliling Ikhtisas yang berkaitan bayaran-bayaran yang dibenarkan mengikut
 peraturan Akta Pendidikan 1996, peraturan-peraturan pendidikan dan surat-surat siaran
 berkaitan bayaran persekolahan yang masih berkuat kuasa. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1120,Tuan Che Uda bin Che Nik [Sik],"Terima kasih Tuan Yang di-Pertua. Saya ingin
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1120,1120,Tuan Che Uda bin Che Nik [Sik],"Terima kasih Tuan Yang di-Pertua. Saya ingin
 menarik perhatian Yang Berhormat Menteri. Oleh kerana surat yang dikeluarkan oleh
 kementerian itu memberi banyak budi bicara dan kreativiti pengetua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1130,Tuan Che Uda bin Che Nik [Sik],"Terdapat sekolah-sekolah yang telah mengenakan yuran mengikut kemampuan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1130,1130,Tuan Che Uda bin Che Nik [Sik],"Terdapat sekolah-sekolah yang telah mengenakan yuran mengikut kemampuan
 ibu bapa hingga ada yang meletakkan bahawa kalau bapa dia antara pendapatan RM2,000
 hingga RM5,000 ada yang yuran dia sampai RM200. Manakala RM5,000 ke atas sampai
 RM750. Ini banyak berlaku di sekolah–sekolah berasrama penuh. Ini melibatkan di sekolah-
 sekolah ini walaupun kita kata untuk pelajar miskin tetapi banyak orang kaya yang berada di
 sana. Jadi yang membebankan itu adalah pelajar-pelajar miskin yang menjadi keutamaan di
 sekolah-sekolah yang berasrama penuh ini. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1130,Dr. Haji Mohd. Puad bin Zarkashi,"Oleh sebab itu Yang Berhormat. Terima kasih
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,■1130,1130,Dr. Haji Mohd. Puad bin Zarkashi,"Oleh sebab itu Yang Berhormat. Terima kasih
 Yang Berhormat Cikgu. Sebenarnya Yang Berhormat seperti yang saya sebut dengan
 pekeliling baru yang kita keluarkan ini iaitu Surat Pekeliling Ikhtisas Bil. 11 ini dia cukup
 jelas sebenarnya iaitu pertama mestilah mendapat persetujuan PIBG. Kadar sumbangan
@@ -798,8 +798,8 @@ munasabah ataupun tidak. Oleh sebab itu kita lihat mengikut latar belakang sosia
 dan pendapatan keluarga di sekolah berkenaan sebelum amaun tambahan itu dibenarkan
 ataupun tidak untuk menjadi sumbangan PIBG. Terima kasih.
 **[Masa untuk Pertanyaan-pertanyaan bagi Jawab Lisan tamat.]**"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1132,Puan Nurul Izzah Anwar [Lembah Pantai],[Bangun]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1132,Tuan Yang di-Pertua,"Ahli Yang Berhormat, saya ingin menyatakan sesatu
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,11.32 pg.,1132,Puan Nurul Izzah Anwar [Lembah Pantai],[Bangun]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,11.32 pg.,1132,Tuan Yang di-Pertua,"Ahli Yang Berhormat, saya ingin menyatakan sesatu
 perkara yang penting pada pagi ini. Saya nampak Yang Berhormat Lembah Pantai berdiri.
 Saya tahu Yang Berhormat Lembah Pantai akan bangkitkan peraturan mesyuarat. Akan
 tetapi sebelum itu Yang Berhormat izinkan saya dahulu untuk membuat satu kenyataan.
@@ -817,15 +817,15 @@ Ahli-ahli Yang Berhormat perkara ini juga akan saya kemukakan kepada Ketua
 Majlis iaitu Perdana Menteri. Menteri yang bertanggungjawab terhadap hal-ehwal Parlimen,
 dan kepada Ketua Pembangkang dan Ketua Pentadbir Parlimen. Sekian, terima kasih. Sila
 Yang Berhormat Lembah pantai."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1132,Puan Nurul Izzah Anwar [Lembah Pantai],"Terima kasih Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,11.32 pg.,1132,Puan Nurul Izzah Anwar [Lembah Pantai],"Terima kasih Tuan Yang di-Pertua.
 Saya menerima.."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1132,Datuk Haji Mohamad bin Haji Aziz [Sri Gading],"Boleh, Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,11.32 pg.,1132,Datuk Haji Mohamad bin Haji Aziz [Sri Gading],"Boleh, Tuan Yang di-Pertua.
 Boleh kita menyokong saranan Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1132,Puan Nurul Izzah Anwar [Lembah Pantai],Saya rasa sudah jelaskan.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1132,Tuan Yang di-Pertua,"Dalam peraturan mesyuarat Yang Berhormat tidak apa.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,11.32 pg.,1132,Puan Nurul Izzah Anwar [Lembah Pantai],Saya rasa sudah jelaskan.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,11.32 pg.,1132,Tuan Yang di-Pertua,"Dalam peraturan mesyuarat Yang Berhormat tidak apa.
 Tidak usah tolong. Itu kuasa Tuan Yang di-Pertua. Dari semasa ke semasa boleh betulkan
 sahaja. Sila."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1132,Puan Nurul Izzah Anwar [Lembah Pantai],"Terima kasih Tuan Yang di-Pertua
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,11.32 pg.,1132,Puan Nurul Izzah Anwar [Lembah Pantai],"Terima kasih Tuan Yang di-Pertua
 saya merujuk kepada warkah yang diberi di bawah Peraturan Mesyuarat 18(1) di mana usul
 saya mencadangkan dalam Dewan yang mulia ini kita berkumpul dengan satu matlamat
 dan satu suara tanpa dikekang batas agama, bangsa mahupun haluan politik untuk
@@ -833,25 +833,25 @@ mengangkat satu isu penting yang bukan sahaja menyentuh hati rakyat Malaysia bah
 majoriti warga antarabangsa dunia iaitu nasib 800,000 etnik penduduk Rohingya di Arakan
 Myanmar yang di antaranya terkorban dan terus diancam pembunuhan beramai-ramai...
 [Dewan riuh] Saya hargai jawapan yang diberikan oleh Tuan Yang di-Pertua hanya.."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1132,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, diam dulu Ahli Yang Berhormat.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,11.32 pg.,1132,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, diam dulu Ahli Yang Berhormat.
 Saya tidak dengar Yang Berhormat. Ya, sila."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1132,Puan Nurul Izzah Anwar [Lembah Pantai],"Hanya dua isu yang terutama di sini
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,11.32 pg.,1132,Puan Nurul Izzah Anwar [Lembah Pantai],"Hanya dua isu yang terutama di sini
 menurut maklum balas saya terima daripada NGO. Pertamanya adalah bila ikon demokrasi
 dunia Aung San Suu Kyi telah mengecewakan ramai dengan.."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1132,Tuan Yang di-Pertua,"Tidak Yang Berhormat, Yang Berhormat. Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,11.32 pg.,1132,Tuan Yang di-Pertua,"Tidak Yang Berhormat, Yang Berhormat. Yang Berhormat
 bangkitkan isu peraturan mesyuarat atas sebab bahawa saya menolak usul Yang
 Berhormat di bawah Peraturan Mesyuarat 18(1) itu. Jadi Yang Berhormat berdiri ini tidak
 payah baca fakta dia kerana itu di antara Yang Berhormat dan saya."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1132,Puan Nurul Izzah Anwar [Lembah Pantai],"Tidak, tidak."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1132,Tuan Yang di-Pertua,"Sekarang ini apa Yang Berhormat nak sama ada saya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,11.32 pg.,1132,Puan Nurul Izzah Anwar [Lembah Pantai],"Tidak, tidak."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,11.32 pg.,1132,Tuan Yang di-Pertua,"Sekarang ini apa Yang Berhormat nak sama ada saya
 perlu tarik balikkah atau apa? Baru saya boleh respons terus kepada isu peraturan
 mesyuarat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1132,Puan Nurul Izzah Anwar [Lembah Pantai],"Terima kasih Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,11.32 pg.,1132,Puan Nurul Izzah Anwar [Lembah Pantai],"Terima kasih Tuan Yang di-Pertua.
 Saya mohon kalau boleh ditimbang semula kerana usul ini amat penting memandangkan
 setakat ini apa yang dilakukan dalam surat Tuan Yang di-Pertua belum lagi berlangsung
 semuanya khusus usaha-usaha untuk menyelamatkan nyawa etnik Rohingya. Saya mohon
 daripada Tuan Yang di-Pertua, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1132,Tuan Yang di-Pertua,"Terima kasih. Ahli Yang Berhormat, setiap kali saya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,11.32 pg.,1132,Tuan Yang di-Pertua,"Terima kasih. Ahli Yang Berhormat, setiap kali saya
 mempertimbangkan perkara-perkara yang dibangkitkan di bawah Peraturan Mesyuarat
 18(1), kesemua perkara yang perlu saya ambil kira, saya ambil kira terutama sekali maklum
 balas daripada pihak-pihak yang berwajib.
@@ -885,23 +885,23 @@ bincang. Akan tetapi bagi mereka itu adalah hal negara saya. Begitu juga kita ka
 kadang ada perkara-perkara yang kita tidak mahu orang lain bincang di luar. Jadi semua ini
 saya ambil kira Yang Berhormat Lembah Pantai. Itu sebab saya tidak membenarkan usul
 itu. Itu sebab kenapa saya menolak. Terima kasih. Sila."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1132,Puan Nurul Izzah Anwar [Lembah Pantai],Terima kasih Tuan Yang di-Pertua.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1132,Tuan Yang di-Pertua,Terima kasih.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,11.32 pg.,1132,Puan Nurul Izzah Anwar [Lembah Pantai],Terima kasih Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,11.32 pg.,1132,Tuan Yang di-Pertua,Terima kasih.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2013
 Bacaan Kali Yang Kedua
 DAN
 USUL
 ANGGARAN PEMBANGUNAN 2013
-Jawatankuasa",,1132,,"Aturan Urusan Mesyuarat dibacakan bagi menyambung semula pertimbangan atas
+Jawatankuasa",,11.32 pg.,1132,,"Aturan Urusan Mesyuarat dibacakan bagi menyambung semula pertimbangan atas
 “Rang Undang-undang Perbekalan 2013 dan Anggaran Pembangunan 2013 dalam
 Jawatankuasa sebuah-buah Majlis.” **[Hari Kesebelas]**
 [Majlis bersidang dalam Jawatankuasa]
 [Tuan Yang di-Pertua **mempengerusikan Jawatankuasa**"
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1140,Tuan Pengerusi,"Kepala Bekalan B.42 dan Kepala Pembangunan P.42 di bawah
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1140,1140,Tuan Pengerusi,"Kepala Bekalan B.42 dan Kepala Pembangunan P.42 di bawah
 Kementerian Kesihatan terbuka untuk dibahas."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1140,Puan Teo Nie Ching [Serdang],"Tuan Pengerusi, boleh saya bangkitkan satu
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1140,1140,Puan Teo Nie Ching [Serdang],"Tuan Pengerusi, boleh saya bangkitkan satu
 isu? Terima kasih Tuan Pengerusi. Pada hari Khamis yang lalu kita bincang dan kita bahas
 tentang Kementerian Kerja Raya dan Yang Berhormat Timbalan Menteri pada masa itu
 guna hanya 30 minit sahaja untuk menjawab dan berjanji bahawa yang lain-lain kita akan
@@ -910,11 +910,11 @@ sebarang jawapan tentang isu-isu yang saya telah bangkitkan. Jadi saya haraplah 
 dapat bantuan daripada Tuan Pengerusi supaya selepas kita bahas, kita boleh dapat
 jawapan. Terima kasih Tuan Pengerusi."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1140,Tuan Pengerusi,"Terima kasih, terima kasih. Ya, pihak Yang Berhormat Timbalan
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1140,1140,Tuan Pengerusi,"Terima kasih, terima kasih. Ya, pihak Yang Berhormat Timbalan
 Menteri sila ambil perhatian tentang soal itu.
 Sila, Yang Berhormat Machang. Sepuluh minit, Yang Berhormat seperti biasa."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1141,Dato’ Saifuddin Nasution Ismail [Machang],"Tuan Pengerusi, terima kasih
+Maksud P.42 [Anggaran Pembangunan 2013] -",,11.41 pg.,1141,Dato’ Saifuddin Nasution Ismail [Machang],"Tuan Pengerusi, terima kasih
 kerana memberi peluang untuk saya membahaskan pada peringkat Jawatankuasa
 Kementerian Kesihatan. Saya merujuk kepada butiran 050000 – Kesihatan Pergigian.
 Kes spesifik yang saya hendak bawa ialah berkaitan dengan perkhidmatan
@@ -995,9 +995,9 @@ farmasi beritahu kata ubat tidak sampai lagi. Pakcik datang minggu depan atau du
 lagi. Kalau pakcik itu hidup lagi. Kalau pakcik itu ‘padam’?... Jadi ini isunya di bawah ini.
 Jadi mereka berpendapat bahawa..."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1141,Seorang Ahli,Padam!
+Maksud P.42 [Anggaran Pembangunan 2013] -",,11.41 pg.,1141,Seorang Ahli,Padam!
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1141,Dato’ Saifuddin Nasution Ismail [Machang],"Padamlah. Cara orang utaralah.
+Maksud P.42 [Anggaran Pembangunan 2013] -",,11.41 pg.,1141,Dato’ Saifuddin Nasution Ismail [Machang],"Padamlah. Cara orang utaralah.
 Macam mana.
 Jadi yang kita hendak sebut adalah bila saya teliti aduan ini dan saya teliti kepada
 proses yang berlaku dalam perkhidmatan farmasi itu, ia barangkali kerana dua punca ini
@@ -1007,7 +1007,7 @@ sampai awal, kadang-kadang sampai lambat. Kalau sampai lambat, maka berlakulah k
 yang saya nyatakan tadi. Ini saya mohon untuk Yang Berhormat Menteri memberikan
 sedikit reaksi."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1150,Dato’ Saifuddin Nasution Ismail [Machang],"Akhirnya Tuan Pengerusi, akhirnya ialah saya juga pernah membangkitkan empat
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1150,1150,Dato’ Saifuddin Nasution Ismail [Machang],"Akhirnya Tuan Pengerusi, akhirnya ialah saya juga pernah membangkitkan empat
 tahun dahulu waktu mula-mula berucap di sini dalam tajuk yang sama. Akan tetapi di
 hujung penggal Parlimen ini juga, saya dapati bahawa tidak banyak perubahan. Yang saya
 maksudkan ialah bagaimana dewan bedah atau bilik bedah yang tidak mengikut spesifikasi
@@ -1023,7 +1023,7 @@ saya perhatikan daripada dulu sampai sekarang konsisten mendengar setiap perbaha
 kami, boleh memberikan maklum balas yang baik yang boleh menjanjikan
 penambahbaikan. Terima kasih."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1151,Datuk Haji Mohamad bin Haji Aziz [Sri Gading],"Terima kasih Tuan Pengerusi.
+Maksud P.42 [Anggaran Pembangunan 2013] -",,11.51 pg.,1151,Datuk Haji Mohamad bin Haji Aziz [Sri Gading],"Terima kasih Tuan Pengerusi.
 Saya juga ingin bersama-sama dalam perbahasan peringkat Jawatankuasa Kementerian
 Kesihatan. Pertamanya diucapkan tahniah dan syabas kepada Kementerian Kesihatan,
 syukur Alhamdulillah sentiasa memberikan perkhidmatan dari satu masa ke satu masa
@@ -1087,14 +1087,14 @@ berbagai-bagai kemudahan lain. Umpamanya insentif tambahan berkaitan dengan kerj
 lebih masa mereka, potongan cukai umpamanya, bayaran insurans umpamanya, kita bagi
 kepada mereka dan anugerah-anugerah."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1151,Dato' Dr. Mohd. Hayati bin Othman [Pendang],"Yang Berhormat Sri Gading.
+Maksud P.42 [Anggaran Pembangunan 2013] -",,11.51 pg.,1151,Dato' Dr. Mohd. Hayati bin Othman [Pendang],"Yang Berhormat Sri Gading.
 Terima kasih Yang Berhormat Sri Gading, Tuan Pengerusi. Saya rasa terutama sekali yang
 merawat kita di Parlimen inilah, kadang-kadang kalau kita pukul 11, dia pun pukul 11
 tunggu di sini. Kalau kita pergi hospital, dia tunggu dulu di sana, siap dengan ambil kad dan
 sebagainya. Saya rasa itu perlu diberi perhatian oleh pihak kementerian, Menteri tolong
 tengok sikitlah, Menteri pun dia yang rawat juga. Terima kasih."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1200,Datuk Haji Mohamad bin Haji Aziz [Sri Gading],"Terima kasih Yang Berhormat
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1200,1200,Datuk Haji Mohamad bin Haji Aziz [Sri Gading],"Terima kasih Yang Berhormat
 Pendang. Pendapat Yang Berhormat Pendang ini memang disokong oleh semua. Memang
 doktor kita yang di Parlimen ini doktor yang terbaik... [Tepuk] Terima kasihlah kepada
 beliau.
@@ -1109,9 +1109,9 @@ dalam keadaan yang sentiasa tepat dan cepat. Jadi mintalah. Yang Berhormat Mente
 kementerian tolonglah iktiraf sebagai terima kasih kita kepada mereka yang berjasa kepada
 kita semua dan kepada negara. Tuan Pengerusi, saya menyokong."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1200,Tuan Pengerusi [Datuk Ronald Kiandee],Yang Berhormat Sungai Siput.
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1200,1200,Tuan Pengerusi [Datuk Ronald Kiandee],Yang Berhormat Sungai Siput.
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1202,Dr. M. Jeyakumar Devaraj [Sungai Siput],"Terima kasih Tuan Pengerusi bagi
+Maksud P.42 [Anggaran Pembangunan 2013] -",,12.02 tgh.,1202,Dr. M. Jeyakumar Devaraj [Sungai Siput],"Terima kasih Tuan Pengerusi bagi
 saya peluang berbahas anggaran perbelanjaan Kementerian Kesihatan. Terlebih dahulu
 saya hendak bawa Butiran 010400 – Perancangan Tenaga Manusia dan Latihan.
 Tuan Pengerusi, sekarang kaedah yang dipakai oleh kerajaan kita ialah untuk
@@ -1182,7 +1182,7 @@ kita swastakan tetapi pekerja macam itu dapat satu situasi yang begitu teruk. So
 kita tengok secara holistik. Bila kita buat kaedah kita swastakan bagi outsourcing semua,
 who are we helping? Selain daripada kontraktor-kontraktor tertentu, who are we helping?"
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1210,Dr. M. Jeyakumar Devaraj [Sungai Siput],"Last sekali saya hendak bawakan isu Butiran 060100 – Pengurusan Perkhidmatan
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1210,1210,Dr. M. Jeyakumar Devaraj [Sungai Siput],"Last sekali saya hendak bawakan isu Butiran 060100 – Pengurusan Perkhidmatan
 Farmasi. Adakah kementerian menjalankan satu kajian terhadap impak perjanjian TPP dan
 EU-ASEAN yang sedang dibicara oleh kerajaan kita dengan beberapa negara Barat.
 Apakah impak TPP ini terhadap kos dan bekalan ubat-ubat untuk rakyat kita? Ada
@@ -1212,9 +1212,9 @@ tolonglah kaji ini betul-betul. Jika ini macam negatif untuk rakyat kita, jangan
 because sign itu jadikan satu legal document yang kita kena patuhi. Terima kasih Tuan
 Pengerusi."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1210,Tuan Pengerusi [Datuk Ronald Kiandee],Yang Berhormat Parit Sulong.
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1210,1210,Tuan Pengerusi [Datuk Ronald Kiandee],Yang Berhormat Parit Sulong.
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1212,Dato' Noraini binti Ahmad [Parit Sulong],"Terima kasih saya ucapkan kepada
+Maksud P.42 [Anggaran Pembangunan 2013] -",,12.12 tgh.,1212,Dato' Noraini binti Ahmad [Parit Sulong],"Terima kasih saya ucapkan kepada
 Tuan Pengerusi. Sebelum masuk ke butiran, di kesempatan ini juga saya hendak
 mengucapkan ribuan terima kasih kepada pegawai dan juga kakitangan Pusat Kesihatan
 Daerah Batu Pahat yang menjalankan tugas dan memberikan perkhidmatan yang
@@ -1268,9 +1268,9 @@ perkara yang saya hendak bangkitkan Tuan Pengerusi dan saya harap Yang Berhormat
 Menteri dapat memberikan penjelasan kepada masalah-masalah yang semakin serius ini.
 Terima kasih banyak-banyak."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1212,Tuan Pengerusi [Datuk Ronald Kiandee],Yang Berhormat Pendang.
+Maksud P.42 [Anggaran Pembangunan 2013] -",,12.12 tgh.,1212,Tuan Pengerusi [Datuk Ronald Kiandee],Yang Berhormat Pendang.
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1218,Dato' Dr. Haji Mohd. Hayati bin Othman [Pendang],"Assalammualaikum
+Maksud P.42 [Anggaran Pembangunan 2013] -",,12.18 tgh.,1218,Dato' Dr. Haji Mohd. Hayati bin Othman [Pendang],"Assalammualaikum
 warahmatullaahi wabarakaatuh. Terima kasih Tuan Pengerusi kerana memberi kesempatan
 kepada saya untuk membahaskan dalam peringkat Jawatankuasa Kementerian Kesihatan.
 Sebelum saya mulakan perbahasan, saya ingin minta perhatian daripada Tuan
@@ -1292,7 +1292,7 @@ harap pihak kementerian dapat memberi perhatian terhadap perkara ini kerana ia
 merupakan satu risiko yang amat besar kepada terutamanya mereka yang terlanjur ini pergi
 membuang bayi mereka melalui klinik-klinik."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1220,Dato' Dr. Haji Mohd. Hayati bin Othman [Pendang],"Saya tanya macam mana cara boleh dilakukan? Mereka mengatakan senang
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1220,1220,Dato' Dr. Haji Mohd. Hayati bin Othman [Pendang],"Saya tanya macam mana cara boleh dilakukan? Mereka mengatakan senang
 sahaja, berlakonlah. Berlakon kata ada bleedingkah, pergi dekat itu hendak buat abortion.
 Mungkin boleh dapat tangkaplah. Saya pernah kompelin kepada Timbalan Menteri yang
 dahulu dari Mersing, kajian dia telah menjalankan penyiasatan di sebuah pusat perubatan
@@ -1321,12 +1321,12 @@ mengurangkan nyamuk di dalam hutan tersebut sebanyak 80 peratus. Itu di Cayman I
 Adakah kesan yang sama yang kita peroleh dalam negara kita setelah kita melepaskan
 nyamuk-nyamuk yang genetically modified ini? Apakah hasil kajian kita..."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1220,Datuk Ismail Kasim [Arau],"Yang Berhormat Pendang, pohon laluan sikit sahaja.
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1220,1220,Datuk Ismail Kasim [Arau],"Yang Berhormat Pendang, pohon laluan sikit sahaja.
 Boleh? Terima kasih Yang Berhormat Tuan Pengerusi."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1220,Dato’ Dr. Mohd. Hayati bin Othman [Pendang],Sikit ya.
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1220,1220,Dato’ Dr. Mohd. Hayati bin Othman [Pendang],Sikit ya.
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1220,Datuk Ismail Kasim [Arau],"Setengah minit sahaja cukup, very fast. Terima kasih
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1220,1220,Datuk Ismail Kasim [Arau],"Setengah minit sahaja cukup, very fast. Terima kasih
 Yang Berhormat Pendang. Saya ingin tanya Yang Berhormat, kebanjiran pendatang asing
 ini menyebabkan berlaku penyakit-penyakit 60-an, 50-an di negara kita itu kembali datang
 yang dibawa oleh pesakit-pesakit daripada negara-negara sumber yang Yang Berhormat
@@ -1336,7 +1336,7 @@ dengan kebanjiran pendatang yang kita tahu keadaan di negara asal mereka adalah 
 teruk, dan apakah langkah kerajaan untuk mengatasi dan pandangan Yang Berhormat
 berhubung perkara ini?"
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1220,Dato’ Dr. Mohd. Hayati bin Othman [Pendang],"Terima kasih Yang Berhormat
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1220,1220,Dato’ Dr. Mohd. Hayati bin Othman [Pendang],"Terima kasih Yang Berhormat
 Arau. Dia tanya langkah kerajaan, saya serah kepada Yang Berhormat Menterilah ya.
 Harap masuk dalam ucapan saya, Yang Berhormat Menteri tolong jawab sekejap lagilah.
 Saya hendak teruskan berhubung dengan denggi ini. Mengikut kajian yang
@@ -1392,22 +1392,22 @@ kursus ataupun latihan-latihan yang lebihlah kepada mereka-mereka ataupun kakita
 JPAM.
 Seterusnya..."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1220,Tuan Pengerusi [Datuk Ronald Kiandee],Masa habis Yang Berhormat.
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1220,1220,Tuan Pengerusi [Datuk Ronald Kiandee],Masa habis Yang Berhormat.
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1220,Dato’ Dr. Mohd. Hayati bin Othman [Pendang],Masa habis? Banyak lagi ini.
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1220,1220,Dato’ Dr. Mohd. Hayati bin Othman [Pendang],Masa habis? Banyak lagi ini.
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1220,Tuan Pengerusi [Datuk Ronald Kiandee],Sudah Yang Berhormat.
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1220,1220,Tuan Pengerusi [Datuk Ronald Kiandee],Sudah Yang Berhormat.
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1220,Dato’ Dr. Mohd. Hayati bin Othman [Pendang],"Akhir sekali, akhir sekali,
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1220,1220,Dato’ Dr. Mohd. Hayati bin Othman [Pendang],"Akhir sekali, akhir sekali,
 sekejap sahaja. TCM ini. TCM ini Yang Berhormat Menteri, saya hendak tanya di bawah
 butiran mana? Saya cari pun tak jumpa. Oleh sebab kita sudah masukkan TCM ini sebagai
 satu unit di dalam hospital, jadi duduk di bawah mana? Saya hendak tanya kepada pihak
 Yang Berhormat Menterilah, sila memberi jawapan. Terima kasih Tuan Pengerusi kerana
 mengizinkan masa ini. Terima kasih."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1220,Tuan Pengerusi [Datuk Ronald Kiandee],Yang Berhormat Bintulu.
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1220,1220,Tuan Pengerusi [Datuk Ronald Kiandee],Yang Berhormat Bintulu.
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1229,Dato’ Seri Tiong King Sing [Bintulu],"Terima kasih Tuan Pengerusi. Terima
+Maksud P.42 [Anggaran Pembangunan 2013] -",,12.29 tgh.,1229,Dato’ Seri Tiong King Sing [Bintulu],"Terima kasih Tuan Pengerusi. Terima
 kasih bagi peluang sama saya ambil bahagian dalam P.42 dan B.42 - Kementerian
 Kesihatan.
 Tuan Pengerusi, hari ini saya mahu buat dua perkara di Dewan yang mulia ini.
@@ -1419,7 +1419,7 @@ ini rakyat minta saya sampaikan dia orang punya suara. Dia minta Yang Berhormat 
 kalau boleh ambillah inisiatif, janganlah cuma hanya tulis surat kepada Ambassador to
 Malaysia daripada negara China."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1230,Dato’ Seri Tiong King Sing [Bintulu],"Bolehlah kita ambil proaktif pergi jumpa ataupun ambillah peluang secepat
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■ 1230,1230,Dato’ Seri Tiong King Sing [Bintulu],"Bolehlah kita ambil proaktif pergi jumpa ataupun ambillah peluang secepat
 mungkin pergi ke negara China duduk berbincang sama negara sama mana-mana
 universiti ada terlibat. Janganlah mereka jadi mangsa mereka sudah balik kerana aniaya,
 tidak boleh jadi sebagai doktor ini.
@@ -1448,7 +1448,7 @@ sampai Sri Aman dia tukar lagi satu ambulan dari Sri Aman sampai Kuching. So Yan
 Berhormat Menteri, kalau ini patient tidak ada pengsan dia pun pengsan dalam ambulan ini.
 Mahu dekat 10 jam lebih boleh sampai."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1230,Datuk Ismail Kasim [Arau],"Saya setuju. Minta laluan sedikit. Terima kasih Yang
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■ 1230,1230,Datuk Ismail Kasim [Arau],"Saya setuju. Minta laluan sedikit. Terima kasih Yang
 Berhormat Tuan Pengerusi. Bersetuju atau tidak Yang Berhormat Bintulu, saya ingin
 mencadangkan supaya pihak kementerian membeli sendiri perkhidmatan ambulan
 helikopter ini kerana kita anggap sekarang ini adalah masa teruk. Bukan banyak pun.
@@ -1459,7 +1459,7 @@ bergantung kepada outsource syarikat-syarikat yang lain yang kita seperti Yang B
 Bintulu kata mereka lebih bermotifkan keuntungan daripada melihat kepada nyawa
 manusia. Apa pandangan Yang Berhormat Bintulu berhubung perkara ini?"
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1230,Dato’ Seri Tiong King Sing [Bintulu],"Terima kasih Yang Berhormat Arau.
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■ 1230,1230,Dato’ Seri Tiong King Sing [Bintulu],"Terima kasih Yang Berhormat Arau.
 Memanglah saya setuju. Saya pun ambil dia punya ucapan masuk saya punya sebahagian
 ucapan. Memanglah kalau bolehlah, mintalah Kementerian Kesihatan mempertimbangkan.
 Janganlah kita semua cuma fikir mahu kontrak semua. Kalau keadaan macam ini, kalau
@@ -1472,9 +1472,9 @@ untuk rakyat, dia pun mahu bising. Akan tetapi sehari mungkin dia pun sakit dia 
 minta juga. Kalau tidak nyawa dia terbang juga. Jadi saya mintalah Yang Berhormat
 Menteri, kalau boleh bagi bagus sedikit jawapanlah. Sekian terima kasih."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1230,Tuan Pengerusi [Datuk Ronald Kiandee],Yang Berhormat Ipoh Barat.
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■ 1230,1230,Tuan Pengerusi [Datuk Ronald Kiandee],Yang Berhormat Ipoh Barat.
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1235,Tuan M. Kulasegaran [Ipoh Barat],"Terima kasih Tuan Pengerusi. Tuan
+Maksud P.42 [Anggaran Pembangunan 2013] -",,12.35 tgh.,1235,Tuan M. Kulasegaran [Ipoh Barat],"Terima kasih Tuan Pengerusi. Tuan
 Pengerusi, saya ada dua tiga perkara. Satu di antaranya adalah Butiran 100600 iaitu
 mengenai Pengisian Jawatan Baru dan Sedia Ada, Kenaikan Pangkat dan Bayaran
 Kemudahan.
@@ -1528,7 +1528,7 @@ just throw away. Selepas renovate, kita meminda perkara itu dan apa-apa yang dik
 oleh Yang Berhormat Sri Gading itu mengenai terlampau jauh dari Kuala Lumpur, akan
 mengambil masa dan sebagainya. Semua itu ada tempat, semua is very correct."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1240,Tuan M. Kulasegaran [Ipoh Barat],"Kenapa tidak ada consultation dengan pihak-pihak yang berkenaan dengan
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1240,1240,Tuan M. Kulasegaran [Ipoh Barat],"Kenapa tidak ada consultation dengan pihak-pihak yang berkenaan dengan
 perkara ini dan saya difahamkan adakah Menteri sendiri yang menyokong pemindahan
 outpatient ini dari Kuala Lumpur, or it is out of the jurisdiction, or it is little Napoleons yang
 membuat semua ini? These are some of the factors. Jangan menyusahkan rakyat di Kuala
@@ -1556,9 +1556,9 @@ hospital mungkin akan cederakan patient. This is reverse, dan kenapa ini terjadi
 tindakan diambil, siasatan dibuat supaya those who are guilty will be bring to book. Terima
 kasih Tuan Pengerusi."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1240,Tuan Pengerusi [Datuk Ronald Kiandee],Yang Berhormat Arau.
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1240,1240,Tuan Pengerusi [Datuk Ronald Kiandee],Yang Berhormat Arau.
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1242,Datuk Ismail Kassim [Arau],"Terima kasih Tuan Pengerusi. Saya ingin menarik
+Maksud P.42 [Anggaran Pembangunan 2013] -",,12.42 tgh.,1242,Datuk Ismail Kassim [Arau],"Terima kasih Tuan Pengerusi. Saya ingin menarik
 Butiran 020500 Pemakanan di bawah Butiran 020000 - Kesihatan Awam berdasarkan
 kepada dua isu yang kebetulan Yang Berhormat Menteri hadir sendiri pada pagi ini. Terima
 kasih diucapkan. Itu situ makanan iaitu sosej ayam dicampur pulut yang diimport dari
@@ -1581,11 +1581,11 @@ Jadi saya tahu Yang Berhormat Menteri cukup prihatin perkara ini dan apakah
 setakat ini siasatan pemantauan dibuat ini pihak kementerian? Kemudian berhubung
 dengan..."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1242,Dato' Lilah bin Yasin [Jempol],"Yang Berhormat Arau, pemakanan, boleh?"
+Maksud P.42 [Anggaran Pembangunan 2013] -",,12.42 tgh.,1242,Dato' Lilah bin Yasin [Jempol],"Yang Berhormat Arau, pemakanan, boleh?"
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1242,Datuk Ismail Kassim [Arau],Setengah minit boleh.
+Maksud P.42 [Anggaran Pembangunan 2013] -",,12.42 tgh.,1242,Datuk Ismail Kassim [Arau],Setengah minit boleh.
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1242,Dato' Lilah bin Yasin [Jempol],"Dahulu semasa saya kecil-kecil saya tengok
+Maksud P.42 [Anggaran Pembangunan 2013] -",,12.42 tgh.,1242,Dato' Lilah bin Yasin [Jempol],"Dahulu semasa saya kecil-kecil saya tengok
 pemain daripada Korea, dari Jepun ini lebih rendah daripada pemain bola sepak Malaysia.
 Sekarang ini saya tengok pemain bola sepaknya lebih tinggi daripada pemain bola sepak
 Malaysia. Bolehkah kementerian merancang sistem pemakanan kita yang lebih baik, yang
@@ -1593,7 +1593,7 @@ lebih berkualiti untuk menasihatkan rakyat supaya bukan sahaja tahap kesihatan k
 bagus, tetapi tubuh badan kita lebih besar, lebih tinggi dan nampak lebih gagah. Apakah
 Yang Berhormat bersetuju?"
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1242,Datuk Ismail Kassim [Arau],"Sangat bersetuju Yang Berhormat Jempol. Tinggi
+Maksud P.42 [Anggaran Pembangunan 2013] -",,12.42 tgh.,1242,Datuk Ismail Kassim [Arau],"Sangat bersetuju Yang Berhormat Jempol. Tinggi
 macam Yang Berhormat Jempol, minta ucapan Yang Berhormat Jempol dimasukkan dalam
 ucapan saya, pohon penjelasan daripada Yang Berhormat Menteri. Butiran 010200 Sumber
 Manusia di bawah Butiran 010000 - Pengurusan.
@@ -1607,12 +1607,12 @@ negara kita ini boleh digunakan sepenuhnya dan mungkin kita boleh gunakan untuk 
 sebagai TalentCorp untuk kita export ke luar negara terutamanya ke negara Middle East
 yang kekurangan kakitangan hospital jururawat yang berpengalaman."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1242,Dato' Ismail bin Abd. Muttalib [Maran],"Yang Berhormat Arau, Yang Berhormat
+Maksud P.42 [Anggaran Pembangunan 2013] -",,12.42 tgh.,1242,Dato' Ismail bin Abd. Muttalib [Maran],"Yang Berhormat Arau, Yang Berhormat
 Arau..."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1242,Tuan Pengerusi [Datuk Ronald Kiandee],Yang Berhormat Maran.
+Maksud P.42 [Anggaran Pembangunan 2013] -",,12.42 tgh.,1242,Tuan Pengerusi [Datuk Ronald Kiandee],Yang Berhormat Maran.
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1242,Dato' Ismail bin Abd. Muttalib [Maran],"Manpower, hendak tumpang tanya. Tuan
+Maksud P.42 [Anggaran Pembangunan 2013] -",,12.42 tgh.,1242,Dato' Ismail bin Abd. Muttalib [Maran],"Manpower, hendak tumpang tanya. Tuan
 Pengerusi, terima kasih Yang Berhormat Arau saya sedikit sahaja. Kita ucapkan tahniah
 kepada pegawai dan kakitangan Kementerian Kesihatan. Memang saya Menteri, appreciate
 betullah, hargai perkhidmatan mereka, siang malam. Cuma baru-baru ini kita diperkenalkan
@@ -1623,7 +1623,7 @@ berapa jumlah mereka dan bagaimanakah prestasi jadi ukuran? Kalau boleh anak-ana
 muda kita yang lembut-lembut ini bolehlah kita libatkan sama untuk menjadi jururawat di
 hospital-hospital. Terima kasih."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1242,Datuk Ismail Kassim [Arau],"Terima kasih Yang Berhormat Maran, tetapi
+Maksud P.42 [Anggaran Pembangunan 2013] -",,12.42 tgh.,1242,Datuk Ismail Kassim [Arau],"Terima kasih Yang Berhormat Maran, tetapi
 kenyataan lembut itu jangan kita ini sebab kita hendak bagi semua keras-keras. Saya ingat
 kementerian telah pun membuat pengambilan jururawat lelaki setakat ini. Akan tetapi saya
 tidak tahu bilangan passing out, yang sudah graduasi berapa jumlah naik dan berapa
@@ -1651,7 +1651,7 @@ dijalankan setakat ini dalam usaha kita menangani gejala yang saya rasa sebenarn
 berlaku secara tidak disedari yang merupakan di antara penyakit pembunuh utama rakyat di
 negara kita setakat ini."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1250,Datuk Ismail Kassim [Arau],"Seterusnya ialah saya ingin masih lagi iaitu menarik butiran isu pembuangan
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1250,1250,Datuk Ismail Kassim [Arau],"Seterusnya ialah saya ingin masih lagi iaitu menarik butiran isu pembuangan
 sampah dan sisa pepejal iaitu di negeri Perlis. Yang Berhormat, di kawasan Parlimen saya
 di Puah sekarang menjadi kawasan buangan sampah dan sisa pepejal. Yang saya rasa
 sememangnya akan menjejaskan kesihatan dan kepentingan rakyat di sekitar kawasan
@@ -1695,9 +1695,9 @@ tepat untuk menangani di peringkat permulaan. Sebelum sampai ke peringkat yang b
 menjejaskan keadaan rakyat negara yang kita sayangi. Terima kasih. Saya mohon
 menyokong Yang Berhormat Tuan Pengerusi."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1250,Tuan Pengerusi [Datuk Ronald Kiandee],Yang Berhormat Gopeng.
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1250,1250,Tuan Pengerusi [Datuk Ronald Kiandee],Yang Berhormat Gopeng.
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1254,Dr. Lee Boon Chye [Gopeng],"Terima kasih Tuan Pengerusi. Saya ingin
+Maksud P.42 [Anggaran Pembangunan 2013] -",,12.54 tgh.,1254,Dr. Lee Boon Chye [Gopeng],"Terima kasih Tuan Pengerusi. Saya ingin
 bangkitkan beberapa perkara di peringkat Jawatankuasa Kementerian Kesihatan. Butiran
 030100 – Pengurusan Perubatan Ibu Pejabat/Negeri.
 Ini saya ingin ucapkan tahniah kepada kementerian kerana keluarkan beberapa
@@ -1753,18 +1753,18 @@ tindakan kementerian untuk memastikan bahawa produk-produk Ayamas di Semenanjung
 di seluruh Malaysia ini selamat untuk digunakan untuk seluruh Malaysia? Dalam butiran
 yang sama saya...."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1254,Tuan Pengerusi [Datuk Ronald Kiandee],"Yang Berhormat, boleh sambung
+Maksud P.42 [Anggaran Pembangunan 2013] -",,12.54 tgh.,1254,Tuan Pengerusi [Datuk Ronald Kiandee],"Yang Berhormat, boleh sambung
 petang lima minit lagi Yang Berhormat."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1254,Dr. Lee Boon Chye [Gopeng],Boleh.
+Maksud P.42 [Anggaran Pembangunan 2013] -",,12.54 tgh.,1254,Dr. Lee Boon Chye [Gopeng],Boleh.
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1254,Tuan Pengerusi [Datuk Ronald Kiandee],"Majlis bersidang semula sebagai
+Maksud P.42 [Anggaran Pembangunan 2013] -",,12.54 tgh.,1254,Tuan Pengerusi [Datuk Ronald Kiandee],"Majlis bersidang semula sebagai
 Majlis Mesyuarat.
 [Majlis Mesyuarat bersidang semula]
 [Timbalan Yang di-Pertua (Datuk Ronald Kiandee) **mempengerusikan
 Mesyuarat**]"
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1254,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Mesyuarat ditangguhkan
+Maksud P.42 [Anggaran Pembangunan 2013] -",,12.54 tgh.,1254,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Mesyuarat ditangguhkan
 hingga jam 2.30 petang ini.
 **[Mesyuarat ditempohkan pada pukul 1.00 petang]
 [Mesyuarat disambung semula pada pukul 2.30 petang]**
@@ -1772,15 +1772,15 @@ hingga jam 2.30 petang ini.
 [Tuan Pengerusi (Datuk Dr. Wan Junaidi bin Tuanku Jaafar) **mempengerusikan
 Jawatankuasa**]"
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1431,Dr. Lee Boon Chye [Gopeng],[Bangun]
+Maksud P.42 [Anggaran Pembangunan 2013] -",,2.31 ptg.,1431,Dr. Lee Boon Chye [Gopeng],[Bangun]
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1431,Tuan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ya, tunggu Yang
+Maksud P.42 [Anggaran Pembangunan 2013] -",,2.31 ptg.,1431,Tuan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ya, tunggu Yang
 Berhormat ya. Ini Yang Berhormat, dalam Parlimen ini saya bukan memintalah ya. Tradisi
 konvensyen amalan kita, bila Speaker masuk itu kena berdirilah. Sama ada tak suka
 dengan saya, itu peribadi. Speaker masuk, kena berdiri sebab ia sejarah beratus tahun itu
 kena ikut jugalah. Sila Yang Berhormat Gopeng."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1432,Dr. Lee Boon Chye [Gopeng],"Terima kasih Tuan Pengerusi. Saya ingin
+Maksud P.42 [Anggaran Pembangunan 2013] -",,2.32 ptg.,1432,Dr. Lee Boon Chye [Gopeng],"Terima kasih Tuan Pengerusi. Saya ingin
 sambung perbahasan peringkat jawatankuasa Kementerian Kesihatan. Berkenaan dengan
 Butiran 070000 – Keselamatan dan Kualiti Makanan.
 Saya ingin dapat penjelasan daripada Yang Berhormat Menteri berkenaan dengan
@@ -1819,10 +1819,10 @@ kementerian dapat berikan butiran terperinci siapakah yang bakal menerima sumban
 tersebut dan alasan kenapa mereka layak untuk menerima sumbangan tersebut. Sekian,
 terima kasih."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1432,Tuan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Yang Berhormat
+Maksud P.42 [Anggaran Pembangunan 2013] -",,2.32 ptg.,1432,Tuan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Yang Berhormat
 Sri Aman."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1438,Tuan Masir Kujat [Sri Aman],"Terima kasih Tuan Pengerusi kerana memberi
+Maksud P.42 [Anggaran Pembangunan 2013] -",,2.38 ptg.,1438,Tuan Masir Kujat [Sri Aman],"Terima kasih Tuan Pengerusi kerana memberi
 peluang untuk saya berbahas mengenai Kementerian Kesihatan. Saya nak rujuk kepada
 Butiran 00201 – Perkhidmatan Kesihatan Luar Bandar.
 Pagi tadi kebetulan soalan saya nombor 11 tapi tak berjawab kerana tak ada masa
@@ -1843,7 +1843,7 @@ yang saya sebutkan dahulu insiden di mana seorang ibu yang sarat mengandung tela
 lemas bersama bayinya bila mereka dihantar dan mengalami insiden di mana perahu itu
 telah karam dalam arus sungai yang amat deras."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1440,Tuan Masir Kujat [Sri Aman],"Jadi saya harap klinik Banting ini akan diambil perhatian oleh kementerian selepas
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1440,1440,Tuan Masir Kujat [Sri Aman],"Jadi saya harap klinik Banting ini akan diambil perhatian oleh kementerian selepas
 ini. Butiran seterusnya ialah mengenai ubah suai naik taraf dan pembaikan klinik-klinik
 terutama sekali yang saya hendak rujuk ialah mengenai klinik di Pantu. Saya telah
 difahamkan, dua tahun yang lepas, peruntukan telah disalurkan kepada Klinik Pantu untuk
@@ -1867,10 +1867,10 @@ buat alang-alang kerana ini merupakan klinik pakar. Saya harap segala kelengkapa
 klinik pakar boleh disediakan untuk hospital baru ini nanti bila siap. Jadi, harap perhatian
 daripada Yang Berhormat Menteri mengenai hal ini. Sekian sahaja terima kasih."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1440,Tuan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Yang Berhormat
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1440,1440,Tuan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Yang Berhormat
 Kota Raja."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1442,Dr. Hajah Siti Mariah binti Mahmud [Kota Raja],"Terima kasih Tuan Pengerusi.
+Maksud P.42 [Anggaran Pembangunan 2013] -",,2.42 ptg.,1442,Dr. Hajah Siti Mariah binti Mahmud [Kota Raja],"Terima kasih Tuan Pengerusi.
 saya ingin menyentuh Butiran 010000 – Pengurusan berserta dengan Butiran 100000 –
 Dasar Baru.
 Saya ingin bertanya kepada Menteri, sekarang ini bajet untuk penjagaan kesihatan
@@ -1939,7 +1939,7 @@ dikenakan pada klinik-klinik swasta ataupun hospital-hospital swasta. Makna kita
 Private Health Services and Facilities Act. Oleh kerana ia private maka yang
 dikuatkuasakan atas private entities."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1450,Dr. Hajah Siti Mariah binti Mahmud [Kota Raja],"Tidak dikuatkuasakan di atas premis-premis kerajaan, sedangkan premis kerajaan
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1450,1450,Dr. Hajah Siti Mariah binti Mahmud [Kota Raja],"Tidak dikuatkuasakan di atas premis-premis kerajaan, sedangkan premis kerajaan
 memberi juga khidmat yang sama cuma Klinik 1Malaysia ini tidak ada doktor. Dia ada MA
 dan dia ada jururawat berfungsi daripada pukul 10 pagi hingga 10 malam. Jadi
 persoalannya, kenapa Klinik 1Malaysia ini substandard daripada klinik-klinik biasa. Jadi
@@ -1949,7 +1949,7 @@ sampai kepada satu piawai, tetapi bila Klinik 1Malaysia kita menurunkan piawainy
 adakah ini bermakna orang yang miskin, orang yang tidak mampu pergi ke klinik yang
 berbayar, maka they are receiving substandard care. Terima kasih."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1450,Dr. Mujahid Yusof Rawa [Parit Buntar],"Saya mohon mencelah, takut saya tidak
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1450,1450,Dr. Mujahid Yusof Rawa [Parit Buntar],"Saya mohon mencelah, takut saya tidak
 sempat nanti iaitu isu Klinik 1Malaysia. Saya mohon Yang Berhormat Kota Raja masukkan.
 Selain daripada itu yang disebut ialah aduan kepada mereka yang bertugas sehingga
 dikatakan terpaksa bertugas lebih kurang 12 jam. Daripada pukul 10 pagi sampai pukul 10
@@ -1961,25 +1961,25 @@ meringankan beban mereka sehingga menyebabkan mereka ini bertugas dalam keadaan
 begitu beban sekali, ditambahkan dengan patient yang datang itu bukan sikit tetapi ramai.
 Jadi saya harap dapat masuk dalam ucapan Yang Berhormat Kota Raja."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1450,Dr. Hajah Siti Mariah binti Mahmud [Kota Raja],"Terima kasih Yang Berhormat
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1450,1450,Dr. Hajah Siti Mariah binti Mahmud [Kota Raja],"Terima kasih Yang Berhormat
 Parit Buntar. Saya kira Menteri akan menjawab ataupun akan respons kepada apa yang
 dibangkitkan oleh Yang Berhormat Parit Buntar.
 Seterusnya saya ingin ke P.42 iaitu Butiran 00600 ataupun 00400..."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1450,Tuan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ringkas, ringkas
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1450,1450,Tuan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ringkas, ringkas
 Yang Berhormat. Sudah habis masa."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1450,Dr. Hajah Siti Mariah binti Mahmud [Kota Raja],"Mengenai Hospital Baru. Saya
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1450,1450,Dr. Hajah Siti Mariah binti Mahmud [Kota Raja],"Mengenai Hospital Baru. Saya
 ingat saya biasa bertanya dalam Dewan yang mulia ini tentang Hospital Klang di mana
 pesakitnya terlampau ramai dan saya mendapat jawapan pada ketika itu daripada Menteri
 bahawa ada bangunan ataupun blok baru yang akan dinaikkan. Sehingga hari ini, saya
 tidak nampak apa-apa perkembangan Yang Berhormat Menteri. Terima kasih Tuan
 Pengerusi."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1450,Tuan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Yang Berhormat
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1450,1450,Tuan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Yang Berhormat
 Putatan."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1452,Datuk Dr. Marcus Mojigoh [Putatan],"Terima kasih Tuan Pengerusi. Saya
+Maksud P.42 [Anggaran Pembangunan 2013] -",,2.52 ptg.,1452,Datuk Dr. Marcus Mojigoh [Putatan],"Terima kasih Tuan Pengerusi. Saya
 singkat sahaja. Saya hanya menyentuh Butiran 00201, 00203, 00204, 00300, 00400 iaitu
 Perkhidmatan Kesihatan Luar Bandar, Perkhidmatan Kesihatan Bandar, Klinik Bergerak,
 Kemudahan Hospital dan Hospital Baru. Baru-baru ini- nombor satu, terima kasih kepada
@@ -2012,9 +2012,9 @@ government MP’s, bukan kepada pembangkang. Pembangkang dia hanya mengapi-apika
 menghasut rakyat di kawasan Kota Kinabalu... [Disampuk] Klang pun masalah. Kau bawa
 kau punya masalah. Ini masalah kami."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1452,Tuan M. Kulasegaran [Ipoh Barat],[Menyampuk]
+Maksud P.42 [Anggaran Pembangunan 2013] -",,2.52 ptg.,1452,Tuan M. Kulasegaran [Ipoh Barat],[Menyampuk]
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1452,Datuk Dr. Marcus Mojigoh [Putatan],"Yang Berhormat Ipoh Barat apa pasal? Itu
+Maksud P.42 [Anggaran Pembangunan 2013] -",,2.52 ptg.,1452,Datuk Dr. Marcus Mojigoh [Putatan],"Yang Berhormat Ipoh Barat apa pasal? Itu
 fakta. Berdiri, hendak teruskah?
 Jadi Tuan Pengerusi, saya juga ingin minta penjelasan daripada pihak
 kementerian janji yang Klinik Kesihatan Putatan ini, kita sudah sediakan tapak. Kita sudah
@@ -2030,10 +2030,10 @@ kompelin yang begitu banyak dan kadang-kadang patient atau pesakit di luar ini m
 begitu lama gilirannya. Cuba kasi tambah sikit kerusi itu supaya pakar-pakar ini pun ada
 kerusi masing-masing. Itu sahaja Tuan Pengerusi, terima kasih."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1452,Tuan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Yang Berhormat
+Maksud P.42 [Anggaran Pembangunan 2013] -",,2.52 ptg.,1452,Tuan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Yang Berhormat
 Bukit Mertajam."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1458,Puan Chong Eng [Bukit Mertajam],"Terima kasih Tuan Pengerusi. Pertama saya
+Maksud P.42 [Anggaran Pembangunan 2013] -",,2.58 ptg.,1458,Puan Chong Eng [Bukit Mertajam],"Terima kasih Tuan Pengerusi. Pertama saya
 hendak tanya keadaan ataupun status bangunan baru untuk Hospital Seberang Jaya
 kerana dia kata hendak bina, tetapi belum bina lagi.
 Kedua, hendak tanya Hospital Bukit Mertajam. Ia memang sangat crowded dan
@@ -2041,7 +2041,7 @@ tidak cukup tempat. Di depan hospital itu ada sebidang tanah yang Kerajaan Neger
 Pinang sudi kalau hendak membesarkan Hospital Bukit Mertajam, sudi memberikan
 ataupun bincanglah dengan kementerian."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1500,Puan Chong Eng [Bukit Mertajam],"Mengenai kesihatan mental, saya faham bahawa sudah ada satu advisory, Majlis
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1500,1500,Puan Chong Eng [Bukit Mertajam],"Mengenai kesihatan mental, saya faham bahawa sudah ada satu advisory, Majlis
 Penasihat Promosi Kesihatan Mental. Akan tetapi saya rasa ini ada gap yang sangat besar
 di antara Majlis ini dengan NGO yang ingin membantu untuk menjalankan program. Kami
 tidak tahu apakah program yang ditaja ataupun dilaksanakan oleh kementerian.
@@ -2093,10 +2093,10 @@ kesemua sekolah, kerana ada kantin yang kata dia tidak mahu jual air biasa keran
 profit, very small profit. Jadi kalau kita boleh bekalkan water cooler kepada sekolah, jadi kita
 boleh kurangkan minuman manis di sekolah."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1500,Tuan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Masa Yang
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1500,1500,Tuan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Masa Yang
 Berhormat."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1500,Puan Chong Eng [Bukit Mertajam],"Ya. Saya hendak tanya berkenaan projek-
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1500,1500,Puan Chong Eng [Bukit Mertajam],"Ya. Saya hendak tanya berkenaan projek-
 projek di Seberang Perai Tengah (SPT) yang ada di Bukit Mertajam. Klinik Kesihatan Jenis
 3 - Bukit Minyak, Sebarang Perai Tengah, ini sudah lewat. Saya hendak tahu apa
 sebabnya? Beberapa projek di SPT semuanya lewat. Saya hendak tanya, kenapa? Projek
@@ -2106,12 +2106,12 @@ statusnya? Projek menaik taraf dewan bedah Hospital Seberang Jaya, apakah status
 Juga pembelian tanah bagi Klinik Kesihatan Jenis 2 - Bandar Baru Perda, Mukim Seberang
 Perai Tengah, Pulau Pinang, sama ada pembinaan ini akan start? Terima kasih."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1500,Tuan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Saya nasihatkan
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1500,1500,Tuan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Saya nasihatkan
 Yang Berhormat bermula dengan agenda kawasan Yang Berhormat, sebab kalau terlepas
 agenda kawasan, nanti Yang Berhormat hendak cerita benda-benda nasional itu mungkin
 secondary matter lah. Yang Berhormat Kapit."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1509,Datuk Alexander Nanta Linggi [Kapit],"Terima kasih Tuan Pengerusi. Saya terus
+Maksud P.42 [Anggaran Pembangunan 2013] -",,3.09 ptg.,1509,Datuk Alexander Nanta Linggi [Kapit],"Terima kasih Tuan Pengerusi. Saya terus
 ke maksud Bekalan B.42 Butiran 010200 – Sumber Manusia.
 Saya ingin menarik perhatian Menteri Kesihatan pada satu isu atau aduan yang
 telah dibawa kepada saya. Sejak beberapa tahun kebelakangan ini sehingga sekarang,
@@ -2122,7 +2122,7 @@ Kuching. Kita perlu perseimbangan pegawai dan kakitangan di hospital dan di klin
 kerana pada musim perayaan sudah tentulah kadang-kadang ada masalah, sebab terlalu
 berat untuk satu kaum sahaja bertugas. Begitu juga dengan jururawat."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1520,Datuk Alexander Nanta Linggi [Kapit],"Sekarang saya beralih ke Butiran 032900 – Perubatan Transfusi Darah. Saya
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1520,1520,Datuk Alexander Nanta Linggi [Kapit],"Sekarang saya beralih ke Butiran 032900 – Perubatan Transfusi Darah. Saya
 mohon sekali lagi, sebab saya pernah menyebut di Dewan yang mulia ini juga tentang
 perlunya diwujudkan pusat kidney dialysis, di Pekan Song di klinik kesihatan di dalam
 kawasan P215 kawasan Parlimen sayalah Kapit. Ramai pesakit buah pinggang yang
@@ -2153,10 +2153,10 @@ perkara tempat letak kereta di hospital-hospital di seluruh negara kita. Mengena
 kekurangan tempat letak kereta di Hospital Kuching ini, masalah besarlah. Jadi itu sahaja
 Tuan Pengerusi. Sekian terima kasih."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1520,Tuan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Yang Berhormat
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1520,1520,Tuan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Yang Berhormat
 Sungai Petani."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1515,Dato’ Johari Abdul [Sungai Petani],"Terima kasih Tuan Pengerusi. Saya cuma
+Maksud P.42 [Anggaran Pembangunan 2013] -",,3.15 ptg.,1515,Dato’ Johari Abdul [Sungai Petani],"Terima kasih Tuan Pengerusi. Saya cuma
 ada tiga sahaja. Pertama Butiran 010000 – Pengurusan, Butiran 010400 – Perancangan
 Tenaga Manusia dan Latihan. Saya hendak tanya apakah amalan kementerian untuk
 mengambil fresh graduate sama ada daripada farmasi, dental ataupun pelajar-pelajar
@@ -2210,7 +2210,7 @@ Akhir sekali saya ingin mengucapkan terima kasih kepada kementerian kerana di
 Sungai Petani nampaknya semua peralatan yang diberikan oleh kementerian berada dalam
 keadaan yang cukup cantik. Terima kasih banyak-banyak."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1515,Tuan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Balik kepada
+Maksud P.42 [Anggaran Pembangunan 2013] -",,3.15 ptg.,1515,Tuan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Balik kepada
 cerita saya semalam Yang Berhormat. Saya lihat satu, dua, tiga, empat, lima, enam, tujuh,
 lapan, sembilan, sepuluh, sebelas, dua belas orang. Kalau 10 minit seorang, dua jam lagi
 baru habis. Saya hendak tutupkan perbahasan pada jam empat petang kerana hari ini kita
@@ -2220,11 +2220,11 @@ ramai yang duduk di luar. Jadi bersetuju atau tidak kalau saya meminta lima mini
 Yang Berhormat?.
 **Semua Ahli Yang Berhormat:** Bersetuju."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1515,Tuan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Yang Berhormat
+Maksud P.42 [Anggaran Pembangunan 2013] -",,3.15 ptg.,1515,Tuan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Yang Berhormat
 Sungai Petani, saya hendak dengar Yang Berhormat Kota Belud. Saya tidak pernah
 menjemput Yang Berhormat Kota Belud bercakap."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1519,Dato’ Abd. Rahman Dahlan [Kota Belud],"Memang sudah lama Tuan Pengerusi,
+Maksud P.42 [Anggaran Pembangunan 2013] -",,3.19 ptg.,1519,Dato’ Abd. Rahman Dahlan [Kota Belud],"Memang sudah lama Tuan Pengerusi,
 walaupun berdiri. Okey, lima minit. Terima kasih Tuan Pengerusi. Pertama sekali saya ingin
 mengucapkan tahniah kepada Yang Berhormat Menteri dan Yang Berhormat Timbalan
 Menteri kerana selalu datang ke Sabah dan membuat program-program kesihatan dan juga
@@ -2239,7 +2239,7 @@ Jadi saya meminta untuk ke sekian kalinya, meminta Yang Berhormat Menteri tunjuk
 kepada saya apakah boleh saya beritahu kepada penduduk Pulau Mantanani di kawasan
 saya berita yang bagus ini atau tidak?"
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1520,Dato’ Abd. Rahman Dahlan [Kota Belud],"Keduanya Tuan Pengerusi ialah juga perkhidmatan kesihatan luar bandar iaitu
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■ 1520,1520,Dato’ Abd. Rahman Dahlan [Kota Belud],"Keduanya Tuan Pengerusi ialah juga perkhidmatan kesihatan luar bandar iaitu
 doktor udara, ada kampung-kampung di negeri Sabah ini masih lagi diberi perkhidmatan
 Doktor Udara. Saya hendak tanya kepada Yang Berhormat Menteri, rasional memberikan
 perkhidmatan doktor udara ini kerana ada kampung-kampung yang masih lagi diberikan
@@ -2285,10 +2285,10 @@ orang-orang Indonesia yang mungkin jauh dari Jakarta yang duduknya di kawasan
 Kalimantan ini untuk datang ke negeri Sabah untuk medical tourism. Terima kasih Tuan
 Pengerusi, I think I have made it between five minute. Terima kasih."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1520,Timbalan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Yang
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■ 1520,1520,Timbalan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Yang
 Berhormat Bandar Kuching."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1524,Tuan Chong Chieng Jen [Bandar Kuching],"Terima kasih Tuan Pengerusi,
+Maksud P.42 [Anggaran Pembangunan 2013] -",,3.24 ptg.,1524,Tuan Chong Chieng Jen [Bandar Kuching],"Terima kasih Tuan Pengerusi,
 perkara pertama yang saya ingin sebut adalah Butiran 010200 mengenai Sumber Manusia.
 Saya berpendapat bahawa dalam sistem lantikan dan pengambilan pegawai kesihatan atau
 hospital untuk Sarawak, orang-orang Sarawak sentiasa diabaikan atau dianaktirikan
@@ -2321,12 +2321,12 @@ sampai jatuh. Saya fikir kembalilah ke sistem lama di mana gate poliklinik itu b
 pada masa lebih awal supaya pesakit-pesakit yang pergi ke poliklinik itu dapat beransur-
 ansur untuk ambil nombor dan mendaftar. Sekian, terima kasih."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1524,Timbalan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Terima kasih
+Maksud P.42 [Anggaran Pembangunan 2013] -",,3.24 ptg.,1524,Timbalan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Terima kasih
 Yang Berhormat, yang di bandar itu saya ingat kemudahan klinik dan hospital bandar itu
 cukup baik. Bagilah peluang orang luar bandar. Saya serius Yang Berhormat, bukan soalan
 isu, soalan isu kawasan yang penting. Yang Berhormat Ranau."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1529,Datuk Siringan Gubat [Ranau],"Terima kasih Tuan Pengerusi kerana memberi
+Maksud P.42 [Anggaran Pembangunan 2013] -",,3.29 ptg.,1529,Datuk Siringan Gubat [Ranau],"Terima kasih Tuan Pengerusi kerana memberi
 peluang kepada saya untuk turut membahas peruntukan Kementerian Kesihatan dan saya
 terus merujuk Butiran 040400 di bawah Perangsangan dan Pembangunan. Dalam
 beberapa tahun yang lepas sebelum ini, saya telah menyampaikan satu permohonan
@@ -2334,7 +2334,7 @@ daripada Pengarah Hospital Ranau di kawasan saya iaitu merupakan cadangan projek
 terutama sekali penambahan dan untuk membina bangunan baru Hospital Ranau di
 kawasan hospital juga yang ada di Pekan Ranau."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1530,Datuk Siringan Gubat [Ranau],"Saya ada merujuk dan bertanya kepada Yang Berhormat Menteri sendiri, apakah
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1530,1530,Datuk Siringan Gubat [Ranau],"Saya ada merujuk dan bertanya kepada Yang Berhormat Menteri sendiri, apakah
 kedudukan permohonan itu dalam persidangan yang lepas. Saya telah diberitahu yang
 permohonan itu sedang dalam penelitian. Pada hari ini saya ingin mengetahui apakah
 kedudukan dan setakat manakah status permohonan itu. Terutama sekali saya ingin
@@ -2359,10 +2359,10 @@ Tuan Pengerusi, saya mohon supaya Kementerian Kesihatan dapat
 mempertimbangkan kelulusan beberapa klinik di kawasan saya. Itu sahaja. Sekian, saya
 mohon menyokong."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1530,Tuan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ya, Yang
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1530,1530,Tuan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ya, Yang
 Berhormat Parit Buntar."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1534,Dr. Mujahid Yusof Rawa [Parit Buntar],"Terima kasih Tuan Pengerusi. Saya ada
+Maksud P.42 [Anggaran Pembangunan 2013] -",,3.34 ptg.,1534,Dr. Mujahid Yusof Rawa [Parit Buntar],"Terima kasih Tuan Pengerusi. Saya ada
 beberapa perkara yang hendak ditimbulkan, Butiran 00400 - Hospital Baru.
 Apa saya mahu inginkan penegasan tentang Hospital Parit Buntar. Ini kerana
 dalam lawatan Yang Berhormat Perdana Menteri tempoh hari merasmikan Hari Petani,
@@ -2406,10 +2406,10 @@ working hours yang lama, tidak dapat cuti, kena bekerja. Mereka terbeban dengan 
 yang ramai datang untuk meminta khidmat ini. Jadi, saya harap pihak Menteri dapat
 mencatat apa yang disampaikan. Sekian, terima kasih Tuan Pengerusi."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1534,Tuan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ya, Yang
+Maksud P.42 [Anggaran Pembangunan 2013] -",,3.34 ptg.,1534,Tuan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ya, Yang
 Berhormat Batang Sadong."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1538,Puan Hajah Nancy Shukri [Batang Sadong],"Terima kasih Tuan Pengerusi.
+Maksud P.42 [Anggaran Pembangunan 2013] -",,3.38 ptg.,1538,Puan Hajah Nancy Shukri [Batang Sadong],"Terima kasih Tuan Pengerusi.
 Saya menjurus kepada Butiran pertama iaitu Butiran 050300 – Kesihatan Pergigian
 Masyarakat.
 Apa yang saya hendak nyatakan di sini kepada Menteri, ini adalah di antara
@@ -2430,7 +2430,7 @@ bagaimanakah kementerian menaik taraf kesihatan penduduk di luar bandar? Setakat
 masih begitu juga. Jadi, kita hendak tahu macam mana- apakah program-program yang
 boleh dikatakan bersifat menaik taraf kesihatan di luar bandar?"
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1540,Puan Hajah Nancy Shukri [Batang Sadong],"Akhir sekali, Butiran 020000 – Kesihatan Awam, khusus kepada Butiran 020300 –
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1540,1540,Puan Hajah Nancy Shukri [Batang Sadong],"Akhir sekali, Butiran 020000 – Kesihatan Awam, khusus kepada Butiran 020300 –
 Kawalan Penyakit. Di sini saya hendak membawa perkara yang telah diajukan kepada
 beberapa rakan-rakan BNBBC di sini iaitu Malaysian AIDS Council. Yang Berhormat
 Menteri, di sini kami telah difahamkan bahawa Malaysian AIDS Council ini telah menerima
@@ -2460,10 +2460,10 @@ tindakan membantu menyelamatkan Malaysian AIDS Council ini dengan kadar yang seg
 kerana peruntukan mereka hanya untuk tahun ini. Jadi, kita perlu melakukan sesuatu
 secara emergency untuk membantu mereka. Itu sahaja, terima kasih."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1540,Tuan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Yang Berhormat
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1540,1540,Tuan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Yang Berhormat
 Kelana Jaya."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1542,Tuan Gwo Burne Loh [Kelana Jaya],"Terima kasih Tuan Yang di-Pertua. Saya
+Maksud P.42 [Anggaran Pembangunan 2013] -",,3.42 ptg.,1542,Tuan Gwo Burne Loh [Kelana Jaya],"Terima kasih Tuan Yang di-Pertua. Saya
 hendak merujuk kepada Butiran 00203 – Perkhidmatan Kesihatan Bandar dan 00400 –
 Hospital Baru. Saya ingin memaklumkan kepada Tuan Pengerusi dan Dewan yang mulia ini
 bahawa di Petaling Jaya dan Subang Jaya terdapat populasi yang amat besar tetapi tidak
@@ -2501,9 +2501,9 @@ untuk subsidi gula kepada pemanis alternatif seperti stevia. Kementerian bukan s
 perlu berusaha lebih untuk memaklumkan kepada orang ramai bahaya memakan gula
 berlebihan tetapi juga perlu menggalakkan penjualan alternatif gula."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1542,Tuan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Yang Berhormat.
+Maksud P.42 [Anggaran Pembangunan 2013] -",,3.42 ptg.,1542,Tuan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Yang Berhormat.
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1542,Tuan Gwo Burne Loh [Kelana Jaya],"Seminit lagi ya. Warganegara kita suka
+Maksud P.42 [Anggaran Pembangunan 2013] -",,3.42 ptg.,1542,Tuan Gwo Burne Loh [Kelana Jaya],"Seminit lagi ya. Warganegara kita suka
 minum manis tetapi bolehkah kita menggalakkan orang ramai untuk mengambil minuman
 tanpa gula dengan membuatkan ia lebih murah daripada minuman yang bergula. Kerajaan
 mengenakan label amaran untuk pembungkusan rokok. Bolehkah kerajaan juga
@@ -2512,10 +2512,10 @@ kementerian mengambil langkah-langkah untuk memastikan bahawa orang ramai
 dimaklumkan dan mempunyai pilihan yang mudah untuk mereka hidup dengan sihat.
 Sekian, terima kasih."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1542,Tuan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Yang Berhormat
+Maksud P.42 [Anggaran Pembangunan 2013] -",,3.42 ptg.,1542,Tuan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Yang Berhormat
 Langkawi."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1547,Dato’ Paduka Abu Bakar bin Taib [Langkawi],"Terima kasih Tuan Pengerusi.
+Maksud P.42 [Anggaran Pembangunan 2013] -",,3.47ptg.,1547,Dato’ Paduka Abu Bakar bin Taib [Langkawi],"Terima kasih Tuan Pengerusi.
 Saya hanya ada satu perkara sahaja iaitu Butiran 030300 – Kecemasan dan Pesakit Luar.
 Sebelum itu, saya mengucapkan terima kasih kepada Yang Amat Berhormat Perdana
 Menteri yang telah meluluskan Klinik 1Malaysia yang telah dilancarkan olehnya pada 31
@@ -2539,10 +2539,10 @@ sahaja daripada Kuah pergi ke Alor Setar atau dari Kuah ke Kangar. Jadi sinislah
 Langkawi rasa sinis sedikit kerana segala apa yang dilakukan telah mengecewakan. Terima
 kasih Tuan Pengerusi."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1547,Tuan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Yang Berhormat
+Maksud P.42 [Anggaran Pembangunan 2013] -",,3.47ptg.,1547,Tuan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Yang Berhormat
 Labuan"
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1550,Datuk Haji Yusof Haji Mahal [Labuan],"Terima kasih Yang Berhormat Tuan
+Maksud P.42 [Anggaran Pembangunan 2013] -",,3.50 ptg.,1550,Datuk Haji Yusof Haji Mahal [Labuan],"Terima kasih Yang Berhormat Tuan
 Pengerusi. Saya ada dua sahaja isu di sini iaitu mengenai rawatan perubatan. Baru-baru ini
 terima kasih saya ucapkan pada Yang Berhormat Menteri apabila lawatan Yang Berhormat
 ke Labuan dua bulan yang lalu telah pun menambah dua orang doktor pakar iaitu pakar
@@ -2577,15 +2577,15 @@ Labuan. Jadi, saya rasa ini adalah keperluan bersama, bukan untuk keperluan Labu
 sahaja. Itu sahaja Yang Berhormat Tuan Pengerusi, saya juga turut menyokong. Terima
 kasih."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1550,Tuan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Kalau dapat Yang
+Maksud P.42 [Anggaran Pembangunan 2013] -",,3.50 ptg.,1550,Tuan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Kalau dapat Yang
 Berhormat ringkaskan, Yang Berhormat punya ucapan itu ya."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1550,Tuan Sim Tong Him [Kota Melaka],Terima kasih ya. Dua perkara sahaja.
+Maksud P.42 [Anggaran Pembangunan 2013] -",,3.50 ptg.,1550,Tuan Sim Tong Him [Kota Melaka],Terima kasih ya. Dua perkara sahaja.
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1550,Tuan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Dua perkara pun
+Maksud P.42 [Anggaran Pembangunan 2013] -",,3.50 ptg.,1550,Tuan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Dua perkara pun
 kalau ringkas, cepat Yang Berhormat."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1553,Tuan Sim Tong Him [Kota Melaka],"Boleh, Butiran 00201 – Perkhidmatan
+Maksud P.42 [Anggaran Pembangunan 2013] -",,3.53 ptg.,1553,Tuan Sim Tong Him [Kota Melaka],"Boleh, Butiran 00201 – Perkhidmatan
 Kesihatan Luar Bandar. Yang Berhormat Menteri, saya ingin membangkitan tentang satu
 klinik desa di Kampung Baru On Lok. Sejak tahun 2005, bangunan ini telah menghadapi
 masalah dan telah diberhentikan oleh JKR kerana bangunan itu berbahaya. Pada 12 Julai
@@ -2603,10 +2603,10 @@ sedang di bekal oleh hospital awam kepada pesakit? Adakah setanding dengan resea
 dan ubat baru yang dapat elakkan side effect yang lain? Dua perkara sahaja. Terima kasih
 Tuan Pengerusi."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1553,Tuan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Terima kasih.
+Maksud P.42 [Anggaran Pembangunan 2013] -",,3.53 ptg.,1553,Tuan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Terima kasih.
 Yang Berhormat Tawau."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1555,Datuk Chua Soon Bui [Tawau],"Terima kasih Yang Berhormat Tuan Pengerusi.
+Maksud P.42 [Anggaran Pembangunan 2013] -",,3.55 ptg.,1555,Datuk Chua Soon Bui [Tawau],"Terima kasih Yang Berhormat Tuan Pengerusi.
 Pada setiap tahun, bulan Oktober adalah bulan breast cancer awareness. Saya rasa sangat
 bimbang dan sedih kerana insiden kanser payudara semakin di Tawau dari semasa ke
 semasa semakin meningkat. Dengan tema, ‘early detection save life,’ kita tidak boleh guna
@@ -2647,16 +2647,16 @@ Tambunan tetapi dengan kes kecemasan, pesakit itu sudah meninggal dunia. Saya
 berharaplah kementerian boleh mengadakan satu polisi untuk periksa dan mengauditkan
 ambulans di Sabah."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1555,Tuan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Masa Yang
+Maksud P.42 [Anggaran Pembangunan 2013] -",,3.55 ptg.,1555,Tuan Pengerusi [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Masa Yang
 Berhormat, masa sudah habis Yang Berhormat."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1600,Datuk Chua Soon Bui [Tawau],"Satu lagi. Butiran 032200 – Farmasi dan
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1600,1600,Datuk Chua Soon Bui [Tawau],"Satu lagi. Butiran 032200 – Farmasi dan
 Bekalan. Saya ingin tahu adakah benar kekurangan ubat-ubat sangat serius di Hospital
 Kota Kinabalu dan bilakah masalah ini boleh diselesaikan? Sekian, terima kasih."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1600,Tuan Pengerusi [Datuk Ronald Kiandee],Yang Berhormat Hulu Selangor.
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1600,1600,Tuan Pengerusi [Datuk Ronald Kiandee],Yang Berhormat Hulu Selangor.
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1600,Tuan P. Kamalanathan a/l P. Panchanathan [Hulu Selangor],"Terima kasih
+Maksud P.42 [Anggaran Pembangunan 2013] -",,4.00 ptg.,1600,Tuan P. Kamalanathan a/l P. Panchanathan [Hulu Selangor],"Terima kasih
 Tuan Pengerusi. Butiran 020000 – Kesihatan Awam. Matlamat pembangunan milenium.
 Tiga daripada lapan matlamat itu ada dalam Kementerian Kesihatan. Mengurangkan
 mortaliti kanak-kanak, memperbaiki kesihatan ibu bersalin dan mencegah HIV/AIDS,
@@ -2700,10 +2700,10 @@ kawasan Hulu Selangor ada kawasan-kawasan pedalaman juga untuk memastikan
 perkara-perkara ini mereka dapat melaksanakan tanggungjawab mereka. Terima kasih
 Tuan Pengerusi."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1600,Tuan Pengerusi [Datuk Ronald Kiandee],"Yang Berhormat Silam, Yang
+Maksud P.42 [Anggaran Pembangunan 2013] -",,4.00 ptg.,1600,Tuan Pengerusi [Datuk Ronald Kiandee],"Yang Berhormat Silam, Yang
 Berhormat Serdang. Selepas itu Yang Berhormat Sibuti. Kemudian Menteri jawab."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1604,Tuan Haji Salleh Kalbi [Silam],"Terima kasih Tuan Pengerusi. Saya terus pergi
+Maksud P.42 [Anggaran Pembangunan 2013] -",,4.04 ptg.,1604,Tuan Haji Salleh Kalbi [Silam],"Terima kasih Tuan Pengerusi. Saya terus pergi
 ke Butiran 00500 – Penyelidikan dan Pembangunan (R&D). Saya ingin bertanya kepada
 pihak kementerian dari segi penyelidikan dan pembangunan ini, dari segi tujuan utama
 untuk kementerian menjurus kepada butiran ini dan apa bidang yang ditumpukan untuk
@@ -2758,14 +2758,14 @@ supaya Klinik 1Malaysia yang pertama di kawasan Silam yang belum lagi diadakan
 sekarang ini diminta dapat dipertimbangkan dan diwujudkan dengan kadar yang segera.
 Terima kasih."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1609,Puan Teo Nie Ching [Serdang],"Terima kasih Tuan Pengerusi. Butiran 030200 –
+Maksud P.42 [Anggaran Pembangunan 2013] -",,4.09 ptg.,1609,Puan Teo Nie Ching [Serdang],"Terima kasih Tuan Pengerusi. Butiran 030200 –
 Pengurusan Hospital. Pada 13 Ogos tahun ini, siling di Hospital Serdang runtuh sekali lagi.
 Kali pertama ia berlaku pada tahun yang lalu pada 30 Januari.
 Pada masa itu nasib baik tiada orang yang cedera, tetapi pada peristiwa yang
 berlaku pada bulan Ogos ini ada satu orang pegawai perubatan dan tiga jururawat yang
 sedang bertugas di zon merah, mereka cedera."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1610,Puan Teo Nie Ching [Serdang],"Saya rasa Hospital Serdang adalah sebenarnya sebuah hospital yang baru, hanya
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1610,1610,Puan Teo Nie Ching [Serdang],"Saya rasa Hospital Serdang adalah sebenarnya sebuah hospital yang baru, hanya
 beroperasi sejak Disember 2005 tetapi sampai hari ini berlaku dua insiden siling runtuh.
 Jadi saya hendak tanya apa puncanya? Sebenarnya selepas peristiwa pertama pada tahun
 2011, Kementerian Kesihatan sudah berjanji akan membuat satu pemeriksaan untuk
@@ -2805,9 +2805,9 @@ swasta. Jadi saya hendak tanya sama ada kementerian akan menimbangkan untuk
 membekalkan vaksin ini kepada semua anak-anak di negara kita? Sampai sini sahaja.
 Terima kasih Tuan Pengerusi."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1610,Tuan Pengerusi [Datuk Ronald Kiandee],"Ya, sila Yang Berhormat."
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1610,1610,Tuan Pengerusi [Datuk Ronald Kiandee],"Ya, sila Yang Berhormat."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1614,Tuan Haji Ahmad Lai Bujang [Sibuti],"Terima kasih Tuan Pengerusi. Saya ingin
+Maksud P.42 [Anggaran Pembangunan 2013] -",,4.14 ptg.,1614,Tuan Haji Ahmad Lai Bujang [Sibuti],"Terima kasih Tuan Pengerusi. Saya ingin
 berbahas Butiran 030200 – Pengurusan Hospital. Hospital Miri adalah sebuah hospital
 untuk menampung pesakit-pesakit dari luar kawasan seperti dari kawasan saya, Sibuti, di
 kawasan Baram dan juga di kawasan-kawasan di bandar raya Miri.
@@ -2826,9 +2826,9 @@ Menteri agar klinik pergigian ini dihantar ke kawasan saya seminggu sekali. Semi
 Bekenu, seminggu di Batu Niah dan seminggu di Sepuk agar masyarakat sana dapat juga
 untuk datang berjumpa dengan doktor-doktor ini. Sekian, terima kasih."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1614,Tuan Pengerusi [Datuk Ronald Kiandee],"Ya, sila Yang Berhormat Menteri."
+Maksud P.42 [Anggaran Pembangunan 2013] -",,4.14 ptg.,1614,Tuan Pengerusi [Datuk Ronald Kiandee],"Ya, sila Yang Berhormat Menteri."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1614,Menteri Kesihatan [Dato’ Seri Liow tiong Lai],"Terima kasih Tuan Pengerusi.
+Maksud P.42 [Anggaran Pembangunan 2013] -",,4.14 ptg.,1614,Menteri Kesihatan [Dato’ Seri Liow tiong Lai],"Terima kasih Tuan Pengerusi.
 Terima kasih kepada semua Ahli Yang Berhormat seramai 28 Ahli Yang Berhormat yang
 telah dapat menyertai perbahasan di peringkat jawatankuasa. Saya cuba hendak memberi
 penjelasan sebanyak boleh untuk memberi penerangan yang lengkap kepada semua Ahli
@@ -2885,11 +2885,11 @@ kita akan memberi perkhidmatan yang terbaik bagi pesakit-pesakit yang sentiasa d
 Hospital Kuala Lumpur ini.
 Kementerian Kesihatan sentiasa berterima kasih kepada..."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1614,Tuan M. Kulasegaran [Ipoh Barat],"Penjelasan. Di sini, di depan."
+Maksud P.42 [Anggaran Pembangunan 2013] -",,4.14 ptg.,1614,Tuan M. Kulasegaran [Ipoh Barat],"Penjelasan. Di sini, di depan."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1614,Dato’ Seri Liow Tiong Lai,"Ya, ya. Sila."
+Maksud P.42 [Anggaran Pembangunan 2013] -",,4.14 ptg.,1614,Dato’ Seri Liow Tiong Lai,"Ya, ya. Sila."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1614,Tuan M. Kulasegaran [Ipoh Barat],"Yang Berhormat Menteri, saya pun ada
+Maksud P.42 [Anggaran Pembangunan 2013] -",,4.14 ptg.,1614,Tuan M. Kulasegaran [Ipoh Barat],"Yang Berhormat Menteri, saya pun ada
 menyokong pandangan Yang Berhormat Sri Gading. Sebenarnya saya juga difahamkan.
 Saya pun hairanlah Yang Berhormat lebih arif dalam perkara ini, Yang Berhormat Sri
 Gading tetapi saya difahamkan dalam perbincangan di antara pegawai-pegawai perubatan
@@ -2901,7 +2901,7 @@ Bila kita semua pergi ke sana, actually it is a very- we find it difficult. I am
 ordinary people find it more difficult. I want the place on record to thanks the doctor within
 the excellent job."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1614,Dato’ Seri Liow Tiong Lai,"Terima kasih Yang Berhormat Ipoh Barat. Memang
+Maksud P.42 [Anggaran Pembangunan 2013] -",,4.14 ptg.,1614,Dato’ Seri Liow Tiong Lai,"Terima kasih Yang Berhormat Ipoh Barat. Memang
 juga bersama dengan Yang Berhormat Sri Gading dapat memberi sokongan kepada doktor-
 doktor kita yang memang telah bekerja keras di Hospital Kuala Lumpur. Sebenarnya kita
 sekarang juga telah pun siap bangunan Ambulatory Care Center (ACC) di Hospital Kuala
@@ -2926,10 +2926,10 @@ anugerah pingat persekutuan. Ini kita kena ingatkan mereka dan juga bukan sahaja
 persekutuan tetapi pingat negeri juga kita akan memberi mereka anugerah serta Anugerah
 Perkhidmatan Cemerlang setiap tahun di bawah Kementerian Kesihatan ini."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1614,Datuk Haji Mohamad bin Haji Aziz [Sri Gading],"Terima kasih Yang Berhormat
+Maksud P.42 [Anggaran Pembangunan 2013] -",,4.14 ptg.,1614,Datuk Haji Mohamad bin Haji Aziz [Sri Gading],"Terima kasih Yang Berhormat
 Menteri."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1614,Dato’ Seri Liow Tiong Lai,"Ya, terima kasih Yang Berhormat Sri Gading. Yang
+Maksud P.42 [Anggaran Pembangunan 2013] -",,4.14 ptg.,1614,Dato’ Seri Liow Tiong Lai,"Ya, terima kasih Yang Berhormat Sri Gading. Yang
 Berhormat Sungai Siput ada juga menyentuh tentang perancangan tenaga manusia dalam
 negara kita bahawa kita mengambil contoh Amerika Syarikat yang merupakan liberal policy.
 Saya ingin hendak katakan kita tidak sama dengan Amerika Syarikat.
@@ -2974,11 +2974,11 @@ dapat membuka perkhidmatan kerana tidak ada cukup jururawat yang pakar dalam bid
 bidang yang tertentu. Saya yakin bahawa masalah lebihan jururawat ini dapat diselesaikan
 dengan sebaik mungkin..."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1614,Tuan Chong Chieng Jen [Bandar Kuching],[Bangun]
+Maksud P.42 [Anggaran Pembangunan 2013] -",,4.14 ptg.,1614,Tuan Chong Chieng Jen [Bandar Kuching],[Bangun]
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1614,Dato’ Seri Liow Tiong Lai,"Ya, Yang Berhormat Bandar Kuching."
+Maksud P.42 [Anggaran Pembangunan 2013] -",,4.14 ptg.,1614,Dato’ Seri Liow Tiong Lai,"Ya, Yang Berhormat Bandar Kuching."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1630,Tuan Chong Chieng Jen [Bandar Kuching],"Terima kasih, terima kasih Yang
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■ 1630,1630,Tuan Chong Chieng Jen [Bandar Kuching],"Terima kasih, terima kasih Yang
 Berhormat Menteri.
 Dalam masalah pengambilan jururawat, saya harap kementerian boleh mengambil
 perhatian atas orang Sarawak. Lebih baik orang Sarawak yang berkhidmat di Sarawak.
@@ -2989,7 +2989,7 @@ dihantar ke Sarawak. Akan tetapi untuk mereka yang berasal dari Limbang dan diha
 Kuching untuk berkhidmat, memang mereka menghadapi masalah yang sama. Bolehkah
 pertimbangan atas keperluan housing allowance kepada mereka juga."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1630,Dato' Seri Liow Tiong Lai,"Terima kasih Yang Berhormat Bandar Kuching. Saya
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■ 1630,1630,Dato' Seri Liow Tiong Lai,"Terima kasih Yang Berhormat Bandar Kuching. Saya
 dengar Yang Berhormat Kuching cakap tadi tetapi tidak betullah apa Yang Berhormat
 Bandar Kuching kata bahawa kita di Semenanjung hendak mengetepikan orang Sarawak di
 Sarawak.
@@ -3005,12 +3005,12 @@ elaun daerah, tetapi yang di luar orang di Sarawak sahaja atau di Sabah sahaja t
 mendapat elaun. Ini sedang dikaji oleh JPA, bukan di bawah bidang Kementerian Kesihatan
 tetapi saya boleh maklumkan kepada JPA bahawa ada permintaan sedemikian..."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1630,Tuan Haji Hasbi Haji Habibollah [Limbang],"Yang Berhormat Menteri, ini
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■ 1630,1630,Tuan Haji Hasbi Haji Habibollah [Limbang],"Yang Berhormat Menteri, ini
 Limbang di belakang, sudah Limbang kena sebut."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1630,Dato' Seri Liow Tiong Lai,"Ya Yang Berhormat Limbang, silakan."
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■ 1630,1630,Dato' Seri Liow Tiong Lai,"Ya Yang Berhormat Limbang, silakan."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1630,Tuan Haji Hasbi Haji Habibollah [Limbang],"First thing terima kasih Tuan
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■ 1630,1630,Tuan Haji Hasbi Haji Habibollah [Limbang],"First thing terima kasih Tuan
 Pengerusi. Yang Berhormat Bandar Kuching, terima kasih for bringing up the matter. Kalau
 di Sarawak itu, kalau orang dari Kuching hendak transfer ke Limbang, dia fikir sepuluh kali,
 bukan fikir dua kali, macam-macam dia fikir. Limbang itu jauh, dua kali naik kapal terbang,
@@ -3023,7 +3023,7 @@ Limbang, 29 September dia dah tukar, dah balik Kelantan. Akan tetapi mungkin ada
 balik tetapi these are the situation di Limbang, memang betullah apa yang disuarakan oleh
 Yang Berhormat Bandar Kuching. Terima kasih."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1630,Dato' Seri Liow Tiong Lai,"Okey, kita ambil ingatannya ya daripada teguran-
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■ 1630,1630,Dato' Seri Liow Tiong Lai,"Okey, kita ambil ingatannya ya daripada teguran-
 teguran Ahli-ahli Yang Berhormat.
 Yang Berhormat Sungai Siput tadi ada menyentuh tentang kajian impak TPP, EU-
 ASEAN punya persetujuan berhubung tempoh paten yang akan dipanjangkan, data
@@ -3054,12 +3054,12 @@ harian yang begitu manis sekali kerana manisan itu terlalu tinggi dan kita rasa 
 kawal, rakyat kita tidak mengambil terlalu banyak gula.
 Cadangan Yang Berhormat Parit Sulong untuk mengadakan unit..."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1630,Dato' Abd. Rahman Dahlan [Kota Belud],"Yang Berhormat Menteri, penjelasan
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■ 1630,1630,Dato' Abd. Rahman Dahlan [Kota Belud],"Yang Berhormat Menteri, penjelasan
 sikit tentang stevia tadi."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1630,Dato' Seri Liow Tiong Lai,"Ya, ya."
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■ 1630,1630,Dato' Seri Liow Tiong Lai,"Ya, ya."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1630,Dato' Abd. Rahman Dahlan [Kota Belud],"Terima kasih Tuan Pengerusi.
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■ 1630,1630,Dato' Abd. Rahman Dahlan [Kota Belud],"Terima kasih Tuan Pengerusi.
 Daripada penjelasan Yang Berhormat Menteri agak berbeza sedikit dengan apa yang
 dikatakan oleh pengusaha ataupun manufacturer stevia ini. Dia mengatakan bahawa satu
 butir, what we call that, kapsul, sebiji itu kemanisannya sama dengan dua, tiga sudu teh
@@ -3068,7 +3068,7 @@ yang tidak boleh diambil kerana penjelasan itu agak confusing sedikit. Mungkin Y
 Berhormat Menteri boleh jelaskan lebih lagi dengan izin, why are you not allowing
 Malaysian to use stevia ini? Terima kasih."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1630,Dato' Seri Liow Tiong Lai,"Saya hendak jelaskan di sini ya. Kementerian
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■ 1630,1630,Dato' Seri Liow Tiong Lai,"Saya hendak jelaskan di sini ya. Kementerian
 Kesihatan tidak akan melarang orang menggunakan stevia, no! We will never stop people, I
 will never encourage people kerana penggunaan stevia ini perlu juga lihat dari segi cara
 penggunaannya. Kalau kita dah biasa dengan gula, kita tahu cara pengawalannya tetapi
@@ -3081,12 +3081,12 @@ rapi. Akan tetapi kalau hendak galakkan rakyat ambil sendiri, you choose as you 
 perlukan juga pendidikan dan pendedahan yang secukupnya terhadap penggunaan stevia
 ini."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1630,Datuk Chua Soon Bui [Tawau],"Minta penjelasan. Terima kasih, tentang isu yang
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■ 1630,1630,Datuk Chua Soon Bui [Tawau],"Minta penjelasan. Terima kasih, tentang isu yang
 sama, stevia. Saya difahamkan dari maklumat yang diberikan kepada saya, waktu
 seseorang pesakit diabetes menggunakan stevia itu, dalam darah mereka, glucose level
 atau blood sugar tidak meningkat. Betul atau tidak?"
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1640,Dato’ Seri Liow Tiong Lai,"Sebab itu saya katakan tadi bahawa pengguna stevia
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1640,1640,Dato’ Seri Liow Tiong Lai,"Sebab itu saya katakan tadi bahawa pengguna stevia
 ini perlu dipantau oleh doktor ataupun oleh nutritionist atau dietitian. Ia adalah lebih baik
 dan orang ramai perlu mengetahui bahawa penggunaan kemanisan yang terlalu sangat
 akan menyebabkan kita having a sweet tongue and sweet taste pada akhir masanya.
@@ -3166,7 +3166,7 @@ five students yang telah pun kita berikan pengiktirafan, but later batch coming 
 are a mix. Ada yang 2005, ada yang 2006 and 2007. So, kita kena kaji balik kerana bukan
 semuanya kelulusan sebelum tahun 2005."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1640,Tuan M. Kulasegaran [Ipoh Barat],"Terima kasih Tuan Pengerusi, terima kasih
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1640,1640,Tuan M. Kulasegaran [Ipoh Barat],"Terima kasih Tuan Pengerusi, terima kasih
 Yang Berhormat Menteri. Yang Berhormat Menteri, I want to clear kerana saya masih ada
 pada tahun 2004 di sini, bila debate berlaku. Kerajaan telah mengisytiharkan sesiapa yang
 masuk, seperti Yang Berhormat Menteri kata, before 31st December 2005.
@@ -3175,35 +3175,35 @@ saya, pasal itu saya baca emel tersebut. Di mana mereka telah masuk pada tahun 2
 dan telah pun keluar dan telah pun berjumpa dengan pihak-pihak dan pre registration,
 whatever it is."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1650,Tuan M. Kulasegaran [Ipoh Barat],"Namun sehingga ini hanya lima orang diberi keutamaan tetapi semua diheld back.
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1650,1650,Tuan M. Kulasegaran [Ipoh Barat],"Namun sehingga ini hanya lima orang diberi keutamaan tetapi semua diheld back.
 Itu yang merunsingkan keluarga mereka kerana ramai di antara mereka dari golongan yang
 berpendapatan rendah. They are affected just because of some delay in your department.
 Can it be speed it up, to be fair to them? These are the peoples who used their own money,
 not one cent from the government. We got the duty to help this kind of people."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1650,Dato’ Seri Liow Tiong Lai,"Ya, terima kasih Yang Berhormat Ipoh Barat. Saya
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1650,1650,Dato’ Seri Liow Tiong Lai,"Ya, terima kasih Yang Berhormat Ipoh Barat. Saya
 hendak beri penerangan yang tepat iaitu if actually pengambilan dahulu sebelum 31
 Disember 2005 kita akan pastikan mereka diberi pengiktirafan dan kita akan berikan
 houseman training dan sekiranya ada masalah, hubungi kita. Kita akan beri bantuan yang
 secukupnya."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1650,Tuan M. Kulasegaran [Ipoh Barat],"Boleh saya buat macam ini Yang Berhormat.
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1650,1650,Tuan M. Kulasegaran [Ipoh Barat],"Boleh saya buat macam ini Yang Berhormat.
 Ada lagi satu minggu Deepavali holiday so that, kita tunggu bolehkah mereka dapat surat
 dahulu kerana mereka ada emel kepada saya. Kalau mereka tidak dapat apa-apa
 appointment, saya buat appointment dengan Yang Berhormat, atau dengan mereka supaya
 perkara ini diselesaikan. Because I, think this a lower income group. Perlu ..."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1650,Dato’ Seri Liow Tiong Lai,"You can refer to my office, on my director general
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1650,1650,Dato’ Seri Liow Tiong Lai,"You can refer to my office, on my director general
 office. Boleh, tetapi saya hendak jelaskan juga, kadang-kadang ada fakta yang tidak betul.
 Kadang-kadang dia masuk tahun 2006, so kita kena jelaskan."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1650,Tuan M. Kulasegaran [Ipoh Barat],"Tahun 2005, I’m very clear on this."
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1650,1650,Tuan M. Kulasegaran [Ipoh Barat],"Tahun 2005, I’m very clear on this."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1650,Dato’ Seri Liow Tiong Lai,You make sure it is 2005.
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1650,1650,Dato’ Seri Liow Tiong Lai,You make sure it is 2005.
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1650,Tuan M. Kulasegaran [Ipoh Barat],They masuk sebelum 2005. Terima kasih.
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1650,1650,Tuan M. Kulasegaran [Ipoh Barat],They masuk sebelum 2005. Terima kasih.
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1650,Dato’ Seri Liow Tiong Lai,"Okey, terima kasih.
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1650,1650,Dato’ Seri Liow Tiong Lai,"Okey, terima kasih.
 Yang Berhormat Ipoh Barat juga bertanya berkenaan dengan cardiology services
 di Hospital Ipoh. Sukacita saya maklumkan sejak bulan Julai 2011 kita sudah memberi
 perkhidmatan kardiologi di Hospital Ipoh, Hospital Raja Permaisuri Bainun. Kita telah bagi
@@ -3246,23 +3246,23 @@ sebagainya tetapi dari segi bilangan doktor, lebih kurang 60 pada tahun lalu dan
 sekarang, tahun ini ada 28. Banyak lagi hendak balik. Sudah lebih kurang 88 yang masuk
 bekerja dengan kerajaan tetapi kebanyakannya di hospital swasta..."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1650,Dr. Hajah Siti Mariah binti Mahmud [Kota Raja],Yang Berhormat Menteri.
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1650,1650,Dr. Hajah Siti Mariah binti Mahmud [Kota Raja],Yang Berhormat Menteri.
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1650,Dato’ Seri Liow Tiong Lai,Saya yakin ramai lagi akan balik pad akhir tahun ini.
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1650,1650,Dato’ Seri Liow Tiong Lai,Saya yakin ramai lagi akan balik pad akhir tahun ini.
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1650,Dr. Hajah Siti Mariah binti Mahmud [Kota Raja],"Yang Berhormat Menteri, saya
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1650,1650,Dr. Hajah Siti Mariah binti Mahmud [Kota Raja],"Yang Berhormat Menteri, saya
 Kota Raja."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1650,Dato’ Seri Liow Tiong Lai,"Ya, Yang Berhormat Kota Raja."
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1650,1650,Dato’ Seri Liow Tiong Lai,"Ya, Yang Berhormat Kota Raja."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1650,Dr. Hajah Siti Mariah binti Mahmud [Kota Raja],"Terima kasih Yang Berhormat.
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1650,1650,Dr. Hajah Siti Mariah binti Mahmud [Kota Raja],"Terima kasih Yang Berhormat.
 Saya tertarik tadi apabila kita dapat menarik balik doktor-doktor kita daripada luar negara.
 Tentunya doktor-doktor pakar. Cumanya saya ingin bertanya, apabila mereka balik ke mari
 adakah tawaran imbuhan mereka bagaimana diambil kira? Adakah ia melihat kepada
 jumlah tahun mereka bekerja dan sebagainya. Itu persoalan yang kita hendak tahu. Is it the
 pay that push them back, or ada insentif-insentif yang lain? Terima kasih."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1650,Dato’ Seri Liow Tiong Lai,"Bagi doktor-doktor pakar yang balik ke negara kita,
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1650,1650,Dato’ Seri Liow Tiong Lai,"Bagi doktor-doktor pakar yang balik ke negara kita,
 kita ada multi entry point. Ia bukan sahaja satu entry point sahaja. Dia bergantung kepada
 kepakaran mereka yang lama berkhidmat di negara-negara itu. Selama 10 tahun, 15 tahun.
 Kita tengok, ada yang masuk JUSA C, ada yang masuk JUSA A, ada yang masuk Gred 54.
@@ -3290,12 +3290,12 @@ Yang Berhormat Gopeng untuk naikkan kepada 7 peratus untuk mencapai KPI kita. Ak
 tetapi kita yakin bahawa adalah lebih baik kita remain as 6.5 peratus kerana kita dapat
 pastikan bahawa penjagaan diabetic sugar level dapat dikawal dengan baik."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1700,Dr. Lee Boon Chye [Gopeng],"Terima kasih Yang Berhormat Menteri. Cuma data
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1700,1700,Dr. Lee Boon Chye [Gopeng],"Terima kasih Yang Berhormat Menteri. Cuma data
 yang baru itu mungkin untuk non-insulin dependant diabetes, 7 peratus itu lebih selamat
 daripada 6.5 peratus. jadi ini perlu rujuk kepada pakar-pakar berkenaan untuk tetapkan KPI
 yang baru. Itu maksud saya."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1700,Dato’ Seri Liow Tiong Lai,"Kita akan merujuk balik kepada WHO lah. Memang
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1700,1700,Dato’ Seri Liow Tiong Lai,"Kita akan merujuk balik kepada WHO lah. Memang
 standard-standard ini is a world standard dan kita tidak akan mengurangkan standard kita
 untuk mencapai KPI kita. berhubung dengan Ayamas. Yang Berhormat bertanyakan
 tentang Ayamas ini, saya telah arahkan kementerian Bahagian Keselamatan Makanan
@@ -3317,7 +3317,7 @@ diambil pada bulan Ogos. Kita kena check dan kita kena pastikan bahawa pemeriksa
 produk-produk kita perlu dilakukan dengan cepat dan juga result kena diumumkan untuk
 kita pastikan pemantauan dibuat dengan baik."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1700,Dr. Lee Boon Chye [Gopeng],"Baik, Terima kasih Yang Berhormat Menteri cuma
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1700,1700,Dr. Lee Boon Chye [Gopeng],"Baik, Terima kasih Yang Berhormat Menteri cuma
 penjelasan Yang Berhormat Menteri tidak meyakinkan berkenaan dengan keselamatan
 produk-produk makanan di pasaran. Sebab kalau veterinary yang buat pemeriksaan
 semasa Ogos itu, telah membuktikan ada keluaran chloramphenicol dalam produk Ayamas
@@ -3329,7 +3329,7 @@ berterusan dalam kes sedemikian. Random sampling on the run every now and then,
 ataupun macam mana mekanisme untuk memastikan memastikan makanan itu selamat
 untuk pengguna?"
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1700,Dato’ Seri Liow Tiong Lai,"Okey, untuk makluman Ahli-ahli Yang Berhormat,
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1700,1700,Dato’ Seri Liow Tiong Lai,"Okey, untuk makluman Ahli-ahli Yang Berhormat,
 Kementerian Kesihatan melalui Bahagian Keselamatan Makanan, kita membuat
 pemantauan at the source. Saya rasa kita juga membuat pemantauan at the retail land.
 Akan tetapi retail saya rasa memang lambat because when we go to detail, memang kita
@@ -3340,17 +3340,17 @@ yang tersendiri untuk memantau kilang-kilang dalam negara kita. Kita akan bekerj
 dengan veterinary to look into the sampling process yang dibuat oleh pihak veterinary. Tuan
 Pengerusi..."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1700,Puan Chong Eng [Bukit Mertajam],"Penjelasan, penjelasan..."
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1700,1700,Puan Chong Eng [Bukit Mertajam],"Penjelasan, penjelasan..."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1700,Dato’ Seri Liow Tiong Lai,Ya.
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1700,1700,Dato’ Seri Liow Tiong Lai,Ya.
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1700,Puan Chong Eng [Bukit Mertajam],"Mengenai Ayamas ini. Sekarang kita sudah
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1700,1700,Puan Chong Eng [Bukit Mertajam],"Mengenai Ayamas ini. Sekarang kita sudah
 suspek ia mungkin ada antibiotik yang tidak boleh dikandungkan ataupun terlalu tinggi. Jadi,
 adakah kita alert semua outlet di mana-mana yang ada menjual Ayamas kerana dia ada di
 seluruh Malaysia. Apakah kementerian sudah buat until now? What the kementerian has
 done?"
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1700,Dato’ Seri Liow Tiong Lai,"Untuk makluman Yang Berhormat Bukit Mertajam,
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1700,1700,Dato’ Seri Liow Tiong Lai,"Untuk makluman Yang Berhormat Bukit Mertajam,
 saya baru umumkan tadi bahawa siasatan makmal yang kita buat tidak ada kandungan
 Chloramphenicol. Kalau ada, kita akan ambil immediate action untuk keluarkan produk ini
 daripada pasaran. Ini memang standard operating procedure yang diamalkan oleh
@@ -3367,14 +3367,14 @@ Ayamas juga dan membuat pemantauan dan kita tidak mendapat kesan apa-apa dari se
 kandungan antibiotik ini. So, apa yang diumumkan oleh veterinary ini dan kita akan kaji
 balik dari segi kerjasama di antara dua kementerian. Ya Yang Berhormat Gopeng.."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1700,Dr. Lee Boon Chye [Gopeng],"Terima kasih Yang Berhormat Menteri. Memang
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1700,1700,Dr. Lee Boon Chye [Gopeng],"Terima kasih Yang Berhormat Menteri. Memang
 saya percaya terhadap profesionalisme kementerian itu. Cuma bukan setakat pengguna
 keliru, saya pasti Dewan ini masih keliru bagaimana keputusan daripada Kementerian
 kesihatan itu berlainan daripada Veterinary Department itu. Sepatutnya ada siasatan yang
 dibuat bagaimana Veterinary Department itu keluarkan satu keputusan yang berlainan
 daripada Kementerian Kesihatan."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1700,Dato’ Seri Liow Tiong Lai,"Ya, ini memang kita akan membuat kajian sedalam-
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1700,1700,Dato’ Seri Liow Tiong Lai,"Ya, ini memang kita akan membuat kajian sedalam-
 dalamnya untuk pastikan perkara ini tidak berlaku lagi. Terima kasih Yang Berhormat
 Gopeng. Berhubung dengan sumbangan kepada badan-badan lain, RM25 juta yang
 dibangkitkan oleh Yang Berhormat Gopeng tadi bahawa apakah penggunaannya.
@@ -3389,7 +3389,7 @@ keselamatan pesakit dapat dijaga dengan baik dan tindakan telah pun diambil, unt
 tindakan susulan akan kita ambil kemudian. Yang Berhormat daripada Sri Aman bincang
 berhubung dengan klinik di Banting dan di..."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1700,Dr. Lee Boon Chye [Gopeng],"Sebelum itu Yang Berhormat Menteri. Ada berapa
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1700,1700,Dr. Lee Boon Chye [Gopeng],"Sebelum itu Yang Berhormat Menteri. Ada berapa
 butiran yang belum dijawab itu. Mungkin ada yang spesifik yang boleh dijawab melalui
 jawapan bertulis. Cuma dua perkara itu. Pertama, berkenaan dengan satu unit khas untuk
 lebih kepada health economic yang mengkaji semua kos rawatan dan gunakan, misalannya
@@ -3401,7 +3401,7 @@ kita lihat sebenarnya kementerian boleh swastakan kepada klinik swasta untuk raw
 Klinik 1malaysia dengan ada perkhidmatan seorang doktor di situ jauh lebih baik daripada
 Klinik 1Malaysia di mana tidak ada doktor di situ. Sekian."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1710,Dato' Seri Liow Tiong Lai,"Okey, terima kasih Yang Berhormat Gopeng. Memang
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1710,1710,Dato' Seri Liow Tiong Lai,"Okey, terima kasih Yang Berhormat Gopeng. Memang
 saya juga hendak maklumkan bahawa, kita ada Unit Pharmacoeconomics ini. Kita akan
 lihat cadangan-cadangan Yang Berhormat tadi sama ada kita outsource Klinik 1Malaysia
 kepada swasta lebih kos efektif ataupun sebaliknya. Sebenarnya apa yang kita buat
@@ -3428,15 +3428,15 @@ Hospital Sri Aman tahun depan juga. Kita akan tender dan juga buat pembangunan S
 Aman dengan secepat mungkin. Berhubung dengan permintaan klinik-klinik pakar yang
 sedia ada dapat ditingkatkan dan kita akan dapat buatkan dengan segera…"
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1710,Dato' Ismail bin Haji Abd. Muttalib [Maran],Yang Berhormat Menteri.
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1710,1710,Dato' Ismail bin Haji Abd. Muttalib [Maran],Yang Berhormat Menteri.
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1710,Dato' Seri Liow Tiong Lai,Ya.
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1710,1710,Dato' Seri Liow Tiong Lai,Ya.
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1710,Dato' Haji Ismail bin Abd. Muttalib [Maran],Yang Berhormat Maran
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1710,1710,Dato' Haji Ismail bin Abd. Muttalib [Maran],Yang Berhormat Maran
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1710,Dato' Seri Liow Tiong Lai,Yang Berhormat Maran.
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1710,1710,Dato' Seri Liow Tiong Lai,Yang Berhormat Maran.
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1710,Dato' Ismail bin Abd. Muttalib [Maran],"Saya tidak sempat berucap tadi kerana
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1710,1710,Dato' Ismail bin Abd. Muttalib [Maran],"Saya tidak sempat berucap tadi kerana
 beri rakan-rakan yang lain tetapi saya hendak mencelah sedikit di sini tentang klinik
 kesihatan. Ada dua Yang Berhormat Menteri, pertama ialah Klinik Kesihatan Kampung
 Awah. Kalau boleh minta pegawai kementerian iaitu ambulan di Klinik Awah ini telah
@@ -3448,21 +3448,21 @@ tetapi salah satunya cukup uzur dan saya melihat sendiri. Saya mohon benarlah ke
 Menteri kalau dapat dua buah ambulan ini untuk Maran dan juga Kampung Awah
 disediakan bagi tahun ini. Terima kasih banyak. Itu sahaja. Terima kasih."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1710,Dato' Seri Liow Tiong Lai,"Ya terima kasih Yang Berhormat Maran. Kita akan
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1710,1710,Dato' Seri Liow Tiong Lai,"Ya terima kasih Yang Berhormat Maran. Kita akan
 ambil tindakan dan ambil maklum tentang permohonan. Ini akan dibuat susulan kemudian.
 Berhubung dengan permohonan ataupun kenyataan Yang Berhormat Kota Raja tentang..."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1710,Tuan Masir Kujat [Sri Aman],Yang Berhormat Menteri. Sri Aman.
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1710,1710,Tuan Masir Kujat [Sri Aman],Yang Berhormat Menteri. Sri Aman.
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1710,Tuan Pengerusi [Datuk Ronald Kiandee],Yang Berhormat Sri Aman.
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1710,1710,Tuan Pengerusi [Datuk Ronald Kiandee],Yang Berhormat Sri Aman.
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1710,Dato' Seri Liow Tiong Lai,Oh! Yang Berhormat Sri Aman.
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1710,1710,Dato' Seri Liow Tiong Lai,Oh! Yang Berhormat Sri Aman.
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1710,Tuan Masir Kujat [Sri Aman],"Sebelum Yang Berhormat Menteri beralih kepada
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1710,1710,Tuan Masir Kujat [Sri Aman],"Sebelum Yang Berhormat Menteri beralih kepada
 Yang Berhormat Kota Raja. Tadi saya ada sebut untuk Klinik Kesihatan Pantu, peruntukan
 untuk naik taraf sudah diluluskan, benarkah tidak? Mengapa projek itu dialih ke tempat lain?"
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1710,Dato' Seri Liow Tiong Lai,"Saya tidak ada maklumat terperinci di sini, tetapi saya
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1710,1710,Dato' Seri Liow Tiong Lai,"Saya tidak ada maklumat terperinci di sini, tetapi saya
 akan buat jawapan secara bertulis kepada Yang Berhormat. Memang kalau peruntukan
 sudah diberi, kita tidak akan alihkan kecuali ada masalah tanah ataupun masalah lain. Dari
 segi naik taraf, tidak ada alasan untuk kita alihkan peruntukan. Oleh itu, saya akan pastikan
@@ -3492,7 +3492,7 @@ kepada Kabinet dan juga bawa balik ke Parlimen. So saya rasa ini satu lagi prose
 agak panjang kerana kita tahu ini proses yang penting untuk kita hendak naik taraf ataupun
 hendak memodenkan perkhidmatan kesihatan dalam negara kita."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1710,Dr. Hajah Siti Mariah binti Mahmud [Kota Raja],"Terima kasih Yang Berhormat
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1710,1710,Dr. Hajah Siti Mariah binti Mahmud [Kota Raja],"Terima kasih Yang Berhormat
 Menteri. Soalan saya begini, kalau dibuat perbandingan dengan integrasi yang kita hendak
 ke arah itu dengan kita memperkukuhkan lagi sistem kesihatan awam kita, makna kita
 masih ada dua sistem yang berasingan. Jadi dengan cara itu, maksud saya antara masalah
@@ -3508,14 +3508,14 @@ dan sebagainya. Jadi mungkin ada insentif-insentif lain yang boleh membuat para 
 untuk duduk di dalam sistem awam ini sekarang. Itu cuma satu cadangan saya. Terima
 kasih."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1710,Dato' Seri Liow Tiong Lai,"Terima kasihlah kepada Yang Berhormat Kota Raja
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1710,1710,Dato' Seri Liow Tiong Lai,"Terima kasihlah kepada Yang Berhormat Kota Raja
 kerana kita belum buat apa-apa keputusan dengan National Health Financing Authority ini,
 tidak ada pun. Juga kebimbangan orang ramai ini memang kita ambil maklum. Tentang
 dakwa tentang Cosway diambil alih dan sebagainya itu tidak betul. Memang tidak ada.
 Memang pun tidak ada dalam perbincangan kita pun berhubung dengan Cosway ambil alih
 tentang farmasi yang dalam..."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1710,Dr. Hajah Siti Mariah binti Mahmud [Kota Raja],"Tidak. Maksud saya bukan
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1710,1710,Dr. Hajah Siti Mariah binti Mahmud [Kota Raja],"Tidak. Maksud saya bukan
 Cosway ambil alih. Oleh kerana Berjaya Group ini mempunyai satu struktur, dia sudah ada
 dalam structure dia, dia ada Cosway. Banyak dia punya outlet dan sebagainya. Jadi di
 dalam perancangan kita baca, dia akan mengambil tempat-tempat ini juga akan dijadikan
@@ -3524,7 +3524,7 @@ bawah Berjaya. Jadi, sekiranya satu outfit multilevel ini digunakan untuk juga m
 menjadi pharmaceutical outlet, maka makna the network is so huge dan mungkin juga
 mengganggu market yang ada sekarang."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1720,Dato' Seri Liow Tiong Lai,"Saya hendak jelaskan di sini sejelas-jelasnya, tidak
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1720,1720,Dato' Seri Liow Tiong Lai,"Saya hendak jelaskan di sini sejelas-jelasnya, tidak
 ada cadangan ini. There is no such thing.
 Berhubung dengan Yang Berhormat Putatan, Yang Berhormat Putatan telah
 menyatakan tentang pakar-pakar yang datang ke Kota Kinabalu. Kita sentiasa
@@ -3547,17 +3547,17 @@ Kota Kinabalu. Saya setuju bahawa pakar-pakar gigi perlu dipertingkatkan di klin
 termasuk di Luyang dan sebagainya. Saya setuju dan kita akan lihat bagaimana kita dapat
 menambahkan bilangan pakar gigi di Kota Kinabalu."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1720,Datuk Dr. Marcus Makin Mojigoh [Putatan],"Terima kasih Yang Berhormat
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1720,1720,Datuk Dr. Marcus Makin Mojigoh [Putatan],"Terima kasih Yang Berhormat
 Menteri. Saya harap rakyat Malaysia di negeri Sabah dapat mendengar jawapan Menteri.
 Saya bagi pihak rakyat negeri Sabah mengucapkan berterima kasih atas keprihatinan
 kementerian, terima kasih. Saya cuma hendak mendapat penjelasan..."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1720,Tuan Haji Salleh Kalbi [Silam],"Ada cuma lagi kah? Yang Berhormat Putatan
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1720,1720,Tuan Haji Salleh Kalbi [Silam],"Ada cuma lagi kah? Yang Berhormat Putatan
 duduklah. Say thank youlah Yang Berhormat Putatan... [Ketawa]"
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1720,Seorang Ahli,Menyokong atau tidak ini?
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1720,1720,Seorang Ahli,Menyokong atau tidak ini?
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1720,Datuk Dr. Marcus Makin Mojigoh [Putatan],"Ada permintaan daripada sahabat-
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1720,1720,Datuk Dr. Marcus Makin Mojigoh [Putatan],"Ada permintaan daripada sahabat-
 sahabat dari belakang, kalau juga perkhidmatan gigi ini di Parlimen diwujudkan. Tidak
 tahulah ini berat atau ringan, ini permintaan sahabat-sahabat di belakang. Ini bukan
 permintaan Yang Berhormat Menteri. Ini Yang Berhormat Tangga Batu.
@@ -3566,23 +3566,23 @@ dimasukkan ke hospital pada 2001 dan meninggal pada bulan ini. Apakah sebab-seba
 kenapa dibiarkan di Hospital Queen Elizebeth ini begitu lama, tidak dirujuk kepada hospital
 yang lebih mungkin ada kebolehan to address the particular patient?"
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1720,Dato' Seri Liow Tiong Lai,"Terima kasih Yang Berhormat Putatan. Berhubung
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1720,1720,Dato' Seri Liow Tiong Lai,"Terima kasih Yang Berhormat Putatan. Berhubung
 dengan apa-apa kemusykilan ataupun ada kecuaian doktor, saya harap boleh kita membuat
 aduan kepada Kementerian Kesihatan. Kita mengambil setiap kes seriously dan kita akan
 menyiasat sedalam-dalamnya."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1720,Datuk Dr. Marcus Makin Mojigoh [Putatan],"Ini aduanlah ini. Sekarang ini adalah
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1720,1720,Datuk Dr. Marcus Makin Mojigoh [Putatan],"Ini aduanlah ini. Sekarang ini adalah
 aduan kepada Yang Berhormat Menteri. Namanya..."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1720,Tuan Pengerusi [Datuk Ronald Kiandee],"Boleh hantar secara bertulis kepada
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1720,1720,Tuan Pengerusi [Datuk Ronald Kiandee],"Boleh hantar secara bertulis kepada
 Yang Berhormat Menterilah, Yang Berhormat."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1720,Dato' Seri Liow Tiong Lai,Boleh. Saya akan mengambil maklum dan menyiasat.
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1720,1720,Dato' Seri Liow Tiong Lai,Boleh. Saya akan mengambil maklum dan menyiasat.
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1720,Datuk Dr. Marcus Makin Mojigoh [Putatan],"Berasal dari Kudat. Mungkin Yang
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1720,1720,Datuk Dr. Marcus Makin Mojigoh [Putatan],"Berasal dari Kudat. Mungkin Yang
 Berhormat Beluran punya pengundi."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1720,Dato' Seri Liow Tiong Lai,"Terima kasih Yang Berhormat Putatan, kerana masa
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1720,1720,Dato' Seri Liow Tiong Lai,"Terima kasih Yang Berhormat Putatan, kerana masa
 tidak mengizinkan, saya hendak cepat.
 Yang Berhormat Bukit Mertajam bertanya mengenai status pembangunan Hospital
 Seberang Jaya. Saya hendak maklumkan bahawa operating theater telah pun diperbaharui
@@ -3590,20 +3590,20 @@ dan sedang dibuat sekarang dan kita akan tambah lagi dua operating theater di Ho
 Seberang Jaya dan akan siap pada awal tahun hadapan dan kita akan berikan
 perkhidmatan yang baik..."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1720,Puan Chong Eng [Bukit Mertajam],Adakah ini di dalam blok baru?
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1720,1720,Puan Chong Eng [Bukit Mertajam],Adakah ini di dalam blok baru?
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1720,Dato' Seri Liow Tiong Lai,"Lain. Blok baru ada tambahan wad baru. Kita akan
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1720,1720,Dato' Seri Liow Tiong Lai,"Lain. Blok baru ada tambahan wad baru. Kita akan
 buat tambahan wad baru. Itu dalam perancangan kita. Ada dua perancangan utama di
 Pulau Pinang. Satu, tambahan wad baru di Hospital Seberang Jaya dan satu lagi tambahan
 wad wanita dan kanak-kanak di Hospital Pulau Pinang. Di Seberang Jaya lebih kurang 350
 katil. Kita akan tambahkan bilangan katil di Hospital Seberang Jaya kerana memerlukan
 katil yang lebih banyak."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1720,Puan Chong Eng [Bukit Mertajam],"Ini merupakan perancangan di bawah
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1720,1720,Puan Chong Eng [Bukit Mertajam],"Ini merupakan perancangan di bawah
 RMKe-9 dan dibawa ke RMKe-10, First Rolling Plan, Second Rolling Plan dan sekarang
 pergi ke Third Rolling Plan. Nanti dia roll, roll, dia hilanglah. Bilakah ia boleh dimulakan?"
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1720,Dato' Seri Liow Tiong Lai,"Kita sudah masuk dalam perancangan Third Rolling
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1720,1720,Dato' Seri Liow Tiong Lai,"Kita sudah masuk dalam perancangan Third Rolling
 Plan. Tuan Pengerusi, berhubung dengan Hospital Bukit Mertajam, juga kita akan mengkaji
 keperluan tambahan katil, tetapi dari segi keperluan pakar, kebanyakan di Hospital
 Seberang Jaya dan kita akan lihat bagaimana kita dapat naik taraf sahaja, Yang Berhormat
@@ -3618,7 +3618,7 @@ mendalam lagi.
 Berhubung dengan cadangan untuk kita melihat impak medical tourism terhadap
 hospital..."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1720,Puan Chong Eng [Bukit Mertajam],"Sebelum itu, saya rasa kita perlu ada
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1720,1720,Puan Chong Eng [Bukit Mertajam],"Sebelum itu, saya rasa kita perlu ada
 program pencegahan ataupun rawatan intervention. Intervention kepada 340,000 people
 sekarang yang mungkin ada depression ataupun penyakit-penyakit mental yang belum
 begitu serius. Kita tidak ada intervention ataupun rawatan. Apakah program untuk
@@ -3627,7 +3627,7 @@ kepada mereka yang di bawah umur 15 tahun ini? Kita boleh lihat mereka di sekola
 kita ada program, kita boleh identify mereka dan menjalankan group therapy maybe dan
 mungkin kita dapat menyembuhkan mereka. Adakah kita ada program?"
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1720,Dato' Seri Liow Tiong Lai,"Terima kasih Tuan Pengerusi, terima kasih Yang
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■1720,1720,Dato' Seri Liow Tiong Lai,"Terima kasih Tuan Pengerusi, terima kasih Yang
 Berhormat Bukit Mertajam. Kita Kementerian Kesihatan memang ada program untuk
 mengenal pasti pesakit-pesakit mental ataupun those who are undergo depression kerana
 kita tahu seseorang itu sebelum masuk depression, dia ada stress, the anxiety, then only go
@@ -3645,20 +3645,20 @@ discussion with you on this bidang mental. Banyak lagi program saya tidak dapat 
 persatu. Banyak lagi. Sekarang Yang Berhormat Bukit Mertajam baru nombor 12. Ada 28
 buah..."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1730,Tuan Pengerusi [Datuk Ronald Kiandee],"Yang Berhormat, boleh jawab secara
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■ 1730,1730,Tuan Pengerusi [Datuk Ronald Kiandee],"Yang Berhormat, boleh jawab secara
 bertulis, Yang Berhormat?"
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1730,Dato' Seri Liow Tiong Lai,"Soalan lain saya jawab secara bertulis, okey? Ya
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■ 1730,1730,Dato' Seri Liow Tiong Lai,"Soalan lain saya jawab secara bertulis, okey? Ya
 Yang Berhormat Kapit."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1730,Tuan Pengerusi [Datuk Ronald Kiandee],"Yang Berhormat, boleh habiskan
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■ 1730,1730,Tuan Pengerusi [Datuk Ronald Kiandee],"Yang Berhormat, boleh habiskan
 Yang Berhormat? Bertulis."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1730,Dato' Seri Liow Tiong Lai,Saya akan habiskan. Yang Berhormat Kapit ....
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■ 1730,1730,Dato' Seri Liow Tiong Lai,Saya akan habiskan. Yang Berhormat Kapit ....
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1730,Tuan Sim Tong Him [Kota Melaka],Yang Berhormat Kota Melaka punya?
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■ 1730,1730,Tuan Sim Tong Him [Kota Melaka],Yang Berhormat Kota Melaka punya?
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1730,Dato' Seri Liow Tiong Lai,"Ya. Kita akan selesaikan semua ini. Yang Berhormat
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■ 1730,1730,Dato' Seri Liow Tiong Lai,"Ya. Kita akan selesaikan semua ini. Yang Berhormat
 Kapit juga memohon tentang hemodialisis. Saya setuju dan saya telah arahkan pegawai
 saya untuk membantu mewujudkan pusat hemodialisis di Klinik Song, Pekan Song untuk
 membantu pesakit-pesakit yang datang jauh ke Kapit. Klinik 1Malaysia dan juga tempat
@@ -3679,22 +3679,22 @@ banyak peruntukan. Kalau perlukan peruntukan yang tidak banyak, kita boleh dahul
 Kita luluskan peruntukan untuk membina sebuah klinik di Pulau Mantanani.
 Tuan Pengerusi, berhubung dengan Yang Berhormat Kuching ...."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1730,Dato' Abd. Rahman Dahlan [Kota Belud],"Yang Berhormat Menteri, ada tadi
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■ 1730,1730,Dato' Abd. Rahman Dahlan [Kota Belud],"Yang Berhormat Menteri, ada tadi
 soalan Tuan Pengerusi Beluran, doktor udara."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1730,Tuan Pengerusi [Datuk Ronald Kiandee],Doktor udara.
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■ 1730,1730,Tuan Pengerusi [Datuk Ronald Kiandee],Doktor udara.
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1730,Dato' Abd. Rahman Dahlan [Kota Belud],Itu soalan Tuan Pengerusi.
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■ 1730,1730,Dato' Abd. Rahman Dahlan [Kota Belud],Itu soalan Tuan Pengerusi.
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1730,Dato' Seri Liow Tiong Lai,Doktor udara?
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■ 1730,1730,Dato' Seri Liow Tiong Lai,Doktor udara?
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1730,Tuan Pengerusi [Datuk Ronald Kiandee],Janji untuk ditukar kepada klinik desa.
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■ 1730,1730,Tuan Pengerusi [Datuk Ronald Kiandee],Janji untuk ditukar kepada klinik desa.
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1730,Dato' Seri Liow Tiong Lai,"Kita memberi, mana untuk udara?"
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■ 1730,1730,Dato' Seri Liow Tiong Lai,"Kita memberi, mana untuk udara?"
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1730,Tuan Pengerusi [Datuk Ronald Kiandee],Janji untuk ditukar klinik desa.
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■ 1730,1730,Tuan Pengerusi [Datuk Ronald Kiandee],Janji untuk ditukar klinik desa.
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1730,Dato' Seri Liow Tiong Lai,"Ya, cadangan untuk tukar doktor udara kepada klinik
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■ 1730,1730,Dato' Seri Liow Tiong Lai,"Ya, cadangan untuk tukar doktor udara kepada klinik
 desa. Memang kalau boleh kita hendak buat klinik desa kerana ia memberi perkhidmatan
 yang berpanjangan. Klinik udara kadang-kadang ada, kadang-kadang tidak ada kerana
 kalau hujan, cuaca tidak mengizinkan tidak boleh sampai. Ini memang cadangan yang baik,
@@ -3710,13 +3710,13 @@ perancangan untuk naik tarafkan klinik-klinik desa kita ke tahap klinik kesihata
 ada dalam perancangan Kementerian Kesihatan untuk meningkatkan taraf klinik kesihatan
 di kawasan-kawasan luar bandar."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1730,Tuan Pengerusi [Datuk Ronald Kiandee],Yang Berhormat ...
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■ 1730,1730,Tuan Pengerusi [Datuk Ronald Kiandee],Yang Berhormat ...
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1730,Dato' Seri Liow Tiong Lai,"Tuan Pengerusi, kerana masa tidak mengizinkan,
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■ 1730,1730,Dato' Seri Liow Tiong Lai,"Tuan Pengerusi, kerana masa tidak mengizinkan,
 yang lain-lain saya akan buat jawapan secara bertulis kepada semua Ahli Yang Berhormat.
 Terima kasih kepada semuanya... [Tepuk]."
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1730,Tuan Pengerusi [Datuk Ronald Kiandee],"Terima kasih Yang Berhormat. Ahli-
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■ 1730,1730,Tuan Pengerusi [Datuk Ronald Kiandee],"Terima kasih Yang Berhormat. Ahli-
 ahli Yang Berhormat, masalahnya ialah bahawa wang sejumlah RM17,352,956,000 untuk
 Maksud B.42 di bawah Kementerian Kesihatan jadi sebahagian daripada Jadual hendaklah
 disetujukan.
@@ -3724,7 +3724,7 @@ disetujukan.
 [Wang sebanyak RM17,352,956,000 untuk Maksud B.42 diperintahkan jadi
 sebahagian daripada Jadual]"
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1730,Tuan Pengerusi [Datuk Ronald Kiandee],"Masalahnya ialah bahawa
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■ 1730,1730,Tuan Pengerusi [Datuk Ronald Kiandee],"Masalahnya ialah bahawa
 perbelanjaan sebanyak RM1,924,233,500 untuk Maksud P.42 yang disebutkan dalam
 Anggaran Pembangunan bagi tahun 2013 hendaklah diluluskan.
 [Masalah dikemuka bagi diputuskan, dan disetujukan]
@@ -3734,7 +3734,7 @@ Anggaran Pembangunan 2013]
 [Timbalan Yang di-Pertua (Datuk Ronald Kiandee) **mempengerusikan
 Mesyuarat]**"
 RANG UNDANG-UNDANG,"Maksud B.42 [Jadual] -
-Maksud P.42 [Anggaran Pembangunan 2013] -",,1730,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Ahli-ahli Yang Berhormat,
+Maksud P.42 [Anggaran Pembangunan 2013] -",,■ 1730,1730,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Ahli-ahli Yang Berhormat,
 saya ingin memaklumkan bahawa pada hari Isnin 12 November 2012 sehingga Khamis 15
 November 2012, tiada persidangan Dewan Rakyat memandangkan pada hari Selasa 13
 November 2012 adalah merupakan Hari Deepavali. Dewan juga tidak akan bersidang pada

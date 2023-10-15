@@ -1,19 +1,19 @@
-level_1,level_2,level_3,timestamp,author,speech
-,,,1000,,"[Timbalan Yang di-Pertua (Datuk Ronald Kiandee)
+level_1,level_2,level_3,raw_timestamp,timestamp,author,speech
+,,,10.00 pagi,1000,,"[Timbalan Yang di-Pertua (Datuk Ronald Kiandee)
 **mempengerusikan Mesyuarat**]"
-,,,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Saya jemput Yang
+,,,10.00 pagi,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Saya jemput Yang
 Berhormat Menteri untuk membacakan usul."
-USUL MENARIK BALIK RANG UNDANG-UNDANG DI BAWAH P.M. 62,,,1000,Timbalan Menteri Sumber Manusia [Dato' Maznah binti Mazlan],"Tuan
+USUL MENARIK BALIK RANG UNDANG-UNDANG DI BAWAH P.M. 62,,,10.00 pagi,1000,Timbalan Menteri Sumber Manusia [Dato' Maznah binti Mazlan],"Tuan
 Yang di-Pertua, bahawa menurut Peraturan Mesyuarat 62 saya mohon untuk
 menarik balik DR 25/2010 Rang Undang-undang Kerja (Pindaan) 2010 yang
 dijadualkan di nombor sembilan dalam Aturan Urusan Mesyuarat hari ini."
-USUL MENARIK BALIK RANG UNDANG-UNDANG DI BAWAH P.M. 62,,,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Baiklah.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1000,Dato’ Haji Ismail bin Abd. Muttalib [Maran],"minta Perdana Menteri
+USUL MENARIK BALIK RANG UNDANG-UNDANG DI BAWAH P.M. 62,,,10.00 pagi,1000,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Baiklah.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,10.00 pagi,1000,Dato’ Haji Ismail bin Abd. Muttalib [Maran],"minta Perdana Menteri
 menyatakan apakah jaminan keberkesanan pelaksanaan Model Baru Ekonomi
 supaya ia mencapai matlamat yang diharapkan untuk menjadikan Malaysia
 sebagai sebuah negara berpendapatan tinggi sekali gus melonjak ekonomi negara
 dan apakah bentuk-bentuk program yang telah diatur untuk dilaksanakan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1000,Timbalan Menteri di Jabatan Perdana Menteri [Dato’ Devamany a/l S. Krishnasamy],"Tuan Yang di-Pertua, saya ucapkan terima kasih kepada Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,10.00 pagi,1000,Timbalan Menteri di Jabatan Perdana Menteri [Dato’ Devamany a/l S. Krishnasamy],"Tuan Yang di-Pertua, saya ucapkan terima kasih kepada Yang
 Berhormat daripada Maran. Untuk makluman Ahli Yang Berhormat, keberkesanan
 pelaksanaan Model Baru Ekonomi (MBE) yang akan dilaksanakan dalam
 Rancangan Malaysia Kesepuluh bergantung kepada sejauh manakah program
@@ -70,9 +70,9 @@ Program-program ini pula disokong oleh inisiatif tertentu dan projek
 pembangunan sama ada dalam bentuk fizikal atau bukan fizikal. Kita berdoa Tuan
 Yang di-Pertua, agar segala projek dan program ini akan dilaksanakan seawal
 Januari 2011. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1000,Datuk Haji Ismail bin Abd. Muttalib [Maran],"Terima kasih Tuan Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,10.00 pagi,1000,Datuk Haji Ismail bin Abd. Muttalib [Maran],"Terima kasih Tuan Yang
 di-Pertua, terima kasih Yang Berhormat Timbalan Menteri."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Datuk Haji Ismail bin Abd. Muttalib [Maran],"Saya ucapkan tahniah kepada kerajaan di atas kesungguhan dalam
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1010,1010,Datuk Haji Ismail bin Abd. Muttalib [Maran],"Saya ucapkan tahniah kepada kerajaan di atas kesungguhan dalam
 melaksanakan Modal Baru Ekonomi ini. Pada saya, pendapatan per kapita yang
 tinggi tidak memastikan agihan kekayaan diperolehi sama rata oleh rakyat. Hari
 ini kita masih menerima, mengakui bahawa taraf ekonomi bumiputera bukan
@@ -85,7 +85,7 @@ sahaja tetapi Orang Asli, bumiputera Sabah dan Sarawak) dapat dibela kerana
 sebahagian besar mereka ini tinggal di luar bandar. Apakah langkah kerajaan
 bagi memastikan bahawa supaya pelaksanaan perancangan ini ataupun program-
 program ini tidak gagal di peringkat pelaksanaan. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Dato’ Devamany a/l S. Krishnasamy,"Terima kasih Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1010,1010,Dato’ Devamany a/l S. Krishnasamy,"Terima kasih Yang Berhormat
 daripada Maran. Tuan Yang di-Pertua, izinkan saya menyatakan bahawa dalam
 Bab Keempat daripada muka surat 141 hingga 190 dalam Rancangan Malaysia
 Kesepuluh yang telah dibentangkan pada 10 Jun 2010 itu telah dirangka dengan
@@ -99,7 +99,7 @@ modal insan dan tiga daripada segi peluang ekonomi akan dijamin tidak kira
 bumiputera sahaja, ia inclusive, keterangkuman untuk semua kaum. Itulah proses
 pembangunan, saya minta Yang Berhormat check balik buku Rancangan Malaysia
 Kesepuluh. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Dr. Dzulkefly Ahmad [Kuala Selangor],"Terima kasih Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1010,1010,Dr. Dzulkefly Ahmad [Kuala Selangor],"Terima kasih Tuan Yang di-
 Pertua, terima kasih Yang Berhormat Timbalan Menteri. Jawapan tadi pada saya
 bolehlah. Cuma yang diharapkan oleh mereka yang lebih memahami tentang
 Modal Baru Ekonomi itu dan Rancangan Malaysia Kesepuluh yang disusuli
@@ -120,7 +120,7 @@ dibebankan dengan 65% untuk memacu dana Economic Transformation
 Programme. Analis yakin ini adalah di luar kemampuan mereka.
 Tuan Yang di-Pertua, kita minta Yang Berhormat Timbalan Menteri jawab
 kerana dananya adalah tidak realistik sama sekali. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Dato’ Devamany a/l S. Krishnasamy,"Tuan Yang di-Pertua, saya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1010,1010,Dato’ Devamany a/l S. Krishnasamy,"Tuan Yang di-Pertua, saya
 ucapkan terima kasih kepada Yang Berhormat dari Kuala Selangor. Keprihatinan
 itu sama-sama kita sajikan, terima kasihlah.
 Pertama Tuan Yang di-Pertua, saya hendak yakinkan kepada Yang
@@ -147,19 +147,19 @@ dalam perspektif pembangunan ekonomi dan transformasi ini. 12 sektor yang
 akan diberi keutamaan. Human capital, modal insan akan menjadi inti kita,
 memang formula itu tepat sekali. Kalau tahu matematik itu jawapannya. Terima
 kasih. [Tepuk]"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Dr. Dzulkefly Ahmad [Kuala Selangor],Tuan Yang di-Pertua.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Saya jemput Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1010,1010,Dr. Dzulkefly Ahmad [Kuala Selangor],Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1010,1010,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Saya jemput Yang
 Berhormat Tuan William Leong Jee Keen."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Dr. Dzulkefly Ahmad [Kuala Selangor],"Timbalan Menteri tidak jawab
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1010,1010,Dr. Dzulkefly Ahmad [Kuala Selangor],"Timbalan Menteri tidak jawab
 RM38 bilion, hutang GLCs tidak dijawab. Jawab Yang Berhormat Timbalan
 Menteri, RM38 bilion hutang GLCs."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Ya, sila Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1010,1010,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Ya, sila Yang
 Berhormat ."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1010,Tuan William Leong Jee Keen [Selayang],"minta Menteri Kewangan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1010,1010,Tuan William Leong Jee Keen [Selayang],"minta Menteri Kewangan
 menyatakan jumlah syarikat awam yang tersenarai di Bursa Malaysia menerusi
 IPO dan jumlah syarikat yang menjadi persendirian bagi setiap tahun dari 2005-
 2010 dan sebab keadaan ini berlaku."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1010,Timbalan Menteri Kewangan I [Datuk Dr. Awang Adek Hussein],"Terima kasih Tuan Yang di-Pertua. Saya asyik melihat soalan nombor satu tadi
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1010,1010,Timbalan Menteri Kewangan I [Datuk Dr. Awang Adek Hussein],"Terima kasih Tuan Yang di-Pertua. Saya asyik melihat soalan nombor satu tadi
 itu.
 Tuan Yang di-Pertua, untuk makluman Yang Berhormat, jumlah syarikat
 awam yang disenaraikan di Bursa Malaysia menerusi IPO dari tahun 2005 hingga
@@ -180,17 +180,17 @@ syarikat tidak mempunyai aktiviti perniagaan teras; dan
 tidak mempunyai rancangan untuk membeli perniagaan
 teras yang baru.
 Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1010,Tuan William Leong Jee Keen [Selayang],"Terima kasih. 74 syarikat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1010,1010,Tuan William Leong Jee Keen [Selayang],"Terima kasih. 74 syarikat
 awam telah keluar daripada Bursa di dalam proses penswastaan dengan izin,
 privatization. Di antara sebabnya ialah nilai dagangan tidak mencerminkan nilai
 aset. Ini adalah satu perkara yang begitu merunsingkan kerana syarikat-syarikat
 yang keluar adalah syarikat dengan ada market capitalization yang besar seperti
 Tanjong dan Maxis."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Tuan William Leong Jee Keen [Selayang],"Akibat daripada ini ialah Bursa Malaysia tidak akan menjadi begitu
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1020,1020,Tuan William Leong Jee Keen [Selayang],"Akibat daripada ini ialah Bursa Malaysia tidak akan menjadi begitu
 menarik kepada pelabur-pelabur yang akan melabur ke pasaran yang lain.
 Apakah rancangan kementerian dan Bursa Malaysia untuk mengatasi masalah
 ini?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Datuk Dr. Awang Adek Hussein,"Terima kasih Yang Berhormat. Kalau
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1020,1020,Datuk Dr. Awang Adek Hussein,"Terima kasih Yang Berhormat. Kalau
 boleh diizinkan saya ingin pecahkan sedikit jumlah 74 syarikat yang dikeluarkan ini
 supaya kita dapat memahami dengan lebih baik. Satunya, sejumlah besar
 daripada 74 ini iaitu 50 buah syarikat yang dikeluarkan melalui pengambilalihan
@@ -220,7 +220,7 @@ akan disenaraikan dan juga merupakan yang besar-besar dan ini akan memberi
 galakan kepada pasaran kita. Kalau dilihat dari segi penggerakan pasaran pada
 tahun ini ialah lebih memberangsangkan berbanding dengan sebelumnya. Terima
 kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Ir. Haji Hamim bin Samuri [Ledang],"Terima kasih Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1020,1020,Ir. Haji Hamim bin Samuri [Ledang],"Terima kasih Tuan Yang di-Pertua.
 Saya hendak lanjutkan soalan tambahan itu iaitu salah satu daripada faktor yang
 ditekankan. Di dalam mengupayakan meningkatkan lagi keupayaan syarikat-
 syarikat awam yang disenaraikan ialah dari segi jumlah harta mereka ke tahap
@@ -229,7 +229,7 @@ meningkatkan lagi keupayaan untuk syarikat-syarikat ini lebih diyakini, lebih
 berupaya dan seterusnya melabur.
 Sekali gus Tuan Yang di-Pertua menjawab soalan yang perkara yang
 dikemukakan tadi oleh Yang Berhormat Kuala Selangor. Sekian terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Datuk Dr. Awang Adek Hussein,"Minta maaf. Saya sebenarnya kurang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1020,1020,Datuk Dr. Awang Adek Hussein,"Minta maaf. Saya sebenarnya kurang
 jelas apa yang ditanyakan oleh Yang Berhormat. Akan tetapi kalau dari segi
 keyakinan dalam pasaran, saya ingin sebutkan di sini peningkatan indeks
 sebenarnya pada tahun ini cukup memberangsangkan. Iaitu di akhir tahun lepas
@@ -239,18 +239,18 @@ Jadi dalam setahun peningkatan 15% ini adalah satu pencapaian yang
 baik. Saya rasa dengan penyenaraian baru yang akan dibuat nanti sebelum akhir
 tahun ini terutama sekali anak syarikat Petronas ini yang besar. Ini akan memberi
 kegiatan baru dan semangat baru dalam pasaran kita nanti. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1020,Tengku Razaleigh Hamzah [Gua Musang],"minta Menteri Luar Negeri
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1020,1020,Tengku Razaleigh Hamzah [Gua Musang],"minta Menteri Luar Negeri
 menyatakan apakah tindakan yang telah dilakukan bagi menjamin hubungan
 Malaysia/Indonesia sebagai kerabat ASEAN sentiasa terpelihara agar peristiwa
 serangan ke atas Pejabat Kedutaan Malaysia di Jakarta tidak berulang kembali."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1020,Menteri Luar Negeri [Dato’ Sri Anifah bin Aman],"Tuan Yang di-Pertua,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1020,1020,Menteri Luar Negeri [Dato’ Sri Anifah bin Aman],"Tuan Yang di-Pertua,
 untuk menjimatkan masa Dewan yang mulia ini saya mohon untuk menjawab
 secara serentak 31 pertanyaan berkaitan perkembangan dalam hubungan dua
 hala antara Malaysia dengan Republik Indonesia.
 Ini adalah kerana pertanyaan-pertanyaan tersebut pada asasnya fokus
 kepada perkembangan selepas insiden 13 Ogos 2010."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1020,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Baik.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1020,Dato’ Sri Anifah bin Aman,"Sehubungan dengan ini izinkan saya untuk
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1020,1020,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Baik.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1020,1020,Dato’ Sri Anifah bin Aman,"Sehubungan dengan ini izinkan saya untuk
 memberikan jawapan kepada pertanyaan-pertanyaan daripada:-
 | Pertanyaan dari Yang Berhormat |      Tarikh      |
 |             Maran              | 12 Oktober 2010  |
@@ -317,7 +317,7 @@ tujuh nelayan Malaysia oleh penguat kuasa Perikanan dan Kelautan dari Republik
 Indonesia yang diikuti penahanan tiga penguatkuasaan Perikanan dan Kelautan
 Republik Indonesia oleh Polis Tindakan Marin Wilayah 2 Malaysia pada 13 Ogos
 2010."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Dato’ Sri Anifah bin Aman,"Kementerian ini telah berhubung dengan pihak-pihak berkuasa kita yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1030,1030,Dato’ Sri Anifah bin Aman,"Kementerian ini telah berhubung dengan pihak-pihak berkuasa kita yang
 berkaitan sejurus setelah dimaklumkan mengenai penangkapan-penangkapan
 tersebut bagi mendapatkan maklumat yang terperinci. Di samping itu, kementerian
 juga turut membincangkan pendekatan terbaik termasuk dengan pihak-pihak yang
@@ -450,60 +450,60 @@ negara ke tahap hubungan yang lebih mantap dan kepentingan dan kerjasama
 untuk kesejahteraan bersama. Kerajaan mengadakan satu usaha berterusan
 untuk meningkatkan tahap persefahaman antara rakyat kedua-dua negara
 menerusi interaksi yang lebih mantap."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Tuan M. Kulasegaran [Ipoh Barat],"Tuan Yang di-Pertua, boleh saya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1030,1030,Tuan M. Kulasegaran [Ipoh Barat],"Tuan Yang di-Pertua, boleh saya
 dapat jawapan, adakah ini jawapan atau penghujahan?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Yang Berhormat...
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Tuan M. Kulasegaran [Ipoh Barat],"Adakah kelonggaran diberi kerana
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1030,1030,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Yang Berhormat...
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1030,1030,Tuan M. Kulasegaran [Ipoh Barat],"Adakah kelonggaran diberi kerana
 Yang Berhormat Menteri jarang mari ke Parlimen? Sudah lebih kurang 20 minit!
 [Dewan riuh]"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Habiskan ya, Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1030,1030,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Habiskan ya, Yang
 Berhormat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Dato' Haji Ismail bin Haji Mohamed Said [Kuala Krau],"Hubungan dua
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1030,1030,Dato' Haji Ismail bin Haji Mohamed Said [Kuala Krau],"Hubungan dua
 hala pentinglah."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Tidak perlu
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1030,1030,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Tidak perlu
 ganggulah Yang Berhormat ya."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Tuan M. Kulasegaran [Ipoh Barat],"Oleh kerana Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1030,1030,Tuan M. Kulasegaran [Ipoh Barat],"Oleh kerana Yang Berhormat
 Menteri jarang mari ke Parlimen, sebab itu diberi ruangan yang panjang?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Yang Berhormat...
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Tuan M. Kulasegaran [Ipoh Barat],Is it because of that?
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1030,1030,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Yang Berhormat...
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1030,1030,Tuan M. Kulasegaran [Ipoh Barat],Is it because of that?
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,1040,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat
 Ipoh Barat, terdapat 31 soalan yang Ahli-ahli Parlimen kemukakan terhadap
 perkara yang sama, Yang Berhormat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,Datuk Bung Moktar bin Radin [Kinabatangan],"Tuan Yang di-Pertua,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,1040,Datuk Bung Moktar bin Radin [Kinabatangan],"Tuan Yang di-Pertua,
 itulah ciri-ciri wakil rakyat samseng."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,Tuan Abdullah Sani Abdul Hamid [Kuala Langat],"Yang cakap pun
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,1040,Tuan Abdullah Sani Abdul Hamid [Kuala Langat],"Yang cakap pun
 samalah."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,Dato’ Sri Anifah bin Aman,"Tuan Yang di-Pertua, saya minta Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,1040,Dato’ Sri Anifah bin Aman,"Tuan Yang di-Pertua, saya minta Yang
 Berhormat selesaikan masalah peribadi dahulu oleh kerana saya hendak
 menyelesaikan masalah negara. Kalau Yang Berhormat tidak dapat selesaikan
 masalah peribadi, macam mana hendak menyelesaikan masalah negara?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,Tuan M. Kulasegaran [Ipoh Barat],"Sudah selesai, tidak perlu campur
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,1040,Tuan M. Kulasegaran [Ipoh Barat],"Sudah selesai, tidak perlu campur
 tangan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,Dr. P. Ramasamy [Batu Kawan],"Apa kena-mengena dengan masalah
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,1040,Dr. P. Ramasamy [Batu Kawan],"Apa kena-mengena dengan masalah
 itu? Menteri, you tidak datang ke office, macam mana you mahu jawab? Apa
 kena mengena? Duduklah Menteri. [Dewan riuh]"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,1040,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat,
 panjang lagi Yang Berhormat?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,Tuan M. Kulasegaran [Ipoh Barat],Jarang datang ke Parlimen.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,Tuan Khalid Abd. Samad [Shah Alam],"Selesaikanlah masalah di
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,1040,Tuan M. Kulasegaran [Ipoh Barat],Jarang datang ke Parlimen.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,1040,Tuan Khalid Abd. Samad [Shah Alam],"Selesaikanlah masalah di
 Indonesialah, bukan dalam DAP. [Ketawa]"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,Dato’ Sri Anifah bin Aman,"Oleh kerana soalan-soalan hampir sama,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,1040,Dato’ Sri Anifah bin Aman,"Oleh kerana soalan-soalan hampir sama,
 hampir habis."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Okey.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,Dato’ Sri Anifah bin Aman,"Sekiranya... [Disampuk] Sekejap lagi. Oleh
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,1040,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Okey.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,1040,Dato’ Sri Anifah bin Aman,"Sekiranya... [Disampuk] Sekejap lagi. Oleh
 kerana 31 Ahli-ahli Yang Berhormat bertanya, maka ada perlu saya menerangkan
 dan menjelaskan tindakan-tindakan yang telah pun diambil dan akan diambil,
 Yang Berhormat. Kalau sekiranya saya tidak menjawab semua soalan Yang
 Berhormat, Yang Berhormat juga akan bertanya dengan saya kenapa saya tidak
 dijawab."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,Dato' Mahfuz bin Haji Omar [Pokok Sena],Soalannya sama sahaja.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,Dr. Mohd. Hatta Md. Ramli [Kuala Krai],"Kalau soalan yang sama, satu
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,1040,Dato' Mahfuz bin Haji Omar [Pokok Sena],Soalannya sama sahaja.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,1040,Dr. Mohd. Hatta Md. Ramli [Kuala Krai],"Kalau soalan yang sama, satu
 jawapan cukuplah. Apa pula 31 jawapan pula? [Ketawa]"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,Dato' Haji Ismail bin Mohamed Said [Kuala Krau],"Hubungan dua hala
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,1040,Dato' Haji Ismail bin Mohamed Said [Kuala Krau],"Hubungan dua hala
 pentinglah. Malulah PAS. [Dewan riuh]"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Teruskan Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,1040,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Teruskan Yang
 Berhormat. Ahli-ahli Yang Berhormat, minta diam Yang Berhormat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,Dato’ Sri Anifah bin Aman,"Oleh itu, sementara kerajaan sentiasa
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,1040,Dato’ Sri Anifah bin Aman,"Oleh itu, sementara kerajaan sentiasa
 memantau dan menangani isu-isu provokasi dan campur tangan oleh segelintir
 pihak yang tidak bertanggungjawab yang ingin menjejaskan hubungan Malaysia
 dengan negara-negara lain termasuk Indonesia menerusi mekanisme-mekanisme
@@ -522,22 +522,22 @@ dan Kerajaan Indonesia tetapi juga majoriti rakyat kedua-dua negara serta
 pelbagai pertubuhan masyarakat seperti Perhimpunan Masyarakat Indonesia
 (PERMAI) yang menginginkan hubungan lebih erat dan mantap antara Malaysia
 dan Indonesia. Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,Dato' Ismail Kasim [Arau],"Relax, duduk. Sebab Yang Berhormat Gua
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,1040,Dato' Ismail Kasim [Arau],"Relax, duduk. Sebab Yang Berhormat Gua
 Musang bagi peluang kepada saya."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,Datuk Bung Moktar bin Radin [Kinabatangan],"Yang Berhormat Arau
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,1040,Datuk Bung Moktar bin Radin [Kinabatangan],"Yang Berhormat Arau
 tidak ada soalan Tuan Yang di-Pertua. Dia orang luar."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Yang Berhormat.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,Dato' Ismail Kasim [Arau],Duduklah.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,Datuk Haji Mohamad bin Haji Aziz [Sri Gading],"Antara 31 ialah Sri
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,1040,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Yang Berhormat.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,1040,Dato' Ismail Kasim [Arau],Duduklah.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,1040,Datuk Haji Mohamad bin Haji Aziz [Sri Gading],"Antara 31 ialah Sri
 Gading."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,Dato' Mahfuz bin Haji Omar [Pokok Sena],"Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,1040,Dato' Mahfuz bin Haji Omar [Pokok Sena],"Yang Berhormat
 Kinabatangan, jangan samsenglah."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,Datuk Bung Moktar bin Radin [Kinabatangan],"Saya nombor 25 yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,1040,Datuk Bung Moktar bin Radin [Kinabatangan],"Saya nombor 25 yang
 bertanya."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,Beberapa Ahli,[Ketawa]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Ya Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,1040,Beberapa Ahli,[Ketawa]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,1040,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Ya Yang Berhormat
 Arau."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,Dato' Ismail Kasim [Arau],"Terima kasih Tuan Yang di-Pertua dan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,1040,Dato' Ismail Kasim [Arau],"Terima kasih Tuan Yang di-Pertua dan
 terima kasih atas kerjasama rakan-rakan dan terima kasih Yang Berhormat
 Menteri. Yang Berhormat, kita menyedari hubungan di peringkat pimpinan seperti
 penjelasan yang dibangkitkan oleh Yang Berhormat tadi adalah berada dalam
@@ -565,11 +565,11 @@ Jadi di sini saya ingin bertanya kepada pihak kerajaan, dalam kes terbaru
 yang melibatkan dilempar najis dan sebagainya di kedutaan kita, selain daripada
 kita memerlukan seorang duta yang lebih berwibawa terutamanya mungkin dilantik
 di kalangan ahli politik di Dewan yang mulia ini."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,Seorang Ahli,Yang Berhormat Sri Gading.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,Dato' Ismail Kasim [Arau],"Kedua, apakah tidak ada dalang daripada
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,1040,Seorang Ahli,Yang Berhormat Sri Gading.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,1040,Dato' Ismail Kasim [Arau],"Kedua, apakah tidak ada dalang daripada
 pihak ketiga yang menjadi batu api yang menaja demonstrasi dan tunjuk perasaan
 di hadapan Kedutaan Malaysia di Singapura? Apa pandangan Yang Berhormat?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,Dato’ Sri Anifah bin Aman,"Tuan Yang di-Pertua, biarpun jawapan yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,1040,Dato’ Sri Anifah bin Aman,"Tuan Yang di-Pertua, biarpun jawapan yang
 telah saya beri itu dikatakan panjang, walau bagaimanapun ada juga soalan
 tambahan yang telah dikemukakan oleh Yang Berhormat. Pertama, saya ingin
 mengulas tentang dalang pihak yang ketiga. Saya tidak ingin memperkatakan
@@ -591,7 +591,7 @@ Oleh itu, kita tidaklah seharusnya mengikut perasaan atau emosi kita.
 Maka usaha-usaha seumpama ini atau masalah-masalah seumpama ini haruslah
 ditangani dengan baik dan saksama mengikut diplomasi yang kita amalkan.
 Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,Dato' Johari Abdul [Sungai Petani],"Terima kasih Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,1040,Dato' Johari Abdul [Sungai Petani],"Terima kasih Tuan Yang di-Pertua.
 Setujukah Yang Berhormat Menteri dengan saya bahawa terdapat 222 juta
 manusia di Indonesia dan yang berdemonstrasi itu sekitar 34 orang, 35 orang.
 Kalau dilihat jumlahnya terlalu kecil. Namun begitu, perasaan demonstrasi itu
@@ -616,11 +616,11 @@ Saya minta Menteri menjelaskan sejauh manakah kerajaan kita telah
 menjelaskan bahawa perbuatan tiga empat orang anggota atau pegawai-pegawai
 kerajaan ini bukanlah sesuatu fenomena yang besar tetapi boleh ditangani? Minta
 jawab."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1050,Dato' Sri Anifah bin Aman,"Yang Berhormat telah pun menjawab soalan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1050,1050,Dato' Sri Anifah bin Aman,"Yang Berhormat telah pun menjawab soalan
 Yang Berhormat sendiri bahawa bolehkah kerajaan menangani masalah ini.
 Boleh, itu jawapannya. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1050,Tuan Abdullah Sani Abdul Hamid [Kuala Langat],Ada lagi?
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1050,Tuan Haji Nasharuddin Mat Isa [Bachok],"Terima kasih Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1050,1050,Tuan Abdullah Sani Abdul Hamid [Kuala Langat],Ada lagi?
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1050,1050,Tuan Haji Nasharuddin Mat Isa [Bachok],"Terima kasih Tuan Yang di-
 Pertua. Untuk makluman Tuan Yang di-Pertua dan juga Yang Berhormat Menteri
 Luar dan juga makluman kepada Dewan ini, inisiatif telah diambil oleh pihak kami
 sehubungan dengan isu yang timbul di mana satu pertemuan telah diadakan di
@@ -646,8 +646,8 @@ beberapa isu tertangguh yang saya rasa tidak disebutkan tadi oleh Yang
 Berhormat Menteri yang mungkin tidak ada usaha untuk diselesaikan secara
 secepat yang mungkin. Isu-isu inilah yang mungkin menjadi barah terus-menerus
 kepada keretakan hubungan antara kita dan mereka."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1050,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Yang Berhormat.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1050,Tuan Haji Nasharuddin Mat Isa [Bachok],"Kami telah bercadang dan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1050,1050,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Yang Berhormat.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1050,1050,Tuan Haji Nasharuddin Mat Isa [Bachok],"Kami telah bercadang dan
 bersepakat. Cuma memerlukan keputusan di Parlimen inilah supaya keperluan
 ditubuhkan satu caucus hubungan Indonesia-Malaysia di peringkat Parlimen kita
 bagi membolehkan bukan sahaja pihak pemerintah yang mengambil peranan dan
@@ -656,7 +656,7 @@ sama ada ahli politiknya, sama ada termasuk kami daripada pembangkang atau
 apa sahaja yang boleh berperanan untuk menjamin region kita ini region yang
 selamat dan aman untuk kita duduki sebagai rumpun bangsa dan agama insya-
 Allah. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1050,Dato' Sri Anifah bin Aman,"Terima kasih Yang Berhormat. Saya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1050,1050,Dato' Sri Anifah bin Aman,"Terima kasih Yang Berhormat. Saya
 berterima kasih dengan inisiatif yang telah pun dijalankan oleh Yang Berhormat.
 Dalam jawapan saya tadi, saya mengatakan bahawa semua lapisan masyarakat
 termasuk pemimpin-pemimpin politik saya katakan harus mengambil sesuatu
@@ -672,12 +672,12 @@ mudahan usaha seumpama ini yang dilakukan oleh Yang Berhormat dan
 beberapa rakan-rakan yang lain akan diteruskan oleh kerana ini adalah bagi
 kepentingan bukan sahaja Ahli-ahli Parlimen ataupun ahli-ahli politik tetapi juga
 masyarakat kedua-dua negara. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Tuan Haji Ab. Aziz Ab. Kadir [Ketereh],"minta Menteri Kemajuan Luar
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,1050,Tuan Haji Ab. Aziz Ab. Kadir [Ketereh],"minta Menteri Kemajuan Luar
 Bandar dan Wilayah menyatakan apakah program khusus yang telah
 dilaksanakan di kawasan luar bandar bagi melahirkan modal insan yang holistik
 serta dilengkapi dengan pengetahuan dan kemahiran serta mempunyai nilai moral
 dan etika yang utuh."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Timbalan Menteri Kemajuan Luar Bandar dan Wilayah I [Dato’ Haji Hasan bin Malek],"Tuan Yang di-Pertua, terima kasih kepada Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,1050,Timbalan Menteri Kemajuan Luar Bandar dan Wilayah I [Dato’ Haji Hasan bin Malek],"Tuan Yang di-Pertua, terima kasih kepada Yang Berhormat
 daripada Ketereh di atas soalannya yang begitu umum ini. Jawapan kepada
 soalan ini Tuan Yang di-Pertua dalam konteks luar bandar yang didiami oleh lebih
 10 juta orang penduduk, pembangunan modal insan adalah suatu keperluan
@@ -731,15 +731,15 @@ sekolah rendah, menengah dan institusi JKKK dan JKKP. Program-program
 Kursus Modal Insan yang dilaksanakan adalah digubal dan dilaksanakan mengikut
 kesesuaian, keperluan kumpulan sasar melalui pelbagai kaedah serta pendekatan
 yang dijangka memberi impak yang paling tinggi. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Tuan Haji Ab. Aziz Ab. Kadir [Ketereh],"Terima kasih Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,1050,Tuan Haji Ab. Aziz Ab. Kadir [Ketereh],"Terima kasih Tuan Yang di-
 Pertua, terima kasih Yang Berhormat Timbalan Menteri. Soalan yang lebih
 spesifik. Dikatakan bahawa di kalangan generasi kedua dan ketiga masyarakat
 yang tinggal dalam Rancangan Pembangunan Tanah Kerajaan hanya lebih kurang
 5% sahaja yang berjaya melanjutkan pengajian ke institut pengajian tinggi dan
 masalah sosialnya semakin bertambah."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1100,Tuan Haji Ab. Aziz Ab. Kadir [Ketereh],"Apakah ini menunjukkan bahawa segala program dan polisi yang baik,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1100,1100,Tuan Haji Ab. Aziz Ab. Kadir [Ketereh],"Apakah ini menunjukkan bahawa segala program dan polisi yang baik,
 yang banyak dibuat oleh kerajaan itu boleh ditakrifkan telah gagal? Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1100,Dato’ Haji Hasan bin Malek,"Terlalu mudah untuk buat tuduhan yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1100,1100,Dato’ Haji Hasan bin Malek,"Terlalu mudah untuk buat tuduhan yang
 begitu dari Yang Berhormat. Apa sahaja yang kita belanjakan berbilion-bilion duit
 katanya tidak ada, gagal dan sebagainya. Saya hendak menarik perhatian kepada
 sahabat-sahabat dari parti pembangkang untuk melihat bahawa hasil, impak
@@ -778,7 +778,7 @@ membangunkan insan kita ini. Apatah lagi dalam Rancangan Malaysia Kesepuluh
 dalam program-program yang akan kita laksanakan ini pandangan-pandangan ini
 amat perlu supaya negara kita insya-Allah akan mencapai negara maju pada
 tahun 2020 nanti. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1100,Datuk Bung Moktar bin Radin [Kinabatangan],"Terima kasih Tuan Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1100,1100,Datuk Bung Moktar bin Radin [Kinabatangan],"Terima kasih Tuan Yang
 di-Pertua. Bunyi jawapan Yang Berhormat Timbalan Menteri comel, molek dan
 saya dengar jawapan itu sejak saya masuk Dewan Rakyat tahun 1999. [Ketawa]
 Memang baik! Tidak dinafikan dan saya kalau tidak silap, ungkapan luar bandar ini
@@ -798,40 +798,40 @@ Angka tadi saya lihat RM190 juta atau RM200 juta sedangkan lebih 10 juta rakyat
 luar bandar sekurang-kurangnya tahun ini disebut angka sudah tiga juta kita latih
 rakyat luar bandar ini. Ini belum! Jadi apakah langkah seumpama ini akan
 diteruskan oleh kementerian? Terima kasih Yang Berhormat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1100,Seorang Ahli,Confirm kita bijak!
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1100,Dato’ Haji Hasan bin Malek,"Terima kasih. Reaksi yang pelbagai
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1100,1100,Seorang Ahli,Confirm kita bijak!
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1100,1100,Dato’ Haji Hasan bin Malek,"Terima kasih. Reaksi yang pelbagai
 daripada kawan-kawan ya."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1100,Dato’ Mahfuz bin Haji Omar [Pokok Sena],"Ini hendak kata apa, tadi
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1100,1100,Dato’ Mahfuz bin Haji Omar [Pokok Sena],"Ini hendak kata apa, tadi
 kata memang pembangkang. Ini BN."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1100,Dato’ Haji Hasan bin Malek,"Tidak apa. Kita just sebut tadi kita bersedia
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1100,1100,Dato’ Haji Hasan bin Malek,"Tidak apa. Kita just sebut tadi kita bersedia
 menerima teguran dan sebagainya tetapi kita.."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1100,Dato’ Mahfuz bin Haji Omar [Pokok Sena],"Bila pembangkang tidak
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1100,1100,Dato’ Mahfuz bin Haji Omar [Pokok Sena],"Bila pembangkang tidak
 bersedia? Ini apa.. [Ketawa]"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1100,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Yang Berhormat.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1100,Dato’ Haji Hasan bin Malek,"Saya hendak menjawab soalan ini. Jadi
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1100,1100,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Yang Berhormat.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1100,1100,Dato’ Haji Hasan bin Malek,"Saya hendak menjawab soalan ini. Jadi
 saya sekali lagi mengucapkan terima kasih atas pandangan dari kawan-kawan,
 Ahli-ahli Yang Berhormat sekalian. Sebenarnya memang benarlah daripada
 petang ini insya-Allah kita dari pihak kementerian akan menganjurkan satu
 program yang akan dirasmikan oleh Yang Amat Berhormat Perdana Menteri yang
 akan melibatkan pelaksanaan Pelan Induk Pembangunan Luar Bandar."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1100,Dato’ Mahfuz bin Haji Omar [Pokok Sena],"53 tahun baru petang ini
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1100,1100,Dato’ Mahfuz bin Haji Omar [Pokok Sena],"53 tahun baru petang ini
 hendak anjur?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1100,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1100,1100,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat
 Pokok Sena."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1100,Dato’ Haji Hasan bin Malek,"Kita buat setiap tahun. Jadi ini adalah
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1100,1100,Dato’ Haji Hasan bin Malek,"Kita buat setiap tahun. Jadi ini adalah
 sebahagian daripada program-program secara khusus yang kita rancang. Untuk
 tujuan dari segi teknologi maklumat.."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1100,Dato’ Mahfuz bin Haji Omar [Pokok Sena],"[Bercakap tanpa
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1100,1100,Dato’ Mahfuz bin Haji Omar [Pokok Sena],"[Bercakap tanpa
 menggunakan pembesar suara]"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1100,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1100,1100,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat
 Pokok Sena, tidak perlu begitu Yang Berhormat. Kita dalam soal jawab ya."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1100,Dato’ Haji Hasan bin Malek,"Kita hendak melahirkan usahawan, hendak
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1100,1100,Dato’ Haji Hasan bin Malek,"Kita hendak melahirkan usahawan, hendak
 lahirkan masyarakat yang terutuh, berbudaya macam ini kah pembangkang
 hendak tunjukkan kepada Dewan yang mulia ini? [Ketawa] Sepatutnya berhemah
 sedikit, berbudi bahasa, saya hendak menjawab soalan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1100,Dato’ Mahfuz bin Haji Omar [Pokok Sena],"[Bercakap tanpa
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1100,1100,Dato’ Mahfuz bin Haji Omar [Pokok Sena],"[Bercakap tanpa
 menggunakan pembesar suara]"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1100,Dato’ Haji Hasan bin Malek,"Terima kasih. Jadi pandangan dari rakan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1100,1100,Dato’ Haji Hasan bin Malek,"Terima kasih. Jadi pandangan dari rakan
 Yang Berhormat itu akan kita ambil perhatian tetapi yang jelas pada saya program
 ini adalah berterusan dari suatu masa ke suatu masa. Berdasarkan kepada
 pandangan atau syor kita akan menambahbaikkan program-program kita ini bukan
@@ -842,11 +842,11 @@ dan lain-lain. Ini semua menjurus ke arah hendak melahirkan masyarakat luar
 bandar yang berteknologi maklumat dan sebagainya. Jadi insya-Allah ini akan
 diteruskan dan yang perlunya ialah kerjasama, sokongan daripada semua pihak
 untuk menjayakan program-program kita itu. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1100,Dato’ Sri Dr. Muhammad Leo Michael Toyad Abdullah [Mukah],"minta
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1100,1100,Dato’ Sri Dr. Muhammad Leo Michael Toyad Abdullah [Mukah],"minta
 Menteri Perdagangan Antarabangsa dan Industri menyatakan jumlah pelaburan
 asing yang masuk ke dalam negara pada tahun 2009 dan 2010. Nyatakan huraian
 mengikut negeri."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1100,Timbalan Menteri Perdagangan Antarabangsa dan Industri I [Dato’ Mukhriz bin Tun Dr. Mahathir],"Bismillaahir Rahmaanir Rahiim,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1100,1100,Timbalan Menteri Perdagangan Antarabangsa dan Industri I [Dato’ Mukhriz bin Tun Dr. Mahathir],"Bismillaahir Rahmaanir Rahiim,
 assalamualaikum warahmatullaahi wabarakaatuh, salam sejahtera, salam
 1Malaysia.
 Tuan Yang di-Pertua, bagi pelaburan asing pada tahun 2009 sejumlah 390
@@ -881,15 +881,15 @@ adalah:-
 | Negeri Sembilan |    309.4 juta   |
 |     Kelantan    |    82.2 juta    |
 |      Pahang     |    52.4 juta    |"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1110,Dato’ Sri Dr. Muhammad Leo Michael Toyad Abdullah [Mukah],"Terima kasih Yang Berhormat Tuan Speaker. Mohon kalau dapat Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1110,1110,Dato’ Sri Dr. Muhammad Leo Michael Toyad Abdullah [Mukah],"Terima kasih Yang Berhormat Tuan Speaker. Mohon kalau dapat Yang Berhormat
 Menteri beritahu sektor yang mana yang paling tinggi menjadi tarikan pelaburan
 dari negara luar. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1110,Dato’ Mukhriz bin Tun Dr. Mahathir,"Terima kasih Yang Berhormat di
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1110,1110,Dato’ Mukhriz bin Tun Dr. Mahathir,"Terima kasih Yang Berhormat di
 atas soalan tambahan tersebut. Seperti lazimnya, sektor yang menarik pelaburan
 asing yang tertinggi adalah sektor elektronik dan electrical, sektor galian dan
 bukan logam, sektor pengilangan makanan, produk logam fabrikasi, peralatan
 pengukuran dan saintifik, kimia dan produk kimia dan produk logam asas."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1110,Tuan Lim Guan Eng [Bagan],"Terima kasih Tuan Yang di-Pertua. Saya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1110,1110,Tuan Lim Guan Eng [Bagan],"Terima kasih Tuan Yang di-Pertua. Saya
 hendak bertanya Yang Berhormat Timbalan Menteri, adakah kerajaan telah
 membuat rumusan tentang pandangan yang diberikan oleh UNCTAD, United
 Nations yang menyatakan di antara sebab pelaburan di Malaysia, pelaburan FDI
@@ -909,7 +909,7 @@ mana menghasut dan juga menimbulkan perasaan hasad dengki di antara kaum
 bukanlah dasar Kerajaan Malaysia dan Malaysia akan mengambil tindakan keras
 terhadap mereka yang memainkan sentimen mengapi-apikan perkauman. Sekian,
 terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1110,Dato’ Mukhriz bin Tun Dr. Mahathir,"Terima kasih Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1110,1110,Dato’ Mukhriz bin Tun Dr. Mahathir,"Terima kasih Yang Berhormat
 Bagan di atas soalan tersebut. Akan tetapi seperti yang kita sedia maklum,
 laporan UNCTAD tersebut adalah berkisar jumlah pelaburan asing yang masuk
 pada tahun 2009. Seperti yang kita tahu tahun tersebut adalah satu tahun di
@@ -944,11 +944,11 @@ kononnya sudah menjadi negara Taliban dan sebagainya. Ini sudah tentu akan
 menimbulkan rasa resah di kalangan pelabur. Walau bagaimanapun, kita masih
 berjaya dalam usaha-usaha kita untuk mempromosi negara kita sebagai destinasi
 pelaburan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1110,Tuan Abdullah Sani bin Abdul Hamid [Kuala Langat],"minta Menteri
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,■1110,1110,Tuan Abdullah Sani bin Abdul Hamid [Kuala Langat],"minta Menteri
 Sumber Manusia menyatakan supaya kementerian mengkaji semula seksyen 30
 Akta Perhubungan Perusahaan 1967 dan kesannya setakat ini, di samping itu
 memberikan maklumat hasil pindaan tersebut."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1110,Timbalan Menteri Sumber Manusia [Dato’ Maznah binti Mazlan],"Tuan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,■1110,1110,Timbalan Menteri Sumber Manusia [Dato’ Maznah binti Mazlan],"Tuan
 Yang di-Pertua, terima kasih kepada Yang Berhormat Kuala Langat. Pindaan ke
 atas Akta Perhubungan Perusahaan 1967 telah dibuat pada 28 Februari 2008 bagi
 menambah baik kepada beberapa peruntukan sedia ada dan penambahan
@@ -980,14 +980,14 @@ pada masa yang sama, hak pekerja-pekerja masih lagi terbela dan dihakimi
 dengan adil di Mahkamah Perusahaan. Sebelum pindaan 2008, pemberian award
 seperti ini tidak termaktub di dalam akta dan ianya akan berasaskan kepada budi
 bicara mahkamah."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1120,Timbalan Menteri Sumber Manusia [Dato’ Maznah binti Mazlan],"Seterusnya pindaan ini juga memberi manfaat kepada pekerja di mana
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,■1120,1120,Timbalan Menteri Sumber Manusia [Dato’ Maznah binti Mazlan],"Seterusnya pindaan ini juga memberi manfaat kepada pekerja di mana
 bagi memastikan kebajikan pekerja dijaga, kes-kes perlu diselesaikan di dalam
 masa 24 bulan dan berbagai-bagai langkah telah diambil dan akan terus
 dilaksanakan untuk memastikan perkara ini tercapai. Tuan Yang di-Pertua,
 kerajaan tidak berhasrat untuk mengkaji semula Seksyen 30, Akta Perhubungan
 Perusahaan 1967 kerana ia masih relevan dan memberi kebaikan kepada semua
 pihak. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1120,Tuan Abdullah Sani Abdul Hamid [Kuala Langat],"Terima kasih Tuan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,■1120,1120,Tuan Abdullah Sani Abdul Hamid [Kuala Langat],"Terima kasih Tuan
 Yang di-Pertua. Tekun saya mendengar penjelasan daripada Yang Berhormat
 Timbalan Menteri dan atas pengakhir bicaranya tadi tidak mungkin seksyen ini
 dikaji semula. Sejarahnya memang jelas bahawa seksyen ini dibuat berpandu
@@ -1003,7 +1003,7 @@ tolonglah prihatin terhadap pemangsaan pekerja yang terlibat secara pembuangan
 walaupun atas dasar tidak membebankan majikan tetapi yang menganiayai
 pekerja itu adalah majikan. Oleh yang demikian, permohonan saya atas soalan,
 “tolonglah kaji semula seksyen 30 ini.” Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1120,Dato’ Maznah binti Mazlan,"Terima kasih Tuan Yang di-Pertua. Saya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,■1120,1120,Dato’ Maznah binti Mazlan,"Terima kasih Tuan Yang di-Pertua. Saya
 memahami hasrat dan keprihatinan Yang Berhormat Kuala Langat. Saya ingin
 mengingatkan di sini bahawa akta ini digubal untuk menggalakkan dan
 mengekalkan perhubungan perusahaan yang harmoni dan di dalam hal ini
@@ -1022,7 +1022,7 @@ sebab yang lain. Oleh itu, saya rasa buat masa ini Tuan Yang di-Pertua kerajaan
 masih lagi merasai bahawa seksyen 30 ini tidak perlu dipinda dan masih relevan
 kerana ia menjaga kepentingan kedua-dua pihak iaitu majikan dan juga pekerja.
 Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1120,Tuan M. Kulasegaran [Ipoh Barat],"Terima kasih Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,■1120,1120,Tuan M. Kulasegaran [Ipoh Barat],"Terima kasih Tuan Yang di-Pertua.
 Akta ini seperti yang dicadangkan perlu dikaji. Satu di antara perkara yang patut
 diberi perhatian adalah di mana kuasa untuk merujuk kes-kes ke Mahkamah
 Perusahaan sekarang ini adalah di bidang kuasa Yang Berhormat Menteri sendiri.
@@ -1039,7 +1039,7 @@ kekosongan lebih kurang enam bulan. Saya difahamkan tidak ada pelantikan
 langsung dibuat. Apakah sebab ini berlaku dan adakah kementerian sedar bahawa
 dengan tidak melantik pengerusi-pengerusi ini, lebih lamalah lagi keputusan kes,
 akan dilambatkan lagi."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1120,Dato’ Maznah binti Mazlan,"Terima kasih Tuan Yang di-Pertua. Soalan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,■1120,1120,Dato’ Maznah binti Mazlan,"Terima kasih Tuan Yang di-Pertua. Soalan
 ini berbeza daripada soalan asal tetapi saya ingin mengambil kesempatan ini
 untuk memberi maklumat bahawa tindakan-tindakan yang dibuat oleh
 Kementerian Sumber Manusia melalui Jabatan Perhubungan Perusahaan,
@@ -1058,21 +1058,21 @@ untuk meningkatkan kecekapan pegawai-pegawai Jabatan Perhubungan
 Perusahaan juga dibuat secara berterusan dan untuk mengekalkan kepakaran
 jawatan fleksi diwujudkan bagi mengelakkan pegawai yang berpengalaman
 bertukar apabila dinaikkan pangkat. Terima kasih Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1120,Tuan M. Kulasegaran [Ipoh Barat],Pelantikan pengerusi?
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1120,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Yang Berhormat...
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1120,Tuan M. Kulasegaran [Ipoh Barat],"Pengerusi Mahkamah Perusahaan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,■1120,1120,Tuan M. Kulasegaran [Ipoh Barat],Pelantikan pengerusi?
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,■1120,1120,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Yang Berhormat...
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,■1120,1120,Tuan M. Kulasegaran [Ipoh Barat],"Pengerusi Mahkamah Perusahaan
 tidak ada. Tidak tahu kah atau tidak sedar? Are you aware or not aware?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1120,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,■1120,1120,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat,
 Dia sudah jawab soalan itu tidak menyentuh soalan asal Yang Berhormat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1120,Tuan M. Kulasegaran [Ipoh Barat],"Bukan Yang Berhormat, itu soalan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,■1120,1120,Tuan M. Kulasegaran [Ipoh Barat],"Bukan Yang Berhormat, itu soalan
 asal dari akta tersebut. It is very specific. Saya rasa ini adalah perkara asal,
 berkaitan..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1120,Dato’ Noraini binti Ahmad [Parit Sulong],"minta Menteri Pelajaran
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1120,1120,Dato’ Noraini binti Ahmad [Parit Sulong],"minta Menteri Pelajaran
 menyatakan sama ada kementerian akan mewujudkan dasar menyerapkan semua
 Guru Sandaran Tidak Terlatih (GSTT) kepada jawatan tetap setelah mengikuti
 Kursus Dalam Cuti (KDC) seperti mana GSTT di sekolah jenis kebangsaan yang
 diserapkan ke jawatan tetap setelah mengikuti KDC."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1120,Timbalan Menteri Pelajaran II [Dr. Haji Mohd. Puad bin Zarkashi],"Terima kasih Tuan Yang di-Pertua. Assalamualaikum dan salam 1Malaysia. Guru
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1120,1120,Timbalan Menteri Pelajaran II [Dr. Haji Mohd. Puad bin Zarkashi],"Terima kasih Tuan Yang di-Pertua. Assalamualaikum dan salam 1Malaysia. Guru
 Sandaran Tidak Terlatih (GSTT) dilantik bertujuan menampung keperluan
 kekosongan jawatan dan kekurangan guru pada satu-satu masa. Perkhidmatan
 GSTT akan ditamatkan setelah Kementerian Pelajaran Malaysia (KPM)
@@ -1088,22 +1088,22 @@ mereka ini adalah berdasarkan kepada keperluan dan syarat-syarat tertentu. KPM
 juga menggalakkan mereka ini memohon program KPLI untuk menjadi guru
 terlatih. Walau bagaimanapun, mereka mestilah memenuhi beberapa syarat
 seperti lulus INSAK dan juga proses temu duga. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1120,Dato’ Noraini binti Ahmad [Parit Sulong],"Terima kasih Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1120,1120,Dato’ Noraini binti Ahmad [Parit Sulong],"Terima kasih Tuan Yang di-
 Pertua. Saya maklum GSTT ini adalah untuk menampung masalah kekurangan
 guru. Walaupun kita tengok kadang-kadang ia menjadi kerjaya last choice dengan
 izin, setelah gagal dalam permohonan kerja-kerja lain. Jadi, daripada apa Yang
 Berhormat Timbalan Menteri maklumkan tadi, saya hendak tahu apakah
 mekanisme yang digunakan untuk menangani isu kekurangan guru bertauliah
 terutamanya yang berada di luar bandar dan juga di pedalaman?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1130,Dato’ Noraini binti Ahmad [Parit Sulong],"Apakah kementerian akan terus bercadang untuk terus melatih, melantik
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1130,1130,Dato’ Noraini binti Ahmad [Parit Sulong],"Apakah kementerian akan terus bercadang untuk terus melatih, melantik
 dan memudahkan proses GSTT yang sedia ada ini untuk terus diserapkan ke
 jawatan tetap memandangkan walaupun setengahnya kurang pengalaman, tetapi
 mereka ada kelayakan dan sekali gus akan membantu kadar pengangguran
 seperti pegawai-pegawai kontrak di jabatan kerajaan lain.
 Apa lagi kerajaan juga telah memberikan jaminan untuk memberi
 keutamaan kepada pegawai-pegawai kontrak. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1130,Seorang Ahli,[Menyampuk]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1130,Dr. Haji Mohd. Puad bin Zarkashi,"Terima kasih Yang Berhormat. Untuk
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1130,1130,Seorang Ahli,[Menyampuk]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1130,1130,Dr. Haji Mohd. Puad bin Zarkashi,"Terima kasih Yang Berhormat. Untuk
 makluman Yang Berhormat, Kementerian Pelajaran Malaysia sekarang ini
 memang sedang membuat satu kajian khusus iaitu, bagaimanakah kita dapat
 mengatasi permintaan guru-guru GSTT ini supaya mereka diserapkan sebagai
@@ -1118,11 +1118,11 @@ terdekat ini untuk kita mencari mekanisme baru, iaitu bagi memastikan mereka ini
 boleh diserapkan sebagai guru tetap. Insya-Allah ini adalah menjadi
 tanggungjawab Kementerian Pelajaran untuk memastikan mereka juga berpeluang
 diterima sebagai guru tetap ini. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1130,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Ahli-ahli Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1130,1130,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Ahli-ahli Yang
 Berhormat, setakat itulah pertanyaan-pertanyaan bagi jawapan lisan.
 **[Masa untuk Pertanyaan-pertanyaan bagi Jawab Lisan telah tamat]**"
 RANG UNDANG-UNDANG DIBAWA KE DALAM MESYUARAT,"RANG UNDANG-UNDANG JURUANALISIS MAKANAN 2010
-Bacaan Kali Yang Pertama",,1130,,"Rang undang-undang bernama suatu akta untuk mengadakan peruntukan
+Bacaan Kali Yang Pertama",,■1130,1130,,"Rang undang-undang bernama suatu akta untuk mengadakan peruntukan
 bagi penubuhan Majlis Juruanalisis Makanan Malaysia untuk mengadakan
 peruntukan bagi pendaftaran orang yang menjalankan amalan sebagai
 Juruanalisis Makanan dan untuk mengawal selia amalan Juruanalisis Makanan
@@ -1130,14 +1130,14 @@ dan bagi perkara-perkara yang berkaitan dengannya; dibawa ke dalam Mesyuarat
 oleh Timbalan Menteri Kesihatan; dibaca kali yang pertama; akan dibacakan kali
 yang kedua pada Mesyuarat kali ini."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1130,,"Aturan Urusan Mesyuarat dibaca bagi menyambung semula perbahasan
+Bacaan Kali Yang Kedua dan Ketiga",,■1130,1130,,"Aturan Urusan Mesyuarat dibaca bagi menyambung semula perbahasan
 yang ditangguh atas masalah, “Bahawa rang undang-undang ini dibacakan kali
 yang kedua sekarang”. **[11 Oktober 2010]**"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1130,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Saya jemput Yang
+Bacaan Kali Yang Kedua dan Ketiga",,■1130,1130,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Saya jemput Yang
 Berhormat Pokok Sena untuk menyambung perbahasan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1133,Dato’ Mahfuz bin Haji Omar [Pokok Sena],"Assalamualaikum
+Bacaan Kali Yang Kedua dan Ketiga",,11.33 pg.,1133,Dato’ Mahfuz bin Haji Omar [Pokok Sena],"Assalamualaikum
 warahmatullaahi wabarakaatuh, terima kasih Tuan Yang di-Pertua. Saya
 menyambung daripada perbahasan yang baru sempat seminit setengah semalam.
 Saya ucapkan terima kasih sekali lagi kerana diberi kesempatan untuk turut
@@ -1180,7 +1180,7 @@ sedangkan saya katakan tadi bahawa dia menguruskan kompleks bukan membuat
 penganjuran-penganjuran kepada apa-apa sukan ataupun permainan yang dibuat
 oleh persatuan-persatuan yang telah sedia ada untuk menganjurkan sukan-sukan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1133,Dr. Mohd. Hatta Md. Ramli [Kuala Krai],"Minta penjelasan. Tuan Yang
+Bacaan Kali Yang Kedua dan Ketiga",,11.33 pg.,1133,Dr. Mohd. Hatta Md. Ramli [Kuala Krai],"Minta penjelasan. Tuan Yang
 di-Pertua, Pokok Sena tadi seolah-olah mohon penjelasan sama ada Perbadanan
 ini akan melangkaui tugas pengurusan stadium dan juga tempat-tempat sukan ini
 kepada penganjuran sekali. Kalaulah saya boleh memberikan pandangan,
@@ -1200,7 +1200,7 @@ beramai-ramai untuk memeriahkan hendak menunjukkan bahawa rakyat Malaysia
 ini satu rakyat yang cintakan sukan. Tambah lagi satu perbadanan jadi penganjur
 juga. Jadi apakah pandangan Pokok Sena."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1133,Dato’ Mahfuz bin Haji Omar [Pokok Sena],"Apa yang saya bangkitkan
+Bacaan Kali Yang Kedua dan Ketiga",,11.33 pg.,1133,Dato’ Mahfuz bin Haji Omar [Pokok Sena],"Apa yang saya bangkitkan
 ini ialah untuk hendak melihat bahawa yang kita pentingkan di sini ialah bukan
 sekadar pengurusan stadium atau kompleks-kompleks sukan, tetapi yang hendak
 kita buktikan juga di sini yang lebih utamanya ialah pencapaian, mutu sukan
@@ -1214,13 +1214,13 @@ sukan negara kita ini lemah, jadi tidak ada makna kepada pengurusan stadium
 yang baik. Dia dari segi manage stadium cukup baik tetapi dari segi mutu sukan
 kita terlalu lemah."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1140,Dato’ Mahfuz bin Haji Omar [Pokok Sena],"Sebab itu Yang Berhormat Menteri, kalau kita lihat bahawa sukan SUKMA
+Bacaan Kali Yang Kedua dan Ketiga",,■1140,1140,Dato’ Mahfuz bin Haji Omar [Pokok Sena],"Sebab itu Yang Berhormat Menteri, kalau kita lihat bahawa sukan SUKMA
 umpamanya, sukan SUKMA diadakan saya tidak ingat berapa tahun sekali, dua
 tahun sekali."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1140,Puan Chong Eng [Bukit Mertajam],[Bangun]
+Bacaan Kali Yang Kedua dan Ketiga",,■1140,1140,Puan Chong Eng [Bukit Mertajam],[Bangun]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1140,Dato’ Mahfuz bin Haji Omar [Pokok Sena],"Sekejap Yang Berhormat
+Bacaan Kali Yang Kedua dan Ketiga",,■1140,1140,Dato’ Mahfuz bin Haji Omar [Pokok Sena],"Sekejap Yang Berhormat
 Bukit Mertajam. Bila diadakan setiap dua tahun sekali dan dirotate mengikut negeri
 maka negeri itu akan diperuntukkan sama ada daripada Kerajaan Pusat ataupun
 peruntukan daripada kerajaan negeri untuk menyediakan tempat-tempat sukan,
@@ -1236,7 +1236,7 @@ penganjuran secara langsung, menyediakan perkhidmatan, nasihat, perunding,
 menyediakan perkhidmatan bersifat teknikal dan sebagainya. Itu sudah jadi
 bercanggah antara satu sama lain. Sila."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1140,Puan Chong Eng [Bukit Mertajam],"Terima kasih Yang Berhormat Pokok
+Bacaan Kali Yang Kedua dan Ketiga",,■1140,1140,Puan Chong Eng [Bukit Mertajam],"Terima kasih Yang Berhormat Pokok
 Sena. Itulah fikiran saya juga. Ini kerana di Pulau Pinang kita lihat bahawa bukan
 sahaja prestasi ahli sukan harus dipertingkatkan lagi. Akan tetapi seperti yang
 dikatakan oleh Yang Berhormat Pokok Sena bahawa stadium-stadium menjadi
@@ -1252,7 +1252,7 @@ Pakatan punya. Jadi kita tidak mahu beri peruntukan. Saya rasa ini bukan
 1Malaysia. Ini adalah dua, tiga, empat Malaysia atau ini Tipu Malaysia? Adakah
 Yang Berhormat Pokok Sena bersetuju?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1140,Dato’ Mahfuz bin Haji Omar [Pokok Sena],"Ya, saya bersetuju untuk
+Bacaan Kali Yang Kedua dan Ketiga",,■1140,1140,Dato’ Mahfuz bin Haji Omar [Pokok Sena],"Ya, saya bersetuju untuk
 supaya pihak kerajaan sendiri serta Perbadanan ini bekerjasama dengan pihak
 kerajaan negeri. Ini kerana di negeri sendiri pun ada Perbadanan Stadium Negeri.
 Saya lihat bahawa memang ada di sini dalam satu clause, saya tidak ingat perkara
@@ -1329,10 +1329,10 @@ sukan yang lebih baik untuk menarik orang untuk datang. Umpamanya sekarang
 bola sepak kita masih jauh ke belakang. Malah kalau kita lihat acara apa yang di
 Sukan Komanwel yang angkat bendera..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1140,Dr. Mohd. Hatta Md. Ramli [Kuala Krai],"[Bercakap tanpa menggunakan
+Bacaan Kali Yang Kedua dan Ketiga",,■1140,1140,Dr. Mohd. Hatta Md. Ramli [Kuala Krai],"[Bercakap tanpa menggunakan
 pembesar suara]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1140,Dato’ Mahfuz bin Haji Omar [Pokok Sena],"Dia angkat bendera Sabah
+Bacaan Kali Yang Kedua dan Ketiga",,■1140,1140,Dato’ Mahfuz bin Haji Omar [Pokok Sena],"Dia angkat bendera Sabah
 apabila dia menang. Maknanya Yang Berhormat Menteri pun ada komen saya
 lihat bahawa lebih baik angkat bendera Sabah daripada angkat bendera Malaysia
 kalau kalah. [Ketawa] Jadi kita tidak bolehlah begitu. Maknanya kalau kalah pun
@@ -1352,7 +1352,7 @@ terlalu senior saya lihat, terlalu sudah pemikiran ataupun tepu sudah tidak mamp
 hendak memikir tentang kemajuan sukan yang lebih terkini, yang saya fikir tidak
 sesuai lagi untuk menerajui persatuan-persatuan sukan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1150,Dato’ Mahfuz bin Haji Omar [Pokok Sena],"Ia mesti ada input ataupun nafas-nafas baru dalam persatuan-persatuan
+Bacaan Kali Yang Kedua dan Ketiga",,■1150,1150,Dato’ Mahfuz bin Haji Omar [Pokok Sena],"Ia mesti ada input ataupun nafas-nafas baru dalam persatuan-persatuan
 sukan. Jadi persatuan-persatuan sukan ini harus sedar, kalau sudah sampai ke
 peringkat umur yang sudah tidak mampu fikir soal bagaimana hendak maju sukan,
 sudah tidak ada idea sudah, buat apa hendak duduk di situ? Berilah peluang
@@ -1399,12 +1399,12 @@ syarikat, persatuan-persatuan individu untuk membantu membangunkan Piala
 Mas sama ada di peringkat nasional ataupun di peringkat persatuan-persatuan
 negeri."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1150,Dato’ Dr. Mohd. Hayati bin Othman [Pendang],"Yang Berhormat Pokok
+Bacaan Kali Yang Kedua dan Ketiga",,■1150,1150,Dato’ Dr. Mohd. Hayati bin Othman [Pendang],"Yang Berhormat Pokok
 Sena."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1150,Dato’ Haji Mahfuz bin Omar [Pokok Sena],"Ya, ada bolakah?"
+Bacaan Kali Yang Kedua dan Ketiga",,■1150,1150,Dato’ Haji Mahfuz bin Omar [Pokok Sena],"Ya, ada bolakah?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1150,Dato’ Dr. Mohd. Hayati bin Othman [Pendang],"Sedikit sahaja. Ada bola
+Bacaan Kali Yang Kedua dan Ketiga",,■1150,1150,Dato’ Dr. Mohd. Hayati bin Othman [Pendang],"Sedikit sahaja. Ada bola
 - boleh main, semua bagus.
 Terima kasih Tuan Yang di-Pertua, terima kasih Yang Berhormat Pokok
 Sena. Saya tertarik dengan apa yang disebutkan oleh Yang Berhormat Pokok
@@ -1423,7 +1423,7 @@ minta pandangan daripada Yang Berhormat Pokok Sena kerajaan perlu
 memberikan perhatian kepada syor-syor yang macam ini. Terima kasih Yang
 Berhormat Pokok Sena."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1150,Dato’ Haji Mahfuz bin Omar [Pokok Sena],"Terima kasih Yang
+Bacaan Kali Yang Kedua dan Ketiga",,■1150,1150,Dato’ Haji Mahfuz bin Omar [Pokok Sena],"Terima kasih Yang
 Berhormat Pendang. Saya rasa perkara ini cukup jelas maknanya ini berkaitan
 dengan keputusan yang telah dibuat sebelum ini yang saya fikir kerajaan tidak
 perlu memberikan perhatian. Akan tetapi apa yang pentingnya ialah kita telah
@@ -1452,9 +1452,9 @@ menyokong pasukan negara kita, insya-Allah.
 Jadi seterusnya saya hendak membangkitkan isu yang berkaitan dengan
 soalan untuk menarik orang awam ke stadium atau ke kompleks sukan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1150,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Panjang lagi Yang Berhormat?
+Bacaan Kali Yang Kedua dan Ketiga",,■1150,1150,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Panjang lagi Yang Berhormat?
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1150,Dato’ Haji Mahfuz bin Omar [Pokok Sena],"Tidak panjanglah. Ada dua
+Bacaan Kali Yang Kedua dan Ketiga",,■1150,1150,Dato’ Haji Mahfuz bin Omar [Pokok Sena],"Tidak panjanglah. Ada dua
 atau tiga, pendek-pendek sahaja.
 Untuk menarik orang awam ke stadium ataupun kompleks sukan. Saya
 bersetuju dengan kawan-kawan kita semalam mengatakan bahawa selain
@@ -1494,7 +1494,7 @@ penganjuran himpunan yang bersifat perkauman yang diadakan di Stadium TPCA
 yang ada waktu itu. Jadi saya tetap berpegang pada prinsip sampai sekarang
 bahawa sebarang perhimpunan yang bersifat perkauman."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1200,Dato’ Haji Mahfuz bin Omar [Pokok Sena],"Akan tetapi janganlah pula mentafsir bahawa kalau Pakatan Rakyat
+Bacaan Kali Yang Kedua dan Ketiga",,■1200,1200,Dato’ Haji Mahfuz bin Omar [Pokok Sena],"Akan tetapi janganlah pula mentafsir bahawa kalau Pakatan Rakyat
 hendak buat, dia kata ini perkauman. Ini satu benda yang sangat tidak adillah
 sebab kami dari semua kaum – Benggali ada, India ada, Melayu ada, Cina ada,
 Siam ada. Kita daripada semua kaum. Jadi saya fikir bahawa ini boleh menarik
@@ -1531,11 +1531,11 @@ Jadi, itu yang dapat saya sampaikan. Mudah-mudahan sedikit sumbangan
 daripada saya untuk memastikan bahawa stadium kita ini dan kompleks sukan
 dalam negara kita ini akan dapat dimanfaatkan secara yang sebaiknya."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1200,Beberapa Ahli,[Bangun]
+Bacaan Kali Yang Kedua dan Ketiga",,■1200,1200,Beberapa Ahli,[Bangun]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1200,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Ya Yang Berhormat. Sila. Yang Berhormat Pengerang.
+Bacaan Kali Yang Kedua dan Ketiga",,■1200,1200,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Ya Yang Berhormat. Sila. Yang Berhormat Pengerang.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1203,Dato’ Sri Azalina Dato’ Othman Said [Pengerang],"Terima kasih Tuan
+Bacaan Kali Yang Kedua dan Ketiga",,12.03 tgh.,1203,Dato’ Sri Azalina Dato’ Othman Said [Pengerang],"Terima kasih Tuan
 Yang di-Pertua. Sebenarnya saya selaku Ahli Parlimen Pengerang ingin
 menyokong Rang Undang-undang Perbadanan Stadium dan mengambil
 kesempatan untuk membahaskan cadangan seksyen 4, tetapi lebih kepada
@@ -1624,7 +1624,7 @@ Memang kita tahu masalah persatuan bola sepak dan sebagainya. Akan tetapi ada
 juga gambar-gambar Santokh Singh. Ada juga gambar-gambar arwah Mokhtar
 Dahari."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1210,Dato’ Sri Azalina Dato’ Othman Said [Pengerang],"Jadi, kalau mungkinlah saya hendak mencadangkan kepada Yang
+Bacaan Kali Yang Kedua dan Ketiga",,■1210,1210,Dato’ Sri Azalina Dato’ Othman Said [Pengerang],"Jadi, kalau mungkinlah saya hendak mencadangkan kepada Yang
 Berhormat Menteri mungkinlah stadium perbadanan ini kalau kita hendak
 wujudkan, kita letaklah nama-nama kejayaan atlet kita sebagai mewujudkan
 semangat sukan dan minat sukan anak-anak kita. Mungkin dipanggil Stadium
@@ -1691,27 +1691,27 @@ dalam diri mereka. Kalau kita hendak anak-anak muda kita menjadi seperti
 mereka, individu yang berjaya, individu yang fokus, kita sebagai ahli politik, Ahli
 Parlimen di sini perlu bersifat lebih terbuka, meletakkan konsep..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1210,Dr. Mohd. Hatta Md. Ramli [Kuala Krai],[Bangun]
+Bacaan Kali Yang Kedua dan Ketiga",,■1210,1210,Dr. Mohd. Hatta Md. Ramli [Kuala Krai],[Bangun]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1210,Dato’ Sri Azalina Dato’ Othman Said [Pengerang],"Sukan dan
+Bacaan Kali Yang Kedua dan Ketiga",,■1210,1210,Dato’ Sri Azalina Dato’ Othman Said [Pengerang],"Sukan dan
 memahami konsep pembangunan sukan dalam persatuan dan juga anak-anak
 muda."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1210,Dr. Mohd. Hatta Md. Ramli [Kuala Krai],Mohon penjelasan sedikit.
+Bacaan Kali Yang Kedua dan Ketiga",,■1210,1210,Dr. Mohd. Hatta Md. Ramli [Kuala Krai],Mohon penjelasan sedikit.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1210,Dato’ Sri Azalina Dato’ Othman Said [Pengerang],"Dengan itu saya
+Bacaan Kali Yang Kedua dan Ketiga",,■1210,1210,Dato’ Sri Azalina Dato’ Othman Said [Pengerang],"Dengan itu saya
 ingin..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1210,Dr. Mohd. Hatta Md. Ramli [Kuala Krai],Minta penjelasan sedikit.
+Bacaan Kali Yang Kedua dan Ketiga",,■1210,1210,Dr. Mohd. Hatta Md. Ramli [Kuala Krai],Minta penjelasan sedikit.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1210,Dato’ Sri Azalina Dato’ Othman Said [Pengerang],"Saya ingin
+Bacaan Kali Yang Kedua dan Ketiga",,■1210,1210,Dato’ Sri Azalina Dato’ Othman Said [Pengerang],"Saya ingin
 menyokong Rang Undang-undang Perbadanan Stadium Malaysia 2010."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1210,Beberapa Ahli,[Bangun]
+Bacaan Kali Yang Kedua dan Ketiga",,■1210,1210,Beberapa Ahli,[Bangun]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1210,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Yang Berhormat Bachok.
+Bacaan Kali Yang Kedua dan Ketiga",,■1210,1210,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Yang Berhormat Bachok.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1215,Tuan Haji Nasharuddin Mat Isa [Bachok],"Terima kasih Tuan Yang di-
+Bacaan Kali Yang Kedua dan Ketiga",,12.15 tgh.,1215,Tuan Haji Nasharuddin Mat Isa [Bachok],"Terima kasih Tuan Yang di-
 Pertua. Saya juga ingin turut mengambil bahagian dalam membahaskan Rang
 Undang-undang Perbadanan Stadium Malaysia 2010 ini. Pertamanya, saya ingin
 memberikan respons pada apa yang dibangkitkan oleh Yang Berhormat
@@ -1780,7 +1780,7 @@ functions yang kecil ataupun sekali-skala mungkin ada majlis-majlis yang kecil,
 padahal kedudukannya cukup strategik, mudah dicapai, mudah dihubungi oleh
 rakyat di tengah-tengah kota raya Kuala Lumpur."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1220,Tuan Haji Nasharuddin Mat Isa [Bachok],"Jadi cadangan saya secara khususnya dalam rang undang-undang ini
+Bacaan Kali Yang Kedua dan Ketiga",,■1220,1220,Tuan Haji Nasharuddin Mat Isa [Bachok],"Jadi cadangan saya secara khususnya dalam rang undang-undang ini
 adalah insentif harus diberikan oleh kerajaan kepada badan-badan yang ingin
 menaja stadium-stadium ini dan penggalakan kepada GLCs dan juga syarikat-
 syarikat korporat yang lainnya untuk menaja stadium ini. Tidak apa, berilah
@@ -1789,9 +1789,9 @@ nama kumpulan mereka asalkan sahaja manfaatnya nanti adalah untuk
 kepentingan dan kemajuan sukan dan belia dalam negara kita. Terima kasih Tuan
 Yang di-Pertua."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1220,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ya, silakan Yang Berhormat Kinabatangan."
+Bacaan Kali Yang Kedua dan Ketiga",,■1220,1220,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ya, silakan Yang Berhormat Kinabatangan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1223,Datuk Bung Moktar bin Radin [Kinabatangan],"Ya, sedikit sahaja Tuan
+Bacaan Kali Yang Kedua dan Ketiga",,12.23 tgh.,1223,Datuk Bung Moktar bin Radin [Kinabatangan],"Ya, sedikit sahaja Tuan
 Yang di-Pertua. Saya sehaluan dengan rakan-rakan iaitu saya melihat bahawa
 akta ini pindaan ini, boleh merungkaikan masalah yang dihadapi oleh kementerian
 dan kerajaan selama ini di mana kita melihat bagaimana perbadanan sukan kita
@@ -1870,9 +1870,9 @@ kita lihat dimonopoli oleh beberapa buah negara. Kenapa kita tidak boleh
 melahirkan jaguh-jaguh renang seperti juga negara-negara yang boleh melahirkan
 jaguh-jaguh yang sedemikian. Tuan Yang di-Pertua, saya menyokong."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1223,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ya, Yang Berhormat Sungai Petani."
+Bacaan Kali Yang Kedua dan Ketiga",,12.23 tgh.,1223,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ya, Yang Berhormat Sungai Petani."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1228,Dato’ Johari Abdul [Sungai Petani],"Tuan Yang di-Pertua, sedikit sahaja
+Bacaan Kali Yang Kedua dan Ketiga",,12.28 tgh.,1228,Dato’ Johari Abdul [Sungai Petani],"Tuan Yang di-Pertua, sedikit sahaja
 pandangan saya tentang rang undang-undang ini. Sementara saya bersetuju dan
 menyokong bahawa harus diwujudkan satu perbadanan stadium bagi mengelak
 daripada beban yang ditanggung oleh kerajaan saban tahun bagi mengendalikan,
@@ -1887,7 +1887,7 @@ premis yang diberikan, Yang Berhormat Menteri dan juga kementerian harus
 memastikan bahawa premis-premis yang diberikan hendaklah kekal sebagai
 premis untuk sukan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1230,Dato’ Johari Abdul [Sungai Petani],"Ini kerana kita telah berpengalaman apabila tidak lama dahulu kerajaan
+Bacaan Kali Yang Kedua dan Ketiga",,■ 1230,1230,Dato’ Johari Abdul [Sungai Petani],"Ini kerana kita telah berpengalaman apabila tidak lama dahulu kerajaan
 membuat keputusan walaupun ada stadium-stadium yang mempunyai sejarah
 seperti Stadium Negara. Stadium yang cantik, duduk dalam kota raya dan
 sepatutnya dinaiktarafkan walaupun ada masalah trafik dan sebagainya. Akan
@@ -1914,12 +1914,12 @@ hampir semua. Ada yang sekarang ini menjadi gajah putih. Kolam renang yang
 apabila kita terjun dalam kolam itu naik mungkin tinggal tulang sebab isinya akan
 dimakan oleh unggas-unggas dan lain-lain kerana tidak di maintain."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1230,Puan Nurul Izzah Anwar [Lembah Pantai],"Mohon mencelah Yang
+Bacaan Kali Yang Kedua dan Ketiga",,■ 1230,1230,Puan Nurul Izzah Anwar [Lembah Pantai],"Mohon mencelah Yang
 Berhormat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1230,Dato’ Johari Abdul [Sungai Petani],Silakan.
+Bacaan Kali Yang Kedua dan Ketiga",,■ 1230,1230,Dato’ Johari Abdul [Sungai Petani],Silakan.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1230,Puan Nurul Izzah Anwar [Lembah Pantai],"Terima kasih Tuan Yang di-
+Bacaan Kali Yang Kedua dan Ketiga",,■ 1230,1230,Puan Nurul Izzah Anwar [Lembah Pantai],"Terima kasih Tuan Yang di-
 Pertua dan Yang Berhormat Sungai Petani. Saya tertarik apabila Yang Berhormat
 membangkitkan isu ketelusan kerana saya lihat menerusi rang undang-undang ini,
 perbadanan bukan sahaja dibenarkan melantik dan membayar khidmat agen bagi
@@ -1933,7 +1933,7 @@ pegawai-pegawai, dan agen-agen diguna syarat niat suci mereka diberi
 perlindungan daripada sebarang tindakan atau pun pendakwaan. Bagaimanakah
 pendapat Yang Berhormat dengan kuasa-kuasa sebegini? Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1230,Dato’ Johari Abdul [Sungai Petani],"Terima kasih Yang Berhormat
+Bacaan Kali Yang Kedua dan Ketiga",,■ 1230,1230,Dato’ Johari Abdul [Sungai Petani],"Terima kasih Yang Berhormat
 Lembah Pantai. Saya mohon untuk pandangan daripada Yang Berhormat Lembah
 Pantai itu dimasukkan dalam ucapan saya kerana inilah di antara perkara yang
 kita cukup bimbang. Setiap kali kita wujudkan perbadanan, setiap kali kita
@@ -1969,9 +1969,9 @@ boleh senaraikan banyaklah walaupun tidak berkaitan dengan sukan. Akan tetapi
 itu ialah berputusan yang telah dibuat. Akhirnya, dia membawa malapetaka
 kepada rakyat. Saya fikir itu sahaja Tuan Yang di-Pertua. Ribuan terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1230,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ya, Yang Berhormat Kota Melaka."
+Bacaan Kali Yang Kedua dan Ketiga",,■ 1230,1230,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ya, Yang Berhormat Kota Melaka."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1237,Tuan Sim Tong Him [Kota Melaka],"Terima kasih Tuan Yang di-Pertua.
+Bacaan Kali Yang Kedua dan Ketiga",,12.37 tgh.,1237,Tuan Sim Tong Him [Kota Melaka],"Terima kasih Tuan Yang di-Pertua.
 Saya juga ingin mengambil bahagian dalam perbahasan dalam rang undang-
 undang ini. Tuan Yang di-Pertua, saya percaya apa yang disebutkan semasa rang
 undang-undang dibentangkan iaitu penggunaan ini tujuan utama ialah untuk
@@ -2002,12 +2002,12 @@ Seperti kalau dikatakan satu stadium di tengah-tengah bandar raya Melaka,
 Stadium Kubu dan telah banyak kali ada percubaan untuk Stadium Kubu ini di
 jadikan satu tapak komersial."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1240,Tuan Sim Tong Him [Kota Melaka],"Oleh sebab itu saya ingin bertanya, selepas perbadanan ini adakah
+Bacaan Kali Yang Kedua dan Ketiga",,■1240,1240,Tuan Sim Tong Him [Kota Melaka],"Oleh sebab itu saya ingin bertanya, selepas perbadanan ini adakah
 mereka berhak untuk menswastakan kompleks sukan atau stadium itu dan
 seterusnya menjualkan kompleks tersebut supaya dapat dijadikan satu tapak
 komersial atau bangunan-bangunan lain, sila."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1240,Dato’ Dr. Mohd. Hayati bin Othman [Pendang],"Terima kasih Yang
+Bacaan Kali Yang Kedua dan Ketiga",,■1240,1240,Dato’ Dr. Mohd. Hayati bin Othman [Pendang],"Terima kasih Yang
 Berhormat Kota Melaka, Tuan Yang di-Pertua. Kalau kita lihat berhubung dengan
 disuarakan oleh Yang Berhormat Kota Melaka dalam seksyen 3(3)(c) iaitu
 berhubung dengan memindah, melupuskan atau lainnya. Sebenarnya saya ingin
@@ -2018,7 +2018,7 @@ Stadium Merdeka tersebut, seperti mana yang disebut di dalam 3(c) ini,
 melupuskan Stadium Merdeka itu. Bolehkah Yang Berhormat Kota Melaka tanya
 kepada Menteri supaya dijawab?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1240,Tuan Sim Tong Him [Kota Melaka],"Ya, saya memang bersetuju agar
+Bacaan Kali Yang Kedua dan Ketiga",,■1240,1240,Tuan Sim Tong Him [Kota Melaka],"Ya, saya memang bersetuju agar
 dimasukkan di dalam ucapan saya iaitu saya tidak nampak hendak menjualkan
 tetapi selain itu melupuskannya, mungkin ini mempunyai makna yang sama iaitu
 boleh menjual harta tersebut. Oleh sebab kita... Dewan yang mulia ini tidak mahu
@@ -2062,9 +2062,9 @@ tidak boleh kita... supaya kita dapat membangunkan bidang-bidang sukan yang
 tertentu. Akan tetapi pada pandangan saya, stadium dengan sukan tidak boleh
 dipisahkan atau diasingkan..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1240,Seorang Ahli,[Bercakap tanpa menggunakan pembesar suara]
+Bacaan Kali Yang Kedua dan Ketiga",,■1240,1240,Seorang Ahli,[Bercakap tanpa menggunakan pembesar suara]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1240,Tuan Sim Tong Him [Kota Melaka],"Terima kasih Yang Berhormat, jika
+Bacaan Kali Yang Kedua dan Ketiga",,■1240,1240,Tuan Sim Tong Him [Kota Melaka],"Terima kasih Yang Berhormat, jika
 kita asingkan sukan ini dengan stadium, stadium hanya menjalankan aktiviti-aktiviti
 very commercial, mungkin konsert atau yang lain-lain. Jarang sekali kita dapat
 nampak betul-betul stadium tersebut dibina tujuan, utamanya untuk sukan tidak
@@ -2088,9 +2088,9 @@ lebih tetap untuk persatuan, mengapa lain-lain suka kita tidak boleh menyediakan
 kemudahan yang sama. Saya ingat hanya sedikit ini sahaja ingin saya bangkitkan
 di dalam perbahasan, terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1240,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ya, Yang Berhormat Batang Sadong."
+Bacaan Kali Yang Kedua dan Ketiga",,■1240,1240,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Ya, Yang Berhormat Batang Sadong."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1248,Puan Hajah Nancy Shukri [Batang Sadong],"Terima kasih Tuan Yang
+Bacaan Kali Yang Kedua dan Ketiga",,12.48 tgh.,1248,Puan Hajah Nancy Shukri [Batang Sadong],"Terima kasih Tuan Yang
 di-Pertua, kerana memberikan peluang kepada saya untuk turut serta
 membahaskan Rang Undang-undang Perbadanan Stadium ini. Saya tertarik untuk
 terlibat di dalam perbahasan ini kerana satu rang undang-undang yang begitu
@@ -2154,17 +2154,17 @@ diperlukan. Cuma ianya perlu disusun atur ataupun dirancang secara strategik di
 mana setiap jawatankuasa itu melihat sukan jenis mana yang memang popular di
 kawasan-kawasan tertentu agar..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1248,Dato' Seri Tiong King Sing [Bintulu],[Bangun]
+Bacaan Kali Yang Kedua dan Ketiga",,12.48 tgh.,1248,Dato' Seri Tiong King Sing [Bintulu],[Bangun]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1248,Datuk Ir. Haji Idris bin Haji Haron [Tangga Batu],[Bangun]
+Bacaan Kali Yang Kedua dan Ketiga",,12.48 tgh.,1248,Datuk Ir. Haji Idris bin Haji Haron [Tangga Batu],[Bangun]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1248,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Yang mana satu Yang Berhormat ada dua orang berdiri?
+Bacaan Kali Yang Kedua dan Ketiga",,12.48 tgh.,1248,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Yang mana satu Yang Berhormat ada dua orang berdiri?
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1248,Puan Hajah Nancy Shukri [Batang Sadong],Saya bagi bos BNBBC.
+Bacaan Kali Yang Kedua dan Ketiga",,12.48 tgh.,1248,Puan Hajah Nancy Shukri [Batang Sadong],Saya bagi bos BNBBC.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1248,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Bagi Yang Berhormat Bintulu.
+Bacaan Kali Yang Kedua dan Ketiga",,12.48 tgh.,1248,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Bagi Yang Berhormat Bintulu.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1248,Dato' Seri Tiong King Sing [Bintulu],"Terima kasih Tuan Yang di-
+Bacaan Kali Yang Kedua dan Ketiga",,12.48 tgh.,1248,Dato' Seri Tiong King Sing [Bintulu],"Terima kasih Tuan Yang di-
 Pertua, terima kasih Yang Berhormat Batang Sadong. Yang Berhormat ada lihat
 atau sedar, sekarang daripada Kementerian Belia dan Sukan memang kita
 mengucapkan terima kasih sebab sudah bina basketball court walaupun kita
@@ -2177,12 +2177,12 @@ mesyuarat, hari-hari tidak dapat appointment macam-macam sampai sekarang.
 Yang Berhormat ada bersetuju atau tidak, kalau tidak dapat memperbaiki court ini,
 macam mana kalau ada stadium kalau tidak ada penyelenggaraan?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1248,Puan Hajah Nancy Shukri [Batang Sadong],"Terima kasih Yang
+Bacaan Kali Yang Kedua dan Ketiga",,12.48 tgh.,1248,Puan Hajah Nancy Shukri [Batang Sadong],"Terima kasih Yang
 Berhormat Bintulu. Memang saya setuju sekali. Memang itu adalah salah satu
 daripada cabaran yang sentiasa kita hadapi di tempat-tempat kita. Ya, saya bagi
 peluang kepada Yang Berhormat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1248,Datuk Ir. Haji Idris bin Haji Haron [Tangga Batu],"Tuan Yang di-Pertua,
+Bacaan Kali Yang Kedua dan Ketiga",,12.48 tgh.,1248,Datuk Ir. Haji Idris bin Haji Haron [Tangga Batu],"Tuan Yang di-Pertua,
 saya memang tertarik dengan kenyataan Yang Berhormat tentang fungsi
 perbadanan dalam usaha untuk mempromosikan stadium di peringkat
 kebangsaan, antarabangsa dan sebagainya dan menggunakan anak-anak sekolah
@@ -2201,7 +2201,7 @@ nama yang spesifik dan menarik minat anak-anak untuk melawat sekali gus dapat
 mempromosikan stadium ini sebagai satu perkara yang paling baik di industri
 sukan negara. Terima kasih, Tuan Yang di-Pertua."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1248,Puan Hajah Nancy Shukri [Batang Sadong],"Terima kasih Yang
+Bacaan Kali Yang Kedua dan Ketiga",,12.48 tgh.,1248,Puan Hajah Nancy Shukri [Batang Sadong],"Terima kasih Yang
 Berhormat Tangga Batu. Tadi saya terlupa saya hendak masukkan apa yang
 dipersoalkan oleh Yang Berhormat Bintulu dan Yang Berhormat Tangga Batu
 kerana masa tidak mengizinkan. Biarlah masuk sebagai sebahagian daripada
@@ -2227,30 +2227,30 @@ mewujudkan satu prasarana yang berkualiti dan bermutu tinggi untuk kita semua.
 Jadikanlah sukan sebagai satu budaya yang sihat untuk kita semua. Sekian
 terima kasih, saya menyokong."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1248,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Yang Berhormat Padang Terap.
+Bacaan Kali Yang Kedua dan Ketiga",,12.48 tgh.,1248,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],Yang Berhormat Padang Terap.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1259,Tuan Mohd. Nasir bin Zakaria [Padang Terap],"Assalamualaikum
+Bacaan Kali Yang Kedua dan Ketiga",,12.59 tgh.,1259,Tuan Mohd. Nasir bin Zakaria [Padang Terap],"Assalamualaikum
 warahmatullaahi wabarakaatuh, terima kasih Tuan Yang di-Pertua kerana
 memberikan peluang kepada saya untuk membahaskan Rang Undang-undang
 Perbadanan Stadium Malaysia 2010. Saya percaya semangat yang...."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1259,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Yang Berhormat, habiskan."
+Bacaan Kali Yang Kedua dan Ketiga",,12.59 tgh.,1259,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Yang Berhormat, habiskan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1259,Tuan Mohd. Nasir bin Zakaria [Padang Terap],".... Semangat yang kita
+Bacaan Kali Yang Kedua dan Ketiga",,12.59 tgh.,1259,Tuan Mohd. Nasir bin Zakaria [Padang Terap],".... Semangat yang kita
 sama-sama kongsi untuk kita membangunkan sukan dalam negara kita, insya-
 Allah saya akan sambung selepas rehat. Terima kasih Tuan Yang di-Pertua."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1259,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Terima kasih Yang Berhormat, jam sudah pukul satu. Ahli-ahli Yang Berhormat,
+Bacaan Kali Yang Kedua dan Ketiga",,12.59 tgh.,1259,Timbalan Yang di-Pertua [Datuk Dr. Wan Junaidi bin Tuanku Jaafar],"Terima kasih Yang Berhormat, jam sudah pukul satu. Ahli-ahli Yang Berhormat,
 Mesyuarat pada sesi pagi ditangguhkan dan Dewan akan bersambung semula
 pada pukul 2.30 petang nanti.
 **Mesyuarat ditempohkan pada pukul 1.00 petang.
 Mesyuarat disambung semula pada pukul 2.30 petang.**
 [Tuan Yang di-Pertua **mempengerusikan Mesyuarat**]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1259,Tuan Yang di-Pertua,"Sila Yang Berhormat Padang Terap, di mana
+Bacaan Kali Yang Kedua dan Ketiga",,12.59 tgh.,1259,Tuan Yang di-Pertua,"Sila Yang Berhormat Padang Terap, di mana
 Yang Berhormat Padang Terap? Jangan panjang sangat Yang Berhormat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1432,Tuan Mohd. Nasir bin Zakaria [Padang Terap],"Bismillaahir Rahmaanir
+Bacaan Kali Yang Kedua dan Ketiga",,2.32 ptg.,1432,Tuan Mohd. Nasir bin Zakaria [Padang Terap],"Bismillaahir Rahmaanir
 Rahiim. Assalamualaikum warahmatullaahi wabarakaatuh. Terima kasih Tuan
 Yang di-Pertua. Saya juga ingin menyertai kawan-kawan membahaskan Rang
 Undang-undang Perbadanan Stadium Malaysia 2010.
@@ -2335,7 +2335,7 @@ di situ, tidak dibenarkan tetapi dibenarkan dengan bayaran sebagai misalnya. Ini
 sudah tentulah satu perkara yang kita tidak boleh terima dan kita menghakis
 tanggungjawab sosial yang sepatutnya dipikul oleh kerajaan sendiri."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1440,Tuan Mohd. Nasir bin Zakaria [Padang Terap],"Seterusnya yang saya ingin sentuh ialah di mana yang saya sebut tadi
+Bacaan Kali Yang Kedua dan Ketiga",,■1440,1440,Tuan Mohd. Nasir bin Zakaria [Padang Terap],"Seterusnya yang saya ingin sentuh ialah di mana yang saya sebut tadi
 kuasa Menteri termasuklah dalam seksyen 6, seksyen 9(1), seksyen 12, seksyen
 10(1)(g) dan juga seksyen 29. Di sini kita lihat bagaimana daripada segi
 pelantikan, keanggotaan Perbadanan ini, seolah-olah Menteri mempunyai kuasa
@@ -2363,10 +2363,10 @@ dengan rang undang-undang ini, kebimbangan saya dan juga saranan saya
 kepada pihak kementerian untuk kita melihat supaya akta ini boleh memberikan
 manfaat kepada rakyat Malaysia. Terima kasih Tuan Yang di-Pertua."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1440,Tuan Yang di-Pertua,"Sila - kalau boleh selepas Yang Berhormat ini,
+Bacaan Kali Yang Kedua dan Ketiga",,■1440,1440,Tuan Yang di-Pertua,"Sila - kalau boleh selepas Yang Berhormat ini,
 Yang Berhormat Menteri jawab."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1442,Dr. Siti Mariah binti Mahmud [Kota Raja],"Terima kasih Tuan Yang di-
+Bacaan Kali Yang Kedua dan Ketiga",,2.42 ptg.,1442,Dr. Siti Mariah binti Mahmud [Kota Raja],"Terima kasih Tuan Yang di-
 Pertua. Tuan Yang di-Pertua, saya mengucapkan terima kasih kerana memberi
 peluang kepada saya. Saya melihat akta ini, bila saya melihat kepada fungsi
 Perbadanannya, ia adalah hanya semata-mata untuk membolehkan stadium-
@@ -2433,9 +2433,9 @@ keagamaan mereka just for the sake of sukan, tidak sanggup melakukan begitu.
 Kita tengok pakaian sukan yang ada sekarang lebih kepada pakaian yang
 mendedahkan aurat, it is more of a pertunjukan tubuh, it is not about sports."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1442,Seorang Ahli,Telanjang.
+Bacaan Kali Yang Kedua dan Ketiga",,2.42 ptg.,1442,Seorang Ahli,Telanjang.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1442,Dr. Siti Mariah binti Mahmud [Kota Raja],"Telanjang, terima kasih.
+Bacaan Kali Yang Kedua dan Ketiga",,2.42 ptg.,1442,Dr. Siti Mariah binti Mahmud [Kota Raja],"Telanjang, terima kasih.
 Negara kita mengaku bahawa kita negara Islam. Di mana penyesuaiannya? Di
 mana tempat untuk wanita-wanita bersukan? Yang Berhormat boleh bercakap
 bahawa boleh saja berjalan - breeze walking di tepi jalan dan sebagainya, kita
@@ -2452,7 +2452,7 @@ mengadakan tempat-tempat sukan, maka perlu ada tempat-tempat sukan bertutup
 untuk wanita yang hendak bersukan bersama wanita sahaja, eksklusif untuk
 wanita."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1450,Dr. Siti Mariah binti Mahmud [Kota Raja],"Kita tidak meminta supaya orang lain menutup aurat seperti kita tetapi kita
+Bacaan Kali Yang Kedua dan Ketiga",,■1450,1450,Dr. Siti Mariah binti Mahmud [Kota Raja],"Kita tidak meminta supaya orang lain menutup aurat seperti kita tetapi kita
 juga meminta hak kita sebagai wanita Islam yang menutup aurat. Jadi nampaknya
 sebahagian besar daripada wanita Islam dengan sendirinya terpinggir dengan
 budaya sukan yang ada di negara kita ini. Jadi saya harap ini dapat Menteri
@@ -2473,13 +2473,13 @@ membayar gaji ataupun wang pengurusan kepada kakitangan, lembaga
 pengarahnya dan sebagainya. Akhirnya apabila tidak viable lagi, kerajaan perlu
 mengambil alih Perbadanan ini. Sekian, terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1450,Tuan Yang di-Pertua,Sila Menteri.
+Bacaan Kali Yang Kedua dan Ketiga",,■1450,1450,Tuan Yang di-Pertua,Sila Menteri.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1450,Dato' Ngeh Koo Ham [Beruas],Ada lagi.
+Bacaan Kali Yang Kedua dan Ketiga",,■1450,1450,Dato' Ngeh Koo Ham [Beruas],Ada lagi.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1450,Tuan Yang di-Pertua,"Tiga minit, lepas itu Menteri jawab."
+Bacaan Kali Yang Kedua dan Ketiga",,■1450,1450,Tuan Yang di-Pertua,"Tiga minit, lepas itu Menteri jawab."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1452,Dato' Ngeh Koo Ham [Beruas],"Terima kasih Tuan Yang di-Pertua.
+Bacaan Kali Yang Kedua dan Ketiga",,2.52 ptg.,1452,Dato' Ngeh Koo Ham [Beruas],"Terima kasih Tuan Yang di-Pertua.
 Saya hanya ingin mengutarakan tiga perkara dengan secara ringkas untuk Menteri
 mempertimbangkan supaya apabila kita luluskan rang undang-undang ini, tidak
 akan menimbulkan masalah.
@@ -2516,9 +2516,9 @@ sekurang-kurangnya dua atau tiga orang perlu meluluskan mana-mana
 perbelanjaan ataupun wang yang hendak dibayar. Sekianlah isu-isu yang hendak
 saya bangkitkan. Terima kasih Tuan Yang di-Pertua."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1452,Tuan Yang di-Pertua,Terima kasih. Silakan Menteri.
+Bacaan Kali Yang Kedua dan Ketiga",,2.52 ptg.,1452,Tuan Yang di-Pertua,Terima kasih. Silakan Menteri.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1456,Menteri Belia dan Sukan [Dato' Ahmad Shabery Cheek],"Tuan Yang
+Bacaan Kali Yang Kedua dan Ketiga",,2.56 ptg.,1456,Menteri Belia dan Sukan [Dato' Ahmad Shabery Cheek],"Tuan Yang
 di-Pertua, saya ingin mengucapkan terima kasih kepada semua Ahli Yang
 Berhormat yang sudi mengambil bahagian, berbincang dan mengemukakan
 pandangan masing-masing terhadap akta yang telah kita bentangkan hari ini.
@@ -2566,7 +2566,7 @@ Merdeka dan Stadium Negara sudah tidak ada lagi. Jadi ertinya di sini bahawa
 Stadium Merdeka dan Stadium Negara bukan lagi stadium yang di bawah kuasa
 Kementerian Belia dan Sukan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1500,Menteri Belia dan Sukan [Dato' Ahmad Shabery Cheek],"Akan tetapi akta ini masih ada lagi. Jadi sebab itulah sekarang ini
+Bacaan Kali Yang Kedua dan Ketiga",,■ 1500,1500,Menteri Belia dan Sukan [Dato' Ahmad Shabery Cheek],"Akan tetapi akta ini masih ada lagi. Jadi sebab itulah sekarang ini
 dikirakan tibalah masanya supaya tukar nama kerana ianya akan memberi satu,
 semacam kekeliruan kepada orang ramai. Dia nak memohon apa dekat Stadium
 Merdeka, dia akan memohon dengan Perbadanan Stadium Merdeka sedangkan
@@ -2671,11 +2671,11 @@ izin, flexibility kepada Perbadanan ini untuk melaksanakan kerja-kerja bagi
 mengembangkan peranan dan tujuan sukan tidak lagi terkurung dalam konteks
 memberikan servis secara tradisional."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1500,Tuan Azan Ismail [Indera Mahkota],[Bangun]
+Bacaan Kali Yang Kedua dan Ketiga",,■ 1500,1500,Tuan Azan Ismail [Indera Mahkota],[Bangun]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1500,Dato' Ahmad Shabery Cheek,Silakan.
+Bacaan Kali Yang Kedua dan Ketiga",,■ 1500,1500,Dato' Ahmad Shabery Cheek,Silakan.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1510,Tuan Azan Ismail [Indera Mahkota],"Terima kasih Tuan Yang di-Pertua,
+Bacaan Kali Yang Kedua dan Ketiga",,■1510,1510,Tuan Azan Ismail [Indera Mahkota],"Terima kasih Tuan Yang di-Pertua,
 Yang Berhormat Menteri. Saya pada tahap ini berpuas hati kerana akhirnya pihak
 Menteri berterus terang. Saya telah menjangkakan bahawa antara niat ataupun
 tujuan utama membentangkan pemindaan rang undang-undang untuk
@@ -2716,7 +2716,7 @@ adanya perkembangan baru dalam bidang sukan dalam negara tersebut dikaitkan
 dengan nilai-nilai sejarah mereka yang mereka sayang. Saya minta ulasan, terima
 kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1510,Dato' Ahmad Shabery Cheek,"Tuan Yang di-Pertua, terima kasih Yang
+Bacaan Kali Yang Kedua dan Ketiga",,■1510,1510,Dato' Ahmad Shabery Cheek,"Tuan Yang di-Pertua, terima kasih Yang
 Berhormat Indera Mahkota. Saya rasa tidak ada apa yang menghalang sekiranya
 Perbadanan ini untuk meneruskan peranan-peranan tradisional. Di sini juga ada
 peranan-peranan yang dikaitkan dengan soal tugas-tugas derma, tugas-tugas
@@ -2756,12 +2756,12 @@ Itu mungkin adalah satu kesalahan misalnya, untuk Perbadanan ini untuk
 mengembangkan atas konsep yang sama. Jadi saya rasa perkara ini tidak patut
 ditimbulkan dan keduanya tentang..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1510,Tuan Mohd. Nasir bin Zakaria [Padang Terap],"Menteri, boleh celah
+Bacaan Kali Yang Kedua dan Ketiga",,■1510,1510,Tuan Mohd. Nasir bin Zakaria [Padang Terap],"Menteri, boleh celah
 sedikit?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1510,Dato' Ahmad Shabery Cheek,Silakan.
+Bacaan Kali Yang Kedua dan Ketiga",,■1510,1510,Dato' Ahmad Shabery Cheek,Silakan.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1510,Tuan Mohd. Nasir bin Zakaria [Padang Terap],"Terima kasih Tuan
+Bacaan Kali Yang Kedua dan Ketiga",,■1510,1510,Tuan Mohd. Nasir bin Zakaria [Padang Terap],"Terima kasih Tuan
 Yang di-Pertua dan terima kasih kepada Menteri Sukan. Saya ingin menyentuh
 tadi berkaitan dengan penekanan yang lebih kepada komersial kalau kita
 bandingkan dengan negara luar, dia ada syarikat-syarikat swasta, korporat yang
@@ -2777,7 +2777,7 @@ bahawa peringkat awalnya ia satu konsep penswastaan, satu konsep korporat
 tetapi kita lihat penajaan-penajaan di negara kita tidak sebesar yang diperoleh
 oleh negara-negara luar. Jadi apa pandangan pihak Menteri. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1510,Dato' Ahmad Shabery Cheek,"Tuan Yang di-Pertua saya rasa
+Bacaan Kali Yang Kedua dan Ketiga",,■1510,1510,Dato' Ahmad Shabery Cheek,"Tuan Yang di-Pertua saya rasa
 bercanggah. Kalau Etihad boleh, kenapa tidak boleh di sini misalnya, kalau
 Perbadanan ini mengadakan sebagaimana yang dicadangkan oleh Yang
 Berhormat Bachok dengan AirAsia misalnya. Kalau AirAsia ingin membawa modal
@@ -2789,7 +2789,7 @@ dia punya keuntungan ialah bagaimana mengkomersialkan stadiumnya. Begitu
 juga dengan Old Trafford di Manchester United dan sebagainya, mereka
 mengkomersialkan keseluruhan stadiumnya. Ya."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1510,Tuan Mohd. Firdaus bin Jaafar [Jerai],"Menteri, sedikit mencelah. Baik
+Bacaan Kali Yang Kedua dan Ketiga",,■1510,1510,Tuan Mohd. Firdaus bin Jaafar [Jerai],"Menteri, sedikit mencelah. Baik
 Tuan Yang di-Pertua, saya pun melihat bagaimana yang disebutkan AirAsia tadi.
 Di dalam Malaysia kita sebut syarikat mana yang sanggup sponsor, contoh team
 bola sepak. Melihat mutu bola sepak tempatan, syarikat mana yang ingin sponsor.
@@ -2799,7 +2799,7 @@ mengakibatkan team kampung, daerah, PBT tidak mampu beraksi di stadium yang
 diperbadankan itu. Saya rasa ini akan berlaku di masa akan datang. Apa
 pendapat Menteri."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1510,Dato' Ahmad Shabery Cheek,"Tuan Yang di-Pertua, bagi saya tidak
+Bacaan Kali Yang Kedua dan Ketiga",,■1510,1510,Dato' Ahmad Shabery Cheek,"Tuan Yang di-Pertua, bagi saya tidak
 timbul soal team mana, siapa dia AirAsia dan sebagainya. Kalau disebutkan, ini
 saya sebut Yang Berhormat Bachok ini sebut Etihad di Melbourne, Melbourne itu
 bukan stadium bola sepak. Keseluruhan macam Bukit Jalil kita, macam-macam
@@ -2807,7 +2807,7 @@ ada di situ iaitu dahulunya dibuat pun untuk Sukan Commonwealth yang lepas
 diadakan, kemudiannya Etihad ambil untuk menganjurkan pelbagai aktiviti sukan
 di sana. Etihad itu bukan syarikat daripada Australia pun."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1520,Dato' Ahmad Shabery Cheek,"Bagi mereka, mereka melihat mana yang lebih praktikal dalam soal ini
+Bacaan Kali Yang Kedua dan Ketiga",,■1520,1520,Dato' Ahmad Shabery Cheek,"Bagi mereka, mereka melihat mana yang lebih praktikal dalam soal ini
 supaya kerajaan tidak menanggung kos dari segi penyelenggaraannya, dari segi
 bayar gajinya, dari segi landscaping dan sebagainya. Kalau ada orang sanggup
 bayar pada kerajaan, wang itu digunakan untuk dana bagi pembangunan sukan
@@ -2859,13 +2859,13 @@ memenuhi kriteria antarabangsa? Mereka ada kepakaran dalam soal ini.
 Salahkah kalau mereka boleh memberikan khidmat rundingan kepada orang lain.
 Silakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1520,Datuk Haji Mohamad bin Haji Aziz [Sri Gading],"Tuan Yang di-Pertua,
+Bacaan Kali Yang Kedua dan Ketiga",,■1520,1520,Datuk Haji Mohamad bin Haji Aziz [Sri Gading],"Tuan Yang di-Pertua,
 sahaja hendak tanya ini. Jadi, kegagalan pasukan bola sepak ini ada bergantung
 dengan rumput, rumput kerbau? Jadi bukan salah kaki, salah rumput. Tidak tahu
 lah hendak cakap macam mana Tuan Yang di-Pertua. Saya sahaja hendak
 bergurau petang-petang."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1520,Dato’ Ahmad Shabery Cheek,"Tuan Yang di-Pertua, terima kasihlah
+Bacaan Kali Yang Kedua dan Ketiga",,■1520,1520,Dato’ Ahmad Shabery Cheek,"Tuan Yang di-Pertua, terima kasihlah
 atas gurauan. Sebenarnya, merintih tentang pasukan bola sepak tidak baik bukan
 Malaysia sahaja. China yang ada 1.2 bilion pengikut, 1.3 bilion rakyatnya apabila
 negaranya tidak boleh masuk dalam pertandingan akhir, World Cup di Afrika
@@ -2900,7 +2900,7 @@ Bola sepak, betul saya akui masih jauh untuk ke hadapan. Akan tetapi
 kita mesti perbaiki perkara itu tetapi dalam masa yang lain kita turut maju dalam
 bidang-bidang yang lain."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1520,Tuan Khalid Abd. Samad [Shah Alam],"Terima kasih Tuan Yang di-
+Bacaan Kali Yang Kedua dan Ketiga",,■1520,1520,Tuan Khalid Abd. Samad [Shah Alam],"Terima kasih Tuan Yang di-
 Pertua, terima kasih Yang Berhormat Menteri. Pada dasarnya berdasarkan
 kepada apa yang telah dijelaskan oleh Yang Berhormat Menteri berhubung
 dengan cadangan di sebalik rang undang-undang ini, saya rasa memang ianya
@@ -2929,7 +2929,7 @@ Stadium Bukit Jalil dengan sepenuhnya dan mendapatkan potensi ekonomi yang
 sepenuhnya daripada stadium itu oleh kerana rumputnya masih lagi rumput
 kerbau, cow grass."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1530,Tuan Khalid Abd. Samad [Shah Alam],"Maka kita kena tukar kepada rumput yang jenis artificial turf ataupun
+Bacaan Kali Yang Kedua dan Ketiga",,■1530,1530,Tuan Khalid Abd. Samad [Shah Alam],"Maka kita kena tukar kepada rumput yang jenis artificial turf ataupun
 rumput yang special, istimewa, diimport dan yang akan mengeluarkan belanja
 yang mungkin beratus ribu ataupun sehingga sejuta, tambah lagi dengan apa
 sahaja lagi kelengkapan asas, fixed assets. Hendak tukar dressing room, dengan
@@ -2960,7 +2960,7 @@ have a more... satu stadium yang lebih sophisticated yang akan menuntut
 perbelanjaan penyelenggaraan yang lebih tinggi dan ianya tetap tidak merupakan
 satu venture yang commercially viable. Itu yang saya hendak tahu. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1530,Dato’ Ahmad Shabery Cheek,"Terima kasih Tuan Yang di-Pertua. Saya
+Bacaan Kali Yang Kedua dan Ketiga",,■1530,1530,Dato’ Ahmad Shabery Cheek,"Terima kasih Tuan Yang di-Pertua. Saya
 ingatkan lagi bahawa akta ini bukan untuk menswastakan stadium kita. Ini bukan,
 jangan salah faham kita sudah hendak menswastakan, tidak! Cuma ingin memberi
 ruang kepada Perbadanan untuk berunding, untuk mengadakan kerjasama
@@ -3019,13 +3019,13 @@ untuk memastikan kemudahan yang ada dijalankan dengan baik dan sempurna
 untuk kemajuan sukan dan rakyat negara kita yang tercinta. Saya ucapkan terima
 kasih kepada Ahli-ahli Yang Berhormat. Sekian sahaja ulasan saya."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1530,Dato’ Ngeh Koo Ham [Beruas],"Tuan Yang di-Pertua, kalau boleh
+Bacaan Kali Yang Kedua dan Ketiga",,■1530,1530,Dato’ Ngeh Koo Ham [Beruas],"Tuan Yang di-Pertua, kalau boleh
 mohon Yang Berhormat Menteri menjawab yang spesifik. Seksyen 35 kenapa
 berlaku tidak adil, kalau ada orang yang cedera tetapi tidak boleh mengambil
 tindakan di mahkamah? Bolehkah Yang Berhormat Menteri jelaskan sebab-sebab
 mengapa dicadangkan seksyen 35? Sangat penting."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1530,Dato’ Ahmad Shabery Cheek,"Tuan Yang di-Pertua, saya kira perkataan
+Bacaan Kali Yang Kedua dan Ketiga",,■1530,1530,Dato’ Ahmad Shabery Cheek,"Tuan Yang di-Pertua, saya kira perkataan
 ini suci hati. Orang boleh mempertikaikan tentang aspek suci hati yang
 dimaksudkan di mahkamah tetapi kalau misalnya CEO telah memutuskan untuk
 memberi tempahan pada orang yang tertentu dan pada waktu tersebut ada
@@ -3033,7 +3033,7 @@ berlaku perkara-perkara yang tidak baik, tidak eloklah untuk CEO diberikan
 tanggungjawab liable kepada CEO yang berkenaan. Orang boleh mendakwa
 Perbadanan keseluruhannya dan ini tidak..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1530,Dato’ Ngeh Koo Ham [Beruas],"Sebab itu kalau berkenaan dengan
+Bacaan Kali Yang Kedua dan Ketiga",,■1530,1530,Dato’ Ngeh Koo Ham [Beruas],"Sebab itu kalau berkenaan dengan
 perkara-perkara jenayah saya setuju tetapi kalau ada kerugian, tortures liability,
 kenapa menidakkan hak untuk menuntut di mahkamah? Kalau kita baca seksyen
 ini, tindakan tidak boleh diambil atau pendakwaan tidak boleh dibawa, dimulakan
@@ -3041,18 +3041,18 @@ atau dikekalkan dalam mana-mana mahkamah terhadap Perbadanan, pegawai
 berkhidmat, agen sekian-sekian dan kalau mereka membuat sesuatu dengan suci
 hati."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1540,Dato’ Ngeh Koo Ham [Beruas],"Kalau berlaku sesuatu accident, pun suci hati. Mana ada niat hendak
+Bacaan Kali Yang Kedua dan Ketiga",,■1540,1540,Dato’ Ngeh Koo Ham [Beruas],"Kalau berlaku sesuatu accident, pun suci hati. Mana ada niat hendak
 langgar orang. Berniat hendak langgar orang itu sudah satu pembunuhan. Kalau
 ada accident, berlakunya kecuaian, orang patut diberi pampasan. Ini adalah
 menunjukkan kita prihatin dan kita adil dan saksama kepada mereka yang cedera.
 Saya harap Menteri boleh gugurkan seksyen ini supaya tidak ada keraguan
 bahawa mereka yang ditimpa kemalangan boleh mendapat pampasan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1540,Tuan Khalid Abd. Samad [Shah Alam],[Bangun]
+Bacaan Kali Yang Kedua dan Ketiga",,■1540,1540,Tuan Khalid Abd. Samad [Shah Alam],[Bangun]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1540,Dato’ Ahmad Shabery Cheek,Silakan.
+Bacaan Kali Yang Kedua dan Ketiga",,■1540,1540,Dato’ Ahmad Shabery Cheek,Silakan.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1540,Tuan Khalid Abd. Samad [Shah Alam],"Pasal bila Yang Berhormat
+Bacaan Kali Yang Kedua dan Ketiga",,■1540,1540,Tuan Khalid Abd. Samad [Shah Alam],"Pasal bila Yang Berhormat
 Menteri menjawab tadi kalau CEO buat keputusan, tidak adillah kita saman CEO.
 Kita patut saman Perbadanan. Tetapi kalau ikut dalam clause ini, Perbadanan
 pun dilindungi. Lalu akhirnya memang tidak ada siapa pun yang boleh disaman.
@@ -3065,44 +3065,44 @@ cederanya orang hasil daripada tidak ada maintenancenyakah dan Perbadanan
 pula bolehlah saman pihak swasta yang telah mengambil alih ataupun yang
 diberikan kontrak dan sebagainya. There must be legal recourse. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1540,Dato’ Ahmad Shabery Cheek,"Tadi ada pohon dapat pandangan
+Bacaan Kali Yang Kedua dan Ketiga",,■1540,1540,Dato’ Ahmad Shabery Cheek,"Tadi ada pohon dapat pandangan
 daripada penasihat undang-undang tentang soal ini."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1540,Dato’ Ngeh Koo Ham [Beruas],Jadi kalau...
+Bacaan Kali Yang Kedua dan Ketiga",,■1540,1540,Dato’ Ngeh Koo Ham [Beruas],Jadi kalau...
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1540,Tuan Yang di-Pertua,"Kalau boleh, kalau boleh, Yang Berhormat
+Bacaan Kali Yang Kedua dan Ketiga",,■1540,1540,Tuan Yang di-Pertua,"Kalau boleh, kalau boleh, Yang Berhormat
 Beruas..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1540,Dato’ Ngeh Koo Ham [Beruas],Ya.
+Bacaan Kali Yang Kedua dan Ketiga",,■1540,1540,Dato’ Ngeh Koo Ham [Beruas],Ya.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1540,Tuan Yang di-Pertua,"Yang itu soalan spesifik. Nanti kalau boleh
+Bacaan Kali Yang Kedua dan Ketiga",,■1540,1540,Tuan Yang di-Pertua,"Yang itu soalan spesifik. Nanti kalau boleh
 sewaktu peringkat Jawatankuasa, boleh?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1540,Dato’ Ngeh Koo Ham [Beruas],Saya hendak tahu...
+Bacaan Kali Yang Kedua dan Ketiga",,■1540,1540,Dato’ Ngeh Koo Ham [Beruas],Saya hendak tahu...
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1540,Tuan Yang di-Pertua,"Di peringkat Jawatankuasa nanti. Begitu juga
+Bacaan Kali Yang Kedua dan Ketiga",,■1540,1540,Tuan Yang di-Pertua,"Di peringkat Jawatankuasa nanti. Begitu juga
 persoalan Shah Alam. Tadi Menteri sudah kata dia tutup perbahasan menjawab
 tetapi tidak apa, saya biarkan soalan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1540,Dato’ Ngeh Koo Ham [Beruas],Soal rasional.
+Bacaan Kali Yang Kedua dan Ketiga",,■1540,1540,Dato’ Ngeh Koo Ham [Beruas],Soal rasional.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1540,Tuan Yang di-Pertua,"Mengikut Yang Berhormat Beruas, mengikut
+Bacaan Kali Yang Kedua dan Ketiga",,■1540,1540,Tuan Yang di-Pertua,"Mengikut Yang Berhormat Beruas, mengikut
 pengalaman kita, kalau ada pun klausa-klausa seperti begitu, ia tidak menghalang
 siapa sahaja yang akan mengambil tindakan mahkamah. Terpulang kepada
 mahkamah pula untuk menginterpretasikan klausa-klausa seperti demikian."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1540,Dato’ Ngeh Koo Ham [Beruas],"Tuan Yang di-Pertua, kalau ada klausa
+Bacaan Kali Yang Kedua dan Ketiga",,■1540,1540,Dato’ Ngeh Koo Ham [Beruas],"Tuan Yang di-Pertua, kalau ada klausa
 sedemikian, ia akan memberi ruang untuk mahkamah menidakkan mana-mana
 tindakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1540,Tuan Yang di-Pertua,"Tidak apa, nanti kita bincang sewaktu peringkat
+Bacaan Kali Yang Kedua dan Ketiga",,■1540,1540,Tuan Yang di-Pertua,"Tidak apa, nanti kita bincang sewaktu peringkat
 Jawatankuasa."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1540,Dato’ Ngeh Koo Ham [Beruas],"Saya hendak tahu kalau ada rasional.
+Bacaan Kali Yang Kedua dan Ketiga",,■1540,1540,Dato’ Ngeh Koo Ham [Beruas],"Saya hendak tahu kalau ada rasional.
 Kalau ada rasional baik, okey, saya terima, tetapi saya hendak tahu latar belakang
 kenapa seksyen ini diperkenalkan. Pada hakikatnya kalau sekali gus ia tidak adil."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1540,Tuan Yang di-Pertua,"Okey, peringkat Jawatankuasa untuk memberi
+Bacaan Kali Yang Kedua dan Ketiga",,■1540,1540,Tuan Yang di-Pertua,"Okey, peringkat Jawatankuasa untuk memberi
 masa kepada pegawai-pegawai untuk bagi input.
 Ahli-ahli Yang Berhormat, sekarang saya kemukakan masalah kepada
 Majlis bagi diputuskan. Masalahnya ialah bahawa rang undang-undang ini
@@ -3114,7 +3114,7 @@ Dewan sebagai Jawatankuasa.
 [Tuan Yang di-Pertua **mempengerusikan Jawatankuasa]**
 Fasal-fasal dikemukakan kepada Jawatankuasa."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1544,Dr. Mohd Hatta bin Md. Ramli [Kuala Krai],"Terima kasih Tuan
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,3.44 ptg.,1544,Dr. Mohd Hatta bin Md. Ramli [Kuala Krai],"Terima kasih Tuan
 Pengerusi. Saya ingin mendapatkan penjelasan dan juga jaminan daripada pihak
 kerajaan mengenai perkara 5(2) (a), (b) dan (c) kerana ia bercakap mengenai
 pengkomersialan stadium-stadium yang akan berada di bawah pengurusan dan
@@ -3139,9 +3139,9 @@ mendapatkan harta milik yang cukup mahal di empat venue yang sedia ada. Jadi
 di mana di dalam perkara 5(2) (a), (b) dan (c) ini, perkara tersebut diberikan
 jaminan tidak berlaku apa-apa yang saya ramalkan ini. Wallahualam."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1544,Tuan Pengerusi,"Sila, Indera Mahkota."
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,3.44 ptg.,1544,Tuan Pengerusi,"Sila, Indera Mahkota."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1547,Tuan Azan Ismail [Indera Mahkota],"Terima kasih Tuan Pengerusi. Di
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,3.47 ptg.,1547,Tuan Azan Ismail [Indera Mahkota],"Terima kasih Tuan Pengerusi. Di
 bawah Bahagian IV iaitu berkenaan kewangan, ada disebut di sini, satu perkara 19
 berkenaan dengan Kumpulan Wang Perbadanan Stadium Malaysia yang akan
 ditubuhkan.
@@ -3174,7 +3174,7 @@ Seperti yang dinyatakan baru sekejap tadi oleh rakan saya, Kuala Krai,
 oleh kerana nilai aset yang tinggi, sudah tentu berbeza-beza di antara beberapa
 stadium berdasarkan lokasi masing-masing."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1550,Tuan Azan Ismail [Indera Mahkota],"Perkara yang diperincikan dalam perkara - Kumpulan Wang juga
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1550,1550,Tuan Azan Ismail [Indera Mahkota],"Perkara yang diperincikan dalam perkara - Kumpulan Wang juga
 mengatakan bahawa akan wujud kebenaran untuk mengeluarkan atau
 menawarkan bon-bon ataupun surat-surat jaminan yang akan bersandarkan
 kepada nilai aset iaitu stadium itu. Maka adakah pada tahap ini Yang Berhormat
@@ -3193,7 +3193,7 @@ mewujudkan satu jaminan ini kerana kita tidak mahu stadium yang mempunyai
 ada sebahagiannya mempunyai nilai yang begitu tinggi dari segi pasaran
 hartanahnya akan jatuh kepada pemilikan asing di suatu hari nanti. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1550,Dato' Ngeh Koo Ham [Beruas],"Terima kasih Tuan Pengerusi. Saya
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1550,1550,Dato' Ngeh Koo Ham [Beruas],"Terima kasih Tuan Pengerusi. Saya
 ingin membangkitkan tentang fasal 22 berkenaan dengan dana rizab ataupun
 reserve fund. Di sini dinyatakan mesti adanya satu dana rizab tetapi tidak
 dinyatakan apakah dana rizab ini dan bilakah ia boleh digunakan? Berapakah
@@ -3228,9 +3228,9 @@ perkara dengan suci hati dan tidak ada niat yang jahat. Ini adalah kerana itu
 merupakan satu elemen yang penting dalam mana-mana undang-undang jenayah.
 Sekian Tuan Pengerusi, terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1550,Tuan Pengerusi,Sila.
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1550,1550,Tuan Pengerusi,Sila.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1550,Menteri Belia dan Sukan [Dato’ Ahmad Shabery Cheek],"Terima kasih
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1550,1550,Menteri Belia dan Sukan [Dato’ Ahmad Shabery Cheek],"Terima kasih
 kepada semua Ahli-ahli Yang Berhormat yang mengambil bahagian. Pertama
 sekali mengenai perkara yang ditimbulkan oleh Yang Berhormat Kuala Krai
 berkaitan dengan jaminan dan sebagainya.
@@ -3249,7 +3249,7 @@ venture dari segi komersial termasuk untuk menggunakan kemudahan-
 kemudahan venue yang ada tetapi tidak sampai ke peringkat menjual tanah dan
 sebagainya. Itu adalah kuasa PTG."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1550,Dr. Hajah Siti Mariah binti Mahmud [Kota Raja],"Yang Berhormat
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1550,1550,Dr. Hajah Siti Mariah binti Mahmud [Kota Raja],"Yang Berhormat
 Menteri, penjelasan yang diberi oleh Yang Berhormat Menteri tadi. Maafkan saya,
 adakah ini bercanggah dengan fasal 3(c) yakni Perbadanan dan objektifnya.
 Fasal 3(3)(c) “Memindahkan, memindahhakkan, menyerahkan, memulangkan,
@@ -3257,17 +3257,17 @@ menggadai dan sebagainya, melupuskan”. Jadi kalau Yang Berhormat Menteri
 mengatakan bahawa ini bukan di dalam bidang kuasa mereka, jadi apakah yang
 diperkatakan oleh fasal 3(3)(c) di muka surat enam."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1550,Dato’ Ahmad Shabery Cheek,"Ini hanya berkaitan dengan premis
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1550,1550,Dato’ Ahmad Shabery Cheek,"Ini hanya berkaitan dengan premis
 stadium itu, tetapi tidak tanah. Ini tidak timbul sama sekali tentang soal tanah itu."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1550,Dato' Ngeh Koo Ham [Beruas],"Saya hendak penjelasan mesti diberikan.
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1550,1550,Dato' Ngeh Koo Ham [Beruas],"Saya hendak penjelasan mesti diberikan.
 Stadium itu memang tanah termasuklah stadium dan tanah. Itu National Land
 Code sangat jelas. Jadi Yang Berhormat Menteri mesti bagi penjelasan yang
 tepat. Memang ada had. Kalau ikut undang-undang yang sedia ada hendak
 luluskan, perbadanan dan Yang Berhormat Menteri mempunyai kuasa untuk
 menjualkannya. Kita mesti mengakulah kalau ia..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1550,Dato’ Ahmad Shabery Cheek,"Ia tidak ada untuk tanah. Itu yang
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1550,1550,Dato’ Ahmad Shabery Cheek,"Ia tidak ada untuk tanah. Itu yang
 dimaksudkan tetapi stadium bangunan untuk dikomersialkan, itu tidak ada
 masalah. Itu kuasa yang ada kepada Perbadanan. Akan tetapi kalau dikatakan
 bahawa akhirnya tanah itu diberikan kepada syarikat swasta untuk membina
@@ -3275,7 +3275,7 @@ tempat lain dan sebagainya, itu bukan di dalam bidang kuasa Perbadanan ini
 kerana ia tertakluk kepada kuasa PTG dan sebagainya. Ini tidak ada di dalam
 bidang kuasa ini."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1550,Tuan Khalid Abd. Samad [Shah Alam],"Saya ingat mungkin perlu
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1550,1550,Tuan Khalid Abd. Samad [Shah Alam],"Saya ingat mungkin perlu
 diberikan penjelasan kerana dari segi ayatnya menyatakan ‘Memindahakkan”. So
 maknanya you can transfer the ownership. ‘Menyerahhakkan’, maknanya boleh
 diserahkan ownership kepada pihak yang lainlah. Akan tetapi dikatakan ‘harta
@@ -3287,7 +3287,7 @@ peralatan-peralatan sukan, barang-barangnya atau pun macam mana? Dia punya
 tafsiran tentang perkataan-perkataan yang terkandung di dalam fasal 3(3)(c) itu
 perlu diperjelaskan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1550,Dato’ Ahmad Shabery Cheek,"Terima kasih, daripada apa yang
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1550,1550,Dato’ Ahmad Shabery Cheek,"Terima kasih, daripada apa yang
 disebutkan tentang fungsi perbadanan dalam fasal 4(a) dan seterusnya, “Untuk
 menubuhkan, mengurus, mengendalikan, - untuk melaksanakan dasar, program,
 pembangunan, menjamin dan seterusnya”. Ini semua adalah berkaitan dengan
@@ -3295,7 +3295,7 @@ fungsinya sebagai operator kepada facilities ataupun venue yang ada. Bukannya
 untuk kuasanya terhadap tanah di tempat yang berkenaan. Ini tidak ada di dalam
 akta ini. Tidak timbul sama sekali."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1600,Dato’ Ngeh Koo Ham [Beruas],"Yang Berhormat Menteri, kalau itu
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1600,1600,Dato’ Ngeh Koo Ham [Beruas],"Yang Berhormat Menteri, kalau itu
 maksudnya Yang Berhormat Menteri kita harus membatalkan perkataan ‘transfer
 or otherwise dispose of, any movable or immovable property’ dari - kalau dari
 tafsiran ini di bawah Kanun Tanah Negara ia memang termasuk tanah dan
@@ -3307,7 +3307,7 @@ dinyatakan di dalam seksyen ini.
 [Timbalan Yang di-Pertua (Datuk Ronald Kiandee) **mempengerusikan
 Jawatankuasa**]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1600,Dato’ Ahmad Shabery Cheek,"Perlu. Kalau dilihat terus pada yang
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1600,1600,Dato’ Ahmad Shabery Cheek,"Perlu. Kalau dilihat terus pada yang
 seksyen yang seterusnya seksyen 4. Ya, objektif Perbadanan untuk
 membangunkan, mengendalikan, dan menguruskan stadium mengikut standard
 yang ditentukan oleh Perbadanan. Mana-mana badan berkanun tertakluk kepada
@@ -3315,7 +3315,7 @@ pelbagai prosedur lain tentang tanah sebab ia perlu mendapat kelulusan daripada
 PTG. Kalau PTG setuju, memang boleh. Ini check and balance yang dibuatkan
 oleh PTG."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1600,Dato’ Ngeh Koo Ham [Beruas],"Tuan Pengerusi, bagi saya jawapan itu
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1600,1600,Dato’ Ngeh Koo Ham [Beruas],"Tuan Pengerusi, bagi saya jawapan itu
 tidak betul langsung. Memang PTG tidak ada kuasa langsung atau mana-mana
 pejabat tanah mempunyai apa-apa kuasa untuk menghalang mana-mana tuan
 punya tanah untuk melupuskan ataupun meminda milik mana-mana tanah. Hak
@@ -3324,18 +3324,18 @@ Stadium Malaysia - kalau itu tanah ia kita hantar kepada PTG ke pejabat tanah, i
 mesti akan pindah milikan. Jadi harap kita tidak dikelirukan dengan keadaan
 sebenarnya dalam transaksi sebab..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1600,Dato’ Ahmad Shabery Cheek,"Ini tidak timbul. Ini adalah leasehold
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1600,1600,Dato’ Ahmad Shabery Cheek,"Ini tidak timbul. Ini adalah leasehold
 bukannya freehold."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1600,Dato’ Ngeh Koo Ham [Beruas],"Leasehold atau freehold - hak untuk kita
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1600,1600,Dato’ Ngeh Koo Ham [Beruas],"Leasehold atau freehold - hak untuk kita
 milik tuan punya tanah, bukannya PTG. Jadi ini..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1600,Dato’ Ahmad Shabery Cheek,"Ia bukannya Perbadanan. Tanah adalah
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1600,1600,Dato’ Ahmad Shabery Cheek,"Ia bukannya Perbadanan. Tanah adalah
 milik kerajaan, milik kepada Kerajaan Malaysia bukannya milik kepada
 Perbadanan. Jadi Perbadanan tidak boleh untuk melainkan dengan persetujuan
 kerajaan dan persetujuan PTG."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1600,Dato’ Ngeh Koo Ham [Beruas],"Dengan hormatnya Tuan Pengerusi, ini
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1600,1600,Dato’ Ngeh Koo Ham [Beruas],"Dengan hormatnya Tuan Pengerusi, ini
 satu jawapan yang memang tidak tepat langsung. Ini kerana bukan sahaja
 mengelirukan ia tidak betul langsung. Ini kerana - oleh sebab itu kita hendak
 pindah milikan hak kerajaan kepada Perbadanan iaitu satu entiti yang berasingan.
@@ -3348,24 +3348,24 @@ Perbadanan Stadium Malaysia ini, itu masih milik kerajaan itu tidak betul. Meman
 di bawah akta ini Yang Berhormat Menteri mempunyai kuasa besar. Akan tetapi,
 pada hakikatnya tanah sudah jadi milik Perbadanan Stadium Malaysia."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1600,Tuan Pengerusi [Datuk Ronald Kiandee],Ya.
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1600,1600,Tuan Pengerusi [Datuk Ronald Kiandee],Ya.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1600,Dato’ Ahmad Shabery Cheek,"Ya, sekarang ini pun tanah itu sudah
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1600,1600,Dato’ Ahmad Shabery Cheek,"Ya, sekarang ini pun tanah itu sudah
 menjadi milik Perbadanan... Sudah jadi milik perbadanan. Bukannya – ia adalah
 milik kerajaan, dari segi pengurusannya adalah pengurusan yang dibuat oleh
 Perbadanan. Ini tidak timbul soal Perbadanan mahu menjual tanah dan
 sebagainya dan ia telah dipajak selama 60 tahun bagi tujuan memajukan daripada
 KPTG dan boleh sub-lease bagi tujuan pembangunan projek. Itu sahaja."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1600,Tuan Pengerusi [Datuk Ronald Kiandee],"Ya, hendak bagi jalan Yang
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1600,1600,Tuan Pengerusi [Datuk Ronald Kiandee],"Ya, hendak bagi jalan Yang
 Berhormat?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1600,Dato’ Ahmad Shabery Cheek,Memang begitu peraturannya.
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1600,1600,Dato’ Ahmad Shabery Cheek,Memang begitu peraturannya.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1600,Tuan Pengerusi [Datuk Ronald Kiandee],"Hendak bagi jalan lagi? Ya,
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1600,1600,Tuan Pengerusi [Datuk Ronald Kiandee],"Hendak bagi jalan lagi? Ya,
 Yang Berhormat Shah Alam."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1600,Tuan Khalid Abd. Samad [Shah Alam],"Ya, terima kasih. Terima kasih
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1600,1600,Tuan Khalid Abd. Samad [Shah Alam],"Ya, terima kasih. Terima kasih
 Tuan Pengerusi. Yang Berhormat Menteri, inilah yang kita tidak faham clause dia
 ya. Berdasarkan kepada apa yang dijelaskan oleh Yang Berhormat Menteri
 Perbadanan ini menguruskan - manage the facilities, ia improve the facilities, ia
@@ -3391,40 +3391,40 @@ kita perlu memberikan kuasa yang seperti ini kepada pihak Perbadanan, iaitu hak
 untuk memindahhakkan, menyerahhakkan, melupuskan dan sebagainya. Ini yang
 hendak diperjelaskan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1600,Tuan Pengerusi [Datuk Ronald Kiandee],Ya.
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1600,1600,Tuan Pengerusi [Datuk Ronald Kiandee],Ya.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1600,Tuan Khalid Abd. Samad [Shah Alam],"Kita minta Yang Berhormat
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1600,1600,Tuan Khalid Abd. Samad [Shah Alam],"Kita minta Yang Berhormat
 Menteri jelaskan perkara ini kenapa clause yang seperti ini perlu ada..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1600,Tuan Pengerusi [Datuk Ronald Kiandee],"Sebentar... Sebentar Yang
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1600,1600,Tuan Pengerusi [Datuk Ronald Kiandee],"Sebentar... Sebentar Yang
 Berhormat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1600,Tuan Khalid Abd. Samad [Shah Alam],...Dalam...
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1600,1600,Tuan Khalid Abd. Samad [Shah Alam],...Dalam...
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1600,Tuan Pengerusi [Datuk Ronald Kiandee],"Sebentar... Sebentar Yang
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1600,1600,Tuan Pengerusi [Datuk Ronald Kiandee],"Sebentar... Sebentar Yang
 Berhormat. Saya hendak perbaiki prosedur ini."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1600,Tuan Khalid Abd. Samad [Shah Alam],Ya.
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1600,1600,Tuan Khalid Abd. Samad [Shah Alam],Ya.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1600,Tuan Pengerusi [Datuk Ronald Kiandee],"Kalau tadi sudah dibahas
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1600,1600,Tuan Pengerusi [Datuk Ronald Kiandee],"Kalau tadi sudah dibahas
 seorang-seorang maknanya Yang Berhormat Menteri cuma menjawab dan apabila
 Yang Berhormat Menteri yang menjawab yang bangun itu adalah mencelah."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1600,Tuan Khalid Abd. Samad [Shah Alam],Ya.
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1600,1600,Tuan Khalid Abd. Samad [Shah Alam],Ya.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1600,Tuan Pengerusi [Datuk Ronald Kiandee],"Kalau tidak tadi saya akan
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1600,1600,Tuan Pengerusi [Datuk Ronald Kiandee],"Kalau tidak tadi saya akan
 biarkan seorang-seorang membahaskan kemudian Yang Berhormat Menteri
 menjawab sekali. Akan tetapi, saya rasanya tadi sudah bahas sekarang ini
 mencelah. Baik, okey."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1600,Tuan Khalid Abd. Samad [Shah Alam],"Ya, ini pun di peringkat
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1600,1600,Tuan Khalid Abd. Samad [Shah Alam],"Ya, ini pun di peringkat
 jawatankuasa so..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1600,Tuan Pengerusi [Datuk Ronald Kiandee],"Tidak, jawatankuasa juga
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1600,1600,Tuan Pengerusi [Datuk Ronald Kiandee],"Tidak, jawatankuasa juga
 macam itu... Jawatankuasa juga macam itu. Seorang-seorang bahas kemudian
 Yang Berhormat Menteri jawab tadi."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1600,Tuan Khalid Abd. Samad [Shah Alam],"Ya, baik. So, itu yang
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1600,1600,Tuan Khalid Abd. Samad [Shah Alam],"Ya, baik. So, itu yang
 dipertikaikan iaitu dari segi apa yang tercatat. Kalau boleh Yang Berhormat
 Menteri menjelaskan relevancy clause yang seperti ini dalam fungsi Perbadanan.
 Sekiranya ia hendak diberikan kuasa untuk memindahhakkan, melupuskan dan
@@ -3433,14 +3433,14 @@ miliknya. Mungkin tidak termasuk seperti mana yang disebutkan stadium dan
 sebagainya, tetapi di sini ia tidak jelas yang dikatakan harta alih atau harta tidak
 alih yang boleh menimbulkan kekeliruan. Minta Yang Berhormat Menteri jelaskan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1600,Tuan Pengerusi [Datuk Ronald Kiandee],Ya.
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1600,1600,Tuan Pengerusi [Datuk Ronald Kiandee],Ya.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1600,Tuan Azan Ismail [Indera Mahkota],"Tuan Pengerusi, berkenaan
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1600,1600,Tuan Azan Ismail [Indera Mahkota],"Tuan Pengerusi, berkenaan
 bahagian yang sama Bahagian II, seksyen 3(c) iaitu yang dirujuk oleh Yang
 Berhormat Shah Alam juga. Celahan saya mudah sahaja. Boleh atau tidak
 Stadium Merdeka itu suatu hari nanti jadi shopping complex? Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1600,Dato’ Ahmad Shabery Cheek,"Stadium Merdeka sudah pun berada
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1600,1600,Dato’ Ahmad Shabery Cheek,"Stadium Merdeka sudah pun berada
 dilindungi oleh Akta Warisan dan Barang-barang Purba. Ia tidak boleh disentuh
 sebarang bentuk rombakan ataupun inovasi ataupun pembaharuan yang dibuat
 mestilah mendapat kebenaran daripada kementerian yang berkenaan. Itu sudah
@@ -3455,7 +3455,7 @@ tentang soal itu ialah Perbadanan adalah untuk menguruskan Stadium Panasonic
 di kawasan Yang Berhormat, dari segi mengkomersialkannya ia ada hak. Ia
 sebagai contoh bagaimana tugas. Jadi ianya tidak timbul tentang katanya ialah..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1610,Tuan Khalid Abd. Samad [Shah Alam],"Di mana di dalam pindaan rang
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1610,1610,Tuan Khalid Abd. Samad [Shah Alam],"Di mana di dalam pindaan rang
 undang-undang ini, itu dinyatakan? Itu yang di tanya, iaitu di mana di dalam rang
 undang-undang ini khususnya di bawah fasal 3(c), apa yang disebut oleh Yang
 Berhormat Menteri, ianya dicatit? Ini kerana apa yang dikata dengan apa yang
@@ -3467,7 +3467,7 @@ tidak – bila memajak tidak memiliki dan tidak ada kuasa untuk menjualnya ataup
 sebagainya. Akan tetapi setakat ini berdasarkan kepada apa yang tercatit, tafsiran
 itu tidak – does not whole water."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1610,Dato' Ahmad Shabery Cheek,"Itu bergantung kepada premis yang
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1610,1610,Dato' Ahmad Shabery Cheek,"Itu bergantung kepada premis yang
 berkenaan, venue yang berkenaan. Misalnya, apakah perjanjian antara Stadium
 Panasonic dengan kerajaan negeri. Ianya tidak perlu dimasukkan dalam akta. Kita
 tahu bahawa Stadium Panasonic adalah stadiumnya yang digunakan, diletak di
@@ -3486,59 +3486,59 @@ yang dimaksudkan dengan apakah yang di dalam bidang kuasa Perbadanan ini,
 kerana aset yang disebutkan tadi mungkin berbeza antara satu dengan yang lain,
 dari segi status tanahnya."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1610,Tuan Pengerusi [Datuk Ronald Kiandee],Ya.
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1610,1610,Tuan Pengerusi [Datuk Ronald Kiandee],Ya.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1610,Dato’ Ngeh Koo Ham [Beruas],[Bangun]
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1610,1610,Dato’ Ngeh Koo Ham [Beruas],[Bangun]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1610,Dato' Ahmad Shabery Cheek,Jadi...
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1610,1610,Dato' Ahmad Shabery Cheek,Jadi...
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1610,Tuan Pengerusi [Datuk Ronald Kiandee],"Yang Berhormat hendak bagi
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1610,1610,Tuan Pengerusi [Datuk Ronald Kiandee],"Yang Berhormat hendak bagi
 jalan?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1610,Dato' Ahmad Shabery Cheek,Saya kira lebih baik saya teruskan.
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1610,1610,Dato' Ahmad Shabery Cheek,Saya kira lebih baik saya teruskan.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1610,Dato’ Ngeh Koo Ham [Beruas],"Boleh saya dapat penjelasan? Di bawah
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1610,1610,Dato’ Ngeh Koo Ham [Beruas],"Boleh saya dapat penjelasan? Di bawah
 akta ini, Menteri dengan Perbadanan boleh buat keputusan untuk menjual stadium
 dan tanah tanpa merujukkan kepada Kabinet lagi, betul atau tidak? Sungguhpun
 dikatakan tanah kerajaan. Saya hendak tanya. Kalau jawab, ya atau tidak –
 supaya kita jelas."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1610,Dato' Ahmad Shabery Cheek,"Tidak. Ia mesti – tanah adalah milik
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1610,1610,Dato' Ahmad Shabery Cheek,"Tidak. Ia mesti – tanah adalah milik
 kerajaan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1610,Dato’ Ngeh Koo Ham [Beruas],"Maksudnya setelah diluluskan undang-
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1610,1610,Dato’ Ngeh Koo Ham [Beruas],"Maksudnya setelah diluluskan undang-
 undang ini, Menteri dengan Perbadanan boleh duduk bersama buat keputusan
 untuk jual tanah dan stadium kepada pihak ketiga? Boleh atau tidak?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1610,Dato' Ahmad Shabery Cheek,"Tidak boleh. Kita mesti maklumkan
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1610,1610,Dato' Ahmad Shabery Cheek,"Tidak boleh. Kita mesti maklumkan
 kepada Kabinet."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1610,Dato’ Ngeh Koo Ham [Beruas],"Kalau itulah pandangan, memang kita
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1610,1610,Dato’ Ngeh Koo Ham [Beruas],"Kalau itulah pandangan, memang kita
 terpaksa terima. Akan tetapi pada hakikatnya, ia bercanggah dengan akta –
 jawapan yang Menteri berikan dari apa yang saya baca dalam akta ini."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1610,Tuan Khalid Abd. Samad [Shah Alam],"Perlu maklumkan atau
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1610,1610,Tuan Khalid Abd. Samad [Shah Alam],"Perlu maklumkan atau
 mendapat kebenaran? Yang Berhormat Menteri sebut kita kena maklumkan
 kepada Kabinet. Adakah maklumkan ataupun mendapat..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1610,Dato' Ahmad Shabery Cheek,Kita mesti mendapat...
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1610,1610,Dato' Ahmad Shabery Cheek,Kita mesti mendapat...
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1610,Tuan Khalid Abd. Samad [Shah Alam],Mendapat persetujuan...
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1610,1610,Tuan Khalid Abd. Samad [Shah Alam],Mendapat persetujuan...
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1610,Dato' Ahmad Shabery Cheek,"Keputusan, kelulusan Kabinet. Mungkin
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1610,1610,Dato' Ahmad Shabery Cheek,"Keputusan, kelulusan Kabinet. Mungkin
 keputusan Kabinet."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1610,Tuan Khalid Abd. Samad [Shah Alam],Bukan maklumkanlah?
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1610,1610,Tuan Khalid Abd. Samad [Shah Alam],Bukan maklumkanlah?
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1610,Dato' Ahmad Shabery Cheek,"Itu yang dikatakan memorandum Kabinet
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1610,1610,Dato' Ahmad Shabery Cheek,"Itu yang dikatakan memorandum Kabinet
 untuk mendapat keputusan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1610,Tuan Khalid Abd. Samad [Shah Alam],"Ini kerana Yang Berhormat
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1610,1610,Tuan Khalid Abd. Samad [Shah Alam],"Ini kerana Yang Berhormat
 Menteri sebut tadi maklumkan keputusan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1610,Tuan Pengerusi [Datuk Ronald Kiandee],"Yang Berhormat, tidak payah."
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1610,1610,Tuan Pengerusi [Datuk Ronald Kiandee],"Yang Berhormat, tidak payah."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1610,Dato' Ahmad Shabery Cheek,"Tidak timbul soalnya. Perkara-perkara lain
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1610,1610,Dato' Ahmad Shabery Cheek,"Tidak timbul soalnya. Perkara-perkara lain
 yang ditimbulkan selain daripada Perkara 3 sebentar tadi, Yang Berhormat Indera
 Mahkota ada menyebut tentang kumpulan wang amanah. Ianya adalah merujuk
 kepada kumpulan wang dalam fasal 19(3). Segala dana dan hasil yang diperolehi
@@ -3555,10 +3555,10 @@ wang yang diterima secara sah. Ini adalah umum disebutkan. Ini berbeza dengan
 yang dimaksudkan dengan Kumpulan Wang Amanah Sukan. Itu adalah di bawah
 pentadbiran Majlis Sukan Negara."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1610,Tuan Azan Ismail [Indera Mahkota],"Jadi maksudnya dua perkara yang
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1610,1610,Tuan Azan Ismail [Indera Mahkota],"Jadi maksudnya dua perkara yang
 berlainanlah di sini?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1610,Dato' Ahmad Shabery Cheek,"Sangat berlainan sama sekali. Majlis
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1610,1610,Dato' Ahmad Shabery Cheek,"Sangat berlainan sama sekali. Majlis
 Sukan Negara dengan Perbadanan Stadium Malaysia adalah dua agensi yang
 berbeza, dua jabatan yang berbeza, dua entiti yang berbeza.
 Kumpulan wang rizab bermaksud perbelanjaan berhemah, di mana ianya
@@ -3586,7 +3586,7 @@ yang melindungi pegawai-pegawai awam, maka perlunya fasal 35 kerana ianya
 perlu melindungi kepada mereka yang menyertainya secara sukarela. Sebab itu
 perlu ada fasal 35 sebagaimana yang disebutkan tadi."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1610,Dato’ Ngeh Koo Ham [Beruas],"Tuan Yang di-Pertua, soalan sekarang
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1610,1610,Dato’ Ngeh Koo Ham [Beruas],"Tuan Yang di-Pertua, soalan sekarang
 bolehkah atau tidak tindakan sivil diambil terhadap Perbadanan atau mana-mana
 anggotanya? Ini kerana kalau anggotanya pun membuat kesilapan, Perbadanan
 sebagai prinsipal mesti bertanggungjawab. Akan tetapi tadi dinyatakan seksyen
@@ -3604,7 +3604,7 @@ undang tidak akan pergi ke mahkamah untuk mempertikaikan sesuatu. Akan
 tetapi sekarang undang-undang tidak jelas. Undang-undang yang kita gubal ini
 mesti diperjelaskan sejelas-jelasnya."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1620,Dato' Ahmad Shabery Cheek,"Terima kasih Tuan Yang di-Pertua dan
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1620,1620,Dato' Ahmad Shabery Cheek,"Terima kasih Tuan Yang di-Pertua dan
 terima kasih Yang Berhormat kerana ingin penjelasan. Pertamanya ini adalah
 perkara dalam mana-mana badan berkanun di mana kita menjemput orang-orang
 bukannya daripada kakitangan kerajaan terdiri daripada golongan profesional,
@@ -3623,12 +3623,12 @@ diberikan kepada mereka yang ingin menyertai, memberi khidmat untuk berada
 dalam Perbadanan ini. Ini bukanlah satu perkara yang baru Yang Berhormat.
 Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1620,Dato’ Ngeh Koo Ham [Beruas],"Tuan Pengerusi, mohon mencelah."
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1620,1620,Dato’ Ngeh Koo Ham [Beruas],"Tuan Pengerusi, mohon mencelah."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1620,Tuan Pengerusi [Datuk Ronald Kiandee],"Hendak bagi jalan Yang
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1620,1620,Tuan Pengerusi [Datuk Ronald Kiandee],"Hendak bagi jalan Yang
 Berhormat?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1620,Dato’ Ngeh Koo Ham [Beruas],"Kalau kita membina satu bumbung
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1620,1620,Dato’ Ngeh Koo Ham [Beruas],"Kalau kita membina satu bumbung
 stadium memang dibuat secara suci hati. Akan tetapi kalau bumbung itu apa kata
 tiba-tiba runtuh orang mati dalam stadium, bolehkah tuntutan dibuat? Itu soalan
 saya. Begitu jelas sekali soalan saya, harap dapat jawab. Adakah niat Menteri kata
@@ -3644,14 +3644,14 @@ memang orang yang berkenaan masih boleh dilindungi di bawah Akta
 Perlindungan Pihak Berkuasa Awam 1948, tetapi orang boleh menuntut kalau ada
 kerugian atau kerosakan yang menimpa mereka kerana atas kemalangan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1620,Dato’ Ahmad Shabery Cheek,Saya kira jelas di sini yang...
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1620,1620,Dato’ Ahmad Shabery Cheek,Saya kira jelas di sini yang...
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1620,Tuan Sim Tong Him [Kota Melaka],"Menteri boleh tambah sedikit
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1620,1620,Tuan Sim Tong Him [Kota Melaka],"Menteri boleh tambah sedikit
 tentang atau bersama dengan..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1620,Dato’ Ahmad Shabery Cheek,Ya.
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1620,1620,Dato’ Ahmad Shabery Cheek,Ya.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1620,Tuan Sim Tong Him [Kota Melaka],"Sedikit sahaja. Terima kasih Tuan
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1620,1620,Tuan Sim Tong Him [Kota Melaka],"Sedikit sahaja. Terima kasih Tuan
 Pengerusi. Tuan Pengerusi mengikut seksyen 3(a) dia kata ‘membuat kontrak’.
 Saya difahamkan membuat kontrak ini mesti diikat dengan undang-undang. Kalau
 membuat kontrak tanpa mengikat dengan undang-undang siapa hendak buat
@@ -3660,16 +3660,16 @@ action akan boleh diambil kalau tidak dibuat dengan satu kontrak dan tidak
 bertanggungjawab, siapa hendak buat kontrak dengan perbadanan ini? Sebab itu
 saya minta penjelasan Menteri."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1620,Dato’ Ahmad Shabery Cheek,"Tolong jelaskan sekali lagi apa
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1620,1620,Dato’ Ahmad Shabery Cheek,"Tolong jelaskan sekali lagi apa
 masalahnya dari segi membuat kontrak?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1620,Puan Hajah Nancy Shukri [Batang Sadong],"Minta laluan juga Yang
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1620,1620,Puan Hajah Nancy Shukri [Batang Sadong],"Minta laluan juga Yang
 Berhormat Menteri mungkin saya..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1620,Dato’ Ahmad Shabery Cheek,"Ya. Saya rasa hendak dapat penjelasan
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1620,1620,Dato’ Ahmad Shabery Cheek,"Ya. Saya rasa hendak dapat penjelasan
 daripada apa ini..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1620,Tuan Sim Tong Him [Kota Melaka],"Ya. Saya kata Perbadanan ini diberi
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1620,1620,Tuan Sim Tong Him [Kota Melaka],"Ya. Saya kata Perbadanan ini diberi
 kuasa untuk tandatangani kontrak. Kedua-dua boleh buatkan kontrak ini. Kontrak
 ini sepatutnya diikat dengan undang-undang. Jika civil action tidak boleh diambil
 terhadap Perbadanan itu memang susah hendak diterima. Siapa hendak buat
@@ -3678,7 +3678,7 @@ Memang ada terikat dengan kontrak dan itu memang satu tanggungjawab. You
 have to be responsible under a contract that is why I am not very sure, dengan
 izin."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1620,Dato’ Ahmad Shabery Cheek,"Saya rasa itu dua perkara yang berbeza
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1620,1620,Dato’ Ahmad Shabery Cheek,"Saya rasa itu dua perkara yang berbeza
 kalau kontrak itu akan menjelaskan apakah bentuk untung rugi dan sebagainya
 antara orang yang membuat kontrak dengan pihak Perbadanan dalam soal ini.
 Akan tetapi tadi yang ditimbulkan dalam konteks apa yang disebutkan oleh Yang
@@ -3688,19 +3688,19 @@ Saya faham apa yang dimaksudkan oleh Yang Berhormat Beruas tentang sudah
 ada Akta Perlindungan Pihak Berkuasa Awam 1948 sebagai mana yang
 disebutkan. Akan tetapi..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1620,Tuan Sim Tong Him [Kota Melaka],"Saya minta maaf. This is breach of
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1620,1620,Tuan Sim Tong Him [Kota Melaka],"Saya minta maaf. This is breach of
 contract, pecah amanah memang civil action boleh diambil."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1620,Dato’ Ahmad Shabery Cheek,Ya. Itu boleh diambil tidak ada masalah.
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1620,1620,Dato’ Ahmad Shabery Cheek,Ya. Itu boleh diambil tidak ada masalah.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1620,Tuan Sim Tong Him [Kota Melaka],"Memang boleh diambil terhadap
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1620,1620,Tuan Sim Tong Him [Kota Melaka],"Memang boleh diambil terhadap
 Perbadanan dalam isu kontrak ini."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1620,Dato’ Ahmad Shabery Cheek,Tidak ada masalah.
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1620,1620,Dato’ Ahmad Shabery Cheek,Tidak ada masalah.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1620,Tuan Sim Tong Him [Kota Melaka],Oh.
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1620,1620,Tuan Sim Tong Him [Kota Melaka],Oh.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1620,Dato’ Ahmad Shabery Cheek,"Kita tidak ada masalah. Badan berkanun
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1620,1620,Dato’ Ahmad Shabery Cheek,"Kita tidak ada masalah. Badan berkanun
 boleh didakwa dan boleh mendakwa, menyaman dan boleh disaman. Itu adalah
 merupakan satu peraturan biasa. Mengenai 35 tadi ialah, kalau 36 ini Akta
 Perlindungan Pihak Berkuasa Awam ialah mereka yang memang sudah menjadi.
@@ -3710,42 +3710,42 @@ wakil daripada persatuan untuk berada di situ, dia tidak terlindung oleh Akta Pi
 Berkuasa Awam, maka perlulah ada satu jaminan untuk melindungi dia. Sebab itu
 adanya seksyen 35 di sini. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1620,Tuan Pengerusi [Datuk Ronald Kiandee],"Yang Berhormat hendak bagi
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1620,1620,Tuan Pengerusi [Datuk Ronald Kiandee],"Yang Berhormat hendak bagi
 jalan lagi Yang Berhormat?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1620,Dato’ Ngeh Koo Ham [Beruas],"Jadi Perbadanan mesti
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1620,1620,Dato’ Ngeh Koo Ham [Beruas],"Jadi Perbadanan mesti
 bertanggungjawab atas kerugian yang menimpa orang kerana tindakan mungkin
 volunteer dalam board berkenaan. Ini satu kita kata sense of justice yang asas
 sekali."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1620,Dato’ Ahmad Shabery Cheek,"Ya. Saya rasa itu tidak ada masalah bagi
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1620,1620,Dato’ Ahmad Shabery Cheek,"Ya. Saya rasa itu tidak ada masalah bagi
 sesiapa sekiranya ada berlaku keadaan keruntuhan dan sebagainya untuk
 mengambil apa-apa tindakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1620,Dato’ Ngeh Koo Ham [Beruas],"Jadi sebab itu saya minta Menteri when
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1620,1620,Dato’ Ngeh Koo Ham [Beruas],"Jadi sebab itu saya minta Menteri when
 we call constructive suggestion. Batalkan klausa 35 semua akan jelas."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1620,Dato’ Ahmad Shabery Cheek,"Kalau batalkan itu bagaimana saya ingin
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1620,1620,Dato’ Ahmad Shabery Cheek,"Kalau batalkan itu bagaimana saya ingin
 menarik misalnya golongan profesional yang bukannya daripada kakitangan awam
 untuk berada di situ. Apakah bentuk perlindungan yang ada pada dia?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1620,Dato’ Ngeh Koo Ham [Beruas],Jadi...
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1620,1620,Dato’ Ngeh Koo Ham [Beruas],Jadi...
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1620,Dato’ Ahmad Shabery Cheek,"Oleh sebab itu, sekiranya ada pula
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1620,1620,Dato’ Ahmad Shabery Cheek,"Oleh sebab itu, sekiranya ada pula
 perkara berlaku yang menuntut kepada tindakan undang-undang dibuat orang
 masih lagi boleh mengambil tindakan undang-undang."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1620,Dato’ Ngeh Koo Ham [Beruas],"Tindakan undang-undang sivil hanya
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1620,1620,Dato’ Ngeh Koo Ham [Beruas],"Tindakan undang-undang sivil hanya
 kewangan sahaja. Kerajaan yang mentadbir semua stadium ini tidak akan begitu
 tidak bertanggungjawab tidak membayar pampasan. Kita kerajaan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1620,Dato’ Ahmad Shabery Cheek,Itu masalah akan ditentukan.
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1620,1620,Dato’ Ahmad Shabery Cheek,Itu masalah akan ditentukan.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1620,Dato’ Ngeh Koo Ham [Beruas],"Tidak adillah berlaku sebagai
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1620,1620,Dato’ Ngeh Koo Ham [Beruas],"Tidak adillah berlaku sebagai
 Perbadanan mesti membayar pampasan bagi pihak pegawai yang bekerja di
 bawah Perbadanan. Bukankah itu prinsip keadilan yang asas sekali."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBADANAN STADIUM MALAYSIA 2010
-Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,1620,Dato’ Ahmad Shabery Cheek,"Ya. Undang-undang tidak perlu sedetail
+Bacaan Kali Yang Kedua dan Ketiga",Fasal-fasal 1 hingga 49 -,■1620,1620,Dato’ Ahmad Shabery Cheek,"Ya. Undang-undang tidak perlu sedetail
 kalau berlaku begini berapa pampasan diberikan dan sebagai. Undang-undang
 lain sudah cukup memadai untuk membolehkan setiap rakyat untuk mendapat
 keadilan sekiranya perkara-perkara yang dikaitkan dengan perkara-perkara yang
@@ -3764,11 +3764,11 @@ Rang undang-undang dilaporkan dengan tidak ada pindaan; dibacakan
 kali yang ketiga dan diluluskan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1630,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Sila Yang Berhormat
+Bacaan Kali Yang Kedua dan Ketiga",,■1630,1630,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Sila Yang Berhormat
 Menteri."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1631,"Timbalan Menteri Perusahaan, Perladangan dan Komoditi I [Dato’ Hamzah bin Zainudin]","Terima kasih Tuan Yang di-Pertua. Saya memohon
+Bacaan Kali Yang Kedua dan Ketiga",,4.31 ptg.,1631,"Timbalan Menteri Perusahaan, Perladangan dan Komoditi I [Dato’ Hamzah bin Zainudin]","Terima kasih Tuan Yang di-Pertua. Saya memohon
 mencadangkan iaitu rang undang-undang bernama suatu akta untuk meminda
 Akta Lembaga Perindustrian Kayu Malaysia (Pemerbadanan) 1973 untuk
 membuat peruntukan yang lebih baik berkenaan dengan industri kayu-kayan yang
@@ -3863,21 +3863,21 @@ huraian ini ialah pindaan yang kecil dan berbangkit.
 Tuan Yang di-Pertua, saya mohon mencadang. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1631,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Ada sesiapa
+Bacaan Kali Yang Kedua dan Ketiga",,4.31 ptg.,1631,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Ada sesiapa
 menyokong?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1631,"Timbalan Menteri Tenaga, Teknologi Hijau dan Air [Puan Noriah binti Kasnon]","Tuan Yang di-Pertua, saya mohon menyokong."
+Bacaan Kali Yang Kedua dan Ketiga",,4.31 ptg.,1631,"Timbalan Menteri Tenaga, Teknologi Hijau dan Air [Puan Noriah binti Kasnon]","Tuan Yang di-Pertua, saya mohon menyokong."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1631,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Baik. Ahli-ahli Yang
+Bacaan Kali Yang Kedua dan Ketiga",,4.31 ptg.,1631,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Baik. Ahli-ahli Yang
 Berhormat, masalah di hadapan Majlis ialah rang undang-undang bernama suatu
 akta untuk meminda Akta Lembaga Perindustrian Kayu Malaysia (Pemerbadanan)
 1973 dibaca kali yang kedua sekarang dan terbuka untuk dibahas.
 Tidak ada bangun? Yang Berhormat Ledang."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1639,Ir. Haji Hamim bin Samuri [Ledang],"Terima kasih Tuan Yang di-Pertua.
+Bacaan Kali Yang Kedua dan Ketiga",,4.39 ptg.,1639,Ir. Haji Hamim bin Samuri [Ledang],"Terima kasih Tuan Yang di-Pertua.
 Pertama, saya ingin mengucapkan tahniah kepada Kementerian Perusahaan,
 Perladangan dan Komoditi kerana telah mengemukakan rang undang-undang
 untuk sebenarnya memantapkan lagi Akta Lembaga Perindustrian Kayu yang kita
@@ -3887,7 +3887,7 @@ bagaimana Twin Tower di New York runtuh dengan mudahnya apabila dilanggar
 dengan kapal terbang, peristiwa 11 September."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1640,Ir. Haji Hamim bin Samuri [Ledang],"Kalau fikir sekali pandang - kalau fikir sekali, macam tidak logik. Akan
+Bacaan Kali Yang Kedua dan Ketiga",,■1640,1640,Ir. Haji Hamim bin Samuri [Ledang],"Kalau fikir sekali pandang - kalau fikir sekali, macam tidak logik. Akan
 tetapi dalam tempoh tidak beberapa minit, ia runtuh. Ini kerana Tuan Yang di-
 Pertua, keseluruhan struktur bangunan tersebut ialah besi. Kita tahu besi adalah
 pengalir haba yang paling pantas berbanding dengan kayu dan konkrit. Kalau kita
@@ -3986,11 +3986,11 @@ kejayaan rang undang-undang. Jadi Tuan Yang di-Pertua, saya menyokong.
 Sekian, terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1640,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat
+Bacaan Kali Yang Kedua dan Ketiga",,■1640,1640,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat
 Kubang Kerian."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1650,Tuan Salahuddin Haji Ayub [Kubang Kerian],"Terima kasih Tuan Yang
+Bacaan Kali Yang Kedua dan Ketiga",,4.50 ptg.,1650,Tuan Salahuddin Haji Ayub [Kubang Kerian],"Terima kasih Tuan Yang
 di-Pertua. Saya juga ingin mengambil bahagian dalam perbahasan Rang Undang-
 undang Lembaga Perindustrian Kayu Malaysia ini dan setelah mendengar
 penjelasan daripada pihak Yang Berhormat Menteri sebentar tadi dan juga
@@ -4066,11 +4066,11 @@ saya rasa memonopoli pasaran jati dalam negara kita. Sekadar itu Tuan Yang di-
 Pertua, terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1650,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat
+Bacaan Kali Yang Kedua dan Ketiga",,4.50 ptg.,1650,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat
 Parit Buntar."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1658,Dr. Mujahid Yusof Rawa [Parit Buntar],"Terima kasih Tuan Yang di-
+Bacaan Kali Yang Kedua dan Ketiga",,4.58 ptg.,1658,Dr. Mujahid Yusof Rawa [Parit Buntar],"Terima kasih Tuan Yang di-
 Pertua. Saya ingin turut terlibat dalam perbahasan rang undang-undang ini yang
 melibatkan akta meminda Lembaga Perindustrian Kayu Malaysia. Saya terbaca
 dalam kenyataan Yang Berhormat Timbalan Menteri tentang bagaimana pada
@@ -4089,7 +4089,7 @@ juga mempunyai kebimbangan yang sama dalam keghairahan kita untuk
 membentang akta ini dan saya yakin itu adalah untuk kebaikan industri kayu."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1700,Dr. Mujahid Yusof Rawa [Parit Buntar],"Kita juga harus mengambil kira tentang isu alam sekitar dalam konteks
+Bacaan Kali Yang Kedua dan Ketiga",,■1700,1700,Dr. Mujahid Yusof Rawa [Parit Buntar],"Kita juga harus mengambil kira tentang isu alam sekitar dalam konteks
 sumber hasil kayu-kayan ini yang didapati daripada sumber hutan. Saya ingin
 menarik perhatian Tuan Yang di-Pertua serta seluruh Dewan ini, antara yang
 mengakibatkan permasalahan kepada sumber hutan ini ialah industri kayu yang
@@ -4171,20 +4171,20 @@ supaya negara kita lebih dipandang. Pada waktu yang sama mempunyai
 tanggungjawab alam sekitar. Jadi saya rasa itu antara perkara-perkara yang..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1700,Dato’ Dr. Mohd. Hayati bin Othman [Pendang],"Yang Berhormat Parit
+Bacaan Kali Yang Kedua dan Ketiga",,■1700,1700,Dato’ Dr. Mohd. Hayati bin Othman [Pendang],"Yang Berhormat Parit
 Buntar."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1700,Dr. Mujahid Yusof Rawa [Parit Buntar],Harus... Ya.
+Bacaan Kali Yang Kedua dan Ketiga",,■1700,1700,Dr. Mujahid Yusof Rawa [Parit Buntar],Harus... Ya.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1700,Dato’ Dr. Mohd. Hayati bin Othman [Pendang],Mahu tambah sedikit.
+Bacaan Kali Yang Kedua dan Ketiga",,■1700,1700,Dato’ Dr. Mohd. Hayati bin Othman [Pendang],Mahu tambah sedikit.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1700,Dr. Mujahid Yusof Rawa [Parit Buntar],Silakan.
+Bacaan Kali Yang Kedua dan Ketiga",,■1700,1700,Dr. Mujahid Yusof Rawa [Parit Buntar],Silakan.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1700,Dato’ Dr. Mohd. Hayati bin Othman [Pendang],"Terima kasih Yang
+Bacaan Kali Yang Kedua dan Ketiga",,■1700,1700,Dato’ Dr. Mohd. Hayati bin Othman [Pendang],"Terima kasih Yang
 Berhormat Parit Buntar. Tuan Yang di-Pertua, apabila sebut tentang kelapa sawit,
 ya. Kita pernah mendengar apa yang telah dibuat oleh Lembaga Kelapa Sawit
 (PORIM) berhubung dengan kajian yang dijalankan terhadap batang-batang
@@ -4201,21 +4201,21 @@ yang dibuat daripada kayu getah. Sekarang kayu getah pun banyak dijadikan
 perabot. Silakan Yang Berhormat Parit Buntar. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1700,Dr. Mujahid Yusof Rawa [Parit Buntar],"Terima kasih Yang Berhormat
+Bacaan Kali Yang Kedua dan Ketiga",,■1700,1700,Dr. Mujahid Yusof Rawa [Parit Buntar],"Terima kasih Yang Berhormat
 Pendang. Saya mohon Tuan Yang di-Pertua masukkan cadangan itu dalam
 ucapan saya untuk perhatian Yang Berhormat Menteri. Jadi apa yang ingin saya
 rumuskan di sini dalam kita membicarakan apa sahaja rang undang-undang
 seharusnya kita mempunyai pandangan..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Dato’ Johari Abdul [Sungai Petani],Yang Berhormat Parit Buntar.
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Dato’ Johari Abdul [Sungai Petani],Yang Berhormat Parit Buntar.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Dr. Mujahid Yusof Rawa [Parit Buntar],"Silakan Yang Berhormat Sungai
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Dr. Mujahid Yusof Rawa [Parit Buntar],"Silakan Yang Berhormat Sungai
 Petani."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Dato’ Johari Abdul [Sungai Petani],"Terima kasih Tuan Yang di-Pertua,
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Dato’ Johari Abdul [Sungai Petani],"Terima kasih Tuan Yang di-Pertua,
 Yang Berhormat Parit Buntar kalau dibuka kepada seksyen 26A dalam akta ini
 dilihat bahawa pelantikan pegawai penguat kuasa, isu yang ada di hadapan kita
 rata-rata undang-undang, banyak kita buat undang-undang. Akan tetapi soal
@@ -4239,7 +4239,7 @@ kuasa Menteri itu boleh overwrite semua apa yang kita bincangkan di dalam
 Parlimen ini, silakan Yang Berhormat Parit Buntar."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Dr. Mujahid Yusof Rawa [Parit Buntar],"Terima kasih rakan saya Yang
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Dr. Mujahid Yusof Rawa [Parit Buntar],"Terima kasih rakan saya Yang
 Berhormat Sungai Petani yang sebenarnya telah mengingatkan saya isu itu
 sebenarnya. Sebelum saya pergi kepada penguatkuasaan tadi, saya akan komen
 sedikit. Saya ingin menegaskan dalam kita mengadakan apa sahaja akta rang
@@ -4281,11 +4281,11 @@ Rajang. Saya ingat traffic jammed dekat Kuala Lumpur sahaja, rupa-rupanya
 Sungai Rajang pun ada traffic jammed."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Datuk Haji Mohamad bin Haji Aziz [Sri Gading],"[Bercakap tanpa
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Datuk Haji Mohamad bin Haji Aziz [Sri Gading],"[Bercakap tanpa
 menggunakan pembesar suara]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Dr. Mujahid Yusof Rawa [Parit Buntar],"Traffic jammed apa? Kayu
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Dr. Mujahid Yusof Rawa [Parit Buntar],"Traffic jammed apa? Kayu
 balak? Ya Rabbi, kayu balak dekat sungai tuan-tuan berselerak, jadi - 50 kilo, what
 is this dengan izin. Jadi kalaulah ini keadaan kita saya rasa penguatkuasaan itu
 amat menyedihkan kita, dalam konteks pembalakan haram yang berleluasa ini
@@ -4307,22 +4307,22 @@ benda itu ada kaitan yang rapat antara satu sama lain.
 Oleh itu, ya saya nampak Yang Berhormat Pokok Sena berdiri."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Dato’ Mahfuz bin Haji Omar [Pokok Sena],Ya.
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Dato’ Mahfuz bin Haji Omar [Pokok Sena],Ya.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Dr. Mujahid Yusof Rawa [Parit Buntar],"Dia “Pokok Sena” sebab itu dia
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Dr. Mujahid Yusof Rawa [Parit Buntar],"Dia “Pokok Sena” sebab itu dia
 hendak bercakap..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Dato’ Mahfuz bin Haji Omar [Pokok Sena],"Pokok, Tuan Yang di-Pertua,
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Dato’ Mahfuz bin Haji Omar [Pokok Sena],"Pokok, Tuan Yang di-Pertua,
 terima kasih rakan saya. Ini soal hutan ini..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Dato’ Seri Haji Azmi Khalid [Padang Besar],"Dia bercakap orang endah
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Dato’ Seri Haji Azmi Khalid [Padang Besar],"Dia bercakap orang endah
 pokok sena."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Dato' Mahfuz bin Haji Omar [Pokok Sena],"Penguatkuasaan untuk dari
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Dato' Mahfuz bin Haji Omar [Pokok Sena],"Penguatkuasaan untuk dari
 segi penjagaan hutan tetapi adakah Yang Berhormat bersetuju bahawa kerajaan
 juga harus mempertimbangkan dan memang sudah ada janji khususnya di negeri
 Kedah di zaman Perdana Menteri dahulu Tun Dr. Mahathir, iaitu bagi negeri-negeri
@@ -4342,64 +4342,64 @@ bagi ini. Janji ya, padahal kerajaan Pulau Pinang tidak bagi duit haram, dia
 asingkan duit sumbangan daripada syarikat lumba kuda, dia asing. [Dewan riuh]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Dato’ Shamsul Anuar Nasarah [Lenggong],"Hendak sokong biarlah
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Dato’ Shamsul Anuar Nasarah [Lenggong],"Hendak sokong biarlah
 betul Yang Berhormat Pokok Sena."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Dato' Mahfuz bin Haji Omar [Pokok Sena],"Ya, dia asing. Tidak percaya,
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Dato' Mahfuz bin Haji Omar [Pokok Sena],"Ya, dia asing. Tidak percaya,
 pegawai kewangan..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Dato’ Shamsul Anuar Nasarah [Lenggong],"Hendak sokong, biarlah
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Dato’ Shamsul Anuar Nasarah [Lenggong],"Hendak sokong, biarlah
 betul-betul Yang Berhormat Pokok Sena."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Dato' Mahfuz bin Haji Omar [Pokok Sena],Pegawai kewangan...
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Dato' Mahfuz bin Haji Omar [Pokok Sena],Pegawai kewangan...
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Dato’ Shamsul Anuar Nasarah [Lenggong],"Sampai peringkat
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Dato’ Shamsul Anuar Nasarah [Lenggong],"Sampai peringkat
 menyokong, kerana politik sokong begitu sekali."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Dato' Mahfuz bin Haji Omar [Pokok Sena],"Pegawai kewangan
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Dato' Mahfuz bin Haji Omar [Pokok Sena],"Pegawai kewangan
 Kerajaan Negeri Pulau Pinang ialah PTD, pegawai persekutuan..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Datuk Wira Ahmad Hamzah [Jasin],"[Bercakap tanpa menggunakan
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Datuk Wira Ahmad Hamzah [Jasin],"[Bercakap tanpa menggunakan
 pembesar suara]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Tuan Haji Mohd. Nor Othman [Hulu Terengganu],"[Bercakap tanpa
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Tuan Haji Mohd. Nor Othman [Hulu Terengganu],"[Bercakap tanpa
 menggunakan pembesar suara]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Dato’ Shamsul Anuar Nasarah [Lenggong],Apalah ni?.
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Dato’ Shamsul Anuar Nasarah [Lenggong],Apalah ni?.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Dato' Haji Mahfuz bin Haji Omar [Pokok Sena],"Pegawai persekutuan,
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Dato' Haji Mahfuz bin Haji Omar [Pokok Sena],"Pegawai persekutuan,
 dia buat satu kenyataan, satu kenyataan mengatakan duit itu diasingkan. Ini tidak
 bagi duit,..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Dato’ Shamsul Anuar Nasarah [Lenggong],"Cakap pasal Islam jahil
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Dato’ Shamsul Anuar Nasarah [Lenggong],"Cakap pasal Islam jahil
 benar."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Dato' Mahfuz bin Haji Omar [Pokok Sena],"Janji hendak beri kepada
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Dato' Mahfuz bin Haji Omar [Pokok Sena],"Janji hendak beri kepada
 Kerajaan Negeri Kedah yang tidak beri RM100 juta, mana dia? Ini makan, cekik
 darah duit haram ini. ini duit yang sepatutnya diberikan kepada rakyat negeri
 Kedah, kebajikan untuk rakyat negeri Kedah, maknanya teruklah kerajaan ini
 makan duit haram kerajaan negeri Kedah."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Dato’ Shamsul Anuar Nasarah [Lenggong],"Kerajaan negeri tidak ada
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Dato’ Shamsul Anuar Nasarah [Lenggong],"Kerajaan negeri tidak ada
 duit kah?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Dato' Haji Mahfuz bin Haji Omar [Pokok Sena],Terima kasih.
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Dato' Haji Mahfuz bin Haji Omar [Pokok Sena],Terima kasih.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1720,Dr. Mujahid Yusof Rawa [Parit Buntar],"Terima kasih Yang Berhormat
+Bacaan Kali Yang Kedua dan Ketiga",,■1720,1720,Dr. Mujahid Yusof Rawa [Parit Buntar],"Terima kasih Yang Berhormat
 Pokok Sena. Saya ingat dalam salah satu perbahasan saya, semasa Kementerian
 Sumber Asli saya telah menimbulkan isu ini saya kira iaitu RM100 juta pampasan
 kepada Kerajaan Negeri Kedah kerana tidak menebang balak bagi memelihara
@@ -4411,12 +4411,12 @@ kementerian Kewangan, saya tidak janji yang itu. Itu isu ia. Akan tetapi bagi sa
 kalau hendak lari jawab ini boleh-boleh lari..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1720,Dato' Haji Mahfuz bin Haji Omar [Pokok Sena],"Saya setuju macam
+Bacaan Kali Yang Kedua dan Ketiga",,■1720,1720,Dato' Haji Mahfuz bin Haji Omar [Pokok Sena],"Saya setuju macam
 Yang Berhormat Kinabatangan hujah pagi tadi. Sejak ia masuk ke Parlimen
 sampai hari ini, itulah jawapannya. [Ketawa]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1720,Dr. Mujahid Yusof Rawa [Parit Buntar],"Itulah ia. Cuma saya hendak
+Bacaan Kali Yang Kedua dan Ketiga",,■1720,1720,Dr. Mujahid Yusof Rawa [Parit Buntar],"Itulah ia. Cuma saya hendak
 tambah satu lagi, saya pun kadang-kadang pelik juga bukan sahaja isu yang tidak
 diberikan kepada kerajaan. Sesuatu yang berhak di terima oleh sebuah kerajaan
 semasa itu Barisan Nasional memerintah - ia berjanji hendak bagi. Akan tetapi
@@ -4450,11 +4450,11 @@ dan bukan hanya milik orang-orang tertentu sahaja. Sekian dahulu Tuan Yang di-
 Pertua yang saya ingin beri perhatian kepada kementerian."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1720,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat
+Bacaan Kali Yang Kedua dan Ketiga",,■1720,1720,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat
 Silam."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1724,Tuan Haji Salleh bin Haji Kalbi [Silam],"Terima kasih Tuan Yang di-
+Bacaan Kali Yang Kedua dan Ketiga",,5.24 ptg.,1724,Tuan Haji Salleh bin Haji Kalbi [Silam],"Terima kasih Tuan Yang di-
 Pertua kerana mengizinkan saya untuk turut sama bagi membahaskan rang
 undang-undang suatu akta untuk meminda Akta Lembaga Perindustrian Kayu
 Malaysia (Pemerbadanan) 1993.
@@ -4524,15 +4524,15 @@ kayu jati dan berdekatan kawasan Nyeri, iaitu presiden kawasan Nairobi saya
 dapati di sana ada aktiviti menanam kayu jati."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1724,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat
+Bacaan Kali Yang Kedua dan Ketiga",,5.24 ptg.,1724,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat
 sambung esok Yang Berhormat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1724,Tuan Haji Salleh bin Haji Kalbi [Silam],"Insya-Allah, terima kasih Tuan
+Bacaan Kali Yang Kedua dan Ketiga",,5.24 ptg.,1724,Tuan Haji Salleh bin Haji Kalbi [Silam],"Insya-Allah, terima kasih Tuan
 Yang di-Pertua."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PERINDUSTRIAN KAYU
 MALAYSIA (PEMERBADANAN) (PINDAAN) 2010
-Bacaan Kali Yang Kedua dan Ketiga",,1724,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Ahli-ahli Yang
+Bacaan Kali Yang Kedua dan Ketiga",,5.24 ptg.,1724,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Ahli-ahli Yang
 Berhormat, Mesyuarat Dewan hari ini ditangguhkan sehingga pukul 10 pagi hari
 Rabu, 13 Oktober 2010.
 **Dewan ditangguhkan pada pukul 5.30 petang.**"

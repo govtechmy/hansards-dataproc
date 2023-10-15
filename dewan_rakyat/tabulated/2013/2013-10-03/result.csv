@@ -1,8 +1,8 @@
-level_1,level_2,level_3,timestamp,author,speech
-,,,1000,ANNOTATION,"[Timbalan Yang di-Pertua (Dato' Haji Ismail bin Mohamed Said)
+level_1,level_2,level_3,raw_timestamp,timestamp,author,speech
+,,,10.00 pagi,1000,ANNOTATION,"[Timbalan Yang di-Pertua (Dato' Haji Ismail bin Mohamed Said)
 mempengerusikan Mesyuarat]"
 USUL,"MENANGGUHKAN BACAAN KALI YANG KEDUA DAN KETIGA
-RANG UNDANG-UNDANG DI BAWAH P.M. 62",,1000,Menteri di Jabatan Perdana Menteri [Puan Hajah Nancy binti Shukri],"*Bismillahir Rahmanir Rahim*. Tuan Yang di-Pertua,
+RANG UNDANG-UNDANG DI BAWAH P.M. 62",,10.00 pagi,1000,Menteri di Jabatan Perdana Menteri [Puan Hajah Nancy binti Shukri],"*Bismillahir Rahmanir Rahim*. Tuan Yang di-Pertua,
 “Bahawa menurut Peraturan Mesyuarat 62, D.R. 9/2013 Rang
 Undang-undang Kanun Keseksaan (Pindaan) 2013, D.R. 11/2013 Rang
 Undang-undang Kesalahan Keselamatan (Langkah-Langkah Khas)
@@ -22,14 +22,14 @@ yang tertera di No. 1 hingga No. 12 dalam Aturan Urusan Mesyuarat pada
 hari ini ditangguhkan bacaan kali yang kedua dan ketiga dan dibawa ke
 mesyuarat akan datang. Terima kasih."
 USUL,"MENANGGUHKAN BACAAN KALI YANG KEDUA DAN KETIGA
-RANG UNDANG-UNDANG DI BAWAH P.M. 62",,1000,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Mohamed Said],Baiklah.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1000,Datuk Bung Moktar bin Radin [Kinabatangan],"minta Menteri Belia dan Sukan
+RANG UNDANG-UNDANG DI BAWAH P.M. 62",,10.00 pagi,1000,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Mohamed Said],Baiklah.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,10.00 pagi,1000,Datuk Bung Moktar bin Radin [Kinabatangan],"minta Menteri Belia dan Sukan
 menyatakan, usaha kerajaan dalam membantu belia-belia luar bandar untuk turut sama
 terlibat dan berpeluang meneroka industri sukan negara memandangkan kebanyakan belia
 luar bandar tidak diketengahkan untuk menunjukkan bakat mereka dalam bidang sukan
 seperti mana yang pernah dilakukan dalam program *MyTeam* disebabkan kedudukan
 geografi dan infrastruktur yang masih berada dalam keadaan yang serba kekurangan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1000,Timbalan Menteri Belia dan Sukan [Datuk Saravanan a/l Murugan],"Terima
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,10.00 pagi,1000,Timbalan Menteri Belia dan Sukan [Datuk Saravanan a/l Murugan],"Terima
 kasih Tuan Yang di-Pertua. Untuk makluman Ahli Yang Berhormat Kementerian Belia dan
 Sukan telah dan sedang melaksanakan program pencarian bakat di peringkat akar umbi
 melalui kerjasama dengan pihak Kementerian Pelajaran Malaysia di kalangan kanak-kanak
@@ -63,11 +63,11 @@ kejohanan Asia dan juga Sirkit Skuasy Jelajah Malaysia (SSJM).
 Selain daripada itu Kementerian Belia dan Sukan juga turut melaksanakan
 program pembangunan badminton dengan kerjasama Kelab Badminton Nusa Mahsuri yang
 dikendalikan oleh Yang Berbahagia Datuk Misbun Sidek dan Jalaini Sidek."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Timbalan Menteri Belia dan Sukan [Datuk Saravanan a/l Murugan],"Program ini bertujuan mencari bakat yang baru dan potensi di peringkat akar umbi
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1010,1010,Timbalan Menteri Belia dan Sukan [Datuk Saravanan a/l Murugan],"Program ini bertujuan mencari bakat yang baru dan potensi di peringkat akar umbi
 dan akan dipilih menjadi pemain pelapis. Program ini juga memfokuskan dalam
 meningkatkan kedudukan *ranking* pemain pelapis dalam *world ranking,* dengan izin, agar
 layak kejohanan-kejohanan besar dan berprestij. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Datuk Bung Moktar bin Radin [Kinabatangan],"Terima kasih Yang Berhormat.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1010,1010,Datuk Bung Moktar bin Radin [Kinabatangan],"Terima kasih Yang Berhormat.
 Sedarkah Yang Berhormat bahawa saya setuju program penceriaan ini merupakan satu
 pendekatan yang baru. Setakat ini, sejauh mana program ini telah dilaksanakan? Adakah di
 peringkat negeri, di peringkat Parlimen dan berapa pula yang sudah kita cari? Contohnya
@@ -85,13 +85,13 @@ daripada luar bandar. Jadi, apa usaha kementerian ke arah mempertingkatkan kuali
 belia luar bandar khususnya untuk memastikan bahawa mereka juga tidak ketinggalan
 dalam arus perubahan. Ini kerana walaupun di luar bandar, mereka berhak menikmati
 perubahan arus zaman yang moden selari dengan belia-belia yang lain"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,ANNOTATION,[Disampuk]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Datuk Bung Moktar bin Radin [Kinabatangan],"Sudah,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1010,1010,ANNOTATION,[Disampuk]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1010,1010,Datuk Bung Moktar bin Radin [Kinabatangan],"Sudah,
 soalan sudah masuk iaitu usaha yang dilakukan. Ini Yang Berhormat Putrajaya mungkin dia
 mahu tahu nombor saya, 26 Yang Berhormat Putrajaya, jadi jangan lupa. Jadi, itulah usaha-
 usaha yang lebih konkrit yang lebih meyakinkan. Kita mahu belia kita berjaya dalam industri
 sukan, mahu juga belia kita berjaya dalam kehidupan mereka. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Datuk Saravanan a/l Murugan,"Satu perkara yang amat sedih di mana salah
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1010,1010,Datuk Saravanan a/l Murugan,"Satu perkara yang amat sedih di mana salah
 seorang atlet telah meninggal semalam. Walaupun Kementerian Belia dan Sukan dan
 agensi-agensi lain sentiasa mengutamakan ciri-ciri keselamatan, bukan sahaja dalam
 sukan berbasikal tetapi semua jenis sukan. Akan tetapi walau bagaimanapun, kita harus
@@ -117,7 +117,7 @@ aktiviti untuk memperkasakan ekonomi belia. Maka mereka memilih bidang-bidang at
 acara-acara yang mereka ingin menyertai. Walau bagaimanapun, Kementerian Belia dan
 Sukan telah dan sedang mengambil pelbagai langkah supaya belia-belia ini tidak tercicir
 daripada pembangunan sukan negara. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Dato' Takiyuddin bin Hassan [Kota Bharu],"Terima kasih Tuan Yang di-Pertua,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1010,1010,Dato' Takiyuddin bin Hassan [Kota Bharu],"Terima kasih Tuan Yang di-Pertua,
 terima kasih Yang Berhormat Menteri yang telah menjawab dan tahniah Yang Berhormat
 Kinabatangan, soalan yang begini baik dan diminati ramai. Yang Berhormat Tuan Yang di-
 Pertua, kita tahu bahawa di negara kita sekarang ini sukan ini bukan lagi menjadi satu
@@ -136,11 +136,11 @@ taraf penduduk tetap di Malaysia ini, dia berminat hendak duduk di Kinabatangan,
 sana. Mungkin dia boleh kahwin di Kinabatangan, dapat anak di sana, mendapat keturunan.
 Sukan, keturunan sukan, *gene* sukan yang bertaraf dunia. Itu satu cara untuk kita
 mempertingkatkan taraf sukan, apa jenis sukan pun dalam negara kita."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Panjang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1010,1010,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Panjang
 sangat sudah ini."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Dato' Takiyuddin bin Hassan [Kota Bharu],"Adakah kerajaan bercadang untuk
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1010,1010,Dato' Takiyuddin bin Hassan [Kota Bharu],"Adakah kerajaan bercadang untuk
 mempertimbangkan cadangan ini?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Datuk Saravanan a/l Murugan,"Terima kasih Tuan Yang di-Pertua. Tujuan asal
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1010,1010,Datuk Saravanan a/l Murugan,"Terima kasih Tuan Yang di-Pertua. Tujuan asal
 Kementerian Belia dan Sukan dan agensi-agensi ini membawa jurulatih-jurulatih daripada
 luar negara supaya memastikan atlet-atlet kita boleh capai ke taraf antarabangsa. Ada juga
 agama yang menyokong berhijrahlah hingga ke negara China untuk mendapatkan
@@ -148,7 +148,7 @@ pengetahuan. Maka tujuan kita tujuan itu untuk memastikan atlet-atlet kita menca
 tahap yang begitu cemerlang. Walaupun saya sendiri menyokong sekiranya diberi
 kerakyatan ataupun PR dengan izin, tetapi malangnya bukan bidang kuasa Kementerian
 Belia dan Sukan, tertakluk kepada Kementerian Dalam Negeri. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Datuk Seri Panglima Haji Abdul Ghapur bin Salleh [Kalabakan],"Terima kasih
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1010,1010,Datuk Seri Panglima Haji Abdul Ghapur bin Salleh [Kalabakan],"Terima kasih
 Tuan Yang di-Pertua. Pagi ini kita baca *newspaper,* kemalangan kepada pasukan
 berbasikal kita. Jadi, Yang Berhormat Menteri mengarahkan supaya mencari kaedah-
 kaedah apa macam kita mahu mengelakkan kemalangan seperti ini berlaku lagi. Jadi, kalau
@@ -160,7 +160,7 @@ punya *track* untuk berbasikal. Adakah kementerian bercadang untuk membuat di se
 negara kerana kalau kita harap akademi yang ada di Sabah satu, di daerah-daerah lain,
 tiada. Jadi saya mahu tahu, adakah perancangan yang berkesan untuk atlet-atlet kita?
 Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Datuk Saravanan a/l Murugan,"Tuan Yang di-Pertua, seperti mana saya telah
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,■1010,1010,Datuk Saravanan a/l Murugan,"Tuan Yang di-Pertua, seperti mana saya telah
 maklumkan kepada Dewan yang mulia ini, Kementerian Belia dan Sukan sentiasa
 mementingkan ciri-ciri keselamatan. Ciri-ciri keselamatan adalah diutamakan, tetapi yang
 pentingnya kerjasama daripada atlet sendiri. Kalau tidak, walaupun kita mengamalkan
@@ -168,14 +168,14 @@ pelbagai ciri-ciri keselamatan, tanpa kerjasama daripada atlet sendiri mungkin k
 dapat mencapai matlamat. Walau bagaimanapun, pandangan Ahli Yang Berhormat akan
 diambil sebagai satu cadangan dan pandangan yang serius. Kementerian Belia dan Sukan
 akan memberi pandangan serius terhadap cadangan beliau. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1010,Puan Siti Zailah binti Mohd. Yusoff [Rantau Panjang],"minta Menteri Sumber
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1010,1010,Puan Siti Zailah binti Mohd. Yusoff [Rantau Panjang],"minta Menteri Sumber
 Asli dan Alam Sekitar menyatakan, tentang projek Tebatan Banjir Sungai Golok Rantau
 Panjang yang tertangguh sekian lama menyebabkan kerugian besar akibat banjir
 sedangkan kerajaan Thailand telah pun menyiapkannya, kesannya air banjir melimpahi
 sempadan negara kita dan menjejaskan operasi perkhidmatan agensi kerajaan dan
 perniagaan serta pertanian rakyat tempatan. Bilakah projek tebatan banjir akan
 dilaksanakan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Timbalan Menteri Sumber Asli dan Alam Sekitar [Dato’ Dr. James Dawos Mamit],"Tuan Yang di-Pertua, untuk makluman Ahli Yang Berhormat, Kerajaan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1020,1020,Timbalan Menteri Sumber Asli dan Alam Sekitar [Dato’ Dr. James Dawos Mamit],"Tuan Yang di-Pertua, untuk makluman Ahli Yang Berhormat, Kerajaan
 Persekutuan mempunyai perancangan untuk melaksanakan projek rancangan tebatan
 banjir Sungai Golok bagi mengurangkan masalah banjir di sempadan antarabangsa
 Malaysia-Thailand terutama di Pekan Rantau Panjang dan juga sebagai projek
@@ -184,9 +184,9 @@ dan Saliran Malaysia (JPS) memohon peruntukan di bawah Rancangan Malaysia Tebata
 Banjir Sungai Golok Fasa 1 yang berjumlah RM345 juta. Pelaksanaan projek ini dijangka
 akan dimulakan pada pertengahan tahun 2015 dan akan disiapkan pada tahun 2019
 tertakluk kepada peruntukan yang diluluskan oleh kerajaan. Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Ya, sila
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1020,1020,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Ya, sila
 Yang Berhormat Rantau Panjang yang juga bijaksana."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Puan Hajah Siti Zailah binti Mohd. Yusoff [Rantau Panjang],"Terima kasih
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1020,1020,Puan Hajah Siti Zailah binti Mohd. Yusoff [Rantau Panjang],"Terima kasih
 Tuan Yang di-Pertua. Saya mendapat maklumat bahawa peruntukan yang dipohon itu
 adalah untuk penstabilan tebing sungai bukan untuk tebatan banjir. Saya ingin tahu sejauh
 mana pencapaian yang telah dipersetujui bersama antara G2G Malaysia-Thailand dalam
@@ -199,7 +199,7 @@ besar kepada rakyat di negara kita. Jadi kepada pihak kementerian, kena ambil pe
 perkara ini dan saya tak mahu pihak kementerian memberi alasan dengan peruntukan
 sedangkan perkara ini kita telah bincang dengan pihak JPS, hanya peruntukan penstabilan
 tebing sungai bukan tebatan banjir. Jadi minta penjelasan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Dato’ Dr. James Dawos Mamit,"Terima kasih Yang Berhormat atas soalan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1020,1020,Dato’ Dr. James Dawos Mamit,"Terima kasih Yang Berhormat atas soalan
 tambahan itu. Saya sememangnya menggalakkan Ahli-ahli Yang Berhormat di mana-mana
 pun disebabkan sekarang negara kita memang di dalam keadaan banjir disebabkan
 fenomena perubahan iklim. Untuk makluman Yang Berhormat, yang RM100 juta itu adalah
@@ -223,9 +223,9 @@ sebelah Thailand, maka perancangan rapi amat perlulah untuk semuanya ini supaya 
 rancangan tebatan banjir nanti akan lebih lagi berkesan. Jangan kita nak buat yang tidak
 berkesan, nanti susah pula sebab ini semuanya adalah kebaikan untuk negara, kebaikan
 untuk rakyat juga. Sekian."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Ya, Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1020,1020,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Ya, Yang
 Berhormat Baling. Nombor berapa Yang Berhormat Baling ini? Soalan nombor dua ini."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Datuk Abdul Azeez bin Abdul Rahim [Baling],"Terima kasih kepada Tuan Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1020,1020,Datuk Abdul Azeez bin Abdul Rahim [Baling],"Terima kasih kepada Tuan Yang
 di-Pertua, nombor saya 15. Terima kasih kepada Yang Berhormat Menteri, saya nak tanya
 soalan tambahan. Apakah langkah-langkah atau tindakan yang diambil oleh kerajaan untuk
 menangani masalah banjir ini sebab ianya berkisarkan tambatan sungai-sungai. Saya
@@ -250,15 +250,15 @@ Memang kalau cerita pasal hakisan, kalau Yang Berhormat Menteri datang sendiri,
 Yang Berhormat Menteri akan menilai sebagai seorang pakar perlunya bagaimana tegarnya
 Baling perlu sokongan dan bantuan dalam konteks ini. Saya pohon Yang Berhormat
 Menteri sila datang ke Baling. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Dato’ Dr. James Dawos Mamit,"Terima kasih sahabat saya ini Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1020,1020,Dato’ Dr. James Dawos Mamit,"Terima kasih sahabat saya ini Yang Berhormat
 Baling. Sememangnya banjir berlaku di seluruh negara apatah lagi kita ini mewakili
 kawasan luar bandar, jadi masalah banjir yang perlu kita tangani. Saya belum lagi turun
 padang untuk ke Baling."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Tuan Khalid Abd. Samad [Shah Alam],
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,ANNOTATION,[Bangun]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1020,1020,Tuan Khalid Abd. Samad [Shah Alam],
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1020,1020,ANNOTATION,[Bangun]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1020,1020,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Yang
 Berhormat Shah Alam, ini tak ada pencelahan ya Yang Berhormat Shah Alam."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Dato’ Dr. James Dawos Mamit,"Saya belum lagi turun padang untuk pergi ke
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1020,1020,Dato’ Dr. James Dawos Mamit,"Saya belum lagi turun padang untuk pergi ke
 Baling tapi saya memang teringin bukan sahaja ke Baling tetapi di Golok juga. Saya ingin
 menilai sendiri tentang keadaan. Satu, tentang keadaan sungai.
 Yang kedua, tentang keadaan kawasan tadahan air kerana yang penting adalah
@@ -267,7 +267,7 @@ disebabkan yang saya dah bagi tahu tadi iaitu perubahan iklim, hujan lebih kerap
 negara kita. Di Sarawak lebih kerap lagi dengan 40% di selatan Sarawak. Mana tidak akan
 banjir kalau ada hujan dalam tempoh satu jam. Jika ini jumlah air hujan itu 80 milimeter
 sudah tentu ada tempat lebih-lebih lagi tempat yang tanah rendah itu terkenalah banjir."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1030,Dato’ Dr. James Dawos Mamit,"Jadi perkara seperti inilah yang kementerian saya buat kajian dan termasuk juga
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,■1030,1030,Dato’ Dr. James Dawos Mamit,"Jadi perkara seperti inilah yang kementerian saya buat kajian dan termasuk juga
 saya sendiri memang selama saya bertugas dengan kerajaan lebih 30 tahun saya hanya
 membuat penyelidikan dan kajian sahaja. Tidak pernah saya buat tugas pentadbiran. Oleh
 itu memang saya teringin untuk turun ke padang melihat dan menilai bagaimanakah banjir
@@ -278,11 +278,11 @@ Kalau peruntukan itu sudah ada, sudah diberi kepada kita barulah kita mula melak
 Projek-projek Rancangan Tebatan Banjir. Terima kasih sahabat saya Yang Berhormat
 Baling yang membawa masalah Baling. Sama juga seperti masalah luar bandar yang lain
 yang ada sungai. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Tuan Liang Teck Meng [Simpang Renggam],"minta Menteri Kesihatan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1030,1030,Tuan Liang Teck Meng [Simpang Renggam],"minta Menteri Kesihatan
 menyatakan, apakah usaha yang diambil bersama dengan Kementerian Komunikasi dan
 Multimedia supaya ubat yang diharamkan tidak mudak diakses melalui laman web oleh
 kalangan orang awam."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Menteri Kesihatan [Datuk Seri Dr. S. Subramaniam],"Terima kasih Tuan Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1030,1030,Menteri Kesihatan [Datuk Seri Dr. S. Subramaniam],"Terima kasih Tuan Yang
 di-Pertua. Terlebih dahulu saya ucapkan terima kasih kepada Yang Berhormat daripada
 Simpang Renggam kerana telah membangkitkan satu isu yang sangat mustahak pada kini
 tentang iklan-iklan yang keluar di dalam laman web.
@@ -315,7 +315,7 @@ Pada tahun ini sehingga Jun 2013, sebanyak 1153 permohonan iklan telah
 diterima oleh Bahagian Perkhidmatan Farmasi dan dari jumlah tersebut, hanya 1,045
 diluluskan oleh Lembaga Iklan. Sebanyak 94 surat amaran telah dikeluarkan bagi tempoh
 Januari sampai Jun tahun ini. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Tuan Liang Teck Meng [Simpang Renggam],"Terima kasih Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1030,1030,Tuan Liang Teck Meng [Simpang Renggam],"Terima kasih Tuan Yang di-
 Pertua, terima kasih Menteri atas jawapan yang diberikan. Saya amat mengalu-alukan
 usaha yang dilakukan oleh kementerian. Namun saya lihat banyak lagi ruang yang boleh
 diperbaiki ataupun ditambah baik. Saya cuma bagi contoh Tuan Yang di-Pertua. Pagi tadi
@@ -329,9 +329,9 @@ ubat yang telah pun tidak ada kelulusan daripada KKM. Jadi, saya ingin mencadang
 bahawa kalau boleh satu agensi ataupun jawatankuasa khas ditubuhkan di bawah KKM
 supaya pemantauan dapat dijalankan dengan kerap dan rapat dan media sosial ini tidak
 digunakan sebagai alat untuk menjual ubat larangan. Apa pandangan Yang Berhormat?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1030,1030,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Yang
 Berhormat ambil ubat mana, jenis apa? Sila Yang Berhormat Menteri."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Datuk Seri Dr. S. Subramaniam,"Terima kasih Tuan Yang di-Pertua, terima kasih
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1030,1030,Datuk Seri Dr. S. Subramaniam,"Terima kasih Tuan Yang di-Pertua, terima kasih
 Yang Berhormat. Salah satu punca mengapa ada iklan-iklan seperti yang disebutkan oleh
 Ahli Yang Berhormat ialah ada rakyat di dalam dunia ini dan di dalam negara seperti Ahli
 Yang Berhormat yang mencari iklan-iklan dan web-web yang mengedarkan ubat-ubat
@@ -357,14 +357,14 @@ masalah ini kita boleh mendapat satu penyelesaian muktamad kepada perkara ini.
 selain daripada adanya mengambil tindakan ke atas mereka dan pemantauan dan apa
 yang paling mustahak ialah kesedaran dan pengetahuan di dalam kalangan rakyat, di
 dalam dunia globalisasi ini."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,Datuk Seri Dr. S. Subramaniam,"Walaupun kita boleh mengawal iklan yang keluar dari negara kita melalui SKMM
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,1040,Datuk Seri Dr. S. Subramaniam,"Walaupun kita boleh mengawal iklan yang keluar dari negara kita melalui SKMM
 tetapi yang keluar daripada negara-negara yang lain, kita menghadapi kesulitan dan
 kesukaran kerana itu memerlukan kerjasama daripada negara lain, daripada agensi seperti
 *Google* dan sebagainya untuk bantu kita menghadapi isu ini. *So,* perkara ini di dalam satu
 era globalisasi, di dalam dunia *internet* yang ada pada masa sekarang, apa yang paling
 mustahak ialah jati diri seseorang, pengetahuan dan kebolehan untuk pastikan tidak
 menggunakan kaedah-kaedah seperti ini. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,Dato’ Kamarudin bin Jaffar [Tumpat],"Terima kasih Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,1040,Dato’ Kamarudin bin Jaffar [Tumpat],"Terima kasih Tuan Yang di-Pertua.
 Terima kasih Yang Berhormat Menteri. Terima kasih juga kepada Yang Berhormat Simpang
 Renggam. Adalah lebih baik Yang Berhormat Simpang Renggam mencari dalam *Google*
 tentang kesihatan lelaki daripada mencari dalam *Google* tentang kekayaan Yang Berhormat
@@ -387,7 +387,7 @@ ini supaya pendengar jelas bahawa ini, pertamanya bukan ubat. Ini hanya makanan
 kesihatan dan sebagainya dan ini bukan disahkan oleh RTM. RTM tidak bertanggungjawab
 dan pendengar mesti meneliti sendiri, mengkaji sendiri dan menilai sendiri jenisnya,
 harganya dan sebagainya. Terima kasih Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,Datuk Seri Dr. S. Subramaniam,"Terima kasih Ahli Yang Berhormat. Saya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,■1040,1040,Datuk Seri Dr. S. Subramaniam,"Terima kasih Ahli Yang Berhormat. Saya
 memang setuju dengan pandangan yang dikeluarkan oleh Yang Berhormat Tumpat itu. Di
 dalam era di mana bidang penyiaran, penerangan, radio dan sebagainya sudah menjadi
 satu *corporate entity* yang memberi tumpuan kepada *business*.
@@ -410,11 +410,11 @@ membawa untuk *advertisement* ini, satu tanggungjawab kerajaan untuk mengawal se
 agensi penyiaran. Tidak kira daripada kerajaan atau pun daripada swasta supaya apa yang
 disiarkan itu adalah satu yang pada keseluruhannya akan membawa kesan yang baik
 kepada rakyat pada keseluruhannya. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1040,Tuan Shamsul Iskandar @ Yusre bin Mohd. Akin [Bukit Katil],"minta Perdana
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1040,1040,Tuan Shamsul Iskandar @ Yusre bin Mohd. Akin [Bukit Katil],"minta Perdana
 Menteri menyatakan, berapakah jumlah bayaran yang telah dibuat kepada agensi
 perhubungan awam untuk menghasilkan tema, *“Endless Possibilities”* iaitu tema sama yang
 digunakan sewaktu kempen, *“Eye on Mongolia”* pada Ogos 2011 dan juga Israel."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1040,Menteri di Jabatan Perdana Menteri [Dato' Seri Shahidan bin Kassim],"*Bismillahi Rahmani Rahim. Assalamualaikum warahmatullahi wabarakatuh*. Saya ambil
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1040,1040,Menteri di Jabatan Perdana Menteri [Dato' Seri Shahidan bin Kassim],"*Bismillahi Rahmani Rahim. Assalamualaikum warahmatullahi wabarakatuh*. Saya ambil
 kesempatan untuk mengucapkan tahniah kepada Speaker, Setiausaha dan juga pegawai
 Parlimen yang masih boleh datang awal walaupun semalam kita habis lewat. Terima kasih
 kepada pejuang-pejuang Barisan Nasional yang terus berada di sini dan kawan-kawan
@@ -459,7 +459,7 @@ Kalau kita lihat iklan yang dibawa itu, dia tulis *“One Place, Endless Possibi
 negara-negara yang hebat di dunia ini, yang telah pun menggunakan perkataan lain tetapi
 hebat. Contohnya, New Zealand “*100% pure”,* Australia *“Unique”,* dan juga negara-negara
 lain yang menggunakan perkataan tersebut."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Menteri di Jabatan Perdana Menteri [Dato' Seri Shahidan bin Kassim],"Matlamatnya adalah supaya mereka ada jenama yang mampu untuk menarik
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,1050,Menteri di Jabatan Perdana Menteri [Dato' Seri Shahidan bin Kassim],"Matlamatnya adalah supaya mereka ada jenama yang mampu untuk menarik
 pelabur, pelancong, bakat, permastautinan dan sebagainya. Kita ini adalah jenama masa
 hadapan. Dalam soalan yang lepas, saya sebut Malaysia berada di tingkat 25. Sebenarnya
 yang saya maksudkan di sini ialah ini ialah masa hadapan. Kita bercadang untuk
@@ -469,7 +469,7 @@ pelancong-pelancong dan juga pelabur-pelabur.
 Walaupun orang menyebut bahawa *“Malaysia Truly Asia”* ini hanya untuk
 pelancongan, sebenarnya tidak. Bila orang melancong, dia juga akan melabur dan dia juga
 ada pemikiran untuk tinggal di sini dan membelanjakan wang mereka. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Tuan Shamsul Iskandar @ Yusre bin Mohd. Akin [Bukit Katil],"Terima kasih
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,1050,Tuan Shamsul Iskandar @ Yusre bin Mohd. Akin [Bukit Katil],"Terima kasih
 Yang Berhormat Menteri. Yang Berhormat Menteri hanya jawab satu bahagian sahaja
 tentang soalan saya iaitu jumlah bayaran. Akan tetapi, saya juga tanya dibuat kepada
 agensi perhubungan awam yang mana.Ini kerana seperti Yang Berhormat nyatakan tadi,
@@ -495,11 +495,11 @@ Possibilities”*. Ini nampak sanggat kerajaan tidak mempunyai idea dan malah te
 meniru. Apa salahnya kerajaan menggunakan perkataan seperti *“Malaysia Boleh”,* ataupun
 *“Malaysia Hebat, Rakyat Muafakat”*? Benda-benda ini boleh kita kemukakan kenapa
 hendak perlukan konsultan, kenapa hendak perlukan agensi?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Ya, Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,1050,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Ya, Yang
 Berhormat Bukit Katil panjang sangat. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Tuan Shamsul Iskandar @ Yusre bin Mohd. Akin [Bukit Katil],"Terima kasih,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,1050,Tuan Shamsul Iskandar @ Yusre bin Mohd. Akin [Bukit Katil],"Terima kasih,
 terima kasih Timbalan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Dato' Seri Shahidan bin Kassim,"Yang Berhormat Tuan Yang di-Pertua, semasa
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,1050,Dato' Seri Shahidan bin Kassim,"Yang Berhormat Tuan Yang di-Pertua, semasa
 kita memperkenalkan jenama ini kita telah berjumpa dengan pelbagai pihak termasuk
 universiti-universiti. Akan tetapi, seperti Yang Berhormat sedia maklum, macam juga
 *Facebook,* setengah orang bila dia lepas perasaan dia, dia ingat satu dunia tengok dia,
@@ -544,26 +544,26 @@ dan juga lain-lain lagi dan yang keduanya jenama ini ialah jenama yang kita hara
 mewujudkan semangat kekitaan. *“We feeling”* di kalangan rakyat Malaysia. Sekarang ini
 semangat kekitaan itu ada kurang sedikit. Pergi ke luar negara ada orang bantai negara,
 kita mahu bila pergi ke luar negara kita bersama bila balik kita berbeza. Tiada masalah."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Tuan Khalid bin Abd. Samad [Shah Alam],
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,ANNOTATION,"[Bercakap tanpa menggunakan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,1050,Tuan Khalid bin Abd. Samad [Shah Alam],
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,1050,ANNOTATION,"[Bercakap tanpa menggunakan
 pembesar suara]"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Tuan Khalid bin Abd. Samad [Shah Alam],*.*
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Puan Teresa Kok Suh Sim [Seputeh],
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,ANNOTATION,"[Bercakap tanpa menggunakan pembesar
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,1050,Tuan Khalid bin Abd. Samad [Shah Alam],*.*
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,1050,Puan Teresa Kok Suh Sim [Seputeh],
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,1050,ANNOTATION,"[Bercakap tanpa menggunakan pembesar
 suara]"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Puan Teresa Kok Suh Sim [Seputeh],*.*
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Dato' Wan Mohammad Khair-il Anuar Wan Ahmad [Kuala Kangsar],
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,ANNOTATION,[Bangun]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Tuan Khalid bin Abd. Samad [Shah Alam],"Kita tidak payah buat apa-apa bila
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,1050,Puan Teresa Kok Suh Sim [Seputeh],*.*
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,1050,Dato' Wan Mohammad Khair-il Anuar Wan Ahmad [Kuala Kangsar],
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,1050,ANNOTATION,[Bangun]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,1050,Tuan Khalid bin Abd. Samad [Shah Alam],"Kita tidak payah buat apa-apa bila
 luluskan..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Ini Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,1050,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Ini Yang
 Berhormat Shah Alam, Yang Berhormat Shah Alam ini bukannya perbahasan ya, soal
 jawab lisan. Sila Yang Berhormat Kuala Selangor."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Tuan Khalid bin Abd. Samad [Shah Alam],"Kita, kita kena jawablah Tuan Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,1050,Tuan Khalid bin Abd. Samad [Shah Alam],"Kita, kita kena jawablah Tuan Yang
 di-Pertua. Cakap dengan Yang Berhormat Menteri janganlah bantai kita."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Soalan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,1050,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Soalan
 tambahan Yang Berhormat Kuala Selangor."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Dato' Haji Irmohizam bin Haji Ibrahim [Kuala Selangor],"Terima kasih Tuan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,1050,Dato' Haji Irmohizam bin Haji Ibrahim [Kuala Selangor],"Terima kasih Tuan
 Yang di-Pertua, terima kasih Yang Berhormat Menteri. Saya melihat tema *“Endless
 Possibilities”* yang telah dinyatakan tadi adalah satu usaha berterusan oleh pihak kerajaan
 untuk mewujudkan perpaduan nasional dan menaikkan imej negara dalam mencapai tahun
@@ -579,24 +579,24 @@ penggunaan tema *“Endless Possibilities”,* serta apakah impak positif yang d
 daripada penggunaan tema tersebut dan bagaimana kerajaan boleh mengekang daripada
 usaha-usaha yang boleh menyebabkan rasional penggunaan tema ini disalah ertikan,
 diputar belitkan oleh sesetengah pihak tertentu? Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Ya, sila
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,1050,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Ya, sila
 Yang Berhormat Menteri."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Dato' Seri Shahidan bin Kassim,Soalan yang cukup baik tanpa...
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Beberapa Ahli,
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,ANNOTATION,[Bercakap tanpa menggunakan pembesar suara]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Tuan M. Kulasegaran [Ipoh Barat],Siap jawapan.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Dato' Seri Shahidan bin Kassim,"Saya berjanji pada diri saya kalau kamu
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,1050,Dato' Seri Shahidan bin Kassim,Soalan yang cukup baik tanpa...
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,1050,Beberapa Ahli,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,1050,ANNOTATION,[Bercakap tanpa menggunakan pembesar suara]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,1050,Tuan M. Kulasegaran [Ipoh Barat],Siap jawapan.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,1050,Dato' Seri Shahidan bin Kassim,"Saya berjanji pada diri saya kalau kamu
 ganggu saya macam ini saya akan ganggu kamu sampai bila-bila."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,ANNOTATION,[Dewan riuh]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Dato' Seri Shahidan bin Kassim,"Jabatan-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,1050,ANNOTATION,[Dewan riuh]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1050,1050,Dato' Seri Shahidan bin Kassim,"Jabatan-
 jabatan dan juga agensi-agensi mereka juga banyak memperkenalkan jenama masing-
 masing. Macam MAS- *“Malaysian Hospitality”*. Macam AirAsia - *”Everyone Can Fly”.* Macam
 Yang Berhormat Seputeh, tak tahulah apa ya..., semua putih, kot?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1100,Tuan Sim Tong Him [Kota Melaka],"*DAP champion*, barang naik."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1100,Dato' Seri Shahidan bin Kassim,"DAP, dia anak - tak ada demokrasi. Macam
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1100,1100,Tuan Sim Tong Him [Kota Melaka],"*DAP champion*, barang naik."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1100,1100,Dato' Seri Shahidan bin Kassim,"DAP, dia anak - tak ada demokrasi. Macam
 UMNO- *“Dulu, Kini dan Selamanya”*"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1100,ANNOTATION,[Ketawa]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1100,Dato' Seri Shahidan bin Kassim,"Okey, berhubung dengan *“Endless
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1100,1100,ANNOTATION,[Ketawa]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1100,1100,Dato' Seri Shahidan bin Kassim,"Okey, berhubung dengan *“Endless
 Posibilities”* dan juga impak masa hadapan. Ini ialah *“Endless Possibilities”* ialah masa
 hadapan. Kita berharap dalam tahun 2020, kita akan masuk ke tangga nombor 20 dalam
 CBI. Jadi, bila nama kita sudah berada di pasaran pemikiran antarabangsa, sudah pasti ia
@@ -612,34 +612,34 @@ buruk sangka. Bila kita pergi ke luar negara, kita mempunyai semangat, “*we fe
 kekitaan”, kita orang Malaysia. Balik di sini kita berbeza, tidak apa. Akan tetapi kalau pergi
 keluar negara pun kita berbeza, balik ke sini pun berbeza, itu bukan cara Malaysia dan
 bukan cara rakyat Malaysia."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1100,Puan Teresa Kok Suh Sim [Seputeh],"Tuan Yang di-Pertua, kita sudah jadi *copy-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1100,1100,Puan Teresa Kok Suh Sim [Seputeh],"Tuan Yang di-Pertua, kita sudah jadi *copy-
 cat*lah. Kita sudah ada *“Malaysia Truly Asia”*, sekarang mahu salin orang lain punya slogan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1100,Dato' Seri Shahidan bin Kassim,"Yang Berhormat Seputeh, saya jawab. Ini saya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1100,1100,Dato' Seri Shahidan bin Kassim,"Yang Berhormat Seputeh, saya jawab. Ini saya
 sebut sekali lagi ya, kita tak *copy* orang, kemungkinan orang *copy* kita"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1100,ANNOTATION,[Ketawa]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1100,Dato' Seri Shahidan bin Kassim,"Kita dengan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1100,1100,ANNOTATION,[Ketawa]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1100,1100,Dato' Seri Shahidan bin Kassim,"Kita dengan
 Israel, kita dengan Israel..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1100,Tuan M. Kulasegaran [Ipoh Barat],*Copy-cat*.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1100,Dato' Seri Shahidan bin Kassim,"Kita, kita - *shut up you*"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1100,ANNOTATION,[Ketawa]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1100,Dato' Seri Shahidan bin Kassim,"Kita
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1100,1100,Tuan M. Kulasegaran [Ipoh Barat],*Copy-cat*.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1100,1100,Dato' Seri Shahidan bin Kassim,"Kita, kita - *shut up you*"
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1100,1100,ANNOTATION,[Ketawa]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1100,1100,Dato' Seri Shahidan bin Kassim,"Kita
 memperkenalkan dalam bulan Januari. Israel memperkenalkan dalam bulan Mei. Kalau kita
 mengaji ke sekolah rendah pun, Januari dengan Mei itu ada perbezaan yang cukup nyata.
 Jadi, marilah sama-sama kita memberikan sokongan..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1100,Tuan Sim Tze Tzin [Bayan Baru],"Yang Berhormat Menteri, kita tiru, 1Malaysia,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1100,1100,Tuan Sim Tze Tzin [Bayan Baru],"Yang Berhormat Menteri, kita tiru, 1Malaysia,
 tiru 1Israel."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1100,Dato' Seri Shahidan bin Kassim,"...*“Malaysia Truly Asia, Endless Possibilities”*."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1100,Seorang Ahli,"Hei, duduklah."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1100,Dato' Seri Shahidan bin Kassim,"Ini *lawyer* tetapi peraturan mesyuarat tak
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1100,1100,Dato' Seri Shahidan bin Kassim,"...*“Malaysia Truly Asia, Endless Possibilities”*."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1100,1100,Seorang Ahli,"Hei, duduklah."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1100,1100,Dato' Seri Shahidan bin Kassim,"Ini *lawyer* tetapi peraturan mesyuarat tak
 faham."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1100,ANNOTATION,[Ketawa]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1100,Dato' Seri Shahidan bin Kassim,Saya ingat *pi* belajar balik sekali lagi ya?
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1100,Datuk Jumat bin Haji Idris [Sepanggar],"minta Menteri Pengangkutan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1100,1100,ANNOTATION,[Ketawa]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,■1100,1100,Dato' Seri Shahidan bin Kassim,Saya ingat *pi* belajar balik sekali lagi ya?
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1100,1100,Datuk Jumat bin Haji Idris [Sepanggar],"minta Menteri Pengangkutan
 menyatakan:
 (a) apakah punca begitu banyak penangguhan penerbangan awam
 yang berlaku semenjak kebelakangan ini; dan
 (b) apakah langkah kementerian untuk menyelesaikan perkara ini."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1100,Timbalan Menteri Pengangkutan [Datuk Ab. Aziz bin Kaprawi],"*Assalamualaikum warrahmatullahi wabarakatuh.* Tuan Yang di-Pertua, untuk makluman Ahli
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1100,1100,Timbalan Menteri Pengangkutan [Datuk Ab. Aziz bin Kaprawi],"*Assalamualaikum warrahmatullahi wabarakatuh.* Tuan Yang di-Pertua, untuk makluman Ahli
 Yang Berhormat Sepanggar, punca utama bagi begitu banyak penangguhan penerbangan
 awam yang berlaku semenjak kebelakangan ini ialah peningkatan mendadak pergerakan
 trafik sejak 12 bulan yang lalu iaitu daripada purata 750 pergerakan sehari kepada purata
@@ -663,7 +663,7 @@ dianggarkan melalui *value management exercise,* bernilai RM426 juta. Dijangka d
 pusat kawalan trafik udara yang baru ini, yang akan wujud di KLIA akan datang, akan dapat
 meningkatkan keupayaan kapasiti pengendalian pergerakan pesawat untuk jangka 20
 tahun ke hadapan. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1100,Datuk Jumat bin Haji Idris [Sepanggar],"Terima kasih Yang Berhormat Timbalan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1100,1100,Datuk Jumat bin Haji Idris [Sepanggar],"Terima kasih Yang Berhormat Timbalan
 Menteri. Pertamanya, saya hendak ucapkan syabas dan tahniah kepada Kementerian
 Pengangkutan yang telah dipilih semula sebagai *International Council Aviation Organization*
 pada hari Selasa lepas di Montreal, Kanada. Sesungguhnya ini satu pengiktirafan ke atas
@@ -673,8 +673,8 @@ kementerian. Ini kerana sebarang penangguhan, sebarang kelewatan, ia akan menjej
 *itinerary* penumpang, terutama sekali mereka yang terlibat dalam bidang perniagaan.
 Alasan-alasan yang dikemukakan lazimnya ialah masalah teknikal. Memanglah kalau
 masalah teknikal kita tidak boleh membantah kerana kita tidak mahu..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1100,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],Soalan?
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1100,Datuk Jumat bin Haji Idris [Sepanggar],"Keselamatan kita terjejas. Tuan Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1100,1100,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],Soalan?
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1100,1100,Datuk Jumat bin Haji Idris [Sepanggar],"Keselamatan kita terjejas. Tuan Yang
 di-Pertua, apakah kementerian tidak melihat isu-isu kehidupan sosial krew kabin ataupun
 *ground staff* MAS yang boleh menjadi punca penangguhan ataupun masalah-masalah yang
 setiap hari berlaku? Sebagai contoh, *Lion Air,* Indonesia, telah berlaku kemalangan pada
@@ -683,14 +683,14 @@ berlaku, maka ia akan menjejaskan keselamatan penumpang. Memang saya telah
 mendengar cakap-cakap di luar bahawa *social life cabin crew* ini yang sentiasa buat
 *clubbing* tengah malam dan *hangover* sebelah pagi. Ini kemungkinan juga menjejaskan
 perkhidmatan sistem penerbangan kita."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1100,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Ya, Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1100,1100,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Ya, Yang
 Berhormat Sepanggar."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1100,Datuk Jumat bin Haji Idris [Sepanggar],"Jadi Tuan Yang di-Pertua, tolonglah
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1100,1100,Datuk Jumat bin Haji Idris [Sepanggar],"Jadi Tuan Yang di-Pertua, tolonglah
 kementerian selesaikan masalah ini dan satu lagi banyak berlaku. Sebagai bukti banyak
 berlaku *hard landing* di mana kapal terbang itu menghentak kuat sehinggakan penumpang
 yang di belakang saya selalu terdengar, ‘lesen kopi ‘O’ kah? Jadi, minta kementerian
 memberikan jawapan. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1100,Datuk Ab. Aziz bin Kaprawi,"Pertama, saya ucap terima kasih atas ucapan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1100,1100,Datuk Ab. Aziz bin Kaprawi,"Pertama, saya ucap terima kasih atas ucapan
 tahniah daripada Yang Berhormat Sepanggar atas kejayaan Malaysia menduduki kerusi
 dalam *International Civil Aviation Organization Council* yang berpusat di Montreal, Kanada.
 Ini menunjukkan keyakinan masyarakat dunia kepada kepimpinan Yang Amat Berhormat
@@ -701,7 +701,7 @@ sebenarnya setakat ini tiada laporan mengenai masalah daripada krew pesawat. Cum
 kena memahami bahawa sejak kebelakangan ini, pergerakan pesawat bertambah dan ini
 disebabkan oleh beberapa perkembangan. Seperti pada tahun ini sahaja, enam *airlines*
 baru yang telah menggunakan atau mendarat di KLIA."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1110,Datuk Ab. Aziz bin Kaprawi,"(i) *Malindo Air*;
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1110,1110,Datuk Ab. Aziz bin Kaprawi,"(i) *Malindo Air*;
 (ii) *Air France*;
 (iii) *Thai Smile Airways*;
 (iv) *Turkish Airlines*;
@@ -721,7 +721,7 @@ setiap jam dan kadang-kadang ianya melebihi daripada 68.
 Untuk makluman statistik pada tahun ini, bulan November, permintaan untuk
 *landing* ataupun pergerakan melebihi jangkaan ataupun melebihi daripada kadarnya iaitu
 melebihi 1,050 permintaan pergerakan di KLIA. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1110,Tuan M. Kulasegaran [Ipoh Barat],"Terima kasih Tuan Yang di-Pertua, soalan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1110,1110,Tuan M. Kulasegaran [Ipoh Barat],"Terima kasih Tuan Yang di-Pertua, soalan
 tambahan. Tuan Yang di-Pertua, saya adalah satu di antara orang yang *victim* pada tiga
 minggu dulu bila saya mengambil kapal terbang MAS, di mana tiba-tiba penangguhan lebih
 dari dua jam. Saya difahamkan alasannya semasa kita dalam kapal terbang, selepas itu
@@ -739,17 +739,17 @@ penumpang tidak menggunakan tiket atau ini, dia lupus atau hapus dan tidak dikem
 Apakah usaha kementerian supaya kita tidak perlu tanya kalau kita tidak menggunakan tiket
 tersebut, bolehkah mengarahkan bahawa ia perlu dikembalikan kepada pembeli tiket
 tersebut. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1110,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Ya, sila
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1110,1110,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Ya, sila
 Yang Berhormat Menteri."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1110,Datuk Ab. Aziz bin Kaprawi,"Mengenai tiket ini adalah urusan komersial dengan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1110,1110,Datuk Ab. Aziz bin Kaprawi,"Mengenai tiket ini adalah urusan komersial dengan
 pihak *airlines*. Jadi saya boleh dapatkan jawapan bertulis untuk Yang Berhormat Ipoh Barat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1110,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Ya, saya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,■1110,1110,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Ya, saya
 jemput Tuan Sim Tze Tzin."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1110,Tuan Sim Tze Tzin [Bayan Baru],"minta Menteri Sumber Manusia menyatakan,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,■1110,1110,Tuan Sim Tze Tzin [Bayan Baru],"minta Menteri Sumber Manusia menyatakan,
 apakah dasar-dasar kerajaan tentang isu perumahan pekerja-pekerja asing. Bagaimanakah
 untuk menyelesaikan masalah pekerja asing yang membanjiri kawasan rumah kos rendah,
 rumah pangsa dan taman-taman perumahan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1110,Timbalan Menteri Sumber Manusia [Dato' Haji Ismail bin Haji Abd. Muttalib],"*Assalamualaikum warahmatullahi wabarakatuh*. Salam sejahtera dan salam 1Malaysia.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,■1110,1110,Timbalan Menteri Sumber Manusia [Dato' Haji Ismail bin Haji Abd. Muttalib],"*Assalamualaikum warahmatullahi wabarakatuh*. Salam sejahtera dan salam 1Malaysia.
 Yang Berhormat Tuan Yang di-Pertua, sebelum itu saya ingin mengalu-alukan
 kehadiran guru-guru dan pelajar Sekolah Menengah Kebangsaan Datuk Bendahara,
 Melaka dan tetamu kita. Yang Berhormat Tuan Yang di-Pertua, terima kasih kepada Yang
@@ -763,8 +763,8 @@ khas dalam penyediaan perumahan pekerja dalam sektor perladangan dan perlombonga
 termasuk pekerja asing. Sekiranya majikan mengambil keputusan untuk membina
 perumahan pekerja, majikan hendaklah membina mengikut seperti mana yang ditetapkan di
 bawah Peraturan-peraturan Standard-standard Perumahan dan Kemudahan Pekerja 1990"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1110,ANNOTATION,[Akta 446]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1110,Timbalan Menteri Sumber Manusia [Dato' Haji Ismail bin Haji Abd. Muttalib],"*.* Akta ini Tuan Yang di-Pertua, yang mempunyai sebanyak enam bahagian dan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,■1110,1110,ANNOTATION,[Akta 446]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,■1110,1110,Timbalan Menteri Sumber Manusia [Dato' Haji Ismail bin Haji Abd. Muttalib],"*.* Akta ini Tuan Yang di-Pertua, yang mempunyai sebanyak enam bahagian dan
 34 seksyen. Ianya tidak termasuk Sabah dan Sarawak, juga tidak termasuk Bintulu, bos
 saya.
 Mematuhi semua peraturan di bawah seperti menyediakan bekalan air, bekalan
@@ -779,9 +779,9 @@ Berhubung dengan masalah pekerja asing membanjiri rumah kos rendah, rumah pangsa
 dan taman perumahan, ia dimaklumkan bahawa Kementerian Sumber Manusia (KSM) tidak
 diperuntukkan kuasa untuk mengambil tindakan terhadap pendatang asing. Jadi kita
 melihat..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1110,Seorang Ahli,
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1110,ANNOTATION,[Bercakap tanpa menggunakan pembesar suara]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1110,Dato' Haji Ismail bin Haji Abd. Muttalib [Maran],"Ya, ya, perumahan ini. Kita
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,■1110,1110,Seorang Ahli,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,■1110,1110,ANNOTATION,[Bercakap tanpa menggunakan pembesar suara]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,■1110,1110,Dato' Haji Ismail bin Haji Abd. Muttalib [Maran],"Ya, ya, perumahan ini. Kita
 melihat bahawa tanggungjawab ini bukan saja terletak kepada Kementerian Sumber
 Manusia, tetapi ialah tanggungjawab bersama. Isu negara tentang pekerja asing, sebab
 itulah kita mengharapkan supaya kita bersama-sama mencari jalan bagaimana kita boleh
@@ -803,20 +803,20 @@ memberi kerjasama kepada kerajaan dengan melaporkan kebanjiran pendatang tanpa i
 di kawasan perumahan masing-masing kepada Jabatan Imigresen supaya operasi
 menangkap dan menahan pendatang tanpa izin dapat dijalankan. Terima kasih Tuan Yang
 di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1110,Tuan Sim Tze Tzin [Bayan Baru],"Terima kasih Tuan Yang di-Pertua. Saya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,■1110,1110,Tuan Sim Tze Tzin [Bayan Baru],"Terima kasih Tuan Yang di-Pertua. Saya
 terima jawapan daripada Menteri Sumber Manusia bahawa permintaan sangat tinggi di
 kalangan sektor-sektor untuk pekerja asing. Jadi kita akan *foresee*, kita *expect* ramai lagi
 pekerja asing yang akan masuk, berpusu-pusu masuk ke Malaysia. Juga ada laporan
 bahawa terdapat 1.4 juta Bangladesh, pekerja asing dari Bangladesh akan masuk ke
 Malaysia."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1120,Tuan Sim Tze Tzin [Bayan Baru],"Jadi, masalah sekarang adalah tidak ada polisi kerajaan yang jelas bahawa kena
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,■1120,1120,Tuan Sim Tze Tzin [Bayan Baru],"Jadi, masalah sekarang adalah tidak ada polisi kerajaan yang jelas bahawa kena
 sediakan tempat tinggal untuk pekerja-pekerja asing. Itu dibiarkan, mereka dibiarkan begitu
 sahaja. Masuk, tidak apa, bagi visa masuk. Akan tetapi selepas itu dibiarkan. Jadi, rakyat
 terpaksa tanggung masalah ini. Mereka berpusu-pusu masuk ke kampung. Sekarang di
 kawasan Bayan Baru ada Kampung Indonesia, ada Kampung Bangla."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1120,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Ya,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,■1120,1120,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Ya,
 soalan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1120,Tuan Sim Tze Tzin [Bayan Baru],"Jadi, bukan sahaja kampung juga kawasan-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,■1120,1120,Tuan Sim Tze Tzin [Bayan Baru],"Jadi, bukan sahaja kampung juga kawasan-
 kawasan perumahan pangsapuri sehingga banglo. Di sewa banglo tinggal 80 orang. Ini
 masalahnya. Mereka dibiarkan begitu sahaja, tidak ada polisi jelas. Jadi, saya tengok
 masalah ini perlu ditangani oleh kerajaan dengan serius terutamanya di sektor pembuatan
@@ -829,7 +829,7 @@ Kerajaan negeri atau kerajaan tempatan terpaksa *clean up the mess.* Dia terpaks
 penyelesaian. Jadi, saya minta bolehkah Kerajaan Persekutuan tubuhkan *taskforce,* betul-
 betul menyelesaikan masalah ini kerana ini terlalu ramai, berjuta-juta orang terlibat. Terima
 kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1120,Dato' Haji Ismail bin Haji Abd. Muttalib,"Terima kasih Tuan Yang di-Pertua,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,■1120,1120,Dato' Haji Ismail bin Haji Abd. Muttalib,"Terima kasih Tuan Yang di-Pertua,
 terima kasih Yang Berhormat Bayan Baru. Saya sudah jelaskan tadi bahawa andai kata
 majikan ingin mengambil pekerja asing, menjadi syarat kepada dia mestilah menyediakan
 perumahan. Ini salah satu syarat yang mana akan kita lihat apabila mereka memohon JCS.
@@ -855,7 +855,7 @@ perumahan-perumahan? Penduduk perumahan mengatakan bahawa cuba atas masalah
 pendatang asing ini. Berikan keutamaan kepada pekerja kita. Beritahu kepada saya supaya
 kita boleh bawa dalam perbincangan antara kementerian-kementerian. Terima kasih Yang
 Berhormat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1120,Puan Hajah Normala binti Abdul Samad [Pasir Gudang],"Terima kasih Tuan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,■1120,1120,Puan Hajah Normala binti Abdul Samad [Pasir Gudang],"Terima kasih Tuan
 Yang di-Pertua. Yang Berhormat Timbalan Menteri, setujukah Yang Berhormat Timbalan
 Menteri kalau saya katakan sebenarnya di dalam usaha untuk menangani penempatan
 pekerja-pekerja asing ini, ada di beberapa negeri telah dibuat perbincangan bersama untuk
@@ -864,11 +864,11 @@ tentangan daripada pengilang-pengilang kerana kedudukan kawasan tempat tinggal
 pekerja-pekerja asing itu yang agak tinggi dan cas yang dikenakan agak tinggi kepada
 pihak majikan di dalam penyediaan tempat tinggal itu. Terima kasih Yang Berhormat
 Timbalan Menteri."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1120,Dato' Haji Ismail bin Haji Abd. Muttalib,"Terima kasih Tuan Yang di-Pertua,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,■1120,1120,Dato' Haji Ismail bin Haji Abd. Muttalib,"Terima kasih Tuan Yang di-Pertua,
 terima kasih..., Yang Berhormat daripada mana tadi?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1120,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,■1120,1120,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Yang
 Berhormat Pasir Gudang."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1120,Dato' Haji Ismail bin Haji Abd. Muttalib,"Yang Berhormat Pasir Gudang. Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,■1120,1120,Dato' Haji Ismail bin Haji Abd. Muttalib,"Yang Berhormat Pasir Gudang. Yang
 Berhormat, perempuan ini Tuan Yang di-Pertua saya tidak berapa hendak - tetapi tidak
 mengapa. Saya beri sokongan pada wanita tetapi tak payah pandang lama sangat.
 Tuan Yang di-Pertua, sebenarnya saya ucapkan terima kasih banyak dengan
@@ -886,20 +886,20 @@ jangan lupa bahawa keselesaan hidup pekerja-pekerja adalah menyumbang kepada
 kejayaan syarikat kita. Ini tidak boleh dinafikan.
 Umpamanya bilangan ladang dan mempunyai perumahan mengikut negeri. Negeri
 Sembilan saya bacakan Tuan Yang di-Pertua. Boleh bacakan semua sekali?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1120,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Tidak
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,■1120,1120,Timbalan Yang di-Pertua [Dato' Haji Ismail bin Haji Mohamed Said],"Tidak
 payah lah. Jawapan bertulis sahaja."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1120,Dato' Haji Ismail bin Haji Abd. Muttalib,"Negeri Sembilan hingga Sarawak kita
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,■1120,1120,Dato' Haji Ismail bin Haji Abd. Muttalib,"Negeri Sembilan hingga Sarawak kita
 ada bilangan ladang 3023 dan ladang yang ada perumahan ialah 2,688. Jadi, bilangan
 rumah yang telah dibina di ladang-ladang adalah 40,082 rumah. Maknanya tidak boleh
 nafikan usaha yang telah dibuat. Akan tetapi, oleh kerana ramainya pendatang asing ini, 2.1
 juta maka sudah tentulah usaha harus dibuat bersama oleh kita melalui bersama dengan
 kementerian dan kerajaan sebelumnya. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1120,Dato' Ir. Nawawi bin Ahmad [Langkawi],"minta Menteri Perdagangan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1120,1120,Dato' Ir. Nawawi bin Ahmad [Langkawi],"minta Menteri Perdagangan
 Antarabangsa dan Industri menyatakan, apakah benar kerajaan akan menggantikan
 kenderaan kerajaan dari jenis *Proton Perdana* kepada jenis *Honda Accord*. Adakah ini
 menunjukkan bahawa kerajaan tidak menyokong syarikat Proton sebagai sebuah syarikat
 kereta nasional."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1120,Timbalan Menteri Perdagangan Antarabangsa dan Industri [Datuk Ir. Haji Hamim bin Samuri],"*Assalamualaikum warahmatullahi wabarakatuh.* Tuan Yang di-Pertua,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1120,1120,Timbalan Menteri Perdagangan Antarabangsa dan Industri [Datuk Ir. Haji Hamim bin Samuri],"*Assalamualaikum warahmatullahi wabarakatuh.* Tuan Yang di-Pertua,
 tahniah dan terima kasih kepada Yang Berhormat Langkawi kerana prihatin, minat serta
 sayang kepada Proton.
 Tuan Yang di-Pertua, keputusan untuk menghentikan pengeluaran model Proton
@@ -916,7 +916,7 @@ pada 11 September 2013 telah pun bersetuju supaya model Proton Perdana baru yang
 dibangunkan berdasarkan platform *Honda Accord* dijadikan kereta rasmi kerajaan. Ini jelas
 menunjukkan bahawa kerajaan terus menyokong pembangunan kereta nasional. Sekian,
 terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1120,Dato' Ir. Nawawi bin Ahmad [Langkawi],"Tahniah kepada kerajaan kerana cuba
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1120,1120,Dato' Ir. Nawawi bin Ahmad [Langkawi],"Tahniah kepada kerajaan kerana cuba
 untuk meningkatkan kualiti Proton Perdana dengan kolaborasi bersama dengan Honda.
 Soalan tambahan saya ialah apakah Proton Perdana baru yang akan dibina ini akan
 menggunakan bahan-bahan tempatan yang bercirikan produk tempatan supaya vendor-
@@ -925,23 +925,23 @@ Di samping itu, apakah rancangan kerajaan dan Proton untuk meningkatkan kualiti
 dengan lebih baik dan juga mengurangkan kos agar dapat bersaing di pasaran tempatan
 dan juga luar negara? Apakah perancangan Proton di masa hadapan tentang kereta hibrid
 dan juga *electric vehicle.* Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1120,Datuk Ir. Haji Hamim bin Samuri,"Terima kasih Yang Berhormat Langkawi. Kalau
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1120,1120,Datuk Ir. Haji Hamim bin Samuri,"Terima kasih Yang Berhormat Langkawi. Kalau
 mengikut program yang diunjurkan oleh pihak Proton khususnya bagi kereta Perdana
 selama dua tahun akhirnya akan menggunakan sepenuhnya bahan serta produk tempatan
 dan dijangkakan bermula pada tahun 2015 menggunakan produk atau pun bahan
 tempatan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1130,Datuk Ir. Haji Hamim bin Samuri,"Sudah tentu ini akan menjadi satu pemangkin kepada pengeluaran produk Proton
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1130,1130,Datuk Ir. Haji Hamim bin Samuri,"Sudah tentu ini akan menjadi satu pemangkin kepada pengeluaran produk Proton
 bukan sahaja di dalam negara Malaysia tetapi luar negara dan akan juga menepati
 keperluan semasa termasuk seperti saya sebut tadi dengan mengaplikasikan EV atau
 *electric vehicle* seperti mana yang disebutkan tadi. Ini bukan sahaja setakat hibrid malahan
 ada rancangan untuk menggunakan kenderaan berasaskan kepada enjin elektrik dan
 banyak lagi. Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1130,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Baiklah
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1130,1130,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Baiklah
 Yang Berhormat. Selesai sudah sesi pertanyaan-pertanyaan bagi jawab lisan. Yang
 Berhormat Menteri."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1130,ANNOTATION,[Masa untuk Pertanyaan-pertanyaan bagi Jawab Lisan tamat]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1130,1130,ANNOTATION,[Masa untuk Pertanyaan-pertanyaan bagi Jawab Lisan tamat]
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Menteri di Jabatan Perdana Menteri [Dato' Seri Shahidan bin Kassim],"Tuan
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Menteri di Jabatan Perdana Menteri [Dato' Seri Shahidan bin Kassim],"Tuan
 Yang di-Pertua, saya mohon mencadangkan:
 “Bahawa mengikut Peraturan Mesyuarat 12(1), Majlis
 Mesyuarat pada hari ini tidak akan ditangguhkan sehingga selesai
@@ -951,31 +951,31 @@ sehingga selesai ucapan-ucapan penangguhan dan selepas itu Majlis
 Mesyuarat akan ditangguhkan sehingga satu tarikh yang tidak
 ditetapkan. “"
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Timbalan Menteri di Jabatan Perdana Menteri [Dato’ Razali bin Ibrahim],"Tuan
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Timbalan Menteri di Jabatan Perdana Menteri [Dato’ Razali bin Ibrahim],"Tuan
 Yang di-Pertua, saya mohon menyokong."
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Ahli-ahli
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Ahli-ahli
 Yang Berhormat, sekarang saya kemukakan masalah kepada Majlis untuk diputuskan.
 Masalahnya ialah usul seperti yang dikemukakan tadi hendaklah disetujukan."
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,ANNOTATION,[Usul dikemukakan bagi diputuskan; dan disetujukan]
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,ANNOTATION,[Usul dikemukakan bagi diputuskan; dan disetujukan]
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Tuan M. Kulasegaran [Ipoh Barat],Peraturan Mesyuarat.
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Tuan M. Kulasegaran [Ipoh Barat],Peraturan Mesyuarat.
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Tuan Chong Chieng Jen [Bandar Kuching],
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Tuan Chong Chieng Jen [Bandar Kuching],
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,ANNOTATION,[Bangun]
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,ANNOTATION,[Bangun]
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Ya, Yang
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Ya, Yang
 Berhormat Ipoh Barat."
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Tuan M. Kulasegaran [Ipoh Barat],"Peraturan Mesyuarat Tuan Yang di-Pertua.
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Tuan M. Kulasegaran [Ipoh Barat],"Peraturan Mesyuarat Tuan Yang di-Pertua.
 Dua hal Tuan Yang di-Pertua. Satu ialah yang mana ..."
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Peraturan
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Peraturan
 berapa?"
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Tuan M. Kulasegaran [Ipoh Barat],"Peraturan Mesyuarat 20. Tuan Yang di-
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Tuan M. Kulasegaran [Ipoh Barat],"Peraturan Mesyuarat 20. Tuan Yang di-
 Pertua, dua hal. Satu adalah apabila Menteri-Menteri mengatakan jawapan bertulis akan
 diberi, pada sesi yang dahulu, Menteri telah mengatakan jawapan bertulis akan diberi tetapi
 sehingga sekarang, belum lagi diberikan. Bolehkah satu arahan dibuat dan daripada
@@ -990,27 +990,27 @@ pengenalan plastik berumur 12 tahun”.*
 Tuan Yang di-Pertua, saya mendapat IC biru pada lebih kurang umur 15 tahun
 sahaja. Semasa"
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,ANNOTATION,[Disampuk]
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,ANNOTATION,[Disampuk]
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Tuan M. Kulasegaran [Ipoh Barat],Umur 12 tahun saya mendapat IC merah
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Tuan M. Kulasegaran [Ipoh Barat],Umur 12 tahun saya mendapat IC merah
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,ANNOTATION,[Dewan riuh]
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,ANNOTATION,[Dewan riuh]
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Tuan M. Kulasegaran [Ipoh Barat],"Saya
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Tuan M. Kulasegaran [Ipoh Barat],"Saya
 dapat IC merah. Itu yang benar. Itu mustahak Tuan Yang di-Pertua kerana *we cannot
 change the truth.* Semasa umur 12 tahun, saya mendapat IC merah, saya pohon jasa baik
 kementerian supaya mendapat IC merah, itu adalah tulen. Dengan *we do not live for the
 enjoyment and not the truth.* Bolehkah ia satu arahan dibuat mengenai perkara berikut?"
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Ya, Ahli-
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Ya, Ahli-
 ahli Yang Berhormat sekalian, pertama mengenai jawapan-jawapan yang perlu dihantar,
 jawapan bertulis oleh Yang Berhormat Menteri..."
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Tuan Chong Chieng Jen [Bandar Kuching],
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Tuan Chong Chieng Jen [Bandar Kuching],
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,ANNOTATION,[Bangun]
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,ANNOTATION,[Bangun]
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"...Dan
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"...Dan
 kementerian-kementerian yang berkenaan. Sebagaimana arahan Tan Sri Speaker yang
 lalu, setiap kali kita mengadakan Mesyuarat mestilah disegerakan jawapan tersebut. Saya
 percaya pihak Menteri dan juga semua kementerian dan pegawai mengambil ingatan ini.
@@ -1019,148 +1019,148 @@ mendapat kebenaran daripada pihak Dewan. Saya ingatkan sekali lagi, kementerian 
 juga Menteri dan sesiapa sahaja yang hendak berurusan mengenai segala risalah-risalah
 hendaklah dikemukakan terlebih dahulu kepada Setiausaha Dewan untuk kelulusan Dewan."
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Tuan Chong Chieng Jen [Bandar Kuching],"Tuan Yang di-Pertua, peraturan
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Tuan Chong Chieng Jen [Bandar Kuching],"Tuan Yang di-Pertua, peraturan
 mesyuarat."
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Tuan M. Kulasegaran [Ipoh Barat],"Tuan Yang di-Pertua, sekejap."
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Tuan M. Kulasegaran [Ipoh Barat],"Tuan Yang di-Pertua, sekejap."
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Ya, ya.
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Ya, ya.
 Pihak kementerian berkenaan akan membetulkan."
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Tuan M. Kulasegaran [Ipoh Barat],Terima kasih.
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Tuan M. Kulasegaran [Ipoh Barat],Terima kasih.
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],Ya.
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],Ya.
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Tuan Chong Chieng Jen [Bandar Kuching],"Saya ada satu usul di bawah
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Tuan Chong Chieng Jen [Bandar Kuching],"Saya ada satu usul di bawah
 Peraturan Mesyuarat 18(1), hendak minta Dewan ini membincangkan masalah yang timbul
 di Hospital Umum Sarawak yang mana daripada lima buah *radiotherapy machine,* tiga buah
 telah rosak dan sekarang, lebih kurang 140 pesakit menunggu hendak dirawat oleh
 radioterapi."
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Ya, Yang
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Ya, Yang
 Berhormat Bandar Kuching."
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Tuan Chong Chieng Jen [Bandar Kuching],"Saya telah terima satu surat
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Tuan Chong Chieng Jen [Bandar Kuching],"Saya telah terima satu surat
 daripada Yang di-Pertua bahawa - biarlah saya bacakan apa yang dituliskan. Saya
 difahamkan..."
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Yang
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Yang
 Berhormat Bandar Kuching, tidak perlu baca sebab saya pun ada menerimanya."
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Tuan Chong Chieng Jen [Bandar Kuching],Apa yang dikatakan...
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Tuan Chong Chieng Jen [Bandar Kuching],Apa yang dikatakan...
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Yang
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Yang
 Berhormat Bandar Kuching."
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Tuan Chong Chieng Jen [Bandar Kuching],
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Tuan Chong Chieng Jen [Bandar Kuching],
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,ANNOTATION,"[Bercakap tanpa menggunakan
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,ANNOTATION,"[Bercakap tanpa menggunakan
 pembesar suara]"
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Tidak
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Tidak
 perlu baca sebab surat ini daripada kamar Tuan Yang di-Pertua dan ada pada saya."
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Tuan Chong Chieng Jen [Bandar Kuching],Saya tahu.
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Tuan Chong Chieng Jen [Bandar Kuching],Saya tahu.
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Kalau
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Kalau
 tahu dan faham, sila duduk."
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Tuan Chong Chieng Jen [Bandar Kuching],Tuan Yang di-Pertua...
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Tuan Chong Chieng Jen [Bandar Kuching],Tuan Yang di-Pertua...
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Yang
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Yang
 Berhormat Bandar Kuching, jangan berdegil-degil Yang Berhormat Bandar Kuching"
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,ANNOTATION,"[Dewan
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,ANNOTATION,"[Dewan
 riuh]"
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],Yang Berhormat Bandar Kuching.
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],Yang Berhormat Bandar Kuching.
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Tuan Chong Chieng Jen [Bandar Kuching],"Tuan Yang di-Pertua, saya berasa
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Tuan Chong Chieng Jen [Bandar Kuching],"Tuan Yang di-Pertua, saya berasa
 bahawa Tuan Yang di-Pertua telah tertipu oleh kementerian"
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,ANNOTATION,[Disampuk]
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,ANNOTATION,[Disampuk]
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Tuan Chong Chieng Jen [Bandar Kuching],"Bolehkah Tuan
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Tuan Chong Chieng Jen [Bandar Kuching],"Bolehkah Tuan
 Yang di-Pertua bukakan"
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,ANNOTATION,[Merujuk kepada pembesar suara yang dimatikan]
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,ANNOTATION,[Merujuk kepada pembesar suara yang dimatikan]
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Tuan Chong Chieng Jen [Bandar Kuching],"Biarlah saya
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Tuan Chong Chieng Jen [Bandar Kuching],"Biarlah saya
 habiskan apa yang..."
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,ANNOTATION,[Disampuk]
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,ANNOTATION,[Disampuk]
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Tuan Chong Chieng Jen [Bandar Kuching],*.*
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Tuan Chong Chieng Jen [Bandar Kuching],*.*
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Yang
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Yang
 Berhormat Bandar Kuching, saya tidak benarkan. Yang Berhormat Bandar Kuching, duduk
 Yang Berhormat."
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Tuan Chong Chieng Jen [Bandar Kuching],"Tuan Yang di-Pertua, tetapi..."
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Tuan Chong Chieng Jen [Bandar Kuching],"Tuan Yang di-Pertua, tetapi..."
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Yang
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Yang
 Berhormat Bandar Kuching."
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Tuan Chong Chieng Jen [Bandar Kuching],"Soal mengenai nyawa pesakit-
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Tuan Chong Chieng Jen [Bandar Kuching],"Soal mengenai nyawa pesakit-
 pesakit kanser"
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,ANNOTATION,[Disampuk]
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,ANNOTATION,[Disampuk]
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Yang
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Yang
 Berhormat Bandar Kuching. Apabila Tuan Yang di-Pertua bercakap, seorang Ahli Yang
 Berhormat lain mesti duduk, diam. Peraturan mesyuarat Yang Berhormat Bandar Kuching."
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Tuan Chong Chieng Jen [Bandar Kuching],Tuan Yang di-Pertua.
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Tuan Chong Chieng Jen [Bandar Kuching],Tuan Yang di-Pertua.
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Yang
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Yang
 Berhormat Bandar Kuching, sekali lagi - kali terakhir saya ingatkan Yang Berhormat Bandar
 Kuching, sila duduk!"
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Tuan Chong Chieng Jen [Bandar Kuching],"Saya berdiri di atas peraturan
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Tuan Chong Chieng Jen [Bandar Kuching],"Saya berdiri di atas peraturan
 mesyuarat."
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Yang
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Yang
 Berhormat Bandar Kuching, arahan saya, sila duduk! Keputusan Pengerusi dan Speaker
 adalah muktamad."
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Tuan Chong Chieng Jen [Bandar Kuching],Tuan Yang di-Pertua...
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Tuan Chong Chieng Jen [Bandar Kuching],Tuan Yang di-Pertua...
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Silakan
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Silakan
 Bentara kerana Yang Berhormat Bandar Kuching berdegil-degil"
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,ANNOTATION,[Disampuk]
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,ANNOTATION,[Disampuk]
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Bagi dia rehat.
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Bagi dia rehat.
 Silakan Bentara."
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Tuan Chong Chieng Jen [Bandar Kuching],"Tuan Yang di-Pertua, Tuan Yang
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Tuan Chong Chieng Jen [Bandar Kuching],"Tuan Yang di-Pertua, Tuan Yang
 di-Pertua tertipu oleh..."
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,ANNOTATION,[Disampuk]
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,ANNOTATION,[Disampuk]
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Yang
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Yang
 Berhormat Bandar Kuching, saya minta Yang Berhormat duduk. Yang Berhormat sudah
 tahu bahawa Peraturan Mesyuarat 18(1) ini telah ditolak dalam Kamar Tan Sri Speaker.
 Jangan berdegil-degil lagi Yang Berhormat Bandar Kuching. Saya sudah beritahu, sila
 duduk. Kalau tidak duduk, saya kata sila berehat, keluar dari Dewan."
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Tuan Lim Kit Siang [Gelang Patah],Tuan Yang di-Pertua...
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Tuan Lim Kit Siang [Gelang Patah],Tuan Yang di-Pertua...
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],Betul!
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],Betul!
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Tuan Lim Kit Siang [Gelang Patah],"...Biarkan Yang Berhormat untuk habiskan
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Tuan Lim Kit Siang [Gelang Patah],"...Biarkan Yang Berhormat untuk habiskan
 apa yang dia hendak cakapkan berkaitan..."
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Saya
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Saya
 hormat Yang Berhormat Gelang Patah dan kerana saya pun menerima segala jawapan-
 jawapan yang telah diterima, yang telah disediakan oleh pihak kementerian, makna..."
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Tuan Chong Chieng Jen [Bandar Kuching],
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Tuan Chong Chieng Jen [Bandar Kuching],
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,ANNOTATION,"[Bercakap tanpa menggunakan
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,ANNOTATION,"[Bercakap tanpa menggunakan
 pembesar suara]"
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Yang
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Yang
 Berhormat Bandar Kuching, Yang Berhormat Bandar Kuching, duduk! Yang Berhormat
 Bandar Kuching, duduk. Saya beri peluang Yang Berhormat Bandar Kuching duduk untuk
 saya jelaskan.
@@ -1173,53 +1173,53 @@ semasa.
 Jadi Yang Berhormat Bandar Kuching menganggap bahawa kementerian telah
 menipu Dewan, Tan Sri Speaker adalah tidak munasabah."
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Tuan Chong Chieng Jen [Bandar Kuching],Tuan Yang di-Pertua...
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Tuan Chong Chieng Jen [Bandar Kuching],Tuan Yang di-Pertua...
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Jadi,
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Jadi,
 sekali lagi..."
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Tuan Chong Chieng Jen [Bandar Kuching],...Saya cakap.
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Tuan Chong Chieng Jen [Bandar Kuching],...Saya cakap.
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Tidak
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Tidak
 perlu panjang-panjang. Peraturan Mesyuarat 18(1) tidak perlu panjang-panjang."
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Tuan Chong Chieng Jen [Bandar Kuching],
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Tuan Chong Chieng Jen [Bandar Kuching],
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,ANNOTATION,"[Bercakap tanpa menggunakan
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,ANNOTATION,"[Bercakap tanpa menggunakan
 pembesar suara]"
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Yang
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,11.31 pg.,1131,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Yang
 Berhormat Bandar Kuching, ini hari terakhir kita bermesyuarat. Jadi saya minta Yang
 Berhormat Bandar Kuching patuh pada peraturan mesyuarat. Terima kasih."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1138,Timbalan Menteri Kewangan [Datuk Haji Ahmad bin Haji Maslan],"Tuan
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,11.38 pg.,1138,Timbalan Menteri Kewangan [Datuk Haji Ahmad bin Haji Maslan],"Tuan
 Timbalan Yang di-Pertua"
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1138,ANNOTATION,[Disampuk]
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1138,Timbalan Menteri Kewangan [Datuk Haji Ahmad bin Haji Maslan],Tuan Yang di-Pertua
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1138,ANNOTATION,[Disampuk]
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1138,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Ya, terima
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,11.38 pg.,1138,ANNOTATION,[Disampuk]
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,11.38 pg.,1138,Timbalan Menteri Kewangan [Datuk Haji Ahmad bin Haji Maslan],Tuan Yang di-Pertua
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,11.38 pg.,1138,ANNOTATION,[Disampuk]
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,11.38 pg.,1138,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Ya, terima
 kasih Yang Berhormat Pokok Sena."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1138,Dato’ Haji Mahfuz bin Haji Omar [Pokok Sena],"Duduk sudah berapa penggal
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,11.38 pg.,1138,Dato’ Haji Mahfuz bin Haji Omar [Pokok Sena],"Duduk sudah berapa penggal
 tidak faham Kerusi itu Kerusi Tuan Yang di-Pertua."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1138,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Ya, saya
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,11.38 pg.,1138,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Ya, saya
 sudah ucap terima kasih."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1138,Datuk Haji Ahmad bin Haji Maslan,"Terima kasih, terima kasih."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1138,Dato’ Haji Mahfuz bin Haji Omar [Pokok Sena],"Walaupun jawatannya Timbalan
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,11.38 pg.,1138,Datuk Haji Ahmad bin Haji Maslan,"Terima kasih, terima kasih."
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,11.38 pg.,1138,Dato’ Haji Mahfuz bin Haji Omar [Pokok Sena],"Walaupun jawatannya Timbalan
 Yang di-Pertua tetapi dia melaksanakan tugas Tuan Yang di-Pertua. Kena faham. Timbalan
 Menteri pun tidak faham"
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1138,ANNOTATION,[Dewan riuh]
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1138,Dato’ Haji Mahfuz bin Haji Omar [Pokok Sena],Hormat...
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1138,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Yang
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,11.38 pg.,1138,ANNOTATION,[Dewan riuh]
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,11.38 pg.,1138,Dato’ Haji Mahfuz bin Haji Omar [Pokok Sena],Hormat...
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,11.38 pg.,1138,Timbalan Yang di-Pertua [Dato’ Haji Ismail bin Haji Mohamed Said],"Yang
 Berhormat Pokok Sena, sudah didaftarkan ucapan Yang Berhormat Pokok Sena. Sila, Yang
 Berhormat Menteri."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1139,Timbalan Menteri Kewangan [Datuk Haji Ahmad bin Haji Maslan],
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1139,ANNOTATION,[Ketawa]
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1139,Timbalan Menteri Kewangan [Datuk Haji Ahmad bin Haji Maslan],"Tuan Yang di-Pertua, saya mohon mencadangkan,
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,11.39 pg.,1139,Timbalan Menteri Kewangan [Datuk Haji Ahmad bin Haji Maslan],
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,11.39 pg.,1139,ANNOTATION,[Ketawa]
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,11.39 pg.,1139,Timbalan Menteri Kewangan [Datuk Haji Ahmad bin Haji Maslan],"Tuan Yang di-Pertua, saya mohon mencadangkan,
 “Bahawa Majlis ini mengambil ketetapan iaitu menurut kuasa
 yang diletakkan padanya oleh seksyen 11, subseksyen 2, Akta Kastam
 1967 supaya Perintah Duti Kastam yang dibentangkan di hadapan Majlis
 ini sebagai Kertas Statut Bil. ST.47, ST.48, ST.49, ST.50, dan ST.51
 tahun 2013 disahkan.”"
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1140,Timbalan Menteri Kewangan [Datuk Haji Ahmad bin Haji Maslan],"Pertama Perintah Kastam, duti anti-lambakan sementara 2013 PUA232/2013,
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1140,1140,Timbalan Menteri Kewangan [Datuk Haji Ahmad bin Haji Maslan],"Pertama Perintah Kastam, duti anti-lambakan sementara 2013 PUA232/2013,
 bertarikh 19 Julai 2013. Kertas statut bilangan ST.47. Perintah ini diwartakan bertujuan
 untuk mengenakan duti anti-lambakan sementara ke atas *electrolytic tinplates* yang diimport
 dari Negara Republik China pada kadar di antara 7.4% hingga 16% dan Republik Korea,
@@ -1249,9 +1249,9 @@ tempatan yang terbukti telah menerima kemudaratan material akibat kemasukan *ste
 rot* daripada negara-negara terlibat. Duti anti-lambakan ini dibuat selaras dengan peraturan
 di bawah Akta Duti Timbal Balas dan Anti-Lambakan 1993 dan berkuat kuasa selama lima
 tahun mulai 20 Februari 2013 hingga 19 Februari 2018."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1140,ANNOTATION,"[Timbalan Yang di-Pertua (Datuk Ronald Kiandee) mempengerusikan
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1140,1140,ANNOTATION,"[Timbalan Yang di-Pertua (Datuk Ronald Kiandee) mempengerusikan
 Mesyuarat]"
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1140,Timbalan Menteri Kewangan [Datuk Haji Ahmad bin Haji Maslan],"Keempat, perintah kastam duti anti-lambakan sementara (No.2) 2012,
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1140,1140,Timbalan Menteri Kewangan [Datuk Haji Ahmad bin Haji Maslan],"Keempat, perintah kastam duti anti-lambakan sementara (No.2) 2012,
 PUA456/2012 bertarikh 21 Disember 2013, kertas statut bilangan ST.50. Perintah ini
 diwartakan untuk mengenakan duti anti-lambakan sementara ke atas *biaxially oriented
 polypropylene* (BOPP) yang diimport daripada Negara *Chinese Taipei*, Thailand, Republik
@@ -1271,12 +1271,12 @@ kemudaratan material akibat kemasukan PET dari negara terlibat. Pengenaan duti a
 lambakan ini dibuat selaras dengan peraturan di bawah Akta Duti Timbal Balas dan Anti-
 Lambakan 1993 dan berkuat kuasa selama lima tahun mulai 21 April 2011 hingga 20 April
 2016. Terima kasih."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1140,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Ada yang menyokong?
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1140,Timbalan Menteri di Jabatan Perdana Menteri [Dato’ Razali bin Ibrahim],"Saya
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1140,1140,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Ada yang menyokong?
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1140,1140,Timbalan Menteri di Jabatan Perdana Menteri [Dato’ Razali bin Ibrahim],"Saya
 mohon menyokong."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1140,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Ahli-Ahli Yang Berhormat,
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1140,1140,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Ahli-Ahli Yang Berhormat,
 masalahnya sekarang terbuka untuk dibahaskan."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1145,Dato' Kamarudin bin Jaffar [Tumpat],"Terima kasih Tuan Yang di-Pertua.
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,11.45 pg.,1145,Dato' Kamarudin bin Jaffar [Tumpat],"Terima kasih Tuan Yang di-Pertua.
 Terima kasih Yang Berhormat Timbalan Menteri kerana membentangkan usul-usul apa
 yang saya ikuti tadi melibatkan sebahagiannya ialah untuk mengenakan Duti Timbal Balas
 dan Anti Lambakan. Ini bukan pertama kali perkara ini dibentangkan, mungkin pada tiap-
@@ -1302,8 +1302,8 @@ Jadi, di dalam konteks ini saya ingin merayu dan juga bertanya kepada Yang
 Berhormat Timbalan Menteri tentang apakah pendirian terkini kerajaan berkaitan dengan
 TPPA ini dan apakah implikasi nanti kepada kuasa melindungi industri negara ini jika kita
 menandatangani TPPA ini. Terima kasih Tuan Yang di-Pertua."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1145,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Yang Berhormat Kepong.
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1148,Dr. Tan Seng Giaw [Kepong],"Tuan Yang di-Pertua, Yang Berhormat Tumpat
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,11.45 pg.,1145,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],Yang Berhormat Kepong.
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,11.48 pg.,1148,Dr. Tan Seng Giaw [Kepong],"Tuan Yang di-Pertua, Yang Berhormat Tumpat
 memang menyebutkan perkara yang penting dengan TPPA sebab ini mengenai Duti
 lambakan sementara yang melibatkan banyak jenis. Saya nampak Yang Berhormat
 Timbalan Menteri pun ada mengambil perhatian kerana duti anti-lambakan sementara, dil
@@ -1317,28 +1317,28 @@ sama sahaja untuk duti anti-lambakan. Saya hendak Yang Berhormat Timbalan Menter
 menyatakan kepada kita, apakah kadar yang dikenakan dan jumlah duti yang terlibat? Ini
 kerana Tuan Yang di-Pertua, yang pentingnya bagi kita daripada duti-duti ini dan
 sebagainya, jumlah yang kita kutip itu RM30 bilion ataupun RM32 bilion tahun ini."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1150,Dr. Tan Seng Giaw [Kepong],"Ini kerana memang dibentangkan di sini untuk di luluskan akan sedikit sebanyak
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1150,1150,Dr. Tan Seng Giaw [Kepong],"Ini kerana memang dibentangkan di sini untuk di luluskan akan sedikit sebanyak
 menjejaskan duti kita itu. Juga kita kena berkenaan dengan filem-filem *biaxially oriented
 polypropylene* (POPP) dengan ketebalan antara 13 hingga 15 micron ini daripada itu
 *Chinese Taipei*, Thailand dan juga Republik Rakyat China dan Republik Indonesia"
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1150,ANNOTATION,[Disampuk]
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1150,Dr. Tan Seng Giaw [Kepong],"Yang Berhormat Kinabatangan, ini hal RM32 bilion. Jangan bising sangat. Itu
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1150,1150,ANNOTATION,[Disampuk]
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1150,1150,Dr. Tan Seng Giaw [Kepong],"Yang Berhormat Kinabatangan, ini hal RM32 bilion. Jangan bising sangat. Itu
 pun melanggar peraturan. Penting sekali kita hendak tahu duti anti-dumping, anti lambakan
 ini, kita pun hendak tahu bila Yang Berhormat Kinabatangan akan mematuhi kepada
 peraturan Dewan ini."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1150,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Dia tahu itu Yang Berhormat,
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1150,1150,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Dia tahu itu Yang Berhormat,
 dia tahu."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1150,Dr. Tan Seng Giaw [Kepong],"Ya, dia tahu."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1150,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1150,1150,Dr. Tan Seng Giaw [Kepong],"Ya, dia tahu."
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1150,1150,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat
 Kinabatangan tahu, dia pura-pura sebenarnya."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1150,Dr. Tan Seng Giaw [Kepong],"Akan tetapi, saya nampak dia itu tiap-tiap kali
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1150,1150,Dr. Tan Seng Giaw [Kepong],"Akan tetapi, saya nampak dia itu tiap-tiap kali
 melanggar peraturan."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1150,Seorang Ahli,Berlambak-lambak.
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1150,Dr. Tan Seng Giaw [Kepong],"Berlambak-lambak itu termasuk Yang Berhormat
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1150,1150,Seorang Ahli,Berlambak-lambak.
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1150,1150,Dr. Tan Seng Giaw [Kepong],"Berlambak-lambak itu termasuk Yang Berhormat
 Bintulu. Itu lah masalah kita. Dia tahu itu..."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1150,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Tidak tahu tapi bahasa Tamil
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1150,1150,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Tidak tahu tapi bahasa Tamil
 lagi tidak tahu Yang Berhormat."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1150,Dr. Tan Seng Giaw [Kepong],"Mengenai rod dawai, keluli dengan kandungan
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1150,1150,Dr. Tan Seng Giaw [Kepong],"Mengenai rod dawai, keluli dengan kandungan
 karbon kurang daripada 0.6% ini juga daripada *Chinese Taipei*, Republik Indonesia,
 Republik Korea dan Republik Rakyat China dan termasuklah Republik Turki, saya pun tidak
 faham mengapa Turki keluarkan dawai keluli yang diimport oleh Malaysia juga. Ini kali yang
@@ -1348,12 +1348,12 @@ Rakyat China dan Indonesia dan juga Republik Sosialis Vietnam.
 Saya tidak nampak dia keluarkan BOPP daripada Republik Sosialis Vietnam. Itu
 lah saya berharap Yang Berhormat dapat menjawab kerana nampaknya Yang Berhormat
 rajin juga ada meneliti hal-hal seumpama ini. Sekian, terima kasih."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1150,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Ya, selalunya selepas Yang
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1150,1150,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Ya, selalunya selepas Yang
 Berhormat Kepong tidak ada lagi yang berucap di penghujung ini Yang Berhormat"
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1150,ANNOTATION,[Ketawa]
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1150,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Jadi, sekarang ini Yang Berhormat Kepong bukan *the last one* lagi lah. Yang Berhormat
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1150,1150,ANNOTATION,[Ketawa]
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1150,1150,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Jadi, sekarang ini Yang Berhormat Kepong bukan *the last one* lagi lah. Yang Berhormat
 Bayan Baru."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1150,Tuan Sim Tze Tzin [Bayan Baru],"Terima kasih. Saya *the last man standing.*
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1150,1150,Tuan Sim Tze Tzin [Bayan Baru],"Terima kasih. Saya *the last man standing.*
 Terima kasih Tuan Yang di-Pertua dan terima kasih Yang Berhormat Menteri kerana
 mencadangkan usul ini. Saya hendak menarik perhatian Yang Berhormat Menteri tentang
 satu perkembangan baru berkenaan dengan satu polisi di negeri China. Mereka telah
@@ -1379,7 +1379,7 @@ Pinang kerana Pulau Pinang ia *free depot*. Saya tidak tahu berapa peratuslah ya
 ke Port Klang. Jadi pengimport-pengimport ini, mereka ambil disebabkan oleh pembuangan
 ini tiada tempat untuk dibuang atau diproses semula. Maka, mereka masuk ke Malaysia.
 Jemput Yang Berhormat Sungai Petani."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1150,Dato’ Johari bin Abdul [Sungai Petani],"Terima kasih Tuan Yang di-Pertua.
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1150,1150,Dato’ Johari bin Abdul [Sungai Petani],"Terima kasih Tuan Yang di-Pertua.
 Saya cuma hendak tanya Yang Berhormat Bayan Baru, bila China membuat polisi
 demikian, makna China amat prihatin tentang alam sekitarnya. Sebab itu gred yang lain
 daripada gred yang telah ditentukan dia *reject.*
@@ -1389,7 +1389,7 @@ baru kepada kita bukan sahaja pencemaran udara tetapi juga pencemaran air yang b
 di Pulau Pinang secara serius. Apakah Yang Berhormat Bayan Baru mengajak kerajaan
 melihat ini secara serius. Jangan lihat isu ini sebagi isu kerajaan tempatan saja tetapi isu
 peringkat persekutuan. Terima kasih."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1150,Tuan Sim Tze Tzin [Bayan Baru],"Terima kasih Yang Berhormat Sungai Petani.
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1150,1150,Tuan Sim Tze Tzin [Bayan Baru],"Terima kasih Yang Berhormat Sungai Petani.
 Saya terima kasih kepada Yang Berhormat Sungai Petani. Saya hendak bagi *warning*
 kepada Yang Berhormat Sungai Petani juga sebab dia masuk melalui Pulau Pinang,
 pelabuhan Pulau Pinang. Akan tetapi bahan-bahan yang berbahaya ini akan dihantar ke
@@ -1409,7 +1409,7 @@ Satu industri yang orang tidak mahu daripada Australia di*dumping*kan ke Gebeng,
 *This is one of the thing* yang kita nampak bahawa polisi kerajaan yang tidak tegas untuk
 *stopping all these unwanted material* masuk ke Malaysia. Sila Yang Berhormat Sungai
 Petani."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1150,Dato’ Johari bin Abdul [Sungai Petani],"Tuan Yang di-Pertua, saya juga hendak
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1150,1150,Dato’ Johari bin Abdul [Sungai Petani],"Tuan Yang di-Pertua, saya juga hendak
 tanya Yang Berhormat Bayan Baru, bila kita berjumpa dengan pegawai-pegawai yang
 terlibat dengan alam sekitar dan juga kastam, jawapan yang lazim diberikan ini ialah
 masalah *local government*. Ini isunya. Ini ialah masalah *local government* dan dia minta
@@ -1421,12 +1421,12 @@ akhirnya membawa masalah toksik ini, *local government* tidak ada kemampuan untu
 apa-apa. Jadi ini yang saya hendak tanya Yang Berhormat Bayan Baru, adakah ini yang
 harus menjadi benda yang *urgent* yang kerajaan harus mengambil tindakan serta-merta.
 Terima kasih."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1200,Dr. Che Rosli bin Che Mat [Hulu Langat],"Tuan Yang di-Pertua, saya ingin
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1200,1200,Dr. Che Rosli bin Che Mat [Hulu Langat],"Tuan Yang di-Pertua, saya ingin
 mendapat sedikit penjelasan bila Yang Berhormat Bayan Baru sebut apabila diproses
 menghasilkan bahan radioaktif. Boleh dapat sedikit pencerahan apa dia bahan asal yang
 diproses dan radioaktif apa yang dikeluarkan? Setahu saya lebih kepada *heavy metal*.
 Terima kasih."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1200,Tuan Sim Tze Tzin [Bayan Baru],"Terima kasih Yang Berhormat Hulu Langat
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1200,1200,Tuan Sim Tze Tzin [Bayan Baru],"Terima kasih Yang Berhormat Hulu Langat
 kerana Yang Berhormat Hulu Langat saintis dan terima kasih Yang Berhormat Sungai
 Petani. Saya difahamkan bahawa bahan-bahan yang mereka masuk itu *all kinds of waste*
 daripada *heavy metal*, daripada *used computer*, bateri, plastik dan sebagainya. Ia akan
@@ -1443,40 +1443,40 @@ dipertingkatkan, dikuatkuasakan dan ini adalah satu polisi Kerajaan Negara China
 begitu meluas sebab *affecting the Malaysia or around South East Asia.* Malaysia khususnya
 sebagai satu negara yang *trading country*, ia menjadi negara yang utama untuk menerima
 bahan-bahan ini."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1200,Dato’ Dr. Tan Kee Kwong [Wangsa Maju],"Yang Berhormat Bayan Baru, boleh
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1200,1200,Dato’ Dr. Tan Kee Kwong [Wangsa Maju],"Yang Berhormat Bayan Baru, boleh
 saya celah sedikit?"
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1200,Tuan Sim Tze Tzin [Bayan Baru],Boleh.
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1200,Dato’ Dr. Tan Kee Kwong [Wangsa Maju],"Terima kasih ya. Selamat pagi. Apa
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1200,1200,Tuan Sim Tze Tzin [Bayan Baru],Boleh.
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1200,1200,Dato’ Dr. Tan Kee Kwong [Wangsa Maju],"Terima kasih ya. Selamat pagi. Apa
 bezanya pandangan Yang Berhormat Bayan Baru dengan akta baru ini dan juga *Lynas
 Plant* yang baru di Gebeng, Pahang. Ini pun lain negara tidak mahu seperti kerajaan
 *Western Australia* tetapi kita terima."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1200,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Sebentar Yang Berhormat.
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1200,1200,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Sebentar Yang Berhormat.
 Saya ingin maklumat daripada Yang Berhormat Menteri sama ada perjalanan perbahasan
 ini masih dalam landasan yang betul kah? Ia sudah terkeluar Yang Berhormat. Isu-isu yang
 dibuat itu tidak termasuk dalam..."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1200,Tuan Sim Tze Tzin [Bayan Baru],"Ya, ya. Isu pokok Tuan Yang di-Pertua."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1200,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Tidak, ia tidak termasuk
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1200,1200,Tuan Sim Tze Tzin [Bayan Baru],"Ya, ya. Isu pokok Tuan Yang di-Pertua."
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1200,1200,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Tidak, ia tidak termasuk
 dalam usul. Ini bukan rang undang-undang. Ini usul daripada Kementerian Kewangan."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1200,Tuan Sim Tze Tzin [Bayan Baru],"Akan tetapi kita bahaskan tentang isu
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1200,1200,Tuan Sim Tze Tzin [Bayan Baru],"Akan tetapi kita bahaskan tentang isu
 *dumping*, *Anti-dumping Taxes. That is why...*"
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1200,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Ini usul ya. Ini bukan rang
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1200,1200,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Ini usul ya. Ini bukan rang
 undang-undang Yang Berhormat. Ini cuma usul daripada Kementerian Kewangan. Cuba
 tolong jelaskan Yang Berhormat Menteri perkara yang sepatutnya dalam perbahasaan."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1200,Timbalan Menteri Kewangan [Datuk Haji Ahmad bin Haji Maslan],"Tuan Yang
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1200,1200,Timbalan Menteri Kewangan [Datuk Haji Ahmad bin Haji Maslan],"Tuan Yang
 di-Pertua, perkara yang kita bincangkan ini ialah hal yang spesifik iaitu mengenai
 *electrolytic tinplate*, BOPP, rod dawai keluli. Itu sahaja yang kita ingin bincangkan."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1200,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Ya, boleh fokuskan perkara-
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1200,1200,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Ya, boleh fokuskan perkara-
 perkara itu Yang Berhormat."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1200,Tuan Sim Tze Tzin [Bayan Baru],"Okey, Yang Berhormat Hulu Langat. Okey,
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1200,1200,Tuan Sim Tze Tzin [Bayan Baru],"Okey, Yang Berhormat Hulu Langat. Okey,
 terima kasih kepada Menteri. Saya sebagai seorang Ahli Yang Berhormat yang
 bertanggungjawab dan yang cintakan Malaysia. Saya perlu *inform the government of the
 day* bahawa sesuatu yang tidak kena berlaku dan ada bahan-bahan di sini seperti
 *polyester, polyethylene* dan sebagainya. Ini adalah bahan-bahan yang berupa *waste* dan
 sebagainya. Jadi, saya *inform* kepada kerajaan bahawa ada sesuatu yang tidak kena
 berlaku."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1200,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Ya, saya tidak katakan."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1200,Tuan Sim Tze Tzin [Bayan Baru],"Okey, saya minta..."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1200,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Sebentar Yang Berhormat.
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1200,1200,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Ya, saya tidak katakan."
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1200,1200,Tuan Sim Tze Tzin [Bayan Baru],"Okey, saya minta..."
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1200,1200,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Sebentar Yang Berhormat.
 Saya tidak katakan Yang Berhormat tidak prihatin dan tidak bertanggungjawab. Akan tetapi
 dalam Parlimen ini kita ada peraturan-peraturan. Perkara-perkara yang tidak termasuk
 dalam lingkup usul yang kita bincang itu tidak sepatutnya dibawa kecuali jika kita
@@ -1484,11 +1484,11 @@ membincang peringkat dasar umpamanya dan kita boleh membawa banyak isu yang
 diperlukan untuk dibahaskan. Akan tetapi dalam keadaan yang spesifik ini dan bukan rang
 undang-undang cuma satu usul daripada Kementerian Kewangan, saya minta Yang
 Berhormat untuk fokus kepada perkara yang dibincangkan."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1200,Tuan Sim Tze Tzin [Bayan Baru],"Okeylah, saya terima kasih kepada Tuan Yang
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1200,1200,Tuan Sim Tze Tzin [Bayan Baru],"Okeylah, saya terima kasih kepada Tuan Yang
 di-Pertua kerana mengingatkan saya, orang baru. Akan tetapi saya..."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1200,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Akan tetapi saya katakan
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1200,1200,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Akan tetapi saya katakan
 Yang Berhormat Kepong *is the last man* sepatutnya, ya."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1200,Tuan Sim Tze Tzin [Bayan Baru],"Jadi saya minta kalau boleh Menteri adakan
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1200,1200,Tuan Sim Tze Tzin [Bayan Baru],"Jadi saya minta kalau boleh Menteri adakan
 polisi-polisi seperti *green fence* di Malaysia juga untuk tingkatkan supaya *certain unwanted
 objects, unwanted material* tidak masuk di Malaysia dan juga tidak menjejaskan kesihatan
 rakyat Malaysia. Malaysia menjadi *dumping ground of the world*. Dahulu orang *dumping* di
@@ -1496,9 +1496,9 @@ Afrika dan sebagainya. Sekarang kerana Malaysia sangat dekat dengan negara China
 Dahulu orang pun *dumping* kepada negara China. Sekarang Malaysia kerana kita dekat
 dengan China, maka mereka masuk ke Malaysia. Itu saya minta Menteri jelaskan. Terima
 kasih."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1200,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Bolehlah, cukuplah Yang
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1200,1200,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Bolehlah, cukuplah Yang
 Berhormat. Ya, Yang Berhormat Menteri."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1200,Datuk Haji Ahmad bin Haji Maslan,"Terima kasih Tuan Yang di-Pertua. terima
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1200,1200,Datuk Haji Ahmad bin Haji Maslan,"Terima kasih Tuan Yang di-Pertua. terima
 kasih kepada Yang Berhormat Tumpat, Yang Berhormat Kepong, Yang Berhormat Bayan
 Baru dengan celahan-celahan daripada Yang Berhormat Sungai Petani, Hulu Langat dan
 juga Wangsa Maju. Kita ingin memaklumkan bahawa tujuan kita menyatakan perkara ini,
@@ -1524,10 +1524,10 @@ sebenarnya sudah ada FTA dengan *Thailand* tentang perkara itu. O% ataupun sifar
 Namun oleh kerana berlaku lambakan kita kenakan peratusan sehingga 49.25% supaya
 syarikat-syarikat di *Thailand* itu tidak melambakkan PET di negara kita ini. Itu tujuannya dan
 itu yang dinyatakan dalam..."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1200,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat Jasin
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1200,1200,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat Jasin
 bangun Yang Berhormat."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1200,Datuk Haji Ahmad bin Haji Maslan,"Sila, Yang Berhormat Jasin."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1200,Datuk Wira Haji Ahmad bin Haji Hamzah [Jasin],"Terima kasih Tuan Yang di-
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1200,1200,Datuk Haji Ahmad bin Haji Maslan,"Sila, Yang Berhormat Jasin."
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1200,1200,Datuk Wira Haji Ahmad bin Haji Hamzah [Jasin],"Terima kasih Tuan Yang di-
 Pertua dan terima kasih Yang Berhormat Menteri. Dalam *schedule* ini ada sebuah syarikat
 yang telah disenaraikan. Syarikat ini sebenarnya berada di Melaka, syarikat besi yang
 mengeksport semua bahan-bahan buangan. Sebenarnya apa yang didapati bahan yang
@@ -1536,7 +1536,7 @@ ianya lebih murah daripada bahan yang kita beli dari dalam negeri. Walaupun sebe
 kerajaan mengehadkan import untuk barang-barang kegunaan untuk aktiviti-aktiviti besi
 tetapi kita dapati bahawa kilang ini lebih dapat keuntungan yang lebih tinggi lagi daripada
 import berbanding dengan apa yang kita beli dalam negara kita."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1210,Datuk Wira Haji Ahmad bin Haji Hamzah [Jasin],"Keduanya, apa yang saya nak sebut di sini, suatu ketika dulu negeri China telah
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1210,1210,Datuk Wira Haji Ahmad bin Haji Hamzah [Jasin],"Keduanya, apa yang saya nak sebut di sini, suatu ketika dulu negeri China telah
 dikenakan tarif yang paling tertinggi sekali iaitu sebanyak 70% untuk barangan elektrik dan
 elektronik. Ini kerana mereka melambakkan barang-barang murah daripada negara mereka
 di Amerika. Apa yang mereka buat, dia eksport daripada China bukan terus kepada
@@ -1544,7 +1544,7 @@ Amerika tetapi melalui Malaysia. Selepas itu Malaysia pula cop sana barangan Mal
 Jadi, setakat manakah keberkesanan duti import yang didapati daripada Malaysia kerana
 barangan daripada China, dia menggunakan pelabuhan kita untuk eksport ke Amerika?
 Terima kasih."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1211,Datuk Bung Moktar bin Radin [Kinabatangan],"Boleh jawab sekali Yang
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,12.11 tgh.,1211,Datuk Bung Moktar bin Radin [Kinabatangan],"Boleh jawab sekali Yang
 Berhormat? Saya pun nak tahu, apakah selama ini dengan kekurangan akta yang sedia
 ada, jadi bermakna negara Malaysia ini terbuka dengan ancaman-ancaman lambakan
 daripada negara seperti Thailand, dengan mengimport barang-barang berkeluli seperti besi
@@ -1552,19 +1552,19 @@ dan sebagainya. Apakah pihak kastam kita tidak ada pula mempunyai satu akta yang
 menghalang lambakan-lambakan yang dimaksudkan ini sehingga kita perlu mengadakan
 dan mencadangkan satu akta lambakan untuk memastikan bahawa tidak berlaku
 lambakan-lambakan di negara kita yang boleh mengakibatkan sesuatu perkara?"
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1211,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Ya, Yang Berhormat Bukit
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,12.11 tgh.,1211,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Ya, Yang Berhormat Bukit
 Katil pun bangun."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1211,Tuan Shamsul Iskandar @ Yusre bin Mohd. Akin [Bukit Katil],"Yang Berhormat
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,12.11 tgh.,1211,Tuan Shamsul Iskandar @ Yusre bin Mohd. Akin [Bukit Katil],"Yang Berhormat
 Menteri, berkaitan."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1211,Datuk Haji Ahmad bin Haji Maslan,"Ya, Bukit Katil silakan."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1211,Tuan Shamsul Iskandar @ Yusre bin Mohd. Akin [Bukit Katil],"Saya nak tanya
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,12.11 tgh.,1211,Datuk Haji Ahmad bin Haji Maslan,"Ya, Bukit Katil silakan."
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,12.11 tgh.,1211,Tuan Shamsul Iskandar @ Yusre bin Mohd. Akin [Bukit Katil],"Saya nak tanya
 ringkas sahaja Yang Berhormat Menteri. Apakah dengan mengenakan cukai ini, saya
 difahamkan dan mendapat maklumat bahawa ini adalah antara desakan yang diberikan
 oleh perusahaan Sadur Timah Malaysia yang meminta supaya dikenakan cukai. Ada
 kalangan yang memberikan pendapat seolah-olah dengan menggunakan pendekatan ini, ia
 memberikan satu kuasa monopoli kepada perusahaan ini untuk mengawal supaya tidak ada
 lagi syarikat-syarikat lain yang mendapat manfaat daripada tindakan ini. Terima kasih."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1211,Datuk Haji Ahmad bin Haji Maslan,"Saya ingin menyebut bahawa prosedurnya
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,12.11 tgh.,1211,Datuk Haji Ahmad bin Haji Maslan,"Saya ingin menyebut bahawa prosedurnya
 ialah syarikat di Malaysia hendaklah memberikan suatu memorandum kepada Kementerian
 Kewangan dan juga kastam bahawa mereka terkena kemudaratan material terhadap
 sesuatu barangan import yang dilambakkan ke dalam negara kita. Contohnya, Perusahaan
@@ -1586,14 +1586,14 @@ Oleh kerana mereka melambakkan barangan itu di negara ini, kita tambah duti 10% 
 ya. Kalau daripada negara Republik Korea, 10% campur 3% hingga 25% tambahan supaya
 tempat kita, negara kita ini tidak menjadi *dumping place* terhadap produk-produk yang
 mereka hantar ke negara kita ini."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1211,Dr. Azman bin Ismail [Kuala Kedah],
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1211,ANNOTATION,[Bangun]
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1211,Datuk Johari bin Abdul Ghani [Titiwangsa],
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1211,ANNOTATION,[Bangun]
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1211,Datuk Haji Ahmad bin Haji Maslan,Saya juga ingin memaklumkan...
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1211,Dr. Azman bin Ismail [Kuala Kedah],Boleh mencelah?
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1211,Datuk Haji Ahmad bin Haji Maslan,Silakan.
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1211,Datuk Johari bin Abdul Ghani [Titiwangsa],"Yang Berhormat Menteri, pertama
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,12.11 tgh.,1211,Dr. Azman bin Ismail [Kuala Kedah],
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,12.11 tgh.,1211,ANNOTATION,[Bangun]
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,12.11 tgh.,1211,Datuk Johari bin Abdul Ghani [Titiwangsa],
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,12.11 tgh.,1211,ANNOTATION,[Bangun]
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,12.11 tgh.,1211,Datuk Haji Ahmad bin Haji Maslan,Saya juga ingin memaklumkan...
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,12.11 tgh.,1211,Dr. Azman bin Ismail [Kuala Kedah],Boleh mencelah?
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,12.11 tgh.,1211,Datuk Haji Ahmad bin Haji Maslan,Silakan.
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,12.11 tgh.,1211,Datuk Johari bin Abdul Ghani [Titiwangsa],"Yang Berhormat Menteri, pertama
 saya ingin- Saya memang fahamlah dari segi hasrat kerajaan, untuk kita menjaga syarikat-
 syarikat besar yang mengeluarkan produk-produk ini untuk kita majukan dalam negara.
 Akan tetapi pernah kah kementerian melihat, kebanyakan daripada syarikat-syarikat besar
@@ -1607,7 +1607,7 @@ yang tertentu untuk memberi had *limit* masa supaya syarikat-syarikat yang ada d
 negara kita ini tidak hanya bergantung dengan akta *anti-dumping* ini. Ini kerana ia akan
 menyebabkan dalam jangka masa panjang, produk-produk yang dikeluarkan oleh KPS ini
 akan menyebabkan harga mereka tidak kompetitif."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1211,Datuk Haji Ahmad bin Haji Maslan,"Terima kasih kepada Titiwangsa. Sebagai
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,12.11 tgh.,1211,Datuk Haji Ahmad bin Haji Maslan,"Terima kasih kepada Titiwangsa. Sebagai
 contoh, syarikat pengeluar utama tentang *steel wire rod* (SWR) di Malaysia yang
 menyatakan bahawa mereka mendapat kemudaratan material, *dumping* daripada China,
 Korea, Turki, Indonesia - Amsteel (M) Sdn Bhd., Ann Joo Steel Berhad, Perfect Channel
@@ -1622,13 +1622,13 @@ pasaran tempatan, pengurangan jumlah jualan, pemotongan harga, kemelesetan harga
 penyekatan harga, tahap pengeluaran kapasiti yang rendah, kehilangan keuntungan, tahap
 produktiviti yang rendah yang telah berlaku terhadap syarikat-syarikat tempatan yang saya
 sebutkan tadi. Jadi, itu sebenarnya tujuannya."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1211,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Kuala Kedah bangun Yang
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,12.11 tgh.,1211,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Kuala Kedah bangun Yang
 Berhormat."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1211,Datuk Haji Ahmad bin Haji Maslan,"Kita ingin memastikan perkara itu tidak
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,12.11 tgh.,1211,Datuk Haji Ahmad bin Haji Maslan,"Kita ingin memastikan perkara itu tidak
 berlaku. Oleh kerana itu, maka kita melaksanakan perkara ini untuk kebaikan negara
 misalnya. Tujuan utama ialah untuk kebaikan negara, bukan untuk kebaikan syarikat-
 syarikat itu sahaja tetapi untuk kebaikan negara. Sila."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1211,Dr. Azman bin Ismail [Kuala Kedah],"Terima kasih Yang Berhormat Menteri.
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,12.11 tgh.,1211,Dr. Azman bin Ismail [Kuala Kedah],"Terima kasih Yang Berhormat Menteri.
 Terima kasih Tuan Yang di-Pertua. Saya perlu penjelasan sedikit kerana saya tidak ada
 *background* ekonomi. Pertamanya ialah apakah kesannya kepada syarikat kita yang
 mengeksport barang-barang yang sama ke luar negara apabila kita mengenakan akta
@@ -1639,19 +1639,19 @@ begini.
 Ketiga, ini penjelasan asas ekonomi. Di manakah *the fine line,* dengan izin, antara
 *protectionism* dan *anti*-*dumping* ini yang masuk dan kita cuba buat *regulation.* Akan tetapi
 bukankah ini satu langkah yang *retrograde, protectionism*. Terima kasih."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1211,Datuk Haji Ahmad bin Haji Maslan,Yang Berhormat Jasin?
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1211,Datuk Wira Haji Ahmad bin Haji Hamzah [Jasin],"Terima kasih Menteri. Saya
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,12.11 tgh.,1211,Datuk Haji Ahmad bin Haji Maslan,Yang Berhormat Jasin?
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,12.11 tgh.,1211,Datuk Wira Haji Ahmad bin Haji Hamzah [Jasin],"Terima kasih Menteri. Saya
 ada sebut tadi tentang *steel wire rod*. Apa yang dibuat oleh syarikat ini, mereka mengimport
 barangan-barangan terbuang daripada luar negara ke dalam negara dan mereka dikenakan
 kuota. Akan tetapi apa yang saya nak sebut di sin, pengeluaran mereka ini daripada barang
 yang diimport lebih bermutu dan juga lebih murah daripada barangan besi yang dibuat
 dalam negara. Apa jadi sekarang, harga besi sebenarnya menjadi penyumbang utama
 dalam semua pembangunan."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1220,Datuk Wira Haji Ahmad bin Haji Hamzah [Jasin],"Apabila harga besi mahal, harga bangunan pun meningkat. Kalau kita benarkan
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1220,1220,Datuk Wira Haji Ahmad bin Haji Hamzah [Jasin],"Apabila harga besi mahal, harga bangunan pun meningkat. Kalau kita benarkan
 mereka, beri mereka kuota kerana mereka terpaksa mendapatkan AP untuk import apa juga
 barangan besi. Akan tetapi kalau kita kenakan begini, maka pemaju-pemaju akan
 menghadapi masalah. Terima kasih."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1220,Datuk Haji Ahmad bin Haji Maslan,"Ya kita memahami apa yang disebut oleh
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1220,1220,Datuk Haji Ahmad bin Haji Maslan,"Ya kita memahami apa yang disebut oleh
 Yang Berhormat Jasin itu dan begitu juga tentang Kuala Kedah. Saya ingin merumuskan
 beginilah. Ada 16 produk sejak tahun 1995 yang telah kita berikan *anti dumping* dan kita
 telah laksanakan pemeriksaan *investigation* dan terhadap 16 produk itu akhirnya mereka
@@ -1681,14 +1681,14 @@ syarikat-syarikat luar negara apabila membawa masuk barangan ke dalam negara kit
 begitu juga tidak sewenang-wenang oleh syarikat-syarikat dan negara-negara luar untuk
 mengenakan duti anti lambakan kepada syarikat-syarikat dalam negara kita. Itulah yang
 ingin saya sampaikan. Terima kasih."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1220,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Terima kasih Yang
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1220,1220,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Terima kasih Yang
 Berhormat. Ahli-ahli Yang Berhormat, sekarang saya akan kemukakan masalah kepada
 majlis bagi diputuskan. Masalahnya ialah bahawa usul Yang Berhormat Menteri Kewangan
 seperti yang tertera dalam Aturan Urusan Mesyuarat hari ini di bawah Perkara 13 yang
 telah dibentangkan sebagai kertas statut bilangan ST.47, ST.48, ST.49, ST.50 dan ST.51
 tahun 2013 disahkan hendaklah disetujukan."
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1220,ANNOTATION,"[Usul dikemukakan bagi diputuskan, dan disetujukan]"
-USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,1222,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Sebelum saya jemput Yang
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,■1220,1220,ANNOTATION,"[Usul dikemukakan bagi diputuskan, dan disetujukan]"
+USUL MENTERI KEWANGAN,AKTA KASTAM 1967,,12.22 tgh.,1222,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Sebelum saya jemput Yang
 Berhormat Menteri untuk membacakan usul, saya bagi pihak Yang di-Pertua Dewan ingin
 merakamkan ucapan setinggi-tinggi terima kasih kepada semua Ahli-ahli Yang Berhormat
 yang telah memberi kerjasama bagi membolehkan perjalanan majlis mesyuarat yang
@@ -1701,32 +1701,32 @@ tempoh Dewan ini bersidang. Akhir kata saya ingin mengucapkan selamat menyambut 
 Raya Aidil Adha yang akan tiba, selamat pulang dan selamat sampai ke destinasi masing-
 masing. Saya seterusnya ingin menjemput Yang Berhormat Menteri untuk membawakan
 usul Peraturan Mesyuarat 16(3)."
-USUL,MENANGGUHKAN MESYUARAT DI BAWAH P.M 16(3),,1222,Menteri di Jabatan Perdana Menteri [Dato’ Seri Shahidan bin Kassim],"*Bismillaahir Rahmaanir Rahiim.* Saya ingin mengucapkan terima kasih kepada semua,
+USUL,MENANGGUHKAN MESYUARAT DI BAWAH P.M 16(3),,12.22 tgh.,1222,Menteri di Jabatan Perdana Menteri [Dato’ Seri Shahidan bin Kassim],"*Bismillaahir Rahmaanir Rahiim.* Saya ingin mengucapkan terima kasih kepada semua,
 dengan memohon maaf di atas keterlaluan cara dan kekasaran bahasa. Semoga Allah
 merahmati kita semua. Selamat Hari Raya Aidil Adha, selamat Hari Raya Korban. Jangan
 lupa *channel* nombor satu.
 Tuan Yang di-Pertua, saya mohon mencadangkan:
 “Bahawa mengikut Peraturan Mesyuarat 16(3), Mesyuarat ini
 ditangguhkan sekarang.”"
-USUL,MENANGGUHKAN MESYUARAT DI BAWAH P.M 16(3),,1222,Timbalan Menteri di Jabatan Perdana Menteri [Dato’ Razali bin Ibrahim],"Sebelum menyokong, saya ingin mengucapkan terima kasih kepada Tuan Yang di-Pertua
+USUL,MENANGGUHKAN MESYUARAT DI BAWAH P.M 16(3),,12.22 tgh.,1222,Timbalan Menteri di Jabatan Perdana Menteri [Dato’ Razali bin Ibrahim],"Sebelum menyokong, saya ingin mengucapkan terima kasih kepada Tuan Yang di-Pertua
 dan semua Ahli Yang Berhormat. Saya mohon menyokong."
 USUL,"UCAPAN-UCAPAN PENANGGUHAN
-Peningkatan Taraf Penyelenggaraan Kemudahan Awam di Bandar Muar",,1226,Tuan Er Teck Hwa [Bakri],"Terima kasih Tuan Yang di-Pertua memberi peluang
+Peningkatan Taraf Penyelenggaraan Kemudahan Awam di Bandar Muar",,12.26 tgh.,1226,Tuan Er Teck Hwa [Bakri],"Terima kasih Tuan Yang di-Pertua memberi peluang
 kepada Yang Berhormat Bakri ucapan penangguhan..."
 USUL,"UCAPAN-UCAPAN PENANGGUHAN
-Peningkatan Taraf Penyelenggaraan Kemudahan Awam di Bandar Muar",,1226,Datuk Bung Moktar bin Radin [Kinabatangan],"Yang Berhormat Bakri, boleh
+Peningkatan Taraf Penyelenggaraan Kemudahan Awam di Bandar Muar",,12.26 tgh.,1226,Datuk Bung Moktar bin Radin [Kinabatangan],"Yang Berhormat Bakri, boleh
 tanya?"
 USUL,"UCAPAN-UCAPAN PENANGGUHAN
-Peningkatan Taraf Penyelenggaraan Kemudahan Awam di Bandar Muar",,1226,Tuan Er Teck Hwa [Bakri],"Meningkatkan taraf penyelenggaraan kemudahan
+Peningkatan Taraf Penyelenggaraan Kemudahan Awam di Bandar Muar",,12.26 tgh.,1226,Tuan Er Teck Hwa [Bakri],"Meningkatkan taraf penyelenggaraan kemudahan
 awam di Bandar Muar..."
 USUL,"UCAPAN-UCAPAN PENANGGUHAN
-Peningkatan Taraf Penyelenggaraan Kemudahan Awam di Bandar Muar",,1226,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat, balik
+Peningkatan Taraf Penyelenggaraan Kemudahan Awam di Bandar Muar",,12.26 tgh.,1226,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Yang Berhormat, balik
 secara senyap-senyap dan supaya tidak mengganggu Yang Berhormat Bakri."
 USUL,"UCAPAN-UCAPAN PENANGGUHAN
-Peningkatan Taraf Penyelenggaraan Kemudahan Awam di Bandar Muar",,1226,Dato’ Shamsul Anuar bin Haji Nasarah [Lenggong],"Teruskan Yang Berhormat.
+Peningkatan Taraf Penyelenggaraan Kemudahan Awam di Bandar Muar",,12.26 tgh.,1226,Dato’ Shamsul Anuar bin Haji Nasarah [Lenggong],"Teruskan Yang Berhormat.
 Sudah habis pegawai daerah sahaja, *haiiya*!"
 USUL,"UCAPAN-UCAPAN PENANGGUHAN
-Peningkatan Taraf Penyelenggaraan Kemudahan Awam di Bandar Muar",,1226,Tuan Er Teck Hwa [Bakri],"...Bandar Muar telah dimasukkan sebagai Bandar
+Peningkatan Taraf Penyelenggaraan Kemudahan Awam di Bandar Muar",,12.26 tgh.,1226,Tuan Er Teck Hwa [Bakri],"...Bandar Muar telah dimasukkan sebagai Bandar
 Diraja Negeri Johor, oleh Sultan Ibrahim Ismail Ibni Almarhum Sultan Iskandar Al-Haj,
 Sultan Negeri Johor Darul Takzim secara rasminya pada 24 November 2012. Sesuai
 dengan taraf Bandar Diraja, seharusnya kemudahan-kemudahan awam di naik taraf atau
@@ -1749,7 +1749,7 @@ dan memastikan penyelenggaraan kemudahan awam di bandar ini. Adakah pihak
 kementerian bersedia menjalankan kerjasama dengan NGO-NGO, persatuan-persatuan
 atau pihak-pihak berminat untuk menguruskan kawasan tersebut?"
 USUL,"UCAPAN-UCAPAN PENANGGUHAN
-Peningkatan Taraf Penyelenggaraan Kemudahan Awam di Bandar Muar",,1230,Tuan Er Teck Hwa [Bakri],"Adakah terdapat insentif-insentif atau kelonggaran syarat apabila ada pihak
+Peningkatan Taraf Penyelenggaraan Kemudahan Awam di Bandar Muar",,■1230,1230,Tuan Er Teck Hwa [Bakri],"Adakah terdapat insentif-insentif atau kelonggaran syarat apabila ada pihak
 swasta ingin mengambil alih memajukan kawasan tersebut. Di Bandar Muar juga terdapat
 tiga bulatan di jalan raya yang dihiasi indah. Adakah penyelenggaraan dan kos terlibat di
 bawah bidang kuasa Kementerian Kesejahteraan Bandar, Perumahan dan Kerajaan
@@ -1761,10 +1761,10 @@ statusnya sebagai Bandar Diraja agar penduduk tempatan dan juga pelancong-pelanc
 yang menziarahi bandar ini dapat menikmati kemudahan awam yang selesa. Sekian,
 terima kasih."
 USUL,"UCAPAN-UCAPAN PENANGGUHAN
-Peningkatan Taraf Penyelenggaraan Kemudahan Awam di Bandar Muar",,1230,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Ya, sila Yang Berhormat
+Peningkatan Taraf Penyelenggaraan Kemudahan Awam di Bandar Muar",,■1230,1230,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Ya, sila Yang Berhormat
 Menteri."
 USUL,"UCAPAN-UCAPAN PENANGGUHAN
-Peningkatan Taraf Penyelenggaraan Kemudahan Awam di Bandar Muar",,1231,"Menteri Kesejahteraan Bandar, Perumahan dan Kerajaan Tempatan [Dato' Abd. Rahman Dahlan]","Tuan Yang di-Pertua, saya mengucapkan berbanyak-banyak
+Peningkatan Taraf Penyelenggaraan Kemudahan Awam di Bandar Muar",,12.31 tgh.,1231,"Menteri Kesejahteraan Bandar, Perumahan dan Kerajaan Tempatan [Dato' Abd. Rahman Dahlan]","Tuan Yang di-Pertua, saya mengucapkan berbanyak-banyak
 terima kasih kepada Yang Berhormat Bakri di atas perkara yang telah dibangkitkan semasa
 ucapan penangguhan beliau.
 Tuan Yang di-Pertua, untuk makluman Dewan yang mulia ini Kementerian
@@ -1835,7 +1835,7 @@ Bandar Diraja yang sejahtera, mapan dan berdaya maju. Terima kasih Tuan Yang di-
 Pertua.
 **Pendekatan Menangani Masalah Perumahan**"
 USUL,"UCAPAN-UCAPAN PENANGGUHAN
-Peningkatan Taraf Penyelenggaraan Kemudahan Awam di Bandar Muar",,1237,Tuan Shamsul Iskandar @ Yusre bin Mohd. Akin [Bukit Katil],"Terima kasih
+Peningkatan Taraf Penyelenggaraan Kemudahan Awam di Bandar Muar",,12.37 tgh.,1237,Tuan Shamsul Iskandar @ Yusre bin Mohd. Akin [Bukit Katil],"Terima kasih
 Tuan Yang di-Pertua. Saya ingin mengambil kesempatan dalam perbahasan penggulung
 kali ini untuk menyentuh satu daripada komponen penting aspek kualiti hidup yang semakin
 menjadi perbualan ramai iaitu perumahan. Ini penting kerana rumah adalah keperluan asas
@@ -1872,7 +1872,7 @@ masa ini, akan tetapi ianya akan berkembang bila masalah besar di masa akan data
 Justeru saya menggesa pihak kerajaan memikirkan pendekatan terbalik dengan izin, *it was
 approached* di mana kuasa pasaran diagihkan ke pelbagai negeri."
 USUL,"UCAPAN-UCAPAN PENANGGUHAN
-Peningkatan Taraf Penyelenggaraan Kemudahan Awam di Bandar Muar",,1240,Tuan Shamsul Iskandar @ Yusre bin Mohd. Akin [Bukit Katil],"Diharapkan ini dapat mengendurkan permintaan tinggi terhadap perumahan yang
+Peningkatan Taraf Penyelenggaraan Kemudahan Awam di Bandar Muar",,■1240,1240,Tuan Shamsul Iskandar @ Yusre bin Mohd. Akin [Bukit Katil],"Diharapkan ini dapat mengendurkan permintaan tinggi terhadap perumahan yang
 akhirnya menjadi bahan spekulasi golongan mampu dan menjadi hukuman kepada
 golongan yang kurang mampu. Sudah tiba masanya peruntukan persekutuan ke negeri-
 negeri dinilai semula dengan masukkan pertimbangan jurang pembangunan di setiap
@@ -1883,7 +1883,7 @@ sebenar jangan hanya tersangkut pada petunjuk Keluaran Dalam Negara Kasar sedang
 realiti yang sebenar berat mata memandang berat lagi bahu yang memikulnya. Sekian
 terima kasih."
 USUL,"UCAPAN-UCAPAN PENANGGUHAN
-Peningkatan Taraf Penyelenggaraan Kemudahan Awam di Bandar Muar",,1240,"Menteri Kesejahteraan Bandar, Perumahan dan Kerajaan Tempatan [Dato' Abd. Rahman Dahlan]","Tuan Yang di-Pertua, saya ingin mengucapkan ribuan terima kasih
+Peningkatan Taraf Penyelenggaraan Kemudahan Awam di Bandar Muar",,12.40 tgh.,1240,"Menteri Kesejahteraan Bandar, Perumahan dan Kerajaan Tempatan [Dato' Abd. Rahman Dahlan]","Tuan Yang di-Pertua, saya ingin mengucapkan ribuan terima kasih
 kepada Ahli Yang Berhormat Bukit Katil di atas perkara-perkara yang dibangkit semasa
 ucapan penangguhan beliau. Ahli Yang Berhormat ada membangkitkan isu mengenai
 kawasan tumpuan penduduk.
@@ -1958,8 +1958,8 @@ kemudiannya disewakan. Untuk makluman, rumah-rumah PPR ini dibina khusus oleh
 kerajaan kepada golongan-golongan setinggan dan juga pemohon yang memohon
 menerusi sistem pendaftaran terbuka. Terima kasih Tuan Yang di-Pertua."
 USUL,"UCAPAN-UCAPAN PENANGGUHAN
-Peningkatan Taraf Penyelenggaraan Kemudahan Awam di Bandar Muar",,1240,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Terima kasih Yang
+Peningkatan Taraf Penyelenggaraan Kemudahan Awam di Bandar Muar",,12.40 tgh.,1240,Timbalan Yang di-Pertua [Datuk Ronald Kiandee],"Terima kasih Yang
 Berhormat. Ahli-ahli Yang Berhormat, Mesyuarat Dewan hari ini ditangguhkan sehingga
 suatu tarikh yang tidak ditetapkan."
 USUL,"UCAPAN-UCAPAN PENANGGUHAN
-Peningkatan Taraf Penyelenggaraan Kemudahan Awam di Bandar Muar",,1246,ANNOTATION,[Dewan ditangguhkan pada pukul 12.46 tengah hari]
+Peningkatan Taraf Penyelenggaraan Kemudahan Awam di Bandar Muar",,12.46 tengah hari,1246,ANNOTATION,[Dewan ditangguhkan pada pukul 12.46 tengah hari]
