@@ -748,7 +748,7 @@ def tabulate(hansard_date):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("hansard_date", help="hansard_date eg. 23052023",
-                        default="26032018", nargs="?")
+                        default="02032023", nargs="?")
     # Parse arguments
     args = parser.parse_args()
     tabulate(args.hansard_date)
