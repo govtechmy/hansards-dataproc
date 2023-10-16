@@ -20366,3 +20366,306 @@ Biasiswa dalam negara  200 orang  87 orang
 
 ___
 
+30112021
+Anchor row is: 2. Sekolah Menengah 20,086 20,819 21,099 21,100
+Table text similarity score is: 100
+Table text is:
+___
+BIL. UNJURAN  TAHUN  TAHUN  TAHUN  TAHUN 
+BILANGAN  2022 2023 2024 2025
+MURID
+1. Sekolah Rendah 24,339 24,588 24,588 24,588
+2. Sekolah Menengah 20,086 20,819 21,099 21,100
+
+___
+
+Candidate text is:
+___
+BIL.  UNJURAN  TAHUN  TAHUN  TAHUN  TAHUN 
+BILANGAN 
+2022  2023  2024  2025 
+MURID 
+1.  Sekolah Rendah  24,339  24,588  24,588  24,588 
+2.  Sekolah Menengah  20,086  20,819  21,099  21,100 
+
+___
+
+30112021
+Anchor row is: 2. Sekolah Menengah  8,580 8,500 8,432 8,373
+Table text similarity score is: 100
+Table text is:
+___
+BIL. UNJURAN  TAHUN  TAHUN  TAHUN  TAHUN 
+BILANGAN  2022 2023 2024 2025
+MURID
+1. Sekolah Rendah  10,229 10,297 10,354 10,404
+Parlimen Kangar
+2. Sekolah Menengah  8,580 8,500 8,432 8,373
+Parlimen Kangar
+
+___
+
+Candidate text is:
+___
+BIL.  UNJURAN  TAHUN  TAHUN  TAHUN  TAHUN 
+BILANGAN 
+2022  2023  2024  2025 
+MURID 
+1.  Sekolah Rendah  10,229  10,297  10,354  10,404 
+Parlimen Kangar  
+2.  Sekolah Menengah  8,580  8,500  8,432  8,373 
+Parlimen Kangar 
+
+___
+
+28062012
+Anchor row is: discharge, not amount to an acquittal.
+Table text similarity score is: 82
+Table text is:
+___
+Jenis Kes Jumlah
+Yang dituduh 816
+Disabitkan salah 324
+Dilepaskan tanpa dibebaskan ataupun  69
+discharge, not amount to an acquittal.
+
+___
+
+Candidate text is:
+___
+dibuka melibatkan pegawai awam ialah sebanyak 5,983.  
+  
+Jenis Kes  Jumlah 
+ 
+Yang dituduh  816 
+Disabitkan salah  324 
+Dilepaskan tanpa dibebaskan ataupun   
+discharge, not amount to an acquittal. 
+
+___
+
+28062012
+Anchor row is: Masih dalam perbicaraan ataupun rayuan 105
+Table text similarity score is: 100
+Table text is:
+___
+Didapati tidak bersalah 298
+Kes ditarik balik 20
+Masih dalam perbicaraan ataupun rayuan 105
+
+___
+
+Candidate text is:
+___
+Didapati tidak bersalah  298 
+Kes ditarik balik  20 
+Masih dalam perbicaraan ataupun rayuan  105 
+
+___
+
+28062012
+Anchor row is: Jenis Kes Jumlah
+Table text similarity score is: 98
+Table text is:
+___
+Jenis Kes Jumlah
+Yang dituduh 816
+Disabitkan salah 324
+Dilepaskan tanpa dibebaskan ataupun  69
+discharge, not amount to an acquittal.
+
+___
+
+Candidate text is:
+___
+Jenis Kes  Jumlah 
+ 
+Yang dituduh  816 
+Disabitkan salah  324 
+Dilepaskan tanpa dibebaskan ataupun   
+discharge, not amount to an acquittal. 
+69 
+
+___
+
+28062012
+Anchor row is: Didapati tidak bersalah 298
+Table text similarity score is: 100
+Table text is:
+___
+Didapati tidak bersalah 298
+Kes ditarik balik 20
+Masih dalam perbicaraan ataupun rayuan 105
+
+___
+
+Candidate text is:
+___
+Didapati tidak bersalah  298 
+Kes ditarik balik  20 
+Masih dalam perbicaraan ataupun rayuan  105 
+
+___
+
+28062012
+Anchor row is: Jenis Kes Jumlah
+Table text similarity score is: 98
+Table text is:
+___
+Jenis Kes Jumlah
+Yang dituduh 816
+Disabitkan salah 324
+Dilepaskan tanpa dibebaskan ataupun  69
+discharge, not amount to an acquittal.
+
+___
+
+Candidate text is:
+___
+Jenis Kes  Jumlah 
+ 
+Yang dituduh  816 
+Disabitkan salah  324 
+Dilepaskan tanpa dibebaskan ataupun   
+discharge, not amount to an acquittal. 
+69 
+
+___
+
+28062012
+Anchor row is: Didapati tidak bersalah 298
+Table text similarity score is: 100
+Table text is:
+___
+Didapati tidak bersalah 298
+Kes ditarik balik 20
+Masih dalam perbicaraan ataupun rayuan 105
+
+___
+
+Candidate text is:
+___
+Didapati tidak bersalah  298 
+Kes ditarik balik  20 
+Masih dalam perbicaraan ataupun rayuan  105 
+
+___
+
+07042010
+Anchor row is: Negeri Bilangan penderaan  
+Table text similarity score is: 100
+Table text is:
+___
+Negeri Bilangan penderaan  
+kanak-kanak & Bayi
+Perlis 245
+Kedah 420
+Pulau Pinang 891
+Perak 861
+Selangor 3,234
+Kuala Lumpur 2,221
+Negeri Sembilan 799
+Melaka 301
+Johor 599
+Pahang 440
+Terengganu 168
+Kelantan 105
+Sabah 34
+Sarawak 440
+Jumlah 10,758
+
+___
+
+Candidate text is:
+___
+Negeri  Bilangan penderaan  
+kanak-kanak & Bayi 
+Perlis  245 
+Kedah   420 
+Pulau Pinang   891 
+Perak  861 
+Selangor   3,234 
+Kuala Lumpur   2,221 
+Negeri Sembilan  799 
+Melaka   301 
+Johor   599 
+Pahang   440 
+Terengganu  168 
+Kelantan  105 
+Sabah  34 
+Sarawak  440 
+Jumlah  10,758 
+
+___
+
+07042010
+Anchor row is: Negeri Bilangan penderaan  
+Table text similarity score is: 100
+Table text is:
+___
+Negeri Bilangan penderaan  
+kanak-kanak & Bayi
+Perlis 245
+Kedah 420
+Pulau Pinang 891
+Perak 861
+Selangor 3,234
+Kuala Lumpur 2,221
+Negeri Sembilan 799
+Melaka 301
+Johor 599
+Pahang 440
+Terengganu 168
+Kelantan 105
+Sabah 34
+Sarawak 440
+Jumlah 10,758
+
+___
+
+Candidate text is:
+___
+Negeri  Bilangan penderaan  
+kanak-kanak & Bayi 
+Perlis  245 
+Kedah   420 
+Pulau Pinang   891 
+Perak  861 
+Selangor   3,234 
+Kuala Lumpur   2,221 
+Negeri Sembilan  799 
+Melaka   301 
+Johor   599 
+Pahang   440 
+Terengganu  168 
+Kelantan  105 
+Sabah  34 
+Sarawak  440 
+Jumlah  10,758 
+
+___
+
+12042010
+Anchor row is: Negeri yang mendapatkan rawatan Peratusan (%)
+Table text similarity score is: 100
+Table text is:
+___
+Negeri yang mendapatkan rawatan Peratusan (%)
+Wilayah Persekutuan Kuala   Lumpur 11
+Pahang 11
+Johor 10
+Perak 9
+
+___
+
+Candidate text is:
+___
+Negeri yang mendapatkan rawatan  Peratusan (%) 
+ 
+Wilayah Persekutuan Kuala   Lumpur   11 
+Pahang  11 
+Johor   10 
+Perak   9 
+
+___
+

@@ -74,6 +74,7 @@ def format_table(text, bold, italics, table, hansard_date):
         anchor_row = table_text_rows[idx]
         # find the row in the text corresponding to this anchor
         anchor_idx = space_stripped_text.index(spaced_stripped_candidate_anchor)
+        break
     if anchor_idx == -1:
         # try again but now allow duplicates (the duplicated row can be in the next table, which is no problem)
         for idx in range(len(table_text_rows)):
@@ -248,7 +249,7 @@ def preprocess(hansard_date):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("hansard_date", help="hansard_date eg. 12102021",
-                        default="30112021", nargs="?")
+                        default="12042010", nargs="?")
     # Parse arguments
     args = parser.parse_args()
     preprocess(args.hansard_date)

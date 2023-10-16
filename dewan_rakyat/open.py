@@ -12,7 +12,7 @@ def open_pdf(_date):
     pdf_path = f"src_hansard/{year}/DR-{_date}.pdf"
     parsed_path = f"parsed_pdf/{year}/{formatted_date}/plaintext.txt"
     pretabulate_path = f"pretabulation/{year}/{formatted_date}/plaintext.txt"
-    tabulated_path = f"tabulated/{year}/{formatted_date}/plaintext.txt"
+    tabulated_path = f"tabulated/{year}/{formatted_date}/result.csv"
 
     if os.path.exists(pdf_path):
         os.system(f"open {pdf_path}")  # for macOS
