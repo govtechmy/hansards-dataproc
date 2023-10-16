@@ -4,6 +4,7 @@ import pretabulation_processing
 import tabulate_hansard
 from tqdm import tqdm
 import edit_hansards
+import post_parsing_edits
 
 
 def get_filenames_in_folder(folder_path_):
@@ -40,6 +41,7 @@ hansard_dates = [x[3:3 + 8] for x in filenames]
 #             f.write(hansard_date + "\n")
 #         print("Error parsing " + hansard_date)
 #         continue
+# post_parsing_edits.modify_tables()
 
 # for pre-tabulation
 # pre_tabulation_files_for_deletion = [

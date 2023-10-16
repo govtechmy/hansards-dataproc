@@ -10,6 +10,8 @@ To be specific, these files will be run in order.
 
 Run `parse_pdf.py` to get the four output files of plaintext, binary bold and italic files (as 0, 1, or whitespaces) and tables.json. The parsing will only process the content from DOA onwards (ignores table of contents and MP attendance).
 
+Run `post_parsing_edits.py` to fix tables with known errors.
+
 Run `pretabulation_processing.py` to insert tables and to remove header rows, and other processing.
 
 Run `edit_hansards.py` to edit the hansards to fix known any errors to ease tabulation.

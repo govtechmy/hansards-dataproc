@@ -61,12 +61,13 @@ def format_table(text, bold, italics, table, hansard_date):
     table_text_rows = table_text.strip().split('\n')
     space_stripped_text = [re.sub(r'\s', '', t) for t in text]
     for idx in range(len(table_text_rows)):
-        if len(table_text_rows[idx]) < 8:
+        if len(table_text_rows[idx]) < 6:
             # too short to be anchor
             continue
         spaced_stripped_candidate_anchor = re.sub(r'\s', '', table_text_rows[idx])
-        if space_stripped_text.count(spaced_stripped_candidate_anchor) != 1:
-            # no exact match in text or duplicate match
+        if space_stripped_text.count(spaced_stripped_candidate_anchor) < 1:
+            # no exact match in text
+            # duplicate is ok as the first one will have pipes added
             continue
         table_anchor_idx = idx
         anchor_row = table_text_rows[idx]
@@ -235,7 +236,7 @@ def preprocess(hansard_date):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("hansard_date", help="hansard_date eg. 12102021",
-                        default="20112013", nargs="?")
+                        default="28062012", nargs="?")
     # Parse arguments
     args = parser.parse_args()
     preprocess(args.hansard_date)
