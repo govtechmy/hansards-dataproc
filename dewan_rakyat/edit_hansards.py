@@ -780,11 +780,6 @@ def edit_hansards():
             "bahagian dia terangkan... [Disampuk] Itu sekejap lagi saya akan sambut. Saya rasa benda\n",
             'none',
             '00000000 000 000000000000 1111111111 000 0000000 0000 0000 0000 0000000 0000 0000 00000\n')
-    replace('25112014',
-            "senarai tersebut.”\n",
-            "senarai tersebut.”]\n",
-            'none',
-            'all')
     replace('31032014',
             "dan butiran projek dalam ruang sembilan dan sepuluh penyata tersebut”.\n",
             "dan butiran projek dalam ruang sembilan dan sepuluh penyata tersebut”.]\n",
@@ -825,6 +820,26 @@ def edit_hansards():
             "[Timbalan Yang di-Pertua (Datuk Ronald Kiandee) mempengerusikan\n",
             'none',
             'all')
+    replace('08112016',
+            "Tuan Mohamed Hanipa bin Maidin [Sepang]: [Bangun[\n",
+            "Tuan Mohamed Hanipa bin Maidin [Sepang]: [Bangun]\n",
+            '1111 1111111 111111 111 111111 111111111 00000000\n',
+            '0000 0000000 000000 000 000000 000000000 11111111\n',)
+    replace('16032011',
+            "Beberapa Ahli: [Bangun[\n",
+            "Beberapa Ahli: [Bangun]\n",
+            '11111111 11111 00000000\n',
+            '00000000 00000 11111111\n',)
+    replace('18022009',
+            "[Ketawa[\n",
+            "[Ketawa]\n",
+            'none',
+            'all')
+    replace('21102009',
+            "Tuan Masir Kujat [Sri Aman]: [Bangun[\n",
+            "Tuan Masir Kujat [Sri Aman]: [Bangun]\n",
+            '1111 11111 11111 1111 111111 00000000\n',
+            '0000 00000 00000 0000 000000 11111111\n')
 
 
 if __name__ == "__main__":

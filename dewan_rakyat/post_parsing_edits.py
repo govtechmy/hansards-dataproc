@@ -35,6 +35,18 @@ def modify_tables():
             ]
         ]
     ], None)
+    modify_table('25112014', [
+        38,
+        25,
+        [
+            [
+                [
+                    "RM1,987,000,000",
+                    "[na1]"
+                ]
+            ]
+        ]
+    ], None)
 
 
 if __name__ == "__main__":

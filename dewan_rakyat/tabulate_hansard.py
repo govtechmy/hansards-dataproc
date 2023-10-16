@@ -398,6 +398,20 @@ def tabulate(hansard_date):
             num_unclosed_brackets = text[row_id].count('[') - text[row_id].count(']')
             # keep on looping until we tally up the correct number of brackets
             while add_idx + row_id < num_rows and num_unclosed_brackets > 0:
+                if len(text[row_id + add_idx].strip()) > 5 and prop_of_1_among_binary(italics[row_id + add_idx]) == 0 \
+                        and hansard_date != "26032018":
+                    # most likely the annotation is missing a ]
+                    # we will assume that the annotation is closed
+                    # turn off autoclosing for 26032018 where a whole chunk of annotation is not italicized
+                    with open('dump/autoclosed_annotation.txt', 'a') as f:
+                        f.write(f'{hansard_date}\n')
+                        f.write(f'{current["speech"]}\n')
+                        f.write("AUTOCLOSED AS IT IS FOLLOWED BY\n")
+                        f.write(f'{text[row_id + add_idx]}')
+                        f.write(f'{bold[row_id + add_idx]}')
+                        f.write(f'{italics[row_id + add_idx]}')
+                        f.write('\n')
+                    break
                 current['speech'] += text[row_id + add_idx]
                 current['speech_bold'] += bold[row_id + add_idx]
                 current['speech_italics'] += italics[row_id + add_idx]
@@ -734,7 +748,7 @@ def tabulate(hansard_date):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("hansard_date", help="hansard_date eg. 23052023",
-                        default="06042015", nargs="?")
+                        default="26032018", nargs="?")
     # Parse arguments
     args = parser.parse_args()
     tabulate(args.hansard_date)

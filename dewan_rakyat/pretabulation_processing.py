@@ -65,14 +65,26 @@ def format_table(text, bold, italics, table, hansard_date):
             # too short to be anchor
             continue
         spaced_stripped_candidate_anchor = re.sub(r'\s', '', table_text_rows[idx])
-        if space_stripped_text.count(spaced_stripped_candidate_anchor) < 1:
+        if space_stripped_text.count(spaced_stripped_candidate_anchor) != 1:
             # no exact match in text
-            # duplicate is ok as the first one will have pipes added
+            # prevent using a row that has duplicates in the table
+            # so that anchor row will not get mismatched to another row
             continue
         table_anchor_idx = idx
         anchor_row = table_text_rows[idx]
         # find the row in the text corresponding to this anchor
         anchor_idx = space_stripped_text.index(spaced_stripped_candidate_anchor)
+    if anchor_idx == -1:
+        # try again but now allow duplicates (the duplicated row can be in the next table, which is no problem)
+        for idx in range(len(table_text_rows)):
+            if len(table_text_rows[idx]) < 6:
+                continue
+            spaced_stripped_candidate_anchor = re.sub(r'\s', '', table_text_rows[idx])
+            if space_stripped_text.count(spaced_stripped_candidate_anchor) < 1:
+                continue
+            table_anchor_idx = idx
+            anchor_row = table_text_rows[idx]
+            anchor_idx = space_stripped_text.index(spaced_stripped_candidate_anchor)
     assert anchor_idx != -1, f'Anchor not found for table {table_text}'
     # delete the text inside the text that corresponds to the table
     # since the content might be jumbled, particularly the header row,
@@ -111,7 +123,7 @@ def format_table(text, bold, italics, table, hansard_date):
     if table_text_similarity_score < 90:
         print(f"WARN: table text similarity score is too low: {table_text_similarity_score}")
         print(f"Anchor row is: {anchor_row}")
-    with open(f"matched_tables.txt", 'a') as f:
+    with open(f"dump/matched_tables.txt", 'a') as f:
         f.write(f"{hansard_date}\n")
         f.write(f"Anchor row is: {anchor_row}\n")
         f.write(f"Table text similarity score is: {table_text_similarity_score}\n")
@@ -236,7 +248,7 @@ def preprocess(hansard_date):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("hansard_date", help="hansard_date eg. 12102021",
-                        default="28062012", nargs="?")
+                        default="30112021", nargs="?")
     # Parse arguments
     args = parser.parse_args()
     preprocess(args.hansard_date)
