@@ -2,19 +2,25 @@ This project aims to digitalise the Malaysian [Dewan Rakyat](https://www.parlime
 
 ## Usage
 1. Install requirements `pip install -r requirements.txt`
-2. Bulk process with `python3 batch_run.py` (check the file and uncomment the wanted processes as this is still in active development)
+2. Change directory with either `cd dewan_rakyat` or `cd dewan_negara`.
+3. Bulk process with `python3 batch_run.py`. If you are rerunning, free to comment out certain procedures to speed up the prcoess (e.g. `parse_pdf.py` takes a long time but we have stored the output in `parsed_pdf`).
 
 ![](README_images/usage.png)
 
 To be specific, these files will be run in order.
 
-Run `parse_pdf.py` to get the four output files of plaintext, binary bold and italic files (as 0, 1, or whitespaces) and tables.json. The parsing will only process the content from DOA onwards (ignores table of contents and MP attendance).
+Run `parse_pdf.py` to get the four output files
+- plaintext.txt
+- bold.txt and italic.txt files (as 0, 1, or whitespaces)
+- tables.json.
 
-Run `post_parsing_edits.py` to fix tables with known errors.
+This will get the PDFs from `src_hansard` where the Hansards are named as `DR-DDMMYYYYY.pdf` or `DN-DDMMYYYYY.pdf`. The files are stored in `parsed_pdf/YYYY/YYYY-MM-DD/`. The parsing will only process the content from DOA onwards (ignores table of contents and MP attendance). 
 
-Run `pretabulation_processing.py` to insert tables and to remove header rows, and other processing.
+Run `post_parsing_edits.py` to modify tables with known errors. This will modify `tables.json` in place.
 
-Run `edit_hansards.py` to edit the hansards to fix known any errors to ease tabulation.
+Run `pretabulation_processing.py` to insert tables and to remove header rows, and other processing. The input is from `parsed_pdf/` and the output is stored in `pretabulation_processing/`.
+
+Run `edit_hansards.py` to edit the hansards to fix known any errors to ease tabulation. This will modify `plaintext.txt`, `bold.txt`, `italics.txt` in place.
 
 Run `tabulate_hansards.py` to tabulate the hansards into a CSV file with the following fields
 - level_1
@@ -23,6 +29,8 @@ Run `tabulate_hansards.py` to tabulate the hansards into a CSV file with the fol
 - timestamp
 - author
 - speech
+
+The input is from `pretabulation_processing/` and the output is stored in `tabulated_hansards/`.
 
 
 ## On parsing fonts
@@ -110,3 +118,6 @@ To minimize edits to the Hansard that is not related to formatting and punctuati
 - Be careful when berbelah bahagi shows up. Some Hansards present it differently than others. Usually, it will have the keywords "hadir", "bersetuju", or "undi", and are usually bolded and lowercased, except for 17072019 where it is uppercased and hence parsed as a level_2.
 - 26102021, 05102021, 08122020 have low table matching scores, but they are still a perfect match and you can ignore those errors.
 - 30112020, 29072021, 23032022 have footnotes (not guaranteed to be exhaustive). Due to its complicated nature, you will have to manually edit this into the end product.
+
+## Useful tools
+When you hope to inspect a certain Hansard it is helpful to use `python open.py DDMMYYYY` to open all the files related to that Hansard.

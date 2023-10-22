@@ -3449,6 +3449,37 @@ Lain-lain  198
 ___
 
 30062014
+Anchor row is: Agensi Penguat kuasa Kertas Siasatan
+Table text similarity score is: 100
+Table text is:
+___
+Agensi Penguat kuasa Kertas Siasatan
+PDRM 219
+SPRM 119
+LHDN 115
+Jabatan Kastam 14
+Bank Negara Malaysia (BNM) 5
+KPDNKK 5
+Suruhanjaya Sekuriti 1
+JUMLAH 568
+
+___
+
+Candidate text is:
+___
+Agensi Penguat kuasa  Kertas Siasatan 
+PDRM  219 
+SPRM  119 
+LHDN  115 
+Jabatan Kastam  14 
+Bank Negara Malaysia (BNM)  5 
+KPDNKK  5 
+Suruhanjaya Sekuriti   1 
+JUMLAH                       568 
+
+___
+
+30062014
 Anchor row is: KES JUMLAH KES
 Table text similarity score is: 100
 Table text is:
@@ -4645,6 +4676,32 @@ Tahun
 2012  11 
 2013  7 
 Jumlah  19 
+
+___
+
+08102013
+Anchor row is: Negara Kadar Pengangguran [peratus]
+Table text similarity score is: 100
+Table text is:
+___
+Negara Kadar Pengangguran [peratus]
+Sepanyol 26.3
+Itali 12.0
+US 7.4
+Australia 5.7
+Jepun 3.8 peratus 3.8
+
+___
+
+Candidate text is:
+___
+Negara  Kadar Pengangguran [peratus] 
+ 
+Sepanyol   26.3 
+Itali   12.0 
+US  7.4 
+Australia   5.7 
+Jepun 3.8 peratus  3.8 
 
 ___
 
@@ -6408,6 +6465,29 @@ Tahun  Jumlah (orang)
 ___
 
 19042011
+Anchor row is: Tahun Bilangan Kes
+Table text similarity score is: 100
+Table text is:
+___
+Tahun Bilangan Kes
+2008 408
+2009 352
+2010 582
+2011 (hingga Mac) 67
+
+___
+
+Candidate text is:
+___
+Tahun  Bilangan Kes 
+2008  408 
+2009  352 
+2010  582 
+2011 (hingga Mac)  67 
+
+___
+
+19042011
 Anchor row is: Tahun Perbelanjaan (RM)
 Table text similarity score is: 100
 Table text is:
@@ -7019,6 +7099,34 @@ Perlis  1
 
 ___
 
+28042010
+Anchor row is: KES-KES DIRAWAT DI KLINIK 1MALAYSIA 
+Table text similarity score is: 100
+Table text is:
+___
+KES-KES DIRAWAT DI KLINIK 1MALAYSIA 
+Kes-kes Rawatan Peratus ( peratus)
+Batuk selesema 56
+Badan tidak sihat 11
+Sakit perut 8
+Sakit kulit 7
+Sakit otot 5
+
+___
+
+Candidate text is:
+___
+KES-KES DIRAWAT DI KLINIK 1MALAYSIA 
+ 
+Kes-kes Rawatan  Peratus ( peratus) 
+Batuk selesema  56 
+Badan tidak sihat  11 
+Sakit perut  8 
+Sakit kulit  7 
+Sakit otot  5 
+
+___
+
 21122010
 Anchor row is: Punca Membuat Pinjaman Peratus  
 Table text similarity score is: 100
@@ -7389,6 +7497,27 @@ Pulau Pinang  3
 Kedah  4 
 Perak  4 
 Terengganu  1 
+
+___
+
+28072010
+Anchor row is: Graduan Jumlah (Orang)
+Table text similarity score is: 100
+Table text is:
+___
+Graduan Jumlah (Orang)
+Pegawai perubatan 2,220
+Pegawai pergigian 210
+Farmasi 768
+
+___
+
+Candidate text is:
+___
+Graduan  Jumlah (Orang) 
+Pegawai perubatan  2,220 
+Pegawai pergigian  210 
+Farmasi  768 
 
 ___
 

@@ -1,10 +1,10 @@
-level_1,level_2,level_3,timestamp,author,speech
-,,,,ANNOTATION,[TuanYangdi-PertuamempengerusikanMesyuarat]
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,,TuanYangdi-Pertua,"*Assalamualaikum*,selamatpagidansalamsejahtera.Dr.
+level_1,level_2,level_3,raw_timestamp,timestamp,author,speech
+,,,10.00 pagi,1000,ANNOTATION,[TuanYangdi-PertuamempengerusikanMesyuarat]
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,10.00 pagi,1000,TuanYangdi-Pertua,"*Assalamualaikum*,selamatpagidansalamsejahtera.Dr.
 YaakobbinSapari."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,,Dr.YaakobbinSapari,"*Sembunyitanganlepasbalingbatu;
-Soalansayanomborsatu.*"
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,1.,,,Dr. Yaakob bin Sapari,"minta Menteri Sumber Manusia menyatakan, masalah
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,10.00 pagi,1000,Dr.YaakobbinSapari,"*Sembunyitanganlepasbalingbatu;
+Soalansayanomborsatu.*
+**1. Dr. Yaakob bin Sapari** minta Menteri Sumber Manusia menyatakan, masalah
 pengangguran dalam kalangan graduan universiti yang sangat membimbangkan ekoran
 pandemik COVID-19. Adakah sektor kerajaan dan syarikat berkaitan kerajaan (GLC)
 bersedia untuk menawarkan jawatan baharu dan membuka peluang pekerjaan kepada
@@ -42,14 +42,14 @@ denganfokuskepadasektorberasaskanbidangteknikaldankewangan.
 Sehingga 31 Ogos 2021, seramai 47,672 orang telah diambil bekerja di mana
 35,917 orang telah ditempatkan di sektor swasta. Seramai 11,755 orang ditempatkan di
 GLCdanrakanstrategikmereka.Sekian, terimakasih."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,1.,,,TuanYangdi-Pertua,Soalantambahan.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,1.,,,Dato’ Kesavadas A. Achyuthan Nair,"Ya. Tuan Yang di-Pertua, dengan izin.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,10.00 pagi,1000,TuanYangdi-Pertua,Soalantambahan.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,10.00 pagi,1000,Dato’ Kesavadas A. Achyuthan Nair,"Ya. Tuan Yang di-Pertua, dengan izin.
 Terima kasih Tuan Yang di-Pertua. Yang Berhormat Timbalan Menteri, menerusi Majlis
 PekerjaanNegara,apafungsikementeriandalammewujudkangalakankepadasyarikat-
 syarikat berkaitan kerajaan (GLC) di bawah Kementerian Kewangan (Diperbadankan)
 atau MOF Incorporated bagi mewujudkan peluang pekerjaan yang khusus kepada para
 graduanbaharuIPTAtempatan.Sekian, terimakasih."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,1.,,,Tuan Haji Awang bin Hashim,"Terima kasih kepada Yang Berhormat Senator
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,10.00 pagi,1000,Tuan Haji Awang bin Hashim,"Terima kasih kepada Yang Berhormat Senator
 Dato’ Kesavadas. Kita juga sentiasa mendapat maklumat- Tuan Yang di-Pertua kita
 sentiasa mendapat maklumat dari Jabatan Perangkaan Negara untuk kita menyelaras
 graduan-graduan dalam pasaran yang sudah menganggur atau *unemployed in market,*
@@ -69,11 +69,11 @@ premis bagi mereka mendapat- termasuk MYFutureJobs yang dirangka, program
 aplikasiMYFutureJobs*.* Daftar saja dapat RM300 dan MYFutureJobs *-* cari kerjakepada
 graduan-graduan yang berada dalam pasaran yang tidak ada kerja ini. Sekian, terima
 kasih."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,1.,,1010,Dr.YaakobbinSapari,SoalantambahanTuanYangdi-Pertua.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,1.,,1010,TuanYangdi-Pertua,Silakan.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,1.,,1010,Dr. Yaakob bin Sapari,"Berapakah kadar elaun minimum yang dibayar kepada
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1010,1010,Dr.YaakobbinSapari,SoalantambahanTuanYangdi-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1010,1010,TuanYangdi-Pertua,Silakan.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1010,1010,Dr. Yaakob bin Sapari,"Berapakah kadar elaun minimum yang dibayar kepada
 graduan-graduaniniyangdiberitempatuntukjalanilatihanini?"
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,1.,,1010,Datuk Haji Awang bin Hashim,"Terima kasih. Untuk program MYFutureJobs,
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1010,1010,Datuk Haji Awang bin Hashim,"Terima kasih. Untuk program MYFutureJobs,
 bagi penganggur atau pun graduan yang sedang mencari kerja, daftar sahaja dengan
 aplikasi MYFutureJobs, kerajaan automatik memberi insentif sebanyak RM300 dan
 mencari kerja dalam tempoh sebulan. Katakanlah dalam tempoh sebulan, tidak dapat
@@ -85,13 +85,13 @@ Jadi insentif ini dalam program MYFutureJobs ini lebih kurang RM1,000
 sehingga mendapat pekerjaan. Inilah insentif-insentif yang kerajaan bantu anak-anak
 kita dalam pasaran yang keluar dalam pelbagai bidang untuk mencari kerja. Sekian,
 terimakasihTuanYangdi-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,1.,,1010,Dr.YaakobbinSapari,"TuanYangdi-Pertua,sedikitlagipenjelasan."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,1.,,1010,TuanYangdi-Pertua,YangBerhormatSenatorDatoDr.NuingJeluing.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,2.,,1010,DatoDr. NuingJeluing,"mintaMenteriPembangunanLuarBandar menyatakan,
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1010,1010,Dr.YaakobbinSapari,"TuanYangdi-Pertua,sedikitlagipenjelasan."
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1010,1010,TuanYangdi-Pertua,"YangBerhormatSenatorDatoDr.NuingJeluing.
+**2. DatoDr. NuingJeluing**mintaMenteriPembangunanLuarBandar menyatakan,
 adakah kementerian mempunyai sebarang rancangan untuk menambah lagi bilangan
 Pusat Komuniti Desa (PKD) di seluruh negara terutamanya di negeri Sarawak dan
 nyatakanjumlahterkiniperuntukanyangtelahdisalurkankesetiapPKDtersebut."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,2.,,1010,Timbalan Menteri Pembangunan Luar Bandar II [Datuk Haji Hasbi bin Habibollah],"Terima kasih. *Bismillahi Rahmani Rahim. Assalamualaikum
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1010,1010,Timbalan Menteri Pembangunan Luar Bandar II [Datuk Haji Hasbi bin Habibollah],"Terima kasih. *Bismillahi Rahmani Rahim. Assalamualaikum
 warahmatullahiwabarakatuh.*
 Tuan Yang di-Pertua dan Yang Berhormat Senator, untuk makluman Yang
 Berhormat, kerajaan telah mengumumkan penstrukturan semula, dengan izin, *Rural
@@ -111,12 +111,12 @@ pembangunan Rancangan Malaysia Kedua Belas berjumlah RM20 juta. Di samping itu,
 kementerian juga di peruntukkan dengan peruntukan mengurus berjumlah sebanyak
 RM3.302 juta bagi menampung perbelanjaan pengurusan 191 buah Pusat Komuniti
 Desabagitahun2021.Terimakasih."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,2.,,1010,Dato Dr. Nuing Jeluing,"Soalan tambahan Tuan Yang di-Pertua. Terima kasih
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1010,1010,Dato Dr. Nuing Jeluing,"Soalan tambahan Tuan Yang di-Pertua. Terima kasih
 Tuan Yang di-Pertua, terima kasih Yang Berhormat Menteri atas jawapan yang diberi.
 Soalan tambahan, apakah aktiviti-aktiviti yang dijalankan di Pusat Komuniti Desa dan
 kesannya untuk memupuk perpaduan rakyat dan mempromosi keusahawanan di
 kalanganrakyatsetempat?Terimakasih."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,2.,,1010,Datuk Haji Hasbi bin Habibollah,"Terima kasih Yang Berhormat Senator dan
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1010,1010,Datuk Haji Hasbi bin Habibollah,"Terima kasih Yang Berhormat Senator dan
 TuanYangdi-Pertua. Tadidalamsoalanutamasaya lupahendak menyatakan-mungkin
 sebagaimaklumat tambahanuntukYang Berhormat.Padamasaini diSarawak,taburan
 Pusat Komuniti Desa di Sarawak adalah seperti berikut iaitu PKD Selanyau di Parlimen
@@ -150,18 +150,18 @@ Sukan Negara peringkat kampung. Aktiviti kesukarelawanan ini
 akan dapat meningkatkan kesejahteraan dan memupuk
 perpaduanmasyarakatluarbandarsetempat.
 Terimakasih."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,2.,,1010,Datuk Razali bin Idris,"Tuan Yang di-Pertua, ada satu soalan tambahan Tuan
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1010,1010,Datuk Razali bin Idris,"Tuan Yang di-Pertua, ada satu soalan tambahan Tuan
 Yangdi-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,2.,,1010,TuanYangdi-Pertua,Sila.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,2.,,1010,DatukRazalibinIdris,"Okey, terimakasihTuanYangdi-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,2.,,1010,TuanYangdi-Pertua,Baiklah.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,2.,,1010,Datuk Razali bin Idris,"PKD terkait dengan Jawatankuasa Pembangunan
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1010,1010,TuanYangdi-Pertua,Sila.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1010,1010,DatukRazalibinIdris,"Okey, terimakasihTuanYangdi-Pertua."
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1010,1010,TuanYangdi-Pertua,Baiklah.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1010,1010,Datuk Razali bin Idris,"PKD terkait dengan Jawatankuasa Pembangunan
 Komuniti Kampung (JPKK). Jadi, Yang Berhormat Timbalan Menteri sekarang JPKK
 ada 13 lantikan dari pusat dan dua dari negeri, jumlahnya sebanyak 15.
 Memandangkanpenduduk semakinpadat dan semakinramai, apakahkerajaanataupun
 kementerian tidak bercadang untuk tambah lagi kepada lima orang anggota
 JawatankuasalantikandariPusat?TerimakasihTuanYangdi-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,2.,,1010,DatukHaji Hasbi bin Habibollah,"Terima kasihYang Berhormat Tuan Yangdi-
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1010,1010,DatukHaji Hasbi bin Habibollah,"Terima kasihYang Berhormat Tuan Yangdi-
 Pertua. Kerajaan melihat permohonan yang- sebagaimana yang disoalkan oleh Yang
 Berhormat. Memang betul rakyat dan kampung kita pun makin luas, penduduk pun
 makin bertambah dan pelbagai aktiviti sekarang ini banyak dijalankan di kampung-
@@ -169,13 +169,13 @@ kampung dan di luar bandar. Saya rasa saya tidak dapat memberikan keputusan yang
 muktamaddi sinisamaada bolehataupun tidak.*Insya-Allah* perkaraini saya akanbawa
 untuk diangkat kepada kementerian dan seterusnya kepada pihak kerajaan sama ada
 bolehditambahataupuntidak. Terimakasih."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,2.,,1010,Tuan Yang di-Pertua,"Yang Berhormat Senator Dr. Wan Martina binti Wan
-Yusoff."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,3.,,1010,Dr. Wan Martina binti Wan Yusoff,"minta Menteri Perdagangan Dalam Negeri
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1010,1010,Tuan Yang di-Pertua,"Yang Berhormat Senator Dr. Wan Martina binti Wan
+Yusoff.
+**3. Dr. Wan Martina binti Wan Yusoff** minta Menteri Perdagangan Dalam Negeri
 dan Hal Ehwal Pengguna menyatakan, program-program yang telah dijalankan untuk
 menggalakkan pembelian barangan buatan tempatan dan usaha untuk memasarkannya
 melaluikaedahatastalian."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,3.,,1010,Menteri Perdagangan Dalam Negeri dan Hal Ehwal Pengguna [Dato Sri Alexander Nanta Linggi],"Terima kasih Tuan Yang di-Pertua, untuk menjawab soalan
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1010,1010,Menteri Perdagangan Dalam Negeri dan Hal Ehwal Pengguna [Dato Sri Alexander Nanta Linggi],"Terima kasih Tuan Yang di-Pertua, untuk menjawab soalan
 nombor3.
 Tuan Yang di-Pertua, Kementerian Perdagangan Dalam Negeri dan Hal Ehwal
 Pengguna (KPDNHEP) telah melaksanakan program Beli Barangan Malaysia atau
@@ -196,7 +196,7 @@ Mall.* Inisiatif strategik yang telah dilaksanakan oleh ketiga-tiga *marketplace
 pertama,penghasilan*landing page*khusus untuk KBBM denganmenempatkanpelbagai
 kategori produk tempatan yang secara langsung memudahkan pengguna untuk mencari
 danmembeliproduktempatan."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,3.,,1020,Menteri Perdagangan Dalam Negeri dan Hal Ehwal Pengguna [Dato Sri Alexander Nanta Linggi],"Kedua, untuk menyediakan diskaun dan kupon bagi pembelian produk-produk
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1020,1020,Menteri Perdagangan Dalam Negeri dan Hal Ehwal Pengguna [Dato Sri Alexander Nanta Linggi],"Kedua, untuk menyediakan diskaun dan kupon bagi pembelian produk-produk
 tempatan seperti *purchase with purchase* (PWP); dan ketiga, menyediakan pelbagai
 jenis promosi berbentuk pengiklanan digital serta *voucher free shipping* kepada
 jenama-jenamaproduktempatan.
@@ -206,13 +206,13 @@ ini juga mengambil kira faktor kecenderungan pengguna untuk berbelanja melalui
 dalam talian serta ditambah pula dengan situasi semasa seperti pelaksanaan fasa-fasa
 Pelan Pemulihan Negara, pergerakan pengguna yang terhad dan risiko penularan
 pandemikCOVID-19.Sekian,terimakasih."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,3.,,1020,Dr.WanMartinabintiWanYusoff,Soalantambahan.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,3.,,1020,TuanYangdi-Pertua,Dipersilakan.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,3.,,1020,Dr. Wan Martina binti Wan Yusoff,"Terima kasih Yang Berhormat Menteri.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1020,1020,Dr.WanMartinabintiWanYusoff,Soalantambahan.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1020,1020,TuanYangdi-Pertua,Dipersilakan.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1020,1020,Dr. Wan Martina binti Wan Yusoff,"Terima kasih Yang Berhormat Menteri.
 Soalan tambahan saya adalah, apakah usaha kerajaan bagi memastikan keselamatan
 jualan atas talian, dan sejauh mana keberkesanan penguatkuasaan ke atas penipuan
 jualanatastalian?Terimakasih."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,3.,,1020,Dato Sri Alexander Nanta Linggi,"Tuan Yang di-Pertua, kementerian sangat
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1020,1020,Dato Sri Alexander Nanta Linggi,"Tuan Yang di-Pertua, kementerian sangat
 memandang serius ke atas penipuan transaksi atas talian yang dilaporkan oleh
 pengguna. Jadi KPDNHEP menggalakkan supaya pengguna yang merasakan diri
 mereka terpedaya apabila melakukan transaksi secara *online* untuk terus melaporkan
@@ -229,12 +229,12 @@ Jadi, bermuladaribulanJanuarihingga17Oktober2021sebanyak 9,666aduan
 telahditerimadimanasemuaaduantersebut telahdisiasatdibawahpelbagaisalahlaku
 urus niaga perdagangan elektronik merangkumi sub kategori aduan. Jumlahnya ada
 tujuhkategori,mungkintidakadamasauntukkitasebut."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,3.,,1020,TuanYangdi-Pertua,"Ya,ya."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,3.,,1020,Dato Sri Alexander Nanta Linggi,"Jadi, saya akan panjangkan maklumat
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1020,1020,TuanYangdi-Pertua,"Ya,ya."
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1020,1020,Dato Sri Alexander Nanta Linggi,"Jadi, saya akan panjangkan maklumat
 tambahaninikepadaYangBerhormatsecarabertulis.Terimakasih."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,3.,,1020,TuanYangdi-Pertua,"TerimakasihYangBerhormatMenteri.
-DatukTeoEngTee@TeoKokChee."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,4.,,1020,Datuk Teo Eng Tee @ Teo Kok Chee,"minta Menteri Kesihatan menyatakan,
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1020,1020,TuanYangdi-Pertua,"TerimakasihYangBerhormatMenteri.
+DatukTeoEngTee@TeoKokChee.
+**4. Datuk Teo Eng Tee @ Teo Kok Chee** minta Menteri Kesihatan menyatakan,
 status terkini mengenai hasil kajian, dan bagaimana ia dikaji oleh kementerian
 berhubung keperluan pengambilan dos ketiga bagi vaksin COVID-19, serta bilakah
 keputusankeperluandosketigadapatdicapai.
@@ -291,8 +291,8 @@ anggota barisan hadapan, individu yang tinggal ataupun staf
 bekerja di pusat jagaan yang panjang dan juga mereka yang
 berumur60tahun.
 TuanYangdi-Pertua,boleh30saat?Sedikitlagiuntukbahagiankedua."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,4.,,1020,TuanYangdi-Pertua,Ya.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,4.,,1020,Dato’ Dr. Haji Noor Azmi bin Ghazali,"Terima kasih Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1020,1020,TuanYangdi-Pertua,Ya.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1020,1020,Dato’ Dr. Haji Noor Azmi bin Ghazali,"Terima kasih Tuan Yang di-Pertua.
 Pada 13 Oktober, Yang Berhormat Menteri Kesihatan telah mengumumkan pemberian
 dospenggalak-*booster,*secarasukareladanpercumadibawahprogramPICK*.*
 Sejajar dengan itu keputusan tersebut di negeri Sarawak merupakan negeri
@@ -305,20 +305,20 @@ menerima dos lengkap vaksin *Comirnaty* sekurang-kurangnya enam bulan yang lepas
 Golongan ini akan menerima dos penggalak jenis yang sama ataupun *homologous* iaitu
 vaksin *Comirnaty* memandangkan hanya *Comirnaty* yang mendapat kelulusan bersyarat
 olehPKPDpada8Oktober2021.TerimakasihTuanYangdi-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,4.,,1020,Dato’KesavadasA.AchyuthanNair,TuanYangdi-Pertua.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,4.,,1020,Tuan Yang di-Pertua,"Boleh, boleh tidak dimohon kementerian terjemahkan
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1020,1020,Dato’KesavadasA.AchyuthanNair,TuanYangdi-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1020,1020,Tuan Yang di-Pertua,"Boleh, boleh tidak dimohon kementerian terjemahkan
 perkataanantibodi,bolehkahdijadikanantibadan..."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,4.,,1020,ANNOTATION,[Ketawa]
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,4.,,1020,Dato’KesavadasA.AchyuthanNair,Antibadan.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,4.,,1020,Dato’ Dr. Haji Noor Azmi bin Ghazali,"Saya ingat antibodi Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1020,1020,ANNOTATION,[Ketawa]
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1020,1020,Dato’KesavadasA.AchyuthanNair,Antibadan.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1020,1020,Dato’ Dr. Haji Noor Azmi bin Ghazali,"Saya ingat antibodi Tuan Yang di-
 Pertua."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,4.,,1020,TuanYangdi-Pertua,Itupermohonan
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,4.,,1020,Dato’Dr.HajiNoorAzmibinGhazali,"Ya, sayacubatengok,antibadan."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,4.,,1020,TuanYangdi-Pertua,Adatambahantadi.Dipersilakan.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,4.,,1020,Datuk Teo Eng Tee @ Teo Kok Chee,"Terima kasih Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1020,1020,TuanYangdi-Pertua,Itupermohonan
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1020,1020,Dato’Dr.HajiNoorAzmibinGhazali,"Ya, sayacubatengok,antibadan."
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1020,1020,TuanYangdi-Pertua,Adatambahantadi.Dipersilakan.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1020,1020,Datuk Teo Eng Tee @ Teo Kok Chee,"Terima kasih Tuan Yang di-Pertua.
 Soalan tambahan saya. Adalah adakah kerajaan akan mengubah undang-undang
 mewajibkansemuarakyatMalaysiamenerimavaksinpadamasaakandatang?"
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,4.,,1020,Dato’ Dr. Haji Noor Azmi bin Ghazali,"Terima kasih Yang Berhormat Senator.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1020,1020,Dato’ Dr. Haji Noor Azmi bin Ghazali,"Terima kasih Yang Berhormat Senator.
 Mendapat vaksinini merupakanperkarayang sangat penting sebab itu*tagline* kitaialah,
 “Lindung Diri, Lindung Semua.” Lindung diri kita, hendak lindung semua dan juga
 hendak lindung mereka yang tidak boleh menerima vaksin disebabkan kesakitan dan
@@ -329,13 +329,13 @@ KKM setiap hari menyarankan betapa pentingnya kita mengambil vaksin ini untuk
 keselamatan semua rakyat Malaysia hari ini. Jadi, pada ketika ini juga kita belum lagi
 memuktamadkan sama ada orang itu wajib untuk mengambil vaksin untuk COVID-19.
 Terimakasih."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,4.,,1020,TuanYangdi-Pertua,Dipersilakan.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,4.,,1020,Dato’KesavadasA. AchyuthanNair,"TerimakasihTuanYangdi-Pertua. Yang
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1020,1020,TuanYangdi-Pertua,Dipersilakan.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1020,1020,Dato’KesavadasA. AchyuthanNair,"TerimakasihTuanYangdi-Pertua. Yang
 Berhormat Timbalan Menteri, apa bentuk analisis penilaian risiko atau *risk assessment,*
 dengan izin, yang sedang dilakukan oleh Kementerian bagi memuktamadkan
 pelaksanaan pemberian dos penggalak menerusi *heterology* atau *heterologous
 vaccination?*Terimakasih."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,4.,,1030,Dato’ Dr. Haji Noor Azmi bin Ghazali,"Terima kasih Yang Berhormat. Satu
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1030,1030,Dato’ Dr. Haji Noor Azmi bin Ghazali,"Terima kasih Yang Berhormat. Satu
 soalan yang penting. Sebab apa, banyak juga orang bertanya kita, *“Saya terima vaksin
 Sinovac satu dan juga dua, jadi macam mana saya hendak terima dos vaksin Pfizer
 BioNTech?”*
@@ -348,12 +348,12 @@ perkara ini sebab kita pun hanya pada ketika ini, NPRA ataupun PKPD telah hanya
 meluluskan *Comirnaty BioNTech* sebagai vaksin yang mendapat kelulusan secara
 bersyarat. Justeru itu, perkara ini adalah secara dinamik dan kita menunggu
 perkembanganyangakandatangdaripadakajiandalamdanluarnegara. Terimakasih."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,4.,,1030,TuanYangdi-Pertua,Terimakasih.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,5.,,1030,Datuk Ras Adiba binti Mohd Radzi,"minta Menteri Perumahan dan Kerajaan
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1030,1030,TuanYangdi-Pertua,"Terimakasih.
+**5. Datuk Ras Adiba binti Mohd Radzi** minta Menteri Perumahan dan Kerajaan
 Tempatan menyatakan, usaha kementerian bagi menangani isu pemilikan rumah dalam
 kalangan komuniti OKU, dan apa tindakan kementerian bagi memastikan perumahan di
 negarainiadalahmesraOKU."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,5.,,1030,Timbalan Menteri Perumahan dan Kerajaan Tempatan [Dato’ Sri Dr. Haji Ismail bin Abd Muttalib],"*Bismillahi Rahmani Rahim. Assalamualaikum warahmatullahi
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1030,1030,Timbalan Menteri Perumahan dan Kerajaan Tempatan [Dato’ Sri Dr. Haji Ismail bin Abd Muttalib],"*Bismillahi Rahmani Rahim. Assalamualaikum warahmatullahi
 wabarakatuh* dan salam sejahtera. Terima kasih Tuan Yang di-Pertua. Terima kasih
 YangBerhormatSenatorDatukRasAdibaatassoalanyangdikemukakan.
 Tuan Yang di-Pertua, saya amat menghargai kecaknaan Ahli Yang Berhormat
@@ -389,18 +389,18 @@ bagi memastikan semua golongan termasuk golongan OKU turut disantuni dalam
 penyediaan bekalan perumahan dan juga spesifikasi perumahan agar lebih memberikan
 keselesaan kepada OKU dan juga golongan rentan yang lain. Terima kasih Tuan Yang
 di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,5.,,1030,TuanYangdi-Pertua,Soalantambahan?
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,5.,,1030,Datuk Ras Adiba binti Mohd Radzi,"Saya. Terima kasih Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1030,1030,TuanYangdi-Pertua,Soalantambahan?
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1030,1030,Datuk Ras Adiba binti Mohd Radzi,"Saya. Terima kasih Tuan Yang di-Pertua.
 Terima kasih Yang Berhormat Timbalan Menteri atas jawapan tadi. Cuma, saya ingin
 tanya, apakah tindakan yang akan diambil terhadap pemaju-pemaju yang gagal
 mengikutispesifikasidalammembinarumahuntukkami?Terimakasih."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,5.,,1030,Dato’ Sri Dr. Haji Ismail bin Abd Muttalib,"Tuan Yang di-Pertua, terima kasih
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1030,1030,Dato’ Sri Dr. Haji Ismail bin Abd Muttalib,"Tuan Yang di-Pertua, terima kasih
 YangBerhormatSenatorDatukRasAdiba.
 Sebenarnya, kementerian bertanggungjawab bagi memastikan pemaju-pemaju
 mematuhi syarat-syarat yang telah pun ditetapkan bukan sahaja di bawah Akta Orang
 Kurang Upaya"
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,5.,,1030,ANNOTATION,[Akta 685]
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,5.,,1030,Dato’ Sri Dr. Haji Ismail bin Abd Muttalib,", bahkan kita ada standard industri pembinaan perumahan
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1030,1030,ANNOTATION,[Akta 685]
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1030,1030,Dato’ Sri Dr. Haji Ismail bin Abd Muttalib,", bahkan kita ada standard industri pembinaan perumahan
 yang menggariskan syarat-syarat yang perlu dipatuhi oleh pemaju-pemaju. PBT juga
 perlu memastikan perincian keperluan OKU yang perlu ada dan tidak akan meluluskan
 pelanbangunanselagiiatidakmematuhikeperluanOKUsepertimanayangditetapkan.
@@ -408,13 +408,13 @@ Kita ada, Yang Berhormat Senator Datuk Ras Adiba, peraturan-peraturannya
 dan kita akan *implement* penguatkuasaan peraturan ini. Kalau mereka tidak mengikut
 peraturan seperti mana Yang Berhormat Senator sebutkan tadi, kita tidak akan luluskan
 pelanbangunanmerekadanmerekatidakbolehbuatbangunandansebagainya.
-TerimakasihTuanYangdi-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,6.,,1030,Tuan Aknan Ehtook,"minta Menteri Pembangunan Wanita, Keluarga dan
+TerimakasihTuanYangdi-Pertua.
+**6. Tuan Aknan Ehtook** minta Menteri Pembangunan Wanita, Keluarga dan
 Masyarakat menyatakan, sejauh mana berkesannya Kursus Praperkahwinan
 SMARTSTART dalam membantu pasangan baharu kekal bahagia sebagai sebuah
 keluarga, dan apakah hasil penilaian semula yang diterima untuk penambahbaikan ke
 atasmodulini."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,6.,,1030,"Timbalan Menteri Pembangunan Wanita, Keluarga dan Masyarakat [Dato’ HajahSiti Zailah bintiMohdYusoff]","TerimakasihTuanYangdi-Pertua. Terimakasih.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1030,1030,"Timbalan Menteri Pembangunan Wanita, Keluarga dan Masyarakat [Dato’ HajahSiti Zailah bintiMohdYusoff]","TerimakasihTuanYangdi-Pertua. Terimakasih.
 *Assalamualaikumwarahmatullahiwabarakatuh*dansalamsejahtera.
 MenjawabsoalanYangBerhormatSenator, KementerianPembangunanWanita,
 Keluarga dan Masyarakat melalui Lembaga Penduduk dan Pembangunan Keluarga
@@ -457,18 +457,18 @@ menjamin kesihatan keluarga dan anak dan seterusnya maklumat amaran siber
 mengetahui risiko dan ancaman dan langkah pencegahan semasa penggunaan *internet*
 beradaatastalian.
 TerimakasihTuanYangdi-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,6.,,1030,TuanYangdi-Pertua,Silakan.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,6.,,1030,Tuan Aknan Ethook,"Terima kasih Tuan Yang di-Pertua. Saya melihat
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1030,1030,TuanYangdi-Pertua,Silakan.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1030,1030,Tuan Aknan Ethook,"Terima kasih Tuan Yang di-Pertua. Saya melihat
 kementerian belum lagi bersedia untuk mewajibkan Kursus SMARTSTART ini bagi
 mungkinmengurangkanpenceraian.
 Jadi, apakah bentuk bantuan yang disediakan oleh kementerian untuk
 membantu pasangan bukan Islam yang terpaksa bercerai atas apa jua sebab untuk
 menuntuthakmasing-masingapabilaberlakupenceraian?Terimakasih."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,6.,,1030,TuanYangdi-Pertua,Sila.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,6.,,1030,Dato’ Hajah Siti Zailah binti Mohd Yusoff,"Terima kasih Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1030,1030,TuanYangdi-Pertua,Sila.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1030,1030,Dato’ Hajah Siti Zailah binti Mohd Yusoff,"Terima kasih Yang Berhormat
 Senator atas soalan tambahan yang dikemukakan. Memang sebagaimana Yang
 Berhormatsebuttadi,memangkitatidakmewajibkanmodulinikepadasetiappasangan."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,6.,,1040,Dato’ Hajah Siti Zailah binti Mohd Yusoff,"Ia bergantung kepada permohonan dan permintaan pasangan tersebut sebab
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1040,1040,Dato’ Hajah Siti Zailah binti Mohd Yusoff,"Ia bergantung kepada permohonan dan permintaan pasangan tersebut sebab
 kursus modul yang wajib ini telah dilaksanakan- kalau pasangan Islam, di bawah
 Jabatan Agama Islam ataupun JAKIM sendiri yang menyediakan modul-modul untuk
 pasanganIslam.
@@ -485,15 +485,15 @@ Kita latih mereka untuk mereka mahir terutama berkaitan dengan Akta
 Keganasan Rumah Tangga, pendaftaran perkahwinan termasuk prosedur perkahwinan.
 Jadi, kita harapkanlah dengan kursus ini boleh membantu pasangan yang bukan Islam.
 Terimakasih."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,6.,,1040,PuanFadhlinabintiDato’Sidek,"Soalantambahan,TuanYangdi-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,6.,,1040,TuanYangdi-Pertua,"Sila,Dato’IsabinAb. Hamid."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,6.,,1040,Dato’ Isa bin Ab. Hamid,"Terima kasih Tuan Yang di-Pertua. Saya ingin
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1040,1040,PuanFadhlinabintiDato’Sidek,"Soalantambahan,TuanYangdi-Pertua."
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1040,1040,TuanYangdi-Pertua,"Sila,Dato’IsabinAb. Hamid."
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1040,1040,Dato’ Isa bin Ab. Hamid,"Terima kasih Tuan Yang di-Pertua. Saya ingin
 bertanya kepada kementerian program SMART ini adakan kita membuat pendekatan *by
 ethnic* sebab kalau kita bercakap yang bukan Islam termasuk juga Siam dan Orang Asli
 Sabah, Sarawak sebab kita melihat budaya juga mempengaruhi dalam program ini.
 Mohonpenjelasan."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,6.,,1040,TuanYangdi-Pertua,"Sila,YangBerhormatTimbalanMenteri."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,6.,,1040,Dato’ Hajah Siti Zailah binti Mohd Yusoff,"Ya, terima kasih atas soalan
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1040,1040,TuanYangdi-Pertua,"Sila,YangBerhormatTimbalanMenteri."
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1040,1040,Dato’ Hajah Siti Zailah binti Mohd Yusoff,"Ya, terima kasih atas soalan
 tambahan yang dikemukakan. Program SMARTSTART ini terbuka kepada semua
 bangsa, kaum tanpa mengira termasuk juga kaum etnik yang asli dan sebagainya,
 perbagaietnik.
@@ -502,14 +502,14 @@ sesuai dengan pelbagai bangsa dan keturunan. Jadi, untuk orang Islam mungkin leb
 fokus apa yang telah dibuat JAKIM dan Jabatan Agama Islam. Jadi, kita sentiasa
 berusahamenambahbaikmoduliniuntukmemastikansemuakaumdanpasanganyang
 terlibatmendapatmanfaatdaripadamodulSMARTSTARTini.Terimakasih."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,6.,,1040,Puan Fadhlina binti Dato’ Sidek,"Soalan tambahan, Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1040,1040,Puan Fadhlina binti Dato’ Sidek,"Soalan tambahan, Tuan Yang di-Pertua.
 Boleh?"
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,6.,,1040,Tuan Yang di-Pertua,"Boleh, tapi sebab baru ini dikhabarkanpenceraian paling
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1040,1040,Tuan Yang di-Pertua,"Boleh, tapi sebab baru ini dikhabarkanpenceraian paling
 hebat."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,6.,,1040,Puan Fadhlina binti Dato’ Sidek,"Ya, soalan saya berkaitan dengan..."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,6.,,1040,ANNOTATION,[Disampuk]
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,6.,,1040,TuanYangdi-Pertua,Kalauyangitusilakan.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,6.,,1040,Puan Fadhlina binti Dato’ Sidek,"...*Concern* ataupun keprihatinan, Tuan Yang
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1040,1040,Puan Fadhlina binti Dato’ Sidek,"Ya, soalan saya berkaitan dengan..."
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1040,1040,ANNOTATION,[Disampuk]
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1040,1040,TuanYangdi-Pertua,Kalauyangitusilakan.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1040,1040,Puan Fadhlina binti Dato’ Sidek,"...*Concern* ataupun keprihatinan, Tuan Yang
 di-Pertua.Terimakasih.
 Soalan saya pandemik telah menunjukkan peningkatan penceraian yang sangat
 tinggi dalam kalangan umat Islam khususnya berkaitan faktor ekonomi dan juga
@@ -518,7 +518,7 @@ Jadi, soalan saya kepada Yang Berhormat Timbalan Menteri apakah langkah
 yangtelahdiambil olehkerajaanuntuk menangani keruntuhanataupun institusi keluarga
 ini dalam tempoh pandemik khususnya dalam modul-modul SMARTSTART? Terima
 kasih,TuanYangdi-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,6.,,1040,Dato’ Hajah Siti Zailah binti Mohd Yusoff,"Okey, terima kasih Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1040,1040,Dato’ Hajah Siti Zailah binti Mohd Yusoff,"Okey, terima kasih Tuan Yang di-
 Pertua,terimakasihYangBerhormatSenator.
 Ya, daripada statistik yang saya ada bagaimana penceraian sehingga Ogos
 2021 melibatkan*non-muslim* sebanyak 14,747 buah- keluarga, dan yang Muslim 66,440
@@ -538,25 +538,25 @@ keluarga yang terlibat. Kita juga menyediakan talian *hotline* Family Care iaitu
 perkhidmatan kaunselor profesional dalam isu kekeluargaan dan perkahwinan bagi
 membantukeluarga-keluargayangmemerlukanbimbingan. Terimakasih, TuanYangdi-
 Pertua."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,6.,,1040,Tuan Yang di-Pertua,"Terima kasih. Susah juga hati kita melihat, ya? Jumlah
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1040,1040,Tuan Yang di-Pertua,"Terima kasih. Susah juga hati kita melihat, ya? Jumlah
 14,700 bukan Islam dan Islam- 66 ribu cerai. Akan tetapi, itu barangkali kementerian
 akanmenyusul.YangBerhormatDato’WiraOthmanbinAziz."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,6.,,1040,Dato’ Wira Othman bin Aziz,"*Assalamualaikum warahmatullahi wabarakatuh*,
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1040,1040,Dato’ Wira Othman bin Aziz,"*Assalamualaikum warahmatullahi wabarakatuh*,
 TuanYangdi-Pertua.Mohonizinuntukberpantunpagiini.
 *Awangelapdihujungsana;
 Anginkuatmusimtengkujuh.
 RakanMenteriyangbijaksana;
 Mohondijawabsoalantujuh.*"
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,6.,,1040,TuanYangdi-Pertua,"*Makan-makankuihkeria;
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1040,1040,TuanYangdi-Pertua,"*Makan-makankuihkeria;
 Letak-letaktepisawah.
 Eloklahdijawabdengansegera;
 Supayahatitidakgundah...*"
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,6.,,1040,ANNOTATION,[Dewanriuh]
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,6.,,1040,TuanYangdi-Pertua,Terimakasih.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,7.,,1040,Dato' Wira Othman bin Aziz,"minta Menteri Sumber Manusia menyatakan,
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1040,1040,ANNOTATION,[Dewanriuh]
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1040,1040,TuanYangdi-Pertua,"Terimakasih.
+**7. Dato' Wira Othman bin Aziz** minta Menteri Sumber Manusia menyatakan,
 bilangan tenaga kerja baharu dalam kalangan graduan yang berjaya diserapkan ke
 dalampasaranpekerjaanbagitahun2019hingga2020."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,7.,,1040,Timbalan Menteri Sumber Manusia [Datuk Haji Awang bin Hashim],"Terima
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1040,1040,Timbalan Menteri Sumber Manusia [Datuk Haji Awang bin Hashim],"Terima
 kasih. *Bismillahi Rahmani Rahim*. Terima kasih, Tuan Yang di-Pertua yang tolong
 menjawab bagi pihak saya. Juga terima kasih kepada sahabat Yang Berhormat Senator
 Dato'WiraOthmanbinAziz.
@@ -591,60 +591,60 @@ tawaran. Selain daripada itu, sistem insurans pekerjaan di bawah PERKESO juga
 menyediakan program-program bagi peningkatan modal insan dan kebolehpasaran
 pekerja seperti khidmat kaunseling kerjaya, *skill profiling,* penulisan resume, *mock
 interview*,latihankemahiranbahasadanpenyampaiansertaseminarpekerjaan."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,7.,,1040,TuanYangdi-Pertua,"Adakah*mock,*apakahtadiitu?"
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,7.,,1040,DatukHajiAwangbinHashim,*Mockinterview.*
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,7.,,1040,TuanYangdi-Pertua,"Yalah,penaltitidakada.Sambunglah."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,7.,,1040,DatukHaji Awang binHashim,"Saya minta maaf. Saya mintamaaf.Saya cuba
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1040,1040,TuanYangdi-Pertua,"Adakah*mock,*apakahtadiitu?"
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1040,1040,DatukHajiAwangbinHashim,*Mockinterview.*
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1040,1040,TuanYangdi-Pertua,"Yalah,penaltitidakada.Sambunglah."
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1040,1040,DatukHaji Awang binHashim,"Saya minta maaf. Saya mintamaaf.Saya cuba
 untuk hendak membahasakan Malaysia. Jadi, latihan kemahiran dan sikit lagi
 penyampaiandan serta seminar pekerjaan kepada pencarumnya dengan inisiatif-inisiatif
 ini.
 Kebolehpasaran mereka akan ditingkatkan dan meluaskan peluang mereka
 memasukipasarankerja.Sekian,terimakasihTuanYangdi-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,7.,,1040,TuanYangdi-Pertua,Ya.Fikir-fikirlahfasal*mock*itu.Tambahan?
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,7.,,1040,Dato’ Wira Othman bin Aziz,"Terima kasih Yang Berhormat Timbalan Menteri.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1040,1040,TuanYangdi-Pertua,Ya.Fikir-fikirlahfasal*mock*itu.Tambahan?
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1040,1040,Dato’ Wira Othman bin Aziz,"Terima kasih Yang Berhormat Timbalan Menteri.
 Masalah utama kita antara yang besar ialah masalah ketidaksepadanan atau *mismatch.
 Mismatch* antara kelulusan seorang graduan dan tawaran kerja. Dalam data yang
 diberikan tadi adakah nombor satu diambil kira sama ada jawatan yang ditawarkan itu
 bersepadan dengan kelulusan mereka dan apakah langkah kerajaan buat untuk
 mengatasi masalah *underemployed* maksudnya lulus lebih tapi dapat gaji rendah?
 Terimakasih."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,7.,,1040,TuanYangdi-Pertua,Sila.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,7.,,1040,Datuk Haji Awang bin Hashim,"Terima kasih, Tuan Yang di-Pertua. Terima
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1040,1040,TuanYangdi-Pertua,Sila.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1040,1040,Datuk Haji Awang bin Hashim,"Terima kasih, Tuan Yang di-Pertua. Terima
 kasihsahabatyangmembangkitkansoalantadi.
 Saya hendak perbetulkan sedikit Yang Berhormat Dato’ Wira Othman bin Aziz.
 Bukan*mismatch,*sepadanankerja."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,7.,,1040,TuanYangdi-Pertua,Tahniah.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,7.,,1040,Datuk Haji Awang bin Hashim,"Jadi, kementerian kita sekarang ini sedang
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1040,1040,TuanYangdi-Pertua,Tahniah.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1040,1040,Datuk Haji Awang bin Hashim,"Jadi, kementerian kita sekarang ini sedang
 memang- dalam program-program yang kita aturkan banyak perkataan bahasa
 Inggerislah.Sayapuntakuthendakjawab..."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,7.,,1040,ANNOTATION,[Ketawa]
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,7.,,1040,TuanYangdi-Pertua,TidaklamalagikitacakapInggerissajalah.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,7.,,1040,Datuk Haji Awang bin Hashim,"Jadi, skim-skim yang kita persepadanan kerja
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1040,1040,ANNOTATION,[Ketawa]
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1040,1040,TuanYangdi-Pertua,TidaklamalagikitacakapInggerissajalah.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1040,1040,Datuk Haji Awang bin Hashim,"Jadi, skim-skim yang kita persepadanan kerja
 ini memang kita susun atur melalui program yang kita sebut PENJANA, PRIHATIN,
 PEMULIH ini kerana kita melihat dalam satu Program Analitis Penilaian Psikometri
 Bersepadu di bawah mynext. Program ini mengambungkan graduan, pekerja syarikat
 dan institusi pendidikan untuk merapatkan jurang antara penawaran bakat dengan
 pekerjaanmasahadapaniaitudipanggilpersepadanankerja."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,7.,,1050,Datuk Haji Awang bin Hashim,"Jadi sehingga Ogos 2021, lebih 160 ribu profil bakat telah mendaftar dengan
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1050,1050,Datuk Haji Awang bin Hashim,"Jadi sehingga Ogos 2021, lebih 160 ribu profil bakat telah mendaftar dengan
 *mynext* program ini yang melibatkan22buahinstitusi pengajiantinggi awam dan swasta
 bagi kita melihat penawaran dan juga *demand* ataupun permintaan dalam pasaran oleh
 sektor-sektor *manufacturing, agriculture-* pertanian, perladangan untuk kita sepadankan.
 Ya,terimakasih.KitahendakbiasakandirikitamulaisekarangdenganBahasaMalaysia
 kitayangtingginilai."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,7.,,1050,TuanYangdi-Pertua,"Ya,cuba."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,7.,,1050,DatukHaji Awang bin Hashim,"Jadi, itu sahajalah yang kitasedang susunatur
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1050,1050,TuanYangdi-Pertua,"Ya,cuba."
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1050,1050,DatukHaji Awang bin Hashim,"Jadi, itu sahajalah yang kitasedang susunatur
 untuk kita persepadankan dengan graduan-graduan kita daripada segi latar belakang
 kelulusan masing-masing dengan permintaan dalam pasaran termasuk dalam bidang,
 industrisertasektorperladangandansebagainya.Sekian,terimakasih."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,7.,,1050,TuanYangdi-Pertua,"Baik.Temudugacubaan. YangBerhormatSenatorDato’
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1050,1050,TuanYangdi-Pertua,"Baik.Temudugacubaan. YangBerhormatSenatorDato’
 Wira Othman sudah tanya tadi, ada tambahan lagi atau tidak? Tidak, baik. Yang
 Berhormat Senator Datuk John Ambrose. Terima kasih Yang Berhormat Timbalan
-Menteri."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,8.,,1050,Datuk John Ambrose,"minta Menteri Kewangan menyatakan, jumlah
+Menteri.
+**8. Datuk John Ambrose** minta Menteri Kewangan menyatakan, jumlah
 keseluruhan bantuan rakyat yang telah diberikan. Apakah bantuan rakyat yang lain
 selain bantuan tunai dan juga bantuan makanan khusus buat mereka yang terjejas
 pendapatanakibatpandemikCOVID-19?"
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,8.,,1050,Timbalan Menteri Kewangan II [Tuan Haji Yamani Hafez bin Musa],"*Bismillahi Rahmani Rahim. Assalamualaikum warahmatullaahi wabarakatuh,* selamat
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1050,1050,Timbalan Menteri Kewangan II [Tuan Haji Yamani Hafez bin Musa],"*Bismillahi Rahmani Rahim. Assalamualaikum warahmatullaahi wabarakatuh,* selamat
 pagi dan salam sejahtera. Terima kasih Tuan Yang di-Pertua, terima kasih Yang
 BerhormatSenatorJohnAmbrose.
 Kerajaan sebenarnya amat prihatin akan kesusahan yang dihadapi oleh rakyat
@@ -673,28 +673,28 @@ Selain itu, kerajaan melalui Kumpulan Wang Simpanan Pekerja (KWSP) turut
 melaksanakan skim pengeluaran simpanan i-Lestari, i-Sinar dan terkini i-Citra sebagai
 sumber kewangan alternatif kepada rakyat untuk mengakses simpanan persaraan
 merekabagimenampungkeperluanharian.TerimakasihTuanYangdi-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,8.,,1050,TuanYangdi-Pertua,TuanHajiAhmadbinYahaya.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,8.,,1050,DatukJohnAmbrose,Soalantambahan.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,8.,,1050,TuanYangdi-Pertua,"Ada?Kalauada,sila."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,8.,,1050,DatukJohnAmbrose,"Terimakasihatas penjelasan YangBerhormatTimbalan
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1050,1050,TuanYangdi-Pertua,TuanHajiAhmadbinYahaya.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1050,1050,DatukJohnAmbrose,Soalantambahan.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1050,1050,TuanYangdi-Pertua,"Ada?Kalauada,sila."
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1050,1050,DatukJohnAmbrose,"Terimakasihatas penjelasan YangBerhormatTimbalan
 Menteri khusus. Saya mahu tanya satu soalan khusus untuk Sabah. Daripada bantuan
 secara keseluruhan semasa pandemik COVID-19, berapakah tambahan peruntukan
 yang tersedia untuk membantu kepada mangsa atau yang sangat terkesan semasa
 bencana banjir? Untuk makluman, kawasan seperti Penampang dan Kota Belud telah
 mengalami tidak kurang enam kali banjir pada tahun ini sahaja. Kejadian terbaru pada
 15Septemberdan12Oktober."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,8.,,1050,TuanYangdi-Pertua,Sila.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,8.,,1050,Tuan Haji Yamani Hafez bin Musa,"Terima kasih Tuan Yang di-Pertua, terima
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1050,1050,TuanYangdi-Pertua,Sila.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1050,1050,Tuan Haji Yamani Hafez bin Musa,"Terima kasih Tuan Yang di-Pertua, terima
 kasihkepadaYangBerhormatSenator DatukJohnAmbrose. Saya sangat terkesanjuga
 memandangkan banjir enam kali setahun itu, memanglah luar biasa. Namun perkara ini
 Tuan Yang di-Pertua, adalah di bawah NADMA, di bawah JPM, bukanlah di bawah
 Kementerian Kewangan. Apa-apa juga permohonan daripada NADMA itu, kita akan
 pertimbangkan di peringkat Kementerian Kewangan mengikut kemampuan kita. Terima
 kasihTuanYangdi-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,8.,,1050,Dato’ Wira Othman bin Aziz,"Yang Berhormat Menteri, mohon satu lagi soalan
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1050,1050,Dato’ Wira Othman bin Aziz,"Yang Berhormat Menteri, mohon satu lagi soalan
 tambahan."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,8.,,1050,TuanYangdi-Pertua,"YangBerhormatSenatorDato’WiraOthman,sila."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,8.,,1050,Dato’ Wira Othman bin Aziz,"Terima kasih Tuan Yang di-Pertua. Yang
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1050,1050,TuanYangdi-Pertua,"YangBerhormatSenatorDato’WiraOthman,sila."
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1050,1050,Dato’ Wira Othman bin Aziz,"Terima kasih Tuan Yang di-Pertua. Yang
 Berhormat Timbalan Menteri, apabila kerajaan membantu yang begitu banyak melalui
 BPN semua ini, adakah kita membuat satu kajian atau tengok kepada kesan gandaan
 terhadapekonomisetempatsepertipasarmalam,apasemuaini.
@@ -702,7 +702,7 @@ Kedua, apabila kita beri bantuan Bakul Makanan yang begitu banyak seluruh
 negara ini, sebenarnya kedai-kedai runcit ini *dok* kompelin*.* Mereka ini terkesan sebab
 rakyat sudah tidak beli barang-barang asas daripada mereka. Apakah langkah yang
 diambiluntukmengatasimasalah-masalahini?Terimakasih."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,8.,,1050,Tuan Haji Yamani Hafez bin Musa,"Terima kasih Yang Berhormat Senator
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1050,1050,Tuan Haji Yamani Hafez bin Musa,"Terima kasih Yang Berhormat Senator
 Dato’ Wira Othman. Banyak bantuan yang kita berikan dan kita juga mempunyai data
 dari pangkalan LHDN dan semua agensi yang mana kita akan rangkumkan sekali dan
 kita akan membuat penilaian tentang keberkesanan program itu. Sudah tentu dari
@@ -711,8 +711,8 @@ Sama juga macam moratorium baru-baru ini, kita tidak membuat lagi secara
 *blanket* tetapi kita membuat secara pendekatan yang bersasar yang mana mereka yang
 betul-betul memerlukan dan betul-betul terkesan dapat kita bantu. Terima kasih Tuan
 Yangdi-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,8.,,1050,TuanYangdi-Pertua,YangBerhormatSenatorTuanHajiAhmadbinYahaya.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,9.,,1050,Tuan Haji Ahmad bin Yahaya,"minta Menteri Kesihatan menyatakan, apa
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1050,1050,TuanYangdi-Pertua,"YangBerhormatSenatorTuanHajiAhmadbinYahaya.
+**9. Tuan Haji Ahmad bin Yahaya** minta Menteri Kesihatan menyatakan, apa
 mekanisme, dan SOP yang digunakan oleh kementerian bagi memastikan tiada
 penyelewengan dilakukan oleh mana-mana pihak yang terlibat dalam pemberian vaksin
 COVID-19 sama ada individu, jabatan atau syarikat kerana kita telah mendengar,
@@ -728,17 +728,17 @@ kalau ikut saya pelepasan lot ataupun lot terlepas. Sebelum ia digunakan, Pertub
 Bangsa-Bangsa Bersatu telah menetapkan *lot release* sebagai satu keperluan yang
 perlu dilaksanakan oleh badan *regulatory* sesebuah negara ke atas vaksin yang
 didaftarkan."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,9.,,1050,TuanYangdi-Pertua,ApakahistilahYangBerhormatsebuttadi?Pelepasan...
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,9.,,1050,Dato’Dr.HajiNoorAzmibinGhazali,Pelepasanlot.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,9.,,1050,TuanYangdi-Pertua,Tidak.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,9.,,1050,Dato’Dr.HajiNoorAzmibinGhazali,Selepasitu?
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,9.,,1050,TuanYangdi-Pertua,Ia*clock*kahapa?
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,9.,,1050,Dato’Dr.HajiNoorAzmibinGhazali,Ya...
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,9.,,1050,TuanYangdi-Pertua,"Tidakapa,kemudiankitacerita..."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,9.,,1050,ANNOTATION,[Ketawa]
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,9.,,1050,Dato’Dr.HajiNoorAzmibinGhazali,Merekatidakjumpasebenarnya.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,9.,,1050,TuanYangdi-Pertua,"Ya,ya."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,9.,,1050,Dato’ Dr. Haji Noor Azmi bin Ghazali,"Melalui- jadi saya guna- *lot release*
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1050,1050,TuanYangdi-Pertua,ApakahistilahYangBerhormatsebuttadi?Pelepasan...
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1050,1050,Dato’Dr.HajiNoorAzmibinGhazali,Pelepasanlot.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1050,1050,TuanYangdi-Pertua,Tidak.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1050,1050,Dato’Dr.HajiNoorAzmibinGhazali,Selepasitu?
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1050,1050,TuanYangdi-Pertua,Ia*clock*kahapa?
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1050,1050,Dato’Dr.HajiNoorAzmibinGhazali,Ya...
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1050,1050,TuanYangdi-Pertua,"Tidakapa,kemudiankitacerita..."
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1050,1050,ANNOTATION,[Ketawa]
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1050,1050,Dato’Dr.HajiNoorAzmibinGhazali,Merekatidakjumpasebenarnya.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1050,1050,TuanYangdi-Pertua,"Ya,ya."
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1050,1050,Dato’ Dr. Haji Noor Azmi bin Ghazali,"Melalui- jadi saya guna- *lot release*
 sementara ini Tuan Yang di-Pertua, maaf. Melalui aktiviti *lot release* ini, Bahagian
 RegulatoriFarmasiNegaraperlu memastikanpihakpengilangmengemukakandokumen
 yang menunjukkan proses pengilangan yang dijalankan dan keputusan pengujian yang
@@ -770,15 +770,15 @@ Dengan adanya integrasi antara Sistem Pengurusan Vaksin- *Vaccine
 Management System,* dan aplikasi MySejahtera, kesahihan dan kebolehkesanan setiap
 vaksintersebut dapat dipastikanyangmanavaksinituadalahbenar-benarsahih.Terima
 kasihTuanYangdi-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,9.,,1050,TuanYangdi-Pertua,Soalantambahan.Silakantanya.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,9.,,1050,Tuan Haji Ahmad bin Yahaya,"Terima kasih Tuan Yang di-Pertua. Isu
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1050,1050,TuanYangdi-Pertua,Soalantambahan.Silakantanya.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1050,1050,Tuan Haji Ahmad bin Yahaya,"Terima kasih Tuan Yang di-Pertua. Isu
 berkaitan dengan keaslian vaksin ini memang menjadi salah satu faktor kepada pihak
 yang menolak ataupun anti-vaksin. Antara pihak yang salah faham ataupun menolak
 vaksin ini ialah di kalangan mereka yang berada di sektor-sektor penting. Contohnya
 sektorpendidikan."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,9.,,1100,Tuan Haji Ahmad bin Yahaya,"Jadi, soalan yang ingin saya kemukakan ialah, apa tindakan yang dirancang
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1100,1100,Tuan Haji Ahmad bin Yahaya,"Jadi, soalan yang ingin saya kemukakan ialah, apa tindakan yang dirancang
 olehpihakkementerianbagimenanganiperkaraberkenaan?Terimakasih."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,9.,,1100,Dato’ Dr. Haji Noor Azmi bin Ghazali,"Terima kasih Yang Berhormat.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1100,1100,Dato’ Dr. Haji Noor Azmi bin Ghazali,"Terima kasih Yang Berhormat.
 Sekarang ini memang terwujud lagi kumpulan-kumpulan yang anti vaksin ini yang mana
 bolehmenggangguperjalananprogramPICKkita.
 Jadi, ini telah dibincangkan juga dengan KPM, dan mereka juga akan
@@ -793,18 +793,18 @@ menyatakan kepentingan vaksin, keberkesanan vaksin seperti yang saya sebutkan
 dalam jawapan pada soalan yang pertama tadi. Jadi, saya rasa kita harap sangatlah
 mereka ini insaflah. Marilah tolong kita sama-sama, sama-sama kita berjaya untuk
 selamatkannegaraini."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,9.,,1100,TuanYangdi-Pertua,"Ya,mereka.Sekalisahajamereka,tidakbolehduakali."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,9.,,1100,Dr.WanMartinabintiWanYusoff,"Bolehsayabertanyasatusoalantambahan?
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1100,1100,TuanYangdi-Pertua,"Ya,mereka.Sekalisahajamereka,tidakbolehduakali."
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1100,1100,Dr.WanMartinabintiWanYusoff,"Bolehsayabertanyasatusoalantambahan?
 TuanYangdi-Pertua,bolehsayabertanya."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,9.,,1100,TuanYangdi-Pertua,"Yasila,boleh."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,9.,,1100,Dr. Wan Martina binti Wan Yusoff,"Terima kasih. Adakah tindakan kerajaan
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1100,1100,TuanYangdi-Pertua,"Yasila,boleh."
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1100,1100,Dr. Wan Martina binti Wan Yusoff,"Terima kasih. Adakah tindakan kerajaan
 kepada yang keliru, kumpulan anti vaksin yang keliru terhadap data-data yang terdapat
 didalamCOVIDNOWdanmerekamenggunakanbagimempengaruhiorang yangbelum
 di vaksin. Contohnya, kadar kematian mengikut kadar vaksinasi. Bila kita melihat
 seimbas lalu, kita yang faham ini pun mula-mula akan terkejut dengan data tersebut
 apatah lagi orang yang tidak faham. Jadi, apakah tindakan kerajaan supaya kekeliruan
 initidaktimbul?Terimakasih."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,9.,,1100,Dato’ Dr. Haji Noor Azmi bin Ghazali,"Terima kasih Tuan Yang di-Pertua dan
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1100,1100,Dato’ Dr. Haji Noor Azmi bin Ghazali,"Terima kasih Tuan Yang di-Pertua dan
 terima kasih Yang Berhormat. Satu soalan yang penting. Saya juga berpendapat
 bahawa kumpulan yang anti vaksin ini sebenarnya perlu diberi penerangan yang
 sebetul-betulnya.Apa katakalau kumpulanyangantivaksininidatangberjumpadengan
@@ -825,15 +825,15 @@ supaya kita bersemuka dan kita cakap yang sebenar-benarnya. Jangan kita cakap si
 sana dan menyebarkan berita palsu. Kita bimbang juga nanti Kementerian Kesihatan
 Malaysia akan mengambil tindakan kerana penyebaran berita palsu pula. Terima kasih
 TuanYangdi-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,9.,,1100,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Timbalan Menteri. Silalah
-wujudkanjadualmulaikini."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,10.,,1100,Tuan Balasubramaniam a/l Nachiappan,"minta Perdana Menteri menyatakan,
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1100,1100,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Timbalan Menteri. Silalah
+wujudkanjadualmulaikini.
+**10. Tuan Balasubramaniam a/l Nachiappan** minta Perdana Menteri menyatakan,
 sejauh mana kesediaan kerajaan untuk mewujudkan ‘Undang-undang Anti Lompat
 Parti.’"
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,10.,,1100,TuanYangdi-Pertua,Inipasallompatpartiya.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,10.,,1100,Menteri di Jabatan Perdana Menteri (Parlimen dan Undang-undang) [Dato’ Sri Dr. Haji Wan Junaidi bin Tuanku Jaafar],
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,10.,,1100,ANNOTATION,[Ketawa]
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,10.,,1100,Menteri di Jabatan Perdana Menteri (Parlimen dan Undang-undang) [Dato’ Sri Dr. Haji Wan Junaidi bin Tuanku Jaafar],"Terima kasih Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1100,1100,TuanYangdi-Pertua,Inipasallompatpartiya.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1100,1100,Menteri di Jabatan Perdana Menteri (Parlimen dan Undang-undang) [Dato’ Sri Dr. Haji Wan Junaidi bin Tuanku Jaafar],
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1100,1100,ANNOTATION,[Ketawa]
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1100,1100,Menteri di Jabatan Perdana Menteri (Parlimen dan Undang-undang) [Dato’ Sri Dr. Haji Wan Junaidi bin Tuanku Jaafar],"Terima kasih Tuan Yang di-
 Pertua. *Bismillahi Rahmani Rahim. Assalamualaikum warahmatullahi wabarakatuh.*
 Selamatpagidansalambahagiadansalamsejahtera.
 Tuan Yang di-Pertua, cadangan untuk mewujudkan satu peruntukan undang-
@@ -859,12 +859,12 @@ kerajaan turut meneliti model perundangan beberapa buah negara seperti India,
 Singapura, New Zealand dan *United Kingdom* melibatkan peruntukan lompat parti.
 Dapatan daripada kajian ini akan dibincangkan melalui sesi libat urus *bipartisan* yang
 bakalkitabuatnanti.TerimakasihTuanYangdi-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,10.,,1100,TuanBalasubramaniama/lNachiappan,Soalantambahansaya.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,10.,,1100,Dato’ Kesavadas A. Achyuthan Nair,"Terima kasih. Yang Berhormat Menteri,
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1100,1100,TuanBalasubramaniama/lNachiappan,Soalantambahansaya.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1100,1100,Dato’ Kesavadas A. Achyuthan Nair,"Terima kasih. Yang Berhormat Menteri,
 apakah bentuk libat urus atau *close engagement* yang sedang dilakukan oleh kerajaan
 dengan pakar-pakar perundangan dari negara-negara luar bagi memuktamadkan inti
 patidrafundang-undangantilompatpartitersebut?Sekian,terimakasih."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,10.,,1100,Dato’ Sri Dr. Haji Wan Junaidi bin Tuanku Jaafar,"Pandangan saya Tuan
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1100,1100,Dato’ Sri Dr. Haji Wan Junaidi bin Tuanku Jaafar,"Pandangan saya Tuan
 Yang di-Pertua, setakat ini kita tidak memerlukan kepakaran dari sudut undang-undang
 berhubung dengan perkara ini. Saya cukup yakin pihak kementerian saya dan juga AG
 mempunyaicukupkepakaranselaindaripadapeguam-peguamkitadiseluruhnegaraini.
@@ -874,17 +874,17 @@ Akan tetapi, walau bagaimanapun kita menggunakan model-model undang-
 undang di negara-negara yang saya sebutkan tadi dan kita boleh melihat kelemahan
 dan kekuatannya dan menilai dari sudut Perlembagaan kita sendiri dan kehendak rakyat
 kita,jenismanaundang-undangyangperlukitamemperkenalkan.Terimakasih."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,10.,,1100,PuanFadhlinabintiDato’Sidek,"TuanYangdi-Pertua,satulagisoalan."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,10.,,1100,Tuan Yang di-Pertua,"*Alhamdulillah* konsep beliau tadi jelas dalam konteks
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1100,1100,PuanFadhlinabintiDato’Sidek,"TuanYangdi-Pertua,satulagisoalan."
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1100,1100,Tuan Yang di-Pertua,"*Alhamdulillah* konsep beliau tadi jelas dalam konteks
 perlembagaankitasendiri.Tambahan?"
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,10.,,1100,TuanBalasubramaniama/lNachiappan,Soalantambahan.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,10.,,1100,Puan Fadhlina binti Dato’ Sidek,"Boleh Tuan Yang di-Pertua? Terima kasih.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1100,1100,TuanBalasubramaniama/lNachiappan,Soalantambahan.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1100,1100,Puan Fadhlina binti Dato’ Sidek,"Boleh Tuan Yang di-Pertua? Terima kasih.
 Soalan saya, adakah kerajaan berhasrat untuk menggabungkan Rang Undang-undang
 Pemecatan Ahli Parlimen berserta sekali dengan Rang Undang-undang Antilompat Parti
 ini kerana saya percaya isu lompat parti ini bukan sahaja isu yang melibatkan
 kecuranganmoralahli politik tetapi jugamelibatkanhak rakyat dalamkonteksdemokrasi
 elektoral.TerimakasihTuanYangdi-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,10.,,1100,Dato’ Sri Dr. Haji Wan Junaidi bin Tuanku Jaafar,"Terima kasih Tuan Yang
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1100,1100,Dato’ Sri Dr. Haji Wan Junaidi bin Tuanku Jaafar,"Terima kasih Tuan Yang
 di-Pertua. Cukup relevan soalan sedemikian sebabnya ada cadangan mengatakan
 bahawa pertama untuk Ahli Parlimen itu dipecat selepas itu diadakan pilihan raya.
 Maknanya dua jenis perundangan yang diperlukan. Jadi ini juga menjadikan satu kajian
@@ -895,34 +895,34 @@ Kita kena melihat sama ada menggubal satu rang undang-undang baharu untuk
 menangani masalah lompat parti ini ataupun kita pinda Perlembagaan untuk
 *accommodate* bagi *qualification* sebagaimana yang dilakukan di Singapura, India dan
 jugadiNewZealand.TuanYangdi-Pertua,terimakasih."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,10.,,1100,TuanBalasubramaniama/lNachiappan,TuanYangdi-Pertua.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,10.,,1100,TuanYangdi-Pertua,Silakan.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,10.,,1100,Tuan Balasubramaniam a/l Nachiappan,"Soalan saya, Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1100,1100,TuanBalasubramaniama/lNachiappan,TuanYangdi-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1100,1100,TuanYangdi-Pertua,Silakan.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1100,1100,Tuan Balasubramaniam a/l Nachiappan,"Soalan saya, Yang Berhormat
 Menteri, soalan tambahan saya, pergolakan politik yang serius sehingga mencetuskan
 kebimbangan dalam kalangan rakyat antara yang terbaharu. Di Dewan Undangan
 Negeri Melaka, adakah mereka ini boleh dikenakan tindakan di bawah Perlembagaan
 Persekutuan dalam peruntukan Perkara 10(2) yang mana pada rakyat mereka ini
 menimbulkanketidaktenteramanawamketikafasawabakini.Sekian."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,10.,,1110,Dato’ Sri Dr. Haji Wan Junaidi bin Tuanku Jaafar,"Terima kasih Yang
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1110,1110,Dato’ Sri Dr. Haji Wan Junaidi bin Tuanku Jaafar,"Terima kasih Yang
 Berhormat. Setakat ini Yang Berhormat, kita berpandu kepada Perlembagaan. Oleh
 sebab kita belum mempunyai undang-undang peringkat Persekutuan lagi berhubung
 dengan perkara ini. Jadi dalam Perlembagaan Persekutuan juga ada mengatakan
 bahawa, hakseseorang untukmasukmana-manapersatuandanparti contohnya adalah
 masih dibolehkan. Tidak ada larangan dan perbatasan. Itulah kenapanya dari sudut itu
 kenapakitamencadangkanrangundang-undangyangbakalkitabuatini.Terimakasih."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,10.,,1110,Tuan Yang di-Pertua,"Terima kasih banyak, majlis mengucapkan kepada Yang
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1110,1110,Tuan Yang di-Pertua,"Terima kasih banyak, majlis mengucapkan kepada Yang
 Berhormat Menteri di Jabatan Perdana Menteri yang secara jujurnya juga Yang
 Berhormat Timbalan beliau turut bersama. Semoga kerja rumah yang beliau laksanakan
 itumemanfaatkankitakhasnyarakyatdannegarakita.
-YangBerhormatTanSriDato'SeriMohdRadzibinTanSriSheikhAhmad."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,11.,,1110,Tan Sri Dato' Seri Mohd Radzi bin Tan Sri Sheikh Ahmad,"minta Menteri
+YangBerhormatTanSriDato'SeriMohdRadzibinTanSriSheikhAhmad.
+**11. Tan Sri Dato' Seri Mohd Radzi bin Tan Sri Sheikh Ahmad** minta Menteri
 Pembangunan Wanita, Keluarga dan Masyarakat menyatakan, adakah kementerian
 bercadang untuk menaikkan kos bantuan makan dan minum sebanyak RM8 sehari
 kepada anak-anak yatim, OKU dan orang tua di pusat jagaan mereka yang tidak lebih
 daripada 120 orang. Ini memandangkan bahawa kos yang sama kepada beribu-ribu
 banduan di dalam penjara dan pusat tahanan mendapat kos perbelanjaan makan dan
 minumbernilaihampirduakaliganda."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,11.,,1110,"Timbalan Menteri Pembangunan Wanita, Keluarga dan Masyarakat [Dato’ Hajah Siti Zailah binti Mohd Yusoff]","Ya, terima kasih, terima kasih Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1110,1110,"Timbalan Menteri Pembangunan Wanita, Keluarga dan Masyarakat [Dato’ Hajah Siti Zailah binti Mohd Yusoff]","Ya, terima kasih, terima kasih Tuan Yang di-
 Pertua. *Assalamualaikum warahmatullahi wabarakatuh.* Terima kasih juga kepada Yang
 BerhormatTanSriDato'SeriMohdRadziatassoalanyangdikemukakan.
 KementerianmelihatNGOataudikenalisebagaiPertubuhanSukarelaKebajikan
@@ -955,20 +955,20 @@ Setakat ini kita telah meluluskan sebanyak 205 buah PSK yang telah menerima
 bantuan daripada pihak kita. Jadi, mengenai cadangan untuk mengkaji balik keadaan,
 kitamengambilmaklumisuinidan*insya-Allah*kitasediamelihatdarisemasakesemasa
 ataskemampuandankelayakanyangharusdiberi.Terimakasih."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,11.,,1110,TuanYangdi-Pertua,JadiyangRM8itubolehkajibaliklahya.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,11.,,1110,Dato’HajahSitiZailahbintiMohdYusoff,"Ya, kenakajibalik."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,11.,,1110,TuanYangdi-Pertua,*Alhamdulilah*.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,11.,,1110,Dato’HajahSitiZailahbintiMohdYusoff,Ya.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,11.,,1110,TuanYangdi-Pertua,YangBerhormatTanSri?Sila.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,11.,,1110,Tan Sri Dato’ Seri Mohd Radzi bin Tan Sri Sheikh Ahmad,"Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1110,1110,TuanYangdi-Pertua,JadiyangRM8itubolehkajibaliklahya.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1110,1110,Dato’HajahSitiZailahbintiMohdYusoff,"Ya, kenakajibalik."
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1110,1110,TuanYangdi-Pertua,*Alhamdulilah*.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1110,1110,Dato’HajahSitiZailahbintiMohdYusoff,Ya.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1110,1110,TuanYangdi-Pertua,YangBerhormatTanSri?Sila.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1110,1110,Tan Sri Dato’ Seri Mohd Radzi bin Tan Sri Sheikh Ahmad,"Tuan Yang di-
 Pertua, soalan tambahan saya ialah, RM8 itu kalau dikaji balik, memandangkan bahawa
 kebelakangan ini kerajaan telah mengeluarkan beribu-ribu, berbilion-bilion bantuan
 kepada warganegara Malaysia kita. Memandangkan bahawa hanya ada 205 sahaja
 yang dipanggil PSK terdapat di dalam negara kita, saya difahamkan bahawa bilangan
 anak-anak yatim tidak melebihi 5,000. Jadi, saya mintalah *confirmation* daripada Yang
 BerhormatTimbalanMenteri."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,11.,,1110,TuanYangdi-Pertua,Sila.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,11.,,1110,Dato’ Hajah Siti Zailah binti Mohd Yusoff,"Terima kasih Yang Berhormat atas
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1110,1110,TuanYangdi-Pertua,Sila.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1110,1110,Dato’ Hajah Siti Zailah binti Mohd Yusoff,"Terima kasih Yang Berhormat atas
 kepekaan Yang Berhormat terhadap kebajikan anak yatim dan golongan yang
 memerlukan. Kita memang benar- kita memahami kekangan yang dihadapi oleh semua
 PSKtelahmengendalikanprogramkebajikanini.Sebagaimanayangsaya sebutkantadi,
@@ -983,20 +983,20 @@ initanggungjawabbersamadaninilahmasanya sebenarnya, syarikatkorporat,NGOdan
 syarikat-syarikat GLC, syarikat swasta sama-sama membantu untuk memastikan
 kumpulan sasar yang diperlukan ini sama-sama kita bantu dengan mengikut apa
 keperluanyangdiperlukanolehmereka.Terimakasih."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,11.,,1110,Tuan Yang di-Pertua,"Terima kasih, fasal anak yatim itu anak yatim yang di
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1110,1110,Tuan Yang di-Pertua,"Terima kasih, fasal anak yatim itu anak yatim yang di
 atasinitakpayahlahdibagi.Tambahan?"
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,11.,,1110,Dato’IsabinAb.Hamid,TuanYangdi-Pertua...
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,11.,,1110,TuanYangdi-Pertua,YangBerhormatDato’Isaya.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,11.,,1110,Dato’ Isa bin Ab. Hamid,"Saya melihat isu yang dibangkitkan oleh Yang
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1110,1110,Dato’IsabinAb.Hamid,TuanYangdi-Pertua...
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1110,1110,TuanYangdi-Pertua,YangBerhormatDato’Isaya.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1110,1110,Dato’ Isa bin Ab. Hamid,"Saya melihat isu yang dibangkitkan oleh Yang
 BerhormatTanSritadisudahberlarutanempat,limatahun..."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,11.,,1110,TuanYangdi-Pertua,Ya.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,11.,,1110,Dato’ Isa bin Ab. Hamid,"Perkara ini telah dibangkitkan oleh Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1110,1110,TuanYangdi-Pertua,Ya.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1110,1110,Dato’ Isa bin Ab. Hamid,"Perkara ini telah dibangkitkan oleh Yang Berhormat
 Datuk Shukor berkenaan dengan RM8 ini terlalu kecil. Saya mohon kepastian daripada
 peringkatkementerianberapalamakajianhendakdibuat?Sekian,terimakasih."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,11.,,1110,TuanYangdi-Pertua,YangBerhormatsedangdiasakituya.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,11.,,1110,Dato’ Hajah Siti Zailah binti Mohd Yusoff,
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,11.,,1110,ANNOTATION,[Ketawa]
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,11.,,1110,Dato’ Hajah Siti Zailah binti Mohd Yusoff,"Terima kasih Yang
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1110,1110,TuanYangdi-Pertua,YangBerhormatsedangdiasakituya.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1110,1110,Dato’ Hajah Siti Zailah binti Mohd Yusoff,
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1110,1110,ANNOTATION,[Ketawa]
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1110,1110,Dato’ Hajah Siti Zailah binti Mohd Yusoff,"Terima kasih Yang
 Berhormat. Okey, terima kasih atas kepekaan semua Ahli-ahli Senator kita atas isu
 kebajikan. Memang kita sangat mengharapkan kalau boleh kita dapat bagi yang terbaik
 untuk kumpulan sasar kita tetapi kita memahami kekangan yang dihadapi oleh kerajaan.
@@ -1010,13 +1010,13 @@ setahun, jadi sudah tentu banyak lagi sumbangan-sumbangan daripada pelbagai piha
 kita alu-alukan. Jadi dengan rakyat Malaysia yang berjiwa kebajikan, kita mengharapkan
 *insya-Allah* bukan semata-mata tanggungjawab kebajikan ini tanggungjawab kerajaan
 tetapikebajikaninimerupakantanggungjawabkitasemua.Terimakasih."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,11.,,1110,TuanYangdi-Pertua,"TerimakasihYangBerhormatTimbalanMenteri.
-TuanSureshSingha/lRashpalSingh."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,12.,,1110,Tuan Suresh Singh a/l Rashpal Singh,"minta Menteri Sumber Manusia
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1110,1110,TuanYangdi-Pertua,"TerimakasihYangBerhormatTimbalanMenteri.
+TuanSureshSingha/lRashpalSingh.
+**12. Tuan Suresh Singh a/l Rashpal Singh** minta Menteri Sumber Manusia
 menyatakan, apa tindakan atau rancangan diambil untuk mengatasi kadar
 pengangguran yang tinggi, dan adakah kementerian berhasrat untuk memberi bantuan
 kewangansementarauntukmengurangkanbebanparapenganggur."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,12.,,1110,Timbalan Menteri Sumber Manusia [Datuk Haji Awang bin Hashim],"*Bismillahi Rahmani Rahim.* Terima kasih Tuan Yang di-Pertua. Terima kasih Yang
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1110,1110,Timbalan Menteri Sumber Manusia [Datuk Haji Awang bin Hashim],"*Bismillahi Rahmani Rahim.* Terima kasih Tuan Yang di-Pertua. Terima kasih Yang
 BerhormatSenatorTuanSureshSingh.
 Berdasarkan data terkini kaji selidik tenaga buruh oleh Jabatan Perangkaan
 Malaysia kadar pengangguran rakyat Malaysia pada Ogos 2021 menurun sebanyak 0.2
@@ -1046,7 +1046,7 @@ Ini mereka tidak ada majikan tetapi kita memberi perlindungan kepada mereka
 termasuk skim perlindungan sosial seperti PERKESO. Ini bermakna mereka kalau
 ditimpa musibah ketika bekerja mereka juga boleh mencarum dan mendapat
 perlindungan."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,12.,,1120,Timbalan Menteri Sumber Manusia [Datuk Haji Awang bin Hashim],"Jadi selain daripada itu, Pembangunan Sumber Manusia Berhad juga
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1120,1120,Timbalan Menteri Sumber Manusia [Datuk Haji Awang bin Hashim],"Jadi selain daripada itu, Pembangunan Sumber Manusia Berhad juga
 menubuhkan Pusat Penempatan Pembangunan Sumber Manusia. Mereka menulis di
 sini, *HRD Corp Placement Centre*. Saya sangat kagum sebab kita sekarang sedang
 membicarakan untuk martabatkan Bahasa Malaysia walaupun dalam keadaan
@@ -1055,18 +1055,18 @@ peluang pekerjaan yang tersedia oleh majikan. Setakat Oktober 2021, sebanyak 36,
 peluang pekerjaan tersedia melalui Pusat Penempatan Pembangunan Sumber Manusia
 dan lebih 4,000 orang pekerja berjaya ditempatkan melalui inisiatif ini. Sekian, terima
 kasih."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,12.,,1120,TuanYangdi-Pertua,Terimakasih.Soalantambahan.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,12.,,1120,Ir.Ts.HajiKhairilNizam binKhirudin,"TuanYangdi-Pertua, soalantambahan."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,12.,,1120,TuanYangdi-Pertua,Dipersilakan.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,12.,,1120,Ir. Ts. Haji Khairil Nizam bin Khirudin,"Terima kasih Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1120,1120,TuanYangdi-Pertua,Terimakasih.Soalantambahan.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1120,1120,Ir.Ts.HajiKhairilNizam binKhirudin,"TuanYangdi-Pertua, soalantambahan."
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1120,1120,TuanYangdi-Pertua,Dipersilakan.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1120,1120,Ir. Ts. Haji Khairil Nizam bin Khirudin,"Terima kasih Tuan Yang di-Pertua.
 Terima kasih Timbalan Menteri. Berdasarkan data daripada MYFutureJobs, sebanyak
 1.7 juta peluang pekerjaan telah dibuka dan sebanyak 680 ribu yang telah dipohon.
 Cuma yang mendapat kelulusan seramai 223 ribu sahaja lebih kurang. Soalan saya
 kepada Yang Berhormat Timbalan Menteri, mengapakan jawatan-jawatan banyak yang
 ditawarkan ini tidak mendapat perhatian daripada kumpulan sasaran. Apakah
 masalahnyadanapakahsolusinya?Terimakasih."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,12.,,1120,TuanYangdi-Pertua,Dipersilakan.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,12.,,1120,Datuk Haji Awang bin Hashim,"Terima kasih Tuan Yang di-Pertua. Terima
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1120,1120,TuanYangdi-Pertua,Dipersilakan.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1120,1120,Datuk Haji Awang bin Hashim,"Terima kasih Tuan Yang di-Pertua. Terima
 kasih Yang Berhormat Senator Ir. Ts. Haji Khairil. Memang, itulah yang dikatakan tadi
 seperti yang dibangkitkan oleh Yang Berhormat Senator Dato’ Wira Othman bin Aziz
 berkenaan dengan persempadanan kerja. Inilah yang kita sedang merangka iaitu
@@ -1087,16 +1087,16 @@ ubah daripada *“talent”* menjadi ‘bakat’. Jadi, program-program inilah y
 sepadankan dengan kehendak pasaran dan juga permintaan dalam pasaran
 pengangguran yang terlibat dalam ketika kita menghadapi pandemik COVID-19 dan
 akanmenjadiendemikTuanYangdi-Pertua.Sekian,terimakasih."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,12.,,1120,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Timbalan Menteri. Datuk
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1120,1120,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Timbalan Menteri. Datuk
 RazalibinIdris."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,12.,,1120,DatukRazali binIdris,"TerimakasihTuanYangdi-Pertua. Soalansaya nombor
-13."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,13.,,1120,Datuk Razali bin Idris,"minta Menteri Perumahan dan Kerajaan Tempatan
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1120,1120,DatukRazali binIdris,"TerimakasihTuanYangdi-Pertua. Soalansaya nombor
+13.
+**13. Datuk Razali bin Idris** minta Menteri Perumahan dan Kerajaan Tempatan
 menyatakan, keterbukaan dan kerjasama Pihak Berkuasa Tempatan (PBT) untuk
 menggunakan teknologi dan rangkaian platform perkhidmatan pendigitalan terutama
 dalam kalangan peneraju *SuperApps* seperti *Grab, Lazada* dan *Shopee* untuk
 membantupeniagamenyertaiekonomidigital."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,13.,,1120,Timbalan Menteri Perumahan dan Kerajaan Tempatan [Dato’ Sri Dr. Haji Ismail bin Abd Muttalib],"*Bismillahi Rahmani Rahim. Assalamualaikum warahmatullahi
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1120,1120,Timbalan Menteri Perumahan dan Kerajaan Tempatan [Dato’ Sri Dr. Haji Ismail bin Abd Muttalib],"*Bismillahi Rahmani Rahim. Assalamualaikum warahmatullahi
 wabarakatuh,* salam sejahtera. Terima kasih Tuan Yang di-Pertua. Terima kasih Yang
 BerhormatSenatorDatukRazaliatassoalannombor13.
 Tuan Yang di-Pertua, untuk makluman Yang Berhormat, Kementerian
@@ -1105,15 +1105,15 @@ tempatan (PBT) ke arah penggunaan platform perkhidmatan pendigitalan. Ini adalah
 kerana ia dapat membantu para peniaga terutamanya peniaga Industri Kecil dan
 Sederhana (IKS) untuk memacu operasi dan memastikan kemapanan perniagaan
 masing-masingdenganlebihefisiendanmudah,cekapTuanYangdi-Pertuaya."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,13.,,1120,TuanYangdi-Pertua,Ya.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,13.,,1120,Dato’ Sri Dr. Haji Ismail bin Abd Muttalib,"Dalam Bahasa Melayu, Bahasa
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1120,1120,TuanYangdi-Pertua,Ya.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1120,1120,Dato’ Sri Dr. Haji Ismail bin Abd Muttalib,"Dalam Bahasa Melayu, Bahasa
 Malaysiaya?"
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,13.,,1120,TuanYangdi-Pertua,"Ya,BahasaMalaysia."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,13.,,1120,Dato’ Sri Dr. Haji Ismail bin Abd Muttalib,"Tiada peraturan dan syarat khas
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1120,1120,TuanYangdi-Pertua,"Ya,BahasaMalaysia."
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1120,1120,Dato’ Sri Dr. Haji Ismail bin Abd Muttalib,"Tiada peraturan dan syarat khas
 diletakkan di bawah KPKT termasuk di kalangan peneraju *Super Apps. Super apps* ini
 nak*translate*inipayahTuanYangdi-Pertua.Akantetapipeniagadigitallah..."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,13.,,1120,TuanYangdi-Pertua,Peniagadigital.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,13.,,1120,Dato’ Sri Dr. Haji Ismail bin Abd Muttalib,"Ya. PBT sentiasa terbuka dengan
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1120,1120,TuanYangdi-Pertua,Peniagadigital.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1120,1120,Dato’ Sri Dr. Haji Ismail bin Abd Muttalib,"Ya. PBT sentiasa terbuka dengan
 perkembangan digital dan menyokong usaha untuk melaksanakan perkhidmatan
 pendigitalan. Sebagai contoh, PBT di Pulau Pinang telah melaksanakan inisiatif
 pembayaran tanpa tunai di 56 buah pasar awam di Pulau Pinang yang melibatkan1,512
@@ -1123,8 +1123,8 @@ Rayamelalui*Shopee*kepadapeniagabagimeningkatkanpenjualandalamtalian.
 Tuan Yang di-Pertua, Majlis Bandaraya Ipoh (MBI) pula telahmenggariskan dua
 inisiatif dalam Pelan Tindakan Bandar Pintar Ipoh 2030 di bawah *domain, smart
 economy*.*Smarteconomy*khususTuanYangdi-Pertua.Inipunsusah."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,13.,,1120,TuanYangdi-Pertua,Ekonomipintar.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,13.,,1120,Dato’ Sri Dr. Haji Ismail bin Abd Muttalib,"Ekonomi pintar, iaitu penerapan
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1120,1120,TuanYangdi-Pertua,Ekonomipintar.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1120,1120,Dato’ Sri Dr. Haji Ismail bin Abd Muttalib,"Ekonomi pintar, iaitu penerapan
 ekonomi digital dan *eWallet*. Majlis Bandaraya Ipoh telah menjalankan kerjasama
 dengan beberapa perkhidmatan digital serta *Grab* untuk mendigitalkan perkhidmatan
 Pasar Besar Ipoh serta penggunaan MAE dari Maybank Berhad bagi perkhidmatan
@@ -1137,16 +1137,16 @@ perkhidmatan digital seperti *Foodpanda, GrabFood, Halo, Touch n’ Go* dan bebe
 perkhidmatan *cashless-* tanpa tunai, yang lain bagi meningkatkan kesedaran untuk
 menyertai aktiviti pendigitalan, dan seterusnya membantu dalam peningkatan ekonomi
 peniaga-peniagayangterlibat.TerimakasihTuanYangdi-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,13.,,1120,TuanYangdi-Pertua,Terimakasih.Soalantambahan.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,13.,,1120,Datuk Razali bin Idris,"Tuan Yang di-Pertua, ada soalan tambahan sedikit
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1120,1120,TuanYangdi-Pertua,Terimakasih.Soalantambahan.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1120,1120,Datuk Razali bin Idris,"Tuan Yang di-Pertua, ada soalan tambahan sedikit
 TuanYangdi-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,13.,,1120,TuanYangdi-Pertua,Saya.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,13.,,1120,Datuk Razali bin Idris,"Terima kasih Yang Berhormat Timbalan Menteri,
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1120,1120,TuanYangdi-Pertua,Saya.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1120,1120,Datuk Razali bin Idris,"Terima kasih Yang Berhormat Timbalan Menteri,
 jawapan yang padat dan pendek. Cuma ada sikit tambahan, adakah kementerian
 bersetuju untuk memasukkan setiap perkhidmatan yang disediakan dalam PBT sebagai
 alternatif pelbagai dalam platform peneraju *super apps* sebagai satu usaha yang efisien
 danefektifterutamakepadarakyatsebagaipemegangtaruh?Mohonpenjelasan."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,13.,,1120,Dato’ Sri Dr. Haji Ismail bin Abd Muttalib,"Terima kasih Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1120,1120,Dato’ Sri Dr. Haji Ismail bin Abd Muttalib,"Terima kasih Tuan Yang di-Pertua.
 Terima kasih Yang Berhormat Senator Datuk Razali. Pandangan Yang Berhormat
 Senator cukup baik dan Tuan Yang di-Pertua, saya akan bawa ini kepada kementerian
 kita. Ini kerana setakat ini, bidang eDagang ini, perniagaan digital ini tidak diletakkan di
@@ -1157,14 +1157,14 @@ kementerian dan kita akan *collaborate* dengan kementerian-kementerian yang berk
 supayapeluang-peluangataupunfaedah-faedahyangbaikdaripadasegipendigitalanini
 dapat digunakan oleh peniaga-peniaga kita walaupun di peringkat luar bandar. Terima
 kasihTuanYangdi-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,13.,,1120,Tuan Yang di-Pertua,"Terima kasih. Tadi disebut *Touch n’ Go* ya, dah lama
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1120,1120,Tuan Yang di-Pertua,"Terima kasih. Tadi disebut *Touch n’ Go* ya, dah lama
 benar itu. Patutnya dulu sentuh dan jalan, tetapi apa boleh buat, dah lama…"
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,13.,,1120,ANNOTATION,[Ketawa]
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,13.,,1120,Tuan Yang di-Pertua,"Ada tambahan tak? Soalan tambahan? Tak ada, baik. Kita berpindah kepada Yang
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1120,1120,ANNOTATION,[Ketawa]
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1120,1120,Tuan Yang di-Pertua,"Ada tambahan tak? Soalan tambahan? Tak ada, baik. Kita berpindah kepada Yang
 BerhormatSenatorPuanLimHuiYing."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,13.,,1120,PuanLimHuiYing,TerimakasihTuanYangdi-Pertua.Soalansayasoalan14.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,13.,,1120,TuanYangdi-Pertua,Silakan.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,14.,,1120,Puan Lim Hui Ying,"minta Menteri Kesihatan menyatakan jumlah Pusat Krisis
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1120,1120,PuanLimHuiYing,TerimakasihTuanYangdi-Pertua.Soalansayasoalan14.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1120,1120,TuanYangdi-Pertua,"Silakan.
+**14. Puan Lim Hui Ying** minta Menteri Kesihatan menyatakan jumlah Pusat Krisis
 Sehenti- *One-Stop Crisis Centre,* yang telah diwujudkan di setiap negeri bagi membantu
 golonganmangsakeganasandomestik.
 **Timbalan MenteriKesihatan I[Dato’Dr.Haji NoorAzmi binGhazali]:**Terima
@@ -1188,18 +1188,18 @@ mana siasatan lanjut atau rujukan kepada pihak berkuasa atau agensi dan jabatan
 berkaitan akan dilakukan oleh pegawai yang bertugas di OSCC. Setiap kes yang
 dikendalikan di OSCC akan diadakan dalam sebuah bilik khas berasingan dengan
 pesakitbagimenjagakerahsiaan."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,14.,,1130,Puan Lim Hui Ying,"Segala prosedur seperti pemeriksaan perubatan, pengambilan dan pengurusan
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1130,1130,TuanYangdi-Pertua,"Segala prosedur seperti pemeriksaan perubatan, pengambilan dan pengurusan
 bahanbuktisertadokumentasiperubatandilakukandisinidalamkeadaanyangselamat.
 Tuan Yang di-Pertua, rawatan awal turut diberikan di OSCC sekiranya mangsa
 penderaan mengalami kecederaan. Selain itu, mangsa akan dirujuk kepada agensi dan
 jabatan yang berkaitan dan turut akan mendapatkan rawatan susulan mengikut kategori
 kessertakeadaanpesakit.Sekian,terimakasih."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,14.,,1130,TuanYangdi-Pertua,"Soalantambahan,sila."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,14.,,1130,Puan Lim Hui Ying,"Soalan tambahan Tuan Yang di-Pertua. Boleh minta
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1130,1130,TuanYangdi-Pertua,"Soalantambahan,sila."
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1130,1130,Puan Lim Hui Ying,"Soalan tambahan Tuan Yang di-Pertua. Boleh minta
 kementerian menyatakan kes keganasan domestik yang telah dikendalikan oleh pusat-
 pusatinibagisetiapnegeripadatahun2020sehinggakini?"
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,14.,,1130,TuanYangdi-Pertua,Silakan.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,14.,,1130,Dato’ Dr. Haji Noor Azmi bin Ghazali,"Terima kasih Tuan Yang di-Pertua,
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1130,1130,TuanYangdi-Pertua,Silakan.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1130,1130,Dato’ Dr. Haji Noor Azmi bin Ghazali,"Terima kasih Tuan Yang di-Pertua,
 terima kasih Yang Berhormat. Saya tidak mempunyai data bagi setiap negeri, walau
 bagaimanapun kalau diizinkan, saya nyatakan hari ini pada tahun 2020 sejumlah 9,952
 kes penderaan yang mendapatkan rawatan di OSCC hospital KKM berbanding 10,880
@@ -1224,13 +1224,13 @@ dianjurkan oleh KPWKM dan juga dari PDRM dan juga daripada NGO-NGO lain yang
 bantu menyelamatkan mangsa penderaan seperti *Women's Aid Organisation* (WAO),
 *Women'sCentreforChange*(WCC),dan*AllWomen'sActionSociety*(AWAM)inisemua
 dalambahasaInggeris.Terimakasih,TuanYangdi-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,14.,,1130,TuanYangdi-Pertua,YangBerhormatSenatorDato’AjisbinSitin.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,15.,,1130,Dato' Ajis bin Sitin,"minta Menteri Pembangunan Luar Bandar menyatakan,
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1130,1130,TuanYangdi-Pertua,"YangBerhormatSenatorDato’AjisbinSitin.
+**15. Dato' Ajis bin Sitin** minta Menteri Pembangunan Luar Bandar menyatakan,
 berapa ramai anak-anak Orang Asli yang telah memohon melanjutkan pengajian ke luar
 negarauntukperingkat sarjanamuda, sarjanadan doktorfalsafahsejaklimatahun yang
 lalu dan menyatakan juga berapa ramai yang telah berjaya dan yang tidak berjaya serta
 apaalasanmerekatidakberjaya."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,15.,,1130,Timbalan Menteri Pembangunan Luar Bandar II [Datuk Haji Hasbi bin Habibollah],"*BismillahiRahmaniRahim.Assalamualaikumwarahmatullahiwabarakatuh.*
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1130,1130,Timbalan Menteri Pembangunan Luar Bandar II [Datuk Haji Hasbi bin Habibollah],"*BismillahiRahmaniRahim.Assalamualaikumwarahmatullahiwabarakatuh.*
 Tuan Yang di-Pertua dan Yang Berhormat Senator, pihak kementerian melalui Jabatan
 Kemajuan Orang Asli (JAKOA) dengan kerjasama Majlis Amanah Rakyat (MARA) telah
 menghantar pelajar Orang Asli yang layak untuk melanjutkan pengajian ke luar negara
@@ -1261,19 +1261,19 @@ yang dilihat sangat efisien dalam membantu membuka minda pelajar Orang Asli untu
 menyambungpelajarankeperingkatyanglebihtinggi.
 Ada makluman tambahan iaitu pada tahun 2019 pula, ada 23 orang telah pun
 dihantardanyangsedang-rasanyaitusahajadululahbuatmasaini.Terimakasih."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,15.,,1130,TuanYangdi-Pertua,YangBerhormatSenatorDato’Isa.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,15.,,1130,Dato’ Isa bin Ab. Hamid,"Saya ingin memaklumkan kepada Dewan yang mulia
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1130,1130,TuanYangdi-Pertua,YangBerhormatSenatorDato’Isa.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1130,1130,Dato’ Isa bin Ab. Hamid,"Saya ingin memaklumkan kepada Dewan yang mulia
 ini bahawa pengajian untuk ke luar negara dibiayai oleh MARA. Namun pelajar-pelajar
 mahasiswa yang ingin menyambung peringkat ijazah dan doktor falsafah di dalam
 universiti tempatan, tidak dibiayai oleh JAKOA. Saya mohon perkara ini diperluaskan
 danmohonkalaudapatiadiluluskanolehpihakkementerian?Sekian,terimakasih."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,15.,,1130,TuanYangdi-Pertua,Bolehbawakekementerianitu.Sila.
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,15.,,1130,Datuk Haji Hasbi bin Habibollah,"Terima kasih Yang Berhormat Senator.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1130,1130,TuanYangdi-Pertua,Bolehbawakekementerianitu.Sila.
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1130,1130,Datuk Haji Hasbi bin Habibollah,"Terima kasih Yang Berhormat Senator.
 Sayaakanmengambilperhatiankepadaperkaratersebut dandibawakekementerian."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,15.,,1130,Tuan Yang di-Pertua,"Baik, terima kasih Yang Berhormat Timbalan Menteri,
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1130,1130,Tuan Yang di-Pertua,"Baik, terima kasih Yang Berhormat Timbalan Menteri,
 sesisoaljawabsudahselesai,Setiausaha."
-JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,15.,,1130,ANNOTATION,[MasaPertanyaan-pertanyaanJawabLisantamat]
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1130,,"*Aturan Urusan Mesyuarat* dibacakan bagi menyambung semula perbahasan
+JAWAPAN-JAWAPAN LISAN BAGIPERTANYAAN-PERTANYAAN,,,■1130,1130,ANNOTATION,[MasaPertanyaan-pertanyaanJawabLisantamat]
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1130,1130,,"*Aturan Urusan Mesyuarat* dibacakan bagi menyambung semula perbahasan
 yangditangguhkanatasmasalah:
 ""(a) **BAHAWA**Dewanini,
 **Menyedari** akan cabaran untuk memulih serta menjana semula
@@ -1298,10 +1298,10 @@ berusaha dengan sepenuh komitmen dan iltizam yang jitu untuk
 membangunkan negara secara mampan bagi membolehkan
 setiap ahli Keluarga Malaysia tanpa mengira agama, bangsa
 dankaummenikmatitarafhidupyangwajar.”"
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1130,ANNOTATION,[14Oktober2021]
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1130,Tuan Yang di-Pertua,"Dijemput Yang Berhormat Senator Puan Rita Sarimah
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1130,1130,ANNOTATION,[14Oktober2021]
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1130,1130,Tuan Yang di-Pertua,"Dijemput Yang Berhormat Senator Puan Rita Sarimah
 a/kPatrickInsoluntukmeneruskanperbahasan."
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1136,Puan Rita Sarimah a/k Patrick Insol,"Selamat pagi dan salam sejahtera.
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,11.36pg.,1136,Puan Rita Sarimah a/k Patrick Insol,"Selamat pagi dan salam sejahtera.
 Terima kasih, Tuan Yang di-Pertua kerana memberi saya peluang untuk membahaskan
 RancanganMalaysiaKeduaBelas.
 Lima patah perkataan di dalam Rancangan Malaysia Kedua Belas melonjak,
@@ -1309,8 +1309,8 @@ menarik perhatian saya. Transformasi, Berani, Radikal, Inklusif dan Sejahtera. L
 perkataan ini merumuskan rencana kerajaan untuk membawa negara ke status negara
 berpendapatan tinggi yang inklusif dan menyejahterakan rakyat. Ke arah sasaran
 tersebut,kerajaanmengambiltindakanyangberanidanradikal."
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1136,ANNOTATION,[TimbalanYangdi-PertuamempengerusikanMesyuarat]
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1136,Puan Rita Sarimah a/k Patrick Insol,"Tuan Yang di-Pertua, saya akan menyentuh beberapa perkara yang sangat
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,11.36pg.,1136,ANNOTATION,[TimbalanYangdi-PertuamempengerusikanMesyuarat]
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,11.36pg.,1136,Puan Rita Sarimah a/k Patrick Insol,"Tuan Yang di-Pertua, saya akan menyentuh beberapa perkara yang sangat
 dekatdihatiyangmemerlukantransformasiyangberanidanradikal,demikesejahteraan
 ahli-ahliKeluargaMalaysiayangberadadipinggiran.
 Pertama, pendidikan di luar bandar. Tuan Yang di-Pertua, dapatan daripada
@@ -1332,7 +1332,7 @@ pulih sekolah-sekolah daif di Sarawak. Setakat ini kerajaan telah membelanjakan
 sejumlah RM1.8 bilion untuk membaik pulih sekolah-sekolah tersebut yang mana
 Kerajaan Sarawak atas keprihatinan kepada pendidikan anak-anak Sarawak, turut
 menyumbangsejumlahRM388juta."
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1140,Puan Rita Sarimah a/k Patrick Insol,"Tuan Yang di-Pertua, Sarawak juga mencatatkan sebanyak 856 buah sekolah
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1140,1140,Puan Rita Sarimah a/k Patrick Insol,"Tuan Yang di-Pertua, Sarawak juga mencatatkan sebanyak 856 buah sekolah
 kurang murid di mana 300 buah daripadanya mempunyai kurang daripada 50 orang
 murid. Sekolah kurang murid merupakan sekolah yang mempunyai tidak lebih daripada
 150 orang. Di sekolah kurang murid, murid-murid yang berbeza umur dan tahun
@@ -1438,7 +1438,7 @@ dana untuk jalan ladang sebagai kerjasama menang-menang di antara pekebun kecil
 dan kerajaan kerana kerajaan juga mendapat pulangan daripada ses sebanyak RM14
 satutan yang dibayar oleh penanam sawit. Selain daripada itu, sawit jugameningkatkan
 pendapataneksportnegara."
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1150,Puan Rita Sarimah a/k Patrick Insol,"Tuan Yang di-Pertua, dengan izin, *give aman a fishand youfeed him for a day,
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1150,1150,Puan Rita Sarimah a/k Patrick Insol,"Tuan Yang di-Pertua, dengan izin, *give aman a fishand youfeed him for a day,
 teach a man to fish and he will eat for a lifetime.* Mempelbagaikan tanaman dengan
 menggunakan teknologi, dengan izin, *precision farming* seperti fertigasi berdasarkan,
 dengan izin, *internet of things* ialah satu langkah yang wajar. Ini tidak memerlukan
@@ -1496,7 +1496,7 @@ menzahirkan pelan strategik negara. Semoga apa yang dirancang akan direalisasika
 dalamtempohRancanganMalaysiaKeduaBelas.SemogaMalaysiaaman,makmurdan
 sejahtera. Dengan itu saya menyokong Rancangan Malaysia Kedua Belas. Sekian,
 terimakasih."
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1150,Timbalan Yang di-Pertua,"Terimakasih kepada Yang Berhormat Senator Puan
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1150,1150,Timbalan Yang di-Pertua,"Terimakasih kepada Yang Berhormat Senator Puan
 Rita Sarimah, atas perbahasan Usul Rancangan Malaysia Kedua Belas. Ahli-ahli Yang
 Berhormat, saya hendak ingatkan bahawa setiap Ahli Yang Berhormat yang membuat
 perbahasanhendaklahmengambildalamjangkamasa20minit.
@@ -1507,7 +1507,7 @@ oleh itu, saya minta supaya Ahli-ahli Yang Berhormat yang membuat perbahasan dap
 menepatimasaselama20minit yangtelahditetapkan.
 Seterusnya, saya menjemput Yang Berhormat Senator Tuan Haji Ahmad bin
 Yahaya.Dipersilakan."
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1157,Tuan Ahmad bin Yahaya,"*Assalamualaikum* dan salam sejahtera, Tuan Yang
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,11.57pg.,1157,Tuan Ahmad bin Yahaya,"*Assalamualaikum* dan salam sejahtera, Tuan Yang
 di-PertuadanAhli-ahliMajlisyangdihormati.
 Pertamanya, saya ucapkan berbanyak-banyak terima kasih kepada Tuan Yang
 di-Pertua kerana memberi ruang untuk saya turut membahaskan suatu agenda dan
@@ -1541,11 +1541,11 @@ orang miskin di sesebuah negara, ketahuilah di sana ada si kaya yang merompak ha
 mereka”.* Tindakan merompak harta rakyat merupakan suatu jenayah besar yang wajib
 dikekang. Andai benar wujud, terbukti ada, tindakan tegas lagi keras perlu diambil
 terhadapmereka."
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1200,Tuan Ahmad bin Yahaya,"Tuan Yang di-Pertua, di samping itu Nabi SAW yang kita sambung ulang tahun
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1200,1200,Tuan Ahmad bin Yahaya,"Tuan Yang di-Pertua, di samping itu Nabi SAW yang kita sambung ulang tahun
 kelahirannya esok*, insya-Allah*- Baginda pernah bersabda..."
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1200,ANNOTATION,"[Membaca hadis Nabi
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1200,1200,ANNOTATION,"[Membaca hadis Nabi
 dalam bahasaArab]"
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1200,Tuan Ahmad bin Yahaya,"Sifat amanah mengundang rezeki, sementara sifat pak khianat pula
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1200,1200,Tuan Ahmad bin Yahaya,"Sifat amanah mengundang rezeki, sementara sifat pak khianat pula
 mengundang kefakiran. Sebagai pemimpin, hiasilah dengan sifat amanah, jujur dan
 berintegriti tinggi. Sesungguhnya tidak berguna perancangan yang hebat, tidak
 bermanfaat peruntukan yang besar, akan tetapi semua itu tidak sampai kepada sasaran
@@ -1586,8 +1586,8 @@ semakin terhakis. Itulah realiti masyarakat yang amat pahit untuk ditelan. Salah
 puncanya adalah kurangnya penghayatan terhadap pendidikan agama pada masa kini.
 Harus diingat, tanpa agama dan akhlak, bangsa akan hilang, kewibawaan akan lenyap.
 Benarlah pesanan daripada penyair Syauqi..."
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1200,ANNOTATION,[Membaca dalam bahasa Arab]
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1200,Tuan Ahmad bin Yahaya,"Sesungguhnya sesuatu bangsa bertahan selama mana kekal akhlaknya. Sebaliknya,
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1200,1200,ANNOTATION,[Membaca dalam bahasa Arab]
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1200,1200,Tuan Ahmad bin Yahaya,"Sesungguhnya sesuatu bangsa bertahan selama mana kekal akhlaknya. Sebaliknya,
 bangsaakanhilangapabilahilangjugaakhlaknya.
 Tuan Yang di-Pertua, di negeri-negeri utara, negeri Kedah muncul sebagai
 negeri paling rendah Keluaran Dalam Negeri Kasar (KDNK). Bahkan lebih rendah dari
@@ -1627,7 +1627,7 @@ kerajaan negeri bukan sahaja kerana mempertahankan kelestarian hutan, bahkan jug
 kelestarian tanah sawah padi yang menjadi penyumbang utama kepada keselamatan
 makanan negara. Hal yang demikian kerana kos peluang yang terpaksadilepaskan oleh
 kerajaannegerijugaadalahbesar."
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1210,Tuan Ahmad bin Yahaya,"Tuan Yang di-Pertua, isu keselamatan makanan ini merupakan aspek penting.
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1210,1210,Tuan Ahmad bin Yahaya,"Tuan Yang di-Pertua, isu keselamatan makanan ini merupakan aspek penting.
 Ketika negara mengalami pandemik COVID-19, tumpuan dasar beralih untuk melihat
 sejauh mana keselamatan makanan dapat terus dijamin sekali gus menunjukkan isu
 keselamatan makanan ini sangat mustahak kepada negara. Saya memahami pelbagai
@@ -1661,9 +1661,9 @@ Mengapakah perkara-perkara ini masih menjadi isu yang tidak pernah selesai walau
 dibawa setiap kali keDewan Negaradan Dewan Rakyat dibahaskan?Banyak cadangan
 dan janji yang telah dikeluarkan, namun pelaksanaan dilihat seolah-olah belum lagi
 dibuatsecarabersungguh-sungguh.Persoalanyangkedua..."
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1210,Dato’HajiJefridinbinHajiAtan,"TuanYangdi-Pertua,mohon..."
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1210,TuanAhmadbinYahaya,"Sila, sila."
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1210,Dato’HajiJefridinbinHaji Atan,"TerimakasihYangBerhormatSenator.Saya
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1210,1210,Dato’HajiJefridinbinHajiAtan,"TuanYangdi-Pertua,mohon..."
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1210,1210,TuanAhmadbinYahaya,"Sila, sila."
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1210,1210,Dato’HajiJefridinbinHaji Atan,"TerimakasihYangBerhormatSenator.Saya
 tadi telah mendengar perbahasan Yang Berhormat Senator tentang seriusnya
 Kementerian Pertanian dan Industri Makanan berhubung *food security* ataupun
 keselamatan makanan. Yang Berhormat bersetuju atau tidak bahawa Kementerian
@@ -1678,7 +1678,7 @@ mereka hanya berlumba-lumba untuk membina perumahan yang mempunyai nilai yang
 cukup tinggi daripada menumpukan usaha untuk membuka ladang dan sebagainya.
 Saya berharap Yang Berhormat dapat memasukkannya dalam ucapan Yang Berhormat,
 terimakasih."
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1210,Tuan Ahmad bin Yahaya,"Terima kasih Yang Berhormat Senator. Saya minta
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1210,1210,Tuan Ahmad bin Yahaya,"Terima kasih Yang Berhormat Senator. Saya minta
 soalan dan ucapan itu dimasukkan dalam perbahasan saya. Terima kasih, saya
 bersetuju.
 Tuan Yang di-Pertua, persoalan saya yang kedua ialah, adakah kerajaan
@@ -1705,15 +1705,15 @@ Tundukberisi,bagainakrebah.
 Pendiriankukuh,tidakgoyah;
 Menghadapcabaran,tidakgelabah.*
 Terimakasih,*wallahualam.*"
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1210,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat Senator Tuan Haji
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1210,1210,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat Senator Tuan Haji
 Ahmad bin Yahaya atas perbahasan tadi dan terima kasih juga atas ketetapan
 menghormatimasayangtelahditetapkan.
 Seterusnya saya menjemput Yang Berhormat Datuk Haji Bashir bin Haji Alias,
 dipersilakan."
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1218,Datuk Haji Bashir bin Haji Alias,*Bismillahi Rahmani Rahim...*
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1218,ANNOTATION,"[Membaca
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,12.18tgh.,1218,Datuk Haji Bashir bin Haji Alias,*Bismillahi Rahmani Rahim...*
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,12.18tgh.,1218,ANNOTATION,"[Membaca
 selawat]"
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1218,Datuk Haji Bashir bin Haji Alias,"*Assalamualaikumwarahmatullahiwabarakatuh.*
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,12.18tgh.,1218,Datuk Haji Bashir bin Haji Alias,"*Assalamualaikumwarahmatullahiwabarakatuh.*
 Tuan Yang di-Pertua, saya mengucapkan terima kasih atas peluang yang
 diberikan kepada saya untuk ikut serta dalam perbahasan Rancangan Malaysia Kedua
 Belas yang telah dibentangkan sendiri oleh Yang Amat Berhormat Perdana Menteri
@@ -1735,7 +1735,7 @@ sosial telah berkembang dengan Labuan IBFC menawarkan pelbagai perkhidmatan dan
 produk kewangan kepada pelanggan termasuk perbankan, insurans, perniagaan
 amanah, syarikat amanah, pasaran modal, pengurusan dana, pegangan pelaburan,
 perkhidmatansokonganindustribersumberkanminyakdangas."
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1220,Datuk Haji Bashir bin Haji Alias,"Walaupun negara dan Labuan khususnya telah dilanda tsunami pandemik
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1220,1220,Datuk Haji Bashir bin Haji Alias,"Walaupun negara dan Labuan khususnya telah dilanda tsunami pandemik
 COVID-19 namun ia masih lagi berupaya untuk menstabilkan ekosistem pasaran
 kewangan Labuan apabila berdasarkan Laporan Pasaran Labuan IBFC (2020) terdapat
 lebih 800 institusi kewangan berlesen kini beroperasi di zon ekonomi Labuan IBFC dan
@@ -1845,7 +1845,7 @@ Laut Antarabangsa Labuan, dan Karnival Sukan Pelancongan Labuan diadakan kembali
 untuk menarik minat pelancong untuk berkunjung ke Labuan. Dalam masa yang sama,
 saya juga memohon peruntukan bagi menjayakan program mega ini ditambah bagi
 membolehkanpelbagaiaktivitidapatditambahdandianjurkanpadamasahadapan."
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1230,Datuk Haji Bashir bin Haji Alias,"Bagi menggalak sektor pelancongan ini, saya juga memohon kerajaan
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1230,1230,Datuk Haji Bashir bin Haji Alias,"Bagi menggalak sektor pelancongan ini, saya juga memohon kerajaan
 memberikantumpuan serius bagi menjayakanpembinaan JambatanLabuan-Menumbok
 yang dicadangkan sudah sekian lama, namun tertangguh hingga ke hari ini. Pada
 pembinaan ini merancakkan lagi pelancongan dan hubungan darat melibatkan tanah
@@ -1888,14 +1888,14 @@ kemakmuran ekonominegara serta terus menjadi pusat kewangan perniagaan pilihan d
 peringkat global. Mengakhiri ucapan saya dengan ini saya menyokong Rancangan
 Malaysia Kedua Belas. Sekian. *Wabillahittaufiq walhidayah. Wassalamualaikum
 warahmatullahiwabarakatuh.*"
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1230,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1230,1230,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator
 DatukHajiBashirbinHajiAliasatasperbahasantadi.
 Ahli-ahli Yang Berhormat, saya ingin maklumkan bahawa selepas kita berhenti
 rehat nanti jam 1, saya minta Ahli-ahli Yang Berhormat berada di belakang lobi Dewan
 NegarainikeranaadapenyerahanJurnalParlimenkepadaAhli-ahliYangBerhormat.
 Seterusnya saya menjemput Yang Berhormat Senator Tuan Haji Seruandi bin
 Saad.Dipersilakan."
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1235,Tuan Haji Seruandi bin Saad,"*Bismillahi Rahmani Rahim. Assalamualaikum
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,12.35tgh.,1235,Tuan Haji Seruandi bin Saad,"*Bismillahi Rahmani Rahim. Assalamualaikum
 warahmatullahi wabarakatuh* dan salam sejahtera. Setinggi tahniah dan penghargaan
 diucapkan kepada Yang Amat Berhormat Perdana Menteri Dato’ Sri Ismail Sabri bin
 Yaakob dalam memacu negara ke arah “Keluarga Malaysia Makmur - Inklusif dan
@@ -1945,7 +1945,7 @@ menunjukkan bilangan penduduk bekerja meningkat kepada 15.38 juta pada Ogos yang
 lalu berbanding 15.29 juta orang pada Julai. Hal ini menunjukkan kedudukan tenaga
 buruh semakin baik pada Ogos berikutan lebih banyak aktiviti ekonomi dibenarkan
 beroperasidenganpematuhanproseduroperasistandard(SOP)."
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1240,Tuan Haji Seruandi bin Saad,"Tuan Yang di-Pertua, apakah sasaran yang ditetapkan oleh kementerian bagi
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1240,1240,Tuan Haji Seruandi bin Saad,"Tuan Yang di-Pertua, apakah sasaran yang ditetapkan oleh kementerian bagi
 memanfaatkan guna tenaga dan penempatan semula pekerja yang kehilangan
 pekerjaan selepas negara memasuki fasa endemik nanti? Bantuan kepada golongan
 B40 dan M40. Yang Amat Berhormat Perdana Menteri turut menyentuh kepentingan
@@ -2052,7 +2052,7 @@ akan terlaksana. Perancangan inklusif RMKe-12 diharap dapat mengembalikan
 kegemilangan dan terus memacu pertumbuhan ekonomi negara sekali gus membawa
 manfaat kepada Keluarga Malaysia hendaknya. Saya dengan ini menyokong RMKe-12
 (2021-2025).Sekian,terimakasih."
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1240,Timbalan Yang di-Pertua [Dato’ Seri Mohamad Ali bin Mohamad],"Terima
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1240,1240,Timbalan Yang di-Pertua [Dato’ Seri Mohamad Ali bin Mohamad],"Terima
 kasihkepadaYangBerhormatSenatorTuanSeruandibinSaad.
 Ahli-ahli Yang Berhormat, selepas ini kita ada Majlis Penyerahan *Jurnal
 Parlimen*. Jadi, saya tengok masa pun sudah 12.51. Jadi, untuk pembahas seterusnya
@@ -2066,22 +2066,22 @@ belakang saya untuk Majlis Penyerahan *Jurnal Parlimen* kepada semua Ahli-ahli Y
 Berhormat.
 Ahli-ahli Yang Berhormat, mesyuarat Dewan hari ini ditangguhkan sehingga jam
 2.30petang.Sekian,terimakasih."
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1240,ANNOTATION,[Mesyuaratditempohkanpadajam12.51tengahhari]
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1240,ANNOTATION,[Mesyuaratdisambungsemulapadapukul2.30petang]
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1430,ANNOTATION,[TuanYangdi-PertuamempengerusikanMesyuarat]
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1430,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, urusan menyambung
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1240,1240,ANNOTATION,[Mesyuaratditempohkanpadajam12.51tengahhari]
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1240,1240,ANNOTATION,[Mesyuaratdisambungsemulapadapukul2.30petang]
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1430,1430,ANNOTATION,[TuanYangdi-PertuamempengerusikanMesyuarat]
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1430,1430,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, urusan menyambung
 perbahasan dan dipersilakanYang Berhormat Senator Dato’Sri Vell Paari a/l Tun Samy
 Vellu."
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1434,Dato’ Sri Vell Paari a/l Tun Samy Vellu,"Salam sejahtera Tuan Yang di-Pertua
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,2.34ptg.,1434,Dato’ Sri Vell Paari a/l Tun Samy Vellu,"Salam sejahtera Tuan Yang di-Pertua
 Dewan Negara dan Ahli-ahli Yang Berhormat sekalian. Terima kasih Tuan Yang di-
 Pertua Dewan Negara kerana memberi peluang kepada saya untuk terlibat dalam
 perbahasanRancanganMalaysiaKeduaBelaspadahariini."
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1434,Tuan Yang di-Pertua,"Sebelum Yang Berhormat meneruskan. Sukacita saya
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,2.34ptg.,1434,Tuan Yang di-Pertua,"Sebelum Yang Berhormat meneruskan. Sukacita saya
 memaklumkan bahawa memandangkan di atas kekangan masa, setiap ahli
 diperuntukkan 12 minit. Oleh itu, cuba dalam tempoh itu mengemukakan hujah oleh
 sebabadausulpentingyangbakaldikemukakanolehseorangahlisebaiksahajaselesai
 halyangtelahditetapkan.Cubalah,sila."
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1434,Dato’ Sri Vell Paari a/l Tun Samy Vellu,"Pandemik COVID-19 yang melanda
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,2.34ptg.,1434,Dato’ Sri Vell Paari a/l Tun Samy Vellu,"Pandemik COVID-19 yang melanda
 negara kita telah mengganggu perkembangan ekonomi negara sehingga menyebabkan
 kesusahan kepada rakyat di negara kita. Ramai yang hilang pekerjaan, punca
 pendapatan dan juga ahli keluarga mereka akibat pandemik COVID-19. Oleh itu, saya
@@ -2137,7 +2137,7 @@ untuk mengkaji semula gaji minimum sedia ada. Ini kerana pada pendapat saya, jum
 gaji minimum bagi rakyat Malaysia pada masa kini adalah tidak cukup, malah akibat
 COVID-19, kos sara hidup rakyat juga telah meningkat yang mana harga barang telah
 naikdanjugaperkhidmatan-perkhidmatanlain."
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1440,Dato’ Sri Vell Paari a/l Tun Samy Vellu,"Oleh yang demikian, adalah amat wajar bagi kerajaan melihat kembali gaji
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1440,1440,Dato’ Sri Vell Paari a/l Tun Samy Vellu,"Oleh yang demikian, adalah amat wajar bagi kerajaan melihat kembali gaji
 minimum yang ada pada hari ini dan menaikkan satu paras yang lebih tinggi sesuai
 untuk keadaan semasa. Selain itu, pihak kerajaan juga memberikan kad catuan, dengan
 izin,*rationcard*kepadakeluargaB40bagitempohduaatautigatahunyangakandatang.
@@ -2204,26 +2204,26 @@ pengambilan pekerja tempatan merupakan potongan cukai pendapatan, pinjaman tanpa
 faedah dan sebagainya. Malah, skim ini juga dapat mengurangkan pengambilan pekerja
 asing, sekali gus mengurangkan wang keluar negara dan yang dilakukan oleh pekerja
 asing."
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1440,Tuan Yang di-Pertua,"Itu terbaiknya bagi Yang Berhormat mulai berseni untuk
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1440,1440,Tuan Yang di-Pertua,"Itu terbaiknya bagi Yang Berhormat mulai berseni untuk
 berucap..."
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1440,ANNOTATION,[Ketawa]
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1440,Tuan Yang di-Pertua,"Kalaumembacaterus,banyakterpotong.Baiklah."
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1440,Dato’ Sri Vell Paari a/l Tun Samy Vellu,
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1440,ANNOTATION,[Ketawa]
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1440,Dato’ Sri Vell Paari a/l Tun Samy Vellu,"Ya, okey. Baiklah. Tuan
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1440,1440,ANNOTATION,[Ketawa]
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1440,1440,Tuan Yang di-Pertua,"Kalaumembacaterus,banyakterpotong.Baiklah."
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1440,1440,Dato’ Sri Vell Paari a/l Tun Samy Vellu,
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1440,1440,ANNOTATION,[Ketawa]
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1440,1440,Dato’ Sri Vell Paari a/l Tun Samy Vellu,"Ya, okey. Baiklah. Tuan
 Yang di-Pertua, dengan ini saya mohon menyokong Rancangan Malaysia Kedua Belas
 yangdibentangkanolehpihakkerajaan..."
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1440,ANNOTATION,[Ketawa]
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1440,ANNOTATION,[Tepuk]
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1440,Tuan Yang di-Pertua,"Terima kasih. Boleh dibenarkan begini iaitu ucapan itu
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1440,1440,ANNOTATION,[Ketawa]
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1440,1440,ANNOTATION,[Tepuk]
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1440,1440,Tuan Yang di-Pertua,"Terima kasih. Boleh dibenarkan begini iaitu ucapan itu
 ditelitiolehsetiausahadankeseluruhannyabolehdimasukkankedalam*Hansard.*"
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1440,Dato’SriVellPaaria/lTunSamyVellu,TerimakasihTuanYangdi-Pertua.
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1440,Tuan Yang di-Pertua,"Itu menggunakan budi bicara Dewan dan menjadikan
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1440,1440,Dato’SriVellPaaria/lTunSamyVellu,TerimakasihTuanYangdi-Pertua.
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1440,1440,Tuan Yang di-Pertua,"Itu menggunakan budi bicara Dewan dan menjadikan
 cerminankepadaucapanmasing-masing.Baik.
 Saya dengan sukacita menjemput Yang Berhormat Senator Tuan Jaziri Alkaf
 AbdillahSuffian..."
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1440,ANNOTATION,[Tepuk]
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1447,Tuan Jaziri Alkaf Abdillah Suffian,"*Assalamualaikum* Tuan Yang di-Pertua,
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1440,1440,ANNOTATION,[Tepuk]
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,2.47ptg.,1447,Tuan Jaziri Alkaf Abdillah Suffian,"*Assalamualaikum* Tuan Yang di-Pertua,
 terimakasih. *BismillahiRahmaniRahim. Assalamualaikumwarahmatullahiwabarakatuh,
 salam sejahtera. Alhamdulillah,* marilah kita memanjat syukur ke hadrat Ilahi yang telah
 memberikan petunjuk dan hidayah-Nya untuk kita bersama-sama berhimpun di Dewan
@@ -2254,7 +2254,7 @@ peratus daripada golongan belia ini yang berpotensi menyumbang kepada pekerja
 berkemahiran tinggi atau, dengan izin, *high-skilled workers.* Apakah langkah-langkah
 kerajaan untuk memulihkan keadaan ini dan mendapatkan semula masa yang terhilang
 supayamerekatidaktercicirdalamaruspembangunan?"
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1450,Tuan Jaziri Alkaf Abdillah Suffian,"Adakah strategi pemulihan pembelajaran atau, dengan izin, *learning recovery
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1450,1450,Tuan Jaziri Alkaf Abdillah Suffian,"Adakah strategi pemulihan pembelajaran atau, dengan izin, *learning recovery
 strategies*supaya negarakitaterusdapat melahirkanpelajarberpotensitinggi.Golongan
 belia harus dilengkapkan dengan kemahiran yang boleh dipindah milik, dengan izin,
 *transferable skills* yang membolehkan belia menjadi fleksibel dan berdaya inovatif
@@ -2361,7 +2361,7 @@ perkembangan positif pada Malaysia dalam pelbagai aspek termasuk bidang
 perekonomian sekali gus membantu negara dalam menjayakan Rancangan Malaysia
 Kedua Belas. Sebanyak USD32 bilion diperuntukkan oleh kerajaan Indonesia untuk
 membinaibukotabaharuyangakanberoperasisepenuhnyapadatahun2025."
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1500,Tuan Jaziri Alkaf Abdillah Suffian,"Denganmengambilkirakedudukangeografinya yangberdekatandenganSabah
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1500,1500,Tuan Jaziri Alkaf Abdillah Suffian,"Denganmengambilkirakedudukangeografinya yangberdekatandenganSabah
 dan Sarawak, pembangunan ibu kota yang baharu ini nanti bakal menjadi pemangkin
 pembangunan antara wilayah di kedua-dua negara selain melihat sebagai langkah
 positif dan membawa banyak kebaikan dan kemakmuran. Pemindahan ibu kota negara,
@@ -2378,39 +2378,39 @@ insan dan pendidikan seperti yang tertera dalam pemacu perubahan RMKe-12 iaitu
 nombor tujuh, nombor 11 dan nombor 12 dalam tujuan menyahut keperluan ibu kota
 baharutersebut apabilaiaberoperasisepenuhnya kelak.
 Inikerana,apabilaibukotabaharuitu..."
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1500,Tuan Yang di-Pertua,"Yang Berhormat, masa Yang Berhormat. Masa sudah
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1500,1500,Tuan Yang di-Pertua,"Yang Berhormat, masa Yang Berhormat. Masa sudah
 banyakdiLangkawi."
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1500,TuanJaziri AlkafAbdillahSuffian,"MintamaafTuanYangdi-Pertua, bagisaya
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1500,1500,TuanJaziri AlkafAbdillahSuffian,"MintamaafTuanYangdi-Pertua, bagisaya
 mengulasTuanYangdi-Pertua."
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1500,Tuan Yang di-Pertua,"Ulas- lain kali wujudkan cara-cara berhujah. Jadi semua
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1500,1500,Tuan Yang di-Pertua,"Ulas- lain kali wujudkan cara-cara berhujah. Jadi semua
 poinmasuk..."
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1500,TuanJaziriAlkafAbdillahSuffian,Okey.
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1500,TuanYangdi-Pertua,"Kalaubacasahaja.Oh,tidakpayahbahas."
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1500,Tuan Jaziri Alkaf Abdillah Suffian,"Baik, Tuan Yang di-Pertua saya ambil
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1500,1500,TuanJaziriAlkafAbdillahSuffian,Okey.
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1500,1500,TuanYangdi-Pertua,"Kalaubacasahaja.Oh,tidakpayahbahas."
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1500,1500,Tuan Jaziri Alkaf Abdillah Suffian,"Baik, Tuan Yang di-Pertua saya ambil
 maklum. Oleh itu, perancangan RMKe-12 yang perlu supaya- jika dapat dilihat semula
 akan*...*"
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1500,TuanYangdi-Pertua,TidakpayahbacaYangBerhormat...
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1500,ANNOTATION,[Ketawa]
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1500,Tuan Jaziri Alkaf Abdillah Suffian,"Okeylah. Pokoknya Tuan Yang di-Pertua
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1500,1500,TuanYangdi-Pertua,TidakpayahbacaYangBerhormat...
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1500,1500,ANNOTATION,[Ketawa]
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1500,1500,Tuan Jaziri Alkaf Abdillah Suffian,"Okeylah. Pokoknya Tuan Yang di-Pertua
 saya menyarankan Yang Amat Berhormat Perdana Menteri menyalurkan sekurang-
 kurangnya 50 peratus daripada peruntukan Persekutuan hanya untuk Sabah dan
 Sarawak.
 Dengan itu, saya mencadangkan mungkin bandar raya Kuching dapat diangkat
 sebagai ibu negara Malaysia kedua..."
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1500,ANNOTATION,[Tepuk]
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1500,Tuan Jaziri Alkaf Abdillah Suffian,"Jika bersesuaian pada masa hadapan
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1500,1500,ANNOTATION,[Tepuk]
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1500,1500,Tuan Jaziri Alkaf Abdillah Suffian,"Jika bersesuaian pada masa hadapan
 berikutan dengan kedudukan Borneo itu sendiri yang akan menjadi tumpuan, dengan
 izin, *focal point* Tuan Yang di-Pertua di Rantau Asia apabila ibu kota apabila ibu kota
 Indonesiabaharusiapsepenuhnya.
 TuanYangdi-Pertua,sayamohonmenyokong..."
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1500,ANNOTATION,[Ketawa]
-USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,1500,Tuan Yang di-Pertua,"*Alhamdulillah,* tahniah. Saya harap menjadi kenyataan
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1500,1500,ANNOTATION,[Ketawa]
+USUL,RANCANGAN MALAYSIAKEDUABELAS2021-2025,,■1500,1500,Tuan Yang di-Pertua,"*Alhamdulillah,* tahniah. Saya harap menjadi kenyataan
 sebahagianapayangdikemukakan.
 Oleh sebab kita ada mempunyai satu Usul yang harus dikemukakan oleh Yang
 Berhormat Menteri ataupun Timbalan Menteri. Saya mempersilakan Yang Berhormat
 TimbalanMenteriuntukmengemukakan."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1504,"Timbalan Menteri Pembangunan Wanita, Keluarga dan Masyarakat [Dato’ Hajah Siti Zailah binti Mohd Yusoff]","Tuan Yang di-Pertua, saya mohon
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,3.04ptg.,1504,"Timbalan Menteri Pembangunan Wanita, Keluarga dan Masyarakat [Dato’ Hajah Siti Zailah binti Mohd Yusoff]","Tuan Yang di-Pertua, saya mohon
 mencadangkan:
 “Bahawa mengikut Peraturan Mesyuarat 11(1), Majlis Mesyuarat
 pada hari ini tidak akan ditangguhkan sehingga selesai giliran semua
@@ -2418,27 +2418,27 @@ Ahli Dewan Negara yang hendak berbahas ke atas Usul Rancangan
 Malaysia Kedua Belas, dan selepas itu Majlis Mesyuarat akan
 ditangguhkansehinggajam10pagi,padahariRabu,20Oktober2021.”"
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1504,Tuan Yang di-Pertua,"Diucapkan terima kasih kepada Yang Berhormat
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,3.04ptg.,1504,Tuan Yang di-Pertua,"Diucapkan terima kasih kepada Yang Berhormat
 TimbalanMenteriPembangunanWanita,KeluargadanMasyarakat.Saya mintaseorang
 menyokong."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1504,Menteri Perpaduan Negara [Datuk Halimah binti Mohamed Sadique],"Tuan
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,3.04ptg.,1504,Menteri Perpaduan Negara [Datuk Halimah binti Mohamed Sadique],"Tuan
 Yangdi-Pertua,sayamohonmenyokong,terimakasih."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1504,Tuan Yang di-Pertua,"Terima kasih, Yang Berhormat Menteri Perpaduan telah
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,3.04ptg.,1504,Tuan Yang di-Pertua,"Terima kasih, Yang Berhormat Menteri Perpaduan telah
 menyokong. Ahli-ahli Yang Berhormat sekarang saya kemukakan masalah kepada
 Majlis untuk diputuskan. Masalahnya ialah Usul seperti yang dikemukakan oleh Yang
 BerhormatMenteriitutadihendaklahdisetujukan."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1504,ANNOTATION,[Usuldikemukabagidiputuskan;dandisetujukan]
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,3.04ptg.,1504,ANNOTATION,[Usuldikemukabagidiputuskan;dandisetujukan]
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1504,Tuan Yang di-Pertua,"Sementara kita pergi kepada pengucap yang berikut,
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,3.04ptg.,1504,Tuan Yang di-Pertua,"Sementara kita pergi kepada pengucap yang berikut,
 yakni Yang Berhormat Senator Datuk Mohd Hisamudin bin Yahaya, kita menunggu Usul
 yang akan dikemukakan oleh salah seorang Ahli Dewan Negara pada penghujung
 perbahasanini.
 SilakanYangBerhormatSenatorDatukMohdHisamudinbinYahaya."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1505,Datuk Mohd Hisamudin bin Yahaya,"Terima kasih, Tuan Yang di-Pertua,
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,3.05ptg.,1505,Datuk Mohd Hisamudin bin Yahaya,"Terima kasih, Tuan Yang di-Pertua,
 terlebih dahulu saya ingat mengucapkan rasa syukur terhadap Allah SWT kerana
 dengan limpah dan kurnia-Nya dapat kita bersidang dalam Dewan Negara hari ini.
 Walaukita diancamvirus COVID-19, namunperanandan fungsiDewan Negarasebagai
@@ -2454,16 +2454,16 @@ Ini bukan satu ganjaran, sebaliknya menjadi amanah yang saya pikul. Saya
 bertekad dan berjanji akan menggalas tanggungjawab ini demi agama, bangsa dan
 negara."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1505,Tuan Yang di-Pertua,"Yang Berhormat, Perdana Menteri melantik kah atau
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,3.05ptg.,1505,Tuan Yang di-Pertua,"Yang Berhormat, Perdana Menteri melantik kah atau
 oranglainyangmelantik?"
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1505,DatukMohdHisamudinbinYahaya,PerdanaMenterirekomen...
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,3.05ptg.,1505,DatukMohdHisamudinbinYahaya,PerdanaMenterirekomen...
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1505,ANNOTATION,[Ketawa]
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,3.05ptg.,1505,ANNOTATION,[Ketawa]
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1505,TuanYangdi-Pertua,Mengesyorkan.
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,3.05ptg.,1505,TuanYangdi-Pertua,Mengesyorkan.
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1505,DatukMohdHisamudinbinYahaya,"Mengesyorkan.
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,3.05ptg.,1505,DatukMohdHisamudinbinYahaya,"Mengesyorkan.
 Dari Putrajaya ke Dewan Negara. Dulu jalan kosong tidak ada kereta, tetapi
 sekarangsudahsesakpula.InitandanyaMalaysiasudahpulihsemula.
 Hampir dua tahun kita hidup dengan virus COVID-19, ada di kalangan kita yang
@@ -2518,7 +2518,7 @@ memohon agar Yang Amat Berhormat Perdana Menteri dapat mempertimbangkan agar
 jumlah bantuan ini dapat ditambah dalam membantu warga miskin bandar pasca
 pandemikini."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1510,DatukMohdHisamudinbinYahaya,"Perkara kedua, kerajaan perlu memperkenalkan semula pengecualian sewa
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1510,1510,DatukMohdHisamudinbinYahaya,"Perkara kedua, kerajaan perlu memperkenalkan semula pengecualian sewa
 PPR selama enam bulan di kawasan bandar. Dengan kehilangan sumber pendapatan
 dan wang simpanan yang berkurangan, setiap ringgit penting untuk golongan miskin
 bandar supaya mereka mampu membeli keperluan asas seperti makanan. Malah
@@ -2609,16 +2609,16 @@ dilakukan, sewajarnya majlis pun turut libat bersama agar semua pihak berpuas ha
 Saya ingin menyarankan pihak BPH untuk mengkaji semula sistem demerit yang
 diwujudkan."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1510,TuanYang di-Pertua,"YangBerhormat, itumacam*mail train*lajubenar.Tengok
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1510,1510,TuanYang di-Pertua,"YangBerhormat, itumacam*mail train*lajubenar.Tengok
 masaselepasitusesuaikan."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1510,Datuk Mohd Hisamudin bin Yahaya,"Agar lebih relevan dan realistik dengan
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1510,1510,Datuk Mohd Hisamudin bin Yahaya,"Agar lebih relevan dan realistik dengan
 situasi semasa. Kena laju Tuan Yang di-Pertua. Pihak BPH sewajarnya mengadakan
 sesitaklimat."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1510,TuanYangdi-Pertua,Sesekalitengoklahkemarijuga.
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1510,1510,TuanYangdi-Pertua,Sesekalitengoklahkemarijuga.
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1510,Datuk Mohd Hisamudin bin Yahaya,"Menerangkan maksud secara terperinci.
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1510,1510,Datuk Mohd Hisamudin bin Yahaya,"Menerangkan maksud secara terperinci.
 Saya berharap pihak BPH dapat meletakkan pegawai penyelia mengikut zon di
 PutrajayabagimemudahkankomunikasidiantarapendudukdanwakilBPH.
 Tuan Yang di-Pertua, seterusnya saya ingin membangkitkan isu urbanisasi
@@ -2632,21 +2632,21 @@ Golongan belia yang tidak ada tempat hendak bersukan pun, orang nampak
 DBKL. Ini mungkin ada baiknya sebab ia menggambarkan DBKL sebagai sebuah pusat
 kerajaan..."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1510,Tuan Yangdi-Pertua,"Bila berbunyi loceng, Tuan Yang di-Pertua nampak Yang
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1510,1510,Tuan Yangdi-Pertua,"Bila berbunyi loceng, Tuan Yang di-Pertua nampak Yang
 BerhormatSenatorDatukMohdHisamudin."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1510,DatukMohdHisamudinbinYahaya,Sayamohonmenyokong...
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1510,1510,DatukMohdHisamudinbinYahaya,Sayamohonmenyokong...
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1510,ANNOTATION,[Dewantepuk]
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1510,1510,ANNOTATION,[Dewantepuk]
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1510,Tuan Yang di-Pertua,"Yang Berhormat Senator jangan gerun ya. Bila saya
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1510,1510,Tuan Yang di-Pertua,"Yang Berhormat Senator jangan gerun ya. Bila saya
 tegur itu secara seloroh supaya lama-kelamaan semua poin atau natijah dapat kita
 hamburkan pada Dewan. Jadi cuba. Saya ucap tahniah kepada Yang Berhormat
 SenatorDatukMohdHisamudinbinYahaya.
 Kita pergi kepada Yang Berhormat Senator Puan Lim Hui Ying. Orang
 berpengalaman."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1518,Puan Lim Hui Ying,"Terima kasih Tuan Yang di-Pertua. Izinkan saya
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,3.18ptg.,1518,Puan Lim Hui Ying,"Terima kasih Tuan Yang di-Pertua. Izinkan saya
 mengucapkan terima kasih atas peluang untuk mengambil bahagian dalam sesi
 perbahasan Rancangan Malaysia Kedua Belas. Rancangan Malaysia Kedua Belas ini
 mengetengahkancita-citatinggiuntukmembangunkanMalaysiakembalidaripadaimpak
@@ -2668,7 +2668,7 @@ dipersetujui oleh Kerajaan Pusat. Kenyataan Datuk Seri Wee Ka Siong juga agak
 mengelirukan kerana maklumat tambahan berkaitan pelan atau jangka masa pemulihan
 sektorpenerbangangagaldiberikan."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1520,Puan Lim Hui Ying,"Malah isu ini bercanggah dengan sasaran Rancangan Malaysia Kedua Belas
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1520,1520,Puan Lim Hui Ying,"Malah isu ini bercanggah dengan sasaran Rancangan Malaysia Kedua Belas
 untuk menjana semula ekonomi. Penilaian semula amatlah perlu kerana terdapat
 kebimbangan di mana sektor-sektor perindustrian dan pelancongan Pulau Pinang
 memerlukaninfrastruktursepertilapanganterbangberfungsidalamkeadaanbaik.Lebih-
@@ -2769,25 +2769,25 @@ yang sama. Kini kita sudah hampir dengan penghujung tahun 2021, tepat 20 tahun
 perjuangan ini dan selepas janji demi janji oleh Menteri kini habuk pun tidak nampak.
 Selagiwanitatidakdilindungidaripadapembuliandangangguanseksual.."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1520,TuanYangdi-Pertua,Apakahyangtidaknampak?
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1520,1520,TuanYangdi-Pertua,Apakahyangtidaknampak?
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1520,PuanLimHuiYing,...Tidakusahsembangfasalpemerkasaanwanita.
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1520,1520,PuanLimHuiYing,...Tidakusahsembangfasalpemerkasaanwanita.
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1520,TuanYangdi-Pertua,"YangBerhormat,apakahyangtidaknampaktadiitu?"
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1520,1520,TuanYangdi-Pertua,"YangBerhormat,apakahyangtidaknampaktadiitu?"
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1520,PuanLimHuiYing,Habuk
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1520,1520,PuanLimHuiYing,Habuk
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1520,ANNOTATION,[Ketawa]
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1520,1520,ANNOTATION,[Ketawa]
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1520,TuanYangdi-Pertua,Habukmemangpayahnampak...
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1520,1520,TuanYangdi-Pertua,Habukmemangpayahnampak...
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1520,ANNOTATION,[Ketawa]
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1520,1520,ANNOTATION,[Ketawa]
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1520,Puan Lim Hui Ying,Habuk tidak boleh nampak...
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1520,1520,Puan Lim Hui Ying,Habuk tidak boleh nampak...
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1520,ANNOTATION,[Ketawa]
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1520,1520,ANNOTATION,[Ketawa]
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1520,Puan Lim Hui Ying,"Iktiraf kerja suri
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1520,1520,Puan Lim Hui Ying,"Iktiraf kerja suri
 rumah tangga secara rasmi bukan setakat penghargaan sijil dan hadiah, Hari Ibu tetapi
 mengiktiraf ekonomi penjagaan ataupun, dengan izin, *care economy* sebagai
 sebahagianKeluaranDalamKasarNegara.
@@ -2797,24 +2797,24 @@ pekerja di kilang ataupun seorang ketua pegawai eksekutif syarikat besar. Satu l
 menghargai ekonomi penjagaan ini ialah dengan memperluaskan Skim i-Suri daripada
 senarainamae-KasihpadamasakinikepadasemuasurirumahM40."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1530,Puan Lim Hui Ying,"Akhir sekali, mungkin yang paling mudah dilakukan oleh kerajaan jika punyai
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1530,1530,Puan Lim Hui Ying,"Akhir sekali, mungkin yang paling mudah dilakukan oleh kerajaan jika punyai
 iltizampolitik,iktirafhak ibuwarganegaraMalaysiauntukmenurunkankewarganegaraan
 kepada anak mereka yang lahir di luar negara. Ini perkara asas. Kalau warganegara
 lelaki tiada masalah, mengapakah warganegara wanita diberi layanan berbeza?
 Keluarga Malaysia macam mana kalau tidak dapat berlaku adil kepada warganegara
 wanita?…Bolehsambunglagi?"
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1530,TuanYangdi-Pertua,"Sudahsampaimasa,sudahbunyi."
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1530,1530,TuanYangdi-Pertua,"Sudahsampaimasa,sudahbunyi."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1530,PuanLimHuiYing,"Ya,tahu.Cepatnyakaliini."
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1530,1530,PuanLimHuiYing,"Ya,tahu.Cepatnyakaliini."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1530,TuanYangdi-Pertua,"Rumuskan,rumuskan."
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1530,1530,TuanYangdi-Pertua,"Rumuskan,rumuskan."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1530,PuanLimHuiYing,Okey.
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1530,1530,PuanLimHuiYing,Okey.
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1530,TuanYangdi-Pertua,Baiklah.
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1530,1530,TuanYangdi-Pertua,Baiklah.
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1530,Puan Lim Hui Ying,"Okey, rumuskan. Rancangan Malaysia merupakan
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1530,1530,Puan Lim Hui Ying,"Okey, rumuskan. Rancangan Malaysia merupakan
 dokumen dasar jangka sederhana buat negara. Segala tindakan dan keputusan
 kerajaan dalam lima tahun yang akan datang amat terikat dengan dokumen ini. Saban
 tahun kita disajikan dengan ayat indah dan slogan hebat dalam dokumen Rancangan
@@ -2828,12 +2828,12 @@ ahli akademik dan rakyat secara umum. Dokumen merupakan benda yang tidak
 bernyawa. Jika benar kita keluarga, maka terimalah pandangan kita secara terbuka.
 TerimakasihTuanYangdi-Pertua."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1530,TuanYangdi-Pertua,"Kembali. TerimakasihkepadaYangBerhormatSenator
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1530,1530,TuanYangdi-Pertua,"Kembali. TerimakasihkepadaYangBerhormatSenator
 PuanLimHuiYing.
 Saya jemput Yang Berhormat Senator Tuan Ir. Ts. Khairil Nizam. Dua belas
 minit."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1532,Ir. Ts. Haji Khairil Nizam bin Khirudin,"*Bismillahi Rahmani Rahim*.
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,3.32ptg.,1532,Ir. Ts. Haji Khairil Nizam bin Khirudin,"*Bismillahi Rahmani Rahim*.
 *Assalamualaikumwarahmatullahiwabarakatuh*dansalamsejahtera.
 Tuan Yang di-Pertua, terima kasih dan tahniah diucapkan kepada Yang
 Berhormat Bera atas kejayaan membentangkan RMKe-12 kepada seluruh Ahli Parlimen
@@ -2843,9 +2843,9 @@ PerdanaMenteriiaituYangBerhormatPagoh,danjugaYangBerhormatBera.
 Izinkan saya memulakan ucapan perbahasan saya pada petang ini dengan
 membaca ayat suci Allah SWT daripada surah Al-Hashr ayat 7 yang berbunyi..."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1532,ANNOTATION,[Membaca sepotong ayat Al-Quran]
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,3.32ptg.,1532,ANNOTATION,[Membaca sepotong ayat Al-Quran]
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1532,Ir. Ts. Haji Khairil Nizam bin Khirudin,"Yang bermaksud, *“(Ketetapan yang demikian)
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,3.32ptg.,1532,Ir. Ts. Haji Khairil Nizam bin Khirudin,"Yang bermaksud, *“(Ketetapan yang demikian)
 supayahartaitutidakhanyaberedardiantaraorang-orangkayadikalangankamu”*.
 Izinkan juga saya mengambil nasihat Ibnu Khaldun di dalam kitabnya
 Muqaddimah dalam bab 13 yang saya bacakan, *“Ketika penguasa mereka meminta
@@ -2888,14 +2888,14 @@ usaha kerajaan melalui Rancangan Malaysia Kedua Belas bagi mempertingkatkan
 penguatkuasaan kerajaan serta SPRM ke atas kes-kes rasuah serta pecah amanah
 yangberlakudidalamnegarakita."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1532,Tuan Yang di-Pertua,"Yang Berhormat, ambil kira sekali kes-kes yang lebih
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,3.32ptg.,1532,Tuan Yang di-Pertua,"Yang Berhormat, ambil kira sekali kes-kes yang lebih
 setahuntidakdidengardiPeringkatRayuan?"
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1532,Ir.Ts.HajiKhairilNizambinKhirudin,Sayasetuju.
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,3.32ptg.,1532,Ir.Ts.HajiKhairilNizambinKhirudin,Sayasetuju.
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1532,TuanYangdi-Pertua,*Alhamdulillah*.
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,3.32ptg.,1532,TuanYangdi-Pertua,*Alhamdulillah*.
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1532,Ir. Ts. Haji Khairil Nizam bin Khirudin,"Pemerkasaan pendidikan Islam dan
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,3.32ptg.,1532,Ir. Ts. Haji Khairil Nizam bin Khirudin,"Pemerkasaan pendidikan Islam dan
 Bumiputera. Saya merujuk kepada ucapan Yang Amat Berhormat Perdana Menteri
 ketika membentangkan Rancangan Malaysia Kedua belas. Beliau mengatakan bagi
 meningkatkan penyertaan bumiputera dalam aktiviti ekonomi, akses dan peluang
@@ -2940,7 +2940,7 @@ kewangan yang diguna pakai oleh kerajaan, agensi di dalam kerajaan dan GLC di
 bawahnya. Kita harapkan dalam Rancangan Malaysia Kedua Belas ini, KWAP dan juga
 PERKESOdisyariah*compliance-*kanolehkerajaan,*insya-Allah.*"
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1540,Ir. Ts. Haji Khairil Nizam bin Khirudin,"Paksi keempat, penjenamaan semula ekonomi dan sosial anak muda.
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1540,1540,Ir. Ts. Haji Khairil Nizam bin Khirudin,"Paksi keempat, penjenamaan semula ekonomi dan sosial anak muda.
 Kebolehpasaran graduan dan ketidakpadanan perlu difokuskan oleh kerajaan kerana itu
 antaracabaranpascaCOVID-19. Antara cadanganyang inginkemukakankepadapihak
 Kementerian Sumber Manusia adalah dengan mengadakan kerjasama bersama
@@ -2969,35 +2969,35 @@ Apakah rumah mampu milik ini mampu dimiliki oleh anak-anak muda yang berada di
 bandar yang terlibat dengan masalah miskin bandar? Jadi kita harapkan kementerian
 yangterbabitbolehmenjawabpersoalaninidalampenggulungannanti."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1540,Dato’ Wira Othman bin Aziz,"Tuan Yang di-Pertua, mohon pencelahan sedikit
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1540,1540,Dato’ Wira Othman bin Aziz,"Tuan Yang di-Pertua, mohon pencelahan sedikit
 YangBerhormat."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1540,TuanYangdi-Pertua,Hendakpencelahanapaitu?
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1540,1540,TuanYangdi-Pertua,Hendakpencelahanapaitu?
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1540,Ir. Ts. Haji Khairil Nizam bin Khirudin,"Yang Berhormat, saya ada 30 saat
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1540,1540,Ir. Ts. Haji Khairil Nizam bin Khirudin,"Yang Berhormat, saya ada 30 saat
 sahaja,tajukrumahini."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1540,Dato’ Wira Othman bin Aziz,"Saya mohonizin masukkandalam ucapan. Kalau
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1540,1540,Dato’ Wira Othman bin Aziz,"Saya mohonizin masukkandalam ucapan. Kalau
 bolehmintapihakkerajaanmenerangkanstatusterkiniprojek-projekperumahanPR1MA
 dan juga Syarikat Perumahan Negara Berhad (SPNB). Sejauh manakah keberkesanan
 danberapasudahyangtelahdijualdansebagainya?Terimakasih."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1540,Ir. Ts. Haji Khairil Nizam bin Khirudin,"Terima kasih Yang Berhormat. Saya
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1540,1540,Ir. Ts. Haji Khairil Nizam bin Khirudin,"Terima kasih Yang Berhormat. Saya
 mencadangkandimasukkandalamucapansaya."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1540,Tuan Yang di-Pertua,"Kalau hendak kira betul, tidak boleh masuk sebab dia
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1540,1540,Tuan Yang di-Pertua,"Kalau hendak kira betul, tidak boleh masuk sebab dia
 memasukandata. Akantetapi,tidakmengapalah,masukkanjugalah."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1540,Ir.Ts.HajiKhairilNizambinKhirudin,Ataupunkitaminta...
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1540,1540,Ir.Ts.HajiKhairilNizambinKhirudin,Ataupunkitaminta...
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1540,TuanYangdi-Pertua,Olehsebabsudahmulahendakmasuk.
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1540,1540,TuanYangdi-Pertua,Olehsebabsudahmulahendakmasuk.
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1540,Ir. Ts. Haji Khairil Nizam bin Khirudin,"Kita minta supaya kementerian untuk
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1540,1540,Ir. Ts. Haji Khairil Nizam bin Khirudin,"Kita minta supaya kementerian untuk
 menjawabdalampenggulungannanti."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1540,TuanYangdi-Pertua,"Masayangdiambiltadiitu,kitatidakmengambilkira.Sila."
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1540,1540,TuanYangdi-Pertua,"Masayangdiambiltadiitu,kitatidakmengambilkira.Sila."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1540,Ir. Ts. Haji Khairil Nizam bin Khirudin,"Baik, baik. Saya faham, *insya-Allah*.
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1540,1540,Ir. Ts. Haji Khairil Nizam bin Khirudin,"Baik, baik. Saya faham, *insya-Allah*.
 Baik. Ada satu lagi isu yang saya ingin sampaikan ialah tentang keselamatan dan
 kelangsungan makanan. Kalau kita lihat bagaimana dalam saban tahun, penggunaan
 beras dan padi meningkat daripada 2.3 juta metrik tan kepada 2.69 juta untuk
@@ -3019,12 +3019,12 @@ memohon izin untuk menyokong Rancangan Malaysia Kedua Belas yang telah
 dibentangkan oleh Yang Amat Berhormat Perdana Menteri Malaysia. *Assalamualaikum
 warahmatullahiwabarakatuh...*"
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1540,ANNOTATION,[Tepuk]
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1540,1540,ANNOTATION,[Tepuk]
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1540,TuanYangdi-Pertua,"*Waalaikumusalam.*Kembali.
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1540,1540,TuanYangdi-Pertua,"*Waalaikumusalam.*Kembali.
 YangBerhormatSenatorTuanBalasubramaniama/lNachiappan."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1545,Tuan Balasubramaniam a/l Nachiappan,"Terima kasih Tuan Yang di-Pertua
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,3.45ptg.,1545,Tuan Balasubramaniam a/l Nachiappan,"Terima kasih Tuan Yang di-Pertua
 kerana memberikan peluang kepada saya untuk membahaskan Rancangan Malaysia
 KeduaBelaspadahariini.
 Saya ingin mengucapkan tahniah kepada Yang Amat Berhormat Perdana
@@ -3072,7 +3072,7 @@ pekerja,kira-kiraseramai2,200orang, sepertiyangdimaklumkanpadaSeptember2020.
 Syarikat penerbangan Malindo pula, pada Oktober tahun lalu telah membuang seramai
 2,200orangpekerjayangmelebihi50peratusjumlahpekerjasecarakeseluruhannya."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1550,Tuan Balasubramaniam a/l Nachiappan,"Persatuan Hotel Malaysia pada bulan Ogos 2021 melaporkan bahawa industri
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1550,1550,Tuan Balasubramaniam a/l Nachiappan,"Persatuan Hotel Malaysia pada bulan Ogos 2021 melaporkan bahawa industri
 perhotelan Malaysia dianggarkan kehilangan pendapatan lebih RM11.5 bilion sejak
 tahun lalu yang melibatkan 120 buah hotel di seluruh negara terpaksa menutup
 perniagaan secara sementara dan sepenuhnya. Dianggarkan industri perhotelan
@@ -3152,16 +3152,16 @@ membina negara yang kita sayangi. Di mana ada kelemahan kita perbaiki. Di mana a
 kesalahan kita perbetulkan. Di mana ada kekurangan kita ditambahkan. Di mana ada
 kelompangankitacukupkan.Sekian,terimakasih."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1550,Tuan Yang di-Pertua,"Terima kasih. Ungkapan bagus. Cuma 12 kali sebut
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1550,1550,Tuan Yang di-Pertua,"Terima kasih. Ungkapan bagus. Cuma 12 kali sebut
 TuanYangdi-Pertua,sekalipuntidaktengoksaya..."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1550,ANNOTATION,[Ketawa]
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1550,1550,ANNOTATION,[Ketawa]
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1550,Tuan Yang di-Pertua,"Selepas ini Yang Berhormat Tuan Ir. Md. Nasir bin Hashim. Kalau sudah
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1550,1550,Tuan Yang di-Pertua,"Selepas ini Yang Berhormat Tuan Ir. Md. Nasir bin Hashim. Kalau sudah
 bersediabolehataubolehtukarjugadenganmana-manapihaktetapibeliautelahberdiri,
 sudahsedialahitu.Dipersilakan."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1558,Tuan Ir. Md. Nasir bin Hashim,"Terima kasih Tuan Yang di-Pertua.
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,3.58ptg.,1558,Tuan Ir. Md. Nasir bin Hashim,"Terima kasih Tuan Yang di-Pertua.
 *Assalamualaikum warahmatullahi wabarakatuh* dan salam sejahtera. Terlebih dahulu
 saya ingin mengucapkan terima kasih kepada Tuan Yang di-Pertua kerana memberi
 peluang kepada saya untuk membahaskan Rancangan Malaysia Kedua Belas pada
@@ -3173,7 +3173,7 @@ pandemik COVID-19. Selain daripada ia juga dapat memperluaskan penggunaan digita
 di dalam kesemua sektor perniagaan dan ia memberikan kesan kepada pertumbuhan
 ekonominegarapascaCOVID-19."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1600,Tuan Ir. Md. Nasir bin Hashim,"Perusahaan mikro kecil dan sederhana perlu kepada transformasi pendigitalan
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1600,1600,Tuan Ir. Md. Nasir bin Hashim,"Perusahaan mikro kecil dan sederhana perlu kepada transformasi pendigitalan
 perniagaan melalui platform digital perlu dirancakkan bukan hanya terhad kepada
 produk barangan fizikal sahaja malah ia mencakupi produk berasaskan perkhidmatan
 termasuk perkhidmatan kesihatan mental secara atas talian. Mengambil contoh
@@ -3182,9 +3182,9 @@ perkhidmatan sokongan kesihatan mental nasional dengan menggabungkan golongan
 pakar industri di bidang tersebut membantu orang ramai secara profesional dengan
 agensikerajaan."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1600,ANNOTATION,[TimbalanYangdi-PertuamempengerusikanMesyuarat]
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1600,1600,ANNOTATION,[TimbalanYangdi-PertuamempengerusikanMesyuarat]
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1600,Tuan Ir. Md. Nasir bin Hashim,"Oleh itu, sudah tiba masanya agensi kerajaan di Malaysia memerlukan tenaga
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1600,1600,Tuan Ir. Md. Nasir bin Hashim,"Oleh itu, sudah tiba masanya agensi kerajaan di Malaysia memerlukan tenaga
 pakar industri bagi merancakkan lagi sektor ekonomi seperti perkhidmatan mewujudkan
 platform digital atas talian khusus berkaitan aktiviti penyelidikan dan inovasi sebagai
 contoh *website* khas berkaitan dengan aktiviti penyelidikan inovasi universiti. Pakar
@@ -3272,7 +3272,7 @@ membuka peluang luas kepada pihak yang berada di pendidikan tinggi bekerjasama
 dengan pihak industri untuk mendapatkan graduan berkualiti dihasilkan di pasaran kerja
 mahir."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1610,Tuan Ir. Md. Nasir bin Hashim,"Manfaat ketiga, warga Malaysia dapat masuk ke pasaran pekerjaan kemahiran
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1610,1610,Tuan Ir. Md. Nasir bin Hashim,"Manfaat ketiga, warga Malaysia dapat masuk ke pasaran pekerjaan kemahiran
 tinggidandiperlukanolehnegarasecarajangkapanjang.
 Tuan Yang di-Pertua, sektor kesihatan. Sektor kesihatan negara merupakan
 jantung kepada Keluarga Malaysia. Ia memberi perkhidmatan kesihatan terbaik kepada
@@ -3308,12 +3308,12 @@ dapat memperoleh ilmu daripada pakar bertauliah. Dengan itu, saya sudahi perbaha
 saya Tuan Yang di-Pertua dan dengan ini saya menyokong Rancangan Malaysia Kedua
 Belas.Sekianterimakasih."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1610,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Tuan Ir. Md.
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1610,1610,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Tuan Ir. Md.
 NasirbinHashimatasperbahasantadi.
 Seterusnya, saya menjemput Yang Berhormat Senator Datuk Bobbey Ah Fang
 binSuan.Dipersilakan."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1610,Datuk Bobbey Ah Fang bin Suan,"Terima kasih saya ucapkan kepada Tuan
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,4.10ptg.,1610,Datuk Bobbey Ah Fang bin Suan,"Terima kasih saya ucapkan kepada Tuan
 Yang di-Pertua atas peluang untuk berbahas usul RMKe-12. Rancangan Malaysia
 Kedua Belas yang telah dibentangkan oleh Yang Berhormat Perdana Menteri jelas
 menterjemahkan komitmen berterusan kerajaan untuk memperkenalkan beberapa
@@ -3367,7 +3367,7 @@ mampu mendapat pekerjaan atau mengusahakan perniagaan yang boleh memberikan
 pendapatan yang lebih tinggi seterusnya meningkatkankualiti hidup dan keluar daripada
 kemiskinan."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1620,Datuk Bobbey Ah Fang bin Suan,"Manakala Skim Pembangunan Kesejahteraan Rakyat (SPKR) merupakan salah
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1620,1620,Datuk Bobbey Ah Fang bin Suan,"Manakala Skim Pembangunan Kesejahteraan Rakyat (SPKR) merupakan salah
 satu program pembasmian kemiskinan luar bandar dalam memastikan kumpulan sasar
 miskin dan miskin tegar dapat meneruskan kelangsungan hidup dengan lebih baik.
 Selaras dengan fokus kelima RMKe-12, saya ingin bertanya kepada pihak kerajaan
@@ -3419,12 +3419,12 @@ selain menikmati kemakmuran bersama. Jurang besar antara Sabah, Sarawak dengan
 SemenanjungMalaysiaharusdirapatkan.TuanYangdi-Pertua,sayamohonmenyokong.
 Sekian,terimakasih."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1620,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1620,1620,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator
 DatukBobbeyAhFangbinSuanatasperbahasantadi.
 Seterusnya saya menjemput Yang Berhormat Senator Datuk Mohan a/l
 Thangarasu,dipersilakan."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1626,Datuk Mohan a/l Thangarasu,"Terima kasih Tuan Yang di-Pertua atas peluang
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,4.26ptg.,1626,Datuk Mohan a/l Thangarasu,"Terima kasih Tuan Yang di-Pertua atas peluang
 yang diberi kepada saya untuk membahaskan Rancangan Malaysia Kedua Belas di
 Dewanyangmuliaini.RMKe-12secarajelastelahmenggariskanbahawaakanmemberi
 tumpuan yang lebih untuk mengatasi kemiskinan dan inklusif selaras dengan prinsip
@@ -3460,7 +3460,7 @@ pelaksanaan dan pemantauan atau agensi yang bertanggungjawab dapat
 melaksanakannya dengan lebih sistematik bagi mengenal pasti sasaran pembangunan
 komunitiIndia."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1630,Datuk Mohan a/l Thangarasu,"Tuan Yang di-Pertua, sehubungan itu, soalan saya adakah kandungan-
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1630,1630,Datuk Mohan a/l Thangarasu,"Tuan Yang di-Pertua, sehubungan itu, soalan saya adakah kandungan-
 kandungan utama dari Pelan Tindakan Masyarakat India akan diterima dalam RMKe-12
 bagi membangunkan kesejahteraan golongan India yang berpendapatan rendah.
 Seterusnya, adakah agensi yang akan dipertanggungjawabkan untuk menguruskan dan
@@ -3547,12 +3547,12 @@ kemakmuran Keluarga Malaysia. Dengan ini Tuan Yang di-Pertua, saya menyokong
 Rancangan Malaysia Kedua Belas yang dibentangkan oleh Yang Amat Berhormat
 PerdanaMenteridanmengakhiriucapansaya. Terimakasih."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1630,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1630,1630,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator
 DatukMohanatasperbahasantentangusulRancanganMalaysiaKeduaBelas.
 Seterusnya, saya menjemput Yang Berhormat Senator Datuk Razali bin Idris.
 Dipersilakan."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1639,Datuk Razali bin Idris,"*Assalamualaikum warahmatullahi wabarakatuh* dan
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,4.39ptg.,1639,Datuk Razali bin Idris,"*Assalamualaikum warahmatullahi wabarakatuh* dan
 salam sejahtera. *Bismillahi Rahmani Rahim. Alhamdulillah.* Terima kasih atas ruang
 untuk saya berbahas Rancangan Malaysia Kedua Belas, bentuk pelan sederhana
 selama lima tahun dengan peruntukan perbelanjaan sebanyak RM400 bilion berbanding
@@ -3564,7 +3564,7 @@ rakyat di bawah konsep keluarga satu Malaysia tidak rela lagi kocek mereka semak
 menipis. Rakyat mahukan kebangkitan ekonomi semula. Rakyat hendak merasakan
 manfaatnikmatdanlimpahandaripadabajettersebut."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1640,Datuk Razali bin Idris,"Tuan Yang di-Pertua, fokus pertama merancakkan pertumbuhan ekonomi. Di
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1640,1640,Datuk Razali bin Idris,"Tuan Yang di-Pertua, fokus pertama merancakkan pertumbuhan ekonomi. Di
 bawah RMKe-12, fokus pertama merancakkan pertumbuhan ekonomi. Antara yang
 disebutialahperusahaanmikrokecildansederhana(PMKS).
 Soalan saya, apakah strategi baharu di bawah Dasar Keusahawanan Nasional?
@@ -3657,7 +3657,7 @@ inklusif yang mana di bawah Bidang Keutamaan A ada memberi fokus strategi berkai
 meningkatkan pendapatan isi rumah miskin dan meningkatkan taraf hidup isi rumah
 miskin."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1650,Datuk Razali bin Idris,"Tuan Yang di-Pertua, dalam usaha kerajaan membawa negara ke tahap negara
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1650,1650,Datuk Razali bin Idris,"Tuan Yang di-Pertua, dalam usaha kerajaan membawa negara ke tahap negara
 maju dan berpendapatan tinggi dalam RMKe-12, namun saya hendak membawa isu
 komuniti nelayan masih lagi berada di paras kemiskinan. Di tempat saya di Marang dan
 negeri Terengganu, punca utama ialah perikanan. Walaupun sektor perikanan telah
@@ -3699,7 +3699,7 @@ sediaadauntukmasadepannegara.
 TuanYangdi-Pertua,sedikitlagiTuanYangdi-Pertua.Boleh?
 **TimbalanYangdi-Pertua:**Silakan."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1650,Datuk Razali bin Idris,"Bawah teras melonjakkan pendigitalan. Seperti yang
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1650,1650,Datuk Razali bin Idris,"Bawah teras melonjakkan pendigitalan. Seperti yang
 kita ketahui umum, dunia digegarkan wabak COVID-19 dengan Malaysia antara negara
 yang turut menerima penularan ini. PKP memberi impak besar kepada ekonomi negara
 dan kelancaran sistem penyampaian perkhidmatan kerajaan. Negara mengalami
@@ -3719,15 +3719,15 @@ siber.
 TuanYangdi-Pertua,sayarasabanyak,tetapisayanakberhentidisinisahaja.
 **TimbalanYangdi-Pertua:**Ya."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1650,Datuk Razali bin Idris,"Ini sebab saudara saya nak mencadangkan satu Usul.
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1650,1650,Datuk Razali bin Idris,"Ini sebab saudara saya nak mencadangkan satu Usul.
 SayamenyokongRMKe-12.Sekian.*Wassalamualaikumwarahmatullahiwabarakatuh*."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1650,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1650,1650,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator
 DatukRazaliIdrisatasperbahasantadi.
 Seterusnya saya menjemput pembahas yang terakhir, Yang Berhormat Senator
 DatukJohnAmbrose.Dipersilakan."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1656,Datuk John Ambrose,"Terima kasih Tuan Yang di-Pertua dan Dewan yang
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,4.56ptg.,1656,Datuk John Ambrose,"Terima kasih Tuan Yang di-Pertua dan Dewan yang
 muliaataspeluangyangdiberikanuntukmembahaskanintipatiRMKe-12padahariini.
 Tuan Yang di-Pertua dan Ahli-ahli Dewan yang mulia, izinkan saya memulakan
 kupasan saya dengan menyentuh tentang Rancangan Malaysia Kesebelas (RMKe-11)
@@ -3758,7 +3758,7 @@ dan pemegang taruh- *stakeholder*, dalam aspek-aspek Pelan Pembangunan Malaysia.
 Sudah tiba masanya kita menggunakan kepakaran tempatan dan hasil penyelidikan
 tempatanbagimembangunkanMalaysia."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1700,Datuk John Ambrose,"Yang Berhormat Tuan Yang di-Pertua dan Ahli-ahli Dewan yang mulia ini,
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1700,1700,Datuk John Ambrose,"Yang Berhormat Tuan Yang di-Pertua dan Ahli-ahli Dewan yang mulia ini,
 bertemakan‘Keluarga Malaysia - Makmur, Inklusif dan Mampan’, Perdana Menteri Dato’
 Sri Ismail Sabri bin Yaakob telah membentangkan Rancangan Malaysia Kedua Belas
 (RMKe-12)diDewanRakyatpada27Septemberlalu.
@@ -3839,7 +3839,7 @@ yang mencukupi untuk tebatan banjir yang boleh menyelesaikan masalah banjir di
 Sabah.SikitlagiTuanYangdi-Pertua?
 **TimbalanYangdi-Pertua:**Boleh."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1700,Datuk John Ambrose,"Untuk memulakan infrastruktur internet termasuk
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1700,1700,Datuk John Ambrose,"Untuk memulakan infrastruktur internet termasuk
 rangkaian jalur lebar 5G dengan sekurang-kurangnya lima buah tempat *testbed* di
 Bandaraya KotaKinabalu,*IndustrialPark*,UMS,PelabuhanSepanggardanPOIC Lahad
 Datu. Kabel dasar laut atau *submarine cable* ini sepatutnya sebagai hab internet
@@ -3848,7 +3848,7 @@ Yang Berhormat Tuan Yang di-Pertua, masalah banjir di Sabah tidak akan
 selesai. Masalah banjir di Sabah ini merupakan masalah yang besar tetapi yang
 diberikanperuntukanadalahsedikit."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1710,Datuk John Ambrose,"Bayangkan masalah banjir, masalah yang lain di Sabah adalah seperti gunung
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1710,1710,Datuk John Ambrose,"Bayangkan masalah banjir, masalah yang lain di Sabah adalah seperti gunung
 yang besar. Akan tetapi apa yang Kerajaan Pusat beri cangkul, dan ini tidak akan dapat
 menyelesaikan masalah ini seperti mana yang kita perlukan untuk menyelesaikan
 kebanjiran di Kota Kinabalu, membina beting berharga RM850 juta tetapi tidak ada
@@ -3914,9 +3914,9 @@ menggunakan *smartphone* untuk *check in* MySejahtera. Perkara ini perlu diambil
 perhatian sewajarnya oleh pihak kementerian. Tuan Yang di-Pertua, sekian sahaja
 daripadasaya. Terimakasihdansayamohonmenyokong..."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1710,ANNOTATION,[Tepuk]
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1710,1710,ANNOTATION,[Tepuk]
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1710,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1710,1710,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator
 DatukJohnAmbroseatasperbahasantadi.
 Untuk makluman Ahli-ahli Yang Berhormat, seramai 40 orang Ahli-ahli Yang
 BerhormattelahmengambilbahagiandalamperbahasanbagiUsulRancanganMalaysia
@@ -3926,4 +3926,4 @@ Berhormatyangtelahmengambilbahagian.
 Dengan itu Ahli-ahli Yang Berhormat, Mesyuarat Dewan hari ini ditangguhkan
 sehinggajam10pagi,hariRabu,20Oktober2021.Terimakasih."
 USUL,"WAKTUMESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,1710,ANNOTATION,[Dewanditangguhkanpadapukul5.18petang]
+DIBEBASKAN DARIPADAPERATURAN MESYUARAT",,■1710,1710,ANNOTATION,[Dewanditangguhkanpadapukul5.18petang]

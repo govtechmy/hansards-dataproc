@@ -53,7 +53,11 @@ def replace(hansard_date, old_text_snippet, new_text_snippet, new_bold_snippet, 
 
 
 def edit_hansards():
-    pass
+    replace('18102021',
+            "Mesyuaratdimulakanpadapukul10.00pagi\n",
+            "Mesyuarat dimulakan pada pukul 10.00 pagi\n",
+            'all',
+            'none')
 
 
 if __name__ == "__main__":
