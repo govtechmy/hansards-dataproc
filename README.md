@@ -30,7 +30,17 @@ Run `tabulate_hansards.py` to tabulate the hansards into a CSV file with the fol
 - author
 - speech
 
-The input is from `pretabulation_processing/` and the output is stored in `tabulated_hansards/`.
+The input is from `pretabulation_processing/` and the output is stored in `tabulated_hansards/`. One can get them from the links above.
+
+## Intermediary files
+- `parsed_pdf/` contains the output of `parse_pdf.py`.
+- `pretabulation_processing/` contains the output of `pretabulation_processing.py`.
+- `tabulated_hansards/` contains the output of `tabulate_hansards.py`.
+
+We do not store `src_hansard/` in this repository as it is too large (~4 GB) per Dewan.
+
+## Before reading further
+The dates or files referenced is for Dewan Rakyat unless otherwise stated. Indeed, most code are the same across Dewan Rakyat and Dewan Negara. The code was first developed for Dewan Rakyat. The only differences are perhaps in `post_parsing_edits.py` and `edit_hansards.py` where we fix known errors in specific Hansards.
 
 
 ## On parsing fonts
@@ -106,6 +116,13 @@ We also extract timestamps from annotations, e.g. _[Mesyuarat disambung semula p
 
 126 out of 326 Hansards have out of sync timestamps. The bullet points and word-formatted timestamps do not necessarily agree chronologically.
 
+## On error files
+`batch_run.py` is guaranteed to run without errors by catching them and storing Hansard-specific errors at `errors/`. If there are no files or the files are empty then there are no errors. There are four files at most.
+1. `hansards_with_parsing_errors.txt` contains errors caught when running `parse_pdf.py`.
+2. `error_tables.txt` contains errors from `pretabulation_processing.py`. These are usually due to the parser not being able to inject the table into the text. The maintainer can usually fix this case through `post_parsing_edits.py`.
+3. `pretabulation_errors.txt` contains other errors caught when running `pretabulation_processing.py`.
+4. `tabulation_errors.txt` contains errors caught when running `tabulate.py`. The maintainer can usually fix this case through `edit_hansards.py`.
+
 ## On warning files
 Please check all files inside `warnings` after each run. For a successful run it is not expected for these files to be empty, and their role is to flag out suspicious cases for manual inspection and most cases are OK. Those that are not OK is on the maintainer to fix through the following
 1. A human mistake in transcribing that is specific to a given Hansard: edit that Hansard with `edit_hansards.py` to fix the issue and maintain reproducibility. For examples, missing ] or :, or authors that did not start on a newline.
@@ -118,6 +135,7 @@ To minimize edits to the Hansard that is not related to formatting and punctuati
 - Be careful when berbelah bahagi shows up. Some Hansards present it differently than others. Usually, it will have the keywords "hadir", "bersetuju", or "undi", and are usually bolded and lowercased, except for 17072019 where it is uppercased and hence parsed as a level_2.
 - 26102021, 05102021, 08122020 have low table matching scores, but they are still a perfect match and you can ignore those errors.
 - 30112020, 29072021, 23032022 have footnotes (not guaranteed to be exhaustive). Due to its complicated nature, you will have to manually edit this into the end product.
+- 17032009 first page in the pdf is 1 but parsing shows 11. Turns out the PDF is also 11 but the second 1 is colored white. The next page is then 2.
 
 ## Useful tools
 When you hope to inspect a certain Hansard it is helpful to use `python open.py DDMMYYYY` to open all the files related to that Hansard.
