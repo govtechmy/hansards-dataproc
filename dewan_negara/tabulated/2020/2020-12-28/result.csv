@@ -1,10 +1,10 @@
-level_1,level_2,level_3,timestamp,author,speech
-,,,1000,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
-,MENGANGKAT SUMPAH SEBAGAI AHLI DEWAN NEGARA,,1000,,"Ahli Yang Berhormat ini telah mengangkat sumpah:
+level_1,level_2,level_3,raw_timestamp,timestamp,author,speech
+,,,10.00 pagi,1000,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
+,MENGANGKAT SUMPAH SEBAGAI AHLI DEWAN NEGARA,,10.00 pagi,1000,,"Ahli Yang Berhormat ini telah mengangkat sumpah:
 1. Yang Berhormat Senator Ir. Ts. Haji Khairil Nizam bin Khirudin
 (Lantikan baharu – Lantikan Yang di-Pertuan Agong)"
-,MENGANGKAT SUMPAH SEBAGAI AHLI DEWAN NEGARA,,1000,ANNOTATION,[Upacara Mengangkat Sumpah tamat]
-PEMASYHURAN TUAN YANG DI-PERTUA,MENGALU-ALUKAN AHLI BAHARU,,1000,Tuan Yang di-Pertua,"*Assalamualaikum*. Di kesempatan ini, saya merakamkan
+,MENGANGKAT SUMPAH SEBAGAI AHLI DEWAN NEGARA,,10.00 pagi,1000,ANNOTATION,[Upacara Mengangkat Sumpah tamat]
+PEMASYHURAN TUAN YANG DI-PERTUA,MENGALU-ALUKAN AHLI BAHARU,,10.00 pagi,1000,Tuan Yang di-Pertua,"*Assalamualaikum*. Di kesempatan ini, saya merakamkan
 bagi pihak Dewan Negara ucapan setinggi tahniah kepada Yang Berhormat Senator Ir.
 Ts. Haji Khairil Nizam bin Khirudin yakni lantikan baharu oleh Yang di-Pertuan Agong.
 Pengalaman latar profesionalisme dan kepakaran Yang Berhormat diharap
@@ -31,7 +31,7 @@ disalurkan sama melalui jawatankuasa-jawatankuasa yang kelak diwujudkan atau yan
 telah pun diwujudkan.
 Dengan kata-kata itu, maka selesailah Majlis Mengangkat Sumpah pada hari ini."
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1009,Menteri di Jabatan Perdana Menteri (Parlimen dan Undang-undang) [Dato’ Takiyuddin bin Hassan],"*Assalamualaikum warahmatullahi wabarakatuh* dan salam
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,10.09 pg.,1009,Menteri di Jabatan Perdana Menteri (Parlimen dan Undang-undang) [Dato’ Takiyuddin bin Hassan],"*Assalamualaikum warahmatullahi wabarakatuh* dan salam
 sejahtera.
 “Tuan Yang di-Pertua, tanpa mengambil kira usul terdahulu yang
 diputuskan pada 16 Disember 2020, di bawah Peraturan Mesyuarat
@@ -54,20 +54,20 @@ Dan selepas itu Majlis Mesyuarat akan ditangguhkan sehingga
 jam 10 pagi, hari Selasa, 29 Disember 2020.”
 Terima kasih Tuan Yang di-Pertua."
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1010,Tuan Yang di-Pertua,Kembali.
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,■1010,1010,Tuan Yang di-Pertua,Kembali.
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1010,Timbalan Menteri Perdagangan Antarabangsa dan Industri [Datuk Lim Ban Hong],"Tuan Yang di-Pertua, saya mohon untuk menyokong."
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,■1010,1010,Timbalan Menteri Perdagangan Antarabangsa dan Industri [Datuk Lim Ban Hong],"Tuan Yang di-Pertua, saya mohon untuk menyokong."
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1010,Tuan Yang di-Pertua,"Baiklah Setiausaha. Mohon maaf kepada Ahli-ahli Yang
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,■1010,1010,Tuan Yang di-Pertua,"Baiklah Setiausaha. Mohon maaf kepada Ahli-ahli Yang
 Berhormat sebab kami ada membicarakan perkara teknikal dan sementara tidak perlu
 menyatakan apa perkara itu, izinkan saya menyatakan bahawa Ahli-ahli Yang Berhormat,
 sekarang saya kemukakan masalahnya kepada Majlis untuk diputuskan.
 Masalahnya ialah usul seperti yang dikemukakan oleh Yang Berhormat Menteri
 sebentar tadi hendak disetujukan."
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1010,ANNOTATION,[Usul dikemuka bagi diputuskan; dan disetujukan]
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,■1010,1010,ANNOTATION,[Usul dikemuka bagi diputuskan; dan disetujukan]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1013,Timbalan Menteri Kewangan II [Tuan Mohd Shahar bin Abdullah],"*Bismillahi
+Bacaan Kali Yang Kedua dan Ketiga",,10.13 pg.,1013,Timbalan Menteri Kewangan II [Tuan Mohd Shahar bin Abdullah],"*Bismillahi
 Rahmani Rahim. Assalamualaikum warahmatullahi wabarakatuh* dan salam sejahtera.
 Tuan Yang di-Pertua, saya mohon mencadangkan bahawa satu akta untuk
 meminda Akta Cukai Pendapatan 1967, Akta Cukai Keuntungan Hartanah 1976, Akta
@@ -87,38 +87,38 @@ Bab II pindaan kepada Akta Cukai Pendapatan 1967. Bab II yang terdiri
 daripada 28 fasal iaitu fasal 3 hingga 30 adalah bertujuan untuk meminda Akta Cukai
 Pendapatan 1967"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1013,ANNOTATION,[Akta 53]
+Bacaan Kali Yang Kedua dan Ketiga",,10.13 pg.,1013,ANNOTATION,[Akta 53]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1013,Timbalan Menteri Kewangan II [Tuan Mohd Shahar bin Abdullah],".
+Bacaan Kali Yang Kedua dan Ketiga",,10.13 pg.,1013,Timbalan Menteri Kewangan II [Tuan Mohd Shahar bin Abdullah],".
 Bab III Tuan Yang di-Pertua, pindaan berkaitan Akta Cukai Keuntungan
 Hartanah 1976. Bab III yang terdiri daripada lapan fasal iaitu fasal 31 hingga fasal 38
 bertujuan untuk meminda Akta Cukai Keuntungan Hartanah 1976"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1013,ANNOTATION,[Akta 169]
+Bacaan Kali Yang Kedua dan Ketiga",,10.13 pg.,1013,ANNOTATION,[Akta 169]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1013,Timbalan Menteri Kewangan II [Tuan Mohd Shahar bin Abdullah],".
+Bacaan Kali Yang Kedua dan Ketiga",,10.13 pg.,1013,Timbalan Menteri Kewangan II [Tuan Mohd Shahar bin Abdullah],".
 Bab IV Tuan Yang di-Pertua, pindaan kepada Akta Setem 1949. Bab IV yang
 terdiri daripada sebanyak 12 fasal iaitu fasal 39 hingga fasal 50 bertujuan untuk meminda
 Akta Setem 1949"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1013,ANNOTATION,[Akta 378]
+Bacaan Kali Yang Kedua dan Ketiga",,10.13 pg.,1013,ANNOTATION,[Akta 378]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1013,Timbalan Menteri Kewangan II [Tuan Mohd Shahar bin Abdullah],".
+Bacaan Kali Yang Kedua dan Ketiga",,10.13 pg.,1013,Timbalan Menteri Kewangan II [Tuan Mohd Shahar bin Abdullah],".
 Bab V Tuan Yang di-Pertua, pindaan berkaitan Akta Petroleum (Cukai
 Pendapatan) 1967. Bab V ini Tuan Yang di-Pertua, yang terdiri daripada empat fasal iaitu
 fasal 51 hingga 54 bertujuan meminda Akta Petroleum (Cukai Pendapatan) 1967"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1013,ANNOTATION,"[Akta
+Bacaan Kali Yang Kedua dan Ketiga",,10.13 pg.,1013,ANNOTATION,"[Akta
 543]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1013,Timbalan Menteri Kewangan II [Tuan Mohd Shahar bin Abdullah],".
+Bacaan Kali Yang Kedua dan Ketiga",,10.13 pg.,1013,Timbalan Menteri Kewangan II [Tuan Mohd Shahar bin Abdullah],".
 Bab VI pindaan Tuan Yang di-Pertua, berkaitan Akta Cukai Aktiviti Perniagaan
 Labuan 1990. Bab VI yang terdiri daripada lapan fasal iaitu fasal 55 hingga 62 bertujuan
 meminda Akta Cukai Aktiviti Perniagaan Labuan 1990"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1013,ANNOTATION,[Akta 445]
+Bacaan Kali Yang Kedua dan Ketiga",,10.13 pg.,1013,ANNOTATION,[Akta 445]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1013,Timbalan Menteri Kewangan II [Tuan Mohd Shahar bin Abdullah],".
+Bacaan Kali Yang Kedua dan Ketiga",,10.13 pg.,1013,Timbalan Menteri Kewangan II [Tuan Mohd Shahar bin Abdullah],".
 Bab VII pindaan kepada Akta Kewangan 2012.
 Bab VIII berkaitan pindaan kepada Akta Kewangan 2018. Bab VIII Tuan Yang
 di-Pertua yang terdiri daripada dua fasal iaitu fasal 65 dan 66 bertujuan untuk meminda
@@ -128,11 +128,11 @@ adalah pindaan yang kecil atau bangkit dan boleh dirujuk dalam *blue bill,* deng
 yang telah diedarkan dalam Dewan yang mulia ini.
 Tuan Yang di-Pertua, saya mohon mencadangkan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1013,Tuan Yang di-Pertua,Sokongan.
+Bacaan Kali Yang Kedua dan Ketiga",,10.13 pg.,1013,Tuan Yang di-Pertua,Sokongan.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1013,Timbalan Menteri Perdagangan Antarabangsa dan Industri [Datuk Lim Ban Hong],"Tuan Yang di-Pertua, saya mohon untuk menyokong."
+Bacaan Kali Yang Kedua dan Ketiga",,10.13 pg.,1013,Timbalan Menteri Perdagangan Antarabangsa dan Industri [Datuk Lim Ban Hong],"Tuan Yang di-Pertua, saya mohon untuk menyokong."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1013,Tuan Yang di-Pertua,"*Alhamdulillah.* Terima kasih Yang Berhormat Timbalan
+Bacaan Kali Yang Kedua dan Ketiga",,10.13 pg.,1013,Tuan Yang di-Pertua,"*Alhamdulillah.* Terima kasih Yang Berhormat Timbalan
 Menteri. Selaras dengan tempoh persidangan yang disingkatkan ke pukul 2 petang, dan
 had yang ditentukan, maka rang undang-undang seperti yang disenaraikan dalam Notis
 dan juga Pemberitahuan itu hendaklah dipatuhi dan bagi menyelaraskan tempoh ucapan,
@@ -142,7 +142,7 @@ Sekarang dibuka rang undang-undang ini untuk perbahasan. Ada apa yang
 disebut sebagai sukarelawan pertama. Yang Berhormat Senator Tuan Haji Idris Haji
 Ahmad."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1017,Tuan Idris bin Haji Ahmad,"*Assalamualaikum warahmatullahi wabarakatuh*
+Bacaan Kali Yang Kedua dan Ketiga",,10.17 pg.,1017,Tuan Idris bin Haji Ahmad,"*Assalamualaikum warahmatullahi wabarakatuh*
 dan salam sejahtera. Terima kasih kepada Tuan Yang di-Pertua. Saya ingin menyentuh
 beberapa isu dalam perbahasan di peringkat dasar bagi Rang Undang-undang
 Kewangan 2020.
@@ -163,7 +163,7 @@ malahan di seluruh dunia. Lebih-lebih lagi apabila Kerajaan UK mengumumkan ada
 *strain* mutasi baru dijumpai di UK dan harga minyak pula mengalami kejatuhan, sudah
 tentu memberikan impak yang besar secara langsung terhadap ekonomi negara kita."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1020,Tuan Idris bin Haji Ahmad,"Tuan Yang di-Pertua, hasil kerajaan yang diunjurkan pada tahun hadapan
+Bacaan Kali Yang Kedua dan Ketiga",,■1020,1020,Tuan Idris bin Haji Ahmad,"Tuan Yang di-Pertua, hasil kerajaan yang diunjurkan pada tahun hadapan
 sebanyak RM236.9 bilion adalah lebih rendah berbanding tahun 2019. Namun, dengan
 hasil cukai langsung yang lebih penting berbanding tahun 2019, cukai pendapatan
 syarikat diunjurkan meningkat sehingga RM900 juta iaitu RM64.6 bilion berbanding tahun
@@ -194,11 +194,11 @@ kalau kita dapat mengurangkan kebergantungan kita kepada luar, maka sudah tentu
 secara tidak langsung kita akan dapat mengimbangkan ataupun mengurangkan kadar
 kewangan duit kita ini ke luar negara. Itulah sahaja, Tuan Yang di-Pertua. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1020,Tuan Yang di-Pertua,"Kembali. Ada sukarelawan di kalangan Yang Berhormat
+Bacaan Kali Yang Kedua dan Ketiga",,■1020,1020,Tuan Yang di-Pertua,"Kembali. Ada sukarelawan di kalangan Yang Berhormat
 nak cuba? Kalau tidak, saya bawa kepada pemerhatian asal, Yang Berhormat Senator
 Tuan Aknan a/l Ehtook."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1023,Tuan Aknan a/l Ehtook,"Terima kasih Tuan Yang di-Pertua. Masa lima minit.
+Bacaan Kali Yang Kedua dan Ketiga",,10.23 pg.,1023,Tuan Aknan a/l Ehtook,"Terima kasih Tuan Yang di-Pertua. Masa lima minit.
 Saya terus kepada isu yang saya ingin bangkitkan tentang Rang Undang-undang
 Kewangan 2020.
 Kita dapati bahawa di bawah perenggan 14(a)(i), had potongan untuk rawatan
@@ -237,9 +237,9 @@ rangkumkan, mudahkan, senang untuk semua orang, senang untuk pihak berkuasa,
 hidup pun senang dan kita dapat melaksanakan tugas kita dengan cekap dan cepat.
 Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1023,Tuan Yang di-Pertua,Yang Berhormat Tuan Liew Chin Tong.
+Bacaan Kali Yang Kedua dan Ketiga",,10.23 pg.,1023,Tuan Yang di-Pertua,Yang Berhormat Tuan Liew Chin Tong.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1027,Tuan Liew Chin Tong,"Terima kasih Tuan Yang di-Pertua. Saya mulai dengan
+Bacaan Kali Yang Kedua dan Ketiga",,10.27 pg.,1027,Tuan Liew Chin Tong,"Terima kasih Tuan Yang di-Pertua. Saya mulai dengan
 satu isu spesifik. Isu spesifik ini ialah cabutan khas empat digit. Ini salah satu isu yang
 saya telah bawa sejak dulu sebagai Ahli Parlimen Dewan Rakyat. Selepas Pakatan
 Harapan mengambil kerajaan, kami ada buat perubahan tetapi saya rasa ini satu subjek
@@ -256,9 +256,9 @@ ada cabutan biasa pada hari Rabu, Sabtu dan Ahad. Ini judi ya. Selepas itu, ada 
 cabutan khas di mana kerajaan dapat kutipan tambahan. Pada pandangan saya sebagai
 seorang yang dulu miskin dan sekarang tidak kaya..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1027,Tuan Yang di-Pertua,Sekarang dah kaya ya?
+Bacaan Kali Yang Kedua dan Ketiga",,10.27 pg.,1027,Tuan Yang di-Pertua,Sekarang dah kaya ya?
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1027,Tuan Liew Chin Tong,"Sekarang tak kaya tetapi saya dari keluarga yang kira
+Bacaan Kali Yang Kedua dan Ketiga",,10.27 pg.,1027,Tuan Liew Chin Tong,"Sekarang tak kaya tetapi saya dari keluarga yang kira
 agak miskin. Pandangan kami ialah kita kena kurangkan sekali perjudian. Kita tak nak
 hapus tetapi kita hendak kurangkan. Kita hendak kurangkan supaya mereka yang rasa
 mereka hendak judi, dia tidak ada peluang begitu banyak.
@@ -266,7 +266,7 @@ Jadi, bagi banyak tahun sampai tahun 2008, setiap tahun ada 22 kali cabutan
 khas di mana kita diberitahu pada tahun 2017, kerajaan kutip RM238 juta daripada
 cabutan khas 22 kali setahun."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1030,Tuan Liew Chin Tong,"Pada tahun 2019, di bawah Kerajaan Pakatan Harapan, kita kurangkan kepada
+Bacaan Kali Yang Kedua dan Ketiga",,■1030,1030,Tuan Liew Chin Tong,"Pada tahun 2019, di bawah Kerajaan Pakatan Harapan, kita kurangkan kepada
 11 kali setahun. Daripada 22 kali, kurang kepada 11 kali setahun. Pada tahun 2020 di
 bawah Kerajaan Pakatan Harapan, dikurangkan kepada lapan kali setahun. Pada tahun
 2021, dikembalikan kepada 22 kali setahun.
@@ -296,14 +296,14 @@ kepada kita boleh mengendalikan isu-isu dan kita memerlukan kerjasama daripada
 kementerian, dan juga Ahli-ahli Yang Berhormat Dewan Negara dan Dewan Rakyat.
 Terima kasih Tuan Yang di-Pertua."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1030,Tuan Yang di-Pertua,"Yang Berhormat Senator Laksamana Pertama Haji
+Bacaan Kali Yang Kedua dan Ketiga",,■1030,1030,Tuan Yang di-Pertua,"Yang Berhormat Senator Laksamana Pertama Haji
 Mohamad Imran bin Abd. Hamid."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1033,Laksamana Pertama Haji Mohamad Imran bin Abd. Hamid,*Assalamualaikum* Tuan Yang di-Pertua...
+Bacaan Kali Yang Kedua dan Ketiga",,10.33 pg.,1033,Laksamana Pertama Haji Mohamad Imran bin Abd. Hamid,*Assalamualaikum* Tuan Yang di-Pertua...
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1033,ANNOTATION,[Kata-kata aluan dalam Bahasa Arab]
+Bacaan Kali Yang Kedua dan Ketiga",,10.33 pg.,1033,ANNOTATION,[Kata-kata aluan dalam Bahasa Arab]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1033,Laksamana Pertama Haji Mohamad Imran bin Abd. Hamid,"Tuan
+Bacaan Kali Yang Kedua dan Ketiga",,10.33 pg.,1033,Laksamana Pertama Haji Mohamad Imran bin Abd. Hamid,"Tuan
 Yang di-Pertua, saya hendak ucapkan *well done, bravo zulu* kepada Kementerian
 Kewangan kerana berusaha untuk membuat pindaan Rang Undang-undang Kewangan
 ini dengan niat dan nawaitu serta tentunya untuk mendapat cukai yang lebih banyak
@@ -346,10 +346,10 @@ Kewangan, adakah Kementerian Kewangan telah membatalkan AP yang telah
 dikeluarkan kepada pengimport-pengimport daging haram ini? Itu sahaja Tuan Yang di-
 Pertua, terima kasih. *Assalamualaikum.*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1033,Tuan Yang di-Pertua,"*Waalaikumussalam* kembali. Yang Berhormat Senator
+Bacaan Kali Yang Kedua dan Ketiga",,10.33 pg.,1033,Tuan Yang di-Pertua,"*Waalaikumussalam* kembali. Yang Berhormat Senator
 Puan Hajah Sabani binti Mat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1037,Puan Hajah Sabani binti Mat,"Terima kasih Tuan Yang di-Pertua.
+Bacaan Kali Yang Kedua dan Ketiga",,10.37 pg.,1037,Puan Hajah Sabani binti Mat,"Terima kasih Tuan Yang di-Pertua.
 *Assalamualaikum warahmatullahi wabarakatuh* dan salam sejahtera. Saya juga ingin
 mengambil bahagian untuk membahaskan Rang Undang-undang Kewangan 2020 pada
 hari ini. Rang undang-undang ini merupakan perkara yang penting untuk kita bahaskan
@@ -375,7 +375,7 @@ korporat. Langkah kerajaan mengurangkan cukai korporat bagi memberi sokongan
 kepada pengusaha kecil dan sederhana menangani impak pandemik COVID-19
 sememangnya merupakan langkah yang bijak."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1040,Puan Hajah Sabani binti Mat,"Dalam hal ini, mengurangkan pemberian insentif khas cukai tersebut mampu
+Bacaan Kali Yang Kedua dan Ketiga",,■1040,1040,Puan Hajah Sabani binti Mat,"Dalam hal ini, mengurangkan pemberian insentif khas cukai tersebut mampu
 untuk memberi semula ruang bagi meningkatkan pelaburan asing (FDI) ke dalam negara
 ini. Walau bagaimanapun, langkah pengurangan yang dilakukan pada masa ini memberi
 impak jangka panjang kerana cukai merupakan sumber pendapatan negara. Soalan
@@ -395,19 +395,19 @@ keuntungan harta tanah ini bagi memberi kelegaan ataupun kesejahteraan serta pri
 kepada golongan yang terlibat teruk ini. Jadi Tuan Yang di-Pertua, saya mohon
 menyokong. Sekian, terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1040,Tuan Yang di-Pertua,"Kembali. Ada satu lagi yang saya persilakan, Yang
+Bacaan Kali Yang Kedua dan Ketiga",,■1040,1040,Tuan Yang di-Pertua,"Kembali. Ada satu lagi yang saya persilakan, Yang
 Berhormat Senator Dato’ Seri Haji Mohamad Apandi bin Mohamad dan selepas itu
 dipohon supaya Yang Berhormat Menteri memberi jawapan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1042,Dato’ Seri Haji Mohamad Apandi bin Mohamad,"*Assalamualaikum
+Bacaan Kali Yang Kedua dan Ketiga",,10.42 pg.,1042,Dato’ Seri Haji Mohamad Apandi bin Mohamad,"*Assalamualaikum
 warahmatullahi wabarakatuh* dan salam sejahtera Tuan Yang di-Pertua dan sahabat-
 sahabat Ahli Dewan Negara sekalian.
 Bagi saya terlibat dengan membincangkan Rang Undang-undang Kewangan
 2020, izinkan saya untuk merujuk kepada firman Allah SWT daripada Surah At-Talaq..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1042,ANNOTATION,[Membaca sepotong ayat Al-Quran]
+Bacaan Kali Yang Kedua dan Ketiga",,10.42 pg.,1042,ANNOTATION,[Membaca sepotong ayat Al-Quran]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1042,Dato’ Seri Haji Mohamad Apandi bin Mohamad,"Bermaksud, “*Barangsiapa yang bertaqwa kepada
+Bacaan Kali Yang Kedua dan Ketiga",,10.42 pg.,1042,Dato’ Seri Haji Mohamad Apandi bin Mohamad,"Bermaksud, “*Barangsiapa yang bertaqwa kepada
 Allah nescaya Allah akan membuka jalan keluar baginya dan jika dia akan memberi
 rezeki daripada arah yang kita tidak duga dan kita tidak sangka*”.
 Jadi, sehubungan dengan itu Tuan Yang di-Pertua, tepat dan betul lah pada
@@ -469,9 +469,9 @@ getah. Oleh sebab itu kita sekarang banyak bergantung kepada kilang-kilang getah
 four big brothers Kossan* nya, *Top Glove* nya, *Supermax* nya dan *Hartalega* nya, dengan
 izin..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1042,Tuan Yang di-Pertua,"Simpulkan, simpulkan."
+Bacaan Kali Yang Kedua dan Ketiga",,10.42 pg.,1042,Tuan Yang di-Pertua,"Simpulkan, simpulkan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1042,Dato’ Seri Haji Mohamad Apandi bin Mohamad,"Simpulkan, *masya-Allah.*
+Bacaan Kali Yang Kedua dan Ketiga",,10.42 pg.,1042,Dato’ Seri Haji Mohamad Apandi bin Mohamad,"Simpulkan, *masya-Allah.*
 Okey, sekarang ini punca baru bagi kerajaan. Kita tahu *stock market*, kerajaan tidak boleh
 mencari alasan mengatakan bahawa dalam *stock market*, kerajaan tidak ada satu modus
 operandi bagaimana hendak memantau pergerakan aliran keluar masuk mereka yang
@@ -481,28 +481,28 @@ Minta maaflah sahabat-sahabat yang kaya-kaya dalam ini mungkin ramai main
 dan sebagainya yang kurang gemar bermain *stock market* tetapi kita membebaskan
 pemain-pemain *stock market.*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1042,Tuan Yang di-Pertua,Yang Berhormat..
+Bacaan Kali Yang Kedua dan Ketiga",,10.42 pg.,1042,Tuan Yang di-Pertua,Yang Berhormat..
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1042,Dato’ Seri Haji Mohamad Apandi bin Mohamad,"Mereka ini mendapat
+Bacaan Kali Yang Kedua dan Ketiga",,10.42 pg.,1042,Dato’ Seri Haji Mohamad Apandi bin Mohamad,"Mereka ini mendapat
 keuntungan yang berlipat kali ganda, berjuta-juta. Oleh sebab itu kerajaan mesti fokus
 mencari satu mekanisme bagaimana untuk *tapping* untuk mencukaikan mereka
 walaupun kita tahu *stock market* ini bukanlah satu *yardstick* utama dalam hendak
 menentukan kehebatan ekonomi sesebuah negara tetapi kita mesti jangan lupa bahawa
 rakyat melihat kenapa mereka dilepaskan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1042,Tuan Yang di-Pertua,Simpulkan.
+Bacaan Kali Yang Kedua dan Ketiga",,10.42 pg.,1042,Tuan Yang di-Pertua,Simpulkan.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1042,Dato’ Seri Haji Mohamad Apandi bin Mohamad,"Oleh sebab itulah saya rasa
+Bacaan Kali Yang Kedua dan Ketiga",,10.42 pg.,1042,Dato’ Seri Haji Mohamad Apandi bin Mohamad,"Oleh sebab itulah saya rasa
 inilah waktunya kerajaan berfikir secara serius bagaimana untuk mencari modus
 operandi mekanisme supaya mereka yang mendapat keuntungan daripada pemain *stock
 market* juga terlibat untuk dicukaikan. Sekian, terima kasih. *Assalamualaikum
 warahmatullahi wabarakatuh.*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1042,Tuan Yang di-Pertua,"*Waalaikumussalam.* Sebelum Yang Berhormat Menteri
+Bacaan Kali Yang Kedua dan Ketiga",,10.42 pg.,1042,Tuan Yang di-Pertua,"*Waalaikumussalam.* Sebelum Yang Berhormat Menteri
 menjawab, saya beri laluan kepada seorang lagi sebab ada rayuan yang timbul, Yang
 Berhormat Senator Tuan Adrian Banie Lasimbang."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1050,Tuan Adrian Banie Lasimbang,"Terima kasih Tuan Yang di-Pertua kerana
+Bacaan Kali Yang Kedua dan Ketiga",,10.50 pg.,1050,Tuan Adrian Banie Lasimbang,"Terima kasih Tuan Yang di-Pertua kerana
 memberikan laluan untuk berbahas dalam Rang Undang-undang Kewangan (Pindaan)
 2020 ini. Tuan Yang di-Pertua, saya hanya ingin membawa dua perkara berkaitan
 dengan pindaan kepada Akta Petroleum. Kita tahu bahawa Sabah dan Sarawak ini
@@ -556,9 +556,9 @@ kawasan ataupun sumber dari negeri kita. Jadi, Tuan Yang di-Pertua, itu sahaja d
 saya. Saya harap pihak Kementerian Kewangan dapat melihat beberapa perkara yang
 saya telah bangkitkan. Sekian, terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1050,Tuan Yang di-Pertua,"Minta Yang Berhormat Menteri menjawab, menggulung."
+Bacaan Kali Yang Kedua dan Ketiga",,10.50 pg.,1050,Tuan Yang di-Pertua,"Minta Yang Berhormat Menteri menjawab, menggulung."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1054,Timbalan Menteri Kewangan II [Tuan Mohd Shahar bin Abdullah],"*Bismillahi
+Bacaan Kali Yang Kedua dan Ketiga",,10.54 pg.,1054,Timbalan Menteri Kewangan II [Tuan Mohd Shahar bin Abdullah],"*Bismillahi
 Rahmani Rahim. Assalamualaikum warahmatullahi wabarakatuh.* Terima kasih Tuan
 Yang di-Pertua. Terima kasih. Seramai tujuh orang Ahli-ahli Yang Berhormat Senator
 yang mengambil bahagian dalam perbahasan Rang Undang-undang Kewangan
@@ -629,7 +629,7 @@ bukan sahaja tertumpu pada sukan sahaja. Ia juga, seperti mana yang saya sebutka
 awal tadi, meliputi konsep gaya hidup. *Relief* sukan yang berbasikal untuk makluman
 Yang Berhormat Senator, ia maksimum. Boleh di caj bukan RM500 tetapi RM3,000."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1100,Timbalan Menteri Kewangan II [Tuan Mohd Shahar bin Abdullah],"Yang Berhormat Senator Liew Chin Tong membangkitkan satu perkara yang
+Bacaan Kali Yang Kedua dan Ketiga",,■1100,1100,Timbalan Menteri Kewangan II [Tuan Mohd Shahar bin Abdullah],"Yang Berhormat Senator Liew Chin Tong membangkitkan satu perkara yang
 saya kira memang dalam pemerhatian Kementerian Kewangan dan seperti mana yang
 saya nyatakan dalam Dewan yang mulia ini beberapa kali, kita sejak tahun 90-an kita
 tidak mengemukakan lesen baharu.
@@ -741,18 +741,18 @@ ada perkara yang penting. Apa yang paling pentingnya, kita mesti memastikan
 pelaksanaan kuasa yang diberikan kepada pihak agensi pelaksana dilaksanakan dengan
 baik. Terakhir..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1100,Tuan Yang di-Pertua,"Kalau kita lihat istilah *“check and balance”* itu, apakah
+Bacaan Kali Yang Kedua dan Ketiga",,■1100,1100,Tuan Yang di-Pertua,"Kalau kita lihat istilah *“check and balance”* itu, apakah
 yang terbaik agaknya dalam Bahasa Kebangsaan?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1100,Tuan Mohd Shahar bin Abdullah,“Semak dan imbang” Tuan Yang di-Pertua.
+Bacaan Kali Yang Kedua dan Ketiga",,■1100,1100,Tuan Mohd Shahar bin Abdullah,“Semak dan imbang” Tuan Yang di-Pertua.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1100,Tuan Yang di-Pertua,Ya betul. Terima kasih.
+Bacaan Kali Yang Kedua dan Ketiga",,■1100,1100,Tuan Yang di-Pertua,Ya betul. Terima kasih.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1100,Tuan Mohd Shahar bin Abdullah,
+Bacaan Kali Yang Kedua dan Ketiga",,■1100,1100,Tuan Mohd Shahar bin Abdullah,
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1100,ANNOTATION,[Ketawa]
+Bacaan Kali Yang Kedua dan Ketiga",,■1100,1100,ANNOTATION,[Ketawa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1100,Tuan Mohd Shahar bin Abdullah,"Semak dan imbang, dengan izin,
+Bacaan Kali Yang Kedua dan Ketiga",,■1100,1100,Tuan Mohd Shahar bin Abdullah,"Semak dan imbang, dengan izin,
 *check and balance* Tuan Yang di-Pertua.
 Tuan Yang di-Pertua, akhirnya berkaitan isu- adakah PETRONAS akan diaudit?
 Perkara ini akan saya beri jawapan secara bertulis kerana perkara ini di luar daripada
@@ -764,56 +764,56 @@ penghujahan yang dibuat oleh pihak Kementerian Kewangan.
 Tuan Yang di-Pertua, saya ucapkan terima kasih. *Assalamualaikum
 warahmatullahi wabarakatuh.*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1100,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat para Senator. Sekarang saya
+Bacaan Kali Yang Kedua dan Ketiga",,■1100,1100,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat para Senator. Sekarang saya
 kemukakan masalah kepada Majlis bagi diputuskan. Masalahnya ialah bahawa rang
 undang-undang ini dibacakan kali yang kedua sekarang."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1100,ANNOTATION,[Masalah dikemuka bagi diputuskan; dan disetujukan]
+Bacaan Kali Yang Kedua dan Ketiga",,■1100,1100,ANNOTATION,[Masalah dikemuka bagi diputuskan; dan disetujukan]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1110,ANNOTATION,"[Rang undang-undang dibacakan kali yang kedua dan diserahkan kepada
+Bacaan Kali Yang Kedua dan Ketiga",,■1110,1110,ANNOTATION,"[Rang undang-undang dibacakan kali yang kedua dan diserahkan kepada
 Dewan sebagai Jawatankuasa]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1110,ANNOTATION,[Majlis bersidang dalam Jawatankuasa]
+Bacaan Kali Yang Kedua dan Ketiga",,■1110,1110,ANNOTATION,[Majlis bersidang dalam Jawatankuasa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1110,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Jawatankuasa]
+Bacaan Kali Yang Kedua dan Ketiga",,■1110,1110,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Jawatankuasa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1110,ANNOTATION,"[Fasal-fasal 1 hingga 66 diperintahkan jadi sebahagian daripada rang undang-
+Bacaan Kali Yang Kedua dan Ketiga",,■1110,1110,ANNOTATION,"[Fasal-fasal 1 hingga 66 diperintahkan jadi sebahagian daripada rang undang-
 undang]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1110,ANNOTATION,[Rang undang-undang dimaklumkan kepada Majlis sekarang]
+Bacaan Kali Yang Kedua dan Ketiga",,■1110,1110,ANNOTATION,[Rang undang-undang dimaklumkan kepada Majlis sekarang]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1110,ANNOTATION,[Majlis Mesyuarat bersidang semula]
+Bacaan Kali Yang Kedua dan Ketiga",,■1110,1110,ANNOTATION,[Majlis Mesyuarat bersidang semula]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1110,ANNOTATION,"[Rang undang-undang dilaporkan dengan tidak ada pindaan; dibacakan kali
+Bacaan Kali Yang Kedua dan Ketiga",,■1110,1110,ANNOTATION,"[Rang undang-undang dilaporkan dengan tidak ada pindaan; dibacakan kali
 yang ketiga, disokong oleh Timbalan Menteri Perdagangan Antarabangsa dan Industri
 (Datuk Lim Ban Hong) dan diluluskan]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KEWANGAN 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1110,Tuan Yang di-Pertua,"Dewan mengucapkan terima kasih kepada Yang
+Bacaan Kali Yang Kedua dan Ketiga",,■1110,1110,Tuan Yang di-Pertua,"Dewan mengucapkan terima kasih kepada Yang
 Berhormat Timbalan Menteri dan semua Ahli-ahli para Senator yang mengambil
 bahagian."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1220,Timbalan Menteri Kewangan I [Datuk Abd Rahim bin Bakri],"Tuan Yang di-
+Bacaan Kali Yang Kedua dan Ketiga",,12.20 tgh.,1220,Timbalan Menteri Kewangan I [Datuk Abd Rahim bin Bakri],"Tuan Yang di-
 Pertua, saya mohon mencadangkan suatu akta untuk meminda Akta Kastam 1967
 dibacakan kali yang kedua sekarang."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1220,Tuan Yang di-Pertua,Menyokong?
+Bacaan Kali Yang Kedua dan Ketiga",,12.20 tgh.,1220,Tuan Yang di-Pertua,Menyokong?
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1220,Datuk Abd Rahim bin Bakri,Tuan Yang di-Pertua...
+Bacaan Kali Yang Kedua dan Ketiga",,12.20 tgh.,1220,Datuk Abd Rahim bin Bakri,Tuan Yang di-Pertua...
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1220,Tuan Yang di-Pertua,Tunggu dulu**.** Ada yang hendak sokong dulu.
+Bacaan Kali Yang Kedua dan Ketiga",,12.20 tgh.,1220,Tuan Yang di-Pertua,Tunggu dulu**.** Ada yang hendak sokong dulu.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1220,Seorang Ahli,Tak kot.
+Bacaan Kali Yang Kedua dan Ketiga",,12.20 tgh.,1220,Seorang Ahli,Tak kot.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1220,Seorang Ahli,Teruskan.
+Bacaan Kali Yang Kedua dan Ketiga",,12.20 tgh.,1220,Seorang Ahli,Teruskan.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1220,Tuan Yang di-Pertua,"Okey, baik. Teruskan."
+Bacaan Kali Yang Kedua dan Ketiga",,12.20 tgh.,1220,Tuan Yang di-Pertua,"Okey, baik. Teruskan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1220,Datuk Abd Rahim bin Bakri,"Tuan Yang di-Pertua, Rang Undang-undang
+Bacaan Kali Yang Kedua dan Ketiga",,12.20 tgh.,1220,Datuk Abd Rahim bin Bakri,"Tuan Yang di-Pertua, Rang Undang-undang
 Kastam (Pindaan) 2020 yang dicadangkan adalah bagi meminda Akta Kastam 1967"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1220,ANNOTATION,[Akta 235]
+Bacaan Kali Yang Kedua dan Ketiga",,12.20 tgh.,1220,ANNOTATION,[Akta 235]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1220,Datuk Abd Rahim bin Bakri,"dengan tujuan untuk menambah baik, menyeragamkan dan mengemas kini
+Bacaan Kali Yang Kedua dan Ketiga",,12.20 tgh.,1220,Datuk Abd Rahim bin Bakri,"dengan tujuan untuk menambah baik, menyeragamkan dan mengemas kini
 peruntukan sedia ada dan memasukkan peruntukan baharu dalam akta supaya
 perundangan cukai lebih telus, efisien dan selari dengan perubahan semasa polisi
 pencukaian serta dapat memenuhi keperluan perniagaan dan pembayar cukai.
@@ -830,16 +830,16 @@ undang ini mempunyai enam fasal kesemuanya yang telah tertera di dalam dokumen
 rang undang-undang- *blue bill,* yang telah diedarkan kepada Ahli-ahli Yang Berhormat.
 Tuan Yang di-Pertua, saya mohon mencadangkan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1220,Tuan Yang di-Pertua,Menyokong?
+Bacaan Kali Yang Kedua dan Ketiga",,12.20 tgh.,1220,Tuan Yang di-Pertua,Menyokong?
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1220,Menteri Kanan Pendidikan [Dr. Radzi bin Jidin],"Tuan Yang di-Pertua, saya
+Bacaan Kali Yang Kedua dan Ketiga",,12.20 tgh.,1220,Menteri Kanan Pendidikan [Dr. Radzi bin Jidin],"Tuan Yang di-Pertua, saya
 mahu menyokong."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1220,Tuan Yang di-Pertua,"Yang Berhormat Menteri menyokong, *alhamdulilah.* Ahli
+Bacaan Kali Yang Kedua dan Ketiga",,12.20 tgh.,1220,Tuan Yang di-Pertua,"Yang Berhormat Menteri menyokong, *alhamdulilah.* Ahli
 Yang Berhormat, masalah di hadapan Majlis ialah untuk meminda Akta Kastam 1967
 dibacakan kali kedua sekarang dan terbuka untuk dibahaskan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1116,Dato’ Kesavadas A. Achyuthan Nair,"Saya. Terima kasih Tuan Yang di-
+Bacaan Kali Yang Kedua dan Ketiga",,11.16 pg.,1116,Dato’ Kesavadas A. Achyuthan Nair,"Saya. Terima kasih Tuan Yang di-
 Pertua. *Now,* Jabatan Kastam Diraja Malaysia merupakan badan yang sangat penting
 dalam menjana pendapatan negara dan memastikan cukai ke atas barangan dan
 transaksi perdagangan dikutip dengan efisien.
@@ -867,7 +867,7 @@ to proof* adalah berlainan. Lagi satu saya hendak beritahu ke Dewan ini ialah ji
 seksyen 116E- tajuknya dalam Bahasa Melayu (BM) iaitu menyatakan, akta ini dipinda
 dengan memasukkan selepas seksyen 116D, seksyen yang berikut."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1120,Dato’ Kesavadas A. Achyuthan Nair,"Bila dibaca subseksyen 1, dengan 2 didapati adalah dalam bahasa Inggeris.
+Bacaan Kali Yang Kedua dan Ketiga",,■1120,1120,Dato’ Kesavadas A. Achyuthan Nair,"Bila dibaca subseksyen 1, dengan 2 didapati adalah dalam bahasa Inggeris.
 Soalan saya kenapa dalam naskhah rang undang-undang ini versi BM mempunyai dua
 bahasa. Ini telah merojakkan bahasa, adakah ini silap *copy and paste,* dengan izin, atau
 tiru dan lekat *or* memang daripada bahasa ini digunakan. Perhatian utama saya atau *the
@@ -891,11 +891,11 @@ perkara yang tidak adil untuk mendapatkan sabitan kepada orang kena tuduh. Oleh 
 saya memang setuju dengan pindaan ini cuma perlu sedikit penjelasan sahaja. Terima
 kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1120,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat Senator Dato’
+Bacaan Kali Yang Kedua dan Ketiga",,■1120,1120,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat Senator Dato’
 Kesavadas. Seterusnya, saya menjemput Yang Berhormat Senator Tuan Muhamad
 Zahid bin Md. Arip."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1122,Tuan Muhamad Zahid bin Md. Arip,"*Bismillahi Rahmani Rahim.
+Bacaan Kali Yang Kedua dan Ketiga",,11.22 pg.,1122,Tuan Muhamad Zahid bin Md. Arip,"*Bismillahi Rahmani Rahim.
 Assalamualaikum warahmatullahi wabarakatuh* Tuan Yang di-Pertua. Saya
 mengucapkan ribuan terima kasih kerana turut dipanggil untuk membahaskan pindaan
 rang undang-undang berkaitan dengan kastam ini. Sementara kita bersetuju dengan
@@ -926,11 +926,11 @@ malu-malu untuk mengadakan pertemuan dengan Yang Berhormat Menteri Kewangan
 bagi memperjuangkan perkara ini. Dengan itu Tuan Yang di-Pertua, saya mengambil
 kesempatan ini untuk menyokong pindaan Akta Kastam ini. Sekian, terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1122,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator Tuan
+Bacaan Kali Yang Kedua dan Ketiga",,11.22 pg.,1122,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator Tuan
 Muhamad Zahid bin Md. Arip. Dijemput Yang Berhormat Senator Dato’ Wira Othman bin
 Aziz."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1125,Dato’ Wira Othman bin Aziz,"Terima kasih Tuan Yang di-Pertua.
+Bacaan Kali Yang Kedua dan Ketiga",,11.25 pg.,1125,Dato’ Wira Othman bin Aziz,"Terima kasih Tuan Yang di-Pertua.
 *Assalamualaikum warahmatullahi wabarakatuh,* saya hendak rakamkan ucapan terima
 kasih kepada Tuan Yang di-Pertua atas ruang yang diberikan untuk turut sama berbahas
 berkaitan dengan Rang Undang-undang Kastam (Pindaan) 2020 seperti yang telah
@@ -976,13 +976,13 @@ ditegakkan dan kerajaan sebagai pemerintah dapat menerima cukai-cukai yang
 diwajibkan, yang diperlukan ke atas mereka yang terlibat. Terima kasih Tuan Yang di-
 Pertua, saya mohon menyokong. *Assalamualaikum...*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1125,ANNOTATION,[Tepuk]
+Bacaan Kali Yang Kedua dan Ketiga",,11.25 pg.,1125,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1130,Timbalan Yang di-Pertua,"*Waalaikumsalam warahmatullahi wabarakatuh.*
+Bacaan Kali Yang Kedua dan Ketiga",,■1130,1130,Timbalan Yang di-Pertua,"*Waalaikumsalam warahmatullahi wabarakatuh.*
 Terima kasih Yang Berhormat Senator Dato’ Wira Othman bin Aziz. Seterusnya saya
 menjemput Yang Berhormat Senator Dato’ Seri Haji Mohamad Apandi bin Mohamad."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1130,Dato’ Seri Haji Mohamad Apandi bin Mohamad,"*Assalamualaikum
+Bacaan Kali Yang Kedua dan Ketiga",,11.30 pg.,1130,Dato’ Seri Haji Mohamad Apandi bin Mohamad,"*Assalamualaikum
 warahmatullahi wabarakatuh* dan salam sejahtera Tuan Yang di-Pertua dan sahabat-
 sahabat Yang Berhormat Senator sekalian.
 Rang undang-undang yang dibentangkan pada pagi ini di dalam Dewan Negara
@@ -1030,21 +1030,21 @@ ditebarkan, maka yang RM20 ribu menjadi pilihan daripada RM10 ribu. Oleh sebab i
 kita mesti melantik *special branch* seperti mana polis buat, yang kita tidak sedar dia ialah
 seorang perisik."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1130,Tuan Muhamad Zahid bin Md. Arip,Mohon penjelasan Yang Berhormat.
+Bacaan Kali Yang Kedua dan Ketiga",,11.30 pg.,1130,Tuan Muhamad Zahid bin Md. Arip,Mohon penjelasan Yang Berhormat.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1130,Dato’ Seri Haji Mohamad Apandi bin Mohamad,"Sila, sila."
+Bacaan Kali Yang Kedua dan Ketiga",,11.30 pg.,1130,Dato’ Seri Haji Mohamad Apandi bin Mohamad,"Sila, sila."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1130,Tuan Muhamad Zahid bin Md. Arip,"*Special branch* ini pun boleh mendapat
+Bacaan Kali Yang Kedua dan Ketiga",,11.30 pg.,1130,Tuan Muhamad Zahid bin Md. Arip,"*Special branch* ini pun boleh mendapat
 *reward* juga kah?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1130,Dato’ Seri Haji Mohamad Apandi bin Mohamad,"Saya sokong demi
+Bacaan Kali Yang Kedua dan Ketiga",,11.30 pg.,1130,Dato’ Seri Haji Mohamad Apandi bin Mohamad,"Saya sokong demi
 keselamatan negara."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1130,Puan Asmak binti Husin,Mohon pencerahan.
+Bacaan Kali Yang Kedua dan Ketiga",,11.30 pg.,1130,Puan Asmak binti Husin,Mohon pencerahan.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1130,Dato’ Seri Haji Mohamad Apandi bin Mohamad,"Sila, sila."
+Bacaan Kali Yang Kedua dan Ketiga",,11.30 pg.,1130,Dato’ Seri Haji Mohamad Apandi bin Mohamad,"Sila, sila."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1130,Puan Asmak binti Husin,"Okey. Terima kasih kepada Tuan Yang di-Pertua
+Bacaan Kali Yang Kedua dan Ketiga",,11.30 pg.,1130,Puan Asmak binti Husin,"Okey. Terima kasih kepada Tuan Yang di-Pertua
 dan juga Yang Berhormat Senator. Apabila bercakap tentang penguatkuasaan dan juga
 cadangan untuk memantapkan kastam ini, saya ingin bertanya, apakah SOP berkaitan
 dengan perlindungan terhadap pegawai kastam wanita? Sama ada ejen provokasi, kalau
@@ -1055,7 +1055,7 @@ dengan pegawai wanita? Kalau boleh, kita hendak juga tahu apakah hasil laporan
 daripada kes Anisa sebab kita sudah bangkitkan berkali-kali dalam Dewan ini. Itu sahaja.
 Sekian, terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1130,Dato’ Seri Haji Mohamad Apandi bin Mohamad,"Saya ucapkan terima kasih
+Bacaan Kali Yang Kedua dan Ketiga",,11.30 pg.,1130,Dato’ Seri Haji Mohamad Apandi bin Mohamad,"Saya ucapkan terima kasih
 kepada sahabat saya Yang Berhormat Senator Asmak kerana sangat cakna kepada
 wanita. Jadi saya rasa *high time* lah- semasa saya menjadi Ahli Parlimen pada tahun
 1999 dahulu, semua tempat minta penguat kuasa ini ada senjata api.
@@ -1079,30 +1079,30 @@ Oleh sebab itu saya rasa Malaysia ini, *insya-Allah,* kalau kita betul-betul
 bersemangat untuk mengurangkan ketirisan ini, *insya-Allah,* saya rasa kita boleh
 mencapai. Sebab itu ada satu Firman Allah SWT..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1130,ANNOTATION,[Membaca sepotong ayat Al-Quran]
+Bacaan Kali Yang Kedua dan Ketiga",,11.30 pg.,1130,ANNOTATION,[Membaca sepotong ayat Al-Quran]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1130,Dato’ Seri Haji Mohamad Apandi bin Mohamad,Kena siapkan dengan segala kekuatan yang ada kepada kita...
+Bacaan Kali Yang Kedua dan Ketiga",,11.30 pg.,1130,Dato’ Seri Haji Mohamad Apandi bin Mohamad,Kena siapkan dengan segala kekuatan yang ada kepada kita...
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1130,ANNOTATION,"[Membaca sepotong ayat
+Bacaan Kali Yang Kedua dan Ketiga",,11.30 pg.,1130,ANNOTATION,"[Membaca sepotong ayat
 Al-Quran]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1130,Dato’ Seri Haji Mohamad Apandi bin Mohamad,"Apabila kita sudah pelan dan sebagainya, kita mesti bersungguh-sungguh.
+Bacaan Kali Yang Kedua dan Ketiga",,11.30 pg.,1130,Dato’ Seri Haji Mohamad Apandi bin Mohamad,"Apabila kita sudah pelan dan sebagainya, kita mesti bersungguh-sungguh.
 Jangan sekadar lalu di Dewan Rakyat, lalu di Dewan Negara tetapi rakyat tengok, *“Ada
 apa-apa perbezaan?”*. Tidak ada apa-apa perbezaan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1130,Timbalan Yang di-Pertua,"Masa sudah tamat, Yang Berhormat."
+Bacaan Kali Yang Kedua dan Ketiga",,11.30 pg.,1130,Timbalan Yang di-Pertua,"Masa sudah tamat, Yang Berhormat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1130,Dato’ Seri Haji Mohamad Apandi bin Mohamad,"Jadi saya fikir sudah sampai
+Bacaan Kali Yang Kedua dan Ketiga",,11.30 pg.,1130,Dato’ Seri Haji Mohamad Apandi bin Mohamad,"Jadi saya fikir sudah sampai
 waktunya kerajaan mesti melihat kepada mekanisme dengan pembelian alat-alat baru,
 dengan memberi kuasa-kuasa lebih kepada anggota supaya ketirisan dalam pengutipan
 hasil kastam ini dapat dikecilkan demi menambah pendapatan negara.
 Sekian, terima kasih. *Wassalamualaikum warahmatullahi wabarakatuh.*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1130,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator.
+Bacaan Kali Yang Kedua dan Ketiga",,11.30 pg.,1130,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator.
 Sekarang saya ingin menjemput Yang Berhormat Senator Puan Hajah Nuridah binti
 Mohd Salleh."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1138,Puan Hajah Nuridah binti Mohd Salleh,"*Assalamualaikum warahmatullahi
+Bacaan Kali Yang Kedua dan Ketiga",,11.38 pg.,1138,Puan Hajah Nuridah binti Mohd Salleh,"*Assalamualaikum warahmatullahi
 wabarakatuh* dan salam sejahtera. Terlebih dahulu, terima kasih Tuan Yang di-Pertua
 kerana memberi laluan kepada saya untuk bersama-sama membahaskan Rang Undang-
 undang Kastam (Pindaan) 2020 ini.
@@ -1118,7 +1118,7 @@ tersebut membangkitkan mengenai kelemahan daripada segi e-kastam itu sendiri di
 mana bukan semua dokumentasi adalah berbentuk elektronik, malah masih banyak
 dokumentasi berbentuk *paperwork* yang digunakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1140,Puan Hajah Nuridah binti Mohd Salleh,"Oleh yang demikian, saya berpendapat kerajaan perlu mempertingkatkan
+Bacaan Kali Yang Kedua dan Ketiga",,■1140,1140,Puan Hajah Nuridah binti Mohd Salleh,"Oleh yang demikian, saya berpendapat kerajaan perlu mempertingkatkan
 sistem e-kastam negara dengan mewajibkan pendokumentasian elektronik. Hal ini bagi
 memastikan koordinasi antara semua pihak terlibat, terutamanya antara Jabatan Kastam
 Diraja Malaysia dan Jabatan Perkhidmatan Kuarantin dan Pemeriksaan Malaysia
@@ -1134,9 +1134,9 @@ integrasi dan jati diri yang ada pada seseorang calon pekerja waktu sesi temu du
 dijalankan. Program-program peringatan ataupun tazkirah perlu diberikan selalu kepada
 pegawai-pegawai bagi mengingatkan mereka yang lupa sebagai mana firman Allah..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1140,ANNOTATION,[Membaca sepotong ayat Al-Quran]
+Bacaan Kali Yang Kedua dan Ketiga",,■1140,1140,ANNOTATION,[Membaca sepotong ayat Al-Quran]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1140,Puan Hajah Nuridah binti Mohd Salleh,"*“...dan berikanlah peringatan, sesungguhnya
+Bacaan Kali Yang Kedua dan Ketiga",,■1140,1140,Puan Hajah Nuridah binti Mohd Salleh,"*“...dan berikanlah peringatan, sesungguhnya
 peringatan itu memberi manfaat kepada orang-orang yang beriman.”*
 Jadi, seseorang pekerja ataupun pegawai khususnya yang beragama Islam
 yang meletakkan asas kepercayaan bahawa semua perbuatan mereka akan diadili oleh
@@ -1155,12 +1155,12 @@ dalam suasana ini, apakah solusi dan jaminan kerajaan untuk memastikan pegawai-
 pegawai terlibat boleh bertindak berani dengan melaporkan apa-apa cubaan
 menawarkan rasuah kepada mereka?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1140,Tuan Muhamad Zahid bin Md. Arip,"Yang Berhormat, mohon penjelasan sikit
+Bacaan Kali Yang Kedua dan Ketiga",,■1140,1140,Tuan Muhamad Zahid bin Md. Arip,"Yang Berhormat, mohon penjelasan sikit
 Yang Berhormat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1140,Puan Hajah Nuridah binti Mohd Salleh,Ya.
+Bacaan Kali Yang Kedua dan Ketiga",,■1140,1140,Puan Hajah Nuridah binti Mohd Salleh,Ya.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1140,Tuan Muhamad Zahid bin Md. Arip,"Terima kasih Tuan Yang di-Pertua.
+Bacaan Kali Yang Kedua dan Ketiga",,■1140,1140,Tuan Muhamad Zahid bin Md. Arip,"Terima kasih Tuan Yang di-Pertua.
 Berhubung dengan terlanjur Yang Berhormat menyebutkan tentang kartel daging, habis
 sudah daging-daging yang kita makan ini, kita pun tidak tahu sudah jadi darah daging.
 Jadi, Yang Berhormat setuju tidak kalau sekiranya mengambil kesempatan daripada
@@ -1170,14 +1170,14 @@ penemuan-penemuan baharu daripada siasatan mereka. Apakah Yang Berhormat
 bersetuju supaya perkara ini tidak berulang lagi pada masa akan datang? Sekian, terima
 kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1140,Puan Hajah Nuridah binti Mohd Salleh,"Ya, terima kasih. Cantik cadangan
+Bacaan Kali Yang Kedua dan Ketiga",,■1140,1140,Puan Hajah Nuridah binti Mohd Salleh,"Ya, terima kasih. Cantik cadangan
 tersebut, saya bersetuju. Sekian, terima kasih Tuan Yang di-Pertua. Saya menyokong."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1140,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator Puan
+Bacaan Kali Yang Kedua dan Ketiga",,■1140,1140,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator Puan
 Hajah Nuridah binti Mohd Salleh. Dipersilakan Yang Berhormat Senator Datuk Razali bin
 Idris."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1144,Datuk Razali bin Idris,"*Assalamualaikum warahmatullahi wabarakatuh.
+Bacaan Kali Yang Kedua dan Ketiga",,11.44 pg.,1144,Datuk Razali bin Idris,"*Assalamualaikum warahmatullahi wabarakatuh.
 Bismillahi Rahmani Rahim*. Terima kasih Tuan Yang di-Pertua kerana beri ruang kepada
 saya untuk berbahas dalam Rang Undang-undang Kastam (Pindaan) 2020. Kalau kita
 lihat di bawah pindaan ini kelak, ia memperuntukkan bahawa apabila apa-apa barang
@@ -1223,19 +1223,19 @@ penjelasan ini dapat merungkaikan sedikit sebanyak permasalahan dan keresahan
 rakyat atau peniaga-peniaga di peringkat kampung. Sekian, terima kasih dan saya
 menyokong."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1144,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator
+Bacaan Kali Yang Kedua dan Ketiga",,11.44 pg.,1144,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator
 Datuk Razali bin Idris.
 Untuk pembahas yang terakhir, saya menjemput Yang Berhormat Senator Dato’
 Haji Jefridin bin Haji Atan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1149,Dato’ Haji Jefridin bin Haji Atan,"Terima kasih Tuan Yang di-Pertua.
+Bacaan Kali Yang Kedua dan Ketiga",,11.49 pg.,1149,Dato’ Haji Jefridin bin Haji Atan,"Terima kasih Tuan Yang di-Pertua.
 *Assalamualaikum warahmatullahi wabarakatuh.* Pada hari ini kita akan membahaskan
 tentang rang undang-undang meminda suatu akta untuk meminda Akta Kastam 1967.
 Sesuatu rang undang-undang itu hendak dipinda ataupun ditambah baik sudah
 semestinya adalah untuk memastikan tindakan-tindakan yang dibuat oleh pihak kastam
 akan lebih bergerak cergas dan juga menepati sasaran yang dibuat oleh pihak jabatan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1150,Dato’ Haji Jefridin bin Haji Atan,"Namun yang demikian, kita harus ingat daripada peringkat awalnya kenapa
+Bacaan Kali Yang Kedua dan Ketiga",,■1150,1150,Dato’ Haji Jefridin bin Haji Atan,"Namun yang demikian, kita harus ingat daripada peringkat awalnya kenapa
 undang-undang ini hendak dipinda? Iaitu sudah tentulah bersangkut paut kepada
 keberkesanan kerja seorang pegawai kastam itu. Pihak kerajaan harus melihat bahawa
 setiap tugasan yang diberi oleh pegawai-pegawai kastam yang menjaga *check point*
@@ -1271,11 +1271,11 @@ rakan Senator ini dapat dinyatakan supaya kita faham tentang apa yang berlaku
 sekarang ini. Dengan adanya sokongan pindaan rang undang-undang ini, mudah-
 mudahan pihak kastam dapat menjalankan tugas dengan baik dan sempurna."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1150,Puan Asmak binti Husin,"Mohon pencerahan Yang Berhormat, jiran?"
+Bacaan Kali Yang Kedua dan Ketiga",,■1150,1150,Puan Asmak binti Husin,"Mohon pencerahan Yang Berhormat, jiran?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1150,Dato’ Haji Jefridin bin Haji Atan,"Sila, sila."
+Bacaan Kali Yang Kedua dan Ketiga",,■1150,1150,Dato’ Haji Jefridin bin Haji Atan,"Sila, sila."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1150,Puan Asmak binti Husin,"Terima kasih Tuan Yang di-Pertua. Jiran, terima
+Bacaan Kali Yang Kedua dan Ketiga",,■1150,1150,Puan Asmak binti Husin,"Terima kasih Tuan Yang di-Pertua. Jiran, terima
 kasih. Selain daripada dibekalkan dengan senjata, peralatan canggih dan lain-lain saya
 ingat antara perkara utama yang perlu ditekankan juga adalah daripada segi pengisian
 dalaman sebab berdepan dengan mungkin duit sogokan yang bernilai ribuan, ratusan
@@ -1284,7 +1284,7 @@ pada polis kita ada BAKA. Kalau pada tentera kita ada KAGAT. Bagaimanakah pula
 dengan kastam? Saya tidak pernah dengar. Mungkin boleh dapat penjelasanlah. Okey,
 terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1150,Dato’ Haji Jefridin bin Haji Atan,"Saya menyokong Yang Berhormat Puan
+Bacaan Kali Yang Kedua dan Ketiga",,■1150,1150,Dato’ Haji Jefridin bin Haji Atan,"Saya menyokong Yang Berhormat Puan
 Asmak berhubung dengan integriti anggota kastam ini. Jadi saya juga berharap kalau
 pihak kastam dapat menyediakan satu kurikulum integriti bagi anggota-anggota baharu.
 Seharusnya memang kita tahu banyak kempen anti rasuah yang dibuat oleh pihak
@@ -1294,10 +1294,10 @@ juga dalam perkhidmatan mereka?
 Tuan Yang di-Pertua, dengan ini saya menyokong pindaan Rang Undang-
 undang Kastam ini. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1150,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Dato’ Haji
+Bacaan Kali Yang Kedua dan Ketiga",,■1150,1150,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Dato’ Haji
 Jefridin bin Haji Atan. Diminta Yang Berhormat Timbalan Menteri untuk menjawab."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1155,Timbalan Menteri Kewangan I [Datuk Abd Rahim bin Bakri],"Terima kasih
+Bacaan Kali Yang Kedua dan Ketiga",,11.55 pg.,1155,Timbalan Menteri Kewangan I [Datuk Abd Rahim bin Bakri],"Terima kasih
 Tuan Yang di-Pertua, terima kasih kepada sekurang-kurangnya tujuh Ahli Yang
 Berhormat Senator yang telah terlibat dalam perbahasan melibatkan pindaan Akta
 Kastam yang bertujuan untuk mengukuhkan penguatkuasaan kastam dan membolehkan
@@ -1344,32 +1344,32 @@ dengan lebih bersemangat lagi. Untuk makluman Yang Berhormat, JKDM sememangnya
 telah mengemukakan cadangan kepada Yang Berhormat Menteri Kewangan untuk
 mempertimbangkan semula *reward*..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1155,Dato’ Seri Haji Mohamad Apandi bin Mohamad,"Soalan tambahan Yang
+Bacaan Kali Yang Kedua dan Ketiga",,11.55 pg.,1155,Dato’ Seri Haji Mohamad Apandi bin Mohamad,"Soalan tambahan Yang
 Berhormat Timbalan Menteri."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1155,Datuk Abd Rahim bin Bakri,...Kepada pegawai dan...
+Bacaan Kali Yang Kedua dan Ketiga",,11.55 pg.,1155,Datuk Abd Rahim bin Bakri,...Kepada pegawai dan...
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1155,Dato’ Seri Haji Mohamad Apandi bin Mohamad,"Boleh soalan tambahan
+Bacaan Kali Yang Kedua dan Ketiga",,11.55 pg.,1155,Dato’ Seri Haji Mohamad Apandi bin Mohamad,"Boleh soalan tambahan
 kah?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1155,Datuk Abd Rahim bin Bakri,"...Masih lagi dalam pertimbangan Kementerian
+Bacaan Kali Yang Kedua dan Ketiga",,11.55 pg.,1155,Datuk Abd Rahim bin Bakri,"...Masih lagi dalam pertimbangan Kementerian
 Kewangan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1155,Seorang Ahli,Penjelasan.
+Bacaan Kali Yang Kedua dan Ketiga",,11.55 pg.,1155,Seorang Ahli,Penjelasan.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1155,Dato’ Seri Haji Mohamad Apandi bin Mohamad,"Penjelasan, *sorry*."
+Bacaan Kali Yang Kedua dan Ketiga",,11.55 pg.,1155,Dato’ Seri Haji Mohamad Apandi bin Mohamad,"Penjelasan, *sorry*."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1155,Datuk Abd Rahim bin Bakri,Ya.
+Bacaan Kali Yang Kedua dan Ketiga",,11.55 pg.,1155,Datuk Abd Rahim bin Bakri,Ya.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1200,Dato’ Seri Haji Mohamad Apandi bin Mohamad,"Akhir-akhir ini, saya sering
+Bacaan Kali Yang Kedua dan Ketiga",,■1200,1200,Dato’ Seri Haji Mohamad Apandi bin Mohamad,"Akhir-akhir ini, saya sering
 kali terdengar jawapan daripada pihak kerajaan tentang terminologi-terminologi undang-
 undang ini, seolah-olah Bahasa Melayu kita tidak ada untuk *replaced*, untuk ganti.
 Bolehkah di pihak kementerian juga memikir, supaya terminologi Bahasa Melayu juga
 diadakan selain daripada terminologi bahasa Inggeris? Sekian, terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1200,Tuan Muhamad Zahid bin Md. Arip,"*“Reward”* itu, ganjaran."
+Bacaan Kali Yang Kedua dan Ketiga",,■1200,1200,Tuan Muhamad Zahid bin Md. Arip,"*“Reward”* itu, ganjaran."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1200,Datuk Abd Rahim bin Bakri,"Seperti mana Yang Berhormat Senator sedia
+Bacaan Kali Yang Kedua dan Ketiga",,■1200,1200,Datuk Abd Rahim bin Bakri,"Seperti mana Yang Berhormat Senator sedia
 maklum, bahawa draf undang-undang ini adalah disediakan oleh AGC. Jadi, memang
 undang-undang ini adalah berdasarkan kepada undang-undang sedia ada. Cadangan
 Yang Berhormat Senator itu mungkin bolehlah dipanjangkan kepada mereka untuk
@@ -1390,22 +1390,22 @@ Ini adalah untuk membolehkan bahawa kastam sendiri dapat diberikan kuasa
 polis untuk menahan mereka yang dituduh untuk melakukan kesalahan ini. Untuk itu,
 kastam diberikan kuasa..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1200,Tuan Muhamad Zahid bin Md. Arip,Yang Berhormat?
+Bacaan Kali Yang Kedua dan Ketiga",,■1200,1200,Tuan Muhamad Zahid bin Md. Arip,Yang Berhormat?
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1200,Datuk Abd Rahim bin Bakri,"...Untuk membolehkan mereka mendapat kuasa
+Bacaan Kali Yang Kedua dan Ketiga",,■1200,1200,Datuk Abd Rahim bin Bakri,"...Untuk membolehkan mereka mendapat kuasa
 ini."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1200,Tuan Muhamad Zahid bin Md. Arip,"Boleh saya mencelah sikit, Yang
+Bacaan Kali Yang Kedua dan Ketiga",,■1200,1200,Tuan Muhamad Zahid bin Md. Arip,"Boleh saya mencelah sikit, Yang
 Berhormat?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1200,Datuk Abd Rahim bin Bakri,Ya.
+Bacaan Kali Yang Kedua dan Ketiga",,■1200,1200,Datuk Abd Rahim bin Bakri,Ya.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1200,Tuan Muhamad Zahid bin Md. Arip,"Saya minta supaya pihak kastam fokus
+Bacaan Kali Yang Kedua dan Ketiga",,■1200,1200,Tuan Muhamad Zahid bin Md. Arip,"Saya minta supaya pihak kastam fokus
 kepada tugas, tugas dengan mengutip cukai, membuat rampasan, bukan untuk- untuk
 menahan ini, saya rasa kastam kena kaji baliklah peranan dia.
 Sekian, terima kasih Yang Berhormat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1200,Datuk Abd Rahim bin Bakri,"Terima kasih Yang Berhormat Senator. Seperti
+Bacaan Kali Yang Kedua dan Ketiga",,■1200,1200,Datuk Abd Rahim bin Bakri,"Terima kasih Yang Berhormat Senator. Seperti
 mana yang saya katakan tadi, bahawa ini adalah berkait dengan masalah yang wujud
 pada ketika ini kerana jenayah semakin bertambah. Disebabkan itu pihak polis terpaksa
 menghadapi banyak kes di mana mereka juga terpaksa berhadapan dengan- untuk
@@ -1496,7 +1496,7 @@ memastikan bahawa Pegawai-pegawai Kastam kita dapat melaksanakan
 tanggungjawabnya dengan berkesan adalah amat dihargai. Itu sahaja, Ahli-ahli Yang
 Berhormat Senator. Sekian dan terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1200,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Timbalan
+Bacaan Kali Yang Kedua dan Ketiga",,■1200,1200,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Timbalan
 Menteri Datuk Abd Rahim bin Bakri, Timbalan Menteri Kewangan. Saya juga
 mengucapkan terima kasih kepada Ahli-ahli Yang Berhormat Senator yang telah
 mengambil bahagian.
@@ -1504,37 +1504,37 @@ Ahli-ahli Yang Berhormat, sekarang saya kemukakan masalah kepada Majlis
 bagi diputuskan. Masalahnya ialah bahawa rang undang-undang ini dibacakan kali yang
 kedua sekarang."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1200,ANNOTATION,[Masalah dikemukakan bagi diputuskan; dan disetujukan]
+Bacaan Kali Yang Kedua dan Ketiga",,■1200,1200,ANNOTATION,[Masalah dikemukakan bagi diputuskan; dan disetujukan]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1200,ANNOTATION,"[Rang undang-undang dibacakan kali yang kedua dan diserahkan kepada
+Bacaan Kali Yang Kedua dan Ketiga",,■1200,1200,ANNOTATION,"[Rang undang-undang dibacakan kali yang kedua dan diserahkan kepada
 Dewan sebagai Jawatankuasa]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1200,ANNOTATION,[Majlis bersidang dalam Jawatankuasa]
+Bacaan Kali Yang Kedua dan Ketiga",,■1200,1200,ANNOTATION,[Majlis bersidang dalam Jawatankuasa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1200,ANNOTATION,[Timbalan Yang di-Pertua mempengerusikan Jawatankuasa]
+Bacaan Kali Yang Kedua dan Ketiga",,■1200,1200,ANNOTATION,[Timbalan Yang di-Pertua mempengerusikan Jawatankuasa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1200,ANNOTATION,[Fasal-fasal dikemukakan kepada Jawatankuasa]
+Bacaan Kali Yang Kedua dan Ketiga",,■1200,1200,ANNOTATION,[Fasal-fasal dikemukakan kepada Jawatankuasa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1200,ANNOTATION,"[Fasal-fasal 1 hingga 6 diperintahkan jadi sebahagian daripada rang undang-
+Bacaan Kali Yang Kedua dan Ketiga",,■1200,1200,ANNOTATION,"[Fasal-fasal 1 hingga 6 diperintahkan jadi sebahagian daripada rang undang-
 undang]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1200,ANNOTATION,[Rang undang-undang dimaklumkan kepada Majlis sekarang]
+Bacaan Kali Yang Kedua dan Ketiga",,■1200,1200,ANNOTATION,[Rang undang-undang dimaklumkan kepada Majlis sekarang]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1200,ANNOTATION,[Majlis Mesyuarat bersidang semula]
+Bacaan Kali Yang Kedua dan Ketiga",,■1200,1200,ANNOTATION,[Majlis Mesyuarat bersidang semula]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KASTAM (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1200,ANNOTATION,"[Rang undang-undang dilaporkan dengan tidak ada pindaan; dibacakan kali
+Bacaan Kali Yang Kedua dan Ketiga",,■1200,1200,ANNOTATION,"[Rang undang-undang dilaporkan dengan tidak ada pindaan; dibacakan kali
 yang ketiga, disokong oleh Timbalan Menteri Perpaduan Negara (Dato’ Sri Ti Lian Ker)
 dan diluluskan]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG EKSAIS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1212,Timbalan Menteri Kewangan I [Datuk Abd Rahim bin Bakri],"Tuan Yang di-
+Bacaan Kali Yang Kedua dan Ketiga",,12.12 tgh.,1212,Timbalan Menteri Kewangan I [Datuk Abd Rahim bin Bakri],"Tuan Yang di-
 Pertua, saya mohon mencadangkan suatu akta untuk meminda Akta Eksais 1976
 dicadangkan kali kedua sekarang.
 Tuan Yang di-Pertua, Rang Undang-undang Eksais (Pindaan) 2020 yang
 dicadangkan adalah bagi meminda Akta Eksais 1976"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG EKSAIS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1212,ANNOTATION,[Akta 176]
+Bacaan Kali Yang Kedua dan Ketiga",,12.12 tgh.,1212,ANNOTATION,[Akta 176]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG EKSAIS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1212,Timbalan Menteri Kewangan I [Datuk Abd Rahim bin Bakri],". Pindaan yang
+Bacaan Kali Yang Kedua dan Ketiga",,12.12 tgh.,1212,Timbalan Menteri Kewangan I [Datuk Abd Rahim bin Bakri],". Pindaan yang
 dilaksanakan dalam akta ini adalah merupakan pindaan susulan atau *consequential
 amendment* daripada Akta Kastam 1967 yang dicadangkan. Saya mohon untuk
 menguraikan setiap fasal dalam rang undang-undang ini yang mempunyai enam fasal.
@@ -1563,16 +1563,16 @@ provokasi untuk digunakan dalam satu pertuduhan di bawah akta dan pindaan yang t
 dinyatakan secara khusus adalah pindaan bersifat kecil atau *consequential in nature.*
 Tuan Yang di-Pertua, saya mohon mencadangkan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG EKSAIS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1212,Timbalan Yang di-Pertua,Ada sesiapa yang menyokong.
+Bacaan Kali Yang Kedua dan Ketiga",,12.12 tgh.,1212,Timbalan Yang di-Pertua,Ada sesiapa yang menyokong.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG EKSAIS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1212,Timbalan Menteri Perdagangan Antarabangsa dan Industri [Datuk Lim Ban Hong],"Tuan Yang di-Pertua, saya mohon untuk menyokong."
+Bacaan Kali Yang Kedua dan Ketiga",,12.12 tgh.,1212,Timbalan Menteri Perdagangan Antarabangsa dan Industri [Datuk Lim Ban Hong],"Tuan Yang di-Pertua, saya mohon untuk menyokong."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG EKSAIS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1212,Timbalan Yang di-Pertua,"Ahli-ahli Yang Berhormat, masalah di hadapan
+Bacaan Kali Yang Kedua dan Ketiga",,12.12 tgh.,1212,Timbalan Yang di-Pertua,"Ahli-ahli Yang Berhormat, masalah di hadapan
 Majlis ialah rang undang-undang bernama suatu akta untuk meminda Akta Eksais 1976
 dibacakan kali kedua sekarang dan terbuka untuk dibahas. Saya menjemput Yang
 Berhormat Senator Dato' Kesavadas A. Achyuthan Nair."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG EKSAIS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1216,Dato' Kesavadas A. Achyuthan Nair,"Terima kasih Tuan Yang di-Pertua untuk
+Bacaan Kali Yang Kedua dan Ketiga",,12.16 tgh.,1216,Dato' Kesavadas A. Achyuthan Nair,"Terima kasih Tuan Yang di-Pertua untuk
 memberi laluan kepada saya, untuk berbahas untuk Rang Undang-undang Eksais
 (Pindaan) 2020. Pindaan terhadap eksais 1976 susulan daripada pindaan terhadap Akta
 Kastam 1967. Isu-isu adalah lebih kurang sama dengan Akta Kastam yang telah
@@ -1592,11 +1592,11 @@ keterangan dalam perbicaraan dalam mahkamah. Dengan pindaan itu, pihak kastam
 tidak perlu bergantung sepenuhnya kepada maklumat oleh pemberi maklumat.
 Sekian terima kasih. Saya mohon menyokong. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG EKSAIS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1216,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator Dato'
+Bacaan Kali Yang Kedua dan Ketiga",,12.16 tgh.,1216,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator Dato'
 Kesavadas A. Achyuthan Nair. Sekarang saya menjemput Yang Berhormat Senator
 Dato' Wira Othman bin Aziz."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG EKSAIS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1219,Dato' Wira Othman bin Aziz,"Terima kasih Tuan Yang di-Pertua, terima kasih-
+Bacaan Kali Yang Kedua dan Ketiga",,12.19 tgh.,1219,Dato' Wira Othman bin Aziz,"Terima kasih Tuan Yang di-Pertua, terima kasih-
 *Assalamualaikum* sekali lagi kepada semua. Saya juga hendak rakamkan penghargaan
 atas ruang yang diberikan sedikit untuk berbahas pindaan Akta Eksais ini.
 Kita tahu bahawa Akta Kastam dan juga Akta Eksais ini merangkumi urusan-
@@ -1605,7 +1605,7 @@ urusan berkaitan dengan kutipan hasil kepada negara. Daripada laporan ekonomi ta
 average* atau lebih kurang 21 peratus melibatkan sekitar RM300 bilion yang hilang dalam
 pasaran gelap."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG EKSAIS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1220,Dato' Wira Othman bin Aziz,"Kemudian mengikut laporan tersebut, antara tahun 1990 sehingga 2019,
+Bacaan Kali Yang Kedua dan Ketiga",,■1220,1220,Dato' Wira Othman bin Aziz,"Kemudian mengikut laporan tersebut, antara tahun 1990 sehingga 2019,
 *average-*nya 33.7 peratus. Tertinggi adalah antara tahun 1990 hingga 1999 iaitu 50
 peratus, tahun 2001 hingga 2009 iaitu 30 peratus, tahun 2010 hingga 2019 iaitu 21
 peratus dan tahun 2019 ini sehingga separuh penggal pertama tahun 2019 iaitu sekitar
@@ -1665,11 +1665,11 @@ undang-undang.
 Jadi, saya mohon menyokong atas rang undang-undang ini. Sekian, terima
 kasih. *Assalamualaikum warahmatullahi wabarakatuh.*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG EKSAIS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1220,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator Dato’
+Bacaan Kali Yang Kedua dan Ketiga",,■1220,1220,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator Dato’
 Wira Othman bin Aziz. Seterusnya saya menjemput Yang Berhormat Senator Tuan
 Aknan a/l Ehtook."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG EKSAIS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1225,Tuan Aknan a/l Ehtook,"Terima kasih Tuan Yang di-Pertua. Terima kasih
+Bacaan Kali Yang Kedua dan Ketiga",,12.25 tgh.,1225,Tuan Aknan a/l Ehtook,"Terima kasih Tuan Yang di-Pertua. Terima kasih
 kerana memberikan ruang kepada saya pada hari ini.
 Kita membincangkan tentang pindaan Akta Eksais 1976. Banyak yang
 diperkatakan dalam cadangan ini tetapi tumpuannya adalah pada pindaan tentang kuasa
@@ -1695,20 +1695,20 @@ Jadi, pihak jabatan tolong pastikan bahawa mereka yang diberikan amanah
 untuk menjalankan tugas ini dibuat secara terbaik. Sekiranya ada sistem untuk- tadi kata
 apa? *Check and balance?...*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG EKSAIS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1225,ANNOTATION,[Disampuk]
+Bacaan Kali Yang Kedua dan Ketiga",,12.25 tgh.,1225,ANNOTATION,[Disampuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG EKSAIS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1225,Tuan Aknan a/l Ehtook,"Semak dan imbang tadi itu, pastikanlah ia ada
+Bacaan Kali Yang Kedua dan Ketiga",,12.25 tgh.,1225,Tuan Aknan a/l Ehtook,"Semak dan imbang tadi itu, pastikanlah ia ada
 untuk memastikan bahawa semua yang kita buat ini berjalan lancar dan pindaan ini
 dibuat dengan membolehkan pihak kastam melakukan tugas yang diamanahkan.
 Saya tidak mahu bercerita panjang. Dengan ini, saya mohon menyokong.
 Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG EKSAIS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1225,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator Tuan
+Bacaan Kali Yang Kedua dan Ketiga",,12.25 tgh.,1225,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator Tuan
 Aknan a/l Ehtook.
 Seterusnya saya menjemput Yang Berhormat Senator Dato’ Seri Haji Mohamad
 Apandi bin Mohamad."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG EKSAIS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1228,Dato’ Seri Haji Mohamad Apandi bin Mohamad,"Terima kasih.
+Bacaan Kali Yang Kedua dan Ketiga",,12.28 tgh.,1228,Dato’ Seri Haji Mohamad Apandi bin Mohamad,"Terima kasih.
 *Assalamualaikum warahmatullahi wabarakatuh* dan salam sejahtera Tuan Yang di-
 Pertua dan sahabat-sahabat Senator sekalian.
 Jadi hari ini kita dibentangkan untuk pindaan rang undang-undang DR.20/2020
@@ -1730,7 +1730,7 @@ Antara perkara-perkara yang terlibat dalam item tersebut ialah minuman
 bergula, *carbonated drink, insya-Allah.* Kedua, minuman keras. Ketiga, rokok, tembakau
 dan cerut. Belum lagi dimasukkan *vape.*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG EKSAIS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1230,Dato’ Seri Haji Mohamad Apandi bin Mohamad,"Sepatutnya sudah kena masuk *vape* sudah, dalam pindaan undang-undang ini
+Bacaan Kali Yang Kedua dan Ketiga",,■1230,1230,Dato’ Seri Haji Mohamad Apandi bin Mohamad,"Sepatutnya sudah kena masuk *vape* sudah, dalam pindaan undang-undang ini
 *vape* sudah patut kena masuk sudah. Tembakau, cerut dan *vape* patut kena ada sudah-
 tapi tidak ada.
 Ketiga *Mahjong tiles* dan yang keempat- daun terup; yang ke seterusnya
@@ -1738,9 +1738,9 @@ kenderaan bermotor. Jadi kalau dari sudut pandangan Islam, kebanyakan benda ini
 benda yang berbahaya kalau saya tidak silap kecuali kenderaan bermotorlah. Jadi, saya
 pun hendak baca firman Allah SWT yang berbunyi..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG EKSAIS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1230,ANNOTATION,[Membaca sepotong ayat Al-Quran]
+Bacaan Kali Yang Kedua dan Ketiga",,■1230,1230,ANNOTATION,[Membaca sepotong ayat Al-Quran]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG EKSAIS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1230,Dato’ Seri Haji Mohamad Apandi bin Mohamad,"Janganlah kamu mencampakkan diri kamu kepada kebinasaan.
+Bacaan Kali Yang Kedua dan Ketiga",,■1230,1230,Dato’ Seri Haji Mohamad Apandi bin Mohamad,"Janganlah kamu mencampakkan diri kamu kepada kebinasaan.
 Jadi, saya bab ini mungkin agak sedikit berbeza dengan sahabat-sahabat
 sekalian. Saya sebagai seorang usahawan, *businessman,* umur 24 tahun itu saya sudah
 buat *business* sudah, *grad* universiti UTM terus *business.* Saya *particular* dengan
@@ -1776,9 +1776,9 @@ dijangkakan berkurangan seperti mana dibaca oleh Yang Berhormat Timbalan Menteri
 kedua-dua tadi, oleh sebab isu COVID-19 dan kita jangka bagi saya, kalau saya tengok
 daripada perbincangan saya dengan teman-teman perniagaan hasil kita..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG EKSAIS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1230,Timbalan Yang di-Pertua,"Ya, boleh terus."
+Bacaan Kali Yang Kedua dan Ketiga",,■1230,1230,Timbalan Yang di-Pertua,"Ya, boleh terus."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG EKSAIS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1230,Dato’ Seri Haji Mohamad Apandi bin Mohamad,"Okey, okeylah, tidak apalah,
+Bacaan Kali Yang Kedua dan Ketiga",,■1230,1230,Dato’ Seri Haji Mohamad Apandi bin Mohamad,"Okey, okeylah, tidak apalah,
 Yang Berhormat Timbalan Menteri cuma beginilah, asas tiga-tiga rang undang-undang
 ini sama sahaja. Baik daripada kastam, eksais dan zon bebas. Cuma kita cari mekanisme
 lah, macam kata Yang Berhormat Senator Dato’ Haji Jefridin bin Haji Atan, ada
@@ -1790,11 +1790,11 @@ kepada sebanyak RM150 bilion pun *alhamdulillah*. Banyaklah kita dapat manfaat p
 hari ini. Boleh jadi naik macam-macam. *Wallahuaklam. Assalamualaikum warahmatullahi
 wabarakatuh*."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG EKSAIS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1230,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator Dato’
+Bacaan Kali Yang Kedua dan Ketiga",,■1230,1230,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator Dato’
 Seri Haji Mohamad Apandi bin Mohamad. Saya jemput Yang Berhormat Timbalan
 Menteri untuk memberi jawapan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG EKSAIS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1234,Timbalan Menteri Kewangan I [Datuk Abd Rahim bin Bakri],"Terima kasih
+Bacaan Kali Yang Kedua dan Ketiga",,12.34 tgh.,1234,Timbalan Menteri Kewangan I [Datuk Abd Rahim bin Bakri],"Terima kasih
 Tuan Yang di-Pertua di atas penyertaan dan juga kepada semua Ahli-ahli Yang
 Berhormat yang telah terlibat dalam perbahasan sebentar tadi berkait dengan pindaan
 Akta Eksais yang saya telah bentangkan dan saya percaya dengan pindaan ini seperti
@@ -1847,21 +1847,21 @@ GST itu tidak dapat dilaksanakan dengan baik. Misalnya, isu-isu berkaitan dengan
 dan sebagainya dan perkara-perkara sebegini perlu diambil perhatian dan begitu juga
 kesannya terhadap IHP ataupun Indeks Harga Pengguna..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG EKSAIS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1234,Dato’ Seri Haji Mohamad Apandi bin Mohamad,
+Bacaan Kali Yang Kedua dan Ketiga",,12.34 tgh.,1234,Dato’ Seri Haji Mohamad Apandi bin Mohamad,
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG EKSAIS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1234,ANNOTATION,[Bangun]
+Bacaan Kali Yang Kedua dan Ketiga",,12.34 tgh.,1234,ANNOTATION,[Bangun]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG EKSAIS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1234,Datuk Abd Rahim bin Bakri,"Perkara-perkara ini sekiranya kita dapat atasi
+Bacaan Kali Yang Kedua dan Ketiga",,12.34 tgh.,1234,Datuk Abd Rahim bin Bakri,"Perkara-perkara ini sekiranya kita dapat atasi
 dengan kerjasama semua rakyat Malaysia, saya percaya kita akan dapat mengembalikan
 semula tetapi dalam keadaan di mana rakyat benar-benar bersedia dan memberikan
 sokongan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG EKSAIS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1234,Dato’ Seri Haji Mohamad Apandi bin Mohamad,"Maaf, mohon penjelasan
+Bacaan Kali Yang Kedua dan Ketiga",,12.34 tgh.,1234,Dato’ Seri Haji Mohamad Apandi bin Mohamad,"Maaf, mohon penjelasan
 Yang Berhormat Timbalan Menteri."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG EKSAIS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1234,Datuk Abd Rahim bin Bakri,Ya.
+Bacaan Kali Yang Kedua dan Ketiga",,12.34 tgh.,1234,Datuk Abd Rahim bin Bakri,Ya.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG EKSAIS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1234,Dato’ Seri Haji Mohamad Apandi bin Mohamad,"Saya menyokong apa yang
+Bacaan Kali Yang Kedua dan Ketiga",,12.34 tgh.,1234,Dato’ Seri Haji Mohamad Apandi bin Mohamad,"Saya menyokong apa yang
 diuar-uarkan, diutarakan oleh sahabat saya Yang Berhormat Senator Dato’ Othman bin
 Aziz. Kerajaan, saya rasa lima tahun dia buat *planning* untuk *trained* Pegawai-pegawai
 Kastam ini untuk isu GST. Jadi, dan kutipan GST ini hampir satu kali ganda bila
@@ -1869,16 +1869,16 @@ berbanding dengan kutipan *Sales Tax* saja campur dengan *Service Tax* dan darip
 praktis yang kita sudah buat itu atau amalan kita, ada nampak kesan tidak kepada
 kenaikan harga barang."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG EKSAIS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1240,Dato’ Seri Haji Mohamad Apandi bin Mohamad,"Hal ini kerana GST ini sukar untuk mana-mana pihak lari daripada cukai. Jadi
+Bacaan Kali Yang Kedua dan Ketiga",,■1240,1240,Dato’ Seri Haji Mohamad Apandi bin Mohamad,"Hal ini kerana GST ini sukar untuk mana-mana pihak lari daripada cukai. Jadi
 kita boleh mengurangkan kadar *black economy*. Ada di mana *loophole*, kalau boleh
 cerita? Kerana sekarang ini persatuan-persatuan akauntan negara baru bermesyuarat
 agung, memang dia mencadangkan GST balik. Sebab itu 94 buah negara besar-besar
 dunia semua praktis GST ini. Minta mohon penjelasan sikit Yang Berhormat Timbalan
 Menteri."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG EKSAIS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1240,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
+Bacaan Kali Yang Kedua dan Ketiga",,■1240,1240,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG EKSAIS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1240,Datuk Abd Rahim bin Bakri,"Terima kasih Yang Berhormat. Seperti mana
+Bacaan Kali Yang Kedua dan Ketiga",,■1240,1240,Datuk Abd Rahim bin Bakri,"Terima kasih Yang Berhormat. Seperti mana
 yang saya nyatakan sebentar tadi bahawa memang GST ini adalah merupakan
 *comprehensive consumer tax* yang sudah tentulah memberikan pulangan yang lebih
 tinggi kepada kerajaan. Akan tetapi dalam masa yang sama, ada juga seperti mana yang
@@ -1898,7 +1898,7 @@ apabila ia melibatkan *multi-tier,* maka banyak pihak yang terkena dan apabila m
 tidak mendapat pulangan ataupun *refund tax* itu dengan cepat, maka isu-isu berkaitan
 dengan kenaikan IHP itu sedikit sebanyak tidak dapat dielakkan. Sila."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG EKSAIS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1240,Dato’ Wira Othman bin Aziz,"Mohon pencelahan. Tuan Yang di-Pertua, mohon
+Bacaan Kali Yang Kedua dan Ketiga",,■1240,1240,Dato’ Wira Othman bin Aziz,"Mohon pencelahan. Tuan Yang di-Pertua, mohon
 pencelahan sedikit. Yang Berhormat Timbalan Menteri bersetuju atau tidak, kita
 hapuskan GST, maknanya Malaysia ini menghapuskan GST kerana penyataan populis?
 Kita sedar masa kita memperkenalkan GST tahun pertama dan tahun kedua, biasalah
@@ -1910,9 +1910,9 @@ Akhir sekali, yang penting ialah ekonomi negara *suffers.* Ini isunya. Jadi, kit
 supaya kerajaan melihat semula kerana pengenalan SST balik ini pun bukanlah
 menurunkan harga barang sangat, malahan barang makin naik. Ini isunya. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG EKSAIS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1240,Tuan Yang di-Pertua,Sila.
+Bacaan Kali Yang Kedua dan Ketiga",,■1240,1240,Tuan Yang di-Pertua,Sila.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG EKSAIS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1240,Datuk Abd Rahim bin Bakri,"Terima kasih sahabat saya. Sepertimana yang
+Bacaan Kali Yang Kedua dan Ketiga",,■1240,1240,Datuk Abd Rahim bin Bakri,"Terima kasih sahabat saya. Sepertimana yang
 saya nyatakan sebentar tadi bahawa sememangnya kerajaan mengambil pengalaman
 daripada apa yang telah dilaksanakan sebelum ini dan akan membuat kajian-kajian yang
 lebih terperinci.
@@ -1972,41 +1972,41 @@ lebih berkesan dan kita akan mendapat faedah daripada pindaan akta ini dan pegaw
 pegawai penguat kuasa kita akan berkesan untuk memungut hasil bagi pihak kerajaan.
 Terima kasih Tuan Yang di-Pertua."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG EKSAIS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1240,Tuan Yang di-Pertua,"Yang Berhormat para Senator, sekarang saya
+Bacaan Kali Yang Kedua dan Ketiga",,■1240,1240,Tuan Yang di-Pertua,"Yang Berhormat para Senator, sekarang saya
 kemukakan masalah kepada Majlis bagi diputuskan. Masalahnya ialah bahawa rang
 undang-undang ini dibacakan kali yang kedua sekarang."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG EKSAIS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1240,ANNOTATION,[Masalah dikemukakan bagi diputuskan; dan disetujukan]
+Bacaan Kali Yang Kedua dan Ketiga",,■1240,1240,ANNOTATION,[Masalah dikemukakan bagi diputuskan; dan disetujukan]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG EKSAIS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1240,ANNOTATION,"[Rang undang-undang dibacakan kali yang kedua dan diserahkan kepada
+Bacaan Kali Yang Kedua dan Ketiga",,■1240,1240,ANNOTATION,"[Rang undang-undang dibacakan kali yang kedua dan diserahkan kepada
 Dewan sebagai Jawatankuasa]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG EKSAIS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1240,ANNOTATION,[Majlis bersidang dalam Jawatankuasa]
+Bacaan Kali Yang Kedua dan Ketiga",,■1240,1240,ANNOTATION,[Majlis bersidang dalam Jawatankuasa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG EKSAIS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1240,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Jawatankuasa]
+Bacaan Kali Yang Kedua dan Ketiga",,■1240,1240,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Jawatankuasa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG EKSAIS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1240,ANNOTATION,[Fasal-fasal dikemukakan kepada Jawatankuasa]
+Bacaan Kali Yang Kedua dan Ketiga",,■1240,1240,ANNOTATION,[Fasal-fasal dikemukakan kepada Jawatankuasa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG EKSAIS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1240,ANNOTATION,"[Fasal-fasal 1 hingga 6 diperintahkan jadi sebahagian daripada rang undang-
+Bacaan Kali Yang Kedua dan Ketiga",,■1240,1240,ANNOTATION,"[Fasal-fasal 1 hingga 6 diperintahkan jadi sebahagian daripada rang undang-
 undang]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG EKSAIS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1240,ANNOTATION,[Rang undang-undang dimaklumkan kepada Majlis sekarang]
+Bacaan Kali Yang Kedua dan Ketiga",,■1240,1240,ANNOTATION,[Rang undang-undang dimaklumkan kepada Majlis sekarang]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG EKSAIS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1240,ANNOTATION,[Majlis Mesyuarat bersidang semula]
+Bacaan Kali Yang Kedua dan Ketiga",,■1240,1240,ANNOTATION,[Majlis Mesyuarat bersidang semula]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG EKSAIS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1240,ANNOTATION,"[Rang undang-undang dilaporkan dengan tidak ada pindaan; dibacakan kali
+Bacaan Kali Yang Kedua dan Ketiga",,■1240,1240,ANNOTATION,"[Rang undang-undang dilaporkan dengan tidak ada pindaan; dibacakan kali
 yang ketiga, disokong oleh Timbalan Menteri Perdagangan Antarabangsa dan Industri
 (Datuk Lim Ban Hong) dan diluluskan]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ZON BEBAS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1253,Timbalan Menteri Kewangan I [Datuk Abd Rahim bin Bakri],"Tuan Yang di-
+Bacaan Kali Yang Kedua dan Ketiga",,12.53 tgh.,1253,Timbalan Menteri Kewangan I [Datuk Abd Rahim bin Bakri],"Tuan Yang di-
 Pertua, saya mohon mencadangkan suatu akta untuk meminda Akta Zon Bebas 1990
 dibacakan kali kedua sekarang.
 Tuan Yang di-Pertua, Rang Undang-undang Zon Bebas (Pindaan) 2020 yang
 dicadangkan adalah bagi meminda Akta Zon Bebas 1990"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ZON BEBAS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1253,ANNOTATION,[Akta 438]
+Bacaan Kali Yang Kedua dan Ketiga",,12.53 tgh.,1253,ANNOTATION,[Akta 438]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ZON BEBAS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1253,Timbalan Menteri Kewangan I [Datuk Abd Rahim bin Bakri],"iaitu pindaan yang
+Bacaan Kali Yang Kedua dan Ketiga",,12.53 tgh.,1253,Timbalan Menteri Kewangan I [Datuk Abd Rahim bin Bakri],"iaitu pindaan yang
 dilaksanakan dalam akta ini adalah merupakan pindaan susulan ataupun *consequential
 amendment* daripada pindaan Akta Kastam 1967 yang dicadangkan. Saya mohon untuk
 menghuraikan fasal dalam rang undang-undang ini yang mempunyai empat fasal.
@@ -2031,14 +2031,14 @@ Pindaan yang lain dinyatakan secara khusus adalah pindaan bersifat kecil atau
 *consequential in nature*.
 Tuan Yang di-Pertua, saya mohon mencadangkan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ZON BEBAS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1253,Timbalan Menteri Perdagangan Antarabangsa dan Industri [Datuk Lim Ban Hong],"Tuan Yang di-Pertua, saya mohon untuk menyokong."
+Bacaan Kali Yang Kedua dan Ketiga",,12.53 tgh.,1253,Timbalan Menteri Perdagangan Antarabangsa dan Industri [Datuk Lim Ban Hong],"Tuan Yang di-Pertua, saya mohon untuk menyokong."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ZON BEBAS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1253,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat Senator, masalah di hadapan
+Bacaan Kali Yang Kedua dan Ketiga",,12.53 tgh.,1253,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat Senator, masalah di hadapan
 Majlis ialah rang undang-undang bernama suatu akta untuk meminda Akta Zon Bebas
 1990 dibacakan kali yang kedua sekarang dan terbuka untuk dibahas. Silakan Yang
 Berhormat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ZON BEBAS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1255,Datuk Razali bin Idris,"*Assalamualaikum warahmatullahi wabarakatuh.
+Bacaan Kali Yang Kedua dan Ketiga",,12.55 tgh.,1255,Datuk Razali bin Idris,"*Assalamualaikum warahmatullahi wabarakatuh.
 Bismillahi Rahmani Rahim.* Terima kasih Tuan Yang di-Pertua kerana memberi ruang
 kepada saya untuk berbahas Rang Undang-undang Zon Bebas Cukai (Pindaan) 2020.
 Terima kasih dan kita tahu, maklum, Zon Bebas Cukai ini sebuah kawasan yang
@@ -2080,10 +2080,10 @@ Fokus utama sekarang membantu perniagaan untuk kembali berdiri sehingga mereka
 dapat memberi sumbangan positif untuk membangun semula ekonomi negara. Tuan
 Yang di-Pertua, terima kasih. Saya menyokong."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ZON BEBAS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1255,Tuan Yang di-Pertua,"Terima kasih. Dijemput Yang Berhormat Senator Tuan
+Bacaan Kali Yang Kedua dan Ketiga",,12.55 tgh.,1255,Tuan Yang di-Pertua,"Terima kasih. Dijemput Yang Berhormat Senator Tuan
 Aknan a/l Ehtook."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ZON BEBAS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1300,Tuan Aknan a/l Ehtook,"Terima kasih Tuan Yang di-Pertua. Untuk akta ini
+Bacaan Kali Yang Kedua dan Ketiga",,1.00 tgh.,1300,Tuan Aknan a/l Ehtook,"Terima kasih Tuan Yang di-Pertua. Untuk akta ini
 sebab kita sudah macam pengulangan kepada semua perkara tadi. Saya hendak tanya
 satu perkara sahaja ataupun mencadangkan- adakah kerajaan bercadang untuk
 memperkenalkan cukai kalau di zon bebas itu untuk tempoh tertentu akan dapat bebas
@@ -2101,13 +2101,13 @@ kerajaan dan juga pengguna. *So*, saya mohon mencadangkan, dan juga bertanya,
 adakah kerajaan bercadang untuk berbuat demikian? Terima kasih. Dan saya mohon
 menyokong."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ZON BEBAS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1300,Tuan Yang di-Pertua,"Terima kasih. Saya beri peluang kepada Yang
+Bacaan Kali Yang Kedua dan Ketiga",,1.00 tgh.,1300,Tuan Yang di-Pertua,"Terima kasih. Saya beri peluang kepada Yang
 Berhormat Senator yang ingin mendebatkan atau bertanya soalan. Sila Yang Berhormat
 Senator."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ZON BEBAS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1300,Dato’ Kesavadas A. Achyuthan Nair,Tuan Yang di-Pertua.
+Bacaan Kali Yang Kedua dan Ketiga",,1.00 tgh.,1300,Dato’ Kesavadas A. Achyuthan Nair,Tuan Yang di-Pertua.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ZON BEBAS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1302,Datuk Haji Ismail bin Ibrahim,"*Assalamualaikum warahmatullahi wabarakatuh*
+Bacaan Kali Yang Kedua dan Ketiga",,1.02 tgh.,1302,Datuk Haji Ismail bin Ibrahim,"*Assalamualaikum warahmatullahi wabarakatuh*
 dan salam sejahtera. Terima kasih Tuan Yang di-Pertua. Isu yang dibangkitkan dalam
 pindaan ini iaitu meminda suatu kuasa Akta Zon Bebas (Pindaan) 2020 untuk memberi
 kuasa tambahan yang mempunyai segala kuasa polis kepada Pegawai Kastam yang
@@ -2123,10 +2123,10 @@ bersepadu melalui kerjasama tindikkan ini mampu membanteras jenayah penyeludupan
 barangan haram dan salah di sisi undang-undang yang mengancam negara. Terima
 kasih Tuan Yang di-Pertua."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ZON BEBAS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1302,Tuan Yang di-Pertua,"Terima kasih. Silakan Yang Berhormat Senator Dato’
+Bacaan Kali Yang Kedua dan Ketiga",,1.02 tgh.,1302,Tuan Yang di-Pertua,"Terima kasih. Silakan Yang Berhormat Senator Dato’
 Kesavadas A. Achyuthan Nair."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ZON BEBAS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1303,Dato’ Kesavadas A. Achyuthan Nair,"Terima kasih Tuan Yang di-Pertua.
+Bacaan Kali Yang Kedua dan Ketiga",,1.03 tgh.,1303,Dato’ Kesavadas A. Achyuthan Nair,"Terima kasih Tuan Yang di-Pertua.
 Rang Undang-undang Zon Bebas (Pindaan) 2020, saya alu-alukan pemindaan kepada
 Akta Zon Bebas 1990. Mungkin sebelum ini kuasa yang diberikan kepada pihak Jabatan
 Kastam Diraja Malaysia tidak sama dengan yang diberikan kepada pihak polis di bawah
@@ -2135,9 +2135,9 @@ Adalah wajar Akta Zon Bebas 1990 dipinda dengan memasukkan seksyen
 baharu 17A dan 17B, dalam Akta 438, bagi menambah kuasa kepada pegawai kanan
 kastam seperti diperuntukkan di bawah Kanun Tatacara Jenayah"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ZON BEBAS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1303,ANNOTATION,[Akta 593]
+Bacaan Kali Yang Kedua dan Ketiga",,1.03 tgh.,1303,ANNOTATION,[Akta 593]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ZON BEBAS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1303,Dato’ Kesavadas A. Achyuthan Nair,"berhubung
+Bacaan Kali Yang Kedua dan Ketiga",,1.03 tgh.,1303,Dato’ Kesavadas A. Achyuthan Nair,"berhubung
 penguatkuasaan, penyiasatan dan pemeriksaan.
 Justeru, memperuntukkan kuasa tambahan kepada pegawai kanan Jabatan
 Kastam Diraja untuk menjalankan penguatkuasaan, penyiasatan dan pemeriksaan
@@ -2157,26 +2157,26 @@ minggu? Ini akan menaikkan hasil negara dan Negeri Sembilan. Ini juga akan
 mengurangkan penyeludupan rokok-rokok dan barang-barang haram. Sekian, terima
 kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ZON BEBAS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1303,Tuan Yang di-Pertua,"Terima kasih, Yang Berhormat Senator Tuan
+Bacaan Kali Yang Kedua dan Ketiga",,1.03 tgh.,1303,Tuan Yang di-Pertua,"Terima kasih, Yang Berhormat Senator Tuan
 Balasubramaniam a/l Nachiappan. Tak ada? Yang Berhormat..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ZON BEBAS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1303,Tuan Ismail bin Yusop,Tuan Yang di-Pertua boleh saya?
+Bacaan Kali Yang Kedua dan Ketiga",,1.03 tgh.,1303,Tuan Ismail bin Yusop,Tuan Yang di-Pertua boleh saya?
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ZON BEBAS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1303,Tuan Yang di-Pertua,Sila.
+Bacaan Kali Yang Kedua dan Ketiga",,1.03 tgh.,1303,Tuan Yang di-Pertua,Sila.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ZON BEBAS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1303,Tuan Ismail bin Yusop,Terima kasih Tuan Yang di-Pertua.
+Bacaan Kali Yang Kedua dan Ketiga",,1.03 tgh.,1303,Tuan Ismail bin Yusop,Terima kasih Tuan Yang di-Pertua.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ZON BEBAS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1303,Tuan Yang di-Pertua,Lain yang diminta lain yang berdiri...
+Bacaan Kali Yang Kedua dan Ketiga",,1.03 tgh.,1303,Tuan Yang di-Pertua,Lain yang diminta lain yang berdiri...
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ZON BEBAS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1303,ANNOTATION,[Dewan Ketawa]
+Bacaan Kali Yang Kedua dan Ketiga",,1.03 tgh.,1303,ANNOTATION,[Dewan Ketawa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ZON BEBAS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1303,Tuan Ismail bin Yusop,Tengok tak ada orang ini
+Bacaan Kali Yang Kedua dan Ketiga",,1.03 tgh.,1303,Tuan Ismail bin Yusop,Tengok tak ada orang ini
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ZON BEBAS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1303,ANNOTATION,[Ketawa]
+Bacaan Kali Yang Kedua dan Ketiga",,1.03 tgh.,1303,ANNOTATION,[Ketawa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ZON BEBAS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1303,Tuan Yang di-Pertua,Ya lah tetapi nama tak tukar ya.
+Bacaan Kali Yang Kedua dan Ketiga",,1.03 tgh.,1303,Tuan Yang di-Pertua,Ya lah tetapi nama tak tukar ya.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ZON BEBAS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1306,Tuan Ismail bin Yusop,"Terima kasih Tuan Yang di-Pertua. Terima kasih
+Bacaan Kali Yang Kedua dan Ketiga",,1.06 tgh.,1306,Tuan Ismail bin Yusop,"Terima kasih Tuan Yang di-Pertua. Terima kasih
 kerana memberi saya peluang untuk turut sama mengambil bahagian dalam perbahasan
 Rang Undang-undang Zon Bebas (Pindaan) 2020.
 Saya terpanggil untuk turut sama bercakap mengenai rang undang-undang ini
@@ -2208,7 +2208,7 @@ yang akhirnya akan memberikan peluang supaya ekonomi domestik kita kembali ranca
 dan membolehkan mereka yang berkunjung ke kawasan zon bebas cukai ini mendapat
 barangan yang lebih terbaik."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ZON BEBAS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1310,Tuan Ismail bin Yusop,"Perkara kedua yang saya hendak bangkitkan Tuan Yang di-Pertua ialah di
+Bacaan Kali Yang Kedua dan Ketiga",,■1310,1310,Tuan Ismail bin Yusop,"Perkara kedua yang saya hendak bangkitkan Tuan Yang di-Pertua ialah di
 kawasan Zon Bebas Cukai Pulau Pangkor, kita lihat dia baru tetapi barangan yang ada
 di sana juga adalah sangat-sangat terhad dan apakah pihak agensi kastam mempunyai
 cadangan untuk melihat bagaimana supaya ada pertambahan produk yang
@@ -2217,15 +2217,15 @@ Jadi itu sahaja yang saya rasa hendak saya bangkitkan berkait dengan Rang
 Undang-undang Zon Bebas (Pindaan) 2020. Saya menyokong usul ini, Tuan Yang di-
 Pertua. Terima kasih kerana diberikan peluang untuk bercakap."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ZON BEBAS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1310,Tuan Yang di-Pertua,"Kembali, terima kasih. Yang Berhormat Senator Hajah
+Bacaan Kali Yang Kedua dan Ketiga",,■1310,1310,Tuan Yang di-Pertua,"Kembali, terima kasih. Yang Berhormat Senator Hajah
 Sabani binti Mat. Tidak ada. Ada lain Ahli Yang Berhormat hendak memberi pandangan,
 ulasan sebelum saya menjemput Yang Berhormat Timbalan Menteri?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ZON BEBAS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1310,Beberapa Ahli,Tidak ada.
+Bacaan Kali Yang Kedua dan Ketiga",,■1310,1310,Beberapa Ahli,Tidak ada.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ZON BEBAS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1310,Tuan Yang di-Pertua,Tiada. Silakan.
+Bacaan Kali Yang Kedua dan Ketiga",,■1310,1310,Tuan Yang di-Pertua,Tiada. Silakan.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ZON BEBAS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1311,Timbalan Menteri Kewangan I [Datuk Abd Rahim bin Bakri],"Terima kasih,
+Bacaan Kali Yang Kedua dan Ketiga",,1.11 tgh.,1311,Timbalan Menteri Kewangan I [Datuk Abd Rahim bin Bakri],"Terima kasih,
 Tuan Yang di-Pertua. Terima kasih kepada Ahli-ahli Yang Berhormat Senator yang telah
 terlibat dalam perbahasan meminda Akta Zon Bebas Cukai sepertimana yang telah
 dibahaskan oleh Ahli-ahli Yang Berhormat sebentar tadi.
@@ -2277,35 +2277,35 @@ adanya akta ini kita akan dapat meningkatkan keberkesanan penguatkuasaan Jabatan
 Kastam untuk memungut hasil dan menambah hasil kepada kerajaan. Terima kasih Ahli-
 ahli Yang Berhormat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ZON BEBAS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1311,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat para Senator, sekarang saya
+Bacaan Kali Yang Kedua dan Ketiga",,1.11 tgh.,1311,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat para Senator, sekarang saya
 kemukakan masalah kepada Majlis bagi diputuskan. Masalahnya ialah bahawa rang
 undang-undang ini dibacakan kali yang kedua sekarang."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ZON BEBAS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1311,ANNOTATION,[Masalah dikemukakan bagi diputuskan; dan disetujukan]
+Bacaan Kali Yang Kedua dan Ketiga",,1.11 tgh.,1311,ANNOTATION,[Masalah dikemukakan bagi diputuskan; dan disetujukan]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ZON BEBAS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1311,ANNOTATION,"[Rang undang-undang dibacakan kali yang kedua dan diserahkan kepada
+Bacaan Kali Yang Kedua dan Ketiga",,1.11 tgh.,1311,ANNOTATION,"[Rang undang-undang dibacakan kali yang kedua dan diserahkan kepada
 Dewan sebagai Jawatankuasa]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ZON BEBAS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1311,ANNOTATION,[Majlis bersidang dalam Jawatankuasa]
+Bacaan Kali Yang Kedua dan Ketiga",,1.11 tgh.,1311,ANNOTATION,[Majlis bersidang dalam Jawatankuasa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ZON BEBAS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1311,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Jawatankuasa]
+Bacaan Kali Yang Kedua dan Ketiga",,1.11 tgh.,1311,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Jawatankuasa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ZON BEBAS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1311,ANNOTATION,[Fasal-fasal dikemukakan kepada Jawatankuasa]
+Bacaan Kali Yang Kedua dan Ketiga",,1.11 tgh.,1311,ANNOTATION,[Fasal-fasal dikemukakan kepada Jawatankuasa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ZON BEBAS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1311,ANNOTATION,"[Fasal-fasal 1 hingga 4 diperintahkan jadi sebahagian daripada rang undang-
+Bacaan Kali Yang Kedua dan Ketiga",,1.11 tgh.,1311,ANNOTATION,"[Fasal-fasal 1 hingga 4 diperintahkan jadi sebahagian daripada rang undang-
 undang]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ZON BEBAS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1311,ANNOTATION,[Rang undang-undang dimaklumkan kepada Majlis sekarang]
+Bacaan Kali Yang Kedua dan Ketiga",,1.11 tgh.,1311,ANNOTATION,[Rang undang-undang dimaklumkan kepada Majlis sekarang]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ZON BEBAS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1311,ANNOTATION,[Majlis Mesyuarat bersidang semula]
+Bacaan Kali Yang Kedua dan Ketiga",,1.11 tgh.,1311,ANNOTATION,[Majlis Mesyuarat bersidang semula]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ZON BEBAS (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1311,ANNOTATION,"[Rang undang-undang dilaporkan dengan tidak ada pindaan; dibacakan kali
+Bacaan Kali Yang Kedua dan Ketiga",,1.11 tgh.,1311,ANNOTATION,"[Rang undang-undang dilaporkan dengan tidak ada pindaan; dibacakan kali
 yang ketiga, disokong oleh Menteri Kanan Pendidikan (Dr. Radzi bin Jidin) dan
 diluluskan]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1319,Timbalan Menteri Kewangan II [Tuan Mohd Shahar bin Abdullah],"*Bismillahi
+Bacaan Kali Yang Kedua dan Ketiga",,1.19 tgh.,1319,Timbalan Menteri Kewangan II [Tuan Mohd Shahar bin Abdullah],"*Bismillahi
 Rahmani Rahim. Assalamualaikum warahmatullahi wabarakatuh.* Tuan Yang di-Pertua,
 saya mohon mencadangkan iaitu rang undang-undang bernama suatu akta untuk
 meminda Akta Langkah-langkah Sementara Bagi Pembiayaan Kerajaan (Penyakit
@@ -2319,7 +2319,7 @@ sebanyak RM20 bilion yang boleh diringkaskan pecahannya seperti berikut."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1320,Timbalan Menteri Kewangan II [Tuan Mohd Shahar bin Abdullah],"Pertama, sebanyak RM14 bilion adalah bagi menampung pemberian Bantuan
+Bacaan Kali Yang Kedua dan Ketiga",,■1320,1320,Timbalan Menteri Kewangan II [Tuan Mohd Shahar bin Abdullah],"Pertama, sebanyak RM14 bilion adalah bagi menampung pemberian Bantuan
 Prihatin Nasional. Kedua, sebanyak RM4 bilion adalah bagi menampung perbelanjaan
 berkaitan dengan COVID-19. Ketiga Tuan Yang di-Pertua, sebanyak RM1.5 bilion adalah
 bagi menampung keperluan melanjutkan Program Subsidi Upah dan keempat, sebanyak
@@ -2351,15 +2351,15 @@ mohon mencadangkan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1320,Tuan Yang di-Pertua,Sesiapa menyokong?
+Bacaan Kali Yang Kedua dan Ketiga",,■1320,1320,Tuan Yang di-Pertua,Sesiapa menyokong?
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1320,Timbalan Menteri Perdagangan Antarabangsa dan Industri [Datuk Lim Ban Hong],"Tuan Yang di-Pertua, saya mohon untuk menyokong."
+Bacaan Kali Yang Kedua dan Ketiga",,■1320,1320,Timbalan Menteri Perdagangan Antarabangsa dan Industri [Datuk Lim Ban Hong],"Tuan Yang di-Pertua, saya mohon untuk menyokong."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1320,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat Senator, masalah di hadapan
+Bacaan Kali Yang Kedua dan Ketiga",,■1320,1320,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat Senator, masalah di hadapan
 Majlis ialah rang undang-undang bernama suatu akta untuk meminta Rang Undang-
 undang Langkah-Langkah Sementara bagi Pembiayaan Kerajaan (Penyakit Koronavirus
 2019 (COVID-19)) (Pindaan) 2020, dibacakan kali yang kedua sekarang dan terbuka
@@ -2367,32 +2367,32 @@ untuk dibahaskan. Sila Yang Berhormat..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1320,Dato’ Kesavadas A. Achyuthan Nair,Terima kasih Tuan Yang di-Pertua...
+Bacaan Kali Yang Kedua dan Ketiga",,■1320,1320,Dato’ Kesavadas A. Achyuthan Nair,Terima kasih Tuan Yang di-Pertua...
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1320,Dato’ Wira Othman bin Aziz,Terima kasih...
+Bacaan Kali Yang Kedua dan Ketiga",,■1320,1320,Dato’ Wira Othman bin Aziz,Terima kasih...
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1320,Tuan Yang di-Pertua,Ya?
+Bacaan Kali Yang Kedua dan Ketiga",,■1320,1320,Tuan Yang di-Pertua,Ya?
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1320,Dato’ Wira Othman bin Aziz,Yang manakah dulu Tuan Yang di-Pertua?
+Bacaan Kali Yang Kedua dan Ketiga",,■1320,1320,Dato’ Wira Othman bin Aziz,Yang manakah dulu Tuan Yang di-Pertua?
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1320,Tuan Yang di-Pertua,Yang Berhormat Senator Dato’ Wira Othman bin Aziz.
+Bacaan Kali Yang Kedua dan Ketiga",,■1320,1320,Tuan Yang di-Pertua,Yang Berhormat Senator Dato’ Wira Othman bin Aziz.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1320,Dato’ Kesavadas A. Achyuthan Nair,"Yang Berhormat Senator Dato’ Wira
+Bacaan Kali Yang Kedua dan Ketiga",,■1320,1320,Dato’ Kesavadas A. Achyuthan Nair,"Yang Berhormat Senator Dato’ Wira
 Othman bin Aziz."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1323,Dato’ Wira Othman bin Aziz,"Terima kasih Tuan Yang di-Pertua.
+Bacaan Kali Yang Kedua dan Ketiga",,1.23 tgh.,1323,Dato’ Wira Othman bin Aziz,"Terima kasih Tuan Yang di-Pertua.
 *Assalamualaikum warahmatullahi wabarakatuh.* Sekali lagi saya mengucapkan terima
 kasih di atas ruang yang diberikan untuk turut membahaskan pindaan Rang Undang-
 undang Langkah-langkah Sementara bagi Pembiayaan Kerajaan (Penyakit Koronavirus
@@ -2453,12 +2453,12 @@ Sekian, terima kasih. Tuan Yang di-Pertua, saya mohon menyokong."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1323,Tuan Yang di-Pertua,"Terima kasih. Yang Berhormat Senator Dato’ Kesavadas
+Bacaan Kali Yang Kedua dan Ketiga",,1.23 tgh.,1323,Tuan Yang di-Pertua,"Terima kasih. Yang Berhormat Senator Dato’ Kesavadas
 A. Achyuthan Nair."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1329,Dato’ Kesavadas A. Achyuthan Nair,"Terima kasih Tuan Yang di-Pertua.
+Bacaan Kali Yang Kedua dan Ketiga",,1.29 tgh.,1329,Dato’ Kesavadas A. Achyuthan Nair,"Terima kasih Tuan Yang di-Pertua.
 Rang Undang-undang Langkah-langkah Sementara bagi Pembiayaan Kerajaan
 (Penyakit Koronavirus 2019 (COVID-19)) (Pindaan) 2020 [Akta 830] bertujuan untuk
 meminda jadual akta untuk mengadakan peruntukan bagi amaun tambahan untuk
@@ -2472,7 +2472,7 @@ berkait virus ini. Apakah kerajaan yakin dapat menampung kos sebanyak ini?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1330,Dato’ Kesavadas A. Achyuthan Nair,"Adakah KPI telah dibuat untuk pelbagai strategi dan aktiviti yang dilaksanakan?
+Bacaan Kali Yang Kedua dan Ketiga",,■1330,1330,Dato’ Kesavadas A. Achyuthan Nair,"Adakah KPI telah dibuat untuk pelbagai strategi dan aktiviti yang dilaksanakan?
 Apakah ini telah diukur untuk mencerminkan bagaimana prestasi kita dalam menghadapi
 masalah ini? Bagaimanakah dana tambahan akan membantu memenuhi KPI yang
 ditetapkan dengan jaminan mencapai kematian dan jangkitan yang rendah? Malah, ada
@@ -2487,29 +2487,29 @@ syarikat tempatan..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1330,Tuan Yang di-Pertua,"Apa nama istilah dalam perundangannya, Yang
+Bacaan Kali Yang Kedua dan Ketiga",,■1330,1330,Tuan Yang di-Pertua,"Apa nama istilah dalam perundangannya, Yang
 Berhormat Dato’? Tentang tak boleh menzahirkan isian perjanjian."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1330,Dato’ Kesavadas A. Achyuthan Nair,"Ya, dalam kontrak- *privity of the-* bukan
+Bacaan Kali Yang Kedua dan Ketiga",,■1330,1330,Dato’ Kesavadas A. Achyuthan Nair,"Ya, dalam kontrak- *privity of the-* bukan
 *privity*..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1330,Tuan Yang di-Pertua,Ada nama- *non-disclosure*...
+Bacaan Kali Yang Kedua dan Ketiga",,■1330,1330,Tuan Yang di-Pertua,Ada nama- *non-disclosure*...
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1330,Dato’ Kesavadas A. Achyuthan Nair,*Non-disclosure clause*. Ya.
+Bacaan Kali Yang Kedua dan Ketiga",,■1330,1330,Dato’ Kesavadas A. Achyuthan Nair,*Non-disclosure clause*. Ya.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1330,Tuan Yang di-Pertua,Silakan.
+Bacaan Kali Yang Kedua dan Ketiga",,■1330,1330,Tuan Yang di-Pertua,Silakan.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1330,Dato’ Kesavadas A. Achyuthan Nair,"Apakah ada syarikat-syarikat tempatan
+Bacaan Kali Yang Kedua dan Ketiga",,■1330,1330,Dato’ Kesavadas A. Achyuthan Nair,"Apakah ada syarikat-syarikat tempatan
 atau orang tengah diberi kontrak dalam perolehan vaksin di negara ini? Jika ada,
 siapakah syarikat-syarikat ini? Kenapakah tidak dibeli sahaja atas *government-to-
 government basis* supaya ia lebih telus dan murah? Diharap tiada unsur ketirisan atau
@@ -2532,56 +2532,56 @@ dipersetujui."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1330,Tuan Yang di-Pertua,"Apa nama syarikat tadi itu, Yang Berhormat Dato’?"
+Bacaan Kali Yang Kedua dan Ketiga",,■1330,1330,Tuan Yang di-Pertua,"Apa nama syarikat tadi itu, Yang Berhormat Dato’?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1330,Dato’ Kesavadas A. Achyuthan Nair,Yang manakah?
+Bacaan Kali Yang Kedua dan Ketiga",,■1330,1330,Dato’ Kesavadas A. Achyuthan Nair,Yang manakah?
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1330,Tuan Yang di-Pertua,Apakah nama syarikat tadi?
+Bacaan Kali Yang Kedua dan Ketiga",,■1330,1330,Tuan Yang di-Pertua,Apakah nama syarikat tadi?
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1330,Dato’ Kesavadas A. Achyuthan Nair,*Pfizer*.
+Bacaan Kali Yang Kedua dan Ketiga",,■1330,1330,Dato’ Kesavadas A. Achyuthan Nair,*Pfizer*.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1330,Tuan Yang di-Pertua,Pfizer? Syarikat yang buat pil yang biru itu kah?
+Bacaan Kali Yang Kedua dan Ketiga",,■1330,1330,Tuan Yang di-Pertua,Pfizer? Syarikat yang buat pil yang biru itu kah?
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1330,Beberapa Ahli,
+Bacaan Kali Yang Kedua dan Ketiga",,■1330,1330,Beberapa Ahli,
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1330,ANNOTATION,[Ketawa]
+Bacaan Kali Yang Kedua dan Ketiga",,■1330,1330,ANNOTATION,[Ketawa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1330,Dato’ Kesavadas A. Achyuthan Nair,Ya?
+Bacaan Kali Yang Kedua dan Ketiga",,■1330,1330,Dato’ Kesavadas A. Achyuthan Nair,Ya?
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1330,Tuan Yang di-Pertua,Syarikat yang sama membuat pil yang biru itu kah?
+Bacaan Kali Yang Kedua dan Ketiga",,■1330,1330,Tuan Yang di-Pertua,Syarikat yang sama membuat pil yang biru itu kah?
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1330,Dato’ Kesavadas A. Achyuthan Nair,"Ya, ya sama tetapi itu tidak
+Bacaan Kali Yang Kedua dan Ketiga",,■1330,1330,Dato’ Kesavadas A. Achyuthan Nair,"Ya, ya sama tetapi itu tidak
 dirahsiakan..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1330,ANNOTATION,[Ketawa]
+Bacaan Kali Yang Kedua dan Ketiga",,■1330,1330,ANNOTATION,[Ketawa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1330,Tuan Yang di-Pertua,Sila.
+Bacaan Kali Yang Kedua dan Ketiga",,■1330,1330,Tuan Yang di-Pertua,Sila.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1330,Dato’ Kesavadas A. Achyuthan Nair,"Padahal Singapura pula, pada 14
+Bacaan Kali Yang Kedua dan Ketiga",,■1330,1330,Dato’ Kesavadas A. Achyuthan Nair,"Padahal Singapura pula, pada 14
 Disember mengumumkan perjanjian dan kelulusan. Pada 21 Disember penghantaran
 vaksin pertama tiba dari Belgium. Kenapakah NPRA memerlukan empat bulan untuk
 mempertimbangkan permohonan kelulusan vaksin COVID-19? Nampaknya, tanggapan
@@ -2627,11 +2627,11 @@ menyelamatkan nyawa dan memastikan pemulihan ekonomi. Sekian terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1330,Tuan Yang di-Pertua,Kembali. Yang Berhormat Senator Datuk Razali Idris.
+Bacaan Kali Yang Kedua dan Ketiga",,■1330,1330,Tuan Yang di-Pertua,Kembali. Yang Berhormat Senator Datuk Razali Idris.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1338,Datuk Razali bin Idris,"*Assalamualaikum warahmatullahi wabarakatuh.* Terima
+Bacaan Kali Yang Kedua dan Ketiga",,1.38 tgh.,1338,Datuk Razali bin Idris,"*Assalamualaikum warahmatullahi wabarakatuh.* Terima
 kasih Tuan Yang di-Pertua, sekali lagi memberi ruang kepada saya untuk berbahas
 dalam Rang Undang-undang Langkah-langkah Sementara Bagi Pembiayaan Kerajaan
 (Penyakit Koronavirus 2019 (COVID-19)) 2020 di Dewan Negara yang mulia ini.
@@ -2649,7 +2649,7 @@ permulaan COVID-19 antara bulan April sehingga September 2020 yang lalu?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1340,Datuk Razali bin Idris,"Saya juga hendak tahu, kekerapan pihak berkuasa menggempur kawasan
+Bacaan Kali Yang Kedua dan Ketiga",,■1340,1340,Datuk Razali bin Idris,"Saya juga hendak tahu, kekerapan pihak berkuasa menggempur kawasan
 kediaman rakyat asing yang bekerja di negara kita. Saya melihat begitu teruk tempat
 kediaman pekerja asing ini seperti yang berlaku di salah sebuah syarikat multinasional
 yang membekalkan sarung tangan dan topeng muka.
@@ -2696,16 +2696,16 @@ undang ini dengan sepenuhnya. Sekian, *assalamualaikum warahmatullahi wabarakatu
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1340,ANNOTATION,[Timbalan Yang di-Pertua mempengerusikan Mesyuarat]
+Bacaan Kali Yang Kedua dan Ketiga",,■1340,1340,ANNOTATION,[Timbalan Yang di-Pertua mempengerusikan Mesyuarat]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1340,Timbalan Yang di-Pertua,"*Waalaikumussalam*. Yang Berhormat Senator Tuan
+Bacaan Kali Yang Kedua dan Ketiga",,■1340,1340,Timbalan Yang di-Pertua,"*Waalaikumussalam*. Yang Berhormat Senator Tuan
 Idris bin Haji Ahmad."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1334,Tuan Idris bin Haji Ahmad,"*Assalamualaikum warahmatullahi wabarakatuh*
+Bacaan Kali Yang Kedua dan Ketiga",,1.34 tgh.,1334,Tuan Idris bin Haji Ahmad,"*Assalamualaikum warahmatullahi wabarakatuh*
 dan salam sejahtera. Terima kasih kpd Tuan Yang di-Pertua.
 Pertama, saya menyokong penuh pindaan rang undang-undang dengan
 pertambahan sebanyak RM20 bilion yang diperuntukkan untuk Bantuan Prihatin
@@ -2763,7 +2763,7 @@ penularan COVID-19 ini."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1350,Tuan Idris bin Haji Ahmad,"Walau bagaimanapun, ini salah satu daripada ikhtiar usaha kita. Kita sebagai
+Bacaan Kali Yang Kedua dan Ketiga",,■1350,1350,Tuan Idris bin Haji Ahmad,"Walau bagaimanapun, ini salah satu daripada ikhtiar usaha kita. Kita sebagai
 Yang Berhormat Senator yang berada bersama masyarakat, kita hendaklah merupakan
 orang yang memberikan galakan ataupun memberi tunjuk ajar yang baik kepada rakyat.
 Jangan kita pula menjadi batu api supaya jangan cucuk vaksin ini. Sedangkan apa yang
@@ -2774,11 +2774,11 @@ kita kerana kaedah yang agama ajar..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1350,ANNOTATION,[Membaca sepotong ayat Al-Quran]
+Bacaan Kali Yang Kedua dan Ketiga",,■1350,1350,ANNOTATION,[Membaca sepotong ayat Al-Quran]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1350,Tuan Idris bin Haji Ahmad,"*“Kamu tanya
+Bacaan Kali Yang Kedua dan Ketiga",,■1350,1350,Tuan Idris bin Haji Ahmad,"*“Kamu tanya
 kepada orang yang arif, orang yang tahu kalau kamu tidak tahu.”*
 Jadi hal-hal yang kita tidak tahu- ini kadang-kadang dia tidak tahu tetapi dia
 bercakap macam dia tahu. Ini pun satu persoalan. Yang keduanya, kadang-kadang pula
@@ -2795,13 +2795,13 @@ menyokong. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1350,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Tuan Guru
+Bacaan Kali Yang Kedua dan Ketiga",,■1350,1350,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Tuan Guru
 Haji Idris bin Haji Ahmad. Seterusnya dijemput Yang Berhormat Senator Dr. Ahmad
 Azam bin Hamzah."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1352,Dr. Ahmad Azam bin Hamzah,"*Bismillahi Rahmani Rahim. Assalamualaikum
+Bacaan Kali Yang Kedua dan Ketiga",,1.52 tgh.,1352,Dr. Ahmad Azam bin Hamzah,"*Bismillahi Rahmani Rahim. Assalamualaikum
 warahmatullahi wabarakatuh,* Tuan Yang di-Pertua.
 Setelah hampir setahun virus Korona COVID-19 menular di Malaysia, negara
 mengalami fasa berkurung iaitu PKP atau boleh diistilahkan sebagai kuarantin Malaysia
@@ -2883,20 +2883,20 @@ sebab penyebab kematian supaya kita"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1400,Dr. Ahmad Azam bin Hamzah,"Saya rasa sekadar itu sahaja. Jadi, saya berharaplah dana yang ditambah
+Bacaan Kali Yang Kedua dan Ketiga",,■1400,1400,Dr. Ahmad Azam bin Hamzah,"Saya rasa sekadar itu sahaja. Jadi, saya berharaplah dana yang ditambah
 RM20 bilion ini dapat dipergunakan dengan sebaik mungkin dan membantu rakyat
 Malaysia yang dalam kesusahan. Saya dengan ini menyokong rang undang-undang ini.
 Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1400,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Dr. Ahmad
+Bacaan Kali Yang Kedua dan Ketiga",,■1400,1400,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Dr. Ahmad
 Azam bin Hamzah. Seterusnya saya menjemput Yang Berhormat Senator Liew Chin
 Tong."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1400,Tuan Liew Chin Tong,"Terima kasih Tuan Yang di-Pertua. Saya bangkit untuk
+Bacaan Kali Yang Kedua dan Ketiga",,2.00 ptg.,1400,Tuan Liew Chin Tong,"Terima kasih Tuan Yang di-Pertua. Saya bangkit untuk
 bahas Rang Undang-undang Langkah-langkah Sementara Bagi Pembiayaan Kerajaan
 (Penyakit Koronavirus 2019 (COVID-19) (Pindaan) 2020.
 Saya ingin maklumkan Dewan ini bahawa, kita sekarang ini menghadapi dua
@@ -2974,17 +2974,17 @@ pembuatan. Terima kasih Tuan Yang di-Pertua."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1400,Timbalan Yang di-Pertua,"Terima kasih pada Yang Berhormat Senator Liew
+Bacaan Kali Yang Kedua dan Ketiga",,2.00 ptg.,1400,Timbalan Yang di-Pertua,"Terima kasih pada Yang Berhormat Senator Liew
 Chin Tong. Saya menjemput Yang Berhormat Tuan Aknan a/l Ehtook."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1409,Tuan Aknan a/l Ehtook,"Terima kasih Tuan Yang di-Pertua. Bagi menyambung
+Bacaan Kali Yang Kedua dan Ketiga",,2.09 ptg.,1409,Tuan Aknan a/l Ehtook,"Terima kasih Tuan Yang di-Pertua. Bagi menyambung
 perbahasan ini, saya ingin terus kepada isu-isu yang saya ingin bangkitkan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1410,Tuan Aknan a/l Ehtook,"Kita nampak untuk rang undang-undang ini, sebanyak RM20 bilion telah
+Bacaan Kali Yang Kedua dan Ketiga",,■1410,1410,Tuan Aknan a/l Ehtook,"Kita nampak untuk rang undang-undang ini, sebanyak RM20 bilion telah
 dicadangkan untuk ditambah. Saya nampak RM20 bilion ini tidaklah besar melihatkan
 kepada isu yang kita sedang hadapi. Akan tetapi, adakah dengan RM65 bilion ini
 mencukupi untuk menyelesaikan masalah ini? Itu persoalan yang asas. Ini kerana ia
@@ -3038,20 +3038,20 @@ mereka tidak mengikut standard..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1410,Puan Hajah Raj Munni binti Sabu,"Tuan Yang di-Pertua, minta laluan sedikit
+Bacaan Kali Yang Kedua dan Ketiga",,■1410,1410,Puan Hajah Raj Munni binti Sabu,"Tuan Yang di-Pertua, minta laluan sedikit
 Yang Berhormat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1410,Tuan Aknan a/l Ehtook,Silakan.
+Bacaan Kali Yang Kedua dan Ketiga",,■1410,1410,Tuan Aknan a/l Ehtook,Silakan.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1410,Timbalan Yang di-Pertua,"Boleh, boleh."
+Bacaan Kali Yang Kedua dan Ketiga",,■1410,1410,Timbalan Yang di-Pertua,"Boleh, boleh."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1410,Puan Hajah Raj Munni binti Sabu,"Tuan Yang di-Pertua, Yang Berhormat,
+Bacaan Kali Yang Kedua dan Ketiga",,■1410,1410,Puan Hajah Raj Munni binti Sabu,"Tuan Yang di-Pertua, Yang Berhormat,
 adakah Yang Berhormat setuju jika saya menyebutkan bahawa tindakan kita sebelum ini
 agak terlalu *overreactive* menghadapi isu-isu COVID-19. Pertama mungkin kerana kita
 tidak ada pengalaman lagi. Akan tetapi sekarang, kita semakin santai. Awalnya kita
@@ -3060,7 +3060,7 @@ mungkin tidak akan ada lagi PKP, ia hanya ada SOP Yang Berhormat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1410,Tuan Aknan a/l Ehtook,"Terima kasih Yang Berhormat. Kalau kita tengok
+Bacaan Kali Yang Kedua dan Ketiga",,■1410,1410,Tuan Aknan a/l Ehtook,"Terima kasih Yang Berhormat. Kalau kita tengok
 tindakan kita- kita tanya diri sendiri kerana selain daripada kerajaan yang menentukan
 SOP, arahan dan sebagainya tetapi adakah kita sendiri hanya menunggu kerajaan
 arahkan barulah kita bertindak. Kita patut sedar setiap orang daripada kita- kerana tidak
@@ -3083,13 +3083,13 @@ benda ini dapat mencapai sasarannya. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1410,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator Tuan
+Bacaan Kali Yang Kedua dan Ketiga",,■1410,1410,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator Tuan
 Aknan a/l Ehtook. Seterusnya dijemput Yang Berhormat Senator Datuk Haji Ismail bin
 Ibrahim."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1417,Datuk Haji Ismail bin Ibrahim,"*Bismillahi Rahmani Rahim. Assalamualaikum
+Bacaan Kali Yang Kedua dan Ketiga",,2.17 ptg.,1417,Datuk Haji Ismail bin Ibrahim,"*Bismillahi Rahmani Rahim. Assalamualaikum
 warahmatullahi wabarakatuh* dan salam sejahtera. Terima kasih Tuan Yang di-Pertua.
 Dalam pindaan ini, kerajaan meminda akta ini bagi menambah peruntukan
 sebanyak RM20 bilion lagi untuk tujuan Pakej Rangsangan Ekonomi. Untuk makluman
@@ -3115,7 +3115,7 @@ Semenanjung Malaysia."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1420,Datuk Haji Ismail bin Ibrahim,"Sehubungan ini juga, saya menyokong saranan daripada Yang Berhormat
+Bacaan Kali Yang Kedua dan Ketiga",,■1420,1420,Datuk Haji Ismail bin Ibrahim,"Sehubungan ini juga, saya menyokong saranan daripada Yang Berhormat
 Senator Dato’ Wira Othman bagi pakej rangsangan ekonomi. Saya juga ingin
 mendapatkan penjelasan daripada kerajaan tentang bagaimana projek-projek
 penyelenggaraan infrastruktur awam dipercepatkan pada tahun 2021 agar kontraktor-
@@ -3124,13 +3124,13 @@ terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1420,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Datuk Haji
+Bacaan Kali Yang Kedua dan Ketiga",,■1420,1420,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Datuk Haji
 Ismail bin Ibrahim. Seterusnya saya minta Yang Berhormat Timbalan Menteri Kewangan
 untuk menjawab."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1421,Timbalan Menteri Kewangan II [Tuan Mohd Shahar bin Abdullah],"*Bismillahi
+Bacaan Kali Yang Kedua dan Ketiga",,2.21 ptg.,1421,Timbalan Menteri Kewangan II [Tuan Mohd Shahar bin Abdullah],"*Bismillahi
 Rahmani Rahim. Assalamualaikum warahmatullaahi wabarakatuh.* Terima kasih Tuan
 Yang di-Pertua, terima kasih Ahli-ahli Yang Berhormat Senator yang begitu
 mengemukakan pandangan, kritikan, cadangan yang begitu amat tinggi nilainya bagi
@@ -3239,7 +3239,7 @@ R&D, berkaitan ini."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1430,Timbalan Menteri Kewangan II [Tuan Mohd Shahar bin Abdullah],"Izinkan Tuan Yang di-Pertua, kerana banyak sangat yang bercakap tentang
+Bacaan Kali Yang Kedua dan Ketiga",,■1430,1430,Timbalan Menteri Kewangan II [Tuan Mohd Shahar bin Abdullah],"Izinkan Tuan Yang di-Pertua, kerana banyak sangat yang bercakap tentang
 vaksin, izinkan saya untuk penghujungnya memberi penjelasan bagaimana vaksinasi
 yang sering disebut-sebut oleh Ahli-ahli Yang Berhormat Senator. Pertamanya, kita kena
 faham dan memahami ketersediaan vaksin adalah bergantung kepada pematuhan
@@ -3354,7 +3354,7 @@ Kementerian Kewangan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1440,Timbalan Menteri Kewangan II [Tuan Mohd Shahar bin Abdullah],"Seperti mana yang saya pernah jelaskan banyak kali dalam Dewan yang mulia
+Bacaan Kali Yang Kedua dan Ketiga",,■1440,1440,Timbalan Menteri Kewangan II [Tuan Mohd Shahar bin Abdullah],"Seperti mana yang saya pernah jelaskan banyak kali dalam Dewan yang mulia
 ini, Kerajaan Malaysia tidak pernah mungkir atau culas untuk membayar bayaran khidmat
 hutang sepertimana yang telah saya nyatakan tempoh hari.
 Tuan Yang di-Pertua, Ahli-ahli Yang Berhormat. Yang terakhirnya Yang
@@ -3385,7 +3385,7 @@ ada dalam negara kita. Teguh kita menang bersama. Sekian terima kasih,
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1440,Timbalan Yang di-Pertua,"Terima kasih, kepada semua Ahli-ahli Yang
+Bacaan Kali Yang Kedua dan Ketiga",,■1440,1440,Timbalan Yang di-Pertua,"Terima kasih, kepada semua Ahli-ahli Yang
 Berhormat yang telah mengemukakan perbahasan. Terima kasih juga kepada Yang
 Berhormat Tuan Mohd Shahar bin Abdullah Timbalan Menteri Kewangan atas jawapan
 tadi.
@@ -3395,49 +3395,49 @@ sekarang."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1440,ANNOTATION,[Masalah dikemukakan bagi diputuskan; dan disetujukan]
+Bacaan Kali Yang Kedua dan Ketiga",,■1440,1440,ANNOTATION,[Masalah dikemukakan bagi diputuskan; dan disetujukan]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1440,ANNOTATION,"[Rang undang-undang dibacakan kali yang kedua dan diserahkan kepada
+Bacaan Kali Yang Kedua dan Ketiga",,■1440,1440,ANNOTATION,"[Rang undang-undang dibacakan kali yang kedua dan diserahkan kepada
 Dewan sebagai Jawatankuasa]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1440,ANNOTATION,[Majlis bersidang dalam Jawatankuasa]
+Bacaan Kali Yang Kedua dan Ketiga",,■1440,1440,ANNOTATION,[Majlis bersidang dalam Jawatankuasa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1440,ANNOTATION,[Timbalan Yang di-Pertua mempengerusikan Jawatankuasa]
+Bacaan Kali Yang Kedua dan Ketiga",,■1440,1440,ANNOTATION,[Timbalan Yang di-Pertua mempengerusikan Jawatankuasa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1440,ANNOTATION,[Fasal-fasal dikemukakan kepada Jawatankuasa]
+Bacaan Kali Yang Kedua dan Ketiga",,■1440,1440,ANNOTATION,[Fasal-fasal dikemukakan kepada Jawatankuasa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1440,ANNOTATION,"[Fasal-fasal 1 hingga 2 diperintahkan jadi sebahagian daripada rang undang-
+Bacaan Kali Yang Kedua dan Ketiga",,■1440,1440,ANNOTATION,"[Fasal-fasal 1 hingga 2 diperintahkan jadi sebahagian daripada rang undang-
 undang]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1440,ANNOTATION,[Rang undang-undang dimaklumkan kepada Majlis sekarang]
+Bacaan Kali Yang Kedua dan Ketiga",,■1440,1440,ANNOTATION,[Rang undang-undang dimaklumkan kepada Majlis sekarang]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1440,ANNOTATION,[Majlis Mesyuarat bersidang semula]
+Bacaan Kali Yang Kedua dan Ketiga",,■1440,1440,ANNOTATION,[Majlis Mesyuarat bersidang semula]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1440,ANNOTATION,"[Rang undang-undang dilaporkan dengan tidak ada pindaan; dibacakan kali
+Bacaan Kali Yang Kedua dan Ketiga",,■1440,1440,ANNOTATION,"[Rang undang-undang dilaporkan dengan tidak ada pindaan; dibacakan kali
 yang ketiga, disokong oleh Timbalan Menteri Perdagangan Antarabangsa dan Industri
 (Datuk Lim Ban Hong) dan diluluskan]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1440,Timbalan Yang di-Pertua,"Ahli-ahli Yang Berhormat, Mesyuarat Dewan hari ini
+Bacaan Kali Yang Kedua dan Ketiga",,■1440,1440,Timbalan Yang di-Pertua,"Ahli-ahli Yang Berhormat, Mesyuarat Dewan hari ini
 ditangguhkan sehingga jam 10 pagi, hari Selasa, 29, Disember 2020."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LANGKAH-LANGKAH SEMENTARA
 BAGI PEMBIAYAAN KERAJAAN
 (PENYAKIT KORONAVIRUS 2019 (COVID-19)) (PINDAAN) 2020
-Bacaan Kali Yang Kedua dan Ketiga",,1445,ANNOTATION,[Dewan ditangguhkan pada pukul 2.45 petang]
+Bacaan Kali Yang Kedua dan Ketiga",,2.45 petang,1445,ANNOTATION,[Dewan ditangguhkan pada pukul 2.45 petang]

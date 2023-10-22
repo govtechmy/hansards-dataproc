@@ -50,17 +50,10 @@ def parse_hansard(hansard_date):
                     doa_idx = idx
                 else:
                     continue
-            if hansard_date == "14102021":
-                text += page.extract_text(x_tolerance=1) + '\n'
-            else:
-                text += page.extract_text() + '\n'  # add newline to separate pages
-            if hansard_date == "29042019":
-                # special case where snap tolerance doesn't work
-                current_tables = page.filter(
-                    not_invisible_rect).extract_tables()
-            else:
-                current_tables = page.filter(
-                    not_invisible_rect).extract_tables({"snap_tolerance": 9})
+            text += page.extract_text() + '\n'  # add newline to separate pages
+
+            current_tables = page.filter(
+                not_invisible_rect).extract_tables({"snap_tolerance": 9})
             if current_tables:
                 # add page number
                 tables += [[idx, idx - doa_idx + 1,
@@ -121,7 +114,7 @@ def parse_hansard(hansard_date):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("hansard_date", help="hansard_date eg. 23052023",
-                        default="14102021", nargs="?")
+                        default="20092023", nargs="?")
     # Parse arguments
     args = parser.parse_args()
     parse_hansard(args.hansard_date)

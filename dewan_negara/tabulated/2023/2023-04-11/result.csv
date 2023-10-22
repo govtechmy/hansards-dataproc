@@ -1,7 +1,7 @@
-level_1,level_2,level_3,timestamp,author,speech
-,,,1000,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
+level_1,level_2,level_3,raw_timestamp,timestamp,author,speech
+,,,10.00 pagi,1000,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1003,Timbalan Menteri Pengangkutan [Datuk Haji Hasbi bin Habibollah],"Tuan Yang
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,10.03 pg.,1003,Timbalan Menteri Pengangkutan [Datuk Haji Hasbi bin Habibollah],"Tuan Yang
 di-Pertua, saya mohon mencadangkan:
 “Bahawa walau apa pun peruntukan-peruntukan Peraturan Mesyuarat
 11, Majlis Dewan Negara hari ini tidak akan ditangguhkan sehingga selesai
@@ -9,26 +9,26 @@ semua urusan kerajaan yang tertera dalam *Aturan Urusan Mesyuarat* pada
 hari ini diputuskan dan diluluskan dan selepas itu Majlis Mesyuarat akan
 ditangguhkan kesatu tarikh yang tidak ditetapkan.”"
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1003,Tuan Yang di-Pertua,Baiklah. Siapakah yang menyokong?
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,10.03 pg.,1003,Tuan Yang di-Pertua,Baiklah. Siapakah yang menyokong?
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1003,Dato’ Kesavadas a/l A Achyuthan Nair,"Tuan Yang di-Pertua, saya menyokong."
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,10.03 pg.,1003,Dato’ Kesavadas a/l A Achyuthan Nair,"Tuan Yang di-Pertua, saya menyokong."
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1003,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat. Sekarang saya kemukakan masalah
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,10.03 pg.,1003,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat. Sekarang saya kemukakan masalah
 kepada Majlis untuk diputuskan. Masalahnya ialah usul seperti yang dikemukakan oleh Yang
 Berhormat Timbalan Menteri itu tadi hendaklah dipersetujukan"
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1003,ANNOTATION,[Usul dikemukakan bagi diputuskan; dan disetujukan]
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,10.03 pg.,1003,ANNOTATION,[Usul dikemukakan bagi diputuskan; dan disetujukan]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENGANGKUTAN
 AWAM DARAT (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1003,,"*Aturan Urusan Mesyuarat* dibacakan bagi menyambung semula perbahasan yang
+Bacaan Kali Yang Kedua dan Ketiga",,10.03 pg.,1003,,"*Aturan Urusan Mesyuarat* dibacakan bagi menyambung semula perbahasan yang
 ditangguhkan atas masalah, “Bahawa rang undang-undang ini dibacakan Kali Yang Kedua
 sekarang.”"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENGANGKUTAN
 AWAM DARAT (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1003,ANNOTATION,[10 April 2023]
+Bacaan Kali Yang Kedua dan Ketiga",,10.03 pg.,1003,ANNOTATION,[10 April 2023]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENGANGKUTAN
 AWAM DARAT (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1005,Timbalan Menteri Pengangkutan [Datuk Haji Hasbi bin Habibollah],"*Bismillahi
+Bacaan Kali Yang Kedua dan Ketiga",,10.05 pg.,1005,Timbalan Menteri Pengangkutan [Datuk Haji Hasbi bin Habibollah],"*Bismillahi
 Rahmani Rahim. Assalamualaikum warahmatullahi wabarakatuh.*
 Tuan Yang di-Pertua, saya pada pagi ini akan menjawab perkara-perkara yang
 dibangkitkan oleh Yang Berhormat Senator dalam perbahasan semalam
@@ -80,7 +80,7 @@ tentang perkara ini dan akan diteliti dengan lebih lanjut dan berbincang, libat 
 dengan pihak-pihak penyedia perkhidmatan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENGANGKUTAN
 AWAM DARAT (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1010,Timbalan Menteri Pengangkutan [Datuk Haji Hasbi bin Habibollah],"Perkara yang dibangkitkan seterusnya oleh Yang Berhormat Senator Dato’ Ahmad bin
+Bacaan Kali Yang Kedua dan Ketiga",,■1010,1010,Timbalan Menteri Pengangkutan [Datuk Haji Hasbi bin Habibollah],"Perkara yang dibangkitkan seterusnya oleh Yang Berhormat Senator Dato’ Ahmad bin
 Dato’ Sri Haji Ibrahim. Pertama ialah tentang perlaksanaan GDL. Adakah kementerian telah
 melaksanakannya? Seperti dimaklumkan lesen vokasional adalah wajib di bawah ketetapan
 Akta 333 kepada semua pemandu atau penunggang atau kelindan pemandu-pemandu
@@ -186,7 +186,7 @@ kempen keselamatan yang memberi fokus kepada penunggang *p-hailing* juga akan
 dilaksanakan pada tahun lepas, tahun 2022."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENGANGKUTAN
 AWAM DARAT (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1020,Timbalan Menteri Pengangkutan [Datuk Haji Hasbi bin Habibollah],"Bagaimanakah kerajaan pastikan operator tidak menekan penunggang? Isu-isu yang
+Bacaan Kali Yang Kedua dan Ketiga",,■1020,1020,Timbalan Menteri Pengangkutan [Datuk Haji Hasbi bin Habibollah],"Bagaimanakah kerajaan pastikan operator tidak menekan penunggang? Isu-isu yang
 dibangkitkan diambil maklum dan merupakan perkara yang menjadi asas kenapa kerajaan
 mengambil keputusan untuk mengawal selia industri yang berkenaan yang sangat giat
 berkembang pada masa ini. Di bawah skop pengawalseliaan dan pelesenan aspek seperti
@@ -222,10 +222,10 @@ berdasarkan prinsip kerjasama sedia ada. Perkara yang terakhir dibangkitkan oleh
 Berhormat iaitu tentang apakah cabaran perjanjian AFAFGIT, ini *short-form...*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENGANGKUTAN
 AWAM DARAT (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1020,ANNOTATION,[Ketawa]
+Bacaan Kali Yang Kedua dan Ketiga",,■1020,1020,ANNOTATION,[Ketawa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENGANGKUTAN
 AWAM DARAT (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1020,Timbalan Menteri Pengangkutan [Datuk Haji Hasbi bin Habibollah],"Adakah mendatangkan lebih keberuntungan kepada negara atau sebaliknya?
+Bacaan Kali Yang Kedua dan Ketiga",,■1020,1020,Timbalan Menteri Pengangkutan [Datuk Haji Hasbi bin Habibollah],"Adakah mendatangkan lebih keberuntungan kepada negara atau sebaliknya?
 Antara cabaran utama ialah bagi memastikan setiap negara anggota ASEAN yang
 mempunyai kerangka perundangan yang berbeza dapat mengharmonikan prosedur untuk
 memudahkan pergerakan kenderaan perdagangan merentas sempadan demi menyokong
@@ -237,45 +237,45 @@ Itu saja yang dibangkitkan oleh sembilan orang Yang Berhormat Senator. Sekian,
 terima kasih atas keprihatinan Yang Berhormat Senator sekalian. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENGANGKUTAN
 AWAM DARAT (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1020,Tuan Yang di-Pertua,"Baiklah, Ahli-ahli Yang Berhormat, sekarang saya kemukakan
+Bacaan Kali Yang Kedua dan Ketiga",,■1020,1020,Tuan Yang di-Pertua,"Baiklah, Ahli-ahli Yang Berhormat, sekarang saya kemukakan
 masalah kepada Majlis bagi diputuskan. Masalahnya ialah bahawa rang undang-undang ini
 dibacakan kali yang kedua sekarang."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENGANGKUTAN
 AWAM DARAT (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1020,ANNOTATION,"[Masalah dikemukakan bagi diputuskan, dan disetujukan]"
+Bacaan Kali Yang Kedua dan Ketiga",,■1020,1020,ANNOTATION,"[Masalah dikemukakan bagi diputuskan, dan disetujukan]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENGANGKUTAN
 AWAM DARAT (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1020,ANNOTATION,"[Rang undang-undang dibacakan kali yang kedua dan diserahkan kepada Dewan
+Bacaan Kali Yang Kedua dan Ketiga",,■1020,1020,ANNOTATION,"[Rang undang-undang dibacakan kali yang kedua dan diserahkan kepada Dewan
 sebagai Jawatankuasa]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENGANGKUTAN
 AWAM DARAT (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1020,ANNOTATION,[Majlis bersidang dalam Jawatankuasa]
+Bacaan Kali Yang Kedua dan Ketiga",,■1020,1020,ANNOTATION,[Majlis bersidang dalam Jawatankuasa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENGANGKUTAN
 AWAM DARAT (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1020,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Jawatankuasa]
+Bacaan Kali Yang Kedua dan Ketiga",,■1020,1020,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Jawatankuasa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENGANGKUTAN
 AWAM DARAT (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1020,ANNOTATION,[Fasal-fasal dikemukakan kepada Jawatankuasa]
+Bacaan Kali Yang Kedua dan Ketiga",,■1020,1020,ANNOTATION,[Fasal-fasal dikemukakan kepada Jawatankuasa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENGANGKUTAN
 AWAM DARAT (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1020,ANNOTATION,[Fasal-fasal 1 hingga 6 diperintahkan jadi sebahagian daripada rang undang-undang]
+Bacaan Kali Yang Kedua dan Ketiga",,■1020,1020,ANNOTATION,[Fasal-fasal 1 hingga 6 diperintahkan jadi sebahagian daripada rang undang-undang]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENGANGKUTAN
 AWAM DARAT (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1020,ANNOTATION,[Rang undang-undang dimaklumkan kepada Majlis sekarang]
+Bacaan Kali Yang Kedua dan Ketiga",,■1020,1020,ANNOTATION,[Rang undang-undang dimaklumkan kepada Majlis sekarang]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENGANGKUTAN
 AWAM DARAT (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1020,ANNOTATION,[Majlis Mesyuarat bersidang semula]
+Bacaan Kali Yang Kedua dan Ketiga",,■1020,1020,ANNOTATION,[Majlis Mesyuarat bersidang semula]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENGANGKUTAN
 AWAM DARAT (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1020,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
+Bacaan Kali Yang Kedua dan Ketiga",,■1020,1020,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENGANGKUTAN
 AWAM DARAT (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1020,ANNOTATION,"[Rang undang-undang dilaporkan dengan tidak ada pindaan; dibacakan kali yang
+Bacaan Kali Yang Kedua dan Ketiga",,■1020,1020,ANNOTATION,"[Rang undang-undang dilaporkan dengan tidak ada pindaan; dibacakan kali yang
 ketiga, di sokong oleh Menteri di Jabatan Perdana Menteri (Hal Ehwal Agama) (Dato’ Setia
 Dr. Haji Mohd Na’im bin Haji Mokhtar) dan diluluskan]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1027,Timbalan Menteri Pengangkutan [Datuk Haji Hasbi bin Habibollah],"Tuan Yang
+Bacaan Kali Yang Kedua dan Ketiga",,10.27 pg.,1027,Timbalan Menteri Pengangkutan [Datuk Haji Hasbi bin Habibollah],"Tuan Yang
 di-Pertua, saya mohon mencadangkan rang undang-undang bernama suatu akta untuk
 meminda Akta Lembaga Pelesenan Kenderaan Perdagangan 1987 dibacakan kali yang
 kedua sekarang.
@@ -283,10 +283,10 @@ kedua sekarang.
 Kenderaan Perdagangan"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1027,ANNOTATION,[Akta 334]
+Bacaan Kali Yang Kedua dan Ketiga",,10.27 pg.,1027,ANNOTATION,[Akta 334]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1027,Timbalan Menteri Pengangkutan [Datuk Haji Hasbi bin Habibollah],"pula telah mula berkuat kuasa mulai tahun 1987. Objektif
+Bacaan Kali Yang Kedua dan Ketiga",,10.27 pg.,1027,Timbalan Menteri Pengangkutan [Datuk Haji Hasbi bin Habibollah],"pula telah mula berkuat kuasa mulai tahun 1987. Objektif
 utama Akta 334 adalah untuk mengadakan peruntukan bagi mengawal selia kenderaan
 perdagangan dan bagi perkara-perkara yang berkaitan dengannya. Akta 334 ini terpakai
 hanya di Sabah, Sarawak dan Wilayah Persekutuan Labuan.
@@ -304,7 +304,7 @@ untuk mewujudkan punca kuasa bagi mengawal selia dan menetapkan peraturan pelese
 bagi perkhidmatan berkenaan di bawah Akta 334."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1030,Timbalan Menteri Pengangkutan [Datuk Haji Hasbi bin Habibollah],"Kedua, mewujudkan punca kuasa di bawah Akta 334 bagi memenuhi obligasi dan
+Bacaan Kali Yang Kedua dan Ketiga",,■1030,1030,Timbalan Menteri Pengangkutan [Datuk Haji Hasbi bin Habibollah],"Kedua, mewujudkan punca kuasa di bawah Akta 334 bagi memenuhi obligasi dan
 melaksanakan komitmen kerajaan di bawah beberapa perjanjian multilateral peringkat
 antarabangsa yang melibatkan peredaran antarabangsa mana-mana kenderaan
 perdagangan.
@@ -349,13 +349,13 @@ terutamanya kepada golongan muda dan golongan yang bekerja sendiri.
 Tuan Yang di-Pertua, saya mohon mencadangkan. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1030,Tuan Yang di-Pertua,"Baiklah, sesiapa yang menyokong?"
+Bacaan Kali Yang Kedua dan Ketiga",,■1030,1030,Tuan Yang di-Pertua,"Baiklah, sesiapa yang menyokong?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1030,Menteri di Jabatan Perdana Menteri (Hal Ehwal Agama) [Dato’ Setia Dr. Haji Mohd Na’im bin Haji Mokhtar],"Tuan Yang di-Pertua, saya mohon menyokong."
+Bacaan Kali Yang Kedua dan Ketiga",,■1030,1030,Menteri di Jabatan Perdana Menteri (Hal Ehwal Agama) [Dato’ Setia Dr. Haji Mohd Na’im bin Haji Mokhtar],"Tuan Yang di-Pertua, saya mohon menyokong."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1030,Tuan Yang di-Pertua,"Baiklah. Ahli-ahli Yang Berhormat, masalah di hadapan Majlis
+Bacaan Kali Yang Kedua dan Ketiga",,■1030,1030,Tuan Yang di-Pertua,"Baiklah. Ahli-ahli Yang Berhormat, masalah di hadapan Majlis
 ialah bahawa suatu akta untuk meminda Akta Lembaga Pelesenan Kenderaan Perdagangan
 1987 dibacakan kali kedua sekarang dan terbuka untuk dibahaskan.
 Jadi Ahli-ahli Yang Berhormat, di hadapan saya ada seramai lima orang ahli yang
@@ -364,7 +364,7 @@ diberi selama lima minit seorang.
 Dipersilakan Yang Berhormat Dato’ Kesavadas a/l A Achyuthan Nair."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1035,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Tuan Yang di-Pertua kerana
+Bacaan Kali Yang Kedua dan Ketiga",,10.35 pg.,1035,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Tuan Yang di-Pertua kerana
 diberi peluang untuk ambil bahagian dalam rang undang-undang ini.
 Berdasarkan statistik yang diterbitkan oleh Institut Penyelidikan Jalan Raya Malaysia
 (MIROS) pada tahun 2020, sebanyak 70 peratus daripada penunggang *p-hailing*
@@ -399,7 +399,7 @@ melibatkan penggiat *p-hailing* pada tahun 2021 dan 2022.
 Tuan Yang di-Pertua..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1035,Tuan Haji Hussin bin Ismail,"Tuan Yang di-Pertua, mohon mencelah sedikit. Mohon
+Bacaan Kali Yang Kedua dan Ketiga",,10.35 pg.,1035,Tuan Haji Hussin bin Ismail,"Tuan Yang di-Pertua, mohon mencelah sedikit. Mohon
 izin Yang Berhormat Senator.
 Kita sepanjang dua, tiga hari ini, dua hari ini, kita bercakap tentang perlakuan
 penunggang *e-hailing*. Saya semalam melihat satu rungutan yang banyak daripada
@@ -410,14 +410,14 @@ Boleh juga kita tekankan supaya dikuatkuasakan peraturan kepada pelaksana progra
 hailing*. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1035,Dato’ Kesavadas a/l A Achyuthan Nair,"Saya mohon soalan itu dimasukkan dalam
+Bacaan Kali Yang Kedua dan Ketiga",,10.35 pg.,1035,Dato’ Kesavadas a/l A Achyuthan Nair,"Saya mohon soalan itu dimasukkan dalam
 perbahasan saya."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1035,Tuan Yang di-Pertua,Disekalikan.
+Bacaan Kali Yang Kedua dan Ketiga",,10.35 pg.,1035,Tuan Yang di-Pertua,Disekalikan.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1035,Dato’ Kesavadas a/l A Achyuthan Nair,"Saya pohon soalan itu dimasukkan dalam
+Bacaan Kali Yang Kedua dan Ketiga",,10.35 pg.,1035,Dato’ Kesavadas a/l A Achyuthan Nair,"Saya pohon soalan itu dimasukkan dalam
 perbahasan saya. Akan tetapi, kebanyakan kemalangan ini- saya sebagai pengamal undang-
 undang yang buat kes-kes kemalangan, saya sendiri ada sebanyak lima kes di Melaka yang
 melibatkan *p-hailing*, tiga di Terengganu, dan sebanyak empat atau lima di Seremban, yang
@@ -426,10 +426,10 @@ mereka. *So*, itulah saya mohon suatu kursus yang amat baik dilaksanakan untuk m
 sebab bukan sahaja mereka yang cedera tetapi pengguna-pengguna yang lain."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1040,Tuan Yang di-Pertua,Silakan.
+Bacaan Kali Yang Kedua dan Ketiga",,■1040,1040,Tuan Yang di-Pertua,Silakan.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1040,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih. Saya juga difahamkan
+Bacaan Kali Yang Kedua dan Ketiga",,■1040,1040,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih. Saya juga difahamkan
 bahawa wakil mereka yang menyerahkan apa yang dipanggil sebagai memorandum tuntutan
 kepada wakil operator *p-hailing* tersebut. Rentetan daripada serahan memorandum itu, pihak
 *Grab* Malaysia telah mengeluarkan kenyataan penafian. Dalam kenyataan tersebut, operator
@@ -443,10 +443,10 @@ Tuan Yang di-Pertua, sekian sahaja ucapan perbahasan saya. Saya mohon
 menyokong RUU ini. Sekian, terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1040,Tuan Yang di-Pertua,Baiklah. Yang Berhormat Senator Datin Ros Suryati binti Alang.
+Bacaan Kali Yang Kedua dan Ketiga",,■1040,1040,Tuan Yang di-Pertua,Baiklah. Yang Berhormat Senator Datin Ros Suryati binti Alang.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1041,Datin Hajah Ros Suryati binti Alang,"*Assalamualaikum warahmatullahi
+Bacaan Kali Yang Kedua dan Ketiga",,10.41 pg.,1041,Datin Hajah Ros Suryati binti Alang,"*Assalamualaikum warahmatullahi
 wabarakatuh.* Tuan Yang di-Pertua, terlebih dahulu saya mengucapkan terima kasih kerana
 memberi peluang saya untuk membahaskan Rang Undang-undang Lembaga Perlesenan
 Kenderaan Perdagangan 2023. Rang undang-undang di hadapan kita ini antaranya mengenai
@@ -489,12 +489,12 @@ Rang Undang-undang Lembaga Perlesenan Kenderaan Perdagangan (Pindaan) 2023.
 Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1041,Tuan Yang di-Pertua,"Baiklah. Terima kasih kembali. Yang Berhormat Senator Dato’
+Bacaan Kali Yang Kedua dan Ketiga",,10.41 pg.,1041,Tuan Yang di-Pertua,"Baiklah. Terima kasih kembali. Yang Berhormat Senator Dato’
 Haji Husain bin Awang.
 Sila Yang Berhormat Senator Dato’ Juhanis binti Abd Aziz."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1045,Dato’ Juhanis binti Abd Aziz,"Terima kasih, Tuan Yang di-Pertua. Saya juga tidak
+Bacaan Kali Yang Kedua dan Ketiga",,10.45 pg.,1045,Dato’ Juhanis binti Abd Aziz,"Terima kasih, Tuan Yang di-Pertua. Saya juga tidak
 mengambil masa yang panjang. Cuma, dua perkara sahaja yang akan saya sebutkan di sini.
 Saya ingin mengambil peluang ini untuk membahaskan Rang Undang-undang
 Lembaga Perlesenan Kenderaan Perdagangan (Pindaan) 2023. Saya faham RUU ini adalah
@@ -540,11 +540,11 @@ kos operasi dan memantapkan rangkaian bekalan negara. Itu sahaja daripada saya. 
 pohon menyokong. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1045,Tuan Yang di-Pertua,"Terima kasih kembali.
+Bacaan Kali Yang Kedua dan Ketiga",,10.45 pg.,1045,Tuan Yang di-Pertua,"Terima kasih kembali.
 Yang Berhormat Tuan Abun Sui Anyit. Ini yang akhir."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1050,Tuan Abun Sui Anyit,"Terima kasih Tuan Yang di-Pertua. Terima kasih rakan-rakan
+Bacaan Kali Yang Kedua dan Ketiga",,10.50 pg.,1050,Tuan Abun Sui Anyit,"Terima kasih Tuan Yang di-Pertua. Terima kasih rakan-rakan
 Yang Berhormat Senator sekalian. Kali ini kita membincangkan tentang undang-undang
 ataupun rang undang-undang yang melibatkan Sabah, Sarawak dan Wilayah Persekutuan
 Labuan. Jadi ini saya percaya ada kaitannya dengan negara Brunei dan Indonesia.
@@ -579,28 +579,28 @@ Jadi, saya tidak panjang dalam membincangkan perkara ini kerana ia melibatkan
 Sabah, Sarawak dan Labuan. Persoalan saya adalah..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1050,Datuk Wira Dr. Mohd Hatta bin Md Ramli,"Tuan Yang di-Pertua, saya mohon
+Bacaan Kali Yang Kedua dan Ketiga",,10.50 pg.,1050,Datuk Wira Dr. Mohd Hatta bin Md Ramli,"Tuan Yang di-Pertua, saya mohon
 mencelah."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1050,Tuan Yang di-Pertua,"Orang depan belakang bertanya antara satu sama lain, boleh
+Bacaan Kali Yang Kedua dan Ketiga",,10.50 pg.,1050,Tuan Yang di-Pertua,"Orang depan belakang bertanya antara satu sama lain, boleh
 jugalah."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1050,Datuk Wira Dr. Mohd Hatta bin Md Ramli,
+Bacaan Kali Yang Kedua dan Ketiga",,10.50 pg.,1050,Datuk Wira Dr. Mohd Hatta bin Md Ramli,
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1050,ANNOTATION,[Ketawa]
+Bacaan Kali Yang Kedua dan Ketiga",,10.50 pg.,1050,ANNOTATION,[Ketawa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1050,Datuk Wira Dr. Mohd Hatta bin Md Ramli,"Bukan berpakat Tuan Yang di-
+Bacaan Kali Yang Kedua dan Ketiga",,10.50 pg.,1050,Datuk Wira Dr. Mohd Hatta bin Md Ramli,"Bukan berpakat Tuan Yang di-
 Pertua, tidak."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1050,Tuan Yang di-Pertua,Bagus.
+Bacaan Kali Yang Kedua dan Ketiga",,10.50 pg.,1050,Tuan Yang di-Pertua,Bagus.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1050,Datuk Wira Dr. Mohd Hatta bin Md Ramli,"Disebutkan tadi bahawa undang-undang
+Bacaan Kali Yang Kedua dan Ketiga",,10.50 pg.,1050,Datuk Wira Dr. Mohd Hatta bin Md Ramli,"Disebutkan tadi bahawa undang-undang
 ini adalah atas hubungan kita dengan Brunei dan Indonesia. Kenapa kita tidak panjangkan
 kepada negara Singapura contohnya. Walaupun ia pulau tetapi kita ada hubungan darat atau
 sememangnya kita sudah ada satu peraturan yang berbeza ataupun adakah kerana tidak
@@ -608,18 +608,18 @@ perlu atas apa-apa halangan kerana hubungan dua buah negara ini dalam isu yang
 dibincangkan. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1050,Tuan Yang di-Pertua,"Soalan itu elok diinkorporasikan dalam bentuk jawapan Yang
+Bacaan Kali Yang Kedua dan Ketiga",,10.50 pg.,1050,Tuan Yang di-Pertua,"Soalan itu elok diinkorporasikan dalam bentuk jawapan Yang
 Berhormat Timbalan Menteri kemudian."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1050,Tuan Abun Sui Anyit,"Tuan Yang di-Pertua, masukkan juga soalan berkenaan
+Bacaan Kali Yang Kedua dan Ketiga",,10.50 pg.,1050,Tuan Abun Sui Anyit,"Tuan Yang di-Pertua, masukkan juga soalan berkenaan
 ddalam ucapan saya."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1050,Tuan Yang di-Pertua,Baik.
+Bacaan Kali Yang Kedua dan Ketiga",,10.50 pg.,1050,Tuan Yang di-Pertua,Baik.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1050,Tuan Abun Sui Anyit,"Itulah yang saya ingin katakan tadi. Persoalan saya kepada
+Bacaan Kali Yang Kedua dan Ketiga",,10.50 pg.,1050,Tuan Abun Sui Anyit,"Itulah yang saya ingin katakan tadi. Persoalan saya kepada
 kementerian ini ataupun kepada kerajaan kenapa ada perbezaan antara undang-undang ini
 dengan yang diamalkan di kawasan kita juga, negara kita di Semenanjung. Bolehkah Yang
 Berhormat Timbalan Menteri memberi penjelasan ini, sama ada kita perlu adakan satu
@@ -627,12 +627,12 @@ undang-undang yang menyeluruh di seluruh negara? Jadi, dengan itu Tuan Yang di-P
 saya menyokong rang undang-undang ini. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1050,Tuan Yang di-Pertua,"Baiklah. Terima kasih kepada Yang Berhormat Tuan Abun Sui
+Bacaan Kali Yang Kedua dan Ketiga",,10.50 pg.,1050,Tuan Yang di-Pertua,"Baiklah. Terima kasih kepada Yang Berhormat Tuan Abun Sui
 Anyit.
 Dipersilakan Yang Berhormat Timbalan Menteri membuat gulungan dan jawapan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1055,Timbalan Menteri Pengangkutan [Datuk Haji Hasbi bin Habibollah],"Terima kasih
+Bacaan Kali Yang Kedua dan Ketiga",,10.55 pg.,1055,Timbalan Menteri Pengangkutan [Datuk Haji Hasbi bin Habibollah],"Terima kasih
 Tuan Yang di-Pertua. Perkara yang dibangkitkan oleh Yang Berhormat Senator Dato’
 Kesavadas ada tujuh perkara yang dibangkitkan. Apa konsep dan modul latihan yang
 diaplikasikan dalam latihan *p-hailing* tersebut yang di-*mention*, yang telah pun disebut.
@@ -671,7 +671,7 @@ jumlah kemalangan melibatkan penghantar makanan mulai tahun 2018 sehingga Mei 20
 sebanyak 1,242."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1100,Timbalan Menteri Pengangkutan [Datuk Haji Hasbi bin Habibollah],"Daripada jumlah ini sebanyak 112 kematian, 82 kecederaan parah dan 1,048
+Bacaan Kali Yang Kedua dan Ketiga",,■1100,1100,Timbalan Menteri Pengangkutan [Datuk Haji Hasbi bin Habibollah],"Daripada jumlah ini sebanyak 112 kematian, 82 kecederaan parah dan 1,048
 kecederaan ringan telah dicatatkan. Apabila *accident*, apabila kemalangan ini, kita ada *figures*
 sebab ia pasti akan direkodkan oleh PDRM dan agensi-agensi lain. Akan tetapi jumlah
 penggiat, ia belum rasmi lagi. Tentang perkara mengejar tempahan yang ditekan oleh syarikat
@@ -682,11 +682,11 @@ Tuan Yang di-Pertua, jawapan belum semua tersusun. Jadi, mungkin akan tidak
 berurutan ya..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1100,Tuan Yang di-Pertua,"Tidak apa, asalkan mata boleh menari cepat atas baris-baris
+Bacaan Kali Yang Kedua dan Ketiga",,■1100,1100,Tuan Yang di-Pertua,"Tidak apa, asalkan mata boleh menari cepat atas baris-baris
 yang penting."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1100,Datuk Haji Hasbi bin Habibollah,"Ada, okey.
+Bacaan Kali Yang Kedua dan Ketiga",,■1100,1100,Datuk Haji Hasbi bin Habibollah,"Ada, okey.
 Perkara yang dibangkitkan oleh yang dibangkitkan oleh Senator Datin Hajah Ros
 Suryati binti Alang, sejauh mana pemantauan terkini bagi memastikan lori-lori mematuhi
 undang-undang. Aktiviti-aktiviti penguatkuasaan telah dilaksanakan secara berterusan oleh
@@ -727,20 +727,20 @@ Untuk makluman, LKM bagi kenderaan motosikal 1,500cc ke bawah hanyalah RM2. Kala
 turunkan lagi, payah..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1100,ANNOTATION,[Ketawa]
+Bacaan Kali Yang Kedua dan Ketiga",,■1100,1100,ANNOTATION,[Ketawa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1100,Datuk Haji Hasbi bin Habibollah,"Kadar LKM seterusnya berdasarkan kepada cc motosikal
+Bacaan Kali Yang Kedua dan Ketiga",,■1100,1100,Datuk Haji Hasbi bin Habibollah,"Kadar LKM seterusnya berdasarkan kepada cc motosikal
 tersebut. Namun cadangan diambil maklum.
 Satu lagi ada beberapa jawapan yang ingin saya teruskan apa yang dibangkitkan oleh
 Yang Berhormat Senator Tuan Abun Sui Anyit iaitu tentang perkara di Sabah Sarawak ini.
 Sedikit jawapan saya ini mungkin panjang sedikit Tuan Yang di-Pertua."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1100,Tuan Yang di-Pertua,"Buat seni ringkasan, bagus."
+Bacaan Kali Yang Kedua dan Ketiga",,■1100,1100,Tuan Yang di-Pertua,"Buat seni ringkasan, bagus."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1100,Datuk Haji Hasbi bin Habibollah,"*Insya-Allah*. Jadi, perkara berkaitan dengan yang
+Bacaan Kali Yang Kedua dan Ketiga",,■1100,1100,Datuk Haji Hasbi bin Habibollah,"*Insya-Allah*. Jadi, perkara berkaitan dengan yang
 dibangkitkan oleh Yang Berhormat iaitu tentang apakah kerajaan kita mempunyai hubungan
 rapat dengan negara-negara khususnya di Borneo, antaranya Brunei, Indonesia dan
 Malaysia.
@@ -786,49 +786,49 @@ menerima *p-hailers* dari negara jiran masing-masing ataupun tidak? Jadi perkara
 dalam perbincangan senantiasa."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1110,Datuk Haji Hasbi bin Habibollah,"Seterusnya ialah berkaitan dengan- saya rasanya Tuan Yang di-Pertua sudah habis.
+Bacaan Kali Yang Kedua dan Ketiga",,■1110,1110,Datuk Haji Hasbi bin Habibollah,"Seterusnya ialah berkaitan dengan- saya rasanya Tuan Yang di-Pertua sudah habis.
 Semua sudah saya jawab soalan-soalan kepada empat orang Yang Berhormat Senator."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1110,Tuan Yang di-Pertua,Saya sebenarnya tadi lagi terasa macam itu...
+Bacaan Kali Yang Kedua dan Ketiga",,■1110,1110,Tuan Yang di-Pertua,Saya sebenarnya tadi lagi terasa macam itu...
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1110,ANNOTATION,[Ketawa]
+Bacaan Kali Yang Kedua dan Ketiga",,■1110,1110,ANNOTATION,[Ketawa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1110,Datuk Haji Hasbi bin Habibollah,"Ya lah. Saya *dok* cari-cari lagi, Tuan Yang di-
+Bacaan Kali Yang Kedua dan Ketiga",,■1110,1110,Datuk Haji Hasbi bin Habibollah,"Ya lah. Saya *dok* cari-cari lagi, Tuan Yang di-
 Pertua. Kalau ada perkara-perkara yang boleh ditambah untuk ini. Jadi, saya ada pembetulan
 sedikit iaitu tentang 150cc - kenderaan tadi mungkin saya salah sebut mengatakan “180cc”.
 Ia sebenarnya 150cc bagi motosikal. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1110,Tuan Yang di-Pertua,Baik.
+Bacaan Kali Yang Kedua dan Ketiga",,■1110,1110,Tuan Yang di-Pertua,Baik.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1110,Tuan Abun Sui Anyit,"Tuan Yang di-Pertua, oleh sebab Yang Berhormat Timbalan
+Bacaan Kali Yang Kedua dan Ketiga",,■1110,1110,Tuan Abun Sui Anyit,"Tuan Yang di-Pertua, oleh sebab Yang Berhormat Timbalan
 Menteri mencari soalan, bolehkah saya tambah soalan?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1110,Tuan Yang di-Pertua,"Eh, ada lagi."
+Bacaan Kali Yang Kedua dan Ketiga",,■1110,1110,Tuan Yang di-Pertua,"Eh, ada lagi."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1110,Tuan Abun Sui Anyit,"Adakah CIQ di sempadan Indonesia itu, antara Nusantara nanti
+Bacaan Kali Yang Kedua dan Ketiga",,■1110,1110,Tuan Abun Sui Anyit,"Adakah CIQ di sempadan Indonesia itu, antara Nusantara nanti
 di mana CIQ itu di Tapak Megah, Hulu Rajang, Daerah Belaga, daerah kelahiran saya, harap
 diaktifkan di kemudian hari."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1110,Tuan Yang di-Pertua,"Ya, sebenarnya Yang Berhormat Timbalan Menteri kata sudah
+Bacaan Kali Yang Kedua dan Ketiga",,■1110,1110,Tuan Yang di-Pertua,"Ya, sebenarnya Yang Berhormat Timbalan Menteri kata sudah
 selesai. Jadi, bila sudah selesai tidak boleh disoal lagi tetapi terserahlah. Bak kata orang, *kot*
 injap hendak buka sedikit."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1110,Datuk Haji Hasbi bin Habibollah,
+Bacaan Kali Yang Kedua dan Ketiga",,■1110,1110,Datuk Haji Hasbi bin Habibollah,
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1110,ANNOTATION,[Ketawa]
+Bacaan Kali Yang Kedua dan Ketiga",,■1110,1110,ANNOTATION,[Ketawa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1110,Datuk Haji Hasbi bin Habibollah,"Jadi, semua penetapan sempadan ini
+Bacaan Kali Yang Kedua dan Ketiga",,■1110,1110,Datuk Haji Hasbi bin Habibollah,"Jadi, semua penetapan sempadan ini
 sudah pastinya akan membabitkan kementerian lain- KDN, dan banyak lagi kementerian lain.
 Jadi, saya rasa kita pihak MOT hanya akan dibawa bersama apabila keputusan untuk
 mengaktifkan dan membangunkan sempadan-sempadan terutamanya kalau kita di Sarawak
@@ -838,45 +838,45 @@ dengan kawasan Nusantara, Indonesia yang baharu- ini sudah pasti itu. *Insya-All
 kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1110,Tuan Yang di-Pertua,"Baiklah. Ahli-ahli Yang Berhormat, sekarang saya kemukakan
+Bacaan Kali Yang Kedua dan Ketiga",,■1110,1110,Tuan Yang di-Pertua,"Baiklah. Ahli-ahli Yang Berhormat, sekarang saya kemukakan
 masalah kepada Majlis bagi diputuskan. Masalahnya ialah bahawa rang undang-undang ini
 dibacakan kali yang kedua sekarang."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1110,ANNOTATION,"[Masalah dikemukakan bagi diputuskan, dan disetujukan]"
+Bacaan Kali Yang Kedua dan Ketiga",,■1110,1110,ANNOTATION,"[Masalah dikemukakan bagi diputuskan, dan disetujukan]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1110,ANNOTATION,"[Rang undang-undang dibacakan kali yang kedua dan diserahkan kepada Dewan
+Bacaan Kali Yang Kedua dan Ketiga",,■1110,1110,ANNOTATION,"[Rang undang-undang dibacakan kali yang kedua dan diserahkan kepada Dewan
 sebagai Jawatankuasa]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1110,ANNOTATION,[Majlis bersidang dalam Jawatankuasa]
+Bacaan Kali Yang Kedua dan Ketiga",,■1110,1110,ANNOTATION,[Majlis bersidang dalam Jawatankuasa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1110,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Jawatankuasa]
+Bacaan Kali Yang Kedua dan Ketiga",,■1110,1110,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Jawatankuasa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1110,ANNOTATION,[Fasal-fasal dikemukakan kepada Jawatankuasa]
+Bacaan Kali Yang Kedua dan Ketiga",,■1110,1110,ANNOTATION,[Fasal-fasal dikemukakan kepada Jawatankuasa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1110,ANNOTATION,[Fasal-fasal 1 hingga 7 diperintahkan jadi sebahagian daripada rang undang-undang]
+Bacaan Kali Yang Kedua dan Ketiga",,■1110,1110,ANNOTATION,[Fasal-fasal 1 hingga 7 diperintahkan jadi sebahagian daripada rang undang-undang]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1110,ANNOTATION,[Rang undang-undang dimaklumkan kepada Majlis sekarang]
+Bacaan Kali Yang Kedua dan Ketiga",,■1110,1110,ANNOTATION,[Rang undang-undang dimaklumkan kepada Majlis sekarang]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1110,ANNOTATION,[Majlis Mesyuarat bersidang semula]
+Bacaan Kali Yang Kedua dan Ketiga",,■1110,1110,ANNOTATION,[Majlis Mesyuarat bersidang semula]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1110,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
+Bacaan Kali Yang Kedua dan Ketiga",,■1110,1110,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG LEMBAGA PELESENAN
 KENDERAAN PERDAGANGAN (PINDAAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1110,ANNOTATION,"[Rang undang-undang dilaporkan dengan tidak ada pindaan; dibacakan kali yang
+Bacaan Kali Yang Kedua dan Ketiga",,■1110,1110,ANNOTATION,"[Rang undang-undang dilaporkan dengan tidak ada pindaan; dibacakan kali yang
 ketiga, disokong oleh Menteri di Jabatan Perdana Menteri (Hal Ehwal Agama) (Dato’ Setia Dr.
 Haji Mohd Na’im bin Haji Mokhtar) dan diluluskan]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1115,Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh],"Tuan Yang di-Pertua, saya mohon
+Bacaan Kali Yang Kedua dan Ketiga",,11.15 pg.,1115,Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh],"Tuan Yang di-Pertua, saya mohon
 mencadangkan iaitu rang undang-undang bernama suatu Akta Pemansuhan Hukuman Mati
 Mandatori 2023 dibacakan kali yang kedua sekarang.
 Tuan Yang di-Pertua, rang undang-undang yang akan saya bentangkan ini merupakan
@@ -913,10 +913,10 @@ memansuhkan hukuman mati mandatori bermula dengan seksyen 39B, Akta Dadah
 Berbahaya 1952"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1115,ANNOTATION,[Akta 234]
+Bacaan Kali Yang Kedua dan Ketiga",,11.15 pg.,1115,ANNOTATION,[Akta 234]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1115,Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh],". Keputusan kerajaan untuk memansuhkan hukuman mandatori
+Bacaan Kali Yang Kedua dan Ketiga",,11.15 pg.,1115,Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh],". Keputusan kerajaan untuk memansuhkan hukuman mandatori
 dibuat rentetan daripada keputusan-keputusan Mesyuarat Jemaah Menteri yang terdahulu
 yang mendapati terdapat keperluan supaya kajian yang lebih mendalam dibuat terhadap
 keputusan untuk memansuhkan hukuman mati mandatori.
@@ -933,7 +933,7 @@ daripada institusi pengajian awam terkemuka dan pakar kajian jenayah ataupun den
 *criminologist*."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1120,Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh],"Jawatankuasa Khas ini telah melaksanakan kajian yang bersifat komprehensif dan
+Bacaan Kali Yang Kedua dan Ketiga",,■1120,1120,Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh],"Jawatankuasa Khas ini telah melaksanakan kajian yang bersifat komprehensif dan
 holistik melalui pelbagai kaedah pengumpulan data dan maklumat daripada pelbagai lapisan
 masyarakat seperti wakil kementerian, jabatan, agensi penguat kuasa, pakar dari dalam dan
 luar negara dalam sistem pengadilan jenayah, khususnya berkaitan dengan hukuman mati,
@@ -1026,10 +1026,10 @@ yang mengandungi senarai akta yang dipinda di bawah akta yang dicadangkan.
 Bahagian II merupakan pindaan kepada Kanun Keseksaan"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1120,ANNOTATION,[Akta 574]
+Bacaan Kali Yang Kedua dan Ketiga",,■1120,1120,ANNOTATION,[Akta 574]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1120,Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh],"yang bertujuan
+Bacaan Kali Yang Kedua dan Ketiga",,■1120,1120,Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh],"yang bertujuan
 untuk antara lain memansuhkan hukuman mati mandatori. Pertamanya, pindaan kepada
 Kanun Keseksaan ini bertujuan untuk menggantikan hukuman mati mandatori dengan
 hukuman mati yang tertakluk kepada budi bicara mahkamah bagi kesalahan-kesalahan di
@@ -1055,10 +1055,10 @@ membolehkan aktiviti jenayah terancang;
 (ix) seksyen 374A iaitu mengambil tebusan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1130,ANNOTATION,[Timbalan Yang di-Pertua mempengerusikan Mesyuarat]
+Bacaan Kali Yang Kedua dan Ketiga",,■1130,1130,ANNOTATION,[Timbalan Yang di-Pertua mempengerusikan Mesyuarat]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1130,Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh],"Fasal 6 bertujuan untuk meminda seksyen 121, Akta 574 bagi mengubah hukuman
+Bacaan Kali Yang Kedua dan Ketiga",,■1130,1130,Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh],"Fasal 6 bertujuan untuk meminda seksyen 121, Akta 574 bagi mengubah hukuman
 bagi kesalahan memerangi atau percubaan untuk memerangi atau bersubahat memerangi
 Yang di-Pertuan Agong, Raja atau Yang di-Pertua Negeri daripada pemenjaraan seumur
 hidup kepada hukuman pemenjaraan bagi suatu tempoh yang tidak kurang daripada 30 tahun,
@@ -1098,10 +1098,10 @@ Akta 37 sebelum tarikh permulaan kuat kuasa akta ini.
 Bahagian IV merupakan pindaan kepada Akta Senjata Api 1960"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1130,ANNOTATION,[Akta 206]
+Bacaan Kali Yang Kedua dan Ketiga",,■1130,1130,ANNOTATION,[Akta 206]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1130,Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh],". Fasal 47
+Bacaan Kali Yang Kedua dan Ketiga",,■1130,1130,Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh],". Fasal 47
 bertujuan untuk meminda seksyen 2(1), Akta 206 untuk memotong takrif *“pemenjaraan
 seumur hidup”.*
 Fasal 48 bertujuan untuk meminda seksyen 14, Akta 206 untuk mengubah hukuman
@@ -1116,10 +1116,10 @@ Akta 206 sebelum tarikh permulaan kuat kuasa akta ini.
 Bahagian V melibatkan pindaan kepada Akta Penculikan 1961"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1130,ANNOTATION,[Akta 365]
+Bacaan Kali Yang Kedua dan Ketiga",,■1130,1130,ANNOTATION,[Akta 365]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1130,Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh],". Fasal 52
+Bacaan Kali Yang Kedua dan Ketiga",,■1130,1130,Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh],". Fasal 52
 bertujuan untuk meminda seksyen 3, Akta 365 untuk mengubah hukuman bagi kesalahan
 pemelarian, penahanan salah atau pengurungan salah untuk tebusan dengan antara lain,
 menghapuskan hukuman mati kepada hukuman pemenjaraan bagi tempoh tidak kurang
@@ -1130,10 +1130,10 @@ Akta 365 sebelum tarikh permulaan kuat kuasa akta ini.
 Bahagian VI melibatkan pindaan kepada Akta Dadah Berbahaya 1952"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1130,ANNOTATION,[Akta 234]
+Bacaan Kali Yang Kedua dan Ketiga",,■1130,1130,ANNOTATION,[Akta 234]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1130,Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh],".
+Bacaan Kali Yang Kedua dan Ketiga",,■1130,1130,Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh],".
 Fasal 54 bertujuan untuk meminda seksyen 39B, Akta 234 di mana subfasal 54(a)
 bertujuan untuk mengubah hukuman bagi kesalahan mengedar dadah dalam seksyen 39B(2)
 dengan mengubah bilangan sebatan daripada minimum 15 kali kepada minimum 12 kali jika
@@ -1148,10 +1148,10 @@ Akta 234 sebelum tarikh permulaan kuat kuasa akta ini.
 Bahagian VII melibatkan pindaan kepada Akta Perdagangan Strategik 2010"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1130,ANNOTATION,[Akta 708]
+Bacaan Kali Yang Kedua dan Ketiga",,■1130,1130,ANNOTATION,[Akta 708]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1130,Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh],"iaitu untuk menggantikan hukuman pemenjaraan selama hayat dengan hukuman
+Bacaan Kali Yang Kedua dan Ketiga",,■1130,1130,Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh],"iaitu untuk menggantikan hukuman pemenjaraan selama hayat dengan hukuman
 pemenjaraan bagi tempoh tidak kurang daripada 30 tahun tetapi tidak melebihi 40 tahun bagi
 seksyen 9, 10, 11 dan 12 Akta 708.
 Bahagian VIII melibatkan pindaan kepada Kanun Tatacara Jenayah berbangkit
@@ -1171,10 +1171,10 @@ sesuatu tempoh pemenjaraan. Namun, semestinya kelayakan parol ini masih tertaklu
 kepada sebarang pindaan seksyen 46E, Akta Penjara 1995"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1130,ANNOTATION,[Akta 537]
+Bacaan Kali Yang Kedua dan Ketiga",,■1130,1130,ANNOTATION,[Akta 537]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1130,Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh],". Cadangan hukuman
+Bacaan Kali Yang Kedua dan Ketiga",,■1130,1130,Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh],". Cadangan hukuman
 gantian ini memberi penekanan kepada *restorative justice*.
 Mengikut prinsip ini, banduan perlu diberi peluang kedua untuk memperbaiki dirinya
 dengan bantuan dan sokongan dari Jabatan Penjara Malaysia serta ahli keluarga sendiri.
@@ -1189,21 +1189,21 @@ undang-undang ini merupakan langkah awal dalam mentransformasikan sistem keadila
 jenayah di Malaysia."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1140,Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh],"Saya percaya selepas ini, lebih banyak semakan perundangan akan dilaksanakan
+Bacaan Kali Yang Kedua dan Ketiga",,■1140,1140,Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh],"Saya percaya selepas ini, lebih banyak semakan perundangan akan dilaksanakan
 oleh kerajaan dalam memastikan komitmen kerajaan untuk mewujudkan sistem perundangan
 yang dinamik, progresif dan relevan dengan keperluan semasa. Dengan ini Tuan Yang di-
 Pertua,saya mohon untuk mencadangkan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1140,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Timbalan Menteri
+Bacaan Kali Yang Kedua dan Ketiga",,■1140,1140,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Timbalan Menteri
 di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi), Tuan Ramkarpal Singh
 a/l Karpal Singh di atas huraian yang telah diberikan. Saya mohon ada sesiapa menyokong?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1140,Timbalan Menteri Pembangunan Usahawan dan Koperasi [Puan Saraswathy a/p Kandasami],"Tuan Yang di-Pertua, saya mohon menyokong."
+Bacaan Kali Yang Kedua dan Ketiga",,■1140,1140,Timbalan Menteri Pembangunan Usahawan dan Koperasi [Puan Saraswathy a/p Kandasami],"Tuan Yang di-Pertua, saya mohon menyokong."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1140,Timbalan Yang di-Pertua,"Terima kasih. Ahli-ahli Yang Berhormat, masalah di
+Bacaan Kali Yang Kedua dan Ketiga",,■1140,1140,Timbalan Yang di-Pertua,"Terima kasih. Ahli-ahli Yang Berhormat, masalah di
 hadapan Majlis ialah suatu akta untuk meminda Kanun Keseksaan, Akta Senjata Api (Penalti
 Lebih Berat) 1971, Akta Senjata 1960, Akta Penculikan 1961, Akta Dadah Berbahaya 1952,
 Akta Perdagangan Strategik 2010 dan Kanun Tatacara Jenayah untuk memansuhkan
@@ -1217,7 +1217,7 @@ Untuk itu, saya menjemput pembahas yang pertama, Yang Berhormat Senator Puan
 Noorita binti Sual. Dipersilakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1142,Puan Noorita binti Sual,"Ka’ansayan. Salam sejahtera dan selamat pagi Tuan Yang
+Bacaan Kali Yang Kedua dan Ketiga",,11.42 pg.,1142,Puan Noorita binti Sual,"Ka’ansayan. Salam sejahtera dan selamat pagi Tuan Yang
 di-Pertua dan barisan Ahli Yang Berhormat Senator yang lain. Terlebih dahulu ingin saya
 mengucapkan terima kasih atas ruang yang diberikan kepada saya untuk membahaskan
 Rang Undang-undang Pemansuhan Hukuman Mati Mandatori 2023.
@@ -1291,12 +1291,12 @@ sokongan saya terhadap Rang Undang-undang Pemansuhan Hukuman Mati Mandatori 2023
 Sekian."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1142,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator Puan
+Bacaan Kali Yang Kedua dan Ketiga",,11.42 pg.,1142,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator Puan
 Noorita binti Sual atas perbahasan tadi.
 Seterusnya saya menjemput Yang Berhormat Senator Dato’ Kesavadas."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1148,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Tuan Yang di-Pertua. Tuan
+Bacaan Kali Yang Kedua dan Ketiga",,11.48 pg.,1148,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Tuan Yang di-Pertua. Tuan
 Yang di-Pertua, sebagai pengamal undang-undang, saya berpandangan bahawa
 pemansuhan hukuman mati mandatori yang digariskan menerusi pindaan rang undang-
 undang ini bertepatan dengan prinsip kesaksamaan dalam keadilan yang kita perjuangkan
@@ -1315,7 +1315,7 @@ yang dengan mudah mendapat kelulusan Menteri tanpa melalui penilaian atau keteta
 tertentu."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1150,Dato’ Kesavadas a/l A Achyuthan Nair,"Perkara tersebut juga turut melibatkan keadilan manusiawi yang perlu dilaksanakan
+Bacaan Kali Yang Kedua dan Ketiga",,■1150,1150,Dato’ Kesavadas a/l A Achyuthan Nair,"Perkara tersebut juga turut melibatkan keadilan manusiawi yang perlu dilaksanakan
 menerusi kesaksamaan undang-undang. Kita tidak mahu hukuman yang dinyatakan dalam
 pindaan seksyen 14 hanya dikenakan kepada individu pengilang atau syarikat yang langsung
 tidak berlesen sedangkan masih ada syarikat yang menjalankan aktiviti pembuatan senjata
@@ -1369,55 +1369,55 @@ kepada pesalah-pesalah yang telah dihukum gantung mati? Sekian sahaja ucapan say
 menyokong."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1150,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Dato’ Kesavadas
+Bacaan Kali Yang Kedua dan Ketiga",,■1150,1150,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Dato’ Kesavadas
 atas perbahasan tadi.
 Seterusnya saya menjemput Yang Berhormat Dato’ Dr. Ahmad Azam bin Hamzah,
 silakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1155,Dato’ Dr. Ahmad Azam bin Hamzah,"*Bismillahi Rahmani Rahim. Assalamualaikum
+Bacaan Kali Yang Kedua dan Ketiga",,11.55 pg.,1155,Dato’ Dr. Ahmad Azam bin Hamzah,"*Bismillahi Rahmani Rahim. Assalamualaikum
 warahmatullahi wabarakatuh*, salam sejahtera.
 Tuan Yang di-Pertua, terdapat 12 seksyen dalam lapan Undang-undang Persekutuan
 yang memberikan hukuman mati kepada mereka yang disabitkan kesalahan. Hukuman mati
 mandatori untuk 12 seksyen itu antaranya adalah Kanun Keseksaan"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1155,ANNOTATION,[Akta 574]
+Bacaan Kali Yang Kedua dan Ketiga",,11.55 pg.,1155,ANNOTATION,[Akta 574]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1155,Dato’ Dr. Ahmad Azam bin Hamzah,", Akta
+Bacaan Kali Yang Kedua dan Ketiga",,11.55 pg.,1155,Dato’ Dr. Ahmad Azam bin Hamzah,", Akta
 Perdagangan Strategik 2010"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1155,ANNOTATION,[Akta 708]
+Bacaan Kali Yang Kedua dan Ketiga",,11.55 pg.,1155,ANNOTATION,[Akta 708]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1155,Dato’ Dr. Ahmad Azam bin Hamzah,", Kanun Tatacara Jenayah, Akta Senjata Api (Penalti
+Bacaan Kali Yang Kedua dan Ketiga",,11.55 pg.,1155,Dato’ Dr. Ahmad Azam bin Hamzah,", Kanun Tatacara Jenayah, Akta Senjata Api (Penalti
 Lebih Berat) 1971"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1155,ANNOTATION,[Akta 37]
+Bacaan Kali Yang Kedua dan Ketiga",,11.55 pg.,1155,ANNOTATION,[Akta 37]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1155,Dato’ Dr. Ahmad Azam bin Hamzah,", Akta Senjata 1960"
+Bacaan Kali Yang Kedua dan Ketiga",,11.55 pg.,1155,Dato’ Dr. Ahmad Azam bin Hamzah,", Akta Senjata 1960"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1155,ANNOTATION,[Akta 206]
+Bacaan Kali Yang Kedua dan Ketiga",,11.55 pg.,1155,ANNOTATION,[Akta 206]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1155,Dato’ Dr. Ahmad Azam bin Hamzah,Akta Penculikan 1961
+Bacaan Kali Yang Kedua dan Ketiga",,11.55 pg.,1155,Dato’ Dr. Ahmad Azam bin Hamzah,Akta Penculikan 1961
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1155,ANNOTATION,[Akta 365]
+Bacaan Kali Yang Kedua dan Ketiga",,11.55 pg.,1155,ANNOTATION,[Akta 365]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1155,Dato’ Dr. Ahmad Azam bin Hamzah,dan Akta Dadah Berbahaya 1952
+Bacaan Kali Yang Kedua dan Ketiga",,11.55 pg.,1155,Dato’ Dr. Ahmad Azam bin Hamzah,dan Akta Dadah Berbahaya 1952
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1155,ANNOTATION,[Akta 234]
+Bacaan Kali Yang Kedua dan Ketiga",,11.55 pg.,1155,ANNOTATION,[Akta 234]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1155,Dato’ Dr. Ahmad Azam bin Hamzah,".
+Bacaan Kali Yang Kedua dan Ketiga",,11.55 pg.,1155,Dato’ Dr. Ahmad Azam bin Hamzah,".
 Hukuman mati mandatori bermaksud hakim hanya boleh menjatuhkan hukuman
 tersebut kepada individu yang disabitkan kesalahan mengikut seksyen tersebut tanpa ada
 pilihan lain. Maksudnya, mahkamah tidak ada pilihan melainkan mengikut hukuman yang telah
@@ -1457,7 +1457,7 @@ dan terjamin. Sekali gus mencerminkan ketelusan kerajaan dalam membaik pulih sis
 keadilan jenayah negara yang serba dinamik ini."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1200,Dato’ Dr. Ahmad Azam bin Hamzah,"Walau bagaimanapun ada rungutan dan suara tidak puas hati kedengaran dalam
+Bacaan Kali Yang Kedua dan Ketiga",,■1200,1200,Dato’ Dr. Ahmad Azam bin Hamzah,"Walau bagaimanapun ada rungutan dan suara tidak puas hati kedengaran dalam
 kalangan keluarga mangsa yang terlibat. Mereka tidak bersetuju dengan langkah kerajaan
 memansuhkan hukuman mati mandatori negara ini. Mereka berpendapat hukuman penjara
 seumur hidup bukanlah hukuman yang sesuai bagi memberi kesedaran kepada orang ramai
@@ -1477,13 +1477,13 @@ Harus diingat nyawa merupakan pinjaman Allah kepada manusia. Jaga dan hargailah
 dengan baik dengan seadil-adilnya. Sekian, terima kasih dan saya mohon menyokong."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1200,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Dato’ Dr. Ahmad
+Bacaan Kali Yang Kedua dan Ketiga",,■1200,1200,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Dato’ Dr. Ahmad
 Azam Hamzah atas perbahasan tadi.
 Seterusnya saya menjemput Yang Berhormat Dato’ Arman Azha Abu Hanifah,
 dipersilakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1201,Dato’ Arman Azha Abu Hanifah,"*Assalamualaikum warahmatullahi wabarakatuh,*
+Bacaan Kali Yang Kedua dan Ketiga",,12.01 tgh.,1201,Dato’ Arman Azha Abu Hanifah,"*Assalamualaikum warahmatullahi wabarakatuh,*
 salam sejahtera, salam perpaduan. Terima kasih Tuan Yang di-Pertua kerana membenarkan
 saya mengambil bahagian dalam sesi perbahasan Rang Undang-undang Pemansuhan
 Hukuman Mati Mandatori 2023.
@@ -1541,12 +1541,12 @@ Assalamualaikum warahmatullahi wabarakatuh.* Terima kasih Tuan Yang di-Pertua da
 Berhormat Timbalan Menteri yang sudi hadir di Dewan pada hari ini."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1201,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Dato’ Arman Azha
+Bacaan Kali Yang Kedua dan Ketiga",,12.01 tgh.,1201,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Dato’ Arman Azha
 Abu Hanifah atas perbahasan tadi.
 Seterusnya saya menjemput Yang Berhormat Dr. Lingeshwaran, dipersilakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1206,Dr. Lingeshwaran a/l Dato' Seri R. Arunasalam,"Salam sejahtera dan salam
+Bacaan Kali Yang Kedua dan Ketiga",,12.06 tgh.,1206,Dr. Lingeshwaran a/l Dato' Seri R. Arunasalam,"Salam sejahtera dan salam
 Malaysia Madani. Tuan Yang di-Pertua, terima kasih kerana memberi peluang kepada saya
 untuk mengambil bahagian dalam perbahasan rang undang-undang yang menarik perhatian
 bukan sahaja Ahli-ahli Dewan yang mulia, bahkan setiap pemegang taruh yang
@@ -1588,7 +1588,7 @@ utama setiap hukuman yang dijatuhkan. Maka, saya merayu kita- semua melihat pema
 hukuman mati mandatori dari kaca mata ini."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1210,Dr. Lingeshwaran a/l Dato' Seri R. Arunasalam,"Tuan Yang di-Pertua, apa yang kita perlukan pada hari ini ialah pendekatan daripada
+Bacaan Kali Yang Kedua dan Ketiga",,■1210,1210,Dr. Lingeshwaran a/l Dato' Seri R. Arunasalam,"Tuan Yang di-Pertua, apa yang kita perlukan pada hari ini ialah pendekatan daripada
 segi pemulihan. Soalan saya kepada Yang Berhormat Menteri; adakah proses pemulihan
 sedia ada efektif dan apakah statistik jenayah ulangan? Adakah seseorang yang telah habis
 menjalani hukuman penjara akan mempunyai harapan baharu dalam menerapkan diri dalam
@@ -1610,13 +1610,13 @@ Tuan Yang di-Pertua, saya ingin menekankan sekali lagi sokongan saya kepada Rang
 Undang-undang Pemansuhan Hukuman Mati Mandatori 2023. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1210,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator Dr.
+Bacaan Kali Yang Kedua dan Ketiga",,■1210,1210,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator Dr.
 Lingeshwaran a/l Dato' Seri R. Arunasalam atas pandangan tadi.
 Seterusnya, saya menjemput Yang Berhormat Senator Datuk Dr. Dominic Lau Hoe
 Chai. Dipersilakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1212,Datuk Dr. Dominic Lau Hoe Chai,"Terima kasih kepada Tuan Yang di-Pertua.
+Bacaan Kali Yang Kedua dan Ketiga",,12.12 tgh.,1212,Datuk Dr. Dominic Lau Hoe Chai,"Terima kasih kepada Tuan Yang di-Pertua.
 Terima kasih kerana memberikan saya peluang untuk mengambil bahagian dalam
 perbahasan Rang Undang-undang Pemansuhan Hukuman Mati Mandatori 2023.
 Memang ini adalah penting kerana RUU ini bukan sahaja diperhatikan di seluruh
@@ -1667,10 +1667,10 @@ kepada pemansuhan ini dan saya berharap lebih banyak proses penerangan dan pasti
 yang bebas itu pulih sepenuhnya. Minta dua minit lagi."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1212,Timbalan Yang di-Pertua,Silakan.
+Bacaan Kali Yang Kedua dan Ketiga",,12.12 tgh.,1212,Timbalan Yang di-Pertua,Silakan.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1212,Datuk Dr. Dominic Lau Hoe Chai,"Terima kasih. Seterusnya yang terpenting saya
+Bacaan Kali Yang Kedua dan Ketiga",,12.12 tgh.,1212,Datuk Dr. Dominic Lau Hoe Chai,"Terima kasih. Seterusnya yang terpenting saya
 hendak bahas di sini ialah ekosistem keadilan jenayah. Kembali kepada ekosistem keadilan
 jenayah. Aspek pencegahan dan pemulihan di sistem penjara haruslah kita memperkasakan.
 Walaupun kita ganti hukuman mati mandatori itu kepada hukuman mati mengikut budi bicara
@@ -1701,7 +1701,7 @@ anggap belum kesal, belum taubat dan belum pulih kepada tahap yang memuaskan kep
 lima tahun lagi dan semakan tersebut akan dijalankan setiap 5 tahun."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1220,Datuk Dr. Dominic Lau Hoe Chai,"Dengan ini akhir kata *I* hendak katakan bahawa hukuman yang sewajar terhadap
+Bacaan Kali Yang Kedua dan Ketiga",,■1220,1220,Datuk Dr. Dominic Lau Hoe Chai,"Dengan ini akhir kata *I* hendak katakan bahawa hukuman yang sewajar terhadap
 kesalahan yang berbeza *nature of offense,* dengan izin, harus diambil kira. Kita boleh terima
 kes dadah dan bunuh memberikan kuasa budi bicara kepada hakim, kepada mahkamah
 dalam menghukum pesalah tetapi rakyat dan kerajaan mempertimbangkan juga hukuman
@@ -1712,21 +1712,21 @@ harapan saya memberikan sokongan penuh kepada kerajaan pimpinan perkhidmatan awa
 dalam melaksanakan pemansuhan hukuman mati mandatori. Saya menyokong. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1220,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat Senator Datuk Dr. Dominic
+Bacaan Kali Yang Kedua dan Ketiga",,■1220,1220,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat Senator Datuk Dr. Dominic
 Lau Hoe Chai atas perbahasan tadi.
 Seterusnya saya, menjemput Yang Berhormat Senator Tuan Musoddak bin Ahmad
 dipersilakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1221,Tuan Musoddak bin Ahmad,"*Bismillahi Rahmani Rahim. Assalamualaikum
+Bacaan Kali Yang Kedua dan Ketiga",,12.21 tgh.,1221,Tuan Musoddak bin Ahmad,"*Bismillahi Rahmani Rahim. Assalamualaikum
 warahmatullahi wabarakatuh.* Saya mulakan ucapan perbahasan saya ini dengan membaca
 sepotong ayat Al-Quran Surah An-Nisa..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1221,ANNOTATION,[Membaca sepotong ayat Al-Quran]
+Bacaan Kali Yang Kedua dan Ketiga",,12.21 tgh.,1221,ANNOTATION,[Membaca sepotong ayat Al-Quran]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1221,Tuan Musoddak bin Ahmad,"Ayat ini panjang
+Bacaan Kali Yang Kedua dan Ketiga",,12.21 tgh.,1221,Tuan Musoddak bin Ahmad,"Ayat ini panjang
 tetapi saya tidak berhajat untuk menghabiskannya. Tuan Yang di-Pertua, pembentangan
 kertas Rang Undang-undang Pemansuhan Hukuman Mati Mandatori 2023 ini secara
 prinsipnya seiring dengan undang-undang jenayah Islam. Saya meneliti syor tentang
@@ -1779,25 +1779,25 @@ mereka juga dilibatkan dalam proses pengampunan. Sekian terima kasih, saya menyo
 Tuan Yang di-Pertua."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1221,Timbalan Yang di-Pertua,"Terima kasih kepada yang Yang Berhormat Senator Tuan
+Bacaan Kali Yang Kedua dan Ketiga",,12.21 tgh.,1221,Timbalan Yang di-Pertua,"Terima kasih kepada yang Yang Berhormat Senator Tuan
 Musoddak bin Ahmad atas perbahasan tadi.
 Seterusnya saya menjemput Yang Berhormat Senator Tuan Haji Hussin bin Ismail,
 silakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1227,Tuan Haji Hussin bin Ismail,*Assalamualaikum warahmatullahi wabarakatuh.*
+Bacaan Kali Yang Kedua dan Ketiga",,12.27 tgh.,1227,Tuan Haji Hussin bin Ismail,*Assalamualaikum warahmatullahi wabarakatuh.*
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1227,Timbalan Yang di-Pertua,*Waalaikumussalam.*
+Bacaan Kali Yang Kedua dan Ketiga",,12.27 tgh.,1227,Timbalan Yang di-Pertua,*Waalaikumussalam.*
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1227,Tuan Haji Hussin bin Ismail,*Alhamdulillah...*
+Bacaan Kali Yang Kedua dan Ketiga",,12.27 tgh.,1227,Tuan Haji Hussin bin Ismail,*Alhamdulillah...*
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1227,ANNOTATION,[Membaca selawat]
+Bacaan Kali Yang Kedua dan Ketiga",,12.27 tgh.,1227,ANNOTATION,[Membaca selawat]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1227,Tuan Haji Hussin bin Ismail,"Terima kasih
+Bacaan Kali Yang Kedua dan Ketiga",,12.27 tgh.,1227,Tuan Haji Hussin bin Ismail,"Terima kasih
 kepada Tuan Yang di-Pertua atas keizinan kepada saya untuk turut sama berbahasa dalam
 tajuk Rang Undang-undang Pemansuhan Hukuman Mati Mandatori 2023 pada hari ini.
 Saya ingin mengambil sedikit ruang masa untuk sebelum kita masuk kepada
@@ -1825,7 +1825,7 @@ kelihatan keberkurangan jenayah dadah ini. Pengedar dadah tidak berkurang, pelak
 pun ketagih dadah terus meningkat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1230,Tuan Haji Hussin bin Ismail,"Sebenarnya, apakah yang menjadikan ia begini? Mungkin *kah* kerana program
+Bacaan Kali Yang Kedua dan Ketiga",,■1230,1230,Tuan Haji Hussin bin Ismail,"Sebenarnya, apakah yang menjadikan ia begini? Mungkin *kah* kerana program
 pendidikan ataupun jenayah itu pelaku atau hukum yang dilakukan sebelum ini walaupun
 sekeras itu tidak cukup untuk mendidik mahupun menggerunkan mereka.
 Dalam konteks kes dadah ini khususnya, dia mempunyai satu jenis jenayah yang
@@ -1846,16 +1846,16 @@ memutuskan perkara-perkara ini. Perkara yang saya hendak sebutkan ini ialah tent
 terkait dengan qisas. Dalam al-Quran ada menyebut..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1230,ANNOTATION,[Membaca sepotong ayat al-Quran]
+Bacaan Kali Yang Kedua dan Ketiga",,■1230,1230,ANNOTATION,[Membaca sepotong ayat al-Quran]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1230,Tuan Haji Hussin bin Ismail,Sama kita ini orang Islam...
+Bacaan Kali Yang Kedua dan Ketiga",,■1230,1230,Tuan Haji Hussin bin Ismail,Sama kita ini orang Islam...
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1230,ANNOTATION,[Membaca sepotong ayat al-Quran]
+Bacaan Kali Yang Kedua dan Ketiga",,■1230,1230,ANNOTATION,[Membaca sepotong ayat al-Quran]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1230,Tuan Haji Hussin bin Ismail,"Setaraf kedudukan
+Bacaan Kali Yang Kedua dan Ketiga",,■1230,1230,Tuan Haji Hussin bin Ismail,"Setaraf kedudukan
 hukumnya.
 Dalam bab puasa itu Allah SWT ada sebut. Dalam bab qisas itu yang juga Allah SWT
 ada sebut. Satu daripada yang terkait dengan qisas iaitu hukum bunuh dengan sengaja.
@@ -1891,10 +1891,10 @@ Tuan Yang di-Pertua, walaupun ada banyak perkara yang saya hendak sebut.
 Rasulullah SAW ada menyebut..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1230,ANNOTATION,[Membaca sepotong Hadis]
+Bacaan Kali Yang Kedua dan Ketiga",,■1230,1230,ANNOTATION,[Membaca sepotong Hadis]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1230,Tuan Haji Hussin bin Ismail,"*“Maafkan lah orang lain
+Bacaan Kali Yang Kedua dan Ketiga",,■1230,1230,Tuan Haji Hussin bin Ismail,"*“Maafkan lah orang lain
 nescaya Allah SWT maafkan kamu.”* Saya sebut kalau tersilap saya mohon cendekiawan-
 cendekiawan membetulkan.
 Saya harap mudah-mudahan dalam isu hukuman mati mandatori ada ruang-ruang lain
@@ -1904,13 +1904,13 @@ sahaja, bukan hakim sahaja. Peranan keluarga harus dimasukkan di dalam bidang ku
 pengampunan. *Wallahua’lam. Assalamualaikum Warahmatullahi Wabarakatuh.*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1230,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Tuan Haji Hussin
+Bacaan Kali Yang Kedua dan Ketiga",,■1230,1230,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Tuan Haji Hussin
 bin Ismail.
 Seterusnya, saya menjemput Yang Berhormat Datuk Wira Dr. Mohd Hatta bin Md
 Ramli. Dipersilakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1237,Datuk Wira Dr. Mohd Hatta bin Md Ramli,"Terima kasih Tuan Yang di-Pertua. Terima
+Bacaan Kali Yang Kedua dan Ketiga",,12.37 tgh.,1237,Datuk Wira Dr. Mohd Hatta bin Md Ramli,"Terima kasih Tuan Yang di-Pertua. Terima
 kasih Yang Berhormat Menteri atas pembentangan rang undang-undang pindaan ini dan
 pemansuhan hukuman mati mandatori ini. Saya rasa persiapan yang dibuat oleh kerajaan
 melalui jawatankuasa yang ditubuhkan agak ekstensif dengan libat urus pelbagai pihak.
@@ -1942,7 +1942,7 @@ satu perkara yang lain, tetapi sebagai hakim yang lengkap, dia juga boleh member
 hukumannya."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1240,Datuk Wira Dr. Mohd Hatta bin Md Ramli,"Mengubah daripada mati mandatori kepada hukuman penjara antara 30 tahun dan 40
+Bacaan Kali Yang Kedua dan Ketiga",,■1240,1240,Datuk Wira Dr. Mohd Hatta bin Md Ramli,"Mengubah daripada mati mandatori kepada hukuman penjara antara 30 tahun dan 40
 tahun serta sebatan bagi sesetengah kes dilihat sebagai suatu yang munasabah, yang dilihat
 adil. Cumanya, seandainya yang dijatuhi hukuman itu ialah seorang yang berumur 60 tahun
 contohnya, 30 tahun dalam jel ini, 90 tahun. Lebih kurang hukuman mati jugalah. Hukuman
@@ -1967,13 +1967,13 @@ mengambil kira semua aspek keadilan yang ada di muka bumi ini. Tuan Yang di-Pert
 mohon menyokong."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1240,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator Datuk Wira
+Bacaan Kali Yang Kedua dan Ketiga",,■1240,1240,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator Datuk Wira
 Dr. Mohd Hatta bin Md Ramli atas perbahasan tadi.
 Seterusnya saya menjemput Yang Berhormat Senator Dato Dr. Nuing Jeluing,
 dipersilakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1243,Dato Dr. Nuing Jeluing,"Terima kasih Tuan Yang di-Pertua, atas peluang untuk
+Bacaan Kali Yang Kedua dan Ketiga",,12.43 tgh.,1243,Dato Dr. Nuing Jeluing,"Terima kasih Tuan Yang di-Pertua, atas peluang untuk
 membahaskan Akta Pemansuhan Hukuman Mati Mandatori 2023. Akta ini ialah untuk
 memansuhkan hukuman mati mandatori dan mengubah hukuman pemenjaraan sepanjang
 hayat dan sebatan. Untuk tujuan tersebut, akta-akta berikut akan dipinda iaitu Kanun
@@ -2017,24 +2017,24 @@ Pemansuhan Hukuman Mati Mandatori, hakim-hakim dengan kebijaksanaan mereka dihar
 menjatuhkan hukuman yang setimpal dengan jenayah. Dengan itu, saya mohon menyokong."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1243,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator Dato Dr.
+Bacaan Kali Yang Kedua dan Ketiga",,12.43 tgh.,1243,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator Dato Dr.
 Nuing Jeluing atas perbahasan tadi.
 Seterusnya, saya mempersilakan Yang Berhormat Senator Tuan Abdul Nasir bin Haji
 Idris, dipersilakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1249,Tuan Abdul Nasir bin Haji Idris,"*Bismillahi Rahmani Rahim.* Tuan Yang di-Pertua,
+Bacaan Kali Yang Kedua dan Ketiga",,12.49 tgh.,1249,Tuan Abdul Nasir bin Haji Idris,"*Bismillahi Rahmani Rahim.* Tuan Yang di-Pertua,
 *assalamualaikum warahmatullahi wabarakatuh...*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1249,ANNOTATION,[Membaca sepotong doa]
+Bacaan Kali Yang Kedua dan Ketiga",,12.49 tgh.,1249,ANNOTATION,[Membaca sepotong doa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1249,Tuan Abdul Nasir bin Haji Idris,"Terima kasih Tuan Yang di-Pertua, kerana memberikan peluang untuk saya sama-
+Bacaan Kali Yang Kedua dan Ketiga",,12.49 tgh.,1249,Tuan Abdul Nasir bin Haji Idris,"Terima kasih Tuan Yang di-Pertua, kerana memberikan peluang untuk saya sama-
 sama membahaskan Rang Undang-undang Pemansuhan Hukuman Mati Mandatori 2023."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1250,Tuan Abdul Nasir bin Haji Idris,"Tuan Yang di-Pertua, sudah menjadi hak asasi bagi setiap manusia yang dijamin oleh
+Bacaan Kali Yang Kedua dan Ketiga",,■1250,1250,Tuan Abdul Nasir bin Haji Idris,"Tuan Yang di-Pertua, sudah menjadi hak asasi bagi setiap manusia yang dijamin oleh
 Perlembagaan Persekutuan kita, dijamin oleh agama kita iaitu hak kebebasan kita untuk
 beragama, kebebasan untuk diri kita, kebebasan untuk kita bercakap, kebebasan untuk kita
 memberikan pendapat, juga kebebasan untuk kita membuat pemilihan dan juga kebebasan
@@ -2078,13 +2078,13 @@ data maklumat sedikit tentang jumlah pemenjaraan seumur hidup, jumlah banduan ya
 di penjara-penjara kita. Sekian, saya mahu menyokong. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1250,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator Tuan Abdul
+Bacaan Kali Yang Kedua dan Ketiga",,■1250,1250,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator Tuan Abdul
 Nasir bin Haji Idris atas perbahasan tadi.
 Seterusnya saya mempersilakan Yang Berhormat Senator Datuk Bobbey Ah Fang bin
 Suan. Dipersilakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1255,Datuk Bobbey Ah Fang bin Suan,"Terima kasih Tuan Yang di-Pertua atas peluang
+Bacaan Kali Yang Kedua dan Ketiga",,12.55 tgh.,1255,Datuk Bobbey Ah Fang bin Suan,"Terima kasih Tuan Yang di-Pertua atas peluang
 untuk saya turut serta dalam perbahasan kali ini tentang Rang Undang-undang Pemansuhan
 Hukuman Mati Mandatori 2023 ini yang sekian lama ditunggu-tunggu seperti yang dikatakan
 oleh Yang Berhormat Timbalan Menteri tadi.
@@ -2128,7 +2128,7 @@ persoalan hukum sahaja tetapi juga melibatkan pemulihan dan pendidikan serta men
 aspirasi keadilan itu sendiri."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1300,Datuk Bobbey Ah Fang bin Suan,"Akhir kata, saya sogokkan kepada kita nukilan Profesor Mai Sato dari *Monash
+Bacaan Kali Yang Kedua dan Ketiga",,■1300,1300,Datuk Bobbey Ah Fang bin Suan,"Akhir kata, saya sogokkan kepada kita nukilan Profesor Mai Sato dari *Monash
 University Australia*, negara yang pernah berbalah secara siasah dengan kita suatu masa
 dahulu berkait hukuman mati. Dengan izin, *“I now take the wheel together with more than half
 of the countries in the world that the death penalty is unnecessary for all crimes.”*
@@ -2144,13 +2144,13 @@ Tuan Yang di-Pertua, saya mohon menyokong rang undang-undang ini supaya
 diluluskan. Sekian, terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1300,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator Datuk
+Bacaan Kali Yang Kedua dan Ketiga",,■1300,1300,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator Datuk
 Bobbey Ah Fan Bin Suan atas perbahasan tadi.
 Dengan ini, saya mempersilakan Yang Berhormat Senator Datuk Judiet binti Fidilis @
 Noraini binti Idris. Silakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1302,Datuk Judiet binti Fidilis @ Noraini binti Idris,"*Assalamualaikum warahmatullahi
+Bacaan Kali Yang Kedua dan Ketiga",,1.02 tgh.,1302,Datuk Judiet binti Fidilis @ Noraini binti Idris,"*Assalamualaikum warahmatullahi
 wabarakatuh*. Salam sejahtera, salam perpaduan. Terima kasih Tuan Yang di-Pertua atas
 peluang dan ruang yang diberikan kepada saya untuk bersama-sama membahaskan rang
 undang-undang ini.
@@ -2199,10 +2199,10 @@ banduan baharu yang akan menjalani hukuman penjara sepanjang hayat pada masa
 hadapan?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1302,ANNOTATION,[Dato’ Kesavadas a/l A Achyuthan Nair mempengerusikan Mesyuarat]
+Bacaan Kali Yang Kedua dan Ketiga",,1.02 tgh.,1302,ANNOTATION,[Dato’ Kesavadas a/l A Achyuthan Nair mempengerusikan Mesyuarat]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1302,Datuk Judiet binti Fidilis @ Noraini binti Idris,"Terakhirnya, saya juga ingin mencadangkan dalam kes bunuh, pesalah yang
+Bacaan Kali Yang Kedua dan Ketiga",,1.02 tgh.,1302,Datuk Judiet binti Fidilis @ Noraini binti Idris,"Terakhirnya, saya juga ingin mencadangkan dalam kes bunuh, pesalah yang
 disabitkan dengan kesalahan bunuh di bawah seksyen 302 Kanun Keseksaan, pesalah
 dikenakan membayar ganti rugi. Seperti cadangan daripada rakan-rakan Senator, pesalah
 dikenakan bayaran ganti rugi kepada keluarga mangsa yang dibunuh untuk mengurangkan
@@ -2213,12 +2213,12 @@ yang bersalah lepas daripada seorang tidak bersalah menderita.
 Sekian, Tuan Yang di-Pertua, saya mohon menyokong. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1302,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Senator
+Bacaan Kali Yang Kedua dan Ketiga",,1.02 tgh.,1302,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Senator
 Datuk Judiet binti Fidilis @ Noraini binti Idris.
 Sekarang saya menjemput Yang Berhormat Senator Tuan Abun Sui Anyit."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1307,Tuan Abun Sui Anyit,"Terima kasih Tuan Yang di-Pertua. T erima kasih sekali lagi
+Bacaan Kali Yang Kedua dan Ketiga",,1.07 tgh.,1307,Tuan Abun Sui Anyit,"Terima kasih Tuan Yang di-Pertua. T erima kasih sekali lagi
 kerana memberi masa kepada saya untuk membahaskan rang undang-undang yang ada di
 hadapan kita pada petang hari ini.
 Saya ingin membawa kita untuk memikirkan undang-undang ini sama ada akan
@@ -2239,7 +2239,7 @@ dikaji, apa yang telah dibuat untuk membolehkan kita mendapat satu maklumat jela
 kementerian untuk kita menghapuskan hukuman mati ini."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1310,Tuan Abun Sui Anyit,"Satu perkara yang kita kena lihat selama ini, undang-undang yang kita ada adalah
+Bacaan Kali Yang Kedua dan Ketiga",,■1310,1310,Tuan Abun Sui Anyit,"Satu perkara yang kita kena lihat selama ini, undang-undang yang kita ada adalah
 undang-undang yang menyekat atau pun mengikat hakim kita untuk terpaksa menjatuhkan
 hukuman mati, terutamanya dalam kes pengedaran dadah. Walau bagaimanapun, dengan
 adanya undang-undang baharu ini nanti, kita tidak lagi mengikat hakim-hakim kita untuk
@@ -2266,19 +2266,19 @@ Jadi, dengan ini, saya menyokong rang undang-undang ini, Tuan Yang di-Pertua.
 Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1310,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih, Yang Berhormat Senator
+Bacaan Kali Yang Kedua dan Ketiga",,■1310,1310,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih, Yang Berhormat Senator
 Tuan Abun Sui Anyit.
 Sekarang, dipersilakan, Yang Berhormat Senator Tuan Amir bin Ghazali."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1313,Tuan Amir bin Ghazali,"Terima kasih, Tuan Yang di-Pertua. *Bismillahi Rahmani
+Bacaan Kali Yang Kedua dan Ketiga",,1.13 tgh.,1313,Tuan Amir bin Ghazali,"Terima kasih, Tuan Yang di-Pertua. *Bismillahi Rahmani
 Rahim...*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1313,ANNOTATION,[Membaca sepotong doa]
+Bacaan Kali Yang Kedua dan Ketiga",,1.13 tgh.,1313,ANNOTATION,[Membaca sepotong doa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1313,Tuan Amir bin Ghazali,"*Assalamualaikum* dan salam sejahtera.
+Bacaan Kali Yang Kedua dan Ketiga",,1.13 tgh.,1313,Tuan Amir bin Ghazali,"*Assalamualaikum* dan salam sejahtera.
 Tuan Yang di-Pertua, pagi ini saya ingin membahaskan RUU pindaan pemansuhan
 mandatori hukuman mati ditukar kepada hukuman penggantian pemenjaraan. Tuan Yang di-
 Pertua, saya ingin mengemukakan pandangan bahawa pindaan 2023 RUU Pemansuhan
@@ -2333,12 +2333,12 @@ wabarakatuh.* Saya menyokong pindaan Rang Undang-undang Pemansuhan Hukuman Mati
 Mandatori 2023 kepada hukuman penggantian pemenjaraan. Sekian, terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1313,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih, Yang Berhormat Tuan Amir
+Bacaan Kali Yang Kedua dan Ketiga",,1.13 tgh.,1313,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih, Yang Berhormat Tuan Amir
 bin Ghazali.
 Dipersilakan, Yang Berhormat Senator Datuk (Dr.) Ras Adiba binti Mohd Radzi."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1317,Datuk (Dr.) Ras Adiba binti Mohd Radzi,"*Bismillahi Rahmani Rahim.
+Bacaan Kali Yang Kedua dan Ketiga",,1.17 tgh.,1317,Datuk (Dr.) Ras Adiba binti Mohd Radzi,"*Bismillahi Rahmani Rahim.
 Assalamualaikum.* Tuan Yang di-Pertua, terima kasih kerana memberi saya peluang. Saya di
 sini ingin merakamkan tahniah kepada Yang Berhormat Menteri dan Yang Berhormat
 Timbalan Menteri serta kesemua agensi kerajaan yang berkaitan atas usaha dalam
@@ -2364,17 +2364,17 @@ pun, dengan izinnya, *drug mule.*
 Saya di sini menyokong penuh pindaan kepada Akta Dadah Berbahaya 1962"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1317,ANNOTATION,"[Akta
+Bacaan Kali Yang Kedua dan Ketiga",,1.17 tgh.,1317,ANNOTATION,"[Akta
 234]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1317,Datuk (Dr.) Ras Adiba binti Mohd Radzi,"di mana, fasal 54 bertujuan untuk meminda seksyen 39B, Akta 234 di mana sub fasal
+Bacaan Kali Yang Kedua dan Ketiga",,1.17 tgh.,1317,Datuk (Dr.) Ras Adiba binti Mohd Radzi,"di mana, fasal 54 bertujuan untuk meminda seksyen 39B, Akta 234 di mana sub fasal
 50A bertujuan untuk mengubah hukuman bagi kesalahan mengedar dadah dalam seksyen
 39B(2) dengan mengubah bilangan sebatan, daripada minimum 15 kali kepada minimum 12
 kali jika hukuman mati tidak dijatuhkan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1320,Datuk (Dr.) Ras Adiba binti Mohd Radzi,"Pindaan ini amat tepat pada masanya. Hal ini kerana Malaysia kini merupakan ahli
+Bacaan Kali Yang Kedua dan Ketiga",,■1320,1320,Datuk (Dr.) Ras Adiba binti Mohd Radzi,"Pindaan ini amat tepat pada masanya. Hal ini kerana Malaysia kini merupakan ahli
 Majlis Hak Asasi Manusia Pertubuhan Bangsa-Bangsa Bersatu bagi penggal 2022-2024.
 Pindaan RUU ini tentu sekali boleh menjadi pencapaian Malaysia dalam memberikan
 pengiktirafan kepada status hak asasi manusia.
@@ -2412,12 +2412,12 @@ Tuan Yang di-Pertua, saya mohon menyokong. Sekian, terima kasih.
 *Assalamualaikum*."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1320,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Datuk Ras
+Bacaan Kali Yang Kedua dan Ketiga",,■1320,1320,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Datuk Ras
 Adiba binti Mohd Radzi.
 Sekarang saya menjemput pembahas yang terakhir Yang Berhormat Datuk Paul Igai."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1323,Datuk Paul Igai,"Terima kasih Tuan Yang di-Pertua kerana menjemput saya
+Bacaan Kali Yang Kedua dan Ketiga",,1.23 tgh.,1323,Datuk Paul Igai,"Terima kasih Tuan Yang di-Pertua kerana menjemput saya
 membahaskan RUU Pemansuhan Hukuman Mati Mandatori 2023.
 Hukuman mati mandatori ini merupakan satu hukuman sebagai hukuman setimpal
 dengan kesalahan-kesalahan yang sangat kejam. Mohon sebelum saya panjangkan, mohon
@@ -2463,19 +2463,19 @@ kepada akta-akta lain seperti akta senjata api dan dadah. Dengan ini Tuan Yang d
 saya mohon menyokong."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1323,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Datuk Paul
+Bacaan Kali Yang Kedua dan Ketiga",,1.23 tgh.,1323,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Datuk Paul
 Igai. Selesailah perbahasan seramai 17 orang Ahli-ahli Yang Berhormat untuk RUU ini.
 Sekarang saya menjemput Yang Berhormat Timbalan Menteri untuk menjawab."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1329,Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh],"Tuan Yang di-Pertua, saya
+Bacaan Kali Yang Kedua dan Ketiga",,1.29 tgh.,1329,Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh],"Tuan Yang di-Pertua, saya
 mengucapkan terima kasih kepada semua pembahas yang berjumlah 17 orang yang telah
 pun menyertai perbahasaan berkenaan dengan rang undang-undang ini yang cukup penting
 dan saya mengalu-alukan idea-idea dan komen-komen yang telah ditimbulkan oleh Ahli-ahli
 Yang Berhormat dalam perbahasan tadi."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1330,Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh],"Saya akan menjawab satu persatu bukan mengikut giliran tetapi mengikut isu yang
+Bacaan Kali Yang Kedua dan Ketiga",,■1330,1330,Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh],"Saya akan menjawab satu persatu bukan mengikut giliran tetapi mengikut isu yang
 ditimbulkan. Saya telah pun mendengar persoalan-persoalan daripada Yang Berhormat
 Senator Puan Noorita binti Sual tadi yang bertanya berkenaan dengan sokongan yang akan
 diberikan kepada pesalah-pesalah yang membuat semakan ke mahkamah kelak. Adakah
@@ -2560,7 +2560,7 @@ penjara kita. Saya boleh memberi senarai statistik itu secara bertulis dalam mas
 terdekat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1340,Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh],"Yang Berhormat Senator Dato’ Arman Azha Abu Hanifah ada bertanya berhubung
+Bacaan Kali Yang Kedua dan Ketiga",,■1340,1340,Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh],"Yang Berhormat Senator Dato’ Arman Azha Abu Hanifah ada bertanya berhubung
 sama ada tempoh permohonan untuk semakan semula boleh dipanjangkan. Ini memang akan
 dibahaskan selepas rang undang-undang ini iaitu rang undang-undang yang seterusnya tetapi
 memang tempoh untuk membuat permohonan untuk semakan dalam kes-kes sebegini ialah
@@ -2626,18 +2626,18 @@ mengambil kira kesemua faktor ini secara holistik.
 Yang Berhormat Senator Datuk Wira Dr. Mohd Hatta bin Md Ramli bertanya..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1340,Tuan Haji Hussin bin Ismail,"Sedikit mencelah, Yang Berhormat Timbalan Menteri."
+Bacaan Kali Yang Kedua dan Ketiga",,■1340,1340,Tuan Haji Hussin bin Ismail,"Sedikit mencelah, Yang Berhormat Timbalan Menteri."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1340,Tuan Ramkarpal Singh a/l Karpal Singh,Ya.
+Bacaan Kali Yang Kedua dan Ketiga",,■1340,1340,Tuan Ramkarpal Singh a/l Karpal Singh,Ya.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1340,Tuan Haji Hussin bin Ismail,"Kalau menurut kaedah Islam, *diyat* ini, *diyat* dan kafarah
+Bacaan Kali Yang Kedua dan Ketiga",,■1340,1340,Tuan Haji Hussin bin Ismail,"Kalau menurut kaedah Islam, *diyat* ini, *diyat* dan kafarah
 mesti dibayar bukan oleh kerajaan tetapi dibayar oleh pemangsa atau keluarga pemangsa.
 Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1340,Tuan Ramkarpal Singh a/l Karpal Singh,"Ya. Itu yang saya katakan tadi. *Diyat* ini
+Bacaan Kali Yang Kedua dan Ketiga",,■1340,1340,Tuan Ramkarpal Singh a/l Karpal Singh,"Ya. Itu yang saya katakan tadi. *Diyat* ini
 adalah dalam pertimbangan kerajaan sekarang dan seperti yang saya telah pun terangkan di
 Dewan Rakyat dahulu apabila membahaskan perkara yang sama. Memang ini kami akan
 mengambil kira beberapa faktor seperti implikasi kewangan dan sebagainya. Terutamanya
@@ -2653,7 +2653,7 @@ undang ini diluluskan, hukuman penjara sehingga banduan itu meninggal dunia di d
 penjara."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1350,Tuan Ramkarpal Singh a/l Karpal Singh,"Akan tetapi, itu akan dicadangkan dalam undang-undang ini untuk dikurangkan
+Bacaan Kali Yang Kedua dan Ketiga",,■1350,1350,Tuan Ramkarpal Singh a/l Karpal Singh,"Akan tetapi, itu akan dicadangkan dalam undang-undang ini untuk dikurangkan
 kepada satu tempoh antara 30 hingga 40 tahun. Maksudnya adalah untuk kes-kes yang
 mengenakan hukuman sepanjang hayat tersebut, *it is minimum.* Memang ada satu tempoh
 minimum iaitu 30 tahun.
@@ -2667,21 +2667,21 @@ kira. Akan tetapi, parol itu bukan diberikan secara automatik kepada semua kesal
 bergantung kepada beberapa kesalahan sahaja."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1350,Datuk Dr. Dominic Lau Hoe Chai,"Mohon mencelah Yang Berhormat Timbalan
+Bacaan Kali Yang Kedua dan Ketiga",,■1350,1350,Datuk Dr. Dominic Lau Hoe Chai,"Mohon mencelah Yang Berhormat Timbalan
 Menteri?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1350,Tuan Ramkarpal Singh a/l Karpal Singh,Ya.
+Bacaan Kali Yang Kedua dan Ketiga",,■1350,1350,Tuan Ramkarpal Singh a/l Karpal Singh,Ya.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1350,Datuk Dr. Dominic Lau Hoe Chai,"Terima kasih. Tadi Yang Berhormat Timbalan
+Bacaan Kali Yang Kedua dan Ketiga",,■1350,1350,Datuk Dr. Dominic Lau Hoe Chai,"Terima kasih. Tadi Yang Berhormat Timbalan
 Menteri mengatakan bahawa hukuman mati tidak boleh mengurangkan kadar jenayah di
 negara kita. Saya hendak tanya, adakah kementerian atau Yang Berhormat Timbalan Menteri
 mengadakan kajian di Malaysia itu hukuman jenis apakah yang boleh mengurangkan kadar
 jenayah di negara kita terutamanya jenayah yang ganas itu? Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1350,Tuan Ramkarpal Singh a/l Karpal Singh,"Tuan Yang di-Pertua, kami telah membuat
+Bacaan Kali Yang Kedua dan Ketiga",,■1350,1350,Tuan Ramkarpal Singh a/l Karpal Singh,"Tuan Yang di-Pertua, kami telah membuat
 banyak sesi libat urus semasa pertimbangan rang undang-undang ini. Untuk makluman Yang
 Berhormat, isu pemansuhan hukuman mati mandatori ini bukan satu perkara baharu. Ia telah
 dibentangkan sejak pada masa dulu sejak Kerajaan Barisan Nasional, selepas itu semasa
@@ -2696,12 +2696,12 @@ satu laporan yang juga telah pun dibuat oleh Jawatankuasa tersebut yang diketuai
 mantan Ketua Hakim Negara tersebut."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1350,Datuk Dr. Dominic Lau Hoe Chai,"Bukan. Soalan saya ialah- memang *I* tahu itu
+Bacaan Kali Yang Kedua dan Ketiga",,■1350,1350,Datuk Dr. Dominic Lau Hoe Chai,"Bukan. Soalan saya ialah- memang *I* tahu itu
 hukuman mati itu tidak boleh mengurangkan kadar jenayah. Soalan saya ialah jenis hukuman
 apa yang boleh mengurangkan kadar jenayah di negara kita?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1350,Tuan Ramkarpal Singh a/l Karpal Singh,"Hukuman itu, seperti yang telah pun kita
+Bacaan Kali Yang Kedua dan Ketiga",,■1350,1350,Tuan Ramkarpal Singh a/l Karpal Singh,"Hukuman itu, seperti yang telah pun kita
 dengar tadi, hukuman itu mempunyai banyak tujuan. Satu daripadanya adalah untuk
 *rehabilitate* seorang pesalah untuk membuat atau memberi *restorative justice* dan sebagainya
 seperti yang saya telah terangkan semasa ucapan saya dulu.
@@ -2716,7 +2716,7 @@ kesan *deterrence?* Apabila menjawab soalan tersebut, *I think we have to consid
 rehabilitative aspect of all sentences, be they custodial or not.*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1350,Tuan Haji Hussin bin Ismail,"Yang Berhormat Timbalan Menteri, terkait apa yang
+Bacaan Kali Yang Kedua dan Ketiga",,■1350,1350,Tuan Haji Hussin bin Ismail,"Yang Berhormat Timbalan Menteri, terkait apa yang
 disebutkan oleh Yang Berhormat Senator Datuk Dr. Dominic sebentar tadi. Saya ingin
 mencadangkan dalam Dewan yang mulia ini untuk kementerian kehakiman dapat meninjau
 sebahagian kehakiman Islam.
@@ -2728,7 +2728,7 @@ Jadi model itu ada, kehakiman Islam itu, untuk kita tinjau walaupun mungkin soal
 tidak yakin itu satu hal. Kajian itu perlu dibuat. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1350,Tuan Ramkarpal Singh a/l Karpal Singh,"Terima kasih. Kami akan mengambil kira
+Bacaan Kali Yang Kedua dan Ketiga",,■1350,1350,Tuan Ramkarpal Singh a/l Karpal Singh,"Terima kasih. Kami akan mengambil kira
 apa yang dikatakan.
 Yang Berhormat Senator Dato’ Kesavadas a/l A Achyuthan Nair juga ada bertanya
 berkenaan soalan-soalan berkenaan dengan pengilangan *ammunition* di bawah Akta Senjata
@@ -2758,56 +2758,56 @@ kasih kepada semua pembahas yang saya mendapati menyokong rang undang-undang ini
 Sekian, terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1350,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Timbalan
+Bacaan Kali Yang Kedua dan Ketiga",,■1350,1350,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Timbalan
 Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi)."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1400,Dato’ Kesavadas a/l A Achyuthan Nair,"Ahli-ahli Yang Berhormat, sekarang saya kemukakan masalah kepada Majlis bagi
+Bacaan Kali Yang Kedua dan Ketiga",,■1400,1400,Dato’ Kesavadas a/l A Achyuthan Nair,"Ahli-ahli Yang Berhormat, sekarang saya kemukakan masalah kepada Majlis bagi
 diputuskan. Masalahnya ialah bahawa rang undang-undang ini dibacakan kali yang kedua
 sekarang."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1400,ANNOTATION,[Masalah dikemukakan bagi diputuskan; dan disetujukan]
+Bacaan Kali Yang Kedua dan Ketiga",,■1400,1400,ANNOTATION,[Masalah dikemukakan bagi diputuskan; dan disetujukan]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1400,ANNOTATION,"[Rang undang-undang dibacakan kali yang kedua dan diserahkan kepada Dewan
+Bacaan Kali Yang Kedua dan Ketiga",,■1400,1400,ANNOTATION,"[Rang undang-undang dibacakan kali yang kedua dan diserahkan kepada Dewan
 sebagai Jawatankuasa]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1400,ANNOTATION,[Majlis bersidang dalam Jawatankuasa]
+Bacaan Kali Yang Kedua dan Ketiga",,■1400,1400,ANNOTATION,[Majlis bersidang dalam Jawatankuasa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1400,ANNOTATION,[Dato’ Kesavadas a/l A Achyuthan Nair mempengerusikan Jawatankuasa]
+Bacaan Kali Yang Kedua dan Ketiga",,■1400,1400,ANNOTATION,[Dato’ Kesavadas a/l A Achyuthan Nair mempengerusikan Jawatankuasa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1400,ANNOTATION,[Fasal-fasal dikemukakan kepada Jawatankuasa]
+Bacaan Kali Yang Kedua dan Ketiga",,■1400,1400,ANNOTATION,[Fasal-fasal dikemukakan kepada Jawatankuasa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1400,ANNOTATION,"[Fasal-fasal 1 hingga 65 diperintahkan jadi sebahagian daripada rang undang-
+Bacaan Kali Yang Kedua dan Ketiga",,■1400,1400,ANNOTATION,"[Fasal-fasal 1 hingga 65 diperintahkan jadi sebahagian daripada rang undang-
 undang]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1400,ANNOTATION,[Rang undang-undang dimaklumkan kepada Majlis sekarang]
+Bacaan Kali Yang Kedua dan Ketiga",,■1400,1400,ANNOTATION,[Rang undang-undang dimaklumkan kepada Majlis sekarang]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1400,ANNOTATION,[Majlis Mesyuarat bersidang semula]
+Bacaan Kali Yang Kedua dan Ketiga",,■1400,1400,ANNOTATION,[Majlis Mesyuarat bersidang semula]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1400,ANNOTATION,[Dato’ Kesavadas a/l A. Achyuthan Nair mempengerusikan Mesyuarat]
+Bacaan Kali Yang Kedua dan Ketiga",,■1400,1400,ANNOTATION,[Dato’ Kesavadas a/l A. Achyuthan Nair mempengerusikan Mesyuarat]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PEMANSUHAN HUKUMAN
 MATI MANDATORI 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1400,ANNOTATION,"[Rang undang-undang dilaporkan dengan tidak ada pindaan; dibacakan kali yang
+Bacaan Kali Yang Kedua dan Ketiga",,■1400,1400,ANNOTATION,"[Rang undang-undang dilaporkan dengan tidak ada pindaan; dibacakan kali yang
 ketiga, disokong oleh Timbalan Menteri di Jabatan Perdana Menteri (Hal Ehwal Sabah,
 Sarawak dan Tugas-tugas Khas) (Datuk Ugak anak Kumbong) dan diluluskan]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1404,Dato’ Kesavadas a/l A Achyuthan Nair,"Dipersilakan Yang Berhormat Timbalan
+Bacaan Kali Yang Kedua dan Ketiga",,2.04 ptg.,1404,Dato’ Kesavadas a/l A Achyuthan Nair,"Dipersilakan Yang Berhormat Timbalan
 Menteri."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1404,Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh],"Tuan Yang di-Pertua, saya mohon
+Bacaan Kali Yang Kedua dan Ketiga",,2.04 ptg.,1404,Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh],"Tuan Yang di-Pertua, saya mohon
 mencadangkan iaitu rang undang-undang bernama suatu Akta Semakan Hukuman Mati dan
 Pemenjaraan Sepanjang Hayat (Bidang Kuasa Sementara Mahkamah Persekutuan) 2023
 dibaca kali yang kedua sekarang.
@@ -2868,7 +2868,7 @@ peringanan hukuman oleh Lembaga Pengampunan Negeri."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1410,Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh],"Justeru Rang Undang-undang Semakan Hukuman Mati dan Pemenjaraan Sepanjang
+Bacaan Kali Yang Kedua dan Ketiga",,■1410,1410,Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh],"Justeru Rang Undang-undang Semakan Hukuman Mati dan Pemenjaraan Sepanjang
 Hayat (Bidang Kuasa Sementara Mahkamah Persekutuan) 2023 ini bertujuan untuk
 mengadakan peruntukan bagi bidang kuasa penyemakan sementara Mahkamah Persekutuan
 bagi mengkaji semula hukuman mati atau pemenjaraan sepanjang hayat yang dijatuhkan
@@ -2925,17 +2925,17 @@ Dengan ini Tuan Yang di-Pertua, saya mohon untuk mencadangkan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1410,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Timbalan
+Bacaan Kali Yang Kedua dan Ketiga",,■1410,1410,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Timbalan
 Menteri atas huraian-huraian tersebut. Ada sesiapa yang menyokong?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1410,"Timbalan Menteri di Jabatan Perdana Menteri (Hal Ehwal Sabah, Sarawak dan Tugas-tugas Khas) [Datuk Ugak anak Kumbong]","Tuan Yang di-Pertua, saya mohon
+Bacaan Kali Yang Kedua dan Ketiga",,■1410,1410,"Timbalan Menteri di Jabatan Perdana Menteri (Hal Ehwal Sabah, Sarawak dan Tugas-tugas Khas) [Datuk Ugak anak Kumbong]","Tuan Yang di-Pertua, saya mohon
 menyokong."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1410,Dato’ Kesavadas a/l A Achyuthan Nair,"Ahli-ahli Yang Berhormat. Masalah di
+Bacaan Kali Yang Kedua dan Ketiga",,■1410,1410,Dato’ Kesavadas a/l A Achyuthan Nair,"Ahli-ahli Yang Berhormat. Masalah di
 hadapan Majlis ialah suatu akta untuk mengadakan peruntukan bagi bidang kuasa
 penyemakan sementara Mahkamah Persekutuan untuk mengkaji semula hukuman mati dan
 pemenjaraan sepanjang hayat yang dijatuhkan terhadap orang yang disabitkan berikutan
@@ -2949,7 +2949,7 @@ Martina binti Wan Yusoff."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1416,Dr. Hajah Wan Martina binti Wan Yusoff,"*Bismillahi Rahmani Rahim.
+Bacaan Kali Yang Kedua dan Ketiga",,2.16 ptg.,1416,Dr. Hajah Wan Martina binti Wan Yusoff,"*Bismillahi Rahmani Rahim.
 Assalamualaikum warahmatullahi wabarakatuh.* Terima kasih Tuan Yang di-Pertua atas
 peluang yang diberikan kepada saya untuk membahaskan Rang Undang-undang Semakan
 Hukuman Mati dan Pemenjaraan Sepanjang Hayat (Bidang Kuasa Sementara Mahkamah
@@ -2995,27 +2995,27 @@ tanpa mengambil kira perbezaan agama ataupun bangsa."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1420,Dr. Hajah Wan Martina binti Wan Yusoff,"Seperti yang dimaklumkan oleh Yang Berhormat Timbalan Menteri tadi, pembayaran
+Bacaan Kali Yang Kedua dan Ketiga",,■1420,1420,Dr. Hajah Wan Martina binti Wan Yusoff,"Seperti yang dimaklumkan oleh Yang Berhormat Timbalan Menteri tadi, pembayaran
 pampasan kepada mangsa ini sudah ada asasnya dalam undang-undang jenayah di negara
 kita di bawah seksyen 426 Kanun Prosedur Jenayah"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1420,ANNOTATION,[Akta 593]
+Bacaan Kali Yang Kedua dan Ketiga",,■1420,1420,ANNOTATION,[Akta 593]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1420,Dr. Hajah Wan Martina binti Wan Yusoff,"yang memperuntukkan kuasa
+Bacaan Kali Yang Kedua dan Ketiga",,■1420,1420,Dr. Hajah Wan Martina binti Wan Yusoff,"yang memperuntukkan kuasa
 kepada pihak mahkamah atas permohonan pendakwa raya untuk mengarahkan pesalah
 membayar pampasan kepada mangsa akibat jenayah..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1420,Tuan Balasubramaniam a/l Nachiappan,"Yang Berhormat, hendak mencelah sedikit."
+Bacaan Kali Yang Kedua dan Ketiga",,■1420,1420,Tuan Balasubramaniam a/l Nachiappan,"Yang Berhormat, hendak mencelah sedikit."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1420,Dr. Hajah Wan Martina binti Wan Yusoff,"Yang berlaku pada diri mangsa, harta atau
+Bacaan Kali Yang Kedua dan Ketiga",,■1420,1420,Dr. Hajah Wan Martina binti Wan Yusoff,"Yang berlaku pada diri mangsa, harta atau
 pendapatannya. Masa saya sedikit sahaja.
 Seperti yang dilaporkan oleh *Berita Harian* pada 2 Mei 2017, Ke Bawah Duli Yang
 Maha Mulia Seri Paduka Baginda Yang di-Pertuan Agong iaitu Sultan Abdullah Ibni Sultan
@@ -3034,13 +3034,13 @@ Raya Aidilfitri, maaf zahir dan batin."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1420,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Dr. Hajah
+Bacaan Kali Yang Kedua dan Ketiga",,■1420,1420,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Dr. Hajah
 Wan Martina binti Wan Yusoff.
 Dijemput Yang Berhormat Datuk Dr. Dominic Lau Hoe Chai. Dipersilakan"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1422,Datuk Dr. Dominic Lau Hoe Chai,"Terima kasih kepada Tuan Yang di-Pertua kerana
+Bacaan Kali Yang Kedua dan Ketiga",,2.22 ptg.,1422,Datuk Dr. Dominic Lau Hoe Chai,"Terima kasih kepada Tuan Yang di-Pertua kerana
 memberikan peluang saya untuk mengambil bahagian dalam perbahasan RUU Semakan
 Hukuman Mati dan Pemenjaraan Sepanjang Hayat.
 Memang kita tahu RUU Semakan Hukuman Mati dan Pemenjaraan Sepanjang Hayat
@@ -3098,11 +3098,11 @@ pihak..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1422,Dato’ Kesavadas a/l A Achyuthan Nair,Tolong rumuskan ya Yang Berhormat.
+Bacaan Kali Yang Kedua dan Ketiga",,2.22 ptg.,1422,Dato’ Kesavadas a/l A Achyuthan Nair,Tolong rumuskan ya Yang Berhormat.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1422,Datuk Dr. Dominic Lau Hoe Chai,"Satu minit. Persoalan-persoalan tadi mungkin
+Bacaan Kali Yang Kedua dan Ketiga",,2.22 ptg.,1422,Datuk Dr. Dominic Lau Hoe Chai,"Satu minit. Persoalan-persoalan tadi mungkin
 kerajaan mempunyai jawapan ataupun masih berlegar di ruang persoalan. Apa pun
 penjelasan kerajaan, harapan saya hanya satu. Jangan ada kecacatan dalam
 pelaksanaannya. Dengan inilah akhir kata, memang selepas mendapatkan jawapan daripada
@@ -3111,14 +3111,14 @@ Pemenjaraan Sepanjang Hayat. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1422,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Datuk Dr.
+Bacaan Kali Yang Kedua dan Ketiga",,2.22 ptg.,1422,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Datuk Dr.
 Dominic Lau Hoe Chai.
 Okey selepas ini ialah saya, tetapi sekarang saya pergi kepada Yang Berhormat Dato
 Dr. Nuing Jeluing."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1429,Dato Dr. Nuing Jeluing,"Terima kasih Tuan Yang di-Pertua atas peluang untuk turut
+Bacaan Kali Yang Kedua dan Ketiga",,2.29 ptg.,1429,Dato Dr. Nuing Jeluing,"Terima kasih Tuan Yang di-Pertua atas peluang untuk turut
 bersama membahaskan Akta Semakan Hukuman Mati dan Pemenjaraan Sepanjang Hayat
 (Bidang Kuasa Sementara Mahkamah Persekutuan) 2023.
 Tujuan akta ini adalah jelas iaitu satu mengkaji semula hukuman mati. Kedua,
@@ -3128,7 +3128,7 @@ dia berkuasa retrograsif, atau *backdated.*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1430,Dato Dr. Nuing Jeluing,"Ini akan memberi kesan yang besar untuk mereka yang menunggu hukuman mereka
+Bacaan Kali Yang Kedua dan Ketiga",,■1430,1430,Dato Dr. Nuing Jeluing,"Ini akan memberi kesan yang besar untuk mereka yang menunggu hukuman mereka
 dijatuhkan. Akta semakan hukuman mati akan dikekalkan atau ditukar kepada pemenjaraan
 sepanjang hayat? Pemenjaraan sepanjang hayat pun akan ditukar kepada pemenjaraan tidak
 kurang daripada 30 tahun atau tidak melebihi 40 tahun. Kebiasaannya dengan satu per tiga
@@ -3153,14 +3153,14 @@ kasih. Saya mohon menyokong."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1430,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Senator Dato
+Bacaan Kali Yang Kedua dan Ketiga",,■1430,1430,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Senator Dato
 Dr. Nuing Jeluing.
 Sekarang saya menjemput Yang Berhormat Senator Datuk Wira Dr. Mohd Hatta bin
 Md Ramli. Dipersilakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1433,Datuk Wira Dr. Mohd Hatta bin Md Ramli,"Terima kasih Tuan Yang di-Pertua.
+Bacaan Kali Yang Kedua dan Ketiga",,2.33 ptg.,1433,Datuk Wira Dr. Mohd Hatta bin Md Ramli,"Terima kasih Tuan Yang di-Pertua.
 *Alhamdulillah*, tadi kita telah melepasi perbincangan rang undang-undang yang pertama dan
 kini kita hendak mengadaptasi suasana semasa dalam sistem ini bagi menangani kesan
 daripada rang undang-undang yang telah kita putuskan tadi.
@@ -3209,20 +3209,20 @@ boleh bermanfaat. Saya mohon menyokong, Tuan Yang di-Pertua. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1433,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Senator
+Bacaan Kali Yang Kedua dan Ketiga",,2.33 ptg.,1433,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Senator
 Datuk Wira Dr. Mohd Hatta bin Md Ramli.
 Dipersilakan Yang Berhormat Senator Tuan Abun Sui Anyit."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1439,Tuan Abun Sui Anyit,"Terima kasih Tuan Yang di-Pertua dan terima kasih juga
+Bacaan Kali Yang Kedua dan Ketiga",,2.39 ptg.,1439,Tuan Abun Sui Anyit,"Terima kasih Tuan Yang di-Pertua dan terima kasih juga
 kepada Ahli Dewan yang mulia ini.
 Rang undang-undang ini adalah untuk melengkapi apa yang telah kita bincangkan
 pagi tadi dan saya percaya kaedah-kaedah telah dinyatakan dalam rang undang-undang ini."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1440,Tuan Abun Sui Anyit,"Saya ingin mencadangkan supaya tempoh untuk membuat rayuan ataupun usul
+Bacaan Kali Yang Kedua dan Ketiga",,■1440,1440,Tuan Abun Sui Anyit,"Saya ingin mencadangkan supaya tempoh untuk membuat rayuan ataupun usul
 *petition* daripada banduan ini diperpanjang dan sudah tentu saya melihat pada peruntukan
 yang diberi di mana mahkamah boleh memberi *extension,* dengan izin, penangguhan atau
 jangka masa yang panjang lagi tetapi dengan permohonan. Jadi, apa salahnya kalau kerajaan
@@ -3253,13 +3253,13 @@ undang 2023 ini. Terima kasih Tuan Yang di-Pertua."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1440,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Tuan Abun
+Bacaan Kali Yang Kedua dan Ketiga",,■1440,1440,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Tuan Abun
 Sui Anyit.
 Dipersilakan Yang Berhormat Tuan Haji Hussin Ismail."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1443,Tuan Haji Hussin bin Ismail,"*Assalamualaikum warahmatullahi wabarakatuh.* Tuan
+Bacaan Kali Yang Kedua dan Ketiga",,2.43 ptg.,1443,Tuan Haji Hussin bin Ismail,"*Assalamualaikum warahmatullahi wabarakatuh.* Tuan
 Yang di-Pertua dan Ahli Yang Berhormat yang saya hormati. Hari ini merupakan hari yang
 barangkali apabila dua RUU ini diluluskan, orang yang paling gembira dalam dunia ialah
 pesalah-pesalah yang sedang menanti hukuman mati di penjara.
@@ -3311,14 +3311,14 @@ sahabat. Rumah saya sendiri pun boleh, *insya-Allah.* Selamat datang berhari ray
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1443,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Senator Tuan
+Bacaan Kali Yang Kedua dan Ketiga",,2.43 ptg.,1443,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Senator Tuan
 Haji Hussin bin Ismail.
 Sekarang saya menjemput Yang Berhormat Senator Dr. Lingeshwaran a/l Dato’ Seri
 R. Arunasalam. Dipersilakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1449,Dr. Lingeshwaran a/l Dato’ Seri R. Arunasalam,"Salam sejahtera dan salam
+Bacaan Kali Yang Kedua dan Ketiga",,2.49 ptg.,1449,Dr. Lingeshwaran a/l Dato’ Seri R. Arunasalam,"Salam sejahtera dan salam
 Malaysia Madani. Terima kasih Tuan Yang di-Pertua kerana memberi ruang kepada saya
 untuk berbahas Rang Undang-undang Semakan Hukuman Mati dan Pemenjaraan Sepanjang
 Hayat 2023 yang dibentangkan oleh Timbalan Menteri di Jabatan Perdana Menteri (Undang-
@@ -3329,7 +3329,7 @@ diterima baik dan diluluskan oleh Ahli Majlis sekian sebelum ini."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1450,Dr. Lingeshwaran a/l Dato’ Seri R. Arunasalam,"Ia juga sebagai tindakan yang adil kepada banduan yang sedang menjalani hukuman
+Bacaan Kali Yang Kedua dan Ketiga",,■1450,1450,Dr. Lingeshwaran a/l Dato’ Seri R. Arunasalam,"Ia juga sebagai tindakan yang adil kepada banduan yang sedang menjalani hukuman
 sepanjang hayat dan bakal menjalani hukuman mati. Saya ingin mengambil peluang ini untuk
 mengucapkan terima kasih kepada kerajaan kerana bersikap holistik dalam mendekati
 perundangan ini.
@@ -3361,14 +3361,14 @@ pendekatan *compressive* dan ia tidak sepatutnya berhenti pada hari ini. Sekian,
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1450,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Senator Dr.
+Bacaan Kali Yang Kedua dan Ketiga",,■1450,1450,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Senator Dr.
 Lingeshwaran a/l Dato’ Seri R. Arunasalam.
 Sekarang saya menjemput Yang Berhormat Senator Tuan Seruandi bin Saad,
 dipersilakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1453,Tuan Seruandi bin Saad,"*Bismillahi Rahmani Rahim. Assalamualaikum
+Bacaan Kali Yang Kedua dan Ketiga",,2.53 ptg.,1453,Tuan Seruandi bin Saad,"*Bismillahi Rahmani Rahim. Assalamualaikum
 warahmatullahi wabarakatuh.* Terima kasih atas peluang yang diberikan kepada saya untuk
 sama-sama berbahas rang undang-undang ini yang telah dibentangkan oleh Yang Berhormat
 Timbalan Menteri sebentar tadi.
@@ -3415,14 +3415,14 @@ Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1453,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Senator Tuan
+Bacaan Kali Yang Kedua dan Ketiga",,2.53 ptg.,1453,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Senator Tuan
 Seruandi bin Saad.
 Sekarang saya menjemput Yang Berhormat Senator Prof. Datuk Seri Dr. Awang bin
 Sariyan, dipersilakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1457,Prof. Datuk Seri Dr. Awang bin Sariyan,"Terima kasih Tuan Yang di-Pertua.
+Bacaan Kali Yang Kedua dan Ketiga",,2.57 ptg.,1457,Prof. Datuk Seri Dr. Awang bin Sariyan,"Terima kasih Tuan Yang di-Pertua.
 *Assalamualaikum warahmatullahi wabarakatuh* dan salam sejahtera. Meskipun perbincangan
 atau perbahasan berkisar sekitar Rang Undang-undang Semakan Hukuman Mati dan
 Pemenjaraan Sepanjang Hayat (Bidang Kuasa Sementara Mahkamah Persekutuan) 2023,
@@ -3453,7 +3453,7 @@ undang dalam menangani soal-soal jenayah seperti ini."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1500,Prof. Datuk Seri Dr. Awang bin Sariyan,"Jadi, saya menggesa kerajaan supaya mengadakan suatu langkah susulan secara
+Bacaan Kali Yang Kedua dan Ketiga",,■1500,1500,Prof. Datuk Seri Dr. Awang bin Sariyan,"Jadi, saya menggesa kerajaan supaya mengadakan suatu langkah susulan secara
 serius untuk mengadakan pertemuan-pertemuan wacana bagi kita membincangkan lunas
 ataupun premis dalam soal undang-undang negara ini. Saya dalam beberapa sesi yang lepas
 juga ada menyebut soal penghormatan yang mesti diberikan kepada lunas-lunas lain.
@@ -3501,25 +3501,25 @@ terus berpuasa, jangan beraya dahulu..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1500,ANNOTATION,[Ketawa]
+Bacaan Kali Yang Kedua dan Ketiga",,■1500,1500,ANNOTATION,[Ketawa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1500,Prof. Datuk Seri Dr. Awang bin Sariyan,"Terus berpuasa, dan selamat hari raya, dan
+Bacaan Kali Yang Kedua dan Ketiga",,■1500,1500,Prof. Datuk Seri Dr. Awang bin Sariyan,"Terus berpuasa, dan selamat hari raya, dan
 pada rakan-rakan yang bukan Islam, marilah kita merayakan hari raya sebagai perayaan
 kebangsaan bersama. Terima kasih dan saya mohon menyokong rang undang-undang ini.
 Terima kasih Tuan Yang di-Pertua. *Assalamualaikum warahmatullahi wabarakatuh.*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1500,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih, Yang Berhormat Senator
+Bacaan Kali Yang Kedua dan Ketiga",,■1500,1500,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih, Yang Berhormat Senator
 Profesor Datuk Seri Dr. Awang bin Sariyan.
 Sekarang saya menjemput Yang Berhormat Senator Datuk Noraini binti Idris.
 Dipersilakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1504,Datuk Judiet binti Fidilis @ Noraini binti Idris,"Terima kasih, Tuan Yang di-Pertua.
+Bacaan Kali Yang Kedua dan Ketiga",,3.04 ptg.,1504,Datuk Judiet binti Fidilis @ Noraini binti Idris,"Terima kasih, Tuan Yang di-Pertua.
 *Assalamualaikum warahmatullahi wabarakatuh*, salam sejahtera, salam perpaduan.
 Perbahasan saya pendek sahaja, saya tidak ada masalah menyokong rang undang-
 undang ini kerana seperti apa yang telah disebut oleh Yang Berhormat Timbalan Menteri tadi
@@ -3578,13 +3578,13 @@ Sekian, saya menyokong rang undang-undang ini. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1504,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih, Yang Berhormat Senator
+Bacaan Kali Yang Kedua dan Ketiga",,3.04 ptg.,1504,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih, Yang Berhormat Senator
 Datuk Noraini binti Idris.
 Sekarang saya menjemput Yang Berhormat Senator Tuan Manolan bin Mohamad."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1509,Tuan Manolan bin Mohamad,"Terima kasih, Tuan Yang di-Pertua kerana memberi
+Bacaan Kali Yang Kedua dan Ketiga",,3.09 ptg.,1509,Tuan Manolan bin Mohamad,"Terima kasih, Tuan Yang di-Pertua kerana memberi
 peluang kepada saya untuk terlibat di dalam Rang Undang-undang Semakan Hukuman Mati
 dan Pemenjaraan Sepanjang Hayat ini. Saya mengucapkan terima kasih kepada kerajaan
 kerana telah menggubal undang-undang ini. Ini bagi saya memberi satu nafas baharu kepada
@@ -3593,7 +3593,7 @@ ini."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1510,Tuan Manolan bin Mohamad,"Kalau kita dengar daripada pembentangan Yang Berhormat Timbalan Menteri tadi
+Bacaan Kali Yang Kedua dan Ketiga",,■1510,1510,Tuan Manolan bin Mohamad,"Kalau kita dengar daripada pembentangan Yang Berhormat Timbalan Menteri tadi
 iaitu seramai 1,318 orang, jumlah di bawah moratorium, jumlah banduan yang berada di
 dalam penjara ini yang menunggu keputusan pada masa sekarang ini. Jadi, soalan saya Yang
 Berhormat Timbalan Menteri, berapa ramai rakyat Malaysia yang dalam 1,318 orang ini,
@@ -3647,13 +3647,13 @@ Hayat (Bidang Kuasa Sementara Mahkamah Persekutuan) 2023. Sekian, terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1510,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih, Yang Berhormat Tuan
+Bacaan Kali Yang Kedua dan Ketiga",,■1510,1510,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih, Yang Berhormat Tuan
 Manolan bin Mohamad.
 Sekarang, saya menjemput Yang Berhormat Datuk Razali bin Idris. Dipersilakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1515,Datuk Razali bin Idris,"*Assalamualaikum warahmatullahi wabarakatuh* dan salam
+Bacaan Kali Yang Kedua dan Ketiga",,3.15 ptg.,1515,Datuk Razali bin Idris,"*Assalamualaikum warahmatullahi wabarakatuh* dan salam
 sejahtera. Terima kasih, Tuan Yang di-Pertua.
 Undang-undang ini adalah bagi melengkapkan undang-undang yang terdahulu iaitu
 pemansuhan hukuman mati mandatori. Saya melihat fasal 3 dan 4, di mana prinsip utama
@@ -3676,11 +3676,11 @@ peguam, bagi masa lebih, tidak perlu sebut 90 hari, sehingga mereka mendapat peg
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1515,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
+Bacaan Kali Yang Kedua dan Ketiga",,3.15 ptg.,1515,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1515,Datuk Razali bin Idris,"Satu lagi, dalam Islam hukuman bunuh ada hak pengampunan yang diberikan kepada
+Bacaan Kali Yang Kedua dan Ketiga",,3.15 ptg.,1515,Datuk Razali bin Idris,"Satu lagi, dalam Islam hukuman bunuh ada hak pengampunan yang diberikan kepada
 keluarga mangsa, bukannya diberikan pada Lembaga Pengampunan yang bukan terdiri
 daripada keluarga mangsa. Jadi, apakah ia tidak boleh diterima pakai dalam RUU ini? Itu
 sahaja, Tuan Yang di-Pertua. Oleh sebab saya yang terakhir, ramai kawan dalam lingkungan
@@ -3691,27 +3691,27 @@ warahmatullahi wabarakatuh.*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1515,Seorang Ahli,Tidak sokong?
+Bacaan Kali Yang Kedua dan Ketiga",,3.15 ptg.,1515,Seorang Ahli,Tidak sokong?
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1515,Tuan Yang di-Pertua,*Walaikumsalam.*
+Bacaan Kali Yang Kedua dan Ketiga",,3.15 ptg.,1515,Tuan Yang di-Pertua,*Walaikumsalam.*
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1515,Datuk Razali bin Idris,Saya sokong...
+Bacaan Kali Yang Kedua dan Ketiga",,3.15 ptg.,1515,Datuk Razali bin Idris,Saya sokong...
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1515,ANNOTATION,[Ketawa]
+Bacaan Kali Yang Kedua dan Ketiga",,3.15 ptg.,1515,ANNOTATION,[Ketawa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1515,Tuan Yang di-Pertua,*Alhamdulillah*. Dijemput.
+Bacaan Kali Yang Kedua dan Ketiga",,3.15 ptg.,1515,Tuan Yang di-Pertua,*Alhamdulillah*. Dijemput.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1520,Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh],"Dengan izin Tuan Yang di-Pertua, saya
+Bacaan Kali Yang Kedua dan Ketiga",,3.20 ptg.,1520,Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh],"Dengan izin Tuan Yang di-Pertua, saya
 mengambil kesempatan ini untuk mengucapkan terima kasih kepada semua, 12 orang
 pembahas yang menyertai perbahasan berkenaan rang undang-undang ini.
 Seperti yang telah pun saya jelaskan tadi, undang-undang ini adalah untuk *facilitate*
@@ -3795,7 +3795,7 @@ mungkin munasabah."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1530,Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh],"*So*, adakah kuasa kehakiman ini adalah sementara? Memang ia adalah sementara
+Bacaan Kali Yang Kedua dan Ketiga",,■1530,1530,Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh],"*So*, adakah kuasa kehakiman ini adalah sementara? Memang ia adalah sementara
 sehingga penyelesaian kesemua kes. Apabila satu permohonan dibuat, selepas itu tiada lagi
 permohonan boleh dibuat. *That’s only one opportunity to do so* dalam 90 hari yang ditetapkan
 dalam rang undang-undang ini.
@@ -3876,7 +3876,7 @@ juga dengan isu pampasan di bawah seksyen 426 yang telah pun saya bangkitkan tad
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1540,Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh],"Juga persoalan yang berkaitan dengan pembunuh bersiri- *serial killers* telah pun
+Bacaan Kali Yang Kedua dan Ketiga",,■1540,1540,Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh],"Juga persoalan yang berkaitan dengan pembunuh bersiri- *serial killers* telah pun
 dibangkitkan tadi di mana telah pun dicadangkan bahawa permohonan semakan rayuan tidak
 perlu untuk kes-kes seperti itu.
 Secara dasarnya Tuan Yang di-Pertua, kerajaan telah pun mengambil keputusan
@@ -3902,71 +3902,71 @@ ditimbulkan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1540,Tuan Yang di-Pertua,Saya fikir pun begitu.
+Bacaan Kali Yang Kedua dan Ketiga",,■1540,1540,Tuan Yang di-Pertua,Saya fikir pun begitu.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1540,Tuan Ramkarpal Singh a/l Karpal Singh,"Ya dan saya ingin mengambil peluang
+Bacaan Kali Yang Kedua dan Ketiga",,■1540,1540,Tuan Ramkarpal Singh a/l Karpal Singh,"Ya dan saya ingin mengambil peluang
 seperti saya ambil tadi untuk mengucapkan terima kasih kepada semua pembahas yang
 menyokong RUU ini. Sekian, terima kasih..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1540,ANNOTATION,[Tepuk]
+Bacaan Kali Yang Kedua dan Ketiga",,■1540,1540,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1540,Tuan Yang di-Pertua,"Baiklah. Ahli-ahli Yang Berhormat, sekarang saya kemukakan
+Bacaan Kali Yang Kedua dan Ketiga",,■1540,1540,Tuan Yang di-Pertua,"Baiklah. Ahli-ahli Yang Berhormat, sekarang saya kemukakan
 masalah kepada Majlis bagi diputuskan. Masalahnya ialah bahawa rang undang-undang ini
 dibacakan kali yang kedua sekarang."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1540,ANNOTATION,[Masalah dikemukakan bagi diputuskan; dan disetujukan]
+Bacaan Kali Yang Kedua dan Ketiga",,■1540,1540,ANNOTATION,[Masalah dikemukakan bagi diputuskan; dan disetujukan]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1540,ANNOTATION,"[Rang undang-undang dibacakan kali yang kedua dan diserahkan kepada Dewan
+Bacaan Kali Yang Kedua dan Ketiga",,■1540,1540,ANNOTATION,"[Rang undang-undang dibacakan kali yang kedua dan diserahkan kepada Dewan
 sebagai Jawatankuasa]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1540,ANNOTATION,[Majlis bersidang dalam Jawatankuasa]
+Bacaan Kali Yang Kedua dan Ketiga",,■1540,1540,ANNOTATION,[Majlis bersidang dalam Jawatankuasa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1540,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Jawatankuasa]
+Bacaan Kali Yang Kedua dan Ketiga",,■1540,1540,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Jawatankuasa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1540,ANNOTATION,[Fasal-fasal 1 hingga 5 jadi sebahagian daripada rang undang-undang]
+Bacaan Kali Yang Kedua dan Ketiga",,■1540,1540,ANNOTATION,[Fasal-fasal 1 hingga 5 jadi sebahagian daripada rang undang-undang]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1540,ANNOTATION,[Rang Undang-undang dimaklumkan kepada Majlis sekarang]
+Bacaan Kali Yang Kedua dan Ketiga",,■1540,1540,ANNOTATION,[Rang Undang-undang dimaklumkan kepada Majlis sekarang]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1540,ANNOTATION,[Majlis Mesyuarat bersidang semula]
+Bacaan Kali Yang Kedua dan Ketiga",,■1540,1540,ANNOTATION,[Majlis Mesyuarat bersidang semula]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1540,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
+Bacaan Kali Yang Kedua dan Ketiga",,■1540,1540,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG SEMAKAN HUKUMAN MATI DAN
 PEMENJARAAN SEPANJANG HAYAT
 (BIDANG KUASA SEMENTARA MAHKAMAH PERSEKUTUAN) 2023
-Bacaan Kali Yang Kedua dan Ketiga",,1540,ANNOTATION,"[Rang undang-undang dilaporkan dengan tidak ada pindaan; dibacakan kali yang
+Bacaan Kali Yang Kedua dan Ketiga",,■1540,1540,ANNOTATION,"[Rang undang-undang dilaporkan dengan tidak ada pindaan; dibacakan kali yang
 ketiga, disokong oleh Menteri di Jabatan Perdana Menteri (Hal Ehwal Sabah, Sarawak dan
 Tugas-tugas Khas) (Datuk Armizan bin Mohd Ali) dan diluluskan]"
 USUL,"USUL MENTERI DI JABATAN PERDANA MENTERI
-DI BAWAH P.M 78(5)",,1547,Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh],"Tuan Yang di-Pertua, saya mohon
+DI BAWAH P.M 78(5)",,3.47 ptg.,1547,Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh],"Tuan Yang di-Pertua, saya mohon
 mencadangkan bahawa mengikut Peraturan Mesyuarat 78(5), maka Penyata Jawatankuasa
 Peraturan-peraturan Mesyuarat yang dibentangkan di atas meja Mesyuarat dalam Dewan ini
 sebagai Kertas Dewan Negara DN.4 Tahun 2023 hendaklah diterima dan dipersetujukan."
 USUL,"USUL MENTERI DI JABATAN PERDANA MENTERI
-DI BAWAH P.M 78(5)",,1547,Tuan Yang di-Pertua,Silakan.
+DI BAWAH P.M 78(5)",,3.47 ptg.,1547,Tuan Yang di-Pertua,Silakan.
 USUL,"USUL MENTERI DI JABATAN PERDANA MENTERI
-DI BAWAH P.M 78(5)",,1547,Tuan Ramkarpal Singh a/l Karpal Singh,"Untuk makluman Dewan yang mulia ini,
+DI BAWAH P.M 78(5)",,3.47 ptg.,1547,Tuan Ramkarpal Singh a/l Karpal Singh,"Untuk makluman Dewan yang mulia ini,
 Usul dibentangkan bagi menambah baik urusan perjalanan Majlis Mesyuarat Dewan Negara
 selaras dengan semangat dan pelaksanaan kaedah semak dan imbang yang berkesan di
 antara badan Eksekutif Kerajaan dan Badan Perundangan Legislatif dalam negara yang
@@ -4002,17 +4002,17 @@ rakyat dapat dizahirkan, dan seterusnya dapat memantapkan tata kelola, disiplin 
 legislatif dalam kalangan Ahli-ahli Yang Berhormat Dewan Negara demi pengukuhan institusi
 Parlimen secara keseluruhannya."
 USUL,"USUL MENTERI DI JABATAN PERDANA MENTERI
-DI BAWAH P.M 78(5)",,1550,Tuan Ramkarpal Singh a/l Karpal Singh,"Berdasarkan huraian di atas, saya mohon mencadangkan supaya Penyata
+DI BAWAH P.M 78(5)",,■1550,1550,Tuan Ramkarpal Singh a/l Karpal Singh,"Berdasarkan huraian di atas, saya mohon mencadangkan supaya Penyata
 Jawatankuasa ini diterima dan di persetujui. Tuan Yang di-Pertua, saya mohon
 mencadangkan."
 USUL,"USUL MENTERI DI JABATAN PERDANA MENTERI
-DI BAWAH P.M 78(5)",,1550,Tuan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Timbalan Menteri,
+DI BAWAH P.M 78(5)",,■1550,1550,Tuan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Timbalan Menteri,
 dapatkan sokongan?"
 USUL,"USUL MENTERI DI JABATAN PERDANA MENTERI
-DI BAWAH P.M 78(5)",,1550,"Timbalan Menteri di Jabatan Perdana Menteri (Hal Ehwal Sabah, Sarawak dan Tugas-tugas Khas) [Datuk Ugak anak Kumbong]","Tuan Yang di-Pertua, saya mohon
+DI BAWAH P.M 78(5)",,■1550,1550,"Timbalan Menteri di Jabatan Perdana Menteri (Hal Ehwal Sabah, Sarawak dan Tugas-tugas Khas) [Datuk Ugak anak Kumbong]","Tuan Yang di-Pertua, saya mohon
 menyokong."
 USUL,"USUL MENTERI DI JABATAN PERDANA MENTERI
-DI BAWAH P.M 78(5)",,1550,Tuan Yang di-Pertua,"Baiklah. Ahli-ahli Yang Berhormat, masalahnya sekarang ialah
+DI BAWAH P.M 78(5)",,■1550,1550,Tuan Yang di-Pertua,"Baiklah. Ahli-ahli Yang Berhormat, masalahnya sekarang ialah
 Usul oleh Yang Berhormat Menteri itu terbuka untuk dibahaskan. Sekiranya ada Yang
 Berhormat ingin berbahas, dibenarkan, namun sukacita saya nyatakan bahawa Usul tadi telah
 dipersetujui secara prinsip oleh semua pihak, dan ia merupakan hal yang penting dan
@@ -4034,16 +4034,16 @@ Sekarang saya kemukakan masalah berkenaan kepada Majlis untuk diputuskan.
 Masalahnya ialah Usul seperti yang dikemukakan oleh Yang Berhormat Timbalan Menteri tadi
 hendaklah disetujukan."
 USUL,"USUL MENTERI DI JABATAN PERDANA MENTERI
-DI BAWAH P.M 78(5)",,1550,ANNOTATION,[Usul dikemuka bagi diputuskan; dan disetujukan]
+DI BAWAH P.M 78(5)",,■1550,1550,ANNOTATION,[Usul dikemuka bagi diputuskan; dan disetujukan]
 USUL,"USUL MENTERI DI JABATAN PERDANA MENTERI
-DI BAWAH P.M 78(5)",,1550,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, dengan itu maka tercatatlah satu
+DI BAWAH P.M 78(5)",,■1550,1550,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, dengan itu maka tercatatlah satu
 sejarah bagi Dewan ini yakni kedudukan peraturan mesyuarat yang telah kita pakai berdekad-
 dekad itu, pada hari ini bolehlah dianggap sebagai berkuat kuasa mengikut tahap dan
 lunasnya buat masa-masa akan datang..."
 USUL,"USUL MENTERI DI JABATAN PERDANA MENTERI
-DI BAWAH P.M 78(5)",,1550,ANNOTATION,[Tepuk]
+DI BAWAH P.M 78(5)",,■1550,1550,ANNOTATION,[Tepuk]
 USUL,"USUL MENTERI DI JABATAN PERDANA MENTERI
-DI BAWAH P.M 78(5)",,1550,Tuan Yang di-Pertua,"Suka saya menyatakan juga bahawa antara peruntukan-peruntukan yang dimuatkan
+DI BAWAH P.M 78(5)",,■1550,1550,Tuan Yang di-Pertua,"Suka saya menyatakan juga bahawa antara peruntukan-peruntukan yang dimuatkan
 di bawah usaha tersebut memberi ruang yang lebih kepada Ahli-ahli Yang Berhormat dan
 juga kepada kerajaan untuk melunaskan juga perkara-perkara yang sebelum ini agak samar-
 samar. Bersama-samalah kita lihat bagaimana keberkesanannya dan saya yakin bahawa nas
@@ -4060,9 +4060,9 @@ Terima kasih juga kepada Yang Amat Berhormat Perdana Menteri dan Yang
 Berhormat Menteri-Menteri Kabinet yang telah memenuhi janji mereka untuk hadir menjawab
 pertanyaan-pertanyaan yang dimajukan dalam Dewan yang mulia ini..."
 USUL,"USUL MENTERI DI JABATAN PERDANA MENTERI
-DI BAWAH P.M 78(5)",,1550,ANNOTATION,[Tepuk]
+DI BAWAH P.M 78(5)",,■1550,1550,ANNOTATION,[Tepuk]
 USUL,"USUL MENTERI DI JABATAN PERDANA MENTERI
-DI BAWAH P.M 78(5)",,1550,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, Majlis ini telah pun meluluskan Usul Menjunjung Kasih ke
+DI BAWAH P.M 78(5)",,■1550,1550,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, Majlis ini telah pun meluluskan Usul Menjunjung Kasih ke
 atas Titah Kebawah Duli Yang Maha Mulia Seri Paduka Baginda Yang di-Pertuan Agong, dan
 Rang Undang-undang Perbekalan 2023 dengan jayanya, di samping 12 lagi rang undang-
 undang yang telah diserahkan oleh Dewan Rakyat dalam tempoh 14 hari persidangan
@@ -4093,16 +4093,16 @@ Raya Aidilfitri, maaf zahir dan batin. Semoga kita- semua diberikan kerahmatan s
 bulan Ramadan ini, dan diberikan kegembiraan sebaik menjelang 1 Syawal nanti.
 Suka saya merangkapkan..."
 USUL,"USUL MENTERI DI JABATAN PERDANA MENTERI
-DI BAWAH P.M 78(5)",,1550,ANNOTATION,[Berpantun]
+DI BAWAH P.M 78(5)",,■1550,1550,ANNOTATION,[Berpantun]
 USUL,"USUL MENTERI DI JABATAN PERDANA MENTERI
-DI BAWAH P.M 78(5)",,1550,Tuan Yang di-Pertua,"*Orang Daik pulang ke Daik,
+DI BAWAH P.M 78(5)",,■1550,1550,Tuan Yang di-Pertua,"*Orang Daik pulang ke Daik,
 Sampai di Daik ditiup taufan;
 Di hari baik bulan pun baik,
 Yang terbaik ialah bermaaf-maafan...*"
 USUL,"USUL MENTERI DI JABATAN PERDANA MENTERI
-DI BAWAH P.M 78(5)",,1550,ANNOTATION,[Tepuk]
+DI BAWAH P.M 78(5)",,■1550,1550,ANNOTATION,[Tepuk]
 USUL,"USUL MENTERI DI JABATAN PERDANA MENTERI
-DI BAWAH P.M 78(5)",,1550,Tuan Yang di-Pertua,"Buat Ahli-ahli Yang Berhormat yang pulang dan mahu bercuti bersama keluarga,
+DI BAWAH P.M 78(5)",,■1550,1550,Tuan Yang di-Pertua,"Buat Ahli-ahli Yang Berhormat yang pulang dan mahu bercuti bersama keluarga,
 jagalah keselamatan diri dan juga keluarga masing-masing. Kita berharap dan berdoa
 semoga dua akta perjuangan kita bersama yakni Akta Perkhidmatan Parlimen, dan juga Akta
 Majlis Parlimen (Keistimewaan dan Kuasa) 1952, dengan sokongan Yang Berhormat
@@ -4111,16 +4111,16 @@ Dewan ini secepat mungkin. Oleh sebab kita telah pun meluluskan Usul berkaitan d
 pada bulan Oktober yang lalu lagi. Dengan harapan itulah maka kita julang perjuangan kita
 sebagai anggota pendukung kepada Dewan tertinggi yakni *The Upper House of Malaysia...*"
 USUL,"USUL MENTERI DI JABATAN PERDANA MENTERI
-DI BAWAH P.M 78(5)",,1550,ANNOTATION,[Tepuk]
+DI BAWAH P.M 78(5)",,■1550,1550,ANNOTATION,[Tepuk]
 USUL,"USUL MENTERI DI JABATAN PERDANA MENTERI
-DI BAWAH P.M 78(5)",,1550,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, begitulah penyampaian, dan bertemu kita lagi dalam
+DI BAWAH P.M 78(5)",,■1550,1550,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, begitulah penyampaian, dan bertemu kita lagi dalam
 suasana dan keadaan mendatang.
 Terima kasih buat semua, dan selamat pulang kepada keluarga tercinta.
 *Wassalamualaikum warahmatullahi wabarakatuh...*"
 USUL,"USUL MENTERI DI JABATAN PERDANA MENTERI
-DI BAWAH P.M 78(5)",,1550,ANNOTATION,[Tepuk]
+DI BAWAH P.M 78(5)",,■1550,1550,ANNOTATION,[Tepuk]
 USUL,"USUL MENTERI DI JABATAN PERDANA MENTERI
-DI BAWAH P.M 78(5)",,1550,Tuan Yang di-Pertua,"Sebagai penutupnya bahawa, sesi dan Majlis Mesyuarat Dewan Negara ditangguhkan
+DI BAWAH P.M 78(5)",,■1550,1550,Tuan Yang di-Pertua,"Sebagai penutupnya bahawa, sesi dan Majlis Mesyuarat Dewan Negara ditangguhkan
 hingga satu tarikh yang akan ditetapkan nanti."
 USUL,"USUL MENTERI DI JABATAN PERDANA MENTERI
-DI BAWAH P.M 78(5)",,1600,ANNOTATION,[Dewan ditangguhkan pada pukul 4.00 petang]
+DI BAWAH P.M 78(5)",,4.00 petang,1600,ANNOTATION,[Dewan ditangguhkan pada pukul 4.00 petang]

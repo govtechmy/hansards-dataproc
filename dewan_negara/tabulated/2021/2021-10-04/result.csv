@@ -1,16 +1,16 @@
-level_1,level_2,level_3,timestamp,author,speech
-,,,1000,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
-,MENGANGKAT SUMPAH SEBAGAI AHLI DEWAN NEGARA,,1000,Setiausaha,"Mengangkat sumpah sebagai Ahli Dewan Negara. Tuan Yang di-
+level_1,level_2,level_3,raw_timestamp,timestamp,author,speech
+,,,10.00 pagi,1000,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
+,MENGANGKAT SUMPAH SEBAGAI AHLI DEWAN NEGARA,,10.00 pagi,1000,Setiausaha,"Mengangkat sumpah sebagai Ahli Dewan Negara. Tuan Yang di-
 Pertua Dewan Negara, Ahli-ahli Yang Berhormat, dan para hadirin sekalian, Majlis
 Mengangkat Sumpah pada hari ini mengikut Peraturan Mesyuarat 4(3), Peraturan-
 peraturan Majlis Mesyuarat Dewan Negara.
 Dengan hormatnya saya menjemput Ahli Yang Berhormat berikut untuk
 mengangkat sumpah di hadapan Tuan Yang di-Pertua Dewan Negara."
-,LANTIKAN SEMULA,,1000,,"1. Yang Berhormat Senator Puan Lim Hui Ying
+,LANTIKAN SEMULA,,10.00 pagi,1000,,"1. Yang Berhormat Senator Puan Lim Hui Ying
 2. Yang Berhormat Senator Dato’ Haji Husain bin Awang"
-,LANTIKAN BAHARU,,1000,,3. Yang Berhormat Senator Datuk Hisamudin Bin Yahaya
-,LANTIKAN BAHARU,,1000,ANNOTATION,[Upacara Mengangkat Sumpah tamat]
-PEMASYHURAN TUAN YANG DI-PERTUA,MENGALU-ALUKAN PELANTIKAN TIGA ORANG AHLI DEWAN NEGARA,,1000,Tuan Yang di-Pertua,"*Assalamualaikum*.
+,LANTIKAN BAHARU,,10.00 pagi,1000,,3. Yang Berhormat Senator Datuk Hisamudin Bin Yahaya
+,LANTIKAN BAHARU,,10.00 pagi,1000,ANNOTATION,[Upacara Mengangkat Sumpah tamat]
+PEMASYHURAN TUAN YANG DI-PERTUA,MENGALU-ALUKAN PELANTIKAN TIGA ORANG AHLI DEWAN NEGARA,,10.00 pagi,1000,Tuan Yang di-Pertua,"*Assalamualaikum*.
 Ahli-ahli Yang Berhormat, terlebih dahulu saya ingin mengucapkan setinggi-tinggi
 tahniah, dan mengalu-alukan pelantikan tiga orang Ahli Dewan Negara yang telah
 mengangkat sumpah sebentar tadi iaitu:
@@ -23,7 +23,7 @@ September 2021; dan
 (iii) Yang Berhormat Senator Datuk Hisamudin bin Yahaya (Lantikan
 Baharu, Lantikan Yang di-Pertuan Agong bagi Wilayah
 Persekutuan Putrajaya) berkuat kuasa mulai 4 Oktober 2021."
-PEMASYHURAN TUAN YANG DI-PERTUA,MENGALU-ALUKAN PELANTIKAN TIGA ORANG AHLI DEWAN NEGARA,,1010,Tuan Yang di-Pertua,"*Alhamdulillah,* selepas lebih sembilan bulan atau tepatnya 279 hari Dewan ini
+PEMASYHURAN TUAN YANG DI-PERTUA,MENGALU-ALUKAN PELANTIKAN TIGA ORANG AHLI DEWAN NEGARA,,■1010,1010,Tuan Yang di-Pertua,"*Alhamdulillah,* selepas lebih sembilan bulan atau tepatnya 279 hari Dewan ini
 tidak bersidang akibat pandemik COVID-19 dan Proklamasi Darurat, hari ini fungsi
 legislatif Dewan Negara kembali pada hak yang sepatutnya bagi membolehkan para
 Senator memainkan peranan dan melunaskan tanggungjawabnya sebagaimana
@@ -87,7 +87,7 @@ serta di jemala kita semualah tanggungjawab tersebut terpikul, dan rakyat serta 
 pemerhatian mereka kita jalankan tugas sebagai *legislator.*
 Dengan kata-kata itu saya memulakan Mesyuarat Pertama, Penggal Keempat,
 Parlimen Keempat Belas."
-PEMASYHURAN TUAN YANG DI-PERTUA,AHLI-AHLI MENGANGKAT SUMPAH DI LUAR DEWAN,,1010,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, mengikut peruntukan Peraturan
+PEMASYHURAN TUAN YANG DI-PERTUA,AHLI-AHLI MENGANGKAT SUMPAH DI LUAR DEWAN,,■1010,1010,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, mengikut peruntukan Peraturan
 Majlis Mesyuarat 4(3), saya dengan ini memberitahu Majlis iaitu Ahli-ahli Yang Berhormat
 yang berikut telah mengangkat sumpah di luar Majlis Mesyuarat Dewan, mengikut Jadual
 Keenam dalam Perlembagaan Persekutuan pada tarikh yang dinyatakan seperti berikut:
@@ -121,7 +121,7 @@ Pilihan Dewan Undangan Negeri Perlis); dan
 6. Yang Berhormat Puan Fadhlina binti Dato’ Sidek (Pilihan Dewan
 Undangan Negeri Pulau Pinang)."
 PEMASYHURAN TUAN YANG DI-PERTUA,"TITAH KE BAWAH DULI YANG MAHA MULIA
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1020,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, dengan sukacitanya saya
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1020,1020,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, dengan sukacitanya saya
 memaklumkan kepada Majlis iaitu pada 13 September 2021, Ke Bawah Duli Yang Maha
 Mulia Seri Paduka Baginda Yang di-Pertuan Agong dengan limpah kurnia Baginda telah
 berkenan Bertitah dalam kedua-dua Majlis Parlimen secara bersesama. Saya telah
@@ -129,8 +129,8 @@ menerima salinan Titah Ke Bawah Duli Yang Maha Mulia Seri Paduka Baginda Yang di
 Pertuan Agong dan seterusnya sekarang mengarahkan supaya salinan Titah Diraja itu
 dibentangkan di atas meja mesyuarat dan seterusnya dicetak dalam Penyata Rasmi."
 PEMASYHURAN TUAN YANG DI-PERTUA,"TITAH KE BAWAH DULI YANG MAHA MULIA
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1020,ANNOTATION,[Teks Titah Diraja boleh didapati di Penyata Rasmi Bil. 1/ DN 13 September 2021]
-PEMASYHURAN TUAN YANG DI-PERTUA,MEMPERKENANKAN AKTA-AKTA,,1020,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, sukacita dimaklumkan di Majlis
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1020,1020,ANNOTATION,[Teks Titah Diraja boleh didapati di Penyata Rasmi Bil. 1/ DN 13 September 2021]
+PEMASYHURAN TUAN YANG DI-PERTUA,MEMPERKENANKAN AKTA-AKTA,,■1020,1020,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, sukacita dimaklumkan di Majlis
 ini iaitu Ke Bawah Duli Yang Maha Mulia Seri Paduka Baginda Yang di-Pertuan Agong
 dengan limpah kurnia Baginda telah memperkenankan akta-akta yang telah diluluskan
 oleh Parlimen dalam Mesyuarat Penggal yang lalu seperti berikut:
@@ -146,7 +146,7 @@ oleh Parlimen dalam Mesyuarat Penggal yang lalu seperti berikut:
 9. Akta Cukai Pelancongan (Pindaan) 2021; dan
 10. Akta Koperasi (Pindaan) 2021."
 PEMASYHURAN TUAN YANG DI-PERTUA,"PROSEDUR OPERASI STANDARD
-PERSIDANGAN DEWAN NEGARA",,1020,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, oleh sebab kita sudah sekian
+PERSIDANGAN DEWAN NEGARA",,■1020,1020,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, oleh sebab kita sudah sekian
 lama tidak bermesyuarat, maka saya telah dipohon oleh Pentadbiran Parlimen
 mengumumkan perkara seperti berikut.
 Seperti mana Ahli-ahli Yang Berhormat sedia maklum, penularan pandemik
@@ -202,7 +202,7 @@ Ali-ahli Yang Berhormat Senator, sama-sama kita berdoa agar wabak COVID-19
 ini segera dibendung sepenuhnya dan tidak lagi memberi ancaman kepada rakyat.
 Dengan izin Allah jua, negara kita dapat kembali seperti sedia kala, dan Parlimen dapat
 bersidang seperti biasa."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,1020,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, sebelum saya menjemput Ahli-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1020,1020,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, sebelum saya menjemput Ahli-
 ahli Yang Berhormat yang pertama mengemukakan pertanyaan, sukacita saya membuat
 petua seperti berikut:
 (i) bagi pertanyaan lisan, hanya tiga minit diperuntukkan bagi Yang
@@ -215,26 +215,26 @@ bergantung kepada konteks pertanyaan asal. Sekiranya tidak berkaitan, ia tidak a
 diberikan lanjutan.
 Adalah diharapkan agar petua ini membolehkan Dewan dapat menyelesaikan
 sebanyak mungkin Pertanyaan Lisan dalam *Aturan Urusan Mesyuarat*.
-Yang Berhormat Senator IR Tan Sri Haji Khairil Nizam bin Khairudin."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,Ir. Ts Haji Khairil Nizam bin Khirudin,"minta Perdana Menteri menyatakan,
+Yang Berhormat Senator IR Tan Sri Haji Khairil Nizam bin Khairudin.
+**1. Ir. Ts Haji Khairil Nizam bin Khirudin** minta Perdana Menteri menyatakan,
 adakah persediaan kementerian untuk melaksanakan Undi-18 sekali gus pendaftaran
 pengundi secara automatik di dalam PRU15."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1030,Menteri di Jabatan Perdana Menteri (Parlimen dan Undang-undang) [Dato’ Sri Dr. Haji Wan Junaidi bin Tuanku Jaafar],"Terima kasih, Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1030,1030,Menteri di Jabatan Perdana Menteri (Parlimen dan Undang-undang) [Dato’ Sri Dr. Haji Wan Junaidi bin Tuanku Jaafar],"Terima kasih, Tuan Yang di-Pertua.
 *Bismillah Rahman Rahim. Assalamualaikum warahmatullahi wabarakatuh.*
 Tuan Yang di-Pertua, sebelum itu saya ucapkan tahniah kepada semua Senator
 yang baru mengangkat sumpah. Sebelum itu juga, Tuan Yang di-Pertua, saya mohon izin
 untuk menjawab soalan ini bersekali dengan empat soalan lain kerana ia menyentuh
 perkara yang sama."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1030,Tuan Yang di-Pertua,Silakan.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1030,Dato’ Sri Dr. Haji Wan Junaidi bin Tuanku Jaafar,"Iaitu, soalan satu daripada
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1030,1030,Tuan Yang di-Pertua,Silakan.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1030,1030,Dato’ Sri Dr. Haji Wan Junaidi bin Tuanku Jaafar,"Iaitu, soalan satu daripada
 Yang Berhormat Senator Tuan Ahmad bin Yahaya, pada 4 Oktober, Nombor 47; daripada
 Yang Berhormat Senator Tan Sri Dato’ Seri Mohd Radzi bin Tan Sri Sheikh Ahmad, pada
 6 Oktober, soalan Nombor 37; daripada Yang Berhormat Senator Datuk Teo Eng Tee @
 Teo Kok Chee, pada 13 Oktober, Nombor 39; dan daripada Yang Berhormat Senator Tuan
 Balasubramaniam a/l Nachiappan, pada 18 Oktober, Nombor 5. Tuan Yang di-Pertua,
 mohon izin."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1030,Tuan Yang di-Pertua,Sila.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1030,Dato’ Sri Dr. Haji Wan Junaidi bin Tuanku Jaafar,"Terima kasih, Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1030,1030,Tuan Yang di-Pertua,Sila.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1030,1030,Dato’ Sri Dr. Haji Wan Junaidi bin Tuanku Jaafar,"Terima kasih, Tuan Yang di-
 Pertua. Untuk makluman Yang Berhormat, Suruhanjaya Pilihan Raya Malaysia, sedang
 dalam persiapan untuk melaksanakan dan pindaan Perkara 119, Perlembagaan
 Persekutuan iaitu berhubung umur kelayakan mengundi 18 tahun dan Pendaftaran
@@ -271,11 +271,11 @@ Pendaftaran Pemilih secara automatik dilaksanakan selewat-lewatnya pada 31 Disem
 untuk memastikan umur kelayakan mengundi 18 tahun, Pendaftaran Pemilih secara
 automatik dilaksanakan berdasarkan kepada keputusan mahkamah, Tuan Yang di-
 Pertua. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1030,Tuan Yang di-Pertua,"Sila, tambahan. Tidak ada? Kedua..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1030,Ir. Ts. Haji Khairil Nizam bin Khirudin,"Tuan Yang di-Pertua, ada soalan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1030,1030,Tuan Yang di-Pertua,"Sila, tambahan. Tidak ada? Kedua..."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1030,1030,Ir. Ts. Haji Khairil Nizam bin Khirudin,"Tuan Yang di-Pertua, ada soalan
 tambahan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1030,Tuan Yang di-Pertua,Lain kali berdiri cepat sikit.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1030,Ir. Ts. Haji Khairil Nizam bin Khirudin,"Okey. Baiklah, terima kasih kepada Tuan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1030,1030,Tuan Yang di-Pertua,Lain kali berdiri cepat sikit.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1030,1030,Ir. Ts. Haji Khairil Nizam bin Khirudin,"Okey. Baiklah, terima kasih kepada Tuan
 Yang di-Pertua dan terima kasih kepada Yang Berhormat Menteri. Bagi mewakili anak
 muda seramai 1.2 juta orang yang berusia 18 hingga 21 tahun dan 4.4 juta orang yang
 berusia 21 tahun ke atas, yang akan didaftarkan secara automatik, adakah detil
@@ -283,8 +283,8 @@ perancangan pihak kerajaan bagi meningkatkan kesedaran dan pengetahuan kepada
 bakal pengundi muda ini, khususnya dalam soal pendidikan, politik dan keperluan untuk
 mengundi?
 Terima kasih, Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1030,Tuan Yang di-Pertua,Yang Berhormat Menteri.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1030,Dato’ Sri Dr. Haji Wan Junaidi bin Tuanku Jaafar,"Terima kasih, Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1030,1030,Tuan Yang di-Pertua,Yang Berhormat Menteri.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1030,1030,Dato’ Sri Dr. Haji Wan Junaidi bin Tuanku Jaafar,"Terima kasih, Tuan Yang di-
 Pertua. Sebenarnya apabila kita meluluskan, membawa perundangan ini kepada Dewan
 Rakyat ke Parlimen dahulu, tujuan kita untuk pengundian 18 tahun ini dilaksanakan pada
 pilihan raya yang akan datang.
@@ -302,18 +302,18 @@ Selain itu, SPR juga Tuan Yang di-Pertua, akan melaksanakan pendidikan
 pengundi bagi menambahkan keyakinan rakyat Malaysia mengenai kelulusan perjalanan
 pilihan raya bagi meningkatkan keyakinan awam terhadap sistem pilihan raya Malaysia
 yang ada sekarang ini. Terima kasih Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1030,Tuan Yang di-Pertua,Terima kasih Yang Berhormat Menteri.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1030,Tuan Muhamad Zahid bin Md. Arip,"Tuan Yang di-Pertua, satu soalan Tuan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1030,1030,Tuan Yang di-Pertua,Terima kasih Yang Berhormat Menteri.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1030,1030,Tuan Muhamad Zahid bin Md. Arip,"Tuan Yang di-Pertua, satu soalan Tuan
 Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1030,Tuan Yang di-Pertua,"Ya, silakan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1030,Tuan Muhamad Zahid bin Md. Arip,"Terima kasih Tuan Yang di-Pertua. Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1030,1030,Tuan Yang di-Pertua,"Ya, silakan."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1030,1030,Tuan Muhamad Zahid bin Md. Arip,"Terima kasih Tuan Yang di-Pertua. Yang
 Berhormat Menteri, saya ingin bertanya, ekoran daripada keputusan Mahkamah Tinggi
 Kuching yang menggesa supaya pelaksanaan dibuat pada 31 Disember 2021. Jika kita
 telah mencuba sedaya upaya tetapi pada tarikh itu kita tidak lagi berkeupayaan untuk
 melaksanakannya, apakah kerajaan bersedia untuk merayu keputusan Mahkamah Tinggi
 Kuching ini ke peringkat yang lebih tinggi di Mahkamah Rayuan? Mohon penjelasan Yang
 Berhormat Menteri."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1030,Dato’ Sri Dr. Haji Wan Junaidi bin Tuanku Jaafar,"Terima kasih Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1030,1030,Dato’ Sri Dr. Haji Wan Junaidi bin Tuanku Jaafar,"Terima kasih Yang
 Berhormat. Tuan Yang di-Pertua, sebenarnya kita sudah membuat keputusan bahawa kita
 akur dengan arahan mahkamah walaupun sebagaimana yang saya sebutkan tadi, kita
 berhadapan dengan rintangan dan halangan oleh sebab jangka masa yang begitu singkat
@@ -322,15 +322,15 @@ Walau bagaimanapun, ada lagi satu kes mahkamah yang bakal didengar pada 21
 Oktober 2021 ini, kalau ada kelainan pendapat Mahkamah Tinggi Kuala Lumpur itu nanti,
 kita akan buat keputusan kemudian apabila kes itu diputuskan nanti. Terima kasih Tuan
 Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1030,Tuan Yang di-Pertua,"Terima kasih. Yang Berhormat Dato’ Sri Vell Paari a/l Tun
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1030,1030,Tuan Yang di-Pertua,"Terima kasih. Yang Berhormat Dato’ Sri Vell Paari a/l Tun
 Samy Vellu."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1030,Dato’ Sri Vell Paari a/l Tun Samy Vellu,"Tuan Yang di-Pertua, soalan saya
-Nombor 2."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1030,Dato' Sri Vell Paari a/l Tun Samy Vellu,"minta Menteri Kewangan menyatakan,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1030,1030,Dato’ Sri Vell Paari a/l Tun Samy Vellu,"Tuan Yang di-Pertua, soalan saya
+Nombor 2.
+**2. Dato' Sri Vell Paari a/l Tun Samy Vellu** minta Menteri Kewangan menyatakan,
 apa langkah-langkah serta persediaan yang diambil oleh pihak kerajaan bagi memastikan
 Pelan Pemulihan Negara (PPN) dapat mencapai objektif yang ditetapkan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1030,Tuan Yang di-Pertua,Silakan.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1030,Timbalan Menteri Kewangan II [Tuan Haji Yamani Hafez bin Musa],"*Bismillahi
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1030,1030,Tuan Yang di-Pertua,Silakan.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1030,1030,Timbalan Menteri Kewangan II [Tuan Haji Yamani Hafez bin Musa],"*Bismillahi
 Rahmani Rahim. Assalamualaikum warahmatullahi wabarakatuh* dan salam sejahtera.
 Tuan Yang di-Pertua, ekoran pengumuman oleh Yang Amat Berhormat Perdana
 Menteri pada 15 Julai 2021 tentang Pelan Pemulihan Negara, kerajaan telah pun
@@ -361,17 +361,17 @@ Kerajaan juga sedang mempertimbangkan langkah-langkah seterusnya bagi
 terus meningkatkan perlindungan melalui vaksinasi kepada lebih ramai penduduk di
 negara ini termasuklah pemberian vaksin kepada remaja berumur 12 tahun hingga 17
 tahun yang telah bermula pada pertengahan September 2021."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1040,Timbalan Menteri Kewangan II [Tuan Haji Yamani Hafez bin Musa],"Strategi keempat, membantu rakyat dan perniagaan melalui lapan- pakej
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1040,1040,Timbalan Menteri Kewangan II [Tuan Haji Yamani Hafez bin Musa],"Strategi keempat, membantu rakyat dan perniagaan melalui lapan- pakej
 rangsangan ekonomi yang bernilai RM530 bilion yang merangkumi inisiatif seperti
 bantuan tunai langsung, pembiayaan dan akses kepada perkhidmatan perbankan dan
 inisiatif pengekalan dan penciptaan pekerjaan. Terima kasih Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1040,Tuan Yang di-Pertua,Tambahan? Yang Berhormat Dato’ Wira Othman bin Aziz.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,Dato' Wira Othman bin Aziz,"minta Menteri Kanan Perdagangan Antarabangsa
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1040,1040,Tuan Yang di-Pertua,"Tambahan? Yang Berhormat Dato’ Wira Othman bin Aziz.
+**3. Dato' Wira Othman bin Aziz** minta Menteri Kanan Perdagangan Antarabangsa
 dan Industri menyatakan, impak keseluruhan perdagangan negara kesan daripada
 pandemik COVID-19. Apa langkah jangka pendek untuk merancakkan semula aktiviti
 perdagangan antarabangsa dan seterusnya membuka lebih banyak peluang pekerjaan
 kepada rakyat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,Menteri Kanan Perdagangan Antarabangsa dan Industri [Dato’ Seri Mohamed Azmin bin Ali],"Terima kasih Tuan Yang di-Pertua dan terima kasih Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1040,1040,Menteri Kanan Perdagangan Antarabangsa dan Industri [Dato’ Seri Mohamed Azmin bin Ali],"Terima kasih Tuan Yang di-Pertua dan terima kasih Yang
 Berhormat Senator.
 Keadaan ekonomi dunia yang semakin pulih telah memberikan impak positif
 kepada prestasi perdagangan negara. Bagi tempoh Januari hingga Ogos 2021,
@@ -402,14 +402,14 @@ Antarabangsa Malaysia (MIHAS) secara maya dari 9 September hingga 31 Disember
 tahun ini dan rekod jualan terkumpul untuk empat hari pertama pameran MIHAS dan juga
 *International Sourcing Programme* yang berlangsung dari 1 April hingga 1 September
 adalah sebanyak RM1.68 bilion. Terima kasih Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,Dato’ Wira Othman bin Aziz,"Terima kasih Tuan Yang di-Pertua, terima kasih
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1040,1040,Dato’ Wira Othman bin Aziz,"Terima kasih Tuan Yang di-Pertua, terima kasih
 Yang Berhormat Menteri yang memberikan jawapan yang cukup mantap. Soalan
 tambahan saya, adakah kerajaan bercadang atau ada memberikan pelepasan-pelepasan
 tertentu sama ada dalam bentuk rebat cukai dan sebagainya kepada syarikat-syarikat
 terutama PKS yang menjadi vendor kepada syarikat-syarikat besar.
 Contohnya macam automatif, kilang-kilang kereta yang terkesan kerana terpaksa
 mengurangkan pengeluaran. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,Dato’ Seri Mohamed Azmin bin Ali,"Terima kasih Yang Berhormat Senator.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1040,1040,Dato’ Seri Mohamed Azmin bin Ali,"Terima kasih Yang Berhormat Senator.
 Untuk makluman Yang Berhormat, MATRADE telah memperkenalkan Program
 Pembangunan Pengeksport di kalangan syarikat-syarikat perusahaan kecil dan
 sederhana (PKS) yang telah bersedia untuk mengeksport ataupun, dengan izin, *export
@@ -423,19 +423,19 @@ SPP. Maka, usaha-usaha ini akan berterusan Tuan Yang di-Pertua untuk memastikan
 akses pasaran antarabangsa di kalangan syarikat-syarikat PKS dan juga syarikat-syarikat
 *Mid-Tier* tadi, dapat diintegrasikan dalam rantaian bekalan global. Terima kasih Tuan Yang
 di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,Tuan Yang di-Pertua,Kembali.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,Tuan Muhamad Zahid bin Md. Arip,Tuan Yang di-Pertua.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,Tuan Yang di-Pertua,Tambahan?
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,Tuan Muhamad Zahid bin Md. Arip,"Soalan tambahan Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1040,1040,Tuan Yang di-Pertua,Kembali.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1040,1040,Tuan Muhamad Zahid bin Md. Arip,Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1040,1040,Tuan Yang di-Pertua,Tambahan?
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1040,1040,Tuan Muhamad Zahid bin Md. Arip,"Soalan tambahan Tuan Yang di-Pertua.
 **Sr. Haji Mohamad Apandi bin Mohamad:** *Assalamualaikum warahmatullahi
 wabarakatuh...*"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,Tuan Muhamad Zahid bin Md. Arip,Terima kasih Yang Berhormat Menteri.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,Tuan Yang di-Pertua,"Yang depan dulu.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1040,1040,Tuan Muhamad Zahid bin Md. Arip,Terima kasih Yang Berhormat Menteri.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1040,1040,Tuan Yang di-Pertua,"Yang depan dulu.
 **Sr. Haji Mohamad Apandi bin Mohamad:** *Assalamualaikum warahmatullahi
 wabarakatuh.* Terima kasih Tuan Yang di-Pertua. Soalan saya- pada tahun 2021 sehingga
 September, berapa defisit ataupun surplus antara eksport dan import negara setakat ini?
 Kesan daripada COVID-19 ini sehingga September? *Wallahualam*."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,Dato’ Seri Mohamed Azmin bin Ali,"Tuan Yang di-Pertua, seperti yang telah
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1040,1040,Dato’ Seri Mohamed Azmin bin Ali,"Tuan Yang di-Pertua, seperti yang telah
 saya nyatakan tadi, berdasarkan statistik yang telah saya bentangkan daripada Januari
 hingga Ogos 2021, lebihan dagangan negara telah melonjak sebanyak 48.2 peratus
 kepada RM150.2 bilion.
@@ -446,14 +446,14 @@ menyumbangkan kerana permintaan luaran itu meningkat dan juga produk-produk PKS
 tempatan itu memenuhi kehendak piawaian antarabangsa dan ini satu kebanggaan
 negara kita kerana syarikat-syarikat tempatan telah berjaya menembusi pasaran
 antarabangsa. Terima kasih Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1040,Tuan Yang di-Pertua,"Kembali Yang Berhormat Menteri.
-Dato’ Haji Jefridin bin Haji Atan, sila."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1040,Dato’ Haji Jefridin bin Haji Atan,"minta Menteri Pelancongan, Seni dan Budaya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1040,1040,Tuan Yang di-Pertua,"Kembali Yang Berhormat Menteri.
+Dato’ Haji Jefridin bin Haji Atan, sila.
+**4. Dato’ Haji Jefridin bin Haji Atan** minta Menteri Pelancongan, Seni dan Budaya
 menyatakan, adakah inisiatif kementerian dalam memulihkan semula sektor pelancongan
 terutamanya melibatkan penyelenggaraan kawasan tumpuan utama dan popular yang
 terjejas teruk disebabkan ketiadaan pelanggan yang terlalu lama akibat Perintah Kawalan
 Pergerakan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1040,"Timbalan Menteri Pelancongan, Seni dan Budaya [Datuk Seri Dr. Santhara]","Tuan Yang di-Pertua, terlebih dahulu saya merakamkan ucapan terima kasih kepada
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1040,1040,"Timbalan Menteri Pelancongan, Seni dan Budaya [Datuk Seri Dr. Santhara]","Tuan Yang di-Pertua, terlebih dahulu saya merakamkan ucapan terima kasih kepada
 Yang Berhormat Senator Dato’ Haji Jefridin bin Haji Atan atas pertanyaan lisan tersebut.
 Untuk makluman Yang Berhormat Senator, Kementerian Pelancongan, Seni dan
 Budaya (MOTAC) telah menyalurkan peruntukan bagi melaksanakan pembangunan
@@ -482,12 +482,12 @@ Secara umumnya, MOTAC sentiasa bekerja rapat dengan Kerajaan Negeri dalam
 memastikan pembangunan pelancongan serta ditambah baik. Ini bagi membolehkan dan
 menjadikan tarikan kepada pelancong sekali gus menyumbang kepada peningkatan
 ekonomi penduduk setempat. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Dato' Haji Jefridin bin Haji Atan,"Soalan tambahan saya. Saya memohon
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1050,1050,Dato' Haji Jefridin bin Haji Atan,"Soalan tambahan saya. Saya memohon
 Kementerian Pelancongan, Seni dan Budaya memberi jumlah, berapakah jumlah hotel
 dan resort di negara ini yang yang terpaksa menutup operasi atau pun gulung tikar akibat
 berlakunya pandemik COVID-19? Apakah bantuan-bantuan yang diberi oleh kementerian
 kepada pengusaha-pengusaha tersebut? Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Datuk Seri Dr. Santhara,"Tuan Yang di-Pertua, berdasarkan data yang diperoleh
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1050,1050,Datuk Seri Dr. Santhara,"Tuan Yang di-Pertua, berdasarkan data yang diperoleh
 daripada Persatuan Hotel Malaysia (MAH) dari bulan Mac 2020 sehingga kini, penutupan
 hotel ini telah dikategorikan kepada dua. Pertama, penutupan sepenuhnya. Sebanyak 55
 buah hotel telah pun ditutup sepenuhnya dan dianggarkan seramai 2,200 orang pekerja
@@ -506,32 +506,32 @@ Bantuan-bantuan lain yang diberikan adalah seperti pelanjutan diskaun bil elektr
 kepada penggiat industri, pengusaha hotel atau pun pengendali taman tema dan juga
 sebagainya sehingga 31 Disember 2021, iaitu 10 peratus daripada TNB. Pengecualian
 cukai pelancongan dan juga cukai perkhidmatan..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Tuan Yang di-Pertua,Ringkaskan Yang Berhormat.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Datuk Seri Dr. Santhara,"Ketiga, penangguhan pembayaran ansuran cukai dan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1050,1050,Tuan Yang di-Pertua,Ringkaskan Yang Berhormat.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1050,1050,Datuk Seri Dr. Santhara,"Ketiga, penangguhan pembayaran ansuran cukai dan
 juga Skim Subsidi Upah. Itu adalah antara beberapa..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Tuan Yang di-Pertua,Yang Berhormat Timbalan Menteri.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Datuk Seri Dr. Santhara,Terima kasih.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Tuan Yang di-Pertua,"Ada tambahan?
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1050,1050,Tuan Yang di-Pertua,Yang Berhormat Timbalan Menteri.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1050,1050,Datuk Seri Dr. Santhara,Terima kasih.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1050,1050,Tuan Yang di-Pertua,"Ada tambahan?
 **Sr. Haji Mohamad Apandi bin Mohamad:** Tambahan. Terima kasih, Tuan Yang
 di-Pertua. Yang Berhormat Menteri ada menjawab bahawa telah dipilih empat buah negeri
 sebagai ‘negeri budaya’ dalam merangka untuk merancakkan sektor pelancongan. Asas
 apa yang dipilih untuk memilih empat buah negeri budaya tersebut dan kenapa negeri
 Kelantan ditinggalkan? Fasal negeri Kelantan tersangat masyhur dalam negara kita
 sebagai negeri yang banyak budayanya. *Wallahualam.* Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Datuk Seri Dr. Santhara Kumar,"Satu soalan yang baik. Saya sebagai ‘Bangsa
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1050,1050,Datuk Seri Dr. Santhara Kumar,"Satu soalan yang baik. Saya sebagai ‘Bangsa
 Johor’ juga menanyakan soalan yang sama dan saya difahamkan ia pada tahun lepas
 dipilih empat buah negeri dahulu, dan tahun ini juga akan dipilih secara berperingkat,
 negeri-negeri yang lain. Daripada segi proses pemilihannya, apabila sesebuah negeri itu
 dipilih, maka projek-projek itu dibangunkan oleh kerajaan negeri itu sendiri. Maka, pada
 tahun ini apabila dapat peruntukan, kita akan juga- pada negeri-negeri yang lain. Terima
 kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Tuan Yang di-Pertua,"Terima kasih, Yang Berhormat Timbalan Menteri.
-Tuan Jaziri Alkaf Abdillah Suffian."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1050,Tuan Jaziri Alkaf Abdillah Suffian,"minta Menteri Pembangunan Usahawan dan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1050,1050,Tuan Yang di-Pertua,"Terima kasih, Yang Berhormat Timbalan Menteri.
+Tuan Jaziri Alkaf Abdillah Suffian.
+**5. Tuan Jaziri Alkaf Abdillah Suffian** minta Menteri Pembangunan Usahawan dan
 Koperasi menyatakan, jumlah rakyat Sarawak yang telah menjadi usahawan atau
 mendapat pekerjaan melalui program *Professional Training and Education for Growing
 Entrepreneurs* (PROTEGE) sejak penubuhannya."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1050,Timbalan Menteri Pembangunan Usahawan dan Koperasi [Tuan Muslimin bin Yahaya],"*Assalamualaikum warahmatullahi taala wabarakatuh.* Salam sejahtera.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1050,1050,Timbalan Menteri Pembangunan Usahawan dan Koperasi [Tuan Muslimin bin Yahaya],"*Assalamualaikum warahmatullahi taala wabarakatuh.* Salam sejahtera.
 Tuan Yang di-Pertua. Terima kasih kepada Yang Berhormat Tuan Jaziri Alkaf Abdillah
 Suffian.
 Untuk menjawab soalan Yang Berhormat, *Professional Training and Education
@@ -566,15 +566,15 @@ Untuk makluman Yang Berhormat, pendaftaran bagi program N-GENE dan
 PROTEGE-RTW masih dibuka sehingga 31 Disember 2021. Para belia dan graduan yang
 berminat boleh melayari media sosial rasmi PROTEGE untuk mendapatkan maklumat
 lanjut. Terima kasih, Tuan Yang di-Pertua. Terima kasih, Yang Berhormat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1050,Tuan Yang di-Pertua,"Tambahan. Jangan orang yang sama juga. Saya pohon
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1050,1050,Tuan Yang di-Pertua,"Tambahan. Jangan orang yang sama juga. Saya pohon
 supaya Ahli-ahli Yang Berhormat memberi peluang kepada rakan-rakan menyoal soalan
 tambahan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1050,Tuan Jaziri Alkaf Abdillah Suffian,"Soalan tambahan, Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1050,1050,Tuan Jaziri Alkaf Abdillah Suffian,"Soalan tambahan, Tuan Yang di-Pertua.
 Terima kasih. Adakah kementerian mempunyai perancangan jangka pendek dan jangka
 panjang untuk para usahawan di kawasan luar bandar, khususnya di Sarawak? Terima
 kasih Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1050,Tuan Yang di-Pertua,Sila.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1050,Tuan Muslimin bin Yahaya,"Terima kasih kepada Yang Berhormat atas sifat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1050,1050,Tuan Yang di-Pertua,Sila.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1050,1050,Tuan Muslimin bin Yahaya,"Terima kasih kepada Yang Berhormat atas sifat
 peduli dengan pembangunan usahawan, khususnya di Sarawak. Tuan Yang di-Pertua,
 kita di MEDAC sebenarnya komited untuk membantu usahawan termasuk usahawan luar
 bandar, khususnya di Sarawak. Ini satu perancangan jangka panjang dan sebagai mana
@@ -595,10 +595,10 @@ Julai 2021, sebanyak RM2.3 juta atau pun 5.7 peratus geran telah diluluskan untu
 buah PKS di Sarawak.
 Mohon Tuan Yang di-Pertua, ada sedikit lagi, untuk Sarawak khususnya. Ketiga,
 Program Tunas Usahawan Belia Bumiputera (TUBE)..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1050,Tuan Yang di-Pertua,"Diminta supaya Yang Berhormat Menteri, biasakan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1050,1050,Tuan Yang di-Pertua,"Diminta supaya Yang Berhormat Menteri, biasakan
 menjawab dalam tempoh. Akan tetapi sekali ini, saya benarkan sedikit tetapi jangan
 panjang."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1050,Tuan Muslimin bin Yahaya,"Terima kasih Tuan Yang di-Pertua, sedikit sahaja
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1050,1050,Tuan Muslimin bin Yahaya,"Terima kasih Tuan Yang di-Pertua, sedikit sahaja
 lagi. TUBE ini untuk membantu belia-belia menjana semula ekonomi negara di bawah
 pelan PENJANA dan sejumlah 52 orang belia, bumiputera Sarawak telah menerima
 manfaat melalui latihan yang dijalankan dengan penglibatan geran bernilai RM0.5 juta.
@@ -608,15 +608,15 @@ RM835.5 juta. Ini khusus untuk rakan-rakan kita.
 Terakhir Tuan Yang di-Pertua, melalui TEKUN Nasional bagi tahun 2021
 sehingga bulan Julai, sejumlah RM19.1 juta pembiayaan telah disalurkan kepada 853
 orang usahawan dari Sarawak. Terima kasih, Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1050,Tuan Yang di-Pertua,"Kembali.
-Yang Berhormat Dato’ Isa bin Ab. Hamid."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1050,Dato' Isa bin Ab. Hamid,"minta Menteri Pembangunan Luar Bandar menyatakan,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1050,1050,Tuan Yang di-Pertua,"Kembali.
+Yang Berhormat Dato’ Isa bin Ab. Hamid.
+**6. Dato' Isa bin Ab. Hamid** minta Menteri Pembangunan Luar Bandar menyatakan,
 peruntukan yang disalurkan bagi Bantuan Bakul Makanan untuk komuniti Orang Asli
 sepanjang perintah PKP dan item yang dibekalkan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1050,Timbalan Menteri Pembangunan Luar Bandar I [Dato' Sri Abdul Rahman bin Mohamad],"*Assalamualaikum warahmatullahi taala wabarakatuh*. Terima kasih, Tuan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1050,1050,Timbalan Menteri Pembangunan Luar Bandar I [Dato' Sri Abdul Rahman bin Mohamad],"*Assalamualaikum warahmatullahi taala wabarakatuh*. Terima kasih, Tuan
 Yang di-Pertua. Terima kasih, Yang Berhormat Dato’ Isa bin Ab. Hamid yang menanyakan
 soalan nombor 6."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1100,Timbalan Menteri Pembangunan Luar Bandar I [Dato' Sri Abdul Rahman bin Mohamad],"Untuk makluman Yang Berhormat, sepanjang Perintah Kawalan Pergerakan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1100,1100,Timbalan Menteri Pembangunan Luar Bandar I [Dato' Sri Abdul Rahman bin Mohamad],"Untuk makluman Yang Berhormat, sepanjang Perintah Kawalan Pergerakan
 (PKP), kerajaan melalui JAKOA telah menyalurkan bantuan bakul makanan secara
 berfasa. Pada tahun 2020, pemberian bakul makanan melibatkan tiga fasa iaitu
 melibatkan sebanyak 165,087- bakul makanan, dengan kos sebanyak RM18,817,000.
@@ -633,54 +633,54 @@ mengandungi keperluan asas seperti beras, minyak masak, tepung, garam, gula, ser
 teh, sardin, kicap dan bihun. Manakala bagi Fasa 2, mengandungi beras, minyak masak,
 tepung gandum, sos cili, susu pekat manis, serbuk kopi, kari ayam, kicap manis dan biskut
 beraneka. Termasuk kit kesihatan...."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1100,Tuan Yang di-Pertua,Sedap bunyinya.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1100,Dato’ Sri Haji Abdul Rahman bin Mohamad,Lemas Tuan Yang di-Pertua...
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1100,ANNOTATION,[Ketawa]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1100,ANNOTATION,[Memegang dan membetulkan pelitup muka]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1100,Dato’ Sri Haji Abdul Rahman bin Mohamad,"Bantuan bakul makanan untuk Fasa 3 ini lebih meluas kerana merangkumi Orang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1100,1100,Tuan Yang di-Pertua,Sedap bunyinya.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1100,1100,Dato’ Sri Haji Abdul Rahman bin Mohamad,Lemas Tuan Yang di-Pertua...
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1100,1100,ANNOTATION,[Ketawa]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1100,1100,ANNOTATION,[Memegang dan membetulkan pelitup muka]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1100,1100,Dato’ Sri Haji Abdul Rahman bin Mohamad,"Bantuan bakul makanan untuk Fasa 3 ini lebih meluas kerana merangkumi Orang
 Asli di perkampungan dan yang menetap di bandar. Bantuan bakul makanan ini adalah
 untuk memastikan masyarakat Orang Asli tidak terlepas daripada menerima semua
 bantuan serta inisiatif yang dilaksanakan oleh kerajaan ketika pandemik COVID-19.
 Pelaporan pelaksanaan juga telah dihantar ke Unit LAKSANA Kementerian
 Kewangan. Terima kasih Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1100,Tuan Yang di-Pertua,"Soalan kalau boleh sebaik-baiknya rakan lain menyoal
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1100,1100,Tuan Yang di-Pertua,"Soalan kalau boleh sebaik-baiknya rakan lain menyoal
 supaya peluang banyak. Ini kerana pertama sudah keluar, kalau boleh. Kalau tidak boleh,
 orang yang menyoal juga lah."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1100,Dato’ Isa bin Ab. Hamid,Boleh.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1100,Tuan Yang di-Pertua,"Yang Berhormat, sila. Yang Berhormat Datuk."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1100,Datuk Razali bin Idris,"Okey. Terima kasih Tuan Yang di-Pertua. Terima kasih
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1100,1100,Dato’ Isa bin Ab. Hamid,Boleh.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1100,1100,Tuan Yang di-Pertua,"Yang Berhormat, sila. Yang Berhormat Datuk."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1100,1100,Datuk Razali bin Idris,"Okey. Terima kasih Tuan Yang di-Pertua. Terima kasih
 Yang Berhormat Timbalan Menteri menjawab dengan cukup teliti. Cuma, di sini soalan
 tambahan saya satu sahaja. Berapa harga sebakul?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1100,Tuan Yang di-Pertua,"Hah, sebakul berapa Yang Berhormat Menteri, RM70?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1100,Dato’ Sri Haji Abdul Rahman bin Mohamad,"Terima kasih Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1100,1100,Tuan Yang di-Pertua,"Hah, sebakul berapa Yang Berhormat Menteri, RM70?"
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1100,1100,Dato’ Sri Haji Abdul Rahman bin Mohamad,"Terima kasih Yang Berhormat
 Tuan Yang di-Pertua. Terima kasih Yang Berhormat Senator Datuk Razali bin Idris."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1100,Tuan Yang di-Pertua,Ya.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1100,Dato’ Sri Haji Abdul Rahman bin Mohamad,"Kita mengikut fasa-fasa. Fasa 1
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1100,1100,Tuan Yang di-Pertua,Ya.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1100,1100,Dato’ Sri Haji Abdul Rahman bin Mohamad,"Kita mengikut fasa-fasa. Fasa 1
 agak tinggi sedikit kerana kita bekalkan bersama bakul makanan iaitu lebih kurang
 RM177. Bagi Fasa 2, kita bekalkan sebanyak RM150 dan bagi Fasa 3, kita bekalkan
 sebanyak RM100. Terima kasih Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1100,Tuan Yang di-Pertua,"Baik. Yang Berhormat Senator Dato’ Isa bin Ab. Hamid,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1100,1100,Tuan Yang di-Pertua,"Baik. Yang Berhormat Senator Dato’ Isa bin Ab. Hamid,
 hendak tambah yang tadi?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1100,Dato’ Isa bin Ab. Hamid,"Soalan ini yang berkaitan antara jawapan Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1100,1100,Dato’ Isa bin Ab. Hamid,"Soalan ini yang berkaitan antara jawapan Yang
 Berhormat Menteri dengan jawapan soalan Yang Berhormat Senator Razali."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1100,Tuan Yang di-Pertua,Sudah jawab dah? Baik-baik. *Alhamdulillah*.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1100,Dato’ Isa bin Ab. Hamid,"Bila kita bercakap soal bakul yang nilainya RM150 atau
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1100,1100,Tuan Yang di-Pertua,Sudah jawab dah? Baik-baik. *Alhamdulillah*.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1100,1100,Dato’ Isa bin Ab. Hamid,"Bila kita bercakap soal bakul yang nilainya RM150 atau
 RM170. Apa yang kita *survey* nilai bakul itu sangat rendah dengan nilai yang dibayar oleh
 kerajaan..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1100,Tuan Yang di-Pertua,Bakul lebih mahal?
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1100,Dato’ Isa bin Ab. Hamid,"...Maksud saya, bukan. Harga barang dengan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1100,1100,Tuan Yang di-Pertua,Bakul lebih mahal?
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1100,1100,Dato’ Isa bin Ab. Hamid,"...Maksud saya, bukan. Harga barang dengan
 kelulusan kewangan yang dibayar. Sejumlah RM170 dengan barang yang dapat iaitu
 beras, sardin dan sebagainya. Itu yang saya hendak tahu, apakah mekanisme
 pemantauan oleh JAKOA? Ini kerana kalau sardin mutu rendah, sedangkan bayaran kita
 tinggi. Contoh, kalau peniaga biasanya mengambil dalam sebanyak 30 *percent*. Kalau
 barang nilainya sebanyak bawah 40 *percent*, maka tidak sesuai dengan keputusan yang
 kerajaan buat untuk rakyat. Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1100,Tuan Yang di-Pertua,"Okey, baik. Yang Berhormat Menteri hendak jawab
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1100,1100,Tuan Yang di-Pertua,"Okey, baik. Yang Berhormat Menteri hendak jawab
 ringkas?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1100,Dato’ Sri Haji Abdul Rahman bin Mohamad,Jawab.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1100,Tuan Yang di-Pertua,"Ini penting soalan ini sebab nilai yang sampai kepada
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1100,1100,Dato’ Sri Haji Abdul Rahman bin Mohamad,Jawab.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1100,1100,Tuan Yang di-Pertua,"Ini penting soalan ini sebab nilai yang sampai kepada
 rakan-rakan Orang Asli kita."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1100,Dato’ Sri Haji Abdul Rahman bin Mohamad,"Okey. Terima kasih Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1100,1100,Dato’ Sri Haji Abdul Rahman bin Mohamad,"Okey. Terima kasih Tuan Yang di-
 Pertua. Bagi menjawab soalan Yang Berhormat Senator Dato’ Isa bin Ab. Hamid, saya
 pecahkan mengikut harga yang telah kita ditetapkan oleh pemantau di mana kita di bawah
 seliaan yang saya nyatakan tadi, di bawah laporan kepada Unit LAKSANA. Setiap hari
@@ -694,18 +694,18 @@ Kicap manis sebanyak RM12. Biskut beraneka sebanyak RM17. Pembungkusan logistik
 sebanyak RM25. Jumlah sebanyak RM158.
 Maka, saya nyatakan tadi sebanyak RM170 untuk pembekal, dia untung lebih
 kurang dalam RM12."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1100,Tuan Yang di-Pertua,Bakul berapa harga?
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1100,Dato’ Sri Haji Abdul Rahman bin Mohamad,"Bakul lebih kurang sebanyak 62
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1100,1100,Tuan Yang di-Pertua,Bakul berapa harga?
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1100,1100,Dato’ Sri Haji Abdul Rahman bin Mohamad,"Bakul lebih kurang sebanyak 62
 ribu- ketua isi rumah."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1100,Tuan Yang di-Pertua,"Ya lah. Akan tetapi, elok tengok balik harga bakul itu ya."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1100,Dato’ Sri Haji Abdul Rahman bin Mohamad,
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1100,ANNOTATION,[Ketawa]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1100,Tuan Yang di-Pertua,Terima kasih Yang Berhormat Menteri.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1100,Dr. Yaakob bin Sapari,"minta Menteri Pertanian dan Industri Makanan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1100,1100,Tuan Yang di-Pertua,"Ya lah. Akan tetapi, elok tengok balik harga bakul itu ya."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1100,1100,Dato’ Sri Haji Abdul Rahman bin Mohamad,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1100,1100,ANNOTATION,[Ketawa]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1100,1100,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Menteri.
+**7. Dr. Yaakob bin Sapari** minta Menteri Pertanian dan Industri Makanan
 menyatakan, jumlah import daging lembu dan tenusu di Malaysia setiap tahun dari 2017
 hingga 2020. Apa rancangan kerajaan supaya tidak bergantung dengan bekalan lembu
 import di masa akan datang."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1100,Menteri Pertanian dan Industri Makanan [Datuk Seri Dr. Ronald Kiandee],"Terima kasih Tuan Yang di-Pertua dan terima kasih Yang Berhormat Senator.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1100,1100,Menteri Pertanian dan Industri Makanan [Datuk Seri Dr. Ronald Kiandee],"Terima kasih Tuan Yang di-Pertua dan terima kasih Yang Berhormat Senator.
 Untuk makluman Ahli Yang Berhormat, purata Tahap Sara Diri atau *self-
 sufficiency level* (SSL) negara bagi lembu dan susu segar bagi tahun 2017 sehingga tahun
 2020 pada tahap 21.9 peratus dan 61.7 peratus.
@@ -734,41 +734,41 @@ tenusu yang dijangka akan beroperasi secara berfasa bermula tahun 2022.
 Kesemua langkah proaktif yang telah dan sedang diambil adalah sejajar dengan
 Dasar Agromakanan Negara 2021-2030 untuk meningkatkan bilangan ternakan ruminan
 dalam negara bagi memenuhi permintaan tempatan. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1100,Tuan Yang di-Pertua,Sila.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1100,Dr. Yaakob bin Sapari,"Soalan tambahan, untuk Lembaga Ruminan Negara,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1100,1100,Tuan Yang di-Pertua,Sila.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1100,1100,Dr. Yaakob bin Sapari,"Soalan tambahan, untuk Lembaga Ruminan Negara,
 bilakah ia akan dilaksanakan dan bilakah akta ruminan ini boleh dibawa di dalam
 Parlimen?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1100,Datuk Seri Dr. Ronald Kiandee,"Cadangan untuk menubuhkan Lembaga
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1100,1100,Datuk Seri Dr. Ronald Kiandee,"Cadangan untuk menubuhkan Lembaga
 Ruminan Negara merupakan cadangan yang dihasilkan melalui mesyuarat *Cabinet
 Committee on National Food Security* (FSCC)
 Ia sekarang sedang dalam proses penubuhan- tentulah bila bercakap tentang
 penubuhan sebuah agensi baharu, akan melibatkan undang-undang, libat urus dengan
 pihak industri, dan juga kaedah dan pendekatan yang terbaik untuk mengangkat lembaga
 tersebut sama ada *industry-based, government-based* dan sebagainya."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1110,Datuk Seri Dr. Ronald Kiandee,"Ia sedang dalam proses dan kita jangkakan ia mula berfungsi sebagai sebuah pra
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1110,1110,Datuk Seri Dr. Ronald Kiandee,"Ia sedang dalam proses dan kita jangkakan ia mula berfungsi sebagai sebuah pra
 agensi di bawah kementerian bermula pada tahun 2021 ini, tahun ini dan dijangka
 lembaga ini akan nampak hasil pada tahun 2022 kelak. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1110,Dato’ Kesavadas A. Achyuthan Nair,Soalan tambahan.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1110,Tuan Yang di-Pertua,Sila Yang Berhormat Dato’.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1110,Dato’ Kesavadas A. Achyuthan Nair,"Yang Berhormat Menteri ya, saya nak
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1110,1110,Dato’ Kesavadas A. Achyuthan Nair,Soalan tambahan.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1110,1110,Tuan Yang di-Pertua,Sila Yang Berhormat Dato’.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1110,1110,Dato’ Kesavadas A. Achyuthan Nair,"Yang Berhormat Menteri ya, saya nak
 tahu apakah status Fidlot Nasional di Gemencheh, Negeri Sembilan yang seharusnya
 menjadi yang terbesar atau peneraju penternakan lembu di Malaysia. Sekian, terima
 kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1110,Datuk Seri Dr. Ronald Kiandee,"Untuk makluman Ahli Yang Berhormat, fidlot
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1110,1110,Datuk Seri Dr. Ronald Kiandee,"Untuk makluman Ahli Yang Berhormat, fidlot
 yang dimaksudkan di Negeri Sembilan merupakan usaha antara pihak swasta dan
 beberapa buah agensi kerajaan yang terlibat termasuk Kementerian Kewangan. Tentu
 sekali tindakan telah diambil, dan *I will update you on the latest status on this* kerana ia
 bukan sahaja melibatkan MAFI tetapi beberapa kementerian yang lain. Akan tetapi
 memang jelas ia telah pun berhenti beroperasi dan sekarang sedang berhadapan dengan
 pelbagai tindakan-tindakan oleh pelbagai pihak. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1110,Tuan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Menteri, barangkali
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1110,1110,Tuan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Menteri, barangkali
 soalan yang terakhir itu memerlukan sedikit tambahan dan boleh dimohon daripada Yang
-Berhormat Menteri selanjutnya tentang fidlot tersebut."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1110,Puan Rita Sarimah a/k Patrick Insol,"minta Menteri Komunikasi dan Multimedia
+Berhormat Menteri selanjutnya tentang fidlot tersebut.
+**8. Puan Rita Sarimah a/k Patrick Insol** minta Menteri Komunikasi dan Multimedia
 menyatakan, jumlah sumbangan industri kreatif kepada ekonomi negara dalam tempoh
 tiga tahun yang lepas dan rancangan kerajaan untuk meningkatkan sumbangan industri
 kreatif kepada Keluaran Dalam Negara Kasar (KDNK)."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1110,Timbalan Menteri Komunikasi dan Multimedia [Datuk Zahidi bin Zainul Abidin],"Tuan Yang di-Pertua, untuk makluman Ahli Yang Berhormat Senator,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1110,1110,Timbalan Menteri Komunikasi dan Multimedia [Datuk Zahidi bin Zainul Abidin],"Tuan Yang di-Pertua, untuk makluman Ahli Yang Berhormat Senator,
 berdasarkan Laporan Jabatan Perangkaan Malaysia pada tahun 2019- industri kreatif
 telah menyumbang sebanyak 1.9 peratus atau RM29.4 bilion kepada Keluaran Dalam
 Negara Kasar. Kementerian melalui agensi seperti FINAS, *MyCreative Ventures,* dan
@@ -807,15 +807,15 @@ Sehubungan dengan itu, sebagai langkah awal kementerian sedang mengenal
 pasti sektor yang giat berkembang dan berupaya menjadi penggerak-tumbuh baharu,
 yang menyumbang kepada pencapaian ekonomi berpendapatan tinggi negara seperti
 filem, kandungan kreatif digital seperti animasi, permainan digital dan lain-lain."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1110,Tuan Yang di-Pertua,"Yang Berhormat, sila."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1110,Ir. Ts. Haji Khairil Nizam bin Khirudin,"Terima kasih kepada Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1110,1110,Tuan Yang di-Pertua,"Yang Berhormat, sila."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1110,1110,Ir. Ts. Haji Khairil Nizam bin Khirudin,"Terima kasih kepada Yang Berhormat
 Timbalan Menteri dengan jawapan. Tadi kita dengar macam mana industri kreatif ini
 memberikan sumbangan kepada negara. Soalan saya kepada Yang Berhormat Timbalan
 Menteri, dalam menghadapi COVID-19 ini pemain industri ini juga akan terkesan dengan
 COVID-19. Jadi, jumlah penerima bantuan di dalam industri kreatif, dan sejauh manakah
 bantuan tersebut berjaya membantu mereka menghadapi situasi kritikal sekarang. Terima
 kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1110,Datuk Zahidi bin Zainul Abidin,"Terima kasih kepada yang bertanya, terutama
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1110,1110,Datuk Zahidi bin Zainul Abidin,"Terima kasih kepada yang bertanya, terutama
 kita lihat bahawa sekarang ini maknanya daripada segi bantuan yang kita sebutkan tadi
 seperti yang saya katakan tadi, MDEC banyak membantu daripada segi artis-artis ini
 tentang bantuan-bantuan dengan juga FINAS. Melalui FINAS, kita telah mengadakan
@@ -825,17 +825,17 @@ membantu mereka untuk menambah pendapatan dan juga untuk memulihkan masalah
 yang dihadapi semasa COVID-19. Daripada segi jumlah yang menerima bantuan itu, saya
 tidak ada data di sini dan saya minta saya akan jawab secara bertulis kepada Yang
 Berhormat Senator. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1110,Tuan Yang di-Pertua,"Baik, jawapan bertulis akan diberi, dan saya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1110,1110,Tuan Yang di-Pertua,"Baik, jawapan bertulis akan diberi, dan saya
 memperingatkan juga kepada Yang Berhormat Menteri, soalan-soalan yang tidak sempat
 dijawab, Dewan meminta supaya jawapan itu diserahkan kepada sesi akhir setiap hari
 yang tertera dalam senarai soal soalan yang ada pada Kertas Mesyuarat. Oleh itu tolong
 ambil berat tentang hal tersebut.
-Satu lagi soalan tambahan- tidak ada? Baik."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1110,Datuk Razali bin Idris,"minta Menteri Pendidikan menyatakan, jumlah peratusan
+Satu lagi soalan tambahan- tidak ada? Baik.
+**9. Datuk Razali bin Idris** minta Menteri Pendidikan menyatakan, jumlah peratusan
 pendidik yang telah divaksinasi serta sasaran pelajar di sekolah rendah dan sekolah
 menengah serta apakah Prosedur Operasi Standard (SOP) baharu yang diperkenalkan di
 sekolah bagi mengekang penularan pandemik COVID-19."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1110,Timbalan Menteri Pendidikan I [Dato’ Dr. Mah Hang Soon],"Terima kasih
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1110,1110,Timbalan Menteri Pendidikan I [Dato’ Dr. Mah Hang Soon],"Terima kasih
 kepada Senator Yang Berhormat Datuk Razali Idris. Tuan Yang di-Pertua, Kementerian
 Pendidikan Malaysia (KPM) telah menetapkan bahawa hanya guru yang telah lengkap
 divaksin sahaja dibenarkan untuk melaksanakan pengajaran dan pembelajaran (PdP) di
@@ -857,7 +857,7 @@ COVID-19 Kebangsaan Remaja (PICK) Remaja diberikan kepada murid Tingkatan 4 dan
 5. PICK- Remaja yang dikendalikan oleh pasukan petugas khas COVID-19 Remaja
 (CITFA) telah bermula di Sarawak pada 8 September lalu diikuti Wilayah Persekutuan
 Labuan, Sabah dan kini diperluaskan ke seluruh negara."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1120,Timbalan Menteri Pendidikan I [Dato’ Dr. Mah Hang Soon],"Untuk makluman Ahli Yang Berhormat, KPM telah menambah baik prosedur
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1120,1120,Timbalan Menteri Pendidikan I [Dato’ Dr. Mah Hang Soon],"Untuk makluman Ahli Yang Berhormat, KPM telah menambah baik prosedur
 operasi standard dengan menyediakan Garis Panduan Pengurusan dan Pengoperasian
 Sekolah 3.0. Penambahbaikan yang dibuat adalah seperti berikut:
 (i) mewajibkan pemakaian pelitup muka kepada semua warga
@@ -871,35 +871,35 @@ yang akan pulang ke sekolah asrama sepenuhnya; dan,
 asrama harian semasa pendaftaran masuk.
 KPM sentiasa memastikan pengoperasian sekolah secara bersemuka berjalan
 dengan teratur dan selamat. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1120,Tuan Yang di-Pertua,Terima kasih. Soalan tambahan Ahli lain?
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1120,Datuk Razali bin Idris,Terima kasih Tuan Yang di-Pertua. Saya ada sedikit...
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1120,Tuan Yang di-Pertua,Ahli lain.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1120,Datuk Razali bin Idris,Yang tidak disebut.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1120,Tuan Yang di-Pertua,Sila. Nanti Yang Berhormat. Bagi Ahli lain dulu jawab...
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1120,Tuan Muhamad Zahid bin Md. Arip,"Tuan Yang di-Pertua, boleh saya bertanya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1120,1120,Tuan Yang di-Pertua,Terima kasih. Soalan tambahan Ahli lain?
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1120,1120,Datuk Razali bin Idris,Terima kasih Tuan Yang di-Pertua. Saya ada sedikit...
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1120,1120,Tuan Yang di-Pertua,Ahli lain.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1120,1120,Datuk Razali bin Idris,Yang tidak disebut.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1120,1120,Tuan Yang di-Pertua,Sila. Nanti Yang Berhormat. Bagi Ahli lain dulu jawab...
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1120,1120,Tuan Muhamad Zahid bin Md. Arip,"Tuan Yang di-Pertua, boleh saya bertanya
 Tuan Yang di-Pertua?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1120,Tuan Yang di-Pertua,"Supaya lebih ramai kita menyoal. Okey, sila."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1120,Tuan Ahmad bin Yahaya,"Terima kasih, terima kasih Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1120,1120,Tuan Yang di-Pertua,"Supaya lebih ramai kita menyoal. Okey, sila."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1120,1120,Tuan Ahmad bin Yahaya,"Terima kasih, terima kasih Tuan Yang di-Pertua.
 Soalan tambahan saya ialah, apakah faktor utama yang dikenal pasti oleh kementerian
 sehingga wujud pendidik yang tidak mahu menerima vaksin dan apa tindakan yang
 diambil? Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1120,Tuan Yang di-Pertua,Silakan.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1120,Dato’ Dr. Mah Hang Soon,"Terima kasih. Ada pelbagai faktor dan sebab. Ada di
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1120,1120,Tuan Yang di-Pertua,Silakan.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1120,1120,Dato’ Dr. Mah Hang Soon,"Terima kasih. Ada pelbagai faktor dan sebab. Ada di
 antara- walaupun jumlahnya kecil, memang ada segelintir kecil yang belum bersedia lagi
 untuk menerima vaksin.
 Namun saya rasa dengan arahan yang dikeluarkan oleh JPA baru-baru ini,
 nampaknya bilangan tersebut semakin berkurangan. Termasuklah ada yang tidak boleh
 diberikan vaksin atas sebab kesihatan dan juga ada yang belum bersedia lagi pada waktu
 itu. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1120,Tuan Yang di-Pertua,"Baik, Yang Berhormat Senator Datuk Razali."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1120,Datuk Razali bin Idris,"Tidak sebut lagi ini. Terima kasih. Kita sebenarnya tidak
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1120,1120,Tuan Yang di-Pertua,"Baik, Yang Berhormat Senator Datuk Razali."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1120,1120,Datuk Razali bin Idris,"Tidak sebut lagi ini. Terima kasih. Kita sebenarnya tidak
 nafikan ada di kalangan guru yang masih enggan, dia tidak mahu divaksinkan atas alasan
 yang tertentu. Namun saya mendapat maklum, kerajaan akan mengenakan tindakan
 tatatertib terhadap mereka sama ada tidak dibenarkan ke sekolah serta ditukar sekolah
 atau tidak dinaikkan pangkat dan sebagainya.
 Jadi soalan saya, apakah perlu tindakan sekeras itu atau ada cara yang lebih
 bijaksana dan berhemah? Pohon penjelasan. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1120,Dato’ Dr. Mah Hang Soon,"Terima kasih kepada Yang Berhormat Senator Datuk
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1120,1120,Dato’ Dr. Mah Hang Soon,"Terima kasih kepada Yang Berhormat Senator Datuk
 Razali. Sebagai penjawat awam, tindakan yang dikenakan kepada guru adalah selaras
 dengan arahan JPA melalui siaran media pada 30 September 2021 berhubung penetapan
 syarat vaksinasi lengkap kepada pegawai perkhidmatan awam. Jadi buat masa ini, guru-
@@ -907,16 +907,16 @@ guru yang belum mendapat vaksin yang lengkap, tidak dibenarkan untuk melaksanaka
 PdP secara bersemuka.
 Jadi, mengenai perkara yang lain yang disebutkan tadi, tindakan yang selanjutnya
 akan berpandukan kepada arahan daripada JPA. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1120,Tuan Yang di-Pertua,"Terima kasih. Yang Berhormat Senator Tuan Zaiedi bin
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1120,1120,Tuan Yang di-Pertua,"Terima kasih. Yang Berhormat Senator Tuan Zaiedi bin
 Haji Suhaili."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1120,Tuan Zaiedi bin Haji Suhaili,"Terima kasih Tuan Yang di-Pertua. Soalan saya
-soalan Nombor 10."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,10.,,1120,Tuan Zaiedi bin Haji Suhaili,"minta Menteri Pembangunan Wanita, Keluarga dan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1120,1120,Tuan Zaiedi bin Haji Suhaili,"Terima kasih Tuan Yang di-Pertua. Soalan saya
+soalan Nombor 10.
+**10. Tuan Zaiedi bin Haji Suhaili** minta Menteri Pembangunan Wanita, Keluarga dan
 Masyarakat menyatakan, statistik sebenar Pusat Jagaan Kanak-kanak yang
 diselenggarakan dan dikelola oleh Badan Bukan Kerajaan (NGO), dan sejauh mana
 kerajaan menangani kes-kes penganiayaan dan penderaan kanak-kanak khususnya di
 Pusat Jagaan Kanak-kanak."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,10.,,1120,"Timbalan Menteri Pembangunan Wanita, Keluarga dan Masyarakat [Dato’ Hajah Siti Zailah binti Mohd Yusoff]","*Bismillahi Rahmani Rahim. Assalamualaikum
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1120,1120,"Timbalan Menteri Pembangunan Wanita, Keluarga dan Masyarakat [Dato’ Hajah Siti Zailah binti Mohd Yusoff]","*Bismillahi Rahmani Rahim. Assalamualaikum
 warahmatullahi wabarakatuh* dan salam sejahtera. Terima kasih Tuan Yang di-Pertua.
 Saya mengambil kesempatan ini untuk mengucapkan tahniah dan syabas kepada semua
 Ahli Senator yang baru mengangkat sumpah.
@@ -938,8 +938,8 @@ ditetapkan. Sehingga Julai 2021, sebanyak 868 kali pemeriksaan mengejut dan berk
 telah dilakukan ke atas 868 buah pusat jagaan.
 JKM juga telah dilantik sebagai pegawai diberi kuasa di bawah Akta Pencegahan
 dan Kawalan Penyakit Berjangkit"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,10.,,1120,ANNOTATION,[Akta 342]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,10.,,1120,"Timbalan Menteri Pembangunan Wanita, Keluarga dan Masyarakat [Dato’ Hajah Siti Zailah binti Mohd Yusoff]","yang berkuat kuasa sehingga 31 Disember
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1120,1120,ANNOTATION,[Akta 342]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1120,1120,"Timbalan Menteri Pembangunan Wanita, Keluarga dan Masyarakat [Dato’ Hajah Siti Zailah binti Mohd Yusoff]","yang berkuat kuasa sehingga 31 Disember
 2021 ini. Sehingga kini, seramai 1,313 orang pegawai diberi kuasa. Di bawah lantikan ini,
 JKM bertanggungjawab untuk memantau semua pusat jagaan berdaftar dan beroperasi
 semasa tempoh pandemik COVID-19 dengan mematuhi SOP yang telah dikeluarkan oleh
@@ -949,19 +949,19 @@ atas pusat jagaan yang tidak berdaftar. Tindakan penguatkuasaan yang boleh diamb
 atas pusat jagaan yang tidak berdaftar merupakan kompaun dan dakwa. Sehingga Ogos
 2021, sebanyak 59 tindakan telah diambil ke atas pusat jagaan yang tidak berdaftar.
 Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,10.,,1120,Tuan Yang di-Pertua,"Terima kasih. Soalan tambahan, selain daripada penyoal?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,10.,,1120,Puan Fadhlina binti Dato’ Sidek,Tuan Yang di-Pertua.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,10.,,1120,Tuan Yang di-Pertua,Silakan.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,10.,,1120,Puan Fadhlina binti Dato’ Sidek,"Tuan Yang di-Pertua, soalan saya kepada
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1120,1120,Tuan Yang di-Pertua,"Terima kasih. Soalan tambahan, selain daripada penyoal?"
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1120,1120,Puan Fadhlina binti Dato’ Sidek,Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1120,1120,Tuan Yang di-Pertua,Silakan.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1120,1120,Puan Fadhlina binti Dato’ Sidek,"Tuan Yang di-Pertua, soalan saya kepada
 Yang Berhormat Timbalan Menteri. Adakah usaha ataupun inisiatif yang..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,10.,,1120,Tuan Yang di-Pertua,Kuat suara sedikit Yang Berhormat Senator.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,10.,,1120,Puan Fadhlina binti Dato’ Sidek,"Terima kasih Tuan Yang di-Pertua. Apakah
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1120,1120,Tuan Yang di-Pertua,Kuat suara sedikit Yang Berhormat Senator.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1120,1120,Puan Fadhlina binti Dato’ Sidek,"Terima kasih Tuan Yang di-Pertua. Apakah
 usaha ataupun inisiatif kerajaan untuk membolehkan pengendali ataupun pengusaha
 pusat jagaan yang dikendalikan oleh NGO yang belum berdaftar ini dipantau dan melalui
 proses latihan serta mematuhi peruntukan-peruntukan mandatori berkaitan perlindungan
 kanak-kanak di bawah Akta Kanak-kanak? Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,10.,,1120,Tuan Yang di-Pertua,Silakan.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,10.,,1120,Dato’ Hajah Siti Zailah binti Mohd Yusoff,"Terima kasih Yang Berhormat atas
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1120,1120,Tuan Yang di-Pertua,Silakan.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1120,1120,Dato’ Hajah Siti Zailah binti Mohd Yusoff,"Terima kasih Yang Berhormat atas
 soalan tambahan yang dikemukakan. Di kementerian, kita telah mengambil tindakan
 terutama kepada pusat jagaan yang tidak berdaftar. Pertama, kita mengadakan advokasi
 untuk memudahkan pendaftaran dan kita menghantar surat peringatan dan dalam tempoh
@@ -972,14 +972,14 @@ dengan kerjasama Jabatan Pembangunan Kemahiran iaitu di bawah Kementerian Sumber
 Manusia untuk memastikan semua pihak sama ada pengusaha, penjaga ataupun mereka
 yang akan mengendalikan pusat jagaan ini, mereka mempunyai sijil dan berdaftar. Terima
 kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,10.,,1120,Tuan Yang di-Pertua,Terima kasih. Soalan tambahan dari...
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,10.,,1120,Datuk Ras Adiba binti Mohd Radzi,"Tuan Yang di-Pertua, izinkan saya. Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1120,1120,Tuan Yang di-Pertua,Terima kasih. Soalan tambahan dari...
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1120,1120,Datuk Ras Adiba binti Mohd Radzi,"Tuan Yang di-Pertua, izinkan saya. Yang
 Berhormat, saya ingin bertanya, apa yang dilakukan oleh JKM, Kementerian
 Pembangunan Wanita, Keluarga dan Masyarakat terhadap taska dan tempat penjagaan
 anak-anak? Baru-baru ini, banyak sangat kes anak-anak kita didera seperti apa yang
 berlaku dua hari lalu terhadap seorang anak autisme. Apa langkah agar kita dapat
 memastikan kesemua petugas yang bertugas adalah *up to par,* dengan izin? Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,10.,,1120,Dato’ Hajah Siti Zailah binti Mohd Yusoff,"Terima kasih Yang Berhormat di atas
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1120,1120,Dato’ Hajah Siti Zailah binti Mohd Yusoff,"Terima kasih Yang Berhormat di atas
 soalan tambahan. Kementerian mengambil serius di atas segala tindakan penderaan
 ataupun penganiayaan terhadap anak-anak terutama mereka yang berada di pusat
 jagaan. Jadi kementerian telah melaksanakan pelbagai program. Selain daripada program
@@ -987,19 +987,19 @@ pemantauan, kita juga telah menggesa supaya semua pusat jagaan ini memastikan
 mereka mematuhi SOP yang telah dikenakan oleh kerajaan. Jadi sekiranya mereka tidak
 mematuhi segala peraturan dan tindakan, kita tidak teragak-agak untuk mengambil
 tindakan mengikut akta yang kita ada. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,10.,,1120,Tuan Yang di-Pertua,Yang Berhormat Senator Ir. Md. Nasir bin Hashim.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,10.,,1120,Tuan Muhamad Zahid bin Md. Arip,"Tuan Yang di-Pertua, beliau tidak sihat Tuan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1120,1120,Tuan Yang di-Pertua,Yang Berhormat Senator Ir. Md. Nasir bin Hashim.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1120,1120,Tuan Muhamad Zahid bin Md. Arip,"Tuan Yang di-Pertua, beliau tidak sihat Tuan
 Yang di-Pertua. Beliau tidak hadir."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,10.,,1120,ANNOTATION,[Soalan No.11 – YB Senator Ir. Md. Nasir bin Hashim tidak hadir]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,10.,,1120,Tuan Yang di-Pertua,Yang Berhormat Senator Datuk Paul Igai.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,10.,,1120,Datuk Paul Igai,Terima kasih Tuan Yang di-Pertua. Soalan saya Nombor 12.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,1120,Datuk Paul Igai,"minta Menteri Kanan Pertahanan menyatakan, adakah Tentera
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1120,1120,ANNOTATION,[Soalan No.11 – YB Senator Ir. Md. Nasir bin Hashim tidak hadir]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1120,1120,Tuan Yang di-Pertua,Yang Berhormat Senator Datuk Paul Igai.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1120,1120,Datuk Paul Igai,"Terima kasih Tuan Yang di-Pertua. Soalan saya Nombor 12.
+**12. Datuk Paul Igai** minta Menteri Kanan Pertahanan menyatakan, adakah Tentera
 Laut Diraja Malaysia (TLDM) merancang mengadakan Eksesais Latihan Laut di perairan
 Laut China Selatan dan Laut Sulu seperti mana yang telah dilakukan di Selat Melaka
 bersama dengan Tentera Laut Diraja Australia (RAN) ketika penganjuran Eksesais Latihan
 Laut Australia-Malaysia (MASTEX)."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,1120,Tuan Yang di-Pertua,Yang Berhormat Menteri.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,1120,Timbalan Menteri Pertahanan [Dato’ Sri Ikmal Hisham bin Abdul Aziz],"Terima
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1120,1120,Tuan Yang di-Pertua,Yang Berhormat Menteri.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1120,1120,Timbalan Menteri Pertahanan [Dato’ Sri Ikmal Hisham bin Abdul Aziz],"Terima
 kasih Tuan Yang di-Pertua, terima kasih Yang Berhormat Senator Datuk Paul Igai yang
 membangkitkan isu Eksesais Laut TLDM di Laut China Selatan dan di Laut Sulu, timur
 Sabah.
@@ -1018,7 +1018,7 @@ Pada masa yang sama, ia juga memberi peluang untuk menguji kebolehan operasi
 aset yang dimiliki negara, menilai kompetensi dan tahap profesionalisme warga TLDM
 serta memperkasakan perkongsian maklumat dalam konteks keselamatan maritim
 serantau."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,1130,Timbalan Menteri Pertahanan [Dato’ Sri Ikmal Hisham bin Abdul Aziz],"Walau bagaimanapun, suka saya jelaskan di sini setiap keputusan bagi menyertai
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1130,1130,Timbalan Menteri Pertahanan [Dato’ Sri Ikmal Hisham bin Abdul Aziz],"Walau bagaimanapun, suka saya jelaskan di sini setiap keputusan bagi menyertai
 sebarang eksesais, atau latihan bersama tentera laut negara asing akan dinilai di
 Peringkat Strategik Kementerian Pertahanan terlebih dahulu.
 Saya ingin memaklumkan bagi tempoh tiga tahun kebelakangan ini, iaitu daripada
@@ -1026,12 +1026,12 @@ dari tahun 2019 hingga 2021, sebanyak 22 eksesais telah dilaksanakan di kawasan 
 China Selatan dan Laut Sulu yang melibatkan eksesais tunggal TLDM dan melibatkan
 tentera laut negara asing. Manakala bagi perancangan tahun hadapan, sebanyak
 sembilan eksesais telah dirancang oleh TLDM untuk dilaksanakan. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,1130,Tuan Yang di-Pertua,Soalan tambahan?
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,1130,Datuk Paul Igai,"Soalan tambahan saya, apa pandangan pihak Kementerian
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1130,1130,Tuan Yang di-Pertua,Soalan tambahan?
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1130,1130,Datuk Paul Igai,"Soalan tambahan saya, apa pandangan pihak Kementerian
 Pertahanan mengenai kerjasama AUKUS iaitu Australia, *United Kingdom* dan Amerika
 Syarikat yang diumumkan oleh Kerajaan Australia baru-baru ini? Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,1130,Tuan Yang di-Pertua,Silakan.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,1130,Dato’ Sri Ikmal Hisham bin Abdul Aziz,"Tuan Yang di-Pertua, terima kasih.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1130,1130,Tuan Yang di-Pertua,Silakan.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1130,1130,Dato’ Sri Ikmal Hisham bin Abdul Aziz,"Tuan Yang di-Pertua, terima kasih.
 Tuan Yang di-Pertua, mengenai AUKUS. AUKUS ini iaitu bermaksud kerjasama antara
 Australia, *United Kingdom* dan Amerika Syarikat. Dalam hal ini, Kementerian Pertahanan
 mendukung pandangan Yang Amat Berhormat Perdana Menteri iaitu Dato’ Sri Ismail Sabri
@@ -1054,28 +1054,28 @@ Malaysia merupakan ahli kepada *United Nations Convention on the Law of the Sea*
 (UNCLOS) 1982. Berdasarkan undang-undang antarabangsa ini, mana-mana kapal
 perang atau kapal selam asing yang berkuasa nuklear dibenarkan melalui perairan
 antarabangsa Zon Eksklusif Ekonomi..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,1130,Tuan Yang di-Pertua,Ringkaskan jawapan.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,1130,Dato’ Sri Ikmal Hisham bin Abdul Aziz,"Okey, okey, 30 saat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,1130,Tuan Yang di-Pertua,Gunakan perkataan baik.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,1130,Dato’ Sri Ikmal Hisham bin Abdul Aziz,"Okey, baiklah. Ini *national security* Tuan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1130,1130,Tuan Yang di-Pertua,Ringkaskan jawapan.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1130,1130,Dato’ Sri Ikmal Hisham bin Abdul Aziz,"Okey, okey, 30 saat."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1130,1130,Tuan Yang di-Pertua,Gunakan perkataan baik.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1130,1130,Dato’ Sri Ikmal Hisham bin Abdul Aziz,"Okey, baiklah. Ini *national security* Tuan
 Yang di-Pertua. Di bawah *innocent passage* yang bermaksud melalui atau transit tanpa
 melakukan aktiviti ketenteraan ataupun berlabuh. Okey, lagi sekali- akhirnya sekali,
 Kementerian Pertahanan sekali lagi menyeru agar semua negara..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,1130,Tuan Yang di-Pertua,"Masa sudah sampai, habis."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,1130,Dato’ Sri Ikmal Hisham bin Abdul Aziz,"...Untuk mengekang- okey, saya.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1130,1130,Tuan Yang di-Pertua,"Masa sudah sampai, habis."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1130,1130,Dato’ Sri Ikmal Hisham bin Abdul Aziz,"...Untuk mengekang- okey, saya.
 Baiklah. Nanti saya akan menjawab secara bertulis."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,1130,Tuan Yang di-Pertua,"Saya suka menasihatkan Yang Berhormat Menteri dan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1130,1130,Tuan Yang di-Pertua,"Saya suka menasihatkan Yang Berhormat Menteri dan
 Yang Berhormat Timbalan Menteri, biasakan untuk membuat skrip masa yang ditetapkan.
 Supaya semua ahli dapat peluang menyampaikan soalan tambahan dan soalan tambahan
 kedua.
 Saya jemput Tuan Jaziri Alkaf Abdillah Suffian yang memohon untuk menyoal."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,1130,Tuan Jaziri Alkaf Abdillah Suffian,"Alkaf Tuan Yang di-Pertua. Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1130,1130,Tuan Jaziri Alkaf Abdillah Suffian,"Alkaf Tuan Yang di-Pertua. Tuan Yang di-
 Pertua, soalan tambahan. Apa usaha pihak Kementerian terutamanya dalam Rancangan
 Malaysia Kedua Belas untuk memperkukuhkan infrastruktur dan aset TLDM dalam
 mendepani situasi masa kini di Laut China Selatan terutamanya melibatkan ancaman dari
 China."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,1130,Tuan Yang di-Pertua,Sila.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,1130,Dato’ Sri Ikmal Hisham bin Abdul Aziz,"Okey, terima kasih. Soalan tambahan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1130,1130,Tuan Yang di-Pertua,Sila.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1130,1130,Dato’ Sri Ikmal Hisham bin Abdul Aziz,"Okey, terima kasih. Soalan tambahan
 daripada Tuan Jaziri Alkaf Abdillah Suffian.
 Tuan Yang di-Pertua, TLDM dalam tempoh Rancangan Malaysia Kedua Belas
 2021-2025 ini, telah mengambil beberapa langkah untuk kukuhkan keupayaan
@@ -1089,22 +1089,22 @@ operasi ATM melalui kemampuan *Strategic Sealift* antara Semenanjung Malaysia de
 Sabah dan Sarawak. Perolehan aset yang terdiri daripada tiga buah helikopter- kita akan
 dapat tiga buah helikopter dan 13 *fast interceptor crafts*. Helikopter ini dijangka masuk ke
 TLDM pada..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,1130,Tuan Yang di-Pertua,"Yang Berhormat, Yang Berhormat ini helikopter yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1130,1130,Tuan Yang di-Pertua,"Yang Berhormat, Yang Berhormat ini helikopter yang
 mana ini? Yang sudah sampai kah atau tak sampai?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,1130,Dato’ Sri Ikmal Hisham bin Abdul Aziz,"Ini kita sewa helikopter, yang belum
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1130,1130,Dato’ Sri Ikmal Hisham bin Abdul Aziz,"Ini kita sewa helikopter, yang belum
 sampai."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,1130,Tuan Yang di-Pertua,Belum sampai?
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,1130,Dato’ Sri Ikmal Hisham bin Abdul Aziz,Belum sampai.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,1130,Tuan Yang di-Pertua,Macam yang dahulu juga?
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,1130,Dato’ Sri Ikmal Hisham bin Abdul Aziz,"Yang dahulu itu untuk tentera darat, ini
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1130,1130,Tuan Yang di-Pertua,Belum sampai?
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1130,1130,Dato’ Sri Ikmal Hisham bin Abdul Aziz,Belum sampai.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1130,1130,Tuan Yang di-Pertua,Macam yang dahulu juga?
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1130,1130,Dato’ Sri Ikmal Hisham bin Abdul Aziz,"Yang dahulu itu untuk tentera darat, ini
 untuk tentera laut."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,1130,Tuan Yang di-Pertua,"Faham Yang Berhormat ya, baguslah."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,1130,Dato’ Sri Ikmal Hisham bin Abdul Aziz,"Bagus Tuan Yang di-Pertua, nampak
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1130,1130,Tuan Yang di-Pertua,"Faham Yang Berhormat ya, baguslah."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1130,1130,Dato’ Sri Ikmal Hisham bin Abdul Aziz,"Bagus Tuan Yang di-Pertua, nampak
 ambil- okey, sudah habis tentera. Sikit, boleh saya *ten seconds*, boleh?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,1130,Tuan Yang di-Pertua,Bolehlah sebab saya kacau tadi.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,1130,Dato’ Sri Ikmal Hisham bin Abdul Aziz,
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,1130,ANNOTATION,[Ketawa]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,1130,Dato’ Sri Ikmal Hisham bin Abdul Aziz,"Okey. Terima kasih, terima
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1130,1130,Tuan Yang di-Pertua,Bolehlah sebab saya kacau tadi.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1130,1130,Dato’ Sri Ikmal Hisham bin Abdul Aziz,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1130,1130,ANNOTATION,[Ketawa]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1130,1130,Dato’ Sri Ikmal Hisham bin Abdul Aziz,"Okey. Terima kasih, terima
 kasih. Okey, tambahan ini kita akan dapat tiga buah helikopter operasi maritim dan tiga
 buah *fast interceptor crafts*. Helikopter ini dijangka masuk inventori TLDM pada Mac dan
 Mei 2022 manakala FIC diterima secara fasa, Mac 2023 hingga 2024.
@@ -1115,7 +1115,7 @@ kedudukan untuk pemusatan operasi Maritim di Laut China Selatan.
 Jadi *insya-Allah*, TLDM bersama Kerajaan Persekutuan dan kerajaan negeri
 sedang mengenal pasti tapak yang bersesuaian untuk pembinaan Mawilla 4 di Bintulu.
 Yang Berhormat Tuan Jaziri boleh cadangkan. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,12.,,1130,Tuan Yang di-Pertua,"Baiklah. Sedikit pengumuman yang saya harap dapat kita
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1130,1130,Tuan Yang di-Pertua,"Baiklah. Sedikit pengumuman yang saya harap dapat kita
 betulkan.
 Kita di Dewan harus membantu menyemarakkan Bahasa Kebangsaan. Jadi, saya
 mohon istilah-istilah seperti “okey”, dijadikan “baiklah”.
@@ -1123,16 +1123,16 @@ Istilah seperti “prosedur” yang disebut sebagai “SOP” itu, disebut sebag
 “prosedur yang standard” misalnya.
 Jadi, dapat kita semarakkan Bahasa Kebangsaan terus dan membantu
 perjuangan pendidikan. Terima kasih Yang Berhormat Timbalan Menteri.
-Saya pergi kepada Yang Berhormat Datuk Teo Eng Tee."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,13.,,1130,Datuk Teo Eng Tee @ Teo Kok Chee,"minta Menteri Alam Sekitar dan Air
+Saya pergi kepada Yang Berhormat Datuk Teo Eng Tee.
+**13. Datuk Teo Eng Tee @ Teo Kok Chee** minta Menteri Alam Sekitar dan Air
 menyatakan:
 (a) jumlah projek serta perbelanjaan kos bagi pembersihan sungai
 yang dijalankan di seluruh Malaysia sejak tahun 2019 hingga kini;
 dan
 (b) adakah kerajaan mempunyai rancangan untuk menjalankan kerja-
 kerja mendalamkan dasar sungai bagi Sungai Skudai, Johor."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,13.,,1130,Tuan Yang di-Pertua,Yang Berhormat Menteri.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,13.,,1130,Timbalan Menteri Alam Sekitar dan Air [Dato’ Mansor bin Othman],"Terima
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1130,1130,Tuan Yang di-Pertua,Yang Berhormat Menteri.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1130,1130,Timbalan Menteri Alam Sekitar dan Air [Dato’ Mansor bin Othman],"Terima
 kasih Tuan Yang di-Pertua dan terima kasih Yang Berhormat Datuk Teo Eng Tee.
 Sejak tahun 2019 hingga 31 Ogos 2021, Kementerian Alam Sekitar dan Air
 melalui Jabatan Pengaliran dan Saliran telah membelanjakan sebanyak RM225.2 juta
@@ -1141,8 +1141,8 @@ banjir di seluruh negara.
 Berdasarkan Perlembagaan Persekutuan, Jadual Kesembilan, Senarai 2, Senarai
 Negeri, sungai adalah di bawah tanggungjawab Kerajaan Negeri, dan Akta Jalan, Parit
 dan Bangunan 1974"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,13.,,1130,ANNOTATION,[Akta 133]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,13.,,1130,Timbalan Menteri Alam Sekitar dan Air [Dato’ Mansor bin Othman],"juga menggaris tanggungjawab membina dan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1130,1130,ANNOTATION,[Akta 133]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1130,1130,Timbalan Menteri Alam Sekitar dan Air [Dato’ Mansor bin Othman],"juga menggaris tanggungjawab membina dan
 menyelenggarakan parit adalah di bawah tanggungjawab pihak berkuasa tempatan.
 Oleh yang demikian, kerajaan negeri dan PBT masing-masing mempunyai
 peruntukan dan program tersendiri untuk menyelenggarakan sungai dan saliran
@@ -1155,20 +1155,20 @@ sekiranya ada projek yang diluluskan.
 Bagi tahun 2021, sebanyak RM550 ribu daripada projek pemuliharaan sungai
 untuk mengurangkan risiko banjir dan RM8.3 juta daripada program PEMERKASA telah
 diperuntukkan untuk memelihara sungai di seluruh negeri Johor."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,13.,,1140,Timbalan Menteri Alam Sekitar dan Air [Dato’ Mansor bin Othman],"Manakala untuk pemuliharaan Sungai Skudai sebanyak RM100 ribu dikhususkan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1140,1140,Timbalan Menteri Alam Sekitar dan Air [Dato’ Mansor bin Othman],"Manakala untuk pemuliharaan Sungai Skudai sebanyak RM100 ribu dikhususkan
 daripada program PEMERKASA berdasarkan model, dan analisis yang dibuat dalam
 kajian Pelan Pengurusan Lembangan Sungai Bersepadu (RRBM), Sungai Skudai yang
 disiapkan pada tahun 2019 .
 Keperluan mendalamkan Sungai Skudai telah dikenal pasti keperluannya dan
 merancang permohonan komponen kerja ini dalam *Rolling Plan* yang akan datang.
 Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,13.,,1140,Tuan Yang di-Pertua,Soalan tambahan.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,13.,,1140,Datuk Teo Eng Tee @ Teo Kok Chee,"Tuan Yang di-Pertua soalan tambahan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1140,1140,Tuan Yang di-Pertua,Soalan tambahan.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1140,1140,Datuk Teo Eng Tee @ Teo Kok Chee,"Tuan Yang di-Pertua soalan tambahan
 saya. Setelah dua tahun selepas kejadian pencemaran Sungai Kim Kim di Pasir Gudang
 Johor Bharu, baru-baru ini berlaku lagi kejadian pencemaran di Sungai Kim Kim. Apakah
 tindakan yang diambil oleh pihak Kementerian untuk mengatasi masalah ini?."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,13.,,1140,Tuan Yang di-Pertua,Sila.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,13.,,1140,Dato’ Mansor bin Othman,"Terima kasih Tuan Yang di-Pertua, terima kasih
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1140,1140,Tuan Yang di-Pertua,Sila.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1140,1140,Dato’ Mansor bin Othman,"Terima kasih Tuan Yang di-Pertua, terima kasih
 Yang Berhormat Senator. Pencemaran sungai berlaku disebabkan oleh beberapa faktor
 utama. Yang pertama sekali ialah tentang pembuangan hasil-hasil dari kilang-kilang dan
 juga daripada penggunaan domestik yang dicampakkan ke dalam sungai.
@@ -1181,12 +1181,12 @@ dipertanggungjawab. Usaha untuk membersihkan sungai itu juga digalakkan dengan
 berbagai-bagai agensi yang terlibat serta kita membudayakan pendidikan masyarakat kita
 agar suka mengasihi sungai kita dengan kerjasama NGO. Terima kasih Tuan Yang di-
 Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,13.,,1140,Tuan Yang di-Pertua,"Baik, tambahan satu lagi? Tiada.
-Dipersilakan Yang Berhormat Menteri Dalam Negeri."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,14.,,1140,Puan Nuridah binti Mohd Salleh,"minta Menteri Dalam Negeri menyatakan,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1140,1140,Tuan Yang di-Pertua,"Baik, tambahan satu lagi? Tiada.
+Dipersilakan Yang Berhormat Menteri Dalam Negeri.
+**14. Puan Nuridah binti Mohd Salleh** minta Menteri Dalam Negeri menyatakan,
 sejauh mana keberkesanan penubuhan Pusat Sehenti- *CCID Scam Response Centre*
 dalam membanteras kes jenayah penipuan atas talian di negara ini."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,14.,,1140,Timbalan Menteri Dalam Negeri I [Dato’ Sri Dr. Haji Ismail bin Haji Mohamed Said],"Dengan izin Tuan Yang di-Pertua saya mengucapkan ribuan terima kasih kepada
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1140,1140,Timbalan Menteri Dalam Negeri I [Dato’ Sri Dr. Haji Ismail bin Haji Mohamed Said],"Dengan izin Tuan Yang di-Pertua saya mengucapkan ribuan terima kasih kepada
 Yang Berhormat Senator Puan Nuridah Mohd Salleh atas soalan.
 Tuan Yang di-Pertua Pusat Sehenti- *CCID Scam Response Centre* (CCIDRC)
 yang boleh dihubungi di talian 03-26101559 atau 03-26101599 mula beroperasi pada 15
@@ -1208,8 +1208,8 @@ orang awam telah mula menggunakan kemudahan CCIDRC ini.
 Pihak PDRM akan meneruskan hebahan mengenai kemudahan CCIDRC ini agar
 jenayah penipuan atas talian dapat dibanteras dengan kerjasama orang awam. Terima
 kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,14.,,1140,Tuan Yang di-Pertua,Soalan Tambahan lain.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,15.,,1140,Tuan Muhammad Zahid bin Md Arip,"minta Menteri Perpaduan Negara
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1140,1140,Tuan Yang di-Pertua,"Soalan Tambahan lain.
+**15. Tuan Muhammad Zahid bin Md Arip** minta Menteri Perpaduan Negara
 menyatakan:
 (a) definisi, konsep, matlamat serta Pelan Tindakan Gagasan
 'Keluarga Malaysia'; dan
@@ -1217,8 +1217,8 @@ menyatakan:
 menimbulkan kekeliruan, mengelakkan daripada dianggap
 sekadar frasa kosong dan memastikan ia terlaksana serta boleh
 diukur pencapaiannya."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,15.,,1140,Tuan Yang di-Pertua,Dipersilakan Yang Berhormat Menteri.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,15.,,1140,Menteri Perpaduan Negara [Datuk Halimah binti Mohamed Sadique],"Minta
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1140,1140,Tuan Yang di-Pertua,Dipersilakan Yang Berhormat Menteri.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1140,1140,Menteri Perpaduan Negara [Datuk Halimah binti Mohamed Sadique],"Minta
 maaf Tuan Yang di-Pertua, saya terpaksa ambil tempat di belakang ini.
 Tuan Yang di-Pertua, izinkan saya untuk menjawab soalan daripada Yang
 Berhormat Tuan Muhammad Zahid bin Md Arip bersekali dengan soalan nombor 34,
@@ -1264,13 +1264,13 @@ inklusif, saling menghormati dan bertanggungjawab; dan
 (iii) melahirkan rakyat Malaysia yang berbudayakan perpaduan untuk
 mengukuhkan lagi ekosistem perpaduan. Terima kasih Tuan Yang
 di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,15.,,1140,Tuan Yang di-Pertua,"Terima kasih. Soalan tambahan. Selain daripada penyoal,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1140,1140,Tuan Yang di-Pertua,"Terima kasih. Soalan tambahan. Selain daripada penyoal,
 ada lagi."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,15.,,1140,Puan Fadhlina binti Dato Sidek,"Tuan Yang di-Pertua, soalan tambahan saya,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1140,1140,Puan Fadhlina binti Dato Sidek,"Tuan Yang di-Pertua, soalan tambahan saya,
 apa pandangan Yang Berhormat Menteri bahawa hubungan kenegaraan merupakan
 hubungan tanggungjawab antara rakyat dan pemerintah dan bukannya hubungan
 kekeluargaan. Itu sahaja Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,15.,,1140,Datuk Halimah binti Mohamed Sadique,"Terima kasih Yang Berhormat. Tuan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1140,1140,Datuk Halimah binti Mohamed Sadique,"Terima kasih Yang Berhormat. Tuan
 Yang di-Pertua seperti mana yang saya telah sebutkan tadi Yang Berhormat, jelas itu,
 objektif dan aspirasi.
 Saya ingin memaklumkan kepada Yang Berhormat, Keluarga Malaysia- apakah
@@ -1283,22 +1283,22 @@ segi jurang ekonomi;
 Berhormat di bawah naungan Keluarga Malaysia yang besar; dan
 (iii) paling penting, mengetepikan sebarang perbezaan politik untuk
 kita mencapai kestabilan"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,15.,,1150,Datuk Halimah binti Mohamed Sadique,"(iv) Keluarga Malaysia akan dapat menerima persamaan dan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1150,1150,Datuk Halimah binti Mohamed Sadique,"(iv) Keluarga Malaysia akan dapat menerima persamaan dan
 perbezaan berdasarkan kepada nilai-nilai Keluarga Malaysia
 berlandaskan kepada prinsip-prinsip Rukun Negara, dan juga
 Perlembagaan Persekutuan negara.
 Terima kasih Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,15.,,1150,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Menteri. Jawapan ini saya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1150,1150,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Menteri. Jawapan ini saya
 fikir sangat penting dan kita berharap terkandung juga di dalamnya budi bahasa budaya
 kita yang disebutkan tadi di bawah payung nilai-nilai murni. Silakan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,15.,,1150,Tuan Aknan a/l Ehtook,"Terima kasih Tuan Yang di-Pertua. Jadi, tentang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1150,1150,Tuan Aknan a/l Ehtook,"Terima kasih Tuan Yang di-Pertua. Jadi, tentang
 perpaduan ini lazimnya kita tekankan untuk rakyat yang bersatu padu. Akan tetapi apakah
 tindakan yang akan diambil oleh kementerian sekiranya pemimpin-pemimpin tertentu
 yang melencongkan inspirasi perpaduan ini? Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,15.,,1150,Tuan Yang di-Pertua,Apakah perkataan tadi Yang Berhormat?
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,15.,,1150,Tuan Aknan a/l Ehtook,Melencongkan.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,15.,,1150,Tuan Yang di-Pertua,Melencongkan? Oh...
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,15.,,1150,Datuk Halimah binti Mohamed Sadique,"Terima kasih Yang Berhormat. Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1150,1150,Tuan Yang di-Pertua,Apakah perkataan tadi Yang Berhormat?
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1150,1150,Tuan Aknan a/l Ehtook,Melencongkan.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1150,1150,Tuan Yang di-Pertua,Melencongkan? Oh...
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1150,1150,Datuk Halimah binti Mohamed Sadique,"Terima kasih Yang Berhormat. Yang
 Berhormat, bila Yang Amat Berhormat Perdana Menteri membentangkan penyataan yang
 berkaitan dengan Keluarga Malaysia ini, saya harap kita rakyat Malaysia kena yakin lah
 selepas apa yang telah pun berlaku, kita lalui beberapa proses dan akhirnya kita datang
@@ -1313,13 +1313,13 @@ gender, taraf ekonomi, pendidikan dan sebagainya. *Insya-Allah* dengan sokongan 
 ada kita akan dapat mencapai kejayaan menerusi perancangan besar Keluarga Malaysia
 ini.
 Terima kasih Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,15.,,1150,Tuan Yang di-Pertua,"Terima kasih. Yang Berhormat Datuk Ras Adiba binti Mohd
-Radzi."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,16.,,1150,Datuk Ras Adiba binti Mohd Radzi,"minta Menteri Kanan Pendidikan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1150,1150,Tuan Yang di-Pertua,"Terima kasih. Yang Berhormat Datuk Ras Adiba binti Mohd
+Radzi.
+**16. Datuk Ras Adiba binti Mohd Radzi** minta Menteri Kanan Pendidikan
 menyatakan, apa tindakan dan usaha kerajaan dalam membantu murid berkeperluan
 khas yang mengalami masalah sepanjang mengikuti PdPR bagi memastikan tidak berlaku
 *‘lost generation’* dalam kalangan kanak-kanak OKU."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,16.,,1150,Timbalan Menteri Pendidikan I [Dato’ Dr. Mah Hang Soon],"Terima kasih
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1150,1150,Timbalan Menteri Pendidikan I [Dato’ Dr. Mah Hang Soon],"Terima kasih
 kepada Datuk Ras Adiba.
 Tuan Yang di-Pertua, Kementerian Pendidikan Malaysia (KPM) menyedari
 pandemik COVID-19 memberi kesan kepada pembelajaran murid khususnya murid
@@ -1356,30 +1356,30 @@ Pada masa yang sama, MPK di sekolah pendidikan khas dan Program Pendidikan
 Khas Integrasi (PPKI) diberi keutamaan untuk kembali ke sekolah bermula 3 Oktober
 2021. KPM yakin kerangka holistik ini merupakan satu langkah komprehensif bagi
 memastikan pembelajaran MPK dapat dilaksanakan secara berkesan. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,16.,,1150,Tuan Yang di-Pertua,Terima kasih. Soalan lain?
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,16.,,1150,Datuk Ras Adiba binti Mohd Radzi,Terima kasih Tuan Yang di-Pertua.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,16.,,1150,Tuan Yang di-Pertua,"Lain, soalan pertama dari yang asal, yang lain supaya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1150,1150,Tuan Yang di-Pertua,Terima kasih. Soalan lain?
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1150,1150,Datuk Ras Adiba binti Mohd Radzi,Terima kasih Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1150,1150,Tuan Yang di-Pertua,"Lain, soalan pertama dari yang asal, yang lain supaya
 ramai kita dapat berhujah. Silakan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,16.,,1150,Dato’ Ajis bin Sitin,"Terima kasih Tuan Yang di-Pertua. Di bawah soalan sama
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1150,1150,Dato’ Ajis bin Sitin,"Terima kasih Tuan Yang di-Pertua. Di bawah soalan sama
 saya ingin bertanya, PdPR telah sangat menyusahkan bagi anak-anak Orang Asli belajar.
 Soalan saya, apakah bantuan atau tindakan yang telah diberikan bagi memastikan anak-
 anak Orang Asli ini mengikuti PdPR dengan sempurna? sedia dimaklumkan bahawa
 Orang Asli berada jauh nun di luar bandar."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,16.,,1150,Tuan Yang di-Pertua,Sila.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,16.,,1150,Dato’ Dr. Mah Hang Soon,"Terima kasih Tuan Yang di-Pertua. Sebenarnya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1150,1150,Tuan Yang di-Pertua,Sila.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1150,1150,Dato’ Dr. Mah Hang Soon,"Terima kasih Tuan Yang di-Pertua. Sebenarnya
 memang ada kekangan yang dihadapi oleh semua murid daripada semua masyarakat.
 Jadi dari satu segi, sudah tentunya mereka yang dari pedalaman dan termasuklah murid-
 murid daripada Orang Asli juga menghadapi masalah yang sama. Jadi, kita telah
 melaksanakan banyak inisiatif untuk membantu murid-murid kita ini. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,16.,,1150,Tuan Yang di-Pertua,"Baik, balik semula kepada Yang Berhormat penyoal Datuk
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1150,1150,Tuan Yang di-Pertua,"Baik, balik semula kepada Yang Berhormat penyoal Datuk
 Ras Adiba."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,16.,,1150,Datuk Ras Adiba binti Mohd Radzi,"Terima kasih Tuan Yang di-Pertua. Soalan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1150,1150,Datuk Ras Adiba binti Mohd Radzi,"Terima kasih Tuan Yang di-Pertua. Soalan
 saya kepada Yang Berhormat Timbalan Menteri, apakah perancangan yang telah
 dilakukan oleh KPM bagi pembukaan sekolah terutamanya bagi MPK? Adakah akan ada
 sebarang intervensi khas untuk MPK sebelum meneruskan sesi pembelajaran? Terima
 kasih Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,16.,,1150,Tuan Yang di-Pertua,Silakan.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,16.,,1150,Dato’ Dr. Mah Hang Soon,"Terima kasih kepada Datuk Ras Adiba. Tuan Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1150,1150,Tuan Yang di-Pertua,Silakan.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1150,1150,Dato’ Dr. Mah Hang Soon,"Terima kasih kepada Datuk Ras Adiba. Tuan Yang
 di-Pertua, banyak langkah dan inisiatif yang telah diambil oleh KPM untuk membantu
 murid sekolah untuk balik atau kembali ke sekolah. Jadi, seperti mana yang sama
 sebutkan tadi, khususnya untuk Murid Berkeperluan Khas (MPK).
@@ -1392,7 +1392,7 @@ kita ada rancangan termasuklah mengadakan pendampingan dengan ibu bapa untuk
 sama-sama bekerjasama untuk membantu dalam pembelajaran anak mereka. Untuk
 memastikan ibu bapa mereka juga memahami cara dan kaedah yang kita laksanakan
 untuk mereka. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,16.,,1150,Tuan Yang di-Pertua,"Terima kasih. Kita sampai ke tahap akhir bagi sesi soal
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,,,■1150,1150,Tuan Yang di-Pertua,"Terima kasih. Kita sampai ke tahap akhir bagi sesi soal
 jawab. Sebelum kita terus kepada pengumuman Setiausaha, suka saya menyampaikan
 salam kepada semua Yang Berhormat Menteri supaya mengambil ingatan agar sekurang-
 kurangnya hadir di Dewan ini bagi satu atau dua soalan dalam sesi-sesi akan datang.
@@ -1403,7 +1403,7 @@ menteri yang asasnya dari Dewan ini mengambil berat terhadap soalan-soalan yang
 dikemukakan.
 Bagi Yang Berhormat Menteri-menteri lain, kita menegaskan juga agar kehadiran
 itu sesuai dengan taraf Dewan ini sebagai Dewan legislatif tertinggi tanah air."
-USUL,"Said]: Tuan Yang di-Pertua, saya mohon mencadangkan:",,1150,,"“Bahawa Majlis ini memerintahkan Ketua Polis Negara menjaga
+USUL,"Said]: Tuan Yang di-Pertua, saya mohon mencadangkan:",,■1150,1150,,"“Bahawa Majlis ini memerintahkan Ketua Polis Negara menjaga
 supaya selama penggal Dewan Negara yang ada sekarang, jalan-jalan
 melalui lorong-lorong menuju ke Dewan ini hendaklah sentiasa terbuka
 dan boleh dilalui dan jangan ada apa-apa halangan menghalang Ahli-ahli
@@ -1412,14 +1412,14 @@ di jalan-jalan menuju ke Dewan ini dan supaya jangan ada huru-hara di
 Bangunan Dewan ini dan berhampiran dengan bangunan ini, dan
 Setiausaha Dewan Negara hendaklah menyampaikan perintah ini kepada
 Ketua Polis Negara yang tersebut itu.”"
-USUL,"Said]: Tuan Yang di-Pertua, saya mohon mencadangkan:",,1200,,"Sekian, terima kasih."
-USUL,"Said]: Tuan Yang di-Pertua, saya mohon mencadangkan:",,1200,Tuan Yang di-Pertua,Ahli lain menyokong?
-USUL,"Said]: Tuan Yang di-Pertua, saya mohon mencadangkan:",,1200,Timbalan Menteri Pengajian Tinggi [Dato’ Dr. Ahmad Masrizal Muhammad],"Tuan Yang di-Pertua, saya menyokong. Terima kasih."
-USUL,"Said]: Tuan Yang di-Pertua, saya mohon mencadangkan:",,1200,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Timbalan Menteri. Bunyinya
+USUL,"Said]: Tuan Yang di-Pertua, saya mohon mencadangkan:",,■1200,1200,,"Sekian, terima kasih."
+USUL,"Said]: Tuan Yang di-Pertua, saya mohon mencadangkan:",,■1200,1200,Tuan Yang di-Pertua,Ahli lain menyokong?
+USUL,"Said]: Tuan Yang di-Pertua, saya mohon mencadangkan:",,■1200,1200,Timbalan Menteri Pengajian Tinggi [Dato’ Dr. Ahmad Masrizal Muhammad],"Tuan Yang di-Pertua, saya menyokong. Terima kasih."
+USUL,"Said]: Tuan Yang di-Pertua, saya mohon mencadangkan:",,■1200,1200,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Timbalan Menteri. Bunyinya
 Usul tersebut telah didengar, masalahnya ialah satu Usul atas nama Yang Berhormat
 Menteri Dalam Negeri seperti yang telah dibacakan tadi hendaklah disetujukan."
-USUL,"Said]: Tuan Yang di-Pertua, saya mohon mencadangkan:",,1200,ANNOTATION,[Usul dikemuka bagi diputuskan; dan disetujukan]
-USUL,"Said]: Tuan Yang di-Pertua, saya mohon mencadangkan:",,1200,Tuan Yang di-Pertua,"Dengan sedikit tambahan, saya telah mendengar Usul ini
+USUL,"Said]: Tuan Yang di-Pertua, saya mohon mencadangkan:",,■1200,1200,ANNOTATION,[Usul dikemuka bagi diputuskan; dan disetujukan]
+USUL,"Said]: Tuan Yang di-Pertua, saya mohon mencadangkan:",,■1200,1200,Tuan Yang di-Pertua,"Dengan sedikit tambahan, saya telah mendengar Usul ini
 sekitar 43 tahun. Saya dapati bahawa jarang sekali dapat pengawasan dibuat pada lalu
 lintas menghala ke Parlimen.
 Untuk itu, kita menegaskan di Dewan ini supaya satu perubahan berlaku. Setiap
@@ -1427,7 +1427,7 @@ sesi kita mengadakan Usul dan juga jawapannya kita lihat bahawa, bulatan di sebe
 sana menjurus ke Parlimen tidak ada orang menjaga. Setiausaha Dewan hendaklah
 mengutus surat kepada yang berkenaan dan menegaskan apa yang telah kita kemukakan
 sebagai Usul putusan hari ini."
-USUL,"undang) [Datuk Wira Hajah Mas Ermieyati binti Samsudin]: Tuan Yang di-Pertua, saya",,1200,,"mohon mencadangkan:
+USUL,"undang) [Datuk Wira Hajah Mas Ermieyati binti Samsudin]: Tuan Yang di-Pertua, saya",,■1200,1200,,"mohon mencadangkan:
 “Bahawa mengikut peruntukan Peraturan Mesyuarat 70,
 Peraturan-peraturan Majlis Mesyuarat Dewan Negara, saya mohon
 mencadangkan supaya Ahli Yang Berhormat berikut:
@@ -1448,23 +1448,23 @@ dan selaras dengan peruntukan Peraturan Mesyuarat 70(2), Majlis
 Mesyuarat dengan ini memberi kuasa kepada Jawatankuasa Pemilih
 memanggil orang hadir di hadapannya serta meminta dikeluarkan surat-
 surat.”"
-USUL,"undang) [Datuk Wira Hajah Mas Ermieyati binti Samsudin]: Tuan Yang di-Pertua, saya",,1200,ANNOTATION,[Timbalan Yang di-Pertua mempengerusikan Mesyuarat]
-USUL,"undang) [Datuk Wira Hajah Mas Ermieyati binti Samsudin]: Tuan Yang di-Pertua, saya",,1200,Timbalan Yang di-Pertua,"Ahli-ahli Yang Berhormat, masalah sekarang ialah
+USUL,"undang) [Datuk Wira Hajah Mas Ermieyati binti Samsudin]: Tuan Yang di-Pertua, saya",,■1200,1200,ANNOTATION,[Timbalan Yang di-Pertua mempengerusikan Mesyuarat]
+USUL,"undang) [Datuk Wira Hajah Mas Ermieyati binti Samsudin]: Tuan Yang di-Pertua, saya",,■1200,1200,Timbalan Yang di-Pertua,"Ahli-ahli Yang Berhormat, masalah sekarang ialah
 Usul Yang Berhormat Menteri di Jabatan Perdana Menteri ini terbuka untuk dibahas.
 Biasanya tiada perbahasan ke atas usul ini. Akan tetapi...
 **Tuan Haji Idris bin Haji Ahmad [Menteri di Jabatan Perdana Menteri (Hal
 Ehwal Agama)]:** Saya mohon menyokong Usul ini Tuan Yang di-Pertua."
-USUL,"undang) [Datuk Wira Hajah Mas Ermieyati binti Samsudin]: Tuan Yang di-Pertua, saya",,1200,Timbalan Yang di-Pertua,"Terima kasih. Ahli-ahli Yang Berhormat sekarang
+USUL,"undang) [Datuk Wira Hajah Mas Ermieyati binti Samsudin]: Tuan Yang di-Pertua, saya",,■1200,1200,Timbalan Yang di-Pertua,"Terima kasih. Ahli-ahli Yang Berhormat sekarang
 saya kemukakan masalah kepada Majlis bagi diputuskan, masalahnya ialah bahawa usul
 seperti yang dikemukakan oleh Yang Berhormat Menteri mengikut Peraturan Mesyuarat
 70 itu tadi hendaklah disetujukan."
-USUL,"undang) [Datuk Wira Hajah Mas Ermieyati binti Samsudin]: Tuan Yang di-Pertua, saya",,1200,ANNOTATION,"[Masalah dikemukakan bagi diputuskan, dan disetujukan]"
+USUL,"undang) [Datuk Wira Hajah Mas Ermieyati binti Samsudin]: Tuan Yang di-Pertua, saya",,■1200,1200,ANNOTATION,"[Masalah dikemukakan bagi diputuskan, dan disetujukan]"
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1200,Timbalan Yang di-Pertua,"Dijemput Yang Berhormat Senator Dato’ Wira
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1200,1200,Timbalan Yang di-Pertua,"Dijemput Yang Berhormat Senator Dato’ Wira
 Othman bin Aziz mencadangkan Usul Menjunjung Kasih ke atas Titah Ke Bawah Duli
 Yang Maha Mulia Seri Paduka Baginda Yang di-Pertuan Agong. Dipersilakan."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1200,Dato’ Wira Othman bin Aziz,"Terima kasih Tuan Yang di-Pertua.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1200,1200,Dato’ Wira Othman bin Aziz,"Terima kasih Tuan Yang di-Pertua.
 *Assalammualaikum warahmatullahi wabarakatuh.* Saya mohon mencadangkan bahawa
 satu ucapan yang tidak sepertinya ini dipersembahkan kepada Ke Bawah Duli Yang Maha
 Mulia Seri Paduka Baginda Yang di-Pertuan Agong seperti berikut:
@@ -1477,9 +1477,9 @@ Keempat, Majlis Parlimen Keempat Belas, pada 13 September
 2021 yang lalu.”
 Ampun Tuanku."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1200,Timbalan Yang di-Pertua,Silakan Yang Berhormat.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1200,1200,Timbalan Yang di-Pertua,Silakan Yang Berhormat.
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1200,Dato’ Wira Othman bin Aziz,"Saya juga ingin merakamkan ucapan terima kasih
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1200,1200,Dato’ Wira Othman bin Aziz,"Saya juga ingin merakamkan ucapan terima kasih
 kepada Tuan Yang di-Pertua kerana memberi ruang kepada saya untuk membawa Usul
 ini pada hari ini.
 Seterusnya saya ingin merakamkan ucapan tahniah atas pelantikan Yang Amat
@@ -1527,7 +1527,7 @@ Oleh itu, apabila berlaku peningkatan kos dalam aspek pengeluaran barangan
 secara tidak langsung kos itu akan dipindahkan kepada pengguna mengakibatkan harga
 barang yang dijual di pasaran akan menjadi lebih mahal."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1210,Dato’ Wira Othman bin Aziz,"Malah hasil negara yang berpotensi dikutip oleh GST pada tahun 2018 sahaja
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1210,1210,Dato’ Wira Othman bin Aziz,"Malah hasil negara yang berpotensi dikutip oleh GST pada tahun 2018 sahaja
 berjumlah RM48 bilion, berbanding dengan SST RM21 bilion. Terdapat perbezaan RM23
 bilion yang hilang akibat tindakan pemansuhan GST. Sudah tentunya, lebihan perolehan
 RM23 bilion itu berupaya dikembalikan oleh kerajaan kepada rakyat dalam pelbagai
@@ -1637,7 +1637,7 @@ dapat dilaksanakan, walaupun kita juga berhadapan dengan masalah pandemik ini.
 Malah, masalah kemiskinan dan pengangguran seperti yang telah disebutkan sebentar
 tadi, juga akan dapat dikurangi."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1220,Dato’ Wira Othman bin Aziz,"Tuan Yang di-Pertua, pandemik COVID-19 juga telah memberi kesan yang besar
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1220,1220,Dato’ Wira Othman bin Aziz,"Tuan Yang di-Pertua, pandemik COVID-19 juga telah memberi kesan yang besar
 kepada sistem pendidikan Malaysia yang berubah daripada kaedah bersemuka kepada
 kaedah maya menerusi pelaksanaan pengajaran dan pembelajaran di rumah (PdPR).
 Sungguhpun sistem pendidikan negara masih lagi beroperasi, namun keberkesanannya
@@ -1751,7 +1751,7 @@ makanan negara sedang diuji. Berdasarkan Akaun Pembekalan dan Penggunaan
 Komoditi Pertanian Terpilih 2016-2020, Jabatan Perangkaan Malaysia menunjukkan
 bahawa kadar kebergantungan negara terhadap import makanan semakin meningkat."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1230,Dato’ Wira Othman bin Aziz,"Tahun lalu, memperlihatkan perdagangan import Malaysia lebih tinggi. Ini
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1230,1230,Dato’ Wira Othman bin Aziz,"Tahun lalu, memperlihatkan perdagangan import Malaysia lebih tinggi. Ini
 bermakna, tahap kebergantungan pada makanan import juga semakin melonjak. Malaysia
 mengimport sekitar sejumlah RM55.5 bilion- produk makanan. Angka itu lebih tinggi
 berbanding dengan eksport sekitar sejumlah RM33.8 bilion.
@@ -1864,7 +1864,7 @@ ataupun dasar yang penting. Ini bagi mengelak masalah-masalah yang membelenggu
 seperti mana keputusan benih untuk dipasarkan yang hak pemasaran tunggal diberikan
 kepada NAFAS tetapi akhirnya NAFAS juga tidak mampu untuk mengendalikannya."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1240,Dato’ Wira Othman bin Aziz,"Jadi, Tuan Yang di-Pertua, sedikit lagi berkaitan dengan pembangunan luar
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1240,1240,Dato’ Wira Othman bin Aziz,"Jadi, Tuan Yang di-Pertua, sedikit lagi berkaitan dengan pembangunan luar
 bandar. Kerajaan perlu mengimbangkan jurang antara pembangunan antara luar bandar
 dan bandar bagi mengatasi masalah kemiskinan di luar bandar disebabkan kurangnya
 infrastruktur yang disediakan bagi merancakkan potensi kemajuan ekonomi. Impak
@@ -1947,18 +1947,18 @@ menjunjung kasih di atas Titah Seri Paduka Baginda Yang di-Pertuan Agong ketika
 merasmikan Parlimen Penggal Keempat, Parlimen Keempat Belas baru-baru ini.
 Tuan Yang di-Pertua, saya mohon mencadangkan…"
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1240,ANNOTATION,"[Bercakap dalam bahasa
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1240,1240,ANNOTATION,"[Bercakap dalam bahasa
 Arab]"
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1240,Dato’ Wira Othman bin Aziz,*Assalamualaikum warahmatullahi wabarakatuh.* Terima kasih.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1240,1240,Dato’ Wira Othman bin Aziz,*Assalamualaikum warahmatullahi wabarakatuh.* Terima kasih.
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1240,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator Dato’
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1240,1240,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator Dato’
 Wira Othman bin Aziz atas cadangan Usul Menjunjung Kasih Ke Atas Titah Seri Paduka
 Baginda Yang di-Pertuan Agong.
 Sekarang saya menjemput Yang Berhormat Senator Puan Rita Sarimah a/k
 Patrick Insol bagi menyokong dan berucap. Dipersilakan."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1247,Puan Rita Sarimah a/k Patrick Insol,"Terima kasih Tuan Yang di-Pertua.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,12.47 tgh.,1247,Puan Rita Sarimah a/k Patrick Insol,"Terima kasih Tuan Yang di-Pertua.
 Selamat tengah hari saya ucapkan kepada rakan-rakan sekalian dan salam sejahtera.
 Saya mengucapkan jutaan terima kasih kepada Tuan Yang di-Pertua kerana telah
 memberi ruang ini kepada saya untuk menyokong Usul Menjunjung Kasih ke atas Titah
@@ -1983,7 +1983,7 @@ berjaya membawa Malaysia di kalangan tiga buah negara di dunia yang terpantas
 mencapai vaksinasi untuk COVID-19. Saya percaya usaha setakat ini, usaha yang
 cemerlang ini telah diteruskan oleh Perdana Menteri kita yang baharu."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1250,Puan Rita Sarimah a/k Patrick Insol,"Walaupun jangkitan masih tinggi, tetapi vaksin berkesan mengurangkan risiko
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1250,1250,Puan Rita Sarimah a/k Patrick Insol,"Walaupun jangkitan masih tinggi, tetapi vaksin berkesan mengurangkan risiko
 dan kesan jangkitan. Kajian yang dilakukan oleh Kementerian Kesihatan Malaysia
 mendapati vaksin berkesan mengurangkan risiko jangkitan sebanyak 88 peratus dan di
 kalangan pesakit COVID-19 telah berkesan mengurangkan kematian sebanyak 88
@@ -2106,26 +2106,26 @@ menyaingi *Lazada, Shoppe*, platform-platform terkemuka yang ada sekarang yang d
 oleh warganegara, bukan warganegara Malaysia.
 Tuan Yang di-Pertua..."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1250,Timbalan Yang di-Pertua,"Yang Berhormat, kalau panjang lagi kita sambung
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1250,1250,Timbalan Yang di-Pertua,"Yang Berhormat, kalau panjang lagi kita sambung
 2.30 petang."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1250,Puan Rita Sarimah a/k Patrick Insol,Saya rasa ada lebih kurang 10 minit.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1250,1250,Puan Rita Sarimah a/k Patrick Insol,Saya rasa ada lebih kurang 10 minit.
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1250,Timbalan Yang di-Pertua,"Masa 10 minit lama Yang Berhormat. Semua hendak
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1250,1250,Timbalan Yang di-Pertua,"Masa 10 minit lama Yang Berhormat. Semua hendak
 rehat dahulu. Kita sambung 2.30 petang."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1250,Puan Rita Sarimah a/k Patrick Insol,"Okey, terima kasih."
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1250,1250,Puan Rita Sarimah a/k Patrick Insol,"Okey, terima kasih."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1250,Timbalan Yang di-Pertua,"Terima kasih kepada semua Ahli Dewan. Kita
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1250,1250,Timbalan Yang di-Pertua,"Terima kasih kepada semua Ahli Dewan. Kita
 sambung perbahasan kita pada jam 2.30 petang hari ini. Terima kasih."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1250,ANNOTATION,[Mesyuarat ditempohkan pada jam 1.03 petang]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1250,1250,ANNOTATION,[Mesyuarat ditempohkan pada jam 1.03 petang]
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1430,ANNOTATION,[Mesyuarat disambung semula pada pukul 2.30 petang]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,2.30 petang,1430,ANNOTATION,[Mesyuarat disambung semula pada pukul 2.30 petang]
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1430,ANNOTATION,[Timbalan Yang di-Pertua mempengerusikan Mesyuarat]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1430,1430,ANNOTATION,[Timbalan Yang di-Pertua mempengerusikan Mesyuarat]
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1430,Timbalan Yang di-Pertua,"*Bismillahi Rahmani Rahim. Assalamualaikum
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1430,1430,Timbalan Yang di-Pertua,"*Bismillahi Rahmani Rahim. Assalamualaikum
 warahmatullahi wabarakatuh* dan salam sejahtera.
 Kita sambung ucapan menyokong daripada Yang Berhormat Senator Puan Rita
 Sarimah a/k Patrick Insol yang tadi meminta lagi 10 minit.
@@ -2134,7 +2134,7 @@ supaya kita dapat penuhi masa yang ditetapkan kerana kita ada banyak daripada Ya
 Berhormat Senator yang akan membahaskan nanti.
 Jadi dijemput Yang Berhormat Senator Puan Rita Sarimah. Dipersilakan."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1433,Puan Rita Sarimah a/k Patrick Insol,"Terima kasih Tuan Yang di-Pertua.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,2.33 ptg.,1433,Puan Rita Sarimah a/k Patrick Insol,"Terima kasih Tuan Yang di-Pertua.
 Selamat petang, dan salam sejahtera Yang Berhormat-Yang Berhormat sekalian.
 Jadi Tuan Yang di-Pertua, saya mengucapkan syabas kepada Yang Amat
 Berhormat Perdana Menteri yang baharu Dato’ Sri Ismail Sabri bin Yaakob kerana
@@ -2186,7 +2186,7 @@ dengan izin, *incomplete decolonization*.
 Dengan ini, saya menyokong Usul Menjunjung Kasih Atas Titah Seri Paduka
 Baginda Yang di-Pertuan Agong. Sekian, terima kasih."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1433,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator Puan
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,2.33 ptg.,1433,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator Puan
 Rita Sarimah a/k Patrick Insol atas sokongan tadi.
 Ahli-ahli Yang Berhormat, masalah di hadapan Majlis ialah suatu usul berbunyi,
 ""Bahawa suatu ucapan yang tidak sepertinya dipersembahkan
@@ -2214,12 +2214,12 @@ membuat perbahasan iaitu:
 dan,
 (viii) Yang Berhormat Senator Dr. Yaakob bin Sapari."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1440,Timbalan Yang di-Pertua,"Jadi saya peringatkan bahawa masa yang diberikan selama 20 minit untuk kita
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1440,1440,Timbalan Yang di-Pertua,"Jadi saya peringatkan bahawa masa yang diberikan selama 20 minit untuk kita
 dapat memberi peluang kesemua rakan kita dalam sesi perbahasan ini.
 Sekarang dipersilakan Yang Berhormat Senator Datuk Dr. Zulkifli Mohamad Al-
 Bakri."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1440,Datuk Dr. Zulkifli Mohamad Al-Bakri,"*Bismillahi Rahmani Rahim.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,2.40 ptg.,1440,Datuk Dr. Zulkifli Mohamad Al-Bakri,"*Bismillahi Rahmani Rahim.
 Assalamualaikum warahmatullahi wabarakatuh* dan salam sejahtera, selamat petang.
 Terima kasih kepada Tuan Yang di-Pertua.
 Tuan Yang di-Pertua, izinkan saya memulakan perbahasan Titah Diraja ini
@@ -2229,9 +2229,9 @@ Siapkan tali disimpul erat.
 Kalau hendak berbuat jasa;
 Tetapkan hati betulkan niat.*"
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1440,ANNOTATION,[Membaca surah al-An’am 6:162]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,2.40 ptg.,1440,ANNOTATION,[Membaca surah al-An’am 6:162]
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1440,Datuk Dr. Zulkifli Mohamad Al-Bakri,"Mafhumnya, *“Katakanlah, sesungguhnya
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,2.40 ptg.,1440,Datuk Dr. Zulkifli Mohamad Al-Bakri,"Mafhumnya, *“Katakanlah, sesungguhnya
 solatku dan ibadatku, hidupku dan matiku hanyalah untuk Allah Tuhan yang memelihara
 dan mentadbir sekalian alam”.*
 Menjunjung kasih Ke Bawah Duli Yang Maha Mulia Seri Paduka Baginda Yang
@@ -2329,7 +2329,7 @@ Pemahaman mengenai wakaf *manqul* tidak meluas di Malaysia kerana masih ramai ya
 beranggapan wakaf secara tradisional seperti masjid, tanah kubur, Al-Quran dan juga
 madrasah-madrasah."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1450,Datuk Dr. Zulkifli Mohamad Al-Bakri,"Selain daripada wakaf itu, wakaf perkhidmatan atau wakaf Khadama yang
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1450,1450,Datuk Dr. Zulkifli Mohamad Al-Bakri,"Selain daripada wakaf itu, wakaf perkhidmatan atau wakaf Khadama yang
 dibincangkan dalam wacana Mazhab Maliki boleh diperkenalkan bagi meringankan beban
 para guru di sekolah. Sebagai contoh, para pensyarah, guru pencen atau NGO yang
 bersesuaian boleh dilibatkan bagi membantu pihak sekolah dan guru dengan kepakaran
@@ -2382,10 +2382,10 @@ Hidup muhibah perlu diamalkan;
 Itulah ramuan Keluarga Malaysia.*
 Perpaduan merupakan tuntutan penting dalam Islam. Firman Allah…"
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1450,ANNOTATION,"[Membaca
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1450,1450,ANNOTATION,"[Membaca
 sepotong ayat al-Quran surah al-Hujurat 49:13]"
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1450,Datuk Dr. Zulkifli Mohamad Al-Bakri,"Apa yang dizahirkan dalam ayat ini jelas
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1450,1450,Datuk Dr. Zulkifli Mohamad Al-Bakri,"Apa yang dizahirkan dalam ayat ini jelas
 menunjukkan betapa pentingnya kita bertaaruf atau berkenal-kenalan, berbaik sangka-
 kehidupan bersama.
 Dalam semangat Keluarga Malaysia, merupakan manifestasi daripada Surah Al-
@@ -2437,10 +2437,10 @@ Dalam kerancakan kita mengejar pembangunan ekonomi yang pesat, suka saya
 ingatkan kepada diri saya dan semua, di samping kita mahu keuntungan yang tinggi, satu
 perkara kita tidak boleh lupa, iaitu konsep keberkatan..."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1450,ANNOTATION,"[Membaca sebahagian ayat al-
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1450,1450,ANNOTATION,"[Membaca sebahagian ayat al-
 Quran surah al-A’raaf 7:96]"
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1450,Datuk Dr. Zulkifli Mohamad Al-Bakri,"Jadi, berkat ini cukup penting Yang Berhormat.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1450,1450,Datuk Dr. Zulkifli Mohamad Al-Bakri,"Jadi, berkat ini cukup penting Yang Berhormat.
 Tuan Yang di-Pertua, saya mohon sedikit sahaja. Aspek keseimbangan dalam
 menjaga alam sekitar juga merupakan aspek yang diberi penekanan. Bagaimana
 Rasulullah mengajar supaya jangan menebang pokok-pokok dengan sewenang-
@@ -2451,7 +2451,7 @@ Berdasarkan pengalaman di Sukan Olimpik baru-baru ini di Tokyo, menggunakan
 bimbit. Begitu juga usaha KASA menerusi Pelan Kelestarian Alam Sekitar Malaysia, wajar
 diberikan pujian dalam membuktikan komitmen."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1500,Datuk Dr. Zulkifli Mohamad Al-Bakri,"Saya syorkan strategi pengajaran dan pembelajaran alam sekitar, pembelajaran
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1500,1500,Datuk Dr. Zulkifli Mohamad Al-Bakri,"Saya syorkan strategi pengajaran dan pembelajaran alam sekitar, pembelajaran
 mikro dan tidak hanya bergantung pada Buku Panduan Guru Pendidikan Alam Sekitar
 semata-mata. Penubuhan pusat pendidikan interaktif alam sekitar di sekolah-sekolah dan
 secara maya. Terlanjur bercakap tentang alam sekitar, suka juga saya menyatakan
@@ -2477,27 +2477,27 @@ Hadirin hadirat Tuan Yang di-Pertua dan Yang Berhormat sekalian yang dirahmati
 Allah, kesimpulannya segala apa yang kita usahakan selama ini kita inginkan usaha pada
 masa akan datang, bukan hanya angan-angan dan kita pautlah dengan firman Allah…"
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1500,ANNOTATION,[Membaca sebahagian ayat Al-Quran surah Ali-Imran 3:103]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1500,1500,ANNOTATION,[Membaca sebahagian ayat Al-Quran surah Ali-Imran 3:103]
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1500,Datuk Dr. Zulkifli Mohamad Al-Bakri,"Perpaduan bukan atas
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1500,1500,Datuk Dr. Zulkifli Mohamad Al-Bakri,"Perpaduan bukan atas
 slogan dan perjanjian tetapi lebih daripada itu*…*"
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1500,ANNOTATION,"[Membaca sambungan ayat Al-Quran
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1500,1500,ANNOTATION,"[Membaca sambungan ayat Al-Quran
 surah Ali-Imran 3:103]"
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1500,Datuk Dr. Zulkifli Mohamad Al-Bakri,"Iaitu Allah menyatukan hati-hati kita semua”.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1500,1500,Datuk Dr. Zulkifli Mohamad Al-Bakri,"Iaitu Allah menyatukan hati-hati kita semua”.
 Moga-moga dengan niat yang baik dan suci, maka kita harapkan semoga
 Malaysia gagah bangkit selepas mendung yang melanda menjadi *baldatun thayyibatun
 warabbun ghafur.*
 Saya pohon menyokong Usul menjunjung Kasih Titah Seri Paduka Baginda Yang
 di-Pertuan Agong. Sekian. *Asalamualaikum warahmatullahi wabarakatuh*."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1500,Timbalan Yang di-Pertua,"*Waalaikumsalam.* Terima kasih kepada Yang
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1500,1500,Timbalan Yang di-Pertua,"*Waalaikumsalam.* Terima kasih kepada Yang
 Berhormat Senator Datuk Dr. Zulkifli Mohamad Al-Bakri.
 Seterusnya saya menjemput Yang Berhormat Senator Datuk Ras Adiba binti
 Mohd Radzi. Dipersilakan."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1503,Datuk Ras Adiba binti Mohd Radzi,"*Bismillahi Rahmani Rahim.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,3.03 ptg.,1503,Datuk Ras Adiba binti Mohd Radzi,"*Bismillahi Rahmani Rahim.
 Assalamualaikum warahmatullahi wabarakatuh.*
 Pertamanya, saya menjunjung kasih atas Titah Diraja yang telah disampaikan
 oleh Seri Paduka Baginda Yang di-Pertuan Agong yang pada hemat saya telah
@@ -2576,15 +2576,15 @@ Penyakit Jarang Jumpa’.
 Menteri KKM perlu meluluskan pegawai saintis ataupun kaunseling genetik
 dimasukkan dalam Jadual Kedua, Akta Profesion Kesihatan Bersekutu"
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1503,ANNOTATION,[Akta 774]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,3.03 ptg.,1503,ANNOTATION,[Akta 774]
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1503,Datuk Ras Adiba binti Mohd Radzi,".
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,3.03 ptg.,1503,Datuk Ras Adiba binti Mohd Radzi,".
 Menjadikan Hospital Pulau Pinang dan Hospital Kuala Lumpur sebagai pusat latihan bagi
 kaunseling genetik. Menaikkan peruntukan dana kepada makmal genetik di IMR serta
 memperkenalkan dasar penyakit jarang jumpa yang mempunyai kerangka polisi yang
 lebih jelas."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1510,Datuk Ras Adiba binti Mohd Radzi,"Tuan Yang di-Pertua, saya juga berharap agar kerajaan akan mengundi dan
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1510,1510,Datuk Ras Adiba binti Mohd Radzi,"Tuan Yang di-Pertua, saya juga berharap agar kerajaan akan mengundi dan
 menyokong resolusi Pertubuhan Bangsa-Bangsa Bersatu bagi *rare diseases*. Saya pasti
 dalam Dewan kita ini Tuan Yang di-Pertua, kita sendiri tidak tahu akan penyakit jarang
 jumpa dan apa yang dilalui oleh pesakit-pesakit ini.
@@ -2611,23 +2611,23 @@ supaya hanya pusat jagaan yang berdaftar dengan JKM sahaja boleh beroperasi di
 negara ini. Kita tidak boleh duduk sahaja dan berkata-kata. *Lip service,* dengan izinnya
 Tuan Yang di-Pertua, tidak boleh dilakukan ketika ini…"
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1510,ANNOTATION,[Disampuk]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1510,1510,ANNOTATION,[Disampuk]
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1510,Tuan Muhamad Zahid bin Md. Arip,"Mohon penjelasan sedikit Yang Berhormat.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1510,1510,Tuan Muhamad Zahid bin Md. Arip,"Mohon penjelasan sedikit Yang Berhormat.
 Tuan Yang di-Pertua, saya mohon penjelasan daripada Yang Berhormat Senator."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1510,Timbalan Tuan Yang di-Pertua,Terpulang kepada pembahas ya.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1510,1510,Timbalan Tuan Yang di-Pertua,Terpulang kepada pembahas ya.
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1510,Tuan Muhamad Zahid bin Md. Arip,Yang Berhormat.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1510,1510,Tuan Muhamad Zahid bin Md. Arip,Yang Berhormat.
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1510,Timbalan Tuan Yang di-Pertua,Dibenarkan.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1510,1510,Timbalan Tuan Yang di-Pertua,Dibenarkan.
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1510,Tuan Muhamad Zahid bin Md. Arip,"Terima kasih Yang Berhormat. Saya
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1510,1510,Tuan Muhamad Zahid bin Md. Arip,"Terima kasih Yang Berhormat. Saya
 hendak bertanya tentang ada pusat-pusat penjagaan ini yang mengambil pekerja
 daripada kalangan pekerja-pekerja asing, bukan daripada kalangan masyarakat kita.
 Apakah pandangan Yang Berhormat dalam hal ini? Terima kasih."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1510,Datuk Ras Adiba binti Mohd Radzi,"Terima kasih Yang Berhormat Senator.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1510,1510,Datuk Ras Adiba binti Mohd Radzi,"Terima kasih Yang Berhormat Senator.
 Sebenarnya, terus terang saya katakan tidak salah untuk kita mengambil pekerja-pekerja
 asing bukan warganegara di pusat-pusat jagaan ini. Namun, kita mesti memastikan
 mereka melalui kursus-kursus. Kalau tidak, jangan diambil. Bertolak daripada itu juga,
@@ -2675,9 +2675,9 @@ Penubuhan ini sangat penting bagi melahirkan lebih ramai atlet para dan saya kir
 daripada kita di negara terutama di dalam Dewan ini yang begitu bangga dengan
 pencapaian sahabat-sahabat saya di sukan Paralimpik Tokyo 2020…"
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1510,ANNOTATION,[Tepuk]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1510,1510,ANNOTATION,[Tepuk]
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1510,Datuk Ras Adiba binti Mohd Radzi,"Selain itu, saya menyokong penuh usaha murni Yang Berhormat Menteri Sains,
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1510,1510,Datuk Ras Adiba binti Mohd Radzi,"Selain itu, saya menyokong penuh usaha murni Yang Berhormat Menteri Sains,
 Teknologi dan Inovasi yang serius melahirkan sekurang-kurangnya sebanyak lima
 *unicorns,* dengan izinnya, serta memberi penekanan dalam mewujudkan lebih banyak
 *start-ups* di negara ini.
@@ -2705,12 +2705,12 @@ ketinggalan Tuan Yang di-Pertua dalam Keluarga Malaysia.
 Sekian, terima kasih. Saya menyokong usul menjunjung Kasih Titah Yang di-
 Pertuan Agong. *Assalamualaikum*."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1510,Timbalan Tuan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1510,1510,Timbalan Tuan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator
 Datuk Ras Adiba binti Mohd Radzi.
 Seterusnya saya menjemput Yang Berhormat Senator Puan Fadhlina binti Dato’
 Sidek. Dipersilakan."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1519,Puan Fadhlina binti Dato’ Sidek,"*Bismillahi Rahmani Rahim. Assalamualaikum
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,3.19 ptg.,1519,Puan Fadhlina binti Dato’ Sidek,"*Bismillahi Rahmani Rahim. Assalamualaikum
 warahmatullahi wabarakatuh.* Tuan Yang di-Pertua.
 *Dari Melaka ke Kuala Linggi;
 Mencari jambangan untuk Puteri.
@@ -2727,7 +2727,7 @@ bawahi sebagai tema dan unjuran keutamaan dalam melaksanakan proses reformasi
 penegakan demokrasi dan hak asasi serta rekayasa agenda kemanusiaan menerusi
 pengukuhan dasar-dasar pemulihan negara menuju endemik."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1520,Puan Fadhlina binti Dato’ Sidek,"Tuan Yang di-Pertua, selepas dua tahun negara mengharungi *mehnah* dan
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1520,1520,Puan Fadhlina binti Dato’ Sidek,"Tuan Yang di-Pertua, selepas dua tahun negara mengharungi *mehnah* dan
 tribulasi akibat pandemik COVID-19 yang tidak terbatas kepada isu kesihatan, negara
 juga berhadapan dengan krisis kepimpinan serta kestabilan demokrasi elektoral dalam
 negara. Ekosistem ketidakstabilan ruang politik yang melatari penularan wabak COVID-
@@ -2789,10 +2789,10 @@ ekonomi *needs-oriented,* dengan izin, bukan ekonomi kapitalistik yang hanya men
 urusan eksklusif orang kaya demi kepentingan orang kaya. Peringatan Allah SWT yang
 sangat penting, *kayla yakuna dulatan baina al-agniyai minkum*…"
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1520,ANNOTATION,"[Membaca sebahagian
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1520,1520,ANNOTATION,"[Membaca sebahagian
 ayat Quran surah Al-Hasyr 59:7]"
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1520,Puan Fadhlina binti Dato’ Sidek,"*“....Agar harta itu tidak hanya berkisar hanya dalam
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1520,1520,Puan Fadhlina binti Dato’ Sidek,"*“....Agar harta itu tidak hanya berkisar hanya dalam
 lingkungan orang-orang kaya daripada kalangan kamu...”.*
 Tuan Yang di-Pertua, orang miskin tidak pernah memilih untuk menjadi miskin.
 Akan tetapi, dipaksa miskin oleh sistem yang memeras dan menindas. Muhammad Yunus,
@@ -2835,7 +2835,7 @@ diisi oleh golongan wanita dan profesional mewakili bidang kepakaran masing-masi
 yang paling penting Tuan Yang di-Pertua, berperlembagaan sebagaimana yang telah
 diperuntukkan di bawah seksyen 45(2), Perlembagaan Persekutuan."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1530,Puan Fadhlina binti Dato’ Sidek,"Sebagai Ahli Dewan Negara lantikan DUN Pulau Pinang, saya percaya Pulau
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1530,1530,Puan Fadhlina binti Dato’ Sidek,"Sebagai Ahli Dewan Negara lantikan DUN Pulau Pinang, saya percaya Pulau
 Pinang adalah antara negeri yang telah terkehadapan dalam mengarusperdanakan
 keterangkuman gender serta polisi-polisi dasar yang mengangkat wanita khususnya
 dengan kedudukan 30 peratus wanita penglibatan dalam sektor-sektor kepimpinan dan
@@ -2890,12 +2890,12 @@ Terima kasih atas perhatian semua dan dengan ini saya menyokong penuh
 menjunjung kasih Titah Diraja. *Wabillahi taufik walhidayah. Assalamualaikum
 warahmatullahi wabarakatuh.*"
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1530,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator Puan
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1530,1530,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator Puan
 Fadhlina binti Dato’ Sidek atas perbahasan tadi.
 Seterusnya, saya menjemput Yang Berhormat Senator Dr. Ahmad Azam bin
 Hamzah. Silakan."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1535,Dr. Ahmad Azam bin Hamzah,"*Bismillahi Rahmani Rahim. Assalamualaikum
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,3.35 ptg.,1535,Dr. Ahmad Azam bin Hamzah,"*Bismillahi Rahmani Rahim. Assalamualaikum
 warahmatullahi wabarakatuh* dan salam sejahtera.
 Saya ingin memulakan perbahasan saya dengan mengucapkan setinggi-tinggi
 tahniah dan syabas kepada pimpinan Pakatan Harapan yang berjiwa besar kerana
@@ -2942,7 +2942,7 @@ merupakan penyakit baharu yang kita belum faham sepenuhnya karakternya. Saya jug
 ingin mencadangkan agar kerajaan dapat membuat kajian kemungkinan untuk
 mengeluarkan vaksin sendiri memandangkan kewujudan varian-varian baharu."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1540,Dr. Ahmad Azam bin Hamzah,"Jika rawatan awal tidak diberikan, COVID-19 ini akan menyebabkan kos
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1540,1540,Dr. Ahmad Azam bin Hamzah,"Jika rawatan awal tidak diberikan, COVID-19 ini akan menyebabkan kos
 perubatan meningkat tinggi di beberapa tahun akan datang kerana ramai penduduk
 Malaysia akan mengalami masalah penyakit-penyakit kronik.
 Seperkara lagi, walaupun kita lihat kes-kes positif dan juga kes kematian telah
@@ -3043,7 +3043,7 @@ penutupan sekolah berkali-kali, murid-murid memilih untuk berputus harap untuk
 meneruskan pengajian mereka. Mereka hilang minat dan tumpuan terhadap pelajaran
 dan pembelajaran."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1550,Dr. Ahmad Azam bin Hamzah,"Salah satu daripada kesan-kesan yang tidak diingini sewaktu krisis ini ialah
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1550,1550,Dr. Ahmad Azam bin Hamzah,"Salah satu daripada kesan-kesan yang tidak diingini sewaktu krisis ini ialah
 kesihatan mental kanak-kanak yang akan terjejas teruk. Sebagaimana yang telah
 ditekankan oleh Rebecca Winthrop dalam artikelnya, terdapat keperluan memberi
 sokongan kepada kanak-kanak dalam memastikan kesejahteraan mereka dan
@@ -3108,12 +3108,12 @@ pendidikan negara demi pendidikan anak-anak bangsa.
 Pemimpin politik bersedia dan harus bersedia untuk mengetepikan agenda politik
 masing-masing. Tuan Yang di-Pertua, saya mohon menyokong. Terima kasih."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1550,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator Dr.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1550,1550,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator Dr.
 Ahmad Azam bin Hamzah atas perbahasan tadi.
 Seterusnya saya menjemput Yang Berhormat Senator Datuk Wira Koh Nai
 Kwong, dipersilakan."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1535,Datuk Wira Koh Nai Kwong,"Terima kasih Tuan Yang di-Pertua atas peluang
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,3.35 ptg.,1535,Datuk Wira Koh Nai Kwong,"Terima kasih Tuan Yang di-Pertua atas peluang
 yang diberikan kepada saya untuk mengambil bahagian dalam perbahasan Usul
 Menjunjung Kasih Titah Seri Paduka Baginda Yang di-Pertuan Agong.
 Terlebih dahulu saya ingin mengucapkan setinggi-tinggi tahniah kepada Yang
@@ -3157,7 +3157,7 @@ tiga bulan dan Perintah Kawalan Pergerakan (PKP) 3.0 yang dilaksanakan sebelum i
 banyak perniagaan berada dalam kesempitan akibat tidak dibenarkan beroperasi
 terutamanya industri perusahaan kecil dan sederhana (PKS)."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1600,Datuk Wira Koh Nai Kwong,"Menurut Menteri Pembangunan Usahawan dan Koperasi pada sesi Pertanyaan-
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1600,1600,Datuk Wira Koh Nai Kwong,"Menurut Menteri Pembangunan Usahawan dan Koperasi pada sesi Pertanyaan-
 pertanyaan Lisan di Dewan Rakyat, sebanyak 37,415 perniagaan telah dilaporkan gulung
 tikar yang meliputi 26,007 orang usahawan mikro dan 2,738 pula merupakan PKS. Kadar
 pengangguran juga berada dalam tahap yang menggusarkan. Menurut Jabatan
@@ -3238,11 +3238,11 @@ membantu kerajaan dengan bertukar pendapat, cadangan dan libat urus dalam kontek
 Keluarga Malaysia. Saya menyokong usul titah Seri Paduka Baginda Yang di-Pertuan
 Agong. Sekian, terima kasih."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1600,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Senator Datuk Wira Koh Nai
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1600,1600,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Senator Datuk Wira Koh Nai
 Kwong.
 Dijemput Yang Berhormat Senator Dato’ Kesavadas A. Achyuthan Nair."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1609,Dato’ Kesavadas A. Achyuthan Nair,"Terima kasih Tuan Yang di-Pertua atas
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,4.09 ptg.,1609,Dato’ Kesavadas A. Achyuthan Nair,"Terima kasih Tuan Yang di-Pertua atas
 kesempatan yang diberikan kepada saya untuk melibatkan diri dalam perbahasan
 menjunjung kasih Titah Seri Paduka Baginda Yang di-Pertuan Agong.
 Tuan Yang di-Pertua, sebagai mukadimah saya ingin mengambil kesempatan
@@ -3250,7 +3250,7 @@ untuk menzahirkan ucapan tahniah kepada atlet-atlet negara yang telah membanggak
 kita di pentas Olimpik dan Paralimpik di Tokyo di mana beberapa buah pingat dimenangi
 di kedua-dua pentas."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1610,Dato’ Kesavadas A. Achyuthan Nair,"Kejayaan Datuk Azizulhasni Awang dari Dungun, Terengganu, memenangi Pingat
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1610,1610,Dato’ Kesavadas A. Achyuthan Nair,"Kejayaan Datuk Azizulhasni Awang dari Dungun, Terengganu, memenangi Pingat
 Perak menerusi sukan berbasikal merupakan bukti ketekunan serta konsistensi beliau
 dalam mengekalkan momentum kemenangan yang pernah diraih sebelum ini. Biarpun
 hanya Pingat Perak, kejayaan tersebut wajar diraikan bersama sebab acara berbasikal ini
@@ -3344,7 +3344,7 @@ membantu pengusaha-pengusaha kecil pusat penginapan di Port Dickson yang telah
 menghentikan operasi perniagaan mereka disebabkan liabiliti kewangan yang tidak
 tertanggung?"
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1620,Dato’ Kesavadas A. Achyuthan Nair,"Kedua, apakah bentuk penelitian yang telah dilakukan terhadap aspek kelestarian
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1620,1620,Dato’ Kesavadas A. Achyuthan Nair,"Kedua, apakah bentuk penelitian yang telah dilakukan terhadap aspek kelestarian
 sektor pelancongan di Port Dickson yang boleh memberi jaminan kepada kemampanan
 operasi-operasi perniagaan lain yang turut menyumbang kepada rantaian berlaku atau
 *supply chain* aktiviti pelancongan?
@@ -3437,16 +3437,16 @@ Sekian sahaja ucapan saya bagi perbahasan Menjunjung Kasih Titah Duli Yang
 Maha Mulia Seri Paduka Baginda Yang di-Pertuan Agong. Tuan Yang di-Pertua, saya
 memohon untuk menyokong. Sekian, terima kasih."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1620,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Senator Dato’ Kesavadas.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1620,1620,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Senator Dato’ Kesavadas.
 Dijemput Yang Berhormat Senator Tuan Sr. Haji Mohamad Apandi bin Mohamad."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1629,Tuan Yang di-Pertua,"**Sr. Haji Mohamad Apandi bin Mohamad:** *Assalamualaikum warahmatullahi
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,4.29 ptg.,1629,Tuan Yang di-Pertua,"**Sr. Haji Mohamad Apandi bin Mohamad:** *Assalamualaikum warahmatullahi
 wabarakatuh* Tuan Yang di-Pertua, dan sahabat-sahabat Senator sekalian..."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1629,ANNOTATION,"[Membaca
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,4.29 ptg.,1629,ANNOTATION,"[Membaca
 sepotong doa]"
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1630,Tuan Yang di-Pertua,"Tuan Yang di-Pertua, sebelum saya meneruskan ucapan Menjunjung Kasih Titah
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1630,1630,Tuan Yang di-Pertua,"Tuan Yang di-Pertua, sebelum saya meneruskan ucapan Menjunjung Kasih Titah
 Diraja Ke Bawah Duli Yang di-Pertuan Agong 2021, izinkan saya untuk memberi ucapan
 tahniah kepada Ahli Parlimen Bera yang telah dilantik sebagai Yang Amat Berhormat
 Perdana Menteri Malaysia yang kesembilan.
@@ -3552,7 +3552,7 @@ semasa hendak meluluskan Akta Petroleum ini, betapa sukarnya PETRONAS hendak
 memujuk setiap Menteri Besar supaya boleh menandatangani perjanjian ini agar Akta
 Petroleum 1974 boleh diluluskan."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1640,Tuan Yang di-Pertua,"Tuan Yang di-Pertua, sebab itu Almarhum Tun Haji Abdul Razak bin Hussein,
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1640,1640,Tuan Yang di-Pertua,"Tuan Yang di-Pertua, sebab itu Almarhum Tun Haji Abdul Razak bin Hussein,
 Perdana Menteri Malaysia yang kedua kerana ketika beliau merupakan Perdana Menteri,
 telah melahirkan kesyukuran yang amat-amat kerana Menteri Besar Selangor, dengan
 izin, *the most powerful* Menteri Besar ketika itu, yang merupakan Ketua Pemuda UMNO
@@ -3581,21 +3581,21 @@ Oleh sebab itu, dengan izin, *let the precedent takes its own course.* Jangan
 dibiarkan isu-isu baharu menghantui kekalutan dan memperbaharui isu-isu yang boleh
 diselesaikan secara bijaksana dan secara berhemah. Tuan Yang di-Pertua, sebab itu..."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1640,Datuk Razali bin Idris,"Tuan Yang di-Pertua, saya hendak minta pencerahan
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1640,1640,Datuk Razali bin Idris,"Tuan Yang di-Pertua, saya hendak minta pencerahan
 sedikit, boleh?
 **Sr. Haji Mohamad Apandi bin Mohamad:** Siapakah ini?"
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1640,Datuk Razali bin Idris,"Saya, Razali.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1640,1640,Datuk Razali bin Idris,"Saya, Razali.
 **Sr. Haji Mohamad Apandi bin Mohamad:** Yang Berhormat Datuk Razali, saya
 tinggal sedikit sudah. Saya takut- kalau Tuan Yang di-Pertua beri banyak masa, tidak apa.
 Sekejap, saya..."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1640,Tuan Yang di-Pertua,"Boleh, boleh. Sila.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1640,1640,Tuan Yang di-Pertua,"Boleh, boleh. Sila.
 **Sr. Haji Mohamad Apandi bin Mohamad:** Boleh?"
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1640,ANNOTATION,[Ketawa]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1640,1640,ANNOTATION,[Ketawa]
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1640,Datuk Razali bin Idris,"Okey. Tuan Yang di-Pertua, saya mendengar dengan
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1640,1640,Datuk Razali bin Idris,"Okey. Tuan Yang di-Pertua, saya mendengar dengan
 teliti ungkapan daripada wakil Kelantan, Senator Kelantan. Sahabat kita. Cuma, saya
 hendak tahu sedikit, semasa Kerajaan Perikatan Nasional, Yang Berhormat Datuk Seri
 Takiyuddin bin Hassan sebagai Menteri Undang-undang. Adakah pada ketika itu beliau
@@ -3642,11 +3642,11 @@ seorang rakyat Kelantan, yang masyhur dengan sifat berdikarinya, sifat mandiriny
 saya fikir inilah waktunya, sangat sesuai kerana Perdana Menteri yang ada ini, kedua-dua
 ibu bapanya darah Kelantan. Minta maaf, bukan hendak bangkitkan hal negeri..."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1640,Beberapa Ahli,
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1640,1640,Beberapa Ahli,
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1640,ANNOTATION,[Ketawa]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1640,1640,ANNOTATION,[Ketawa]
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1640,Beberapa Ahli,"**Sr. Haji Mohamad Apandi bin Mohamad:** Kedua, *alhamdulillah* Yang Berhormat
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1640,1640,Beberapa Ahli,"**Sr. Haji Mohamad Apandi bin Mohamad:** Kedua, *alhamdulillah* Yang Berhormat
 Dato’ Sri Mustapa bin Mohamed sedang menguruskan, saya tahu- sedang menguruskan
 dan membuat perbincangan. Wakil Kelantan, Yang Berhormat Timbalan Menteri Besar
 sedang berbincang. Dua hujah yang kuat. *Alhamdulillah,* PAS pun sudah ada beberapa
@@ -3690,10 +3690,10 @@ Rakyat Kelantan merasa, PM disayang.
 Wallahualam.* Saya menyokong Titah Seri Paduka Baginda Yang di-Pertuan
 Agong. *Wallahualam. Assalamualaikum warahmatullahi wabarakatuh.*"
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1650,Tuan Yang di-Pertua,"*Waalaikumsalam*.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1650,1650,Tuan Yang di-Pertua,"*Waalaikumsalam*.
 Dijemput Yang Berhormat Senator Dr. Yaakob bin Sapari."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1650,Dr. Yaakob bin Sapari,"*Bismillahi Rahmani Rahim. Assalamualaikum
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,4.50 ptg.,1650,Dr. Yaakob bin Sapari,"*Bismillahi Rahmani Rahim. Assalamualaikum
 warahmatullahi wabarakatuh.* Terima kasih kepada Tuan Yang di-Pertua atas kesempatan
 yang diberi kepada saya untuk sama-sama membahaskan Usul Menjunjung Kasih Titah
 Ke Bawah Duli Yang Maha Mulia Seri Paduka Baginda Yang di-Pertuan Agong Al-Sultan
@@ -3768,44 +3768,44 @@ alasan untuk membawa pengundi keluar di kawasan-kawasan pedalaman. Sebab itulah
 saya mengesyorkan satu akta dibina semula, dipinda semula untuk membenarkan
 sumbangan pada parti-parti politik dan secara legal, bukan secara sorok-sorok."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1650,Tuan Yang di-Pertua,"Sebelum Yang Berhormat menyambung, saya ingin
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,4.50 ptg.,1650,Tuan Yang di-Pertua,"Sebelum Yang Berhormat menyambung, saya ingin
 mengingatkan jika ada di kalangan Ahli-ahli Yang Berhormat yang dijadualkan untuk
 berucap esok, mahu berucap selepas Yang Berhormat Senator Dr. Yaakob, dibenarkan.
 *Insya-Allah*. Jadi, bersedia selepas beliau. Silakan."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1650,Dr. Yaakob bin Sapari,"Tuan Yang di-Pertua, saya dapati Tuan Yang di-Pertua
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,4.50 ptg.,1650,Dr. Yaakob bin Sapari,"Tuan Yang di-Pertua, saya dapati Tuan Yang di-Pertua
 orang lama dalam politik. Bayangkan ketika saya di bangku sekolah, Tuan Yang di-Pertua
 sudah berada di dalam Kabinet. Hendak bayangkan berapa banyak pengalaman Tuan
 Yang di-Pertua dalam kerajaan."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1650,Tuan Yang di-Pertua,Itu sebab sampai ke mari ini.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,4.50 ptg.,1650,Tuan Yang di-Pertua,Itu sebab sampai ke mari ini.
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1650,Dr. Yaakob bin Sapari,"Sudah pasti kali ini Tuan Yang di-Pertua, kesempatan
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,4.50 ptg.,1650,Dr. Yaakob bin Sapari,"Sudah pasti kali ini Tuan Yang di-Pertua, kesempatan
 yang ada pada Tuan Yang di-Pertua. Tuan Yang di-Pertua cuba hendak adakan sebuah
 legasi yang terbaik untuk Dewan yang mulia ini agar transformasi Dewan Negara ini Tuan
 Yang di-Pertua, dapat kita laksanakan."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1650,Tuan Yang di-Pertua,*Insya-Allah*.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,4.50 ptg.,1650,Tuan Yang di-Pertua,*Insya-Allah*.
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1650,Dr. Yaakob bin Sapari,"Tuan Yang di-Pertua seorang yang mempunyai prinsip
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,4.50 ptg.,1650,Dr. Yaakob bin Sapari,"Tuan Yang di-Pertua seorang yang mempunyai prinsip
 yang kuat. Sanggup tinggalkan parti tradisi. Kalau tidak silap ini parti ketiga Tuan Yang di-
 Pertua."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1650,Tuan Yang di-Pertua,
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,4.50 ptg.,1650,Tuan Yang di-Pertua,
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1650,ANNOTATION,[Ketawa]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,4.50 ptg.,1650,ANNOTATION,[Ketawa]
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1650,Tuan Yang di-Pertua,Kuat ingatan sejarah ya. Bagus.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,4.50 ptg.,1650,Tuan Yang di-Pertua,Kuat ingatan sejarah ya. Bagus.
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1650,Dr. Yaakob bin Sapari,"Saya pernah dengar ceramah Tuan Yang di-Pertua. Di
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,4.50 ptg.,1650,Dr. Yaakob bin Sapari,"Saya pernah dengar ceramah Tuan Yang di-Pertua. Di
 Markas PAS di Taman Melewar ketika itu. Tuan Yang di-Pertua, jadi kita hendak
 tinggalkan sebuah legasi yang terbaik untuk Dewan Negara ini. Sebab itulah kita sekali
 lagi minta. Saya pernah cadangkan di dalam Dewan ini supaya Akta Parlimen 1963
 dikembalikan."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1650,Tuan Yang di-Pertua,*Insya-Allah.*
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,4.50 ptg.,1650,Tuan Yang di-Pertua,*Insya-Allah.*
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1650,Dr. Yaakob bin Sapari,"Saya pernah bawa di dalam Dewan ini dokumen oleh
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,4.50 ptg.,1650,Dr. Yaakob bin Sapari,"Saya pernah bawa di dalam Dewan ini dokumen oleh
 Speaker Dewan Rakyat pada ketika itu sudah pun siap untuk diperhalusi sahaja. Sebab
 itu dengan kembalinya Akta Parlimen 1963 ini dapat kita mengangkat martabat Dewan
 yang mulia itu. Bukan sekadar Akta Parlimen 1963. Kita hendak juga kembalikan Akta
@@ -3814,7 +3814,7 @@ kepada Duli Yang Maha Yang di-Pertuan Agong agar kita punya satu autoriti dan in
 prinsip asas dalam demokrasi iaitu pengasingan kuasa di mana eksekutif, legislatif dan
 perundangan itu benar-benar berasingan."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1700,Dr. Yaakob bin Sapari,"Tuan Yang di-Pertua, saya rasa inilah kesempatan terbaik Tuan Yang di-Pertua.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1700,1700,Dr. Yaakob bin Sapari,"Tuan Yang di-Pertua, saya rasa inilah kesempatan terbaik Tuan Yang di-Pertua.
 Saya mengharap betul Tuan Yang di-Pertua, ketika Tuan Yang di-Pertua menjadi Yang
 di-Pertua ini, dapat kita laksanakan yang ini. Inilah legasi terbaik Tuan Yang di-Pertua dan
 kami di sini untuk mengangkat Dewan yang mulia ini agar Dewan ini punya satu autoriti
@@ -3835,12 +3835,12 @@ ada enam juta- penduduk, hanya dua Senator yang mewakili. Jadi kalau boleh, juml
 Senator ini ditambah dari negeri dari dua kepada tiga ...
 **Sr. Haji Mohamad Apandi bin Mohamad:** Soalan tambahan."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1700,Tuan Yang di-Pertua,"Tiada soalan, pencelahan boleh.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1700,1700,Tuan Yang di-Pertua,"Tiada soalan, pencelahan boleh.
 **Sr. Haji Mohamad Apandi bin Mohamad:** Celahan"
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1700,ANNOTATION,[Ketawa]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1700,1700,ANNOTATION,[Ketawa]
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1700,Tuan Yang di-Pertua,"Ya, ya.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1700,1700,Tuan Yang di-Pertua,"Ya, ya.
 **Sr. Haji Mohamad Apandi bin Mohamad:** Satu hujahan yang baik. Cuma
 tidakkah Amerika Syarikat yang juga mempunyai 50 buah negeri walaupun California,
 New York, dan juga Texas mempunyai penduduk yang terlalu besar berbanding dengan
@@ -3848,25 +3848,25 @@ Vermont, negeri-negeri kecil Alaska, tetapi masing-masing juga mempunyai dua *Se
 yang dipilih oleh rakyat? Tidak kata menggambarkan peratus kepada penduduk.
 *Wallahualam*."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1700,Dr. Yaakob bin Sapari,"Ini pandangan Yang Berhormat. Cuma saya
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1700,1700,Dr. Yaakob bin Sapari,"Ini pandangan Yang Berhormat. Cuma saya
 mencadangkan, jumlah ditambahkan. Pada hari ini, sebahagian daripada Ahli Senator
 menjadi ahli eksekutif. Oleh sebab itu jumlah yang ada menjadi kurang. Sebab yang depan
 sini, sudah jadi eksekutif.
 Kemudian Tuan Yang di-Pertua, saya kurang setuju sebenarnya ..."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1700,Tuan Muhamad Zahid bin Md. Arip,"Tuan Yang di-Pertua, mohon mencelah
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1700,1700,Tuan Muhamad Zahid bin Md. Arip,"Tuan Yang di-Pertua, mohon mencelah
 Tuan Yang di-Pertua."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1700,Tuan Yang di-Pertua,"Baru dua ayat hendak mencelah kah? Boleh, boleh."
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1700,1700,Tuan Yang di-Pertua,"Baru dua ayat hendak mencelah kah? Boleh, boleh."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1700,Tuan Muhamad Zahid bin Md. Arip,"Sedikit, sedikit. Masih lebih kurang tajuk
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1700,1700,Tuan Muhamad Zahid bin Md. Arip,"Sedikit, sedikit. Masih lebih kurang tajuk
 yang sama.
 Saya hendak tanya kepada sahabat saya Yang Berhormat Senator Dr. Yaakob
 bin Sapari, setuju atau tidak sekiranya jumlah keanggotaan, sekarang ini 70 orang kita
 tambah, kita mohon pertimbangan pindaan dibuat supaya jumlah ini ditambah daripada
 70 orang kepada 100 orang. Setuju atau tidak?"
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1700,Dr. Yaakob bin Sapari,"Ini yang saya sebut Yang Berhormat tadi, wakil dari
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1700,1700,Dr. Yaakob bin Sapari,"Ini yang saya sebut Yang Berhormat tadi, wakil dari
 negeri ditambah kepada tiga, tambahan 14. Jadi, maknanya ada penambahan. Cuma
 saya cadangkan wakil negeri, melalui pemilihan dalam pilihan raya agar wibawanya kuat.
 Tuan Yang di-Pertua, saya kurang setuju seandainya *Senate* ini, tempat
@@ -3882,9 +3882,9 @@ Senator. Apa yang cantiknya Senator itu, asalnya dari Malaysia walaupun dia ting
 Kanada. Dia kata, *“I served for seven years”*. Saya cadangkan agar tempoh Senator ini
 dilanjutkan kepada enam tahun, bukan tiga tahun..."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1700,ANNOTATION,[Tepuk]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1700,1700,ANNOTATION,[Tepuk]
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1700,Dr. Yaakob bin Sapari,"Sudahlah tiga tahun, dilantik
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1700,1700,Dr. Yaakob bin Sapari,"Sudahlah tiga tahun, dilantik
 oleh Yang Amat Berhormat Perdana Menteri, Presiden parti. Macam mana kita hendak
 tegur parti kita? Ini disebabkan dilantik oleh parti, walaupun pada asasnya kita inilah
 profesional untuk beri pandangan-pandangan dalam pentadbiran kerajaan.
@@ -3899,23 +3899,23 @@ pekerjaan kepada sebahagian daripada mereka. Pastinya pandemik COVID-19 ini tela
 mengubah cara hidup kita. Banyak istilah baharu diperkenalkan, SOP, PKP, PKPD, PKPP,
 Darurat, Fasa 1, Fasa 2, Fasa 3, Fasa 4..."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1700,Tuan Yang di-Pertua,"Ada satu lagi, POS."
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1700,1700,Tuan Yang di-Pertua,"Ada satu lagi, POS."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1700,Dr. Yaakob bin Sapari,
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1700,1700,Dr. Yaakob bin Sapari,
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1700,ANNOTATION,[Ketawa]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1700,1700,ANNOTATION,[Ketawa]
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1700,Dr. Yaakob bin Sapari,"Jadi ini semua telah mengubah cara hidup kita.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1700,1700,Dr. Yaakob bin Sapari,"Jadi ini semua telah mengubah cara hidup kita.
 Maka timbullah istilah Bekerja Dari Rumah- *Work From Home,* PdPR*, e-commerce,
 digitalization, gig economy*. Jadi, inilah fenomena ini yang sempat kita nikmati, kita melihat
 sendiri pada hari ini..."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1700,Datuk Razali bin Idris,"Tuan Yang di-Pertua, saya hendak minta pencelahan
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1700,1700,Datuk Razali bin Idris,"Tuan Yang di-Pertua, saya hendak minta pencelahan
 sedikit daripada Yang Berhormat, boleh?"
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1700,Tuan Yang di-Pertua,"Sila, sila."
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1700,1700,Tuan Yang di-Pertua,"Sila, sila."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1700,Datuk Razali bin Idris,"Terima kasih Tuan Yang di-Pertua. Saya berminat apabila
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1700,1700,Datuk Razali bin Idris,"Terima kasih Tuan Yang di-Pertua. Saya berminat apabila
 Yang Berhormat menyebut satu peruntukan tambahan untuk Ahli Dewan Negara pada
 kala COVID-19. Pada pemerintahan yang lalu, Kerajaan Perikatan Nasional, Yang Amat
 Berhormat Perdana Menteri pada ketika itu meluluskan RM300 ribu untuk agihan bakul
@@ -3926,7 +3926,7 @@ Jadi sekarang setuju ataupun tidak Yang Berhormat, kalau sekiranya kerajaan
 baharu memperuntukkan lagi RM300 ribu dalam masa 2021 ini, untuk kita selesai semua
 masalah yang disebutkan oleh Yang Berhormat tadi? Terima kasih."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1700,Dr. Yaakob bin Sapari,"Terima kasih. Pertama, saya mengucapkan terima kasih
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1700,1700,Dr. Yaakob bin Sapari,"Terima kasih. Pertama, saya mengucapkan terima kasih
 banyak kepada Yang Amat Berhormat Perdana Menteri lepas kerana memberi
 peruntukan RM300 ribu kepada semua kita di sini. Cadangan saya bukan dana jangka
 pendek, dana jangka panjang sebab anak-anak yatim ini kehilangan mak dan ayah
@@ -3944,20 +3944,20 @@ apabila turun ke bawah, dia anggap kita Yang Berhormat. Kalau Dewan Rakyat menda
 Md. Arip akan sokong saya. Saya cadangkan peruntukan RM1.5 juta sepanjang tempoh
 kita di sini, diberi, merentasi semua parti politik..."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1700,ANNOTATION,[Tepuk]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1700,1700,ANNOTATION,[Tepuk]
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1700,Tuan Muhamad Zahid bin Md. Arip,"Saya memperakukan, Tuan Yang di-Pertua.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1700,1700,Tuan Muhamad Zahid bin Md. Arip,"Saya memperakukan, Tuan Yang di-Pertua.
 Memang saya sokong itu."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1700,Tuan Yang di-Pertua,Orang atas sini pun sokong sangat juga itu.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1700,1700,Tuan Yang di-Pertua,Orang atas sini pun sokong sangat juga itu.
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1700,Dr. Yaakob bin Sapari,"Tuan Yang di-Pertua, *point* akhir saya untuk pelaksanaan
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1700,1700,Dr. Yaakob bin Sapari,"Tuan Yang di-Pertua, *point* akhir saya untuk pelaksanaan
 *gig economy* Tuan Yang di-Pertua, syarat utama kena ada *line internet* yang lengkap,
 yang sempurna. Macam mana kita hendak laksanakan PdPR seandainya tidak ada *line
 internet* yang sempurna. Saya tidak sebut soal hulu pedalaman Sabah atau Sarawak. Ini
 saya di negeri Selangor. Saya sewa rumah, sebelah jalan besar Sungai Besar."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1710,Dr. Yaakob bin Sapari,"Dalam rumah kalau bawa *handphone,* tidak ada *line* 019 dan saya punya pejabat
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1710,1710,Dr. Yaakob bin Sapari,"Dalam rumah kalau bawa *handphone,* tidak ada *line* 019 dan saya punya pejabat
 tepi jalan besar Sungai Besar. Saya minta pegawai saya pasang *Wi-Fi*, jawapan daripada
 Telekom, minta maaf tidak ada fiber optik. Ini negeri Selangor. Macam mana hendak
 cakap e-ekonomi, gig ekonomi.
@@ -3965,33 +3965,33 @@ Apa yang saya hairannya Tuan Yang di-Pertua, kawasan ini kawasan yang kubu
 kuat parti pemerintah tetapi kenapa kawasan yang sokong begitu kuat kemudahan
 *internet* tidak ada. Jadi jalur lebar tidak ada. Saya mencadangkanlah supaya..."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1710,Datuk Razali bin Idris,Saya setuju sangat ini- sikit lagi Tuan Yang di-Pertua?
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1710,1710,Datuk Razali bin Idris,Saya setuju sangat ini- sikit lagi Tuan Yang di-Pertua?
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1710,Tuan Yang di-Pertua,Kena minta permohonan dahulu.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1710,1710,Tuan Yang di-Pertua,Kena minta permohonan dahulu.
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1710,Datuk Razali bin Idris,Permohonan daripada Tuan Yang di-Pertua?
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1710,1710,Datuk Razali bin Idris,Permohonan daripada Tuan Yang di-Pertua?
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1710,Tuan Yang di-Pertua,Ya.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1710,1710,Tuan Yang di-Pertua,Ya.
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1710,Datuk Razali bin Idris,"Untuk hendak minta sedikit pencerahan daripada bekas
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1710,1710,Datuk Razali bin Idris,"Untuk hendak minta sedikit pencerahan daripada bekas
 Exco Selangor ini."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1710,Tuan Yang di-Pertua,Ya dipersilakan.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1710,1710,Tuan Yang di-Pertua,Ya dipersilakan.
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1710,Datuk Razali bin Idris,"Okey Yang Berhormat. Yang Berhormat Dr pernah
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1710,1710,Datuk Razali bin Idris,"Okey Yang Berhormat. Yang Berhormat Dr pernah
 menjadi Exco Kerajaan Negeri Selangor dan Selangor sampai sekarang masih lagi
 diperintah oleh Pakatan Harapan. Apa masalah yang disebut oleh Yang Berhormat tadi
 tidak dapat diselesaikan oleh kerajaan negeri yang memerintah negeri yang cukup kaya."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1710,Dr. Yaakob bin Sapari,"Ya, ya."
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1710,1710,Dr. Yaakob bin Sapari,"Ya, ya."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1710,Datuk Razali bin Idris,"Jadi maksudnya di sini, Kerajaan Pusat ada rangkaian
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1710,1710,Datuk Razali bin Idris,"Jadi maksudnya di sini, Kerajaan Pusat ada rangkaian
 JENDELA dan sebagainya. Akan tetapi, apakah Kerajaan Negeri Selangor tidak langsung
 untuk membelanjakan wang daripada pendapatan negeri Selangor untuk memastikan
 semua rakyat Selangor yang dikategorikan juga wilayah yang terkaya berada di tempat
 yang mempunyai *internet* yang terbaik di negara kita? Itu soalan saya."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1710,Dr. Yaakob bin Sapari,"Yang Berhormat kena faham, lesen *telecommunication*
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1710,1710,Dr. Yaakob bin Sapari,"Yang Berhormat kena faham, lesen *telecommunication*
 ini berada di tangan Kerajaan Pusat. Kalau Selangor diberi lesen macam Timbalan
 Menteri, *anytime can come back* tetapi lesen ini lesen pusat. Jadi *fibre optic* ini patut
 disediakan oleh Telekom Malaysia.
@@ -4001,21 +4001,21 @@ saya tidak dapat *line.* Bermacam-macam lagi saya hendak buat daripada segi ekon
 PdPR. Itu saya minta TM jelaskan bila jalur lebar untuk kawasan ini dapat disiapkan.
 Tuan Yang di-Pertua, boleh saya tambah masa kah?"
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1710,Tuan Yang di-Pertua,"Masa sudah habis, lagi seminit boleh."
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1710,1710,Tuan Yang di-Pertua,"Masa sudah habis, lagi seminit boleh."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1710,Dr. Yaakob bin Sapari,"Tuan Yang di-Pertua, terima kasih banyaklah beri
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1710,1710,Dr. Yaakob bin Sapari,"Tuan Yang di-Pertua, terima kasih banyaklah beri
 kesempatan kepada saya. Cuma saya mengharap sangat Tuan Yang di-Pertua,
 kesempatan Tuan Yang di-Pertua di Dewan yang mulia yang tidak lama ini yang kita
 usahakan Tuan Yang di-Pertua..."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1710,Tuan Yang di-Pertua,*Insya-Allah.*
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1710,1710,Tuan Yang di-Pertua,*Insya-Allah.*
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1710,Dr. Yaakob bin Sapari,"Agar Akta Parlimen 1993, Akta 1952 dapat kita pulihkan,
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1710,1710,Dr. Yaakob bin Sapari,"Agar Akta Parlimen 1993, Akta 1952 dapat kita pulihkan,
 kembalikan kuasa Dewan Negara ini agar berfungsi dengan baik pada masa-masa akan
 datang. Bukan untuk kita, untuk generasi akan datang.
 Tuan Yang di-Pertua, saya menyokong Usul ini."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1710,Tuan Yang di-Pertua,"Terima kasih banyak. Setelah melihat beberapa butiran
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1710,1710,Tuan Yang di-Pertua,"Terima kasih banyak. Setelah melihat beberapa butiran
 tadi, terbit idea daripada saya, iaitu butiran ini Sekretariat kita harus mencatat. Kemudian
 diambil satu persatu perkara yang penting dalam ucapan Yang Berhormat, dan kita bawa
 terus kepada Jawatankuasa kita, dan bawa kepada Menteri berkenaan. Apabila ia melalui
@@ -4030,21 +4030,21 @@ Kedua, tentulah berhubung dengan rancangan kita tentang transformasi, kita
 mesti komited. Saya mohon setiap Ahli Yang Berhormat di sini menyuarakan hal ini demi
 kepentingan dan perjuangan bersama. *Insya-Allah...*"
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1710,ANNOTATION,[Tepuk]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1710,1710,ANNOTATION,[Tepuk]
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1710,Tuan Yang di-Pertua,"Jam sekarang 5.14 petang, saya menjemput Yang
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1710,1710,Tuan Yang di-Pertua,"Jam sekarang 5.14 petang, saya menjemput Yang
 Berhormat Tuan Aknan a/l Ehtook."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1714,Tuan Aknan a/l Ehtook,"Terima kasih Tuan Yang di-Pertua. Ini peluang petang-
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,5.14 ptg.,1714,Tuan Aknan a/l Ehtook,"Terima kasih Tuan Yang di-Pertua. Ini peluang petang-
 petang ini rasa macam sejuk sikitlah tetapi kita cuba habiskan peluang yang diberikan ini
 sebaik mungkin."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1714,Tuan Yang di-Pertua,"Tetapi tidak apa Yang Berhormat, gempal sikit boleh tahan
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,5.14 ptg.,1714,Tuan Yang di-Pertua,"Tetapi tidak apa Yang Berhormat, gempal sikit boleh tahan
 itu."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1714,ANNOTATION,[Ketawa]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,5.14 ptg.,1714,ANNOTATION,[Ketawa]
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1714,Tuan Aknan a/l Ehtook,"Dalam membahaskan Usul Menjunjung Kasih Titah Ke
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,5.14 ptg.,1714,Tuan Aknan a/l Ehtook,"Dalam membahaskan Usul Menjunjung Kasih Titah Ke
 Bawah Duli Yang Maha Mulia Seri Paduka Baginda Yang di-Pertuan Agong, saya ingin
 memetik satu yang disebutkan dalam teks ucapan ini tentang kematangan. Saya tidak
 menggunakan kematangan politik tetapi saya menggunakan kematangan mentadbirkan
@@ -4097,7 +4097,7 @@ Menteri juga semasa angkat sumpah, ada satu ayat yang saya rasa perlu dihayati i
 depan ada sikit tetapi kata kuncinya ialah*, “...Bersumpah akan menunaikan
 tanggungjawab dengan segala daya upaya saya.”*"
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1720,Tuan Aknan a/l Ehtook,"Jadi saya harap Menteri dapatlah- semua Menteri ini, kali kedua saya sebut
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1720,1720,Tuan Aknan a/l Ehtook,"Jadi saya harap Menteri dapatlah- semua Menteri ini, kali kedua saya sebut
 tentang ini, menjadi Menteri kepada semua. Bukan setakat pada partinya sahaja, bukan
 setakat kepada bangsa dan agamanya sahaja, bukan hanya setakat kawasan atau
 negerinya sahaja, kepada semua rakyat Malaysia. Itu barulah menjadi Menteri di
@@ -4118,9 +4118,9 @@ mereka yang bukan beragama Islam supaya mereka boleh mengendalikan isu ini tanpa
 ada *conflict of interest,* dengan izin, dalam mengendalikan isu-isu ini. Ini kerana kita dapati
 bahawa..."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1720,Tuan Yang di-Pertua,Pertembungan kepentingan.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1720,1720,Tuan Yang di-Pertua,Pertembungan kepentingan.
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1720,Tuan Aknan a/l Ehtook,"Pertembungan kepentingan, terima kasih Tuan Yang di-
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1720,1720,Tuan Aknan a/l Ehtook,"Pertembungan kepentingan, terima kasih Tuan Yang di-
 Pertua. Jadi kita dapati bahawa dalam negara kita ada lebih kurang 40 peratus yang bukan
 Islam.
 Jadi, adalah sudah wajar saya rasa, sudah sampai masanya untuk kita mencari
@@ -4171,16 +4171,16 @@ bukan kepada setiap tempat tersebut. Ini kerana apabila kita ada badan induk, me
 tahu ke mana hendak di halakan. Tidak perlu setiap waktu atau setiap rumah ibadat itu
 memohon dengan sendiri..."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1720,Tuan Yang di-Pertua,"Surat itu dijawab, atau tidak?"
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1720,1720,Tuan Yang di-Pertua,"Surat itu dijawab, atau tidak?"
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1720,Tuan Aknan a/l Ehtook,"Ini yang saya hendak minta dalam ini supaya mohon
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1720,1720,Tuan Aknan a/l Ehtook,"Ini yang saya hendak minta dalam ini supaya mohon
 kementerian menjawab surat tersebut kerana sudah empat hingga lima bulan tanpa
 respons daripada kementerian.
 Satu lagi ialah- masa ada?..."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1720,ANNOTATION,[Bertanya kepada Tuan Yang di-Pertua]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1720,1720,ANNOTATION,[Bertanya kepada Tuan Yang di-Pertua]
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1720,Tuan Aknan a/l Ehtook,"Okey sikit
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1720,1720,Tuan Aknan a/l Ehtook,"Okey sikit
 lagi. Tentang MoU antara kerajaan dengan Pembangkang. Jadi, ini satu perkara yang
 baharu. Tahniah kepada semua kerana berjaya bersemuka untuk berjanji sesuatu demi
 negara. Saya harap ini adalah *precedent* yang baik walaupun dalam tempoh yang pendek
@@ -4207,9 +4207,9 @@ mungkin sekali dalam seumur hidup.
 Saya rasa itu sahaja yang saya berkesempatan untuk berucap pada hari ini. Saya
 pun tidak mahu melangkau 5.30, terlalu lama..."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1720,Tuan Yang di-Pertua,"Boleh, boleh ada ayat."
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1720,1720,Tuan Yang di-Pertua,"Boleh, boleh ada ayat."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1720,Tuan Aknan a/l Ehtook,"Ada lagi, okey kalau ada lagi saya mohon satu poin lagi
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1720,1720,Tuan Aknan a/l Ehtook,"Ada lagi, okey kalau ada lagi saya mohon satu poin lagi
 iaitu tentang kemerdekaan yang kita telah capai setakat ini, sudah 64 tahun Merdeka, Hari
 Kebangsaan dan juga 58 tahun Hari Malaysia. Akan tetapi, kita dapati bahawa setiap kali
 Hari Kebangsaan kita- perkataan yang lekat di mulut semua orang ialah perpaduan,
@@ -4218,7 +4218,7 @@ Akan tetapi, malangnya benda itu cuma berlaku setahun sekali, macam musim
 durian. Jadi, saya harap perpaduan ini bukan setakat iklan, bukan setakat kibar bendera,
 ada anak-anak Cina, India, dan Melayu kibar bendera. Jangan setakat itu, itu tidak cukup."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1730,Tuan Aknan a/l Ehtook,"Kita perlu tanam semangat kemerdekaan, semangat perpaduan ini dalam jiwa
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1730,1730,Tuan Aknan a/l Ehtook,"Kita perlu tanam semangat kemerdekaan, semangat perpaduan ini dalam jiwa
 setiap anak-anak kita. Ini kerana kalau kita ini dah gagal, jangan kita gagalkan anak-anak
 kita. Harap generasi akan datang lebih baik daripada kita. Akan tetapi kalau kita masih
 lagi menggunakan kaedah yang sama, dibiarkan begitu, diajar begitu, saya tidak jamin
@@ -4260,24 +4260,24 @@ tinggi daripada pelajar Cina. Jadi, timbul masalah antara mereka cakap Melayu, c
 Siam. Balik rumah cakap Melayu, cakap Siam. Jadi penguasaan bahasa Cina tidak ada.
 Penghujungnya..."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1730,Dato’ Haji Jefridin bin Haji Atan,Yang Berhormat.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1730,1730,Dato’ Haji Jefridin bin Haji Atan,Yang Berhormat.
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1730,Tuan Aknan a/l Ehtook,"Ya, sila."
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1730,1730,Tuan Aknan a/l Ehtook,"Ya, sila."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1730,Dato’ Haji Jefridin bin Haji Atan,Mohon penjelasan sedikit.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1730,1730,Dato’ Haji Jefridin bin Haji Atan,Mohon penjelasan sedikit.
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1730,Tuan Yang di-Pertua,Kena halakan kepada Tuan Yang di-Pertua.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1730,1730,Tuan Yang di-Pertua,Kena halakan kepada Tuan Yang di-Pertua.
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1730,Dato’ Haji Jefridin bin Haji Atan,"Ya, Tuan Yang di-Pertua. Tadi Yang Berhormat
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1730,1730,Dato’ Haji Jefridin bin Haji Atan,"Ya, Tuan Yang di-Pertua. Tadi Yang Berhormat
 ada bercerita tentang perpaduan, Keluarga Malaysia dan sebagainya. Dalam satu-satu
 *part* lain, kita bercerita juga tentang penguasaan bahasa Cina, Tamil dan juga bahasa-
 bahasa lain. Adakah perkara ini tidak membantu kepada memperkasakan perpaduan
 kalau kita terus memecahkan perkara-perkara yang demikian? Minta pandangan Yang
 Berhormat. Terima kasih Tuan Yang di-Pertua."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1730,Tuan Yang di-Pertua,Sila.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1730,1730,Tuan Yang di-Pertua,Sila.
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1730,Tuan Aknan a/l Ehtook,"Terima kasih Yang Berhormat. Berdasarkan
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1730,1730,Tuan Aknan a/l Ehtook,"Terima kasih Yang Berhormat. Berdasarkan
 pengamatan kita semua, apabila kita memahami bahasa satu sama lain kita punya tahap
 prejudis akan jatuh, akan kurang. Contoh, kalau katakan Yang Berhormat boleh, kalau
 saya dengan Yang Berhormat cakap Siam katakan. Yang Berhormat tidak faham, Yang
@@ -4291,17 +4291,17 @@ memahami budaya mereka. Mudah, okey saya rasa- baik-baik.
 Maaf, tadi Tuan Yang di-Pertua sebut “okey” itu, saya kena mohon maaf lah. Baik,
 okey..."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1730,Tuan Yang di-Pertua,Sebut juga balik.
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1730,1730,Tuan Yang di-Pertua,Sebut juga balik.
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1730,Tuan Aknan a/l Ehtook,"Dah terlalu, terlalu, terlalu biasa. Mohon maaf."
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1730,1730,Tuan Aknan a/l Ehtook,"Dah terlalu, terlalu, terlalu biasa. Mohon maaf."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1730,Tuan Yang di-Pertua,"Alah bisa, tegal biasa."
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1730,1730,Tuan Yang di-Pertua,"Alah bisa, tegal biasa."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1730,Tuan Aknan a/l Ehtook,
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1730,1730,Tuan Aknan a/l Ehtook,
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1730,ANNOTATION,[Ketawa]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1730,1730,ANNOTATION,[Ketawa]
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1730,Tuan Aknan a/l Ehtook,"Penghujungnya, di penghujung kata-kata saya
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1730,1730,Tuan Aknan a/l Ehtook,"Penghujungnya, di penghujung kata-kata saya
 tentang isu ini. Inilah satu-satunya cara, saya rasa walaupun ada cara lain tetapi saya
 nampak itu satunya cara yang kita boleh membina negara bangsa kita yang cemerlang.
 Kita tengok contoh di negara Thailand atau Indonesia, penguasaan Bahasa Kebangsaan
@@ -4313,9 +4313,9 @@ menghasilkan rakyat yang cemerlang. Saya rasa itu sahaja.
 Saya mohon menyokong Usul Menjunjung Kasih Titah Seri Paduka Baginda Yang
 di-Pertuan Agong. Terima kasih."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1730,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Senator Tuan Aknan a/l
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,■1730,1730,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Senator Tuan Aknan a/l
 Ehtook.
 Sampailah kita pada saat akhir. Ahli-ahli Yang Berhormat, Mesyuarat Dewan hari
 ini ditangguhkan sehingga jam 10 pagi, Selasa, 5 Oktober 2021."
 USUL,"MENJUNJUNG KASIH TITAH
-SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,1736,ANNOTATION,[Dewan ditangguhkan pada pukul 5.36 petang]
+SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG",,5.36 petang,1736,ANNOTATION,[Dewan ditangguhkan pada pukul 5.36 petang]

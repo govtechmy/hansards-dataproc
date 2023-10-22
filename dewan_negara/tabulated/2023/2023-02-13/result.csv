@@ -1,5 +1,5 @@
-level_1,level_2,level_3,timestamp,author,speech
-ISTIADAT PEMBUKAAN PENGGAL KEDUA MAJLIS PARLIMEN KELIMA BELAS,DI DEWAN RAKYAT,,1029,Tuan Yang di-Pertua,"*Bismillahi Rahmani Rahim.
+level_1,level_2,level_3,raw_timestamp,timestamp,author,speech
+ISTIADAT PEMBUKAAN PENGGAL KEDUA MAJLIS PARLIMEN KELIMA BELAS,DI DEWAN RAKYAT,,10.29 pagi,1029,Tuan Yang di-Pertua,"*Bismillahi Rahmani Rahim.
 Assalamualaikum warahmatullahi wabarakatuh*, dan selamat pagi.
 Ahli-ahli Yang Berhormat, Persidangan Parlimen yang Kelima Belas,
 Penggal Kedua yang diadakan bersama di antara Dewan Negara dan Dewan
@@ -13,15 +13,15 @@ Sekarang saya tempohkan persidangan buat sementara waktu untuk
 menyambut keberangkatan tiba Seri Paduka Baginda Yang di-Pertuan
 Agong.
 Persidangan ditempohkan."
-ISTIADAT PEMBUKAAN PENGGAL KEDUA MAJLIS PARLIMEN KELIMA BELAS,DI DEWAN RAKYAT,,1032,ANNOTATION,[Mesyuarat ditempohkan pada pukul 10.32 pagi]
-ISTIADAT PEMBUKAAN PENGGAL KEDUA MAJLIS PARLIMEN KELIMA BELAS,DI DEWAN RAKYAT,,1036,ANNOTATION,[Mesyuarat disambung semula pada pukul 10.36 pagi]
-ISTIADAT PEMBUKAAN PENGGAL KEDUA MAJLIS PARLIMEN KELIMA BELAS,DI DEWAN RAKYAT,,1036,ANNOTATION,"[Keberangkatan tiba Seri Paduka Baginda Yang di-Pertuan Agong dan
+ISTIADAT PEMBUKAAN PENGGAL KEDUA MAJLIS PARLIMEN KELIMA BELAS,DI DEWAN RAKYAT,,10.32 pagi,1032,ANNOTATION,[Mesyuarat ditempohkan pada pukul 10.32 pagi]
+ISTIADAT PEMBUKAAN PENGGAL KEDUA MAJLIS PARLIMEN KELIMA BELAS,DI DEWAN RAKYAT,,10.36 pagi,1036,ANNOTATION,[Mesyuarat disambung semula pada pukul 10.36 pagi]
+ISTIADAT PEMBUKAAN PENGGAL KEDUA MAJLIS PARLIMEN KELIMA BELAS,DI DEWAN RAKYAT,,10.36 pagi,1036,ANNOTATION,"[Keberangkatan tiba Seri Paduka Baginda Yang di-Pertuan Agong dan
 Seri Paduka Baginda Raja Permaisuri Agong ke Dewan Rakyat dan
 bersemayam di Peterana Diraja]"
-ISTIADAT PEMBUKAAN PENGGAL KEDUA MAJLIS PARLIMEN KELIMA BELAS,DI DEWAN RAKYAT,,1036,ANNOTATION,"[Yang Amat Berhormat Perdana Menteri mempersembahkan naskhah
+ISTIADAT PEMBUKAAN PENGGAL KEDUA MAJLIS PARLIMEN KELIMA BELAS,DI DEWAN RAKYAT,,10.36 pagi,1036,ANNOTATION,"[Yang Amat Berhormat Perdana Menteri mempersembahkan naskhah
 Titah Diraja kepada Seri Paduka Baginda Yang di-Pertuan Agong]"
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1036,,"*Bismillahi Rahmani Rahim.
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,10.36 pagi,1036,,"*Bismillahi Rahmani Rahim.
 Assalamualaikum warahmatullaahi wabarakaatuh.
 Alhamdulillahi Rabbil ‘alamin. Wassolaatu wassalaamu ‘ala asyrafil
 anbiyaa’iwal mursaliin. Wa’ala aalihi wasohbihi ajma’iin.*
@@ -33,7 +33,7 @@ serta malam.
 Selawat dan salam ke atas Junjungan Besar Nabi Muhammad SAW,
 ahli-ahli keluarga serta para sahabat Baginda."
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1040,,"*Alhamdulillah,* bersyukur Beta kehadrat Allah SWT kerana dengan
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,■1040,1040,,"*Alhamdulillah,* bersyukur Beta kehadrat Allah SWT kerana dengan
 kekuasaanNya telah mengizinkan untuk berlangsungnya Istiadat Pembukaan
 Penggal Kedua, Parlimen Kelima Belas pada pagi yang penuh bersejarah ini.
 Sebelum meneruskan Titah, Beta ingin merakamkan ucapan takziah
@@ -44,11 +44,11 @@ Justeru Beta meminta Ahli-ahli Yang Berhormat untuk berdiri bertafakur
 bersama Beta dan kepada yang beragama Islam marilah kita sedekahkan Al-
 Fatihah."
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1040,ANNOTATION,[Ahli-ahli Yang Berhormat berdiri bertafakur]
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,■1040,1040,ANNOTATION,[Ahli-ahli Yang Berhormat berdiri bertafakur]
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1040,ANNOTATION,[Ahli-ahli beragama Islam membaca Al-Fatihah]
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,■1040,1040,ANNOTATION,[Ahli-ahli beragama Islam membaca Al-Fatihah]
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1040,Seri Paduka Baginda Yang di-Pertuan Agong,"*Amin*. Terima kasih.
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,■1040,1040,Seri Paduka Baginda Yang di-Pertuan Agong,"*Amin*. Terima kasih.
 Ahli-ahli Yang Berhormat sekalian, Beta turut bersyukur Pilihan Raya
 Umum Kelima Belas telah berjaya diadakan dalam suasana yang aman dan
 penuh harmoni. Justeru Beta ingin merakamkan penghargaan dan terima
@@ -57,9 +57,9 @@ semua agensi kerajaan serta rakyat Beta yang telah menunaikan kewajipan
 masing-masing. Marilah kita bersama berlapang dada dengan hati yang
 terbuka untuk menerima dan menghormati keputusan pilihan raya tersebut..."
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1040,ANNOTATION,[Tepuk]
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,■1040,1040,ANNOTATION,[Tepuk]
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1040,Seri Paduka Baginda Yang di-Pertuan Agong,"Beta turut ingin menzahirkan ucapan tahniah kepada semua Ahli Yang
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,■1040,1040,Seri Paduka Baginda Yang di-Pertuan Agong,"Beta turut ingin menzahirkan ucapan tahniah kepada semua Ahli Yang
 Berhormat sekalian kerana telah terpilih sebagai Wakil Rakyat. Ia merupakan
 satu amanah besar untuk berkhidmat, berbakti dan membela nasib rakyat
 Beta.
@@ -68,9 +68,9 @@ Ibrahim, Ahli Parlimen Tambun yang telah dilantik oleh Beta sebagai Perdana
 Menteri Malaysia yang Kesepuluh, serta kepada seluruh barisan Jemaah
 Menteri Kerajaan Perpaduan..."
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1040,ANNOTATION,[Tepuk]
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,■1040,1040,ANNOTATION,[Tepuk]
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1040,Seri Paduka Baginda Yang di-Pertuan Agong,"Syabas juga kepada Mamanda Perdana Menteri yang telah
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,■1040,1040,Seri Paduka Baginda Yang di-Pertuan Agong,"Syabas juga kepada Mamanda Perdana Menteri yang telah
 membuktikan keabsahan beliau melalui Usul Undi Percaya di Dewan yang
 mulia ini 19 Disember 2022 yang lalu.
 Pada kesempatan ini juga, Beta ingin merakamkan ucapan terima
@@ -136,15 +136,15 @@ menghargai komitmen serta tekad Kerajaan Beta untuk membanteras rasuah
 secara agresif dengan menumpukan kepada aspek perolehan,
 penguatkuasaan dan rasuah berskala besar."
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1050,Seri Paduka Baginda Yang di-Pertuan Agong,"Kerajaan Beta juga akan menumpukan kepada agenda pembaharuan
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,■1050,1050,Seri Paduka Baginda Yang di-Pertuan Agong,"Kerajaan Beta juga akan menumpukan kepada agenda pembaharuan
 bagi memperkukuh daya saing ekonomi Malaysia agar menjadi destinasi
 pelaburan pilihan. Buktinya negara telah mencatat eksport bernilai RM1.552
 trilion pada Disember 2022 iaitu satu peningkatan 25 peratus berbanding
 dengan tempoh yang sama pada tahun 2021..."
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1050,ANNOTATION,[Tepuk]
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,■1050,1050,ANNOTATION,[Tepuk]
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1050,Seri Paduka Baginda Yang di-Pertuan Agong,"Pencapaian ini telah melepasi sasaran jumlah eksport negara tiga
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,■1050,1050,Seri Paduka Baginda Yang di-Pertuan Agong,"Pencapaian ini telah melepasi sasaran jumlah eksport negara tiga
 tahun lebih awal daripada yang disasarkan dalam Rancangan Malaysia
 Kedua Belas (RMK-12) iaitu sebanyak RM1.25 trilion menjelang tahun 2025.
 Baru-baru ini Bank Negara juga telah mengumumkan bahawa ekonomi
@@ -156,9 +156,9 @@ Nation Approach* daripada pelbagai pihak merangkumi kerajaan, sektor
 swasta, syarikat berkaitan kerajaan, pertubuhan bukan kerajaan dan rakyat
 keseluruhannya. Syabas, Malaysia..."
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1050,ANNOTATION,[Tepuk]
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,■1050,1050,ANNOTATION,[Tepuk]
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1050,Seri Paduka Baginda Yang di-Pertuan Agong,"Pelaksanaan dasar dan inisiatif nasional seperti Dasar Pelaburan
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,■1050,1050,Seri Paduka Baginda Yang di-Pertuan Agong,"Pelaksanaan dasar dan inisiatif nasional seperti Dasar Pelaburan
 Baharu berteraskan aspirasi pelaburan nasional akan merancakkan lagi
 ekonomi negara dan mencapai sasaran yang diunjurkan.
 Di samping itu, Program Pembangunan Sosioekonomi seperti agenda
@@ -173,9 +173,9 @@ ataupun *sustainable development goals.*
 Yang pertama iaitu, kemiskinan sifar bagi memastikan tahap
 kemiskinan tegar- bertambah baik..."
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1050,ANNOTATION,[Meneguk sedikit air]
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,■1050,1050,ANNOTATION,[Meneguk sedikit air]
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1050,Seri Paduka Baginda Yang di-Pertuan Agong,"Industri yang
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,■1050,1050,Seri Paduka Baginda Yang di-Pertuan Agong,"Industri yang
 strategik dan berimpak tinggi, seperti teknologi hijau dan kenderaan elektrik,
 perlu terus diteroka bagi mencipta aliran pendapatan negara yang baharu.
 Dalam mendepani cabaran agenda pelestarian alam sekitar, Kerajaan
@@ -241,9 +241,9 @@ mengiktiraf Jabatan Kerja Raya Sabah dan Sarawak, sebagai jabatan teknik;
 menambah baik tahap pemberian khas ke Sabah dan Sarawak, merupakan
 antara yang telah diputus dan dipersetujui oleh kerajaan Beta..."
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1050,ANNOTATION,[Tepuk]
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,■1050,1050,ANNOTATION,[Tepuk]
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1100,Seri Paduka Baginda Yang di-Pertuan Agong,"Pada masa yang sama, usaha untuk membangun dan memperkasa
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,■1100,1100,Seri Paduka Baginda Yang di-Pertuan Agong,"Pada masa yang sama, usaha untuk membangun dan memperkasa
 ekonomi di seluruh negara, termasuk di Sabah dan Sarawak akan terus
 dipergiatkan.
 Bagi memperkasa pentadbiran undang-undang, pembangunan
@@ -292,9 +292,9 @@ Borneo ini, khususnya untuk Beta dan Raja Permaisuri mengenali dengan
 lebih rapat lagi rakyat Beta di pedalaman Bumi Kenyalang dan Negeri di
 Bawah Bayu ini..."
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1100,ANNOTATION,[Tepuk]
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,■1100,1100,ANNOTATION,[Tepuk]
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1100,Seri Paduka Baginda Yang di-Pertuan Agong,"Program kembara ini sedang dirangka oleh pihak
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,■1100,1100,Seri Paduka Baginda Yang di-Pertuan Agong,"Program kembara ini sedang dirangka oleh pihak
 Istana Negara dan kerjasama Kerajaan Persekutuan, Kerajaan Negeri Sabah
 dan Kerajaan Negeri Sarawak, *insya-Allah.*
 Kerajaan Beta juga hendaklah meneruskan projek-projek infrastruktur
@@ -349,7 +349,7 @@ dikuatkuasakan mulai 1 Disember 2022.
 Selain itu, usaha untuk menyediakan kuarters pekerja berpusat atau,
 *centralise labour quarters* turut wajar diberikan perhatian."
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1110,Seri Paduka Baginda Yang di-Pertuan Agong,"Beta juga menyokong usaha agar Pendidikan dan Latihan Teknikal dan
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,■1110,1110,Seri Paduka Baginda Yang di-Pertuan Agong,"Beta juga menyokong usaha agar Pendidikan dan Latihan Teknikal dan
 Vokasional (TVET) terus diperkasakan. Antara pendekatan baharu bagi
 mencapai maksud tersebut termasuklah usaha sama antara pihak awam
 dan swasta di mana pihak industri menerajui pengoperasian institusi TVET
@@ -395,9 +395,9 @@ mengucapkan syabas atas usaha Kementerian Kesihatan menyediakan
 khidmat sokongan dalam bentuk talian bantuan psikososial serta khidmat
 kaunseling di pejabat kesihatan daerah..."
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1110,ANNOTATION,[Meneguk sedikit air]
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,■1110,1110,ANNOTATION,[Meneguk sedikit air]
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1110,Seri Paduka Baginda Yang di-Pertuan Agong,"Ahli-ahli Yang Berhormat sekalian, dalam memajukan ekonomi
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,■1110,1110,Seri Paduka Baginda Yang di-Pertuan Agong,"Ahli-ahli Yang Berhormat sekalian, dalam memajukan ekonomi
 negara, aspek keselamatan dan ketenteraman awam perlu dititikberatkan.
 Cabaran dan ancaman keselamatan sentiasa bersifat dinamik dan
 memerlukan kesiapsiagaan negara menghadapinya.
@@ -425,9 +425,9 @@ Musibah tanah runtuh di Batang Kali, Selangor pada 16 Disember
 Justeru, sudah tiba masanya mekanisme pengurusan bencana dipastikan
 berkesan menerusi penyelarasan gerak kerja yang lebih sempurna..."
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1110,ANNOTATION,[Meneguk sedikit air]
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,■1110,1110,ANNOTATION,[Meneguk sedikit air]
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1110,Seri Paduka Baginda Yang di-Pertuan Agong,"Ahli-ahli Yang Berhormat sekalian, semasa lawatan ke beberapa buah
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,■1110,1110,Seri Paduka Baginda Yang di-Pertuan Agong,"Ahli-ahli Yang Berhormat sekalian, semasa lawatan ke beberapa buah
 negara sebelum ini, Beta menyambut baik kesediaan pemimpin-pemimpin
 negara tersebut untuk meningkat dan mengukuhkan lagi hubungan
 kerjasama diplomatik dan perdagangan dengan Malaysia. Peluang seperti ini
@@ -441,15 +441,15 @@ Daripada aspek industri pelancongan, Beta mengucapkan tahniah
 kerana Malaysia telah mencapai sasaran 9.2 juta orang pelancong dengan
 pendapatan sebanyak RM26.8 bilion pada akhir tahun 2022..."
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1110,ANNOTATION,[Tepuk]
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,■1110,1110,ANNOTATION,[Tepuk]
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1110,ANNOTATION,[Meneguk sedikit air]
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,■1110,1110,ANNOTATION,[Meneguk sedikit air]
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1110,Seri Paduka Baginda Yang di-Pertuan Agong,Nak habis dah...
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,■1110,1110,Seri Paduka Baginda Yang di-Pertuan Agong,Nak habis dah...
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1110,ANNOTATION,[Ketawa]
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,■1110,1110,ANNOTATION,[Ketawa]
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1110,Seri Paduka Baginda Yang di-Pertuan Agong,"Ahli-ahli Yang Berhormat sekalian, Beta telah bersemayam atas takhta
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,■1110,1110,Seri Paduka Baginda Yang di-Pertuan Agong,"Ahli-ahli Yang Berhormat sekalian, Beta telah bersemayam atas takhta
 singgahsana Kerajaan Malaysia bermula pada 31 Januari 2019. Sehingga ke
 hari ini, Beta telah melalui pelbagai peristiwa dan pengalaman yang sukar
 untuk Beta lupakan. Ini daripada hati ya- terpahat dalam sejarah negara
@@ -457,19 +457,19 @@ bahawa Beta adalah merupakan satu-satunya yang di-Pertuan Agong yang
 telah diberi keafiatan untuk memerintah negara dengan empat orang Perdana
 Menteri..."
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1110,ANNOTATION,[Tepuk]
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,■1110,1110,ANNOTATION,[Tepuk]
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1110,Seri Paduka Baginda Yang di-Pertuan Agong,Bersama empat Jemaah Menteri yang berlainan...
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,■1110,1110,Seri Paduka Baginda Yang di-Pertuan Agong,Bersama empat Jemaah Menteri yang berlainan...
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1110,ANNOTATION,[Ketawa]
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,■1110,1110,ANNOTATION,[Ketawa]
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1110,Seri Paduka Baginda Yang di-Pertuan Agong,"Beta bermula dengan Yang Amat Berbahagia Tun Dr. Mahathir bin
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,■1110,1110,Seri Paduka Baginda Yang di-Pertuan Agong,"Beta bermula dengan Yang Amat Berbahagia Tun Dr. Mahathir bin
 Mohamad, Perdana Menteri Ketujuh (PMVII) Cerita sikit ya. Namun pada 24
 Februari 2020, buat pertama kalinya Beta dibawa ke kancah gelanggang
 kemelut politik tanah air menerusi peletakan jawatan Perdana Menteri
 Ketujuh."
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1120,Seri Paduka Baginda Yang di-Pertuan Agong,"Selaras dengan kuasa budi bicara yang diberikan kepada Beta oleh
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,■1120,1120,Seri Paduka Baginda Yang di-Pertuan Agong,"Selaras dengan kuasa budi bicara yang diberikan kepada Beta oleh
 Perlembagaan Persekutuan, Beta selanjutnya telah mendapati Yang
 Berhormat Tan Sri Mahiaddin bin Haji Mohd Yassin telah mendapat
 kepercayaan majoriti untuk dilantik sebagai Perdana Menteri Kelapan
@@ -509,9 +509,9 @@ Darul Makmur. Namun ini, semuanya ketentuan Allah *Subhanahu wa Taala.*
 Manusia merancang, Allah menentukan segala-galanya.
 Ahli-ahli Yang Berhormat sekalian..."
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1120,ANNOTATION,[Meneguk sedikit air]
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,■1120,1120,ANNOTATION,[Meneguk sedikit air]
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1120,Seri Paduka Baginda Yang di-Pertuan Agong,"Pepatah
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,■1120,1120,Seri Paduka Baginda Yang di-Pertuan Agong,"Pepatah
 Melayu lama mengingatkan kita, ‘jika kerbau dipegang pada talinya, manusia
 pula dipegang pada janjinya.’ *Flashback* sedikit- pada 31 Januari 2019, Beta
 telah Melafazkan Sumpah untuk sesungguhnya dan sebenarnya mengaku
@@ -539,9 +539,9 @@ dalam pembentukan sebuah bangsa Malaysia yang saling sayang-
 menyayangi, menghormati antara satu dengan yang lain, toleran dan hidup
 dalam sebuah kesepaduan yang utuh..."
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1120,ANNOTATION,[Meneguk sedikit air]
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,■1120,1120,ANNOTATION,[Meneguk sedikit air]
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1120,Seri Paduka Baginda Yang di-Pertuan Agong,"Jika kepelbagaian, kemajmukan dan kekusutan politik berterusan
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,■1120,1120,Seri Paduka Baginda Yang di-Pertuan Agong,"Jika kepelbagaian, kemajmukan dan kekusutan politik berterusan
 menjadi punca perbalahan dan perpecahan, Beta merasa khuatir suasana
 damai dan kemajuan yang didambakan tidak akan menjadi kenyataan buat
 selama-lamanya.
@@ -576,7 +576,7 @@ Kestabilan landskap politik menerusi ikatan perpaduan dari Ahli-ahli Yang
 Berhormat hendaklah dijadikan sebagai manifestasi dalam membentuk
 bangsa Malaysia dan era Malaysia baharu yang gemilang. *Insya-Allah.*"
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1130,Seri Paduka Baginda Yang di-Pertuan Agong,"Sesungguhnya, perpaduan merupakan penyatuan dalam perbezaan
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,■1130,1130,Seri Paduka Baginda Yang di-Pertuan Agong,"Sesungguhnya, perpaduan merupakan penyatuan dalam perbezaan
 agama dan bangsa. Perpaduan itu asas pembinaan kestabilan dan
 keharmonian. Perpaduan merupakan tiang kemakmuran dan kemajuan.
 Perpaduan membawa kejayaan.
@@ -584,42 +584,42 @@ Beta berdoa, semoga negara Malaysia bersama rakyat yang Beta
 sangat kasihi akan terus hidup dengan penuh kerukunan atas dasar
 perpaduan dan sentiasa berada dalam perlindungan Allah SWT..."
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1130,ANNOTATION,"[Meneguk
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,■1130,1130,ANNOTATION,"[Meneguk
 sedikit air]"
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1130,Seri Paduka Baginda Yang di-Pertuan Agong,"Sebagai menutup bicara, izinkan Beta untuk menyampaikan tiga
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,■1130,1130,Seri Paduka Baginda Yang di-Pertuan Agong,"Sebagai menutup bicara, izinkan Beta untuk menyampaikan tiga
 rangkap pantun sebagai mengakhiri ucapan.
 *Dari Tambun hendak ke Bera,
 Singgah di Chemor beli keria;
 Perpaduan bangsa kekuatan negara,
 Malaysia maju dan makmur di persada dunia...*"
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1130,ANNOTATION,[Tepuk]
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,■1130,1130,ANNOTATION,[Tepuk]
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1130,Seri Paduka Baginda Yang di-Pertuan Agong,"*Buah durian di Pulau Jawa,
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,■1130,1130,Seri Paduka Baginda Yang di-Pertuan Agong,"*Buah durian di Pulau Jawa,
 Masak ranum di atas para;
 Teguh bersatu semaikan di jiwa,
 Tanda sepakat membina negara...*"
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1130,ANNOTATION,[Tepuk]
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,■1130,1130,ANNOTATION,[Tepuk]
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1130,Seri Paduka Baginda Yang di-Pertuan Agong,"*Bara api panas berbahang,
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,■1130,1130,Seri Paduka Baginda Yang di-Pertuan Agong,"*Bara api panas berbahang,
 Jangan diletak di telapak tangan;
 Beta berdua pulang ke negeri Pahang,
 Hilang di mata di hati jangan...*"
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1130,ANNOTATION,[Tepuk]
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,■1130,1130,ANNOTATION,[Tepuk]
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1130,Seri Paduka Baginda Yang di-Pertuan Agong,"Sekian.
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,■1130,1130,Seri Paduka Baginda Yang di-Pertuan Agong,"Sekian.
 *Wabiliahi taufik walhidayah, wassalamualaikum warahmatullahi
 wabarakatuh....*"
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1130,ANNOTATION,[Tepuk]
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,■1130,1130,ANNOTATION,[Tepuk]
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1130,ANNOTATION,"[Doa Selamat dibacakan oleh Sahibus Fadillah Imam Besar Masjid
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,■1130,1130,ANNOTATION,"[Doa Selamat dibacakan oleh Sahibus Fadillah Imam Besar Masjid
 Negara, Tuan Haji Ehsan bin Haji Mohd Hosni]"
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1137,ANNOTATION,[Dewan ditangguhkan pada pukul 11.37 pagi]
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,11.37 pagi,1137,ANNOTATION,[Dewan ditangguhkan pada pukul 11.37 pagi]
 TITAH SERI PADUKA BAGINDAYANG DI-PERTUAN AGONG XVI,"AL-SULTAN ABDULLAH RI'AYATUDDIN AL-MUSTAFA BILLAH SHAH
-IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,1137,ANNOTATION,"[Seri Paduka Baginda Yang di-Pertuan Agong dan Seri Paduka
+IBNI SULTAN HAJI AHMAD SHAH AL-MUSTA'IN BILLAH",,11.37 pagi,1137,ANNOTATION,"[Seri Paduka Baginda Yang di-Pertuan Agong dan Seri Paduka
 Baginda Raja Permaisuri Agong berangkat meninggalkan Majlis Parlimen]"

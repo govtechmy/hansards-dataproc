@@ -36,7 +36,7 @@ def get_timestamp_from_annotation(text):
 
 def standardise_timestamp(timestamp):
     numbers = ''.join(re.findall(r'\d+', timestamp))
-    assert len(numbers) != 0, f'Expected timestamp to have numbers but got {timestamp}'
+    assert len(numbers) != 0
     if len(numbers) < 3:
         # 10 pagi
         numbers += '00'
@@ -94,8 +94,7 @@ def get_author_and_speech(text, bold, italics, warn=''):
     speech_bold = ''
     speech_italics = ''
     subtopic = ''
-    if re.search(r'^(Tuan )?Yang di-Pertua[\[\]A-Za-z `.’\'@/(\-),]*:', text) or \
-            re.search(r'^Timbalan(an)? (Tuan )?Yang [dD]i- ?Pertua[\[\]A-Za-z `.’\'@/(\-),]*:', text) or \
+    if re.search(r'^(Timbalan(an)? )?(Tuan )?([Yy]ang )?[dD]i-? ?[Pp]ertua[\[\]A-Za-z `.’\'@/(\-),]*:', text) or \
             re.search(r'^Setiausaha[\[\]A-Za-z `.’\'@/(\-),]*:', text) or \
             re.search(r'^(Yang Berhormat )?(Timbalan )?[Mm]enteri [A-Za-z,()\-& ]+(\[Ekonomi] )'
                       r'?\[[A-Za-z `.’\'@/(\-)\[\]]+] ?:',
@@ -142,10 +141,9 @@ def get_author_and_speech(text, bold, italics, warn=''):
         speech = text[split_idx + 2:]
         speech_bold = bold[split_idx + 2:]
         speech_italics = italics[split_idx + 2:]
-    elif re.search(r'^\d{1,2}\.? [A-Za-z `.’\'@\/\-()]+:? *[Mm](em)?inta', text):
+    elif re.search(r'^\d{1,2}\.? [A-Za-z `.’\'@\/\-()]+\[[A-Za-z \-]+]:? *[Mm](em)?inta', text):
         # JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN
         # 1. Tuan Tan Kok Wai [Cheras] minta Menteri Pembangunan Usahawan menyatakan,
-        # Different from DR in that these don't have constituencies
         split_idx = text.find('minta')
         if split_idx == -1:
             split_idx = text.find('Minta')
@@ -400,6 +398,19 @@ def tabulate(hansard_date):
             num_unclosed_brackets = text[row_id].count('[') - text[row_id].count(']')
             # keep on looping until we tally up the correct number of brackets
             while add_idx + row_id < num_rows and num_unclosed_brackets > 0:
+                if len(text[row_id + add_idx].strip()) > 5 and prop_of_1_among_binary(italics[row_id + add_idx]) == 0:
+                    # most likely the annotation is missing a ]
+                    # we will assume that the annotation is closed
+                    # turn off autoclosing for 26032018 where a whole chunk of annotation is not italicized
+                    with open('dump/autoclosed_annotation.txt', 'a') as f:
+                        f.write(f'{hansard_date}\n')
+                        f.write(f'{current["speech"]}\n')
+                        f.write("AUTOCLOSED AS IT IS FOLLOWED BY\n")
+                        f.write(f'{text[row_id + add_idx]}')
+                        f.write(f'{bold[row_id + add_idx]}')
+                        f.write(f'{italics[row_id + add_idx]}')
+                        f.write('\n')
+                    break
                 current['speech'] += text[row_id + add_idx]
                 current['speech_bold'] += bold[row_id + add_idx]
                 current['speech_italics'] += italics[row_id + add_idx]
@@ -632,16 +643,6 @@ def tabulate(hansard_date):
                 current['speech_bold'] += bold[row_id]
                 current['speech_italics'] += italics[row_id]
                 continue
-            elif hansard_date == "02112018" and \
-                    (re.search(r'^Strategi \d+:', text[row_id]) or re.search(r' [–-]$', text[row_id].strip())):
-                # during the budget 02112018
-                speeches += insert_speech(current)
-                current['author'] = ""
-                current['speech'] = ""
-                current['speech_bold'] = ""
-                current['speech_italics'] = ""
-                current['level_3'] = text[row_id].strip()
-                continue
             # unhandled case
             print(f'WARN IN-TEXT BOLD:\n{text[row_id]}{bold[row_id]}{italics[row_id]}')
             with open("warnings/in-text-bold.txt", 'a') as f:
@@ -699,29 +700,25 @@ def tabulate(hansard_date):
     old_timestamp_list = [speech[3] for speech in speeches]
     # standardise timestamps into 24 hour format
     for row_id in range(len(speeches)):
-        try:
-            speeches[row_id][3] = standardise_timestamp(speeches[row_id][3])
-        except AssertionError:
-            print(f'WARN: timestamp not in expected format: {hansard_date}\n{speeches[row_id][3]}')
-            with open("warnings/timestamp_not_in_expected_format.txt", 'a') as f:
-                f.write(f'{hansard_date}\n{speeches[row_id][3]}\n\n')
+        # insert standardised timestamp after old timestamp
+        speeches[row_id].insert(4, standardise_timestamp(speeches[row_id][3]))
 
     # post-tabulation warnings
     # check if annotation is too long, usually missing ].
     # if without error it is usually [Diputuskan,
     for speech in speeches:
-        if speech[4] == "ANNOTATION" and speech[5].count('\n') > 5:
+        if speech[5] == "ANNOTATION" and speech[6].count('\n') > 5:
             with open("warnings/annotation_too_long.txt", 'a') as f:
-                f.write(f'{hansard_date}\n{speech[5]}\n\n')
+                f.write(f'{hansard_date}\n{speech[6]}\n\n')
 
     # check for uppercased misidentified non-authors
     for speech in speeches:
-        if speech[4] != "ANNOTATION" and upper_lower_ratio(speech[4]) > 0.8:
+        if speech[5] != "ANNOTATION" and upper_lower_ratio(speech[5]) > 0.8:
             with open("warnings/uppercased_non_author.txt", 'a') as f:
                 f.write(f'{hansard_date}\n{speech[4]}\n\n')
 
     # check that timestamps are in order
-    timestamps = [speech[3] for speech in speeches]
+    timestamps = [speech[4] for speech in speeches]
     sorted_timestamps = sorted(timestamps)
     if timestamps != sorted_timestamps:
         with open("warnings/unsorted_timestamps.txt", 'a') as f:
@@ -733,14 +730,14 @@ def tabulate(hansard_date):
     # export speeches to csv
     with open(f'{dir_path}result.csv', mode='w', newline='') as file:
         writer = csv.writer(file)
-        writer.writerow(['level_1', 'level_2', 'level_3', 'timestamp', 'author', 'speech'])
+        writer.writerow(['level_1', 'level_2', 'level_3', 'raw_timestamp', 'timestamp', 'author', 'speech'])
         writer.writerows(speeches)
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("hansard_date", help="hansard_date eg. 23052023",
-                        default="14102021", nargs="?")
+                        default="02032023", nargs="?")
     # Parse arguments
     args = parser.parse_args()
     tabulate(args.hansard_date)

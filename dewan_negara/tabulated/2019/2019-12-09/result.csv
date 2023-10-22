@@ -1,6 +1,6 @@
-level_1,level_2,level_3,timestamp,author,speech
-,,,1000,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
-PEMASYHURAN TUAN YANG DI-PERTUA,MEMPERKENANKAN AKTA-AKTA,,1000,Tuan Yang di-Pertua,"Salam sejahtera dan selamat pagi. Ahli-ahli Yang
+level_1,level_2,level_3,raw_timestamp,timestamp,author,speech
+,,,10.00 pagi,1000,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
+PEMASYHURAN TUAN YANG DI-PERTUA,MEMPERKENANKAN AKTA-AKTA,,10.00 pagi,1000,Tuan Yang di-Pertua,"Salam sejahtera dan selamat pagi. Ahli-ahli Yang
 Berhormat, suka saya hendak memberitahu Majlis ini iaitu Kebawah Duli Yang Maha Mulia
 Seri Paduka Baginda Yang di-Pertuan Agong dengan limpah kurnia Baginda, telah
 memperkenankan akta-akta yang telah diluluskan oleh Parlimen dalam Mesyuarat
@@ -20,12 +20,12 @@ Persekutuan) (Pindaan) (No.2) 2019;
 2019;
 11. Akta Cap Dagangan (Pindaan) 2019; dan
 12. Akta Perihal Dagangan (Pindaan) 2019."
-PEMASYHURAN TUAN YANG DI-PERTUA,PERUTUSAN DARIPADA DEWAN RAKYAT,,1000,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, saya telah menerima satu
+PEMASYHURAN TUAN YANG DI-PERTUA,PERUTUSAN DARIPADA DEWAN RAKYAT,,10.00 pagi,1000,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, saya telah menerima satu
 perutusan daripada Dewan Rakyat yang meminta Dewan Negara mempersetujukan rang
 undang-undang yang telah diluluskan oleh Dewan Rakyat. oleh itu saya menjemput
 Setiausaha Dewan Negara membacakan perutusan itu sekarang."
-PEMASYHURAN TUAN YANG DI-PERTUA,PERUTUSAN DARIPADA DEWAN RAKYAT,,1000,ANNOTATION,[Setiausaha membaca Perutusan]
-PEMASYHURAN TUAN YANG DI-PERTUA,PERUTUSAN DARIPADA DEWAN RAKYAT,,1000,Tuan Yang di-Pertua,"“ 5 Disember 2019
+PEMASYHURAN TUAN YANG DI-PERTUA,PERUTUSAN DARIPADA DEWAN RAKYAT,,10.00 pagi,1000,ANNOTATION,[Setiausaha membaca Perutusan]
+PEMASYHURAN TUAN YANG DI-PERTUA,PERUTUSAN DARIPADA DEWAN RAKYAT,,10.00 pagi,1000,Tuan Yang di-Pertua,"“ 5 Disember 2019
 **Perutusan Daripada Dewan Rakyat Kepada Dewan Negara**
 Tuan Yang di-Pertua Dewan Negara,
 Dewan Rakyat telah meluluskan rang undang-undang yang berikut dan meminta
@@ -63,23 +63,22 @@ Simpanan Pekerja (Pindaan) 2019.
 Yang ikhlas,
 t.t
 YANG DI-PERTUA DEWAN RAKYAT”"
-PEMASYHURAN TUAN YANG DI-PERTUA,URUSAN MESYUARAT,,1000,Timbalan Menteri di Jabatan Perdana Menteri [Tuan Mohamed Hanipa bin Maidin],"Terima kasih, Tuan Yang di-Pertua. Tuan Yang di-Pertua, mengikut Peraturan
+PEMASYHURAN TUAN YANG DI-PERTUA,URUSAN MESYUARAT,,10.00 pagi,1000,Timbalan Menteri di Jabatan Perdana Menteri [Tuan Mohamed Hanipa bin Maidin],"Terima kasih, Tuan Yang di-Pertua. Tuan Yang di-Pertua, mengikut Peraturan
 Mesyuarat 66(2), saya mohon memaklumkan supaya rang undang-undang yang tersebut
 di dalam perutusan itu dibacakan kali yang kedua dan ketiganya dalam Mesyuarat ini."
-PEMASYHURAN TUAN YANG DI-PERTUA,URUSAN MESYUARAT,,1000,Tuan Yang di-Pertua,Baiklah Yang Berhormat.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1000,Datin Rahimah binti Haji Mahamad,"minta Menteri Pembangunan Luar Bandar
-menyatakan, bilangan belia yang tamat pengajian dari IKM, KKTM, UniKL atau Institusi
+PEMASYHURAN TUAN YANG DI-PERTUA,URUSAN MESYUARAT,,10.00 pagi,1000,Tuan Yang di-Pertua,Baiklah Yang Berhormat.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,10.00 pagi,1000,,"menyatakan, bilangan belia yang tamat pengajian dari IKM, KKTM, UniKL atau Institusi
 IPTS dan Pusat Latihan Kemahiran Institusi kelolaan KPLB sehingga November 2019,
 dan berapa ramai dari bilangan ini yang masih menganggur atau memilih untuk menjadi
 usahawan bimbingan kerajaan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1000,Timbalan Menteri Pembangunan Luar Bandar [Tuan Sivarasa Rasiah],"Terima kasih Tuan Yang di-Pertua. Terima kasih kepada Yang Berhormat Senator Datin
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,10.00 pagi,1000,Timbalan Menteri Pembangunan Luar Bandar [Tuan Sivarasa Rasiah],"Terima kasih Tuan Yang di-Pertua. Terima kasih kepada Yang Berhormat Senator Datin
 Rahimah binti Haji Mahamad di atas soalan ini.
 Melalui soalan ini, Yang Berhormat Senator minta mengatakan bilangan belia
 yang tamat pengajian dari IKM, KKTM, UniKL atau institusi IPTS, dan Pusat Latihan
 Kemahiran Institusi di bawah kelolaan Kementerian Pembangunan Luar Bandar (KPLB)
 sehingga November 2019 dan berapa ramai dari bilangan ini yang masih menganggur
 atau memilih untuk menjadi usahawan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Timbalan Menteri Pembangunan Luar Bandar [Tuan Sivarasa Rasiah],"Untuk makluman Dewan yang mulia ini dan juga Yang Berhormat Senator,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1010,1010,Timbalan Menteri Pembangunan Luar Bandar [Tuan Sivarasa Rasiah],"Untuk makluman Dewan yang mulia ini dan juga Yang Berhormat Senator,
 bilangan keseluruhan graduan institusi pendidikan TVET di bawah Kementerian
 Pembangunan Luar Bandar (KPLB) adalah sebanyak 274 buah yang terdiri daripada ini:
 (i) dua buah Akademi Kemahiran KEMAS di bawah Jabatan
@@ -108,9 +107,9 @@ selepas enam bulan tamat pengajian. Bilangan usahawan rintis bagi KEMAS, bagi te
 2016 sehingga 2018 adalah sebanyak 2,220 orang usahawan.
 Daripada jumlah tersebut, 50 orang adalah dalam kategori usahawan TVET*-
 Technical and Vocational Education and Training*. Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Menteri. Soalan tambahan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1010,1010,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Menteri. Soalan tambahan
 Yang Berhormat Senator."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Datin Rahimah binti Haji Mahamad,"Terima kasih, Tuan Yang di-Pertua dan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1010,1010,Datin Rahimah binti Haji Mahamad,"Terima kasih, Tuan Yang di-Pertua dan
 terima kasih juga kepada Yang Berhormat Menteri yang menjawab dengan begitu
 terperinci.
 Soalan tambahan saya, sejauh manakah KPLB dan MARA dapat menggiat
@@ -118,8 +117,8 @@ usaha Skim Perantisan sebagai saluran pekerjaan kepada lepasan institusi kemahir
 bagi belia luar bandar dengan mengadakan kerjasama strategik di sektor awam dan
 swasta, seiring dengan insentif elaun Skim Perantisan RM100 untuk tahun 2020? Sekian,
 terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Tuan Yang di-Pertua,Adakah rancangan untuk memantapkan?
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Tuan Sivarasa Rasiah,"Baik, terima kasih Yang Berhormat Senator di atas
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1010,1010,Tuan Yang di-Pertua,Adakah rancangan untuk memantapkan?
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1010,1010,Tuan Sivarasa Rasiah,"Baik, terima kasih Yang Berhormat Senator di atas
 soalan itu. Seperti yang saya sudah sebutkan dalam angka-angka yang saya nyatakan
 tadi, kebolehpasaran graduan adalah dalam lingkungan 90 peratus.
 Bagaimana ini dicapai adalah- memang selaras dengan apa cadangan yang
@@ -127,13 +126,13 @@ disebutkan oleh Yang Berhormat Senator tadi, iaitu komunikasi dan hubungan serta
 rangkaian dengan industri dan sebagainya serta beberapa cara yang lain. Saya tidak
 dapat jawab di sini secara detil, apakah mekanisme semua, tetapi pencapaian seperti
 yang ditanya di dalam soalan utama adalah dalam 90 peratus."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Tuan Yang di-Pertua,"Terima kasih, silakan Yang Berhormat Senator."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Dato’ Kesavadas A. Achyuthan Nair,"Terima kasih, Tuan Yang di-Pertua. Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1010,1010,Tuan Yang di-Pertua,"Terima kasih, silakan Yang Berhormat Senator."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1010,1010,Dato’ Kesavadas A. Achyuthan Nair,"Terima kasih, Tuan Yang di-Pertua. Yang
 Berhormat Timbalan Menteri, adakah satu kajian dibuat untuk mengetahui kenapa
 graduan-graduan yang tamat pengajian di institusi-institusi tersebut masih menganggur
 atau menjadi usahawan bimbingan kerajaan? *Any studies* ya. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Tuan Yang di-Pertua,"Ada 2,000 orang yang menganggur?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Tuan Sivarasa Rasiah,"Betul, yang menganggur seramai 2,800 orang yang saya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1010,1010,Tuan Yang di-Pertua,"Ada 2,000 orang yang menganggur?"
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1010,1010,Tuan Sivarasa Rasiah,"Betul, yang menganggur seramai 2,800 orang yang saya
 sebut tadi itu.
 Tuan Yang di-Pertua, Ahli Dewan yang mulia termasuk Yang Berhormat Senator,
 setakat ini tidak ada kajian yang formal berkenaan jumlah ini untuk menentukan kenapa
@@ -142,43 +141,43 @@ Saya perlu tambah juga, golongan ini ialah untuk angka tahun semasa- tahun
 2019. Supaya kita dapat gambaran yang lebih luas sedikit, bilangan pelajar sedia ada di
 bawah semua institusi ini dalam tahun itu ialah 54,621 orang pelajar. Untuk makluman
 Dewan juga..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Tuan Yang di-Pertua,"Minta maaf ya, ulang balik berapa?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Tuan Sivarasa Rasiah,"Seramai 54,621 orang untuk tahun semasa- *the current
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1010,1010,Tuan Yang di-Pertua,"Minta maaf ya, ulang balik berapa?"
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1010,1010,Tuan Sivarasa Rasiah,"Seramai 54,621 orang untuk tahun semasa- *the current
 year*, dengan izin. Daripada itu, seramai 43 ribu orang lebih kurang 80 peratus adalah
 dalam kategori B40. Kajian spesifik dan juga kenapa 2,800 orang lebih ini belum dibuat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Tuan Yang di-Pertua,Okey.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Tuan Sivarasa Rasiah,"Akan tetapi, mekanisme untuk ikuti berapa yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1010,1010,Tuan Yang di-Pertua,Okey.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1010,1010,Tuan Sivarasa Rasiah,"Akan tetapi, mekanisme untuk ikuti berapa yang
 mendapat kerja, berapa yang menjadi usahawan, berapa yang menyambung pengajian
 itu memang adalah satu..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Tuan Yang di-Pertua,Satu kajian akan dibuatlah?
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Tuan Sivarasa Rasiah,"Akan tetapi, saya ambil maklum tentang cadangan. Kita
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1010,1010,Tuan Yang di-Pertua,Satu kajian akan dibuatlah?
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1010,1010,Tuan Sivarasa Rasiah,"Akan tetapi, saya ambil maklum tentang cadangan. Kita
 akan rujuk kepada institusi itu sama ada mereka ada kajian formal. Kalau mereka rasa
 kajian formal perlu, kita akan laksanakan. Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Tuan Yang di-Pertua,Terima kasih Yang Berhormat Menteri.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Dr. Yaakob bin Sapari,"Adakah kerajaan mempunyai data, berapakah purata
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1010,1010,Tuan Yang di-Pertua,Terima kasih Yang Berhormat Menteri.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1010,1010,Dr. Yaakob bin Sapari,"Adakah kerajaan mempunyai data, berapakah purata
 pendapatan yang diperoleh graduan-graduan daripada lulusan ini? Apakah mereka juga
 di bawah kategori B40, purata pendapatannya?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Tuan Yang di-Pertua,"Ini dua soalan. Satu adalah- *what is* purata gaji, dan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1010,1010,Tuan Yang di-Pertua,"Ini dua soalan. Satu adalah- *what is* purata gaji, dan
 adakah mereka ini berada dalam golongan B40?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Tuan Sivarasa Rasiah,"Ya, jumlah dalam kategori B40 secara umum,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1010,1010,Tuan Sivarasa Rasiah,"Ya, jumlah dalam kategori B40 secara umum,
 berdasarkan jumlah pelajar yang sekarang, pada tahun semasa seperti saya sebutkan
 tadi, jumlah kita 54 ribu orang lebih dalam tahun semasa. Daripada jumlah itu, hampir 44
 ribu orang ataupun 80 peratus adalah dari kategori B40. Akan tetapi, dari segi usahawan,
 saya tidak ada angka purata pendapatan mereka- secara purata. Itu kita akan beri
 jawapan secara bertulis."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Tuan Yang di-Pertua,Okey.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Tuan Yang di-Pertua,"Sudah tiga soalan Yang Berhormat Senator. Silakan Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1010,1010,Tuan Yang di-Pertua,Okey.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1010,1010,Tuan Yang di-Pertua,"Sudah tiga soalan Yang Berhormat Senator. Silakan Yang
 Berhormat Senator Tuan Manolan bin Mohamad."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Tuan Manolan bin Mohamad,"Terima kasih, Tuan Yang di-Pertua. Sebelum itu
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1010,1010,Tuan Manolan bin Mohamad,"Terima kasih, Tuan Yang di-Pertua. Sebelum itu
 saya mengalu-alukan kedatangan Delegasi Kelab Kasih Sayang daripada Johor Bahru ke
 Dewan Negara..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,ANNOTATION,[Tepuk]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Tuan Manolan bin Mohamad,"Diharapkan lawatan ini akan memberikan manfaat kepada tetamu yang hadir
-pada hari ini. Soalan saya nombor 2, Tuan Yang di-Pertua. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1010,Tuan Manolan bin Mohamad,"minta Perdana Menteri menyatakan, bilakah
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1010,1010,ANNOTATION,[Tepuk]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1010,1010,Tuan Manolan bin Mohamad,"Diharapkan lawatan ini akan memberikan manfaat kepada tetamu yang hadir
+pada hari ini. Soalan saya nombor 2, Tuan Yang di-Pertua. Terima kasih.
+**2. Tuan Manolan bin Mohamad** minta Perdana Menteri menyatakan, bilakah
 Laporan Inkuiri Nasional SUHAKAM tahun 2013 akan dibentangkan di Parlimen seperti
 yang dijanjikan di dalam *Buku Harapan* pada Pilihanraya Umum Keempat Belas."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1010,Timbalan Menteri di Jabatan Perdana Menteri [Tuan Mohamed Hanipa bin Maidin],"Terima kasih, Tuan Yang di-Pertua. Terima kasih kepada Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1010,1010,Timbalan Menteri di Jabatan Perdana Menteri [Tuan Mohamed Hanipa bin Maidin],"Terima kasih, Tuan Yang di-Pertua. Terima kasih kepada Yang Berhormat
 Senator Tuan Manolan bin Mohamad.
 Untuk makluman Yang Berhormat Senator, setakat ini Kerajaan Pakatan
 Harapan masih belum membuat apa-apa keputusan muktamad untuk membentangkan
@@ -194,9 +193,9 @@ isu utama dihadapi oleh masyarakat Orang Asli di negara ini.
 Satu kajian sosial juga dicadangkan akan dilaksanakan bagi menetapkan definisi
 tanah adat selepas mendapat keputusan terkini daripada Jemaah Menteri dalam masa
 terdekat. Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1010,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Menteri. Silakan Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1010,1010,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Menteri. Silakan Yang
 Berhormat Senator."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1010,Tuan Manolan bin Mohamad,"Terima kasih, Tuan Yang di-Pertua. Terima kasih
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1010,1010,Tuan Manolan bin Mohamad,"Terima kasih, Tuan Yang di-Pertua. Terima kasih
 Yang Berhormat Timbalan Menteri. Untuk makluman Yang Berhormat Timbalan Menteri,
 sebenarnya Laporan SUHAKAM ini bermula pada 2013, dan melibatkan 6,500 orang,
 Orang Asal yang terlibat dalam konsultasi awam telah diadakan dan sebanyak 892 kes.
@@ -204,10 +203,10 @@ Dalam laporan tersebut juga, ada 18 syor yang telah disyorkan oleh SUHAKAM.
 Jadi, untuk- tadi Yang Berhormat Menteri sudah sebut akan dibincangkan, tetapi ada
 dalam 18 syor ini yang saya rasa perlu diambil secara serius sebelum Inkuiri Nasional ini
 dibawa ke Parlimen. Saya beri contoh di sini kepada syor nombor 13."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Tuan Manolan bin Mohamad,"Saya baca di sini- menggalakkan penglibatan secara aktif Orang Asal dalam
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1020,1020,Tuan Manolan bin Mohamad,"Saya baca di sini- menggalakkan penglibatan secara aktif Orang Asal dalam
 pengurusan hutan. Untuk makluman Yang Berhormat Timbalan Menteri..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Tuan Yang di-Pertua,"Yang Berhormat, syor dari?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Tuan Manolan bin Mohamad,"SUHAKAM. Syor nombor 13, syor daripada
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1020,1020,Tuan Yang di-Pertua,"Yang Berhormat, syor dari?"
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1020,1020,Tuan Manolan bin Mohamad,"SUHAKAM. Syor nombor 13, syor daripada
 SUHAKAM.
 Tidak ramai masyarakat Orang Asal yang terlibat dalam menguruskan hutan.
 Maka, satu dasar baharu perlu dibuat untuk meningkatkan penglibatan masyarakat Orang
@@ -222,23 +221,23 @@ ini tidak mengganggu dan mengancam tanaman Orang Asli ini dan kampung mereka.
 Maka itu, syor ini saya rasa perlu diambil tindakan dengan segera walaupun *enquiry*
 SUHAKAM ini belum dibawa ke Parlimen. Jadi, apa pandangan Yang Berhormat Timbalan
 Menteri? Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Tuan Yang di-Pertua,"Yang Berhormat, tadi Yang Berhormat Timbalan Menteri
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1020,1020,Tuan Yang di-Pertua,"Yang Berhormat, tadi Yang Berhormat Timbalan Menteri
 sudah cakap syor-syor itu sedang diperhalusi oleh kerajaan sebelum dibentangkan. Saya
 ingat Yang Berhormat Timbalan Menteri boleh menjawab bila dibentangkan di Parlimen
 nanti."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Tuan Manolan bin Mohamad,"Akan tetapi ini kita kena tengok secara serius
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1020,1020,Tuan Manolan bin Mohamad,"Akan tetapi ini kita kena tengok secara serius
 Tuan Yang di-Pertua sebab dalam syor tersebut ada 18 syor dan syor yang ke-13 tadi."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Tuan Yang di-Pertua,"Saya memang faham Yang Berhormat serius dan juga
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1020,1020,Tuan Yang di-Pertua,"Saya memang faham Yang Berhormat serius dan juga
 saya pun serius tetapi Yang Berhormat Timbalan Menteri sudah cakap ini belum
 dibentangkan. *So,* kalau ada soalan lain..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Tuan Manolan bin Mohamad,"Tidak, adakah- okey. Soalan saya, adakah Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1020,1020,Tuan Manolan bin Mohamad,"Tidak, adakah- okey. Soalan saya, adakah Yang
 Berhormat Timbalan Menteri boleh melihat inti pati dalam syor tersebut? Salah satu untuk
 disegerakan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Tuan Yang di-Pertua,Okey.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Tuan Manolan bin Mohamad,Itu soalan saya.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Tuan Mohamed Hanipa bin Maidin,"Okey, Tuan Yang di-Pertua. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Tuan Yang di-Pertua,Silakan Yang Berhormat Timbalan Menteri.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Tuan Mohamed Hanipa bin Maidin,"Tuan Yang di-Pertua, boleh ya? Terima
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1020,1020,Tuan Yang di-Pertua,Okey.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1020,1020,Tuan Manolan bin Mohamad,Itu soalan saya.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1020,1020,Tuan Mohamed Hanipa bin Maidin,"Okey, Tuan Yang di-Pertua. Terima kasih."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1020,1020,Tuan Yang di-Pertua,Silakan Yang Berhormat Timbalan Menteri.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1020,1020,Tuan Mohamed Hanipa bin Maidin,"Tuan Yang di-Pertua, boleh ya? Terima
 kasih kepada Yang Berhormat Senator yang begitu nampaknya prihatin. Saya
 mengucapkan tahniah.
 Untuk makluman Yang Berhormat, meskipun laporan ini belum ada keputusan
@@ -261,12 +260,12 @@ kepentingan semua pihak berkepentingan iaitu pihak Jabatan Kemajuan Orang Asli.
 Jadi Yang Berhormat, sebenarnya kerajaan ambil peduli dengan laporan
 SUHAKAM itu walaupun masih belum dibentangkan tetapi kita ambil peduli. Sekian,
 terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, jikalau ada juga jawapan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1020,1020,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, jikalau ada juga jawapan
 daripada kementerian bahawa isu yang dibangkitkan oleh Ahli-ahli Yang Berhormat ini
 belum lagi dibuat persetujuan ataupun satu keputusan, Yang Berhormat boleh bawa
 dalam perbahasan. *So*, Yang Berhormat Menteri akan jawab.
 Silakan Yang Berhormat Senator Tuan Mohd Yusmadi."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Tuan Mohd Yusmadi bin Mohd Yusoff,"Terima kasih Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1020,1020,Tuan Mohd Yusmadi bin Mohd Yusoff,"Terima kasih Tuan Yang di-Pertua.
 Yang Berhormat Timbalan Menteri, ingin memohon penjelasan lanjut mengenai apa yang
 dijelaskan oleh Yang Berhormat Timbalan Menteri mengenai syor-syor yang akan diambil.
 Seperti Yang Berhormat Timbalan Menteri maklum, saya tahu Yang Berhormat Timbalan
@@ -283,8 +282,8 @@ asasi manusia apatah lagi dalam kerja-kerja SUHAKAM untuk menasihati kerajaan? A
 perkara-perkara baharu mesyuarat dengan Yang Amat Berhormat Perdana Menteri lebih
 kerapkah? Ataupun masih lagi kalau ada jumlah mungkin boleh beritahu pada Dewan.
 Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Tuan Yang di-Pertua,"Okey, silakan Yang Berhormat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Tuan Mohamed Hanipa bin Maidin,"Okey, terima kasih pada yang sahabat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1020,1020,Tuan Yang di-Pertua,"Okey, silakan Yang Berhormat."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1020,1020,Tuan Mohamed Hanipa bin Maidin,"Okey, terima kasih pada yang sahabat
 saya Mohd Yusmadi. Untuk makluman Yang Berhormat, kami kerajaan baharu ini berbeza
 dengan kerajaan dahulu. Kerajaan dahulu dia dengar tetapi kami dengar dengan teliti. Itu
 bezanya. Itu yang pertama.
@@ -306,87 +305,87 @@ Yang Berhormat, hak untuk seorang anak dan sebagainya- mungkin perkiraan-perkira
 agama harus diambil kira. Jadi ini contoh-contoh.
 Jadi saya hendak beritahu Yang Berhormat, kita kerajaan yang peka dan akan
 sentiasa mengambil berat terhadap saranan SUHAKAM. Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Tuan Yang di-Pertua,Mendengar dengan teliti dan...
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,ANNOTATION,[Ketawa]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Tuan Yang di-Pertua,"Silakan Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1020,1020,Tuan Yang di-Pertua,Mendengar dengan teliti dan...
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1020,1020,ANNOTATION,[Ketawa]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1020,1020,Tuan Yang di-Pertua,"Silakan Yang
 Berhormat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Tuan Nga Hock Cheh,"Terima kasih Tuan Yang di-Pertua. Saya hendak tanya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1020,1020,Tuan Nga Hock Cheh,"Terima kasih Tuan Yang di-Pertua. Saya hendak tanya
 Yang Berhormat Timbalan Menteri."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, ini banyak orang yang cakap
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1020,1020,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, ini banyak orang yang cakap
 bila Yang Berhormat ini- Ahli-ahli Yang Berhormat, kalau hendak cakap ini keluar Dewan,
 *please*. Silakan Yang Berhormat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Tuan Nga Hock Cheh,"*Thank you.* Yang Berhormat Timbalan Menteri telah
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1020,1020,Tuan Nga Hock Cheh,"*Thank you.* Yang Berhormat Timbalan Menteri telah
 memberitahu bahawa Laporan Inkuiri SUHAKAM telah dibentangkan di Dewan Rakyat
 untuk di-*debate*-kan. Adakah laporan..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Tuan Yang di-Pertua,"Yang Berhormat, ia bukan di-*debate*..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Tuan Mohamed Hanipa bin Maidin,
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,ANNOTATION,"[Bercakap tanpa menggunakan pembesar
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1020,1020,Tuan Yang di-Pertua,"Yang Berhormat, ia bukan di-*debate*..."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1020,1020,Tuan Mohamed Hanipa bin Maidin,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1020,1020,ANNOTATION,"[Bercakap tanpa menggunakan pembesar
 suara]"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Tuan Nga Hock Cheh,"Tahunan. *Okay, it is the same report presented to the
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1020,1020,Tuan Nga Hock Cheh,"Tahunan. *Okay, it is the same report presented to the
 Dewan Negara…*"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Tuan Mohamed Hanipa bin Maidin,
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,ANNOTATION,"[Bercakap tanpa menggunakan pembesar
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1020,1020,Tuan Mohamed Hanipa bin Maidin,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1020,1020,ANNOTATION,"[Bercakap tanpa menggunakan pembesar
 suara]"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Tuan Yang di-Pertua,"Soalan, soalan. Jangan *debate*. Soalan Yang Berhormat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Tuan Nga Hock Cheh,"*If it is the same report presented why not to Dewan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1020,1020,Tuan Yang di-Pertua,"Soalan, soalan. Jangan *debate*. Soalan Yang Berhormat."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1020,1020,Tuan Nga Hock Cheh,"*If it is the same report presented why not to Dewan
 Negara?*"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Tuan Yang di-Pertua,"Okey, adakah laporan tersebut ini dibentangkan di Dewan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1020,1020,Tuan Yang di-Pertua,"Okey, adakah laporan tersebut ini dibentangkan di Dewan
 Negara?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Tuan Mohamed Hanipa bin Maidin,"Soalan yang ditanyakan oleh Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1020,1020,Tuan Mohamed Hanipa bin Maidin,"Soalan yang ditanyakan oleh Yang
 Berhormat Senator tadi lebih kepada fasal Orang Asli ya, Laporan Inkuiri Orang Asli. Akan
 tetapi yang saya nyatakan tadi Yang Berhormat, melibatkan Laporan Tahunan SUHAKAM
 yang baru dibentangkan. Jadi itu adalah satu laporan yang berbeza. Jadi yang
 dibangkitkan ini berkaitan Orang Asli, Laporan Inkuiri 2013. Yang Berhormat, jadi *it is a
 different* laporan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Tuan Yang di-Pertua,"Yang Berhormat Timbalan Menteri, pertanyaan Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1020,1020,Tuan Yang di-Pertua,"Yang Berhormat Timbalan Menteri, pertanyaan Yang
 Berhormat Senator itu adakah laporan tahunan SUHAKAM..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Tuan Mohamed Hanipa bin Maidin,"Tidak, tidak..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Tuan Yang di-Pertua,...Juga dibentangkan di...
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Tuan Mohamed Hanipa bin Maidin,"Tidak, tidak. Untuk Orang Asli pun
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1020,1020,Tuan Mohamed Hanipa bin Maidin,"Tidak, tidak..."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1020,1020,Tuan Yang di-Pertua,...Juga dibentangkan di...
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1020,1020,Tuan Mohamed Hanipa bin Maidin,"Tidak, tidak. Untuk Orang Asli pun
 sebenarnya kedua-dua Dewan belum dibentangkan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Tuan Yang di-Pertua,"Bukan, laporan tahunan seperti yang di..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Tuan Mohamed Hanipa bin Maidin,"Akan dibentangkan di sini. Ini saya- Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1020,1020,Tuan Yang di-Pertua,"Bukan, laporan tahunan seperti yang di..."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1020,1020,Tuan Mohamed Hanipa bin Maidin,"Akan dibentangkan di sini. Ini saya- Yang
 Berhormat, saya tidak ada apa-apa jawapan. Saya minta maaf."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Tuan Yang di-Pertua,Okey.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Tuan Mohamed Hanipa bin Maidin,"Akan tetapi Yang Berhormat boleh *request*-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1020,1020,Tuan Yang di-Pertua,Okey.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1020,1020,Tuan Mohamed Hanipa bin Maidin,"Akan tetapi Yang Berhormat boleh *request*-
 lah."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Tuan Nga Hock Cheh,"Dewan Negara juga *is part of Parliament. What is good
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1020,1020,Tuan Nga Hock Cheh,"Dewan Negara juga *is part of Parliament. What is good
 for the* Dewan Rakyat, *it should also be similarly presented here for our attention.*"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Tuan Yang di-Pertua,"Okey. Terima kasih Yang Berhormat. Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1020,1020,Tuan Yang di-Pertua,"Okey. Terima kasih Yang Berhormat. Yang Berhormat
 Timbalan Menteri sudah memberitahu Dewan kalau tidak diberi di Dewan Negara, Yang
 Berhormat boleh minta. *So*, kalau saya sebagai Tuan Yang di-Pertua Dewan Negara ingin
 memberitahu kepada Yang Berhormat Timbalan Menteri jikalau boleh tolong edarkan
 kepada Ahli-ahli Dewan Negara."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Tuan Mohamed Hanipa bin Maidin,"Tuan Yang di-Pertua, saya baru dapat satu
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1020,1020,Tuan Mohamed Hanipa bin Maidin,"Tuan Yang di-Pertua, saya baru dapat satu
 nota daripada pihak belakang ini. Laporan tahunan, untuk berita gembira. Semua Laporan
 Tahunan SUHAKAM akan dibentangkan di Dewan Negara."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Tuan Yang di-Pertua,Terima kasih. Silakan Yang Berhormat.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Tuan Adrian Banie Lasimbang,"Terima kasih Tuan Yang di-Pertua. Soalan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1020,1020,Tuan Yang di-Pertua,Terima kasih. Silakan Yang Berhormat.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1020,1020,Tuan Adrian Banie Lasimbang,"Terima kasih Tuan Yang di-Pertua. Soalan
 saya, soalan tambahan ini memandangkan laporan inkuiri ini sudah lama, dan isu-isu yang
 diambil di dalam syor-syor ini sangat penting bagi masyarakat Orang Asli dan Orang Asal.
 Laporan ini bukan hanya untuk Orang Asli tetapi juga merangkumi Orang Asal Sabah dan
 Sarawak."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1030,Tuan Adrian Banie Lasimbang,"Jadi soalan saya adakah pihak kementerian akan melibatkan Bahagian Hal
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1030,1030,Tuan Adrian Banie Lasimbang,"Jadi soalan saya adakah pihak kementerian akan melibatkan Bahagian Hal
 Ehwal Undang-undang. Ini kerana kebanyakan daripada syor-syor ini ada kaitannya
 dengan undang-undang yang harus dipinda untuk membolehkan syor-syor ini dapat
 dilaksanakan.
 Jadi apakah *taskforce* yang disebutkan tadi itu melibatkan *AG’s Chambers*
 ataupun Bahagian Hal Ehwal Undang-undang di Jabatan Perdana Menteri. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1030,Tuan Yang di-Pertua,Jawapan yang sama Yang Berhormat.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1030,Tuan Mohamed Hanipa bin Maidin,"Untuk makluman Yang Berhormat, yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1030,1030,Tuan Yang di-Pertua,Jawapan yang sama Yang Berhormat.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1030,1030,Tuan Mohamed Hanipa bin Maidin,"Untuk makluman Yang Berhormat, yang
 saya sebut walaupun mungkin tidak dinyatakan tentang AGC tetapi saya percaya ia juga
 terlibat tetapi Majlis Peguam terlibat. Jadi saranan-saranan itu memang Yang Berhormat
 akan di ambil kira tentang perundangan itu."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1030,Tuan Yang di-Pertua,"Yang Berhormat berkenaan dengan pembentangan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1030,1030,Tuan Yang di-Pertua,"Yang Berhormat berkenaan dengan pembentangan
 Laporan Tahunan SUHAKAM itu sebenarnya buat masa sekarang ini harusnya diletakkan
 di atas meja tetapi oleh kerana *Audit Report* dan sebagainya tebal sangat. *So,* mereka
 tidak termasukkan pada masa sekarang. Dalam satu, dua hari lagi dia akan bentangkan.
-Silakan Yang Berhormat Puan Hajah Nuridah binti Mohd Salleh."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Puan Nuridah binti Mohd Salleh,"minta Menteri Pengangkutan menyatakan,
+Silakan Yang Berhormat Puan Hajah Nuridah binti Mohd Salleh.
+**3. Puan Nuridah binti Mohd Salleh** minta Menteri Pengangkutan menyatakan,
 sejauh mana penggunaan *Internet of Thing* (IoT) dalam meningkatkan kemampuan
 kapasiti Lapangan Terbang Sultan Mahmud Terengganu terutamanya untuk menerima
 lebih ramai pelancong dari luar negara."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Timbalan Menteri Pengangkutan [Dato' Kamarudin Jaffar],"Terima kasih,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1030,1030,Timbalan Menteri Pengangkutan [Dato' Kamarudin Jaffar],"Terima kasih,
 Tuan Yang di-Pertua. *Assalamualaikum warahmatullahi wabarakatuh* dan salam
 sejahtera. Untuk makluman Ahli Yang Berhormat Senator Puan Nuridah, Teras Dua
 Dasar Pengangkutan Negara 2019-2030 memperuntukkan inisiatif yang meningkatkan
@@ -420,9 +419,9 @@ pihak Malaysia *Airport* dan Kerajaan Negeri Terengganu telah mengadakan beberap
 perbincangan dan rundingan yang berterusan untuk membawa masuk penumpang
 *charter* terutama dari negara China di lapangan terbang ini. Terima kasih Tuan Yang di-
 Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Tuan Yang di-Pertua,"Terima kasih, Yang Berhormat Menteri, soalan tambahan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1030,1030,Tuan Yang di-Pertua,"Terima kasih, Yang Berhormat Menteri, soalan tambahan
 Yang Berhormat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Puan Hajah Nuridah binti Mohd Salleh,"Terima kasih, Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1030,1030,Puan Hajah Nuridah binti Mohd Salleh,"Terima kasih, Yang Berhormat
 Timbalan Menteri.
 Tuan Yang di-Pertua, sebenarnya perkara ini adalah satu perkara mendesaklah
 bagi Terengganu untuk mendapatkan satu lapangan terbang yang cukup lengkap dengan
@@ -436,9 +435,9 @@ terbang antarabangsa lain dalam kalangan kumpulan syarikat penerbangan dan di
 *website* utama? Apakah jaminan kementerian bahawa *facility* penerbangan semasa ini
 setaraf dengan lapangan antarabangsa sehingga dapat menambahkan pelancong dalam
 Tahun Melawat Malaysia tahun hadapan, *insya-Allah.* Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Tuan Yang di-Pertua,"Walaupun sebahagian besar sudah dijawab. Silakan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1030,1030,Tuan Yang di-Pertua,"Walaupun sebahagian besar sudah dijawab. Silakan
 Yang Berhormat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Dato' Kamarudin Jaffar,"Terima kasih, Tuan Yang di-Pertua, terima kasih Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1030,1030,Dato' Kamarudin Jaffar,"Terima kasih, Tuan Yang di-Pertua, terima kasih Yang
 Berhormat Senator. Sebagaimana yang saya sebutkan tadi, kapasiti penumpang yang
 menggunakan lapangan terbang hanyalah sekitar- kalau kiraan saya tadi 65 peratus
 sahaja daripada kapasiti maksimum yang boleh menggunakan lapangan terbang tersebut.
@@ -457,25 +456,25 @@ Akan tetapi, ia tidak diteruskan- sama juga oleh kerana kapasiti penggunaannya t
 memberikan keuntungan komersial dan sebagainya kepada syarikat-syarikat
 penerbangan yang mengendalikannya- Tabung Haji, *Malaysia Airlines* dan sebagainya.
 Jadi ini keadaan yang ada di lapangan terbang Kuala Terengganu sekarang ini."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Tuan Yang di-Pertua,"Yang Berhormat Menteri, berkenaan dengan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1030,1030,Tuan Yang di-Pertua,"Yang Berhormat Menteri, berkenaan dengan
 penerbangan dari Terengganu ke Pulau Pinang. Bolehkah Yang Berhormat Menteri ini
 buat rayuan kepada syarikat penerbangan?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Dato' Kamarudin Jaffar,"Boleh, tetapi sudah tentu kita tertakluk kepada
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1030,1030,Dato' Kamarudin Jaffar,"Boleh, tetapi sudah tentu kita tertakluk kepada
 perkiraan, pertimbangan komersial yang syarikat-syarikat masing-masing lakukan. Jika ia
 memberi keuntungan, sudah tentu syarikat-syarikat ini akan melakukan. Akan tetapi, jika
 tidak mungkin mereka tidak. Kita tidak boleh memaksa syarikat-syarikat ini untuk
 melakukan sesuatu yang tidak memberikan keuntungan kepada mereka."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Tuan Yang di-Pertua,"Okey, terima kasih Yang Berhormat Menteri."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Datuk Razali bin Idris,
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,ANNOTATION,[Bangun]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Tuan Yang di-Pertua,"Silakan Yang Berhormat, Terengganu, Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1030,1030,Tuan Yang di-Pertua,"Okey, terima kasih Yang Berhormat Menteri."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1030,1030,Datuk Razali bin Idris,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1030,1030,ANNOTATION,[Bangun]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1030,1030,Tuan Yang di-Pertua,"Silakan Yang Berhormat, Terengganu, Yang Berhormat
 Razali."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Datuk Razali bin Idris,"Terima kasih, Tuan Yang di-Pertua. Saya hendak tanya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1030,1030,Datuk Razali bin Idris,"Terima kasih, Tuan Yang di-Pertua. Saya hendak tanya
 sikit sahaja soalan tambahan. Berapa penerbangan *benchmark* kalau kita hendak
 kategorikan lapangan terbang tersebut adalah internasional*?* Terima kasih, Tuan Yang di-
 Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Tuan Yang di-Pertua,Silakan.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Dato' Kamarudin Jaffar,"Sebenarnya tidak ada *benchmark* yang khusus untuk
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1030,1030,Tuan Yang di-Pertua,Silakan.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1030,1030,Dato' Kamarudin Jaffar,"Sebenarnya tidak ada *benchmark* yang khusus untuk
 menaik taraf ataupun meningkatkan penggunaan mana-mana lapangan terbang daripada
 lapangan terbang domestik kepada lapangan terbang antarabangsa. Apabila ada
 permintaan daripada syarikat-syarikat penerbangan untuk memulakan penerbangan
@@ -484,14 +483,14 @@ Maka pihak MAHB akan berurusan dengan imigresen dan kastam untuk
 mempunyai suasana di mana pegawai-pegawai yang berkaitan dengan penerbangan
 antarabangsa ditempatkan di lapangan terbang tersebut. Jadi tidak ada apa-apa
 *benchmark* yang khusus."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Tuan Yang di-Pertua,"Terima kasih, Yang Berhormat Menteri. Dipersilakan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1030,1030,Tuan Yang di-Pertua,"Terima kasih, Yang Berhormat Menteri. Dipersilakan
 Yang Berhormat Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1040,Prof Emeritus Tan Sri Dato' Seri Dr. Ibrahim Shah bin Abu Shah,"minta
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,▪ 1040,1040,Tuan Yang di-Pertua,"**4. Prof Emeritus Tan Sri Dato' Seri Dr. Ibrahim Shah bin Abu Shah** minta
 Menteri Pertanian dan Industri Asas Tani menyatakan, apakah kemudahan yang
 disediakan dari segi modal, geran atau pinjaman daripada kerajaan untuk penggiat
 pertanian terutamanya kepada wanita dan anak-anak muda."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1040,Tuan Yang di-Pertua,Silakan Yang Berhormat Menteri.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1040,Timbalan Menteri Pertanian dan Industri Asas Tani [Tuan Sim Tze Tzin],"Terima kasih Tuan Yang di-Pertua. Dalam usaha memperkukuhkan bidang agromakanan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,▪ 1040,1040,Tuan Yang di-Pertua,Silakan Yang Berhormat Menteri.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,▪ 1040,1040,Timbalan Menteri Pertanian dan Industri Asas Tani [Tuan Sim Tze Tzin],"Terima kasih Tuan Yang di-Pertua. Dalam usaha memperkukuhkan bidang agromakanan
 negara, MOA mengambil langkah proaktif melancarkan hala tuju Kementerian Pertanian
 dan Industri Asas Tani, Prioriti dan Strategi 2019-2020. Dokumen hala tuju ini
 mengandungi lima hala tuju yang dibangunkan bersama 18 strategi dan 51 inisiatif untuk
@@ -543,17 +542,17 @@ bawah program yang melibatkan peruntukan sebanyak RM62.8 juta bagi tujuan berska
 besar. Program ini menyasarkan sumbangan kepada pendapatan negara kasar sebanyak
 RM884.3 juta menjelang tahun 2020 dan mewujudkan sebanyak 4928 peluang pekerjaan.
 Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1040,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat. Yang Berhormat, saya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,▪ 1040,1040,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat. Yang Berhormat, saya
 ingat sudah cukup."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1040,Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah,"Saya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,▪ 1040,1040,Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah,"Saya
 setuju. Memang saya hendak soal pun tidak ada soalan sudah. Memang *solid* lah Yang
 Berhormat Menteri punya jawapan. Terima kasih banyaklah. *Thank you.*"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1040,Tuan Yang di-Pertua,Terima kasih.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1040,Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah,"Cuma saya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,▪ 1040,1040,Tuan Yang di-Pertua,Terima kasih.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,▪ 1040,1040,Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah,"Cuma saya
 hendak tanya..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1040,Tuan Yang di-Pertua,Ada lagi*?...*
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1040,ANNOTATION,[Dewan ketawa]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1040,Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah,"...Sebelum
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,▪ 1040,1040,Tuan Yang di-Pertua,Ada lagi*?...*
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,▪ 1040,1040,ANNOTATION,[Dewan ketawa]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,▪ 1040,1040,Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah,"...Sebelum
 itu saya patut- kita patut mengucapkan tahniah kepada Yang Berhormat Menteri, jawapan
 yang *solid* dan juga saya secara peribadi mengucapkan tahniah kepada kementerian
 kerana bidang *agriculture*, pemakanan memang bidang yang cukup penting. Tidak ada
@@ -569,11 +568,11 @@ Persoalan saya, semenjak tahun 2018 sampailah masa kini, berapa peratus
 graduan menganggur dan berapa orang yang telah diberikan bantuan melalui projek ini?
 *A simple question* sebab saya lebih risau graduan selalu kompelin*.* Itu soalan saya. Terima
 kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1040,Tuan Yang di-Pertua,"Yang Berhormat, berkenaan dengan orang muda dan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,▪ 1040,1040,Tuan Yang di-Pertua,"Yang Berhormat, berkenaan dengan orang muda dan
 wanita telah dijawab tetapi berkenaan dengan graduan bukan di bawah bidang kuasa
 Kementerian Pertanian. Ini terpulang kepada Yang Berhormat Menteri kalau hendak
 jawab."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1040,Tuan Sim Tze Tzin,"Terima kasih. Saya jawab sekadar yang bolehlah ya. Tahun
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,▪ 1040,1040,Tuan Sim Tze Tzin,"Terima kasih. Saya jawab sekadar yang bolehlah ya. Tahun
 2018, pengimportan makanan, agromakanan, *the import bill* adalah RM50.15 bilion. Ini
 agak besar tetapi turun sedikit daripada tahun 2017. Tahun 2017 lebih kurang RM52 bilion.
 Jadi, kita mempunyai *high import bill.* Mengapa begitu? Ini adalah kerana tanah yang di-
@@ -593,7 +592,7 @@ mereka boleh melonjak. Kalau kita *rely on the existing farmers* tidak mencukupi
 petani-petani semakin bersara dan mereka telah tua dan *aging farmers.* Saya sangat
 berterima kasih kepada Yang Berhormat Senator yang bertanya soalan yang sangat
 bagus iaitu bagaimana kita boleh membantu graduan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Tuan Sim Tze Tzin,"Kita telah semakin memberi fokus kepada Agropreneur Muda yang mempunyai
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1050,1050,Tuan Sim Tze Tzin,"Kita telah semakin memberi fokus kepada Agropreneur Muda yang mempunyai
 kapasiti. Bukanlah yang selalu datang hendak minta geran dan projek, pakai nama kawan-
 kawan, dia kenal Menteri dia boleh dapat, tidak. Sekarang kita fokus kepada yang ada
 kapasiti. Jadi, kita fokus kepada *second generation farmers* dan *increasingly* kalau yang
@@ -606,12 +605,12 @@ boleh mengurus ladang dengan baik maka mereka boleh meningkatkan hasil pertanian
 mereka. Itu adalah satu trend yang baru di mana orang yang profesional dan graduan
 masuk dalam pertanian. Saya nampak itulah satu yang sangat atau *very positive* dari segi
 kerajaan. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Tuan Yang di-Pertua,"Cukuplah Yang Berhormat fasal pertanian ini. Silakan
-Yang Berhormat Puan Lim Hui Ying."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1050,Puan Lim Hui Ying,"minta Menteri Komunikasi dan Multimedia menyatakan,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1050,1050,Tuan Yang di-Pertua,"Cukuplah Yang Berhormat fasal pertanian ini. Silakan
+Yang Berhormat Puan Lim Hui Ying.
+**5. Puan Lim Hui Ying** minta Menteri Komunikasi dan Multimedia menyatakan,
 perancangan untuk menaik taraf perkhidmatan dan pengisian program televisyen di
 bawah Radio Televisyen Malaysia (RTM)."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1050,Timbalan Menteri Komunikasi dan Multimedia [Tuan Eddin Syazlee Shith],"*Bismillahi Rahmani Rahim.* Dengan izin Tuan Yang di-Pertua. Untuk maklumat Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1050,1050,Timbalan Menteri Komunikasi dan Multimedia [Tuan Eddin Syazlee Shith],"*Bismillahi Rahmani Rahim.* Dengan izin Tuan Yang di-Pertua. Untuk maklumat Yang
 Berhormat Senator, Jabatan Penyiaran Malaysia atau RTM sebagai penyiar utama.
 Kerajaan Malaysia telah melaksanakan pelbagai usaha transformasi dan menaik tarafkan
 perkhidmatannya demi untuk memberikan yang terbaik kepada khalayak selain
@@ -657,18 +656,18 @@ antarabangsa dan membawakan artis-artis veteran dan terbaharu dalam setiap
 penerbitannya bagi menarik minat ramai. Menuju ke hadapan, RTM juga akan
 membawakan saluran khusus TV yang akan menyalurkan maklumat terkini secara berita
 sahih dan tepat untuk memakmurkan kehidupan rakyat. Sekian."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1050,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat. Saya gembiralah nampak
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1050,1050,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat. Saya gembiralah nampak
 Yang Berhormat ini sudah segar, sudah sihat..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1050,ANNOTATION,[Disampuk]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1050,Tuan Yang di-Pertua,"Mudah-mudahan- kena jaga
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1050,1050,ANNOTATION,[Disampuk]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1050,1050,Tuan Yang di-Pertua,"Mudah-mudahan- kena jaga
 kesihatan sedikit. Jangan terlalu banyak kerja pula, kena jaga kesihatan. Silakan Yang
 Berhormat soalan tambahan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1050,Puan Lim Hui Ying,"Terima kasih Yang Berhormat Timbalan Menteri.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1050,1050,Puan Lim Hui Ying,"Terima kasih Yang Berhormat Timbalan Menteri.
 Memandangkan populariti teknologi baharu seperti *Netflix* yang menyediakan hiburan atas
 permintaan atau *video on demand,* dengan izin, di kalangan orang awam, apakah
 langkah-langkah yang akan diambil oleh kementerian untuk memastikan saluran media
 seperti RTM dapat bersaing dengan mereka? Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1050,Tuan Eddin Syazlee Shith,"Terima kasih, dengan izin Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1050,1050,Tuan Eddin Syazlee Shith,"Terima kasih, dengan izin Tuan Yang di-Pertua.
 Terima kasih kepada Yang Berhormat di atas soalan tambahan. Cuma soalan Yang
 Berhormat ini lebih terjurus kepada penyiaran *Netflix* yang mana saya percaya adalah
 tidak adil untuk kita membandingkan di antara *Netflix* dengan RTM kerana kita mempunyai
@@ -689,7 +688,7 @@ bulan selepas kerajaan baharu memerintah. Kita cuba melakukan *rebranding,* deng
 Tuan Yang di-Pertua, dan juga penambahbaikan dari segi mutu penyiaran. Itu satu
 pencapaian yang saya kira cukup baik dan sehingga ke hari ini RTM masih meneruskan
 usaha-usaha melakukan penambahbaikan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1050,Tuan Alan Ling Sie Kiong,"Terima kasih Tuan Yang di-Pertua, terima kasih
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1050,1050,Tuan Alan Ling Sie Kiong,"Terima kasih Tuan Yang di-Pertua, terima kasih
 Yang Berhormat Timbalan Menteri. Mengikut pengetahuan saya, untuk berita TV di
 Sarawak, kita hanya ada Berita TV dalam Bahasa Melayu dan juga bahasa Iban di TV
 Okey. Soalan saya adalah, sama ada kementerian bercadang untuk mewujudkan kru TV
@@ -699,7 +698,7 @@ juga bahasa Inggeris adalah bahasa rasmi di Sarawak. Bagi saya, kewujudan salura
 Mandarin dan Inggeris selain daripada Bahasa Melayu dan Iban akan meningkatkan
 *audience* untuk RTM yang menepati keperluan tempatan. Itu cadangan saya, sama ada
 kementerian bercadang untuk berbuat demikian? Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1100,Tuan Eddin Syazlee Shith,"Dengan izin, Tuan Yang di-Pertua. Terima kasih,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1100,1100,Tuan Eddin Syazlee Shith,"Dengan izin, Tuan Yang di-Pertua. Terima kasih,
 Yang Berhormat di atas soalan tambahan tersebut.
 Untuk makluman Yang Berhormat, saya percaya RTM sentiasa mengamalkan
 sikap yang proaktif dalam menerima maklum balas yang sedemikian. Kalau ini
@@ -717,7 +716,7 @@ di TV2 dapat dinikmati oleh seluruh rakyat di seluruh negara. Itu sememangnya su
 ada tetapi mungkin Yang Berhormat maksudkan ini dari segi waktu siaran dan mungkin
 jumlah siaran berita-berita berkenaan. Itu juga akan dikaji mengikut keperluan dengan
 mengimbangi lapan bahasa lain yang telah sedia ada disediakan oleh RTM."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1100,Tuan Ismail bin Yusop,"Terima kasih, Tuan Yang di-Pertua. Soalan tambahan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1100,1100,Tuan Ismail bin Yusop,"Terima kasih, Tuan Yang di-Pertua. Soalan tambahan
 saya berkait dengan soal pengisian program. Ringkas sahaja, dengan penambahan
 pengundi baru yang akan meningkat sampai lebih 23 juta untuk pilihan raya yang akan
 datang, apakah pihak RTM sebagai media rasmi kerajaan mempunyai- boleh tidak
@@ -725,7 +724,7 @@ diberikan sedikit ulasan tentang perancangan. Ada atau tidak perancangan dalam k
 pendidikan literasi politik contohnya dalam pendidikan kewarganegaraan ataupun
 pendidikan demokrasi. Apakah pihak RTM mempunyai perancangan ke arah itu. Pohon
 penjelasan daripada pihak kementerian. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1100,Tuan Eddin Syazlee Shith,"Terima kasih, Tuan Yang di-Pertua. Berkenaan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1100,1100,Tuan Eddin Syazlee Shith,"Terima kasih, Tuan Yang di-Pertua. Berkenaan
 soalan Yang Berhormat, literasi politik pendidikan. Dari segi politik ini, setakat ini kita
 belum menerima sebarang cadangan yang khusus berkenaan pendidikan literasi politik
 tetapi sekiranya ianya bagus dan baik, itu adalah perkara yang saya fikirkan sebagai
@@ -736,24 +735,24 @@ boleh diisi dan boleh digunakan. Cuma kita perlu membuat kajian yang lebih spesi
 dalam bentuk dan keadaan seperti mana yang kita perlukan pembelajaran yang berkaitan
 dengan literasi politik ini. Satu cadangan yang baik dan saya akan bawa untuk diangkat
 dan dipertimbangkan oleh pihak kementerian. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1100,Tuan Yang di-Pertua,"Terima kasih, Yang Berhormat Timbalan Menteri. Ahli-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1100,1100,Tuan Yang di-Pertua,"Terima kasih, Yang Berhormat Timbalan Menteri. Ahli-
 ahli Yang Berhormat, sukacita dimaklumkan bahawa bersama-sama kita di Dewan yang
 mulia ini ialah rombongan dari Dewan Undangan Negeri Melaka yang diketuai oleh Yang
 Berhormat Datuk Wira Omar bin Jaafar, Speaker Dewan Undangan Negeri Melaka,
 bersama Yang Berhormat Timbalan Speaker, Yang Berhormat Datuk Dr. Wong Fort Pin..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1100,ANNOTATION,[Tepuk]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1100,Tuan Yang di-Pertua,"Kepada Yang Berhormat Datuk Wira Omar bin Jaafar serta rombongan, Dewan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1100,1100,ANNOTATION,[Tepuk]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1100,1100,Tuan Yang di-Pertua,"Kepada Yang Berhormat Datuk Wira Omar bin Jaafar serta rombongan, Dewan
 ini mengalu-alukan kehadiran mereka ke Dewan yang mulia ini. Sekarang boleh tepuk..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1100,ANNOTATION,[Tepuk]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1100,Tuan Yang di-Pertua,"Sila duduk, Yang Berhormat. Semoga dengan kehadiran Yang Berhormat Datuk
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1100,1100,ANNOTATION,[Tepuk]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1100,1100,Tuan Yang di-Pertua,"Sila duduk, Yang Berhormat. Semoga dengan kehadiran Yang Berhormat Datuk
 Wira Omar bin Jaafar serta Timbalan Speaker dan rombongan ini akan dapat
 mengukuhkan silaturahim di antara Parlimen Malaysia dan Dewan Undangan Negeri
-Melaka."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1100,Datuk Lee Tian Sing,"minta Menteri Dalam Negeri menyatakan, kepentingan
+Melaka.
+**6. Datuk Lee Tian Sing** minta Menteri Dalam Negeri menyatakan, kepentingan
 Akta Kesalahan Keselamatan (Langkah-langkah Khas) 2012 (SOSMA) sedangkan
 Malaysia sedang menuju ke arah sebuah negara maju dan berjanji ia tidak akan disalah
 gunakan oleh pihak berkuasa untuk kepentingan politik."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1100,Timbalan Menteri Dalam Negeri [Datuk Mohd Azis bin Jamman],"Terima
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1100,1100,Timbalan Menteri Dalam Negeri [Datuk Mohd Azis bin Jamman],"Terima
 kasih, Tuan Yang di-Pertua. Terima kasih, Yang Berhormat Senator Datuk Lee Tian Sing.
 Izinkan saya menjawab soalan ini secara bersekali dengan tiga soalan lain yang turut
 membincangkan perkara yang sama oleh Yang Berhormat Senator Puan Raj Munni binti
@@ -805,13 +804,13 @@ Perkara 9- Larangan Buang Negeri dan Kebebasan Bergerak; Perkara 10- Kebebasan
 Berhimpun, Bercakap dan Menubuhkan Persatuan; dan Perkara 13- Hak Terhadap Harta.
 Rang Undang-undang SOSMA (Pindaan) 2019 ini dijangka akan dibentangkan pada sesi
 Parlimen akan datang tertakluk kepada persetujuan Jemaah Menteri. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1100,Datuk Lee Tian Sing,"Terima kasih kepada Tuan Yang di-Pertua dan juga terima
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1100,1100,Datuk Lee Tian Sing,"Terima kasih kepada Tuan Yang di-Pertua dan juga terima
 kasih kepada Yang Berhormat Timbalan Menteri atas jawapan beliau. Soalan tambahan
 saya adalah satu, walaupun Malaysia memerlukan akta-akta untuk menjamin
 keselamatan negara, namun wujud bahagian-bahagian dalam Akta Kesalahan
 Keselamatan (Langkah-langkah Khas) 2012 (SOSMA) yang tidak mematuhi
 Perlembagaan Malaysia Artikel 5(2)."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1110,Datuk Lee Tian Sing,"Ini tidak dapat meyakinkan orang ramai bahawa pihak berkuasa tidak akan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1110,1110,Datuk Lee Tian Sing,"Ini tidak dapat meyakinkan orang ramai bahawa pihak berkuasa tidak akan
 menyalahgunakan kuasa untuk kepentingan sendiri. Apakah Menteri Dalam Negeri akan
 mempertimbangkan keperluan menambahkan bahagian menyekat pihak berkuasa
 supaya mengurangkan kemungkinan salah guna kuasa?
@@ -825,7 +824,7 @@ dalam kesalahan keselamatan”.*
 Adakah Menteri Dalam Negeri akan mempertimbangkan meminda seksyen 4(1)
 supaya mengikut Perlembagaan Persekutuan yang menjamin kebebasan asasi diri
 warganegara Malaysia? Itulah soalan saya."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1110,Datuk Mohd Azis bin Jamman,"Terima kasih dengan soalan tambahan tadi.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1110,1110,Datuk Mohd Azis bin Jamman,"Terima kasih dengan soalan tambahan tadi.
 Tuan Yang di-Pertua, sebagaimana saya sebutkan tadi, sebenarnya apa yang disebutkan
 oleh Yang Berhormat tadi itu, itulah merupakan di antara perkara-perkara yang memang
 sudah ada di dalam pertimbangan dan kajian jawatankuasa yang telah pun kita tubuhkan.
@@ -847,14 +846,14 @@ Oleh itu, saya ingin tegaskan di sini bahawa tahanan yang dilakukan oleh pihak
 polis pastinya akan mengikut SOP yang ada dan sudah semestinyalah bila tahanan itu
 dilakukan, ada maklumat-maklumat yang telah diyakini oleh pihak polis yang memerlukan
 pihak polis untuk menyiasat perkara itu. Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1110,Puan Raj Munni binti Sabu,"Tuan Yang di-Pertua, soalan tambahan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1110,Tuan Yang di-Pertua,"Ada, Yang Berhormat. Oleh kerana soalan itu bersamaan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1110,1110,Puan Raj Munni binti Sabu,"Tuan Yang di-Pertua, soalan tambahan."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1110,1110,Tuan Yang di-Pertua,"Ada, Yang Berhormat. Oleh kerana soalan itu bersamaan
 dengan soalan-soalan yang berkenaan dengan yang dibangkitkan oleh Ahli-ahli Yang
 Berhormat, saya kena beri laluan kepada Ahli-ahli Yang Berhormat yang telah
 membentangkan soalan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1110,Puan Raj Munni binti Sabu,"Saya ada soalan, saya yang bertanya."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1110,Tuan Yang di-Pertua,Ya.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1110,Puan Raj Munni binti Sabu,"Tuan Yang di-Pertua, dalam SOSMA ini, seseorang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1110,1110,Puan Raj Munni binti Sabu,"Saya ada soalan, saya yang bertanya."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1110,1110,Tuan Yang di-Pertua,Ya.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1110,1110,Puan Raj Munni binti Sabu,"Tuan Yang di-Pertua, dalam SOSMA ini, seseorang
 yang dituduh di bawah kesalahan ini tidak boleh dijamin melainkan mereka adalah orang
 yang berada di bawah umur ataupun wanita ataupun orang-orang yang sakit. Malahan,
 sekiranya dia didapati bersalah pun, di akhir perbicaraan, orang tersebut tetap akan
@@ -866,7 +865,7 @@ dalam kajian, ia akan diperbaiki. Kenapa tidak akta ini diberhentikan terus? Ken
 kita menggunakan peruntukan-peruntukan lain sementara daripada terus melaksanakan
 satu undang-undang yang kita tahu bersifat drakonian dan sangat bertentangan dengan
 dasar dan prinsip Kerajaan Malaysia Baharu?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1110,Datuk Mohd Azis bin Jamman,"Tuan Yang di-Pertua, terima kasih dengan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1110,1110,Datuk Mohd Azis bin Jamman,"Tuan Yang di-Pertua, terima kasih dengan
 soalan tambahan tadi. Sebagaimana saya sebut dalam jawapan saya bahawa kita
 mengambil maklum tentang apa yang disebutkan tentang kegusaran rakyat, masyarakat
 tentang isu hak asasi.
@@ -899,7 +898,7 @@ dibahas nanti dan, *inshaa Allah*, bilamana perbahasan sudah dilakukan, kita aka
 apakah kesudahan kepada rang undang-undang ini. Jika ianya diluluskan di peringkat
 Parlimen, saya yakin, *inshaa Allah*, undang-undang ini diyakini mampu mengawal
 keselamatan negara kita. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1110,Datuk Mohan A/L Thangarasu,"Terima kasih Tuan Yang di-Pertua. Cuma, saya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1110,1110,Datuk Mohan A/L Thangarasu,"Terima kasih Tuan Yang di-Pertua. Cuma, saya
 hendak tanya Yang Berhormat Timbalan Menteri, adakah LTT wujud di negara kita?
 Adakah organisasi itu?
 Cuma, saya hendak beritahu sedikit fasal LTT, apa yang saya tahu, Tuan Yang
@@ -913,21 +912,21 @@ negara di Sri Lanka. Itu sahaja. Yang mangsa-mangsa sebelum ini, kita pun- saya 
 tidak tahu sama ada Tuan Yang di-Pertua ada bagi duit atau tidak ada tetapi saya pernah
 bagi, saya pernah bagi sumbangan. Jadi, saya tidak faham yang mereka kena tangkap
 ini, kadang-kadang saya tengok mereka tangkap pun..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1110,Tuan Yang di-Pertua,"Yang Berhormat, itu pendapat Yang Berhormat"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1110,ANNOTATION,[Ketawa]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1110,Tuan Yang di-Pertua,Ini penyiasatan polis.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1110,Datuk Mohan A/L Thangarasu,"Saya faham, saya faham, tetapi sepertimana
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1110,1110,Tuan Yang di-Pertua,"Yang Berhormat, itu pendapat Yang Berhormat"
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1110,1110,ANNOTATION,[Ketawa]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1110,1110,Tuan Yang di-Pertua,Ini penyiasatan polis.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1110,1110,Datuk Mohan A/L Thangarasu,"Saya faham, saya faham, tetapi sepertimana
 Yang Berhormat..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1110,Tuan Yang di-Pertua,Saya minta Yang Berhormat Timbalan Menteri...
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1110,Datuk Mohan A/L Thangarasu,Yang Berhormat Kula pun kata...
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1110,Tuan Yang di-Pertua,"Timbalan Menteri, siasat dia pasal dia bagi duit"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1110,ANNOTATION,[Ketawa]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1110,Datuk Mohan A/L Thangarasu,"Yang Berhormat Kula pun kata sebelum ini
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1110,1110,Tuan Yang di-Pertua,Saya minta Yang Berhormat Timbalan Menteri...
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1110,1110,Datuk Mohan A/L Thangarasu,Yang Berhormat Kula pun kata...
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1110,1110,Tuan Yang di-Pertua,"Timbalan Menteri, siasat dia pasal dia bagi duit"
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1110,1110,ANNOTATION,[Ketawa]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1110,1110,Datuk Mohan A/L Thangarasu,"Yang Berhormat Kula pun kata sebelum ini
 mengatakan ini fasal isu Tanjong Piai. Ada *statement* saya tengok di *Malaysiakini*. Jadi
 saya hendak tahu, kenapa mereka ditahan?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1110,Tuan Yang di-Pertua,"Ya, atas dasar perikemanusiaanlah. *So*, soalan itu hanya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1110,1110,Tuan Yang di-Pertua,"Ya, atas dasar perikemanusiaanlah. *So*, soalan itu hanya
 satu saja. Adakah LTT di negara Malaysia ini?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1110,Datuk Mohd Azis bin Jamman,"Tuan Yang di-Pertua, untuk makluman, saya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1110,1110,Datuk Mohd Azis bin Jamman,"Tuan Yang di-Pertua, untuk makluman, saya
 rasa Yang Berhormat Senator juga sedia maklum bahawa hari ini, *in fact* sebelum
 Kerajaan Pakatan Harapan pun, LTT ini disenaraikan sebagai satu gerakan kumpulan
 pengganas yang memberi ancaman kepada negara dan ini masih ada di dalam senarai
@@ -938,16 +937,16 @@ Berhormat tadi.
 Oleh kerana kes ini masih lagi di peringkat mahkamah, saya tidak boleh komen
 lebih lanjut. Cuma apa yang saya ingin jelaskan di sini, LTT masih lagi disenaraikan
 sebagai kumpulan pengganas di negara kita. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1110,Tuan Yang di-Pertua,"Silakan Yang Berhormat Datuk Razali. Sokong kerajaan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1110,1110,Tuan Yang di-Pertua,"Silakan Yang Berhormat Datuk Razali. Sokong kerajaan
 sikit"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1110,ANNOTATION,[Ketawa]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1120,Datuk Razali bin Idris,"Terima kasih Tuan Yang di-Pertua. Saya teruja dengan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1110,1110,ANNOTATION,[Ketawa]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1120,1120,Datuk Razali bin Idris,"Terima kasih Tuan Yang di-Pertua. Saya teruja dengan
 jawapan yang diberikan oleh Yang Berhormat Timbalan Menteri. Akan tetapi ada soalan
 sedikit daripada saya. Kalau dahulu kita tolak ISA. Selepas itu kerajaan wujudkan kembali
 SOSMA. Jadi sekarang kita nampak ada sebahagian daripada kita yang hendak tolak juga
 SOSMA. Jadi saya hendak tanya pihak kementerian, apakah beza di antara ISA dengan
 SOSMA. Terima kasih Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1120,Datuk Mohd Azis bin Jamman,"Tuan Yang di-Pertua terima kasih atas soalan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1120,1120,Datuk Mohd Azis bin Jamman,"Tuan Yang di-Pertua terima kasih atas soalan
 Yang Berhormat Senator tadi. Apa yang jelas jika dibandingkan SOSMA dengan ISA, ISA
 ini tahanan tanpa bicara. Dia boleh ditahan selama mana yang dirasakan oleh pihak
 PDRM untuk menahan orang ini tanpa perlu dibicarakan. Macam contoh di Amerika
@@ -958,52 +957,52 @@ maksimumnya 28 hari sebagaimana yang kita melalui perundangan- 28 hari, dan perk
 perkara lain lagi dan akan dibawa ke mahkamah Tuan Yang di-Pertua sebagaimana apa
 yang berlaku kepada LTTE. Mereka telah pun dibawa ke mahkamah, telah pun didakwa.
 Inilah perbezaannya di antara SOSMA dan ISA. Itu yang paling jelas sekali. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1120,Dato’ Dr. Ananthan A/L Somasundaram,"Tuan Yang di-Pertua, terima kasih
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1120,1120,Dato’ Dr. Ananthan A/L Somasundaram,"Tuan Yang di-Pertua, terima kasih
 Tuan Yang di-Pertua. Soalan saya, jika undang-undang yang dikaitkan dikatakan adalah
 sangat mustahak, mengapakah kerajaan selepas satu setengah tahun atau 18 bulan
 mengambil langkah membebaskan seseorang itu dengan denda sebanyak lebih kurang
 RM3,000. Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1120,Datuk Mohd Azis bin Jamman,Boleh ulang balik soalan? Saya tidak berapa...
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1120,Dato’ Dr. Ananthan A/L Somasundaram,"Jika undang-undang ini dikatakan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1120,1120,Datuk Mohd Azis bin Jamman,Boleh ulang balik soalan? Saya tidak berapa...
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1120,1120,Dato’ Dr. Ananthan A/L Somasundaram,"Jika undang-undang ini dikatakan
 sangat mustahak, kenapakah kerajaan ambil langkah untuk membebaskan seseorang itu
 selepas satu setengah tahun dengan denda sebanyak lebih kurang RM3000."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1120,Tuan Yang di-Pertua,Selepas ditahan oleh kerajaan.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1120,Datuk Mohd Azis bin Jamman,"Soalan Yang Berhormat agak tergantunglah
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1120,1120,Tuan Yang di-Pertua,Selepas ditahan oleh kerajaan.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1120,1120,Datuk Mohd Azis bin Jamman,"Soalan Yang Berhormat agak tergantunglah
 Tuan Yang di-Pertua. Saya tidak tahu. Ada banyak kes. Kes apa yang dimaksudkan oleh
 Yang Berhormat ini, boleh spesifik kan?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1120,Tuan Yang di-Pertua,Yang Berhormat Timbalan Menteri kena cakap ini
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1120,ANNOTATION,[Ketawa]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1120,Tuan Yang di-Pertua,"Saya khuatir saya salah pula. Ini kes yang ramai gengster India yang ditahan di
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1120,1120,Tuan Yang di-Pertua,Yang Berhormat Timbalan Menteri kena cakap ini
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1120,1120,ANNOTATION,[Ketawa]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1120,1120,Tuan Yang di-Pertua,"Saya khuatir saya salah pula. Ini kes yang ramai gengster India yang ditahan di
 bawah SOSMA. Selepas itu dikeluarkan dalam lingkungan RM3,000 lebih denda."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1120,Datuk Mohd Azis bin Jamman,"Tuan Yang di-Pertua, di negara kita ini ada
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1120,1120,Datuk Mohd Azis bin Jamman,"Tuan Yang di-Pertua, di negara kita ini ada
 pengasingan kuasa. Bilamana ia diputuskan oleh mahkamah, ia bukan keputusan kita. Ia
 keputusan apa yang difikirkan oleh pihak mahkamah. Macam contoh mungkin kes Yang
 Berhormat oleh kerana tidak ada spesifik kes yang disebutkan, jadi apa yang saya boleh
 terangkan di sini..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1120,Dato’ Dr. Ananthan A/L Somasundaram,"Tuan Yang di-Pertua, memang ada
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1120,1120,Dato’ Dr. Ananthan A/L Somasundaram,"Tuan Yang di-Pertua, memang ada
 kes-kes yang spesifik. Diminta Yang Berhormat Timbalan Menteri kaji pula. Memang ada.
 Banyak berlaku."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1120,Tuan Yang di-Pertua,"Yang Berhormat, kalau kes yang spesifik Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1120,1120,Tuan Yang di-Pertua,"Yang Berhormat, kalau kes yang spesifik Yang Berhormat
 kena namakanlah."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1120,Datuk Mohd Azis bin Jamman,"Kes si Abu bin Ali contoh macam itu. *Something
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1120,1120,Datuk Mohd Azis bin Jamman,"Kes si Abu bin Ali contoh macam itu. *Something
 like that because...*"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1120,Tuan Yang di-Pertua,"Ya *general, general*. Silakan Yang Berhormat. Okey
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1120,1120,Tuan Yang di-Pertua,"Ya *general, general*. Silakan Yang Berhormat. Okey
 sudah ya. Masalah SOSMA ini banyak yang hendak tanya soalan. Dalam perbahasan
 sahajalah."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1120,Tuan Nga Hock Cheh,"Boleh saya soalan tambahan Tuan Yang di-Pertua?
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1120,1120,Tuan Nga Hock Cheh,"Boleh saya soalan tambahan Tuan Yang di-Pertua?
 Berkenaan Undang-undang SOSMA, saya hendak tanya..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1120,Tuan Yang di-Pertua,"Yang Berhormat, saya baru..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1120,Tuan Nga Hock Cheh,Maaf.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1120,Tuan Yang di-Pertua,"Saya cakap dalam perbahasan. Yang Berhormat boleh
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1120,1120,Tuan Yang di-Pertua,"Yang Berhormat, saya baru..."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1120,1120,Tuan Nga Hock Cheh,Maaf.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1120,1120,Tuan Yang di-Pertua,"Saya cakap dalam perbahasan. Yang Berhormat boleh
 bahas panjang lebar. Ini kerana masa sekarang kerajaan telah memberitahu bahawa
 SOSMA ini adalah perbincangan untuk memperhalus. *So*, pandangan Yang Berhormat ini
 dalam perbahasan ini akan menolong kerajaan.
-Okey. Silakan Yang Berhormat Dato’ Dr. Ananthan A/L Somasundaram."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1120,Dato' Dr. Ananthan A/L Somasundaram,"minta Menteri Pendidikan
+Okey. Silakan Yang Berhormat Dato’ Dr. Ananthan A/L Somasundaram.
+**7. Dato' Dr. Ananthan A/L Somasundaram** minta Menteri Pendidikan
 menyatakan, status pembinaan dua buah sekolah SJKT Taman Keladi dan SJKT Ladang
 Kuala Muda, Kedah dan bilakah penyerahan SJKT Taman Keladi akan dibuat sepenuhnya
 kepada pihak sekolah."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1120,Timbalan Menteri Pendidikan [Puan Teo Nie Ching],"Terima kasih Tuan Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1120,1120,Timbalan Menteri Pendidikan [Puan Teo Nie Ching],"Terima kasih Tuan Yang
 di-Pertua. Terima kasih Yang Berhormat Senator. Tuan Yang di-Pertua, projek pembinaan
 Sekolah Jenis Kebangsaan Tamil (SJKT) Taman Keladi, Sungai Petani, Kedah diluluskan
 dalam Rancangan Malaysia Kesepuluh dengan kos berjumlah RM18 juta. Skop projek ini
@@ -1021,9 +1020,9 @@ Pengelola Sekolah (LPS) untuk mendapatkan sumber peruntukan sendiri bagi tujuan
 pembangunan dan pembiayaan penyelenggaraan bagi sekolah tersebut. Pemberian
 bantuan daripada kerajaan adalah tertakluk kepada kedudukan kewangan semasa
 negara. Sekian jawapan saya. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1120,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Menteri. Soalan tambahan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1120,1120,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Menteri. Soalan tambahan
 Yang Berhormat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1120,Dato’ Dr. Ananthan A/L Somasundaram,"Terima kasih Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1120,1120,Dato’ Dr. Ananthan A/L Somasundaram,"Terima kasih Tuan Yang di-Pertua.
 Terima kasih Yang Berhormat Menteri. Saya bagi pihak MIC ingin mengucapkan jutaan
 terima kasih kepada pihak Kementerian Pendidikan Malaysia yang telah
 menyempurnakan usaha pembinaan SJKT Taman Keladi, Sungai Petani. Saya juga ingin
@@ -1041,7 +1040,7 @@ pecahan sempadan bagi tujuan relokasi SJKT Ladang Kuala Muda ini.
 Adakah perkara ini sudah diambil maklum oleh pihak Kementerian Pendidikan
 Malaysia? Apakah tindakan diambil setakat ini untuk menyelesaikan isu ini dan ke
 manakah perginya peruntukan sebanyak RM4 juta? Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1120,Puan Teo Nie Ching,"Terima kasih Tuan Yang di-Pertua. Terima kasih Ahli Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1120,1120,Puan Teo Nie Ching,"Terima kasih Tuan Yang di-Pertua. Terima kasih Ahli Yang
 Berhormat Senator. Pertama kalau memanglah ikhlas kenapa bagi *voucher* dan bukan
 terus bagi peruntukan? Itu soalan yang sepatutnya saya tanya kepada Kerajaan Barisan
 Nasional. Ini kerana sekarang di bawah Pakatan Harapan apabila kita bagi peruntukan,
@@ -1056,9 +1055,9 @@ Walau bagaimanapun, KPM masih dalam proses untuk mengenal pasti tapak
 yang sesuai supaya kita boleh memenuhi segala permintaan dan juga keperluan
 masyarakat tempatan bukan sahaja untuk SMK tetapi juga untuk SJKT. Itulah jawapan
 saya. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1120,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat. Silakan Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1120,1120,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat. Silakan Yang Berhormat
 Dato’ Haji Mohd Suhaimi bin Abdullah."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1120,Dato’ Haji Mohd Suhaimi bin Abdullah,"Terima kasih Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1120,1120,Dato’ Haji Mohd Suhaimi bin Abdullah,"Terima kasih Tuan Yang di-Pertua.
 Saya ingin bertanya Yang Berhormat Menteri di kawasan saya, di bahagian saya terdapat
 tiga buah SJKC di dalam kawasan kelapa sawit. Saya ada membaca baru-baru ini di Klang
 ada 40 ekor monyet menyerang murid-murid sekolah. Di kawasan saya ini apabila SJKC
@@ -1066,17 +1065,17 @@ dan juga sekolah-sekolah lain dalam kawasan kelapa sawit dan pedalaman, terdapat
 banyak sekali monyet ini Yang Berhormat, tidak dapat dikawal dan kita hendak tunggu
 sampai bila Yang Berhormat? Sampai dia gigit cikgu baru kita hendak buat pendekatan
 untuk mengelak monyet-monyet ini."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1130,Dato’ Haji Mohd Suhaimi bin Abdullah,"Saya hendak bertanya kepada Yang Berhormat, adakah Kementerian
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1130,1130,Dato’ Haji Mohd Suhaimi bin Abdullah,"Saya hendak bertanya kepada Yang Berhormat, adakah Kementerian
 Pendidikan bersama dengan kementerian lain ataupun dengan RELA di dalam kawasan
 tersebut mengadakan operasi untuk mengelak ataupun membunuh monyet-monyet ini.
 Terima kasih Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1130,Dato’ Haji Mohd Suhaimi bin Abdullah,"*I’m very concerned about monkeys*
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1130,1130,Dato’ Haji Mohd Suhaimi bin Abdullah,"*I’m very concerned about monkeys*
 Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1130,Tuan Yang di-Pertua,"Ya. Yang Berhormat Dato’ Haji Mohd Suhaimi ini boleh
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1130,1130,Tuan Yang di-Pertua,"Ya. Yang Berhormat Dato’ Haji Mohd Suhaimi ini boleh
 kerana *Speaker* dari Melaka ini datang *so* yang fasal binatang ini boleh tanya dekat luar"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1130,ANNOTATION,[Ketawa]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1130,Tuan Yang di-Pertua,Silakan Yang Berhormat Timbalan Menteri.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1130,Puan Teo Nie Ching,"Terima kasih Tuan Yang di-Pertua, terima kasih Ahli Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1130,1130,ANNOTATION,[Ketawa]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1130,1130,Tuan Yang di-Pertua,Silakan Yang Berhormat Timbalan Menteri.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1130,1130,Puan Teo Nie Ching,"Terima kasih Tuan Yang di-Pertua, terima kasih Ahli Yang
 Berhormat Senator. Saya mohon maaf kerana saya tidak dapat jawab soalan itu kerana
 saya tidak pasti tentang prosedur untuk tangkap ataupun tangkap monyet itu. Akan tetapi
 saya rasa haiwan ataupun binatang, kita juga ada satu prosedur yang saya percaya
@@ -1087,8 +1086,8 @@ keselamatan guru-guru dan murid-murid kita tetapi saya mohon maaf kerana memang
 saya sendiri tiada pengetahuan tentang apa itu prosedur yang sepatutnya untuk tangkap
 monyet itu. Akan tetapi kalau untuk sekolah yang menghadapi isu ini kita akan
 bekerjasama dengan *authority* ataupun *authorities* yang berkuat kuasa. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1130,Tuan Yang di-Pertua,Terima kasih Yang Berhormat. Silakan Yang Berhormat.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1130,Dato’ Isa bin Ab. Hamid,"Terima kasih Tuan Yang di-Pertua. Soalan saya,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1130,1130,Tuan Yang di-Pertua,Terima kasih Yang Berhormat. Silakan Yang Berhormat.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1130,1130,Dato’ Isa bin Ab. Hamid,"Terima kasih Tuan Yang di-Pertua. Soalan saya,
 mohon penjelasan dengan Yang Berhormat Timbalan Menteri. Di Cameron Highlands
 terdapat Sekolah Jenis Kebangsaan Tamil, SJK(T) Ladang Boh, estet. Di situ terdapat
 hampir 100 peratus, lebih 95 peratus pelajarnya adalah pelajar Orang Asli. Apa yang jadi
@@ -1098,7 +1097,7 @@ kebangsaan.
 Adakah pihak kementerian boleh mengkategorikan sekolah ini sebagai sekolah
 kategori Orang Asli supaya ia dapat menyertai program-program pembangunan berskala
 dengan murid-murid Orang Asli. Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1130,Puan Teo Nie Ching,"Terima kasih Tuan Yang di-Pertua, terima kasih Ahli Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1130,1130,Puan Teo Nie Ching,"Terima kasih Tuan Yang di-Pertua, terima kasih Ahli Yang
 Berhormat. Sebenarnya di Cameron Highlands ini kita ada dua buah SJK(T) Ladang Boh,
 (1) dan (2). Kedua-duanya adalah kategori sekolah kurang murid. Maksudnya murid di
 sana, kedua-duanya kurang daripada 30 orang untuk kedua-dua buah sekolah tersebut.
@@ -1117,23 +1116,23 @@ untuk hendak gabungkan sekolah itu supaya kita boleh menaik taraf kemudahan di
 sekolah-sekolah itu ataupun kita menjadikan ia sebuah sekolah untuk Orang Asli supaya
 kita boleh memberi perhatian khususnya untuk murid-murid Orang Asli. Sekian jawapan
 saya, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1130,Tuan Yang di-Pertua,"Terima kasih. Dipersilakan Yang Berhormat Dato’ Chai
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1130,1130,Tuan Yang di-Pertua,"Terima kasih. Dipersilakan Yang Berhormat Dato’ Chai
 Kim Sen."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1130,Dato’ Sri Ti Lian Ker,
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1130,ANNOTATION,[Bangun]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1130,Tuan Yang di-Pertua,"Silakan Yang Berhormat. Oleh kerana Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1130,1130,Dato’ Sri Ti Lian Ker,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1130,1130,ANNOTATION,[Bangun]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1130,1130,Tuan Yang di-Pertua,"Silakan Yang Berhormat. Oleh kerana Yang Berhormat
 Timbalan Menteri ini sudah datang awal-awal.
 **8. Dato’ Sri Ti Lian Ker**"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1130,ANNOTATION,[Di bawah P.M. 23(2)]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1130,Tuan Yang di-Pertua,"minta Menteri Sumber Manusia
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1130,1130,ANNOTATION,[Di bawah P.M. 23(2)]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1130,1130,Tuan Yang di-Pertua,"minta Menteri Sumber Manusia
 menyatakan, sejauh mana pemohon kerja- *job seekers,* akan dilindungi daripada
 diskriminasi dalam pindaan Akta Kerja 1955 yang akan datang."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1130,Timbalan Menteri Sumber Manusia [Dato’ Mahfuz bin Haji Omar],Ya
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1130,ANNOTATION,[Ketawa]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1130,Timbalan Menteri Sumber Manusia [Dato’ Mahfuz bin Haji Omar],"Terima kasih Tuan Yang di-Pertua, terima kasih Ahli Yang Berhormat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1130,Tuan Yang di-Pertua,"Secara ringkas kerana kita ada Yang Berhormat Menteri
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1130,1130,Timbalan Menteri Sumber Manusia [Dato’ Mahfuz bin Haji Omar],Ya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1130,1130,ANNOTATION,[Ketawa]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1130,1130,Timbalan Menteri Sumber Manusia [Dato’ Mahfuz bin Haji Omar],"Terima kasih Tuan Yang di-Pertua, terima kasih Ahli Yang Berhormat."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1130,1130,Tuan Yang di-Pertua,"Secara ringkas kerana kita ada Yang Berhormat Menteri
 menunggu."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1130,Dato’ Mahfuz bin Haji Omar,"Sebenarnya dari segi soalan ini spesifik- tidak ada
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1130,1130,Dato’ Mahfuz bin Haji Omar,"Sebenarnya dari segi soalan ini spesifik- tidak ada
 satu undang-undang yang melindungi pencari kerja tetapi undang-undang yang ada Akta
 Kerja 1955 ini hanya melindungi orang yang sudah masuk ke dalam sektor pekerjaan
 tetapi kami sedang membuat kajian untuk ke hadapan ini melihat bagaimana satu bentuk
@@ -1142,18 +1141,18 @@ Namun begitu, jika ada pencari-pencari kerja ini yang dianiayai dalam apa-apa
 bentuk diskriminasi boleh membuat aduan kepada pihak kementerian melalui Jabatan
 Tenaga Kerja untuk kita mengambil langkah-langkah untuk memastikan keharmonian
 industri dalam negara kita *insya-Allah.*"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1130,Tuan Yang di-Pertua,"Terima kasih Ahli-ahli Yang Berhormat. Masa sudah
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1130,1130,Tuan Yang di-Pertua,"Terima kasih Ahli-ahli Yang Berhormat. Masa sudah
 11.35 pagi. Soalan akhir kerana Yang Berhormat Menteri hadir Dewan. Yang Berhormat
 Dr. Yaakob bin Sapari."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1130,Dr. Yaakob bin Sapari,"Terima kasih Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1130,1130,Dr. Yaakob bin Sapari,"Terima kasih Tuan Yang di-Pertua.
 *Asam pedas ikan sembilang;
 Soalan saya nombor sembilan.*"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1130,Tuan Yang di-Pertua,*White Paper*
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1130,ANNOTATION,[Ketawa]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1130,Dr. Yaakob bin Sapari,"minta Menteri Wilayah Persekutuan menyatakan,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1130,1130,Tuan Yang di-Pertua,*White Paper*
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1130,1130,ANNOTATION,[Ketawa]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1130,1130,Tuan Yang di-Pertua,"**9. Dr. Yaakob bin Sapari** minta Menteri Wilayah Persekutuan menyatakan,
 siapakah pemaju yang bertanggungjawab untuk memajukan Kampung Bahru Kuala
 Lumpur. Apakah jaminan kerajaan untuk memastikan projek ini berjaya."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1130,Menteri Wilayah Persekutuan [Tuan Khalid bin Abd Samad],"Terima kasih
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1130,1130,Menteri Wilayah Persekutuan [Tuan Khalid bin Abd Samad],"Terima kasih
 Tuan Yang di-Pertua. Untuk makluman Yang Berhormat Senator, kerajaan mengambil
 perhatian isu-isu di kawasan tanah *Malay Agricultural Settlement* (MAS), Kampung Baru
 seperti jumlah pemilik yang meningkat bagi setiap lot, persekitaran yang kurang kondusif
@@ -1211,17 +1210,17 @@ samping itu, dengan adanya komponen pembangunan kediaman dan komersial di lokasi
 yang strategik, ini akan dapat menarik minat ramai pembeli dan seterusnya akan memberi
 pulangan yang terbaik kepada pemegang saham SPV. Seperti mana yang diketahui
 umum, faktor utama kejayaan projek hartanah adalah lokasi, lokasi dan lokasi."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1140,Menteri Wilayah Persekutuan [Tuan Khalid bin Abd Samad],"Sambil itu corak pemilikan yang tidak terhad dari sudut tempoh masa pemilikan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1140,1140,Menteri Wilayah Persekutuan [Tuan Khalid bin Abd Samad],"Sambil itu corak pemilikan yang tidak terhad dari sudut tempoh masa pemilikan
 iaitu pegangan bebas akan juga menjadikannya satu projek hartanah yang berdaya maju.
 Sekian. Terima kasih Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1140,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Menteri. Silakan Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1140,1140,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Menteri. Silakan Yang
 Berhormat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1140,Dr. Yaakob bin Sapari,"Ada perbezaan pandangan dari segi harga yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1140,1140,Dr. Yaakob bin Sapari,"Ada perbezaan pandangan dari segi harga yang
 ditawarkan oleh kementerian yang diberitakan bahawa harga semasa lebih mahal
 daripada harga yang ditawarkan oleh pihak kementerian."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1140,Tuan Yang di-Pertua,Soalan?
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1140,Dr. Yaakob bin Sapari,Harga.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1140,Tuan Khalid bin Abd Samad,"Terima kasih Tuan Yang di-Pertua. Bagi pihak
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1140,1140,Tuan Yang di-Pertua,Soalan?
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1140,1140,Dr. Yaakob bin Sapari,Harga.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1140,1140,Tuan Khalid bin Abd Samad,"Terima kasih Tuan Yang di-Pertua. Bagi pihak
 kerajaan, apabila kita ingin membeli sesuatu, kita kena berdasarkan kepada penilaian
 yang dibuat oleh Jabatan Perkhidmatan dan Penilaian Hartanah (JPPH).
 Kita tidak boleh beli ikut suka kita. Maka, seharusnya kita beli dengan harga yang
@@ -1250,12 +1249,12 @@ Ia tidak boleh dibandingkan kawasan yang telah dibangunkan dengan kawasan yang
 belum dibangunkan. Dahulu di kawasan KLCC sebelum ia dibangunkan sekalipun, harga
 hartanahnya hanya lebih kurang dalam 400 sekaki persegi mengikut maklumat yang ada
 pada saya. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1140,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Menteri. Ahli-ahli Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1140,1140,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Menteri. Ahli-ahli Yang
 Berhormat masa untuk jawab lisan selesai."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1140,ANNOTATION,[Masa Pertanyaan-pertanyaan Bagi Jawab Lisan tamat]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Datin Rahimah binti Haji Mahamad minta Menteri Pembangunan Luar Bandar,,■1140,1140,ANNOTATION,[Masa Pertanyaan-pertanyaan Bagi Jawab Lisan tamat]
 JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"UCAPAN TAKZIAH
 Kepada Ahli Keluarga Mendiang Y.B. Senator Datuk Sambanthan A/L Manickam
-dan Mendiang Y.B. Senator Dato’ Ong Chong Swen",,1140,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, Dewan ini telah kehilangan dua
+dan Mendiang Y.B. Senator Dato’ Ong Chong Swen",,■1140,1140,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, Dewan ini telah kehilangan dua
 orang Ahli iaitu mendiang Yang Berhormat Senator Datuk Sambathan A/L Manickam pada
 15 Oktober 2019, dan mendiang Yang Berhormat Senator Dato’ Ong Chong Swen pada
 18 November 2019. Dewan ini dengan perasaan yang amat dukacita dan sedih
@@ -1267,10 +1266,10 @@ Oleh yang demikian, saya menjemput Ahli-ahli Yang Berhormat sekalian bangun
 dan berdoa dan bertafakur selama satu minit."
 JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"UCAPAN TAKZIAH
 Kepada Ahli Keluarga Mendiang Y.B. Senator Datuk Sambanthan A/L Manickam
-dan Mendiang Y.B. Senator Dato’ Ong Chong Swen",,1140,ANNOTATION,[Ahli-ahli bangun bertafakur]
-PENERANGAN DARIPADA Y.B. MENTERI PERTAHANAN DI BAWAH P.M 13(1)(i),PEMBENTANGAN KERTAS PUTIH PERTAHANAN,,1145,Menteri Pertahanan [Tuan Mohamad bin Sabu],*Bismillahi Rahmani Rahim...*
-PENERANGAN DARIPADA Y.B. MENTERI PERTAHANAN DI BAWAH P.M 13(1)(i),PEMBENTANGAN KERTAS PUTIH PERTAHANAN,,1145,ANNOTATION,[Membaca sepotong ayat al-Quran]
-PENERANGAN DARIPADA Y.B. MENTERI PERTAHANAN DI BAWAH P.M 13(1)(i),PEMBENTANGAN KERTAS PUTIH PERTAHANAN,,1145,Menteri Pertahanan [Tuan Mohamad bin Sabu],"Tuan Yang di-Pertua, terima kasih di atas peluang
+dan Mendiang Y.B. Senator Dato’ Ong Chong Swen",,■1140,1140,ANNOTATION,[Ahli-ahli bangun bertafakur]
+PENERANGAN DARIPADA Y.B. MENTERI PERTAHANAN DI BAWAH P.M 13(1)(i),PEMBENTANGAN KERTAS PUTIH PERTAHANAN,,11.45 pg.,1145,Menteri Pertahanan [Tuan Mohamad bin Sabu],*Bismillahi Rahmani Rahim...*
+PENERANGAN DARIPADA Y.B. MENTERI PERTAHANAN DI BAWAH P.M 13(1)(i),PEMBENTANGAN KERTAS PUTIH PERTAHANAN,,11.45 pg.,1145,ANNOTATION,[Membaca sepotong ayat al-Quran]
+PENERANGAN DARIPADA Y.B. MENTERI PERTAHANAN DI BAWAH P.M 13(1)(i),PEMBENTANGAN KERTAS PUTIH PERTAHANAN,,11.45 pg.,1145,Menteri Pertahanan [Tuan Mohamad bin Sabu],"Tuan Yang di-Pertua, terima kasih di atas peluang
 dan kesempatan untuk saya membentangkan Kertas Putih Pertahanan seperti yang telah
 diluluskan oleh Dewan Rakyat pada 2 Disember 2019 baru-baru ini.
 Tuan Yang di-Pertua, dasar berkaitan pertahanan telah dibangunkan dan
@@ -1297,9 +1296,9 @@ mendapatkan pandangan rakan strategik antarabangsa, kementerian juga telah bertu
 tukar pandangan dengan negara yang telah melaksanakan Kertas Putih Pertahanan
 secara berkala iaitu Australia, Kanada, New Zealand, Jerman, *United Kingdom* dan
 Perancis."
-PENERANGAN DARIPADA Y.B. MENTERI PERTAHANAN DI BAWAH P.M 13(1)(i),PEMBENTANGAN KERTAS PUTIH PERTAHANAN,,1145,ANNOTATION,[Timbalan Yang di-Pertua mempengerusikan Mesyuarat]
-PENERANGAN DARIPADA Y.B. MENTERI PERTAHANAN DI BAWAH P.M 13(1)(i),PEMBENTANGAN KERTAS PUTIH PERTAHANAN,,1145,Timbalan Yang di-Pertua,"Yang Berhormat, teruskan."
-PENERANGAN DARIPADA Y.B. MENTERI PERTAHANAN DI BAWAH P.M 13(1)(i),PEMBENTANGAN KERTAS PUTIH PERTAHANAN,,1145,Tuan Mohamad bin Sabu,"Tiga sesi taklimat kepada Jawatankuasa Pilihan
+PENERANGAN DARIPADA Y.B. MENTERI PERTAHANAN DI BAWAH P.M 13(1)(i),PEMBENTANGAN KERTAS PUTIH PERTAHANAN,,11.45 pg.,1145,ANNOTATION,[Timbalan Yang di-Pertua mempengerusikan Mesyuarat]
+PENERANGAN DARIPADA Y.B. MENTERI PERTAHANAN DI BAWAH P.M 13(1)(i),PEMBENTANGAN KERTAS PUTIH PERTAHANAN,,11.45 pg.,1145,Timbalan Yang di-Pertua,"Yang Berhormat, teruskan."
+PENERANGAN DARIPADA Y.B. MENTERI PERTAHANAN DI BAWAH P.M 13(1)(i),PEMBENTANGAN KERTAS PUTIH PERTAHANAN,,11.45 pg.,1145,Tuan Mohamad bin Sabu,"Tiga sesi taklimat kepada Jawatankuasa Pilihan
 Khas Pertahanan dan Hal Ehwal Dalam Negeri juga telah diadakan melalui penglibatan
 cabang eksekutif dan legislatif ATM, rakyat dan pihak berkepentingan lain Kertas Putih
 Pertahanan telah memenuhi obligasi moral dalam membangunkan dan menyemai budaya
@@ -1311,7 +1310,7 @@ dokumen dasar pertahanan negara yang berperingkat, KPP ialah dokumen terbuka yan
 boleh diakses oleh rakyat.
 Tujuan KPP dibangunkan adalah bagi melibatkan rakyat dan pihak
 berkepentingan di dalam isu pertahanan negara."
-PENERANGAN DARIPADA Y.B. MENTERI PERTAHANAN DI BAWAH P.M 13(1)(i),PEMBENTANGAN KERTAS PUTIH PERTAHANAN,,1150,Tuan Mohamad bin Sabu,"KPP juga menjelaskan pengisytiharan strategik keselamatan yang sentiasa
+PENERANGAN DARIPADA Y.B. MENTERI PERTAHANAN DI BAWAH P.M 13(1)(i),PEMBENTANGAN KERTAS PUTIH PERTAHANAN,,■1150,1150,Tuan Mohamad bin Sabu,"KPP juga menjelaskan pengisytiharan strategik keselamatan yang sentiasa
 berubah dan bagaimana keadaan itu mempengaruhi keselamatan Malaysia. KPP
 menggariskan visi Malaysia sebagai sebuah negara yang selamat, berdaulat dan makmur.
 Visi ini dicapai dengan memposisikan negara sebagai sebuah negara maritim
@@ -1424,7 +1423,7 @@ mempunyai lima ciri utama iaitu kebersamaan, kebolehoperasian berasaskan teknolo
 keupayaan untuk beroperasi serentak dalam dua wilayah dan berorientasikan misi iaitu
 akan membentuk angkatan yang berupaya dan mampu beroperasi di empat domain
 utama iaitu maritim, udara, darat dan siber elektro magnetik."
-PENERANGAN DARIPADA Y.B. MENTERI PERTAHANAN DI BAWAH P.M 13(1)(i),PEMBENTANGAN KERTAS PUTIH PERTAHANAN,,1200,Tuan Mohamad bin Sabu,"Sejajar dengan panduan daripada kerangka Dasar Luar Malaysia yang baharu,
+PENERANGAN DARIPADA Y.B. MENTERI PERTAHANAN DI BAWAH P.M 13(1)(i),PEMBENTANGAN KERTAS PUTIH PERTAHANAN,,■1200,1200,Tuan Mohamad bin Sabu,"Sejajar dengan panduan daripada kerangka Dasar Luar Malaysia yang baharu,
 Kertas Putih Pertahanan menzahirkan penekanan untuk menolak penggunaan tindakan
 kekerasan dalam menyelesaikan sebarang pertikaian atau konflik.
 Tuan Yang di-Pertua, keselamatan negara adalah demi rakyat. Untuk itu ia
@@ -1435,8 +1434,8 @@ diilustrasi melalui tonggak Strategi Pertahanan Komprehensif. Dalam menghargai
 profesionalisme, pengalaman dan usaha pengekalan anggota ATM, kerajaan juga akan
 memastikan elaun, intensif dan kemudahan lain seperti kesihatan dan perumahan
 sentiasa dikaji semula. Menteri Kewangan dengar ya"
-PENERANGAN DARIPADA Y.B. MENTERI PERTAHANAN DI BAWAH P.M 13(1)(i),PEMBENTANGAN KERTAS PUTIH PERTAHANAN,,1200,ANNOTATION,[Ketawa]
-PENERANGAN DARIPADA Y.B. MENTERI PERTAHANAN DI BAWAH P.M 13(1)(i),PEMBENTANGAN KERTAS PUTIH PERTAHANAN,,1200,Tuan Mohamad bin Sabu,"Melalui angkatan sukarela dan simpanan angkatan tetap, Kertas Putih
+PENERANGAN DARIPADA Y.B. MENTERI PERTAHANAN DI BAWAH P.M 13(1)(i),PEMBENTANGAN KERTAS PUTIH PERTAHANAN,,■1200,1200,ANNOTATION,[Ketawa]
+PENERANGAN DARIPADA Y.B. MENTERI PERTAHANAN DI BAWAH P.M 13(1)(i),PEMBENTANGAN KERTAS PUTIH PERTAHANAN,,■1200,1200,Tuan Mohamad bin Sabu,"Melalui angkatan sukarela dan simpanan angkatan tetap, Kertas Putih
 Pertahanan turut menzahirkan aspirasi untuk membentuk angkatan yang anjal sebagai
 penguat dan penambah besar angkatan tetap. Selain menjadi platform bagi memupuk
 semangat patriotisme, kehadiran angkatan sukarela dalam masyarakat dapat
@@ -1470,9 +1469,9 @@ Putih Pertahanan. Membuktikan peri pentingnya komitmen Kerajaan Malaysia demi
 mengekalkan Malaysia sebuah negara yang selamat, berdaulat dan makmur- *secure,
 sovereign and prosperous nation.*
 Sekian, terima kasih Tuan Yang di-Pertua."
-PENERANGAN DARIPADA Y.B. MENTERI PERTAHANAN DI BAWAH P.M 13(1)(i),PEMBENTANGAN KERTAS PUTIH PERTAHANAN,,1200,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat Menteri, terima kasih."
+PENERANGAN DARIPADA Y.B. MENTERI PERTAHANAN DI BAWAH P.M 13(1)(i),PEMBENTANGAN KERTAS PUTIH PERTAHANAN,,■1200,1200,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat Menteri, terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1204,Menteri Kewangan [Tuan Lim Guan Eng],"Tuan Yang di-Pertua, saya mohon
+Bacaan Kali Yang Kedua",,12.04 tgh.,1204,Menteri Kewangan [Tuan Lim Guan Eng],"Tuan Yang di-Pertua, saya mohon
 mencadangkan iaitu rang undang-undang bernama suatu akta bagi menggunakan
 sejumlah wang daripada Kumpulan Wang Disatukan untuk perkhidmatan bagi tahun 2020
 dan bagi memperuntukkan wang itu perkhidmatan bagi tahun itu dibaca bagi kali kedua
@@ -1529,7 +1528,7 @@ Ini merupakan sebahagian daripada langkah strategik untuk menarik syarikat
 *Fortune 500* dan *Global Unicorns* atau kalau boleh syarikat *Decacorns* dalam sektor
 berteknologi tinggi, pembuatan, kreatif dan ekonomi baharu."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1210,Menteri Kewangan [Tuan Lim Guan Eng],"Bagi mentransformasikan perniagaan tempatan yang terunggul dan berpotensi
+Bacaan Kali Yang Kedua",,■1210,1210,Menteri Kewangan [Tuan Lim Guan Eng],"Bagi mentransformasikan perniagaan tempatan yang terunggul dan berpotensi
 untuk bersaing dalam pasaran eksport global, kerajaan juga akan menawarkan pakej
 galakan pelaburan istimewa bernilai sehingga RM1 bilion setahun untuk tempoh lima
 tahun kepada syarikat tempatan yang layak. Kerajaan juga akan memperkenalkan insentif
@@ -1639,7 +1638,7 @@ Bagi meningkatkan hasil padi, kerajaan akan meningkatkan peruntukan input
 padi sebanyak RM855 juta bagi tahun 2020 berbanding RM796 juta pada tahun 2019 di
 bawah Skim Baja Padi Kerajaan Persekutuan dan Skim Insentif Pengeluaran Padi."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1220,Menteri Kewangan [Tuan Lim Guan Eng],"Tuan Yang di-Pertua, Tahun Melawat Malaysia 2020 merupakan usaha utama
+Bacaan Kali Yang Kedua",,■1220,1220,Menteri Kewangan [Tuan Lim Guan Eng],"Tuan Yang di-Pertua, Tahun Melawat Malaysia 2020 merupakan usaha utama
 untuk menjenamakan Malaysia sebagai destinasi utama pelancongan dengan sasaran 30
 juta pelancong. Kerajaan akan meneruskan pemberian 50 peratus hasil cukai
 pelancongan kepada setiap kerajaan negeri untuk menyokong usaha mereka
@@ -1751,7 +1750,7 @@ bagi pembayar cukai selain syarikat kepada 10 peratus. Peruntukan cukai juga
 diperluaskan kepada sumbangan wakaf tunai kepada pihak berkuasa negeri dan universiti
 awam."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1230,Menteri Kewangan [Tuan Lim Guan Eng],"Dalam Belanjawan 2019, sebanyak RM7.6 bilion telah diperuntukkan untuk
+Bacaan Kali Yang Kedua",,■1230,1230,Menteri Kewangan [Tuan Lim Guan Eng],"Dalam Belanjawan 2019, sebanyak RM7.6 bilion telah diperuntukkan untuk
 membantu institusi dan usahawan bumiputera. Jumlah ini ditambah kepada RM8 bilion
 dalam Belanjawan 2020 seperti berikut:
 (i) RM6.6 bilion diperuntukkan kepada institusi bumiputera yang
@@ -1859,7 +1858,7 @@ fiskal secara berperingkat. Pada tahun 2018, kerajaan telah mencatatkan defisit 
 sebanyak 3.7 peratus dan berada di landasan yang betul bagi mencapai sasaran defisit
 3.4 peratus pada tahun 2019."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1240,Menteri Kewangan [Tuan Lim Guan Eng],"Semasa pembentangan belanjawan tahun lalu, kerajaan telah mengumumkan
+Bacaan Kali Yang Kedua",,■1240,1240,Menteri Kewangan [Tuan Lim Guan Eng],"Semasa pembentangan belanjawan tahun lalu, kerajaan telah mengumumkan
 sasaran defisit tiga peratus untuk tahun 2020. Walau bagaimanapun, berikutan
 peningkatan risiko kelembapan ekonomi dunia dan perbelanjaan luar jangka untuk
 menyelamatkan institusi bermasalah yang diwarisi daripada pentadbiran terdahulu
@@ -1955,7 +1954,7 @@ kejayaan dengan membangunkan semula ekonomi negara dan menyediakan peluang
 pekerjaan untuk semua, dengan izin, Belanjawan Malaysia 2020 *will get Malaysia back to
 business and Malaysian back to work.*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1250,Menteri Kewangan [Tuan Lim Guan Eng],"Ekoran daripada langkah-langkah belanjawan, ekonomi Malaysia dijangka kekal
+Bacaan Kali Yang Kedua",,■1250,1250,Menteri Kewangan [Tuan Lim Guan Eng],"Ekoran daripada langkah-langkah belanjawan, ekonomi Malaysia dijangka kekal
 berdaya tahan dengan pertumbuhan KDNK di unjur berkembang sebanyak 4.7 peratus
 pada tahun ini dan meningkat kepada 4.8 peratus pada tahun 2020. Manakala kadar inflasi
 dijangka terus terkawal pada dua peratus bagi tahun 2020. Sekiranya persekitaran luar
@@ -1974,14 +1973,14 @@ Marilah kita selesaikan masalah ini secara bersama kerana hanya bila kita
 bersama, barulah Malaysia boleh menjadi sebuah negara yang dihormati dan menjadi
 kebanggaan di seluruh dunia. Tuan Yang di-Pertua, saya mohon mencadangkan..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1250,ANNOTATION,[Tepuk]
+Bacaan Kali Yang Kedua",,■1250,1250,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1250,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat, terima kasih. Minta
+Bacaan Kali Yang Kedua",,■1250,1250,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat, terima kasih. Minta
 seorang Menteri menyokong."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1250,Timbalan Menteri Pertahanan [Tuan Liew Chin Tong],Saya menyokong.
+Bacaan Kali Yang Kedua",,■1250,1250,Timbalan Menteri Pertahanan [Tuan Liew Chin Tong],Saya menyokong.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1250,Timbalan Yang di-Pertua,"Terima kasih. Ahli-ahli Yang Berhormat masalah di
+Bacaan Kali Yang Kedua",,■1250,1250,Timbalan Yang di-Pertua,"Terima kasih. Ahli-ahli Yang Berhormat masalah di
 hadapan Majlis ialah bahawa rang undang-undang bernama suatu akta bagi
 menggunakan sejumlah wang daripada Kumpulan Wang Disatukan untuk perkhidmatan
 bagi tahun 2020 dan bagi memperuntukkan jumlah wang itu untuk perkhidmatan bagi
@@ -1993,13 +1992,13 @@ Saya mulakan perbahasan ini dengan menjemput Yang Berhormat Senator
 Datuk Razali bin Idris dipersilakan dan saya berterima kasih juga kepada Menteri kita
 hadir, Yang Berhormat Menteri Kewangan hadir pada pagi ini. Terima kasih banyak."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1253,Datuk Razali bin Idris,"*Assalamualaikum warahmatullahi wabarakatuh*, salam
+Bacaan Kali Yang Kedua",,12.53 tgh.,1253,Datuk Razali bin Idris,"*Assalamualaikum warahmatullahi wabarakatuh*, salam
 sejahtera. *Bismillahi Rahmani Rahim...*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1253,ANNOTATION,"[Mengucapkan kata-kata aluan dalam bahasa
+Bacaan Kali Yang Kedua",,12.53 tgh.,1253,ANNOTATION,"[Mengucapkan kata-kata aluan dalam bahasa
 Arab]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1253,Datuk Razali bin Idris,"Terima kasih Tuan Yang di-Pertua kerana memberi peluang kepada saya untuk
+Bacaan Kali Yang Kedua",,12.53 tgh.,1253,Datuk Razali bin Idris,"Terima kasih Tuan Yang di-Pertua kerana memberi peluang kepada saya untuk
 mengambil bahagian dalam perbahasan Belanjawan 2020 yang baru sahaja di bentang
 oleh Yang Berhormat Menteri Kewangan Tuan Lim Guan Eng yang mewakili Pakatan
 Harapan.
@@ -2064,47 +2063,47 @@ dimajukan menerusi NFCP itu nanti akan menjadi gelanggang utama menggalakkan
 penyertaan usahawan digital dan rakyat supaya terbabit secara langsung kepada
 ekosistem ekonomi dalam talian. Kini infrastruktur sudah tersedia..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1253,Timbalan Yang di-Pertua,Yang Berhormat panjang lagi?
+Bacaan Kali Yang Kedua",,12.53 tgh.,1253,Timbalan Yang di-Pertua,Yang Berhormat panjang lagi?
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1253,Datuk Razali bin Idris,Baru *start.* Baru *start* mukadimah.
+Bacaan Kali Yang Kedua",,12.53 tgh.,1253,Datuk Razali bin Idris,Baru *start.* Baru *start* mukadimah.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1253,Timbalan Yang di-Pertua,Kita sambung selepas...
+Bacaan Kali Yang Kedua",,12.53 tgh.,1253,Timbalan Yang di-Pertua,Kita sambung selepas...
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1253,Datuk Razali bin Idris,Baru masuk gear dua Tuan Yang di-Pertua.
+Bacaan Kali Yang Kedua",,12.53 tgh.,1253,Datuk Razali bin Idris,Baru masuk gear dua Tuan Yang di-Pertua.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1253,Timbalan Yang di-Pertua,Sila sambung karang ya.
+Bacaan Kali Yang Kedua",,12.53 tgh.,1253,Timbalan Yang di-Pertua,Sila sambung karang ya.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1253,Datuk Razali bin Idris,"Ya terima kasih Tuan Yang di-Pertua, terima kasih kita
+Bacaan Kali Yang Kedua",,12.53 tgh.,1253,Datuk Razali bin Idris,"Ya terima kasih Tuan Yang di-Pertua, terima kasih kita
 sambung *insya-Allah.*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1253,Timbalan Yang di-Pertua,"Sebelum saya tangguhkan, saya ucapkan terima
+Bacaan Kali Yang Kedua",,12.53 tgh.,1253,Timbalan Yang di-Pertua,"Sebelum saya tangguhkan, saya ucapkan terima
 kasih banyak kepada Yang Berhormat Menteri Kewangan Tuan Lim Guan Eng yang hadir
 pada pagi ini menyampaikan bajet tadi terima kasih banyak..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1253,ANNOTATION,[Tepuk]
+Bacaan Kali Yang Kedua",,12.53 tgh.,1253,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1253,Timbalan Yang di-Pertua,"Sekarang saya
+Bacaan Kali Yang Kedua",,12.53 tgh.,1253,Timbalan Yang di-Pertua,"Sekarang saya
 tangguhkan mesyuarat sehingga jam 2.30 petang. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1301,ANNOTATION,[Mesyuarat ditempohkan pada pukul 1.01 tengah hari]
+Bacaan Kali Yang Kedua",,1.01 tengah hari,1301,ANNOTATION,[Mesyuarat ditempohkan pada pukul 1.01 tengah hari]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1430,ANNOTATION,[Mesyuarat disambung semula pada pukul 2.30 petang]
+Bacaan Kali Yang Kedua",,2.30 petang,1430,ANNOTATION,[Mesyuarat disambung semula pada pukul 2.30 petang]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1430,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
+Bacaan Kali Yang Kedua",,■1430,1430,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1430,Tuan Yang di-Pertua,Tadi sambung kah atau...
+Bacaan Kali Yang Kedua",,■1430,1430,Tuan Yang di-Pertua,Tadi sambung kah atau...
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1430,ANNOTATION,[Disampuk]
+Bacaan Kali Yang Kedua",,■1430,1430,ANNOTATION,[Disampuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1430,Tuan Yang di-Pertua,"Sila sambung
+Bacaan Kali Yang Kedua",,■1430,1430,Tuan Yang di-Pertua,"Sila sambung
 perbahasan, Yang Berhormat Senator Datuk Razali bin Idris."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1432,Datuk Razali bin Idris,"Terima kasih, Tuan Yang di-Pertua. Saya sambung
+Bacaan Kali Yang Kedua",,2.32 ptg.,1432,Datuk Razali bin Idris,"Terima kasih, Tuan Yang di-Pertua. Saya sambung
 dengan gear dua, sudah masuk gear dua"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1432,ANNOTATION,[Ketawa]
+Bacaan Kali Yang Kedua",,2.32 ptg.,1432,ANNOTATION,[Ketawa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1432,Datuk Razali bin Idris,"Dalam perspektif mudah, infrastruktur yang dimajukan menerusi NFCP itu nanti
+Bacaan Kali Yang Kedua",,2.32 ptg.,1432,Datuk Razali bin Idris,"Dalam perspektif mudah, infrastruktur yang dimajukan menerusi NFCP itu nanti
 akan menjadi gelanggang utama menggalakkan penyertaan usahawan digital dan rakyat
 supaya terbabit secara langsung kepada ekosistem ekonomi dalam talian.
 Kini, infrastruktur telah tersedia. Apa yang tinggal hanya langkah kerajaan untuk
@@ -2173,7 +2172,7 @@ Ketiga, hanya guru KEMAS dan Tadika Perpaduan sahaja yang terlibat. Ini
 bermakna ia membabitkan agensi yang terletak di bawah Kerajaan Pusat sahaja. Setakat
 ini, Kerajaan PAS Terengganu tidak melayani kritikan-kritikan daripada sesiapa pun."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1440,Datuk Razali bin Idris,"Justeru itu, saya mencadangkan supaya Kerajaan Pusat agihkan sebahagian
+Bacaan Kali Yang Kedua",,■1440,1440,Datuk Razali bin Idris,"Justeru itu, saya mencadangkan supaya Kerajaan Pusat agihkan sebahagian
 peruntukan untuk membayar semua elaun 700 guru al-Quran di Terengganu yang
 dikatakan dizalimi serta dengan kenaikan RM100 dengan menjadikan RM600 sebulan
 daripada RM500 asalnya. Hanya jumlah keseluruhan congak kepala saya lebih kurang
@@ -2240,9 +2239,9 @@ mereka mempunyai motif dan agenda tertentu? Sekarang banyak perkara yang berlaku
 yang menghabiskan masa dan menghabiskan wang negara dan juga rakyat jelata.
 Sebagai contoh..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1440,Tuan Nga Hock Cheh,"Yang Berhormat, boleh minta laluan?"
+Bacaan Kali Yang Kedua",,■1440,1440,Tuan Nga Hock Cheh,"Yang Berhormat, boleh minta laluan?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1440,Datuk Razali bin Idris,"Saya habiskan dahulu. Sebagai contoh bendera terbalik,
+Bacaan Kali Yang Kedua",,■1440,1440,Datuk Razali bin Idris,"Saya habiskan dahulu. Sebagai contoh bendera terbalik,
 bendera bintang bucu lima, Negaraku dalam bahasa Mandarin dan juga bahasa Arab. Kita
 Tuan Yang di-Pertua, kita harus noktahkan ini dengan segera.
 Soalan saya, apakah langkah proaktif kerajaan menangani isu ini? Harapan
@@ -2251,18 +2250,18 @@ mencari punca mengapa dan mengapa serta membuat tangkapan yang hanya bangkitkan
 rasa sangsi di kalangan masyarakat majmuk yang kebarangkalian menjurus kepada
 rusuhan seterusnya keruntuhan negara kita Malaysia. Silakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1440,Tuan Nga Hock Cheh,Tuan Yang di-Pertua.
+Bacaan Kali Yang Kedua",,■1440,1440,Tuan Nga Hock Cheh,Tuan Yang di-Pertua.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1440,Tuan Yang di-Pertua,"*Mic, mic* Yang Berhormat."
+Bacaan Kali Yang Kedua",,■1440,1440,Tuan Yang di-Pertua,"*Mic, mic* Yang Berhormat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1440,Tuan Nga Hock Cheh,"Saya hendak tanya Yang Berhormat. Memandangkan
+Bacaan Kali Yang Kedua",,■1440,1440,Tuan Nga Hock Cheh,"Saya hendak tanya Yang Berhormat. Memandangkan
 masa Jepun *occupation* di Malaysia, rakyat Malaysia pun telah memaafkan orang Jepun
 dan menubuhkan itu tali rantai- *trade relationship* yang baik. Lagipun ada satu perjanjian
 di antara *Communist Party* dengan pihak autoriti Malaysia membenarkan mereka balik ke
 Malaysia. Ada juga pemimpin PKM seperti Rashid Maidin, Abdullah Sidi. Adakah masa
 sudah sampai bagi kita juga memaafkan mereka dan tutup isu ini?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1440,Datuk Razali bin Idris,"Terima kasih Yang Berhormat. Ia sebenarnya saya pun
+Bacaan Kali Yang Kedua",,■1440,1440,Datuk Razali bin Idris,"Terima kasih Yang Berhormat. Ia sebenarnya saya pun
 tahu dan saya terbaca kenyataan yang dibuat oleh bekas Ketua Polis Diraja Negara dan
 ketika itu dia terbabit untuk perjanjian dengan Parti Komunis. Seperti mana yang dikatakan
 oleh Yang Berhormat, itu adalah benar tetapi untuk menjaga keharmonian Rashid Maidin,
@@ -2276,13 +2275,13 @@ tentang bila kerajaan akan mengambil tindakan. Bermakna ia menggunakan wang raky
 yang tidak sepatutnya kita gunakan untuk tujuan tersebut. Jadi Tuan Yang di-Pertua, saya
 teruskan perbahasan saya..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1440,Dato’ Zahari bin Sarip,"Yang Berhormat, laluan..."
+Bacaan Kali Yang Kedua",,■1440,1440,Dato’ Zahari bin Sarip,"Yang Berhormat, laluan..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1450,Datuk Razali bin Idris,
+Bacaan Kali Yang Kedua",,■1450,1450,Datuk Razali bin Idris,
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1450,ANNOTATION,[Duduk]
+Bacaan Kali Yang Kedua",,■1450,1450,ANNOTATION,[Duduk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1450,Dato’ Zahari bin Sarip,"Terima kasih. Saya tertarik dengan isu abu mayat Chin
+Bacaan Kali Yang Kedua",,■1450,1450,Dato’ Zahari bin Sarip,"Terima kasih. Saya tertarik dengan isu abu mayat Chin
 Peng. Saya tidak mempertikaikan tentang perjanjian dan sebagainya kerana telah
 dijelaskan oleh Yang Berhormat.
 Cuma saya hendak tanya pandangan Yang Berhormat, agaknya kalau
@@ -2295,7 +2294,7 @@ bermakna ada banyak lagi perkara yang mungkin boleh diseludup. Jadi wajarkah kit
 minta, sama ada pihak KDN ataupun imigresen untuk menguatkan lagi persempadanan
 kita supaya tidak ada lagi penyeludupan seperti ini? Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1450,Datuk Razali bin Idris,"Itu maksud yang saya hendak nyatakan sebab kita
+Bacaan Kali Yang Kedua",,■1450,1450,Datuk Razali bin Idris,"Itu maksud yang saya hendak nyatakan sebab kita
 berbahas dalam Bajet Belanjawan. Ini bermakna kerajaan terpaksa kena mengerahkan
 tentera, kena mengerahkan segala pihak berkuasa untuk menjaga perkara-perkara yang
 tidak sepatutnya kita jaga. Kita sudah tahu sudah sensitiviti itu ada di kalangan rakyat
@@ -2330,9 +2329,9 @@ Kos projek adalah sebanyak RM36.54 juta. Tarikh milik tapak adalah pada 27 Disem
 tetapi ini pun jauh lagi Tuan Yang di-Pertua- saya hendak baca sampai habis Tuan Yang
 di-Pertua."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1450,Tuan Yang di-Pertua,Sila.
+Bacaan Kali Yang Kedua",,■1450,1450,Tuan Yang di-Pertua,Sila.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1450,Datuk Razali bin Idris,"Keempat, pembinaan pejabat pelajaran baharu daerah
+Bacaan Kali Yang Kedua",,■1450,1450,Datuk Razali bin Idris,"Keempat, pembinaan pejabat pelajaran baharu daerah
 Marang. Ini kawasan tempat saya tinggal. Agensi pemilik, Kementerian Pendidikan
 Malaysia; agensi pelaksana, Bahagian Pembangunan Kementerian Pendidikan Malaysia.
 Kos projek adalah sebanyak RM8,384,277.76. Tarikh milik tapak adalah 4 Januari 2018.
@@ -2368,10 +2367,10 @@ mempertingkatkan kesedaran serta kematangan ke arah mengeratkan perpaduan rakyat
 bersatu padu serta melonjakkan kedudukan Malaysia sebagai paksi penting ekonomi di
 Asia Tenggara. Sekian, terima kasih. Saya mohon menyokong."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1450,Tuan Yang di-Pertua,"Terima kasih, Yang Berhormat. Dipersilakan Yang
+Bacaan Kali Yang Kedua",,■1450,1450,Tuan Yang di-Pertua,"Terima kasih, Yang Berhormat. Dipersilakan Yang
 Berhormat Senator Dato’ Kesavadas A. Achyuthan Nair."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1448,Dato’ Kesavadas A. Achyuthan Nair,"Terima kasih, Tuan Yang di-Pertua
+Bacaan Kali Yang Kedua",,2.48 ptg.,1448,Dato’ Kesavadas A. Achyuthan Nair,"Terima kasih, Tuan Yang di-Pertua
 kerana memberi saya peluang untuk turut membahaskan Belanjawan 2020 yang baru
 dibentangkan oleh Yang Berhormat Menteri Kewangan di Dewan Negara, pada pagi ini.
 Tuan Yang di-Pertua, pada keseluruhannya Bajet 2020 boleh dikatakan cukup
@@ -2385,7 +2384,7 @@ dijadikan tambahan dalam elaun nelayan dari RM200 hingga RM250.
 Cuma saya hendak tanya kepada Yang Berhormat Menteri, kaum nelayan
 merupakan salah satu kaum yang kurang bernasib baik."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1500,Dato’ Kesavadas A. Achyuthan Nair,"Ini disebabkan oleh kekurangan tangkapan ikan di laut kita dan juga nelayan-
+Bacaan Kali Yang Kedua",,■1500,1500,Dato’ Kesavadas A. Achyuthan Nair,"Ini disebabkan oleh kekurangan tangkapan ikan di laut kita dan juga nelayan-
 nelayan kita tidak pergi jauh ke laut dan di lautan terbuka. Antara sebabnya adalah
 pencerobohan oleh nelayan-nelayan asing di lautan kita dan nelayan-nelayan kita
 menggunakan bot kecil. Anggaran perbelanjaan Kementerian Pertanian dan Industri Asas
@@ -2479,7 +2478,7 @@ Bagi melegakan pengguna terutama yang berpendapatan rendah, harga jalur
 lebar telah diturunkan sebanyak 49 peratus. Ini boleh membawa kepada perubahan
 permintaan pengguna untuk mendapat khidmat *internet* yang lebih pantas."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1510,Dato’ Kesavadas A. Achyuthan Nair,"Modal insan. Tuan Yang di-Pertua, Bajet 2020 didapati Mesra Wanita. Bagi
+Bacaan Kali Yang Kedua",,▪ 1510,1510,Dato’ Kesavadas A. Achyuthan Nair,"Modal insan. Tuan Yang di-Pertua, Bajet 2020 didapati Mesra Wanita. Bagi
 meningkatkan modal insan negara, langkah diambil ke arah merapatkan jurang jantina
 dalam pasaran buruh negara dengan menangani beberapa halangan terhadap pekerjaan
 yang dihadapi oleh wanita. Antaranya ialah cadangan peningkatan cuti bersalin hingga 90
@@ -2576,7 +2575,7 @@ perkhidmatan serta penjagaan kesihatan rakyat negara kita apabila memberi perunt
 tambahan sebanyak RM1.9 bilion iaitu daripada RM2.87 bilion pada tahun 2019 kepada
 RM3.6 bilion tahun 2020."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1520,Dato’ Kesavadas A. Achyuthan Nair,"Tambahan tersebut sebahagian besarnya bakal digunakan untuk menaik taraf
+Bacaan Kali Yang Kedua",,■1520,1520,Dato’ Kesavadas A. Achyuthan Nair,"Tambahan tersebut sebahagian besarnya bakal digunakan untuk menaik taraf
 hospital-hospital yang telah uzur dari segi kondisi, peralatan serta infrastruktur kepada
 sesuatu yang lebih canggih seiring dengan perubahan teknologi bidang perubatan dunia.
 Bajet 2020 memberi peruntukan bagi kesihatan rakyat khususnya apabila bakal
@@ -2643,32 +2642,32 @@ Kewangan kerana Bajet 2020 kali ini cukup berhemat dan telah pun disambut baik o
 Agensi Penarafan Antarabangsa, pemain industri tempatan dan juga rakyat amnya.
 Sekian, terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1520,Tuan Yang di-Pertua,"Terima kasih, Yang Berhormat. Silakan Yang Berhormat
+Bacaan Kali Yang Kedua",,■1520,1520,Tuan Yang di-Pertua,"Terima kasih, Yang Berhormat. Silakan Yang Berhormat
 Senator Dr. Yaakob bin Sapari."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1527,Dr. Yaakob bin Sapari,"*Bismillahi Rahmani Rahim. Assalamualaikum
+Bacaan Kali Yang Kedua",,3.27 ptg.,1527,Dr. Yaakob bin Sapari,"*Bismillahi Rahmani Rahim. Assalamualaikum
 warahmatullahi wabarakatuh dan Salam Sejahtera.*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1527,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, esok Yang Berhormat Menteri
+Bacaan Kali Yang Kedua",,3.27 ptg.,1527,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, esok Yang Berhormat Menteri
 Kewangan hendak menjawab *so*, selepas pada masa sekarang saya ada tiga lagi nama.
 *So*, nama kalau belum lagi hantar tolong beri kepada saya. Silakan, Yang Berhormat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1527,Dr. Yaakob bin Sapari,"Tuan Yang di-Pertua, terima kasih di atas kesempatan
+Bacaan Kali Yang Kedua",,3.27 ptg.,1527,Dr. Yaakob bin Sapari,"Tuan Yang di-Pertua, terima kasih di atas kesempatan
 yang diberi kepada saya untuk membahaskan Rang Undang-undang Bajet 2020 pada hari
 ini. Tahniah saya ucapkan kepada kerajaan yang telah menyediakan Bajet 2020 yang
 sangat komprehensif merangkumi semua aspek untuk kepentingan rakyat di negara ini.
 Kalau kita lihat trend bajet terus meningkat dari tahun ke setahun. Kalau kita lihat
 trend bajet selama..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1527,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, tersilap. Oleh kerana tadi
+Bacaan Kali Yang Kedua",,3.27 ptg.,1527,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, tersilap. Oleh kerana tadi
 *officer* saya cakap dia hendak jawab esok tetapi sebenarnya dia hendak jawab soalan
 esok. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1527,Dr. Yaakob bin Sapari,"Okey, okey, okey. Terima kasih."
+Bacaan Kali Yang Kedua",,3.27 ptg.,1527,Dr. Yaakob bin Sapari,"Okey, okey, okey. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1527,Tuan Yang di-Pertua,"Silakan. Teruskan Yang Berhormat, kita ada empat hari."
+Bacaan Kali Yang Kedua",,3.27 ptg.,1527,Tuan Yang di-Pertua,"Silakan. Teruskan Yang Berhormat, kita ada empat hari."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1527,Dr. Yaakob bin Sapari,"Terima kasih, Tuan Yang di-Pertua. Ramai lah
+Bacaan Kali Yang Kedua",,3.27 ptg.,1527,Dr. Yaakob bin Sapari,"Terima kasih, Tuan Yang di-Pertua. Ramai lah
 kesempatan Ahli Yang Berhormat Senator berbahas. Kalau kita lihat trend bajet dia terus
 meningkat daripada tahun 2010 ke 2020. Tahun 2010 bajet ialah RM189.499 ribu juta
 ataupun RM189 bilion meningkat ke RM211.987 bilion pada tahun 2011, tahun 2012 –
@@ -2680,7 +2679,7 @@ Kalau kita lihat trend bajet ini dia terus meningkat tahun ke tahun dan yang ket
 ialah belanja mengurus yang meningkat daripada 2010 sekitar RM138 bilion meningkat
 kepada RM201.200 bilion."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1530,Dr. Yaakob bin Sapari,"Kita lihat trend ini terus meningkat ke setahun dan setahun. Yang
+Bacaan Kali Yang Kedua",,■1530,1530,Dr. Yaakob bin Sapari,"Kita lihat trend ini terus meningkat ke setahun dan setahun. Yang
 membimbangkan ialah pendapatan negara setiap tahun hanya sekadar mampu untuk
 membayar belanja mengurus sementara hutang negara digunakan untuk pembangunan.
 Kalau kita lihat bajet pembangunan didanai oleh hutang dan tiap-tiap tahun hutang
@@ -2783,7 +2782,7 @@ mengeluarkan baja bagi subsidi padi. Saya rasa adalah wajar agar NAFAS diteruska
 untuk membekalkan baja subsidi ini kerana NAFAS dimiliki oleh peladang-peladang dan
 *urea*-nya diperoleh daripada PETRONAS."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1540,Dr. Yaakob bin Sapari,"Tuan Yang di-Pertua, satu perkara lagi saya hendak sentuh ialah pada 28 Februari
+Bacaan Kali Yang Kedua",,■1540,1540,Dr. Yaakob bin Sapari,"Tuan Yang di-Pertua, satu perkara lagi saya hendak sentuh ialah pada 28 Februari
 1991, Dato’ Sri Dr. Mahathir Mohamad, Perdana Menteri ketika itu telah menggagas satu
 pemikiran dan kerangka untuk menjadikan Malaysia menjelang 2020.
 Ia dikenali sebagai Wawasan 2020 yang mana Wawasan 2020 ini ada sembilan
@@ -2884,7 +2883,7 @@ tempat. Ini belum kita membincangkan soal penggunaan internet sebab mereka di da
 kawasan pedalaman. Bagaimana anak-anak mereka ini dapat bersaing dengan anak-
 anak di bandar."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1550,Dr. Yaakob bin Sapari,"Dalam bajet ini disediakan bekalan air bersih. Mungkin Yang Berhormat Senator
+Bacaan Kali Yang Kedua",,■1550,1550,Dr. Yaakob bin Sapari,"Dalam bajet ini disediakan bekalan air bersih. Mungkin Yang Berhormat Senator
 daripada Sarawak boleh jelaskan. Saya dapati kawasan pinggir daripada Kuching sahaja
 tidak sampai dua jam daripada Kuching, bekalan air bersih pun tidak sempurna.
 Malangnya setiap kali pilihan raya yang diedarkan ialah tong biru. Saya berada di Sarawak
@@ -2899,21 +2898,21 @@ tidak ada masalah bahagian air sebab Sarawak ada sungai yang banyak.
 Jadi pengurusannya harus di atur, saya rasa kasihan orang Sarawak sudah 60
 tahun merdeka tidak mempunyai bekalan air yang teratur."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1550,Dato’ Zaiedi bin Haji Suhaili,"Tuan Yang di-Pertua, saya mohon mencelah."
+Bacaan Kali Yang Kedua",,■1550,1550,Dato’ Zaiedi bin Haji Suhaili,"Tuan Yang di-Pertua, saya mohon mencelah."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1550,Tuan Yang di-Pertua,Silakan.
+Bacaan Kali Yang Kedua",,■1550,1550,Tuan Yang di-Pertua,Silakan.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1550,Dato’ Zaiedi bin Haji Suhaili,"Berkenaan dengan *water authority* di Sarawak,
+Bacaan Kali Yang Kedua",,■1550,1550,Dato’ Zaiedi bin Haji Suhaili,"Berkenaan dengan *water authority* di Sarawak,
 sekarang ini kita..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1550,Tuan Yang di-Pertua,"Yang Berhormat, dalam perbahasan Yang Berhormat
+Bacaan Kali Yang Kedua",,■1550,1550,Tuan Yang di-Pertua,"Yang Berhormat, dalam perbahasan Yang Berhormat
 nanti ada tidak fasal ini?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1550,Dato’ Zaiedi bin Haji Suhaili,Tidak ada. Saya respons sahaja.
+Bacaan Kali Yang Kedua",,■1550,1550,Dato’ Zaiedi bin Haji Suhaili,Tidak ada. Saya respons sahaja.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1550,Tuan Yang di-Pertua,Okey.
+Bacaan Kali Yang Kedua",,■1550,1550,Tuan Yang di-Pertua,Okey.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1550,Dato’ Zaiedi bin Haji Suhaili,"Jadi pihak berkuasa bekalan air di Sarawak untuk
+Bacaan Kali Yang Kedua",,■1550,1550,Dato’ Zaiedi bin Haji Suhaili,"Jadi pihak berkuasa bekalan air di Sarawak untuk
 Bandaraya Kuching dan kawasan sekitarnya kita mempunyai Lembaga Air Kuching, untuk
 kawasan Sibu kita ada Lembaga Air Sibu dan untuk kawasan Miri dan Bintulu kita ada
 Lembaga Air Kawasan Utara (LAKU). Selain dari itu, kita mempunyai bekalan air
@@ -2934,7 +2933,7 @@ bersih di seluruh negeri Sarawak. Sebanyak RM1 bilion telah diperuntukkan oleh k
 negeri untuk kita membaiki sistem bekalan air. *Insya-Allah* perkara ini akan perbaiki oleh
 kerajaan negeri. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1550,Dr. Yaakob bin Sapari,"Terima kasih. Saya rasa lepas ini kalau pilihan raya
+Bacaan Kali Yang Kedua",,■1550,1550,Dr. Yaakob bin Sapari,"Terima kasih. Saya rasa lepas ini kalau pilihan raya
 kecil, pilihan raya di Sarawak tidak payahlah hendak edarkan tong biru lagi. *Point* terakhir
 saya ialah Tuan Yang di-Pertua, tiap-tiap tahun Kelantan dilanda banjir. Ini walaupun saya
 Selangor tetapi saya prihatin dengan Kelantan ini tiap-tiap tahun Kelantan dilanda banjir
@@ -2952,10 +2951,10 @@ Saya cadangkan supaya dibantu kerajaan Kelantan ini memastikan bahawa satu
 *dam* besar dibina di hulu Kelantan untuk memastikan tidak ada kemusnahan banjir di
 Kelantan. Tuan Yang di-Pertua, terima kasih dan saya menyokong usul ini."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1550,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat. Dipersilakan Yang
+Bacaan Kali Yang Kedua",,■1550,1550,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat. Dipersilakan Yang
 Berhormat Laksamana Pertama Haji Mohamad Imran bin Abd. Hamid, sila."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1555,Laksamana Pertama Haji Mohamad Imran (B) bin Abd. Hamid,"Terima kasih
+Bacaan Kali Yang Kedua",,3.55 ptg.,1555,Laksamana Pertama Haji Mohamad Imran (B) bin Abd. Hamid,"Terima kasih
 Tuan Yang di-Pertua.
 Saya ingin memulakan perbincangan saya berhubung dengan Rang Undang-
 undang Perbekalan 2020 dengan merujuk kembali kepada peruntukan tahun ini,
@@ -2985,10 +2984,10 @@ Ini merupakan tanggungjawab kerajaan untuk memenuhi keperluan-keperluan yang
 digariskan di ketiga-tiga buku ini. Maka sebab itu saya harap kementerian-kementerian
 merujuk benar-benar kepada buku ini..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1555,ANNOTATION,"[Menunjukkan buku Anggaran Perbelanjaan
+Bacaan Kali Yang Kedua",,3.55 ptg.,1555,ANNOTATION,"[Menunjukkan buku Anggaran Perbelanjaan
 Persekutuan 2020]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1555,Laksamana Pertama Haji Mohamad Imran (B) bin Abd. Hamid,"Buku peruntukan yang telah diluluskan oleh Dewan Rakyat, *insya-
+Bacaan Kali Yang Kedua",,3.55 ptg.,1555,Laksamana Pertama Haji Mohamad Imran (B) bin Abd. Hamid,"Buku peruntukan yang telah diluluskan oleh Dewan Rakyat, *insya-
 Allah* Dewan Negara pun kita akan luluskan. Apa yang tidak seronoknya Tuan Yang di-
 Pertua saya lihat Menteri-menteri lupa merujuk kepada buku ini. Selepas dibentangkan di
 Dewan Rakyat mereka tidak merujuk kepada buku ini.
@@ -3005,7 +3004,7 @@ ketiga-tiga buku yang saya telah tunjukkan tadi Tuan Yang di-Pertua khususnya Bu
 Harapan, 60 manifesto yang kita telah janjikan dan lima iltizam yang telah kita paparkan
 di dalam buku tersebut."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1600,Laksamana Pertama Haji Mohamad Imran (B) bin Abd. Hamid,"Kementerian Luar Negeri mungkin kita setuju dengan peruntukan RM724 juta
+Bacaan Kali Yang Kedua",,■1600,1600,Laksamana Pertama Haji Mohamad Imran (B) bin Abd. Hamid,"Kementerian Luar Negeri mungkin kita setuju dengan peruntukan RM724 juta
 akan tetapi mungkin tidak ada keperluan untuk memenuhi Buku Harapan ataupun melalui
 manifesto yang telah kita janjikan.
 Kementerian Hal Ehwal Ekonomi. Ia merupakan kementerian yang
@@ -3019,21 +3018,21 @@ peratus pada tahun depan. Baru rakyat, warga FELDA akan rasa ini langkah-langkah
 kerajaan untuk membantu warga FELDA. Jika tidak Tuan Yang di-Pertua, warga FELDA
 akan terus berhutang sehingga akhir hayat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1600,Tuan Yang di-Pertua,Yang Berhormat
+Bacaan Kali Yang Kedua",,■1600,1600,Tuan Yang di-Pertua,Yang Berhormat
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1600,Laksamana Pertama Haji Mohamad Imran (B) bin Abd. Hamid,"Kementerian
+Bacaan Kali Yang Kedua",,■1600,1600,Laksamana Pertama Haji Mohamad Imran (B) bin Abd. Hamid,"Kementerian
 Industri Utama kita apa dia?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1600,Tuan Yang di-Pertua,"Yang Berhormat, sebentar."
+Bacaan Kali Yang Kedua",,■1600,1600,Tuan Yang di-Pertua,"Yang Berhormat, sebentar."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1600,Laksamana Pertama Haji Mohamad Imran (B) bin Abd. Hamid,"Silakan Tuan
+Bacaan Kali Yang Kedua",,■1600,1600,Laksamana Pertama Haji Mohamad Imran (B) bin Abd. Hamid,"Silakan Tuan
 Yang di-Pertua."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1600,ANNOTATION,[Timbalan Yang di-Pertua mempengerusikan Mesyuarat]
+Bacaan Kali Yang Kedua",,■1600,1600,ANNOTATION,[Timbalan Yang di-Pertua mempengerusikan Mesyuarat]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1600,Timbalan Yang di-Pertua,Yang Berhormat teruskan.
+Bacaan Kali Yang Kedua",,■1600,1600,Timbalan Yang di-Pertua,Yang Berhormat teruskan.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1600,Laksamana Pertama Haji Mohamad Imran (B) bin Abd. Hamid,"Terima kasih
+Bacaan Kali Yang Kedua",,■1600,1600,Laksamana Pertama Haji Mohamad Imran (B) bin Abd. Hamid,"Terima kasih
 Tuan Yang di-Pertua. Kementerian Industri Utama diperuntukkan dengan RM259 juta.
 Saya tidak ada masalah untuk menyokong supaya diluluskan oleh kerana kementerian ini
 sibuk dengan kempen-kempen untuk memastikan harga sawit meningkat dan terbukti
@@ -3113,7 +3112,7 @@ Pada masa itu Yang Berhormat Timbalan Menteri Pelancongan bersetuju di
 dalam Dewan untuk menganjurkan Festival Gambus di bawah Pertubuhan Gambus
 Malaysia pada tahun 2019."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1610,Laksamana Pertama Haji Mohamad Imran (B) bin Abd. Hamid,"Rentetan dari cadangan itu, satu mesyuarat telah diadakan di kementerian di
+Bacaan Kali Yang Kedua",,■1610,1610,Laksamana Pertama Haji Mohamad Imran (B) bin Abd. Hamid,"Rentetan dari cadangan itu, satu mesyuarat telah diadakan di kementerian di
 antara Pertubuhan Gambus Malaysia dan pegawai kementerian. Mesyuarat itu diadakan
 pada hari Jumaat, 15 Februari tahun ini. Mesyuarat tersebut dipengerusikan oleh Cik
 Saraya binti Arbi, Timbalan Ketua Setiausaha (Kebudayaan) serta Dr. Tan Awang Besar
@@ -3213,7 +3212,7 @@ Seterusnya, Tuan Yang di-Pertua, Kementerian Pendidikan. Sekali lagi, anak
 muda melihat tiada bantuan atau pun peringanan beban dibantu oleh Kementerian
 Pendidikan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1620,Laksamana Pertama Haji Mohamad Imran (B) bin Abd. Hamid,"Maka sebab itu pada hari ini Tuan Yang di-Pertua, saya ingin menyarankan
+Bacaan Kali Yang Kedua",,■1620,1620,Laksamana Pertama Haji Mohamad Imran (B) bin Abd. Hamid,"Maka sebab itu pada hari ini Tuan Yang di-Pertua, saya ingin menyarankan
 supaya Kementerian Pendidikan menghapus kira hutang PTPTN 50 peratus kepada
 semua penghutang-penghutang yang disenaraikan di dalam senarai penghutang PTPTN.
 Maka saya percaya dengan itu, kerajaan boleh mendapat sokongan daripada anak muda
@@ -3225,12 +3224,12 @@ kelapa sawit.
 Dengan itu juga Tuan Yang di-Pertua saya mohon menyokong Rang Undang-
 undang Perbekalan 2020. Terima kasih, Tuan Yang di-Pertua."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1620,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat Senator Laksamana
+Bacaan Kali Yang Kedua",,■1620,1620,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat Senator Laksamana
 Pertama Haji Mohamad Imran bin Abd. Hamid. Terima kasih banyak-banyak.
 Sekarang saya jemput pula Yang Berhormat Senator Dato’ Zaiedi bin Haji
 Suhaili, dipersilakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1621,Dato’ Zaiedi bin Haji Suhaili,"Terima kasih Tuan Yang di-Pertua kerana
+Bacaan Kali Yang Kedua",,4.21 ptg.,1621,Dato’ Zaiedi bin Haji Suhaili,"Terima kasih Tuan Yang di-Pertua kerana
 memberi keizinan kepada saya untuk ikut serta pada hari ini dalam perbahasan mengenai
 Rang Undang-undang Belanjawan 2020, yang mana yang telah dibentangkan di Dewan
 Rakyat pada 11 Oktober yang lalu dan pagi ini saya mengucapkan bagi pihak Dewan juga,
@@ -3288,7 +3287,7 @@ juga saya mendengar berita bahawa ada pemilik-pemilik tanah tempatan hendak
 membuat satu *joint venture* ataupun kita katakan usaha sama katakanlah dengan pemaju-
 pemaju asing dari luar negara kita."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1630,Dato’ Zaiedi bin Haji Suhaili,"Katakan daripada negara China yang dikatakan boleh mampu membuat rumah
+Bacaan Kali Yang Kedua",,■1630,1630,Dato’ Zaiedi bin Haji Suhaili,"Katakan daripada negara China yang dikatakan boleh mampu membuat rumah
 dengan harga yang agak berpatutan yang boleh dan mudah dimiliki oleh rakyat negara
 kita. Apakah kerajaan membenarkan pemilik tanah membuat satu usaha sama dengan
 pemaju-pemaju asing untuk membuat *housing development* di negara kita ini?
@@ -3363,7 +3362,7 @@ Saya meminta Yang Berhormat Menteri Dalam Negeri dan juga Jabatan
 Imigresen Malaysia supaya mengambil tindakan tegas ke atas pelawat-pelawat yang
 *overstayed* ini dan membawa mereka ke muka pengadilan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1640,Dato’ Zaiedi bin Haji Suhaili,"Kita mengalu-alukan kedatangan pelawat-pelawat ke negara kita ini tetapi
+Bacaan Kali Yang Kedua",,■1640,1640,Dato’ Zaiedi bin Haji Suhaili,"Kita mengalu-alukan kedatangan pelawat-pelawat ke negara kita ini tetapi
 pelawat-pelawat itu mesti menghormati dan mematuhi undang-undang negara kita. Tuan
 Yang di-Pertua, satu perkara lagi yang saya hendak sentuh juga di dalam perbahasan
 saya ialah berkenaan dengan aset-aset Tabung Haji di Sarawak.
@@ -3433,7 +3432,7 @@ peratus. Jadi, kalaulah tiap-tiap tahun kita di peruntukan sekian jumlah tetapi 
 kita tidak mencapai sebanyak 100 peratus, kita belanja sebanyak 60 peratus atau 70
 peratus."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1650,Dato’ Zaiedi bin Haji Suhaili,"Kalau ini berlarutan, maka ia akan memperlahankan tempoh pembangunan.
+Bacaan Kali Yang Kedua",,■1650,1650,Dato’ Zaiedi bin Haji Suhaili,"Kalau ini berlarutan, maka ia akan memperlahankan tempoh pembangunan.
 Bukan sahaja di negeri Sarawak, tetapi di mana-mana negeri di Malaysia. Jadi, bila rakyat
 mendengar kerajaan mengumumkan kita diberi peruntukan katakan RM4.4 bilion, rakyat
 kata banyak duit. Sejumlah RM4.4 bilion diperuntukkan, tetapi akhirnya kita hanya belanja
@@ -3509,7 +3508,7 @@ rancangan untuk memindahkan ibu kota negara tersebut ke kawasan Kalimantan Timur
 di Kepulauan Borneo. Sudah tentu akan merasai limpahan daripada pemindahan ibu kota
 negara ini ialah tidak lain dan tidak bukan adalah Sabah dan Sarawak."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1700,Dato’ Zaiedi bin Haji Suhaili,"Oleh yang demikian, dalam bajet ini dan juga dalam pembentangan Kertas Putih
+Bacaan Kali Yang Kedua",,■1700,1700,Dato’ Zaiedi bin Haji Suhaili,"Oleh yang demikian, dalam bajet ini dan juga dalam pembentangan Kertas Putih
 pada pagi ini saya meminta supaya kawalan sempadan Kalimantan-Sarawak
 dipertingkatkan lagi walaupun keadaan keselamatan kita adalah terkawal, namun kita
 adalah perlu bersedia dan berwaspada pada setiap masa. Setakat ini kita telah ada 11
@@ -3554,13 +3553,13 @@ terkandung dalam bajet ini. Pokok pangkalnya adalah sejauh mana rakyat dapat
 menyambut bajet ini dengan sebaik-baiknya untuk faedah mereka sendiri. Sekian, saya
 akhiri ucapan saya petang ini. Terima kasih Tuan Yang di-Pertua."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1700,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat Senator Zaiedi bin
+Bacaan Kali Yang Kedua",,■1700,1700,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat Senator Zaiedi bin
 Haji Suhaili telah berucap dengan panjang lebar. Banyak isu baik ditimbulkan, pandangan-
 pandangan yang baik dan bernas dan kita harap dapat membawa kesan yang baik.
 Terima kasih Yang Berhormat Senator Zaiedi bin Haji Suhaili.
 Sekarang saya jemput pula Yang Berhormat Senator Lim Peh Hen. Silakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1707,Datuk Lim Pay Hen,"Tuan Yang di-Pertua, terima kasih kerana memberi
+Bacaan Kali Yang Kedua",,5.07 ptg.,1707,Datuk Lim Pay Hen,"Tuan Yang di-Pertua, terima kasih kerana memberi
 peluang kepada saya untuk menyertai perbahasan Bajet 2020. Bajet tahun 2020
 merupakan Rang Undang-undang Perbekalan kali yang kedua selepas Pilihanraya Umum
 Keempat Belas, atau sejak Pakatan Harapan mengambil alih kerajaan. Maka dalam
@@ -3589,7 +3588,7 @@ masyarakat, dewan serba guna, balai raya, dewan terbuka untuk sekolah sama ada y
 uzur atau baharu, pemulihan atau pembinaan baharu masih menunggu kelulusan bagi
 menyalurkan bajet."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1710,Datuk Lim Pay Hen,"Sebagaimana yang telah saya bangkitkan dalam perbahasan bajet lepas,
+Bacaan Kali Yang Kedua",,■1710,1710,Datuk Lim Pay Hen,"Sebagaimana yang telah saya bangkitkan dalam perbahasan bajet lepas,
 perbezaan untuk menyalurkan peruntukan di antara Ahli Parlimen, kerajaan dan bukan
 kerajaan sememangnya diketahui umum. Saya menerima hakikat tersebut, akan tetapi
 peruntukan untuk kawasan Ahli Parlimen kerajaan sendiri juga mempunyai perbezaan.
@@ -3687,7 +3686,7 @@ Menurut Indeks Harga Rumah Malaysia, Jabatan Penilaian dan Perkhidmatan Harta
 menunjukkan kepada suku pertama 2019 indeks berlaku meningkat 4.8 mata iaitu 196.0
 mata berbanding suku pertama 2018."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1720,Datuk Lim Pay Hen,"Namun harga rumah di Kuala Lumpur merekodkan harga tertinggi iaitu RM780
+Bacaan Kali Yang Kedua",,■1720,1720,Datuk Lim Pay Hen,"Namun harga rumah di Kuala Lumpur merekodkan harga tertinggi iaitu RM780
 ribu. Diikuti oleh negeri Selangor RM480 ribu, dan negeri Pulau Pinang pada paras harga
 RM437 ribu. Catatan indeks dan harga di negeri yang penting menunjukkan Kerajaan
 Pakatan Harapan dan Kementerian Perumahan dan Kerajaan Tempatan masih dan terus
@@ -3752,7 +3751,7 @@ pencerahan yang saya sampaikan boleh dipertimbangkan oleh Kerajaan Pakatan
 Harapan secara mendalam. Apabila kerajaan kini dan terdahulu sentiasa mendahului
 rakyat. Maka dengan kata-kata ini saya dengan ini menyokong. Sekian, terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1720,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat. Yang Berhormat telah
+Bacaan Kali Yang Kedua",,■1720,1720,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat. Yang Berhormat telah
 bercakap panjang lebar dan bernas isinya. Itu yang baik sekali iaitu Yang Berhormat
 Senator Datuk Lim Pay Hen.
 Ahli Yang Berhormat, pertama sekali saya ucapkan terima kasih banyak. Ahli
@@ -3767,9 +3766,9 @@ Burung tempua membuat sarang;
 Bukan budi sebarang budi;
 Budi mereka dikenang orang...*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1720,ANNOTATION,[Tepuk]
+Bacaan Kali Yang Kedua",,■1720,1720,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1720,Timbalan Yang di-Pertua,"Petang ini tadi saya- kita dalam Mesyuarat Ketiga, Penggal Kedua, Majlis
+Bacaan Kali Yang Kedua",,■1720,1720,Timbalan Yang di-Pertua,"Petang ini tadi saya- kita dalam Mesyuarat Ketiga, Penggal Kedua, Majlis
 Parlimen Keempat Belas.
 Setiap hari saya bertambah ilmu bila berhadapan dengan tokoh-tokoh negara ini.
 Ada ilmu, bak kata Abdullah Munsyi, “Semakin ku tebas dan tebang hutan itu, terasa oleh
@@ -3792,4 +3791,4 @@ memberi ilham, suara-suara perjuangan yang baik.
 Sekarang, saya tangguhkan mesyuarat hingga jam 10 pagi, Selasa iaitu esok,
 pada 10 Disember 2019. Sekian. *Assalamualaikum warahmatullahi wabarakatuh.*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2020
-Bacaan Kali Yang Kedua",,1720,ANNOTATION,[Dewan ditangguhkan pada jam 5.30 petang]
+Bacaan Kali Yang Kedua",,■1720,1720,ANNOTATION,[Dewan ditangguhkan pada jam 5.30 petang]

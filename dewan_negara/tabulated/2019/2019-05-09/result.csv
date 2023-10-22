@@ -1,7 +1,7 @@
-level_1,level_2,level_3,timestamp,author,speech
-,,,1000,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
+level_1,level_2,level_3,raw_timestamp,timestamp,author,speech
+,,,10.00 pagi,1000,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1004,Menteri di Jabatan Perdana Menteri [Tuan Waytha Moorthy A/L Ponnusamy],"Tuan Yang di-Pertua, saya mohon mencadangkan:
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,10.04 pg.,1004,Menteri di Jabatan Perdana Menteri [Tuan Waytha Moorthy A/L Ponnusamy],"Tuan Yang di-Pertua, saya mohon mencadangkan:
 “Bahawa walau apa pun peruntukan-peruntukan Peraturan
 Mesyuarat 11, Majlis Dewan Negara hari ini tidak akan ditangguhkan
 sehingga selesai semua urusan kerajaan yang tertera dalam *Aturan
@@ -9,33 +9,33 @@ Urusan Mesyuarat* pada hari ini, diputuskan dan diluluskan, dan
 selepas itu Majlis Mesyuarat akan ditangguhkan ke suatu tarikh yang
 tidak ditetapkan.”"
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1004,Tuan Yang di-Pertua,Siapa yang menyokong?
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,10.04 pg.,1004,Tuan Yang di-Pertua,Siapa yang menyokong?
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1004,Timbalan Menteri Pendidikan [Puan Teo Nie Ching],"Saya mohon
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,10.04 pg.,1004,Timbalan Menteri Pendidikan [Puan Teo Nie Ching],"Saya mohon
 menyokong."
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1004,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, masalahnya walaupun apa
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,10.04 pg.,1004,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, masalahnya walaupun apa
 pun peruntukan-peruntukan Peraturan Mesyuarat 11, Majlis Dewan Negara hari ini tidak
 akan ditangguhkan sehingga telah selesai semua urusan kerajaan yang tertera dalam
 *Aturan Urusan Mesyuarat* pada hari ini diputuskan dan diluluskan dan selepas itu Majlis
 Mesyuarat akan ditangguhkan ke satu tarikh tidak ditetapkan."
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1004,ANNOTATION,[Usul dikemuka bagi diputuskan; dan disetujukan]
-MENGANGKAT SUMPAH SEORANG AHLI BAHARU,,,1004,,"Ahli Yang Berhormat yang tersebut di bawah ini telah Mengangkat Sumpah:
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,10.04 pg.,1004,ANNOTATION,[Usul dikemuka bagi diputuskan; dan disetujukan]
+MENGANGKAT SUMPAH SEORANG AHLI BAHARU,,,10.04 pg.,1004,,"Ahli Yang Berhormat yang tersebut di bawah ini telah Mengangkat Sumpah:
 **Lantikan Baharu**
 1. Yang Berhormat Senator Dr. Ahmad Azam bin Hamzah"
-MENGANGKAT SUMPAH SEORANG AHLI BAHARU,,,1004,ANNOTATION,[Upacara Mengangkat Sumpah tamat]
+MENGANGKAT SUMPAH SEORANG AHLI BAHARU,,,10.04 pg.,1004,ANNOTATION,[Upacara Mengangkat Sumpah tamat]
 MENGANGKAT SUMPAH SEORANG AHLI BAHARU,"PEMASYHURAN TUAN YANG DI-PERTUA
-MENGALU-ALUKAN PELANTIKAN SEORANG AHLI BAHARU",,1005,Tuan Yang di-Pertua,"Selamat sejahtera Ahli-ahli Yang Berhormat. Saya
+MENGALU-ALUKAN PELANTIKAN SEORANG AHLI BAHARU",,10.05 pagi.,1005,Tuan Yang di-Pertua,"Selamat sejahtera Ahli-ahli Yang Berhormat. Saya
 merakamkan ucapan setinggi-tinggi tahniah di dalam Dewan yang mulia ini mengalu-
 alukan pelantikan Yang Berhormat Senator Dr. Ahmad Azam bin Hamzah. Sekarang
 boleh tepuk..."
 MENGANGKAT SUMPAH SEORANG AHLI BAHARU,"PEMASYHURAN TUAN YANG DI-PERTUA
-MENGALU-ALUKAN PELANTIKAN SEORANG AHLI BAHARU",,1005,ANNOTATION,[Ketawa]
+MENGALU-ALUKAN PELANTIKAN SEORANG AHLI BAHARU",,10.05 pagi.,1005,ANNOTATION,[Ketawa]
 MENGANGKAT SUMPAH SEORANG AHLI BAHARU,"PEMASYHURAN TUAN YANG DI-PERTUA
-MENGALU-ALUKAN PELANTIKAN SEORANG AHLI BAHARU",,1005,ANNOTATION,[Dewan tepuk]
+MENGALU-ALUKAN PELANTIKAN SEORANG AHLI BAHARU",,10.05 pagi.,1005,ANNOTATION,[Dewan tepuk]
 MENGANGKAT SUMPAH SEORANG AHLI BAHARU,"PEMASYHURAN TUAN YANG DI-PERTUA
-MENGALU-ALUKAN PELANTIKAN SEORANG AHLI BAHARU",,1005,Tuan Yang di-Pertua,"...Yang dipilih oleh Dewan Undangan Negeri
+MENGALU-ALUKAN PELANTIKAN SEORANG AHLI BAHARU",,10.05 pagi.,1005,Tuan Yang di-Pertua,"...Yang dipilih oleh Dewan Undangan Negeri
 Sembilan mengikut Perkara 45(1)(a), Perlembagaan Persekutuan.
 Adalah menjadi harapan saya agar Yang Berhormat Senator akan mematuhi
 ikrar taat setia sebagaimana yang dilafazkan tadi terutamanya kepada prinsip-prinsip
@@ -67,16 +67,15 @@ dan disanjung tinggi di persada antarabangsa.
 Akhir sekali, saya mendoakan agar Ahli Yang Berhormat akan terus mendukung
 visi rakyat ke arah membina sebuah negara yang maju dan progresif dalam semua aspek
 pembangunan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Datuk Mohan A/L Thangarasu,"minta Perdana Menteri menyatakan, apakah
-status terkini tawaran melalui *Malaysian Indian Blueprint* yang telah menawarkan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1010,1010,,"status terkini tawaran melalui *Malaysian Indian Blueprint* yang telah menawarkan
 Amanah Saham bernilai RM1.5 bilion dan diikuti dengan tambahan RM500 juta untuk
 golongan B40, pinjaman tanpa bunga dalam pembentangan Bajet 2018."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Menteri di Jabatan Perdana Menteri [Tuan Waytha Moorthy A/L Ponnusamy],"Terima kasih Tuan Yang di-Pertua. Tuan Yang di-Pertua, sebelum saya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1010,1010,Menteri di Jabatan Perdana Menteri [Tuan Waytha Moorthy A/L Ponnusamy],"Terima kasih Tuan Yang di-Pertua. Tuan Yang di-Pertua, sebelum saya
 memulakan jawapan, saya bagi pihak kerajaan ingin mengucapkan tahniah kepada Yang
 Berhormat Senator Dr. Ahmad Azam bin Hamzah yang telah dilantik untuk menjadi
 seorang Ahli di Dewan yang mulia pada pagi ini..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,ANNOTATION,[Tepuk]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Menteri di Jabatan Perdana Menteri [Tuan Waytha Moorthy A/L Ponnusamy],"Terima kasih Yang Berhormat atas soalan tersebut. Kerajaan terdahulu telah
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1010,1010,ANNOTATION,[Tepuk]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1010,1010,Menteri di Jabatan Perdana Menteri [Tuan Waytha Moorthy A/L Ponnusamy],"Terima kasih Yang Berhormat atas soalan tersebut. Kerajaan terdahulu telah
 memperkenalkan dua program kepada masyarakat India di negara ini iaitu:
 (i) Amanah Saham 1Malaysia yang kini dikenali sebagai Amanah
 Saham Malaysia 3 (ASM3); dan
@@ -111,9 +110,9 @@ sekolah sehingga program pembangunan kemahiran serta program-program latihan
 khas dalam bidang, dengan izin, *oil and gas*, *automatic*, *mechatronics* dan pembangunan
 kerjaya yang melibatkan pelbagai bidang ekonomi, teknologi maklumat, perhotelan serta
 lain-lain. Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat. Silakan soalan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1010,1010,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat. Silakan soalan
 tambahan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Datuk Mohan A/L Thangarasu,"Terima kasih Yang Berhormat Menteri. Saya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1010,1010,Datuk Mohan A/L Thangarasu,"Terima kasih Yang Berhormat Menteri. Saya
 hendak tanya, apakah inisiatif yang kerajaan ambil untuk memastikan bahawa RM1.5
 bilion itu diarahkan kepada masyarakat India? Itu satu ya.
 Hari ini dah genap satu tahun sejak Kerajaan Pakatan Harapan menjadi
@@ -124,25 +123,25 @@ Di sini Tuan Yang di-Pertua, kerajaan *rebrand* ini memang lah tukar nama
 daripada “1Malaysia” macam Yang Berhormat Bagan. Apa yang saya suka sekarang ini
 “SEDIC”. Pasal apa? Sebab “SEDIC” ditukar jadi nama ke “MITRA”. Kenapa? Pasal
 MITRA itu nama anak saya. Jadi terima kasih lah Yang Berhormat Menteri"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,ANNOTATION,[Ketawa]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Datuk Mohan A/L Thangarasu,Tukar atas nama anak saya. Terima kasih.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Tuan Yang di-Pertua,"Yang Berhormat. Kalau boleh Yang Berhormat Menteri
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1010,1010,ANNOTATION,[Ketawa]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1010,1010,Datuk Mohan A/L Thangarasu,Tukar atas nama anak saya. Terima kasih.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1010,1010,Tuan Yang di-Pertua,"Yang Berhormat. Kalau boleh Yang Berhormat Menteri
 jawablah kerana ini khusus kepada kaum keturunan India tetapi berkenaan dengan
 manifesto itu terlalu banyak kementerian."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Datuk Mohan A/L Thangarasu,"Di dalam manifesto itu memang ada Tuan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1010,1010,Datuk Mohan A/L Thangarasu,"Di dalam manifesto itu memang ada Tuan
 Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Tuan Yang di-Pertua,Berkenaan dengan kaum India?
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Datuk Mohan A/L Thangarasu,"Tuan Yang di-Pertua, ada. Berkenaan dengan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1010,1010,Tuan Yang di-Pertua,Berkenaan dengan kaum India?
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1010,1010,Datuk Mohan A/L Thangarasu,"Tuan Yang di-Pertua, ada. Berkenaan dengan
 masyarakat India. Banyak, macam-macam *promise* yang dibuat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Tuan Yang di-Pertua,"*You* kena khusus kan. Okey, Yang Berhormat Menteri,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1010,1010,Tuan Yang di-Pertua,"*You* kena khusus kan. Okey, Yang Berhormat Menteri,
 faham."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Datuk Mohan A/L Thangarasu,"Macam-macam. Jadi saya hendak tahu yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1010,1010,Datuk Mohan A/L Thangarasu,"Macam-macam. Jadi saya hendak tahu yang
 RM4 bilion pembahagian kepada masyarakat India, apa sudah jadi? Kalau dalam 10
 tahun, sudah satu tahun dah. Adakah RM4 bilion itu..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Tuan Yang di-Pertua,Saya ingat cukup lah Yang Berhormat.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Datuk Mohan A/L Thangarasu,Saya hendak tahu. Saya hendak tahu.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Tuan Yang di-Pertua,Menteri boleh jawab.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Tuan Waytha Moorthy A/L Ponnusamy,"Terima kasih Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1010,1010,Tuan Yang di-Pertua,Saya ingat cukup lah Yang Berhormat.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1010,1010,Datuk Mohan A/L Thangarasu,Saya hendak tahu. Saya hendak tahu.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1010,1010,Tuan Yang di-Pertua,Menteri boleh jawab.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1010,1010,Tuan Waytha Moorthy A/L Ponnusamy,"Terima kasih Tuan Yang di-Pertua.
 Saya rasa Ahli Yang Berhormat melepaskan geramlah sebab sudah satu tahun kan. Dia
 tidak berkuasa lah.
 Jadi, terima kasih Yang Berhormat. Sebagaimana yang saya nyatakan tadi. Baki
@@ -167,7 +166,7 @@ sebagai MITRA nama anak Yang Berhormat tetapi telah juga diadakan satu *website*
 baharu dan terkini ialah juga satu *app* yang terbaru dan kesemua permohonan yang
 diluluskan untuk menjalankan aktiviti-aktiviti sosioekonomi masyarakat India akan
 dipamerkan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,Tuan Waytha Moorthy A/L Ponnusamy,"Semua penerima geran-geran tersebut akan dipamerkan dalam *website*
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1020,1020,Tuan Waytha Moorthy A/L Ponnusamy,"Semua penerima geran-geran tersebut akan dipamerkan dalam *website*
 tersebut dengan jumlah penerimaan masing-masing dan juga aktiviti-aktiviti yang akan
 dijalankan oleh setiap badan-badan tersebut untuk meningkatkan tahap sosioekonomi
 masyarakat India. Jadi bukan sahaja itu, kita bagi pihak kerajaan telah menggariskan
@@ -186,20 +185,20 @@ diketepikan kepada setiap lima tahap tersebut untuk pembangunan sosioekonomi
 masyarakat India. Jadi, dalam masa terdekat saya percaya Yang Berhormat akan melihat
 sendiri setiap aktiviti yang akan dijalankan. Ini kerana setiap projek dan aktiviti yang
 dijalankan akan dipamerkan dalam *website* tersebut. Sekian. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,Datuk Sambanthan A/L Manickam,"Terima kasih Tuan Yang di-Pertua. Saya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1020,1020,Datuk Sambanthan A/L Manickam,"Terima kasih Tuan Yang di-Pertua. Saya
 akan mengambil kesempatan ini mengucapkan syabas dan tahniah kepada Kerajaan
 Pakatan Harapan dalam mentadbir kerajaan selama setahun ini. Soalan saya, sudah kah
 setahun Pakatan Harapan mentadbir negara dan juga pemimpin kaum India, adakah
 dalam tempoh masa ini Kerajaan Pakatan akan menawar lebih banyak pemegang saham
 kepada kaum India bagi meningkatkan taraf hidup kaum India?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,Tuan Yang di-Pertua,"Okey. Yang Berhormat soalan itu sudah dijawab. Kita
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1020,1020,Tuan Yang di-Pertua,"Okey. Yang Berhormat soalan itu sudah dijawab. Kita
 ada lagi 880 juta unit lagi belum diambil. *So*, soalan tambahan Yang Berhormat?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,Datuk Sambanthan A/L Manickam,Itu sahaja soalan...
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,ANNOTATION,[Dewan ketawa]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,Dato’ Kesavadas A. Achyuthan Nair,"Soalan pendek. *Now*, adakah kerajaan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1020,1020,Datuk Sambanthan A/L Manickam,Itu sahaja soalan...
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1020,1020,ANNOTATION,[Dewan ketawa]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1020,1020,Dato’ Kesavadas A. Achyuthan Nair,"Soalan pendek. *Now*, adakah kerajaan
 bercadang atau berhasrat untuk meningkatkan ekuiti masyarakat India dalam kalangan
 B40. Itu sahaja. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,Tuan Waytha Moorthy A/L Ponnusamy,"Terima kasih Yang Berhormat atas
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1020,1020,Tuan Waytha Moorthy A/L Ponnusamy,"Terima kasih Yang Berhormat atas
 soalan tersebut. Sebagaimana yang saya nyatakan tadi, bagi masyarakat India buat
 masa kini tiada program khusus tetapi sebagaimana saya nyatakan tadi memandangkan
 kita terpaksa memberhentikan program tersebut dan pada tahun akan datang, pada
@@ -218,7 +217,7 @@ training* dan juga dalam bidang-bidang Revolusi Industri 4.0; robotik dan sebaga
 akan dapat meningkatkan tahap pendapatan mereka. Jadi dengan peningkatan tahap
 pendapatan mereka ini, maka saya percaya ekuiti mereka sendiri akan turut bertambah.
 Sekian. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,Dato’ Dr. Ananthan A/L Somasundaram,"Terima kasih Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1020,1020,Dato’ Dr. Ananthan A/L Somasundaram,"Terima kasih Tuan Yang di-Pertua.
 Pada tahun 2018, Yang Berhormat Menteri telah pun mengumumkan di Dewan yang
 mulia ini bahawa dalam usaha untuk menambah ekuiti masyarakat India dalam ekonomi
 negara, dana khas bagi pembangunan sosial dan ekonomi masyarakat India akan
@@ -228,7 +227,7 @@ sehingga kini tidak ada sebarang perkembangan mengenai pengumuman tersebut. Saya
 khuatir jika pengumuman ini dibuat seperti Janji Manifesto PRU yang lepas oleh Kerajaan
 Pakatan Harapan. Jadi, saya minta Yang Berhormat Menteri memberikan respons
 mengenai perkara ini tanpa melibatkan MITRA. Sekian. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,Tuan Waytha Moorthy A/L Ponnusamy,"Terima kasih Yang Berhormat atas
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1020,1020,Tuan Waytha Moorthy A/L Ponnusamy,"Terima kasih Yang Berhormat atas
 soalan tersebut. Saya memang mengakui bahawa pada 10 Disember 2018 yang lalu,
 saya telah memaklumkan Dewan yang mulia ini, malahan saya telah menjawab secara
 lisan kepada persoalan Yang Berhormat Datuk Mohan A/L Thangarasu tentang perincian
@@ -253,42 +252,42 @@ syarikat-syarikat GLC dan juga swasta yang lain untuk membantu kerajaan
 memandangkan kerajaan memang memerlukan dana. Di mana RM4 bilion ini bukan
 daripada kerajaan sepenuhnya. Jadi masih dalam tahap perbincangan untuk
 mendapatkan dana daripada pihak-pihak tersebut."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,Tuan Yang di-Pertua,"Yang Berhormat Menteri, yang RM100 juta itu termasuk
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1020,1020,Tuan Yang di-Pertua,"Yang Berhormat Menteri, yang RM100 juta itu termasuk
 MITRA?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,Tuan Waytha Moorthy A/L Ponnusamy,Termasuk.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,Tuan Yang di-Pertua,Yang MITRA lah?
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,Tuan Waytha Moorthy A/L Ponnusamy,"Ya, yang telah pun disalurkan kepada
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1020,1020,Tuan Waytha Moorthy A/L Ponnusamy,Termasuk.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1020,1020,Tuan Yang di-Pertua,Yang MITRA lah?
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1020,1020,Tuan Waytha Moorthy A/L Ponnusamy,"Ya, yang telah pun disalurkan kepada
 unit tersebut."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,Tuan Yang di-Pertua,"Yang Berhormat Menteri, tiada menyalah guna
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1020,1020,Tuan Yang di-Pertua,"Yang Berhormat Menteri, tiada menyalah guna
 kewangan tersebut kepada kerajaan yang dahulu. Adakah kementerian akan mengambil
 atau disabit kesalahan dan sebagainya? Orang-orang yang telah menyalahgunakan
 kuasa dan dana."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,Tuan Waytha Moorthy A/L Ponnusamy,"Buat masa ini Tuan Yang di-Pertua,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1020,1020,Tuan Waytha Moorthy A/L Ponnusamy,"Buat masa ini Tuan Yang di-Pertua,
 pihak Audit telah menjalankan Audit, dan masih dalam proses..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,ANNOTATION,[Disampuk]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,Tuan Yang di-Pertua,*So* akan disabitkan?
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,Tuan Waytha Moorthy A/L Ponnusamy,"...Meng-*complete*-kan. Jadi setelah
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1020,1020,ANNOTATION,[Disampuk]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1020,1020,Tuan Yang di-Pertua,*So* akan disabitkan?
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1020,1020,Tuan Waytha Moorthy A/L Ponnusamy,"...Meng-*complete*-kan. Jadi setelah
 laporan tersebut dipaparkan kepada umum yakni *made public*, maka saya percaya
 tindakan itu akan diambil..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,Tuan Yang di-Pertua,"Sebelum dipaparkan, Yang Berhormat Menteri telah
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1020,1020,Tuan Yang di-Pertua,"Sebelum dipaparkan, Yang Berhormat Menteri telah
 membuat kesimpulan- telah disalahgunakan?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,Tuan Waytha Moorthy A/L Ponnusamy,"Sebab terdapat *initial report*. Kita
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1020,1020,Tuan Waytha Moorthy A/L Ponnusamy,"Sebab terdapat *initial report*. Kita
 telah pun- *we were briefed,* dengan izin, tentang *initial report* dan memang terdapatlah."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,Tuan Yang di-Pertua,Terima kasih Yang Berhormat Menteri.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,Tuan Waytha Moorthy A/L Ponnusamy,Terima kasih.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Puan Hajah Sabani binti Mat,"minta Menteri Sumber Manusia menyatakan,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1020,1020,Tuan Yang di-Pertua,Terima kasih Yang Berhormat Menteri.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1020,1020,Tuan Waytha Moorthy A/L Ponnusamy,"Terima kasih.
+**2. Puan Hajah Sabani binti Mat** minta Menteri Sumber Manusia menyatakan,
 menurut Manifesto Kerajaan Pakatan Harapan iaitu mahu mewujudkan satu juta peluang
 pekerjaan. Bagi tujuan tersebut apakah langkah-langkah yang dilakukan bagi
 merealisasikan pencapaian ini."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Tuan Yang di-Pertua,"Silakan Yang Berhormat Menteri yang telah bertanya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1020,1020,Tuan Yang di-Pertua,"Silakan Yang Berhormat Menteri yang telah bertanya
 untuk menaikkan soalan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Timbalan Menteri Sumber Manusia [Dato’ Mahfuz bin Haji Omar],"Terima
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1020,1020,Timbalan Menteri Sumber Manusia [Dato’ Mahfuz bin Haji Omar],"Terima
 kasih Tuan Yang di-Pertua. Terlebih dahulu saya mengalu-alukan kedatangan Persatuan
 Kebajikan dan Sosial Kaum India Kota Raja ke Dewan Negara..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,ANNOTATION,[Tepuk]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Timbalan Menteri Sumber Manusia [Dato’ Mahfuz bin Haji Omar],"Moga lawatan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1020,1020,ANNOTATION,[Tepuk]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1020,1020,Timbalan Menteri Sumber Manusia [Dato’ Mahfuz bin Haji Omar],"Moga lawatan
 ini akan memberikan manfaat kepada tetamu yang hadir pada hari ini."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1030,Timbalan Menteri Sumber Manusia [Dato’ Mahfuz bin Haji Omar],"Tuan Yang di-Pertua, berdasarkan pada data yang ada yang dikeluarkan oleh
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1030,1030,Timbalan Menteri Sumber Manusia [Dato’ Mahfuz bin Haji Omar],"Tuan Yang di-Pertua, berdasarkan pada data yang ada yang dikeluarkan oleh
 Jabatan Perangkaan Malaysia, kita melihat bahawa dalam suku kedua pada tahun 2018,
 jumlah tenaga kerja di Malaysia ialah 14,767.2 juta orang.
 Namun begitu, bermula sejak daripada Julai hingga Februari 2019 ataupun
@@ -330,9 +329,9 @@ Ini juga kita akan galakkan melalui program-program yang berkaitan dengan
 latihan teknikal vokasional (TVET) bagi memastikan supaya lebih banyak pengeluaran
 tenaga-tenaga mahir di dalam negara kita untuk memenuhi pasaran pekerjaan itu, *insya-
 Allah*."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1030,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Menteri. Silakan soalan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1030,1030,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Menteri. Silakan soalan
 tambahan Yang Berhormat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1030,Puan Hajah Sabani binti Mat,"Terima kasih Tuan Yang di-Pertua. Terima kasih
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1030,1030,Puan Hajah Sabani binti Mat,"Terima kasih Tuan Yang di-Pertua. Terima kasih
 kepada Yang Berhormat Timbalan Menteri di atas jawapan yang diberi.
 Cumanya, saya hendak tanya sedikit sahaja. Sepertimana yang kita tahu, dalam
 keadaan ekonomi yang tidak menentu nampak macam seolah-olah tidak ada hala tuju,
@@ -349,8 +348,8 @@ Yang kedua, saya juga berharaplah supaya- dan berterima kasih kepada hasrat
 kerajaan untuk memperbanyakkan peluang-peluang pekerjaan khususnya kepada rakyat
 tempatan dan kita cuba merendahkan seberapa banyak yang boleh untuk penggunaan
 ataupun kepada pekerja-pekerja asing. Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1030,Tuan Yang di-Pertua,Sila Yang Berhormat.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1030,Dato’ Mahfuz bin Haji Omar,"Terima kasih Yang Berhormat Puan Hajah
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1030,1030,Tuan Yang di-Pertua,Sila Yang Berhormat.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1030,1030,Dato’ Mahfuz bin Haji Omar,"Terima kasih Yang Berhormat Puan Hajah
 Sabani binti Mat yang mengemukakan soalan tambahan.
 Pertama, saya hendak sebut bahawa kita penuh yakin bahawa dengan unjuran
 yang kita ada sekarang ini, dengan pencapaian yang kita ada sekarang, itu sudah pun
@@ -374,16 +373,16 @@ termasuk melalui PERKESO iaitu skim insurans pekerjaan (SIP) yang sentiasa
 memberikan jaminan perlindungan kepada mereka dan kita memberi peluang untuk
 mereka itu mendapat peluang pekerjaan di tempat yang lain dan kita akan berusaha
 sedaya-upaya, *insya-Allah*."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1030,Tuan Yang di-Pertua,Terima kasih Yang Berhormat.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1030,Puan Raj Munni binti Sabu,Tuan Yang di-Pertua
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1030,Tuan Yang di-Pertua,Silakan Yang Berhormat daripada Melaka. Silakan.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1030,Dato’ Zahari bin Sarip,"Terima kasih Yang Berhormat Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1030,1030,Tuan Yang di-Pertua,Terima kasih Yang Berhormat.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1030,1030,Puan Raj Munni binti Sabu,Tuan Yang di-Pertua
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1030,1030,Tuan Yang di-Pertua,Silakan Yang Berhormat daripada Melaka. Silakan.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1030,1030,Dato’ Zahari bin Sarip,"Terima kasih Yang Berhormat Tuan Yang di-Pertua.
 Johor, Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1030,Dr. Nuing Jeluing,Dia atau saya?
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1030,Tuan Yang di-Pertua,Dato’ Zahari.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1030,Dato’ Zahari bin Sarip,Johor.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1030,Tuan Yang di-Pertua,"Ha, Johor. *Sorry*. Silakan Yang Berhormat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1030,Dato’ Zahari bin Sarip,"Terima kasih Yang Berhormat Menteri atas penjelasan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1030,1030,Dr. Nuing Jeluing,Dia atau saya?
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1030,1030,Tuan Yang di-Pertua,Dato’ Zahari.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1030,1030,Dato’ Zahari bin Sarip,Johor.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1030,1030,Tuan Yang di-Pertua,"Ha, Johor. *Sorry*. Silakan Yang Berhormat."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1030,1030,Dato’ Zahari bin Sarip,"Terima kasih Yang Berhormat Menteri atas penjelasan
 dan kita ucap tahniah kepada kerajaan kerana telah menyediakan ataupun telah
 mempunyai kerangka bahawa dalam tempoh lima tahun akan memberikan peluang
 pekerjaan sebanyak satu juta kepada rakyat negara.
@@ -397,10 +396,10 @@ itu, berapakah baki- maksudnya kalau 270 ribu peluang pekerjaan baharu, katalah 
 1,000 orang telah diberhentikan, maksudnya sudah tinggal 269 ribu misalnya. Jadi,
 berapakah perbandingan antara yang diberi tawaran dan juga diberhentikan? Terima
 kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1030,Dato’ Mahfuz bin Haji Omar,"Terima kasih kepada Yang Berhormat. Untuk
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1030,1030,Dato’ Mahfuz bin Haji Omar,"Terima kasih kepada Yang Berhormat. Untuk
 pengetahuan Yang Berhormat, berdasarkan kepada statistik portal *JobsMalaysia*
 Jabatan Tenaga Kerja pada tahun 2018, seramai- oh, maaf. Okey***.***"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1040,Dato’ Mahfuz bin Haji Omar,"Berdasarkan kepada notifikasi yang diterima oleh kementerian, bilangan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1040,1040,Dato’ Mahfuz bin Haji Omar,"Berdasarkan kepada notifikasi yang diterima oleh kementerian, bilangan
 pekerja yang diberhentikan di sektor swasta tahun 2018 adalah seramai 23,168 orang
 pekerja yang melibatkan 17,236 orang ataupun 74.4 peratus pemberhentian biasa dan
 5,932 orang ataupun 25.6 *percent* pemberhentian sukarela iaitu VSS.
@@ -413,17 +412,17 @@ sebanyak 1,425 orang ataupun *6.15 percent.*
 Jadi jumlahnya sepanjang tahun 2018 ialah 23,168 orang dan Yang Berhormat
 boleh kira sendirilah. Dalam tempoh lapan bulan, kita berjaya mewujudkan peluang
 pekerjaan sebanyak 270 ribu orang. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1040,Tuan Yang di-Pertua,Yang Berhormat Timbalan Menteri.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1040,Dato’ Mahfuz bin Haji Omar,Ya.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1040,Tuan Yang di-Pertua,"Tadi angka Yang Berhormat Timbalan Menteri itu
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1040,1040,Tuan Yang di-Pertua,Yang Berhormat Timbalan Menteri.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1040,1040,Dato’ Mahfuz bin Haji Omar,Ya.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1040,1040,Tuan Yang di-Pertua,"Tadi angka Yang Berhormat Timbalan Menteri itu
 keseluruhan itu berapa? Keseluruhan VSS dengan semua. Jumlah 23 ribu? Okey, okey."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1040,Dato’ Mahfuz bin Haji Omar,Jumlah 23 ribu itu keseluruhan.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1040,Tuan Yang di-Pertua,"Okey, okey. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1040,Datuk Razali bin Idris,Tuan Yang di-Pertua.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1040,Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah,
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1040,ANNOTATION,[Bangun]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1040,Tuan Yang di-Pertua,Yang Berhormat Datuk Razali.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1040,Datuk Razali bin Idris,"Terima kasih Tuan Yang di-Pertua. Masalah
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1040,1040,Dato’ Mahfuz bin Haji Omar,Jumlah 23 ribu itu keseluruhan.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1040,1040,Tuan Yang di-Pertua,"Okey, okey. Terima kasih."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1040,1040,Datuk Razali bin Idris,Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1040,1040,Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1040,1040,ANNOTATION,[Bangun]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1040,1040,Tuan Yang di-Pertua,Yang Berhormat Datuk Razali.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1040,1040,Datuk Razali bin Idris,"Terima kasih Tuan Yang di-Pertua. Masalah
 pengangguran ini sebenarnya agak ketara. Kita faham pada hari ini dan dia juga
 melibatkan lepasan universiti sama ada dalam negara ataupun luar negara. Contohnya
 di Terengganu Yang Berhormat, di Terengganu dapatan daripada *JobStreet,
@@ -451,20 +450,20 @@ sekarang? Apakah kita tak boleh mensyaratkan supaya pekerja tempatan yang berkua
 diutamakan, diberi peratusan yang lebih. Kalau dulu boleh dikatakan anak tempatan tidak
 tahu hendak buat kerja *oil and gas* tetapi sekarang sudah ramai, sudah ramai pun yang
 menganggur. Terima kasih Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1040,Tuan Yang di-Pertua,"Terima kasih. Silakan Yang Berhormat Timbalan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1040,1040,Tuan Yang di-Pertua,"Terima kasih. Silakan Yang Berhormat Timbalan
 Menteri."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1040,Dato’ Mahfuz bin Haji Omar,"Baik. Terima kasih kepada Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1040,1040,Dato’ Mahfuz bin Haji Omar,"Baik. Terima kasih kepada Yang Berhormat
 Datuk Razali yang memberikan pandangan. Saya pun terkejut 50 GLC Terengganu
 diarah tutup, besar itu. Pasal apa *pi* tutup pula, buka habis lah. Hendak bagi tahu orang
 Terengganu, Dato’ Haji Husain macam mana Yang Berhormat, 50 ini, banyak ini
 Terengganu ini."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1040,Tuan Yang di-Pertua,"Yang Berhormat Timbalan Menteri hendak Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1040,1040,Tuan Yang di-Pertua,"Yang Berhormat Timbalan Menteri hendak Yang
 Berhormat Terengganu jawab?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1040,ANNOTATION,[Ketawa]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1040,Dato’ Mahfuz bin Haji Omar,"Tak lah fasal Yang Berhormat Dato’ Haji Husain
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1040,1040,ANNOTATION,[Ketawa]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1040,1040,Dato’ Mahfuz bin Haji Omar,"Tak lah fasal Yang Berhormat Dato’ Haji Husain
 dia kawan baik saya."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1040,Tuan Yang di-Pertua,Silakan Yang Berhormat.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1040,Dato’ Mahfuz bin Haji Omar,"Saya pun terkejut 50 GLC, dapat berapa bilion
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1040,1040,Tuan Yang di-Pertua,Silakan Yang Berhormat.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1040,1040,Dato’ Mahfuz bin Haji Omar,"Saya pun terkejut 50 GLC, dapat berapa bilion
 royalti- RM1 bilion? RM1 bilion lebih, tutup 50 GLC. Ini tak tahu berapa ramai pekerja
 yang terpaksa diberhentikan dan jika ada pekerja yang diberhentikan ataupun kehilangan
 pekerjaan, sememangnya perlindungan undang-undang kepada pekerja tempatan
@@ -506,17 +505,17 @@ Barulah boleh yang *last* sekali memberhentikan pekerja tempatan. Akan tetapi
 pengambilan syaratnya sememangnya kena pekerja tempatan. Mesti diiklankan dalam
 *JobsMalaysia* dan sebagainya. Kemudian kalau tanpa ada permohonan daripada pekerja
 tempatan baru lah diizinkan oleh jabatan dan juga KDN untuk pengambilan pekerja asing."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1040,Datuk Razali bin Idris,Berapa peratus disyaratkan?
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1040,Dato’ Mahfuz bin Haji Omar,"Tak, tak ada peratus apa. Memang keutamaan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1040,1040,Datuk Razali bin Idris,Berapa peratus disyaratkan?
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1040,1040,Dato’ Mahfuz bin Haji Omar,"Tak, tak ada peratus apa. Memang keutamaan
 mesti diambil kepada pekerja-pekerja tempatan seperti yang saya sebutkan tadi. Terima
 kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1040,Tuan Yang di-Pertua,Terima kasih.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1040,Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah,"Tuan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1040,1040,Tuan Yang di-Pertua,Terima kasih.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1040,1040,Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah,"Tuan
 Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1040,Tuan Yang di-Pertua,Secara ringkas Yang Berhormat Tan Sri.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1040,Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah,Boleh?
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1040,Tuan Yang di-Pertua,Boleh.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1040,Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah,"Terima
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1040,1040,Tuan Yang di-Pertua,Secara ringkas Yang Berhormat Tan Sri.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1040,1040,Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah,Boleh?
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1040,1040,Tuan Yang di-Pertua,Boleh.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1040,1040,Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah,"Terima
 kasih banyak terima kasih Tuan Yang di-Pertua, terima kasih Yang Berhormat Timbalan
 Menteri memberi jawapan yang agak baik.
 Saya hanya hendak menyambung sedikit dengan sahabat saya Yang
@@ -533,7 +532,7 @@ bahawa pengangguran pada hari ini telah bertambah baik. Kedua, apakah kerajaan
 memantau dari segi pengambilan pekerja-pekerja, bukan sahaja di jabatan-jabatan
 kerajaan dan swasta tetapi di GLC dan juga seperti yang dikatakan oleh Yang Berhormat
 Datuk Razali tadi di firma-firma luar yang menjalankan projek-projek mega."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah,"Saya ingin memberi contoh, contohnya kita telah dapat mewujudkan, berjaya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1050,1050,Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah,"Saya ingin memberi contoh, contohnya kita telah dapat mewujudkan, berjaya
 mendapatkan projek daripada China di dalam jumlah yang cukup besar. Laporan yang
 saya terima Tuan Yang di-Pertua, amat menyedihkan saya ya, projek-projek ini juga
 dapat di-*sub*-kan kepada kontraktor bumiputera. Kita faham. Saya hendak kerajaan
@@ -548,37 +547,37 @@ mahu cakap, satu *research* telah dibuat bahawa banyak juga *private sector* di 
 ini yang menganaktirikan pemohon-pemohon daripada bumiputera. Ini telah pun
 dibuktikan melalui *research* yang dibuat oleh pensyarah-pensyarah di universiti. Itu dari
 segi *company* luar negara..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,Tuan Yang di-Pertua,Yang Berhormat Senator...
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah,"...Dalam
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1050,1050,Tuan Yang di-Pertua,Yang Berhormat Senator...
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1050,1050,Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah,"...Dalam
 negara pun, ini satu perkara yang serius."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,Tuan Yang di-Pertua,"Yang Berhormat Senator, saya faham. Kalau panjang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1050,1050,Tuan Yang di-Pertua,"Yang Berhormat Senator, saya faham. Kalau panjang
 sangat, Timbalan Menteri tidak dapat jawab."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah,"Okey,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1050,1050,Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah,"Okey,
 pendek sikit lagi. Sikit sahaja lagi. Ini yang dalam pula. Satu..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,Tuan Yang di-Pertua,"Saya ingat Timbalan Menteri faham Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1050,1050,Tuan Yang di-Pertua,"Saya ingat Timbalan Menteri faham Yang Berhormat
 Senator."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah,"...*Private
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1050,1050,Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah,"...*Private
 hospital* di Sungai Petani meletakkan syarat pemohon-pemohon mestilah berbangsa
 Cina, India, Siam dan Kristian. Apa ini? Siam dan Kristian pun masuk. Saya minta Yang
 Berhormat Timbalan Menteri tolonglah pantau, tolonglah kami orang bumiputera."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,Tuan Yang di-Pertua,"Dia akan jawab, dia akan jawab."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah,"Tolong
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1050,1050,Tuan Yang di-Pertua,"Dia akan jawab, dia akan jawab."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1050,1050,Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah,"Tolong
 pantau sikit. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,Tuan Yang di-Pertua,Terima kasih.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,Dato’ Mahfuz bin Haji Omar,"Terima kasih kepada Yang Berhormat Senator
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1050,1050,Tuan Yang di-Pertua,Terima kasih.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1050,1050,Dato’ Mahfuz bin Haji Omar,"Terima kasih kepada Yang Berhormat Senator
 Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah, semangat.
 Yang Berhormat Dato’ Haji Mohd Suhaimi sahaja yang senyap hari ini. Mana
 pula, tengok Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah dengan semangat hari
 ini. Patut Yang Berhormat Dato’ Haji Mohd Suhaimi pun kena lantang. Bulan puasa, bulan
 puasa. Tidak makan *soq* semalam kah?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,ANNOTATION,[Ketawa]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,Tuan Yang di-Pertua,"Yang Berhormat Timbalan Menteri, itu jawapan Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1050,1050,ANNOTATION,[Ketawa]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1050,1050,Tuan Yang di-Pertua,"Yang Berhormat Timbalan Menteri, itu jawapan Yang
 Berhormat Timbalan Menteri kah?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,ANNOTATION,[Ketawa]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,Dato’ Mahfuz bin Haji Omar,"Tidak, hari terakhir ini Tuan Yang di-Pertua. Hari
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1050,1050,ANNOTATION,[Ketawa]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1050,1050,Dato’ Mahfuz bin Haji Omar,"Tidak, hari terakhir ini Tuan Yang di-Pertua. Hari
 terakhir ini, kita..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,Tuan Yang di-Pertua,Silakan Yang Berhormat Timbalan Menteri.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,Dato’ Mahfuz bin Haji Omar,"...Ceria. Baik, terima kasih kepada Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1050,1050,Tuan Yang di-Pertua,Silakan Yang Berhormat Timbalan Menteri.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1050,1050,Dato’ Mahfuz bin Haji Omar,"...Ceria. Baik, terima kasih kepada Yang
 Berhormat Senator Tan Sri. Saya begini, kerajaan sentiasa memantau. Oleh sebab itu
 kalau lihat dalam projek ECRL ya, kita terpaksa runding semula. Kalau hendak batal,
 memang kalau boleh kerajaan sepatutnya memang berhasrat untuk hendak batal. Akan
@@ -602,14 +601,14 @@ yang tidak betul yang dibuat oleh kerajaan dahulu seperti dalam projek ECRL itu 
 syarikat daripada China, kita akan cuba untuk mengatasi masalah ini dan kita berjaya.
 Ini *proof*, bukti menunjukkan bahawa keprihatinan, keutamaan kerajaan kepada
 warganegara Malaysia, *insya-Allah.*"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,Tuan Yang di-Pertua,"Yang Berhormat Timbalan Menteri tidak jawab soalan.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1050,1050,Tuan Yang di-Pertua,"Yang Berhormat Timbalan Menteri tidak jawab soalan.
 Soalan adalah berkenaan bahawa adakah keutamaan dibagi kepada pekerja-pekerja
 yang boleh bertutur dalam bahasa Mandarin dalam projek ECRL."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,Dato’ Mahfuz bin Haji Omar,"Dia Tuan Yang di-Pertua, bila diberikan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1050,1050,Dato’ Mahfuz bin Haji Omar,"Dia Tuan Yang di-Pertua, bila diberikan
 keutamaan kepada pekerja tempatan, maka sudah tentulah bahawa dia harus memenuhi
 keperluan-keperluan yang ada kepada..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,Tuan Yang di-Pertua,Itu adalah satu tafsiran yang salah.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,Dato’ Mahfuz bin Haji Omar,"Ya, itu tafsiran yang berbagai-bagai. Kita tidak
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1050,1050,Tuan Yang di-Pertua,Itu adalah satu tafsiran yang salah.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1050,1050,Dato’ Mahfuz bin Haji Omar,"Ya, itu tafsiran yang berbagai-bagai. Kita tidak
 tahu lagi, maknanya selepas daripada ini, akan ada lagi perjanjian-perjanjian yang akan
 memastikan supaya pengambilan pekerja tempatan. Pekerja tempatan kalau dia boleh
 Mandarin, dia boleh berbahasa Inggeris, maka sudah tentulah bahawa dia akan diberikan
@@ -619,35 +618,35 @@ sama ada bumiputera ataupun bukan bumiputera. Apa yang penting kepada saya,
 apabila pengambilan itu nanti paling kurangnya ialah kebolehan dia dalam bertutur,
 perhubungan komunikasi dalam bahasa Inggeris yang saya percaya ada kepada semua
 orang, *insya-Allah.*"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,Tuan Yang di-Pertua,
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,ANNOTATION,[Ketawa]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,Tuan Yang di-Pertua,"Terima kasihlah Yang Berhormat Timbalan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1050,1050,Tuan Yang di-Pertua,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1050,1050,ANNOTATION,[Ketawa]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1050,1050,Tuan Yang di-Pertua,"Terima kasihlah Yang Berhormat Timbalan
 Menteri. Bersungguh-sungguh untuk menjawab. Silakan. Hendak pukul 11 pagi ini, kita
 baru nombor 3 hari ini."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,Beberapa Ahli,
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,ANNOTATION,[Berucap tanpa menggunakan pembesar suara]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,Tuan Yang di-Pertua,"Ini fasal Yang Berhormat Timbalan Menteri minta naik
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1050,1050,Beberapa Ahli,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1050,1050,ANNOTATION,[Berucap tanpa menggunakan pembesar suara]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1050,1050,Tuan Yang di-Pertua,"Ini fasal Yang Berhormat Timbalan Menteri minta naik
 soalan ini. Ini lagi satu Timbalan Menteri Pendidikan pun naik soalan.
 Silakan Yang Berhormat Tuan Mohd Yusmadi bin Mohd Yusoff."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,Tuan Mohd Yusmadi bin Mohd Yusoff,Terima kasih Tuan Yang di-Pertua.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,Tuan Yang di-Pertua,"Saya beri keutamaan kepada kementerian-kementerian
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1050,1050,Tuan Mohd Yusmadi bin Mohd Yusoff,Terima kasih Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1050,1050,Tuan Yang di-Pertua,"Saya beri keutamaan kepada kementerian-kementerian
 yang pandai jawab dan selalu hadir ke Dewan yang mulia ini"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,ANNOTATION,[Ketawa]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,Tuan Mohd Yusmadi bin Mohd Yusoff,
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,ANNOTATION,[Ketawa]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,Tuan Yang di-Pertua,Silakan Yang Berhormat.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,Tuan Mohd Yusmadi bin Mohd Yusoff,"Terima kasih Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1050,1050,ANNOTATION,[Ketawa]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1050,1050,Tuan Mohd Yusmadi bin Mohd Yusoff,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1050,1050,ANNOTATION,[Ketawa]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1050,1050,Tuan Yang di-Pertua,Silakan Yang Berhormat.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1050,1050,Tuan Mohd Yusmadi bin Mohd Yusoff,"Terima kasih Tuan Yang di-Pertua.
 Saya mengambil kesempatan ini juga untuk mengalu-alukan pelajar-pelajar dari UiTM
 Kelantan..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,ANNOTATION,[Tepuk]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,Tuan Mohd Yusmadi bin Mohd Yusoff,"Tuan Yang di-Pertua, saya ingin merekodkan yang Tuan Yang di-Pertua selalu
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1050,1050,ANNOTATION,[Tepuk]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1050,1050,Tuan Mohd Yusmadi bin Mohd Yusoff,"Tuan Yang di-Pertua, saya ingin merekodkan yang Tuan Yang di-Pertua selalu
 katakan bahawa kita telah berjaya mendidik masyarakat, pemimpin Malaysia. Sekarang
 ini kita sudah setahun membuat perubahan kerajaan dengan aman. Tahniah kepada
-pemimpin-pemimpin Malaysia. Satu pendidikan yang baik untuk rujukan dunia."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1050,Tuan Mohd Yusmadi bin Mohd Yusoff,"minta Menteri Pendidikan menyatakan,
+pemimpin-pemimpin Malaysia. Satu pendidikan yang baik untuk rujukan dunia.
+**3. Tuan Mohd Yusmadi bin Mohd Yusoff** minta Menteri Pendidikan menyatakan,
 cadangan untuk menggalakkan penggunaan dana wakaf *(endowment)* digunakan untuk
 penubuhan ‘Kursi’, *Fellowship* dan lain-lain di institusi pengajian tinggi Malaysia."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1050,Timbalan Menteri Pendidikan [Puan Teo Nie Ching],"Terima kasih Tuan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1050,1050,Timbalan Menteri Pendidikan [Puan Teo Nie Ching],"Terima kasih Tuan
 Yang di-Pertua. Saya pohon maaf bagi Yang Berhormat Menteri kerana dia MC hari ini,
 jadi saya wakil untuk memberi jawapan.
 Tuan Yang di-Pertua, pada masa ini, dana wakaf di universiti awam (UA) secara
@@ -677,15 +676,15 @@ merupakan elemen yang perlu diberi perhatian. Sehubungan dengan itu, penyertaan
 daripada pihak swasta, persendirian dan syarikat berkaitan syarikat GLC sangat
 digalakkan untuk menyumbang bagi membiayai kos operasi Kursi akademik ini dalam
 bentuk wakaf atau *endowment*. Sekian jawapan saya, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1050,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Timbalan Menteri. Silakan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1050,1050,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Timbalan Menteri. Silakan
 Yang Berhormat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1050,Tuan Mohd Yusmadi bin Mohd Yusoff,"Sedikit sahaja penjelasan. Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1050,1050,Tuan Mohd Yusmadi bin Mohd Yusoff,"Sedikit sahaja penjelasan. Yang
 Berhormat Timbalan Menteri, apabila Akta Pentadbiran setiap negeri dipinda dan diberi
 hak untuk mengurus harta wakaf ini kepada Majlis Agama Islam Negeri, contoh di Pulau
 Pinang, Majlis Agama Islam Pulau Pinang. Begitu pun, kita melihat dari segi aspek
 menguruskan harta wakaf itu bagi saya agak kurang membanggakan. Ini pada
 pandangan saya."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1100,Tuan Mohd Yusmadi bin Mohd Yusoff,"Jadi, saya ingin menanya Menteri, sejauh mana Menteri melihat potensi dana
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1100,1100,Tuan Mohd Yusmadi bin Mohd Yusoff,"Jadi, saya ingin menanya Menteri, sejauh mana Menteri melihat potensi dana
 wakaf ini yang memang terbukti di dalam sejarah pendidikan dunia, Universiti Al-Azhar,
 penubuhan institusi lama memang menggunakan dana wakaf. Cuma di Malaysia ini saya
 melihat perkara tersebut tidak diberi perhatian walaupun punyai sejarah yang sangat
@@ -701,8 +700,8 @@ macam. Itu disebabkan oleh individu-individu yang mahu harta mereka digunakan un
 tujuan pendidikan. Saya rasa perkara tersebut di Malaysia perlu digalakkan kerana ramai
 orang kaya raya yang mungkin mahu harta mereka digunakan untuk tujuan pendidikan.
 Mohon penjelasan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1100,Tuan Yang di-Pertua,Silakan Yang Berhormat.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1100,Puan Teo Nie Ching,"Terima kasih Tuan Yang di-Pertua, terima kasih Ahli
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1100,1100,Tuan Yang di-Pertua,Silakan Yang Berhormat.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1100,1100,Puan Teo Nie Ching,"Terima kasih Tuan Yang di-Pertua, terima kasih Ahli
 Yang Berhormat Senator atas soalan tambahan tersebut. Setakat Disember 2018, di
 antara 20 UA, 16 telah mewujudkan dana wakaf dan ada empat lagi yang belum dapat
 kelulusan daripada Majlis Agama Islam Negeri.
@@ -730,22 +729,22 @@ Akan tetapi dari segi *endowment* dan juga wakaf, kita memang memberi
 autonomi kepada mereka dan mereka digalakkan untuk guna dana ataupun sumbangan
 dan wakaf atau *endowment* ini secara bijaksana untuk pelbagai tujuan yang seperti saya
 sebut dalam jawapan induk saya. Sekian jawapan saya, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1100,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat, yang peruntukan itu
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1100,1100,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat, yang peruntukan itu
 diberi pada tahun berapa, bila?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1100,Puan Teo Nie Ching,"Ini secara *one-off* jadi untuk Kursi Tunku Abdul Rahman,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1100,1100,Puan Teo Nie Ching,"Ini secara *one-off* jadi untuk Kursi Tunku Abdul Rahman,
 ia diberi pada tahun 1983. Jadi, ia secara *one-off*."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1100,Tuan Yang di-Pertua,Tahun 83?
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1100,Puan Teo Nie Ching,"Ya, jadi ada lagi seperti Kursi Tun Dr. Siti Hasmah binti
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1100,1100,Tuan Yang di-Pertua,Tahun 83?
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1100,1100,Puan Teo Nie Ching,"Ya, jadi ada lagi seperti Kursi Tun Dr. Siti Hasmah binti
 Haji Mohamad Ali yang diberi pada tahun 1999. Jadi, ini memang sudah ada *example*
 atau contoh yang kita boleh contohi kalau kita hendak memperbanyakkan lagi di
 universiti-universiti awam yang lain."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1100,Tuan Yang di-Pertua,"Terima kasih, silakan Yang Berhormat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1100,Tuan Aknan A/L Ehtook,"Terima kasih Tuan Yang di-Pertua. Jika Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1100,1100,Tuan Yang di-Pertua,"Terima kasih, silakan Yang Berhormat."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1100,1100,Tuan Aknan A/L Ehtook,"Terima kasih Tuan Yang di-Pertua. Jika Yang
 Berhormat Timbalan Menteri ada maklumat mungkin boleh kongsi dengan kami dan juga
 rakyat Malaysia keseluruhannya. Apakah syarat yang ditetapkan untuk membiayai satu-
 satu kursi? Adakah pembiayaan bertahun, apa jua syarat yang ditetapkan? Tolong kongsi
 bersama kami. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1100,Puan Teo Nie Ching,"Sebenarnya tidak ada banyak, kita tidak tetapkan syarat.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1100,1100,Puan Teo Nie Ching,"Sebenarnya tidak ada banyak, kita tidak tetapkan syarat.
 Ini terpulang kepada pihak yang memberi sumbangan dan juga universiti. Maksudnya,
 apabila seseorang hendak memberi sumbangan dalam bentuk *endowment* ataupun
 wakaf, mereka boleh tetapkan syarat. Maksudnya, mereka boleh tetapkan syarat bahawa
@@ -763,12 +762,12 @@ Kerusi untuk satu tujuan penyelidikan yang dipersetujui oleh kedua-dua pihak.
 Jadi, daripada segi KPM kita memang tidak tentukan apa-apa syarat. Akan
 tetapi untuk wakaf memang mereka perlu dapat taraf *mutaawalli* daripada Majlis Agama
 Islam Negeri. Itu sahaja. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1100,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Menteri.
-Silakan Yang Berhormat Dato’ Haji Mohd Suhaimi bin Abdullah."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1100,Dato' Haji Mohd Suhaimi bin Abdullah,"minta Menteri Pertahanan menyatakan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1100,1100,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Menteri.
+Silakan Yang Berhormat Dato’ Haji Mohd Suhaimi bin Abdullah.
+**4. Dato' Haji Mohd Suhaimi bin Abdullah** minta Menteri Pertahanan menyatakan
 bahawa dari kaca mata Menteri, berjaya atau tidak LIMA di Langkawi pada 2019 dan
 berapakah jumlah pelaburan yang telah ditandatangani."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1100,Timbalan Menteri Pertahanan [Tuan Liew Chin Tong],"Terima kasih Tuan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1100,1100,Timbalan Menteri Pertahanan [Tuan Liew Chin Tong],"Terima kasih Tuan
 Yang di-Pertua, terima kasih Dato' Haji Mohd Suhaimi bin Abdullah. Selamat Malaysia
 baharu. Soalan ini saya telah jawab sekali di Dewan ini dan juga sekali di Dewan Rakyat.
 *So*, saya akan jawab hanya fakta-fakta yang belum disembah di sini, fakta-fakta yang
@@ -796,12 +795,12 @@ berimpak tinggi seperti persidangan *Chief of Navy Roundtable
 Talks, Chief Conference, National Maritime Conference* dan
 *ASEAN Aviation Summit.*
 Sekian, terima kasih Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1100,Tuan Yang di-Pertua,"Yang Berhormat, kementerian bila menjawab soalan,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1100,1100,Tuan Yang di-Pertua,"Yang Berhormat, kementerian bila menjawab soalan,
 kalau ditafsirkan sama soalan-soalan tersebut, tidak payah jawab lagi. Ini kerana jikalau
 sudah ia bila menjawab soalan, kita sudah masukkan akan menjawab bersamaan
 dengan soalan-soalan tersebut. Nanti soalan ini tidak akan bangkit lagi. Silakan Yang
 Berhormat, soalan tambahan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1100,Dato' Haji Mohd Suhaimi bin Abdullah,"Terima kasih Tuan Yang di-Pertua,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1100,1100,Dato' Haji Mohd Suhaimi bin Abdullah,"Terima kasih Tuan Yang di-Pertua,
 saya pun hairan juga kenapa soalan saya di naik sebab cerita pun sudah sejuk. Walau
 bagaimanapun Tuan Yang di-Pertua, saya membaca sedikit berhubung dengan LIMA ini
 selepas dua bulan ia berakhir. Rupanya ramai yang komen melalui *Facebook, Instagram*
@@ -813,7 +812,7 @@ this is my third LIMA. You have a fantastic paradise island. I have no lesson to
 here is the traced after few days. Monday, there was nothing. It is not difficult to put
 everything in a plastic bag and put it in the trash.” Every day I saw some incivilities
 continue to destroy your paradise.”* Dan dia tunjuk gambar- penuh dengan sampah."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1110,Dato' Haji Mohd Suhaimi bin Abdullah,"Kemudian- ini soal pelancong yang datang. Daripada *China Press, reported by
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1110,1110,Dato' Haji Mohd Suhaimi bin Abdullah,"Kemudian- ini soal pelancong yang datang. Daripada *China Press, reported by
 China Press, “Thousands of people began queueing up outside the venue as early as 7
 am. The crowd frustration grew after they wait become longer. They also complaint that
 there were no clear division of line and entrances between normal ticket buyers, online
@@ -843,9 +842,9 @@ Singapura dengan Bosnia yang satu ketika dulu kita pernah hentam mereka *for kil
 our Muslim brothers. Are we not sensitive enough?*
 Jadi saya hendak bertanya kepada kementerian, apakah tidak ada keprihatinan
 daripada segi ini? Terima kasih Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1110,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat. Silakan Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1110,1110,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat. Silakan Yang Berhormat
 Menteri."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1110,Tuan Liew Chin Tong,"Terima kasih Yang Berhormat Senator Dato' Haji Mohd.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1110,1110,Tuan Liew Chin Tong,"Terima kasih Yang Berhormat Senator Dato' Haji Mohd.
 Suhaimi bin Abdullah. Soalan tentang sampah itu saya akan salurkan kepada Kerajaan
 Negeri Kedah dan kerajaan tempatan dan juga Ahli Parlimen Langkawi.
 Soalan tentang- komen tentang isu baris beratur dan isu hari awam, pihak
@@ -854,43 +853,43 @@ pengendalian yang lebih baik dalam program LIMA pada tahun 2021.
 Berkenaan dengan tuduhan yang dikatakan tadi, saya semak senarai di sini
 saya tidak nampak apa yang dikatakan oleh Yang Berhormat Dato' Suhaimi tetapi saya
 akan dapatkan jawapan bertulis untuk Yang Berhormat. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1110,Tuan Yang di-Pertua,Terima kasih. Silakan Yang Berhormat.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1110,Laksamana Pertama Haji Mohamad Imran (B) bin Abd. Hamid,"Tuan Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1110,1110,Tuan Yang di-Pertua,Terima kasih. Silakan Yang Berhormat.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1110,1110,Laksamana Pertama Haji Mohamad Imran (B) bin Abd. Hamid,"Tuan Yang
 di-Pertua, LIMA diperuntukkan sebanyak RM15.582 juta. Selepas mesyuarat *post-
 mortem,* saya ingin tahu, adakah penjimatan dibuat? Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1110,Tuan Liew Chin Tong,"Terima kasih. Penjimatan dibuat dari segi berbanding
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1110,1110,Tuan Liew Chin Tong,"Terima kasih. Penjimatan dibuat dari segi berbanding
 dengan LIMA 2017 yang diperuntukkan RM20 juta kepada Kementerian Pertahanan, kali
 ini peruntukan adalah RM15 juta. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1110,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Menteri.
-Silakan Yang berhormat Senator Dato' Hajah Fahariyah binti Hj. Md. Nordin."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1110,Dato' Fahariyah binti Haji Md Nordin,"minta Menteri Perdagangan Dalam
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1110,1110,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Menteri.
+Silakan Yang berhormat Senator Dato' Hajah Fahariyah binti Hj. Md. Nordin.
+**5. Dato' Fahariyah binti Haji Md Nordin** minta Menteri Perdagangan Dalam
 Negeri dan Hal Ehwal Pengguna menyatakan, kes-kes kenaikan harga barangan
 pengguna yang direkodkan kerajaan sehingga Mac 2019 dan bagaimana penguat kuasa
 KPDNHEP menangani kecenderungan peniaga menaikkan harga barangan pengguna."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1110,Timbalan Menteri Pertahanan [Tuan Liew Chin Tong],"Terima kasih Tuan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1110,1110,Timbalan Menteri Pertahanan [Tuan Liew Chin Tong],"Terima kasih Tuan
 Yang di-Pertua. Saya ditugaskan untuk jawab soalan ini walaupun saya tidak dari
 Kementerian Perdagangan Dalam Negeri dan Hal Ehwal Pengguna.
 Kepada Yang berhormat Senator Dato' Hajah Fahariyah..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1110,Tuan Yang di-Pertua,"Saya hendak ingatkan kepada pentadbiran kerajaan, ini
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1110,1110,Tuan Yang di-Pertua,"Saya hendak ingatkan kepada pentadbiran kerajaan, ini
 kena maklum kepada saya sebelum menjawab soalan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1110,Tuan Liew Chin Tong,"Oh, itu tidak maklum ya?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1110,Tuan Yang di-Pertua,"Tidak dimaklumkan. Tidak apalah, Yang Berhormat.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1110,1110,Tuan Liew Chin Tong,"Oh, itu tidak maklum ya?"
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1110,1110,Tuan Yang di-Pertua,"Tidak dimaklumkan. Tidak apalah, Yang Berhormat.
 Boleh bagi secara bertulis."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1110,Tuan Liew Chin Tong,Okey. Tak payah jawab?
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1110,Tuan Yang di-Pertua,"Tak payah jawab. Kita bagi peluang kepada Menteri
-yang ada. Silakan Yang Berhormat Senator Datuk Mustapa Kamal bin Mohd Yusoff."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1110,Datuk Mustapa Kamal bin Mohd Yusoff,"minta Menteri Dalam Negeri
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1110,1110,Tuan Liew Chin Tong,Okey. Tak payah jawab?
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1110,1110,Tuan Yang di-Pertua,"Tak payah jawab. Kita bagi peluang kepada Menteri
+yang ada. Silakan Yang Berhormat Senator Datuk Mustapa Kamal bin Mohd Yusoff.
+**6. Datuk Mustapa Kamal bin Mohd Yusoff** minta Menteri Dalam Negeri
 menyatakan, apakah hasil siasatan terhadap kes rampasan dadah yang terbesar baru-
 baru ini dengan jumlah berat lebih daripada 2 tan. Adakah pihak PDRM mengenal pasti
 sumbernya."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1110,Timbalan Menteri Pertahanan [Tuan Liew Chin Tong],Ini pun saya
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1110,ANNOTATION,[Ketawa]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1110,Timbalan Menteri Pertahanan [Tuan Liew Chin Tong],"Akan tetapi ini sudah maklum- ada, kan?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1110,Tuan Yang di-Pertua,*Yes.*
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1110,Tuan Liew Chin Tong,"Ada. Okey, terima kasih Tuan Yang di-Pertua. Saya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1110,1110,Timbalan Menteri Pertahanan [Tuan Liew Chin Tong],Ini pun saya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1110,1110,ANNOTATION,[Ketawa]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1110,1110,Timbalan Menteri Pertahanan [Tuan Liew Chin Tong],"Akan tetapi ini sudah maklum- ada, kan?"
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1110,1110,Tuan Yang di-Pertua,*Yes.*
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1110,1110,Tuan Liew Chin Tong,"Ada. Okey, terima kasih Tuan Yang di-Pertua. Saya
 rasa KDN kena bayar sayalah"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1110,ANNOTATION,[Ketawa]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1110,Tuan Liew Chin Tong,"Yang Berhormat Senator Datuk Mustapa Kamal bin Mohd Yusoff, Tuan Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1110,1110,ANNOTATION,[Ketawa]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1110,1110,Tuan Liew Chin Tong,"Yang Berhormat Senator Datuk Mustapa Kamal bin Mohd Yusoff, Tuan Yang
 di-Pertua, untuk makluman Ahli Yang Berhormat, Kementerian Dalam Negeri melalui
 Polis Diraja Malaysia (PDRM) sentiasa berusaha untuk mengesan dan membanteras
 sebarang operasi penyeludupan dadah di negara ini. Penguatkuasaan melalui tindakan
@@ -911,9 +910,9 @@ tindakan di bawah seksyen 3(1) Akta Dadah Berbahaya (Langkah-langkah Pencegahan
 Khas) 1985 dan berdasarkan siasatan oleh PDRM, sumber adalah daripada sindiket
 dadah antarabangsa yang menjadikan Malaysia sebagai salah satu hab transit dadah
 sebelum diedarkan ke pasaran tempatan dan antarabangsa. Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1110,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Menteri. Silakan Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1110,1110,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Menteri. Silakan Yang
 Berhormat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1110,Datuk Mustapa Kamal bin Mohd Yusoff,"Tuan Yang di-Pertua, kalau tidak ada
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1110,1110,Datuk Mustapa Kamal bin Mohd Yusoff,"Tuan Yang di-Pertua, kalau tidak ada
 Menteri yang jawab, saya tanya jugalah soalan ini. Bagi saya, saya perlu tanya.
 Baru-baru ini pada April 2019, tiga pasukan khas PDRM iaitu Pasukan Tindakan
 Khas Antimaksiat, Judi dan Gengsterisme (STAGG), Pasukan Khas Taktikal Narkotik
@@ -931,7 +930,7 @@ Juga, berapakah jumlah kes dan jumlah rampasan narkotik yang telah diselesaikan 
 STING sejak ditubuhkan?
 Apakah kejayaan-kejayaan yang telah dicapai oleh ketiga-tiga pasukan elit
 tersebut yang telah pun dimansuhkan baru-baru ini? Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1120,Tuan Liew Chin Tong,"Terima kasih Tuan Yang di-Pertua. Terima kasih Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1120,1120,Tuan Liew Chin Tong,"Terima kasih Tuan Yang di-Pertua. Terima kasih Yang
 Berhormat. Saya jawab berdasarkan kenyataan media Yang Berhormat Menteri Dalam
 Negeri dan juga perbincangan saya dengan beliau.
 Penutupan tiga unit yang disebutkan tadi tujuannya ialah untuk membalikkan
@@ -944,7 +943,7 @@ boleh mengatasi masalah di dalam unit-unit yang sedia ada. Akan tetapi untuk
 kementerian sekarang ialah untuk memulangkan kerja dan tugasan kepada unit yang
 sedia ada supaya mereka boleh jalankan kerja mereka tanpa ada pertindihan. Terima
 kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1120,Dato’ Haji Mohd Suhaimi bin Abdullah,"Terima kasih Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1120,1120,Dato’ Haji Mohd Suhaimi bin Abdullah,"Terima kasih Tuan Yang di-Pertua.
 Saya selaku Timbalan Yang di-Pertua PEMADAM banyak menerima laporan-laporan
 berhubung dengan dadah Yang Berhormat Menteri. Salah satunya ialah Bahagian
 Narkotik sendiri, berlaku di Terengganu Yang Berhormat, mereka tidak ada kenderaan
@@ -959,11 +958,11 @@ Menteri. Terima kasih dan Yang Berhormat Menteri Pertahanan pun ada. Kalau boleh
 Yang Berhormat Menteri Pertahanan boleh memberi satu polisi yang baru supaya
 menggunakan askar-askar ini untuk memerangi dadah. Terima kasih Tuan Yang di-
 Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1120,Tuan Liew Chin Tong,"Terima kasih Tuan Yang di-Pertua. Terima kasih Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1120,1120,Tuan Liew Chin Tong,"Terima kasih Tuan Yang di-Pertua. Terima kasih Yang
 Berhormat Senator. Ya ada dua bahagian soalan itu. Satu saya jawab sebagai Timbalan
 Menteri Pertahanan tetapi tentang isu kenderaan minta berikan maklumat yang .."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1120,Tuan Yang di-Pertua,Yang spesifik.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1120,Tuan Liew Chin Tong,"Ya, spesifik supaya Kementerian Dalam Negeri boleh
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1120,1120,Tuan Yang di-Pertua,Yang spesifik.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1120,1120,Tuan Liew Chin Tong,"Ya, spesifik supaya Kementerian Dalam Negeri boleh
 ambil tindakan. Akan tetapi untuk penglibatan tentera dalam ops-ops yang sedia ada
 yang diuruskan atau diarahkan oleh Majlis Keselamatan Negara terutamanya di
 sempadan utara dan juga di kawasan sempadan atau pulau-pulau yang telah ditugaskan,
@@ -972,19 +971,19 @@ itu tugasan utama tentera.
 Kalau ditugaskan, maka tentera akan bantu sebagai tugasan *secondary* atau
 *secondary role* tentera. Tugasan utama tentera ialah untuk menjaga kedaulatan
 sempadan kita. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1120,Tuan Adrian Banie Lasimbang,"Terima kasih Tuan Yang di-Pertua. Sedikit
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1120,1120,Tuan Adrian Banie Lasimbang,"Terima kasih Tuan Yang di-Pertua. Sedikit
 pantun.
 *Setahun lalu rakyat setuju;
 Pilih Harapan untuk maju.
 Laut gelora musim tengkujuh;
 Soalan saya nombor tujuh...*"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1120,ANNOTATION,[Tepuk]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1120,Tuan Adrian Banie Lasimbang,"minta Menteri Tenaga, Sains, Teknologi, Alam
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1120,1120,ANNOTATION,[Tepuk]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1120,1120,Tuan Adrian Banie Lasimbang,"**7. Tuan Adrian Banie Lasimbang** minta Menteri Tenaga, Sains, Teknologi, Alam
 Sekitar dan Perubahan Iklim menyatakan, adakah kementerian menyediakan *Renewable
 Energy Masterplan* untuk Malaysia, dan apakah usaha kerajaan dalam melibatkan
 semua pemegang taruh dalam perkara ini termasuklah kementerian yang berkaitan,
 NGO, pihak industri dan akademik dalam menyelaras usaha ini."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1120,"Timbalan Menteri Tenaga, Sains, Teknologi, Alam Sekitar dan Perubahan Iklim [Puan Isnaraissah Munirah binti Majilis @ Fakharudy]","Terima kasih Gundohing
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1120,1120,"Timbalan Menteri Tenaga, Sains, Teknologi, Alam Sekitar dan Perubahan Iklim [Puan Isnaraissah Munirah binti Majilis @ Fakharudy]","Terima kasih Gundohing
 Yang Berhormat Senator Tuan Adrian Banie Lasimbang. Malangnya saya tidak ada
 jawapan kepada pantun itu. Saya jawab kepada soalan.
 Untuk makluman Ahli Yang Berhormat, kerajaan sentiasa berusaha untuk
@@ -1004,7 +1003,7 @@ Pandangan dan cadangan daripada semua *stakeholders* atau pemegang-
 pemegang taruh ini akan diambil kira bagi memastikan dokumen yang dibangunkan
 adalah bersifat holistik dan mampu merancakkan lagi pembangunan industri TBB di
 negara ini. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1120,Tuan Adrian Banie Lasimbang,"Terima kasih Yang Berhormat Timbalan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1120,1120,Tuan Adrian Banie Lasimbang,"Terima kasih Yang Berhormat Timbalan
 Menteri atas jawapan tadi. Soalan tambahan saya, ini berkaitan dengan sedikit statistik.
 Apakah statistik terkini *energy mix* ataupun mengikut jenis penjanaan terkini Malaysia?
 Apakah unjuran yang disasarkan oleh kementerian untuk mencapai sasaran 2025 ini?
@@ -1014,7 +1013,7 @@ dalam *energy* mix kita iaitu *large scale solar.
 So*, saya ingin bertanya, berapakah pelan ataupun berapa megawatt yang
 dicadangkan ataupun direncanakan untuk dipasang LSS ini di Sabah? Itu sahaja. Terima
 kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1120,Puan Isnaraissah Munirah binti Majilis @ Fakharudy,"Terima kasih soalan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1120,1120,Puan Isnaraissah Munirah binti Majilis @ Fakharudy,"Terima kasih soalan
 tambahan Yang Berhormat. Untuk kapasiti terpasang, kapasiti campuran tenaga untuk
 seluruh Malaysia adalah sebanyak 26,430 megawatt dan daripada sumber bukan tenaga
 boleh baharu 7,337.21 megawatt. Kalau Yang Berhormat tanya untuk Sabah pula
@@ -1025,12 +1024,12 @@ baharu sumber solar yang disambung ke grid bagi negeri Sabah adalah 89.70 megawa
 dan daripada jumlah tersebut, 50 megawatt adalah daripada LSS dan selebihnya FIT.
 Kita juga dalam pelaksanaan untuk kita selaraskan semua perancangan LSS ini bersekali
 dengan proses penyerahan semula SSB dikembalikan kepada negeri Sabah. Terima
-kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1120,Datuk Sr. Haji Hanafi bin Haji Mamat,"minta Menteri Komunikasi dan
+kasih.
+**8. Datuk Sr. Haji Hanafi bin Haji Mamat** minta Menteri Komunikasi dan
 Multimedia menyatakan, apakah langkah-langkah yang diambil untuk jaminan
 kesejahteraan hidup hari tua bagi warga kerja industri hiburan, karyawan filem dan
 televisyen tempatan supaya mereka tidak hidup dalam kemiskinan pada usia emas."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1120,Timbalan Menteri Komunikasi dan Multimedia [Tuan Eddin Syazlee Shith],"Terima kasih dan dengan izin Tuan Yang di-Pertua. Untuk makluman Ahli Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1120,1120,Timbalan Menteri Komunikasi dan Multimedia [Tuan Eddin Syazlee Shith],"Terima kasih dan dengan izin Tuan Yang di-Pertua. Untuk makluman Ahli Yang
 Berhormat Senator, kementerian melalui Perbadanan Kemajuan Filem Nasional
 Malaysia sentiasa prihatin terhadap kebajikan penggiat industri termasuk industri
 hiburan, karyawan filem dan televisyen tempatan yang terlibat dalam industri kreatif.
@@ -1048,14 +1047,14 @@ Selain daripada itu, kementerian melalui FINAS dengan kerjasama Kementerian
 Perumahan dan Kerajaan Tempatan sedang memperhalus untuk mewujudkan jaringan
 strategi dan kerjasama bagi memperkenalkan Perumahan Komuniti Seni Harapan bagi
 merealisasikan pemerkasaan kesejahteraan ekonomi penggiat seni di negara ini."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1130,Timbalan Menteri Komunikasi dan Multimedia [Tuan Eddin Syazlee Shith],"Persatuan-persatuan perfileman- untuk makluman selanjutnya, seperti
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1130,1130,Timbalan Menteri Komunikasi dan Multimedia [Tuan Eddin Syazlee Shith],"Persatuan-persatuan perfileman- untuk makluman selanjutnya, seperti
 Persatuan Seniman Malaysia- Seniman; Persatuan Sutradara Malaysia- FDAM;
 persatuan-persatuan PROFIMA dan karyawan dan lain-lain juga, giat membantu ahli-ahli
 yang berdaftar yang ditimpa musibah seperti menyediakan skim insurans perlindungan
 hayat kepada penggiat seni bebas termasuklah pelakon, penyanyi, kru, penulis skrip dan
 juga pekerja di belakang tabir."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1130,Tuan Yang di-Pertua,Terima kasih Yang Berhormat Menteri. Silakan.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1130,Datuk Sr. Haji Hanafi bin Haji Mamat,"Tuan Yang di-Pertua, di negara kita ini
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1130,1130,Tuan Yang di-Pertua,Terima kasih Yang Berhormat Menteri. Silakan.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1130,1130,Datuk Sr. Haji Hanafi bin Haji Mamat,"Tuan Yang di-Pertua, di negara kita ini
 sering kali kita terbaca dalam akhbar, bekas-bekas seniman, bekas artis, hidup mereka
 agak sengsara di kala usia emas. Selepas *glamour* bertahun-tahun, selepas melalui
 tahun-tahun yang selalu kita tengok di dada-dada akhbar yang popular. Akhir sekali,
@@ -1066,8 +1065,8 @@ hendak tahu apakah status permohonan tersebut. Sama ada dapat kelulusan ataupun
 tidak ataupun *pending.*
 Kedua, saya ingin tahu adakah kerajaan telah menyalurkan apa-apa
 peruntukkan kepada persatuan-persatuan seni di negara kita? Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1130,Tuan Yang di-Pertua,Silakan Yang Berhormat Menteri.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1130,Tuan Eddin Syazlee Shith,"Dengan izin, Tuan Yang di-Pertua. Terima kasih
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1130,1130,Tuan Yang di-Pertua,Silakan Yang Berhormat Menteri.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1130,1130,Tuan Eddin Syazlee Shith,"Dengan izin, Tuan Yang di-Pertua. Terima kasih
 kepada Yang Berhormat Datuk di atas soalan tambahan berkenaan majlis kesenian,
 karyawan tersebut. Saya percaya ia masih di peringkat cadangan dan kajian. Akan tetapi,
 apa yang saya sebutkan sebentar tadi yang berdasarkan kepada inisiatif yang telah
@@ -1083,21 +1082,21 @@ daripada anak seni dengan harapan mereka inilah yang benar-benar memahami situas
 artis-artis veteran dan mereka inilah yang akan memperjuangkan nasib dan masa depan
 artis-artis veteran. Inilah langkah-langkah kerajaan baharu untuk memberikan harapan
 baharu kepada artis-artis veteran yang ada pada hari ini..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1130,Tuan Yang di-Pertua,Yang kedua itu- yang ada peruntukkan?
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1130,Tuan Eddin Syazlee Shith,"Ya, peruntukkan itu ada mengikut kesesuaian dan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1130,1130,Tuan Yang di-Pertua,Yang kedua itu- yang ada peruntukkan?
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1130,1130,Tuan Eddin Syazlee Shith,"Ya, peruntukkan itu ada mengikut kesesuaian dan
 keperluan. Akan tetapi, tidak banyak macam yang saya sebutkan tadi. Pada tahun 2017
 kerajaan sebelum ini RM19,000 telah dibelanjakan untuk keperluan kebajikan seramai
 14 orang artis. Saya kira lebih kurang seribu lebih. Itu satu jumlah yang sangat sedikit
 sebenarnya. Itu perkara-perkara yang dibuat oleh kerajaan dahulu yang saya fikir perlu
 kepada penambahbaikan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1130,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Menteri. Ahli-ahli Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1130,1130,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Menteri. Ahli-ahli Yang
 Berhormat, Menteri Pertahanan sudah sedia untuk membuat penerangan kepada Dewan
 yang mulia ini. Jam pada pukul 11.34 pagi, masa untuk pertanyaan-pertanyaan bagi
 jawab lisan selesai."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1130,ANNOTATION,[Masa Pertanyaan-pertanyaan Bagi Jawab Lisan tamat]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Datuk Mohan A/L Thangarasu minta Perdana Menteri menyatakan, apakah",,■1130,1130,ANNOTATION,[Masa Pertanyaan-pertanyaan Bagi Jawab Lisan tamat]
 USUL,"PENERANGAN DARIPADA MENTERI PERTAHANAN DI BAWAH P.M. 13(1)(i)
 Hasil Siasatan dan Syor Penambahbaikan Tadbir Urus Pelaksanaan
-Projek Penswastaan Secara Kaedah Land Swap",,1134,Menteri Pertahanan [Tuan Mohamad bin Sabu],"*Assalamualaikum
+Projek Penswastaan Secara Kaedah Land Swap",,11.34 pg.,1134,Menteri Pertahanan [Tuan Mohamad bin Sabu],"*Assalamualaikum
 warahmatullahi wabarakatuh*. Salam sejahtera kepada semua.
 Tuan Yang di-Pertua, terima kasih di atas peluang dan kesempatan untuk saya
 membentangkan- Hasil Siasatan dan Syor Penambahbaikan Tadbir Urus Pelaksanaan
@@ -1151,7 +1150,7 @@ di bawah Kementerian Kewangan merupakan agensi pusat yang
 dipertanggungjawabkan untuk menyelaras dan merunding projek-projek *land swap.*"
 USUL,"PENERANGAN DARIPADA MENTERI PERTAHANAN DI BAWAH P.M. 13(1)(i)
 Hasil Siasatan dan Syor Penambahbaikan Tadbir Urus Pelaksanaan
-Projek Penswastaan Secara Kaedah Land Swap",,1140,Menteri Pertahanan [Tuan Mohamad bin Sabu],"Cadangan projek *land swap* akan dikemukakan oleh kementerian atau agensi
+Projek Penswastaan Secara Kaedah Land Swap",,■1140,1140,Menteri Pertahanan [Tuan Mohamad bin Sabu],"Cadangan projek *land swap* akan dikemukakan oleh kementerian atau agensi
 kepada UKAS untuk dipertimbangkan oleh Jawatankuasa Kerjasama Awam Swasta
 seterusnya dipertimbangkan oleh Jawatankuasa Tertinggi Awam Swasta yang
 dipengerusikan oleh Ketua Setiausaha Negara. Selepas itu, ia akan dikemukakan
@@ -1245,25 +1244,25 @@ nilai tanah balasan RM500 juta. Jumlahnya di sini sahaja kerugian kerajaan sudah
 RM166.81 juta."
 USUL,"PENERANGAN DARIPADA MENTERI PERTAHANAN DI BAWAH P.M. 13(1)(i)
 Hasil Siasatan dan Syor Penambahbaikan Tadbir Urus Pelaksanaan
-Projek Penswastaan Secara Kaedah Land Swap",,1150,Tuan Yang di-Pertua,"Yang Berhormat Menteri, sebentar. Tukar giliran."
+Projek Penswastaan Secara Kaedah Land Swap",,■1150,1150,Tuan Yang di-Pertua,"Yang Berhormat Menteri, sebentar. Tukar giliran."
 USUL,"PENERANGAN DARIPADA MENTERI PERTAHANAN DI BAWAH P.M. 13(1)(i)
 Hasil Siasatan dan Syor Penambahbaikan Tadbir Urus Pelaksanaan
-Projek Penswastaan Secara Kaedah Land Swap",,1150,ANNOTATION,[Timbalan Yang di-Pertua mempengerusikan Mesyuarat]
+Projek Penswastaan Secara Kaedah Land Swap",,■1150,1150,ANNOTATION,[Timbalan Yang di-Pertua mempengerusikan Mesyuarat]
 USUL,"PENERANGAN DARIPADA MENTERI PERTAHANAN DI BAWAH P.M. 13(1)(i)
 Hasil Siasatan dan Syor Penambahbaikan Tadbir Urus Pelaksanaan
-Projek Penswastaan Secara Kaedah Land Swap",,1150,Tuan Mohamad bin Sabu,Kerajaan didapati mengalami kerugian...
+Projek Penswastaan Secara Kaedah Land Swap",,■1150,1150,Tuan Mohamad bin Sabu,Kerajaan didapati mengalami kerugian...
 USUL,"PENERANGAN DARIPADA MENTERI PERTAHANAN DI BAWAH P.M. 13(1)(i)
 Hasil Siasatan dan Syor Penambahbaikan Tadbir Urus Pelaksanaan
-Projek Penswastaan Secara Kaedah Land Swap",,1150,Beberapa Ahli,*Mic.*
+Projek Penswastaan Secara Kaedah Land Swap",,■1150,1150,Beberapa Ahli,*Mic.*
 USUL,"PENERANGAN DARIPADA MENTERI PERTAHANAN DI BAWAH P.M. 13(1)(i)
 Hasil Siasatan dan Syor Penambahbaikan Tadbir Urus Pelaksanaan
-Projek Penswastaan Secara Kaedah Land Swap",,1150,Tuan Mohamad bin Sabu,"Tukar giliran, *mic* mati ya"
+Projek Penswastaan Secara Kaedah Land Swap",,■1150,1150,Tuan Mohamad bin Sabu,"Tukar giliran, *mic* mati ya"
 USUL,"PENERANGAN DARIPADA MENTERI PERTAHANAN DI BAWAH P.M. 13(1)(i)
 Hasil Siasatan dan Syor Penambahbaikan Tadbir Urus Pelaksanaan
-Projek Penswastaan Secara Kaedah Land Swap",,1150,ANNOTATION,[Ketawa]
+Projek Penswastaan Secara Kaedah Land Swap",,■1150,1150,ANNOTATION,[Ketawa]
 USUL,"PENERANGAN DARIPADA MENTERI PERTAHANAN DI BAWAH P.M. 13(1)(i)
 Hasil Siasatan dan Syor Penambahbaikan Tadbir Urus Pelaksanaan
-Projek Penswastaan Secara Kaedah Land Swap",,1150,Tuan Mohamad bin Sabu,"Kerajaan didapati mengalami kerugian sebanyak RM166.81 juta kerana
+Projek Penswastaan Secara Kaedah Land Swap",,■1150,1150,Tuan Mohamad bin Sabu,"Kerajaan didapati mengalami kerugian sebanyak RM166.81 juta kerana
 menetapkan nilaian tanah balasan kurang daripada penilaian Jabatan Penilaian dan
 Perkhidmatan Harta.
 Syarikat kontrak yang tidak menjaga kepentingan kerajaan. Kuasa kontrak yang
@@ -1293,28 +1292,28 @@ memandangkan kedua-dua bon tersebut telah luput. Projek ini telah gagal disiapka
 sehingga kini..."
 USUL,"PENERANGAN DARIPADA MENTERI PERTAHANAN DI BAWAH P.M. 13(1)(i)
 Hasil Siasatan dan Syor Penambahbaikan Tadbir Urus Pelaksanaan
-Projek Penswastaan Secara Kaedah Land Swap",,1150,Timbalan Menteri Sumber Manusia [Dato’ Mahfuz bin Haji Omar],"Dahsyat
+Projek Penswastaan Secara Kaedah Land Swap",,■1150,1150,Timbalan Menteri Sumber Manusia [Dato’ Mahfuz bin Haji Omar],"Dahsyat
 ya."
 USUL,"PENERANGAN DARIPADA MENTERI PERTAHANAN DI BAWAH P.M. 13(1)(i)
 Hasil Siasatan dan Syor Penambahbaikan Tadbir Urus Pelaksanaan
-Projek Penswastaan Secara Kaedah Land Swap",,1150,Tuan Mohamad bin Sabu,"Bila gagal, yang merananya ialah angkatan tentera
+Projek Penswastaan Secara Kaedah Land Swap",,■1150,1150,Tuan Mohamad bin Sabu,"Bila gagal, yang merananya ialah angkatan tentera
 itu sendiri."
 USUL,"PENERANGAN DARIPADA MENTERI PERTAHANAN DI BAWAH P.M. 13(1)(i)
 Hasil Siasatan dan Syor Penambahbaikan Tadbir Urus Pelaksanaan
-Projek Penswastaan Secara Kaedah Land Swap",,1150,Dato’ Mahfuz bin Haji Omar,"Bukan Mukim Plentong sudah itu. Itu jadi
+Projek Penswastaan Secara Kaedah Land Swap",,■1150,1150,Dato’ Mahfuz bin Haji Omar,"Bukan Mukim Plentong sudah itu. Itu jadi
 kelentong itu"
 USUL,"PENERANGAN DARIPADA MENTERI PERTAHANAN DI BAWAH P.M. 13(1)(i)
 Hasil Siasatan dan Syor Penambahbaikan Tadbir Urus Pelaksanaan
-Projek Penswastaan Secara Kaedah Land Swap",,1150,ANNOTATION,[Ketawa]
+Projek Penswastaan Secara Kaedah Land Swap",,■1150,1150,ANNOTATION,[Ketawa]
 USUL,"PENERANGAN DARIPADA MENTERI PERTAHANAN DI BAWAH P.M. 13(1)(i)
 Hasil Siasatan dan Syor Penambahbaikan Tadbir Urus Pelaksanaan
-Projek Penswastaan Secara Kaedah Land Swap",,1150,Tuan Mohamad bin Sabu,Jangan ganggu ya...
+Projek Penswastaan Secara Kaedah Land Swap",,■1150,1150,Tuan Mohamad bin Sabu,Jangan ganggu ya...
 USUL,"PENERANGAN DARIPADA MENTERI PERTAHANAN DI BAWAH P.M. 13(1)(i)
 Hasil Siasatan dan Syor Penambahbaikan Tadbir Urus Pelaksanaan
-Projek Penswastaan Secara Kaedah Land Swap",,1150,ANNOTATION,[Dewan Ketawa]
+Projek Penswastaan Secara Kaedah Land Swap",,■1150,1150,ANNOTATION,[Dewan Ketawa]
 USUL,"PENERANGAN DARIPADA MENTERI PERTAHANAN DI BAWAH P.M. 13(1)(i)
 Hasil Siasatan dan Syor Penambahbaikan Tadbir Urus Pelaksanaan
-Projek Penswastaan Secara Kaedah Land Swap",,1150,Tuan Mohamad bin Sabu,"Pelaksanaan *land swap* tidak mematuhi peraturan dan SOP. Sebagai contoh,
+Projek Penswastaan Secara Kaedah Land Swap",,■1150,1150,Tuan Mohamad bin Sabu,"Pelaksanaan *land swap* tidak mematuhi peraturan dan SOP. Sebagai contoh,
 dalam kes cadangan pembangunan semula tapak Kem Kinrara, Mukim Petaling,
 Selangor melalui kaedah pertukaran tanah Kem Kinrara seluas 94.12 ekar, surat arahan
 dikeluarkan kepada syarikat untuk membeli tanah dan memulakan pembangunan
@@ -1383,13 +1382,13 @@ sepenuhnya dengan pihak SPRM dalam penyiasatan ini. Sekian, kenyataan daripada
 Menteri Pertahanan..."
 USUL,"PENERANGAN DARIPADA MENTERI PERTAHANAN DI BAWAH P.M. 13(1)(i)
 Hasil Siasatan dan Syor Penambahbaikan Tadbir Urus Pelaksanaan
-Projek Penswastaan Secara Kaedah Land Swap",,1150,ANNOTATION,[Tepuk]
+Projek Penswastaan Secara Kaedah Land Swap",,■1150,1150,ANNOTATION,[Tepuk]
 USUL,"PENERANGAN DARIPADA MENTERI PERTAHANAN DI BAWAH P.M. 13(1)(i)
 Hasil Siasatan dan Syor Penambahbaikan Tadbir Urus Pelaksanaan
-Projek Penswastaan Secara Kaedah Land Swap",,1150,Timbalan Yang di-Pertua,Terima kasih Yang Berhormat Menteri.
+Projek Penswastaan Secara Kaedah Land Swap",,■1150,1150,Timbalan Yang di-Pertua,Terima kasih Yang Berhormat Menteri.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1200,Timbalan Menteri di Jabatan Perdana Menteri [Puan Fuziah binti Salleh],"*Bismillahi Rahmani Rahim. Assalamualaikum warahmatullahi wabarakatuh*, selamat pagi
+Bacaan Kali Yang Kedua dan Ketiga",,12.00 tgh.,1200,Timbalan Menteri di Jabatan Perdana Menteri [Puan Fuziah binti Salleh],"*Bismillahi Rahmani Rahim. Assalamualaikum warahmatullahi wabarakatuh*, selamat pagi
 dan salam sejahtera.
 Tuan Yang di-Pertua, saya mohon mencadangkan Rang Undang-undang
 Pentadbiran Undang-undang Islam (Wilayah-Wilayah Persekutuan) (Pindaan) 2018,
@@ -1461,10 +1460,10 @@ peruntukan undang-undang umum di bawah Akta Pentadbiran Undang-undang Islam
 (Wilayah-wilayah Persekutuan) 1993"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1200,ANNOTATION,[Akta 505]
+Bacaan Kali Yang Kedua dan Ketiga",,12.00 tgh.,1200,ANNOTATION,[Akta 505]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1200,Timbalan Menteri di Jabatan Perdana Menteri [Puan Fuziah binti Salleh],"yang mana hanya terhad kepada kuasa
+Bacaan Kali Yang Kedua dan Ketiga",,12.00 tgh.,1200,Timbalan Menteri di Jabatan Perdana Menteri [Puan Fuziah binti Salleh],"yang mana hanya terhad kepada kuasa
 mendaftar sahaja.
 Ketiadaan undang-undang ini menyebabkan sekolah agama Islam antaranya
 mempunyai kebebasan secara mutlak untuk mentadbir, tidak mempunyai infrastruktur
@@ -1511,13 +1510,13 @@ Tuan Yang di-Pertua, rang undang-undang yang bertujuan untuk meminda Akta
 Pentadbiran Undang-undang Islam (Wilayah-wilayah Persekutuan) 1993"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1200,ANNOTATION,[Akta 505]
+Bacaan Kali Yang Kedua dan Ketiga",,12.00 tgh.,1200,ANNOTATION,[Akta 505]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1200,Timbalan Menteri di Jabatan Perdana Menteri [Puan Fuziah binti Salleh],mengandungi empat fasal seperti yang berikut.
+Bacaan Kali Yang Kedua dan Ketiga",,12.00 tgh.,1200,Timbalan Menteri di Jabatan Perdana Menteri [Puan Fuziah binti Salleh],mengandungi empat fasal seperti yang berikut.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1210,Timbalan Menteri di Jabatan Perdana Menteri [Puan Fuziah binti Salleh],"Fasal 1 mengandungi tajuk ringkas dan peruntukan mengenai permulaan kuat
+Bacaan Kali Yang Kedua dan Ketiga",,■1210,1210,Timbalan Menteri di Jabatan Perdana Menteri [Puan Fuziah binti Salleh],"Fasal 1 mengandungi tajuk ringkas dan peruntukan mengenai permulaan kuat
 kuasa akta yang dicadangkan.
 Fasal 2 bertujuan untuk meminda perenggan 7(2)(f) Akta 505 untuk
 menggantikan perkataan “sekolah Islam” dengan perkataan “sekolah agama Islam” bagi
@@ -1542,13 +1541,13 @@ mana kaedah yang dibuat di bawah Akta 505.
 Tuan Yang di-Pertua, saya mohon mencadangkan. Sekian, terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1210,Timbalan Yang di-Pertua,Ada sesiapa yang menyokong?
+Bacaan Kali Yang Kedua dan Ketiga",,■1210,1210,Timbalan Yang di-Pertua,Ada sesiapa yang menyokong?
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1210,Menteri di Jabatan Perdana Menteri [Tuan Waytha Moorthy A/L Ponnusamy],"**Tuan Yang di-Pertua, saya mohon menyokong.**"
+Bacaan Kali Yang Kedua dan Ketiga",,■1210,1210,Menteri di Jabatan Perdana Menteri [Tuan Waytha Moorthy A/L Ponnusamy],"**Tuan Yang di-Pertua, saya mohon menyokong.**"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1210,Timbalan Yang di-Pertua,"Ahli-ahli Yang Berhormat, masalah di hadapan
+Bacaan Kali Yang Kedua dan Ketiga",,■1210,1210,Timbalan Yang di-Pertua,"Ahli-ahli Yang Berhormat, masalah di hadapan
 Majlis ialah rang undang-undang bernama suatu akta untuk meminda Akta Pentadbiran
 Undang-undang Islam (Wilayah-Wilayah Persekutuan) 1993 dibacakan kali yang kedua
 sekarang dan terbuka untuk dibahaskan.
@@ -1557,7 +1556,7 @@ berucap. Saya minta dahulu, Yang Berhormat Senator Datuk Razali bin Idris,
 dipersilakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1213,Datuk Razali bin Idris,"Terima kasih Tuan Yang di-Pertua. *Assalamualaikum
+Bacaan Kali Yang Kedua dan Ketiga",,12.13 tgh.,1213,Datuk Razali bin Idris,"Terima kasih Tuan Yang di-Pertua. *Assalamualaikum
 warahmatullahi wabarakatuh.* Salam sejahtera.
 *Alhamdulillah*, saya diberikan peluang untuk berbahas Rang Undang-undang
 Pentadbiran Undang-undang Islam (Wilayah-Wilayah Persekutuan) (Pindaan) 2018
@@ -1618,17 +1617,17 @@ panduan yang sejelasnya kepada mereka, guru-guru yang berminat untuk membina
 sekolah agama Islam di peringkat negeri dan sebagainya."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1220,Datuk Razali bin Idris,"Justeru itu, di atas keprihatinan ini, saya secara menyeluruh menyokong akta
+Bacaan Kali Yang Kedua dan Ketiga",,■1220,1220,Datuk Razali bin Idris,"Justeru itu, di atas keprihatinan ini, saya secara menyeluruh menyokong akta
 ini. Sekian, terima kasih Tuan Yang di-Pertua."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1220,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat Senator Datuk Razali
+Bacaan Kali Yang Kedua dan Ketiga",,■1220,1220,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat Senator Datuk Razali
 bin Idris.
 Kedua, saya jemput pula Yang Berhormat Senator Tuan Ismail bin Yusop,
 dipersilakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1220,Tuan Ismail bin Yusop,"Terima kasih Tuan Yang di-Pertua, *Assalamualaikum
+Bacaan Kali Yang Kedua dan Ketiga",,12.20 tgh.,1220,Tuan Ismail bin Yusop,"Terima kasih Tuan Yang di-Pertua, *Assalamualaikum
 warahmatullaahi wabarakaatuh.*
 Terima kasih juga kerana memberikan saya peluang untuk turut sama
 membahaskan Rang Undang-undang Pentadbiran Undang-undang Islam (Wilayah-
@@ -1638,10 +1637,10 @@ tadi, rang undang-undang ini bertujuan untuk meminda Akta Pentadbiran Undang-
 undang Islam (Wilayah-Wilayah Persekutuan) 1993"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1220,ANNOTATION,[Akta 505]
+Bacaan Kali Yang Kedua dan Ketiga",,12.20 tgh.,1220,ANNOTATION,[Akta 505]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1220,Tuan Ismail bin Yusop,"yang mengandungi empat
+Bacaan Kali Yang Kedua dan Ketiga",,12.20 tgh.,1220,Tuan Ismail bin Yusop,"yang mengandungi empat
 fasal.
 Tuan Yang di-Pertua, saya menyokong pindaan rang undang-undang ini dan
 sehubungan dengan itu saya ingin mengambil peluang untuk membentangkan beberapa
@@ -1729,13 +1728,13 @@ undang Pentadbiran Undang-undang Islam (Wilayah-Wilayah Persekutuan) (Pindaan)
 2018. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1220,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat Senator Tuan Ismail
+Bacaan Kali Yang Kedua dan Ketiga",,12.20 tgh.,1220,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat Senator Tuan Ismail
 bin Yusop.
 Nombor tiga, saya jemput Yang Berhormat Senator Puan Hajah Nuridah binti
 Mohd Salleh."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1229,Puan Nuridah binti Mohd Salleh,"*Assalamualaikum warahmatullaahi
+Bacaan Kali Yang Kedua dan Ketiga",,12.29 tgh.,1229,Puan Nuridah binti Mohd Salleh,"*Assalamualaikum warahmatullaahi
 wabarakaatuh* dan salam sejahtera. Terima kasih Tuan Yang di-Pertua kerana memberi
 peluang kepada saya untuk bersama-sama membahaskan Rang Undang-undang
 Pentadbiran Undang-undang Islam (Wilayah-Wilayah Persekutuan) (Pindaan) 2018 pada
@@ -1744,7 +1743,7 @@ Saya mengambil peluang ini sebagai usaha untuk memperkasakan lagi institusi
 agama Islam di Wilayah Persekutuan, *insya-Allah*."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1230,Puan Nuridah binti Mohd Salleh,"Tuan Yang di-Pertua, sehingga kini ramai ibu bapa yang menghantar anak-anak
+Bacaan Kali Yang Kedua dan Ketiga",,■1230,1230,Puan Nuridah binti Mohd Salleh,"Tuan Yang di-Pertua, sehingga kini ramai ibu bapa yang menghantar anak-anak
 ke sekolah agama supaya mereka dapat fokus memberi pendidikan Islam secara
 komprehensif. Ada kajian yang dilakukan ke atas sekolah agama dan hasilnya
 menunjukkan bahawa institusi agama yang bertujuan mengenal Allah dan segala rukun
@@ -1835,13 +1834,13 @@ pendidikan Islam di sekolah-sekolah berkenaan dengan kerjasama Kementerian
 Pendidikan. Sekian sahaja perbahasan saya. Terima kasih Tuan Yang di-Pertua."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1230,Timbalan Yang di-Pertua,"Terima kasih, Yang Berhormat Senator Hajah Puan
+Bacaan Kali Yang Kedua dan Ketiga",,■1230,1230,Timbalan Yang di-Pertua,"Terima kasih, Yang Berhormat Senator Hajah Puan
 Nuridah binti Mohd Salleh.
 Sekarang dijemput tokoh pendidik kita, Yang Berhormat Senator Prof. Emeritus
 Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah, dipersilakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1238,Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah,"Terima
+Bacaan Kali Yang Kedua dan Ketiga",,12.38 tgh.,1238,Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah,"Terima
 kasih. Yang saya hormati dan kasihi Tuan Yang di-Pertua. Saya mengikuti idea-idea yang
 telah diberikan oleh Ahli-ahli Yang Berhormat. Saya cuma hendak memberi sedikit
 tambahan.
@@ -1855,27 +1854,27 @@ Ini kerana seperti yang dikatakan tadi, pada hari ini kita mempunyai agak
 banyak sekolah agama dan pusat tahfiz yang berdaftar*...*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1238,Dato’ Haji Mohd Suhaimi bin Abdullah,"Tuan Yang di-Pertua, mohon
+Bacaan Kali Yang Kedua dan Ketiga",,12.38 tgh.,1238,Dato’ Haji Mohd Suhaimi bin Abdullah,"Tuan Yang di-Pertua, mohon
 mencelah."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1238,Timbalan Yang di-Pertua,"Yang Berhormat, tunggu sekejap. Ada sikit."
+Bacaan Kali Yang Kedua dan Ketiga",,12.38 tgh.,1238,Timbalan Yang di-Pertua,"Yang Berhormat, tunggu sekejap. Ada sikit."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1238,Dato’ Haji Mohd Suhaimi bin Abdullah,"Bukan soalan, Yang Berhormat. Ada
+Bacaan Kali Yang Kedua dan Ketiga",,12.38 tgh.,1238,Dato’ Haji Mohd Suhaimi bin Abdullah,"Bukan soalan, Yang Berhormat. Ada
 pengumuman sikit.
 Bersama-sama kita adalah Tuan Yang Terutama- *Ambassador Park Robyug,
 Secretary General International Conference of Asian Political Parties,* tetamu saya.
 Terima kasih. Selamat datang. *Welcome to Kuala Lumpur...*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1238,ANNOTATION,[Tepuk]
+Bacaan Kali Yang Kedua dan Ketiga",,12.38 tgh.,1238,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1238,Timbalan Yang di-Pertua,"Sila. Baik, terima kasih. Selamat datang."
+Bacaan Kali Yang Kedua dan Ketiga",,12.38 tgh.,1238,Timbalan Yang di-Pertua,"Sila. Baik, terima kasih. Selamat datang."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1238,Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah,"Tuan
+Bacaan Kali Yang Kedua dan Ketiga",,12.38 tgh.,1238,Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah,"Tuan
 Yang di-Pertua, bahawa kita tidak boleh nafikan sekolah agama Islam dan pusat tahfiz di
 negara ini, pada saya, cukup penting. Peranan mereka penting kerana bukan sahaja
 mereka dapat membantu anak-anak kita generasi muda di dalam pembentukan akidah
@@ -1884,7 +1883,7 @@ juga pembentukan masyarakat yang kita rasa dapat membantu keharmonian dan
 perpaduan negara pada hari ini."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1240,Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah,"Pusat tahfiz dan sekolah agama. Kebelakangan ini, kita melihat dan mendengar
+Bacaan Kali Yang Kedua dan Ketiga",,■1240,1240,Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah,"Pusat tahfiz dan sekolah agama. Kebelakangan ini, kita melihat dan mendengar
 banyak sentimen ataupun persepsi yang negatif terhadap mereka. Misalnya dikatakan
 mereka mempunyai infrastruktur yang cukup daif. Ya, kita tahu kebelakangan ini banyak
 sekolah-sekolah yang terbakar di mana anak-anak kita yang tidak berdosa terkorban.
@@ -1944,17 +1943,17 @@ Jadi budak-budak tahfiz ini di samping *hafizan*, mereka juga boleh mencari
 rezeki yang halal. Maka Tuan Yang di-Pertua, saya rasa perkara ini penting..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1240,ANNOTATION,[Disampuk]
+Bacaan Kali Yang Kedua dan Ketiga",,■1240,1240,ANNOTATION,[Disampuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1240,Dato’ Haji Mohd Suhaimi bin Abdullah,"Mohon mencelah Yang Berhormat
+Bacaan Kali Yang Kedua dan Ketiga",,■1240,1240,Dato’ Haji Mohd Suhaimi bin Abdullah,"Mohon mencelah Yang Berhormat
 Senator."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1240,Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah,Ya.
+Bacaan Kali Yang Kedua dan Ketiga",,■1240,1240,Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah,Ya.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1240,Dato’ Haji Mohd Suhaimi bin Abdullah,"Tuan Yang di-Pertua, mohon
+Bacaan Kali Yang Kedua dan Ketiga",,■1240,1240,Dato’ Haji Mohd Suhaimi bin Abdullah,"Tuan Yang di-Pertua, mohon
 mencelah.
 Sekali ini saya mencelah bab tahfiz ini. Yang Berhormat Senator, kalau kita
 mencadangkan kepada kementerian ataupun kerajaan sebab Yang Berhormat Senator
@@ -1988,22 +1987,22 @@ dikeluarkan. *Hold on first.* Kita cuba cara kita begini supaya dapat membantu p
 tahfiz ini. Terima kasih Tuan Yang di-Pertua."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1240,Puan Nuridah binti Mohd Salleh,"Tuan Yang di-Pertua, boleh tidak saya
+Bacaan Kali Yang Kedua dan Ketiga",,■1240,1240,Puan Nuridah binti Mohd Salleh,"Tuan Yang di-Pertua, boleh tidak saya
 mencelah sedikit."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1240,Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah,Sila.
+Bacaan Kali Yang Kedua dan Ketiga",,■1240,1240,Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah,Sila.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1240,Puan Nuridah binti Mohd Salleh,"Okey, saya hendak tanya. Saya ingat Yang
+Bacaan Kali Yang Kedua dan Ketiga",,■1240,1240,Puan Nuridah binti Mohd Salleh,"Okey, saya hendak tanya. Saya ingat Yang
 Berhormat Senator Dato’ Suhaimi, dengan kata-kata pelajar tahfiz ini tidak ke mana, saya
 ingat kena bercakap itu- saya rasa itu kena ini sedikitlah sebab pengalaman saya..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1240,ANNOTATION,[Disampuk]
+Bacaan Kali Yang Kedua dan Ketiga",,■1240,1240,ANNOTATION,[Disampuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1240,Dato’ Haji Mohd Suhaimi bin Abdullah,"Saya sentuh bukan daripada segi
+Bacaan Kali Yang Kedua dan Ketiga",,■1240,1240,Dato’ Haji Mohd Suhaimi bin Abdullah,"Saya sentuh bukan daripada segi
 *hafazan* nya, bukan. Akan tetapi dari selepas itu- kita tahu yang baharu ini arwah al-Hafiz-
 tahfiz kita yang terkenal, *advisor to Agong* dan sebagainya. *Yes,* akan tetapi yang
 disebutkan oleh Yang Berhormat Senator tadi itu tidak ke mana maksudnya daripada
@@ -2015,13 +2014,13 @@ tahfiz yang menagih dadah. Itu yang kita sedih sebab saya kata itulah tidak ada 
 yang khusus..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1240,Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah,Okey
+Bacaan Kali Yang Kedua dan Ketiga",,■1240,1240,Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah,Okey
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1240,ANNOTATION,[Ketawa]
+Bacaan Kali Yang Kedua dan Ketiga",,■1240,1240,ANNOTATION,[Ketawa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1240,Puan Asmak binti Husin,"Boleh saya mencelah? Saya minat apabila
+Bacaan Kali Yang Kedua dan Ketiga",,■1240,1240,Puan Asmak binti Husin,"Boleh saya mencelah? Saya minat apabila
 berbincang tajuk ini.
 Yang Berhormat Senator, bersetuju kah kalau Yang Berhormat Senator Dato’
 Suhaimi, Yang Berhormat Senator Tan Sri, dan juga Yang Berhormat Senator Puan
@@ -2034,7 +2033,7 @@ Sekolah saya ditubuhkan tahun 1957 dan kami terdapat dalam pelbagai bidang
 sebab kami juga belajar akademik dan kami juga belajar agama."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1250,Puan Asmak binti Husin,"Setiap tahun kami mesti periksa 18 subjek, ataupun 21 subjek. Jadi apabila
+Bacaan Kali Yang Kedua dan Ketiga",,■1250,1250,Puan Asmak binti Husin,"Setiap tahun kami mesti periksa 18 subjek, ataupun 21 subjek. Jadi apabila
 sampai peringkat SPM, kami hanya kena belajar untuk 10 subjek. Jadi ia memberikan
 kelebihan kepada kami untuk mendapatkan *straight A’s* sebab sudah biasa dengan 18
 dan 21 subjek.
@@ -2048,11 +2047,11 @@ juga. Jadi maknanya benda itu boleh dibuat tetapi mungkin dasarnya perlu diperbe
 Sekian, terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1250,Puan Nuridah bt Mohd Salleh,"Tuan Yang di-Pertua, soalan itu kena jawab
+Bacaan Kali Yang Kedua dan Ketiga",,■1250,1250,Puan Nuridah bt Mohd Salleh,"Tuan Yang di-Pertua, soalan itu kena jawab
 kah? Oleh sebab sebut nama saya tadi kan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1250,Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah,"Tuan
+Bacaan Kali Yang Kedua dan Ketiga",,■1250,1250,Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah,"Tuan
 Yang di-Pertua, saya akan ulas sikit. Kalau tidak, saya tidak habis berucap.
 Saya faham isu ini memang sensitif yang sebenarnya tetapi mula-mula saya
 cakap tadi saya memang menyokong ini. Oleh sebab saya percaya *it is the best time.
@@ -2100,13 +2099,13 @@ tahun, *beautiful young girl*, pukul 12 malam. Dia minta sedekah pada saya, saya
 Saya kata minta IC tengok? Apa *you* buat pukul 12 malam? Dia cabut lari. Masalahnya..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1250,Puan Nuridah binti Mohd Salleh,
+Bacaan Kali Yang Kedua dan Ketiga",,■1250,1250,Puan Nuridah binti Mohd Salleh,
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1250,ANNOTATION,[Bangun]
+Bacaan Kali Yang Kedua dan Ketiga",,■1250,1250,ANNOTATION,[Bangun]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1250,Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah,"Maksudnya bayangkan anak kita yang umur macam ini dibiarkan menjual barang-
+Bacaan Kali Yang Kedua dan Ketiga",,■1250,1250,Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah,"Maksudnya bayangkan anak kita yang umur macam ini dibiarkan menjual barang-
 barang, mungkin mereka digunakan. Oleh sebab itu saya katakan tadi, ada pelarasan
 pihak kerajaan pantau. Mana kita rasa memang boleh ikhlas untuk kepentingan agama
 dan negara kita bagi.
@@ -2125,7 +2124,7 @@ ini akan berjaya. Sekian, dengan itu saya menyokong rang undang-undang ini. Teri
 kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1250,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat Senator Prof.
+Bacaan Kali Yang Kedua dan Ketiga",,■1250,1250,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat Senator Prof.
 Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah. Nampaknya masa Yang Berhormat
 berucap tadi, nampak Yang Berhormat Menteri kita mencatat sahaja. Makna dia tengah
 mencatat ya. Terima kasihlah ya.
@@ -2133,7 +2132,7 @@ Sekarang saya jemput pula Yang Berhormat Senator Datin Rahimah binti Haji
 Mahamad."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1256,Datin Rahimah binti Haji Mahamad,"*Assalamualaikum warahmatullahi
+Bacaan Kali Yang Kedua dan Ketiga",,12.56 tgh.,1256,Datin Rahimah binti Haji Mahamad,"*Assalamualaikum warahmatullahi
 wabarakatuh* dan salam sejahtera.
 Tuan Yang di-Pertua, terima kasih atas keizinan untuk saya membahaskan
 Rang Undang-undang Pentadbiran Undang-undang Islam (Wilayah-Wilayah
@@ -2162,10 +2161,10 @@ Senator Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah tadi. Jadi kita ken
 pesanan Allah SWT dalam ayatnya..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1256,ANNOTATION,[Membaca sepotong ayat al-Quran]
+Bacaan Kali Yang Kedua dan Ketiga",,12.56 tgh.,1256,ANNOTATION,[Membaca sepotong ayat al-Quran]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1256,Datin Rahimah binti Haji Mahamad,"Antaranya
+Bacaan Kali Yang Kedua dan Ketiga",,12.56 tgh.,1256,Datin Rahimah binti Haji Mahamad,"Antaranya
 bermaksud, mereka itulah yang memberi ataupun mengutamakan kehidupan di dunia
 dengan kehidupan di akhirat.
 Tuan Yang di-Pertua, eksploitasi dan manipulasi kanak-kanak ini untuk
@@ -2175,7 +2174,7 @@ diharapkan agar kerajaan lebih *affirmative* dalam obligasi terhadap jagaan kana
 di sekolah-sekolah agama Islam. Persoalan yang ingin saya kemukakan..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1256,Puan Asmak binti Husin,"*Assalamualaikum*, mohon pencerahan Yang
+Bacaan Kali Yang Kedua dan Ketiga",,12.56 tgh.,1256,Puan Asmak binti Husin,"*Assalamualaikum*, mohon pencerahan Yang
 Berhormat Datin Rahimah binti Haji Mahamad.
 Saya ingat yang disebutkan sebagai memanipulasikan kanak-kanak dan kaitkan
 dengan sekolah tahfiz apabila kita *check* sebenarnya- sebab saya biasa mendengar
@@ -2187,7 +2186,7 @@ tahfiz pun. Ini kerana kalau pelajar tahfiz yang *genuine* ini, biasanya mereka 
 dan belajarlah. Jadi, mungkin kita kena betulkan sikit persepsi itu. Sekian, terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1256,Datin Rahimah binti Haji Mahamad,"Ya, saya bersetujulah dengan Yang
+Bacaan Kali Yang Kedua dan Ketiga",,12.56 tgh.,1256,Datin Rahimah binti Haji Mahamad,"Ya, saya bersetujulah dengan Yang
 Berhormat Senator Puan Asmak sebab saya sendiri pernah berjumpa dengan pelajar-
 pelajar ini, mereka menunggu di luar bank. Apabila saya tanya, ini hendak jual wakaf al-
 Quran, hendak jual itu dan ini. Apabila saya tanya, mereka ini- dia sebutlah dari sekolah
@@ -2198,33 +2197,33 @@ urus tadbir sekolah-sekolah agama Islam ini mematuhi semua ketetapan dalam Akta
 Kanak-kanak 2001?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1256,Timbalan Yang di-Pertua,"Yang Berhormat panjang lagi? Kita tangguh
+Bacaan Kali Yang Kedua dan Ketiga",,12.56 tgh.,1256,Timbalan Yang di-Pertua,"Yang Berhormat panjang lagi? Kita tangguh
 sekarang, kita sambung balik semula ya."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1256,Datin Rahimah binti Haji Mahamad,Ya.
+Bacaan Kali Yang Kedua dan Ketiga",,12.56 tgh.,1256,Datin Rahimah binti Haji Mahamad,Ya.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1256,Timbalan Yang di-Pertua,"Kita sambung selepas rehat. Jadi Ahli Yang
+Bacaan Kali Yang Kedua dan Ketiga",,12.56 tgh.,1256,Timbalan Yang di-Pertua,"Kita sambung selepas rehat. Jadi Ahli Yang
 Berhormat, sekarang jam sudah pukul 1 petang. Sekarang saya tangguhkan mesyuarat
 hingga jam 2.30 petang. Sekian, terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1301,ANNOTATION,[Mesyuarat ditempohkan pada pukul 1.01 tengah hari]
+Bacaan Kali Yang Kedua dan Ketiga",,1.01 tengah hari,1301,ANNOTATION,[Mesyuarat ditempohkan pada pukul 1.01 tengah hari]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1430,ANNOTATION,[Mesyuarat disambung semula pada pukul 2.30 petang]
+Bacaan Kali Yang Kedua dan Ketiga",,2.30 petang,1430,ANNOTATION,[Mesyuarat disambung semula pada pukul 2.30 petang]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1430,ANNOTATION,[Timbalan Yang di-Pertua mempengerusikan Mesyuarat]
+Bacaan Kali Yang Kedua dan Ketiga",,■1430,1430,ANNOTATION,[Timbalan Yang di-Pertua mempengerusikan Mesyuarat]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1430,Timbalan Yang di-Pertua,"*Bismillahi Rahmani Rahim. Assalamualaikum
+Bacaan Kali Yang Kedua dan Ketiga",,2.30 ptg.,1430,Timbalan Yang di-Pertua,"*Bismillahi Rahmani Rahim. Assalamualaikum
 warahmatullahi wabarakatuh.* Salam sejahtera. Seperti yang saya janjikan tadi minta
 Yang Berhormat Senator Rahimah menyambung ucapannya. Dipersilakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1430,Datin Rahimah binti Haji Mahamad,"Terima kasih Tuan Yang di-Pertua. Saya
+Bacaan Kali Yang Kedua dan Ketiga",,2.30 ptg.,1430,Datin Rahimah binti Haji Mahamad,"Terima kasih Tuan Yang di-Pertua. Saya
 sambung sedikit sahaja lagi. Bagaimanakah kerangka kawal selia yang bakal
 dikuatkuasakan agar semua sekolah-sekolah agama Islam mematuhi semua
 perundangan statutori Malaysia.
@@ -2245,21 +2244,21 @@ diurus bagi menampung keperluan emolumen guru-guru sekolah agama Islam ini?
 Sekian, terima kasih. Saya mohon menyokong."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1430,Timbalan Yang di-Pertua,"Terima kasih banyak Yang Berhormat. Sekarang
+Bacaan Kali Yang Kedua dan Ketiga",,2.30 ptg.,1430,Timbalan Yang di-Pertua,"Terima kasih banyak Yang Berhormat. Sekarang
 saya jemput pula Yang Berhormat Senator Tuan Mohd Yusmadi bin Mohd Yusoff. Tidak
 ada?
 *Alright*, saya jemput Yang Berhormat Senator Tuan Haji Muhammad bin
 Mustafa. Sila Yang Berhormat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1435,Tuan Haji Muhammad bin Mustafa,"*Assalamualaikum warahmatullahi
+Bacaan Kali Yang Kedua dan Ketiga",,2.35 ptg.,1435,Tuan Haji Muhammad bin Mustafa,"*Assalamualaikum warahmatullahi
 wabarakatuh...*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1435,ANNOTATION,[Membaca sepotong doa]
+Bacaan Kali Yang Kedua dan Ketiga",,2.35 ptg.,1435,ANNOTATION,[Membaca sepotong doa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1435,Tuan Haji Muhammad bin Mustafa,"Tuan Yang di-Pertua, saya mengucapkan berbanyak-banyak terima kasih
+Bacaan Kali Yang Kedua dan Ketiga",,2.35 ptg.,1435,Tuan Haji Muhammad bin Mustafa,"Tuan Yang di-Pertua, saya mengucapkan berbanyak-banyak terima kasih
 kerana diberi peluang untuk turut serta membahaskan suatu akta untuk meminda Akta
 Pentadbiran Undang-undang Islam (Wilayah-Wilayah Persekutuan) 1993.
 Saya mengambil kesempatan petang ini untuk mengucapkan berbanyak-
@@ -2287,21 +2286,21 @@ dengan berbagai-bagai cabaran dan perubahan zaman.
 Nabi SAW pernah bersabda..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1435,ANNOTATION,[Berucap dalam bahasa Arab]
+Bacaan Kali Yang Kedua dan Ketiga",,2.35 ptg.,1435,ANNOTATION,[Berucap dalam bahasa Arab]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1435,Tuan Haji Muhammad bin Mustafa,"Maksudnya, Allah
+Bacaan Kali Yang Kedua dan Ketiga",,2.35 ptg.,1435,Tuan Haji Muhammad bin Mustafa,"Maksudnya, Allah
 merahmati orang yang mengenali zamannya. Kita berada di dalam satu zaman yang
 mencabar dan pendidikan Islam perlu mempersiapkan diri untuk menghadapi cabaran
 itu.
 Sayyidina Ali *Karramallahu Wajhah* pernah berkata..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1435,ANNOTATION,"[Berucap dalam bahasa
+Bacaan Kali Yang Kedua dan Ketiga",,2.35 ptg.,1435,ANNOTATION,"[Berucap dalam bahasa
 Arab]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1435,Tuan Haji Muhammad bin Mustafa,"Antara maksudnya, kebenaran yang tidak bersistem akan dikalahkan oleh
+Bacaan Kali Yang Kedua dan Ketiga",,2.35 ptg.,1435,Tuan Haji Muhammad bin Mustafa,"Antara maksudnya, kebenaran yang tidak bersistem akan dikalahkan oleh
 kebatilan yang bersistem.
 Kita harap dengan pindaan akta ini akan meletakkan sekolah-sekolah agama
 Islam di Wilayah Persekutuan ke dalam satu sistem pendidikan agama Islam yang
@@ -2315,7 +2314,7 @@ pedagoginya dan juga teknologi pendidikan supaya sekolah-sekolah agama Islam ini
 menjadi institusi pendidikan agama Islam yang pintar."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1440,Tuan Haji Muhammad bin Mustafa,"Memandangkan sekolah-sekolah agama Islam biasanya dan kebanyakannya
+Bacaan Kali Yang Kedua dan Ketiga",,■1440,1440,Tuan Haji Muhammad bin Mustafa,"Memandangkan sekolah-sekolah agama Islam biasanya dan kebanyakannya
 menghadapi pelbagai masalah terutama masalah kewangan, modal insan dan peralatan,
 maka pihak kerajaan mestilah menolong dan memberikan bantuan secukupnya untuk
 mematuhi dan memenuhi kriteria dan syarat-syarat yang diperlukan oleh kerajaan dalam
@@ -2378,10 +2377,10 @@ Sebenarnya kalau mereka itu berjaya menghayati ajaran al-Quran, sudah pasti
 Allah SWT telah memberi jaminan..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1440,ANNOTATION,[Membaca sepotong ayat al-Quran]
+Bacaan Kali Yang Kedua dan Ketiga",,■1440,1440,ANNOTATION,[Membaca sepotong ayat al-Quran]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1440,Tuan Haji Muhammad bin Mustafa,"Maksudnya,
+Bacaan Kali Yang Kedua dan Ketiga",,■1440,1440,Tuan Haji Muhammad bin Mustafa,"Maksudnya,
 sesungguhnya Kamilah yang menurunkan al-Quran dan Kamilah yang akan
 menjaganya. Dengan ini membawa maksud, sesiapa yang menjaga al-Quran daripada
 segi ajarannya dan amalan-amalannya, sudah pasti dia akan dijaga oleh Allah Taala
@@ -2396,10 +2395,10 @@ kepada kualiti rakyatnya.
 Allah SWT berfirman..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1440,ANNOTATION,[Membaca sepotong ayat al-Quran]
+Bacaan Kali Yang Kedua dan Ketiga",,■1440,1440,ANNOTATION,[Membaca sepotong ayat al-Quran]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1440,Tuan Haji Muhammad bin Mustafa,"Antaranya
+Bacaan Kali Yang Kedua dan Ketiga",,■1440,1440,Tuan Haji Muhammad bin Mustafa,"Antaranya
 bermaksud, apabila Kami mahu menghancurkan sesebuah negara, Kami memerintah
 orang-orang yang mewah dalam negara itu supaya mematuhi perintah Allah. Lalu
 mereka menyeleweng dan melanggar perintah Allah sehingga mereka berhak diambil
@@ -2412,7 +2411,7 @@ Dengan kata-kata itu, saya menyokong pindaan akta ini. Sekian, terima kasih.
 *Wallahuaklam. Wassalamualaikum warahmatullahi wabarakatuh.*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1440,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat Senator Tuan Haji
+Bacaan Kali Yang Kedua dan Ketiga",,■1440,1440,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat Senator Tuan Haji
 Muhammad bin Mustafa. Terima kasih. Saya beri peluang, ada lagi yang hendak
 berucapkah? Yang Berhormat Senator Dato' Hajah Fahariyah, ada hendak tambah?
 Yang Berhormat Senator Datuk Abbas? Beri peluang ya. Okey, semua sudah bercakap
@@ -2420,7 +2419,7 @@ ya.
 Minta Yang Berhormat Menteri menjawab. Silakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1448,Timbalan Menteri di Jabatan Perdana Menteri [Puan Fuziah binti Salleh],"*Bismillahi Rahmani Rahim.* Terima kasih Tuan Yang di-Pertua. Saya mengucapkan
+Bacaan Kali Yang Kedua dan Ketiga",,2.48 ptg.,1448,Timbalan Menteri di Jabatan Perdana Menteri [Puan Fuziah binti Salleh],"*Bismillahi Rahmani Rahim.* Terima kasih Tuan Yang di-Pertua. Saya mengucapkan
 terima kasih kepada semua Ahli Yang Berhormat Senator yang telah terlibat di dalam
 perbahasan berkenaan dengan pindaan rang undang-undang pindaan ini.
 Seramai enam orang Ahli Yang Berhormat Senator yang telah berbahas. Yang
@@ -2436,7 +2435,7 @@ telah berbahas ini menyatakan sokongan terhadap pindaan rang undang-undang ini,
 rang undang-undang pindaan ini, Akta 505."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1450,Timbalan Menteri di Jabatan Perdana Menteri [Puan Fuziah binti Salleh],"Akan tetapi ada beberapa perkara yang dibangkitkan yang saya kira wajar dan
+Bacaan Kali Yang Kedua dan Ketiga",,■1450,1450,Timbalan Menteri di Jabatan Perdana Menteri [Puan Fuziah binti Salleh],"Akan tetapi ada beberapa perkara yang dibangkitkan yang saya kira wajar dan
 akan saya gulung sekarang ini untuk menjelaskan beberapa perkara tersebut. Perkara
 yang pertama yang saya ingin ulas ataupun gulung ialah berkenaan dengan kerisauan
 Ahli-ahli Yang Berhormat berkenaan dengan ke mana hala tuju mereka, pentingnya
@@ -2541,7 +2540,7 @@ selia oleh majlis. Sekolah agama negeri ini dikawal selia oleh Kementerian Pendi
 Malaysia."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1500,Timbalan Menteri di Jabatan Perdana Menteri [Puan Fuziah binti Salleh],"Jadi, sekolah swasta juga begitu. Dia dikawal selia. Sekolah agama swasta
+Bacaan Kali Yang Kedua dan Ketiga",,■1500,1500,Timbalan Menteri di Jabatan Perdana Menteri [Puan Fuziah binti Salleh],"Jadi, sekolah swasta juga begitu. Dia dikawal selia. Sekolah agama swasta
 bukan di bawah akta ini. Dia bukan dikawal selia oleh Akta 505. Dia dikawal oleh
 Kementerian Pendidikan Malaysia. Dia punya kawal selia itu. Oleh sebab itu, isu itu tidak
 timbul dalam pindaan akta ini dan sebab itu pindaan Akta 505 ini menjurus lebih kepada
@@ -2649,7 +2648,7 @@ negara lain seperti Turki, bagaimana institusi wakaf itu begitu *establish,* den
 Yang di-Pertua. *Established* dan sehingga 60 peratus daripada dana wakaf."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1510,Timbalan Menteri di Jabatan Perdana Menteri [Puan Fuziah binti Salleh],"Saya tanya kepada apa orang kata rakyat di Turki, adakah mereka membayar
+Bacaan Kali Yang Kedua dan Ketiga",,■1510,1510,Timbalan Menteri di Jabatan Perdana Menteri [Puan Fuziah binti Salleh],"Saya tanya kepada apa orang kata rakyat di Turki, adakah mereka membayar
 *income tax* dan mereka bagi juga kepada wakaf? Jawapan yang saya difahamkan, di
 Turki, *income tax* mereka itu ada tulah juga. Akan tetapi, wakaf mereka bagi. Akan tetapi
 kalau kita, di Malaysia kita ada kita punya ruang untuk zakat dan kita ada ruang untuk
@@ -2669,7 +2668,7 @@ itu, kita bolehlah wujudkan dana wakaf itu untuk membantu sekolah-sekolah agama.
 Jadi..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1510,Dato’ Haji Mohd Suhaimi bin Abdullah,"Mohon mencelah Tuan Yang di-
+Bacaan Kali Yang Kedua dan Ketiga",,■1510,1510,Dato’ Haji Mohd Suhaimi bin Abdullah,"Mohon mencelah Tuan Yang di-
 Pertua sebelum Yang Berhormat Menteri terlajak ke tajuk lain.
 Terlepas tadi, Yang Berhormat. Yang Berhormat menyatakan bahawa Majlis
 Agama Islam akan membantu sekiranya mereka ini mendaftar. Sebelum mendaftar tidak
@@ -2691,7 +2690,7 @@ peruntukan kepada anak-anak kita yang menderita akibat dadah ini. Terima kasih, 
 Yang di-Pertua."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1510,Puan Fuziah binti Salleh,"Terima kasih kepada Yang Berhormat Senator Dato’
+Bacaan Kali Yang Kedua dan Ketiga",,■1510,1510,Puan Fuziah binti Salleh,"Terima kasih kepada Yang Berhormat Senator Dato’
 Haji Mohd Suhaimi bin Abdullah berkenaan dengan kriteria mendaftar. Ia ada tiga kriteria
 iaitu:
 (i) diletakkan di bawah Kementerian Kesihatan Malaysia;
@@ -2765,13 +2764,13 @@ tabung dan tabung itu membantu, ya, katil-katil wakaf dan mungkin membeli instru
 peralatan di hospital itu untuk membantu asnaf. Ya, dan ini dia yang..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1510,Datuk Razali bin Idris,Yang Berhormat Menteri...
+Bacaan Kali Yang Kedua dan Ketiga",,■1510,1510,Datuk Razali bin Idris,Yang Berhormat Menteri...
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1510,Puan Fuziah binti Salleh,Kita sedang usahakan.
+Bacaan Kali Yang Kedua dan Ketiga",,■1510,1510,Puan Fuziah binti Salleh,Kita sedang usahakan.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1510,Datuk Razali bin Idris,"Saya mencelah sedikit. Terima kasih Tuan Yang di-
+Bacaan Kali Yang Kedua dan Ketiga",,■1510,1510,Datuk Razali bin Idris,"Saya mencelah sedikit. Terima kasih Tuan Yang di-
 Pertua. Soalan saya tadi ada berkenaan dengan bantuan asas penubuhan tahfiz ataupun
 sekolah pondok. Mungkin dalam kategori sekolah pondok, yang mana hari ini, kalau kita
 tengok permulaannya agak daif. Soalan saya, apakah kerajaan menyediakan geran
@@ -2779,11 +2778,11 @@ ataupun bentuk bantuan persediaan awal pembinaan tahfiz ataupun sekolah pondok?
 Terima kasih Yang Berhormat Timbalan Menteri."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1510,Puan Fuziah binti Salleh,"Terima kasih. Ini berkenaan dengan dana lagi, kan?
+Bacaan Kali Yang Kedua dan Ketiga",,■1510,1510,Puan Fuziah binti Salleh,"Terima kasih. Ini berkenaan dengan dana lagi, kan?
 Berkenaan dengan dana. Seperti yang saya jelaskan tadi, ia ada dua kategori."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1520,Puan Fuziah binti Salleh,"Satu kategori swasta, satu lagi kategori ia di bawah kerajaan. Apabila ia di
+Bacaan Kali Yang Kedua dan Ketiga",,■1520,1520,Puan Fuziah binti Salleh,"Satu kategori swasta, satu lagi kategori ia di bawah kerajaan. Apabila ia di
 bawah swasta, dia hendak bina sekolah pondok itu, dia tidak beritahu kerajaan. Dia tidak
 beritahu kerajaan. Jadi, tidak daftar pun. Kadang-kadang dia sudah beroperasi bertahun-
 tahun, kerajaan tidak sedar pun kewujudannya di situ. Jadi, kalau hendak memberi geran,
@@ -2852,20 +2851,20 @@ Buat makluman Ahli Yang Berhormat, MAIWP mempunyai dua sekolah
 menegah agama. Ada dua..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1520,Puan Nuridah binti Mohd Salleh,"Tuan Yang di-Pertua, maaf, yang itu saya
+Bacaan Kali Yang Kedua dan Ketiga",,■1520,1520,Puan Nuridah binti Mohd Salleh,"Tuan Yang di-Pertua, maaf, yang itu saya
 memang tersilap. Sekarang ini ada tiga kan daripada MAIWP? Bukan dua, tiga *kot*. Saya
 dapat..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1520,Puan Fuziah binti Salleh,"Ada nota yang saya ada ini, ada satu Sekolah
+Bacaan Kali Yang Kedua dan Ketiga",,■1520,1520,Puan Fuziah binti Salleh,"Ada nota yang saya ada ini, ada satu Sekolah
 Menengah Agama Sains Tahfiz."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1520,Puan Nuridah binti Mohd Salleh,"Akan tetapi memang perlukan tambahanlah
+Bacaan Kali Yang Kedua dan Ketiga",,■1520,1520,Puan Nuridah binti Mohd Salleh,"Akan tetapi memang perlukan tambahanlah
 sebenarnya pun. Okey. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1520,Puan Fuziah binti Salleh,"Makluman kita terima saranan tersebut berkenaan
+Bacaan Kali Yang Kedua dan Ketiga",,■1520,1520,Puan Fuziah binti Salleh,"Makluman kita terima saranan tersebut berkenaan
 dengan keperluan lebih sekolah menengah agama itu. Jadi, Yang Berhormat, seperti
 yang saya katakan tadi, dia boleh bawah negeri, dia boleh bawah Persekutuan dan dia
 boleh juga swasta. Jadi dia ada tiga kategori tadi- di bawah negeri, di bawah Persekutuan
@@ -2887,7 +2886,7 @@ ke Dewan Rakyat, Dewan Negara sempena satu tahun Kerajaan Pakatan Harapan.
 Terima kasih Tuan Yang di-Pertua. *Assalamualaikum warahmatullahi wabarakatuh.*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1520,Timbalan Yang di-Pertua,"*Waalaikumussalam warahmatullahi wabarakatuh*.
+Bacaan Kali Yang Kedua dan Ketiga",,■1520,1520,Timbalan Yang di-Pertua,"*Waalaikumussalam warahmatullahi wabarakatuh*.
 Terima kasih Yang Berhormat Puan Fuziah binti Salleh, Timbalan Menteri di Jabatan
 Perdana Menteri.
 Ahli-ahli Yang Berhormat, sekarang saya kemukakan masalah kepada Majlis
@@ -2895,38 +2894,38 @@ bagi diputuskan. Masalahnya bahawa rang udang-undang ini dibacakan kali yang ked
 sekarang."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1520,ANNOTATION,[Masalah dikemukakan bagi diputuskan; dan disetujukan]
+Bacaan Kali Yang Kedua dan Ketiga",,■1520,1520,ANNOTATION,[Masalah dikemukakan bagi diputuskan; dan disetujukan]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1520,ANNOTATION,"[Rang undang-undang dibacakan kali yang kedua dan diserahkan kepada
+Bacaan Kali Yang Kedua dan Ketiga",,■1520,1520,ANNOTATION,"[Rang undang-undang dibacakan kali yang kedua dan diserahkan kepada
 Dewan sebagai Jawatankuasa]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1520,ANNOTATION,[Majlis bersidang dalam Jawatankuasa]
+Bacaan Kali Yang Kedua dan Ketiga",,■1520,1520,ANNOTATION,[Majlis bersidang dalam Jawatankuasa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1520,ANNOTATION,[Timbalan Yang di-Pertua mempengerusikan Jawatankuasa]
+Bacaan Kali Yang Kedua dan Ketiga",,■1520,1520,ANNOTATION,[Timbalan Yang di-Pertua mempengerusikan Jawatankuasa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1520,ANNOTATION,[Fasal-fasal dikemukakan kepada Jawatankuasa]
+Bacaan Kali Yang Kedua dan Ketiga",,■1520,1520,ANNOTATION,[Fasal-fasal dikemukakan kepada Jawatankuasa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1520,ANNOTATION,"[Fasal-fasal 1 hingga 4 diperintahkan jadi sebahagian daripada rang udang-
+Bacaan Kali Yang Kedua dan Ketiga",,■1520,1520,ANNOTATION,"[Fasal-fasal 1 hingga 4 diperintahkan jadi sebahagian daripada rang udang-
 undang]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1520,ANNOTATION,[Rang undang-undang dimaklumkan kepada Majlis sekarang]
+Bacaan Kali Yang Kedua dan Ketiga",,■1520,1520,ANNOTATION,[Rang undang-undang dimaklumkan kepada Majlis sekarang]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1520,ANNOTATION,[Majlis Mesyuarat bersidang semula]
+Bacaan Kali Yang Kedua dan Ketiga",,■1520,1520,ANNOTATION,[Majlis Mesyuarat bersidang semula]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1520,ANNOTATION,"[Rang undang-undang dilaporkan dengan tidak ada pindaan; dibacakan kali
+Bacaan Kali Yang Kedua dan Ketiga",,■1520,1520,ANNOTATION,"[Rang undang-undang dilaporkan dengan tidak ada pindaan; dibacakan kali
 yang ketiga, disokong oleh Menteri Di Jabatan Perdana Menteri (Tuan Waytha Moorthy
 A/L Ponnusamy) dan diluluskan]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1530,Timbalan Yang di-Pertua,"Terima kasih Ahli Yang Berhormat. Kepada kita
+Bacaan Kali Yang Kedua dan Ketiga",,■1530,1530,Timbalan Yang di-Pertua,"Terima kasih Ahli Yang Berhormat. Kepada kita
 punya Menteri sampai akhir dia bersama kita termasuk juga Menteri daripada Jabatan
 Perdana Menteri tunggu kita. Saya ucapkan terima kasih ya.
 Kepada Tuan-tuan, Ahli Yang Berhormat yang nampak gigih dan nampak masih
@@ -2952,19 +2951,19 @@ Walau kita berbeza pendapat;
 Demi rakyat kita muafakat...*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1530,ANNOTATION,[Tepuk]
+Bacaan Kali Yang Kedua dan Ketiga",,■1530,1530,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1530,Timbalan Yang di-Pertua,"*Ilmu pengetahuan mesti dikaji;
+Bacaan Kali Yang Kedua dan Ketiga",,■1530,1530,Timbalan Yang di-Pertua,"*Ilmu pengetahuan mesti dikaji;
 Budi pekerti mesti di hati;
 Hidup baharulah akan dipuji;
 Dunia akhirat senanglah hati...*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1530,ANNOTATION,[Tepuk]
+Bacaan Kali Yang Kedua dan Ketiga",,■1530,1530,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1530,Timbalan Yang di-Pertua,"Saya mengambil kesempatan ini mendoakan kesejahteraan kepada semua Ahli
+Bacaan Kali Yang Kedua dan Ketiga",,■1530,1530,Timbalan Yang di-Pertua,"Saya mengambil kesempatan ini mendoakan kesejahteraan kepada semua Ahli
 Dewan Negara agar dirahmati dalam menjalani ibadat berpuasa di bulan Ramadhan
 yang penuh berakah. Ini bagi beragama Islam, saya berharap persiapan menyambut
 ketibaan Syawal nanti lebih meriah untuk tahun ini, dan disambut dengan secara
@@ -2980,10 +2979,10 @@ Sesal dahulu jadi pendapatan;
 Sesal kemudian apa gunanya...*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1530,ANNOTATION,[Tepuk]
+Bacaan Kali Yang Kedua dan Ketiga",,■1530,1530,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1530,Timbalan Yang di-Pertua,"Pandulah sebaik mungkin. Saya ingin memohon maaf sekiranya ada salah dan
+Bacaan Kali Yang Kedua dan Ketiga",,■1530,1530,Timbalan Yang di-Pertua,"Pandulah sebaik mungkin. Saya ingin memohon maaf sekiranya ada salah dan
 silap sepanjang saya mempengerusikan persidangan pada kali ini- maaf dipinta.
 *Kisah di cerita dengan pantun;
 Penuh teladan berisi padat;
@@ -2991,11 +2990,11 @@ Salah bermadah tidak bersantun;
 Maaf dipinta orang beradat...*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1530,ANNOTATION,[Tepuk]
+Bacaan Kali Yang Kedua dan Ketiga",,■1530,1530,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1530,Timbalan Yang di-Pertua,"Dengan itu saya tangguhkan dewan ini sehingga ke satu tarikh yang tidak
+Bacaan Kali Yang Kedua dan Ketiga",,■1530,1530,Timbalan Yang di-Pertua,"Dengan itu saya tangguhkan dewan ini sehingga ke satu tarikh yang tidak
 ditetapkan. Sekian. *Wassalamualaikum warahmatullahi wabarakatuh.*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PENTADBIRAN UNDANG-UNDANG ISLAM
 (WILAYAH-WILAYAH PERSEKUTUAN) (PINDAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1536,ANNOTATION,[Dewan tamat pada pukul 3.36 petang]
+Bacaan Kali Yang Kedua dan Ketiga",,3.36 petang,1536,ANNOTATION,[Dewan tamat pada pukul 3.36 petang]

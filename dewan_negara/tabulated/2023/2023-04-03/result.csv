@@ -1,23 +1,23 @@
-level_1,level_2,level_3,timestamp,author,speech
-,,,1000,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,1000,Tuan Yang di-Pertua,"*Assalamualaikum warahmatullahi wabarakatuh,* selamat pagi.
+level_1,level_2,level_3,raw_timestamp,timestamp,author,speech
+,,,10.00 pagi,1000,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,10.00 pagi,1000,Tuan Yang di-Pertua,"*Assalamualaikum warahmatullahi wabarakatuh,* selamat pagi.
 Sukacita dijemput Yang Berhormat Dato’ Haji Jefridin bin Haji Atan."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,1000,Dato’ Haji Jefridin bin Haji Atan,"*Assalamualaikum warahmatullahi wabarakatuh,*
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,10.00 pagi,1000,Dato’ Haji Jefridin bin Haji Atan,"*Assalamualaikum warahmatullahi wabarakatuh,*
 terima kasih Tuan Yang di-Pertua.
 *Burung helang, burung hantu;
-Soalan saya nombor satu.*"
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1.,,1000,Dato’ Haji Jefridin bin Haji Atan,"minta Menteri Dalam Negeri menyatakan, apa
+Soalan saya nombor satu.*
+**1. Dato’ Haji Jefridin bin Haji Atan** minta Menteri Dalam Negeri menyatakan, apa
 tindakan yang diambil dalam mengatasi isu pelancong asing- *backpackers* yang
 menyalahgunakan Pas Pelancong dengan mengemis bagi menagih simpati untuk
 menampung perbelanjaan percutian mereka, dan nyatakan statistik golongan ini yang telah
 ditahan dan telah diambil tindakan."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1.,,1000,Timbalan Menteri Dalam Negeri [Datuk Seri Dr. Shamsul Anuar bin Nasarah],"Terima kasih Tuan Yang di-Pertua, terima kasih Yang Berhormat. Untuk makluman Ahli Yang
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,10.00 pagi,1000,Timbalan Menteri Dalam Negeri [Datuk Seri Dr. Shamsul Anuar bin Nasarah],"Terima kasih Tuan Yang di-Pertua, terima kasih Yang Berhormat. Untuk makluman Ahli Yang
 Berhormat..."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1.,,1000,Tuan Yang di-Pertua,"Cuma burung helang jadi hantu itu yang payah sedikit itu, kan.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,10.00 pagi,1000,Tuan Yang di-Pertua,"Cuma burung helang jadi hantu itu yang payah sedikit itu, kan.
 Silakan."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1.,,1000,Datuk Seri Dr. Shamsul Anuar bin Nasarah,
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1.,,1000,ANNOTATION,[Ketawa]
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1.,,1000,Datuk Seri Dr. Shamsul Anuar bin Nasarah,"Usaha untuk membanteras
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,10.00 pagi,1000,Datuk Seri Dr. Shamsul Anuar bin Nasarah,
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,10.00 pagi,1000,ANNOTATION,[Ketawa]
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,10.00 pagi,1000,Datuk Seri Dr. Shamsul Anuar bin Nasarah,"Usaha untuk membanteras
 masalah pendatang asing tanpa izin (PATI) merupakan satu usaha berterusan daripada pihak
 kerajaan. Dalam hal ini kementerian telah mengambil beberapa langkah dan inisiatif bagi
 membendung kebanjiran pendatang tanpa izin (PATI) dalam negara kita.
@@ -44,14 +44,14 @@ Setakat ini untuk makluman, Jabatan Imigresen Malaysia hanya menemui satu kes
 sahaja di Kuala Lumpur yang melibatkan dua orang warganegara Rusia. Mereka telah diberi
 amaran keras dan diminta berhubung dengan kedutaan masing-masing untuk mendapatkan
 bantuan. Terima kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1.,,1000,Dato’ Haji Jefridin bin Haji Atan,"Terima kasih Tuan Yang di-Pertua. Terima kasih
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,10.00 pagi,1000,Dato’ Haji Jefridin bin Haji Atan,"Terima kasih Tuan Yang di-Pertua. Terima kasih
 juga kepada Yang Berhormat Timbalan Menteri atas jawapan yang dikemukakan tadi. Soalan
 pokok saya lebih kepada *backpackers* iaitu yang telah mempunyai visa pelancong dan
 sebagainya tetapi menimbulkan masalah kepada negara kita.
 Soalan tambahan saya, adakah kerajaan berusaha untuk memperketat sedikit syarat-
 syarat untuk membenarkan mereka masuk seperti penyata kewangan, hotel dan sebagainya?
 Terima kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1.,,1000,Datuk Seri Dr. Shamsul Anuar bin Nasarah,"Terima kasih Yang Berhormat. Saya
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,10.00 pagi,1000,Datuk Seri Dr. Shamsul Anuar bin Nasarah,"Terima kasih Yang Berhormat. Saya
 sebut tadi *backpackers* ini tidak banyak yang kita menerima aduan. Setakat tadi hanya satu
 kes sahaja melibatkan dua orang warganegara Rusia sebagaimana yang saya sebutkan tadi.
 Untuk makluman Ahli Yang Berhormat, Kementerian Dalam Negeri melalui Jabatan
@@ -74,11 +74,11 @@ Selain itu, syarat-syarat lain seperti mempunyai bukti tempahan penginapan,
 kemudahan tempat tinggal sepanjang di Malaysia dan juga mempunyai tiket sah untuk
 perjalanan datang dan pulang, itu juga antara perkara-perkara yang dilihat untuk
 membolehkan seseorang masuk dengan mudah ke negara ini. Terima kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1.,,1000,Datuk Dr. Dominic Lau Hoe Chai,Soalan tambahan.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1.,,1000,Tuan Yang di-Pertua,Silakan.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1.,,1000,Datuk Dr. Dominic Lau Hoe Chai,"Terima kasih Tuan Yang di-Pertua. Terima kasih
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,10.00 pagi,1000,Datuk Dr. Dominic Lau Hoe Chai,Soalan tambahan.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,10.00 pagi,1000,Tuan Yang di-Pertua,Silakan.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,10.00 pagi,1000,Datuk Dr. Dominic Lau Hoe Chai,"Terima kasih Tuan Yang di-Pertua. Terima kasih
 Yang Berhormat Timbalan Menteri yang memberikan jawapan."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1.,,1010,Datuk Dr. Dominic Lau Hoe Chai,"Akan tetapi seperti Timbalan Menteri mengatakan hanya dua kes sahaja tetapi untuk
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,◼ 1010,1010,Datuk Dr. Dominic Lau Hoe Chai,"Akan tetapi seperti Timbalan Menteri mengatakan hanya dua kes sahaja tetapi untuk
 makluman Timbalan Menteri, jika Timbalan Menteri turun padang Kuala Lumpur, boleh
 mendapati banyak Orang Putih sebagai pengemis di Kuala Lumpur. Ini akan mencemarkan
 imej negara kita.
@@ -88,7 +88,7 @@ hanya untuk kategori Bangladesh atau India sahaja. *So*, soalan saya ialah, adak
 syarat seperti visa pelancongan, tiket pergi balik, anggaran perbelanjaan itu ada bagi juga
 bagi pelancong-pelancong asing sebagai kemungkinan besar sebagai pengemis di negara
 kita itu. Terima kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1.,,1010,Datuk Seri Dr. Shamsul Anuar bin Nasarah,"Terima kasih Tuan Yang di-Pertua,
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,◼ 1010,1010,Datuk Seri Dr. Shamsul Anuar bin Nasarah,"Terima kasih Tuan Yang di-Pertua,
 terima kasih Yang Berhormat. Syarat yang saya sebutkan tadi terpakai kepada semua bukan
 hanya untuk Bangladesh ataupun negara yang disebutkan sahaja. Sebenarnya itu peraturan
 standard kemasukan ke negara ini.
@@ -105,14 +105,14 @@ majikan telah ditangkap. Ini data 2019. Saya ada banyak lagi data-data lain. Men
 untuk saya jelaskan di sini tetapi yang saya hendak sebut bahawa operasi memang kita
 lakukan dan kita sentiasa bersedia untuk menerima apa juga maklumat-maklumat daripada
 lain. Data ini boleh saya kongsi."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1.,,1010,Datuk Dr. Dominic Lau Hoe Chai,"Timbalan Menteri, operasi memang diadakan
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,◼ 1010,1010,Datuk Dr. Dominic Lau Hoe Chai,"Timbalan Menteri, operasi memang diadakan
 tetapi adakah operasi itu berkesan atau tidak?"
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1.,,1010,Tuan Yang di-Pertua,"Tidak boleh bersoal jawab. Soalannya sudah dijawab
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,◼ 1010,1010,Tuan Yang di-Pertua,"Tidak boleh bersoal jawab. Soalannya sudah dijawab
 sedemikian. Bilangan 2 PN1521L08794 tidak hadir dengan izin. Maka terus kepada soalan
 ketiga Datuk Lim Pay Hen."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1.,,1010,Datuk Lim Pay Hen,"Salam sejahtera dan selamat pagi, Tuan Yang di-Pertua. Soalan
-saya nombor tiga."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,3.,,1010,Datuk Lim Pay Hen,"minta Menteri Pembangunan Kerajaan Tempatan menyatakan:
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,◼ 1010,1010,Datuk Lim Pay Hen,"Salam sejahtera dan selamat pagi, Tuan Yang di-Pertua. Soalan
+saya nombor tiga.
+**3. Datuk Lim Pay Hen** minta Menteri Pembangunan Kerajaan Tempatan menyatakan:
 (a) statistik jumlah rumah *overhang* dan *sub-sales* mengikut pecahan setiap
 negeri, tempoh *overhang* dan *sub-sales* apabila rumah ini dibina di
 negeri seperti Kuala Lumpur, Selangor dan Johor menjangkaui
@@ -121,7 +121,7 @@ dan
 (b) berapakah jumlah sasaran Kementerian bagi warga asing berserta
 maklumat negara asal untuk membeli rumah *overhang* dan *sub-sales* di
 Malaysia?"
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,3.,,1010,Timbalan Menteri Pembangunan Kerajaan Tempatan [Tuan Haji Akmal Nasrullah bin Mohd Nasir],"Tuan Yang di-Pertua, Yang Berhormat Senator, soalan ini berkaitan dengan
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,◼ 1010,1010,Timbalan Menteri Pembangunan Kerajaan Tempatan [Tuan Haji Akmal Nasrullah bin Mohd Nasir],"Tuan Yang di-Pertua, Yang Berhormat Senator, soalan ini berkaitan dengan
 statistik. Jadi, saya cuba jawab.
 Untuk makluman Ahli Yang Berhormat, bilangan unit dan nilai harta tanah siap dibina
 dengan CCC tetapi tidak terjual iaitu lambakan rumah tidak terjual *overhang* bagi tahun 2018
@@ -150,7 +150,7 @@ kediaman kepada bukan warganegara. Negeri yang Yang Berhormat telah sebutkan, Ba
 tahun 2021 Johor ada 52 unit, Pulau Pinang ada 49 unit, Selangor ada 28 unit, Wilayah
 Persekutuan ada 369 unit. Itu sahaja Tuan Yang di-Pertua. Selebihnya saya tunggu soalan
 tambahan. Terima kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,3.,,1010,Datuk Lim Pay Hen,"Terima kasih kepada jawapan yang diberikan oleh Timbalan
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,◼ 1010,1010,Datuk Lim Pay Hen,"Terima kasih kepada jawapan yang diberikan oleh Timbalan
 Menteri tadi. Jika saya merujuk kepada cagaran Skim Rumah Pertamaku atau dikenali
 sebagai SRP di laman sesawang semalam. Pengumuman telah dikeluarkan bahawa skim
 SRP dimansuhkan dan berkuat kuasa pada 1 April 2023.
@@ -162,7 +162,7 @@ luas?
 Kedua, berapakah jumlah peruntukan di bawah Bajet 2023 yang kementerian
 bercadang untuk mengambil alih projek perumahan terbengkalai dan projek pembinaan yang
 sakit? Sekian, terima kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,3.,,1010,Tuan Haji Akmal Nasrullah bin Mohd Nasir,"Terima kasih Yang Berhormat Senator.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,◼ 1010,1010,Tuan Haji Akmal Nasrullah bin Mohd Nasir,"Terima kasih Yang Berhormat Senator.
 Terima kasih Tuan Yang di-Pertua. Walaupun soalannya sedikit jauh daripada soalan asal
 berkaitan *overhang* dan juga *sub-sale*, cuma saya cuba jawab juga bagi pemakluman kepada
 Yang Berhormat. Untuk skim yang diumumkan tadi memang telah dimansuhkan SRP. Malah
@@ -180,31 +180,31 @@ sakit dan terbengkalai. Kalau ikutkan komitmen untuk siapkan projek sakit terben
 masih terletak kepada pemaju. Akan tetapi untuk tahun ini, kerajaan telah bersedia untuk
 memberi tambahan sebanyak RM20 juta. Bermaksud, peruntukan yang kita ada untuk bantu
 projek sakit dan terbengkalai adalah sebanyak RM24 juta. Terima kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,3.,,1010,Datuk Razali bin Idris,"Yang Berhormat, saya satu."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,3.,,1010,Tuan Yang di-Pertua,Silakan.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,3.,,1010,Datuk Razali bin Idris,"Terima kasih Tuan Yang di-Pertua. Saya cuma hendak minta
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,◼ 1010,1010,Datuk Razali bin Idris,"Yang Berhormat, saya satu."
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,◼ 1010,1010,Tuan Yang di-Pertua,Silakan.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,◼ 1010,1010,Datuk Razali bin Idris,"Terima kasih Tuan Yang di-Pertua. Saya cuma hendak minta
 pengesahan daripada Yang Berhormat Timbalan Menteri sebab kalau tidak silap
 pendengaran saya, Yang Amat Berhormat Perdana Menteri semasa pembentangan bajet
 baru-baru ini mengatakan Skim Rumah Pertamaku dilanjutkan. Benar ataupun tidak? Saya
 tidak hendak *flipflop.* Terima kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,3.,,1010,Tuan Yang di-Pertua,Baik.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,3.,,1020,Tuan Haji Akmal Nasrullah bin Mohd Nasir,"Saya rasa jawapan saya sudah jelas
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,◼ 1010,1010,Tuan Yang di-Pertua,Baik.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1020,1020,Tuan Haji Akmal Nasrullah bin Mohd Nasir,"Saya rasa jawapan saya sudah jelas
 tadi. Ketika ini, kita tumpukan kepada SJKP. Sama ada perkara itu disebut ataupun tidak,
 saya mohon kepada Yang Berhormat Senator untuk rujuk kepada *Hansard* sebab saya pun
 tidak boleh sahkan di sini. Kalau Tuan Yang di-Pertua pun *aware…*"
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,3.,,1020,Tuan Yang di-Pertua,Ya.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,3.,,1020,Tuan Haji Akmal Nasrullah bin Mohd Nasir,"...Ataupun maklum bahawa segala
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1020,1020,Tuan Yang di-Pertua,Ya.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1020,1020,Tuan Haji Akmal Nasrullah bin Mohd Nasir,"...Ataupun maklum bahawa segala
 percakapan di dalam Dewan ini direkodkan, dan disimpan melalui *Hansard.* Terima kasih
 Tuan Yang di-Pertua."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,3.,,1020,Tuan Yang di-Pertua,Baik. Dipersilakan.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,3.,,1020,Tuan Haji Hussin bin Ismail,"Soalan tambahan. Tuan Yang di-Pertua dan juga Yang
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1020,1020,Tuan Yang di-Pertua,Baik. Dipersilakan.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1020,1020,Tuan Haji Hussin bin Ismail,"Soalan tambahan. Tuan Yang di-Pertua dan juga Yang
 Berhormat Timbalan Menteri, isu perumahan *overhang* ini tentu yang sangat terkait dua
 pihaklah, ialah pemaju dan juga pembeli. Akan tetapi, paling kritikal pembeli yang terpaksa
 membayar *progress payment* dan lain-lain. Apakah kerajaan ada hasrat atau merancang
 untuk diadakan dasar yang lebih ketat khusus bagi melindungi pembeli-pembeli perumahan
 *under construction* ini? Terima kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,3.,,1020,Tuan Yang di-Pertua,"Ya, perumahan tergantung. Sila."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,3.,,1020,Tuan Haji Akmal Nasrullah bin Mohd Nasir,"Terima kasih Tuan Yang di-Pertua,
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1020,1020,Tuan Yang di-Pertua,"Ya, perumahan tergantung. Sila."
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1020,1020,Tuan Haji Akmal Nasrullah bin Mohd Nasir,"Terima kasih Tuan Yang di-Pertua,
 terima kasih Yang Berhormat Senator.
 Perumahan ataupun lambakan rumah tidak terjual- sebenarnya *overhang,* dengan izin
 Tuan Yang di-Pertua, iaitu lambakan rumah yang sudah siap tetapi tidak terjual. Maka oleh
@@ -213,9 +213,9 @@ Akan tetapi, mungkin soalan Yang Berhormat Senator merujuk kepada bebanan
 kepada pembeli itu rumah yang sedang dibina, kemudian projek itu bermasalah iaitu projek
 sakit ataupun terbengkalai. Jadi, saya tidak pasti Yang Berhormat Senator hendak bertanya
 yang mana satu tadi, tetapi untuk..."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,3.,,1020,Tuan Haji Hussin bin Ismail,"Maksud yang kedua, Yang Berhormat Timbalan
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1020,1020,Tuan Haji Hussin bin Ismail,"Maksud yang kedua, Yang Berhormat Timbalan
 Menteri. Rumah yang *under construction.*"
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,3.,,1020,Tuan Haji Akmal Nasrullah bin Mohd Nasir,"Ya, jadi sebab itu, ketika ini, yang
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1020,1020,Tuan Haji Akmal Nasrullah bin Mohd Nasir,"Ya, jadi sebab itu, ketika ini, yang
 seperti saya telah umum dalam Dewan Negara ini iaitu, memang di peringkat kementerian,
 kita telah tubuhkan jawatankuasa khas untuk teliti projek-projek yang bermasalah ini. Malah
 berdasarkan kaedah yang kita buat, tiap-tiap bulan memang *taskforce* atau jawatankuasa ini
@@ -228,16 +228,16 @@ pihak kerajaan tempatan, kita berunding memudahkan proses. Dan kedua, seperti ya
 menjawab soalan asal tadi oleh Yang Berhormat Senator, iaitu kerajaan juga menyediakan
 sedikit suntikan dana untuk menyelesaikan projek-projek yang hampir siap ini. Terima kasih
 Tuan Yang di-Pertua."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,3.,,1020,Tuan Yang di-Pertua,"Datuk Seri Hajah Zurainah binti Musa, silakan."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,3.,,1020,Datuk Seri Hajah Zurainah binti Musa,"Terima kasih Tuan Yang di-Pertua. Soalan
-saya nombor 4."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,4.,,1020,Datuk Seri Hajah Zurainah binti Musa,"minta Menteri Kesihatan menyatakan, apakah
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1020,1020,Tuan Yang di-Pertua,"Datuk Seri Hajah Zurainah binti Musa, silakan."
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1020,1020,Datuk Seri Hajah Zurainah binti Musa,"Terima kasih Tuan Yang di-Pertua. Soalan
+saya nombor 4.
+**4. Datuk Seri Hajah Zurainah binti Musa** minta Menteri Kesihatan menyatakan, apakah
 langkah-langkah yang diambil oleh kerajaan bagi membenarkan kanak-kanak (yang dilahirkan
 di luar negara kepada wanita warganegara dan bapa lain kewarganegaraan) untuk layak
 menerima vaksinasi mandatori dan rawatan kesihatan yang sama seperti yang dinikmati oleh
 kanak-kanak warganegara. Ini ekoran komitmen kerajaan untuk meminda Perlembagaan bagi
 kategori kanak-kanak tersebut."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,4.,,1020,Menteri Kesihatan [Dr. Zaliha binti Mustafa],"*Bismillahi Rahmani Rahim.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1020,1020,Menteri Kesihatan [Dr. Zaliha binti Mustafa],"*Bismillahi Rahmani Rahim.
 Assalamualaikum warahmatullahi wabarakatuh* dan salam sejahtera. Terima kasih Tuan Yang
 di-Pertua, terima kasih Yang Berhormat Senator yang bertanya.
 Jawapan saya. Kementerian Kesihatan Malaysia melalui Perkhidmatan Kesihatan
@@ -260,21 +260,21 @@ Walau bagaimanapun, kelulusan ini adalah secara *case by case basis* di mana kua
 diberikan kepada Ketua Setiausaha Kementerian Kesihatan Malaysia untuk meremitkan
 sebahagian atau keseluruhan daripada mana-mana fi selaras dengan seksyen 15 Perintah Fi
 (Perubatan) (Kos Perkhidmatan) 2014. Terima kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,4.,,1020,Tuan Yang di-Pertua,Sila.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,4.,,1020,Datuk Seri Hajah Zurainah binti Musa,"Terima kasih Tuan Yang di-Pertua, terima
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1020,1020,Tuan Yang di-Pertua,Sila.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1020,1020,Datuk Seri Hajah Zurainah binti Musa,"Terima kasih Tuan Yang di-Pertua, terima
 kasih Yang Berhormat Menteri Kesihatan. Apakah bilangan kes anak-anak yang telah
 menerima rawatan dari hospital-hospital kerajaan dalam masa lima tahun lepas?"
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,4.,,1020,Tuan Yang di-Pertua,Ini banyak hendak jawab itu.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,4.,,1020,Dr. Zaliha binti Mustafa,"Terima kasih Yang Berhormat Senator. Saya tidak ada data
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1020,1020,Tuan Yang di-Pertua,Ini banyak hendak jawab itu.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1020,1020,Dr. Zaliha binti Mustafa,"Terima kasih Yang Berhormat Senator. Saya tidak ada data
 itu pada masa ini. Akan tetapi, *insya-Allah*, saya akan berikan secara bertulis. Yang Berhormat
 Senator, boleh? Terima kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,4.,,1020,Dr. Lingeshwaran a/l Dato' Seri R. Arunasalam,Soalan tambahan.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,4.,,1020,Tuan Yang di-Pertua,Sila.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,4.,,1020,Dr. Lingeshwaran a/l Dato' Seri R. Arunasalam,"Terima kasih Tuan Yang di-Pertua.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1020,1020,Dr. Lingeshwaran a/l Dato' Seri R. Arunasalam,Soalan tambahan.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1020,1020,Tuan Yang di-Pertua,Sila.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1020,1020,Dr. Lingeshwaran a/l Dato' Seri R. Arunasalam,"Terima kasih Tuan Yang di-Pertua.
 Apakah status pencapaian Program Imunisasi Kebangsaan? Dengan izin, apa *immunization
 coverage* yang terkini di Malaysia, dan bagaimana pula status vaksinasi kaum minoriti Orang
 Asli dan rakyat yang tinggal di pedalaman? Terima kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,4.,,1020,Dr. Zaliha binti Mustafa,"Terima kasih Yang Berhormat Senator. Kita memang ada
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1020,1020,Dr. Zaliha binti Mustafa,"Terima kasih Yang Berhormat Senator. Kita memang ada
 program imunisasi yang kita- yang seperti semua tahu. Kita, seperti yang saya sebut daripada
 awalnya, kita tanpa mengira siapa sahaja kanak-kanak itu, kita akan beri perkhidmatan
 imunisasi.
@@ -284,15 +284,15 @@ yang dinamakan program *Supplementary Immunization Activities* ataupun SIA. Jadi
 imunisasi seperti ini memang kita beri secara percuma, Yang Berhormat Senator. Kita pergi
 ke kampung-kampung ataupun kepada komuniti-komuniti yang mungkin mereka yang jauh di
 pedalaman. Kita akan ada sistem macam ini. Terima kasih Yang Berhormat Senator."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,4.,,1020,Tuan Yang di-Pertua,"Baik, terima kasih. Sila Dato' Ajis bin Sitin."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,5.,,1020,Dato' Ajis bin Sitin,"minta Menteri Kemajuan Desa dan Wilayah menyatakan:
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1020,1020,Tuan Yang di-Pertua,"Baik, terima kasih. Sila Dato' Ajis bin Sitin.
+**5. Dato' Ajis bin Sitin** minta Menteri Kemajuan Desa dan Wilayah menyatakan:
 (i) apakah status kemajuan projek Tanaman Semula Komersial Orang Asli
 (TSKOA) yang dibangunkan oleh RISDA sejak tahun 2000 yang
 melibatkan 154 kawasan dengan keluasan lebih 21 ribu hektar yang
 memanfaatkan 9,010 peserta; dan
 (ii) berapa banyak TSKOA yang masih memberikan dividen dan berapakah
 amaun dividen yang diterima oleh peserta."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,5.,,1020,Timbalan Menteri Kemajuan Desa dan Wilayah [Datuk Rubiah binti Haji Wang],"*Bismillahi Rahmani Rahim. Assalamualaikum warahmatullahi wabarakatuh.* Terima kasih
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1020,1020,Timbalan Menteri Kemajuan Desa dan Wilayah [Datuk Rubiah binti Haji Wang],"*Bismillahi Rahmani Rahim. Assalamualaikum warahmatullahi wabarakatuh.* Terima kasih
 Tuan Yang di-Pertua.
 Untuk makluman Yang Berhormat Senator, terdapat 154- kebun Orang Asli dengan
 keluasan 21,000 hektar telah menyertai program pembangunan RISDA yang dikenali sebagai
@@ -308,28 +308,28 @@ sejumlah RM399.68 juta dividen telah dibayar kepada seramai lebih 5,400 orang pe
 TSKOA yang mendapat manfaat. Manakala bagi projek TSKOA di peringkat pembangunan,
 setiap peserta akan menerima elaun sara hidup dengan purata bayaran RM170 per hektar
 sebulan. Terima kasih Tuan Yang di-Pertua."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,5.,,1020,Tuan Yang di-Pertua,Ada soalan tambahan?
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,5.,,1020,Dato' Ajis bin Sitin,"Soalan tambahan, Tuan Yang di-Pertua. Terima kasih kepada
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1020,1020,Tuan Yang di-Pertua,Ada soalan tambahan?
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1020,1020,Dato' Ajis bin Sitin,"Soalan tambahan, Tuan Yang di-Pertua. Terima kasih kepada
 Yang Berhormat Menteri yang menjawab.
 Sebenarnya ladang TSKOA merupakan satu inisiatif yang sangat berimpak pada
 masyarakat Orang Asli. Oleh sebab itu, saya pada Dewan yang mulia ini, saya banyak kali
 bertanya pasal TSKOA."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,5.,,1030,Dato’ Ajis bin Sitin,"Jadi, TSK juga telah merubah hidup Orang Asli daripada bertani
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1030,1030,Dato’ Ajis bin Sitin,"Jadi, TSK juga telah merubah hidup Orang Asli daripada bertani
 secara sendiri kepada bertani secara komersial dan ini telah menjadikan Orang Asli
 mempunyai pendapatan berbanding yang dahulu tidak ada pendapatan. Soalan tambahan
 saya ada tiga."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,5.,,1030,Tuan Yang di-Pertua,Dia tidak boleh sekali tiga.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,5.,,1030,Dato’ Ajis bin Sitin,"Pertama, mengapa TSK Gua Musang, RPS Kuala Betis, Gua
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1030,1030,Tuan Yang di-Pertua,Dia tidak boleh sekali tiga.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1030,1030,Dato’ Ajis bin Sitin,"Pertama, mengapa TSK Gua Musang, RPS Kuala Betis, Gua
 Musang tidak diusahakan sejak lima tahun yang lalu dan dibiarkan dicuri oleh pencuri-pencuri
 menyebabkan peserta ladang seramai 275 orang itu tidak mempunyai pendapatan. Yang
 kedua, apa justifikasi ladang tersebut tidak bermula..."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,5.,,1030,Tuan Yang di-Pertua,"Yang Berhormat soalan tambahan, satu. Kalau dua atau tiga
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1030,1030,Tuan Yang di-Pertua,"Yang Berhormat soalan tambahan, satu. Kalau dua atau tiga
 bermakna soalan itu dan jadi empat."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,5.,,1030,Dato’’ Ajis bin Sitin,Satu
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,5.,,1030,Tuan Yang di-Pertua,"Satu, kumpul."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,5.,,1030,Dato’ Ajis bin Sitin,Satu dahulu. Terima kasih Tuan Yang di-Pertua.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,5.,,1030,Tuan Yang di-Pertua,Sila.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,5.,,1030,Datuk Rubiah binti Haji Wang,"Terima kasih Tuan Yang di-Pertua, begitu juga terima
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1030,1030,Dato’’ Ajis bin Sitin,Satu
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1030,1030,Tuan Yang di-Pertua,"Satu, kumpul."
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1030,1030,Dato’ Ajis bin Sitin,Satu dahulu. Terima kasih Tuan Yang di-Pertua.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1030,1030,Tuan Yang di-Pertua,Sila.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1030,1030,Datuk Rubiah binti Haji Wang,"Terima kasih Tuan Yang di-Pertua, begitu juga terima
 kasih Yang Berhormat Senator.
 Untuk makluman Yang Berhormat Senator, kontrak RISDA Plantation Sdn. Bhd.
 (RPSB) projek perladangan di Gua Musang telah tamat pada 31 Mac 2019 dan tiada
@@ -352,13 +352,13 @@ dengan melantik agensi mengurus daripada kalangan syarikat GLC namun pada 23 Jan
 itu berdasarkan garis panduan Program Tanam Semula Sawit Pekebun kecil dalam RMK-10
 menyatakan kebun-kebun sawit yang melebihi umur 25 tahun tidak ekonomik dan sesuai
 untuk ditanam semula. Terima kasih Tuan Yang di-Pertua."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,5.,,1030,Tuan Yang di-Pertua,Baik. Ada lagi soalan TSKOA?
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,5.,,1030,Tuan Manolan bin Mohamad,Soalan.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,5.,,1030,Tuan Yang di-Pertua,Silakan.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,5.,,1030,Tuan Manolan bin Mohamad,"Terima kasih Tuan Yang di-Pertua. Yang Berhormat
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1030,1030,Tuan Yang di-Pertua,Baik. Ada lagi soalan TSKOA?
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1030,1030,Tuan Manolan bin Mohamad,Soalan.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1030,1030,Tuan Yang di-Pertua,Silakan.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1030,1030,Tuan Manolan bin Mohamad,"Terima kasih Tuan Yang di-Pertua. Yang Berhormat
 Timbalan Menteri."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,5.,,1030,Tuan Yang di-Pertua,"JAKOA dan TSKOA ini dua. Ya, sila."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,5.,,1030,Tuan Manolan bin Mohamad,"Ini JAKOA Tuan Yang di-Pertua. Okey soalan saya
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1030,1030,Tuan Yang di-Pertua,"JAKOA dan TSKOA ini dua. Ya, sila."
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1030,1030,Tuan Manolan bin Mohamad,"Ini JAKOA Tuan Yang di-Pertua. Okey soalan saya
 Yang Berhormat Timbalan Menteri, kita tahu ladang-ladang ini kebanyakan yang bekerja ini
 merupakan pendatang asing, bukan penduduk Orang Asli di kampung tersebut ataupun di
 sekitar kampung tersebut.
@@ -368,7 +368,7 @@ menjana pendapatan mereka? Oleh sebab kita tengok kontraktor-kontraktor ini, mer
 cenderung untuk mengambil pekerja asing. Soalan kedua, siapakah yang pilih kontraktor ini
 Timbalan Menteri sama ada kontraktor JAKOA ataupun RISDA Plantation? Sekian, terima
 kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,5.,,1030,Datuk Rubiah binti Haji Wang,"Terima kasih Yang Berhormat Senator atas jawapan
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1030,1030,Datuk Rubiah binti Haji Wang,"Terima kasih Yang Berhormat Senator atas jawapan
 tadi. Untuk makluman Yang Berhormat Senator, ladang-ladang komersial di bawah RISDA
 Plantation pekerja-pekerjanya adalah sebenarnya di-*offer,* konsep penanaman komersial
 tanam semula kelapa sawit ini adalah bukan sahaja dari sudut penyediaan dividen tetapi kita
@@ -379,13 +379,13 @@ untuk bekerja di kawasan perladangan, pihak *plantation* terpaksa mengambil peke
 untuk memenuhi keperluan kerja di tapak berkenaan. Pemilihan kontraktor yang
 melaksanakan kerja-kerja dalam ladang berkenaan dilaksanakan oleh pihak RISDA. Itu
 sahaja Tuan Yang di-Pertua."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,5.,,1030,Tuan Yang di-Pertua,Baik Tuan Aknan A/L Ehtook.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,6.,,1030,Tuan Aknan A/L Ehtook,"minta Menteri Perpaduan Negara menyatakan, apakah
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1030,1030,Tuan Yang di-Pertua,"Baik Tuan Aknan A/L Ehtook.
+**6. Tuan Aknan A/L Ehtook** minta Menteri Perpaduan Negara menyatakan, apakah
 kemajuan yang telah dicapai bagi program dan aktiviti yang terkandung dalam Dasar
 Perpaduan Negara, dan sejauh mana dasar ini diguna pakai oleh kementerian/jabatan lain
 untuk menangani isu perpaduan seperti diskriminasi dalam pelbagai bidang seperti sukan,
 perkhidmatan awam dan pendidikan."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,6.,,1030,Menteri Perpaduan Negara [Datuk Aaron Ago anak Dagang],"Terima kasih Yang
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1030,1030,Menteri Perpaduan Negara [Datuk Aaron Ago anak Dagang],"Terima kasih Yang
 Berhormat senator.
 Tuan Yang di-Pertua, Dasar Perpaduan Negara yang telah dihasilkan pada tahun
 2021 merupakan dokumen strategik jangka panjang dan usaha berterusan yang dirangka
@@ -429,15 +429,15 @@ hingga 27 Mei 2023 yang akan disempurnakan di Kuching, Perdana Menteri Perdana M
 20 Mei 2023 oleh Yang Amat Perdana Menteri. Program ini akan melibatkan kerjasama dan
 penyertaan pelbagai kementerian dan agensi dengan konsep *the whole of government
 approach,* dengan izin. Sekian, terima kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,6.,,1040,Tuan Yang di-Pertua,Sila.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,6.,,1040,Tuan Aknan a/l Ehtook,"Terima kasih Tuan Yang di-Pertua. Kita mendengar tentang
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1040,1040,Tuan Yang di-Pertua,Sila.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1040,1040,Tuan Aknan a/l Ehtook,"Terima kasih Tuan Yang di-Pertua. Kita mendengar tentang
 pelbagai aktiviti yang dilaksanakan oleh kementerian. Saya cuma hendak tanya, adakah
 peranan kementerian dalam usaha untuk menasihati pelbagai kementerian dalam masing-
 masing merangka dasar agar tidak bercanggah dengan Dasar Perpaduan Kebangsaan.
 Ini kerana kita tidak mahu sambil Kementerian Perpaduan melangkah satu dua
 langkah ke hadapan, kementerian lain membuat dua tiga langkah ke belakang. Jadi, kita tidak
 ke mana. Terima kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,6.,,1040,Datuk Aaron Ago anak Dagang,"Terima kasih Yang Berhormat. Memang kita di
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1040,1040,Datuk Aaron Ago anak Dagang,"Terima kasih Yang Berhormat. Memang kita di
 Kementerian Perpaduan ini telah menyusun pelbagai program dan satu sebab sekarang ini
 kita sudah ada konsep Malaysia Madani dan kita telah pun mengadakan sebuah kerangka
 untuk membangunkan masyarakat Madani ataupun Malaysia Madani. Ini amat menyeluruh
@@ -445,14 +445,14 @@ dan kita seperti yang saya sebutkan tadi, kita mempunyai program yang besar iait
 Kenegaraan, Semarak Perpaduan dan program Rahmah Komuniti. Dalam ketiga-tiga
 program yang besar ini melibatkan pelbagai kementerian dan agensi di seluruh negara.
 Terima kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,6.,,1040,Tan Sri Dato’ Low Kian Chuan,Soalan tambahan.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,6.,,1040,Tuan Yang di-Pertua,Silakan.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,6.,,1040,Tan Sri Dato’ Low Kian Chuan,"Terima kasih Tuan Yang di-Pertua. Soalan saya
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1040,1040,Tan Sri Dato’ Low Kian Chuan,Soalan tambahan.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1040,1040,Tuan Yang di-Pertua,Silakan.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1040,1040,Tan Sri Dato’ Low Kian Chuan,"Terima kasih Tuan Yang di-Pertua. Soalan saya
 Yang Berhormat Menteri, adakah langkah-langkah yang diambil untuk mengingatkan ahli
 politik yang menggunakan kata-kata perkauman yang akhirnya akan menjejaskan perpaduan
 negara."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,6.,,1040,Tuan Yang di-Pertua,Orang politik.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,6.,,1040,Datuk Aaron Ago anak Dagang,"Terima kasih Yang Berhormat. Memang kita sudah
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1040,1040,Tuan Yang di-Pertua,Orang politik.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1040,1040,Datuk Aaron Ago anak Dagang,"Terima kasih Yang Berhormat. Memang kita sudah
 ada program untuk ahli politik melibatkan diri dalam menyatupadukan masyarakat kita di
 negara ini. Memang kita tahu sebab kita punya asas politik adalah berasaskan perkauman,
 maka kalau musim pilihan raya tidak dinafikan hujah-hujah yang bertemakan perkauman
@@ -467,14 +467,14 @@ kementerian ini kita mempunyai jentera perpaduan dan di bawah jentera perpaduan 
 mempunyai e-SEPAKAT yang mengumpulkan semua maklumat dengan isu-isu atau cabaran
 yang mungkin boleh menggugat perpaduan. Mereka ini bekerja bertungkus-lumus dengan
 kita adakan *mediation*. Terima kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,6.,,1040,Tuan Yang di-Pertua,Tuan Balasubramaniam a/l Nachiappan.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,6.,,1040,Tuan Balasubramaniam a/l Nachiappan,"Salam sejahtera Tuan Yang di-Pertua.
-Soalan saya nombor 7."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,7.,,1040,Tuan Balasubramaniam a/l Nachiappan,"minta Menteri Perdagangan Dalam Negeri
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1040,1040,Tuan Yang di-Pertua,Tuan Balasubramaniam a/l Nachiappan.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1040,1040,Tuan Balasubramaniam a/l Nachiappan,"Salam sejahtera Tuan Yang di-Pertua.
+Soalan saya nombor 7.
+**7. Tuan Balasubramaniam a/l Nachiappan** minta Menteri Perdagangan Dalam Negeri
 dan Kos Sara Hidup menyatakan, adakah pihak kerajaan menyediakan insentif atau subsidi
 bagi peruncit yang mengadakan inisiatif Menu Rahmah bagi tujuan mengekalkan
 kelangsungan menu tersebut."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,7.,,1040,Timbalan Menteri Perdagangan Dalam Negeri dan Kos Sara Hidup [Puan Hajah Fuziah binti Salleh],"*Bismillahi Rahmani Rahim. Assalamualaikum warahmatullahi
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1040,1040,Timbalan Menteri Perdagangan Dalam Negeri dan Kos Sara Hidup [Puan Hajah Fuziah binti Salleh],"*Bismillahi Rahmani Rahim. Assalamualaikum warahmatullahi
 wabarakatuh.* Salam Malaysia Madani.
 Tuan Yang di-Pertua, terima kasih saya ucapkan kepada Yang Berhormat Senator
 Tuan Balasubramaniam a/l Nachiappan. Menu Rahmah merupakan satu pilihan makanan
@@ -511,13 +511,13 @@ adalah dalam bentuk promosi melalui platform media dan Portal Menu Rahmah dan ki
 memastikan bahawa Menu Rahmah ini dikenali, kita bagi *branding,* dengan izin Tuan Yang
 di-Pertua, dan selebih daripada itu atas inisiatif industri dan individu. Terima kasih Tuan Yang
 di-Pertua."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,7.,,1040,Tuan Yang di-Pertua,Silakan soalan tambahan.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,7.,,1040,Tuan Balasubramaniam a/l Nachiappan,"Terima kasih Tuan Yang di-Pertua dan
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1040,1040,Tuan Yang di-Pertua,Silakan soalan tambahan.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1040,1040,Tuan Balasubramaniam a/l Nachiappan,"Terima kasih Tuan Yang di-Pertua dan
 juga terima kasih kepada Yang Berhormat Timbalan Menteri. Soalan saya, mengikut pelbagai
 laporan di media, harga makanan di Bazar Ramadan semakin mahal disebabkan oleh harga
 barang mentah tinggi. Adakah kerajaan tidak berhasrat untuk menggunakan agenda Menu
 Rahmah bagi mengawal harga jualan makanan? Terima kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,7.,,1040,Puan Hajah Fuziah binti Salleh,"Terima kasih. Tuan Yang di-Pertua, atas soalan
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1040,1040,Puan Hajah Fuziah binti Salleh,"Terima kasih. Tuan Yang di-Pertua, atas soalan
 tambahan tadi saya ingin memaklumkan bahawa kita telah memulakan inisiatif Bazar
 Ramadan Rahmah dan terdapat 38 Bazar Ramadan Rahmah di seluruh negara Tuan Yang
 di-Pertua.
@@ -533,9 +533,9 @@ diberikan kepada golongan yang memerlukan.
 *So*, Bazar Ramadan Rahmah ini ialah program daripada kementerian untuk
 membantu seperti keperluan yang dikatakan oleh Yang Berhormat Senator tadi. Terima kasih
 Tuan Yang di-Pertua."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,7.,,1040,Tuan Yang di-Pertua,"Baik, satu lagi soalan. Ada? Tidak ada.
-Yang Berhormat Senator Datuk Dr. Dominic Lau Hoe Chai."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,8.,,1040,Datuk Dr. Dominic Lau Hoe Chai,"minta Menteri Pendidikan menyatakan:
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1040,1040,Tuan Yang di-Pertua,"Baik, satu lagi soalan. Ada? Tidak ada.
+Yang Berhormat Senator Datuk Dr. Dominic Lau Hoe Chai.
+**8. Datuk Dr. Dominic Lau Hoe Chai** minta Menteri Pendidikan menyatakan:
 (a) bagaimanakah Kementerian akan menyelia caj yuran PIBG di peringkat
 sekolah yang kian membebankan pihak ibu bapa; dan
 (b) kerajaan sebelum ini telah pun memansuhkan setiap bentuk yuran di
@@ -545,8 +545,8 @@ memberi 'sumbangan' bagi program sekolah. Adakah Kementerian
 sedar akan perkara ini, dan bagaimanakah kementerian memantau
 keadaan sebegini agar ia tidak menyusahkan para ibu bapa dan
 penjaga?"
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,8.,,1040,Tuan Yang di-Pertua,Yang Berhormat Menteri Pendidikan.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,8.,,1040,Menteri Pendidikan [Puan Fadhlina binti Sidek],"Terima kasih Tuan Yang di-
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1040,1040,Tuan Yang di-Pertua,Yang Berhormat Menteri Pendidikan.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1040,1040,Menteri Pendidikan [Puan Fadhlina binti Sidek],"Terima kasih Tuan Yang di-
 Pertua. *Assalamualaikum warahmatullahi wabarakatuh.*
 Tuan Yang di-Pertua, untuk makluman Ahli Yang Berhormat Senator, Peraturan-
 peraturan Pendidikan Persatuan Ibu Bapa, Guru 1998 membenarkan Persatuan Ibu Bapa
@@ -562,13 +562,13 @@ perkara tersebut, KPM melalui surat pemakluman sumbangan Persatuan Ibu Bapa dan 
 pada 15 September 2021 telah memberi peringatan kepada semua sekolah agar tidak
 mengenakan bayaran tambahan dalam sumbangan PIBG dan pematuhan kepada garis
 panduan yang telah disediakan."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,8.,,1050,Menteri Pendidikan [Puan Fadhlina binti Sidek],"KPM yakin dengan peranan yang dimainkan oleh PIBG dalam memastikan kemajuan
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1050,1050,Menteri Pendidikan [Puan Fadhlina binti Sidek],"KPM yakin dengan peranan yang dimainkan oleh PIBG dalam memastikan kemajuan
 serta pembangunan murid dan sekolah serta guru, ibu bapa atau penjaga murid digalakkan
 untuk memberi sokongan kepada PIBG dalam apa jua aktiviti yang dirancang termasuk dalam
 usaha mendapatkan dana untuk membantu sekolah dalam aspek pengurusan program
 sekolah. Sekian, terima kasih Tuan Yang di-Pertua."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,8.,,1050,Tuan Yang di-Pertua,Sila.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,8.,,1050,Datuk Dr. Dominic Lau Hoe Chai,"Soalan tambahan? Terima kasih Tuan Yang di-
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1050,1050,Tuan Yang di-Pertua,Sila.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1050,1050,Datuk Dr. Dominic Lau Hoe Chai,"Soalan tambahan? Terima kasih Tuan Yang di-
 Pertua, terima kasih kepada Yang Berhormat Menteri atas jawapan yang telah diberi. Saya
 memang kurang pasti kerana semua jawapan Yang Berhormat Menteri berikan itu seolah-
 olah di bawah kawalan tetapi hakikat yang berlaku itu memang ada yuran, bayaran,
@@ -578,7 +578,7 @@ penguat kuasa atau penguatkuasaan itu adalah sangat lemah. Minta Yang Berhormat 
 jelaskan bagaimana mempertingkatkan penguatkuasaan di Kementerian Pendidikan
 Malaysia ke atas yuran-yuran yang diminta oleh pihak sekolah daripada ibu bapa. Terima
 kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,8.,,1050,Puan Fadhlina binti Sidek,"Terima kasih Yang Berhormat. Saya ingin jelaskan begini.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1050,1050,Puan Fadhlina binti Sidek,"Terima kasih Yang Berhormat. Saya ingin jelaskan begini.
 Saya ambil ruang ini untuk jelaskan kepada semua bagaimana PIBG ini harus bertindak dalam
 urusan-urusan dan persoalan yang dibangkitkan tadi. Pertama Yang Berhormat, semua ibu
 bapa kena hadir mesyuarat PIBG kerana maklumat dan keputusan-keputusan ini dibuat
@@ -595,15 +595,15 @@ peraturan lain di bawah kuasa pendaftar negeri. Pendaftar negeri merupakan Penga
 Semua minit mesyuarat PIBG ini akan dihantar kepada JPN dan akan disemak.
 Jadi, kalau ada aduan tersebut, kita akan turun dan membuat pembetulan tersebut
 dengan segera. Terima kasih Tuan Yang di-Pertua."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,8.,,1050,Tuan Yang di-Pertua,"Baik, silakan."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,8.,,1050,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Tuan Yang di-Pertua. Selain
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1050,1050,Tuan Yang di-Pertua,"Baik, silakan."
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1050,1050,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Tuan Yang di-Pertua. Selain
 daripada yuran PIBG, ibu bapa atau penjaga juga terpaksa membiayai kos kelas tambahan
 atau bengkel peperiksaan yang dianjurkan bersama oleh pihak sekolah dengan pihak luar.
 Soalan saya, apa bentuk sokongan tambahan yang disediakan oleh sekolah-sekolah
 daif di seluruh negara bagi tujuan penganjuran sesi kelas tambahan kepada calon-calon SPM
 sebagai usaha alternatif untuk mempersiapkan para pelajar dengan strategi menjawab soalan
 yang tidak diajar di sekolah. Sekian, terima kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,8.,,1050,Puan Fadhlina binti Sidek,"Terima kasih Yang Berhormat atas keprihatinan Yang
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1050,1050,Puan Fadhlina binti Sidek,"Terima kasih Yang Berhormat atas keprihatinan Yang
 Berhormat berkaitan dengan kelas-kelas tuisyen dan kelas-kelas tambahan. Izinkan saya
 untuk memberikan beberapa pandangan dan juga pendirian yang terkait rapat dengan isu ini.
 Pertamanya Yang Berhormat, PIBG boleh menganjurkan itu.
@@ -616,12 +616,12 @@ dukungan daripada pihak khususnya pihak luar dan juga pihak korporat misalnya ya
 menganjurkan program-program sokongan seperti itu. Jadi, tiada halangan melainkan dengan
 mendapat dukungan dan sokongan daripada PIBG dan juga PIBKS. Terima kasih Yang
 Berhormat."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,8.,,1050,Tuan Yang di-Pertua,Dato’ Ahmad bin Dato’ Sri Haji Ibrahim.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,9.,,1050,Dato’ Ahmad bin Dato’ Sri Haji Ibrahim,"minta Menteri Perladangan dan Komoditi
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1050,1050,Tuan Yang di-Pertua,"Dato’ Ahmad bin Dato’ Sri Haji Ibrahim.
+**9. Dato’ Ahmad bin Dato’ Sri Haji Ibrahim** minta Menteri Perladangan dan Komoditi
 menyatakan, sejauh mana industri kenaf memelopori pasaran luar memandangkan industri
 kenaf terus jadi rebutan selepas Kenaf Venture Global menjadi rakan strategik kepada kelab
 bola sepak Jerman, iaitu VfL Wolfsburg."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,9.,,1050,Timbalan Menteri Perladangan dan Komoditi [Datuk Siti Aminah binti Aching],"Terima kasih Tuan Yang di-Pertua, terima kasih kepada Yang Berhormat Senator. Untuk
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1050,1050,Timbalan Menteri Perladangan dan Komoditi [Datuk Siti Aminah binti Aching],"Terima kasih Tuan Yang di-Pertua, terima kasih kepada Yang Berhormat Senator. Untuk
 makluman Ahli Yang Berhormat, pada tahun 2022, Kenaf Venture Global (KVG) Sdn. Bhd.
 dan Syarikat VfL Wolfsburg telah menandatangani perjanjian sebagai rakan strategik untuk
 projek Wolfsburg- dalam bidang khidmat sosial korporat, program pembangunan belia,
@@ -654,12 +654,12 @@ Kerajaan sentiasa mengalu-alukan pemain industri untuk membangun serta
 menambah baik kualiti dan daya saing produk berasaskan fiber dan mengembangkan
 pasaran ke peringkat antarabangsa menjelang tahun 2023. Terima kasih Tuan Yang di-
 Pertua."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,9.,,1050,Tuan Yang di-Pertua,"Silakan, tidak ada soalan tambahan?
-Baik, Dato’ Haji Husain bin Awang"
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,10.,,1050,Dato’ Haji Husain bin Awang,"minta Menteri Pertanian dan Keterjaminan Makanan
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1050,1050,Tuan Yang di-Pertua,"Silakan, tidak ada soalan tambahan?
+Baik, Dato’ Haji Husain bin Awang
+**10. Dato’ Haji Husain bin Awang** minta Menteri Pertanian dan Keterjaminan Makanan
 menyatakan, apa perancangan kerajaan bagi menarik lebih ramai generasi muda yang
 berkelulusan pendidikan tinggi untuk terlibat dalam sektor pertanian dan perhutanan."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,10.,,1050,Timbalan Menteri Pertanian dan Keterjaminan Makanan [Tuan Chan Foong Hin],"Tuan Yang di-Pertua, Untuk makluman Ahli Yang Berhormat, bagi menarik lebih ramai
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1050,1050,Timbalan Menteri Pertanian dan Keterjaminan Makanan [Tuan Chan Foong Hin],"Tuan Yang di-Pertua, Untuk makluman Ahli Yang Berhormat, bagi menarik lebih ramai
 generasi muda di samping mengekalkan jumlah yang sedia ada dalam sektor pertanian,
 kementerian telah memperkenalkan Program Agropreneur Muda (PAM) sejak tahun 2016.
 Program ini bertujuan untuk:
@@ -683,7 +683,7 @@ Bantuan ini tidak hanya terbuka untuk kepada generasi muda yang berkelulusan tin
 tetapi ia juga terbuka kepada semua belia dengan pelbagai latar belakang pendidikan.
 Bantuan ini sedikit sebanyak dapat membantu golongan muda mengurangkan kos permulaan
 projek-projek pertanian dan agromakanan."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,10.,,1100,Timbalan Menteri Pertanian dan Keterjaminan Makanan [Tuan Chan Foong Hin],"Di samping itu, kementerian juga menyediakan khidmat nasihat dan latihan-latihan
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1100,1100,Timbalan Menteri Pertanian dan Keterjaminan Makanan [Tuan Chan Foong Hin],"Di samping itu, kementerian juga menyediakan khidmat nasihat dan latihan-latihan
 teknikal agroprenuer dalam semua subsektor agromakanan bagi membantu mereka
 meningkatkan kemahiran untuk memastikan projek-projek yang dijalankan berjaya
 mengeluarkan hasil yang tinggi dan seterusnya menjana pendapatan.
@@ -695,13 +695,13 @@ Kementerian berharap dengan penglibatan berterusan golongan muda ini akan dapat
 membantu untuk meningkatkan output dan kualiti pengeluaran dan seterusnya merancakkan
 pertumbuhan ekonomi dan sosial negara melalui sektor pertanian dan agromakanan. Sekian,
 terima kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,10.,,1100,Dato’ Haji Husain bin Awang,"Terima kasih Tuan Yang di-Pertua dan terima kasih
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1100,1100,Dato’ Haji Husain bin Awang,"Terima kasih Tuan Yang di-Pertua dan terima kasih
 kepada Yang Berhormat Timbalan Menteri. Salah satu daripada lima fokus utama
 kementerian bagi tahun ini adalah mempertingkatkan penglibatan golongan belia dalam
 bidang pertanian. Soalan saya, sejauh manakah keberkesanan dan juga sambutan Program
 Agropreneur Muda oleh golongan muda dalam sektor pertanian? Setakat ini, berapa
 ramaikah yang telah berjaya sebagai agrousahawan dalam program tersebut? Terima kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,10.,,1100,Tuan Chan Foong Hin,"Untuk makluman Yang Berhormat, Geran Agroprenuer Muda
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1100,1100,Tuan Chan Foong Hin,"Untuk makluman Yang Berhormat, Geran Agroprenuer Muda
 (GAM) ini telah dilaksanakan mulai tahun 2016 sehingga sekarang. Statistik yang kita dapat
 sejak penubuhan Geran Agroprenuer Muda ini sehingga tahun lalu iaitu 31 Disember 2022,
 telah meluluskan seramai 8,403 orang agroprenuer muda di seluruh negara merangkumi skop
@@ -712,24 +712,24 @@ Seperti yang saya katakan, ini geran yang berbentuk *in-kind* RM20,000 ini seben
 memberikan satu panduan tahap permulaan sebagai *start-up*. Kalau agroprenuer muda itu
 berjaya, akan ada program-program yang lain untuk membantu mereka dalam
 pengembangan. Terima kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,10.,,1100,Datuk Dr. Dominic Lau Hoe Chai,Soalan tambahan.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,10.,,1100,Tuan Yang di-Pertua,Silakan.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,10.,,1100,Datuk Dr. Dominic Lau Hoe Chai,"Terima kasih Tuan Yang di-Pertua. Memang
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1100,1100,Datuk Dr. Dominic Lau Hoe Chai,Soalan tambahan.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1100,1100,Tuan Yang di-Pertua,Silakan.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1100,1100,Datuk Dr. Dominic Lau Hoe Chai,"Terima kasih Tuan Yang di-Pertua. Memang
 masalah negara kita ialah kekurangan telur dan ayam. Saya hendak tanya Yang Berhormat
 Timbalan Menteri, bagaimanakah Program Agroprenuer Muda itu membantu mengatasi
 masalah itu? Terima kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,10.,,1100,Tuan Chan Foong Hin,"Untuk makluman Yang Berhormat Datuk Dr. Dominic Lau,
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1100,1100,Tuan Chan Foong Hin,"Untuk makluman Yang Berhormat Datuk Dr. Dominic Lau,
 sebenarnya Malaysia tidak mengalami kekurangan bekalan telur seperti yang dikatakan.
 Setakat ini, kita cuma mengimport masuk telur pada bulan Disember tahun lalu dan Januari
 tahun ini sahaja. Jadi, kita ada kapasiti yang mencukupi untuk menghasilkan telur. Jadi, tidak
 timbul soalan untuk menggalakkan agropreneur muda untuk khusus dalam bidang
 penternakan telur ini. Sekian, terima kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,10.,,1100,Tuan Yang di-Pertua,Datuk Paul Igai.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,10.,,1100,Datuk Paul Igai,"Tuan Yang di-Pertua, soalan saya nombor 11."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,11.,,1100,Datuk Paul Igai,"minta Menteri Pengangkutan menyatakan, jumlah hasil kutipan yang
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1100,1100,Tuan Yang di-Pertua,Datuk Paul Igai.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1100,1100,Datuk Paul Igai,"Tuan Yang di-Pertua, soalan saya nombor 11.
+**11. Datuk Paul Igai** minta Menteri Pengangkutan menyatakan, jumlah hasil kutipan yang
 diperoleh Suruhanjaya Penerbangan Malaysia (MAVCOM) daripada perkhidmatan
 penumpang dari tahun 2018 hingga kini dan bagaimanakah hasil kutipan itu digunakan."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,11.,,1100,Menteri Pengangkutan [Tuan Loke Siew Fook],"Tuan Yang di-Pertua, salam
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1100,1100,Menteri Pengangkutan [Tuan Loke Siew Fook],"Tuan Yang di-Pertua, salam
 sejahtera dan selamat pagi. Kementerian Pengangkutan melalui Suruhanjaya Penerbangan
 Malaysia (MAVCOM) bertanggungjawab dalam mengawal selia perkara ekonomi yang
 berhubungan dengan industri penerbangan awam termasuk dalam aspek perlindungan
@@ -775,8 +775,8 @@ dan tempatan; dan
 bagi mentransformasikan dan mempercepatkan semua proses
 pelesenan secara berperingkat demi manfaat pemain industri.
 Sekian, terima kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,11.,,1100,Tuan Yang di-Pertua,Soalan?
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,11.,,1100,Datuk Paul Igai,"Terima kasih Tuan Yang di-Pertua dan terima kasih Yang Berhormat
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1100,1100,Tuan Yang di-Pertua,Soalan?
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1100,1100,Datuk Paul Igai,"Terima kasih Tuan Yang di-Pertua dan terima kasih Yang Berhormat
 Menteri Pengangkutan. Sekarang kadar tambang penerbangan domestik ini adalah berciri
 stabil. Saya berterima kasih kepada Kementerian Pengangkutan. Syabas.
 Akan tetapi, apabila saya mohon atau semasa saya cuba tempah atau *book ticket*
@@ -785,8 +785,8 @@ masa Gawai nanti iaitu RM349, merupakan kenaikan RM240, iaitu dua kali- ganda. S
 saya, adakah MAVCOM akan kaji semula menurunkan lagi atau sekurang-kurangnya
 mengekalkan harga seperti tadi, khususnya pada masa Gawai/Dayak yang akan datang?
 Terima kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,11.,,1100,Tuan Yang di-Pertua,"Ya, silakan."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,11.,,1100,Tuan Loke Siew Fook,"Terima kasih kepada soalan daripada Yang Berhormat
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1100,1100,Tuan Yang di-Pertua,"Ya, silakan."
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1100,1100,Tuan Loke Siew Fook,"Terima kasih kepada soalan daripada Yang Berhormat
 Senator. Pertamanya, daripada segi harga tiket kapal terbang, dasar yang kita ada atau dasar
 sedia ada ialah bahawa kita berdasarkan kepada *dynamic pricing*, dengan izin, iaitu ia
 berkaitan ataupun harga yang dikenakan oleh syarikat penerbangan bergantung kepada
@@ -805,7 +805,7 @@ kepada mereka supaya meningkatkan kapasiti dan juga jumlah penerbangan.
 Justeru itu, untuk musim-musim perayaan, syarikat penerbangan seperti *AirAsia*
 menawarkan, pertamanya, penerbangan tambahan; dan keduanya, penerbangan tambahan
 dengan harga tetap."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,11.,,1110,Tuan Loke Siew Fook,"Biasanya, kalau pergi ke Sarawak, RM199 *one way* ataupun, dari Kuala Lumpur ke
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1110,1110,Tuan Loke Siew Fook,"Biasanya, kalau pergi ke Sarawak, RM199 *one way* ataupun, dari Kuala Lumpur ke
 Kuching atau pun Johor Bahru ke Kuching, RM199. Itu telah ditawarkan semasa Tahun Baru
 Cina dan juga semasa Hari Raya akan datang.
 Jadi, saya juga akan berusaha sekali lagi semasa Pesta Gawai nanti, kita akan
@@ -813,12 +813,12 @@ berurusan dan juga berhubung dengan syarikat penerbangan supaya mereka juga
 menawarkan harga tetap untuk beberapa *flights* pada waktu malam. Jadi, untuk makluman
 Yang Berhormat Senator, kita akan cuba merendahkan harga tiket kapal terbang ini. Terima
 kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,11.,,1110,Tuan Yang di-Pertua,Tahniah. Lagi satu?
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,11.,,1110,Datuk Mohd Hisamudin bin Yahaya,"Tuan Yang di-Pertua, berkaitan dengan tiket.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1110,1110,Tuan Yang di-Pertua,Tahniah. Lagi satu?
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1110,1110,Datuk Mohd Hisamudin bin Yahaya,"Tuan Yang di-Pertua, berkaitan dengan tiket.
 Apabila kita tempah tiket Tuan Yang di-Pertua, kita tempah dan kita dikenakan *airport tax.*
 Apabila kita *cancel flight,* kita tidak boleh berlepas, adakah kerajaan *consider* untuk bayar
 balik *airport tax* itu kepada rakyat- *return* balik?"
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,11.,,1110,Tuan Loke Siew Fook,"Pertamanya Yang Berhormat Senator, *airport tax* atau pun
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1110,1110,Tuan Loke Siew Fook,"Pertamanya Yang Berhormat Senator, *airport tax* atau pun
 lebih tepat dikenali sebagai *Passenger Services Charges* (PSC), ia bukannya cukai yang
 dikutip oleh kerajaan. Ia adalah satu *charge* atau pun satu caj perkhidmatan yang dikenakan
 oleh lapangan terbang, dan PSC itu dibayar kepada pihak MAHB dan hanya dikenakan untuk
@@ -830,10 +830,10 @@ PSC itu dikutip oleh syarikat penerbangan. Jadi, apabila ia di-*return* ataupun 
 kepada penumpang, sepatutnya daripada syarikat penerbangan. Jadi, saya rasa urusan untuk
 *refund* itu datang daripada syarikat penerbangan. Kalau pihak *passenger* tidak mendapat
 *refund* itu, dia boleh membuat aduan kepada pihak MAVCOM. Terima kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,11.,,1110,Datuk Paul Igai,Soalan...
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,11.,,1110,Puan Rita Sarimah anak Patrick Insol,Satu lagi soalan.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,11.,,1110,Tuan Yang di-Pertua,Baik.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,11.,,1110,Puan Rita Sarimah anak Patrick Insol,"Terima kasih, Tuan Yang di-Pertua. Soalan
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1110,1110,Datuk Paul Igai,Soalan...
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1110,1110,Puan Rita Sarimah anak Patrick Insol,Satu lagi soalan.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1110,1110,Tuan Yang di-Pertua,Baik.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1110,1110,Puan Rita Sarimah anak Patrick Insol,"Terima kasih, Tuan Yang di-Pertua. Soalan
 saya kepada Menteri Pengangkutan, pengalaman saya sendiri, dua bulan yang lepas saya
 ada *apps* AirAsia dan saya perlu menukarkan perjalanan, *instead of* pulang hari ini, hendak
 pulang esok tetapi menggunakan penerbangan yang sama, iaitu pukul 4.50 ke Bintulu. Akan
@@ -847,16 +847,16 @@ yang sama. Jadi, saya sudah dua kali mengalami masalah ini. Adakah mereka menaru
 hanguslah tiket saya untuk penerbangan hari ini. Saya akan menempah tiket yang lain dan
 siapa yang untung? *AirAsia* yang untung. Jadi, ini perkara yang serius. Sudahlah kita di Sabah
 dan Sarawak, harga tiket memang mahal."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,11.,,1110,Tuan Yang di-Pertua,"Soalan, Yang Berhormat. Soalkan."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,11.,,1110,Puan Rita Sarimah anak Patrick Insol,"Itulah soalan dia. Bagaimanakah mengatasi
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1110,1110,Tuan Yang di-Pertua,"Soalan, Yang Berhormat. Soalkan."
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1110,1110,Puan Rita Sarimah anak Patrick Insol,"Itulah soalan dia. Bagaimanakah mengatasi
 masalah ini supaya apa yang dipaparkan di dalam skrin *apps* ini memperlihatkan situasi yang
 sebenar? Kalau ada penerbangan, ia sepatutnya keluar di dalam *apps* ini. Terima kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,11.,,1110,Tuan Yang di-Pertua,"Sila, Yang Berhormat. Lebih sikit sebab sesekali datang kan.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1110,1110,Tuan Yang di-Pertua,"Sila, Yang Berhormat. Lebih sikit sebab sesekali datang kan.
 Jawablah lebih sedikit."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,11.,,1110,Tuan Loke Siew Fook,"Terima kasih,Tuan Yang di-Pertua. Saya akan cuba datang
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1110,1110,Tuan Loke Siew Fook,"Terima kasih,Tuan Yang di-Pertua. Saya akan cuba datang
 lebih kerap untuk menjawab persoalan."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,11.,,1110,Tuan Yang di-Pertua,"*Alhamdulillah,* bagus."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,11.,,1110,Tuan Loke Siew Fook,"Pertamanya, kita mengucapkan terima kasih. Memang,
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1110,1110,Tuan Yang di-Pertua,"*Alhamdulillah,* bagus."
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1110,1110,Tuan Loke Siew Fook,"Pertamanya, kita mengucapkan terima kasih. Memang,
 daripada segi operasi dan juga harga tiket kapal terbang, memang satu soalan yang sering
 ditanya. Bukan sahaja dalam Dewan Negara, malah di Dewan Rakyat juga. Saya maklum
 bahawa ada pelbagai masalah operasi yang membelenggu daripada segi sistem.
@@ -872,20 +872,20 @@ penerbangan dan kita ada hubungan yang baik dengan semua syarikat penerbangan. A
 sahaja masalah-masalah operasi yang dihadapi, kita akan cuba tambah baik dan memberikan
 maklum balas kepada mereka supaya bersama-sama kita meningkatkan mutu perkhidmatan
 syarikat-syarikat penerbangan. Terima kasih kepada Tuan Yang di-Pertua."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,11.,,1110,Tuan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Menteri Pengangkutan.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1110,1110,Tuan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Menteri Pengangkutan.
 Beralih kita kepada Datuk (Dr.) Ras Adiba binti Mohd Radzi."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,11.,,1110,Datuk (Dr.) Ras Adiba binti Mohd Radzi,...
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,11.,,1110,ANNOTATION,[Berpantun]
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,11.,,1110,Datuk (Dr.) Ras Adiba binti Mohd Radzi,"*Tinggi tinggi si matahari:
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1110,1110,Datuk (Dr.) Ras Adiba binti Mohd Radzi,...
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1110,1110,ANNOTATION,[Berpantun]
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1110,1110,Datuk (Dr.) Ras Adiba binti Mohd Radzi,"*Tinggi tinggi si matahari:
 Anak kerbau mati tertambat:
 Sayang, sudah lama saya ingin ketahui,
-Pohon jawab soalan nombor 12 Menteri Yang Berhormat.*"
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,12.,,1110,Datuk (Dr.) Ras Adiba Mohd Radzi,"minta Menteri Sains, Teknologi Dan Inovasi
+Pohon jawab soalan nombor 12 Menteri Yang Berhormat.*
+**12. Datuk (Dr.) Ras Adiba Mohd Radzi** minta Menteri Sains, Teknologi Dan Inovasi
 menyatakan, apa usaha kementerian bagi merancakkan penglibatan OKU dalam bidang
 STEM dan jumlah aktiviti pembudayaan sains yang telah dilakukan untuk komuniti OKU serta
 adakah kerajaan akan menambah baik fungsi Pusat Sains Negara sebagai Pusat STEM
 Negara yang rasmi setaraf antarabangsa."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,12.,,1110,"Timbalan Menteri Sains, Teknologi dan Inovasi [Datuk Arthur Joseph Kurup]","Selamat pagi dan salam sejahtera. Terima kasih, Tuan Yang di-Pertua. Terima kasih, Ahli
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1110,1110,"Timbalan Menteri Sains, Teknologi dan Inovasi [Datuk Arthur Joseph Kurup]","Selamat pagi dan salam sejahtera. Terima kasih, Tuan Yang di-Pertua. Terima kasih, Ahli
 Yang Berhormat Senator.
 Untuk makluman Ahli Yang Berhormat Senator, melalui Dasar Sains, Teknologi dan
 Inovasi Negara (DSTIN) 2021-2030 dan Rangka Kerja 10-10 MySTIE, MOSTI sentiasa
@@ -917,13 +917,13 @@ pesakit yang sedang menjalani pemulihan. keempat, PSN juga menganjurkan *Nationa
 Thinkering Challenge* yang dibuka kepada sekolah rendah dan menengah sejak tahun 2023
 dan pada tahun ini, ia memperkenalkan kategori baharu iaitu murid berkeperluan khas kepada
 pemegang kad OKU berumur 10 tahun hingga 17 tahun. Sekian dan terima kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,12.,,1110,Tuan Yang di-Pertua,Sila.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,12.,,1110,Datuk (Dr.) Ras Adiba binti Mohd Radzi,"Terima kasih dengan jawapan itu, Yang
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1110,1110,Tuan Yang di-Pertua,Sila.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1110,1110,Datuk (Dr.) Ras Adiba binti Mohd Radzi,"Terima kasih dengan jawapan itu, Yang
 Berhormat Timbalan Menteri. Saya ingin dapatkan penjelasan daripada pihak kementerian.
 Mengapakah jumlah pelajar aliran sains di sekolah semakin menurun? Apakah tindakan yang
 diambil oleh kementerian bagi memastikan pelajar-pelajar terutamanya pelajar OKU sentiasa
 meminati bidang STEM? Terima kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,12.,,1110,Datuk Arthur Joseph Kurup,"Terima kasih, Ahli Yang Berhormat Senator. Satu
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1110,1110,Datuk Arthur Joseph Kurup,"Terima kasih, Ahli Yang Berhormat Senator. Satu
 soalan yang baik. Sebenarnya, ini merupakan satu cabaran bagi kita di mana trend penurunan
 keminatan dalam bidang STEM ini agak merisaukan bagi kita untuk mencapai negara yang
 membangun. Terdapat satu kajian iaitu *Science Outlook 2017* yang disediakan oleh Akademi
@@ -935,7 +935,7 @@ aliran sains, berikutan daripada peluang pekerjaan yang bergaji tinggi, tetapi p
 itu tidak seberapa banyak sekiranya berbanding dengan industri yang lain. Ketiga, subjek ini
 dianggap terlalu susah dan juga pembelajarannya dianggap juga membosankan dan terlalu
 bersifat teori"
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,12.,,1120,Datuk Arthur Joseph Kurup,"Jadi sehubungan dengan itu, MOSTI dan juga agensi-agensi di bawah kementerian
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1120,1120,Datuk Arthur Joseph Kurup,"Jadi sehubungan dengan itu, MOSTI dan juga agensi-agensi di bawah kementerian
 kita telah melaksanakan pelbagai program dan inisiatif pembudayaan STI dan juga kesedaran
 STEM. Sebagai contoh, Minggu Sains Negara, *Malaysia Techlympics*, Kembara Saintis
 Muda, KIMIA Ke Desa, *National Science Challenge* dan juga *National Tinkering Challenge*
@@ -948,14 +948,14 @@ yang lebih terkini dan laporan ini dijangka siap pada tahun hadapan dan akan dib
 kepada *National Science Council* yang dipengerusikan oleh Yang Amat Berhormat Perdana
 Menteri dan di sana kita akan mengambil tindakan selanjutnya di peringkat dasar dan secara
 menyeluruh untuk memperbaiki keadaan trend penurunan. Sekian dan terima kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,12.,,1120,Tuan Manolan bin Mohamad,"Tuan Yang di-Pertua, soalan tambahan."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,12.,,1120,Tuan Yang di-Pertua,Yang Berhormat Datuk Bobbey Ah Fang Bin Suan.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,13.,,1120,Datuk Bobbey Ah Fang Bin Suan,"minta Menteri Dalam Negeri menyatakan, apakah
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1120,1120,Tuan Manolan bin Mohamad,"Tuan Yang di-Pertua, soalan tambahan."
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1120,1120,Tuan Yang di-Pertua,"Yang Berhormat Datuk Bobbey Ah Fang Bin Suan.
+**13. Datuk Bobbey Ah Fang Bin Suan** minta Menteri Dalam Negeri menyatakan, apakah
 inisiatif kerajaan dalam menangani isu kewarganegaraan kanak-kanak yang dilahirkan oleh
 pasangan bukan warganegara dan pasangan luar nikah yang dilihat secara tidak langsung
 akan mengundang pelbagai masalah sosial sekiranya gagal ditangani pada peringkat awal
 lagi."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,13.,,1120,Timbalan Menteri Dalam Negeri [Datuk Seri Dr. Shamsul Anuar bin Nasarah],"*Bismillahi Rahmani Rahim,* terima kasih Tuan Yang di-Pertua. Terima kasih Yang Berhormat.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1120,1120,Timbalan Menteri Dalam Negeri [Datuk Seri Dr. Shamsul Anuar bin Nasarah],"*Bismillahi Rahmani Rahim,* terima kasih Tuan Yang di-Pertua. Terima kasih Yang Berhormat.
 Untuk makluman Ahli Yang Berhormat, Kementerian Dalam Negeri melalui Jabatan
 Pendaftaran Negara sentiasa mengambil langkah proaktif dalam memastikan urusan
 pendaftaran dokumen pengenalan diri individu yang berkelayakan dapat dilaksanakan
@@ -993,9 +993,9 @@ Kementerian juga ingin menegaskan bahawa masyarakat harus mengambil berat
 tentang pendaftaran perkahwinan mereka dilaksanakan secara sah di sisi undang-undang
 sebelum anak mereka dilahirkan bagi memastikan isu kewarganegaraan tidak timbul di
 kemudian hari. Terima kasih, Tuan Yang di-Pertua."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,13.,,1120,Datuk Bobbey Ah Fang Bin Suan,Soalan tambahan.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,13.,,1120,Tuan Yang di-Pertua,Datuk Bobbey sila.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,13.,,1120,Datuk Bobbey Ah Fang Bin Suan,"Terima kasih, Tuan Yang di-Pertua dan terima
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1120,1120,Datuk Bobbey Ah Fang Bin Suan,Soalan tambahan.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1120,1120,Tuan Yang di-Pertua,Datuk Bobbey sila.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1120,1120,Datuk Bobbey Ah Fang Bin Suan,"Terima kasih, Tuan Yang di-Pertua dan terima
 kasih juga kepada Yang Berhormat Timbalan Menteri. Selain daripada penyelesaian yang
 dinyatakan sebentar tadi berkaitan dengan perundangan.
 Akan tetapi, apabila kerajaan mengetahui ramai penduduk asing di negara kita ini, sama ada
@@ -1004,7 +1004,7 @@ di sini.
 Adakah kerajaan berhasrat untuk berbincang dengan kementerian lain, mungkin
 Kementerian Luar Negeri bagi menubuhkan pejabat konsulat mereka supaya mereka boleh
 menyelesaikan perkara-perkara yang dihadapi ini? Sekian, terima kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,13.,,1120,Datuk Seri Dr. Shamsul Anuar bin Nasarah,"Tuan Yang di-Pertua, sebaik mungkin
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1120,1120,Datuk Seri Dr. Shamsul Anuar bin Nasarah,"Tuan Yang di-Pertua, sebaik mungkin
 kerajaan akan sentiasa mempermudah urusan-urusan rakyat berkaitan dengan soal
 pendaftaran kelahiran. Ini kerana ia memang isu yang sering disebut dan dibicarakan oleh
 rakyat.
@@ -1012,8 +1012,8 @@ Namun demikian, undang-undang dan peraturan yang ada tetap kita jaga dan perlu d
 Tentunya kita sentiasa mengadakan kerjasama dengan pelbagai pihak untuk urusan-urusan
 berkenaan, termasuklah dengan kedutaan dan sebagainya berkaitan dengan pendaftaran
 yang melibatkan warganegara lain. Terima kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,13.,,1120,Tuan Yang di-Pertua,Silakan.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,13.,,1120,Datin Hajah Ros Suryati binti Alang,"Tuan Yang di-Pertua, soalan tambahan saya.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1120,1120,Tuan Yang di-Pertua,Silakan.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1120,1120,Datin Hajah Ros Suryati binti Alang,"Tuan Yang di-Pertua, soalan tambahan saya.
 Saya memahami penjelasan Yang Berhormat Timbalan Menteri bahawa anak luar nikah tidak
 boleh memperoleh kewarganegaraan Malaysia secara automatik.
 Namun, saya ingin memohon penjelasan Yang Berhormat Timbalan Menteri,
@@ -1023,7 +1023,7 @@ turut membuktikan bahawa kanak-kanak tersebut merupakan anak kepada pasangan
 terbabit.
 Tidak bolehkah, kerajaan mempertimbangkan permohonan tersebut demi kebajikan
 kanak-kanak tersebut? Terima kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,13.,,1120,Datuk Seri Dr. Shamsul Anuar bin Nasarah,"Terima kasih, Yang Berhormat. Terima
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1120,1120,Datuk Seri Dr. Shamsul Anuar bin Nasarah,"Terima kasih, Yang Berhormat. Terima
 kasih Tuan Yang di-Pertua. Saya cuba jawab persoalan berkenaan. Sebagai mana yang
 telah saya jelaskan tadi, kewarganegaraan seorang individu ditentukan berdasarkan status
 perkahwinan ibu bapa yang sah berdaftar mengikut undang-undang negara dan taraf
@@ -1036,8 +1036,8 @@ Sehubungan dengan itu, kita ingin jelaskan bahawa semua perkahwinan di negara in
 hendaklah didaftarkan mengikut perundangan negara yang berkuat kuasa. Sebagai contoh,
 jika perkahwinan melibatkan pasangan bukan Islam, ia mesti didaftarkan di bawah Akta
 Membaharui Undang-undang (Perkahwinan dan. Perceraian) 1976"
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,13.,,1120,ANNOTATION,[Akta 164]
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,13.,,1120,Datuk Seri Dr. Shamsul Anuar bin Nasarah,"dan bagi
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1120,1120,ANNOTATION,[Akta 164]
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1120,1120,Datuk Seri Dr. Shamsul Anuar bin Nasarah,"dan bagi
 pasangan Islam pula tertakluk kepada enakmen pentadbiran agama bagi negeri masing-
 masing.
 Selain daripada itu, Yang Berhormat bertanya berkaitan dengan DNA tadi. Berhubung
@@ -1045,19 +1045,19 @@ dengan pengesahan DNA, suka saya hendak jelaskan di Dewan yang mulia ini bahawa
 walaupun keputusan DNA mengesahkan pertalian darah seseorang dengan ahli keluarga
 yang lain, khususnya antara kanak-kanak dengan ibu bapa ataupun dengan adik-beradik
 yang lain."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,13.,,1130,Datuk Seri Dr. Shamsul Anuar bin Nasarah,"Akan tetapi ia hanyalah sebagai dokumen sokongan dan tidak boleh kita jadikan
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1130,1130,Datuk Seri Dr. Shamsul Anuar bin Nasarah,"Akan tetapi ia hanyalah sebagai dokumen sokongan dan tidak boleh kita jadikan
 sebagai bukti konklusif dalam pemberian kewarganegaraan Malaysia. Ini kerana
 sebagaimana yang saya sebut dan jelaskan berulang kali tadi bahawa setiap permohonan
 mesti mengikut undang-undang yang lain khususnya berkaitan dengan pendaftaran
 perkahwinan. Terima kasih Tuan Yang di-Pertua."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,13.,,1130,Tuan Haji Hussin bin Ismail,Soalan tambahan.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,13.,,1130,Tuan Yang di-Pertua,"Baik. Yang Berhormat Dato’ Kesavadas a/l A Achyuthan Nair
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1130,1130,Tuan Haji Hussin bin Ismail,Soalan tambahan.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1130,1130,Tuan Yang di-Pertua,"Baik. Yang Berhormat Dato’ Kesavadas a/l A Achyuthan Nair
 dan juga Yang Berhormat Tuan Ir. Md Nasir bin Hashim. Ada dua soalan ini. Jadi, saya
 dahulukan nombor yang terdahulu.
-Yang Berhormat Yang Berhormat Tuan Ir. Md Nasir bin Hashim."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,14.,,1130,Tuan Ir. Md Nasir bin Hashim,"minta Menteri Perdagangan Dalam Negeri dan Kos
+Yang Berhormat Yang Berhormat Tuan Ir. Md Nasir bin Hashim.
+**14. Tuan Ir. Md Nasir bin Hashim** minta Menteri Perdagangan Dalam Negeri dan Kos
 Sara Hidup menyatakan, apa kaedah pengawalan harga bagi bahan-bahan makanan."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,14.,,1130,Timbalan Menteri Perdagangan Dalam Negeri dan Kos Sara Hidup [Puan Hajah Fuziah binti Salleh],"Terima kasih kepada Yang Berhormat Senator. Tuan Yang di-Pertua,
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1130,1130,Timbalan Menteri Perdagangan Dalam Negeri dan Kos Sara Hidup [Puan Hajah Fuziah binti Salleh],"Terima kasih kepada Yang Berhormat Senator. Tuan Yang di-Pertua,
 negara kita Malaysia mengamalkan ekonomi pasaran terbuka atau *free market economy,*
 dengan izin, di mana harga sesuatu barang dipengaruhi oleh penawaran dan permintaan.
 Selalunya pelarasan harga di pasaran akan berlaku secara tabii berdasarkan kepada faktor-
@@ -1095,15 +1095,15 @@ pengeluar, pengimport, pemborong, peruncit, persatuan pengguna dan lain-lain pih
 dilakukan secara berterusan dari semasa ke semasa. Jadi, itulah langkah-langkah diambil
 kerajaan untuk mengawal harga bagi bahan-bahan makanan. Terima kasih Tuan Yang di-
 Pertua."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,14.,,1130,Tuan Yang di-Pertua,"Baik, terima kasih. Silakan"
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,14.,,1130,Tuan Ir. Md Nasir bin Hashim,"Soalan tambahan saya, terima kasih Timbalan
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1130,1130,Tuan Yang di-Pertua,"Baik, terima kasih. Silakan"
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1130,1130,Tuan Ir. Md Nasir bin Hashim,"Soalan tambahan saya, terima kasih Timbalan
 Menteri. Cuma saya kurang puas hati ialah..."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,14.,,1130,Tuan Yang di-Pertua,Apakah yang kurang puas hati itu Yang Berhormat?
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,14.,,1130,Tuan Ir. Md Nasir bin Hashim,
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,14.,,1130,ANNOTATION,[Ketawa]
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,14.,,1130,Tuan Ir. Md Nasir bin Hashim,Dia begini.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,14.,,1130,Tuan Yang di-Pertua,Soalan-soalan nya.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,14.,,1130,Tuan Ir. Md Nasir bin Hashim,"Soalannya, bagaimana kementerian hendak
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1130,1130,Tuan Yang di-Pertua,Apakah yang kurang puas hati itu Yang Berhormat?
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1130,1130,Tuan Ir. Md Nasir bin Hashim,
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1130,1130,ANNOTATION,[Ketawa]
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1130,1130,Tuan Ir. Md Nasir bin Hashim,Dia begini.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1130,1130,Tuan Yang di-Pertua,Soalan-soalan nya.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1130,1130,Tuan Ir. Md Nasir bin Hashim,"Soalannya, bagaimana kementerian hendak
 mengawal harga barangan terutama menjelang hari perayaan di mana harganya katakan hari
 itu Menteri datang ke sini menjawab perbahasan dengan mengatakan bahawa- saya ini
 sebenarnya adalah *regular customer Jakel* dan saya tahu harga baju Melayu di *Jakel*. Ia tidak
@@ -1113,24 +1113,24 @@ macam itu. Akan tetapi sekarang ini sudah diturunkan kepada RM140. Jadi, macam m
 boleh kerajaan supaya- sebab harga biasa memang dalam lingkungan RM150 hingga RM160,
 macam itu saja yang baju Melayu. Jadi, macam mana pihak kerajaan hendak mengawal
 daripada- ini permainan peniaga bagi saya..."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,14.,,1130,Tuan Yang di-Pertua,Soalannya? Jangan buat tanggapan.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,14.,,1130,Tuan Ir. Md Nasir bin Hashim,Okey. Itu soalannya.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,14.,,1130,Tuan Yang di-Pertua,"Yang Berhormat Timbalan Menteri, boleh hendak jawab itu?"
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,14.,,1130,Puan Hajah Fuziah binti Salleh,"Terima kasih Tuan Yang di-Pertua. Soalan asal
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1130,1130,Tuan Yang di-Pertua,Soalannya? Jangan buat tanggapan.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1130,1130,Tuan Ir. Md Nasir bin Hashim,Okey. Itu soalannya.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1130,1130,Tuan Yang di-Pertua,"Yang Berhormat Timbalan Menteri, boleh hendak jawab itu?"
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1130,1130,Puan Hajah Fuziah binti Salleh,"Terima kasih Tuan Yang di-Pertua. Soalan asal
 Yang Berhormat Senator ialah berkenaan dengan bahan-bahan makanan. Jadi..."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,14.,,1130,Tuan Yang di-Pertua,Sekarang sudah pindah ke baju ya.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,14.,,1130,Puan Hajah Fuziah binti Salleh,"Sekarang sudah pindah. Soalan itu seharusnya
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1130,1130,Tuan Yang di-Pertua,Sekarang sudah pindah ke baju ya.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1130,1130,Puan Hajah Fuziah binti Salleh,"Sekarang sudah pindah. Soalan itu seharusnya
 ditujukan kepada Yang Berhormat Menteri sebab itu ialah kenyataan Yang Berhormat
 Menteri. Jadi, berkenaan dengan barang-barang makanan, memang kita ada *dashboard* Tuan
 Yang di-Pertua dan kita kawal setiap bulan turun naik harga itu. Kita ada data sepanjang tahun
 dan bertahun-tahun Tuan Yang di-Pertua. Jadi, kita tahu bila ada berlaku pencatutan. Terima
 kasih Tuan Yang di-Pertua."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,14.,,1130,Tuan Yang di-Pertua,"Terima kasih. tentang baju itu tadi, elok Yang Berhormat
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1130,1130,Tuan Yang di-Pertua,"Terima kasih. tentang baju itu tadi, elok Yang Berhormat
 pastikan semula sama ada angka yang disebut itu ada dalam *Hansard*. Mungkin dia sebut
 RM169. Ini harus diperhatikan terlebih dahulu. Ada satu lagi soalan?"
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,14.,,1130,Tuan Manolan bin Mohamad,Soalan tambahan Tuan Yang di-Pertua.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,14.,,1130,Tuan Yang di-Pertua,Silakan.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,14.,,1130,Tuan Manolan bin Mohamad,"Terima kasih Tuan Yang di-Pertua. Soalan saya
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1130,1130,Tuan Manolan bin Mohamad,Soalan tambahan Tuan Yang di-Pertua.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1130,1130,Tuan Yang di-Pertua,Silakan.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1130,1130,Tuan Manolan bin Mohamad,"Terima kasih Tuan Yang di-Pertua. Soalan saya
 kepada Timbalan Menteri berkenaan dengan pengawalan harga makanan ini. Memang
 kerajaan telah mengambil pelbagai langkah tetapi apakah saranan atau peranan kerajaan
 untuk menggalakkan pengguna yang bijak. Saya rasa ini ialah langkah yang terbaik
@@ -1139,8 +1139,8 @@ harga yang sesuai dan harga barangan alternatif kepada yang mahal tadi.
 Jadi, apakah peranan kementerian untuk memberikan kesedaran kepada pengguna
 supaya mereka dapat mengawal harga barangan ini di samping kerajaan bertindak ke atas
 syarikat-syarikat pengeluar ini?"
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,14.,,1130,Tuan Yang di-Pertua,"Ya. Langkah alternatif. Ya, silakan."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,14.,,1130,Puan Hajah Fuziah binti Salleh,"Terima kasih Tuan Yang di-Pertua. Salah satu
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1130,1130,Tuan Yang di-Pertua,"Ya. Langkah alternatif. Ya, silakan."
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1130,1130,Puan Hajah Fuziah binti Salleh,"Terima kasih Tuan Yang di-Pertua. Salah satu
 daripada bahagian yang penting dalam kementerian Tuan Yang di-Pertua ialah
 pendayaupayaan pengguna. Jadi, advokasi pengguna ini berterusan dan kementerian
 sentiasa libat urus dengan NGO-NGO pengguna. Libat urus juga dengan- di Universiti juga
@@ -1156,19 +1156,19 @@ Jadi inilah yang berlaku dalam *free market economy* Tuan Yang di-Pertua. Itulah
 hasrat kita untuk sentiasa mendidik daripada kanak-kanak hinggalah dewasa, libat urus
 dengan NGO, mengadakan aplikasi *PriceCatcher* yang boleh dimuat turun dalam telefon dan
 antara kursus-kursus, forum dan sebagainya Tuan Yang di-Pertua. Terima kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,14.,,1130,Tuan Yang di-Pertua,"Baik, terima kasih. Ya lah, dahulu nama kementerian ada
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1130,1130,Tuan Yang di-Pertua,"Baik, terima kasih. Ya lah, dahulu nama kementerian ada
 hujungnya, ‘konsumerisme’. Sekarang sudah tidak ada- dengan ‘kos sara hidup’ sahaja.
 Walau bagaimanapun, kita terus kepada soalan Yang Berhormat Dato’ Kesavadas a/l A
-Achyuthan Nair."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,15.,,1130,Dato’ Kesavadas a/l A.Achyuthan Nair,"minta Menteri Perdagangan Antarabangsa
+Achyuthan Nair.
+**15. Dato’ Kesavadas a/l A.Achyuthan** Nair minta Menteri Perdagangan Antarabangsa
 dan Industri menyatakan, apa pelan persediaan yang sedang dirangka untuk menambah baik
 imbangan bayaran- *balance of payment,* pada tahun 2023 dan apakah strategi pemulihan
 industri yang akan dilaksanakan bagi memacu sektor-sektor perkilangan dan pembuatan
 tempatan ke arah meningkatkan aktiviti eksport mereka secara progresif."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,15.,,1130,Timbalan Menteri Perdagangan Antarabangsa dan Industri [Tuan Liew Chin Tong],"Terima kasih Tuan Yang di-Pertua, terima kasih Yang Berhormat Dato’ Kesavadas a/l
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1130,1130,Timbalan Menteri Perdagangan Antarabangsa dan Industri [Tuan Liew Chin Tong],"Terima kasih Tuan Yang di-Pertua, terima kasih Yang Berhormat Dato’ Kesavadas a/l
 A Achyuthan Nair. Imbangan bayaran atau *balance of payment* sebenarnya di bawah
 tanggungjawab dan kawal selia Kementerian Kewangan"
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,15.,,1140,Timbalan Menteri Perdagangan Antarabangsa dan Industri [Tuan Liew Chin Tong],"Manakala Kementerian MITI bertanggungjawab ke atas imbangan perdagangan
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1140,1140,Timbalan Menteri Perdagangan Antarabangsa dan Industri [Tuan Liew Chin Tong],"Manakala Kementerian MITI bertanggungjawab ke atas imbangan perdagangan
 ataupun *balance of trade.* Berdasarkan angka-angka berkaitan perdagangan dan pelaburan
 diluluskan yang menunjukkan prestasi yang memberangsangkan pada tahun 2022,
 Kementerian Perdagangan Antarabangsa dan Industri (MITI) yakin dengan prospek ekonomi
@@ -1184,36 +1184,36 @@ Februari 2023 menunjukkan pertumbuhan meningkat sebanyak 11 peratus kepada RM204
 bilion berbanding Februari 2022. Manakala eksport meningkat sebanyak 9.8 peratus kepada
 RM112 bilion dan import meningkat sebanyak 12.4 peratus kepada RM92 bilion bagi tempoh
 yang sama. Terima kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,15.,,1140,Tuan Yang di-Pertua,Silakan.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,15.,,1140,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Tuan Yang di-Pertua. Terima
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1140,1140,Tuan Yang di-Pertua,Silakan.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1140,1140,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Tuan Yang di-Pertua. Terima
 kasih Yang Berhormat Timbalan Menteri. *Now,* soalan tambahan saya, apakah insentif yang
 diberikan kepada sektor perkilangan dan pembuatan tempatan untuk memperluaskan aktiviti
 eksport mereka? Berapakah banyak syarikat telah memohon berbanding yang telah
 diluluskan? Saya khuatir insentif ini tidak berkesan dan sukar untuk diakses oleh syarikat-
 syarikat tempatan. Sekian, terima kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,15.,,1140,Tuan Liew Chin Tong,"Saya akan memberikan maklumat terperinci selepas ini tetapi
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1140,1140,Tuan Liew Chin Tong,"Saya akan memberikan maklumat terperinci selepas ini tetapi
 secara amnya, insentif diberikan kepada syarikat-syarikat yang membuat pelaburan tetapi
 juga MATRADE bertanggungjawab untuk meluaskan keupayaan syarikat-syarikat tempatan
 untuk mengeksport. Itu secara amnya tetapi jawapan secara bertulis akan diberi untuk
 maklumat terperinci. Terima kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,15.,,1140,Tuan Yang di-Pertua,"Baik, itu merupakan soalan dan jawapan yang terakhir.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1140,1140,Tuan Yang di-Pertua,"Baik, itu merupakan soalan dan jawapan yang terakhir.
 Diucapkan terima kasih kepada Yang Berhormat Timbalan Menteri. Setiausaha."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,15.,,1140,ANNOTATION,[Masa Pertanyaan-pertanyaan bagi Jawab Lisan tamat]
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,,,■1140,1140,ANNOTATION,[Masa Pertanyaan-pertanyaan bagi Jawab Lisan tamat]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1140,,"*Aturan Urusan Mesyuarat* dibacakan bagi menyambung semula pertimbangan yang
+Bacaan Kali Yang Kedua",,■1140,1140,,"*Aturan Urusan Mesyuarat* dibacakan bagi menyambung semula pertimbangan yang
 ditangguhkan atas masalah, “Bahawa rang undang-undang ini dibacakan kali yang kedua
 sekarang.”"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1140,ANNOTATION,[30 Mac 2023]
+Bacaan Kali Yang Kedua",,■1140,1140,ANNOTATION,[30 Mac 2023]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1140,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, hari ini merupakan hari ketiga dan
+Bacaan Kali Yang Kedua",,■1140,1140,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, hari ini merupakan hari ketiga dan
 hari terakhir perbahasan bagi Rang Undang-undang Perbekalan Tahun 2023. Di hadapan
 saya ada seramai 20 orang Ahli Senator yang hendak berbahas.
 Oleh itu, saya membuat ketetapan bahawa masa perbahasan yang wajar
 dipertimbangkan dan diberi selama 15 minit seorang. Lantas saya mempersilakan Yang
 Berhormat Senator Puan Rita Sarimah anak Patrick Insol."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1144,Puan Rita Sarimah anak Patrick Insol,"Terima kasih Tuan Yang di-Pertua. Selamat
+Bacaan Kali Yang Kedua",,11.44 pg.,1144,Puan Rita Sarimah anak Patrick Insol,"Terima kasih Tuan Yang di-Pertua. Selamat
 pagi, salam sejahtera dan salam Malaysia Madani. Terima kasih kerana memberi saya
 peluang untuk membahaskan Belanjawan Tahun 2023.
 Tuan Yang di-Pertua, tiada sumber khususnya sumber kewangan yang tidak terhad
@@ -1236,9 +1236,9 @@ yang lepas sektor perkhidmatan diunjur menyumbang lebih dari separuh Keluaran Da
 Negara Kasar menjadikan sektor ini penyumbang utama kepada pertumbuhan ekonomi,
 produktiviti dan pendapatan negara."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1144,ANNOTATION,[Timbalan Yang di-Pertua mempengerusikan Mesyuarat]
+Bacaan Kali Yang Kedua",,11.44 pg.,1144,ANNOTATION,[Timbalan Yang di-Pertua mempengerusikan Mesyuarat]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1144,Puan Rita Sarimah anak Patrick Insol,"Saya akan memberikan tumpuan kepada sektor pelancongan kerana sektor
+Bacaan Kali Yang Kedua",,11.44 pg.,1144,Puan Rita Sarimah anak Patrick Insol,"Saya akan memberikan tumpuan kepada sektor pelancongan kerana sektor
 pelancongan ini merupakan penyumbang utama kepada Keluaran Dalam Negara Kasar.
 Sejak tahun 2008 kita telah mencatatkan kedatangan pelancong asing yang amat
 memberangsangkan dalam kira-kira RM20 juta setiap tahun dan ia terus menaik. Statistik
@@ -1271,7 +1271,7 @@ Thailand ia mencatatkan kedatangan pelancong asing sebanyak 11.1 juta, Singapura
 sebanyak 4.6 juta, Indonesia sebanyak 4.58 juta malahan Vietnam mengatasi kita dengan 3.6
 juta orang pelancong."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1150,Puan Rita Sarimah anak Patrick Insol,"Jadi, kedudukan ini amat membimbangkan. Syukur, kita ada pelancongan domestik
+Bacaan Kali Yang Kedua",,■1150,1150,Puan Rita Sarimah anak Patrick Insol,"Jadi, kedudukan ini amat membimbangkan. Syukur, kita ada pelancongan domestik
 yang dapat mengimbangi kehilangan kita dalam sektor pelancongan asing. Jadi, mengapakah
 Malaysia tidak dapat menarik lebih ramai lagi pelancong pada tahun lepas?
 Memang tidak realistik untuk mengharapkan kita dapat kedatangan pelancong seperti
@@ -1355,14 +1355,14 @@ kualiti hotel dan sebagainya, ini merupakan perkara yang perlu diambil tumpuan o
 *Tourism Malaysia*.
 Satu lagi. Boleh bagi saya masa sedikit lagi?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1150,Timbalan Yang di-Pertua,Silakan.
+Bacaan Kali Yang Kedua",,■1150,1150,Timbalan Yang di-Pertua,Silakan.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1150,Puan Rita Sarimah anak Patrick Insol,"Pelancongan domestik makin bertambah.
+Bacaan Kali Yang Kedua",,■1150,1150,Puan Rita Sarimah anak Patrick Insol,"Pelancongan domestik makin bertambah.
 Pada tahun yang sebelum ini, tahun 2020, sebelum COVID-19 melanda, kita mencatatkan
 103 juta ketibaan pelancongan domestik. Jadi, ini satu perkara yang boleh dibangunkan oleh
 kementerian, oleh kerajaan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1200,Puan Rita Sarimah anak Patrick Insol,"Misalnya di Sarawak, kita banyak tempat yang menarik yang boleh dibangunkan untuk
+Bacaan Kali Yang Kedua",,■1200,1200,Puan Rita Sarimah anak Patrick Insol,"Misalnya di Sarawak, kita banyak tempat yang menarik yang boleh dibangunkan untuk
 menarik pelancong-pelancong domestik bahkan untuk pelancong-pelancong asing. Kalau kita
 lihat di negara-negara Amerika Syarikat, di China, mereka menjadikan misalnya empangan
 kawasan empangan sebagai *tourist attraction The Three Gorges Dam* dan *Hoover Dam.* Jadi,
@@ -1399,11 +1399,11 @@ kita bukan sahaja dapat mencecah 20 juta tetapi lebih daripada itu. Dengan itu, 
 menyokong Usul untuk meluluskan bajet Belanjawan 2023. Terima kasih Tuan Yang di-
 Pertua."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1200,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator Puan Rita
+Bacaan Kali Yang Kedua",,■1200,1200,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator Puan Rita
 Sarimah anak Patrick Insol atas perbahasan yang telah diberikan. Seterusnya saya
 menjemput pembahas yang kedua Yang Berhormat Senator Tuan Isaiah a/l D Jacob."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1204,Tuan Isaiah a/l D Jacob,"Terima kasih Tuan Yang di-Pertua. Salam Malaysia Madani
+Bacaan Kali Yang Kedua",,12.04 tgh.,1204,Tuan Isaiah a/l D Jacob,"Terima kasih Tuan Yang di-Pertua. Salam Malaysia Madani
 Tuan Yang di-Pertua dan semua Ahli Yang Berhormat di Dewan yang mulia ini. Saya diberi
 ruang untuk mengucap berbahas Rang Undang-undang Belanjawan 2023. Saya ambil topik
 orang istimewa, masyarakat istimewa yang mereka melalui keadaan di Malaysia.
@@ -1446,7 +1446,7 @@ Ketiga Tuan Yang di-Pertua, saya dapat jemputan rasmi untuk melawat PDK Suria.
 Salah sebuah pusat yang memberi latihan kepada anak-anak istimewa ini. Apa yang sedih
 sekali iaitu mereka ada tiga orang pekerja atau staf kakitangan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1210,Tuan Isaiah a/l D Jacob,"Sudah tiga bulan mereka tidak dapat gaji, tiga bulan tidak dapat gaji, Tuan Yang di-
+Bacaan Kali Yang Kedua",,■1210,1210,Tuan Isaiah a/l D Jacob,"Sudah tiga bulan mereka tidak dapat gaji, tiga bulan tidak dapat gaji, Tuan Yang di-
 Pertua, yang memberi khidmat untuk anak-anak istimewa. Menjelang hari raya tidak lama lagi,
 tinggal lagi sepuluh hari, gaji belum keluar tiga hari. Saya mohon Yang Berhormat Perdana
 Menteri ambil serius perkara-perkara seperti ini. Jikalau kita tidak ambil tindakan atau tindakan
@@ -1475,9 +1475,9 @@ berapa kali kita sudah semak Akta OKU? Di Dewan yang mulia ini saya mohon kepada
 Yang Berhormat-Yang Berhormat sokong kuat-kuat untuk Jabatan Hak Ehwal OKU di bawah
 Jabatan Perdana Menteri. Itu penting..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1210,ANNOTATION,[Tepuk]
+Bacaan Kali Yang Kedua",,■1210,1210,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1210,Tuan Isaiah a/l D Jacob,"Apabila ditubuhkan, apabila sudah ada,
+Bacaan Kali Yang Kedua",,■1210,1210,Tuan Isaiah a/l D Jacob,"Apabila ditubuhkan, apabila sudah ada,
 jabatan ini akan mengambil alih daripada JKM. Mereka akan memantau dan memastikan
 setiap lima tahun akan diperiksa ataupun *revised,* dengan izin, *revised-*kan balik akta pada
 setiap lima tahun. Tidak ada penganiayaan berlaku kepada OKU ataupun golongan istimewa.
@@ -1504,42 +1504,42 @@ Izinkan Tuan Yang di-Pertua saya ingin menutupkan di sini dengan satu perkara. S
 mohon kepada semua Yang Berhormat-Yang Berhormat termasuk Tuan Yang di-Pertua,
 berdiri selama satu minit. Izinkan Tuan Yang di-Pertua."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1210,Timbalan Yang di-Pertua,Silakan
+Bacaan Kali Yang Kedua",,■1210,1210,Timbalan Yang di-Pertua,Silakan
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1210,ANNOTATION,[Semua Ahli Yang Berhormat bangun]
+Bacaan Kali Yang Kedua",,■1210,1210,ANNOTATION,[Semua Ahli Yang Berhormat bangun]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1210,ANNOTATION,[Berdiri selama satu minit]
+Bacaan Kali Yang Kedua",,■1210,1210,ANNOTATION,[Berdiri selama satu minit]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1210,Tuan Isaiah a/l D Jacob,"Saya juga mohon berdiri di atas satu kaki. Berdiri dengan
+Bacaan Kali Yang Kedua",,■1210,1210,Tuan Isaiah a/l D Jacob,"Saya juga mohon berdiri di atas satu kaki. Berdiri dengan
 satu kaki."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1210,ANNOTATION,[Semua Ahli Yang Berhormat berdiri atas satu kaki]
+Bacaan Kali Yang Kedua",,■1210,1210,ANNOTATION,[Semua Ahli Yang Berhormat berdiri atas satu kaki]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1210,ANNOTATION,[Berdiri selama satu minit]
+Bacaan Kali Yang Kedua",,■1210,1210,ANNOTATION,[Berdiri selama satu minit]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1210,Tuan Isaiah a/l D Jacob,"Terima kasih saya berdiri empat belas minit, lima belas saat
+Bacaan Kali Yang Kedua",,■1210,1210,Tuan Isaiah a/l D Jacob,"Terima kasih saya berdiri empat belas minit, lima belas saat
 dengan satu kaki. Kami Orang Kuat Upaya..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1210,ANNOTATION,[Tepuk]
+Bacaan Kali Yang Kedua",,■1210,1210,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1210,Tuan Isaiah a/l D Jacob,"Yang Berhormat-Yang Berhormat yang
+Bacaan Kali Yang Kedua",,■1210,1210,Tuan Isaiah a/l D Jacob,"Yang Berhormat-Yang Berhormat yang
 berdiri adalah Orang Kurang Upaya. Dengan ini, saya sepenuhnya menyokong Belanjawan
 Rang Undang-undang 2023. Sekian, terima kasih..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1210,ANNOTATION,[Tepuk]
+Bacaan Kali Yang Kedua",,■1210,1210,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1210,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Tuan Isaiah atas
+Bacaan Kali Yang Kedua",,■1210,1210,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Tuan Isaiah atas
 hujah yang telah diberikan. Saya amat terasa dalam soal ini dan apa yang dibahaskan akan
 dapat didengari oleh pihak kementerian yang bertanggungjawab.
 Seterusnya saya menjemput Yang Berhormat Dato Dr. Nuing Jeluing dipersilakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1219,Dato Dr. Nuing Jeluing,"Terima kasih Tuan Yang di-Pertua, atas peluang
+Bacaan Kali Yang Kedua",,12.19 tgh.,1219,Dato Dr. Nuing Jeluing,"Terima kasih Tuan Yang di-Pertua, atas peluang
 membahaskan Belanjawan 2023. Seperti mana yang telah diumumkan bajet untuk tahun ini
 2023 adalah berjumlah RM388.1 bilion dan daripada jumlah itu RM289.1 bilion untuk
 mengurus dan RM99 bilion untuk pembangunan termasuk RM2 bilion untuk simpanan luar
 jangka. Peruntukan untuk pembangunan tahun ini adalah lebih tinggi daripada tahun lepas."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1220,Dato Dr. Nuing Jeluing,"Akan tetapi untuk peruntukan pembangunan, ia hanya 25 peratus daripada
+Bacaan Kali Yang Kedua",,■1220,1220,Dato Dr. Nuing Jeluing,"Akan tetapi untuk peruntukan pembangunan, ia hanya 25 peratus daripada
 keseluruhan bajet. Jika dibandingkan dengan bajet yang progresif, peratusan ini adalah
 rendah. Sebenarnya bajet pembangunan RM97 bilion dan jumlah ini lebih tinggi daripada
 peruntukan tahun lepas 2022 yang berjumlah RM71.6 bilion.
@@ -1603,7 +1603,7 @@ Sungai Arip, Sungai Tau dan Sungai Bawang dalam kawasan Parlimen Selangau. Ia
 melibatkan kurang lebih 1,000 orang penduduk, dan tanah, yang akan diusahakan merupakan
 tanah asal mereka (NCR)"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1230,Dato Dr. Nuing Jeluing,"Namun, permohonan itu diketepikan oleh kerajaan waktu itu pada tahun 2018 atas
+Bacaan Kali Yang Kedua",,■1230,1230,Dato Dr. Nuing Jeluing,"Namun, permohonan itu diketepikan oleh kerajaan waktu itu pada tahun 2018 atas
 sebab keutamaan tidak diberi kepada penanam kelapa sawit yang baharu, tetapi hanya untuk
 tanaman semula sahaja.
 Saya mohon kerajaan mempertimbangkan permohonan ini demi kepentingan rakyat
@@ -1631,12 +1631,12 @@ bajet tahunan atau *one third of total development budget*. Jumlah dipohon ini m
 juga Sarawak adalah satu daripada tiga buah wilayah iaitu bersama Semenanjung dan Sabah
 yang membentuk Malaysia. Dengan itu saya mohon menyokong. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1230,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator Dato Dr.
+Bacaan Kali Yang Kedua",,■1230,1230,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator Dato Dr.
 Nuing Jeluing atas perbahasan yang telah diberikan.
 Seterusnya saya menjemput pembahas yang keempat Yang Berhormat Datuk Lim
 Pay Hen, silakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1234,Datuk Lim Pay Hen,"Terima kasih Tuan Yang di-Pertua. Salam hormat, salam
+Bacaan Kali Yang Kedua",,12.34 tgh.,1234,Datuk Lim Pay Hen,"Terima kasih Tuan Yang di-Pertua. Salam hormat, salam
 sejahtera dan salam Malaysia Madani. Terima kasih Tuan Yang di-Pertua kerana memberi
 peluang kepada saya untuk menyertai perbahasan Bajet 2023. Tahniah saya ucapkan kepada
 Kerajaan Perpaduan.
@@ -1683,7 +1683,7 @@ pasaran industri sawit.
 Tuan Yang di-Pertua, jadi saya fikir bahawa kerajaan perlu segera dan tangkas
 bertindak bagi menyelamatkan industri utama negara ini."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1240,Datuk Lim Pay Hen,"Saya menyeru dan memohon kerajaan hari ini untuk mempercepatkan Rancangan
+Bacaan Kali Yang Kedua",,■1240,1240,Datuk Lim Pay Hen,"Saya menyeru dan memohon kerajaan hari ini untuk mempercepatkan Rancangan
 Malaysia Kedua Belas yang telah dibentangkan sebelum ini berkaitan rancangan untuk
 menaik taraf penggunaan biodiesel B10 kepada B15 dengan segera. Solusi ini merupakan
 serampang dua- mata bagi menyelamatkan industri sawit negara. Rancangan ini telah
@@ -1723,11 +1723,11 @@ industri tempatan tidak akan mati.
 Tuan Yang di-Pertua, saya juga ingin mengajukan sedikit soalan berkaitan subsidi dan
 insentif harga padi..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1240,Datuk Paul Igai,Mencelah sedikit.
+Bacaan Kali Yang Kedua",,■1240,1240,Datuk Paul Igai,Mencelah sedikit.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1240,Datuk Lim Pay Hen,Okey.
+Bacaan Kali Yang Kedua",,■1240,1240,Datuk Lim Pay Hen,Okey.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1240,Datuk Paul Igai,"Terima kasih Tuan Yang di-Pertua. Kita akan sampai *The Gawai
+Bacaan Kali Yang Kedua",,■1240,1240,Datuk Paul Igai,"Terima kasih Tuan Yang di-Pertua. Kita akan sampai *The Gawai
 Dayak* di Sarawak. Kita fahamlah beribu-ribu biji telur akan ditempah daripada Dayak di
 Sarawak. Bolehkah saya masukkan pertanyaan atau cadangkan kepada KPDNHEP dan
 kerajaan untuk memantau dan juga membekalkan, gerenti membekalkan telur yang tidak
@@ -1735,7 +1735,7 @@ melampau tinggi. Ini kerana sekarang di pasaran kita Kuala Lumpur, ada RM8 satu 
 yang RM10 tetapi di Kapit, di Kuching ada juga, ada lebih RM20 satu *tray*. Bolehkah masuk
 dalam ucapan Yang Berhormat?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1240,Datuk Lim Pay Hen,"Saya rasa ini satu soalan yang telah hangat dibahaskan di
+Bacaan Kali Yang Kedua",,■1240,1240,Datuk Lim Pay Hen,"Saya rasa ini satu soalan yang telah hangat dibahaskan di
 Dewan Rakyat dan juga di Dewan Negara. Daripada segi pembekalan itu saya rasa kerajaan
 perlu ambil perhatian khususnya Kementerian Pertanian dan Keterjaminan Makanan dan juga
 Kementerian Perdagangan Dalam Negeri dan Hal Ehwal Pengguna kena memainkan
@@ -1779,19 +1779,19 @@ Rakyat, Dewan Negara sekurang-kurangnya dua penggal Parlimen bersidang. Ini
 terutamanya apabila kejadian enam orang pesakit terkorban dalam insiden kebakaran yang
 berlaku di Unit Rawatan Rapi (ICU) dengan izin, Hospital Sultanah Aminah, Johor."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1250,Datuk Lim Pay Hen,"Untuk pengetahuan Tuan Yang di-Pertua, Hospital Sultanah Aminah kini telah
+Bacaan Kali Yang Kedua",,■1250,1250,Datuk Lim Pay Hen,"Untuk pengetahuan Tuan Yang di-Pertua, Hospital Sultanah Aminah kini telah
 memasuki umur 82 tahun, sejak dibina pada tahun 1941. Jadi, saya sangat berharap agar
 hospital ini dinaiktarafkan dan diberi bangunan baru yang lebih kondusif bagi keselesaan dan
 kesejahteraan rakyat negeri Johor.
 Tuan Yang di-Pertua, dengan kata-kata ini, saya mohon menyokong Rang Undang-
 undang Belanjawan 2023. Sekian, terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1250,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Datuk Lim Pay Hen
+Bacaan Kali Yang Kedua",,■1250,1250,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Datuk Lim Pay Hen
 atas hujah yang telah diberikan.
 Seterusnya, saya menjemput pembahas kelima, Yang Berhormat Puan Noorita binti
 Sual. Dipersilakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1251,Puan Noorita binti Sual,"*Ka’ansayan* dan Salam Malaysia Madani. Yang Dihormati
+Bacaan Kali Yang Kedua",,12.51 tgh.,1251,Puan Noorita binti Sual,"*Ka’ansayan* dan Salam Malaysia Madani. Yang Dihormati
 Tuan Yang di-Pertua, barisan Ahli Yang Berhormat Senator dan pegawai-pegawai
 persidangan yang dihormati sekalian.
 Tuan Yang di-Pertua, terima kasih saya ucapkan kerana telah memberikan saya ruang
@@ -1898,7 +1898,7 @@ ada formula yang lebih adil untuk dana pembangunan bagi negeri Sabah, kerana ini
 penting untuk membantu mempercepatkan pembangunan infra di Sabah, sekurang-
 kurangnya setaraf dengan negeri-negeri di Semenanjung."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1300,Puan Noorita binti Sual,"Tuan Yang di-Pertua, seterusnya saya ingin menyentuh mengenai pengurusan sisa
+Bacaan Kali Yang Kedua",,■1300,1300,Puan Noorita binti Sual,"Tuan Yang di-Pertua, seterusnya saya ingin menyentuh mengenai pengurusan sisa
 pepejal yang semakin jelas menggugat bukan sahaja daripada segi kesihatan dan
 memudaratkan alam sekitar kita. Malahan, turut menjejaskan sumber ekonomi kita.
 Negeri Sabah tidak dapat dinafikan merupakan sebuah negeri yang dianugerahkan
@@ -1918,9 +1918,9 @@ tetapi untuk menarik perhatian kementerian-kementerian yang berkenaan agar boleh
 membantu untuk meningkatkan sumber pendapatan negeri dan meningkatkan lagi potensi
 Sabah sebagai sebuah destinasi pelancongan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1300,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
+Bacaan Kali Yang Kedua",,■1300,1300,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1300,Puan Noorita binti Sual,"Saya ingin memohon agar Kementerian Pembangunan Kerajaan Tempatan untuk
+Bacaan Kali Yang Kedua",,■1300,1300,Puan Noorita binti Sual,"Saya ingin memohon agar Kementerian Pembangunan Kerajaan Tempatan untuk
 turut sama membantu KPKT negeri Sabah dalam usaha menguruskan sisa pepejal dan
 pembersihan awam khasnya bagi kawasan-kawasan pinggir bandar dan luar bandar di Sabah
 yang kian membimbangkan sekarang ini.
@@ -1999,11 +1999,11 @@ Satu isu lagi, yang saya ingin sentuh Tuan Yang di-Pertua, ialah berkenaan denga
 kebajikan pelajar-pelajar atau bersekolah di luar bandar. Saya amat memahami tentang
 masalah..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1300,Tuan Yang di-Pertua,"Yang Berhormat harus berekonomi sedikit dengan bahasa
+Bacaan Kali Yang Kedua",,■1300,1300,Tuan Yang di-Pertua,"Yang Berhormat harus berekonomi sedikit dengan bahasa
 sebab masa sudah sampai. Diberi sedikit lagi tambahan beberapa ayat yang penting. Itu saya
 selalu menganjurkan berucap daripada membaca. Silakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1300,Puan Noorita binti Sual,"Okey, Tuan Yang di-Pertua, saya teruskan. Saya amat
+Bacaan Kali Yang Kedua",,■1300,1300,Puan Noorita binti Sual,"Okey, Tuan Yang di-Pertua, saya teruskan. Saya amat
 mengalu-alukan usaha Perdana Menteri kita dalam memberikan keutamaan yang tinggi
 kepada sektor pendidikan dengan peruntukan sebanyak RM55.2 bilion bagi tahun ini.
 Persoalannya, berapa daripada jumlah peruntukan bagi meningkatkan peralatan dan sumber
@@ -2027,10 +2027,10 @@ kemakmuran negara. Saya juga berharap kerjasama antara semua pihak dapat ditingk
 untuk memastikan bahawa belanjawan ini dilaksanakan dengan lancar dan berkesan.
 Dengan ini saya mohon menyokong usul Belanjawan 2023. Sekian, dan terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1300,Tuan Yang di-Pertua,"Kembali dan terima kasih kepada Yang Berhormat Senator
+Bacaan Kali Yang Kedua",,■1300,1300,Tuan Yang di-Pertua,"Kembali dan terima kasih kepada Yang Berhormat Senator
 Puan Noorita binti Sual. Yang Berhormat Senator Dato’ Sivaraj a/l Chandran."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1310,Tuan Yang di-Pertua,"Terima kasih Tuan Yang di-Pertua. Terlebih dahulu saya ucapkan tahniah Yang Amat
+Bacaan Kali Yang Kedua",,■1310,1310,Tuan Yang di-Pertua,"Terima kasih Tuan Yang di-Pertua. Terlebih dahulu saya ucapkan tahniah Yang Amat
 Berhormat Menteri Kewangan atas pengumuman satu belanjawan yang cukup holistik dan
 benar-benar mencerminkan nilai-nilai asas di sebalik gagasan Malaysia Madani.
 Hari ini dalam perbahasan Belanjawan saya, saya akan menyentuh lima aspek dari
@@ -2129,7 +2129,7 @@ berdepan dengan situasi yang sama. Jadi Tuan Yang di-Pertua, saya memohon supaya
 wujudkan satu skim bantuan khas melalui Jabatan Kebajikan Masyarakat (JKM) untuk
 membantu pesakit-pesakit kronik daripada latar belakang termiskin ini."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1320,Tuan Yang di-Pertua,"Saya sedia maklum JKM memang tawarkan bantuan kebajikan bagi pesakit-pesakit
+Bacaan Kali Yang Kedua",,■1320,1320,Tuan Yang di-Pertua,"Saya sedia maklum JKM memang tawarkan bantuan kebajikan bagi pesakit-pesakit
 yang berdepan dengan senario seperti berikut- bantuan OKU yang tidak berupaya bekerja,
 bantuan penjagaan OKU terlantar, bantuan am dan sebagainya. Jadi, saya harap
 Kementerian Kesihatan akan bekerjasama dengan Jabatan Kebajikan Masyarakat untuk
@@ -2196,11 +2196,11 @@ Maka, dengan itu, saya rumuskan. Dengan juga tidak ingin mengambil masa yang
 lebih, Tuan Yang di-Pertua, saya memohon menyokong Rang Undang-undang Perbekalan
 2023. Sekian, terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1320,Tuan Yang di-Pertua,"Terima kasih kembali kepada Yang Berhormat Senator Dato’
+Bacaan Kali Yang Kedua",,■1320,1320,Tuan Yang di-Pertua,"Terima kasih kembali kepada Yang Berhormat Senator Dato’
 Sivaraj.
 Yang Berhormat Senator Puan Susan Chemerai Anding."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1326,Puan Susan Chemerai Anding,"Terima kasih Tuan Yang di-Pertua kerana memberi
+Bacaan Kali Yang Kedua",,1.26 tgh.,1326,Puan Susan Chemerai Anding,"Terima kasih Tuan Yang di-Pertua kerana memberi
 saya peluang untuk berbahas.
 Pertama, saya ingin mengucapkan banyak-banyak terima kasih kepada Menteri
 Kewangan, Yang Amat Berhormat Perdana Menteri atas pembentangan Bajet 2023.
@@ -2229,7 +2229,7 @@ Sebab, kalau kita lihat secara mata kasar dan jika kita melawat ke kawasan-kawas
 di pedalaman Sarawak, memang ramai saya rasa yang sepatutnya termasuk dalam sistem
 eKasih tetapi mereka tidak berada dalam sistem ini."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1330,Puan Susan Chemerai Anding,"Ini tidak hairan sebab ramai terutamanya dari kawasan pedalaman tidak ada akses
+Bacaan Kali Yang Kedua",,■1330,1330,Puan Susan Chemerai Anding,"Ini tidak hairan sebab ramai terutamanya dari kawasan pedalaman tidak ada akses
 yang baik kepada pejabat-pejabat kebajikan. Bukan sahaja soal ia jauh dan mereka tidak
 berkemampuan untuk membayar tambang untuk pergi ke sana tetapi juga ramai yang buta
 huruf terutama yang tua ataupun yang kurang arif dalam mengisi borang-borang kebajikan
@@ -2320,16 +2320,16 @@ pendedahan kepada teknologi baharu, kenaikan gaji dan suasana kerja yang lebih s
 Oleh itu, *reskilling,* dengan izin, iaitu memberi kemahiran semula dan *upskilling* kerja, dengan
 izin, peningkatan kemahiran adalah penting untuk perkembangan ekonomi."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1340,Puan Susan Chemerai Anding,"Oleh itu saya ingin tahu, adakah bantuan kerajaan jika ada dalam membantu
+Bacaan Kali Yang Kedua",,■1340,1340,Puan Susan Chemerai Anding,"Oleh itu saya ingin tahu, adakah bantuan kerajaan jika ada dalam membantu
 perusahaan ataupun perniagaan di Malaysia supaya mereka dapat *reskill* dan *upskill* pekerja
 mereka supaya pekerja dapat maju dalam kerjaya dan mendapat upah yang lebih baik.
 Dengan itu saya mohon menyokong usul Berbelanjawan 2023. Sekian terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1340,Tuan Yang di-Pertua,"Terima kasih kembali kepada Yang Berhormat Senator Puan
+Bacaan Kali Yang Kedua",,■1340,1340,Tuan Yang di-Pertua,"Terima kasih kembali kepada Yang Berhormat Senator Puan
 Susan Chemerai Anding menggunakan istilah Tiong Hua, ngam-ngam 15 minit.
 Yang Berhormat Senator Tan Sri Dato’ Low Kian Chuan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1340,Tan Sri Dato’ Low Kian Chuan,"Terima kasih Tuan Yang di-Pertua atas peluang yang
+Bacaan Kali Yang Kedua",,1.40 ptg.,1340,Tan Sri Dato’ Low Kian Chuan,"Terima kasih Tuan Yang di-Pertua atas peluang yang
 diberikan kepada saya untuk mengambil bahagian dalam perbahasan Belanjawan 2023. Bajet
 2023 berorientasikan pertumbuhan yang responsif dan inklusif merangkumi semua lapisan
 masyarakat, komuniti perniagaan dan sektor ekonomi.
@@ -2402,7 +2402,7 @@ pelabur. PMKS amat mengalu-alukan perkurangan kadar cukai ke atas pendapatan
 percukaian bagi RM150,000 pertama yang dikurangkan sebanyak dua- mata peratus
 daripada 17 peratus kepada 15 peratus."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1350,Tan Sri Dato’ Low Kian Chuan,"Akan tetapi cukai ambang *threshold* harus disemak lebih tinggi kepada RM1 juta
+Bacaan Kali Yang Kedua",,■1350,1350,Tan Sri Dato’ Low Kian Chuan,"Akan tetapi cukai ambang *threshold* harus disemak lebih tinggi kepada RM1 juta
 ataupun pada ambang semasa RM600,000 untuk membantu mereka lebih berdaya saing dan
 mempunyai peluang untuk melabur semula daripada penjimatan cukai.
 Selain itu, PKS memerlukan bantuan kewangan untuk membantu mengurangkan kos
@@ -2453,11 +2453,11 @@ dan telus untuk mengukuhkan permintaan dalam negeri terhadap keadaan ekonomi dun
 yang masih mencabar. Akhir kata, saya menyokong Bajet 2023 yang telah dibentangkan oleh
 Menteri Kewangan. Sekian, terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1350,Tuan Yang di-Pertua,"Penghargaan kepada Yang Berhormat senator Tan Sri Dato’
+Bacaan Kali Yang Kedua",,■1350,1350,Tuan Yang di-Pertua,"Penghargaan kepada Yang Berhormat senator Tan Sri Dato’
 Low Kian Chuan.
 Sekarang Yang Berhormat Tuan Roderick Wong Siew Lead."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1356,Tuan Roderick Wong Siew Lead,"Terima kasih Tuan Yang di-Pertua, selamat petang
+Bacaan Kali Yang Kedua",,1.56 tgh.,1356,Tuan Roderick Wong Siew Lead,"Terima kasih Tuan Yang di-Pertua, selamat petang
 dan salam Malaysia Madani. Yang dimuliakan Tuan Yang di-Pertua dan Ahli-ahli Yang
 Berhormat Senator dan pegawai-pegawai persidangan yang dihormati sekalian. Sebagai
 seorang yang baharu dan kali pertama berbahas di Dewan yang mulia ini, saya ingin
@@ -2490,7 +2490,7 @@ program latihan untuk membantu SME. Menurut laporan dari Jabatan Perangkaan, pad
 tahun 2020 Selangor mempunyai jumlah SME tertinggi iaitu 245,161 manakala Sarawak cuma
 mempunyai 76,754."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1400,Tuan Roderick Wong Siew Lead,"Saya berpendapat usaha-usaha yang lebih perlu diberikan pada Sarawak untuk
+Bacaan Kali Yang Kedua",,■1400,1400,Tuan Roderick Wong Siew Lead,"Saya berpendapat usaha-usaha yang lebih perlu diberikan pada Sarawak untuk
 meningkatkan lagi sektor SME. Persoalan saya ialah, apakah langkah-langkah kerajaan untuk
 membantu sektor SME bagi negeri Sarawak?
 Selanjutnya Tuan Yang di-Pertua, terima kasih kepada Perdana Menteri sekali lagi
@@ -2557,13 +2557,13 @@ mencadangkan agar kerajaan dapat membina satu- jalan layang, atau *flyover road,
 izin, di simpang masuk Pekan Jaka.
 Sekiranya pengubahsuaian ini diterima..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1400,Tuan Yang di-Pertua,*“Flyover”* itu biasa diguna “jejambat.”
+Bacaan Kali Yang Kedua",,■1400,1400,Tuan Yang di-Pertua,*“Flyover”* itu biasa diguna “jejambat.”
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1400,Tuan Roderick Wong Siew Lead,*Sorry*.
+Bacaan Kali Yang Kedua",,■1400,1400,Tuan Roderick Wong Siew Lead,*Sorry*.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1400,Tuan Yang di-Pertua,Jejambat.
+Bacaan Kali Yang Kedua",,■1400,1400,Tuan Yang di-Pertua,Jejambat.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1400,Tuan Roderick Wong Siew Lead,"Terima kasih Tuan Yang di-Pertua. Sekiranya
+Bacaan Kali Yang Kedua",,■1400,1400,Tuan Roderick Wong Siew Lead,"Terima kasih Tuan Yang di-Pertua. Sekiranya
 pengubahsuaian ini diterima pakai, ia akan pasti memudahkan orang ramai dan dengan
 kemudahan ini akan dapat menarik dan memudahkan penduduk-penduduk dari Jalan Merudu
 atau Jalan Meruton dan Bayong untuk datang ke Pekan Jaka.
@@ -2600,9 +2600,9 @@ yang baharu ini, bebanan kerja di klinik kesihatan dan Hospital Sarikei dapat di
 dan membolehkan pegawai-pegawai kesihatan tersebut memberikan perkhidmatan yang
 lebih efektif kepada masyarakat terutamanya Sarikei."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1400,ANNOTATION,[Dato’ Kesavadas a/l A Achyuthan Nair mempengerusikan Mesyuarat]
+Bacaan Kali Yang Kedua",,■1400,1400,ANNOTATION,[Dato’ Kesavadas a/l A Achyuthan Nair mempengerusikan Mesyuarat]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1410,Tuan Roderick Wong Siew Lead,"Jadi, saya ingin meminta penjelasan daripada Kementerian Kesihatan berkenaan
+Bacaan Kali Yang Kedua",,■1410,1410,Tuan Roderick Wong Siew Lead,"Jadi, saya ingin meminta penjelasan daripada Kementerian Kesihatan berkenaan
 dengan satu kemudahan Klinik Kesihatan Bayong. Projek ini telah pun diluluskan di bawah
 Rancangan Malaysia Kedua Belas (RMKe-12) yang lalu. Tapak pembinaan bagi klinik ini telah
 pun dikenal pasti dan proses pemilikan hak milik Kerajaan Persekutuan telah pun
@@ -2621,24 +2621,24 @@ berkesan.
 Akhir kata, selamat berpuasa saya ucapkan kepada Ahli-ahli Yang Berhormat yang
 beragama Islam. Dengan ini, saya memohon menyokong usul ini. Sekian, terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1410,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Tuan
+Bacaan Kali Yang Kedua",,■1410,1410,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Tuan
 Roderick Wong Siew Lead.
 Sekarang saya menjemput Yang Berhormat Tuan Haji Abdul Nasir bin Haji Idris.
 Dipersilakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1412,Tuan Abdul Nasir bin Haji Idris,"*Bismillahi Rahmani Rahim. Assalamualaikum
+Bacaan Kali Yang Kedua",,2.12 ptg.,1412,Tuan Abdul Nasir bin Haji Idris,"*Bismillahi Rahmani Rahim. Assalamualaikum
 warahmatullahi wabarakatuh,* salam sejahtera. Terima kasih kepada Tuan Yang di-Pertua
 atas ruang dan peluang kepada saya untuk bersama-sama kita membahaskan Belanjawan
 2023 yang telah dibentangkan.
 Di kesempatan ini, hendak berpantun boleh, Tuan Yang di-Pertua?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1412,Dato’ Kesavadas a/l A Achyuthan Nair,Boleh.
+Bacaan Kali Yang Kedua",,2.12 ptg.,1412,Dato’ Kesavadas a/l A Achyuthan Nair,Boleh.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1412,Tuan Abdul Nasir bin Haji Idris,...
+Bacaan Kali Yang Kedua",,2.12 ptg.,1412,Tuan Abdul Nasir bin Haji Idris,...
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1412,ANNOTATION,[Berpantun]
+Bacaan Kali Yang Kedua",,2.12 ptg.,1412,ANNOTATION,[Berpantun]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1412,Tuan Abdul Nasir bin Haji Idris,"*Pergi ke kota membeli selasih,
+Bacaan Kali Yang Kedua",,2.12 ptg.,1412,Tuan Abdul Nasir bin Haji Idris,"*Pergi ke kota membeli selasih,
 Sayang si dara buat halwa;
 Permulaan kata simpulan kasih,
 Sulamkan mesra sentuhan jiwa.*
@@ -2684,7 +2684,7 @@ basmi kemiskinan ini? Kita hendak tahu jugalah program-program yang telah dilaks
 agensi-agensi yang terlibat, jumlah peruntukan yang telah disalurkan, program-program khas
 untuk mengurangkan jumlah kemiskinan rakyat kita."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1420,Tuan Abdul Nasir bin Haji Idris,"Tuan Yang di-Pertua, perkara kedua yang suka saya bahaskan di sini ialah berhubung
+Bacaan Kali Yang Kedua",,■1420,1420,Tuan Abdul Nasir bin Haji Idris,"Tuan Yang di-Pertua, perkara kedua yang suka saya bahaskan di sini ialah berhubung
 dengan Kementerian Pertanian dan Keterjaminan Makanan. Krisis keterjaminan makanan
 sangat penting untuk kita sama-sama bahaskan. Ia melibatkan banyak sektor ekonomi seperti
 sektor pertanian, penternakan dan nelayan. Sektor-sektor ini perlu kita perkasakan daripada
@@ -2745,13 +2745,13 @@ Kementerian Pendidikan. Kebetulan Tuan Yang di-Pertua saya pun sudah 35 tahun te
 dalam dunia pendidikan sebagai cikgu, 35 tahun. Jadi hendak bercakap sedikit – kalau masa
 itu Tuan Yang di-Pertua tengok tak berapa hendak cukup, bolehkah?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1420,Dato’ Kesavadas a/l A Achyuthan Nair,Perlu berapa lama lagi?
+Bacaan Kali Yang Kedua",,■1420,1420,Dato’ Kesavadas a/l A Achyuthan Nair,Perlu berapa lama lagi?
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1420,Tuan Abdul Nasir bin Haji Idris,Ya?
+Bacaan Kali Yang Kedua",,■1420,1420,Tuan Abdul Nasir bin Haji Idris,Ya?
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1420,Dato’ Kesavadas a/l A Achyuthan Nair,Perlu satu minit?
+Bacaan Kali Yang Kedua",,■1420,1420,Dato’ Kesavadas a/l A Achyuthan Nair,Perlu satu minit?
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1420,Tuan Abdul Nasir bin Haji Idris,"Satu minit. Saya tersentuh dengan seperti yang
+Bacaan Kali Yang Kedua",,■1420,1420,Tuan Abdul Nasir bin Haji Idris,"Satu minit. Saya tersentuh dengan seperti yang
 disebutkan oleh Perdana Menteri Yang Amat Berhormat Tambun, 830 buah sekolah yang
 akan dibaiki pada tahun ini. Sebanyak 830 buah sekolah akan dibaiki dengan dana berjumlah
 RM1.2 bilion. Akan tetapi saya nampak seperti yang disebutkan ini yang mana satu yang betul
@@ -2766,12 +2766,12 @@ Saya ucapkan terima kasih kepada Perdana Menteri Yang Amat Berhormat Tambung
 yang memberikan peruntukan besar kepada Kementerian Pendidikan. Jadi dengan itu terima
 kasih, sekian. *Wabillahitaufik walhidayah, wassalamualaikum warahmatullahi wabarakatuh.*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1420,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Tuan Abdul
+Bacaan Kali Yang Kedua",,■1420,1420,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Tuan Abdul
 Nasir bin Haji Idris.
 Sekarang saya menjemput Yang Berhormat Datuk Teo Eng Tee @ Teo Kok Chee.
 Dipersilakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1429,Datuk Teo Eng Tee @ Teo Kok Chee,"Salam sejahtera. Tuan Yang di-Pertua, terlebih
+Bacaan Kali Yang Kedua",,2.29 ptg.,1429,Datuk Teo Eng Tee @ Teo Kok Chee,"Salam sejahtera. Tuan Yang di-Pertua, terlebih
 dahulu saya ingin mengambil peluang untuk mengucapkan setinggi-tinggi penghargaan dan
 terima kasih kepada Tuan Yang di-Pertua kerana memberi saya peluang untuk menyertai
 perbahasan Rang Undang-undang Perbekalan Belanjawan 2023 di Dewan persidangan yang
@@ -2781,7 +2781,7 @@ kali pertama oleh Kerajaan Perpaduan. Saya ingin mengucapkan syabas kepada keraj
 selepas membentangkan Belanjawan Madani pada keseluruhannya nampak agak
 bertanggungjawab dengan mengendali kewangan kerajaan dalam keadaan yang sedia ada."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1430,Datuk Teo Eng Tee @ Teo Kok Chee,"Dapat diperhatikan bahawa perbelanjaan sosial ke atas pendidikan, kesihatan,
+Bacaan Kali Yang Kedua",,■1430,1430,Datuk Teo Eng Tee @ Teo Kok Chee,"Dapat diperhatikan bahawa perbelanjaan sosial ke atas pendidikan, kesihatan,
 perumahan dan juga program-program menyasarkan golongan berpendapatan rendah telah
 dikekalkan.
 Tuan Yang di-Pertua, saya agak kecewa pembentangan Belanjawan Madani yang
@@ -2855,7 +2855,7 @@ peratus kepada KDNK negara melalui 26.1 juta orang pelawat antarabangsa yang mas
 negara ini. Statistik juga menunjukkan pelancongan memberikan pulangan besar kepada
 subsektor yang berkaitan seperti peruncitan, pengangkutan serta makanan dan minuman."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1440,Datuk Teo Eng Tee @ Teo Kok Chee,"Justeru, pelancongan adalah antara yang terjejas teruk disebabkan pandemik COVID-
+Bacaan Kali Yang Kedua",,■1440,1440,Datuk Teo Eng Tee @ Teo Kok Chee,"Justeru, pelancongan adalah antara yang terjejas teruk disebabkan pandemik COVID-
 19 dengan kehilangan pendapatan serta menjejaskan ekosistem keseluruhan termasuk
 perniagaan dan pekerjaan.
 Justeru, industri ini sangat memerlukan suntikan atau langkah segera bagi
@@ -2870,12 +2870,12 @@ menaikkan kepada RM1.5 juta seperti yang dicadangkan oleh pihak pengusaha hotel.
 Akhir kata, saya setuju dan sokongan sepenuhnya Rang Undang-undang Perbekalan
 Belanjawan 2023, sekian terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1440,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Datuk Teo
+Bacaan Kali Yang Kedua",,■1440,1440,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Datuk Teo
 Eng Tee @ Teo Kok Chee.
 Sekarang saya menjemput Yang Berhormat Senator Datuk Judiet binti Fidilis @
 Noraini binti Idris."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1442,Datuk Judiet binti Fidilis @ Noraini binti Idris,"*Assalamualaikum warahmatullahi
+Bacaan Kali Yang Kedua",,2.42 ptg.,1442,Datuk Judiet binti Fidilis @ Noraini binti Idris,"*Assalamualaikum warahmatullahi
 wabarakatuh,* salam sejahtera dan salam Malaysia Madani. Terima kasih, Tuan Yang di-
 Pertua kerana memberi peluang kepada saya untuk bersama-sama mengambil bahagian
 dalam perbahasan Rang Undang-undang Perbekalan 2023.
@@ -2952,7 +2952,7 @@ Dalam situasi ekonomi semasa yang melanda negara kita, setiap sen yang keluar
 daripada poket amatlah dirasai. Apa lagi yang melibatkan wang simpanan untuk hari tua yang
 disimpan setelah sekian lama bekerja."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1450,Datuk Judiet binti Fidilis @ Noraini binti Idris,"Di sini saya ingin membangkitkan isu *love scam*, atau pun penipuan cinta yang sering
+Bacaan Kali Yang Kedua",,■1450,1450,Datuk Judiet binti Fidilis @ Noraini binti Idris,"Di sini saya ingin membangkitkan isu *love scam*, atau pun penipuan cinta yang sering
 kali menjerat terutamanya golongan wanita hingga mereka kerugian wang ringgit. Malah, ada
 yang hilang wang simpanan dalam bank, wang pencen dan juga wang simpanan KWSP
 kerana terpedaya dengan cinta palsu atas talian.
@@ -3036,12 +3036,12 @@ dan tidak ada golongan yang tercicir menerima bantuan yang sewajarnya. Semoga
 keharmonian dan kesejahteraan terus dicapai demi Malaysia yang tercinta. Sekian, saya
 mohon menyokong. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1450,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Datuk Noraini
+Bacaan Kali Yang Kedua",,■1450,1450,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Datuk Noraini
 binti Idris atas perbahasan itu tadi.
 Sekarang, saya menjemput Yang Berhormat Dato’ Haji Husain bin Awang.
 Dipersilakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1458,Dato’ Haji Husain bin Awang,"*Assalamualaikum warahmatullahi wabarakatuh.*
+Bacaan Kali Yang Kedua",,2.58 ptg.,1458,Dato’ Haji Husain bin Awang,"*Assalamualaikum warahmatullahi wabarakatuh.*
 Salam sejahtera. *Alhamdulillah,* syukur ke hadrat Allah SWT kerana saya diberi peluang untuk
 bersama-sama mengambil bahagian untuk membahaskan Rang Undang-undang Pebekalan
 2023.
@@ -3058,7 +3058,7 @@ ditadbir oleh Yang Amat Berhormat Pagoh ketika itu.
 Kadar pertumbuhan ekonomi Malaysia merupakan kedua terendah selepas krisis
 kewangan yang pernah melanda negara dalam krisis kewangan tahun 1999."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1500,Dato’ Haji Husain bin Awang,"Semua aktiviti ekonomi merekodkan penguncupan yang ketara. Pengangguran
+Bacaan Kali Yang Kedua",,■1500,1500,Dato’ Haji Husain bin Awang,"Semua aktiviti ekonomi merekodkan penguncupan yang ketara. Pengangguran
 negara merosot sehingga 4.5 peratus KDNK berbanding 3.3 peratus pada tahun sebelumnya.
 Kerajaan ketika itu mengambil beberapa langkah strategik, *plan survival* dan juga pemulihan
 ekonomi bersasar digarap bagi memastikan rakyat mendapat perhatian sewajarnya.
@@ -3139,7 +3139,7 @@ umumnya masih tidak dapat memainkan peranannya untuk memperbetulkan persepsi
 *Islamofobia* ini. Bahkan kerap kali media ini menayangkan program-program termasuk filem
 dan drama yang menimbulkan kekeliruan terhadap Islam."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1510,Dato’ Haji Husain bin Awang,"Media sepatutnya menerbitkan program dan rancangan termasuk dokumentari
+Bacaan Kali Yang Kedua",,■1510,1510,Dato’ Haji Husain bin Awang,"Media sepatutnya menerbitkan program dan rancangan termasuk dokumentari
 mengenai realiti Islam fobia berdasarkan fakta yang sahih.
 Tuan Yang di-Pertua, saya menyentuh mengenai dengan ekopelancongan. Saya
 melihat peruntukan program ekopelancongan adalah tidak setimpal dengan khazanah alam
@@ -3155,9 +3155,9 @@ bukan sahaja memberi kesan positif kepada ekonomi, malah mempromosikan kelestari
 hidupan liar.
 Terakhir, Tuan Yang di-Pertua, ialah pindaan Akta Industri Perkhidmatan Air 2006"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1510,ANNOTATION,[Akta 655]
+Bacaan Kali Yang Kedua",,■1510,1510,ANNOTATION,[Akta 655]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1510,Dato’ Haji Husain bin Awang,". Tuan Yang di-Pertua, isu pencemaran bekalan air dalam negara ini kerap kali
+Bacaan Kali Yang Kedua",,■1510,1510,Dato’ Haji Husain bin Awang,". Tuan Yang di-Pertua, isu pencemaran bekalan air dalam negara ini kerap kali
 berlaku sehingga menjejaskan penduduk setempat. Saya berpandangan amat relevan sekali
 Akta Industri Perkhidmatan Air 2006 dipinda pada Jun depan dengan mengenakan hukuman
 lebih berat termasuk kadar denda yang ditingkatkan sehingga RM100 juta kepada pencemar
@@ -3183,13 +3183,13 @@ Perkhidmatan Air Negara (SPAN) dan Jabatan Alam Sekitar (JAS) tiada kuasa terhad
 dan sungai. Oleh itu, sepatutnya punca kuasa yang menjadi tanggungjawab utama kerajaan
 negeri dan PBT perlu diperkasakan secara holistik..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1510,Dato’ Kesavadas a/l A Achyuthan Nair,Tolong gulung.
+Bacaan Kali Yang Kedua",,■1510,1510,Dato’ Kesavadas a/l A Achyuthan Nair,Tolong gulung.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1510,Dato’ Haji Husain bin Awang,"Saya ada satu isu lagi, boleh?"
+Bacaan Kali Yang Kedua",,■1510,1510,Dato’ Haji Husain bin Awang,"Saya ada satu isu lagi, boleh?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1510,Dato’ Kesavadas a/l A Achyuthan Nair,"Okey, bagi satu minit sahaja."
+Bacaan Kali Yang Kedua",,■1510,1510,Dato’ Kesavadas a/l A Achyuthan Nair,"Okey, bagi satu minit sahaja."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1510,Dato’ Haji Husain bin Awang,"Tuan Yang di-Pertua, Cukai Makmur merupakan cukai
+Bacaan Kali Yang Kedua",,■1510,1510,Dato’ Haji Husain bin Awang,"Tuan Yang di-Pertua, Cukai Makmur merupakan cukai
 yang dikenakan sekali sahaja pada mana-mana syarikat yang menjana pendapatan melebihi
 RM100 juta. Sudah pasti dengan kutipan Cukai Makmur secara *one off* kepada syarikat
 korporat dapat meningkatkan kutipan cukai pendapatan syarikat- *Company Income Tax Act*
@@ -3214,7 +3214,7 @@ rakyat.
 Dengan kata-kata itu, saya akhiri ucapan saya ini dan saya menyokong Rang Undang-
 undang Perbekalan 2023 ini. Terima kasih. *Assalamualaikum warahmatullahi wabarakatuh*."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1510,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Dato’ Haji
+Bacaan Kali Yang Kedua",,■1510,1510,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Dato’ Haji
 Husain bin Awang atas perbahasan tadi.
 Sebelum saya jemput Dato’ Arman Azha Abu Hanifah, sekarang saya menjemput
 Yang Berhormat Senator Tuan Haji Aziz bin Ariffin yang telah berhenti perbahasan selepas
@@ -3222,7 +3222,7 @@ Yang Berhormat Senator Tuan Haji Aziz bin Ariffin yang telah berhenti perbahasan
 Sekarang bagi peluang kepada Yang Berhormat Tuan Haji Aziz bin Ariffin untuk
 sambungkan perbahasan 10 minit."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1518,Tuan Haji Aziz bin Ariffin,"Terima kasih Tuan Yang di-Pertua yang memberi peluang
+Bacaan Kali Yang Kedua",,3.18 ptg.,1518,Tuan Haji Aziz bin Ariffin,"Terima kasih Tuan Yang di-Pertua yang memberi peluang
 untuk saya menyambung perbahasan Bajet 2023. Saya terus kepada perkara lima, iaitu
 koperasi.
 Melalui Bajet 2023, Kementerian Kewangan telah memperuntukkan lebih RM732 juta
@@ -3236,7 +3236,7 @@ institusi koperasi di Malaysia merupakan sebuah institusi yang penting dan diber
 keutamaan oleh pihak kerajaan. Sebanyak RM37.8 bilion perolehan koperasi telah
 disumbangkan kepada pendapatan negara pada tahun 2022."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1520,Tuan Haji Aziz bin Ariffin,"Selain itu, penubuhan Universiti Keusahawanan Koperasi Malaysia (UKKM),
+Bacaan Kali Yang Kedua",,■1520,1520,Tuan Haji Aziz bin Ariffin,"Selain itu, penubuhan Universiti Keusahawanan Koperasi Malaysia (UKKM),
 pengiktirafan Angkatan Koperasi Kebangsaan Malaysia Berhad (ANGKASA) sebagai badan
 yang mewakili gerakan koperasi di peringkat kebangsaan dan antarabangsa serta penubuhan
 institusi perbankan Islam koperasi patuh syariah yang pertama di Malaysia iaitu Bank
@@ -3310,20 +3310,20 @@ Dengan ini Tuan Yang di-Pertua, saya menyokong Rang Undang-undang Perbekalan
 2023. Sekian, terima kasih. *Wabillahitaufik walhidayah, wassalamualaikum warahmatullah.*
 Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1520,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih. Yang Berhormat Senator
+Bacaan Kali Yang Kedua",,■1520,1520,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih. Yang Berhormat Senator
 Tuan Haji Aziz bin Ariffin.
 Sekarang saya menjemput Yang Berhormat Senator Dato’ Arman Azha Abu Hanifah.
 Dipersilakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1528,Dato’ Arman Azha Abu Hanifah,"*Assalamualaikum warahmatullahi wabarakatuh,*
+Bacaan Kali Yang Kedua",,3.28 ptg.,1528,Dato’ Arman Azha Abu Hanifah,"*Assalamualaikum warahmatullahi wabarakatuh,*
 salam perpaduan. *Bismillahi Rahmani Rahim*. Terima kasih Tuan Yang di-Pertua yang
 kelihatan segak di atas Kerusi Speaker tersebut."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1528,Dato’ Kesavadas a/l A Achyuthan Nair,Terima kasih...
+Bacaan Kali Yang Kedua",,3.28 ptg.,1528,Dato’ Kesavadas a/l A Achyuthan Nair,Terima kasih...
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1528,ANNOTATION,[Ketawa]
+Bacaan Kali Yang Kedua",,3.28 ptg.,1528,ANNOTATION,[Ketawa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1528,Dato’ Arman Azha Abu Hanifah,"Salam Ramadhan dan selamat mengerjakan
+Bacaan Kali Yang Kedua",,3.28 ptg.,1528,Dato’ Arman Azha Abu Hanifah,"Salam Ramadhan dan selamat mengerjakan
 ibadah puasa bagi Ahli-ahli Yang Berhormat beragama Islam yang mulia ini, dengan pahala
 yang tinggi daripada Allah SWT.
 Tuan Yang di-Pertua, Belanjawan Madani. Saya menyambut baik pendekatan
@@ -3344,7 +3344,7 @@ kecil. Rungutan juga diterima oleh rakan-rakan kita, daripada rakan Senator dan 
 yang mengata kebanyakan mereka menyambut baik peruntukan ini tetapi persoalan hari ini
 adakah kerajaan menyediakan tempat ini mencukupi untuk golongan yang berniaga?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1530,Dato’ Arman Azha Abu Hanifah,"Paling menghampakan kebanyakan daripada mereka hari ini cuba mendapatkan
+Bacaan Kali Yang Kedua",,■1530,1530,Dato’ Arman Azha Abu Hanifah,"Paling menghampakan kebanyakan daripada mereka hari ini cuba mendapatkan
 permit perniagaan dan lesen perniagaan untuk mereka berniaga tetapi malangnya
 permohonan mereka ini tidak diluluskan dan hari ini kerajaan mengumumkan mempunyai
 bajet RM50 juta untuk menyediakan kios dan gerai kepada golongan-golongan yang terkesan.
@@ -3450,7 +3450,7 @@ mereka akan bangkit akan mempertikaikan Kerajaan Perpaduan keluarga Malaysia ata
 Kerajaan Madani ini. Setiap hari makin banyak desakan pada rakyat merayu kepada kerajaan
 meluluskan pengeluaran KWSP mereka secara bersasar."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1540,Dato’ Arman Azha Abu Hanifah,"Saya mohon sekali lagi kepada Perdana Menteri, tolonglah pertimbangkan suara
+Bacaan Kali Yang Kedua",,■1540,1540,Dato’ Arman Azha Abu Hanifah,"Saya mohon sekali lagi kepada Perdana Menteri, tolonglah pertimbangkan suara
 rakyat untuk pengeluaran KWSP secara bersasar yang amat diperlukan pada ketika ini.
 Pengamal media hari ini melaporkan di media-media utama, kerajaan tidak akan akur tentang
 pengeluaran tersebut. Akan tetapi, saya yakin Perdana Menteri kita sentiasa mendengar
@@ -3496,34 +3496,34 @@ Inilah yang saya mohon dan saya yakin rakan-rakan Senator yang berada dalam Dewa
 mulia ini akan bersama-sama saya untuk terus memperjuangkan hak rakyat demi negara kita
 yang tercinta..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1540,ANNOTATION,[Tepuk]
+Bacaan Kali Yang Kedua",,■1540,1540,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1540,Dato’ Arman Azha Abu Hanifah,"Tuan Yang di-Pertua, akhir sekali, saya mengucapkan terima kasih kepada semua,
+Bacaan Kali Yang Kedua",,■1540,1540,Dato’ Arman Azha Abu Hanifah,"Tuan Yang di-Pertua, akhir sekali, saya mengucapkan terima kasih kepada semua,
 dan saya juga ingin mohon menyokong Belanjawan 2023. Sekali lagi, kepada Tuan Yang di-
 Pertua, *you look great* atas Kerusi Yang di-Pertua tersebut..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1540,ANNOTATION,[Tepuk]
+Bacaan Kali Yang Kedua",,■1540,1540,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1540,Dato’ Arman Azha Abu Hanifah,"Jadi, sekian.
+Bacaan Kali Yang Kedua",,■1540,1540,Dato’ Arman Azha Abu Hanifah,"Jadi, sekian.
 *Wabillahitaufiq walhidayah, wassalamualaikum warahmatullahi wabarakatuh.*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1540,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Senator Dato’
+Bacaan Kali Yang Kedua",,■1540,1540,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Senator Dato’
 Arman Azha Abu Hanifah atas perbahasan itu tadi.
 Sekarang saya menjemput Yang Berhormat Senator Tan Sri Haji Mohamad Fatmi bin
 Haji Che Salleh. Dipersilakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1544,Tan Sri Haji Mohamad Fatmi bin Haji Che Salleh,*Bismillahi Rahmani Rahim...*
+Bacaan Kali Yang Kedua",,3.44 ptg.,1544,Tan Sri Haji Mohamad Fatmi bin Haji Che Salleh,*Bismillahi Rahmani Rahim...*
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1544,ANNOTATION,[Membaca sepotong doa]
+Bacaan Kali Yang Kedua",,3.44 ptg.,1544,ANNOTATION,[Membaca sepotong doa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1544,Tan Sri Haji Mohamad Fatmi bin Haji Che Salleh,"*Assalamualaikum warahmatullahi wabarakatuh,* salam sejahtera,
+Bacaan Kali Yang Kedua",,3.44 ptg.,1544,Tan Sri Haji Mohamad Fatmi bin Haji Che Salleh,"*Assalamualaikum warahmatullahi wabarakatuh,* salam sejahtera,
 salam Malaysia Madani. Tuan Yang di-Pertua, layaknya nampak, sesuai sangat..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1544,ANNOTATION,[Tepuk]
+Bacaan Kali Yang Kedua",,3.44 ptg.,1544,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1544,Dato’ Kesavadas a/l A Achyuthan Nair,Terima kasih.
+Bacaan Kali Yang Kedua",,3.44 ptg.,1544,Dato’ Kesavadas a/l A Achyuthan Nair,Terima kasih.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1544,Tan Sri Haji Mohamad Fatmi bin Haji Che Salleh,"Seterusnya Ahli-ahli Dewan
+Bacaan Kali Yang Kedua",,3.44 ptg.,1544,Tan Sri Haji Mohamad Fatmi bin Haji Che Salleh,"Seterusnya Ahli-ahli Dewan
 Negara yang saya hormati sekalian.
 RM388 bilion jumlah bajet tahun ini merupakan bajet terbesar dalam sejarah, dan
 sudah tentu kalau kita hendak memperincikan, 15 minit tidak cukup, Tuan Yang di-Pertua.
@@ -3568,7 +3568,7 @@ memberi kesan kepada ekonomi itu sendiri. Ini kerana, bayangkan, kalau bidang pe
 bahan-bahan pembinaan, kosnya naik. Padahal, kontraknya sudah ada dengan kos yang
 dahulu. Dengan sendirinya, syarikat-syarikat kontraktor ini akan menanggung kerugian."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1550,Tan Sri Haji Mohamad Fatmi bin Haji Che Salleh,"Apabila mereka menanggung kerugian, mereka terpaksa tutup kedai. Tutup kedai
+Bacaan Kali Yang Kedua",,■1550,1550,Tan Sri Haji Mohamad Fatmi bin Haji Che Salleh,"Apabila mereka menanggung kerugian, mereka terpaksa tutup kedai. Tutup kedai
 bermaknanya apa? Bermaknanya pekerja-pekerja terpaksa dibuang. Pekerja dibuang
 bermaknanya apa? Pengangguran. Apabila pengangguran tinggi, pelbagai perkara dan
 masalah akan timbul di negara kita.
@@ -3598,16 +3598,16 @@ minggu saya bertumbuk Tuan Yang di-Pertua. *I’m not joking-* setiap hari saya 
 dengan dia, setiap minggu, di luar sekolah. Akan tetapi, selepas sekolah, sudah dewasa,
 sudah berniaga, dia jadi *partner* saya..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1550,ANNOTATION,[Ketawa]
+Bacaan Kali Yang Kedua",,■1550,1550,ANNOTATION,[Ketawa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1550,Tan Sri Haji Mohamad Fatmi bin Haji Che Salleh,"Hari ini, *he is a good friend to me, until today*.
+Bacaan Kali Yang Kedua",,■1550,1550,Tan Sri Haji Mohamad Fatmi bin Haji Che Salleh,"Hari ini, *he is a good friend to me, until today*.
 Ini semua kerana daripada bangku sekolah, daripada sekolah lagi, saya tidak mahu sebut
 nama, nanti dia besar pula hidung, kepala- sebut nama dia dalam Parlimen ini, tetapi *that what
 it is...*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1550,ANNOTATION,[Ketawa]
+Bacaan Kali Yang Kedua",,■1550,1550,ANNOTATION,[Ketawa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1550,Tan Sri Haji Mohamad Fatmi bin Haji Che Salleh,"*So,* tolonglah kita tengok balik. *This is the root to our problem.* Kalau kita boleh
+Bacaan Kali Yang Kedua",,■1550,1550,Tan Sri Haji Mohamad Fatmi bin Haji Che Salleh,"*So,* tolonglah kita tengok balik. *This is the root to our problem.* Kalau kita boleh
 selesaikan ini, ia akan selesai banyak perkara.
 Ekonomi kita untuk memaju dan menjana ekonomi. Bajet ini merupakan instrumen
 untuk penjanaan ekonomi. Jika ia boleh menjanakan ekonomi kita, maka bajet ini berjaya. Itu
@@ -3664,7 +3664,7 @@ sesi soal jawab hari itu. Dalam jawapan ini menyatakan bahawasanya semasa pandem
 COVID-19 itu hari apabila ketiadaan pekerja, buah tidak boleh dikutip. Berapakah agregat nya
 jumlah kerugian kepada negara?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1600,Tan Sri Haji Mohamad Fatmi bin Haji Che Salleh,"Jawapannya RM21.23 bilion, keseluruhan, *why?* Tidak ada orang hendak kutip buah.
+Bacaan Kali Yang Kedua",,■1600,1600,Tan Sri Haji Mohamad Fatmi bin Haji Che Salleh,"Jawapannya RM21.23 bilion, keseluruhan, *why?* Tidak ada orang hendak kutip buah.
 Siapakah yang rugi ini? Negara rugi, pelbagai syarikat kerajaan, syarikat swasta- *private,*
 semua jumlahnya RM21.23 bilion. Jadi, sudah tentu apa patut kita buat? Kerajaan perlu ada
 dasar pekerja asing yang telus, bukan untuk disalahgunakan. Bukan untuk mengambil
@@ -3680,29 +3680,29 @@ istilah PEP. Saya yakin kita- semua ini kebanyakannya PEP. *Politician* boleh di
 PEP? Apa dia boleh buat, apakah yang tak boleh buat? Kita sendiri tidak tahu walaupun kita
 PEP..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1600,Dato’ Kesavadas a/l A Achyuthan Nair,Risiko tinggi.
+Bacaan Kali Yang Kedua",,■1600,1600,Dato’ Kesavadas a/l A Achyuthan Nair,Risiko tinggi.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1600,Tan Sri Haji Mohamad Fatmi bin Haji Che Salleh,"*We do not know what restrict us.*
+Bacaan Kali Yang Kedua",,■1600,1600,Tan Sri Haji Mohamad Fatmi bin Haji Che Salleh,"*We do not know what restrict us.*
 Apa yang kita tak boleh buat. Apa yang saya tahu saya seorang Senator, dikatakan seorang
 Tan Sri tetapi *I have problem*. Saya beri contoh..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1600,Dato’ Kesavadas a/l A Achyuthan Nair,"Tolong gulung boleh? Sebab kekangan
+Bacaan Kali Yang Kedua",,■1600,1600,Dato’ Kesavadas a/l A Achyuthan Nair,"Tolong gulung boleh? Sebab kekangan
 masa."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1600,Tan Sri Haji Mohamad Fatmi bin Haji Che Salleh,Masa habis sudah?
+Bacaan Kali Yang Kedua",,■1600,1600,Tan Sri Haji Mohamad Fatmi bin Haji Che Salleh,Masa habis sudah?
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1600,Dato’ Kesavadas a/l A Achyuthan Nair,"Ya, sudah tiga minit."
+Bacaan Kali Yang Kedua",,■1600,1600,Dato’ Kesavadas a/l A Achyuthan Nair,"Ya, sudah tiga minit."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1600,Tan Sri Haji Mohamad Fatmi bin Haji Che Salleh,"Kena berhentilah ini? Saya boleh
+Bacaan Kali Yang Kedua",,■1600,1600,Tan Sri Haji Mohamad Fatmi bin Haji Che Salleh,"Kena berhentilah ini? Saya boleh
 habiskan?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1600,Dato’ Kesavadas a/l A Achyuthan Nair,Gulung kan cepat.
+Bacaan Kali Yang Kedua",,■1600,1600,Dato’ Kesavadas a/l A Achyuthan Nair,Gulung kan cepat.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1600,Tan Sri Haji Mohamad Fatmi bin Haji Che Salleh,Saya budak baik...
+Bacaan Kali Yang Kedua",,■1600,1600,Tan Sri Haji Mohamad Fatmi bin Haji Che Salleh,Saya budak baik...
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1600,ANNOTATION,[Ketawa]
+Bacaan Kali Yang Kedua",,■1600,1600,ANNOTATION,[Ketawa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1600,Tan Sri Haji Mohamad Fatmi bin Haji Che Salleh,"Gulung ya? Okey, baik. Satu kali, saya ada *fixed deposit* (FD) dalam bank. Saya hendak
+Bacaan Kali Yang Kedua",,■1600,1600,Tan Sri Haji Mohamad Fatmi bin Haji Che Salleh,"Gulung ya? Okey, baik. Satu kali, saya ada *fixed deposit* (FD) dalam bank. Saya hendak
 cairkan sebahagian untuk saya hendak belanja keperluan saya. Saya cairkan dan bakinya
 daripada *fixed deposit* dari bank yang sama saya hendak *fixed deposit*-kan balik. Tak lulus.
 Saya tanya sebab apa? Tak boleh jawab. Tak lulus tak apa, jawablah kepada saya sebab
@@ -3723,18 +3723,18 @@ Kalau itu sudah terbantut, sudah tentu ia akan terjejas.
 Tuan Yang di-Pertua, saya terpaksa berhenti tetapi saya ada satu cerita. Kalau hendak
 dengar boleh beri masa sedikit."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1600,Dato’ Kesavadas a/l A Achyuthan Nair,Tak cukup masa Yang Berhormat.
+Bacaan Kali Yang Kedua",,■1600,1600,Dato’ Kesavadas a/l A Achyuthan Nair,Tak cukup masa Yang Berhormat.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1600,Tan Sri Haji Mohamad Fatmi bin Haji Che Salleh,"Kalau tak nak dengar, tak apa
+Bacaan Kali Yang Kedua",,■1600,1600,Tan Sri Haji Mohamad Fatmi bin Haji Che Salleh,"Kalau tak nak dengar, tak apa
 kita cerita lain kali. Terima kasih, saya mohon menyokong usul Rang Undang-undang
 Perbekalan 2023. Terima kasih. *Assalamualaikum warahmatullahi wabarakatuh*."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1600,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Senator Tan
+Bacaan Kali Yang Kedua",,■1600,1600,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Senator Tan
 Sri Haji Mohamad Fatmi bin Haji Che Salleh atas perbahasan tadi.
 Sekarang saya menjemput Yang Berhormat Senator Datuk Bobbey Ah Fang Bin Suan.
 Dipersilakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1605,Datuk Bobbey Ah Fang Bin Suan,"Tuan Yang di-Pertua, tahniah dan terima kasih
+Bacaan Kali Yang Kedua",,4.05 ptg.,1605,Datuk Bobbey Ah Fang Bin Suan,"Tuan Yang di-Pertua, tahniah dan terima kasih
 kepada Tuan Yang di-Pertua atas peluang yang diberikan kepada saya untuk turut serta
 berbahas dalam Rang Undang-undang Perbekalan 2023 pada petang ini. Sebelum itu saya
 juga mengambil peluang ini untuk merakamkan berbanyak-banyak terima kasih kepada pihak
@@ -3779,7 +3779,7 @@ Secara tidak langsung mengatasi dan mengimbangi perbezaan besar nilai harga
 bahan mentah dan harga barangan keperluan di antara Sabah, Sarawak dan juga
 Semenanjung Malaysia."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1610,Datuk Bobbey Ah Fang Bin Suan,"Tuan Yang di-Pertua, isu kedua yang saya ingin ketengahkan ialah pelaksanaan
+Bacaan Kali Yang Kedua",,■1610,1610,Datuk Bobbey Ah Fang Bin Suan,"Tuan Yang di-Pertua, isu kedua yang saya ingin ketengahkan ialah pelaksanaan
 Lebuhraya Pan Borneo. Untuk meringankan beban kerajaan pada masa yang sama
 memastikan pelaksanaan Lebuhraya Pan Borneo, *Sarawak-Sabah Link Road* siap mengikut
 jadual yang telah ditetapkan.
@@ -3854,17 +3854,17 @@ demi memastikan niat dan tekad luhur setiap belanjawan negara benar-benar dilaks
 dengan telus, adil dan saksama. Tuan Yang di-Pertua, saya mohon menyokong Rang
 Undang-undang Perbekalan 2023 ini. Sekian terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1620,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Datuk Bobbey
+Bacaan Kali Yang Kedua",,■1620,1620,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Datuk Bobbey
 Suan atas perbahasan tadi.
 Sekarang, saya menjemput Yang Berhormat Senator Datuk Dr. Azhar bin Ahmad.
 Dipersilakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1620,Datuk Dr. Azhar bin Ahmad,"*Assalamualaikum warahmatullahi wabarakatuh.
+Bacaan Kali Yang Kedua",,4.20 ptg.,1620,Datuk Dr. Azhar bin Ahmad,"*Assalamualaikum warahmatullahi wabarakatuh.
 Bismillahi Rahmani Rahim...*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1620,ANNOTATION,[Membaca sepotong doa]
+Bacaan Kali Yang Kedua",,4.20 ptg.,1620,ANNOTATION,[Membaca sepotong doa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1620,Datuk Dr. Azhar bin Ahmad,"Selamat petang dan salam Malaysia
+Bacaan Kali Yang Kedua",,4.20 ptg.,1620,Datuk Dr. Azhar bin Ahmad,"Selamat petang dan salam Malaysia
 Madani.
 Tuan Yang di-Pertua, sebelum mula ini, izinkan saya hendak berpantun satu, kerana
 menjadi budaya Nusantara ini, orang Melayu ini tinggi budinya. Jadi, saya budi kan dengan
@@ -3954,7 +3954,7 @@ Jadi, hari ini, Ahli-ahli Senator semua, mari kita bercakap dengan roh, dari hat
 bercakap dengan roh. Kita bercakap daripada roh, dengan penuh keikhlasan untuk
 bangunkan negara bangsa kerana Ahli-ahli Senator semua Ahli-ahli yang hebat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1630,Datuk Dr. Azhar bin Ahmad,"Jadi ayuh, kalau kita bercakap hanya retorik, kalau kita bercakap hanya kata-kata
+Bacaan Kali Yang Kedua",,■1630,1630,Datuk Dr. Azhar bin Ahmad,"Jadi ayuh, kalau kita bercakap hanya retorik, kalau kita bercakap hanya kata-kata
 daripada perut yakni nafsu, tidak sampai ke mana. Jadi mari kita bercakap daripada roh yakni
 ilmu seperti mana kata Socrates politik ialah kita *manage* sains dan seni untuk menjadi
 manusia itu cemerlang. Jadi, sayang juga jangan sampai ke langit. Kalau kita sayang individu,
@@ -3988,9 +3988,9 @@ Dato’ Seri Anwar bin Ibrahim menjadi Perdana Menteri ini, paling kurang biarla
 berlaku selama lima tahun, *insya-Allah.* Kalau ini berlaku, kita boleh *move*-kan kerajaan ini.
 Mana yang perlu dibantu, dibantu. Yang mana perlu dibaiki, dibaiki. Tuan Yang di-Pertua."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1630,Dato’ Kesavadas a/l A Achyuthan Nair,"Dato’, bukan Dato’ Seri ya."
+Bacaan Kali Yang Kedua",,■1630,1630,Dato’ Kesavadas a/l A Achyuthan Nair,"Dato’, bukan Dato’ Seri ya."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1630,Datuk Dr. Azhar bin Ahmad,"Dato’ Seri. Oh *sorry,* minta maaf. Tidak lama lagi itulah.
+Bacaan Kali Yang Kedua",,■1630,1630,Datuk Dr. Azhar bin Ahmad,"Dato’ Seri. Oh *sorry,* minta maaf. Tidak lama lagi itulah.
 Lagi satu saya hendak minta pandangan daripada Menteri Kewangan. Kad kredit, hutang
 kereta, hutang rumah, yang macam umur kami ini, okey. 60 tahun ke atas. Tidak boleh
 berhutang. Akan tetapi bagaimana anak-anak kita yang berumur 25 tahun? Golongan-
@@ -4003,23 +4003,23 @@ Ibrahim, Perdana Menteri kita yang juga Menteri Kewangan. Dengan ada *wisdom*-ny
 buatlah macam mana pun asalkan anak-anak muda ini tidak mudah bankrap dengan hanya
 hutang RM25,000 ini."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1630,Datuk Wira Dr. Mohd Hatta bin Md Ramli,"Minta penjelasan sikit Yang Berhormat
+Bacaan Kali Yang Kedua",,■1630,1630,Datuk Wira Dr. Mohd Hatta bin Md Ramli,"Minta penjelasan sikit Yang Berhormat
 Senator. Tuan Yang di-Pertua, mengenai had pinjaman yang kena bankrap itu. Kalau tidak
 silap saya, sudah berlaku suatu perubahan kepada RM50,000. Kalau tidak silap lah. Kalau
 boleh diperjelaskan. Ada siapa yang tahu."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1630,Datin Hajah Ros Suryati binti Alang,"Saya hendak mencelah sikit Tuan Yang di-
+Bacaan Kali Yang Kedua",,■1630,1630,Datin Hajah Ros Suryati binti Alang,"Saya hendak mencelah sikit Tuan Yang di-
 Pertua. Had itu memang telah dinaikkan oleh Yang Amat Berhormat Perdana Menteri. Akan
 tetapi sampai sekarang, saya ingat semalam pun saya ada dengan kumpulan anak-anak
 muda ini, mereka hutang RM15,000 pun masih bankrap. Ini tidak diselesaikan. Kita mohon
 Yang Amat Berhormat tengok perkara ini sebaik mungkin. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1630,Datuk Dr. Azhar bin Ahmad,"Yang Berhormat Senator, saya tidak perlu jawab. Sudah
+Bacaan Kali Yang Kedua",,■1630,1630,Datuk Dr. Azhar bin Ahmad,"Yang Berhormat Senator, saya tidak perlu jawab. Sudah
 ada tukang bagi betul ke sama sahajalah itu kan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1630,Seorang Ahli,Orang bertuah.
+Bacaan Kali Yang Kedua",,■1630,1630,Seorang Ahli,Orang bertuah.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1630,Datuk Dr. Azhar bin Ahmad,"Ya, orang bertuah. Jadi, ya lah, itu mekanismenya.
+Bacaan Kali Yang Kedua",,■1630,1630,Datuk Dr. Azhar bin Ahmad,"Ya, orang bertuah. Jadi, ya lah, itu mekanismenya.
 Walaupun RM50,000, ataupun RM25,000, mintalah Kementerian Kewangan supaya tidak
 mudah untuk bankrapkan anak muda yang berpotensi ini.
 Jadi amalan bahasalah budaya kita. Memperkasakan bahasa ini di mana-mana pun,
@@ -4044,14 +4044,14 @@ dengan cemerlang. Saya menguasai bahasa Mandarin, saya mengusai bahasa Tamil, sa
 mengusai bahasa Arab.”* Maka anak kita akan menjadi pilihan utama dalam memenuhi
 pekerjaan tersebut. Tidak rugi, tidak rugi..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1630,Dato’ Kesavadas a/l A Achyuthan Nair,"Yang Berhormat, sudah cukup masa lah
+Bacaan Kali Yang Kedua",,■1630,1630,Dato’ Kesavadas a/l A Achyuthan Nair,"Yang Berhormat, sudah cukup masa lah
 Yang Berhormat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1630,Datuk Dr. Azhar bin Ahmad,"Akhirnya *Jakel*. Sikit lagi *Jakel, Jakel, Jakel.*"
+Bacaan Kali Yang Kedua",,■1630,1630,Datuk Dr. Azhar bin Ahmad,"Akhirnya *Jakel*. Sikit lagi *Jakel, Jakel, Jakel.*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1630,Dato’ Kesavadas a/l A Achyuthan Nair,Rumuskan.
+Bacaan Kali Yang Kedua",,■1630,1630,Dato’ Kesavadas a/l A Achyuthan Nair,Rumuskan.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1630,Datuk Dr. Azhar bin Ahmad,"*Jakel*. Saya melihat *Jakel* daripada dahulu sampai
+Bacaan Kali Yang Kedua",,■1630,1630,Datuk Dr. Azhar bin Ahmad,"*Jakel*. Saya melihat *Jakel* daripada dahulu sampai
 sekarang yang masih lagi hendak menjadi *national service* juga, perkhidmatan negara.
 Hendak membantu rakyat-rakyat yang memerlukan. Saya ingin mencadangkan kepada
 Menteri KPDNHEP macam itu lah supaya *Jakel* ini bukan setakat menjual di bandar-bandar
@@ -4065,15 +4065,15 @@ Malaysia ialah Malaysia yang makmur, Malaysia yang majmuk, Malaysia yang aman da
 *insya-Allah*. Justeru itu, saya menyokong usul Belanjawan kali ini. Terima kasih.
 *Assalamualaikum warahmatullahi wabarakatuh.*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1630,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Senator
+Bacaan Kali Yang Kedua",,■1630,1630,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Senator
 Datuk Dr. Azhar bin Ahmad.
 Sekarang saya menjemput Yang Berhormat Dato’ Dr. Nelson a/l Renganathan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1639,Dato’ Dr. Nelson a/l Renganathan,"Terima kasih Tuan Yang di-Pertua. Selamat
+Bacaan Kali Yang Kedua",,4.39 ptg.,1639,Dato’ Dr. Nelson a/l Renganathan,"Terima kasih Tuan Yang di-Pertua. Selamat
 sejahtera rakan-rakan di Dewan yang mulia ini. Memang susah lah masa-masa macam ini
 hendak *ensure* semua tidak tidur, susah sedikit. Akan tetapi cubalah, ya."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1640,Dato’ Dr. Nelson a/l Renganathan,"Terlebih dahulu saya ingin mengambil kesempatan ini untuk mengucapkan setinggi-
+Bacaan Kali Yang Kedua",,■1640,1640,Dato’ Dr. Nelson a/l Renganathan,"Terlebih dahulu saya ingin mengambil kesempatan ini untuk mengucapkan setinggi-
 tinggi tahniah kepada Yang Amat Berhormat Perdana Menteri merangkap Menteri Kewangan
 yang telah berjaya membentangkan Belanjawan 2023 dalam suasana keadaan ekonomi yang
 kompleks ataupun *volatile, uncertain, complex and ambiguous* (VUCA). Syabas dan tahniah
@@ -4081,9 +4081,9 @@ juga saya ucapkan kepada Yang Amat Berhormat Perdana Menteri kerana berjaya menj
 pelaburan sebanyak RM170 bilion dari Negara China tiga hari yang lalu. Pelaburan ini sudah
 tentu akan memantapkan ekonomi negara kita pada jangka masa sederhana."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1640,ANNOTATION,[Timbalan Yang di-Pertua mempengerusikan Mesyuarat]
+Bacaan Kali Yang Kedua",,■1640,1640,ANNOTATION,[Timbalan Yang di-Pertua mempengerusikan Mesyuarat]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1640,Dato’ Dr. Nelson a/l Renganathan,"Tuan Yang di-Pertua, rakan-rakan Yang Berhormat Senator yang telah berbahas tiga
+Bacaan Kali Yang Kedua",,■1640,1640,Dato’ Dr. Nelson a/l Renganathan,"Tuan Yang di-Pertua, rakan-rakan Yang Berhormat Senator yang telah berbahas tiga
 hari berturut-turut telah pun mengemukakan pelbagai pandangan dan cadangan yg
 merangkumi hampir kesemua kementerian dan telah membangkitkan isu-isu semasa yang
 bernas. Maka saya di sini tidak ingin mengulang kembali apa yang telah dikemukakan oleh
@@ -4170,7 +4170,7 @@ menua ini? Memang tidak boleh dinafikan bahawa terdapat pusat penjagaan warga em
 swasta. Ada yang bertaraf Lima Bintang, ada yang tidak ada bintang, *right?* Lima Bintang itu
 memang mahal tetapi ia adalah untuk golongan M40 dan T20."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1650,Dato’ Dr. Nelson a/l Renganathan,"Akan tetapi bagi golongan B40, jika mereka tidak dapat ditempatkan di fasiliti kerajaan,
+Bacaan Kali Yang Kedua",,■1650,1650,Dato’ Dr. Nelson a/l Renganathan,"Akan tetapi bagi golongan B40, jika mereka tidak dapat ditempatkan di fasiliti kerajaan,
 mereka terpaksa ditempatkan di fasiliti-fasiliti swasta dengan pembiayaan sendiri. Di sini saya
 ingin merayu kepada Yang Amat Berhormat Perdana Menteri merangkap Menteri Kewangan
 untuk meneliti isu ini dengan lebih mendalam dan mempertimbangkan subsidi bagi golongan
@@ -4187,14 +4187,14 @@ ini.
 Dengan ini, Tuan Yang di-Pertua, saya ingin memohon menyokong usul Rang
 Undang-undang Perkhidmatan 2023. Sekian, terima kasih..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1650,ANNOTATION,[Tepuk]
+Bacaan Kali Yang Kedua",,■1650,1650,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1650,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Dato’ Dr. Nelson a/l
+Bacaan Kali Yang Kedua",,■1650,1650,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Dato’ Dr. Nelson a/l
 Renganathan atas hujah dan juga perbahasan yang telah diberikan.
 Seterusnya, saya menjemput Yang Berhormat Tuan Robert Lau Hui Yew.
 Dipersilakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1651,Tuan Robert Lau Hui Yew,"Terima kasih Tuan Yang di-Pertua. Terima kasih untuk
+Bacaan Kali Yang Kedua",,4.51 ptg.,1651,Tuan Robert Lau Hui Yew,"Terima kasih Tuan Yang di-Pertua. Terima kasih untuk
 peluang untuk membahaskan rang undang-undang perbekalan tambahan 2023. Saya
 sebagai pembahas kedua terakhir hari ini. Tugas untuk kerajaan baharu yang ditubuhkan
 lebih empat bulan lalu dan dipimpin oleh Yang Amat Berhormat Dato’ Sri Anwar Ibrahim.
@@ -4260,7 +4260,7 @@ Akhirnya, kerajaan akan terpaksa memperkenalkan cukai barangan dan perkhidmatan
 iaitu GST sebab ini masih merupakan bentuk cukai yang paling efisien berbanding dengan
 Cukai Jualan sekarang."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1700,Tuan Robert Lau Hui Yew,"Perancangan untuk memperkenalkan semula GST harus bermula secepat mungkin.
+Bacaan Kali Yang Kedua",,■1700,1700,Tuan Robert Lau Hui Yew,"Perancangan untuk memperkenalkan semula GST harus bermula secepat mungkin.
 Saya bersetuju dengan rakan saya Yang Berhormat Senator Dato’ Ahmad Ibrahim bahawa
 cukai harus bermula dengan rendah iaitu tiga peratus. Saya lagi cadang, ini diikuti dengan
 tambahan tahunan sebanyak satu peratus setiap tahun sehingga kita capai enam peratus
@@ -4295,7 +4295,7 @@ Azhar. Saya bersetuju dengan apa yang dicadangkan oleh mereka- *on how the count
 move forward. That is the only way.* Kita mesti ada perpaduan, kita mesti ada kestabilan politik.
 Selain daripada itu, kita pun mesti mentransformasikan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1700,Tuan Sr. Haji Mohd Apandi bin Mohamad,"Penjelasan, penjelasan. Setuju tidak,
+Bacaan Kali Yang Kedua",,■1700,1700,Tuan Sr. Haji Mohd Apandi bin Mohamad,"Penjelasan, penjelasan. Setuju tidak,
 Yang Berhormat Senator, kalau saya katakan dia mesti bermula daripada pihak kerajaan
 dahulu? Umpamanya, peruntukan bagi tiap Ahli-ahli Parlimen. Kalau semua dapat, maka tidak
 timbul kemarahan daripada pihak yang tidak dapat. Baru timbul kesepakatan. Boleh setuju
@@ -4304,7 +4304,7 @@ Misal kata negeri Sarawak tidak dapat duit yang sepatutnya *belongs to Sarawak*,
 marah. Macam Kelantan, tidak dapat duit yang kami *dok* tuntut itu hari, kami pun marah. Jadi
 kalau diberi, kemarahan itu reda. Maka perpaduan akan berlaku. Minta penjelasan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1700,Tuan Robert Lau Hui Yew,"Saya berasa apa yang disebut oleh Tan Sri, hal
+Bacaan Kali Yang Kedua",,■1700,1700,Tuan Robert Lau Hui Yew,"Saya berasa apa yang disebut oleh Tan Sri, hal
 perpaduan ialah perpaduan seluruh rakyat, bukan negeri sama negeri. Akan tetapi, saya
 bersetuju dengan Yang Berhormat Senator Mohd Apandi.
 Semua negeri mesti ada perpaduan. *We must agree.* Hala tuju kita di mana. Tidak
@@ -4335,19 +4335,19 @@ Terdapat banyak skim dalam belanjawan untuk membantu dan membaiki ekonomi.
 Sebagai contoh, terdapat enam skim kredit mikro melalui BSN, TEKUN dan Bank Negara
 Malaysia berjumlah RM1.6 bilion. Dana BNM untuk..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1700,ANNOTATION,[Alarm masa berbunyi]
+Bacaan Kali Yang Kedua",,■1700,1700,ANNOTATION,[Alarm masa berbunyi]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1700,Tuan Robert Lau Hui Yew,"Mahu dua, tiga
+Bacaan Kali Yang Kedua",,■1700,1700,Tuan Robert Lau Hui Yew,"Mahu dua, tiga
 minit lagi, Tuan Yang di-Pertua..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1700,Timbalan Yang di-Pertua,Silakan.
+Bacaan Kali Yang Kedua",,■1700,1700,Timbalan Yang di-Pertua,Silakan.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1700,Tuan Robert Lau Hui Yew,"Sebab, Yang Berhormat Apandi, ada curi dua minit
+Bacaan Kali Yang Kedua",,■1700,1700,Tuan Robert Lau Hui Yew,"Sebab, Yang Berhormat Apandi, ada curi dua minit
 daripada saya..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1700,ANNOTATION,[Ketawa]
+Bacaan Kali Yang Kedua",,■1700,1700,ANNOTATION,[Ketawa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1700,Tuan Robert Lau Hui Yew,"Dana Bank Negara Malaysia untuk PMKS dengan peruntukan sebanyak RM9.7 bilion
+Bacaan Kali Yang Kedua",,■1700,1700,Tuan Robert Lau Hui Yew,"Dana Bank Negara Malaysia untuk PMKS dengan peruntukan sebanyak RM9.7 bilion
 dengan sembilan program skim yang berlainan. Pinjaman mudah PKS berjumlah RM3.6 bilion
 melalui 15 buah agensi yang berlainan dan 15 lagi program yang berlainan dan skim jaminan
 pembiayaan perniagaan.
@@ -4363,7 +4363,7 @@ untuk penambahbaikan infrastruktur. Ini ialah di tempat Cameron Highlands, Melak
 Dickson, Sepang, lorong memotong di *Senai-Desaru Expressway* dan Lebuhraya Utara-
 Selatan di Senai Utara, Johor Bahru dengan kos berjumlah RM525 juta."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1710,Tuan Robert Lau Hui Yew,"Soalan saya, mengapa dana untuk pelancongan digunakan bagi menambahbaikkan
+Bacaan Kali Yang Kedua",,■1710,1710,Tuan Robert Lau Hui Yew,"Soalan saya, mengapa dana untuk pelancongan digunakan bagi menambahbaikkan
 lebuh raya yang merupakan sebahagian dari lebuh raya bertol. *Why is money spend on a toll
 road* untuk pelancongan? Berapakah daripada dana tersebut telah diperuntukkan pada
 Sarawak dan Sabah di mana bandar destinasi pelancongan sesusah diakses?
@@ -4390,12 +4390,12 @@ with local company.* GLC ialah untuk *strategic industries* sahaja. Jangan disur
 involved with business that private sector can do*. Dengan ini saya mohon menyokong. Terima
 kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1710,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Tuan Robert Lau
+Bacaan Kali Yang Kedua",,■1710,1710,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Tuan Robert Lau
 Hui Yew atas perbahasan tadi.
 Seterusnya saya menjemput pembahas yang terakhir iaitu Yang Berhormat Datuk
 John Ambrose, dipersilakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1713,Datuk John Ambrose,"Terima kasih Tuan Yang di-Pertua. Nampaknya *first time* ini
+Bacaan Kali Yang Kedua",,5.13 ptg,1713,Datuk John Ambrose,"Terima kasih Tuan Yang di-Pertua. Nampaknya *first time* ini
 saya *last* pembahas. Pembahas fasal belanjawan ini, saya nampak Yang Amat Berhormat
 Perdana Menteri memang sentuh kos sara hidup di mana kalau kita tengok sara hidup ini
 bukan sahaja di Sabah tetapi di semua negeri. Jadi, saya nampak ramai sahabat saya sudah
@@ -4444,7 +4444,7 @@ Jadi, lebih eloklah kalau ada hospital di semua Parlimen di Malaysia ini.
 Satu lagi Tuan Yang di-Pertua ialah banjir. Banjir di sabah ini dan juga di seluruh
 Malaysia ini nampak bukan alang-alang dia punya banjir."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1720,Datuk John Ambrose,"Saya haraplah kalau boleh Kerajaan Malaysia Madani ini berilah peruntukan yang
+Bacaan Kali Yang Kedua",,■1720,1720,Datuk John Ambrose,"Saya haraplah kalau boleh Kerajaan Malaysia Madani ini berilah peruntukan yang
 cukup-cukup besar dan beri keutamaan kepada banjir-banjir ini. Bukan sahaja di negeri saya.
 Tadi saya nampak di Johor, di lain-lain, di Kelantan, di banyak tempat seperti di Kedah, semua
 kena banjir. Jadi saya mintalah kalau Kerajaan Madani ini, berilah tumpuan yang terbaik untuk
@@ -4480,18 +4480,18 @@ Selesai sudah tugas diberi,
 Esok kita bersua lagi.*
 Sekian, terima kasih..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1720,ANNOTATION,[Tepuk]
+Bacaan Kali Yang Kedua",,■1720,1720,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1720,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Datuk John
+Bacaan Kali Yang Kedua",,■1720,1720,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Datuk John
 Ambrose atas perbahasan tadi.
 Ahli-ahli Yang Berhormat, maka selesailah selama tiga hari diuntukkan untuk
 perbahasan Belanjawan 2023 iaitu bermula hari Rabu, Khamis dan hari ini. Seramai 50 Ahli-
 ahli Yang Berhormat telah mengambil bahagian perbahasan bagi Belanjawan 2023 ini..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1720,ANNOTATION,[Tepuk]
+Bacaan Kali Yang Kedua",,■1720,1720,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1720,Timbalan Yang di-Pertua,"Ahli-ahli Yang Berhormat, turut dirujuk adalah usul di bawah Peraturan Mesyuarat
+Bacaan Kali Yang Kedua",,■1720,1720,Timbalan Yang di-Pertua,"Ahli-ahli Yang Berhormat, turut dirujuk adalah usul di bawah Peraturan Mesyuarat
 11(1) yang telah pun diluluskan oleh Majlis ini pada 28 Mac 2023. Maka Mesyuarat Dewan
 hari ini ditangguhkan sehingga jam 10 pagi, hari Selasa 4 April 2023. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1725,ANNOTATION,[Dewan ditangguhkan pada pukul 5.25 petang]
+Bacaan Kali Yang Kedua",,5.25 petang,1725,ANNOTATION,[Dewan ditangguhkan pada pukul 5.25 petang]

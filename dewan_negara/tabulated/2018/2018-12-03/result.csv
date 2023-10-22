@@ -1,10 +1,10 @@
-level_1,level_2,level_3,timestamp,author,speech
-,,,1000,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
-PEMASYHURAN TUAN YANG DI-PERTUA,KEBENARAN BERCUTI,,1000,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, saya suka hendak
+level_1,level_2,level_3,raw_timestamp,timestamp,author,speech
+,,,10.00 pagi,1000,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
+PEMASYHURAN TUAN YANG DI-PERTUA,KEBENARAN BERCUTI,,10.00 pagi,1000,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, saya suka hendak
 memberitahu Majlis ini iaitu saya telah membenarkan cuti sakit daripada menghadiri
 mesyuarat di bawah Perkara 52(2), Perlembagaan Persekutuan kepada Yang Berhormat
 Senator Puan Sopiah binti Sharif daripada 3 Disember hingga 20 Disember 2018."
-PEMASYHURAN TUAN YANG DI-PERTUA,MEMPERKENANKAN AKTA-AKTA,,1000,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, suka saya hendak
+PEMASYHURAN TUAN YANG DI-PERTUA,MEMPERKENANKAN AKTA-AKTA,,10.00 pagi,1000,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, suka saya hendak
 memberitahu Majlis ini iaitu Seri Paduka Baginda Yang di-Pertuan Agong, dengan limpah
 kurnia Baginda telah memperkenankan akta-akta yang telah diluluskan oleh Parlimen
 dalam mesyuarat penggal yang lalu seperti berikut:
@@ -15,12 +15,12 @@ dalam mesyuarat penggal yang lalu seperti berikut:
 5. Akta Zon Bebas (Pindaan) 2018; dan
 6. Akta Pembekalan (Penguntukan Semula Peruntukan
 Perbelanjaan) 2018."
-PEMASYHURAN TUAN YANG DI-PERTUA,PERUTUSAN DARIPADA DEWAN RAKYAT,,1000,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, saya telah menerima satu
+PEMASYHURAN TUAN YANG DI-PERTUA,PERUTUSAN DARIPADA DEWAN RAKYAT,,10.00 pagi,1000,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, saya telah menerima satu
 perutusan daripada Dewan Rakyat yang meminta Dewan Negara mempersetujukan rang
 undang-undang yang telah diluluskan oleh Dewan Rakyat.
 Saya menjemput Setiausaha membacakan perutusan itu sekarang."
-PEMASYHURAN TUAN YANG DI-PERTUA,PERUTUSAN DARIPADA DEWAN RAKYAT,,1000,ANNOTATION,[Setiausaha membacakan Perutusan]
-PEMASYHURAN TUAN YANG DI-PERTUA,PERUTUSAN DARIPADA DEWAN RAKYAT,,1000,Tuan Yang di-Pertua,"“26 November 2018
+PEMASYHURAN TUAN YANG DI-PERTUA,PERUTUSAN DARIPADA DEWAN RAKYAT,,10.00 pagi,1000,ANNOTATION,[Setiausaha membacakan Perutusan]
+PEMASYHURAN TUAN YANG DI-PERTUA,PERUTUSAN DARIPADA DEWAN RAKYAT,,10.00 pagi,1000,Tuan Yang di-Pertua,"“26 November 2018
 **Perutusan Daripada Dewan Rakyat Kepada Dewan Negara**
 Tuan Yang di-Pertua Dewan Negara,
 Dewan Rakyat telah meluluskan rang undang-undang yang berikut, dan
@@ -34,16 +34,15 @@ Muda (Pekerjaan) (Pindaan) 2018
 Yang Ikhlas,
 t.t.
 YANG DI-PERTUA DEWAN RAKYAT”"
-PEMASYHURAN TUAN YANG DI-PERTUA,URUSAN MESYUARAT,,1000,Timbalan Menteri Di Jabatan Perdana Menteri [Tuan Mohamed Hanipa bin Maidin],"Tuan Yang di-Pertua, mengikut Peraturan Mesyuarat 66(2) saya memohon
+PEMASYHURAN TUAN YANG DI-PERTUA,URUSAN MESYUARAT,,10.00 pagi,1000,Timbalan Menteri Di Jabatan Perdana Menteri [Tuan Mohamed Hanipa bin Maidin],"Tuan Yang di-Pertua, mengikut Peraturan Mesyuarat 66(2) saya memohon
 memaklumkan supaya rang undang-undang yang tersebut di dalam perutusan itu
 dibacakan kali yang kedua dan ketiganya di Mesyuarat ini."
-PEMASYHURAN TUAN YANG DI-PERTUA,URUSAN MESYUARAT,,1000,Tuan Yang di-Pertua,Baiklah.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1000,Tuan Chandra Mohan A/L S. Thambirajah,"minta Perdana Menteri
-menyatakan, perkembangan terakhir mengenai cadangan memperkenalkan Akta
+PEMASYHURAN TUAN YANG DI-PERTUA,URUSAN MESYUARAT,,10.00 pagi,1000,Tuan Yang di-Pertua,Baiklah.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,10.00 pagi,1000,,"menyatakan, perkembangan terakhir mengenai cadangan memperkenalkan Akta
 Kebebasan Maklumat dan juga mengenai cadangan mengkaji semula akta-akta yang
 berkenaan seperti Akta Rahsia Rasmi 1971, dan Akta Perlindungan Pemberi Maklumat
 2010."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1000,Timbalan Menteri Di Jabatan Perdana Menteri [Tuan Mohamed Hanipa bin Maidin],"Terima kasih Tuan Yang di-Pertua, terima kasih kepada sahabat saya Tuan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,10.00 pagi,1000,Timbalan Menteri Di Jabatan Perdana Menteri [Tuan Mohamed Hanipa bin Maidin],"Terima kasih Tuan Yang di-Pertua, terima kasih kepada sahabat saya Tuan
 Senator Chandra Mohan A/L S. Thambirajah di atas soalan yang meminta Perdana
 Menteri menyatakan perkembangan terakhir mengenai cadangan memperkenalkan Akta
 Kebebasan Maklumat, dan juga mengenai cadangan mengkaji semula akta-akta yang
@@ -54,8 +53,8 @@ Yang Berhormat Senator di atas soalan yang dikemukakan. Izinkan saya juga untuk
 menjawab bersekali soalan daripada Yang Berhormat Senator Datuk Lee Tian Sing-
 pertanyaan 5 Disember 2018 memandangkan soalan yang dikemukakan itu juga adalah
 mengenai perkara yang sama Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1000,Tuan Yang di-Pertua,Silakan.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1000,Tuan Mohamed Hanipa bin Maidin,"Untuk makluman Yang Berhormat dan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,10.00 pagi,1000,Tuan Yang di-Pertua,Silakan.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,10.00 pagi,1000,Tuan Mohamed Hanipa bin Maidin,"Untuk makluman Yang Berhormat dan
 Dewan yang mulia ini, Jemaah Menteri pada 11 Julai 2018 telah bersetuju supaya Rang
 Undang-undang Kebebasan Maklumat digubal di peringkat Persekutuan. Penggubalan
 Rang Undang-undang Kebebasan Maklumat memerlukan kepada kajian yang
@@ -75,14 +74,14 @@ Majlis Keselamatan Negara, dan lain-lain agensi di Peringkat Persekutuan serta l
 pihak yang berkepentingan sedang dikenal pasti perlu diadakan bagi mendapat
 pandangan dan input-input yang bersesuaian sebelum rang undang-undang itu boleh
 digubal. Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1000,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Menteri. Silakan soalan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,10.00 pagi,1000,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Menteri. Silakan soalan
 tambahan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Tuan Chandra Mohan A/L S. Thambirajah,"Terima kasih Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1010,1010,Tuan Chandra Mohan A/L S. Thambirajah,"Terima kasih Tuan Yang di-
 Pertua. Sebelum saya mengemukakan soalan tambahan saya ingin mengambil
 kesempatan ini untuk mengalu-alukan kedatangan Persatuan Wanita Berjaya Sejati
 Malaysia ke Dewan Negara..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,ANNOTATION,[Tepuk]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Tuan Chandra Mohan A/L S. Thambirajah,"Diharap lawatan ini akan memberi manfaat kepada
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1010,1010,ANNOTATION,[Tepuk]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1010,1010,Tuan Chandra Mohan A/L S. Thambirajah,"Diharap lawatan ini akan memberi manfaat kepada
 tetamu yang hadir pada hari ini.
 Tuan Yang di-Pertua, saya ucapkan terima kasih kepada Yang Berhormat
 Timbalan Menteri atas jawapan yang tadi itu. Secara am, saya berpuas hati dengan
@@ -97,11 +96,11 @@ mencegah rasuah dan sebagainya secara umum. *So,* pada saya oleh kerana langkah-
 langkah itu dalam proses, saya faham ia memerlukan masa maka saya terima dengan
 baik jawapan Yang Berhormat Menteri itu dan tidak ada soalan tambahan. Terima kasih
 Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, kalau tidak ada soalan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1010,1010,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, kalau tidak ada soalan
 tambahan tidak payah bahas..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,ANNOTATION,[Dewan ketawa]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Tuan Yang di-Pertua,Silakan Yang Berhormat.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Tuan Mohd Yusmadi bin Mohd Yusoff,"Terima kasih Tuan Yang di-Pertua,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1010,1010,ANNOTATION,[Dewan ketawa]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1010,1010,Tuan Yang di-Pertua,Silakan Yang Berhormat.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1010,1010,Tuan Mohd Yusmadi bin Mohd Yusoff,"Terima kasih Tuan Yang di-Pertua,
 Yang Berhormat Timbalan Menteri soalan tambahan, memandangkan Yang Berhormat
 Menteri merujuk kepada enakmen daripada Kerajaan Negeri Pulau Pinang dan Selangor.
 Seperti Menteri lebih maklum terdapat sikit perbezaan di antara enakmen yang
@@ -118,12 +117,12 @@ rakyat dalam kerajaan yang telus dan sebagainya. Akan tetapi di Malaysia walaupu
 gubal di Selangor, di gubal di Pulau Pinang tapi perkara tersebut seolah-olah tidak
 diraikan sepertimana yang berlaku di tempat-tempat lain. Mohon penjelasan Menteri
 melalui pendekatan yang akan digunakan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Tuan Mohamed Hanipa bin Maidin,"Terima kasih kepada sahabat saya Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1010,1010,Tuan Mohamed Hanipa bin Maidin,"Terima kasih kepada sahabat saya Yang
 Berhormat Senator Tuan Mohd Yusmadi. Saya sebenarnya menunggu soalan tambahan
 daripada Yang Berhormat Chandra Mohan tadi tapi terima kasihlah kerana tidak
 mempunyai soalan tambahan"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,ANNOTATION,[Ketawa]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1010,Tuan Mohamed Hanipa bin Maidin,"Untuk makluman Yang Berhormat Senator Tuan Mohd Yusmadi dan juga
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1010,1010,ANNOTATION,[Ketawa]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1010,1010,Tuan Mohamed Hanipa bin Maidin,"Untuk makluman Yang Berhormat Senator Tuan Mohd Yusmadi dan juga
 Dewan yang mulia ini, saya pergi dulu pada kenapa kita hendak mengadakan Akta
 Kebebasan Maklumat inilah.
 Saya rasa sebenarnya kita sekarang ini bila kerajaan baharu ini kita hendak
@@ -151,14 +150,14 @@ Ini saya rasa mana-mana kerajaan pun kena terima sebab ada setengah-
 setengah maklumat yang kita nak *share* ini maklumat yang berbentuk rahsia, yang tidak
 boleh kita *compromise.* Jadi saya rasa ini yang kita sedang timbangkanlah sebab itulah
 kita sedang mengkaji sebenarnya keberkesanan undang-undang di Selangor dan Pulau
-Pinang tapi saya rasa itu sebagai kita punya *benchmark* lah. Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1010,Tuan Adrian Banie Lasimbang,"minta Menteri Industri Utama menyatakan,
+Pinang tapi saya rasa itu sebagai kita punya *benchmark* lah. Sekian, terima kasih.
+**2. Tuan Adrian Banie Lasimbang** minta Menteri Industri Utama menyatakan,
 apakah langkah-langkah yang diambil oleh kementerian untuk membantu pekebun-
 pekebun kecil getah dan kelapa sawit bagi menstabilkan harga komoditi kerana
 pendapatan mereka terjejas teruk akibat harga komoditi yang telah jatuh mendadak.
 Apakah tindakan kerajaan menyeragamkan harga getah di antara Sabah, Sarawak dan
 Semenanjung Malaysia."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1010,Timbalan Menteri Industri Utama [Datuk Seri Shamsul Iskandar @ Yusre bin Mohd Akin],"Tuan Yang di-Pertua, *assalamualaikum warahmatullahi wabarakatuh*,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1010,1010,Timbalan Menteri Industri Utama [Datuk Seri Shamsul Iskandar @ Yusre bin Mohd Akin],"Tuan Yang di-Pertua, *assalamualaikum warahmatullahi wabarakatuh*,
 salam sejahtera, salam Malaysia baharu. Terima kasih kepada Yang Berhormat Senator
 Tuan Adrian Banie Lasimbang di atas soalan penting yang telah dikemukakan di Dewan
 ini.
@@ -208,7 +207,7 @@ Selain itu Sabah mengamalkan dasar satu harga bagi seluruh negeri dan
 penentuan harga peringkat ladang di Sabah adalah di bawah bidang kuasa Lembaga
 Industri Getah Sabah manakala harga getah di Sarawak adalah di bawah pemantauan
 Jabatan Pertanian Sarawak. Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Tuan Adrian Banie Lasimbang,"Terima kasih Yang Berhormat Timbalan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,▪ 1020,1020,Tuan Adrian Banie Lasimbang,"Terima kasih Yang Berhormat Timbalan
 Menteri atas jawapan itu. Ini berkenaan dengan insentif pengeluaran getah. Setakat ini
 kita telah menetapkan harga kepada RM2.50 sen. Adakah pada masa akan datang akan
 mengkaji semula supaya harga ini juga berada pada paras yang lebih tinggi
@@ -216,7 +215,7 @@ memandangkan ia memerlukan dana yang agak besar untuk *maintain* subsidi untuk
 menyeragamkan harga ini. Apakah strategi kementerian untuk memastikan bahawa kita
 mempunyai dana yang cukup untuk *sustain* ataupun memastikan kelestarian program
 ini? Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Datuk Seri Shamsul Iskandar @ Yusre bin Mohd Akin,"Terima kasih. Tuan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,▪ 1020,1020,Datuk Seri Shamsul Iskandar @ Yusre bin Mohd Akin,"Terima kasih. Tuan
 Yang di-Pertua, soalan yang baik, Tuan Yang di-Pertua.
 Saya ingin memaklumkan kepada Yang Berhormat Senator bahawa Insentif
 Pengeluaran Getah (IPG) ini baru sahaja kita naikkan daripada RM2.20 sen kepada
@@ -246,7 +245,7 @@ Lembaga Getah kerana kadang-kadang jumlah yang hendak dituntut mungkin RM50
 hingga RM60. Kos nak pergi ke pejabat pun sudah RM50 hingga RM60. Jadi yang ini
 kita telah pun laksanakan dan mudah-mudahan dapat membantu pekebun kecil dalam
 saat harga komoditi getah ini sedang menurun. Terima kasih Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Datuk Sr. Haji Hanafi bin Haji Mamat,"Terima kasih Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,▪ 1020,1020,Datuk Sr. Haji Hanafi bin Haji Mamat,"Terima kasih Tuan Yang di-Pertua.
 Saya ingin bertanya kepada Yang Berhormat Timbalan Menteri. Sebelum daripada itu,
 saya nak maklumkan keadaan penderitaan penoreh getah di Kelantan. Ini kerana musim
 ini adalah musim tengkujuh. Purata harian yang mereka boleh menoreh getah, saya
@@ -260,7 +259,7 @@ adakah bantuan segera dalam bentuk tunai untuk membantu mereka ini menyelesaikan
 masalah segera. Bukan masalah berpanjangan. Masalah nak masuk sekolah pada bulan
 Januari dan saya pasti sebahagian daripada anak mereka tidak dapat pergi ke sekolah
 akibat tekanan kehidupan. Terima kasih Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Datuk Seri Shamsul Iskandar @ Yusre bin Mohd Akin,"Terima kasih Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,▪ 1020,1020,Datuk Seri Shamsul Iskandar @ Yusre bin Mohd Akin,"Terima kasih Yang
 Berhormat Senator di atas keprihatinan Yang Berhormat tentang nasib pekebun kecil
 yang tentunya senada dengan inisiatif yang dilakukan oleh kerajaan.
 Untuk makluman Yang Berhormat, pada hari Jumaat lepas, saya turun ke Kuala
@@ -293,14 +292,14 @@ ini kita promosi.
 Di Kuala Krai misalnya baru-baru ini semasa saya turun padang, ada pekebun
 kecil yang buat tanaman nanas dan dalam keadaan harga komoditi itu jatuh, mereka
 boleh tampung dengan *crash crop* yang lain. Terima kasih Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Tuan Yang di-Pertua,"*So* untuk musim tengkujuh ini, ada cadangan untuk *one-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,▪ 1020,1020,Tuan Yang di-Pertua,"*So* untuk musim tengkujuh ini, ada cadangan untuk *one-
 off?* Sedang dikaji?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1020,Datuk Seri Shamsul Iskandar @ Yusre bin Mohd Akin,"Setakat ini belum lagi,
-Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1020,Dato’ Sri Khairudin Samad,"minta Menteri Sumber Manusia menyatakan,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,▪ 1020,1020,Datuk Seri Shamsul Iskandar @ Yusre bin Mohd Akin,"Setakat ini belum lagi,
+Tuan Yang di-Pertua.
+**3. Dato’ Sri Khairudin Samad** minta Menteri Sumber Manusia menyatakan,
 apakah tindakan dan pemantauan yang diambil kementerian bagi kes buruh kanak-kanak
 yang melibatkan aspek eksploitasi."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1020,Timbalan Menteri Sumber Manusia [Dato’ Mahfuz bin Haji Omar],"Terima
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,▪ 1020,1020,Timbalan Menteri Sumber Manusia [Dato’ Mahfuz bin Haji Omar],"Terima
 kasih. *Assalamualaikum warahmatullahi wabarakatuh.* Terima kasih Tuan Yang di-
 Pertua, dan terima kasih kepada Yang Berhormat Dato’ Sri Khairudin Samad yang
 mengemukakan soalan.
@@ -333,7 +332,7 @@ tiga tahun kepada lima tahun penjara ataupun daripada RM10 ribu kepada RM100 rib
 ataupun kedua-duanya sekali. Jadi kita mempertingkatkan dari segi hukuman untuk
 memastikan supaya majikan-majikan ini dapat mematuhi syarat-syarat yang telah
 diperuntukkan dalam Akta 350 ini."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Timbalan Menteri Sumber Manusia [Dato’ Mahfuz bin Haji Omar],"Selaras dengan pindaan yang telah pun dicadangkan ini, Kementerian Sumber
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1030,1030,Timbalan Menteri Sumber Manusia [Dato’ Mahfuz bin Haji Omar],"Selaras dengan pindaan yang telah pun dicadangkan ini, Kementerian Sumber
 Manusia akan mengadakan kerjasama dengan Kementerian Pembangunan Wanita,
 Keluarga dan Masyarakat, Kementerian Pendidikan Malaysia, Kementerian Dalam
 Negeri, Kementerian Belia dan Sukan, serta agensi penguatkuasaan yang berkaitan bagi
@@ -345,7 +344,7 @@ Perkhidmatan khidmat nasihat dan promosi amalan terbaik perburuhan
 diteruskan oleh kementerian bagi memupuk kesedaran keperluan pematuhan
 perundangan negara berkaitan penggajian kanak-kanak dan orang muda. Terima kasih
 Yang Berhormat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Dato' Sri Khairudin Samad,"Terima kasih Yang Berhormat Menteri. Soalan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1030,1030,Dato' Sri Khairudin Samad,"Terima kasih Yang Berhormat Menteri. Soalan
 saya ialah berkenaan dengan kanak-kanak yang melibatkan aspek eksploitasi tetapi oleh
 kerana Yang Berhormat Menteri juga menjawab berkenaan dengan anak-anak muda ini,
 jadi saya hendak sentuh yang anak muda, yang kanak-kanak ini dah jelas.
@@ -365,7 +364,7 @@ naikkan umur pekerjaan ke 21 tahun, ataupun kita hendak turunkan minum arak
 dibenarkan, beli arak dibenarkan umur 18 tahun. Saya tidak menggalakkan tetapi oleh
 kerana kita masyarakat majmuk, jadi ada mereka yang pergi ke tempat-tempat ini untuk-
 memerlukan arak dan sebagainya. Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Dato’ Mahfuz bin Haji Omar,"Terima kasih Yang Berhormat yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1030,1030,Dato’ Mahfuz bin Haji Omar,"Terima kasih Yang Berhormat yang
 mengemukakan soalan berkaitan dengan penggajian kanak-kanak, khususnya orang
 muda.
 Untuk pengetahuan Yang Berhormat, dalam pindaan ini orang muda dibenarkan
@@ -388,15 +387,15 @@ Jabatan Tenaga Kerja iaitu daripada Ketua Pengarah Jabatan Tenaga Kerja.
 Jadi kita akan membuat pertimbangan dan sudah tentulah bahawa tidak ada
 kemunasabahan khususnya bagi anak-anak muda untuk dibenarkan bekerja di tempat-
 tempat yang sebegitu. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Tuan Yang di-Pertua,"Yang Berhormat Menteri, *so* kanak-kanak yang berumur
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1030,1030,Tuan Yang di-Pertua,"Yang Berhormat Menteri, *so* kanak-kanak yang berumur
 kurang 21 ini tidak boleh kerja di bar-bar dan sebagainya?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Dato’ Mahfuz bin Haji Omar,"Ya, ya."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Tuan Yang di-Pertua,Itu jawapan Yang Berhormat Menteri?
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Dato’ Mahfuz bin Haji Omar,"Ya, kecuali dengan kebenaran daripada..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Tuan Yang di-Pertua,Ibu bapa?
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Dato’ Mahfuz bin Haji Omar,"*No*, Jabatan Tenaga Kerja."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Tuan Yang di-Pertua,"Ya, okey."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Tuan Chandra Mohan A/L S. Thambirajah,"Terima kasih Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1030,1030,Dato’ Mahfuz bin Haji Omar,"Ya, ya."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1030,1030,Tuan Yang di-Pertua,Itu jawapan Yang Berhormat Menteri?
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1030,1030,Dato’ Mahfuz bin Haji Omar,"Ya, kecuali dengan kebenaran daripada..."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1030,1030,Tuan Yang di-Pertua,Ibu bapa?
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1030,1030,Dato’ Mahfuz bin Haji Omar,"*No*, Jabatan Tenaga Kerja."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1030,1030,Tuan Yang di-Pertua,"Ya, okey."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1030,1030,Tuan Chandra Mohan A/L S. Thambirajah,"Terima kasih Tuan Yang di-Pertua.
 Ini saya nak rujuk kepada jawapan yang diberi tadi.
 Kalau kita tengok tadi, saya merujuk kepada eksploitasi daripada aspek kerja.
 Kita dah tengok jawapan tadi berkenaan dengan *Children and Young Person Act 1966*
@@ -413,8 +412,8 @@ Kedua, *at least* untuk mereka yang bersekolah dan sebagainya, supaya tidak
 dibenarkan bekerja dalam apa keadaan pun. Kalau kita tengok definisi, *“child” is younger
 than 15*, tidak dibenarkan. Sama ada kajian itu juga akan meliputi skop akta tersebut.
 Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Tuan Yang di-Pertua,Terima kasih. Adakah kajian untuk kemas kini akta?
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Dato’ Mahfuz bin Haji Omar,"Kita sentiasa terbuka tetapi untuk makluman
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1030,1030,Tuan Yang di-Pertua,Terima kasih. Adakah kajian untuk kemas kini akta?
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1030,1030,Dato’ Mahfuz bin Haji Omar,"Kita sentiasa terbuka tetapi untuk makluman
 Dewan bahawa pindaan ini dibuat selaras dengan undang-undang antarabangsa yang
 sudah pun di*ratify* oleh kerajaan yang sebelum daripada ini. Jadi ini telah pun di*ratify* kan
 oleh kerajaan sebelum ini tentang berkaitan dengan hak kanak-kanak.
@@ -426,13 +425,13 @@ Tiba-tiba hari ini dia nak tunjuk perasaan di waktu harga getah murah, orang
 lapar, dia nak ajak orang datang ke Kuala Lumpur, jadi habis duit tambang saja. Jadi
 sebab itu saya cadang supaya depa buat kenduri pisang lebih baik daripada bawa orang
 tunjuk perasaan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Tuan Yang di-Pertua,Terima kasih Yang Berhormat Menteri.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Puan Raj Munni binti Sabu,"Tuan Yang di-Pertua, sebelum saya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1030,1030,Tuan Yang di-Pertua,Terima kasih Yang Berhormat Menteri.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1030,1030,Puan Raj Munni binti Sabu,"Tuan Yang di-Pertua, sebelum saya
 mengemukakan soalan tambahan, izinkan saya mengalu-alukan bagi pihak Pakatan
 Harapan penyertaan Dato’ Sri Khairudin dan beberapa rakan Senator kita ke dalam
 Pakatan Harapan..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,ANNOTATION,[Tepuk]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Puan Raj Munni binti Sabu,"Tuan Yang di-Pertua, soalan tambahan saya kepada Yang Berhormat Menteri.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1030,1030,ANNOTATION,[Tepuk]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1030,1030,Puan Raj Munni binti Sabu,"Tuan Yang di-Pertua, soalan tambahan saya kepada Yang Berhormat Menteri.
 Sebenarnya isu pekerja buruh kanak-kanak merupakan masalah dunia. Di mana
 Organisasi Buruh Antarabangsa (ILO) pun melaporkan kanak-kanak yang berusia 5
 hingga 18 tahun bekerja sejumlah 152 juta. Dalam konteks Malaysia sendiri, pada 19 Jun
@@ -445,8 +444,8 @@ kanak di Sabah yang agak kompleks sebenarnya, kerana mereka melibatkan dua
 kelompok iaitu kanak-kanak yang tidak mempunyai dokumen dan juga kanak-kanak yang
 tidak mempunyai kewarganegaraan, tetapi isu buruh kanak-kanak ini berlaku dalam
 negara kita. Terima kasih Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Tuan Yang di-Pertua,Isu kanak-kanak khusus Sabah dan Sarawak.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Dato’ Mahfuz bin Haji Omar,"Kita sentiasa mengambil tanggungjawab bukan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1030,1030,Tuan Yang di-Pertua,Isu kanak-kanak khusus Sabah dan Sarawak.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1030,1030,Dato’ Mahfuz bin Haji Omar,"Kita sentiasa mengambil tanggungjawab bukan
 sahaja di Sabah termasuk di Sarawak dan sebagainya, kerana ia ada ordinan buruh yang
 berasingan tetapi sudah tentu ada penyelarasan dengan akta pekerjaan di peringkat
 Federal. Ia ada satu ordinan buruh di peringkat Sabah dan juga di peringkat negeri
@@ -457,14 +456,14 @@ akan dibuat dan tidak ada masalah untuk Yang Berhormat boleh bertemu dengan
 Jabatan Tenaga Kerja di peringkat negeri Sabah ataupun di mana-mana sahaja yang
 berkaitan dengan isu-isu yang dibangkitkan. Kita akan memberikan pertimbangan yang
 sewajarnya, *insya-Allah.*"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1030,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Menteri. Silakan Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1030,1030,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Menteri. Silakan Yang
 Berhormat Datuk Abdul Ghani bin Mohamed Yassin."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1040,Datuk Abdul Ghani bin Mohamed Yassin,"minta Menteri Belia dan Sukan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1040,1040,Tuan Yang di-Pertua,"**4. Datuk Abdul Ghani bin Mohamed Yassin** minta Menteri Belia dan Sukan
 menyatakan, apakah usaha-usaha lain pihak kementerian dalam melatih kepimpinan
 muda dalam kalangan belia dan beliawanis di negara ini selain daripada program-
 program sedia ada seperti Program Rakan Muda, Parlimen Belia, Felo Perdana dan
 sebagainya."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1040,Menteri Belia dan Sukan [Tuan Syed Saddiq bin Syed Abdul Rahman],"Terima kasih Tuan Yang di-Pertua. Untuk makluman Ahli Yang Berhormat, Kementerian
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1040,1040,Menteri Belia dan Sukan [Tuan Syed Saddiq bin Syed Abdul Rahman],"Terima kasih Tuan Yang di-Pertua. Untuk makluman Ahli Yang Berhormat, Kementerian
 Belia dan Sukan menitik beratkan pentingnya untuk kita melahirkan belia yang
 berwawasan melalui program-program kepimpinan yang menyeluruh.
 Untuk menjawab soalan Yang Berhormat, saya ingin bahagikan ucapan saya
@@ -590,13 +589,13 @@ dan juga tiga Akademi Pembangunan Belia dan beberapa Kompleks Rakan Muda yang
 hanya perlu ditambah baik untuk diguna pakai supaya akhirnya contohnya, BTN dapat
 diterjemahkan semula kepada satu program yang boleh mengangkat dan
 memartabatkan suara belia, mencungkil anak muda yang berwawasan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Menteri Belia dan Sukan [Tuan Syed Saddiq bin Syed Abdul Rahman],"Itu merupakan dua program baru yang kita akan kendalikan pada tahun depan.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1050,1050,Menteri Belia dan Sukan [Tuan Syed Saddiq bin Syed Abdul Rahman],"Itu merupakan dua program baru yang kita akan kendalikan pada tahun depan.
 Terima kasih Yang Berhormat, terima kasih Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Datuk Abdul Ghani bin Mohamed Yassin,"Terima kasih Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1050,1050,Datuk Abdul Ghani bin Mohamed Yassin,"Terima kasih Tuan Yang di-Pertua.
 Sebelum itu saya ingin mengalu-alukan kedatangan pelawat-pelawat kita daripada
 Parlimen Kota Kinabalu, Sabah..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,ANNOTATION,[Dewan tepuk]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Datuk Abdul Ghani bin Mohamed Yassin,"Tuan Yang di-Pertua, terima kasih Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1050,1050,ANNOTATION,[Dewan tepuk]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1050,1050,Datuk Abdul Ghani bin Mohamed Yassin,"Tuan Yang di-Pertua, terima kasih Yang
 Berhormat Menteri, saya sungguh berpuas hati dengan jawapan dan juga keterangan
 daripada Yang Berhormat Menteri.
 Saya mengambil maklum perkembangan program-program khususnya
@@ -610,21 +609,21 @@ persidangan akhir Parlimen Malaysia Belia dengan memberi alasan atas kekangan,
 kekurangan peruntukan, sedangkan program ini amat baik. Saya ingin bertanya, bilakah
 kementerian bercadang untuk meneruskan semula program ini dan untuk buat sesi yang
 akan datang. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Tuan Syed Saddiq bin Syed Abdul Rahman,"Terima kasih. Program ini akan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1050,1050,Tuan Syed Saddiq bin Syed Abdul Rahman,"Terima kasih. Program ini akan
 diteruskan pada tahun depan. Seperti yang saya tekankan sekarang ada beberapa
 pensyarah UKM tengah mencari jalan untuk mereformasi Parlimen Belia supaya
 penyertaan anak muda dapat ditambah baik dan pada masa yang sama memberi
 penekanan khusus bagi mereka yang bawah 21 tahun. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Laksamana Pertama Haji Mohamad Imran (B) bin Abd. Hamid,"Tuan Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1050,1050,Laksamana Pertama Haji Mohamad Imran (B) bin Abd. Hamid,"Tuan Yang
 di-Pertua, saya berpandangan PLKN merupakan salah satu program yang boleh
 melahirkan pemimpin muda yang kental. Saya difahamkan PLKN telah diambil alih oleh
 KBS. Jadi saya ingin mengetahui apakah pendekatan kementerian terhadap program ini
 dan apakah nasib staf-staf yang sedang bekerja dengan PLKN. Terima kasih Tuan Yang
 di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Tuan Syed Saddiq bin Syed Abdul Rahman,"Terima kasih. Ini kalau saya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1050,1050,Tuan Syed Saddiq bin Syed Abdul Rahman,"Terima kasih. Ini kalau saya
 hendak jawab ringkas, soalan lain"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,ANNOTATION,[Ketawa]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1050,Tuan Syed Saddiq bin Syed Abdul Rahman,"Esok kementerian ini akan menjawab soalan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1050,1050,ANNOTATION,[Ketawa]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1050,1050,Tuan Syed Saddiq bin Syed Abdul Rahman,"Esok kementerian ini akan menjawab soalan
 tersebut di Dewan Rakyat dengan lebih menyeluruh. Pada minggu lepas kami sempat
 berjumpa, pihak KSU berjumpa dengan beberapa staf kontrak PLKN untuk menerangkan
 hala tuju pada masa depan.
@@ -651,11 +650,11 @@ sampai bulan 12 supaya mereka ada masa untuk mencari sambil gaji tetap dibayar.
 Akan tetapi mereka yang tiada selepas itu, seperti yang saya tekankan melalui
 sistem MFLS yang sedia ada. Mungkin kita tidak boleh selamatkan semua tetapi kita
 akan cuba untuk membantu seramai mungkin melalui menggunakan peruntukan yang
-sedia ada. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1050,Dato' Dr. Mohd Nor bin Haji Monutty,"minta Perdana Menteri menyatakan,
+sedia ada. Terima kasih.
+**5. Dato' Dr. Mohd Nor bin Haji Monutty** minta Perdana Menteri menyatakan,
 apakah latihan dan kursus yang telah dijalankan kepada Ahli Jawatankuasa Masjid
 supaya lebih profesional dan mempunyai kemahiran komunikasi yang baik."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1050,Timbalan Menteri Di Jabatan Perdana Menteri [Puan Fuziah binti Salleh],"Terima kasih Tuan Yang di-Pertua, terima kasih kepada Yang Berhormat Dato’ Dr. Mohd
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1050,1050,Timbalan Menteri Di Jabatan Perdana Menteri [Puan Fuziah binti Salleh],"Terima kasih Tuan Yang di-Pertua, terima kasih kepada Yang Berhormat Dato’ Dr. Mohd
 Nor Monutty di atas soalan.
 Tuan Yang di-Pertua, kerajaan melalui Jabatan Kemajuan Islam Malaysia
 (JAKIM), sentiasa mengambil berat dan berusaha dalam mempertingkatkan
@@ -691,7 +690,7 @@ kursus-kursus untuk menepati KPI imam ini. Oleh sebab sebelum ini mungkin ianya 
 dibuat begitu. Akan tetapi sekarang kita tengok balik, apa ia bidang keberhasilan, apa
 KPI, imam macam mana, masjid macam mana dan kemudian kita *reversed engineer,* kita
 susun program-program latihan untuk memenuhi KPI tersebut. Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1050,Dato' Dr. Mohd Nor bin Haji Monutty,"Terima kasih, tahniah dan syabas
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1050,1050,Dato' Dr. Mohd Nor bin Haji Monutty,"Terima kasih, tahniah dan syabas
 kepada JAKIM. Saya ada satu soalan tambahan kepada Yang Berhormat Menteri.
 Adakah masjid-masjid di Malaysia di bawah kawalan penyeliaan JAKIM merancang
 untuk mengadakan *niche* ataupun jenama-jenama tertentu bagi masjid-masjid Wilayah
@@ -707,18 +706,18 @@ kepada Islam sebagai agama universal ataupun *rahmatan lil’alamin.*
 Jadi kalau ini dapat diwujudkan, barangkali kalau ada perancangan untuk tahun
 hadapan, lagi tiga minggu lagi. Ianya akan memberikan manfaat yang besar kepada
 masyarakat Islam di dalam negara ini. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1050,Puan Fuziah binti Salleh,"Terima kasih di atas soalan Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1050,1050,Puan Fuziah binti Salleh,"Terima kasih di atas soalan Yang Berhormat
 Senator. Buat makluman Yang Berhormat Senator dan Tuan Yang di-Pertua, ada
 sebanyak 6,393 masjid di seluruh negara. Akan tetapi kesemuanya melainkan tiga ialah
 di bawah pengurusan Jabatan Agama Islam Negeri. Semua masjid melainkan tiga iaitu
 Masjid Negara, Masjid Putra, dan Masjid Tuanku Mizan Zainal Abidin. Itu yang di bawah
 kendalian pusat, bawah JAKIM *direct.* Yang lain itu semua di bawah Jabatan Agama
 Islam Negeri. Majlis Agama Islam Negeri."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1100,Puan Fuziah binti Salleh,"Jadi merekalah yang menentukan arah dan hala tuju masjid tersebut. Akan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,▪ 1100,1100,Puan Fuziah binti Salleh,"Jadi merekalah yang menentukan arah dan hala tuju masjid tersebut. Akan
 tetapi cadangan itu merupakan satu cadangan yang amat baik, dan bolehlah kita bawa
 di dalam muzakarah-muzakarah kita pada masa akan datang apabila kita berjumpa
 dengan Jabatan Agama Islam Negeri, dan juga Majlis Agama Islam Negeri. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1100,Puan Asmak binti Husin,"Terima kasih Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,▪ 1100,1100,Puan Asmak binti Husin,"Terima kasih Tuan Yang di-Pertua.
 *Assalamualaikum warahmatullahi wabarakatuh.*
 Soalan saya ialah berkaitan dengan usaha kerajaan untuk memasyarakatkan
 Ahli Jawatankuasa Masjid di bawah pelbagai dasar dan program di bawah pelbagai
@@ -731,8 +730,8 @@ Wanita, Keluarga dan Masyarakat dan program tersebut tidak akan berjaya kecuali
 dengan penyertaan masyarakat. Jadi sejauh mana kesedaran tersebut dan latihan
 diberikan kepada pihak masjid untuk memasyarakatkan, dan menyertai program-
 program di bawah kementerian berbeza. Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1100,Tuan Yang di-Pertua,Adakah sebuah *‘Join-Cabinet Committee’?*
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1100,Puan Fuziah binti Salleh,"Terima kasih Yang Berhormat Senator Puan Asmak.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,▪ 1100,1100,Tuan Yang di-Pertua,Adakah sebuah *‘Join-Cabinet Committee’?*
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,▪ 1100,1100,Puan Fuziah binti Salleh,"Terima kasih Yang Berhormat Senator Puan Asmak.
 Sebenarnya apabila saya katakan tadi, unjuran ke hadapan ialah kita akan buat KPI
 khusus untuk masjid. Khusus berkenaan dengan pengurusan masjid yang sebelum ini
 tidak dilihat begitu. Kita di dalam rancangan kita untuk mewujudkan ini, kita harap kita
@@ -742,12 +741,12 @@ Jadi memang seharusnya masjid itu merupakan *lead agency* di dalam
 melibatkan kementerian-kementerian lain di dalam program pengimarahan masjid, yang
 mungkin pada ketika ini tidak berlaku lagi tetapi termasuklah di dalam apa yang kita ingin
 letak sebagai *the key result areas,* ataupun bidang keberhasilan pengurusan masjid di
-masa hadapan. *Insya-Allah*, terima kasih di atas cadangan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1100,Datuk Sambanthan A/L Manickam,"minta Menteri Kewangan menyatakan,
+masa hadapan. *Insya-Allah*, terima kasih di atas cadangan.
+**6. Datuk Sambanthan A/L Manickam** minta Menteri Kewangan menyatakan,
 sejauh manakah kesan penyelewengan dalam kerajaan lalu telah menjejaskan ekonomi
 negara dan meningkatkan hutang negara seperti didakwa oleh Kerajaan Pakatan
 Harapan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1100,Timbalan Menteri Kewangan [Dato’ Haji Amiruddin bin Hamzah],"Terima
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,▪ 1100,1100,Timbalan Menteri Kewangan [Dato’ Haji Amiruddin bin Hamzah],"Terima
 kasih Tuan Yang di-Pertua dan terima kasih Yang Berhormat Datuk Sambanthan di atas
 soalan yang diberikan.
 Dalam tempoh sembilan bulan pertama tahun 2018, Keluaran Dalam Negara
@@ -810,11 +809,11 @@ khususnya daripada aspek pengurusan kewangan negara. Ini bagi memastikan
 sebarang keputusan yang diambil oleh kerajaan adalah lebih menyeluruh dan tidak
 membebankan kedudukan kewangan kerajaan berdasarkan maklumat yang lebih tepat
 dan komprehensif. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1100,Datuk Sambanthan A/L Manickam,"Terima kasih Yang Berhormat Menteri
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,▪ 1100,1100,Datuk Sambanthan A/L Manickam,"Terima kasih Yang Berhormat Menteri
 yang telah menjawab soalan itu. Soalan tambahan saya adalah apakah Tabung Harapan
 mampu menyelesaikan masalah kewangan negara dan kewajarannya kerana kesan
 ditanggung oleh rakyat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,6.,,1100,Dato’ Haji Amiruddin bin Hamzah,"Terima kasih Yang Berhormat Datuk
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,▪ 1100,1100,Dato’ Haji Amiruddin bin Hamzah,"Terima kasih Yang Berhormat Datuk
 Sambathan di atas soalan tambahan yang telah diberikan.
 Tabung Harapan yang telah diwujudkan yang sebenarnya merupakan satu
 cadangan yang sebenarnya datang daripada rakyat sendiri, sudah tentu tidak mampu
@@ -827,10 +826,10 @@ Yang Berhormat, memang tidak dapat untuk menyelesaikan semua tetapi kita
 rasa kebersamaan mereka untuk bersama-sama memastikan untuk mengurangkan
 bebanan kewangan kerajaan adalah sesuatu yang amat-amat kita alu-alukan. Terima
 kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1110,Puan Asmak binti Husin,"minta Menteri Komunikasi dan Multimedia
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1110,1110,Dato’ Haji Amiruddin bin Hamzah,"**7. Puan Asmak binti Husin** minta Menteri Komunikasi dan Multimedia
 menyatakan, apakah kerajaan bercadang untuk mengharamkan aplikasi yang
 memudaratkan masyarakat seperti *Tumblr* dan lain-lain."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1110,Timbalan Menteri Komunikasi dan Multimedia [Tuan Eddin Syazlee Shith],"*Bismillahi Rahmani Rahim. Assalamualaikum warahmatullahi wabarakatuh* dan salam
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1110,1110,Timbalan Menteri Komunikasi dan Multimedia [Tuan Eddin Syazlee Shith],"*Bismillahi Rahmani Rahim. Assalamualaikum warahmatullahi wabarakatuh* dan salam
 sejahtera.
 Dengan izin Tuan Yang di-Pertua, pada ketika ini pihak kerajaan tidak
 bercadang untuk mengharamkan secara keseluruhan sesuatu platform atau aplikasi am
@@ -853,7 +852,7 @@ dan agensi-agensi kerajaan serta di peringkat antarabangsa seperti UNICEF, *Goog
 Facebook.* Inisiatif ini berkeupayaan turut meliputi program advokasi dan pembangunan
 modul latihan dan pendidikan kepada ibu bapa, penjaga serta para pendidik. Sekian,
 Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1110,Puan Asmak binti Husin,"Terima kasih kepada Yang Berhormat Menteri.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1110,1110,Puan Asmak binti Husin,"Terima kasih kepada Yang Berhormat Menteri.
 Sebenarnya saya bangkitkan soalan ini kerana aplikasi-aplikasi ini sebenarnya sangat
 menyumbang kepada kejadian jenayah sivil di kalangan kanak-kanak.
 Sebelum ini saya banyak juga menganjurkan program-program kesedaran
@@ -871,7 +870,7 @@ kerjasama juga dengan syarikat *telco.* Macam kita ada *Kiddie Program, Kiddie Z
 sebagainya tetapi saya dapati tidak ramai ibu bapa yang tahu. Jadi sejauh mana usaha
 SKMM ini untuk memastikan yang ibu bapa ini terlibat dan faham secara teknikal tentang
 usaha mencegah jenayah kanak-kanak di siber ini. Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1110,Tuan Eddin Syazlee Shith,"Terima kasih kepada Yang Berhormat Senator
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1110,1110,Tuan Eddin Syazlee Shith,"Terima kasih kepada Yang Berhormat Senator
 Puan Asmak. Saya bersetuju dengan pandangan yang diberikan itu tadi iaitu ibu bapa,
 terdapat kebanyakan ibu bapa ini kurang responsif kepada kempen-kempen kesedaran
 yang dibuat oleh kerajaan. SKMM ini juga menjalankan pelbagai inisiatif untuk
@@ -902,19 +901,19 @@ mempunyai apa yang kita sebutkan, dengan izin, *parental control* ke atas penggu
 aplikasi-aplikasi ini dengan memberi pemahaman yang cukup dan jelas kepada anak-
 anak supaya tidak terkeliru ataupun boleh mendedahkan mereka kepada penggunaan
 secara salah aplikasi-aplikasi yang ada di laman sesawang tersebut. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1110,Tuan Yang di-Pertua,"Yang Berhormat Menteri, tadi Yang Berhormat Senator
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1110,1110,Tuan Yang di-Pertua,"Yang Berhormat Menteri, tadi Yang Berhormat Senator
 ada bangkitkan berkenaan dengan program. Adakah program untuk menggiatkan lagi
 kesedaran ibu bapa dari program semasa yang ada?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1110,Tuan Eddin Syazlee Shith,"Dengan izin Tuan Yang di-Pertua, seperti yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1110,1110,Tuan Eddin Syazlee Shith,"Dengan izin Tuan Yang di-Pertua, seperti yang
 saya sebutkan tadi, antara program-program macam KDB tadi, itu melibatkan semua
 golongan lapisan masyarakat termasuk ibu, bapa dan anak-anak. Ada juga beberapa
 program lain yang turut dibuat yang secara khususnya untuk mendidik ibu bapa supaya
 lebih menitikberatkan tentang penggunaan secara berleluasa oleh anak-anak mereka ini.
 Ini merupakan satu usaha yang dibuat secara berterusan Tuan Yang di-Pertua dan
 sehingga ke hari ini masih lagi diteruskan dan mendapat sambutan yang sangat positif."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1110,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Menteri. Silakan Dato'
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1110,1110,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Menteri. Silakan Dato'
 Hajah Fahariyah."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1110,Dato' Hajah Fahariyah binti Haji Md Nordin,"Terima kasih Tuan Yang di-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1110,1110,Dato' Hajah Fahariyah binti Haji Md Nordin,"Terima kasih Tuan Yang di-
 Pertua. Soalan saya kepada Yang Berhormat Menteri adalah berkenaan dengan iklan-
 iklan yang berbaur lucah apabila kanak-kanak ini kadang-kadang, apabila dia bermain
 *games* ataupun *Facebook* lah sebagai contoh anak-anak remaja kita akan timbul kadang-
@@ -923,8 +922,8 @@ seks. Saya ingin bertanya kepada Yang Berhormat Menteri, apakah tindakan tegas o
 pihak kerajaan untuk mengekang iklan-iklan seperti ini keluar di platform-platform *apps*
 dan juga platform-platform permainan yang dimainkan oleh kanak-kanak khususnya.
 Terima kasih Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1110,Tuan Yang di-Pertua,"Jikalau ada tambahan, jawapan tambahan dari yang itu."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1120,Tuan Eddin Syazlee Shith,"Terima kasih kepada Yang Berhormat Dato’
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1110,1110,Tuan Yang di-Pertua,"Jikalau ada tambahan, jawapan tambahan dari yang itu."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1120,1120,Tuan Eddin Syazlee Shith,"Terima kasih kepada Yang Berhormat Dato’
 Fahariyah. Untuk makluman Yang Berhormat Dato’, seperti yang saya sebutkan sebentar
 tadi, hanya pemilik gedung aplikasi sahaja yang boleh menurunkan seperti pihak
 *Googleplay* dan juga *Apple Application Store* yang boleh menurunkan, mengeluarkan
@@ -946,7 +945,7 @@ Berhormat Menteri Dalam Negeri bahawa akta-akta yang dalam kajian seperti seksye
 berita-berita palsu ini daripada berleluasa sehingga boleh menjejaskan keharmonian
 kaum dan juga kestabilan politik di dalam negara ini. Jadi itu antara perkara-perkara
 yang boleh dilakukan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1120,Dato’ Haji Mohd Suhaimi bin Abdullah,"Terima kasih Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1120,1120,Dato’ Haji Mohd Suhaimi bin Abdullah,"Terima kasih Tuan Yang di-Pertua.
 Saya melihat aplikasi di dalam internet ini membawa juga kepada satu penyakit baru.
 Dulu kita bercakap berhubung dengan penagihan dadah. Sekarang ini *internet addiction.*
 Baru-baru di ASEAN telah membuat kajian di mana kanak-kanak di antara 5 tahun hingga
@@ -958,8 +957,8 @@ dan dibuat oleh kerajaan dan berapa banyak wang telah pun dihabiskan. Sekarang i
 *internet addictation* yang telah pun mula melanda negara kita. Apakah peranan kerajaan,
 kita hendak bertanya tumpang awal ini apakah kerajaan telah pun mengadakan program-
 program yang menjurus ke arah penyakit baru ini? Terima kasih Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1120,Tuan Yang di-Pertua,"Dengan izin, *internet addiction.*"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1120,Tuan Eddin Syazlee Shith,"Dengan izin, Tuan Yang di-Pertua. Terima kasih
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1120,1120,Tuan Yang di-Pertua,"Dengan izin, *internet addiction.*"
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1120,1120,Tuan Eddin Syazlee Shith,"Dengan izin, Tuan Yang di-Pertua. Terima kasih
 kepada soalan Yang Berhormat sebentar tadi. Saya hendak maklumkan sebagaimana
 yang disebutkan oleh Yang Berhormat Senator Puan Asmak sebentar tadi, program ini
 banyak, sentiasa dibuat secara berterusan. Akan tetapi respons daripada ibu bapa dan
@@ -977,14 +976,14 @@ Kerajaan juga telah mengambil tindakan terhadap individu-individu yang
 melakukan jenayah terhadap kanak-kanak di bawah peruntukan perundangan sedia ada
 seperti Kanun Keseksaan, Akta Kanak-kanak dan Akta Kesalahan-kesalahan Jenayah
 Seksual terhadap Kanak-kanak 2017."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,1120,Tuan Yang di-Pertua,"Ahli Yang Berhormat, Yang Berhormat Menteri saya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1120,1120,Tuan Yang di-Pertua,"Ahli Yang Berhormat, Yang Berhormat Menteri saya
 ingat kena buat program bersama dengan Ahli-ahli Yang Berhormat kedua-dua Dewan
 lah untuk penyedaran. Terima kasih Yang Berhormat Menteri. Silakan Yang Berhormat
-Puan Lim Pui Ying."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1120,Puan Lim Hui Ying,"minta Menteri Air, Tanah dan Sumber Asli menyatakan,
+Puan Lim Pui Ying.
+**8. Puan Lim Hui Ying** minta Menteri Air, Tanah dan Sumber Asli menyatakan,
 jumlah peruntukan untuk projek tebatan banjir yang akan disalurkan kepada negeri Pulau
 Pinang bagi tahun 2019."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1120,"Timbalan Menteri Air, Tanah dan Sumber Asli [Tengku Zulpuri Shah bin Raja Puji]","Terima kasih Yang Berhormat Senator Puan Lim Hui Ying. *Bismillahi
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1120,1120,"Timbalan Menteri Air, Tanah dan Sumber Asli [Tengku Zulpuri Shah bin Raja Puji]","Terima kasih Yang Berhormat Senator Puan Lim Hui Ying. *Bismillahi
 Rahmani Rahim. Assalamualaikum warahmatullahi wabarakatuh.*
 Tuan Yang di-Pertua, jumlah peruntukan untuk projek tebatan banjir yang akan
 disalurkan kepada negeri Pulau Pinang bagi tahun 2019 adalah sebanyak RM24.08 juta
@@ -1002,37 +1001,37 @@ Peruntukan ini adalah anggaran keperluan aliran tunai projek bagi tahun 2019
 yang antaranya merangkumi peruntukan bagi pelantikan perunding, reka bentuk
 terperinci, pelantikan perunding kerja ukur dan penyiasatan tanah serta tender kerja.
 Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1120,Puan Lim Hui Ying,"Terima kasih. Pada akhir tahun 2017, Kerajaan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1120,1120,Puan Lim Hui Ying,"Terima kasih. Pada akhir tahun 2017, Kerajaan
 Persekutuan telah mengumumkan jumlah projek tebatan banjir bernilai RM1 bilion untuk
 Pulau Pinang. Adakah senarai projek RM1 bilion ini telah dikemas kini, dan apakah status
 projek-projek dalam senarai tersebut? Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1120,Tengku Zulpuri Shah bin Raja Puji,"Untuk pengetahuan Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1120,1120,Tengku Zulpuri Shah bin Raja Puji,"Untuk pengetahuan Yang Berhormat
 Senator, apa yang saya jelaskan tadi adalah peruntukan pada tahun 2019. Kalau
 mengikut bajet ataupun kos keseluruhan untuk projek yang lima tadi saya maksudkan,
 projek keseluruhan di bawah RMK-11, RM194.5 juta. Ini merangkumi semua, maksudnya
 termasuk juga yang RM1 bilion itu untuk projek jangka masa panjang. Yang saya jelaskan
 tadi adalah berkenaan dengan soalan yang menanyakan berkenaan dengan pada tahun
 2019, jadi peruntukan itu khas itu untuk 2019. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1120,Datuk Haji Abidullah bin Salleh,"Terima kasih kepada Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1120,1120,Datuk Haji Abidullah bin Salleh,"Terima kasih kepada Tuan Yang di-Pertua.
 Apabila *Penang* ada masalah banjir, Melaka pun hendak menyahut tentang- dua-dua
 *lane, Penang* dan Melaka. Baru-baru ini pada bulan November di daerah Alor Gajah,
 Melaka, banjir yang begitu teruk sekali. Walaupun di daerah Alor Gajah itu jam*,* hujan
 tidak berapa lebat kerana Sungai Melaka ini bersambung dengan di sebelah utara,
 Negeri Sembilan dan di sebelah selatan- Johor iaitu di Muar."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1130,Datuk Haji Abidullah bin Salleh,"Jadi air yang mengalir daripada Negeri Sembilan yang menyebabkan di Alor
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1130,1130,Datuk Haji Abidullah bin Salleh,"Jadi air yang mengalir daripada Negeri Sembilan yang menyebabkan di Alor
 Gajah lebih kurang 2,000 orang dipindahkan untuk penempatan banjir. Soalan saya,
 apakah rancangan ataupun peruntukan yang akan dilaksanakan oleh kementerian ini.
 Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1130,Tuan Yang di-Pertua,"Yang Berhormat, soalan itu khusus kepada Pulau
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1130,1130,Tuan Yang di-Pertua,"Yang Berhormat, soalan itu khusus kepada Pulau
 Pinang kalau boleh jawab, boleh? Kalau tidak."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,8.,,1130,Tengku Zulpuri Shah bin Raja Puji,"Terima kasih Yang Berhormat Senator.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1130,1130,Tengku Zulpuri Shah bin Raja Puji,"Terima kasih Yang Berhormat Senator.
 Saya ambil makluman yang ini tetapi jawapan tidak ada pada saya sekarang ini, dan
-saya akan jawab secara bertulis. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1130,Tuan Aknan A/L Ehtook,"minta Menteri Hal Ehwal Ekonomi menyatakan,
+saya akan jawab secara bertulis. Terima kasih.
+**9. Tuan Aknan A/L Ehtook** minta Menteri Hal Ehwal Ekonomi menyatakan,
 langkah jangka panjang yang baharu untuk membantu golongan B40 meningkatkan
 pendapatan dan mengurangkan jurang pendapatan tanpa terlalu bergantung kepada
 bantuan secara terus- *direct hand-out,* yang terbukti tidak lestari."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1130,Timbalan Menteri Hal Ehwal Ekonomi [Dr. Mohd Radzi bin Md Jidin],"Tuan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1130,1130,Timbalan Menteri Hal Ehwal Ekonomi [Dr. Mohd Radzi bin Md Jidin],"Tuan
 Yang di-Pertua, untuk makluman Ahli Yang Berhormat, Kajian Separuh Penggal
 Rancangan Malaysia Kesebelas telah menggariskan beberapa langkah jangka panjang
 untuk meningkatkan pendapatan dan kuasa beli bagi mengurangkan jurang pendapatan
@@ -1066,7 +1065,7 @@ meningkatkan pendidikan dan latihan, serta menggalakkan perniagaan dan
 keusahawanan, pendapatan dan kuasa beli rakyat akan meningkat. Ini secara tidak
 langsung akan mengurangkan kebergantungan mereka kepada bantuan secara terus
 dari kerajaan. Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1130,Tuan Aknan A/L Ehtook,"Terima kasih. Soalan tambahan saya, berdasarkan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1130,1130,Tuan Aknan A/L Ehtook,"Terima kasih. Soalan tambahan saya, berdasarkan
 pengalaman Yang Berhormat Menteri, berdasarkan profil dan juga analisis sikap
 penerima-penerima bantuan selama ini, apakah yang boleh kementerian rumuskan dan
 apakah pengajaran yang kita boleh dapat daripada maklumat tersebut yang kita boleh
@@ -1075,7 +1074,7 @@ yang berpendapatan rendah ini ataupun cara macam manakah kita untuk meningkatkan
 pendapatan mereka.
 Apakah sikap-sikap, atau sifat-sifat yang perlu kita hilangkan daripada mereka
 ini, supaya mereka boleh meningkatkan pendapatan mereka. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1130,Dr. Mohd Radzi bin Md Jidin,"Terima kasih Yang Berhormat. Jika kita lihat B40
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1130,1130,Dr. Mohd Radzi bin Md Jidin,"Terima kasih Yang Berhormat. Jika kita lihat B40
 itu sendiri, B40 ini walaupun sekumpulan besarnya B40 berpendapatan kurang daripada
 RM4,306 sebulan di dalam kumpulan itu sendiri terdapat golongan B40 di peringkat atas,
 dan golongan B40 di peringkat pendapatan rendah dan golongan B40 di peringkat di
@@ -1084,13 +1083,13 @@ Jadi di sinilah kita mengambil kira- cuba membawa mereka meningkat dari satu
 peringkat ke satu peringkat, termasuklah perubahan-perubahan sikap dan dalam
 memastikan mereka mengambil peluang yang diberikan kerajaan, khususnya dalam
 pendidikan, perniagaan, dan sebagainya. Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1130,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Timbalan Menteri.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1130,1130,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Timbalan Menteri.
 Kepada Menteri-Menteri yang sudi datang untuk menjawab tetapi masa untuk
 pertanyaan jawab lisan ini sudah selesai dan Menteri Hal Ehwal Ekonomi pun sudah
 bersedia."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,9.,,1130,ANNOTATION,[Masa Pertanyaan-pertanyaan bagi Jawab Lisan tamat]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1. Tuan Chandra Mohan A/L S. Thambirajah minta Perdana Menteri,,■1130,1130,ANNOTATION,[Masa Pertanyaan-pertanyaan bagi Jawab Lisan tamat]
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1136,Menteri Hal Ehwal Ekonomi [Dato’ Seri Mohamed Azmin bin Ali],"*Bismillahi
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,11.36 pg.,1136,Menteri Hal Ehwal Ekonomi [Dato’ Seri Mohamed Azmin bin Ali],"*Bismillahi
 Rahmani Rahim.*
 Tuan Yang di-Pertua, dengan nama Allah yang Maha Pemurah lagi Maha
 Penyayang, dengan sukacitanya saya berdiri di hadapan Dewan yang mulia ini untuk
@@ -1119,23 +1118,23 @@ Malaysia berganding bahu untuk memastikan pertumbuhan ekonomi
 negara kekal mampan serta pengagihan kekayaan dibuat secara telus,
 adil dan saksama.”"
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1136,ANNOTATION,[18 Oktober 2018]
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,11.36 pg.,1136,ANNOTATION,[18 Oktober 2018]
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1136,Tuan Yang di-Pertua,Silakan Yang Berhormat Menteri.
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,11.36 pg.,1136,Tuan Yang di-Pertua,Silakan Yang Berhormat Menteri.
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1136,Dato’ Seri Mohamed Azmin bin Ali,"Tuan Yang di-Pertua, *alhamdulillah*, saya
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,11.36 pg.,1136,Dato’ Seri Mohamed Azmin bin Ali,"Tuan Yang di-Pertua, *alhamdulillah*, saya
 bersyukur ke hadrat Allah SWT, yang mengupayakan saya untuk membentangkan Kajian
 Separuh Penggal Rancangan Malaysia Kesebelas di Dewan Negara.
 Usul ini telah dibentangkan di Dewan Rakyat pada 18 Oktober 2018 oleh Yang
 Amat Berhormat Perdana Menteri, dan telah diluluskan pada 1 November 2018."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1136,Tuan Yang di-Pertua,"Yang Berhormat Menteri, seminit."
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,11.36 pg.,1136,Tuan Yang di-Pertua,"Yang Berhormat Menteri, seminit."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1136,ANNOTATION,[Timbalan Tuan Yang di-Pertua mempengerusikan Mesyuarat]
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,11.36 pg.,1136,ANNOTATION,[Timbalan Tuan Yang di-Pertua mempengerusikan Mesyuarat]
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1136,Timbalan Yang di-Pertua,"Yang Berhormat, teruskan."
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,11.36 pg.,1136,Timbalan Yang di-Pertua,"Yang Berhormat, teruskan."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1136,Dato’ Seri Mohamed Azmin bin Ali,"Terima kasih. KSP Rancangan Malaysia
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,11.36 pg.,1136,Dato’ Seri Mohamed Azmin bin Ali,"Terima kasih. KSP Rancangan Malaysia
 Kesebelas memperkenalkan anjakan dalam pemikiran pembangunan sebagai dokumen
 reformasi yang komprehensif. KSP RMK Ke-11 menggariskan agenda islah yang akan
 menyuntik kekuatan baru pada institusi awam.
@@ -1150,7 +1149,7 @@ agenda pembangunan bangsa Malaysia yang merdeka, dan demokratik lagi berteraskan
 kebebasan dan keadilan, serta mengutamakan kesejahteraan dan kesentosaan semua
 rakyat."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1140,Dato’ Seri Mohamed Azmin bin Ali,"Meskipun masyarakat Malaysia rencam dari segi suku kaum, agama, bahasa
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1140,1140,Dato’ Seri Mohamed Azmin bin Ali,"Meskipun masyarakat Malaysia rencam dari segi suku kaum, agama, bahasa
 dan kebudayaan, pembangunan yang adil lagi saksama akan mengukuhkan semangat
 kekitaan dan jati diri kebangsaan. Justeru itu, kita mahu melihat pembangunan dari
 aspek peningkatan kuasa beli rakyat dan perlu dinikmati oleh semua rakyat. Kesenjangan
@@ -1250,7 +1249,7 @@ Pendakwa Raya supaya diurus oleh dua individu yang berlainan. Kuasa autonomi
 Parlimen akan dipertingkatkan dengan memperkenalkan semula Akta Perkhidmatan
 Parlimen 1963. Sistem Jawatankuasa Pemilih akan diwujudkan."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1150,Dato’ Seri Mohamed Azmin bin Ali,"Jawatankuasa ini akan memperakui pelantikan jawatan utama di SPRM, SPR,
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1150,1150,Dato’ Seri Mohamed Azmin bin Ali,"Jawatankuasa ini akan memperakui pelantikan jawatan utama di SPRM, SPR,
 Jabatan Audit Negara dan Suruhanjaya Pelantikan Kehakiman. Suruhanjaya tertentu
 seperti SPRM dan SPR akan juga bertanggungjawab secara langsung kepada Parlimen.
 Hubungan antara Kerajaan Persekutuan, kerajaan negeri dan kerajaan tempatan akan
@@ -1358,7 +1357,7 @@ masyarakat terhadap kesihatan mental. Selain itu, dasar dan peraturan baru akan 
 untuk mengawal selia produk, teknologi dan perkhidmatan penjagaan kesihatan dalam
 talian."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1200,Dato’ Seri Mohamed Azmin bin Ali,"Tumpuan akan diberi untuk mengukuh keupayaan dan kapasiti agensi
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1200,1200,Dato’ Seri Mohamed Azmin bin Ali,"Tumpuan akan diberi untuk mengukuh keupayaan dan kapasiti agensi
 penguatkuasaan dan keselamatan serta mempergiat usaha pencegahan jenayah bagi
 mengekang pencerobohan sempadan kawalan, terutamanya di pintu masuk negara akan
 dipertingkatkan. Kerajaan ingin menegaskan bahawa perpaduan nasional dan
@@ -1466,7 +1465,7 @@ profesional. Kerajaan juga akan menggalakkan institusi TVET untuk mempelajari da
 menerima guna amalan terbaik daripada negara Jepun, khususnya melalui penerapan
 pengetahuan dan kemahiran teknologi terkini dalam pengajaran dan pembelajaran."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1210,Dato’ Seri Mohamed Azmin bin Ali,"Tuan Yang di-Pertua, tonggak kelima - mempertingkat kemapanan alam sekitar
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1210,1210,Dato’ Seri Mohamed Azmin bin Ali,"Tuan Yang di-Pertua, tonggak kelima - mempertingkat kemapanan alam sekitar
 melalui pertumbuhan hijau. Kerajaan komited untuk memastikan pembangunan sosial
 ekonomi turut memberi penekanan kepada aspek perlindungan alam sekitar selaras
 dengan Agenda 2030 untuk pembangunan mampan. Tadbir urus akan diperkukuh bagi
@@ -1572,7 +1571,7 @@ pemangkin utama dalam memacu pembangunan inovasi dan teknologi di Malaysia.
 Antara lain, ekosistem inovasi akan diperkukuhkan, bandar pintar diwujudkan dan FDI
 Teknologi akan digalakkan supaya bertapak di Cyberjaya."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1220,Dato’ Seri Mohamed Azmin bin Ali,"Tuan Yang di-Pertua, kerajaan akan memastikan infrastruktur yang disediakan
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1220,1220,Dato’ Seri Mohamed Azmin bin Ali,"Tuan Yang di-Pertua, kerajaan akan memastikan infrastruktur yang disediakan
 adalah berkualiti dari segi integrasi, liputan dan ketersambungan serta kemampuan dan
 kemapanan. Bagi memperkukuhkan ketersambungan merentas wilayah, pembinaan
 lebuh raya di luar kawasan Lembah Klang akan diberikan keutamaan. Antaranya
@@ -1645,15 +1644,15 @@ Akhirulkalam, saya menyeru semua Ahli Yang Berhormat untuk membahaskan
 Usul ini secara bertanggungjawab dengan *dhomir* yang suci bagi menterjemah aspirasi
 rakyat supaya menjadi kenyataan. Tuan Yang di-Pertua, saya mohon mencadangkan."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1220,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat Dato’ Seri Mohamed
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1220,1220,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat Dato’ Seri Mohamed
 Azmin bin Ali, Menteri Hal Ehwal Ekonomi. Terima kasih banyak. Sekarang ada sesiapa
 yang menyokong?"
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1220,Timbalan Menteri Hal Ehwal Ekonomi [Dr. Mohd Radzi bin Md Jidin],"Tuan
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1220,1220,Timbalan Menteri Hal Ehwal Ekonomi [Dr. Mohd Radzi bin Md Jidin],"Tuan
 Yang di-Pertua, saya mohon menyokong Usul Pembentangan Kajian Separuh Penggal
 Rancangan Malaysia Kesebelas oleh Yang Berhormat Menteri Hal Ehwal Ekonomi."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1220,Timbalan Yang di-Pertua,"Terima kasih. Ahli-ahli Yang Berhormat,
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1220,1220,Timbalan Yang di-Pertua,"Terima kasih. Ahli-ahli Yang Berhormat,
 masalahnya ialah usul Yang Berhormat Menteri Hal Ehwal Ekonomi sekarang ini terbuka
 untuk dibahas.
 Ahli-ahli Yang Berhormat, saya masih lagi menerima, adakah Yang Berhormat
@@ -1661,7 +1660,7 @@ nak berbahas. Tolong bagi nama kepada saya atau kepada Setiausaha.
 Sekarang saya nak mulakan dengan calon kita- jauh. Diminta Yang Berhormat
 Datuk Dr. Lucas Umbul. Dipersilakan."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1228,Datuk Dr. Lucas Umbul,"Terima kasih Tuan Yang di-Pertua. Salam sejahtera,
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,12.28 ptg.,1228,Datuk Dr. Lucas Umbul,"Terima kasih Tuan Yang di-Pertua. Salam sejahtera,
 salam perpaduan, salam sayangi Malaysia dan salam ucapan perbahasan terakhir dari
 saya sebagai Ahli Dewan Negara.
 Saya ingin memulakan perbahasan saya dengan mengucapkan setinggi-tinggi
@@ -1676,7 +1675,7 @@ oleh Perdana Menteri, Tun Dr. Mahathir bin Mohamad pada hari Khamis, 18 Oktober
 lepas, cukup penting untuk melihat hala tuju Kerajaan Baharu iaitu Kerajaan Pakatan
 Harapan (PH) membawa Malaysia ke arah agenda rakyat dan negara."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1230,Datuk Dr. Lucas Umbul,"Dokumen RMK ini merupakan dasar kerajaan baharu yang pertama selepas
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1230,1230,Datuk Dr. Lucas Umbul,"Dokumen RMK ini merupakan dasar kerajaan baharu yang pertama selepas
 memenangi Pilihanraya Umum Keempat Belas yang lepas. Apa yang pasti, rakyat di luar
 sana sudah dahagakan perubahan, pembaharuan dan ingin mengetahui apakah langkah
 dan strategi kerajaan.
@@ -1776,7 +1775,7 @@ Sabah dan Sarawak. Ini kerana Sabah dan Sarawak saiz negerinya amat jauh berbeza
 sekali. Sudi untuk saya nyatakan bahawa Sabah dan Sarawak selalu ketinggalan dalam
 kemajuan komunikasi."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1240,Datuk Dr. Lucas Umbul,"Sekiranya di Semenanjung sudah ada bayangan untuk menerapkan teknologi
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1240,1240,Datuk Dr. Lucas Umbul,"Sekiranya di Semenanjung sudah ada bayangan untuk menerapkan teknologi
 era 5G tapi kami di Sabah malangnya hanya menjadi satu mimpi sahaja. Liputan jalur
 lebar terutama pedalaman Sabah amat menyedihkan. Maka saya mohon kepada
 Kementerian Komunikasi dan Multimedia agar prasarana jalur lebar dapat
@@ -1877,7 +1876,7 @@ di negeri Sabah ketika ini dianggarkan antara 7 ribu hektar hingga 11 ribu hekta
 hektar kawasan padi bukit boleh menghasilkan 12 guni padi beras bersih atau kira-kira
 setengah tan."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1250,Datuk Dr. Lucas Umbul,"Berdasarkan perangkaan itu, saya menganggarkan hasil tahunan pada bukit
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1250,1250,Datuk Dr. Lucas Umbul,"Berdasarkan perangkaan itu, saya menganggarkan hasil tahunan pada bukit
 yang dikutip petani di Sabah adalah antara 10,500 tan sehingga 22 ribu tan setahun.
 Peruntukan subsidi untuk sektor penanaman padi bukit harus diberikan agar hasil dapat
 dikutip oleh petani di negeri ini akan terus bertambah, sekali gus membantu
@@ -1966,9 +1965,9 @@ Jangan simpan di dalam peti;
 Sekiranya ada dari saya silap dan salah;
 Mohon maaf dan jangan simpan di dalam hati...*"
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1250,ANNOTATION,[Dewan tepuk]
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1250,1250,ANNOTATION,[Dewan tepuk]
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1250,Datuk Dr. Lucas Umbul,"Dengan izin Tuan Yang di-Pertua, *it has been a pleasure and my deepest
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1250,1250,Datuk Dr. Lucas Umbul,"Dengan izin Tuan Yang di-Pertua, *it has been a pleasure and my deepest
 honour to become a Senator of Parliament of Malaysia*. Doa saya agar Institusi Parlimen
 akan terus diperkasa, cemerlang dan gemilang, bukan saja di Malaysia, bahkan juga di
 peringkat dunia.
@@ -1977,10 +1976,10 @@ dengan ini mengundur diri. Akan tetapi tidak lupa untuk menyokong sepenuhnya
 pembentangan Kajian Separuh Penggal Rancangan Malaysia Kesebelas oleh Yang
 Amat Berhormat Perdana Menteri Malaysia. Sekian, terima kasih. Tepat jam 1..."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1250,ANNOTATION,"[Dewan
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1250,1250,ANNOTATION,"[Dewan
 tepuk]"
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1250,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat, sahabat kita Yang
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1250,1250,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat, sahabat kita Yang
 Berhormat Senator Datuk Dr. Lucas Umbul yang selalu memberi pandangan yang baik,
 ilmu yang baik di Dewan ini. Jadi, pihak Dewan merakamkan ucapan terima kasih atas
 sumbangan anda itu dan bak kata orang tua tadi, budi baik anda tetap dikenang, yang
@@ -1990,9 +1989,9 @@ Burung pun membuat sarang;
 Bukan budi sebarang budi;
 Budi baik dikenang orang...*"
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1250,ANNOTATION,[Dewan tepuk]
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1250,1250,ANNOTATION,[Dewan tepuk]
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1250,Timbalan Yang di-Pertua,"Itulah saya rasa yang kita ingat dan ada lagi empat, lima orang. Oleh kerana
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1250,1250,Timbalan Yang di-Pertua,"Itulah saya rasa yang kita ingat dan ada lagi empat, lima orang. Oleh kerana
 masa tidak sempat, kita tangguhkan, kita sambung. Jadi, jangan lupa, saya senang hati
 bahawa banyak ilmu yang telah dicurahkan oleh anda sekalian. Khususnya daripada
 Yang Berhormat Dr. Unggas.
@@ -2001,21 +2000,21 @@ Kopi disimpan di dalam raga;
 Ilmu itu umpama gemala;
 Daripada intan lebih berharga...*"
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1250,ANNOTATION,[Dewan tepuk]
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1250,1250,ANNOTATION,[Dewan tepuk]
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1250,Timbalan Yang di-Pertua,"Sekian jam 1, dengan ini sekarang saya tangguhkan persidangan sehingga jam
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1250,1250,Timbalan Yang di-Pertua,"Sekian jam 1, dengan ini sekarang saya tangguhkan persidangan sehingga jam
 2.30 petang. Sekian, terima kasih."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1301,ANNOTATION,[Mesyuarat ditempohkan pada pukul 1.01petang]
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1.01petang,1301,ANNOTATION,[Mesyuarat ditempohkan pada pukul 1.01petang]
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1430,ANNOTATION,[Mesyuarat disambung semula pada pukul 2.30 petang]
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,2.30 petang,1430,ANNOTATION,[Mesyuarat disambung semula pada pukul 2.30 petang]
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1430,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1430,1430,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1430,Tuan Yang di-Pertua,"Sambung perbahasan, Yang Berhormat Senator Datuk
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1430,1430,Tuan Yang di-Pertua,"Sambung perbahasan, Yang Berhormat Senator Datuk
 Razali bin Idris."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1432,Datuk Razali bin Idris,"*Assalamualaikum warahmatullahi wabarakatuh.* Salam
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,2.32 ptg.,1432,Datuk Razali bin Idris,"*Assalamualaikum warahmatullahi wabarakatuh.* Salam
 sejahtera. *Bismillahi Rahmani Rahim. Alhamdulillahi rabbil 'alamin, wassalatu wassalamu
 ala asrafil ambiya iwal mursalin, wa'ala alihi wasahbihi ajma'in.*
 Tuan Yang di-Pertua, terima kasih saya ucapkan kerana diberi peluang
@@ -2085,7 +2084,7 @@ Bumiputera perlu digilap sebagai modal insan yang berupaya bersaing selain mempu
 nilai murni dan kehidupan dan alam pekerjaan. Dengan mereka menjadi golongan
 profesional yang setanding dan dihormati oleh kaum-kaum lain."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1440,Datuk Razali bin Idris,"Tidak salah Kerajaan Pakatan Harapan memberi tumpuan kepada reformasi
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1440,1440,Datuk Razali bin Idris,"Tidak salah Kerajaan Pakatan Harapan memberi tumpuan kepada reformasi
 demi pemerkasaan agenda bumiputera kerana matlamatnya membentuk generasi
 bumiputera baharu yang berpegang teguh kepada nilai moral, integriti serta sikap rajin
 berusaha. Malah keberanian Yang Amat Berhormat Tun Dr. Mahathir menyebut secara
@@ -2178,9 +2177,9 @@ Justeru itu, kita perlu menjadikan hubungan kaum dengan pemerintah sebagai
 hubungan yang berasaskan tanggungjawab bersama, saling memerlukan dan sentiasa
 menyokong di antara satu sama lain. Bak kata peribahasa, seperti aur dengan tebing..."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1440,ANNOTATION,[Membaca ayat Al-Quran]
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1440,1440,ANNOTATION,[Membaca ayat Al-Quran]
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1440,Datuk Razali bin Idris,"Antaranya bermaksud, dengan berpegang teguhlah kamu semua pada tali
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1440,1440,Datuk Razali bin Idris,"Antaranya bermaksud, dengan berpegang teguhlah kamu semua pada tali
 agama Allah dan janganlah kamu bercerai-berai dan ingatlah nikmat Allah kepada mu
 kepada kamu dahulu bermusuhan lalu Allah mempersatukan hatimu sehingga dengan
 kurnianya kamu menjadi saudara. Sedangkan kamu ketika itu kamu berada di tepi jurang
@@ -2189,32 +2188,32 @@ ayat Nya kepada kamu agar kamu mendapat petunjuk.
 Tuan Yang di-Pertua, saya menyokong usul Kajian Separuh Penggal
 Rancangan Malaysia Kesebelas. *Wassalammualaikum warahmatullahi wabarakatuh.*"
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1440,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat. Ahli-ahli Yang Berhormat,
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1440,1440,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat. Ahli-ahli Yang Berhormat,
 senarai nama di sini tidak banyak. Sila hantar nama Ahli-ahli Yang Berhormat yang
 hendak berbahas.
 Sekarang saya jemput Yang Berhormat Senator Datuk Sambanthan A/L
 Manickam. Nanti kita kena habis awal kot. Silakan Yang Berhormat."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1450,Datuk Sambanthan A/L Manickam,"Terima kasih kepada Tuan Yang di-Pertua
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,2.50 ptg.,1450,Datuk Sambanthan A/L Manickam,"Terima kasih kepada Tuan Yang di-Pertua
 Dewan Negara kerana telah memberikan saya peluang untuk berbahas berkenaan
 Belanjawan 2019 yang telah dibentangkan oleh Yang Berhormat Tuan Lim Guan Eng,
 Menteri Kewangan pada 2 November 2018.
 Tuan Yang di-Pertua..."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1450,Tuan Yang di-Pertua,"Yang Berhormat, ini berkenaan dengan Rancangan
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,2.50 ptg.,1450,Tuan Yang di-Pertua,"Yang Berhormat, ini berkenaan dengan Rancangan
 Malaysia Kesebelas. *The next one.*"
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1450,Datuk Sambanthan A/L Manickam,"Saya memang beri nama saya untuk
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,2.50 ptg.,1450,Datuk Sambanthan A/L Manickam,"Saya memang beri nama saya untuk
 bahas pembentangan bajet"
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1450,ANNOTATION,[Ketawa]
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,2.50 ptg.,1450,ANNOTATION,[Ketawa]
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1450,Tuan Yang di-Pertua,"Tidak apa Yang Berhormat. Yang Berhormat boleh
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,2.50 ptg.,1450,Tuan Yang di-Pertua,"Tidak apa Yang Berhormat. Yang Berhormat boleh
 duduk. Nanti bajet punya hal, saya akan panggil Yang Berhormat.
 Silakan Yang Berhormat Senator Datuk Lim Pay Hen. Ahli-ahli Yang Berhormat,
 sila kemukakan senarai nama sekarang. Silakan Yang Berhormat."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1451,Datuk Lim Pay Hen,"Terima kasih Tuan Yang di-Pertua, kerana diberi peluang
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,2.51 ptg.,1451,Datuk Lim Pay Hen,"Terima kasih Tuan Yang di-Pertua, kerana diberi peluang
 untuk melibatkan dalam perbahasan Kajian Separuh Penggal Rancangan Malaysia
 Kesebelas. Ada beberapa isu yang saya ingin sentuh dalam perbahasan saya.
 Pertama, mengenai menganjak kumpulan isi rumah bawah 40 peratus atau
@@ -2294,7 +2293,7 @@ telah diusahakan oleh kerajaan terdahulu dengan kadar segera. Dengan akta ini, a
 memberi jaminan dan keyakinan kepada wanita untuk menyertai pasaran buruh.
 Seterusnya, ingin saya menyentuh tentang isu pemilikan rumah oleh rakyat Malaysia."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1500,Datuk Lim Pay Hen,"Masalah pemilikan rumah di kalangan rakyat Malaysia terutamanya kumpulan
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1500,1500,Datuk Lim Pay Hen,"Masalah pemilikan rumah di kalangan rakyat Malaysia terutamanya kumpulan
 B40 dan M40 merupakan satu masalah yang masih berlarutan dan memerlukan
 penglibatan pihak kerajaan. Namun dalam perancangan kerajaan baharu untuk membina
 rumah mampu milik dilihat akan lebih perlahan apabila hanya menyasarkan 200 ribu
@@ -2396,7 +2395,7 @@ ketiga. Kerajaan sebelum ini telah menetapkan agar setiap Pusat Transformasi Ban
 (UTC) untuk mewujudkan satu pusat pekerjaan dan karier atau *job center,* dengan izin,
 yang berbeza daripada fungsi JobsMalaysia."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1510,Datuk Lim Pay Hen,"Ini adalah untuk meningkatkan sokongan kepada para pekerja, bakal graduan
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1510,1510,Datuk Lim Pay Hen,"Ini adalah untuk meningkatkan sokongan kepada para pekerja, bakal graduan
 untuk menjodohkan peluang pekerjaan dalam pasaran buruh dengan kemahiran yang
 sedia ada serta bantuan khidmat nasihat yang lain. Saya juga ingin mengetahui daripada
 kerajaan baharu adakah usaha ini akan diteruskan atau sekali lagi dirombak semula.
@@ -2422,17 +2421,17 @@ dilaksanakan bagi tempoh lima tahun yang akan datang?
 Tuan Yang di-Pertua, dengan kata-kata ini, saya mohon menyokong. Sekian,
 terima kasih."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1510,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat. Silakan Yang Berhormat
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1510,1510,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat. Silakan Yang Berhormat
 Senator Dr. Zaiedi Haji Suhaili. Yang Berhormat, tidak ada nama lagi? Senarai saya ini
 yang terakhir. Sila kemukakan senarai nama. Silakan Yang Berhormat."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1510,Dr. Zaiedi Haji Suhaili,"Terima kasih Tuan Yang di-Pertua kerana memberi
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1510,1510,Dr. Zaiedi Haji Suhaili,"Terima kasih Tuan Yang di-Pertua kerana memberi
 peluang kepada saya untuk berbahas pada hari ini dan hari ini iaitu satu hari lebih awal."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1510,Tuan Yang di-Pertua,"Yang Berhormat, saya tidak ada peluang, kena beri *you*
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1510,1510,Tuan Yang di-Pertua,"Yang Berhormat, saya tidak ada peluang, kena beri *you*
 juga."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1510,Dr. Zaiedi Haji Suhaili,"Tuan Yang di-Pertua, Kajian Separuh Penggal
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1510,1510,Dr. Zaiedi Haji Suhaili,"Tuan Yang di-Pertua, Kajian Separuh Penggal
 Rancangan Malaysia Ke sebelah, adalah satu kajian yang agak unik, satu yang amat
 bersejarah bagi negara kita kerana ianya merupakan satu kajian yang pada awalnya
 digubal oleh sebuah kerajaan iaitu Kerajaan Barisan Nasional yang sepatutnya berjalan
@@ -2490,7 +2489,7 @@ di negeri-negeri iaitu Sabah, Sarawak, Terengganu, Kelantan, Kedah dan Perlis ia
 enam negeri yang kita anggap belum begitu maju dibandingkan di wilayah-wilayah lain
 di negara kita."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1520,Dr. Zaiedi Haji Suhaili,"Kalau dalam konteks Sarawak, kita rasa kita perlukan lebih banyak peruntukan
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1520,1520,Dr. Zaiedi Haji Suhaili,"Kalau dalam konteks Sarawak, kita rasa kita perlukan lebih banyak peruntukan
 dan projek untuk bekalan air bersih. Kita juga masih memerlukan bekalan elektrik luar
 bandar, terutama sekali di Sarawak dan di Sabah serta juga pembinaan
 penyelenggaraan jalan di luar bandar di negeri Sarawak.
@@ -2571,7 +2570,7 @@ kesihatan, naik taraf hospital dan klinik kesihatan serta peralatan dan logistik
 untuk tahun 2019 dan tahun 2020? Tuan Yang di-Pertua, saya hendak menyentuh juga
 tentang soal pendidikan."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1530,Dr. Zaiedi Haji Suhaili,"Kementerian Pendidikan perlu memberikan perkhidmatan khusus dan
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1530,1530,Dr. Zaiedi Haji Suhaili,"Kementerian Pendidikan perlu memberikan perkhidmatan khusus dan
 penekanan yang lebih bermakna kepada mutu dan akses pendidikan di Sarawak, saya
 bercakap dalam konteks negeri Sarawak. Ini bagi menjamin jurang pencapaian dalam
 peperiksaan umum pelajar Sarawak berbanding pelajar di Semenanjung Malaysia dapat
@@ -2658,7 +2657,7 @@ satu yang kita namakan kluster kulinari iaitu masak masakan ataupun kita buat ku
 dan sebagainya. Saya rasa kita harus mentransformasikan sektor kluster kulinari ini
 kerana ia banyak mempunyai perkara yang harus kita bincangkan."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1540,Dr. Zaiedi Haji Suhaili,"Pertama sekali, kita lihat bahawa kita harus menarik anak-anak muda kita di
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1540,1540,Dr. Zaiedi Haji Suhaili,"Pertama sekali, kita lihat bahawa kita harus menarik anak-anak muda kita di
 dalam sektor kulinari. Kita mahu- kita sebenarnya kaya dengan jenis-jenis makanan,
 masakan-masakan tempatan. Saya rasa tiap-tiap daerah kecil, katakan negeri dan
 sebagainya, kita mempunyai banyak jenis makanan yang unik di negara kita. Pahang lain
@@ -2742,7 +2741,7 @@ kalau Bomba respons, mereka sudah dapat tahu kalau kita ada aplikasi digital, me
 tahu berapa dalam air di dalam tasik itu. Berapa kederasan arusnya, apa rintangan-
 rintangan yang ada di kawasan kecemasan itu dan sebagainya."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1550,Dr. Zaiedi Haji Suhaili,"Kita harap perkhidmatan kebombaan kita dapat ditingkatkan seperti itu seolah-
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1550,1550,Dr. Zaiedi Haji Suhaili,"Kita harap perkhidmatan kebombaan kita dapat ditingkatkan seperti itu seolah-
 olah kita membentuk satu yang kita sebut sebagai *the big data*. Walaupun ianya mungkin
 mengambil masa yang panjang tetapi *let us start* ini.
 Sejauh manakah kita mempunyai rekod dan kerjasama di antara jabatan-
@@ -2821,7 +2820,7 @@ memohon supaya diletakkan pegawai-pegawai dari Sarawak, Sabah dan Labuan dari
 semasa ke semasa untuk sama-sama memainkan peranan yang penting di dalam
 sekretariat BIMB-EAGA ini. Saya harap sekretariat ini boleh diperkasakan."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1600,Dr. Zaiedi Haji Suhaili,"Keduanya ialah sejauh manakah Kementerian Hal Ehwal Ekonomi ada
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1600,1600,Dr. Zaiedi Haji Suhaili,"Keduanya ialah sejauh manakah Kementerian Hal Ehwal Ekonomi ada
 memantau taburan pelaburan di negara kita sebagai usaha untuk mengimbangkan
 pembangunan wilayah? Kalau boleh, tubuhkan satu jawatankuasa untuk memantau
 sejauh manakah kita mempunyai pelaburan yang seimbang di kalangan wilayah-wilayah.
@@ -2843,34 +2842,34 @@ Sarawak, satu di Pantai Timur, mungkin satu di sebelah utara. Jadi, ini peranan 
 boleh dimainkan oleh kerajaan untuk menggalakkan keseimbangan dari segi pelaburan
 dan sebagainya. Jadi..."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1600,Tuan Yang di-Pertua,"Yang Berhormat, cukuplah Yang Berhormat. Terima
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1600,1600,Tuan Yang di-Pertua,"Yang Berhormat, cukuplah Yang Berhormat. Terima
 kasih."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1600,Dr. Zaiedi Haji Suhaili,"Okey. Jadi Tuan Yang di-Pertua, saya sebenarnya..."
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1600,1600,Dr. Zaiedi Haji Suhaili,"Okey. Jadi Tuan Yang di-Pertua, saya sebenarnya..."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1600,ANNOTATION,[Ketawa]
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1600,1600,ANNOTATION,[Ketawa]
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1600,Tuan Yang di-Pertua,"Saya tahu. Saya tahu Yang Berhormat memang
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1600,1600,Tuan Yang di-Pertua,"Saya tahu. Saya tahu Yang Berhormat memang
 menolong saya."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1600,Dr. Zaiedi Haji Suhaili,"Okey, okey. Saya ada satu perkara lagi. *Last, last* Tuan
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1600,1600,Dr. Zaiedi Haji Suhaili,"Okey, okey. Saya ada satu perkara lagi. *Last, last* Tuan
 Yang di-Pertua. Sebenarnya saya tadi *to save the day* tetapi..."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1600,ANNOTATION,[Ketawa]
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1600,1600,ANNOTATION,[Ketawa]
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1600,Tuan Yang di-Pertua,"*Yes, yes.*"
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1600,1600,Tuan Yang di-Pertua,"*Yes, yes.*"
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1600,Dr. Zaiedi Haji Suhaili,Saya ada satu perkara penting yang saya rasa...
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1600,1600,Dr. Zaiedi Haji Suhaili,Saya ada satu perkara penting yang saya rasa...
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1600,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, saya kena beritahu bahawa
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1600,1600,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, saya kena beritahu bahawa
 saya kena berterima kasih kepada Yang Berhormat Dr. Zaiedi kerana saya memberi
 masa yang panjang kerana senarai nama ini tidak cukup. Kalau dia duduk nanti pula, kita
 habis awal Dewan. Ia akan memberi imej yang buruk kepada Dewan yang mulia ini. Akan
 tetapi, hanya lima minit lagi Yang Berhormat"
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1600,ANNOTATION,[Ketawa]
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1600,1600,ANNOTATION,[Ketawa]
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1600,Dr. Zaiedi Haji Suhaili,"Satu minit. Tuan Yang di-Pertua, ada beberapa perkara
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1600,1600,Dr. Zaiedi Haji Suhaili,"Satu minit. Tuan Yang di-Pertua, ada beberapa perkara
 yang sering saya bangkitkan di dalam Dewan yang mulia ini yang saya harap akan diberi
 perhatian di bawah kerajaan ini yang ada kena-mengena dengan negeri Sarawak.
 Pertama ialah saya hendak minta Kementerian Pendidikan untuk menyatakan adakah
@@ -2893,9 +2892,9 @@ Pertanian dan Industri Asas Tani, adakah pembinaan Kompleks Pasar Tani di kawasa
 Matang Jaya, Sarawak akan diteruskan oleh FAMA Sarawak dan juga Pertubuhan
 Peladang Kebangsaan Wilayah Sarawak (NAFAS)."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1600,ANNOTATION,[Timbalan Yang di-Pertua mempengerusikan Mesyuarat]
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1600,1600,ANNOTATION,[Timbalan Yang di-Pertua mempengerusikan Mesyuarat]
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1600,Dr. Zaiedi Haji Suhaili,"Jadi, inilah saya ringkaskan senarai-senarai projek yang saya harap untuk
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1600,1600,Dr. Zaiedi Haji Suhaili,"Jadi, inilah saya ringkaskan senarai-senarai projek yang saya harap untuk
 negeri Sarawak, boleh mendapat kelulusan di bawah Kajian Separuh Penggal ini. Jadi,
 terima kasih kepada Tuan Yang di-Pertua tadi, sekarang Timbalan Yang di-Pertua kerana
 memberi saya masa hampir satu jam untuk berdiri di sini. Saya rasa kalau giliran saya
@@ -2906,15 +2905,15 @@ meneruskan persidangan kita hingga saya rasa rakan-rakan saya yang dua ini boleh
 *cover-up* hingga kita tamat persidangan seperti biasa pada hari ini. Sekian Tuan Yang di-
 Pertua, saya menyokong Kajian Separuh Penggal ini. Terima kasih..."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1600,ANNOTATION,[Tepuk]
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1600,1600,ANNOTATION,[Tepuk]
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1600,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat Senator Dr. Zaiedi
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1600,1600,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat Senator Dr. Zaiedi
 Haji Suhaili dan kita bagi peluang dia cakap panjang tadi. Yang Berhormat dari jauh dan
 banyak kita dengar isu-isu yang baik ditimbulkan jadi mutiara kata.
 Sekarang saya menjemput pula Yang Berhormat Tuan Alan Ling Sie Kiong.
 Dipersilakan."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1606,Tuan Alan Ling Sie Kiong,"Terima kasih Tuan Yang di-Pertua. Saya terpanggil
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,4.06 ptg.,1606,Tuan Alan Ling Sie Kiong,"Terima kasih Tuan Yang di-Pertua. Saya terpanggil
 untuk berbahas hari ini. Terima kasih kerana memberi peluang untuk mengambil
 bahagian dalam perbahasan Usul Kajian Separuh Penggal Rancangan Malaysia
 Kesebelas.
@@ -2951,7 +2950,7 @@ sebutkan tadi, ia akan menjamin nasib rakyat dibela oleh sistem undang-undang da
 memastikan semua yang diamanahkan untuk mengurus dana kerajaan menjalankan
 tanggungjawab masing-masing dengan jujur, bersih dan berintegriti."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1610,Tuan Alan Ling Sie Kiong,"Nilai-nilai dan reformasi institusi seperti ini adalah asas yang paling penting
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1610,1610,Tuan Alan Ling Sie Kiong,"Nilai-nilai dan reformasi institusi seperti ini adalah asas yang paling penting
 dalam melaksanakan tugasan sebagai kerajaan kepada rakyat yang memberikan
 amanah dan kepercayaan kepada kita. Dengan adanya asas ini sesiapa yang memegang
 jawatan awam itu harus sedar bahawa sebarang penyelewengan, salah guna kuasa,
@@ -3014,15 +3013,15 @@ ini dan status permohonan mereka iaitu ‘Wong Suong Chang’- nombor permohonan
 131410612016071911145415- panjang nombor permohonan, seperti masa panjang
 untuk menunggu keputusan"
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1610,ANNOTATION,[Ketawa]
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1610,1610,ANNOTATION,[Ketawa]
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1610,Tuan Alan Ling Sie Kiong,"Permohonan kedua iaitu Yeo Chan Jian- nombor permohonan
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1610,1610,Tuan Alan Ling Sie Kiong,"Permohonan kedua iaitu Yeo Chan Jian- nombor permohonan
 131410112015012209351604. Panjang betul! Jangan beli nombor nanti ya. Hari Isnin
 tiada"
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1610,ANNOTATION,[Ketawa]
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1610,1610,ANNOTATION,[Ketawa]
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1610,Tuan Alan Ling Sie Kiong,"Ketiga Kuh Xin Ying- nombor permohonan 131410612018110210492925.
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1610,1610,Tuan Alan Ling Sie Kiong,"Ketiga Kuh Xin Ying- nombor permohonan 131410612018110210492925.
 Terakhir, Evan Kong Wen Zhang- nombor permohonan 131410112016012215495209.
 Tuan Yang di-Pertua saya sendiri pernah semasa saya menjadi ADUN di
 Sarawak, saya tulis surat kepada Kementerian Dalam Negeri tetapi balasan yang agak
@@ -3058,7 +3057,7 @@ Ini dengan izin, *bureaucratic,* oleh sebab maklumat yang dikemukakan pada
 permohonan yang pertama itu sudah muktamad. Itu yang mereka ada, butir-butir telah
 dikemukakan dan dokumen itu telah berada di tangan kementerian."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1620,Tuan Alan Ling Sie Kiong,"Kalau disuruh untuk buat semula, dokumen yang sama lagi akan dikemukakan.
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1620,1620,Tuan Alan Ling Sie Kiong,"Kalau disuruh untuk buat semula, dokumen yang sama lagi akan dikemukakan.
 *So, this is bureaucratic, right?* Ini harus dipersingkat. Akhir kata, saya menyeru KDN
 supaya dapat mengadakan perbincangan dan satu jawatankuasa mungkin, dengan
 rendah diri, saya bercadang Jawatankuasa Tiga Wilayah iaitu Semenanjung, Sabah dan
@@ -3069,12 +3068,12 @@ Tuan Yang di-Pertua, secara kesimpulannya, saya menyokong sepenuhnya
 usul yang dibentangkan pagi ini iaitu Kajian Separuh Penggal Rancangan Malaysia
 Kesebelas. Sekian, terima kasih."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1620,Timbalan Yang di-Pertua,"Baik. Terima kasih Yang Berhormat Senator Tuan
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1620,1620,Timbalan Yang di-Pertua,"Baik. Terima kasih Yang Berhormat Senator Tuan
 Alan Ling Sie Kiong yang telah memberikan ucapan panjang lebar.
 Sekarang saya jemput pula Yang Berhormat Tuan Ismail bin Yusop.
 Dipersilakan."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1621,Tuan Ismail bin Yusop,"Terima kasih Tuan Yang di-Pertua. *Bismillahi Rahmani
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,4.21 ptg.,1621,Tuan Ismail bin Yusop,"Terima kasih Tuan Yang di-Pertua. *Bismillahi Rahmani
 Rahim. Assalamualaikum warahmatullaahi wabarakaatuh.*
 Sebelum saya mulakan, saya ingin merakamkan terima kasih banyak kepada
 Yang Berhormat Senator Dr. Zaidie kerana menyelamatkan maruah Dewan hari ini dan
@@ -3139,7 +3138,7 @@ jelas, yang membebaskan cengkaman politik terhadap penjawat awam. Kita tidak waj
 lagi mewarisi kebejatan pentadbiran, di mana penjawat awam terperangkap dengan
 cengkaman politik."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1630,Tuan Ismail bin Yusop,"Sejujurnya saya ingin menyarankan supaya penjawat awam perlu fokus untuk
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1630,1630,Tuan Ismail bin Yusop,"Sejujurnya saya ingin menyarankan supaya penjawat awam perlu fokus untuk
 memberikan solusi dalam permasalahan rakyat dan dalam masa yang sama mendukung
 aspirasi kerajaan asalkan sahaja bertepatan dengan prinsip, etika dan profesionalisme
 perjawatan.
@@ -3161,17 +3160,17 @@ Garis panduan ini hendaklah disediakan bagi membantu dalam pelaksanaan
 reformasi tadbir urus yang lebih telus dan cekap serta bebas dari pengaruh cengkaman
 politik. Tuan Yang di-Pertua, tonggak yang kedua..."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1630,Datuk Haji Megat Zulkarnain bin Tan Sri Wira Haji Omardin,"Mohon
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1630,1630,Datuk Haji Megat Zulkarnain bin Tan Sri Wira Haji Omardin,"Mohon
 mencelah, boleh?"
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1630,Tuan Ismail bin Yusop,Sila.
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1630,1630,Tuan Ismail bin Yusop,Sila.
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1630,Datuk Haji Megat Zulkarnain bin Tan Sri Wira Haji Omardin,"Saya hendak
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1630,1630,Datuk Haji Megat Zulkarnain bin Tan Sri Wira Haji Omardin,"Saya hendak
 bagi meriah sahaja, masa panjang sikit"
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1630,ANNOTATION,[Ketawa]
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1630,1630,ANNOTATION,[Ketawa]
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1630,Datuk Haji Megat Zulkarnain bin Tan Sri Wira Haji Omardin,"Saya menghayati ucapan Yang
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1630,1630,Datuk Haji Megat Zulkarnain bin Tan Sri Wira Haji Omardin,"Saya menghayati ucapan Yang
 Berhormat. Cuma saya hendak minta penjelasan bila Yang Berhormat menyebut empat
 kali kakitangan awam ini dalam cengkaman kerajaan. Saya percaya ianya merujuk
 kepada kerajaan terdahulu. Jadi apakah asas dan bukti-bukti yang menyatakan
@@ -3187,7 +3186,7 @@ Tuan Yang di-Pertua, *your statement are referring to what cases?* Apakah yang
 menyatakan yang kononnya kakitangan awam di bawah cengkaman dan tunjuk arahan
 oleh kerajaan yang terdahulu. Mohon penjelasan Yang Berhormat."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1630,Tuan Ismail bin Yusop,"Terima kasih Yang Berhormat Senator. Sebenarnya
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1630,1630,Tuan Ismail bin Yusop,"Terima kasih Yang Berhormat Senator. Sebenarnya
 apa yang cuba saya sampaikan tidak lari daripada maksud Yang Berhormat Senator
 maksudkan. Sebenarnya saya tidak merujuk kepada mana-mana ataupun kerajaan yang
 terdahulu bahkan pada saya ialah saya membangkitkan peringatan ini kerana persepsi
@@ -3242,7 +3241,7 @@ kesejahteraan terhadap rakyat terbanyak. Kesimpulannya, untuk tonggak yang kedua
 Kerajaan Pakatan Harapan yang ada sekarang harus menerima hakikat bahawa rakyat
 sudah jemu dengan cara kaedah pemerintahan yang pekak dengan suara rakyat."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1640,Tuan Ismail bin Yusop,"Saya menyeru di Dewan yang mulia ini, marilah sama-sama kita dan juga
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1640,1640,Tuan Ismail bin Yusop,"Saya menyeru di Dewan yang mulia ini, marilah sama-sama kita dan juga
 kerajaan yang ada mempraktikkan sebuah pendekatan yang lebih terbuka dengan
 kerajaan yang lebih demokrat dan bersih serta mengambil kira setiap denyut nadi akar
 umbi rakyat tanpa mengira latar belakang politik, partisan masing-masing.
@@ -3321,12 +3320,12 @@ dapat dilaksanakan dengan berkesan kalau sekiranya isu memperkasakan modal insan
 dan juga mempertingkatkan ekonomi itu tidak diselaraskan dengan pendekatan yang
 lebih seimbang..."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1640,Tuan Mohd Yusmadi bin Mohd Yusoff,"Yang Berhormat Senator, boleh saya
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1640,1640,Tuan Mohd Yusmadi bin Mohd Yusoff,"Yang Berhormat Senator, boleh saya
 minta penjelasan sikit."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1640,Tuan Ismail bin Yusop,Ada masa lagi.
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1640,1640,Tuan Ismail bin Yusop,Ada masa lagi.
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1640,Tuan Mohd Yusmadi bin Mohd Yusoff,"Sikit saja saya hendak tambah sikit.
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1640,1640,Tuan Mohd Yusmadi bin Mohd Yusoff,"Sikit saja saya hendak tambah sikit.
 Yang Berhormat Senator Ismail, saya berpandangan apa yang diangkat oleh Yang
 Berhormat Senator sangat-sangat penting iaitu terutama isu nilai dan juga isu etika. Saya
 juga ingin mengetengahkan bahawa apa yang kita capai pada 9 Mei yang lalu apabila
@@ -3335,19 +3334,19 @@ ialah menggambarkan bahawa Malaysia mempunyai asas yang sangat baik untuk
 bergerak ke hadapan kerana perkara ini tidak mudah untuk dilakukan di negara-negara
 yang lain."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1650,Tuan Mohd Yusmadi bin Mohd Yusoff,"Jadi, saya sebenarnya setuju kalau saya katakan tahniah kepada parti-parti
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1650,1650,Tuan Mohd Yusmadi bin Mohd Yusoff,"Jadi, saya sebenarnya setuju kalau saya katakan tahniah kepada parti-parti
 politik di Malaysia, orang-orang politik di Malaysia kerana memikirkan agenda yang lebih
 besar ke hadapan. Jadi, *political ethics* ataupun etika politik yang ditunjukkan baik dari
 pihak UMNO, pihak Barisan Nasional, Pakatan Harapan baru-baru ini bagi saya satu
 perkara yang telah menjadi modal pendidikan politik bertaraf dunia. Itu pada pandangan
 saya. Mungkin Yang Berhormat Senator boleh jelaskan sikit."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1650,Datuk Haji Megat Zulkarnain bin Tan Sri Wira Haji Omardin,"Boleh saya
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1650,1650,Datuk Haji Megat Zulkarnain bin Tan Sri Wira Haji Omardin,"Boleh saya
 mencelah sikit lagi. Tambah sikit. Pendek sahaja, pendek. Sepuluh saat."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1650,Tuan Ismail bin Yusop,"Boleh, boleh. Silakan,silakan."
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1650,1650,Tuan Ismail bin Yusop,"Boleh, boleh. Silakan,silakan."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1650,Datuk Haji Megat Zulkarnain bin Tan Sri Wira Haji Omardin,"Saya tertarik.
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1650,1650,Datuk Haji Megat Zulkarnain bin Tan Sri Wira Haji Omardin,"Saya tertarik.
 Terima kasih Yang Berhormat. Saya pun setuju.
 Saya rasa seronoklah bila di Dewan Negara ini, walaupun kita berbeza ideologi
 politiknya tetapi bila saya dengar sahabat saya, Yang Berhormat Tuan Yusmadi sebut ini
@@ -3359,7 +3358,7 @@ daripada kerajaan ini, Tuan Yang di-Pertua kerana tidak menyalahkan banyak sanga
 kerajaan terdahulu. Berbeza dengan di Dewan Rakyat. Terima kasihlah Ahli-ahli Dewan
 Negara daripada kerajaan."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1650,Tuan Ismail bin Yusop,"Terima kasih Yang Berhormat. Saya mohon Tuan
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1650,1650,Tuan Ismail bin Yusop,"Terima kasih Yang Berhormat. Saya mohon Tuan
 Yang di-Pertua, pandangan kedua-dua sahabat saya tadi dimasukkan dalam ucapan
 bahas saya.
 Seterusnya Tuan Yang di-Pertua, seruan Malaysia Baharu seharusnya dihiasi
@@ -3413,12 +3412,12 @@ Tuan Yang di-Pertua, saya dengan ini menyokong usul Kajian Separuh Penggal
 Rancangan Malaysia Kesebelas ini di Dewan yang mulia ini. Terima kasih.
 *Assalamualaikum warahmatullaahi wabarakaatuh.*"
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1650,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat Tuan Ismail bin
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1650,1650,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat Tuan Ismail bin
 Yusop yang telah memberi ucapan panjang lebar dan bernas.
 Sekarang saya menjemput pula Yang Berhormat Senator Tuan Mohd Yusmadi
 bin Mohd Yusoff. Dipersilakan."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1657,Tuan Mohd Yusmadi bin Mohd Yusoff,"Terima kasih Tuan Yang di-Pertua.
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,4.57 ptg.,1657,Tuan Mohd Yusmadi bin Mohd Yusoff,"Terima kasih Tuan Yang di-Pertua.
 Pertama sekali saya ucapkan ribuan terima kasih di atas peluang yang diberikan ini untuk
 saya membahaskan Pembentangan Usul Kajian Separuh Penggal oleh Yang Berhormat
 Menteri Hal Ehwal Ekonomi.
@@ -3437,7 +3436,7 @@ ataupun pendekatan kita mungkin kedua-duanya. *Bottom up* dan juga *top down* at
 pendekatan kita mungkin yang ingin saya cadangkan yang selalu saya bahaskan ialah
 pendekatan yang muafakat."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1700,Tuan Mohd Yusmadi bin Mohd Yusoff,"Persoalannya apa pendekatan muafakat tersebut? Saya mendefinisikan
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1700,1700,Tuan Mohd Yusmadi bin Mohd Yusoff,"Persoalannya apa pendekatan muafakat tersebut? Saya mendefinisikan
 pendekatan muafakat tersebut ialah satu pendekatan, dengan izin, ialah *a collaboration
 of the core competent of the nation*. Maksudnya satu pendekatan kolaborasi yang
 mewakili kelompok-kelompok yang penting. Contohnya, di mana kelompok penting
@@ -3553,7 +3552,7 @@ tegas. Kalau perkara itu ialah perkara yang ketidakfahaman antara agama, perlu
 diperjelaskan sebab kita bukan baru merdeka. Jadi yang saya katakan di sini ialah dalam
 hendak membangunkan ekonomi, jangan lupa pendekatannya mestilah muafakat."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1710,Tuan Mohd Yusmadi bin Mohd Yusoff,"Seterusnya Tuan Yang di-Pertua, pembangunan wilayah yang seimbang. Kita
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1710,1710,Tuan Mohd Yusmadi bin Mohd Yusoff,"Seterusnya Tuan Yang di-Pertua, pembangunan wilayah yang seimbang. Kita
 bukan hari ini masih lagi bercakap tidak seimbangnya di antara Semenanjung, Sabah
 dan Sarawak. Hari ini kita bercakap dalam konteks yang lebih kecil, dalam konteks di
 desa dan di bandar. Kalau kami di Pulau Pinang itu, samakah perkhidmatan di antara
@@ -3619,9 +3618,9 @@ katakan di- kita bagi contoh di mana lagi, di tempat di kampung, isunya perumaha
 kena *deliver public property rights*. Tidak cukup pemimpin hari ini hanya mampu kita
 panggil begini sahaja..."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1710,ANNOTATION,[Menunjukkan gaya mengangkat sepanduk]
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1710,1710,ANNOTATION,[Menunjukkan gaya mengangkat sepanduk]
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1710,Tuan Mohd Yusmadi bin Mohd Yusoff,"Tembak reformasi,
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1710,1710,Tuan Mohd Yusmadi bin Mohd Yusoff,"Tembak reformasi,
 reformasi tetapi tidak mampu mempersembahkan *deliver goods*.
 Apa yang saya maksudkan dalam konteks ini, perlukan satu mekanisme,
 dengan izin, *a very close project management monitoring*. Kalau tidak, enam tonggak
@@ -3640,19 +3639,19 @@ pengalaman, tetapi menyedari bahawa untuk mengekalkan kestabilan ekonomi, untuk
 mencapai pertumbuhan yang mampan, ini bukan satu perkara yang mudah. Jadi, saya-
 belakang saya, Yang Berhormat Senator Datuk Haji Megat baru masuk..."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1710,Datuk Haji Megat Zulkarnain bin Tan Sri Wira Haji Omardin,Boleh...
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1710,1710,Datuk Haji Megat Zulkarnain bin Tan Sri Wira Haji Omardin,Boleh...
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1710,Tuan Mohd Yusmadi bin Mohd Yusoff,"Takkan baru masuk**.** Baru masuk,
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1710,1710,Tuan Mohd Yusmadi bin Mohd Yusoff,"Takkan baru masuk**.** Baru masuk,
 takkan- duduk dahulu."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1710,Datuk Haji Megat Zulkarnain bin Tan Sri Wira Haji Omardin,"Saya berlari
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1710,1710,Datuk Haji Megat Zulkarnain bin Tan Sri Wira Haji Omardin,"Saya berlari
 dari *lounge* hendak masuk, takut Yang Berhormat habis."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1710,Tuan Mohd Yusmadi bin Mohd Yusoff,"Okey, okey"
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1710,1710,Tuan Mohd Yusmadi bin Mohd Yusoff,"Okey, okey"
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1710,ANNOTATION,[Ketawa]
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1710,1710,ANNOTATION,[Ketawa]
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1710,Datuk Haji Megat Zulkarnain bin Tan Sri Wira Haji Omardin,"Saya tengah-
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1710,1710,Datuk Haji Megat Zulkarnain bin Tan Sri Wira Haji Omardin,"Saya tengah-
 terima kasih Tuan Yang di-Pertua. Saya tengah makan mihun sekejap, bila dengar Yang
 Berhormat bercakap, saya berlari masuk. Takut Yang Berhormat habis tadi. Saya tertarik
 bila Yang Berhormat sebut soal hendak melihatkan satu kerajaan yang sememangnya
@@ -3661,22 +3660,22 @@ Saya rasa saya amat bersetuju dengan pandangan Yang Berhormat. Cuma
 itulah, harapan saya biarlah cepat-cepat Yang Berhormat Port Dickson menjadi Perdana
 Menteri..."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1710,ANNOTATION,[Tepuk]
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1710,1710,ANNOTATION,[Tepuk]
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1710,Datuk Haji Megat Zulkarnain bin Tan Sri Wira Haji Omardin,"Jadi, apa pandangan Yang Berhormat- alamak, ramai bertepuk ini.
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1710,1710,Datuk Haji Megat Zulkarnain bin Tan Sri Wira Haji Omardin,"Jadi, apa pandangan Yang Berhormat- alamak, ramai bertepuk ini.
 Saya tengok ramai bertepuk rupanya. Maknanya ramai di kalangan hadapan ini yang
 tidak sabar hendak tengok Yang Berhormat Port Dickson menjadi Perdana Menteri ini.
 Jadi, apa pandangan Yang Berhormat?"
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1710,ANNOTATION,[Ketawa]
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1710,1710,ANNOTATION,[Ketawa]
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1710,Tuan Mohd Yusmadi bin Mohd Yusoff,"Apa yang pasti Tuan Yang di-Pertua,
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1710,1710,Tuan Mohd Yusmadi bin Mohd Yusoff,"Apa yang pasti Tuan Yang di-Pertua,
 apabila kehadiran Yang Berhormat Datuk Haji Megat kita di Dewan ini, mesti ceria. Jadi,
 dia kena hadir selalu"
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1710,ANNOTATION,[Ketawa]
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1710,1710,ANNOTATION,[Ketawa]
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1710,Tuan Mohd Yusmadi bin Mohd Yusoff,"Saya setuju begini, saya tidak menjurus kepada Yang
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1710,1710,Tuan Mohd Yusmadi bin Mohd Yusoff,"Saya setuju begini, saya tidak menjurus kepada Yang
 Berhormat Port Dickson.
 Untuk memastikan dengan izin, kemapanan perubahan, antara perkara yang
 menjadi prasyarat, antaranya bukan sahaja kepimpinan yang wibawa dan kita panggil
@@ -3693,12 +3692,12 @@ pembangkang yang wibawa selain daripada kerajaan yang perlu berwibawa.
 Jadi berita baik untuk Yang Berhormat Datuk Haji Megat, itu ialah prasyarat satu
 pembangunan demokrasi, demokratik yang mampan. Boleh ya? Jadi..."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1710,Datuk Haji Megat Zulkarnain bin Tan Sri Wira Haji Omardin,"Hendak berita-
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1710,1710,Datuk Haji Megat Zulkarnain bin Tan Sri Wira Haji Omardin,"Hendak berita-
 saya tadi Tuan Yang di-Pertua, saya ingat berita baik itu ialah sudah *sign* untuk
 mengambil angkat sumpah sebagai Perdana Menteri, rupanya belum lagilah. Kena
 tunggu dua tahun juga?"
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1710,Tuan Mohd Yusmadi bin Mohd Yusoff,"Bukan. Maksud saya itu ialah mungkin
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1710,1710,Tuan Mohd Yusmadi bin Mohd Yusoff,"Bukan. Maksud saya itu ialah mungkin
 mana tahu dalam masa lima tahun ini Tuan Yang di-Pertua, Yang Berhormat Datuk Haji
 Megat menjadi pemimpin Barisan Nasional. Kenapa cakap begitu Tuan Yang di-Pertua,
 saya kebetulan mengkaji lima negara.
@@ -3719,7 +3718,7 @@ dunia, inilah cara kita berdemokrasi. Ini kerana muafakat kita hari ini tidak me
 kepentingan individu. Muafakat kita hari ini mementingkan kepentingan masyarakat lebih
 besar."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1720,Tuan Mohd Yusmadi bin Mohd Yusoff,"Muafakat kita di sebelah sini, kita resah kalau rakan-rakan kita di Rakhine, di
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1720,1720,Tuan Mohd Yusmadi bin Mohd Yusoff,"Muafakat kita di sebelah sini, kita resah kalau rakan-rakan kita di Rakhine, di
 Myanmar, Rohingya terlibat di dalam pembunuhan beramai-ramai. Kita resah kerana
 muafakat kita di sini punya asas kemanusiaan, punya asas keadilan, punya asas
 apalagi? Kemasyarakatan. Mungkin idea demokrasi di tempat lain itu tidak sesuai, dia
@@ -3729,14 +3728,14 @@ itu timbul isu tadi kelestarian.
 Akan tetapi kita di sini bermuafakat kita punya asas, kalau dalam al-Quran
 dipanggil..."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1720,ANNOTATION,[Bercakap dalam bahasa Arab]
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1720,1720,ANNOTATION,[Bercakap dalam bahasa Arab]
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1720,Tuan Mohd Yusmadi bin Mohd Yusoff,"Yang Berhormat Senator Tuan Haji
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1720,1720,Tuan Mohd Yusmadi bin Mohd Yusoff,"Yang Berhormat Senator Tuan Haji
 Muhammad bin Mustafa kalau saya salah, betulkan"
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1720,ANNOTATION,[Ketawa]
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1720,1720,ANNOTATION,[Ketawa]
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1720,Tuan Mohd Yusmadi bin Mohd Yusoff,"Sebab saya pun sudah
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1720,1720,Tuan Mohd Yusmadi bin Mohd Yusoff,"Sebab saya pun sudah
 tidak ingat. Dia ada boleh bertolong-tolong tetapi bertolong untuk kebaikan, tidak boleh
 bertolong-tolong untuk kemaksiatan atau kejahatan.
 Contohnya, dalam konteks- saya hendak masuk sikitlah, kontroversi sikit sebab
@@ -3830,27 +3829,27 @@ Malaysia tidak dikenali lagi dengan bakat-bakat yang hebat. Kita dikenali apa? D
 rasuah yang tinggi. Kita dikenali dengan apa? Kita terkenal apa, pengeksport bakat yang
 paling terbesar. Bakat-bakat kita yang hebat ada dekat luar, tidak ada dekat Malaysia..."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1720,Timbalan Yang di-Pertua,Yang Berhormat...
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1720,1720,Timbalan Yang di-Pertua,Yang Berhormat...
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1720,Tuan Mohd Yusmadi bin Mohd Yusoff,Ya?
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1720,1720,Tuan Mohd Yusmadi bin Mohd Yusoff,Ya?
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1720,Timbalan Yang di-Pertua,Saya bagi tiga minit lagi untuk berbahas.
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1720,1720,Timbalan Yang di-Pertua,Saya bagi tiga minit lagi untuk berbahas.
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1720,Tuan Mohd Yusmadi bin Mohd Yusoff,"Ya, sebenarnya saya bahas ini pun
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1720,1720,Tuan Mohd Yusmadi bin Mohd Yusoff,"Ya, sebenarnya saya bahas ini pun
 sebab dapat nota sebab tidak ada orang"
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1720,ANNOTATION,[Ketawa]
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1720,1720,ANNOTATION,[Ketawa]
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1720,Tuan Mohd Yusmadi bin Mohd Yusoff,"Saya pun hendak tutup, jadi saya
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1720,1720,Tuan Mohd Yusmadi bin Mohd Yusoff,"Saya pun hendak tutup, jadi saya
 sebab atas dasar muafakat juga, jadi kita buat.
 Jadi, yang saya katakan ini- saya hendak tutup sebenarnya. Mari kita sama-
 sama meraikan 9 Mei ini sebagai satu agenda yang akan membentuk naratif nasional
 yang baharu. Naratif nasional yang baharu ini mesti berasaskan keadilan dan
 keihsanan..."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1720,ANNOTATION,[Bercakap dalam bahasa Arab]
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1720,1720,ANNOTATION,[Bercakap dalam bahasa Arab]
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1720,Tuan Mohd Yusmadi bin Mohd Yusoff,"Ini sekiranya ia mempunyai halangan-
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1720,1720,Tuan Mohd Yusmadi bin Mohd Yusoff,"Ini sekiranya ia mempunyai halangan-
 halangan perundangan, kita mesti sama-sama mencari jalan keluar. Kalau dia perlu
 bentuk undang-undang, undang-undanglah. Tidak cukup hanya kita hari ini mengulangi-
 ulangi perkara-perkara yang sebenarnya kita semua telah tahu.
@@ -3867,12 +3866,12 @@ bedakkan dengan rakan-rakan kita, kemiskinan. Mesti kena ada agenda pertumbuhan
 ekonomi. Akan tetapi saya kata dengan izin, saya hendak tutup, bulat air kerana
 pembentung, bulat kata kerana muafakat. Kita muafakat, Malaysia hebat..."
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1720,ANNOTATION,[Tepuk]
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1720,1720,ANNOTATION,[Tepuk]
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1720,Tuan Mohd Yusmadi bin Mohd Yusoff,"Kita muafakat *insya-Allah, bi’iznillah* Tuan Yang di-Pertua, rakyat Malaysia
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1720,1720,Tuan Mohd Yusmadi bin Mohd Yusoff,"Kita muafakat *insya-Allah, bi’iznillah* Tuan Yang di-Pertua, rakyat Malaysia
 hebat. *Assalamualaikum.*"
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1720,Timbalan Yang di-Pertua,"*Waalaikumussalam.* Terima kasih Yang Berhormat
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1720,1720,Timbalan Yang di-Pertua,"*Waalaikumussalam.* Terima kasih Yang Berhormat
 Senator Tuan Mohd Yusmadi bin Mohd Yusoff, telah berpeluang bercakap panjang lebar
 dan penuh dengan isinya.
 Petang ini saya telah mendengar empat hingga lima orang Ahli Dewan Negara
@@ -3889,11 +3888,11 @@ Mari dijual berikat-ikat;
 Bulat air kerana pembentung;
 Bulat manusia kerana muafakat...*"
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1720,ANNOTATION,[Tepuk]
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1720,1720,ANNOTATION,[Tepuk]
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1720,Timbalan Yang di-Pertua,"Terima kasih Ahli-ahli Yang Berhormat sekalian.
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,■1720,1720,Timbalan Yang di-Pertua,"Terima kasih Ahli-ahli Yang Berhormat sekalian.
 Ahli-ahli Yang Berhormat, Mesyuarat Dewan hari ini ditangguhkan sehingga 10
 pagi, hari Selasa, 4 Disember 2018. Sekian.
 *Assalamualaikum warahmatullaahi wabarakaatuh.*"
 USUL,"KAJIAN SEPARUH PENGGAL
-RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,1731,ANNOTATION,[Dewan ditangguhkan pada pukul 5.31 petang]
+RANCANGAN MALAYSIA KESEBELAS (2018 – 2020)",,5.31 petang,1731,ANNOTATION,[Dewan ditangguhkan pada pukul 5.31 petang]

@@ -1,6 +1,6 @@
-level_1,level_2,level_3,timestamp,author,speech
-,,,1000,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
-PEMASYHURAN TUAN YANG DI-PERTUA,,,1000,Tuan Yang di-Pertua,"*Assalamualaikum warahmatullahi wabarakatuh.* Selamat
+level_1,level_2,level_3,raw_timestamp,timestamp,author,speech
+,,,10.00 pagi,1000,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
+PEMASYHURAN TUAN YANG DI-PERTUA,,,10.00 pagi,1000,Tuan Yang di-Pertua,"*Assalamualaikum warahmatullahi wabarakatuh.* Selamat
 pagi dan salam sejahtera. Ahli-ahli Yang Berhormat, saya ingin mengalu-alukan kehadiran
 Ahli-ahli Dewan Negara ke Majlis Persidangan Mesyuarat Pertama, Penggal Pertama,
 Majlis Parlimen Kelima Belas, pada pagi ini.
@@ -43,7 +43,7 @@ penting bagi Dewan tertinggi ini mencatatkannya sebagai satu tanggungjawab.
 Dengan kata-kata itu, kita mulakan Mesyuarat Pertama, Penggal Pertama, Majlis
 Parlimen Kelima Belas 2022.
 Setiausaha."
-AHLI-AHLI YANG MENGANGKAT SUMPAH,SEMASA MAJLIS MESYUARAT DALAM TANGGUHAN,,1000,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, mengikut peruntukan Peraturan
+AHLI-AHLI YANG MENGANGKAT SUMPAH,SEMASA MAJLIS MESYUARAT DALAM TANGGUHAN,,10.00 pagi,1000,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, mengikut peruntukan Peraturan
 Majlis Mesyuarat 4(3), saya dengan ini memberitahu Majlis iaitu Ahli-ahli Yang Berhormat
 yang berikut telah mengangkat sumpah semasa Majlis Mesyuarat dalam tangguhan serta
 mengikut Jadual Keenam, dalam Perlembagaan Persekutuan pada tarikh yang
@@ -57,7 +57,7 @@ Baharu, Lantikan Yang di-Pertuan Agong).
 **Pada 3 Disember 2022:**
 (i) Yang Berhormat Senator Datuk Seri Saifuddin Nasution bin Ismail
 (Lantikan Baharu, Lantikan Yang di-Pertuan Agong);"
-AHLI-AHLI YANG MENGANGKAT SUMPAH,SEMASA MAJLIS MESYUARAT DALAM TANGGUHAN,,1010,Tuan Yang di-Pertua,"(ii) Yang Berhormat Senator Tengku Datuk Seri Utama Zafrul bin Tengku
+AHLI-AHLI YANG MENGANGKAT SUMPAH,SEMASA MAJLIS MESYUARAT DALAM TANGGUHAN,,■1010,1010,Tuan Yang di-Pertua,"(ii) Yang Berhormat Senator Tengku Datuk Seri Utama Zafrul bin Tengku
 Abdul Aziz (Lantikan Semula, Lantikan Yang di-Pertuan Agong);
 (iii) Yang Berhormat Senator Datuk Seri Diraja Dr. Zambry bin Abdul
 Kadir (Lantikan Baharu, Lantikan Yang di-Pertuan Agong); dan
@@ -68,7 +68,7 @@ Mokhtar (Lantikan Baharu, Lantikan Yang di-Pertuan Agong).
 Baharu, Lantikan Yang di-Pertuan Agong); dan
 (ii) Yang Berhormat Senator Puan Saraswathy a/p Kandasamy
 (Lantikan Baharu, Lantikan Yang di-Pertuan Agong)."
-AHLI-AHLI YANG MENGANGKAT SUMPAH,MEMPERKENANKAN AKTA-AKTA,,1010,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, sebagai kewajipan kita di Dewan
+AHLI-AHLI YANG MENGANGKAT SUMPAH,MEMPERKENANKAN AKTA-AKTA,,■1010,1010,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, sebagai kewajipan kita di Dewan
 ini, saya ditugaskan untuk memaklumkan bahawa Majlis ini telah dengan persetujuan dan
 perkenan Ke Bawah Duli Yang Maha Mulia Seri Paduka Baginda Yang di-Pertuan Agong
 serta limpah kurnia Baginda, telah memperkenankan akta-akta yang telah diluluskan oleh
@@ -100,12 +100,12 @@ seperti berikut:
 (xxiii) Akta Levi Keuntungan Luar Biasa (Pindaan) 2022;
 (xxiv) Akta Cukai Jualan (Pindaan) 2022; dan
 (xxv) Akta Cukai Perkhidmatan (Pindaan) 2022."
-AHLI-AHLI YANG MENGANGKAT SUMPAH,PERUTUSAN DARIPADA DEWAN RAKYAT,,1010,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, saya telah menerima satu
+AHLI-AHLI YANG MENGANGKAT SUMPAH,PERUTUSAN DARIPADA DEWAN RAKYAT,,■1010,1010,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, saya telah menerima satu
 perutusan daripada Dewan Rakyat yang meminta Dewan Negara mempersetujukan rang
 undang-undang yang telah diluluskan oleh Dewan Rakyat. Saya menjemput Setiausaha
 Dewan Negara membacakan perutusan itu sekarang."
-AHLI-AHLI YANG MENGANGKAT SUMPAH,PERUTUSAN DARIPADA DEWAN RAKYAT,,1010,ANNOTATION,[Setiausaha membacakan Perutusan]
-AHLI-AHLI YANG MENGANGKAT SUMPAH,PERUTUSAN DARIPADA DEWAN RAKYAT,,1010,Tuan Yang di-Pertua,"“20 Disember 2022
+AHLI-AHLI YANG MENGANGKAT SUMPAH,PERUTUSAN DARIPADA DEWAN RAKYAT,,■1010,1010,ANNOTATION,[Setiausaha membacakan Perutusan]
+AHLI-AHLI YANG MENGANGKAT SUMPAH,PERUTUSAN DARIPADA DEWAN RAKYAT,,■1010,1010,Tuan Yang di-Pertua,"“20 Disember 2022
 **Perutusan Daripada Dewan Rakyat kepada Dewan Negara**
 Tuan Yang di-Pertua Dewan Negara,
 Dewan Rakyat telah meluluskan Rang Undang-undang Kumpulan Wang Disatukan
@@ -114,12 +114,12 @@ mempersetujukannya.
 Yang ikhlas,
 t.t
 Tuan Yang di-Pertua Dewan Rakyat”"
-AHLI-AHLI YANG MENGANGKAT SUMPAH,URUSAN MESYUARAT,,1010,Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh],"Tuan Yang di-Pertua mengikut
+AHLI-AHLI YANG MENGANGKAT SUMPAH,URUSAN MESYUARAT,,■1010,1010,Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh],"Tuan Yang di-Pertua mengikut
 Peraturan Mesyuarat 66(2), saya mohon memaklumkan supaya rang undang-undang yang
 tersebut dalam perutusan itu, dibacakan kali kedua dan ketiganya di Mesyuarat ini. Terima
 kasih."
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1016,Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh],"Tuan Yang di-Pertua,
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,10.16 pg,1016,Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh],"Tuan Yang di-Pertua,
 “Saya mohon mencadangkan bahawa walau apa pun peruntukan
 Peraturan Mesyuarat 11, dan dibaca bersama Peraturan Mesyuarat 13(2),
 Majlis Dewan Negara ini tidak akan ditangguhkan sehingga telah selesai
@@ -127,17 +127,17 @@ semua urusan kerajaan yang tertera dalam *Aturan Urusan Mesyuarat* hari
 ini diputus dan diluluskan, dan selepas itu Majlis Mesyuarat akan
 ditangguhkan kepada satu tarikh yang tidak ditetapkan.”"
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1016,Tuan Yang di-Pertua,"Ada sesiapa yang menyokong? Sesiapa pun boleh di
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,10.16 pg,1016,Tuan Yang di-Pertua,"Ada sesiapa yang menyokong? Sesiapa pun boleh di
 kalangan anggota pentadbir."
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1016,Timbalan Menteri Pembangunan Usahawan dan Koperasi [Puan Saraswathy a/p Kandasami],Saya menyokong.
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,10.16 pg,1016,Timbalan Menteri Pembangunan Usahawan dan Koperasi [Puan Saraswathy a/p Kandasami],Saya menyokong.
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1016,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, sekarang saya kemukakan
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,10.16 pg,1016,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, sekarang saya kemukakan
 masalah kepada Majlis untuk diputuskan. Masalahnya ialah Usul seperti yang dikemukakan
 Yang Berhormat Timbalan Menteri itu tadi hendaklah disetujukan."
 USUL,"WAKTU MESYUARAT DAN URUSAN
-DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,1016,ANNOTATION,[Usul dikemukakan bagi diputuskan; dan disetujukan]
-USUL,JALAN-JALAN MASUK KE PARLIMEN,,1017,Timbalan Menteri Dalam Negeri [Datuk Seri Dr. Shamsul Anuar bin Nasarah],"*Bismillahi Rahmani Rahim*. Tuan Yang di-Pertua, saya mohon mencadangkan,
+DIBEBASKAN DARIPADA PERATURAN MESYUARAT",,10.16 pg,1016,ANNOTATION,[Usul dikemukakan bagi diputuskan; dan disetujukan]
+USUL,JALAN-JALAN MASUK KE PARLIMEN,,10.17 pagi.,1017,Timbalan Menteri Dalam Negeri [Datuk Seri Dr. Shamsul Anuar bin Nasarah],"*Bismillahi Rahmani Rahim*. Tuan Yang di-Pertua, saya mohon mencadangkan,
 “Bahawa Majlis ini memerintahkan Ketua Polis Negara menjaga
 supaya selama Penggal Dewan Negara, Parlimen Kelima Belas yang ada
 sekarang, jalan-jalan melalui lorong-lorong menuju ke Dewan ini hendaklah
@@ -147,14 +147,14 @@ apa-apa kacau bilau di jalan-jalan menuju ke Dewan ini, dan supaya jangan
 ada huru-hara di Bangunan Dewan ini, dan berhampiran dengan bangunan
 ini, dan Setiausaha Dewan Negara hendaklah menyampaikan perintah ini
 kepada Ketua Polis Negara yang tersebut itu”."
-USUL,JALAN-JALAN MASUK KE PARLIMEN,,1017,Tuan Yang di-Pertua,Sokongan?
-USUL,JALAN-JALAN MASUK KE PARLIMEN,,1017,Timbalan Menteri Kewangan [Datuk Seri Haji Ahmad bin Haji Maslan],"Tuan
+USUL,JALAN-JALAN MASUK KE PARLIMEN,,10.17 pagi.,1017,Tuan Yang di-Pertua,Sokongan?
+USUL,JALAN-JALAN MASUK KE PARLIMEN,,10.17 pagi.,1017,Timbalan Menteri Kewangan [Datuk Seri Haji Ahmad bin Haji Maslan],"Tuan
 Yang di-Pertua, saya mohon menyokong."
-USUL,JALAN-JALAN MASUK KE PARLIMEN,,1017,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Timbalan Menteri.
+USUL,JALAN-JALAN MASUK KE PARLIMEN,,10.17 pagi.,1017,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Timbalan Menteri.
 Ahli-ahli Yang Berhormat, masalahnya ialah satu Usul atas nama Yang Berhormat
 Menteri Dalam Negeri seperti yang telah dibacakan tadi hendaklah dipersetujukan."
-USUL,JALAN-JALAN MASUK KE PARLIMEN,,1017,ANNOTATION,[Usul dikemukakan bagi diputuskan; dan disetujukan]
-USUL,JALAN-JALAN MASUK KE PARLIMEN,,1017,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, suka saya mengingatkan bahawa
+USUL,JALAN-JALAN MASUK KE PARLIMEN,,10.17 pagi.,1017,ANNOTATION,[Usul dikemukakan bagi diputuskan; dan disetujukan]
+USUL,JALAN-JALAN MASUK KE PARLIMEN,,10.17 pagi.,1017,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, suka saya mengingatkan bahawa
 Usul yang dikemukakan oleh Yang Berhormat Timbalan Menteri itu tadi telah pun
 dipersetujukan. Ia disifatkan sebagai satu perintah oleh Majlis Mesyuarat Dewan Negara
 kepada yang berkenaan.
@@ -170,7 +170,7 @@ menyebut apa akan jadi jika perintah itu tidak dipatuhi.
 Dengan itu nota penting ini kita terima dengan sebaiknya dan berharap kementerian
 berkenaan mengambil tindakan sesungguhnya selepas Setiausaha Dewan menulis surat
 kepada yang berkenaan."
-USUL MENTERI,PELANTIKAN AHLI JAWATANKUASA PEMILIH DI BAWAH P.M 70,,1020,Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh],"Tuan Yang di-Pertua,
+USUL MENTERI,PELANTIKAN AHLI JAWATANKUASA PEMILIH DI BAWAH P.M 70,,10.20 pg.,1020,Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh],"Tuan Yang di-Pertua,
 “Bahawa mengikut peruntukan Peraturan Mesyuarat 70, Peraturan-
 peraturan Majlis Mesyuarat Dewan Negara, saya mohon mencadangkan
 supaya Ahli Yang Berhormat berikut:
@@ -190,9 +190,9 @@ tempoh Penggal Pertama, Parlimen Kelima Belas, dan selaras dengan peruntukan
 Peraturan Mesyuarat 70(2), Majlis Mesyuarat dengan ini memberi kuasa kepada
 Jawatankuasa Pemilih memanggil orang hadir di hadapannya serta meminta dikeluarkan
 surat-surat.”"
-USUL MENTERI,PELANTIKAN AHLI JAWATANKUASA PEMILIH DI BAWAH P.M 70,,1020,Menteri di Jabatan Perdana Menteri (Hal Ehwal Agama) [Dato’ Setia Dr. Haji Mohd Na’im bin Haji Mokhtar],"Tuan Yang di-Pertua, saya mohon untuk menyokong Usul
+USUL MENTERI,PELANTIKAN AHLI JAWATANKUASA PEMILIH DI BAWAH P.M 70,,10.20 pg.,1020,Menteri di Jabatan Perdana Menteri (Hal Ehwal Agama) [Dato’ Setia Dr. Haji Mohd Na’im bin Haji Mokhtar],"Tuan Yang di-Pertua, saya mohon untuk menyokong Usul
 ini."
-USUL MENTERI,PELANTIKAN AHLI JAWATANKUASA PEMILIH DI BAWAH P.M 70,,1020,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, masalah sekarang ialah Usul Yang
+USUL MENTERI,PELANTIKAN AHLI JAWATANKUASA PEMILIH DI BAWAH P.M 70,,10.20 pg.,1020,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, masalah sekarang ialah Usul Yang
 Berhormat Menteri itu terbuka untuk dibahas. Namun, lazimnya tiada perbahasan
 dilaksanakan ke atas Usul seperti itu. Akan tetapi sekiranya ada, Ahli Yang Berhormat ingin
 berbahas, dibenarkan.
@@ -218,8 +218,8 @@ hendaknya kita menyegerakan bersama tujuan murni yang disebutkan seperti itu.
 Ahli-ahli Yang Berhormat, dalam keadaan sedemikian, ingin saya menyatakan
 bahawa masalahnya ialah bagi Usul seperti yang dikemukakan sebentar tadi itu dapat kita
 terima dengan sepenuhnya."
-USUL MENTERI,PELANTIKAN AHLI JAWATANKUASA PEMILIH DI BAWAH P.M 70,,1020,ANNOTATION,[Usul dikemukakan bagi diputuskan; dan disetujukan]
-USUL MENTERI,PELANTIKAN AHLI JAWATANKUASA PEMILIH DI BAWAH P.M 70,,1020,Tuan Yang di-Pertua,"Suka saya menambah sedikit Ahli-ahli Yang Berhormat,
+USUL MENTERI,PELANTIKAN AHLI JAWATANKUASA PEMILIH DI BAWAH P.M 70,,10.20 pg.,1020,ANNOTATION,[Usul dikemukakan bagi diputuskan; dan disetujukan]
+USUL MENTERI,PELANTIKAN AHLI JAWATANKUASA PEMILIH DI BAWAH P.M 70,,10.20 pg.,1020,Tuan Yang di-Pertua,"Suka saya menambah sedikit Ahli-ahli Yang Berhormat,
 terkait dengan Usul yang telah dipersetujukan itu tadi, tiga Jawatankuasa Pilihan Khas
 Dewan Negara yang telah ditubuhkan harus diteruskan sebagaimana termaktub dalam
 terma rujukannya. Jawatankuasa Pemilih akan mengisi kekosongan-kekosongan yang ada
@@ -233,7 +233,7 @@ dan lebih bertanggungjawab dalam hal ehwal kita memperjuangkan nasib rakyat.
 Setiausaha."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1025,Timbalan Menteri Kewangan [Datuk Seri Haji Ahmad bin Haji Maslan],"*Bismillahi Rahmani Rahim.* Tuan Yang di-Pertua, saya mohon mencadangkan iaitu rang
+Bacaan Kali Yang Kedua",,10.25 pg.,1025,Timbalan Menteri Kewangan [Datuk Seri Haji Ahmad bin Haji Maslan],"*Bismillahi Rahmani Rahim.* Tuan Yang di-Pertua, saya mohon mencadangkan iaitu rang
 undang-undang bernama suatu akta bagi membenarkan perbelanjaan untuk sebahagian
 dari tahun yang berakhir pada 31 Disember 2023 dibaca bagi kali yang kedua sekarang.
 Tuan Yang di-Pertua, tujuan rang undang-undang ini adalah untuk mendapatkan
@@ -261,27 +261,27 @@ Kita berunding sebaik mungkin.*
 Saya mohon mencadangkan..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1025,ANNOTATION,[Tepuk]
+Bacaan Kali Yang Kedua",,10.25 pg.,1025,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1025,Tuan Yang di-Pertua,Siapakah yang menyokong?
+Bacaan Kali Yang Kedua",,10.25 pg.,1025,Tuan Yang di-Pertua,Siapakah yang menyokong?
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1025,Timbalan Menteri Kewangan [Tuan Sim Chee Keong],"Tuan Yang di-Pertua,
+Bacaan Kali Yang Kedua",,10.25 pg.,1025,Timbalan Menteri Kewangan [Tuan Sim Chee Keong],"Tuan Yang di-Pertua,
 saya mohon menyokong."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1025,Tuan Yang di-Pertua,"*Alhamdulillah*.
+Bacaan Kali Yang Kedua",,10.25 pg.,1025,Tuan Yang di-Pertua,"*Alhamdulillah*.
 *Adanya burung di Cilacap,
 Terbang-terbang di langit biru;
 Setelah saudara Yang Berhormat bercakap,
 Kita berharap ia menjadi satu....*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1025,ANNOTATION,[Tepuk]
+Bacaan Kali Yang Kedua",,10.25 pg.,1025,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1025,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, masalahnya ialah bahawa rang
+Bacaan Kali Yang Kedua",,10.25 pg.,1025,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, masalahnya ialah bahawa rang
 undang-undang bernama suatu akta bagi membenarkan perbelanjaan untuk sebahagian
 dari tahun yang berakhir pada 31 Disember 2023 ini Dibacakan Kali Yang Kedua sekarang
 dan terbuka untuk dibahas.
@@ -295,7 +295,7 @@ perbahasan ke atas rang undang-undang ini tidak boleh termasuk perkara-perkara D
 dan tadbir kerajaan atau tujuan-tujuan perbelanjaan itu."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1030,Tuan Yang di-Pertua,"Pada perbahasan di Dewan Rakyat semalam, telah ditiadakan perbahasan
+Bacaan Kali Yang Kedua",,■1030,1030,Tuan Yang di-Pertua,"Pada perbahasan di Dewan Rakyat semalam, telah ditiadakan perbahasan
 berkenaan.
 Untuk menyelaraskan tradisi dan kuasa pelaksanaan tuntutan Perkara 102 itu,
 maka wajar lah kita samakan keselarasannya dan tidak berbahas. Namun demikian,
@@ -310,7 +310,7 @@ Dari lima orang ini, secara rambang, kita mempersilakan Yang Berhormat Senator
 Dato’ Kesavadas a/l A Achyuthan Nair."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1032,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih, Tuan Yang di-Pertua.
+Bacaan Kali Yang Kedua",,10.32 pagi.,1032,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih, Tuan Yang di-Pertua.
 Sebelum saya bermula, saya ambil kesempatan untuk mengucap tahniah yang amat tinggi
 kepada Dato’ Seri Anwar Ibrahim yang telah dilantik sebagai Perdana Menteri Ke-10 dan
 telah juga menang Undi Percaya di Dewan Rakyat dua hari kelmarin.
@@ -338,16 +338,16 @@ yang menyelesaikan isu 3R – *“race”, “religion”, “royal”,* yang se
 hangat..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1032,Tuan Yang di-Pertua,"Yang ketiga itu apa, Yang Berhormat?"
+Bacaan Kali Yang Kedua",,10.32 pagi.,1032,Tuan Yang di-Pertua,"Yang ketiga itu apa, Yang Berhormat?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1032,Dato’ Kesavadas a/l A Achyuthan Nair,*Royal. Royalty.*
+Bacaan Kali Yang Kedua",,10.32 pagi.,1032,Dato’ Kesavadas a/l A Achyuthan Nair,*Royal. Royalty.*
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1032,Tuan Yang di-Pertua,"Oh, *royalty.* Pihak Diraja, ya?"
+Bacaan Kali Yang Kedua",,10.32 pagi.,1032,Tuan Yang di-Pertua,"Oh, *royalty.* Pihak Diraja, ya?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1032,Dato’ Kesavadas a/l A Achyuthan Nair,"Ya. Kita tidak boleh dinafikan hakikat
+Bacaan Kali Yang Kedua",,10.32 pagi.,1032,Dato’ Kesavadas a/l A Achyuthan Nair,"Ya. Kita tidak boleh dinafikan hakikat
 bahawa media sosial terutama *TikTok* dan *Facebook* telah dijadikan sebagai pentas bagi
 golongan yang tidak bertanggungjawab untuk menyalakan api perkauman khususnya
 ketika musim pilihan raya. Penguatkuasaan undang-undang sahaja tidak cukup untuk
@@ -365,31 +365,31 @@ berimpak tinggi yang boleh menjadikan doktrin kepada rakyat untuk menghargai nil
 perpaduan yang semakin pudar dek hasutan puak-puak tertentu."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1032,Tuan Yang di-Pertua,"Baru-baru ini Yang Berhormat, ada Pengerusi FINAS yang
+Bacaan Kali Yang Kedua",,10.32 pagi.,1032,Tuan Yang di-Pertua,"Baru-baru ini Yang Berhormat, ada Pengerusi FINAS yang
 daripada golongan Senat..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1032,Dato’ Kesavadas a/l A Achyuthan Nair,"Kita, ya."
+Bacaan Kali Yang Kedua",,10.32 pagi.,1032,Dato’ Kesavadas a/l A Achyuthan Nair,"Kita, ya."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1032,Tuan Yang di-Pertua,"Beliau sepatutnya kalau masih di situ, agaknya dapat
+Bacaan Kali Yang Kedua",,10.32 pagi.,1032,Tuan Yang di-Pertua,"Beliau sepatutnya kalau masih di situ, agaknya dapat
 melaksanakan apa Yang Berhormat sebut ini."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1032,Dato’ Kesavadas a/l A Achyuthan Nair,Saya harap begitu.
+Bacaan Kali Yang Kedua",,10.32 pagi.,1032,Dato’ Kesavadas a/l A Achyuthan Nair,Saya harap begitu.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1032,Tuan Yang di-Pertua,"Akan tetapi malang sedikit, beliau telah disuruh beredar."
+Bacaan Kali Yang Kedua",,10.32 pagi.,1032,Tuan Yang di-Pertua,"Akan tetapi malang sedikit, beliau telah disuruh beredar."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1032,Dato’ Kesavadas a/l A Achyuthan Nair,"Ya. Akan tetapi satu masa di hadapan,
+Bacaan Kali Yang Kedua",,10.32 pagi.,1032,Dato’ Kesavadas a/l A Achyuthan Nair,"Ya. Akan tetapi satu masa di hadapan,
 mungkin dia..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1032,Tuan Yang di-Pertua,Kita menzahirkan dukacita sedikit lah.
+Bacaan Kali Yang Kedua",,10.32 pagi.,1032,Tuan Yang di-Pertua,Kita menzahirkan dukacita sedikit lah.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1032,Dato’ Kesavadas a/l A Achyuthan Nair,"Ini lah masanya untuk Kerajaan
+Bacaan Kali Yang Kedua",,10.32 pagi.,1032,Dato’ Kesavadas a/l A Achyuthan Nair,"Ini lah masanya untuk Kerajaan
 Perpaduan memandu agenda kebersamaan nasional ke arah mewujudkan keharmonian
 yang sepatutnya menjadi tunjang penting dalam pembentukan Malaysia maju dan
 sejahtera.
@@ -403,24 +403,24 @@ sebagai asas pembinaan Malaysia yang lebih maju.
 Bolehkah saya ambil dua hingga tiga minit, Tuan Yang di-Pertua?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1032,Tuan Yang di-Pertua,Satu minit lagi. Silakan.
+Bacaan Kali Yang Kedua",,10.32 pagi.,1032,Tuan Yang di-Pertua,Satu minit lagi. Silakan.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1032,Dato’ Kesavadas a/l A Achyuthan Nair,"Okey kalau macam itu, ringkaskan di sini.
+Bacaan Kali Yang Kedua",,10.32 pagi.,1032,Dato’ Kesavadas a/l A Achyuthan Nair,"Okey kalau macam itu, ringkaskan di sini.
 Tuan Yang di-Pertua, perjalanan..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1032,Tuan Yang di-Pertua,"Itulah Yang Berhormat, saya selalu sebut, kalau dalam
+Bacaan Kali Yang Kedua",,10.32 pagi.,1032,Tuan Yang di-Pertua,"Itulah Yang Berhormat, saya selalu sebut, kalau dalam
 bentuk nota, boleh cepat sedikit. Tetapi kalau baca, barangkali ia..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1032,Dato’ Kesavadas a/l A Achyuthan Nair,"Ya, betul juga."
+Bacaan Kali Yang Kedua",,10.32 pagi.,1032,Dato’ Kesavadas a/l A Achyuthan Nair,"Ya, betul juga."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1032,Tuan Yang di-Pertua,Sajalah saya membuat teguran lagi. Silakan.
+Bacaan Kali Yang Kedua",,10.32 pagi.,1032,Tuan Yang di-Pertua,Sajalah saya membuat teguran lagi. Silakan.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1032,Dato’ Kesavadas a/l A Achyuthan Nair,"Tuan Yang di-Pertua, perjalanan yang
+Bacaan Kali Yang Kedua",,10.32 pagi.,1032,Dato’ Kesavadas a/l A Achyuthan Nair,"Tuan Yang di-Pertua, perjalanan yang
 kita akan tempuhi pada masa hadapan bukan sahaja dipenuhi dengan ranjau, malah ia
 juga diselubungi dengan ketidaktentuan. Rentetan daripada terbentuknya kerajaan yang
 diperkenalkan oleh Duli Yang Maha Mulia Yang di-Pertuan Agong, rakyat mengharapkan
@@ -433,11 +433,11 @@ mengakhirkan ucapan perbahasan saya, dan saya mohon menyokong rang undang-
 undang ini. Sekian."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1032,Tuan Yang di-Pertua,"Baiklah, terima kasih kepada Yang Berhormat Senator Dato’
+Bacaan Kali Yang Kedua",,10.32 pagi.,1032,Tuan Yang di-Pertua,"Baiklah, terima kasih kepada Yang Berhormat Senator Dato’
 Kesavadas. Yang Berhormat Senator Dato’ Razali bin Idris."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1009,Dato’ Razali bin Idris,"*Assalamualaikum warahmatullahi wabarakatuh* dan salam
+Bacaan Kali Yang Kedua",,10.09 pagi.,1009,Dato’ Razali bin Idris,"*Assalamualaikum warahmatullahi wabarakatuh* dan salam
 sejahtera. *Bismillahi Rahmani Rahim.* Terima kasih Tuan Yang di-Pertua kerana memberi
 ruang kepada saya untuk membuat sedikit ucapan, bukan perbahasan.
 Jadi, yang pertamanya, saya mewakili Majlis Senator Malaysia merakamkan
@@ -447,35 +447,35 @@ beberapa Yang Berhormat Senator yang dahulunya bersama dengan kita dan sekarang
 dilantik sebagai- menang pilihan raya dan dilantik sebagai Menteri..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1009,Tuan Yang di-Pertua,Yang tak menang pun ada kan?
+Bacaan Kali Yang Kedua",,10.09 pagi.,1009,Tuan Yang di-Pertua,Yang tak menang pun ada kan?
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1009,Dato’ Razali Idris,"Yang tak menang, tak mengapalah. Yang menang untuk-
+Bacaan Kali Yang Kedua",,10.09 pagi.,1009,Dato’ Razali Idris,"Yang tak menang, tak mengapalah. Yang menang untuk-
 mudah-mudahan beliau dapat datang dengan sempurna di Dewan Negara. Jangan hantar
 Timbalan Menteri sebagai contoh. Menteri datang. Bekas Senator menjadi Menteri- jadi
 Menteri sendiri datang menjawab soalan-soalan atau apa yang dibahaskan dalam Dewan
 Negara..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1009,ANNOTATION,[Tepuk]
+Bacaan Kali Yang Kedua",,10.09 pagi.,1009,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1040,Dato’ Razali Idris,"Seterusnya Tuan Yang di-Pertua, saya tidak berniat untuk membahaskan isu rang
+Bacaan Kali Yang Kedua",,■1040,1040,Dato’ Razali Idris,"Seterusnya Tuan Yang di-Pertua, saya tidak berniat untuk membahaskan isu rang
 undang-undang kerana ini Yang Berhormat Timbalan Menteri mengatakan- Yang
 Berhormat Menteri Penerangan yang kedua- kedua, pertama? Yang Berhormat Menteri
 Kewangan. Minta maaf. Penting, tidak perlu dibahaskan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1040,Tuan Yang di-Pertua,Yang Berhormat Menteri- ya.
+Bacaan Kali Yang Kedua",,■1040,1040,Tuan Yang di-Pertua,Yang Berhormat Menteri- ya.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1040,Beberapa Ahli,
+Bacaan Kali Yang Kedua",,■1040,1040,Beberapa Ahli,
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1040,ANNOTATION,[Bercakap tanpa menggunakan pembesar suara]
+Bacaan Kali Yang Kedua",,■1040,1040,ANNOTATION,[Bercakap tanpa menggunakan pembesar suara]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1040,Datuk Razali bin Idris,"Tidak perlu dibahas, dan perlu disokong dan kami- saya
+Bacaan Kali Yang Kedua",,■1040,1040,Datuk Razali bin Idris,"Tidak perlu dibahas, dan perlu disokong dan kami- saya
 menyokong sepenuhnya rang undang-undang ini. Cuma, apabila saya perhatikan di dalam,
 sebanyak 64 buah perkara, dan saya memohon jasa baik Yang Berhormat Menteri supaya
 dalam keadaan sekarang di negeri Terengganu, Kelantan dan sebelah Selatan, yang
@@ -487,34 +487,34 @@ Berhormat Menteri Kewangan memberikan sedikit peruntukan kepada Yang Berhormat
 Senator untuk kita sama-sama turun ke bawah dan membantu apa yang perlu..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1040,ANNOTATION,[Tepuk]
+Bacaan Kali Yang Kedua",,■1040,1040,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1040,Datuk Razali bin Idris,"Tidak ada, Yang Berhormat Menteri tidak ada dalam ini. Jadi, kalau dulu semasa
+Bacaan Kali Yang Kedua",,■1040,1040,Datuk Razali bin Idris,"Tidak ada, Yang Berhormat Menteri tidak ada dalam ini. Jadi, kalau dulu semasa
 pandemik COVID-19, kita dapat sebanyak RM250 ribu seorang- RM300 ribu?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1040,Tuan Yang di-Pertua,RM300 ribu.
+Bacaan Kali Yang Kedua",,■1040,1040,Tuan Yang di-Pertua,RM300 ribu.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1040,Datuk Razali bin Idris,"*Oh,* naik RM50 ribu, jadi RM300 ribu- tidak kira sama ada
+Bacaan Kali Yang Kedua",,■1040,1040,Datuk Razali bin Idris,"*Oh,* naik RM50 ribu, jadi RM300 ribu- tidak kira sama ada
 menyokong kerajaan atau tidak menyokong kerajaan. Pada kali ini saya hendak minta
 bukan RM300 ribu, saya hendak minta hanya RM250 ribu sahaja seorang..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1040,ANNOTATION,[Tepuk]
+Bacaan Kali Yang Kedua",,■1040,1040,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1040,Datuk Razali bin Idris,"Kepada Yang Berhormat Senator ‘Gurkha’- Yang Berhormat Senator ‘Gurkha’ yang tidak
+Bacaan Kali Yang Kedua",,■1040,1040,Datuk Razali bin Idris,"Kepada Yang Berhormat Senator ‘Gurkha’- Yang Berhormat Senator ‘Gurkha’ yang tidak
 ada jawatan- Menteri dan Timbalan Menteri, itu sudah ada peruntukan.
 Jadi, saya rasa, tidak sampai 50 orang yang ada dalam Dewan Negara ini. Jadi,
 saya rasa itulah hasrat saya dan hasrat semua rakan. Ada yang tidak setuju?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1040,Beberapa Ahli,...Setuju.
+Bacaan Kali Yang Kedua",,■1040,1040,Beberapa Ahli,...Setuju.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1040,Datuk Razali bin Idris,"Semua setuju. Jadi, itulah Yang Berhormat Menteri
+Bacaan Kali Yang Kedua",,■1040,1040,Datuk Razali bin Idris,"Semua setuju. Jadi, itulah Yang Berhormat Menteri
 menambah sikit lagi untuk seketika- tiga bulan ini untuk kita bersama-sama memberi
 dukungan, semangat kepada mangsa-mangsa banjir terutamanya di Pantai Timur-
 Kelantan dan Terengganu.
@@ -522,19 +522,19 @@ Sekian terima kasih Tuan Yang di-Pertua. Saya menyokong penuh rang undang-
 undang ini. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1040,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Senator Datuk Razali bin
+Bacaan Kali Yang Kedua",,■1040,1040,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Senator Datuk Razali bin
 Idris.
 Kita beralih kepada Yang Berhormat Senator Datuk Seri Hajah Zurainah binti Musa,
 mantan Pengerusi FINAS."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1040,Beberapa Ahli,
+Bacaan Kali Yang Kedua",,■1040,1040,Beberapa Ahli,
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1040,ANNOTATION,[Bercakap tanpa menggunakan pembesar suara]
+Bacaan Kali Yang Kedua",,■1040,1040,ANNOTATION,[Bercakap tanpa menggunakan pembesar suara]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1043,Datuk Seri Hajah Zurainah binti Musa,"*Bismillahi Rahmani Rahim.
+Bacaan Kali Yang Kedua",,10.43 pg.,1043,Datuk Seri Hajah Zurainah binti Musa,"*Bismillahi Rahmani Rahim.
 Assalamualaikum warahmatullahi wabarakatuh.
 Burung merpati terbang tinggi,
 Anak ayam di atas pedati;
@@ -542,10 +542,10 @@ Walaupun FINAS tiada lagi,
 Jawatan tetap kekal di hati...*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1043,ANNOTATION,[Tepuk]
+Bacaan Kali Yang Kedua",,10.43 pg.,1043,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1043,Datuk Seri Hajah Zurainah binti Musa,"*Terbang tinggi burung kelicap,
+Bacaan Kali Yang Kedua",,10.43 pg.,1043,Datuk Seri Hajah Zurainah binti Musa,"*Terbang tinggi burung kelicap,
 Hinggap rendah di pohon melati;
 Terima kasih diberi berucap,
 Pandangan berucap dari hati saya.*
@@ -606,11 +606,11 @@ Undang-undang Kumpulan Wang Disatukan (Perbelanjaan Masuk Akaun) 2022.
 Terima kasih. *Assalamualaikum warahmatullahi wabarakatuh.*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1043,Tuan Yang di-Pertua,"*Waalaikumussalam,* kembali. Yang Berhormat Senator
+Bacaan Kali Yang Kedua",,10.43 pg.,1043,Tuan Yang di-Pertua,"*Waalaikumussalam,* kembali. Yang Berhormat Senator
 Dato’ Arman Azha Abu Hanifah."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1049,Dato’ Arman Azha Abu Hanifah,"*Bismillahi Rahmani Rahim. Assalamualaikum
+Bacaan Kali Yang Kedua",,10.49 pagi.,1049,Dato’ Arman Azha Abu Hanifah,"*Bismillahi Rahmani Rahim. Assalamualaikum
 warahmatullahi wabarakatuh.* Terlebih dahulu- saya ingin merakamkan ucapan terima
 kasih kepada Tuan Yang di-Pertua kerana memberikan ruang dan peluang untuk saya
 membahaskan Rang Undang-undang Kumpulan Wang Disatukan (Perbelanjaan Masuk
@@ -620,7 +620,7 @@ datang dan tahniah kepada ahli-ahli Yang Berhormat Senator yang telah dilantik k
 Negara dalam Kerajaan Perpaduan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1050,Dato’ Arman Azha Abu Hanifah,"Kepada Ahli Dewan yang telah diberikan mandat untuk berkhidmat kepada rakyat
+Bacaan Kali Yang Kedua",,■1050,1050,Dato’ Arman Azha Abu Hanifah,"Kepada Ahli Dewan yang telah diberikan mandat untuk berkhidmat kepada rakyat
 dan negara, kami daripada Barisan Nasional menyeru rakan-rakan Yang Berhormat
 Senator menyambut baik Titah Kebawah Duli Yang Maha Mulia Seri Paduka Baginda Yang
 Di-Pertuan Agong Al-Sultan Abdullah Ri'ayatuddin Al-Mustafa Billah Shah ibni Almarhum
@@ -672,10 +672,10 @@ Senator Datuk Razali untuk diberikan peruntukan sebanyak RM250 ribu kepada Ahli-
 Senator untuk kita membantu rakyat yang terkesan akibat masalah banjir di Pantai Timur..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1050,ANNOTATION,[Tepuk]
+Bacaan Kali Yang Kedua",,■1050,1050,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1050,Dato’ Arman Azha Abu Hanifah,"*.*
+Bacaan Kali Yang Kedua",,■1050,1050,Dato’ Arman Azha Abu Hanifah,"*.*
 Saya berpandangan, di bawah kesedaran daripada pihak pemaju, perancang
 bandar serta wilayah untuk memastikan masa hadapan mempunyai syarat-syarat yang
 lebih ketat bagi membangunkan dan memajukan sebuah kawasan, yang lebih penting
@@ -701,20 +701,20 @@ Malaysia.
 Sekian sahaja, saya mohon menyokong."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1050,Tuan Yang di-Pertua,"*Alhamdulillah.* Terima kasih Yang Berhormat Senator Dato’
+Bacaan Kali Yang Kedua",,■1050,1050,Tuan Yang di-Pertua,"*Alhamdulillah.* Terima kasih Yang Berhormat Senator Dato’
 Arman Azha Abu Hanifah. Terus kepada Yang Berhormat Senator Dato’ Dr. Ahmad Azam
 bin Hamzah."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1055,Dato’ Dr. Ahmad Azam bin Hamzah,"*Bismillahi Rahmani Rahim,
+Bacaan Kali Yang Kedua",,10.55 pagi.,1055,Dato’ Dr. Ahmad Azam bin Hamzah,"*Bismillahi Rahmani Rahim,
 Assalamualaikum warahmatullahi wabarakatuh. Alhamdulillah...*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1055,ANNOTATION,"[Berselawat ke atas Nabi
+Bacaan Kali Yang Kedua",,10.55 pagi.,1055,ANNOTATION,"[Berselawat ke atas Nabi
 Muhammad SAW]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1055,Dato’ Dr. Ahmad Azam bin Hamzah,"Tuan Yang di-Pertua, serta sahabat-sahabat sekalian, izinkan saya mengambil
+Bacaan Kali Yang Kedua",,10.55 pagi.,1055,Dato’ Dr. Ahmad Azam bin Hamzah,"Tuan Yang di-Pertua, serta sahabat-sahabat sekalian, izinkan saya mengambil
 kesempatan ini untuk mengucapkan tahniah kepada Kerajaan Perpaduan yang telah pun
 terbentuk baru-baru ini yang diketuai oleh Yang Amat Berhormat Dato' Seri Anwar bin
 Ibrahim. Yang telah pun Mengangkat Sumpah pada 24 November yang lalu serta
@@ -758,7 +758,7 @@ sekarang ini- untuk merancang aktiviti-aktiviti ataupun mengadakan perancangan-
 perancangan tertentu untuk mengurangkan kos sara hidup dengan kadar segera."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1100,Dato’ Dr. Ahmad Azam bin Hamzah,"Kedua memfokuskan keterjaminan bekalan makanan negara. Buat masa ini
+Bacaan Kali Yang Kedua",,■1100,1100,Dato’ Dr. Ahmad Azam bin Hamzah,"Kedua memfokuskan keterjaminan bekalan makanan negara. Buat masa ini
 kerajaan membenarkan import telur. Sebelum ini import daging ayam dari luar negara. Saya
 rasa tidak salah dalam keadaan yang agak meruncing ini dan keadaan yang serba
 kekurangan buat masa sekarang terutama daging ayam dan telur. Akan tetapi kerajaan
@@ -794,17 +794,17 @@ Jadi saya dengan ini menyokong DR.47- rang undang-undang ini. Sekian terima
 kasih"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1100,Tuan Yang di-Pertua,"Demikian Yang Berhormat Senator Dato’ Dr. Ahmad Azam
+Bacaan Kali Yang Kedua",,■1100,1100,Tuan Yang di-Pertua,"Demikian Yang Berhormat Senator Dato’ Dr. Ahmad Azam
 bin Hamzah. Bakinya…"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1100,Tuan Sr. Haji Mohd Apandi bin Mohamad,"Tuan Yang di-Yang di-Pertua, minta..."
+Bacaan Kali Yang Kedua",,■1100,1100,Tuan Sr. Haji Mohd Apandi bin Mohamad,"Tuan Yang di-Yang di-Pertua, minta..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1100,Tuan Yang di-Pertua,Yang Berhormat Tuan Sr. Haji Mohd Apandi bin Mohamad.
+Bacaan Kali Yang Kedua",,■1100,1100,Tuan Yang di-Pertua,Yang Berhormat Tuan Sr. Haji Mohd Apandi bin Mohamad.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1103,Tuan Sr. Haji Mohd Apandi bin Mohamad,"*Assalamualaikum warahmatullahi
+Bacaan Kali Yang Kedua",,11.03 pagi.,1103,Tuan Sr. Haji Mohd Apandi bin Mohamad,"*Assalamualaikum warahmatullahi
 wabarakatuh* Tuan Yang di-Pertua dan sahabat-sahabat Senator sekalian.
 *Alhamdulillah,* saya mengucapkan tahniah kepada Yang Amat Berhormat Dato’ Seri
 Anwar bin Ibrahim yang dilantik sebagai Perdana Menteri yang ke-10, dan kepada Dato’
@@ -873,24 +873,24 @@ mengurus hal ini, kalau dia pandai *insya-Allah*, isu yang ditakuti ini saya fik
 Satu lagi Tuan Yang di-Pertua, sikit sahaja. Sekarang ini teknologi terkini..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1103,Tuan Yang di-Pertua,Betul-betul sikit.
+Bacaan Kali Yang Kedua",,11.03 pagi.,1103,Tuan Yang di-Pertua,Betul-betul sikit.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1103,Tuan Sr. Haji Mohd Apandi bin Mohamad,"Teknologi terkini *TikTok.* Banyak anak-
+Bacaan Kali Yang Kedua",,11.03 pagi.,1103,Tuan Sr. Haji Mohd Apandi bin Mohamad,"Teknologi terkini *TikTok.* Banyak anak-
 anak muda memang cepat, reaksi respons kepada *TikTok*."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1110,Tuan Sr. Haji Mohd Apandi bin Mohamad,"Jadi saya minta kerajaan jangan cepat-cepat hendak untuk memberi sekatan
+Bacaan Kali Yang Kedua",,■1110,1110,Tuan Sr. Haji Mohd Apandi bin Mohamad,"Jadi saya minta kerajaan jangan cepat-cepat hendak untuk memberi sekatan
 kepada *TikTok* kerana teknologi kini *TikTok*. Kita tidak tahu China ByteDance hendak buat
 apa selepas ini. Yang mengenalkan teknologi *TikTok* ini China ByteDance dari Negara
 China. Semua teknologi lain. *Facebook* saham jatuh. Mark Zuckerberg- semua yang Twitter
 pun jatuh."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1110,Tuan Yang di-Pertua,Zuckerberg-kah?
+Bacaan Kali Yang Kedua",,■1110,1110,Tuan Yang di-Pertua,Zuckerberg-kah?
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1110,Tuan Sr. Haji Mohd Apandi bin Mohamad,"Zuckerberg *Facebook*- jatuh kerana
+Bacaan Kali Yang Kedua",,■1110,1110,Tuan Sr. Haji Mohd Apandi bin Mohamad,"Zuckerberg *Facebook*- jatuh kerana
 sekarang ini *TikTok* sudah menguasai. Mudah *simple* dan sekarang ini, *business* anak-
 anak muda berjaya. Berjaya dengan melalui *TikTok* ini sebab itu kerajaan mesti lagi
 melicinkan, lagi memberi *catalyst* kepada penggunaan *TikTok* semasa. Buat masa ini
@@ -903,34 +903,34 @@ mohon menyokong Belanjawan sementara ini, dan *insya-Allah* saya mendoakan Yang
 Amat Berhormat Perdana Menteri Ke-10, kawan baik saya, sahabat baik saya..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1110,ANNOTATION,[Ketawa]
+Bacaan Kali Yang Kedua",,■1110,1110,ANNOTATION,[Ketawa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1110,Tuan Sr. Haji Mohd Apandi bin Mohamad,Supaya kerana telah dinafikan beberapa kali...
+Bacaan Kali Yang Kedua",,■1110,1110,Tuan Sr. Haji Mohd Apandi bin Mohamad,Supaya kerana telah dinafikan beberapa kali...
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1110,ANNOTATION,[Tepuk]
+Bacaan Kali Yang Kedua",,■1110,1110,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1110,Tuan Sr. Haji Mohd Apandi bin Mohamad,"Dinafikan secara sistematik
+Bacaan Kali Yang Kedua",,■1110,1110,Tuan Sr. Haji Mohd Apandi bin Mohamad,"Dinafikan secara sistematik
 beberapa kali. *Alhamdulillah*, 30 tahun perjuangan beliau, akhirnya Allah SWT makbulkan
 *insya-Allah*. Saya minta janji-janji dia pada saya dulu-dulu, dia akan tunaikan pada kali ini..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1110,ANNOTATION,[Dewan ketawa]
+Bacaan Kali Yang Kedua",,■1110,1110,ANNOTATION,[Dewan ketawa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1110,Tuan Sr. Haji Mohd Apandi bin Mohamad,*Wallahuaklam. Assalamualaikum warahmatullahi wabarakatuh*.
+Bacaan Kali Yang Kedua",,■1110,1110,Tuan Sr. Haji Mohd Apandi bin Mohamad,*Wallahuaklam. Assalamualaikum warahmatullahi wabarakatuh*.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1110,Tuan Yang di-Pertua,"Terima kasih. Tuan Sr. Haji Mohd Apandi bin Mohamad, apa
+Bacaan Kali Yang Kedua",,■1110,1110,Tuan Yang di-Pertua,"Terima kasih. Tuan Sr. Haji Mohd Apandi bin Mohamad, apa
 janji itu simpanlah dahulu ya..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1110,ANNOTATION,[Ketawa]
+Bacaan Kali Yang Kedua",,■1110,1110,ANNOTATION,[Ketawa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1110,Tuan Yang di-Pertua,"Saya rasa tertinggal kalau rakan dari Sarawak dan
+Bacaan Kali Yang Kedua",,■1110,1110,Tuan Yang di-Pertua,"Saya rasa tertinggal kalau rakan dari Sarawak dan
 Sabah tidak berucap. Jadi, kalau ada keinginan untuk memberi ucapan perwakilan dari
 kedua-dua wilayah, dipersilakan. Jika tidak, kita teruskan dengan urusan kita pada pagi ini.
 Akan tetapi dalam rekod, kita beri peluang.
@@ -939,7 +939,7 @@ sedikit reaksi ataupun jawapan kepada ucapan-ucapan, dan isi kata yang telah
 dikemukakan. Sila."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1112,Timbalan Menteri Kewangan [Datuk Seri Haji Ahmad bin Haji Maslan],"*Assalamualaikum warahmatullahi wabarakatuh* dan salam sejahtera. Terima kasih kepada
+Bacaan Kali Yang Kedua",,11.12 pagi.,1112,Timbalan Menteri Kewangan [Datuk Seri Haji Ahmad bin Haji Maslan],"*Assalamualaikum warahmatullahi wabarakatuh* dan salam sejahtera. Terima kasih kepada
 Yang Berhormat Senator Dato’ Kesavadas a/l A Achyuthan Nair yang menyatakan tentang
 pentingnya perpaduan dalam negara ini.
 Dalam bajet ini kita memperuntukkan kepada Kementerian Perpaduan Negara
@@ -953,10 +953,10 @@ II- 146 undi. Ini menunjukkan bahawa sekitar dua per tiga tentunya diperoleh ole
 Amat Berhormat Perdana Menteri Ahli Parlimen Tambun..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1112,ANNOTATION,[Tepuk]
+Bacaan Kali Yang Kedua",,11.12 pagi.,1112,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1112,Timbalan Menteri Kewangan [Datuk Seri Haji Ahmad bin Haji Maslan],"Kita telah lama tidak mendapat 148 undi ataupun dua per tiga sokongan ini. Bermula
+Bacaan Kali Yang Kedua",,11.12 pagi.,1112,Timbalan Menteri Kewangan [Datuk Seri Haji Ahmad bin Haji Maslan],"Kita telah lama tidak mendapat 148 undi ataupun dua per tiga sokongan ini. Bermula
 tahun 2008 tidak ada dua per tiga, tahun 2013 tidak ada, tahun 2018 tidak ada. Inilah
 selepas tahun 2004, berlaku sokongan dua per tiga/ majoriti, dan kita berharap selepas ini
 kestabilan politik akan menjadi tonggak kepada Kerajaan Perpaduan.
@@ -977,34 +977,34 @@ Seterusnya, cadangan daripada Yang Berhormat Senator Datuk Razali bin Idris
 juga saya akan sampaikan kepada Senator-senator ‘Gurkha’..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1112,ANNOTATION,[Ketawa]
+Bacaan Kali Yang Kedua",,11.12 pagi.,1112,ANNOTATION,[Ketawa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1112,Timbalan Menteri Kewangan [Datuk Seri Haji Ahmad bin Haji Maslan],"*Quote-unquote*
+Bacaan Kali Yang Kedua",,11.12 pagi.,1112,Timbalan Menteri Kewangan [Datuk Seri Haji Ahmad bin Haji Maslan],"*Quote-unquote*
 mengenai permohonan supaya diberikan sedikit peruntukan kepada Senator sebagaimana
 diberi..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1112,ANNOTATION,[Tepuk]
+Bacaan Kali Yang Kedua",,11.12 pagi.,1112,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1112,Timbalan Menteri Kewangan [Datuk Seri Haji Ahmad bin Haji Maslan],Saya akan sampaikan cadangan itu...
+Bacaan Kali Yang Kedua",,11.12 pagi.,1112,Timbalan Menteri Kewangan [Datuk Seri Haji Ahmad bin Haji Maslan],Saya akan sampaikan cadangan itu...
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1112,Datuk Razali bin Idris,Terima kasih. Terima kasih Menteri.
+Bacaan Kali Yang Kedua",,11.12 pagi.,1112,Datuk Razali bin Idris,Terima kasih. Terima kasih Menteri.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1112,Datuk Seri Haji Ahmad bin Haji Maslan,Sampaikan cadangan itu.
+Bacaan Kali Yang Kedua",,11.12 pagi.,1112,Datuk Seri Haji Ahmad bin Haji Maslan,Sampaikan cadangan itu.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1112,Datuk Razali bin Idris,"Ingatkan tidak lulus. Ini hendak tanya. Sudah lulus itu kira
+Bacaan Kali Yang Kedua",,11.12 pagi.,1112,Datuk Razali bin Idris,"Ingatkan tidak lulus. Ini hendak tanya. Sudah lulus itu kira
 *alhamdulillah*. Terima kasih. RM250 ribu..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1112,ANNOTATION,[Dewan ketawa]
+Bacaan Kali Yang Kedua",,11.12 pagi.,1112,ANNOTATION,[Dewan ketawa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1112,Datuk Seri Haji Ahmad bin Haji Maslan,"Saya akan sampaikan cadangan Tuan
+Bacaan Kali Yang Kedua",,11.12 pagi.,1112,Datuk Seri Haji Ahmad bin Haji Maslan,"Saya akan sampaikan cadangan Tuan
 Yang di-Pertua.
 Seterusnya, Yang Berhormat Senator Datuk Seri Hajah Zurainah binti Musa-
 memang kita tahu pentingnya pelaburan-pelaburan ini antara punca pelabur dalam FDI
@@ -1049,17 +1049,17 @@ Perdana Menteri telah mengumumkan bantuan RM1,000 kepada semua 94 orang keluarga
 dan RM10 ribu kepada waris yang kehilangan nyawa."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1120,Datuk Seri Haji Ahmad bin Haji Maslan,"Kita sedang berusaha untuk mencari sembilan lagi mangsa yang masih belum
+Bacaan Kali Yang Kedua",,■1120,1120,Datuk Seri Haji Ahmad bin Haji Maslan,"Kita sedang berusaha untuk mencari sembilan lagi mangsa yang masih belum
 ditemui. Kita terlupa kadang-kadang ada ribuan anggota pasukan keselamatan yakni Polis,
 Bomba yang membantu dan banyak lagi jabatan yang membantu. Jabatan kesihatan,
 hospital dan sebagainya yang kita rakamkan ucapan setinggi-tinggi terima kasih kepada
 mereka yang bekerja siang dan malam untuk mencari..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1120,ANNOTATION,[Tepuk]
+Bacaan Kali Yang Kedua",,■1120,1120,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1120,Datuk Seri Haji Ahmad bin Haji Maslan,"Tentunya hal-hal alam
+Bacaan Kali Yang Kedua",,■1120,1120,Datuk Seri Haji Ahmad bin Haji Maslan,"Tentunya hal-hal alam
 sekitar ini akan kita tangani untuk masa-masa yang akan datang.
 Defisit, Yang Berhormat Senator Dato’ Dr. Ahmad Azam ada menyebut. Saya ingin
 menyatakan bahawa defisit sekarang ini ialah 5.8 peratus. Saya dah bertanya dalam satu
@@ -1090,45 +1090,45 @@ kesan kepada hutang kerana kita hanya ada sedikit peratusan iaitu hanya tiga per
 kepada RM1.078 trilion ini."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1120,Tuan Yang di-Pertua,"Kalau satu trilion itu Yang Berhormat Menteri, untuk orang
+Bacaan Kali Yang Kedua",,■1120,1120,Tuan Yang di-Pertua,"Kalau satu trilion itu Yang Berhormat Menteri, untuk orang
 kampung kita, berapa bilion itu?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1120,Datuk Seri Haji Ahmad bin Haji Maslan,"Dia, satu trilion ini ialah sejuta, sejuta
+Bacaan Kali Yang Kedua",,■1120,1120,Datuk Seri Haji Ahmad bin Haji Maslan,"Dia, satu trilion ini ialah sejuta, sejuta
 kali. Kalau sejuta itu ada enam kosong Tuan Yang di-Pertua, satu..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1120,Tuan Yang di-Pertua,"Bukan seribu bilion, kah?"
+Bacaan Kali Yang Kedua",,■1120,1120,Tuan Yang di-Pertua,"Bukan seribu bilion, kah?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1120,Datuk Seri Haji Ahmad bin Haji Maslan,Lebih kurang sama juga.
+Bacaan Kali Yang Kedua",,■1120,1120,Datuk Seri Haji Ahmad bin Haji Maslan,Lebih kurang sama juga.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1120,Tuan Yang di-Pertua,"Sahaja saya nak tanya sebab orang kampung selalu tanya,
+Bacaan Kali Yang Kedua",,■1120,1120,Tuan Yang di-Pertua,"Sahaja saya nak tanya sebab orang kampung selalu tanya,
 trilion itu tak dapat nak digambar."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1120,Datuk Seri Haji Ahmad bin Haji Maslan,"Dia begini. Sejuta ada enam kosong.
+Bacaan Kali Yang Kedua",,■1120,1120,Datuk Seri Haji Ahmad bin Haji Maslan,"Dia begini. Sejuta ada enam kosong.
 Satu trilion, sejuta kali sejuta bererti ada 12 kosong, Tuan Yang di-Pertua. Bilion ada
 sembilan kosong, trilion ada 12 kosong, million ada enam kosong."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1120,Tuan Yang di-Pertua,Amatilah jawapan itu.
+Bacaan Kali Yang Kedua",,■1120,1120,Tuan Yang di-Pertua,Amatilah jawapan itu.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1120,Datuk Seri Haji Ahmad bin Haji Maslan,Okey.
+Bacaan Kali Yang Kedua",,■1120,1120,Datuk Seri Haji Ahmad bin Haji Maslan,Okey.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1120,Tuan Yang di-Pertua,"Versi yang satu lagi, seribu bilion."
+Bacaan Kali Yang Kedua",,■1120,1120,Tuan Yang di-Pertua,"Versi yang satu lagi, seribu bilion."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1120,Datuk Seri Haji Ahmad bin Haji Maslan,"Ya, itu pun sukar juga untuk difahami."
+Bacaan Kali Yang Kedua",,■1120,1120,Datuk Seri Haji Ahmad bin Haji Maslan,"Ya, itu pun sukar juga untuk difahami."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1120,Tuan Yang di-Pertua,"Silakan, silakan Yang Berhormat."
+Bacaan Kali Yang Kedua",,■1120,1120,Tuan Yang di-Pertua,"Silakan, silakan Yang Berhormat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1120,Datuk Seri Haji Ahmad bin Haji Maslan,"Kita belajarlah angka-angka ini sebab ia
+Bacaan Kali Yang Kedua",,■1120,1120,Datuk Seri Haji Ahmad bin Haji Maslan,"Kita belajarlah angka-angka ini sebab ia
 angka-angka yang jarang disebut. Selalu sebut million dan bilion. Trilion ini jarang-jarang
 disebut. Walau bagaimanapun, kita sedang mencari kaedah terbaik, Tuan Yang di-Pertua.
 Kaedah terbaik bagaimana cara untuk kita mengatasi hutang dan defisit 5.8 peratus ini.
@@ -1195,30 +1195,30 @@ buat fitnah. Tak kira dalam *Tik Tok* kah, dalam *Twitter* kah, dalam *Facebook*
 *Instagram* kah. Jangan kita salah gunakan media sosial untuk kepentingan kita."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1130,Datuk Seri Haji Ahmad bin Haji Maslan,"Akhir Tuan Yang di-Pertua...
+Bacaan Kali Yang Kedua",,■1130,1130,Datuk Seri Haji Ahmad bin Haji Maslan,"Akhir Tuan Yang di-Pertua...
 *Dayung arah Kota Permata,
 Handal panglima jadi hikayat;
 Junjung Titah lupa sengketa,
 Ayuh bersama demi rakyat...*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1130,ANNOTATION,[Tepuk]
+Bacaan Kali Yang Kedua",,■1130,1130,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1130,Datuk Seri Haji Ahmad bin Haji Maslan,Terima kasih.
+Bacaan Kali Yang Kedua",,■1130,1130,Datuk Seri Haji Ahmad bin Haji Maslan,Terima kasih.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1130,Tuan Pengerusi,"Terima kasih.
+Bacaan Kali Yang Kedua",,■1130,1130,Tuan Pengerusi,"Terima kasih.
 *Bunga selasih dari Kuantan,
 Lalu dibeli dek Che Wahab;
 Terima kasih Dewan ucapkan,
 Kerana semua soalan sudah dijawab...*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1130,ANNOTATION,[Tepuk]
+Bacaan Kali Yang Kedua",,■1130,1130,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1130,Tuan Pengerusi,"Ahli-ahli Yang Berhormat, kita susur dengan bahasa biasa. Setinggi-tinggi
+Bacaan Kali Yang Kedua",,■1130,1130,Tuan Pengerusi,"Ahli-ahli Yang Berhormat, kita susur dengan bahasa biasa. Setinggi-tinggi
 penghargaan kepada Yang Berhormat Menteri atas jawapan beliau. Saya terkesan dengan
 jawapan berkaitan dengan *TikTok* tadi. Harus kita hormati dan jangan beri keuntungan
 kepada pencipta *TikTok* tetapi kita rugi sebagai bangsa.
@@ -1227,14 +1227,14 @@ diputuskan. Masalahnya ialah bahawa rang undang-undang ini Dibacakan Kali Yang K
 sekarang."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1130,ANNOTATION,[Masalah dikemuka bagi diputuskan; dan disetujukan]
+Bacaan Kali Yang Kedua",,■1130,1130,ANNOTATION,[Masalah dikemuka bagi diputuskan; dan disetujukan]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",,1130,ANNOTATION,"[Rang Undang-undang Kumpulan Wang Disatukan (Perbelanjaan Masuk Akaun)
+Bacaan Kali Yang Kedua",,■1130,1130,ANNOTATION,"[Rang Undang-undang Kumpulan Wang Disatukan (Perbelanjaan Masuk Akaun)
 2022 dan Usul Yang Berhormat Menteri Kewangan dibacakan Kali Yang Kedua]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",Bacaan Kali Yang Ketiga,1131,Timbalan Menteri Kewangan [Datuk Seri Haji Ahmad bin Haji Maslan],"Tuan
+Bacaan Kali Yang Kedua",Bacaan Kali Yang Ketiga,11.31 pg.,1131,Timbalan Menteri Kewangan [Datuk Seri Haji Ahmad bin Haji Maslan],"Tuan
 Yang di-Pertua, saya mohon memaklumkan bahawa Rang Undang-undang bernama suatu
 Akta bagi membenarkan perbelanjaan untuk sebahagian dari tahun yang berakhir pada 31
 Disember 2023 telah disetujukan tanpa pindaan.
@@ -1242,31 +1242,31 @@ Saya mohon mencadangkan bahawa menurut Peraturan Mesyuarat 53(2) rang
 undang-undang ini dibacakan kali yang ketiga dan diluluskan sekarang."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",Bacaan Kali Yang Ketiga,1131,Tuan Yang di-Pertua,Baiklah. Penyokong?
+Bacaan Kali Yang Kedua",Bacaan Kali Yang Ketiga,11.31 pg.,1131,Tuan Yang di-Pertua,Baiklah. Penyokong?
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",Bacaan Kali Yang Ketiga,1131,Timbalan Menteri Kewangan [Tuan Sim Chee Keong],"Saya mohon menyokong,
+Bacaan Kali Yang Kedua",Bacaan Kali Yang Ketiga,11.31 pg.,1131,Timbalan Menteri Kewangan [Tuan Sim Chee Keong],"Saya mohon menyokong,
 Tuan Yang di-Pertua."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",Bacaan Kali Yang Ketiga,1131,Tuan Yang di-Pertua,"Demikian sokongan, Ahli-ahli Yang Berhormat, masalahnya
+Bacaan Kali Yang Kedua",Bacaan Kali Yang Ketiga,11.31 pg.,1131,Tuan Yang di-Pertua,"Demikian sokongan, Ahli-ahli Yang Berhormat, masalahnya
 ialah bahawa rang undang-undang ini dibacakan kali yang ketiga dan diluluskan sekarang."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",Bacaan Kali Yang Ketiga,1131,ANNOTATION,[Masalah dikemuka bagi diputuskan; dan disetujukan]
+Bacaan Kali Yang Kedua",Bacaan Kali Yang Ketiga,11.31 pg.,1131,ANNOTATION,[Masalah dikemuka bagi diputuskan; dan disetujukan]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",Bacaan Kali Yang Ketiga,1131,ANNOTATION,[Rang undang-undang dibacakan kali yang ketiga dan diluluskan]
+Bacaan Kali Yang Kedua",Bacaan Kali Yang Ketiga,11.31 pg.,1131,ANNOTATION,[Rang undang-undang dibacakan kali yang ketiga dan diluluskan]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",Bacaan Kali Yang Ketiga,1131,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, mungkin dalam sejarah tahun ini,
+Bacaan Kali Yang Kedua",Bacaan Kali Yang Ketiga,11.31 pg.,1131,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, mungkin dalam sejarah tahun ini,
 inilah sesi Dewan Negara yang paling ringkas..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",Bacaan Kali Yang Ketiga,1131,ANNOTATION,[Dewan ketawa]
+Bacaan Kali Yang Kedua",Bacaan Kali Yang Ketiga,11.31 pg.,1131,ANNOTATION,[Dewan ketawa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",Bacaan Kali Yang Ketiga,1131,Tuan Yang di-Pertua,"Akan tetapi dalam
+Bacaan Kali Yang Kedua",Bacaan Kali Yang Ketiga,11.31 pg.,1131,Tuan Yang di-Pertua,"Akan tetapi dalam
 keringkasan itu, saya dapati ada suatu penjelmaan sentimen yang baik iaitu ukhuwah
 antara kita dan persahabatan, persefahaman dan niat yang paling tinggi agar Malaysia
 terjaga dan terjamin.
@@ -1276,4 +1276,4 @@ kita tangguhkan mesyuarat dan sesi pada kali ini sehingga tanggal yang akan dima
 kelak. Demikian, *wassalamualaikum.*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG KUMPULAN WANG DISATUKAN
 (PERBELANJAAN MASUK AKAUN) 2022
-Bacaan Kali Yang Kedua",Bacaan Kali Yang Ketiga,1133,ANNOTATION,[Dewan ditangguhkan pada pukul 11.33 pagi]
+Bacaan Kali Yang Kedua",Bacaan Kali Yang Ketiga,11.33 pagi,1133,ANNOTATION,[Dewan ditangguhkan pada pukul 11.33 pagi]

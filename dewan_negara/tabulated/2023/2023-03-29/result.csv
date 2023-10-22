@@ -1,11 +1,11 @@
-level_1,level_2,level_3,timestamp,author,speech
-,,,1000,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
-PEMASYHURAN TUAN YANG DI-PERTUA,PERUTUSAN DARIPADA DEWAN RAKYAT,,1000,Tuan Yang di-Pertua,"*Assalamualaikum* dan salam sejahtera. Ahli-ahli Yang
+level_1,level_2,level_3,raw_timestamp,timestamp,author,speech
+,,,10.00 pagi,1000,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
+PEMASYHURAN TUAN YANG DI-PERTUA,PERUTUSAN DARIPADA DEWAN RAKYAT,,10.00 pagi,1000,Tuan Yang di-Pertua,"*Assalamualaikum* dan salam sejahtera. Ahli-ahli Yang
 Berhormat, saya menerima satu perutusan daripada Dewan Rakyat yang meminta Dewan
 Negara mempersetujukan rang undang-undang yang telah diluluskan oleh Dewan Rakyat.
 Saya jemput Setiausaha Dewan Negara membacakan perutusan itu sekarang."
-PEMASYHURAN TUAN YANG DI-PERTUA,PERUTUSAN DARIPADA DEWAN RAKYAT,,1000,ANNOTATION,[Setiausaha membacakan Perutusan]
-PEMASYHURAN TUAN YANG DI-PERTUA,PERUTUSAN DARIPADA DEWAN RAKYAT,,1000,Tuan Yang di-Pertua,"“28 Mac 2023
+PEMASYHURAN TUAN YANG DI-PERTUA,PERUTUSAN DARIPADA DEWAN RAKYAT,,10.00 pagi,1000,ANNOTATION,[Setiausaha membacakan Perutusan]
+PEMASYHURAN TUAN YANG DI-PERTUA,PERUTUSAN DARIPADA DEWAN RAKYAT,,10.00 pagi,1000,Tuan Yang di-Pertua,"“28 Mac 2023
 **Perutusan Daripada Dewan Rakyat kepada Dewan Negara**
 Tuan Yang di-Pertua Dewan Negara,
 Dewan Rakyat telah meluluskan rang undang-undang yang berikut dan
@@ -14,12 +14,12 @@ meminta Dewan Negara mempersetujukannya:
 Yang ikhlas,
 t.t
 YANG DI-PERTUA DEWAN RAKYAT.”"
-PEMASYHURAN TUAN YANG DI-PERTUA,URUSAN MESYUARAT,,1000,"Timbalan Menteri di Jabatan Perdana Menteri (Hal Ehwal Sabah, Sarawak dan Tugas-tugas Khas) [Datuk Ugak anak Kumbong]","Terima kasih. Tuan Yang di-Pertua,
+PEMASYHURAN TUAN YANG DI-PERTUA,URUSAN MESYUARAT,,10.00 pagi,1000,"Timbalan Menteri di Jabatan Perdana Menteri (Hal Ehwal Sabah, Sarawak dan Tugas-tugas Khas) [Datuk Ugak anak Kumbong]","Terima kasih. Tuan Yang di-Pertua,
 mengikut Peraturan Mesyuarat 66(2), saya mohon memaklumkan supaya rang undang-
 undang yang tersebut dalam perutusan itu dibacakan kali kedua dan ketiga di Mesyuarat ini.
 Terima kasih."
-PEMASYHURAN TUAN YANG DI-PERTUA,URUSAN MESYUARAT,,1000,Tuan Yang di-Pertua,Baiklah.
-PEMASYHURAN TUAN YANG DI-PERTUA,PINDAAN TAKWIM PERSIDANGAN,,1000,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, saya sukacita hendak memberitahu
+PEMASYHURAN TUAN YANG DI-PERTUA,URUSAN MESYUARAT,,10.00 pagi,1000,Tuan Yang di-Pertua,Baiklah.
+PEMASYHURAN TUAN YANG DI-PERTUA,PINDAAN TAKWIM PERSIDANGAN,,10.00 pagi,1000,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, saya sukacita hendak memberitahu
 Majlis ini iaitu saya telah menerima satu perutusan daripada Yang Amat Berhormat Perdana
 Menteri selaku Ketua Majlis dan selaras dengan peruntukan Peraturan Mesyuarat 10(2)
 Peraturan-peraturan Majlis Mesyuarat Dewan Negara supaya Takwim Mesyuarat Dewan
@@ -34,13 +34,12 @@ membuat ketetapan bahawa sesi Waktu Pertanyaan-pertanyaan Bagi Jawab Lisan pada 
 ini akan diharakatkan sehingga jam 10.30 pagi bagi memberi ruang kepada Yang Amat
 Berhormat Menteri Kewangan untuk membentangkan Rang Undang-undang Perbekalan
 2023, sangkutan dengan tanggungjawab kenegaraan di luar negara."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1.,,1000,Datuk Bobbey Ah Fang Bin Suan,"minta Menteri Perdagangan Dalam Negeri dan
-Kos Sara Hidup menyatakan, jumlah kes barangan tiruan yang melibatkan pelbagai barangan
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,10.00 pagi,1000,,"Kos Sara Hidup menyatakan, jumlah kes barangan tiruan yang melibatkan pelbagai barangan
 pengguna mengikut kategori barang, tangkapan, pendakwaan, nilai rampasan dan hukuman."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1.,,1000,Timbalan Menteri Perdagangan Dalam Negeri dan Kos Sara Hidup [Puan Hajah Fuziah binti Salleh],"*Bismillahi Rahmani Rahim. Assalamualaikum warahmatullahi
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,10.00 pagi,1000,Timbalan Menteri Perdagangan Dalam Negeri dan Kos Sara Hidup [Puan Hajah Fuziah binti Salleh],"*Bismillahi Rahmani Rahim. Assalamualaikum warahmatullahi
 wabarakatuh*. Tuan Yang di-Pertua, selamat pagi."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1.,,1000,Tuan Yang di-Pertua,Selamat pagi.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1.,,1000,Puan Hajah Fuziah binti Salleh,"Salam Malaysia Madani. Terima kasih kepada Yang
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,10.00 pagi,1000,Tuan Yang di-Pertua,Selamat pagi.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,10.00 pagi,1000,Puan Hajah Fuziah binti Salleh,"Salam Malaysia Madani. Terima kasih kepada Yang
 Berhormat Senator Datuk Bobbey Ah Fang Bin Suan atas soalan ini.
 Tuan Yang di-Pertua, barang pengguna tiruan ialah barangan yang selalunya
 berkualiti lebih rendah, dibuat atau dijual dan dipakaikan dengan jenama lain tanpa kebenaran
@@ -65,7 +64,7 @@ Sekiranya didapati mana-mana individu peniaga yang menjual barangan tiruan dan
 melakukan kesalahan di bawah Akta Cap Dagangan 2019, jika disabitkan kesalahan, boleh
 didenda sehingga RM10,000 bagi setiap barang tiruan yang dipakaikan dengan salah cap
 dagangan berdaftar atau dipenjarakan sehingga tiga tahun atau kedua-duanya sekali."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1.,,1010,Puan Hajah Fuziah binti Salleh,"Bagi kesalahan kedua atau yang berikutnya, didenda tidak melebihi RM20,000 bagi
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1010,1010,Puan Hajah Fuziah binti Salleh,"Bagi kesalahan kedua atau yang berikutnya, didenda tidak melebihi RM20,000 bagi
 setiap barang tiruan yang dipakaikan dengan salah cap dagangan berdaftar, atau
 dipenjarakan selama tempoh tidak melebihi lima tahun, atau kedua-duanya. Ini bagi individu.
 Akan tetapi, bagi syarikat pula jika disabitkan kesalahan, denda yang akan dikenakan
@@ -73,17 +72,17 @@ tidak melebihi RM15,000 bagi setiap barang tiruan yang dipakaikan dengan salah c
 dagangan tadi.
 Bagi kesalahan kedua, tidak melebihi RM30,000 bagi setiap barang tiruan yang
 dipakaikan dengan cap dagangan yang berdaftar tadi. Terima kasih, Tuan Yang di-Pertua."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1.,,1010,Tuan Yang di-Pertua,Kembali. Yang Berhormat Senator Datuk Bobbey.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1.,,1010,Datuk Bobbey Ah Fang Bin Suan,"Soalan tambahan, Tuan Yang di-Pertua."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1.,,1010,Tuan Yang di-Pertua,Ya.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1.,,1010,Datuk Bobbey Ah Fang Bin Suan,"Terima kasih kepada Yang Berhormat Timbalan
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1010,1010,Tuan Yang di-Pertua,Kembali. Yang Berhormat Senator Datuk Bobbey.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1010,1010,Datuk Bobbey Ah Fang Bin Suan,"Soalan tambahan, Tuan Yang di-Pertua."
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1010,1010,Tuan Yang di-Pertua,Ya.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1010,1010,Datuk Bobbey Ah Fang Bin Suan,"Terima kasih kepada Yang Berhormat Timbalan
 Menteri atas jawapan sebentar tadi. Satu soalan, apakah langkah-langkah diambil oleh
 kerajaan untuk mempertingkatkan kesedaran kepada pengguna-pengguna terutama yang di
 luar bandar ini berkaitan dengan keselamatan dalam membeli barang-barangan seperti yang
 disebutkan tadi? Terutama makanan, ubat-ubatan dan mungkin keperluan seharian. Apakah
 yang akan dilakukan oleh kementerian terhadap ini? Terima kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1.,,1010,Tuan Yang di-Pertua,Sila.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1.,,1010,Puan Hajah Fuziah binti Salleh,"Terima kasih, Tuan Yang di-Pertua. Terima kasih,
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1010,1010,Tuan Yang di-Pertua,Sila.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1010,1010,Puan Hajah Fuziah binti Salleh,"Terima kasih, Tuan Yang di-Pertua. Terima kasih,
 Yang Berhormat Senator. Kita di bawah KPDN, ada Bahagian Pendayaupayaan Pengguna
 yang sentiasa membuat advokasi, bekerjasama dengan NGO-NGO kepenggunaan untuk
 sentiasa membuat program-program advokasi.
@@ -94,23 +93,23 @@ Terkini, kita mengeluarkan satu *QR code* untuk memuat aduan, yang memudahkan
 cara membuat aduan. Jadi, pengguna; pertama dididik, diberi advokasi dan kemudian
 diberikan saluran aduan supaya kita boleh membantu mereka. Terima kasih, Tuan Yang di-
 Pertua."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1.,,1010,Datuk Dr. Dominic Lau Hoe Chai,Soalan tambahan.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1.,,1010,Tuan Aknan a/l Ehtook,Soalan tambahan.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1.,,1010,Tuan Musoddak bin Ahmad,
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1.,,1010,ANNOTATION,[Bangun]
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1.,,1010,Tuan Yang di-Pertua,"Beliau sudah berdiri dahulu, iaitu Yang Berhormat Datuk Dr.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1010,1010,Datuk Dr. Dominic Lau Hoe Chai,Soalan tambahan.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1010,1010,Tuan Aknan a/l Ehtook,Soalan tambahan.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1010,1010,Tuan Musoddak bin Ahmad,
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1010,1010,ANNOTATION,[Bangun]
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1010,1010,Tuan Yang di-Pertua,"Beliau sudah berdiri dahulu, iaitu Yang Berhormat Datuk Dr.
 Dominic. Silakan."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1.,,1010,Datuk Dr. Dominic Lau Hoe Chai,"Terima kasih kepada Tuan Yang di-Pertua.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1010,1010,Datuk Dr. Dominic Lau Hoe Chai,"Terima kasih kepada Tuan Yang di-Pertua.
 Terima kasih kepada Yang Berhormat Timbalan Menteri atas penjelasan yang telah diberikan.
 Soalan tambahan saya ialah kita memang ada undang-undang dan penguat kuasa untuk
 mengatasi penjualan barangan tiruan. Akan tetapi, nampaknya kurang memuaskan. Apakah
 pendapat Yang Berhormat Timbalan Menteri; undang-undang yang kita sedia ada itu tidak
 mencukupi atau kita ada kelemahan dalam penguatkuasaan? Terima kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1.,,1010,Puan Hajah Fuziah binti Salleh,"Terima kasih, Tuan Yang di-Pertua. Soalan daripada
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1010,1010,Puan Hajah Fuziah binti Salleh,"Terima kasih, Tuan Yang di-Pertua. Soalan daripada
 Yang Berhormat Senator adalah sama ada, ada kelemahan daripada segi undang-undang
 ataupun ada kelemahan daripada segi penguatkuasaan..."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1.,,1010,Tuan Yang di-Pertua,Memadai tidak undang-undang itu.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1.,,1010,Puan Hajah Fuziah binti Salleh,"Memadai tidak undang-undang dan juga
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1010,1010,Tuan Yang di-Pertua,Memadai tidak undang-undang itu.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1010,1010,Puan Hajah Fuziah binti Salleh,"Memadai tidak undang-undang dan juga
 penguatkuasaan. Pada pandangan saya Tuan Yang di-Pertua, ia ada juga elemen undang-
 undang. Ia ada elemen penguatkuasaan. Ia ada juga elemen pengguna, Tuan Yang di-Pertua.
 Jadi, ia bermula dengan pengguna. Sebab kita ada undang-undang untuk mengawal.
@@ -121,16 +120,16 @@ Jadi di situ Tuan Yang di-Pertua, saya kira tiga elemen pengguna, undang-undang
 dan penguat kuasa perlu bekerjasama dalam satu ekosistem. Oleh sebab itu, ia perlu daya
 upayakan ketiga-tiga elemen ini. Akan tetapi, daripada segi undang-undang kita lihat ia cukup
 untuk melindungi hak pengguna. Terima kasih, Tuan Yang di-Pertua."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1.,,1010,Tuan Aknan a/l Ehtook,Soalan tambahan.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1.,,1010,Tuan Yang di-Pertua,Yang Berhormat Senator Tuan Aknan a/l Ehtook.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1.,,1010,Tuan Aknan a/l Ehtook,"Okey, terima kasih. Tadi Yang Berhormat Timbalan Menteri
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1010,1010,Tuan Aknan a/l Ehtook,Soalan tambahan.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1010,1010,Tuan Yang di-Pertua,Yang Berhormat Senator Tuan Aknan a/l Ehtook.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1010,1010,Tuan Aknan a/l Ehtook,"Okey, terima kasih. Tadi Yang Berhormat Timbalan Menteri
 menyebut tentang bahagian advokasi pengguna. Saya hendak bertanya, adakah fungsi itu
 juga termasuk menyedarkan pengguna tentang bahayanya bahan-bahan dalam mainan
 kanak-kanak? Contohnya, macam bahan yang digunakan untuk membuat dan juga cat-cat
 dan sebagainya. Ini adalah kerana kanak-kanak biasanya akan menggigit mainan tersebut.
 Jika ada bahan beracun, ia akan membahayakan kanak-kanak. Terima kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1.,,1010,Tuan Yang di-Pertua,Baik. Barang-barang bahaya.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1.,,1010,Puan Hajah Fuziah binti Salleh,"Terima kasih Yang Berhormat Senator atas soalan.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1010,1010,Tuan Yang di-Pertua,Baik. Barang-barang bahaya.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1010,1010,Puan Hajah Fuziah binti Salleh,"Terima kasih Yang Berhormat Senator atas soalan.
 Tuan Yang di-Pertua, kita bekerjasama dengan NGO-NGO pengguna. NGO-NGO pengguna
 ini, ada peruntukan yang kita salurkan kepada NGO pengguna untuk membantu kita.
 Merekalah yang selalu juga membantu kita dengan mengadakan advokasi sebab mereka
@@ -139,11 +138,11 @@ Pertua.
 Jadi itulah, secara rumusannya memang sentiasa diadakan advokasi dan kita didik
 juga pengguna dengan semua perkara termasuk mainan kanak-kanak. Terima kasih, Tuan
 Yang di-Pertua."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1.,,1010,Tuan Yang di-Pertua,Kembali. Yang Berhormat Senator Dato Dr. Nuing Jeluing.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,2.,,1010,Dato Dr. Nuing Jeluing,"minta Menteri Pendidikan menyatakan, apa langkah-langkah
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1010,1010,Tuan Yang di-Pertua,"Kembali. Yang Berhormat Senator Dato Dr. Nuing Jeluing.
+**2. Dato Dr. Nuing Jeluing** minta Menteri Pendidikan menyatakan, apa langkah-langkah
 yang diambil untuk mereformasi sekolah kebangsaan untuk menjadikannya sebagai pusat
 perpaduan."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,2.,,1010,Timbalan Menteri Pendidikan [Puan Lim Hui Ying],"Terima kasih, Tuan Yang di-
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1010,1010,Timbalan Menteri Pendidikan [Puan Lim Hui Ying],"Terima kasih, Tuan Yang di-
 Pertua. Kementerian Pendidikan Malaysia komited dalam memupuk perpaduan secara
 menyeluruh di kalangan warga pendidik. Oleh hal yang demikian, sistem pendidikan menerusi
 kurikulum kebangsaan digubal berasaskan dan bertunjangkan kepada prinsip-prinsip Rukun
@@ -176,8 +175,8 @@ juga menjadi medium utama KPM dalam memupuk perpaduan dalam kalangan murid di
 sekolah kebangsaan.
 KPM yakin langkah-langkah yang diambil mampu memperkasakan perpaduan di
 sekolah kebangsaan. Sekian, terima kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,2.,,1010,Tuan Yang di-Pertua,"Kembali. Yang Berhormat Dato Dr. Nuing Jeluing, ya."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,2.,,1010,Dato Dr. Nuing Jeluing,"Terima kasih, Tuan Yang di-Pertua. Terima kasih Yang
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1010,1010,Tuan Yang di-Pertua,"Kembali. Yang Berhormat Dato Dr. Nuing Jeluing, ya."
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1010,1010,Dato Dr. Nuing Jeluing,"Terima kasih, Tuan Yang di-Pertua. Terima kasih Yang
 Berhormat Timbalan Menteri atas jawapan. Soalan tambahan, semasa pembukaan Penggal
 Kedua Parlimen Kelima Belas pada 13 Februari 2023, Duli Yang Maha Mulia Seri Paduka
 Baginda Yang di-Pertuan Agong bertitah bahawa perpaduan merupakan penyatuan dalam
@@ -185,7 +184,7 @@ perbezaan, sebagai asas pembinaan kestabilan, tiang kemakmuran, menyumbang kepad
 kemajuan dan ia akan membawa kejayaan kepada negara kita.
 Soalan saya, adakah pihak KPM berhasrat untuk menentukan bahawa tenaga guru-
 guru di semua sekolah mencerminkan komposisi masyarakat kita? Terima kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,2.,,1020,Puan Lim Hui Ying,"Terima kasih Yang Berhormat Senator. Tuan Yang di-Pertua,
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1020,1020,Puan Lim Hui Ying,"Terima kasih Yang Berhormat Senator. Tuan Yang di-Pertua,
 KPM sentiasa menggalakkan semua warga Malaysia yang berkelayakan untuk memohon
 mengikuti Program Ijazah Sarjana Muda Perguruan (PISMP) Malaysia tanpa mengira
 komposisi kaum. Graduan PISMP akan berkhidmat di sekolah rendah bawah KPM. Di
@@ -196,23 +195,23 @@ Penempatan dan pelantikan guru di sekolah KPM adalah berdasarkan kepada
 kekosongan opsyen, mata pelajaran serta keperluan perjawatan. Khususnya di negeri Sabah
 dan Sarawak, KPM sentiasa akan memastikan penempatan guru memenuhi dasar 90:10
 dengan mengutamakan graduan tempatan negeri tersebut. Sekian, terima kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,2.,,1020,Datuk Dr. Dominic Lau Hoe Chai,Soalan tambahan.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,2.,,1020,Dato’ Kesavadas a/l A Achyuthan Nair,Soalan.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,2.,,1020,Prof. Datuk Seri Dr. Awang bin Sariyan,
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,2.,,1020,ANNOTATION,[Bangun]
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,2.,,1020,Tuan Yang di-Pertua,"Satu lagi. Ya, siapakah berdiri awal sekali tadi? Silakan ya."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,2.,,1020,Dato’ Kesavadas a/l A Achyuthan Nair,Saya.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,2.,,1020,Tuan Yang di-Pertua,Tidak.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,2.,,1020,Tuan Roderick Wong Siew Lead,"Terima kasih Tuan Yang di-Pertua. Selamat pagi.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1020,1020,Datuk Dr. Dominic Lau Hoe Chai,Soalan tambahan.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1020,1020,Dato’ Kesavadas a/l A Achyuthan Nair,Soalan.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1020,1020,Prof. Datuk Seri Dr. Awang bin Sariyan,
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1020,1020,ANNOTATION,[Bangun]
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1020,1020,Tuan Yang di-Pertua,"Satu lagi. Ya, siapakah berdiri awal sekali tadi? Silakan ya."
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1020,1020,Dato’ Kesavadas a/l A Achyuthan Nair,Saya.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1020,1020,Tuan Yang di-Pertua,Tidak.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1020,1020,Tuan Roderick Wong Siew Lead,"Terima kasih Tuan Yang di-Pertua. Selamat pagi.
 Jika kita menyentuh perpaduan, ia memerlukan semua pihak termasuk pihak kerajaan, pihak
 pembangkang dan juga rakyat. Jadi, apakah inisiatif perpaduan yang dilaksanakan oleh KPM
 di sekolah? Terima kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,2.,,1020,Tuan Yang di-Pertua,"Sebahagian sudah dijawab tadi. Itulah, dalam soalan ini, ada
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1020,1020,Tuan Yang di-Pertua,"Sebahagian sudah dijawab tadi. Itulah, dalam soalan ini, ada
 dua perkara yang jelas iaitu mereformasi sekolah kebangsaan dan kedua ialah pusat
 perpaduan. Beliau sudah jawab. Jadi, saya tidak benarkan untuk jawab."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,2.,,1020,Puan Lim Hui Ying,Terima kasih Tuan Yang di-Pertua.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,2.,,1020,Tuan Yang di-Pertua,Yang Berhormat Senator Dato’ Kesavadas.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,2.,,1020,Dato’ Kesavadas a/l A Achyuthan Nair,"Ya, Tuan Yang di-Pertua. Terima kasih Tuan
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1020,1020,Puan Lim Hui Ying,Terima kasih Tuan Yang di-Pertua.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1020,1020,Tuan Yang di-Pertua,Yang Berhormat Senator Dato’ Kesavadas.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1020,1020,Dato’ Kesavadas a/l A Achyuthan Nair,"Ya, Tuan Yang di-Pertua. Terima kasih Tuan
 Yang di-Pertua. Program Kembara Perpaduan Malaysia Madani yang diumumkan dalam
 Belanjawan 2023 wajar dilaksanakan di peringkat sekolah sebagai usaha untuk mengekal
 keharmonian pelajar yang berbilang kaum.
@@ -221,12 +220,12 @@ pendidikan negara? Minta Yang Berhormat Timbalan Menteri menyatakan peranan yang
 dimainkan oleh KPM untuk memastikan program nasional tersebut mampu digarap sebagai
 usaha untuk menyatupadukan pelajar, guru dan kakitangan sekolah yang mungkin selama ini
 dipisahkan dengan jurang perkauman yang kita tidak sedari. Sekian."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,2.,,1020,Tuan Yang di-Pertua,"Yang Berhormat Timbalan Menteri ada hak untuk menjawab
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1020,1020,Tuan Yang di-Pertua,"Yang Berhormat Timbalan Menteri ada hak untuk menjawab
 ataupun tidak."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,2.,,1020,Puan Lim Hui Ying,"Jawab, jawab."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,2.,,1020,Tuan Yang di-Pertua,"Ia kadang-kadang macam tembak itik, kena ayam..."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,2.,,1020,ANNOTATION,[Ketawa]
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,2.,,1020,Puan Lim Hui Ying,"Terima kasih Tuan Yang di-Pertua. Terima kasih Yang
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1020,1020,Puan Lim Hui Ying,"Jawab, jawab."
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1020,1020,Tuan Yang di-Pertua,"Ia kadang-kadang macam tembak itik, kena ayam..."
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1020,1020,ANNOTATION,[Ketawa]
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1020,1020,Puan Lim Hui Ying,"Terima kasih Tuan Yang di-Pertua. Terima kasih Yang
 Berhormat.
 Kementerian Pendidikan Malaysia tekad memastikan aspek perpaduan menjadi
 keutamaan dalam merencanakan sistem pendidikan negara berteraskan Falsafah Pendidikan
@@ -253,11 +252,11 @@ kalangan murid pelbagai kaum. Sehingga kini, sebanyak 3,443 KRN atau Kelab Rukun
 Negara telah ditubuhkan di sekolah rendah dan 1,434 buah di sekolah menengah.
 Kita akan sentiasa memastikan pendidikan menjadi tunjang utama ke arah
 pemupukan perpaduan di negara. Terima kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,2.,,1020,Tuan Yang di-Pertua,Yang Berhormat Senator Dato’ Dr. Nelson a/l Renganathan.
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,3.,,1020,Dato' Dr. Nelson a/l Renganathan,"minta Menteri Sains, Teknologi dan Inovasi
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1020,1020,Tuan Yang di-Pertua,"Yang Berhormat Senator Dato’ Dr. Nelson a/l Renganathan.
+**3. Dato' Dr. Nelson a/l Renganathan** minta Menteri Sains, Teknologi dan Inovasi
 menyatakan, apa peranan agensi-agensi di bawah kementerian dalam menonjolkan aktiviti-
 aktiviti berteknologi tinggi, umpamanya *artificial intelligence,* dan IR4.0."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,3.,,1020,"Timbalan Menteri Sains, Teknologi dan Inovasi [Datuk Arthur Joseph Kurup]","Selamat pagi dan salam sejahtera, Tuan Yang di-Pertua.
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1020,1020,"Timbalan Menteri Sains, Teknologi dan Inovasi [Datuk Arthur Joseph Kurup]","Selamat pagi dan salam sejahtera, Tuan Yang di-Pertua.
 Di bawah Rancangan Malaysia Kedua Belas, kerajaan telah menggubal Rangka Kerja
 10-10 Sains, Teknologi, Inovasi dan Ekonomi Malaysia (MySTIE) bagi merintis laluan ke arah
 kemakmuran, kesejahteraan masyarakat dan daya saing global. Pelbagai penerima gunaan
@@ -286,9 +285,9 @@ bawah MOSTI berperanan dalam menonjolkan aktiviti berteknologi tinggi. Pertama, 
 yang diberi mandat untuk menjalankan aktiviti R&D di dalam bidang ICT, semikonduktor dan
 mikroelektronik dan seterusnya menyumbang kepada peningkatan daya saing industri negara
 melalui harta intelek dan teknologi..."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,3.,,1020,Tuan Yang di-Pertua,"Itu masa sudah tamat, Yang Berhormat. Cuba berekonomi
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1020,1020,Tuan Yang di-Pertua,"Itu masa sudah tamat, Yang Berhormat. Cuba berekonomi
 perkataan sikit tadi."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,3.,,1020,Datuk Arthur Joseph Kurup,"Boleh, Tuan Yang di-Pertua. Pertama, kita ada agensi
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1020,1020,Datuk Arthur Joseph Kurup,"Boleh, Tuan Yang di-Pertua. Pertama, kita ada agensi
 MIMOS seperti mana yang saya sebutkan tadi.
 Kedua, agensi MRANTI yang memainkan peranan penting dalam perkhidmatan
 mudah cara. MRANTI juga memberi bantuan pengkomersialan bagi sektor penting dalam
@@ -297,15 +296,15 @@ Dan agensi ketiga, inisiatif daripada NanoMalaysia yang berkaitan dalam
 membangunkan industri makanan dan pertanian, kesejahteraan perubatan dan penjagaan
 kesihatan, peranti dan alam sistem elektronik, tenaga serta alam sekitar yang juga
 menyumbang kepada pembangunan kecerdasan buatan. Sekian dan terima kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,3.,,1020,Tuan Yang di-Pertua,"Akhirnya balik kepada Yang Berhormat Dato’ Nelson. Ada
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1020,1020,Tuan Yang di-Pertua,"Akhirnya balik kepada Yang Berhormat Dato’ Nelson. Ada
 soalan tambahan? Akhir sekali ya. Sebab, Yang Amat Berhormat Menteri Kewangan sudah
 pun bersedia."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,3.,,1020,Dato’ Dr. Nelson a/l Renganathan,"Terima kasih Tuan Yang di-Pertua. Terima kasih
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1020,1020,Dato’ Dr. Nelson a/l Renganathan,"Terima kasih Tuan Yang di-Pertua. Terima kasih
 Yang Berhormat Timbalan Menteri. Apa peratusan kejayaan pengkomersialan di bawah
 program NTIS iaitu *National Technology and Innovation Sandbox,* dengan izin? Sila nyatakan
 peluang pekerjaan yang telah diwujudkan hasil daripada pemudahcaraan teknologi AI dan
 IR4.0. Terima kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,3.,,1030,Datuk Arthur Joseph Kurup,"Terima kasih Yang Berhormat Senator. Secara
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1030,1030,Datuk Arthur Joseph Kurup,"Terima kasih Yang Berhormat Senator. Secara
 ringkasnya, NTIS ini merupakan program di mana kita menyediakan ruang dan tapak ujian
 kepada para pembangunan produk-produk yang berinovasi dan berteknologi tinggi. Melalui
 projek NTIS ini, setakat ini kita ada sebanyak 22 buah projek dengan fasilitasi pendanaan di
@@ -314,34 +313,34 @@ Daripada jumlah ini, sebanyak 70 peratus daripada projek ini adalah tergolong da
 elemen AI dan IR 4.0. Daripada NTIS juga, usaha ini telah menghasilkan 98 buah projek yang
 dibantu melalui pemudahcaraan pendanaan. Setakat ini, kita telah menyediakan sebanyak
 244 peluang pekerjaan yang mahir dalam teknologi tinggi. Sekian dan terima kasih."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,3.,,1030,Tuan Yang di-Pertua,"Kembali dan diucapkan terima kasih kepada Yang Berhormat
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1030,1030,Tuan Yang di-Pertua,"Kembali dan diucapkan terima kasih kepada Yang Berhormat
 Timbalan Menteri. Seperti yang saya umumkan sebentar tadi bahawa pada saat ini, sampai
 masa bagi Yang Amat Berhormat Menteri Kewangan untuk membentangkan Rang Undang-
 undang Perbekalan 2023.
 Kepada Ahli-ahli yang tadi tidak sempat dijawab soalan masing-masing, saya
 petuakan supaya jawapan bertulis disediakan kepada setiap Ahli yang telah
 mengemukakannya. Setiausaha."
-PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,3.,,1030,ANNOTATION,[Masa Pertanyaan-pertanyaan bagi Jawab Lisan tamat]
+PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN,1. Datuk Bobbey Ah Fang Bin Suan minta Menteri Perdagangan Dalam Negeri dan,,■1030,1030,ANNOTATION,[Masa Pertanyaan-pertanyaan bagi Jawab Lisan tamat]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1030,Tuan Yang di-Pertua,"Dengan sukacitanya dipersilakan Yang Amat Berhormat
+Bacaan Kali Yang Kedua",,■1030,1030,Tuan Yang di-Pertua,"Dengan sukacitanya dipersilakan Yang Amat Berhormat
 Menteri Kewangan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1032,Perdana Menteri dan Menteri Kewangan [Dato’ Seri Anwar bin Ibrahim],"*Assalamualaikum warahmatullahi wabarakatuh,* salam sejahtera. Tuan Yang di-Pertua, saya
+Bacaan Kali Yang Kedua",,10.32 pg.,1032,Perdana Menteri dan Menteri Kewangan [Dato’ Seri Anwar bin Ibrahim],"*Assalamualaikum warahmatullahi wabarakatuh,* salam sejahtera. Tuan Yang di-Pertua, saya
 mohon mencadangkan supaya rang undang-undang bernama suatu akta bagi menggunakan
 sejumlah wang daripada Kumpulan Wang Disatukan untuk perkhidmatan bagi tahun 2023 dan
 bagi memperuntukkan jumlah wang itu dan apa-apa jumlah wang lain yang telah dibenarkan
 sebagai perbelanjaan untuk perkhidmatan bagi sebahagian daripada tahun itu dibaca bagi
 kali kedua sekarang."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1032,Tuan Yang di-Pertua,Silakan.
+Bacaan Kali Yang Kedua",,10.32 pg.,1032,Tuan Yang di-Pertua,Silakan.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1032,Dato’ Seri Anwar bin Ibrahim,"Tuan Yang di-Pertua, saya memilih untuk datang
+Bacaan Kali Yang Kedua",,10.32 pg.,1032,Dato’ Seri Anwar bin Ibrahim,"Tuan Yang di-Pertua, saya memilih untuk datang
 membentangkan sendiri sebagai langkah menghormati dasar reformasi Parlimen dan
 mengangkat martabat Dewan Negara kepada tahap yang sewajarnya..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1032,ANNOTATION,[Tepuk]
+Bacaan Kali Yang Kedua",,10.32 pg.,1032,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1032,Dato’ Seri Anwar bin Ibrahim,"Saya juga
+Bacaan Kali Yang Kedua",,10.32 pg.,1032,Dato’ Seri Anwar bin Ibrahim,"Saya juga
 sedar inilah kali pertama seorang Menteri Kewangan atau Perdana Menteri datang hadir untuk
 membentangkan satu rang undang-undang yang penting untuk pertimbangan Ahli-ahli Yang
 Berhormat Dewan Negara.
@@ -400,7 +399,7 @@ Twin Tower dan bangunan indah gemerlapan, tetapi juga gerai, warung dan restoran
 yang indah dan bersih. Oleh sebab itu, seluruh majlis perbandaran, sama ada di bawah
 Persekutuan ataupun negeri diminta mendukung hasrat yang sedemikian."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1040,Dato’ Seri Anwar bin Ibrahim,"Umpamanya kita gunakan peruntukan kewangan termasuk RM50 juta membina
+Bacaan Kali Yang Kedua",,■1040,1040,Dato’ Seri Anwar bin Ibrahim,"Umpamanya kita gunakan peruntukan kewangan termasuk RM50 juta membina
 baharu dan menaik taraf 3,000 buah gerai dan kiosk, ini secara spesifik sebagai kemudahan
 penjaja kecil dan RM176 juta naik taraf premis kemudahan perniagaan di bawah MARA,
 Dewan Bandaraya Kuala Lumpur, PUNB dan UDA.
@@ -422,9 +421,9 @@ tentunya atas fatwa dari atas. Ini yang telah berlaku sebab itu dengan projek ya
 boleh jimatkan RM2 bilion. Kerana penjimatan itu, kita tambah dua projek tambahan, satu di
 Johor dan satu di Sungai Golok, Kelantan..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1040,ANNOTATION,[Tepuk]
+Bacaan Kali Yang Kedua",,■1040,1040,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1040,Dato’ Seri Anwar bin Ibrahim,"Ini menunjukkan bahawa tatakelola dalam kerajaan keras menentang penyelewengan
+Bacaan Kali Yang Kedua",,■1040,1040,Dato’ Seri Anwar bin Ibrahim,"Ini menunjukkan bahawa tatakelola dalam kerajaan keras menentang penyelewengan
 dan rasuah itu akan dapat bantu menambah projek rakyat dan mengurangkan beban rakyat.
 Oleh itu selain daripada 10 projek tebatan banjir, tanpa mengira negeri walaupun ada
 tohmahan yang berterusan bahawa pentadbiran Kerajaan Perpaduan ini memilih untuk
@@ -491,7 +490,7 @@ Pembangunan Kanak-kanak yang baharu. Dalam sesi yang lepas di Parlimen, berulang
 saya sebut tentang keperluan konglomerat besar menjalankan tanggungjawab untuk
 meringankan beban rakyat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1050,Dato’ Seri Anwar bin Ibrahim,"Maka saya telah hubungi umpamanya BERNAS, Tan Sri Syed Mokhtar untuk
+Bacaan Kali Yang Kedua",,■1050,1050,Dato’ Seri Anwar bin Ibrahim,"Maka saya telah hubungi umpamanya BERNAS, Tan Sri Syed Mokhtar untuk
 membantu dan beliau segera meluluskan RM10 juta kemudian RM50 juta, RM60 juta ringgit
 untuk pesawah yang umumnya dalam kategori miskin dan selepas itu beliau bersetuju supaya
 30 peratus daripada keuntungan bersih import beras BERNAS dipulangkan kepada pesawah.
@@ -541,9 +540,9 @@ jumlah 130,000 kerana ada kemungkinan penambahan dalam beberapa bulan ini. Jadi,
 bertekad untuk tahun ini, Malaysia harus catat rekod bukan gedung besar atau mercu tanda
 tinggi tetapi membebaskan 130,000 buah- keluarga daripada kemiskinan tegar..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1050,ANNOTATION,[Tepuk]
+Bacaan Kali Yang Kedua",,■1050,1050,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1050,Dato’ Seri Anwar bin Ibrahim,"Ada yang mempertikaikan seperti mana Yang Berhormat dengar kononnya dalam
+Bacaan Kali Yang Kedua",,■1050,1050,Dato’ Seri Anwar bin Ibrahim,"Ada yang mempertikaikan seperti mana Yang Berhormat dengar kononnya dalam
 Islam ini tidak mungkin. Saya ingat kita tidak perlu layan pandangan dangkal begitu rupa
 kerana pengalaman Khalifah Umar Abd Aziz itu jelas, dua tahun tiga bulan dapat membasmi
 kemiskinan tegar. Jadi, kita sudah enam dekad merdeka, saya fikir tidak ada alasan lagi
@@ -578,15 +577,15 @@ Ramadan dan Aidilfitri, saya teliti, saya minta Kementerian Kewangan teliti mana
 tidak peroleh manfaat daripada pengumuman-pengumuman yang dibuat sebelum ini.
 Umpamanya penjawat awam ada, nelayan, pekebun kecil ada."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1100,Dato’ Seri Anwar bin Ibrahim,"Akan tetapi, yang tidak termasuk dalam kategori ini ialah jumlah- walaupun begitu,
+Bacaan Kali Yang Kedua",,■1100,1100,Dato’ Seri Anwar bin Ibrahim,"Akan tetapi, yang tidak termasuk dalam kategori ini ialah jumlah- walaupun begitu,
 saya lihat masih ada masalah terutama bulan Ramadan dan Aidilfitri. Maka, saya bersetuju
 untuk menyalurkan bantuan khas kewangan Aidilfitri kepada 850,000 orang pekebun kecil
 getah, pesawah dan nelayan sebanyak RM200 lagi, tambahan daripada yang telah
 diumumkan..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1100,ANNOTATION,[Tepuk]
+Bacaan Kali Yang Kedua",,■1100,1100,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1100,Dato’ Seri Anwar bin Ibrahim,"Ini akan menelan belanja RM170 juta.
+Bacaan Kali Yang Kedua",,■1100,1100,Dato’ Seri Anwar bin Ibrahim,"Ini akan menelan belanja RM170 juta.
 Jadi, dengan penambahan ini bermakna bantuan terbesar yang pernah diberikan oleh
 kerajaan kepada nelayan, pesawah dan pekebun kecil getah. Akan tetapi, ada juga keluhan.
 Bagaimanakah dengan M40? Yang kita tumpukan ialah pemacuan pertumbuhan, jadi T20
@@ -599,9 +598,9 @@ Bagaimanakah pula dengan peruntukan bagi negeri-negeri? Saya telah sebut dan
 saya ingin tegaskan untuk pertimbangan Ahli-ahli Dewan Negara iaitu pada tahun 2023, kita
 naikkan untuk semua negeri termasuk Perlis, Terengganu, Kedah dan Kelantan..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1100,ANNOTATION,[Tepuk]
+Bacaan Kali Yang Kedua",,■1100,1100,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1100,Dato’ Seri Anwar bin Ibrahim,"Untuk Perlis, dinaikkan daripada RM138 juta menjadi RM154 juta. Terengganu, daripada
+Bacaan Kali Yang Kedua",,■1100,1100,Dato’ Seri Anwar bin Ibrahim,"Untuk Perlis, dinaikkan daripada RM138 juta menjadi RM154 juta. Terengganu, daripada
 RM393.6 juta kepada RM411.1 juta. Kelantan, RM331 juta kepada RM351.5 juta dan Kedah,
 daripada RM458.1 juta kepada RM512.1 juta. Kesemua negeri ini ditambah.
 Ini termasuk pemberian kepada kerajaan negeri berdasarkan tahap pembangunan
@@ -611,9 +610,9 @@ yang tadi saya sebut bantuan kewangan, ini untuk pembangunan. Untuk Kedah, Kelan
 Terengganu dan Perlis, dinaikkan daripada RM5.6 bilion tahun lalu, bawah kerajaan yang lalu,
 saya naikkan menjadi RM6.2 bilion sekarang..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1100,ANNOTATION,[Tepuk]
+Bacaan Kali Yang Kedua",,■1100,1100,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1100,Dato’ Seri Anwar bin Ibrahim,"Jadi, saya harap dihentikan soal tohmahan, fitnah bahawa kita kurangkan atau kita
+Bacaan Kali Yang Kedua",,■1100,1100,Dato’ Seri Anwar bin Ibrahim,"Jadi, saya harap dihentikan soal tohmahan, fitnah bahawa kita kurangkan atau kita
 menganaktirikan. Tidak boleh, kerana saya menjadi Menteri Kewangan bagi rakyat Malaysia,
 bukan bagi negeri-negeri yang menyokong Kerajaan Perpaduan. Cuma bedanya ialah
 tumpuan Sabah dan Sarawak itu jauh lebih tinggi. Ini mula-mula dipertikaikan dan saya
@@ -621,9 +620,9 @@ jelaskan kerana kadar pembangunan, kawasan pendalaman, kemudahan-kemudahan asas
 itu terlalu daif. Oleh sebab itu, jumlah peruntukan di Sabah dan Sarawak itu, Sabah
 umpamanya RM6.5 bilion dan Sarawak RM5.6 bilion..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1100,ANNOTATION,[Tepuk]
+Bacaan Kali Yang Kedua",,■1100,1100,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1100,Dato’ Seri Anwar bin Ibrahim,"Akan tetapi, harus kita lihat kenyataannya dan saya minta diteliti semula semua
+Bacaan Kali Yang Kedua",,■1100,1100,Dato’ Seri Anwar bin Ibrahim,"Akan tetapi, harus kita lihat kenyataannya dan saya minta diteliti semula semua
 kaedah perjanjian MA63 kerana Perjanjian Malaysia 1963 itu telah dimeterai, ditandatangani
 oleh pemimpin-pemimpin utama negara pada ketika itu dan tanggungjawab kita adalah untuk
 melaksanakan dengan jujur. Oleh sebab itu, untuk mempercepat proses kelulusan projek di
@@ -671,14 +670,14 @@ meringankan beban kewangan peminjam yang terkesan. Kerajaan bersetuju untuk
 memberikan penangguhan bayaran balik kepada peminjam berpendapatan bulanan RM1,800
 ke bawah untuk tempoh enam bulan. Penangguhan ini boleh dibuat mulai 1 Mac 2023."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1110,Dato’ Seri Anwar bin Ibrahim,"Yang baharu yang saya hendak umumkan pada hari ini ialah setelah mendengar
+Bacaan Kali Yang Kedua",,■1110,1110,Dato’ Seri Anwar bin Ibrahim,"Yang baharu yang saya hendak umumkan pada hari ini ialah setelah mendengar
 keresahan yang disuarakan dan teguran kepada kerajaan, maka dengan ini saya bersetuju
 untuk melanjutkan pelepasan cukai pendapatan individu sehingga RM8,000 untuk simpanan
 bersih tahunan dalam Skim Simpanan Pendidikan Nasional sehingga tahun 2024..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1110,ANNOTATION,[Tepuk]
+Bacaan Kali Yang Kedua",,■1110,1110,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1110,Dato’ Seri Anwar bin Ibrahim,"Cadangan ini melibatkan kehilangan hasil kerajaan sekitar RM250 juta setahun dan
+Bacaan Kali Yang Kedua",,■1110,1110,Dato’ Seri Anwar bin Ibrahim,"Cadangan ini melibatkan kehilangan hasil kerajaan sekitar RM250 juta setahun dan
 memanfaatkan lebih 400,000 orang pembayar cukai.
 Tuan Yang di-Pertua, jumlah ini bukan jumlah B40. Ini jumlah orang yang
 berpendapatan agak lebih sederhana, tetapi kerana maksudnya ialah pendidikan, pertama,
@@ -715,12 +714,12 @@ Ini pengumuman baharu. Jadi, saya, Tuan Yang di-Pertua, betul-betul memberi
 penghormatan besar kepada Dewan Negara. Ini kerana kalau ikut pengalaman lalu, tidak ada
 pengumuman baharu di Dewan Negara..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1110,ANNOTATION,[Tepuk]
+Bacaan Kali Yang Kedua",,■1110,1110,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1110,Tuan Yang di-Pertua,"Itu sebab diistimewakan hari ini. Terima kasih kepada Yang
+Bacaan Kali Yang Kedua",,■1110,1110,Tuan Yang di-Pertua,"Itu sebab diistimewakan hari ini. Terima kasih kepada Yang
 Amat Berhormat Menteri Kewangan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1110,Dato' Seri Anwar bin Ibrahim,"Pengumuman baharu ini ialah Belanjawan 2023,
+Bacaan Kali Yang Kedua",,■1110,1110,Dato' Seri Anwar bin Ibrahim,"Pengumuman baharu ini ialah Belanjawan 2023,
 Syarikat Jaminan Kredit Perumahan (SJKP) telah ditambah baik dengan meningkatkan dana
 jaminan pembiayaan daripada RM3 bilion kepada RM5 bilion untuk membantu pembeli rumah
 kali pertama terutamanya mereka yang tidak berpendapatan tetap.
@@ -777,31 +776,31 @@ bebanan kepada KWSP dan kepada keluarga yang berkenaan.
 Baik, ini pengumuman baharu. Oleh sebab, saya sebut tadi, Tuan Yang di-Pertua, ada
 kategori, yang bila saya teliti, tidak dapat manfaat yang sama."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1120,Dato' Seri Anwar bin Ibrahim,"Kategorinya ialah sukarelawan termasuk RELA, Angkatan Pertahanan Awam
+Bacaan Kali Yang Kedua",,■1120,1120,Dato' Seri Anwar bin Ibrahim,"Kategorinya ialah sukarelawan termasuk RELA, Angkatan Pertahanan Awam
 Malaysia, sukarelawan polis dan sukarelawan bomba. Ia berbeza daripada pekerjaan tetap.
 Jadi, Polis Bantuan, itu tidak termasuk. Akan tetapi kategori sukarelawan ini, 200,000 orang
 yang tidak mendapat manfaat. Jadi, sukarelawan uniform, mereka juga menghadapi masalah
 menjelang Aidilfitri. Maka, saya setuju untuk memberikan sagu hati kepada mereka sebanyak
 RM300 bagi setiap sukarelawan ini..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1120,ANNOTATION,[Tepuk]
+Bacaan Kali Yang Kedua",,■1120,1120,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1120,Dato' Seri Anwar bin Ibrahim,"Mudah-mudahan, *insya-Allah.*"
+Bacaan Kali Yang Kedua",,■1120,1120,Dato' Seri Anwar bin Ibrahim,"Mudah-mudahan, *insya-Allah.*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1120,Tuan Yang di-Pertua,"Itu termasuk RELA, Yang Amat Berhormat?"
+Bacaan Kali Yang Kedua",,■1120,1120,Tuan Yang di-Pertua,"Itu termasuk RELA, Yang Amat Berhormat?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1120,Dato' Seri Anwar bin Ibrahim,"Ya. RELA, sukarelawan Angkatan Pertahanan Awam
+Bacaan Kali Yang Kedua",,■1120,1120,Dato' Seri Anwar bin Ibrahim,"Ya. RELA, sukarelawan Angkatan Pertahanan Awam
 Malaysia, sukarelawan polis dan sukarelawan bomba. Seramai 200,000 orang, RM300
 seorang.
 Sekali lagi Tuan Yang di-Pertua, saya ucapkan terima kasih atas kesabaran
 mendengar dan mengucapkan selamat berpuasa Ramadhan*...*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1120,ANNOTATION,"[Bercakap dalam bahasa
+Bacaan Kali Yang Kedua",,■1120,1120,ANNOTATION,"[Bercakap dalam bahasa
 Arab]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1120,ANNOTATION,[Tepuk]
+Bacaan Kali Yang Kedua",,■1120,1120,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1120,Tuan Yang di-Pertua,"*Alhamdulillah*, Yang Amat Berhormat Menteri Kewangan telah
+Bacaan Kali Yang Kedua",,■1120,1120,Tuan Yang di-Pertua,"*Alhamdulillah*, Yang Amat Berhormat Menteri Kewangan telah
 menyampaikan ucapan pembentangan bajet atau Belanjawan 2023 seperti yang tertera
 dalam deskripsi atau huraian beliau sebentar tadi.
 Yang Amat Berhormat mula dalam jam 10.32 pagi, sekarang jam 11.21 pagi. Jadi,
@@ -809,10 +808,10 @@ mengikut apa yang diperlukan ialah ini telah dianggap sebagai mengemukakan rang 
 undang bagi bacaan kali yang kedua dan seterusnya memberi huraian, telah pun diberi
 huraian. Ada sesiapa yang menyokong?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1120,Timbalan Menteri Kewangan [Datuk Seri Haji Ahmad bin Haji Maslan],"Tuan Yang
+Bacaan Kali Yang Kedua",,■1120,1120,Timbalan Menteri Kewangan [Datuk Seri Haji Ahmad bin Haji Maslan],"Tuan Yang
 di-Pertua, saya mohon menyokong."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1120,Tuan Yang di-Pertua,"*Alhamdulillah*, ada sokongan.
+Bacaan Kali Yang Kedua",,■1120,1120,Tuan Yang di-Pertua,"*Alhamdulillah*, ada sokongan.
 Ahli-ahli Yang Berhormat, masalah di hadapan Majlis ialah rang undang-undang
 bernama suatu akta bagi menggunakan sejumlah wang daripada Kumpulan Wang Disatukan
 untuk perkhidmatan bagi tahun 2023 dan bagi memperuntukkan jumlah wang itu dan apa-apa
@@ -829,17 +828,17 @@ Justeru, Yang Amat Berhormat sekali lagi, berbanyak-banyak terima kasih dan
 penghargaan daripada kami dari Dewan Negara dan ini merupakan penghormatan yang kita
 telah rakamkan sebelum ini jua. *Wassalam* dan dengan itu, selamat bertugas di luar negara..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1120,ANNOTATION,[Tepuk]
+Bacaan Kali Yang Kedua",,■1120,1120,ANNOTATION,[Tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1120,Dato' Seri Anwar bin Ibrahim,"Terima kasih Tuan Yang di-Pertua. *Alhamdulillah,*
+Bacaan Kali Yang Kedua",,■1120,1120,Dato' Seri Anwar bin Ibrahim,"Terima kasih Tuan Yang di-Pertua. *Alhamdulillah,*
 saya hendak bertolak ke Negara China sekarang."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1120,Tuan Yang di-Pertua,"Harap membawa balik sebesar-besar kejayaan bagi Malaysia
+Bacaan Kali Yang Kedua",,■1120,1120,Tuan Yang di-Pertua,"Harap membawa balik sebesar-besar kejayaan bagi Malaysia
 tercinta."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1120,Dato' Seri Anwar bin Ibrahim,*Insya-Allah.*
+Bacaan Kali Yang Kedua",,■1120,1120,Dato' Seri Anwar bin Ibrahim,*Insya-Allah.*
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1120,Tuan Yang di-Pertua,"*Alhamdulillah*. Selesai urusan tersebut dan sekarang timbul
+Bacaan Kali Yang Kedua",,■1120,1120,Tuan Yang di-Pertua,"*Alhamdulillah*. Selesai urusan tersebut dan sekarang timbul
 urusan yang baharu iaitu perbahasan kita. Agak unik juga sebab Yang Amat Berhormat
 Menteri Kewangan tidak menggunakan teks, satu.
 Kedua ialah nota-nota yang sepatutnya kita ada mengambil catatan tadi dapat kita
@@ -849,12 +848,12 @@ Jadi, saya telah berunding dengan Setiausaha Dewan Negara, seorang diberi alokas
 dan pohon sebagai perkara-perkara penting yang hendak kita timbulkan di kemudian masa.
 Yang Berhormat Datuk Razali bin Idris merupakan pengucap pertama. Silakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1124,Datuk Razali bin Idris,"*Assalamualaikum warahmatullahi wabarakatuh* dan salam
+Bacaan Kali Yang Kedua",,11.24 pg.,1124,Datuk Razali bin Idris,"*Assalamualaikum warahmatullahi wabarakatuh* dan salam
 sejahtera. *Bismillahi Rahmani Rahim*..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1124,ANNOTATION,[Membaca sepotong doa]
+Bacaan Kali Yang Kedua",,11.24 pg.,1124,ANNOTATION,[Membaca sepotong doa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1124,Datuk Razali bin Idris,"Terima kasih Tuan Yang di-
+Bacaan Kali Yang Kedua",,11.24 pg.,1124,Datuk Razali bin Idris,"Terima kasih Tuan Yang di-
 Pertua kerana memberi ruang kepada saya untuk sama-sama mengambil bahagian dalam
 sesi perbahasan Bajet 2023.
 Terlebih dahulu saya ingin mengatakan bahawasanya *talking point* saya tertumpu
@@ -893,14 +892,14 @@ kegagalan kerajaan dan akhirnya tenggelam punca untuk selesaikan masalah sebenar
 juga difahamkan inflasi makanan dan minuman naik lagi dalam bulan Mac. Jadi, apakah
 langkah yang diambil oleh kerajaan?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1124,ANNOTATION,[Timbalan Yang di-Pertua mempengerusikan Mesyuarat]
+Bacaan Kali Yang Kedua",,11.24 pg.,1124,ANNOTATION,[Timbalan Yang di-Pertua mempengerusikan Mesyuarat]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1124,Datuk Razali bin Idris,"Tuan Yang di-Pertua, selisih tidak nampak. Apakah pelan kerajaan untuk kurangkan
+Bacaan Kali Yang Kedua",,11.24 pg.,1124,Datuk Razali bin Idris,"Tuan Yang di-Pertua, selisih tidak nampak. Apakah pelan kerajaan untuk kurangkan
 inflasi pada bulan April nanti? Ini soalan ditujukan kepada Menteri Ekonomi. Jelas di sini bukan
 Perikatan Nasional yang terduduk, tetapi sebenarnya rakyat yang terduduk. Ini Menteri
 Ekonomi kata."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1130,Datuk Razali bin Idris,"Semalam, Yang Berhormat Menteri Ekonomi hadir menggulung perbahasan Titah
+Bacaan Kali Yang Kedua",,■1130,1130,Datuk Razali bin Idris,"Semalam, Yang Berhormat Menteri Ekonomi hadir menggulung perbahasan Titah
 Yang di-Pertuan Agong, dan kata saya tidak ada soalan. Saya hendak jelaskan di sini-
 *Hansard,* soalan saya, tiga soalan.
 Tuan Yang di-Pertua, ada soalan mungkin pegawai terlupa ataupun mungkin Menteri
@@ -993,7 +992,7 @@ dirancang tahun 2010 dan telah diluluskan tetapi masih belum dilaksanakan iaitu:
 (i) Projek Sistem Saliran Banggo Air Lilih di Kuala Nerus;
 (ii) Sistem Saliran Padang Lebam di Bukit Payung;"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1140,Datuk Razali bin Idris,"(iii) sistem saliran Bandar Baru Kerteh di Kemaman; dan
+Bacaan Kali Yang Kedua",,■1140,1140,Datuk Razali bin Idris,"(iii) sistem saliran Bandar Baru Kerteh di Kemaman; dan
 (iii) projek membina dan menyiapkan sistem saliran dan kolam takungan di
 Alur Limbat, Marang.
 Mohon penjelasan daripada Yang Berhormat Menteri.
@@ -1071,13 +1070,13 @@ program pemulihan pendapatan kategori rakyat yang tercicir dan menggalakkan mere
 membuat caruman KWSP secara suka rela. Tuan Yang di-Pertua, saya sudah habis masa.
 Boleh terus?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1140,Timbalan Yang di-Pertua,Lama lagi tidak?
+Bacaan Kali Yang Kedua",,■1140,1140,Timbalan Yang di-Pertua,Lama lagi tidak?
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1140,Datuk Razali bin Idris,Ada satu kes lagi.
+Bacaan Kali Yang Kedua",,■1140,1140,Datuk Razali bin Idris,Ada satu kes lagi.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1140,Timbalan Yang di-Pertua,Silakan.
+Bacaan Kali Yang Kedua",,■1140,1140,Timbalan Yang di-Pertua,Silakan.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1140,Datuk Razali bin Idris,"Boleh ya? Terima kasih, Tuan Yang di-Pertua.
+Bacaan Kali Yang Kedua",,■1140,1140,Datuk Razali bin Idris,"Boleh ya? Terima kasih, Tuan Yang di-Pertua.
 Terakhir, MRSM berbayar. Menurut Yang Amat Berhormat Timbalan Perdana Menteri
 Dato’ Seri Dr. Ahmad Zahid, kerajaan akan menggunakan Inisiatif Pembiayaan Swasta (PFI)
 dan bekerjasama dengan institusi kewangan untuk membiayai MRSM berbayar dan memberi
@@ -1092,7 +1091,7 @@ operasi yang diperlukan sebelum projek ini balik modal ataupun memberi keuntunga
 Siapakah yang akan membina MRSM berbayar ini? Dan apakah terma dan syarat
 yang dikenakan kepada MARA?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1150,Datuk Razali bin Idris,"Keempat, adakah akan ada apa-apa risiko yang ditanggung oleh MARA berkenaan
+Bacaan Kali Yang Kedua",,■1150,1150,Datuk Razali bin Idris,"Keempat, adakah akan ada apa-apa risiko yang ditanggung oleh MARA berkenaan
 dengan pembiayaan pembinaan MRSM berbayar ini? Contohnya, memberikan jaminan untuk
 peminjam.
 Kelima, berapa yuran tahunan yang akan dikenakan kepada setiap pelajar, dan jumlah
@@ -1130,12 +1129,12 @@ Perdana Menteri, Dato’ Seri Anwar bin Ibrahim telah berbincang dengan Menteri
 Kewangan, Dato' Seri Anwar bin Ibrahim, dan mereka bersetuju melantik Dato' Seri Anwar bin
 Ibrahim sebagai Pengerusi Khazanah Malaysia. Sekian, terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1150,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Datuk Razali bin
+Bacaan Kali Yang Kedua",,■1150,1150,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Datuk Razali bin
 Idris atas perbahasan Rang Undang-undang Perbekalan 2023.
 Seterusnya, saya menjemput pembahas yang kedua, Yang Berhormat Tuan Aknan a/l
 Ehtook. Dipersilakan"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1154,Tuan Aknan a/l Ehtook,"Terima kasih, Tuan Yang di-Pertua. Saya pembahas kedua
+Bacaan Kali Yang Kedua",,11.54 pg.,1154,Tuan Aknan a/l Ehtook,"Terima kasih, Tuan Yang di-Pertua. Saya pembahas kedua
 ada 20 minit dan lima saat telah berlalu. Kita cuba ambil masa yang sesuai untuk sampaikan
 apa yang hendak disampaikan. Cuma, malangnya, saya menjangkakan Yang Amat
 Berhormat Perdana Menteri akan duduk sekejap, tetapi oleh sebab tugas rasmi demi negara,
@@ -1191,7 +1190,7 @@ mereka lebih maklum tentang keperluan setempat dan juga taburan penduduk-pendudu
 seluruh negara dan mereka juga turut menguruskan sekolah-sekolah bahasa ibunda di tempat
 masing-masing. Jadi, harap benda ini diambil perhatian."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1200,Tuan Aknan a/l Ehtook,"Kedua, tentang MOF juga ialah peruntukan khas untuk Jawatankuasa Pilihan Khas
+Bacaan Kali Yang Kedua",,■1200,1200,Tuan Aknan a/l Ehtook,"Kedua, tentang MOF juga ialah peruntukan khas untuk Jawatankuasa Pilihan Khas
 Parlimen. Kita- semua sedia maklum, di Dewan Negara kita ini ada tiga Jawatankuasa Pilihan
 Khas. Pertama, yang dipengerusikan oleh Tuan Yang di-Pertua sendiri. Kedua, oleh Yang
 Berhormat Timbalan Yang di-Pertua. Ketiga, yang saya mempengerusikan. Antara tugas-
@@ -1293,7 +1292,7 @@ ada bukit tinggi, bolehlah ada alasan. Akan tetapi tanahnya rata, kenapakah tida
 *signal* yang cukup untuk penduduk di sekitar itu menikmati kemudahan *internet* dan juga
 kemudahan lain yang diberikan?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1210,Tuan Aknan a/l Ehtook,"Jadi, saya harap perkara ini dapat diambil tindakan. Satu perkara lagi yang juga kita
+Bacaan Kali Yang Kedua",,■1210,1210,Tuan Aknan a/l Ehtook,"Jadi, saya harap perkara ini dapat diambil tindakan. Satu perkara lagi yang juga kita
 terima aduan daripada orang ramai dan daripada pihak pengguna ialah di mana kad-kad, *SIM
 card,* kad SIM itu yang dibeli oleh orang ramai itu, ia punya kontrak yang ditetapkan itu selama
 dua tahun.
@@ -1334,12 +1333,12 @@ pegawai yang duduk mencatat di bilik-bilik itu membuang masa. Penghujungnya, tid
 apa-apa kecuali gaji bulan, kan? Tidak adil itu. Okey, terima kasih banyak-banyak. Saya
 mohon menyokong."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1210,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator Tuan
+Bacaan Kali Yang Kedua",,■1210,1210,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Senator Tuan
 Aknan a/l Ehtook atas perbahasan yang telah diberikan.
 Seterusnya saya menjemput Yang Berhormat Senator Dato’ Kesavadas a/l A
 Achyuthan Nair untuk menyampaikan perbahasan. Dipersilakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1214,Dato’ Kesavadas a/l A Achyuthan Nair,"Ya, terima kasih Tuan Yang di-Pertua.
+Bacaan Kali Yang Kedua",,12.14 tgh.,1214,Dato’ Kesavadas a/l A Achyuthan Nair,"Ya, terima kasih Tuan Yang di-Pertua.
 Izinkan saya terlebih dahulu merakamkan ucapan tahniah kepada Yang Amat Berhormat
 Perdana Menteri merangkap Yang Amat Berhormat Menteri Kewangan yang telah
 membentangkan Belanjawan 2023 yang memaparkan keutamaan dan komitmen Kerajaan
@@ -1401,7 +1400,7 @@ insurans perubatan atau *medical card,* soal perbelanjaan bukan perkara yang men
 kerisauan kerana semua kos yang melibatkan rawatan serta perubatan pesakit dibiayai oleh
 syarikat insurans."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1220,Dato’ Kesavadas a/l A Achyuthan Nair,"Bagaimanakah pula dengan nasib rakyat yang terpaksa mendapatkan rawatan di
+Bacaan Kali Yang Kedua",,■1220,1220,Dato’ Kesavadas a/l A Achyuthan Nair,"Bagaimanakah pula dengan nasib rakyat yang terpaksa mendapatkan rawatan di
 hospital swasta ekoran kesesakan di hospital awam tetapi tidak mempunyai insurans
 kesihatan? Hal tersebut sewajarnya diberikan perhatian serius oleh Yang Berhormat Menteri
 Kesihatan.
@@ -1499,7 +1498,7 @@ oleh Kementerian Perdagangan Dalam Negeri dan Kos Sara Hidup merupakan satu inis
 nasional yang boleh meringankan beban kos sara hidup rakyat dengan menyediakan
 hidangan yang berharga sekitar RM5."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1230,Dato’ Kesavadas a/l A Achyuthan Nair,"Biarpun inisiatif tersebut boleh mengurangkan kos perbelanjaan harian, bagi rakyat
+Bacaan Kali Yang Kedua",,■1230,1230,Dato’ Kesavadas a/l A Achyuthan Nair,"Biarpun inisiatif tersebut boleh mengurangkan kos perbelanjaan harian, bagi rakyat
 terutamanya individu yang berpendapatan rendah dan yang bekerja di kota raya, pelaksanaan
 inisiatif tersebut tidak bersifat bersasar. Seperti yang diperkatakan oleh sebilangan besar
 warga net, ramai individu berkemampuan yang turut menikmati hidangan Menu Rahmah yang
@@ -1537,29 +1536,29 @@ kita di persada antarabangsa dan meraih peluang untuk rakyat kita. Sekian sahaja
 perbahasan saya. Saya menyokong penuh Belanjawan 2023 demi menjayakan Malaysia
 MADANI yang kita cita-citakan. Sekian, terima kasih Tuan Yang di-Pertua."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN 2023
-Bacaan Kali Yang Kedua",,1230,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Dato’ Kesavadas
+Bacaan Kali Yang Kedua",,■1230,1230,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Dato’ Kesavadas
 atas perbahasan yang telah diberikan."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1235,Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh],"Tuan Yang di-Pertua, saya mohon
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,12.35 tgh.,1235,Timbalan Menteri di Jabatan Perdana Menteri (Undang-undang dan Reformasi Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh],"Tuan Yang di-Pertua, saya mohon
 mencadangkan:
 “Bahawa mengikut Peraturan Mesyuarat 6(1), yang dibaca bersama
 Peraturan Mesyuarat 6(3), saya mohon mencadangkan agar Yang Berhormat
 Senator Dato’ Kesavadas a/l A Achyuthan Nair mempengerusikan Majlis
 Mesyuarat Dewan Negara sebagai “Pengerusi ganti.””"
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1235,Timbalan Menteri Pengangkutan [Datuk Haji Hasbi bin Habibollah],"Tuan Yang
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,12.35 tgh.,1235,Timbalan Menteri Pengangkutan [Datuk Haji Hasbi bin Habibollah],"Tuan Yang
 di-Pertua, saya mohon menyokong."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1235,Timbalan Yang di-Pertua,"Terima kasih. Ahli-ahli Yang Berhormat, sekarang saya
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,12.35 tgh.,1235,Timbalan Yang di-Pertua,"Terima kasih. Ahli-ahli Yang Berhormat, sekarang saya
 kemukakan masalah kepada Majlis untuk diputuskan. Masalahnya ialah usul seperti yang
 dikemukakan oleh Yang Berhormat Menteri itu tadi hendaklah disetujukan."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1235,ANNOTATION,[Usul dikemukakan bagi diputuskan; dan disetujukan]
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,12.35 tgh.,1235,ANNOTATION,[Usul dikemukakan bagi diputuskan; dan disetujukan]
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1235,Timbalan Yang di-Pertua,"Kita terus kepada perbahasan oleh pembahas yang
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,12.35 tgh.,1235,Timbalan Yang di-Pertua,"Kita terus kepada perbahasan oleh pembahas yang
 keempat iaitu Yang Berhormat Datin Hajah Ros Suryati binti Alang. Dipersilakan."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1236,Datin Hajah Ros Suryati binti Alang,"*Bismillahi Rahmani Rahim. Assalamualaikum
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,12.36 tgh.,1236,Datin Hajah Ros Suryati binti Alang,"*Bismillahi Rahmani Rahim. Assalamualaikum
 warahmatullahi wabarakatuh.* Tuan Yang di-Pertua, terlebih dahulu terima kasih saya
 ucapkan kepada Tuan Yang di-Pertua kerana memberi peluang kepada saya untuk berbahas
 dalam Rang Undang-undang Perbekalan atau Belanjawan 2023. Pembentangan belanjawan
@@ -1596,7 +1595,7 @@ menentu dan mencabar susulan konflik geopolitik, tekanan inflasi global, dasar m
 mengetatkan dan prospek pertumbuhan ekonomi yang agak lemah. Justeru, kita perlu
 mencari peluang terbaik demi kelangsungan negara pada masa hadapan."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1240,Datin Hajah Ros Suryati binti Alang,"Saya melihat dalam Belanjawan 2023, kerajaan telah merangka usaha-usaha untuk
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1240,1240,Datin Hajah Ros Suryati binti Alang,"Saya melihat dalam Belanjawan 2023, kerajaan telah merangka usaha-usaha untuk
 membantu rakyat terutamanya golongan-golongan rentan serta memulakan bantuan dan
 sokongan kerajaan hari ini. Secara peribadi, saya merasakan bahawa kerajaan perlu
 memikirkan jalan keluar strategi yang lebih menyeluruh agar pertumbuhan ekonomi negara
@@ -1686,7 +1685,7 @@ Kerajaan Pusat juga boleh menyemak dan mengadakan libat urus dengan kerajaan
 negeri bagi menentukan lokasi dan tapak yang sesuai untuk membina pusat PPK di Pulau
 Pinang, dan daerah-daerah yang terlibat."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1250,Datin Hajah Ros Suryati binti Alang,"Tuan Yang di-Pertua, isu yang terakhir yang saya ingin sentuh iaitu mengenai
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1250,1250,Datin Hajah Ros Suryati binti Alang,"Tuan Yang di-Pertua, isu yang terakhir yang saya ingin sentuh iaitu mengenai
 kebajikan penjawat awam terutamanya penjawat awam di Parlimen. Selagi mana Akta
 Perkhidmatan Parlimen masih belum dibentangkan, maka segala peruntukan adalah di bawah
 Jabatan Perdana Menteri.
@@ -1718,14 +1717,14 @@ Membawa Malaysia maju ke hadapan.*
 Dengan kata-kata itu, saya menyokong sepenuhnya pembentangan Rang Undang-
 undang Perbekalan 2023 atau Belanjawan 2023. Sekian, terima kasih..."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1250,ANNOTATION,[Tepuk]
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1250,1250,ANNOTATION,[Tepuk]
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1250,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Datin Ros Suryati
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1250,1250,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Datin Ros Suryati
 Alang atas perbahasan yang telah diberikan.
 Seterusnya saya menjemput pembahas yang kelima, Yang Berhormat Dr.
 Lingeshwaran a/l Dato’ Seri R. Arunasalam. Dipersilakan."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1253,Dr. Lingeshwaran a/l Dato' Seri R. Arunasalam,"Salam sejahtera, salam Malaysia
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,12.53 tgh.,1253,Dr. Lingeshwaran a/l Dato' Seri R. Arunasalam,"Salam sejahtera, salam Malaysia
 Madani. Terima kasih Tuan Yang di-Pertua. Pada petang yang mulia ini, izinkan saya berhujah
 dan mencerakinkan Belanjawan 2023 Kerajaan Malaysia Madani dan impaknya terhadap
 sistem kesihatan tanah air kita.
@@ -1790,7 +1789,7 @@ peratus kanak-kanak dan remaja berusia 10 tahun hingga 17 tahun yang mendiami Pr
 Perumahan Rakyat (PPR) di Lembah Klang mengalami masalah kesihatan mental dan
 cenderung untuk membunuh diri."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1300,Dr. Lingeshwaran a/l Dato' Seri R. Arunasalam,"Timbalan Menteri Kesihatan menyatakan kemungkinan saiz rumah yang sedia ada di
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1300,1300,Dr. Lingeshwaran a/l Dato' Seri R. Arunasalam,"Timbalan Menteri Kesihatan menyatakan kemungkinan saiz rumah yang sedia ada di
 PPR sangat terhad dan saiz keluarga yang besar tidak dapat menampung mereka yang
 berada dalam rumah dengan selesa dan menyebabkan tekanan mental khususnya di
 kalangan remaja. Saya ingin membawa kepada perhatian Ahli-ahli Dewan yang mulia ini
@@ -1834,14 +1833,14 @@ insentif kepada rakyat untuk kekal sihat dan menjaga kepentingan semua pemegang 
 skim PeKa B40 iaitu para GP dan para makmal-makmal swasta dengan izin, *win-win, win
 situation.*"
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1300,Tuan Yang di-Pertua,"Keadaan menang-menang dan menang. Senang sahaja
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1300,1300,Tuan Yang di-Pertua,"Keadaan menang-menang dan menang. Senang sahaja
 doktor."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1300,Dr. Lingeshwaran a/l Dato' Seri R. Arunasalam,Boleh Tuan Yang di-Pertua.
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1300,1300,Dr. Lingeshwaran a/l Dato' Seri R. Arunasalam,Boleh Tuan Yang di-Pertua.
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1300,Tuan Yang di-Pertua,Ya.
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1300,1300,Tuan Yang di-Pertua,Ya.
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1300,Dr. Lingeshwaran a/l Dato' Seri R. Arunasalam,"Tuan Yang di-Pertua, saya ingin
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1300,1300,Dr. Lingeshwaran a/l Dato' Seri R. Arunasalam,"Tuan Yang di-Pertua, saya ingin
 merakamkan ucapan terima kasih kepada Yang Amat Berhormat Perdana Menteri dan Yang
 Berhormat Menteri Kesihatan Dr. Zaliha binti Mustafa atas usaha dan pertimbangan dalam
 menangani masalah kekurangan pekerja kesihatan serta isu pekerja kesihatan kontrak yang
@@ -1896,7 +1895,7 @@ Undangan Negeri, negeri kelahiran Yang Amat Berhormat Perdana Menteri, Dato' Ser
 bin Ibrahim, jadi wajar untuk saya membentangkan masalah isu negeri saya di Dewan ini. Ada
 satu perkara yang saya ingin utarakan berkenaan hospital di negeri saya."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1310,Dr. Lingeshwaran a/l Dato' Seri R. Arunasalam,"Keperluan mendesak untuk mewujudkan perkhidmatan *computed tomography* (CT)
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1310,1310,Dr. Lingeshwaran a/l Dato' Seri R. Arunasalam,"Keperluan mendesak untuk mewujudkan perkhidmatan *computed tomography* (CT)
 *scan* di Seberang Perai. Sekarang ini, seluruh Seberang Perai mempunyai anggaran
 penduduk hampir 1 juta. Kita hanya mempunyai satu buah mesin *CT scan* di hospital-hospital
 awam. Pesakit-pesakit dari Hospital Sungai Bakap, Hospital Bukit Mertajam dan Hospital
@@ -1930,10 +1929,10 @@ Dengan ini, saya menyokong Belanjawan 2023 Malaysia Madani dan saya sudahi
 ucapan saya dengan ucapan terima kasih. Kepada umat Islam, saya ingin mengucapkan
 *Ramadan Kareem* dan selamat berpuasa. Sekian, terima kasih."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1310,Tuan Yang di-Pertua,"Kembali, Yang Berhormat Dr. Lingeshwaran. Yang Berhormat
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1310,1310,Tuan Yang di-Pertua,"Kembali, Yang Berhormat Dr. Lingeshwaran. Yang Berhormat
 Dato’ Juhanis binti Abd Aziz"
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1313,Dato’ Juhanis binti Abd Aziz,"*Assalamualaikum warahmatullahi wabarakatuh*.
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1.13 tgh.,1313,Dato’ Juhanis binti Abd Aziz,"*Assalamualaikum warahmatullahi wabarakatuh*.
 Terima kasih Tuan Yang di-Pertua. saya juga ingin mengambil kesempatan di ruang ini ingin
 mengucapkan terima kasih kepada Yang Amat Berhormat Menteri Kewangan dan seluruh
 warga Kementerian Kewangan yang terlibat dalam penyediaan Belanjawan 2023 dengan
@@ -1992,7 +1991,7 @@ Bagaimanakah pula jika mereka tidak mampu membayar semula pinjaman kepada
 bank..? Adakah bank ini mengambil dana KWSP mereka atau mereka diisytiharkan muflis?
 Bukankah situasi ini akan lebih memburukkan keadaan?"
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1320,Dato’ Juhanis binti Abd Aziz,"Tuan Yang di-Pertua, saya merayu agar kita sama-sama berusaha sehabis baik,
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1320,1320,Dato’ Juhanis binti Abd Aziz,"Tuan Yang di-Pertua, saya merayu agar kita sama-sama berusaha sehabis baik,
 berfikir bagi mencapai jalan terbaik bagi membela rakyat. Saya mencadangkan agar
 Kementerian Kewangan dapat mewujudkan sebuah jawatankuasa khas yang terdiri daripada
 pakar-pakar ekonomi dan kewangan untuk membincang isu berkenaan dengan wang
@@ -2085,7 +2084,7 @@ Ini bermakna kebanyakan warga emas berdepan dengan kesukaran untuk berdikari dan
 menguruskan diri. Mereka terpaksa bergantung dengan bantuan dan ihsan anak-anak, namun
 anak-anak pula mempunyai kekangan pelbagai."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1330,Dato’ Juhanis binti Abd Aziz,"Oleh itu, kerajaan perlu mengambil langkah proaktif membina lebih banyak pusat
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1330,1330,Dato’ Juhanis binti Abd Aziz,"Oleh itu, kerajaan perlu mengambil langkah proaktif membina lebih banyak pusat
 jagaan warga emas, fasiliti dan kemudahan yang lengkap serta menyediakan perkhidmatan
 mesra warga emas yang cekap dan berkesan selain membangunkan persekitaran membantu
 warga emas hidup sejahtera. Dengan ini, kita dapat mengurangkan kebergantungan warga
@@ -2134,11 +2133,11 @@ bangkitkan mendapat perhatian Dewan dan Yang Berhormat Menteri serta pihak-pihak
 terlibat. Sekian, saya menyokong Rang Undang-undang Perbekalan 2023. Terima kasih Tuan
 Yang di-Pertua."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1330,Tuan Yang di-Pertua,"Kembali. Terima kasih kepada Yang Berhormat Dato’ Juhanis
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1330,1330,Tuan Yang di-Pertua,"Kembali. Terima kasih kepada Yang Berhormat Dato’ Juhanis
 binti Abd Aziz. Yang Berhormat Senator Datuk Wira Dr. Mohd Hatta bin Md Ramli. Selepas
 itu Datuk (Dr.) Ras Adiba."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1335,Datuk Wira Dr. Mohd Hatta bin Md Ramli,"Terima kasih Tuan Yang di-Pertua.
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1.35 ptg.,1335,Datuk Wira Dr. Mohd Hatta bin Md Ramli,"Terima kasih Tuan Yang di-Pertua.
 *Assalamualaikum warahmatullahi wabarakatuh.* Pertamanya kita mengucapkan tahniah
 kepada Kementerian Kewangan kerana setelah membentangkan belanjawan ini di Dewan
 Rakyat yang lalu, telah pun diluluskan semalam.
@@ -2157,9 +2156,9 @@ yang disampaikan bagi segenap golongan masyarakat. Yang saya dapat dengar dengan
 cukup gembira ialah keyakinan Menteri Kewangan untuk mengeluarkan lebih kurang 129,000
 isi rumah keluar daripada..."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1335,Tuan Yang di-Pertua,"130,000."
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1.35 ptg.,1335,Tuan Yang di-Pertua,"130,000."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1335,Datuk Wira Dr. Mohd Hatta bin Md Ramli,"130,000, itu lebih tepat. Terima kasih Tuan
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1.35 ptg.,1335,Datuk Wira Dr. Mohd Hatta bin Md Ramli,"130,000, itu lebih tepat. Terima kasih Tuan
 Yang di-Pertua. Keluar daripada cengkaman kemiskinan. Dalam masa setahun ini Tuan Yang
 di-Pertua?
 Dalam masa setahun hendak mengeluarkan sejumlah itu daripada kemiskinan
@@ -2185,7 +2184,7 @@ jugalah ya. Jadi kesimpulannya, semua minat berniaga ini. Akan tetapi di Kelanta
 ramai mereka meninggalkan negeri untuk berniaga di luar dan mereka berjaya. Usahawan-
 usahawan-usahawan dan tokoh-tokoh yang besar berniaga ada di luar Kelantan."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1340,Datuk Wira Dr. Mohd Hatta bin Md Ramli,"Apalah kiranya kalau kita bangunkan industri kecil dan sederhana ini bersungguh-
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1340,1340,Datuk Wira Dr. Mohd Hatta bin Md Ramli,"Apalah kiranya kalau kita bangunkan industri kecil dan sederhana ini bersungguh-
 sungguh di negeri-negeri yang saya sebutkan tadi, khususnya di Kelantan? Kita ada negara
 jiran kita, Thailand sana yang cukup hebat dengan industri pertaniannya, industri
 penternakannya. Setiap kali kita hendak raya, Tuan Yang di-Pertua, kita bawa masuk lembu
@@ -2258,13 +2257,13 @@ awal supaya kita tidak menghadapi masalah kekurangan makanan yang mengejutkan, y
 tiba-tiba, kerana suasana negara kita ini bukan tidak boleh kita jangkakan. Kita sudah jangka,
 sebulan lagi raya. Dua bulan lepas itu, raya lagi..."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1340,Tuan Yang di-Pertua,Raya lagi tiga minggu sahaja.
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1340,1340,Tuan Yang di-Pertua,Raya lagi tiga minggu sahaja.
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1340,Datuk Wira Dr. Mohd Hatta bin Md Ramli,"Tiga minggu, ya."
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1340,1340,Datuk Wira Dr. Mohd Hatta bin Md Ramli,"Tiga minggu, ya."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1340,Tuan Yang di-Pertua,Saya kira tiap-tiap hari.
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1340,1340,Tuan Yang di-Pertua,Saya kira tiap-tiap hari.
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1340,Datuk Wira Dr. Mohd Hatta bin Md Ramli,"Saya seronok berpuasa. Saya hendak
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1340,1340,Datuk Wira Dr. Mohd Hatta bin Md Ramli,"Saya seronok berpuasa. Saya hendak
 panjang lagi.
 Jadi, kita tidak mampu untuk berhadapan dengan suasana kejutan bekalan yang
 berkurangan, terutamanya makanan asas kita. Jadi, langkah kementerian itu harus dipuji dan
@@ -2285,25 +2284,25 @@ semua itu- memang di tempat-tempat lain sudah di-*showcase* kan benda-benda ini.
 berbincang dengan orang kuat bahasa di sebelah saya ini, *showcase* ini apa saya hendak
 *translate* kan? Takut Tuan Yang di-Pertua tanya, “Tiada perkataan lain kah?”"
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1340,Tuan Yang di-Pertua,*Showcase is a* “kotak peragaan.”
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1340,1340,Tuan Yang di-Pertua,*Showcase is a* “kotak peragaan.”
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1340,Datuk Wira Dr. Mohd Hatta bin Md Ramli,"Itu kotaknya, tetapi kita hendak tunjukkan
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1340,1340,Datuk Wira Dr. Mohd Hatta bin Md Ramli,"Itu kotaknya, tetapi kita hendak tunjukkan
 contoh. Itu yang- rasanya Dewan Bahasa belum masukkan lagi. Wadah katanya. Jadi, wadah
 itu besar sangat pula pada saya. Apa pun, kita sudah melihat *showcase* ini ada di luar negara.
 Di China, contohnya. Jadi, kalau boleh dibawa ilmu-ilmu maklumat ke negara kita, kemudian
 kita persiapkan petani-petani moden yang keluar dari universiti anak-anak muda. Diberikan
 laluan..."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1350,Tuan Yang di-Pertua,"Yang Berhormat, ada komen baru-baru ini, ada graduan dari
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1350,1350,Tuan Yang di-Pertua,"Yang Berhormat, ada komen baru-baru ini, ada graduan dari
 universiti yang terkait dengan pertanian tidak tahu tanam kacang. Sahaja hendak komen itu
 untuk dipertimbangkan dalam komen."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1350,Datuk Wira Dr. Mohd Hatta bin Md Ramli,"Ya, itu merupakan satu jenayah Tuan
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1350,1350,Datuk Wira Dr. Mohd Hatta bin Md Ramli,"Ya, itu merupakan satu jenayah Tuan
 Yang di-Pertua."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1350,Tuan Yang di-Pertua,"Betul, betul."
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1350,1350,Tuan Yang di-Pertua,"Betul, betul."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1350,Datuk Wira Dr. Mohd Hatta bin Md Ramli,"*Very bad-* jadi, macam kita lahirkan doktor
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1350,1350,Datuk Wira Dr. Mohd Hatta bin Md Ramli,"*Very bad-* jadi, macam kita lahirkan doktor
 yang tidak tahu hendak *dispensing* ubat *Panadol*, contohnya. Tidak adalah macam itu, doktor
 tidak ada, semua boleh.
 Jadi kalau boleh kolaborasi sedemikian digunakan, belanja sedikitlah supaya kita
@@ -2360,16 +2359,16 @@ Tuan Yang di-Pertua, saya mohon maaf kalau terlewat dua saat. Jadi, saya akhiri
 dengan ucapan terima kasih dan saya menyokong pembentangan Belanjawan 2023.
 *Assalamualaikum warahmatullahi wabarakatuh.*"
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1350,Tuan Yang di-Pertua,"*Waalaikumsalam. Alhamdulillah.* Sekian, penyampaian oleh
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1350,1350,Tuan Yang di-Pertua,"*Waalaikumsalam. Alhamdulillah.* Sekian, penyampaian oleh
 Yang Berhormat Senator Datuk Wira Dr. Mohd Hatta bin Md Ramli dan kita terus kepada Yang
 Berhormat Senator Datuk (Dr.) Ras Adiba binti Mohd Radzi."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1356,Datuk (Dr.) Ras Adiba binti Mohd Radzi,"*Assalamualaikum warahmatullahi
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1.56 tgh.,1356,Datuk (Dr.) Ras Adiba binti Mohd Radzi,"*Assalamualaikum warahmatullahi
 wabarakatuh*."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1356,Tuan Yang di-Pertua,*Walaikumsalam.*
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1.56 tgh.,1356,Tuan Yang di-Pertua,*Walaikumsalam.*
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1356,Datuk (Dr.) Ras Adiba binti Mohd Radzi,"*Bismillahi Rahmani Rahim*. Terima kasih
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1.56 tgh.,1356,Datuk (Dr.) Ras Adiba binti Mohd Radzi,"*Bismillahi Rahmani Rahim*. Terima kasih
 Tuan Yang di-Pertua.
 Tema “Membangun Malaysia Madani” dengan peruntukan RM386.14 bilion dilihat
 menyentuh semua segmen rakyat yang ada dalam negara kita termasuk B40, M40, anak
@@ -2386,13 +2385,13 @@ dilengkapkan dengan kemudahan mesra OKU.
 Kemudahan dan prasarana OKU seperti susur tangan, susur landai, tandas OKU serta
 *tactile paving* dan *tactile tiles* dengan izin, amat penting bagi memastikan..."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1356,Tuan Yang di-Pertua,*Tile* apa Yang Berhormat?
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1.56 tgh.,1356,Tuan Yang di-Pertua,*Tile* apa Yang Berhormat?
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1356,Datuk (Dr.) Ras Adiba binti Mohd Radzi,*Tactile paving* dan *tactile tiles*.
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1.56 tgh.,1356,Datuk (Dr.) Ras Adiba binti Mohd Radzi,*Tactile paving* dan *tactile tiles*.
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1356,Tuan Yang di-Pertua,Oh.
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1.56 tgh.,1356,Tuan Yang di-Pertua,Oh.
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1356,Datuk (Dr.) Ras Adiba binti Mohd Radzi,"Amat penting bagi memastikan sektor
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1.56 tgh.,1356,Datuk (Dr.) Ras Adiba binti Mohd Radzi,"Amat penting bagi memastikan sektor
 pendidikan terus menekankan nilai keterangkuman yang juga merupakan sebahagian
 daripada Dasar Sifar Penolakan.
 Oleh itu, saya di sini ingin bertanya, berapakah jumlah peruntukan yang disediakan
@@ -2418,7 +2417,7 @@ warganegara Malaysia termasuklah OKU. Kegagalan menyediakan kemudahan dan
 infrastruktur asas untuk menghasilkan persekitaran pembelajaran yang kondusif bagi pelajar
 OKU merupakan suatu bentuk diskriminasi yang tidak seharusnya wujud di negara kita."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1400,Datuk (Dr.) Ras Adiba binti Mohd Radzi,"Turut disediakan, sejumlah RM436 juta disediakan bagi membaik pulih infrastruktur
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1400,1400,Datuk (Dr.) Ras Adiba binti Mohd Radzi,"Turut disediakan, sejumlah RM436 juta disediakan bagi membaik pulih infrastruktur
 dan menggantikan peralatan usang yang tidak lagi ekonomik di IPTA memandangkan
 kebanyakan IPTA di negara ini masih tidak mesra kepada OKU sepenuhnya dengan pelbagai
 kekangan yang terus terpaksa dihadapi oleh mahasiswa OKU.
@@ -2529,7 +2528,7 @@ supaya kesemua institusi penjagaan swasta wajib didaftarkan dengan Jabatan Kebaj
 Masyarakat. Ini adalah bagi mengatasi gejala penderaan terhadap golongan rentan yang kian
 berleluasa di rumah penjagaan yang tidak berdaftar dengan JKM seperti kes adik Bella."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1410,Datuk (Dr.) Ras Adiba binti Mohd Radzi,"Teras pelancongan. Tahun 2025 telah ditetapkan sebagai Tahun Melawat Malaysia
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1410,1410,Datuk (Dr.) Ras Adiba binti Mohd Radzi,"Teras pelancongan. Tahun 2025 telah ditetapkan sebagai Tahun Melawat Malaysia
 dengan sasaran ketibaan 23.5 juta orang pelancong antarabangsa dan unjuran pendapatan
 sehingga RM76.8 bilion. Kebanyakan tempat tiada rem, tiada tanjakan, tiada laluan untuk
 kerusi roda. Kalau adapun tempat laluan kerusi roda itu, Tuan Yang di-Pertua, dijadikan
@@ -2548,18 +2547,18 @@ mengangkat martabat golongan komuniti kami OKU.
 Saya menyokong RUU ini. Sekian, terima kasih. *Assalamualaikum warahmatullahi
 wabarakatuh.*"
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1410,Tuan Yang di-Pertua,"*Waalaikumsalam.* Tahniah kepada Yang Berhormat Datuk
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1410,1410,Tuan Yang di-Pertua,"*Waalaikumsalam.* Tahniah kepada Yang Berhormat Datuk
 (Dr.) Ras Adiba binti Mohd Radzi. Saya baru membilang kuorum 13 orang. Di bawah
 Peraturan Mesyuarat 12, hendaklah ada sekurang-kurangnya 10 orang. Jadi kita hanya lebih
 tiga orang. Mana yang ada di luar itu bolehlah masuk supaya lebih ramai.
 Dipersilakan Yang Berhormat Dato’ Dr. Ahmad Azam bin Hamzah"
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1412,Dato’ Dr. Ahmad Azam bin Hamzah,"*Bismillahi Rahmani Rahim. Assalamualaikum
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,2.12 ptg.,1412,Dato’ Dr. Ahmad Azam bin Hamzah,"*Bismillahi Rahmani Rahim. Assalamualaikum
 warahmatullahi wabarakatuh* dan salam sejahtera..."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1412,ANNOTATION,[Membaca sepotong doa]
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,2.12 ptg.,1412,ANNOTATION,[Membaca sepotong doa]
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1412,Dato’ Dr. Ahmad Azam bin Hamzah,"Tuan Yang di-Pertua, terlebih dahulu, saya ingin menyatakan penghargaan dan
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,2.12 ptg.,1412,Dato’ Dr. Ahmad Azam bin Hamzah,"Tuan Yang di-Pertua, terlebih dahulu, saya ingin menyatakan penghargaan dan
 setinggi-tinggi tahniah dan terima kasih kepada Yang Amat Berhormat Perdana Menteri yang
 juga Menteri Kewangan atas pembentangan Belanjawan 2023 pada 24 Februari yang lalu
 dengan tema “Membangun Malaysia Madani” iaitu cerminan prinsip pertanggungjawaban dan
@@ -2637,7 +2636,7 @@ menyegerakan projek prasarana rakyat sebanyak RM1.2 bilion diperuntukkan bagi
 menjayakan projek pembaikan yang akan melibatkan sebanyak 400 buah klinik dan 380 buah
 sekolah daif tanpa mengira negeri. Mungkin itu satu masalah dia. Sahaja saya kemukakan."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1420,Dato’ Dr. Ahmad Azam bin Hamzah,"Saya amat bersetuju atas keprihatinan kerajaan, peruntukan sebanyak RM1.2 bilion
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1420,1420,Dato’ Dr. Ahmad Azam bin Hamzah,"Saya amat bersetuju atas keprihatinan kerajaan, peruntukan sebanyak RM1.2 bilion
 untuk membaik pulih 380 buah sekolah daif yang dibentangkan oleh Menteri Kewangan.
 Masalah sekolah daif ini seolah-olah tiada kesudahannya. Walaupun telah diperkatakan sejak
 sekian lama, namun tidak kelihatan penyelesaian yang tuntas.
@@ -2748,28 +2747,28 @@ meningkat setiap tahun atau kita diam dan membiarkan ia meningkat saban tahun? K
 kawasan sejuk yang sesuai untuk pertanian seperti Cameron Highlands, tetapi malangnya
 kita masih bergantung pada sayur-sayuran yang diimport dari luar negara..."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1420,Tuan Yang di-Pertua,"Yang Berhormat, setuju kah kalau dikatakan menurut rencana
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1420,1420,Tuan Yang di-Pertua,"Yang Berhormat, setuju kah kalau dikatakan menurut rencana
 dalam *Berita Harian* minggu lalu, orang kampung sudah tidak suka menanam sayur. Mungkin
 itu satu masalahnya. Saja saya kemukakan."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1430,Dato’ Dr. Ahmad Azam bin Hamzah,
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1430,1430,Dato’ Dr. Ahmad Azam bin Hamzah,
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1430,ANNOTATION,[Ketawa]
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1430,1430,ANNOTATION,[Ketawa]
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1430,Dato’ Dr. Ahmad Azam bin Hamzah,"Ya, saya rasa benar juga Tuan
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1430,1430,Dato’ Dr. Ahmad Azam bin Hamzah,"Ya, saya rasa benar juga Tuan
 Pengerusi. Ada kebenarannya. Persoalannya kita kawal jumlah import makanan yang kita
 semakin meningkat ini."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1430,Tuan Haji Hussin bin Ismail,"Mencelah sedikit Tuan Yang di-Pertua. Sambung
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1430,1430,Tuan Haji Hussin bin Ismail,"Mencelah sedikit Tuan Yang di-Pertua. Sambung
 dengan yang disebut oleh Tuan Yang di-Pertua."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1430,Tuan Yang di-Pertua,"Boleh, boleh. Yang Berhormat minat pertanian. Sila."
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1430,1430,Tuan Yang di-Pertua,"Boleh, boleh. Yang Berhormat minat pertanian. Sila."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1430,Tuan Haji Hussin bin Ismail,"Pernah tidak Yang Berhormat tengok? Dari sudut harga
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1430,1430,Tuan Haji Hussin bin Ismail,"Pernah tidak Yang Berhormat tengok? Dari sudut harga
 barang, produk pertanian tempatan jauh lebih mahal daripada barang import yang beribu-ribu
 batu. Apakah komen Yang Berhormat?"
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1430,Dato’ Dr. Ahmad Azam bin Hamzah,"Saya rasa salah satu daripada kebenaran yang
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1430,1430,Dato’ Dr. Ahmad Azam bin Hamzah,"Saya rasa salah satu daripada kebenaran yang
 kita hadapi kemungkinan besar kerana pertanian kita berskala kecil. Jadi apabila beli dalam
 kuantiti yang kecil, saya rasa harga pun mahal berbanding luar negara mereka menghasilkan
 dalam skala yang besar. Sudah tentu mereka boleh mendapat harga yang lebih baik.
@@ -2788,13 +2787,13 @@ bekalan sumber protein negara seperti ayam dan ikan diberi keutamaan. Berikan ba
 secukupnya untuk nelayan menangkap ikan di laut sehingga ke laut dalam dengan
 penyediaan bot berteknologi tinggi seperti perusahaan perikanan di Jepun."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1430,ANNOTATION,[Dato’ Kesavadas a/l A Achyuthan Nair mempengerusikan Mesyuarat]
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1430,1430,ANNOTATION,[Dato’ Kesavadas a/l A Achyuthan Nair mempengerusikan Mesyuarat]
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1430,Dato’ Dr. Ahmad Azam bin Hamzah,Tuan Yang di-Pertua....
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1430,1430,Dato’ Dr. Ahmad Azam bin Hamzah,Tuan Yang di-Pertua....
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1430,ANNOTATION,[Tepuk]
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1430,1430,ANNOTATION,[Tepuk]
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1430,Dato’ Dr. Ahmad Azam bin Hamzah,"Begitu juga dengan sayur-sayuran dan buah-buahan
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1430,1430,Dato’ Dr. Ahmad Azam bin Hamzah,"Begitu juga dengan sayur-sayuran dan buah-buahan
 seharusnya dua jenis sumber makanan ini dijadikan industri raksasa dalam sektor pertanian
 bagi menjamin bekalan makanan yang sentiasa tersedia.
 Terakhir, Kementerian Kesihatan menerima RM32.4 bilion, iaitu satu peruntukan yang
@@ -2807,9 +2806,9 @@ bagi pesakit yang mendapat jangkitan serius semasa di hospital mereka menunjukka
 masalah kronik di organ paru-paru menyebabkan pengurangan oksigen dalam badan dan
 kelesuan semasa menjalankan aktiviti harian. Boleh ya, Tuan Yang di-Pertua. Sedikit lagi."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1430,Dato’ Kesavadas a/l A Achyuthan Nair,"Sedikit lagi, habiskan."
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1430,1430,Dato’ Kesavadas a/l A Achyuthan Nair,"Sedikit lagi, habiskan."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1430,Dato’ Dr. Ahmad Azam bin Hamzah,"Antara gejala *long Covid* yang berlanjutan yang
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1430,1430,Dato’ Dr. Ahmad Azam bin Hamzah,"Antara gejala *long Covid* yang berlanjutan yang
 dilaporkan adalah sakit kepala, kerap lupa, kepenatan, susah bernafas, kebas di anggota
 badan, kehilangan deria rasa, kurang upaya untuk fokus, berdebar dan sebagainya.
 Ada sesetengah pesakit yang memerlukan penjagaan kesihatan daripada pelbagai
@@ -2826,11 +2825,11 @@ golongan yang mengalami masalah *long Covid* ini.
 Saya rasa sekadar itu perbahasan saya. Saya mohon menyokong. *Wabillahitaufik
 walhidayah, assalamualaikum warahmatullahi wabarakatuh.*"
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1430,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Senator Dato’
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1430,1430,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Senator Dato’
 Dr. Ahmad Azam bin Hamzah.
 Sekarang saya menjemput Yang Berhormat Tuan Abun Sui Anyit."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1435,Tuan Abun Sui Anyit,"Terima kasih Tuan Yang di-Pertua. Pertama sekali lagi saya
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,2.35 ptg,1435,Tuan Abun Sui Anyit,"Terima kasih Tuan Yang di-Pertua. Pertama sekali lagi saya
 ingin mengucapkan terima kasih kerana diberi peluang untuk membahaskan tentang bajet
 atau ucapan Belanjawan 2023 yang telah dibentangkan oleh Menteri Kewangan yang juga
 selaku Perdana Menteri Yang Amat Berhormat Dato’ Seri Anwar bin Ibrahim.
@@ -2871,7 +2870,7 @@ keseluruhannya sampai dan jauh di pedalaman ini maka sekali lagi golongan sasar 
 mendapat faedah daripada usaha murni kerajaan untuk menyediakan harga barangan atau
 barangan bersubsidi ini untuk rakyat di pedalaman."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1440,Tuan Abun Sui Anyit,"Justeru itu Tuan Yang di-Pertua, memang dalam keadaan sekarang kerajaan yang
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1440,1440,Tuan Abun Sui Anyit,"Justeru itu Tuan Yang di-Pertua, memang dalam keadaan sekarang kerajaan yang
 diterajui oleh Yang Amat Berhormat Perdana Menteri perlu berusaha untuk memajukan
 pedalaman kita di Sarawak ini terutamanya kerana di Sarawak kita bersebelahan dengan ibu
 negara baharu Indonesia, Nusantara.
@@ -2932,9 +2931,9 @@ menyediakan peruntukan yang besar untuk Sarawak.
 Justeru itu, saya ingin mengucapkan terima kasih kepada Yang Amat Berhormat
 Perdana Menteri kerana telah meningkatkan, minta maaf Tuan Yang di-Pertua, saya kering."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1440,ANNOTATION,[Minum air]
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1440,1440,ANNOTATION,[Minum air]
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1440,Tuan Abun Sui Anyit,"Justeru itu, kita berterima kasih kepada Yang Amat Berhormat kerana telah
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1440,1440,Tuan Abun Sui Anyit,"Justeru itu, kita berterima kasih kepada Yang Amat Berhormat kerana telah
 meningkatkan peruntukan tahunan pada Sarawak daripada RM16 juta kepada sekurang-
 kurangnya RM300 juta. Jadi, itu satu keadaan di mana Perdana Menteri ataupun pemimpin
 utama kita memahami keadaan Sarawak.
@@ -2944,17 +2943,17 @@ tertinggal. Ini supaya kita di Sarawak selalu merasakan apabila Sarawak menyumba
 kepada KDNK negara yang besar tetapi pulangannya pada Sarawak masih terlalu kecil
 berbanding sumbangan Sarawak..."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1440,Tuan Manolan bin Mohamad,"Tuan Yang di-Pertua, mohon mencelah."
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1440,1440,Tuan Manolan bin Mohamad,"Tuan Yang di-Pertua, mohon mencelah."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1440,Tuan Abun Sui Anyit,Silakan.
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1440,1440,Tuan Abun Sui Anyit,Silakan.
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1440,Tuan Manolan bin Mohamad,"Hendak tanya sedikit Yang Berhormat. Tadi berucap
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1440,1440,Tuan Manolan bin Mohamad,"Hendak tanya sedikit Yang Berhormat. Tadi berucap
 tentang pembangunan di Sarawak ini. Pada pandangan Yang Berhormat Senator, apakah
 keutamaan kerajaan yang- diberi keutamaan untuk majukan Sarawak ini? Kalau sebut hendak
 majukan- ini nampak *general,* dengan izin. Jadi apakah keutamaan itu? Boleh terangkan
 tidak? Terima kasih."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1440,Tuan Abun Sui Anyit,"Terima kasih sahabat Yang Berhormat Senator. Ya,
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1440,1440,Tuan Abun Sui Anyit,"Terima kasih sahabat Yang Berhormat Senator. Ya,
 keutamaan kita sudah tentulah infrastruktur itu. Infrastruktur masih juga kita walaupun pada
 abad yang ke-21 ini, masih lagi kita bercakap soal infrastruktur. Ya, infrastruktur yang saya
 maksudkan jalan raya. Bahkan elektrik kita, bahkan air kita. Jadi, saya akan pergi *detail*
@@ -2973,7 +2972,7 @@ Justeru itu Tuan Yang di-Pertua, saya berharap supaya dengan bajet yang akan di-
 saya percaya kita luluskan ini akan memberi manfaat yang besar kepada penduduk di
 pedalaman. Kita tidak mahu duduk di pedalaman tetapi kita hanya mampu melihat."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1450,Tuan Abun Sui Anyit,"Saya juga ingin memohon kepada kerajaan terutamanya Kementerian Pembangunan
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1450,1450,Tuan Abun Sui Anyit,"Saya juga ingin memohon kepada kerajaan terutamanya Kementerian Pembangunan
 Wanita, Keluarga dan Masyarakat. Saya ingin mengetengahkan ada permasalahan di mana
 warga tua banyak di pedalaman dan saya sangat berterima kasih kerana kementerian ini
 berusaha untuk membantu warga tua. Ada yang dihantar ke rumah warga tua tetapi ada juga
@@ -3003,7 +3002,7 @@ sungai-sungai yang menjadi sumber, tempat mereka mendapatkan ikan turut terjejas
 yang keruh dan banyak kayu-kayu sehingga jala boleh koyak dan sebagainya, maka mereka
 tidak dapat hasil. Jadi, ini juga menjejaskan pendapatan mereka."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1450,Tuan Manolan bin Mohamad,"Tuan Yang di-Pertua, mencelah sedikit. Hendak tanya
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1450,1450,Tuan Manolan bin Mohamad,"Tuan Yang di-Pertua, mencelah sedikit. Hendak tanya
 sedikit Yang Berhormat Senator. Tadi sebut nelayan sungai, ataupun nelayan darat. Nelayan
 darat atau nelayan laut. Adakah di Sarawak ini, nelayan-nelayan darat ini mereka dapat
 bantuan macam bot, enjin bot dan bantuan-bantuan lain untuk menangkap ikan? Di mana kita
@@ -3011,7 +3010,7 @@ tengok sekarang ini Tuan Yang di-Pertua, yang selalu dapat bantuan kerajaan iala
 laut, tetapi nelayan darat ini tidak dapat. Jadi, adakah di Sarawak dapat bantuan? Terima
 kasih."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1450,Tuan Abun Sui Anyit,"Terima kasih, Yang Berhormat Senator. Untuk Sarawak, saya
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1450,1450,Tuan Abun Sui Anyit,"Terima kasih, Yang Berhormat Senator. Untuk Sarawak, saya
 percaya dalam pengetahuan saya, betulkan saya kalau saya tidak betul. Di mana rakan kita
 di sebelah laut iaitu nelayan laut diberi bantuan enjin bot, perahu, bot, Nelayan darat tidak
 diberi.
@@ -3037,11 +3036,11 @@ menyediakan tempat-tempat yang baik untuk mereka bertani pada masa hadapan.
 Justeru, saya dengan ini tidak ada perkara yang saya hendak sampaikan lagi dan saya
 menyokong ucapan Belanjawan 2023. Sekian, terima kasih."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1450,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Senator Tuan
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1450,1450,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Senator Tuan
 Abun Sui Anyit atas perbahasan tadi.
 Sekarang saya menjemput Yang Berhormat Datuk Paul Igai."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1456,Datuk Paul Igai,"Terima kasih, Tuan Yang di-Pertua. Terima kasih kepada Yang Amat
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,2.56 ptg.,1456,Datuk Paul Igai,"Terima kasih, Tuan Yang di-Pertua. Terima kasih kepada Yang Amat
 Berhormat Dato’ Seri Anwar bin Ibrahim, Perdana Menteri Malaysia merangkap Menteri
 Kewangan yang berjaya membentangkan Belanjawan 2023, bertemakan “Membangun
 Malaysia MADANI”.
@@ -3067,7 +3066,7 @@ dan telah bertukar ganti pentadbirannya. Amerika Syarikat tukar Presiden, *Unite
 tukar *Prime Minister*, Jepun, Israel, Sri Lanka, *Equador*, dan baru dua hari lalu, *Scotland* juga
 tukar Menteri utamanya."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1500,Datuk Paul Igai,"Kita tidak dikecualikan atau kebal daripada imbas langkah polisi kenaikan kadar inflasi
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1500,1500,Datuk Paul Igai,"Kita tidak dikecualikan atau kebal daripada imbas langkah polisi kenaikan kadar inflasi
 negara besar-besar seperti Amerika Syarikat. Amerika Syarikat bersin, kita batuk.
 Tuan Yang di-Pertua, perang Ukraine dan Rusia menyebabkan kos barang seperti
 baja dan makanan penternakan naik kerana kekurangan bahan input seperti bijirin jagung
@@ -3131,18 +3130,18 @@ Kalimantan-Sarawak *border*? Keduanya, sempadan dengan Thailand dan Brunei. Deng
 Tuan Yang di-Pertua, saya menyokong Rang Undang-undang Perbekalan 2023. Terima
 kasih."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1500,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Senator
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1500,1500,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Senator
 Datuk Paul Igai atas perbahasan tadi.
 Sekarang saya menjemput Yang Berhormat Senator Tuan Sr. Haji Mohd Apandi bin
 Mohamad."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1510,Tuan Sr. Haji Mohd Apandi bin Mohamad,"*Assalamualaikum warahmatullahi
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,3.10 ptg.,1510,Tuan Sr. Haji Mohd Apandi bin Mohamad,"*Assalamualaikum warahmatullahi
 wabarakatuh* dan salam sejahtera, salam Ramadhan. Tahniah Tuan Yang di-Pertua yang
 baharu..."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1510,ANNOTATION,[Ketawa]
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,3.10 ptg.,1510,ANNOTATION,[Ketawa]
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1510,Tuan Sr. Haji Mohd Apandi bin Mohamad,"Tuan Yang di-Pertua dan sahabat-sahabat Senator sekalian. Dalam Yang Amat
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,3.10 ptg.,1510,Tuan Sr. Haji Mohd Apandi bin Mohamad,"Tuan Yang di-Pertua dan sahabat-sahabat Senator sekalian. Dalam Yang Amat
 Berhormat Perdana Menteri Kesepuluh merangkap Yang Berhormat Menteri Kewangan
 membentangkan Bajet 2023. Kita mengucapkan jutaan terima kasih kerana ini kali pertama
 Yang Amat Berhormat Perdana Menteri hadir sendiri membentangkan khususnya di dalam
@@ -3231,7 +3230,7 @@ dengan baik. Bila mana ekonomi tidak bergerak sedangkan kadar kenaikan dinaikkan
 menyulitkan kepada peminjam-peminjam. Kita faham realiti yang berlaku di Malaysia
 sekarang ini, banyak dah rakyat Malaysia yang terlalu *expose* dengan pinjaman."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1520,Tuan Sr. Haji Mohd Apandi bin Mohamad,"Akan tetapi mesti kerajaan memikirkan ada limit-limit dia, ada kadang-kadang
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1520,1520,Tuan Sr. Haji Mohd Apandi bin Mohamad,"Akan tetapi mesti kerajaan memikirkan ada limit-limit dia, ada kadang-kadang
 pengecualian dia, ada kadang kerajaan terpaksa tarik *elasticity* lebih ketat sedikit, lebih
 panjang sedikit kerana bila mana kadar faedah diturunkan menyebabkan berlaku banyak
 kecairan. Bila berlaku banyak kecairan maka aktiviti ekonomi akan berjalan menyebabkan
@@ -3313,39 +3312,39 @@ asing ini yang fokus kepada kereta elektrik kerana ini merupakan kereta masa had
 Yang di-Pertua, saya juga ingin melihat bahawa kerajaan- kalau boleh beri fokus sedikit, saya
 hendak berpantun, tak pantun dari tadi, lupa ya. Pantun sedikit ya..."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1520,ANNOTATION,[Ketawa]
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1520,1520,ANNOTATION,[Ketawa]
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1520,Tuan Sr. Haji Mohd Apandi bin Mohamad,"Terima kasih
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1520,1520,Tuan Sr. Haji Mohd Apandi bin Mohamad,"Terima kasih
 Tuan Yang di-Pertua baru."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1520,Dato’ Kesavadas a/l A Achyuthan Nair,Boleh boleh.
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1520,1520,Dato’ Kesavadas a/l A Achyuthan Nair,Boleh boleh.
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1520,Tuan Sr. Haji Mohd Apandi bin Mohamad,
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1520,1520,Tuan Sr. Haji Mohd Apandi bin Mohamad,
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1520,ANNOTATION,[Ketawa]
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1520,1520,ANNOTATION,[Ketawa]
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1520,Tuan Sr. Haji Mohd Apandi bin Mohamad,"*Negeri Kelantan nama diberi,
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1520,1520,Tuan Sr. Haji Mohd Apandi bin Mohamad,"*Negeri Kelantan nama diberi,
 Aset pelancongan merata negeri;
 Kerajaan Kelantan saya wakili,
 Demi pembangunan negeri saya bangun berdiri...*"
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1520,ANNOTATION,[Tepuk]
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1520,1520,ANNOTATION,[Tepuk]
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1520,Tuan Sr. Haji Mohd Apandi bin Mohamad,"Ini untuk orang Kelantan tahulah. Semula, semula..."
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1520,1520,Tuan Sr. Haji Mohd Apandi bin Mohamad,"Ini untuk orang Kelantan tahulah. Semula, semula..."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1520,Dato’ Kesavadas a/l A Achyuthan Nair,
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1520,1520,Dato’ Kesavadas a/l A Achyuthan Nair,
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1520,ANNOTATION,"[Bercakap tanpa menggunakan pembesar
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1520,1520,ANNOTATION,"[Bercakap tanpa menggunakan pembesar
 suara]"
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1520,Dato’ Kesavadas a/l A Achyuthan Nair,"Jawab ya, dalam pantun lagi."
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1520,1520,Dato’ Kesavadas a/l A Achyuthan Nair,"Jawab ya, dalam pantun lagi."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1520,Tuan Sr. Haji Mohd Apandi bin Mohamad,"Tuan Yang di-Pertua, hendak jawab
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1520,1520,Tuan Sr. Haji Mohd Apandi bin Mohamad,"Tuan Yang di-Pertua, hendak jawab
 kah?..."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1520,ANNOTATION,[Ketawa]
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1520,1520,ANNOTATION,[Ketawa]
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1520,Tuan Sr. Haji Mohd Apandi bin Mohamad,"Okey, sekarang ini kita tengok kementerian yang ada kena mengena dengan
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1520,1520,Tuan Sr. Haji Mohd Apandi bin Mohamad,"Okey, sekarang ini kita tengok kementerian yang ada kena mengena dengan
 saya yakni Kementerian Sumber Asli, Alam Sekitar dan Perubahan Iklim. Jadi, perbelanjaan
 pembangunan sekitar RM4.865 bilion dan perbelanjaan mengurus RM1.675 bilion, saya lihat
 bahawa Jabatan Ukur terutamanya telah dilihat sebagai tidak begitu penting dalam radar
@@ -3360,7 +3359,7 @@ terkorban untuk menyiapkan sempadan. Sempadan yang sukar, terpaksa menggunakan
 helikopter dan ramai mana yang telah meninggal kerana nak menjaga keselamatan negara
 dalam menentukan sempadan antara Sarawak Sabah dan Kalimantan."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1530,Tuan Sr. Haji Mohd Apandi bin Mohamad,"Begitu juga di bahagian Semenanjung. Itu saya menceritakan tentang daratan, hampir
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1530,1530,Tuan Sr. Haji Mohd Apandi bin Mohamad,"Begitu juga di bahagian Semenanjung. Itu saya menceritakan tentang daratan, hampir
 siap. Ada beberapa buah tempat yang belum lagi dipersetujui antara Thailand dan Malaysia.
 Walaupun di Sungai Golok, *alhamdulillah* selesai. Akan tetapi, ada beberapa buah sempadan
 daratan, khususnya macam di kawasan saya. Sempadan di kawasan saya, saya pun hendak
@@ -3383,27 +3382,27 @@ satu asas kepada *claim,* tuntutan itu hak milik Malaysia. Akan tetapi malangnya
 berada dalam PAS, bayaran untuk kerja tambahan satu pertiga juta ringgit sehingga sekarang,
 tidak diperoleh kerana duduk dalam PAS*. Alhamdulillah...*"
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1530,Dato’ Kesavadas a/l A Achyuthan Nair,"Yang Berhormat, masa sudah habis."
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1530,1530,Dato’ Kesavadas a/l A Achyuthan Nair,"Yang Berhormat, masa sudah habis."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1530,Tuan Sr. Haji Mohd Apandi bin Mohamad,"Sekarang, *alhamdulillah.* Terima kasih,
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1530,1530,Tuan Sr. Haji Mohd Apandi bin Mohamad,"Sekarang, *alhamdulillah.* Terima kasih,
 Tuan Yang di-Pertua*.* Mudah-mudahan akan jadi yang benar, yang benar, bukan yang
 pinjaman..."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1530,ANNOTATION,[Ketawa]
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1530,1530,ANNOTATION,[Ketawa]
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1530,Tuan Sr. Haji Mohd Apandi bin Mohamad,"Terima kasih, Tuan Yang di-Pertua."
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1530,1530,Tuan Sr. Haji Mohd Apandi bin Mohamad,"Terima kasih, Tuan Yang di-Pertua."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1530,Dato’ Kesavadas a/l A Achyuthan Nair,Terima kasih.
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1530,1530,Dato’ Kesavadas a/l A Achyuthan Nair,Terima kasih.
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1530,Tuan Sr. Haji Mohd Apandi bin Mohamad,"*Assalamualaikum warahmatullahi
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1530,1530,Tuan Sr. Haji Mohd Apandi bin Mohamad,"*Assalamualaikum warahmatullahi
 wabarakatuh*. Banyak lagi hendak bercakap tetapi tidak apa. Terima kasih, Tuan Yang di-
 Pertua."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1530,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Tuan Sr. Haji
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1530,1530,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Tuan Sr. Haji
 Mohd Apandi bin Mohamad atas perbahasan tadi.
 Sekarang, saya menjemput Yang Berhormat Tuan Balasubramaniam a/l Nachiappan."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1533,Tuan Balasubramaniam a/l Nachiappan,"Salam sejahtera. Terima kasih Tuan Yang
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,3.33 ptg.,1533,Tuan Balasubramaniam a/l Nachiappan,"Salam sejahtera. Terima kasih Tuan Yang
 di-Pertua Dewan Negara kerana memberi saya ruang untuk membahaskan Belanjawan 2023.
 Saya mulakan ucapan saya hari ini dengan dua rangkap pantun.
 *Hendak belayar ke Teluk Betung,
@@ -3411,16 +3410,16 @@ Sambil mencuba labuhkan pukat;
 Bulat air kerana pembentung,
 Bulat manusia kerana muafakat...*"
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1533,ANNOTATION,[Tepuk]
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,3.33 ptg.,1533,ANNOTATION,[Tepuk]
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1533,Tuan Balasubramaniam a/l Nachiappan,"*Orang baik memacu kuda,
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,3.33 ptg.,1533,Tuan Balasubramaniam a/l Nachiappan,"*Orang baik memacu kuda,
 Kuda dipacu deras sekali;
 Buat baik berpada-pada,
 Buat jahat jangan sekali...*"
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1533,ANNOTATION,[Tepuk]
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,3.33 ptg.,1533,ANNOTATION,[Tepuk]
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1533,Tuan Balasubramaniam a/l Nachiappan,"Tuan Yang di-Pertua, saya telah meneliti pembentangan Belanjawan 2023 dan
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,3.33 ptg.,1533,Tuan Balasubramaniam a/l Nachiappan,"Tuan Yang di-Pertua, saya telah meneliti pembentangan Belanjawan 2023 dan
 perbahasan di Dewan Rakyat. Saya melihat bahawa belanjawan yang telah dibentangkan
 oleh Yang Amat Berhormat Menteri Kewangan merangkap Perdana Menteri Malaysia yang
 ke-10 tidaklah membawa banyak kesegaran, dan *‘Wow factor’* untuk dihidangkan kepada
@@ -3475,7 +3474,7 @@ mendedahkan bahawa kes rasuah melibatkan ketirisan perolehan kerajaan membabitka
 penjawat awam dilihat semakin kritikal, yang mana hampir 50 peratus kes ketirisan perolehan
 kerajaan banyak berlaku melibatkan agensi-agensi kerajaan."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1540,Tuan Balasubramaniam a/l Nachiappan,"Begitu juga dengan skandal-skandal besar seperti skandal *1Malaysia Development
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1540,1540,Tuan Balasubramaniam a/l Nachiappan,"Begitu juga dengan skandal-skandal besar seperti skandal *1Malaysia Development
 Berhad* (1MDB) yang suatu masa dahulu telah menggegarkan politik Malaysia dan Perdana
 Menteri Malaysia, Dato’ Seri Anwar bin Ibrahim antara yang paling kuat menyentuh tentang
 perkara ini termasuk di dalam Parlimen.
@@ -3507,9 +3506,9 @@ minyak yang dibuat dengan Kelantan dan negeri lain yang diadakan perjanjian ters
 tiga batu nautika langsung tidak termasuk dalam perjanjian. Perjanjian ini adalah pada 9 Mei
 1975. Manakala perjanjian ataupun Akta Laut Wilayah"
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1540,ANNOTATION,[Akta 750]
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1540,1540,ANNOTATION,[Akta 750]
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1540,Tuan Balasubramaniam a/l Nachiappan,"diwartakan pada 17 Jun
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1540,1540,Tuan Balasubramaniam a/l Nachiappan,"diwartakan pada 17 Jun
 2012. Jadi, manakah yang dinamakan keadilan?
 Allah ada berfirman di dalam Al-Quran, dalam Surah Al-Maidah ayat 8, “*Hai orang-
 orang yang beriman, hendaklah kamu jadi orang-orang yang selalu menegakkan kebenaran
@@ -3525,30 +3524,30 @@ lalu yang telah meluluskan cadangan supaya rundingan segera diadakan dengan Perd
 Menteri Dato’ Seri Anwar bin Ibrahim bagi mengembalikan royalti petroleum.
 Perkara keempat yang ingin saya sebutkan..."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1540,Tuan Mohd Hasbie bin Muda,"Pencelahan, Yang Berhormat. Boleh, Tuan Yang di-
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1540,1540,Tuan Mohd Hasbie bin Muda,"Pencelahan, Yang Berhormat. Boleh, Tuan Yang di-
 Pertua?"
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1540,Dato’ Kesavadas a/l A Achyuthan Nair,"Ya, jika pembahas bagi laluan."
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1540,1540,Dato’ Kesavadas a/l A Achyuthan Nair,"Ya, jika pembahas bagi laluan."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1540,Tuan Balasubramaniam a/l Nachiappan,Teruskan?
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1540,1540,Tuan Balasubramaniam a/l Nachiappan,Teruskan?
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1540,Dato’ Kesavadas a/l A Achyuthan Nair,"*No, no*."
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1540,1540,Dato’ Kesavadas a/l A Achyuthan Nair,"*No, no*."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1540,Tuan Balasubramaniam a/l Nachiappan,Ya.
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1540,1540,Tuan Balasubramaniam a/l Nachiappan,Ya.
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1540,Tuan Mohd Hasbie bin Muda,"Berkenaan dengan isu royalti petroleum ini, adakah
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1540,1540,Tuan Mohd Hasbie bin Muda,"Berkenaan dengan isu royalti petroleum ini, adakah
 Yang Berhormat bersetuju bahawa sebenarnya status wang ihsan ini turut dijawab oleh
 Menteri Kewangan pada tahun 2001 iaitu pada waktu parti Yang Berhormat sebahagian
 daripada Kerajaan Persekutuan?"
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1540,Tuan Balasubramaniam a/l Nachiappan,"Terima kasih Yang Berhormat. Isu itu,
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1540,1540,Tuan Balasubramaniam a/l Nachiappan,"Terima kasih Yang Berhormat. Isu itu,
 semasa Kerajaan PN memang ada disalurkan sebagai royalti."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1540,Tuan Mohd Hasbie bin Muda,"Tidak betul, Yang Berhormat. Waktu itu disebut
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1540,1540,Tuan Mohd Hasbie bin Muda,"Tidak betul, Yang Berhormat. Waktu itu disebut
 sebagai wang ihsan untuk minyak yang dijumpai di luar tiga batu nautika. Waktu itu, Menteri
 Kewangan ialah Yang Berhormat Tengku Zafrul."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1540,Tuan Balasubramaniam a/l Nachiappan,"Okey, nanti saya akan *check*.
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1540,1540,Tuan Balasubramaniam a/l Nachiappan,"Okey, nanti saya akan *check*.
 Perkara keempat yang ingin saya sebutkan dalam ucapan saya adalah berkaitan
 projek tebatan banjir dan perlu disegerakan. Apabila banjir melanda negeri Johor baru-baru
 ini, Perdana Menteri terus mengumumkan bahawa semua projek tebatan banjir bernilai lebih
@@ -3568,11 +3567,11 @@ banjir merupakan satu kemaslahatan yang perlu disegerakan untuk rakyat dan terbu
 bahawa bencana banjir yang melanda negeri Johor khususnya baru-baru ini sesuatu
 pengajaran penting untuk pemerintah. Sekian, salam hormat, terima kasih."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1540,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Tuan
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1540,1540,Dato’ Kesavadas a/l A Achyuthan Nair,"Terima kasih Yang Berhormat Tuan
 Balasubramaniam a/l Nachiappan atas perbahasan tadi.
 Sekarang saya menjemput Yang Berhormat Datuk Seri Hajah Zurainah binti Musa."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1549,Datuk Seri Hajah Zurainah binti Musa,"Terima kasih Tuan Yang di-Pertua. *Bismillahi
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,3.49 ptg.,1549,Datuk Seri Hajah Zurainah binti Musa,"Terima kasih Tuan Yang di-Pertua. *Bismillahi
 Rahmani Rahim. Assalamualaikum warahmatullahi wabarakatuh* dan salam sejahtera. Salam
 Madani.
 Tuan Yang di-Pertua, izinkan saya terlebih dahulu merakamkan ucapan terima kasih
@@ -3588,7 +3587,7 @@ Tuan Yang di-Pertua, saya menyambut baik pengumuman Yang Amat Berhormat
 Perdana Menteri dalam ucapan beliau yang memperuntukkan sejumlah RM386.14 bilion
 untuk Belanjawan 2023."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1550,Datuk Seri Hajah Zurainah binti Musa,"Ini bagi saya merupakan peruntukan belanjawan yang tertinggi dalam sejarah
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1550,1550,Datuk Seri Hajah Zurainah binti Musa,"Ini bagi saya merupakan peruntukan belanjawan yang tertinggi dalam sejarah
 Malaysia dan menunjukkan komitmen kerajaan untuk memastikan pemulihan dan
 pembangunan ekonomi negara ekoran situasi pandemik COVID-19. Tanpa melengahkan
 masa, ada beberapa perkara yang saya ingin membangkitkan berkaitan Belanjawan 2023.
@@ -3678,7 +3677,7 @@ yang sama, kita perlu memastikan kementerian, jabatan dan agensi-agensi berkaita
 merevolusikan undang-undang dan tadbir urus pemantauan seiring dengan pembangunan
 dan penggunaan teknologi tersebut."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1600,Datuk Seri Hajah Zurainah binti Musa,"Persoalan saya Tuan Yang di-Pertua, apa mekanisme atau keperluan perundangan
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1600,1600,Datuk Seri Hajah Zurainah binti Musa,"Persoalan saya Tuan Yang di-Pertua, apa mekanisme atau keperluan perundangan
 yang diterapkan oleh Kementerian Perdagangan Dalam Negeri dan Kos Sara Hidup ke atas
 platform e-dagang seperti *Lazada, Shopee* dan sebagainya untuk membasmi penjualan
 barangan palsu oleh peniaga terutamanya produk kecantikan dan produk perubatan. Setahu
@@ -3742,9 +3741,9 @@ dengan izin, diperkenalkan. *Parental leave* ini, dengan izin, adalah di mana ib
 berkongsi tempoh 90 hari cuti bersalin walaupun bekerja di organisasi yang berlainan seperti
 mana yang diamalkan di setengah-setengah negara Eropah."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1600,ANNOTATION,[Timbalan Yang di-Pertua mempengerusikan Mesyuarat]
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1600,1600,ANNOTATION,[Timbalan Yang di-Pertua mempengerusikan Mesyuarat]
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1600,Datuk Seri Hajah Zurainah binti Musa,"Tuan Yang di-Pertua, sudah tukar ya Tuan Yang di-Pertua. Selamat datang kembali.
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1600,1600,Datuk Seri Hajah Zurainah binti Musa,"Tuan Yang di-Pertua, sudah tukar ya Tuan Yang di-Pertua. Selamat datang kembali.
 Berakhir sudah perbahasan dan pertanyaan saya berkaitan Belanjawan 2023. Dalam
 keadaan persaingan global yang semakin mencabar, keperluan untuk menjayakan inisiatif,
 polisi dan tindakan di bawah belanjawan negara semakin kritikal. Saya mendoakan kejayaan
@@ -3763,9 +3762,9 @@ mencetuskan idea dan perbincangan agar kita dapat bersama mara ke hadapan demi n
 kita negara Malaysia.
 Izin saya berkongsi sebuah pantun sebelum saya berakhir?..."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1600,Timbalan Yang di-Pertua,Silakan.
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1600,1600,Timbalan Yang di-Pertua,Silakan.
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1600,Datuk Seri Hajah Zurainah binti Musa,"Terima kasih Tuan Yang di-Pertua.
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1600,1600,Datuk Seri Hajah Zurainah binti Musa,"Terima kasih Tuan Yang di-Pertua.
 *Andai ingin mencari rotan,
 Jangan tuan takutkan onaknya;
 Bajet Malaysia 2023 kita implementasikan,
@@ -3777,12 +3776,12 @@ Hemat berbelanja untuk kelangsungan se-Malaysia.*
 Sekian, terima kasih. Tuan Yang di-Pertua, saya menyokong penuh Belanjawan 2023
 ini. *Assalamualaikum warahmatullahi wabarakatuh.*"
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1600,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Datuk Seri Hajah
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1600,1600,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Datuk Seri Hajah
 Zurainah binti Musa atas perbahasan yang telah diberikan.
 Seterusnya saya menjemput pembahas yang ke-15, Yang Berhormat Dato’ Ajis Sitin.
 Dipersilakan."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1610,Dato’ Ajis bin Sitin,"Terima kasih Tuan Yang di-Pertua. Selamat petang, salam
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,4.10 ptg.,1610,Dato’ Ajis bin Sitin,"Terima kasih Tuan Yang di-Pertua. Selamat petang, salam
 sejahtera dan salam Malaysia Madani.
 Pertama sekali, saya ingin mengucapkan terima kasih kerana telah memberi peluang
 untuk saya turut membahaskan Belanjawan 2023 pada petang ini. Saya juga ingin
@@ -3803,9 +3802,9 @@ Orang Asli adalah berkait rapat dengan isu pemilikan tanah. Kebanyakan Orang Asl
 mendiami kampung-kampung atau penempatan yang tidak di wartakan sebagai rizab Orang
 Asli di bawah Akta Orang Asli 1954"
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1610,ANNOTATION,[Akta 134]
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,4.10 ptg.,1610,ANNOTATION,[Akta 134]
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1610,Dato’ Ajis bin Sitin,". Kampung tersebut sangat rapuh statusnya di
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,4.10 ptg.,1610,Dato’ Ajis bin Sitin,". Kampung tersebut sangat rapuh statusnya di
 mana pada bila-bila masa mereka boleh dikeluarkan dari kawasan itu oleh pihak berkuasa.
 Menyedari perkara inilah kebanyakan Orang Asli tidak mengusahakan apa-apa aktiviti
 pertanian untuk sara hidup dan berterusan menjadi miskin tegar. Pada masa sekarang
@@ -3902,7 +3901,7 @@ Highlands, Pahang. Namun, pembinaan jalan baharu dari Habu ke Tanah Rata yang be
 RM480 juta dilihat tidak akan menyelesaikan masalah kesesakan jalan raya semasa musim
 cuti."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1620,Dato’ Ajis bin Sitin,"Tiada masalah kesesakan jalan raya berlaku di antara Habu dan Tanah Rata.
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1620,1620,Dato’ Ajis bin Sitin,"Tiada masalah kesesakan jalan raya berlaku di antara Habu dan Tanah Rata.
 Kesesakan jalan raya di Cameron Highlands adalah berpunca daripada kesesakan kenderaan
 yang berlaku di pusat-pusat jualan sayur-sayuran dan tempat-tempat tarikan pelancongan di
 kawasan Brinchang, Kea Farm, Tringkap, Kuala Terla dan Kampung Raja yang berada jauh
@@ -4014,18 +4013,18 @@ perubatan dengan percuma dan tidak dibebani dengan birokrasi MOU itu. MOU terseb
 dilihat sebagai tidak adil dan menyusahkan masyarakat Orang Asli dan perlu dibatalkan. Tuan
 Yang di-Pertua, sekian saya mohon menyokong. Terima kasih."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1620,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Dato’ Ajis bin Sitin
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1620,1620,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Dato’ Ajis bin Sitin
 atas pembahasan yang telah diberikan.
 Seterusnya, saya menjemput pembahas yang terakhir, Yang Berhormat Dr. Hajah
 Wan Martina binti Wan Yusoff. Dipersilakan."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1629,Dr. Hajah Wan Martina binti Wan Yusoff,"*Bismillahi Rahmani Rahim.
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,4.29 ptg.,1629,Dr. Hajah Wan Martina binti Wan Yusoff,"*Bismillahi Rahmani Rahim.
 Assalamualaikum warahmatullahi wabarakatuh*. Terima kasih kepada Tuan Yang di-Pertua
 atas peluang yang diberikan kepada saya untuk membahaskan belanjawan bagi tahun 2023.
 Cuma, harapan saya walaupun saya pembahas yang terakhir pada petang ini, kementerian-
 kementerian masih lagi memberi perhatian kepada ucapan saya."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1630,Dr. Hajah Wan Martina binti Wan Yusoff,"Sebagai wakil dari negeri Kelantan, saya memohon penjelasan daripada kerajaan
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1630,1630,Dr. Hajah Wan Martina binti Wan Yusoff,"Sebagai wakil dari negeri Kelantan, saya memohon penjelasan daripada kerajaan
 mengenai program-program untuk menoktahkan 130,000 miskin tegar khususnya kepada
 rakyat negeri Kelantan. Dalam ikhtiar untuk menoktahkan miskin tegar ini, kerajaan
 menyediakan peruntukan sebanyak RM750 juta untuk Inisiatif Pendapatan Rakyat (IPR).
@@ -4133,7 +4132,7 @@ Kami rakyat Kelantan memohon supaya semua projek pembangunan di Kelantan
 diberi perhatian khusus oleh kerajaan untuk memastikan Kelantan keluar dari negeri
 termiskin."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1640,Dr. Hajah Wan Martina binti Wan Yusoff,"Tuan Yang di-Pertua, pada 16 Disember 2022 yang lalu Yang Berhormat Menteri
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1640,1640,Dr. Hajah Wan Martina binti Wan Yusoff,"Tuan Yang di-Pertua, pada 16 Disember 2022 yang lalu Yang Berhormat Menteri
 Sumber Asli Alam Sekitar dan Perubahan Iklim telah mengumumkan pelaksanaan
 mekanisme pelepasan kos-kos tidak seimbang yang mengakibatkan pengenaan surcaj
 tenaga elektrik yang tinggi kepada loji-loji air rawatan yang dikendalikan operator-operator air
@@ -4228,10 +4227,10 @@ masalah ini? Tuan Yang di-Pertua, dengan itu saya mohon supaya soalan-soalan say
 mendapat perhatian dan mendapat jawapan dari kerajaan. Sekian saya memohon
 menyokong, terima kasih."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1640,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Dr. Hajah Wan
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,■1640,1640,Timbalan Yang di-Pertua,"Terima kasih kepada Yang Berhormat Dr. Hajah Wan
 Martina binti Wan Yusoff atas perbahasan tadi.
 Ahli-ahli Yang Berhormat, merujuk kepada Usul 11(1) yang telah dipersetujukan oleh
 Majlis pada 28 Mac 2023, saya dengan ini menangguhkan Mesyuarat Dewan hari ini sehingga
 jam 10 pagi, hari Khamis, 30 Mac 2023. Sekian, terima kasih."
 USUL,"USUL DI BAWAH PERATURAN MESYUARAT 6(1)
-DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,1650,ANNOTATION,[Dewan ditangguhkan pada pukul 4.50 petang]
+DIBACA BERSAMA PERATURAN MESYUARAT 6(3)",,4.50 petang,1650,ANNOTATION,[Dewan ditangguhkan pada pukul 4.50 petang]

@@ -1,12 +1,12 @@
-level_1,level_2,level_3,timestamp,author,speech
-,,,1000,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
-MENGANGKAT SUMPAH DUA BELAS ORANG AHLI,,,1000,,Ahli Yang Berhormat yang tersebut di bawah ini telah mengangkat sumpah:
-MENGANGKAT SUMPAH DUA BELAS ORANG AHLI,LANTIKAN BAHARU,,1000,,"1. Yang Berhormat Senator Tuan Nga Hock Cheh
+level_1,level_2,level_3,raw_timestamp,timestamp,author,speech
+,,,10.00 pagi,1000,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
+MENGANGKAT SUMPAH DUA BELAS ORANG AHLI,,,10.00 pagi,1000,,Ahli Yang Berhormat yang tersebut di bawah ini telah mengangkat sumpah:
+MENGANGKAT SUMPAH DUA BELAS ORANG AHLI,LANTIKAN BAHARU,,10.00 pagi,1000,,"1. Yang Berhormat Senator Tuan Nga Hock Cheh
 2. Yang Berhormat Senator Tuan Ismail bin Yusop
 3. Yang Berhormat Senator Puan Lim Hui Ying
 4. Yang Berhormat Senator Tuan Mohd Yusmadi bin Mohd Yusoff
 5. Yang Berhormat Senator Puan Raj Munni binti Sabu"
-MENGANGKAT SUMPAH DUA BELAS ORANG AHLI,LANTIKAN BAHARU,,1010,,"6. Yang Berhormat Tuan Md Nasir bin Hashim
+MENGANGKAT SUMPAH DUA BELAS ORANG AHLI,LANTIKAN BAHARU,,■1010,1010,,"6. Yang Berhormat Tuan Md Nasir bin Hashim
 7. Yang Berhormat Tuan Adrian Banie Lasimbang
 8. Yang Berhormat Tuan Alan Ling Sie Kiong
 9. Yang Berhormat Datuk Theodore Douglas Lind
@@ -14,16 +14,16 @@ MENGANGKAT SUMPAH DUA BELAS ORANG AHLI,LANTIKAN BAHARU,,1010,,"6. Yang Berhormat
 11. Yang Berhormat Laksamana Pertama Haji Mohamad Imran (B) bin
 Abd Hamid
 12. Yang Berhormat Datuk Razali bin Idris"
-MENGANGKAT SUMPAH DUA BELAS ORANG AHLI,LANTIKAN BAHARU,,1010,ANNOTATION,[Upacara Mengangkat Sumpah tamat]
+MENGANGKAT SUMPAH DUA BELAS ORANG AHLI,LANTIKAN BAHARU,,■1010,1010,ANNOTATION,[Upacara Mengangkat Sumpah tamat]
 MENGANGKAT SUMPAH DUA BELAS ORANG AHLI,"PEMASYHURAN TUAN YANG DI-PERTUA
-MENGALU-ALUKAN PELANTIKAN AHLI-AHLI BAHARU",,1020,Tuan Yang di-Pertua,"Selamat pagi dan salam sejahtera. Ahli-ahli Yang Berhormat.
+MENGALU-ALUKAN PELANTIKAN AHLI-AHLI BAHARU",,■1020,1020,Tuan Yang di-Pertua,"Selamat pagi dan salam sejahtera. Ahli-ahli Yang Berhormat.
 Pertamanya saya ingin mengucapkan setinggi-tinggi tahniah dan penghargaan
 kepada Yang Amat Berhormat Dato’ Seri Dr. Wan Azizah Wan Ismail kerana dilantik sebagai
 Timbalan Perdana Menteri dalam pentadbiran kerajaan yang baharu..."
 MENGANGKAT SUMPAH DUA BELAS ORANG AHLI,"PEMASYHURAN TUAN YANG DI-PERTUA
-MENGALU-ALUKAN PELANTIKAN AHLI-AHLI BAHARU",,1020,ANNOTATION,[Tepuk]
+MENGALU-ALUKAN PELANTIKAN AHLI-AHLI BAHARU",,■1020,1020,ANNOTATION,[Tepuk]
 MENGANGKAT SUMPAH DUA BELAS ORANG AHLI,"PEMASYHURAN TUAN YANG DI-PERTUA
-MENGALU-ALUKAN PELANTIKAN AHLI-AHLI BAHARU",,1020,Tuan Yang di-Pertua,"Seterusnya saya mengalu-alukan 12 orang Ahli baharu pada pagi ini.
+MENGALU-ALUKAN PELANTIKAN AHLI-AHLI BAHARU",,■1020,1020,Tuan Yang di-Pertua,"Seterusnya saya mengalu-alukan 12 orang Ahli baharu pada pagi ini.
 Pelantikan empat orang Ahli adalah mengikut Perkara 45(1)(a), Perlembagaan
 Persekutuan. Mereka ialah Yang Berhormat Senator Tuan Nga Hock Cheh, dan Yang
 Berhormat Senator Tuan Ismail bin Yusop, pilihan Dewan Undangan Negeri Perak.
@@ -54,17 +54,16 @@ antarabangsa.
 Akhir sekali, saya mendoakan agar Ahli-ahli Yang Berhormat akan sentiasa
 mendukung visi rakyat ke arah membina sebuah negara yang maju dan progresif dalam semua
 aspek pembangunan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,Dato' Mohd Suhaimi bin Abdullah,"minta Menteri Pembangunan Wanita, Keluarga
-dan Masyarakat menyatakan, apakah tindakan Kerajaan yang akan dapat mengekang rakyat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1020,1020,,"dan Masyarakat menyatakan, apakah tindakan Kerajaan yang akan dapat mengekang rakyat
 daripada terlibat dengan perkahwinan yang melibatkan kanak-kanak."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,"Menteri Pembangunan Wanita, Keluarga dan Masyarakat [Dato’ Seri Dr. Wan Azizah Wan Ismail]","Terima kasih Tuan Yang di-Pertua. Terima kasih kerana soalan itu.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1020,1020,"Menteri Pembangunan Wanita, Keluarga dan Masyarakat [Dato’ Seri Dr. Wan Azizah Wan Ismail]","Terima kasih Tuan Yang di-Pertua. Terima kasih kerana soalan itu.
 Izinkan saya menjawab soalan Yang Berhormat Senator Dato’ Haji Mohd Suhaimi bin
 Abdullah bersekali dengan soalan daripada Yang Berhormat Senator Dato' Hajah Fahariyah
 binti Haji Md Nordin pada 29 Ogos tahun ini; Yang Berhormat Senator Datuk Teo Eng Tee @
 Teo Kok Chee pada 3 September 2018; dan Yang Berhormat Senator Tuan Khairul Azwan bin
 Harun pada 4 September 2018, kerana soalannya saling berkait."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,Tuan Yang di-Pertua,Silakan Yang Berhormat.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1020,Dato' Seri Dr. Wan Azizah Wan Ismail,"Terima kasih Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1020,1020,Tuan Yang di-Pertua,Silakan Yang Berhormat.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1020,1020,Dato' Seri Dr. Wan Azizah Wan Ismail,"Terima kasih Tuan Yang di-Pertua.
 Kementerian Pembangunan Wanita, Keluarga dan Masyarakat tegas berpendirian bahawa
 kanak-kanak perlu diberi peluang untuk mengembangkan potensi sepenuhnya selaras dengan
 Konvensyen Mengenai Hak Kanak-kanak (CRC).
@@ -101,7 +100,7 @@ Malaysia 2013-2025 iaitu peningkatan akses daripada peringkat pra sekolah hingga
 atas yang bertujuan untuk menangani masalah keciciran di sekolah. Satu modul intervensi juga
 disediakan bagi panduan kepada guru untuk menjalankan program intervensi bagi murid
 berisiko cicir agar mereka kekal bersekolah hingga tamat Tingkatan 5."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1030,Dato' Seri Dr. Wan Azizah Wan Ismail,"Tuan Yang di-Pertua, bagi mengekang perkahwinan bawah umur ini kerajaan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1030,1030,Dato' Seri Dr. Wan Azizah Wan Ismail,"Tuan Yang di-Pertua, bagi mengekang perkahwinan bawah umur ini kerajaan
 mengambil langkah-langkah seperti berikut, kepentingan program kesedaran dalam
 pendidikan kesihatan produktif. Berdasarkan kepada tinjauan ringkas berhubung dengan
 perkahwinan kanak-kanak yang telah dijalankan oleh UNICEF pada tahun ini fokus yang perlu
@@ -163,7 +162,7 @@ hakim syarie supaya wajib mengambil kira kepentingan kanak-kanak yang terlibat t
 dari aspek kesihatan, pendidikan dan sosioekonomi. Pengukuhan proses pentadbiran ini juga
 boleh dipertimbangkan bagi perkahwinan bawah umur di kalangan bukan Muslim. Terima
 kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1030,Dato’ Haji Mohd Suhaimi bin Abdullah,"Soalan tambahan. Terima kasih, Tuan Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1030,1030,Dato’ Haji Mohd Suhaimi bin Abdullah,"Soalan tambahan. Terima kasih, Tuan Yang
 di-Pertua. Terima kasih, Yang Amat Berhormat di atas jawapan yang begitu panjang lebar dan
 saya faham yang baru-baru ini Yang Amat Berhormat- UNICEF atau *United Nations* telah pun
 membuat kajian di 118 buah negara, dan didapati sebanyak 700 pasangan wanita yang
@@ -186,7 +185,7 @@ kepada mereka ini?
 Adakah kita mempunyai statistik berapa banyak perceraian yang berlaku di bawah
 perkahwinan kanak-kanak ini? Terima kasih Yang Amat Berhormat. Terima kasih, Tuan Yang
 di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1030,Dato' Seri Dr. Wan Azizah Wan Ismail,"Terima kasih, Tuan Yang di-Pertua. Terima
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1030,1030,Dato' Seri Dr. Wan Azizah Wan Ismail,"Terima kasih, Tuan Yang di-Pertua. Terima
 kasih, Yang Berhormat Senator yang telah menanyakan, bagaimana kita hendak mengimbangi
 antara apa yang dikatakan dalam undang-undang Islam dan juga bagaimana kita hendak
 naikkan had perkahwinan minimum umurnya. Memanglah kita ada perbincangan kerana
@@ -202,7 +201,7 @@ mendapatkan segala kebaikan daripada segi kesihatan, sosioekonomi, dan yang lain
 terjaga dan terjamin. Itu yang kita hendakkan buat satu undang-undang. Apabila kita hendak
 membuat undang-undang ini kita mesti ambil *stakeholders* juga yang mengatakan kalau Islam
 itu membolehkan, kita mesti juga melihat dan berbincang dengan mereka."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1040,Dato' Seri Dr. Wan Azizah Wan Ismail,"Namun, apa yang penting adalah, asas bagaimana Islam hendakkan semua dijaga
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1040,1040,Dato' Seri Dr. Wan Azizah Wan Ismail,"Namun, apa yang penting adalah, asas bagaimana Islam hendakkan semua dijaga
 dengan baik. Kalau anak-anak itu dieksploitasi, itu yang kita menentang. Islam juga mesti
 menentang mana-mana orang yang dieksploitasi. Kalau ini adalah masalah kemiskinan, kita
 tangani masalah kemiskinan. Ini yang kita hendakkan.
@@ -224,11 +223,11 @@ Ayu sendiri sekarang ini di bawah jagaan Kerajaan Thailand.
 Yang Che Abdul Karim itu, apa-apa itu, kalau ada dakwaan terhadap beliau kerana
 telah berkahwin dan tidak berdaftar apa semua, saya telah pergi hantar kepada *AG Chambers.*
 Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1040,Tuan Yang di-Pertua,Terima kasih Yang Berhormat.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1040,Dato' Hajah Fahariyah binti Haji Md Nordin,"Tuan Yang di-Pertua, saya ada soalan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1040,1040,Tuan Yang di-Pertua,Terima kasih Yang Berhormat.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1040,1040,Dato' Hajah Fahariyah binti Haji Md Nordin,"Tuan Yang di-Pertua, saya ada soalan
 lisan kepada Yang Berhormat Menteri. Boleh saya tanya soalan tambahan?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1040,Tuan Yang di-Pertua,Silakan Yang Berhormat Puan Asmak binti Husin.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1040,Puan Asmak binti Husin,"Terima kasih Tuan Yang di-Pertua.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1040,1040,Tuan Yang di-Pertua,Silakan Yang Berhormat Puan Asmak binti Husin.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1040,1040,Puan Asmak binti Husin,"Terima kasih Tuan Yang di-Pertua.
 Pertamanya, saya bersetuju dengan Timbalan Perdana Menteri tadi mengatakan
 tentang kita hendak menaikkan had minimum kepada 18 tahun kerana pada hari ini
 sebenarnya, kita lihat orang Islam ini dia mempunyai sedikit salah faham berkaitan dengan
@@ -248,30 +247,30 @@ Satu lagi juga, kami ingin mencadangkan supaya perlu ada juga *screening* daripa
 sudut mental dan psikologi sebab syariah ini juga bermaksud kemampuan sesuatu pasangan
 itu untuk memasuki alam perkahwinan. Jadi bukan bermaksud halal dan haram semata-mata.
 Itu berkaitan dengan kanak-kanak Islam..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1040,Tuan Yang di-Pertua,Yang Berhormat.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1040,Puan Asmak binti Husin,"Bagi kanak-kanak bukan Islam pula, sebenarnya saya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1040,1040,Tuan Yang di-Pertua,Yang Berhormat.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1040,1040,Puan Asmak binti Husin,"Bagi kanak-kanak bukan Islam pula, sebenarnya saya
 sendiri apabila berdepan dengan mereka, saya tidak mempunyai panduan yang jelas
 bagaimana untuk memberi nasihat kepada kanak-kanak bukan Islam."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1040,Tuan Yang di-Pertua,"Yang Berhormat, cadangan semua boleh masuk dalam Titah
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1040,1040,Tuan Yang di-Pertua,"Yang Berhormat, cadangan semua boleh masuk dalam Titah
 Diraja."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1040,Puan Asmak binti Husin,"Soalan saya ialah, apakah ada garis panduan bagi kanak-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1040,1040,Puan Asmak binti Husin,"Soalan saya ialah, apakah ada garis panduan bagi kanak-
 kanak bukan Islam contohnya saya bila berdepan dengan mereka, apakah nasihat yang patut
 saya bagi kepada pasangan bukan Islam apabila hendak memasuki alam perkahwinan seperti
 ini. Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1040,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, tadi Yang Amat Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1040,1040,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, tadi Yang Amat Berhormat
 Timbalan Perdana Menteri sudah memberitahu bahawa setakat ini Peguam Negara dengan
 Majlis Agama sedang berbincang tetapi kalau Yang Amat Berhormat Timbalan Perdana
 Menteri hendak menjawab juga, silakan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1040,Dato’ Seri Dr. Wan Azizah Wan Ismail,"Terima kasih Tuan Yang di-Pertua. Memang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1040,1040,Dato’ Seri Dr. Wan Azizah Wan Ismail,"Terima kasih Tuan Yang di-Pertua. Memang
 betul kita tengah berbincang, jadi saya tak dapat memberikan jawapan sekarang ini. Akan
 tetapi yang mana yang dikatakan Mahkamah Syariah itu terpulang kepada hakim dan saya
 difahamkan bahawa kadang-kadang ada masalah yang berlainan. Mungkin sudah terlanjur apa
 semua, jadi itu yang dikatakan oleh hakim syarie.
 Yang bukan Islam, itu terpulang di Sabah, Sarawak atas dasar Ketua Menteri. SOP
 itu belum, kita hendakkan perketatkan. Terima kasih atas cadangan-cadangan. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1040,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat. Silakan Dato' Hajah Fahariyah
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1040,1040,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat. Silakan Dato' Hajah Fahariyah
 binti Haji Md Nordin."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1040,Dato' Hajah Fahariyah binti Haji Md Nordin,"Terima kasih Tuan Yang di-Pertua. Di
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1040,1040,Dato' Hajah Fahariyah binti Haji Md Nordin,"Terima kasih Tuan Yang di-Pertua. Di
 sini saya mengucapkan ribuan terima kasih kepada Yang Amat Berhormat Timbalan Perdana
 Menteri kerana turut menjawab soalan lisan saya berkenaan dengan *child marriage* ini.
 Tuan Yang di-Pertua, kalau kita dengar tadi penjelasan daripada Yang Amat
@@ -288,13 +287,13 @@ apakah langkah-langkah kerajaan dapat membantu ibu-ibu muda ini sama ada yang ka
 usia yang muda ataupun golongan-golongan yang berhadapan dengan *early pregnancy*
 ataupun mengandung di awal usia akibat daripada gejala sosial. Terima kasih Tuan Yang di-
 Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1040,Tuan Yang di-Pertua,"Yang Berhormat, soalan berkenaan dengan golongan kanak-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1040,1040,Tuan Yang di-Pertua,"Yang Berhormat, soalan berkenaan dengan golongan kanak-
 kanak ataupun ibu muda?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1040,Dato' Hajah Fahariyah binti Haji Md Nordin,"Tuan Yang di-Pertua, kanak-kanak
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1040,1040,Dato' Hajah Fahariyah binti Haji Md Nordin,"Tuan Yang di-Pertua, kanak-kanak
 yang kahwin dan akhirnya dia mengandung, dan akhirnya mempunyai anak di dalam usia yang
 muda, maknanya dua-dualah Tuan Yang di-Pertua. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1040,Tuan Yang di-Pertua,"Okey, okey. Silakan Yang Amat Berhormat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1040,Dato’ Seri Dr. Wan Azizah Wan Ismail,"Terima kasih Tuan Yang di-Pertua. Terima
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1040,1040,Tuan Yang di-Pertua,"Okey, okey. Silakan Yang Amat Berhormat."
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1040,1040,Dato’ Seri Dr. Wan Azizah Wan Ismail,"Terima kasih Tuan Yang di-Pertua. Terima
 kasih kerana soalan itu.
 Memanglah kita hendakkan satunya untuk *prevent,* tidak sampai ke tahap itu apabila
 mereka terlanjur dan menjadi ibu pada usia yang muda. Akan tetapi tempat-tempat yang untuk
@@ -316,25 +315,25 @@ Oleh sebab itulah kita hendakkan hadkan minimum 18 tahun. Apa-apa yang kurang
 daripada itu seperti Yang Berhormat telah katakan, *maturity* bukan sahaja daripada segi baligh,
 fisiologi dan anatomi tetapi juga dengan sikap dan pembawaan. Terima kasih Tuan Yang di-
 Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1040,Tuan Yang di-Pertua,"Terima kasih Yang Amat Berhormat. Dewan yang mulia ini
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1040,1040,Tuan Yang di-Pertua,"Terima kasih Yang Amat Berhormat. Dewan yang mulia ini
 mengucapkan ribuan terima kasih kepada Yang Amat Berhormat Timbalan Perdana Menteri
 kerana sudi menjawab soalan yang sensitif sendiri."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1040,Dato’ Sri Ti Lian Ker,
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1040,ANNOTATION,[Bangun]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,1.,,1040,Tuan Yang di-Pertua,"Sila duduk Yang Berhormat.
-Yang Berhormat Dato' Hajah Fahariyah binti Hj Md Nordin."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1040,Dato' Hajah Fahariyah binti Haji Md Nordin,"minta Perdana Menteri menyatakan,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1040,1040,Dato’ Sri Ti Lian Ker,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1040,1040,ANNOTATION,[Bangun]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1040,1040,Tuan Yang di-Pertua,"Sila duduk Yang Berhormat.
+Yang Berhormat Dato' Hajah Fahariyah binti Hj Md Nordin.
+**2. Dato' Hajah Fahariyah binti Haji Md Nordin** minta Perdana Menteri menyatakan,
 apakah sasaran yang ditetapkan oleh Kerajaan Pakatan Harapan bagi memenuhi kuota 30
 peratus wanita di peringkat pengurusan tertinggi kerajaan atau badan berkanun, ahli lembaga
 pengarah syarikat berkaitan kerajaan dan syarikat pelaburan kerajaan dan Ahli-ahli Dewan
 Negara."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1040,Timbalan Menteri Di Jabatan Perdana Menteri [Tuan Mohamed Hanipa bin Maidin],"Terima kasih kepada Tuan Yang di-Pertua, terima kasih kepada Dato' Hajah
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1040,1040,Timbalan Menteri Di Jabatan Perdana Menteri [Tuan Mohamed Hanipa bin Maidin],"Terima kasih kepada Tuan Yang di-Pertua, terima kasih kepada Dato' Hajah
 Fahariyah binti Haji Md Nordin di atas soalan nombor 2.
 Sebelum saya jawab, izinkan saya menyatakan bahawa Pakatan Harapan, kita
 membuat sejarah dalam negara kita apabila kali pertama dalam sejarah, Malaysia mempunyai
 Timbalan Perdana Menteri seorang wanita..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1040,ANNOTATION,[Dewan tepuk]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,Timbalan Menteri Di Jabatan Perdana Menteri [Tuan Mohamed Hanipa bin Maidin],"Soalan berkenaan daripada Dato’ Fahariyah- saya berterima kasihlah kerana ini
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1040,1040,ANNOTATION,[Dewan tepuk]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1050,1050,Timbalan Menteri Di Jabatan Perdana Menteri [Tuan Mohamed Hanipa bin Maidin],"Soalan berkenaan daripada Dato’ Fahariyah- saya berterima kasihlah kerana ini
 soalan daripada Ketua Puteri UMNO, memang baguslah soalan ini.
 Untuk makluman Yang Berhormat, kerajaan telah pun mencapai sasaran 30 peratus
 penyertaan wanita di peringkat membuat dasar bagi sektor awam dengan pencapaian terkini
@@ -360,13 +359,13 @@ perkhidmatan awam yang cemerlang ataupun mencapai keunggulan dalam profesion,
 perdagangan, perindustrian, pertanian, aktiviti kebudayaan atau perkhidmatan sosial atau yang
 mewakili ras minoriti atau berkebolehan mewakili kepentingan Orang Asli. Dengan lain
 perkataan, *gender free.* Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,Dato' Hajah Fahariyah binti Haji Md Nordin,"Terima kasih Tuan Yang di-Pertua,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1050,1050,Dato' Hajah Fahariyah binti Haji Md Nordin,"Terima kasih Tuan Yang di-Pertua,
 terima kasih pada Yang Berhormat Menteri atas jawapan yang telah diberikan.
 Saya juga hendak maklumkan kepada Yang Berhormat Menteri, saya bukan Ketua
 Puteri. Saya sudah lebih umur Puteri sudah, saya sudah lebih emak Puteri sudah ini.
 Tuan Yang di-Pertua, soalan tambahan saya adalah berkenaan dengan..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,Tuan Yang di-Pertua,Rupa macam Puteri *kot.*
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,Dato' Hajah Fahariyah binti Haji Md Nordin,"Pakai *colour pink* agaknya, mungkin
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1050,1050,Tuan Yang di-Pertua,Rupa macam Puteri *kot.*
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1050,1050,Dato' Hajah Fahariyah binti Haji Md Nordin,"Pakai *colour pink* agaknya, mungkin
 *kot*.
 Tuan Yang di-Pertua, saya ingin bertanya kepada Yang Berhormat Menteri, adakah
 kerajaan bercadang untuk menetapkan syarat 30 peratus ini, yang dibuat secara penetapan
@@ -379,7 +378,7 @@ bercadang untuk mereformasi semua siri perundangan negara, yang mana ada akta at
 peraturan yang menetapkan keanggotaan sesuatu majlis negara seperti Majlis Keselamatan
 Negara, Majlis Profesor Negara atau keanggotaan tribunal atau jawatankuasa *statutory* bagi
 menepati sasaran 30 peratus ini dapat dilaksanakan? Sekian Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,2.,,1050,Tuan Mohamed Hanipa bin Maidin,"Terima kasih pada Tuan Yang di-Pertua, terima
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1050,1050,Tuan Mohamed Hanipa bin Maidin,"Terima kasih pada Tuan Yang di-Pertua, terima
 kasih kepada Dato’ Farahiyah di atas soalan tadi. Saya harap maklumat tentang Ketua Puteri
 UMNO itu dibetulkan dalam *website* ya supaya tulis yang terbaharulah. Saya ambil yang lama.
 Berkaitan dengan soalan tambahan tersebut, Tuan Yang di-Pertua, saya ingin
@@ -403,13 +402,13 @@ Jadi sebelum kita mengambil apa-apa tindakan, kita akan memastikan bahawa segala
 kepentingan pihak-pihak yang terlibat akan diambil kira. Walau bagaimanapun, saya ingin
 mengucapkan terima kasihlah di atas keprihatinan Dato’ Farahiyah di atas isu ini dan saya
 akan cuba melebarkan lagi pandangan beliau kepada pihak-pihak yang berkenaan. Sekian,
-terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1050,Datuk Dr. Lucas Umbul,"minta Menteri Pertanian dan Industri Asas Tani menyatakan,
+terima kasih.
+**3. Datuk Dr. Lucas Umbul** minta Menteri Pertanian dan Industri Asas Tani menyatakan,
 apakah langkah kementerian dalam konteks Dasar Keselamatan Makanan Negara bagi
 memastikan stok makanan asas mencukupi, serta sejauh manakah kebolehan kita untuk
 mengeluarkan produk makanan asas dalam negara agar tidak bergantung terus dengan
 bekalan makanan import dari luar negara."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1050,Menteri Pertanian dan Industri Asas Tani [Datuk Haji Salahuddin bin Ayub],"*Bismillahi Rahmani Rahim*. Terima kasih Tuan Yang di-Pertua, kawan lama saya*, long time no
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1050,1050,Menteri Pertanian dan Industri Asas Tani [Datuk Haji Salahuddin bin Ayub],"*Bismillahi Rahmani Rahim*. Terima kasih Tuan Yang di-Pertua, kawan lama saya*, long time no
 see,* dan terima kasih kepada Dr. Lucas, Yang Berhormat yang mengajukan soalan.
 Apabila kita bercakap tentang sekuriti makanan ini, ada empat komponen yang mesti
 kita pastikan. Pertama adalah tentang *availability,* keupayaan kita untuk menyediakan
@@ -439,7 +438,7 @@ keupayaan kita mencapai teknologi baru, memperkenalkan varieti baru yang kita pe
 daripada negara yang maju, maka kita mengharapkan tahap sara diri ataupun SSL kita
 mencapai 80 peratus menjelang 2020. Ini hasrat kita. Kalau kita tidak mencapai atau
 meletakkan unjuran ini, nanti kita bimbang kita tidak akan ke mana-mana."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1100,Menteri Pertanian dan Industri Asas Tani [Datuk Haji Salahuddin bin Ayub],"Kemudian kita akan meningkatkan populasi dari segi ternakan dominan. Saya sudah
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1100,1100,Menteri Pertanian dan Industri Asas Tani [Datuk Haji Salahuddin bin Ayub],"Kemudian kita akan meningkatkan populasi dari segi ternakan dominan. Saya sudah
 sebut walaupun projek NFC itu gagal tetapi kegagalan itu tidak bermakna kita tidak boleh,
 dengan izin, *move forward*. Ada banyak tanah satelit yang hari ini kita sedang tawarkan, di
 samping kepada *local players,* dengan izin, kita juga akan menjemput pemain-pemain ataupun
@@ -451,12 +450,12 @@ potensi yang sangat besar. Dalam lawatan kami baru-baru ini yang dipimpin oleh Y
 Berhormat Perdana Menteri ke China, kita akan berusaha sebaik mungkin untuk memastikan
 produk-produk kita ini dapat menembusi pasaran China yang sangat berpotensi itu. Terima
 kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1100,Datuk Dr. Lucas Umbul,"Terima kasih Tuan Yang di-Pertua. Sebelum mengajukan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1100,1100,Datuk Dr. Lucas Umbul,"Terima kasih Tuan Yang di-Pertua. Sebelum mengajukan
 soalan tambahan, saya mengambil kesempatan untuk mengalu-alukan kedatangan Persatuan
 Bekas Pelajar Sekolah-sekolah Tamil Parlimen Pagoh dan diharap lawatan ini akan memberi
 manfaat kepada tetamu yang hadir pada hari ini..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1100,ANNOTATION,[Tepuk]
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1100,Datuk Dr. Lucas Umbul,"Seterusnya, Tuan Yang di-Pertua, soalan tambahan saya kepada Yang Berhormat
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1100,1100,ANNOTATION,[Tepuk]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1100,1100,Datuk Dr. Lucas Umbul,"Seterusnya, Tuan Yang di-Pertua, soalan tambahan saya kepada Yang Berhormat
 Menteri. Terima kasih banyak. Sebelum itu saya mengucapkan terima kasih banyak atas
 penjelasan yang begitu komprehensif dan mudah difahami dalam Dewan yang mulia ini.
 Soalan tambahan saya, bagaimana kerajaan meningkatkan teknologi dalam industri beras
@@ -464,7 +463,7 @@ serta memulihkan segala masalah birokrasi berkaitan bekalan beras termasuk memik
 untuk meningkatkan bajet dan subsidi kepada golongan pesawah dan petani serta adakah
 kerajaan telah menubuhkan bank DNA makanan negara untuk keselamatan di masa akan
 datang? Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1100,Datuk Haji Salahuddin bin Ayub,"Tuan Yang di-Pertua, terima kasih kepada Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1100,1100,Datuk Haji Salahuddin bin Ayub,"Tuan Yang di-Pertua, terima kasih kepada Yang
 Berhormat Senator Datuk Dr. Lucas yang juga bertanya soalan yang sangat penting. Kerajaan
 di bawah kementerian ini, kita sedang mengkaji dengan teliti tentang beras yang merupakan
 bukan sekadar makanan ruji tetapi potensi untuk kita jadikan sebagai satu yang dikatakan
@@ -505,7 +504,7 @@ dianggap terbaik tetapi sekarang ini telah lahir lagi *variety-variety* yang ter
 Besar China, di Taiwan dan seumpamanya. Semua ini harus kita pelajari dengan cepat dan,
 *in syaa Allah,* kementerian akan sentiasa berfikir, merancang dan, *in syaa Allah,* cuba memacu
 pertanian ini untuk kepentingan bersama pada masa akan datang. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1100,Tuan Chandra Mohan a/l S.Thambirajah,"Terima kasih Tuan Yang di-Pertua. Saya
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1100,1100,Tuan Chandra Mohan a/l S.Thambirajah,"Terima kasih Tuan Yang di-Pertua. Saya
 beralih sedikit dari beras kepada ikan. Kalau kita tengok dari segi perbekalan ikan, satu
 kegiatan yang memberi *effect* sekurang-kurangnya tiga komponen dari segi *availability,
 accessibility* dan kualiti makanan ialah kegiatan di mana sebahagian besar ikan yang ditangkap
@@ -513,7 +512,7 @@ di perairan negara kita ini tidak didaratkan di sini. Ia *traded* di laut mungki
 dan sebagainya. Apakah langkah-langkah kementerian, mungkin bekerjasama dengan lain-
 lain kementerian untuk mengurangkan kejadian macam ini? Saya tahu susah tetapi untuk
 mengawal keadaan macam ini. Terima kasih Tuan Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1100,Datuk Haji Salahuddin bin Ayub,"Terima kasih Yang Berhormat Senator di atas
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1100,1100,Datuk Haji Salahuddin bin Ayub,"Terima kasih Yang Berhormat Senator di atas
 soalan itu. Ada dua aspek yang mesti kita perhatikan. Pertama, tentang *strength* kementerian
 sendiri yang saya mesti akui bahawa LKIM pada masa akan datang mesti memastikan jeti-jeti
 kita mesti *up-to-date,* dengan izin. Ada beberapa jeti kita yang saya perhatikan walaupun baru
@@ -532,12 +531,12 @@ ditingkatkan.
 Ketiga, tentang penguatkuasaan. Kita ada maritim kita tetapi secara jujurnya,
 kekuatan maritim kita belum mencapai tahap yang membanggakan kerana keluasan pantai
 kita dan juga kelengkapan mereka dan aset mereka masih perlu ditingkatkan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1110,Datuk Haji Salahuddin bin Ayub,"Ini memerlukan bajet yang besar dan kapal-kapal ini mereka suka *trading* tengah laut.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1110,1110,Datuk Haji Salahuddin bin Ayub,"Ini memerlukan bajet yang besar dan kapal-kapal ini mereka suka *trading* tengah laut.
 Jual diesel, mereka jual ikan dan berlaku penyeludupan yang merugikan negara. Jadi, daripada
 aspek dalaman dari segi kementerian, saya akui ada perkara yang mesti diperbetulkan dan
 ada yang berkaitan dengan kementerian yang lain seperti JPM, APM yang kita perlu tingkatkan
 dari semasa ke semasa. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1110,Datuk Lim Pay Hen,"Boleh saya tanya satu soalan mengenai Kementerian Pertanian
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1110,1110,Datuk Lim Pay Hen,"Boleh saya tanya satu soalan mengenai Kementerian Pertanian
 dan Industri Asas Tani? Saya hendak alihkan pertanyaan saya kepada pengimportan lembu.
 Seperti yang kita sedia maklum, kaum Muslim baru-baru ini telah meraikan Hari Raya Haji iaitu
 hari korban. Kita mengimport beribu-ribu ekor lembu daripada negara luar sedangkan padang
@@ -545,7 +544,7 @@ ragut di negara kita saya rasa banyak terbiar.
 Saya hendak tanya, apakah rancangan Kementerian Pertanian dan Industri Asas Tani
 itu pada masa depan untuk menambahkan pembelaan lembu masa depan untuk
 mengurangkan pengimport lembu daripada negara luar? Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,3.,,1110,Datuk Haji Salahuddin bin Ayub,"Terima kasih Tuan Yang di-Pertua. Izinkan untuk
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1110,1110,Datuk Haji Salahuddin bin Ayub,"Terima kasih Tuan Yang di-Pertua. Izinkan untuk
 tambah. Saya bangga dengan Yang Berhormat walaupun seorang yang mungkin bukan Islam
 tetapi bercakap tentang keperluan korban lembu. Saya rasa ini satu budaya yang baik, kita
 saling semakin memahami dan Dewan Negara dan Dewan Parlimen ini menjadi semakin
@@ -564,11 +563,11 @@ dengan pemain-pemain luar negara yang benar-benar berkompeten dan profesional, y
 menjadi *booster*. Jadi, kombinasi di antara pelaburan luar dengan kecekapan pemain-pemain
 tempatan ini akan kita sinergikan untuk kita pastikan kita dapat mencapai matlamat, paling
 tidak pun kita dapat membekalkan 30 peratus bekalan daging tempatan pada masa akan
-datang. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1110,Datuk Jamilah Sulaiman,"minta Perdana Menteri menyatakan, adakah kerajaan akan
+datang. Terima kasih.
+**4. Datuk Jamilah Sulaiman** minta Perdana Menteri menyatakan, adakah kerajaan akan
 menilai semula Dasar Pendidikan Tahfiz Negara bagi meningkatkan prestasi sekolah tahfiz
 dan memperbaiki pentadbiran yang sedia ada terutama daripada aspek bantuan kewangan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1110,Timbalan Menteri di Jabatan Perdana Menteri [Puan Fuziah binti Salleh],"*Bismillahir Rahmanir Rahim.* Terima kasih Tuan Yang di-Pertua. Terima kasih kepada Datuk
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1110,1110,Timbalan Menteri di Jabatan Perdana Menteri [Puan Fuziah binti Salleh],"*Bismillahir Rahmanir Rahim.* Terima kasih Tuan Yang di-Pertua. Terima kasih kepada Datuk
 Jamilah Sulaiman yang bertanyakan soalan.
 Tuan Yang di-Pertua, Kerajaan Pakatan Harapan pada hari ini sangat komited dan
 mengambil berat perkembangan pendidikan tahfiz dan akan meneruskan pelaksanaan Dasar
@@ -641,15 +640,15 @@ PBT dan sebagainya. Ini boleh menimbulkan masalah dan dari sudut keselamatan pel
 pelajar terutamanya. Jadi, penting bagi orang ramai untuk memahami keadaan ini dan
 membantu kita menjalankan garis panduan yang kita tetapkan. Setakat itu, terima kasih Tuan
 Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1120,Tuan Yang di-Pertua,"Yang Berhormat Menteri, kerajaan tidak memberi bantuan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1120,1120,Tuan Yang di-Pertua,"Yang Berhormat Menteri, kerajaan tidak memberi bantuan
 kewangan kepada sekolah-sekolah tahfiz secara terus?"
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1120,Puan Fuziah binti Salleh,"Tuan Yang di-Pertua, seperti yang saya maklumkan tadi,
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1120,1120,Puan Fuziah binti Salleh,"Tuan Yang di-Pertua, seperti yang saya maklumkan tadi,
 sekolah-sekolah tahfiz di bawah kawal selia majlis agama negeri. Jadi, memang ada bantuan
 daripada pihak kerajaan..."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1120,Tuan Yang di-Pertua,Kerajaan negeri.
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1120,Puan Fuziah binti Salleh,"Pihak kerajaan negeri. Akan tetapi, ia bukan sesuatu yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1120,1120,Tuan Yang di-Pertua,Kerajaan negeri.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1120,1120,Puan Fuziah binti Salleh,"Pihak kerajaan negeri. Akan tetapi, ia bukan sesuatu yang
 selaras dan inilah sesuatu yang kita harus lihat dalam masa ke hadapan. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1120,Datuk Jamilah Sulaiman,"Terima kasih kepada Tuan Yang di-Pertua dan terima
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1120,1120,Datuk Jamilah Sulaiman,"Terima kasih kepada Tuan Yang di-Pertua dan terima
 kasih kepada Yang Berhormat Menteri yang telah memberi penjelasan. Namun saya ingin
 bertanya, sekiranya Yang Berhormat Menteri tidak ada fakta ataupun jumlah itu, bolehlah
 membuat jawapan dalam bertulis.
@@ -662,7 +661,7 @@ keselamatan pelajar dan sekolah yang lebih terjamin.
 Keduanya, selain daripada itu, adakah kerajaan melakukan pemantauan yang
 secukupnya terhadap sekolah-sekolah tahfiz ataupun madrasah bagi mengelak penularan
 ideologi pengganas dan ajaran sesat? Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1120,Puan Fuziah binti Salleh,"Terima kasih kepada Yang Berhormat Senator kerana di
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1120,1120,Puan Fuziah binti Salleh,"Terima kasih kepada Yang Berhormat Senator kerana di
 atas soalan tadi. Ya, kita sama-sama amat prihatin berkenaan dengan isu keselamatan. Tuan
 Yang di-Pertua, berdasarkan data dalam Sistem Maklumat Pendidikan Islam (SIMPENI) yang
 diselaraskan oleh JAKIM sehingga Januari 2016 dan seterusnya, terdapat 28 buah sekolah
@@ -692,7 +691,7 @@ dan memang saya akui keselamatan anak-anak nombor satu. Seperti yang kita lihat 
 berlaku, kebakaran besar di Keramat baru-baru ini, memang tidak berdaftar. Tidak berdaftar
 dan memang merisaukan kita kerana keadaan itu berterusan. Terima kasih, Tuan Yang di-
 Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1120,Tuan Haji Muhammad bin Mustafa,"Terima kasih, Tuan Yang di-Pertua. Terima
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1120,1120,Tuan Haji Muhammad bin Mustafa,"Terima kasih, Tuan Yang di-Pertua. Terima
 kasih, Yang Berhormat Menteri.
 Saya ada satu soalan tambahan. Sesuai dengan al-Quran sebagai Kalamullah Yang
 Maha Agong, sebagai perlembagaan universal seluruh alam dan insan dan sesuai dengan
@@ -707,7 +706,7 @@ Soalan kedua, adakah kerajaan bercadang untuk mengadakan Fakulti Tahfiz Al-
 Quran dan Ilmu Wahyu di universiti-universiti awam bagi melahirkan lebih ramai para huffaz
 kontemporari yang memberi sumbangan yang besar kepada pembangunan insan dan
 kemajuan negara? Sekian, terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1120,Puan Fuziah binti Salleh,"Tuan Yang di-Pertua, terima kasih. Soalan tadi Yang
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1120,1120,Puan Fuziah binti Salleh,"Tuan Yang di-Pertua, terima kasih. Soalan tadi Yang
 Berhormat Senator, sebenarnya memang soalan untuk Kementerian Pendidikan, bukan soalan
 untuk Jabatan Perdana Menteri. Akan tetapi daripada pihak kami di Jabatan Perdana Menteri,
 kami komited untuk memastikan bahawa sekolah-sekolah tahfiz ini dapat kita selaraskan
@@ -720,7 +719,7 @@ tidak ketinggalan sekiranya mereka hendak masuk universiti. Daripada pihak kami,
 kami sedang lakukan dalam Dasar Pendidikan Tahfiz Negara. Akan tetapi soalan-soalan Yang
 Berhormat Senator tadi, saya kira wajar dijawab oleh Menteri Pendidikan. Terima kasih, Tuan
 Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1120,Dr. Mohd Nor bin Haji Monutty,"Tuan Yang di-Pertua, terima kasih.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1120,1120,Dr. Mohd Nor bin Haji Monutty,"Tuan Yang di-Pertua, terima kasih.
 Sebelum saya buat soalan kepada Yang Berhormat Timbalan Menteri, saya hendak
 ucapkan tahniah kerana Yang Berhormat Timbalan Menteri telah dilantik sebagai seorang
 Timbalan Menteri yang melibatkan diri dalam JAKIM dan urusan-urusan Islam yang lain.
@@ -735,10 +734,10 @@ penting ialah dari segi *supervision,* dengan izin, kurikulumnya supaya orang-or
 dalam tahfiz ini dapat menepati apa yang kita kehendaki. Adakah masa diberikan, katakanlah
 lima tahun oleh JAKIM, untuk melihat bahawa dasar ini diterima oleh semua pihak termasuk
 yang di bawah kawalan kerajaan dan juga di peringkat swasta? Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1120,Puan Fuziah binti Salleh,"Terima kasih, Yang Berhormat Senator Dr. Mohd Nor.
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1120,1120,Puan Fuziah binti Salleh,"Terima kasih, Yang Berhormat Senator Dr. Mohd Nor.
 Tuan Yang di-Pertua, pihak JAKIM akan cuba sedaya upaya untuk memastikan bahawa ada
 kawal selia dan sebagainya."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,4.,,1130,Puan Fuziah binti Salleh,"Saya sebenarnya apabila mengambil alih portfolio ini melihat antara tugas utama ialah
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1130,1130,Puan Fuziah binti Salleh,"Saya sebenarnya apabila mengambil alih portfolio ini melihat antara tugas utama ialah
 untuk menyediakan *task force- task force* khas untuk tahfiz, dan juga *task force* khas untuk
 KAFA, sebab terlalu banyak yang perlu dilakukan. Masalah, saya tak suka bercerita tentang
 masalah.
@@ -752,14 +751,14 @@ pejabat dalam sebulan lebih. Ini antara cadangan-cadangan yang akan saya lihat s
 khusus, memang di bawah Timbalan Menteri. Memang kita bahagi-bahagikan tugasan ini dan
 kita akan melihat kepada *task force* khusus yang akan ditubuhkan. Yang Berhormat Senator
 juga boleh terlibat sama di dalam memberi pandangan-pandangan nanti. Terima kasih Tuan
-Yang di-Pertua."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1130,Datuk Mohan a/l Thangarasu,"minta Menteri Dalam Negeri menyatakan, apakah
+Yang di-Pertua.
+**5. Datuk Mohan a/l Thangarasu** minta Menteri Dalam Negeri menyatakan, apakah
 status sebenar individu yang tidak mempunyai dokumen pengenalan diri di Malaysia. Ini kerana
 sebelum PRU14, YB Menteri Tenaga Manusia berkata, seramai 300,000 penduduk India di
 Malaysia tidak mempunyai dokumen pengenalan diri. Berapakah jumlah sebenarnya penduduk
 India yang tidak mempunyai dokumen pengenalan diri, dan apakah langkah yang telah diambil
 untuk mengatasinya."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1130,Timbalan Menteri Dalam Negeri [Dato’ Mohd Azis bin Jamman],"Terima kasih
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1130,1130,Timbalan Menteri Dalam Negeri [Dato’ Mohd Azis bin Jamman],"Terima kasih
 Tuan Yang di-Pertua. Terima kasih Yang Berhormat Senator.
 Kementerian Dalam Negeri melalui Jabatan Pendaftaran Negara bertanggungjawab
 mendaftar rekod berkaitan urusan dokumen pengenalan diri, kelahiran, kematian, perkahwinan
@@ -777,7 +776,7 @@ Negeri melalui Jabatan Pendaftaran Negara sentiasa mengambil langkah proaktif da
 memastikan pendaftaran dokumen pengenalan diri individu yang berkelayakan dapat
 dilaksanakan dengan mudah di seluruh negara melalui inisiatif berterusan seperti berikut, yakni
 program turun padang, *outreach* program, unit *mobile*, dan bas *mobile*. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1130,Datuk Mohan a/l Thangarasu,"Terima kasih Tuan Yang di-Pertua. Soalan tambahan
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1130,1130,Datuk Mohan a/l Thangarasu,"Terima kasih Tuan Yang di-Pertua. Soalan tambahan
 saya, terima kasih kepada Yang Berhormat atas penjelasan yang diberi.
 Soalan tambahan saya ialah sebagaimana yang diketahui umum dalam PRU14
 Pakatan Harapan telah heboh dengan mendakwa bahawa terdapat 300,000 orang di kalangan
@@ -790,13 +789,13 @@ nilai yang jauh lebih kecil.
 Okey, yang mana apa yang saya tahu cuma dia kata 3,000 lebih sahaja, sebelum ini
 dia kata, heboh-heboh kata ,“300,000”, “300,000”, “300,000”. Saya hendak tahu penjelasan
 Yang Berhormat."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1130,Tuan Yang di-Pertua,"Yang Berhormat Timbalan Menteri, itu bukan statistik dari
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1130,1130,Tuan Yang di-Pertua,"Yang Berhormat Timbalan Menteri, itu bukan statistik dari
 Kementerian Dalam Negeri. Itu terpulang kepada Yang Berhormat untuk menjawab."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1130,Datuk Mohan a/l Thangarasu,"Tuan Yang di-Pertua, memang bukan statistik tetapi
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1130,1130,Datuk Mohan a/l Thangarasu,"Tuan Yang di-Pertua, memang bukan statistik tetapi
 yang dikeluarkan adalah Menteri sekarang."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1130,Tuan Yang di-Pertua,"Yang Berhormat, Yang Berhormat memang saya faham
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1130,1130,Tuan Yang di-Pertua,"Yang Berhormat, Yang Berhormat memang saya faham
 soalan. Silakan Yang Berhormat Timbalan Menteri."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1130,Dato’ Mohd Azis bin Jamman,"Sebagaimana Tuan Yang di-Pertua nyatakan tadi ini
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1130,1130,Dato’ Mohd Azis bin Jamman,"Sebagaimana Tuan Yang di-Pertua nyatakan tadi ini
 merupakan soalan yang tidak melibatkan kementerian sebenarnya dari sudut kebenaran dia.
 Apa yang disebutkan, saya faham.
 Ahli Yang Berhormat berkenaan telah nyatakan sebelum pilihan raya merupakan satu
@@ -804,16 +803,16 @@ angka yang diambil daripada Ahli-ahli Parlimen Pembangkang pada masa itu. Jadi *
 angka itu tidak *accurate* dan tidak benar, dan hari ini saya berada di dalam Dewan Negara ini
 menyatakan jumlah sebenar berkenaan dengan status *undocumented,* dengan izin
 masyarakat suku kaum India yang ada di negara kita. Terima kasih."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1130,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat masa sudah cukup untuk soalan-
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1130,1130,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat masa sudah cukup untuk soalan-
 soalan bagi jawab lisan."
-JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,5.,,1130,ANNOTATION,[Masa untuk Pertanyaan-pertanyaan bagi Jawab Lisan tamat]
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,"1. Dato' Mohd Suhaimi bin Abdullah minta Menteri Pembangunan Wanita, Keluarga",,■1130,1130,ANNOTATION,[Masa untuk Pertanyaan-pertanyaan bagi Jawab Lisan tamat]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN
 (PENGUNTUKAN SEMULA PERUNTUKAN PERBELANJAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1130,Tuan Yang di-Pertua,"Dipersilakan Yang Berhormat Menteri. Silakan Yang
+Bacaan Kali Yang Kedua dan Ketiga",,■1130,1130,Tuan Yang di-Pertua,"Dipersilakan Yang Berhormat Menteri. Silakan Yang
 Berhormat Menteri kewangan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN
 (PENGUNTUKAN SEMULA PERUNTUKAN PERBELANJAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1136,Menteri Kewangan [Tuan Lim Guan Eng],"Ya, terima kasih Tuan Yang di-Pertua.
+Bacaan Kali Yang Kedua dan Ketiga",,11.36 pg.,1136,Menteri Kewangan [Tuan Lim Guan Eng],"Ya, terima kasih Tuan Yang di-Pertua.
 Tuan Yang di-Pertua, saya mohon untuk mencadangkan rang undang-undang yang bernama
 suatu akta bagi menggunakan sejumlah wang daripada Kumpulan Wang Yang Disatukan
 untuk perbelanjaan bagi perkhidmatan untuk sebahagian dari tahun 2018 bagi
@@ -821,10 +820,10 @@ memperuntukkan jumlah wang ini untuk maksud-maksud yang tertentu bagi bahagian t
 itu dibaca kali yang kedua sekarang."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN
 (PENGUNTUKAN SEMULA PERUNTUKAN PERBELANJAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1136,Tuan Yang di-Pertua,Dipersilakan Yang Berhormat Menteri.
+Bacaan Kali Yang Kedua dan Ketiga",,11.36 pg.,1136,Tuan Yang di-Pertua,Dipersilakan Yang Berhormat Menteri.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN
 (PENGUNTUKAN SEMULA PERUNTUKAN PERBELANJAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1136,Tuan Lim Guan Eng,"Terima kasih Tuan Yang di-Pertua. Tuan Yang di-Pertua,
+Bacaan Kali Yang Kedua dan Ketiga",,11.36 pg.,1136,Tuan Lim Guan Eng,"Terima kasih Tuan Yang di-Pertua. Tuan Yang di-Pertua,
 penguntukan semula peruntukan perbelanjaan tahun 2018 dibentangkan menurut Perkara
 100, dan 101 Perlembagaan Persekutuan iaitu bagi memperoleh kelulusan terhadap
 peruntukan perbelanjaan kementerian yang disusun semula selaras dengan penyusunan
@@ -854,7 +853,7 @@ kementerian ini telah diberi kod maksud bekalan baru dalam rang undang-undang in
 dan B.26 masing-masing."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN
 (PENGUNTUKAN SEMULA PERUNTUKAN PERBELANJAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1140,Tuan Lim Guan Eng,"Kementerian Pendidikan dan Kementerian Pendidikan Tinggi telah digabungkan
+Bacaan Kali Yang Kedua dan Ketiga",,■1140,1140,Tuan Lim Guan Eng,"Kementerian Pendidikan dan Kementerian Pendidikan Tinggi telah digabungkan
 menjadi Kementerian Pendidikan tetapi mengekalkan Maksud B.63 – Pendidikan, dan B.64 –
 Pendidikan Tinggi.
 Manakala B.29 – Kementerian Tenaga, Teknologi Hijau dan Air telah dibubarkan
@@ -894,10 +893,10 @@ dibelanjakan sehingga 1 Julai 2018 kepada kementerian asal. Sekatan ini dilakuka
 Perenggan 13(3)(B) Akta Tatacara Kewangan 1957"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN
 (PENGUNTUKAN SEMULA PERUNTUKAN PERBELANJAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1140,ANNOTATION,[Akta 61]
+Bacaan Kali Yang Kedua dan Ketiga",,■1140,1140,ANNOTATION,[Akta 61]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN
 (PENGUNTUKAN SEMULA PERUNTUKAN PERBELANJAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1140,Tuan Lim Guan Eng,".
+Bacaan Kali Yang Kedua dan Ketiga",,■1140,1140,Tuan Lim Guan Eng,".
 Jumlah peruntukan perbelanjaan mengurus 2018 yang disekat adalah sebanyak
 RM3,065,113,896. Jumlah yang sama juga telah dicadangkan untuk diberi peruntukan semula
 kepada kementerian-kementerian yang menerima program-program tersebut.
@@ -978,7 +977,7 @@ Jabatan Perdana Menteri dan Kementerian Belia dan Sukan khususnya Institut Kemah
 Belia Negara."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN
 (PENGUNTUKAN SEMULA PERUNTUKAN PERBELANJAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1150,Tuan Lim Guan Eng,"Peruntukan sebanyak RM73,458,392 di bawah Maksud B.47 – Kementerian
+Bacaan Kali Yang Kedua dan Ketiga",,■1150,1150,Tuan Lim Guan Eng,"Peruntukan sebanyak RM73,458,392 di bawah Maksud B.47 – Kementerian
 Komunikasi dan Multimedia untuk membiayai perbelanjaan program yang telah dipindahkan
 daripada Jabatan Perdana Menteri, Perkhidmatan Am Perbendaharaan serta Kementerian
 Tenaga, Sains, Teknologi, Alam Sekitar dan Perubahan Iklim.
@@ -1027,15 +1026,15 @@ bersama sebagai rakyat Malaysia. Menjelang perayaan Hari Kemerdekaan, saya ingin
 mencadangkan, *‘Sayangi Malaysiaku’.* Sekian."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN
 (PENGUNTUKAN SEMULA PERUNTUKAN PERBELANJAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1150,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Menteri Kewangan. Ada yang
+Bacaan Kali Yang Kedua dan Ketiga",,■1150,1150,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Menteri Kewangan. Ada yang
 bersetuju, menyokong?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN
 (PENGUNTUKAN SEMULA PERUNTUKAN PERBELANJAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1150,Timbalan Menteri Hal Ehwal Ekonomi [Dr. Mohd Radzi bin Md. Jidin],"Tuan Yang
+Bacaan Kali Yang Kedua dan Ketiga",,■1150,1150,Timbalan Menteri Hal Ehwal Ekonomi [Dr. Mohd Radzi bin Md. Jidin],"Tuan Yang
 di-Pertua, saya mohon menyokong Usul tersebut."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN
 (PENGUNTUKAN SEMULA PERUNTUKAN PERBELANJAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1150,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, masalah di hadapan Majlis ialah
+Bacaan Kali Yang Kedua dan Ketiga",,■1150,1150,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, masalah di hadapan Majlis ialah
 rang undang-undang bernama suatu akta bagi menggunakan sejumlah wang daripada
 Kumpulan Wang Disatukan untuk perbelanjaan bagi perkhidmatan untuk sebahagian daripada
 Tahun 2018 dan bagi memperuntukkan sejumlah wang itu untuk maksud-maksud yang tertentu
@@ -1043,7 +1042,7 @@ bagi bahagian tahun itu dibacakan kali yang kedua sekarang dan terbuka untuk dib
 Silakan Yang Berhormat Senator Datuk Rabiyah binti Ali."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN
 (PENGUNTUKAN SEMULA PERUNTUKAN PERBELANJAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1157,Datuk Rabiyah binti Ali,"Terima kasih Tuan Yang di-Pertua kerana memberikan izin
+Bacaan Kali Yang Kedua dan Ketiga",,11.57 pg.,1157,Datuk Rabiyah binti Ali,"Terima kasih Tuan Yang di-Pertua kerana memberikan izin
 kepada saya untuk turut membahaskan rang undang-undang D.R.15/2018, Akta Perbekalan,
 Penguntukan Semula Peruntukan Perbelanjaan 2018.
 Saya mengambil kesempatan di sini untuk mengucapkan tahniah kepada 12 orang
@@ -1082,7 +1081,7 @@ ekosistem sumber air mentah agar ia tidak dicemari dan memerlukan kos yang tingg
 dibersihkan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN
 (PENGUNTUKAN SEMULA PERUNTUKAN PERBELANJAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1200,Datuk Rabiyah binti Ali,"Tuan Yang di-Pertua, Program Pengupayaan Komuniti Luar Bandar amat seiring
+Bacaan Kali Yang Kedua dan Ketiga",,■1200,1200,Datuk Rabiyah binti Ali,"Tuan Yang di-Pertua, Program Pengupayaan Komuniti Luar Bandar amat seiring
 dengan kenaikan kos sara hidup dan penurunan nilai mata wang RM berbanding USD kini
 yang menyebabkan harga bekalan makanan mentah meningkat dan juga kos bagi
 mengeluarkan industri desa, meningkat.
@@ -1115,11 +1114,11 @@ bukan koperasi menaikkan harga barangan pasca SST dilaksanakan dalam tempoh pera
 GST ke SST distabilkan. Sekian, terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN
 (PENGUNTUKAN SEMULA PERUNTUKAN PERBELANJAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1200,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat Senator Datuk Rabiyah
+Bacaan Kali Yang Kedua dan Ketiga",,■1200,1200,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat Senator Datuk Rabiyah
 binti Ali. Sekarang saya menjemput pula Yang Berhormat Senator Datuk Lim Pay Hen. Silakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN
 (PENGUNTUKAN SEMULA PERUNTUKAN PERBELANJAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1203,Datuk Lim Pay Hen,"Salam sejahtera dan salam ‘Sayangi Malaysiaku’.
+Bacaan Kali Yang Kedua dan Ketiga",,12.03 tgh.,1203,Datuk Lim Pay Hen,"Salam sejahtera dan salam ‘Sayangi Malaysiaku’.
 Saya ingin mengucapkan terima kasih kepada Tuan Yang di-Pertua kerana
 memberikan peluang untuk saya berbahas Rang Undang-undang Perbekalan (Penguntukan
 Semula Peruntukan Perbelanjaan) 2018. Saya juga ingin hendak mengucapkan tahniah
@@ -1185,7 +1184,7 @@ Bumiputera (TERAJU) daripada Jabatan Perdana Menteri. Rombakan jabatan dan agens
 diperlihatkan menjangkaui Jabatan Perdana Menteri."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN
 (PENGUNTUKAN SEMULA PERUNTUKAN PERBELANJAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1210,Datuk Lim Pay Hen,"Ini adalah jelas apabila agensi seperti Lembaga Pembangunan Langkawi dan
+Bacaan Kali Yang Kedua dan Ketiga",,■1210,1210,Datuk Lim Pay Hen,"Ini adalah jelas apabila agensi seperti Lembaga Pembangunan Langkawi dan
 Perbadanan Kemajuan Negeri seperti Johor di bawah Kementerian Kewangan. Segala
 program promosi halal Malaysia di bawah Kementerian Perdagangan Antarabangsa dan
 Industri, Majlis Amanah Rakyat (MARA), Lembaga Pemulihan dan Penyatuan Tanah
@@ -1244,14 +1243,14 @@ rakyat. Saya dengan ini menyokong Rang Undang-undang Perbekalan (Penguntukan Sem
 Peruntukan Perbelanjaan) 2018. Sekian, terima kasih"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN
 (PENGUNTUKAN SEMULA PERUNTUKAN PERBELANJAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1210,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat Senator Datuk Lim Pay
+Bacaan Kali Yang Kedua dan Ketiga",,■1210,1210,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat Senator Datuk Lim Pay
 Hen, Ahli Yang Berhormat, jika ada Ahli Yang Berhormat hendak berbahas saya terima lagi?
 Nama-nama siapa yang hendak ambil bahagian dalam rang undang-undang ini.
 Sekarang saya jemput pula Yang Berhormat Senator Dato' Hajah Fahariyah binti Haji
 Md Nordin."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN
 (PENGUNTUKAN SEMULA PERUNTUKAN PERBELANJAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1215,Dato' Hajah Fahariyah binti Haji Md Nordin,"*Bismillahir Rahmanir Rahim*. Terima
+Bacaan Kali Yang Kedua dan Ketiga",,12.15 tgh.,1215,Dato' Hajah Fahariyah binti Haji Md Nordin,"*Bismillahir Rahmanir Rahim*. Terima
 kasih kepada Tuan Yang di-Pertua, terima kasih juga kerana memberikan peluang kepada
 saya untuk turut serta dalam membahaskan Rang Undang-undang Perbekalan (Penguntukan
 Semula Peruntukan Perbelanjaan) 2018 seiring dengan pembentukan Kabinet baharu
@@ -1302,7 +1301,7 @@ dan sebagainya. Apabila mata wang kita tidak kuat, dengan Ringgit yang sangat re
 akan membebankan mereka yang mungkin sedang belajar."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN
 (PENGUNTUKAN SEMULA PERUNTUKAN PERBELANJAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1220,Dato' Hajah Fahariyah binti Haji Md Nordin,"Tuan Yang di-Pertua, seterusnya saya ingin bertanya berkenaan dengan
+Bacaan Kali Yang Kedua dan Ketiga",,■1220,1220,Dato' Hajah Fahariyah binti Haji Md Nordin,"Tuan Yang di-Pertua, seterusnya saya ingin bertanya berkenaan dengan
 Kementerian Pembangunan Usahawan. Ini kerana saya percaya hasrat dan sasaran kerajaan
 untuk memastikan sektor keusahawanan menjadi teras dalam menyumbang kepada
 pertumbuhan KDNK negara. Justeru, fokus pembangunan ekonomi bumiputera, dan PKS
@@ -1345,13 +1344,13 @@ peruntukan perbelanjaan yang telah dibentangkan?
 Sekian, Tuan Yang di-Pertua, terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN
 (PENGUNTUKAN SEMULA PERUNTUKAN PERBELANJAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1220,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat Senator Dato’ Hajah
+Bacaan Kali Yang Kedua dan Ketiga",,■1220,1220,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat Senator Dato’ Hajah
 Fahariyah binti Haji Md Nordin.
 Sekarang saya jemput pula Yang Berhormat Senator Datuk Sambathan a/l
 Manickam. Dipersilakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN
 (PENGUNTUKAN SEMULA PERUNTUKAN PERBELANJAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1223,Datuk Sambathan a/l Manickam,"Terima kasih kepada Tuan Yang di-Pertua Dewan
+Bacaan Kali Yang Kedua dan Ketiga",,12.23 tgh.,1223,Datuk Sambathan a/l Manickam,"Terima kasih kepada Tuan Yang di-Pertua Dewan
 Negara kerana telah memberikan peluang kepada saya untuk membahaskan rang undang-
 undang berkaitan 2018. Sebelum saya berbahas, saya ucapkan tahniah kepada Ahli-ahli
 Senator yang telah mengangkat sumpah pada hari ini.
@@ -1407,12 +1406,12 @@ Harapan agar terus memberi bantuan dan juga pertolongan kepada masyarakat India 
 Sekian, terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN
 (PENGUNTUKAN SEMULA PERUNTUKAN PERBELANJAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1223,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat Senator Datuk Sambathan
+Bacaan Kali Yang Kedua dan Ketiga",,12.23 tgh.,1223,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat Senator Datuk Sambathan
 a/l Manickam. Sekarang saya menjemput Yang Berhormat Senator Datin Rahimah binti Haji
 Mahamad. Dipersilakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN
 (PENGUNTUKAN SEMULA PERUNTUKAN PERBELANJAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1230,Datin Rahimah binti Haji Mahamad,"*Assalamualaikum warahmatullahi wabarakatuh*
+Bacaan Kali Yang Kedua dan Ketiga",,12.30 tgh.,1230,Datin Rahimah binti Haji Mahamad,"*Assalamualaikum warahmatullahi wabarakatuh*
 dan salam sejahtera. Terima kasih, Tuan Yang di-Pertua kerana memberi kebenaran untuk
 saya turut serta dalam membahaskan Rang Undang-undang Perbekalan- Penguntukan
 Semula Peruntukan Perbelanjaan 2018.
@@ -1474,12 +1473,12 @@ institusi zakat agar bantuan dapat disalurkan kepada pelajar-pelajar ini? Sekian
 Saya mohon menyokong."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN
 (PENGUNTUKAN SEMULA PERUNTUKAN PERBELANJAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1230,Timbalan Yang di-Pertua,"Terima kasih, Yang Berhormat Senator Datin Rahimah
+Bacaan Kali Yang Kedua dan Ketiga",,12.30 tgh.,1230,Timbalan Yang di-Pertua,"Terima kasih, Yang Berhormat Senator Datin Rahimah
 binti Haji Mahamad dan lagi seorang, kita minta Yang Berhormat Senator Tuan Chandra
 Mohan a/l S.Thambirajah. Silakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN
 (PENGUNTUKAN SEMULA PERUNTUKAN PERBELANJAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1236,Tuan Chandra Mohan a/l S.Thambirajah,"Terima kasih, Tuan Yang di-Pertua. Satu
+Bacaan Kali Yang Kedua dan Ketiga",,12.36 tgh.,1236,Tuan Chandra Mohan a/l S.Thambirajah,"Terima kasih, Tuan Yang di-Pertua. Satu
 sahaja poin yang saya hendak bawa tetapi bukan banyak fokus kepada hari ini. Hari ini kalau
 kita tengok ia cuma *realignment* dan sebagainya, bukan *supplementary budget*.
 Akan tetapi, saya hendak menyentuh satu isu. Kalau kita tengok sebelum ini kalau
@@ -1513,7 +1512,7 @@ memuaskan, itu satu. Kedua, berkenaan dengan defisit bajet. Terima kasih, Tuan Y
 Pertua."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN
 (PENGUNTUKAN SEMULA PERUNTUKAN PERBELANJAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1240,Timbalan Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Tuan Chandra
+Bacaan Kali Yang Kedua dan Ketiga",,■1240,1240,Timbalan Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Tuan Chandra
 Mohan. Itulah akhirnya**,** enam orang hari ini. Saya rasa tidak terlambat untuk saya
 mengucapkan syabas dan tahniah kepada 12 orang Ahli Dewan Negara yang mengangkat
 sumpah tadi.
@@ -1527,7 +1526,7 @@ Sekarang saya menjemput Yang Berhormat Menteri menjawab. Dipersilakan Yang
 Berhormat Menteri."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN
 (PENGUNTUKAN SEMULA PERUNTUKAN PERBELANJAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1240,Menteri Kewangan [Tuan Lim Guan Eng],"Terima kasih Tuan Yang di-Pertua. Saya
+Bacaan Kali Yang Kedua dan Ketiga",,12.40 tgh.,1240,Menteri Kewangan [Tuan Lim Guan Eng],"Terima kasih Tuan Yang di-Pertua. Saya
 ingin ucapkan terima kasih kepada enam Yang Berhormat Senator yang telah mengambil
 bahagian iaitu Yang Berhormat Senator Datuk Rabiyah, Yang Berhormat Senator Datin
 Rahimah; Yang Berhormat Senator Datuk Lim Pay Hen; Yang Berhormat Senator Dato' Hajah
@@ -1606,7 +1605,7 @@ sama memperkasakan ekonomi. Tentulah belanjawan akan dibentangkan oleh Menteri
 Kewangan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN
 (PENGUNTUKAN SEMULA PERUNTUKAN PERBELANJAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1250,Menteri Kewangan [Tuan Lim Guan Eng],"Akan tetapi pada masa yang sama, apabila kita lihat masalah utama ialah seperti
+Bacaan Kali Yang Kedua dan Ketiga",,■1250,1250,Menteri Kewangan [Tuan Lim Guan Eng],"Akan tetapi pada masa yang sama, apabila kita lihat masalah utama ialah seperti
 yang kita sebut sebelum ini. Manifesto- kita asingkan jawatan Perdana Menteri dengan Menteri
 Kewangan, jangan-jangan kedua-dua jawatan yang penting ini dipegang oleh orang yang
 sama. *So,* itu lah sebabnya sekarang Perdana Menteri tidak memegang jawatan Menteri
@@ -1657,13 +1656,13 @@ urusan pentadbiran dan untuk memastikan bahawa proses dan prosedur boleh berjala
 lancar, itulah maksudnya. *So* di sini saya..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN
 (PENGUNTUKAN SEMULA PERUNTUKAN PERBELANJAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1250,Dato’ Haji Mohd Suhaimi bin Abdullah,Mohon mencelah.
+Bacaan Kali Yang Kedua dan Ketiga",,■1250,1250,Dato’ Haji Mohd Suhaimi bin Abdullah,Mohon mencelah.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN
 (PENGUNTUKAN SEMULA PERUNTUKAN PERBELANJAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1250,Tuan Lim Guan Eng,Sila.
+Bacaan Kali Yang Kedua dan Ketiga",,■1250,1250,Tuan Lim Guan Eng,Sila.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN
 (PENGUNTUKAN SEMULA PERUNTUKAN PERBELANJAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1250,Dato’ Haji Mohd Suhaimi bin Abdullah,"Mohon mencelah Tuan Yang di-Pertua.
+Bacaan Kali Yang Kedua dan Ketiga",,■1250,1250,Dato’ Haji Mohd Suhaimi bin Abdullah,"Mohon mencelah Tuan Yang di-Pertua.
 Terima kasih Tuan Yang di-Pertua. Saya hendak bertanya dengan Yang Berhormat Menteri,
 sekiranya Yang Berhormat Menteri, kita- bukan kita hendak membangkang ataupun menolak,
 tetapi hanya hendak bertanya. Sekiranya Yang Berhormat Menteri- contoh ambil Yang
@@ -1676,7 +1675,7 @@ Jikalau hendak *overrule* dari segi etikanya kita merasakan bahawa *is not good 
 see that happen,* dengan izin. Apa pandangan Yang Berhormat Menteri? Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN
 (PENGUNTUKAN SEMULA PERUNTUKAN PERBELANJAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1250,Tuan Lim Guan Eng,"Terima kasih. Apa yang saya sebutkan tadi adalah atas
+Bacaan Kali Yang Kedua dan Ketiga",,■1250,1250,Tuan Lim Guan Eng,"Terima kasih. Apa yang saya sebutkan tadi adalah atas
 permintaan sendiri oleh Yang Berhormat Menteri Kesihatan. Ia tidak diminta oleh saya,
 sebenarnya saya sebagai Menteri Kewangan keberatan untuk menerimanya. Akan tetapi
 apabila diminta berkali-kali, dan selepas ini direstui oleh kabinet, memanglah akhirnya saya
@@ -1707,13 +1706,13 @@ dan saya tidak mahu mengelirukan Dewan yang mulia ini.
 Di sini saya ucapkan terima kasih, saya mohon mencadangkan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN
 (PENGUNTUKAN SEMULA PERUNTUKAN PERBELANJAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1250,ANNOTATION,[Masalah dikemukakan bagi diputuskan; dan disetujukan]
+Bacaan Kali Yang Kedua dan Ketiga",,■1250,1250,ANNOTATION,[Masalah dikemukakan bagi diputuskan; dan disetujukan]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN
 (PENGUNTUKAN SEMULA PERUNTUKAN PERBELANJAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1250,ANNOTATION,[Rang undang-undang dibacakan kali yang kedua]
+Bacaan Kali Yang Kedua dan Ketiga",,■1250,1250,ANNOTATION,[Rang undang-undang dibacakan kali yang kedua]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN
 (PENGUNTUKAN SEMULA PERUNTUKAN PERBELANJAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",Bacaan Kali Yang Kedua,1250,Menteri Kewangan [Tuan Lim Guan Eng],"Tuan Yang di-Pertua, saya mohon
+Bacaan Kali Yang Kedua dan Ketiga",Bacaan Kali Yang Kedua,■1250,1250,Menteri Kewangan [Tuan Lim Guan Eng],"Tuan Yang di-Pertua, saya mohon
 memaklumkan bahawa rang undang-undang bernama suatu akta bagi menggunakan sejumlah
 wang daripada Kumpulan Wang Disatukan untuk perbelanjaan bagi perkhidmatan untuk
 sebahagian dari tahun 2018 dan bagi memperuntukkan jumlah wang itu untuk maksud-maksud
@@ -1722,45 +1721,45 @@ mencadangkan bahawa menurut Peraturan Mesyuarat 53(2) rang undang-undang ini
 dibacakan kali yang ketiga, dan diluluskan sekarang."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN
 (PENGUNTUKAN SEMULA PERUNTUKAN PERBELANJAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",Bacaan Kali Yang Kedua,1250,Timbalan Menteri Pertahanan [Tuan Liew Chin Tong],"Tuan Yang di-Pertua, saya
+Bacaan Kali Yang Kedua dan Ketiga",Bacaan Kali Yang Kedua,■1250,1250,Timbalan Menteri Pertahanan [Tuan Liew Chin Tong],"Tuan Yang di-Pertua, saya
 mohon menyokong."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN
 (PENGUNTUKAN SEMULA PERUNTUKAN PERBELANJAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",Bacaan Kali Yang Kedua,1250,Timbalan Yang Di-Pertua,"Masalahnya ialah bahawa rang undang-undang ini
+Bacaan Kali Yang Kedua dan Ketiga",Bacaan Kali Yang Kedua,■1250,1250,Timbalan Yang Di-Pertua,"Masalahnya ialah bahawa rang undang-undang ini
 dibacakan kali yang ketiga dan diluluskan sekarang."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN
 (PENGUNTUKAN SEMULA PERUNTUKAN PERBELANJAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",Bacaan Kali Yang Kedua,1250,ANNOTATION,"[Masalah dikemuka bagi diputuskan, dan disetujukan]"
+Bacaan Kali Yang Kedua dan Ketiga",Bacaan Kali Yang Kedua,■1250,1250,ANNOTATION,"[Masalah dikemuka bagi diputuskan, dan disetujukan]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN
 (PENGUNTUKAN SEMULA PERUNTUKAN PERBELANJAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",Bacaan Kali Yang Kedua,1250,ANNOTATION,[Rang undang-undang dibacakan kali yang ketiga dan diluluskan]
+Bacaan Kali Yang Kedua dan Ketiga",Bacaan Kali Yang Kedua,■1250,1250,ANNOTATION,[Rang undang-undang dibacakan kali yang ketiga dan diluluskan]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN
 (PENGUNTUKAN SEMULA PERUNTUKAN PERBELANJAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",Bacaan Kali Yang Kedua,1301,ANNOTATION,[Mesyuarat ditempohkan pada pukul 1.01 tengah hari]
+Bacaan Kali Yang Kedua dan Ketiga",Bacaan Kali Yang Kedua,1.01 tengah hari,1301,ANNOTATION,[Mesyuarat ditempohkan pada pukul 1.01 tengah hari]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN
 (PENGUNTUKAN SEMULA PERUNTUKAN PERBELANJAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",Bacaan Kali Yang Kedua,1430,ANNOTATION,[Mesyuarat disambung semula pada pukul 2.30 petang]
+Bacaan Kali Yang Kedua dan Ketiga",Bacaan Kali Yang Kedua,2.30 petang,1430,ANNOTATION,[Mesyuarat disambung semula pada pukul 2.30 petang]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG PERBEKALAN
 (PENGUNTUKAN SEMULA PERUNTUKAN PERBELANJAAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",Bacaan Kali Yang Kedua,1430,ANNOTATION,[Timbalan Yang di-Pertua mempengerusikan Mesyuarat]
+Bacaan Kali Yang Kedua dan Ketiga",Bacaan Kali Yang Kedua,■1430,1430,ANNOTATION,[Timbalan Yang di-Pertua mempengerusikan Mesyuarat]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1432,Timbalan Menteri di Jabatan Perdana Menteri [Tuan Mohamed Hanipa bin Maidin],"Dengan izin, Tuan Yang di-Pertua. Saya memohon untuk mencadangkan iaitu rang
+Bacaan Kali Yang Kedua dan Ketiga",,2.32 ptg.,1432,Timbalan Menteri di Jabatan Perdana Menteri [Tuan Mohamed Hanipa bin Maidin],"Dengan izin, Tuan Yang di-Pertua. Saya memohon untuk mencadangkan iaitu rang
 undang-undang bernama suatu akta untuk memansuhkan Akta Antiberita Tidak Benar 2018
 dibacakan kali yang kedua sekarang."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1432,Timbalan Yang di-Pertua,Silakan Yang Berhormat Timbalan Menteri.
+Bacaan Kali Yang Kedua dan Ketiga",,2.32 ptg.,1432,Timbalan Yang di-Pertua,Silakan Yang Berhormat Timbalan Menteri.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1432,Tuan Mohamed Hanipa bin Maidin,"Tuan Yang di-Pertua, rang undang-undang
+Bacaan Kali Yang Kedua dan Ketiga",,2.32 ptg.,1432,Tuan Mohamed Hanipa bin Maidin,"Tuan Yang di-Pertua, rang undang-undang
 yang akan saya bentangkan bertujuan untuk memansuhkan Akta Antiberita Tidak Benar 2018"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1432,ANNOTATION,[Akta 803]
+Bacaan Kali Yang Kedua dan Ketiga",,2.32 ptg.,1432,ANNOTATION,[Akta 803]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1432,Tuan Mohamed Hanipa bin Maidin,"yang telah dikuatkuasakan pada 11 April 2018.
+Bacaan Kali Yang Kedua dan Ketiga",,2.32 ptg.,1432,Tuan Mohamed Hanipa bin Maidin,"yang telah dikuatkuasakan pada 11 April 2018.
 Pemansuhan ini adalah selaras dengan komitmen Kerajaan Pakatan Harapan untuk
 memansuhkan undang-undang yang zalim serta memastikan pihak media mempunyai
 kebebasan untuk menjalankan proses semak imbang terhadap pentadbiran kerajaan seperti
@@ -1812,10 +1811,10 @@ pemakaian undang-undang lain yang berkaitan seperti Akta Bantuan Bersama dalam U
 undang Jenayah 2002"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1432,ANNOTATION,[Akta 621]
+Bacaan Kali Yang Kedua dan Ketiga",,2.32 ptg.,1432,ANNOTATION,[Akta 621]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1432,Tuan Mohamed Hanipa bin Maidin,", dan Akta Ekstradisi 1992 iaitu Akta 479. Ia dilaksanakan
+Bacaan Kali Yang Kedua dan Ketiga",,2.32 ptg.,1432,Tuan Mohamed Hanipa bin Maidin,", dan Akta Ekstradisi 1992 iaitu Akta 479. Ia dilaksanakan
 dengan kewujudan perjanjian antara kedua-dua negara.
 Di samping itu, penggunaan Akta 803 ke atas individu bukan warganegara juga
 berpotensi mewujudkan risiko yang tidak perlu kepada warganegara Malaysia yang berada di
@@ -1836,10 +1835,10 @@ penguatkuasaan undang-undang sedia ada seperti Kanun Keseksaan, Akta Komunikasi 
 Multimedia 1998"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1432,ANNOTATION,[Akta 588]
+Bacaan Kali Yang Kedua dan Ketiga",,2.32 ptg.,1432,ANNOTATION,[Akta 588]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1432,Tuan Mohamed Hanipa bin Maidin,"dan undang-undang berkaitan fitnah boleh dibuat dengan lebih
+Bacaan Kali Yang Kedua dan Ketiga",,2.32 ptg.,1432,Tuan Mohamed Hanipa bin Maidin,"dan undang-undang berkaitan fitnah boleh dibuat dengan lebih
 menyeluruh dan efektif untuk membendung masalah berita tidak benar. Kerajaan mempunyai
 pilihan untuk meminda peruntukan sedia ada bagi tujuan penambahbaikan dan memperhalusi
 pemakaian dan keberkesanannya dalam menangani penyebaran berita palsu.
@@ -1855,17 +1854,17 @@ G.C. Thornton dalam *Legislative Drafting: 5th Edition* di perenggan 7.34 di muk
 menyatakan bahawa..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1432,ANNOTATION,[Membaca petikan]
+Bacaan Kali Yang Kedua dan Ketiga",,2.32 ptg.,1432,ANNOTATION,[Membaca petikan]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1432,Tuan Mohamed Hanipa bin Maidin,"*“The first step to consider whether further legislation is in fact
+Bacaan Kali Yang Kedua dan Ketiga",,2.32 ptg.,1432,Tuan Mohamed Hanipa bin Maidin,"*“The first step to consider whether further legislation is in fact
 necessary or whether the desired ends might not be capable of achievement
 wholly or in part either by administrative means or under existing legislation.
 If legislation is enacted that is not needed, that is a clear waste of time and
 therefore money and swells the volume of the statute book unnecessarily.*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1440,Tuan Mohamed Hanipa bin Maidin,"*In particular proposals to confer statutory powers on Ministers or officials
+Bacaan Kali Yang Kedua dan Ketiga",,■1440,1440,Tuan Mohamed Hanipa bin Maidin,"*In particular proposals to confer statutory powers on Ministers or officials
 requires scrutiny because it may be that those powers, or some of them, may
 already exist under the common law or possibly under the other statutes.
 Needless legislation must be discouraged. Unnecessary new legislaton is not
@@ -1876,10 +1875,10 @@ significant enough to be preserved for priority policy issues, thus failing to d
 the user’s attention to a few, well-chosen statutes. And it creates the false*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1440,ANNOTATION,[fraudulent]
+Bacaan Kali Yang Kedua dan Ketiga",,■1440,1440,ANNOTATION,[fraudulent]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1440,Tuan Mohamed Hanipa bin Maidin,"*impression that the government has dealt with a social issue,
+Bacaan Kali Yang Kedua dan Ketiga",,■1440,1440,Tuan Mohamed Hanipa bin Maidin,"*impression that the government has dealt with a social issue,
 whereas it clearly has not”.*
 Tuan Yang di-Pertua, Rang Undang-undang Antiberita Tidak Benar (Pemansuhan)
 2018 telah dirangka bertujuan untuk memansuhkan Akta 803.
@@ -1906,15 +1905,15 @@ sekali gus ia telah gagal, dengan izin, *by design* untuk memberi impak positif 
 penyebaran berita palsu. Dengan ini Tuan Yang di-Pertua, saya mohon mencadangkan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1440,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat. Ada sesiapa yang
+Bacaan Kali Yang Kedua dan Ketiga",,■1440,1440,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat. Ada sesiapa yang
 menyokong?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1440,Timbalan Menteri Pengangkutan [Dato’ Kamarudin Jaffar],"Tuan Yang di-Pertua,
+Bacaan Kali Yang Kedua dan Ketiga",,■1440,1440,Timbalan Menteri Pengangkutan [Dato’ Kamarudin Jaffar],"Tuan Yang di-Pertua,
 saya sokong."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1440,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat. Ahli-ahli Yang Berhormat,
+Bacaan Kali Yang Kedua dan Ketiga",,■1440,1440,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat. Ahli-ahli Yang Berhormat,
 masalah di hadapan Majlis ialah rang undang-undang bernama suatu akta untuk
 memansuhkan Akta Antiberita Tidak Benar (Pemansuhan) 2018 dibacakan kali yang kedua
 sekarang dan terbuka untuk di bahas.
@@ -1922,7 +1921,7 @@ Ahli Yang Berhormat, saya jemput dulu pertama sekali Yang Berhormat Senator Tuan
 Chandra Mohan. Dipersilakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1443,Tuan Chandra Mohan a/l S.Thambirajah,"Terima kasih Tuan Yang di-Pertua di atas
+Bacaan Kali Yang Kedua dan Ketiga",,2.43 ptg.,1443,Tuan Chandra Mohan a/l S.Thambirajah,"Terima kasih Tuan Yang di-Pertua di atas
 peluang ini untuk mengambil bahagian dalam perbahasan Rang Undang-undang Antiberita
 Tidak Benar (Pemansuhan) 2018.
 Satu lagi rang undang-undang yang bersejarah. Kenapa bersejarah? Kalau kita
@@ -1960,7 +1959,7 @@ kebebasan media dan juga penyebaran maklumat terutama sekali berkenaan dengan sk
 1MDB pada masa itu..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1443,Dato’ Haji Mohd Suhaimi bin Abdullah,"Mohon mencelah Yang Berhormat. Terima
+Bacaan Kali Yang Kedua dan Ketiga",,2.43 ptg.,1443,Dato’ Haji Mohd Suhaimi bin Abdullah,"Mohon mencelah Yang Berhormat. Terima
 kasih Tuan Yang di-Pertua.
 Saya menyokong apa Yang Berhormat katakan tadi bahawa kita meluluskan rang
 undang-undang yang lepas itu dengan tergesa-gesa tanpa ada kajian. Apakah pandangan
@@ -1969,7 +1968,7 @@ hari lebih Pakatan Harapan memerintah? Adakah kajian dibuat Yang Berhormat berhu
 dengan perkara ini? Adakah ia juga tergesa-gesa? Terima kasih Yang Berhormat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1443,Tuan Chandra Mohan A/L S.Thambirajah,"Pada saya, saya rasa tindakan ini bukan
+Bacaan Kali Yang Kedua dan Ketiga",,2.43 ptg.,1443,Tuan Chandra Mohan A/L S.Thambirajah,"Pada saya, saya rasa tindakan ini bukan
 satu tindakan tergesa-gesa. Pasal ia bukan 100 hari, pasal pendirian Pakatan Harapan
 terhadap undang-undang ini pada mulanya bermula dari bulan satu, tahun ini. Daripada Januari
 dulu kita sudah tidak setuju dengan undang-undang ini dan dari awal Januari. Semasa sebelum
@@ -1984,7 +1983,7 @@ tengok daripada segi hukuman yang terkandung dalam Akta 803 ini, kalau tidak sal
 sebanyak RM500,000 dan boleh didenda enam tahun."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1450,Tuan Chandra Mohan A/L S.Thambirajah,"Ini kita kena tengok, hukuman berat ini dengan tafsiran *the authority* yang akan
+Bacaan Kali Yang Kedua dan Ketiga",,■1450,1450,Tuan Chandra Mohan A/L S.Thambirajah,"Ini kita kena tengok, hukuman berat ini dengan tafsiran *the authority* yang akan
 menentukan apa itu atau *what is*- apa yang berita tidak benar dan sebagainya. Ini saya akan
 jelaskan sedikit.
 Lagi satu sebab kenapa mungkin Yang Berhormat Timbalan Menteri masa itu di
@@ -2064,7 +2063,7 @@ Pada hari ini Tuan Yang di-Pertua, saya tidak berhasrat untuk *argue* berkenaan
 dengan akta..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1450,Tuan Mohd Yusmadi bin Mohd Yusoff,"Boleh saya celah sikit? Tuan Yang di-
+Bacaan Kali Yang Kedua dan Ketiga",,■1450,1450,Tuan Mohd Yusmadi bin Mohd Yusoff,"Boleh saya celah sikit? Tuan Yang di-
 Pertua, pencelahan sulung.
 Senator, boleh jelaskan- setahu saya ketika itu, ada juga gesaan daripada pengamal-
 pengamal media untuk menubuhkan satu perkara yang agak penting iaitu dipanggil ‘Majlis
@@ -2076,7 +2075,7 @@ tertentu boleh dibantu daripada segi akta undang-undang, tetapi dalam keadaan te
 dibantu dengan mekanisme yang lain. Mungkin boleh mohon pandangan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1450,Tuan Chandra Mohan a/l S. Thambirajah,"Terima kasih. Sebenarnya konsep Majlis
+Bacaan Kali Yang Kedua dan Ketiga",,■1450,1450,Tuan Chandra Mohan a/l S. Thambirajah,"Terima kasih. Sebenarnya konsep Majlis
 Media atau apa yang kita sebut dalam bahasa Inggeris pada masa itu adalah *“Media Council.”*
 Kalau tidak salah dalam manifesto Pakatan Harapan kita juga masih sebut berkenaan dengan
 *media council*. Akan tetapi sebenarnya selain daripada *media council,* apa yang *interesting*
@@ -2086,7 +2085,7 @@ untuk *self-censorship* walaupun bukan *self-censorship* secara 100 peratus pasa
 menubuhkan *council*."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1500,Tuan Chandra Mohan a/l S. Thambirajah,"Pada saya, *it is a step in the right direction*. Ini dari segi konsep *self-censorship* sahaja.
+Bacaan Kali Yang Kedua dan Ketiga",,■1500,1500,Tuan Chandra Mohan a/l S. Thambirajah,"Pada saya, *it is a step in the right direction*. Ini dari segi konsep *self-censorship* sahaja.
 Kalau tidak ada *self-censorship* secara peribadi pun contoh, saya anggap negara kita sebagai
 satu negara pelbagai kaum dan sebagainya. Kalau kita tidak ada *self-censorship,* maka kita
 akan sebut perkataan yang akan menyakiti hati orang lain.
@@ -2159,12 +2158,12 @@ penyebaran berita tidak palsu akan kurang. Terima kasih Tuan Yang di-Pertua di a
 ini."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1500,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat Senator Tuan Chandra
+Bacaan Kali Yang Kedua dan Ketiga",,■1500,1500,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat Senator Tuan Chandra
 Mohan a/l S.Thambirajah. Terima kasih.
 Saya jemput pula Yang Berhormat Senator Dato’ Ong Chong Swen, silakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1509,Dato’ Ong Chong Swen,"Tuan Yang di-Pertua, salam sejahtera dan Salam Negaraku
+Bacaan Kali Yang Kedua dan Ketiga",,3.09 ptg.,1509,Dato’ Ong Chong Swen,"Tuan Yang di-Pertua, salam sejahtera dan Salam Negaraku
 Malaysia. Terima kasih kerana memberi peluang untuk berbahas Rang Undang-undang
 Antiberita Tidak Benar (Pemansuhan) 2018.
 Baru-baru ini, Yang Berhormat Menteri di Jabatan Perdana Menteri telah menyatakan
@@ -2172,7 +2171,7 @@ bahawa Akta Antiberita Tidak Benar tidak diperlukan. Ini kerana undang-undang ya
 ada sudah mencukupi untuk menangani gejala berita palsu."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1510,Dato’ Ong Chong Swen,"Dinyatakan bahawa Kanun Keseksaan fasal 499 hingga 502, Akta Mesin Cetak dan
+Bacaan Kali Yang Kedua dan Ketiga",,■1510,1510,Dato’ Ong Chong Swen,"Dinyatakan bahawa Kanun Keseksaan fasal 499 hingga 502, Akta Mesin Cetak dan
 Penerbitan 1984 fasal 8A dan Akta Komunikasi dan Multimedia 1998 sudah boleh menangani
 berita palsu. Setahu saya, Kerajaan Pakatan Harapan sebelum ini berjanji akan memansuhkan
 Akta Mesin Cetak dan Penerbitan. Bagaimana pula boleh menggunakan akta-akta ini untuk
@@ -2236,13 +2235,13 @@ let’s work on it and make it a better act but not just* batalkan. Saya tidak a
 panjang. Saya akan mengakhiri ucapan saya. Saya harap..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1510,Tuan Chandra Mohan a/l S.Thambirajah,Yang Berhormat...
+Bacaan Kali Yang Kedua dan Ketiga",,■1510,1510,Tuan Chandra Mohan a/l S.Thambirajah,Yang Berhormat...
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1510,Dato’ Ong Chong Swen,"Habis sudah, *last sentence*."
+Bacaan Kali Yang Kedua dan Ketiga",,■1510,1510,Dato’ Ong Chong Swen,"Habis sudah, *last sentence*."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1520,Tuan Chandra Mohan a/l S.Thambirajah,"*Clarification* sahaja. *Just* hendak
+Bacaan Kali Yang Kedua dan Ketiga",,■1520,1520,Tuan Chandra Mohan a/l S.Thambirajah,"*Clarification* sahaja. *Just* hendak
 *clarification.* Tuan Yang di-Pertua, tadi kita dengar berkenaan dengan *anti-fake news* dalam
 negara-negara yang lain tetapi *my concerns is, I* tak tahu sama ada Yang Berhormat ada
 maklumat atau tidak berkenaan dengan *third party content* sama ada undang-undang di lain
@@ -2251,7 +2250,7 @@ users, social media users* dan sebagainya daripada segi *third party contents.* 
 maklumat atau tidak sahajalah."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1520,Dato’ Ong Chong Swen,"*That as a,* dengan izin, *as far as on that, I think we have
+Bacaan Kali Yang Kedua dan Ketiga",,■1520,1520,Dato’ Ong Chong Swen,"*That as a,* dengan izin, *as far as on that, I think we have
 study earlier on the social media, there are so many spreading in fact especially the last one
 year.* Dalam satu tahun itu banyak berita yang sebenarnya kita nampak di surat khabar dan
 lain-lain pun kena memberitahu orang itu adalah berita yang tidak benar. Sebenarnya ada juga
@@ -2262,13 +2261,13 @@ menyokong memansuhkan Rang Undang-undang Antiberita Tidak Benar 2018. Sekian, te
 kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1520,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat Senator Dato’ Ong Chong
+Bacaan Kali Yang Kedua dan Ketiga",,■1520,1520,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat Senator Dato’ Ong Chong
 Swen.
 Sekarang saya jemput pula Yang Berhormat Senator Dato' Hajah Fahariyah binti Haji
 Md Nordin. Dipersilakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1522,Dato' Hajah Fahariyah binti Haji Md Nordin,"*Bismillahir Rahmanir Rahim*. Terima
+Bacaan Kali Yang Kedua dan Ketiga",,3.22 ptg.,1522,Dato' Hajah Fahariyah binti Haji Md Nordin,"*Bismillahir Rahmanir Rahim*. Terima
 kasih Tuan Yang di-Pertua.
 Terima kasih kerana memberi keizinan kepada saya untuk membahaskan Rang
 Undang-undang Antiberita Tidak Benar (Pemansuhan) 2018. Sebagaimana yang kita tahu
@@ -2349,7 +2348,7 @@ sekiranya rang undang-undang ini dimansuhkan. Maknanya kalau katalah berita itu,
 *forever the* berita *is going to be there,* dengan izin, Tuan Yang di-Pertua..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1522,Tuan Mohd Yusmadi bin Mohd Yusoff,"Boleh mohon penjelasan? Yang Berhormat
+Bacaan Kali Yang Kedua dan Ketiga",,3.22 ptg.,1522,Tuan Mohd Yusmadi bin Mohd Yusoff,"Boleh mohon penjelasan? Yang Berhormat
 Senator, boleh tolong jelaskan.
 Setahu saya, ada perkara yang dibuat secara administratif ataupun di peringkat
 dipanggil *enforcement* oleh badan-badan seperti Suruhanjaya Komunikasi dan Multimedia
@@ -2365,13 +2364,13 @@ majlis media yang terdiri daripada mereka yang bijak pandai yang dipilih yang ak
 menentukan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1530,Tuan Mohd Yusmadi bin Mohd Yusoff,"Kalau di Indonesia itu dia kata perkara sara itu tidak boleh. Sara ini perkara yang ras,
+Bacaan Kali Yang Kedua dan Ketiga",,■1530,1530,Tuan Mohd Yusmadi bin Mohd Yusoff,"Kalau di Indonesia itu dia kata perkara sara itu tidak boleh. Sara ini perkara yang ras,
 agama tapi ia tidak diputuskan oleh negara. Oleh sebab itu di peringkat ini saya rasa agak
 sesuai juga sebelum kita putuskan apa pilihan yang kita hendak beri kepada rakyat pada alaf
 21 ini."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1530,Dato' Hajah Fahariyah binti Haji Md Nordin,"Terima kasih Yang Berhormat Senator
+Bacaan Kali Yang Kedua dan Ketiga",,■1530,1530,Dato' Hajah Fahariyah binti Haji Md Nordin,"Terima kasih Yang Berhormat Senator
 atas soalan yang diberikan.
 Sebab itu Akta 803 ini kalau Yang Berhormat Senator perasan, dan Yang Berhormat
 Senator tahu, akta ini memberi kuasa sepenuhnya kepada mahkamah. Maknanya bukannya
@@ -2400,16 +2399,16 @@ daripada terus difitnah dan terus mungkin termakan oleh *cyber bully*, *I mean* 
 bully*."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1530,Tuan Chandra Mohan a/l S. Thambirajah,
+Bacaan Kali Yang Kedua dan Ketiga",,■1530,1530,Tuan Chandra Mohan a/l S. Thambirajah,
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1530,ANNOTATION,[Bangun]
+Bacaan Kali Yang Kedua dan Ketiga",,■1530,1530,ANNOTATION,[Bangun]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1530,Dato' Hajah Fahariyah binti Haji Md Nordin,*Yes.*
+Bacaan Kali Yang Kedua dan Ketiga",,■1530,1530,Dato' Hajah Fahariyah binti Haji Md Nordin,*Yes.*
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1530,Tuan Chandra Mohan a/l S. Thambirajah,"Sekejap, cuma sedikit berkenaan dengan
+Bacaan Kali Yang Kedua dan Ketiga",,■1530,1530,Tuan Chandra Mohan a/l S. Thambirajah,"Sekejap, cuma sedikit berkenaan dengan
 keputusan sama ada berita itu anti benar atau tidak akan diputuskan oleh mahkamah itu betul.
 Bukan tidak akan diputuskan oleh kerajaan. Akan tetapi kita harus ingat dalam Akta 803 ini,
 *there is an interim order* yang boleh dimohon kalau contohlah kalau saya rasa *I’m affected by*
@@ -2432,7 +2431,7 @@ saya cakap kerajaan jangan buat keputusan dari segi *effect of the law.* Terima 
 di-Pertua."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1530,Dato' Hajah Fahariyah binti Haji Md Nordin,"Terima kasih Yang Berhormat Senator.
+Bacaan Kali Yang Kedua dan Ketiga",,■1530,1530,Dato' Hajah Fahariyah binti Haji Md Nordin,"Terima kasih Yang Berhormat Senator.
 Oleh sebab itu tadi saya katakan kita perlu melihat akta ini lebih kepada hendak menjaga
 kesejahteraan rakyat. Kalau kita melihat dari segi aspek politik, kalau kita melihat dari segi akta
 ini digunakan untuk kepentingan politik ataupun *political to certain party,* mungkin benarlah apa
@@ -2459,13 +2458,13 @@ akhirnya kita terkebelakang dari segi melindungi rakyat secara keseluruhan hak m
 isu anti ataupun berita palsu ini. Sekian Tuan Yang di-Pertua."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1530,Timbalan Yang di-Pertua,"Baik, terima kasih Yang Berhormat Senator Dato’
+Bacaan Kali Yang Kedua dan Ketiga",,■1530,1530,Timbalan Yang di-Pertua,"Baik, terima kasih Yang Berhormat Senator Dato’
 Fahariyah binti Haji Md. Nordin.
 Sekarang saya jemput pula Yang Berhormat Senator Dato’ Mohd Suhaimi bin
 Abdullah. Dipersilakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1537,Dato’ Haji Mohd Suhaimi bin Abdullah,"Terima kasih Tuan Yang di-Pertua. Saya
+Bacaan Kali Yang Kedua dan Ketiga",,3.37 ptg.,1537,Dato’ Haji Mohd Suhaimi bin Abdullah,"Terima kasih Tuan Yang di-Pertua. Saya
 juga turut untuk berbahas rang undang-undang ini dan ramai yang sudah bercakap. Cuma
 saya ingin mengambil kes-kes yang berlaku dan berdasarkan kes-kes ini kita dapat melihat
 bahawa *pros and cons,* dengan izin, undang-undang ini sama ada dimansuhkan ataupun tidak.
@@ -2493,7 +2492,7 @@ oleh Menteri, yang diminati oleh kerajaan pada ketika itu. Akan tetapi saya teng
 kurang sikit."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1540,Dato’ Haji Mohd Suhaimi bin Abdullah,"Ada juga berita-berita, kadang-kadang ditunjukkan muka itu, mulut sahaja bergerak,
+Bacaan Kali Yang Kedua dan Ketiga",,■1540,1540,Dato’ Haji Mohd Suhaimi bin Abdullah,"Ada juga berita-berita, kadang-kadang ditunjukkan muka itu, mulut sahaja bergerak,
 suara tidak keluar. Kalau kita melihat baru-baru ini juga ada seorang doktor yang telah komen
 berhubung dengan anak Tun Dr. Mahathir. Katanya, komennya berhubung dengan LGBT.
 Selepas itu keluar pula yang menyatakan bahawa doktor ini telah diambil tindakan.
@@ -2553,12 +2552,12 @@ Cuma apakah perlu kita memasukkan perkara-perkara yang kita sebut tadi seperti
 terlebih dahulu. Terima kasih Tuan Yang di-Pertua."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1540,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat Senator Dato’ Haji Mohd
+Bacaan Kali Yang Kedua dan Ketiga",,■1540,1540,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat Senator Dato’ Haji Mohd
 Suhaimi bin Abdullah. Terima kasih Yang Berhormat.
 Sekarang saya jemput pula Yang Berhormat Senator Puan Sopiah binti Sharif."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1547,Puan Sopiah binti Sharif,"*Assalamualaikum warahmatullahi wabarakatuh.*
+Bacaan Kali Yang Kedua dan Ketiga",,3.47 ptg.,1547,Puan Sopiah binti Sharif,"*Assalamualaikum warahmatullahi wabarakatuh.*
 Terlebih dahulu saya mengucapkan terima kasih kepada Tuan Yang di-Pertua yang
 memberi laluan kepada saya untuk bersama membahaskan rang undang-undang 2018.
 Sebelum ini saya mengucapkan syabas dan terima kasih kepada Menteri yang telah
@@ -2577,7 +2576,7 @@ bawah seksyen 233, Akta Komunikasi dan Multimedia 1998 dan juga seksyen 4, Akta 
 Tidak Benar 2018 kelihatan bertindih dari segi penguatkuasaan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1550,Puan Sopiah binti Sharif,"Seperkara lagi, saya amat berharap agar serangan-serangan terhadap agama dan
+Bacaan Kali Yang Kedua dan Ketiga",,■1550,1550,Puan Sopiah binti Sharif,"Seperkara lagi, saya amat berharap agar serangan-serangan terhadap agama dan
 kaum yang semakin hari menular di media sosial dapat ditangani dengan bijaksana selepas
 rang undang-undang diluluskan.
 Tuan Yang di-Pertua, sekiranya kerajaan memilih kekal dengan keputusan
@@ -2606,12 +2605,12 @@ keharmonian negara untuk masa akan datang. Sekian, saya ambil bahagian dalam
 perbahasan ini. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1550,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat Senator Puan Sopiah binti
+Bacaan Kali Yang Kedua dan Ketiga",,■1550,1550,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat Senator Puan Sopiah binti
 Sharif. Sekarang saya jemput pula Yang Berhormat Senator Puan Asmak binti Husin.
 Dipersilakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1553,Puan Asmak binti Husin,"Terima kasih Tuan Yang di-Pertua. *Bismillahir Rahmanir
+Bacaan Kali Yang Kedua dan Ketiga",,3.53 ptg.,1553,Puan Asmak binti Husin,"Terima kasih Tuan Yang di-Pertua. *Bismillahir Rahmanir
 Rahim. Assalamualaikum warahmatullahi wabarakatuh* dan salam sejahtera.
 Berkenaan dengan Rang Undang-undang Antiberita Tidak Benar ini, sebenarnya hari
 ini saya suka untuk berbahas dari sudut aspek kewartawanan dan Islam. Ini disebabkan aspek
@@ -2641,10 +2640,10 @@ menyebarkan berita iaitu kita panggil sebagai kaedah *tabayyun*. Dalam al-Quran 
 surah al-Hujurat ayat 6..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1553,ANNOTATION,[Membaca ayat Al-Quran berkaitan]
+Bacaan Kali Yang Kedua dan Ketiga",,3.53 ptg.,1553,ANNOTATION,[Membaca ayat Al-Quran berkaitan]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1553,Puan Asmak binti Husin,"Antara maksudnya, sekiranya
+Bacaan Kali Yang Kedua dan Ketiga",,3.53 ptg.,1553,Puan Asmak binti Husin,"Antara maksudnya, sekiranya
 ada datangnya berita kepada kita, maka hendaklah kita menggunakan kaedah *tabayyun.
 Tabayyun* ini maksudnya, ia adalah menjadi tanggungjawab kepada orang yang hendak
 menyebarkan berita, *share, forward,* dengan izin, dan lain-lain. Maknanya tanggungjawab dia
@@ -2656,10 +2655,10 @@ meletakkan kaedah hak ataupun kebenaran sebagaimana dalam Surah Al-‘Asr, Allah
 menyebutkan..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1553,ANNOTATION,[Membaca sepotong ayat Al-Quran]
+Bacaan Kali Yang Kedua dan Ketiga",,3.53 ptg.,1553,ANNOTATION,[Membaca sepotong ayat Al-Quran]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1553,Puan Asmak binti Husin,"Maknanya, orang yang beriman dengan
+Bacaan Kali Yang Kedua dan Ketiga",,3.53 ptg.,1553,Puan Asmak binti Husin,"Maknanya, orang yang beriman dengan
 beramal soleh hendaklah dia berpesan-pesan dengan kebenaran, dengan hak. Maksudnya di
 sini ialah sebagai seorang yang beriman dengan beramal soleh, kebenaran ini menjadi asas
 kebebasan bersuara.
@@ -2702,18 +2701,18 @@ relevan dan sekiranya sebelum ini dibuat secara tergesa-gesa, apa kata diwujudka
 jawatankuasa sebelum memansuhkan ataupun hendak meneruskan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1600,Puan Asmak binti Husin,"Sekiranya ada kelemahan ataupun *inconsistency* berkenaan dengan undang-undang
+Bacaan Kali Yang Kedua dan Ketiga",,■1600,1600,Puan Asmak binti Husin,"Sekiranya ada kelemahan ataupun *inconsistency* berkenaan dengan undang-undang
 sebelum ini, harus dibuat pindaan supaya dalam dunia kewartawanan yang terbuka hari ini
 melibatkan orang awam, bukan orang awam, profesional dan bukan profesional, berita tidak
 benar, berita palsu, manipulasi berita ini dapat dikekang. Sekian, terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1600,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat Senator Puan Asmak binti
+Bacaan Kali Yang Kedua dan Ketiga",,■1600,1600,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat Senator Puan Asmak binti
 Husin. Sekarang saya jemput pula Yang Berhormat Senator Datin Rahimah binti Haji
 Mahamad. Dipersilakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1600,Datin Rahimah binti Haji Mahamad,"*Assalamualaikum warahmatullahi wabarakatuh*
+Bacaan Kali Yang Kedua dan Ketiga",,4.00 ptg.,1600,Datin Rahimah binti Haji Mahamad,"*Assalamualaikum warahmatullahi wabarakatuh*
 dan salam sejahtera. Terima kasih Tuan Yang di-Pertua kerana memberi izin untuk saya
 membahaskan Rang Undang-undang Antiberita Tidak Benar (Pemansuhan) 2018.
 Tuan Yang di-Pertua, dalam Akta Antiberita Tidak Benar 2018, terdapat peruntukan
@@ -2728,17 +2727,17 @@ berita palsu atau tidak benar ini tidak dapat dibela dengan sepenuhnya walaupun 
 kerajaan berpandangan beberapa siri sedia ada seperti Kanun Keseksaan"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1600,ANNOTATION,[Akta 574]
+Bacaan Kali Yang Kedua dan Ketiga",,4.00 ptg.,1600,ANNOTATION,[Akta 574]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1600,Datin Rahimah binti Haji Mahamad,", Akta
+Bacaan Kali Yang Kedua dan Ketiga",,4.00 ptg.,1600,Datin Rahimah binti Haji Mahamad,", Akta
 Mesin Cetak dan Penerbitan 1984"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1600,ANNOTATION,[Akta 301]
+Bacaan Kali Yang Kedua dan Ketiga",,4.00 ptg.,1600,ANNOTATION,[Akta 301]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1600,Datin Rahimah binti Haji Mahamad,"dan Akta Komunikasi dan Multimedia 1998 [Akta
+Bacaan Kali Yang Kedua dan Ketiga",,4.00 ptg.,1600,Datin Rahimah binti Haji Mahamad,"dan Akta Komunikasi dan Multimedia 1998 [Akta
 588] sudah mencukupi dalam membanteras ancaman fitnah ataupun kelakuan negatif dalam
 penyebaran berita palsu ini.
 Tuan Yang di-Pertua, dalam kepelbagaian aplikasi media sosial dan kapasiti
@@ -2751,22 +2750,22 @@ ini dipertingkatkan penguatkuasaan perundangan dengan melakukan reformasi terhad
 beberapa siri akta seperti Kanun Keseksaan"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1600,ANNOTATION,[Akta 574]
+Bacaan Kali Yang Kedua dan Ketiga",,4.00 ptg.,1600,ANNOTATION,[Akta 574]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1600,Datin Rahimah binti Haji Mahamad,", Akta Mesin Cetak dan Penerbitan 1984"
+Bacaan Kali Yang Kedua dan Ketiga",,4.00 ptg.,1600,Datin Rahimah binti Haji Mahamad,", Akta Mesin Cetak dan Penerbitan 1984"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1600,ANNOTATION,[Akta 301]
+Bacaan Kali Yang Kedua dan Ketiga",,4.00 ptg.,1600,ANNOTATION,[Akta 301]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1600,Datin Rahimah binti Haji Mahamad,dan Akta Komunikasi dan Multimedia 1998
+Bacaan Kali Yang Kedua dan Ketiga",,4.00 ptg.,1600,Datin Rahimah binti Haji Mahamad,dan Akta Komunikasi dan Multimedia 1998
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1600,ANNOTATION,[Akta 588]
+Bacaan Kali Yang Kedua dan Ketiga",,4.00 ptg.,1600,ANNOTATION,[Akta 588]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1600,Datin Rahimah binti Haji Mahamad,"agar pesalah yang terbabit
+Bacaan Kali Yang Kedua dan Ketiga",,4.00 ptg.,1600,Datin Rahimah binti Haji Mahamad,"agar pesalah yang terbabit
 dengan kesalahan penerbitan dan penyebaran berita palsu didakwa dan dipertanggungjawab
 dengan satu hukuman yang berpatutan dengan kesengsaraan mangsa.
 Saya juga ingin mendapat kepastian, apakah status terhadap kes-kes yang telah
@@ -2782,13 +2781,13 @@ dibuat bagi menyesuaikan perkembangan semasa atau trend penerbitan dan penyebara
 berita palsu yang berlaku di negara. Sekian, terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1600,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat Senator Datin Rahimah
+Bacaan Kali Yang Kedua dan Ketiga",,4.00 ptg.,1600,Timbalan Yang di-Pertua,"Terima kasih Yang Berhormat Senator Datin Rahimah
 binti Haji Mahamad.
 Sekarang saya jemput pula Yang Berhormat Senator Prof. Emeritus Tan Sri Dato’
 Seri Dr. Ibrahim Shah bin Abu Shah. Dipersilakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1605,Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah,"*Bismillahir
+Bacaan Kali Yang Kedua dan Ketiga",,4.05 ptg.,1605,Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah,"*Bismillahir
 Rahmanir Rahim.* Tuan Yang di-Pertua, saya mengucapkan terima kasih kerana memberi saya
 peluang untuk bercakap sedikit pada petang ini.
 Tuan Yang di-Pertua, kita sudah pasti menerima realiti, suka ataupun tidak suka
@@ -2829,7 +2828,7 @@ demonstrate why a rational individual would voluntarily consent to give up their
 to obtain the benefits of political order.*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1610,Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah,"Maksud di sini saya tekankan pula, di kalangan kita, kita telah bersetuju *surrender*
+Bacaan Kali Yang Kedua dan Ketiga",,■1610,1610,Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah,"Maksud di sini saya tekankan pula, di kalangan kita, kita telah bersetuju *surrender*
 beberapa aspek *natural freedom*. Tadi kita bercakap tentang *freedom of speech, freedom of
 associations, freedom of press,* kita bercakap hak asasi, *human rights.* Akan tetapi apabila kita
 menubuhkan kerajaan, rakyat yang telah menerima, mengundi kerajaan baharu, kita juga
@@ -2899,10 +2898,10 @@ Dulu pada zaman BN tak disekat pun *Harakah* ataupun *Suara Keadilan.* Belum 100
 *Utusan Malaysia* diharamkan..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1610,ANNOTATION,[Ketawa]
+Bacaan Kali Yang Kedua dan Ketiga",,■1610,1610,ANNOTATION,[Ketawa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1610,Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah,"Betul kah tak betul, saya tak tahu. Dikatakan, tetapi
+Bacaan Kali Yang Kedua dan Ketiga",,■1610,1610,Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah,"Betul kah tak betul, saya tak tahu. Dikatakan, tetapi
 kemudian Menteri itu kata tak betul pula tetapi saya rasa ada pemikiran *after speech.*
 Maksudnya, kalau kita cakap, kita serius, kita kena jujur kerana rakyat memerhati. Rakyat
 hendak tengok betul tak betul, dulu kita tuduh kawan itu jahat, kamu jangan jahat, tuduh kawan
@@ -2924,7 +2923,7 @@ hari ini akan rugi kalau tolak benda ini kerana kita tidak mengajar anak kita me
 yang bercakap benar."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1620,Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah,"Jadi Tuan Yang di-Pertua, saya merasakanlah bahawa *freedom of speech* penting.
+Bacaan Kali Yang Kedua dan Ketiga",,■1620,1620,Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah,"Jadi Tuan Yang di-Pertua, saya merasakanlah bahawa *freedom of speech* penting.
 Akan tetapi, dalam konteks ini saya minta di pihak kerajaan berfikir balik, sama ada kita hendak
 teruskan mansuh atau tidak. Saya masih ingat tahun lepas, saya menghadiri satu seminar di
 Filipina. Seminar berkaitan dengan *human right*.
@@ -2935,10 +2934,10 @@ want to say, but I would like to invite you all to come over to Pakistan and sta
 Pakistan. Then you understand what is human right.”*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1620,ANNOTATION,[Ketawa]
+Bacaan Kali Yang Kedua dan Ketiga",,■1620,1620,ANNOTATION,[Ketawa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1620,Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah,"Tuan Yang di-Pertua, *it is not that simple*. Maksudnya Tuan Yang di-Pertua, saya
+Bacaan Kali Yang Kedua dan Ketiga",,■1620,1620,Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah,"Tuan Yang di-Pertua, *it is not that simple*. Maksudnya Tuan Yang di-Pertua, saya
 dengan itu mengharapkan benar-benar. Saya pun, saya katakan tegas, ikhlas, saya tidak mahu
 melihat negara saya lagi menjadi lebih susah. Saya tidak mahu lihat anak cucu cicit saya hidup
 lebih teruk, bermasalah. Saya tidak mahu melihat negara ini mempunyai suasana perpaduan
@@ -2953,15 +2952,15 @@ buat dulu dengan betul, ikhlas, fikir betul-betul, *study* balik, *fake news* RU
 atau dimansuhkan untuk kepentingan negara dan rakyat kita. Sekian, terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1622,Dato’ Dr. Ananthan a/l Somasundaram,"Terima kasih Tuan Yang di-Pertua. Terima
+Bacaan Kali Yang Kedua dan Ketiga",,4.22 ptg.,1622,Dato’ Dr. Ananthan a/l Somasundaram,"Terima kasih Tuan Yang di-Pertua. Terima
 kasih kerana diberikan peluang kepada saya untuk membincangkan Rang Undang-undang
 Antiberita Tidak Benar (Pemansuhan) 2018."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1622,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
+Bacaan Kali Yang Kedua dan Ketiga",,4.22 ptg.,1622,ANNOTATION,[Tuan Yang di-Pertua mempengerusikan Mesyuarat]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1622,Dato’ Dr. Ananthan a/l Somasundaram,"Tuan Yang di-Pertua, isu penyebaran berita tidak benar merupakan masalah yang
+Bacaan Kali Yang Kedua dan Ketiga",,4.22 ptg.,1622,Dato’ Dr. Ananthan a/l Somasundaram,"Tuan Yang di-Pertua, isu penyebaran berita tidak benar merupakan masalah yang
 dihadapi secara global, ekoran revolusi teknologi komunikasi yang berkembang dengan pesat
 dan terlalu pantas. Ia bukan sahaja mengelirukan masyarakat, malah boleh memberi ancaman
 kepada terhadap keselamatan, ekonomi, kemakmuran dan kesejahteraan rakyat dan negara.
@@ -2977,42 +2976,42 @@ dan eksklusif bagi menangani kesalahan-kesalahan mengenai berita tidak benar sec
 menyeluruh dan efektif. Justeru.."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1622,Tuan Yang di-Pertua,"Yang Berhormat, sebentar, duduk dulu sekejap.
+Bacaan Kali Yang Kedua dan Ketiga",,4.22 ptg.,1622,Tuan Yang di-Pertua,"Yang Berhormat, sebentar, duduk dulu sekejap.
 Ahli-ahli Yang Berhormat, ini adalah Ahli Yang Berhormat yang akhir dalam
 perbahasan. Jikalau ada juga Ahli-ahli baharu yang hendak bahas tentang perbahasan Anti
 Berita Tidak Benar, boleh kemukakan nama kerana ini adalah Ahli Yang Berhormat yang akhir.
 Kalau sesiapa yang hendak bahas, tolong berikan nama. Silakan, Yang Berhormat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1622,Dato’ Dr. Ananthan a/l Somasundaram,"Terima kasih. Justeru, saya pohon pihak
+Bacaan Kali Yang Kedua dan Ketiga",,4.22 ptg.,1622,Dato’ Dr. Ananthan a/l Somasundaram,"Terima kasih. Justeru, saya pohon pihak
 Kerajaan Pakatan Harapan tidak terburu-buru untuk memansuhkan Rang Undang-undang
 Antiberita Tidak Benar hanya semata-mata untuk membawa reformasi selepas mengambil
 tampuk pemerintahan negara dan juga menepati janji-janji yang dibuat sebelum PRU Ke-14.
 Sekian, terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1622,Tuan Yang di-Pertua,Silakan Yang Berhormat hendak bahas.
+Bacaan Kali Yang Kedua dan Ketiga",,4.22 ptg.,1622,Tuan Yang di-Pertua,Silakan Yang Berhormat hendak bahas.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1622,Tuan Mohd Yusmadi bin Mohd Yusoff,Boleh?
+Bacaan Kali Yang Kedua dan Ketiga",,4.22 ptg.,1622,Tuan Mohd Yusmadi bin Mohd Yusoff,Boleh?
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1622,Tuan Yang di-Pertua,"Boleh, boleh."
+Bacaan Kali Yang Kedua dan Ketiga",,4.22 ptg.,1622,Tuan Yang di-Pertua,"Boleh, boleh."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1622,Tuan Mohd Yusmadi bin Mohd Yusoff,"Sebab saya tidak bersedia, tetapi.."
+Bacaan Kali Yang Kedua dan Ketiga",,4.22 ptg.,1622,Tuan Mohd Yusmadi bin Mohd Yusoff,"Sebab saya tidak bersedia, tetapi.."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1622,Tuan Yang di-Pertua,Tidak apa.
+Bacaan Kali Yang Kedua dan Ketiga",,4.22 ptg.,1622,Tuan Yang di-Pertua,Tidak apa.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1622,Tuan Mohd Yusmadi bin Mohd Yusoff,Atas peluang yang diberikan.
+Bacaan Kali Yang Kedua dan Ketiga",,4.22 ptg.,1622,Tuan Mohd Yusmadi bin Mohd Yusoff,Atas peluang yang diberikan.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1622,Tuan Yang di-Pertua,Silakan Yang Berhormat.
+Bacaan Kali Yang Kedua dan Ketiga",,4.22 ptg.,1622,Tuan Yang di-Pertua,Silakan Yang Berhormat.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1622,Tuan Mohd Yusmadi bin Mohd Yusoff,"Terima kasih, Tuan Yang di-Pertua. Saya
+Bacaan Kali Yang Kedua dan Ketiga",,4.22 ptg.,1622,Tuan Mohd Yusmadi bin Mohd Yusoff,"Terima kasih, Tuan Yang di-Pertua. Saya
 hanya ingin kongsi sedikit pandangan, terutama sekali mengambil kira perbahasan daripada
 Yang Berhormat Senator Prof. Emeritus Tan Sri Dato’ Seri Dr. Ibrahim Shah bin Abu Shah tadi.
 Ramai yang selalu membahaskan konteks hak asasi manusia adalah konteks seolah-olah hak
@@ -3066,7 +3065,7 @@ yang sebenarnya dalam konteks Malaysia ini boleh menentukan benar ataupun salah 
 dengan tahap yang lebih munasabah? Bukan *zero-sum*."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1630,Tuan Mohd Yusmadi bin Mohd Yusoff,"Munasabah itu, contohnya kalau di dalam kerangka di tempat-tempat lain dia buat
+Bacaan Kali Yang Kedua dan Ketiga",,■1630,1630,Tuan Mohd Yusmadi bin Mohd Yusoff,"Munasabah itu, contohnya kalau di dalam kerangka di tempat-tempat lain dia buat
 Majlis Media itu yang dianggotai oleh bijak pandai, warga pengamal media, pengamal undang-
 undang, pengamal agama dan sebagainya yang mana mereka ini yang akan menentukan
 bahawa apakah perkara-perkara yang menjadi musibah dalam masyarakat. Contohnya kalau
@@ -3108,20 +3107,20 @@ balik, hendak dibetulkan itu. Ia melibatkan keluarga dan sebagainya. Jadi biarla
 berbincang dengan secara..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1630,Puan Asmak binti Husin,Mohon celahan.
+Bacaan Kali Yang Kedua dan Ketiga",,■1630,1630,Puan Asmak binti Husin,Mohon celahan.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1630,Tuan Mohd Yusmadi bin Mohd Yusoff,Okey.
+Bacaan Kali Yang Kedua dan Ketiga",,■1630,1630,Tuan Mohd Yusmadi bin Mohd Yusoff,Okey.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1630,Puan Asmak binti Husin,"Mohon celahan, Tuan Yang di-Pertua, hendak tanya jiran.
+Bacaan Kali Yang Kedua dan Ketiga",,■1630,1630,Puan Asmak binti Husin,"Mohon celahan, Tuan Yang di-Pertua, hendak tanya jiran.
 Saya hendak tanya pandangan kawan di sebelah ini, adakah kewujudan mekanisme yang
 baharu seperti *Media Council* tadi dilihat lebih berfaedah dengan kewujudan rang undang-
 undang ini ataupun *Media Council* itu wujud dengan tidak ada rang undang-undang ini?
 Maknanya mungkin boleh menjadi timbal balik di situ. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1630,Tuan Mohd Yusmadi bin Mohd Yusoff,"Terima kasih jiran saya. Dia dengar saya
+Bacaan Kali Yang Kedua dan Ketiga",,■1630,1630,Tuan Mohd Yusmadi bin Mohd Yusoff,"Terima kasih jiran saya. Dia dengar saya
 berhujah.
 Pada pandangan saya, ia akan lebih sesuai dalam konteks Malaysia tanpa Undang-
 undang Antiberita Tidak Benar ini kerana kalau tidak, Majlis Media itu tidak akan boleh
@@ -3154,25 +3153,25 @@ mereka ini diwakili oleh kelompok-kelompok kepentingan yang bagi kita mempunyai 
 integritas di dalam masyarakat. Itu sahaja sumbangan saya. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1630,Tuan Yang di-Pertua,"Terima kasih. Tahniah Yang Berhormat Tuan Mohd Yusmadi.
+Bacaan Kali Yang Kedua dan Ketiga",,■1630,1630,Tuan Yang di-Pertua,"Terima kasih. Tahniah Yang Berhormat Tuan Mohd Yusmadi.
 Silakan. Ada? Yang Berhormat hendak bahas?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1630,Tuan Adrian Banie Lasimbang,"Ya, hendak bahas. Terima kasih Tuan Yang di-
+Bacaan Kali Yang Kedua dan Ketiga",,■1630,1630,Tuan Adrian Banie Lasimbang,"Ya, hendak bahas. Terima kasih Tuan Yang di-
 Pertua."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1630,Tuan Yang di-Pertua,"Kepada Ahli-ahli yang baharu, kalau hendak bahas atau
+Bacaan Kali Yang Kedua dan Ketiga",,■1630,1630,Tuan Yang di-Pertua,"Kepada Ahli-ahli yang baharu, kalau hendak bahas atau
 hendak cakap, tolong bangunlah."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1630,Tuan Adrian Banie Lasimbang,"Okey, terima kasih."
+Bacaan Kali Yang Kedua dan Ketiga",,■1630,1630,Tuan Adrian Banie Lasimbang,"Okey, terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1630,Tuan Yang di-Pertua,"Okey, silakan."
+Bacaan Kali Yang Kedua dan Ketiga",,■1630,1630,Tuan Yang di-Pertua,"Okey, silakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1636,Tuan Adrian Banie Lasimbang,"Terima kasih Tuan Yang di-Pertua. Pertama sekali,
+Bacaan Kali Yang Kedua dan Ketiga",,4.36 ptg.,1636,Tuan Adrian Banie Lasimbang,"Terima kasih Tuan Yang di-Pertua. Pertama sekali,
 saya ingin terlibat dengan perbahasan ini kerana ini adalah satu perkara yang penting. Bagi
 saya, akta ini adalah satu bentuk akta yang saya rasa lebih mengongkong apabila kita mahu
 membahaskan khasnya dalam media sosial sekarang.
@@ -3205,17 +3204,17 @@ bertanggungjawab untuk membendung penularan berita yang palsu?
 Jadi, itu sahaja. Terima kasih Tuan Yang di-Pertua."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1636,Tuan Yang di-Pertua,Terima kasih. Yang Berhormat Dato’ Sri Khairudin?
+Bacaan Kali Yang Kedua dan Ketiga",,4.36 ptg.,1636,Tuan Yang di-Pertua,Terima kasih. Yang Berhormat Dato’ Sri Khairudin?
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1640,Dato’ Sri Khairudin Samad,*Bismillahir Rahmanir Rahim*...
+Bacaan Kali Yang Kedua dan Ketiga",,4.40 ptg.,1640,Dato’ Sri Khairudin Samad,*Bismillahir Rahmanir Rahim*...
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1640,ANNOTATION,"[Mengucapkan
+Bacaan Kali Yang Kedua dan Ketiga",,4.40 ptg.,1640,ANNOTATION,"[Mengucapkan
 sepotong doa]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1640,Dato’ Sri Khairudin Samad,"Terima kasih Tuan Yang di-Pertua, saya dengar banyak yang menyampaikan
+Bacaan Kali Yang Kedua dan Ketiga",,4.40 ptg.,1640,Dato’ Sri Khairudin Samad,"Terima kasih Tuan Yang di-Pertua, saya dengar banyak yang menyampaikan
 tadi tetapi sebelum daripada itu saya hendak minta izin mukadimah dahulu. Biar kita boleh
 selesai, lepas itu Yang Berhormat Menteri hendak menjawab selepas ini.
 Pertama, saya rasa rakan-rakan saya Ahli-ahli Yang Berhormat yang ada dalam
@@ -3256,10 +3255,10 @@ pembangkang. Tidak semena-mena kita jadi pembangkang, kita kena tangkap, yang sa
 hendak tangkap yang sini..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1640,ANNOTATION,[Dewan ketawa]
+Bacaan Kali Yang Kedua dan Ketiga",,4.40 ptg.,1640,ANNOTATION,[Dewan ketawa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1640,Dato’ Sri Khairudin Samad,"Ha! Cuba kita bayangkan.
+Bacaan Kali Yang Kedua dan Ketiga",,4.40 ptg.,1640,Dato’ Sri Khairudin Samad,"Ha! Cuba kita bayangkan.
 Yang Berhormat Menteri, sekarang- jadi kawan-kawan yang di dalam pembangkang
 sekarang ini, dia jadi takut, jadi gusar. Dulu kita yang lulus undang-undang ini, senjata makan
 tuan.
@@ -3276,10 +3275,10 @@ bisik dekat Menteri dia, pergi tangkap Yang Berhormat Senator Dato’ Sri Khairu
 menyebar pula..*.*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1640,ANNOTATION,[Dewan ketawa]
+Bacaan Kali Yang Kedua dan Ketiga",,4.40 ptg.,1640,ANNOTATION,[Dewan ketawa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1640,Dato’ Sri Khairudin Samad,"Ha! Ini dia. Betul Tuan Yang di-Pertua.
+Bacaan Kali Yang Kedua dan Ketiga",,4.40 ptg.,1640,Dato’ Sri Khairudin Samad,"Ha! Ini dia. Betul Tuan Yang di-Pertua.
 Perkara ini kita kena terima hakikat ini. Kita kena terima. Bukan kita kata kita hendak
 setuju atau tidak bersetuju tetapi di dalam kehidupan kita ini, menyebar apa- hantar. Kadang-
 kadang mesej ini melainkan cerita yang lucahlah. Saya terima, saya hantar dekat Dato’ Haji
@@ -3287,10 +3286,10 @@ Mohd Suhaimi bin Abdullah, saya tidak akan hantar dekat isteri saya. Mampus, tid
 malam itu..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1640,ANNOTATION,[Dewan ketawa]
+Bacaan Kali Yang Kedua dan Ketiga",,4.40 ptg.,1640,ANNOTATION,[Dewan ketawa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1640,Dato’ Sri Khairudin Samad,"Jadi yang lucah, yang lucah ini tidak akan fitnah. Jadi bila ada cerita-cerita fitnah.
+Bacaan Kali Yang Kedua dan Ketiga",,4.40 ptg.,1640,Dato’ Sri Khairudin Samad,"Jadi yang lucah, yang lucah ini tidak akan fitnah. Jadi bila ada cerita-cerita fitnah.
 Saya difahamkan waktu taklimat hendak luluskan rang undang-undang ini dahulu. Kita
 diberitahu bahawa kita ada masalah sedikit dengan CNN, Al-Jazeera, Sky News dan
 apalagilah. Sebab mereka ini, kalau mereka masukkan berita-berita palsu jadi kita tidak boleh
@@ -3332,7 +3331,7 @@ soal yang boleh- dari segi informasi, saya setuju kerana kita tidak boleh menyek
 hak rakyat daripada menyebarkan informasi."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1650,Dato’ Sri Khairudin Samad,"Kita hendak tahu, kadang-kadang kita mahu tahu, cuma manusia ini biasalah,
+Bacaan Kali Yang Kedua dan Ketiga",,■1650,1650,Dato’ Sri Khairudin Samad,"Kita hendak tahu, kadang-kadang kita mahu tahu, cuma manusia ini biasalah,
 daripada ‘A’ ke ‘B’, kalau sudah 10 orang- dia bercerita sedikit sahaja. Dia baru cerita *accident*,
 kawan yang terima berita yang kesepuluh ini bukan setakat *accident* sahaja Tuan Yang di-
 Pertua. Bila sampai kepada orang yang kesepuluh ini dia cerita *accident*, remuk, pecah muka.
@@ -3360,7 +3359,7 @@ bomba untuk memadam. Silakan Yang Berhormat Senator Tuan Chandra Mohan a/l S.
 Thambirajah."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1650,Tuan Chandra Mohan a/l S. Thambirajah,"Terima kasih. Ini untuk kebaikan kita
+Bacaan Kali Yang Kedua dan Ketiga",,■1650,1650,Tuan Chandra Mohan a/l S. Thambirajah,"Terima kasih. Ini untuk kebaikan kita
 semualah. Kefahaman saya, walaupun kita pakai *forwarded as per received* ini, di bawah *third
 party content* kita masih boleh didapati bersalah walaupun kita *forward* dan bukan daripada
 kita, tetapi daripada *third party*. Cuma untuk kebaikan kita semua, saya harap Yang Berhormat
@@ -3368,7 +3367,7 @@ Menteri boleh menjelaskan implikasi *forwarded as per received* daripada aspek *
 party content*. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1650,Dato’ Haji Mohd Suhaimi bin Abdullah,"Tuan Yang di-Pertua, mohon mencelah
+Bacaan Kali Yang Kedua dan Ketiga",,■1650,1650,Dato’ Haji Mohd Suhaimi bin Abdullah,"Tuan Yang di-Pertua, mohon mencelah
 sedikit. Tuan Yang di-Pertua, saya terbaca tentang apa yang berlaku di Brazil berhubung
 dengan *fake news* ini. Saya baca sedikit.
 Undang-undang *anti-fake news* di Brazil memperuntukkan seseorang yang bersalah
@@ -3382,10 +3381,10 @@ Jadi, saya mahu masuk dalam *Hansard* Yang Berhormat, peranan kerajaan mahu
 *punish* siapa, dengan izin? Terima kasih, Tuan Yang di-Pertua."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1650,Tuan Yang di-Pertua,Terima kasih.
+Bacaan Kali Yang Kedua dan Ketiga",,■1650,1650,Tuan Yang di-Pertua,Terima kasih.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1650,Dato’ Sri Khairudin Samad,"Tuan Yang di-Pertua, tadi saya mahu sambung yang ini
+Bacaan Kali Yang Kedua dan Ketiga",,■1650,1650,Dato’ Sri Khairudin Samad,"Tuan Yang di-Pertua, tadi saya mahu sambung yang ini
 sebelum saya hendak masuk ke situ. Saya hendak sambung yang dadah ini. Macam-macam
 undang-undang ada, gantung sampai mati, seumur hidup mengikut berat dadah yang kita
 bawa, tetapi masih lagi berlaku. Dadah, ini hari-hari tangkap sampai yang baru-baru ini
@@ -3417,10 +3416,10 @@ akan menjadi minoriti. Kami akan tinggal empat orang, saya pun tidak tahu Presid
 Senator ini hendak berdiri dekat mana?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1650,ANNOTATION,[Dewan ketawa]
+Bacaan Kali Yang Kedua dan Ketiga",,■1650,1650,ANNOTATION,[Dewan ketawa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1650,Dato’ Sri Khairudin Samad,"Jangan risau. Soal itu jangan risau.
+Bacaan Kali Yang Kedua dan Ketiga",,■1650,1650,Dato’ Sri Khairudin Samad,"Jangan risau. Soal itu jangan risau.
 Saya mahu sebutkan di sini bahawa hakikat itu pun saya terima kerana dalam Dewan
 ini, saya buat kenyataan akhbar dan rakan-rakan saya dalam Dewan ini mengangkat sumpah
 berbeza hari, berbeza minggu, berbeza bulan, berbeza tahun. Akan tetapi di dalam Dewan
@@ -3433,100 +3432,100 @@ Oleh sebab kita masih lagi di dalam Dewan, masih lagi Ahli Dewan Negara. Itulah
 istimewanya *The Upper House* walaupun orang tidak menghormati kita..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1650,Tuan Yang di-Pertua,"Yang Berhormat, Yang Berhormat."
+Bacaan Kali Yang Kedua dan Ketiga",,■1650,1650,Tuan Yang di-Pertua,"Yang Berhormat, Yang Berhormat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1650,Dato’ Sri Khairudin Samad,Ya?
+Bacaan Kali Yang Kedua dan Ketiga",,■1650,1650,Dato’ Sri Khairudin Samad,Ya?
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1650,Tuan Yang di-Pertua,Ini sekarang ceramah fasal antiberita kah?
+Bacaan Kali Yang Kedua dan Ketiga",,■1650,1650,Tuan Yang di-Pertua,Ini sekarang ceramah fasal antiberita kah?
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1650,ANNOTATION,[Dewan ketawa]
+Bacaan Kali Yang Kedua dan Ketiga",,■1650,1650,ANNOTATION,[Dewan ketawa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1650,Dato’ Sri Khairudin Samad,"Tuan Yang di-Pertua, kita ini, saya rasa okey lah. Masih
+Bacaan Kali Yang Kedua dan Ketiga",,■1650,1650,Dato’ Sri Khairudin Samad,"Tuan Yang di-Pertua, kita ini, saya rasa okey lah. Masih
 lagi presiden."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1650,Tuan Yang di-Pertua,"Suka atau tidak suka, akan jadi minoriti juga."
+Bacaan Kali Yang Kedua dan Ketiga",,■1650,1650,Tuan Yang di-Pertua,"Suka atau tidak suka, akan jadi minoriti juga."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1650,Dato’ Sri Khairudin Samad,Ya?
+Bacaan Kali Yang Kedua dan Ketiga",,■1650,1650,Dato’ Sri Khairudin Samad,Ya?
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1650,Tuan Yang di-Pertua,"Suka tidak suka, Yang Berhormat Senator akan menjadi
+Bacaan Kali Yang Kedua dan Ketiga",,■1650,1650,Tuan Yang di-Pertua,"Suka tidak suka, Yang Berhormat Senator akan menjadi
 minoriti juga. Yang Berhormat Senator, saya ingat cukuplah Yang Berhormat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1650,Dato’ Sri Khairudin Samad,"Ya, saya hendak gulunglah. Saya bersimpati juga
+Bacaan Kali Yang Kedua dan Ketiga",,■1650,1650,Dato’ Sri Khairudin Samad,"Ya, saya hendak gulunglah. Saya bersimpati juga
 dengan Tuan Yang di-Pertua kerana lama menunggu kita *dok* merepek di sini."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1650,ANNOTATION,[Dewan ketawa]
+Bacaan Kali Yang Kedua dan Ketiga",,■1650,1650,ANNOTATION,[Dewan ketawa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1650,Dato’ Sri Khairudin Samad,"Jadi, saya sekali lagi mahu mengucapkan jutaan terima kasih kepada Ahli-ahli Yang
+Bacaan Kali Yang Kedua dan Ketiga",,■1650,1650,Dato’ Sri Khairudin Samad,"Jadi, saya sekali lagi mahu mengucapkan jutaan terima kasih kepada Ahli-ahli Yang
 Berhormat yang menerima hakikat tentang apa yang saya katakan tadi bahawa kita di sini lain.
 Kita bukan dulu kawan sekarang lawan, tidak. Kita kawan selama-lamanya. Dulu, kini dan
 selamanya. Moto itu yang kita pakai..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1650,ANNOTATION,[Dewan tepuk]
+Bacaan Kali Yang Kedua dan Ketiga",,■1650,1650,ANNOTATION,[Dewan tepuk]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1650,Dato’ Sri Khairudin Samad,"Sekian, terima kasih banyak-banyak. *Wabillahitaufik walhidayah. Wassalamualaikum
+Bacaan Kali Yang Kedua dan Ketiga",,■1650,1650,Dato’ Sri Khairudin Samad,"Sekian, terima kasih banyak-banyak. *Wabillahitaufik walhidayah. Wassalamualaikum
 warahmatullahi wabarakatuh.*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1650,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Senator Dato’ Sri Khairudin
+Bacaan Kali Yang Kedua dan Ketiga",,■1650,1650,Tuan Yang di-Pertua,"Terima kasih Yang Berhormat Senator Dato’ Sri Khairudin
 Samad. Silakan Yang Berhormat Timbalan Menteri."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1658,Timbalan Menteri di Jabatan Perdana Menteri [Tuan Mohamed Hanipa bin Maidin],Terima kasih kepada Tuan Yang di-Pertua.
+Bacaan Kali Yang Kedua dan Ketiga",,4.58 ptg.,1658,Timbalan Menteri di Jabatan Perdana Menteri [Tuan Mohamed Hanipa bin Maidin],Terima kasih kepada Tuan Yang di-Pertua.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1658,Tuan Yang di-Pertua,Yang Berhormat Menteri ada setengah jam.
+Bacaan Kali Yang Kedua dan Ketiga",,4.58 ptg.,1658,Tuan Yang di-Pertua,Yang Berhormat Menteri ada setengah jam.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1658,Tuan Mohamed Hanipa bin Maidin,"Okey, *in syaa Allah.*"
+Bacaan Kali Yang Kedua dan Ketiga",,4.58 ptg.,1658,Tuan Mohamed Hanipa bin Maidin,"Okey, *in syaa Allah.*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1658,Tuan Yang di-Pertua,"Kalau tidak boleh habiskan saya mahu Yang Berhormat
+Bacaan Kali Yang Kedua dan Ketiga",,4.58 ptg.,1658,Tuan Yang di-Pertua,"Kalau tidak boleh habiskan saya mahu Yang Berhormat
 Menteri habiskan Akta Berita pada hari ini. Ada setengah jam."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1658,Tuan Mohamed Hanipa bin Maidin,Saya *try*.
+Bacaan Kali Yang Kedua dan Ketiga",,4.58 ptg.,1658,Tuan Mohamed Hanipa bin Maidin,Saya *try*.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1658,Tuan Yang di-Pertua,Kalau perlu saya akan kemukakan usul.
+Bacaan Kali Yang Kedua dan Ketiga",,4.58 ptg.,1658,Tuan Yang di-Pertua,Kalau perlu saya akan kemukakan usul.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1658,Tuan Mohamed Hanipa bin Maidin,"Okey. Terima kasih, Tuan Yang di-Pertua. Saya
+Bacaan Kali Yang Kedua dan Ketiga",,4.58 ptg.,1658,Tuan Mohamed Hanipa bin Maidin,"Okey. Terima kasih, Tuan Yang di-Pertua. Saya
 sebenarnya ada banyak jawapan dan soalan yang diberikan kepada saya. Akan tetapi saya
 akan cuba menjawab apa yang saya catat sebab saya cuba- mungkin tidak pergi kepada
 semua persoalan yang ditimbulkan sebab saya rasa ada sesetengah itu yang bersifat
 *overlapping*, dengan izin."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1658,Tuan Yang di-Pertua,Silakan.
+Bacaan Kali Yang Kedua dan Ketiga",,4.58 ptg.,1658,Tuan Yang di-Pertua,Silakan.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1658,Tuan Mohamed Hanipa bin Maidin,"Jadi saya akan cuba pergi mungkin kepada
+Bacaan Kali Yang Kedua dan Ketiga",,4.58 ptg.,1658,Tuan Mohamed Hanipa bin Maidin,"Jadi saya akan cuba pergi mungkin kepada
 tajuk-tajuk yang besar lah ya. Seramai lebih kurang 12 orang yang telah mengemukakan
 perbahasan bagi rang undang-undang ini."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1658,Tuan Yang di-Pertua,"Itu termasuk Yang Berhormat Senator Dato’ Sri Khairudin
+Bacaan Kali Yang Kedua dan Ketiga",,4.58 ptg.,1658,Tuan Yang di-Pertua,"Itu termasuk Yang Berhormat Senator Dato’ Sri Khairudin
 Samad kah?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1658,Tuan Mohamed Hanipa bin Maidin,"Ya dan beberapa orang yang telah mencelah.
+Bacaan Kali Yang Kedua dan Ketiga",,4.58 ptg.,1658,Tuan Mohamed Hanipa bin Maidin,"Ya dan beberapa orang yang telah mencelah.
 Saya akui ada yang memang berbahas pergi kepada rang undang-undang. Ada juga yang
 berbahas mungkin lari sedikit daripada perbahasan rang undang-undang."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1700,Tuan Mohamed Hanipa bin Maidin,"Akan tetapi, inilah Dewan Negara yang mungkin berbeza dengan Dewan Rakyat.
+Bacaan Kali Yang Kedua dan Ketiga",,■1700,1700,Tuan Mohamed Hanipa bin Maidin,"Akan tetapi, inilah Dewan Negara yang mungkin berbeza dengan Dewan Rakyat.
 Saya harus akurlah.
 Pertama, daripada Yang Berhormat Senator Tuan Chandra Mohan a/l S.
 Thambirajah, ada beberapa perkara yang dibangkitkan. Saya tidaklah mahu ulas panjang
@@ -3640,7 +3639,7 @@ orang yang mungkin ada jadi mangsa, dia mungkin tidak berupaya untuk membayar pe
 dan akhirnya tidak dapat mendapat pembelaan. Itu saya boleh terima."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Tuan Mohamed Hanipa bin Maidin,"*So,* sekiranya ada kelemahan di situ, kita boleh meminda. Oleh sebab itu kami kata,
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Tuan Mohamed Hanipa bin Maidin,"*So,* sekiranya ada kelemahan di situ, kita boleh meminda. Oleh sebab itu kami kata,
 undang-undang sedia ada iaitu seperti Akta Komunikasi dan Multimedia, akta sedia ada itu
 sudah cukup untuk kita gunakan. Kalau ada kelemahan undang-undang itu, bukan kita dengan
 membuat undang-undang baharu tetapi kita meminda undang-undang yang sedia ada bagi
@@ -3659,7 +3658,7 @@ kerajaan mesti memikirkan dengan serius supaya mempertingkatkan penyiasatan, tek
 penyiasatan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Tuan Khairul Azwan bin Harun,"Tuan Yang di-Pertua, saya minta hendak *clarify,*
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Tuan Khairul Azwan bin Harun,"Tuan Yang di-Pertua, saya minta hendak *clarify,*
 satu sahaja. Minta izin Tuan Yang di-Pertua. Yang Berhormat Menteri tadi sebut banyak
 mengulangi secara retrospektif apa cadangan Yang Berhormat Menteri sewaktu menjadi
 pembangkang dahulu. Hari ini Yang Berhormat Menteri sudah bergelar kerajaan. Sebagai
@@ -3667,42 +3666,42 @@ contoh, siasatan hendak diberi teknologi baharu, apa kata cadangan itu *spot* sa
 Berhormat Menteri? Minta *clarify*. Terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Tuan Mohamed Hanipa bin Maidin,"Okey. Saya hendak beritahu bahawa cadangan
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Tuan Mohamed Hanipa bin Maidin,"Okey. Saya hendak beritahu bahawa cadangan
 ini- masa hari itu cadangan, sekarang ini kita tidak di peringkat cadanganlah tetapi takkan lah
 hendak buat itu, tekan, terus buat. Ia ada juga proses-prosesnya kan? Hendak buat macam
 mana, duit kita pun sudah banyak hilang."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Tuan Khairul Azwan bin Harun,Tidak. Yang Berhormat Menteri tadi...
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Tuan Khairul Azwan bin Harun,Tidak. Yang Berhormat Menteri tadi...
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Tuan Mohamed Hanipa bin Maidin,Jangan buka.
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Tuan Mohamed Hanipa bin Maidin,Jangan buka.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Tuan Khairul Azwan bin Harun,"Tuan Yang di-Pertua, bukan. Saya minta *clarify,*
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Tuan Khairul Azwan bin Harun,"Tuan Yang di-Pertua, bukan. Saya minta *clarify,*
 bila Yang Berhormat Menteri sebut begitu, bermakna Yang Berhormat Menteri memberi
 harapan kepada rakyat bahawa kerajaan pada hari ini berusaha untuk menambah baik. Jadi,
 kalau boleh, maklumkan apakah itu sebenarnya agenda atau semata-mata hendak menjawab
 atau berbahas di Dewan Negara?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Tuan Mohamed Hanipa bin Maidin,"Tidak, itu memang agenda kita. Saya sebagai
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Tuan Mohamed Hanipa bin Maidin,"Tidak, itu memang agenda kita. Saya sebagai
 Menteri yang menjaga bahagian perundangan, saya akan memastikan segala apa yang saya
 cakap di sini saya akan cadangkan supaya dipertimbangkan oleh pihak kerajaan. Saya
 percaya..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Tuan Yang di-Pertua,"Akan tetapi pada masa sekarang Yang Berhormat Menteri
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Tuan Yang di-Pertua,"Akan tetapi pada masa sekarang Yang Berhormat Menteri
 cakap duit sudah hilang."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Tuan Mohamed Hanipa bin Maidin,
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Tuan Mohamed Hanipa bin Maidin,
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1710,ANNOTATION,[Ketawa]
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,ANNOTATION,[Ketawa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Tuan Mohamed Hanipa bin Maidin,"Yang Amat Berhormat Perdana
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Tuan Mohamed Hanipa bin Maidin,"Yang Amat Berhormat Perdana
 Menteri sebenarnya bersifat terbuka dalam hal ini. Saya percaya beliau akan mengambil kira.
 *Of course*-lah ia tertakluk pada kemampuan kewangan kita.
 Jadi, kita sekarang ini sedang proses cara hendak dapat duit balik. Saya kata
@@ -3729,36 +3728,36 @@ bayar *free,* dia ramai-ramai hendak menuju ke sana untuk dapatkan bantuan percu
 Saya tahu sangat sebab saya sebagai Ahli Parlimen..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Dato’ Ong Chong Swen,"Saya minta. Boleh saya cerita? Saya tak ingat itu kehidupan
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Dato’ Ong Chong Swen,"Saya minta. Boleh saya cerita? Saya tak ingat itu kehidupan
 susah, *but is the greed of most people.* Kalau ada percuma bila-bila, kalau hari raya Cina kata
 ada angpau, *you* tengok beratus-ratus orang berbaris. *It is not just the* kehidupan susah. *It is a
 human character of getting free.*"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Tuan Mohamed Hanipa bin Maidin,"Terima kasih Yang Berhormat Senator. Saya
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Tuan Mohamed Hanipa bin Maidin,"Terima kasih Yang Berhormat Senator. Saya
 setuju dengan apa yang dikatakan oleh Yang Berhormat Senator. Kalau dalam Islam
 dipanggil..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1710,ANNOTATION,[Berucap dalam bahasa Arab]
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,ANNOTATION,[Berucap dalam bahasa Arab]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Tuan Mohamed Hanipa bin Maidin,"Maknanya, kalau tidak susah pun orang sudah
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Tuan Mohamed Hanipa bin Maidin,"Maknanya, kalau tidak susah pun orang sudah
 ramai, kalau susah lagi lah. Nampak tidak? Yang itu. Tidak susah pun orang sudah ramai,
 kalau susah lagi lah ramai. Jadi, itu yang dipanggil..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1710,ANNOTATION,[Berucap dalam bahasa Arab]
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,ANNOTATION,[Berucap dalam bahasa Arab]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Tuan Mohamed Hanipa bin Maidin,"Maknanya,
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Tuan Mohamed Hanipa bin Maidin,"Maknanya,
 dalam Islam ia katakan..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1710,ANNOTATION,[Membaca sepotong ayat Al-Quran]
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,ANNOTATION,[Membaca sepotong ayat Al-Quran]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Tuan Mohamed Hanipa bin Maidin,"Antara maksudnya, jangan lah
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Tuan Mohamed Hanipa bin Maidin,"Antara maksudnya, jangan lah
 kamu berkata ‘ah’ pada ibu bapa kamu”. Makna kata *‘ah’* pun tidak boleh, bantai, pukul lagi
 tidak boleh.
 Jadi, itulah. Jadi, saya harap Yang Berhormat Senator boleh faham. Bila orang susah
@@ -3768,18 +3767,18 @@ Seterusnya juga, saya hendak sambung daripada Yang Berhormat Senator Dato'
 Hajah ‘Fahriyah’."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Tuan Yang di-Pertua,Fahariyah.
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Tuan Yang di-Pertua,Fahariyah.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Tuan Mohamed Hanipa bin Maidin,"Fahariyah. Minta maaf. Tuan Yang di-Pertua,
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Tuan Mohamed Hanipa bin Maidin,"Fahariyah. Minta maaf. Tuan Yang di-Pertua,
 saya minta maaf, sesetengah nama ini mungkin saya sebut tidak betul sebab saya pertama
 kali dapat berjumpa dengan Yang Berhormat Senator di sini."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Tuan Yang di-Pertua,"Ya, Yang Berhormat."
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Tuan Yang di-Pertua,"Ya, Yang Berhormat."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Tuan Mohamed Hanipa bin Maidin,"Okey. Beliau telah membangkitkan banyak isu
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Tuan Mohamed Hanipa bin Maidin,"Okey. Beliau telah membangkitkan banyak isu
 juga. Saya rasa sesetengah isu itu bagi saya satu isu yang memang *justified* dan juga saya
 boleh terima. Saya tidak katalah isu-isu itu adalah isu-isu yang remeh. Saya ingin menyatakan
 bahawa segala yang dibangkitkan itu, kalau yang boleh kita pertimbangkan, kita akan
@@ -3807,10 +3806,10 @@ ialah kita mesti bagi alasan kenapa kita membuat keputusan- *fairness to the dec
 beri *reason.* Jadi, *reason* nya ialah dia makan..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1710,ANNOTATION,[Membaca sepotong ayat Al-Quran]
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,ANNOTATION,[Membaca sepotong ayat Al-Quran]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Tuan Mohamed Hanipa bin Maidin,"Janganlah
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Tuan Mohamed Hanipa bin Maidin,"Janganlah
 kamu dekati pokok itu. Itu alasannya. Bila dia dekati pokok itu, dia makan buah khuldi, dia
 dihalau. Jadi, ia ada alasan. Maknanya, bukan setakat dihalau sahaja tetapi alasan. Itu adalah
 *basis of fairness* atau *justice.*
@@ -3821,14 +3820,14 @@ binti Husin tadi, dia kata tentang perlunya kita bersifat adil, Islam bersifat *
 akui..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Dato' Hajah Fahariyah binti Haji Md Nordin,"Tuan Yang di-Pertua, saya mohon
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Dato' Hajah Fahariyah binti Haji Md Nordin,"Tuan Yang di-Pertua, saya mohon
 mencelah. Yang Berhormat Menteri?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Tuan Mohamed Hanipa bin Maidin,Boleh.
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Tuan Mohamed Hanipa bin Maidin,Boleh.
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1710,Dato' Hajah Fahariyah binti Haji Md Nordin,"Pertama, saya mengucapkan terima
+Bacaan Kali Yang Kedua dan Ketiga",,■1710,1710,Dato' Hajah Fahariyah binti Haji Md Nordin,"Pertama, saya mengucapkan terima
 kasih kepada Yang Berhormat Menteri di atas keprihatinan tentang apa yang telah yang saya
 bawakan. Mungkin saya mohon penjelasan sedikit, *elaboration a bit more from* Yang
 Berhormat Menteri. Berapa lama kah rang undang-undang yang disebutkan tadi akan dipinda?
@@ -3837,12 +3836,12 @@ tempoh antara rang undang-undang yang hendak dipinda dan dimansuhkan ini akan ad
 kes ataupun perkara-perkara yang melibatkan berita tidak benar ini"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1720,Dato' Hajah Fahariyah binti Haji Md Nordin,"*So*, maka saya hendak tanya kepada Yang Berhormat Menteri, apakah perancangan
+Bacaan Kali Yang Kedua dan Ketiga",,■1720,1720,Dato' Hajah Fahariyah binti Haji Md Nordin,"*So*, maka saya hendak tanya kepada Yang Berhormat Menteri, apakah perancangan
 dan agak-agaknya berapa lama kah tempoh sehingga akta baru atau akta yang sedia ada ini
 akan digubal bersesuaian dengan perkara yang dibangkitkan tadi, terima kasih."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1720,Tuan Mohamed Hanipa bin Maidin,"Okey, terima kasih kepada Yang Berhormat
+Bacaan Kali Yang Kedua dan Ketiga",,■1720,1720,Tuan Mohamed Hanipa bin Maidin,"Okey, terima kasih kepada Yang Berhormat
 Senator. Saya hendak bagi tahu memang saya tidak boleh hendak bagi *commit* kepada masa.
 Itu mungkin keputusan nanti perlu ke bawa ke Kabinet dan sebagainya. Saya tidak ada- kata
 orang *I’m not privy to that*. *So*, saya tidak boleh hendak bagi satu jaminan masa.
@@ -3872,10 +3871,10 @@ Untuk makluman Yang Berhormat Senator Dato’ Sri Khairudin sebenarnya berita
 lucah lagilah tidak boleh..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1720,ANNOTATION,[Ketawa]
+Bacaan Kali Yang Kedua dan Ketiga",,■1720,1720,ANNOTATION,[Ketawa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1720,Tuan Mohamed Hanipa bin Maidin,"Kalau tadi berita tidak benarkan.
+Bacaan Kali Yang Kedua dan Ketiga",,■1720,1720,Tuan Mohamed Hanipa bin Maidin,"Kalau tadi berita tidak benarkan.
 Saya bagi contoh berita lucah kenapa tidak boleh. Ada peruntukan sebenarnya Yang
 Berhormat Dato’ Sri Khairudin mungkin Yang Berhormat Dato’ Sri Khairudin tidak biasa, tidak
 tahulah tapi saya hendak bacakan. Antaranya ialah berkaitan dengan seksyen yang melibatkan
@@ -3885,32 +3884,32 @@ Berhormat Dato’ Sri Khairudin. *So*, lepas ini jangan kata *forwarded as per r
 bahaya"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1720,ANNOTATION,[Ketawa]
+Bacaan Kali Yang Kedua dan Ketiga",,■1720,1720,ANNOTATION,[Ketawa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1720,Dato’ Sri Khairudin Samad,"Yang Berhormat Menteri maksud saya tadi kalau saya
+Bacaan Kali Yang Kedua dan Ketiga",,■1720,1720,Dato’ Sri Khairudin Samad,"Yang Berhormat Menteri maksud saya tadi kalau saya
 hantar dekat isteri saya ataupun lucah ini kalau yang daripada pornografi itu sebab ia akta
 lain..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1720,Tuan Yang di-Pertua,"Yang Berhormat Dato’ Sri, tadi cakap hantar pada Dato’
+Bacaan Kali Yang Kedua dan Ketiga",,■1720,1720,Tuan Yang di-Pertua,"Yang Berhormat Dato’ Sri, tadi cakap hantar pada Dato’
 Suhaimi..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1720,ANNOTATION,[Dewan ketawa]
+Bacaan Kali Yang Kedua dan Ketiga",,■1720,1720,ANNOTATION,[Dewan ketawa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1720,Dato’ Sri Khairudin Samad,"Hantar dekat Dato’ Suhaimi okey, dia tidak cerita dekat
+Bacaan Kali Yang Kedua dan Ketiga",,■1720,1720,Dato’ Sri Khairudin Samad,"Hantar dekat Dato’ Suhaimi okey, dia tidak cerita dekat
 orang. Saya kalau hantar dekat isteri masalah. Saya kata pornografi tapi kalau satu *act* yang
 dicuri, diambil orang dan disebarkan. Yang itu mungkin salah, bukan sahaja salah dari segi ini-
 mungkin akta lucah itu yang ini. Maksud saya tadi..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1720,Tuan Yang di-Pertua,"Soalan tadi Yang Berhormat Tuan Chandra Mohan pun
+Bacaan Kali Yang Kedua dan Ketiga",,■1720,1720,Tuan Yang di-Pertua,"Soalan tadi Yang Berhormat Tuan Chandra Mohan pun
 bangkit."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1720,Tuan Mohamed Hanipa bin Maidin,"Okey, saya tahu beliau mungkin bergurau. Akan
+Bacaan Kali Yang Kedua dan Ketiga",,■1720,1720,Tuan Mohamed Hanipa bin Maidin,"Okey, saya tahu beliau mungkin bergurau. Akan
 tetapi sebenarnya hendak bagi tahu kepada Yang Berhormat Dato’ Sri Khairudin bahawa kalau
 kandungan yang bersifat lucah ini walaupun kita tidak hantar bukan kepada isteri kita pun,
 hantar kepada orang lain pun, walaupun orang itu mungkin tidak baca, sudah salah. Itu sebab
@@ -3920,37 +3919,37 @@ undang. Jangan ingat walaupun Yang Berhormat Dato’ Suhaimi tidak baca, ini dua
 pakatlah tapi maknanya tetap salah."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1720,Tuan Yang di-Pertua,"Jadi sama sekalilah, lucah tidak boleh."
+Bacaan Kali Yang Kedua dan Ketiga",,■1720,1720,Tuan Yang di-Pertua,"Jadi sama sekalilah, lucah tidak boleh."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1720,Tuan Mohamed Hanipa bin Maidin,"Tidak boleh. Tuan Yang di-Pertua tahulah,
+Bacaan Kali Yang Kedua dan Ketiga",,■1720,1720,Tuan Mohamed Hanipa bin Maidin,"Tidak boleh. Tuan Yang di-Pertua tahulah,
 sebagai seorang pengamal undang-undang dia tahu. Jadi kena berhati-hati. Jadi saya rasa
 beliau bergurau tapi saya hendak katakan kena berhati-hati jugalah.
 Tentang Yang Berhormat Senator Puan Asmak tadi berkaitan dengan *tabbayun*. Saya
 akui memang betul, saya tidak tahulah tadi saya dengar dia baca macam..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1720,ANNOTATION,"[Berucap dalam
+Bacaan Kali Yang Kedua dan Ketiga",,■1720,1720,ANNOTATION,"[Berucap dalam
 bahasa Arab]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1720,Tuan Mohamed Hanipa bin Maidin,"Saya rasa bukan, kalau saya salah dengar saya minta maaf sebenarnya..."
+Bacaan Kali Yang Kedua dan Ketiga",,■1720,1720,Tuan Mohamed Hanipa bin Maidin,"Saya rasa bukan, kalau saya salah dengar saya minta maaf sebenarnya..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1720,ANNOTATION,[Berucap dalam bahasa Arab]
+Bacaan Kali Yang Kedua dan Ketiga",,■1720,1720,ANNOTATION,[Berucap dalam bahasa Arab]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1720,Tuan Mohamed Hanipa bin Maidin,Bukan...
+Bacaan Kali Yang Kedua dan Ketiga",,■1720,1720,Tuan Mohamed Hanipa bin Maidin,Bukan...
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1720,ANNOTATION,[Berucap dalam bahasa Arab]
+Bacaan Kali Yang Kedua dan Ketiga",,■1720,1720,ANNOTATION,[Berucap dalam bahasa Arab]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1720,ANNOTATION,"[Membaca sepotong ayat
+Bacaan Kali Yang Kedua dan Ketiga",,■1720,1720,ANNOTATION,"[Membaca sepotong ayat
 Al-Quran]"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1720,Tuan Mohamed Hanipa bin Maidin,"surah Al Hujurat ayat enam.
+Bacaan Kali Yang Kedua dan Ketiga",,■1720,1720,Tuan Mohamed Hanipa bin Maidin,"surah Al Hujurat ayat enam.
 Okey, *tabbayun* itu betul sebab itu bagi saya untuk *tabbayun* ini kita mesti ada dengar
 dua-dua pihak. Yang ini kita tidak setuju dengan seksyen 7 ini sebab dia dengar sebelah pihak
 sahaja *ex parte.* Ini saya hendak mencadangkan kepada Yang Berhormat Senator Puan
@@ -3963,10 +3962,10 @@ Islam. Saya ulang *audi alteram partem,* ini bahasa Latinlah. Tidak apa kalau ti
 tidak tahu pun tidak masuk neraka. Jangan takut"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1720,ANNOTATION,[Ketawa]
+Bacaan Kali Yang Kedua dan Ketiga",,■1720,1720,ANNOTATION,[Ketawa]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1720,Tuan Mohamed Hanipa bin Maidin,"Jadi *audi alteram partem* ini kita dengar dengan jelas. Maknanya *natural justice, we
+Bacaan Kali Yang Kedua dan Ketiga",,■1720,1720,Tuan Mohamed Hanipa bin Maidin,"Jadi *audi alteram partem* ini kita dengar dengan jelas. Maknanya *natural justice, we
 have to hear both side*. Jadi sekarang ini apabila kita *ex parte* kita dengar satu pihak sahaja.
 Pihak ini mungkin maklumat yang dia bagi itu mungkin tidak sepenuhnya betul. Akan tetapi,
 kalau kita dengar dua-dua belah pihak, baru hakim dengar baru betul. Sebab itu kata
@@ -3975,49 +3974,49 @@ dua pihak. Oleh sebab itu dalam Islam- betul, saya setuju dengan apa dikatakan o
 Berhormat Senator Puan Asmak tadi berkaitan dengan..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1720,Puan Asmak binti Husin,"Saya mohon betul, Muaz bin Jabal kan?"
+Bacaan Kali Yang Kedua dan Ketiga",,■1720,1720,Puan Asmak binti Husin,"Saya mohon betul, Muaz bin Jabal kan?"
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1720,Tuan Mohamed Hanipa bin Maidin,"Muaz Jabal lain. Itu ada, itu lain. Benda ini saya
+Bacaan Kali Yang Kedua dan Ketiga",,■1720,1720,Tuan Mohamed Hanipa bin Maidin,"Muaz Jabal lain. Itu ada, itu lain. Benda ini saya
 tahu sangat sebab saya belajar ilmu syariah. Jadi bukan saya kata- Muaz Jabal betul. Itu fasal
 dia dilantik..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1720,ANNOTATION,[Membaca sepotong hadis]
+Bacaan Kali Yang Kedua dan Ketiga",,■1720,1720,ANNOTATION,[Membaca sepotong hadis]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1720,Tuan Mohamed Hanipa bin Maidin,"Dengan apa kamu hukum, pertama dengan Al-Quran,
+Bacaan Kali Yang Kedua dan Ketiga",,■1720,1720,Tuan Mohamed Hanipa bin Maidin,"Dengan apa kamu hukum, pertama dengan Al-Quran,
 itu ada. Akan tetapi, hadis lain ada juga. Jangan ingat satu hadis sahaja, ada hadis lain juga.
 Yusmadi kena betul, Yusmadi pelajar UIA itu, kawan saya itu.
 Okey, saya hendak terang tadi. Tentang apa yang dikatakan tadi yang saya kata
 kedua-dua pihak itu sebab itu dalam ilmu hadis itu ia panggil ilmu sanad, ada ilmu isnad..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1720,ANNOTATION,[Berucap dalam bahasa Arab]
+Bacaan Kali Yang Kedua dan Ketiga",,■1720,1720,ANNOTATION,[Berucap dalam bahasa Arab]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1720,Tuan Mohamed Hanipa bin Maidin,Kata Abdullah ibn Mubarak...
+Bacaan Kali Yang Kedua dan Ketiga",,■1720,1720,Tuan Mohamed Hanipa bin Maidin,Kata Abdullah ibn Mubarak...
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1720,ANNOTATION,[Berucap dalam bahasa Arab]
+Bacaan Kali Yang Kedua dan Ketiga",,■1720,1720,ANNOTATION,[Berucap dalam bahasa Arab]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1720,Tuan Mohamed Hanipa bin Maidin,*Isnad* daripada agama...
+Bacaan Kali Yang Kedua dan Ketiga",,■1720,1720,Tuan Mohamed Hanipa bin Maidin,*Isnad* daripada agama...
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1720,ANNOTATION,[Berucap dalam bahasa Arab]
+Bacaan Kali Yang Kedua dan Ketiga",,■1720,1720,ANNOTATION,[Berucap dalam bahasa Arab]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1720,Tuan Mohamed Hanipa bin Maidin,"Kalau tidak ada *isnad* ini orang semua
+Bacaan Kali Yang Kedua dan Ketiga",,■1720,1720,Tuan Mohamed Hanipa bin Maidin,"Kalau tidak ada *isnad* ini orang semua
 akan bercakap. Oleh sebab itu dalam- orang bercakap dan siapa bercakap apa pun. Sebab itu
 dalam Islam ada *isnad* konsep *isnad* ini adalah konsep ada perawi supaya berita itu betul sebab
 itu dalam hadis itu ia ada ilmu..."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1720,ANNOTATION,[Berucap dalam bahasa Arab]
+Bacaan Kali Yang Kedua dan Ketiga",,■1720,1720,ANNOTATION,[Berucap dalam bahasa Arab]
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1720,Tuan Mohamed Hanipa bin Maidin,"Ini ustaz kita boleh terangkan
+Bacaan Kali Yang Kedua dan Ketiga",,■1720,1720,Tuan Mohamed Hanipa bin Maidin,"Ini ustaz kita boleh terangkan
 nantilah.
 Jadi ini menunjukkan betapa Islam begitu teliti dari segi berita yang hendak
 disampaikan mesti betul. Sebab itu tidak boleh ada hadis *maudhu.* Akan tetapi, dalam Islam ini
@@ -4050,15 +4049,15 @@ bukan sahaja setakat belajar undang-undang, Perlembagaan. Kita juga belajar
 *constitutionalism*. Saya tidak hendak syarah fasal benda ini nanti panjang pulakan."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1720,Tuan Yang di-Pertua,"Yang Berhormat, Timbalan Menteri. Sila duduk."
+Bacaan Kali Yang Kedua dan Ketiga",,■1720,1720,Tuan Yang di-Pertua,"Yang Berhormat, Timbalan Menteri. Sila duduk."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1720,Tuan Mohamed Hanipa bin Maidin,"Okey, sudah habis masa. Terima kasih, Tuan
+Bacaan Kali Yang Kedua dan Ketiga",,■1720,1720,Tuan Mohamed Hanipa bin Maidin,"Okey, sudah habis masa. Terima kasih, Tuan
 Yang di-Pertua."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1720,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, Mesyuarat Dewan hari ini
+Bacaan Kali Yang Kedua dan Ketiga",,■1720,1720,Tuan Yang di-Pertua,"Ahli-ahli Yang Berhormat, Mesyuarat Dewan hari ini
 ditangguhkan sehingga jam 10 pagi, hari Selasa, 28 Ogos 2018."
 RANG UNDANG-UNDANG,"RANG UNDANG-UNDANG ANTIBERITA TIDAK BENAR
 (PEMANSUHAN) 2018
-Bacaan Kali Yang Kedua dan Ketiga",,1730,ANNOTATION,[Dewan ditangguhkan pada pukul 5.30 petang]
+Bacaan Kali Yang Kedua dan Ketiga",,5.30 petang,1730,ANNOTATION,[Dewan ditangguhkan pada pukul 5.30 petang]
