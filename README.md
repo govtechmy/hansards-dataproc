@@ -3,7 +3,8 @@ This project aims to digitalise the Malaysian [Dewan Rakyat](https://www.parlime
 ## Usage
 1. Install requirements `pip install -r requirements.txt`
 2. Change directory with either `cd dewan_rakyat` or `cd dewan_negara`.
-3. Bulk process with `python3 batch_run.py`. If you are rerunning, free to comment out certain procedures to speed up the prcoess (e.g. `parse_pdf.py` takes a long time but we have stored the output in `parsed_pdf`).
+3. (Optional) Run `python3 download_hansards.py` to download the source PDFs.
+4. Bulk process with `python3 batch_run.py`. If you are rerunning, free to comment out certain procedures to speed up the prcoess (e.g. `parse_pdf.py` takes a long time but we have stored the output in `parsed_pdf`).
 
 ![](README_images/usage.png)
 
