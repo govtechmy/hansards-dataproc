@@ -6,15 +6,32 @@ import re
 from thefuzz import process
 import json
 import csv
+from datetime import datetime, timedelta
+
+
+def within_30_minutes(time_str1, time_str2):
+    try:
+        # Parse the time strings to datetime objects
+        time1 = datetime.strptime(time_str1, '%H%M')
+        time2 = datetime.strptime(time_str2, '%H%M')
+    except ValueError:
+        # Handle invalid time format
+        raise ValueError('Invalid time format. Please use HHMM format.')
+
+    # Find the absolute difference between the two times
+    time_difference = abs((time1 - time2).total_seconds()) / 60  # Convert seconds to minutes
+
+    # Check if the difference is within 30 minutes
+    return time_difference <= 30
 
 
 def is_timestamp(text):
     text = text.strip()
     return re.search(r'[■◼▪] ?\d{4}\.?', text) or \
-           re.search(r'^ *\d{1,2}[.:] ?\d ?\d ?((pg)|(PG)|(pagi)|(tgh)|(Tgh)|'
+           re.search(r'^[■◼▪]?(\(cid:2[12]\))? *\d{1,2}[.:] ?\d ?\d ?((pg)|(PG)|(pagi)|(tgh)|(Tgh)|'
                      r'(ptg)|(Ptg)|(petang)|(mlm)|(malam)|(pm))\.?',
                      text) or \
-           re.search(r'^\d{4}$', text)
+           re.search(r'^(\(cid:[12]\))* ?\d{4}$', text)
     # the first two major types are
     # 1.  ■ 1030 which is in regular 10 minute intervals
     # 2.  10.03 tgh. which has irregular appearances
@@ -35,6 +52,14 @@ def get_timestamp_from_annotation(text):
 
 
 def standardise_timestamp(timestamp):
+    def mod_24(x):
+        assert len(x) == 4
+        if x[:2] == '24':
+            x = '00' + x[2:]
+        return x
+
+    # strip cid
+    timestamp = re.sub(r'\(cid:[12]\)', '', timestamp)
     numbers = ''.join(re.findall(r'\d+', timestamp))
     assert len(numbers) != 0
     if len(numbers) < 3:
@@ -42,26 +67,23 @@ def standardise_timestamp(timestamp):
         numbers += '00'
     if re.search(r'^[■◼▪] ?\d{4}\.?', timestamp):
         # if there is a preceding bullet then it is usually in 24h format
-        return numbers
+        return mod_24(numbers)
     elif re.search(r'(pg)|(PG)|(pagi)', timestamp):
         if len(numbers) == 3:
-            return '0' + numbers
+            return mod_24('0' + numbers)
         else:
-            # handle 12.35 pg
-            if numbers[:2] == '12':
-                return '00' + numbers[-2:]
             assert len(numbers) == 4, f'Expected 4 digits but got {numbers} from {timestamp}'
-            return numbers
+            return mod_24(numbers)
     else:
         # malam, pm, tgh etc
         # apart from 12pm, all others need to add 12
         if len(numbers) == 4 and numbers[:2] == '12':
-            return numbers
+            return mod_24(numbers)
         hour = int(numbers[:-2]) + 12
         if hour >= 24:
             # they reported it in 24h
             hour -= 12
-        return str(hour) + numbers[-2:]
+        return mod_24(str(hour) + numbers[-2:])
 
 
 def prop_of_1_among_binary(text):
@@ -733,13 +755,19 @@ def tabulate(hansard_date):
 
     # check that timestamps are in order
     timestamps = [speech[4] for speech in speeches]
-    sorted_timestamps = sorted(timestamps)
-    if timestamps != sorted_timestamps:
-        with open("warnings/unsorted_timestamps.txt", 'a') as f:
-            f.write(f'\n{hansard_date}\n')
-            for idx in range(len(timestamps)):
-                if timestamps[idx] != sorted_timestamps[idx]:
-                    f.write(f'{old_timestamp_list[idx]}, {timestamps[idx]}, {sorted_timestamps[idx]}\n')
+    unique_timestamps = set()
+    unique_timestamps_row = []
+    for speech in speeches:
+        if speech[4] not in unique_timestamps:
+            unique_timestamps.add(speech[4])
+            unique_timestamps_row.append(speech)
+
+    for idx in range(len(unique_timestamps_row) - 1):
+        # check if two strings in 24 hour format is within 30 minutes of each other
+        if not within_30_minutes(unique_timestamps_row[idx][4], unique_timestamps_row[idx + 1][4]):
+            with open("warnings/unsorted_timestamps.txt", 'a') as f:
+                f.write(f'{hansard_date}\n{unique_timestamps_row[idx][3]} AND {unique_timestamps_row[idx][4]}\n')
+                f.write(f'{unique_timestamps_row[idx + 1][3]} AND {unique_timestamps_row[idx + 1][4]}\n\n')
 
     # export speeches to csv
     with open(f'{dir_path}result.csv', mode='w', newline='') as file:
@@ -751,7 +779,7 @@ def tabulate(hansard_date):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("hansard_date", help="hansard_date eg. 23052023",
-                        default="02032023", nargs="?")
+                        default="13092023", nargs="?")
     # Parse arguments
     args = parser.parse_args()
     tabulate(args.hansard_date)

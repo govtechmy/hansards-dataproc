@@ -103,7 +103,7 @@ if __name__ == "__main__":
 
     hansard_dates = [x[3:3 + 8] for x in filenames]
     # preprocess()
-    post_parsing_edits.modify_tables()
-    pre_tabulate()
-    edit_hansards.edit_hansards()
+    # post_parsing_edits.modify_tables()
+    # pre_tabulate()
+    # edit_hansards.edit_hansards()
     tabulate()

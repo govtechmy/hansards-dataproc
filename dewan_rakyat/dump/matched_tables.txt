@@ -1,5 +1,5 @@
 14022023
-Anchor row is: 2021 87
+Anchor row is: Tahun Peratus
 Table text similarity score is: 100
 Table text is:
 ___
@@ -22,7 +22,7 @@ Tahun  Peratus
 ___
 
 14022023
-Anchor row is: 2020 RM58 bilion
+Anchor row is: Tahun Jumlah Pelaburan FDI
 Table text similarity score is: 100
 Table text is:
 ___
@@ -43,7 +43,7 @@ Tahun  Jumlah Pelaburan FDI
 ___
 
 21022023
-Anchor row is: Melebihi RM1 juta 168,927
+Anchor row is: Harga Rumah (RM) Bilangan Unit 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -72,7 +72,7 @@ Melebihi RM1 juta  168,927
 ___
 
 07032023
-Anchor row is: Kedah 8.4
+Anchor row is: Negeri Kadar Kemiskinan 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -97,7 +97,7 @@ Kedah  8.4
 ___
 
 07032023
-Anchor row is: Terengganu 6.0
+Anchor row is: Perak 7.3
 Table text similarity score is: 100
 Table text is:
 ___
@@ -114,7 +114,7 @@ Terengganu  6.0
 ___
 
 24052023
-Anchor row is: Ikan makanan 91.7
+Anchor row is: Jenis Komoditi Makanan Utama Peratusan (%)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -145,7 +145,7 @@ Ikan makanan  91.7
 ___
 
 09032023
-Anchor row is: Kuala Krai proses perbicaraan
+Anchor row is: Bil Projek Status
 Table text similarity score is: 92
 Table text is:
 ___
@@ -175,7 +175,7 @@ Kuala Krai  proses perbicaraan
 ___
 
 28032023
-Anchor row is: Johor 9,914,000
+Anchor row is: Negeri Ringgit Malaysia
 Table text similarity score is: 100
 Table text is:
 ___
@@ -210,7 +210,7 @@ Johor  9,914,000
 ___
 
 28032023
-Anchor row is: Sarawak 8,906,500
+Anchor row is: Sabah 7,444,000
 Table text similarity score is: 100
 Table text is:
 ___
@@ -227,7 +227,7 @@ Sarawak  8,906,500
 ___
 
 28032023
-Anchor row is: Sibu, Sarawak
+Anchor row is: Bil Sekolah Jumlah Bilik  Peruntukan 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -260,7 +260,7 @@ Sibu, Sarawak
 ___
 
 22022023
-Anchor row is: 2021 248 bilion Untung 48.6 bilion
+Anchor row is: Tahun Pendapatan (RM) Untung dan Rugi (RM)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -285,7 +285,7 @@ Tahun  Pendapatan (RM)  Untung dan Rugi (RM)
 ___
 
 22022023
-Anchor row is: Cina RM45,756 RM45,162 RM594
+Anchor row is: Bumiputera RM15,541 RM4,937 RM10,604
 Table text similarity score is: 100
 Table text is:
 ___
@@ -312,7 +312,7 @@ Cina  RM45,756  RM45,162  RM594
 ___
 
 22022023
-Anchor row is: India RM25,724 RM14,929 RM10,785
+Anchor row is: Kaum Simpanan median  Simpanan median  Penurunan 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -331,7 +331,7 @@ India  RM25,724  RM14,929  RM10,785
 ___
 
 08032023
-Anchor row is: 4. Vietnam 58
+Anchor row is: Bil Negara Peratus (%)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -354,7 +354,7 @@ Bil  Negara  Peratus (%)
 ___
 
 08032023
-Anchor row is: 14. Kelantan 3.8 juta
+Anchor row is: Bil Negeri Jumlah (RM)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -405,8 +405,31 @@ Bil  Negeri  Jumlah (RM)
 
 ___
 
+09102023
+Anchor row is: Bil Rangkaian Bilangan Kampit
+Table text similarity score is: 100
+Table text is:
+___
+Bil Rangkaian Bilangan Kampit
+1. Pasar raya 423,816
+2. FAMA 109,829
+3. LPP 60,240
+4. Pemborong dan pengedar 115,093
+
+___
+
+Candidate text is:
+___
+Bil  Rangkaian  Bilangan Kampit 
+1.  Pasar raya  423,816 
+2.  FAMA  109,829 
+3.  LPP  60,240 
+4.  Pemborong dan pengedar  115,093 
+
+___
+
 20012022
-Anchor row is: Kelantan 12 8
+Anchor row is: Negeri Jumlah pam bergerak Jumlah pam Kekal 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -429,7 +452,7 @@ Kelantan   12   8
 ___
 
 15032022
-Anchor row is: 2021 17
+Anchor row is: Tahun Jumlah 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -458,7 +481,7 @@ didakwa
 ___
 
 04102022
-Anchor row is: Jumlah 81
+Anchor row is: Negara Bilangan warga asing 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -491,7 +514,7 @@ Jumlah  81
 ___
 
 04082022
-Anchor row is: Vietnam 600,000
+Anchor row is: Negara Penyumbang Jumlah (USD)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -520,7 +543,7 @@ Vietnam  600,000
 ___
 
 03032022
-Anchor row is: Pelbagai 4.6
+Anchor row is: KATEGORI PERATUS 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -551,7 +574,7 @@ Pelbagai  4.6
 ___
 
 03032022
-Anchor row is: Serian 25 2
+Anchor row is: Parlimen Perancangan Tapak  Projek yang siap
 Table text similarity score is: 100
 Table text is:
 ___
@@ -578,7 +601,7 @@ Serian  25  2
 ___
 
 03032022
-Anchor row is: Betong 72 46
+Anchor row is: Parlimen Perancangan Naik  Projek yang siap
 Table text similarity score is: 100
 Table text is:
 ___
@@ -601,7 +624,7 @@ Betong  72  46
 ___
 
 03032022
-Anchor row is: Serian 88 66
+Anchor row is: Hulu  50 35
 Table text similarity score is: 100
 Table text is:
 ___
@@ -620,7 +643,7 @@ Serian  88  66
 ___
 
 17032022
-Anchor row is: Kedah 313
+Anchor row is: Negeri Bilangan Lokasi
 Table text similarity score is: 100
 Table text is:
 ___
@@ -657,7 +680,7 @@ Kedah   313
 ___
 
 07102021
-Anchor row is: Melaka 1 79 –
+Anchor row is: Negeri Projek Unit  Unit Dijual
 Table text similarity score is: 100
 Table text is:
 ___
@@ -702,7 +725,7 @@ Melaka  1  79  –
 ___
 
 07102021
-Anchor row is: 6 Sarawak
+Anchor row is: ZON NEGERI
 Table text similarity score is: 100
 Table text is:
 ___
@@ -731,7 +754,7 @@ Putrajaya, Selangor dan Melaka
 ___
 
 07102021
-Anchor row is: Keseluruhan 247
+Anchor row is: Negeri Aset Kapal dan Bot (Jumlah)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -772,7 +795,7 @@ Keseluruhan  247
 ___
 
 26102021
-Anchor row is: JUMLAH KESELURUHAN 897 124
+Anchor row is: DITAWARKAN
 Table text similarity score is: 86
 Table text is:
 ___
@@ -817,7 +840,7 @@ JUMLAH KESELURUHAN  897  124
 ___
 
 26102021
-Anchor row is: Trong RM50 ribu
+Anchor row is: Simpang RM50 ribu
 Table text similarity score is: 100
 Table text is:
 ___
@@ -836,7 +859,7 @@ Trong  RM50 ribu
 ___
 
 26102021
-Anchor row is: Jumlah RM120 ribu
+Anchor row is: Kemunting RM20 ribu
 Table text similarity score is: 100
 Table text is:
 ___
@@ -853,7 +876,7 @@ Jumlah  RM120 ribu
 ___
 
 26102021
-Anchor row is: Jumlah RM800 ribu
+Anchor row is: Balai Polis Jumlah
 Table text similarity score is: 100
 Table text is:
 ___
@@ -906,7 +929,7 @@ Jumlah Keseluruhan  14
 ___
 
 26102021
-Anchor row is: Jumlah Keseluruhan 24
+Anchor row is: JAWATANKUASA
 Table text similarity score is: 95
 Table text is:
 ___
@@ -940,7 +963,7 @@ Jumlah Keseluruhan  24
 ___
 
 14122021
-Anchor row is: Jumlah 41
+Anchor row is: Lundu 5
 Table text similarity score is: 95
 Table text is:
 ___
@@ -983,7 +1006,7 @@ Jumlah  41
 ___
 
 15092021
-Anchor row is: Keseluruhan 948
+Anchor row is: Pakar Perubatan 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -1014,7 +1037,7 @@ Keseluruhan   948
 ___
 
 15092021
-Anchor row is: Keseluruhan 4,028
+Anchor row is: Pegawai Perubatan 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -1045,7 +1068,7 @@ Keseluruhan   4,028
 ___
 
 06122021
-Anchor row is: Parlimen Cameron Highlands 53 1
+Anchor row is: Tapak Menara Baharu  
 Table text similarity score is: 100
 Table text is:
 ___
@@ -1068,7 +1091,7 @@ Parlimen Cameron Highlands  53  1
 ___
 
 06122021
-Anchor row is: Parlimen Cameron Highlands 102 70
+Anchor row is: Naik Taraf Stesen Pemancar  
 Table text similarity score is: 100
 Table text is:
 ___
@@ -1091,7 +1114,7 @@ Parlimen Cameron Highlands  102  70
 ___
 
 06122021
-Anchor row is: Parlimen Cameron Highlands 4,185 1,095
+Anchor row is: Perancangan Untuk Gentian Optik  
 Table text similarity score is: 100
 Table text is:
 ___
@@ -1114,7 +1137,7 @@ Parlimen Cameron Highlands  4,185  1,095
 ___
 
 06122021
-Anchor row is: Parlimen Cameron Highlands 49
+Anchor row is: Projek Jalur Lebar 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -1137,7 +1160,7 @@ Parlimen Cameron Highlands  49
 ___
 
 12102021
-Anchor row is: Perlis 41
+Anchor row is: Kedah 76
 Table text similarity score is: 100
 Table text is:
 ___
@@ -1158,7 +1181,7 @@ Perlis  41
 ___
 
 12102021
-Anchor row is: Jumlah 10,346
+Anchor row is: Pahang 386
 Table text similarity score is: 100
 Table text is:
 ___
@@ -1186,7 +1209,7 @@ Jumlah  10,346
 ___
 
 12102021
-Anchor row is: Wilayah Persekutuan 3,854
+Anchor row is: Negeri Jumlah kes
 Table text similarity score is: 100
 Table text is:
 ___
@@ -1223,7 +1246,7 @@ Wilayah Persekutuan  3,854
 ___
 
 28072021
-Anchor row is: Perlis 218,000
+Anchor row is: NEGERI JUMLAH DOS
 Table text similarity score is: 97
 Table text is:
 ___
@@ -1270,7 +1293,7 @@ Perlis  218,000
 ___
 
 27102021
-Anchor row is: 2018 8 310,000
+Anchor row is: Tahun Bilangan Sekolah Jumlah Peruntukan (RM)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -1291,7 +1314,7 @@ Tahun  Bilangan Sekolah  Jumlah Peruntukan (RM)
 ___
 
 27102021
-Anchor row is: 2021 5 580,000
+Anchor row is: 2019 4 2.83 juta
 Table text similarity score is: 100
 Table text is:
 ___
@@ -1310,7 +1333,7 @@ ___
 ___
 
 15122021
-Anchor row is: JUMLAH 287
+Anchor row is: Negeri Jumlah (kes)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -1355,7 +1378,7 @@ JUMLAH  287
 ___
 
 22112021
-Anchor row is: Labuan
+Anchor row is: (RM bilion)
 Table text similarity score is: 97
 Table text is:
 ___
@@ -1409,7 +1432,7 @@ Labuan
 ___
 
 22112021
-Anchor row is: 2020 20.0
+Anchor row is: (RM juta)
 Table text similarity score is: 90
 Table text is:
 ___
@@ -1433,7 +1456,7 @@ Tahun
 ___
 
 05102021
-Anchor row is: 22.3 Arang batu
+Anchor row is: 41 Gas asli
 Table text similarity score is: 100
 Table text is:
 ___
@@ -1454,7 +1477,7 @@ Peratus  Bekalan Tenaga
 ___
 
 05102021
-Anchor row is: tenaga boleh baharu.
+Anchor row is: 6.2 Hidro  dan  lain-lain  sumber 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -1471,7 +1494,7 @@ tenaga boleh baharu.
 ___
 
 05102021
-Anchor row is: 12 tenaga boleh baharu termasuk 
+Anchor row is: Peratus Bekalan Tenaga
 Table text similarity score is: 100
 Table text is:
 ___
@@ -1494,7 +1517,7 @@ hidro
 ___
 
 05102021
-Anchor row is: 2016 113,111 (0.011%) 5 1 3 1 1
+Anchor row is:   11     
 Table text similarity score is: 69
 Table text is:
 ___
@@ -1518,7 +1541,7 @@ Tahun  Lokap  Kematian
 ___
 
 05102021
-Anchor row is: September)
+Anchor row is:  (0.015%)
 Table text similarity score is: 90
 Table text is:
 ___
@@ -1548,7 +1571,7 @@ September)
 ___
 
 30112021
-Anchor row is: 2. Sekolah Menengah 20,086 20,819 21,099 21,100
+Anchor row is: 1. Sekolah Rendah 24,339 24,588 24,588 24,588
 Table text similarity score is: 100
 Table text is:
 ___
@@ -1572,7 +1595,7 @@ MURID
 ___
 
 30112021
-Anchor row is: 2. Sekolah Menengah  8,580 8,500 8,432 8,373
+Anchor row is: BIL. UNJURAN  TAHUN  TAHUN  TAHUN  TAHUN 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -1600,7 +1623,7 @@ Parlimen Kangar
 ___
 
 29112021
-Anchor row is: 5. Negeri Sembilan 274
+Anchor row is: Bil Negeri Jumlah kes aduan
 Table text similarity score is: 100
 Table text is:
 ___
@@ -1625,7 +1648,7 @@ Bil  Negeri  Jumlah kes aduan
 ___
 
 27072021
-Anchor row is: 5 Cambodia 0.82
+Anchor row is: BIL. NEGARA PERATUSAN
 Table text similarity score is: 100
 Table text is:
 ___
@@ -1650,7 +1673,7 @@ BIL.  NEGARA  PERATUSAN
 ___
 
 23112021
-Anchor row is: 5. Kelantan 114
+Anchor row is: Bil. Negeri Bilangan Unit
 Table text similarity score is: 100
 Table text is:
 ___
@@ -1675,7 +1698,7 @@ Bil.  Negeri  Bilangan Unit
 ___
 
 23112021
-Anchor row is: 3. Semi-D 1,783
+Anchor row is: Bil. Jenis Rumah Bilangan Unit
 Table text similarity score is: 100
 Table text is:
 ___
@@ -1696,7 +1719,7 @@ Bil.  Jenis Rumah  Bilangan Unit
 ___
 
 28092021
-Anchor row is: Rosak 712
+Anchor row is: KATEGORI JUMLAH
 Table text similarity score is: 100
 Table text is:
 ___
@@ -1719,7 +1742,7 @@ Rosak  712
 ___
 
 04102021
-Anchor row is:  Jumlah 9,323
+Anchor row is: Bil. Subkategori Aduan Jumlah 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -1758,7 +1781,7 @@ mengelirukan
 ___
 
 18082020
-Anchor row is: kanak 2017
+Anchor row is: Jenis Kesalahan Bilangan (kes)
 Table text similarity score is: 98
 Table text is:
 ___
@@ -1787,7 +1810,7 @@ kanak 2017
 ___
 
 18082020
-Anchor row is:  J umlah Keseluruhan 190
+Anchor row is: (i) Program Jaminan Bekalan Makanan 42
 Table text similarity score is: 97
 Table text is:
 ___
@@ -1826,7 +1849,7 @@ J umlah Keseluruhan  190
 ___
 
 29072020
-Anchor row is: Jumlah 4,542 82,555
+Anchor row is: penutupan (buah)
 Table text similarity score is: 96
 Table text is:
 ___
@@ -1855,7 +1878,7 @@ Jumlah   4,542  82,555
 ___
 
 14122020
-Anchor row is: Jumlah Keseluruhan 5,578 6,061 3,875
+Anchor row is: (sehingga 
 Table text similarity score is: 92
 Table text is:
 ___
@@ -1889,7 +1912,7 @@ Jumlah Keseluruhan  5,578  6,061  3,875
 ___
 
 26082020
-Anchor row is: (sehingga 30 April)
+Anchor row is: Tahun Bilangan (orang)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -1915,7 +1938,7 @@ Tahun  Bilangan (orang)
 ___
 
 13082020
-Anchor row is: B.63 – Kementerian Pendidikan Malaysia 5,923.3
+Anchor row is: Perkara Perbelanjaan (RM juta)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -1950,7 +1973,7 @@ B.63 – Kementerian Pendidikan Malaysia  5,923.3
 ___
 
 13082020
-Anchor row is: P.63 Kementerian Pendidikan Malaysia 1,611.8
+Anchor row is: MAKSUD KEMENTERIAN / JABATAN AMAUN (RM juta)
 Table text similarity score is: 96
 Table text is:
 ___
@@ -1993,7 +2016,7 @@ P.63  Kementerian Pendidikan Malaysia   1,611.8
 ___
 
 28072020
-Anchor row is:  Jumlah keseluruhannya 19
+Anchor row is: Institusi  Unit (buah) Jumlah agihan 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -2018,7 +2041,7 @@ Sekolah Agama  647            10.657
 ___
 
 06082020
-Anchor row is: Syarikat Pembinaan Kuching 56 2
+Anchor row is: Kluster Jumlah  Bilangan Kes 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -2053,7 +2076,7 @@ Syarikat Pembinaan Kuching  56  2
 ___
 
 06082020
-Anchor row is: New Zealand 94
+Anchor row is: NEGARA BIL. UJIAN (1,000 POPULASI)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -2080,7 +2103,7 @@ New Zealand  94
 ___
 
 17082020
-Anchor row is: Tipu SMS 91 800,000
+Anchor row is: Jenis Scammer Bil. Kes Kerugian (RM)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -2105,7 +2128,7 @@ Tipu SMS  91  800,000
 ___
 
 24112020
-Anchor row is: Daging kambing 12.1 87.9
+Anchor row is: Tanaman/Ternakan Sara Diri Import
 Table text similarity score is: 100
 Table text is:
 ___
@@ -2130,7 +2153,7 @@ Daging kambing  12.1  87.9
 ___
 
 11082020
-Anchor row is: Vietnam 8
+Anchor row is: Negara Bilangan (Orang)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -2171,7 +2194,7 @@ JUMLAH  588
 ___
 
 11082020
-Anchor row is: JUMLAH 588
+Anchor row is: Depot Tahanan Bilangan (Orang)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -2216,7 +2239,7 @@ JUMLAH  588
 ___
 
 11082020
-Anchor row is: W.P. Putrajaya 73
+Anchor row is: Negeri Bilangan Pekerja 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -2265,7 +2288,7 @@ W.P. Putrajaya  73
 ___
 
 27072020
-Anchor row is: Kerajaan Negeri Kelantan 1
+Anchor row is: Nama Agensi Bilangan Taska
 Table text similarity score is: 100
 Table text is:
 ___
@@ -2296,7 +2319,7 @@ Kerajaan Negeri Kelantan  1
 ___
 
 08122020
-Anchor row is: N.42 Dabong 8
+Anchor row is: (buah)
 Table text similarity score is: 88
 Table text is:
 ___
@@ -2322,7 +2345,7 @@ N.42 Dabong  8
 ___
 
 17072019
-Anchor row is: 25 tahun hingga 29 tahun 8.9
+Anchor row is: 18 tahun hingga 19 tahun 5.5
 Table text similarity score is: 100
 Table text is:
 ___
@@ -2343,7 +2366,7 @@ Julat Umur  Prevalens (Peratus)
 ___
 
 17072019
-Anchor row is: 25 tahun hingga 29 tahun 13.2
+Anchor row is: 18 tahun hingga 19 tahun 6.7
 Table text similarity score is: 100
 Table text is:
 ___
@@ -2364,7 +2387,7 @@ Julat Umur  Prevalens (Peratus)
 ___
 
 17072019
-Anchor row is: 25 tahun hingga 29 tahun 33.7
+Anchor row is: 18 tahun hingga 19 tahun 22
 Table text similarity score is: 100
 Table text is:
 ___
@@ -2385,7 +2408,7 @@ Julat Umur  Prevalens (Peratus)
 ___
 
 17072019
-Anchor row is: 25 tahun hingga 29 tahun 18.3
+Anchor row is: Julat Umur Prevalens (Peratus)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -2406,7 +2429,7 @@ Julat Umur  Prevalens (Peratus)
 ___
 
 17072019
-Anchor row is: Perak (Seri Iskandar)  100.00
+Anchor row is: Negeri  Peratusan dijual
 Table text similarity score is: 96
 Table text is:
 ___
@@ -2437,7 +2460,7 @@ Perak (Seri Iskandar)  100.00
 ___
 
 21032019
-Anchor row is: Sabah 1
+Anchor row is: Negeri Bilangan kes
 Table text similarity score is: 100
 Table text is:
 ___
@@ -2464,7 +2487,7 @@ Sabah  1
 ___
 
 21102019
-Anchor row is: Wanita 98,076
+Anchor row is: Lelaki 166,116
 Table text similarity score is: 100
 Table text is:
 ___
@@ -2483,7 +2506,7 @@ Wanita  98,076
 ___
 
 21102019
-Anchor row is: 60 tahun dan ke atas 98,471
+Anchor row is: 12 sehingga 20 tahun 2,865
 Table text similarity score is: 100
 Table text is:
 ___
@@ -2504,7 +2527,7 @@ Julat Umur  Bilangan (orang)
 ___
 
 21102019
-Anchor row is: Republik India 10,283
+Anchor row is: Negara Bilangan (orang)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -2525,7 +2548,7 @@ Republik India  10,283
 ___
 
 21102019
-Anchor row is: Wanita 11,491,076
+Anchor row is: Jantina Bilangan (orang)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -2544,7 +2567,7 @@ Wanita  11,491,076
 ___
 
 21102019
-Anchor row is: 60 tahun dan ke atas 3,396,295
+Anchor row is: Julat Umur Bilangan (orang)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -2565,7 +2588,7 @@ Julat Umur  Bilangan (orang)
 ___
 
 21102019
-Anchor row is: 2019 323,583
+Anchor row is: Tahun Jumlah (keping)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -2586,7 +2609,7 @@ Tahun  Jumlah (keping)
 ___
 
 21102019
-Anchor row is: Pakistan 156
+Anchor row is: Warganegara Bilangan (Orang)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -2609,7 +2632,7 @@ Pakistan  156
 ___
 
 21102019
-Anchor row is: Jumaat 180 - 200
+Anchor row is: Tarikh Pesakit  
 Table text similarity score is: 100
 Table text is:
 ___
@@ -2636,7 +2659,7 @@ Jumaat  180 - 200
 ___
 
 16072019
-Anchor row is: 2018 2,271,000
+Anchor row is: TAHUN BIL.  PENUMPANG
 Table text similarity score is: 100
 Table text is:
 ___
@@ -2659,7 +2682,7 @@ TAHUN  BIL.  PENUMPANG
 ___
 
 19112019
-Anchor row is: Bintulu 1 3
+Anchor row is: Kawasan Jumlah Kaunter Ditutup Jumlah Kedai Ditutup
 Table text similarity score is: 100
 Table text is:
 ___
@@ -2686,7 +2709,7 @@ Bintulu  1  3
 ___
 
 09072019
-Anchor row is: 4 Perabot 122
+Anchor row is: 1 Barangan telefon 196
 Table text similarity score is: 100
 Table text is:
 ___
@@ -2709,7 +2732,7 @@ Bil  Perkara  Bilangan (Kes)
 ___
 
 09072019
-Anchor row is: 4 Pendidikan 102
+Anchor row is: Bil Perkara Bilangan (Kes)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -2732,7 +2755,7 @@ Bil  Perkara  Bilangan (Kes)
 ___
 
 09072019
-Anchor row is: Pahang 5
+Anchor row is: NEGERI BILANGAN 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -2776,7 +2799,7 @@ Pahang   5
 ___
 
 09072019
-Anchor row is: Terengganu 1
+Anchor row is: NEGERI PECAHAN SYARIKAT
 Table text similarity score is: 100
 Table text is:
 ___
@@ -2814,7 +2837,7 @@ Terengganu   1
 ___
 
 11042019
-Anchor row is: solar 700
+Anchor row is: Sumber Jumlah (megawatt)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -2837,7 +2860,7 @@ solar  700
 ___
 
 14112019
-Anchor row is: 2019 6.344
+Anchor row is: Tahun Peruntukan (RM/Bilion)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -2862,7 +2885,7 @@ Tahun  Peruntukan (RM/Bilion)
 ___
 
 08042019
-Anchor row is: Kelantan 2
+Anchor row is: Negeri Jumlah
 Table text similarity score is: 100
 Table text is:
 ___
@@ -2895,7 +2918,7 @@ Kelantan  2
 ___
 
 08042019
-Anchor row is: Perlis Tiada
+Anchor row is: Wilayah Persekutuan 1
 Table text similarity score is: 100
 Table text is:
 ___
@@ -2916,7 +2939,7 @@ Perlis  Tiada
 ___
 
 04072019
-Anchor row is: India 118,000
+Anchor row is: NEGARA JUMLAH PEKERJA
 Table text similarity score is: 100
 Table text is:
 ___
@@ -2941,7 +2964,7 @@ India  118,000
 ___
 
 22102019
-Anchor row is: Lain-lain 1.84
+Anchor row is: Kaum Bilangan  
 Table text similarity score is: 100
 Table text is:
 ___
@@ -2970,7 +2993,7 @@ Lain-lain  1.84
 ___
 
 22102019
-Anchor row is: 2017 12.5
+Anchor row is: Tahun Peratus (%)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -3003,7 +3026,7 @@ Tahun  Peratus (%)
 ___
 
 17102019
-Anchor row is: JUMLAH 80,625
+Anchor row is: Tahun Jumlah Kes
 Table text similarity score is: 100
 Table text is:
 ___
@@ -3030,7 +3053,7 @@ JUMLAH  80,625
 ___
 
 17102019
-Anchor row is: Ogos 2019 5,810 2,061
+Anchor row is: Tahun Lelaki Perempuan
 Table text similarity score is: 100
 Table text is:
 ___
@@ -3055,7 +3078,7 @@ Ogos 2019  5,810  2,061
 ___
 
 17102019
-Anchor row is: India 354,486 15.2
+Anchor row is: Negara Jumlah (orang) Peningkatan 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -3082,7 +3105,7 @@ India  354,486  15.2
 ___
 
 11112019
-Anchor row is: Melaka 6
+Anchor row is: Johor 428
 Table text similarity score is: 100
 Table text is:
 ___
@@ -3119,7 +3142,7 @@ Melaka  6
 ___
 
 11112019
-Anchor row is: Melaka 2
+Anchor row is: Negeri Jumlah (Kes)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -3156,7 +3179,7 @@ Melaka  2
 ___
 
 11102019
-Anchor row is: Sekolah Berasrama Penuh 50 juta
+Anchor row is: Jenis Sekolah Jumlah (RM)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -3180,7 +3203,7 @@ Sekolah Berasrama Penuh   50 juta
 ___
 
 11102019
-Anchor row is: Sekolah Menengah Persendirian Cina 15 juta
+Anchor row is: Maktab Rendah Sains MARA 50 juta
 Table text similarity score is: 100
 Table text is:
 ___
@@ -3211,7 +3234,7 @@ Sekolah Menengah Persendirian Cina  15 juta
 ___
 
 03122019
-Anchor row is: (viii) Lain-lain perniagaan 103
+Anchor row is: Bil. Kategori Bil. Syarikat (buah)
 Table text similarity score is: 99
 Table text is:
 ___
@@ -3244,7 +3267,7 @@ maklumat dan komunikasi  29
 ___
 
 07082018
-Anchor row is: Germany 19
+Anchor row is: NEGARA GST PERATUS (%)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -3289,7 +3312,7 @@ Germany  19
 ___
 
 21032018
-Anchor row is: Tidak pentingkan masa 0.28
+Anchor row is: JENIS SALAH LAKU PELAJAR PERATUS (%)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -3320,7 +3343,7 @@ Tidak pentingkan masa   0.28
 ___
 
 18102018
-Anchor row is: Filipina 850 juta
+Anchor row is: NEGARA ALIRAN KELUAR MODAL 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -3345,7 +3368,7 @@ Filipina   850 juta
 ___
 
 14032018
-Anchor row is: 2017 2,857 20.25
+Anchor row is: Tahun Jumlah Peratus
 Table text similarity score is: 100
 Table text is:
 ___
@@ -3370,7 +3393,7 @@ Tahun  Jumlah  Peratus
 ___
 
 26112018
-Anchor row is: 2018 (Sehingga 31 Oktober) 780
+Anchor row is: TAHUN KEKERAPAN SEMAKAN KES
 Table text similarity score is: 100
 Table text is:
 ___
@@ -3393,7 +3416,7 @@ TAHUN  KEKERAPAN SEMAKAN KES
 ___
 
 12032018
-Anchor row is: Sarawak 879,058
+Anchor row is: NEGERI JUMLAH (RM)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -3440,7 +3463,7 @@ Sarawak  879,058
 ___
 
 06032018
-Anchor row is: Dalam perancangan 448,028
+Anchor row is: Status Pelaksanaan Bilangan Unit
 Table text similarity score is: 100
 Table text is:
 ___
@@ -3459,7 +3482,7 @@ Dalam perancangan  448,028
 ___
 
 07032018
-Anchor row is: 2017 6.31 7.22
+Anchor row is: Tahun Jumlah Peruntukan  Jumlah Penerima 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -3488,7 +3511,7 @@ Tahun  Jumlah Peruntukan  Jumlah Penerima
 ___
 
 13032018
-Anchor row is: Yan 250
+Anchor row is: Daerah Jumlah Penerima
 Table text similarity score is: 100
 Table text is:
 ___
@@ -3527,7 +3550,7 @@ Yan  250
 ___
 
 25072018
-Anchor row is: Jumlah 189,087
+Anchor row is: Transaksi Online (bulan) Jumlah Transaksi (RM)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -3550,7 +3573,7 @@ Jumlah  189,087
 ___
 
 29112018
-Anchor row is: Jumlah 8,039
+Anchor row is: (orang)
 Table text similarity score is: 91
 Table text is:
 ___
@@ -3583,7 +3606,7 @@ Jumlah  8,039
 ___
 
 29112018
-Anchor row is: Lain-lain 128
+Anchor row is: Kaum Bil. (orang)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -3610,7 +3633,7 @@ Lain-lain  128
 ___
 
 29112018
-Anchor row is: 2018 hingga Ogos 23 16
+Anchor row is: Tahun Kemalangan Maut
 Table text similarity score is: 100
 Table text is:
 ___
@@ -3633,7 +3656,7 @@ Tahun  Kemalangan  Maut
 ___
 
 22102018
-Anchor row is: Sarawak 60
+Anchor row is: Negeri Bilangan (kes)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -3676,7 +3699,7 @@ Sarawak  60
 ___
 
 10122018
-Anchor row is: Jumlah keseluruhan 18
+Anchor row is: Jenis Projek Jumlah
 Table text similarity score is: 100
 Table text is:
 ___
@@ -3703,7 +3726,7 @@ Jumlah keseluruhan  18
 ___
 
 04122018
-Anchor row is: Jumlah Keseluruhan 18,301,947
+Anchor row is: Negeri Jumlah Peruntukan (RM)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -3750,7 +3773,7 @@ Jumlah Keseluruhan  18,301,947
 ___
 
 04122018
-Anchor row is: Jumlah Keseluruhan 1,704,547.20
+Anchor row is: Negeri Jumlah peruntukan (RM)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -3797,7 +3820,7 @@ Jumlah Keseluruhan  1,704,547.20
 ___
 
 24102018
-Anchor row is: Sabah 27
+Anchor row is: Negeri Jumlah Permohonan
 Table text similarity score is: 100
 Table text is:
 ___
@@ -3848,7 +3871,7 @@ Sabah  27
 ___
 
 26072018
-Anchor row is: Daging lembu dan kerbau 23.4
+Anchor row is: Item Self-sufficiency level (%)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -3877,7 +3900,7 @@ Daging lembu dan kerbau  23.4
 ___
 
 22112018
-Anchor row is: 2017 212
+Anchor row is: 2013 327
 Table text similarity score is: 100
 Table text is:
 ___
@@ -3902,7 +3925,7 @@ Tahun  Bilangan (Kes)
 ___
 
 22112018
-Anchor row is: 2017 5
+Anchor row is: Tahun Bilangan (Kes)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -3927,7 +3950,7 @@ Tahun  Bilangan (Kes)
 ___
 
 22112018
-Anchor row is: Australia 13.5
+Anchor row is: Negara Peratus (%)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -3952,7 +3975,7 @@ Australia  13.5
 ___
 
 19072018
-Anchor row is: JUMLAH TOTAL 303,274
+Anchor row is: Negeri Jum. MyPR (orang) Jum. MyKAS (orang)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -4004,7 +4027,7 @@ JUMLAH TOTAL  303,274
 ___
 
 16102018
-Anchor row is: 2018 14,243
+Anchor row is: Tahun Enrolmen (orang)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -4031,7 +4054,7 @@ Tahun  Enrolmen (orang)
 ___
 
 11122018
-Anchor row is: Johor 107
+Anchor row is: Kedah 386
 Table text similarity score is: 100
 Table text is:
 ___
@@ -4055,7 +4078,7 @@ Johor  107
 ___
 
 11122018
-Anchor row is: Kedah 123
+Anchor row is: Kelantan 197
 Table text similarity score is: 100
 Table text is:
 ___
@@ -4078,7 +4101,7 @@ Kedah  123
 ___
 
 11122018
-Anchor row is: Perak 101
+Anchor row is: Kelantan 201
 Table text similarity score is: 100
 Table text is:
 ___
@@ -4101,7 +4124,7 @@ Perak  101
 ___
 
 11122018
-Anchor row is: Kedah 86
+Anchor row is: Negeri Jumlah (Orang)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -4124,7 +4147,7 @@ Kedah  86
 ___
 
 03122018
-Anchor row is: Lain-lain negara 13,847
+Anchor row is: Negara Bil. (orang)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -4147,7 +4170,7 @@ Lain-lain negara  13,847
 ___
 
 29032017
-Anchor row is: 2011 19,767
+Anchor row is: Tahun Bilangan Kes
 Table text similarity score is: 100
 Table text is:
 ___
@@ -4170,7 +4193,7 @@ Tahun  Bilangan Kes
 ___
 
 29032017
-Anchor row is: 2016 19,588
+Anchor row is: 2012 19,575
 Table text similarity score is: 100
 Table text is:
 ___
@@ -4193,7 +4216,7 @@ ___
 ___
 
 08032017
-Anchor row is: JUMLAH 3,276
+Anchor row is: TAHUN BILANGAN KES
 Table text similarity score is: 100
 Table text is:
 ___
@@ -4219,7 +4242,7 @@ JUMLAH  3,276
 ___
 
 27072017
-Anchor row is: Cabul 6,014 27.04
+Anchor row is: Kes Bilangan Peratus
 Table text similarity score is: 100
 Table text is:
 ___
@@ -4242,7 +4265,7 @@ Cabul  6,014  27.04
 ___
 
 28112017
-Anchor row is: Jumlah Keseluruhan 296,712
+Anchor row is: Negeri Bilangan kes
 Table text similarity score is: 100
 Table text is:
 ___
@@ -4287,7 +4310,7 @@ Jumlah Keseluruhan  296,712
 ___
 
 10082017
-Anchor row is: 2016 1,351
+Anchor row is: Tahun Bilangan (orang)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -4312,7 +4335,7 @@ Tahun  Bilangan (orang)
 ___
 
 22032017
-Anchor row is: Lain-lain 7,103
+Anchor row is: Negara Jumlah Permohonan
 Table text similarity score is: 100
 Table text is:
 ___
@@ -4349,7 +4372,7 @@ Lain-lain  7,103
 ___
 
 09082017
-Anchor row is: Putrajaya 1,123 16,110
+Anchor row is: (Unit) Pembinaan (Unit)
 Table text similarity score is: 98
 Table text is:
 ___
@@ -4402,7 +4425,7 @@ Putrajaya  1,123  16,110
 ___
 
 24102017
-Anchor row is: 10 Orang luar
+Anchor row is: BILANGAN KES HUBUNGAN
 Table text similarity score is: 100
 Table text is:
 ___
@@ -4423,7 +4446,7 @@ BILANGAN KES  HUBUNGAN
 ___
 
 24102017
-Anchor row is: 5 Warga asing
+Anchor row is: BILANGAN KES KAUM
 Table text similarity score is: 100
 Table text is:
 ___
@@ -4446,7 +4469,7 @@ BILANGAN KES  KAUM
 ___
 
 28032017
-Anchor row is: Wilayah Persekutuan 167,000
+Anchor row is: Negeri Jumlah (RM)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -4489,7 +4512,7 @@ Wilayah Persekutuan  167,000
 ___
 
 28032017
-Anchor row is: P4 14 November 2016 13 November 2018
+Anchor row is: Rangkaian Jalan Tarikh Milik Tapak Tarikh Dijangka Siap
 Table text similarity score is: 100
 Table text is:
 ___
@@ -4512,7 +4535,7 @@ P4  14 November 2016  13 November 2018
 ___
 
 30102017
-Anchor row is: (Sehingga 13 Oktober)
+Anchor row is: Tahun Peratus (%)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -4538,7 +4561,7 @@ Tahun  Peratus (%)
 ___
 
 26072017
-Anchor row is: Belanda 13.9 15
+Anchor row is:  2014 2015
 Table text similarity score is: 96
 Table text is:
 ___
@@ -4568,7 +4591,7 @@ Belanda   13.9  15
 ___
 
 22112017
-Anchor row is: (sehingga September)
+Anchor row is: Tahun Dilaporkan Diluluskan Bayaran
 Table text similarity score is: 100
 Table text is:
 ___
@@ -4603,7 +4626,7 @@ Tahun  Dilaporkan  Diluluskan Bayaran
 ___
 
 08112017
-Anchor row is: Persatuan Bulan Sabit Merah 50
+Anchor row is: AGENSI BILANGAN 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -4650,7 +4673,7 @@ Persatuan Bulan Sabit Merah  50
 ___
 
 16032017
-Anchor row is: Penderaan emosi 170 3.65
+Anchor row is: Jenis kes Bilangan (kes) Peratusan (%)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -4671,7 +4694,7 @@ Penderaan emosi  170  3.65
 ___
 
 30112017
-Anchor row is: Perancis 4
+Anchor row is: Negara Bilangan Projek
 Table text similarity score is: 100
 Table text is:
 ___
@@ -4700,7 +4723,7 @@ Perancis  4
 ___
 
 23032017
-Anchor row is: Jumlah 28
+Anchor row is: Daerah Lokasi
 Table text similarity score is: 100
 Table text is:
 ___
@@ -4729,7 +4752,7 @@ Jumlah  28
 ___
 
 07032017
-Anchor row is: 2016 2.4 bilion
+Anchor row is: Tahun Petroleum Subsidi (RM)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -4758,7 +4781,7 @@ Tahun  Petroleum Subsidi (RM)
 ___
 
 07032017
-Anchor row is: 2016 347 milion
+Anchor row is: Tahun Minyak Masak (RM)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -4787,7 +4810,7 @@ Tahun  Minyak Masak (RM)
 ___
 
 13032017
-Anchor row is: Warganegara Asing 185
+Anchor row is: BANGSA BILANGAN (ORANG)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -4812,7 +4835,7 @@ Warganegara Asing  185
 ___
 
 21112017
-Anchor row is: Sehingga September 2017 170,751
+Anchor row is: Tahun Jumlah bilangan lawatan
 Table text similarity score is: 100
 Table text is:
 ___
@@ -4835,7 +4858,7 @@ Sehingga September 2017  170,751
 ___
 
 21112017
-Anchor row is: Sehingga September 2017 2,100
+Anchor row is: Tahun Kos per lawatan (RM)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -4858,7 +4881,7 @@ Sehingga September 2017  2,100
 ___
 
 25072017
-Anchor row is: Jumlah 697
+Anchor row is: Tahun Bilangan Kes
 Table text similarity score is: 100
 Table text is:
 ___
@@ -4889,7 +4912,7 @@ Jumlah  697
 ___
 
 25072017
-Anchor row is: Jumlah 35
+Anchor row is: Negeri Bilangan Kes
 Table text similarity score is: 100
 Table text is:
 ___
@@ -4916,7 +4939,7 @@ Jumlah  35
 ___
 
 31072017
-Anchor row is: Jumlah 133,282
+Anchor row is: Tahun Lantikan Bilangan Lantikan 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -4945,7 +4968,7 @@ Jumlah  133,282
 ___
 
 31072017
-Anchor row is: Lain-lain 2,182 1.64
+Anchor row is: KAUM BILANGAN PERATUS (%)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -4976,7 +4999,7 @@ Lain-lain  2,182  1.64
 ___
 
 03042017
-Anchor row is: Februari 2017 26 22 4
+Anchor row is: 2014 98 85 13
 Table text similarity score is: 100
 Table text is:
 ___
@@ -5001,7 +5024,7 @@ Februari 2017  26  22  4
 ___
 
 03042017
-Anchor row is: Februari 2017 0 0 0
+Anchor row is: Tahun Jumlah  Permohonan  Permohonan 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -5026,7 +5049,7 @@ Februari 2017  0  0  0
 ___
 
 20032017
-Anchor row is: Lain-lain 38 6.87
+Anchor row is: Kaum Bilangan (orang) Peratus (%)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -5049,7 +5072,7 @@ Lain-lain  38  6.87
 ___
 
 01082017
-Anchor row is: Fleksi 41, 42 dan 44 477
+Anchor row is: Gred Jumlah Perjawatan
 Table text similarity score is: 100
 Table text is:
 ___
@@ -5079,7 +5102,7 @@ Fleksi 41, 42 dan 44  477
 ___
 
 15112017
-Anchor row is: 2016 581 1,222
+Anchor row is: Tahun Lelaki Perempuan
 Table text similarity score is: 100
 Table text is:
 ___
@@ -5102,7 +5125,7 @@ Tahun  Lelaki  Perempuan
 ___
 
 15112017
-Anchor row is: 16 - 18 3,333
+Anchor row is: Umur (Tahun) Bilangan
 Table text similarity score is: 100
 Table text is:
 ___
@@ -5125,7 +5148,7 @@ Umur (Tahun)  Bilangan
 ___
 
 15112017
-Anchor row is: Lain bangsa 1,245
+Anchor row is: Bangsa Bil.
 Table text similarity score is: 100
 Table text is:
 ___
@@ -5148,7 +5171,7 @@ Lain bangsa  1,245
 ___
 
 15112017
-Anchor row is: tidak mendapat perhatian keluarga 81
+Anchor row is: Punca Lari Dari Rumah Bil.
 Table text similarity score is: 100
 Table text is:
 ___
@@ -5179,7 +5202,7 @@ tidak mendapat perhatian keluarga           81
 ___
 
 24072017
-Anchor row is: 2016 5,796
+Anchor row is: TAHUN JUMLAH KES
 Table text similarity score is: 100
 Table text is:
 ___
@@ -5208,7 +5231,7 @@ TAHUN  JUMLAH KES
 ___
 
 07082017
-Anchor row is: Jumlah    3,784
+Anchor row is: Negeri Penilai  Ejen Harta  Pentaksir Jumlah
 Table text similarity score is: 100
 Table text is:
 ___
@@ -5235,7 +5258,7 @@ Jumlah        3,784
 ___
 
 07082017
-Anchor row is: 1,111 18 2,655 3,784
+Anchor row is: Penilai dan  Pentaksir  Ejen Harta Tanah  Jumlah
 Table text similarity score is: 100
 Table text is:
 ___
@@ -5256,7 +5279,7 @@ Pengurus Harta  (Orang)  (Orang)
 ___
 
 21032017
-Anchor row is: 2016 30,846
+Anchor row is: Tahun Jumlah penagih dadah dikesan (orang)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -5275,7 +5298,7 @@ Tahun  Jumlah penagih dadah dikesan (orang)
 ___
 
 14032017
-Anchor row is: 2017 (sehingga 28 Februari) 34.3
+Anchor row is: Tahun Peruntukan (RM juta)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -5300,7 +5323,7 @@ Tahun  Peruntukan (RM juta)
 ___
 
 07042016
-Anchor row is: Thailand 24,927 hingga 29,675 Semua Pakej
+Anchor row is: Negara Kos Sebenar Haji (RM) Kategori Haji
 Table text similarity score is: 100
 Table text is:
 ___
@@ -5325,7 +5348,7 @@ Thailand  24,927 hingga 29,675  Semua Pakej
 ___
 
 08032016
-Anchor row is: Rusia -45
+Anchor row is: Negara Peratusan (%)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -5350,7 +5373,7 @@ Rusia  -45
 ___
 
 18052016
-Anchor row is: 2015 1,157
+Anchor row is: Tahun Jumlah (Orang)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -5371,7 +5394,7 @@ Tahun  Jumlah (Orang)
 ___
 
 16112016
-Anchor row is: 2015 30
+Anchor row is: Tahun Jumlah (RM juta)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -5396,7 +5419,7 @@ Tahun  Jumlah (RM juta)
 ___
 
 16112016
-Anchor row is: 2015 6,864,000
+Anchor row is: Tahun Jumlah (RM)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -5421,7 +5444,7 @@ Tahun  Jumlah (RM)
 ___
 
 16112016
-Anchor row is: 2016 (sehingga Ogos) 498
+Anchor row is: TAHUN JUMLAH (ORANG)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -5452,7 +5475,7 @@ TAHUN  JUMLAH (ORANG)
 ___
 
 16112016
-Anchor row is: Sehingga Ogos, 2016 498
+Anchor row is: TAHUN JUMLAH PENAGIH REMAJA/ORANG 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -5486,7 +5509,7 @@ Sehingga Ogos, 2016  498
 ___
 
 16112016
-Anchor row is: Sehingga Ogos, 2016 741
+Anchor row is: TAHUN JUMLAH PENAGIH (WANITA/ORANG)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -5518,7 +5541,7 @@ Sehingga Ogos, 2016  741
 ___
 
 16112016
-Anchor row is: Selangor 1,603
+Anchor row is: NEGERI JUMLAH (ORANG)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -5539,7 +5562,7 @@ Selangor   1,603
 ___
 
 24032016
-Anchor row is: 2016 sehingga Januari 140
+Anchor row is: TAHUN JUMLAH
 Table text similarity score is: 100
 Table text is:
 ___
@@ -5560,7 +5583,7 @@ TAHUN  JUMLAH
 ___
 
 24032016
-Anchor row is: Kedah 474
+Anchor row is: NEGERI JUMLAH
 Table text similarity score is: 100
 Table text is:
 ___
@@ -5581,7 +5604,7 @@ Kedah  474
 ___
 
 24032016
-Anchor row is: Perempuan 1,536 1,310 94
+Anchor row is: JANTINA TAHUN  
 Table text similarity score is: 100
 Table text is:
 ___
@@ -5602,7 +5625,7 @@ Perempuan  1,536  1,310  94
 ___
 
 24032016
-Anchor row is: 16 - 18 1,643
+Anchor row is: UMUR JUMLAH
 Table text similarity score is: 100
 Table text is:
 ___
@@ -5625,7 +5648,7 @@ UMUR  JUMLAH
 ___
 
 22032016
-Anchor row is: 2015 1.68
+Anchor row is: Tahun Bilangan (juta)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -5646,7 +5669,7 @@ Tahun  Bilangan (juta)
 ___
 
 22032016
-Anchor row is: 2015 1,208
+Anchor row is: Tahun Jumlah Kes
 Table text similarity score is: 100
 Table text is:
 ___
@@ -5667,7 +5690,7 @@ Tahun  Jumlah Kes
 ___
 
 10112016
-Anchor row is: 2016 95
+Anchor row is: 2011 48
 Table text similarity score is: 100
 Table text is:
 ___
@@ -5694,7 +5717,7 @@ Tahun  Bilangan Orang
 ___
 
 10112016
-Anchor row is: 2016 sehingga Oktober 55
+Anchor row is: Tahun Bilangan Orang
 Table text similarity score is: 100
 Table text is:
 ___
@@ -5721,7 +5744,7 @@ Tahun  Bilangan Orang
 ___
 
 26052016
-Anchor row is: the Force
+Anchor row is: Bil. Senior  Officers Staff  Other Ranks
 Table text similarity score is: 100
 Table text is:
 ___
@@ -5770,7 +5793,7 @@ the Force
 ___
 
 28032016
-Anchor row is: 2015 1,360 733
+Anchor row is: 2012 658 87
 Table text similarity score is: 100
 Table text is:
 ___
@@ -5794,7 +5817,7 @@ Tahun
 ___
 
 24102016
-Anchor row is: 14 Kelantan 1,669
+Anchor row is: 1 Johor 5,747
 Table text similarity score is: 100
 Table text is:
 ___
@@ -5837,7 +5860,7 @@ Bil  Negeri  Jumlah
 ___
 
 24102016
-Anchor row is: 3 Sungai Petani 1 481
+Anchor row is: Bil Negeri Jumlah
 Table text similarity score is: 100
 Table text is:
 ___
@@ -5858,7 +5881,7 @@ Bil  Negeri  Jumlah
 ___
 
 22112016
-Anchor row is: JUMLAH 712,471,462
+Anchor row is: NEGERI PERUNTUKAN (RM)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -5901,7 +5924,7 @@ JUMLAH  712,471,462
 ___
 
 22112016
-Anchor row is: Indonesia 383
+Anchor row is: Negara Gaji Minimum (RM)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -5930,7 +5953,7 @@ Indonesia   383
 ___
 
 10032016
-Anchor row is: Perikanan 0.016
+Anchor row is: Sektor RM (bilion)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -5959,7 +5982,7 @@ Perikanan  0.016
 ___
 
 17112016
-Anchor row is: Tiada agama 102 60.00
+Anchor row is: Agama Bilangan (orang) Peratusan (peratus)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -5986,7 +6009,7 @@ Tiada agama   102  60.00
 ___
 
 08112016
-Anchor row is: Jumlah 84
+Anchor row is: Dewan Bandaraya Kuching Utara 24
 Table text similarity score is: 100
 Table text is:
 ___
@@ -6011,7 +6034,7 @@ Jumlah  84
 ___
 
 08112016
-Anchor row is: Lembaga Kemajuan Bintulu 22
+Anchor row is: Pihak Berkuasa Tempatan Jumlah (unit)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -6032,7 +6055,7 @@ Lembaga Kemajuan Bintulu  22
 ___
 
 17102016
-Anchor row is: Johor 2
+Anchor row is: NEGERI JUMLAH KES
 Table text similarity score is: 100
 Table text is:
 ___
@@ -6051,7 +6074,7 @@ Johor   2
 ___
 
 17102016
-Anchor row is: Wilayah Persekutuan 1
+Anchor row is: Selangor 1
 Table text similarity score is: 100
 Table text is:
 ___
@@ -6070,7 +6093,7 @@ Wilayah Persekutuan   1
 ___
 
 23032016
-Anchor row is: 100 dan ke atas Orang tua berusia panjang
+Anchor row is: Umur (Tahun) Kategori
 Table text similarity score is: 100
 Table text is:
 ___
@@ -6095,7 +6118,7 @@ ___
 ___
 
 16032016
-Anchor row is: 2016 (sehingga Februari) 228,873
+Anchor row is: Tahun Ketua Isi Rumah
 Table text similarity score is: 100
 Table text is:
 ___
@@ -6128,7 +6151,7 @@ Tahun  Ketua Isi Rumah
 ___
 
 16032016
-Anchor row is: 2016 (sehingga Januari) 106,401
+Anchor row is: 2000 54,867
 Table text similarity score is: 100
 Table text is:
 ___
@@ -6151,7 +6174,7 @@ Tahun  Bilangan Penerima
 ___
 
 16032016
-Anchor row is: 2015 884 sampai ke tahun 2016
+Anchor row is: Tahun Bilangan Penerima
 Table text similarity score is: 100
 Table text is:
 ___
@@ -6174,7 +6197,7 @@ Tahun  Bilangan Penerima
 ___
 
 16032016
-Anchor row is: 2015 34.7
+Anchor row is: Tahun Jumlah (RM bilion)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -6199,7 +6222,7 @@ Tahun  Jumlah (RM bilion)
 ___
 
 24112016
-Anchor row is: 2016 2.97
+Anchor row is: Tahun Peruntukan (RM bilion)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -6224,7 +6247,7 @@ Tahun  Peruntukan (RM bilion)
 ___
 
 05042016
-Anchor row is: 2015 23,565 77.3
+Anchor row is: 2011 20,666 72.44
 Table text similarity score is: 100
 Table text is:
 ___
@@ -6250,7 +6273,7 @@ Tahun  Jumlah Kes
 ___
 
 05042016
-Anchor row is: 2015 1,672 5.5
+Anchor row is: 2011 1,644 5.8
 Table text similarity score is: 100
 Table text is:
 ___
@@ -6276,7 +6299,7 @@ Tahun  Kematian
 ___
 
 14112016
-Anchor row is: Muslim Myanmar 10,928
+Anchor row is: ETNIK BILANGAN (ORANG)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -6297,7 +6320,7 @@ Muslim Myanmar  10,928
 ___
 
 21112016
-Anchor row is: Petrol Euro 5M September 2025
+Anchor row is: Bahan Api Spesifikasi Bulan/Tahun
 Table text similarity score is: 100
 Table text is:
 ___
@@ -6320,7 +6343,7 @@ Petrol  Euro 5M  September 2025
 ___
 
 15032016
-Anchor row is: Digi 4 50
+Anchor row is: Celcom 34 50
 Table text similarity score is: 100
 Table text is:
 ___
@@ -6341,7 +6364,7 @@ Digi  4  50
 ___
 
 15032016
-Anchor row is: u-Mobile 10 30
+Anchor row is: 900 MHz 1800 MHz
 Table text similarity score is: 100
 Table text is:
 ___
@@ -6364,7 +6387,7 @@ u-Mobile  10  30
 ___
 
 15032016
-Anchor row is: Jumlah  226.35
+Anchor row is: 1 Perkhidmatan kewangan 86.44
 Table text similarity score is: 100
 Table text is:
 ___
@@ -6394,7 +6417,7 @@ Jumlah  226.35
 ___
 
 15032016
-Anchor row is: 2015 1,632
+Anchor row is: TAHUN JUMLAH (ORANG)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -6421,7 +6444,7 @@ TAHUN  JUMLAH (ORANG)
 ___
 
 15032016
-Anchor row is: Malaysia 2.5
+Anchor row is: Negara Kadar Recidivist (%)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -6444,7 +6467,7 @@ Malaysia  2.5
 ___
 
 26102016
-Anchor row is: Total RM3.9 bilion.
+Anchor row is: TAHUN JUMLAH DANA ( RM JUTA )
 Table text similarity score is: 100
 Table text is:
 ___
@@ -6475,7 +6498,7 @@ Total  RM3.9 bilion.
 ___
 
 04042016
-Anchor row is: Medicine Association Malaysia komplementari
+Anchor row is: Bil. Pertubuhan Jenis Amalan
 Table text similarity score is: 97
 Table text is:
 ___
@@ -6523,7 +6546,7 @@ Medicine Association Malaysia  komplementari
 ___
 
 04042016
-Anchor row is: Chiropractic
+Anchor row is: 1. Southern University College Pelbagai kursus Chinese 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -6574,7 +6597,7 @@ Chiropractic
 ___
 
 04042016
-Anchor row is: Medicine
+Anchor row is: Bil. Institusi Kursus
 Table text similarity score is: 100
 Table text is:
 ___
@@ -6611,7 +6634,7 @@ Medicine
 ___
 
 15112016
-Anchor row is: 2016 (sehingga Jun) 29,000
+Anchor row is: TAHUN BILANGAN LEMBU (EKOR)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -6638,7 +6661,7 @@ TAHUN  BILANGAN LEMBU (EKOR)
 ___
 
 15112016
-Anchor row is: 2016 (sehingga Jun) 80,000
+Anchor row is: TAHUN BILANGAN LEMBU DAN KERBAU 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -6667,7 +6690,7 @@ TAHUN  BILANGAN LEMBU DAN KERBAU
 ___
 
 15112016
-Anchor row is: DA (kereta automatik) 1,250
+Anchor row is: Jenis Lesen Harga Siling (RM)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -6690,7 +6713,7 @@ DA (kereta automatik)  1,250
 ___
 
 23052016
-Anchor row is: 2014 31.3
+Anchor row is: Tahun Jumlah (RM Juta)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -6719,7 +6742,7 @@ Tahun  Jumlah (RM Juta)
 ___
 
 25052016
-Anchor row is: 2015 22,532,478
+Anchor row is: Tahun Jumlah (orang)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -6746,7 +6769,7 @@ Tahun  Jumlah (orang)
 ___
 
 14032016
-Anchor row is: 2015 3,536 juta/3.536 bilion 3,220 juta/3.220 bilion
+Anchor row is: Tahun Keuntungan Bersih   Bayaran Bonus  
 Table text similarity score is: 100
 Table text is:
 ___
@@ -6777,7 +6800,7 @@ Tahun  Keuntungan Bersih   Bayaran Bonus
 ___
 
 18102016
-Anchor row is: Malaysia 6
+Anchor row is: NEGARA KADAR GST 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -6810,7 +6833,7 @@ Malaysia   6
 ___
 
 07112016
-Anchor row is: 2016 95.91 93.56
+Anchor row is: Pencapaian Mengikut  Bandar   Luar Bandar  
 Table text similarity score is: 100
 Table text is:
 ___
@@ -6833,7 +6856,7 @@ Tahun  ( peratus)  ( peratus)
 ___
 
 07112016
-Anchor row is: 2015 8,291
+Anchor row is: Tahun Bilangan kes
 Table text similarity score is: 100
 Table text is:
 ___
@@ -6858,7 +6881,7 @@ Tahun  Bilangan kes
 ___
 
 23112015
-Anchor row is: 2015 6,637
+Anchor row is: TAHUN JUMLAH PENDAFTARAN
 Table text similarity score is: 100
 Table text is:
 ___
@@ -6885,7 +6908,7 @@ TAHUN  JUMLAH PENDAFTARAN
 ___
 
 23112015
-Anchor row is: Jumlah 1,795.65
+Anchor row is: Tahun Jumlah kutipan (RM juta)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -6914,7 +6937,7 @@ Jumlah  1,795.65
 ___
 
 20052015
-Anchor row is: JUMLAH 1001
+Anchor row is: Tahun Tangkapan
 Table text similarity score is: 100
 Table text is:
 ___
@@ -6941,7 +6964,7 @@ JUMLAH  1001
 ___
 
 20052015
-Anchor row is: JUMLAH 476
+Anchor row is: Tahun Pertuduhan (kes)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -6989,8 +7012,8 @@ Jumlah Penduduk
 ___
 
 24032015
-Anchor row is: (Sabah)
-Table text similarity score is: 84
+Anchor row is: Tahun 1990  2000  2010  Sehingga Disember 2014 
+Table text similarity score is: 93
 Table text is:
 ___
 Tahun 1990  2000  2010  Sehingga Disember 2014 
@@ -7002,17 +7025,64 @@ ___
 
 Candidate text is:
 ___
-Sabah seperti berikut: 
- 
 Tahun  1990  2000  2010  Sehingga Disember 2014 
 (juta)  (juta)  (juta)  (juta) 
 Jumlah Penduduk         
 (Sabah) 
+1.3  1.8  2.3  2.5 
+
+___
+
+24032015
+Anchor row is: TAHUN BILANGAN TANGKAPAN
+Table text similarity score is: 100
+Table text is:
+___
+TAHUN BILANGAN TANGKAPAN
+2010 104
+2011 69
+2012 59
+2013 62
+2014 74
+
+___
+
+Candidate text is:
+___
+TAHUN  BILANGAN TANGKAPAN 
+2010  104 
+2011  69 
+2012  59 
+2013  62 
+2014  74 
+
+___
+
+24032015
+Anchor row is: Komoditi Nilai (RM bilion)
+Table text similarity score is: 100
+Table text is:
+___
+Komoditi Nilai (RM bilion)
+Beras 1.41
+Buah-buahan 2.12
+Sayur-sayuran 2.90
+Ternakan 2.69
+
+___
+
+Candidate text is:
+___
+Komoditi  Nilai (RM bilion) 
+Beras  1.41 
+Buah-buahan  2.12 
+Sayur-sayuran  2.90 
+Ternakan  2.69 
 
 ___
 
 16112015
-Anchor row is: Pembinaan 0.3
+Anchor row is: Sektor Jumlah (RM juta)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -7035,7 +7105,7 @@ Pembinaan  0.3
 ___
 
 28102015
-Anchor row is: Sept. 2015
+Anchor row is: Pendakwaan
 Table text similarity score is: 95
 Table text is:
 ___
@@ -7066,7 +7136,7 @@ Sept. 2015
 ___
 
 07042015
-Anchor row is: 2014 Sedang dalam pengiraan
+Anchor row is: Tahun Penghasilan Gas CO  (metrik tan) 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -7095,7 +7165,7 @@ Tahun  Penghasilan Gas CO  (metrik tan)
 ___
 
 04112015
-Anchor row is: Persekutuan dan individu
+Anchor row is: Tanah Unit
 Table text similarity score is: 100
 Table text is:
 ___
@@ -7129,7 +7199,7 @@ Persekutuan dan individu
 ___
 
 21052015
-Anchor row is: Perusahaan Industri Asas Tani 226
+Anchor row is: SEKTOR BILANGAN
 Table text similarity score is: 100
 Table text is:
 ___
@@ -7152,7 +7222,7 @@ Perusahaan Industri Asas Tani   226
 ___
 
 21052015
-Anchor row is: Perusahaan Industri Asas Tani 3.07
+Anchor row is: SEKTOR NILAI KERUGIAN (RM JUTA)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -7175,7 +7245,7 @@ Perusahaan Industri Asas Tani  3.07
 ___
 
 21052015
-Anchor row is: Kelantan 14.2 juta
+Anchor row is: Negeri Jumlah agihan (RM)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -7198,7 +7268,7 @@ Kelantan  14.2 juta
 ___
 
 18062015
-Anchor row is: 2014 5,457 orang
+Anchor row is: Tahun Jumlah Diisytiharkan Bankrap
 Table text similarity score is: 100
 Table text is:
 ___
@@ -7219,7 +7289,7 @@ Tahun  Jumlah Diisytiharkan Bankrap
 ___
 
 31032015
-Anchor row is: Januari hingga Februari 2015 331
+Anchor row is: Tahun Jumlah Kes
 Table text similarity score is: 100
 Table text is:
 ___
@@ -7240,7 +7310,7 @@ Januari hingga Februari 2015  331
 ___
 
 31032015
-Anchor row is: Jumlah Keseluruhan Doktor 36,607
+Anchor row is: Profesion Doktor Bilangan
 Table text similarity score is: 100
 Table text is:
 ___
@@ -7261,7 +7331,7 @@ Jumlah Keseluruhan Doktor  36,607
 ___
 
 31032015
-Anchor row is: 2014 790 juta
+Anchor row is: Tahun Jumlah (RM)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -7284,7 +7354,7 @@ Tahun  Jumlah (RM)
 ___
 
 31032015
-Anchor row is: 2014 470 juta
+Anchor row is: Tahun Sumbangan (RM)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -7307,7 +7377,7 @@ Tahun  Sumbangan (RM)
 ___
 
 25032015
-Anchor row is: 2020 320 51,000
+Anchor row is: Tahun Bil. Pusat (buah) Bil. Pelatih (orang)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -7334,7 +7404,7 @@ Tahun  Bil. Pusat (buah)  Bil. Pelatih (orang)
 ___
 
 25032015
-Anchor row is: Bangladesh 1
+Anchor row is: Negara Jumlah orang
 Table text similarity score is: 100
 Table text is:
 ___
@@ -7359,7 +7429,7 @@ Bangladesh  1
 ___
 
 15062015
-Anchor row is: Selangor 22 2
+Anchor row is: Negeri Bilangan Kes  Bilangan Kes 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -7389,7 +7459,7 @@ Selangor   22  2
 ___
 
 15062015
-Anchor row is: JUMLAH 82 12
+Anchor row is: Kuala  8 1
 Table text similarity score is: 100
 Table text is:
 ___
@@ -7426,7 +7496,7 @@ JUMLAH  82  12
 ___
 
 19052015
-Anchor row is: Pulau Pinang 0.1
+Anchor row is: Negeri Peratus (%)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -7456,7 +7526,7 @@ Pulau Pinang   0.1
 ___
 
 19052015
-Anchor row is: bandar  masih  24%  yang  belum  
+Anchor row is: Pahang 2.0
 Table text similarity score is: 100
 Table text is:
 ___
@@ -7493,7 +7563,7 @@ menerima air terawat)
 ___
 
 05112015
-Anchor row is: 2011 340
+Anchor row is: Tahun Kes
 Table text similarity score is: 100
 Table text is:
 ___
@@ -7512,7 +7582,7 @@ Tahun  Kes
 ___
 
 05112015
-Anchor row is: Jumlah 1,320
+Anchor row is: 2012 230
 Table text similarity score is: 100
 Table text is:
 ___
@@ -7533,7 +7603,7 @@ Jumlah  1,320
 ___
 
 27052015
-Anchor row is: Ops Pintas 3 14 Februari 2015 hingga sekarang
+Anchor row is: Operasi Tempoh
 Table text similarity score is: 100
 Table text is:
 ___
@@ -7554,7 +7624,7 @@ Ops Pintas 3  14 Februari 2015 hingga sekarang
 ___
 
 16062015
-Anchor row is: 2015 7.2 juta 5.2 bilion
+Anchor row is: Tahun Jumlah penerima Jumlah peruntukan (RM)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -7577,7 +7647,7 @@ Tahun  Jumlah penerima  Jumlah peruntukan (RM)
 ___
 
 16062015
-Anchor row is: Jumlah Keseluruhan 1,018
+Anchor row is: Kategori Kesalahan Bilangan Pemaju
 Table text similarity score is: 99
 Table text is:
 ___
@@ -7609,7 +7679,7 @@ Jumlah Keseluruhan  1,018
 ___
 
 18032015
-Anchor row is: ketidakupayaan
+Anchor row is: Jenis Ketidakupayaan Jumlah  
 Table text similarity score is: 100
 Table text is:
 ___
@@ -7645,7 +7715,7 @@ ketidakupayaan
 ___
 
 18032015
-Anchor row is: JUMLAH 52
+Anchor row is: NEGERI BILANGAN PROJEK
 Table text similarity score is: 100
 Table text is:
 ___
@@ -7680,7 +7750,7 @@ JUMLAH  52
 ___
 
 18032015
-Anchor row is: Kuantan 2,772 2,511 2,397
+Anchor row is:  2012 2013 2014
 Table text similarity score is: 97
 Table text is:
 ___
@@ -7709,7 +7779,7 @@ Kuantan  2,772  2,511  2,397
 ___
 
 10062015
-Anchor row is: Australia 121,037 156,662 22.7
+Anchor row is: Negara 2015  2014 Peratus  Peratus 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -7748,7 +7818,7 @@ Australia  121,037  156,662  22.7
 ___
 
 09042015
-Anchor row is: Jumlah 4,324,000,000
+Anchor row is: Jenis Pengangkutan Jumlah
 Table text similarity score is: 100
 Table text is:
 ___
@@ -7773,7 +7843,7 @@ Jumlah  4,324,000,000
 ___
 
 09042015
-Anchor row is: High Speed Rail 2.5 jam
+Anchor row is: Jenis Pengangkutan Jumlah Masa
 Table text similarity score is: 100
 Table text is:
 ___
@@ -7796,7 +7866,7 @@ High Speed Rail  2.5 jam
 ___
 
 12032015
-Anchor row is: KESELURUHAN
+Anchor row is: NEGARA BIL.   BIL. PELARIAN JUMLAH
 Table text similarity score is: 100
 Table text is:
 ___
@@ -7829,7 +7899,7 @@ KESELURUHAN
 ___
 
 17062015
-Anchor row is: 2014 17,900
+Anchor row is: Tahun Bilangan Kes
 Table text similarity score is: 100
 Table text is:
 ___
@@ -7854,7 +7924,7 @@ Tahun  Bilangan Kes
 ___
 
 17062015
-Anchor row is: Bank Rakyat 100
+Anchor row is: BANK PEMBIAYAAN ISLAMIK 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -7883,7 +7953,7 @@ Bank Rakyat   100
 ___
 
 26102015
-Anchor row is: Jumlah 150,927
+Anchor row is: SEKTOR BILANGAN (ORANG)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -7912,7 +7982,7 @@ Jumlah   150,927
 ___
 
 08062015
-Anchor row is: 2015 (sehingga 30 April) 63.7
+Anchor row is: TAHUN JUMLAH AGIHAN (RM juta)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -7939,7 +8009,7 @@ TAHUN  JUMLAH AGIHAN (RM juta)
 ___
 
 08062015
-Anchor row is: 2015 3.96
+Anchor row is: (RM bilion)
 Table text similarity score is: 94
 Table text is:
 ___
@@ -7969,7 +8039,7 @@ TAHUN
 ___
 
 28052015
-Anchor row is: 2014 787
+Anchor row is: Tahun Jumlah projek
 Table text similarity score is: 100
 Table text is:
 ___
@@ -7992,7 +8062,7 @@ Tahun  Jumlah projek
 ___
 
 19032015
-Anchor row is: jalan persekutuan
+Anchor row is: JENIS JALAN HAD LAJU (km/j)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -8015,7 +8085,7 @@ jalan persekutuan
 ___
 
 19032015
-Anchor row is: Cedera Ringan 6,474 6,702 4,931
+Anchor row is: Maut 4,798 4,753 4,684
 Table text similarity score is: 100
 Table text is:
 ___
@@ -8037,7 +8107,7 @@ Cedera Ringan  6,474  6,702  4,931
 ___
 
 19032015
-Anchor row is: Pahang 118 - 118
+Anchor row is: Persekutuan  (Bilangan)
 Table text similarity score is: 92
 Table text is:
 ___
@@ -8064,7 +8134,7 @@ Pahang  118  -  118
 ___
 
 19062014
-Anchor row is: Sarawak
+Anchor row is: Parlimen Miskin  Miskin Mudah  Yang  Jumlah
 Table text similarity score is: 100
 Table text is:
 ___
@@ -8089,7 +8159,7 @@ Sarawak
 ___
 
 28102014
-Anchor row is: 2014 34
+Anchor row is: Tahun Jumlah Perbelanjaan (RM juta)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -8118,7 +8188,7 @@ Tahun  Jumlah Perbelanjaan (RM juta)
 ___
 
 09102014
-Anchor row is: Timur Laut 24 orang
+Anchor row is: Balik Pulau 10 orang
 Table text similarity score is: 100
 Table text is:
 ___
@@ -8143,7 +8213,7 @@ Timur Laut  24 orang
 ___
 
 09102014
-Anchor row is: Timur Laut 30
+Anchor row is: Balik Pulau 20
 Table text similarity score is: 100
 Table text is:
 ___
@@ -8168,7 +8238,7 @@ Timur Laut  30
 ___
 
 09102014
-Anchor row is: Timur Laut 34
+Anchor row is: Balik Pulau 14
 Table text similarity score is: 100
 Table text is:
 ___
@@ -8193,7 +8263,7 @@ Timur Laut  34
 ___
 
 09102014
-Anchor row is: Timur Laut 31
+Anchor row is: Balik Pulau 9
 Table text similarity score is: 100
 Table text is:
 ___
@@ -8218,7 +8288,7 @@ Timur Laut  31
 ___
 
 09102014
-Anchor row is: Seberang Perai Utara 14
+Anchor row is: Balik Pulau 8
 Table text similarity score is: 100
 Table text is:
 ___
@@ -8239,7 +8309,7 @@ Seberang Perai Utara  14
 ___
 
 09102014
-Anchor row is: Timur Laut 49
+Anchor row is: Seberang Perai Tengah 40
 Table text similarity score is: 100
 Table text is:
 ___
@@ -8258,7 +8328,7 @@ Timur Laut  49
 ___
 
 09102014
-Anchor row is: Timur Laut 133
+Anchor row is: Daerah Bilangan (orang)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -8283,7 +8353,7 @@ Timur Laut  133
 ___
 
 09102014
-Anchor row is: 2013/2014 68,702 41,573
+Anchor row is: 2009/2010 61,027 40,366
 Table text similarity score is: 88
 Table text is:
 ___
@@ -8313,7 +8383,7 @@ Memohon (orang)
 ___
 
 09102014
-Anchor row is: Terengganu 595
+Anchor row is: Johor 1,114
 Table text similarity score is: 100
 Table text is:
 ___
@@ -8350,7 +8420,7 @@ Terengganu  595
 ___
 
 09102014
-Anchor row is: Jumlah 11,640
+Anchor row is: Lokasi Bilangan Koperasi (buah)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -8375,7 +8445,7 @@ Jumlah  11,640
 ___
 
 11032014
-Anchor row is: JUMLAH 196,093,466
+Anchor row is: TAHUN NILAI (RM juta)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -8404,7 +8474,7 @@ JUMLAH  196,093,466
 ___
 
 07042014
-Anchor row is: (x) Barah 49,055
+Anchor row is: (i) Obstetrik dan kelahiran 401,322
 Table text similarity score is: 96
 Table text is:
 ___
@@ -8454,7 +8524,7 @@ berhubungan dengan perkhidmatan kesihatan
 ___
 
 07042014
-Anchor row is: (x) Berka itan sistem saraf 512
+Anchor row is: Kematian
 Table text similarity score is: 98
 Table text is:
 ___
@@ -8496,7 +8566,7 @@ oleh faktor luaran
 ___
 
 07042014
-Anchor row is: Jepun 38
+Anchor row is: Negara Peratus (%)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -8531,7 +8601,7 @@ Jepun  38
 ___
 
 25112014
-Anchor row is: 2008 11
+Anchor row is: Tahun Pulangan atas Ekuiti (%)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -8556,7 +8626,7 @@ Tahun  Pulangan atas Ekuiti (%)
 ___
 
 25112014
-Anchor row is: 2013 12
+Anchor row is: 2009 8
 Table text similarity score is: 100
 Table text is:
 ___
@@ -8579,7 +8649,7 @@ ___
 ___
 
 25112014
-Anchor row is: 2013 25.6
+Anchor row is: 2004 9.9
 Table text similarity score is: 100
 Table text is:
 ___
@@ -8614,7 +8684,7 @@ Tahun  Ringgit Malaysia (bilion)
 ___
 
 25112014
-Anchor row is: 2013 8.1
+Anchor row is: Tahun Ringgit Malaysia (bilion)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -8649,7 +8719,7 @@ Tahun  Ringgit Malaysia (bilion)
 ___
 
 25112014
-Anchor row is: Jumlah 19.25
+Anchor row is: Jenis Bantuan Jumlah (RM juta)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -8676,7 +8746,7 @@ Jumlah  19.25
 ___
 
 17032014
-Anchor row is: Jumlah  2,049
+Anchor row is: Penerima
 Table text similarity score is: 97
 Table text is:
 ___
@@ -8708,7 +8778,7 @@ Jumlah  2,049
 ___
 
 04112014
-Anchor row is: 10. India 762
+Anchor row is: Bil. Negara Bilangan Peserta
 Table text similarity score is: 100
 Table text is:
 ___
@@ -8743,7 +8813,7 @@ Bil.  Negara  Bilangan Peserta
 ___
 
 01042014
-Anchor row is:  Jumlah 5,648,800
+Anchor row is: 1 Geran one-off kepada Zoo Negara 5,000,000
 Table text similarity score is: 97
 Table text is:
 ___
@@ -8777,7 +8847,7 @@ teknikal luar negara
 ___
 
 16102014
-Anchor row is: Jan-Ogos 2014 69,115 8,292 49
+Anchor row is: 2011 111,296 11,637 109
 Table text similarity score is: 100
 Table text is:
 ___
@@ -8801,7 +8871,7 @@ Jan-Ogos 2014  69,115  8,292  49
 ___
 
 16102014
-Anchor row is: Sarawak 1
+Anchor row is: Negeri Jumlah Outlet Ikan 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -8841,7 +8911,7 @@ Sarawak  1
 ___
 
 12062014
-Anchor row is: 2004 4.788 bilion
+Anchor row is: Tahun Jumlah (RM)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -8866,7 +8936,7 @@ Tahun  Jumlah (RM)
 ___
 
 12062014
-Anchor row is: 2014 Anggaran 22.24 bilion
+Anchor row is: 2005 8.164 bilion
 Table text similarity score is: 100
 Table text is:
 ___
@@ -8899,7 +8969,7 @@ ___
 ___
 
 12062014
-Anchor row is: Sambilan 1,614
+Anchor row is: Jawatan Jumlah
 Table text similarity score is: 100
 Table text is:
 ___
@@ -8920,7 +8990,7 @@ Sambilan  1,614
 ___
 
 12062014
-Anchor row is: 2013 129.0 283
+Anchor row is: Tahun Kutipan (RM/bilion) Bonus (RM/juta)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -8943,7 +9013,7 @@ Tahun  Kutipan (RM/bilion)  Bonus (RM/juta)
 ___
 
 29102014
-Anchor row is: Jumlah 7,277
+Anchor row is: Melayu 6,834
 Table text similarity score is: 100
 Table text is:
 ___
@@ -8972,7 +9042,7 @@ Jumlah  7,277
 ___
 
 29102014
-Anchor row is: Jumlah 81,473
+Anchor row is: Kaum Bil. Anggota (orang)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -9001,7 +9071,7 @@ Jumlah  81,473
 ___
 
 25032014
-Anchor row is: KB41 1,925 450 300/150 300 2,975
+Anchor row is: KB17 936 275 300/150 115 1,626
 Table text similarity score is: 83
 Table text is:
 ___
@@ -9030,7 +9100,7 @@ KB41  1,925  450  300/150  300  2,975
 ___
 
 17112014
-Anchor row is: 2014 7.5
+Anchor row is: Tahun Jumlah Peruntukan (RM/ juta)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -9057,7 +9127,7 @@ Tahun  Jumlah Peruntukan (RM/ juta)
 ___
 
 31032014
-Anchor row is: Kerajaan Tempatan
+Anchor row is: Kementerian Jumlah Peruntukan 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -9099,7 +9169,7 @@ Kerajaan Tempatan
 ___
 
 31032014
-Anchor row is: Koperasi dan Kepenggunaan
+Anchor row is: Anggaran  Maksud Kementerian
 Table text similarity score is: 100
 Table text is:
 ___
@@ -9137,7 +9207,7 @@ Koperasi dan Kepenggunaan
 ___
 
 31032014
-Anchor row is: 2013 2,880,000
+Anchor row is: Tahun Jumlah Perbelanjaan  
 Table text similarity score is: 100
 Table text is:
 ___
@@ -9165,7 +9235,7 @@ Tahun  Jumlah Perbelanjaan
 ___
 
 18062014
-Anchor row is: Sehingga sekarang (2014) 15.59
+Anchor row is: (RM) (juta)
 Table text similarity score is: 94
 Table text is:
 ___
@@ -9191,7 +9261,7 @@ Sehingga sekarang (2014)  15.59
 ___
 
 08102014
-Anchor row is: 69,543 orang 250 hingga 499.99
+Anchor row is: Diterima (RM)
 Table text similarity score is: 88
 Table text is:
 ___
@@ -9213,7 +9283,7 @@ Diterima (RM)
 ___
 
 08102014
-Anchor row is: 5,665 orang 5,000 dan ke atas
+Anchor row is: 151,734 orang 500 hingga 999.99
 Table text similarity score is: 100
 Table text is:
 ___
@@ -9234,7 +9304,7 @@ ___
 ___
 
 08102014
-Anchor row is: Pahang 835
+Anchor row is: Negeri Bilangan Koperasi
 Table text similarity score is: 100
 Table text is:
 ___
@@ -9261,7 +9331,7 @@ Pahang  835
 ___
 
 08102014
-Anchor row is: Ibu Pejabat 2
+Anchor row is: Perak 1,147
 Table text similarity score is: 100
 Table text is:
 ___
@@ -9292,7 +9362,7 @@ Ibu Pejabat  2
 ___
 
 05112014
-Anchor row is: JUMLAH 8.934
+Anchor row is: TAHUN PERUNTUKAN (RM / billion)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -9317,7 +9387,7 @@ JUMLAH  8.934
 ___
 
 05112014
-Anchor row is: 3. 2 2014 (Jan-Sep)
+Anchor row is: Bil pembunuhan/cubaan membunuh (kes) Tahun
 Table text similarity score is: 100
 Table text is:
 ___
@@ -9338,7 +9408,7 @@ Bil  pembunuhan/cubaan membunuh (kes)  Tahun
 ___
 
 05112014
-Anchor row is: Alam (DASH) Shah Alam Sdn. Bhd.
+Anchor row is: Bil. Projek Lebuh Raya Syarikat Konsesi
 Table text similarity score is: 94
 Table text is:
 ___
@@ -9371,7 +9441,7 @@ Timur
 ___
 
 13032014
-Anchor row is: Jumlah 241,801
+Anchor row is: Jenis Gangguan Bilangan Gangguan
 Table text similarity score is: 100
 Table text is:
 ___
@@ -9392,7 +9462,7 @@ Jumlah  241,801
 ___
 
 13032014
-Anchor row is: 2014 (hingga 9 Mac) 20,066 44
+Anchor row is: Tahun Jumlah Kes Denggi Jumlah Kematian
 Table text similarity score is: 100
 Table text is:
 ___
@@ -9415,7 +9485,7 @@ Tahun  Jumlah Kes Denggi  Jumlah Kematian
 ___
 
 08042014
-Anchor row is: 2013 2,231
+Anchor row is: Tahun Bilangan Jenayah
 Table text similarity score is: 100
 Table text is:
 ___
@@ -9444,7 +9514,7 @@ Sehingga Januari 2014  2,014
 ___
 
 08042014
-Anchor row is: Sehingga Januari 2014 65
+Anchor row is: 2008 2004
 Table text similarity score is: 100
 Table text is:
 ___
@@ -9473,7 +9543,7 @@ Sehingga Januari 2014  65
 ___
 
 08042014
-Anchor row is: Sehingga Januari 2014 98
+Anchor row is: 2008 2,204
 Table text similarity score is: 100
 Table text is:
 ___
@@ -9502,7 +9572,7 @@ Sehingga Januari 2014  98
 ___
 
 08042014
-Anchor row is: Sehingga Januari 2014 2,014
+Anchor row is: 2008, 5,970
 Table text similarity score is: 100
 Table text is:
 ___
@@ -9531,7 +9601,7 @@ Sehingga Januari 2014  2,014
 ___
 
 08042014
-Anchor row is: Sehingga Januari 2014 35
+Anchor row is: Tahun Bilangan Statistik
 Table text similarity score is: 100
 Table text is:
 ___
@@ -9560,7 +9630,7 @@ Sehingga Januari 2014  35
 ___
 
 16062014
-Anchor row is: 6 Puncak Alam, Selangor TripLC Ventures Sdn Bhd
+Anchor row is: Bil Kampus UiTM Syarikat
 Table text similarity score is: 100
 Table text is:
 ___
@@ -9587,7 +9657,7 @@ Bil  Kampus UiTM  Syarikat
 ___
 
 19112014
-Anchor row is: 2014 17
+Anchor row is: Tahun Jumlah Perbelanjaan (RM juta)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -9612,7 +9682,7 @@ Tahun  Jumlah Perbelanjaan (RM juta)
 ___
 
 23072014
-Anchor row is: JUMLAH 298
+Anchor row is: Negara Bil. Penumpang (orang)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -9662,7 +9732,7 @@ JUMLAH  298
 ___
 
 06112014
-Anchor row is: Jumlah keseluruhan 206
+Anchor row is: Kawasan Jumlah Kes
 Table text similarity score is: 100
 Table text is:
 ___
@@ -9689,7 +9759,7 @@ Jumlah keseluruhan  206
 ___
 
 20032014
-Anchor row is: Pelbagai Daerah 6.5 bilion
+Anchor row is: Daerah Jumlah (RM)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -9726,7 +9796,7 @@ Pelbagai Daerah  6.5 bilion
 ___
 
 20032014
-Anchor row is: Jumlah 1,565
+Anchor row is: Jenis Projek Jumlah Peratus
 Table text similarity score is: 100
 Table text is:
 ___
@@ -9755,7 +9825,7 @@ Jumlah  1,565
 ___
 
 12112014
-Anchor row is: Jumlah 30,647
+Anchor row is: Negeri Unit (buah)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -9802,7 +9872,7 @@ Jumlah  30,647
 ___
 
 27112014
-Anchor row is: 2014 sehingga suku tahun ketiga 2.7
+Anchor row is: Tahun Jumlah (%/ peratus)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -9845,7 +9915,7 @@ ___
 ___
 
 27112014
-Anchor row is: 2013 53,282
+Anchor row is: Tahun Jumlah graduan menganggur (orang)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -9876,7 +9946,7 @@ Tahun  Jumlah graduan menganggur (orang)
 ___
 
 20112014
-Anchor row is: Lebih 1,000,000 1,331 0.6
+Anchor row is:       Kurang 50,000 161,263 69
 Table text similarity score is: 98
 Table text is:
 ___
@@ -9908,7 +9978,7 @@ Bilangan Ahli KWSP   Peratusan (%)
 ___
 
 12032014
-Anchor row is: JUMLAH 42
+Anchor row is: WILAYAH BILANGAN VESSEL
 Table text similarity score is: 100
 Table text is:
 ___
@@ -9935,7 +10005,7 @@ JUMLAH  42
 ___
 
 09042014
-Anchor row is: Jabatan Latihan Khidmat Negara Program Latihan Khidmat Negara.
+Anchor row is: Kementerian/Jabatan Program
 Table text similarity score is: 100
 Table text is:
 ___
@@ -9974,7 +10044,7 @@ Jabatan Latihan Khidmat Negara   Program Latihan Khidmat Negara.
 ___
 
 09042014
-Anchor row is: Jumlah 122,169
+Anchor row is: Tahun Kebankrapan (Orang)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -10005,7 +10075,7 @@ Jumlah  122,169
 ___
 
 27032014
-Anchor row is: 1 Amaran dan tangguh pergerakan 
+Anchor row is: Bilangan Pegawai Jenis Hukuman
 Table text similarity score is: 100
 Table text is:
 ___
@@ -10032,7 +10102,7 @@ gaji
 ___
 
 10042014
-Anchor row is: Myanmar 520 juta
+Anchor row is: Negara Jumlah (USD)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -10067,7 +10137,7 @@ Myanmar  520 juta
 ___
 
 17062014
-Anchor row is: Pahang 17,540
+Anchor row is: Negeri Bilangan Isi Rumah Miskin
 Table text similarity score is: 100
 Table text is:
 ___
@@ -10094,7 +10164,7 @@ Pahang  17,540
 ___
 
 17062014
-Anchor row is: JUMLAH 482,428
+Anchor row is: Perak 37,287
 Table text similarity score is: 100
 Table text is:
 ___
@@ -10129,7 +10199,7 @@ JUMLAH  482,428
 ___
 
 17062014
-Anchor row is: Persekutuan
+Anchor row is: Negeri Miskin Tegar Miskin Mudah Miskin Yang Sudah 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -10157,7 +10227,7 @@ Persekutuan
 ___
 
 17062014
-Anchor row is: 2014 Yadh Travel and Tours Pembatalan lesen
+Anchor row is: TAHUN NAMA SYARIKAT TINDAKAN
 Table text similarity score is: 91
 Table text is:
 ___
@@ -10204,7 +10274,7 @@ berjalan
 ___
 
 13112014
-Anchor row is: Pekerjaan asas 33.5
+Anchor row is: Kategori Pekerjaan Peratusan 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -10242,7 +10312,7 @@ Pekerjaan asas  33.5
 ___
 
 02042014
-Anchor row is: Melaka 1.3
+Anchor row is: (RM Juta)
 Table text similarity score is: 95
 Table text is:
 ___
@@ -10278,7 +10348,7 @@ Melaka  1.3
 ___
 
 23102013
-Anchor row is: senjata buatan sendiri 218
+Anchor row is: Jenis Unit
 Table text similarity score is: 100
 Table text is:
 ___
@@ -10311,7 +10381,7 @@ senjata buatan sendiri  218
 ___
 
 05122013
-Anchor row is: Vietnam 45
+Anchor row is: Negara Peratus
 Table text similarity score is: 100
 Table text is:
 ___
@@ -10344,7 +10414,7 @@ Vietnam  45
 ___
 
 28112013
-Anchor row is: JUMLAH 21,960
+Anchor row is: Negeri Bilangan (orang)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -10389,7 +10459,7 @@ JUMLAH  21,960
 ___
 
 02102013
-Anchor row is: Hingga Ogos 2013 80
+Anchor row is: Tahun Jumlah Kes
 Table text similarity score is: 100
 Table text is:
 ___
@@ -10412,7 +10482,7 @@ Hingga Ogos 2013  80
 ___
 
 02102013
-Anchor row is: Wilayah Persekutuan Labuan 10
+Anchor row is: Negeri Jumlah Kes
 Table text similarity score is: 100
 Table text is:
 ___
@@ -10461,7 +10531,7 @@ Wilayah Persekutuan Labuan  10
 ___
 
 11112013
-Anchor row is: Tiada kes 77 
+Anchor row is: Status Bil. Kes Peratusan
 Table text similarity score is: 97
 Table text is:
 ___
@@ -10494,7 +10564,7 @@ SPRM
 ___
 
 30092013
-Anchor row is: United Kingdom 93.7
+Anchor row is: Negara Peratusan daripada KDNK (%)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -10527,7 +10597,7 @@ United Kingdom  93.7
 ___
 
 30092013
-Anchor row is: Wilayah 167,449
+Anchor row is: Negeri Jumlah anggota RELA
 Table text similarity score is: 100
 Table text is:
 ___
@@ -10570,7 +10640,7 @@ Wilayah  167,449
 ___
 
 30092013
-Anchor row is: Ogos 2013 32,151,569.60
+Anchor row is: Tahun Elaun (RM)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -10597,7 +10667,7 @@ Ogos 2013  32,151,569.60
 ___
 
 29102013
-Anchor row is: JUMLAH IPO 31
+Anchor row is: Filipina 39
 Table text similarity score is: 100
 Table text is:
 ___
@@ -10624,7 +10694,7 @@ JUMLAH IPO  31
 ___
 
 29102013
-Anchor row is: JUMLAH PO 27
+Anchor row is: Filipina 17
 Table text similarity score is: 100
 Table text is:
 ___
@@ -10647,7 +10717,7 @@ JUMLAH PO  27
 ___
 
 29102013
-Anchor row is: JUMLAH IPO 371
+Anchor row is: Vietnam 151
 Table text similarity score is: 100
 Table text is:
 ___
@@ -10694,7 +10764,7 @@ JUMLAH IPO  371
 ___
 
 29102013
-Anchor row is: JUMLAH PO 169
+Anchor row is: Indonesia 78
 Table text similarity score is: 100
 Table text is:
 ___
@@ -10729,7 +10799,7 @@ JUMLAH PO  169
 ___
 
 29102013
-Anchor row is: JUMLAH PO 10
+Anchor row is: Negara Bilangan (orang)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -10756,7 +10826,7 @@ JUMLAH PO  10
 ___
 
 29102013
-Anchor row is: Terkeluar dari kemiskinan 181,229 / 2.5
+Anchor row is: Status (miskin) Bilangan (isi rumah / peratus)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -10779,7 +10849,7 @@ Terkeluar dari kemiskinan  181,229 / 2.5
 ___
 
 30102013
-Anchor row is: Pertanian 179,000
+Anchor row is: Sektor pekerjaan Jumlah (orang)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -10806,7 +10876,7 @@ Pertanian  179,000
 ___
 
 30102013
-Anchor row is: India 117,000
+Anchor row is: Negara Jumlah (orang)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -10831,7 +10901,7 @@ India  117,000
 ___
 
 30102013
-Anchor row is: Vietnam 72
+Anchor row is: Negara Tenaga Kerja Wanita (%)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -10860,7 +10930,7 @@ Vietnam  72
 ___
 
 24102013
-Anchor row is: Pulau Pinang 79 19.9
+Anchor row is: NEGERI RUMAH YANG  RUMAH YANG 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -10892,7 +10962,7 @@ Pulau Pinang   79  19.9
 ___
 
 24102013
-Anchor row is: Putrajaya 4.3 7.4
+Anchor row is: Perak 81.6 14
 Table text similarity score is: 100
 Table text is:
 ___
@@ -10923,7 +10993,7 @@ Putrajaya   4.3  7.4
 ___
 
 24102013
-Anchor row is: Jumlah 14
+Anchor row is: Negeri Bilangan
 Table text similarity score is: 100
 Table text is:
 ___
@@ -10958,7 +11028,7 @@ Jumlah   14
 ___
 
 27112013
-Anchor row is: Jumlah 2,000,000
+Anchor row is: Perbelanjaan Jumlah (RM)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -11004,7 +11074,7 @@ Jumlah  2,000,000
 ___
 
 27112013
-Anchor row is: November 7
+Anchor row is: Bulan Bil. Hari Menoreh
 Table text similarity score is: 100
 Table text is:
 ___
@@ -11031,7 +11101,7 @@ November   7
 ___
 
 02072013
-Anchor row is: 2012 1.68
+Anchor row is: Tahun Jumlah (%)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -11056,7 +11126,7 @@ Tahun  Jumlah (%)
 ___
 
 06112013
-Anchor row is: 2012 0.431
+Anchor row is: Tahun Pekali Gini Negara
 Table text similarity score is: 100
 Table text is:
 ___
@@ -11083,7 +11153,7 @@ Tahun  Pekali Gini Negara
 ___
 
 06112013
-Anchor row is: 2013 251,672,000
+Anchor row is: Tahun Jumlah (RM)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -11102,7 +11172,7 @@ Tahun  Jumlah (RM)
 ___
 
 06112013
-Anchor row is: 2012 401 339 85
+Anchor row is: Tahun Kes Yang Didakwa Kes Yang Disabit  Peratus 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -11123,7 +11193,7 @@ Kesalahan  (%)
 ___
 
 21102013
-Anchor row is: Jumlah Keseluruhan 225.102
+Anchor row is: Tahun Jumlah Bantuan (RM juta)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -11150,7 +11220,7 @@ Jumlah Keseluruhan  225.102
 ___
 
 21112013
-Anchor row is: 1,400 – 1,600 90
+Anchor row is: Kapasiti CC Kadar Cukai (RM)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -11173,7 +11243,7 @@ Kapasiti CC   Kadar Cukai (RM)
 ___
 
 10072013
-Anchor row is: Kumbahan kilang getah 3,500
+Anchor row is: Sisa-sisa industri / kumbahan Kandungan Biological 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -11203,7 +11273,7 @@ Kumbahan kilang getah  3,500
 ___
 
 19112013
-Anchor row is: benih padi sah 85
+Anchor row is: Jenis Subsidi Jumlah (RM/juta)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -11230,7 +11300,7 @@ benih padi sah  85
 ___
 
 09072013
-Anchor row is: Jumlah 50
+Anchor row is: Pendatang Tanpa Izin  Bilangan 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -11263,7 +11333,7 @@ Jumlah  50
 ___
 
 17072013
-Anchor row is: Drama dan nasyid 15%
+Anchor row is: Program Peratusan
 Table text similarity score is: 100
 Table text is:
 ___
@@ -11290,7 +11360,7 @@ Drama dan nasyid  15%
 ___
 
 17072013
-Anchor row is: Jumlah 100%
+Anchor row is: Animasi Kanak-kanak 11%
 Table text similarity score is: 100
 Table text is:
 ___
@@ -11309,7 +11379,7 @@ Jumlah  100%
 ___
 
 17072013
-Anchor row is: Sarawak 175
+Anchor row is: Negeri Penggunaan Per Day, Per Capita 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -11343,7 +11413,7 @@ Sarawak  175
 ___
 
 07112013
-Anchor row is:  Jumlah keseluruhan 434
+Anchor row is: Bil Kementerian Institut Latihan
 Table text similarity score is: 100
 Table text is:
 ___
@@ -11370,7 +11440,7 @@ Bil  Kementerian  Institut Latihan
 ___
 
 07112013
-Anchor row is: JUMLAH 43,449
+Anchor row is: Tahun Bilangan Kes Peratusan daripada Jumlah Kes 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -11416,7 +11486,7 @@ JUMLAH  43,449
 ___
 
 13112013
-Anchor row is: JUMLAH 800.28
+Anchor row is: JENIS PROJEK NILAI JUTA (RM)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -11441,7 +11511,7 @@ JUMLAH  800.28
 ___
 
 26092013
-Anchor row is: Perlis 8.9% 1.5%
+Anchor row is:  2002 2012
 Table text similarity score is: 96
 Table text is:
 ___
@@ -11473,7 +11543,7 @@ Perlis  8.9%  1.5%
 ___
 
 26092013
-Anchor row is: Malaysia (keseluruhan) 6.0 1.7
+Anchor row is: Negeri (Kadar kemiskinan) 2002 (%) 2012
 Table text similarity score is: 100
 Table text is:
 ___
@@ -11518,7 +11588,7 @@ Malaysia (keseluruhan)  6.0  1.7
 ___
 
 18112013
-Anchor row is: Jumlah keseluruhan  223,000
+Anchor row is: Bil Program Jumlah (Unit)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -11543,7 +11613,7 @@ Jumlah keseluruhan  223,000
 ___
 
 18112013
-Anchor row is: Lain-lain 1.4
+Anchor row is: Kaum Peratus
 Table text similarity score is: 100
 Table text is:
 ___
@@ -11570,7 +11640,7 @@ Lain-lain  1.4
 ___
 
 18112013
-Anchor row is: Perempuan 54.5 617,652
+Anchor row is: Jantina Peratus Bilangan
 Table text similarity score is: 100
 Table text is:
 ___
@@ -11589,7 +11659,7 @@ Perempuan  54.5  617,652
 ___
 
 27062012
-Anchor row is: Bukit Kelubang Puyu - Lata Rek, Kuala Krai
+Anchor row is: (RM ribu)
 Table text similarity score is: 95
 Table text is:
 ___
@@ -11632,7 +11702,7 @@ Bukit Kelubang Puyu - Lata Rek, Kuala Krai
 ___
 
 23102012
-Anchor row is: Jumlah Peruntukan 2.9 bilion
+Anchor row is: Tujuan Jumlah (RM)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -11659,7 +11729,7 @@ Jumlah Peruntukan  2.9 bilion
 ___
 
 25092012
-Anchor row is: JUMLAH 354
+Anchor row is: Kawasan Pecahan Keluarga
 Table text similarity score is: 100
 Table text is:
 ___
@@ -11689,7 +11759,7 @@ JUMLAH  354
 ___
 
 09102012
-Anchor row is: Sarawak 456.8
+Anchor row is: Wilayah Jumlah (RM/juta)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -11710,7 +11780,7 @@ Sarawak  456.8
 ___
 
 09102012
-Anchor row is: Sarawak 17,885
+Anchor row is: Wilayah Jumlah (unit rumah)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -11731,7 +11801,7 @@ Sarawak  17,885
 ___
 
 21062012
-Anchor row is: 2012 5.7 bilion 54
+Anchor row is: Tahun Peruntukan (RM) Bilangan Agensi
 Table text similarity score is: 100
 Table text is:
 ___
@@ -11756,7 +11826,7 @@ Tahun  Peruntukan (RM)  Bilangan Agensi
 ___
 
 21062012
-Anchor row is: 2012 (Januari – Mei) 3,161
+Anchor row is: Tahun Jumlah Kes
 Table text similarity score is: 100
 Table text is:
 ___
@@ -11783,7 +11853,7 @@ Tahun  Jumlah Kes
 ___
 
 17102012
-Anchor row is: Jumlah 79,655
+Anchor row is: Jenis Teksi Bilangan Permit (bil/ribu)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -11812,7 +11882,7 @@ Teksi mewah    1,097
 ___
 
 13062012
-Anchor row is: 2011/2012 80,000 9
+Anchor row is: Tahun Kuota (tan metrik) Bilangan pengeluar
 Table text similarity score is: 100
 Table text is:
 ___
@@ -11833,7 +11903,7 @@ Tahun  Kuota (tan metrik)  Bilangan pengeluar
 ___
 
 08112012
-Anchor row is: 2012 (September) 8,078
+Anchor row is: Tahun Bilangan (orang)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -11858,7 +11928,7 @@ Tahun  Bilangan (orang)
 ___
 
 18062012
-Anchor row is: 2011 1,573,061
+Anchor row is: Tahun Bilangan Pekerja Asing Sah  
 Table text similarity score is: 100
 Table text is:
 ___
@@ -11890,7 +11960,7 @@ Dalam Negara
 ___
 
 08102012
-Anchor row is: Tahap 5 Tahu, faham, boleh buat dengan beradab mithali
+Anchor row is: Tahap 1 Tahu
 Table text similarity score is: 100
 Table text is:
 ___
@@ -11913,7 +11983,7 @@ Tahap 5  Tahu, faham, boleh buat dengan beradab mithali
 ___
 
 20062012
-Anchor row is: 2 B.28 Pengangkutan
+Anchor row is: (RM / juta)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -11953,7 +12023,7 @@ Maksud   Kementerian
 ___
 
 06112012
-Anchor row is: JUMLAH 271 1,313
+Anchor row is: Tahun Jumlah Kes Jumlah Pendatang 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -11986,7 +12056,7 @@ JUMLAH  271  1,313
 ___
 
 06112012
-Anchor row is: Negeri Sembilan 1.3
+Anchor row is: Negeri Jumlah Pelaburan  
 Table text similarity score is: 100
 Table text is:
 ___
@@ -12021,7 +12091,7 @@ Negeri Sembilan  1.3
 ___
 
 06112012
-Anchor row is: Jumlah Keseluruhan 27.5 bilion
+Anchor row is: samb/-
 Table text similarity score is: 100
 Table text is:
 ___
@@ -12052,7 +12122,7 @@ Jumlah Keseluruhan   27.5 bilion
 ___
 
 06112012
-Anchor row is: Singapura 857
+Anchor row is: Negara Bilangan Peserta (orang)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -12077,8 +12147,8 @@ Singapura  857
 ___
 
 28062012
-Anchor row is: discharge, not amount to an acquittal.
-Table text similarity score is: 82
+Anchor row is: Jenis Kes Jumlah
+Table text similarity score is: 98
 Table text is:
 ___
 Jenis Kes Jumlah
@@ -12091,19 +12161,18 @@ ___
 
 Candidate text is:
 ___
-dibuka melibatkan pegawai awam ialah sebanyak 5,983.  
-  
 Jenis Kes  Jumlah 
  
 Yang dituduh  816 
 Disabitkan salah  324 
 Dilepaskan tanpa dibebaskan ataupun   
 discharge, not amount to an acquittal. 
+69 
 
 ___
 
 28062012
-Anchor row is: Masih dalam perbicaraan ataupun rayuan 105
+Anchor row is: Didapati tidak bersalah 298
 Table text similarity score is: 100
 Table text is:
 ___
@@ -12122,7 +12191,7 @@ Masih dalam perbicaraan ataupun rayuan  105
 ___
 
 15032012
-Anchor row is: Sarawak 167
+Anchor row is: Lokasi Taburan KTW
 Table text similarity score is: 100
 Table text is:
 ___
@@ -12165,7 +12234,7 @@ Sarawak  167
 ___
 
 17042012
-Anchor row is: mempunyai bidang kuasa.
+Anchor row is: (i) Majlis Peguam bersetuju dan  Mengambil kira perundingan 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -12210,7 +12279,7 @@ mempunyai bidang kuasa.
 ___
 
 17042012
-Anchor row is: tangkapan itu.
+Anchor row is: (iv) Ru jukan kepada Perkara 5 dan  Sememangnya rang undang-
 Table text similarity score is: 100
 Table text is:
 ___
@@ -12265,7 +12334,7 @@ tangkapan itu.
 ___
 
 17042012
-Anchor row is: Peguam mengiktiraf
+Anchor row is: (vi) Ta tacara mengenai maklumat  Seksyen 8 memperuntukkan 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -12294,7 +12363,7 @@ Peguam mengiktiraf
 ___
 
 17042012
-Anchor row is: tidak akan diberikan.
+Anchor row is: Bil. Isu Respons Peguam Negara
 Table text similarity score is: 100
 Table text is:
 ___
@@ -12327,7 +12396,7 @@ tidak akan diberikan.
 ___
 
 17042012
-Anchor row is: JUMLAH 219
+Anchor row is: Persatuan Pengganas Ditangkap 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -12360,7 +12429,7 @@ JUMLAH  219
 ___
 
 27092012
-Anchor row is: Kesatuan Eropah 17.3
+Anchor row is: Republik Rakyat China 19.1
 Table text similarity score is: 100
 Table text is:
 ___
@@ -12379,7 +12448,7 @@ Kesatuan Eropah  17.3
 ___
 
 27092012
-Anchor row is: Amerika Syarikat 7.1
+Anchor row is: Negara Peratusan (%)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -12398,7 +12467,7 @@ Amerika Syarikat  7.1
 ___
 
 26032012
-Anchor row is: Jumlah 311.56
+Anchor row is: Jenis Permohonan Kapasiti (megawatt)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -12423,7 +12492,7 @@ Jumlah  311.56
 ___
 
 19112012
-Anchor row is: Jumlah 13,252 8,469
+Anchor row is: 2011 4,650 2,969
 Table text similarity score is: 85
 Table text is:
 ___
@@ -12452,7 +12521,7 @@ Jumlah  13,252  8,469
 ___
 
 15102012
-Anchor row is: September)
+Anchor row is: (RM juta) (RM juta) (RM juta) (RM juta)
 Table text similarity score is: 92
 Table text is:
 ___
@@ -12481,7 +12550,7 @@ September)
 ___
 
 19032012
-Anchor row is: Selangor) 2008.
+Anchor row is: Negeri Kaedah-Kaedah / Peraturan-Peraturan
 Table text similarity score is: 98
 Table text is:
 ___
@@ -12523,7 +12592,7 @@ Selangor) 2008.
 ___
 
 01102012
-Anchor row is: Perlis 109 juta
+Anchor row is: Negeri Jumlah Pelaburan 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -12570,7 +12639,7 @@ Perlis  109 juta
 ___
 
 01102012
-Anchor row is: Jumlah 145.3 bilion
+Anchor row is: Wilayah Persekutuan Labuan 22.9 juta
 Table text similarity score is: 100
 Table text is:
 ___
@@ -12587,7 +12656,7 @@ Jumlah  145.3 bilion
 ___
 
 09042012
-Anchor row is: 2011 3,329
+Anchor row is: 2007 2,235
 Table text similarity score is: 100
 Table text is:
 ___
@@ -12614,7 +12683,7 @@ Tahun  Jumlah Graduan
 ___
 
 09042012
-Anchor row is: 2011 11,415
+Anchor row is: Tahun Jumlah Graduan  
 Table text similarity score is: 100
 Table text is:
 ___
@@ -12641,7 +12710,7 @@ Tahun  Jumlah Graduan
 ___
 
 09042012
-Anchor row is: Segamat pembinaan
+Anchor row is: (RM juta)
 Table text similarity score is: 97
 Table text is:
 ___
@@ -12681,7 +12750,7 @@ Segamat  pembinaan
 ___
 
 09042012
-Anchor row is: Jumlah kesalahan  422
+Anchor row is: Bil Jilid Kesalahan
 Table text similarity score is: 100
 Table text is:
 ___
@@ -12712,7 +12781,7 @@ Jumlah kesalahan  422
 ___
 
 27032012
-Anchor row is: 2011 RM6,376,746
+Anchor row is: Tahun Jumlah Kutipan
 Table text similarity score is: 100
 Table text is:
 ___
@@ -12737,7 +12806,7 @@ Tahun  Jumlah Kutipan
 ___
 
 01112012
-Anchor row is: travel tahun 2012
+Anchor row is: Program Jumlah (RM juta)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -12772,7 +12841,7 @@ travel tahun 2012
 ___
 
 04042012
-Anchor row is: Sabah 13 1.9 juta
+Anchor row is: Selangor 96 14.4 juta
 Table text similarity score is: 100
 Table text is:
 ___
@@ -12805,7 +12874,7 @@ Sabah  13  1.9 juta
 ___
 
 04042012
-Anchor row is: Putrajaya
+Anchor row is: NEGERI JUMLAH  NILAI 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -12840,7 +12909,7 @@ Putrajaya
 ___
 
 04042012
-Anchor row is: Labuan
+Anchor row is: NEGERI PENTERNAK  PENTERNAK 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -12889,7 +12958,7 @@ Labuan
 ___
 
 10042012
-Anchor row is: JUMLAH 80
+Anchor row is: Kawasan Parlimen Bilangan  
 Table text similarity score is: 100
 Table text is:
 ___
@@ -12938,7 +13007,7 @@ JUMLAH  80
 ___
 
 27062011
-Anchor row is: JUMLAH 2,380
+Anchor row is: Tahun Bil. Banduan
 Table text similarity score is: 100
 Table text is:
 ___
@@ -12963,7 +13032,7 @@ JUMLAH   2,380
 ___
 
 27062011
-Anchor row is: RM46.1 bilion RM22.1 bilion RM29.1 bilion
+Anchor row is: 2008 2009 2010
 Table text similarity score is: 100
 Table text is:
 ___
@@ -12980,7 +13049,7 @@ RM46.1 bilion  RM22.1 bilion  RM29.1 bilion
 ___
 
 09112011
-Anchor row is: Minuman keras 6
+Anchor row is: Makanan atau kesihatan 54
 Table text similarity score is: 100
 Table text is:
 ___
@@ -13007,7 +13076,7 @@ Minuman keras  6
 ___
 
 09112011
-Anchor row is: Alat ganti kenderaan 24
+Anchor row is: Petroleum 2
 Table text similarity score is: 100
 Table text is:
 ___
@@ -13032,7 +13101,7 @@ Alat ganti kenderaan  24
 ___
 
 09112011
-Anchor row is: Lain-lain 244
+Anchor row is: Jenis Barang Jumlah Kes
 Table text similarity score is: 100
 Table text is:
 ___
@@ -13059,7 +13128,7 @@ Lain-lain  244
 ___
 
 17032011
-Anchor row is: Jumlah  1000
+Anchor row is: Bulan Sasaran (Bil.) Jangkaan Pencapaian
 Table text similarity score is: 100
 Table text is:
 ___
@@ -13082,7 +13151,7 @@ Jumlah    1000
 ___
 
 22032011
-Anchor row is: Jumlah Keseluruhan 1,604
+Anchor row is: GRED LELAKI PEREMPUAN
 Table text similarity score is: 100
 Table text is:
 ___
@@ -13118,7 +13187,7 @@ Jumlah Keseluruhan  1,604
 ___
 
 22032011
-Anchor row is: Melaka 1.2
+Anchor row is: Negeri Jumlah Pelaburan (RM Bilion)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -13147,7 +13216,7 @@ Melaka  1.2
 ___
 
 14062011
-Anchor row is: Jan-April 2011 208 149 3
+Anchor row is: hukum)
 Table text similarity score is: 78
 Table text is:
 ___
@@ -13176,7 +13245,7 @@ Jan-April 2011  208  149  3
 ___
 
 14062011
-Anchor row is: China 5.9 3.3 5.3
+Anchor row is: Negara 2008 (peratus) 2010 (peratus) 2011 (peratus)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -13201,7 +13270,7 @@ China  5.9  3.3  5.3
 ___
 
 31102011
-Anchor row is: 10. Jepun 415,000
+Anchor row is: Bil. Negara Jumlah Pelancong (Juta / Orang)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -13236,7 +13305,7 @@ Bil.  Negara  Jumlah Pelancong (Juta / Orang)
 ___
 
 31102011
-Anchor row is: 2012 16,870,767,600 10.82
+Anchor row is: Tahun Jumlah Peruntukan (RM) Peratus Kenaikan
 Table text similarity score is: 100
 Table text is:
 ___
@@ -13259,7 +13328,7 @@ Tahun  Jumlah Peruntukan (RM)  Peratus Kenaikan
 ___
 
 29032011
-Anchor row is: Kerdau 915,000
+Anchor row is: Kawasan Pilihan Raya Kecil Anggaran Perbelanjaan (RM)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -13306,7 +13375,7 @@ Kerdau                   915,000
 ___
 
 29032011
-Anchor row is: program bantuan rumah 103 110 73
+Anchor row is: Peruntukan Projek  Tahun 2011   
 Table text similarity score is: 100
 Table text is:
 ___
@@ -13331,7 +13400,7 @@ program bantuan rumah  103  110  73
 ___
 
 04102011
-Anchor row is: JUMLAH 27 4
+Anchor row is: NEGERI JKM NGO
 Table text similarity score is: 100
 Table text is:
 ___
@@ -13372,7 +13441,7 @@ JUMLAH  27  4
 ___
 
 04102011
-Anchor row is: 2011 4
+Anchor row is: TAHUN JUMLAH KES
 Table text similarity score is: 100
 Table text is:
 ___
@@ -13397,7 +13466,7 @@ TAHUN                                     JUMLAH KES
 ___
 
 08032011
-Anchor row is: Jumlah 657,141
+Anchor row is: Perlis 3,062
 Table text similarity score is: 100
 Table text is:
 ___
@@ -13447,7 +13516,7 @@ Jumlah  657,141
 ___
 
 08032011
-Anchor row is: Penggunaan Enjin 2 kali diesel enjin 4 kali diesel enjin
+Anchor row is: New Generation PV Second Generation PV
 Table text similarity score is: 100
 Table text is:
 ___
@@ -13474,7 +13543,7 @@ Penggunaan Enjin  2 kali diesel enjin  4 kali diesel enjin
 ___
 
 10102011
-Anchor row is: Bank Dunia 4.8 5.7
+Anchor row is: Nama Agensi Tahun 2011 (%) Tahun 2012 (%)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -13495,7 +13564,7 @@ Bank Dunia  4.8  5.7
 ___
 
 16112011
-Anchor row is: Tahun 6 93.88
+Anchor row is: MURID PENCAPAIAN (peratus)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -13522,7 +13591,7 @@ Tahun 6  93.88
 ___
 
 24032011
-Anchor row is: Rumah kebajikan 5
+Anchor row is: Jenis Pekerjaan Jumlah (orang)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -13559,7 +13628,7 @@ Jenis Pekerjaan  Jumlah (orang)
 ___
 
 24032011
-Anchor row is: Jumlah 283
+Anchor row is: Jenis Maahad Tahfiz Bil. (buah)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -13590,7 +13659,7 @@ Jumlah  283
 ___
 
 23112011
-Anchor row is: Hawk 61.8
+Anchor row is: Jenis Kos Penyelenggaraan (RM / juta)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -13613,7 +13682,7 @@ Hawk  61.8
 ___
 
 13062011
-Anchor row is: Jabatan Veterinar 121
+Anchor row is: Agensi Bilangan Pegawai Penguat Kuasa (orang)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -13638,7 +13707,7 @@ Jabatan Veterinar  121
 ___
 
 23032011
-Anchor row is: Wilayah Persekutuan 280
+Anchor row is: Negeri Jumlah (Orang)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -13679,7 +13748,7 @@ Wilayah Persekutuan  280
 ___
 
 28032011
-Anchor row is: Suruhanjaya Perkhidmatan Awam 0.4
+Anchor row is: Kementerian Anggaran (RM juta)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -13744,7 +13813,7 @@ Suruhanjaya Perkhidmatan Awam  0.4
 ___
 
 28032011
-Anchor row is: dan Inovasi
+Anchor row is: Projek Pembangunan Anggaran 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -13797,7 +13866,7 @@ dan Inovasi
 ___
 
 15062011
-Anchor row is: Penyiasatan Polis 37
+Anchor row is: Kes Koperasi Yang Ditutup (2010) Bilangan
 Table text similarity score is: 100
 Table text is:
 ___
@@ -13830,7 +13899,7 @@ Penyiasatan Polis  37
 ___
 
 11102011
-Anchor row is: 2010 7,115 9,813 6,492 23,420
+Anchor row is: 2007 6,101 6,038 5,228 17,367
 Table text similarity score is: 93
 Table text is:
 ___
@@ -13855,7 +13924,7 @@ Awam  Swasta  NGO
 ___
 
 11102011
-Anchor row is: backhoe 130,236
+Anchor row is: Jenis Kenderaan Jumlah (buah)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -13882,7 +13951,7 @@ backhoe  130,236
 ___
 
 11102011
-Anchor row is: Lain-lain 96
+Anchor row is: Kaum Bilangan (orang)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -13907,7 +13976,7 @@ Lain-lain  96
 ___
 
 09032011
-Anchor row is: (bersamaan penurunan 17 peratus berbanding tahun 
+Anchor row is: TAHUN BIL. KES
 Table text similarity score is: 100
 Table text is:
 ___
@@ -13948,7 +14017,7 @@ TAHUN  BIL. KES
 ___
 
 31032011
-Anchor row is: 2010 2,806 1,625
+Anchor row is: Bilangan Artikel  
 Table text similarity score is: 100
 Table text is:
 ___
@@ -13973,7 +14042,7 @@ Tahun  Scopus  ISI
 ___
 
 03112011
-Anchor row is: 2010 900,880 9.126 15.454 24.664
+Anchor row is: (RM bilion)
 Table text similarity score is: 81
 Table text is:
 ___
@@ -14015,7 +14084,7 @@ Ogos)
 ___
 
 03112011
-Anchor row is: 6. bas 26.20
+Anchor row is: Bil. Kenderaan Kadar Tol (RM)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -14042,7 +14111,7 @@ Bil.  Kenderaan  Kadar Tol (RM)
 ___
 
 22112011
-Anchor row is: -projek pengurusan tanah terbiar 3
+Anchor row is: Projek Jumlah (RM/Juta)
 Table text similarity score is: 97
 Table text is:
 ___
@@ -14077,7 +14146,7 @@ Sabah
 ___
 
 22112011
-Anchor row is: Putrajaya
+Anchor row is: Negeri Tahun   
 Table text similarity score is: 100
 Table text is:
 ___
@@ -14118,7 +14187,7 @@ Putrajaya
 ___
 
 22112011
-Anchor row is: Jumlah 14,467 Jumlah 8,648
+Anchor row is: Rumah Mampu  Unit Rumah Mesra  Unit
 Table text similarity score is: 100
 Table text is:
 ___
@@ -14167,7 +14236,7 @@ Jumlah  14,467  Jumlah  8,648
 ___
 
 19102011
-Anchor row is: Jumlah 129,622
+Anchor row is: Jenis Zon Bil. Nelayan (org)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -14194,7 +14263,7 @@ ZON C3 - perairan laut dalam  500
 ___
 
 19102011
-Anchor row is: Kota Kinabalu 1
+Anchor row is: Kawasan Bilangan Kedai TUKAR
 Table text similarity score is: 100
 Table text is:
 ___
@@ -14221,7 +14290,7 @@ Kota Kinabalu  1
 ___
 
 15032011
-Anchor row is: Jumlah 2,034 1.595
+Anchor row is: Tahun Bil. Pelajar  Kos Sepanjang Pengajian 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -14246,7 +14315,7 @@ Jumlah  2,034  1.595
 ___
 
 23062011
-Anchor row is: Penyelenggaraan mekanikal dan electrical 2.1
+Anchor row is: Perkara Nilai  
 Table text similarity score is: 100
 Table text is:
 ___
@@ -14279,7 +14348,7 @@ Penyelenggaraan mekanikal dan electrical  2.1
 ___
 
 06102011
-Anchor row is: 2010 10
+Anchor row is: Tahun Bilangan Kes
 Table text similarity score is: 81
 Table text is:
 ___
@@ -14304,7 +14373,7 @@ Tahun  Bilangan Kes
 ___
 
 05042011
-Anchor row is: Tepung gandum untuk kegunaan am 88.2 juta
+Anchor row is: Jenis Subsidi Jumlah Perbelanjaan 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -14333,7 +14402,7 @@ Tepung gandum untuk kegunaan am  88.2 juta
 ___
 
 05042011
-Anchor row is: Lain-lain 5
+Anchor row is: Jenis Racun Sampel
 Table text similarity score is: 100
 Table text is:
 ___
@@ -14358,7 +14427,7 @@ Lain-lain  5
 ___
 
 21112011
-Anchor row is: Jumlah Keseluruhan 1,441
+Anchor row is: Tahun Jumlah (Orang)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -14383,7 +14452,7 @@ Jumlah Keseluruhan  1,441
 ___
 
 21032011
-Anchor row is: FELDA Holdings Bhd. 188
+Anchor row is: Syarikat Keuntungan (RM / juta)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -14412,7 +14481,7 @@ FELDA Holdings Bhd.   188
 ___
 
 21032011
-Anchor row is: JUMLAH 24,866,000 49,696
+Anchor row is: NEGERI PERUNTUKAN (RM) JUMLAH KELUARGA
 Table text similarity score is: 100
 Table text is:
 ___
@@ -14445,7 +14514,7 @@ JUMLAH  24,866,000  49,696
 ___
 
 04042011
-Anchor row is: Jumlah keseluruhan 1,817, 871
+Anchor row is: PECAHAN PEMEGANG PLKS MENGIKUT SEKTOR PEKERJAAN 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -14476,7 +14545,7 @@ Jumlah keseluruhan  1,817, 871
 ___
 
 04042011
-Anchor row is: Jumlah 49
+Anchor row is: Jenis IPTS Jumlah (Buah)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -14499,7 +14568,7 @@ Jumlah  49
 ___
 
 22062011
-Anchor row is: Jumlah 34,703,057 44,695,359
+Anchor row is: Kaum 2006 (Orang) 2010 (Orang)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -14534,7 +14603,7 @@ Jumlah  34,703,057  44,695,359
 ___
 
 22062011
-Anchor row is: Jumlah 78 301 163 216
+Anchor row is: Negeri Kes  Dipindahkan Dari  Kes  Kes Belum 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -14567,7 +14636,7 @@ Jumlah   78  301  163  216
 ___
 
 22032010
-Anchor row is: Sabah 716
+Anchor row is: Negeri Pertubuhan Bukan 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -14612,7 +14681,7 @@ Sabah  716
 ___
 
 10112010
-Anchor row is: (Jan-Sept) pembicaraan
+Anchor row is: (Orang)
 Table text similarity score is: 74
 Table text is:
 ___
@@ -14653,7 +14722,7 @@ perbicaraan
 ___
 
 10112010
-Anchor row is: Nigeria 51
+Anchor row is: Negara Jumlah (orang)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -14678,7 +14747,7 @@ Nigeria  51
 ___
 
 10112010
-Anchor row is: 18 Oktober)
+Anchor row is: (RM) (orang)
 Table text similarity score is: 86
 Table text is:
 ___
@@ -14712,7 +14781,7 @@ hingga
 ___
 
 10112010
-Anchor row is: Melaka 100,000
+Anchor row is: Negeri Sumbangan (RM)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -14741,7 +14810,7 @@ Melaka  100,000
 ___
 
 08122010
-Anchor row is: Sadong
+Anchor row is: Kawasan  Permohonan  Permohonan  Permohonan 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -14784,7 +14853,7 @@ Sadong
 ___
 
 25112010
-Anchor row is: Jumlah 189
+Anchor row is: Tahun Bil. Laporan
 Table text similarity score is: 100
 Table text is:
 ___
@@ -14807,7 +14876,7 @@ Jumlah  189
 ___
 
 25112010
-Anchor row is: Jumlah 9,815
+Anchor row is: Tahun Bil. Kes
 Table text similarity score is: 100
 Table text is:
 ___
@@ -14830,7 +14899,7 @@ Jumlah  9,815
 ___
 
 07042010
-Anchor row is: Jumlah 10,758
+Anchor row is: Negeri Bilangan penderaan  
 Table text similarity score is: 100
 Table text is:
 ___
@@ -14877,7 +14946,7 @@ Jumlah  10,758
 ___
 
 21062010
-Anchor row is: 2009 1,918,146
+Anchor row is: Tahun Jumlah Pekerja Asing 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -14904,7 +14973,7 @@ Tahun  Jumlah Pekerja Asing
 ___
 
 21062010
-Anchor row is: Dekan 264 1 6
+Anchor row is: Jawatan Melayu  Cina  India/Lain-lain 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -14929,7 +14998,7 @@ Dekan  264  1  6
 ___
 
 29032010
-Anchor row is: Jumlah besar 590
+Anchor row is: Paten 172
 Table text similarity score is: 100
 Table text is:
 ___
@@ -14954,7 +15023,7 @@ Jumlah besar  590
 ___
 
 29032010
-Anchor row is: Jumlah besar 6,999
+Anchor row is: Projek Jumlah
 Table text similarity score is: 100
 Table text is:
 ___
@@ -14981,7 +15050,7 @@ Jumlah besar  6,999
 ___
 
 06072010
-Anchor row is: Sehingga Mei 2010 2.2
+Anchor row is: (RM bilion)
 Table text similarity score is: 96
 Table text is:
 ___
@@ -15009,7 +15078,7 @@ Sehingga Mei 2010  2.2
 ___
 
 06072010
-Anchor row is: Terengganu 1
+Anchor row is: Kawasan Jumlah Stesen 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -15042,7 +15111,7 @@ Terengganu  1
 ___
 
 06072010
-Anchor row is: ST 5 2.60
+Anchor row is: Gred Beras Harga (RM Sekilo)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -15066,7 +15135,7 @@ ST 5  2.60
 ___
 
 28102010
-Anchor row is: Total 1,142 32.26 2,252 63.74 3,398
+Anchor row is:  Total Percentage Total Percentage 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -15105,7 +15174,7 @@ Total  1,142  32.26  2,252  63.74  3,398
 ___
 
 02112010
-Anchor row is: 2009 35.4 bilion
+Anchor row is: Tahun Jumlah (RM)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -15132,7 +15201,7 @@ Tahun  Jumlah (RM)
 ___
 
 08112010
-Anchor row is: UEM Group Berhad 761 -
+Anchor row is: Syarikat Keuntungan   Kerugian  
 Table text similarity score is: 100
 Table text is:
 ___
@@ -15171,7 +15240,7 @@ UEM Group Berhad  761  -
 ___
 
 07062010
-Anchor row is: Gombak 12 Julai 2010
+Anchor row is: Ahli-ahli Yang Berhormat Tarikh
 Table text similarity score is: 100
 Table text is:
 ___
@@ -15218,7 +15287,7 @@ Gombak   12 Julai 2010
 ___
 
 07062010
-Anchor row is: Jumlah 263,686
+Anchor row is: 2005 28,079
 Table text similarity score is: 94
 Table text is:
 ___
@@ -15248,7 +15317,7 @@ Jumlah   263,686
 ___
 
 23032010
-Anchor row is: 2009 3,060 209,417 1.46
+Anchor row is: 2005 3,108 157,365 1.98
 Table text similarity score is: 97
 Table text is:
 ___
@@ -15279,7 +15348,7 @@ asing
 ___
 
 23032010
-Anchor row is: Samun bersenjata api 15.79%
+Anchor row is: Jenis Jenayah Jumlah Peratus
 Table text similarity score is: 100
 Table text is:
 ___
@@ -15300,7 +15369,7 @@ Samun bersenjata api  15.79%
 ___
 
 11112010
-Anchor row is: Bahasa Punjabi/Tamil 10
+Anchor row is: Akhbar Jumlah
 Table text similarity score is: 100
 Table text is:
 ___
@@ -15323,7 +15392,7 @@ Bahasa Punjabi/Tamil  10
 ___
 
 30112010
-Anchor row is: 2009 1:2,274
+Anchor row is: 2005  1:3,015 
 Table text similarity score is: 93
 Table text is:
 ___
@@ -15351,7 +15420,7 @@ TAHUN
 ___
 
 30112010
-Anchor row is: 2009 1:24,788
+Anchor row is: 2005  1:40,572 
 Table text similarity score is: 94
 Table text is:
 ___
@@ -15379,8 +15448,8 @@ TAHUN
 ___
 
 30112010
-Anchor row is: 2009 1:2.503 juta
-Table text similarity score is: 94
+Anchor row is: PENDUDUK
+Table text similarity score is: 73
 Table text is:
 ___
 TAHUN NISBAH 
@@ -15395,6 +15464,8 @@ ___
 
 Candidate text is:
 ___
+Nisbah pegawai pergigian pakar atau ortodontik kepada penduduk: 
+  
   NISBAH 
 PENDUDUK 
 TAHUN 
@@ -15407,7 +15478,7 @@ TAHUN
 ___
 
 24112010
-Anchor row is: LTA Kota Kinabalu 182,394 16,544,971
+Anchor row is: Lapangan  Pergerakan Pelepasan  Trafik 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -15438,7 +15509,7 @@ LTA Kota Kinabalu  182,394  16,544,971
 ___
 
 12042010
-Anchor row is: Perak 9
+Anchor row is: Negeri yang mendapatkan rawatan Peratusan (%)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -15462,7 +15533,7 @@ Perak   9
 ___
 
 06042010
-Anchor row is: •  Kementerian  Sains,  Teknologi  dan 20
+Anchor row is: Kementerian - Kementerian Token Sum (RM)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -15506,7 +15577,7 @@ Tempatan
 ___
 
 06042010
-Anchor row is: •  Kementerian Pengajian Tinggi 10
+Anchor row is: Inovasi 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -15535,7 +15606,7 @@ Kesejahteraan Bandar
 ___
 
 06042010
-Anchor row is: Lain-lain 4.2
+Anchor row is: Kaum Jumlah (%)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -15560,7 +15631,7 @@ Lain-lain  4.2
 ___
 
 02122010
-Anchor row is: Sarawak 1
+Anchor row is: Negeri Jumlah Orang Sekatan
 Table text similarity score is: 100
 Table text is:
 ___
@@ -15603,7 +15674,7 @@ Sarawak  1
 ___
 
 07072010
-Anchor row is: Manual Keempat Pengurusan wakaf tunai
+Anchor row is: Manual Tadbir Urus
 Table text similarity score is: 100
 Table text is:
 ___
@@ -15626,7 +15697,7 @@ Manual Keempat  Pengurusan wakaf tunai
 ___
 
 07072010
-Anchor row is: Sarawak 1:2032
+Anchor row is: Negeri Nisbah Doktor:Penduduk
 Table text similarity score is: 100
 Table text is:
 ___
@@ -15673,7 +15744,7 @@ Sarawak   1:2032
 ___
 
 22112010
-Anchor row is: Majistret
+Anchor row is: Mahkamah (Jenayah)
 Table text similarity score is: 94
 Table text is:
 ___
@@ -15703,7 +15774,7 @@ Majistret
 ___
 
 18032010
-Anchor row is: Sabah 971
+Anchor row is: Negeri Jumlah Kes
 Table text similarity score is: 100
 Table text is:
 ___
@@ -15746,7 +15817,7 @@ Sabah   971
 ___
 
 18032010
-Anchor row is: Jumlah 98,916
+Anchor row is: Subsektor Bil.
 Table text similarity score is: 100
 Table text is:
 ___
@@ -15773,7 +15844,7 @@ Jumlah  98,916
 ___
 
 21102010
-Anchor row is: Tidak pentingkan masa 0.23
+Anchor row is: Jenis Peratus
 Table text similarity score is: 100
 Table text is:
 ___
@@ -15804,7 +15875,7 @@ Tidak pentingkan masa  0.23
 ___
 
 13122010
-Anchor row is: (pengambilan terakhir)
+Anchor row is: TAHUN TAHAP PATRIOTISME
 Table text similarity score is: 100
 Table text is:
 ___
@@ -15827,7 +15898,7 @@ TAHUN  TAHAP PATRIOTISME
 ___
 
 13122010
-Anchor row is: Leukemia 1
+Anchor row is: PUNCA KEMATIAN BILANGAN KES
 Table text similarity score is: 100
 Table text is:
 ___
@@ -15854,7 +15925,7 @@ Leukemia  1
 ___
 
 10062010
-Anchor row is: Jumlah 81
+Anchor row is: Nelayan Asing 2008 Tangkapan (Jum.)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -15881,7 +15952,7 @@ Jumlah  81
 ___
 
 10062010
-Anchor row is: Jumlah 137
+Anchor row is: Nelayan Asing  Tangkapan (Jum.)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -15912,7 +15983,7 @@ Jumlah  137
 ___
 
 22042010
-Anchor row is: Australia 137 144 154 121
+Anchor row is: 2007  2008 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -15937,7 +16008,7 @@ Australia  137  144  154  121
 ___
 
 19102010
-Anchor row is: Ogos 2010
+Anchor row is: (kes) (kes) Kes (%)
 Table text similarity score is: 96
 Table text is:
 ___
@@ -15965,7 +16036,7 @@ Ogos 2010
 ___
 
 19102010
-Anchor row is: Bunuh 21 15.17
+Anchor row is: Tanpa Bersenjata
 Table text similarity score is: 94
 Table text is:
 ___
@@ -16005,7 +16076,7 @@ Bunuh  21  15.17
 ___
 
 16062010
-Anchor row is: ST5% 26.00
+Anchor row is: Gred Beras (% hancur) Harga (RM)
 Table text similarity score is: 94
 Table text is:
 ___
@@ -16029,7 +16100,7 @@ ST10%  24.00
 ___
 
 05042010
-Anchor row is: Jumlah 106.51
+Anchor row is: Kawasan Jumlah peruntukan (RM) Juta
 Table text similarity score is: 100
 Table text is:
 ___
@@ -16054,7 +16125,7 @@ Jumlah  106.51
 ___
 
 05042010
-Anchor row is: di negeri Kelantan
+Anchor row is: RISDA 19,000 3,500 15,500
 Table text similarity score is: 100
 Table text is:
 ___
@@ -16083,7 +16154,7 @@ di negeri Kelantan
 ___
 
 05042010
-Anchor row is: FELCRA 583.36
+Anchor row is: FELDA 1,837.73
 Table text similarity score is: 100
 Table text is:
 ___
@@ -16107,7 +16178,7 @@ FELCRA  583.36
 ___
 
 12102010
-Anchor row is: Pandan 13 Disember 2010
+Anchor row is: Pertanyaan dari Yang Berhormat Tarikh
 Table text similarity score is: 100
 Table text is:
 ___
@@ -16182,7 +16253,7 @@ Pandan  13 Disember 2010
 ___
 
 12102010
-Anchor row is: Kelantan 110.7 juta
+Anchor row is: Sarawak 5.7 bilion
 Table text similarity score is: 100
 Table text is:
 ___
@@ -16221,7 +16292,7 @@ Kelantan  110.7 juta
 ___
 
 12102010
-Anchor row is: Pahang 52.4 juta
+Anchor row is: Negeri Jumlah FDI (RM)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -16258,7 +16329,7 @@ Pahang  52.4 juta
 ___
 
 24062010
-Anchor row is: Kedah 37.0
+Anchor row is: Pencapaian Semua Transisi Dengan Satu Hari 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -16299,7 +16370,7 @@ Kedah  37.0
 ___
 
 30062010
-Anchor row is:  Sekatan 0 Sekatan 10
+Anchor row is: Ta  h  u  n Akta OD  Akta AKT 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -16322,7 +16393,7 @@ Sekatan  0  Sekatan   10
 ___
 
 30062010
-Anchor row is:  Sekatan 2 Sekatan 1
+Anchor row is: 2009 Kes Fail 29 Kes Fail 26
 Table text similarity score is: 100
 Table text is:
 ___
@@ -16362,7 +16433,7 @@ Sekatan   10  Sekatan   5
 ___
 
 06122010
-Anchor row is: 2009 17
+Anchor row is: Tahun Kes
 Table text similarity score is: 100
 Table text is:
 ___
@@ -16383,7 +16454,7 @@ Tahun  Kes
 ___
 
 20102010
-Anchor row is: 2009 35.4
+Anchor row is: Tahun Jumlah Kredit (RM bilion)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -16410,7 +16481,7 @@ Tahun  Jumlah Kredit (RM bilion)
 ___
 
 20102010
-Anchor row is: > 10,000 0.5
+Anchor row is: Kelas Gaji (RM) Peratusan (%)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -16441,7 +16512,7 @@ Kelas Gaji (RM)  Peratusan (%)
 ___
 
 29062010
-Anchor row is: 2010 43.5
+Anchor row is: TAHUN  NILAI(RM/juta)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -16464,7 +16535,7 @@ TAHUN  NILAI(RM/juta)
 ___
 
 29062010
-Anchor row is: Taiwan 680
+Anchor row is: Negara Jumlah Permit
 Table text similarity score is: 100
 Table text is:
 ___
@@ -16491,7 +16562,7 @@ Taiwan  680
 ___
 
 29062010
-Anchor row is: Bangladesh 230
+Anchor row is: Pakistan 363
 Table text similarity score is: 100
 Table text is:
 ___
@@ -16508,7 +16579,7 @@ Bangladesh  230
 ___
 
 18102010
-Anchor row is: 2009 4.4
+Anchor row is: Tahun Peratus (%)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -16531,7 +16602,7 @@ Tahun  Peratus (%)
 ___
 
 08062010
-Anchor row is: 2009 500
+Anchor row is: Tahun Jumlah Tangkapan (Orang)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -16556,7 +16627,7 @@ Tahun  Jumlah Tangkapan (Orang)
 ___
 
 08062010
-Anchor row is: JUMLAH 3051
+Anchor row is: 2010 (hingga Mei) 324
 Table text similarity score is: 100
 Table text is:
 ___
@@ -16573,7 +16644,7 @@ JUMLAH  3051
 ___
 
 08062010
-Anchor row is: Syarikat satu tingkat dan pesanan pos 17
+Anchor row is: Syarikat Berlesen Jumlah
 Table text similarity score is: 100
 Table text is:
 ___
@@ -16596,7 +16667,7 @@ Syarikat satu tingkat dan pesanan pos  17
 ___
 
 17062010
-Anchor row is: Terengganu 1,705 5.76
+Anchor row is: Negeri Jumlah Pelajar Daripada  Peratusan
 Table text similarity score is: 100
 Table text is:
 ___
@@ -16639,7 +16710,7 @@ Terengganu  1,705  5.76
 ___
 
 26102010
-Anchor row is: India 41,646 86,755,758
+Anchor row is: KAUM BIL. KES JUMLAH BANTUAN 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -16662,7 +16733,7 @@ India  41,646  86,755,758
 ___
 
 26102010
-Anchor row is: Lain-lain kaum 1,968 5,230,000
+Anchor row is: Peribumi  747 1,258,464
 Table text similarity score is: 100
 Table text is:
 ___
@@ -16689,7 +16760,7 @@ Lain-lain kaum  1,968  5,230,000
 ___
 
 08072010
-Anchor row is: 2009 70.9 juta
+Anchor row is: Tahun Nilai Rokok Seludup (RM)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -16714,7 +16785,7 @@ Tahun  Nilai Rokok Seludup (RM)
 ___
 
 08072010
-Anchor row is: Jumlah Besar 134,298
+Anchor row is: Bangsa Jumlah pengundi
 Table text similarity score is: 100
 Table text is:
 ___
@@ -16735,7 +16806,7 @@ Jumlah Besar  134,298
 ___
 
 08072010
-Anchor row is: DAP 17,790
+Anchor row is: Parti Jumlah pengundi
 Table text similarity score is: 100
 Table text is:
 ___
@@ -16766,7 +16837,7 @@ DAP  17,790
 ___
 
 01112010
-Anchor row is: 2010 - September 69
+Anchor row is: TAHUN BIL. KES
 Table text similarity score is: 100
 Table text is:
 ___
@@ -16787,7 +16858,7 @@ TAHUN  BIL. KES
 ___
 
 01112010
-Anchor row is: Keadaan kenderaan 5
+Anchor row is: Punca-punca Kemalangan Peratus (%)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -16808,7 +16879,7 @@ Keadaan kenderaan  5
 ___
 
 01112010
-Anchor row is: langgar lari
+Anchor row is: Kesalahan Utama Peratus (%)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -16845,7 +16916,7 @@ langgar lari
 ___
 
 01112010
-Anchor row is: Pemandu dan penumpang bas 0.4
+Anchor row is: Golongan Peratus (%)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -16870,7 +16941,7 @@ Pemandu dan penumpang bas  0.4
 ___
 
 12032009
-Anchor row is: JUMLAH 85
+Anchor row is: Negeri Bil. Jeti
 Table text similarity score is: 100
 Table text is:
 ___
@@ -16911,7 +16982,7 @@ JUMLAH  85
 ___
 
 19022009
-Anchor row is: JUMLAH 153 1,113
+Anchor row is: TAHUN SABAH SEMENANJUNG MALAYSIA
 Table text similarity score is: 100
 Table text is:
 ___
@@ -16938,7 +17009,7 @@ JUMLAH  153  1,113
 ___
 
 14122009
-Anchor row is: Jumlah 11,770
+Anchor row is: Negara Jumlah Permohonan
 Table text similarity score is: 100
 Table text is:
 ___
@@ -16971,7 +17042,7 @@ Jumlah  11,770
 ___
 
 14122009
-Anchor row is: 2009 45.99
+Anchor row is: Tahun Kes Diselesaikan (%)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -16992,7 +17063,7 @@ Tahun  Kes Diselesaikan (%)
 ___
 
 14122009
-Anchor row is: Lain-lain Negar a 1,036
+Anchor row is: Kaum Kelulusan Kewarganegaraan (Bil. Orang)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -17015,7 +17086,7 @@ Lain-lain Negara 1,036
 ___
 
 18112009
-Anchor row is: JUMLAH 2.37 BILION
+Anchor row is: Syarikat Perjudian Kutipan Tahun 2008 (RM)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -17048,7 +17119,7 @@ JUMLAH  2.37 BILION
 ___
 
 30062009
-Anchor row is: Sabah 1,881 1,123 558
+Anchor row is: Negeri Jumlah  Jumlah Kes  Jumlah Kes  
 Table text similarity score is: 100
 Table text is:
 ___
@@ -17075,7 +17146,7 @@ Sabah  1,881  1,123  558
 ___
 
 30062009
-Anchor row is: Wilayah Persekutuan Labuan   3 10
+Anchor row is: KES-KES KEGANASAN RUMAH TANGGA   
 Table text similarity score is: 100
 Table text is:
 ___
@@ -17128,7 +17199,7 @@ Wilayah Persekutuan Labuan    3  10
 ___
 
 30062009
-Anchor row is: 3. Hingga 31 Mei 2009 24
+Anchor row is: Bil Tahun Aduan
 Table text similarity score is: 100
 Table text is:
 ___
@@ -17151,7 +17222,7 @@ Bil  Tahun  Aduan
 ___
 
 30062009
-Anchor row is: 7. Lain-lain aduan 33
+Anchor row is: Bil Jenis-jenis Aduan Kes
 Table text similarity score is: 100
 Table text is:
 ___
@@ -17180,7 +17251,7 @@ Bil  Jenis-jenis Aduan  Kes
 ___
 
 30062009
-Anchor row is:  Jumlah 122
+Anchor row is: Bil Jenis Tindakan Kes
 Table text similarity score is: 100
 Table text is:
 ___
@@ -17203,7 +17274,7 @@ Bil  Jenis Tindakan  Kes
 ___
 
 19032009
-Anchor row is: 5. Sekolah Menengah Sains, Setapak 95
+Anchor row is: Bil. Nama Sekolah Siap (%)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -17228,7 +17299,7 @@ Bil.  Nama Sekolah  Siap (%)
 ___
 
 18022009
-Anchor row is: SUHAKAM RM1,503,600.00
+Anchor row is: Anggota Jumlah Besar
 Table text similarity score is: 100
 Table text is:
 ___
@@ -17247,7 +17318,7 @@ SUHAKAM     RM1,503,600.00
 ___
 
 18022009
-Anchor row is: 4 Perak 5
+Anchor row is: Bil Negeri Jumlah
 Table text similarity score is: 100
 Table text is:
 ___
@@ -17270,7 +17341,7 @@ Bil  Negeri  Jumlah
 ___
 
 18022009
-Anchor row is: Mutusamy
+Anchor row is: Bil Nama Kawasan Keuntungan    
 Table text similarity score is: 100
 Table text is:
 ___
@@ -17301,7 +17372,7 @@ Pahang
 ___
 
 18022009
-Anchor row is: Kemboja 21.55
+Anchor row is: Negara Kos Perbelanjaan  
 Table text similarity score is: 100
 Table text is:
 ___
@@ -17324,7 +17395,7 @@ Kemboja  21.55
 ___
 
 18022009
-Anchor row is: Jumlah keseluruhan 181
+Anchor row is: Negeri Projek sakit
 Table text similarity score is: 100
 Table text is:
 ___
@@ -17351,7 +17422,7 @@ Jumlah keseluruhan  181
 ___
 
 01122009
-Anchor row is: Jumlah 121,772 264,259
+Anchor row is: Sekolah Lelaki Perempuan
 Table text similarity score is: 100
 Table text is:
 ___
@@ -17372,7 +17443,7 @@ Jumlah  121,772  264,259
 ___
 
 01122009
-Anchor row is: Australia 137
+Anchor row is: NEGARA KADAR KEMALANGAN
 Table text similarity score is: 100
 Table text is:
 ___
@@ -17395,7 +17466,7 @@ Australia   137
 ___
 
 01122009
-Anchor row is: Teori Selatan Sdn. Bhd. 10
+Anchor row is: NAMA SYARIKAT PEGANGAN SYER (%)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -17418,7 +17489,7 @@ Teori Selatan Sdn. Bhd.  10
 ___
 
 16062009
-Anchor row is: Peruntukan Kewangan  659 juta
+Anchor row is: Luar Negara
 Table text similarity score is: 99
 Table text is:
 ___
@@ -17497,7 +17568,7 @@ Peruntukan Kewangan  659 juta
 ___
 
 16062009
-Anchor row is: Cukai Petroleum 42
+Anchor row is: Jenis Cukai Peratus (%)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -17520,7 +17591,7 @@ Cukai Petroleum  42
 ___
 
 16062009
-Anchor row is: Jumlah 73
+Anchor row is: Nama Bank Jumlah Aduan
 Table text similarity score is: 100
 Table text is:
 ___
@@ -17547,7 +17618,7 @@ Jumlah  73
 ___
 
 12112009
-Anchor row is: 2003 10.5 juta
+Anchor row is: Tahun Bilangan Pelancong (juta/orang)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -17572,7 +17643,7 @@ Tahun  Bilangan Pelancong (juta/orang)
 ___
 
 12112009
-Anchor row is: 2008 22,000
+Anchor row is: Tahun Bilangan Pelancong (ribu/orang)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -17597,7 +17668,7 @@ Tahun  Bilangan Pelancong (ribu/orang)
 ___
 
 19102009
-Anchor row is: Lain-lain 167,707 13.7
+Anchor row is: Kaum Bilangan Peratus (%)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -17620,7 +17691,7 @@ Lain-lain  167,707  13.7
 ___
 
 07122009
-Anchor row is: 2009 26,990
+Anchor row is: Tahun Jumlah Pelajar Orang Asli  
 Table text similarity score is: 100
 Table text is:
 ___
@@ -17649,7 +17720,7 @@ Tahun  Jumlah Pelajar Orang Asli
 ___
 
 25062009
-Anchor row is: Kumpulan Jemaah Islamiah 18
+Anchor row is: Jenis Kesalahan Jumlah
 Table text similarity score is: 100
 Table text is:
 ___
@@ -17686,7 +17757,7 @@ Kumpulan Jemaah Islamiah  18
 ___
 
 25062009
-Anchor row is: 2009 1,268 orang
+Anchor row is: 2006 260 orang
 Table text similarity score is: 100
 Table text is:
 ___
@@ -17709,7 +17780,7 @@ Tahun  Jumlah Penerima Bantuan
 ___
 
 25062009
-Anchor row is: 2009 10,786 orang
+Anchor row is: Tahun Jumlah Penerima Bantuan
 Table text similarity score is: 100
 Table text is:
 ___
@@ -17732,7 +17803,7 @@ Tahun  Jumlah Penerima Bantuan
 ___
 
 25062009
-Anchor row is: 2009 (Sehingga 31 Mei) 1,789 orang
+Anchor row is: 2008 2,850 orang
 Table text similarity score is: 100
 Table text is:
 ___
@@ -17751,7 +17822,7 @@ Tahun  Jumlah Keseluruhan Bantuan
 ___
 
 25062009
-Anchor row is: 2009 (Sehingga 31 Mei) 20,998 orang
+Anchor row is: Tahun Jumlah Keseluruhan Bantuan
 Table text similarity score is: 100
 Table text is:
 ___
@@ -17768,7 +17839,7 @@ Tahun  Jumlah Keseluruhan Bantuan
 ___
 
 29102009
-Anchor row is: Lain-lain 167,707 13.7
+Anchor row is: Kaum Bilangan (Orang) Peratus (peratus)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -17791,7 +17862,7 @@ Lain-lain  167,707  13.7
 ___
 
 17112009
-Anchor row is: Perak 16
+Anchor row is: Negeri Bilangan Projek/Program
 Table text similarity score is: 100
 Table text is:
 ___
@@ -17814,7 +17885,7 @@ Perak  16
 ___
 
 17112009
-Anchor row is: 4,000 ke atas 24
+Anchor row is: Pendapatan Tahun 2004 (RM) Penduduk (peratus)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -17838,7 +17909,7 @@ Pendapatan Tahun 2004 (RM)  Penduduk (peratus)
 ___
 
 17112009
-Anchor row is: 4,000 ke atas 31.6
+Anchor row is: Pendapatan Tahun 2008 (RM) Penduduk (peratus)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -17862,7 +17933,7 @@ Pendapatan Tahun 2008 (RM)  Penduduk (peratus)
 ___
 
 03112009
-Anchor row is: 2008 98
+Anchor row is: Tahun Bil. Sekolah
 Table text similarity score is: 100
 Table text is:
 ___
@@ -17885,7 +17956,7 @@ Tahun  Bil. Sekolah
 ___
 
 15062009
-Anchor row is:  2008 2,013,211.00
+Anchor row is: Negeri Tahun Jumlah peruntukan diluluskan (RM)
 Table text similarity score is: 94
 Table text is:
 ___
@@ -17906,7 +17977,7 @@ Melaka  2007  2,943,158.00
 ___
 
 02122009
-Anchor row is: Jumlah 5,281 2,929 29,290
+Anchor row is: Negeri Bil. Layak  Bil. T.Tangan  Pelaburan 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -17953,7 +18024,7 @@ Sabah  2,183  1,148  11,480
 ___
 
 02122009
-Anchor row is: Jumlah 4,190,000,000
+Anchor row is: IPP Jumlah bayaran (RM)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -17980,7 +18051,7 @@ Jumlah  4,190,000,000
 ___
 
 02122009
-Anchor row is: Pembangunan dan promosi bekalan elektrik 10
+Anchor row is: Program yang dibiayai Jumlah Dana 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -18007,7 +18078,7 @@ Pembangunan dan promosi bekalan elektrik  10
 ___
 
 23022009
-Anchor row is: 3 PRK (P036) Kuala Terengganu 580,000
+Anchor row is: No. Jenis Pilihan Raya Peruntukan (RM Ribu/Juta)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -18029,7 +18100,7 @@ ___
 ___
 
 16032009
-Anchor row is: UEM World Berhad 80.37
+Anchor row is: Tenaga Nasional Berhad  2,594.00   2008 
 Table text similarity score is: 93
 Table text is:
 ___
@@ -18071,7 +18142,7 @@ UEM World Berhad    80.37
 ___
 
 02032009
-Anchor row is: 11 Perlis 24
+Anchor row is: Bil Negeri Jumlah kes
 Table text similarity score is: 100
 Table text is:
 ___
@@ -18108,7 +18179,7 @@ Bil  Negeri  Jumlah kes
 ___
 
 30112009
-Anchor row is: Jumlah 64,731
+Anchor row is: Negeri Jumlah (Orang)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -18159,7 +18230,7 @@ Jumlah  64,731
 ___
 
 09122009
-Anchor row is: 2008 15 2 orang
+Anchor row is: Tahun Bilangan Kemalangan Bilangan Maut
 Table text similarity score is: 100
 Table text is:
 ___
@@ -18182,7 +18253,7 @@ Tahun  Bilangan Kemalangan  Bilangan Maut
 ___
 
 09122009
-Anchor row is: 2007 499,422
+Anchor row is: TAHUN JUMLAH (kg)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -18205,7 +18276,7 @@ TAHUN  JUMLAH (kg)
 ___
 
 09122009
-Anchor row is: Jumlah 40
+Anchor row is: Status Bilangan
 Table text similarity score is: 100
 Table text is:
 ___
@@ -18228,7 +18299,7 @@ Jumlah  40
 ___
 
 09122009
-Anchor row is: Majlis Perbandaran Pedawan 1,221
+Anchor row is: PBT Jumlah (orang)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -18253,7 +18324,7 @@ Majlis Perbandaran Pedawan  1,221
 ___
 
 10122009
-Anchor row is: Luar Negeri 0.27 0.28
+Anchor row is: Melaka 1.0 0.79
 Table text similarity score is: 97
 Table text is:
 ___
@@ -18298,7 +18369,7 @@ Luar Negeri  0.27   0.28
 ___
 
 10122009
-Anchor row is: Motosikal 1
+Anchor row is: Jenis Kenderaan Jumlah Kenderaan ( peratus )
 Table text similarity score is: 100
 Table text is:
 ___
@@ -18323,7 +18394,7 @@ Motosikal  1
 ___
 
 16112009
-Anchor row is: JUMLAH 69,760
+Anchor row is: IPTA Pencari Kerja (orang)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -18364,7 +18435,7 @@ JUMLAH  69,760
 ___
 
 17122009
-Anchor row is: 2003 140
+Anchor row is: Pecahan Pinjaman CTRM Sdn. Bhd. Mengikut Tahun 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -18394,7 +18465,7 @@ Tahun  RM (juta)
 ___
 
 25112009
-Anchor row is: 2009 755 295 39
+Anchor row is: Tahun Peruntukan  Dibelanjakan  Peratus 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -18417,7 +18488,7 @@ Tahun  Peruntukan  Dibelanjakan  Peratus
 ___
 
 25112009
-Anchor row is: Jumlah 36
+Anchor row is: Tempat Jumlah Taska Komuniti
 Table text similarity score is: 100
 Table text is:
 ___
@@ -18464,7 +18535,7 @@ Jumlah  36
 ___
 
 17032009
-Anchor row is: Seluruh Negara 642 357 999
+Anchor row is:  Kontrak  Sambilan  
 Table text similarity score is: 97
 Table text is:
 ___
@@ -18510,7 +18581,7 @@ Seluruh Negara  642  357  999
 ___
 
 08122009
-Anchor row is: Labuan-Miri-Labuan 88–218
+Anchor row is: Laluan Penerbangan Kadar Tambang (RM)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -18531,7 +18602,7 @@ Labuan-Miri-Labuan  88–218
 ___
 
 09112009
-Anchor row is: 2008 1,587,000 716,000 2,303,000
+Anchor row is: Tahun Pelancong  Pelancong  Jumlah 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -18556,7 +18627,7 @@ Domestik  Antarabangsa  Pelancong
 ___
 
 18082008
-Anchor row is: Kedah 163.89
+Anchor row is: Negeri Luas (Hektar)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -18587,7 +18658,7 @@ Kedah  163.89
 ___
 
 20112008
-Anchor row is: (sehingga Jun)
+Anchor row is: Tahun Pesakit Dalam Pesakit Luar Jumlah
 Table text similarity score is: 100
 Table text is:
 ___
@@ -18610,7 +18681,7 @@ Tahun  Pesakit Dalam  Pesakit Luar  Jumlah
 ___
 
 20112008
-Anchor row is: Terengganu 18.0
+Anchor row is: Negeri RM (Bilion)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -18633,7 +18704,7 @@ Terengganu   18.0
 ___
 
 20082008
-Anchor row is: India 1,569
+Anchor row is: Tahun Jumlah Siswazah Mendaftar Bangsa Bilangan
 Table text similarity score is: 100
 Table text is:
 ___
@@ -18679,7 +18750,7 @@ Tahun  Jumlah Siswazah Mendaftar  Bangsa  Bilangan
 ___
 
 08072008
-Anchor row is: JUMLAH 4,158 3,580 (86%)
+Anchor row is: dan Peratusan
 Table text similarity score is: 100
 Table text is:
 ___
@@ -18708,7 +18779,7 @@ JUMLAH  4,158  3,580 (86%)
 ___
 
 08072008
-Anchor row is: 2007 22.94 bilion
+Anchor row is: Tahun Nilai transaksi (RM)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -18732,7 +18803,7 @@ Tahun  Nilai transaksi (RM)
 ___
 
 08072008
-Anchor row is: Diesel RM4.3 bilion RM4.4 bilion
+Anchor row is: Subsidi 2006 2007
 Table text similarity score is: 100
 Table text is:
 ___
@@ -18751,7 +18822,7 @@ Diesel  RM4.3 bilion  RM4.4 bilion
 ___
 
 26112008
-Anchor row is: PPR Pekan Kepong 316
+Anchor row is: Kawasan Unit
 Table text similarity score is: 100
 Table text is:
 ___
@@ -18794,7 +18865,7 @@ PPR Pekan Kepong  316
 ___
 
 26112008
-Anchor row is: PPR Projek Khas Sungai Besi 316
+Anchor row is: PPR Lembah Pantai & Kerinchi 948
 Table text similarity score is: 100
 Table text is:
 ___
@@ -18821,7 +18892,7 @@ PPR Projek Khas Sungai Besi  316
 ___
 
 13112008
-Anchor row is: Jumlah 93,962 92.5
+Anchor row is: Jantina/Kaum (Lelaki) Bilangan (Orang) Peratus
 Table text similarity score is: 100
 Table text is:
 ___
@@ -18846,7 +18917,7 @@ Jumlah  93,962  92.5
 ___
 
 13112008
-Anchor row is: Jumlah 7,668 7.5
+Anchor row is: Jantina/Kaum (Perempuan) Bilangan (Orang) Peratus
 Table text similarity score is: 100
 Table text is:
 ___
@@ -18871,7 +18942,7 @@ Jumlah  7,668  7.5
 ___
 
 13112008
-Anchor row is: Jumlah 101,630
+Anchor row is: Kaum Bilangan (Orang) Peratus
 Table text similarity score is: 100
 Table text is:
 ___
@@ -18896,7 +18967,7 @@ Jumlah  101,630
 ___
 
 26082008
-Anchor row is: 2007 51.4 36.8
+Anchor row is: Tahun Hasil (RM bilion) Peratus hasil kerajaan
 Table text similarity score is: 100
 Table text is:
 ___
@@ -18920,7 +18991,7 @@ Tahun  Hasil (RM bilion)  Peratus hasil kerajaan
 ___
 
 26082008
-Anchor row is: Lain-lain 0.9
+Anchor row is: Melayu 83
 Table text similarity score is: 100
 Table text is:
 ___
@@ -18943,7 +19014,7 @@ Lain-lain          0.9
 ___
 
 26082008
-Anchor row is: India 5
+Anchor row is: Melayu 83.8
 Table text similarity score is: 100
 Table text is:
 ___
@@ -18966,7 +19037,7 @@ Lain-lain      0.4
 ___
 
 26082008
-Anchor row is: Lain-lain 0.4
+Anchor row is: Melayu 89.7
 Table text similarity score is: 100
 Table text is:
 ___
@@ -18989,7 +19060,7 @@ Lain-lain  0.4
 ___
 
 26082008
-Anchor row is: India 5.3
+Anchor row is: Kaum Jumlah (%)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -19010,7 +19081,7 @@ India  5.3
 ___
 
 24062008
-Anchor row is: Thailand 23
+Anchor row is: Brunei 9
 Table text similarity score is: 100
 Table text is:
 ___
@@ -19039,7 +19110,7 @@ Thailand  23
 ___
 
 24062008
-Anchor row is: Australia 2
+Anchor row is: Latin Amerika 34
 Table text similarity score is: 100
 Table text is:
 ___
@@ -19062,7 +19133,7 @@ Australia  2
 ___
 
 24062008
-Anchor row is: Australia 5
+Anchor row is: NEGARA JUMLAH ORANG
 Table text similarity score is: 100
 Table text is:
 ___
@@ -19085,7 +19156,7 @@ Australia  5
 ___
 
 28052008
-Anchor row is: Pejabat Perhubungan lain 1
+Anchor row is: Kedutaan Besar 64
 Table text similarity score is: 100
 Table text is:
 ___
@@ -19112,7 +19183,7 @@ Pejabat Perhubungan lain  1
 ___
 
 10072008
-Anchor row is: Jumlah keseluruhan 7,271
+Anchor row is: Peringkat Bantuan Bilangan Keluarga
 Table text similarity score is: 100
 Table text is:
 ___
@@ -19135,7 +19206,7 @@ Jumlah keseluruhan  7,271
 ___
 
 19112008
-Anchor row is: 2008 44,168
+Anchor row is: TAHUN PERUNTUKAN AP
 Table text similarity score is: 100
 Table text is:
 ___
@@ -19158,7 +19229,7 @@ TAHUN  PERUNTUKAN AP
 ___
 
 09072008
-Anchor row is: Akta Kanun Tanah dan Galian 1
+Anchor row is: Akta Bilangan kes
 Table text similarity score is: 100
 Table text is:
 ___
@@ -19184,7 +19255,7 @@ Akta Kanun Tanah dan Galian  1
 ___
 
 09072008
-Anchor row is: Pertanian 6,806 10
+Anchor row is: Sektor Bilangan Peratus
 Table text similarity score is: 100
 Table text is:
 ___
@@ -19209,7 +19280,7 @@ Pertanian  6,806  10
 ___
 
 27112008
-Anchor row is: Jumlah   263,292,432.85
+Anchor row is: Bil Projek Jumlah Projek Peruntukan (RM)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -19234,7 +19305,7 @@ Bil  Projek  Jumlah Projek  Peruntukan (RM)
 ___
 
 27112008
-Anchor row is: (Sehingga November)
+Anchor row is: Tahun/ Negeri Sabah Sarawak
 Table text similarity score is: 100
 Table text is:
 ___
@@ -19257,7 +19328,7 @@ Tahun/ Negeri  Sabah  Sarawak
 ___
 
 27112008
-Anchor row is: 2009 RM27.35
+Anchor row is: Tahun Peruntukan (Bilion)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -19276,7 +19347,7 @@ Tahun  Peruntukan (Bilion)
 ___
 
 21102008
-Anchor row is: 12 Tan Khim Ping bersama Yap Kim Hong 140,768
+Anchor row is: Bil. Nama Tuan Tanah Pampasan (RM)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -19315,7 +19386,7 @@ Bil.  Nama Tuan Tanah  Pampasan (RM)
 ___
 
 08052008
-Anchor row is: Jumlah Besar 544
+Anchor row is: Nama Agensi Bilangan Pendakwaan
 Table text similarity score is: 100
 Table text is:
 ___
@@ -19356,7 +19427,7 @@ Jumlah Besar  544
 ___
 
 21052008
-Anchor row is: 2007 116
+Anchor row is: Tahun Kerugian (RM Juta)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -19385,7 +19456,7 @@ Tahun  Kerugian (RM Juta)
 ___
 
 21052008
-Anchor row is: Sabah 370 100
+Anchor row is: (RM/Juta) Terlibat
 Table text similarity score is: 95
 Table text is:
 ___
@@ -19413,7 +19484,7 @@ Sabah  370  100
 ___
 
 21052008
-Anchor row is: JUMLAH 2,180 1,015
+Anchor row is: Selangor 123 62
 Table text similarity score is: 100
 Table text is:
 ___
@@ -19444,7 +19515,7 @@ JUMLAH  2,180   1,015
 ___
 
 14052008
-Anchor row is: Sarawak 14.9
+Anchor row is: Negeri Kadar  Kemiskinan  Kanak-Kanak 
 Table text similarity score is: 100
 Table text is:
 ___
@@ -19470,7 +19541,7 @@ Sarawak  14.9
 ___
 
 14052008
-Anchor row is: Sewa 300
+Anchor row is: Perbelanjaan Kos (RM)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -19499,7 +19570,7 @@ Sewa  300
 ___
 
 02122008
-Anchor row is:  Jun 2008 692,000
+Anchor row is: Negeri Tahun Jumlah (Hektar)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -19532,7 +19603,7 @@ Sarawak  2003  400,064
 ___
 
 02122008
-Anchor row is:  Jun 2008 2.595
+Anchor row is: Negeri Tahun RM(Juta)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -19565,7 +19636,7 @@ Sarawak  2003  1.1
 ___
 
 02122008
-Anchor row is: Jun 2008 32,385
+Anchor row is: Tahun RM(Juta)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -19586,7 +19657,7 @@ Jun 2008  32,385
 ___
 
 30102008
-Anchor row is: Lain-lain 8,164
+Anchor row is: Jenis Ketidakupayaan Jumlah Orang
 Table text similarity score is: 100
 Table text is:
 ___
@@ -19613,7 +19684,7 @@ Lain-lain  8,164
 ___
 
 10122008
-Anchor row is: 5% 2.60
+Anchor row is: Jenis beras Harga (RM)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -19634,7 +19705,7 @@ Jenis beras  Harga (RM)
 ___
 
 26062008
-Anchor row is: 2007 20
+Anchor row is: TAHUN HASIL SEWA (RM/JUTA)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -19659,7 +19730,7 @@ TAHUN  HASIL SEWA (RM/JUTA)
 ___
 
 26062008
-Anchor row is: 2007 381,616
+Anchor row is: 2005 130,750
 Table text similarity score is: 100
 Table text is:
 ___
@@ -19680,7 +19751,7 @@ TAHUN  HASIL SEWA (RM)
 ___
 
 26062008
-Anchor row is: 2007 1.382 juta
+Anchor row is: TAHUN HASIL SEWA (RM)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -19701,7 +19772,7 @@ TAHUN  HASIL SEWA (RM)
 ___
 
 26062008
-Anchor row is: 2007 21.76
+Anchor row is: TAHUN JUMLAH BESAR (RM/JUTA)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -19726,7 +19797,7 @@ TAHUN   JUMLAH BESAR (RM/JUTA)
 ___
 
 26062008
-Anchor row is: 2007 6.3%
+Anchor row is: TAHUN JUMLAH
 Table text similarity score is: 100
 Table text is:
 ___
@@ -19749,7 +19820,7 @@ TAHUN  JUMLAH
 ___
 
 26062008
-Anchor row is: Sarawak 3.9%
+Anchor row is: NEGERI JUMLAH
 Table text similarity score is: 100
 Table text is:
 ___
@@ -19792,7 +19863,7 @@ Sarawak  3.9%
 ___
 
 26062008
-Anchor row is: Kelantan 1,980
+Anchor row is: NEGERI KELUASAN (HEKTAR)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -19827,7 +19898,7 @@ Kelantan  1,980
 ___
 
 15052008
-Anchor row is: 2007 565.0
+Anchor row is: Tahun Perbelanjaan (RM/Juta)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -19850,7 +19921,7 @@ Tahun  Perbelanjaan (RM/Juta)
 ___
 
 15052008
-Anchor row is: Sabah 546.87
+Anchor row is: Negeri Kutipan Ses (RM/juta)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -19889,7 +19960,7 @@ Sabah  546.87
 ___
 
 17122008
-Anchor row is: (vii) Bahagian Pendakwaan 24 11 5
+Anchor row is: Bil Bahagian Cina India Lain-
 Table text similarity score is: 100
 Table text is:
 ___
@@ -19920,7 +19991,7 @@ lain
 ___
 
 03122008
-Anchor row is: Chiku 400
+Anchor row is: KAWASAN UNIT
 Table text similarity score is: 100
 Table text is:
 ___
@@ -19943,7 +20014,7 @@ Chiku  400
 ___
 
 03122008
-Anchor row is: Labuan 1
+Anchor row is: NEGERI JUMLAH KES
 Table text similarity score is: 100
 Table text is:
 ___
@@ -19974,7 +20045,7 @@ Labuan  1
 ___
 
 13052008
-Anchor row is: Jumlah 241.3 2081.4
+Anchor row is: (Juta/Tong) (bilion/kaki padu)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -20001,7 +20072,7 @@ Jumlah  241.3  2081.4
 ___
 
 13052008
-Anchor row is: Sarawak RM15.3 bilion
+Anchor row is: Iskandar Development Corridor RM4.3 bilion
 Table text similarity score is: 100
 Table text is:
 ___
@@ -20026,7 +20097,7 @@ Sarawak   RM15.3 bilion
 ___
 
 13052008
-Anchor row is: Sarawak RM91 bilion
+Anchor row is: Iskandar Development Region RM15 bilion
 Table text similarity score is: 100
 Table text is:
 ___
@@ -20051,7 +20122,7 @@ Sarawak                         RM91 bilion
 ___
 
 13052008
-Anchor row is: Sarawak Corridor RM192 bilion
+Anchor row is: Jenis Koridor Jumlah Perbelanjaan
 Table text similarity score is: 100
 Table text is:
 ___
@@ -20076,7 +20147,7 @@ Sarawak Corridor  RM192 bilion
 ___
 
 04112008
-Anchor row is: Amerika Syarikat 429.7 juta
+Anchor row is: NEGARA JUMLAH PELABURAN (RM)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -20111,7 +20182,7 @@ Amerika Syarikat  429.7 juta
 ___
 
 25112008
-Anchor row is: (v) Kedai-kedai kopi - RM573
+Anchor row is: (i) Pembinaan - RM952
 Table text similarity score is: 100
 Table text is:
 ___
@@ -20134,7 +20205,7 @@ ___
 ___
 
 28082008
-Anchor row is: 2008  154,798
+Anchor row is: 2004 324,444
 Table text similarity score is: 100
 Table text is:
 ___
@@ -20161,7 +20232,7 @@ Tahun  Jumlah (Orang)
 ___
 
 28082008
-Anchor row is:  (Januari – Julai)
+Anchor row is: Tahun Jumlah (Orang)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -20188,7 +20259,7 @@ Tahun  Jumlah (Orang)
 ___
 
 26052008
-Anchor row is: Jumlah 165.93
+Anchor row is: TAHUN NILAI (RM/Juta)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -20211,7 +20282,7 @@ Jumlah  165.93
 ___
 
 26052008
-Anchor row is: 2007 6,682 893 (11.7) 7,575
+Anchor row is: Tahun Bumiputera Bukan Bumiputera Jumlah
 Table text similarity score is: 100
 Table text is:
 ___
@@ -20234,7 +20305,7 @@ Tahun  Bumiputera  Bukan Bumiputera  Jumlah
 ___
 
 14072008
-Anchor row is: terlantar
+Anchor row is: Penerima bantuan Jumlah kes
 Table text similarity score is: 100
 Table text is:
 ___
@@ -20262,7 +20333,7 @@ terlantar
 ___
 
 14072008
-Anchor row is: Sarawak 750 480
+Anchor row is: Negeri Miskin (RM) Miskin Tegar (RM)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -20283,7 +20354,7 @@ Sarawak   750  480
 ___
 
 14072008
-Anchor row is: Sarawak 810 500
+Anchor row is: Negeri Luar Bandar (RM) Miskin Tegar (RM)
 Table text similarity score is: 100
 Table text is:
 ___
@@ -20304,7 +20375,7 @@ Sarawak   810  500
 ___
 
 11122008
-Anchor row is: 2007 676 226
+Anchor row is: Tahun Bumiputera Bukan Bumiputera
 Table text similarity score is: 100
 Table text is:
 ___
@@ -20325,7 +20396,7 @@ Tahun  Bumiputera  Bukan Bumiputera
 ___
 
 11122008
-Anchor row is: Jumlah 157 orang 378 orang
+Anchor row is: Tahun Bumiputera Bukan bumiputera
 Table text similarity score is: 100
 Table text is:
 ___
@@ -20348,7 +20419,7 @@ Jumlah  157 orang  378 orang
 ___
 
 11122008
-Anchor row is: Biasiswa dalam negara 200 orang 87 orang
+Anchor row is: Penerimaan Biasiswa Petronas Bumiputera Bukan bumiputera
 Table text similarity score is: 100
 Table text is:
 ___
@@ -20363,332 +20434,6 @@ ___
 Penerimaan Biasiswa Petronas  Bumiputera  Bukan bumiputera 
 Biasiswa ke luar negara  41orang  20 orang 
 Biasiswa dalam negara  200 orang  87 orang 
-
-___
-
-30112021
-Anchor row is: 2. Sekolah Menengah 20,086 20,819 21,099 21,100
-Table text similarity score is: 100
-Table text is:
-___
-BIL. UNJURAN  TAHUN  TAHUN  TAHUN  TAHUN 
-BILANGAN  2022 2023 2024 2025
-MURID
-1. Sekolah Rendah 24,339 24,588 24,588 24,588
-2. Sekolah Menengah 20,086 20,819 21,099 21,100
-
-___
-
-Candidate text is:
-___
-BIL.  UNJURAN  TAHUN  TAHUN  TAHUN  TAHUN 
-BILANGAN 
-2022  2023  2024  2025 
-MURID 
-1.  Sekolah Rendah  24,339  24,588  24,588  24,588 
-2.  Sekolah Menengah  20,086  20,819  21,099  21,100 
-
-___
-
-30112021
-Anchor row is: 2. Sekolah Menengah  8,580 8,500 8,432 8,373
-Table text similarity score is: 100
-Table text is:
-___
-BIL. UNJURAN  TAHUN  TAHUN  TAHUN  TAHUN 
-BILANGAN  2022 2023 2024 2025
-MURID
-1. Sekolah Rendah  10,229 10,297 10,354 10,404
-Parlimen Kangar
-2. Sekolah Menengah  8,580 8,500 8,432 8,373
-Parlimen Kangar
-
-___
-
-Candidate text is:
-___
-BIL.  UNJURAN  TAHUN  TAHUN  TAHUN  TAHUN 
-BILANGAN 
-2022  2023  2024  2025 
-MURID 
-1.  Sekolah Rendah  10,229  10,297  10,354  10,404 
-Parlimen Kangar  
-2.  Sekolah Menengah  8,580  8,500  8,432  8,373 
-Parlimen Kangar 
-
-___
-
-28062012
-Anchor row is: discharge, not amount to an acquittal.
-Table text similarity score is: 82
-Table text is:
-___
-Jenis Kes Jumlah
-Yang dituduh 816
-Disabitkan salah 324
-Dilepaskan tanpa dibebaskan ataupun  69
-discharge, not amount to an acquittal.
-
-___
-
-Candidate text is:
-___
-dibuka melibatkan pegawai awam ialah sebanyak 5,983.  
-  
-Jenis Kes  Jumlah 
- 
-Yang dituduh  816 
-Disabitkan salah  324 
-Dilepaskan tanpa dibebaskan ataupun   
-discharge, not amount to an acquittal. 
-
-___
-
-28062012
-Anchor row is: Masih dalam perbicaraan ataupun rayuan 105
-Table text similarity score is: 100
-Table text is:
-___
-Didapati tidak bersalah 298
-Kes ditarik balik 20
-Masih dalam perbicaraan ataupun rayuan 105
-
-___
-
-Candidate text is:
-___
-Didapati tidak bersalah  298 
-Kes ditarik balik  20 
-Masih dalam perbicaraan ataupun rayuan  105 
-
-___
-
-28062012
-Anchor row is: Jenis Kes Jumlah
-Table text similarity score is: 98
-Table text is:
-___
-Jenis Kes Jumlah
-Yang dituduh 816
-Disabitkan salah 324
-Dilepaskan tanpa dibebaskan ataupun  69
-discharge, not amount to an acquittal.
-
-___
-
-Candidate text is:
-___
-Jenis Kes  Jumlah 
- 
-Yang dituduh  816 
-Disabitkan salah  324 
-Dilepaskan tanpa dibebaskan ataupun   
-discharge, not amount to an acquittal. 
-69 
-
-___
-
-28062012
-Anchor row is: Didapati tidak bersalah 298
-Table text similarity score is: 100
-Table text is:
-___
-Didapati tidak bersalah 298
-Kes ditarik balik 20
-Masih dalam perbicaraan ataupun rayuan 105
-
-___
-
-Candidate text is:
-___
-Didapati tidak bersalah  298 
-Kes ditarik balik  20 
-Masih dalam perbicaraan ataupun rayuan  105 
-
-___
-
-28062012
-Anchor row is: Jenis Kes Jumlah
-Table text similarity score is: 98
-Table text is:
-___
-Jenis Kes Jumlah
-Yang dituduh 816
-Disabitkan salah 324
-Dilepaskan tanpa dibebaskan ataupun  69
-discharge, not amount to an acquittal.
-
-___
-
-Candidate text is:
-___
-Jenis Kes  Jumlah 
- 
-Yang dituduh  816 
-Disabitkan salah  324 
-Dilepaskan tanpa dibebaskan ataupun   
-discharge, not amount to an acquittal. 
-69 
-
-___
-
-28062012
-Anchor row is: Didapati tidak bersalah 298
-Table text similarity score is: 100
-Table text is:
-___
-Didapati tidak bersalah 298
-Kes ditarik balik 20
-Masih dalam perbicaraan ataupun rayuan 105
-
-___
-
-Candidate text is:
-___
-Didapati tidak bersalah  298 
-Kes ditarik balik  20 
-Masih dalam perbicaraan ataupun rayuan  105 
-
-___
-
-07042010
-Anchor row is: Negeri Bilangan penderaan  
-Table text similarity score is: 100
-Table text is:
-___
-Negeri Bilangan penderaan  
-kanak-kanak & Bayi
-Perlis 245
-Kedah 420
-Pulau Pinang 891
-Perak 861
-Selangor 3,234
-Kuala Lumpur 2,221
-Negeri Sembilan 799
-Melaka 301
-Johor 599
-Pahang 440
-Terengganu 168
-Kelantan 105
-Sabah 34
-Sarawak 440
-Jumlah 10,758
-
-___
-
-Candidate text is:
-___
-Negeri  Bilangan penderaan  
-kanak-kanak & Bayi 
-Perlis  245 
-Kedah   420 
-Pulau Pinang   891 
-Perak  861 
-Selangor   3,234 
-Kuala Lumpur   2,221 
-Negeri Sembilan  799 
-Melaka   301 
-Johor   599 
-Pahang   440 
-Terengganu  168 
-Kelantan  105 
-Sabah  34 
-Sarawak  440 
-Jumlah  10,758 
-
-___
-
-07042010
-Anchor row is: Negeri Bilangan penderaan  
-Table text similarity score is: 100
-Table text is:
-___
-Negeri Bilangan penderaan  
-kanak-kanak & Bayi
-Perlis 245
-Kedah 420
-Pulau Pinang 891
-Perak 861
-Selangor 3,234
-Kuala Lumpur 2,221
-Negeri Sembilan 799
-Melaka 301
-Johor 599
-Pahang 440
-Terengganu 168
-Kelantan 105
-Sabah 34
-Sarawak 440
-Jumlah 10,758
-
-___
-
-Candidate text is:
-___
-Negeri  Bilangan penderaan  
-kanak-kanak & Bayi 
-Perlis  245 
-Kedah   420 
-Pulau Pinang   891 
-Perak  861 
-Selangor   3,234 
-Kuala Lumpur   2,221 
-Negeri Sembilan  799 
-Melaka   301 
-Johor   599 
-Pahang   440 
-Terengganu  168 
-Kelantan  105 
-Sabah  34 
-Sarawak  440 
-Jumlah  10,758 
-
-___
-
-12042010
-Anchor row is: Negeri yang mendapatkan rawatan Peratusan (%)
-Table text similarity score is: 100
-Table text is:
-___
-Negeri yang mendapatkan rawatan Peratusan (%)
-Wilayah Persekutuan Kuala   Lumpur 11
-Pahang 11
-Johor 10
-Perak 9
-
-___
-
-Candidate text is:
-___
-Negeri yang mendapatkan rawatan  Peratusan (%) 
- 
-Wilayah Persekutuan Kuala   Lumpur   11 
-Pahang  11 
-Johor   10 
-Perak   9 
-
-___
-
-09102023
-Anchor row is: Bil Rangkaian Bilangan Kampit
-Table text similarity score is: 100
-Table text is:
-___
-Bil Rangkaian Bilangan Kampit
-1. Pasar raya 423,816
-2. FAMA 109,829
-3. LPP 60,240
-4. Pemborong dan pengedar 115,093
-
-___
-
-Candidate text is:
-___
-Bil  Rangkaian  Bilangan Kampit 
-1.  Pasar raya  423,816 
-2.  FAMA  109,829 
-3.  LPP  60,240 
-4.  Pemborong dan pengedar  115,093 
 
 ___
 

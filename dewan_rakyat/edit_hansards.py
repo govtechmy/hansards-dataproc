@@ -840,6 +840,11 @@ def edit_hansards():
             "Tuan Masir Kujat [Sri Aman]: [Bangun]\n",
             '1111 11111 11111 1111 111111 00000000\n',
             '0000 00000 00000 0000 000000 11111111\n')
+    replace('09042015',
+            '12.35 pg\n',
+            '12.35 mlm\n',
+            'all',
+            'none')
 
 
 if __name__ == "__main__":

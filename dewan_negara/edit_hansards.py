@@ -58,6 +58,11 @@ def edit_hansards():
             "Mesyuarat dimulakan pada pukul 10.00 pagi\n",
             'all',
             'none')
+    replace('23122008',
+            "(cid:2) 5.29 ptg.\n",
+            "5.29 ptg.\n",
+            "all",
+            "none")
 
 
 if __name__ == "__main__":
