@@ -47,6 +47,9 @@ def standardise_timestamp(timestamp):
         if len(numbers) == 3:
             return '0' + numbers
         else:
+            # handle 12.35 pg
+            if numbers[:2] == '12':
+                return '00' + numbers[-2:]
             assert len(numbers) == 4, f'Expected 4 digits but got {numbers} from {timestamp}'
             return numbers
     else:
