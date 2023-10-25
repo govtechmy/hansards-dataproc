@@ -9,7 +9,7 @@ import csv
 from datetime import datetime, timedelta
 
 
-def within_30_minutes(time_str1, time_str2):
+def more_than_30_minutes_past(time_str1, time_str2):
     try:
         # Parse the time strings to datetime objects
         time1 = datetime.strptime(time_str1, '%H%M')
@@ -19,10 +19,10 @@ def within_30_minutes(time_str1, time_str2):
         raise ValueError('Invalid time format. Please use HHMM format.')
 
     # Find the absolute difference between the two times
-    time_difference = abs((time1 - time2).total_seconds()) / 60  # Convert seconds to minutes
+    time_difference = (time2 - time1).total_seconds() / 60  # Convert seconds to minutes
 
     # Check if the difference is within 30 minutes
-    return time_difference <= 30
+    return time_difference <= -30
 
 
 def is_timestamp(text):
@@ -754,7 +754,7 @@ def tabulate(hansard_date):
 
     for idx in range(len(unique_timestamps_row)-1):
         # check if two strings in 24 hour format is within 30 minutes of each other
-        if not within_30_minutes(unique_timestamps_row[idx][4], unique_timestamps_row[idx+1][4]):
+        if more_than_30_minutes_past(unique_timestamps_row[idx][4], unique_timestamps_row[idx+1][4]):
             with open("warnings/unsorted_timestamps.txt", 'a') as f:
                 f.write(f'{hansard_date}\n{unique_timestamps_row[idx][3]} AND {unique_timestamps_row[idx][4]}\n')
                 f.write(f'{unique_timestamps_row[idx+1][3]} AND {unique_timestamps_row[idx+1][4]}\n\n')
