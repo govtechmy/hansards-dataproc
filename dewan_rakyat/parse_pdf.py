@@ -47,14 +47,26 @@ def parse_hansard(hansard_date):
     doa_seen = False
     doa_idx = -1
     with pdfplumber.open(f"{base_path}/src_hansard/new/DR-{hansard_date}.pdf") as pdf:
+        extract_attn_start = False
+        attn_text = ""
         for idx, page in enumerate(tqdm(pdf.pages)):
+            extracted = page.extract_text()
             if not doa_seen:
-                if "DOA" in page.extract_text():
+                # extract attendance list before DOA section
+                if "ahli-ahli yang hadir" in extracted.lower():
+                    extract_attn_start = True
+                    attn_text += extracted
+                    print("Ahli-Ahli Yang Hadir", page)
+                    continue
+                if "DOA" in extracted:
                     doa_seen = True
                     doa_idx = idx
+                    extract_attn_start = False  # stop extracting attendance list
                 else:
+                    if extract_attn_start:
+                        attn_text += extracted
                     continue
-            text += page.extract_text() + "\n"  # add newline to separate pages
+            text += extracted + "\n"  # add newline to separate pages
             if hansard_date == "09072019":
                 # special case where snap tolerance doesn't work
                 current_tables = page.filter(not_invisible_rect).extract_tables()
@@ -119,6 +131,8 @@ def parse_hansard(hansard_date):
         f.write(spaced_italics)
     with open(dir_path + "tables.json", "w") as f:
         json.dump(tables, f, indent=4)
+    with open(dir_path + "attendance.txt", "w") as f:
+        f.write(attn_text)
 
     # for global logging
     if tables:

@@ -119,9 +119,25 @@ def clean_up():
     for hansard_date in hansard_dates:
         new_hansard_date = f"{hansard_date[-4:]}-{hansard_date[2:4]}-{hansard_date[:2]}"
 
+        # copy results.csv
         shutil.copy(
             Path.cwd() / "tabulated" / f"{new_hansard_date}" / "result.csv",
-            Path.cwd() / "tabulated_upload" / f"dr_{new_hansard_date}.csv",
+            Path.cwd() / "tabulated_upload" / "new" / f"dr_{new_hansard_date}.csv",
+        )
+        # copy attendance files
+        shutil.copy(
+            Path.cwd() / "tabulated" / f"{new_hansard_date}" / "absent.txt",
+            Path.cwd()
+            / "tabulated_upload"
+            / "new"
+            / f"dr_absent_{new_hansard_date}.txt",
+        )
+        shutil.copy(
+            Path.cwd() / "tabulated" / f"{new_hansard_date}" / "attended.txt",
+            Path.cwd()
+            / "tabulated_upload"
+            / "new"
+            / f"dr_attended_{new_hansard_date}.txt",
         )
 
 

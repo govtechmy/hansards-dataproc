@@ -43,28 +43,32 @@ def replace(
         f"{hansard_date[-4:]}-{hansard_date[2:4]}-{hansard_date[:2]}"  # YYYY-MM-DD
     )
     dir_path = f"pretabulation/{sortable_date}/"
-    with open(dir_path + "plaintext.txt", "r") as f:
-        text = f.readlines()
-    with open(dir_path + "bold.txt", "r") as f:
-        bold = f.readlines()
-    with open(dir_path + "italics.txt", "r") as f:
-        italics = f.readlines()
-    num_edits = 0
-    for idx in range(len(text)):
-        if old_text_snippet == text[idx]:
-            # get the starting index where the match begins
-            text[idx] = new_text_snippet
-            bold[idx] = new_bold_snippet
-            italics[idx] = new_italics_snippet
-            num_edits += 1
+    try:
+        with open(dir_path + "plaintext.txt", "r") as f:
+            text = f.readlines()
+        with open(dir_path + "bold.txt", "r") as f:
+            bold = f.readlines()
+        with open(dir_path + "italics.txt", "r") as f:
+            italics = f.readlines()
+        num_edits = 0
+        for idx in range(len(text)):
+            if old_text_snippet == text[idx]:
+                # get the starting index where the match begins
+                text[idx] = new_text_snippet
+                bold[idx] = new_bold_snippet
+                italics[idx] = new_italics_snippet
+                num_edits += 1
 
-    with open(dir_path + "plaintext.txt", "w") as f:
-        f.writelines(text)
-    with open(dir_path + "bold.txt", "w") as f:
-        f.writelines(bold)
-    with open(dir_path + "italics.txt", "w") as f:
-        f.writelines(italics)
-    print(f"{hansard_date} Num changes made: {num_edits}")
+        with open(dir_path + "plaintext.txt", "w") as f:
+            f.writelines(text)
+        with open(dir_path + "bold.txt", "w") as f:
+            f.writelines(bold)
+        with open(dir_path + "italics.txt", "w") as f:
+            f.writelines(italics)
+        print(f"{hansard_date} Num changes made: {num_edits}")
+
+    except FileNotFoundError:
+        print(f"{hansard_date} not found, skipping")
 
 
 def edit_hansards():

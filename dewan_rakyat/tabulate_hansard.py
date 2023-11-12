@@ -443,6 +443,55 @@ def put_annotations_on_new_line(text, bold, italics):
     return text, bold, italics
 
 
+def format_attendance(text):
+    # process attendance list
+    replacement_dict = {
+        "(johorbaru)": "(johorbahru)",
+        "(kulimbandarbaharu)": "(kulim-bandarbaharu)",
+        "(ipohtimur)": "(ipohtimor)",
+        "bentong)": "(bentong)",  # dr_2022-12-20.pdf
+        "sembrong)": "(sembrong)",  # dr_2022-12-20.pdf
+        "(serian": "(serian)",  # dr_2022-03-08.pdf
+    }
+    text = text.lower()
+
+    # detect list items that start with number.
+    list_item_pattern = re.compile(r"^\d+\.\s+.*$", re.MULTILINE)
+
+    # split the text into lines to process each individually
+    lines = [line.strip() for line in text.split("\n") if line.strip()]
+
+    # dict of headings -> list items
+    parsed_data = {}
+    current_heading = None
+    for line in lines:
+        if not list_item_pattern.match(line) and line.endswith(":"):
+            current_heading = line
+            parsed_data[current_heading] = ""
+        elif current_heading is not None:
+            parsed_data[current_heading] += line
+
+    # segragate headings for attendance and absence
+    attended_text = ""
+    absent_text = ""
+    for key in parsed_data.keys():
+        if "tidak" in key or "digantung" in key:
+            print("absent", key)
+            absent_text += "".join(parsed_data[key].split())
+        else:
+            print("attendance", key)
+            attended_text += "".join(parsed_data[key].split())
+
+    for old, new in replacement_dict.items():
+        absent_text = absent_text.replace(old, new)
+        attended_text = attended_text.replace(old, new)
+
+    assert absent_text, "No absentees found in attendance list"
+    assert attended_text, "No attendance found in attendance list"
+
+    return absent_text, attended_text
+
+
 def tabulate(hansard_date):
     print(hansard_date)
     with open("categories.json", "r") as f:
@@ -964,6 +1013,18 @@ def tabulate(hansard_date):
             ]
         )
         writer.writerows(speeches)
+
+    # process attendance from parse_pdf
+    parsed_input_dir = f"parsed_pdf/{sortable_date}/"
+    with open(f"{parsed_input_dir}attendance.txt", "r") as f:
+        attendance_txt = f.read()
+
+    absent_text, attended_text = format_attendance(attendance_txt)
+
+    with open(f"{dir_path}absent.txt", "w") as f:
+        f.write(absent_text)
+    with open(f"{dir_path}attended.txt", "w") as f:
+        f.write(attended_text)
 
 
 if __name__ == "__main__":
