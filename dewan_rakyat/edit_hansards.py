@@ -73,6 +73,13 @@ def replace(
 
 def edit_hansards():
     replace(
+        "08112023",
+        "Institusi) Tuan Ramkarpal Singh a/l Karpal Singh]: Terima kasih Tuan Yang di-Pertua.\n",
+        "Institusi) [Tuan Ramkarpal Singh a/l Karpal Singh]: Terima kasih Tuan Yang di-Pertua.\n",
+        "1111111111 1111 111111111 11111 111 111111 11111111 000000 00000 0000 0000 0000000000\n",
+        "none",
+    )
+    replace(
         "02112023",
         "Ahmad Fakhruddin bin Fakhrurazi [Kuala Kedah]: Dato' Yang di-Pertua, sebelum\n",
         "Dr. Ahmad Fakhruddin bin Fakhrurazi [Kuala Kedah]: Dato' Yang di-Pertua, sebelum\n",
