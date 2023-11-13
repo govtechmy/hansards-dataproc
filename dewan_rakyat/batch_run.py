@@ -91,7 +91,8 @@ def tabulate():
         "warnings/uppercased_non_author.txt",
         "warnings/mixed_bolds.txt",
         "warnings/unsorted_timestamps.txt",
-        "errors/tabulation_errors.txt"
+        "errors/tabulation_errors.txt",
+        "warnings/toc_mismatch.txt"
     ]
 
     for file in tabulation_files_for_deletion:
@@ -125,8 +126,8 @@ if __name__ == "__main__":
 
     hansard_dates = [x[3:3 + 8] for x in filenames]
     # preprocess()
-    # post_parsing_edits.modify_tables()
+    # parse_categories()
+    # post_parsing_edits.post_parsing_edits()
     # pre_tabulate()
     # edit_hansards.edit_hansards()
-    # parse_categories()
     tabulate()
