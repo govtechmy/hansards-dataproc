@@ -122,7 +122,7 @@ def get_author_and_speech(text, bold, italics, warn=''):
     subtopic = ''
     if re.search(r'^(Timbalan(an)? )?(Tuan )?([Yy]ang )?[dD]i-? ?[Pp]ertua[\[\]A-Za-z `.’\'@/(\-),]*:', text) or \
             re.search(r'^Setiausaha[\[\]A-Za-z `.’\'@/(\-),]*:', text) or \
-            re.search(r'^(Yang Berhormat )?(Timbalan )?[Mm]enteri [A-Za-z,()\-& ]+(\[Ekonomi] )'
+            re.search(r'^(Yang Berhormat )?(Timbalan )?(Perdana )?[Mm]enteri [A-Za-z,()\-& ]+(\[Ekonomi] )'
                       r'?\[[A-Za-z `.’\'@/(\-)\[\]]+] ?:',
                       text) or \
             re.search(r'^(Timbalan )?(Tuan )?Pengerusi (Timbalan Yang di-Pertua )?\[[A-Za-z `.’\'@/(\-)]*]:', text) or \
@@ -243,6 +243,7 @@ def get_author_and_speech(text, bold, italics, warn=''):
                    r"(Teresa Kok Suh Sim:)|"
                    r"(Zuraida binti Kamaruddin:)|"
                    r"(Seri Dr\. Adham bin Baba \[Tenggara]:)|"
+                   r"(Mohd Sany bin Hamzan \[Hulu Langat]:)|"
                    r"(Kelvin Yii Lee Wuen \[Bandar Kuching]:))", text):
         # special cases, the Dewan Rakyat did not give them salutatory titles
         # to minimize word edits, we will just treat them as special cases in the parser
@@ -607,7 +608,7 @@ def tabulate(hansard_date):
                 continue
 
             if current['author'] == "" and current['speech'] == '' and current[
-                'level_1'] != '' and prop_of_1_among_binary(italics[row_id]) < 0.9:
+                'level_1'] != '' and current['level_2'] == '' and prop_of_1_among_binary(italics[row_id]) < 0.9:
                 # most likely a level_2 immediately following a level_1
                 # usually a chain of bolds
                 # make sure it is not the chain of italicised bolds typically following Titah
@@ -736,8 +737,8 @@ def tabulate(hansard_date):
                 # it could be followed by similar level_3 markers
                 while row_id + add_idx < num_rows and \
                         prop_of_1_among_binary(bold[row_id + add_idx]) > 0.8 and \
-                        re.search(r'^(Maksud)|(Kepala)|(Fasal)|(Bab)|(Tajuk)|(Jadual)[A-Za-z0-9-[\], ]+[–-]',
-                                  text[row_id + add_idx]):
+                        (re.search(r'^(Maksud)|(Kepala)|(Fasal)|(Bab)|(Tajuk)|(Jadual)[A-Za-z0-9-[\], ]+[–-]',
+                                   text[row_id + add_idx]) or text[row_id + add_idx].strip()[-1] in ['–', '-']):
                     current['level_3'] += text[row_id + add_idx]
                     add_idx += 1
                 row_id += add_idx - 1
@@ -837,7 +838,7 @@ def tabulate(hansard_date):
 
     # check that timestamps are in order
     timestamps = [speech[4] for speech in speeches]
-    unique_timestamps = set()
+    unique_timestamps = set(timestamps)
     unique_timestamps_row = []
     for speech in speeches:
         if speech[4] not in unique_timestamps:
@@ -915,7 +916,7 @@ def tabulate(hansard_date):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("hansard_date", help="hansard_date eg. 23052023",
-                        default="05032018", nargs="?")
+                        default="02082017", nargs="?")
     # Parse arguments
     args = parser.parse_args()
     tabulate(args.hansard_date)

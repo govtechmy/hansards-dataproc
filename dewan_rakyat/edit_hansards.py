@@ -824,12 +824,12 @@ def edit_hansards():
             "Tuan Mohamed Hanipa bin Maidin [Sepang]: [Bangun[\n",
             "Tuan Mohamed Hanipa bin Maidin [Sepang]: [Bangun]\n",
             '1111 1111111 111111 111 111111 111111111 00000000\n',
-            '0000 0000000 000000 000 000000 000000000 11111111\n',)
+            '0000 0000000 000000 000 000000 000000000 11111111\n', )
     replace('16032011',
             "Beberapa Ahli: [Bangun[\n",
             "Beberapa Ahli: [Bangun]\n",
             '11111111 11111 00000000\n',
-            '00000000 00000 11111111\n',)
+            '00000000 00000 11111111\n', )
     replace('18022009',
             "[Ketawa[\n",
             "[Ketawa]\n",
@@ -845,6 +845,41 @@ def edit_hansards():
             '12.35 mlm\n',
             'all',
             'none')
+    replace('11102021',
+            'Menteri di Jabatan Perdana Menteri (Parlimen dan Undang-undang) Dato’\n',
+            'Menteri di Jabatan Perdana Menteri (Parlimen dan Undang-undang) [Dato’\n',
+            'all',
+            'none')
+    replace('11102021',
+            'Sri Dr. Haji Wan Junaidi bin Tuanku Jaafar: Tuan Yang di-Pertua, saya mohon\n',
+            'Sri Dr. Haji Wan Junaidi bin Tuanku Jaafar]: Tuan Yang di-Pertua, saya mohon\n',
+            '111 111 1111 111 1111111 111 111111 11111111 0000 0000 0000000000 0000 00000\n',
+            'none')
+    replace('07122020',
+            "Dato' Takiyuddin bin Hassan [Menteri di Jabatan Perdana Menteri\n",
+            "Menteri di Jabatan Perdana Menteri (Parlimen dan Undang-undang) [Dato' Takiyuddin bin Hassan]:\n'",
+            'all',
+            'none')
+    replace('07122020',
+            "(Parlimen dan Undang-undang)]: Yang Berhormat Tuan Yang di-Pertua;\n",
+            "Yang Berhormat Tuan Yang di-Pertua;\n",
+            "none",
+            "none")
+    replace('19102023',
+            "(Parlimen dan Undang-undang)]: Yang Berhormat Tuan Yang di-Pertua;\n",
+            "Yang Berhormat Tuan Yang di-Pertua;\n",
+            "none",
+            "none")
+    replace('19102023',
+            "Datuk Ahmad Marzuk bin Shaary [Pengkalan Chepa]: Yang Berhormat Speaker. Dato’\n",
+            "Datuk Ahmad Marzuk bin Shaary [Pengkalan Chepa]: Yang Berhormat Speaker.\nDato’\n",
+            "11111 11111 111111 111 111111 1111111111 1111111 0000 000000000 00000000\n11111\n",
+            "none")
+    replace('02082017',
+            "Datuk Noor Ehsanuddin bin Mohd. Harun Narrashid [Kota Tinggi Yang\n",
+            "Datuk Noor Ehsanuddin bin Mohd. Harun Narrashid [Kota Tinggi]: Yang\n",
+            "11111 1111 1111111111 111 11111 11111 111111111 11111 11111111 0000\n",
+            "none")
 
 
 if __name__ == "__main__":
