@@ -378,6 +378,16 @@ def tabulate(hansard_date):
     if not os.path.isdir(dir_path):
         os.mkdir(dir_path)
 
+    # sometimes the level_2 in a Hansard is a level_1 in some other Hansards' TOC
+    # this is a fundamentally unresolvable problem because we cannot detect the presence of underlines
+    # we simply edit the TOC for Hansards with known problems
+    if hansard_date == "20012022":
+        categories = [
+            "PEMASYHURAN DARIPADA TUAN YANG DI-PERTUA",
+            "USUL",
+            "PENERANGAN DARIPADA MENTERI-MENTERI DI BAWAH P.M 14(1)(i)"
+        ]
+
     # the strategy is to iterate across rows
     # store the contents of the preprocessed text file in a list
     input_dir = f"pretabulation/{year}/{sortable_date}/"
@@ -410,6 +420,9 @@ def tabulate(hansard_date):
     dewan_tangguh = False
     while row_id + 1 < num_rows:
         row_id += 1
+        # if row_id == 979:
+        #     print(1)
+        #     pass
 
         # run until DOA first
         if 'DOA' == text[row_id].strip():
@@ -793,7 +806,7 @@ def tabulate(hansard_date):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("hansard_date", help="hansard_date eg. 23052023",
-                        default="07102022", nargs="?")
+                        default="20012022", nargs="?")
     # Parse arguments
     args = parser.parse_args()
     tabulate(args.hansard_date)

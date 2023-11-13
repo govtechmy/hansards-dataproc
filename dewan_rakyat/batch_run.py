@@ -5,6 +5,7 @@ import tabulate_hansard
 from tqdm import tqdm
 import edit_hansards
 import post_parsing_edits
+import get_categories
 
 
 def get_filenames_in_folder(folder_path_):
@@ -24,6 +25,27 @@ def preprocess():
         except:
             # write this filename to file
             with open("errors/hansards_with_parsing_errors.txt", "a") as f:
+                f.write(hansard_date + "\n")
+            print("Error parsing " + hansard_date)
+            continue
+
+
+def parse_categories():
+    # for preprocessing
+    get_categories_files_for_deletion = [
+        "warnings/empty_categories.txt",
+        "errors/TOC_errors.txt",
+        "warnings/long_toc_hansards.txt"
+    ]
+    for file in get_categories_files_for_deletion:
+        if os.path.exists(file):
+            os.remove(file)
+    for hansard_date in tqdm(hansard_dates):
+        try:
+            get_categories.get_categories(hansard_date)
+        except:
+            # write this filename to file
+            with open("errors/TOC_errors.txt", "a") as f:
                 f.write(hansard_date + "\n")
             print("Error parsing " + hansard_date)
             continue
@@ -106,4 +128,5 @@ if __name__ == "__main__":
     # post_parsing_edits.modify_tables()
     # pre_tabulate()
     # edit_hansards.edit_hansards()
-    tabulate()
+    parse_categories()
+    # tabulate()
