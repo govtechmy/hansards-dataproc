@@ -257,6 +257,21 @@ def get_author_and_speech(text, bold, italics, warn=''):
     return author, speech, speech_bold, speech_italics, subtopic
 
 
+def possible_author(text, bold, italics, idx, num_rows):
+    # check if this line or the combination of the next is a valid author
+    # return true if so
+    if get_author_and_speech(text[idx], bold[idx], italics[idx])[0] != '':
+        return True
+    if idx + 1 < num_rows and \
+            not (text[idx + 1].startswith('[') and italics[idx + 1][1] == '1'):
+        concat_rows = f'{text[idx].strip()} {text[idx + 1]}'
+        concat_rows_bold = f'{bold[idx].strip()} {bold[idx + 1]}'
+        concat_rows_italics = f'{italics[idx].strip()} {italics[idx + 1]}'
+        return get_author_and_speech(
+            concat_rows, concat_rows_bold, concat_rows_italics)[0] != ''
+    return False
+
+
 def insert_speech(current):
     if current['speech'] == '':
         return []
@@ -532,8 +547,7 @@ def tabulate(hansard_date):
                 while row_id + add_idx < num_rows and \
                         prop_of_1_among_binary(bold[row_id + add_idx]) > 0.8 and \
                         not is_timestamp(text[row_id + add_idx]) and \
-                        not get_author_and_speech(text[row_id + add_idx], bold[row_id + add_idx],
-                                                  italics[row_id + add_idx])[0] and \
+                        not possible_author(text, bold, italics, row_id + add_idx, num_rows) and \
                         not (text[row_id + add_idx].startswith('[') and italics[row_id + add_idx][1] == '1'):
                     current['level_2'] += text[row_id + add_idx]
                     add_idx += 1
@@ -779,7 +793,7 @@ def tabulate(hansard_date):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("hansard_date", help="hansard_date eg. 23052023",
-                        default="06062023", nargs="?")
+                        default="07102022", nargs="?")
     # Parse arguments
     args = parser.parse_args()
     tabulate(args.hansard_date)
