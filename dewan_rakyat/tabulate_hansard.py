@@ -562,24 +562,23 @@ def tabulate(hansard_date):
                 # DAN
                 # USUL
                 # ANGGARAN PEMBANGUNAN 2023
-                if text[row_id].strip() in categories:
-                    # direct match
-                    speeches += insert_speech(current)
-                    current['author'] = ""
-                    current['level_1'] = text[row_id].strip()
-                    current['level_2'] = ""
-                    current['level_3'] = ""
-                    current['speech'] = ""
-                    current['speech_bold'] = ""
-                    current['speech_italics'] = ""
-                    continue
+                # if text[row_id].strip() in categories:
+                #     # direct match
+                #     speeches += insert_speech(current)
+                #     current['author'] = ""
+                #     current['level_1'] = text[row_id].strip()
+                #     current['level_2'] = ""
+                #     current['level_3'] = ""
+                #     current['speech'] = ""
+                #     current['speech_bold'] = ""
+                #     current['speech_italics'] = ""
                 # keep elongating the category scope and try fuzzy matching until the category score goes down
                 add_idx = 1
                 current_category = text[row_id].strip()
                 current_category_probability = category_probability(current_category, categories)
                 while row_id + add_idx < num_rows and upper_lower_ratio(text[row_id + add_idx]) > 1 and \
                         category_probability(current_category + ' ' + text[row_id + add_idx].strip(),
-                                             categories) > current_category_probability:
+                                             categories) >= current_category_probability:
                     current_category += ' ' + text[row_id + add_idx].strip()
                     current_category_probability = category_probability(current_category, categories)
                     add_idx += 1
@@ -593,8 +592,9 @@ def tabulate(hansard_date):
                     current['speech_bold'] = ""
                     current['speech_italics'] = ""
                     row_id += add_idx - 1
-                    with open("warnings/matched_categories.csv", 'a') as f:
-                        f.write(f'{hansard_date},{current_category},{current_category_probability}\n')
+                    if current_category_probability < 1:
+                        with open("warnings/matched_categories.csv", 'a') as f:
+                            f.write(f'{hansard_date},{current_category},{current_category_probability}\n')
                     continue
                 # could be a capitalised subtopic
                 speeches += insert_speech(current)
@@ -779,7 +779,7 @@ def tabulate(hansard_date):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("hansard_date", help="hansard_date eg. 23052023",
-                        default="13092023", nargs="?")
+                        default="06062023", nargs="?")
     # Parse arguments
     args = parser.parse_args()
     tabulate(args.hansard_date)
