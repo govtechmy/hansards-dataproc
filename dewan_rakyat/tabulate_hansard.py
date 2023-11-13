@@ -400,6 +400,9 @@ def tabulate(hansard_date):
     assert len(text) == len(bold) == len(italics), \
         f'Length of text, bold and italics do not match: {len(text)} vs {len(bold)} vs {len(italics)}'
 
+    with open(f"parsed_pdf/{year}/{sortable_date}/categories.json", 'r') as f:
+        categories = json.load(f)
+
     text, bold, italics = put_annotations_on_new_line(text, bold, italics)
 
     doa_seen = False

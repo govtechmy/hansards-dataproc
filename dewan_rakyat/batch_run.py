@@ -128,5 +128,5 @@ if __name__ == "__main__":
     # post_parsing_edits.modify_tables()
     # pre_tabulate()
     # edit_hansards.edit_hansards()
-    parse_categories()
-    # tabulate()
+    # parse_categories()
+    tabulate()
