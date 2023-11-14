@@ -115,6 +115,7 @@ def category_probability(text, categories):
     if upper_lower_ratio(text) < 1:
         # probably not a category
         return 0
+
     candidate_category, match_score = process.extractOne(text, categories)
     return match_score / 100
 
@@ -132,7 +133,7 @@ def get_author_and_speech(text, bold, italics, warn=""):
         )
         or re.search(r"^Setiausaha[\[\]A-Za-z `.’\'@/(\-),]*:", text)
         or re.search(
-            r"^(Yang Berhormat )?(Timbalan )?[Mm]enteri [A-Za-z,()\-& ]+(\[Ekonomi] )"
+            r"^(Yang Berhormat )?(Timbalan )?(Perdana )?[Mm]enteri [A-Za-z,()\-& ]+(\[Ekonomi] )"
             r"?\[[A-Za-z `.’\'@/(\-)\[\]]+] ?:",
             text,
         )
@@ -290,6 +291,7 @@ def get_author_and_speech(text, bold, italics, warn=""):
         r"(Teresa Kok Suh Sim:)|"
         r"(Zuraida binti Kamaruddin:)|"
         r"(Seri Dr\. Adham bin Baba \[Tenggara]:)|"
+        r"(Mohd Sany bin Hamzan \[Hulu Langat]:)|"
         r"(Kelvin Yii Lee Wuen \[Bandar Kuching]:))",
         text,
     ):
@@ -305,6 +307,24 @@ def get_author_and_speech(text, bold, italics, warn=""):
         with open("warnings/autocorrected_authors.txt", "a") as f:
             f.write(warn + "\n")
     return author, speech, speech_bold, speech_italics, subtopic
+
+
+def possible_author(text, bold, italics, idx, num_rows):
+    # check if this line or the combination of the next is a valid author
+    # return true if so
+    if get_author_and_speech(text[idx], bold[idx], italics[idx])[0] != "":
+        return True
+    if idx + 1 < num_rows and not (
+        text[idx + 1].startswith("[") and italics[idx + 1][1] == "1"
+    ):
+        concat_rows = f"{text[idx].strip()} {text[idx + 1]}"
+        concat_rows_bold = f"{bold[idx].strip()} {bold[idx + 1]}"
+        concat_rows_italics = f"{italics[idx].strip()} {italics[idx + 1]}"
+        return (
+            get_author_and_speech(concat_rows, concat_rows_bold, concat_rows_italics)[0]
+            != ""
+        )
+    return False
 
 
 def insert_speech(current):
@@ -507,6 +527,16 @@ def tabulate(hansard_date):
     if not os.path.isdir(dir_path):
         os.mkdir(dir_path)
 
+    # sometimes the level_2 in a Hansard is a level_1 in some other Hansards' TOC
+    # this is a fundamentally unresolvable problem because we cannot detect the presence of underlines
+    # we simply edit the TOC for Hansards with known problems
+    if hansard_date == "20012022":
+        categories = [
+            "PEMASYHURAN DARIPADA TUAN YANG DI-PERTUA",
+            "USUL",
+            "PENERANGAN DARIPADA MENTERI-MENTERI DI BAWAH P.M 14(1)(i)",
+        ]
+
     # the strategy is to iterate across rows
     # store the contents of the preprocessed text file in a list
     input_dir = f"pretabulation/{sortable_date}/"
@@ -519,6 +549,72 @@ def tabulate(hansard_date):
     assert (
         len(text) == len(bold) == len(italics)
     ), f"Length of text, bold and italics do not match: {len(text)} vs {len(bold)} vs {len(italics)}"
+
+    with open(f"parsed_pdf/{year}/{sortable_date}/categories.json", "r") as f:
+        categories = json.load(f)
+
+    fuzzy_ydp = [
+        "PEMASYHURAN OLEH TUAN YANG DI-PERTUA",
+        "PEMASYHURAN TUAN YANG DI-PERTUA",
+        "PEMASYHURAN DARIPADA TUAN YANG DI-PERTUA",
+    ]
+    fuzzy_jawapan = [
+        "JAWAPAN-JAWAPAN MENTERI BAGI PERTANYAAN-PERTANYAAN",
+        "JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN",
+        "PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN",
+    ]
+
+    # PEMASYHURAN OLEH TUAN YANG DI-PERTUA is very fuzzy and the match score is low
+    if any("TUAN YANG DI-PERTUA" in x for x in categories):
+        categories += fuzzy_ydp
+    # YDPA has a longer title than TOC
+    if "TITAH SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG" in categories:
+        categories.append(
+            "TITAH KEBAWAH DULI YANG MAHA MULIA SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG XVI AL-SULTAN ABDULLAH "
+            "RI’AYATUDDIN AL-MUSTAFA BILLAH SHAH IBNI ALMARHUM SULTAN HAJI AHMAD SHAH AL-MUSTA’IN BILLAH"
+        )
+    # P.M. is sometimes expanded as Peraturan Mesyuarat
+    for x in categories:
+        if "P.M" in x:
+            categories.append(x.replace("P.M", "PERATURAN MESYUARAT"))
+    # Sometimes UNDANG sometimes UNDANG-UNDANG
+    to_add = []
+    for x in categories:
+        # Replace "UNDANG" with "UNDANG-UNDANG" only when "UNDANG" is a standalone word
+        if re.search(r"\b(?<!UNDANG-)UNDANG(?!-UNDANG)\b", x) and not re.search(
+            r"\bUNDANG-UNDANG\b", x
+        ):
+            to_add.append(
+                re.sub(r"\b(?<!UNDANG-)UNDANG(?!-UNDANG)\b", "UNDANG-UNDANG", x)
+            )
+
+        # Replace "UNDANG-UNDANG" with "UNDANG" only when "UNDANG-UNDANG" is a standalone word
+        if re.search(r"\bUNDANG-UNDANG\b", x) and not re.search(
+            r"\b(?<!UNDANG-)UNDANG(?!-UNDANG)\b", x
+        ):
+            to_add.append(re.sub(r"\bUNDANG-UNDANG\b", "UNDANG", x))
+    categories += to_add
+    to_add = []
+    for x in categories:
+        # Replace "UNDANG" with "UNDANG-UNDANG" only when "UNDANG" is a standalone word
+        if re.search(r"\b(?<!USUL-)USUL(?!-USUL)\b", x) and not re.search(
+            r"\bUSUL-USUL\b", x
+        ):
+            to_add.append(re.sub(r"\b(?<!USUL-)USUL(?!-USUL)\b", "USUL-USUL", x))
+
+        # Replace "UNDANG-UNDANG" with "UNDANG" only when "UNDANG-UNDANG" is a standalone word
+        if re.search(r"\bUSUL-USUL\b", x) and not re.search(
+            r"\b(?<!USUL-)USUL(?!-USUL)\b", x
+        ):
+            to_add.append(re.sub(r"\bUSUL-USUL\b", "USUL", x))
+
+    categories += to_add
+    to_add = []
+    # 2018 and earlier TOC will say JAWAPAN and in-text will say PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN
+    if any(x.startswith("JAWAPAN-JAWAPAN") for x in categories) or any(
+        x.startswith("PERTANYAAN-PERTANYAAN") for x in categories
+    ):
+        categories += fuzzy_jawapan
 
     text, bold, italics = put_annotations_on_new_line(text, bold, italics)
 
@@ -540,6 +636,9 @@ def tabulate(hansard_date):
     dewan_tangguh = False
     while row_id + 1 < num_rows:
         row_id += 1
+        # if row_id == 979:
+        #     print(1)
+        #     pass
 
         # run until DOA first
         if "DOA" == text[row_id].strip():
@@ -694,9 +793,12 @@ def tabulate(hansard_date):
                 current["author"] == ""
                 and current["speech"] == ""
                 and current["level_1"] != ""
+                and current["level_2"] == ""
+                and prop_of_1_among_binary(italics[row_id]) < 0.9
             ):
                 # most likely a level_2 immediately following a level_1
                 # usually a chain of bolds
+                # make sure it is not the chain of italicised bolds typically following Titah
                 add_idx = 1
                 current["level_2"] = text[row_id]
                 current["level_3"] = ""
@@ -704,11 +806,9 @@ def tabulate(hansard_date):
                     row_id + add_idx < num_rows
                     and prop_of_1_among_binary(bold[row_id + add_idx]) > 0.8
                     and not is_timestamp(text[row_id + add_idx])
-                    and not get_author_and_speech(
-                        text[row_id + add_idx],
-                        bold[row_id + add_idx],
-                        italics[row_id + add_idx],
-                    )[0]
+                    and not possible_author(
+                        text, bold, italics, row_id + add_idx, num_rows
+                    )
                     and not (
                         text[row_id + add_idx].startswith("[")
                         and italics[row_id + add_idx][1] == "1"
@@ -741,17 +841,16 @@ def tabulate(hansard_date):
                 # DAN
                 # USUL
                 # ANGGARAN PEMBANGUNAN 2023
-                if text[row_id].strip() in categories:
-                    # direct match
-                    speeches += insert_speech(current)
-                    current["author"] = ""
-                    current["level_1"] = text[row_id].strip()
-                    current["level_2"] = ""
-                    current["level_3"] = ""
-                    current["speech"] = ""
-                    current["speech_bold"] = ""
-                    current["speech_italics"] = ""
-                    continue
+                # if text[row_id].strip() in categories:
+                #     # direct match
+                #     speeches += insert_speech(current)
+                #     current['author'] = ""
+                #     current['level_1'] = text[row_id].strip()
+                #     current['level_2'] = ""
+                #     current['level_3'] = ""
+                #     current['speech'] = ""
+                #     current['speech_bold'] = ""
+                #     current['speech_italics'] = ""
                 # keep elongating the category scope and try fuzzy matching until the category score goes down
                 add_idx = 1
                 current_category = text[row_id].strip()
@@ -765,7 +864,7 @@ def tabulate(hansard_date):
                         current_category + " " + text[row_id + add_idx].strip(),
                         categories,
                     )
-                    > current_category_probability
+                    >= current_category_probability
                 ):
                     current_category += " " + text[row_id + add_idx].strip()
                     current_category_probability = category_probability(
@@ -782,10 +881,11 @@ def tabulate(hansard_date):
                     current["speech_bold"] = ""
                     current["speech_italics"] = ""
                     row_id += add_idx - 1
-                    with open("warnings/matched_categories.csv", "a") as f:
-                        f.write(
-                            f"{hansard_date},{current_category},{current_category_probability}\n"
-                        )
+                    if current_category_probability < 1:
+                        with open("warnings/matched_categories.csv", "a") as f:
+                            f.write(
+                                f"{hansard_date},{current_category},{current_category_probability}\n"
+                            )
                     continue
                 # could be a capitalised subtopic
                 speeches += insert_speech(current)
@@ -856,9 +956,12 @@ def tabulate(hansard_date):
                 while (
                     row_id + add_idx < num_rows
                     and prop_of_1_among_binary(bold[row_id + add_idx]) > 0.8
-                    and re.search(
-                        r"^(Maksud)|(Kepala)|(Fasal)|(Bab)|(Tajuk)|(Jadual)[A-Za-z0-9-[\], ]+[–-]",
-                        text[row_id + add_idx],
+                    and (
+                        re.search(
+                            r"^(Maksud)|(Kepala)|(Fasal)|(Bab)|(Tajuk)|(Jadual)[A-Za-z0-9-[\], ]+[–-]",
+                            text[row_id + add_idx],
+                        )
+                        or text[row_id + add_idx].strip()[-1] in ["–", "-"]
                     )
                 ):
                     current["level_3"] += text[row_id + add_idx]
@@ -928,8 +1031,6 @@ def tabulate(hansard_date):
             continue
         # the 5th item is the speech
         if has_timestamp_in_annotation(speeches[row_id][5]):
-            with open("warnings/timestamp_in_annotation.txt", "a") as f:
-                f.write(f"{hansard_date}\n{speeches[row_id][5]}\n\n")
             old_timestamp = speeches[row_id][3]
             new_timestamp = get_timestamp_from_annotation(speeches[row_id][5])
             add_idx = 0
@@ -941,14 +1042,14 @@ def tabulate(hansard_date):
                 add_idx += 1
 
     # get unique timestamps while preserving order
-    unique_timestamps = dict.fromkeys([speech[3] for speech in speeches]).keys()
-    with open("dump/all_timestamps.txt", "a") as f:
-        for timestamp in unique_timestamps:
-            f.write(f"{timestamp}\n")
-    with open("dump/all_timestamps_dated.txt", "a") as f:
-        f.write(f"\n{hansard_date}\n")
-        for timestamp in unique_timestamps:
-            f.write(f"{timestamp}\n")
+    # unique_timestamps = dict.fromkeys([speech[3] for speech in speeches]).keys()
+    # with open('dump/all_timestamps.txt', 'a') as f:
+    #     for timestamp in unique_timestamps:
+    #         f.write(f'{timestamp}\n')
+    # with open('dump/all_timestamps_dated.txt', 'a') as f:
+    #     f.write(f'\n{hansard_date}\n')
+    #     for timestamp in unique_timestamps:
+    #         f.write(f'{timestamp}\n')
     # prop_bullet = sum([1 for timestamp in unique_timestamps if re.search(r'[■◼▪]', timestamp)]) / len(
     #     unique_timestamps)
     # standardised_unique_timestamps = [standardise_timestamp(timestamp) for timestamp in unique_timestamps]
@@ -978,7 +1079,7 @@ def tabulate(hansard_date):
 
     # check that timestamps are in order
     timestamps = [speech[4] for speech in speeches]
-    unique_timestamps = set()
+    unique_timestamps = set(timestamps)
     unique_timestamps_row = []
     for speech in speeches:
         if speech[4] not in unique_timestamps:
@@ -1014,23 +1115,97 @@ def tabulate(hansard_date):
         )
         writer.writerows(speeches)
 
-    # process attendance from parse_pdf
-    parsed_input_dir = f"parsed_pdf/{sortable_date}/"
-    with open(f"{parsed_input_dir}attendance.txt", "r") as f:
-        attendance_txt = f.read()
+    # check if TOC matches
+    actual_toc = sorted(list(set([x[0] for x in speeches])))
+    categories = [
+        x
+        for x in categories
+        if x not in ["KANDUNGAN (Samb)", "K A N D U N G A N (Samb.)"]
+    ]
+    actual_toc = [x for x in actual_toc if x not in [""]]
+    actual_toc_original = actual_toc.copy()
+    categories_original = categories.copy()
 
-    absent_text, attended_text = format_attendance(attendance_txt)
+    # if both have usuls, then it is fine to take their variants
+    if any(x.startswith("USUL") for x in categories) and any(
+        x.startswith("USUL") for x in actual_toc
+    ):
+        categories = [x for x in categories if not x.startswith("USUL")]
+        actual_toc = [x for x in actual_toc if not x.startswith("USUL")]
 
-    with open(f"{dir_path}absent.txt", "w") as f:
-        f.write(absent_text)
-    with open(f"{dir_path}attended.txt", "w") as f:
-        f.write(attended_text)
+    if any(x.startswith("TITAH") for x in categories) and any(
+        x.startswith("TITAH") for x in actual_toc
+    ):
+        categories = [x for x in categories if not x.startswith("TITAH")]
+        actual_toc = [x for x in actual_toc if not x.startswith("TITAH")]
+
+    if any(x.endswith("YANG DI-PERTUA") for x in categories) and any(
+        x.endswith("YANG DI-PERTUA") for x in actual_toc
+    ):
+        categories = [x for x in categories if not x.endswith("YANG DI-PERTUA")]
+        actual_toc = [x for x in actual_toc if not x.endswith("YANG DI-PERTUA")]
+
+    if any(x in fuzzy_jawapan for x in categories) and any(
+        x in fuzzy_jawapan for x in actual_toc
+    ):
+        categories = [x for x in categories if x not in fuzzy_jawapan]
+        actual_toc = [x for x in actual_toc if x not in fuzzy_jawapan]
+
+    if any(x.startswith("RANG UNDANG") for x in categories) and any(
+        x.startswith("RANG UNDANG") for x in actual_toc
+    ):
+        categories = [x for x in categories if not x.startswith("RANG UNDANG")]
+        actual_toc = [x for x in actual_toc if not x.startswith("RANG UNDANG")]
+
+    if any("P.M" in x or "PERATURAN MESYUARAT" in x for x in categories) and any(
+        "P.M" in x or "PERATURAN MESYUARAT" in x for x in actual_toc
+    ):
+        categories = [
+            x for x in categories if not ("P.M" in x or "PERATURAN MESYUARAT" in x)
+        ]
+        actual_toc = [
+            x for x in actual_toc if not ("P.M" in x or "PERATURAN MESYUARAT" in x)
+        ]
+
+    if actual_toc != categories:
+        # get the categories but only their alphabets and numbers (e.g. remove spaces, punctuation etc)
+        alphanumeric_categories = sorted(
+            [re.sub(r"[^a-zA-Z0-9]", "", x) for x in categories]
+        )
+        alphanumeric_actual = sorted(
+            [re.sub(r"[^a-zA-Z0-9]", "", x) for x in actual_toc]
+        )
+        if alphanumeric_categories != alphanumeric_actual:
+            with open("warnings/toc_mismatch.txt", "a") as f:
+                category_minus_actual = "\n".join(
+                    [
+                        x
+                        for x in categories
+                        if re.sub(r"[^a-zA-Z0-9]", "", x) not in alphanumeric_actual
+                    ]
+                )
+                actual_minus_category = "\n".join(
+                    [
+                        x
+                        for x in actual_toc
+                        if re.sub(r"[^a-zA-Z0-9]", "", x) not in alphanumeric_categories
+                    ]
+                )
+                category_string = "\n".join(categories_original)
+                actual_toc_string = "\n".join(actual_toc_original)
+                f.write(
+                    f"{hansard_date}\nLength differences: {len(categories) - len(actual_toc)}\n"
+                    f"actual_minus_category\n{actual_minus_category}\n\n"
+                    f"category_minus_actual\n{category_minus_actual}\n\n"
+                    f"Actual TOC\n{actual_toc_string}\n\n"
+                    f"Expected TOC\n{category_string}\n\n"
+                )
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "hansard_date", help="hansard_date eg. 23052023", default="13092023", nargs="?"
+        "hansard_date", help="hansard_date eg. 23052023", default="02082017", nargs="?"
     )
     # Parse arguments
     args = parser.parse_args()

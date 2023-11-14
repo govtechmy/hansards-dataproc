@@ -6,7 +6,7 @@ This project aims to digitalise the Malaysian [Dewan Rakyat](https://www.parlime
 3. (Optional) Run `python3 download_hansards.py` to download the source PDFs.
 4. Bulk process with `python3 batch_run.py`. If you are rerunning, free to comment out certain procedures to speed up the prcoess (e.g. `parse_pdf.py` takes a long time but we have stored the output in `parsed_pdf`).
 
-![](README_images/usage.png)
+![](README_images/hansard_parsing.svg)
 
 To be specific, these files will be run in order.
 
@@ -15,7 +15,12 @@ Run `parse_pdf.py` to get the four output files
 - bold.txt and italic.txt files (as 0, 1, or whitespaces)
 - tables.json.
 
-This will get the PDFs from `src_hansard` where the Hansards are named as `DR-DDMMYYYYY.pdf` or `DN-DDMMYYYYY.pdf`. The files are stored in `parsed_pdf/YYYY/YYYY-MM-DD/`. The parsing will only process the content from DOA onwards (ignores table of contents and MP attendance). 
+This will get the PDFs from `src_hansard` where the Hansards are named as `DR-DDMMYYYYY.pdf` or `DN-DDMMYYYYY.pdf`. The files are stored in `parsed_pdf/YYYY/YYYY-MM-DD/`. The parsing will only process the content from DOA onwards (ignores table of contents and MP attendance).
+
+Run `get_categories.py` to analyse the table of contents (TOC) for level_1 classification later. This will output the file
+- categories.json
+
+The files are stored in `parsed_pdf/YYYY/YYYY-MM-DD/` too.
 
 Run `post_parsing_edits.py` to modify tables with known errors. This will modify `tables.json` in place.
 
@@ -67,6 +72,9 @@ The dates or files referenced is for Dewan Rakyat unless otherwise stated. Indee
 - KANDUNGAN will say "USUL-USUL" but in-text the title is usually "USUL"
 - Sometimes, USUL will somehow go under RANG UNDANG-UNDANG, and some categories will go before others, ignoring the TOC order.
 - 17072018 does not bold its categories.
+
+One should check `toc_mismatch.txt` after running `tabulate.py` for any discrepancies between the TOC and the actual text.
+- Sometimes, USUL will appear in TOC but not in-text as a `level_1`. Instead USUL will be part of a `level_2` under the `level_1` RANG UNDANG-UNDANG. This is expected behavior.
 
 ## On parsing authors and speeches
 - When parsing _JAWAPAN-JAWAPAN MENTERI BAGI PERTANYAAN-PERTANYAAN_ or _JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN_, an MP will be numbered at the start of the string and they will speak with the keyword "minta" without ":". For example:
