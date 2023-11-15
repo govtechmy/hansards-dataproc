@@ -1201,6 +1201,18 @@ def tabulate(hansard_date, house):
                     f"Expected TOC\n{category_string}\n\n"
                 )
 
+    # process attendance from parse_pdf
+    parsed_input_dir = f"parsed_pdf/{house}/{year}/{sortable_date}/"
+    with open(f"{parsed_input_dir}attendance.txt", "r") as f:
+        attendance_txt = f.read()
+
+    absent_text, attended_text = format_attendance(attendance_txt)
+
+    with open(f"{dir_path}absent.txt", "w") as f:
+        f.write(absent_text)
+    with open(f"{dir_path}attended.txt", "w") as f:
+        f.write(attended_text)
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
