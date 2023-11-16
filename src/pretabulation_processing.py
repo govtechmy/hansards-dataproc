@@ -193,13 +193,13 @@ def preprocess(hansard_date, house):
     year = hansard_date[-4:]
     output_dir_path = f"pretabulation/{house}/{year}/"
     if not os.path.isdir(output_dir_path):
-        os.mkdir(output_dir_path)
+        os.makedirs(output_dir_path, exist_ok=True)
     sortable_date = (
         f"{hansard_date[-4:]}-{hansard_date[2:4]}-{hansard_date[:2]}"  # YYYY-MM-DD
     )
     output_dir_path += f"{sortable_date}/"
     if not os.path.isdir(output_dir_path):
-        os.mkdir(output_dir_path)
+        os.makedirs(output_dir_path, exist_ok=True)
     # store the contents of the preprocessed text file in a list
     input_dir = f"parsed_pdf/{house}/{year}/{sortable_date}/"
     with open(f"{input_dir}plaintext.txt", "r") as f:

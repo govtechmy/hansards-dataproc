@@ -7,7 +7,7 @@ import pretabulation_processing
 import tabulate_hansard
 import edit_hansards
 
-# import post_parsing_edits
+import post_parsing_edits
 import get_categories
 
 import os
@@ -29,7 +29,7 @@ def rename_pdf_files(paths):
         )
         if match:
             # Extract day, month, year from the match groups
-            day, month, year = match.groups()
+            _, day, month, year = match.groups()
             # Format the new filename
             new_filename = f"dr_{year}-{month}-{day}.pdf"
             # Create a new 'upload' directory if it doesn't exist
@@ -188,9 +188,9 @@ if __name__ == "__main__":
     hansard_dates = [x.stem[3 : 3 + 8] for x in filenames]
     # preprocess()
     # parse_categories()
-    # post_parsing_edits.modify_tables()
+    # post_parsing_edits.post_parsing_edits()
     # pre_tabulate()
-    edit_hansards.edit_hansards()
+    # edit_hansards.edit_hansards()
     tabulate()
 
     # if all good, clean up by moving filenames to 'done' folder, and tabulated to tabulated_upload folder

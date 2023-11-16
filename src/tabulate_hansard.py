@@ -519,13 +519,13 @@ def tabulate(hansard_date, house):
     year = hansard_date[-4:]
     dir_path = f"tabulated/{house}/"
     if not os.path.isdir(dir_path):
-        os.mkdir(dir_path)
+        os.makedirs(dir_path, exist_ok=True)
     sortable_date = (
         f"{hansard_date[-4:]}-{hansard_date[2:4]}-{hansard_date[:2]}"  # YYYY-MM-DD
     )
     dir_path += f"{sortable_date}/"
     if not os.path.isdir(dir_path):
-        os.mkdir(dir_path)
+        os.makedirs(dir_path, exist_ok=True)
 
     # sometimes the level_2 in a Hansard is a level_1 in some other Hansards' TOC
     # this is a fundamentally unresolvable problem because we cannot detect the presence of underlines

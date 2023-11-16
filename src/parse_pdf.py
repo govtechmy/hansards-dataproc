@@ -36,7 +36,7 @@ def parse_hansard(hansard_date, house, root_dir):
     base_path = os.path.dirname(os.path.realpath(__file__))
     dir_path = f"{base_path}/parsed_pdf/{house}/{year}/"
     if not os.path.isdir(dir_path):
-        os.mkdir(dir_path)
+        os.makedirs(dir_path, exist_ok=True)
     sortable_date = (
         f"{hansard_date[-4:]}-{hansard_date[2:4]}-{hansard_date[:2]}"  # YYYY-MM-DD
     )
