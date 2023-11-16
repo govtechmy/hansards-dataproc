@@ -1,10 +1,11 @@
-"""Accepts PDF Hansards and produces four files as preprocessing.
+"""Accepts PDF Hansards and produces five files as preprocessing.
 
-The four files are:
+The five files are:
 1. plaintext.txt: raw text extracted from PDF
 2. bold.txt: 1 if bold, 0 otherwise. Whitespace characters as is
 3. italics.txt: 1 if italic, 0 otherwise. Whitespace characters as is
 4. tables.txt: json of tables
+5. attendance.txt: raw text from the attendance section (for DR-26072021 onwards)
 """
 
 import argparse
@@ -12,8 +13,11 @@ import re
 
 import pdfplumber
 import os
-from tqdm import tqdm
 import json
+import pandas as pd
+from tqdm import tqdm
+from pathlib import Path
+from config import ROOT_DATA_DIR
 
 
 def not_invisible_rect(obj):
@@ -26,7 +30,7 @@ def not_invisible_rect(obj):
     return not (min(obj["non_stroking_color"]) > 0.9)
 
 
-def parse_hansard(hansard_date, house, root_dir):
+def parse_hansard(hansard_date, house, root_dir=ROOT_DATA_DIR):
     print(f"Parsing {hansard_date} {house}")
     year = hansard_date[-4:]
     bold = []
@@ -44,17 +48,19 @@ def parse_hansard(hansard_date, house, root_dir):
     if not os.path.isdir(dir_path):
         os.mkdir(dir_path)
 
+    # only parse attendance list for DR-26072021 onwards
+    has_attendance = pd.to_datetime(sortable_date) >= pd.to_datetime("2021-07-26")
+
     doa_seen = False
     doa_idx = -1
-    with pdfplumber.open(root_dir / f"{house}-{hansard_date}.pdf") as pdf:
-        # with pdfplumber.open(f"{base_path}/src_hansard/new/DR-{hansard_date}.pdf") as pdf:
+    with pdfplumber.open(root_dir / f"{house.upper()}-{hansard_date}.pdf") as pdf:
         extract_attn_start = False
         attn_text = ""
         for idx, page in enumerate(tqdm(pdf.pages)):
             extracted = page.extract_text()
             if not doa_seen:
                 # extract attendance list before DOA section
-                if "ahli-ahli yang hadir" in extracted.lower():
+                if has_attendance and "ahli-ahli yang hadir" in extracted.lower():
                     extract_attn_start = True
                     attn_text += extracted
                     print("Ahli-Ahli Yang Hadir", page)
@@ -132,8 +138,9 @@ def parse_hansard(hansard_date, house, root_dir):
         f.write(spaced_italics)
     with open(dir_path + "tables.json", "w") as f:
         json.dump(tables, f, indent=4)
-    with open(dir_path + "attendance.txt", "w") as f:
-        f.write(attn_text)
+    if has_attendance:
+        with open(dir_path + "attendance.txt", "w") as f:
+            f.write(attn_text)
 
     # for global logging
     if tables:
@@ -146,6 +153,11 @@ if __name__ == "__main__":
     parser.add_argument(
         "hansard_date", help="hansard_date eg. 23052023", default="18092023", nargs="?"
     )
+    parser.add_argument(
+        "house",
+        help="parliament house. Possible values: 'dr' or 'dn'",
+        choices=["dr", "dn"],
+    )
     # Parse arguments
     args = parser.parse_args()
-    parse_hansard(args.hansard_date)
+    parse_hansard(args.hansard_date, args.house)

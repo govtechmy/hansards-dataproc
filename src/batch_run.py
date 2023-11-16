@@ -12,6 +12,7 @@ import tabulate_hansard
 import edit_hansards
 import post_parsing_edits
 import get_categories
+from config import ROOT_DATA_DIR
 
 
 def get_filenames_in_folder(folder_path_):
@@ -62,7 +63,7 @@ def parse_categories():
             os.remove(file)
     for hansard_date in tqdm(hansard_dates):
         try:
-            get_categories.get_categories(hansard_date, house, ROOT_DATA_DIR)
+            get_categories.get_categories(hansard_date, house)
         except:
             # write this filename to file
             with open("errors/TOC_errors.txt", "a") as f:
@@ -132,9 +133,6 @@ def tabulate():
 
 if __name__ == "__main__":
     # directory where raw hansards PDFs are stored (flat structure)
-    ROOT_DATA_DIR = Path(
-        "/Users/shenghan/Code/playground/notebooks/hansards/hansards-pdf-raw"
-    )
     house = "DR".upper()  # DR/DN
 
     # range of year
@@ -150,7 +148,7 @@ if __name__ == "__main__":
     # filenames = pd.concat(filenames)
 
     # single year
-    filenames = get_files_in_folder(ROOT_DATA_DIR, year=2009, house=house)
+    filenames = get_files_in_folder(ROOT_DATA_DIR, year=2022, house=house)
 
     hansard_dates = filenames["date"].dt.strftime("%d%m%Y").tolist()
     preprocess()

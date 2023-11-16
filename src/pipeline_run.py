@@ -9,6 +9,7 @@ import edit_hansards
 
 import post_parsing_edits
 import get_categories
+from config import ROOT_DATA_DIR, ROOT_PIPELINE_DIR
 
 import os
 import re
@@ -177,20 +178,19 @@ if __name__ == "__main__":
     # 3. Run all steps
     # 4. If all good, clean up
 
-    ROOT_DATA_DIR = Path.cwd().parent / "data"
     house = "DR"  # DR/DN
 
     # get list of new PDF files
-    filenames = get_filenames_in_folder(ROOT_DATA_DIR)
+    filenames = get_filenames_in_folder(ROOT_PIPELINE_DIR)
     # rename a copy for uploading to S3
     rename_pdf_files(filenames)
 
     hansard_dates = [x.stem[3 : 3 + 8] for x in filenames]
-    # preprocess()
-    # parse_categories()
-    # post_parsing_edits.post_parsing_edits()
-    # pre_tabulate()
-    # edit_hansards.edit_hansards()
+    preprocess()
+    parse_categories()
+    post_parsing_edits.post_parsing_edits()
+    pre_tabulate()
+    edit_hansards.edit_hansards()
     tabulate()
 
     # if all good, clean up by moving filenames to 'done' folder, and tabulated to tabulated_upload folder

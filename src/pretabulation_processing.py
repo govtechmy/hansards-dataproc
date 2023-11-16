@@ -289,6 +289,11 @@ if __name__ == "__main__":
     parser.add_argument(
         "hansard_date", help="hansard_date eg. 12102021", default="02032023", nargs="?"
     )
+    parser.add_argument(
+        "house",
+        help="parliament house. Possible values: 'dr' or 'dn'",
+        choices=["dr", "dn"],
+    )
     # Parse arguments
     args = parser.parse_args()
-    preprocess(args.hansard_date)
+    preprocess(args.hansard_date, args.house)

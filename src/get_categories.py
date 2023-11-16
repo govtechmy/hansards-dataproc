@@ -8,6 +8,7 @@ import re
 import pandas as pd
 import pdfplumber
 import os
+from pathlib import Path
 
 
 def upper_lower_ratio(text):
