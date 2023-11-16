@@ -3,10 +3,11 @@
 import argparse
 import os
 import re
-from thefuzz import process
 import json
 import csv
-from datetime import datetime, timedelta
+import pandas as pd
+from thefuzz import process
+from datetime import datetime
 
 
 def more_than_30_minutes_past(time_str1, time_str2):
@@ -1202,16 +1203,18 @@ def tabulate(hansard_date, house):
                 )
 
     # process attendance from parse_pdf
-    parsed_input_dir = f"parsed_pdf/{house}/{year}/{sortable_date}/"
-    with open(f"{parsed_input_dir}attendance.txt", "r") as f:
-        attendance_txt = f.read()
+    has_attendance = pd.to_datetime(sortable_date) >= pd.to_datetime("2021-07-26")
+    if has_attendance:
+        parsed_input_dir = f"parsed_pdf/{house}/{year}/{sortable_date}/"
+        with open(f"{parsed_input_dir}attendance.txt", "r") as f:
+            attendance_txt = f.read()
 
-    absent_text, attended_text = format_attendance(attendance_txt)
+        absent_text, attended_text = format_attendance(attendance_txt)
 
-    with open(f"{dir_path}absent.txt", "w") as f:
-        f.write(absent_text)
-    with open(f"{dir_path}attended.txt", "w") as f:
-        f.write(attended_text)
+        with open(f"{dir_path}absent.txt", "w") as f:
+            f.write(absent_text)
+        with open(f"{dir_path}attended.txt", "w") as f:
+            f.write(attended_text)
 
 
 if __name__ == "__main__":
