@@ -9,6 +9,7 @@ def replace(
     new_text_snippet,
     new_bold_snippet,
     new_italics_snippet,
+    house="DR",
 ):
     if new_bold_snippet == "all":
         new_bold_snippet = re.sub(r"\S", "1", new_text_snippet)
@@ -42,7 +43,7 @@ def replace(
     sortable_date = (
         f"{hansard_date[-4:]}-{hansard_date[2:4]}-{hansard_date[:2]}"  # YYYY-MM-DD
     )
-    dir_path = f"pretabulation/{year}/{sortable_date}/"
+    dir_path = f"pretabulation/{house}/{year}/{sortable_date}/"
     try:
         with open(dir_path + "plaintext.txt", "r") as f:
             text = f.readlines()

@@ -9,7 +9,7 @@ import edit_hansards
 
 import post_parsing_edits
 import get_categories
-from config import ROOT_DATA_DIR, ROOT_PIPELINE_DIR
+from config import INPUT_PIPELINE_DIR, BASE_PATH
 
 import os
 import re
@@ -50,7 +50,7 @@ def preprocess():
         f.write("")
     for hansard_date in tqdm(hansard_dates):
         try:
-            parse_pdf.parse_hansard(hansard_date, house, ROOT_DATA_DIR)
+            parse_pdf.parse_hansard(hansard_date, house)
         except Exception as e:
             print(e)
             # write this filename to file
@@ -143,7 +143,7 @@ def tabulate():
 def clean_up():
     # copy files from 'new' folder to 'done' folder
     for filename in filenames:
-        shutil.copy(filename, ROOT_DATA_DIR / "done" / filename.name)
+        shutil.move(filename, INPUT_PIPELINE_DIR.parent / "done" / filename.name)
 
     # copy tabulated files to 'tabulated_upload' folder
     for hansard_date in hansard_dates:
@@ -151,20 +151,23 @@ def clean_up():
 
         # copy results.csv
         shutil.copy(
-            Path.cwd() / "tabulated" / f"{new_hansard_date}" / "result.csv",
-            ROOT_DATA_DIR / "tabulated_upload" / f"dr_{new_hansard_date}.csv",
+            Path.cwd() / "tabulated" / house / f"{new_hansard_date}" / "result.csv",
+            INPUT_PIPELINE_DIR.parent
+            / "tabulated_upload"
+            / "new"
+            / f"dr_{new_hansard_date}.csv",
         )
         # copy attendance files
         shutil.copy(
-            Path.cwd() / "tabulated" / f"{new_hansard_date}" / "absent.txt",
-            Path.cwd()
+            Path.cwd() / "tabulated" / house / f"{new_hansard_date}" / "absent.txt",
+            INPUT_PIPELINE_DIR.parent
             / "tabulated_upload"
             / "new"
             / f"dr_absent_{new_hansard_date}.txt",
         )
         shutil.copy(
-            Path.cwd() / "tabulated" / f"{new_hansard_date}" / "attended.txt",
-            Path.cwd()
+            Path.cwd() / "tabulated" / house / f"{new_hansard_date}" / "attended.txt",
+            INPUT_PIPELINE_DIR.parent
             / "tabulated_upload"
             / "new"
             / f"dr_attended_{new_hansard_date}.txt",
@@ -181,7 +184,7 @@ if __name__ == "__main__":
     house = "DR"  # DR/DN
 
     # get list of new PDF files
-    filenames = get_filenames_in_folder(ROOT_PIPELINE_DIR)
+    filenames = get_filenames_in_folder(INPUT_PIPELINE_DIR)
     # rename a copy for uploading to S3
     rename_pdf_files(filenames)
 

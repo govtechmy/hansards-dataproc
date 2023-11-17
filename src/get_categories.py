@@ -9,6 +9,7 @@ import pandas as pd
 import pdfplumber
 import os
 from pathlib import Path
+from config import INPUT_PIPELINE_DIR, BASE_PATH
 
 
 def upper_lower_ratio(text):
@@ -22,7 +23,7 @@ def upper_lower_ratio(text):
     return upper / lower
 
 
-def get_categories(hansard_date, house, root_dir):
+def get_categories(hansard_date, house, root_dir=INPUT_PIPELINE_DIR):
     print(f"Get categories: {hansard_date} {house}")
     year = hansard_date[-4:]
     bold = []
@@ -34,7 +35,6 @@ def get_categories(hansard_date, house, root_dir):
     )
     logged_long_toc = False
     kandungan_seen = False
-    base_path = os.path.dirname(os.path.realpath(__file__))
     with pdfplumber.open(root_dir / f"{house}-{hansard_date}.pdf") as pdf:
         for idx, page in enumerate(pdf.pages):
             # skip until TOC
@@ -106,21 +106,18 @@ def get_categories(hansard_date, house, root_dir):
         len(italics) == 0
     ), f"Not all italic characters were processed: {len(italics)}"
 
-    dir_path = f"{base_path}/parsed_pdf/{house}/{year}/"
-    if not os.path.isdir(dir_path):
-        os.mkdir(dir_path)
-    dir_path += f"{sortable_date}/"
-    if not os.path.isdir(dir_path):
-        os.mkdir(dir_path)
-    dir2_path = dir_path + f"toc_analysis/"
-    if not os.path.isdir(dir2_path):
-        os.mkdir(dir2_path)
+    dir_path = BASE_PATH / "parsed_pdf" / house / year
+    dir_path.mkdir(parents=True, exist_ok=True)
+    dir_path /= f"{sortable_date}"
+    dir_path.mkdir(parents=True, exist_ok=True)
+    dir2_path = dir_path / "toc_analysis"
+    dir2_path.mkdir(parents=True, exist_ok=True)
 
-    with open(dir2_path + "plaintext.txt", "w") as f:
+    with open(dir2_path / "plaintext.txt", "w") as f:
         f.write(text)
-    with open(dir2_path + "bold.txt", "w") as f:
+    with open(dir2_path / "bold.txt", "w") as f:
         f.write(spaced_bold)
-    with open(dir2_path + "italics.txt", "w") as f:
+    with open(dir2_path / "italics.txt", "w") as f:
         f.write(spaced_italics)
 
     text = re.sub(
@@ -174,7 +171,7 @@ def get_categories(hansard_date, house, root_dir):
     categories = list(set(categories))
     categories.sort()
     # dump to json
-    with open(dir_path + "categories.json", "w") as f:
+    with open(dir_path / "categories.json", "w") as f:
         json.dump(categories, f, indent=4)
 
 

@@ -17,7 +17,7 @@ import json
 import pandas as pd
 from tqdm import tqdm
 from pathlib import Path
-from config import ROOT_DATA_DIR
+from config import INPUT_PIPELINE_DIR, BASE_PATH
 
 
 def not_invisible_rect(obj):
@@ -30,26 +30,27 @@ def not_invisible_rect(obj):
     return not (min(obj["non_stroking_color"]) > 0.9)
 
 
-def parse_hansard(hansard_date, house, root_dir=ROOT_DATA_DIR):
+def parse_hansard(hansard_date, house, root_dir=INPUT_PIPELINE_DIR):
     print(f"Parsing {hansard_date} {house}")
     year = hansard_date[-4:]
     bold = []
     italics = []
     tables = []
     text = ""
-    base_path = os.path.dirname(os.path.realpath(__file__))
-    dir_path = f"{base_path}/parsed_pdf/{house}/{year}/"
-    if not os.path.isdir(dir_path):
-        os.makedirs(dir_path, exist_ok=True)
+    dir_path = BASE_PATH / "parsed_pdf" / house / year
+    dir_path.mkdir(parents=True, exist_ok=True)
     sortable_date = (
         f"{hansard_date[-4:]}-{hansard_date[2:4]}-{hansard_date[:2]}"  # YYYY-MM-DD
     )
-    dir_path += f"{sortable_date}/"
-    if not os.path.isdir(dir_path):
-        os.mkdir(dir_path)
+    dir_path = dir_path / sortable_date
+    dir_path.mkdir(parents=True, exist_ok=True)
 
     # only parse attendance list for DR-26072021 onwards
-    has_attendance = pd.to_datetime(sortable_date) >= pd.to_datetime("2021-07-26")
+    # DN attendance parsing not supported
+    has_attendance = (
+        pd.to_datetime(sortable_date) >= pd.to_datetime("2021-07-26")
+        and house.upper() == "DR"
+    )
 
     doa_seen = False
     doa_idx = -1
@@ -130,16 +131,16 @@ def parse_hansard(hansard_date, house, root_dir=ROOT_DATA_DIR):
         len(italics) == 0
     ), f"Not all italic characters were processed: {len(italics)}"
 
-    with open(dir_path + "plaintext.txt", "w") as f:
+    with open(str(dir_path / "plaintext.txt"), "w") as f:
         f.write(text)
-    with open(dir_path + "bold.txt", "w") as f:
+    with open(str(dir_path / "bold.txt"), "w") as f:
         f.write(spaced_bold)
-    with open(dir_path + "italics.txt", "w") as f:
+    with open(str(dir_path / "italics.txt"), "w") as f:
         f.write(spaced_italics)
-    with open(dir_path + "tables.json", "w") as f:
+    with open(str(dir_path / "tables.json"), "w") as f:
         json.dump(tables, f, indent=4)
     if has_attendance:
-        with open(dir_path + "attendance.txt", "w") as f:
+        with open(str(dir_path / "attendance.txt"), "w") as f:
             f.write(attn_text)
 
     # for global logging
