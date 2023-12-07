@@ -1,0 +1,281 @@
+[
+    [
+        6,
+        5,
+        [
+            [
+                [
+                    "Bil.",
+                    "Balai Polis",
+                    "Peruntukan   \n(RM)",
+                    null
+                ],
+                [
+                    null,
+                    null,
+                    "2018",
+                    "2019"
+                ],
+                [
+                    "1.",
+                    "Balai Polis Batu Ferringhi",
+                    "-",
+                    "19,000.00"
+                ],
+                [
+                    "2.",
+                    "Balai Polis Tanjong Tokong",
+                    "-",
+                    "19,000.00"
+                ],
+                [
+                    "3.",
+                    "Balai Polis Pulau Tikus",
+                    "-",
+                    "18,500.00"
+                ],
+                [
+                    "4.",
+                    "Balai Polis Kg. Baru",
+                    "-",
+                    "40,000.00"
+                ],
+                [
+                    "5.",
+                    "Balai Polis Bukit Bendera",
+                    "-",
+                    "20,000.00"
+                ],
+                [
+                    "6.",
+                    "FRU (Unit 3)",
+                    "80,000.00",
+                    "1,320,000.00"
+                ],
+                [
+                    "JUMLAH",
+                    null,
+                    "80,000.00",
+                    "1,436,500.00"
+                ]
+            ]
+        ]
+    ],
+    [
+        7,
+        6,
+        [
+            [
+                [
+                    "Bil.",
+                    "Balai Polis",
+                    "Peruntukan Pembaikan \nTahun 2020 (RM)"
+                ],
+                [
+                    "1.",
+                    "Balai Polis Batu Ferringhi",
+                    "50,000.00"
+                ],
+                [
+                    "2.",
+                    "Balai Polis Tanjong Tokong",
+                    "110,000.00"
+                ],
+                [
+                    "3.",
+                    "Balai Polis Pulau Tikus",
+                    "27,000.00"
+                ],
+                [
+                    "4.",
+                    "Balai Polis Kg. Baru",
+                    "80,000.00"
+                ],
+                [
+                    "5.",
+                    "Balai Polis Bukit Bendera",
+                    "-"
+                ],
+                [
+                    "6.",
+                    "FRU (Unit 3)",
+                    "990,000.00"
+                ],
+                [
+                    "JUMLAH",
+                    null,
+                    "1,257,000.00"
+                ]
+            ]
+        ]
+    ],
+    [
+        9,
+        8,
+        [
+            [
+                [
+                    "BALAI POLIS \n(BP)",
+                    "IBU PEJABAT POLIS DAERAH TIMUR LAUT",
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ],
+                [
+                    null,
+                    "PULAU \nTIKUS",
+                    "KAMPUNG \n    B ARU",
+                    "TANJONG \n    TOKONG",
+                    "BATU \nFERRINGHI",
+                    "BUKIT \nBENDERA",
+                    "JUMLAH"
+                ],
+                [
+                    "PANGKAT",
+                    "PERJAWATAN",
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ],
+                [
+                    "INSPEKTOR",
+                    "1",
+                    "0",
+                    "1",
+                    "1",
+                    "0",
+                    "3"
+                ],
+                [
+                    "SUB-INSPEKTOR",
+                    "1",
+                    "1",
+                    "0",
+                    "0",
+                    "0",
+                    "2"
+                ],
+                [
+                    "SARJAN MEJAR",
+                    "1",
+                    "",
+                    "1",
+                    "1",
+                    "1",
+                    "4"
+                ],
+                [
+                    "SARJAN/SARJAN \nMEJAR",
+                    "4",
+                    "2",
+                    "2",
+                    "2",
+                    "1",
+                    "11"
+                ],
+                [
+                    "KOPERAL",
+                    "25",
+                    "6",
+                    "2",
+                    "2",
+                    "2",
+                    "37"
+                ],
+                [
+                    "KONSTABEL/LANS \nKOPERAL/KOPERAL",
+                    "111",
+                    "39",
+                    "37",
+                    "30",
+                    "15",
+                    "232"
+                ],
+                [
+                    "KONSTABEL \nSOKONGAN/LANS \nKOPERAL \nSOKONGAN/KOPERAL \nSOKONGAN",
+                    "12",
+                    "1",
+                    "0",
+                    "0",
+                    "0",
+                    "13"
+                ],
+                [
+                    "JUMLAH UNIFORM",
+                    "155",
+                    "49",
+                    "43",
+                    "36",
+                    "19",
+                    "302"
+                ]
+            ],
+            [
+                [
+                    "PASUKAN SIMPANAN PERSEKUTUAN UNIT 3 PULAU PINANG  \nBERAKHIR PADA 31 MEI 2020",
+                    null
+                ],
+                [
+                    "PANGKAT",
+                    "PERJAWATAN"
+                ],
+                [
+                    "SUPERINTENDEN",
+                    "1"
+                ],
+                [
+                    "DEPUTI SUPERINTENDEN",
+                    "1"
+                ],
+                [
+                    "ASISTAN SUPERINTENDEN POLIS",
+                    "4"
+                ],
+                [
+                    "INSPEKTOR",
+                    "7"
+                ],
+                [
+                    "SUB-INSPEKTOR",
+                    "0"
+                ],
+                [
+                    "SARJAN MEJAR",
+                    "4"
+                ],
+                [
+                    "SARJAN / SARJAN MEJAR",
+                    "21"
+                ],
+                [
+                    "KOPERAL",
+                    "68"
+                ],
+                [
+                    "KONSTABEL / LANS KOPERAL / KOPERAL",
+                    "218"
+                ],
+                [
+                    "SARJAN SOKONGAN",
+                    "0"
+                ],
+                [
+                    "KOPERAL SOKONGAN",
+                    "0"
+                ],
+                [
+                    "KONSTABEL  SOKONGAN  /  LANS  KOPERAL \nSOKONGAN / KOPERAL SOKONGAN",
+                    "0"
+                ],
+                [
+                    "JUMLAH PASUKAN SIMPANAN PERSEKUTUAN \nUNIT 3 PULAU PINANG BERAKHIR PADA 31 MEI \n2020",
+                    "324"
+                ]
+            ]
+        ]
+    ]
+]

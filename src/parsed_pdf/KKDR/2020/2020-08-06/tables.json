@@ -1,0 +1,535 @@
+[
+    [
+        11,
+        10,
+        [
+            [
+                [
+                    "BIL",
+                    "NAMA SEKOLAH",
+                    "TAHUN 2018 \n(RM)",
+                    "TAHUN 2019 \n(RM)"
+                ],
+                [
+                    "1",
+                    "SMK Pendidikan Khas Persekutuan (P)",
+                    "-",
+                    "-"
+                ],
+                [
+                    "2",
+                    "SMK Tanjong Bunga",
+                    "20,000",
+                    "30,000"
+                ],
+                [
+                    "3",
+                    "SMK (P) St George",
+                    "50,000",
+                    "150,000"
+                ],
+                [
+                    "4",
+                    "SMK Convent Pulau Tikus",
+                    "100,000",
+                    "150,000"
+                ],
+                [
+                    "5",
+                    "SMK Padang Polo",
+                    "20,000",
+                    "20,000"
+                ],
+                [
+                    "6",
+                    "SMK Tunku Puan Habsah",
+                    "20,000",
+                    "50,000"
+                ],
+                [
+                    "7",
+                    "SMK Perempuan China Pulau Pinang",
+                    "285,000",
+                    "80,000"
+                ],
+                [
+                    "8",
+                    "SK Batu Feringghi",
+                    "20,000",
+                    "70,000"
+                ],
+                [
+                    "9",
+                    "SK Tanjong Bunga",
+                    "20,000",
+                    "40,000"
+                ],
+                [
+                    "10",
+                    "SK Tanjong Tokong",
+                    "20,000",
+                    "28,500"
+                ],
+                [
+                    "11",
+                    "SK Padang Tembak",
+                    "185,000",
+                    "110,000"
+                ],
+                [
+                    "12",
+                    "SK St Xavier",
+                    "100,000",
+                    "30,000"
+                ],
+                [
+                    "13",
+                    "SK Jalan Residensi",
+                    "20,000",
+                    "78,000"
+                ],
+                [
+                    "14",
+                    "SK Dato Kramat",
+                    "20,000",
+                    "65,000"
+                ],
+                [
+                    "15",
+                    "SK Francis Light",
+                    "80,000",
+                    "38,000"
+                ],
+                [
+                    "16",
+                    "SK Convent Pulau Tikus",
+                    "20,000",
+                    "40,000"
+                ],
+                [
+                    "17",
+                    "SK St Xavier Cawangan",
+                    "150,000",
+                    "30,000"
+                ],
+                [
+                    "18",
+                    "SK Pendidikan Khas Persekutuan",
+                    "-",
+                    "-"
+                ],
+                [
+                    "19",
+                    "SJK (Cina) Pai Chai",
+                    "40,000",
+                    "20,000"
+                ],
+                [
+                    "20",
+                    "SJK (Cina) Poay Wah",
+                    "40,000",
+                    "25,000"
+                ],
+                [
+                    "21",
+                    "SJK (Cina) Hun Bin",
+                    "150,000",
+                    "85,000"
+                ],
+                [
+                    "22",
+                    "SJK (Cina) Phor Tay",
+                    "65,000",
+                    "55,000"
+                ],
+                [
+                    "23",
+                    "SJK (Cina) Perempuan China",
+                    "180,000",
+                    "120,000"
+                ],
+                [
+                    "24",
+                    "SJK (Cina) Shang Wu",
+                    "100,000",
+                    "120,000"
+                ],
+                [
+                    "25",
+                    "SJK (Tamil) Azad",
+                    "50,000",
+                    "30,000"
+                ],
+                [
+                    "26",
+                    "SJK (Tamil) Rajaji",
+                    "30,000",
+                    "50,000"
+                ],
+                [
+                    "JUMLAH",
+                    null,
+                    "1,785,000.00",
+                    "1,514,500.00"
+                ]
+            ],
+            [
+                [
+                    "BIL",
+                    "NAMA SEKOLAH",
+                    "TAHUN 2020 (RM)"
+                ],
+                [
+                    "1",
+                    "SMK Pendidikan Khas Persekutuan (P)",
+                    "269,463"
+                ],
+                [
+                    "2",
+                    "SMK Tanjong Bunga",
+                    "25,000"
+                ],
+                [
+                    "3",
+                    "SMK (P) St George",
+                    "220,000"
+                ],
+                [
+                    "4",
+                    "SMK Convent Pulau Tikus",
+                    "Dalam proses penilaian agihan"
+                ],
+                [
+                    "5",
+                    "SMK Padang Polo",
+                    "110,000"
+                ],
+                [
+                    "6",
+                    "SMK Tunku Puan Habsah",
+                    "100,000"
+                ],
+                [
+                    "7",
+                    "SMK Perempuan China Pulau Pinang",
+                    "Dalam proses penilaian agihan"
+                ],
+                [
+                    "8",
+                    "SK Batu Feringghi",
+                    "50,000"
+                ],
+                [
+                    "9",
+                    "SK Tanjong Bunga",
+                    "56,500"
+                ],
+                [
+                    "10",
+                    "SK Tanjong Tokong",
+                    "140,000"
+                ],
+                [
+                    "11",
+                    "SK Padang Tembak",
+                    "50,000"
+                ],
+                [
+                    "12",
+                    "SK St Xavier",
+                    "Dalam proses penilaian agihan"
+                ],
+                [
+                    "13",
+                    "SK Jalan Residensi",
+                    "60,000"
+                ]
+            ]
+        ]
+    ],
+    [
+        12,
+        11,
+        [
+            [
+                [
+                    "BIL",
+                    "NAMA SEKOLAH",
+                    "TAHUN 2020 (RM)"
+                ],
+                [
+                    "14",
+                    "SK Dato Kramat",
+                    "20,000"
+                ],
+                [
+                    "15",
+                    "SK Francis Light",
+                    "60,000"
+                ],
+                [
+                    "16",
+                    "SK Convent Pulau Tikus",
+                    "60,000"
+                ],
+                [
+                    "17",
+                    "SK St Xavier Cawangan",
+                    "Dalam proses penilaian agihan"
+                ],
+                [
+                    "18",
+                    "SK Pendidikan Khas Persekutuan",
+                    "67,200"
+                ],
+                [
+                    "19",
+                    "SJK (Cina) Pai Chai",
+                    "Dalam proses penilaian agihan"
+                ],
+                [
+                    "20",
+                    "SJK (Cina) Poay Wah",
+                    "Dalam proses penilaian agihan"
+                ],
+                [
+                    "21",
+                    "SJK (Cina) Hun Bin",
+                    "Dalam proses penilaian agihan"
+                ],
+                [
+                    "22",
+                    "SJK (Cina) Phor Tay",
+                    "Dalam proses penilaian agihan"
+                ],
+                [
+                    "23",
+                    "SJK (Cina) Perempuan China",
+                    "Dalam proses penilaian agihan"
+                ],
+                [
+                    "24",
+                    "SJK (Cina) Shang Wu",
+                    "Dalam proses penilaian agihan"
+                ],
+                [
+                    "25",
+                    "SJK (Tamil) Azad",
+                    "Dalam proses penilaian agihan"
+                ],
+                [
+                    "26",
+                    "SJK (Tamil) Rajaji",
+                    "Dalam proses penilaian agihan"
+                ],
+                [
+                    "",
+                    "JUMLAH",
+                    "1,348,163.00"
+                ]
+            ],
+            [
+                [
+                    "BIL.",
+                    "NAMA SEKOLAH",
+                    "JUMLAH MBK \nMENERIMA EMK"
+                ],
+                [
+                    "1",
+                    "SK Tanjong Tokong",
+                    "2"
+                ],
+                [
+                    "2",
+                    "SK Tanjung Bunga",
+                    "23"
+                ],
+                [
+                    "3",
+                    "SK Batu Feringghi",
+                    "2"
+                ],
+                [
+                    "4",
+                    "SK Padang Tembak",
+                    "1"
+                ],
+                [
+                    "5",
+                    "SK St Xavier Cawangan",
+                    "2"
+                ],
+                [
+                    "6",
+                    "SK Francis Light",
+                    "16"
+                ],
+                [
+                    "7",
+                    "SK St Xavier",
+                    "8"
+                ],
+                [
+                    "8",
+                    "SK Dato Kramat",
+                    "2"
+                ],
+                [
+                    "9",
+                    "SJKC Hun Bin",
+                    "2"
+                ],
+                [
+                    "10",
+                    "SJKC Poay Wah",
+                    "1"
+                ],
+                [
+                    "11",
+                    "SJKC Shang Wu",
+                    "2"
+                ],
+                [
+                    "12",
+                    "SJKC Phor Tay",
+                    "4"
+                ],
+                [
+                    "13",
+                    "SK Pendidikan Khas Persekutuan Pulau Pinang",
+                    "27"
+                ],
+                [
+                    "14",
+                    "SMK Pendidikan Khas Persekutuan Pulau Pinang",
+                    "109"
+                ],
+                [
+                    "15",
+                    "SMK Tanjong Bunga",
+                    "27"
+                ],
+                [
+                    "16",
+                    "SMK Phor Tay",
+                    "37"
+                ],
+                [
+                    "17",
+                    "SMJK Perempuan China Pulau Pinang",
+                    "1"
+                ],
+                [
+                    "18",
+                    "SMK (P) St George",
+                    "4"
+                ],
+                [
+                    "19",
+                    "SMK Convent Pulau Tikus",
+                    "1"
+                ],
+                [
+                    "20",
+                    "SMK Padang Polo",
+                    "125"
+                ],
+                [
+                    "21",
+                    "SMK Tunku Puan Habsah",
+                    "3"
+                ],
+                [
+                    "JUMLAH",
+                    null,
+                    "399"
+                ]
+            ],
+            [
+                [
+                    "BIL.",
+                    "NAMA SEKOLAH",
+                    "BIL. MBK \nYANG \nMENERIMA \nRMT"
+                ],
+                [
+                    "1",
+                    "Sekolah Jenis Kebangsaan (Cina) Hun Bin",
+                    "2"
+                ],
+                [
+                    "2",
+                    "Sekolah Jenis Kebangsaan (Cina) Phor Tay",
+                    "5"
+                ],
+                [
+                    "3",
+                    "Sekolah Jenis Kebangsaan (Cina) Poay Wah",
+                    "1"
+                ],
+                [
+                    "4",
+                    "Sekolah Jenis Kebangsaan (Cina) Shang Wu",
+                    "2"
+                ]
+            ]
+        ]
+    ],
+    [
+        13,
+        12,
+        [
+            [
+                [
+                    "5",
+                    "Sekolah Kebangsaan Batu Feringghi",
+                    "2"
+                ],
+                [
+                    "6",
+                    "Sekolah Kebangsaan Dato Kramat",
+                    "2"
+                ],
+                [
+                    "7",
+                    "Sekolah Kebangsaan Francis Light",
+                    "17"
+                ],
+                [
+                    "8",
+                    "Sekolah Kebangsaan Padang Tembak",
+                    "2"
+                ],
+                [
+                    "9",
+                    "Sekolah Kebangsaan St Xavier",
+                    "8"
+                ],
+                [
+                    "10",
+                    "Sekolah Kebangsaan St Xavier Cawangan",
+                    "2"
+                ],
+                [
+                    "11",
+                    "Sekolah Kebangsaan Tan Sri P.Ramlee",
+                    "40"
+                ],
+                [
+                    "12",
+                    "Sekolah Kebangsaan Tanjong Tokong",
+                    "2"
+                ],
+                [
+                    "13",
+                    "Sekolah Kebangsaan Tanjung Bunga",
+                    "23"
+                ],
+                [
+                    "",
+                    "JUMLAH",
+                    "108"
+                ]
+            ]
+        ]
+    ]
+]
