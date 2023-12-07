@@ -13,8 +13,9 @@ def is_header(text):
     # returns the page number if it is the following form, else None
     # DR.28.3.2023 1
     # 2                                                               DR 8.3.2018
-    # DR 8.3.2018                                                                  1
-    return re.fullmatch(r"[ .\d]*[D][R|N][ .\d]*\n", text)
+    # DR 8.3.2018
+    # 2 KKDR.9.10.2023                                                                 1
+    return re.fullmatch(r"[ .\d]*(KK)?[D][R|N][ .\d]*\n", text)
 
 
 def get_page_number(header_text):
@@ -83,6 +84,7 @@ def format_table(text, bold, italics, table, hansard_date):
         # find the row in the text corresponding to this anchor
         anchor_idx = space_stripped_text.index(spaced_stripped_candidate_anchor)
         break
+
     if anchor_idx == -1:
         # try again but now allow duplicates (the duplicated row can be in the next table, which is no problem)
         for idx in range(len(table_text_rows)):
@@ -219,7 +221,7 @@ def preprocess(hansard_date, house):
         wrapped_tables_of_page = json.load(f)
 
     # 23032022 has highlighted misidentified table
-    if hansard_date in ["23032022", "25102017"]:
+    if hansard_date in ["23032022", "25102017"] and house.upper() == "DR":
         wrapped_tables_of_page = []
     # the items are page number, page number since DOA, and tables
     tables_of_page = [page[-1] for page in wrapped_tables_of_page]
@@ -227,8 +229,8 @@ def preprocess(hansard_date, house):
     for _tables in tables_of_page:
         tables += _tables
 
-    # 051022021 has vertical cells in its third table, need reassignment
-    if hansard_date == "05102021":
+    # 05102021 has vertical cells in its third table, need reassignment
+    if hansard_date == "05102021" and house.upper() == "DR":
         with open("edit_05102021.json", "r") as f:
             edit_05102021 = json.load(f)
         tables[3] = edit_05102021

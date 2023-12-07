@@ -17,7 +17,7 @@ import json
 import pandas as pd
 from tqdm import tqdm
 from pathlib import Path
-from config import INPUT_PIPELINE_DIR, BASE_PATH
+from config import DEFAULT_DATA_DIR, BASE_PATH
 
 
 def not_invisible_rect(obj):
@@ -30,7 +30,7 @@ def not_invisible_rect(obj):
     return not (min(obj["non_stroking_color"]) > 0.9)
 
 
-def parse_hansard(hansard_date, house, root_dir=INPUT_PIPELINE_DIR):
+def parse_hansard(hansard_date, house, source_dir=DEFAULT_DATA_DIR):
     print(f"Parsing {hansard_date} {house}")
     year = hansard_date[-4:]
     bold = []
@@ -54,7 +54,7 @@ def parse_hansard(hansard_date, house, root_dir=INPUT_PIPELINE_DIR):
 
     doa_seen = False
     doa_idx = -1
-    with pdfplumber.open(root_dir / f"{house.upper()}-{hansard_date}.pdf") as pdf:
+    with pdfplumber.open(source_dir / f"{house.upper()}-{hansard_date}.pdf") as pdf:
         extract_attn_start = False
         attn_text = ""
         for idx, page in enumerate(tqdm(pdf.pages)):
@@ -159,6 +159,13 @@ if __name__ == "__main__":
         help="parliament house. Possible values: 'dr' or 'dn'",
         choices=["dr", "dn"],
     )
+    # optional directory argument
+    parser.add_argument(
+        "--source_dir",
+        help="directory to Hansard PDFs",
+        default=DEFAULT_DATA_DIR,
+        nargs="?",
+    )
     # Parse arguments
     args = parser.parse_args()
-    parse_hansard(args.hansard_date, args.house)
+    parse_hansard(args.hansard_date, args.house, args.source_dir)

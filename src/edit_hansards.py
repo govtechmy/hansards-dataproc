@@ -72,7 +72,100 @@ def replace(
         print(f"{hansard_date} not found, skipping")
 
 
-def edit_hansards():
+def edit_hansards(house):
+    if house == "DR":
+        edit_dr_hansards()
+    elif house == "DN":
+        pass
+        # edit_dn_hansards()
+    elif house == "KKDR":
+        edit_kk_hansards(house)
+
+
+def edit_kk_hansards(house):
+    replace(
+        "02122021",
+        "Pertua, kalau saya hendak buatDato Sri Alexander Nanta Linggi: Tuan Yang di-\n",
+        "",
+        "none",
+        "none",
+        house=house,
+    )
+    replace(
+        "15062023",
+        "Timbalan Menteri Sumber Asli, Alam Sekitar dan Perubahan Iklim, Dato’\n",
+        "Timbalan Menteri Sumber Asli, Alam Sekitar dan Perubahan Iklim [Dato'\n",
+        "all",
+        "none",
+        house=house,
+    )
+    replace(
+        "15062023",
+        "Sri Huang Tiong Sii: Terima kasih Tuan Yang Di-Pertua dan terima kasih Yang\n",
+        "Sri Huang Tiong Sii]: Terima kasih Tuan Yang Di-Pertua dan terima kasih Yang\n",
+        "111 11111 11111 11111 000000 00000 0000 0000 000000000 000 000000 00000 0000\n",
+        "none",
+        house=house,
+    )
+    replace(
+        "15062023",
+        "Timbalan Menteri Sumber Manusia, Tuan Mustapha @ Mohd Yunus bin\n",
+        "Timbalan Menteri Sumber Manusia [Tuan Mustapha @ Mohd Yunus bin\n",
+        "all",
+        "none",
+        house=house,
+    )
+    replace(
+        "15062023",
+        "Sakmud: Terima kasih Tuan Yang di-Pertua. Bismillahi Rahmani Rahim,\n",
+        "Sakmud]: Terima kasih Tuan Yang di-Pertua. Bismillahi Rahmani Rahim,\n",
+        "11111111 000000 00000 0000 0000 0000000000 0000000000 0000000 000000\n",
+        "00000000 000000 00000 0000 0000 0000000000 1111111111 1111111 111111\n",
+        house=house,
+    )
+    replace(
+        "15062023",
+        "Sakmud: Almarhum...\n",
+        "Sakmud]: Almarhum...\n",
+        "11111111 00000000000\n",
+        "none",
+        house=house,
+    )
+    replace(
+        "15062023",
+        "Sakmud: Okey, jadi daripada peringkat Kementerian Sumber Manusia memang kita\n",
+        "Sakmud]: Okey, jadi daripada peringkat Kementerian Sumber Manusia memang kita\n",
+        "11111111 00000 0000 00000000 000000000 00000000000 000000 0000000 000000 0000\n",
+        "none",
+        house=house,
+    )
+    replace(
+        "27112019",
+        "Timbalan Menteri Kewangan (Dato’ Haji Amiruddin bin Hamzah]: Terima kasih Tuan\n",
+        "Timbalan Menteri Kewangan [Dato’ Haji Amiruddin bin Hamzah]: Terima kasih Tuan\n",
+        "11111111 1111111 11111111 111111 1111 111111111 111 11111111 000000 00000 0000\n",
+        "none",
+        house=house,
+    )
+    replace(
+        "12062023",
+        "Timbalan Menteri Dalam Negeri, Datuk Seri Dr. Shamsul Anuar bin\n",
+        "Timbalan Menteri Dalam Negeri [Datuk Seri Dr. Shamsul Anuar bin\n",
+        "all",
+        "none",
+        house=house,
+    )
+    replace(
+        "12062023",
+        "Nasarah: Terima kasih Tuan Yang di-Pertua, terima Yang Berhormat Mersing.\n",
+        "Nasarah]: Terima kasih Tuan Yang di-Pertua, terima Yang Berhormat Mersing.\n",
+        "111111111 000000 00000 0000 0000 0000000000 000000 0000 000000000 00000000\n",
+        "none",
+        house=house,
+    )
+
+
+def edit_dr_hansards():
     replace(
         "08112023",
         "Institusi) Tuan Ramkarpal Singh a/l Karpal Singh]: Terima kasih Tuan Yang di-Pertua.\n",

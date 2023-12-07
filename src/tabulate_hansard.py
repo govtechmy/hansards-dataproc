@@ -1203,7 +1203,12 @@ def tabulate(hansard_date, house):
                 )
 
     # process attendance from parse_pdf
-    has_attendance = pd.to_datetime(sortable_date) >= pd.to_datetime("2021-07-26")
+    # only parse attendance list for DR-26072021 onwards
+    # DN attendance parsing not supported
+    has_attendance = (
+        pd.to_datetime(sortable_date) >= pd.to_datetime("2021-07-26")
+        and house.upper() == "DR"
+    )
     if has_attendance:
         parsed_input_dir = f"parsed_pdf/{house}/{year}/{sortable_date}/"
         with open(f"{parsed_input_dir}attendance.txt", "r") as f:

@@ -2,17 +2,16 @@
 Use this script to re-run the pipeline on a batch of hansards.
 """
 import os
+import re
 import pandas as pd
 from tqdm import tqdm
 from pathlib import Path
 
-import parse_pdf
-import pretabulation_processing
-import tabulate_hansard
 import edit_hansards
 import post_parsing_edits
-import get_categories
-from config import ROOT_DATA_DIR
+
+from run import preprocess, parse_categories, pre_tabulate, tabulate
+from config import DEFAULT_DATA_DIR, HOUSE_NAME
 
 
 def get_filenames_in_folder(folder_path_):
@@ -20,13 +19,29 @@ def get_filenames_in_folder(folder_path_):
     return filenames_
 
 
-def get_files_in_folder(folder_path_, year=None, house=None):
-    folder_path_ = Path(folder_path_)
-    filenames_ = folder_path_.rglob("*.pdf")
+def get_files_in_folder(folder_path, house=None, year=None):
+    """
+    Get all files in folder_path with extension .pdf
+    Filenames expected to be in the orignal format (eg. DR-01012021.pdf)
+    House types supported: DR, DN, KKDR
+    Optionally filterable by year and house
+    """
+    filenames_ = Path(folder_path).rglob("*.pdf")
     df = pd.DataFrame({"path": filenames_})
-    df["house"] = df["path"].apply(lambda x: x.stem[:2])
-    df["date"] = df["path"].apply(lambda x: x.stem[3 : 3 + 8])
-    df["date"] = pd.to_datetime(df["date"], format="%d%m%Y")
+    pdf_file_pattern = r"(KKDR|DR|DN)-(\d{2})(\d{2})(\d{4})\.pdf"
+    df["date"] = pd.to_datetime(
+        df["path"]
+        .astype(str)
+        .str.extract(pdf_file_pattern, re.IGNORECASE)
+        .apply(lambda x: "".join(x[1:].dropna().astype(str)), axis=1),
+        format="%d%m%Y",
+    )
+    df["house"] = (
+        df["path"]
+        .astype(str)
+        .str.extract(pdf_file_pattern, re.IGNORECASE)
+        .apply(lambda x: x[0], axis=1)
+    )
     if year:
         df = df[df.date.dt.year == year]
     if house:
@@ -34,126 +49,26 @@ def get_files_in_folder(folder_path_, year=None, house=None):
     return df
 
 
-def preprocess():
-    # for preprocessing
-    with open("hansards_with_tables.txt", "w") as f:
-        f.write("")
-    with open("errors/hansards_with_parsing_errors.txt", "w") as f:
-        f.write("")
-    for hansard_date in tqdm(hansard_dates):
-        try:
-            parse_pdf.parse_hansard(hansard_date, house, ROOT_DATA_DIR)
-        except:
-            # write this filename to file
-            with open("errors/hansards_with_parsing_errors.txt", "a") as f:
-                f.write(hansard_date + "\n")
-            print("Error parsing " + hansard_date)
-            continue
-
-
-def parse_categories():
-    # for preprocessing
-    get_categories_files_for_deletion = [
-        "warnings/empty_categories.txt",
-        "errors/TOC_errors.txt",
-        "warnings/long_toc_hansards.txt",
-    ]
-    for file in get_categories_files_for_deletion:
-        if os.path.exists(file):
-            os.remove(file)
-    for hansard_date in tqdm(hansard_dates):
-        try:
-            get_categories.get_categories(hansard_date, house)
-        except:
-            # write this filename to file
-            with open("errors/TOC_errors.txt", "a") as f:
-                f.write(hansard_date + "\n")
-            print("Error parsing " + hansard_date)
-            continue
-
-
-def pre_tabulate():
-    # for pre-tabulation
-    pre_tabulation_files_for_deletion = [
-        "dump/matched_tables.txt",
-        "errors/error_tables.txt",
-        "errors/pretabulation_errors.txt",
-    ]
-    for file in pre_tabulation_files_for_deletion:
-        if os.path.exists(file):
-            os.remove(file)
-    for hansard_date in tqdm(hansard_dates):
-        try:
-            pretabulation_processing.preprocess(hansard_date, house)
-        except Exception as e:
-            print(e)
-            print(f"Error in {hansard_date}")
-            with open("errors/pretabulation_errors.txt", "a") as f:
-                f.write(f"{hansard_date}\n")
-                f.write(f"{e}\n\n")
-            continue
-
-
-# for tabulation
-def tabulate():
-    # clean these files for new logs
-    tabulation_files_for_deletion = [
-        "dump/autoclosed_annotation.txt",
-        "dump/all_timestamps_dated.txt",
-        "dump/all_timestamps.txt",
-        "warnings/matched_categories.csv",
-        "warnings/timestamp_in_annotation.txt",
-        "warnings/autocorrected_authors.txt",
-        "warnings/stray_bolds.txt",
-        "warnings/capitalised_level_2.txt",
-        "warnings/level_2_following_level_1.txt",
-        "warnings/in-text-bold.txt",
-        "warnings/annotation_too_long.txt",
-        "warnings/uppercased_non_author.txt",
-        "warnings/mixed_bolds.txt",
-        "warnings/unsorted_timestamps.txt",
-        "errors/tabulation_errors.txt",
-        "warnings/toc_mismatch.txt",
-    ]
-
-    for file in tabulation_files_for_deletion:
-        if os.path.exists(file):
-            os.remove(file)
-    for hansard_date in tqdm(hansard_dates):
-        try:
-            tabulate_hansard.tabulate(hansard_date, house)
-        except Exception as e:
-            print(e)
-            print(f"Error in {hansard_date}")
-            with open("errors/tabulation_errors.txt", "a") as f:
-                f.write(f"{hansard_date}\n")
-                f.write(f"{e}\n\n")
-            continue
-
-
 if __name__ == "__main__":
-    # directory where raw hansards PDFs are stored (flat structure)
-    house = "DR".upper()  # DR/DN
-
     # range of year
     # filenames = []
     # for year in range(2011, 2015):
     #     filenames.append(
     #         get_files_in_folder(
-    #             ROOT_DATA_DIR,
-    #             year=year,
+    #             DEFAULT_DATA_DIR,
     #             house=house,
+    #             year=year,
     #         )
     #     )
     # filenames = pd.concat(filenames)
 
     # single year
-    filenames = get_files_in_folder(ROOT_DATA_DIR, year=2022, house=house)
+    filenames = get_files_in_folder(DEFAULT_DATA_DIR, house=HOUSE_NAME)
 
     hansard_dates = filenames["date"].dt.strftime("%d%m%Y").tolist()
-    preprocess()
-    parse_categories()
+    preprocess(hansard_dates, HOUSE_NAME)
+    parse_categories(hansard_dates, HOUSE_NAME)
     post_parsing_edits.post_parsing_edits()
-    pre_tabulate()
-    edit_hansards.edit_hansards()
-    tabulate()
+    pre_tabulate(hansard_dates, HOUSE_NAME)
+    edit_hansards.edit_hansards(HOUSE_NAME)
+    tabulate(hansard_dates, HOUSE_NAME)
