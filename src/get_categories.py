@@ -23,6 +23,12 @@ def upper_lower_ratio(text):
     return upper / lower
 
 
+def replace_kkdr_category(kkdr_subcategories_processed, to_replace, replacement):
+    ind = kkdr_subcategories_processed.index(to_replace)
+    kkdr_subcategories_processed[ind] = replacement
+    return kkdr_subcategories_processed
+
+
 def get_categories(hansard_date, house, root_dir=INPUT_PIPELINE_DIR):
     print(f"Get categories: {hansard_date} {house}")
     year = hansard_date[-4:]
@@ -55,8 +61,13 @@ def get_categories(hansard_date, house, root_dir=INPUT_PIPELINE_DIR):
                     extracted_text,
                 ):
                     break
-                if re.search(r"MALAYSIA\s+DEWAN +RAKYAT\s+PARLIMEN\s+", extracted_text):
+                if re.search(
+                    r"(MALAYSIA\s+DEWAN +RAKYAT\s+PARLIMEN\s)|"
+                    r"(MALAYSIA\s+KAMAR +KHAS\s+PARLIMEN\s+)",
+                    extracted_text,
+                ):
                     # hard stop, missing attendance. e.g. 2020-07-27
+                    # also for Kamar Khas hansards with no attendance
                     break
             if (
                 kandungan_seen
@@ -135,6 +146,8 @@ def get_categories(hansard_date, house, root_dir=INPUT_PIPELINE_DIR):
     bold_lines = bold_lines[toc_start_idx + 1 :]
     line_idx = -1
     categories = []
+    kkdr_subcategories = []
+    kkdr_subcategories_non_bold = []
     while line_idx + 1 < len(lines):
         line_idx += 1
         # check if current line is category
@@ -151,10 +164,48 @@ def get_categories(hansard_date, house, root_dir=INPUT_PIPELINE_DIR):
                 add_idx += 1
             line_idx += add_idx - 1
             categories.append(category.replace("!!!", "").strip())
+        elif (
+            lines[line_idx].strip().startswith("o ")
+            or lines[line_idx].strip().startswith("• ")
+            or lines[line_idx].strip().startswith("■ ")
+            and house.upper() == "KKDR"
+        ):
+            # with bullets in KANDUNGAN page, 99.9% most likely to be KKDR subcategory
+            category = lines[line_idx].strip()
+            if "1" not in bold_lines[line_idx]:
+                kkdr_subcategories_non_bold.append(category)
+
+            add_idx = 1
+            while (
+                line_idx + add_idx < len(lines)
+                and lines[line_idx + add_idx].strip() != ""
+                and not lines[line_idx + add_idx]
+                .strip()
+                .startswith("__")  # end at footer for some cases
+                and not (
+                    lines[line_idx + add_idx].strip().startswith("o ")
+                    or lines[line_idx + add_idx].strip().startswith("• ")
+                    or lines[line_idx + add_idx].strip().startswith("■ ")
+                )
+            ):
+                category += " " + lines[line_idx + add_idx].strip()
+                add_idx += 1
+                # print("KKDR subcategory: ", category)
+
+            line_idx += add_idx - 1
+
+            kkdr_subcategories.append(category.replace("!!!", "").strip())
+
+    if len(kkdr_subcategories) == 0 and house.upper() == "KKDR":
+        print("No KKDR subcategories found!")
 
     if len(categories) == 0:
         with open("warnings/empty_categories.txt", "a") as f:
             f.write(f"Empty category found in {hansard_date}" + "\n")
+    if len(kkdr_subcategories_non_bold) > 0 and house.upper() == "KKDR":
+        with open("warnings/kkdr_subcategories_non_bold.txt", "a") as f:
+            f.write(f"{hansard_date}" + "\n")
+
     # global logging
     # preprocessing to remove : and strip
     categories = [x.strip().rstrip(":").strip() for x in categories]
@@ -170,6 +221,64 @@ def get_categories(hansard_date, house, root_dir=INPUT_PIPELINE_DIR):
     df = pd.DataFrame(category_count, columns=["category", "count"])
     categories = list(set(categories))
     categories.sort()
+
+    # handle KKDR subcategories
+    kkdr_subcategories_processed = []
+    if house.upper() == "KKDR" and len(kkdr_subcategories) > 0:
+        for subcat in kkdr_subcategories:
+            if subcat == "":
+                continue
+            subcat = subcat.strip().lstrip("o • ■ ").strip()
+            subcat = re.sub(" +", " ", subcat)
+            if any(x in subcat for x in [" - ", " – ", " -Y", " –Y"]):
+                # remove YB name after dash
+                # some eg: 15032023 missing space after dash ".. -YB.."
+                # only 04042023 doesn't have a dash
+                subcat = re.split(" - | – | -Y| –Y", subcat)[0].strip()
+            else:
+                print("KKDR subcategory without dash!", subcat)
+            kkdr_subcategories_processed.append(subcat)
+
+        if hansard_date == "16022023":
+            # 16022023 has wrong content in TOC
+            kkdr_subcategories_processed = kkdr_subcategories_processed[:-1]
+            kkdr_subcategories_processed.append(
+                "Isu Penambahbaikan Jalan Raya di Sepanjang Jalan Utama Batu Pahat-Semerah, Batu Pahat"
+            )
+        if hansard_date == "04042017":
+            # missing from TOC
+            kkdr_subcategories_processed.append("Isu Rumah Mampu Milik")
+
+        if hansard_date == "28032017":
+            # replace trimmed text with dash
+            kkdr_subcategories_processed = replace_kkdr_category(
+                kkdr_subcategories_processed,
+                "Status Tidak Berjaya Terhadap Permohonan Berulang",
+                "Status Tidak Berjaya Terhadap Permohonan Berulang - Jawatan Pegawai Perkhidmatan Pendidikan Gred DG41",
+            )
+        if hansard_date == "11112019":
+            kkdr_subcategories_processed = replace_kkdr_category(
+                kkdr_subcategories_processed,
+                "Pertanyaan Mengenai Projek Pembangunan Lanskap Pesisiran Sungai Batu Pahat dan Projek Naik Taraf Kompleks Niaga Benteng Peserai di Parlimen Parit Sulong",
+                "Status Projek Pembangunan Landskap Persisiran Sungai Batu Pahat dan Projek Naik Taraf Kompleks Niaga Benteng Peserai di Parlimen Parit Sulong",
+            )
+        if hansard_date == "27082020":
+            kkdr_subcategories_processed = replace_kkdr_category(
+                kkdr_subcategories_processed,
+                "Kewarganegaraan Keluarga Soon YB. Tuan Khoo Poay Tiong (Kota Melaka)",
+                "Kewarganegaraan Keluarga Soon",
+            )
+        if hansard_date == "14032022":
+            kkdr_subcategories_processed = replace_kkdr_category(
+                kkdr_subcategories_processed,
+                "Memohon Kementerian Dalam Negeri Menyatakan Status Permohonan Kewarganegaraan Clara Sonia Joseph",
+                "Status Permohonan Kewarganegaraan Clara Sonia Joseph",
+            )
+
+        kkdr_subcategories = list(set(kkdr_subcategories_processed))
+        # KKDR categories.json contains two lists
+        categories = [categories, kkdr_subcategories]
+
     # dump to json
     with open(dir_path / "categories.json", "w") as f:
         json.dump(categories, f, indent=4)

@@ -109,11 +109,11 @@ def upper_lower_ratio(text):
     return upper / lower
 
 
-def category_probability(text, categories):
+def category_probability(text, categories, check_upper_lower=True):
     direct_match = text in categories
     if direct_match:
         return 1
-    if upper_lower_ratio(text) < 1:
+    if check_upper_lower and upper_lower_ratio(text) < 1:
         # probably not a category
         return 0
 
@@ -531,7 +531,7 @@ def tabulate(hansard_date, house):
     # sometimes the level_2 in a Hansard is a level_1 in some other Hansards' TOC
     # this is a fundamentally unresolvable problem because we cannot detect the presence of underlines
     # we simply edit the TOC for Hansards with known problems
-    if hansard_date == "20012022":
+    if hansard_date == "20012022" and house.upper() == "DR":
         categories = [
             "PEMASYHURAN DARIPADA TUAN YANG DI-PERTUA",
             "USUL",
@@ -553,6 +553,13 @@ def tabulate(hansard_date, house):
 
     with open(f"parsed_pdf/{house}/{year}/{sortable_date}/categories.json", "r") as f:
         categories = json.load(f)
+
+    # KKDR categories represented in two lists
+    subcategories = []
+    if house.upper() == "KKDR":
+        if len(categories) > 1:
+            subcategories = categories[1]
+        categories = categories[0]
 
     fuzzy_ydp = [
         "PEMASYHURAN OLEH TUAN YANG DI-PERTUA",
@@ -597,13 +604,13 @@ def tabulate(hansard_date, house):
     categories += to_add
     to_add = []
     for x in categories:
-        # Replace "UNDANG" with "UNDANG-UNDANG" only when "UNDANG" is a standalone word
+        # Replace "USUL" with "USUL-USUL" only when "USUL" is a standalone word
         if re.search(r"\b(?<!USUL-)USUL(?!-USUL)\b", x) and not re.search(
             r"\bUSUL-USUL\b", x
         ):
             to_add.append(re.sub(r"\b(?<!USUL-)USUL(?!-USUL)\b", "USUL-USUL", x))
 
-        # Replace "UNDANG-UNDANG" with "UNDANG" only when "UNDANG-UNDANG" is a standalone word
+        # Replace "USUL-USUL" with "USUL" only when "USUL-USUL" is a standalone word
         if re.search(r"\bUSUL-USUL\b", x) and not re.search(
             r"\b(?<!USUL-)USUL(?!-USUL)\b", x
         ):
@@ -925,6 +932,46 @@ def tabulate(hansard_date, house):
                 with open("warnings/capitalised_level_2.txt", "a") as f:
                     f.write(f"{hansard_date}\n{current['level_2']}\n")
                 continue
+            elif house.upper() == "KKDR":
+                # try and see if KKDR level_2 headings
+                add_idx = 1
+                current_subcategory = text[row_id].strip()
+                current_subcategory_probability = category_probability(
+                    current_subcategory, subcategories, check_upper_lower=False
+                )
+                if current_subcategory_probability > 0.2:
+                    while (
+                        row_id + add_idx < num_rows
+                        and category_probability(
+                            current_subcategory + " " + text[row_id + add_idx].strip(),
+                            subcategories,
+                            check_upper_lower=False,
+                        )
+                        >= current_subcategory_probability
+                    ):
+                        current_subcategory += " " + text[row_id + add_idx].strip()
+                        current_subcategory_probability = category_probability(
+                            current_subcategory, subcategories, check_upper_lower=False
+                        )
+                        add_idx += 1
+
+                if current_subcategory_probability > 0.9:
+                    print(f"KKDR level_2: {current_subcategory}")
+                    speeches += insert_speech(current)
+                    current["author"] = ""
+                    current["level_1"] = current_category
+                    current["level_2"] = current_subcategory
+                    current["level_3"] = ""
+                    current["speech"] = ""
+                    current["speech_bold"] = ""
+                    current["speech_italics"] = ""
+                    row_id += add_idx - 1
+                    # if current_category_probability < 1:
+                    #     with open("warnings/matched_categories.csv", "a") as f:
+                    #         f.write(
+                    #             f"{hansard_date},{current_category},{current_category_probability}\n"
+                    #         )
+                    continue
 
             # these are lower-cased bold sentences
             # most likely a level_3 subtopic

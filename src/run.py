@@ -55,6 +55,7 @@ def parse_categories(hansard_dates, house):
         "warnings/empty_categories.txt",
         "errors/TOC_errors.txt",
         "warnings/long_toc_hansards.txt",
+        "warnings/kkdr_subcategories_non_bold.txt",
     ]
     for file in get_categories_files_for_deletion:
         if os.path.exists(file):
