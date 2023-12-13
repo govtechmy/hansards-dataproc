@@ -145,7 +145,7 @@ def parse_hansard(hansard_date, house, source_dir=DEFAULT_DATA_DIR):
 
     # for global logging
     if tables:
-        with open("hansards_with_tables.txt", "a") as f:
+        with open(f"dump/{house}/hansards_with_tables.txt", "a") as f:
             f.write(f"{sortable_date}\n")
 
 
