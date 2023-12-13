@@ -1,0 +1,430 @@
+14022023
+Anchor row is: Tahun Peratus
+Table text similarity score is: 100
+Table text is:
+___
+Tahun Peratus
+2018 57.6
+2019 75.6
+2020 62.2
+2021 87
+
+___
+
+Candidate text is:
+___
+Tahun  Peratus 
+2018  57.6 
+2019  75.6 
+2020  62.2 
+2021  87 
+
+___
+
+14022023
+Anchor row is: Tahun Jumlah Pelaburan FDI
+Table text similarity score is: 100
+Table text is:
+___
+Tahun Jumlah Pelaburan FDI
+2018 RM64 bilion
+2019 RM69 bilion
+2020 RM58 bilion
+
+___
+
+Candidate text is:
+___
+Tahun  Jumlah Pelaburan FDI  
+2018  RM64 bilion 
+2019  RM69 bilion 
+2020  RM58 bilion 
+
+___
+
+21022023
+Anchor row is: Harga Rumah (RM) Bilangan Unit 
+Table text similarity score is: 100
+Table text is:
+___
+Harga Rumah (RM) Bilangan Unit 
+Rumah
+Kurang dari RM300,000 162,284
+Dalam  lingkungan  RM300,001  51,771
+hingga RM500,000
+Dalam  lingkungan  RM500,001  70,779
+hingga RM1 juta
+Melebihi RM1 juta 168,927
+
+___
+
+Candidate text is:
+___
+Harga Rumah (RM)  Bilangan Unit 
+Rumah 
+Kurang dari RM300,000  162,284 
+Dalam  lingkungan  RM300,001  51,771 
+hingga RM500,000 
+Dalam  lingkungan  RM500,001  70,779 
+hingga RM1 juta 
+Melebihi RM1 juta  168,927 
+
+___
+
+07032023
+Anchor row is: Negeri Kadar Kemiskinan 
+Table text similarity score is: 100
+Table text is:
+___
+Negeri Kadar Kemiskinan 
+Mutlak (peratus)
+Sabah 19.5
+Kelantan 12.4
+Sarawak 9.0
+Kedah 8.4
+
+___
+
+Candidate text is:
+___
+Negeri  Kadar Kemiskinan 
+Mutlak (peratus) 
+Sabah  19.5 
+Kelantan  12.4 
+Sarawak  9.0 
+Kedah  8.4 
+
+___
+
+07032023
+Anchor row is: Perak 7.3
+Table text similarity score is: 100
+Table text is:
+___
+Perak 7.3
+Terengganu 6.0
+
+___
+
+Candidate text is:
+___
+Perak  7.3 
+Terengganu  6.0 
+
+___
+
+24052023
+Anchor row is: Jenis Komoditi Makanan Utama Peratusan (%)
+Table text similarity score is: 100
+Table text is:
+___
+Jenis Komoditi Makanan Utama Peratusan (%)
+Beras 65
+Daging ayam 99.9
+Telur ayam 114.4
+Daging lembu atau kerbau 18.9
+Susu segar 56.7
+Sayur-sayuran 46.7
+Buah-buahan 77.4
+Ikan makanan 91.7
+
+___
+
+Candidate text is:
+___
+Jenis Komoditi Makanan Utama  Peratusan (%) 
+Beras  65 
+Daging ayam  99.9 
+Telur ayam  114.4 
+Daging lembu atau kerbau  18.9 
+Susu segar  56.7 
+Sayur-sayuran  46.7 
+Buah-buahan  77.4 
+Ikan makanan  91.7 
+
+___
+
+09032023
+Anchor row is: Bil Projek Status
+Table text similarity score is: 92
+Table text is:
+___
+Bil Projek Status
+1. Pakej 1:   Dalam tindakan pewartaan Seksyen 4 
+Kuala Krai ke Sungai Lakit oleh  Pejabat  Tanah  dan  Galian, 
+Kelantan
+2. Pakej 3B: Berangan Mek  Dalam tindakan JKPTG, Kelantan bagi 
+Nab ke Keroh proses perbicaraan.
+3. Pakej  3C:  dari  Keroh  ke  Dalam tindakan JKPTG, Kelantan bagi 
+Kuala Krai proses perbicaraan
+
+___
+
+Candidate text is:
+___
+Bil  Projek  Status 
+1.  Pakej 1:   Dalam tindakan pewartaan Seksyen 4 
+oleh  Pejabat  Tanah  dan  Galian, 
+Kuala Krai ke Sungai Lakit 
+Kelantan 
+2.  Pakej 3B: Berangan Mek  Dalam tindakan JKPTG, Kelantan bagi 
+Nab ke Keroh  proses perbicaraan.  
+3.  Pakej  3C:  dari  Keroh  ke  Dalam tindakan JKPTG, Kelantan bagi 
+Kuala Krai  proses perbicaraan 
+
+___
+
+28032023
+Anchor row is: Negeri Ringgit Malaysia
+Table text similarity score is: 100
+Table text is:
+___
+Negeri Ringgit Malaysia
+Pahang 178,487,500
+Selangor 508,000,621
+Kelantan 50,652,500
+Kedah 7,811,500
+Terengganu 17,016,500
+Melaka 21,312,500
+Wilayah Persekutuan 5,100,017
+Negeri Sembilan 26,446,000
+Perak 2,390,500
+Johor 9,914,000
+
+___
+
+Candidate text is:
+___
+Negeri  Ringgit Malaysia  
+Pahang  178,487,500 
+Selangor  508,000,621 
+Kelantan  50,652,500 
+Kedah  7,811,500 
+Terengganu  17,016,500 
+Melaka  21,312,500 
+Wilayah Persekutuan  5,100,017 
+Negeri Sembilan  26,446,000 
+Perak  2,390,500 
+Johor  9,914,000 
+
+___
+
+28032023
+Anchor row is: Sabah 7,444,000
+Table text similarity score is: 100
+Table text is:
+___
+Sabah 7,444,000
+Sarawak 8,906,500
+
+___
+
+Candidate text is:
+___
+Sabah  7,444,000 
+Sarawak  8,906,500 
+
+___
+
+28032023
+Anchor row is: Bil Sekolah Jumlah Bilik  Peruntukan 
+Table text similarity score is: 100
+Table text is:
+___
+Bil Sekolah Jumlah Bilik  Peruntukan 
+Darjah (RM)
+1. Sekolah Kebangsaan  34 buah 54 juta
+Setia Alam 2
+2. Sekolah Kebangsaan  24 buah 55 juta
+Paya Dusun, 
+Terengganu
+3. Sekolah Menengah  42 buah 110 juta
+Kebangsaan Dudong, 
+Sibu, Sarawak
+
+___
+
+Candidate text is:
+___
+Bil  Sekolah  Jumlah Bilik  Peruntukan 
+Darjah  (RM) 
+1.  Sekolah Kebangsaan  34 buah  54 juta 
+Setia Alam 2 
+2.  Sekolah Kebangsaan  24 buah  55 juta 
+Paya Dusun, 
+Terengganu 
+3.  Sekolah Menengah  42 buah  110 juta 
+Kebangsaan Dudong, 
+Sibu, Sarawak 
+
+___
+
+22022023
+Anchor row is: Tahun Pendapatan (RM) Untung dan Rugi (RM)
+Table text similarity score is: 100
+Table text is:
+___
+Tahun Pendapatan (RM) Untung dan Rugi (RM)
+2017 223.6 bilion Untung 45.5 bilion
+2018 251 bilion Untung 55.3 bilion
+2019 240.3 bilion Untung 40.5 bilion
+2020 178.7 bilion Rugi 21 bilion
+2021 248 bilion Untung 48.6 bilion
+
+___
+
+Candidate text is:
+___
+Tahun  Pendapatan (RM)  Untung dan Rugi (RM) 
+2017  223.6 bilion  Untung 45.5 bilion 
+2018  251 bilion  Untung 55.3 bilion 
+2019  240.3 bilion  Untung 40.5 bilion 
+2020  178.7 bilion  Rugi 21 bilion 
+2021  248 bilion  Untung 48.6 bilion 
+
+___
+
+22022023
+Anchor row is: Bumiputera RM15,541 RM4,937 RM10,604
+Table text similarity score is: 100
+Table text is:
+___
+Kaum Simpanan median  Simpanan median  Penurunan 
+April 2020 Disember 2022 simpanan
+Bumiputera RM15,541 RM4,937 RM10,604
+Melayu RM16,938 RM5,529 RM11,409
+Bumiputera  RM10,591 RM3,302 RM7,298
+lain
+Cina RM45,756 RM45,162 RM594
+
+___
+
+Candidate text is:
+___
+Kaum  Simpanan median  Simpanan median  Penurunan 
+April 2020  Disember 2022  simpanan 
+Bumiputera  RM15,541  RM4,937  RM10,604 
+Melayu  RM16,938  RM5,529  RM11,409 
+Bumiputera  RM10,591  RM3,302  RM7,298 
+lain 
+Cina  RM45,756  RM45,162  RM594 
+
+___
+
+22022023
+Anchor row is: Kaum Simpanan median  Simpanan median  Penurunan 
+Table text similarity score is: 100
+Table text is:
+___
+Kaum Simpanan median  Simpanan median  Penurunan 
+April 2020 Disember 2022 simpanan
+India RM25,724 RM14,929 RM10,785
+
+___
+
+Candidate text is:
+___
+Kaum  Simpanan median  Simpanan median  Penurunan 
+April 2020  Disember 2022  simpanan 
+India  RM25,724  RM14,929  RM10,785 
+
+___
+
+08032023
+Anchor row is: Bil Negara Peratus (%)
+Table text similarity score is: 100
+Table text is:
+___
+Bil Negara Peratus (%)
+1. Indonesia 68
+2. Thailand 58
+3. Filipina 58
+4. Vietnam 58
+
+___
+
+Candidate text is:
+___
+Bil  Negara  Peratus (%) 
+1.  Indonesia  68 
+2.  Thailand  58 
+3.  Filipina  58  
+4.  Vietnam  58  
+
+___
+
+08032023
+Anchor row is: Bil Negeri Jumlah (RM)
+Table text similarity score is: 100
+Table text is:
+___
+Bil Negeri Jumlah (RM)
+1. Selangor 21.5 juta
+2. Pulau Pinang 11 juta
+3. Kedah 5.1 juta
+4. Perak 5.4 juta
+5. Negeri Sembilan 5.9 juta
+6. Melaka 3.1 juta
+7. Johor 17.6 juta
+8. Wilayah Persekutuan Labuan 1.3 juta
+9. Wilayah Persekutuan Putrajaya 18 juta
+10. Sabah 5.7 juta
+11. Sarawak 9.2 juta
+12. Pahang 5 juta
+13. Terengganu 5.8 juta
+14. Kelantan 3.8 juta
+
+___
+
+Candidate text is:
+___
+Bil  Negeri  Jumlah (RM) 
+ 
+1.  Selangor  21.5 juta 
+ 
+2.  Pulau Pinang  11 juta 
+ 
+3.  Kedah  5.1 juta 
+ 
+4.  Perak  5.4 juta 
+ 
+5.  Negeri Sembilan  5.9 juta 
+ 
+6.  Melaka  3.1 juta 
+ 
+7.  Johor  17.6 juta 
+ 
+8.  Wilayah Persekutuan Labuan  1.3 juta 
+ 
+9.  Wilayah Persekutuan Putrajaya  18 juta   
+10.  Sabah  5.7 juta   
+11.  Sarawak  9.2 juta   
+12.  Pahang  5 juta   
+13.  Terengganu  5.8 juta   
+14.  Kelantan  3.8 juta   
+
+___
+
+09102023
+Anchor row is: Bil Rangkaian Bilangan Kampit
+Table text similarity score is: 100
+Table text is:
+___
+Bil Rangkaian Bilangan Kampit
+1. Pasar raya 423,816
+2. FAMA 109,829
+3. LPP 60,240
+4. Pemborong dan pengedar 115,093
+
+___
+
+Candidate text is:
+___
+Bil  Rangkaian  Bilangan Kampit 
+1.  Pasar raya  423,816 
+2.  FAMA  109,829 
+3.  LPP  60,240 
+4.  Pemborong dan pengedar  115,093 
+
+___
+

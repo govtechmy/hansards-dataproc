@@ -34,7 +34,7 @@ def get_files_in_folder(folder_path, year=None, house=None):
 
 def preprocess(hansard_dates, house):
     # for preprocessing
-    with open("hansards_with_tables.txt", "w") as f:
+    with open(f"dump/{house}/hansards_with_tables.txt", "w") as f:
         f.write("")
     with open(f"errors/{house}/hansards_with_parsing_errors.txt", "w") as f:
         f.write("")
