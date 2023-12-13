@@ -78,7 +78,7 @@ def get_categories(hansard_date, house, root_dir=INPUT_PIPELINE_DIR):
                 # this is a Hansard where the TOC is more than two pages
                 # e.g. 30032023
                 logged_long_toc = True
-                with open("warnings/long_toc_hansards.txt", "a") as f:
+                with open(f"warnings/{house}/long_toc_hansards.txt", "a") as f:
                     f.write(hansard_date + "\n")
             text += extracted_text + "\n"  # add newline to separate pages
             formatted_words = page.extract_words(extra_attrs=["fontname"])
@@ -200,10 +200,10 @@ def get_categories(hansard_date, house, root_dir=INPUT_PIPELINE_DIR):
         print("No KKDR subcategories found!")
 
     if len(categories) == 0:
-        with open("warnings/empty_categories.txt", "a") as f:
+        with open(f"warnings/{house}/empty_categories.txt", "a") as f:
             f.write(f"Empty category found in {hansard_date}" + "\n")
     if len(kkdr_subcategories_non_bold) > 0 and house.upper() == "KKDR":
-        with open("warnings/kkdr_subcategories_non_bold.txt", "a") as f:
+        with open(f"warnings/{house}/kkdr_subcategories_non_bold.txt", "a") as f:
             f.write(f"{hansard_date}" + "\n")
 
     # global logging

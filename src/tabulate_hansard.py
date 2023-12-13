@@ -121,7 +121,7 @@ def category_probability(text, categories, check_upper_lower=True):
     return match_score / 100
 
 
-def get_author_and_speech(text, bold, italics, warn=""):
+def get_author_and_speech(text, bold, italics, house, warn=""):
     author = ""
     speech = ""
     speech_bold = ""
@@ -228,7 +228,7 @@ def get_author_and_speech(text, bold, italics, warn=""):
         edit_bold = bold[:edit_idx] + bold[edit_idx + 1 :]
         edit_italics = italics[:edit_idx] + italics[edit_idx + 1 :]
         author, speech, speech_bold, speech_italics, subtopic = get_author_and_speech(
-            edit_text, edit_bold, edit_italics, warn=text
+            edit_text, edit_bold, edit_italics, house=house, warn=text
         )
     elif (
         not warn
@@ -243,7 +243,7 @@ def get_author_and_speech(text, bold, italics, warn=""):
         edit_bold = bold[:edit_idx] + "1" + bold[edit_idx:]
         edit_italics = italics[:edit_idx] + "0" + italics[edit_idx:]
         author, speech, speech_bold, speech_italics, subtopic = get_author_and_speech(
-            edit_text, edit_bold, edit_italics, warn=text
+            edit_text, edit_bold, edit_italics, house=house, warn=text
         )
     elif (
         text
@@ -279,7 +279,7 @@ def get_author_and_speech(text, bold, italics, warn=""):
         edit_bold = bold[: edit_idx + 1] + "1" + bold[edit_idx + 1 :]
         edit_italics = italics[: edit_idx + 1] + "0" + italics[edit_idx + 1 :]
         author, speech, speech_bold, speech_italics, subtopic = get_author_and_speech(
-            edit_text, edit_bold, edit_italics, warn=text
+            edit_text, edit_bold, edit_italics, house=house, warn=text
         )
     elif re.search(
         r"^((Abdul Azeez bin Abdul Rahim \[Baling]:)|"
@@ -305,15 +305,23 @@ def get_author_and_speech(text, bold, italics, warn=""):
         speech_bold = bold[split_idx + 1 :]
         speech_italics = italics[split_idx + 1 :]
     if author != "" and warn != "":
-        with open("warnings/autocorrected_authors.txt", "a") as f:
+        with open(f"warnings/{house}/autocorrected_authors.txt", "a") as f:
             f.write(warn + "\n")
     return author, speech, speech_bold, speech_italics, subtopic
 
 
-def possible_author(text, bold, italics, idx, num_rows):
+def possible_author(text, bold, italics, idx, num_rows, house):
     # check if this line or the combination of the next is a valid author
     # return true if so
-    if get_author_and_speech(text[idx], bold[idx], italics[idx])[0] != "":
+    if (
+        get_author_and_speech(
+            text[idx],
+            bold[idx],
+            italics[idx],
+            house=house,
+        )[0]
+        != ""
+    ):
         return True
     if idx + 1 < num_rows and not (
         text[idx + 1].startswith("[") and italics[idx + 1][1] == "1"
@@ -322,7 +330,12 @@ def possible_author(text, bold, italics, idx, num_rows):
         concat_rows_bold = f"{bold[idx].strip()} {bold[idx + 1]}"
         concat_rows_italics = f"{italics[idx].strip()} {italics[idx + 1]}"
         return (
-            get_author_and_speech(concat_rows, concat_rows_bold, concat_rows_italics)[0]
+            get_author_and_speech(
+                concat_rows,
+                concat_rows_bold,
+                concat_rows_italics,
+                house=house,
+            )[0]
             != ""
         )
     return False
@@ -684,7 +697,7 @@ def tabulate(hansard_date, house):
                     # most likely the annotation is missing a ]
                     # we will assume that the annotation is closed
                     # turn off autoclosing for 26032018 where a whole chunk of annotation is not italicized
-                    with open("dump/autoclosed_annotation.txt", "a") as f:
+                    with open(f"dump/{house}/autoclosed_annotation.txt", "a") as f:
                         f.write(f"{hansard_date}\n")
                         f.write(f'{current["speech"]}\n')
                         f.write("AUTOCLOSED AS IT IS FOLLOWED BY\n")
@@ -742,7 +755,9 @@ def tabulate(hansard_date, house):
                 speech_bold,
                 speech_italics,
                 subtopic,
-            ) = get_author_and_speech(text[row_id], bold[row_id], italics[row_id])
+            ) = get_author_and_speech(
+                text[row_id], bold[row_id], italics[row_id], house=house
+            )
             if author != "":
                 speeches += insert_speech(current)
                 current["author"] = author
@@ -770,7 +785,7 @@ def tabulate(hansard_date, house):
                     speech_italics,
                     subtopic,
                 ) = get_author_and_speech(
-                    concat_rows, concat_rows_bold, concat_rows_italics
+                    concat_rows, concat_rows_bold, concat_rows_italics, house=house
                 )
                 if author != "":
                     speeches += insert_speech(current)
@@ -791,7 +806,7 @@ def tabulate(hansard_date, house):
                 current["speech"] += text[row_id]
                 current["speech_bold"] += bold[row_id]
                 current["speech_italics"] += italics[row_id]
-                with open("warnings/stray_bolds.txt", "a") as f:
+                with open(f"warnings/{house}/stray_bolds.txt", "a") as f:
                     f.write(
                         f"{hansard_date} with num bold: {num_bold}\n{text[row_id]}{bold[row_id]}\n"
                     )
@@ -815,7 +830,7 @@ def tabulate(hansard_date, house):
                     and prop_of_1_among_binary(bold[row_id + add_idx]) > 0.8
                     and not is_timestamp(text[row_id + add_idx])
                     and not possible_author(
-                        text, bold, italics, row_id + add_idx, num_rows
+                        text, bold, italics, row_id + add_idx, num_rows, house
                     )
                     and not (
                         text[row_id + add_idx].startswith("[")
@@ -825,7 +840,7 @@ def tabulate(hansard_date, house):
                     current["level_2"] += text[row_id + add_idx]
                     add_idx += 1
                 row_id += add_idx - 1
-                with open("warnings/level_2_following_level_1.txt", "a") as f:
+                with open(f"warnings/{house}/level_2_following_level_1.txt", "a") as f:
                     f.write(f"{hansard_date}\n{current['level_2']}\n")
                 continue
 
@@ -835,7 +850,7 @@ def tabulate(hansard_date, house):
                 current["speech"] += text[row_id]
                 current["speech_bold"] += bold[row_id]
                 current["speech_italics"] += italics[row_id]
-                with open("warnings/mixed_bolds.txt", "a") as f:
+                with open(f"warnings/{house}/mixed_bolds.txt", "a") as f:
                     f.write(f"{hansard_date}\n{text[row_id]}{bold[row_id]}\n")
                 continue
 
@@ -890,7 +905,7 @@ def tabulate(hansard_date, house):
                     current["speech_italics"] = ""
                     row_id += add_idx - 1
                     if current_category_probability < 1:
-                        with open("warnings/matched_categories.csv", "a") as f:
+                        with open(f"warnings/{house}/matched_categories.csv", "a") as f:
                             f.write(
                                 f"{hansard_date},{current_category},{current_category_probability}\n"
                             )
@@ -913,6 +928,7 @@ def tabulate(hansard_date, house):
                         text[row_id + add_idx],
                         bold[row_id + add_idx],
                         italics[row_id + add_idx],
+                        house=house,
                     )[0]
                     == ""
                     and not text[row_id + add_idx].startswith("Bismilla")
@@ -922,6 +938,7 @@ def tabulate(hansard_date, house):
                             f"{text[row_id + add_idx].strip()} {text[row_id + add_idx + 1]}",
                             f"{bold[row_id + add_idx].strip()} {bold[row_id + add_idx + 1]}",
                             f"{italics[row_id + add_idx].strip()} {italics[row_id + add_idx + 1]}",
+                            house=house,
                         )[0]
                         == ""
                     )
@@ -929,7 +946,7 @@ def tabulate(hansard_date, house):
                     current["level_2"] += text[row_id + add_idx]
                     add_idx += 1
                 row_id += add_idx - 1
-                with open("warnings/capitalised_level_2.txt", "a") as f:
+                with open(f"warnings/{house}/capitalised_level_2.txt", "a") as f:
                     f.write(f"{hansard_date}\n{current['level_2']}\n")
                 continue
             elif house.upper() == "KKDR":
@@ -967,7 +984,7 @@ def tabulate(hansard_date, house):
                     current["speech_italics"] = ""
                     row_id += add_idx - 1
                     # if current_category_probability < 1:
-                    #     with open("warnings/matched_categories.csv", "a") as f:
+                    #     with open(f"warnings/{house}/matched_categories.csv", "a") as f:
                     #         f.write(
                     #             f"{hansard_date},{current_category},{current_category_probability}\n"
                     #         )
@@ -1048,7 +1065,7 @@ def tabulate(hansard_date, house):
                 continue
             # unhandled case
             print(f"WARN IN-TEXT BOLD:\n{text[row_id]}{bold[row_id]}{italics[row_id]}")
-            with open("warnings/in-text-bold.txt", "a") as f:
+            with open(f"warnings/{house}/in-text-bold.txt", "a") as f:
                 f.write(
                     f"{hansard_date}\n{text[row_id]}{bold[row_id]}{italics[row_id]}\n"
                 )
@@ -1116,13 +1133,13 @@ def tabulate(hansard_date, house):
     # if without error it is usually [Diputuskan,
     for speech in speeches:
         if speech[5] == "ANNOTATION" and speech[6].count("\n") > 5:
-            with open("warnings/annotation_too_long.txt", "a") as f:
+            with open(f"warnings/{house}/annotation_too_long.txt", "a") as f:
                 f.write(f"{hansard_date}\n{speech[6]}\n\n")
 
     # check for uppercased misidentified non-authors
     for speech in speeches:
         if speech[5] != "ANNOTATION" and upper_lower_ratio(speech[5]) > 0.8:
-            with open("warnings/uppercased_non_author.txt", "a") as f:
+            with open(f"warnings/{house}/uppercased_non_author.txt", "a") as f:
                 f.write(f"{hansard_date}\n{speech[4]}\n\n")
 
     # check that timestamps are in order
@@ -1139,7 +1156,7 @@ def tabulate(hansard_date, house):
         if more_than_30_minutes_past(
             unique_timestamps_row[idx][4], unique_timestamps_row[idx + 1][4]
         ):
-            with open("warnings/unsorted_timestamps.txt", "a") as f:
+            with open(f"warnings/{house}/unsorted_timestamps.txt", "a") as f:
                 f.write(
                     f"{hansard_date}\n{unique_timestamps_row[idx][3]} AND {unique_timestamps_row[idx][4]}\n"
                 )
@@ -1224,7 +1241,7 @@ def tabulate(hansard_date, house):
             [re.sub(r"[^a-zA-Z0-9]", "", x) for x in actual_toc]
         )
         if alphanumeric_categories != alphanumeric_actual:
-            with open("warnings/toc_mismatch.txt", "a") as f:
+            with open(f"warnings/{house}/toc_mismatch.txt", "a") as f:
                 category_minus_actual = "\n".join(
                     [
                         x

@@ -36,14 +36,14 @@ def preprocess(hansard_dates, house):
     # for preprocessing
     with open("hansards_with_tables.txt", "w") as f:
         f.write("")
-    with open("errors/hansards_with_parsing_errors.txt", "w") as f:
+    with open(f"errors/{house}/hansards_with_parsing_errors.txt", "w") as f:
         f.write("")
     for hansard_date in tqdm(hansard_dates):
         try:
             parse_pdf.parse_hansard(hansard_date, house, DEFAULT_DATA_DIR)
         except:
             # write this filename to file
-            with open("errors/hansards_with_parsing_errors.txt", "a") as f:
+            with open(f"errors/{house}/hansards_with_parsing_errors.txt", "a") as f:
                 f.write(hansard_date + "\n")
             print("Error parsing " + hansard_date)
             continue
@@ -52,10 +52,10 @@ def preprocess(hansard_dates, house):
 def parse_categories(hansard_dates, house):
     # for preprocessing
     get_categories_files_for_deletion = [
-        "warnings/empty_categories.txt",
-        "errors/TOC_errors.txt",
-        "warnings/long_toc_hansards.txt",
-        "warnings/kkdr_subcategories_non_bold.txt",
+        f"warnings/{house}/empty_categories.txt",
+        f"errors/{house}/TOC_errors.txt",
+        f"warnings/{house}/long_toc_hansards.txt",
+        f"warnings/{house}/kkdr_subcategories_non_bold.txt",
     ]
     for file in get_categories_files_for_deletion:
         if os.path.exists(file):
@@ -65,7 +65,7 @@ def parse_categories(hansard_dates, house):
             get_categories.get_categories(hansard_date, house, DEFAULT_DATA_DIR)
         except:
             # write this filename to file
-            with open("errors/TOC_errors.txt", "a") as f:
+            with open(f"errors/{house}/TOC_errors.txt", "a") as f:
                 f.write(hansard_date + "\n")
             print("Error parsing " + hansard_date)
             continue
@@ -74,9 +74,9 @@ def parse_categories(hansard_dates, house):
 def pre_tabulate(hansard_dates, house):
     # for pre-tabulation
     pre_tabulation_files_for_deletion = [
-        "dump/matched_tables.txt",
-        "errors/error_tables.txt",
-        "errors/pretabulation_errors.txt",
+        f"dump/{house}/matched_tables.txt",
+        f"errors/{house}/error_tables.txt",
+        f"errors/{house}/pretabulation_errors.txt",
     ]
     for file in pre_tabulation_files_for_deletion:
         if os.path.exists(file):
@@ -87,7 +87,7 @@ def pre_tabulate(hansard_dates, house):
         except Exception as e:
             print(e)
             print(f"Error in {hansard_date}")
-            with open("errors/pretabulation_errors.txt", "a") as f:
+            with open(f"errors/{house}/pretabulation_errors.txt", "a") as f:
                 f.write(f"{hansard_date}\n")
                 f.write(f"{e}\n\n")
             continue
@@ -97,22 +97,22 @@ def pre_tabulate(hansard_dates, house):
 def tabulate(hansard_dates, house):
     # clean these files for new logs
     tabulation_files_for_deletion = [
-        "dump/autoclosed_annotation.txt",
-        "dump/all_timestamps_dated.txt",
-        "dump/all_timestamps.txt",
-        "warnings/matched_categories.csv",
-        "warnings/timestamp_in_annotation.txt",
-        "warnings/autocorrected_authors.txt",
-        "warnings/stray_bolds.txt",
-        "warnings/capitalised_level_2.txt",
-        "warnings/level_2_following_level_1.txt",
-        "warnings/in-text-bold.txt",
-        "warnings/annotation_too_long.txt",
-        "warnings/uppercased_non_author.txt",
-        "warnings/mixed_bolds.txt",
-        "warnings/unsorted_timestamps.txt",
-        "errors/tabulation_errors.txt",
-        "warnings/toc_mismatch.txt",
+        f"dump/{house}/autoclosed_annotation.txt",
+        f"dump/{house}/all_timestamps_dated.txt",
+        f"dump/{house}/all_timestamps.txt",
+        f"warnings/{house}/matched_categories.csv",
+        f"warnings/{house}/timestamp_in_annotation.txt",
+        f"warnings/{house}/autocorrected_authors.txt",
+        f"warnings/{house}/stray_bolds.txt",
+        f"warnings/{house}/capitalised_level_2.txt",
+        f"warnings/{house}/level_2_following_level_1.txt",
+        f"warnings/{house}/in-text-bold.txt",
+        f"warnings/{house}/annotation_too_long.txt",
+        f"warnings/{house}/uppercased_non_author.txt",
+        f"warnings/{house}/mixed_bolds.txt",
+        f"warnings/{house}/unsorted_timestamps.txt",
+        f"errors/{house}/tabulation_errors.txt",
+        f"warnings/{house}/toc_mismatch.txt",
     ]
 
     for file in tabulation_files_for_deletion:
@@ -124,7 +124,7 @@ def tabulate(hansard_dates, house):
         except Exception as e:
             print(e)
             print(f"Error in {hansard_date}")
-            with open("errors/tabulation_errors.txt", "a") as f:
+            with open(f"errors/{house}/tabulation_errors.txt", "a") as f:
                 f.write(f"{hansard_date}\n")
                 f.write(f"{e}\n\n")
             continue

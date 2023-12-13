@@ -55,7 +55,7 @@ def mimic_table_as_plaintext(table):
     return table_text
 
 
-def format_table(text, bold, italics, table, hansard_date):
+def format_table(text, bold, italics, table, hansard_date, house):
     # replace None with empty strings
     for row_idx in range(len(table)):
         for cell_idx in range(len(table[row_idx])):
@@ -152,7 +152,7 @@ def format_table(text, bold, italics, table, hansard_date):
             f"WARN: table text similarity score is too low: {table_text_similarity_score}"
         )
         print(f"Anchor row is: {anchor_row}")
-    with open(f"dump/matched_tables.txt", "a") as f:
+    with open(f"dump/{house}/matched_tables.txt", "a") as f:
         f.write(f"{hansard_date}\n")
         f.write(f"Anchor row is: {anchor_row}\n")
         f.write(f"Table text similarity score is: {table_text_similarity_score}\n")
@@ -236,11 +236,13 @@ def preprocess(hansard_date, house):
         tables[3] = edit_05102021
     for table in tables:
         try:
-            text, bold, italics = format_table(text, bold, italics, table, hansard_date)
+            text, bold, italics = format_table(
+                text, bold, italics, table, hansard_date, house
+            )
         except AssertionError as e:
             print(e)
             print(f"Error in {hansard_date} table {table}")
-            with open(f"errors/error_tables.txt", "a") as f:
+            with open(f"errors/{house}/error_tables.txt", "a") as f:
                 f.write(f"{hansard_date}\n")
                 f.write(f"Error in table {table}\n")
                 f.write(f"{e}\n\n")

@@ -1,0 +1,3390 @@
+15112017
+Anchor row is: No. Tahun Bilangan Kes
+Table text similarity score is: 100
+Table text is:
+___
+No. Tahun Bilangan Kes
+1. 2013 23
+2. 2014 15
+3. 2015 7
+4. 2016 26
+5. September 2017 18
+
+___
+
+Candidate text is:
+___
+No.  Tahun  Bilangan Kes 
+1.  2013  23 
+2.  2014  15 
+3.  2015  7 
+4.  2016  26 
+5.  September 2017  18 
+
+___
+
+29112017
+Anchor row is: Penerbangan Tambang 
+Table text similarity score is: 35
+Table text is:
+___
+Laluan Tahun Syarikat  Purata 
+Penerbangan Tambang 
+(RM)
+Kuala  Lumpur-Sibu 2016 AirAsia 235.20
+(pergi-balik)
+  Malaysia Airlines 504.00
+ 2017 AirAsia 222.60
+  Malaysia Airlines 428.40
+Johor Bahru-Sibu  2016 AirAsia 201.60
+(pergi-balik)
+  Malaysia Airlines 546.00
+ 2017 AirAsia 197.40
+  Malaysia Airlines 369.60
+
+___
+
+Candidate text is:
+___
+Kuala Lumpur-Sibu dan Johor Bahru-Sibu adalah seperti berikut: 
+ 
+    Syarikat  Purata 
+Penerbangan  Tambang 
+Laluan  Tahun 
+(RM) 
+Kuala  Lumpur-Sibu  AirAsia  235.20 
+(pergi-balik)  2016 
+Malaysia Airlines  504.00 
+AirAsia  222.60 
+2017 
+Malaysia Airlines  428.40 
+Johor Bahru-Sibu  AirAsia  201.60 
+2016 
+(pergi-balik)  Malaysia Airlines  546.00 
+AirAsia  197.40 
+2017 
+Malaysia Airlines  369.60 
+
+___
+
+29032018
+Anchor row is: Daerah Populasi Hospital Klinik  Klinik Desa Klinik 
+Table text similarity score is: 100
+Table text is:
+___
+Daerah Populasi Hospital Klinik  Klinik Desa Klinik 
+Kesihatan 1Malaysia
+Muar 269,200 1 11 40 1
+Kulai 283,000 1 2 11 5
+Kluang 305,000 1 9 20 3
+
+___
+
+Candidate text is:
+___
+Daerah  Populasi  Hospital  Klinik  Klinik Desa  Klinik 
+Kesihatan  1Malaysia 
+Muar  269,200  1  11  40  1 
+Kulai  283,000  1  2  11  5 
+Kluang  305,000  1  9  20  3 
+
+___
+
+03122018
+Anchor row is: 1. PR1MA @ Melaka Tengah 1 597 75
+Table text similarity score is: 98
+Table text is:
+___
+Bil. Nama Projek Jumlah Unit Status  
+Pembinaan 
+(%)
+1. PR1MA @ Melaka Tengah 1 597 75
+2. PR1MA @ Melaka Tengah 2 860 58
+3. PR1MA @ Tanjung Kling 1 648 22
+4. PR1MA @ Alor Gajah 842 86
+5. PR1MA @ Pulau Sebang 718 78
+6. PR1MA @ A’Famosa 675 64
+7. PR1MA @ Parit Melana 1,866 34
+8. PR1MA @ Klebang 1 2,646 15
+9. PR1MA @ Klebang 2 800 39
+10. PR1MA @ Bukit Katil 527 10
+11. PR1MA @ Durian Tunggal 772 14
+
+___
+
+Candidate text is:
+___
+  Status  
+Bil.  Nama Projek  Jumlah Unit  Pembinaan 
+(%) 
+1.  PR1MA @ Melaka Tengah 1  597  75 
+2.  PR1MA @ Melaka Tengah 2  860  58 
+3.  PR1MA @ Tanjung Kling 1  648  22 
+4.  PR1MA @ Alor Gajah  842  86 
+5.  PR1MA @ Pulau Sebang  718  78 
+6.  PR1MA @ A’Famosa  675  64 
+7.  PR1MA @ Parit Melana  1,866  34 
+8.  PR1MA @ Klebang 1  2,646  15 
+9.  PR1MA @ Klebang 2  800  39 
+10.  PR1MA @ Bukit Katil  527  10 
+11.  PR1MA @ Durian Tunggal  772  14 
+
+___
+
+03122018
+Anchor row is: Jumlah 10,951
+Table text similarity score is: 100
+Table text is:
+___
+Jumlah 10,951 
+
+___
+
+Candidate text is:
+___
+Jumlah  10,951   
+
+___
+
+28112018
+Anchor row is: (JUTA)
+Table text similarity score is: 98
+Table text is:
+___
+PROGRAM/PROJEK SILING 
+PERUNTUKAN 
+(JUTA)
+Jalan Air Luar Bandar (JALB) 34,300,000
+Bekalan Air Luar Bandar (BALB) 7,000,000
+Jalan Perhubungan Desa (JPD) 7,000,000
+Program Ameniti Sosial (PAMS) 3,000,000
+Program Bersepadu Pemajuan Kawasan (PPK) 4,500,000
+Program Lonjakan Mega Luar Bandar 100
+Naik taraf Premis KEMAS Negeri Perak 470,000
+Program Ameniti Sosial FELCRA Negeri Perak 100,000
+JUMLAH KESELURUHAN 56,370,100
+
+___
+
+Candidate text is:
+___
+SILING 
+PROGRAM/PROJEK  PERUNTUKAN 
+(JUTA) 
+Jalan Air Luar Bandar (JALB)  34,300,000 
+Bekalan Air Luar Bandar (BALB)  7,000,000 
+Jalan Perhubungan Desa (JPD)  7,000,000 
+Program Ameniti Sosial (PAMS)  3,000,000 
+Program Bersepadu Pemajuan Kawasan (PPK)  4,500,000 
+Program Lonjakan Mega Luar Bandar  100 
+Naik taraf Premis KEMAS Negeri Perak  470,000 
+Program Ameniti Sosial FELCRA Negeri Perak   100,000 
+JUMLAH KESELURUHAN  56,370,100 
+
+___
+
+24102018
+Anchor row is: Bil. Pemajuan Jumlah 
+Table text similarity score is: 100
+Table text is:
+___
+Bil. Pemajuan Jumlah 
+  Unit Pembeli
+1. Rumah  Pangsapuri  Kos  497 313
+Sederhana  
+(18 tingkat)
+2. Rumah Pangsapuri Kos Tinggi   160 -
+(21 tingkat)
+Jumlah  657 -
+
+___
+
+Candidate text is:
+___
+Bil.  Pemajuan  Jumlah 
+Unit  Pembeli 
+1.  Rumah  Pangsapuri  Kos  497  313 
+Sederhana  
+(18 tingkat) 
+2.  Rumah Pangsapuri Kos Tinggi   160  -   
+(21 tingkat) 
+Jumlah  657  - 
+
+___
+
+12112018
+Anchor row is: BIL TAJUK PROJEK KOS PROJEK 
+Table text similarity score is: 100
+Table text is:
+___
+BIL TAJUK PROJEK KOS PROJEK 
+(RM)
+1. Projek Tebatan Banjir Sungai Permatang Rawa di Kampung  30.31 juta
+Tanah  Liat,  Taman  Guru,  Padang  Lalang  dan  Kampung 
+Permatang  Rawa,  Daerah  Seberang  Perai  Tengah,  Pulau 
+Pinang.
+2. Projek Pembinaan Rumah Pam Taman Senangin, Rumah Pam  11.0 juta 
+Siakap 1 dan Rumah Pam Siakap 2 di Daerah Seberang Jaya,  (kos siling)
+Daerah Seberang Perai Tengah, Pulau Pinang.
+3. Projek Tebatan Banjir Parit 4 di Bukit Tengah dan Taman Desa  16.98 juta
+Damai, Daerah Seberang Perai Tengah, Pulau Pinang
+4. Projek Tebatan Banjir di Parit 5, Taman Mangga dan Jalan Juru,  11.5 juta
+Daerah Seberang Perai Tengah, Pulau Pinang
+5. Projek Tebatan Banjir Mak Mandin, Daerah Seberang Perai  40 juta
+Utara, Pulau Pinang
+
+___
+
+Candidate text is:
+___
+BIL  TAJUK PROJEK  KOS PROJEK 
+  (RM) 
+     
+1.  Projek Tebatan Banjir Sungai Permatang Rawa di Kampung  30.31 juta 
+Tanah  Liat,  Taman  Guru,  Padang  Lalang  dan  Kampung 
+Permatang  Rawa,  Daerah  Seberang  Perai  Tengah,  Pulau 
+Pinang. 
+ 
+     
+2.  Projek Pembinaan Rumah Pam Taman Senangin, Rumah Pam  11.0 juta 
+Siakap 1 dan Rumah Pam Siakap 2 di Daerah Seberang Jaya, 
+(kos siling) 
+Daerah Seberang Perai Tengah, Pulau Pinang. 
+ 
+     
+3.  Projek Tebatan Banjir Parit 4 di Bukit Tengah dan Taman Desa  16.98 juta 
+Damai, Daerah Seberang Perai Tengah, Pulau Pinang 
+ 
+     
+4.  Projek Tebatan Banjir di Parit 5, Taman Mangga dan Jalan Juru,  11.5 juta 
+Daerah Seberang Perai Tengah, Pulau Pinang 
+     
+5.  Projek Tebatan Banjir Mak Mandin, Daerah Seberang Perai  40 juta 
+Utara, Pulau Pinang 
+
+___
+
+12112018
+Anchor row is: •  Sistem  saliran  di  Sungai  Terus  yang  •  Perkara ini telah telah dimaklumkan 
+Table text similarity score is: 100
+Table text is:
+___
+Isu Penyelesaian
+•  Sistem  saliran  di  Sungai  Terus  yang  •  Perkara ini telah telah dimaklumkan 
+sempit dan tidak dapat menampung aliran  kepada  PBT  untuk  tindakan 
+air  serta  sukar  untuk  dilebarkan  bagi  selanjutnya. 
+pelaksanaan projek tebatan banjir.   •  Pihak  Jabatan  Pengairan  dan 
+•  Kawasan rizab sungai berkenaan telah  Saliran  (JPS)  Negeri  Kedah 
+diceroboh  dan  terdapat  pembinaan  hanyalah melaksanakan kerja-kerja 
+rumah di dalam kawasan rizab sungai  penyelenggaraan sungai berkenaan 
+tanpa kebenaran. mengikut keadaan semasa.
+
+___
+
+Candidate text is:
+___
+Isu  Penyelesaian 
+ 
+•  Sistem  saliran  di  Sungai  Terus  yang  •  Perkara ini telah telah dimaklumkan 
+sempit dan tidak dapat menampung aliran  kepada  PBT  untuk  tindakan 
+air  serta  sukar  untuk  dilebarkan  bagi  selanjutnya. 
+pelaksanaan projek tebatan banjir.  
+•  Pihak  Jabatan  Pengairan  dan 
+•  Kawasan rizab sungai berkenaan telah  Saliran  (JPS)  Negeri  Kedah 
+diceroboh  dan  terdapat  pembinaan  hanyalah melaksanakan kerja-kerja 
+rumah di dalam kawasan rizab sungai  penyelenggaraan sungai berkenaan 
+tanpa kebenaran.  mengikut keadaan semasa. 
+
+___
+
+12112018
+Anchor row is: Isu Penyelesaian
+Table text similarity score is: 100
+Table text is:
+___
+Isu Penyelesaian
+•  Masalah  berkaitan  dengan  sistem  •  Perkara ini telah mendapat perhatian 
+saliran  sedia  ada  yang  tidak  dapat  pihak berkuasa tempatan (PBT) untuk 
+menampung  pertambahan  kadar  alir  tindakan selanjutnya.
+disebabkan oleh sistem saliran bandar 
+telah tertimbus akibat daripada tindakan 
+penduduk yang membuat lintasan tanpa 
+kebenaran.
+
+___
+
+Candidate text is:
+___
+Isu  Penyelesaian 
+•  Masalah  berkaitan  dengan  sistem  •  Perkara ini telah mendapat perhatian 
+saliran  sedia  ada  yang  tidak  dapat  pihak berkuasa tempatan (PBT) untuk 
+menampung  pertambahan  kadar  alir  tindakan selanjutnya.  
+disebabkan oleh sistem saliran bandar 
+ 
+telah tertimbus akibat daripada tindakan 
+penduduk yang membuat lintasan tanpa 
+kebenaran. 
+
+___
+
+12112018
+Anchor row is: (Pakej 1)
+Table text similarity score is: 96
+Table text is:
+___
+1. RTB Sungai Kedah/ Sungai Anak Bukit  13.9 juta
+(Pakej 1)
+2. Banjir  di  Sungai  Keroncho,  Daerah  2 juta
+Kubang Pasu
+ Jumlah (RM) 15.9 juta
+
+___
+
+Candidate text is:
+___
+RTB Sungai Kedah/ Sungai Anak Bukit 
+1.  13.9 juta 
+(Pakej 1) 
+Banjir  di  Sungai  Keroncho,  Daerah 
+2.  2 juta 
+Kubang Pasu 
+  Jumlah (RM)  15.9 juta 
+
+___
+
+12112018
+Anchor row is: (Pakej 2)
+Table text similarity score is: 94
+Table text is:
+___
+1. RTB Sungai Kedah/Sungai Anak Bukit  236 juta
+(Pakej 2)
+2. RTB Pendang 100 juta
+3. RTB Changloon 7 juta
+4. Kerja-kerja  penyelenggaraan  sungai  1.32 Juta
+untuk  mengurangkan  risiko  banjir  di 
+Daerah Kota Setar/ Pendang/ Yan
+ Jumlah (RM) 344.2 juta
+
+___
+
+Candidate text is:
+___
+RTB Sungai Kedah/Sungai Anak Bukit 
+1.  236 juta 
+(Pakej 2) 
+2.  RTB Pendang  100 juta 
+3.  RTB Changloon   7 juta 
+Kerja-kerja  penyelenggaraan  sungai 
+4.  untuk  mengurangkan  risiko  banjir  di  1.32 Juta 
+Daerah Kota Setar/ Pendang/ Yan 
+  Jumlah (RM)  344.2 juta 
+
+___
+
+27032018
+Anchor row is: JENIS KADAR SABAH (RM) KADAR SEMENANJUNG  
+Table text similarity score is: 100
+Table text is:
+___
+JENIS KADAR SABAH (RM) KADAR SEMENANJUNG  
+(RM)
+Penggerak Utama BDM  2,632.00 5,388.00
+38,000 kilogram
+Lori  Rigid  BDM  38,000  2,632.00 7,308.00
+kilogram
+
+___
+
+Candidate text is:
+___
+JENIS  KADAR SABAH (RM)  KADAR SEMENANJUNG  
+  (RM) 
+     
+Penggerak Utama BDM  2,632.00  5,388.00 
+38,000 kilogram 
+ 
+     
+Lori  Rigid  BDM  38,000  2,632.00  7,308.00 
+kilogram 
+
+___
+
+01082018
+Anchor row is: TAHUN HASIL  HASIL ARAK  HASIL 
+Table text similarity score is: 100
+Table text is:
+___
+TAHUN HASIL  HASIL ARAK  HASIL 
+PERJUDIAN   (RM) ROKOK  
+(RM) (RM)
+2013 2.73 bilion 1.71 bilion 3.59 bilion
+2014 2.67 bilion 1.72 bilion 3.66 bilion
+2015 2.69 bilion 1.96 bilion 3.48 bilion
+2016 2.59 bilion 2.14 bilion 3.67 bilion
+2017 2.47 bilion 2.25 billion 3.34 bilion
+
+___
+
+Candidate text is:
+___
+TAHUN  HASIL  HASIL ARAK  HASIL 
+PERJUDIAN   (RM)  ROKOK  
+(RM)  (RM) 
+ 
+2013  2.73 bilion  1.71 bilion  3.59 bilion 
+2014  2.67 bilion  1.72 bilion  3.66 bilion 
+2015  2.69 bilion  1.96 bilion  3.48 bilion 
+2016  2.59 bilion  2.14 bilion  3.67 bilion 
+2017  2.47 bilion  2.25 billion  3.34 bilion 
+
+___
+
+19032018
+Anchor row is: Dan  Dan 
+Table text similarity score is: 28
+Table text is:
+___
+Tempoh  Pelupus  
+pelupusan
+ Individu  Individu Bukan  Syarikat 
+Warganegara  Warganegara  (%)
+Dan  Dan 
+Pemastautin  Bukan 
+Tetap (%) Pemastautin 
+Tetap (%)
+Dalam tempoh  30 30 30
+tiga tahun 
+selepas tarikh 
+perolehan
+Dalam tempoh  20 30 20
+tahun keempat 
+selepas tarikh 
+perolehan
+
+___
+
+Candidate text is:
+___
+Kadar CKHT 
+   
+  Pelupus 
+   
+       
+Tempoh  Individu  Individu Bukan 
+ 
+pelupusan  Warganegara  Warganegara 
+Syarikat 
+Dan  Dan 
+(%) 
+Pemastautin  Bukan 
+Tetap (%)  Pemastautin 
+Tetap (%)   
+ 
+       
+Dalam tempoh       
+tiga tahun  30  30  30 
+selepas tarikh 
+perolehan 
+       
+Dalam tempoh       
+tahun keempat  20  30  20 
+selepas tarikh   
+perolehan   
+
+___
+
+19032018
+Anchor row is: Dalam  tempoh  15 30 15
+Table text similarity score is: 97
+Table text is:
+___
+Dalam  tempoh  15 30 15
+tahun  kelima 
+selepas  tarikh 
+perolehan
+Dalam  tempoh  0 5 5
+tahun  keenam 
+selepas  tarikh 
+perolehan
+
+___
+
+Candidate text is:
+___
+Dalam  tempoh  15  30  15 
+tahun  kelima 
+selepas  tarikh 
+perolehan 
+ 
+       
+Dalam  tempoh       
+tahun  keenam  0  5  5 
+selepas  tarikh 
+perolehan 
+
+___
+
+19032018
+Anchor row is: Pendapatan Berkanun Tahun Taksiran 2015  Tahun Taksiran 2016 
+Table text similarity score is: 100
+Table text is:
+___
+Pendapatan Berkanun Tahun Taksiran 2015  Tahun Taksiran 2016 
+(%) (%)
+Modal  Berbayar  melebihi  25 24
+RM2.5 juta
+Syarikat tidak bermastautin 25 24
+
+___
+
+Candidate text is:
+___
+Pendapatan Berkanun  Tahun Taksiran 2015  Tahun Taksiran 2016 
+  (%)  (%) 
+ 
+     
+Modal  Berbayar  melebihi  25  24 
+RM2.5 juta 
+ 
+     
+Syarikat tidak bermastautin  25  24 
+
+___
+
+10102019
+Anchor row is: Terlibat
+Table text similarity score is: 81
+Table text is:
+___
+Perkara Jumlah  Jumlah  Jumlah Tuntutan belum  
+Tuntutan Tuntutan  dibayar
+telah 
+dibayar
+   Semasa  Tertunggak 
+(<30 hari) (>30hari)
+Anggaran Bil. kontraktor  4,700 3,720 60 920
+Terlibat
+Anggaran Bil. Pemohon /  14,200 11,880 220 2,100
+Projek RMR Terlibat
+
+___
+
+Candidate text is:
+___
+Jumlah  Jumlah Tuntutan belum 
+Jumlah  Tuntutan  dibayar 
+Perkara 
+Tuntutan  telah  Semasa  Tertunggak 
+dibayar  (<30 hari)  (>30hari) 
+Anggaran Bil. kontraktor 
+4,700  3,720  60  920 
+Terlibat 
+Anggaran Bil. Pemohon / 
+14,200  11,880  220  2,100 
+Projek RMR Terlibat 
+
+___
+
+08102019
+Anchor row is: Tahun Hasil Perjudian  Hasil Minuman Keras  Hasil Rokok / Tembakau 
+Table text similarity score is: 100
+Table text is:
+___
+Tahun Hasil Perjudian  Hasil Minuman Keras  Hasil Rokok / Tembakau 
+(RM) (RM) (RM)
+2018 2.78 bilion 2.35 bilion 3.29 bilion
+2019 2.72 bilion 1.99 bilion 2.30 bilion
+
+___
+
+Candidate text is:
+___
+Tahun  Hasil Perjudian  Hasil Minuman Keras  Hasil Rokok / Tembakau 
+  (RM)  (RM)  (RM) 
+ 
+2018  2.78 bilion  2.35 bilion  3.29 bilion 
+2019  2.72 bilion  1.99 bilion  2.30 bilion 
+
+___
+
+01072019
+Anchor row is: Mantau
+Table text similarity score is: 43
+Table text is:
+___
+TAHUN KESELURUHAN  AGIHAN  KAWASAN SKOP KERJA
+PERUNTUKAN  PERUNTUKAN 
+JPS DAERAH  BAGI 
+(RM) SG LINGGI 
+(RM)
+2014 800,000 54,190 Batu 3,  Kerja Pengukuhan 
+Mambau,  Tebing
+Kampung Seri 
+Mantau
+2015 600,000 115,800 Kampung Seri  Kerja Pengukuhan 
+Mantau Tebing dan Drop Struktur
+2016 1,050,000 140,000 Batu 3, Mambau Sistem Perparitan 
+dan Pengukuhan Tebing
+2017 1,310,000 600,000 SRJK(C) Kelpin,  Kerja Pengukuhan 
+Kampung Singh Tebing dan Penyaluran
+2018 1,150,000 19,800 Kampung  Kerja Penyaluran 
+Dusun Nyoir Anak Air Sungai Linggi
+
+___
+
+Candidate text is:
+___
+AGIHAN 
+KESELURUHAN 
+PERUNTUKAN 
+PERUNTUKAN 
+TAHUN  BAGI  KAWASAN  SKOP KERJA 
+JPS DAERAH 
+SG LINGGI 
+(RM) 
+(RM) 
+Batu 3, 
+Mambau,  Kerja Pengukuhan 
+2014  800,000  54,190 
+Kampung Seri  Tebing 
+Mantau 
+Kampung Seri  Kerja Pengukuhan 
+2015  600,000  115,800 
+Mantau  Tebing dan Drop Struktur 
+Sistem Perparitan 
+2016  1,050,000  140,000  Batu 3, Mambau 
+dan Pengukuhan Tebing 
+SRJK(C) Kelpin,  Kerja Pengukuhan 
+2017  1,310,000  600,000 
+Kampung Singh  Tebing dan Penyaluran 
+Kampung  Kerja Penyaluran 
+2018  1,150,000  19,800 
+Dusun Nyoir  Anak Air Sungai Linggi 
+
+___
+
+04122019
+Anchor row is: JENIS KEMUDAHAN JUMLAH
+Table text similarity score is: 100
+Table text is:
+___
+JENIS KEMUDAHAN JUMLAH
+Mini stadium 1
+Gelanggang rakyat 10
+Gelanggang bola tampar 6
+Gelanggang boling 1
+
+___
+
+Candidate text is:
+___
+JENIS KEMUDAHAN  JUMLAH 
+   
+Mini stadium  1 
+Gelanggang rakyat  10 
+Gelanggang bola tampar  6 
+Gelanggang boling  1 
+
+___
+
+04122019
+Anchor row is: Gelanggang tenis 7
+Table text similarity score is: 100
+Table text is:
+___
+Gelanggang tenis 7
+Gelanggang badminton 15
+Gelanggang bola keranjang 7
+Gelanggang bola jaring 5
+Gelanggang takraw 8
+Padang bola 18
+Litar motor cross 3
+Padang golf 4
+Dewan serba guna 12
+Padang menembak lapang sasar 1
+JUMLAH  98 
+
+___
+
+Candidate text is:
+___
+Gelanggang tenis  7 
+Gelanggang badminton  15 
+Gelanggang bola keranjang  7 
+Gelanggang bola jaring  5 
+Gelanggang takraw  8 
+Padang bola  18 
+Litar motor cross  3 
+Padang golf  4 
+Dewan serba guna  12 
+Padang menembak lapang sasar  1 
+JUMLAH  98 
+
+___
+
+11072019
+Anchor row is: Tahun 2016   
+Table text similarity score is: 97
+Table text is:
+___
+BIL. PARLIMEN BILANGAN PROJEK PERUNTUKAN 
+(RM)
+Tahun 2016   
+1. Kota Kinabalu 9 1,980,000
+2. Putatan 4 280,000
+3. Penampang 0 0
+JUMLAH  13 2,260,000
+Tahun 2017   
+1. Kota Kinabalu 3 1,556,952
+2. Putatan 0 0
+3. Penampang 2 1,497,890
+JUMLAH  5 3,054,842
+Tahun 2018   
+1. Kota Kinabalu 5 1,510,000
+2. Putatan 10 465,000
+3. Penampang 5 840,000
+JUMLAH  20 2,815,000
+Tahun 2019   
+1. Kota Kinabalu 0 0
+2. Putatan 0 0
+3. Penampang 0 0
+JUMLAH  0 0
+JUMLAH KESELURUHAN  38 8,129,842
+
+___
+
+Candidate text is:
+___
+PERUNTUKAN 
+BIL.  PARLIMEN  BILANGAN PROJEK 
+(RM) 
+Tahun 2016 
+1.  Kota Kinabalu  9  1,980,000 
+2.  Putatan  4  280,000 
+3.  Penampang  0  0 
+JUMLAH  13  2,260,000 
+Tahun 2017 
+1.  Kota Kinabalu  3  1,556,952 
+2.  Putatan  0  0 
+3.  Penampang  2  1,497,890 
+JUMLAH  5  3,054,842 
+Tahun 2018 
+1.  Kota Kinabalu  5  1,510,000 
+2.  Putatan  10  465,000 
+3.  Penampang  5  840,000 
+JUMLAH  20  2,815,000 
+Tahun 2019 
+1.  Kota Kinabalu  0  0 
+2.  Putatan  0  0 
+3.  Penampang  0  0 
+JUMLAH  0  0 
+JUMLAH KESELURUHAN  38  8,129,842 
+
+___
+
+07102019
+Anchor row is: Nama Pemohon Nombor rujukan fail Tahun
+Table text similarity score is: 100
+Table text is:
+___
+Nama Pemohon Nombor rujukan fail Tahun
+Phairin Santaro EP/K1/14/000072 2014
+Hnin Hnin EP/K1/14/000053 2014
+
+___
+
+Candidate text is:
+___
+Nama Pemohon  Nombor rujukan fail  Tahun 
+ 
+Phairin Santaro  EP/K1/14/000072  2014 
+Hnin Hnin  EP/K1/14/000053  2014  
+
+___
+
+07102019
+Anchor row is: Yu Han Jiao EP/K1/15/000013 2015
+Table text similarity score is: 100
+Table text is:
+___
+Yu Han Jiao EP/K1/15/000013 2015
+Than Dar Soe EP/K1/15/000083 2015
+Yang Yong Fang EP/K1/15/000094 2015
+Supranee Suyathep EP/K1/16/000158 2016
+Tjhong En Lan EP/K1/16/000178 2016
+Reni Ayuningsih EP/K1/17/000152 2017
+Leny Mariani EP/K1/18/000128 2018
+
+___
+
+Candidate text is:
+___
+Yu Han Jiao  EP/K1/15/000013  2015 
+Than Dar Soe  EP/K1/15/000083  2015 
+Yang Yong Fang  EP/K1/15/000094  2015 
+Supranee Suyathep  EP/K1/16/000158  2016 
+Tjhong En Lan  EP/K1/16/000178  2016 
+Reni Ayuningsih  EP/K1/17/000152  2017 
+Leny Mariani  EP/K1/18/000128  2018 
+
+___
+
+02042019
+Anchor row is: Nama Umur  Tarikh Lahir Taraf 
+Table text similarity score is: 100
+Table text is:
+___
+Nama Umur  Tarikh Lahir Taraf 
+(tahun) Kewarganegaraan
+Joane Lim Fang Ling 18 8 Disember 2000 Bukan Warganegara
+Jolin Lim Xzi Ling 15 5 April 2003 Bukan Warganegara
+Steven Lim Chong Hiew 14 16 Julai 2004 Bukan Warganegara
+Jesce Lim Fern Ling 13 30 Jun 2005 Bukan Warganegara
+Samuel Lim Chong Yuan 12 21 September 2006 Warganegara
+Silvanus Lim Chong Yee 11 5 Disember 2007 Warganegara
+
+___
+
+Candidate text is:
+___
+Nama  Umur  Tarikh Lahir  Taraf 
+(tahun)  Kewarganegaraan 
+Joane Lim Fang Ling  18  8 Disember 2000  Bukan Warganegara 
+Jolin Lim Xzi Ling  15  5 April 2003  Bukan Warganegara 
+Steven Lim Chong Hiew  14  16 Julai 2004  Bukan Warganegara 
+Jesce Lim Fern Ling      13  30 Jun 2005  Bukan Warganegara 
+Samuel Lim Chong Yuan  12  21 September 2006  Warganegara 
+Silvanus Lim Chong Yee  11  5 Disember 2007  Warganegara 
+
+___
+
+09112020
+Anchor row is: PROJEK
+Table text similarity score is: 58
+Table text is:
+___
+PROJEK JUMLAH  PERUNTUKAN CATATAN
+PROJEK
+Corrective  16 RM414,139.78 Pembaikan 
+Maintenance kecemasan 
+melibatkan: 
+-BBP Paya Terubong  
+-BBP Perai 
+-BBP Tasek Gelugor  
+-BBP Bandar Perda  
+-BBP Kepala Batas  
+-BBP Bukit Mertajam  
+-BBP Lebuh Pantai  
+-BBP Bagan Jermal 
+-BBP Balik Pulau  
+-Pejabat  Zon  1(Jalan 
+Perak) 
+-BBP Bayan Baru  
+-BBP Tasek Gelugor  
+-BBP Sg. Bakap 
+-BBP Lebuh Pantai 
+-BBP Bayan Baru  
+-BBP Jalan Perak
+
+___
+
+Candidate text is:
+___
+JUMLAH 
+PROJEK  PERUNTUKAN  CATATAN 
+PROJEK 
+Pembaikan 
+kecemasan 
+melibatkan: 
+-BBP Paya Terubong  
+-BBP Perai 
+-BBP Tasek Gelugor  
+-BBP Bandar Perda  
+-BBP Kepala Batas  
+-BBP Bukit Mertajam  
+ 
+Corrective  -BBP Lebuh Pantai  
+16  RM414,139.78 
+Maintenance  -BBP Bagan Jermal 
+ 
+-BBP Balik Pulau  
+-Pejabat  Zon  1(Jalan 
+Perak) 
+-BBP Bayan Baru  
+-BBP Tasek Gelugor  
+-BBP Sg. Bakap 
+-BBP Lebuh Pantai 
+-BBP Bayan Baru  
+-BBP Jalan Perak  
+
+___
+
+09112020
+Anchor row is: Bil. Kawasan Jumlah Unit
+Table text similarity score is: 100
+Table text is:
+___
+Bil. Kawasan Jumlah Unit
+1. Tanjung Bungah 554
+2. Pulau Tikus 318
+3. Kebun Bungah 176
+4. Air Itam 200
+5. Padang Tembak 38
+6. Bukit Bendera 24
+7. Jalan Air Putih 12
+8. Kg. Melayu 9
+Jumlah  1,331
+
+___
+
+Candidate text is:
+___
+Bil.  Kawasan  Jumlah Unit 
+1.  Tanjung Bungah  554 
+2.  Pulau Tikus  318 
+3.  Kebun Bungah  176 
+4.  Air Itam  200 
+5.  Padang Tembak  38 
+6.  Bukit Bendera  24 
+7.  Jalan Air Putih  12 
+8.  Kg. Melayu  9 
+Jumlah  1,331 
+
+___
+
+08122020
+Anchor row is: 2018 RM1,990,000.00
+Table text similarity score is: 100
+Table text is:
+___
+Tahun Jumlah Peruntukan Yang Diluluskan
+2018 RM1,990,000.00
+2019 RM1,800,000.00
+2019 RM4,262,508.00
+
+___
+
+Candidate text is:
+___
+Tahun  Jumlah Peruntukan Yang Diluluskan 
+2018  RM1,990,000.00 
+2019  RM1,800,000.00 
+2019  RM4,262,508.00 
+
+___
+
+08122020
+Anchor row is: 2018 RM4,945,400.00
+Table text similarity score is: 100
+Table text is:
+___
+Tahun Jumlah Peruntukan Yang Diluluskan
+2018 RM4,945,400.00
+2019 RM6,235,000.00
+2019 RM6,085,000.00
+
+___
+
+Candidate text is:
+___
+Tahun  Jumlah Peruntukan Yang Diluluskan 
+2018  RM4,945,400.00 
+2019  RM6,235,000.00 
+2019  RM6,085,000.00 
+
+___
+
+08122020
+Anchor row is: Tahun Jumlah Peruntukan Yang Diluluskan
+Table text similarity score is: 100
+Table text is:
+___
+Tahun Jumlah Peruntukan Yang Diluluskan
+2018 RM41,370.64
+2019 RM53,166.99
+2019 RM46,339.22
+
+___
+
+Candidate text is:
+___
+Tahun  Jumlah Peruntukan Yang Diluluskan 
+2018  RM41,370.64 
+2019  RM53,166.99 
+2019  RM46,339.22 
+
+___
+
+14072020
+Anchor row is: Bil. Balai Polis Peruntukan    
+Table text similarity score is: 100
+Table text is:
+___
+Bil. Balai Polis Peruntukan    
+(RM)
+  2018 2019
+1. Balai Polis Batu Ferringhi - 19,000.00
+2. Balai Polis Tanjong Tokong - 19,000.00
+3. Balai Polis Pulau Tikus - 18,500.00
+4. Balai Polis Kg. Baru - 40,000.00
+5. Balai Polis Bukit Bendera - 20,000.00
+6. FRU (Unit 3) 80,000.00 1,320,000.00
+JUMLAH  80,000.00 1,436,500.00
+
+___
+
+Candidate text is:
+___
+Bil.  Balai Polis  Peruntukan   
+  (RM) 
+2018  2019 
+1.  Balai Polis Batu Ferringhi  -  19,000.00 
+2.  Balai Polis Tanjong Tokong  -  19,000.00 
+3.  Balai Polis Pulau Tikus  -  18,500.00 
+4.  Balai Polis Kg. Baru  -  40,000.00 
+5.  Balai Polis Bukit Bendera  -  20,000.00 
+6.  FRU (Unit 3)  80,000.00  1,320,000.00 
+  JUMLAH   80,000.00  1,436,500.00 
+
+___
+
+14072020
+Anchor row is: Bil. Balai Polis Peruntukan Pembaikan 
+Table text similarity score is: 100
+Table text is:
+___
+Bil. Balai Polis Peruntukan Pembaikan 
+Tahun 2020 (RM)
+1. Balai Polis Batu Ferringhi 50,000.00
+2. Balai Polis Tanjong Tokong 110,000.00
+3. Balai Polis Pulau Tikus 27,000.00
+4. Balai Polis Kg. Baru 80,000.00
+5. Balai Polis Bukit Bendera -
+6. FRU (Unit 3) 990,000.00
+JUMLAH  1,257,000.00
+
+___
+
+Candidate text is:
+___
+Bil.  Balai Polis  Peruntukan Pembaikan 
+Tahun 2020 (RM) 
+1.  Balai Polis Batu Ferringhi  50,000.00 
+2.  Balai Polis Tanjong Tokong  110,000.00 
+3.  Balai Polis Pulau Tikus  27,000.00 
+4.  Balai Polis Kg. Baru  80,000.00 
+5.  Balai Polis Bukit Bendera  - 
+6.  FRU (Unit 3)  990,000.00 
+  JUMLAH  1,257,000.00 
+
+___
+
+14072020
+Anchor row is: BALAI POLIS  IBU PEJABAT POLIS DAERAH TIMUR LAUT     
+Table text similarity score is: 84
+Table text is:
+___
+BALAI POLIS  IBU PEJABAT POLIS DAERAH TIMUR LAUT     
+(BP)
+ PULAU  KAMPUNG  TANJONG  BATU  BUKIT  JUMLAH
+TIKUS     B ARU     TOKONG FERRINGHI BENDERA
+PANGKAT PERJAWATAN     
+INSPEKTOR 1 0 1 1 0 3
+SUB-INSPEKTOR 1 1 0 0 0 2
+SARJAN MEJAR 1  1 1 1 4
+SARJAN/SARJAN  4 2 2 2 1 11
+MEJAR
+KOPERAL 25 6 2 2 2 37
+KONSTABEL/LANS  111 39 37 30 15 232
+KOPERAL/KOPERAL
+KONSTABEL  12 1 0 0 0 13
+SOKONGAN/LANS 
+KOPERAL 
+SOKONGAN/KOPERAL 
+SOKONGAN
+JUMLAH UNIFORM 155 49 43 36 19 302
+
+___
+
+Candidate text is:
+___
+BALAI POLIS  IBU PEJABAT POLIS DAERAH TIMUR LAUT 
+(BP)  PULAU  KAMPUNG  TANJONG  BATU     BUKIT  JUMLAH 
+TIKUS         B ARU      TOKONG  FERRINGHI  BENDERA 
+ 
+PANGKAT  PERJAWATAN 
+INSPEKTOR  1  0  1  1  0  3 
+SUB-INSPEKTOR  1  1  0  0  0  2 
+SARJAN MEJAR  1    1  1  1  4 
+SARJAN/SARJAN             
+MEJAR  4  2  2  2  1  11 
+             
+KOPERAL  25  6  2  2  2  37 
+KONSTABEL/LANS             
+KOPERAL/KOPERAL  111  39  37  30  15  232 
+KONSTABEL             
+SOKONGAN/LANS             
+KOPERAL  12  1  0  0  0  13 
+SOKONGAN/KOPERAL 
+SOKONGAN 
+JUMLAH UNIFORM  155  49  43  36  19  302 
+
+___
+
+14072020
+Anchor row is: PASUKAN SIMPANAN PERSEKUTUAN UNIT 3 PULAU PINANG   
+Table text similarity score is: 100
+Table text is:
+___
+PASUKAN SIMPANAN PERSEKUTUAN UNIT 3 PULAU PINANG   
+BERAKHIR PADA 31 MEI 2020
+PANGKAT PERJAWATAN
+SUPERINTENDEN 1
+DEPUTI SUPERINTENDEN 1
+ASISTAN SUPERINTENDEN POLIS 4
+INSPEKTOR 7
+SUB-INSPEKTOR 0
+SARJAN MEJAR 4
+SARJAN / SARJAN MEJAR 21
+KOPERAL 68
+KONSTABEL / LANS KOPERAL / KOPERAL 218
+SARJAN SOKONGAN 0
+KOPERAL SOKONGAN 0
+KONSTABEL  SOKONGAN  /  LANS  KOPERAL  0
+SOKONGAN / KOPERAL SOKONGAN
+JUMLAH PASUKAN SIMPANAN PERSEKUTUAN  324
+UNIT 3 PULAU PINANG BERAKHIR PADA 31 MEI 
+2020
+
+___
+
+Candidate text is:
+___
+PASUKAN SIMPANAN PERSEKUTUAN UNIT 3 PULAU PINANG  
+BERAKHIR PADA 31 MEI 2020 
+PANGKAT  PERJAWATAN 
+SUPERINTENDEN  1 
+DEPUTI SUPERINTENDEN  1 
+ASISTAN SUPERINTENDEN POLIS  4 
+INSPEKTOR  7 
+SUB-INSPEKTOR  0 
+SARJAN MEJAR  4 
+SARJAN / SARJAN MEJAR  21 
+KOPERAL  68 
+KONSTABEL / LANS KOPERAL / KOPERAL  218 
+SARJAN SOKONGAN  0 
+KOPERAL SOKONGAN  0 
+KONSTABEL  SOKONGAN  /  LANS  KOPERAL  0 
+SOKONGAN / KOPERAL SOKONGAN 
+JUMLAH PASUKAN SIMPANAN PERSEKUTUAN  324 
+UNIT 3 PULAU PINANG BERAKHIR PADA 31 MEI 
+2020 
+
+___
+
+10122020
+Anchor row is: Bil Butiran Projek Kos  Tarikh Siap
+Table text similarity score is: 100
+Table text is:
+___
+Bil Butiran Projek Kos  Tarikh Siap
+(RM)
+1. Kerja-kerja mengganti bumbung di  600,000 14.10.2020
+tiga blok (blok 16,17,22).
+2. Kerja-kerja mengganti 60 unit  600,000 14.10.2020
+handrail di 10 blok (blok 1-3,10,13-
+16,18-19,20).
+3. Kerja-kerja membaik pulih dan  400,000 25.11.2020
+mengganti pam di loji rawatan air 
+kumbahan.
+4. Kerja-kerja menurap permukaan  600,000 14.10.2020
+jalan blok satu - blok 15.
+5. Kerja-kerja menurap permukaan  500,000 14.10.2020
+jalan blok 16 - blok 22.
+6. Kerja-kerja menyelenggara dan baik  200,000 17.9.2020
+pulih perabot jalan dan papan tanda.
+7. Kerja-kerja mengganti empat tapak  200,000 14.10.2020
+alat permainan kanak-kanak.
+8. Kerja-kerja membaik pulih  200,000 30.9.2020
+gelanggang futsal.
+JUMLAH  3,300,00 
+0
+
+___
+
+Candidate text is:
+___
+Bil  Butiran Projek  Kos  Tarikh Siap 
+(RM) 
+1.  Kerja-kerja mengganti bumbung di  600,000  14.10.2020 
+tiga blok (blok 16,17,22).            
+2.  Kerja-kerja mengganti 60 unit  600,000  14.10.2020 
+handrail di 10 blok (blok 1-3,10,13-
+16,18-19,20).    
+3.  Kerja-kerja membaik pulih dan  400,000  25.11.2020 
+mengganti pam di loji rawatan air 
+kumbahan. 
+4.  Kerja-kerja menurap permukaan  600,000  14.10.2020 
+jalan blok satu - blok 15. 
+5.  Kerja-kerja menurap permukaan  500,000  14.10.2020 
+jalan blok 16 - blok 22. 
+6.  Kerja-kerja menyelenggara dan baik  200,000  17.9.2020  
+pulih perabot jalan dan papan tanda. 
+7.  Kerja-kerja mengganti empat tapak  200,000  14.10.2020 
+alat permainan kanak-kanak. 
+8.  Kerja-kerja membaik pulih  200,000  30.9.2020  
+gelanggang futsal. 
+JUMLAH  3,300,00  
+0 
+
+___
+
+10122020
+Anchor row is: 1. RT1T  22.6.2003 21.6.2005 90 63
+Table text similarity score is: 93
+Table text is:
+___
+Bil. Jenis  Tarikh  Bilangan 
+Rumah
+  PJB* Patut  Rumah Pembeli
+Siap
+1. RT1T  22.6.2003 21.6.2005 90 63
+(rumah 
+teres 
+satu 
+tingkat)
+2. RT2T  - - 323 -
+(rumah 
+teres 
+dua 
+tingkat)
+3. RK2T  22.6.2003 21.6.2005 20 10
+(rumah 
+kedai 
+dua 
+tingkat)
+Jumlah    433 73
+
+___
+
+Candidate text is:
+___
+Tarikh  Bilangan 
+Jenis 
+Bil.  Patut 
+Rumah  PJB*  Rumah  Pembeli 
+Siap 
+1.  RT1T  22.6.2003  21.6.2005  90  63 
+(rumah 
+teres 
+satu 
+tingkat) 
+2.  RT2T  -  -  323  - 
+(rumah 
+teres 
+dua 
+tingkat) 
+3.  RK2T  22.6.2003  21.6.2005  20  10 
+(rumah 
+kedai 
+dua 
+tingkat) 
+Jumlah  433  73 
+
+___
+
+09122020
+Anchor row is: Tarikh Catatan
+Table text similarity score is: 100
+Table text is:
+___
+Tarikh Catatan
+23 Ogos  Dua buah feri beroperasi pada waktu siang iaitu feri 
+2020 Pulau Undan dan Pulau Angsa. Pada waktu malam, 
+hanya  Pulau  Angsa  yang  beroperasi  dan  tamat 
+pada jam 12.50 pagi
+24 Ogos  Pada jam 1 pagi, Pihak Pengurusan Rapid Ferry 
+2020 dimaklumkan tentang kerosakan berikut :  
+(a) Pulau Angsa – sistem penapisan rosak 
+(b) Pulau Undan – sistem enjin ada masalah 
+ 
+Kerja-kerja  pembaikan  telah  dilakukan  dengan 
+segera namun tidak berjaya. Hal ini kerana sistem 
+penapisan feri Pulau Angsa tersumbat teruk dan 
+memerlukan  khidmat  penyelam  untuk  kerja 
+pembersihan dari dasar feri 
+ 
+Pada jam 5 pagi, Pihak Pengurusan Rapid Ferry 
+telah  menyelaraskan  perkhidmatan  bas  Rapid 
+Penang untuk membawa penumpang feri
+25 Ogos  Feri  Pulau  Angsa  berjaya  dibaiki  dan  mula 
+2020 beroperasi pada awal pagi
+29 Ogos  Feri  Pulau  Undan  mula  beroperasi  setelah 
+2020 pembaikan fabrikasi dilakukan. Namun, kekerapan 
+operasi  dikurangkan  kerana  feri  ini  memerlukan 
+penggantian shaf utama yang masih dalam proses 
+fabrikasi
+
+___
+
+Candidate text is:
+___
+Tarikh  Catatan 
+23 Ogos  Dua buah feri beroperasi pada waktu siang iaitu feri 
+2020  Pulau Undan dan Pulau Angsa. Pada waktu malam, 
+hanya  Pulau  Angsa  yang  beroperasi  dan  tamat 
+pada jam 12.50 pagi 
+24 Ogos  Pada jam 1 pagi, Pihak Pengurusan Rapid Ferry 
+2020  dimaklumkan tentang kerosakan berikut :  
+(a) Pulau Angsa – sistem penapisan rosak 
+(b) Pulau Undan – sistem enjin ada masalah 
+ 
+Kerja-kerja  pembaikan  telah  dilakukan  dengan 
+segera namun tidak berjaya. Hal ini kerana sistem 
+penapisan feri Pulau Angsa tersumbat teruk dan 
+memerlukan  khidmat  penyelam  untuk  kerja 
+pembersihan dari dasar feri 
+ 
+Pada jam 5 pagi, Pihak Pengurusan Rapid Ferry 
+telah  menyelaraskan  perkhidmatan  bas  Rapid 
+Penang untuk membawa penumpang feri 
+25 Ogos  Feri  Pulau  Angsa  berjaya  dibaiki  dan  mula 
+2020  beroperasi pada awal pagi 
+29 Ogos  Feri  Pulau  Undan  mula  beroperasi  setelah 
+2020  pembaikan fabrikasi dilakukan. Namun, kekerapan 
+operasi  dikurangkan  kerana  feri  ini  memerlukan 
+penggantian shaf utama yang masih dalam proses 
+fabrikasi 
+
+___
+
+12082020
+Anchor row is: KPKT 164 5 C24 : Jalan Daya 
+Table text similarity score is: 100
+Table text is:
+___
+Pemasangan  Bilangan CCTV  Bilangan  Lokasi CCTV
+Oleh: di Negeri  CCTV di 
+Johor: Parlimen 
+Tebrau:
+KPKT 164 5 C24 : Jalan Daya 
+(Perhentian Teksi) 
+C25 : Jalan Daya 
+/Jalan Pinang 
+C26 : Jalan Daya 1 
+C28 : Kampung 
+Melayu Pandan 
+C30 : Jalan Kota 
+Tinggi/McD
+PBT 491 5 C14 : Jalan 
+Kempas Lama/ 
+Lebuhraya Utara 
+Selatan 
+C15 : Jalan 
+Kempas Spur/ 
+Jalan Kempas 
+lama 
+C22 : 
+Persimpangan 
+Jalan Kota Tinggi/ 
+Jalan Ulu Tiram 
+C23 : 
+Persimpangan 
+Bertingkat Jalan 
+Kota 
+Tinggi/Persiaran 
+Desa Tebrau 
+C24  : Jalan Kota 
+Tinggi/ hadapan
+
+___
+
+Candidate text is:
+___
+Pemasangan  Bilangan CCTV  Bilangan  Lokasi CCTV 
+Oleh:  di Negeri  CCTV di   
+Johor:  Parlimen 
+Tebrau: 
+       
+KPKT  164  5  C24 : Jalan Daya 
+(Perhentian Teksi) 
+C25 : Jalan Daya 
+/Jalan Pinang 
+C26 : Jalan Daya 1 
+C28 : Kampung 
+Melayu Pandan 
+C30 : Jalan Kota 
+Tinggi/McD 
+ 
+       
+PBT  491  5  C14 : Jalan 
+Kempas Lama/ 
+Lebuhraya Utara 
+Selatan 
+C15 : Jalan 
+Kempas Spur/ 
+Jalan Kempas 
+lama 
+C22 : 
+Persimpangan 
+Jalan Kota Tinggi/ 
+Jalan Ulu Tiram 
+C23 : 
+Persimpangan 
+Bertingkat Jalan 
+Kota 
+Tinggi/Persiaran 
+Desa Tebrau 
+C24  : Jalan Kota 
+Tinggi/ hadapan 
+
+___
+
+12082020
+Anchor row is: Pemasangan  Bilangan CCTV  Bilangan  Lokasi CCTV
+Table text similarity score is: 100
+Table text is:
+___
+Pemasangan  Bilangan CCTV  Bilangan  Lokasi CCTV
+Oleh: di Negeri  CCTV di 
+Johor: Parlimen 
+Tebrau:
+   Pasar Borong 
+Pandan
+JUMLAH 655 10 
+
+___
+
+Candidate text is:
+___
+Pemasangan  Bilangan CCTV  Bilangan  Lokasi CCTV 
+Oleh:  di Negeri  CCTV di   
+Johor:  Parlimen 
+Tebrau: 
+Pasar Borong 
+Pandan 
+ 
+JUMLAH  655  10   
+
+___
+
+06082020
+Anchor row is: BIL NAMA SEKOLAH TAHUN 2018  TAHUN 2019 
+Table text similarity score is: 100
+Table text is:
+___
+BIL NAMA SEKOLAH TAHUN 2018  TAHUN 2019 
+(RM) (RM)
+1 SMK Pendidikan Khas Persekutuan (P) - -
+2 SMK Tanjong Bunga 20,000 30,000
+3 SMK (P) St George 50,000 150,000
+4 SMK Convent Pulau Tikus 100,000 150,000
+5 SMK Padang Polo 20,000 20,000
+6 SMK Tunku Puan Habsah 20,000 50,000
+7 SMK Perempuan China Pulau Pinang 285,000 80,000
+8 SK Batu Feringghi 20,000 70,000
+9 SK Tanjong Bunga 20,000 40,000
+10 SK Tanjong Tokong 20,000 28,500
+11 SK Padang Tembak 185,000 110,000
+12 SK St Xavier 100,000 30,000
+13 SK Jalan Residensi 20,000 78,000
+14 SK Dato Kramat 20,000 65,000
+15 SK Francis Light 80,000 38,000
+16 SK Convent Pulau Tikus 20,000 40,000
+17 SK St Xavier Cawangan 150,000 30,000
+18 SK Pendidikan Khas Persekutuan - -
+19 SJK (Cina) Pai Chai 40,000 20,000
+20 SJK (Cina) Poay Wah 40,000 25,000
+21 SJK (Cina) Hun Bin 150,000 85,000
+22 SJK (Cina) Phor Tay 65,000 55,000
+23 SJK (Cina) Perempuan China 180,000 120,000
+24 SJK (Cina) Shang Wu 100,000 120,000
+25 SJK (Tamil) Azad 50,000 30,000
+26 SJK (Tamil) Rajaji 30,000 50,000
+JUMLAH  1,785,000.00 1,514,500.00
+
+___
+
+Candidate text is:
+___
+BIL  NAMA SEKOLAH  TAHUN 2018  TAHUN 2019 
+(RM)  (RM) 
+1  SMK Pendidikan Khas Persekutuan (P)  -  - 
+2  SMK Tanjong Bunga  20,000  30,000 
+3  SMK (P) St George  50,000  150,000 
+4  SMK Convent Pulau Tikus  100,000  150,000 
+5  SMK Padang Polo  20,000  20,000 
+6  SMK Tunku Puan Habsah  20,000  50,000 
+7  SMK Perempuan China Pulau Pinang  285,000  80,000 
+8  SK Batu Feringghi  20,000  70,000 
+9  SK Tanjong Bunga  20,000  40,000 
+10  SK Tanjong Tokong  20,000  28,500 
+11  SK Padang Tembak  185,000  110,000 
+12  SK St Xavier  100,000  30,000 
+13  SK Jalan Residensi  20,000  78,000 
+14  SK Dato Kramat  20,000  65,000 
+15  SK Francis Light   80,000  38,000 
+16  SK Convent Pulau Tikus  20,000  40,000 
+17  SK St Xavier Cawangan  150,000  30,000 
+18  SK Pendidikan Khas Persekutuan  -  - 
+19  SJK (Cina) Pai Chai  40,000  20,000 
+20  SJK (Cina) Poay Wah  40,000  25,000 
+21  SJK (Cina) Hun Bin  150,000  85,000 
+22  SJK (Cina) Phor Tay  65,000  55,000 
+23  SJK (Cina) Perempuan China  180,000  120,000 
+24  SJK (Cina) Shang Wu  100,000  120,000 
+25  SJK (Tamil) Azad  50,000  30,000 
+26  SJK (Tamil) Rajaji  30,000  50,000 
+JUMLAH  1,785,000.00  1,514,500.00 
+
+___
+
+06082020
+Anchor row is: 1 SMK Pendidikan Khas Persekutuan (P) 269,463
+Table text similarity score is: 100
+Table text is:
+___
+BIL NAMA SEKOLAH TAHUN 2020 (RM)
+1 SMK Pendidikan Khas Persekutuan (P) 269,463
+2 SMK Tanjong Bunga 25,000
+3 SMK (P) St George 220,000
+4 SMK Convent Pulau Tikus Dalam proses penilaian agihan
+5 SMK Padang Polo 110,000
+6 SMK Tunku Puan Habsah 100,000
+7 SMK Perempuan China Pulau Pinang Dalam proses penilaian agihan
+8 SK Batu Feringghi 50,000
+9 SK Tanjong Bunga 56,500
+10 SK Tanjong Tokong 140,000
+11 SK Padang Tembak 50,000
+12 SK St Xavier Dalam proses penilaian agihan
+13 SK Jalan Residensi 60,000
+
+___
+
+Candidate text is:
+___
+BIL  NAMA SEKOLAH  TAHUN 2020 (RM) 
+1  SMK Pendidikan Khas Persekutuan (P)  269,463 
+2  SMK Tanjong Bunga  25,000 
+3  SMK (P) St George  220,000 
+4  SMK Convent Pulau Tikus  Dalam proses penilaian agihan 
+5  SMK Padang Polo  110,000 
+6  SMK Tunku Puan Habsah  100,000 
+7  SMK Perempuan China Pulau Pinang  Dalam proses penilaian agihan 
+8  SK Batu Feringghi  50,000 
+9  SK Tanjong Bunga  56,500 
+10  SK Tanjong Tokong  140,000 
+11  SK Padang Tembak  50,000 
+12  SK St Xavier  Dalam proses penilaian agihan 
+13  SK Jalan Residensi  60,000 
+
+___
+
+06082020
+Anchor row is: BIL NAMA SEKOLAH TAHUN 2020 (RM)
+Table text similarity score is: 100
+Table text is:
+___
+BIL NAMA SEKOLAH TAHUN 2020 (RM)
+14 SK Dato Kramat 20,000
+15 SK Francis Light 60,000
+16 SK Convent Pulau Tikus 60,000
+17 SK St Xavier Cawangan Dalam proses penilaian agihan
+18 SK Pendidikan Khas Persekutuan 67,200
+19 SJK (Cina) Pai Chai Dalam proses penilaian agihan
+20 SJK (Cina) Poay Wah Dalam proses penilaian agihan
+21 SJK (Cina) Hun Bin Dalam proses penilaian agihan
+22 SJK (Cina) Phor Tay Dalam proses penilaian agihan
+23 SJK (Cina) Perempuan China Dalam proses penilaian agihan
+24 SJK (Cina) Shang Wu Dalam proses penilaian agihan
+25 SJK (Tamil) Azad Dalam proses penilaian agihan
+26 SJK (Tamil) Rajaji Dalam proses penilaian agihan
+ JUMLAH 1,348,163.00
+
+___
+
+Candidate text is:
+___
+BIL  NAMA SEKOLAH  TAHUN 2020 (RM) 
+14  SK Dato Kramat  20,000 
+15  SK Francis Light   60,000 
+16  SK Convent Pulau Tikus  60,000 
+17  SK St Xavier Cawangan  Dalam proses penilaian agihan 
+18  SK Pendidikan Khas Persekutuan  67,200 
+19  SJK (Cina) Pai Chai  Dalam proses penilaian agihan 
+20  SJK (Cina) Poay Wah  Dalam proses penilaian agihan 
+21  SJK (Cina) Hun Bin  Dalam proses penilaian agihan 
+22  SJK (Cina) Phor Tay  Dalam proses penilaian agihan 
+23  SJK (Cina) Perempuan China  Dalam proses penilaian agihan 
+24  SJK (Cina) Shang Wu  Dalam proses penilaian agihan 
+25  SJK (Tamil) Azad  Dalam proses penilaian agihan 
+26  SJK (Tamil) Rajaji  Dalam proses penilaian agihan 
+  JUMLAH  1,348,163.00 
+
+___
+
+06082020
+Anchor row is: MENERIMA EMK
+Table text similarity score is: 98
+Table text is:
+___
+BIL. NAMA SEKOLAH JUMLAH MBK 
+MENERIMA EMK
+1 SK Tanjong Tokong 2
+2 SK Tanjung Bunga 23
+3 SK Batu Feringghi 2
+4 SK Padang Tembak 1
+5 SK St Xavier Cawangan 2
+6 SK Francis Light 16
+7 SK St Xavier 8
+8 SK Dato Kramat 2
+9 SJKC Hun Bin 2
+10 SJKC Poay Wah 1
+11 SJKC Shang Wu 2
+12 SJKC Phor Tay 4
+13 SK Pendidikan Khas Persekutuan Pulau Pinang 27
+14 SMK Pendidikan Khas Persekutuan Pulau Pinang 109
+15 SMK Tanjong Bunga 27
+16 SMK Phor Tay 37
+17 SMJK Perempuan China Pulau Pinang 1
+18 SMK (P) St George 4
+19 SMK Convent Pulau Tikus 1
+20 SMK Padang Polo 125
+21 SMK Tunku Puan Habsah 3
+JUMLAH  399
+
+___
+
+Candidate text is:
+___
+JUMLAH MBK 
+BIL.  NAMA SEKOLAH 
+MENERIMA EMK 
+1  SK Tanjong Tokong  2 
+2  SK Tanjung Bunga  23 
+3  SK Batu Feringghi  2 
+4  SK Padang Tembak  1 
+5  SK St Xavier Cawangan  2 
+6  SK Francis Light  16 
+7  SK St Xavier  8 
+8  SK Dato Kramat  2 
+9  SJKC Hun Bin  2 
+10  SJKC Poay Wah  1 
+11  SJKC Shang Wu  2 
+12  SJKC Phor Tay  4 
+13  SK Pendidikan Khas Persekutuan Pulau Pinang  27 
+14  SMK Pendidikan Khas Persekutuan Pulau Pinang  109 
+15  SMK Tanjong Bunga  27 
+16  SMK Phor Tay   37 
+17  SMJK Perempuan China Pulau Pinang  1 
+18  SMK (P) St George  4 
+19  SMK Convent Pulau Tikus  1 
+20  SMK Padang Polo  125 
+21  SMK Tunku Puan Habsah  3 
+JUMLAH  399 
+
+___
+
+06082020
+Anchor row is: MENERIMA 
+Table text similarity score is: 75
+Table text is:
+___
+BIL. NAMA SEKOLAH BIL. MBK 
+YANG 
+MENERIMA 
+RMT
+1 Sekolah Jenis Kebangsaan (Cina) Hun Bin 2
+2 Sekolah Jenis Kebangsaan (Cina) Phor Tay 5
+3 Sekolah Jenis Kebangsaan (Cina) Poay Wah 1
+4 Sekolah Jenis Kebangsaan (Cina) Shang Wu 2
+
+___
+
+Candidate text is:
+___
+Senarai Sekolah dan Bilangan Penerima Rancangan Makanan Tambahan (RMT) Dalam Parlimen Bukit 
+Bendera 
+ 
+BIL. MBK 
+YANG 
+MENERIMA 
+BIL.  NAMA SEKOLAH  RMT 
+1  Sekolah Jenis Kebangsaan (Cina) Hun Bin  2 
+2  Sekolah Jenis Kebangsaan (Cina) Phor Tay  5 
+3  Sekolah Jenis Kebangsaan (Cina) Poay Wah  1 
+4  Sekolah Jenis Kebangsaan (Cina) Shang Wu  2 
+
+___
+
+06082020
+Anchor row is: 5 Sekolah Kebangsaan Batu Feringghi 2
+Table text similarity score is: 100
+Table text is:
+___
+5 Sekolah Kebangsaan Batu Feringghi 2
+6 Sekolah Kebangsaan Dato Kramat 2
+7 Sekolah Kebangsaan Francis Light 17
+8 Sekolah Kebangsaan Padang Tembak 2
+9 Sekolah Kebangsaan St Xavier 8
+10 Sekolah Kebangsaan St Xavier Cawangan 2
+11 Sekolah Kebangsaan Tan Sri P.Ramlee 40
+12 Sekolah Kebangsaan Tanjong Tokong 2
+13 Sekolah Kebangsaan Tanjung Bunga 23
+ JUMLAH 108
+
+___
+
+Candidate text is:
+___
+5  Sekolah Kebangsaan Batu Feringghi  2 
+6  Sekolah Kebangsaan Dato Kramat  2 
+7  Sekolah Kebangsaan Francis Light  17 
+8  Sekolah Kebangsaan Padang Tembak  2 
+9  Sekolah Kebangsaan St Xavier  8 
+10  Sekolah Kebangsaan St Xavier Cawangan  2 
+11  Sekolah Kebangsaan Tan Sri P.Ramlee  40 
+12  Sekolah Kebangsaan Tanjong Tokong  2 
+13  Sekolah Kebangsaan Tanjung Bunga  23 
+   JUMLAH   108  
+
+___
+
+23072020
+Anchor row is: Permohonan Tahun 2014  Permohonan Tahun 2015 
+Table text similarity score is: 94
+Table text is:
+___
+Permohonan Tahun 2014  Permohonan Tahun 2015 
+Subjek Subjek
+Ooi Min Yi See Chai Xuan
+Chan Jiun Xin Edvin Teoh Zhi Yeh
+Ooi Wei Ern Lim Zhi Feng
+Chan Huan Eng Kooy Yi Jia
+Chan Lay Poh Tan Hock Keong
+
+___
+
+Candidate text is:
+___
+Permohonan Tahun 2014  Permohonan Tahun 2015 
+Subjek  Subjek 
+ 
+Ooi Min Yi  See Chai Xuan 
+   
+Chan Jiun Xin  Edvin Teoh Zhi Yeh 
+   
+Ooi Wei Ern  Lim Zhi Feng 
+   
+Chan Huan Eng  Kooy Yi Jia 
+   
+Tan Hock Keong 
+Chan Lay Poh 
+
+___
+
+23072020
+Anchor row is: Vinnie Lim Hong Sheng He
+Table text similarity score is: 100
+Table text is:
+___
+Vinnie Lim Hong Sheng He
+Teoh Te Yong Chea Yan Li
+Ong Kok Wei Pek Wei Chun
+Chanawee Woon Cheng Wen Jie
+Chanaport Woon 
+Lim Ching Fai 
+Ku Yin Shi No 
+
+___
+
+Candidate text is:
+___
+Vinnie Lim  Hong Sheng He 
+   
+Teoh Te Yong  Chea Yan Li 
+   
+Ong Kok Wei  Pek Wei Chun 
+   
+Chanawee Woon  Cheng Wen Jie 
+   
+Chanaport Woon 
+ 
+ 
+Lim Ching Fai 
+ 
+ 
+Ku Yin Shi No 
+
+___
+
+23072020
+Anchor row is: Pecahan Mengikut Negeri Jumlah Lesen
+Table text similarity score is: 100
+Table text is:
+___
+Pecahan Mengikut Negeri Jumlah Lesen
+Selangor 1,721
+Sarawak 1,212
+Johor 558
+Wilayah Persekutuan 537
+Pulau Pinang 413
+Sabah 400
+Perak 296
+Negeri Sembilan 216
+Pahang 210
+Melaka 109
+Kedah 95
+Perlis 12
+Kelantan 7
+Terengganu 5
+Jumlah 5,791
+
+___
+
+Candidate text is:
+___
+Pecahan Mengikut Negeri  Jumlah Lesen 
+ 
+Selangor  1,721 
+Sarawak  1,212 
+Johor   558 
+Wilayah Persekutuan   537 
+Pulau Pinang   413 
+Sabah   400 
+Perak   296 
+Negeri Sembilan  216 
+Pahang   210 
+Melaka   109 
+Kedah   95 
+Perlis   12 
+Kelantan   7 
+Terengganu   5 
+Jumlah   5,791 
+
+___
+
+23072020
+Anchor row is: Bil. Duti Eksais Jumlah (RM) Cukai Jualan Jumlah 
+Table text similarity score is: 100
+Table text is:
+___
+Bil. Duti Eksais Jumlah (RM) Cukai Jualan Jumlah 
+(RM)
+1. Import 237,550,772 Import 82,619,236
+2. Tempatan 2,031,353,992 Tempatan 259,351,452
+Jumlah  2,268,904,764 Jumlah 341,970,689
+
+___
+
+Candidate text is:
+___
+Bil.  Duti Eksais  Jumlah (RM)  Cukai Jualan  Jumlah 
+(RM) 
+1.    Import  237,550,772  Import  82,619,236 
+ 
+2.    Tempatan  2,031,353,992  Tempatan  259,351,452 
+ 
+Jumlah   2,268,904,764  Jumlah   341,970,689 
+
+___
+
+23072020
+Anchor row is: Kumpulan Umur  Melayu Bumiputera  Cina India Lain- Bukan  Jumlah
+Table text similarity score is: 100
+Table text is:
+___
+Kumpulan Umur  Melayu Bumiputera  Cina India Lain- Bukan  Jumlah
+(Tahun) Lain Lain Warganegara
+< 4 7 4 1 1 1 1 15
+5 - 19 3 1 0 0 1 0 5
+20 - 39 20 9 8 18 3 3 61
+40 - 59 236 42 68 78 22 24 467
+60 - 79 189 38 107 55 19 4 412
+>= 80 13 4 16 6 2 0 41
+Jumlah 468 98 200 158 45 32 1,001
+
+___
+
+Candidate text is:
+___
+Kumpulan Umur  Melayu  Bumiputera  Cina  India  Lain- Bukan  Jumlah 
+(Tahun)  Lain  Lain  Warganegara 
+< 4  7  4  1  1  1  1  15 
+5 - 19   3  1  0  0  1  0  5 
+20 - 39   20  9  8  18  3  3  61 
+40 - 59   236  42  68  78  22  24  467 
+60 - 79   189  38  107  55  19  4  412 
+>= 80   13  4  16  6  2  0  41 
+Jumlah  468  98  200  158  45  32  1,001 
+
+___
+
+23072020
+Anchor row is: Bi l.  Negeri Bil. Tindakan 
+Table text similarity score is: 100
+Table text is:
+___
+Bi l.  Negeri Bil. Tindakan 
+Penguatkuasaan
+1. Johor 107
+2. Pulau Pinang 200
+3. Negeri Sembilan 3
+4. Selangor 146
+5. Dewan Bandaraya Kuala Lumpur 0
+
+___
+
+Candidate text is:
+___
+Bil.  Negeri  Bil. Tindakan 
+ 
+Penguatkuasaan 
+  1.  Johor  107 
+ 
+2.  Pulau Pinang  200 
+ 
+3.  Negeri Sembilan  3 
+ 
+4.  Selangor  146 
+ 
+5.  Dewan Bandaraya Kuala Lumpur   0 
+
+___
+
+28092021
+Anchor row is: Program Bilangan Projek Kos (RM)
+Table text similarity score is: 100
+Table text is:
+___
+Program Bilangan Projek Kos (RM)
+Program  Penyelenggaraan  Perumahan  15 20.25 juta
+(PPP)
+Tabung  Penyelenggaraan  Perumahan  202 86.62 juta
+Malaysia (TPPM)
+Jumlah 217 RM106.87 juta
+
+___
+
+Candidate text is:
+___
+Program  Bilangan Projek  Kos (RM) 
+Program  Penyelenggaraan  Perumahan  15  20.25 juta 
+(PPP) 
+Tabung  Penyelenggaraan  Perumahan  202  86.62 juta 
+Malaysia (TPPM) 
+Jumlah  217  RM106.87 juta 
+
+___
+
+28092021
+Anchor row is: Bil Butiran Projek Status 
+Table text similarity score is: 100
+Table text is:
+___
+Bil Butiran Projek Status 
+Pelaksanaan 
+(Peratus)
+1. Kerja Membaiki/ Mengganti Sistem Paip  75
+Sanitari dan Kumbahan di PPR Desa 
+Mutiara, Johor Bharu Blok 1,7,16,17,18,20 
+dan 22
+2. Membaiki atau Mengganti Tangga dan  25
+Handrail di PPR Desa Mutiara, Johor Bharu 
+Blok 4,5,6 &7
+3. Membaiki atau Mengganti Tangga dan  25
+Handrail di PPR Desa Mutiara, Johor Bharu 
+Blok 8,9,11 &12
+4. Membaiki atau Mengganti Tangga dan  25
+Handrail di PPR Desa Mutiara, Johor Bharu 
+Blok 17,20 & 21
+5. Membaiki atau Mengganti Bumbung di PPR  25
+Desa Mutiara, Johor Bahru Blok 1
+6. Membaiki atau Mengganti Bumbung di PPR  Dalam 
+Desa Mutiara, Johor Bharu Blok 2 penilaian
+7. Membaiki atau Mengganti Bumbung di PPR  Dalam 
+Desa Mutiara, Johor Bharu Blok 3 penilaian
+8. Membaiki atau Mengganti Bumbung di PPR  Dalam 
+Desa Mutiara, Johor Bharu Blok 4 penilaian
+9. Membaiki atau Mengganti Bumbung di PPR  25
+Desa Mutiara, Johor Bharu Blok 5
+10. Membaiki atau Mengganti Bumbung di PPR  25
+Desa Mutiara, Johor Bharu Blok 6
+11. Membaiki atau Mengganti Bumbung di PPR  Dalam 
+Desa Mutiara, Johor Bharu Blok 10 penilaian
+12. Membaiki atau Mengganti Bumbung di PPR  25
+Desa Mutiara, Johor Bharu Blok 11
+13. Membaiki atau Mengganti Bumbung di PPR  25
+Desa Mutiara, Johor Bharu Blok 12
+14. Membaiki atau Mengganti Bumbung di PPR  25
+Desa Mutiara, Johor Bharu Blok 15
+
+___
+
+Candidate text is:
+___
+Bil  Butiran Projek  Status 
+Pelaksanaan 
+(Peratus) 
+1.  Kerja Membaiki/ Mengganti Sistem Paip  75 
+Sanitari dan Kumbahan di PPR Desa 
+Mutiara, Johor Bharu Blok 1,7,16,17,18,20 
+dan 22 
+2.  Membaiki atau Mengganti Tangga dan  25 
+Handrail di PPR Desa Mutiara, Johor Bharu 
+Blok 4,5,6 &7 
+3.  Membaiki atau Mengganti Tangga dan  25 
+Handrail di PPR Desa Mutiara, Johor Bharu 
+Blok 8,9,11 &12 
+4.  Membaiki atau Mengganti Tangga dan  25 
+Handrail di PPR Desa Mutiara, Johor Bharu 
+Blok 17,20 & 21 
+5.  Membaiki atau Mengganti Bumbung di PPR  25 
+Desa Mutiara, Johor Bahru Blok 1 
+6.  Membaiki atau Mengganti Bumbung di PPR  Dalam 
+Desa Mutiara, Johor Bharu Blok 2 
+penilaian 
+7.  Membaiki atau Mengganti Bumbung di PPR  Dalam 
+Desa Mutiara, Johor Bharu Blok 3 
+penilaian 
+8.  Membaiki atau Mengganti Bumbung di PPR  Dalam 
+Desa Mutiara, Johor Bharu Blok 4 
+penilaian 
+9.  Membaiki atau Mengganti Bumbung di PPR  25 
+Desa Mutiara, Johor Bharu Blok 5 
+10.  Membaiki atau Mengganti Bumbung di PPR  25 
+Desa Mutiara, Johor Bharu Blok 6 
+11.  Membaiki atau Mengganti Bumbung di PPR  Dalam 
+Desa Mutiara, Johor Bharu Blok 10 
+penilaian 
+12.  Membaiki atau Mengganti Bumbung di PPR  25 
+Desa Mutiara, Johor Bharu Blok 11 
+13.  Membaiki atau Mengganti Bumbung di PPR  25 
+Desa Mutiara, Johor Bharu Blok 12 
+14.  Membaiki atau Mengganti Bumbung di PPR  25 
+Desa Mutiara, Johor Bharu Blok 15 
+
+___
+
+04102021
+Anchor row is: 2. Mawai Biru Kota Tinggi Sedili Kota Tinggi
+Table text similarity score is: 78
+Table text is:
+___
+1. Desa  Batu Pahat Rengit Batu Pahat
+Parit Tengah
+2. Mawai Biru Kota Tinggi Sedili Kota Tinggi
+3. FB Sungai Ara Kota Tinggi Sedili Kota Tinggi
+4. Melayu Raya Pontian Pekan  Tanjong Piai
+Nenas
+5. Parit Sapran Pontian Pulai  Pontian
+Sebatang
+6. Perpat Timbul Pontian Kukup Tanjong Piai
+7. Melayu Niyor Kluang Paloh Sembrong
+8. Batu 3 1/2 Paloh Kluang Paloh Sembrong
+9. Air Merah Mersing Endau Mersing
+10. FB Sri Mahkota Mersing Endau Mersing
+11. Pok Johor  Nusa Jaya Iskandar Putri
+Bahru
+12. Murni Jaya Kulai Jaya Bukit  Kulai
+Permai
+13. Parit Bugis Muar Sungai  Muar
+Balang
+14. FB Bukit Kepong Segamat Bukit  Pagoh
+Serampang
+15. Lenga/Batu 28 Lenga Muar Bukit  Pagoh
+Serampang
+16. Batu 18 Muar Bukit  Bakri
+Naning
+17. Panchor/Melayu  Muar Jorak Pagoh
+Panchor
+18. Desa Temu Jodoh Segamat Bekok Labis
+19. Kompleks  Penghulu  Muar Bukit  Pagoh
+Bukit Kepong Serampang
+
+___
+
+Candidate text is:
+___
+Desa 
+1.  Parit Tengah  Batu Pahat  Rengit  Batu Pahat 
+2.  Mawai Biru  Kota Tinggi  Sedili  Kota Tinggi 
+3.  FB Sungai Ara  Kota Tinggi  Sedili  Kota Tinggi 
+Pekan 
+4.  Melayu Raya  Pontian  Tanjong Piai 
+Nenas 
+Pulai 
+5.  Parit Sapran  Pontian  Pontian 
+Sebatang 
+6.  Perpat Timbul  Pontian  Kukup  Tanjong Piai 
+7.  Melayu Niyor  Kluang  Paloh  Sembrong 
+8.  Batu 3 1/2 Paloh  Kluang  Paloh  Sembrong 
+9.  Air Merah  Mersing  Endau  Mersing 
+10.  FB Sri Mahkota  Mersing  Endau  Mersing 
+Johor 
+11.  Pok  Nusa Jaya  Iskandar Putri 
+Bahru 
+Bukit 
+12.  Murni Jaya  Kulai Jaya  Kulai 
+Permai 
+Sungai 
+13.  Parit Bugis  Muar  Muar 
+Balang 
+Bukit 
+14.  FB Bukit Kepong  Segamat  Pagoh 
+Serampang 
+Bukit 
+15.  Lenga/Batu 28 Lenga  Muar  Pagoh 
+Serampang 
+Bukit 
+16.  Batu 18  Muar  Bakri 
+Naning 
+Panchor/Melayu 
+17.  Muar  Jorak  Pagoh 
+Panchor 
+18.  Desa Temu Jodoh  Segamat  Bekok  Labis 
+Kompleks  Penghulu  Bukit 
+19.  Muar  Pagoh 
+Bukit Kepong  Serampang 
+
+___
+
+04102021
+Anchor row is: 21. Tanjung Sedili Kota Tinggi Sedili Kota Tinggi
+Table text similarity score is: 92
+Table text is:
+___
+20. Desa  Kluang Layang- Simpang 
+Layang-layang layang Renggam
+21. Tanjung Sedili Kota Tinggi Sedili Kota Tinggi
+22. Bukit Raja Kota Tinggi Tanjong  Pengerang
+Surat
+23. Kahang Kluang Kahang Sembrong
+24. Kulai Kulai Kulai Kulai
+
+___
+
+Candidate text is:
+___
+Desa 
+Layang- Simpang 
+20.  Layang-layang  Kluang 
+layang  Renggam 
+21.  Tanjung Sedili  Kota Tinggi  Sedili  Kota Tinggi 
+Tanjong 
+22.  Bukit Raja  Kota Tinggi  Pengerang 
+Surat 
+23.  Kahang  Kluang  Kahang  Sembrong 
+24.  Kulai  Kulai  Kulai  Kulai 
+
+___
+
+04102021
+Anchor row is: OBL Maju Sdn. Bhd. 3,000-10,000
+Table text similarity score is: 90
+Table text is:
+___
+Pertama Padi (Malaysia) Sdn. Bhd. Padi Sah (Metrik Tan) 
+2,000-20,000
+OBL Maju Sdn. Bhd. 3,000-10,000
+Kilang Beras Seri Merbok Sdn. Bhd. 2,000-6,000
+Kilang Beras Bagan Serai Sdn. Bhd. 3,000-10,000
+Kilang Beras Jelapang Selatan Muar Sdn. Bhd. 2,000-6,000
+Padi Pukal Parit 7 (Sekincan) Sdn. Bhd. 2,000-7,000
+Dataran Pusaka Sdn. Bhd. 3,000-10,000
+Haji Md.Nor Bin Haji Abd.Rahman (M) Sdn. Bhd. 3,000-10,000
+
+___
+
+Candidate text is:
+___
+Padi Sah (Metrik Tan) 
+Pertama Padi (Malaysia) Sdn. Bhd.  2,000-20,000 
+OBL Maju Sdn. Bhd.  3,000-10,000 
+Kilang Beras Seri Merbok Sdn. Bhd.  2,000-6,000 
+Kilang Beras Bagan Serai Sdn. Bhd.  3,000-10,000 
+Kilang Beras Jelapang Selatan Muar Sdn. Bhd.  2,000-6,000 
+Padi Pukal Parit 7 (Sekincan) Sdn. Bhd.  2,000-7,000 
+Dataran Pusaka Sdn. Bhd.  3,000-10,000 
+Haji Md.Nor Bin Haji Abd.Rahman (M) Sdn. Bhd.  3,000-10,000 
+
+___
+
+04102021
+Anchor row is: Syarikat Perniagaan Peladang MADA Sdn. Bhd. 5,000-13,000
+Table text similarity score is: 79
+Table text is:
+___
+(Pertubuhan Peladang Kawasan (PPK) Puteri  Padi Sah (Metrik Tan) 
+Saadong 2,000-5,000
+Syarikat Perniagaan Peladang MADA Sdn. Bhd. 5,000-13,000
+Pertubuhan  Peladang  Kawasan  (PPK)  Lahar  2,000-6,000
+Bubu
+FELCRA Plantation Sdn. Bhd. 2,000-6,000
+
+___
+
+Candidate text is:
+___
+Padi Sah (Metrik Tan) 
+(Pertubuhan Peladang Kawasan (PPK) Puteri  2,000-5,000 
+Saadong 
+Syarikat Perniagaan Peladang MADA Sdn. Bhd.  5,000-13,000 
+Pertubuhan  Peladang  Kawasan  (PPK)  Lahar  2,000-6,000 
+Bubu 
+FELCRA Plantation Sdn. Bhd.  2,000-6,000 
+
+___
+
+29112021
+Anchor row is: Bil. Daerah Bilangan Kejadian Banjir
+Table text similarity score is: 100
+Table text is:
+___
+Bil. Daerah Bilangan Kejadian Banjir
+1. Kubang Pasu 5
+2. Kuala Muda 4
+
+___
+
+Candidate text is:
+___
+Bil.  Daerah  Bilangan Kejadian Banjir 
+1.  Kubang Pasu  5 
+2.  Kuala Muda  4 
+
+___
+
+29112021
+Anchor row is: 3. Baling 3
+Table text similarity score is: 100
+Table text is:
+___
+3. Baling 3
+4. Kota Setar 2
+5. Kulim 2
+6. Langkawi 1
+Jumlah  17
+
+___
+
+Candidate text is:
+___
+  3.  Baling  3 
+4.  Kota Setar  2 
+5.  Kulim  2 
+6.  Langkawi  1 
+Jumlah  17 
+
+___
+
+11102021
+Anchor row is: (orang)
+Table text similarity score is: 95
+Table text is:
+___
+Bil Kategori Pemohon Jumlah 
+(orang)
+1. Orang awam (Undian terbuka) 332
+2. Penerima  bantuan  Jabatan  Kebajikan  22
+Masyarakat (JKM), Majlis Agama Islam Negeri 
+Johor  (MAIJ)  dan  Yayasan  Bandaraya  Johor 
+Bahru
+3. Setinggan 88
+Jumlah keseluruhan  442
+
+___
+
+Candidate text is:
+___
+Jumlah 
+Bil  Kategori Pemohon 
+(orang) 
+1.  Orang awam (Undian terbuka)  332 
+Penerima  bantuan  Jabatan  Kebajikan 
+Masyarakat (JKM), Majlis Agama Islam Negeri 
+2.  22 
+Johor  (MAIJ)  dan  Yayasan  Bandaraya  Johor 
+Bahru 
+3.  Setinggan  88 
+Jumlah keseluruhan  442 
+
+___
+
+13122021
+Anchor row is: Bomba Keanggotaan
+Table text similarity score is: 86
+Table text is:
+___
+Bil. Nama Balai  Kategori Jumlah 
+Bomba Keanggotaan
+1. BBP Kuala Kubu  C 29
+Bharu
+2. BBP Bukit Sentosa C 33
+
+___
+
+Candidate text is:
+___
+Nama Balai  Jumlah 
+Bil.  Kategori 
+Bomba  Keanggotaan 
+BBP Kuala Kubu 
+1.  C  29 
+Bharu 
+2.  BBP Bukit Sentosa  C  33 
+
+___
+
+12102021
+Anchor row is: Tarikh Kawasan berlaku banjir
+Table text similarity score is: 100
+Table text is:
+___
+Tarikh Kawasan berlaku banjir
+29 September 2021 Kampung  Melayu  Bukit  Batu, 
+Kampung  Sungai  Siam,  Murni 
+Jaya
+18 September 2021 J104 Jalan Sengkang di depan 
+kilang Lee Soon Seng, Kampung 
+Baru  Kelapa  Sawit,  Taman 
+Palma Sawit, Taman Sawit Indah
+16 September 2021 Taman  Palma  Sawit,  Taman 
+Sawit Indah
+4 September 2021 Taman  Aman,  Kampung  Jaya 
+Sepakat,  Taman  Perindustrian 
+Senai, Jalan Persekutuan (Kulai 
+Besar)
+2 September 2021 Taman Sri Muhibah
+13 Ogos 2021 Jalan  Persekutuan  (Batu  21), 
+Taman Sri Kulai Baru 2, Taman 
+Sri Muhibah, Taman Selatan
+
+___
+
+Candidate text is:
+___
+Tarikh  Kawasan berlaku banjir 
+29 September 2021  Kampung  Melayu  Bukit  Batu, 
+Kampung  Sungai  Siam,  Murni 
+Jaya 
+18 September 2021  J104 Jalan Sengkang di depan 
+kilang Lee Soon Seng, Kampung 
+Baru  Kelapa  Sawit,  Taman 
+Palma Sawit, Taman Sawit Indah 
+16 September 2021  Taman  Palma  Sawit,  Taman 
+Sawit Indah 
+4 September 2021  Taman  Aman,  Kampung  Jaya 
+Sepakat,  Taman  Perindustrian 
+Senai, Jalan Persekutuan (Kulai 
+Besar) 
+2 September 2021  Taman Sri Muhibah 
+13 Ogos 2021  Jalan  Persekutuan  (Batu  21), 
+Taman Sri Kulai Baru 2, Taman 
+Sri Muhibah, Taman Selatan 
+
+___
+
+12102021
+Anchor row is: Bil. Tahun Perbelanjaan (RM) Jumlah Projek
+Table text similarity score is: 99
+Table text is:
+___
+Bil. Tahun Perbelanjaan (RM) Jumlah Projek
+1. 2017 1,154,271.60 8
+2. 2018 804,440.00 12
+3. 2019 485,630.00 5
+4. 2020 1,248,578.00 19
+5. 2021  300,000.00 6
+(PEMERKASA)
+Jumlah  3,992,919.60 50
+
+___
+
+Candidate text is:
+___
+Bil.  Tahun  Perbelanjaan (RM)  Jumlah Projek 
+1.  2017  1,154,271.60  8 
+2.  2018  804,440.00  12 
+3.  2019  485,630.00  5 
+4.  2020  1,248,578.00  19 
+2021 
+5.  300,000.00  6 
+(PEMERKASA) 
+Jumlah  3,992,919.60  50 
+
+___
+
+01112021
+Anchor row is: 1. JKKK Kampung Kuala Kubu Bharu 7
+Table text similarity score is: 100
+Table text is:
+___
+Bil.  Nama Pasukan (Bomba Komuniti)  Ahli 
+1. JKKK Kampung Kuala Kubu Bharu 7
+2. JKKK Kampung Melayu Rasa 7
+3. JKKK Kampung Asam Kumbang 7
+4. JKKK Ampang Pecah 7
+5. Melor Response Team 10
+6. Kampung Dato' Harun, Serendah 15
+7. Persatuan Penduduk Wawasan Fasa 5 10
+8. Jabatan Kerja Raya Kuala Kubu Bharu 12
+9. Kalumpang 12
+10. Kampung Genting Malik 11
+11. Kerling 7
+Jumlah Keseluruhan  105
+
+___
+
+Candidate text is:
+___
+Bil.  Nama Pasukan (Bomba Komuniti) 
+Ahli 
+ 
+1.  JKKK Kampung Kuala Kubu Bharu  7 
+2.  JKKK Kampung Melayu Rasa  7    
+3.  JKKK Kampung Asam Kumbang  7   
+4.  JKKK Ampang Pecah  7 
+ 
+5.  Melor Response Team  10 
+6.  Kampung Dato' Harun, Serendah  15   
+7.  Persatuan Penduduk Wawasan Fasa 5  10 
+ 
+8.  Jabatan Kerja Raya Kuala Kubu Bharu  12 
+  9.  Kalumpang  12 
+10.  Kampung Genting Malik  11 
+ 
+11.  Kerling  7 
+Jumlah Keseluruhan  105   
+
+___
+
+15112021
+Anchor row is: 1. Kerja-kerja  484,728.00 Tarikh Mula:  Telah 
+Table text similarity score is: 82
+Table text is:
+___
+Bil.  Butiran Kerja  Kos (RM)  & Siap  Terkini 
+1. Kerja-kerja  484,728.00 Tarikh Mula:  Telah 
+pembaikan  24 Ogos  Siap
+saliran air bawah  2018 
+tanah dan di  Tarikh Siap: 
+bangunan PPR  23 Februari 
+Bukit Padang,  2019
+kibabaig, 
+Penampang, 
+Kota Kinabalu, 
+Sabah
+2. Kerja pembaikan  448,853.00 Tarikh Mula:  Telah 
+pendawaian  1 Ogos 2019  Siap
+semula elektrik  Tarikh Siap: 
+dan kerja-kerja  20 
+berkaitan November 
+2019
+3. Mereka bentuk  3,605,000.00 Tarikh Mula :  Jadual:91 
+dan menaik taraf  12  peratus 
+simpang tiga  November  Sebenar: 
+jalan masuk ke  2019  74 
+PPR Bukit  Tarikh Siap  peratus
+Padang Asal: 
+11 Oktober 
+2020 
+Tarikh Siap 
+Semasa: 
+8 November 
+2021 
+ 
+Dijangka 
+siap dengan 
+mengambil 
+kira prestasi 
+terkini: 
+20 April 
+2022
+
+___
+
+Candidate text is:
+___
+Bil.  Butiran Kerja  Kos (RM) 
+& Siap  Terkini 
+1.  Kerja-kerja  484,728.00  Tarikh Mula:  Telah 
+pembaikan    Siap 
+24 Ogos 
+saliran air bawah 
+2018 
+tanah dan di 
+bangunan PPR  Tarikh Siap: 
+Bukit Padang, 
+23 Februari 
+kibabaig, 
+2019 
+Penampang, 
+Kota Kinabalu, 
+Sabah 
+2.  Kerja pembaikan  448,853.00  Tarikh Mula:  Telah 
+pendawaian  Siap 
+1 Ogos 2019 
+semula elektrik 
+dan kerja-kerja  Tarikh Siap: 
+berkaitan 
+20 
+November 
+2019 
+3.  Mereka bentuk  3,605,000.00  Tarikh Mula :  Jadual:91 
+dan menaik taraf  peratus 
+12 
+simpang tiga 
+November  Sebenar: 
+jalan masuk ke 
+2019  74 
+PPR Bukit 
+peratus 
+Padang  Tarikh Siap 
+Asal: 
+11 Oktober 
+2020 
+Tarikh Siap 
+Semasa: 
+8 November 
+2021 
+ 
+Dijangka 
+siap dengan 
+mengambil 
+kira prestasi 
+terkini: 
+20 April 
+2022 
+
+___
+
+15112021
+Anchor row is: pembaikan  5 Disember  68 
+Table text similarity score is: 84
+Table text is:
+___
+Bil.  Butiran Kerja  Kos (RM)  & Siap  Terkini 
+4. Kerja-kerja  720,000.00 Tarikh Mula :  Jadual: 
+pembaikan  5 Disember  68 
+tembok penahan  2019  peratus 
+(RC wall) dan  Tarikh Siap  Sebenar: 
+kerja-kerja  Asal : 5  50 
+berkaitan di PPR  Februari  peratus 
+Mukim Kibabaig,  2020  Lewat: 18 
+Bukit Padang  Tarikh Siap  peratus
+Daerah  Semasa: 16 
+Penampang,  Disember 
+Sabah 2021 
+Dijangka 
+siap dengan 
+mengambil 
+kira prestasi 
+terkini: 17 
+Januari 2022
+
+___
+
+Candidate text is:
+___
+Tarikh Mula  Status 
+Bil.  Butiran Kerja  Kos (RM) 
+& Siap  Terkini 
+4.  Kerja-kerja  Tarikh Mula :  Jadual: 
+pembaikan  5 Disember  68 
+tembok penahan  2019  peratus 
+(RC wall) dan 
+Tarikh Siap  Sebenar: 
+kerja-kerja 
+Asal : 5  50 
+berkaitan di PPR 
+Februari  peratus 
+Mukim Kibabaig, 
+2020 
+Bukit Padang  Lewat: 18 
+Daerah  Tarikh Siap  peratus 
+Penampang,  720,000.00  Semasa: 16 
+Sabah  Disember 
+2021 
+Dijangka 
+siap dengan 
+mengambil 
+kira prestasi 
+terkini: 17 
+Januari 2022 
+
+___
+
+24032022
+Anchor row is: PPR Kategori PPR Tahun Siap
+Table text similarity score is: 100
+Table text is:
+___
+PPR Kategori PPR Tahun Siap
+PPR Taman Mesra Disewa 2006
+PPR Taman Gum-gum  Disewa 2009
+Jaya
+PPR Taman Murni Disewa 2011
+PPR Sungai Manila Disewa 2014
+PPR Lintas Sibuga Disewa 2014
+PPR Taman Muhibbah Disewa 2015
+PPR Taman Batu Sapi Disewa 2015
+PPR Taman Harmoni Disewa 2015
+PPR Taman Batu Putih Disewa 2019
+
+___
+
+Candidate text is:
+___
+PPR  Kategori PPR  Tahun Siap 
+PPR Taman Mesra  Disewa  2006 
+PPR Taman Gum-gum 
+Disewa  2009 
+Jaya 
+PPR Taman Murni  Disewa  2011 
+PPR Sungai Manila  Disewa  2014 
+PPR Lintas Sibuga  Disewa  2014 
+PPR Taman Muhibbah  Disewa  2015 
+PPR Taman Batu Sapi  Disewa  2015 
+PPR Taman Harmoni  Disewa  2015 
+PPR Taman Batu Putih  Disewa  2019 
+
+___
+
+02082022
+Anchor row is: Selangor 257 143
+Table text similarity score is: 97
+Table text is:
+___
+Negeri  Pengecas  Bilangan Lokasi 
+Selangor 257 143
+Wilayah Persekutuan  202 85
+Kuala Lumpur
+Johor 77 42
+Pulau Pinang 44 28
+Perak 25 16
+Kedah 23 16
+Sarawak 22 17
+Pahang 19 10
+Melaka 15 10
+Negeri Sembilan 14 9
+Wilayah Persekutuan  4 3
+Putrajaya
+Sabah 3 2
+Terengganu 1 -
+Kelantan 1 -
+Jumlah 707 384
+
+___
+
+Candidate text is:
+___
+Negeri  Bilangan Lokasi 
+Pengecas 
+Selangor  257  143 
+Wilayah Persekutuan 
+202  85 
+Kuala Lumpur 
+Johor  77  42 
+Pulau Pinang  44  28 
+Perak  25  16 
+Kedah  23  16 
+Sarawak  22  17 
+Pahang  19  10 
+Melaka  15  10 
+Negeri Sembilan  14  9 
+Wilayah Persekutuan 
+4  3 
+Putrajaya 
+Sabah  3  2 
+Terengganu  1  - 
+Kelantan  1  - 
+Jumlah  707  384 
+
+___
+
+02082022
+Anchor row is: Negeri Bilangan Unit Pengecas
+Table text similarity score is: 100
+Table text is:
+___
+Negeri Bilangan Unit Pengecas
+Johor 7
+Kedah 2
+Kuala Lumpur 7
+Melaka 2
+Negeri Sembilan 4
+Pahang 6
+Perak 6
+Pulau Pinang 3
+Selangor 24
+Jumlah 61
+
+___
+
+Candidate text is:
+___
+Negeri  Bilangan Unit Pengecas 
+Johor  7 
+Kedah  2 
+Kuala Lumpur  7 
+Melaka  2 
+Negeri Sembilan  4 
+Pahang  6 
+Perak  6 
+Pulau Pinang  3 
+Selangor  24 
+Jumlah  61 
+
+___
+
+02082022
+Anchor row is: Bil. Projek Perbelanjaan (RM)
+Table text similarity score is: 98
+Table text is:
+___
+Bil. Projek Perbelanjaan (RM)
+1. Penanaman satu juta pokok- 335,741.10
+Pemuliharaan Habitan Orang Utan
+2. Wildlife Rescue Unit (WRU) 1,272,605.22
+3. WRU Coffeetable Book 75,000.00
+4. Program Konservasi Harimau  287,445.96
+Malaya
+5. Roadkill Signage 275,734.69
+6. Taman Konservasi Aviari 315,000.00
+7. Webinar on Biodiversity  7,500.00
+Conservation
+8. Zoological – Ape Centre 200,000.00
+9. Aktiviti Promosi 81,164.00
+10. Program Kelestarian Minyak Sawit  1,000,000.00
+Malaysia (MPOCC)
+Jumlah  3,850,190.97
+
+___
+
+Candidate text is:
+___
+Bil.  Projek  Perbelanjaan (RM) 
+Penanaman satu juta pokok-
+1.  335,741.10 
+Pemuliharaan Habitan Orang Utan  
+2.  Wildlife Rescue Unit (WRU)  1,272,605.22 
+3.  WRU Coffeetable Book  75,000.00 
+Program Konservasi Harimau 
+4.  287,445.96 
+Malaya 
+5.  Roadkill Signage  275,734.69 
+6.  Taman Konservasi Aviari  315,000.00 
+Webinar on Biodiversity 
+7.  7,500.00 
+Conservation 
+8.  Zoological – Ape Centre  200,000.00 
+9.  Aktiviti Promosi   81,164.00 
+Program Kelestarian Minyak Sawit 
+10.  1,000,000.00 
+Malaysia (MPOCC) 
+Jumlah  3,850,190.97 
+
+___
+
+20072022
+Anchor row is: Tahun Jumlah Gagal (orang)
+Table text similarity score is: 100
+Table text is:
+___
+Tahun Jumlah Gagal (orang)
+2017 58,690
+2018 36,136
+2019 46,732
+2020 39,175
+2021 45,514
+
+___
+
+Candidate text is:
+___
+Tahun  Jumlah Gagal (orang) 
+2017  58,690 
+2018  36,136 
+2019  46,732 
+2020  39,175 
+2021  45,514 
+
+___
+
+03082022
+Anchor row is: Tarikh Kawasan Berlaku Banjir
+Table text similarity score is: 68
+Table text is:
+___
+Tarikh Kawasan Berlaku Banjir
+20/2/2022 Kampung Bahagia Ulu Choh.
+27/2/2022 Jalan Persekutuan di depan 
+Peladang, Jalan Persekutuan Kulai 
+Besar dan Kampung Separa.
+7/3/2022 Jalan Persekutuan di depan 
+Peladang, Jalan Persekutuan Kulai 
+Besar, Taman Selatan, Taman Sri 
+Muhibbah, Kampung Separa dan 
+Taman Meranti.
+2/5/2022 Kampung Sri Paya, Kampung Rahmat 
+dan Kampung Sri Rahmat.
+9/5/2022 Sengkang dan J104 Jalan Sengkang 
+di depan Kilang Lee Soon Seng.
+11/5/2022 Ayer Bemban dan Kampung Melayu 
+Sedenak.
+15/5/2022 Jalan Persekutuan di depan 
+Peladang, Jalan Persekutuan Kulai 
+Besar, Taman Selatan, Taman Sri 
+Muhibbah, Kampung Pertanian, 
+Kampung Separa dan Taman Meranti.
+25/5/2022 Taman Sempena, Taman Senai Jaya 
+dan Taman Mewah Senai.
+5/6/2022 Jalan Persekutuan di depan 
+Peladang.
+
+___
+
+Candidate text is:
+___
+Tarikh  Kawasan Berlaku Banjir 
+20/2/2022  Kampung Bahagia Ulu Choh. 
+Jalan Persekutuan di depan 
+27/2/2022  Peladang, Jalan Persekutuan Kulai 
+Besar dan Kampung Separa. 
+Jalan Persekutuan di depan 
+Peladang, Jalan Persekutuan Kulai 
+7/3/2022  Besar, Taman Selatan, Taman Sri 
+Muhibbah, Kampung Separa dan 
+Taman Meranti. 
+Kampung Sri Paya, Kampung Rahmat 
+2/5/2022 
+dan Kampung Sri Rahmat. 
+Sengkang dan J104 Jalan Sengkang 
+9/5/2022 
+di depan Kilang Lee Soon Seng. 
+Ayer Bemban dan Kampung Melayu 
+11/5/2022 
+Sedenak. 
+Jalan Persekutuan di depan 
+Peladang, Jalan Persekutuan Kulai 
+15/5/2022  Besar, Taman Selatan, Taman Sri 
+Muhibbah, Kampung Pertanian, 
+Kampung Separa dan Taman Meranti. 
+Taman Sempena, Taman Senai Jaya 
+25/5/2022 
+dan Taman Mewah Senai. 
+Jalan Persekutuan di depan 
+5/6/2022 
+Peladang. 
+
+___
+
+03082022
+Anchor row is: 1. 2017 900,000.00
+Table text similarity score is: 100
+Table text is:
+___
+Bil. Tahun Peruntukan (RM)
+1. 2017 900,000.00
+2. 2018 900,000.00
+3. 2019 900,000.00
+4. 2020 900,000.00
+5. 2021 900,000.00
+6. 2022 1,600,000.00
+Jumlah  6,100,000.00
+
+___
+
+Candidate text is:
+___
+Bil.  Tahun  Peruntukan (RM) 
+1.  2017  900,000.00 
+2.  2018  900,000.00 
+3.  2019  900,000.00 
+4.  2020  900,000.00 
+5.  2021  900,000.00 
+6.  2022  1,600,000.00 
+Jumlah  6,100,000.00 
+
+___
+
+03082022
+Anchor row is: 1. 2017 100,000.00
+Table text similarity score is: 100
+Table text is:
+___
+Bil. Tahun Peruntukan (RM)
+1. 2017 100,000.00
+2. 2018 491,200.00
+3. 2019 120,000.00
+
+___
+
+Candidate text is:
+___
+Bil.  Tahun  Peruntukan (RM) 
+1.  2017  100,000.00 
+2.  2018  491,200.00 
+3.  2019  120,000.00 
+
+___
+
+03082022
+Anchor row is: 4. 2020 500,000.00
+Table text similarity score is: 100
+Table text is:
+___
+4. 2020 500,000.00
+5. 2021 Tiada
+6. 2022 300,000.00
+Jumlah  1,511,200.00
+
+___
+
+Candidate text is:
+___
+4.  2020  500,000.00 
+5.  2021  Tiada 
+6.  2022  300,000.00 
+Jumlah  1,511,200.00 
+
+___
+
+03082022
+Anchor row is: Bil. Tahun Peruntukan (RM)
+Table text similarity score is: 100
+Table text is:
+___
+Bil. Tahun Peruntukan (RM)
+1. 2017 2,521,000.00
+2. 2018 1,350,000.00
+3. 2019 4,457,404.00
+4. 2020 1,500,000.00
+5. 2021 1,100,000.00
+6. 2022 1,825,000.00
+Jumlah  12,753,404.00
+
+___
+
+Candidate text is:
+___
+Bil.  Tahun  Peruntukan (RM) 
+1.  2017  2,521,000.00 
+2.  2018  1,350,000.00 
+3.  2019  4,457,404.00 
+4.  2020  1,500,000.00 
+5.  2021  1,100,000.00 
+6.  2022  1,825,000.00 
+Jumlah  12,753,404.00 
+
+___
+
+07032022
+Anchor row is: 1. Layak dipertimbangkan 51
+Table text similarity score is: 100
+Table text is:
+___
+Bil.  Kategori  Penduduk (orang) 
+1. Layak dipertimbangkan 51
+2. Meninggal dunia 8
+3. Menerima pampasan penuh  21
+RM35,000.00
+4. Permanent Resident (PR) serta  9
+bukan Melayu
+Jumlah  89
+
+___
+
+Candidate text is:
+___
+Bil.  Kategori 
+Penduduk (orang) 
+1.  Layak dipertimbangkan  51 
+2.  Meninggal dunia  8 
+3.  Menerima pampasan penuh 
+21 
+RM35,000.00 
+4.  Permanent Resident (PR) serta 
+9 
+bukan Melayu 
+Jumlah  89 
+
+___
+
+07032022
+Anchor row is: Lokasi Tambahan
+Table text similarity score is: 69
+Table text is:
+___
+Lokasi Tambahan
+Pintu Air No.3 Sungai Kandis 1 unit pam berkapasiti 280 
+liter/saat
+Pintu Air No.2 Sungai Kandis 2 unit pam berkapasiti 560 
+liter/saat
+Pintu Air Telok Gadong 1 unit pam berkapasiti 280 
+liter/saat
+
+___
+
+Candidate text is:
+___
+Lokasi  Tambahan 
+1 unit pam berkapasiti 280 
+Pintu Air No.3 Sungai Kandis 
+liter/saat 
+2 unit pam berkapasiti 560 
+Pintu Air No.2 Sungai Kandis 
+liter/saat 
+1 unit pam berkapasiti 280 
+Pintu Air Telok Gadong 
+liter/saat 
+
+___
+
+12062023
+Anchor row is: Nama Pemohon Nama yang didaftarkan
+Table text similarity score is: 100
+Table text is:
+___
+Nama Pemohon Nama yang didaftarkan
+Loh Nyok Lan Chow Ze Kai
+Tee Fong Tze Choy Pei Xuan
+Leong Wan Kok Leong Chee Wei
+
+___
+
+Candidate text is:
+___
+Nama Pemohon  Nama yang didaftarkan 
+Loh Nyok Lan  Chow Ze Kai 
+Tee Fong Tze  Choy Pei Xuan 
+Leong Wan Kok  Leong Chee Wei 
+
+___
+
+12062023
+Anchor row is: Ler Liong Tian Ler Lian Ann
+Table text similarity score is: 100
+Table text is:
+___
+Ler Liong Tian Ler Lian Ann
+Liew Poh Chan Liew En En
+Ong Cheng Chai Ong Soon Hoe
+Tey Kok Cher Richard Tey Rui Kiat
+Tan Bee Chin See Wei Sheng
+Phua Poh Teng Koh Yi Yun
+Ing Chia Wei Ing Li Meng
+
+___
+
+Candidate text is:
+___
+Ler Liong Tian  Ler Lian Ann 
+Liew Poh Chan  Liew En En 
+Ong Cheng Chai  Ong Soon Hoe 
+Tey Kok Cher  Richard Tey Rui Kiat 
+Tan Bee Chin  See Wei Sheng 
+Phua Poh Teng  Koh Yi Yun 
+Ing Chia Wei  Ing Li Meng 
+
+___
+
+07062023
+Anchor row is: Bil. Perkara
+Table text similarity score is: 98
+Table text is:
+___
+Bil. Perkara
+1. One Million Tree Planting – Rehabilitation of 
+Orangutan Habitat
+2. Borneo Elephant Sanctuary, Kinabatangan, Sabah
+3. Malayan Tiger Conservation Programme
+4. Program Konservasi Hutan Terosot Dalam Kawasan 
+Central Forest Spine (Kelantan)
+5. Bornean Orangutan and Elephant Population Survey
+6. Funding of Wildlife Rescue Unit in Sabah
+7. Development of Peat Rehabilitation Model for Sarawak 
+Region
+
+___
+
+Candidate text is:
+___
+Bil.  Perkara 
+One Million Tree Planting – Rehabilitation of 
+1. 
+Orangutan Habitat 
+2.  Borneo Elephant Sanctuary, Kinabatangan, Sabah 
+3.  Malayan Tiger Conservation Programme 
+Program Konservasi Hutan Terosot Dalam Kawasan 
+4. 
+Central Forest Spine (Kelantan) 
+5.  Bornean Orangutan and Elephant Population Survey 
+6.  Funding of Wildlife Rescue Unit in Sabah 
+Development of Peat Rehabilitation Model for Sarawak 
+7. 
+Region 
+
+___
+
+13062023
+Anchor row is: 2021 27,878 56,788 12,039 10 (10)
+Table text similarity score is: 86
+Table text is:
+___
+Tahun  Diterima  Tangkapan  Anjing  (Kematian) 
+2020 15,305 33,614 Dilaporkan  9 (8)
+15,671
+2021 27,878 56,788 12,039 10 (10)
+2022 35,990 69,287 10,329 16 (12)
+JUMLAH 79,173 159,689 38,039 35 (30)
+
+___
+
+Candidate text is:
+___
+Tahun  Tangkapan  Anjing 
+Diterima  (Kematian) 
+Dilaporkan 
+2020  15,305  33,614  15,671  9 (8) 
+2021  27,878  56,788  12,039  10 (10) 
+2022  35,990  69,287  10,329  16 (12) 
+JUMLAH  79,173  159,689  38,039  35 (30) 
+
+___
+
+09032023
+Anchor row is: Kes Kes
+Table text similarity score is: 88
+Table text is:
+___
+Bil. Jenis Kes Kecemasan Tahun 2018-2022 
+  Jumlah  Peratus 
+Kes Kes
+1. Serangga  berbisa  dan  ular  atau  47 53
+binatang
+2. Kebakaran struktur atau bangunan 15 17
+3. Kebakaran  kebun,  ladang,  hutan  14 16
+dan belukar
+4. Lain-lain insiden (kemalangan, SAR  13 14
+dll.)
+Keseluruhan  89 100
+
+___
+
+Candidate text is:
+___
+    Tahun 2018-2022 
+Bil.  Jenis Kes Kecemasan  Jumlah  Peratus 
+Kes  Kes 
+Serangga  berbisa  dan  ular  atau 
+1.  47  53 
+binatang 
+2.  Kebakaran struktur atau bangunan  15  17 
+Kebakaran  kebun,  ladang,  hutan 
+3.  14  16 
+dan belukar 
+Lain-lain insiden (kemalangan, SAR 
+4.  13  14 
+dll.) 
+Keseluruhan  89  100 
+
+___
+
+24052023
+Anchor row is: Negeri Jumlah
+Table text similarity score is: 100
+Table text is:
+___
+Negeri Jumlah
+Perlis 1
+Kedah 2
+Perak 1
+Selangor 1
+Wilayah  Persekutuan  Kuala  3
+Lumpur
+Negeri Sembilan 1
+Melaka 1
+Johor Bahru 2
+
+___
+
+Candidate text is:
+___
+Negeri  Jumlah 
+Perlis  1 
+Kedah  2 
+Perak  1 
+Selangor   1 
+Wilayah  Persekutuan  Kuala  3 
+Lumpur 
+Negeri Sembilan   1 
+Melaka  1 
+Johor Bahru  2 
+
+___
+
+24052023
+Anchor row is: Pahang 1
+Table text similarity score is: 100
+Table text is:
+___
+Pahang 1
+Terengganu 1
+Kelantan 1
+Sarawak 3
+Sabah 3
+Wilayah Persekutuan Labuan 1
+Pulau Pinang 1
+
+___
+
+Candidate text is:
+___
+Pahang  1 
+Terengganu  1 
+Kelantan  1 
+Sarawak  3 
+Sabah  3 
+Wilayah Persekutuan Labuan  1 
+Pulau Pinang  1 
+
+___
+
+07032023
+Anchor row is: Tahun Jumlah Bantuan Kewangan (RM)
+Table text similarity score is: 100
+Table text is:
+___
+Tahun Jumlah Bantuan Kewangan (RM)
+2019 91 juta
+2020 85 juta
+2021 94 juta
+2022 102.5 juta
+
+___
+
+Candidate text is:
+___
+Tahun  Jumlah Bantuan Kewangan (RM) 
+2019  91 juta 
+2020  85 juta 
+2021  94 juta 
+2022  102.5 juta 
+
+___
+
+22052023
+Anchor row is: Bil. Tarikh Sesi Libat Urus Lokasi
+Table text similarity score is: 35
+Table text is:
+___
+Bil. Tarikh Sesi Libat Urus Lokasi
+i. 1  Taklimat Bersama Persatuan  Dewan Johar, 
+September  Penduduk dan Penduduk  Klang
+2022 Taman Sungai Sireh
+ii. 12  Taklimat Kepada Ahli  Ibu Pejabat 
+September  Jawatankuasa Bertindak  MRL, KL
+2022 Taman Sungai Sireh 
+(AJKBTSS)
+iii. 13 Oktober  Taklimat Kepada Ahli  Plaza Shah 
+2022 Jawatankuasa Bertindak  Alam
+Taman Sungai Sireh 
+(AJKBTSS)
+iv. 15 Oktober  Program Publisiti Awal,  Dewan 
+2022 Rancangan Tempatan Majlis  Hamzah, Majlis 
+Perbandaran Klang 2035 Perbandaran 
+Klang
+v. 10 Januari  Sesi Libat Urus Bersama Ahli  Ibu Pejabat 
+2023 Jawatankuasa Bertindak  MRL, KL
+Taman Sungai Sireh 
+(AJKBTSS)
+vi. 24  Sesi Libat Urus Bersama Ahli  Crystal Crown 
+Februari  Jawatankuasa Bertindak  Hotel Harbour, 
+2023 Taman Sungai Sireh  Klang
+(AJKBTSS)
+
+___
+
+Candidate text is:
+___
+Bil.  Tarikh  Sesi Libat Urus  Lokasi 
+1  Taklimat Bersama Persatuan 
+Dewan Johar, 
+i.  September  Penduduk dan Penduduk 
+Klang 
+2022  Taman Sungai Sireh 
+Taklimat Kepada Ahli 
+12 
+Jawatankuasa Bertindak  Ibu Pejabat 
+ii.  September 
+Taman Sungai Sireh  MRL, KL 
+2022 
+(AJKBTSS) 
+Taklimat Kepada Ahli 
+13 Oktober  Jawatankuasa Bertindak  Plaza Shah 
+iii. 
+2022  Taman Sungai Sireh  Alam 
+(AJKBTSS) 
+Dewan 
+Program Publisiti Awal, 
+15 Oktober  Hamzah, Majlis 
+iv.  Rancangan Tempatan Majlis 
+2022  Perbandaran 
+Perbandaran Klang 2035 
+Klang 
+Sesi Libat Urus Bersama Ahli 
+10 Januari  Jawatankuasa Bertindak  Ibu Pejabat 
+v. 
+2023  Taman Sungai Sireh  MRL, KL 
+(AJKBTSS) 
+Sesi Libat Urus Bersama Ahli 
+24  Crystal Crown 
+Jawatankuasa Bertindak 
+vi.  Februari  Hotel Harbour, 
+Taman Sungai Sireh 
+2023  Klang 
+(AJKBTSS) 
+
+___
+
+13032023
+Anchor row is: Semantan 2021
+Table text similarity score is: 43
+Table text is:
+___
+Loji Rawatan  Projek  Kemajuan  Mula  Siap 
+Loji Rawatan Air  (RM)  (%)  27 April  29 April 
+Sungai Bilut 8.4 juta 64.09 2021 2023
+Loji Rawatan  5.7 juta 83 22  11 Mei 
+Sungai  Februari  2023
+Semantan 2021
+Loji Rawatan Air  3.9 juta 100 22  28 
+Sungai Klau Februari  Februari 
+2021 2023
+
+___
+
+Candidate text is:
+___
+Loji Rawatan  Projek  Kemajuan 
+Mula  Siap 
+(RM)  (%) 
+Loji Rawatan Air  27 April  29 April 
+8.4 juta  64.09 
+Sungai Bilut  2021  2023 
+Loji Rawatan  22 
+11 Mei 
+Sungai  5.7 juta  83  Februari 
+2023 
+Semantan  2021 
+22  28 
+Loji Rawatan Air 
+3.9 juta  100  Februari  Februari 
+Sungai Klau 
+2021  2023 
+
+___
+
