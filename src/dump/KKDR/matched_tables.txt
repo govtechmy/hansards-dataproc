@@ -3043,6 +3043,49 @@ liter/saat
 
 ___
 
+09112023
+Anchor row is: Puchong Barat 13,010
+Table text similarity score is: 81
+Table text is:
+___
+Puchong Selatan kecuali motosikal 
+16,420
+Puchong Barat 13,010
+Petaling Jaya 17,067
+
+___
+
+Candidate text is:
+___
+kecuali motosikal 
+Puchong Selatan  16,420 
+Puchong Barat  13,010 
+Petaling Jaya  17,067 
+
+___
+
+09112023
+Anchor row is: Puchong Selatan 21,272
+Table text similarity score is: 100
+Table text is:
+___
+Plaza Tol  kecuali motosikal 
+Puchong Selatan 21,272
+Puchong Barat 15,935
+Petaling Jaya 24,136
+
+___
+
+Candidate text is:
+___
+Plaza Tol 
+kecuali motosikal 
+Puchong Selatan  21,272 
+Puchong Barat  15,935 
+Petaling Jaya  24,136 
+
+___
+
 12062023
 Anchor row is: Nama Pemohon Nama yang didaftarkan
 Table text similarity score is: 100
@@ -3088,6 +3131,200 @@ Tey Kok Cher  Richard Tey Rui Kiat
 Tan Bee Chin  See Wei Sheng 
 Phua Poh Teng  Koh Yi Yun 
 Ing Chia Wei  Ing Li Meng 
+
+___
+
+23102023
+Anchor row is: Perkhidmatan Jumlah Bas
+Table text similarity score is: 100
+Table text is:
+___
+Perkhidmatan Jumlah Bas
+Laluan Utama 38
+Smart Selangor 10
+Laluan Tempatan 5
+MRT Feeder 53
+Jumlah bas 106
+
+___
+
+Candidate text is:
+___
+Perkhidmatan  Jumlah Bas 
+Laluan Utama  38 
+Smart Selangor  10 
+Laluan Tempatan  5 
+MRT Feeder  53 
+Jumlah bas  106 
+
+___
+
+23102023
+Anchor row is: Bil. Perkara Bilangan
+Table text similarity score is: 98
+Table text is:
+___
+Bil. Perkara Bilangan
+1. Bilangan golongan miskin tegar 97
+2. Bilangan golongan pendapatan 40 peratus  504
+terendah (B40)
+3. Bilangan penduduk setinggan 0
+4. Bilangan penduduk yang memerlukan  412
+pemindahan kediaman
+
+___
+
+Candidate text is:
+___
+Bil.  Perkara  Bilangan 
+1.  Bilangan golongan miskin tegar  97 
+Bilangan golongan pendapatan 40 peratus 
+2.  504 
+terendah (B40) 
+3.  Bilangan penduduk setinggan  0 
+Bilangan penduduk yang memerlukan 
+4.  412 
+pemindahan kediaman 
+
+___
+
+31102023
+Anchor row is: Damansara Damai  310 112
+Table text similarity score is: 89
+Table text is:
+___
+Pusat Latihan  Penggunaan  Melibatkan Orang Asli 
+Damansara Damai  310 112
+(PLDD)
+Pusat Latihan Kluang  276 47
+(PLK)
+JUMLAH 586 159
+
+___
+
+Candidate text is:
+___
+Penggunaan  Melibatkan Orang Asli 
+Pusat Latihan 
+Damansara Damai  310  112 
+(PLDD) 
+Pusat Latihan Kluang 
+276  47 
+(PLK) 
+JUMLAH  586  159 
+
+___
+
+31102023
+Anchor row is: Tahun Bilangan Pelajar
+Table text similarity score is: 100
+Table text is:
+___
+Tahun Bilangan Pelajar
+Tingkatan 3 22
+Tingkatan 2 31
+Tingkatan 1 31
+Jumlah Pelajar PIPOA Tahun 2023 84
+
+___
+
+Candidate text is:
+___
+Tahun  Bilangan Pelajar 
+Tingkatan 3  22 
+Tingkatan 2  31 
+Tingkatan 1  31 
+Jumlah Pelajar PIPOA Tahun 2023  84 
+
+___
+
+31102023
+Anchor row is: Tonggang 
+Table text similarity score is: 46
+Table text is:
+___
+1 Koperasi  Projek Ternakan  (RM)  Bantuan 
+Koperasi Asli  Kambing RM  2018
+Erong Hilir  120,000
+Perak Berhad
+2 Koperasi  (i)  Projek  RM  2021 
+Orang Asli  Ekopelancongan  50,000   
+Sungai Tiang  (ii) Peralatan  Kedai    2022
+Gerik Berhad Runcit RM 
+15,930
+3 Koperasi Maju  Peralatan Homestay  RM  2022
+Asal Sungai  Eko Pelancongan 13,100
+Siput (U) 
+Berhad
+4 Koperasi  Peralatan  RM  2022
+Orang Asli  Peruncitan 16,300
+Lata Kinjang 
+Berhad
+5 Koperasi  Peralatan ICT RM  2022
+Kampung  13,590
+Orang Asli 
+Sungai 
+Tonggang 
+Berhad
+6 Koperasi  Peralatan  RM  2022
+Orang Asli  Peruncitan 17,680
+Perak Berhad
+Koperasi  Peralatan Pusat    RM  2023
+Orang Asli  Pengumpulan dan  25,000 
+7  RM
+Pos Musuh  Pembungkusan 
+Tapah Berhad  hasil tani
+
+___
+
+Candidate text is:
+___
+Koperasi 
+(RM)  Bantuan 
+Koperasi Asli  RM 
+Projek Ternakan 
+1  Erong Hilir  120,000  2018 
+Kambing 
+Perak Berhad   
+RM 
+Koperasi  (i)  Projek  50,000 
+2021 
+Orang Asli  Ekopelancongan   
+2   
+Sungai Tiang  (ii) Peralatan  Kedai  RM 
+2022 
+Gerik Berhad  Runcit  15,930 
+ 
+Koperasi Maju 
+Asal Sungai 
+Peralatan Homestay  RM 
+3  Siput (U)  2022 
+Eko Pelancongan  13,100 
+Berhad 
+ 
+Koperasi 
+Orang Asli  Peralatan  RM  2022 
+4 
+Lata Kinjang  Peruncitan  16,300   
+Berhad 
+Koperasi 
+Kampung 
+Orang Asli  RM 
+5  Peralatan ICT  2022 
+Sungai  13,590 
+Tonggang 
+Berhad 
+Koperasi 
+Peralatan  RM 
+6  Orang Asli  2022 
+Peruncitan  17,680 
+Perak Berhad 
+Koperasi  Peralatan Pusat 
+Orang Asli  Pengumpulan dan  RM 
+7  2023 
+Pos Musuh  Pembungkusan  25,000 
+Tapah Berhad  hasil tani 
+RM   
 
 ___
 
@@ -3155,6 +3392,82 @@ JUMLAH  79,173  159,689  38,039  35 (30)
 
 ___
 
+29112023
+Anchor row is: Kes Kemalangan Maut 0 1 0 1
+Table text similarity score is: 100
+Table text is:
+___
+Tahun 2020 2021 2022 2023
+Kes Kemalangan Maut 0 1 0 1
+Kes Kemalangan Biasa 93 69 95 100
+Kes Digigit Anjing 8 3 7 2
+
+___
+
+Candidate text is:
+___
+Tahun  2020  2021  2022  2023 
+Kes Kemalangan Maut  0  1  0  1 
+Kes Kemalangan Biasa  93  69  95  100 
+Kes Digigit Anjing  8  3  7  2 
+
+___
+
+29112023
+Anchor row is: Tahun 2020 2021 2022 2023
+Table text similarity score is: 100
+Table text is:
+___
+Tahun 2020 2021 2022 2023
+Jumlah Kes 3 2 4 7
+
+___
+
+Candidate text is:
+___
+Tahun  2020  2021  2022  2023 
+Jumlah Kes   3  2  4  7 
+
+___
+
+29112023
+Anchor row is: 30 Oktober)
+Table text similarity score is: 93
+Table text is:
+___
+Tahun 2022 2023 (Sehingga 
+30 Oktober)
+Aduan Anjing Diterima 205 101
+Bilangan Operasi 179 211
+Tangkapan (ekor) 455 440
+Pelupusan (ekor) 0 0
+Serahan Kepada NGO /  455 437
+Dilepaskan (ekor)
+Bilangan Anjing  29 138
+dimandulkan oleh NGO 
+(ekor)
+
+___
+
+Candidate text is:
+___
+2023 (Sehingga 
+Tahun  2022 
+30 Oktober) 
+Aduan Anjing Diterima  205  101 
+Bilangan Operasi  179  211 
+Tangkapan (ekor)  455  440 
+Pelupusan (ekor)  0  0 
+Serahan Kepada NGO / 
+455  437 
+Dilepaskan (ekor) 
+Bilangan Anjing 
+dimandulkan oleh NGO 
+29  138 
+(ekor) 
+
+___
+
 09032023
 Anchor row is: Kes Kes
 Table text similarity score is: 88
@@ -3190,6 +3503,34 @@ Lain-lain insiden (kemalangan, SAR
 4.  13  14 
 dll.) 
 Keseluruhan  89  100 
+
+___
+
+30102023
+Anchor row is: Indeks
+Table text similarity score is: 97
+Table text is:
+___
+Tahun/Kes  2019  2020  2021  2022  2023  Jumlah 
+Kes  Jenayah  1,976 1,437 1,020 889 558 5,880
+Indeks
+Kes  Jenayah  961 1,175 951 1,140 843 5,070
+Bukan Indeks
+Jumlah 2,937 2,612 1,971 2,029 1,401 10,950
+
+___
+
+Candidate text is:
+___
+Tahun/Kes  2019  2020  2021  2022  Jumlah 
+2023 
+Kes  Jenayah 
+1,976  1,437  1,020  889  558  5,880 
+Indeks 
+Kes  Jenayah 
+961  1,175  951  1,140  843  5,070 
+Bukan Indeks 
+Jumlah  2,937  2,612  1,971  2,029  1,401  10,950 
 
 ___
 
@@ -3250,6 +3591,56 @@ Sarawak  3
 Sabah  3 
 Wilayah Persekutuan Labuan  1 
 Pulau Pinang  1 
+
+___
+
+03042023
+Anchor row is: No. Tarikh Lokasi
+Table text similarity score is: 100
+Table text is:
+___
+No. Tarikh Lokasi
+1. 2 Mac 2023 Temerloh
+2. 29 Mei 2023 Bentong
+3. 5 Jun 2023 Kota Bharu
+4. 19 Jun 2023 Pasir Puteh
+5. 3 Julai 2023 Jerteh
+
+___
+
+Candidate text is:
+___
+No.  Tarikh  Lokasi 
+1.  2 Mac 2023  Temerloh 
+2.  29 Mei 2023  Bentong 
+3.  5 Jun 2023  Kota Bharu 
+4.  19 Jun 2023  Pasir Puteh 
+5.  3 Julai 2023  Jerteh 
+
+___
+
+03042023
+Anchor row is: 7. 31 Julai 2023 Kuala Terengganu
+Table text similarity score is: 100
+Table text is:
+___
+7. 31 Julai 2023 Kuala Terengganu
+8. 7 Ogos 2023 Dungun
+9. 21 Ogos 2023 Kemasik
+10. 4 September 2023 Chukai
+11. 18 September 2023 Cherating
+12. 2 Oktober 2023 Kuantan Port City
+
+___
+
+Candidate text is:
+___
+7.  31 Julai 2023  Kuala Terengganu 
+8.  7 Ogos 2023  Dungun 
+9.  21 Ogos 2023  Kemasik 
+10.  4 September 2023  Chukai 
+11.  18 September 2023  Cherating 
+12.  2 Oktober 2023  Kuantan Port City 
 
 ___
 
@@ -3385,6 +3776,41 @@ Loji Rawatan Air
 3.9 juta  100  Februari  Februari 
 Sungai Klau 
 2021  2023 
+
+___
+
+15112023
+Anchor row is: Penyedia 
+Table text similarity score is: 72
+Table text is:
+___
+Agensi    
+Penyedia 
+Perumahan
+ Siap Bina Rancang
+KPKT 28,532 23,035 8,269
+Kerajaan  24,037 39,464 15,133
+Persekutuan
+Kerajaan- 36,689 49,514 80,222
+kerajaan 
+negeri
+Swasta 9,783 50,847 42,459
+
+___
+
+Candidate text is:
+___
+Agensi  Status/unit 
+Penyedia 
+Siap  Bina  Rancang  Jumlah 
+Perumahan 
+KPKT  28,532  23,035  8,269  59,836 
+Kerajaan 
+24,037  39,464  15,133  78,634 
+Persekutuan 
+Kerajaan-
+kerajaan  36,689  49,514  80,222  166,425 
+negeri 
 
 ___
 
