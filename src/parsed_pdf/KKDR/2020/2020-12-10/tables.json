@@ -1,0 +1,126 @@
+[
+    [
+        4,
+        3,
+        [
+            [
+                [
+                    "Bil",
+                    "Butiran Projek",
+                    "Kos \n(RM)",
+                    "Tarikh Siap"
+                ],
+                [
+                    "1.",
+                    "Kerja-kerja mengganti bumbung di \ntiga blok (blok 16,17,22).",
+                    "600,000",
+                    "14.10.2020"
+                ],
+                [
+                    "2.",
+                    "Kerja-kerja mengganti 60 unit \nhandrail di 10 blok (blok 1-3,10,13-\n16,18-19,20).",
+                    "600,000",
+                    "14.10.2020"
+                ],
+                [
+                    "3.",
+                    "Kerja-kerja membaik pulih dan \nmengganti pam di loji rawatan air \nkumbahan.",
+                    "400,000",
+                    "25.11.2020"
+                ],
+                [
+                    "4.",
+                    "Kerja-kerja menurap permukaan \njalan blok satu - blok 15.",
+                    "600,000",
+                    "14.10.2020"
+                ],
+                [
+                    "5.",
+                    "Kerja-kerja menurap permukaan \njalan blok 16 - blok 22.",
+                    "500,000",
+                    "14.10.2020"
+                ],
+                [
+                    "6.",
+                    "Kerja-kerja menyelenggara dan baik \npulih perabot jalan dan papan tanda.",
+                    "200,000",
+                    "17.9.2020"
+                ],
+                [
+                    "7.",
+                    "Kerja-kerja mengganti empat tapak \nalat permainan kanak-kanak.",
+                    "200,000",
+                    "14.10.2020"
+                ],
+                [
+                    "8.",
+                    "Kerja-kerja membaik pulih \ngelanggang futsal.",
+                    "200,000",
+                    "30.9.2020"
+                ],
+                [
+                    "JUMLAH",
+                    null,
+                    "3,300,00\n0",
+                    ""
+                ]
+            ]
+        ]
+    ],
+    [
+        6,
+        5,
+        [
+            [
+                [
+                    "Bil.",
+                    "Jenis \nRumah",
+                    "Tarikh",
+                    null,
+                    "Bilangan",
+                    null
+                ],
+                [
+                    null,
+                    null,
+                    "PJB*",
+                    "Patut \nSiap",
+                    "Rumah",
+                    "Pembeli"
+                ],
+                [
+                    "1.",
+                    "RT1T \n(rumah \nteres \nsatu \ntingkat)",
+                    "22.6.2003",
+                    "21.6.2005",
+                    "90",
+                    "63"
+                ],
+                [
+                    "2.",
+                    "RT2T \n(rumah \nteres \ndua \ntingkat)",
+                    "-",
+                    "-",
+                    "323",
+                    "-"
+                ],
+                [
+                    "3.",
+                    "RK2T \n(rumah \nkedai \ndua \ntingkat)",
+                    "22.6.2003",
+                    "21.6.2005",
+                    "20",
+                    "10"
+                ],
+                [
+                    "Jumlah",
+                    null,
+                    null,
+                    null,
+                    "433",
+                    "73"
+                ]
+            ]
+        ]
+    ]
+]
