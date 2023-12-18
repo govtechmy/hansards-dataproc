@@ -5,133 +5,263 @@
         [
             [
                 [
-                    "Agensi \nPenyedia \nPerumahan",
+                    "",
+                    "Agensi",
+                    "",
+                    "",
+                    "Status/unit",
+                    null,
+                    null,
+                    null,
+                    ""
+                ],
+                [
+                    null,
+                    "Penyedia",
+                    null,
+                    "Siap",
+                    null,
+                    "Bina",
+                    "Rancang",
+                    "Jumlah",
+                    null
+                ],
+                [
+                    null,
+                    "Perumahan",
+                    null,
+                    null,
+                    null,
+                    null,
                     null,
                     null,
                     null
                 ],
                 [
-                    null,
-                    "Siap",
-                    "Bina",
-                    "Rancang"
-                ],
-                [
                     "KPKT",
+                    null,
+                    null,
                     "28,532",
+                    null,
                     "23,035",
-                    "8,269"
+                    "8,269",
+                    "59,836",
+                    null
                 ],
                 [
                     "Kerajaan \nPersekutuan",
+                    null,
+                    null,
                     "24,037",
+                    null,
                     "39,464",
-                    "15,133"
+                    "15,133",
+                    "78,634",
+                    null
                 ],
                 [
                     "Kerajaan-\nkerajaan \nnegeri",
+                    null,
+                    null,
                     "36,689",
+                    null,
                     "49,514",
-                    "80,222"
+                    "80,222",
+                    "166,425",
+                    null
                 ],
                 [
                     "Swasta",
+                    null,
+                    null,
                     "9,783",
+                    null,
                     "50,847",
-                    "42,459"
+                    "42,459",
+                    "103,089",
+                    null
                 ]
             ],
             [
                 [
+                    "Negeri",
+                    "",
+                    "Status/ unit",
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    ""
+                ],
+                [
+                    null,
+                    "",
+                    "Bina",
+                    "Siap",
+                    "",
+                    "Rancang",
+                    "",
+                    "",
+                    "Jumlah",
+                    ""
+                ],
+                [
                     "Johor",
-                    "Bina \n3,269",
-                    "Siap \n6,980",
-                    "Rancang \n1,470",
-                    "Jumlah \n21,719"
+                    "3,269",
+                    null,
+                    "6,980",
+                    "1,470",
+                    null,
+                    null,
+                    "21,719",
+                    null,
+                    null
                 ],
                 [
                     "Kedah",
                     "0",
+                    null,
                     "160",
                     "996",
-                    "1,156"
+                    null,
+                    null,
+                    "1,156",
+                    null,
+                    null
                 ],
                 [
                     "Kelantan",
                     "393",
+                    null,
                     "78",
                     "790",
-                    "1,261"
+                    null,
+                    null,
+                    "1,261",
+                    null,
+                    null
                 ],
                 [
                     "Melaka",
                     "11,924",
+                    null,
                     "6,215",
                     "9,781",
-                    "27,920"
+                    null,
+                    null,
+                    "27,920",
+                    null,
+                    null
                 ],
                 [
                     "Negeri \nSembilan",
                     "1,581",
+                    null,
                     "5,167",
                     "5,449",
-                    "12,197"
+                    null,
+                    null,
+                    "12,197",
+                    null,
+                    null
                 ],
                 [
                     "Pahang",
                     "3,645",
+                    null,
                     "1,726",
                     "3,019",
-                    "8,390"
+                    null,
+                    null,
+                    "8,390",
+                    null,
+                    null
                 ],
                 [
                     "Perak",
                     "5,378",
+                    null,
                     "1,271",
                     "2,841",
-                    "9,490"
+                    null,
+                    null,
+                    "9,490",
+                    null,
+                    null
                 ],
                 [
                     "Perlis",
                     "0",
+                    null,
                     "279",
                     "1,545",
-                    "1,824"
+                    null,
+                    null,
+                    "1,824",
+                    null,
+                    null
                 ],
                 [
                     "Pulau Pinang",
                     "1,905",
+                    null,
                     "748",
                     "12,966",
-                    "15,619"
+                    null,
+                    null,
+                    "15,619",
+                    null,
+                    null
                 ],
                 [
                     "Sabah",
                     "250",
+                    null,
                     "88",
                     "1,985",
-                    "2,323"
+                    null,
+                    null,
+                    "2,323",
+                    null,
+                    null
                 ],
                 [
                     "Sarawak",
                     "370",
+                    null,
                     "152",
                     "1,027",
-                    "1,549"
+                    null,
+                    null,
+                    "1,549",
+                    null,
+                    null
                 ],
                 [
                     "Selangor",
                     "19,119",
+                    null,
                     "12,915",
                     "27,313",
-                    "59,347"
+                    null,
+                    null,
+                    "59,347",
+                    null,
+                    null
                 ],
                 [
                     "Terengganu",
                     "1,680",
+                    null,
                     "910",
                     "1,040",
-                    "3,630"
+                    null,
+                    null,
+                    "3,630",
+                    null,
+                    null
                 ]
             ]
         ]

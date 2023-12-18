@@ -66,9 +66,9 @@ if __name__ == "__main__":
     filenames = get_files_in_folder(DEFAULT_DATA_DIR, house=HOUSE_NAME)
 
     hansard_dates = filenames["date"].dt.strftime("%d%m%Y").tolist()
-    preprocess(hansard_dates, HOUSE_NAME)
-    parse_categories(hansard_dates, HOUSE_NAME)
-    post_parsing_edits.post_parsing_edits()
+    # preprocess(hansard_dates, HOUSE_NAME)
+    # parse_categories(hansard_dates, HOUSE_NAME)
+    # post_parsing_edits.post_parsing_edits()
     pre_tabulate(hansard_dates, HOUSE_NAME)
     edit_hansards.edit_hansards(HOUSE_NAME)
     tabulate(hansard_dates, HOUSE_NAME)

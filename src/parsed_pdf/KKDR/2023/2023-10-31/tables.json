@@ -5,9 +5,14 @@
         [
             [
                 [
+                    "Pusat Latihan",
+                    "Jumlah \nPenggunaan",
+                    "Bilangan Program \nMelibatkan Orang Asli"
+                ],
+                [
                     "Pusat Latihan \nDamansara Damai \n(PLDD)",
-                    "Penggunaan \n310",
-                    "Melibatkan Orang Asli \n112"
+                    "310",
+                    "112"
                 ],
                 [
                     "Pusat Latihan Kluang \n(PLK)",
@@ -50,11 +55,18 @@
         [
             [
                 [
+                    "Bil",
+                    "Nama \nKoperasi",
+                    "Skop Bantuan",
+                    "Jumlah \nBantuan \n(RM)",
+                    "Tahun \nTerima \nBantuan"
+                ],
+                [
                     "1",
-                    "Koperasi \nKoperasi Asli \nErong Hilir \nPerak Berhad",
+                    "Koperasi Asli \nErong Hilir \nPerak Berhad",
                     "Projek Ternakan \nKambing",
-                    "(RM) \nRM \n120,000",
-                    "Bantuan \n2018"
+                    "RM \n120,000",
+                    "2018"
                 ],
                 [
                     "2",
@@ -92,11 +104,18 @@
                     "2022"
                 ],
                 [
-                    "Koperasi  Peralatan Pusat \nOrang Asli  Pengumpulan dan \n7 \nPos Musuh  Pembungkusan \nTapah Berhad  hasil tani",
-                    null,
-                    null,
-                    "RM \n25,000 \nRM",
+                    "7",
+                    "Koperasi \nOrang Asli \nPos Musuh \nTapah Berhad",
+                    "Peralatan Pusat \nPengumpulan dan \nPembungkusan \nhasil tani",
+                    "RM \n25,000",
                     "2023"
+                ],
+                [
+                    "Jumlah Bantuan Sehingga Tahun 2023",
+                    null,
+                    null,
+                    "RM \n271,600",
+                    ""
                 ]
             ]
         ]
