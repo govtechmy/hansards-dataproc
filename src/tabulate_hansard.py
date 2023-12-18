@@ -29,13 +29,13 @@ def more_than_30_minutes_past(time_str1, time_str2):
 def is_timestamp(text):
     text = text.strip()
     return (
-        re.search(r"[■◼▪] ?\d{4}\.?", text)
-        or re.search(
-            r"^[■◼▪]?(\(cid:2[12]\))? *\d{1,2}[.:] ?\d ?\d ?((pg)|(PG)|(pagi)|(tgh)|(Tgh)|"
-            r"(ptg)|(Ptg)|(petang)|(mlm)|(malam)|(pm))\.?",
-            text,
-        )
-        or re.search(r"^(\(cid:[12]\))* ?\d{4}$", text)
+            re.search(r"[■◼▪] ?\d{4}\.?", text)
+            or re.search(
+        r"^[■◼▪]?(\(cid:2[12]\))? *\d{1,2}[.:] ?\d ?\d ?((pg)|(PG)|(pagi)|(tgh)|(Tgh)|"
+        r"(ptg)|(Ptg)|(petang)|(mlm)|(malam)|(pm))\.?",
+        text,
+    )
+            or re.search(r"^(\(cid:[12]\))* ?\d{4}$", text)
     )
     # the first two major types are
     # 1.  ■ 1030 which is in regular 10 minute intervals
@@ -78,7 +78,7 @@ def standardise_timestamp(timestamp):
             return mod_24("0" + numbers)
         else:
             assert (
-                len(numbers) == 4
+                    len(numbers) == 4
             ), f"Expected 4 digits but got {numbers} from {timestamp}"
             return mod_24(numbers)
     else:
@@ -128,40 +128,40 @@ def get_author_and_speech(text, bold, italics, house, warn=""):
     speech_italics = ""
     subtopic = ""
     if (
-        re.search(
-            r"^(Timbalan(an)? )?(Tuan )?([Yy]ang )?[dD]i-? ?[Pp]ertua[\[\]A-Za-z `.’\'@/(\-),]*:",
-            text,
-        )
-        or re.search(r"^Setiausaha[\[\]A-Za-z `.’\'@/(\-),]*:", text)
-        or re.search(
-            r"^(Yang Berhormat )?(Timbalan )?(Perdana )?[Mm]enteri [A-Za-z,()\-& ]+(\[Ekonomi] )"
-            r"?\[[A-Za-z `.’\'@/(\-)\[\]]+] ?:",
-            text,
-        )
-        or re.search(
-            r"^(Timbalan )?(Tuan )?Pengerusi (Timbalan Yang di-Pertua )?\[[A-Za-z `.’\'@/(\-)]*]:",
-            text,
-        )
-        or re.search(
-            r"^((Tuan)|(Datuk)|(Dato)|(Tan Sri)|(Puan)|(Dr\.)|(YM)|(Ustaz)|(Tun)|(Kapten)|(Haji)|(Ir\.)|(Datu)|(Cik)|"
-            r"(Laksamana)|(Mejar)|(Komander)|(Seri Paduka)|(Tengku)|(Hajah)|(Raja)|(Brig)|(Datin)|(Prof\.) )"
-            r"[A-Za-z `.’\'@/\-()]+:",
-            text,
-        )
-        or re.search(
-            r"^(Yang Berhormat )?"
-            r"((Tuan)|(Datuk)|(Dato)|(Tan Sri)|(Puan)|(Dr\.)|(YM)|(Ustaz)|(Tun)|(Kapten)|(Haji)|(Ir\.)|(Datu)|(Cik)|"
-            r"(Laksamana)|(Mejar)|(Komander)|(Seri Paduka)|(Tengku)|(Hajah)|(Raja)|(Brig)|(Datin)|(Prof\.) )"
-            r"[A-Za-z `.’\'@/(),\-]+\[[A-Za-z \-–]+][ -]?:",
-            text,
-        )
-        or re.search(
-            r"^(Seorang Ahli ?:)|(Seorang ahli:)|(Seoarang ahli:)|(Seseorang Ahli:)|(seorang Ahli:)|"
-            r"(Seorang Ahli Yang Berhormat:)|(Seorang Ahli Berucap)|(\[Seorang Ahli]:)|(Sorang Ahli:)|(Seorang Ali:)|"
-            r"(Beberapa Ahli:)|(Beberapa orang Ahli:)|(Beberapa ahli:)|"
-            r"(Beberapa Ahli Pembangkang:)|(Ahli-ahli:)|(Beberapa Orang Ahli:)|(Beberapa Ali:)",
-            text,
-        )
+            re.search(
+                r"^(Timbalan(an)? )?(Tuan )?([Yy]ang )?[dD]i-? ?[Pp]ertua[\[\]A-Za-z `.’\'@/(\-),]*:",
+                text,
+            )
+            or re.search(r"^Setiausaha[\[\]A-Za-z `.’\'@/(\-),]*:", text)
+            or re.search(
+        r"^(Yang Berhormat )?(Timbalan )?(Perdana )?[Mm]enteri [A-Za-z,()\-& ]+(\[Ekonomi] )"
+        r"?\[[A-Za-z `.’\'@/(\-)\[\]]+] ?:",
+        text,
+    )
+            or re.search(
+        r"^(Timbalan )?(Tuan )?Pengerusi (Timbalan Yang di-Pertua )?\[[A-Za-z `.’\'@/(\-)]*]:",
+        text,
+    )
+            or re.search(
+        r"^((Tuan)|(Datuk)|(Dato)|(Tan Sri)|(Puan)|(Dr\.)|(YM)|(Ustaz)|(Tun)|(Kapten)|(Haji)|(Ir\.)|(Datu)|(Cik)|"
+        r"(Laksamana)|(Mejar)|(Komander)|(Seri Paduka)|(Tengku)|(Hajah)|(Raja)|(Brig)|(Datin)|(Prof\.) )"
+        r"[A-Za-z `.’\'@/\-()]+:",
+        text,
+    )
+            or re.search(
+        r"^(Yang Berhormat )?"
+        r"((Tuan)|(Datuk)|(Dato)|(Tan Sri)|(Puan)|(Dr\.)|(YM)|(Ustaz)|(Tun)|(Kapten)|(Haji)|(Ir\.)|(Datu)|(Cik)|"
+        r"(Laksamana)|(Mejar)|(Komander)|(Seri Paduka)|(Tengku)|(Hajah)|(Raja)|(Brig)|(Datin)|(Prof\.) )"
+        r"[A-Za-z `.’\'@/(),\-]+\[[A-Za-z \-–]+][ -]?:",
+        text,
+    )
+            or re.search(
+        r"^(Seorang Ahli ?:)|(Seorang ahli:)|(Seoarang ahli:)|(Seseorang Ahli:)|(seorang Ahli:)|"
+        r"(Seorang Ahli Yang Berhormat:)|(Seorang Ahli Berucap)|(\[Seorang Ahli]:)|(Sorang Ahli:)|(Seorang Ali:)|"
+        r"(Beberapa Ahli:)|(Beberapa orang Ahli:)|(Beberapa ahli:)|"
+        r"(Beberapa Ahli Pembangkang:)|(Ahli-ahli:)|(Beberapa Orang Ahli:)|(Beberapa Ali:)",
+        text,
+    )
     ):
         # 3. allows () at the name part as they can have constituencies too
         # , is for Menteri Pembangunan Wanita, Keluarga dan Masyarakat
@@ -178,22 +178,22 @@ def get_author_and_speech(text, bold, italics, house, warn=""):
         # 6. possible MP
         split_idx = text.find(":")
         author = text[:split_idx]
-        speech = text[split_idx + 1 :]
-        speech_bold = bold[split_idx + 1 :]
-        speech_italics = italics[split_idx + 1 :]
+        speech = text[split_idx + 1:]
+        speech_bold = bold[split_idx + 1:]
+        speech_italics = italics[split_idx + 1:]
     elif re.search(
-        r"^((Timbalan )|(Yang Amat Berhormat ))?Perdana [A-Za-z, ]+\[[A-Za-z `.’\'@/(\-)]+]:",
-        text,
+            r"^((Timbalan )|(Yang Amat Berhormat ))?Perdana [A-Za-z, ]+\[[A-Za-z `.’\'@/(\-)]+]:",
+            text,
     ):
         # Prime Minister or Deputy Primer Minister
         # allows () as they can have constituencies too
         split_idx = text.find("]:")
         author = text[: split_idx + 1]
-        speech = text[split_idx + 2 :]
-        speech_bold = bold[split_idx + 2 :]
-        speech_italics = italics[split_idx + 2 :]
+        speech = text[split_idx + 2:]
+        speech_bold = bold[split_idx + 2:]
+        speech_italics = italics[split_idx + 2:]
     elif re.search(
-        r"^\d{1,2}\.? [A-Za-z `.’\'@\/\-()]+\[[A-Za-z \-]+]:? *[Mm](em)?inta", text
+            r"^\d{1,2}\.? [A-Za-z `.’\'@\/\-()]+\[[A-Za-z \-]+]:? *[Mm](em)?inta", text
     ):
         # JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN
         # 1. Tuan Tan Kok Wai [Cheras] minta Menteri Pembangunan Usahawan menyatakan,
@@ -213,29 +213,29 @@ def get_author_and_speech(text, bold, italics, house, warn=""):
         print("this happens")
         split_idx = text.find(":")
         author = text[:split_idx]
-        speech = text[split_idx + 1 :]
-        speech_bold = bold[split_idx + 1 :]
-        speech_italics = italics[split_idx + 1 :]
+        speech = text[split_idx + 1:]
+        speech_bold = bold[split_idx + 1:]
+        speech_italics = italics[split_idx + 1:]
     elif (
-        not warn
-        and re.search(r"] ?:", text)
-        and "[" not in text.split(":", maxsplit=1)[0]
+            not warn
+            and re.search(r"] ?:", text)
+            and "[" not in text.split(":", maxsplit=1)[0]
     ):
         # some of the unparsed authors are due to an extra ]
         # this must be double-checked since it could be that it is a missing [ instead of extra ]
         edit_idx = re.search(r"] ?:", text).start()
-        edit_text = text[:edit_idx] + text[edit_idx + 1 :]
-        edit_bold = bold[:edit_idx] + bold[edit_idx + 1 :]
-        edit_italics = italics[:edit_idx] + italics[edit_idx + 1 :]
+        edit_text = text[:edit_idx] + text[edit_idx + 1:]
+        edit_bold = bold[:edit_idx] + bold[edit_idx + 1:]
+        edit_italics = italics[:edit_idx] + italics[edit_idx + 1:]
         author, speech, speech_bold, speech_italics, subtopic = get_author_and_speech(
             edit_text, edit_bold, edit_italics, house=house, warn=text
         )
     elif (
-        not warn
-        and ":" in text
-        and "[" in text
-        and "]:" not in text.replace(" ", "")
-        and text.count("[") == text.count("]") + 1
+            not warn
+            and ":" in text
+            and "[" in text
+            and "]:" not in text.replace(" ", "")
+            and text.count("[") == text.count("]") + 1
     ):
         # some of the unparsed authors are due to a missing ]
         edit_idx = re.search(r":", text).start()
@@ -246,8 +246,8 @@ def get_author_and_speech(text, bold, italics, house, warn=""):
             edit_text, edit_bold, edit_italics, house=house, warn=text
         )
     elif (
-        text
-        == "10. Datuk Wira Haji Mohd. Anuar Mohd. Tahir [Temerloh] Datuk Wira Haji Mohd.\n"
+            text
+            == "10. Datuk Wira Haji Mohd. Anuar Mohd. Tahir [Temerloh] Datuk Wira Haji Mohd.\n"
     ):
         # special case where "minta" is not said in a numbered question
         # put here before the next elif that will be activated
@@ -257,8 +257,8 @@ def get_author_and_speech(text, bold, italics, house, warn=""):
         speech_italics = "00000 0000 0000 00000\n"
         subtopic = "10."
     elif (
-        text
-        == "9. Datuk Dr. Ewon Ebin [Ranau] Menteri Kemajuan Luar Bandar dan Wilayah\n"
+            text
+            == "9. Datuk Dr. Ewon Ebin [Ranau] Menteri Kemajuan Luar Bandar dan Wilayah\n"
     ):
         # special case where "minta" is not said in a numbered question
         author = "Datuk Dr. Ewon Ebin [Ranau]"
@@ -267,43 +267,43 @@ def get_author_and_speech(text, bold, italics, house, warn=""):
         speech_italics = "0000000 00000000 0000 000000 000 0000000\n"
         subtopic = "9."
     elif (
-        not warn
-        and "]" in text
-        and not text.endswith("]")
-        and not text.rsplit("]", maxsplit=1)[1].strip().startswith(":")
-        and text.count("[") == text.count("]")
+            not warn
+            and "]" in text
+            and not text.endswith("]")
+            and not text.rsplit("]", maxsplit=1)[1].strip().startswith(":")
+            and text.count("[") == text.count("]")
     ):
         # some of the unparsed authors are due to a missing colon :
         edit_idx = text.rfind("]")
-        edit_text = text[: edit_idx + 1] + ":" + text[edit_idx + 1 :]
-        edit_bold = bold[: edit_idx + 1] + "1" + bold[edit_idx + 1 :]
-        edit_italics = italics[: edit_idx + 1] + "0" + italics[edit_idx + 1 :]
+        edit_text = text[: edit_idx + 1] + ":" + text[edit_idx + 1:]
+        edit_bold = bold[: edit_idx + 1] + "1" + bold[edit_idx + 1:]
+        edit_italics = italics[: edit_idx + 1] + "0" + italics[edit_idx + 1:]
         author, speech, speech_bold, speech_italics, subtopic = get_author_and_speech(
             edit_text, edit_bold, edit_italics, house=house, warn=text
         )
     elif re.search(
-        r"^((Abdul Azeez bin Abdul Rahim \[Baling]:)|"
-        r"(Ramli bin Dato' Mohd Nor \[Cameron Highlands]:)|"
-        r"(Ahmad Amzad bin Mohamed @ Hashim \[Kuala Terengganu]:)|"
-        r"(Abdul Latiff bin Abdul Rahman \[Kuala Krai]:)|"
-        r"(Maria Chin binti Abdullah \[Petaling Jaya]:)|"
-        r"(Seorang Ahli /Tuan Abdul Latiff bin Abdul Rahman \[Kuala Krai]:)|"
-        r"(Seri Tiong King Sing \[Bintulu]:)|"
-        r"(Teresa Kok Suh Sim:)|"
-        r"(Zuraida binti Kamaruddin:)|"
-        r"(Seri Dr\. Adham bin Baba \[Tenggara]:)|"
-        r"(Mohd Sany bin Hamzan \[Hulu Langat]:)|"
-        r"(Kelvin Yii Lee Wuen \[Bandar Kuching]:))",
-        text,
+            r"^((Abdul Azeez bin Abdul Rahim \[Baling]:)|"
+            r"(Ramli bin Dato' Mohd Nor \[Cameron Highlands]:)|"
+            r"(Ahmad Amzad bin Mohamed @ Hashim \[Kuala Terengganu]:)|"
+            r"(Abdul Latiff bin Abdul Rahman \[Kuala Krai]:)|"
+            r"(Maria Chin binti Abdullah \[Petaling Jaya]:)|"
+            r"(Seorang Ahli /Tuan Abdul Latiff bin Abdul Rahman \[Kuala Krai]:)|"
+            r"(Seri Tiong King Sing \[Bintulu]:)|"
+            r"(Teresa Kok Suh Sim:)|"
+            r"(Zuraida binti Kamaruddin:)|"
+            r"(Seri Dr\. Adham bin Baba \[Tenggara]:)|"
+            r"(Mohd Sany bin Hamzan \[Hulu Langat]:)|"
+            r"(Kelvin Yii Lee Wuen \[Bandar Kuching]:))",
+            text,
     ):
         # special cases, the Dewan Rakyat did not give them salutatory titles
         # to minimize word edits, we will just treat them as special cases in the parser
         # instead of using edit_hansards.py
         split_idx = text.find(":")
         author = text[:split_idx]
-        speech = text[split_idx + 1 :]
-        speech_bold = bold[split_idx + 1 :]
-        speech_italics = italics[split_idx + 1 :]
+        speech = text[split_idx + 1:]
+        speech_bold = bold[split_idx + 1:]
+        speech_italics = italics[split_idx + 1:]
     if author != "" and warn != "":
         with open(f"warnings/{house}/autocorrected_authors.txt", "a") as f:
             f.write(warn + "\n")
@@ -314,29 +314,29 @@ def possible_author(text, bold, italics, idx, num_rows, house):
     # check if this line or the combination of the next is a valid author
     # return true if so
     if (
-        get_author_and_speech(
-            text[idx],
-            bold[idx],
-            italics[idx],
-            house=house,
-        )[0]
-        != ""
+            get_author_and_speech(
+                text[idx],
+                bold[idx],
+                italics[idx],
+                house=house,
+            )[0]
+            != ""
     ):
         return True
     if idx + 1 < num_rows and not (
-        text[idx + 1].startswith("[") and italics[idx + 1][1] == "1"
+            text[idx + 1].startswith("[") and italics[idx + 1][1] == "1"
     ):
         concat_rows = f"{text[idx].strip()} {text[idx + 1]}"
         concat_rows_bold = f"{bold[idx].strip()} {bold[idx + 1]}"
         concat_rows_italics = f"{italics[idx].strip()} {italics[idx + 1]}"
         return (
-            get_author_and_speech(
-                concat_rows,
-                concat_rows_bold,
-                concat_rows_italics,
-                house=house,
-            )[0]
-            != ""
+                get_author_and_speech(
+                    concat_rows,
+                    concat_rows_bold,
+                    concat_rows_italics,
+                    house=house,
+                )[0]
+                != ""
         )
     return False
 
@@ -373,9 +373,9 @@ def markdownify(text, is_bold, is_italics):
 
 def add_formatting(text, bold, italics):
     assert (
-        len(text.replace(" ", ""))
-        == len(bold.replace(" ", ""))
-        == len(italics.replace(" ", ""))
+            len(text.replace(" ", ""))
+            == len(bold.replace(" ", ""))
+            == len(italics.replace(" ", ""))
     ), (
         f"Without spaces, text ({text.replace(' ', '')}), "
         f"bold ({bold.replace(' ', '')}), "
@@ -399,7 +399,7 @@ def add_formatting(text, bold, italics):
     result = ""
     for i in range(1, len(text)):
         if (bold[i] in ["0", "1"] and bold[i] != current_bold) or (
-            italics[i] in ["0", "1"] and italics[i] != current_italics
+                italics[i] in ["0", "1"] and italics[i] != current_italics
         ):
             result += markdownify(
                 current_text, current_bold == "1", current_italics == "1"
@@ -434,39 +434,39 @@ def put_annotations_on_new_line(text, bold, italics):
                             assert letter_id + 1 == len(text[row_id])
                             continue
                         text[row_id] = (
-                            text[row_id][: letter_id + 1]
-                            + "\n"
-                            + text[row_id][letter_id + 1 :]
+                                text[row_id][: letter_id + 1]
+                                + "\n"
+                                + text[row_id][letter_id + 1:]
                         )
                         bold[row_id] = (
-                            bold[row_id][: letter_id + 1]
-                            + "\n"
-                            + bold[row_id][letter_id + 1 :]
+                                bold[row_id][: letter_id + 1]
+                                + "\n"
+                                + bold[row_id][letter_id + 1:]
                         )
                         italics[row_id] = (
-                            italics[row_id][: letter_id + 1]
-                            + "\n"
-                            + italics[row_id][letter_id + 1 :]
+                                italics[row_id][: letter_id + 1]
+                                + "\n"
+                                + italics[row_id][letter_id + 1:]
                         )
                 elif text[row_id][letter_id] == "[":
                     num_unclosed_brackets += 1
             elif (
-                text[row_id][letter_id] == "["
-                and letter_id + 1 < len(text[row_id])
-                and italics[row_id][letter_id + 1] == "1"
+                    text[row_id][letter_id] == "["
+                    and letter_id + 1 < len(text[row_id])
+                    and italics[row_id][letter_id + 1] == "1"
             ):
                 # annotation detected
                 num_unclosed_brackets = 1
                 if letter_id - 1 >= 0 and text[row_id][letter_id - 1] != "\n":
                     # split to newline
                     text[row_id] = (
-                        text[row_id][:letter_id] + "\n" + text[row_id][letter_id:]
+                            text[row_id][:letter_id] + "\n" + text[row_id][letter_id:]
                     )
                     bold[row_id] = (
-                        bold[row_id][:letter_id] + "\n" + bold[row_id][letter_id:]
+                            bold[row_id][:letter_id] + "\n" + bold[row_id][letter_id:]
                     )
                     italics[row_id] = (
-                        italics[row_id][:letter_id] + "\n" + italics[row_id][letter_id:]
+                            italics[row_id][:letter_id] + "\n" + italics[row_id][letter_id:]
                     )
                     letter_id += 1
             letter_id += 1
@@ -561,7 +561,7 @@ def tabulate(hansard_date, house):
     with open(f"{input_dir}italics.txt", "r") as f:
         italics = f.readlines()
     assert (
-        len(text) == len(bold) == len(italics)
+            len(text) == len(bold) == len(italics)
     ), f"Length of text, bold and italics do not match: {len(text)} vs {len(bold)} vs {len(italics)}"
 
     with open(f"parsed_pdf/{house}/{year}/{sortable_date}/categories.json", "r") as f:
@@ -572,6 +572,8 @@ def tabulate(hansard_date, house):
     if house.upper() == "KKDR":
         if len(categories) > 1:
             subcategories = categories[1]
+        # assert first item is list
+        assert isinstance(categories[0], list), "First item of KKDR categories is not a list"
         categories = categories[0]
 
     fuzzy_ydp = [
@@ -603,7 +605,7 @@ def tabulate(hansard_date, house):
     for x in categories:
         # Replace "UNDANG" with "UNDANG-UNDANG" only when "UNDANG" is a standalone word
         if re.search(r"\b(?<!UNDANG-)UNDANG(?!-UNDANG)\b", x) and not re.search(
-            r"\bUNDANG-UNDANG\b", x
+                r"\bUNDANG-UNDANG\b", x
         ):
             to_add.append(
                 re.sub(r"\b(?<!UNDANG-)UNDANG(?!-UNDANG)\b", "UNDANG-UNDANG", x)
@@ -611,7 +613,7 @@ def tabulate(hansard_date, house):
 
         # Replace "UNDANG-UNDANG" with "UNDANG" only when "UNDANG-UNDANG" is a standalone word
         if re.search(r"\bUNDANG-UNDANG\b", x) and not re.search(
-            r"\b(?<!UNDANG-)UNDANG(?!-UNDANG)\b", x
+                r"\b(?<!UNDANG-)UNDANG(?!-UNDANG)\b", x
         ):
             to_add.append(re.sub(r"\bUNDANG-UNDANG\b", "UNDANG", x))
     categories += to_add
@@ -619,13 +621,13 @@ def tabulate(hansard_date, house):
     for x in categories:
         # Replace "USUL" with "USUL-USUL" only when "USUL" is a standalone word
         if re.search(r"\b(?<!USUL-)USUL(?!-USUL)\b", x) and not re.search(
-            r"\bUSUL-USUL\b", x
+                r"\bUSUL-USUL\b", x
         ):
             to_add.append(re.sub(r"\b(?<!USUL-)USUL(?!-USUL)\b", "USUL-USUL", x))
 
         # Replace "USUL-USUL" with "USUL" only when "USUL-USUL" is a standalone word
         if re.search(r"\bUSUL-USUL\b", x) and not re.search(
-            r"\b(?<!USUL-)USUL(?!-USUL)\b", x
+                r"\b(?<!USUL-)USUL(?!-USUL)\b", x
         ):
             to_add.append(re.sub(r"\bUSUL-USUL\b", "USUL", x))
 
@@ -633,7 +635,7 @@ def tabulate(hansard_date, house):
     to_add = []
     # 2018 and earlier TOC will say JAWAPAN and in-text will say PERTANYAAN-PERTANYAAN BAGI JAWAB LISAN
     if any(x.startswith("JAWAPAN-JAWAPAN") for x in categories) or any(
-        x.startswith("PERTANYAAN-PERTANYAAN") for x in categories
+            x.startswith("PERTANYAAN-PERTANYAAN") for x in categories
     ):
         categories += fuzzy_jawapan
 
@@ -690,9 +692,9 @@ def tabulate(hansard_date, house):
             # keep on looping until we tally up the correct number of brackets
             while add_idx + row_id < num_rows and num_unclosed_brackets > 0:
                 if (
-                    len(text[row_id + add_idx].strip()) > 5
-                    and prop_of_1_among_binary(italics[row_id + add_idx]) == 0
-                    and hansard_date != "26032018"
+                        len(text[row_id + add_idx].strip()) > 5
+                        and prop_of_1_among_binary(italics[row_id + add_idx]) == 0
+                        and hansard_date != "26032018"
                 ):
                     # most likely the annotation is missing a ]
                     # we will assume that the annotation is closed
@@ -711,7 +713,7 @@ def tabulate(hansard_date, house):
                 current["speech_italics"] += italics[row_id + add_idx]
                 num_unclosed_brackets += text[row_id + add_idx].count("[") - text[
                     row_id + add_idx
-                ].count("]")
+                    ].count("]")
                 if text[row_id + add_idx].startswith("[Dewan ditangguhkan") or text[
                     row_id + add_idx
                 ].startswith("[Mesyuarat ditangguhkan"):
@@ -773,7 +775,7 @@ def tabulate(hansard_date, house):
             # sometimes the author has too long name and overflow to second line
             # but make sure this is not an annotation
             if row_id + 1 < num_rows and not (
-                text[row_id + 1].startswith("[") and italics[row_id + 1][1] == "1"
+                    text[row_id + 1].startswith("[") and italics[row_id + 1][1] == "1"
             ):
                 concat_rows = f"{text[row_id].strip()} {text[row_id + 1]}"
                 concat_rows_bold = f"{bold[row_id].strip()} {bold[row_id + 1]}"
@@ -813,11 +815,11 @@ def tabulate(hansard_date, house):
                 continue
 
             if (
-                current["author"] == ""
-                and current["speech"] == ""
-                and current["level_1"] != ""
-                and current["level_2"] == ""
-                and prop_of_1_among_binary(italics[row_id]) < 0.9
+                    current["author"] == ""
+                    and current["speech"] == ""
+                    and current["level_1"] != ""
+                    and current["level_2"] == ""
+                    and prop_of_1_among_binary(italics[row_id]) < 0.9
             ):
                 # most likely a level_2 immediately following a level_1
                 # usually a chain of bolds
@@ -826,16 +828,16 @@ def tabulate(hansard_date, house):
                 current["level_2"] = text[row_id]
                 current["level_3"] = ""
                 while (
-                    row_id + add_idx < num_rows
-                    and prop_of_1_among_binary(bold[row_id + add_idx]) > 0.8
-                    and not is_timestamp(text[row_id + add_idx])
-                    and not possible_author(
-                        text, bold, italics, row_id + add_idx, num_rows, house
-                    )
-                    and not (
+                        row_id + add_idx < num_rows
+                        and prop_of_1_among_binary(bold[row_id + add_idx]) > 0.8
+                        and not is_timestamp(text[row_id + add_idx])
+                        and not possible_author(
+                    text, bold, italics, row_id + add_idx, num_rows, house
+                )
+                        and not (
                         text[row_id + add_idx].startswith("[")
                         and italics[row_id + add_idx][1] == "1"
-                    )
+                )
                 ):
                     current["level_2"] += text[row_id + add_idx]
                     add_idx += 1
@@ -881,13 +883,13 @@ def tabulate(hansard_date, house):
                     current_category, categories
                 )
                 while (
-                    row_id + add_idx < num_rows
-                    and upper_lower_ratio(text[row_id + add_idx]) > 1
-                    and category_probability(
-                        current_category + " " + text[row_id + add_idx].strip(),
-                        categories,
-                    )
-                    >= current_category_probability
+                        row_id + add_idx < num_rows
+                        and upper_lower_ratio(text[row_id + add_idx]) > 1
+                        and category_probability(
+                    current_category + " " + text[row_id + add_idx].strip(),
+                    categories,
+                )
+                        >= current_category_probability
                 ):
                     current_category += " " + text[row_id + add_idx].strip()
                     current_category_probability = category_probability(
@@ -921,27 +923,27 @@ def tabulate(hansard_date, house):
                 current["level_2"] = text[row_id]
                 # allow empty lines as separator
                 while (
-                    row_id + add_idx < num_rows
-                    and prop_of_1_among_binary(bold[row_id + add_idx]) > 0.8
-                    and not is_timestamp(text[row_id + add_idx])
-                    and get_author_and_speech(
-                        text[row_id + add_idx],
-                        bold[row_id + add_idx],
-                        italics[row_id + add_idx],
-                        house=house,
-                    )[0]
-                    == ""
-                    and not text[row_id + add_idx].startswith("Bismilla")
-                    and (
-                        row_id + add_idx + 1 >= num_rows
-                        or get_author_and_speech(
+                        row_id + add_idx < num_rows
+                        and prop_of_1_among_binary(bold[row_id + add_idx]) > 0.8
+                        and not is_timestamp(text[row_id + add_idx])
+                        and get_author_and_speech(
+                    text[row_id + add_idx],
+                    bold[row_id + add_idx],
+                    italics[row_id + add_idx],
+                    house=house,
+                )[0]
+                        == ""
+                        and not text[row_id + add_idx].startswith("Bismilla")
+                        and (
+                                row_id + add_idx + 1 >= num_rows
+                                or get_author_and_speech(
                             f"{text[row_id + add_idx].strip()} {text[row_id + add_idx + 1]}",
                             f"{bold[row_id + add_idx].strip()} {bold[row_id + add_idx + 1]}",
                             f"{italics[row_id + add_idx].strip()} {italics[row_id + add_idx + 1]}",
                             house=house,
                         )[0]
-                        == ""
-                    )
+                                == ""
+                        )
                 ):
                     current["level_2"] += text[row_id + add_idx]
                     add_idx += 1
@@ -958,13 +960,13 @@ def tabulate(hansard_date, house):
                 )
                 if current_subcategory_probability > 0.2:
                     while (
-                        row_id + add_idx < num_rows
-                        and category_probability(
-                            current_subcategory + " " + text[row_id + add_idx].strip(),
-                            subcategories,
-                            check_upper_lower=False,
-                        )
-                        >= current_subcategory_probability
+                            row_id + add_idx < num_rows
+                            and category_probability(
+                        current_subcategory + " " + text[row_id + add_idx].strip(),
+                        subcategories,
+                        check_upper_lower=False,
+                    )
+                            >= current_subcategory_probability
                     ):
                         current_subcategory += " " + text[row_id + add_idx].strip()
                         current_subcategory_probability = category_probability(
@@ -993,7 +995,7 @@ def tabulate(hansard_date, house):
             # these are lower-cased bold sentences
             # most likely a level_3 subtopic
             if re.search(
-                r"Yang (Tidak )?((Bersetuju)|(Hadir)|(Mengundi)):", text[row_id]
+                    r"Yang (Tidak )?((Bersetuju)|(Hadir)|(Mengundi)):", text[row_id]
             ) or re.search(r"^Bacaan Kali Yang", text[row_id]):
                 speeches += insert_speech(current)
                 current["author"] = ""
@@ -1007,8 +1009,8 @@ def tabulate(hansard_date, house):
                     )
                 continue
             elif re.search(
-                r"^(Maksud)|(Kepala)|(Fasal)|(Bab)|(Tajuk)|(Jadual)[A-Za-z0-9-[\], ]+[–-]",
-                text[row_id],
+                    r"^(Maksud)|(Kepala)|(Fasal)|(Bab)|(Tajuk)|(Jadual)[A-Za-z0-9-[\], ]+[–-]",
+                    text[row_id],
             ):
                 speeches += insert_speech(current)
                 add_idx = 1
@@ -1019,15 +1021,15 @@ def tabulate(hansard_date, house):
                 current["level_3"] = text[row_id]
                 # it could be followed by similar level_3 markers
                 while (
-                    row_id + add_idx < num_rows
-                    and prop_of_1_among_binary(bold[row_id + add_idx]) > 0.8
-                    and (
-                        re.search(
-                            r"^(Maksud)|(Kepala)|(Fasal)|(Bab)|(Tajuk)|(Jadual)[A-Za-z0-9-[\], ]+[–-]",
-                            text[row_id + add_idx],
+                        row_id + add_idx < num_rows
+                        and prop_of_1_among_binary(bold[row_id + add_idx]) > 0.8
+                        and (
+                                re.search(
+                                    r"^(Maksud)|(Kepala)|(Fasal)|(Bab)|(Tajuk)|(Jadual)[A-Za-z0-9-[\], ]+[–-]",
+                                    text[row_id + add_idx],
+                                )
+                                or text[row_id + add_idx].strip()[-1] in ["–", "-"]
                         )
-                        or text[row_id + add_idx].strip()[-1] in ["–", "-"]
-                    )
                 ):
                     current["level_3"] += text[row_id + add_idx]
                     add_idx += 1
@@ -1040,8 +1042,8 @@ def tabulate(hansard_date, house):
 
             # special cases
             if re.fullmatch(
-                r"Perutusan [Dd]aripada Dewan Negara [kK]epada Dewan Rakyat",
-                text[row_id].strip(),
+                    r"Perutusan [Dd]aripada Dewan Negara [kK]epada Dewan Rakyat",
+                    text[row_id].strip(),
             ) or re.search(
                 r'^[“"]?((Bahawa)|(BAHAWA)|(DAN BAHAWA)|(Dengan ini)|(DENGAN INI))',
                 text[row_id],
@@ -1052,8 +1054,8 @@ def tabulate(hansard_date, house):
                 current["speech_italics"] += italics[row_id]
                 continue
             elif hansard_date == "02112018" and (
-                re.search(r"^Strategi \d+:", text[row_id])
-                or re.search(r" [–-]$", text[row_id].strip())
+                    re.search(r"^Strategi \d+:", text[row_id])
+                    or re.search(r" [–-]$", text[row_id].strip())
             ):
                 # during the budget 02112018
                 speeches += insert_speech(current)
@@ -1100,8 +1102,8 @@ def tabulate(hansard_date, house):
             new_timestamp = get_timestamp_from_annotation(speeches[row_id][5])
             add_idx = 0
             while (
-                row_id + add_idx < len(speeches)
-                and speeches[row_id + add_idx][3] == old_timestamp
+                    row_id + add_idx < len(speeches)
+                    and speeches[row_id + add_idx][3] == old_timestamp
             ):
                 speeches[row_id + add_idx][3] = new_timestamp
                 add_idx += 1
@@ -1154,7 +1156,7 @@ def tabulate(hansard_date, house):
     for idx in range(len(unique_timestamps_row) - 1):
         # check if two strings in 24 hour format is within 30 minutes of each other
         if more_than_30_minutes_past(
-            unique_timestamps_row[idx][4], unique_timestamps_row[idx + 1][4]
+                unique_timestamps_row[idx][4], unique_timestamps_row[idx + 1][4]
         ):
             with open(f"warnings/{house}/unsorted_timestamps.txt", "a") as f:
                 f.write(
@@ -1193,37 +1195,37 @@ def tabulate(hansard_date, house):
 
     # if both have usuls, then it is fine to take their variants
     if any(x.startswith("USUL") for x in categories) and any(
-        x.startswith("USUL") for x in actual_toc
+            x.startswith("USUL") for x in actual_toc
     ):
         categories = [x for x in categories if not x.startswith("USUL")]
         actual_toc = [x for x in actual_toc if not x.startswith("USUL")]
 
     if any(x.startswith("TITAH") for x in categories) and any(
-        x.startswith("TITAH") for x in actual_toc
+            x.startswith("TITAH") for x in actual_toc
     ):
         categories = [x for x in categories if not x.startswith("TITAH")]
         actual_toc = [x for x in actual_toc if not x.startswith("TITAH")]
 
     if any(x.endswith("YANG DI-PERTUA") for x in categories) and any(
-        x.endswith("YANG DI-PERTUA") for x in actual_toc
+            x.endswith("YANG DI-PERTUA") for x in actual_toc
     ):
         categories = [x for x in categories if not x.endswith("YANG DI-PERTUA")]
         actual_toc = [x for x in actual_toc if not x.endswith("YANG DI-PERTUA")]
 
     if any(x in fuzzy_jawapan for x in categories) and any(
-        x in fuzzy_jawapan for x in actual_toc
+            x in fuzzy_jawapan for x in actual_toc
     ):
         categories = [x for x in categories if x not in fuzzy_jawapan]
         actual_toc = [x for x in actual_toc if x not in fuzzy_jawapan]
 
     if any(x.startswith("RANG UNDANG") for x in categories) and any(
-        x.startswith("RANG UNDANG") for x in actual_toc
+            x.startswith("RANG UNDANG") for x in actual_toc
     ):
         categories = [x for x in categories if not x.startswith("RANG UNDANG")]
         actual_toc = [x for x in actual_toc if not x.startswith("RANG UNDANG")]
 
     if any("P.M" in x or "PERATURAN MESYUARAT" in x for x in categories) and any(
-        "P.M" in x or "PERATURAN MESYUARAT" in x for x in actual_toc
+            "P.M" in x or "PERATURAN MESYUARAT" in x for x in actual_toc
     ):
         categories = [
             x for x in categories if not ("P.M" in x or "PERATURAN MESYUARAT" in x)
@@ -1270,8 +1272,8 @@ def tabulate(hansard_date, house):
     # only parse attendance list for DR-26072021 onwards
     # DN attendance parsing not supported
     has_attendance = (
-        pd.to_datetime(sortable_date) >= pd.to_datetime("2021-07-26")
-        and house.upper() == "DR"
+            pd.to_datetime(sortable_date) >= pd.to_datetime("2021-07-26")
+            and house.upper() == "DR"
     )
     if has_attendance:
         parsed_input_dir = f"parsed_pdf/{house}/{year}/{sortable_date}/"
@@ -1289,12 +1291,13 @@ def tabulate(hansard_date, house):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "hansard_date", help="hansard_date eg. 23052023", default="02082017", nargs="?"
+        "hansard_date", help="hansard_date eg. 23052023", default="15112023", nargs="?"
     )
     parser.add_argument(
         "house",
         help="parliament house. Possible values: 'dr' or 'dn'",
-        choices=["dr", "dn"],
+        choices=["dr", "dn", "kkdr"],
+        default="kkdr", nargs="?"
     )
     # Parse arguments
     args = parser.parse_args()

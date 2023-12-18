@@ -396,14 +396,11 @@ Senarai sekolah dan jumlah MBK yang menerima Elaun Murid Berkeperluan Khas
 | JUMLAH |                                              |           399           |
 Senarai Sekolah dan Bilangan Penerima Rancangan Makanan Tambahan (RMT) Dalam Parlimen Bukit
 Bendera
-BIL. MBK
-YANG
-MENERIMA
-BIL. NAMA SEKOLAH RMT
-1 Sekolah Jenis Kebangsaan (Cina) Hun Bin 2
-2 Sekolah Jenis Kebangsaan (Cina) Phor Tay 5
-3 Sekolah Jenis Kebangsaan (Cina) Poay Wah 1
-4 Sekolah Jenis Kebangsaan (Cina) Shang Wu 2
+| BIL. |               NAMA SEKOLAH               | BIL. MBK YANG MENERIMA RMT |
+|  1   | Sekolah Jenis Kebangsaan (Cina) Hun Bin  |             2              |
+|  2   | Sekolah Jenis Kebangsaan (Cina) Phor Tay |             5              |
+|  3   | Sekolah Jenis Kebangsaan (Cina) Poay Wah |             1              |
+|  4   | Sekolah Jenis Kebangsaan (Cina) Shang Wu |             2              |
 |  5  |   Sekolah Kebangsaan Batu Feringghi   |  2  |
 |  6  |     Sekolah Kebangsaan Dato Kramat    |  2  |
 |  7  |    Sekolah Kebangsaan Francis Light   |  17 |

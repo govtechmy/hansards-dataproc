@@ -24,7 +24,7 @@ def not_invisible_rect(obj):
     if obj["object_type"] != "rect":
         return True
     if isinstance(obj["non_stroking_color"], int) or isinstance(
-        obj["non_stroking_color"], float
+            obj["non_stroking_color"], float
     ):
         return obj["non_stroking_color"] < 0.9
     return not (min(obj["non_stroking_color"]) > 0.9)
@@ -48,8 +48,8 @@ def parse_hansard(hansard_date, house, source_dir=DEFAULT_DATA_DIR):
     # only parse attendance list for DR-26072021 onwards
     # DN attendance parsing not supported
     has_attendance = (
-        pd.to_datetime(sortable_date) >= pd.to_datetime("2021-07-26")
-        and house.upper() == "DR"
+            pd.to_datetime(sortable_date) >= pd.to_datetime("2021-07-26")
+            and house.upper() == "DR"
     )
 
     doa_seen = False
@@ -75,9 +75,13 @@ def parse_hansard(hansard_date, house, source_dir=DEFAULT_DATA_DIR):
                         attn_text += extracted
                     continue
             text += extracted + "\n"  # add newline to separate pages
-            if hansard_date == "09072019":
+            if hansard_date == "09072019" or (house == "kkdr" and hansard_date == "15112023"):
                 # special case where snap tolerance doesn't work
                 current_tables = page.filter(not_invisible_rect).extract_tables()
+            elif hansard_date == "31102023":
+                current_tables = page.filter(not_invisible_rect).extract_tables(
+                    {"snap_x_tolerance": 9}
+                )
             else:
                 current_tables = page.filter(not_invisible_rect).extract_tables(
                     {"snap_tolerance": 9}
@@ -128,7 +132,7 @@ def parse_hansard(hansard_date, house, source_dir=DEFAULT_DATA_DIR):
             spaced_italics += str(italics.pop())
     assert len(bold) == 0, f"Not all bold characters were processed: {len(bold)}"
     assert (
-        len(italics) == 0
+            len(italics) == 0
     ), f"Not all italic characters were processed: {len(italics)}"
 
     with open(str(dir_path / "plaintext.txt"), "w") as f:
@@ -152,12 +156,13 @@ def parse_hansard(hansard_date, house, source_dir=DEFAULT_DATA_DIR):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "hansard_date", help="hansard_date eg. 23052023", default="18092023", nargs="?"
+        "hansard_date", help="hansard_date eg. 23052023", default="15112023", nargs="?"
     )
     parser.add_argument(
         "house",
         help="parliament house. Possible values: 'dr' or 'dn'",
-        choices=["dr", "dn"],
+        choices=["dr", "dn", "kkdr"],
+        default="kkdr", nargs="?"
     )
     # optional directory argument
     parser.add_argument(

@@ -5,6 +5,7 @@
 !/hansard_malaysia/upload_to_s3.py
 !/secret.json
 !/token.json
+src/upload/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
