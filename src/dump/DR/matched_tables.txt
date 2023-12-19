@@ -1,5 +1,5 @@
 14022023
-Anchor row is: Tahun Peratus
+Anchor row is: 2021 87
 Table text similarity score is: 100
 Table text is:
 ___
@@ -22,7 +22,7 @@ Tahun  Peratus
 ___
 
 14022023
-Anchor row is: Tahun Jumlah Pelaburan FDI
+Anchor row is: 2020 RM58 bilion
 Table text similarity score is: 100
 Table text is:
 ___
@@ -43,7 +43,7 @@ Tahun  Jumlah Pelaburan FDI
 ___
 
 21022023
-Anchor row is: Harga Rumah (RM) Bilangan Unit 
+Anchor row is: Melebihi RM1 juta 168,927
 Table text similarity score is: 100
 Table text is:
 ___
@@ -72,7 +72,7 @@ Melebihi RM1 juta  168,927
 ___
 
 07032023
-Anchor row is: Negeri Kadar Kemiskinan 
+Anchor row is: Kedah 8.4
 Table text similarity score is: 100
 Table text is:
 ___
@@ -97,7 +97,7 @@ Kedah  8.4
 ___
 
 07032023
-Anchor row is: Perak 7.3
+Anchor row is: Terengganu 6.0
 Table text similarity score is: 100
 Table text is:
 ___
@@ -114,7 +114,7 @@ Terengganu  6.0
 ___
 
 24052023
-Anchor row is: Jenis Komoditi Makanan Utama Peratusan (%)
+Anchor row is: Ikan makanan 91.7
 Table text similarity score is: 100
 Table text is:
 ___
@@ -144,8 +144,66 @@ Ikan makanan  91.7
 
 ___
 
+06112023
+Anchor row is: Ikan makanan (edible fish) 90.2
+Table text similarity score is: 100
+Table text is:
+___
+Bahan Makanan Peratus (%)
+Beras 62.6
+Sayur 44.7
+Buah 78.1
+Daging lembu 14.7
+Daging ayam dan itik 94.4
+Telur ayam dan itik 108.9
+Susu segar 57.3
+Ikan makanan (edible fish) 90.2
+
+___
+
+Candidate text is:
+___
+Bahan Makanan  Peratus (%) 
+Beras  62.6 
+Sayur   44.7 
+Buah  78.1 
+Daging lembu  14.7 
+Daging ayam dan itik  94.4 
+Telur ayam dan itik  108.9 
+Susu segar  57.3 
+Ikan makanan (edible fish)  90.2 
+
+___
+
+06112023
+Anchor row is: Jun 2023 13,490
+Table text similarity score is: 100
+Table text is:
+___
+Tahun Bilangan Kemasukan Pelajar 
+(Orang)
+2019 87,407
+2020 86,495
+2021 83,578
+2022 84,597
+Jun 2023 13,490
+
+___
+
+Candidate text is:
+___
+Tahun  Bilangan Kemasukan Pelajar 
+(Orang) 
+2019  87,407 
+2020  86,495 
+2021  83,578 
+2022  84,597 
+Jun 2023  13,490 
+
+___
+
 09032023
-Anchor row is: Bil Projek Status
+Anchor row is: Kuala Krai proses perbicaraan
 Table text similarity score is: 92
 Table text is:
 ___
@@ -174,8 +232,39 @@ Kuala Krai  proses perbicaraan
 
 ___
 
+30102023
+Anchor row is: Jumlah 111,428,000
+Table text similarity score is: 100
+Table text is:
+___
+Bangsa Jumlah (Orang)
+Melayu 768,167
+Bumiputera Sabah 76,865
+Cina 6,914
+Bumiputera Sarawak 48,645
+India 41,835
+Orang Asli 2,294
+Lain-lain 6,762
+Jumlah 111,428,000
+
+___
+
+Candidate text is:
+___
+Bangsa  Jumlah (Orang) 
+Melayu  768,167 
+Bumiputera Sabah  76,865 
+Cina  6,914 
+Bumiputera Sarawak  48,645 
+India  41,835 
+Orang Asli  2,294 
+Lain-lain  6,762 
+Jumlah  111,428,000 
+
+___
+
 28032023
-Anchor row is: Negeri Ringgit Malaysia
+Anchor row is: Johor 9,914,000
 Table text similarity score is: 100
 Table text is:
 ___
@@ -210,7 +299,7 @@ Johor  9,914,000
 ___
 
 28032023
-Anchor row is: Sabah 7,444,000
+Anchor row is: Sarawak 8,906,500
 Table text similarity score is: 100
 Table text is:
 ___
@@ -227,7 +316,7 @@ Sarawak  8,906,500
 ___
 
 28032023
-Anchor row is: Bil Sekolah Jumlah Bilik  Peruntukan 
+Anchor row is: Sibu, Sarawak
 Table text similarity score is: 100
 Table text is:
 ___
@@ -259,8 +348,39 @@ Sibu, Sarawak
 
 ___
 
+29112023
+Anchor row is: Melebihi RM1 juta 2
+Table text similarity score is: 100
+Table text is:
+___
+JUMLAH SIMPANAN (RM) PERATUS (%)
+Bawah RM10,000 35
+RM10,0001 sehingga RM20,000 8
+RM20,001 sehingga RM50,000 13
+RM50,0001 sehingga RM100,000 12
+RM100,001 sehingga RM200,000 13
+RM200,001 sehingga RM500,000 13
+RM500,001 sehingga RM1 juta 4
+Melebihi RM1 juta 2
+
+___
+
+Candidate text is:
+___
+JUMLAH SIMPANAN (RM)  PERATUS (%) 
+Bawah RM10,000  35 
+RM10,0001 sehingga RM20,000  8 
+RM20,001 sehingga RM50,000  13 
+RM50,0001 sehingga RM100,000  12 
+RM100,001 sehingga RM200,000  13 
+RM200,001 sehingga RM500,000  13 
+RM500,001 sehingga RM1 juta   4 
+Melebihi RM1 juta  2 
+
+___
+
 22022023
-Anchor row is: Tahun Pendapatan (RM) Untung dan Rugi (RM)
+Anchor row is: 2021 248 bilion Untung 48.6 bilion
 Table text similarity score is: 100
 Table text is:
 ___
@@ -285,7 +405,7 @@ Tahun  Pendapatan (RM)  Untung dan Rugi (RM)
 ___
 
 22022023
-Anchor row is: Bumiputera RM15,541 RM4,937 RM10,604
+Anchor row is: Cina RM45,756 RM45,162 RM594
 Table text similarity score is: 100
 Table text is:
 ___
@@ -312,7 +432,7 @@ Cina  RM45,756  RM45,162  RM594
 ___
 
 22022023
-Anchor row is: Kaum Simpanan median  Simpanan median  Penurunan 
+Anchor row is: India RM25,724 RM14,929 RM10,785
 Table text similarity score is: 100
 Table text is:
 ___
@@ -331,7 +451,7 @@ India  RM25,724  RM14,929  RM10,785
 ___
 
 08032023
-Anchor row is: Bil Negara Peratus (%)
+Anchor row is: 4. Vietnam 58
 Table text similarity score is: 100
 Table text is:
 ___
@@ -354,7 +474,7 @@ Bil  Negara  Peratus (%)
 ___
 
 08032023
-Anchor row is: Bil Negeri Jumlah (RM)
+Anchor row is: 14. Kelantan 3.8 juta
 Table text similarity score is: 100
 Table text is:
 ___
@@ -405,8 +525,51 @@ Bil  Negeri  Jumlah (RM)
 
 ___
 
+23112023
+Anchor row is: Pulau Pinang 400,000
+Table text similarity score is: 100
+Table text is:
+___
+Negeri Jumlah (RM)
+Sabah 21.6 juta
+Perak 7.2 juta
+Pahang 6.5 juta
+Sarawak 5.8 juta
+Selangor 5.3 juta
+Kedah 2.2 juta
+Negeri Sembilan 2 juta
+Johor 1.96 juta
+Melaka 1.1 juta
+Terengganu 1 juta
+Kelantan 750,000
+Perlis 670,000
+Wilayah Persekutuan 556,000
+Pulau Pinang 400,000
+
+___
+
+Candidate text is:
+___
+Negeri  Jumlah (RM) 
+Sabah  21.6 juta 
+Perak  7.2 juta 
+Pahang  6.5 juta 
+Sarawak  5.8 juta 
+Selangor  5.3 juta 
+Kedah  2.2 juta 
+Negeri Sembilan  2 juta 
+Johor  1.96 juta 
+Melaka  1.1 juta 
+Terengganu  1 juta 
+Kelantan  750,000 
+Perlis  670,000 
+Wilayah Persekutuan  556,000 
+Pulau Pinang  400,000 
+
+___
+
 09102023
-Anchor row is: Bil Rangkaian Bilangan Kampit
+Anchor row is: 4. Pemborong dan pengedar 115,093
 Table text similarity score is: 100
 Table text is:
 ___
