@@ -73,12 +73,11 @@ def replace(
 
 
 def edit_hansards(house):
-    if house == "DR":
-        edit_dr_hansards()
-    elif house == "DN":
-        pass
-        # edit_dn_hansards()
-    elif house == "KKDR":
+    if house.upper() == "DR":
+        edit_dr_hansards(house)
+    elif house.upper() == "DN":
+        edit_dn_hansards(house)
+    elif house.upper() == "KKDR":
         edit_kk_hansards(house)
 
 
@@ -165,7 +164,7 @@ def edit_kk_hansards(house):
     )
 
 
-def edit_dr_hansards():
+def edit_dr_hansards(house):
     replace(
         "08112023",
         "Institusi) Tuan Ramkarpal Singh a/l Karpal Singh]: Terima kasih Tuan Yang di-Pertua.\n",
@@ -1581,6 +1580,20 @@ def edit_dr_hansards():
         "Datuk Noor Ehsanuddin bin Mohd. Harun Narrashid [Kota Tinggi]: Yang\n",
         "11111 1111 1111111111 111 11111 11111 111111111 11111 11111111 0000\n",
         "none",
+    )
+
+
+def edit_dn_hansards(house):
+    replace(
+        "18102021",
+        "Mesyuaratdimulakanpadapukul10.00pagi\n",
+        "Mesyuarat dimulakan pada pukul 10.00 pagi\n",
+        "all",
+        "none",
+        house=house,
+    )
+    replace(
+        "23122008", "(cid:2) 5.29 ptg.\n", "5.29 ptg.\n", "all", "none", house=house
     )
 
 

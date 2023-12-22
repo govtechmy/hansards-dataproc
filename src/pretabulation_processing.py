@@ -23,14 +23,14 @@ def get_page_number(header_text):
     # special case of 12.11.2019
     if "12.11.201 " in header_text:
         header_text = header_text.replace("12.11.201 ", "12.11.2019 ")
-    if header_text.startswith("DR"):
+    if header_text.startswith(("DR", "DN")):
         # some numbers might be in the form 1  1
         # some years are 2023.
         # some years missing end (2019 becomes 201)
         # get the page number after the year
         return re.split(r"\d{4}\.?", header_text)[-1].replace(" ", "")
     else:
-        return header_text.split("DR")[0].replace(" ", "")
+        return re.split("DR|DN", header_text)[0].replace(" ", "")
 
 
 def mimic_table_as_plaintext(table):
@@ -43,14 +43,14 @@ def mimic_table_as_plaintext(table):
             max_lines = max(max_lines, 1 + cell.count("\n"))
         for line_idx in range(max_lines):
             table_text += (
-                    " ".join(
-                        [
-                            cell.split("\n")[line_idx]
-                            for cell in row
-                            if line_idx < len(cell.split("\n"))
-                        ]
-                    )
-                    + "\n"
+                " ".join(
+                    [
+                        cell.split("\n")[line_idx]
+                        for cell in row
+                        if line_idx < len(cell.split("\n"))
+                    ]
+                )
+                + "\n"
             )
     return table_text
 
@@ -105,7 +105,7 @@ def format_table(text, bold, italics, table, hansard_date, house):
         table_text.strip().split("\n")[:table_anchor_idx]
     )
     table_text_after_anchor = "\n".join(
-        table_text.strip().split("\n")[table_anchor_idx + 1:]
+        table_text.strip().split("\n")[table_anchor_idx + 1 :]
     )
     num_table_chars_before_anchor = len(re.sub(r"\s", "", table_text_before_anchor))
     num_table_chars_after_anchor = len(re.sub(r"\s", "", table_text_after_anchor))
@@ -113,8 +113,8 @@ def format_table(text, bold, italics, table, hansard_date, house):
     num_text_chars_included_before_anchor = 0
     text_included_before_anchor = ""
     while (
-            start_idx >= 0
-            and num_text_chars_included_before_anchor < num_table_chars_before_anchor
+        start_idx >= 0
+        and num_text_chars_included_before_anchor < num_table_chars_before_anchor
     ):
         text_included_before_anchor = text[start_idx] + text_included_before_anchor
         num_text_chars_included_before_anchor += len(re.sub(r"\s", "", text[start_idx]))
@@ -124,15 +124,15 @@ def format_table(text, bold, italics, table, hansard_date, house):
     num_text_chars_included_after_anchor = 0
     text_included_after_anchor = ""
     while (
-            end_idx < len(text)
-            and num_text_chars_included_after_anchor < num_table_chars_after_anchor
+        end_idx < len(text)
+        and num_text_chars_included_after_anchor < num_table_chars_after_anchor
     ):
         text_included_after_anchor += text[end_idx]
         num_text_chars_included_after_anchor += len(re.sub(r"\s", "", text[end_idx]))
         end_idx += 1
 
     candidate_text = (
-            text_included_before_anchor + text[anchor_idx] + text_included_after_anchor
+        text_included_before_anchor + text[anchor_idx] + text_included_after_anchor
     )
     table_text_similarity_score = fuzz.ratio(
         re.sub(r"\s", "", candidate_text), re.sub(r"\s", "", table_text)
@@ -146,13 +146,15 @@ def format_table(text, bold, italics, table, hansard_date, house):
     for char in re.sub(r"\s", "", candidate_text):
         if char.isalnum():
             candidate_text_alphanumeric_count[char] = (
-                    candidate_text_alphanumeric_count.get(char, 0) + 1
+                candidate_text_alphanumeric_count.get(char, 0) + 1
             )
     # get the key where the dictionaries differ
     if table_alphanumeric_count != candidate_text_alphanumeric_count:
         # count of characters do not match
         # most likely one of the indexes overshot
-        print("Table text and candidate text does not match. Trying to brute force indexes...")
+        print(
+            "Table text and candidate text does not match. Trying to brute force indexes..."
+        )
         # page usually have < 70 lines
         max_deviation = 70
         start_idx = max(-1, anchor_idx - max_deviation)
@@ -160,12 +162,12 @@ def format_table(text, bold, italics, table, hansard_date, house):
         # brute force the actual start and end indices
         for i in range(start_idx, anchor_idx):
             for j in range(end_idx, anchor_idx, -1):
-                candidate_text = ''.join(text[i + 1:j - 1])
+                candidate_text = "".join(text[i + 1 : j - 1])
                 candidate_text_alphanumeric_count = {}
                 for char in re.sub(r"\s", "", candidate_text):
                     if char.isalnum():
                         candidate_text_alphanumeric_count[char] = (
-                                candidate_text_alphanumeric_count.get(char, 0) + 1
+                            candidate_text_alphanumeric_count.get(char, 0) + 1
                         )
                 if candidate_text_alphanumeric_count == table_alphanumeric_count:
                     # found the actual table
@@ -196,8 +198,8 @@ def format_table(text, bold, italics, table, hansard_date, house):
     # replace the entire block between start_idx and end_idx with the table
     table = [[cell.replace("\n", "") for cell in row] for row in table]
     markdown_table = list_to_markdown.make_markdown_table(table).split("\n")[
-                     :-1
-                     ]  # remove trailing newline
+        :-1
+    ]  # remove trailing newline
     markdown_table = [
         row.replace("\n", "") + "\n" for row in markdown_table
     ]  # remove in-cell newlines
@@ -230,7 +232,7 @@ def preprocess(hansard_date, house):
     with open(f"{input_dir}italics.txt", "r") as f:
         italics = f.readlines()
     assert (
-            len(text) == len(bold) == len(italics)
+        len(text) == len(bold) == len(italics)
     ), f"Length of text, bold and italics do not match: {len(text)} vs {len(bold)} vs {len(italics)}"
     assert len([1 for line in text if "|" in line]) == 0, f"Error: pipe found in {text}"
 
@@ -316,7 +318,8 @@ if __name__ == "__main__":
         "house",
         help="parliament house. Possible values: 'dr' or 'dn' or 'kkdr'",
         choices=["dr", "dn", "kkdr"],
-        default="kkdr", nargs="?"
+        default="kkdr",
+        nargs="?",
     )
     # Parse arguments
     args = parser.parse_args()

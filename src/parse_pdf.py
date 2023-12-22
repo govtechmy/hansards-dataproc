@@ -24,10 +24,45 @@ def not_invisible_rect(obj):
     if obj["object_type"] != "rect":
         return True
     if isinstance(obj["non_stroking_color"], int) or isinstance(
-            obj["non_stroking_color"], float
+        obj["non_stroking_color"], float
     ):
         return obj["non_stroking_color"] < 0.9
     return not (min(obj["non_stroking_color"]) > 0.9)
+
+
+hansard_dates_wo_doa = [
+    "02112016",
+    "03112016",
+    "07112016",
+    "08112016",
+    "09112016",
+    "10112016",
+    "14112016",
+    "15112016",
+    "16112016",
+    "17112016",
+    "21112016",
+    "22112016",
+    "23112016",
+    "24112016",
+]
+
+
+def inject_doa(text, bold, italics):
+    """Inject DOA section for KKDRs without DOA line"""
+    index = max(
+        text.find("\n[Tuan Yang di-Pertua"), text.find("\n[Timbalan Yang di-Pertua")
+    )
+    raw_text = re.sub(r"\s+", "", text)
+    raw_index = max(
+        raw_text.find("[TuanYangdi-PertuamempengerusikanMesyuarat]"),
+        raw_text.find("[TimbalanYangdi-Pertua"),
+    )
+    if index != -1:
+        text = text[:index] + "\nDOA" + text[index:]
+        bold = bold[:raw_index] + [1, 1, 1] + bold[raw_index:]
+        italics = italics[:raw_index] + [0, 0, 0] + italics[raw_index:]
+    return text, bold, italics
 
 
 def parse_hansard(hansard_date, house, source_dir=DEFAULT_DATA_DIR):
@@ -48,8 +83,8 @@ def parse_hansard(hansard_date, house, source_dir=DEFAULT_DATA_DIR):
     # only parse attendance list for DR-26072021 onwards
     # DN attendance parsing not supported
     has_attendance = (
-            pd.to_datetime(sortable_date) >= pd.to_datetime("2021-07-26")
-            and house.upper() == "DR"
+        pd.to_datetime(sortable_date) >= pd.to_datetime("2021-07-26")
+        and house.upper() == "DR"
     )
 
     doa_seen = False
@@ -66,7 +101,16 @@ def parse_hansard(hansard_date, house, source_dir=DEFAULT_DATA_DIR):
                     attn_text += extracted
                     print("Ahli-Ahli Yang Hadir", page)
                     continue
-                if "DOA" in extracted:
+                if (
+                    "DOA" in extracted
+                    or "D O A" in extracted  # DR-29042008
+                    or (
+                        # detect first content page for KKDRs without DOA
+                        house.upper() == "KKDR"
+                        and hansard_date in hansard_dates_wo_doa
+                        and "\nMALAYSIA \nKAMAR KHAS \nPARLIMEN" in extracted
+                    )
+                ):
                     doa_seen = True
                     doa_idx = idx
                     extract_attn_start = False  # stop extracting attendance list
@@ -75,7 +119,9 @@ def parse_hansard(hansard_date, house, source_dir=DEFAULT_DATA_DIR):
                         attn_text += extracted
                     continue
             text += extracted + "\n"  # add newline to separate pages
-            if hansard_date == "09072019" or (house == "kkdr" and hansard_date == "15112023"):
+            if hansard_date == "09072019" or (
+                house == "kkdr" and hansard_date == "15112023"
+            ):
                 # special case where snap tolerance doesn't work
                 current_tables = page.filter(not_invisible_rect).extract_tables()
             elif hansard_date == "31102023":
@@ -110,6 +156,9 @@ def parse_hansard(hansard_date, house, source_dir=DEFAULT_DATA_DIR):
                 bold += [is_bold] * len(word["text"])
                 italics += [is_italic] * len(word["text"])
 
+    if house.upper() == "KKDR" and hansard_date in hansard_dates_wo_doa:
+        text, bold, italics = inject_doa(text, bold, italics)
+
     assert len(bold) == len(
         italics
     ), f"Length of bold and italics do not match: {len(bold)} vs {len(italics)}"
@@ -132,7 +181,7 @@ def parse_hansard(hansard_date, house, source_dir=DEFAULT_DATA_DIR):
             spaced_italics += str(italics.pop())
     assert len(bold) == 0, f"Not all bold characters were processed: {len(bold)}"
     assert (
-            len(italics) == 0
+        len(italics) == 0
     ), f"Not all italic characters were processed: {len(italics)}"
 
     with open(str(dir_path / "plaintext.txt"), "w") as f:
@@ -162,7 +211,8 @@ if __name__ == "__main__":
         "house",
         help="parliament house. Possible values: 'dr' or 'dn'",
         choices=["dr", "dn", "kkdr"],
-        default="kkdr", nargs="?"
+        default="kkdr",
+        nargs="?",
     )
     # optional directory argument
     parser.add_argument(
