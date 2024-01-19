@@ -1,7 +1,9 @@
-# Adapted from: https://gist.github.com/m0neysha/219bad4b02d2008e0154
-# and https://gist.github.com/OsKaR31415/955b166f4a286ed427f667cb21d57bfd
+from pytablewriter import MarkdownTableWriter
+
 
 def make_markdown_table(array):
+    # Adapted from: https://gist.github.com/m0neysha/219bad4b02d2008e0154
+    # and https://gist.github.com/OsKaR31415/955b166f4a286ed427f667cb21d57bfd
     nl = "\n"
 
     # get the width of each column
@@ -16,3 +18,12 @@ def make_markdown_table(array):
         markdown += f"| {' | '.join(entry)} |{nl}"
 
     return markdown
+
+
+def make_markdown_table_with_lib(rows_with_header):
+    # assume first row header
+    header = rows_with_header[0]
+    rows = rows_with_header[1:]
+    writer = MarkdownTableWriter(headers=header, value_matrix=rows)
+    res = writer.dumps()
+    return res

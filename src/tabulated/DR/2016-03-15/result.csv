@@ -187,11 +187,12 @@ digunakan bagi perkhidmatan bergerak adalah jalur 900 MHz band dan 1800 MHz band
 Jalur ini sedang digunakan oleh tiga pemberi perkhidmatan melalui penguntukan radas atau
 *apparatus assignment* yang perlu diperbaharui secara tahunan. Bahagian spektrum di
 kedua-dua jalur tersebut adalah seperti berikut:
-|        | 900 MHz | 1800 MHz |
-| Celcom |    34   |    50    |
-| Maxis  |    32   |    50    |
-|  Digi  |    4    |    50    |
-Mengambil kira perkembangan teknologi serta peningkatan kualiti dan kelajuan
+|      |900 MHz|1800 MHz|
+|------|------:|-------:|
+|Celcom|     34|      50|
+|Maxis |     32|      50|
+|Digi  |      4|      50|
+<END_TABLE_MARKER>Mengambil kira perkembangan teknologi serta peningkatan kualiti dan kelajuan
 termasuk liputan yang luas di kawasan luar bandar dan pendalaman bagi perkhidmatan
 bergerak, kerajaan mengambil pendekatan untuk mengagihkan semula spektrum di jalur
 900 MHz dan 1800 MHz. Objektif pengagihan semula ini adalah untuk menyelaraskan
@@ -213,12 +214,13 @@ Dengan mengambil kira perkara-perkara yang di sebut di atas dalam pelaksanaan
 pengagihan semula spektrum jalur 900 MHz dan 1800 MHz dia agihkan secara saksama
 kepada empat pemberi perkhidmatan utama iaitu *Celcom, Maxis, Digi* dan *u-Mobile*. Jumlah
 lebar jalur yang diagihkan kepada pemberi perkhidmatan tersebut adalah seperti berikut:
-|          | 900 MHz | 1800 MHz |
-|  Celcom  |    20   |    40    |
-|  Maxis   |    20   |    40    |
-|   Digi   |    10   |    40    |
-| u-Mobile |    10   |    30    |
-Bahagian kedua di kedua-dua jalur ini adalah melalui peruntukan spektrum iaitu
+|        |900 MHz|1800 MHz|
+|--------|------:|-------:|
+|Celcom  |     20|      40|
+|Maxis   |     20|      40|
+|Digi    |     10|      40|
+|u-Mobile|     10|      30|
+<END_TABLE_MARKER>Bahagian kedua di kedua-dua jalur ini adalah melalui peruntukan spektrum iaitu
 *spectrum assignment,* di mana tempoh penggunaan adalah selama 15 tahun. Ini adalah
 bertujuan supaya pemberi perkhidmatan mendapat jaminan jangka masa panjang dari segi
 pembangunan perniagaan dan peluasan rangkaian. Pemilihan empat pemberi
@@ -406,14 +408,15 @@ berjumlah RM226.35 juta manakala kutipan balik pembiayaan TMPJPK sepanjang tahun
 membangunkan aktivitinya. Pembiayaan TMPJPK mengikut *entry point projects* (TPP)
 adalah seperti berikut:
 **Jumlah**
-| Bil. 1 |        Aktiviti Perkhidmatan kewangan       | (RM juta) 86.44 |
-|   2    |          Pemborongan dan peruncitan         |       4.00      |
-|   3    |  Pelancongan, penjagaan diri dan kesihatan  |       1.05      |
-|   4    |       Pertanian dan industri asas tani      |       1.86      |
-|   5    |                 Perladangan                 |       9.57      |
-|   6    | Pembangunan hartanah dan industri pembinaan |      123.43     |
-| Jumlah |                                             |      226.35     |
-Sehingga kini, jumlah pembiayaan keseluruhan yang telah dimanfaatkan oleh
+|Bil. 1|      Aktiviti Perkhidmatan kewangan       |(RM juta) 86.44|
+|------|-------------------------------------------|--------------:|
+|     2|Pemborongan dan peruncitan                 |           4.00|
+|     3|Pelancongan, penjagaan diri dan kesihatan  |           1.05|
+|     4|Pertanian dan industri asas tani           |           1.86|
+|     5|Perladangan                                |           9.57|
+|     6|Pembangunan hartanah dan industri pembinaan|         123.43|
+|Jumlah|                                           |         226.35|
+<END_TABLE_MARKER>Sehingga kini, jumlah pembiayaan keseluruhan yang telah dimanfaatkan oleh
 gerakan koperasi seluruh negara adalah sebanyak RM1.6 bilion bagi mengembangkan
 aktiviti dan asetnya. Bagi tahun 2016, Tabung Modal Pusingan bersedia untuk menyalurkan
 pembiayaan dengan dana sebanyak RM250 juta. Terima kasih, Tuan Yang di-Pertua."
@@ -647,14 +650,15 @@ secara skim pemisahan sukarela (VSS). Daripada jumlah 2,244 orang pekerja ini, s
 2,012 adalah pekerja tempatan dan 142 orang pekerja asing.
 Tuan Yang di-Pertua, kalau saya sebutkan *detail* sedikit sebab Yang Berhormat
 Batu Kawan bertanyakan tentang pecahan lima tahun ini.
-| TAHUN | JUMLAH (ORANG) |
-|  2010 |       51       |
-|  2011 |       14       |
-|  2012 |       -        |
-|  2013 |       26       |
-|  2014 |      521       |
-|  2015 |     1,632      |
-Tuan Yang di-Pertua, untuk makluman Dewan yang mulia ini Kementerian Sumber
+|TAHUN|JUMLAH (ORANG)|
+|----:|--------------|
+| 2010|            51|
+| 2011|            14|
+| 2012|-             |
+| 2013|            26|
+| 2014|           521|
+| 2015|          1632|
+<END_TABLE_MARKER>Tuan Yang di-Pertua, untuk makluman Dewan yang mulia ini Kementerian Sumber
 Manusia melalui Jabatan Tenaga Kerja akan terus membantu pekerja-pekerja yang telah
 dan bakal kehilangan pekerjaan dalam industri petroleum dengan menggalakkan mereka
 mendaftar dengan portal JobsMalaysia bagi mencari peluang pekerjaan yang ditawarkan
@@ -850,12 +854,13 @@ diamalkan di Malaysia ini adalah lebih baik jika dibandingkan dengan negara-nega
 Kadar kejayaan ini dapat dilihat daripada kadar *recidivist* ataupun kemasukan semula orang
 yang di parol ke penjara adalah rendah jika dibandingkan dengan negara luar seperti
 berikut;
-|            Negara           | Kadar Recidivist (%) |
-|          Australia          |         12.8         |
-| Amerika Syarikat (New York) |          9           |
-|          California         |         13.5         |
-|           Malaysia          |         2.5          |
-Jadi jelas, program parol di negara kita ini amat berjaya sekali berbanding dengan
+|          Negara           |Kadar Recidivist (%)|
+|---------------------------|-------------------:|
+|Australia                  |                12.8|
+|Amerika Syarikat (New York)|                 9.0|
+|California                 |                13.5|
+|Malaysia                   |                 2.5|
+<END_TABLE_MARKER>Jadi jelas, program parol di negara kita ini amat berjaya sekali berbanding dengan
 negara-negara barat yang lain. Terima kasih."
 JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN,7.,,■1120,1120,Puan Nurul Izzah binti Anwar [Lembah Pantai],"Terima kasih Tuan Yang di-
 Pertua, terima kasih Yang Berhormat Timbalan Menteri. Persoalan saya berbangkit kepada

@@ -197,12 +197,14 @@ def format_table(text, bold, italics, table, hansard_date, house):
 
     # replace the entire block between start_idx and end_idx with the table
     table = [[cell.replace("\n", "") for cell in row] for row in table]
-    markdown_table = list_to_markdown.make_markdown_table(table).split("\n")[
+    markdown_table = list_to_markdown.make_markdown_table_with_lib(table).split("\n")[
         :-1
     ]  # remove trailing newline
     markdown_table = [
         row.replace("\n", "") + "\n" for row in markdown_table
     ]  # remove in-cell newlines
+    # add marker to the end of the table to know when to append new lines in the future
+    markdown_table[-1] += "<END_TABLE_MARKER>"
     plainly_formatted_table = [re.sub(r"\S", "0", row) for row in markdown_table]
     text = text[: start_idx + 1] + markdown_table + text[end_idx:]
     bold = bold[: start_idx + 1] + plainly_formatted_table + bold[end_idx:]
@@ -286,9 +288,10 @@ def preprocess(hansard_date, house):
             italics[row_id] = italics[row_id].replace("  ", " ")
 
         # indentation is not uniform either, and can mess with author recognition
-        text[row_id] = text[row_id].strip() + "\n"
-        bold[row_id] = bold[row_id].strip() + "\n"
-        italics[row_id] = italics[row_id].strip() + "\n"
+        if text[row_id][0] != "|":
+            text[row_id] = text[row_id].strip() + "\n"
+            bold[row_id] = bold[row_id].strip() + "\n"
+            italics[row_id] = italics[row_id].strip() + "\n"
 
         # ignore the horizontal line on the DOA page
         if re.fullmatch(r"^ *[_-]+ *$", text[row_id].strip()):

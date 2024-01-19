@@ -736,13 +736,14 @@ supaya bilangan sampel yang dijalankan penjujukan genom melebihi 100 peratus
 daripada semua kes positif.
 Sebagai perbandingan, kapasiti penjujukan jenom di beberapa negara ASEAN
 adalah seperti berikut:
-| BIL. |   NEGARA  | PERATUSAN |
-|  1   | Singapura |     6     |
-|  2   |  Thailand |    0.43   |
-|  3   |  Vietnam  |    0.3    |
-|  4   | Indonesia |    0.11   |
-|  5   |  Cambodia |    0.82   |
-Antara kriteria yang digunakan untuk pemilihan sampel termasuk sampel yang
+|BIL.| NEGARA  |PERATUSAN|
+|---:|---------|--------:|
+|   1|Singapura|     6.00|
+|   2|Thailand |     0.43|
+|   3|Vietnam  |     0.30|
+|   4|Indonesia|     0.11|
+|   5|Cambodia |     0.82|
+<END_TABLE_MARKER>Antara kriteria yang digunakan untuk pemilihan sampel termasuk sampel yang
 mempunyai kitaran ambang ataupun *circle threshold value* kurang daripada 25. Sampel
 daripada kluster *positivity* tinggi, kes kematian ataupun *board index* atau kes ICU.
 Tuan Yang di-Pertua, varian baru yang wujud daripada virus SARS-CoV-2 kerap

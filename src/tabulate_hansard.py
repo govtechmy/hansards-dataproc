@@ -499,7 +499,9 @@ def format_attendance(text):
     parsed_data = {}
     current_heading = None
     for line in lines:
-        if not list_item_pattern.match(line) and line.endswith(":"):
+        if not list_item_pattern.match(line) and (
+            line.endswith(":") or line.endswith(":-")  # 20210915 endswith :-
+        ):
             current_heading = line
             parsed_data[current_heading] = ""
         elif current_heading is not None:
