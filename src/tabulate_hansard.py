@@ -577,8 +577,8 @@ def tabulate(hansard_date, house):
     if house.upper() == "KKDR":
         if isinstance(categories[0], list):
             # ensure first item of KKDR categories is a list
-            categories = categories[0]
             subcategories = categories[1]
+            categories = categories[0]
 
     fuzzy_ydp = [
         "PEMASYHURAN OLEH TUAN YANG DI-PERTUA",

@@ -83,6 +83,14 @@ def edit_hansards(house):
 
 def edit_kk_hansards(house):
     replace(
+        "31102023",
+        "Khususnya ꟷ selama ini kita mengusahakan tanaman kelapa sawit dan juga\n",
+        "Khususnya - selama ini kita mengusahakan tanaman kelapa sawit dan juga\n",
+        "none",
+        "none",
+        house=house,
+    )
+    replace(
         "02122021",
         "Pertua, kalau saya hendak buatDato Sri Alexander Nanta Linggi: Tuan Yang di-\n",
         "",
