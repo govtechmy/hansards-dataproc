@@ -1138,7 +1138,9 @@ def tabulate(hansard_date, house):
     # standardise timestamps into 24 hour format
     for row_id in range(len(speeches)):
         # insert standardised timestamp after old timestamp
-        speeches[row_id].insert(4, standardise_timestamp(speeches[row_id][3]))
+        # speeches[row_id].insert(4, standardise_timestamp(speeches[row_id][3]))
+        # replace old timestamp with standardised timestamp
+        speeches[row_id][3] = standardise_timestamp(speeches[row_id][3])
 
     # post-tabulation warnings
     # check if annotation is too long, usually missing ].
@@ -1184,7 +1186,7 @@ def tabulate(hansard_date, house):
                 "level_1",
                 "level_2",
                 "level_3",
-                "raw_timestamp",
+                # "raw_timestamp",
                 "timestamp",
                 "author",
                 "speech",
