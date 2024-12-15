@@ -41,6 +41,9 @@ from datetime import datetime
 
 from hansards_pipelines.parse_pdf import parse_hansard
 from hansards_pipelines.get_categories import get_categories
+from hansards_pipelines.post_parsing_edits import post_parsing_edits
+from hansards_pipelines.pretabulation_processing import preprocess
+from hansards_pipelines.edit_hansards import edit_hansards
 
 s3_client = boto3.client("s3")
 
@@ -334,9 +337,11 @@ def dg_get_categories(context: AssetExecutionContext):
     - toc_analysis/plaintext.txt
     - toc_analysis/bold.txt
     - toc_analysis/italics.txt
-    - Warning - long_toc_hansards.txt (optional)
-    - Warning - empty_categories.txt (optional)
-    - Warning - kkdr_subcategories_non_bold.txt (optional)
+
+    Warnings:
+    - long_toc_hansards
+    - empty_categories
+    - kkdr_subcategories_non_bold
     """
     sitting_object = _get_sitting_object(context.partition_key)
     context.log.info(f"Getting categories for {sitting_object['original_filename']}")
@@ -398,15 +403,77 @@ def dg_post_parsing_edits(context: AssetExecutionContext):
     """
     Hardcoded edits to parsed text files.
     """
+    s3_bucket = "hansards-dataproc"
     sitting_object = _get_sitting_object(context.partition_key)
+    # get tables.json and categories.json
+    s3_key = _build_save_dir("parsed_pdf", "tables.json", sitting_object)
+    try:
+        tables_contents = s3_client.get_object(Bucket=s3_bucket, Key=s3_key)
+    except botocore.exceptions.ClientError as e:
+        context.log.warning(f"No tables.json found for {context.partition_key}")
+        tables_contents = None
 
-    context.log.info("Post parsing edits")
+    s3_key = _build_save_dir("get_categories", "categories.json", sitting_object)
+    try:
+        categories_contents = s3_client.get_object(Bucket=s3_bucket, Key=s3_key)
+    except botocore.exceptions.ClientError as e:
+        context.log.warning(f"No categories.json found for {context.partition_key}")
+        categories_contents = None
+
+    post_parsing_edits(
+        sitting_object["house"],
+        sitting_object["date_str"],
+        tables_contents,
+        categories_contents,
+    )
 
 
 @asset(deps=[dg_post_parsing_edits])
 def dg_pre_tabulate(context: AssetExecutionContext):
+    """
+    Reads:
+    - parsed_pdf/plaintext.txt
+    - parsed_pdf/bold.txt
+    - parsed_pdf/italics.txt
+    - parsed_pdf/tables.json
 
-    context.log.info("Pre tabulating")
+    Writes:
+    - pretabulation/plaintext.txt
+    - pretabulation/bold.txt
+    - pretabulation/italics.txt
+    """
+    s3_bucket = "hansards-dataproc"
+    sitting_object = _get_sitting_object(context.partition_key)
+    context.log.info(f"Pre tabulating {context.partition_key}")
+
+    plaintext_s3_key = _build_save_dir("parsed_pdf", "plaintext.txt", sitting_object)
+    plaintext_contents = s3_client.get_object(Bucket=s3_bucket, Key=plaintext_s3_key)
+    bold_s3_key = _build_save_dir("parsed_pdf", "bold.txt", sitting_object)
+    bold_contents = s3_client.get_object(Bucket=s3_bucket, Key=bold_s3_key)
+    italics_s3_key = _build_save_dir("parsed_pdf", "italics.txt", sitting_object)
+    italics_contents = s3_client.get_object(Bucket=s3_bucket, Key=italics_s3_key)
+    tables_s3_key = _build_save_dir("parsed_pdf", "tables.json", sitting_object)
+    tables_contents = s3_client.get_object(Bucket=s3_bucket, Key=tables_s3_key)
+
+    text, bold, italics = preprocess(
+        sitting_object["date_str"],
+        sitting_object["house"],
+        plaintext_contents,
+        bold_contents,
+        italics_contents,
+        tables_contents,
+        is_pipeline=True,
+    )
+
+    s3_key = _build_save_dir("pretabulation", "plaintext.txt", sitting_object)
+    s3_client.put_object(Bucket=s3_bucket, Key=s3_key, Body=text)
+    context.log.info(f"Uploaded plaintext to {s3_key}")
+    s3_key = _build_save_dir("pretabulation", "bold.txt", sitting_object)
+    s3_client.put_object(Bucket=s3_bucket, Key=s3_key, Body=bold)
+    context.log.info(f"Uploaded bold to {s3_key}")
+    s3_key = _build_save_dir("pretabulation", "italics.txt", sitting_object)
+    s3_client.put_object(Bucket=s3_bucket, Key=s3_key, Body=italics)
+    context.log.info(f"Uploaded italics to {s3_key}")
 
 
 @asset(deps=[dg_pre_tabulate])
