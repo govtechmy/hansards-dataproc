@@ -17,7 +17,7 @@ import pandas as pd
 import pdfplumber
 from tqdm import tqdm
 from pathlib import Path
-from config import DEFAULT_DATA_DIR, BASE_PATH
+from hansards_pipelines.config import DEFAULT_DATA_DIR, BASE_PATH
 
 
 def not_invisible_rect(obj):
@@ -96,6 +96,7 @@ def parse_hansard(hansard_date, house, source_dir=DEFAULT_DATA_DIR, file_content
         pdf_file = file_content
     else:
         pdf_file = source_dir / f"{house.upper()}-{hansard_date}.pdf"
+    # TODO: FIX bytes object has no attribute seek here
     with pdfplumber.open(pdf_file) as pdf:
         extract_attn_start = False
         attn_text = ""

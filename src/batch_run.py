@@ -52,11 +52,11 @@ def get_files_in_folder(folder_path, house=None, year=None):
 if __name__ == "__main__":
     # range of year
     # filenames = []
-    # for year in range(2011, 2015):
+    # for year in range(2013, 2024):
     #     filenames.append(
     #         get_files_in_folder(
     #             DEFAULT_DATA_DIR,
-    #             house=house,
+    #             house=HOUSE_NAME,
     #             year=year,
     #         )
     #     )
@@ -67,8 +67,9 @@ if __name__ == "__main__":
 
     hansard_dates = filenames["date"].dt.strftime("%d%m%Y").tolist()
     # preprocess(hansard_dates, HOUSE_NAME)
-    # parse_categories(hansard_dates, HOUSE_NAME)
-    # post_parsing_edits.post_parsing_edits()
-    pre_tabulate(hansard_dates, HOUSE_NAME)
-    edit_hansards.edit_hansards(HOUSE_NAME)
+    # if HOUSE_NAME.upper() != "DN":
+    #     parse_categories(hansard_dates, HOUSE_NAME)
+    # post_parsing_edits.post_parsing_edits(HOUSE_NAME)
+    # pre_tabulate(hansard_dates, HOUSE_NAME)
+    # edit_hansards.edit_hansards(HOUSE_NAME)
     tabulate(hansard_dates, HOUSE_NAME)

@@ -311,7 +311,7 @@ def get_categories(hansard_date, house, root_dir=INPUT_PIPELINE_DIR, file_conten
             spaced_italics,
             empty_categories,
             kkdr_subcategories_non_bold_flag,
-            categories,
+            json.dumps(categories),
         )
 
 
