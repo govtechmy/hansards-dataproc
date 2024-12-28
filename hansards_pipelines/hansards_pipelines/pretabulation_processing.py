@@ -5,9 +5,8 @@ import argparse
 import os
 from thefuzz import fuzz
 import re
-import list_to_markdown
+import hansards_pipelines.list_to_markdown as list_to_markdown
 import json
-import utils
 
 
 def is_header(text):
@@ -221,7 +220,7 @@ def preprocess(
     text=None,
     bold=None,
     italics=None,
-    wrapped_tables_of_page=None,
+    wrapped_tables_of_page=[],
     is_pipeline=False,
 ):
     if not is_pipeline:
@@ -270,11 +269,10 @@ def preprocess(
             with open("edit_05102021.json", "r") as f:
                 edit_05102021 = json.load(f)
             tables[3] = edit_05102021
-
     for table in tables:
         try:
             text, bold, italics = format_table(
-                text, bold, italics, table, hansard_date, house
+                text, bold, italics, table, hansard_date, house, is_pipeline
             )
         except AssertionError as e:
             print(e)

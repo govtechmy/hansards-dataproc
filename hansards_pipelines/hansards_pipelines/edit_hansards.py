@@ -114,12 +114,21 @@ def replace(
 def edit_hansards(
     house, date=None, text=None, bold=None, italics=None, is_pipeline=False
 ):
+    num_edits = 0
     if house.upper() == "DR":
-        edit_dr_hansards(house, date, text, bold, italics, is_pipeline)
+        text, bold, italics, num_edits = edit_dr_hansards(
+            house, date, text, bold, italics, is_pipeline
+        )
     elif house.upper() == "DN":
-        edit_dn_hansards(house, date, text, bold, italics, is_pipeline)
+        text, bold, italics, num_edits = edit_dn_hansards(
+            house, date, text, bold, italics, is_pipeline
+        )
     elif house.upper() == "KKDR":
-        edit_kk_hansards(house, date, text, bold, italics, is_pipeline)
+        text, bold, italics, num_edits = edit_kk_hansards(
+            house, date, text, bold, italics, is_pipeline
+        )
+
+    return text, bold, italics, num_edits
 
 
 def edit_kk_hansards(
@@ -223,24 +232,36 @@ def edit_kk_hansards(
         modifications = [item for sublist in modifications.values() for item in sublist]
 
     for modification in modifications:
-        read_and_replace(
+        print(f"Editing hansards: {modification}")
+        text, bold, italics, num_edits = read_and_replace(
             modification["date"],
             modification["old_text_snippet"],
             modification["new_text_snippet"],
             modification["new_bold_snippet"],
             modification["new_italics_snippet"],
+            house,
             text,
             bold,
             italics,
-            house=house,
             is_pipeline=is_pipeline,
         )
+
+    return text, bold, italics, num_edits
 
 
 def edit_dr_hansards(
     house, date=None, text=None, bold=None, italics=None, is_pipeline=False
 ):
     modifications = {
+        "09122024": [
+            {
+                "old_text_snippet": "[Mesyuarat ditempohkan pada pukul 5.39 petang\n",
+                "new_text_snippet": "[Mesyuarat ditempohkan pada pukul 5.39 petang]\n",
+                "new_bold_snippet": "all",
+                "new_italics_snippet": "all",
+                "date": "09122024",
+            }
+        ],
         "08112023": [
             {
                 "old_text_snippet": "Institusi) Tuan Ramkarpal Singh a/l Karpal Singh]: Terima kasih Tuan Yang di-Pertua.\n",
@@ -1998,18 +2019,21 @@ def edit_dr_hansards(
         modifications = [item for sublist in modifications.values() for item in sublist]
 
     for modification in modifications:
-        read_and_replace(
+        print(f"Editing hansards: {modification}")
+        text, bold, italics, num_edits = read_and_replace(
             modification["date"],
             modification["old_text_snippet"],
             modification["new_text_snippet"],
             modification["new_bold_snippet"],
             modification["new_italics_snippet"],
+            house,
             text,
             bold,
             italics,
-            house=house,
             is_pipeline=is_pipeline,
         )
+
+    return text, bold, italics, num_edits
 
 
 def edit_dn_hansards(
@@ -2043,18 +2067,21 @@ def edit_dn_hansards(
         modifications = [item for sublist in modifications.values() for item in sublist]
 
     for modification in modifications:
-        read_and_replace(
+        print(f"Editing hansards: {modification}")
+        text, bold, italics, num_edits = read_and_replace(
             modification["date"],
             modification["old_text_snippet"],
             modification["new_text_snippet"],
             modification["new_bold_snippet"],
             modification["new_italics_snippet"],
+            house,
             text,
             bold,
             italics,
-            house=house,
             is_pipeline=is_pipeline,
         )
+
+    return text, bold, italics, num_edits
 
 
 if __name__ == "__main__":

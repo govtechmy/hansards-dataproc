@@ -69,9 +69,13 @@ def post_parsing_edits(
     house, date=None, tablejson_file_contents=None, categories_file_contents=None
 ):
     if house.upper() == "DN":
-        post_parsing_edits_dn(date, tablejson_file_contents, categories_file_contents)
+        return post_parsing_edits_dn(
+            date, tablejson_file_contents, categories_file_contents
+        )
     elif house.upper() == "DR":
-        post_parsing_edits_dr(date, tablejson_file_contents, categories_file_contents)
+        return post_parsing_edits_dr(
+            date, tablejson_file_contents, categories_file_contents
+        )
 
 
 def post_parsing_edits_dn(
@@ -434,8 +438,11 @@ def post_parsing_edits_dn(
             }
         ],
     }
-
-    if date:
+    if date and date not in table_modifications:
+        tablejson_file_contents = None
+        categories_file_contents = None
+        table_modifications = []
+    elif date and date in table_modifications:
         table_modifications = table_modifications[date]
     else:
         table_modifications = [
@@ -444,12 +451,13 @@ def post_parsing_edits_dn(
 
     # Apply all table modifications
     for modification in table_modifications:
-        read_and_modify_table(
+        tablejson_file_contents = read_and_modify_table(
             hansard_date=modification["date"],
             old_table=modification["old_table"],
             new_table=modification["new_table"],
             file_contents=tablejson_file_contents,
         )
+    return tablejson_file_contents, categories_file_contents
 
 
 def post_parsing_edits_dr(
@@ -545,8 +553,10 @@ def post_parsing_edits_dr(
             }
         ],
     }
-
-    if date:
+    if date and date not in table_modifications:
+        tablejson_file_contents = None
+        table_modifications = []
+    elif date and date in table_modifications:
         table_modifications = table_modifications[date]
     else:
         table_modifications = [
@@ -555,7 +565,7 @@ def post_parsing_edits_dr(
 
     # Apply all table modifications
     for modification in table_modifications:
-        read_and_modify_table(
+        tablejson_file_contents = read_and_modify_table(
             hansard_date=modification["date"],
             old_table=modification["old_table"],
             new_table=modification["new_table"],
@@ -580,12 +590,15 @@ def post_parsing_edits_dr(
     }
 
     if date:
-        # collect all table modifications for the date
         toc_entries = {k: v for k, v in toc_entries.items() if k == date}
 
     # Add all TOC entries
-    for hansard_date, entry in toc_entries.items():
-        read_and_add_toc_entry(hansard_date, entry, categories_file_contents)
+    for entry in toc_entries:
+        categories_file_contents = read_and_add_toc_entry(
+            date, entry, categories_file_contents
+        )
+
+    return tablejson_file_contents, categories_file_contents
 
 
 if __name__ == "__main__":
