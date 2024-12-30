@@ -226,11 +226,12 @@ def edit_kk_hansards(
     }
 
     if date:
-        modifications = modifications[date]
+        modifications = modifications.get(date, [])
     else:
         # flatten and run all
         modifications = [item for sublist in modifications.values() for item in sublist]
 
+    num_edits = 0
     for modification in modifications:
         print(f"Editing hansards: {modification}")
         text, bold, italics, num_edits = read_and_replace(
@@ -2013,11 +2014,12 @@ def edit_dr_hansards(
     }
 
     if date:
-        modifications = modifications[date]
+        modifications = modifications.get(date, [])
     else:
         # flatten and run all
         modifications = [item for sublist in modifications.values() for item in sublist]
 
+    num_edits = 0
     for modification in modifications:
         print(f"Editing hansards: {modification}")
         text, bold, italics, num_edits = read_and_replace(
@@ -2061,11 +2063,12 @@ def edit_dn_hansards(
     }
 
     if date:
-        modifications = modifications[date]
+        modifications = modifications.get(date, [])
     else:
         # flatten and run all
         modifications = [item for sublist in modifications.values() for item in sublist]
 
+    num_edits = 0
     for modification in modifications:
         print(f"Editing hansards: {modification}")
         text, bold, italics, num_edits = read_and_replace(

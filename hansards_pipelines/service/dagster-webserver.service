@@ -6,9 +6,10 @@ After=network.target
 Type=simple
 User=ec2-user
 Environment=DAGSTER_HOME=/opt/dagster/dagster_home
-Environment=PATH=/opt/dagster/venv/bin:$PATH
-Environment=VIRTUAL_ENV=/opt/dagster/venv
-ExecStart=/opt/dagster/venv/bin/dagster-webserver -h 0.0.0.0 -p 3000
+Environment=PATH=/home/ec2-user/hansards-dataproc/env/bin:/usr/bin:$PATH
+Environment=VIRTUAL_ENV=/home/ec2-user/hansards-dataproc/env
+WorkingDirectory=/home/ec2-user/hansards-dataproc/hansards_pipelines
+ExecStart=/home/ec2-user/hansards-dataproc/env/bin/dagster-webserver -h 0.0.0.0 -p 3000
 Restart=always
 RestartSec=10
 StartLimitInterval=0

@@ -20,10 +20,16 @@ import re
 import boto3
 import botocore
 import requests
+from dotenv import load_dotenv
 from urllib.parse import urljoin
 from typing import List
 from io import BytesIO
 from datetime import datetime
+
+load_dotenv()
+
+S3_DATAPROC_BUCKET = os.getenv("S3_DATAPROC_BUCKET")
+S3_PUBLIC_BUCKET = os.getenv("S3_PUBLIC_BUCKET")
 
 # from discord_webhook import DiscordWebhook, DiscordEmbed
 
@@ -168,7 +174,6 @@ def scrape_website(context: AssetExecutionContext) -> List:
     # sqs = boto3.client("sqs")
     # queue_url = "https://sqs.ap-southeast-1.amazonaws.com/761623003862/NewHansardsQueue"
 
-    s3_bucket = "hansards-dataproc"
     base_url = "https://www.parlimen.gov.my"
 
     sources = [
@@ -214,8 +219,10 @@ def scrape_website(context: AssetExecutionContext) -> List:
                     full_s3_key = f"new/{s3_key}"
                     # check s3 if file exists using the s3_client
                     try:
-                        s3_client.head_object(Bucket=s3_bucket, Key=full_s3_key)
-                        context.log.info(f"{s3_key} exists in {s3_bucket}.")
+                        s3_client.head_object(
+                            Bucket=S3_DATAPROC_BUCKET, Key=full_s3_key
+                        )
+                        context.log.info(f"{s3_key} exists in {S3_DATAPROC_BUCKET}.")
                     except botocore.exceptions.ClientError as e:
                         # new PDF: create new partition and upload to S3
 
@@ -224,10 +231,12 @@ def scrape_website(context: AssetExecutionContext) -> List:
 
                         # Upload the PDF to S3
                         s3_client.put_object(
-                            Bucket=s3_bucket, Key=full_s3_key, Body=pdf_response.content
+                            Bucket=S3_DATAPROC_BUCKET,
+                            Key=full_s3_key,
+                            Body=pdf_response.content,
                         )
                         context.log.info(
-                            f"Uploaded {pdf_name} to s3://{s3_bucket}/{full_s3_key}"
+                            f"Uploaded {pdf_name} to s3://{S3_DATAPROC_BUCKET}/{full_s3_key}"
                         )
                         new_pdfs.append((pdf_name, s3_key))
 
@@ -262,10 +271,9 @@ def sittings_sensor(context: SensorEvaluationContext):
     TODO: implement actual moving of parsed PDFs from new folder
     """
     # get new pdfs
-    s3_bucket_new = "hansards-dataproc"
 
     # get all partitions in s3
-    response = s3_client.list_objects_v2(Bucket=s3_bucket_new, Prefix="new/")
+    response = s3_client.list_objects_v2(Bucket=S3_DATAPROC_BUCKET, Prefix="new/")
     new_pdfs = []
     for obj in response.get("Contents", []):
         # key new/dewannegara/DN-03122024.pdf
@@ -285,7 +293,7 @@ def sittings_sensor(context: SensorEvaluationContext):
                 context.log.warning(f"WARNING: House is not valid: {house}")
 
     # TODO: REMOVE THIS FOR TESTING ONLY
-    new_pdfs = new_pdfs[:20]
+    new_pdfs = new_pdfs[:5]
     context.log.info(f"New PDFs: {new_pdfs}")
 
     return SensorResult(
@@ -305,8 +313,6 @@ def move_and_rename_hansards(context: AssetExecutionContext):
     """Move and rename raw hansards from new/ to main downloads folder"""
 
     # context.log.info(f"Moving and renaming hansards {len(scrape_website)}")
-    s3_bucket_new = "hansards-dataproc"
-    s3_bucket_main = "downloads.parlimen.gov.my"
 
     # name of PDFs already in new/ format: DN-02122024
     sitting_object = _get_sitting_object(context.partition_key)
@@ -315,11 +321,11 @@ def move_and_rename_hansards(context: AssetExecutionContext):
     context.log.info(f"Moving and renaming {new_pdf_s3_key}")
 
     # Read from s3
-    pdf_response = s3_client.get_object(Bucket=s3_bucket_new, Key=new_pdf_s3_key)
+    pdf_response = s3_client.get_object(Bucket=S3_DATAPROC_BUCKET, Key=new_pdf_s3_key)
     new_pdf_name = f"{house_folder}/{sitting_object['renamed_filename']}"
     # Rename and move the file
     s3_client.put_object(
-        Bucket=s3_bucket_main, Key=new_pdf_name, Body=pdf_response["Body"].read()
+        Bucket=S3_PUBLIC_BUCKET, Key=new_pdf_name, Body=pdf_response["Body"].read()
     )
     context.log.info(f"Renamed and moved {new_pdf_s3_key} to {new_pdf_name}")
     return new_pdf_name  # dewanrakyat/dr_2024-12-02.pdf
@@ -335,7 +341,7 @@ def dg_parse_hansard(context: AssetExecutionContext):
 
     # read pdf from s3
     pdf_response = s3_client.get_object(
-        Bucket="downloads.parlimen.gov.my", Key=sitting_object["renamed_filename_key"]
+        Bucket=S3_PUBLIC_BUCKET, Key=sitting_object["renamed_filename_key"]
     )
     text, spaced_bold, spaced_italics, tables, attn_text = parse_hansard(
         sitting_object["date_str"],
@@ -344,23 +350,22 @@ def dg_parse_hansard(context: AssetExecutionContext):
         file_content=BytesIO(pdf_response["Body"].read()),
     )
     # save to s3
-    s3_bucket = "hansards-dataproc"
     s3_key = _build_save_dir("parsed_pdf", "plaintext.txt", sitting_object)
-    s3_client.put_object(Bucket=s3_bucket, Key=s3_key, Body=text)
+    s3_client.put_object(Bucket=S3_DATAPROC_BUCKET, Key=s3_key, Body=text)
     context.log.info(f"Uploaded plaintext to {s3_key}")
     s3_key = _build_save_dir("parsed_pdf", "bold.txt", sitting_object)
-    s3_client.put_object(Bucket=s3_bucket, Key=s3_key, Body=spaced_bold)
+    s3_client.put_object(Bucket=S3_DATAPROC_BUCKET, Key=s3_key, Body=spaced_bold)
     context.log.info(f"Uploaded bold to {s3_key}")
     s3_key = _build_save_dir("parsed_pdf", "italics.txt", sitting_object)
-    s3_client.put_object(Bucket=s3_bucket, Key=s3_key, Body=spaced_italics)
+    s3_client.put_object(Bucket=S3_DATAPROC_BUCKET, Key=s3_key, Body=spaced_italics)
     context.log.info(f"Uploaded italics to {s3_key}")
     # save tables even if empty
     s3_key = _build_save_dir("parsed_pdf", "tables.json", sitting_object)
-    s3_client.put_object(Bucket=s3_bucket, Key=s3_key, Body=json.dumps(tables))
+    s3_client.put_object(Bucket=S3_DATAPROC_BUCKET, Key=s3_key, Body=json.dumps(tables))
     context.log.info(f"Uploaded tables to {s3_key}")
     if attn_text != "":
         s3_key = _build_save_dir("parsed_pdf", "attendance.txt", sitting_object)
-        s3_client.put_object(Bucket=s3_bucket, Key=s3_key, Body=attn_text)
+        s3_client.put_object(Bucket=S3_DATAPROC_BUCKET, Key=s3_key, Body=attn_text)
         context.log.info(f"Uploaded attendance to {s3_key}")
 
 
@@ -385,7 +390,7 @@ def dg_get_categories(context: AssetExecutionContext):
     context.log.info(f"Getting categories for {sitting_object['original_filename']}")
 
     pdf_response = s3_client.get_object(
-        Bucket="downloads.parlimen.gov.my", Key=sitting_object["renamed_filename_key"]
+        Bucket=S3_PUBLIC_BUCKET, Key=sitting_object["renamed_filename_key"]
     )
     (
         long_toc,
@@ -401,7 +406,6 @@ def dg_get_categories(context: AssetExecutionContext):
         file_content=BytesIO(pdf_response["Body"].read()),
     )
 
-    s3_bucket = "hansards-dataproc"
     if long_toc:
         # only logging required
         # TODO: feed to system-wide/central log
@@ -419,22 +423,22 @@ def dg_get_categories(context: AssetExecutionContext):
 
     s3_key = _build_save_dir("get_categories", "categories.json", sitting_object)
     s3_client.put_object(
-        Bucket=s3_bucket, Key=s3_key, Body=_prepare_json_for_s3(categories)
+        Bucket=S3_DATAPROC_BUCKET, Key=s3_key, Body=_prepare_json_for_s3(categories)
     )
     context.log.info(f"Uploaded categories to {s3_key}")
 
     s3_key = _build_save_dir(
         "get_categories", "toc_analysis/plaintext.txt", sitting_object
     )
-    s3_client.put_object(Bucket=s3_bucket, Key=s3_key, Body=text)
+    s3_client.put_object(Bucket=S3_DATAPROC_BUCKET, Key=s3_key, Body=text)
     context.log.info(f"Uploaded plaintext to {s3_key}")
     s3_key = _build_save_dir("get_categories", "toc_analysis/bold.txt", sitting_object)
-    s3_client.put_object(Bucket=s3_bucket, Key=s3_key, Body=spaced_bold)
+    s3_client.put_object(Bucket=S3_DATAPROC_BUCKET, Key=s3_key, Body=spaced_bold)
     context.log.info(f"Uploaded bold to {s3_key}")
     s3_key = _build_save_dir(
         "get_categories", "toc_analysis/italics.txt", sitting_object
     )
-    s3_client.put_object(Bucket=s3_bucket, Key=s3_key, Body=spaced_italics)
+    s3_client.put_object(Bucket=S3_DATAPROC_BUCKET, Key=s3_key, Body=spaced_italics)
     context.log.info(f"Uploaded italics to {s3_key}")
 
 
@@ -443,12 +447,11 @@ def dg_post_parsing_edits(context: AssetExecutionContext):
     """
     Hardcoded edits to parsed text files.
     """
-    s3_bucket = "hansards-dataproc"
     sitting_object = _get_sitting_object(context.partition_key)
     # get tables.json and categories.json
     tables_s3_key = _build_save_dir("parsed_pdf", "tables.json", sitting_object)
     try:
-        tables = _read_json_file(s3_bucket, tables_s3_key)
+        tables = _read_json_file(S3_DATAPROC_BUCKET, tables_s3_key)
     except botocore.exceptions.ClientError as e:
         context.log.warning(f"No tables.json found for {context.partition_key}")
         tables = None
@@ -457,7 +460,7 @@ def dg_post_parsing_edits(context: AssetExecutionContext):
         "get_categories", "categories.json", sitting_object
     )
     try:
-        categories = _read_json_file(s3_bucket, categories_s3_key)
+        categories = _read_json_file(S3_DATAPROC_BUCKET, categories_s3_key)
     except botocore.exceptions.ClientError as e:
         context.log.warning(f"No categories.json found for {context.partition_key}")
         categories = None
@@ -471,14 +474,16 @@ def dg_post_parsing_edits(context: AssetExecutionContext):
 
     if tables:
         s3_client.put_object(
-            Bucket=s3_bucket, Key=tables_s3_key, Body=_prepare_json_for_s3(tables)
+            Bucket=S3_DATAPROC_BUCKET,
+            Key=tables_s3_key,
+            Body=_prepare_json_for_s3(tables),
         )
         context.log.info(f"Uploaded tables to {tables_s3_key}")
     else:
         context.log.warning(f"No post parsing edits found for {context.partition_key}")
     if categories:
         s3_client.put_object(
-            Bucket=s3_bucket,
+            Bucket=S3_DATAPROC_BUCKET,
             Key=categories_s3_key,
             Body=_prepare_json_for_s3(categories),
         )
@@ -501,21 +506,21 @@ def dg_pre_tabulate(context: AssetExecutionContext):
     - pretabulation/bold.txt
     - pretabulation/italics.txt
     """
-    s3_bucket = "hansards-dataproc"
     sitting_object = _get_sitting_object(context.partition_key)
     context.log.info(f"Pre tabulating {context.partition_key}")
 
     plaintext = _read_txt_file(
-        s3_bucket, _build_save_dir("parsed_pdf", "plaintext.txt", sitting_object)
+        S3_DATAPROC_BUCKET,
+        _build_save_dir("parsed_pdf", "plaintext.txt", sitting_object),
     )
     bold = _read_txt_file(
-        s3_bucket, _build_save_dir("parsed_pdf", "bold.txt", sitting_object)
+        S3_DATAPROC_BUCKET, _build_save_dir("parsed_pdf", "bold.txt", sitting_object)
     )
     italics = _read_txt_file(
-        s3_bucket, _build_save_dir("parsed_pdf", "italics.txt", sitting_object)
+        S3_DATAPROC_BUCKET, _build_save_dir("parsed_pdf", "italics.txt", sitting_object)
     )
     tables = _read_json_file(
-        s3_bucket, _build_save_dir("parsed_pdf", "tables.json", sitting_object)
+        S3_DATAPROC_BUCKET, _build_save_dir("parsed_pdf", "tables.json", sitting_object)
     )
 
     # check and warn if contents are empty
@@ -538,17 +543,19 @@ def dg_pre_tabulate(context: AssetExecutionContext):
 
     s3_key = _build_save_dir("pretabulation", "plaintext.txt", sitting_object)
     s3_client.put_object(
-        Bucket=s3_bucket, Key=s3_key, Body=_prepare_text_for_s3(processed_text)
+        Bucket=S3_DATAPROC_BUCKET, Key=s3_key, Body=_prepare_text_for_s3(processed_text)
     )
     context.log.info(f"Uploaded plaintext to {s3_key}")
     s3_key = _build_save_dir("pretabulation", "bold.txt", sitting_object)
     s3_client.put_object(
-        Bucket=s3_bucket, Key=s3_key, Body=_prepare_text_for_s3(processed_bold)
+        Bucket=S3_DATAPROC_BUCKET, Key=s3_key, Body=_prepare_text_for_s3(processed_bold)
     )
     context.log.info(f"Uploaded bold to {s3_key}")
     s3_key = _build_save_dir("pretabulation", "italics.txt", sitting_object)
     s3_client.put_object(
-        Bucket=s3_bucket, Key=s3_key, Body=_prepare_text_for_s3(processed_italics)
+        Bucket=S3_DATAPROC_BUCKET,
+        Key=s3_key,
+        Body=_prepare_text_for_s3(processed_italics),
     )
     context.log.info(f"Uploaded italics to {s3_key}")
 
@@ -567,19 +574,19 @@ def dg_edit_hansards(context: AssetExecutionContext):
     - edited_hansards/bold.txt
     - edited_hansards/italics.txt
     """
-
-    s3_bucket = "hansards-dataproc"
     sitting_object = _get_sitting_object(context.partition_key)
     context.log.info(f"Editing hansards for {context.partition_key}")
 
     plaintext = _read_txt_file(
-        s3_bucket, _build_save_dir("pretabulation", "plaintext.txt", sitting_object)
+        S3_DATAPROC_BUCKET,
+        _build_save_dir("pretabulation", "plaintext.txt", sitting_object),
     )
     bold = _read_txt_file(
-        s3_bucket, _build_save_dir("pretabulation", "bold.txt", sitting_object)
+        S3_DATAPROC_BUCKET, _build_save_dir("pretabulation", "bold.txt", sitting_object)
     )
     italics = _read_txt_file(
-        s3_bucket, _build_save_dir("pretabulation", "italics.txt", sitting_object)
+        S3_DATAPROC_BUCKET,
+        _build_save_dir("pretabulation", "italics.txt", sitting_object),
     )
 
     text, bold, italics, num_edits = edit_hansards(
@@ -592,14 +599,18 @@ def dg_edit_hansards(context: AssetExecutionContext):
     )
 
     s3_key = _build_save_dir("pretabulation", "plaintext.txt", sitting_object)
-    s3_client.put_object(Bucket=s3_bucket, Key=s3_key, Body=_prepare_text_for_s3(text))
+    s3_client.put_object(
+        Bucket=S3_DATAPROC_BUCKET, Key=s3_key, Body=_prepare_text_for_s3(text)
+    )
     context.log.info(f"Uploaded plaintext to {s3_key}")
     s3_key = _build_save_dir("pretabulation", "bold.txt", sitting_object)
-    s3_client.put_object(Bucket=s3_bucket, Key=s3_key, Body=_prepare_text_for_s3(bold))
+    s3_client.put_object(
+        Bucket=S3_DATAPROC_BUCKET, Key=s3_key, Body=_prepare_text_for_s3(bold)
+    )
     context.log.info(f"Uploaded bold to {s3_key}")
     s3_key = _build_save_dir("pretabulation", "italics.txt", sitting_object)
     s3_client.put_object(
-        Bucket=s3_bucket, Key=s3_key, Body=_prepare_text_for_s3(italics)
+        Bucket=S3_DATAPROC_BUCKET, Key=s3_key, Body=_prepare_text_for_s3(italics)
     )
     context.log.info(f"Uploaded italics to {s3_key}")
 
@@ -635,30 +646,32 @@ def dg_tabulate(context: AssetExecutionContext):
     - toc_mismatch.txt
     """
 
-    s3_bucket = "hansards-dataproc"
     sitting_object = _get_sitting_object(context.partition_key)
     context.log.info(f"Tabulating {context.partition_key}")
 
     # get files from s3
     plaintext = _read_txt_file(
-        s3_bucket, _build_save_dir("pretabulation", "plaintext.txt", sitting_object)
+        S3_DATAPROC_BUCKET,
+        _build_save_dir("pretabulation", "plaintext.txt", sitting_object),
     )
     bold = _read_txt_file(
-        s3_bucket, _build_save_dir("pretabulation", "bold.txt", sitting_object)
+        S3_DATAPROC_BUCKET, _build_save_dir("pretabulation", "bold.txt", sitting_object)
     )
     italics = _read_txt_file(
-        s3_bucket, _build_save_dir("pretabulation", "italics.txt", sitting_object)
+        S3_DATAPROC_BUCKET,
+        _build_save_dir("pretabulation", "italics.txt", sitting_object),
     )
     print(f"length of plaintext: {len(plaintext)}")
     print(f"length of bold: {len(bold)}")
     print(f"length of italics: {len(italics)}")
 
     # read categories.json from root folder
-    categories = _read_json_file(s3_bucket, "categories.json")
+    categories = _read_json_file(S3_DATAPROC_BUCKET, "categories.json")
 
     try:
         attendance = _read_txt_file(
-            s3_bucket, _build_save_dir("parsed_pdf", "attendance.txt", sitting_object)
+            S3_DATAPROC_BUCKET,
+            _build_save_dir("parsed_pdf", "attendance.txt", sitting_object),
         )
         # attendance txt in tabulate expects a string
         attendance = "".join(attendance)
@@ -679,20 +692,24 @@ def dg_tabulate(context: AssetExecutionContext):
 
     s3_key = _build_save_dir("tabulated", "result.csv", sitting_object)
     s3_client.put_object(
-        Bucket=s3_bucket, Key=s3_key, Body=_prepare_csv_for_s3(speeches)
+        Bucket=S3_DATAPROC_BUCKET, Key=s3_key, Body=_prepare_csv_for_s3(speeches)
     )
     context.log.info(f"Uploaded result.csv to {s3_key}")
 
     if absent_text:
         s3_key = _build_save_dir("tabulated", "absent.txt", sitting_object)
         s3_client.put_object(
-            Bucket=s3_bucket, Key=s3_key, Body=_prepare_text_for_s3(absent_text)
+            Bucket=S3_DATAPROC_BUCKET,
+            Key=s3_key,
+            Body=_prepare_text_for_s3(absent_text),
         )
         context.log.info(f"Uploaded absent.txt to {s3_key}")
 
     if attended_text:
         s3_key = _build_save_dir("tabulated", "attended.txt", sitting_object)
         s3_client.put_object(
-            Bucket=s3_bucket, Key=s3_key, Body=_prepare_text_for_s3(attended_text)
+            Bucket=S3_DATAPROC_BUCKET,
+            Key=s3_key,
+            Body=_prepare_text_for_s3(attended_text),
         )
         context.log.info(f"Uploaded attended.txt to {s3_key}")
