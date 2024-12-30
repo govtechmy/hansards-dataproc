@@ -41,8 +41,34 @@ If you want to enable Dagster [Schedules](https://docs.dagster.io/concepts/parti
 
 Once your Dagster Daemon is running, you can start turning on schedules and sensors for your jobs.
 
-## Deploy on Dagster Cloud
+## Deploy on EKS
 
-The easiest way to deploy your Dagster project is to use Dagster Cloud.
+```
+sudo yum install openssl-devel bzip2-devel libffi-devel zlib-devel sqlite-devel -y
 
-Check out the [Dagster Cloud Documentation](https://docs.dagster.cloud) to learn more.
+cd /opt
+sudo wget https://www.python.org/ftp/python/3.11.4/Python-3.11.4.tgz
+sudo tar xzf Python-3.11.4.tgz
+
+cd Python-3.11.4
+sudo ./configure --enable-optimizations --enable-loadable-sqlite-extensions
+```
+
+
+### Setup dagster home
+```
+# Create Dagster home directory
+sudo mkdir -p /opt/dagster/dagster_home
+sudo chown -R ec2-user:ec2-user /opt/dagster
+
+# Create logs directory
+sudo mkdir -p /opt/dagster/dagster_home/logs
+sudo chown -R ec2-user:ec2-user /opt/dagster/dagster_home/logs
+```
+
+### Setup service
+```
+sudo cp hansards_pipelines/service/dagster-daemon.service /etc/systemd/system
+sudo cp hansards_pipelines/service/dagster-webserver.service /etc/systemd/system
+
+```
