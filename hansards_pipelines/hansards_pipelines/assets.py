@@ -1,3 +1,4 @@
+import botocore.exceptions
 from dagster import (
     SensorEvaluationContext,
     asset,
@@ -9,6 +10,8 @@ from dagster import (
     DynamicPartitionsDefinition,
     AssetExecutionContext,
     define_asset_job,
+    RunsFilter,
+    DagsterRunStatus
 )
 import sys
 import os
@@ -295,16 +298,42 @@ def sittings_sensor(context: SensorEvaluationContext):
     # TODO: REMOVE THIS FOR TESTING ONLY
     new_pdfs = new_pdfs[:5]
     context.log.info(f"New PDFs: {new_pdfs}")
+    
+    ## Only Create New Runs if Partition has no active runs
+    # Get runs for each partition
+    run_requests = []
+    dynamic_partition_additions = []
+
+    for pdf_name in new_pdfs:
+        # Get latest run for this partition using Dagster's RunsFilter
+        runs = context.instance.get_runs(
+            filters=RunsFilter(
+                tags={
+                    "dagster/partition": pdf_name
+                },
+                statuses=[
+                    DagsterRunStatus.STARTED,
+                    DagsterRunStatus.STARTING
+                ]
+            )
+        )
+        
+        # Check if there are any active runs
+        has_active_run = any(runs)
+        
+        if not has_active_run:
+            run_requests.append(RunRequest(partition_key=pdf_name))
+            dynamic_partition_additions.append(pdf_name)
+            context.log.info(f"Creating new run for partition: {pdf_name}")
+        else:
+            context.log.info(f"Skipping partition {pdf_name} - has active run")
+    
 
     return SensorResult(
-        run_requests=[
-            RunRequest(partition_key=new_pdf_name) for new_pdf_name in new_pdfs
-        ],
+        run_requests=run_requests,
         dynamic_partitions_requests=[
-            sitting_partitions_def.build_add_request(
-                [new_pdf_name for new_pdf_name in new_pdfs]
-            )
-        ],
+            sitting_partitions_def.build_add_request(dynamic_partition_additions)
+        ] if dynamic_partition_additions else []
     )
 
 
@@ -713,3 +742,10 @@ def dg_tabulate(context: AssetExecutionContext):
             Body=_prepare_text_for_s3(attended_text),
         )
         context.log.info(f"Uploaded attended.txt to {s3_key}")
+
+
+
+        
+
+    
+# TODO: add insert to hansards DB
