@@ -1989,6 +1989,15 @@ def edit_dr_hansards(
                 "date": "02082017",
             }
         ],
+        "04072024": [
+            {
+                "old_text_snippet": "[Mesyuarat ditempohkan pada pukul 1.00 tengah hari\n",
+                "new_text_snippet": "[Mesyuarat ditempohkan pada pukul 1.00 tengah hari]\n",
+                "new_bold_snippet": "none",
+                "new_italics_snippet": "none",
+                "date": "04072024",
+            }
+        ],
     }
 
     if date:
