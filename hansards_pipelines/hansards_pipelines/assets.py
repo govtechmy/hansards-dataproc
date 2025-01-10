@@ -744,7 +744,43 @@ def dg_tabulate(context: AssetExecutionContext):
         context.log.info(f"Uploaded attended.txt to {s3_key}")
 
 
+@asset(partitions_def=sitting_partitions_def,deps=[dg_tabulate])
+def remove_parsed_hansards(context: AssetExecutionContext):
+    """
+        Remove Hansards from /new after parsing 
+        Only removes pdf if result.csv is in /tabulated and if file is moved into new folder
+    """
+    sitting_object = _get_sitting_object(context.partition_key)
+    house_folder = sitting_object["house_folder"]
+    date = sitting_object["date_str"]
+    new_pdf_s3_key = f"new/{house_folder}/{sitting_object['original_filename']}"  # new/dewanrakyat/DN-02122024.pdf
+    moved_pdf_key = f"{house_folder}/{sitting_object['renamed_filename']}"
+    parsed_pdf_result_key = f"tabulated/{house_folder}/{date}/result.csv" # tabulated/dewanrakyat/02122024/result.csv
+    
+    # Check if result.csv is in /tabulated/dewanrakyat/02122024
+    try:
+        s3_client.head_object(Bucket=S3_DATAPROC_BUCKET, Key=parsed_pdf_result_key)
+        context.log.info(f"{parsed_pdf_result_key} Verified!")
+    except botocore.exceptions.ClientError:
+        context.log.error(f"result.csv is not in {parsed_pdf_result_key}")
+        raise botocore.exceptions.ClientError
+        
 
+    # Check if file was moved
+    try:
+        s3_client.head_object(Bucket=S3_PUBLIC_BUCKET, Key=moved_pdf_key)
+        context.log.info(f"{moved_pdf_key}  Verified!")
+    except botocore.exceptions.ClientError:
+        context.log.error(f"{moved_pdf_key} not Verfied")
+        raise botocore.exceptions.ClientError
+    
+    # Remove file from S3 bucket
+    try:
+        s3_client.delete_object(Bucket=S3_DATAPROC_BUCKET,Key=new_pdf_s3_key)
+        context.log.info(f"Removed {new_pdf_s3_key} from s3")
+    except botocore.exceptions.ClientError:
+        context.log.error(f"Error removing {new_pdf_s3_key} from s3")
+        raise botocore.exceptions.ClientError
         
 
     
