@@ -76,6 +76,10 @@ def post_parsing_edits(
         return post_parsing_edits_dr(
             date, tablejson_file_contents, categories_file_contents
         )
+    elif house.upper() == "KKDR":
+        return post_parsing_edits_kk(
+            date, tablejson_file_contents, categories_file_contents
+        )
 
 
 def post_parsing_edits_dn(
@@ -601,6 +605,123 @@ def post_parsing_edits_dr(
     return tablejson_file_contents, categories_file_contents
 
 
+def post_parsing_edits_kk(
+    date=None, tablejson_file_contents=None, categories_file_contents=None
+):
+    # table_modifications = {
+    #     "25112014": [
+    #         {
+    #             "old_table": [139, 139, [[["kaudang,", "dangdang"]]]],
+    #             "new_table": None,
+    #         },
+    #         {
+    #             "old_table": [38, 25, [[["RM1,987,000,000", "[na1]"]]]],
+    #             "new_table": None,
+    #         },
+    #     ],
+    #     "07042010": [
+    #         {
+    #             "old_table": [
+    #                 19,
+    #                 6,
+    #                 [
+    #                     [
+    #                         ["Negeri"],
+    #                         ["Perlis"],
+    #                         ["Kedah"],
+    #                         ["Pulau Pinang"],
+    #                         ["Perak"],
+    #                         ["Selangor"],
+    #                         ["Kuala Lumpur"],
+    #                         ["Negeri Sembilan"],
+    #                         ["Melaka"],
+    #                         ["Johor"],
+    #                         ["Pahang"],
+    #                         ["Terengganu"],
+    #                         ["Kelantan"],
+    #                         ["Sabah"],
+    #                         ["Sarawak"],
+    #                         ["Jumlah"],
+    #                     ],
+    #                     [
+    #                         ["Negeri", "Bilangan penderaan  \nkanak-kanak & Bayi"],
+    #                         ["Perlis", "245"],
+    #                         ["Kedah", "420"],
+    #                         ["Pulau Pinang", "891"],
+    #                         ["Perak", "861"],
+    #                         ["Selangor", "3,234"],
+    #                         ["Kuala Lumpur", "2,221"],
+    #                         ["Negeri Sembilan", "799"],
+    #                         ["Melaka", "301"],
+    #                         ["Johor", "599"],
+    #                         ["Pahang", "440"],
+    #                         ["Terengganu", "168"],
+    #                         ["Kelantan", "105"],
+    #                         ["Sabah", "34"],
+    #                         ["Sarawak", "440"],
+    #                         ["Jumlah", "10,758"],
+    #                     ],
+    #                 ],
+    #             ],
+    #             "new_table": [
+    #                 19,
+    #                 6,
+    #                 [
+    #                     [
+    #                         ["Negeri", "Bilangan penderaan  \nkanak-kanak & Bayi"],
+    #                         ["Perlis", "245"],
+    #                         ["Kedah", "420"],
+    #                         ["Pulau Pinang", "891"],
+    #                         ["Perak", "861"],
+    #                         ["Selangor", "3,234"],
+    #                         ["Kuala Lumpur", "2,221"],
+    #                         ["Negeri Sembilan", "799"],
+    #                         ["Melaka", "301"],
+    #                         ["Johor", "599"],
+    #                         ["Pahang", "440"],
+    #                         ["Terengganu", "168"],
+    #                         ["Kelantan", "105"],
+    #                         ["Sabah", "34"],
+    #                         ["Sarawak", "440"],
+    #                         ["Jumlah", "10,758"],
+    #                     ]
+    #                 ],
+    #             ],
+    #         }
+    #     ],
+    #     "12042010": [
+    #         {
+    #             "old_table": [38, 25, [[["RM1,987,000,000", "[na1]"]]]],
+    #             "new_table": None,
+    #         }
+    #     ],
+    # }
+    
+    table_modifications = {}
+    
+    if date and date not in table_modifications:
+        tablejson_file_contents = None
+        categories_file_contents = None
+        table_modifications = []
+    elif date and date in table_modifications:
+        table_modifications = table_modifications[date]
+    else:
+        table_modifications = [
+            item for sublist in table_modifications.values() for item in sublist
+        ]
+
+    # Apply all table modifications
+    for modification in table_modifications:
+        tablejson_file_contents = read_and_modify_table(
+            hansard_date=modification["date"],
+            old_table=modification["old_table"],
+            new_table=modification["new_table"],
+            file_contents=tablejson_file_contents,
+        )
+    return tablejson_file_contents, categories_file_contents
+
+
 if __name__ == "__main__":
     post_parsing_edits("DN")
     post_parsing_edits("DR")
+    post_parsing_edits("KKDR")
