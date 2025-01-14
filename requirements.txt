@@ -1,4 +1,4 @@
-numpy==2.21
+numpy==2.2.1
 pandas==2.2.3
 pdfplumber==0.7.1
 PyPDF2==2.6.0
@@ -13,3 +13,7 @@ python-Levenshtein==0.26.1
 dagster==1.9.6
 dagster-webserver==1.9.6
 beautifulsoup4==4.12.3
+
+malaya==5.1.1
+nltk==3.9.1
+torch==2.5.1
