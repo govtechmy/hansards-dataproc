@@ -223,6 +223,22 @@ def edit_kk_hansards(
                 "date": "12062023",
             },
         ],
+        "04072024": [
+            {
+                "old_text_snippet": "Timbalan Menteri di Jabatan Perdana Menteri (Hal Ehwal Agama), Dr.\n",
+                "new_text_snippet": "Timbalan Menteri di Jabatan Perdana Menteri (Hal Ehwal Agama) [Dr.\n",
+                "new_bold_snippet": "all",
+                "new_italics_snippet": "none",
+                "date": "04072024",
+            },
+            {
+                "old_text_snippet": "Zulkifli bin Hasan [Senator]: Assalamualaikum warahmatullahi wabarakatuh dan\n",
+                "new_text_snippet": "Zulkifli bin Hasan]: Assalamualaikum warahmatullahi wabarakatuh dan\n",
+                "new_bold_snippet": "11111111 111 1111111 000000000000000 00000000000000 00000000000 000\n",
+                "new_italics_snippet": "none",
+                "date": "04072024",
+            },
+        ],
     }
 
     if date:

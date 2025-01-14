@@ -716,7 +716,7 @@ def dg_tabulate(context: AssetExecutionContext):
         italics,
         categories,
         attendance,
-        is_pipeline=True,
+        is_pipeline=True
     )
 
     s3_key = _build_save_dir("tabulated", "result.csv", sitting_object)
