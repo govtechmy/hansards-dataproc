@@ -11,7 +11,7 @@ from dagster import (
     AssetExecutionContext,
     define_asset_job,
     RunsFilter,
-    DagsterRunStatus
+    DagsterRunStatus,
 )
 import sys
 import os
@@ -23,16 +23,19 @@ import re
 import boto3
 import botocore
 import requests
+import pandas as pd
 from dotenv import load_dotenv
 from urllib.parse import urljoin
 from typing import List
 from io import BytesIO
 from datetime import datetime
+from hansards_pipelines.text_utils import preprocess_malaya
 
 load_dotenv()
 
 S3_DATAPROC_BUCKET = os.getenv("S3_DATAPROC_BUCKET")
 S3_PUBLIC_BUCKET = os.getenv("S3_PUBLIC_BUCKET")
+API_URL = os.getenv("API_URL")
 
 # from discord_webhook import DiscordWebhook, DiscordEmbed
 
@@ -298,7 +301,7 @@ def sittings_sensor(context: SensorEvaluationContext):
     # TODO: REMOVE THIS FOR TESTING ONLY
     new_pdfs = new_pdfs[:5]
     context.log.info(f"New PDFs: {new_pdfs}")
-    
+
     ## Only Create New Runs if Partition has no active runs
     # Get runs for each partition
     run_requests = []
@@ -308,32 +311,28 @@ def sittings_sensor(context: SensorEvaluationContext):
         # Get latest run for this partition using Dagster's RunsFilter
         runs = context.instance.get_runs(
             filters=RunsFilter(
-                tags={
-                    "dagster/partition": pdf_name
-                },
-                statuses=[
-                    DagsterRunStatus.STARTED,
-                    DagsterRunStatus.STARTING
-                ]
+                tags={"dagster/partition": pdf_name},
+                statuses=[DagsterRunStatus.STARTED, DagsterRunStatus.STARTING],
             )
         )
-        
+
         # Check if there are any active runs
         has_active_run = any(runs)
-        
+
         if not has_active_run:
             run_requests.append(RunRequest(partition_key=pdf_name))
             dynamic_partition_additions.append(pdf_name)
             context.log.info(f"Creating new run for partition: {pdf_name}")
         else:
             context.log.info(f"Skipping partition {pdf_name} - has active run")
-    
 
     return SensorResult(
         run_requests=run_requests,
-        dynamic_partitions_requests=[
-            sitting_partitions_def.build_add_request(dynamic_partition_additions)
-        ] if dynamic_partition_additions else []
+        dynamic_partitions_requests=(
+            [sitting_partitions_def.build_add_request(dynamic_partition_additions)]
+            if dynamic_partition_additions
+            else []
+        ),
     )
 
 
@@ -744,19 +743,19 @@ def dg_tabulate(context: AssetExecutionContext):
         context.log.info(f"Uploaded attended.txt to {s3_key}")
 
 
-@asset(partitions_def=sitting_partitions_def,deps=[dg_tabulate])
+@asset(partitions_def=sitting_partitions_def, deps=[dg_tabulate])
 def remove_parsed_hansards(context: AssetExecutionContext):
     """
-        Remove Hansards from /new after parsing 
-        Only removes pdf if result.csv is in /tabulated and if file is moved into new folder
+    Remove Hansards from /new after parsing
+    Only removes pdf if result.csv is in /tabulated and if file is moved into new folder
     """
     sitting_object = _get_sitting_object(context.partition_key)
     house_folder = sitting_object["house_folder"]
     date = sitting_object["date_str"]
     new_pdf_s3_key = f"new/{house_folder}/{sitting_object['original_filename']}"  # new/dewanrakyat/DN-02122024.pdf
     moved_pdf_key = f"{house_folder}/{sitting_object['renamed_filename']}"
-    parsed_pdf_result_key = f"tabulated/{house_folder}/{date}/result.csv" # tabulated/dewanrakyat/02122024/result.csv
-    
+    parsed_pdf_result_key = f"tabulated/{house_folder}/{date}/result.csv"  # tabulated/dewanrakyat/02122024/result.csv
+
     # Check if result.csv is in /tabulated/dewanrakyat/02122024
     try:
         s3_client.head_object(Bucket=S3_DATAPROC_BUCKET, Key=parsed_pdf_result_key)
@@ -764,7 +763,6 @@ def remove_parsed_hansards(context: AssetExecutionContext):
     except botocore.exceptions.ClientError:
         context.log.error(f"result.csv is not in {parsed_pdf_result_key}")
         raise botocore.exceptions.ClientError
-        
 
     # Check if file was moved
     try:
@@ -773,15 +771,189 @@ def remove_parsed_hansards(context: AssetExecutionContext):
     except botocore.exceptions.ClientError:
         context.log.error(f"{moved_pdf_key} not Verfied")
         raise botocore.exceptions.ClientError
-    
+
     # Remove file from S3 bucket
     try:
-        s3_client.delete_object(Bucket=S3_DATAPROC_BUCKET,Key=new_pdf_s3_key)
+        s3_client.delete_object(Bucket=S3_DATAPROC_BUCKET, Key=new_pdf_s3_key)
         context.log.info(f"Removed {new_pdf_s3_key} from s3")
     except botocore.exceptions.ClientError:
         context.log.error(f"Error removing {new_pdf_s3_key} from s3")
         raise botocore.exceptions.ClientError
-        
 
-    
-# TODO: add insert to hansards DB
+
+def _process_line_breaks(speech):
+    """Processes stray line breaks, while detecting and preserving valid paragraph breaks."""
+    if type(speech) is not str:
+        return speech
+    # List of sentence-ending punctuation
+    punctuation = [".", "!", "?", "...", ":", ":-"]
+
+    lines = speech.split("\n")
+    processed_lines = []
+
+    for i in range(len(lines)):
+        # Check if next line starts with bullet point pattern eg (a), (b)
+        is_next_bullet = i < len(lines) - 1 and lines[i + 1].startswith(("(", ") "))
+
+        # Check if line is part of a markdown table
+        is_markdown_table = re.match(r"\|\s*[^|]+\s*\|\s*[^|]+\s*\|", lines[i])
+
+        # Check if line is the end of a markdown table
+        if "<END_TABLE_MARKER>" in lines[i]:
+            lines[i] = lines[i].replace("<END_TABLE_MARKER>", "\n\n")
+
+        # If the line ends with a punctuation mark, is the last line, or next line starts with bullet point, append with newline
+        if (
+            i == len(lines) - 1
+            or lines[i].endswith(tuple(punctuation))
+            or is_next_bullet
+        ):
+            processed_lines.append(lines[i])
+            if i != len(lines) - 1:  # Don't add a newline after the last line
+                processed_lines.append("\n\n")
+        elif is_markdown_table:
+            # If line is part of a markdown table, append it with a newline
+            processed_lines.append("\n" + lines[i])
+        else:
+            # Otherwise, append it with a space (to merge with the next line)
+            processed_lines.append(lines[i] + " ")
+
+    # Join the processed lines back
+    return "".join(processed_lines)
+
+
+def _merge_authored_annotations(df_all):
+    """
+    Fix NaN speeches - merge ANNOTATION rows with preceding row with NaN speaker/author
+    """
+    df_all = df_all.reset_index(drop=True)
+    index_to_remove = []
+    rows_to_fill = []
+
+    for index, row in df_all.iterrows():
+        if pd.isna(row["proc_speech"]):
+            index_to_remove.append(index + 1)
+            next_index = index + 1
+
+            if (
+                next_index < len(df_all)
+                and df_all.at[next_index, "author"] == "ANNOTATION"
+            ):
+                # print(f"Plan to fill {index} with {df_all.at[next_index, 'proc_speech']}")
+                rows_to_fill.append(
+                    (index, next_index, df_all.at[next_index, "proc_speech"])
+                )
+
+    # Fill the 'speech' column for the selected rows
+    for fill_index, next_index, speech_value in rows_to_fill:
+        df_all.at[fill_index, "proc_speech"] = speech_value
+        df_all.at[fill_index, "is_annotation"] = True
+
+    print(f"before drop: {df_all.shape[0]}")
+    df_all = df_all.drop(index_to_remove)
+    print(f"after drop: {df_all.shape[0]}")
+    return df_all
+
+
+def _process_tabulated(df_all: pd.DataFrame, house: str):
+    """Read parsed and tabulated CSV files.
+
+    Processing applied:
+    - Process and fix line breaks
+    - Replace table markers with double newlines
+    - [TEMP] Fill NaN author with empty string
+    - Fill empty
+    - Tag annotations with 'is_annotation' column
+
+    Returns:
+    - DataFrame of all speeches in csv_paths
+    New columns:
+    - 'proc_speech': Processed speech text
+    - 'house': House of the sitting
+    - 'is_annotation': Boolean column to tag annotations
+    """
+
+    df_all["length"] = df_all.speech.str.split().str.len()
+    df_all["date"] = pd.to_datetime(df_all.date)
+    df_all["proc_speech"] = df_all.speech.map(_process_line_breaks)
+
+    df_all.level_1 = df_all.level_1.fillna("")
+    df_all.level_2 = df_all.level_2.fillna("")
+    df_all.level_3 = df_all.level_3.fillna("")
+
+    # remove line breaks from all level headings
+    df_all.level_1 = df_all.level_1.str.replace("\n", " ").str.strip()
+    df_all.level_2 = df_all.level_2.str.replace("\n", " ").str.strip()
+    df_all.level_3 = df_all.level_3.str.replace("\n", " ").str.strip()
+
+    df_all["house"] = house
+
+    # create new is_annotation column - to keep track of authored speeches that are pure annotations
+    df_all["is_annotation"] = df_all.author.apply(
+        lambda speech: True if speech == "ANNOTATION" else False
+    )
+    df_all = _merge_authored_annotations(df_all)
+    return df_all
+
+
+def _to_postgresql_array_string(py_list):
+    # Convert all elements to string and escape double quotes
+    formatted_elements = [
+        '"{}"'.format(str(element).replace('"', '\\"')) for element in py_list
+    ]
+
+    # Join the elements and wrap them in curly braces
+    return "{" + ", ".join(formatted_elements) + "}"
+
+
+@asset(partitions_def=sitting_partitions_def, deps=[dg_tabulate])
+def insert_to_db(context: AssetExecutionContext):
+    """
+    Insert Hansards to DB
+    - Pre-requisite: ParliamentaryCycle record exists
+    - Create Sitting with speech_data - POST to /sitting - save Sitting and Speech records
+    - Create AuthorHistory records if needed - POST to /author_history
+    """
+    sitting_object = _get_sitting_object(context.partition_key)
+    print(f"sitting_object: {sitting_object}")
+
+    # Prepare speech_data
+    # TODO: Map to Author
+    #
+    csv_path = _build_save_dir("tabulated", "result.csv", sitting_object)
+    csv_data = s3_client.get_object(Bucket=S3_DATAPROC_BUCKET, Key=csv_path)
+    speech_list = csv.DictReader(csv_data)
+    df = pd.DataFrame(speech_list)
+    df = _process_tabulated(df, sitting_object["house"])
+
+    df.proc_speech = df.proc_speech.apply(lambda text: preprocess_malaya(text))
+    df_speech = df[df.author != "ANNOTATION"]
+    df_speech = df_speech.dropna(subset="speech")
+    df_speech.length = df_speech.length.astype(int)
+
+    df_speech = df_speech[
+        df_speech.speech_tokens.str.len() > 0
+    ]  # remove cleaned til empty speeches
+
+    df_speech.speech_tokens = df_speech.speech_tokens.apply(
+        lambda token_list: _to_postgresql_array_string(token_list)
+    )
+    df_speech = df_speech.rename(columns={"author": "speaker", "date": "sitting"})
+    speech_dict = df_speech.to_dict(orient="records")
+
+    sitting_payload = {
+        "sitting_id": sitting_object["sitting_id"],
+        "cycle": sitting_object["cycle_id"],
+        "date": sitting_object["date_str"],
+        "filename": sitting_object["original_filename"],
+        "has_dataset": True,
+        # "is_final": True, # TODO: determine this
+        "speech_data": speech_dict,
+    }
+
+    # Post to API
+    response = requests.post(
+        f"{API_URL}/sitting",
+        json=sitting_payload,
+    )
+    print(response.json())
