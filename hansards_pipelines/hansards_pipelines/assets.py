@@ -12,14 +12,12 @@ from dagster import (
     define_asset_job,
     RunsFilter,
     DagsterRunStatus,
+    MaterializeResult,
 )
-import sys
 import os
 import io
-import csv
 import json
 from bs4 import BeautifulSoup
-import re
 import boto3
 import botocore
 import requests
@@ -29,7 +27,25 @@ from urllib.parse import urljoin
 from typing import List
 from io import BytesIO
 from datetime import datetime
-from hansards_pipelines.text_utils import preprocess_malaya
+
+from hansards_pipelines.utils.text_utils import (
+    preprocess_malaya,
+    process_tabulated,
+    speeches_to_json,
+    extract_pdf_url,
+    get_sitting_object,
+    house_mapper,
+)
+from hansards_pipelines.author_matching import perform_author_matching
+from hansards_pipelines.utils.discord_utils import send_discord_message
+from hansards_pipelines.utils.s3_utils import (
+    read_txt_file,
+    read_json_file,
+    prepare_text_for_s3,
+    prepare_json_for_s3,
+    prepare_csv_for_s3,
+    build_path,
+)
 
 load_dotenv()
 
@@ -37,7 +53,8 @@ S3_DATAPROC_BUCKET = os.getenv("S3_DATAPROC_BUCKET")
 S3_PUBLIC_BUCKET = os.getenv("S3_PUBLIC_BUCKET")
 API_URL = os.getenv("API_URL")
 
-# from discord_webhook import DiscordWebhook, DiscordEmbed
+FRONTEND_URL = os.getenv("FRONTEND_URL")
+FRONTEND_TOKEN = os.getenv("FRONTEND_TOKEN")
 
 # main pipeline
 # 1. scrape from the website, push pdf to s3 hansards-new
@@ -63,116 +80,44 @@ from hansards_pipelines.tabulate_hansard import tabulate
 
 s3_client = boto3.client("s3")
 
-house_map = {
-    "dewanrakyat": "dr",
-    "dewannegara": "dn",
-    "kamarkhas": "kkdr",
-}
-house_map_reverse = {v: k for k, v in house_map.items()}
 
-
-def extract_pdf_url(js_string):
-    # Define the regular expression pattern to match the PDF URL
-    pattern = r"loadResult\('([^']*\.pdf)'"
-
-    # Search for the pattern in the given JavaScript string
-    match = re.search(pattern, js_string)
-
-    # If a match is found, extract and return the URL
-    if match:
-        return match.group(1)
-    else:
-        return None
-
-
-def rename_pdf(filename):
-    """DR-DDMMYYYY.pdf -> dr_yyyy-mm-dd.pdf"""
-    match = re.search(r"(DR|DN|KKDR)-(\d{2})(\d{2})(\d{4})", filename, re.IGNORECASE)
-    if match is not None:
-        house, day, month, year = match.groups()
-        new_filename = f"{house.lower()}_{year}-{month}-{day}"
-        return new_filename
-    else:
-        # if fail to detect filename format, return the original filename
-        return filename
-
-
-def reverse_date_format(date_str):
-    """YYYY-MM-DD -> DDMMYYYY"""
-    year, month, day = date_str.split("-")
-    return f"{day}{month}{year}"
-
-
-def _get_sitting_object(pdf_file_key: str):
-    """Convert PDF file key to house, date_str and datetime"""
-    # DR-12122024
-    house = pdf_file_key.split("-")[0].upper()  # DR
-    house_folder = house_map_reverse[house.lower()]  # dr -> dewanrakyat (for s3)
-    date_str = pdf_file_key.split("-")[1]  # 12122024
-    date = datetime.strptime(date_str, "%d%m%Y")
-    original_filename = pdf_file_key + ".pdf"
-    renamed_filename = rename_pdf(pdf_file_key)  # DR-12122024 -> dr_2024-12-12.pdf
-    renamed_filename_key = f"{house_folder}/{renamed_filename}"
-    return {
-        "house": house,
-        "house_folder": house_folder,
-        "date_str": date_str,
-        "date": date,
-        "original_filename": original_filename,
-        "renamed_filename": renamed_filename,
-        "renamed_filename_key": renamed_filename_key,
-    }
-
-
-def _build_save_dir(current_key: str, filename: str, sitting_object: dict):
-    """Build save directory for parsed hansard files"""
-    path_parts = [
-        current_key,
-        sitting_object["house_folder"],
-        sitting_object["date_str"],
-        filename,
-    ]
-    return "/".join(path_parts)
-
-
-def _read_txt_file(s3_bucket, s3_key) -> List[str]:
-    """Read file from s3 and return as list of string
-    Replicating the behaviour of open() readlines()"""
-    response = s3_client.get_object(Bucket=s3_bucket, Key=s3_key)
-    return response.get("Body").read().decode("utf-8").splitlines(keepends=True)
-
-
-def _read_json_file(s3_bucket, s3_key) -> dict:
-    """Read JSON file from s3 and return as dict"""
-    response = s3_client.get_object(Bucket=s3_bucket, Key=s3_key)
-    return json.loads(response.get("Body").read().decode("utf-8"))
-
-
-def _prepare_text_for_s3(text_lines: List[str]) -> str:
-    """Ensure all lines have newline characters before joining"""
-    return "".join(line if line.endswith("\n") else line + "\n" for line in text_lines)
-
-
-def _prepare_json_for_s3(json_dict: dict) -> str:
-    """Convert dict to JSON string"""
-    return json.dumps(json_dict)
-
-
-def _prepare_csv_for_s3(text_lines: List[str]) -> str:
-    """Convert list of strings to CSV"""
-    output = io.StringIO()
-    writer = csv.writer(output)
-    writer.writerow(["level_1", "level_2", "level_3", "timestamp", "author", "speech"])
-    writer.writerows(text_lines)
-    output.seek(0)
-    return output.getvalue()
+house_names = ["DR", "DN", "KKDR"]
 
 
 sitting_partitions_def = DynamicPartitionsDefinition(name="house_sittings")
 # https://github.com/dagster-io/dagster/discussions/20508
 
 
-# @asset(deps=[])
+def _generate_new_hansard_message(
+    new_pdfs: list, skipped_pdfs: list, context: AssetExecutionContext
+):
+
+    file_name_str = ""
+    for new_pdf in new_pdfs:
+        file_name_str += f"{new_pdf[0]} to {new_pdf[2]}\n"
+
+    skipped_file_name_str = ""
+    for skipped_pdf in skipped_pdfs:
+        skipped_file_name_str += f"{skipped_pdf}\n"
+
+    message_fields = [{"name": "New PDFs", "value": file_name_str, "inline": True}]
+    if len(skipped_pdfs) > 0:
+        message_fields.append(
+            {"name": "Skipped PDFs", "value": skipped_file_name_str, "inline": True}
+        )
+    footer = {"text": "Parliament Hansards Web Scraper"}
+    send_discord_message(
+        "",
+        f"✨ New Hansards Scraped!",
+        3066993,
+        message_fields,
+        footer,
+        context,
+        deeplink=False,
+    )
+
+
+@asset(group_name="scrape")
 def scrape_website(context: AssetExecutionContext) -> List:
     """Scrape list of PDFs and add new partition if doesn't exist
     Upload PDF file to S3"""
@@ -197,6 +142,7 @@ def scrape_website(context: AssetExecutionContext) -> List:
         ),
     ]
     new_pdfs = []
+    skipped_pdfs = []
     for source in sources:
 
         source_url = source[0]
@@ -217,9 +163,31 @@ def scrape_website(context: AssetExecutionContext) -> List:
                 pdf_url = urljoin(base_url, pdf_path)
                 if pdf_url.endswith(".pdf"):
                     # Determine the PDF file name
-                    pdf_name = os.path.basename(pdf_url)
-                    # new_pdf_name = rename_pdf(pdf_name)
-                    # context.log.info(pdf_name, new_pdf_name)
+                    pdf_name = os.path.basename(pdf_url).split(".")[
+                        0
+                    ]  # KKDR-20022025-1
+
+                    # Try to rename and correct PDF file name here eg. KKDR-20022025-1
+                    pdf_name_parts = pdf_name.split("-")
+                    if len(pdf_name_parts) != 2:
+                        context.log.warning(
+                            f"WARNING: PDF file name is not in the correct format: {pdf_name}"
+                        )
+                    house = pdf_name_parts[0]
+                    date = pdf_name_parts[1]
+                    if house not in house_names:
+                        context.log.warning(
+                            f"ERROR: House is not valid: {house}. Skipping"
+                        )
+                        skipped_pdfs.append(pdf_name)
+                        continue
+                    if len(date) != 8:
+                        context.log.warning(
+                            f"ERROR: Date portion is not 8 digits: {date}. Skipping"
+                        )
+                        skipped_pdfs.append(pdf_name)
+                        continue
+                    pdf_name = f"{house}-{date}.pdf"
 
                     s3_key = f"{house_folder}/{pdf_name}"
                     full_s3_key = f"new/{s3_key}"
@@ -230,24 +198,47 @@ def scrape_website(context: AssetExecutionContext) -> List:
                         )
                         context.log.info(f"{s3_key} exists in {S3_DATAPROC_BUCKET}.")
                     except botocore.exceptions.ClientError as e:
-                        # new PDF: create new partition and upload to S3
-
-                        pdf_response = requests.get(pdf_url)
-                        pdf_response.raise_for_status()  # Raise an exception for HTTP errors
-
-                        # Upload the PDF to S3
-                        s3_client.put_object(
-                            Bucket=S3_DATAPROC_BUCKET,
-                            Key=full_s3_key,
-                            Body=pdf_response.content,
+                        # doesn't exist in new/, check if already ingested
+                        base_pdf_name = pdf_name.split(".")[0]
+                        runs = context.instance.get_runs(
+                            filters=RunsFilter(
+                                tags={"dagster/partition": base_pdf_name},
+                                statuses=[
+                                    DagsterRunStatus.STARTED,
+                                    DagsterRunStatus.STARTING,
+                                    DagsterRunStatus.QUEUED,
+                                    DagsterRunStatus.SUCCESS,
+                                    DagsterRunStatus.FAILURE,
+                                ],
+                            )
                         )
-                        context.log.info(
-                            f"Uploaded {pdf_name} to s3://{S3_DATAPROC_BUCKET}/{full_s3_key}"
-                        )
-                        new_pdfs.append((pdf_name, s3_key))
+                        has_run = any(runs)
+                        if not has_run:
+                            # new PDF: create new partition and upload to S3
+                            pdf_response = requests.get(pdf_url)
+                            pdf_response.raise_for_status()  # Raise an exception for HTTP errors
+
+                            # Upload the PDF to S3
+                            s3_client.put_object(
+                                Bucket=S3_DATAPROC_BUCKET,
+                                Key=full_s3_key,
+                                Body=pdf_response.content,
+                            )
+                            destination_path = (
+                                f"s3://{S3_DATAPROC_BUCKET}/{full_s3_key}"
+                            )
+                            context.log.info(
+                                f"Uploaded {pdf_name} to {destination_path}"
+                            )
+                            new_pdfs.append((pdf_name, s3_key, destination_path))
+                        else:
+                            context.log.info(
+                                f"{base_pdf_name} run found, already ingested"
+                            )
 
     if len(new_pdfs) > 0:
         context.log.info(f"New PDFs: {new_pdfs}")
+        _generate_new_hansard_message(new_pdfs, skipped_pdfs, context)
 
     return new_pdfs
 
@@ -269,7 +260,7 @@ sittings_job = define_asset_job(
 )
 
 
-@sensor(job=sittings_job)
+@sensor(job=sittings_job, minimum_interval_seconds=900)
 def sittings_sensor(context: SensorEvaluationContext):
     """Set up partitions
     One partition is one dewan, one sitting (date)
@@ -287,19 +278,17 @@ def sittings_sensor(context: SensorEvaluationContext):
             # take filename only without extension: DN-03122024
             pdf_name = obj["Key"].split("/")[-1].split(".")[0]
             context.log.info(f"New PDF: {pdf_name}")
-            new_pdfs.append(pdf_name)
 
             # TODO: ensure date portion is 8 digits DDMMYYYY
             date = pdf_name.split("-")[1]
             if len(date) != 8:
-                context.log.warning(f"WARNING: Date portion is not 8 digits: {date}")
-            # TODO: ensure house is valid
-            house = pdf_name.split("-")[0]
-            if house.lower() not in house_map.values():
-                context.log.warning(f"WARNING: House is not valid: {house}")
+                context.log.warning(
+                    f"WARNING: Date portion is not 8 digits: {date}. Skipping"
+                )
+            new_pdfs.append(pdf_name)
 
     # TODO: REMOVE THIS FOR TESTING ONLY
-    new_pdfs = new_pdfs[:5]
+    # new_pdfs = new_pdfs[:5]
     context.log.info(f"New PDFs: {new_pdfs}")
 
     ## Only Create New Runs if Partition has no active runs
@@ -312,7 +301,13 @@ def sittings_sensor(context: SensorEvaluationContext):
         runs = context.instance.get_runs(
             filters=RunsFilter(
                 tags={"dagster/partition": pdf_name},
-                statuses=[DagsterRunStatus.STARTED, DagsterRunStatus.STARTING],
+                statuses=[
+                    DagsterRunStatus.STARTED,
+                    DagsterRunStatus.STARTING,
+                    DagsterRunStatus.QUEUED,
+                    DagsterRunStatus.SUCCESS,
+                    DagsterRunStatus.FAILURE,
+                ],
             )
         )
 
@@ -336,14 +331,14 @@ def sittings_sensor(context: SensorEvaluationContext):
     )
 
 
-@asset(partitions_def=sitting_partitions_def)
+@asset(partitions_def=sitting_partitions_def, group_name="parse")
 def move_and_rename_hansards(context: AssetExecutionContext):
     """Move and rename raw hansards from new/ to main downloads folder"""
 
     # context.log.info(f"Moving and renaming hansards {len(scrape_website)}")
 
     # name of PDFs already in new/ format: DN-02122024
-    sitting_object = _get_sitting_object(context.partition_key)
+    sitting_object = get_sitting_object(context.partition_key)
     house_folder = sitting_object["house_folder"]
     new_pdf_s3_key = f"new/{house_folder}/{sitting_object['original_filename']}"  # new/dewanrakyat/DN-02122024.pdf
     context.log.info(f"Moving and renaming {new_pdf_s3_key}")
@@ -359,12 +354,16 @@ def move_and_rename_hansards(context: AssetExecutionContext):
     return new_pdf_name  # dewanrakyat/dr_2024-12-02.pdf
 
 
-@asset(partitions_def=sitting_partitions_def, deps=[move_and_rename_hansards])
+@asset(
+    partitions_def=sitting_partitions_def,
+    deps=[move_and_rename_hansards],
+    group_name="parse",
+)
 def dg_parse_hansard(context: AssetExecutionContext):
     """Parse hansard
     Output of this is parsed_pdf folder - plaintext, bold, italics, tables, attendance.txt
     """
-    sitting_object = _get_sitting_object(context.partition_key)
+    sitting_object = get_sitting_object(context.partition_key)
     context.log.info(f"Parsing {sitting_object['original_filename']}")
 
     # read pdf from s3
@@ -378,26 +377,28 @@ def dg_parse_hansard(context: AssetExecutionContext):
         file_content=BytesIO(pdf_response["Body"].read()),
     )
     # save to s3
-    s3_key = _build_save_dir("parsed_pdf", "plaintext.txt", sitting_object)
+    s3_key = build_path("parsed_pdf", "plaintext.txt", sitting_object)
     s3_client.put_object(Bucket=S3_DATAPROC_BUCKET, Key=s3_key, Body=text)
     context.log.info(f"Uploaded plaintext to {s3_key}")
-    s3_key = _build_save_dir("parsed_pdf", "bold.txt", sitting_object)
+    s3_key = build_path("parsed_pdf", "bold.txt", sitting_object)
     s3_client.put_object(Bucket=S3_DATAPROC_BUCKET, Key=s3_key, Body=spaced_bold)
     context.log.info(f"Uploaded bold to {s3_key}")
-    s3_key = _build_save_dir("parsed_pdf", "italics.txt", sitting_object)
+    s3_key = build_path("parsed_pdf", "italics.txt", sitting_object)
     s3_client.put_object(Bucket=S3_DATAPROC_BUCKET, Key=s3_key, Body=spaced_italics)
     context.log.info(f"Uploaded italics to {s3_key}")
     # save tables even if empty
-    s3_key = _build_save_dir("parsed_pdf", "tables.json", sitting_object)
+    s3_key = build_path("parsed_pdf", "tables.json", sitting_object)
     s3_client.put_object(Bucket=S3_DATAPROC_BUCKET, Key=s3_key, Body=json.dumps(tables))
     context.log.info(f"Uploaded tables to {s3_key}")
     if attn_text != "":
-        s3_key = _build_save_dir("parsed_pdf", "attendance.txt", sitting_object)
+        s3_key = build_path("parsed_pdf", "attendance.txt", sitting_object)
         s3_client.put_object(Bucket=S3_DATAPROC_BUCKET, Key=s3_key, Body=attn_text)
         context.log.info(f"Uploaded attendance to {s3_key}")
 
 
-@asset(partitions_def=sitting_partitions_def, deps=[dg_parse_hansard])
+@asset(
+    partitions_def=sitting_partitions_def, deps=[dg_parse_hansard], group_name="parse"
+)
 def dg_get_categories(context: AssetExecutionContext):
     """
     Reads:
@@ -414,7 +415,7 @@ def dg_get_categories(context: AssetExecutionContext):
     - empty_categories
     - kkdr_subcategories_non_bold
     """
-    sitting_object = _get_sitting_object(context.partition_key)
+    sitting_object = get_sitting_object(context.partition_key)
     context.log.info(f"Getting categories for {sitting_object['original_filename']}")
 
     pdf_response = s3_client.get_object(
@@ -449,46 +450,42 @@ def dg_get_categories(context: AssetExecutionContext):
             f"KKDR subcategories non bold found in {context.partition_key}"
         )
 
-    s3_key = _build_save_dir("get_categories", "categories.json", sitting_object)
+    s3_key = build_path("get_categories", "categories.json", sitting_object)
     s3_client.put_object(
-        Bucket=S3_DATAPROC_BUCKET, Key=s3_key, Body=_prepare_json_for_s3(categories)
+        Bucket=S3_DATAPROC_BUCKET, Key=s3_key, Body=prepare_json_for_s3(categories)
     )
     context.log.info(f"Uploaded categories to {s3_key}")
 
-    s3_key = _build_save_dir(
-        "get_categories", "toc_analysis/plaintext.txt", sitting_object
-    )
+    s3_key = build_path("get_categories", "toc_analysis/plaintext.txt", sitting_object)
     s3_client.put_object(Bucket=S3_DATAPROC_BUCKET, Key=s3_key, Body=text)
     context.log.info(f"Uploaded plaintext to {s3_key}")
-    s3_key = _build_save_dir("get_categories", "toc_analysis/bold.txt", sitting_object)
+    s3_key = build_path("get_categories", "toc_analysis/bold.txt", sitting_object)
     s3_client.put_object(Bucket=S3_DATAPROC_BUCKET, Key=s3_key, Body=spaced_bold)
     context.log.info(f"Uploaded bold to {s3_key}")
-    s3_key = _build_save_dir(
-        "get_categories", "toc_analysis/italics.txt", sitting_object
-    )
+    s3_key = build_path("get_categories", "toc_analysis/italics.txt", sitting_object)
     s3_client.put_object(Bucket=S3_DATAPROC_BUCKET, Key=s3_key, Body=spaced_italics)
     context.log.info(f"Uploaded italics to {s3_key}")
 
 
-@asset(partitions_def=sitting_partitions_def, deps=[dg_get_categories])
+@asset(
+    partitions_def=sitting_partitions_def, deps=[dg_get_categories], group_name="parse"
+)
 def dg_post_parsing_edits(context: AssetExecutionContext):
     """
     Hardcoded edits to parsed text files.
     """
-    sitting_object = _get_sitting_object(context.partition_key)
+    sitting_object = get_sitting_object(context.partition_key)
     # get tables.json and categories.json
-    tables_s3_key = _build_save_dir("parsed_pdf", "tables.json", sitting_object)
+    tables_s3_key = build_path("parsed_pdf", "tables.json", sitting_object)
     try:
-        tables = _read_json_file(S3_DATAPROC_BUCKET, tables_s3_key)
+        tables = read_json_file(S3_DATAPROC_BUCKET, tables_s3_key)
     except botocore.exceptions.ClientError as e:
         context.log.warning(f"No tables.json found for {context.partition_key}")
         tables = None
 
-    categories_s3_key = _build_save_dir(
-        "get_categories", "categories.json", sitting_object
-    )
+    categories_s3_key = build_path("get_categories", "categories.json", sitting_object)
     try:
-        categories = _read_json_file(S3_DATAPROC_BUCKET, categories_s3_key)
+        categories = read_json_file(S3_DATAPROC_BUCKET, categories_s3_key)
     except botocore.exceptions.ClientError as e:
         context.log.warning(f"No categories.json found for {context.partition_key}")
         categories = None
@@ -504,7 +501,7 @@ def dg_post_parsing_edits(context: AssetExecutionContext):
         s3_client.put_object(
             Bucket=S3_DATAPROC_BUCKET,
             Key=tables_s3_key,
-            Body=_prepare_json_for_s3(tables),
+            Body=prepare_json_for_s3(tables),
         )
         context.log.info(f"Uploaded tables to {tables_s3_key}")
     else:
@@ -513,14 +510,18 @@ def dg_post_parsing_edits(context: AssetExecutionContext):
         s3_client.put_object(
             Bucket=S3_DATAPROC_BUCKET,
             Key=categories_s3_key,
-            Body=_prepare_json_for_s3(categories),
+            Body=prepare_json_for_s3(categories),
         )
         context.log.info(f"Uploaded categories to {categories_s3_key}")
     else:
         context.log.warning(f"No TOC edits found for {context.partition_key}")
 
 
-@asset(partitions_def=sitting_partitions_def, deps=[dg_post_parsing_edits])
+@asset(
+    partitions_def=sitting_partitions_def,
+    deps=[dg_post_parsing_edits],
+    group_name="parse",
+)
 def dg_pre_tabulate(context: AssetExecutionContext):
     """
     Reads:
@@ -534,21 +535,21 @@ def dg_pre_tabulate(context: AssetExecutionContext):
     - pretabulation/bold.txt
     - pretabulation/italics.txt
     """
-    sitting_object = _get_sitting_object(context.partition_key)
+    sitting_object = get_sitting_object(context.partition_key)
     context.log.info(f"Pre tabulating {context.partition_key}")
 
-    plaintext = _read_txt_file(
+    plaintext = read_txt_file(
         S3_DATAPROC_BUCKET,
-        _build_save_dir("parsed_pdf", "plaintext.txt", sitting_object),
+        build_path("parsed_pdf", "plaintext.txt", sitting_object),
     )
-    bold = _read_txt_file(
-        S3_DATAPROC_BUCKET, _build_save_dir("parsed_pdf", "bold.txt", sitting_object)
+    bold = read_txt_file(
+        S3_DATAPROC_BUCKET, build_path("parsed_pdf", "bold.txt", sitting_object)
     )
-    italics = _read_txt_file(
-        S3_DATAPROC_BUCKET, _build_save_dir("parsed_pdf", "italics.txt", sitting_object)
+    italics = read_txt_file(
+        S3_DATAPROC_BUCKET, build_path("parsed_pdf", "italics.txt", sitting_object)
     )
-    tables = _read_json_file(
-        S3_DATAPROC_BUCKET, _build_save_dir("parsed_pdf", "tables.json", sitting_object)
+    tables = read_json_file(
+        S3_DATAPROC_BUCKET, build_path("parsed_pdf", "tables.json", sitting_object)
     )
 
     # check and warn if contents are empty
@@ -569,26 +570,28 @@ def dg_pre_tabulate(context: AssetExecutionContext):
         is_pipeline=True,
     )
 
-    s3_key = _build_save_dir("pretabulation", "plaintext.txt", sitting_object)
+    s3_key = build_path("pretabulation", "plaintext.txt", sitting_object)
     s3_client.put_object(
-        Bucket=S3_DATAPROC_BUCKET, Key=s3_key, Body=_prepare_text_for_s3(processed_text)
+        Bucket=S3_DATAPROC_BUCKET, Key=s3_key, Body=prepare_text_for_s3(processed_text)
     )
     context.log.info(f"Uploaded plaintext to {s3_key}")
-    s3_key = _build_save_dir("pretabulation", "bold.txt", sitting_object)
+    s3_key = build_path("pretabulation", "bold.txt", sitting_object)
     s3_client.put_object(
-        Bucket=S3_DATAPROC_BUCKET, Key=s3_key, Body=_prepare_text_for_s3(processed_bold)
+        Bucket=S3_DATAPROC_BUCKET, Key=s3_key, Body=prepare_text_for_s3(processed_bold)
     )
     context.log.info(f"Uploaded bold to {s3_key}")
-    s3_key = _build_save_dir("pretabulation", "italics.txt", sitting_object)
+    s3_key = build_path("pretabulation", "italics.txt", sitting_object)
     s3_client.put_object(
         Bucket=S3_DATAPROC_BUCKET,
         Key=s3_key,
-        Body=_prepare_text_for_s3(processed_italics),
+        Body=prepare_text_for_s3(processed_italics),
     )
     context.log.info(f"Uploaded italics to {s3_key}")
 
 
-@asset(partitions_def=sitting_partitions_def, deps=[dg_pre_tabulate])
+@asset(
+    partitions_def=sitting_partitions_def, deps=[dg_pre_tabulate], group_name="parse"
+)
 def dg_edit_hansards(context: AssetExecutionContext):
     """
     Performs hardcoded edits to parsed txt files
@@ -602,19 +605,19 @@ def dg_edit_hansards(context: AssetExecutionContext):
     - edited_hansards/bold.txt
     - edited_hansards/italics.txt
     """
-    sitting_object = _get_sitting_object(context.partition_key)
+    sitting_object = get_sitting_object(context.partition_key)
     context.log.info(f"Editing hansards for {context.partition_key}")
 
-    plaintext = _read_txt_file(
+    plaintext = read_txt_file(
         S3_DATAPROC_BUCKET,
-        _build_save_dir("pretabulation", "plaintext.txt", sitting_object),
+        build_path("pretabulation", "plaintext.txt", sitting_object),
     )
-    bold = _read_txt_file(
-        S3_DATAPROC_BUCKET, _build_save_dir("pretabulation", "bold.txt", sitting_object)
+    bold = read_txt_file(
+        S3_DATAPROC_BUCKET, build_path("pretabulation", "bold.txt", sitting_object)
     )
-    italics = _read_txt_file(
+    italics = read_txt_file(
         S3_DATAPROC_BUCKET,
-        _build_save_dir("pretabulation", "italics.txt", sitting_object),
+        build_path("pretabulation", "italics.txt", sitting_object),
     )
 
     text, bold, italics, num_edits = edit_hansards(
@@ -626,24 +629,26 @@ def dg_edit_hansards(context: AssetExecutionContext):
         is_pipeline=True,
     )
 
-    s3_key = _build_save_dir("pretabulation", "plaintext.txt", sitting_object)
+    s3_key = build_path("pretabulation", "plaintext.txt", sitting_object)
     s3_client.put_object(
-        Bucket=S3_DATAPROC_BUCKET, Key=s3_key, Body=_prepare_text_for_s3(text)
+        Bucket=S3_DATAPROC_BUCKET, Key=s3_key, Body=prepare_text_for_s3(text)
     )
     context.log.info(f"Uploaded plaintext to {s3_key}")
-    s3_key = _build_save_dir("pretabulation", "bold.txt", sitting_object)
+    s3_key = build_path("pretabulation", "bold.txt", sitting_object)
     s3_client.put_object(
-        Bucket=S3_DATAPROC_BUCKET, Key=s3_key, Body=_prepare_text_for_s3(bold)
+        Bucket=S3_DATAPROC_BUCKET, Key=s3_key, Body=prepare_text_for_s3(bold)
     )
     context.log.info(f"Uploaded bold to {s3_key}")
-    s3_key = _build_save_dir("pretabulation", "italics.txt", sitting_object)
+    s3_key = build_path("pretabulation", "italics.txt", sitting_object)
     s3_client.put_object(
-        Bucket=S3_DATAPROC_BUCKET, Key=s3_key, Body=_prepare_text_for_s3(italics)
+        Bucket=S3_DATAPROC_BUCKET, Key=s3_key, Body=prepare_text_for_s3(italics)
     )
     context.log.info(f"Uploaded italics to {s3_key}")
 
 
-@asset(partitions_def=sitting_partitions_def, deps=[dg_edit_hansards])
+@asset(
+    partitions_def=sitting_partitions_def, deps=[dg_edit_hansards], group_name="parse"
+)
 def dg_tabulate(context: AssetExecutionContext):
     """
     Tabulate txt and json files in final CSV per sitting
@@ -674,32 +679,42 @@ def dg_tabulate(context: AssetExecutionContext):
     - toc_mismatch.txt
     """
 
-    sitting_object = _get_sitting_object(context.partition_key)
+    sitting_object = get_sitting_object(context.partition_key)
     context.log.info(f"Tabulating {context.partition_key}")
 
     # get files from s3
-    plaintext = _read_txt_file(
+    plaintext = read_txt_file(
         S3_DATAPROC_BUCKET,
-        _build_save_dir("pretabulation", "plaintext.txt", sitting_object),
+        build_path("pretabulation", "plaintext.txt", sitting_object),
     )
-    bold = _read_txt_file(
-        S3_DATAPROC_BUCKET, _build_save_dir("pretabulation", "bold.txt", sitting_object)
+    bold = read_txt_file(
+        S3_DATAPROC_BUCKET, build_path("pretabulation", "bold.txt", sitting_object)
     )
-    italics = _read_txt_file(
+    italics = read_txt_file(
         S3_DATAPROC_BUCKET,
-        _build_save_dir("pretabulation", "italics.txt", sitting_object),
+        build_path("pretabulation", "italics.txt", sitting_object),
     )
     print(f"length of plaintext: {len(plaintext)}")
     print(f"length of bold: {len(bold)}")
     print(f"length of italics: {len(italics)}")
 
     # read categories.json from root folder
-    categories = _read_json_file(S3_DATAPROC_BUCKET, "categories.json")
+    categories = read_json_file(S3_DATAPROC_BUCKET, "categories.json")
+
+    if sitting_object["house"] != "DN":
+        categories = json.loads(
+            read_json_file(
+                S3_DATAPROC_BUCKET,
+                build_path("get_categories", "categories.json", sitting_object),
+            )
+        )
+
+    print(type(categories))
 
     try:
-        attendance = _read_txt_file(
+        attendance = read_txt_file(
             S3_DATAPROC_BUCKET,
-            _build_save_dir("parsed_pdf", "attendance.txt", sitting_object),
+            build_path("parsed_pdf", "attendance.txt", sitting_object),
         )
         # attendance txt in tabulate expects a string
         attendance = "".join(attendance)
@@ -715,46 +730,57 @@ def dg_tabulate(context: AssetExecutionContext):
         italics,
         categories,
         attendance,
-        is_pipeline=True
+        is_pipeline=True,
     )
 
-    s3_key = _build_save_dir("tabulated", "result.csv", sitting_object)
+    s3_key = build_path("tabulated", "result.csv", sitting_object)
     s3_client.put_object(
-        Bucket=S3_DATAPROC_BUCKET, Key=s3_key, Body=_prepare_csv_for_s3(speeches)
+        Bucket=S3_DATAPROC_BUCKET, Key=s3_key, Body=prepare_csv_for_s3(speeches)
     )
     context.log.info(f"Uploaded result.csv to {s3_key}")
 
     if absent_text:
-        s3_key = _build_save_dir("tabulated", "absent.txt", sitting_object)
+        s3_key = build_path("tabulated", "absent.txt", sitting_object)
         s3_client.put_object(
             Bucket=S3_DATAPROC_BUCKET,
             Key=s3_key,
-            Body=_prepare_text_for_s3(absent_text),
+            Body=prepare_text_for_s3(absent_text),
         )
         context.log.info(f"Uploaded absent.txt to {s3_key}")
 
     if attended_text:
-        s3_key = _build_save_dir("tabulated", "attended.txt", sitting_object)
+        s3_key = build_path("tabulated", "attended.txt", sitting_object)
         s3_client.put_object(
             Bucket=S3_DATAPROC_BUCKET,
             Key=s3_key,
-            Body=_prepare_text_for_s3(attended_text),
+            Body=prepare_text_for_s3(attended_text),
         )
         context.log.info(f"Uploaded attended.txt to {s3_key}")
 
 
-@asset(partitions_def=sitting_partitions_def, deps=[dg_tabulate])
+@asset(partitions_def=sitting_partitions_def, deps=[dg_tabulate], group_name="parse")
 def remove_parsed_hansards(context: AssetExecutionContext):
     """
     Remove Hansards from /new after parsing
     Only removes pdf if result.csv is in /tabulated and if file is moved into new folder
     """
-    sitting_object = _get_sitting_object(context.partition_key)
-    house_folder = sitting_object["house_folder"]
-    date = sitting_object["date_str"]
-    new_pdf_s3_key = f"new/{house_folder}/{sitting_object['original_filename']}"  # new/dewanrakyat/DN-02122024.pdf
-    moved_pdf_key = f"{house_folder}/{sitting_object['renamed_filename']}"
-    parsed_pdf_result_key = f"tabulated/{house_folder}/{date}/result.csv"  # tabulated/dewanrakyat/02122024/result.csv
+    sitting_object = get_sitting_object(context.partition_key)
+    path_parts = [
+        "new",
+        sitting_object["house_folder"],
+        sitting_object["original_filename"],
+    ]  # new/dewanrakyat/DN-02122024.pdf
+    new_pdf_s3_key = "/".join(path_parts)
+    moved_pdf_key = (
+        f"{sitting_object['house_folder']}/{sitting_object['renamed_filename']}"
+    )
+    parsed_pdf_result_key = build_path(
+        f"tabulated", "result.csv", sitting_object
+    )  # tabulated/dewanrakyat/02122024/result.csv
+
+    # new_pdf_s3_key = f"new/{house_folder}/{sitting_object['original_filename']}"  # new/dewanrakyat/DN-02122024.pdf
+    # moved_pdf_key = f"{house_folder}/{sitting_object['renamed_filename']}"
+    # parsed_pdf_result_key = f"tabulated/{house_folder}/{date}/result.csv"  # tabulated/dewanrakyat/02122024/result.csv
 
     # Check if result.csv is in /tabulated/dewanrakyat/02122024
     try:
@@ -774,186 +800,154 @@ def remove_parsed_hansards(context: AssetExecutionContext):
 
     # Remove file from S3 bucket
     try:
-        s3_client.delete_object(Bucket=S3_DATAPROC_BUCKET, Key=new_pdf_s3_key)
-        context.log.info(f"Removed {new_pdf_s3_key} from s3")
-    except botocore.exceptions.ClientError:
-        context.log.error(f"Error removing {new_pdf_s3_key} from s3")
-        raise botocore.exceptions.ClientError
+        # First check if the object exists
+        s3_client.head_object(Bucket=S3_DATAPROC_BUCKET, Key=new_pdf_s3_key)
 
+        # If head_object doesn't raise an exception, the object exists and we can delete it
+        try:
+            s3_client.delete_object(Bucket=S3_DATAPROC_BUCKET, Key=new_pdf_s3_key)
+            context.log.info(f"Removed {new_pdf_s3_key} from s3")
+        except botocore.exceptions.ClientError as e:
+            context.log.error(f"Error removing {new_pdf_s3_key} from s3: {str(e)}")
+            raise e
 
-def _process_line_breaks(speech):
-    """Processes stray line breaks, while detecting and preserving valid paragraph breaks."""
-    if type(speech) is not str:
-        return speech
-    # List of sentence-ending punctuation
-    punctuation = [".", "!", "?", "...", ":", ":-"]
-
-    lines = speech.split("\n")
-    processed_lines = []
-
-    for i in range(len(lines)):
-        # Check if next line starts with bullet point pattern eg (a), (b)
-        is_next_bullet = i < len(lines) - 1 and lines[i + 1].startswith(("(", ") "))
-
-        # Check if line is part of a markdown table
-        is_markdown_table = re.match(r"\|\s*[^|]+\s*\|\s*[^|]+\s*\|", lines[i])
-
-        # Check if line is the end of a markdown table
-        if "<END_TABLE_MARKER>" in lines[i]:
-            lines[i] = lines[i].replace("<END_TABLE_MARKER>", "\n\n")
-
-        # If the line ends with a punctuation mark, is the last line, or next line starts with bullet point, append with newline
-        if (
-            i == len(lines) - 1
-            or lines[i].endswith(tuple(punctuation))
-            or is_next_bullet
-        ):
-            processed_lines.append(lines[i])
-            if i != len(lines) - 1:  # Don't add a newline after the last line
-                processed_lines.append("\n\n")
-        elif is_markdown_table:
-            # If line is part of a markdown table, append it with a newline
-            processed_lines.append("\n" + lines[i])
+    except botocore.exceptions.ClientError as e:
+        error_code = e.response.get("Error", {}).get("Code", "")
+        if error_code == "404" or error_code == "NoSuchKey":
+            context.log.warning(
+                f"Object {new_pdf_s3_key} does not exist in S3, nothing to remove"
+            )
         else:
-            # Otherwise, append it with a space (to merge with the next line)
-            processed_lines.append(lines[i] + " ")
-
-    # Join the processed lines back
-    return "".join(processed_lines)
+            context.log.error(f"Error checking if {new_pdf_s3_key} exists: {str(e)}")
+        raise e
 
 
-def _merge_authored_annotations(df_all):
-    """
-    Fix NaN speeches - merge ANNOTATION rows with preceding row with NaN speaker/author
-    """
-    df_all = df_all.reset_index(drop=True)
-    index_to_remove = []
-    rows_to_fill = []
-
-    for index, row in df_all.iterrows():
-        if pd.isna(row["proc_speech"]):
-            index_to_remove.append(index + 1)
-            next_index = index + 1
-
-            if (
-                next_index < len(df_all)
-                and df_all.at[next_index, "author"] == "ANNOTATION"
-            ):
-                # print(f"Plan to fill {index} with {df_all.at[next_index, 'proc_speech']}")
-                rows_to_fill.append(
-                    (index, next_index, df_all.at[next_index, "proc_speech"])
-                )
-
-    # Fill the 'speech' column for the selected rows
-    for fill_index, next_index, speech_value in rows_to_fill:
-        df_all.at[fill_index, "proc_speech"] = speech_value
-        df_all.at[fill_index, "is_annotation"] = True
-
-    print(f"before drop: {df_all.shape[0]}")
-    df_all = df_all.drop(index_to_remove)
-    print(f"after drop: {df_all.shape[0]}")
-    return df_all
-
-
-def _process_tabulated(df_all: pd.DataFrame, house: str):
-    """Read parsed and tabulated CSV files.
-
-    Processing applied:
-    - Process and fix line breaks
-    - Replace table markers with double newlines
-    - [TEMP] Fill NaN author with empty string
-    - Fill empty
-    - Tag annotations with 'is_annotation' column
-
-    Returns:
-    - DataFrame of all speeches in csv_paths
-    New columns:
-    - 'proc_speech': Processed speech text
-    - 'house': House of the sitting
-    - 'is_annotation': Boolean column to tag annotations
-    """
-
-    df_all["length"] = df_all.speech.str.split().str.len()
-    df_all["date"] = pd.to_datetime(df_all.date)
-    df_all["proc_speech"] = df_all.speech.map(_process_line_breaks)
-
-    df_all.level_1 = df_all.level_1.fillna("")
-    df_all.level_2 = df_all.level_2.fillna("")
-    df_all.level_3 = df_all.level_3.fillna("")
-
-    # remove line breaks from all level headings
-    df_all.level_1 = df_all.level_1.str.replace("\n", " ").str.strip()
-    df_all.level_2 = df_all.level_2.str.replace("\n", " ").str.strip()
-    df_all.level_3 = df_all.level_3.str.replace("\n", " ").str.strip()
-
-    df_all["house"] = house
-
-    # create new is_annotation column - to keep track of authored speeches that are pure annotations
-    df_all["is_annotation"] = df_all.author.apply(
-        lambda speech: True if speech == "ANNOTATION" else False
-    )
-    df_all = _merge_authored_annotations(df_all)
-    return df_all
-
-
-def _to_postgresql_array_string(py_list):
-    # Convert all elements to string and escape double quotes
-    formatted_elements = [
-        '"{}"'.format(str(element).replace('"', '\\"')) for element in py_list
-    ]
-
-    # Join the elements and wrap them in curly braces
-    return "{" + ", ".join(formatted_elements) + "}"
-
-
-@asset(partitions_def=sitting_partitions_def, deps=[dg_tabulate])
+@asset(partitions_def=sitting_partitions_def, deps=[dg_tabulate], group_name="parse")
 def insert_to_db(context: AssetExecutionContext):
     """
     Insert Hansards to DB
     - Pre-requisite: ParliamentaryCycle record exists
     - Create Sitting with speech_data - POST to /sitting - save Sitting and Speech records
-    - Create AuthorHistory records if needed - POST to /author_history
+    - Match AuthorHistory records if needed - GET to /author_history
     """
-    sitting_object = _get_sitting_object(context.partition_key)
-    print(f"sitting_object: {sitting_object}")
+    sitting_object = get_sitting_object(context.partition_key)
+    context.log.info(f"sitting_object: {sitting_object}")
 
-    # Prepare speech_data
-    # TODO: Map to Author
-    #
-    csv_path = _build_save_dir("tabulated", "result.csv", sitting_object)
+    context.log.info(f"Start processing tabulated data")
+    csv_path = build_path("tabulated", "result.csv", sitting_object)
     csv_data = s3_client.get_object(Bucket=S3_DATAPROC_BUCKET, Key=csv_path)
-    speech_list = csv.DictReader(csv_data)
-    df = pd.DataFrame(speech_list)
-    df = _process_tabulated(df, sitting_object["house"])
+    df = pd.read_csv(io.BytesIO(csv_data["Body"].read()))
+    df["date"] = sitting_object["proper_date_str"]
+    df = process_tabulated(df, sitting_object["house"])
 
-    df.proc_speech = df.proc_speech.apply(lambda text: preprocess_malaya(text))
+    speeches_count = len(df)
+    context.log.info(f"Preprocessing speech tokens: {speeches_count} speeches")
+    df["speech_tokens"] = df.proc_speech.apply(lambda text: preprocess_malaya(text))
+
     df_speech = df[df.author != "ANNOTATION"]
     df_speech = df_speech.dropna(subset="speech")
     df_speech.length = df_speech.length.astype(int)
+    df_speech.reset_index(names="index", inplace=True)
 
     df_speech = df_speech[
         df_speech.speech_tokens.str.len() > 0
     ]  # remove cleaned til empty speeches
 
-    df_speech.speech_tokens = df_speech.speech_tokens.apply(
-        lambda token_list: _to_postgresql_array_string(token_list)
+    # context.log.info(f"Converting speech tokens to PostgreSQL array string")
+    # df_speech.speech_tokens = df_speech.speech_tokens.apply(
+    #     lambda token_list: _to_postgresql_array_string(token_list)
+    # )
+
+    context.log.info(f"Start author matching")
+    response = requests.get(f"{API_URL}/api/author-history")
+    response.raise_for_status()
+    author_history = response.json()
+    df_author_history = pd.DataFrame(author_history)
+    df_author_history["area"] = df_author_history.area_name.str[5:]
+    context.log.info(f"Author history: {len(df_author_history)} records")
+
+    response = requests.get(f"{API_URL}/api/author")
+    response.raise_for_status()
+    author = response.json()
+    df_author = pd.DataFrame(author)
+    context.log.info(f"Author: {len(df_author)} records")
+    df_speech.to_csv("speech.csv", index=False)
+    df_speech_matched = perform_author_matching(
+        df_speech, df_author, df_author_history, context
     )
-    df_speech = df_speech.rename(columns={"author": "speaker", "date": "sitting"})
-    speech_dict = df_speech.to_dict(orient="records")
+
+    # rename to backend model names
+    df_speech_matched = df_speech_matched.rename(
+        columns={"author_id": "speaker", "date": "sitting"}
+    )
+    # change sitting to date string
+    df_speech_matched["sitting"] = df_speech_matched["sitting"].apply(
+        lambda date: date.strftime("%Y-%m-%d")
+    )
+    speech_data = speeches_to_json(df_speech_matched)
+
+    # show row and column with NaN - speaker column NaN
+    context.log.info(df_speech_matched[df_speech_matched.isna().any(axis=1)].iloc[0])
+    context.log.info(speech_data[0])
 
     sitting_payload = {
-        "sitting_id": sitting_object["sitting_id"],
-        "cycle": sitting_object["cycle_id"],
-        "date": sitting_object["date_str"],
-        "filename": sitting_object["original_filename"],
-        "has_dataset": True,
+        "date": sitting_object["proper_date_str"],
+        "filename": sitting_object["renamed_filename"],
+        # "has_dataset": True,
         # "is_final": True, # TODO: determine this
-        "speech_data": speech_dict,
+        "speech_data": json.dumps(speech_data),
+        "house": house_mapper.code_to_display(sitting_object["house"]),
     }
 
     # Post to API
     response = requests.post(
-        f"{API_URL}/sitting",
-        json=sitting_payload,
+        f"{API_URL}/api/sitting/", json=sitting_payload, timeout=3600
     )
-    print(response.json())
+
+    # # TEMP: save sitting_payload to pickle
+    # with open("sitting_payload.pkl", "wb") as f:
+    #     pickle.dump(sitting_payload, f)
+
+    # Check if request was successful
+    try:
+        response.raise_for_status()
+        context.log.info(f"Successfully uploaded sitting data: {response}")
+    except requests.exceptions.HTTPError as e:
+        context.log.error(f"API request failed: {e}")
+        context.log.error(f"Response content: {response.text}")
+        # Re-raise the exception to trigger pipeline failure
+        raise
+
+    context.log.info(f"context.run.tags: {context.run.tags}")
+    return MaterializeResult(
+        metadata={
+            # "sitting_id": response.json()["id"],
+            "speeches_count": speeches_count,
+            "matched_speeches_rate": len(df_speech_matched) / speeches_count,
+            "revalidate_frontend": "dagster/backfill" not in context.run.tags,
+        }
+    )
+
+
+@asset
+def revalidate_frontend(context: AssetExecutionContext, config: dict):
+    """
+    Revalidate frontend
+    """
+    partition_key = config["partition"]
+    sitting_object = get_sitting_object(partition_key)
+    house_route = f"/katalog/{sitting_object['house_display']}"
+    hansard_route = f"/hansard/{sitting_object['house_display']}/{sitting_object['proper_date_str']}"
+    payload = {"route": f"{house_route},{hansard_route}"}
+    context.log.info(f"Revalidating frontend: {payload}")
+    try:
+        response = requests.post(
+            f"{FRONTEND_URL}/api/revalidate",
+            headers={"Authorization": f"Bearer {FRONTEND_TOKEN}"},
+            json=payload,
+        )
+        response.raise_for_status()
+        context.log.info(f"Successfully revalidated frontend: {response}")
+    except requests.exceptions.HTTPError as e:
+        context.log.error(f"Failed to revalidate frontend: {e}")
+        raise
