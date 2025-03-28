@@ -251,7 +251,18 @@ def preprocess(
     assert (
         len(text) == len(bold) == len(italics)
     ), f"Length of text, bold and italics do not match: {len(text)} vs {len(bold)} vs {len(italics)}"
-    assert len([1 for line in text if "|" in line]) == 0, f"Error: pipe found in {text}"
+
+    # Escape pipe symbols with a temporary marker before validation
+    # Use a unique placeholder that won't appear in the text
+    # Required since DR-04032025 which has a valid pipe symbol
+    PIPE_PLACEHOLDER = "%%PIPE_SYMBOL%%"
+    escaped_text = []
+    for line in text:
+        escaped_text.append(line.replace("|", PIPE_PLACEHOLDER))
+
+    assert (
+        len([1 for line in escaped_text if "|" in line]) == 0
+    ), f"Error: pipe found in {text}"
 
     # 23032022 has highlighted misidentified table
     if hansard_date in ["23032022", "25102017"] and house.upper() == "DR":
@@ -271,8 +282,8 @@ def preprocess(
             tables[3] = edit_05102021
     for table in tables:
         try:
-            text, bold, italics = format_table(
-                text, bold, italics, table, hansard_date, house, is_pipeline
+            escaped_text, bold, italics = format_table(
+                escaped_text, bold, italics, table, hansard_date, house, is_pipeline
             )
         except AssertionError as e:
             print(e)
@@ -282,6 +293,11 @@ def preprocess(
                     f.write(f"{hansard_date}\n")
                     f.write(f"Error in table {table}\n")
                     f.write(f"{e}\n\n")
+
+    # Restore the pipe symbols after all table processing is complete
+    text = []
+    for line in escaped_text:
+        text.append(line.replace(PIPE_PLACEHOLDER, "|"))
 
     # Done with table parsing
     expected_page_num = -1

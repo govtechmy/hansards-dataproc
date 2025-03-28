@@ -239,6 +239,15 @@ def edit_kk_hansards(
                 "date": "04072024",
             },
         ],
+        # "15072024": [
+        #     {
+        #         "old_text_snippet": "Berhormat Jasin.\n",
+        #         "new_text_snippet": "Berhormat Jasin.\n",
+        #         "new_bold_snippet": "none",
+        #         "new_italics_snippet": "none",
+        #         "date": "15072024",
+        #     },
+        # ],
     }
 
     if date:
@@ -2067,6 +2076,15 @@ def edit_dn_hansards(
     house, date=None, text=None, bold=None, italics=None, is_pipeline=False
 ):
     modifications = {
+        "04032025": [
+            {
+                "old_text_snippet": "Datuk Wira Dr. Mohd Hatta bin Md Ramli: [Bangun[\n",
+                "new_text_snippet": "Datuk Wira Dr. Mohd Hatta bin Md Ramli: [Bangun]\n",
+                "new_bold_snippet": "11111 1111 111 1111 11111 111 11 111111 00000000\n",
+                "new_italics_snippet": "00000 0000 000 0000 00000 000 00 000000 11111111\n",
+                "date": "04032025",
+            }
+        ],
         "18102021": [
             {
                 "old_text_snippet": "Mesyuaratdimulakanpadapukul10.00pagi\n",

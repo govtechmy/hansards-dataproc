@@ -6,19 +6,18 @@ from dagster import (
 )
 
 from . import assets
-from .assets import sitting_partitions_def, sittings_job, sittings_sensor
+from .assets import sittings_job
 from .sensors import (
-    my_discord_on_run_success,
+    sittings_sensor,
+    my_discord_on_run_frontend_success,
     my_discord_on_run_failure,
-    ingest_success_sensor,
-    revalidate_frontend_job,
 )
 
 all_assets = load_assets_from_modules([assets])
 
 scrape_job = define_asset_job(
     "scrape_website_job",
-    selection=[assets.scrape_website],
+    selection=[assets.scrape_website, assets.move_and_rename_all_hansards],
 )
 
 scrape_schedule = ScheduleDefinition(
@@ -31,9 +30,8 @@ defs = Definitions(
     jobs=[sittings_job],
     sensors=[
         sittings_sensor,
-        my_discord_on_run_success,
+        my_discord_on_run_frontend_success,
         my_discord_on_run_failure,
-        ingest_success_sensor,
     ],
     schedules=[scrape_schedule],
 )

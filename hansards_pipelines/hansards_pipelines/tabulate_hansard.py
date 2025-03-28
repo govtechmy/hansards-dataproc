@@ -1,5 +1,4 @@
-"""Generate the csv file of speeches for a given Hansard.
-"""
+"""Generate the csv file of speeches for a given Hansard."""
 
 import argparse
 import os
@@ -129,7 +128,23 @@ def get_author_and_speech(text, bold, italics, house, warn="", is_pipeline=False
     speech_bold = ""
     speech_italics = ""
     subtopic = ""
+
+    # If RUKUN NEGARA make sure author is set to ANNOTATION
+    # They begun to implement this starting from DR-04022025
     if (
+        re.search(r"^(KEPERCAYAAN\s+KEPADA\s+TUHAN)", text)
+        or re.search(r"^(KESETIAAN\s+KEPADA\s+RAJA\s+DAN\s+NEGARA)", text)
+        or re.search(r"^(KELURUHAN\s+PERLEMBAGAAN)", text)
+        or re.search(r"^(KEDAULATAN\s+UNDANG-UNDANG)", text)
+        or re.search(r"^(KESOPANAN\s+DAN\s+KESUSILAAN)", text)
+    ):
+        split_idx = text.find(":")
+        author = "ANNOTATION"
+        speech = text[split_idx + 1 :]
+        speech_bold = bold[split_idx + 1 :]
+        speech_italics = italics[split_idx + 1 :]
+
+    elif (
         re.search(
             r"^(Timbalan(an)? )?(Tuan )?([Yy]ang )?[dD]i-? ?[Pp]ertua[\[\]A-Za-z `.’\'@/(\-),]*:",
             text,
@@ -194,8 +209,15 @@ def get_author_and_speech(text, bold, italics, house, warn="", is_pipeline=False
         speech = text[split_idx + 2 :]
         speech_bold = bold[split_idx + 2 :]
         speech_italics = italics[split_idx + 2 :]
+    elif text.startswith("Setiausaha:"):
+        # Speaker of the House
+        split_idx = text.find(":")
+        author = text[:split_idx]
+        speech = text[split_idx + 1 :]
+        speech_bold = bold[split_idx + 1 :]
+        speech_italics = italics[split_idx + 1 :]
     elif re.search(
-        r"^\d{1,2}\.? [A-Za-z `.’\'@\/\-()]+\[[A-Za-z \-]+]:? *[Mm](em)?inta", text
+        r"^\d{1,2}\.? [A-Za-z `.’\'@\/\-()]+(\[[A-Za-z \-]+]:?)? *[Mm](em)?inta", text
     ):
         # JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN
         # 1. Tuan Tan Kok Wai [Cheras] minta Menteri Pembangunan Usahawan menyatakan,
@@ -210,14 +232,7 @@ def get_author_and_speech(text, bold, italics, house, warn="", is_pipeline=False
         speech_italics = italics[split_idx:]
         # get the numbering
         subtopic, author = author.split(" ", maxsplit=1)
-    elif text.startswith("Setiausaha:"):
-        # Speaker of the House
-        print("this happens")
-        split_idx = text.find(":")
-        author = text[:split_idx]
-        speech = text[split_idx + 1 :]
-        speech_bold = bold[split_idx + 1 :]
-        speech_italics = italics[split_idx + 1 :]
+
     elif (
         not warn
         and re.search(r"] ?:", text)
@@ -518,6 +533,11 @@ def format_attendance(text):
     parsed_data = {}
     current_heading = None
     for line in lines:
+        if any(
+            word in line.lower() for word in ["hadir", "tidak hadir"]
+        ) and not line.endswith(":"):
+            line += ":"
+
         if not list_item_pattern.match(line) and (
             line.endswith(":") or line.endswith(":-")  # 20210915 endswith :-
         ):
@@ -1020,6 +1040,7 @@ def tabulate(
                 # try and see if KKDR level_2 headings
                 add_idx = 1
                 current_subcategory = text[row_id].strip()
+
                 current_subcategory_probability = category_probability(
                     current_subcategory, subcategories, check_upper_lower=False
                 )
@@ -1213,6 +1234,11 @@ def tabulate(
             if not is_pipeline:
                 with open(f"warnings/{house}/uppercased_non_author.txt", "a") as f:
                     f.write(f"{hansard_date}\n{speech[4]}\n\n")
+
+    # set all author under "level_1" to ANNOTATION if Contains RUKUN NEGARA
+    for speech in speeches:
+        if re.search(r"(RUKUN\s+NEGARA)", speech[0]):
+            speech[4] = "ANNOTATION"
 
     # check that timestamps are in order
     timestamps = [speech[4] for speech in speeches]

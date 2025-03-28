@@ -13,10 +13,12 @@ from dagster import (
     RunsFilter,
     DagsterRunStatus,
     MaterializeResult,
+    Output,
 )
 import os
 import io
 import json
+import pickle
 from bs4 import BeautifulSoup
 import boto3
 import botocore
@@ -24,7 +26,7 @@ import requests
 import pandas as pd
 from dotenv import load_dotenv
 from urllib.parse import urljoin
-from typing import List
+from typing import List, Tuple, Dict
 from io import BytesIO
 from datetime import datetime
 
@@ -51,7 +53,8 @@ load_dotenv()
 
 S3_DATAPROC_BUCKET = os.getenv("S3_DATAPROC_BUCKET")
 S3_PUBLIC_BUCKET = os.getenv("S3_PUBLIC_BUCKET")
-API_URL = os.getenv("API_URL")
+DEV_API_URL = os.getenv("DEV_API_URL")
+PROD_API_URL = os.getenv("PROD_API_URL")
 
 FRONTEND_URL = os.getenv("FRONTEND_URL")
 FRONTEND_TOKEN = os.getenv("FRONTEND_TOKEN")
@@ -255,108 +258,40 @@ def scrape_website(context: AssetExecutionContext) -> List:
     # )
 
 
-sittings_job = define_asset_job(
-    "sittings_job",
-)
+@asset(group_name="scrape")
+def move_and_rename_all_hansards(
+    context: AssetExecutionContext, scrape_website: List[Tuple[str, str, str]]
+):
+    """Move and rename all hansards from new/ to main downloads folder"""
+    # New PDFs: [('DN-24032025.pdf', 'dewannegara/DN-24032025.pdf', 's3://hansards-dataproc-kd/new/dewannegara/DN-24032025.pdf')]
+    for new_pdf, s3_key, destination_path in scrape_website:
+        context.log.info(f"Moving and renaming {s3_key}")
 
+        sitting_object = get_sitting_object(new_pdf[:-4])
 
-@sensor(job=sittings_job, minimum_interval_seconds=900)
-def sittings_sensor(context: SensorEvaluationContext):
-    """Set up partitions
-    One partition is one dewan, one sitting (date)
-    One partition is one file still in new/
-    TODO: implement actual moving of parsed PDFs from new folder
-    """
-    # get new pdfs
-
-    # get all partitions in s3
-    response = s3_client.list_objects_v2(Bucket=S3_DATAPROC_BUCKET, Prefix="new/")
-    new_pdfs = []
-    for obj in response.get("Contents", []):
-        # key new/dewannegara/DN-03122024.pdf
-        if obj["Key"].lower().endswith(".pdf"):
-            # take filename only without extension: DN-03122024
-            pdf_name = obj["Key"].split("/")[-1].split(".")[0]
-            context.log.info(f"New PDF: {pdf_name}")
-
-            # TODO: ensure date portion is 8 digits DDMMYYYY
-            date = pdf_name.split("-")[1]
-            if len(date) != 8:
-                context.log.warning(
-                    f"WARNING: Date portion is not 8 digits: {date}. Skipping"
-                )
-            new_pdfs.append(pdf_name)
-
-    # TODO: REMOVE THIS FOR TESTING ONLY
-    # new_pdfs = new_pdfs[:5]
-    context.log.info(f"New PDFs: {new_pdfs}")
-
-    ## Only Create New Runs if Partition has no active runs
-    # Get runs for each partition
-    run_requests = []
-    dynamic_partition_additions = []
-
-    for pdf_name in new_pdfs:
-        # Get latest run for this partition using Dagster's RunsFilter
-        runs = context.instance.get_runs(
-            filters=RunsFilter(
-                tags={"dagster/partition": pdf_name},
-                statuses=[
-                    DagsterRunStatus.STARTED,
-                    DagsterRunStatus.STARTING,
-                    DagsterRunStatus.QUEUED,
-                    DagsterRunStatus.SUCCESS,
-                    DagsterRunStatus.FAILURE,
-                ],
-            )
+        # Read from S3
+        pdf_response = s3_client.get_object(
+            Bucket=S3_DATAPROC_BUCKET,
+            Key=f"new/{sitting_object['house_folder']}/{sitting_object['original_filename']}",
+        )
+        new_pdf_name = (
+            f"{sitting_object['house_folder']}/{sitting_object['renamed_filename']}.pdf"
         )
 
-        # Check if there are any active runs
-        has_active_run = any(runs)
+        # Rename and move the file
+        s3_client.put_object(
+            Bucket=S3_PUBLIC_BUCKET,
+            Key=new_pdf_name,
+            Body=pdf_response["Body"].read(),
+            ContentType="application/pdf",
+        )
 
-        if not has_active_run:
-            run_requests.append(RunRequest(partition_key=pdf_name))
-            dynamic_partition_additions.append(pdf_name)
-            context.log.info(f"Creating new run for partition: {pdf_name}")
-        else:
-            context.log.info(f"Skipping partition {pdf_name} - has active run")
-
-    return SensorResult(
-        run_requests=run_requests,
-        dynamic_partitions_requests=(
-            [sitting_partitions_def.build_add_request(dynamic_partition_additions)]
-            if dynamic_partition_additions
-            else []
-        ),
-    )
-
-
-@asset(partitions_def=sitting_partitions_def, group_name="parse")
-def move_and_rename_hansards(context: AssetExecutionContext):
-    """Move and rename raw hansards from new/ to main downloads folder"""
-
-    # context.log.info(f"Moving and renaming hansards {len(scrape_website)}")
-
-    # name of PDFs already in new/ format: DN-02122024
-    sitting_object = get_sitting_object(context.partition_key)
-    house_folder = sitting_object["house_folder"]
-    new_pdf_s3_key = f"new/{house_folder}/{sitting_object['original_filename']}"  # new/dewanrakyat/DN-02122024.pdf
-    context.log.info(f"Moving and renaming {new_pdf_s3_key}")
-
-    # Read from s3
-    pdf_response = s3_client.get_object(Bucket=S3_DATAPROC_BUCKET, Key=new_pdf_s3_key)
-    new_pdf_name = f"{house_folder}/{sitting_object['renamed_filename']}"
-    # Rename and move the file
-    s3_client.put_object(
-        Bucket=S3_PUBLIC_BUCKET, Key=new_pdf_name, Body=pdf_response["Body"].read()
-    )
-    context.log.info(f"Renamed and moved {new_pdf_s3_key} to {new_pdf_name}")
-    return new_pdf_name  # dewanrakyat/dr_2024-12-02.pdf
+        context.log.info(f"Renamed and moved {s3_key} to {new_pdf_name}")
 
 
 @asset(
     partitions_def=sitting_partitions_def,
-    deps=[move_and_rename_hansards],
+    # deps=[move_and_rename_hansards],
     group_name="parse",
 )
 def dg_parse_hansard(context: AssetExecutionContext):
@@ -478,14 +413,15 @@ def dg_post_parsing_edits(context: AssetExecutionContext):
     # get tables.json and categories.json
     tables_s3_key = build_path("parsed_pdf", "tables.json", sitting_object)
     try:
-        tables = read_json_file(S3_DATAPROC_BUCKET, tables_s3_key)
+        tables = read_json_file(s3_client, S3_DATAPROC_BUCKET, tables_s3_key)
     except botocore.exceptions.ClientError as e:
         context.log.warning(f"No tables.json found for {context.partition_key}")
         tables = None
 
     categories_s3_key = build_path("get_categories", "categories.json", sitting_object)
+
     try:
-        categories = read_json_file(S3_DATAPROC_BUCKET, categories_s3_key)
+        categories = read_json_file(s3_client, S3_DATAPROC_BUCKET, categories_s3_key)
     except botocore.exceptions.ClientError as e:
         context.log.warning(f"No categories.json found for {context.partition_key}")
         categories = None
@@ -539,17 +475,24 @@ def dg_pre_tabulate(context: AssetExecutionContext):
     context.log.info(f"Pre tabulating {context.partition_key}")
 
     plaintext = read_txt_file(
+        s3_client,
         S3_DATAPROC_BUCKET,
         build_path("parsed_pdf", "plaintext.txt", sitting_object),
     )
     bold = read_txt_file(
-        S3_DATAPROC_BUCKET, build_path("parsed_pdf", "bold.txt", sitting_object)
+        s3_client,
+        S3_DATAPROC_BUCKET,
+        build_path("parsed_pdf", "bold.txt", sitting_object),
     )
     italics = read_txt_file(
-        S3_DATAPROC_BUCKET, build_path("parsed_pdf", "italics.txt", sitting_object)
+        s3_client,
+        S3_DATAPROC_BUCKET,
+        build_path("parsed_pdf", "italics.txt", sitting_object),
     )
     tables = read_json_file(
-        S3_DATAPROC_BUCKET, build_path("parsed_pdf", "tables.json", sitting_object)
+        s3_client,
+        S3_DATAPROC_BUCKET,
+        build_path("parsed_pdf", "tables.json", sitting_object),
     )
 
     # check and warn if contents are empty
@@ -609,13 +552,17 @@ def dg_edit_hansards(context: AssetExecutionContext):
     context.log.info(f"Editing hansards for {context.partition_key}")
 
     plaintext = read_txt_file(
+        s3_client,
         S3_DATAPROC_BUCKET,
         build_path("pretabulation", "plaintext.txt", sitting_object),
     )
     bold = read_txt_file(
-        S3_DATAPROC_BUCKET, build_path("pretabulation", "bold.txt", sitting_object)
+        s3_client,
+        S3_DATAPROC_BUCKET,
+        build_path("pretabulation", "bold.txt", sitting_object),
     )
     italics = read_txt_file(
+        s3_client,
         S3_DATAPROC_BUCKET,
         build_path("pretabulation", "italics.txt", sitting_object),
     )
@@ -684,13 +631,17 @@ def dg_tabulate(context: AssetExecutionContext):
 
     # get files from s3
     plaintext = read_txt_file(
+        s3_client,
         S3_DATAPROC_BUCKET,
         build_path("pretabulation", "plaintext.txt", sitting_object),
     )
     bold = read_txt_file(
-        S3_DATAPROC_BUCKET, build_path("pretabulation", "bold.txt", sitting_object)
+        s3_client,
+        S3_DATAPROC_BUCKET,
+        build_path("pretabulation", "bold.txt", sitting_object),
     )
     italics = read_txt_file(
+        s3_client,
         S3_DATAPROC_BUCKET,
         build_path("pretabulation", "italics.txt", sitting_object),
     )
@@ -699,11 +650,12 @@ def dg_tabulate(context: AssetExecutionContext):
     print(f"length of italics: {len(italics)}")
 
     # read categories.json from root folder
-    categories = read_json_file(S3_DATAPROC_BUCKET, "categories.json")
+    categories = read_json_file(s3_client, S3_DATAPROC_BUCKET, "categories.json")
 
     if sitting_object["house"] != "DN":
         categories = json.loads(
             read_json_file(
+                s3_client,
                 S3_DATAPROC_BUCKET,
                 build_path("get_categories", "categories.json", sitting_object),
             )
@@ -713,6 +665,7 @@ def dg_tabulate(context: AssetExecutionContext):
 
     try:
         attendance = read_txt_file(
+            s3_client,
             S3_DATAPROC_BUCKET,
             build_path("parsed_pdf", "attendance.txt", sitting_object),
         )
@@ -738,6 +691,15 @@ def dg_tabulate(context: AssetExecutionContext):
         Bucket=S3_DATAPROC_BUCKET, Key=s3_key, Body=prepare_csv_for_s3(speeches)
     )
     context.log.info(f"Uploaded result.csv to {s3_key}")
+    s3_csv_key = (
+        f"{sitting_object['house_folder']}/{sitting_object['renamed_filename']}.csv"
+    )
+    s3_client.put_object(
+        Bucket=S3_PUBLIC_BUCKET,
+        Key=s3_csv_key,
+        Body=prepare_csv_for_s3(speeches),
+    )
+    context.log.info(f"Uploaded copy of result.csv to {s3_csv_key}")
 
     if absent_text:
         s3_key = build_path("tabulated", "absent.txt", sitting_object)
@@ -771,9 +733,6 @@ def remove_parsed_hansards(context: AssetExecutionContext):
         sitting_object["original_filename"],
     ]  # new/dewanrakyat/DN-02122024.pdf
     new_pdf_s3_key = "/".join(path_parts)
-    moved_pdf_key = (
-        f"{sitting_object['house_folder']}/{sitting_object['renamed_filename']}"
-    )
     parsed_pdf_result_key = build_path(
         f"tabulated", "result.csv", sitting_object
     )  # tabulated/dewanrakyat/02122024/result.csv
@@ -790,15 +749,17 @@ def remove_parsed_hansards(context: AssetExecutionContext):
         context.log.error(f"result.csv is not in {parsed_pdf_result_key}")
         raise botocore.exceptions.ClientError
 
-    # Check if file was moved
+    # Check if pdf file was moved
     try:
-        s3_client.head_object(Bucket=S3_PUBLIC_BUCKET, Key=moved_pdf_key)
-        context.log.info(f"{moved_pdf_key}  Verified!")
+        s3_client.head_object(
+            Bucket=S3_PUBLIC_BUCKET, Key=sitting_object["renamed_filename_key"]
+        )
+        context.log.info(f"{sitting_object['renamed_filename_key']}  Verified!")
     except botocore.exceptions.ClientError:
-        context.log.error(f"{moved_pdf_key} not Verfied")
+        context.log.error(f"{sitting_object['renamed_filename_key']} not Verfied")
         raise botocore.exceptions.ClientError
 
-    # Remove file from S3 bucket
+    # Remove file from new/ S3 bucket
     try:
         # First check if the object exists
         s3_client.head_object(Bucket=S3_DATAPROC_BUCKET, Key=new_pdf_s3_key)
@@ -823,9 +784,9 @@ def remove_parsed_hansards(context: AssetExecutionContext):
 
 
 @asset(partitions_def=sitting_partitions_def, deps=[dg_tabulate], group_name="parse")
-def insert_to_db(context: AssetExecutionContext):
+def prepare_db_payload(context: AssetExecutionContext):
     """
-    Insert Hansards to DB
+    Prepare payload for DB Insertion
     - Pre-requisite: ParliamentaryCycle record exists
     - Create Sitting with speech_data - POST to /sitting - save Sitting and Speech records
     - Match AuthorHistory records if needed - GET to /author_history
@@ -844,8 +805,8 @@ def insert_to_db(context: AssetExecutionContext):
     context.log.info(f"Preprocessing speech tokens: {speeches_count} speeches")
     df["speech_tokens"] = df.proc_speech.apply(lambda text: preprocess_malaya(text))
 
-    df_speech = df[df.author != "ANNOTATION"]
-    df_speech = df_speech.dropna(subset="speech")
+    # df_speech = df[df.author != "ANNOTATION"]
+    df_speech = df.dropna(subset="speech")
     df_speech.length = df_speech.length.astype(int)
     df_speech.reset_index(names="index", inplace=True)
 
@@ -859,22 +820,23 @@ def insert_to_db(context: AssetExecutionContext):
     # )
 
     context.log.info(f"Start author matching")
-    response = requests.get(f"{API_URL}/api/author-history")
+    response = requests.get(f"{DEV_API_URL}/api/author-history")
     response.raise_for_status()
     author_history = response.json()
     df_author_history = pd.DataFrame(author_history)
     df_author_history["area"] = df_author_history.area_name.str[5:]
     context.log.info(f"Author history: {len(df_author_history)} records")
 
-    response = requests.get(f"{API_URL}/api/author")
+    context.log.info("Get Authors")
+    response = requests.get(f"{DEV_API_URL}/api/author")
     response.raise_for_status()
     author = response.json()
     df_author = pd.DataFrame(author)
     context.log.info(f"Author: {len(df_author)} records")
-    df_speech.to_csv("speech.csv", index=False)
     df_speech_matched = perform_author_matching(
         df_speech, df_author, df_author_history, context
     )
+    matched_speeches_rate = (~df_speech_matched["author_id"].isna()).mean() * 100
 
     # rename to backend model names
     df_speech_matched = df_speech_matched.rename(
@@ -884,10 +846,16 @@ def insert_to_db(context: AssetExecutionContext):
     df_speech_matched["sitting"] = df_speech_matched["sitting"].apply(
         lambda date: date.strftime("%Y-%m-%d")
     )
-    speech_data = speeches_to_json(df_speech_matched)
+    context.log.info(df_speech_matched.columns.tolist())
+    # data completeness checking by column
+    assert df_speech_matched["timestamp"].notna().all(), "timestamp column has NaN"
+    assert df_speech_matched["index"].notna().all(), "index column has NaN"
+    assert df_speech_matched["speech"].notna().all(), "speech column has NaN"
+    # note: this speech_data is only as payload to backend ingestion, not the final JSON
+    # speech_data = speeches_to_json(df_speech_matched)
+    speech_data = df_speech_matched.to_dict(orient="records")
 
     # show row and column with NaN - speaker column NaN
-    context.log.info(df_speech_matched[df_speech_matched.isna().any(axis=1)].iloc[0])
     context.log.info(speech_data[0])
 
     sitting_payload = {
@@ -899,15 +867,27 @@ def insert_to_db(context: AssetExecutionContext):
         "house": house_mapper.code_to_display(sitting_object["house"]),
     }
 
-    # Post to API
-    response = requests.post(
-        f"{API_URL}/api/sitting/", json=sitting_payload, timeout=3600
-    )
-
     # # TEMP: save sitting_payload to pickle
     # with open("sitting_payload.pkl", "wb") as f:
     #     pickle.dump(sitting_payload, f)
 
+    context.log.info(f"context.run.tags: {context.run.tags}")
+    return Output(
+        sitting_payload,
+        metadata={
+            "speeches_count": speeches_count,
+            "matched_speeches_rate": float(matched_speeches_rate),
+            # "revalidate_frontend": "dagster/backfill" not in context.run.tags,
+        },
+    )
+
+
+def _insert_to_db(api_url: str, payload: dict, context: AssetExecutionContext):
+    """
+    Insert Hansards to DB
+    """
+    # Post to Dev Sittings API
+    response = requests.post(f"{api_url}/api/sitting/", json=payload, timeout=3600)
     # Check if request was successful
     try:
         response.raise_for_status()
@@ -918,36 +898,91 @@ def insert_to_db(context: AssetExecutionContext):
         # Re-raise the exception to trigger pipeline failure
         raise
 
-    context.log.info(f"context.run.tags: {context.run.tags}")
-    return MaterializeResult(
-        metadata={
-            # "sitting_id": response.json()["id"],
-            "speeches_count": speeches_count,
-            "matched_speeches_rate": len(df_speech_matched) / speeches_count,
-            "revalidate_frontend": "dagster/backfill" not in context.run.tags,
-        }
-    )
-
-
-@asset
-def revalidate_frontend(context: AssetExecutionContext, config: dict):
-    """
-    Revalidate frontend
-    """
-    partition_key = config["partition"]
-    sitting_object = get_sitting_object(partition_key)
-    house_route = f"/katalog/{sitting_object['house_display']}"
-    hansard_route = f"/hansard/{sitting_object['house_display']}/{sitting_object['proper_date_str']}"
-    payload = {"route": f"{house_route},{hansard_route}"}
-    context.log.info(f"Revalidating frontend: {payload}")
     try:
-        response = requests.post(
-            f"{FRONTEND_URL}/api/revalidate",
-            headers={"Authorization": f"Bearer {FRONTEND_TOKEN}"},
-            json=payload,
-        )
-        response.raise_for_status()
-        context.log.info(f"Successfully revalidated frontend: {response}")
-    except requests.exceptions.HTTPError as e:
-        context.log.error(f"Failed to revalidate frontend: {e}")
+        response_data = response.json()
+    except json.JSONDecodeError:
+        context.log.error(f"Failed to parse response as JSON: {response.text}")
         raise
+
+    if response.status_code == 201 and "warning" in response_data:
+        warning_message = f"Data integrity warning: {response_data['warning']}"
+        context.log.warning(warning_message)
+        raise Exception(warning_message)
+    elif response.status_code == 201 and "speech_errors" in response_data:
+        speech_errors = response_data["speech_errors"]
+        context.log.warning(f"Speech errors: {speech_errors}")
+        raise Exception(speech_errors)
+
+
+@asset(
+    partitions_def=sitting_partitions_def, deps=[prepare_db_payload], group_name="parse"
+)
+def insert_to_dev_db(context: AssetExecutionContext, prepare_db_payload: dict):
+    """
+    Insert Hansards to Dev DB
+    """
+    _insert_to_db(DEV_API_URL, prepare_db_payload, context)
+
+
+@asset(
+    partitions_def=sitting_partitions_def, deps=[prepare_db_payload], group_name="parse"
+)
+def insert_to_prod_db(context: AssetExecutionContext, prepare_db_payload: dict):
+    """
+    Insert Hansards to Prod DB
+    """
+    _insert_to_db(PROD_API_URL, prepare_db_payload, context)
+
+
+# @asset(group_name="frontend")
+# def revalidate_frontend(context: AssetExecutionContext, config: dict):
+#     """
+#     Revalidate frontend
+#     """
+#     if "partition" not in config:
+#         context.log.info(
+#             f"No partition provided, skipping revalidation. Config: {config}"
+#         )
+#         raise ValueError("No partition provided")
+
+#     partition_key = config["partition"]
+#     sitting_object = get_sitting_object(partition_key)
+#     house_route = f"/katalog/{sitting_object['house_display']}"
+#     hansard_route = f"/hansard/{sitting_object['house_display']}/{sitting_object['proper_date_str']}"
+#     payload = {"route": f"{house_route},{hansard_route}"}
+
+#     context.log.info(f"Revalidating frontend: {payload}")
+#     try:
+#         response = requests.post(
+#             f"{FRONTEND_URL}/api/revalidate",
+#             headers={"Authorization": f"Bearer {FRONTEND_TOKEN}"},
+#             json=payload,
+#         )
+#         response.raise_for_status()
+#         context.log.info(f"Successfully revalidated frontend: {response}")
+#     except requests.exceptions.HTTPError as e:
+# context.log.error(f"Failed to revalidate frontend: {e}")
+# raise
+
+# return MaterializeResult(
+#     metadata={
+#         "hansard_route": hansard_route,
+#     }
+# )
+
+
+sittings_job = define_asset_job(
+    "sittings_job",
+    selection=[
+        dg_parse_hansard,
+        dg_get_categories,
+        dg_post_parsing_edits,
+        dg_pre_tabulate,
+        dg_edit_hansards,
+        dg_tabulate,
+        remove_parsed_hansards,
+        prepare_db_payload,
+        insert_to_dev_db,
+        insert_to_prod_db,
+    ],
+)

@@ -321,6 +321,18 @@ def match_by_constituency(speech_df, author_hist_df, column_name, threshold=70):
     return constituency_matches
 
 
+def author_period_lookup(author_hist_df):
+
+    author_periods = {}
+    for _, row in author_hist_df.iterrows():
+        author_id = row["record_id"]
+        if author_id not in author_periods:
+            author_periods[author_id] = []
+        author_periods[author_id].append((row["start_date"], row["end_date"]))
+
+    return author_periods
+
+
 def apply_matches_with_date_context(
     speech_df,
     author_hist_df,
@@ -330,6 +342,9 @@ def apply_matches_with_date_context(
     constituency_matches_b,
     position_matches_a,
     position_matches_b,
+    author_periods,
+    ah_to_author_id,
+    context,
 ):
     """Apply matches with date context using vectorized operations for better performance"""
     # Create result DataFrame to avoid modifying the original
@@ -353,13 +368,6 @@ def apply_matches_with_date_context(
 
     # Date-based verification (vectorized approach)
     if "date" in result_df.columns:
-        # Create efficient lookup dictionaries for author time periods
-        author_periods = {}
-        for _, row in author_hist_df.iterrows():
-            author_id = row["record_id"]
-            if author_id not in author_periods:
-                author_periods[author_id] = []
-            author_periods[author_id].append((row["start_date"], row["end_date"]))
 
         # Function to check if a date falls within any period for an author
         def is_date_valid(author_id, date):
@@ -382,26 +390,7 @@ def apply_matches_with_date_context(
             return False
 
         # Vectorize the date validation (still creating a helper function for clarity)
-        def validate_date_vectorized(df):
-            # Create masks for valid date ranges
-            valid_a_mask = df.apply(
-                lambda row: (
-                    is_date_valid(row["author_a_id"], row["date"])
-                    if not pd.isna(row["author_a_id"])
-                    else False
-                ),
-                axis=1,
-            )
-
-            valid_b_mask = df.apply(
-                lambda row: (
-                    is_date_valid(row["author_b_id"], row["date"])
-                    if not pd.isna(row["author_b_id"])
-                    else False
-                ),
-                axis=1,
-            )
-
+        def validate_date_vectorized(df, context):
             # Add validation for position matches
             valid_position_a_mask = df.apply(
                 lambda row: (
@@ -421,15 +410,17 @@ def apply_matches_with_date_context(
                 axis=1,
             )
 
+            context.log.info(f"Valid position a: {valid_position_a_mask.sum()}")
+            context.log.info(f"Valid position b: {valid_position_b_mask.sum()}")
+
             # Apply masks to set invalid matches to None
-            df.loc[~valid_a_mask, "author_a_id"] = None
-            df.loc[~valid_b_mask, "author_b_id"] = None
             df.loc[~valid_position_a_mask, "position_a_id"] = None
             df.loc[~valid_position_b_mask, "position_b_id"] = None
+
             return df
 
         # Apply the vectorized date validation
-        result_df = validate_date_vectorized(result_df)
+        result_df = validate_date_vectorized(result_df, context)
 
     # Combine matches using vectorized operations with priority order:
     # 1. author_a_id or author_b_id (name matches)
@@ -440,28 +431,56 @@ def apply_matches_with_date_context(
     result_df["author_id"] = result_df["author_a_id"].combine_first(
         result_df["author_b_id"]
     )
+    context.log.info(
+        f"Name matches: {(~result_df['author_id'].isna()).sum()}/{len(result_df)}"
+    )
+
+    # map author_id to new_author_id
+    result_df["constituency_a_author_id"] = result_df["constituency_a_id"].map(
+        ah_to_author_id
+    )
+    result_df["constituency_b_author_id"] = result_df["constituency_b_id"].map(
+        ah_to_author_id
+    )
+    result_df["position_a_author_id"] = result_df["position_a_id"].map(ah_to_author_id)
+    result_df["position_b_author_id"] = result_df["position_b_id"].map(ah_to_author_id)
 
     # Use constituency matches as fallback where author_id is null
     null_mask = result_df["author_id"].isna()
+    context.log.info(f"Null authors: {null_mask.sum()}/{len(result_df)}")
     result_df.loc[null_mask, "author_id"] = result_df.loc[
         null_mask, "constituency_a_id"
     ]
+    context.log.info(
+        f"Constituency A matches: {(~result_df['author_id'].isna()).sum()}/{len(result_df)}"
+    )
 
     still_null_mask = result_df["author_id"].isna()
+    context.log.info(f"Still null authors: {still_null_mask.sum()}/{len(result_df)}")
     result_df.loc[still_null_mask, "author_id"] = result_df.loc[
         still_null_mask, "constituency_b_id"
     ]
+    context.log.info(
+        f"Constituency B matches: {(~result_df['author_id'].isna()).sum()}/{len(result_df)}"
+    )
 
     # Use position matches as a final fallback
     still_null_mask = result_df["author_id"].isna()
+    context.log.info(f"Still null authors: {still_null_mask.sum()}/{len(result_df)}")
     result_df.loc[still_null_mask, "author_id"] = result_df.loc[
         still_null_mask, "position_a_id"
     ]
-
+    context.log.info(
+        f"Position A matches: {(~result_df['author_id'].isna()).sum()}/{len(result_df)}"
+    )
     still_null_mask = result_df["author_id"].isna()
+    context.log.info(f"Still null authors: {still_null_mask.sum()}/{len(result_df)}")
     result_df.loc[still_null_mask, "author_id"] = result_df.loc[
         still_null_mask, "position_b_id"
     ]
+    context.log.info(
+        f"Position B matches: {(~result_df['author_id'].isna()).sum()}/{len(result_df)}"
+    )
 
     # Fill remaining NAs with 'NO MATCH'
     result_df["author_id"] = result_df["author_id"].fillna("NO MATCH")
@@ -703,6 +722,8 @@ def perform_author_matching(speech_df, author_df, author_hist_df, context):
         r"^(.*?)\s*\[(.*?)\]$"
     )[1]
 
+    df_speech_only["date"] = pd.to_datetime(df_speech_only["date"])
+
     # preprocess names for matching
     df_speech_only = preprocess_names_for_matching(
         df_speech_only, "author_a", "author_a_up"
@@ -728,9 +749,6 @@ def perform_author_matching(speech_df, author_df, author_hist_df, context):
     name_matches_b = match_by_name(
         df_speech_only, author_df, "author_b_up", threshold=70
     )
-    context.log.info(f"Matches by name results:")
-    context.log.info(f"Author A: {len(name_matches_a)}")
-    context.log.info(f"Author B: {len(name_matches_b)}")
 
     # 2. Get matches by constituency
     constituency_matches_a = match_by_constituency(
@@ -739,9 +757,6 @@ def perform_author_matching(speech_df, author_df, author_hist_df, context):
     constituency_matches_b = match_by_constituency(
         df_speech_only, author_hist_df, "author_b_up", threshold=70
     )
-    context.log.info(f"Matches by constituency results:")
-    context.log.info(f"Author A: {len(constituency_matches_a)}")
-    context.log.info(f"Author B: {len(constituency_matches_b)}")
 
     # 3. Get matches by position/jawatan
     position_to_author = match_position_to_author(author_hist_df)
@@ -752,9 +767,9 @@ def perform_author_matching(speech_df, author_df, author_hist_df, context):
         df_speech_only, position_to_author, "author_b_up", date_column="date"
     )
 
-    context.log.info(f"Matches by position results:")
-    context.log.info(f"Author A: {len(position_matches_a)}")
-    context.log.info(f"Author B: {len(position_matches_b)}")
+    # generate lookups
+    author_periods = author_period_lookup(author_hist_df)
+    ah_to_author_id = author_hist_df.set_index("record_id")["new_author_id"].to_dict()
 
     df_result = apply_matches_with_date_context(
         df_speech_only,
@@ -765,6 +780,9 @@ def perform_author_matching(speech_df, author_df, author_hist_df, context):
         constituency_matches_b,
         position_matches_a,
         position_matches_b,
+        author_periods,
+        ah_to_author_id,
+        context,
     )
 
     # 4. Analyze match rate

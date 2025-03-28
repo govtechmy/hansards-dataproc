@@ -14,6 +14,7 @@ def send_discord_message(
     fields: list,
     footer: dict,
     context,
+    description: str = None,
     deeplink=True,
 ):
 
@@ -39,6 +40,8 @@ def send_discord_message(
                 "inline": False,
             }
         )
+    if description:
+        message["embeds"][0]["description"] = description
 
     # Send the message to Discord
     response = requests.post(

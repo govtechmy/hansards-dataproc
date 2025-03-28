@@ -716,6 +716,7 @@ def process_tabulated(df_all: pd.DataFrame, house: str):
     df_all.level_2 = df_all.level_2.str.replace("\n", " ").str.strip()
     df_all.level_3 = df_all.level_3.str.replace("\n", " ").str.strip()
 
+    # Null out empty level headings
     df_all.level_1 = df_all.level_1.apply(lambda x: None if x == "" else x)
     df_all.level_2 = df_all.level_2.apply(lambda x: None if x == "" else x)
     df_all.level_3 = df_all.level_3.apply(lambda x: None if x == "" else x)
@@ -775,7 +776,7 @@ def speeches_to_json(df_sitting):
     for index, row in df_sitting.iterrows():
         speech_dict = {
             "speech": row["proc_speech"],
-            "author": row["author"],
+            "author": row["author"] if pd.notna(row["author"]) else None,
             "author_id": int(row["speaker"]) if pd.notna(row["speaker"]) else None,
             "timestamp": row["timestamp"],
             "is_annotation": row["is_annotation"],
@@ -838,8 +839,10 @@ def get_sitting_object(pdf_file_key: str):
     date = datetime.strptime(date_str, "%d%m%Y")
     proper_date_str = date.strftime("%Y-%m-%d")  # 2024-12-12
     original_filename = pdf_file_key + ".pdf"
-    renamed_filename = rename_pdf(pdf_file_key)  # DR-12122024 -> dr_2024-12-12.pdf
-    renamed_filename_key = f"{house_folder}/{renamed_filename}"
+    renamed_filename = rename_pdf(pdf_file_key)  # DR-12122024 -> dr_2024-12-12
+    renamed_filename_key = (
+        f"{house_folder}/{renamed_filename}.pdf"  # dewanrakyat/dr_2024-12-12.pdf
+    )
     return {
         "house": house,  # DR
         "house_folder": house_folder,  # dewanrakyat
@@ -848,6 +851,6 @@ def get_sitting_object(pdf_file_key: str):
         "proper_date_str": proper_date_str,  # 2024-12-12
         "date": date,
         "original_filename": original_filename,
-        "renamed_filename": renamed_filename,
-        "renamed_filename_key": renamed_filename_key,
+        "renamed_filename": renamed_filename,  # dr_2024-12-12
+        "renamed_filename_key": renamed_filename_key,  # dewanrakyat/dr_2024-12-12.pdf
     }
