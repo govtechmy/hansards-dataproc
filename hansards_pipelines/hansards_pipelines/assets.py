@@ -196,19 +196,7 @@ def scrape_website(context: AssetExecutionContext) -> List:
                     s3_key = f"{house_folder}/{pdf_name}"
                     full_s3_key = f"new/{s3_key}"
 
-                    # Step 1: Download and open PDF to determine is_final flag
-                    pdf_response = requests.get(pdf_url)
-                    pdf_response.raise_for_status()
-                    is_final = True
-                    with pdfplumber.open(BytesIO(pdf_response.content)) as pdf:
-                        for page in pdf.pages:
-                            text = page.extract_text()
-                            if text and ("naskhah belum disemak" in text.lower() or "naskhah belum semak" in text.lower()):
-                                context.log.info(f"{pdf_name} - Naskhah belum disemak: {page}")
-                                is_final = False
-                                break
-
-                    # Step 2: Check if file exists in S3 new/
+                    # Step 1: Check if file exists in S3 new/
                     exists_in_s3 = False
                     try:
                         s3_client.head_object(Bucket=S3_DATAPROC_BUCKET, Key=full_s3_key)
@@ -220,54 +208,93 @@ def scrape_website(context: AssetExecutionContext) -> List:
                         else:
                             raise
 
-                    # Step 3: Check if Dagster has already run
-                    base_pdf_name = pdf_name.split(".")[0]
-                    runs = context.instance.get_runs(
-                        filters=RunsFilter(
-                            tags={"dagster/partition": base_pdf_name},
-                            statuses=[
-                                DagsterRunStatus.STARTED,
-                                DagsterRunStatus.STARTING,
-                                DagsterRunStatus.QUEUED,
-                                DagsterRunStatus.SUCCESS,
-                                DagsterRunStatus.FAILURE,
-                            ],
-                        )
-                    )
-                    has_run = any(runs)
-
-                    # Step 4: Decide to upload or skip
-                    if not exists_in_s3 or is_final or not has_run:
-
-                        #  in S3 | is_final | has_run | action              |   desc
-                        #   X          X         X      upload              | 	New file. Not final. Upload & Parse
-                        #   X          /         X      upload              |   New file. Final. Upload & Parse
-                        #   /          X         /      skip                |   Old file. Not final. Skip
-                        #   /          /         /      re-upload           |   Old file. Final. Re-upload & Re-Parse
-                        #   /          /         X      upload              |   Old file. Final
-                        #   /          X         X      upload (optional)   |   Old file. Not final.
-
-                        # # new PDF: create new partition and upload to S3
-                        # pdf_response = requests.get(pdf_url)
-                        # pdf_response.raise_for_status()  # Raise an exception for HTTP errors
-                                
-                        # Upload the PDF to S3
-                        s3_client.put_object(
-                            Bucket=S3_DATAPROC_BUCKET,
-                            Key=full_s3_key,
-                            Body=pdf_response.content,
-                        )
-                        destination_path = (
-                            f"s3://{S3_DATAPROC_BUCKET}/{full_s3_key}"
-                        )
-                        context.log.info(
-                            f"Uploaded {pdf_name} to {destination_path}"
-                        )
-                        new_pdfs.append((pdf_name, s3_key, destination_path))
+                    if exists_in_s3:
+                        context.log.info(f"Skip {pdf_name} - Still in S3, hasn't completed ingestion. No need to upload again.")
+                        should_upload = False
                     else:
-                        context.log.info(
-                            f"Skipped {pdf_name} | is_final={is_final}, exists_in_s3={exists_in_s3}, has_run={has_run}"
+                        # Step 2: Download and open PDF to determine is_final_pdf flag
+                        pdf_response = requests.get(pdf_url, verify=False)
+                        pdf_response.raise_for_status()
+                        is_final_pdf = True
+                        with pdfplumber.open(BytesIO(pdf_response.content)) as pdf:
+                            for page in pdf.pages:
+                                text = page.extract_text()
+                                if text and ("naskhah belum disemak" in text.lower() or "naskhah belum semak" in text.lower()):
+                                    context.log.info(f"{pdf_name} - Naskhah belum disemak: {page}")
+                                    is_final_pdf = False
+                                    break
+
+                        # Step 3: Check if Dagster has already run
+                        base_pdf_name = pdf_name.split(".")[0]
+                        runs = context.instance.get_runs(
+                            filters=RunsFilter(
+                                tags={"dagster/partition": base_pdf_name},
+                                statuses=[
+                                    DagsterRunStatus.STARTED,
+                                    DagsterRunStatus.STARTING,
+                                    DagsterRunStatus.QUEUED,
+                                    DagsterRunStatus.SUCCESS,
+                                    DagsterRunStatus.FAILURE,
+                                ],
+                            )
                         )
+                        has_run = any(runs)
+
+                        # Step 4: Check DB is_final for this sitting 
+                        is_final_db = False                  
+                        try:
+                            proper_date = f"{date[4:]}-{date[2:4]}-{date[:2]}"  # DDMMYYYY -> YYYY-MM-DD
+                            house_sitting  = house_mapper.code_to_display(house.lower())
+                            api_url = f"{DEV_API_URL}/api/sitting/?house={house_sitting}&date={proper_date}"
+                            db_response = requests.get(api_url, timeout=15)
+                            if db_response.ok:               
+                                is_final_db = db_response.json().get("meta", {}).get("is_final", False)
+                            else:
+                                context.log.warning(f"API returned non-200 for {pdf_name}: {db_response.status_code} - {db_response.text}")
+                        except Exception as db_err:
+                            context.log.warning(f"DB check failed for {pdf_name}: {db_err}")
+
+                        # Step 5: Decide to upload or skip
+                        match (is_final_pdf, is_final_db, has_run):
+                            case (False, False, False):
+                                context.log.info(f"Upload {pdf_name} - Entirely new hansard")
+                                should_upload = True
+                            case (False, False, True):
+                                context.log.info(f"Skip {pdf_name} - Not final, completed ingestion (was not final)")
+                                should_upload = False
+                            case (False, True, True):
+                                context.log.info(f"Skip {pdf_name} - Not final, completed ingestion (was final) - shouldn't happen")
+                                should_upload = False
+                            case (True, False, True):
+                                context.log.info(f"Upload {pdf_name} - Final PDF, completed ingestion (was previously draft)")
+                                should_upload = True
+                            case (True, True, True):
+                                context.log.info(f"Skip {pdf_name} - Final PDF, completed ingestion (final) (unchanged)")
+                                should_upload = False
+                            case _:
+                                context.log.info(f"Skip {pdf_name} - Fallback unknown case combination by default")
+                                should_upload = False
+
+                            #  exists_in_s3 | is_final_pdf | is_final_db | has_run | action   | desc
+                            #       /                -            -           -      skip     | Hasn't completed ingestion
+                            #       X                X            X           X      upload   | Entirely new hansard
+                            #       X                X            X           /      skip     | Not final, completed ingestion (was not final)
+                            #       X                X            /           /      skip     | Not final, completed ingestion (was final) - shouldn't happen
+                            #       X                /            X           /      upload   | Final PDF, completed ingestion (was not final)
+                            #       X                /            /           /      skip     | Final PDF, completed ingestion (was final)
+                                
+                        if should_upload:
+                            # Upload the PDF to S3
+                            s3_client.put_object(
+                                Bucket=S3_DATAPROC_BUCKET,
+                                Key=full_s3_key,
+                                Body=pdf_response.content,
+                            )
+                            destination_path = (f"s3://{S3_DATAPROC_BUCKET}/{full_s3_key}")
+                            new_pdfs.append((pdf_name, s3_key, destination_path))
+                            context.log.info(f"Uploaded {pdf_name} to {destination_path} | exists_in_s3={exists_in_s3}, is_final_pdf={is_final_pdf}, is_final_db={is_final_db}, has_run={has_run}")
+                        else:
+                            context.log.info(f"Skipped {pdf_name} | exists_in_s3={exists_in_s3}, is_final_pdf={is_final_pdf}, is_final_db={is_final_db}, has_run={has_run}")
 
     if len(new_pdfs) > 0:
         context.log.info(f"New PDFs: {new_pdfs}")
@@ -286,7 +313,6 @@ def scrape_website(context: AssetExecutionContext) -> List:
     #         )
     #     ],
     # )
-
 
 @asset(group_name="scrape")
 def move_and_rename_all_hansards(
