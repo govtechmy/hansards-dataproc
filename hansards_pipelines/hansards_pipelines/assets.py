@@ -921,8 +921,6 @@ def prepare_db_payload(context: AssetExecutionContext):
     #     pickle.dump(sitting_payload, f)
 
     context.log.info(f"context.run.tags: {context.run.tags}")
-
-    context.log.info(f"context.run.tags: {context.run.tags}")
     return Output(
         sitting_payload,
         metadata={
