@@ -19,7 +19,6 @@ from tqdm import tqdm
 from pathlib import Path
 from hansards_pipelines.config import DEFAULT_DATA_DIR, BASE_PATH
 
-
 def not_invisible_rect(obj):
     if obj["object_type"] != "rect":
         return True
@@ -91,6 +90,7 @@ def parse_hansard(hansard_date, house, source_dir=DEFAULT_DATA_DIR, file_content
 
     doa_seen = False
     doa_idx = -1
+    is_final = True
     if file_content:
         # for pipeline run where the file is already read as BytesIO object
         pdf_file = file_content
@@ -102,6 +102,9 @@ def parse_hansard(hansard_date, house, source_dir=DEFAULT_DATA_DIR, file_content
         attn_text = ""
         for idx, page in enumerate(tqdm(pdf.pages)):
             extracted = page.extract_text()
+            if not doa_seen and ("naskhah belum disemak" in extracted.lower() or "naskhah belum semak" in extracted.lower()):
+                is_final = False
+                print("Naskhah belum disemak", page)
             if not doa_seen:
                 # extract attendance list before DOA section
                 if has_attendance and "ahli-ahli yang hadir" in extracted.lower():
@@ -194,7 +197,7 @@ def parse_hansard(hansard_date, house, source_dir=DEFAULT_DATA_DIR, file_content
 
     if file_content:
         # pipeline run, return the parsed content
-        return text, spaced_bold, spaced_italics, tables, attn_text
+        return text, spaced_bold, spaced_italics, tables, attn_text, is_final
     else:
         with open(str(dir_path / "plaintext.txt"), "w") as f:
             f.write(text)
@@ -207,6 +210,8 @@ def parse_hansard(hansard_date, house, source_dir=DEFAULT_DATA_DIR, file_content
         if has_attendance:
             with open(str(dir_path / "attendance.txt"), "w") as f:
                 f.write(attn_text)
+        with open(str(dir_path / "is_final.txt"), "w") as f:
+            f.write(str(is_final))
 
         # for global logging
         if tables:
