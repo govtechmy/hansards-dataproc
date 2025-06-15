@@ -237,8 +237,8 @@ def scrape_website(context: AssetExecutionContext) -> List:
                         is_final_pdf = True
                         with pdfplumber.open(BytesIO(pdf_response.content)) as pdf:
                             for page in pdf.pages:
-                                text = page.extract_text()
-                                if text and ("naskhah belum disemak" in text.lower() or "naskhah belum semak" in text.lower()):
+                                text = page.extract_text().lower()
+                                if text and ("naskhah belum disemak" in text or "naskhah belum semak" in text):
                                     context.log.info(f"{pdf_name} - Naskhah belum disemak: {page}")
                                     is_final_pdf = False
                                     break
