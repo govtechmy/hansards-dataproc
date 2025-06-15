@@ -28,6 +28,7 @@ from dotenv import load_dotenv
 from urllib.parse import urljoin
 from typing import List, Tuple, Dict
 from io import BytesIO
+import pdfplumber
 from datetime import datetime
 
 from hansards_pipelines.utils.text_utils import (
@@ -62,7 +63,7 @@ FRONTEND_TOKEN = os.getenv("FRONTEND_TOKEN")
 # main pipeline
 # 1. scrape from the website, push pdf to s3 hansards-new
 # 2. move and rename hansards-new to main raw hansards folder
-# 3. run parse_hansard (in: raw PDF, out: parsed_pdf folder - plaintext, bold, italics, tables, attendance.txt)
+# 3. run parse_hansard (in: raw PDF, out: parsed_pdf folder - plaintext, bold, italics, tables, attendance.txt, is_final.txt)
 # 4. run get_categories (in: parsed_pdf files, out: parsed_pdf folder - categories.json)
 # 5. [human IL] post parsing edits - human to add edits to py file based on warnings/errors, then rerun 3 and 4
 # 6. run pre_tabulate (in: parsed_pdf files, out: pretabulation folder - plaintext, bold, italics.txt files)
@@ -213,14 +214,36 @@ def scrape_website(context: AssetExecutionContext) -> List:
 
                     s3_key = f"{house_folder}/{pdf_name}"
                     full_s3_key = f"new/{s3_key}"
-                    # check s3 if file exists using the s3_client
+
+                    # Step 1: Check if file exists in S3 new/
+                    exists_in_s3 = False
                     try:
-                        s3_client.head_object(
-                            Bucket=S3_DATAPROC_BUCKET, Key=full_s3_key
-                        )
+                        s3_client.head_object(Bucket=S3_DATAPROC_BUCKET, Key=full_s3_key)
+                        exists_in_s3 = True
                         context.log.info(f"{s3_key} exists in {S3_DATAPROC_BUCKET}.")
                     except botocore.exceptions.ClientError as e:
-                        # doesn't exist in new/, check if already ingested
+                        if e.response["Error"]["Code"] == "404":
+                            context.log.info(f"S3 object not found: {full_s3_key}")
+                        else:
+                            raise
+
+                    if exists_in_s3:
+                        context.log.info(f"Skip {pdf_name} - Still in S3, hasn't completed ingestion. No need to upload again.")
+                        should_upload = False
+                    else:
+                        # Step 2: Download and open PDF to determine is_final_pdf flag
+                        pdf_response = requests.get(pdf_url, verify=False)
+                        pdf_response.raise_for_status()
+                        is_final_pdf = True
+                        with pdfplumber.open(BytesIO(pdf_response.content)) as pdf:
+                            for page in pdf.pages:
+                                text = page.extract_text().lower()
+                                if text and ("naskhah belum disemak" in text or "naskhah belum semak" in text):
+                                    context.log.info(f"{pdf_name} - Naskhah belum disemak: {page}")
+                                    is_final_pdf = False
+                                    break
+
+                        # Step 3: Check if Dagster has already run
                         base_pdf_name = pdf_name.split(".")[0]
                         runs = context.instance.get_runs(
                             filters=RunsFilter(
@@ -235,39 +258,62 @@ def scrape_website(context: AssetExecutionContext) -> List:
                             )
                         )
                         has_run = any(runs)
-                        if not has_run:
-                            # new PDF: create new partition and upload to S3
-                            try:
-                                pdf_response = session.get(
-                                    pdf_url, verify=verify_ssl, timeout=60
-                                )
-                                pdf_response.raise_for_status()  # Raise an exception for HTTP errors
-                            except requests.exceptions.SSLError as ssl_error:
-                                context.log.warning(
-                                    f"SSL verification failed for PDF {pdf_url}, retrying without verification: {ssl_error}"
-                                )
-                                pdf_response = session.get(
-                                    pdf_url, verify=False, timeout=60
-                                )
-                                pdf_response.raise_for_status()  # Raise an exception for HTTP errors
 
+                        # Step 4: Check DB is_final for this sitting 
+                        is_final_db = False                  
+                        try:
+                            proper_date = f"{date[4:]}-{date[2:4]}-{date[:2]}"  # DDMMYYYY -> YYYY-MM-DD
+                            house_sitting  = house_mapper.code_to_display(house.lower())
+                            api_url = f"{DEV_API_URL}/api/sitting/?house={house_sitting}&date={proper_date}"
+                            db_response = requests.get(api_url, timeout=15)
+                            if db_response.ok:               
+                                is_final_db = db_response.json().get("meta", {}).get("is_final", False)
+                            else:
+                                context.log.warning(f"API returned non-200 for {pdf_name}: {db_response.status_code} - {db_response.text}")
+                        except Exception as db_err:
+                            context.log.warning(f"DB check failed for {pdf_name}: {db_err}")
+
+                        # Step 5: Decide to upload or skip
+                        match (is_final_pdf, is_final_db, has_run):
+                            case (False, False, False):
+                                context.log.info(f"Upload {pdf_name} - Entirely new hansard")
+                                should_upload = True
+                            case (False, False, True):
+                                context.log.info(f"Skip {pdf_name} - Not final, completed ingestion (was not final)")
+                                should_upload = False
+                            case (False, True, True):
+                                context.log.info(f"Skip {pdf_name} - Not final, completed ingestion (was final) - shouldn't happen")
+                                should_upload = False
+                            case (True, False, True):
+                                context.log.info(f"Upload {pdf_name} - Final PDF, completed ingestion (was previously draft)")
+                                should_upload = True
+                            case (True, True, True):
+                                context.log.info(f"Skip {pdf_name} - Final PDF, completed ingestion (final) (unchanged)")
+                                should_upload = False
+                            case _:
+                                context.log.info(f"Skip {pdf_name} - Fallback unknown case combination by default")
+                                should_upload = False
+
+                            #  exists_in_s3 | is_final_pdf | is_final_db | has_run | action   | desc
+                            #       /                -            -           -      skip     | Hasn't completed ingestion
+                            #       X                X            X           X      upload   | Entirely new hansard
+                            #       X                X            X           /      skip     | Not final, completed ingestion (was not final)
+                            #       X                X            /           /      skip     | Not final, completed ingestion (was final) - shouldn't happen
+                            #       X                /            X           /      upload   | Final PDF, completed ingestion (was not final)
+                            #       X                /            /           /      skip     | Final PDF, completed ingestion (was final)
+                                
+                        if should_upload:
                             # Upload the PDF to S3
                             s3_client.put_object(
                                 Bucket=S3_DATAPROC_BUCKET,
                                 Key=full_s3_key,
                                 Body=pdf_response.content,
                             )
-                            destination_path = (
-                                f"s3://{S3_DATAPROC_BUCKET}/{full_s3_key}"
-                            )
-                            context.log.info(
-                                f"Uploaded {pdf_name} to {destination_path}"
-                            )
+                            destination_path = (f"s3://{S3_DATAPROC_BUCKET}/{full_s3_key}")
                             new_pdfs.append((pdf_name, s3_key, destination_path))
+                            context.log.info(f"Uploaded {pdf_name} to {destination_path} | exists_in_s3={exists_in_s3}, is_final_pdf={is_final_pdf}, is_final_db={is_final_db}, has_run={has_run}")
                         else:
-                            context.log.info(
-                                f"{base_pdf_name} run found, already ingested"
-                            )
+                            context.log.info(f"Skipped {pdf_name} | exists_in_s3={exists_in_s3}, is_final_pdf={is_final_pdf}, is_final_db={is_final_db}, has_run={has_run}")
 
     if len(new_pdfs) > 0:
         context.log.info(f"New PDFs: {new_pdfs}")
@@ -287,13 +333,13 @@ def scrape_website(context: AssetExecutionContext) -> List:
     #     ],
     # )
 
-
 @asset(group_name="scrape")
 def move_and_rename_all_hansards(
     context: AssetExecutionContext, scrape_website: List[Tuple[str, str, str]]
 ):
     """Move and rename all hansards from new/ to main downloads folder"""
     # New PDFs: [('DN-24032025.pdf', 'dewannegara/DN-24032025.pdf', 's3://hansards-dataproc-kd/new/dewannegara/DN-24032025.pdf')]
+
     for new_pdf, s3_key, destination_path in scrape_website:
         context.log.info(f"Moving and renaming {s3_key}")
 
@@ -318,7 +364,6 @@ def move_and_rename_all_hansards(
 
         context.log.info(f"Renamed and moved {s3_key} to {new_pdf_name}")
 
-
 @asset(
     partitions_def=sitting_partitions_def,
     # deps=[move_and_rename_hansards],
@@ -335,13 +380,16 @@ def dg_parse_hansard(context: AssetExecutionContext):
     pdf_response = s3_client.get_object(
         Bucket=S3_PUBLIC_BUCKET, Key=sitting_object["renamed_filename_key"]
     )
-    text, spaced_bold, spaced_italics, tables, attn_text = parse_hansard(
+    text, spaced_bold, spaced_italics, tables, attn_text, is_final = parse_hansard(
         sitting_object["date_str"],
         sitting_object["house"],
         "DEFAULT_DATA_DIR",
         file_content=BytesIO(pdf_response["Body"].read()),
     )
     # save to s3
+    s3_key = build_path("parsed_pdf", "is_final.txt", sitting_object)
+    s3_client.put_object(Bucket=S3_DATAPROC_BUCKET,Key=s3_key, Body=f"{is_final}\n")
+    context.log.info(f"Uploaded is_final.txt to {s3_key}")
     s3_key = build_path("parsed_pdf", "plaintext.txt", sitting_object)
     s3_client.put_object(Bucket=S3_DATAPROC_BUCKET, Key=s3_key, Body=text)
     context.log.info(f"Uploaded plaintext to {s3_key}")
@@ -359,7 +407,6 @@ def dg_parse_hansard(context: AssetExecutionContext):
         s3_key = build_path("parsed_pdf", "attendance.txt", sitting_object)
         s3_client.put_object(Bucket=S3_DATAPROC_BUCKET, Key=s3_key, Body=attn_text)
         context.log.info(f"Uploaded attendance to {s3_key}")
-
 
 @asset(
     partitions_def=sitting_partitions_def, deps=[dg_parse_hansard], group_name="parse"
@@ -831,6 +878,16 @@ def prepare_db_payload(context: AssetExecutionContext):
     df["date"] = sitting_object["proper_date_str"]
     df = process_tabulated(df, sitting_object["house"])
 
+    try:
+        s3_key = build_path("parsed_pdf", "is_final.txt", sitting_object)
+        is_final_obj = s3_client.get_object(Bucket=S3_DATAPROC_BUCKET, Key=s3_key)
+        is_final_content = is_final_obj["Body"].read().decode("utf-8").strip().lower()
+        is_final = is_final_content == "true"
+        context.log.info(f"'is_final': {is_final}")
+    except Exception as e:
+        context.log.warning(f"Could not load is_final.txt: {e}")
+        is_final = False
+        
     speeches_count = len(df)
     context.log.info(f"Preprocessing speech tokens: {speeches_count} speeches")
     df["speech_tokens"] = df.proc_speech.apply(lambda text: preprocess_malaya(text))
@@ -850,6 +907,13 @@ def prepare_db_payload(context: AssetExecutionContext):
     # )
 
     context.log.info(f"Start author matching")
+
+    context.log.info(
+    f"Sitting parsed: date={sitting_object['proper_date_str']}, "
+    f"filename={sitting_object['renamed_filename']}, "
+    f"is_final={is_final}, "
+    f"house={house_mapper.code_to_display(sitting_object['house'])}")
+
     response = requests.get(f"{DEV_API_URL}/api/author-history")
     response.raise_for_status()
     author_history = response.json()
@@ -892,7 +956,7 @@ def prepare_db_payload(context: AssetExecutionContext):
         "date": sitting_object["proper_date_str"],
         "filename": sitting_object["renamed_filename"],
         # "has_dataset": True,
-        # "is_final": True, # TODO: determine this
+        "is_final": is_final,
         "speech_data": json.dumps(speech_data),
         "house": house_mapper.code_to_display(sitting_object["house"]),
     }
