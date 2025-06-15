@@ -130,18 +130,28 @@ def scrape_website(context: AssetExecutionContext) -> List:
     # queue_url = "https://sqs.ap-southeast-1.amazonaws.com/761623003862/NewHansardsQueue"
 
     base_url = "https://www.parlimen.gov.my"
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+    }
+
+    # Configure requests session with SSL settings
+    session = requests.Session()
+    session.headers.update(headers)
+
+    # Try with verification first, fallback to no verification if needed
+    verify_ssl = True
 
     sources = [
         (
-            "https://www.parlimen.gov.my/hansard-dewan-rakyat.html?&uweb=dr&lang=bm&arkib=yes",
+            "https://www.parlimen.gov.my/hansard-dewan-rakyat.html?&uweb=dr&lang=bm",
             "dewanrakyat",
         ),
         (
-            "https://www.parlimen.gov.my/hansard-dewan-negara.html?&uweb=dn&lang=bm&arkib=yes",
+            "https://www.parlimen.gov.my/hansard-dewan-negara.html?&uweb=dn&lang=bm",
             "dewannegara",
         ),
         (
-            "https://www.parlimen.gov.my/hansard-dewan-khas.html?uweb=dr&arkib=yes",
+            "https://www.parlimen.gov.my/hansard-dewan-khas.html?uweb=dr",
             "kamarkhas",
         ),
     ]
@@ -151,9 +161,18 @@ def scrape_website(context: AssetExecutionContext) -> List:
 
         source_url = source[0]
         house_folder = source[1]
-        # Send a request to the base URL
-        response = requests.get(source_url)
-        response.raise_for_status()  # Raise an exception for HTTP errors
+        # Send a request to the base URL with SSL handling
+        try:
+            response = session.get(source_url, verify=verify_ssl, timeout=300)
+            response.raise_for_status()  # Raise an exception for HTTP errors
+        except requests.exceptions.SSLError as ssl_error:
+            context.log.warning(
+                f"SSL verification failed for {source_url}, retrying without verification: {ssl_error}"
+            )
+            # Fallback to no SSL verification
+            response = session.get(source_url, verify=False, timeout=30)
+            response.raise_for_status()  # Raise an exception for HTTP errors
+            verify_ssl = False  # Update for subsequent requests
 
         # Parse the HTML content
         soup = BeautifulSoup(response.text, "html.parser")
