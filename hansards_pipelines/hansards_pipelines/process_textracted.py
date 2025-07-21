@@ -42,6 +42,10 @@ class SimpleLogger:
     log = Log()
 
 def parse_timestamp(txt):
+
+    if txt.startswith(("DN.", "DR.")):  # DN.28.11.2002
+        return None
+    
     m = ts_search.search(txt)
     if not m:
         return None
@@ -51,13 +55,21 @@ def parse_timestamp(txt):
 
     # Interpret time
     if per in ['ptg', 'petang', 'mlm', 'tgh', 'tengah hari', 'p.m.', 'pm', 'p.m']:
-        h = (h % 12) + 12
+        if h != 12:
+            h += 12
     elif per in ['a.m.', 'am', 'a.m', 'pagi']:
-        h = h % 12
+        if h == 12:
+            h = 0
     else:
         # Fallback to afternoon if hour < 8 (likely typo/missing) bcs sittings dont usually happen before office hour.
         if h < 8:
             h += 12
+
+    if not (0 <= h <= 23 and 0 <= mnt <= 59):
+        print(f"❌ Invalid time parsed from text: '{txt}' -> hour: {h}, minute: {mnt}")
+        return None
+
+    print(f"Found timestamp: {txt} - hour: {h}, minute: {mnt}")
     return time(h, mnt)
 
 def extract_toc_block(df, fallback_max_lines=30):
@@ -158,7 +170,10 @@ def process_layout(df, toc_df):
 
     # Detect timestamp BEFORE DOA
     pre = df.loc[:doai] if not pd.isna(doai) else df
-    init_ts_row = pre[pre['clean'].str.contains(ts_search)].head(1)
+
+    # Filter all rows that actually parse into a valid time
+    valid_ts_rows = pre[pre['clean'].apply(lambda x: parse_timestamp(x) is not None)]
+    init_ts_row = valid_ts_rows.head(1)
 
     ts_init = None
     if not init_ts_row.empty:
