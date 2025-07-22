@@ -472,7 +472,7 @@ def run_batch(prefix, start_year, end_year):
             print(f" - {f}")
 
 def process_and_insert(prefix, key, date_str):
-    s3 = boto3.client("s3")
+    s3 = boto3.client("s3", config=Config(signature_version=UNSIGNED))
     print(f"\n==== PROCESSING: {key}")
     obj = s3.get_object(Bucket=S3_BUCKET, Key=key)
     df = pd.read_csv(BytesIO(obj["Body"].read()))
@@ -512,8 +512,7 @@ def process_and_insert(prefix, key, date_str):
     insert_to_db(payload)
 
 def process_from_processed_csv(prefix, date_str, insert=False):
-    # s3 = boto3.client("s3")
-    s3 = boto3.client("s3")
+    s3 = boto3.client("s3", config=Config(signature_version=UNSIGNED))
     key = f"processed/{prefix}/dn_{date_str}.csv"
     print(f"\n📄 Loading processed speech CSV from: {key}")
 
