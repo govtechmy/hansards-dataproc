@@ -9,8 +9,8 @@ from dotenv import load_dotenv
 from io import BytesIO
 from datetime import datetime, time
 from difflib import SequenceMatcher
-from hansards_pipelines.author_matching import perform_author_matching
-from hansards_pipelines.utils.text_utils import house_mapper, preprocess_malaya, get_sitting_object
+from author_matching import perform_author_matching
+from utils.text_utils import house_mapper, preprocess_malaya, get_sitting_object
 import warnings
 from botocore import UNSIGNED
 from botocore.config import Config
@@ -554,3 +554,5 @@ if __name__ == "__main__":
 # python process_textracted.py --prefix dewannegara --start-year 1991 --end-year 1991
 # python process_textracted.py --prefix dewannegara --filename dn_1991-02-18_layout.csv
 # python process_textracted.py --prefix dewannegara --processed-date 1991-02-18 --insert
+
+
