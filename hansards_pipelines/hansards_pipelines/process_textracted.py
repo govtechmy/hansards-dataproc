@@ -15,6 +15,7 @@ import warnings
 from botocore import UNSIGNED
 from botocore.config import Config
 
+
 warnings.filterwarnings("ignore", category=FutureWarning)
 warnings.filterwarnings("ignore", message="This pattern is interpreted as a regular expression, and has match groups.*")
 
@@ -428,10 +429,11 @@ def insert_to_db(payload):
 
 
 def run_batch(prefix, start_year, end_year):
-    s3 = boto3.client("s3")
+    s3 = boto3.client("s3", config=Config(signature_version=UNSIGNED))
     paginator = s3.get_paginator("list_objects_v2")
     pages = paginator.paginate(Bucket=S3_BUCKET, Prefix=f"{prefix}/")
 
+    all_files = []
     for page in pages:
         for obj in page.get("Contents", []):
             key = obj["Key"]
@@ -443,7 +445,31 @@ def run_batch(prefix, start_year, end_year):
             date_str = date_match.group(1)
             year = int(date_str[:4])
             if start_year <= year <= end_year:
-                process_and_insert(prefix, key, date_str)
+                all_files.append((key, date_str))
+
+    print(f"\nRUNNING BATCH.. Total CSVs to process: {len(all_files)}")
+
+    success_count = 0
+    fail_count = 0
+    failed_files = []
+
+    for key, date_str in all_files:
+        try:
+            process_and_insert(prefix, key, date_str)
+            success_count += 1
+        except Exception as e:
+            print(f"❌ Failed processing {key}: {e}")
+            failed_files.append(key)
+            fail_count += 1
+
+    print("\n========== PROCESS SUMMARY ==========")
+    print(f"Total files found: {len(all_files)}")
+    print(f" Successful     : {success_count}")
+    print(f" Failed         : {fail_count}")
+    if failed_files:
+        print("\n Failed Files:")
+        for f in failed_files:
+            print(f" - {f}")
 
 def process_and_insert(prefix, key, date_str):
     s3 = boto3.client("s3")
