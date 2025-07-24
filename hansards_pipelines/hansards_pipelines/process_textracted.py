@@ -457,22 +457,39 @@ def run_batch(prefix, start_year, end_year):
     success_count = 0
     fail_count = 0
     failed_files = []
+    skip_count = 0
+    skipped_files = []
 
     for key, date_str in all_files:
         try:
             process_and_insert(prefix, key, date_str)
             success_count += 1
+        except ValueError as ve:
+            if str(ve) == "SKIPPED_NO_SPEECH":
+                skipped_files.append(key)
+                skip_count += 1
+                print(f"⚠️ SKIPPED (no speech): {key}")
+            else:
+                print(f"❌ Failed with ValueError: {key} - {ve}")
+                failed_files.append(key)
+                fail_count += 1
         except Exception as e:
             print(f"❌ Failed processing {key}: {e}")
             failed_files.append(key)
             fail_count += 1
 
     print("\n========== PROCESS SUMMARY ==========")
-    print(f"Total files found: {len(all_files)}")
-    print(f" Successful     : {success_count}")
-    print(f" Failed         : {fail_count}")
+    print(f"Total files found  : {len(all_files)}")
+    print(f" Successful      : {success_count}")
+    print(f" Skipped (no speech): {skip_count}")
+    print(f" Failed          : {fail_count}")
+
+    if skipped_files:
+        print("\n⚠️ Skipped Files:")
+        for f in skipped_files:
+            print(f" - {f}")
     if failed_files:
-        print("\n Failed Files:")
+        print("\n❌ Failed Files:")
         for f in failed_files:
             print(f" - {f}")
 
@@ -499,7 +516,7 @@ def process_and_insert(prefix, key, date_str):
 
     if df_speech.empty:
         print(f"⚠️ Skipping {key} - No speech content parsed from PDF. Skip upload to S3 & skip prepare_db_payload process.")
-        return
+        raise ValueError("SKIPPED_NO_SPEECH")
     
     buffer = BytesIO()
 
