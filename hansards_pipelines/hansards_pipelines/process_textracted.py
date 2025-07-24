@@ -15,6 +15,11 @@ import warnings
 from botocore import UNSIGNED
 from botocore.config import Config
 
+import boto3
+import botocore
+session = boto3.Session()
+credentials = session.get_credentials().get_frozen_credentials()
+
 
 warnings.filterwarnings("ignore", category=FutureWarning)
 warnings.filterwarnings("ignore", message="This pattern is interpreted as a regular expression, and has match groups.*")
@@ -429,7 +434,7 @@ def insert_to_db(payload):
 
 
 def run_batch(prefix, start_year, end_year):
-    s3 = boto3.client("s3", config=Config(signature_version=UNSIGNED))
+    s3 = session.client("s3")
     paginator = s3.get_paginator("list_objects_v2")
     pages = paginator.paginate(Bucket=S3_BUCKET, Prefix=f"{prefix}/")
 
@@ -472,9 +477,10 @@ def run_batch(prefix, start_year, end_year):
             print(f" - {f}")
 
 def process_and_insert(prefix, key, date_str):
-    s3 = boto3.client("s3", config=Config(signature_version=UNSIGNED))
+    s3 = session.client("s3")
     print(f"\n==== PROCESSING: {key}")
     obj = s3.get_object(Bucket=S3_BUCKET, Key=key)
+
     df = pd.read_csv(BytesIO(obj["Body"].read()))
 
     df.columns = [c.strip().strip("'").strip() for c in df.columns]
@@ -512,7 +518,7 @@ def process_and_insert(prefix, key, date_str):
     insert_to_db(payload)
 
 def process_from_processed_csv(prefix, date_str, insert=False):
-    s3 = boto3.client("s3", config=Config(signature_version=UNSIGNED))
+    s3 = session.client("s3")
     key = f"processed/{prefix}/dn_{date_str}.csv"
     print(f"\n📄 Loading processed speech CSV from: {key}")
 
