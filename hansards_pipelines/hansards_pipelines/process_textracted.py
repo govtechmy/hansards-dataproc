@@ -37,6 +37,14 @@ period = re.compile(r'\b(ptg|petang|pagi|tgh|tengah hari|mlm|a\.?m\.?|p\.?m\.?)\
 TOC_KEYWORDS = ['KANDUNGAN', 'CONTENTS', 'KANDONGAN']
 DOA_KEYWORDS = ['DOA', 'DOA PENDAHULUAN', 'DUA', "DO'A", "PRAYERS", "PRAYER"]
 
+# Override for problematic files. Map -  filename : custom DOA keyword
+DOA_KEYWORDS_OVERRIDE = {
+    "dr_1959-09-11_layout.csv": "OPENING OF PARLIA",
+    "dn_1959-09-11_layout.csv": "OPENING OF THE",
+    "dn_1959-12-05_layout.csv": "ADMINISTRATION OF",
+    "dn_1961-01-07_layout.csv" :"Bukit Bintang",
+}
+
 class SimpleLogger:
     class Log:
         def info(self, msg):
@@ -78,14 +86,19 @@ def parse_timestamp(txt):
     print(f"Found timestamp: {txt} - hour: {h}, minute: {mnt}")
     return time(h, mnt)
 
-def extract_toc_block(df, fallback_max_lines=30):
+def extract_toc_block(df, filename=None, fallback_max_lines=30):
     toc_df = df[~df['layout'].isin(['Header', 'Footer'])].copy()
     toc_df['txt'] = toc_df['text'].fillna('').astype(str)
 
     # Get index of first 'DOA'
     doa_idx = pd.NA
+    doa_keywords = DOA_KEYWORDS.copy()
 
-    for keyword in DOA_KEYWORDS:
+    if filename and filename in DOA_KEYWORDS_OVERRIDE:
+        doa_keywords.insert(0, DOA_KEYWORDS_OVERRIDE[filename])
+        print(f"⚠️ Overriding DOA keywords for {filename}: using '{DOA_KEYWORDS_OVERRIDE[filename]}'")
+
+    for keyword in doa_keywords:
         match = df[df['text'].str.contains(fr'\b{re.escape(keyword)}\b', case=True, na=False)]
         if not match.empty:
             doa_idx = match.index.min()
@@ -103,7 +116,7 @@ def extract_toc_block(df, fallback_max_lines=30):
     for keyword in TOC_KEYWORDS:
         match_idx = pre_doa_df[pre_doa_df['txt'].str.contains(fr'\b{keyword}\b', case=True, na=False)].index.min()
         if not pd.isna(match_idx):
-            print(f"✅ Found TOC keyword: '{keyword}' at line {doa_idx}")
+            print(f"✅ Found TOC keyword: '{keyword}' at line {match_idx}")
             kandungan_idx = match_idx
             break
 
@@ -157,13 +170,17 @@ def extract_toc_block(df, fallback_max_lines=30):
 
     return toc_out
 
-def process_layout(df, toc_df):
+def process_layout(df, toc_df, filename=None):
     df['is_timestamp'] = df['clean'].str.match(ts_full)
     df['is_speaker'] = df['clean'].str.contains(r'^.{3,}?:', regex=True)
-    # doai = df[df['clean'].str.upper().str.contains(r'\bDOA\b')].index.min()
-    
+
+    doa_keywords = DOA_KEYWORDS.copy()
+    if filename and filename in DOA_KEYWORDS_OVERRIDE:
+        doa_keywords.insert(0, DOA_KEYWORDS_OVERRIDE[filename])
+        print(f"⚠️ Overriding DOA keywords for {filename}: using '{DOA_KEYWORDS_OVERRIDE[filename]}'")
+
     doai = pd.NA
-    for keyword in DOA_KEYWORDS:
+    for keyword in doa_keywords:
         match = df[df['text'].str.contains(fr'\b{re.escape(keyword)}\b', case=True, na=False)]
         if not match.empty:
             doai = match.index.min()
@@ -511,8 +528,8 @@ def process_and_insert(prefix, key, date_str):
     df = df[~df['layout'].str.contains('Page', case=False, na=False)]
     df['clean'] = df['text'].fillna('').str.strip()
 
-    toc_df = extract_toc_block(df)
-    df_speech = process_layout(df, toc_df)
+    toc_df = extract_toc_block(df, filename=key.split("/")[-1])
+    df_speech = process_layout(df, toc_df, filename=key.split("/")[-1])
 
     if df_speech.empty:
         print(f"⚠️ Skipping {key} - No speech content parsed from PDF. Skip upload to S3 & skip prepare_db_payload process.")
