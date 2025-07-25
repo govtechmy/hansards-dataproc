@@ -519,24 +519,27 @@ def process_and_insert(prefix, key, date_str):
         raise ValueError("SKIPPED_NO_SPEECH")
     
     buffer = BytesIO()
+    df_speech.to_csv(buffer, index=False)
+    buffer.seek(0)
 
     # store raw processed file
-    df_speech.to_csv(buffer, index=False)
-    s3.put_object(Bucket=S3_BUCKET, Key=f"processed/{prefix}/dn_{date_str}.csv", Body=buffer.getvalue())
-    print(f"\n✅ Saved to processed/{prefix}/dn_{date_str}.csv")
-    
+    pdf_key = f"{house_mapper.to_code(prefix).upper()}-{datetime.strptime(date_str, '%Y-%m-%d').strftime('%d%m%Y')}"
+    sitting_obj = get_sitting_object(pdf_key)
+    s3_key = f"processed/{prefix}/{sitting_obj['renamed_filename']}.csv"
+    s3.put_object(Bucket=S3_BUCKET, Key=s3_key, Body=buffer.getvalue())
+    print(f"\n✅ Saved to {s3_key}")
+
     # final processed file with matched author name (no need to store in S3. its stored in DB)
     df_speech, payload = prepare_db_payload(df_speech, prefix, date_str)
-    # df_speech.to_csv(buffer, index=False)
-    # s3.put_object(Bucket=S3_BUCKET, Key=f"finalprocessed/{prefix}/dn_{date_str}.csv", Body=buffer.getvalue())
-    # print(f"✅ Saved to finalprocessed/{prefix}/dn_{date_str}.csv")
 
     print("\nInserting payload to DB ...")
     insert_to_db(payload)
 
 def process_from_processed_csv(prefix, date_str, insert=False):
     s3 = session.client("s3")
-    key = f"processed/{prefix}/dn_{date_str}.csv"
+    pdf_key = f"{house_mapper.to_code(prefix).upper()}-{datetime.strptime(date_str, '%Y-%m-%d').strftime('%d%m%Y')}"
+    sitting_obj = get_sitting_object(pdf_key)
+    key = f"processed/{prefix}/{sitting_obj['renamed_filename']}.csv"
     print(f"\n📄 Loading processed speech CSV from: {key}")
 
     obj = s3.get_object(Bucket=S3_BUCKET, Key=key)
