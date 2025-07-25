@@ -71,6 +71,14 @@ DOA_KEYWORDS_OVERRIDE = {
     "dr_1994-11-23_layout.csv" : "BENTARA MESYUARAT",
 }
 
+# Override for problematic files. Map -  filename : custom DOA keyword
+DOA_KEYWORDS_OVERRIDE = {
+    "dr_1959-09-11_layout.csv": "OPENING OF PARLIA",
+    "dn_1959-09-11_layout.csv": "OPENING OF THE",
+    "dn_1959-12-05_layout.csv": "ADMINISTRATION OF",
+    "dn_1961-01-07_layout.csv" :"Bukit Bintang",
+}
+
 class SimpleLogger:
     class Log:
         def info(self, msg):
