@@ -35,7 +35,7 @@ ts_search = re.compile(r'(\d{1,2})\.(\d{2})', re.IGNORECASE)
 period = re.compile(r'\b(ptg|petang|pagi|tgh|tengah hari|mlm|a\.?m\.?|p\.?m\.?)\b', re.IGNORECASE)
 
 TOC_KEYWORDS = ['KANDUNGAN', 'CONTENTS', 'KANDONGAN']
-DOA_KEYWORDS = ['DOA', 'DOA PENDAHULUAN', 'DUA', "DO'A", "PRAYERS", "PRAYER"]
+DOA_KEYWORDS = ['DOA', 'DOA PENDAHULUAN', 'DUA', "DO'A", "PRAYERS", "PRAYER", "D OA", "D0A"]
 
 # Override for problematic files. Map -  filename : custom DOA keyword
 DOA_KEYWORDS_OVERRIDE = {
@@ -43,6 +43,22 @@ DOA_KEYWORDS_OVERRIDE = {
     "dn_1959-09-11_layout.csv": "OPENING OF THE",
     "dn_1959-12-05_layout.csv": "ADMINISTRATION OF",
     "dn_1961-01-07_layout.csv" :"Bukit Bintang",
+    "dn_1996-12-11_layout.csv" : "MENGANGKAT SUMPAH",
+    "dn_1992-08-12_layout.csv" : "JAWAPAN-JAWAPAN MULUT BAGI PERTANYAAN-PERTANYAAN",
+    "dn_1992-06-04_layout.csv" : "JAWAPAN-JAWAPAN MULUT BAGI PERTANYAAN-PERTANYAAN",
+    "dn_1991-08-05_layout.csv" : "MENGANGKAT SUMPAH",
+    "dn_1991-08-06_layout.csv" : "JAWAPAN-JAWAPAN MULUT BAGI PERTANYAAN-PERTANYAAN",
+    "dr_2004-05-24_layout.csv" : "MENGANGKAT SUMPAH",
+    "dr_2004-07-19_layout.csv" : "JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN",
+    "dr_2003-10-23_layout.csv" : "JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN",
+    "dr_2002-09-20_layout.csv" : "RANG UNDANG-UNDANG",
+    "dr_2001-04-11_layout.csv" : "JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN",
+    "dr_2001-05-08_layout.csv" : "mempengerusikan Mesyuarat",
+    "dr_2001-05-02_layout.csv" : "JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN",
+    "dr_2000-04-12_layout.csv" : "JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN",
+    "dr_2000-03-06_layout.csv" : "JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN",
+    "dr_2000-11-07_layout.csv" : "mempengerusikan Mesyuarat",
+
 }
 
 class SimpleLogger:
