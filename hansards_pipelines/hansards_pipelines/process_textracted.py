@@ -34,8 +34,8 @@ ts_search = re.compile(r'(\d{1,2})\.(\d{2})', re.IGNORECASE)
 
 period = re.compile(r'\b(ptg|petang|pagi|tgh|tengah hari|mlm|a\.?m\.?|p\.?m\.?)\b', re.IGNORECASE)
 
-TOC_KEYWORDS = ['KANDUNGAN', 'CONTENTS', 'KANDONGAN','KANDUNGANNYA']
-DOA_KEYWORDS = ['DOA', 'DOA PENDAHULUAN', 'DUA', "DO'A", "PRAYERS", "PRAYER", "DO A", "JAWAPAN-JAWAPAN MULUT BAGI PERTANYAAN-PERTANYAAN"]
+TOC_KEYWORDS = ['KANDUNGAN', 'CONTENTS', 'KANDONGAN']
+DOA_KEYWORDS = ['DOA', 'DOA PENDAHULUAN', 'DUA', "DO'A", "PRAYERS", "PRAYER"]
 
 # Override for problematic files. Map -  filename : custom DOA keyword
 DOA_KEYWORDS_OVERRIDE = {
@@ -43,6 +43,9 @@ DOA_KEYWORDS_OVERRIDE = {
     "dn_1959-09-11_layout.csv": "OPENING OF THE",
     "dn_1959-12-05_layout.csv": "ADMINISTRATION OF",
     "dn_1961-01-07_layout.csv" :"Bukit Bintang",
+    "dn_1988-03-30_layout.csv": "JAWAPAN-JAWAPAN MULUT BAGI PERTANYAAN-PERTANYAAN",
+    "dn_1983-08-10_layout.csv": "JAWAPAN-JAWAPAN MULUT BAGI PERTANYAAN-PERTANYAAN",
+    "dr_1990-06-15_layout.csv": "DO A",
 }
 
 class SimpleLogger:
