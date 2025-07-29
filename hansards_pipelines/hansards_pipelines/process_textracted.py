@@ -58,7 +58,9 @@ DOA_KEYWORDS_OVERRIDE = {
     "dr_2000-04-12_layout.csv" : "JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN",
     "dr_2000-03-06_layout.csv" : "JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN",
     "dr_2000-11-07_layout.csv" : "mempengerusikan Mesyuarat",
-
+    "dr_1993-10-18_layout.csv" : "BENTARA MESYUARAT",
+    "dr_1993-07-29_layout.csv" : "BENTARA MESYUARAT",
+    "dr_1994-11-23_layout.csv" : "BENTARA MESYUARAT",
 }
 
 class SimpleLogger:
