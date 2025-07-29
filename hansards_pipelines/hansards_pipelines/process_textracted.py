@@ -34,8 +34,8 @@ ts_search = re.compile(r'(\d{1,2})\.(\d{2})', re.IGNORECASE)
 
 period = re.compile(r'\b(ptg|petang|pagi|tgh|tengah hari|mlm|a\.?m\.?|p\.?m\.?)\b', re.IGNORECASE)
 
-TOC_KEYWORDS = ['KANDUNGAN', 'CONTENTS', 'KANDONGAN']
-DOA_KEYWORDS = ['DOA', 'DOA PENDAHULUAN', 'DUA', "DO'A", "PRAYERS", "PRAYER"]
+TOC_KEYWORDS = ['KANDUNGAN', 'CONTENTS', 'KANDONGAN','KANDUNGANNYA']
+DOA_KEYWORDS = ['DOA', 'DOA PENDAHULUAN', 'DUA', "DO'A", "PRAYERS", "PRAYER", "DO A", "JAWAPAN-JAWAPAN MULUT BAGI PERTANYAAN-PERTANYAAN"]
 
 # Override for problematic files. Map -  filename : custom DOA keyword
 DOA_KEYWORDS_OVERRIDE = {
