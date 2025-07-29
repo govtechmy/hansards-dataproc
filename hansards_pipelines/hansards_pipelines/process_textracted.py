@@ -43,6 +43,12 @@ DOA_KEYWORDS_OVERRIDE = {
     "dn_1959-09-11_layout.csv": "OPENING OF THE",
     "dn_1959-12-05_layout.csv": "ADMINISTRATION OF",
     "dn_1961-01-07_layout.csv" :"Bukit Bintang",
+    "dn_1963-12-28_layout.csv" :"BILL",
+    "dr_1974-11-20_layout.csv" :"PEMASYHURAN YANG DI-PERTUA",
+    "dn_1966-06-14_layout.csv" :"PRESENTATION OF MACE TO THE SENATE",
+    "dr_1964-05-18_layout.csv" :"OPENING OF PARLIAMENT",
+    "dr_1964-12-15_layout.csv" :"ORAL ANSWERS TO QUESTIONS",
+
 }
 
 class SimpleLogger:
