@@ -53,15 +53,15 @@ def csv_exists(s3_key):
             return False
         raise
 
-def process_csv(s3_key):
+def process_csv(s3_key, overwrite=False):
     """
     Copy CSVs S3_TEXTRACT_BUCKET/processed/prefix to S3_PUBLIC_BUCKET/prefix.
-    Skip if already exists.
+    Skip if already exists, unless everwrite is enabled.
     """
     prefix = s3_key.split("/")[1]
     dest_key = f"{prefix}/{os.path.basename(s3_key)}"
 
-    if csv_exists(dest_key):
+    if not overwrite and csv_exists(dest_key):
         print(f"✅ {dest_key} already exists in public bucket, skipping.")
         return
 
@@ -72,7 +72,7 @@ def process_csv(s3_key):
     }
     s3.copy(copy_source, S3_PUBLIC_BUCKET, dest_key)
 
-def run(prefix, year_range):
+def run(prefix, year_range, overwrite=False):
     csvs = list_csvs(f"processed/{prefix}/", year_range)
     print(f"\nTotal CSVs found for `{prefix}` from {year_range[0]}-{year_range[1]}: {len(csvs)}")
     for csv in csvs:
@@ -87,6 +87,7 @@ if __name__ == "__main__":
     parser.add_argument("--filename", help="Single CSV filename (e.g. 2001-03-20.csv) to process under the prefix")
     parser.add_argument("--start-year", type=int, help="Start year for filtering")
     parser.add_argument("--end-year", type=int, help="End year for filtering")
+    parser.add_argument("--insert", action="store_true", help="Allow overwriting existing files")
 
     args = parser.parse_args()
 
@@ -95,7 +96,7 @@ if __name__ == "__main__":
         print(f"Running single file:")
         print(f"- S3 Key: {s3_key}")
         print(f"\nChecking CSVs status:")
-        process_csv(s3_key)
+        process_csv(s3_key, overwrite=args.insert)
 
     else:
         if args.start_year is None or args.end_year is None:
@@ -110,3 +111,4 @@ if __name__ == "__main__":
 
 # python trasnfer_textracted.py --prefix dewannegara --start-year 1991 --end-year 1991
 # python transfer_textracted.py --prefix dewannegara --filename dn_1959-09-12.csv
+# python transfer_textracted.py --prefix dewannegara --filename dn_1959-09-12.csv --insert
