@@ -5,8 +5,6 @@ import argparse
 import concurrent.futures
 
 from botocore.exceptions import ClientError
-from textractor import Textractor
-from textractor.data.constants import TextractFeatures
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -21,7 +19,6 @@ S3_TEXTRACT_BUCKET = os.getenv("S3_TEXTRACT_BUCKET")
 # === AWS Setup ===
 session   = boto3.Session(region_name=REGION)
 s3        = session.client("s3")
-extractor = Textractor(region_name=REGION)
 
 def list_csvs(prefix, year_range):
     """
@@ -56,7 +53,8 @@ def csv_exists(s3_key):
 def process_csv(s3_key, overwrite=False):
     """
     Copy CSVs S3_TEXTRACT_BUCKET/processed/prefix to S3_PUBLIC_BUCKET/prefix.
-    Skip if already exists, unless everwrite is enabled.
+    Skip if already exists, unless overwrite is enabled.
+    If copy is successful, delete the original file from S3_TEXTRACT_BUCKET.
     """
     prefix = s3_key.split("/")[1]
     dest_key = f"{prefix}/{os.path.basename(s3_key)}"
@@ -64,13 +62,22 @@ def process_csv(s3_key, overwrite=False):
     if not overwrite and csv_exists(dest_key):
         print(f"✅ {dest_key} already exists in public bucket, skipping.")
         return
-
-    print(f"📤 Copying {s3_key} to s3://{S3_PUBLIC_BUCKET}/{dest_key} ...")
-    copy_source = {
-        "Bucket": S3_TEXTRACT_BUCKET,
-        "Key": s3_key
-    }
-    s3.copy(copy_source, S3_PUBLIC_BUCKET, dest_key)
+    try:
+        print(f"📤 Copying {s3_key} to s3://{S3_PUBLIC_BUCKET}/{dest_key} ...")
+        copy_source = {
+            "Bucket": S3_TEXTRACT_BUCKET,
+            "Key": s3_key
+        }
+        s3.copy(copy_source, S3_PUBLIC_BUCKET, dest_key)
+        print(f"✅ Successfully copied {s3_key}")
+    
+        s3.delete_object(Bucket=S3_TEXTRACT_BUCKET, Key=s3_key)
+        print(f"🗑️ Deleted {s3_key} from textract bucket")
+    
+    except ClientError as e:
+        print(f"❌ Failed to copy {s3_key}: {e.response['Error']['Message']}")
+    except Exception as e:
+        print(f"❌ Unexpected error while copying {s3_key}: {e}")
 
 def run(prefix, year_range, overwrite=False):
     csvs = list_csvs(f"processed/{prefix}/", year_range)
@@ -79,7 +86,7 @@ def run(prefix, year_range, overwrite=False):
         print(csv)
     print("\nChecking CSVs status:")
     with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_CONCURRENT_JOBS) as ex:
-        ex.map(process_csv, csvs)
+        ex.map(lambda key: process_csv(key, overwrite=overwrite), csvs)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Batch extract layout.csv using AWS Textract LAYOUT")
@@ -87,7 +94,7 @@ if __name__ == "__main__":
     parser.add_argument("--filename", help="Single CSV filename (e.g. 2001-03-20.csv) to process under the prefix")
     parser.add_argument("--start-year", type=int, help="Start year for filtering")
     parser.add_argument("--end-year", type=int, help="End year for filtering")
-    parser.add_argument("--insert", action="store_true", help="Allow overwriting existing files")
+    parser.add_argument("--overwrite", action="store_true", help="Allow overwriting existing files")
 
     args = parser.parse_args()
 
@@ -96,7 +103,7 @@ if __name__ == "__main__":
         print(f"Running single file:")
         print(f"- S3 Key: {s3_key}")
         print(f"\nChecking CSVs status:")
-        process_csv(s3_key, overwrite=args.insert)
+        process_csv(s3_key, overwrite=args.overwrite)
 
     else:
         if args.start_year is None or args.end_year is None:
@@ -105,10 +112,11 @@ if __name__ == "__main__":
         print(f"Running batch:")
         print(f"- Prefix:     {args.prefix}")
         print(f"- Year range: {args.start_year}-{args.end_year}")
-        run(args.prefix, (args.start_year, args.end_year))
+        run(args.prefix, (args.start_year, args.end_year), overwrite=args.overwrite)
 
     print("\nDone.")
 
-# python trasnfer_textracted.py --prefix dewannegara --start-year 1991 --end-year 1991
+# python transfer_textracted.py --prefix dewannegara --start-year 1991 --end-year 1991
+# python transfer_textracted.py --prefix dewannegara --start-year 1991 --end-year 1991 --overwrite
 # python transfer_textracted.py --prefix dewannegara --filename dn_1959-09-12.csv
-# python transfer_textracted.py --prefix dewannegara --filename dn_1959-09-12.csv --insert
+# python transfer_textracted.py --prefix dewannegara --filename dn_1959-09-12.csv --overwrite
