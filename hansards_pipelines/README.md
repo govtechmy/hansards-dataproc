@@ -10,6 +10,11 @@ First, install your Dagster code location as a Python package. By using the --ed
 pip install -e ".[dev]"
 ```
 
+Download NLTK "stopwords" dataset so your code can use common word filters like "the", "is", "and" during text processing.
+```bash
+python -m nltk.downloader stopwords
+```
+
 Then, start the Dagster UI web server:
 
 ```bash
