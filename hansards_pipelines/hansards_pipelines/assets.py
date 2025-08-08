@@ -290,6 +290,9 @@ def scrape_website(context: AssetExecutionContext) -> List:
                             case (True, True, True):
                                 context.log.info(f"Skip {pdf_name} - Final PDF, completed ingestion (final) (unchanged)")
                                 should_upload = False
+                            case (True, False, False):
+                                context.log.info(f"Upload {pdf_name} - Final PDF, not in DB yet, no runs yet - Entirely new hansard & final")
+                                should_upload = True
                             case _:
                                 context.log.info(f"Skip {pdf_name} - Fallback unknown case combination by default")
                                 should_upload = False
