@@ -196,8 +196,23 @@ def scrape_website(context: AssetExecutionContext) -> List:
                         context.log.warning(
                             f"WARNING: PDF file name is not in the correct format: {pdf_name}"
                         )
+                    if len(pdf_name_parts) < 2:
+                        skipped_pdfs.append(pdf_name)
+                        context.log.warning(
+                            f"WARNING: PDF file name is skipped due to incorrect naming: {pdf_name}"
+                        )
+                        continue
+
                     house = pdf_name_parts[0]
-                    date = pdf_name_parts[1]
+                    raw_date = pdf_name_parts[1]
+                    trimmed_date = raw_date[:8]
+
+                    if len(pdf_name_parts) > 2: # e.g KKDR-31072025-1
+                        context.log.info(f"Invalid PDF name. Trimmed {house}-{raw_date} -> {house}-{trimmed_date}")
+                    elif len(pdf_name_parts) == 2: # e.g DR-31072025
+                        context.log.info(f"Valid PDF name: {pdf_name}")
+                    date = trimmed_date
+
                     if house not in house_names:
                         context.log.warning(
                             f"ERROR: House is not valid: {house}. Skipping"
@@ -315,8 +330,9 @@ def scrape_website(context: AssetExecutionContext) -> List:
                         else:
                             context.log.info(f"Skipped {pdf_name} | exists_in_s3={exists_in_s3}, is_final_pdf={is_final_pdf}, is_final_db={is_final_db}, has_run={has_run}")
 
-    if len(new_pdfs) > 0:
+    if len(new_pdfs) > 0 or len(skipped_pdfs) > 0:
         context.log.info(f"New PDFs: {new_pdfs}")
+        context.log.info(f"Skipped PDFs: {skipped_pdfs}")
         _generate_new_hansard_message(new_pdfs, skipped_pdfs, context)
 
     return new_pdfs
