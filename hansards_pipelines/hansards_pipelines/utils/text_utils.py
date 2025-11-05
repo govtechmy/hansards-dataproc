@@ -460,7 +460,12 @@ tokenizer = malaya.tokenizer.Tokenizer(
 
 stopwords_malaya = get_stopwords()
 stopwords_bm = list(set(stopwords_mhc + stopwords_malaya + custom_sw))
-stopwords_en = nltk.corpus.stopwords.words("english")
+try:
+    stopwords_en = nltk.corpus.stopwords.words("english")
+except LookupError:
+    import nltk
+    nltk.download("stopwords")
+    stopwords_en = nltk.corpus.stopwords.words("english")
 stopwords = stopwords_bm + stopwords_en
 
 
