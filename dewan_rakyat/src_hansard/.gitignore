@@ -1,4 +1,0 @@
-# This file allows the folder to exist in git.
-# This folder contains Hansard to be downloaded via download_hansard.py
-*
-!.gitignore
