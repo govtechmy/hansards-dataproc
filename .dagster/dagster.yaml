@@ -10,3 +10,8 @@ run_launcher:
 
 telemetry:
   enabled: false
+
+storage:
+  postgres:
+    postgres_url:
+      env: DAGSTER_DB_URL
