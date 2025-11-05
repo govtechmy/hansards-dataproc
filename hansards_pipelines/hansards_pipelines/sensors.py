@@ -21,11 +21,11 @@ import json
 from hansards_pipelines.utils.text_utils import get_sitting_object
 from hansards_pipelines.utils.discord_utils import send_discord_message
 from hansards_pipelines.assets import (
-    sittings_job,
     sitting_partitions_def,
     S3_DATAPROC_BUCKET,
     s3_client,
 )
+from hansards_pipelines.jobs import sittings_job
 from hansards_pipelines.assets import FRONTEND_URL
 
 # revalidate_frontend_job = define_asset_job(

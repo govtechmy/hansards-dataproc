@@ -1,0 +1,53 @@
+FROM python:3.11.11-slim
+
+# Python/Dagster runtime settings
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PIP_NO_CACHE_DIR=1 \
+    DAGSTER_HOME=/opt/dagster \
+    AWS_SECRETS_NAME=dummy \
+    AWS_REGION=ap-southeast-5
+
+WORKDIR /app
+
+# System dependencies for common scientific and crypto libs
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    libpq-dev \
+    libffi-dev \
+    curl \
+    && rm -rf /var/lib/apt/lists/* \
+    && pip install --no-cache-dir --upgrade pip setuptools wheel
+
+# Install pinned Python dependencies first for better layer caching
+COPY requirements.txt /app/requirements.txt
+RUN pip install --no-cache-dir -r /app/requirements.txt
+
+# Copy project and install the local package (non-editable)
+COPY hansards_pipelines /app/hansards_pipelines
+RUN pip install --no-cache-dir /app/hansards_pipelines
+
+# Copy Dagster config into DAGSTER_HOME
+COPY .dagster/dagster.yaml /opt/dagster/dagster.yaml
+COPY .dagster/workspace.yaml /opt/dagster/workspace.yaml
+
+# Prepare Dagster home directory and create non-root user
+RUN mkdir -p "$DAGSTER_HOME"
+
+EXPOSE 3000 8000
+
+CMD sh -c "\
+rm -rf /opt/dagster/{history,logs,schedules} && \
+rm -f /opt/dagster/*.db /opt/dagster/history/*.db /opt/dagster/schedules/*.db && \
+dagster instance migrate && \
+dagster code-server start \
+    --module-name hansards_pipelines.definitions \
+    --port 4000 \
+    --working-directory /app/hansards_pipelines & \
+sleep 3 && \
+dagster-webserver -h 0.0.0.0 -p 3000 \
+    --workspace /opt/dagster/workspace.yaml & \
+sleep 5 && \
+dagster-daemon run \
+    --workspace /opt/dagster/workspace.yaml & \
+wait"

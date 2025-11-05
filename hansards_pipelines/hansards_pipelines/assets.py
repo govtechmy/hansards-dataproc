@@ -1066,20 +1066,3 @@ def insert_to_prod_db(context: AssetExecutionContext, prepare_db_payload: dict):
 #         "hansard_route": hansard_route,
 #     }
 # )
-
-
-sittings_job = define_asset_job(
-    "sittings_job",
-    selection=[
-        dg_parse_hansard,
-        dg_get_categories,
-        dg_post_parsing_edits,
-        dg_pre_tabulate,
-        dg_edit_hansards,
-        dg_tabulate,
-        remove_parsed_hansards,
-        prepare_db_payload,
-        insert_to_dev_db,
-        insert_to_prod_db,
-    ],
-)
