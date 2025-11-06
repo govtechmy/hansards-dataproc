@@ -52,8 +52,6 @@ from hansards_pipelines.utils.s3_utils import (
 
 from hansards_pipelines.settings import S3_DATAPROC_BUCKET, S3_PUBLIC_BUCKET, DEV_API_URL, PROD_API_URL, FRONTEND_URL, FRONTEND_TOKEN
 
-load_dotenv()
-
 # main pipeline
 # 1. scrape from the website, push pdf to s3 hansards-new
 # 2. move and rename hansards-new to main raw hansards folder
