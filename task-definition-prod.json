@@ -1,0 +1,28 @@
+{
+  "containerDefinitions": [
+    {
+      "image": "602670427499.dkr.ecr.ap-southeast-5.amazonaws.com/hsd-mod-dataproc-prod:latest",
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/ecs/hsd-mod-dataproc-prod",
+          "awslogs-region": "ap-southeast-5",
+          "awslogs-stream-prefix": "ecs"
+        }
+      },
+      "mountPoints": [],
+      "name": "hsd-mod-dataproc",
+      "portMappings": [
+        { "containerPort": 3000, "hostPort": 3000, "name": "hsd-mod-dataproc", "protocol": "tcp" }
+      ],
+      "stopTimeout": 2
+    }
+  ],
+  "cpu": "2048",
+  "executionRoleArn": "arn:aws:iam::602670427499:role/hsd-ecsTaskExecutionRole-prod",
+  "family": "hsd-mod-dataproc-prod",
+  "memory": "4192",
+  "networkMode": "awsvpc",
+  "requiresCompatibilities": ["FARGATE"],
+  "taskRoleArn": "arn:aws:iam::602670427499:role/hsd-ecs-task-role-prod"
+}
