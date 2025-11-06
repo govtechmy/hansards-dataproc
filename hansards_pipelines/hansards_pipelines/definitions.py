@@ -5,6 +5,7 @@ from .sensors import (
     my_discord_on_run_frontend_success,
     my_discord_on_run_failure,
 )
+from hansards_pipelines import settings
 
 all_assets = load_assets_from_modules([assets])
 
