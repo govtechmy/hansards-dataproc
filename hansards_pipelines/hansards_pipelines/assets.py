@@ -50,15 +50,9 @@ from hansards_pipelines.utils.s3_utils import (
     build_path,
 )
 
+from hansards_pipelines.service.settings import S3_DATAPROC_BUCKET, S3_PUBLIC_BUCKET, DEV_API_URL, PROD_API_URL, FRONTEND_URL, FRONTEND_TOKEN
+
 load_dotenv()
-
-S3_DATAPROC_BUCKET = os.getenv("S3_DATAPROC_BUCKET")
-S3_PUBLIC_BUCKET = os.getenv("S3_PUBLIC_BUCKET")
-DEV_API_URL = os.getenv("DEV_API_URL")
-PROD_API_URL = os.getenv("PROD_API_URL")
-
-FRONTEND_URL = os.getenv("FRONTEND_URL")
-FRONTEND_TOKEN = os.getenv("FRONTEND_TOKEN")
 
 # main pipeline
 # 1. scrape from the website, push pdf to s3 hansards-new
