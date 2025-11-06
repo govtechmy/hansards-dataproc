@@ -5,7 +5,7 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
     PIP_NO_CACHE_DIR=1 \
     DAGSTER_HOME=/opt/dagster \
-    AWS_SECRETS_NAME=dummy \
+    AWS_SECRETS_NAME=changeme \
     AWS_REGION=ap-southeast-5
 
 WORKDIR /app
