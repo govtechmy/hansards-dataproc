@@ -6,7 +6,7 @@ This project aims to digitalise the Malaysian [Dewan Rakyat](https://www.parlime
 3. (Optional) Run `python3 download_hansards.py` to download the source PDFs.
 4. Bulk process with `python3 batch_run.py`. If you are rerunning, free to comment out certain procedures to speed up the prcoess (e.g. `parse_pdf.py` takes a long time but we have stored the output in `parsed_pdf`).
 
-![](README_images/hansard_parsing.svg)
+![](docs/hansard_parsing.svg)
 
 To be specific, these files will be run in order.
 
