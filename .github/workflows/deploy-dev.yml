@@ -29,7 +29,7 @@ jobs:
         id: build-image
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-          ECR_REPOSITORY: changeme
+          ECR_REPOSITORY: hsd-mod-dataproc-dev
           IMAGE_TAG: ${{ github.sha }}
         run: |
           docker build -f Dockerfile.dev -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
@@ -43,7 +43,7 @@ jobs:
         uses: aws-actions/amazon-ecs-render-task-definition@v1
         with:
           task-definition: task-definition-dev.json
-          container-name: changeme
+          container-name: hsd-mod-dataproc
           image: ${{ steps.build-image.outputs.image }}
 
       - name: Deploy Amazon ECS task definition
