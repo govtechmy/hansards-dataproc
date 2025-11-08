@@ -2,7 +2,7 @@ numpy==2.2.1
 pandas==2.2.3
 pdfplumber==0.7.1
 PyPDF2==2.6.0
-tqdm==4.30.0
+tqdm==4.66.3
 
 thefuzz~=0.19.0
 boto3~=1.28.11
@@ -20,3 +20,8 @@ nltk==3.9.1
 torch==2.5.1
  
 amazon-textract-textractor==1.9.2
+pillow>=10.3.0 # not directly required, pinned by Snyk to avoid a vulnerability
+requests>=2.32.4 # not directly required, pinned by Snyk to avoid a vulnerability
+transformers>=4.53.0 # not directly required, pinned by Snyk to avoid a vulnerability
+urllib3>=2.5.0 # not directly required, pinned by Snyk to avoid a vulnerability
+zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
