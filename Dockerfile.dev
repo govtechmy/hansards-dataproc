@@ -23,8 +23,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 COPY requirements.txt /app/requirements.txt
 RUN pip install --no-cache-dir -r /app/requirements.txt
 
-# Pre-download NLTK data
-RUN python -m nltk.downloader punkt stopwords
+# Pre-download NLTK data and make it globally available
+RUN python -m nltk.downloader punkt stopwords && \
+    mkdir -p /usr/local/share/nltk_data && \
+    cp -r /root/nltk_data/* /usr/local/share/nltk_data/
 
 # Copy project and install the local package (non-editable)
 COPY hansards_pipelines /app/hansards_pipelines
