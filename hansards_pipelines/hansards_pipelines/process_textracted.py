@@ -5,7 +5,6 @@ import json
 import pandas as pd
 import requests
 import os
-from dotenv import load_dotenv
 from io import BytesIO
 from datetime import datetime, time
 from difflib import SequenceMatcher
@@ -14,6 +13,7 @@ from utils.text_utils import house_mapper, preprocess_malaya, get_sitting_object
 import warnings
 from botocore import UNSIGNED
 from botocore.config import Config
+from hansards_pipelines.settings import S3_TEXTRACT_BUCKET, DEV_API_URL, 
 
 import boto3
 import botocore
@@ -23,11 +23,6 @@ credentials = session.get_credentials().get_frozen_credentials()
 
 warnings.filterwarnings("ignore", category=FutureWarning)
 warnings.filterwarnings("ignore", message="This pattern is interpreted as a regular expression, and has match groups.*")
-
-load_dotenv()
-
-S3_BUCKET = os.getenv("S3_TEXTRACT_BUCKET")
-API_URL = os.getenv("DEV_API_URL")
 
 ts_full = re.compile(r'^\d{1,2}\.\d{2}\s*(ptg|petang|pagi|tgh|tengah hari|mlm)?\.?$', re.IGNORECASE)
 ts_search = re.compile(r'(\d{1,2})\.(\d{2})', re.IGNORECASE)
@@ -386,8 +381,8 @@ def prepare_db_payload(df_speech, prefix, date_str):
         df_speech["house"] = house_mapper.to_display(prefix)
         df_speech["is_annotation"] = (df_speech["author"].astype(str).str.strip().str.upper() == "ANNOTATION")
 
-        df_author = pd.DataFrame(requests.get(f"{API_URL}/api/author").json())
-        df_author_hist = pd.DataFrame(requests.get(f"{API_URL}/api/author-history").json())
+        df_author = pd.DataFrame(requests.get(f"{DEV_API_URL}/api/author").json())
+        df_author_hist = pd.DataFrame(requests.get(f"{DEV_API_URL}/api/author-history").json())
         df_author_hist["area"] = df_author_hist["area_name"].str[5:]
 
         logger = SimpleLogger()
@@ -455,7 +450,7 @@ def prepare_db_payload(df_speech, prefix, date_str):
 def insert_to_db(payload):
     print("\nSending request to backend...")
     try:
-        response = requests.post(f"{API_URL}/api/sitting/", json=payload)
+        response = requests.post(f"{DEV_API_URL}/api/sitting/", json=payload)
         try:
             response_data = response.json()
         except json.JSONDecodeError:
@@ -479,7 +474,7 @@ def insert_to_db(payload):
 def run_batch(prefix, start_year, end_year):
     s3 = session.client("s3")
     paginator = s3.get_paginator("list_objects_v2")
-    pages = paginator.paginate(Bucket=S3_BUCKET, Prefix=f"{prefix}/")
+    pages = paginator.paginate(Bucket=S3_TEXTRACT_BUCKET, Prefix=f"{prefix}/")
 
     all_files = []
     for page in pages:
@@ -539,7 +534,7 @@ def run_batch(prefix, start_year, end_year):
 def process_and_insert(prefix, key, date_str):
     s3 = session.client("s3")
     print(f"\n==== PROCESSING: {key}")
-    obj = s3.get_object(Bucket=S3_BUCKET, Key=key)
+    obj = s3.get_object(Bucket=S3_TEXTRACT_BUCKET, Key=key)
 
     df = pd.read_csv(BytesIO(obj["Body"].read()))
 
@@ -569,7 +564,7 @@ def process_and_insert(prefix, key, date_str):
     pdf_key = f"{house_mapper.to_code(prefix).upper()}-{datetime.strptime(date_str, '%Y-%m-%d').strftime('%d%m%Y')}"
     sitting_obj = get_sitting_object(pdf_key)
     s3_key = f"processed/{prefix}/{sitting_obj['renamed_filename']}.csv"
-    s3.put_object(Bucket=S3_BUCKET, Key=s3_key, Body=buffer.getvalue())
+    s3.put_object(Bucket=S3_TEXTRACT_BUCKET, Key=s3_key, Body=buffer.getvalue())
     print(f"\n✅ Saved to {s3_key}")
 
     # final processed file with matched author name (no need to store in S3. its stored in DB)
@@ -585,7 +580,7 @@ def process_from_processed_csv(prefix, date_str, insert=False):
     key = f"processed/{prefix}/{sitting_obj['renamed_filename']}.csv"
     print(f"\n📄 Loading processed speech CSV from: {key}")
 
-    obj = s3.get_object(Bucket=S3_BUCKET, Key=key)
+    obj = s3.get_object(Bucket=S3_TEXTRACT_BUCKET, Key=key)
     df_speech = pd.read_csv(BytesIO(obj["Body"].read()))
 
     df_speech.columns = [c.strip().strip("'") for c in df_speech.columns]
