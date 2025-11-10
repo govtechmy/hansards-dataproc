@@ -17,11 +17,9 @@ def _load_from_aws_secrets_manager_if_configured() -> None:
     secret_name = os.getenv("AWS_SECRETS_NAME")
     if not secret_name:
         return
-    
-    region = os.getenv("AWS_REGION")
 
     try:
-        client = boto3.client("secretsmanager", region_name=region)
+        client = boto3.client("secretsmanager")
         response = client.get_secret_value(SecretId=secret_name)
         secret_str = response.get("SecretString")
         if not secret_str:
