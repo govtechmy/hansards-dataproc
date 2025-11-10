@@ -37,6 +37,8 @@ RUN mkdir -p "$DAGSTER_HOME"
 EXPOSE 3000 8000
 
 CMD sh -c "\
+python -c 'import hansards_pipelines.settings' && \
+rm -rf /opt/dagster/{history,logs,schedules} && \
 rm -rf /opt/dagster/{history,logs,schedules} && \
 rm -f /opt/dagster/*.db /opt/dagster/history/*.db /opt/dagster/schedules/*.db && \
 dagster instance migrate && \
