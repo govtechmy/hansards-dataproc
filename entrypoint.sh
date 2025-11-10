@@ -3,7 +3,7 @@ set -e
 
 echo "[entrypoint] Loading DAGSTER_DB_URL from AWS Secrets Manager..."
 
-python - <<'EOF'
+python3 - <<'EOF' > /tmp/export_env.sh
 import os, json, boto3
 
 secret_name = os.getenv("AWS_SECRETS_NAME")
@@ -21,7 +21,7 @@ else:
         print(f"export DAGSTER_DB_URL='{dagster_db_url}'")
     else:
         print("[entrypoint] DAGSTER_DB_URL not found in secret.")
-EOF > /tmp/export_env.sh
+EOF
 
 source /tmp/export_env.sh
 
