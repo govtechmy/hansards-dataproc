@@ -15,7 +15,13 @@
       "portMappings": [
         { "containerPort": 3000, "hostPort": 3000, "name": "hsd-mod-dataproc", "protocol": "tcp" }
       ],
-      "stopTimeout": 2
+      "stopTimeout": 2,
+      "secrets": [
+        {
+          "name": "DAGSTER_DB_URL",
+          "valueFrom": "arn:aws:secretsmanager:ap-southeast-5:602670427499:secret:hsd-mod-dataproc-secret-dev"
+        }
+      ]
     }
   ],
   "cpu": "1024",
