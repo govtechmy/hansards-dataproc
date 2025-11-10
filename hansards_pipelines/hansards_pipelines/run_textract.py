@@ -11,20 +11,15 @@ from textractor import Textractor
 from textractor.data.constants import TextractFeatures
 import os
 from dotenv import load_dotenv
-
-load_dotenv()
+from hansards_pipelines.settings import S3_PUBLIC_BUCKET, S3_TEXTRACT_BUCKET, AWS_REGION
 
 PREFIX_OPTIONS = ["dewannegara", "dewanrakyat", "kamarkhas"]
 MAX_CONCURRENT_JOBS = 5
 
-REGION = os.getenv("REGION")
-S3_PUBLIC_BUCKET = os.getenv("S3_PUBLIC_BUCKET")
-S3_TEXTRACT_BUCKET = os.getenv("S3_TEXTRACT_BUCKET")
-
 # === AWS Setup ===
-session   = boto3.Session(region_name=REGION)
+session   = boto3.Session(region_name=AWS_REGION)
 s3        = session.client("s3")
-extractor = Textractor(region_name=REGION)
+extractor = Textractor(region_name=AWS_REGION)
 
 def list_pdfs(prefix, year_range):
     """

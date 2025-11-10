@@ -24,7 +24,6 @@ import boto3
 import botocore
 import requests
 import pandas as pd
-from dotenv import load_dotenv
 from urllib.parse import urljoin
 from typing import List, Tuple, Dict
 from io import BytesIO

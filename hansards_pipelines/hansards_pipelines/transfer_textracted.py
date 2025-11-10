@@ -5,19 +5,13 @@ import argparse
 import concurrent.futures
 
 from botocore.exceptions import ClientError
-from dotenv import load_dotenv
-
-load_dotenv()
+from hansards_pipelines.settings import AWS_REGION, S3_PUBLIC_BUCKET, S3_TEXTRACT_BUCKET
 
 PREFIX_OPTIONS = ["dewannegara", "dewanrakyat", "kamarkhas"]
 MAX_CONCURRENT_JOBS = 5
 
-REGION = os.getenv("REGION")
-S3_PUBLIC_BUCKET = os.getenv("S3_PUBLIC_BUCKET")
-S3_TEXTRACT_BUCKET = os.getenv("S3_TEXTRACT_BUCKET")
-
 # === AWS Setup ===
-session   = boto3.Session(region_name=REGION)
+session   = boto3.Session(region_name=AWS_REGION)
 s3        = session.client("s3")
 
 def list_csvs(prefix, year_range):
