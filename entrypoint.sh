@@ -44,6 +44,5 @@ if [[ -z "${DAGSTER_DB_URL:-}" ]]; then
 fi
 
 echo "[entrypoint] DAGSTER_DB_URL loaded. Starting main process..."
-echo "[entrypoint] DAGSTER_DB_URL=${DAGSTER_DB_URL}" 
 
 exec "$@"

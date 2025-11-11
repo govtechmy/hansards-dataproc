@@ -6,7 +6,8 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
     PIP_NO_CACHE_DIR=1 \
     DAGSTER_HOME=/opt/dagster \
     AWS_SECRETS_NAME=hsd-mod-dataproc-secret-dev \
-    AWS_REGION=ap-southeast-5
+    AWS_REGION=ap-southeast-5 \
+    MALAYA_CACHE_DIR=/root/Malaya
 
 WORKDIR /app
 
@@ -38,7 +39,8 @@ COPY .dagster/dagster.yaml /opt/dagster/dagster.yaml
 COPY .dagster/workspace.yaml /opt/dagster/workspace.yaml
 
 # Prepare Dagster home directory and create non-root user
-RUN mkdir -p "$DAGSTER_HOME"
+RUN mkdir -p "$DAGSTER_HOME" && \
+    mkdir -p /root/Malaya && chmod 777 /root/Malaya
 
 EXPOSE 3000
 
