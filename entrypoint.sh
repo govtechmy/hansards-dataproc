@@ -1,29 +1,47 @@
-#!/bin/bash
-set -e
+#!/usr/bin/env bash
+# Minimal entrypoint: fetch secret, export DAGSTER_DB_URL (only), fail fast if absent, then exec.
+set -euo pipefail
 
-echo "[entrypoint] Loading DAGSTER_DB_URL from AWS Secrets Manager..."
+SECRET_NAME=${AWS_SECRETS_NAME:-}
+REGION=${AWS_REGION:-}
 
-python3 - <<'EOF' > /tmp/export_env.sh
-import os, json, boto3
+echo "[entrypoint] Fetching DAGSTER_DB_URL from secret '$SECRET_NAME' in region '${REGION:-default}'."
 
-secret_name = os.getenv("AWS_SECRETS_NAME")
-region = os.getenv("AWS_REGION", "ap-southeast-5")
-
+python3 - <<'PY' > /tmp/export_env.sh || { echo '[entrypoint] ERROR: secret retrieval helper failed'; exit 1; }
+import os, json, sys, boto3
+secret_name = os.getenv('AWS_SECRETS_NAME')
+region = os.getenv('AWS_REGION') or None
 if not secret_name:
-    print("[entrypoint] No AWS_SECRETS_NAME set, skipping.")
+    print('# No AWS_SECRETS_NAME set; skipping secret fetch', file=sys.stderr)
+    sys.exit(0)
+sm = boto3.session.Session(region_name=region).client('secretsmanager') if region else boto3.client('secretsmanager')
+try:
+    resp = sm.get_secret_value(SecretId=secret_name)
+except Exception as e:
+    print(f'# Failed to retrieve secret: {e}', file=sys.stderr)
+    sys.exit(0)
+raw = resp.get('SecretString') or resp.get('SecretBinary')
+if not raw:
+    print('# Secret empty', file=sys.stderr); sys.exit(0)
+try:
+    data = json.loads(raw)
+except json.JSONDecodeError:
+    # Treat whole secret as URL
+    url = raw.strip()
 else:
-    client = boto3.client("secretsmanager", region_name=region)
-    secret = client.get_secret_value(SecretId=secret_name)["SecretString"]
-    data = json.loads(secret)
+    url = (data.get('DAGSTER_DB_URL') or '').strip()
+if url:
+    print(f"export DAGSTER_DB_URL='{url}'")
+else:
+    print('# DAGSTER_DB_URL key missing or empty', file=sys.stderr)
+PY
 
-    dagster_db_url = data.get("DAGSTER_DB_URL")
-    if dagster_db_url:
-        print(f"export DAGSTER_DB_URL='{dagster_db_url}'")
-    else:
-        print("[entrypoint] DAGSTER_DB_URL not found in secret.")
-EOF
+source /tmp/export_env.sh || true
 
-source /tmp/export_env.sh
+if [[ -z "${DAGSTER_DB_URL:-}" ]]; then
+  echo "[entrypoint] ERROR: DAGSTER_DB_URL not set; cannot start Dagster." >&2
+  exit 2
+fi
 
-echo "[entrypoint] DAGSTER_DB_URL loaded. Starting Dagster..."
+echo "[entrypoint] DAGSTER_DB_URL loaded. Starting main process..."
 exec "$@"
