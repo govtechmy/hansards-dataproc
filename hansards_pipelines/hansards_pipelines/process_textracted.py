@@ -13,7 +13,7 @@ from utils.text_utils import house_mapper, preprocess_malaya, get_sitting_object
 import warnings
 from botocore import UNSIGNED
 from botocore.config import Config
-from hansards_pipelines.settings import S3_TEXTRACT_BUCKET, DEV_API_URL, 
+from hansards_pipelines.settings import S3_TEXTRACT_BUCKET, DEV_API_URL
 
 import boto3
 import botocore
