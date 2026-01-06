@@ -827,7 +827,7 @@ def remove_parsed_hansards(context: AssetExecutionContext):
         )
         context.log.info(f"{sitting_object['renamed_filename_key']}  Verified!")
     except botocore.exceptions.ClientError as e:
-        context.log.error(f"{sitting_object['renamed_filename_key']} not Verfied")
+        context.log.error(f"{sitting_object['renamed_filename_key']} not Verified")
         raise e
 
     # Remove file from new/ S3 bucket
