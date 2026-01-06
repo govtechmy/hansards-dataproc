@@ -361,7 +361,7 @@ def move_and_rename_all_hansards(
 @asset(
     partitions_def=sitting_partitions_def,
     # deps=[move_and_rename_hansards],
-    group_name="parse",
+    group_name="parse"
 )
 def dg_parse_hansard(context: AssetExecutionContext):
     """Parse hansard
@@ -816,9 +816,9 @@ def remove_parsed_hansards(context: AssetExecutionContext):
     try:
         s3_client.head_object(Bucket=S3_DATAPROC_BUCKET, Key=parsed_pdf_result_key)
         context.log.info(f"{parsed_pdf_result_key} Verified!")
-    except botocore.exceptions.ClientError:
+    except botocore.exceptions.ClientError as e:
         context.log.error(f"result.csv is not in {parsed_pdf_result_key}")
-        raise botocore.exceptions.ClientError
+        raise e
 
     # Check if pdf file was moved
     try:
@@ -826,11 +826,12 @@ def remove_parsed_hansards(context: AssetExecutionContext):
             Bucket=S3_PUBLIC_BUCKET, Key=sitting_object["renamed_filename_key"]
         )
         context.log.info(f"{sitting_object['renamed_filename_key']}  Verified!")
-    except botocore.exceptions.ClientError:
+    except botocore.exceptions.ClientError as e:
         context.log.error(f"{sitting_object['renamed_filename_key']} not Verfied")
-        raise botocore.exceptions.ClientError
+        raise e
 
     # Remove file from new/ S3 bucket
+    file_removed = False
     try:
         # First check if the object exists
         s3_client.head_object(Bucket=S3_DATAPROC_BUCKET, Key=new_pdf_s3_key)
@@ -839,6 +840,7 @@ def remove_parsed_hansards(context: AssetExecutionContext):
         try:
             s3_client.delete_object(Bucket=S3_DATAPROC_BUCKET, Key=new_pdf_s3_key)
             context.log.info(f"Removed {new_pdf_s3_key} from s3")
+            file_removed = True
         except botocore.exceptions.ClientError as e:
             context.log.error(f"Error removing {new_pdf_s3_key} from s3: {str(e)}")
             raise e
@@ -849,9 +851,12 @@ def remove_parsed_hansards(context: AssetExecutionContext):
             context.log.warning(
                 f"Object {new_pdf_s3_key} does not exist in S3, nothing to remove"
             )
+            # This is OK - file was already removed or never existed
         else:
             context.log.error(f"Error checking if {new_pdf_s3_key} exists: {str(e)}")
-        raise e
+            raise e
+    
+    return {"file_removed": file_removed, "s3_key": new_pdf_s3_key}
 
 
 @asset(partitions_def=sitting_partitions_def, deps=[dg_tabulate], group_name="parse")
@@ -983,6 +988,8 @@ def _insert_to_db(api_url: str, payload: dict, context: AssetExecutionContext):
     except requests.exceptions.HTTPError as e:
         context.log.error(f"API request failed: {e}")
         context.log.error(f"Response content: {response.text}")
+        if "Parliamentary cycle not found for date/house" in response.text:
+            context.log.warning("Please update the latest parliamentary cycle in the database")
         # Re-raise the exception to trigger pipeline failure
         raise
 
