@@ -955,10 +955,12 @@ def prepare_db_payload(context: AssetExecutionContext):
     sitting_payload = {
         "date": sitting_object["proper_date_str"],
         "filename": sitting_object["renamed_filename"],
-        # "has_dataset": True,
         "is_final": is_final,
         "speech_data": json.dumps(speech_data),
         "house": house_mapper.code_to_display(sitting_object["house"]),
+
+         # AI summary lifecycle (required by DB constraint)
+        "summary_status": "pending",
     }
 
     # # TEMP: save sitting_payload to pickle
