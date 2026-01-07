@@ -18,6 +18,7 @@ from dagster import (
 import os
 import io
 import json
+import gzip
 import pickle
 from bs4 import BeautifulSoup
 import boto3
@@ -980,7 +981,9 @@ def _insert_to_db(api_url: str, payload: dict, context: AssetExecutionContext):
     Insert Hansards to DB
     """
     # Post to Dev Sittings API
-    response = requests.post(f"{api_url}/api/sitting/", json=payload, timeout=3600)
+    payload_json = json.dumps(payload)
+    compressed = gzip.compress(payload_json.encode('utf-8'))
+    response = requests.post(f"{api_url}/api/sitting/", data=compressed, headers={'Content-Encoding': 'gzip', 'Content-Type': 'application/json'}, timeout=3600)
     # Check if request was successful
     try:
         response.raise_for_status()
