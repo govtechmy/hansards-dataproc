@@ -983,7 +983,7 @@ def _insert_to_db(api_url: str, payload: dict, context: AssetExecutionContext):
     """
     # Post to Dev Sittings API
     # log the json payload
-    print(json.dumps(payload, indent=2))
+    context.log.info(f"Payload sitting data: {json.dumps(payload)}")
     response = requests.post(f"{api_url}/api/sitting", json=payload, timeout=3600)
     # Check if request was successful
     try:
