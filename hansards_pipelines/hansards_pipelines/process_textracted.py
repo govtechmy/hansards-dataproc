@@ -2,7 +2,6 @@ import argparse
 import re
 import boto3
 import json
-import gzip
 import pandas as pd
 import requests
 import os
@@ -451,9 +450,9 @@ def prepare_db_payload(df_speech, prefix, date_str):
 def insert_to_db(payload):
     print("\nSending request to backend...")
     try:
-        payload_json = json.dumps(payload)
-        compressed = gzip.compress(payload_json.encode('utf-8'))
-        response = requests.post(f"{DEV_API_URL}/api/sitting/", data=compressed, headers={'Content-Encoding': 'gzip', 'Content-Type': 'application/json'})
+        # log the json payload
+        print(json.dumps(payload, indent=2))
+        response = requests.post(f"{DEV_API_URL}/api/sitting", json=payload, timeout=3600)
         try:
             response_data = response.json()
         except json.JSONDecodeError:
