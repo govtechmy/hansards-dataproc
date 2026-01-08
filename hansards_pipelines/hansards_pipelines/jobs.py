@@ -18,6 +18,6 @@ sittings_job = define_asset_job(
         assets.remove_parsed_hansards,
         assets.prepare_db_payload,
         assets.insert_to_dev_db,
-        assets.insert_to_prod_db,
+        # assets.insert_to_prod_db,
     ],
 )
