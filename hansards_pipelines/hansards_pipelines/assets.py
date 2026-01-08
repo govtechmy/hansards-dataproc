@@ -29,6 +29,7 @@ from typing import List, Tuple, Dict
 from io import BytesIO
 import pdfplumber
 from datetime import datetime
+import math
 
 from hansards_pipelines.utils.text_utils import (
     preprocess_malaya,
@@ -947,6 +948,10 @@ def prepare_db_payload(context: AssetExecutionContext):
     # note: this speech_data is only as payload to backend ingestion, not the final JSON
     # speech_data = speeches_to_json(df_speech_matched)
     speech_data = df_speech_matched.to_dict(orient="records")
+    speech_data = [
+        {k: (None if pd.isna(v) else v) for k, v in row.items()}
+        for row in speech_data
+    ]
 
     # show row and column with NaN - speaker column NaN
     context.log.info(speech_data[0])
@@ -980,7 +985,8 @@ def _insert_to_db(api_url: str, payload: dict, context: AssetExecutionContext):
     """
     # Post to Dev Sittings API
     # log the json payload
-    context.log.info(f"Payload sitting data: {json.dumps(payload)}")
+    context.log.info(f"Payload summary: speeches={len(payload['speech_data'])}, is_final={payload['is_final']}")
+
     response = requests.post(f"{api_url}/api/sitting", json=payload, timeout=3600)
     # Check if request was successful
     try:
