@@ -955,7 +955,7 @@ def prepare_db_payload(context: AssetExecutionContext):
         "date": sitting_object["proper_date_str"],
         "filename": sitting_object["renamed_filename"],
         "is_final": is_final,
-        "speech_data": json.dumps(speech_data),
+        "speech_data": speech_data,
         "house": house_mapper.code_to_display(sitting_object["house"]),
     }
 
