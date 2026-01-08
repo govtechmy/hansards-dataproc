@@ -1017,6 +1017,7 @@ def insert_to_dev_db(context: AssetExecutionContext, prepare_db_payload: dict):
     """
     Insert Hansards to Dev DB
     """
+    context.log.info(f"speech_data type = {type(prepare_db_payload['speech_data'])}")
     _insert_to_db(DEV_API_URL, prepare_db_payload, context)
 
 
