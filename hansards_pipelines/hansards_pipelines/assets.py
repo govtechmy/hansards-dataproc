@@ -957,9 +957,6 @@ def prepare_db_payload(context: AssetExecutionContext):
         "is_final": is_final,
         "speech_data": json.dumps(speech_data),
         "house": house_mapper.code_to_display(sitting_object["house"]),
-
-         # AI summary lifecycle (required by DB constraint)
-        "summary_status": "pending",
     }
 
     # # TEMP: save sitting_payload to pickle
