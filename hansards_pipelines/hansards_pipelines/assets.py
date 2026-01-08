@@ -947,7 +947,6 @@ def prepare_db_payload(context: AssetExecutionContext):
     assert df_speech_matched["speech"].notna().all(), "speech column has NaN"
     # note: this speech_data is only as payload to backend ingestion, not the final JSON
     # speech_data = speeches_to_json(df_speech_matched)
-    speech_data = df_speech_matched.to_dict(orient="records")
     speech_data = [{k: (v if isinstance(v, (list, dict)) else None if pd.isna(v) else v) for k, v in row.items()} for row in df_speech_matched.to_dict(orient="records")]
 
     # show row and column with NaN - speaker column NaN
