@@ -50,6 +50,9 @@ from hansards_pipelines.utils.s3_utils import (
     build_path,
 )
 
+import psycopg
+from hansards_pipelines.direct_sitting_ingest import ingest_sitting_direct
+
 from hansards_pipelines.settings import S3_DATAPROC_BUCKET, S3_PUBLIC_BUCKET, DEV_API_URL, PROD_API_URL, FRONTEND_URL, FRONTEND_TOKEN
 
 # main pipeline
@@ -1031,6 +1034,17 @@ def insert_to_prod_db(context: AssetExecutionContext, prepare_db_payload: dict):
     Insert Hansards to Prod DB
     """
     _insert_to_db(PROD_API_URL, prepare_db_payload, context)
+
+
+
+
+@asset(
+    partitions_def=sitting_partitions_def, deps=[prepare_db_payload], group_name="parse",
+)
+def direct_insert_to_db(context, prepare_db_payload):
+    with psycopg.connect(context.resources.db_dsn) as conn:
+        with conn.transaction():
+            ingest_sitting_direct(prepare_db_payload, conn)
 
 
 # @asset(group_name="frontend")

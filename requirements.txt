@@ -20,3 +20,6 @@ nltk==3.9.1
 torch==2.5.1
  
 amazon-textract-textractor==1.9.2
+
+psycopg==3.3.2
+psycopg2-binary==2.9.10
