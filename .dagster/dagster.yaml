@@ -15,3 +15,6 @@ storage:
   postgres:
     postgres_url:
       env: DAGSTER_DB_URL
+      
+code_servers:
+  local_startup_timeout: 120

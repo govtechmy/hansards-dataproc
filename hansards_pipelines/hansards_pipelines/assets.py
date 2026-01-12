@@ -24,12 +24,12 @@ import boto3
 import botocore
 import requests
 import pandas as pd
-from dotenv import load_dotenv
 from urllib.parse import urljoin
 from typing import List, Tuple, Dict
 from io import BytesIO
 import pdfplumber
 from datetime import datetime
+import math
 
 from hansards_pipelines.utils.text_utils import (
     preprocess_malaya,
@@ -50,15 +50,7 @@ from hansards_pipelines.utils.s3_utils import (
     build_path,
 )
 
-load_dotenv()
-
-S3_DATAPROC_BUCKET = os.getenv("S3_DATAPROC_BUCKET")
-S3_PUBLIC_BUCKET = os.getenv("S3_PUBLIC_BUCKET")
-DEV_API_URL = os.getenv("DEV_API_URL")
-PROD_API_URL = os.getenv("PROD_API_URL")
-
-FRONTEND_URL = os.getenv("FRONTEND_URL")
-FRONTEND_TOKEN = os.getenv("FRONTEND_TOKEN")
+from hansards_pipelines.settings import S3_DATAPROC_BUCKET, S3_PUBLIC_BUCKET, DEV_API_URL, PROD_API_URL, FRONTEND_URL, FRONTEND_TOKEN
 
 # main pipeline
 # 1. scrape from the website, push pdf to s3 hansards-new
@@ -370,7 +362,7 @@ def move_and_rename_all_hansards(
 @asset(
     partitions_def=sitting_partitions_def,
     # deps=[move_and_rename_hansards],
-    group_name="parse",
+    group_name="parse"
 )
 def dg_parse_hansard(context: AssetExecutionContext):
     """Parse hansard
@@ -825,9 +817,9 @@ def remove_parsed_hansards(context: AssetExecutionContext):
     try:
         s3_client.head_object(Bucket=S3_DATAPROC_BUCKET, Key=parsed_pdf_result_key)
         context.log.info(f"{parsed_pdf_result_key} Verified!")
-    except botocore.exceptions.ClientError:
+    except botocore.exceptions.ClientError as e:
         context.log.error(f"result.csv is not in {parsed_pdf_result_key}")
-        raise botocore.exceptions.ClientError
+        raise e
 
     # Check if pdf file was moved
     try:
@@ -835,11 +827,12 @@ def remove_parsed_hansards(context: AssetExecutionContext):
             Bucket=S3_PUBLIC_BUCKET, Key=sitting_object["renamed_filename_key"]
         )
         context.log.info(f"{sitting_object['renamed_filename_key']}  Verified!")
-    except botocore.exceptions.ClientError:
-        context.log.error(f"{sitting_object['renamed_filename_key']} not Verfied")
-        raise botocore.exceptions.ClientError
+    except botocore.exceptions.ClientError as e:
+        context.log.error(f"{sitting_object['renamed_filename_key']} not Verified")
+        raise e
 
     # Remove file from new/ S3 bucket
+    file_removed = False
     try:
         # First check if the object exists
         s3_client.head_object(Bucket=S3_DATAPROC_BUCKET, Key=new_pdf_s3_key)
@@ -848,6 +841,7 @@ def remove_parsed_hansards(context: AssetExecutionContext):
         try:
             s3_client.delete_object(Bucket=S3_DATAPROC_BUCKET, Key=new_pdf_s3_key)
             context.log.info(f"Removed {new_pdf_s3_key} from s3")
+            file_removed = True
         except botocore.exceptions.ClientError as e:
             context.log.error(f"Error removing {new_pdf_s3_key} from s3: {str(e)}")
             raise e
@@ -858,9 +852,12 @@ def remove_parsed_hansards(context: AssetExecutionContext):
             context.log.warning(
                 f"Object {new_pdf_s3_key} does not exist in S3, nothing to remove"
             )
+            # This is OK - file was already removed or never existed
         else:
             context.log.error(f"Error checking if {new_pdf_s3_key} exists: {str(e)}")
-        raise e
+            raise e
+    
+    return {"file_removed": file_removed, "s3_key": new_pdf_s3_key}
 
 
 @asset(partitions_def=sitting_partitions_def, deps=[dg_tabulate], group_name="parse")
@@ -950,7 +947,7 @@ def prepare_db_payload(context: AssetExecutionContext):
     assert df_speech_matched["speech"].notna().all(), "speech column has NaN"
     # note: this speech_data is only as payload to backend ingestion, not the final JSON
     # speech_data = speeches_to_json(df_speech_matched)
-    speech_data = df_speech_matched.to_dict(orient="records")
+    speech_data = [{k: (v if isinstance(v, (list, dict)) else None if pd.isna(v) else v) for k, v in row.items()} for row in df_speech_matched.to_dict(orient="records")]
 
     # show row and column with NaN - speaker column NaN
     context.log.info(speech_data[0])
@@ -958,9 +955,8 @@ def prepare_db_payload(context: AssetExecutionContext):
     sitting_payload = {
         "date": sitting_object["proper_date_str"],
         "filename": sitting_object["renamed_filename"],
-        # "has_dataset": True,
         "is_final": is_final,
-        "speech_data": json.dumps(speech_data),
+        "speech_data": json.dumps(speech_data, ensure_ascii=False),
         "house": house_mapper.code_to_display(sitting_object["house"]),
     }
 
@@ -984,7 +980,10 @@ def _insert_to_db(api_url: str, payload: dict, context: AssetExecutionContext):
     Insert Hansards to DB
     """
     # Post to Dev Sittings API
-    response = requests.post(f"{api_url}/api/sitting/", json=payload, timeout=3600)
+    # log the json payload
+    context.log.info(f"Payload summary: speeches={len(payload['speech_data'])}, is_final={payload['is_final']}")
+
+    response = requests.post(f"{api_url}/api/sitting", json=payload, timeout=3600)
     # Check if request was successful
     try:
         response.raise_for_status()
@@ -992,6 +991,8 @@ def _insert_to_db(api_url: str, payload: dict, context: AssetExecutionContext):
     except requests.exceptions.HTTPError as e:
         context.log.error(f"API request failed: {e}")
         context.log.error(f"Response content: {response.text}")
+        if "Parliamentary cycle not found for date/house" in response.text:
+            context.log.warning("Please update the latest parliamentary cycle in the database")
         # Re-raise the exception to trigger pipeline failure
         raise
 
@@ -1018,6 +1019,7 @@ def insert_to_dev_db(context: AssetExecutionContext, prepare_db_payload: dict):
     """
     Insert Hansards to Dev DB
     """
+    context.log.info(f"speech_data type = {type(prepare_db_payload['speech_data'])}")
     _insert_to_db(DEV_API_URL, prepare_db_payload, context)
 
 

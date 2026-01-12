@@ -1,10 +1,19 @@
 import re
 import string
 import pandas as pd
-import nltk
-import malaya
 from datetime import datetime
-from malaya.text.function import get_stopwords
+
+# Heavy libraries (malaya, nltk) are imported lazily to reduce cold-start time and avoid
+# race conditions creating cache directories during parallel Dagster process startup.
+malaya = None  # will be imported on first use
+nltk = None  # will be imported on first use
+get_stopwords = None  # resolved after malaya import
+
+# Lazy init state containers
+_malaya_tokenizer = None
+_stopwords_bm = None
+_stopwords_en = None
+_stopwords_all = None
 
 stopwords_mhc = [
     "ada",
@@ -443,30 +452,54 @@ custom_sw = [
 custom_sp = ["terima kasih", "di pertua"]
 
 # most of the settings here doesn't actually remove - not working
-tokenizer = malaya.tokenizer.Tokenizer(
-    numbers=False,
-    title=False,
-    percents=False,
-    money=False,
-    date=False,
-    time=False,
-    pukul=False,
-    distance=False,
-    temperature=False,
-    volume=False,
-    duration=False,
-    weight=False,
-)
+def _ensure_malaya():
+    global malaya, get_stopwords, _malaya_tokenizer, _stopwords_bm
+    if malaya is None:
+        import malaya as _malaya
+        from malaya.text.function import get_stopwords as _get_stopwords
+        malaya = _malaya
+        # resolve function reference
+        globals()['get_stopwords'] = _get_stopwords
+    if _malaya_tokenizer is None:
+        _malaya_tokenizer = malaya.tokenizer.Tokenizer(
+            numbers=False,
+            title=False,
+            percents=False,
+            money=False,
+            date=False,
+            time=False,
+            pukul=False,
+            distance=False,
+            temperature=False,
+            volume=False,
+            duration=False,
+            weight=False,
+        )
+    if _stopwords_bm is None:
+        stopwords_malaya = get_stopwords()
+        _stopwords_bm = list(set(stopwords_mhc + stopwords_malaya + custom_sw))
 
-stopwords_malaya = get_stopwords()
-stopwords_bm = list(set(stopwords_mhc + stopwords_malaya + custom_sw))
-try:
-    stopwords_en = nltk.corpus.stopwords.words("english")
-except LookupError:
-    import nltk
-    nltk.download("stopwords")
-    stopwords_en = nltk.corpus.stopwords.words("english")
-stopwords = stopwords_bm + stopwords_en
+
+def _ensure_nltk():
+    global nltk, _stopwords_en
+    if nltk is None:
+        import nltk as _nltk
+        nltk = _nltk
+    if _stopwords_en is None:
+        try:
+            _stopwords_en = nltk.corpus.stopwords.words("english")
+        except LookupError:
+            nltk.download("stopwords")
+            _stopwords_en = nltk.corpus.stopwords.words("english")
+
+
+def _get_all_stopwords():
+    global _stopwords_all
+    if _stopwords_all is None:
+        _ensure_malaya()
+        _ensure_nltk()
+        _stopwords_all = _stopwords_bm + _stopwords_en
+    return _stopwords_all
 
 
 class HouseMapping:
@@ -607,12 +640,16 @@ def preprocess_malaya(speech):
     for sp in custom_sp:
         speech = re.sub(sp, "", speech, flags=re.IGNORECASE)
     # remove stopwords, punctuation, tokenise then stem
-    toks = [
-        tok  # sastrawi.stem(tok)
-        for tok in tokenizer.tokenize(speech, lowercase=True)
-        if tok not in stopwords
-        and all(subtok not in string.punctuation + "–" for subtok in tok)
-    ]
+    # Lazy init heavy resources only when this function is actually used.
+    _ensure_malaya()
+    toks = []
+    stopwords_all = _get_all_stopwords()
+    for tok in _malaya_tokenizer.tokenize(speech, lowercase=True):
+        if tok in stopwords_all:
+            continue
+        if any(subtok in string.punctuation + "–" for subtok in tok):
+            continue
+        toks.append(tok)
     return [x for x in toks if x != ""]
 
 

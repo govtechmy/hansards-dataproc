@@ -1,0 +1,98 @@
+name: Deploy to AWS ECS Develop
+
+on:
+  push:
+    branches: [develop]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write  # Required for OIDC
+      contents: read
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5  # Updated to latest version
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+          aws-region: ap-southeast-5
+
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v2
+
+      - name: Build, tag, and push image to Amazon ECR
+        id: build-image
+        env:
+          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+          ECR_REPOSITORY: hsd-mod-dataproc-dev
+          IMAGE_TAG: ${{ github.sha }}
+        run: |
+          docker build -f Dockerfile.dev -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
+          docker tag $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG $ECR_REGISTRY/$ECR_REPOSITORY:latest
+          docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+          docker push $ECR_REGISTRY/$ECR_REPOSITORY:latest
+          echo "image=$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG" >> $GITHUB_OUTPUT
+
+      - name: Install jq
+        run: sudo apt-get update && sudo apt-get install -y jq
+
+      - name: Get current task definition from AWS
+        id: get-task-def
+        run: |
+          # Get the current task definition ARN from the service
+          TASK_DEF_ARN=$(aws ecs describe-services \
+            --cluster ${{ secrets.ECS_CLUSTER_DEV }} \
+            --services ${{ secrets.ECS_SERVICE_DEV }} \
+            --query 'services[0].taskDefinition' \
+            --output text)
+          
+          # Get the task definition JSON
+          aws ecs describe-task-definition \
+            --task-definition $TASK_DEF_ARN \
+            --query 'taskDefinition' > task-definition-current.json
+
+      - name: Update task definition with new image
+        id: update-task-def
+        run: |
+          # Update the image in the task definition and filter out read-only fields
+          jq --arg IMAGE ${{ steps.build-image.outputs.image }} \
+            '{
+              family: .family,
+              taskRoleArn: .taskRoleArn,
+              executionRoleArn: .executionRoleArn,
+              networkMode: .networkMode,
+              containerDefinitions: (.containerDefinitions | map(.image = $IMAGE)),
+              volumes: .volumes,
+              placementConstraints: .placementConstraints,
+              requiresCompatibilities: .requiresCompatibilities,
+              cpu: .cpu,
+              memory: .memory
+            }' \
+            task-definition-current.json > task-definition-updated.json
+
+      - name: Register new task definition
+        id: register-task-def
+        run: |
+          # Register the updated task definition
+          NEW_TASK_DEF_ARN=$(aws ecs register-task-definition \
+            --cli-input-json file://task-definition-updated.json \
+            --query 'taskDefinition.taskDefinitionArn' \
+            --output text)
+          
+          echo "task-definition-arn=$NEW_TASK_DEF_ARN" >> $GITHUB_OUTPUT
+
+      - name: Deploy Amazon ECS task definition
+        run: |
+          # Update the service with the new task definition
+          aws ecs update-service \
+            --cluster ${{ secrets.ECS_CLUSTER_DEV }} \
+            --service ${{ secrets.ECS_SERVICE_DEV }} \
+            --task-definition ${{ steps.register-task-def.outputs.task-definition-arn }} \
+            --force-new-deployment \
+            --query 'service.serviceArn' \
+            --output text
