@@ -332,18 +332,49 @@ def scrape_website(context: AssetExecutionContext) -> List:
 def move_and_rename_all_hansards(
     context: AssetExecutionContext, scrape_website: List[Tuple[str, str, str]]
 ):
-    """Move and rename all hansards from new/ to main downloads folder"""
-    # New PDFs: [('DN-24032025.pdf', 'dewannegara/DN-24032025.pdf', 's3://hansards-dataproc-kd/new/dewannegara/DN-24032025.pdf')]
+    """Move and rename all hansards from new/ to main downloads folder
+    
+    Scans the entire new/ folder in S3 to ensure all files are processed,
+    not just the ones from the current scrape_website run.
+    """
+    # Collect all PDFs in new/ folder across all house folders
+    house_folders = ["dewanrakyat", "dewannegara", "kamarkhas"]
+    all_pdfs_to_process = []
+    
+    for house_folder in house_folders:
+        prefix = f"new/{house_folder}/"
+        try:
+            response = s3_client.list_objects_v2(
+                Bucket=S3_DATAPROC_BUCKET,
+                Prefix=prefix
+            )
+            
+            if 'Contents' in response:
+                for obj in response['Contents']:
+                    s3_key = obj['Key']
+                    # Extract just the filename from the full key
+                    filename = s3_key.split('/')[-1]
+                    if filename.endswith('.pdf'):
+                        all_pdfs_to_process.append((filename, house_folder, s3_key))
+                        context.log.info(f"Found {filename} in new/{house_folder}/")
+        except botocore.exceptions.ClientError as e:
+            context.log.warning(f"Error listing objects in {prefix}: {e}")
+    
+    if not all_pdfs_to_process:
+        context.log.info("No PDFs found in new/ folder to process")
+        return
+    
+    context.log.info(f"Processing {len(all_pdfs_to_process)} PDFs from new/ folder")
 
-    for new_pdf, s3_key, destination_path in scrape_website:
-        context.log.info(f"Moving and renaming {s3_key}")
+    for filename, house_folder, s3_key in all_pdfs_to_process:
+        context.log.info(f"Moving and renaming {filename} from {s3_key}")
 
-        sitting_object = get_sitting_object(new_pdf[:-4])
+        sitting_object = get_sitting_object(filename[:-4])
 
         # Read from S3
         pdf_response = s3_client.get_object(
             Bucket=S3_DATAPROC_BUCKET,
-            Key=f"new/{sitting_object['house_folder']}/{sitting_object['original_filename']}",
+            Key=s3_key,
         )
         new_pdf_name = (
             f"{sitting_object['house_folder']}/{sitting_object['renamed_filename']}.pdf"
@@ -357,7 +388,7 @@ def move_and_rename_all_hansards(
             ContentType="application/pdf",
         )
 
-        context.log.info(f"Renamed and moved {s3_key} to {new_pdf_name}")
+        context.log.info(f"Renamed and moved {filename} to {new_pdf_name}")
 
 @asset(
     partitions_def=sitting_partitions_def,
