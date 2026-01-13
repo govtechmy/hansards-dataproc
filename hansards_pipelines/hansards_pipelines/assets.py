@@ -370,14 +370,25 @@ def move_and_rename_all_hansards(
         context.log.info(f"Moving and renaming {filename} from {s3_key}")
 
         sitting_object = get_sitting_object(filename[:-4])
+        new_pdf_name = (
+            f"{sitting_object['house_folder']}/{sitting_object['renamed_filename']}.pdf"
+        )
+
+        # Check if file already exists in public bucket
+        try:
+            s3_client.head_object(Bucket=S3_PUBLIC_BUCKET, Key=new_pdf_name)
+            context.log.info(f"Skip {filename} - Already exists in public bucket at {new_pdf_name}")
+            continue
+        except botocore.exceptions.ClientError as e:
+            if e.response["Error"]["Code"] != "404":
+                # If it's not a 404, something else went wrong
+                context.log.error(f"Error checking if {new_pdf_name} exists: {e}")
+                raise
 
         # Read from S3
         pdf_response = s3_client.get_object(
             Bucket=S3_DATAPROC_BUCKET,
             Key=s3_key,
-        )
-        new_pdf_name = (
-            f"{sitting_object['house_folder']}/{sitting_object['renamed_filename']}.pdf"
         )
 
         # Rename and move the file
