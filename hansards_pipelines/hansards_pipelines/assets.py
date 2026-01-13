@@ -382,15 +382,26 @@ def move_and_rename_all_hansards(
                 continue
             except botocore.exceptions.ClientError as e:
                 if e.response["Error"]["Code"] != "404":
-                    # If it's not a 404, something else went wrong
-                    context.log.error(f"Error checking if {new_pdf_name} exists: {e}")
+                    # If it's not a 404, something else went wrong - let it propagate to outer handler
                     raise
 
             # Read from S3
-            pdf_response = s3_client.get_object(
-                Bucket=S3_DATAPROC_BUCKET,
-                Key=s3_key,
-            )
+            try:
+                pdf_response = s3_client.get_object(
+                    Bucket=S3_DATAPROC_BUCKET,
+                    Key=s3_key,
+                )
+            except botocore.exceptions.ClientError as e:
+                error_code = e.response["Error"]["Code"]
+                # Handle specific S3 errors that indicate file issues
+                if error_code in ["NoSuchKey", "NoSuchBucket"]:
+                    context.log.error(f"File not found (error: {error_code}): {filename} at {s3_key}")
+                    context.log.info(f"Skipping {filename} and continuing with remaining files")
+                    continue
+                else:
+                    # For other S3 errors, log and re-raise to fail the batch
+                    context.log.error(f"S3 error (code: {error_code}) reading {filename} from {s3_key}: {e}")
+                    raise
 
             # Rename and move the file
             s3_client.put_object(
@@ -401,12 +412,6 @@ def move_and_rename_all_hansards(
             )
 
             context.log.info(f"Renamed and moved {filename} to {new_pdf_name}")
-        except botocore.exceptions.ClientError as e:
-            # Log the error and continue with remaining files
-            # This handles cases where the file was deleted between discovery and processing
-            context.log.error(f"Failed to process {filename} from {s3_key}: {e}")
-            context.log.info(f"Continuing with remaining files")
-            continue
         except Exception as e:
             # Catch any other unexpected errors and continue processing
             context.log.error(f"Unexpected error processing {filename} from {s3_key}: {e}")
