@@ -369,37 +369,49 @@ def move_and_rename_all_hansards(
     for filename, house_folder, s3_key in all_pdfs_to_process:
         context.log.info(f"Moving and renaming {filename} from {s3_key}")
 
-        sitting_object = get_sitting_object(filename[:-4])
-        new_pdf_name = (
-            f"{sitting_object['house_folder']}/{sitting_object['renamed_filename']}.pdf"
-        )
-
-        # Check if file already exists in public bucket
         try:
-            s3_client.head_object(Bucket=S3_PUBLIC_BUCKET, Key=new_pdf_name)
-            context.log.info(f"Skip {filename} - Already exists in public bucket at {new_pdf_name}")
-            continue
+            sitting_object = get_sitting_object(filename[:-4])
+            new_pdf_name = (
+                f"{sitting_object['house_folder']}/{sitting_object['renamed_filename']}.pdf"
+            )
+
+            # Check if file already exists in public bucket
+            try:
+                s3_client.head_object(Bucket=S3_PUBLIC_BUCKET, Key=new_pdf_name)
+                context.log.info(f"Skip {filename} - Already exists in public bucket at {new_pdf_name}")
+                continue
+            except botocore.exceptions.ClientError as e:
+                if e.response["Error"]["Code"] != "404":
+                    # If it's not a 404, something else went wrong
+                    context.log.error(f"Error checking if {new_pdf_name} exists: {e}")
+                    raise
+
+            # Read from S3
+            pdf_response = s3_client.get_object(
+                Bucket=S3_DATAPROC_BUCKET,
+                Key=s3_key,
+            )
+
+            # Rename and move the file
+            s3_client.put_object(
+                Bucket=S3_PUBLIC_BUCKET,
+                Key=new_pdf_name,
+                Body=pdf_response["Body"].read(),
+                ContentType="application/pdf",
+            )
+
+            context.log.info(f"Renamed and moved {filename} to {new_pdf_name}")
         except botocore.exceptions.ClientError as e:
-            if e.response["Error"]["Code"] != "404":
-                # If it's not a 404, something else went wrong
-                context.log.error(f"Error checking if {new_pdf_name} exists: {e}")
-                raise
-
-        # Read from S3
-        pdf_response = s3_client.get_object(
-            Bucket=S3_DATAPROC_BUCKET,
-            Key=s3_key,
-        )
-
-        # Rename and move the file
-        s3_client.put_object(
-            Bucket=S3_PUBLIC_BUCKET,
-            Key=new_pdf_name,
-            Body=pdf_response["Body"].read(),
-            ContentType="application/pdf",
-        )
-
-        context.log.info(f"Renamed and moved {filename} to {new_pdf_name}")
+            # Log the error and continue with remaining files
+            # This handles cases where the file was deleted between discovery and processing
+            context.log.error(f"Failed to process {filename} from {s3_key}: {e}")
+            context.log.info(f"Continuing with remaining files")
+            continue
+        except Exception as e:
+            # Catch any other unexpected errors and continue processing
+            context.log.error(f"Unexpected error processing {filename} from {s3_key}: {e}")
+            context.log.info(f"Continuing with remaining files")
+            continue
 
 @asset(
     partitions_def=sitting_partitions_def,
