@@ -382,7 +382,7 @@ def move_and_rename_all_hansards(
                 continue
             except botocore.exceptions.ClientError as e:
                 if e.response["Error"]["Code"] != "404":
-                    # If it's not a 404, something else went wrong - let it propagate to outer handler
+                    # If it's not a 404, something else went wrong - re-raise it
                     raise
 
             # Read from S3
