@@ -195,7 +195,7 @@ def process_and_insert(prefix: str, key: str, date_str: str) -> bool:
     Returns:
         True if processing and insertion successful, False otherwise
     """
-    s3 = session.client("s3", region_name="ap-southeast-5", config=S3_CONFIG)
+    s3 = session.client("s3", region_name=AWS_REGION, config=S3_CONFIG)
 
     logger.info("Processing: %s", key)
     try:
@@ -221,7 +221,7 @@ def run_batch(prefix: str, start_year: int, end_year: int) -> Dict[str, int]:
     Returns:
         Dictionary with counts of successful, skipped, and failed operations
     """
-    s3 = session.client("s3", region_name="ap-southeast-5", config=S3_CONFIG)
+    s3 = session.client("s3", region_name=AWS_REGION, config=S3_CONFIG)
     paginator = s3.get_paginator("list_objects_v2")
     pages = paginator.paginate(Bucket=S3_TEXTRACT_BUCKET, Prefix=f"{prefix}/")
 
