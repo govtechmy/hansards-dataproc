@@ -344,19 +344,22 @@ def move_and_rename_all_hansards(
     for house_folder in house_folders:
         prefix = f"new/{house_folder}/"
         try:
-            response = s3_client.list_objects_v2(
+            # Use paginator to handle more than 1000 objects
+            paginator = s3_client.get_paginator('list_objects_v2')
+            page_iterator = paginator.paginate(
                 Bucket=S3_DATAPROC_BUCKET,
                 Prefix=prefix
             )
             
-            if 'Contents' in response:
-                for obj in response['Contents']:
-                    s3_key = obj['Key']
-                    # Extract just the filename from the full key
-                    filename = s3_key.split('/')[-1]
-                    if filename.endswith('.pdf'):
-                        all_pdfs_to_process.append((filename, house_folder, s3_key))
-                        context.log.info(f"Found {filename} in new/{house_folder}/")
+            for page in page_iterator:
+                if 'Contents' in page:
+                    for obj in page['Contents']:
+                        s3_key = obj['Key']
+                        # Extract just the filename from the full key
+                        filename = s3_key.split('/')[-1]
+                        if filename.endswith('.pdf'):
+                            all_pdfs_to_process.append((filename, house_folder, s3_key))
+                            context.log.info(f"Found {filename} in new/{house_folder}/")
         except botocore.exceptions.ClientError as e:
             context.log.warning(f"Error listing objects in {prefix}: {e}")
     
