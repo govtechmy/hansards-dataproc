@@ -171,8 +171,12 @@ def insert_to_db(payload: Dict[str, Any]) -> bool:
     except requests.exceptions.Timeout:
         logger.error("Request timeout when inserting to database")
         return False
-    except requests.exceptions.HTTPError:
-        logger.error("Failed to insert: %s - %s", response.status_code, response.text)
+    except requests.exceptions.HTTPError as e:
+        resp = e.response
+        if resp is not None:
+            logger.error("Failed to insert: %s - %s", resp.status_code, resp.text)
+        else:
+            logger.error("Failed to insert due to HTTP error: %s", str(e))
         return False
     except requests.exceptions.RequestException as e:
         logger.error("Request error: %s", str(e))
