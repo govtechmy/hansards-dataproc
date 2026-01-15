@@ -53,7 +53,7 @@ from hansards_pipelines.utils.s3_utils import (
 import psycopg
 from hansards_pipelines.direct_sitting_ingest import ingest_sitting_direct
 
-from hansards_pipelines.settings import S3_DATAPROC_BUCKET, S3_PUBLIC_BUCKET, DEV_API_URL, PROD_API_URL, FRONTEND_URL, FRONTEND_TOKEN
+from hansards_pipelines.settings import S3_DATAPROC_BUCKET, S3_PUBLIC_BUCKET, DEV_API_URL, PROD_API_URL, FRONTEND_URL, FRONTEND_TOKEN, HANSARD_DB_URL
 
 # main pipeline
 # 1. scrape from the website, push pdf to s3 hansards-new
@@ -1035,16 +1035,18 @@ def insert_to_prod_db(context: AssetExecutionContext, prepare_db_payload: dict):
     """
     _insert_to_db(PROD_API_URL, prepare_db_payload, context)
 
-
-
-
-@asset(
-    partitions_def=sitting_partitions_def, deps=[prepare_db_payload], group_name="parse",
-)
-def direct_insert_to_db(context, prepare_db_payload):
-    with psycopg.connect(context.resources.db_dsn) as conn:
+@asset(partitions_def=sitting_partitions_def, deps=[prepare_db_payload], group_name="parse")
+def direct_insert_to_db(context: AssetExecutionContext, prepare_db_payload: dict):
+    with psycopg.connect(HANSARD_DB_URL) as conn:
         with conn.transaction():
             ingest_sitting_direct(prepare_db_payload, conn)
+
+    context.log.info("Direct insert to DB completed")
+
+    return Output(
+        value=True,
+        metadata={"inserted": True},
+    )
 
 
 # @asset(group_name="frontend")
