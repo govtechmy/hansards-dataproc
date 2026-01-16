@@ -340,10 +340,10 @@ def move_and_rename_all_hansards(
 
         sitting_object = get_sitting_object(new_pdf[:-4])
 
-        # Read from S3
+        # Read from S3 using the actual key that was uploaded
         pdf_response = s3_client.get_object(
             Bucket=S3_DATAPROC_BUCKET,
-            Key=f"new/{sitting_object['house_folder']}/{sitting_object['original_filename']}",
+            Key=f"new/{s3_key}",
         )
         new_pdf_name = (
             f"{sitting_object['house_folder']}/{sitting_object['renamed_filename']}.pdf"
