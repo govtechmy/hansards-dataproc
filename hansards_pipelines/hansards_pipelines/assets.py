@@ -332,94 +332,32 @@ def scrape_website(context: AssetExecutionContext) -> List:
 def move_and_rename_all_hansards(
     context: AssetExecutionContext, scrape_website: List[Tuple[str, str, str]]
 ):
-    """Move and rename all hansards from new/ to main downloads folder
-    
-    Scans the entire new/ folder in S3 to ensure all files are processed,
-    not just the ones from the current scrape_website run.
-    """
-    # Collect all PDFs in new/ folder across all house folders
-    house_folders = ["dewanrakyat", "dewannegara", "kamarkhas"]
-    all_pdfs_to_process = []
-    
-    for house_folder in house_folders:
-        prefix = f"new/{house_folder}/"
-        try:
-            # Use paginator to handle more than 1000 objects
-            paginator = s3_client.get_paginator('list_objects_v2')
-            page_iterator = paginator.paginate(
-                Bucket=S3_DATAPROC_BUCKET,
-                Prefix=prefix
-            )
-            
-            for page in page_iterator:
-                if 'Contents' in page:
-                    for obj in page['Contents']:
-                        s3_key = obj['Key']
-                        # Extract just the filename from the full key
-                        filename = s3_key.split('/')[-1]
-                        if filename.endswith('.pdf'):
-                            all_pdfs_to_process.append((filename, house_folder, s3_key))
-                            context.log.info(f"Found {filename} in new/{house_folder}/")
-        except botocore.exceptions.ClientError as e:
-            context.log.warning(f"Error listing objects in {prefix}: {e}")
-    
-    if not all_pdfs_to_process:
-        context.log.info("No PDFs found in new/ folder to process")
-        return
-    
-    context.log.info(f"Processing {len(all_pdfs_to_process)} PDFs from new/ folder")
+    """Move and rename all hansards from new/ to main downloads folder"""
+    # New PDFs: [('DN-24032025.pdf', 'dewannegara/DN-24032025.pdf', 's3://hansards-dataproc-kd/new/dewannegara/DN-24032025.pdf')]
 
-    for filename, house_folder, s3_key in all_pdfs_to_process:
-        context.log.info(f"Moving and renaming {filename} from {s3_key}")
+    for new_pdf, s3_key, destination_path in scrape_website:
+        context.log.info(f"Moving and renaming {s3_key}")
 
-        try:
-            sitting_object = get_sitting_object(filename[:-4])
-            new_pdf_name = (
-                f"{sitting_object['house_folder']}/{sitting_object['renamed_filename']}.pdf"
-            )
+        sitting_object = get_sitting_object(new_pdf[:-4])
 
-            # Check if file already exists in public bucket
-            try:
-                s3_client.head_object(Bucket=S3_PUBLIC_BUCKET, Key=new_pdf_name)
-                context.log.info(f"Skip {filename} - Already exists in public bucket at {new_pdf_name}")
-                continue
-            except botocore.exceptions.ClientError as e:
-                if e.response["Error"]["Code"] != "404":
-                    # If it's not a 404, something else went wrong - re-raise it
-                    raise
+        # Read from S3 using the actual key that was uploaded
+        pdf_response = s3_client.get_object(
+            Bucket=S3_DATAPROC_BUCKET,
+            Key=f"new/{s3_key}",
+        )
+        new_pdf_name = (
+            f"{sitting_object['house_folder']}/{sitting_object['renamed_filename']}.pdf"
+        )
 
-            # Read from S3
-            try:
-                pdf_response = s3_client.get_object(
-                    Bucket=S3_DATAPROC_BUCKET,
-                    Key=s3_key,
-                )
-            except botocore.exceptions.ClientError as e:
-                error_code = e.response["Error"]["Code"]
-                # Handle specific S3 errors that indicate file issues
-                if error_code in ["NoSuchKey", "NoSuchBucket"]:
-                    context.log.error(f"File not found (error: {error_code}): {filename} at {s3_key}")
-                    context.log.info(f"Skipping {filename} and continuing with remaining files")
-                    continue
-                else:
-                    # For other S3 errors, log and re-raise to fail the batch
-                    context.log.error(f"S3 error (code: {error_code}) reading {filename} from {s3_key}: {e}")
-                    raise
+        # Rename and move the file
+        s3_client.put_object(
+            Bucket=S3_PUBLIC_BUCKET,
+            Key=new_pdf_name,
+            Body=pdf_response["Body"].read(),
+            ContentType="application/pdf",
+        )
 
-            # Rename and move the file
-            s3_client.put_object(
-                Bucket=S3_PUBLIC_BUCKET,
-                Key=new_pdf_name,
-                Body=pdf_response["Body"].read(),
-                ContentType="application/pdf",
-            )
-
-            context.log.info(f"Renamed and moved {filename} to {new_pdf_name}")
-        except Exception as e:
-            # Catch any other unexpected errors and continue processing
-            context.log.error(f"Unexpected error processing {filename} from {s3_key}: {e}")
-            context.log.info(f"Continuing with remaining files")
-            continue
+        context.log.info(f"Renamed and moved {s3_key} to {new_pdf_name}")
 
 @asset(
     partitions_def=sitting_partitions_def,
