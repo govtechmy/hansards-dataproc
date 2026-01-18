@@ -51,7 +51,7 @@ from hansards_pipelines.utils.s3_utils import (
 )
 
 import psycopg
-from hansards_pipelines.direct_sitting_ingest import ingest_sitting_direct
+from hansards_pipelines.direct_sitting_ingest import ingest_sitting_to_db
 
 from hansards_pipelines.settings import S3_DATAPROC_BUCKET, S3_PUBLIC_BUCKET, DEV_API_URL, PROD_API_URL, FRONTEND_URL, FRONTEND_TOKEN, HANSARD_DB_URL
 
@@ -1035,18 +1035,26 @@ def insert_to_prod_db(context: AssetExecutionContext, prepare_db_payload: dict):
     """
     _insert_to_db(PROD_API_URL, prepare_db_payload, context)
 
-@asset(partitions_def=sitting_partitions_def, deps=[prepare_db_payload], group_name="parse")
-def direct_insert_to_db(context: AssetExecutionContext, prepare_db_payload: dict):
+@asset(partitions_def=sitting_partitions_def, deps=[prepare_db_payload], group_name="parse",
+)
+def direct_insert_to_db(context: AssetExecutionContext, prepare_db_payload: dict,
+):
+    context.log.info(
+        f"Direct DB insert start | filename={prepare_db_payload['filename']}"
+    )
+
     with psycopg.connect(HANSARD_DB_URL) as conn:
         with conn.transaction():
-            ingest_sitting_direct(prepare_db_payload, conn)
+            ingest_sitting_to_db(prepare_db_payload, conn)
 
-    context.log.info("Direct insert to DB completed")
+    context.log.info("Direct DB insert completed")
 
-    return Output(
-        value=True,
-        metadata={"inserted": True},
-    )
+    return {
+        "filename": prepare_db_payload["filename"],
+        "date": prepare_db_payload["date"],
+        "is_final": prepare_db_payload["is_final"],
+    }
+
 
 
 # @asset(group_name="frontend")
