@@ -199,10 +199,10 @@ def ingest_sitting_to_db(payload: Dict, conn) -> None:
                 """
                 SELECT ah.record_id, a.new_author_id, ah.end_date
                 FROM api_author_history ah
-                JOIN api_author a ON a.id = ah.author_id
+                JOIN api_author a ON a.new_author_id = ah.author_id
                 WHERE a.new_author_id = ANY(%s)
-                  AND ah.start_date <= %s
-                  AND (ah.end_date >= %s OR ah.end_date IS NULL)
+                AND ah.start_date <= %s
+                AND (ah.end_date >= %s OR ah.end_date IS NULL)
                 """,
                 (list(author_ids), date, date),
             )
