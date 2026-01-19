@@ -29,14 +29,26 @@ from requests.adapters import HTTPAdapter, Retry
 
 
 # -------------------------
-# CONSTANTS (SANE DEFAULTS)
+# CATEGORY REGISTRY
 # -------------------------
-BASE_PAGE_URL = "https://www.parlimen.gov.my/hansard-dewan-negara.html"
-PDF_BASE_URL = "https://www.parlimen.gov.my"
+CATEGORIES = {
+    "dewannegara": {
+        "base_url": "https://www.parlimen.gov.my/hansard-dewan-negara.html",
+        "output_dir": Path("arkib/dewannegara"),
+    },
+    "dewanrakyat": {
+        "base_url": "https://www.parlimen.gov.my/hansard-dewan-rakyat.html",
+        "output_dir": Path("arkib/dewanrakyat"),
+    },
+    "kamarkhas": {
+        "base_url": "https://www.parlimen.gov.my/hansard-dewan-khas.html",
+        "output_dir": Path("arkib/kamarkhas"),
+    },
+}
 
+PDF_BASE_URL = "https://www.parlimen.gov.my"
 ROOT_ID = "0"
-OUTPUT_DIR = Path("arkib/dewan-negara")
-REQUEST_DELAY = 0.2  # seconds
+REQUEST_DELAY = 0.2
 LOG_LEVEL = logging.INFO
 
 
@@ -66,9 +78,9 @@ def make_session() -> requests.Session:
     return session
 
 
-def fetch_html(session: requests.Session, node_id: str) -> str:
+def fetch_html(session: requests.Session, base_url: str, node_id: str) -> str:
     resp = session.get(
-        BASE_PAGE_URL,
+        base_url,
         params={"uweb": "dn", "arkib": "yes", "ajx": "1", "id": node_id},
         timeout=20,
     )
@@ -126,6 +138,8 @@ def download_pdf(session: requests.Session, url: str, dest: Path):
 # -------------------------
 def crawl(
     session: requests.Session,
+    base_url: str,
+    output_dir: Path,
     node_id: str,
     visited: Set[str],
 ):
@@ -133,15 +147,18 @@ def crawl(
         return
     visited.add(node_id)
 
-    logging.info("Visiting node %s", node_id)
-    html = fetch_html(session, node_id)
+    logging.info("Visiting %s | node %s", output_dir.name, node_id)
+    html = fetch_html(session, base_url, node_id)
 
     for name, url in extract_pdfs(html):
-        download_pdf(session, url, OUTPUT_DIR / name)
+        download_pdf(session, url, output_dir / name)
 
-    for child in extract_child_ids(html):
+    for child in sorted(
+        extract_child_ids(html),
+        key=lambda x: [int(p) for p in x.split("_")],
+    ):
         if child.startswith(f"{node_id}_") or node_id == ROOT_ID:
-            crawl(session, child, visited)
+            crawl(session, base_url, output_dir, child, visited)
 
 
 def main():
@@ -151,9 +168,19 @@ def main():
     )
 
     session = make_session()
-    crawl(session, ROOT_ID, set())
 
-    logging.info("Done. PDFs saved to %s", OUTPUT_DIR)
+    for category, cfg in CATEGORIES.items():
+        logging.info("=== START %s ===", category)
+        crawl(
+            session=session,
+            base_url=cfg["base_url"],
+            output_dir=cfg["output_dir"],
+            node_id=ROOT_ID,
+            visited=set(),
+        )
+        logging.info("=== END %s ===", category)
+
+    logging.info("All categories completed")
 
 
 if __name__ == "__main__":
