@@ -52,6 +52,9 @@ from hansards_pipelines.utils.s3_utils import (
 
 from hansards_pipelines.settings import S3_DATAPROC_BUCKET, S3_PUBLIC_BUCKET, DEV_API_URL, PROD_API_URL, FRONTEND_URL, FRONTEND_TOKEN
 
+from hansards_pipelines.scrape_arkib import run_scrape
+from hansards_pipelines.move_and_rename_pdf import main as move_arkib_pdfs_to_public_main
+
 # main pipeline
 # 1. scrape from the website, push pdf to s3 hansards-new
 # 2. move and rename hansards-new to main raw hansards folder
@@ -1033,6 +1036,7 @@ def insert_to_prod_db(context: AssetExecutionContext, prepare_db_payload: dict):
     _insert_to_db(PROD_API_URL, prepare_db_payload, context)
 
 
+
 # @asset(group_name="frontend")
 # def revalidate_frontend(context: AssetExecutionContext, config: dict):
 #     """
@@ -1068,3 +1072,31 @@ def insert_to_prod_db(context: AssetExecutionContext, prepare_db_payload: dict):
 #         "hansard_route": hansard_route,
 #     }
 # )
+
+
+# @asset(group_name="scrape")
+# def scrape_website_arkib(context: AssetExecutionContext):
+#     """Scrape arkib Hansard listings and upload PDFs to the dataproc bucket."""
+
+#     context.log.info("Starting arkib scrape")
+#     scrape_arkib_main()
+#     context.log.info("Completed arkib scrape")
+
+    
+@asset(group_name="scrape")
+def scrape_website_arkib(context: AssetExecutionContext):
+    """Scrape arkib Hansard listings (limited for testing)."""
+
+    limit = 10
+
+    context.log.info(f"Starting arkib scrape (limit={limit})")
+    run_scrape(limit=limit)
+    context.log.info("Completed arkib scrape")
+
+@asset(group_name="scrape", deps=[scrape_website_arkib])
+def move_arkib_pdfs_to_public_asset(context: AssetExecutionContext):
+    """Move arkib PDFs from the dataproc bucket to the public bucket with renamed filenames."""
+
+    context.log.info("Moving arkib PDFs to public bucket")
+    move_arkib_pdfs_to_public_main()
+    context.log.info("Completed moving arkib PDFs")

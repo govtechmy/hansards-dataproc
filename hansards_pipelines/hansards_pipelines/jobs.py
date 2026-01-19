@@ -21,3 +21,10 @@ sittings_job = define_asset_job(
         # assets.insert_to_prod_db,
     ],
 )
+
+
+scrape_arkib_job = define_asset_job(
+    "scrape_arkib_website_job",
+    selection=[assets.scrape_website_arkib, assets.move_arkib_pdfs_to_public_asset],
+)
+
