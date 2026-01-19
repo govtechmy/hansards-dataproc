@@ -1,5 +1,11 @@
 """
-Scrape Dewan Negara hansard archive pages and download all linked PDF files.
+Scrape Dewan Negara hansard archive pages and upload into S3.
+
+S3 layout:
+s3://<S3_DATAPROC_BUCKET>/arkib/<house-folder>/<filename>.pdf
+
+Example:
+s3://my-bucket/arkib/dewannegara/dr_2025-01-01.pdf
 
 The public site exposes a simple tree API, e.g.
 * id=0                    -> list of parliaments
@@ -13,25 +19,34 @@ finds into ``arkib/dewan-negara/`` (relative to the working directory).
 Usage (from repository root):
 	python -m hansards_pipelines.scrape_arkib
 """
+
 from __future__ import annotations
 
+import argparse
+import json
 import logging
 import re
 import time
-from pathlib import Path
+from datetime import datetime, timezone
 from typing import Set
 from urllib.parse import urljoin, urlparse
 
+import boto3
 import requests
 import urllib3
+from botocore.exceptions import ClientError
 from bs4 import BeautifulSoup
 from requests.adapters import HTTPAdapter, Retry
 
-import json
-from datetime import datetime, timezone
+from hansards_pipelines.settings import S3_DATAPROC_BUCKET
 
-import argparse
-
+# -------------------------
+# CONFIG
+# -------------------------
+PDF_BASE_URL = "https://www.parlimen.gov.my"
+ROOT_ID = "0"
+REQUEST_DELAY = 0.2
+LOG_LEVEL = logging.INFO
 
 # -------------------------
 # CATEGORY REGISTRY
@@ -39,32 +54,29 @@ import argparse
 CATEGORIES = {
     "dewannegara": {
         "base_url": "https://www.parlimen.gov.my/hansard-dewan-negara.html",
-        "output_dir": Path("arkib/dewannegara"),
+        "uweb": "dn",
+        "s3_prefix": "arkib/dewannegara/",
     },
     "dewanrakyat": {
         "base_url": "https://www.parlimen.gov.my/hansard-dewan-rakyat.html",
-        "output_dir": Path("arkib/dewanrakyat"),
+        "uweb": "dr",
+        "s3_prefix": "arkib/dewanrakyat/",
     },
     "kamarkhas": {
         "base_url": "https://www.parlimen.gov.my/hansard-dewan-khas.html",
-        "output_dir": Path("arkib/kamarkhas"),
+        "uweb": "dr",
+        "s3_prefix": "arkib/kamarkhas/",
     },
 }
-
-PDF_BASE_URL = "https://www.parlimen.gov.my"
-ROOT_ID = "0"
-REQUEST_DELAY = 0.2
-LOG_LEVEL = logging.INFO
-
 
 # -------------------------
 # HTTP
 # -------------------------
 def make_session() -> requests.Session:
     session = requests.Session()
-    session.headers.update({
-        "User-Agent": "hansards-dataproc/arkib-scraper",
-    })
+    session.headers.update(
+        {"User-Agent": "hansards-dataproc/arkib-scraper"}
+    )
 
     retries = Retry(
         total=5,
@@ -75,23 +87,35 @@ def make_session() -> requests.Session:
     session.mount("https://", adapter)
     session.mount("http://", adapter)
 
-    # TLS OFF by default (known cert issues)
-    logging.warning("TLS verification disabled (default)")
+    # TLS OFF (known cert issues)
+    logging.warning("TLS verification disabled")
     session.verify = False
     urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
     return session
 
 
-def fetch_html(session: requests.Session, base_url: str, node_id: str) -> str:
+def fetch_html(
+    session: requests.Session,
+    base_url: str,
+    uweb: str,
+    node_id: str,
+) -> str:
     resp = session.get(
         base_url,
-        params={"uweb": "dn", "arkib": "yes", "ajx": "1", "id": node_id},
+        params={
+            "uweb": uweb,
+            "arkib": "yes",
+            "ajx": "1",
+            "id": node_id,
+        },
         timeout=20,
     )
     resp.raise_for_status()
+
     if REQUEST_DELAY:
         time.sleep(REQUEST_DELAY)
+
     return resp.text
 
 
@@ -101,10 +125,12 @@ def fetch_html(session: requests.Session, base_url: str, node_id: str) -> str:
 def extract_pdfs(html: str):
     soup = BeautifulSoup(html, "html.parser")
 
+    # Normal <a href="...pdf">
     for a in soup.select("a[href$='.pdf'], a[href$='.PDF']"):
         url = urljoin(PDF_BASE_URL, a["href"])
-        yield Path(urlparse(url).path).name, url
+        yield urlparse(url).path.split("/")[-1], url
 
+    # JS-based links
     for u in soup.find_all("userdata"):
         m = re.search(
             r"loadResult\(['\"]([^'\"]+\.pdf)['\"],['\"]([^'\"]+)['\"]\)",
@@ -118,24 +144,35 @@ def extract_pdfs(html: str):
 def extract_child_ids(html: str) -> Set[str]:
     return set(re.findall(r"<item[^>]+id=['\"]([0-9_]+)['\"]", html))
 
+# -------------------------
+# S3 HELPERS
+# -------------------------
+def s3_object_exists(s3, bucket: str, key: str) -> bool:
+    try:
+        s3.head_object(Bucket=bucket, Key=key)
+        return True
+    except ClientError as e:
+        if e.response["Error"]["Code"] in ("404", "NoSuchKey"):
+            return False
+        raise
 
-# -------------------------
-# DOWNLOAD
-# -------------------------
-def download_pdf(session: requests.Session, url: str, dest: Path):
-    if dest.exists():
-        logging.info("Skip %s", dest.name)
+
+def download_pdf_to_s3(
+    session: requests.Session,
+    s3,
+    bucket: str,
+    key: str,
+    url: str,
+):
+    if s3_object_exists(s3, bucket, key):
+        logging.info("Skip (exists): %s", key)
         return
 
-    logging.info("Download %s", dest.name)
-    dest.parent.mkdir(parents=True, exist_ok=True)
+    logging.info("Download → s3://%s/%s", bucket, key)
 
     with session.get(url, stream=True, timeout=60) as r:
         r.raise_for_status()
-        with dest.open("wb") as f:
-            for chunk in r.iter_content(8192):
-                if chunk:
-                    f.write(chunk)
+        s3.upload_fileobj(r.raw, bucket, key)
 
 
 # -------------------------
@@ -143,8 +180,10 @@ def download_pdf(session: requests.Session, url: str, dest: Path):
 # -------------------------
 def crawl(
     session: requests.Session,
+    s3,
     base_url: str,
-    output_dir: Path,
+    uweb: str,
+    s3_prefix: str,
     node_id: str,
     visited: Set[str],
 ):
@@ -152,42 +191,79 @@ def crawl(
         return
     visited.add(node_id)
 
-    logging.info("Visiting %s | node %s", output_dir.name, node_id)
-    html = fetch_html(session, base_url, node_id)
+    logging.info("Visiting %s | node %s", s3_prefix, node_id)
+    html = fetch_html(session, base_url, uweb, node_id)
 
     for name, url in extract_pdfs(html):
-        download_pdf(session, url, output_dir / name)
+        key = f"{s3_prefix}{name}"
+        download_pdf_to_s3(
+            session=session,
+            s3=s3,
+            bucket=S3_DATAPROC_BUCKET,
+            key=key,
+            url=url,
+        )
 
     for child in sorted(
         extract_child_ids(html),
         key=lambda x: [int(p) for p in x.split("_")],
     ):
         if child.startswith(f"{node_id}_") or node_id == ROOT_ID:
-            crawl(session, base_url, output_dir, child, visited)
+            crawl(
+                session,
+                s3,
+                base_url,
+                uweb,
+                s3_prefix,
+                child,
+                visited,
+            )
 
-def write_manifest(root_dir: Path, stats: dict):
+
+# -------------------------
+# MANIFEST
+# -------------------------
+def write_manifest_to_s3(s3, stats: dict):
     manifest = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "categories": stats,
     }
 
-    root_dir.mkdir(parents=True, exist_ok=True)
-    manifest_path = root_dir / "manifest.json"
+    key = "arkib/manifest.json"
 
-    with manifest_path.open("w", encoding="utf-8") as f:
-        json.dump(manifest, f, indent=2)
+    s3.put_object(
+        Bucket=S3_DATAPROC_BUCKET,
+        Key=key,
+        Body=json.dumps(manifest, indent=2).encode("utf-8"),
+        ContentType="application/json",
+    )
 
-    logging.info("Manifest written to %s", manifest_path)
+    logging.info(
+        "Manifest uploaded → s3://%s/%s",
+        S3_DATAPROC_BUCKET,
+        key,
+    )
 
 
+# -------------------------
+# ENTRYPOINT
+# -------------------------
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--category", choices=CATEGORIES.keys(), help="Scrape only one category (default: all)",)
+    parser.add_argument(
+        "--category",
+        choices=CATEGORIES.keys(),
+        help="Scrape only one category (default: all)",
+    )
     args = parser.parse_args()
 
-    logging.basicConfig(level=LOG_LEVEL, format="%(asctime)s [%(levelname)s] %(message)s")
+    logging.basicConfig(
+        level=LOG_LEVEL,
+        format="%(asctime)s [%(levelname)s] %(message)s",
+    )
 
     session = make_session()
+    s3 = boto3.client("s3")
     stats = {}
 
     categories = (
@@ -201,21 +277,22 @@ def main():
 
         crawl(
             session=session,
+            s3=s3,
             base_url=cfg["base_url"],
-            output_dir=cfg["output_dir"],
+            uweb=cfg["uweb"],
+            s3_prefix=cfg["s3_prefix"],
             node_id=ROOT_ID,
             visited=set(),
         )
 
-        pdf_count = len(list(cfg["output_dir"].glob("*.pdf")))
-        stats[category] = {"pdf_count": pdf_count, "scraped_at": datetime.now(timezone.utc).isoformat()}
+        stats[category] = {
+            "s3_prefix": cfg["s3_prefix"],
+        }
 
-        logging.info("=== END %s (%d PDFs) ===", category, pdf_count)
+        logging.info("=== END %s ===", category)
 
-    write_manifest(Path("arkib"), stats)
-
+    write_manifest_to_s3(s3, stats)
     logging.info("Done")
-
 
 
 if __name__ == "__main__":
