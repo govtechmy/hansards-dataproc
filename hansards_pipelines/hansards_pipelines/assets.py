@@ -236,7 +236,7 @@ def scrape_parliamentary_cycle(context: AssetExecutionContext) -> Dict:
     session = requests.Session()
     session.headers.update(headers)
 
-    verify_ssl = None
+    verify_ssl = True
 
     sources = [
         ("https://www.parlimen.gov.my/hansard-dewan-rakyat.html?uweb=dr&arkib=yes", "dewanrakyat"),
@@ -257,7 +257,7 @@ def scrape_parliamentary_cycle(context: AssetExecutionContext) -> Dict:
             context.log.warning(
                 f"[parliamentary_cycle] SSL failed for {parlimen_url}, retrying without verify: {ssl_error}"
             )
-            response = session.get(parlimen_url, verify=False, timeout=60)
+            response = session.get(parlimen_url, verify=verify_ssl, timeout=60)
             response.raise_for_status()
             verify_ssl = False
 
@@ -305,7 +305,7 @@ def scrape_parliamentary_cycle(context: AssetExecutionContext) -> Dict:
 
                 mesyuarat_url = f"{base_url}&ajx=1&id={penggal_id}"
                 try:
-                    mesyuarat_response = session.get(mesyuarat_url, verify=False, timeout=60)
+                    mesyuarat_response = session.get(mesyuarat_url, verify=True, timeout=60)
                     mesyuarat_response.raise_for_status()
                     mesyuarat_xml = ET.fromstring(mesyuarat_response.text)
                 except Exception as e:
@@ -387,19 +387,39 @@ def scrape_parliamentary_cycle(context: AssetExecutionContext) -> Dict:
     for cycle in cycles:
         try:
             response = requests.post(api_endpoint, json=cycle, timeout=30)
+            
             if response.status_code == 409:
                 context.log.debug(f"[parliamentary_cycle] Already exists (409): {cycle}")
                 skipped += 1
                 continue
-            if response.status_code == 400 and "Validation error" in response.text:
-                context.log.debug(f"[parliamentary_cycle] Already exists (400 validation): {cycle}")
-                skipped += 1
-                continue
+            
+            if response.status_code == 400:
+                try:
+                    error_data = response.json()
+                    error_message = error_data.get("detail", "") or error_data.get("message", "")
+                    
+                    if any(keyword in str(error_message).lower() for keyword in ["already exists", "duplicate", "unique constraint"]):
+                        context.log.debug(f"[parliamentary_cycle] Already exists (400 duplicate): {cycle}")
+                        skipped += 1
+                        continue
+                    else:
+                        context.log.error(f"[parliamentary_cycle] API validation error {response.status_code}: {error_message}")
+                        context.log.error(f"[parliamentary_cycle] Payload was: {cycle}")
+                        failed += 1
+                        continue
+                except (ValueError, KeyError):
+                    context.log.error(f"[parliamentary_cycle] API error {response.status_code}: {response.text}")
+                    context.log.error(f"[parliamentary_cycle] Payload was: {cycle}")
+                    failed += 1
+                    continue
+            
             if response.status_code >= 400:
                 context.log.error(f"[parliamentary_cycle] API error {response.status_code}: {response.text}")
                 context.log.error(f"[parliamentary_cycle] Payload was: {cycle}")
                 failed += 1
                 continue
+            
+            # Success responses
             response.raise_for_status()
             if response.status_code == 201:
                 context.log.info(f"[parliamentary_cycle] Inserted: {cycle}")
