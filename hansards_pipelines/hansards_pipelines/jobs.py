@@ -1,6 +1,11 @@
 from dagster import define_asset_job
 from . import assets
 
+parliamentary_cycle_job = define_asset_job(
+    "parliamentary_cycle_job",
+    selection=[assets.scrape_parliamentary_cycle],
+)
+
 scrape_job = define_asset_job(
     "scrape_website_job",
     selection=[assets.scrape_website, assets.move_and_rename_all_hansards],

@@ -12,10 +12,15 @@ scrape_schedule = ScheduleDefinition(
     job=jobs.scrape_job,
     cron_schedule="0 * * * *",  # every hour
 )
+parliamentary_cycle_schedule = ScheduleDefinition(
+    job=jobs.parliamentary_cycle_job,
+    cron_schedule="0 * * * *",  # every hour
+)
 
 defs = Definitions(
     assets=all_assets,
     jobs=[
+        jobs.parliamentary_cycle_job,
         jobs.sittings_job,
         jobs.scrape_job,
     ],
@@ -24,5 +29,5 @@ defs = Definitions(
         my_discord_on_run_frontend_success,
         my_discord_on_run_failure,
     ],
-    schedules=[scrape_schedule],
+    schedules=[scrape_schedule, parliamentary_cycle_schedule],
 )

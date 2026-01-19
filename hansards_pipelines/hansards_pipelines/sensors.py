@@ -25,7 +25,7 @@ from hansards_pipelines.assets import (
     S3_DATAPROC_BUCKET,
     s3_client,
 )
-from hansards_pipelines.jobs import sittings_job
+from hansards_pipelines.jobs import sittings_job, parliamentary_cycle_job
 from hansards_pipelines.assets import FRONTEND_URL
 
 # revalidate_frontend_job = define_asset_job(
@@ -322,4 +322,25 @@ def extract_stack_trace(dagster_event):
     return (
         "\n".join(full_trace) if full_trace else "No stack trace available",
         failure_node_handle,
+    )
+
+
+@sensor(
+    job=parliamentary_cycle_job,
+    minimum_interval_seconds=3600,  # Run once per hour
+    description="Automatically scrape parliamentary cycle data hourly from Portal Rasmi Parlimen"
+)
+def parliamentary_cycle_sensor(context: SensorEvaluationContext):
+    """
+    Sensor that triggers scrape_parliamentary_cycle hourly to keep parliamentary cycle data up-to-date.
+    
+    This ensures new Parliament terms, sessions (Penggal), and meetings (Mesyuarat) are automatically
+    detected and inserted into the database without manual intervention.
+    """
+    return RunRequest(
+        run_key=f"parliamentary_cycle_{context.cursor or '0'}",
+        tags={
+            "source": "parliamentary_cycle_sensor",
+            "triggered_at": context.evaluation_time.isoformat() if context.evaluation_time else "unknown"
+        }
     )

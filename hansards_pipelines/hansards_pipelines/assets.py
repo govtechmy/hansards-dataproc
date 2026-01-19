@@ -22,10 +22,11 @@ import pickle
 from bs4 import BeautifulSoup
 import boto3
 import botocore
+import re
 import requests
 import pandas as pd
 from urllib.parse import urljoin
-from typing import List, Tuple, Dict
+from typing import List, Tuple, Dict, Optional
 from io import BytesIO
 import pdfplumber
 from datetime import datetime
@@ -83,6 +84,10 @@ house_names = ["DR", "DN", "KKDR"]
 sitting_partitions_def = DynamicPartitionsDefinition(name="house_sittings")
 # https://github.com/dagster-io/dagster/discussions/20508
 
+base_url = "https://www.parlimen.gov.my"
+headers = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+}
 
 def _generate_new_hansard_message(
     new_pdfs: list, skipped_pdfs: list, context: AssetExecutionContext
@@ -113,6 +118,310 @@ def _generate_new_hansard_message(
     )
 
 
+def _malay_ordinal_to_number(ordinal_text: str) -> Optional[int]:
+    """Convert Malay ordinal words to numbers"""
+    ordinal_lower = ordinal_text.lower().strip()
+
+    base_numbers = {
+        "pertama": 1, "kedua": 2, "ketiga": 3, "keempat": 4, "kelima": 5,
+        "keenam": 6, "ketujuh": 7, "kelapan": 8, "kesembilan": 9, "kesepuluh": 10
+    }
+    
+    if ordinal_lower in base_numbers:
+        return base_numbers[ordinal_lower]
+    
+    if "belas" in ordinal_lower:
+        if ordinal_lower == "kesebelas":
+            return 11
+        for word, num in base_numbers.items():
+            base_word = word[2:] if word.startswith("ke") else word
+            if base_word in ordinal_lower:
+                return 10 + num
+    
+    if "puluh" in ordinal_lower:
+        parts = ordinal_lower.split("puluh")
+        tens_part = parts[0].strip()
+        ones_part = parts[1].strip() if len(parts) > 1 else ""
+        
+        base_to_tens = {
+            "kedua": 2, "tiga": 3, "keempat": 4, "kelima": 5,
+            "keenam": 6, "ketujuh": 7, "kelapan": 8, "kesembilan": 9
+        }
+        
+        tens_digit = base_to_tens.get(tens_part, 0)
+        ones_digit = 0
+        
+        if ones_part:
+            ones_map = {
+                "satu": 1, "dua": 2, "tiga": 3, "empat": 4, "lima": 5,
+                "enam": 6, "tujuh": 7, "lapan": 8, "sembilan": 9
+            }
+            ones_digit = ones_map.get(ones_part, 0)
+        
+        return tens_digit * 10 + ones_digit
+    
+    return None
+
+
+def _extract_parliament_number_from_text(text: str, context=None) -> Optional[int]:
+    """Extract parliament number from text like 'Parlimen Pertama' or 'Parlimen Kelima Belas' """
+    match = re.search(r"Parlimen\s+Ke[- ](\d+)", text, re.IGNORECASE)
+    if match:
+        return int(match.group(1))
+
+    match = re.search(r"Parlimen\s+(.+?)(?:\s*\(|$)", text, re.IGNORECASE)
+    if match:
+        ordinal_text = match.group(1).strip()
+        number = _malay_ordinal_to_number(ordinal_text)
+        
+        if number:
+            return number
+        elif context:
+            context.log.warning(
+                f"[parliamentary_cycle] could not parse parliament number from: '{text}'"
+            )
+    
+    return None
+
+
+def _convert_penggal_to_number(text: str, context=None) -> Optional[int]:
+    """Convert 'Penggal' (session) to numbers"""
+    
+    match = re.search(r"Penggal\s+Ke[- ](\d+)", text, re.IGNORECASE)
+    if match:
+        return int(match.group(1))
+
+    match = re.search(r"Penggal\s+(.+?)(?:\s*\(|$)", text, re.IGNORECASE)
+    if match:
+        ordinal_text = match.group(1).strip()
+        number = _malay_ordinal_to_number(ordinal_text)
+        if number:
+            return number
+        elif context:
+            context.log.warning(
+                f"[parliamentary_cycle] could not parse penggal number from: '{text}'"
+            )
+    
+    return None
+
+
+def _convert_mesyuarat_to_number(mesyuarat_word: str, context=None) -> int:
+    """Convert ordinal words for 'Mesyuarat' (meeting) to numbers """
+    mesyuarat_lower = mesyuarat_word.lower().strip()
+    
+    if mesyuarat_lower == "khas":
+        return 0
+    
+    number = _malay_ordinal_to_number(mesyuarat_lower)
+    
+    if number:
+        return number
+
+    if context:
+        context.log.warning(
+            f"[parliamentary_cycle] could not parse mesyuarat number from: '{mesyuarat_word}'"
+        )
+    
+    return 0
+
+@asset(group_name="scrape")
+def scrape_parliamentary_cycle(context: AssetExecutionContext) -> Dict:
+    """
+    Scrape parliamentary cycle data (Parlimen, Penggal, Mesyuarat + date ranges)
+    from Portal Rasmi Parlimen for DR, DN, KKDR and upsert via
+    POST /api/parliamentary-cycle.
+    """
+    import xml.etree.ElementTree as ET
+
+    session = requests.Session()
+    session.headers.update(headers)
+
+    verify_ssl = None
+
+    sources = [
+        ("https://www.parlimen.gov.my/hansard-dewan-rakyat.html?uweb=dr&arkib=yes", "dewanrakyat"),
+        ("https://www.parlimen.gov.my/hansard-dewan-negara.html?uweb=dn&arkib=yes", "dewannegara"),
+        ("https://www.parlimen.gov.my/hansard-dewan-khas.html?uweb=dr&arkib=yes", "kamarkhas"),
+    ]
+
+    all_cycles: List[Dict] = []
+
+    for base_url, house_code in sources:
+        context.log.info(f"[parliamentary_cycle] Scraping {house_code} from {base_url}")
+
+        try:
+            parlimen_url = f"{base_url}&ajx=0"
+            response = session.get(parlimen_url, verify=verify_ssl, timeout=60)
+            response.raise_for_status()
+        except requests.exceptions.SSLError as ssl_error:
+            context.log.warning(
+                f"[parliamentary_cycle] SSL failed for {parlimen_url}, retrying without verify: {ssl_error}"
+            )
+            response = session.get(parlimen_url, verify=False, timeout=60)
+            response.raise_for_status()
+            verify_ssl = False
+
+        try:
+            root_xml = ET.fromstring(response.text)
+        except ET.ParseError as e:
+            context.log.error(f"[parliamentary_cycle] Failed to parse XML for {house_code}: {e}")
+            continue
+
+        parlimens = root_xml.findall('.//item')
+        context.log.info(f"[parliamentary_cycle] Found {len(parlimens)} Parlimen entries for {house_code}")
+
+        for parlimen_item in parlimens:
+            parlimen_id = parlimen_item.get('id')
+            parlimen_text = parlimen_item.get('text')
+        
+            parlimen_number = _extract_parliament_number_from_text(parlimen_text, context)
+            if not parlimen_number:
+                context.log.debug(f"[parliamentary_cycle] Skip Parlimen: {parlimen_text}")
+                continue
+            
+            context.log.info(f"[parliamentary_cycle] Parlimen {parlimen_number}: {parlimen_text}")
+
+            penggal_url = f"{base_url}&ajx=1&id={parlimen_id}"
+            try:
+                penggal_response = session.get(penggal_url, verify=False, timeout=60)
+                penggal_response.raise_for_status()
+                penggal_xml = ET.fromstring(penggal_response.text)
+            except Exception as e:
+                context.log.error(f"[parliamentary_cycle] Failed to get Penggals for {parlimen_id}: {e}")
+                continue
+
+            penggals = penggal_xml.findall('.//item')
+            
+            for penggal_item in penggals:
+                penggal_id = penggal_item.get('id')
+                penggal_text = penggal_item.get('text')
+                
+                penggal_number = _convert_penggal_to_number(penggal_text, context)
+                if not penggal_number:
+                    context.log.debug(f"[parliamentary_cycle] Skip Penggal: {penggal_text}")
+                    continue
+
+                context.log.info(f"[parliamentary_cycle] Penggal {penggal_number}")
+
+                mesyuarat_url = f"{base_url}&ajx=1&id={penggal_id}"
+                try:
+                    mesyuarat_response = session.get(mesyuarat_url, verify=False, timeout=60)
+                    mesyuarat_response.raise_for_status()
+                    mesyuarat_xml = ET.fromstring(mesyuarat_response.text)
+                except Exception as e:
+                    context.log.error(f"[parliamentary_cycle] Failed to get Mesyuarats for {penggal_id}: {e}")
+                    continue
+
+                mesyuarats = mesyuarat_xml.findall('.//item')
+                
+                for mesyuarat_item in mesyuarats:
+                    mesyuarat_text = mesyuarat_item.get('text')
+ 
+                    # Captures: Mesyuarat <Word> (DD/MM/YYYY - DD/MM/YYYY)
+                    match = re.search(
+                        r'Mesyuarat\s+([A-Za-z\s]+?)\s+\((\d{1,2}/\d{1,2}/\d{4})\s*-\s*(\d{1,2}/\d{1,2}/\d{4})\)',
+                        mesyuarat_text,
+                        re.IGNORECASE
+                    )
+                    
+                    if not match:
+                        context.log.debug(f"[parliamentary_cycle] Skip Mesyuarat (no dates): {mesyuarat_text}")
+                        continue
+                    
+                    mesyuarat_word = match.group(1).strip()
+                    start_str = match.group(2)
+                    end_str = match.group(3)
+                    
+                    try:
+                        start_date = datetime.strptime(start_str, "%d/%m/%Y").date().isoformat()
+                        end_date = datetime.strptime(end_str, "%d/%m/%Y").date().isoformat()
+                    except ValueError as e:
+                        context.log.warning(
+                            f"[parliamentary_cycle] Bad date format: {start_str} or {end_str} - {e}"
+                        )
+                        continue
+                    
+                    mesyuarat_number = _convert_mesyuarat_to_number(mesyuarat_word, context)
+
+                    house_map = {"dewanrakyat": 0, "dewannegara": 1, "kamarkhas": 2}
+                    house_number = house_map.get(house_code)
+                    
+                    if house_number is None:
+                        context.log.debug(
+                            f"[parliamentary_cycle] Skipping unrecognized house: {house_code}"
+                        )
+                        continue
+
+                    cycle = {
+                        "start_date": start_date,
+                        "end_date": end_date,
+                        "house": house_number,
+                        "term": parlimen_number,
+                        "session": penggal_number,
+                        "meeting": mesyuarat_number,
+                    }
+                    
+                    all_cycles.append(cycle)
+                    context.log.info(
+                        f"[parliamentary_cycle] Mesyuarat {mesyuarat_number}: {start_date} - {end_date}"
+                    )
+
+    unique = {}
+    for c in all_cycles:
+        key = (c["house"], c["term"], c["session"], c["meeting"], c["start_date"], c["end_date"])
+        unique[key] = c
+
+    cycles = list(unique.values())
+
+    context.log.info(f"[parliamentary_cycle] Total unique cycles: {len(cycles)}")
+
+    # Upsert via API
+    api_base_url = DEV_API_URL
+    if not api_base_url:
+        raise ValueError("API base URL is not configured.")
+
+    api_endpoint = f"{api_base_url}/api/parliamentary-cycle"
+    context.log.info(f"[parliamentary_cycle] Using API endpoint: {api_endpoint}")
+    inserted = updated = skipped = failed = 0
+
+    for cycle in cycles:
+        try:
+            response = requests.post(api_endpoint, json=cycle, timeout=30)
+            if response.status_code == 409:
+                context.log.debug(f"[parliamentary_cycle] Already exists (409): {cycle}")
+                skipped += 1
+                continue
+            if response.status_code == 400 and "Validation error" in response.text:
+                context.log.debug(f"[parliamentary_cycle] Already exists (400 validation): {cycle}")
+                skipped += 1
+                continue
+            if response.status_code >= 400:
+                context.log.error(f"[parliamentary_cycle] API error {response.status_code}: {response.text}")
+                context.log.error(f"[parliamentary_cycle] Payload was: {cycle}")
+                failed += 1
+                continue
+            response.raise_for_status()
+            if response.status_code == 201:
+                context.log.info(f"[parliamentary_cycle] Inserted: {cycle}")
+                inserted += 1
+            elif response.status_code == 200:
+                context.log.info(f"[parliamentary_cycle] Updated: {cycle}")
+                updated += 1
+        except Exception as e:
+            context.log.error(f"[parliamentary_cycle] Failed to upsert cycle: {e}")
+            failed += 1
+
+    summary = {
+        "total_scraped": len(cycles),
+        "inserted": inserted,
+        "updated": updated,
+        "skipped": skipped,
+        "failed": failed,
+    }
+    context.log.info(f"[parliamentary_cycle] Summary: {summary}")
+    return summary
+
+
 @asset(group_name="scrape")
 def scrape_website(context: AssetExecutionContext) -> List:
     """Scrape list of PDFs and add new partition if doesn't exist
@@ -120,11 +429,6 @@ def scrape_website(context: AssetExecutionContext) -> List:
 
     # sqs = boto3.client("sqs")
     # queue_url = "https://sqs.ap-southeast-1.amazonaws.com/761623003862/NewHansardsQueue"
-
-    base_url = "https://www.parlimen.gov.my"
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
-    }
 
     # Configure requests session with SSL settings
     session = requests.Session()
