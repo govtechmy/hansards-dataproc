@@ -68,7 +68,8 @@ def move_arkib_pdfs_to_public(
                 ContentType="application/pdf",
             )
 
-            logging.info("Copied s3://%s/%s -> s3://%s/%s", S3_DATAPROC_BUCKET, source_key, S3_PUBLIC_BUCKET, dest_key)
+            logging.info("Copied %s -> %s", source_key, dest_key)
+
 
             results.append(
                 {

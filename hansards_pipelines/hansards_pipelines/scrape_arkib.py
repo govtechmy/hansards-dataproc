@@ -145,6 +145,7 @@ def crawl(
     collected_items: List[Dict],
     counter: Dict[str, int],
     limit: int | None,
+    seen_files: set[str],
 ):
     if limit is not None and counter["count"] >= limit:
         return
@@ -155,10 +156,16 @@ def crawl(
 
     logging.info("Visiting %s | node %s", house_folder, node_id)
     html = fetch_html(session, base_url, uweb, node_id)
-
+        
     for filename, url in extract_pdfs(html):
         if limit is not None and counter["count"] >= limit:
             return
+
+        key_id = f"{house_folder}/{filename}"
+        if key_id in seen_files:
+            continue
+
+        seen_files.add(key_id)
 
         key = f"arkib/{house_folder}/{filename}"
         download_pdf_to_s3(
@@ -197,6 +204,7 @@ def crawl(
                 collected_items,
                 counter,
                 limit,
+                seen_files=seen_files,
             )
 
 
@@ -227,6 +235,7 @@ def run_scrape(
 
     collected_items: List[Dict] = []
     counter = {"count": 0}
+    seen_files: set[str] = set()
 
     categories = (
         {category: CATEGORIES[category]}
@@ -248,6 +257,7 @@ def run_scrape(
             collected_items=collected_items,
             counter=counter,
             limit=limit,
+            seen_files=seen_files,
         )
 
         logging.info("=== END %s ===", name)
