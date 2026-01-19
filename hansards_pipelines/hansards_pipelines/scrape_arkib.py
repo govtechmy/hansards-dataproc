@@ -14,7 +14,7 @@ The public site exposes a simple tree API, e.g.
 * id=0_15_3_2             -> meeting (mesyuarat) containing PDF links
 
 This script walks that tree starting from id=0 and downloads every PDF it
-finds into ``arkib/dewan-negara/`` (relative to the working directory).
+finds into ``arkib/house-name/`` (relative to the working directory).
 
 Usage (from repository root):
 	python -m hansards_pipelines.scrape_arkib
@@ -48,9 +48,6 @@ ROOT_ID = "0"
 REQUEST_DELAY = 0.2
 LOG_LEVEL = logging.INFO
 
-# -------------------------
-# CATEGORY REGISTRY
-# -------------------------
 CATEGORIES = {
     "dewannegara": {
         "base_url": "https://www.parlimen.gov.my/hansard-dewan-negara.html",
@@ -69,9 +66,6 @@ CATEGORIES = {
     },
 }
 
-# -------------------------
-# HTTP
-# -------------------------
 def make_session() -> requests.Session:
     session = requests.Session()
     session.headers.update(
@@ -112,10 +106,6 @@ def fetch_html(session, base_url, uweb, node_id) -> str:
 
     return resp.text
 
-
-# -------------------------
-# PARSING
-# -------------------------
 def extract_pdfs(html: str):
     soup = BeautifulSoup(html, "html.parser")
 
@@ -153,9 +143,6 @@ def download_pdf_to_s3(session, s3, bucket, key, url):
         )
 
 
-# -------------------------
-# CRAWLER
-# -------------------------
 def crawl(
     session,
     s3,
@@ -207,9 +194,6 @@ def crawl(
             )
 
 
-# -------------------------
-# MANIFEST
-# -------------------------
 def write_manifest_to_s3(s3, items: List[Dict]):
     manifest = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -228,9 +212,6 @@ def write_manifest_to_s3(s3, items: List[Dict]):
     logging.info("Manifest written -> s3://%s/%s", S3_DATAPROC_BUCKET, key)
 
 
-# -------------------------
-# ENTRYPOINT
-# -------------------------
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--category", choices=CATEGORIES.keys())

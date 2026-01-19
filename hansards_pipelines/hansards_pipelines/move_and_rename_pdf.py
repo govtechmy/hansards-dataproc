@@ -23,9 +23,6 @@ from hansards_pipelines.settings import S3_DATAPROC_BUCKET, S3_PUBLIC_BUCKET
 from hansards_pipelines.utils.s3_utils import s3_object_exists
 from hansards_pipelines.utils.text_utils import get_sitting_object
 
-# -------------------------
-# CONFIG
-# -------------------------
 MANIFEST_KEY = "arkib/manifest.json"
 
 logging.basicConfig(
@@ -33,9 +30,6 @@ logging.basicConfig(
     format="%(asctime)s [%(levelname)s] %(message)s",
 )
 
-# -------------------------
-# CORE LOGIC (REUSABLE)
-# -------------------------
 def move_arkib_pdfs_to_public(
     s3,
     items: List[Tuple[str, str]],
@@ -59,14 +53,8 @@ def move_arkib_pdfs_to_public(
         sitting = get_sitting_object(filename.replace(".pdf", ""))
         dest_key = f"arkib/{sitting['house_folder']}/{sitting['renamed_filename']}.pdf"
 
-        logging.info("Copy %s -> %s", source_key, dest_key)
-
         if not s3_object_exists(s3, S3_DATAPROC_BUCKET, source_key):
-            logging.warning(
-                "Source not found: s3://%s/%s",
-                S3_DATAPROC_BUCKET,
-                source_key,
-            )
+            logging.warning("Skipped (source missing): s3://%s/%s", S3_DATAPROC_BUCKET, source_key)
             continue
 
         try:
@@ -80,18 +68,17 @@ def move_arkib_pdfs_to_public(
                 ContentType="application/pdf",
             )
 
+            logging.info("Copied s3://%s/%s -> s3://%s/%s", S3_DATAPROC_BUCKET, source_key, S3_PUBLIC_BUCKET, dest_key)
+
             results.append(
                 {
                     "source": source_key,
                     "destination": dest_key,
                 }
             )
+
         except ClientError as exc:
-            logging.error(
-                "Failed copy %s -> %s",
-                source_key,
-                dest_key,
-            )
+            logging.error("Failed to copy s3://%s/%s -> s3://%s/%s", S3_DATAPROC_BUCKET, source_key, S3_PUBLIC_BUCKET, dest_key)
             raise exc
 
     return results
