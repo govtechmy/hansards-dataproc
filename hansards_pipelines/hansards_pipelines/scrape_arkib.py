@@ -40,9 +40,7 @@ from requests.adapters import HTTPAdapter, Retry
 from hansards_pipelines.settings import S3_DATAPROC_BUCKET
 from hansards_pipelines.utils.s3_utils import upload_stream_to_s3
 
-# -------------------------
-# CONFIG
-# -------------------------
+
 PDF_BASE_URL = "https://www.parlimen.gov.my"
 ROOT_ID = "0"
 REQUEST_DELAY = 0.2
@@ -127,9 +125,6 @@ def extract_child_ids(html: str) -> Set[str]:
     return set(re.findall(r"<item[^>]+id=['\"]([0-9_]+)['\"]", html))
 
 
-# -------------------------
-# DOWNLOAD
-# -------------------------
 def download_pdf_to_s3(session, s3, bucket, key, url):
     logging.info("Uploading -> s3://%s/%s", bucket, key)
     with session.get(url, stream=True, timeout=60) as r:
