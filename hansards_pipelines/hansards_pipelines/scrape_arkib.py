@@ -27,6 +27,11 @@ import urllib3
 from bs4 import BeautifulSoup
 from requests.adapters import HTTPAdapter, Retry
 
+import json
+from datetime import datetime, timezone
+
+import argparse
+
 
 # -------------------------
 # CATEGORY REGISTRY
@@ -160,17 +165,40 @@ def crawl(
         if child.startswith(f"{node_id}_") or node_id == ROOT_ID:
             crawl(session, base_url, output_dir, child, visited)
 
+def write_manifest(root_dir: Path, stats: dict):
+    manifest = {
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "categories": stats,
+    }
+
+    root_dir.mkdir(parents=True, exist_ok=True)
+    manifest_path = root_dir / "manifest.json"
+
+    with manifest_path.open("w", encoding="utf-8") as f:
+        json.dump(manifest, f, indent=2)
+
+    logging.info("Manifest written to %s", manifest_path)
+
 
 def main():
-    logging.basicConfig(
-        level=LOG_LEVEL,
-        format="%(asctime)s [%(levelname)s] %(message)s",
-    )
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--category", choices=CATEGORIES.keys(), help="Scrape only one category (default: all)",)
+    args = parser.parse_args()
+
+    logging.basicConfig(level=LOG_LEVEL, format="%(asctime)s [%(levelname)s] %(message)s")
 
     session = make_session()
+    stats = {}
 
-    for category, cfg in CATEGORIES.items():
+    categories = (
+        {args.category: CATEGORIES[args.category]}
+        if args.category
+        else CATEGORIES
+    )
+
+    for category, cfg in categories.items():
         logging.info("=== START %s ===", category)
+
         crawl(
             session=session,
             base_url=cfg["base_url"],
@@ -178,9 +206,16 @@ def main():
             node_id=ROOT_ID,
             visited=set(),
         )
-        logging.info("=== END %s ===", category)
 
-    logging.info("All categories completed")
+        pdf_count = len(list(cfg["output_dir"].glob("*.pdf")))
+        stats[category] = {"pdf_count": pdf_count, "scraped_at": datetime.now(timezone.utc).isoformat()}
+
+        logging.info("=== END %s (%d PDFs) ===", category, pdf_count)
+
+    write_manifest(Path("arkib"), stats)
+
+    logging.info("Done")
+
 
 
 if __name__ == "__main__":
