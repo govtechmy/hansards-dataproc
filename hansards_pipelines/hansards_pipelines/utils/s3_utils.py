@@ -1,7 +1,9 @@
 import csv
 import json
 import io
-from typing import List
+from typing import List, Optional
+
+from botocore.exceptions import ClientError
 
 
 def build_path(current_key: str, filename: str, sitting_object: dict):
@@ -48,3 +50,20 @@ def prepare_csv_for_s3(text_lines: List[str]) -> str:
     writer.writerows(text_lines)
     output.seek(0)
     return output.getvalue()
+
+
+def s3_object_exists(s3_client, bucket: str, key: str) -> bool:
+    """Return True if the object exists in S3."""
+    try:
+        s3_client.head_object(Bucket=bucket, Key=key)
+        return True
+    except ClientError as e:
+        if e.response.get("Error", {}).get("Code") in ("404", "NoSuchKey"):
+            return False
+        raise
+
+
+def upload_stream_to_s3(s3_client, bucket: str, key: str, stream, content_type: Optional[str] = None):
+    """Upload a file-like object to S3, optionally setting content type."""
+    extra_args = {"ContentType": content_type} if content_type else None
+    s3_client.upload_fileobj(stream, bucket, key, ExtraArgs=extra_args or {})
