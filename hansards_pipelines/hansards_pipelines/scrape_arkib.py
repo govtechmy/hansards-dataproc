@@ -187,8 +187,7 @@ def crawl(
 
     for child in sorted(
         extract_child_ids(html),
-        key=lambda x: [int(p) for p in x.split("_") if p.isdigit()],
-
+        key=lambda x: [int(p) for p in x.split("_") if p.isdigit()]
     ):
         if limit is not None and counter["count"] >= limit:
             return
