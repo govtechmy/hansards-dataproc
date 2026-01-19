@@ -13,6 +13,11 @@ scrape_schedule = ScheduleDefinition(
     cron_schedule="0 * * * *",  # every hour
 )
 
+scrape_arkib_schedule = ScheduleDefinition(
+    job=jobs.scrape_arkib_job,
+    cron_schedule="0 16 * * 5",  # Sat 00:00 MY
+)
+
 defs = Definitions(
     assets=all_assets,
     jobs=[
@@ -25,5 +30,8 @@ defs = Definitions(
         my_discord_on_run_frontend_success,
         my_discord_on_run_failure,
     ],
-    schedules=[scrape_schedule],
+    schedules=[
+        scrape_schedule,
+        scrape_arkib_schedule,
+    ],
 )
