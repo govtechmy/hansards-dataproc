@@ -28,7 +28,7 @@ import logging
 import re
 import time
 from datetime import datetime, timezone
-from typing import Set
+from typing import Set, List, Dict
 from urllib.parse import urljoin, urlparse
 
 import boto3
@@ -38,7 +38,7 @@ from bs4 import BeautifulSoup
 from requests.adapters import HTTPAdapter, Retry
 
 from hansards_pipelines.settings import S3_DATAPROC_BUCKET
-from hansards_pipelines.utils.s3_utils import s3_object_exists, upload_stream_to_s3
+from hansards_pipelines.utils.s3_utils import upload_stream_to_s3
 
 # -------------------------
 # CONFIG
@@ -55,17 +55,17 @@ CATEGORIES = {
     "dewannegara": {
         "base_url": "https://www.parlimen.gov.my/hansard-dewan-negara.html",
         "uweb": "dn",
-        "s3_prefix": "arkib/dewannegara/",
+        "house_folder": "dewannegara",
     },
     "dewanrakyat": {
         "base_url": "https://www.parlimen.gov.my/hansard-dewan-rakyat.html",
         "uweb": "dr",
-        "s3_prefix": "arkib/dewanrakyat/",
+        "house_folder": "dewanrakyat",
     },
     "kamarkhas": {
         "base_url": "https://www.parlimen.gov.my/hansard-dewan-khas.html",
         "uweb": "dr",
-        "s3_prefix": "arkib/kamarkhas/",
+        "house_folder": "kamarkhas",
     },
 }
 
@@ -87,7 +87,6 @@ def make_session() -> requests.Session:
     session.mount("https://", adapter)
     session.mount("http://", adapter)
 
-    # TLS OFF (known cert issues)
     logging.warning("TLS verification disabled")
     session.verify = False
     urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -95,12 +94,7 @@ def make_session() -> requests.Session:
     return session
 
 
-def fetch_html(
-    session: requests.Session,
-    base_url: str,
-    uweb: str,
-    node_id: str,
-) -> str:
+def fetch_html(session, base_url, uweb, node_id) -> str:
     resp = session.get(
         base_url,
         params={
@@ -125,12 +119,10 @@ def fetch_html(
 def extract_pdfs(html: str):
     soup = BeautifulSoup(html, "html.parser")
 
-    # Normal <a href="...pdf">
     for a in soup.select("a[href$='.pdf'], a[href$='.PDF']"):
         url = urljoin(PDF_BASE_URL, a["href"])
         yield urlparse(url).path.split("/")[-1], url
 
-    # JS-based links
     for u in soup.find_all("userdata"):
         m = re.search(
             r"loadResult\(['\"]([^'\"]+\.pdf)['\"],['\"]([^'\"]+)['\"]\)",
@@ -144,18 +136,12 @@ def extract_pdfs(html: str):
 def extract_child_ids(html: str) -> Set[str]:
     return set(re.findall(r"<item[^>]+id=['\"]([0-9_]+)['\"]", html))
 
-# -------------------------
-# S3 HELPERS
-# -------------------------
-def download_pdf_to_s3(
-    session: requests.Session,
-    s3,
-    bucket: str,
-    key: str,
-    url: str,
-):
-    logging.info("Uploading (overwrite) -> s3://%s/%s", bucket, key)
 
+# -------------------------
+# DOWNLOAD
+# -------------------------
+def download_pdf_to_s3(session, s3, bucket, key, url):
+    logging.info("Uploading -> s3://%s/%s", bucket, key)
     with session.get(url, stream=True, timeout=60) as r:
         r.raise_for_status()
         upload_stream_to_s3(
@@ -167,34 +153,41 @@ def download_pdf_to_s3(
         )
 
 
-
 # -------------------------
 # CRAWLER
 # -------------------------
 def crawl(
-    session: requests.Session,
+    session,
     s3,
-    base_url: str,
-    uweb: str,
-    s3_prefix: str,
-    node_id: str,
-    visited: Set[str],
+    base_url,
+    uweb,
+    house_folder,
+    node_id,
+    visited,
+    collected_items: List[Dict],
 ):
     if node_id in visited:
         return
     visited.add(node_id)
 
-    logging.info("Visiting %s | node %s", s3_prefix, node_id)
+    logging.info("Visiting %s | node %s", house_folder, node_id)
     html = fetch_html(session, base_url, uweb, node_id)
 
-    for name, url in extract_pdfs(html):
-        key = f"{s3_prefix}{name}"
+    for filename, url in extract_pdfs(html):
+        key = f"arkib/{house_folder}/{filename}"
         download_pdf_to_s3(
             session=session,
             s3=s3,
             bucket=S3_DATAPROC_BUCKET,
             key=key,
             url=url,
+        )
+
+        collected_items.append(
+            {
+                "house_folder": house_folder,
+                "filename": filename,
+            }
         )
 
     for child in sorted(
@@ -207,19 +200,20 @@ def crawl(
                 s3,
                 base_url,
                 uweb,
-                s3_prefix,
+                house_folder,
                 child,
                 visited,
+                collected_items,
             )
 
 
 # -------------------------
 # MANIFEST
 # -------------------------
-def write_manifest_to_s3(s3, stats: dict):
+def write_manifest_to_s3(s3, items: List[Dict]):
     manifest = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "categories": stats,
+        "items": items,
     }
 
     key = "arkib/manifest.json"
@@ -231,11 +225,7 @@ def write_manifest_to_s3(s3, stats: dict):
         ContentType="application/json",
     )
 
-    logging.info(
-        "Manifest uploaded → s3://%s/%s",
-        S3_DATAPROC_BUCKET,
-        key,
-    )
+    logging.info("Manifest written -> s3://%s/%s", S3_DATAPROC_BUCKET, key)
 
 
 # -------------------------
@@ -243,23 +233,16 @@ def write_manifest_to_s3(s3, stats: dict):
 # -------------------------
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "--category",
-        choices=CATEGORIES.keys(),
-        help="Scrape only one category (default: all)",
-    )
+    parser.add_argument("--category", choices=CATEGORIES.keys())
     args = parser.parse_args()
 
-    logging.basicConfig(
-        level=LOG_LEVEL,
-        format="%(asctime)s [%(levelname)s] %(message)s",
-    )
+    logging.basicConfig(level=LOG_LEVEL, format="%(asctime)s [%(levelname)s] %(message)s")
 
     session = make_session()
     s3 = boto3.client("s3")
     s3.head_bucket(Bucket=S3_DATAPROC_BUCKET)
 
-    stats = {}
+    collected_items: List[Dict] = []
 
     categories = (
         {args.category: CATEGORIES[args.category]}
@@ -267,26 +250,21 @@ def main():
         else CATEGORIES
     )
 
-    for category, cfg in categories.items():
-        logging.info("=== START %s ===", category)
-
+    for name, cfg in categories.items():
+        logging.info("=== START %s ===", name)
         crawl(
             session=session,
             s3=s3,
             base_url=cfg["base_url"],
             uweb=cfg["uweb"],
-            s3_prefix=cfg["s3_prefix"],
+            house_folder=cfg["house_folder"],
             node_id=ROOT_ID,
             visited=set(),
+            collected_items=collected_items,
         )
+        logging.info("=== END %s ===", name)
 
-        stats[category] = {
-            "s3_prefix": cfg["s3_prefix"],
-        }
-
-        logging.info("=== END %s ===", category)
-
-    write_manifest_to_s3(s3, stats)
+    write_manifest_to_s3(s3, collected_items)
     logging.info("Done")
 
 
