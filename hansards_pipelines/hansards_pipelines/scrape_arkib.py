@@ -34,11 +34,11 @@ from urllib.parse import urljoin, urlparse
 import boto3
 import requests
 import urllib3
-from botocore.exceptions import ClientError
 from bs4 import BeautifulSoup
 from requests.adapters import HTTPAdapter, Retry
 
 from hansards_pipelines.settings import S3_DATAPROC_BUCKET
+from hansards_pipelines.utils.s3_utils import s3_object_exists, upload_stream_to_s3
 
 # -------------------------
 # CONFIG
@@ -147,16 +147,6 @@ def extract_child_ids(html: str) -> Set[str]:
 # -------------------------
 # S3 HELPERS
 # -------------------------
-def s3_object_exists(s3, bucket: str, key: str) -> bool:
-    try:
-        s3.head_object(Bucket=bucket, Key=key)
-        return True
-    except ClientError as e:
-        if e.response["Error"]["Code"] in ("404", "NoSuchKey"):
-            return False
-        raise
-
-
 def download_pdf_to_s3(
     session: requests.Session,
     s3,
@@ -168,11 +158,17 @@ def download_pdf_to_s3(
         logging.info("Skip (exists): %s", key)
         return
 
-    logging.info("Download → s3://%s/%s", bucket, key)
+    logging.info("Downloaded -> s3://%s/%s", bucket, key)
 
     with session.get(url, stream=True, timeout=60) as r:
         r.raise_for_status()
-        s3.upload_fileobj(r.raw, bucket, key)
+        upload_stream_to_s3(
+            s3_client=s3,
+            bucket=bucket,
+            key=key,
+            stream=r.raw,
+            content_type="application/pdf",
+        )
 
 
 # -------------------------
