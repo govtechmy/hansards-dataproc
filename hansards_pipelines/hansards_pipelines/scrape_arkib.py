@@ -123,7 +123,7 @@ def extract_pdfs(html: str):
 
 
 def extract_child_ids(html: str) -> Set[str]:
-    return set(re.findall(r"<item[^>]+id=['\"]([0-9_]+)['\"]", html))
+    return set(re.findall(r"<item[^>]+id=['\"]([^'\"]+)['\"]", html))
 
 
 def download_pdf_to_s3(session, s3, bucket, key, url):
@@ -187,25 +187,51 @@ def crawl(
 
     for child in sorted(
         extract_child_ids(html),
-        key=lambda x: [int(p) for p in x.split("_")],
+        key=lambda x: [int(p) for p in x.split("_") if p.isdigit()],
+
     ):
         if limit is not None and counter["count"] >= limit:
             return
 
-        if child.startswith(f"{node_id}_") or node_id == ROOT_ID:
-            crawl(
+        crawl(
+            session,
+            s3,
+            base_url,
+            uweb,
+            house_folder,
+            child,
+            visited,
+            collected_items,
+            counter,
+            limit,
+            seen_files=seen_files,
+        )
+
+def seed_kamarkhas_start_nodes(session) -> List[str]:
+    """
+    Kamar Khas does not list parliament nodes at the root (id=0),
+    so need to try possible IDs and keep the ones that return data.
+    """
+    seeds = []
+
+    # Parliament numbers; adjust if needed
+    for parlimen in range(1, 50):
+        node_id = f"0_{parlimen}"
+        try:
+            html = fetch_html(
                 session,
-                s3,
-                base_url,
-                uweb,
-                house_folder,
-                child,
-                visited,
-                collected_items,
-                counter,
-                limit,
-                seen_files=seen_files,
+                base_url=CATEGORIES["kamarkhas"]["base_url"],
+                uweb="dr",
+                node_id=node_id,
             )
+        except Exception:
+            continue
+
+        # If this node has children, it's real
+        if extract_child_ids(html):
+            seeds.append(node_id)
+
+    return seeds
 
 
 def write_manifest_to_s3(s3, items: List[Dict]):
@@ -246,19 +272,25 @@ def run_scrape(
     for name, cfg in categories.items():
         logging.info("=== START %s ===", name)
 
-        crawl(
-            session=session,
-            s3=s3,
-            base_url=cfg["base_url"],
-            uweb=cfg["uweb"],
-            house_folder=cfg["house_folder"],
-            node_id=ROOT_ID,
-            visited=set(),
-            collected_items=collected_items,
-            counter=counter,
-            limit=limit,
-            seen_files=seen_files,
-        )
+        if name == "kamarkhas":
+            start_nodes = seed_kamarkhas_start_nodes(session)
+        else:
+            start_nodes = [ROOT_ID]
+
+        for start_id in start_nodes:
+            crawl(
+                session=session,
+                s3=s3,
+                base_url=cfg["base_url"],
+                uweb=cfg["uweb"],
+                house_folder=cfg["house_folder"],
+                node_id=start_id,
+                visited=set(),
+                collected_items=collected_items,
+                counter=counter,
+                limit=limit,
+                seen_files=seen_files,
+            )
 
         logging.info("=== END %s ===", name)
 
