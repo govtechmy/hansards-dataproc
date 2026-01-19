@@ -158,7 +158,7 @@ def _malay_ordinal_to_number(ordinal_text: str) -> Optional[int]:
         ones_part = parts[1].strip() if len(parts) > 1 else ""
         
         base_to_tens = {
-            "kedua": 2, "tiga": 3, "keempat": 4, "kelima": 5,
+            "kedua": 2, "ketiga": 3, "keempat": 4, "kelima": 5,
             "keenam": 6, "ketujuh": 7, "kelapan": 8, "kesembilan": 9
         }
         
@@ -219,8 +219,8 @@ def _convert_penggal_to_number(text: str, context=None) -> Optional[int]:
     return None
 
 
-def _convert_mesyuarat_to_number(mesyuarat_word: str, context=None) -> int:
-    """Convert ordinal words for 'Mesyuarat' (meeting) to numbers """
+def _convert_mesyuarat_to_number(mesyuarat_word: str, context=None) -> Optional[int]:
+    """Convert ordinal words for 'Mesyuarat' (meeting) to numbers"""
     mesyuarat_lower = mesyuarat_word.lower().strip()
     
     if mesyuarat_lower == "khas":
@@ -236,7 +236,7 @@ def _convert_mesyuarat_to_number(mesyuarat_word: str, context=None) -> int:
             f"[parliamentary_cycle] could not parse mesyuarat number from: '{mesyuarat_word}'"
         )
     
-    return 0
+    return None
 
 @asset(group_name="scrape")
 def scrape_parliamentary_cycle(context: AssetExecutionContext) -> Dict:
@@ -297,11 +297,23 @@ def scrape_parliamentary_cycle(context: AssetExecutionContext) -> Dict:
 
             penggal_url = f"{base_url}&ajx=1&id={parlimen_id}"
             try:
+                penggal_response = session.get(penggal_url, verify=verify_ssl, timeout=60)
+                penggal_response.raise_for_status()
+            except requests.exceptions.SSLError as ssl_error:
+                context.log.warning(
+                    f"[parliamentary_cycle] SSL failed for {penggal_url}, retrying without verify: {ssl_error}"
+                )
                 penggal_response = session.get(penggal_url, verify=False, timeout=60)
                 penggal_response.raise_for_status()
-                penggal_xml = ET.fromstring(penggal_response.text)
+                verify_ssl = False
             except Exception as e:
                 context.log.error(f"[parliamentary_cycle] Failed to get Penggals for {parlimen_id}: {e}")
+                continue
+            
+            try:
+                penggal_xml = ET.fromstring(penggal_response.text)
+            except ET.ParseError as e:
+                context.log.error(f"[parliamentary_cycle] Failed to parse Penggals XML for {parlimen_id}: {e}")
                 continue
 
             penggals = penggal_xml.findall('.//item')
@@ -321,9 +333,21 @@ def scrape_parliamentary_cycle(context: AssetExecutionContext) -> Dict:
                 try:
                     mesyuarat_response = session.get(mesyuarat_url, verify=verify_ssl, timeout=60)
                     mesyuarat_response.raise_for_status()
-                    mesyuarat_xml = ET.fromstring(mesyuarat_response.text)
+                except requests.exceptions.SSLError as ssl_error:
+                    context.log.warning(
+                        f"[parliamentary_cycle] SSL failed for {mesyuarat_url}, retrying without verify: {ssl_error}"
+                    )
+                    mesyuarat_response = session.get(mesyuarat_url, verify=False, timeout=60)
+                    mesyuarat_response.raise_for_status()
+                    verify_ssl = False
                 except Exception as e:
                     context.log.error(f"[parliamentary_cycle] Failed to get Mesyuarats for {penggal_id}: {e}")
+                    continue
+                
+                try:
+                    mesyuarat_xml = ET.fromstring(mesyuarat_response.text)
+                except ET.ParseError as e:
+                    context.log.error(f"[parliamentary_cycle] Failed to parse Mesyuarats XML for {penggal_id}: {e}")
                     continue
 
                 mesyuarats = mesyuarat_xml.findall('.//item')
@@ -356,6 +380,9 @@ def scrape_parliamentary_cycle(context: AssetExecutionContext) -> Dict:
                         continue
                     
                     mesyuarat_number = _convert_mesyuarat_to_number(mesyuarat_word, context)
+                    if mesyuarat_number is None:
+                        context.log.debug(f"[parliamentary_cycle] Skip Mesyuarat (could not parse): {mesyuarat_text}")
+                        continue
 
                     house_map = {"dewanrakyat": 0, "dewannegara": 1, "kamarkhas": 2}
                     house_number = house_map.get(house_code)
@@ -410,22 +437,20 @@ def scrape_parliamentary_cycle(context: AssetExecutionContext) -> Dict:
             if response.status_code == 400:
                 try:
                     error_data = response.json()
-                    error_message = error_data.get("detail", "") or error_data.get("message", "")
-                    
-                    if any(keyword in str(error_message).lower() for keyword in ["already exists", "duplicate", "unique constraint"]):
-                        context.log.debug(f"[parliamentary_cycle] Already exists (400 duplicate): {cycle}")
-                        skipped += 1
-                        continue
-                    else:
-                        context.log.error(f"[parliamentary_cycle] API validation error {response.status_code}: {error_message}")
-                        context.log.error(f"[parliamentary_cycle] Payload was: {cycle}")
-                        failed += 1
-                        continue
+                    error_message = (
+                        error_data.get("detail", "")
+                        or error_data.get("message", "")
+                        or response.text
+                    )
                 except (ValueError, KeyError):
-                    context.log.error(f"[parliamentary_cycle] API error {response.status_code}: {response.text}")
-                    context.log.error(f"[parliamentary_cycle] Payload was: {cycle}")
-                    failed += 1
-                    continue
+                    error_message = response.text
+                
+                context.log.error(
+                    f"[parliamentary_cycle] API validation error {response.status_code}: {error_message}"
+                )
+                context.log.error(f"[parliamentary_cycle] Payload was: {cycle}")
+                failed += 1
+                continue
             
             if response.status_code >= 400:
                 context.log.error(f"[parliamentary_cycle] API error {response.status_code}: {response.text}")

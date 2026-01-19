@@ -337,10 +337,18 @@ def parliamentary_cycle_sensor(context: SensorEvaluationContext):
     This ensures new Parliament terms, sessions (Penggal), and meetings (Mesyuarat) are automatically
     detected and inserted into the database without manual intervention.
     """
+    evaluation_dt = (
+        context.evaluation_time
+        if context.evaluation_time is not None
+        else datetime.datetime.utcnow()
+    )
+    new_cursor = evaluation_dt.isoformat()
+    context.update_cursor(new_cursor)
+    
     return RunRequest(
-        run_key=f"parliamentary_cycle_{context.cursor or '0'}",
+        run_key=f"parliamentary_cycle_{new_cursor}",
         tags={
             "source": "parliamentary_cycle_sensor",
-            "triggered_at": context.evaluation_time.isoformat() if context.evaluation_time else "unknown"
+            "triggered_at": evaluation_dt.isoformat(),
         }
     )
