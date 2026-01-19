@@ -121,25 +121,39 @@ def _generate_new_hansard_message(
 def _malay_ordinal_to_number(ordinal_text: str) -> Optional[int]:
     """Convert Malay ordinal words to numbers"""
     ordinal_lower = ordinal_text.lower().strip()
+    normalized = " ".join(ordinal_lower.split())
 
     base_numbers = {
         "pertama": 1, "kedua": 2, "ketiga": 3, "keempat": 4, "kelima": 5,
         "keenam": 6, "ketujuh": 7, "kelapan": 8, "kesembilan": 9, "kesepuluh": 10
     }
     
-    if ordinal_lower in base_numbers:
-        return base_numbers[ordinal_lower]
+    if normalized in base_numbers:
+        return base_numbers[normalized]
     
-    if "belas" in ordinal_lower:
-        if ordinal_lower == "kesebelas":
+    if "belas" in normalized:
+        if normalized == "kesebelas":
             return 11
-        for word, num in base_numbers.items():
-            base_word = word[2:] if word.startswith("ke") else word
-            if base_word in ordinal_lower:
-                return 10 + num
+        
+        belas_match = re.match(r"^ke(\w+)\s+belas$", normalized)
+        if belas_match:
+            stem = belas_match.group(1)
+            cardinal_map = {
+                "dua": 2,
+                "tiga": 3,
+                "empat": 4,
+                "lima": 5,
+                "enam": 6,
+                "tujuh": 7,
+                "lapan": 8,
+                "sembilan": 9,
+            }
+            digit = cardinal_map.get(stem)
+            if digit is not None:
+                return 10 + digit
     
-    if "puluh" in ordinal_lower:
-        parts = ordinal_lower.split("puluh")
+    if "puluh" in normalized:
+        parts = normalized.split("puluh")
         tens_part = parts[0].strip()
         ones_part = parts[1].strip() if len(parts) > 1 else ""
         
@@ -257,7 +271,7 @@ def scrape_parliamentary_cycle(context: AssetExecutionContext) -> Dict:
             context.log.warning(
                 f"[parliamentary_cycle] SSL failed for {parlimen_url}, retrying without verify: {ssl_error}"
             )
-            response = session.get(parlimen_url, verify=verify_ssl, timeout=60)
+            response = session.get(parlimen_url, verify=False, timeout=60)
             response.raise_for_status()
             verify_ssl = False
 
@@ -305,7 +319,7 @@ def scrape_parliamentary_cycle(context: AssetExecutionContext) -> Dict:
 
                 mesyuarat_url = f"{base_url}&ajx=1&id={penggal_id}"
                 try:
-                    mesyuarat_response = session.get(mesyuarat_url, verify=True, timeout=60)
+                    mesyuarat_response = session.get(mesyuarat_url, verify=verify_ssl, timeout=60)
                     mesyuarat_response.raise_for_status()
                     mesyuarat_xml = ET.fromstring(mesyuarat_response.text)
                 except Exception as e:
