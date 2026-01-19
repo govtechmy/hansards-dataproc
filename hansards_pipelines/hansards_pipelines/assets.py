@@ -80,6 +80,11 @@ s3_client = boto3.client("s3")
 
 house_names = ["DR", "DN", "KKDR"]
 
+house_map = {
+    "dewanrakyat": 0,  # Dewan Rakyat
+    "dewannegara": 1,  # Dewan Negara
+    "kamarkhas": 2,    # Kamar Khas Dewan Rakyat
+}
 
 sitting_partitions_def = DynamicPartitionsDefinition(name="house_sittings")
 # https://github.com/dagster-io/dagster/discussions/20508
@@ -220,9 +225,18 @@ def _convert_penggal_to_number(text: str, context=None) -> Optional[int]:
 
 
 def _convert_mesyuarat_to_number(mesyuarat_word: str, context=None) -> Optional[int]:
-    """Convert ordinal words for 'Mesyuarat' (meeting) to numbers"""
+    """Convert ordinal words for 'Mesyuarat' (meeting) to numbers.
+    
+    Returns:
+        0 for special 'khas' meetings
+        int (1+) for regular ordinal meetings
+        None if parsing fails
+    """
     mesyuarat_lower = mesyuarat_word.lower().strip()
     
+    # Special meetings ('Mesyuarat Khas') are assigned meeting number 0 in the database
+    # to distinguish them from regular meetings which use positive integers (1, 2, 3, ...)
+    # This convention must be preserved to align with the existing database schema
     if mesyuarat_lower == "khas":
         return 0
     
@@ -250,6 +264,9 @@ def scrape_parliamentary_cycle(context: AssetExecutionContext) -> Dict:
     session = requests.Session()
     session.headers.update(headers)
 
+    # SSL verification flag - intentionally shared across all requests
+    # Once SSL fails for any request, we disable verification globally for the entire scrape
+    # This is by design: if the Parliament website has SSL issues, they typically affect all endpoints
     verify_ssl = True
 
     sources = [
@@ -260,11 +277,11 @@ def scrape_parliamentary_cycle(context: AssetExecutionContext) -> Dict:
 
     all_cycles: List[Dict] = []
 
-    for base_url, house_code in sources:
-        context.log.info(f"[parliamentary_cycle] Scraping {house_code} from {base_url}")
+    for source_url, house_code in sources:
+        context.log.info(f"[parliamentary_cycle] Scraping {house_code} from {source_url}")
 
         try:
-            parlimen_url = f"{base_url}&ajx=0"
+            parlimen_url = f"{source_url}&ajx=0"
             response = session.get(parlimen_url, verify=verify_ssl, timeout=60)
             response.raise_for_status()
         except requests.exceptions.SSLError as ssl_error:
@@ -295,7 +312,7 @@ def scrape_parliamentary_cycle(context: AssetExecutionContext) -> Dict:
             
             context.log.info(f"[parliamentary_cycle] Parlimen {parlimen_number}: {parlimen_text}")
 
-            penggal_url = f"{base_url}&ajx=1&id={parlimen_id}"
+            penggal_url = f"{source_url}&ajx=1&id={parlimen_id}"
             try:
                 penggal_response = session.get(penggal_url, verify=verify_ssl, timeout=60)
                 penggal_response.raise_for_status()
@@ -329,7 +346,7 @@ def scrape_parliamentary_cycle(context: AssetExecutionContext) -> Dict:
 
                 context.log.info(f"[parliamentary_cycle] Penggal {penggal_number}")
 
-                mesyuarat_url = f"{base_url}&ajx=1&id={penggal_id}"
+                mesyuarat_url = f"{source_url}&ajx=1&id={penggal_id}"
                 try:
                     mesyuarat_response = session.get(mesyuarat_url, verify=verify_ssl, timeout=60)
                     mesyuarat_response.raise_for_status()
@@ -384,7 +401,6 @@ def scrape_parliamentary_cycle(context: AssetExecutionContext) -> Dict:
                         context.log.debug(f"[parliamentary_cycle] Skip Mesyuarat (could not parse): {mesyuarat_text}")
                         continue
 
-                    house_map = {"dewanrakyat": 0, "dewannegara": 1, "kamarkhas": 2}
                     house_number = house_map.get(house_code)
                     
                     if house_number is None:
