@@ -156,7 +156,6 @@ def crawl(
 
     logging.info("Visiting %s | node %s", house_folder, node_id)
     html = fetch_html(session, base_url, uweb, node_id)
-        
     for filename, url in extract_pdfs(html):
         if limit is not None and counter["count"] >= limit:
             return
