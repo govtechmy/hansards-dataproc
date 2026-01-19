@@ -154,11 +154,7 @@ def download_pdf_to_s3(
     key: str,
     url: str,
 ):
-    if s3_object_exists(s3, bucket, key):
-        logging.info("Skip (exists): %s", key)
-        return
-
-    logging.info("Downloaded -> s3://%s/%s", bucket, key)
+    logging.info("Uploading (overwrite) -> s3://%s/%s", bucket, key)
 
     with session.get(url, stream=True, timeout=60) as r:
         r.raise_for_status()
@@ -169,6 +165,7 @@ def download_pdf_to_s3(
             stream=r.raw,
             content_type="application/pdf",
         )
+
 
 
 # -------------------------
@@ -260,6 +257,8 @@ def main():
 
     session = make_session()
     s3 = boto3.client("s3")
+    s3.head_bucket(Bucket=S3_DATAPROC_BUCKET)
+
     stats = {}
 
     categories = (
