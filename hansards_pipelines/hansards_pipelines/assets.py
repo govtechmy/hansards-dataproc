@@ -1078,10 +1078,10 @@ def insert_to_prod_db(context: AssetExecutionContext, prepare_db_payload: dict):
 def scrape_website_arkib(context: AssetExecutionContext):
     """Scrape arkib Hansard listings (limited for testing)."""
 
-    limit = 10
+    limit = 10 # TODO: remove limit after testing
 
     context.log.info(f"Starting arkib scrape (limit={limit})")
-    run_scrape(limit=limit)
+    run_scrape(limit=limit) 
     context.log.info("Completed arkib scrape")
 
 @asset(group_name="scrape", deps=[scrape_website_arkib])
