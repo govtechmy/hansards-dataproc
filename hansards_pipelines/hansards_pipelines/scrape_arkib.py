@@ -18,6 +18,7 @@ finds into ``arkib/house-name/`` (relative to the working directory).
 
 Usage (from repository root):
 	python -m hansards_pipelines.scrape_arkib
+    python -m hansards_pipelines.scrape_arkib --category dewannegara --limit 10
 """
 
 from __future__ import annotations
@@ -37,9 +38,7 @@ import urllib3
 from bs4 import BeautifulSoup
 from requests.adapters import HTTPAdapter, Retry
 
-from hansards_pipelines.settings import S3_DATAPROC_BUCKET
-from hansards_pipelines.utils.s3_utils import upload_stream_to_s3
-
+from hansards_pipelines.settings import S3_DATAPROC_BUCKET, AWS_REGION
 
 PDF_BASE_URL = "https://www.parlimen.gov.my"
 ROOT_ID = "0"
@@ -63,6 +62,7 @@ CATEGORIES = {
         "house_folder": "kamarkhas",
     },
 }
+
 
 def make_session() -> requests.Session:
     session = requests.Session()
@@ -104,6 +104,7 @@ def fetch_html(session, base_url, uweb, node_id) -> str:
 
     return resp.text
 
+
 def extract_pdfs(html: str):
     soup = BeautifulSoup(html, "html.parser")
 
@@ -129,13 +130,8 @@ def download_pdf_to_s3(session, s3, bucket, key, url):
     logging.info("Uploading -> s3://%s/%s", bucket, key)
     with session.get(url, stream=True, timeout=60) as r:
         r.raise_for_status()
-        upload_stream_to_s3(
-            s3_client=s3,
-            bucket=bucket,
-            key=key,
-            stream=r.raw,
-            content_type="application/pdf",
-        )
+        s3.upload_fileobj(r.raw, bucket, key)
+
 
 
 def crawl(
@@ -147,7 +143,12 @@ def crawl(
     node_id,
     visited,
     collected_items: List[Dict],
+    counter: Dict[str, int],
+    limit: int | None,
 ):
+    if limit is not None and counter["count"] >= limit:
+        return
+
     if node_id in visited:
         return
     visited.add(node_id)
@@ -156,6 +157,9 @@ def crawl(
     html = fetch_html(session, base_url, uweb, node_id)
 
     for filename, url in extract_pdfs(html):
+        if limit is not None and counter["count"] >= limit:
+            return
+
         key = f"arkib/{house_folder}/{filename}"
         download_pdf_to_s3(
             session=session,
@@ -172,10 +176,15 @@ def crawl(
             }
         )
 
+        counter["count"] += 1
+
     for child in sorted(
         extract_child_ids(html),
         key=lambda x: [int(p) for p in x.split("_")],
     ):
+        if limit is not None and counter["count"] >= limit:
+            return
+
         if child.startswith(f"{node_id}_") or node_id == ROOT_ID:
             crawl(
                 session,
@@ -186,6 +195,8 @@ def crawl(
                 child,
                 visited,
                 collected_items,
+                counter,
+                limit,
             )
 
 
@@ -206,28 +217,26 @@ def write_manifest_to_s3(s3, items: List[Dict]):
 
     logging.info("Manifest written -> s3://%s/%s", S3_DATAPROC_BUCKET, key)
 
-
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--category", choices=CATEGORIES.keys())
-    args = parser.parse_args()
-
-    logging.basicConfig(level=LOG_LEVEL, format="%(asctime)s [%(levelname)s] %(message)s")
-
+def run_scrape(
+    *,
+    category: str | None = None,
+    limit: int | None = None,
+):
     session = make_session()
-    s3 = boto3.client("s3")
-    s3.head_bucket(Bucket=S3_DATAPROC_BUCKET)
+    s3 = boto3.client("s3", region_name=AWS_REGION)
 
     collected_items: List[Dict] = []
+    counter = {"count": 0}
 
     categories = (
-        {args.category: CATEGORIES[args.category]}
-        if args.category
+        {category: CATEGORIES[category]}
+        if category
         else CATEGORIES
     )
 
     for name, cfg in categories.items():
         logging.info("=== START %s ===", name)
+
         crawl(
             session=session,
             s3=s3,
@@ -237,10 +246,25 @@ def main():
             node_id=ROOT_ID,
             visited=set(),
             collected_items=collected_items,
+            counter=counter,
+            limit=limit,
         )
+
         logging.info("=== END %s ===", name)
 
     write_manifest_to_s3(s3, collected_items)
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--category", choices=CATEGORIES.keys())
+    parser.add_argument("--limit", type=int)
+    args = parser.parse_args()
+
+    logging.basicConfig(level=LOG_LEVEL, format="%(asctime)s [%(levelname)s] %(message)s")
+
+    run_scrape(category=args.category, limit=args.limit)
+
     logging.info("Done")
 
 
