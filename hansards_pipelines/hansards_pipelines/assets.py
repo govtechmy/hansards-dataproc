@@ -1074,15 +1074,6 @@ def insert_to_prod_db(context: AssetExecutionContext, prepare_db_payload: dict):
 # )
 
 
-# @asset(group_name="scrape")
-# def scrape_website_arkib(context: AssetExecutionContext):
-#     """Scrape arkib Hansard listings and upload PDFs to the dataproc bucket."""
-
-#     context.log.info("Starting arkib scrape")
-#     scrape_arkib_main()
-#     context.log.info("Completed arkib scrape")
-
-    
 @asset(group_name="scrape")
 def scrape_website_arkib(context: AssetExecutionContext):
     """Scrape arkib Hansard listings (limited for testing)."""
