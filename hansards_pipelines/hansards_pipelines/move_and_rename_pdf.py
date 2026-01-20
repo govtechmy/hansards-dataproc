@@ -56,7 +56,6 @@ def move_arkib_pdfs_to_public(
         # Keep only the house-date portion (e.g., DR-12122024 from DR-12122024_Updated)
         if "_" in base_name:
             base_name = base_name.split("_")[0]
-        
         sitting = get_sitting_object(base_name)
         dest_key = f"arkib/{sitting['house_folder']}/{sitting['renamed_filename']}.pdf" # TODO: remove arkib/ prefix after testing
 
@@ -96,17 +95,19 @@ def main():
     s3 = boto3.client("s3")
     s3.head_bucket(Bucket=S3_DATAPROC_BUCKET)
     s3.head_bucket(Bucket=S3_PUBLIC_BUCKET)
-    logging.info("Listing all PDFs in s3://%s/arkib/", S3_DATAPROC_BUCKET)
-    response = s3.list_objects_v2(Bucket=S3_DATAPROC_BUCKET, Prefix="arkib/")
+    logging.info("Listing all PDFs in s3://%s/arkib/", S3_DATAPROC_BUCKET) 
+    paginator = s3.get_paginator("list_objects_v2")
+    page_iterator = paginator.paginate(Bucket=S3_DATAPROC_BUCKET, Prefix="arkib/")
     items = []
-    for obj in response.get('Contents', []):
-        key = obj['Key']
-        # Expected format: arkib/<house_folder>/<filename>.pdf
-        parts = key.split('/')
-        if len(parts) == 3 and parts[0] == 'arkib' and key.endswith('.pdf'):
-            house_folder = parts[1]
-            filename = parts[2]
-            items.append((house_folder, filename))
+    for page in page_iterator:
+        for obj in page.get("Contents", []):
+            key = obj["Key"]
+            # Expected format: arkib/<house_folder>/<filename>.pdf
+            parts = key.split("/")
+            if len(parts) == 3 and parts[0] == "arkib" and key.endswith(".pdf"):
+                house_folder = parts[1]
+                filename = parts[2]
+                items.append((house_folder, filename))
 
     logging.info("Moving %d PDFs", len(items))
 
