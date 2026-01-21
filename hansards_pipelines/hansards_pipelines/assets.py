@@ -50,7 +50,10 @@ from hansards_pipelines.utils.s3_utils import (
     build_path,
 )
 
-from hansards_pipelines.settings import S3_DATAPROC_BUCKET, S3_PUBLIC_BUCKET, DEV_API_URL, PROD_API_URL, FRONTEND_URL, FRONTEND_TOKEN
+import psycopg
+from hansards_pipelines.direct_sitting_ingest import ingest_sitting_to_db
+
+from hansards_pipelines.settings import S3_DATAPROC_BUCKET, S3_PUBLIC_BUCKET, DEV_API_URL, PROD_API_URL, FRONTEND_URL, FRONTEND_TOKEN, HANSARD_DB_URL
 
 from hansards_pipelines.scrape_arkib import run_scrape
 from hansards_pipelines.move_and_rename_pdf import main as move_arkib_pdfs_to_public_main
@@ -1034,6 +1037,27 @@ def insert_to_prod_db(context: AssetExecutionContext, prepare_db_payload: dict):
     Insert Hansards to Prod DB
     """
     _insert_to_db(PROD_API_URL, prepare_db_payload, context)
+
+@asset(partitions_def=sitting_partitions_def, deps=[prepare_db_payload], group_name="parse",
+)
+def direct_insert_to_db(context: AssetExecutionContext, prepare_db_payload: dict,
+):
+    context.log.info(
+        f"Direct DB insert start | filename={prepare_db_payload['filename']}"
+    )
+
+    with psycopg.connect(HANSARD_DB_URL) as conn:
+        with conn.transaction():
+            ingest_sitting_to_db(prepare_db_payload, conn)
+
+    context.log.info("Direct DB insert completed")
+
+    return {
+        "filename": prepare_db_payload["filename"],
+        "date": prepare_db_payload["date"],
+        "is_final": prepare_db_payload["is_final"],
+    }
+
 
 
 
