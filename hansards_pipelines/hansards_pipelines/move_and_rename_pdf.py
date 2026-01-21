@@ -12,6 +12,7 @@ This script is intended to be run AFTER scrape_arkib.py completes.
 
 from __future__ import annotations
 
+import argparse
 import json
 import logging
 from typing import List, Tuple
@@ -50,13 +51,7 @@ def move_arkib_pdfs_to_public(
     for house_folder, filename in items:
         source_key = f"arkib/{house_folder}/{filename}"
 
-        # Remove .pdf extension and any trailing text after the date (e.g., _Updated, _Revised)
-        # Expected format: DR-12122024 or DN-12122024
-        base_name = filename.replace(".pdf", "")
-        # Keep only the house-date portion (e.g., DR-12122024 from DR-12122024_Updated)
-        if "_" in base_name:
-            base_name = base_name.split("_")[0]
-        sitting = get_sitting_object(base_name)
+        sitting = get_sitting_object(filename)
         dest_key = f"arkib/{sitting['house_folder']}/{sitting['renamed_filename']}.pdf"
 
         if not s3_object_exists(s3, S3_DATAPROC_BUCKET, source_key):
@@ -92,12 +87,30 @@ def move_arkib_pdfs_to_public(
 
 
 def main():
+    parser = argparse.ArgumentParser(
+        description="Move and rename arkib PDFs from dataproc to public bucket"
+    )
+    parser.add_argument(
+        "--category",
+        type=str,
+        help="House category to process (e.g., dewannegara, dewanrakyat). If not provided, all categories will be processed.",
+    )
+    args = parser.parse_args()
+
     s3 = boto3.client("s3")
     s3.head_bucket(Bucket=S3_DATAPROC_BUCKET)
     s3.head_bucket(Bucket=S3_PUBLIC_BUCKET)
-    logging.info("Listing all PDFs in s3://%s/arkib/", S3_DATAPROC_BUCKET) 
+    
+    # Determine S3 prefix based on category argument
+    if args.category:
+        prefix = f"arkib/{args.category}/"
+        logging.info("Listing PDFs in s3://%s/%s", S3_DATAPROC_BUCKET, prefix)
+    else:
+        prefix = "arkib/"
+        logging.info("Listing all PDFs in s3://%s/arkib/", S3_DATAPROC_BUCKET)
+    
     paginator = s3.get_paginator("list_objects_v2")
-    page_iterator = paginator.paginate(Bucket=S3_DATAPROC_BUCKET, Prefix="arkib/")
+    page_iterator = paginator.paginate(Bucket=S3_DATAPROC_BUCKET, Prefix=prefix)
     items = []
     for page in page_iterator:
         for obj in page.get("Contents", []):
