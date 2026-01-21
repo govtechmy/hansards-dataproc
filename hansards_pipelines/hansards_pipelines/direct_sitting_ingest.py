@@ -203,6 +203,10 @@ def ingest_sitting_to_db(payload: Dict, conn) -> None:
                 WHERE a.new_author_id = ANY(%s)
                 AND ah.start_date <= %s
                 AND (ah.end_date >= %s OR ah.end_date IS NULL)
+                ORDER BY
+                a.new_author_id,
+                ah.end_date IS NULL,
+                ah.end_date DESC
                 """,
                 (list(author_ids), date, date),
             )
