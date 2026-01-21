@@ -57,7 +57,7 @@ def move_arkib_pdfs_to_public(
         if "_" in base_name:
             base_name = base_name.split("_")[0]
         sitting = get_sitting_object(base_name)
-        dest_key = f"arkib/{sitting['house_folder']}/{sitting['renamed_filename']}.pdf" # TODO: remove arkib/ prefix after testing
+        dest_key = f"arkib/{sitting['house_folder']}/{sitting['renamed_filename']}.pdf"
 
         if not s3_object_exists(s3, S3_DATAPROC_BUCKET, source_key):
             logging.warning("Skipped (source missing): s3://%s/%s", S3_DATAPROC_BUCKET, source_key)
@@ -104,7 +104,7 @@ def main():
             key = obj["Key"]
             # Expected format: arkib/<house_folder>/<filename>.pdf
             parts = key.split("/")
-            if len(parts) == 3 and parts[0] == "arkib" and key.endswith(".pdf"):
+            if len(parts) == 3 and key.endswith(".pdf"):
                 house_folder = parts[1]
                 filename = parts[2]
                 items.append((house_folder, filename))
