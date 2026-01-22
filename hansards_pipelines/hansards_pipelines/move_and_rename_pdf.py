@@ -86,24 +86,34 @@ def move_arkib_pdfs_to_public(
     return results
 
 
-def main():
-    parser = argparse.ArgumentParser(
-        description="Move and rename arkib PDFs from dataproc to public bucket"
-    )
-    parser.add_argument(
-        "--category",
-        type=str,
-        help="House category to process (e.g., dewannegara, dewanrakyat). If not provided, all categories will be processed.",
-    )
-    args = parser.parse_args()
+def main(category: str | None = "__from_cli__"):
+    """Move arkib PDFs from dataproc to public bucket.
+    
+    Args:
+        category: House category to process (e.g., dewannegara, dewanrakyat). 
+                  If not provided, all categories will be processed.
+                  When called from CLI, this will be parsed from arguments.
+    """
+    # Only parse args if called from CLI (default sentinel value)
+    if category == "__from_cli__":
+        parser = argparse.ArgumentParser(
+            description="Move and rename arkib PDFs from dataproc to public bucket"
+        )
+        parser.add_argument(
+            "--category",
+            type=str,
+            help="House category to process (e.g., dewannegara, dewanrakyat). If not provided, all categories will be processed.",
+        )
+        args = parser.parse_args()
+        category = args.category
 
     s3 = boto3.client("s3")
     s3.head_bucket(Bucket=S3_DATAPROC_BUCKET)
     s3.head_bucket(Bucket=S3_PUBLIC_BUCKET)
     
     # Determine S3 prefix based on category argument
-    if args.category:
-        prefix = f"arkib/{args.category}/"
+    if category:
+        prefix = f"arkib/{category}/"
         logging.info("Listing PDFs in s3://%s/%s", S3_DATAPROC_BUCKET, prefix)
     else:
         prefix = "arkib/"

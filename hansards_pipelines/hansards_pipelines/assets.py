@@ -1089,5 +1089,5 @@ def move_arkib_pdfs_to_public_asset(context: AssetExecutionContext):
     """Move arkib PDFs from the dataproc bucket to the public bucket with renamed filenames."""
 
     context.log.info("Moving arkib PDFs to public bucket")
-    move_arkib_pdfs_to_public_main()
+    move_arkib_pdfs_to_public_main(category=None)
     context.log.info("Completed moving arkib PDFs")
