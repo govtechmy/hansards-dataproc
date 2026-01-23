@@ -167,9 +167,9 @@ def upsert_cycles_via_api(
             
             if context:
                 context.log.info(f"[{log_prefix}] NEW cycle, posting to API: {cycle}")
-            
+
             response = requests.post(api_endpoint, json=cycle, timeout=300)
-            
+
             if response.status_code == 409:
                 if context:
                     context.log.debug(f"[{log_prefix}] Already exists (409): {cycle}")
@@ -462,7 +462,7 @@ ACTIVE_SOURCES = [
 ]
 
 
-def parse_malay_date(date_str: str) -> Optional[str]:
+def parse_malay_date(date_str: str, context: Optional[AssetExecutionContext] = None) -> Optional[str]:
     """Parse Malay date string to YYYY-MM-DD format"""
     try:
         match = re.search(r'(\d+)\s+(\w+)\s+(\d{4})', date_str.lower())
@@ -475,13 +475,15 @@ def parse_malay_date(date_str: str) -> Optional[str]:
             if month:
                 return f"{year:04d}-{month:02d}-{day:02d}"
     except Exception as e:
-        print(f"Error parsing date '{date_str}': {e}")
+        if context:
+            context.log.error(f"[active] Error parsing date '{date_str}': {e}")
     return None
 
 
 def scrape_active_cycles(context: Optional[AssetExecutionContext] = None) -> List[Dict]:
     """Scrape active parliamentary cycles from main pages."""
     all_cycles = []
+    verify_ssl = True
     
     for url, house_folder in ACTIVE_SOURCES:
         house_code = HOUSE_MAP.get(house_folder)
@@ -494,13 +496,14 @@ def scrape_active_cycles(context: Optional[AssetExecutionContext] = None) -> Lis
             context.log.info(f"[active] Scraping {house_folder} from {url}")
         
         try:
-            response = requests.get(url, verify=False, timeout=30)
+            response = requests.get(url, verify=verify_ssl, timeout=300)
             response.raise_for_status()
         except requests.exceptions.SSLError:
             if context:
                 context.log.warning(f"[active] SSL failed for {url}, retrying without verify")
-            response = requests.get(url, verify=False, timeout=30)
+            response = requests.get(url, verify=False, timeout=300)
             response.raise_for_status()
+            verify_ssl = False
         except Exception as e:
             if context:
                 context.log.error(f"[active] Error scraping {house_folder}: {e}")
@@ -541,8 +544,8 @@ def scrape_active_cycles(context: Optional[AssetExecutionContext] = None) -> Lis
             start_date_str = date_match.group(1)
             end_date_str = date_match.group(2)
             
-            start_date = parse_malay_date(start_date_str)
-            end_date = parse_malay_date(end_date_str)
+            start_date = parse_malay_date(start_date_str, context)
+            end_date = parse_malay_date(end_date_str, context)
             
             if not start_date or not end_date:
                 if context:
