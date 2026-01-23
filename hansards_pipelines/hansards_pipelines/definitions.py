@@ -15,6 +15,8 @@ scrape_schedule = ScheduleDefinition(
 
 parliamentary_cycle_schedule = ScheduleDefinition(
     job=jobs.parliamentary_cycle_job,
+scrape_arkib_schedule = ScheduleDefinition(
+    job=jobs.scrape_arkib_job,
     cron_schedule="0 16 * * 5",  # Sat 00:00 MY
 )
 
@@ -24,6 +26,7 @@ defs = Definitions(
         jobs.parliamentary_cycle_job,
         jobs.sittings_job,
         jobs.scrape_job,
+        jobs.scrape_arkib_job,
     ],
     sensors=[
         sittings_sensor,
@@ -33,5 +36,6 @@ defs = Definitions(
     schedules=[
         scrape_schedule,
         parliamentary_cycle_schedule,
+        scrape_arkib_schedule,
     ],
 )

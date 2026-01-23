@@ -83,3 +83,5 @@ DAGIT_BASE_URL: Optional[str]  = get_env_str("DAGIT_BASE_URL")
 
 AWS_SECRETS_NAME: Optional[str] = get_env_str("AWS_SECRETS_NAME")
 AWS_REGION: Optional[str] = get_env_str("AWS_REGION")
+
+HANSARD_DB_URL: Optional[str] = get_env_str("HANSARD_DB_URL")

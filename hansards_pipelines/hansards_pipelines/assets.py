@@ -58,6 +58,13 @@ from hansards_pipelines.scrape_parliamentary_cycle import (
     fetch_db_cycles,
     upsert_cycles_via_api,
 )
+import psycopg
+from hansards_pipelines.direct_sitting_ingest import ingest_sitting_to_db
+
+from hansards_pipelines.settings import S3_DATAPROC_BUCKET, S3_PUBLIC_BUCKET, DEV_API_URL, PROD_API_URL, FRONTEND_URL, FRONTEND_TOKEN, HANSARD_DB_URL
+
+from hansards_pipelines.scrape_arkib import run_scrape
+from hansards_pipelines.move_and_rename_pdf import main as move_arkib_pdfs_to_public_main
 
 # main pipeline
 # 1. scrape from the website, push pdf to s3 hansards-new
@@ -416,10 +423,10 @@ def move_and_rename_all_hansards(
 
         sitting_object = get_sitting_object(new_pdf[:-4])
 
-        # Read from S3
+        # Read from S3 using the actual key that was uploaded
         pdf_response = s3_client.get_object(
             Bucket=S3_DATAPROC_BUCKET,
-            Key=f"new/{sitting_object['house_folder']}/{sitting_object['original_filename']}",
+            Key=f"new/{s3_key}",
         )
         new_pdf_name = (
             f"{sitting_object['house_folder']}/{sitting_object['renamed_filename']}.pdf"
@@ -1108,6 +1115,28 @@ def insert_to_prod_db(context: AssetExecutionContext, prepare_db_payload: dict):
     """
     _insert_to_db(PROD_API_URL, prepare_db_payload, context)
 
+@asset(partitions_def=sitting_partitions_def, deps=[prepare_db_payload], group_name="parse",
+)
+def direct_insert_to_db(context: AssetExecutionContext, prepare_db_payload: dict,
+):
+    context.log.info(
+        f"Direct DB insert start | filename={prepare_db_payload['filename']}"
+    )
+
+    with psycopg.connect(HANSARD_DB_URL) as conn:
+        with conn.transaction():
+            ingest_sitting_to_db(prepare_db_payload, conn)
+
+    context.log.info("Direct DB insert completed")
+
+    return {
+        "filename": prepare_db_payload["filename"],
+        "date": prepare_db_payload["date"],
+        "is_final": prepare_db_payload["is_final"],
+    }
+
+
+
 
 # @asset(group_name="frontend")
 # def revalidate_frontend(context: AssetExecutionContext, config: dict):
@@ -1144,3 +1173,22 @@ def insert_to_prod_db(context: AssetExecutionContext, prepare_db_payload: dict):
 #         "hansard_route": hansard_route,
 #     }
 # )
+
+
+@asset(group_name="scrape")
+def scrape_website_arkib(context: AssetExecutionContext):
+    """Scrape arkib Hansard listings (limited for testing)."""
+
+    limit = 10 # TODO: remove limit after testing
+
+    context.log.info(f"Starting arkib scrape (limit={limit})")
+    run_scrape(limit=limit) 
+    context.log.info("Completed arkib scrape")
+
+@asset(group_name="scrape", deps=[scrape_website_arkib])
+def move_arkib_pdfs_to_public_asset(context: AssetExecutionContext):
+    """Move arkib PDFs from the dataproc bucket to the public bucket with renamed filenames."""
+
+    context.log.info("Moving arkib PDFs to public bucket")
+    move_arkib_pdfs_to_public_main(category=None)
+    context.log.info("Completed moving arkib PDFs")
