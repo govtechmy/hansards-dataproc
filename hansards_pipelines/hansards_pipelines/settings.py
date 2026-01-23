@@ -75,6 +75,8 @@ PROD_API_URL: Optional[str]  = get_env_str("PROD_API_URL")
 FRONTEND_URL: Optional[str]  = get_env_str("FRONTEND_URL")
 FRONTEND_TOKEN: Optional[str] = get_env_str("FRONTEND_TOKEN")
 
+HANSARD_DB_URL: Optional[str] = get_env_str("HANSARD_DB_URL")
+
 DAGSTER_DB_URL: Optional[str] = get_env_str("DAGSTER_DB_URL")
 DISCORD_WEBHOOK_URL: Optional[str]  = get_env_str("DISCORD_WEBHOOK_URL")
 DAGIT_BASE_URL: Optional[str]  = get_env_str("DAGIT_BASE_URL")

@@ -3,7 +3,10 @@ from . import assets
 
 parliamentary_cycle_job = define_asset_job(
     "parliamentary_cycle_job",
-    selection=[assets.scrape_parliamentary_cycle],
+    selection=[
+        assets.scrape_parliamentary_cycle_arkib,
+        assets.scrape_parliamentary_cycle_active,
+    ],
 )
 
 scrape_job = define_asset_job(

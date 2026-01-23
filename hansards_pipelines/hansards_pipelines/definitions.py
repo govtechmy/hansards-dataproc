@@ -2,7 +2,6 @@ from dagster import Definitions, ScheduleDefinition, load_assets_from_modules, d
 from hansards_pipelines import assets, jobs
 from .sensors import (
     sittings_sensor,
-    parliamentary_cycle_sensor,
     my_discord_on_run_frontend_success,
     my_discord_on_run_failure,
 )
@@ -14,6 +13,11 @@ scrape_schedule = ScheduleDefinition(
     cron_schedule="0 * * * *",  # every hour
 )
 
+parliamentary_cycle_schedule = ScheduleDefinition(
+    job=jobs.parliamentary_cycle_job,
+    cron_schedule="0 16 * * 5",  # Sat 00:00 MY
+)
+
 defs = Definitions(
     assets=all_assets,
     jobs=[
@@ -23,9 +27,11 @@ defs = Definitions(
     ],
     sensors=[
         sittings_sensor,
-        parliamentary_cycle_sensor,
         my_discord_on_run_frontend_success,
         my_discord_on_run_failure,
     ],
-    schedules=[scrape_schedule],
+    schedules=[
+        scrape_schedule,
+        parliamentary_cycle_schedule,
+    ],
 )
