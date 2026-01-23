@@ -15,6 +15,9 @@ scrape_schedule = ScheduleDefinition(
 
 parliamentary_cycle_schedule = ScheduleDefinition(
     job=jobs.parliamentary_cycle_job,
+    cron_schedule="0 16 * * 5",  # Sat 00:00 MY
+)
+
 scrape_arkib_schedule = ScheduleDefinition(
     job=jobs.scrape_arkib_job,
     cron_schedule="0 16 * * 5",  # Sat 00:00 MY
