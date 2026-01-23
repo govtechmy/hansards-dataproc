@@ -872,16 +872,23 @@ def reverse_date_format(date_str):
 def get_sitting_object(pdf_file_key: str):
     """Convert PDF file key to house, date_str and datetime"""
     # TODO: handle corner cases
+    # Remove .pdf extension and any trailing text after the date (e.g., _Updated, _Revised)
+    # Expected format: DR-12122024 or DN-12122024
+    base_name = pdf_file_key.replace(".pdf", "")
+    # Keep only the house-date portion (e.g., DR-12122024 from DR-12122024_Updated)
+    if "_" in base_name:
+        base_name = base_name.split("_")[0]
+    
     # DR-12122024
-    house = pdf_file_key.split("-")[0].upper()  # DR
+    house = base_name.split("-")[0].upper()  # DR
     house_folder = house_mapper.to_canonical(
         house.lower()
     )  # dr -> dewanrakyat (for s3)
-    date_str = pdf_file_key.split("-")[1]  # 12122024
+    date_str = base_name.split("-")[1]  # 12122024
     date = datetime.strptime(date_str, "%d%m%Y")
     proper_date_str = date.strftime("%Y-%m-%d")  # 2024-12-12
-    original_filename = pdf_file_key + ".pdf"
-    renamed_filename = rename_pdf(pdf_file_key)  # DR-12122024 -> dr_2024-12-12
+    original_filename = base_name + ".pdf"
+    renamed_filename = rename_pdf(base_name)  # DR-12122024 -> dr_2024-12-12
     renamed_filename_key = (
         f"{house_folder}/{renamed_filename}.pdf"  # dewanrakyat/dr_2024-12-12.pdf
     )

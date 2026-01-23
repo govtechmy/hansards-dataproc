@@ -12,6 +12,7 @@ This script is intended to be run AFTER scrape_arkib.py completes.
 
 from __future__ import annotations
 
+import argparse
 import json
 import logging
 from typing import List, Tuple
@@ -50,8 +51,8 @@ def move_arkib_pdfs_to_public(
     for house_folder, filename in items:
         source_key = f"arkib/{house_folder}/{filename}"
 
-        sitting = get_sitting_object(filename.replace(".pdf", ""))
-        dest_key = f"arkib/{sitting['house_folder']}/{sitting['renamed_filename']}.pdf" # TODO: remove arkib/ prefix after testing
+        sitting = get_sitting_object(filename)
+        dest_key = f"arkib/{sitting['house_folder']}/{sitting['renamed_filename']}.pdf"
 
         if not s3_object_exists(s3, S3_DATAPROC_BUCKET, source_key):
             logging.warning("Skipped (source missing): s3://%s/%s", S3_DATAPROC_BUCKET, source_key)
@@ -85,20 +86,51 @@ def move_arkib_pdfs_to_public(
     return results
 
 
-def main():
+def main(category: str | None = "__from_cli__"):
+    """Move arkib PDFs from dataproc to public bucket.
+    
+    Args:
+        category: House category to process (e.g., dewannegara, dewanrakyat). 
+                  If not provided, all categories will be processed.
+                  When called from CLI, this will be parsed from arguments.
+    """
+    # Only parse args if called from CLI (default sentinel value)
+    if category == "__from_cli__":
+        parser = argparse.ArgumentParser(
+            description="Move and rename arkib PDFs from dataproc to public bucket"
+        )
+        parser.add_argument(
+            "--category",
+            type=str,
+            help="House category to process (e.g., dewannegara, dewanrakyat). If not provided, all categories will be processed.",
+        )
+        args = parser.parse_args()
+        category = args.category
+
     s3 = boto3.client("s3")
     s3.head_bucket(Bucket=S3_DATAPROC_BUCKET)
     s3.head_bucket(Bucket=S3_PUBLIC_BUCKET)
-
-    logging.info("Loading manifest from s3://%s/%s", S3_DATAPROC_BUCKET, MANIFEST_KEY)
-
-    obj = s3.get_object(Bucket=S3_DATAPROC_BUCKET, Key=MANIFEST_KEY)
-    manifest = json.loads(obj["Body"].read())
-
-    items = [
-        (item["house_folder"], item["filename"])
-        for item in manifest.get("items", [])
-    ]
+    
+    # Determine S3 prefix based on category argument
+    if category:
+        prefix = f"arkib/{category}/"
+        logging.info("Listing PDFs in s3://%s/%s", S3_DATAPROC_BUCKET, prefix)
+    else:
+        prefix = "arkib/"
+        logging.info("Listing all PDFs in s3://%s/arkib/", S3_DATAPROC_BUCKET)
+    
+    paginator = s3.get_paginator("list_objects_v2")
+    page_iterator = paginator.paginate(Bucket=S3_DATAPROC_BUCKET, Prefix=prefix)
+    items = []
+    for page in page_iterator:
+        for obj in page.get("Contents", []):
+            key = obj["Key"]
+            # Expected format: arkib/<house_folder>/<filename>.pdf
+            parts = key.split("/")
+            if len(parts) == 3 and key.endswith(".pdf"):
+                house_folder = parts[1]
+                filename = parts[2]
+                items.append((house_folder, filename))
 
     logging.info("Moving %d PDFs", len(items))
 
