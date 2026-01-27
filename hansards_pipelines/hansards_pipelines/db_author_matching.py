@@ -1,3 +1,22 @@
+"""
+This script performs author matching for speeches in specified sittings
+by loading data from the database, processing the speech data,
+and updating the database with matched author information.
+
+It also checks for the existence of `api_speech` records for each sitting
+and rebuilds them if they are missing.
+
+Usage:
+    python -m hansards_pipelines.db_author_matching --sitting-ids <IDs> [--dry-run]
+Options:
+    --sitting-ids: List of sitting IDs to process.
+    --dry-run: If set, the script will not update the database.
+
+Example:
+    python -m hansards_pipelines.db_author_matching --sitting-ids 22959 --dry-run
+    python -m hansards_pipelines.db_author_matching --sitting-ids 22959 22960 22961 --dry-run
+
+"""
 from __future__ import annotations
 
 import argparse
