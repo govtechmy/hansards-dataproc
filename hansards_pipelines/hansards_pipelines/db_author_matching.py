@@ -11,11 +11,14 @@ Usage:
 Options:
     --sitting-ids: List of sitting IDs to process.
     --dry-run: If set, the script will not update the database.
+    --date-from: Start date for filtering sittings (YYYY-MM-DD).
+    --date-to: End date for filtering sittings (YYYY-MM-DD).
 
 Example:
     python -m hansards_pipelines.db_author_matching --sitting-ids 22959 --dry-run
     python -m hansards_pipelines.db_author_matching --sitting-ids 22959 22960 22961 --dry-run
-
+    python -m hansards_pipelines.db_author_matching --date-from 1960-02-22 --date-to 1960-02-29 --dry-run
+    
 """
 from __future__ import annotations
 
@@ -43,7 +46,9 @@ class SimpleContext:
 
 def parse_args():
     p = argparse.ArgumentParser("DB author matching (standalone)")
-    p.add_argument("--sitting-ids", type=int, nargs="+", required=True)
+    p.add_argument("--sitting-ids", type=int, nargs="+")
+    p.add_argument("--date-from", type=str)
+    p.add_argument("--date-to", type=str)
     p.add_argument("--dry-run", action="store_true")
     return p.parse_args()
 
@@ -72,16 +77,41 @@ def load_author_history(conn) -> pd.DataFrame:
     return df
 
 
-def load_sittings(conn, sitting_ids: List[int]) -> List[dict]:
+def load_sittings(
+    conn,
+    sitting_ids: List[int] | None,
+    date_from: str | None,
+    date_to: str | None,
+) -> List[dict]:
+    conditions = []
+    params = []
+
+    if sitting_ids:
+        conditions.append("sitting_id = ANY(%s)")
+        params.append(sitting_ids)
+
+    if date_from:
+        conditions.append("date >= %s")
+        params.append(date_from)
+
+    if date_to:
+        conditions.append("date <= %s")
+        params.append(date_to)
+
+    if not conditions:
+        raise ValueError("Must provide --sitting-ids or --date-from/--date-to")
+
+    where = " AND ".join(conditions)
+
+    sql = f"""
+        SELECT sitting_id, date, filename, speech_data
+        FROM api_sitting
+        WHERE {where}
+        ORDER BY date, sitting_id
+    """
+
     with conn.cursor(row_factory=dict_row) as cur:
-        cur.execute(
-            """
-            SELECT sitting_id, date, filename, speech_data
-            FROM api_sitting
-            WHERE sitting_id = ANY(%s)
-            """,
-            (sitting_ids,),
-        )
+        cur.execute(sql, params)
         return list(cur.fetchall())
 
 
@@ -225,10 +255,10 @@ def main():
     with psycopg.connect(HANSARD_DB_URL) as conn:
         author_df = load_authors(conn)
         author_hist_df = load_author_history(conn)
-        sittings = load_sittings(conn, args.sitting_ids)
+        sittings = load_sittings(conn, args.sitting_ids, args.date_from, args.date_to)
 
         for sitting in sittings:
-            logger.info(f"Processing sitting_id={sitting['sitting_id']}")
+            logger.info(f"===== START processing sitting_id={sitting['sitting_id']} | filename={sitting.get('filename')} =====")
 
             logger.info("Checking api_speech existence in db...")
             if not api_speech_exists(conn, sitting["sitting_id"]):
@@ -259,7 +289,7 @@ def main():
             logger.info(f"Match rate: {match_rate:.2f}%")
 
             if args.dry_run:
-                logger.info("Dry-run enabled → skipping update")
+                logger.info("Dry-run enabled -> skipping update")
                 continue
 
             updated = json.dumps(
