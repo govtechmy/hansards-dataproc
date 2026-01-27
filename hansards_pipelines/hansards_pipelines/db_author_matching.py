@@ -10,9 +10,10 @@ Usage:
     python -m hansards_pipelines.db_author_matching --sitting-ids <IDs> [--dry-run]
 Options:
     --sitting-ids: List of sitting IDs to process.
-    --dry-run: If set, the script will not update the database.
+    --filename: Filename of the sitting to process.
     --date-from: Start date for filtering sittings (YYYY-MM-DD).
     --date-to: End date for filtering sittings (YYYY-MM-DD).
+    --dry-run: If set, the script will not update the database.
 
 Example:
     python -m hansards_pipelines.db_author_matching --sitting-ids 22959 --dry-run
