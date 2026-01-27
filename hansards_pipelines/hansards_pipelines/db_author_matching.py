@@ -25,7 +25,6 @@ class SimpleContext:
 def parse_args():
     p = argparse.ArgumentParser("DB author matching (standalone)")
     p.add_argument("--sitting-ids", type=int, nargs="+", required=True)
-    p.add_argument("--ensure-api-speech", action="store_true")
     p.add_argument("--dry-run", action="store_true")
     return p.parse_args()
 
@@ -92,8 +91,15 @@ def flatten_nested_speech(obj) -> List[dict]:
 # api_speech rebuilder
 # ---------------------------------------------------------------------
 
+def api_speech_exists(conn, sitting_id: int) -> bool:
+    with conn.cursor() as cur:
+        cur.execute(
+            "SELECT 1 FROM api_speech WHERE sitting_id = %s LIMIT 1",
+            (sitting_id,),
+        )
+        return cur.fetchone() is not None
+
 def rebuild_api_speech(conn, sitting: dict, logger):
-    logger.info(f"api_speech missing in db -> rebuilding for sitting_id={sitting['sitting_id']}")
 
     speech_data = json.loads(sitting["speech_data"])
     flat = flatten_nested_speech(speech_data)
@@ -205,9 +211,13 @@ def main():
         for sitting in sittings:
             logger.info(f"Processing sitting_id={sitting['sitting_id']}")
 
-            if args.ensure_api_speech:
+            logger.info("Checking api_speech existence in db...")
+            if not api_speech_exists(conn, sitting["sitting_id"]):
+                logger.info(f"api_speech missing in db for sitting_id={sitting['sitting_id']} -> rebuilding api_speech.")
                 with conn.transaction():
                     rebuild_api_speech(conn, sitting, logger)
+            else:
+                logger.info(f"api_speech exists in db for sitting_id={sitting['sitting_id']}. Skip rebuilding api_speech.")
 
             df_speech = speech_df_from_speech_data(sitting)
 
