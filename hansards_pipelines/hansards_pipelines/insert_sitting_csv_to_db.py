@@ -8,12 +8,15 @@ import requests
 from io import BytesIO
 from datetime import datetime
 from typing import Tuple, Dict, Any
+import psycopg2
+from psycopg2.extras import DictCursor
 import warnings
 from botocore.config import Config
 from pandas.errors import SettingWithCopyWarning
 
+from direct_sitting_ingest import ingest_sitting_to_db
 from utils.text_utils import house_mapper, get_sitting_object, preprocess_malaya
-from settings import S3_TEXTRACT_BUCKET, DEV_API_URL, AWS_REGION
+from settings import S3_TEXTRACT_BUCKET, DEV_API_URL, AWS_REGION, HANSARD_DB_URL
 
 # Configure logging
 logging.basicConfig(
@@ -42,6 +45,13 @@ warnings.filterwarnings(
     category=FutureWarning,
     module="malaya"
 )
+
+
+def get_db_connection():
+    """Create and return a database connection."""
+    if not HANSARD_DB_URL:
+        raise ValueError("HANSARD_DB_URL environment variable not set")
+    return psycopg2.connect(HANSARD_DB_URL)
 
 def prepare_db_payload(df_speech: pd.DataFrame, prefix: str, date_str: str) -> Tuple[pd.DataFrame, Dict[str, Any]]:
     """
@@ -133,55 +143,75 @@ def prepare_db_payload(df_speech: pd.DataFrame, prefix: str, date_str: str) -> T
     return df_speech, payload
 
 
-def insert_to_db(payload: Dict[str, Any]) -> bool:
-    """
-    Insert payload to database via API.
+# def insert_to_db(payload: Dict[str, Any]) -> bool:
+#     """
+#     Insert payload to database via API.
     
-    Args:
-        payload: Dictionary containing sitting data and speeches
+#     Args:
+#         payload: Dictionary containing sitting data and speeches
     
-    Returns:
-        True if insertion successful, False otherwise
-    """
-    logger.info("Sending request to backend...")
+#     Returns:
+#         True if insertion successful, False otherwise
+#     """
+#     logger.info("Sending request to backend...")
+#     try:
+#         response = requests.post(
+#             f"{DEV_API_URL}/api/sitting/",
+#             json=payload,
+#             timeout=30
+#         )
+
+#         try:
+#             response_data = response.json()
+#         except json.JSONDecodeError:
+#             logger.warning("Response was not valid JSON: %s", response.text)
+#             response_data = {}
+
+#         if response.status_code == 201:
+#             if "warning" in response_data:
+#                 logger.warning("Data integrity warning: %s", response_data['warning'])
+#             elif "speech_errors" in response_data:
+#                 logger.warning("Speech errors: %s", response_data['speech_errors'])
+#             logger.info("✅ Inserted to DB")
+#             return True
+#         else:
+#             response.raise_for_status()
+#             return False
+
+#     except requests.exceptions.Timeout:
+#         logger.error("Request timeout when inserting to database")
+#         return False
+#     except requests.exceptions.HTTPError as e:
+#         resp = e.response
+#         if resp is not None:
+#             logger.error("Failed to insert: %s - %s", resp.status_code, resp.text)
+#         else:
+#             logger.error("Failed to insert due to HTTP error: %s", str(e))
+#         return False
+#     except requests.exceptions.RequestException as e:
+#         logger.error("Request error: %s", str(e))
+#         return False
+
+def insert_to_db(payload):
+    logger.info("Inserting directly into database...")
+
+    conn = None
     try:
-        response = requests.post(
-            f"{DEV_API_URL}/api/sitting/",
-            json=payload,
-            timeout=30
-        )
+        conn = get_db_connection()
+        ingest_sitting_to_db(payload, conn)
+        conn.commit()
+        logger.info("✅ Inserted to DB")
+        return True
 
-        try:
-            response_data = response.json()
-        except json.JSONDecodeError:
-            logger.warning("Response was not valid JSON: %s", response.text)
-            response_data = {}
+    except Exception as e:
+        if conn:
+            conn.rollback()
+        logger.error("Failed to insert to DB: %s", str(e))
+        raise
 
-        if response.status_code == 201:
-            if "warning" in response_data:
-                logger.warning("Data integrity warning: %s", response_data['warning'])
-            elif "speech_errors" in response_data:
-                logger.warning("Speech errors: %s", response_data['speech_errors'])
-            logger.info("✅ Inserted to DB")
-            return True
-        else:
-            response.raise_for_status()
-            return False
-
-    except requests.exceptions.Timeout:
-        logger.error("Request timeout when inserting to database")
-        return False
-    except requests.exceptions.HTTPError as e:
-        resp = e.response
-        if resp is not None:
-            logger.error("Failed to insert: %s - %s", resp.status_code, resp.text)
-        else:
-            logger.error("Failed to insert due to HTTP error: %s", str(e))
-        return False
-    except requests.exceptions.RequestException as e:
-        logger.error("Request error: %s", str(e))
-        return False
-
+    finally:
+        if conn:
+            conn.close()
 
 def process_and_insert(prefix: str, key: str, date_str: str) -> bool:
     """
