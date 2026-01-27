@@ -41,7 +41,7 @@ def malay_ordinal_to_number(ordinal_text: str) -> Optional[int]:
 
     # Base numbers (1-10)
     base_numbers = {
-        "pertama": 1, "kedua": 2, "ketiga": 3, "keempat": 4, "kelima": 5,
+        "khas":0,"pertama": 1, "kedua": 2, "ketiga": 3, "keempat": 4, "kelima": 5,
         "keenam": 6, "ketujuh": 7, "kelapan": 8, "kesembilan": 9, "kesepuluh": 10
     }
     
@@ -160,8 +160,6 @@ def upsert_cycles_via_api(
             )
             
             if cycle_key in existing_keys:
-                if context:
-                    context.log.info(f"[{log_prefix}] SKIPPED - Already exists: {cycle}")
                 skipped += 1
                 continue
             
@@ -171,8 +169,6 @@ def upsert_cycles_via_api(
             response = requests.post(api_endpoint, json=cycle, timeout=300)
 
             if response.status_code == 409:
-                if context:
-                    context.log.debug(f"[{log_prefix}] Already exists (409): {cycle}")
                 skipped += 1
                 continue
             
@@ -296,7 +292,7 @@ def scrape_arkib_cycles(context: Optional[AssetExecutionContext] = None) -> List
     """Scrape parliamentary cycles from archive tree structure."""
     session = requests.Session()
     session.headers.update(HEADERS)
-    verify_ssl = True
+    verify_ssl = False
     all_cycles: List[Dict] = []
 
     for source_url, house_code in ARKIB_SOURCES:
@@ -483,7 +479,7 @@ def parse_malay_date(date_str: str, context: Optional[AssetExecutionContext] = N
 def scrape_active_cycles(context: Optional[AssetExecutionContext] = None) -> List[Dict]:
     """Scrape active parliamentary cycles from main pages."""
     all_cycles = []
-    verify_ssl = True
+    verify_ssl = False
     
     for url, house_folder in ACTIVE_SOURCES:
         house_code = HOUSE_MAP.get(house_folder)
