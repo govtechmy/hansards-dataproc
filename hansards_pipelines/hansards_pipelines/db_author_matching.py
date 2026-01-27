@@ -18,6 +18,7 @@ Example:
     python -m hansards_pipelines.db_author_matching --sitting-ids 22959 --dry-run
     python -m hansards_pipelines.db_author_matching --sitting-ids 22959 22960 22961 --dry-run
     python -m hansards_pipelines.db_author_matching --date-from 1960-02-22 --date-to 1960-02-29 --dry-run
+    python -m hansards_pipelines.db_author_matching --filename dr_1960-02-22 --dry-run
     
 """
 from __future__ import annotations
@@ -47,6 +48,7 @@ class SimpleContext:
 def parse_args():
     p = argparse.ArgumentParser("DB author matching (standalone)")
     p.add_argument("--sitting-ids", type=int, nargs="+")
+    p.add_argument("--filename", type=str)
     p.add_argument("--date-from", type=str)
     p.add_argument("--date-to", type=str)
     p.add_argument("--dry-run", action="store_true")
@@ -80,8 +82,9 @@ def load_author_history(conn) -> pd.DataFrame:
 def load_sittings(
     conn,
     sitting_ids: List[int] | None,
-    date_from: str | None,
-    date_to: str | None,
+    filename: str | None = None,
+    date_from: str | None = None,
+    date_to: str | None = None,
 ) -> List[dict]:
     conditions = []
     params = []
@@ -89,6 +92,10 @@ def load_sittings(
     if sitting_ids:
         conditions.append("sitting_id = ANY(%s)")
         params.append(sitting_ids)
+
+    if filename:
+        conditions.append("filename = %s")
+        params.append(filename)
 
     if date_from:
         conditions.append("date >= %s")
@@ -255,7 +262,21 @@ def main():
     with psycopg.connect(HANSARD_DB_URL) as conn:
         author_df = load_authors(conn)
         author_hist_df = load_author_history(conn)
-        sittings = load_sittings(conn, args.sitting_ids, args.date_from, args.date_to)
+
+        if args.sitting_ids:
+            logger.info("Loading sittings by sitting_id")
+            sittings = load_sittings(conn, sitting_ids=args.sitting_ids)
+
+        elif args.filename:
+            logger.info(f"Loading sitting by filename={args.filename}")
+            sittings = load_sittings(conn, sitting_ids=None, filename=args.filename)
+
+        elif args.date_from or args.date_to:
+            logger.info(f"Loading sittings by date range from={args.date_from} to={args.date_to}")
+            sittings = load_sittings(conn, sitting_ids=None, date_from=args.date_from, date_to=args.date_to)
+
+        else:
+            raise RuntimeError("One of --sitting-ids, --filename, or --date-from/--date-to is required")
 
         for sitting in sittings:
             logger.info(f"===== START processing sitting_id={sitting['sitting_id']} | filename={sitting.get('filename')} =====")
