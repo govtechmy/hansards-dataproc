@@ -22,10 +22,11 @@ import pickle
 from bs4 import BeautifulSoup
 import boto3
 import botocore
+import re
 import requests
 import pandas as pd
 from urllib.parse import urljoin
-from typing import List, Tuple, Dict
+from typing import List, Tuple, Dict, Optional
 from io import BytesIO
 import pdfplumber
 from datetime import datetime
@@ -50,6 +51,13 @@ from hansards_pipelines.utils.s3_utils import (
     build_path,
 )
 
+from hansards_pipelines.settings import S3_DATAPROC_BUCKET, S3_PUBLIC_BUCKET, DEV_API_URL, PROD_API_URL, FRONTEND_URL, FRONTEND_TOKEN, HANSARD_DB_URL
+from hansards_pipelines.scrape_parliamentary_cycle import (
+    scrape_arkib_cycles,
+    scrape_active_cycles,
+    fetch_db_cycles,
+    upsert_cycles_via_api,
+)
 import psycopg
 from hansards_pipelines.direct_sitting_ingest import ingest_sitting_to_db
 
@@ -82,9 +90,7 @@ from hansards_pipelines.tabulate_hansard import tabulate
 
 s3_client = boto3.client("s3")
 
-
 house_names = ["DR", "DN", "KKDR"]
-
 
 sitting_partitions_def = DynamicPartitionsDefinition(name="house_sittings")
 # https://github.com/dagster-io/dagster/discussions/20508
@@ -117,6 +123,77 @@ def _generate_new_hansard_message(
         context,
         deeplink=False,
     )
+
+
+@asset(group_name="scrape")
+def scrape_parliamentary_cycle_arkib(context: AssetExecutionContext) -> Dict:
+    """
+    Scrape parliamentary cycle data (Parlimen, Penggal, Mesyuarat + date ranges)
+    from Portal Rasmi Parlimen archive for DR, DN, KKDR and upsert via
+    POST /api/parliamentary-cycle.
+    
+    This scrapes COMPLETED sessions from the archive tree structure.
+    """
+    # Scrape cycles from arkib
+    cycles = scrape_arkib_cycles(context=context)
+    
+    # Fetch existing cycles from database
+    context.log.info("[arkib] Fetching existing cycles from database...")
+    existing_keys = fetch_db_cycles(HANSARD_DB_URL, context)
+    
+    # Upsert via API
+    api_endpoint = f"{DEV_API_URL}/api/parliamentary-cycle"
+    context.log.info(f"[arkib] Using API endpoint: {api_endpoint}")
+    
+    stats = upsert_cycles_via_api(
+        cycles=cycles,
+        existing_keys=existing_keys,
+        api_endpoint=api_endpoint,
+        log_prefix="arkib",
+        context=context
+    )
+    
+    summary = {
+        "total_scraped": len(cycles),
+        **stats,
+    }
+    
+    context.log.info(f"[arkib] Summary: {summary}")
+    return summary
+
+
+@asset(group_name="scrape")
+def scrape_parliamentary_cycle_active(context: AssetExecutionContext) -> Dict:
+    """
+    Scrape ACTIVE parliamentary cycle data (Parlimen, Penggal, Mesyuarat + date ranges)
+    from Portal Rasmi Parlimen main pages for DR, DN, KKDR.
+    """
+    # Scrape active cycles
+    cycles = scrape_active_cycles(context=context)
+    
+    # Fetch existing cycles from database
+    context.log.info("[active] Fetching existing cycles from database...")
+    existing_keys = fetch_db_cycles(HANSARD_DB_URL, context)
+    
+    # Upsert via API
+    api_endpoint = f"{DEV_API_URL}/api/parliamentary-cycle"
+    context.log.info(f"[active] Using API endpoint: {api_endpoint}")
+    
+    stats = upsert_cycles_via_api(
+        cycles=cycles,
+        existing_keys=existing_keys,
+        api_endpoint=api_endpoint,
+        log_prefix="active",
+        context=context
+    )
+    
+    summary = {
+        "total_scraped": len(cycles),
+        **stats,
+    }
+    
+    context.log.info(f"[active] Summary: {summary}")
+    return summary
 
 
 @asset(group_name="scrape")
