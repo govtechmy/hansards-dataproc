@@ -114,15 +114,19 @@ def _generate_new_hansard_message(
             {"name": "Skipped PDFs", "value": skipped_file_name_str, "inline": True}
         )
     footer = {"text": "Parliament Hansards Web Scraper"}
-    send_discord_message(
-        "",
-        f"✨ New Hansards Scraped!",
-        3066993,
-        message_fields,
-        footer,
-        context,
-        deeplink=False,
-    )
+    try:
+        send_discord_message(
+            "",
+            f"✨ New Hansards Scraped!",
+            3066993,
+            message_fields,
+            footer,
+            context,
+            deeplink=False,
+        )
+    except Exception as e:
+        context.log.warning(f"Discord notification failed (ignored): {e}")
+
 
 
 @asset(group_name="scrape")
@@ -458,6 +462,15 @@ def dg_parse_hansard(context: AssetExecutionContext):
     pdf_response = s3_client.get_object(
         Bucket=S3_PUBLIC_BUCKET, Key=sitting_object["renamed_filename_key"]
     )
+    try:
+        pdf_response = s3_client.get_object(
+            Bucket=S3_PUBLIC_BUCKET,
+            Key=sitting_object["renamed_filename_key"],
+        )
+    except botocore.exceptions.ClientError as e:
+        context.log.error(f"PDF not found in {S3_PUBLIC_BUCKET} for {context.partition_key}. Likely move & rename step did not run.")
+        raise
+
     text, spaced_bold, spaced_italics, tables, attn_text, is_final = parse_hansard(
         sitting_object["date_str"],
         sitting_object["house"],
