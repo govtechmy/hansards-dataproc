@@ -298,20 +298,29 @@ def main():
         author_df = load_authors(conn)
         author_hist_df = load_author_history(conn)
 
+        sitting_args = ""
+
         if args.sitting_ids:
             logger.info("Loading sittings by sitting_id")
             sittings = load_sittings(conn, sitting_ids=args.sitting_ids)
+            sitting_args = f"sitting_ids={args.sitting_ids}"
 
         elif args.filename:
             logger.info(f"Loading sitting by filename={args.filename}")
             sittings = load_sittings(conn, sitting_ids=None, filename=args.filename)
+            sitting_args = f"filename={args.filename}"
 
         elif args.date_from or args.date_to:
             logger.info(f"Loading sittings by date range from={args.date_from} to={args.date_to}")
             sittings = load_sittings(conn, sitting_ids=None, date_from=args.date_from, date_to=args.date_to)
+            sitting_args = f"date range from={args.date_from} to={args.date_to}"
 
         else:
             raise RuntimeError("One of --sitting-ids, --filename, or --date-from/--date-to is required")
+
+        if not sittings:
+            logger.error(f"No sittings found for {sitting_args or 'unknown'}")
+            return
 
         for sitting in sittings:
             logger.info(f"===== START processing sitting_id={sitting['sitting_id']} | filename={sitting.get('filename')} =====")
