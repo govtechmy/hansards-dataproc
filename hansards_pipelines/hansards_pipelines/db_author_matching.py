@@ -216,6 +216,40 @@ def rebuild_api_speech(conn, sitting: dict, logger):
             rows,
         )
 
+def build_author_id_map(matched: pd.DataFrame) -> dict[int, int | None]:
+    """
+    index -> author_id (or None)
+    """
+    return {
+        int(row["index"]): (
+            int(row["author_id"]) if pd.notna(row["author_id"]) else None
+        )
+        for _, row in matched.iterrows()
+    }
+
+def apply_author_ids_to_speech_data(speech_data, author_id_map: dict[int, int | None]):
+    """
+    Mutates speech_data in-place.
+    Preserves original nested structure.
+    """
+
+    def walk(node):
+        if isinstance(node, dict):
+            # leaf speech object
+            if "speech" in node and "index" in node:
+                idx = int(node["index"])
+                if idx in author_id_map:
+                    node["author_id"] = author_id_map[idx]
+            else:
+                for v in node.values():
+                    walk(v)
+
+        elif isinstance(node, list):
+            for item in node:
+                walk(item)
+
+    walk(speech_data)
+    return speech_data
 
 # ---------------------------------------------------------------------
 # speech_data → DataFrame
@@ -314,11 +348,14 @@ def main():
                 logger.info("Dry-run enabled -> skipping update")
                 continue
 
-            updated = json.dumps(
-                matched.to_dict(orient="records"),
-                ensure_ascii=False,
-                default=str,
-            )
+            original_speech_data = json.loads(sitting["speech_data"])
+
+            author_id_map = build_author_id_map(matched)
+
+            patched_speech_data = apply_author_ids_to_speech_data(original_speech_data, author_id_map,)
+
+            updated = json.dumps(patched_speech_data, ensure_ascii=False,)
+
 
             with conn.transaction():
                 conn.execute(
