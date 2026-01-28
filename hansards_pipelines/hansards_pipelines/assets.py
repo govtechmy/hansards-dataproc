@@ -61,8 +61,6 @@ from hansards_pipelines.scrape_parliamentary_cycle import (
 import psycopg
 from hansards_pipelines.direct_sitting_ingest import ingest_sitting_to_db
 
-from hansards_pipelines.settings import S3_DATAPROC_BUCKET, S3_PUBLIC_BUCKET, DEV_API_URL, PROD_API_URL, FRONTEND_URL, FRONTEND_TOKEN, HANSARD_DB_URL
-
 from hansards_pipelines.scrape_arkib import run_scrape
 from hansards_pipelines.move_and_rename_pdf import main as move_arkib_pdfs_to_public_main
 
@@ -264,6 +262,7 @@ def scrape_website(context: AssetExecutionContext) -> List:
                 pdf_path = extract_pdf_url(a_tag.get("href"))
                 pdf_url = urljoin(base_url, pdf_path)
                 if pdf_url.endswith(".pdf"):
+                    should_upload = False
                     # Determine the PDF file name
                     pdf_name = os.path.basename(pdf_url).split(".")[
                         0
@@ -305,13 +304,32 @@ def scrape_website(context: AssetExecutionContext) -> List:
                             context.log.info(f"S3 object not found: {full_s3_key}")
                         else:
                             raise
+                        
+                    # Step 1b: Check if file already exists in PUBLIC (canonical location)
+                    exists_in_public = False
+                    sitting_object = get_sitting_object(pdf_name[:-4])
+                    public_house_folder = sitting_object["house_folder"]
+                    renamed_public_key = f"{public_house_folder}/{sitting_object['renamed_filename']}.pdf"
+                    try:
+                        s3_client.head_object(
+                            Bucket=S3_PUBLIC_BUCKET,
+                            Key=renamed_public_key,
+                        )
+                        exists_in_public = True
+                    except botocore.exceptions.ClientError:
+                        pass
 
-                    if exists_in_s3:
-                        context.log.info(f"Skip {pdf_name} - Still in S3, hasn't completed ingestion. No need to upload again.")
+
+                    if exists_in_s3 and not exists_in_public:
+                        # Stranded file: uploaded before but never moved to PUBLIC
+                        context.log.warning(f"{pdf_name} exists in new/ but not in PUBLIC. No need to upload again, but re-queueing for move")
+                        should_upload = False
+                        new_pdfs.append((pdf_name, s3_key, f"s3://{S3_DATAPROC_BUCKET}/{full_s3_key}"))
+                    elif exists_in_s3 and exists_in_public:
                         should_upload = False
                     else:
                         # Step 2: Download and open PDF to determine is_final_pdf flag
-                        pdf_response = requests.get(pdf_url, verify=False)
+                        pdf_response = requests.get(pdf_url, verify=False, timeout=300)
                         pdf_response.raise_for_status()
                         is_final_pdf = True
                         with pdfplumber.open(BytesIO(pdf_response.content)) as pdf:
@@ -459,9 +477,6 @@ def dg_parse_hansard(context: AssetExecutionContext):
     context.log.info(f"Parsing {sitting_object['original_filename']}")
 
     # read pdf from s3
-    pdf_response = s3_client.get_object(
-        Bucket=S3_PUBLIC_BUCKET, Key=sitting_object["renamed_filename_key"]
-    )
     try:
         pdf_response = s3_client.get_object(
             Bucket=S3_PUBLIC_BUCKET,
