@@ -513,32 +513,75 @@ def _dg_parse_hansard_impl(
         s3_client.put_object(Bucket=S3_DATAPROC_BUCKET, Key=s3_key, Body=attn_text)
         context.log.info(f"Uploaded attendance to {s3_key}")
 
-@asset(partitions_def=sitting_partitions_def, group_name="parse")
+
+@asset(
+    partitions_def=sitting_partitions_def,
+    group_name="parse",
+)
 def dg_parse_hansard(context: AssetExecutionContext):
-    """Parse hansard (active)"""
-    sitting_object = get_sitting_object(context.partition_key)
-    pdf_key = sitting_object["renamed_filename_key"]
+    """
+    Parse hansard PDF for a sitting.
 
-    _dg_parse_hansard_impl(context=context, pdf_key=pdf_key)
+    Behaviour:
+    - Active scrape  -> parse ROOT pdf
+    - Arkib scrape   -> parse ARKIB pdf
+    - Arkib < 2026   -> skip (policy guard)
+    """
 
-@asset(partitions_def=sitting_partitions_def, group_name="parse")
-def dg_parse_hansard_arkib(context: AssetExecutionContext):
-    """Parse hansard (arkib)"""
+    # Resolve sitting metadata from partition
     sitting_object = get_sitting_object(context.partition_key)
-    year = sitting_object["date"].year
-    min_year = 2026 #
-    if year < min_year: # test
+
+    # Determine source from run tag (default = active)
+    pdf_source = context.run.tags.get("pdf_source", "active")
+
+    context.log.info(f"dg_parse_hansard | partition={context.partition_key} | source={pdf_source} | date={sitting_object['proper_date_str']}")
+
+    # ─────────────────────────────────────────────
+    # Arkib policy guard
+    # ─────────────────────────────────────────────
+    if pdf_source == "arkib" and sitting_object["date"].year < 2026:
+        context.log.info(
+            "Skipping arkib hansard due to year policy | "
+            f"year={sitting_object['date'].year} | "
+            f"partition={context.partition_key}"
+        )
         return
-    pdf_key = f"arkib/{sitting_object['renamed_filename_key']}"
 
-    _dg_parse_hansard_impl(context=context, pdf_key=pdf_key)
+    # ─────────────────────────────────────────────
+    # Resolve PDF key to parse
+    # ─────────────────────────────────────────────
+    if pdf_source == "arkib":
+        pdf_key = f"arkib/{sitting_object['renamed_filename_key']}"
+    else:
+        pdf_key = sitting_object["renamed_filename_key"]
+
+    context.log.info(
+        f"Parsing PDF | "
+        f"bucket={S3_PUBLIC_BUCKET} | "
+        f"key={pdf_key}"
+    )
+
+    # ─────────────────────────────────────────────
+    # Execute actual parsing logic
+    # ─────────────────────────────────────────────
+    _dg_parse_hansard_impl(
+        context=context,
+        pdf_key=pdf_key,
+    )
+
+    # Optional explicit return for observability
+    return {
+        "partition": context.partition_key,
+        "pdf_source": pdf_source,
+        "pdf_key": pdf_key,
+    }
 
 
 
 @asset(
     partitions_def=sitting_partitions_def, deps=[dg_parse_hansard], group_name="parse"
 )
-def dg_get_categories_impl(context: AssetExecutionContext):
+def dg_get_categories(context: AssetExecutionContext):
     """
     Reads:
     - Raw PDF
@@ -555,10 +598,29 @@ def dg_get_categories_impl(context: AssetExecutionContext):
     - kkdr_subcategories_non_bold
     """
     sitting_object = get_sitting_object(context.partition_key)
-    context.log.info(f"Getting categories for {sitting_object['original_filename']}")
+
+    # Determine source from run tag (default = active)
+    pdf_source = context.run.tags.get("pdf_source", "active")
+
+    # Arkib policy guard (same rule as parse)
+    if pdf_source == "arkib" and sitting_object["date"].year < 2026:
+        context.log.info(
+            "Skipping categories due to arkib year policy | "
+            f"year={sitting_object['date'].year} | "
+            f"partition={context.partition_key}"
+        )
+        return
+
+    # Resolve correct PDF path
+    if pdf_source == "arkib":
+        pdf_key = f"arkib/{sitting_object['renamed_filename_key']}"
+    else:
+        pdf_key = sitting_object["renamed_filename_key"]
+
+    context.log.info(f"Getting categories | source={pdf_source} | key={pdf_key}")
 
     pdf_response = s3_client.get_object(
-        Bucket=S3_PUBLIC_BUCKET, Key=sitting_object["renamed_filename_key"]
+        Bucket=S3_PUBLIC_BUCKET, Key=pdf_key
     )
     (
         long_toc,

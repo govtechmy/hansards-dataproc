@@ -33,7 +33,7 @@ from hansards_pipelines.assets import FRONTEND_URL
 # )
 
 
-def build_sittings_sensor(*, job, prefix: str):
+def build_sittings_sensor(*, job, prefix: str, source: str):
     @sensor(job=job, minimum_interval_seconds=900)
     def _sittings_sensor(context: SensorEvaluationContext):
         """Set up partitions
@@ -92,7 +92,7 @@ def build_sittings_sensor(*, job, prefix: str):
             has_active_run = any(runs)
 
             if not has_active_run:
-                run_requests.append(RunRequest(partition_key=pdf_name))
+                run_requests.append(RunRequest(partition_key=pdf_name,  tags={"pdf_source": source}))
                 dynamic_partition_additions.append(pdf_name)
                 context.log.info(f"Creating new run for partition: {pdf_name}")
             else:
@@ -109,8 +109,8 @@ def build_sittings_sensor(*, job, prefix: str):
 
     return _sittings_sensor
 
-active_sittings_sensor = build_sittings_sensor(job=sittings_job, prefix="new/")
-arkib_sittings_sensor = build_sittings_sensor(job=sittings_job, prefix="arkib/")
+sittings_sensor = build_sittings_sensor(job=sittings_job, prefix="new/", source="active")
+arkib_sittings_sensor = build_sittings_sensor(job=sittings_job, prefix="arkib/",  source="arkib")
 
 
 @run_status_sensor(run_status=DagsterRunStatus.SUCCESS, job_selection=[sittings_job])

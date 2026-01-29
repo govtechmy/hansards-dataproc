@@ -31,22 +31,6 @@ sittings_job = define_asset_job(
     ),
 )
 
-sittings_arkib_job = define_asset_job(
-    "sittings_arkib_job",
-    selection=AssetSelection.keys(
-        "dg_parse_hansard_arkib",
-        "dg_get_categories_arkib",
-        "dg_post_parsing_edits",
-        "dg_pre_tabulate",
-        "dg_edit_hansards",
-        "dg_tabulate",
-        "remove_parsed_hansards",
-        "prepare_db_payload",
-        "direct_insert_to_db",
-    ),
-)
-
-
 scrape_arkib_job = define_asset_job(
     "scrape_arkib_website_job",
     selection=[assets.scrape_website_arkib, assets.move_arkib_pdfs_to_public_asset],

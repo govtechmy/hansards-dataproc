@@ -30,7 +30,6 @@ defs = Definitions(
         jobs.sittings_job,
         jobs.scrape_job,
         jobs.scrape_arkib_job,
-        jobs.sittings_arkib_job,
     ],
     sensors=[
         sittings_sensor,
