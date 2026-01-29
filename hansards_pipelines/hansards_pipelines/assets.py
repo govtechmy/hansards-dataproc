@@ -1206,7 +1206,7 @@ def load_author_data_to_db(context: AssetExecutionContext):
     - Update existing authors if data has changed
     - Skip authors that already exist with the same data
     """
-    csv_path = "/Users/mydigital/Documents/Github/hansard/hansards-dataproc/author.csv"
+    csv_path = os.getenv("AUTHOR_CSV_PATH")
     return load_author_csv_to_db(
         csv_path=csv_path,
         db_url=HANSARD_DB_URL,
