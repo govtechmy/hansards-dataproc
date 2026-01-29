@@ -14,6 +14,7 @@ from dagster import (
     DagsterRunStatus,
     MaterializeResult,
     Output,
+    Failure
 )
 import os
 import io
@@ -540,12 +541,15 @@ def dg_parse_hansard(context: AssetExecutionContext):
     # Arkib policy guard
     # ─────────────────────────────────────────────
     if pdf_source == "arkib" and sitting_object["date"].year < 2026:
-        context.log.info(
-            "Skipping arkib hansard due to year policy | "
-            f"year={sitting_object['date'].year} | "
-            f"partition={context.partition_key}"
+        raise Failure(
+            description="ARKIB_POLICY_BLOCK",
+            metadata={
+                "partition": context.partition_key,
+                "pdf_source": pdf_source,
+                "year": sitting_object["date"].year,
+                "reason": "Arkib hansards before 2026 are intentionally ignored",
+            },
         )
-        return
 
     # ─────────────────────────────────────────────
     # Resolve PDF key to parse
@@ -601,15 +605,6 @@ def dg_get_categories(context: AssetExecutionContext):
 
     # Determine source from run tag (default = active)
     pdf_source = context.run.tags.get("pdf_source", "active")
-
-    # Arkib policy guard (same rule as parse)
-    if pdf_source == "arkib" and sitting_object["date"].year < 2026:
-        context.log.info(
-            "Skipping categories due to arkib year policy | "
-            f"year={sitting_object['date'].year} | "
-            f"partition={context.partition_key}"
-        )
-        return
 
     # Resolve correct PDF path
     if pdf_source == "arkib":
