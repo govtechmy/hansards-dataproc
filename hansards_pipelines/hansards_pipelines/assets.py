@@ -65,6 +65,9 @@ from hansards_pipelines.settings import S3_DATAPROC_BUCKET, S3_PUBLIC_BUCKET, DE
 
 from hansards_pipelines.scrape_arkib import run_scrape
 from hansards_pipelines.move_and_rename_pdf import main as move_arkib_pdfs_to_public_main
+from hansards_pipelines.author import load_author_csv_to_db
+from pathlib import Path
+
 
 # main pipeline
 # 1. scrape from the website, push pdf to s3 hansards-new
@@ -1192,3 +1195,20 @@ def move_arkib_pdfs_to_public_asset(context: AssetExecutionContext):
     context.log.info("Moving arkib PDFs to public bucket")
     move_arkib_pdfs_to_public_main(category=None)
     context.log.info("Completed moving arkib PDFs")
+
+
+@asset(group_name="author")
+def load_author_data_to_db(context: AssetExecutionContext):
+    """
+    Load author data from author.csv into the api_author table in the database.
+    Uses UPSERT logic (INSERT ... ON CONFLICT DO UPDATE) to:
+    - Insert new authors that don't exist
+    - Update existing authors if data has changed
+    - Skip authors that already exist with the same data
+    """
+    csv_path = "/Users/mydigital/Documents/Github/hansard/hansards-dataproc/author.csv"
+    return load_author_csv_to_db(
+        csv_path=csv_path,
+        db_url=HANSARD_DB_URL,
+        context=context
+    )
