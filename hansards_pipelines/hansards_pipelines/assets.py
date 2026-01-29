@@ -464,12 +464,11 @@ def move_and_rename_all_hansards(
 
         context.log.info(f"Renamed and moved {s3_key} to {new_pdf_name}")
 
-@asset(
-    partitions_def=sitting_partitions_def,
-    # deps=[move_and_rename_hansards],
-    group_name="parse"
-)
-def dg_parse_hansard(context: AssetExecutionContext):
+def _dg_parse_hansard_impl(
+    *,
+    context: AssetExecutionContext,
+    pdf_key: str,
+):
     """Parse hansard
     Output of this is parsed_pdf folder - plaintext, bold, italics, tables, attendance.txt
     """
@@ -480,7 +479,7 @@ def dg_parse_hansard(context: AssetExecutionContext):
     try:
         pdf_response = s3_client.get_object(
             Bucket=S3_PUBLIC_BUCKET,
-            Key=sitting_object["renamed_filename_key"],
+            Key=pdf_key,
         )
     except botocore.exceptions.ClientError as e:
         context.log.error(f"PDF not found in {S3_PUBLIC_BUCKET} for {context.partition_key}. Likely move & rename step did not run.")
@@ -514,10 +513,32 @@ def dg_parse_hansard(context: AssetExecutionContext):
         s3_client.put_object(Bucket=S3_DATAPROC_BUCKET, Key=s3_key, Body=attn_text)
         context.log.info(f"Uploaded attendance to {s3_key}")
 
+@asset(partitions_def=sitting_partitions_def, group_name="parse")
+def dg_parse_hansard(context: AssetExecutionContext):
+    """Parse hansard (active)"""
+    sitting_object = get_sitting_object(context.partition_key)
+    pdf_key = sitting_object["renamed_filename_key"]
+
+    _dg_parse_hansard_impl(context=context, pdf_key=pdf_key)
+
+@asset(partitions_def=sitting_partitions_def, group_name="parse")
+def dg_parse_hansard_arkib(context: AssetExecutionContext):
+    """Parse hansard (arkib)"""
+    sitting_object = get_sitting_object(context.partition_key)
+    year = sitting_object["date"].year
+    min_year = 2026 #
+    if year < min_year: # test
+        return
+    pdf_key = f"arkib/{sitting_object['renamed_filename_key']}"
+
+    _dg_parse_hansard_impl(context=context, pdf_key=pdf_key)
+
+
+
 @asset(
     partitions_def=sitting_partitions_def, deps=[dg_parse_hansard], group_name="parse"
 )
-def dg_get_categories(context: AssetExecutionContext):
+def dg_get_categories_impl(context: AssetExecutionContext):
     """
     Reads:
     - Raw PDF
