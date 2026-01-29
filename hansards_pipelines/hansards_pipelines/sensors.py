@@ -33,75 +33,84 @@ from hansards_pipelines.assets import FRONTEND_URL
 # )
 
 
-@sensor(job=sittings_job, minimum_interval_seconds=900)
-def sittings_sensor(context: SensorEvaluationContext):
-    """Set up partitions
-    One partition is one dewan, one sitting (date)
-    One partition is one file still in new/
-    TODO: implement actual moving of parsed PDFs from new folder
-    """
-    # get new pdfs
+def build_sittings_sensor(*, job, prefix: str):
+    @sensor(job=job, minimum_interval_seconds=900)
+    def _sittings_sensor(context: SensorEvaluationContext):
+        """Set up partitions
+        One partition is one dewan, one sitting (date)
+        One partition is one file still in new/
+        TODO: implement actual moving of parsed PDFs from new folder
+        """
+        # get new pdfs
 
-    # get all partitions in s3
-    response = s3_client.list_objects_v2(Bucket=S3_DATAPROC_BUCKET, Prefix="new/")
-    new_pdfs = []
-    for obj in response.get("Contents", []):
-        # key new/dewannegara/DN-03122024.pdf
-        if obj["Key"].lower().endswith(".pdf"):
-            # take filename only without extension: DN-03122024
-            pdf_name = obj["Key"].split("/")[-1].split(".")[0]
-            context.log.info(f"New PDF: {pdf_name}")
+        # get all partitions in s3
+        response = s3_client.list_objects_v2(
+            Bucket=S3_DATAPROC_BUCKET,
+            Prefix=prefix,
+        )
+        new_pdfs = []
+        for obj in response.get("Contents", []):
+            # key new/dewannegara/DN-03122024.pdf
+            if obj["Key"].lower().endswith(".pdf"):
+                # take filename only without extension: DN-03122024
+                pdf_name = obj["Key"].split("/")[-1].split(".")[0]
+                context.log.info(f"New PDF: {pdf_name}")
 
-            # TODO: ensure date portion is 8 digits DDMMYYYY
-            date = pdf_name.split("-")[1]
-            if len(date) != 8:
-                context.log.warning(
-                    f"WARNING: Date portion is not 8 digits: {date}. Skipping"
+                # TODO: ensure date portion is 8 digits DDMMYYYY
+                date = pdf_name.split("-")[1]
+                if len(date) != 8:
+                    context.log.warning(
+                        f"WARNING: Date portion is not 8 digits: {date}. Skipping"
+                    )
+                new_pdfs.append(pdf_name)
+
+        # TODO: REMOVE THIS FOR TESTING ONLY
+        # new_pdfs = new_pdfs[:5]
+        context.log.info(f"New PDFs: {new_pdfs}")
+
+        ## Only Create New Runs if Partition has no active runs
+        # Get runs for each partition
+        run_requests = []
+        dynamic_partition_additions = []
+
+        for pdf_name in new_pdfs:
+            # Get latest run for this partition using Dagster's RunsFilter
+            runs = context.instance.get_runs(
+                filters=RunsFilter(
+                    tags={"dagster/partition": pdf_name},
+                    statuses=[
+                        DagsterRunStatus.STARTED,
+                        DagsterRunStatus.STARTING,
+                        DagsterRunStatus.QUEUED,
+                        DagsterRunStatus.SUCCESS,
+                        DagsterRunStatus.FAILURE,
+                    ],
                 )
-            new_pdfs.append(pdf_name)
-
-    # TODO: REMOVE THIS FOR TESTING ONLY
-    # new_pdfs = new_pdfs[:5]
-    context.log.info(f"New PDFs: {new_pdfs}")
-
-    ## Only Create New Runs if Partition has no active runs
-    # Get runs for each partition
-    run_requests = []
-    dynamic_partition_additions = []
-
-    for pdf_name in new_pdfs:
-        # Get latest run for this partition using Dagster's RunsFilter
-        runs = context.instance.get_runs(
-            filters=RunsFilter(
-                tags={"dagster/partition": pdf_name},
-                statuses=[
-                    DagsterRunStatus.STARTED,
-                    DagsterRunStatus.STARTING,
-                    DagsterRunStatus.QUEUED,
-                    DagsterRunStatus.SUCCESS,
-                    DagsterRunStatus.FAILURE,
-                ],
             )
+
+            # Check if there are any active runs
+            has_active_run = any(runs)
+
+            if not has_active_run:
+                run_requests.append(RunRequest(partition_key=pdf_name))
+                dynamic_partition_additions.append(pdf_name)
+                context.log.info(f"Creating new run for partition: {pdf_name}")
+            else:
+                context.log.info(f"Skipping partition {pdf_name} - has active run")
+
+        return SensorResult(
+            run_requests=run_requests,
+            dynamic_partitions_requests=(
+                [sitting_partitions_def.build_add_request(dynamic_partition_additions)]
+                if dynamic_partition_additions
+                else []
+            ),
         )
 
-        # Check if there are any active runs
-        has_active_run = any(runs)
+    return _sittings_sensor
 
-        if not has_active_run:
-            run_requests.append(RunRequest(partition_key=pdf_name))
-            dynamic_partition_additions.append(pdf_name)
-            context.log.info(f"Creating new run for partition: {pdf_name}")
-        else:
-            context.log.info(f"Skipping partition {pdf_name} - has active run")
-
-    return SensorResult(
-        run_requests=run_requests,
-        dynamic_partitions_requests=(
-            [sitting_partitions_def.build_add_request(dynamic_partition_additions)]
-            if dynamic_partition_additions
-            else []
-        ),
-    )
+active_sittings_sensor = build_sittings_sensor(job=sittings_job, prefix="new/")
+arkib_sittings_sensor = build_sittings_sensor(job=sittings_job, prefix="arkib/")
 
 
 @run_status_sensor(run_status=DagsterRunStatus.SUCCESS, job_selection=[sittings_job])
