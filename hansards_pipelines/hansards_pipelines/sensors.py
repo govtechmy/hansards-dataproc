@@ -121,8 +121,7 @@ def arkib_key_to_partition(key: str) -> str:
     return f"{house.upper()}-{dd}{mm}{yyyy}"            # DN-19012026
 
 
-
-@sensor(job=sittings_job, minimum_interval_seconds=900)
+@sensor(job=sittings_job, minimum_interval_seconds=86400) # once a day
 def sittings_arkib_sensor(context: SensorEvaluationContext):
     """
     Promote(move) PUBLIC arkib/ pdfs into PUBLIC root with certain conditions. 
