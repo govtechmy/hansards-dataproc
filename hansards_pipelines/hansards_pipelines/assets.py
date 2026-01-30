@@ -52,7 +52,7 @@ from hansards_pipelines.utils.s3_utils import (
     build_path,
 )
 
-from hansards_pipelines.settings import S3_DATAPROC_BUCKET, S3_PUBLIC_BUCKET, DEV_API_URL, PROD_API_URL, FRONTEND_URL, FRONTEND_TOKEN, HANSARD_DB_URL, AWS_REGION
+from hansards_pipelines.settings import S3_DATAPROC_BUCKET, S3_PUBLIC_BUCKET, DEV_API_URL, PROD_API_URL, FRONTEND_URL, FRONTEND_TOKEN, HANSARD_DB_URL
 from hansards_pipelines.scrape_parliamentary_cycle import (
     scrape_arkib_cycles,
     scrape_active_cycles,
@@ -64,9 +64,6 @@ from hansards_pipelines.direct_sitting_ingest import ingest_sitting_to_db
 
 from hansards_pipelines.scrape_arkib import run_scrape
 from hansards_pipelines.move_and_rename_pdf import main as move_arkib_pdfs_to_public_main
-from hansards_pipelines.author import load_author_csv_to_db
-from pathlib import Path
-
 
 # main pipeline
 # 1. scrape from the website, push pdf to s3 hansards-new
@@ -524,65 +521,21 @@ def _dg_parse_hansard_impl(
 )
 def dg_parse_hansard(context: AssetExecutionContext):
     """
-    Parse hansard PDF for a sitting.
-
-    Behaviour:
-    - Active scrape  -> parse ROOT pdf
-    - Arkib scrape   -> parse ARKIB pdf
-    - Arkib < 2026   -> skip (policy guard)
+    Parse hansard PDF for a sitting. Always reads from S3 PUBLIC ROOT.
     """
 
-    # Resolve sitting metadata from partition
     sitting_object = get_sitting_object(context.partition_key)
 
-    # Determine source from run tag (default = active)
-    pdf_source = context.run.tags.get("pdf_source", "active")
+    pdf_key = sitting_object["renamed_filename_key"]
 
-    context.log.info(f"dg_parse_hansard | partition={context.partition_key} | source={pdf_source} | date={sitting_object['proper_date_str']}")
+    context.log.info(f"dg_parse_hansard | partition={context.partition_key} | key={pdf_key}")
 
-    # ─────────────────────────────────────────────
-    # Arkib policy guard
-    # ─────────────────────────────────────────────
-    if pdf_source == "arkib" and sitting_object["date"].year < 2026:
-        raise Failure(
-            description="ARKIB_POLICY_BLOCK",
-            metadata={
-                "partition": context.partition_key,
-                "pdf_source": pdf_source,
-                "year": sitting_object["date"].year,
-                "reason": "Arkib hansards before 2026 are intentionally ignored",
-            },
-        )
+    _dg_parse_hansard_impl(context=context, pdf_key=pdf_key)
 
-    # ─────────────────────────────────────────────
-    # Resolve PDF key to parse
-    # ─────────────────────────────────────────────
-    if pdf_source == "arkib":
-        pdf_key = f"arkib/{sitting_object['renamed_filename_key']}"
-    else:
-        pdf_key = sitting_object["renamed_filename_key"]
-
-    context.log.info(
-        f"Parsing PDF | "
-        f"bucket={S3_PUBLIC_BUCKET} | "
-        f"key={pdf_key}"
-    )
-
-    # ─────────────────────────────────────────────
-    # Execute actual parsing logic
-    # ─────────────────────────────────────────────
-    _dg_parse_hansard_impl(
-        context=context,
-        pdf_key=pdf_key,
-    )
-
-    # Optional explicit return for observability
     return {
         "partition": context.partition_key,
-        "pdf_source": pdf_source,
         "pdf_key": pdf_key,
     }
-
 
 
 @asset(
@@ -606,16 +559,9 @@ def dg_get_categories(context: AssetExecutionContext):
     """
     sitting_object = get_sitting_object(context.partition_key)
 
-    # Determine source from run tag (default = active)
-    pdf_source = context.run.tags.get("pdf_source", "active")
+    pdf_key = sitting_object["renamed_filename_key"]
 
-    # Resolve correct PDF path
-    if pdf_source == "arkib":
-        pdf_key = f"arkib/{sitting_object['renamed_filename_key']}"
-    else:
-        pdf_key = sitting_object["renamed_filename_key"]
-
-    context.log.info(f"Getting categories | source={pdf_source} | key={pdf_key}")
+    context.log.info(f"Getting categories | key={pdf_key}")
 
     pdf_response = s3_client.get_object(
         Bucket=S3_PUBLIC_BUCKET, Key=pdf_key
@@ -1301,18 +1247,3 @@ def move_arkib_pdfs_to_public_asset(context: AssetExecutionContext):
     context.log.info("Moving arkib PDFs to public bucket")
     move_arkib_pdfs_to_public_main(category=None)
     context.log.info("Completed moving arkib PDFs")
-
-
-@asset(group_name="author")
-def load_author_data_to_db(context: AssetExecutionContext):
-    """
-    Load author data from S3 into the api_author table in the database.
-    CSV file should be manually uploaded to S3 at: canonical/author.csv
-    """
-    return load_author_csv_to_db(
-        s3_bucket=S3_DATAPROC_BUCKET,
-        s3_key="canonical/author.csv",
-        db_url=HANSARD_DB_URL,
-        context=context,
-        aws_region=AWS_REGION
-    )

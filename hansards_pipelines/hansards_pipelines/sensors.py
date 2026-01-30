@@ -26,91 +26,154 @@ from hansards_pipelines.assets import (
     s3_client,
 )
 from hansards_pipelines.jobs import sittings_job
-from hansards_pipelines.assets import FRONTEND_URL
-
-# revalidate_frontend_job = define_asset_job(
-#     "revalidate_frontend_job", [revalidate_frontend]
-# )
+from hansards_pipelines.assets import FRONTEND_URL, S3_PUBLIC_BUCKET
 
 
-def build_sittings_sensor(*, job, prefix: str, source: str):
-    @sensor(job=job, minimum_interval_seconds=900)
-    def _sittings_sensor(context: SensorEvaluationContext):
-        """Set up partitions
-        One partition is one dewan, one sitting (date)
-        One partition is one file still in new/
-        TODO: implement actual moving of parsed PDFs from new folder
-        """
-        # get new pdfs
+def iter_s3_objects(*, bucket: str, prefix: str):
+    paginator = s3_client.get_paginator("list_objects_v2")
+    for page in paginator.paginate(Bucket=bucket, Prefix=prefix):
+        for obj in page.get("Contents", []):
+            yield obj
 
-        # get all partitions in s3
-        response = s3_client.list_objects_v2(
-            Bucket=S3_DATAPROC_BUCKET,
-            Prefix=prefix,
-        )
-        new_pdfs = []
-        for obj in response.get("Contents", []):
-            # key new/dewannegara/DN-03122024.pdf
-            if obj["Key"].lower().endswith(".pdf"):
-                # take filename only without extension: DN-03122024
-                pdf_name = obj["Key"].split("/")[-1].split(".")[0]
-                context.log.info(f"New PDF: {pdf_name}")
+@sensor(job=sittings_job, minimum_interval_seconds=900)
+def sittings_sensor(context: SensorEvaluationContext):
+    """Set up partitions
+    One partition is one dewan, one sitting (date)
+    One partition is one file still in new/
+    TODO: implement actual moving of parsed PDFs from new folder
+    """
+    # get new pdfs
+    source = "active"
+    # get all partitions in s3
+    response = s3_client.list_objects_v2(
+        Bucket=S3_DATAPROC_BUCKET,
+        Prefix="new/",
+    )
+    new_pdfs = []
+    for obj in response.get("Contents", []):
+        # key new/dewannegara/DN-03122024.pdf
+        if obj["Key"].lower().endswith(".pdf"):
+            # take filename only without extension: DN-03122024
+            pdf_name = obj["Key"].split("/")[-1].split(".")[0]
+            context.log.info(f"New PDF: {pdf_name}")
 
-                # TODO: ensure date portion is 8 digits DDMMYYYY
-                date = pdf_name.split("-")[1]
-                if len(date) != 8:
-                    context.log.warning(
-                        f"WARNING: Date portion is not 8 digits: {date}. Skipping"
-                    )
-                new_pdfs.append(pdf_name)
-
-        # TODO: REMOVE THIS FOR TESTING ONLY
-        # new_pdfs = new_pdfs[:5]
-        context.log.info(f"New PDFs: {new_pdfs}")
-
-        ## Only Create New Runs if Partition has no active runs
-        # Get runs for each partition
-        run_requests = []
-        dynamic_partition_additions = []
-
-        for pdf_name in new_pdfs:
-            # Get latest run for this partition using Dagster's RunsFilter
-            runs = context.instance.get_runs(
-                filters=RunsFilter(
-                    tags={"dagster/partition": pdf_name},
-                    statuses=[
-                        DagsterRunStatus.STARTED,
-                        DagsterRunStatus.STARTING,
-                        DagsterRunStatus.QUEUED,
-                        DagsterRunStatus.SUCCESS,
-                        DagsterRunStatus.FAILURE,
-                    ],
+            # TODO: ensure date portion is 8 digits DDMMYYYY
+            date = pdf_name.split("-")[1]
+            if len(date) != 8:
+                context.log.warning(
+                    f"WARNING: Date portion is not 8 digits: {date}. Skipping"
                 )
+            new_pdfs.append(pdf_name)
+
+    # TODO: REMOVE THIS FOR TESTING ONLY
+    # new_pdfs = new_pdfs[:5]
+    context.log.info(f"New PDFs: {new_pdfs}")
+
+    ## Only Create New Runs if Partition has no active runs
+    # Get runs for each partition
+    run_requests = []
+    dynamic_partition_additions = []
+
+    for pdf_name in new_pdfs:
+        # Get latest run for this partition using Dagster's RunsFilter
+        runs = context.instance.get_runs(
+            filters=RunsFilter(
+                tags={"dagster/partition": pdf_name},
+                statuses=[
+                    DagsterRunStatus.STARTED,
+                    DagsterRunStatus.STARTING,
+                    DagsterRunStatus.QUEUED,
+                    DagsterRunStatus.SUCCESS,
+                    DagsterRunStatus.FAILURE,
+                ],
             )
-
-            # Check if there are any active runs
-            has_active_run = any(runs)
-
-            if not has_active_run:
-                run_requests.append(RunRequest(partition_key=pdf_name,  tags={"pdf_source": source}))
-                dynamic_partition_additions.append(pdf_name)
-                context.log.info(f"Creating new run for partition: {pdf_name}")
-            else:
-                context.log.info(f"Skipping partition {pdf_name} - has active run")
-
-        return SensorResult(
-            run_requests=run_requests,
-            dynamic_partitions_requests=(
-                [sitting_partitions_def.build_add_request(dynamic_partition_additions)]
-                if dynamic_partition_additions
-                else []
-            ),
         )
 
-    return _sittings_sensor
+        # Check if there are any active runs
+        has_active_run = any(runs)
 
-sittings_sensor = build_sittings_sensor(job=sittings_job, prefix="new/", source="active")
-arkib_sittings_sensor = build_sittings_sensor(job=sittings_job, prefix="arkib/",  source="arkib")
+        if not has_active_run:
+            run_requests.append(RunRequest(partition_key=pdf_name,  tags={"pdf_source": source}))
+            dynamic_partition_additions.append(pdf_name)
+            context.log.info(f"Creating new run for partition: {pdf_name}")
+        else:
+            context.log.info(f"Skipping partition {pdf_name} - has active run")
+
+    return SensorResult(
+        run_requests=run_requests,
+        dynamic_partitions_requests=(
+            [sitting_partitions_def.build_add_request(dynamic_partition_additions)]
+            if dynamic_partition_additions
+            else []
+        ),
+    )
+
+@sensor(job=sittings_job, minimum_interval_seconds=900)
+def arkib_sittings_sensor(context: SensorEvaluationContext):
+    """
+    Promote PUBLIC arkib/ PDFs into PUBLIC ROOT with certain conditions:
+    - only for sittings from year 2026 onwards (policy enforced here),
+    then trigger sittings_job on those partitions.
+    """
+    source = "arkib"
+
+    run_requests = []
+    dynamic_partition_additions = []
+
+    for obj in iter_s3_objects(
+        bucket=S3_PUBLIC_BUCKET,
+        prefix="arkib/",
+    ):
+        key = obj["Key"]
+        if not key.lower().endswith(".pdf"):
+            continue
+
+        pdf_name = key.split("/")[-1].replace(".pdf", "")
+
+        try:
+            sitting_object = get_sitting_object(pdf_name)
+        except Exception:
+            continue
+
+        if sitting_object["date"].year < 2026:
+            continue  # POLICY ENFORCED HERE
+
+        root_key = sitting_object["renamed_filename_key"]
+
+        context.log.info(f"Promoting arkib -> root | {key} -> {root_key}")
+
+        pdf_obj = s3_client.get_object(
+            Bucket=S3_PUBLIC_BUCKET,
+            Key=key,
+        )
+
+        s3_client.put_object(
+            Bucket=S3_PUBLIC_BUCKET,
+            Key=root_key,
+            Body=pdf_obj["Body"].read(),
+            ContentType="application/pdf",
+        )
+
+        run_requests.append(
+            RunRequest(
+                partition_key=pdf_name,
+                tags={
+                    "pdf_source": "arkib",
+                    "reason": "arkib_refresh",
+                },
+            )
+        )
+        dynamic_partition_additions.append(pdf_name)
+
+
+    return SensorResult(
+        run_requests=run_requests,
+        dynamic_partitions_requests=(
+            [sitting_partitions_def.build_add_request(dynamic_partition_additions)]
+            if dynamic_partition_additions
+            else []
+        ),
+    )
 
 
 @run_status_sensor(run_status=DagsterRunStatus.SUCCESS, job_selection=[sittings_job])
