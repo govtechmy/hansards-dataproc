@@ -1,8 +1,8 @@
 from dagster import define_asset_job, AssetSelection
 from . import assets
 
-parliamentary_cycle_job = define_asset_job(
-    "parliamentary_cycle_job",
+scrape_parliamentary_cycle_job = define_asset_job(
+    "scrape_parliamentary_cycle_job",
     selection=[
         assets.scrape_parliamentary_cycle_arkib,
         assets.scrape_parliamentary_cycle_active,
@@ -34,5 +34,11 @@ sittings_job = define_asset_job(
 scrape_arkib_job = define_asset_job(
     "scrape_arkib_website_job",
     selection=[assets.scrape_website_arkib, assets.move_arkib_pdfs_to_public_asset],
+)
+
+
+author_load_job = define_asset_job(
+    "author_load_job",
+    selection=[assets.load_author_data_to_db],
 )
 

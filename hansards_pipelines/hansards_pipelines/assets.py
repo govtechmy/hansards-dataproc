@@ -52,7 +52,7 @@ from hansards_pipelines.utils.s3_utils import (
     build_path,
 )
 
-from hansards_pipelines.settings import S3_DATAPROC_BUCKET, S3_PUBLIC_BUCKET, DEV_API_URL, PROD_API_URL, FRONTEND_URL, FRONTEND_TOKEN, HANSARD_DB_URL
+from hansards_pipelines.settings import S3_DATAPROC_BUCKET, S3_PUBLIC_BUCKET, DEV_API_URL, PROD_API_URL, FRONTEND_URL, FRONTEND_TOKEN, HANSARD_DB_URL, AWS_REGION
 from hansards_pipelines.scrape_parliamentary_cycle import (
     scrape_arkib_cycles,
     scrape_active_cycles,
@@ -64,6 +64,9 @@ from hansards_pipelines.direct_sitting_ingest import ingest_sitting_to_db
 
 from hansards_pipelines.scrape_arkib import run_scrape
 from hansards_pipelines.move_and_rename_pdf import main as move_arkib_pdfs_to_public_main
+from hansards_pipelines.author import load_author_csv_to_db
+from pathlib import Path
+
 
 # main pipeline
 # 1. scrape from the website, push pdf to s3 hansards-new
@@ -1298,3 +1301,18 @@ def move_arkib_pdfs_to_public_asset(context: AssetExecutionContext):
     context.log.info("Moving arkib PDFs to public bucket")
     move_arkib_pdfs_to_public_main(category=None)
     context.log.info("Completed moving arkib PDFs")
+
+
+@asset(group_name="author")
+def load_author_data_to_db(context: AssetExecutionContext):
+    """
+    Load author data from S3 into the api_author table in the database.
+    CSV file should be manually uploaded to S3 at: canonical/author.csv
+    """
+    return load_author_csv_to_db(
+        s3_bucket=S3_DATAPROC_BUCKET,
+        s3_key="canonical/author.csv",
+        db_url=HANSARD_DB_URL,
+        context=context,
+        aws_region=AWS_REGION
+    )
