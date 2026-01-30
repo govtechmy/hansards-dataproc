@@ -69,7 +69,6 @@ def get_env_int(name: str, default: int) -> int:
 S3_DATAPROC_BUCKET: Optional[str] = get_env_str("S3_DATAPROC_BUCKET")
 S3_PUBLIC_BUCKET: Optional[str]   = get_env_str("S3_PUBLIC_BUCKET")
 S3_TEXTRACT_BUCKET: Optional[str] = get_env_str("S3_TEXTRACT_BUCKET")
-AWS_REGION: Optional[str]         = get_env_str("AWS_REGION")
 
 DEV_API_URL: Optional[str]   = get_env_str("DEV_API_URL")
 PROD_API_URL: Optional[str]  = get_env_str("PROD_API_URL")
