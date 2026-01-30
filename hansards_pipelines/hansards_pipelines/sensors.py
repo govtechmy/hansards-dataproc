@@ -108,17 +108,36 @@ def sittings_sensor(context: SensorEvaluationContext):
         ),
     )
 
+def arkib_key_to_partition(key: str) -> str:
+    """
+    Convert S3 arkib/ key to partition key format. So that we can trigger sittings_job on it.
+    Example:
+    arkib/dewanrakyat/dr_1986-03-17.pdf -> DR-17031968
+"""
+    # arkib/dewannegara/dn_2026-01-19.pdf
+    filename = key.split("/")[-1].replace(".pdf", "")  # dn_2026-01-19
+    house, date = filename.split("_")                  # dn, 2026-01-19
+    dd, mm, yyyy = date.split("-")[2], date.split("-")[1], date.split("-")[0]
+    return f"{house.upper()}-{dd}{mm}{yyyy}"            # DN-19012026
+
+
+
 @sensor(job=sittings_job, minimum_interval_seconds=900)
 def sittings_arkib_sensor(context: SensorEvaluationContext):
     """
-    Promote PUBLIC arkib/ PDFs into PUBLIC ROOT with certain conditions:
-    - only for sittings from year 2026 onwards (policy enforced here),
+    Promote(move) PUBLIC arkib/ pdfs into PUBLIC root with certain conditions. 
+    Collect those partition names. Then, trigger sittings_job on those partitions.
+    Conditions:
+    - only for sittings from year 2025 onwards,
+    - this is due to a lot of manual(human) edits have been made to older sittings (2007 & below),
+    - to avoid overwriting those manual edits with arkib PDFs, we only refresh PDFs from 2025 onwards.
     then trigger sittings_job on those partitions.
     """
     source = "arkib"
 
     run_requests = []
     dynamic_partition_additions = []
+
 
     for obj in iter_s3_objects(
         bucket=S3_PUBLIC_BUCKET,
@@ -131,8 +150,10 @@ def sittings_arkib_sensor(context: SensorEvaluationContext):
         pdf_name = key.split("/")[-1].replace(".pdf", "")
 
         try:
-            sitting_object = get_sitting_object(pdf_name)
-        except Exception:
+            partition_key = arkib_key_to_partition(key)
+            sitting_object = get_sitting_object(partition_key)
+        except Exception as e :
+            context.log.error(f"Arkib sitting parse fail | key={key} | err={e}")
             continue
 
         if sitting_object["date"].year < 2026:
@@ -140,7 +161,7 @@ def sittings_arkib_sensor(context: SensorEvaluationContext):
 
         root_key = sitting_object["renamed_filename_key"]
 
-        context.log.info(f"Promoting arkib -> root | {key} -> {root_key}")
+        context.log.info(f"Promoting(copying) pdf files from arkib/ -> root ...")
 
         pdf_obj = s3_client.get_object(
             Bucket=S3_PUBLIC_BUCKET,
@@ -154,16 +175,22 @@ def sittings_arkib_sensor(context: SensorEvaluationContext):
             ContentType="application/pdf",
         )
 
+        context.log.info(f"Deleting arkib/ pdf file after promotion...")
+        s3_client.delete_object(
+            Bucket=S3_PUBLIC_BUCKET,
+            Key=key,
+        )
+
         run_requests.append(
             RunRequest(
-                partition_key=pdf_name,
+                partition_key=partition_key,
                 tags={
                     "pdf_source": "arkib",
                     "reason": "arkib_refresh",
                 },
             )
         )
-        dynamic_partition_additions.append(pdf_name)
+        dynamic_partition_additions.append(partition_key)
 
 
     return SensorResult(
