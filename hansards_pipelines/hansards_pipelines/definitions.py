@@ -2,6 +2,7 @@ from dagster import Definitions, ScheduleDefinition, load_assets_from_modules, d
 from hansards_pipelines import assets, jobs
 from .sensors import (
     sittings_sensor,
+    sittings_arkib_sensor,
     my_discord_on_run_frontend_success,
     my_discord_on_run_failure,
 )
@@ -34,6 +35,7 @@ defs = Definitions(
     ],
     sensors=[
         sittings_sensor,
+        sittings_arkib_sensor,
         my_discord_on_run_frontend_success,
         my_discord_on_run_failure,
     ],

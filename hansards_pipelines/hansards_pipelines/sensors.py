@@ -109,7 +109,7 @@ def sittings_sensor(context: SensorEvaluationContext):
     )
 
 @sensor(job=sittings_job, minimum_interval_seconds=900)
-def arkib_sittings_sensor(context: SensorEvaluationContext):
+def sittings_arkib_sensor(context: SensorEvaluationContext):
     """
     Promote PUBLIC arkib/ PDFs into PUBLIC ROOT with certain conditions:
     - only for sittings from year 2026 onwards (policy enforced here),
