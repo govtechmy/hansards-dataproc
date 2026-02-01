@@ -902,7 +902,7 @@ def get_sitting_object(pdf_file_key: str):
     base_name = re.sub(r'\s*[\(\[][0-9]+[\)\]]\s*$', '', base_name)
     
     # Remove trailing dash followed by small number (e.g., -1, -2, -3) but NOT dates (8 digits)
-    base_name = re.sub(r'-([0-9]{1,3})$', lambda m: '' if len(m.group(1)) <= 3 else m.group(0), base_name)
+    base_name = re.sub(r'-[0-9]{1,3}$', '', base_name)
     
     # Keep only the house-date portion (e.g., DR-12122024 from DR-12122024_Updated)
     if "_" in base_name:
