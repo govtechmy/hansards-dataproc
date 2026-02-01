@@ -1100,12 +1100,10 @@ def direct_insert_to_db(context: AssetExecutionContext, prepare_db_payload: dict
 
 @asset(group_name="scrape")
 def scrape_website_arkib(context: AssetExecutionContext):
-    """Scrape arkib Hansard listings (limited for testing)."""
+    """Scrape arkib Hansard listings."""
 
-    limit = 10 # TODO: remove limit after testing
-
-    context.log.info(f"Starting arkib scrape (limit={limit})")
-    run_scrape(limit=limit) 
+    context.log.info(f"Starting arkib scrape (all PDFs)")
+    run_scrape(limit=None) 
     context.log.info("Completed arkib scrape")
 
 @asset(group_name="scrape", deps=[scrape_website_arkib])

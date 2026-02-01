@@ -72,8 +72,9 @@ def make_session() -> requests.Session:
 
     retries = Retry(
         total=5,
-        backoff_factor=0.5,
+        backoff_factor=1.0,
         status_forcelist=[429, 500, 502, 503, 504],
+        raise_on_status=False,
     )
     adapter = HTTPAdapter(max_retries=retries)
     session.mount("https://", adapter)
@@ -87,22 +88,33 @@ def make_session() -> requests.Session:
 
 
 def fetch_html(session, base_url, uweb, node_id) -> str:
-    resp = session.get(
-        base_url,
-        params={
-            "uweb": uweb,
-            "arkib": "yes",
-            "ajx": "1",
-            "id": node_id,
-        },
-        timeout=20,
-    )
-    resp.raise_for_status()
+    max_attempts = 3
+    for attempt in range(max_attempts):
+        try:
+            resp = session.get(
+                base_url,
+                params={
+                    "uweb": uweb,
+                    "arkib": "yes",
+                    "ajx": "1",
+                    "id": node_id,
+                },
+                timeout=30,
+            )
+            resp.raise_for_status()
 
-    if REQUEST_DELAY:
-        time.sleep(REQUEST_DELAY)
+            if REQUEST_DELAY:
+                time.sleep(REQUEST_DELAY)
 
-    return resp.text
+            return resp.text
+        except (requests.exceptions.ReadTimeout, requests.exceptions.ConnectionError) as e:
+            if attempt < max_attempts - 1:
+                wait_time = 5 * (attempt + 1)
+                logging.warning(f"Timeout on attempt {attempt + 1}/{max_attempts}, retrying in {wait_time}s: {e}")
+                time.sleep(wait_time)
+            else:
+                logging.error(f"Failed after {max_attempts} attempts: {e}")
+                raise
 
 
 def extract_pdfs(html: str):

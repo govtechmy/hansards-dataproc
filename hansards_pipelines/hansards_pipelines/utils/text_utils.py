@@ -1,5 +1,6 @@
 import re
 import string
+import logging
 import pandas as pd
 from datetime import datetime
 
@@ -870,28 +871,113 @@ def reverse_date_format(date_str):
 
 
 def get_sitting_object(pdf_file_key: str):
-    """Convert PDF file key to house, date_str and datetime"""
-    # TODO: handle corner cases
-    # Remove .pdf extension and any trailing text after the date (e.g., _Updated, _Revised)
-    # Expected format: DR-12122024 or DN-12122024
-    base_name = pdf_file_key.replace(".pdf", "")
+    """Convert PDF file key to house, date_str and datetime
+    
+    Args:
+        pdf_file_key: Filename like 'DR-12122024' or 'DR-12122024.pdf' or 'DN01051961.pdf' (no dash)
+        
+    Returns:
+        Dict containing house, date, and filename information
+        
+    Raises:
+        ValueError: If the filename format is invalid
+    """
+    # Strip whitespace and remove extensions (case-insensitive)
+    # Handle cases like .pdf, .genpro.pdf, .PindaanTimMDN, etc.
+    # Expected formats: 
+    # - DR-12122024 or DN-12122024 or KKDR-12122024 (with dash)
+    # - DN01051961 or DR12122024 (without dash)
+    base_name = pdf_file_key.strip()
+    
+    # Remove all extensions - keep removing until no more dots or last part is all digits
+    while '.' in base_name:
+        last_part = base_name.split('.')[-1]
+        # Only keep the last part if it's all digits (part of date format)
+        if not last_part.isdigit():
+            base_name = base_name.rsplit('.', 1)[0]
+        else:
+            break
+    
+    # Remove trailing patterns like (1), (2), (3), etc. or [1], [2], etc.
+    base_name = re.sub(r'\s*[\(\[][0-9]+[\)\]]\s*$', '', base_name)
+    
+    # Remove trailing dash followed by small number (e.g., -1, -2, -3) but NOT dates (8 digits)
+    base_name = re.sub(r'-([0-9]{1,3})$', lambda m: '' if len(m.group(1)) <= 3 else m.group(0), base_name)
+    
     # Keep only the house-date portion (e.g., DR-12122024 from DR-12122024_Updated)
     if "_" in base_name:
         base_name = base_name.split("_")[0]
     
-    # DR-12122024
-    house = base_name.split("-")[0].upper()  # DR
-    house_folder = house_mapper.to_canonical(
-        house.lower()
-    )  # dr -> dewanrakyat (for s3)
-    date_str = base_name.split("-")[1]  # 12122024
-    date = datetime.strptime(date_str, "%d%m%Y")
-    proper_date_str = date.strftime("%Y-%m-%d")  # 2024-12-12
+    base_name = base_name.strip()
+    
+    # Try to parse with dash first
+    if "-" in base_name:
+        parts = base_name.split("-")
+        if len(parts) < 2:
+            raise ValueError(f"Invalid filename format: '{pdf_file_key}' - expected format like 'DR-12122024'")
+        
+        house = parts[0].strip().upper()  # DR
+        date_str = parts[1].strip()  # 12122024
+    else:
+        # No dash - try to extract house code and date
+        # Expected formats: DN01051961, DR12122024, KKDR12122024
+        # House codes: DR (2 chars), DN (2 chars), KKDR (4 chars)
+        
+        if base_name.startswith(("KKDR", "kkdr")):
+            house = base_name[:4].upper()  # KKDR
+            date_str = base_name[4:].strip()  # 12122024
+        elif len(base_name) >= 10:  # Minimum: 2 char house + 8 char date
+            house = base_name[:2].upper()  # DR or DN
+            date_str = base_name[2:].strip()  # 12122024 or 01051961
+        else:
+            raise ValueError(f"Invalid filename format: '{pdf_file_key}' - expected format like 'DR-12122024' or 'DN01051961'")
+    
+    # Validate house code
+    try:
+        house_folder = house_mapper.to_canonical(house.lower())  # dr -> dewanrakyat (for s3)
+    except (KeyError, AttributeError) as e:
+        raise ValueError(f"Invalid house code: '{house}' in filename '{pdf_file_key}'") from e
+    
+    # Validate and fix date format
+    if not date_str.isdigit():
+        raise ValueError(f"Invalid date format: '{date_str}' in filename '{pdf_file_key}' - contains non-digit characters")
+    
+    # Handle 7-digit dates by padding with leading zero (e.g., 1032023 -> 01032023)
+    if len(date_str) == 7:
+        date_str = '0' + date_str
+        logging.warning(f"Padded 7-digit date in filename '{pdf_file_key}': now using '{date_str}'")
+    # Handle 9-digit dates by removing extra zero (e.g., 140022023 -> 14022023)
+    elif len(date_str) == 9:
+        # Try removing character at position 2 (extra 0 after day)
+        fixed_date = date_str[:2] + date_str[3:]
+        try:
+            datetime.strptime(fixed_date, "%d%m%Y")
+            date_str = fixed_date
+            logging.warning(f"Fixed 9-digit date in filename '{pdf_file_key}': removed extra digit, now using '{date_str}'")
+        except ValueError:
+            # Try removing character at position 3 instead
+            fixed_date = date_str[:3] + date_str[4:]
+            try:
+                datetime.strptime(fixed_date, "%d%m%Y")
+                date_str = fixed_date
+                logging.warning(f"Fixed 9-digit date in filename '{pdf_file_key}': removed extra digit, now using '{date_str}'")
+            except ValueError:
+                raise ValueError(f"Invalid date format: '{date_str}' in filename '{pdf_file_key}' - expected DDMMYYYY (8 digits)")
+    elif len(date_str) != 8:
+        raise ValueError(f"Invalid date format: '{date_str}' in filename '{pdf_file_key}' - expected DDMMYYYY (8 digits)")
+    
+    try:
+        date = datetime.strptime(date_str, "%d%m%Y")
+    except ValueError as e:
+        raise ValueError(f"Invalid date: '{date_str}' in filename '{pdf_file_key}'") from e
+    
+    proper_date_str = date.strftime("%Y-%m-%d")  # 2024-12-12 or 1961-05-01
     original_filename = base_name + ".pdf"
     renamed_filename = rename_pdf(base_name)  # DR-12122024 -> dr_2024-12-12
     renamed_filename_key = (
         f"{house_folder}/{renamed_filename}.pdf"  # dewanrakyat/dr_2024-12-12.pdf
     )
+    
     return {
         "house": house,  # DR
         "house_folder": house_folder,  # dewanrakyat
