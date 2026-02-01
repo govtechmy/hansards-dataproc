@@ -107,7 +107,7 @@ def fetch_html(session, base_url, uweb, node_id) -> str:
                 time.sleep(REQUEST_DELAY)
 
             return resp.text
-        except (requests.exceptions.ReadTimeout, requests.exceptions.ConnectionError) as e:
+        except requests.exceptions.RequestException as e:
             if attempt < max_attempts - 1:
                 wait_time = 5 * (attempt + 1)
                 logging.warning(f"Timeout on attempt {attempt + 1}/{max_attempts}, retrying in {wait_time}s: {e}")
