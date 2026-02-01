@@ -42,3 +42,7 @@ author_load_job = define_asset_job(
     selection=[assets.load_author_data_to_db],
 )
 
+move_arkib_pdfs_job = define_asset_job(
+    "move_arkib_pdfs_job",
+    selection=[assets.dg_move_arkib_pdf_to_s3_root],
+)

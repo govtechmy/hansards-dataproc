@@ -25,15 +25,9 @@ from hansards_pipelines.assets import (
     S3_DATAPROC_BUCKET,
     s3_client,
 )
-from hansards_pipelines.jobs import sittings_job
+from hansards_pipelines.jobs import sittings_job, move_arkib_pdfs_job
 from hansards_pipelines.assets import FRONTEND_URL, S3_PUBLIC_BUCKET
 
-
-def iter_s3_objects(*, bucket: str, prefix: str):
-    paginator = s3_client.get_paginator("list_objects_v2")
-    for page in paginator.paginate(Bucket=bucket, Prefix=prefix):
-        for obj in page.get("Contents", []):
-            yield obj
 
 @sensor(job=sittings_job, minimum_interval_seconds=900)
 def sittings_sensor(context: SensorEvaluationContext):
@@ -108,96 +102,66 @@ def sittings_sensor(context: SensorEvaluationContext):
         ),
     )
 
-def arkib_key_to_partition(key: str) -> str:
+
+@sensor(job=move_arkib_pdfs_job, minimum_interval_seconds=300)
+def trigger_arkib_pdf_move_sensor(context):
     """
-    Convert S3 arkib/ key to partition key format. So that we can trigger sittings_job on it.
-    Example:
-    arkib/dewanrakyat/dr_1986-03-17.pdf -> DR-17031968
-"""
-    # arkib/dewannegara/dn_2026-01-19.pdf
-    filename = key.split("/")[-1].replace(".pdf", "")  # dn_2026-01-19
-    house, date = filename.split("_")                  # dn, 2026-01-19
-    dd, mm, yyyy = date.split("-")[2], date.split("-")[1], date.split("-")[0]
-    return f"{house.upper()}-{dd}{mm}{yyyy}"            # DN-19012026
-
-
-@sensor(job=sittings_job, minimum_interval_seconds=86400) # once a day
-def sittings_arkib_sensor(context: SensorEvaluationContext):
+    Trigger move_arkib_pdfs_job when there is a pending arkib_partitions.pending.json file in S3_PUBLIC_BUCKET
     """
-    Promote(move) PUBLIC arkib/ pdfs into PUBLIC root with certain conditions. 
-    Collect those partition names. Then, trigger sittings_job on those partitions.
-    Conditions:
-    - only for sittings from year 2020 onwards,
-    - this is due to a lot of manual(human) edits have been made to older sittings (2007 & below),
-    - to avoid overwriting those manual edits with arkib PDFs, we only refresh PDFs from year 2020 onwards.
-    then trigger sittings_job on those partitions.
-    """
-    source = "arkib"
-
-    run_requests = []
-    dynamic_partition_additions = []
-
-    context.log.info("Running Arkib sitting pdf refresh sensor...")
-
-    for obj in iter_s3_objects(
-        bucket=S3_PUBLIC_BUCKET,
-        prefix="arkib_test/",
-    ):
-        key = obj["Key"]
-        if not key.lower().endswith(".pdf"):
-            continue
-
-        pdf_name = key.split("/")[-1].replace(".pdf", "")
-
-        try:
-            partition_key = arkib_key_to_partition(key)
-            sitting_object = get_sitting_object(partition_key)
-        except Exception as e :
-            context.log.error(f"Arkib sitting parse fail | key={key} | err={e}")
-            continue
-
-        if sitting_object["date"].year < 2025:
-            continue  # only refresh from certain year onwards. Read comments above for reason.
-
-        root_key = sitting_object["renamed_filename_key"]
-
-        pdf_obj = s3_client.get_object(
-            Bucket=S3_PUBLIC_BUCKET,
-            Key=key,
+    PENDING_KEY = "arkib/queue/arkib_partitions.pending.json"
+    try:
+        s3_client.head_object(
+            Bucket=S3_DATAPROC_BUCKET,
+            Key=PENDING_KEY,
         )
-
-        s3_client.put_object(
-            Bucket=S3_PUBLIC_BUCKET,
-            Key=root_key,
-            Body=pdf_obj["Body"].read(),
-            ContentType="application/pdf",
-        )
-
-        s3_client.delete_object(
-            Bucket=S3_PUBLIC_BUCKET,
-            Key=key,
-        )
-
-        run_requests.append(
-            RunRequest(
-                partition_key=partition_key,
-                tags={
-                    "pdf_source": "arkib",
-                    "reason": "arkib_refresh",
-                },
-            )
-        )
-        dynamic_partition_additions.append(partition_key)
-
+    except s3_client.exceptions.ClientError:
+        return SensorResult()
 
     return SensorResult(
-        run_requests=run_requests,
-        dynamic_partitions_requests=(
-            [sitting_partitions_def.build_add_request(dynamic_partition_additions)]
-            if dynamic_partition_additions
-            else []
-        ),
+        run_requests=[
+            RunRequest(
+                run_key=f"arkib_move_{PENDING_KEY}",
+            )
+        ]
     )
+
+
+@sensor(job=sittings_job, minimum_interval_seconds=300)
+def trigger_sittings_job_arkib_sensor(context):
+    """
+    Trigger sittings_job runs for partitions listed in arkib_partitions.ready.json in S3_DATAPROC_BUCKET
+    """
+
+    READY_KEY = "arkib/queue/arkib_partitions.ready.json"
+
+    try:
+        obj = s3_client.get_object(
+            Bucket=S3_DATAPROC_BUCKET,
+            Key=READY_KEY,
+        )
+    except s3_client.exceptions.ClientError:
+        return SensorResult()
+
+    payload = json.loads(obj["Body"].read())
+
+    run_requests = [
+        RunRequest(
+            partition_key=p,
+            run_key=f"arkib_{payload['generated_at']}_{p}",
+            tags={
+                "pdf_source": "arkib",
+                "reason": "arkib_refresh",
+            },
+        )
+        for p in payload["partitions"]
+    ]
+
+    s3_client.delete_object(
+        Bucket=S3_DATAPROC_BUCKET,
+        Key=READY_KEY,
+    )
+
+    return SensorResult(run_requests=run_requests)
 
 
 @run_status_sensor(run_status=DagsterRunStatus.SUCCESS, job_selection=[sittings_job])

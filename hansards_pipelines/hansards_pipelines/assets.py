@@ -67,6 +67,9 @@ from hansards_pipelines.move_and_rename_pdf import main as move_arkib_pdfs_to_pu
 from hansards_pipelines.author import load_author_csv_to_db
 from pathlib import Path
 
+from hansards_pipelines.arkib.build_arkib_partition_queue import build_arkib_partition_queue
+from hansards_pipelines.arkib.promote_pdfs import promote_arkib_pdfs
+
 # main pipeline
 # 1. scrape from the website, push pdf to s3 hansards-new
 # 2. move and rename hansards-new to main raw hansards folder
@@ -1265,3 +1268,84 @@ def load_author_data_to_db(context: AssetExecutionContext):
         aws_region=AWS_REGION
     )
 
+
+@asset(group_name="arkib")
+def dg_build_arkib_partition_queue(context: AssetExecutionContext):
+    """
+    TODO: add dependency.
+    # Asset must depend on dg_move_arkib_pdf_to_s3_root
+    # because the partition queue is built from listing all the pdfs in S3 PUBLIC (once moved & renamed).,
+    # which is only correct after arkib PDFs are promoted.
+
+    Build arkib partition queue JSON file with certain conditions.
+    - reads scraped arkib listings from S3 PUBLIC BUCKET
+    - writes queue/arkib_partitions.pending.json to S3 PUBLIC BUCKET
+
+    Conditions:
+    - only for sittings from year MIN_YEAR onwards,
+    - this is due to a lot of manual(human) edits have been made to older sittings (2007 & below),
+    - to avoid overwriting those manual edits with arkib PDFs, we only refresh PDFs from MIN_YEAR onwards.
+    - then trigger sittings_job on those partitions.
+
+    """
+
+    MIN_YEAR = 2025
+    PENDING_QUEUE_KEY = "arkib/queue/arkib_partitions.pending.json"
+
+    payload = build_arkib_partition_queue(
+        s3_client=s3_client,
+        bucket=S3_PUBLIC_BUCKET,
+        prefix="arkib/",
+        min_year=MIN_YEAR,
+        get_sitting_object=get_sitting_object,
+        logger=context.log,
+    )
+
+    s3_client.put_object(
+        Bucket=S3_DATAPROC_BUCKET,
+        Key=PENDING_QUEUE_KEY,
+        Body=json.dumps(payload, indent=2).encode(),
+        ContentType="application/json",
+    )
+
+
+@asset(group_name="arkib")
+def dg_move_arkib_pdf_to_s3_root(context: AssetExecutionContext):
+    """
+    Works with sensor 'trigger_arkib_pdf_move' to process arkib partition queue.
+    Promote/move arkib PDFs from S3 PUBLIC arkib/ to S3 PUBLIC root.
+    - reads queue/arkib_partitions.pending.json from S3_DATAPROC_BUCKET
+    - writes queue/arkib_partitions.ready.json to S3_DATAPROC_BUCKET 
+    - deletes queue/arkib_partitions.pending.json from S3_DATAPROC_BUCKET after done processing.
+    """
+    PENDING_QUEUE_KEY = "arkib/queue/arkib_partitions.pending.json"
+    READY_QUEUE_KEY = "arkib/queue/arkib_partitions.ready.json"
+
+    obj = s3_client.get_object(Bucket=S3_DATAPROC_BUCKET, Key=PENDING_QUEUE_KEY)
+    payload = json.loads(obj["Body"].read())
+
+    moved = promote_arkib_pdfs(
+        s3_client=s3_client,
+        bucket=S3_PUBLIC_BUCKET,
+        partitions=payload["partitions"],
+        get_sitting_object=get_sitting_object,
+        logger=context.log,
+    )
+
+    context.log.info(f"Promoted arkib PDFs to S3 PUBLIC root | Total pdfs moved: {moved}")
+
+    context.log.info(f"Creating {READY_QUEUE_KEY}... Ready for sensor to trigger sitting jobs on arkib partitions.")
+
+    s3_client.put_object(
+        Bucket=S3_DATAPROC_BUCKET,
+        Key=READY_QUEUE_KEY,
+        Body=json.dumps(payload, indent=2).encode(),
+        ContentType="application/json",
+    )
+
+    context.log.info(f"Deleting {PENDING_QUEUE_KEY}.")
+
+    s3_client.delete_object(
+        Bucket=S3_DATAPROC_BUCKET,
+        Key=PENDING_QUEUE_KEY,
+    )

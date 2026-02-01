@@ -2,9 +2,8 @@ from dagster import Definitions, ScheduleDefinition, load_assets_from_modules, d
 from hansards_pipelines import assets, jobs
 from .sensors import (
     sittings_sensor,
-    sittings_arkib_sensor,
-    my_discord_on_run_frontend_success,
-    my_discord_on_run_failure,
+    trigger_arkib_pdf_move_sensor,
+    trigger_sittings_job_arkib_sensor,
 )
 
 all_assets = load_assets_from_modules([assets])
@@ -32,12 +31,12 @@ defs = Definitions(
         jobs.scrape_job,
         jobs.scrape_arkib_job,
         jobs.author_load_job,
+        jobs.move_arkib_pdfs_job,
     ],
     sensors=[
         sittings_sensor,
-        sittings_arkib_sensor,
-        my_discord_on_run_frontend_success,
-        my_discord_on_run_failure,
+        trigger_arkib_pdf_move_sensor,
+        trigger_sittings_job_arkib_sensor
     ],
     schedules=[
         scrape_schedule,
