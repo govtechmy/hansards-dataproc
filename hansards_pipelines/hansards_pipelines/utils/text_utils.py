@@ -953,14 +953,14 @@ def get_sitting_object(pdf_file_key: str):
         try:
             datetime.strptime(fixed_date, "%d%m%Y")
             date_str = fixed_date
-            logging.warning(f"Fixed 9-digit date in filename '{pdf_file_key}': removed extra digit, now using '{date_str}'")
+            logging.warning(f"Fixed 9-digit date in filename '{pdf_file_key}': removed extra digit at position 2, now using '{date_str}'")
         except ValueError:
             # Try removing character at position 3 instead
             fixed_date = date_str[:3] + date_str[4:]
             try:
                 datetime.strptime(fixed_date, "%d%m%Y")
                 date_str = fixed_date
-                logging.warning(f"Fixed 9-digit date in filename '{pdf_file_key}': removed extra digit, now using '{date_str}'")
+                logging.warning(f"Fixed 9-digit date in filename '{pdf_file_key}': removed extra digit at position 3, now using '{date_str}'")
             except ValueError:
                 raise ValueError(f"Invalid date format: '{date_str}' in filename '{pdf_file_key}' - expected DDMMYYYY (8 digits)")
     elif len(date_str) != 8:
