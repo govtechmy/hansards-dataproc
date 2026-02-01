@@ -127,9 +127,9 @@ def sittings_arkib_sensor(context: SensorEvaluationContext):
     Promote(move) PUBLIC arkib/ pdfs into PUBLIC root with certain conditions. 
     Collect those partition names. Then, trigger sittings_job on those partitions.
     Conditions:
-    - only for sittings from year 2025 onwards,
+    - only for sittings from year 2020 onwards,
     - this is due to a lot of manual(human) edits have been made to older sittings (2007 & below),
-    - to avoid overwriting those manual edits with arkib PDFs, we only refresh PDFs from 2025 onwards.
+    - to avoid overwriting those manual edits with arkib PDFs, we only refresh PDFs from year 2020 onwards.
     then trigger sittings_job on those partitions.
     """
     source = "arkib"
@@ -137,10 +137,11 @@ def sittings_arkib_sensor(context: SensorEvaluationContext):
     run_requests = []
     dynamic_partition_additions = []
 
+    context.log.info("Running Arkib sitting pdf refresh sensor...")
 
     for obj in iter_s3_objects(
         bucket=S3_PUBLIC_BUCKET,
-        prefix="arkib/",
+        prefix="arkib_test/",
     ):
         key = obj["Key"]
         if not key.lower().endswith(".pdf"):
@@ -155,12 +156,10 @@ def sittings_arkib_sensor(context: SensorEvaluationContext):
             context.log.error(f"Arkib sitting parse fail | key={key} | err={e}")
             continue
 
-        if sitting_object["date"].year < 2026:
-            continue  # POLICY ENFORCED HERE
+        if sitting_object["date"].year < 2025:
+            continue  # only refresh from certain year onwards. Read comments above for reason.
 
         root_key = sitting_object["renamed_filename_key"]
-
-        context.log.info(f"Promoting(copying) pdf files from arkib/ -> root ...")
 
         pdf_obj = s3_client.get_object(
             Bucket=S3_PUBLIC_BUCKET,
@@ -174,7 +173,6 @@ def sittings_arkib_sensor(context: SensorEvaluationContext):
             ContentType="application/pdf",
         )
 
-        context.log.info(f"Deleting arkib/ pdf file after promotion...")
         s3_client.delete_object(
             Bucket=S3_PUBLIC_BUCKET,
             Key=key,
