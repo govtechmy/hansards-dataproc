@@ -27,7 +27,7 @@ sittings_job = define_asset_job(
         "prepare_db_payload",
         "direct_insert_to_db",
         # "insert_to_dev_db",
-        # "insert_to_prod_db",,
+        # "insert_to_prod_db",
     ),
 )
 
