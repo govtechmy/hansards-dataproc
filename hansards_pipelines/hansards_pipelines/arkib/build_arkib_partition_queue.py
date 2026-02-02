@@ -4,6 +4,15 @@ from typing import List, Dict, Set
 from hansards_pipelines.arkib.convert_key import convert_arkib_key_to_partition
 
 
+def extract_date_from_partition(partition: str) -> datetime | None:
+    # DR-31072000 -> 31-07-2000
+    try:
+        _, dmy = partition.split("-", 1)
+        return datetime.strptime(dmy, "%d%m%Y")
+    except Exception:
+        return None
+
+
 def build_arkib_partition_queue(
     *,
     s3_client,
@@ -43,7 +52,12 @@ def build_arkib_partition_queue(
                 logger.warning(f"Skip invalid arkib key | key={key} | err={e}")
                 continue
 
-            if sitting["date"].year < min_year:
+            date = extract_date_from_partition(partition)
+            if not date:
+                logger.warning("Skip arkib partition with invalid date | key=%s | partition=%s", key, partition)
+                continue
+
+            if date.year < min_year:
                 continue
 
             partitions.add(partition)
