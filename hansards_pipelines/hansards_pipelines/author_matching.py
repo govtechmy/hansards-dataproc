@@ -366,6 +366,18 @@ def apply_matches_with_date_context(
     result_df["position_a_id"] = result_df["author_a_up"].map(position_matches_a)
     result_df["position_b_id"] = result_df["author_b_up"].map(position_matches_b)
 
+    # Ensure ID columns are object dtype so assigning None doesn't trigger dtype warnings
+    id_columns = [
+        "author_a_id",
+        "author_b_id",
+        "constituency_a_id",
+        "constituency_b_id",
+        "position_a_id",
+        "position_b_id",
+    ]
+    for col in id_columns:
+        result_df[col] = result_df[col].astype("object")
+
     # Date-based verification (vectorized approach)
     if "date" in result_df.columns:
 
@@ -430,7 +442,7 @@ def apply_matches_with_date_context(
     # Start with name matches
     result_df["author_id"] = result_df["author_a_id"].combine_first(
         result_df["author_b_id"]
-    )
+    ).astype("object")
     context.log.info(
         f"Name matches: {(~result_df['author_id'].isna()).sum()}/{len(result_df)}"
     )

@@ -22,10 +22,11 @@ import pickle
 from bs4 import BeautifulSoup
 import boto3
 import botocore
+import re
 import requests
 import pandas as pd
 from urllib.parse import urljoin
-from typing import List, Tuple, Dict
+from typing import List, Tuple, Dict, Optional
 from io import BytesIO
 import pdfplumber
 from datetime import datetime
@@ -50,13 +51,21 @@ from hansards_pipelines.utils.s3_utils import (
     build_path,
 )
 
+from hansards_pipelines.settings import S3_DATAPROC_BUCKET, S3_PUBLIC_BUCKET, DEV_API_URL, PROD_API_URL, FRONTEND_URL, FRONTEND_TOKEN, HANSARD_DB_URL, AWS_REGION
+from hansards_pipelines.scrape_parliamentary_cycle import (
+    scrape_arkib_cycles,
+    scrape_active_cycles,
+    fetch_db_cycles,
+    upsert_cycles_via_api,
+)
 import psycopg
 from hansards_pipelines.direct_sitting_ingest import ingest_sitting_to_db
 
-from hansards_pipelines.settings import S3_DATAPROC_BUCKET, S3_PUBLIC_BUCKET, DEV_API_URL, PROD_API_URL, FRONTEND_URL, FRONTEND_TOKEN, HANSARD_DB_URL
-
 from hansards_pipelines.scrape_arkib import run_scrape
 from hansards_pipelines.move_and_rename_pdf import move_arkib_pdfs_to_public_main
+from hansards_pipelines.author import load_author_csv_to_db
+from pathlib import Path
+
 
 # main pipeline
 # 1. scrape from the website, push pdf to s3 hansards-new
@@ -82,9 +91,7 @@ from hansards_pipelines.tabulate_hansard import tabulate
 
 s3_client = boto3.client("s3")
 
-
 house_names = ["DR", "DN", "KKDR"]
-
 
 sitting_partitions_def = DynamicPartitionsDefinition(name="house_sittings")
 # https://github.com/dagster-io/dagster/discussions/20508
@@ -108,15 +115,90 @@ def _generate_new_hansard_message(
             {"name": "Skipped PDFs", "value": skipped_file_name_str, "inline": True}
         )
     footer = {"text": "Parliament Hansards Web Scraper"}
-    send_discord_message(
-        "",
-        f"✨ New Hansards Scraped!",
-        3066993,
-        message_fields,
-        footer,
-        context,
-        deeplink=False,
+    try:
+        send_discord_message(
+            "",
+            f"✨ New Hansards Scraped!",
+            3066993,
+            message_fields,
+            footer,
+            context,
+            deeplink=False,
+        )
+    except Exception as e:
+        context.log.warning(f"Discord notification failed (ignored): {e}")
+
+
+
+@asset(group_name="scrape")
+def scrape_parliamentary_cycle_arkib(context: AssetExecutionContext) -> Dict:
+    """
+    Scrape parliamentary cycle data (Parlimen, Penggal, Mesyuarat + date ranges)
+    from Portal Rasmi Parlimen archive for DR, DN, KKDR and upsert via
+    POST /api/parliamentary-cycle.
+    
+    This scrapes COMPLETED sessions from the archive tree structure.
+    """
+    # Scrape cycles from arkib
+    cycles = scrape_arkib_cycles(context=context)
+    
+    # Fetch existing cycles from database
+    context.log.info("[arkib] Fetching existing cycles from database...")
+    existing_keys = fetch_db_cycles(HANSARD_DB_URL, context)
+    
+    # Upsert via API
+    api_endpoint = f"{DEV_API_URL}/api/parliamentary-cycle"
+    context.log.info(f"[arkib] Using API endpoint: {api_endpoint}")
+    
+    stats = upsert_cycles_via_api(
+        cycles=cycles,
+        existing_keys=existing_keys,
+        api_endpoint=api_endpoint,
+        log_prefix="arkib",
+        context=context
     )
+    
+    summary = {
+        "total_scraped": len(cycles),
+        **stats,
+    }
+    
+    context.log.info(f"[arkib] Summary: {summary}")
+    return summary
+
+
+@asset(group_name="scrape")
+def scrape_parliamentary_cycle_active(context: AssetExecutionContext) -> Dict:
+    """
+    Scrape ACTIVE parliamentary cycle data (Parlimen, Penggal, Mesyuarat + date ranges)
+    from Portal Rasmi Parlimen main pages for DR, DN, KKDR.
+    """
+    # Scrape active cycles
+    cycles = scrape_active_cycles(context=context)
+    
+    # Fetch existing cycles from database
+    context.log.info("[active] Fetching existing cycles from database...")
+    existing_keys = fetch_db_cycles(HANSARD_DB_URL, context)
+    
+    # Upsert via API
+    api_endpoint = f"{DEV_API_URL}/api/parliamentary-cycle"
+    context.log.info(f"[active] Using API endpoint: {api_endpoint}")
+    
+    stats = upsert_cycles_via_api(
+        cycles=cycles,
+        existing_keys=existing_keys,
+        api_endpoint=api_endpoint,
+        log_prefix="active",
+        context=context
+    )
+    
+    summary = {
+        "total_scraped": len(cycles),
+        **stats,
+    }
+    
+    context.log.info(f"[active] Summary: {summary}")
+    return summary
 
 
 @asset(group_name="scrape")
@@ -183,6 +265,7 @@ def scrape_website(context: AssetExecutionContext) -> List:
                 pdf_path = extract_pdf_url(a_tag.get("href"))
                 pdf_url = urljoin(base_url, pdf_path)
                 if pdf_url.endswith(".pdf"):
+                    should_upload = False
                     # Determine the PDF file name
                     pdf_name = os.path.basename(pdf_url).split(".")[
                         0
@@ -224,13 +307,32 @@ def scrape_website(context: AssetExecutionContext) -> List:
                             context.log.info(f"S3 object not found: {full_s3_key}")
                         else:
                             raise
+                        
+                    # Step 1b: Check if file already exists in PUBLIC (canonical location)
+                    exists_in_public = False
+                    sitting_object = get_sitting_object(pdf_name[:-4])
+                    public_house_folder = sitting_object["house_folder"]
+                    renamed_public_key = f"{public_house_folder}/{sitting_object['renamed_filename']}.pdf"
+                    try:
+                        s3_client.head_object(
+                            Bucket=S3_PUBLIC_BUCKET,
+                            Key=renamed_public_key,
+                        )
+                        exists_in_public = True
+                    except botocore.exceptions.ClientError:
+                        pass
 
-                    if exists_in_s3:
-                        context.log.info(f"Skip {pdf_name} - Still in S3, hasn't completed ingestion. No need to upload again.")
+
+                    if exists_in_s3 and not exists_in_public:
+                        # Stranded file: uploaded before but never moved to PUBLIC
+                        context.log.warning(f"{pdf_name} exists in new/ but not in PUBLIC. No need to upload again, but re-queueing for move")
+                        should_upload = False
+                        new_pdfs.append((pdf_name, s3_key, f"s3://{S3_DATAPROC_BUCKET}/{full_s3_key}"))
+                    elif exists_in_s3 and exists_in_public:
                         should_upload = False
                     else:
                         # Step 2: Download and open PDF to determine is_final_pdf flag
-                        pdf_response = requests.get(pdf_url, verify=False)
+                        pdf_response = requests.get(pdf_url, verify=False, timeout=300)
                         pdf_response.raise_for_status()
                         is_final_pdf = True
                         with pdfplumber.open(BytesIO(pdf_response.content)) as pdf:
@@ -378,9 +480,15 @@ def dg_parse_hansard(context: AssetExecutionContext):
     context.log.info(f"Parsing {sitting_object['original_filename']}")
 
     # read pdf from s3
-    pdf_response = s3_client.get_object(
-        Bucket=S3_PUBLIC_BUCKET, Key=sitting_object["renamed_filename_key"]
-    )
+    try:
+        pdf_response = s3_client.get_object(
+            Bucket=S3_PUBLIC_BUCKET,
+            Key=sitting_object["renamed_filename_key"],
+        )
+    except botocore.exceptions.ClientError as e:
+        context.log.error(f"PDF not found in {S3_PUBLIC_BUCKET} for {context.partition_key}. Likely move & rename step did not run.")
+        raise
+
     text, spaced_bold, spaced_italics, tables, attn_text, is_final = parse_hansard(
         sitting_object["date_str"],
         sitting_object["house"],
@@ -1115,3 +1223,18 @@ def move_arkib_pdfs_to_public_asset(context: AssetExecutionContext):
     context.log.info("Moving arkib PDFs to public bucket")
     move_arkib_pdfs_to_public_main(category=None, logger=context.log)
     context.log.info("Completed moving arkib PDFs")
+
+
+@asset(group_name="author")
+def load_author_data_to_db(context: AssetExecutionContext):
+    """
+    Load author data from S3 into the api_author table in the database.
+    CSV file should be manually uploaded to S3 at: canonical/author.csv
+    """
+    return load_author_csv_to_db(
+        s3_bucket=S3_DATAPROC_BUCKET,
+        s3_key="canonical/author.csv",
+        db_url=HANSARD_DB_URL,
+        context=context,
+        aws_region=AWS_REGION
+    )
