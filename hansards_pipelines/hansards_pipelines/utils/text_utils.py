@@ -914,7 +914,8 @@ def get_sitting_object(pdf_file_key: str):
     if "-" in base_name:
         parts = base_name.split("-")
         if len(parts) < 2:
-            raise ValueError(f"Invalid filename format: '{pdf_file_key}' - expected format like 'DR-12122024'")
+            logging.warning("Invalid filename format (missing date part) - expected format like 'DR-12122024', skipped: '%s'", pdf_file_key) 
+            return None
         
         house = parts[0].strip().upper()  # DR
         date_str = parts[1].strip()  # 12122024
@@ -930,17 +931,20 @@ def get_sitting_object(pdf_file_key: str):
             house = base_name[:2].upper()  # DR or DN
             date_str = base_name[2:].strip()  # 12122024 or 01051961
         else:
-            raise ValueError(f"Invalid filename format: '{pdf_file_key}' - expected format like 'DR-12122024' or 'DN01051961'")
+            logging.warning("Invalid filename format (too short) - expected format like 'DR-12122024' or 'DN01051961', skipped: '%s'", pdf_file_key)
+            return None
     
     # Validate house code
     try:
         house_folder = house_mapper.to_canonical(house.lower())  # dr -> dewanrakyat (for s3)
     except (KeyError, AttributeError) as e:
-        raise ValueError(f"Invalid house code: '{house}' in filename '{pdf_file_key}'") from e
+        logging.warning("Invalid house code: '%s' in filename '%s', skipped", house, pdf_file_key)
+        return None
     
     # Validate and fix date format
     if not date_str.isdigit():
-        raise ValueError(f"Invalid date format: '{date_str}' in filename '{pdf_file_key}' - contains non-digit characters")
+        logging.warning("Invalid date format (non-digit) '%s' in filename '%s' - contains non-digit characters, skipped", date_str, pdf_file_key)
+        return None
     
     # Handle 7-digit dates by padding with leading zero (e.g., 1032023 -> 01032023)
     if len(date_str) == 7:
@@ -962,15 +966,18 @@ def get_sitting_object(pdf_file_key: str):
                 date_str = fixed_date
                 logging.warning(f"Fixed 9-digit date in filename '{pdf_file_key}': removed extra digit at position 3, now using '{date_str}'")
             except ValueError:
-                raise ValueError(f"Invalid date format: '{date_str}' in filename '{pdf_file_key}' - expected DDMMYYYY (8 digits)")
+                logging.warning("Invalid date format '%s' in filename '%s' - expected DDMMYYYY (8 digits), skipped", date_str, pdf_file_key)
+                return None
     elif len(date_str) != 8:
-        raise ValueError(f"Invalid date format: '{date_str}' in filename '{pdf_file_key}' - expected DDMMYYYY (8 digits)")
-    
+        logging.warning("Invalid date format '%s' in filename '%s' - expected DDMMYYYY (8 digits), skipped", date_str, pdf_file_key)
+        return None
+
     try:
         date = datetime.strptime(date_str, "%d%m%Y")
     except ValueError as e:
-        raise ValueError(f"Invalid date: '{date_str}' in filename '{pdf_file_key}'") from e
-    
+        logging.warning("Invalid date: '%s' in filename '%s', skipped", date_str, pdf_file_key)
+        return None
+
     proper_date_str = date.strftime("%Y-%m-%d")  # 2024-12-12 or 1961-05-01
     original_filename = base_name + ".pdf"
     renamed_filename = rename_pdf(base_name)  # DR-12122024 -> dr_2024-12-12
