@@ -1239,14 +1239,14 @@ def direct_insert_to_db(context: AssetExecutionContext, prepare_db_payload: dict
 def scrape_website_arkib(context: AssetExecutionContext):
     """Scrape arkib Hansard listings."""
 
-    limit = None
+    limit = 5
     
     context.log.info(f"Starting arkib scrape (all PDFs)")
     run_scrape(limit=limit)
     context.log.info("Completed arkib scrape")
 
 @asset(group_name="scrape", deps=[scrape_website_arkib])
-def move_arkib_pdfs_to_public_asset(context: AssetExecutionContext):
+def move_arkib_pdfs_to_public(context: AssetExecutionContext):
     """Move and rename arkib PDFs from the dataproc bucket to the public bucket with renamed filenames."""
 
     context.log.info("Moving and renaming arkib PDFs to public bucket...")
@@ -1269,15 +1269,16 @@ def load_author_data_to_db(context: AssetExecutionContext):
     )
 
 
-@asset(group_name="arkib")
+@asset(deps=[move_arkib_pdfs_to_public], group_name="arkib")
 def dg_build_arkib_partition_queue(context: AssetExecutionContext):
     """
     Build arkib partition queue JSON file (with min_year conditions) based on list of scraped PDFs that is put in S3 PUBLIC arkib/.
     - reads and list pdfs in S3 PUBLIC arkib/ bucket
     - writes queue/arkib_partitions.pending.json to S3 DATAPROC queue
+    - sensor 'trigger_arkib_pdf_move' will pick up this pending.json, and trigger job move_arkib_pdfs_job (asset: dg_move_arkib_pdf_to_s3_root).
 
     TODO: add dependency.
-    - Asset must depend on 'move_arkib_pdfs_to_public_asset'
+    - Asset must depend on 'move_arkib_pdfs_to_public' asset
     - because the partition queue is built by listing all the pdfs in S3 PUBLIC (once moved & renamed).
 
     Conditions:
