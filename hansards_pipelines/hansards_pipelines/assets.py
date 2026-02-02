@@ -56,7 +56,7 @@ from hansards_pipelines.direct_sitting_ingest import ingest_sitting_to_db
 from hansards_pipelines.settings import S3_DATAPROC_BUCKET, S3_PUBLIC_BUCKET, DEV_API_URL, PROD_API_URL, FRONTEND_URL, FRONTEND_TOKEN, HANSARD_DB_URL
 
 from hansards_pipelines.scrape_arkib import run_scrape
-from hansards_pipelines.move_and_rename_pdf import main as move_arkib_pdfs_to_public_main
+from hansards_pipelines.move_and_rename_pdf import move_arkib_pdfs_to_public_main
 
 # main pipeline
 # 1. scrape from the website, push pdf to s3 hansards-new
@@ -1102,8 +1102,10 @@ def direct_insert_to_db(context: AssetExecutionContext, prepare_db_payload: dict
 def scrape_website_arkib(context: AssetExecutionContext):
     """Scrape arkib Hansard listings."""
 
+    limit = None
+    
     context.log.info(f"Starting arkib scrape (all PDFs)")
-    run_scrape(limit=None) 
+    run_scrape(limit=limit)
     context.log.info("Completed arkib scrape")
 
 @asset(group_name="scrape", deps=[scrape_website_arkib])
@@ -1111,5 +1113,5 @@ def move_arkib_pdfs_to_public_asset(context: AssetExecutionContext):
     """Move arkib PDFs from the dataproc bucket to the public bucket with renamed filenames."""
 
     context.log.info("Moving arkib PDFs to public bucket")
-    move_arkib_pdfs_to_public_main(category=None)
+    move_arkib_pdfs_to_public_main(category=None, logger=context.log)
     context.log.info("Completed moving arkib PDFs")

@@ -34,6 +34,7 @@ logging.basicConfig(
 def move_arkib_pdfs_to_public(
     s3,
     items: List[Tuple[str, str]],
+    logger=None,
 ):
     """
     Copy arkib PDFs from the dataproc bucket into the public bucket,
@@ -43,6 +44,8 @@ def move_arkib_pdfs_to_public(
         s3: Boto3 S3 client
         items: List of (house_folder, filename) tuples
     """
+    log = logger if logger else logging
+
     if not S3_DATAPROC_BUCKET or not S3_PUBLIC_BUCKET:
         raise ValueError("S3 buckets are not configured")
 
@@ -51,13 +54,13 @@ def move_arkib_pdfs_to_public(
     for house_folder, filename in items:
         source_key = f"arkib/{house_folder}/{filename}"
 
-        sitting = get_sitting_object(filename)
+        sitting = get_sitting_object(filename, logger=log)
         if not sitting:
             continue
         dest_key = f"arkib/{sitting['house_folder']}/{sitting['renamed_filename']}.pdf"
 
         if not s3_object_exists(s3, S3_DATAPROC_BUCKET, source_key):
-            logging.warning("Skipped (source missing): s3://%s/%s", S3_DATAPROC_BUCKET, source_key)
+            log.warning("Skipped (source missing): s3://%s/%s", S3_DATAPROC_BUCKET, source_key)
             continue
 
         try:
@@ -71,7 +74,7 @@ def move_arkib_pdfs_to_public(
                 ContentType="application/pdf",
             )
 
-            logging.info("Copied %s -> %s", source_key, dest_key)
+            log.info("Copied %s -> %s", source_key, dest_key)
 
 
             results.append(
@@ -82,13 +85,16 @@ def move_arkib_pdfs_to_public(
             )
 
         except ClientError as exc:
-            logging.error("Failed to copy s3://%s/%s -> s3://%s/%s", S3_DATAPROC_BUCKET, source_key, S3_PUBLIC_BUCKET, dest_key)
+            log.error("Failed to copy s3://%s/%s -> s3://%s/%s", S3_DATAPROC_BUCKET, source_key, S3_PUBLIC_BUCKET, dest_key)
             raise exc
 
     return results
 
-
-def main(category: str | None = "__from_cli__"):
+def move_arkib_pdfs_to_public_main(
+    *,
+    category: str | None,
+    logger,
+):
     """Move arkib PDFs from dataproc to public bucket.
     
     Args:
@@ -96,49 +102,45 @@ def main(category: str | None = "__from_cli__"):
                   If not provided, all categories will be processed.
                   When called from CLI, this will be parsed from arguments.
     """
-    # Only parse args if called from CLI (default sentinel value)
-    if category == "__from_cli__":
-        parser = argparse.ArgumentParser(
-            description="Move and rename arkib PDFs from dataproc to public bucket"
-        )
-        parser.add_argument(
-            "--category",
-            type=str,
-            help="House category to process (e.g., dewannegara, dewanrakyat). If not provided, all categories will be processed.",
-        )
-        args = parser.parse_args()
-        category = args.category
+    log = logger if logger else logging
 
     s3 = boto3.client("s3")
-    s3.head_bucket(Bucket=S3_DATAPROC_BUCKET)
-    s3.head_bucket(Bucket=S3_PUBLIC_BUCKET)
-    
-    # Determine S3 prefix based on category argument
-    if category:
-        prefix = f"arkib/{category}/"
-        logging.info("Listing PDFs in s3://%s/%s", S3_DATAPROC_BUCKET, prefix)
-    else:
-        prefix = "arkib/"
-        logging.info("Listing all PDFs in s3://%s/arkib/", S3_DATAPROC_BUCKET)
-    
+
+    prefix = f"arkib/{category}/" if category else "arkib/"
+    log.info("Listing PDFs in s3://%s/%s", S3_DATAPROC_BUCKET, prefix)
+
     paginator = s3.get_paginator("list_objects_v2")
-    page_iterator = paginator.paginate(Bucket=S3_DATAPROC_BUCKET, Prefix=prefix)
+    page_iterator = paginator.paginate(
+        Bucket=S3_DATAPROC_BUCKET,
+        Prefix=prefix,
+    )
+
     items = []
     for page in page_iterator:
         for obj in page.get("Contents", []):
             key = obj["Key"]
-            # Expected format: arkib/<house_folder>/<filename>.pdf
             parts = key.split("/")
             if len(parts) == 3 and key.endswith(".pdf"):
-                house_folder = parts[1]
-                filename = parts[2]
-                items.append((house_folder, filename))
+                items.append((parts[1], parts[2]))
 
-    logging.info("Moving %d PDFs", len(items))
+    log.info("Moving %d PDFs", len(items))
 
-    move_arkib_pdfs_to_public(s3, items)
+    move_arkib_pdfs_to_public(s3, items, logger=log)
 
-    logging.info("Done")
+    log.info("Done")
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Move and rename arkib PDFs from dataproc to public bucket")
+    parser.add_argument("--category", type=str, help="House category (e.g. dewanrakyat, dewannegara). If not provided, all categories will be processed.")
+    args = parser.parse_args()
+
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s [%(levelname)s] %(message)s",
+    )
+
+    move_arkib_pdfs_to_public_main(category=args.category, logger=logging)
 
 
 if __name__ == "__main__":
