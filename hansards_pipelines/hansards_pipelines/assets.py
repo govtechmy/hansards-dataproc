@@ -1247,9 +1247,9 @@ def scrape_website_arkib(context: AssetExecutionContext):
 
 @asset(group_name="scrape", deps=[scrape_website_arkib])
 def move_arkib_pdfs_to_public_asset(context: AssetExecutionContext):
-    """Move arkib PDFs from the dataproc bucket to the public bucket with renamed filenames."""
+    """Move and rename arkib PDFs from the dataproc bucket to the public bucket with renamed filenames."""
 
-    context.log.info("Moving arkib PDFs to public bucket")
+    context.log.info("Moving and renaming arkib PDFs to public bucket...")
     move_arkib_pdfs_to_public_main(category=None, logger=context.log)
     context.log.info("Completed moving arkib PDFs")
 
@@ -1272,21 +1272,19 @@ def load_author_data_to_db(context: AssetExecutionContext):
 @asset(group_name="arkib")
 def dg_build_arkib_partition_queue(context: AssetExecutionContext):
     """
-    TODO: add dependency.
-    # Asset must depend on dg_move_arkib_pdf_to_s3_root
-    # because the partition queue is built from listing all the pdfs in S3 PUBLIC (once moved & renamed).,
-    # which is only correct after arkib PDFs are promoted.
+    Build arkib partition queue JSON file (with min_year conditions) based on list of scraped PDFs that is put in S3 PUBLIC arkib/.
+    - reads and list pdfs in S3 PUBLIC arkib/ bucket
+    - writes queue/arkib_partitions.pending.json to S3 DATAPROC queue
 
-    Build arkib partition queue JSON file with certain conditions.
-    - reads scraped arkib listings from S3 PUBLIC BUCKET
-    - writes queue/arkib_partitions.pending.json to S3 PUBLIC BUCKET
+    TODO: add dependency.
+    - Asset must depend on 'move_arkib_pdfs_to_public_asset'
+    - because the partition queue is built by listing all the pdfs in S3 PUBLIC (once moved & renamed).
 
     Conditions:
     - only for sittings from year MIN_YEAR onwards,
     - this is due to a lot of manual(human) edits have been made to older sittings (2007 & below),
     - to avoid overwriting those manual edits with arkib PDFs, we only refresh PDFs from MIN_YEAR onwards.
     - then trigger sittings_job on those partitions.
-
     """
 
     MIN_YEAR = 2025
