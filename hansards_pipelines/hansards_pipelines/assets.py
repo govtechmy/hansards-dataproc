@@ -63,7 +63,7 @@ import psycopg
 from hansards_pipelines.direct_sitting_ingest import ingest_sitting_to_db
 
 from hansards_pipelines.scrape_arkib import run_scrape
-from hansards_pipelines.move_and_rename_pdf import main as move_arkib_pdfs_to_public_main
+from hansards_pipelines.move_and_rename_pdf import move_arkib_pdfs_to_public_main
 from hansards_pipelines.author import load_author_csv_to_db
 from pathlib import Path
 
@@ -1237,12 +1237,12 @@ def direct_insert_to_db(context: AssetExecutionContext, prepare_db_payload: dict
 
 @asset(group_name="scrape")
 def scrape_website_arkib(context: AssetExecutionContext):
-    """Scrape arkib Hansard listings (limited for testing)."""
+    """Scrape arkib Hansard listings."""
 
-    limit = 10 # TODO: remove limit after testing
-
-    context.log.info(f"Starting arkib scrape (limit={limit})")
-    run_scrape(limit=limit) 
+    limit = None
+    
+    context.log.info(f"Starting arkib scrape (all PDFs)")
+    run_scrape(limit=limit)
     context.log.info("Completed arkib scrape")
 
 @asset(group_name="scrape", deps=[scrape_website_arkib])
@@ -1250,7 +1250,7 @@ def move_arkib_pdfs_to_public_asset(context: AssetExecutionContext):
     """Move arkib PDFs from the dataproc bucket to the public bucket with renamed filenames."""
 
     context.log.info("Moving arkib PDFs to public bucket")
-    move_arkib_pdfs_to_public_main(category=None)
+    move_arkib_pdfs_to_public_main(category=None, logger=context.log)
     context.log.info("Completed moving arkib PDFs")
 
 
