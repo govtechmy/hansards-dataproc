@@ -1239,7 +1239,7 @@ def direct_insert_to_db(context: AssetExecutionContext, prepare_db_payload: dict
 def scrape_website_arkib(context: AssetExecutionContext):
     """Scrape arkib Hansard listings."""
 
-    limit = 5
+    limit = None
     
     context.log.info(f"Starting arkib scrape (all PDFs)")
     run_scrape(limit=limit)
@@ -1288,7 +1288,7 @@ def dg_build_arkib_partition_queue(context: AssetExecutionContext):
     - then trigger sittings_job on those partitions.
     """
 
-    MIN_YEAR = 2025
+    MIN_YEAR = 2026
     PENDING_QUEUE_KEY = "arkib/queue/arkib_partitions.pending.json"
 
     payload = build_arkib_partition_queue(
