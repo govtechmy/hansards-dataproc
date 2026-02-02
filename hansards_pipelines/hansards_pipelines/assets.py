@@ -1296,7 +1296,6 @@ def dg_build_arkib_partition_queue(context: AssetExecutionContext):
         bucket=S3_PUBLIC_BUCKET,
         prefix="arkib/",
         min_year=MIN_YEAR,
-        get_sitting_object=get_sitting_object,
         logger=context.log,
     )
 

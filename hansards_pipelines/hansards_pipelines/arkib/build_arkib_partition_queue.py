@@ -19,7 +19,6 @@ def build_arkib_partition_queue(
     bucket: str,
     prefix: str,
     min_year: int,
-    get_sitting_object,
     logger,
 ) -> dict:
     """
@@ -47,7 +46,6 @@ def build_arkib_partition_queue(
 
             try:
                 partition = convert_arkib_key_to_partition(key)
-                sitting = get_sitting_object(partition)
             except Exception as e:
                 logger.warning(f"Skip invalid arkib key | key={key} | err={e}")
                 continue
