@@ -490,8 +490,7 @@ ACTIVE_SOURCES = [
 
 def parse_malay_date(
     date_str: str, 
-    context: Optional[AssetExecutionContext] = None,
-    is_start_date: bool = False
+    context: Optional[AssetExecutionContext] = None
 ) -> Optional[str]:
     """
     Parse Malay date string (e.g., '19 Januari 2026') to YYYY-MM-DD format.
@@ -583,30 +582,31 @@ def scrape_active_cycles(
             end_date_str = date_match.group(2)
             
             # Parse the dates from cycle header
-            start_date_parsed = parse_malay_date(start_date_str, context, is_start_date=False)
-            end_date_parsed = parse_malay_date(end_date_str, context, is_start_date=False)
+            start_date_parsed = parse_malay_date(start_date_str, context)
+            end_date_parsed = parse_malay_date(end_date_str, context)
             
             # Look for actual document dates on the same page
             document_dates = []
             
-            for link in soup.find_all('a', href=lambda x: x is None): 
+            # Check <a> tags with onclick containing PDF links
+            for link in soup.find_all('a'): 
                 onclick = link.get('onclick', '')
                 link_text = link.get_text(strip=True)
                 
                 # Check if this looks like a PDF link (DN-*.pdf, DR-*.pdf, etc.)
                 if 'pdf' in onclick.lower() and link_text:
                     # Try to parse the link text as a date
-                    doc_date = parse_malay_date(link_text, context, is_start_date=False)
+                    doc_date = parse_malay_date(link_text, context)
                     if doc_date and doc_date != start_date_parsed and doc_date != end_date_parsed:
                         document_dates.append(doc_date)
             
-            # Also check regular <a> tags with href containing PDF
+            # Also check <a> tags with href containing PDF
             for link in soup.find_all('a', href=True):
                 href = link.get('href', '')
                 link_text = link.get_text(strip=True)
                 
                 if 'pdf' in href.lower() and link_text:
-                    doc_date = parse_malay_date(link_text, context, is_start_date=False)
+                    doc_date = parse_malay_date(link_text, context)
                     if doc_date and doc_date != start_date_parsed and doc_date != end_date_parsed:
                         document_dates.append(doc_date)
             
