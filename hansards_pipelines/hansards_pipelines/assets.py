@@ -52,7 +52,7 @@ from hansards_pipelines.utils.s3_utils import (
     build_path,
 )
 
-from hansards_pipelines.settings import S3_DATAPROC_BUCKET, S3_PUBLIC_BUCKET, DEV_API_URL, PROD_API_URL, FRONTEND_URL, FRONTEND_TOKEN, HANSARD_DB_URL, AWS_REGION
+from hansards_pipelines.settings import S3_DATAPROC_BUCKET, S3_PUBLIC_BUCKET, DEV_API_URL, PROD_API_URL, FRONTEND_URL, FRONTEND_TOKEN, HANSARD_DB_URL, AWS_REGION, ARKIB_PARTITION_MIN_YEAR
 from hansards_pipelines.scrape_parliamentary_cycle import (
     scrape_arkib_cycles,
     scrape_active_cycles,
@@ -1239,7 +1239,7 @@ def direct_insert_to_db(context: AssetExecutionContext, prepare_db_payload: dict
 def scrape_website_arkib(context: AssetExecutionContext):
     """Scrape arkib Hansard listings."""
 
-    limit = None
+    limit = 5
     
     context.log.info(f"Starting arkib scrape (all PDFs)")
     run_scrape(limit=limit)
@@ -1288,7 +1288,7 @@ def dg_build_arkib_partition_queue(context: AssetExecutionContext):
     - then trigger sittings_job on those partitions.
     """
 
-    MIN_YEAR = 2026
+    MIN_YEAR = ARKIB_PARTITION_MIN_YEAR
     PENDING_QUEUE_KEY = "arkib/queue/arkib_partitions.pending.json"
 
     payload = build_arkib_partition_queue(
