@@ -27,14 +27,13 @@ sittings_job = define_asset_job(
         "prepare_db_payload",
         "direct_insert_to_db",
         # "insert_to_dev_db",
-        # "insert_to_prod_db",,
+        # "insert_to_prod_db",
     ),
 )
 
-
 scrape_arkib_job = define_asset_job(
     "scrape_arkib_website_job",
-    selection=[assets.scrape_website_arkib, assets.move_arkib_pdfs_to_public_asset],
+    selection=[assets.scrape_website_arkib, assets.move_arkib_pdfs_to_public, assets.dg_build_arkib_partition_queue],
 )
 
 
@@ -43,3 +42,7 @@ author_load_job = define_asset_job(
     selection=[assets.load_author_data_to_db],
 )
 
+move_arkib_pdfs_job = define_asset_job(
+    "move_arkib_pdfs_job",
+    selection=[assets.dg_move_arkib_pdf_to_s3_root],
+)

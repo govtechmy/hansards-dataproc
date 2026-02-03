@@ -139,11 +139,33 @@ def extract_child_ids(html: str) -> Set[str]:
 
 
 def download_pdf_to_s3(session, s3, bucket, key, url):
-    logging.info("Uploading -> s3://%s/%s", bucket, key)
-    with session.get(url, stream=True, timeout=60) as r:
-        r.raise_for_status()
-        s3.upload_fileobj(r.raw, bucket, key)
+    r = session.get(
+        url,
+        headers={
+            "Accept": "application/pdf",
+            "Accept-Encoding": "gzip, deflate",
+            "Referer": PDF_BASE_URL,
+        },
+        timeout=60,
+    )
+    r.raise_for_status()
 
+    data = r.content
+
+    # Proper PDF validation:
+    # Look for %PDF anywhere in the first 1KB
+    if b"%PDF" not in data[:1024]:
+        logging.warning("Skip non-PDF payload (%d bytes): %s", len(data), url)
+        return
+
+    s3.put_object(
+        Bucket=bucket,
+        Key=key,
+        Body=data,
+        ContentType="application/pdf",
+    )
+
+    logging.info("Uploaded -> s3://%s/%s (%d bytes)", bucket, key, len(data),)
 
 
 def crawl(

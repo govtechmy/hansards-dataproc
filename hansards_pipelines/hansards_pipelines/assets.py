@@ -14,6 +14,7 @@ from dagster import (
     DagsterRunStatus,
     MaterializeResult,
     Output,
+    Failure
 )
 import os
 import io
@@ -51,7 +52,7 @@ from hansards_pipelines.utils.s3_utils import (
     build_path,
 )
 
-from hansards_pipelines.settings import S3_DATAPROC_BUCKET, S3_PUBLIC_BUCKET, DEV_API_URL, PROD_API_URL, FRONTEND_URL, FRONTEND_TOKEN, HANSARD_DB_URL, AWS_REGION
+from hansards_pipelines.settings import S3_DATAPROC_BUCKET, S3_PUBLIC_BUCKET, DEV_API_URL, PROD_API_URL, FRONTEND_URL, FRONTEND_TOKEN, HANSARD_DB_URL, AWS_REGION, ARKIB_PARTITION_MIN_YEAR
 from hansards_pipelines.scrape_parliamentary_cycle import (
     scrape_arkib_cycles,
     scrape_active_cycles,
@@ -66,6 +67,8 @@ from hansards_pipelines.move_and_rename_pdf import move_arkib_pdfs_to_public_mai
 from hansards_pipelines.author import load_author_csv_to_db
 from pathlib import Path
 
+from hansards_pipelines.arkib.build_arkib_partition_queue import build_arkib_partition_queue
+from hansards_pipelines.arkib.promote_pdfs import promote_arkib_pdfs
 
 # main pipeline
 # 1. scrape from the website, push pdf to s3 hansards-new
@@ -467,12 +470,11 @@ def move_and_rename_all_hansards(
 
         context.log.info(f"Renamed and moved {s3_key} to {new_pdf_name}")
 
-@asset(
-    partitions_def=sitting_partitions_def,
-    # deps=[move_and_rename_hansards],
-    group_name="parse"
-)
-def dg_parse_hansard(context: AssetExecutionContext):
+def _dg_parse_hansard_impl(
+    *,
+    context: AssetExecutionContext,
+    pdf_key: str,
+):
     """Parse hansard
     Output of this is parsed_pdf folder - plaintext, bold, italics, tables, attendance.txt
     """
@@ -483,7 +485,7 @@ def dg_parse_hansard(context: AssetExecutionContext):
     try:
         pdf_response = s3_client.get_object(
             Bucket=S3_PUBLIC_BUCKET,
-            Key=sitting_object["renamed_filename_key"],
+            Key=pdf_key,
         )
     except botocore.exceptions.ClientError as e:
         context.log.error(f"PDF not found in {S3_PUBLIC_BUCKET} for {context.partition_key}. Likely move & rename step did not run.")
@@ -517,6 +519,30 @@ def dg_parse_hansard(context: AssetExecutionContext):
         s3_client.put_object(Bucket=S3_DATAPROC_BUCKET, Key=s3_key, Body=attn_text)
         context.log.info(f"Uploaded attendance to {s3_key}")
 
+
+@asset(
+    partitions_def=sitting_partitions_def,
+    group_name="parse",
+)
+def dg_parse_hansard(context: AssetExecutionContext):
+    """
+    Parse hansard PDF for a sitting. Always reads from S3 PUBLIC ROOT.
+    """
+
+    sitting_object = get_sitting_object(context.partition_key)
+
+    pdf_key = sitting_object["renamed_filename_key"]
+
+    context.log.info(f"dg_parse_hansard | partition={context.partition_key} | key={pdf_key}")
+
+    _dg_parse_hansard_impl(context=context, pdf_key=pdf_key)
+
+    return {
+        "partition": context.partition_key,
+        "pdf_key": pdf_key,
+    }
+
+
 @asset(
     partitions_def=sitting_partitions_def, deps=[dg_parse_hansard], group_name="parse"
 )
@@ -537,10 +563,13 @@ def dg_get_categories(context: AssetExecutionContext):
     - kkdr_subcategories_non_bold
     """
     sitting_object = get_sitting_object(context.partition_key)
-    context.log.info(f"Getting categories for {sitting_object['original_filename']}")
+
+    pdf_key = sitting_object["renamed_filename_key"]
+
+    context.log.info(f"Getting categories | key={pdf_key}")
 
     pdf_response = s3_client.get_object(
-        Bucket=S3_PUBLIC_BUCKET, Key=sitting_object["renamed_filename_key"]
+        Bucket=S3_PUBLIC_BUCKET, Key=pdf_key
     )
     (
         long_toc,
@@ -1210,17 +1239,17 @@ def direct_insert_to_db(context: AssetExecutionContext, prepare_db_payload: dict
 def scrape_website_arkib(context: AssetExecutionContext):
     """Scrape arkib Hansard listings."""
 
-    limit = None
+    limit = 5
     
     context.log.info(f"Starting arkib scrape (all PDFs)")
     run_scrape(limit=limit)
     context.log.info("Completed arkib scrape")
 
 @asset(group_name="scrape", deps=[scrape_website_arkib])
-def move_arkib_pdfs_to_public_asset(context: AssetExecutionContext):
-    """Move arkib PDFs from the dataproc bucket to the public bucket with renamed filenames."""
+def move_arkib_pdfs_to_public(context: AssetExecutionContext):
+    """Move and rename arkib PDFs from the dataproc bucket to the public bucket with renamed filenames."""
 
-    context.log.info("Moving arkib PDFs to public bucket")
+    context.log.info("Moving and renaming arkib PDFs to public bucket...")
     move_arkib_pdfs_to_public_main(category=None, logger=context.log)
     context.log.info("Completed moving arkib PDFs")
 
@@ -1237,4 +1266,84 @@ def load_author_data_to_db(context: AssetExecutionContext):
         db_url=HANSARD_DB_URL,
         context=context,
         aws_region=AWS_REGION
+    )
+
+
+@asset(deps=[move_arkib_pdfs_to_public], group_name="arkib")
+def dg_build_arkib_partition_queue(context: AssetExecutionContext):
+    """
+    Build arkib partition queue JSON file (with min_year conditions) based on list of scraped PDFs that is put in S3 PUBLIC arkib/.
+    - reads and list pdfs in S3 PUBLIC arkib/ bucket
+    - writes queue/arkib_partitions.pending.json to S3 DATAPROC queue
+    - sensor 'trigger_arkib_pdf_move' will pick up this pending.json, and trigger job move_arkib_pdfs_job (asset: dg_move_arkib_pdf_to_s3_root).
+
+    TODO: add dependency.
+    - Asset must depend on 'move_arkib_pdfs_to_public' asset
+    - because the partition queue is built by listing all the pdfs in S3 PUBLIC (once moved & renamed).
+
+    Conditions:
+    - only for sittings from year MIN_YEAR onwards,
+    - this is due to a lot of manual(human) edits have been made to older sittings (2007 & below),
+    - to avoid overwriting those manual edits with arkib PDFs, we only refresh PDFs from MIN_YEAR onwards.
+    - then trigger sittings_job on those partitions.
+    """
+
+    MIN_YEAR = ARKIB_PARTITION_MIN_YEAR
+    PENDING_QUEUE_KEY = "arkib/queue/arkib_partitions.pending.json"
+
+    payload = build_arkib_partition_queue(
+        s3_client=s3_client,
+        bucket=S3_PUBLIC_BUCKET,
+        prefix="arkib/",
+        min_year=MIN_YEAR,
+        logger=context.log,
+    )
+
+    s3_client.put_object(
+        Bucket=S3_DATAPROC_BUCKET,
+        Key=PENDING_QUEUE_KEY,
+        Body=json.dumps(payload, indent=2).encode(),
+        ContentType="application/json",
+    )
+
+
+@asset(group_name="arkib")
+def dg_move_arkib_pdf_to_s3_root(context: AssetExecutionContext):
+    """
+    Works with sensor 'trigger_arkib_pdf_move' to process arkib partition queue.
+    Promote/move arkib PDFs from S3 PUBLIC arkib/ to S3 PUBLIC root.
+    - reads queue/arkib_partitions.pending.json from S3_DATAPROC_BUCKET
+    - writes queue/arkib_partitions.ready.json to S3_DATAPROC_BUCKET 
+    - deletes queue/arkib_partitions.pending.json from S3_DATAPROC_BUCKET after done processing.
+    """
+    PENDING_QUEUE_KEY = "arkib/queue/arkib_partitions.pending.json"
+    READY_QUEUE_KEY = "arkib/queue/arkib_partitions.ready.json"
+
+    obj = s3_client.get_object(Bucket=S3_DATAPROC_BUCKET, Key=PENDING_QUEUE_KEY)
+    payload = json.loads(obj["Body"].read())
+
+    moved = promote_arkib_pdfs(
+        s3_client=s3_client,
+        bucket=S3_PUBLIC_BUCKET,
+        partitions=payload["partitions"],
+        get_sitting_object=get_sitting_object,
+        logger=context.log,
+    )
+
+    context.log.info(f"Promoted arkib PDFs to S3 PUBLIC root | Total pdfs moved: {moved}")
+
+    context.log.info(f"Creating {READY_QUEUE_KEY}... Ready for sensor to trigger sitting jobs on arkib partitions.")
+
+    s3_client.put_object(
+        Bucket=S3_DATAPROC_BUCKET,
+        Key=READY_QUEUE_KEY,
+        Body=json.dumps(payload, indent=2).encode(),
+        ContentType="application/json",
+    )
+
+    context.log.info(f"Deleting {PENDING_QUEUE_KEY}.")
+
+    s3_client.delete_object(
+        Bucket=S3_DATAPROC_BUCKET,
+        Key=PENDING_QUEUE_KEY,
     )

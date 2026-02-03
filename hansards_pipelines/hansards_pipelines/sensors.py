@@ -25,12 +25,8 @@ from hansards_pipelines.assets import (
     S3_DATAPROC_BUCKET,
     s3_client,
 )
-from hansards_pipelines.jobs import sittings_job
-from hansards_pipelines.assets import FRONTEND_URL
-
-# revalidate_frontend_job = define_asset_job(
-#     "revalidate_frontend_job", [revalidate_frontend]
-# )
+from hansards_pipelines.jobs import sittings_job, move_arkib_pdfs_job
+from hansards_pipelines.assets import FRONTEND_URL, S3_PUBLIC_BUCKET
 
 
 @sensor(job=sittings_job, minimum_interval_seconds=900)
@@ -41,9 +37,12 @@ def sittings_sensor(context: SensorEvaluationContext):
     TODO: implement actual moving of parsed PDFs from new folder
     """
     # get new pdfs
-
+    source = "active"
     # get all partitions in s3
-    response = s3_client.list_objects_v2(Bucket=S3_DATAPROC_BUCKET, Prefix="new/")
+    response = s3_client.list_objects_v2(
+        Bucket=S3_DATAPROC_BUCKET,
+        Prefix="new/",
+    )
     new_pdfs = []
     for obj in response.get("Contents", []):
         # key new/dewannegara/DN-03122024.pdf
@@ -88,7 +87,7 @@ def sittings_sensor(context: SensorEvaluationContext):
         has_active_run = any(runs)
 
         if not has_active_run:
-            run_requests.append(RunRequest(partition_key=pdf_name))
+            run_requests.append(RunRequest(partition_key=pdf_name,  tags={"pdf_source": source}))
             dynamic_partition_additions.append(pdf_name)
             context.log.info(f"Creating new run for partition: {pdf_name}")
         else:
@@ -102,6 +101,67 @@ def sittings_sensor(context: SensorEvaluationContext):
             else []
         ),
     )
+
+
+@sensor(job=move_arkib_pdfs_job, minimum_interval_seconds=300)
+def trigger_arkib_pdf_move_sensor(context):
+    """
+    Trigger move_arkib_pdfs_job when there is a pending arkib_partitions.pending.json file in S3_PUBLIC_BUCKET
+    """
+    PENDING_KEY = "arkib/queue/arkib_partitions.pending.json"
+    try:
+        s3_client.head_object(
+            Bucket=S3_DATAPROC_BUCKET,
+            Key=PENDING_KEY,
+        )
+    except s3_client.exceptions.ClientError:
+        return SensorResult()
+
+    return SensorResult(
+        run_requests=[
+            RunRequest(
+                run_key=f"arkib_move_{PENDING_KEY}",
+            )
+        ]
+    )
+
+
+@sensor(job=sittings_job, minimum_interval_seconds=300)
+def trigger_sittings_job_arkib_sensor(context):
+    """
+    Trigger sittings_job runs for partitions listed in arkib_partitions.ready.json in S3_DATAPROC_BUCKET
+    """
+
+    READY_KEY = "arkib/queue/arkib_partitions.ready.json"
+
+    try:
+        obj = s3_client.get_object(
+            Bucket=S3_DATAPROC_BUCKET,
+            Key=READY_KEY,
+        )
+    except s3_client.exceptions.ClientError:
+        return SensorResult()
+
+    payload = json.loads(obj["Body"].read())
+
+    run_requests = [
+        RunRequest(
+            partition_key=p,
+            run_key=f"arkib_{payload['generated_at']}_{p}",
+            tags={
+                "pdf_source": "arkib",
+                "reason": "arkib_refresh",
+            },
+        )
+        for p in payload["partitions"]
+    ]
+
+    s3_client.delete_object(
+        Bucket=S3_DATAPROC_BUCKET,
+        Key=READY_KEY,
+    )
+
+    return SensorResult(run_requests=run_requests)
 
 
 @run_status_sensor(run_status=DagsterRunStatus.SUCCESS, job_selection=[sittings_job])

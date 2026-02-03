@@ -49,7 +49,8 @@ def move_arkib_pdfs_to_public(
     if not S3_DATAPROC_BUCKET or not S3_PUBLIC_BUCKET:
         raise ValueError("S3 buckets are not configured")
 
-    results = []
+    moved = 0
+    deleted = 0
 
     for house_folder, filename in items:
         source_key = f"arkib/{house_folder}/{filename}"
@@ -73,22 +74,27 @@ def move_arkib_pdfs_to_public(
                 },
                 ContentType="application/pdf",
             )
+            moved += 1
 
-            log.info("Copied %s -> %s", source_key, dest_key)
-
-
-            results.append(
-                {
-                    "source": source_key,
-                    "destination": dest_key,
-                }
+            # Delete from dataproc
+            s3.delete_object(
+                Bucket=S3_DATAPROC_BUCKET,
+                Key=source_key,
             )
+            deleted += 1
+
+            log.info("Moved & cleanup old copy %s -> %s", source_key, dest_key)
+
+        except ClientError:
+            log.exception("Failed during move+cleanup for %s", source_key)
+            raise
 
         except ClientError as exc:
             log.error("Failed to copy s3://%s/%s -> s3://%s/%s", S3_DATAPROC_BUCKET, source_key, S3_PUBLIC_BUCKET, dest_key)
             raise exc
 
-    return results
+    log.info("Completed arkib move from S3 DATAPROC arkib/ to S3 PUBLIC arkib/: moved=%d deleted=%d", moved, deleted)
+
 
 def move_arkib_pdfs_to_public_main(
     *,
