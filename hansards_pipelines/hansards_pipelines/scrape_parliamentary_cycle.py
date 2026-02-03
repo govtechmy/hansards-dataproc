@@ -145,11 +145,22 @@ def upsert_cycles_via_api(
     log_prefix: str = "parliamentary_cycle",
     context: Optional[AssetExecutionContext] = None
 ) -> Dict:
-    """Upsert cycles via API and return summary statistics."""
+    """
+    Upsert cycles via API and return summary statistics.
+    """
     inserted = updated = skipped = failed = 0
 
     for cycle in cycles:
         try:
+            # Check cycle identity (house, term, session, meeting)
+            cycle_identity = (
+                cycle["house"],
+                cycle["term"],
+                cycle["session"],
+                cycle["meeting"]
+            )
+            
+            # Check full cycle key including dates
             cycle_key = (
                 cycle["house"],
                 cycle["term"],
@@ -159,7 +170,26 @@ def upsert_cycles_via_api(
                 cycle["end_date"]
             )
             
+            # Only skip if EXACT match 
             if cycle_key in existing_keys:
+                if context:
+                    context.log.info(f"[{log_prefix}] Skipping identical cycle: {cycle}")
+                skipped += 1
+                continue
+            
+            # Check if cycle identity exists 
+            identity_exists = any(
+                (k[0], k[1], k[2], k[3]) == cycle_identity 
+                for k in existing_keys
+            )
+            
+            if identity_exists:
+                # Cycle exists but dates are different / Portal updated the dates
+                if context:
+                    context.log.warning(
+                        f"[{log_prefix}] ⚠️  Cycle already exists in DB with different dates. "
+                        f"Portal may have updated dates. Skipping POST: {cycle}"
+                    )
                 skipped += 1
                 continue
             
@@ -458,8 +488,13 @@ ACTIVE_SOURCES = [
 ]
 
 
-def parse_malay_date(date_str: str, context: Optional[AssetExecutionContext] = None) -> Optional[str]:
-    """Parse Malay date string to YYYY-MM-DD format"""
+def parse_malay_date(
+    date_str: str, 
+    context: Optional[AssetExecutionContext] = None
+) -> Optional[str]:
+    """
+    Parse Malay date string (e.g., '19 Januari 2026') to YYYY-MM-DD format.
+    """
     try:
         match = re.search(r'(\d+)\s+(\w+)\s+(\d{4})', date_str.lower())
         if match:
@@ -476,8 +511,14 @@ def parse_malay_date(date_str: str, context: Optional[AssetExecutionContext] = N
     return None
 
 
-def scrape_active_cycles(context: Optional[AssetExecutionContext] = None) -> List[Dict]:
-    """Scrape active parliamentary cycles from main pages."""
+def scrape_active_cycles(
+    context: Optional[AssetExecutionContext] = None,
+    hansard_db_url: Optional[str] = None
+) -> List[Dict]:
+    """
+    Scrape active parliamentary cycles from main pages.
+    Validates start dates against actual document dates shown on the same page.
+    """
     all_cycles = []
     verify_ssl = False
     
@@ -540,9 +581,76 @@ def scrape_active_cycles(context: Optional[AssetExecutionContext] = None) -> Lis
             start_date_str = date_match.group(1)
             end_date_str = date_match.group(2)
             
-            start_date = parse_malay_date(start_date_str, context)
-            end_date = parse_malay_date(end_date_str, context)
+            # Parse the dates from cycle header
+            start_date_parsed = parse_malay_date(start_date_str, context)
+            end_date_parsed = parse_malay_date(end_date_str, context)
             
+            # Look for actual document dates on the same page
+            document_dates = []
+            
+            # Check <a> tags with onclick containing PDF links
+            for link in soup.find_all('a'): 
+                onclick = link.get('onclick', '')
+                link_text = link.get_text(strip=True)
+                
+                # Check if this looks like a PDF link (DN-*.pdf, DR-*.pdf, etc.)
+                if 'pdf' in onclick.lower() and link_text:
+                    # Try to parse the link text as a date
+                    doc_date = parse_malay_date(link_text, context)
+                    if doc_date and doc_date != start_date_parsed and doc_date != end_date_parsed:
+                        document_dates.append(doc_date)
+            
+            # Also check <a> tags with href containing PDF
+            for link in soup.find_all('a', href=True):
+                href = link.get('href', '')
+                link_text = link.get_text(strip=True)
+                
+                if 'pdf' in href.lower() and link_text:
+                    doc_date = parse_malay_date(link_text, context)
+                    if doc_date and doc_date != start_date_parsed and doc_date != end_date_parsed:
+                        document_dates.append(doc_date)
+            
+            document_dates = sorted(set(document_dates))
+            
+            if context and document_dates:
+                context.log.info(
+                    f"[active] Found {len(document_dates)} document dates on page: "
+                    f"{document_dates[0]} to {document_dates[-1]}"
+                )
+            
+            # Validate start date against document dates
+            start_date = start_date_parsed
+            if start_date_parsed and document_dates:
+                earliest_doc = document_dates[0]
+                
+                # If header start date is LATER than earliest document, use document date
+                # Example: Header shows "12 Feb" but earliest document is "12 Jan" → use "12 Jan"
+                if start_date_parsed > earliest_doc:
+                    if context:
+                        context.log.warning(
+                            f"[active] ⚠️  Cycle header shows '{start_date_str}' → {start_date_parsed}, "
+                            f"but earliest document is {earliest_doc}. "
+                            f"Using document date (Portal header displaying wrong date)."
+                        )
+                    start_date = earliest_doc
+            
+            # Validate end date against document dates (only after cycle completes)
+            end_date = end_date_parsed
+            if end_date_parsed and document_dates:
+                latest_doc = document_dates[-1]
+                
+                # Only validate if we have documents beyond the header end date
+                # This indicates the cycle has likely ended
+                if end_date_parsed < latest_doc:
+                    if context:
+                        context.log.warning(
+                            f"[active] ⚠️  Portal end date is incorrect! "
+                            f"Header shows '{end_date_str}' → {end_date_parsed}, "
+                            f"but latest document is {latest_doc}. "
+                        )
+                    continue
+
+
             if not start_date or not end_date:
                 if context:
                     context.log.warning(f"[active] Could not parse dates: {start_date_str} - {end_date_str}")
