@@ -52,7 +52,7 @@ from hansards_pipelines.utils.s3_utils import (
     build_path,
 )
 
-from hansards_pipelines.settings import S3_DATAPROC_BUCKET, S3_PUBLIC_BUCKET, DEV_API_URL, PROD_API_URL, FRONTEND_URL, FRONTEND_TOKEN, HANSARD_DB_URL, AWS_REGION, ARKIB_PARTITION_MIN_YEAR
+from hansards_pipelines.settings import S3_DATAPROC_BUCKET, S3_PUBLIC_BUCKET, DEV_API_URL, PROD_API_URL, FRONTEND_URL, FRONTEND_TOKEN, HANSARD_DB_URL, AWS_REGION, ARKIB_PARTITION_MIN_YEAR, ARKIB_PARTITION_MAX_YEAR
 from hansards_pipelines.scrape_parliamentary_cycle import (
     scrape_arkib_cycles,
     scrape_active_cycles,
@@ -1282,13 +1282,14 @@ def dg_build_arkib_partition_queue(context: AssetExecutionContext):
     - because the partition queue is built by listing all the pdfs in S3 PUBLIC (once moved & renamed).
 
     Conditions:
-    - only for sittings from year MIN_YEAR onwards,
+    - only for sittings from year MIN_YEAR onwards (and optionally up to MAX_YEAR),
     - this is due to a lot of manual(human) edits have been made to older sittings (2007 & below),
     - to avoid overwriting those manual edits with arkib PDFs, we only refresh PDFs from MIN_YEAR onwards.
     - then trigger sittings_job on those partitions.
     """
 
     MIN_YEAR = ARKIB_PARTITION_MIN_YEAR
+    MAX_YEAR = ARKIB_PARTITION_MAX_YEAR
     PENDING_QUEUE_KEY = "arkib/queue/arkib_partitions.pending.json"
 
     payload = build_arkib_partition_queue(
@@ -1296,6 +1297,7 @@ def dg_build_arkib_partition_queue(context: AssetExecutionContext):
         bucket=S3_PUBLIC_BUCKET,
         prefix="arkib/",
         min_year=MIN_YEAR,
+        max_year=MAX_YEAR,
         logger=context.log,
     )
 
