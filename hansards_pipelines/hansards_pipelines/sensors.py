@@ -27,6 +27,7 @@ from hansards_pipelines.assets import (
 )
 from hansards_pipelines.jobs import sittings_job, move_arkib_pdfs_job
 from hansards_pipelines.assets import FRONTEND_URL, S3_PUBLIC_BUCKET
+from hansards_pipelines.settings import PENDING_QUEUE_KEY, READY_QUEUE_KEY
 
 
 @sensor(job=sittings_job, minimum_interval_seconds=900)
@@ -108,11 +109,10 @@ def trigger_arkib_pdf_move_sensor(context):
     """
     Trigger move_arkib_pdfs_job when there is a pending arkib_partitions.pending.json file in S3_PUBLIC_BUCKET
     """
-    PENDING_KEY = "arkib/queue/arkib_partitions.pending.json"
     try:
         s3_client.head_object(
             Bucket=S3_DATAPROC_BUCKET,
-            Key=PENDING_KEY,
+            Key=PENDING_QUEUE_KEY,
         )
     except s3_client.exceptions.ClientError:
         return SensorResult()
@@ -120,7 +120,7 @@ def trigger_arkib_pdf_move_sensor(context):
     return SensorResult(
         run_requests=[
             RunRequest(
-                run_key=f"arkib_move_{PENDING_KEY}",
+                run_key=f"arkib_move_{PENDING_QUEUE_KEY}",
             )
         ]
     )
@@ -132,17 +132,17 @@ def trigger_sittings_job_arkib_sensor(context):
     Trigger sittings_job runs for partitions listed in arkib_partitions.ready.json in S3_DATAPROC_BUCKET
     """
 
-    READY_KEY = "arkib/queue/arkib_partitions.ready.json"
-
     try:
         obj = s3_client.get_object(
             Bucket=S3_DATAPROC_BUCKET,
-            Key=READY_KEY,
+            Key=READY_QUEUE_KEY,
         )
     except s3_client.exceptions.ClientError:
         return SensorResult()
 
     payload = json.loads(obj["Body"].read())
+
+    partitions = payload.get("partitions", [])
 
     run_requests = [
         RunRequest(
@@ -153,15 +153,14 @@ def trigger_sittings_job_arkib_sensor(context):
                 "reason": "arkib_refresh",
             },
         )
-        for p in payload["partitions"]
+        for p in partitions
     ]
 
-    s3_client.delete_object(
-        Bucket=S3_DATAPROC_BUCKET,
-        Key=READY_KEY,
+    return SensorResult(
+        run_requests=run_requests,
+        dynamic_partitions_requests=
+        [sitting_partitions_def.build_add_request(partitions)] if partitions else [],
     )
-
-    return SensorResult(run_requests=run_requests)
 
 
 @run_status_sensor(run_status=DagsterRunStatus.SUCCESS, job_selection=[sittings_job])

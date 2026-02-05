@@ -52,7 +52,7 @@ from hansards_pipelines.utils.s3_utils import (
     build_path,
 )
 
-from hansards_pipelines.settings import S3_DATAPROC_BUCKET, S3_PUBLIC_BUCKET, DEV_API_URL, PROD_API_URL, FRONTEND_URL, FRONTEND_TOKEN, HANSARD_DB_URL, AWS_REGION, ARKIB_PARTITION_MIN_YEAR
+from hansards_pipelines.settings import S3_DATAPROC_BUCKET, S3_PUBLIC_BUCKET, DEV_API_URL, PROD_API_URL, FRONTEND_URL, FRONTEND_TOKEN, HANSARD_DB_URL, AWS_REGION, ARKIB_PARTITION_MIN_YEAR, ARKIB_PARTITION_MAX_YEAR, READY_QUEUE_KEY, PENDING_QUEUE_KEY
 from hansards_pipelines.scrape_parliamentary_cycle import (
     scrape_arkib_cycles,
     scrape_active_cycles,
@@ -478,6 +478,18 @@ def _dg_parse_hansard_impl(
     """Parse hansard
     Output of this is parsed_pdf folder - plaintext, bold, italics, tables, attendance.txt
     """
+    # only if sittings_job is triggered by sensor trigger_sittings_job_arkib_sensor, delete the READY_QUEUE_KEY
+    if context.run.tags.get("pdf_source") == "arkib":
+
+        try:
+            s3_client.delete_object(
+                Bucket=S3_DATAPROC_BUCKET,
+                Key=READY_QUEUE_KEY,
+            )
+            context.log.info(f"Deleted READY_QUEUE_KEY: {READY_QUEUE_KEY}")
+        except Exception as e:
+            context.log.warning(f"Failed to delete READY_QUEUE_KEY: {e}")
+
     sitting_object = get_sitting_object(context.partition_key)
     context.log.info(f"Parsing {sitting_object['original_filename']}")
 
@@ -1282,20 +1294,22 @@ def dg_build_arkib_partition_queue(context: AssetExecutionContext):
     - because the partition queue is built by listing all the pdfs in S3 PUBLIC (once moved & renamed).
 
     Conditions:
-    - only for sittings from year MIN_YEAR onwards,
+    - only for sittings from year MIN_YEAR onwards (and optionally up to MAX_YEAR),
     - this is due to a lot of manual(human) edits have been made to older sittings (2007 & below),
     - to avoid overwriting those manual edits with arkib PDFs, we only refresh PDFs from MIN_YEAR onwards.
     - then trigger sittings_job on those partitions.
     """
 
     MIN_YEAR = ARKIB_PARTITION_MIN_YEAR
+    MAX_YEAR = ARKIB_PARTITION_MAX_YEAR
     PENDING_QUEUE_KEY = "arkib/queue/arkib_partitions.pending.json"
 
     payload = build_arkib_partition_queue(
         s3_client=s3_client,
         bucket=S3_PUBLIC_BUCKET,
-        prefix="arkib/",
+        # prefix="arkib/"
         min_year=MIN_YEAR,
+        max_year=MAX_YEAR,
         logger=context.log,
     )
 
@@ -1316,8 +1330,6 @@ def dg_move_arkib_pdf_to_s3_root(context: AssetExecutionContext):
     - writes queue/arkib_partitions.ready.json to S3_DATAPROC_BUCKET 
     - deletes queue/arkib_partitions.pending.json from S3_DATAPROC_BUCKET after done processing.
     """
-    PENDING_QUEUE_KEY = "arkib/queue/arkib_partitions.pending.json"
-    READY_QUEUE_KEY = "arkib/queue/arkib_partitions.ready.json"
 
     obj = s3_client.get_object(Bucket=S3_DATAPROC_BUCKET, Key=PENDING_QUEUE_KEY)
     payload = json.loads(obj["Body"].read())
