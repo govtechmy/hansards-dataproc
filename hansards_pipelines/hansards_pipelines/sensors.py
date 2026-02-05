@@ -144,6 +144,8 @@ def trigger_sittings_job_arkib_sensor(context):
 
     payload = json.loads(obj["Body"].read())
 
+    partitions = payload.get("partitions", [])
+
     run_requests = [
         RunRequest(
             partition_key=p,
@@ -153,7 +155,7 @@ def trigger_sittings_job_arkib_sensor(context):
                 "reason": "arkib_refresh",
             },
         )
-        for p in payload["partitions"]
+        for p in partitions
     ]
 
     s3_client.delete_object(
@@ -161,7 +163,11 @@ def trigger_sittings_job_arkib_sensor(context):
         Key=READY_KEY,
     )
 
-    return SensorResult(run_requests=run_requests)
+    return SensorResult(
+        run_requests=run_requests,
+        dynamic_partitions_requests=
+        [sitting_partitions_def.build_add_request(partitions)] if partitions else [],
+    )
 
 
 @run_status_sensor(run_status=DagsterRunStatus.SUCCESS, job_selection=[sittings_job])
