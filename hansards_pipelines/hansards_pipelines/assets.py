@@ -1295,7 +1295,7 @@ def dg_build_arkib_partition_queue(context: AssetExecutionContext):
     payload = build_arkib_partition_queue(
         s3_client=s3_client,
         bucket=S3_PUBLIC_BUCKET,
-        prefix="arkib/",
+        # prefix="arkib/"
         min_year=MIN_YEAR,
         max_year=MAX_YEAR,
         logger=context.log,

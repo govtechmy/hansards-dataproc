@@ -17,7 +17,7 @@ def build_arkib_partition_queue(
     *,
     s3_client,
     bucket: str,
-    prefix: str,
+    prefix: str | None = None,
     min_year: int,
     max_year: int | None,
     logger,
@@ -40,6 +40,8 @@ def build_arkib_partition_queue(
     }
     """
     partitions: set[str] = set()
+
+    prefix = prefix or ""
 
     paginator = s3_client.get_paginator("list_objects_v2")
     for page in paginator.paginate(Bucket=bucket, Prefix=prefix):
