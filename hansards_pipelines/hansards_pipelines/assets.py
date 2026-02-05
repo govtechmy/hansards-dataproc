@@ -52,7 +52,7 @@ from hansards_pipelines.utils.s3_utils import (
     build_path,
 )
 
-from hansards_pipelines.settings import S3_DATAPROC_BUCKET, S3_PUBLIC_BUCKET, DEV_API_URL, PROD_API_URL, FRONTEND_URL, FRONTEND_TOKEN, HANSARD_DB_URL, AWS_REGION, ARKIB_PARTITION_MIN_YEAR, ARKIB_PARTITION_MAX_YEAR
+from hansards_pipelines.settings import S3_DATAPROC_BUCKET, S3_PUBLIC_BUCKET, DEV_API_URL, PROD_API_URL, FRONTEND_URL, FRONTEND_TOKEN, HANSARD_DB_URL, AWS_REGION, ARKIB_PARTITION_MIN_YEAR, ARKIB_PARTITION_MAX_YEAR, READY_QUEUE_KEY, PENDING_QUEUE_KEY
 from hansards_pipelines.scrape_parliamentary_cycle import (
     scrape_arkib_cycles,
     scrape_active_cycles,
@@ -478,6 +478,18 @@ def _dg_parse_hansard_impl(
     """Parse hansard
     Output of this is parsed_pdf folder - plaintext, bold, italics, tables, attendance.txt
     """
+    # only if sittings_job is triggered by sensor trigger_sittings_job_arkib_sensor, delete the READY_QUEUE_KEY
+    if context.run.tags.get("pdf_source") == "arkib":
+
+        try:
+            s3_client.delete_object(
+                Bucket=S3_DATAPROC_BUCKET,
+                Key=READY_QUEUE_KEY,
+            )
+            context.log.info(f"Deleted READY_QUEUE_KEY: {READY_QUEUE_KEY}")
+        except Exception as e:
+            context.log.warning(f"Failed to delete READY_QUEUE_KEY: {e}")
+
     sitting_object = get_sitting_object(context.partition_key)
     context.log.info(f"Parsing {sitting_object['original_filename']}")
 
@@ -1318,8 +1330,6 @@ def dg_move_arkib_pdf_to_s3_root(context: AssetExecutionContext):
     - writes queue/arkib_partitions.ready.json to S3_DATAPROC_BUCKET 
     - deletes queue/arkib_partitions.pending.json from S3_DATAPROC_BUCKET after done processing.
     """
-    PENDING_QUEUE_KEY = "arkib/queue/arkib_partitions.pending.json"
-    READY_QUEUE_KEY = "arkib/queue/arkib_partitions.ready.json"
 
     obj = s3_client.get_object(Bucket=S3_DATAPROC_BUCKET, Key=PENDING_QUEUE_KEY)
     payload = json.loads(obj["Body"].read())
