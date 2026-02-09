@@ -1,3 +1,13 @@
+"""
+This module processes textracted CSV files of parliamentary sittings, extracts table of contents (TOC),
+timestamps, speakers, and speeches, and prepares the data for insertion into a database.
+
+Example usage:
+# python process_textracted.py --prefix dewannegara --start-year 1991 --end-year 1991
+# python process_textracted.py --prefix dewannegara --filename dn_1991-02-18_layout.csv
+# python process_textracted.py --prefix dewannegara --processed-date 1991-02-18 --insert
+
+"""
 import argparse
 import re
 import boto3
@@ -639,11 +649,5 @@ if __name__ == "__main__":
         run_batch(args.prefix, args.start_year, args.end_year)
     else:
         raise ValueError("Must provide --processed-date, --filename, or both --start-year and --end-year.")
-
-
-# example commands
-# python process_textracted.py --prefix dewannegara --start-year 1991 --end-year 1991
-# python process_textracted.py --prefix dewannegara --filename dn_1991-02-18_layout.csv
-# python process_textracted.py --prefix dewannegara --processed-date 1991-02-18 --insert
 
 
