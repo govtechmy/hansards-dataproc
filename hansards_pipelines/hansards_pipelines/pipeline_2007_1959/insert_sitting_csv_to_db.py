@@ -1,7 +1,7 @@
 """
 # example commands
-# python prepare_payload.py --prefix dewannegara --start-year 1991 --end-year 1991
-# python prepare_payload.py --prefix dewannegara --filename dn_1991-02-18.csv
+# python insert_sitting_csv_to_db.py --prefix dewannegara --start-year 1991 --end-year 1991
+# python insert_sitting_csv_to_db.py --prefix dewannegara --filename dn_1991-02-18.csv
 """
 
 import argparse
@@ -20,11 +20,11 @@ import warnings
 from botocore.config import Config
 from pandas.errors import SettingWithCopyWarning
 
-from direct_sitting_ingest import ingest_sitting_to_db
-from utils.text_utils import house_mapper, get_sitting_object, preprocess_malaya
-from author_matching import perform_author_matching
+from ..direct_sitting_ingest import ingest_sitting_to_db
+from ..utils.text_utils import house_mapper, get_sitting_object, preprocess_malaya
+from ..author_matching import perform_author_matching
 
-from settings import S3_TEXTRACT_BUCKET, DEV_API_URL, AWS_REGION, HANSARD_DB_URL
+from ..settings import S3_TEXTRACT_BUCKET, DEV_API_URL, AWS_REGION, HANSARD_DB_URL
 
 # Configure logging
 logging.basicConfig(
