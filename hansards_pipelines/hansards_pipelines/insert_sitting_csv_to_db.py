@@ -1,3 +1,9 @@
+"""
+# example commands
+# python prepare_payload.py --prefix dewannegara --start-year 1991 --end-year 1991
+# python prepare_payload.py --prefix dewannegara --filename dn_1991-02-18.csv
+"""
+
 import argparse
 import re
 import boto3
@@ -352,7 +358,3 @@ if __name__ == "__main__":
     except Exception as e:
         logger.exception("Fatal error: %s", str(e))
         exit(1)
-
-# example commands
-# python prepare_payload.py --prefix dewannegara --start-year 1991 --end-year 1991
-# python prepare_payload.py --prefix dewannegara --filename dn_1991-02-18.csv
