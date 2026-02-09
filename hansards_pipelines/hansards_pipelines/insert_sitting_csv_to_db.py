@@ -22,6 +22,8 @@ from pandas.errors import SettingWithCopyWarning
 
 from direct_sitting_ingest import ingest_sitting_to_db
 from utils.text_utils import house_mapper, get_sitting_object, preprocess_malaya
+from author_matching import perform_author_matching
+
 from settings import S3_TEXTRACT_BUCKET, DEV_API_URL, AWS_REGION, HANSARD_DB_URL
 
 # Configure logging
@@ -106,6 +108,27 @@ def prepare_db_payload(df_speech: pd.DataFrame, prefix: str, date_str: str) -> T
     df_speech = df_speech[df_speech["speech_tokens"].str.len() > 0]
     if df_speech.empty:
         raise ValueError(SKIPPED_NO_SPEECH_ERROR)
+
+    # ---- Author matching ----
+    r = requests.get(f"{DEV_API_URL}/api/author-history", timeout=30)
+    r.raise_for_status()
+    df_author_history = pd.DataFrame(r.json())
+    if not df_author_history.empty:
+        df_author_history["area"] = df_author_history.area_name.str[5:]
+
+    r = requests.get(f"{DEV_API_URL}/api/author", timeout=30)
+    r.raise_for_status()
+    df_author = pd.DataFrame(r.json())
+
+    df_speech = perform_author_matching(
+        df_speech,
+        df_author,
+        df_author_history,
+        logger,
+    )
+
+    # sanity check - proves matching ran
+    assert "author_id" in df_speech.columns
 
     # ---- Token length ----
     df_speech["length"] = df_speech["speech_tokens"].apply(len)
