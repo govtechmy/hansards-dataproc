@@ -1,3 +1,12 @@
+"""
+Batch transfer textracted CSVs from S3_TEXTRACT_BUCKET to S3_PUBLIC_BUCKET.
+Example commands:
+# python transfer_textracted.py --prefix dewannegara --start-year 1991 --end-year 1991
+# python transfer_textracted.py --prefix dewannegara --start-year 1991 --end-year 1991 --overwrite
+# python transfer_textracted.py --prefix dewannegara --filename dn_1959-09-12.csv
+# python transfer_textracted.py --prefix dewannegara --filename dn_1959-09-12.csv --overwrite
+"""
+
 import boto3
 import os
 import re
@@ -5,7 +14,7 @@ import argparse
 import concurrent.futures
 
 from botocore.exceptions import ClientError
-from hansards_pipelines.settings import AWS_REGION, S3_PUBLIC_BUCKET, S3_TEXTRACT_BUCKET
+from ..settings import AWS_REGION, S3_PUBLIC_BUCKET, S3_TEXTRACT_BUCKET
 
 PREFIX_OPTIONS = ["dewannegara", "dewanrakyat", "kamarkhas"]
 MAX_CONCURRENT_JOBS = 5
@@ -109,8 +118,3 @@ if __name__ == "__main__":
         run(args.prefix, (args.start_year, args.end_year), overwrite=args.overwrite)
 
     print("\nDone.")
-
-# python transfer_textracted.py --prefix dewannegara --start-year 1991 --end-year 1991
-# python transfer_textracted.py --prefix dewannegara --start-year 1991 --end-year 1991 --overwrite
-# python transfer_textracted.py --prefix dewannegara --filename dn_1959-09-12.csv
-# python transfer_textracted.py --prefix dewannegara --filename dn_1959-09-12.csv --overwrite
