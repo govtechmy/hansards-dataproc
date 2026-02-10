@@ -329,32 +329,14 @@ def run_batch(prefix: str, start_year: int, end_year: int) -> Dict[str, int]:
     
     return {"success": success, "skipped": skipped, "failed": failed}
 
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         description="Process Hansard speeches from S3 and insert to database"
     )
-    parser.add_argument(
-        "--prefix",
-        required=True,
-        choices=["dewanrakyat", "dewannegara", "kamarkhas"],
-        help="House prefix for the Hansard documents"
-    )
-    parser.add_argument(
-        "--filename",
-        type=str,
-        help="Process a single CSV file (e.g., dr_1987-10-29.csv)"
-    )
-    parser.add_argument(
-        "--start-year",
-        type=int,
-        help="Batch mode start year (inclusive)"
-    )
-    parser.add_argument(
-        "--end-year",
-        type=int,
-        help="Batch mode end year (inclusive)"
-    )
+    parser.add_argument("--prefix", required=True, choices=["dewanrakyat", "dewannegara", "kamarkhas"], help="House prefix for the Hansard documents")
+    parser.add_argument("--filename", type=str, help="Process a single CSV file (e.g., dr_1987-10-29.csv)")
+    parser.add_argument("--start-year", type=int, help="Batch mode start year (inclusive)")
+    parser.add_argument("--end-year", type=int, help="Batch mode end year (inclusive)")
 
     args = parser.parse_args()
 
