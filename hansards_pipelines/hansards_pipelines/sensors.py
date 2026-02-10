@@ -1,33 +1,19 @@
 from dagster import (
-    run_status_sensor,
     sensor,
     DagsterRunStatus,
-    RunStatusSensorContext,
     SensorEvaluationContext,
-    AssetMaterialization,
-    asset_sensor,
     RunRequest,
-    SkipReason,
     RunsFilter,
     SensorResult,
-    AssetKey,
-    define_asset_job,
-    EventRecordsFilter,
-    DagsterEventType,
 )
-import requests
-import datetime
 import json
-from hansards_pipelines.utils.text_utils import get_sitting_object
-from hansards_pipelines.utils.discord_utils import send_discord_message
 from hansards_pipelines.assets import (
     sitting_partitions_def,
-    S3_DATAPROC_BUCKET,
+    sitting_legacy_partitions_def,
     s3_client,
 )
-from hansards_pipelines.jobs import sittings_job, move_arkib_pdfs_job
-from hansards_pipelines.assets import FRONTEND_URL, S3_PUBLIC_BUCKET
-from hansards_pipelines.settings import PENDING_QUEUE_KEY, READY_QUEUE_KEY
+from hansards_pipelines.jobs import sittings_job, move_arkib_pdfs_job, sittings_legacy_job
+from hansards_pipelines.settings import PENDING_QUEUE_KEY, READY_QUEUE_KEY, S3_DATAPROC_BUCKET
 
 
 @sensor(job=sittings_job, minimum_interval_seconds=900)
@@ -160,4 +146,46 @@ def trigger_sittings_job_arkib_sensor(context):
         run_requests=run_requests,
         dynamic_partitions_requests=
         [sitting_partitions_def.build_add_request(partitions)] if partitions else [],
+    )
+
+
+
+@sensor(job=sittings_legacy_job, minimum_interval_seconds=300)
+def trigger_sittings_legacy_job(context):
+    """
+    Trigger sittings_legacy_job for partitions listed in legacy_sittings.ready.json.
+    """
+
+    LEGACY_READY_QUEUE_KEY = "legacy/queue/legacy_partitions.ready.json"
+    try:
+        obj = s3_client.get_object(
+            Bucket=S3_DATAPROC_BUCKET,
+            Key=LEGACY_READY_QUEUE_KEY,
+        )
+    except s3_client.exceptions.ClientError:
+        return SensorResult()
+
+    payload = json.loads(obj["Body"].read())
+    partitions = payload.get("partitions", [])
+
+    if not partitions:
+        return SensorResult()
+
+    run_requests = [
+        RunRequest(
+            partition_key=p,
+            run_key=f"legacy-{p}",
+            tags={
+                "pdf_source": "legacy",
+                "range": "1959_2007",
+            },
+        )
+        for p in partitions
+    ]
+
+    return SensorResult(
+        run_requests=run_requests,
+        dynamic_partitions_requests=[
+            sitting_legacy_partitions_def.build_add_request(partitions)
+        ],
     )
