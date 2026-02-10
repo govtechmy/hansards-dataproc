@@ -33,6 +33,10 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+class SimpleContext:
+    def __init__(self, logger):
+        self.log = logger
+
 # Constants
 ANNOTATION_KEYWORD = "ANNOTATION"
 SKIPPED_NO_SPEECH_ERROR = "SKIPPED_NO_SPEECH"
@@ -90,6 +94,9 @@ def prepare_db_payload(df_speech: pd.DataFrame, prefix: str, date_str: str) -> T
     df_speech["index"] = df_speech.reset_index().index
     df_speech["sitting"] = sitting_obj["proper_date_str"]
 
+    df_speech["date"] = pd.to_datetime(sitting_obj["proper_date_str"])
+    df_speech["house"] = sitting_obj["house_display"]
+
     # ---- Core fields ----
     df_speech["author"] = df_speech["author"].where(pd.notna(df_speech["author"]), None)
     df_speech["timestamp"] = df_speech["timestamp"].fillna("")
@@ -120,15 +127,22 @@ def prepare_db_payload(df_speech: pd.DataFrame, prefix: str, date_str: str) -> T
     r.raise_for_status()
     df_author = pd.DataFrame(r.json())
 
+    context = SimpleContext(logger)
+
     df_speech = perform_author_matching(
         df_speech,
         df_author,
         df_author_history,
-        logger,
+        context,
     )
 
-    # sanity check - proves matching ran
-    assert "author_id" in df_speech.columns
+    # ---- Finalize author_id ----
+    if "author_id_y" in df_speech.columns:
+        df_speech["author_id"] = df_speech["author_id_y"]
+    elif "author_id" not in df_speech.columns:
+        logger.warning("Author matching skipped for legacy CSV | date=%s | prefix=%s", date_str, prefix)
+        df_speech["author_id"] = None
+
 
     # ---- Token length ----
     df_speech["length"] = df_speech["speech_tokens"].apply(len)

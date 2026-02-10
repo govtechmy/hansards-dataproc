@@ -70,6 +70,8 @@ from pathlib import Path
 from hansards_pipelines.arkib.build_arkib_partition_queue import build_arkib_partition_queue
 from hansards_pipelines.arkib.promote_pdfs import promote_arkib_pdfs
 
+from hansards_pipelines.legacy_pipeline.main import process_legacy_pipeline
+
 # main pipeline
 # 1. scrape from the website, push pdf to s3 hansards-new
 # 2. move and rename hansards-new to main raw hansards folder
@@ -97,6 +99,7 @@ s3_client = boto3.client("s3")
 house_names = ["DR", "DN", "KKDR"]
 
 sitting_partitions_def = DynamicPartitionsDefinition(name="house_sittings")
+sitting_legacy_partitions_def = DynamicPartitionsDefinition(name="house_sittings_legacy")
 # https://github.com/dagster-io/dagster/discussions/20508
 
 
@@ -1359,3 +1362,51 @@ def dg_move_arkib_pdf_to_s3_root(context: AssetExecutionContext):
         Bucket=S3_DATAPROC_BUCKET,
         Key=PENDING_QUEUE_KEY,
     )
+
+
+@asset(group_name="legacy_queue")
+def dg_build_legacy_partition_queue(context: AssetExecutionContext):
+    """
+    Build legacy partition queue JSON file (1959-2007) based on PDFs in S3 PUBLIC.
+    Writes legacy/queue/legacy_sittings.pending.json.
+    """
+
+    LEGACY_MIN_YEAR = 2006
+    LEGACY_MAX_YEAR = 2007
+
+    LEGACY_READY_QUEUE_KEY = "legacy/queue/legacy_partitions.ready.json"
+
+    payload = build_arkib_partition_queue(
+        s3_client=s3_client,
+        bucket=S3_PUBLIC_BUCKET,
+        # prefix="legacy/",
+        min_year=LEGACY_MIN_YEAR,
+        max_year=LEGACY_MAX_YEAR,
+        logger=context.log,
+    )
+
+    s3_client.put_object(
+        Bucket=S3_DATAPROC_BUCKET,
+        Key=LEGACY_READY_QUEUE_KEY,
+        Body=json.dumps(payload, indent=2).encode(),
+        ContentType="application/json",
+    )
+
+
+@asset(
+    partitions_def=sitting_legacy_partitions_def,
+    group_name="legacy_sittings",
+)
+def dg_legacy_sitting(context: AssetExecutionContext):
+    """
+    Insert one legacy sitting (1959-2007).
+
+    Logic:
+    - If manual CSV exists → CSV → DB
+    - Else → PDF → layout → parse → DB
+    """
+    partition_key = context.partition_key
+    context.log.info(f"Processing legacy sitting: {partition_key}...")
+
+    process_legacy_pipeline(partition_key=partition_key, s3_client=s3_client)
+

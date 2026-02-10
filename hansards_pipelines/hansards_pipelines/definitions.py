@@ -4,6 +4,7 @@ from .sensors import (
     sittings_sensor,
     trigger_arkib_pdf_move_sensor,
     trigger_sittings_job_arkib_sensor,
+    trigger_sittings_legacy_job
 )
 
 all_assets = load_assets_from_modules([assets])
@@ -32,11 +33,13 @@ defs = Definitions(
         jobs.scrape_arkib_job,
         jobs.author_load_job,
         jobs.move_arkib_pdfs_job,
+        jobs.sittings_legacy_job,
     ],
     sensors=[
         sittings_sensor,
         trigger_arkib_pdf_move_sensor,
-        trigger_sittings_job_arkib_sensor
+        trigger_sittings_job_arkib_sensor,
+        trigger_sittings_legacy_job,
     ],
     schedules=[
         scrape_schedule,
