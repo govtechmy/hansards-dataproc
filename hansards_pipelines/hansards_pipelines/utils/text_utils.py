@@ -920,7 +920,17 @@ def get_sitting_object(pdf_file_key: str, logger=None):
             return None
         
         house = parts[0].strip().upper()  # DR
-        date_str = parts[1].strip()  # 12122024
+        date_str = parts[1].strip()  # 12122024 or "16082017 PINDAAN PSC"
+        
+        # Extract just the 8-digit date if there's extra text
+        if not date_str.isdigit():
+            date_match = re.match(r'^(\d{8})', date_str)
+            if date_match:
+                date_str = date_match.group(1)  # "16082017"
+                log.info("Extracted date '%s' from '%s' in filename '%s'", date_str, parts[1], pdf_file_key)
+            else:
+                log.warning("Could not extract 8-digit date from '%s' in filename '%s', skipped", parts[1], pdf_file_key)
+                return None
     else:
         # No dash - try to extract house code and date
         # Expected formats: DN01051961, DR12122024, KKDR12122024
