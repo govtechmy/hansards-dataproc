@@ -19,6 +19,7 @@ finds into ``arkib/house-name/`` (relative to the working directory).
 Usage (from repository root):
 	python -m hansards_pipelines.scrape_arkib
     python -m hansards_pipelines.scrape_arkib --category dewannegara --limit 10
+    python -m hansards_pipelines.scrape_arkib --category dewannegara --parliament 13
 """
 
 from __future__ import annotations
@@ -287,6 +288,7 @@ def run_scrape(
     *,
     category: str | None = None,
     limit: int | None = None,
+    parliament: int | None = None,
 ):
     session = make_session()
     s3 = boto3.client("s3", region_name=AWS_REGION)
@@ -305,9 +307,15 @@ def run_scrape(
         logging.info("=== START %s ===", name)
 
         if name == "kamarkhas":
-            start_nodes = seed_kamarkhas_start_nodes(session)
+            if parliament:
+                start_nodes = [f"0_{parliament}"]
+            else:
+                start_nodes = seed_kamarkhas_start_nodes(session)
         else:
-            start_nodes = [ROOT_ID]
+            if parliament:
+                start_nodes = [f"0_{parliament}"]
+            else:
+                start_nodes = [ROOT_ID]
 
         for start_id in start_nodes:
             crawl(
@@ -333,11 +341,12 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--category", choices=CATEGORIES.keys())
     parser.add_argument("--limit", type=int)
+    parser.add_argument("--parliament", type=int, help="Filter for specific parliament number (e.g., 13 for P13)")
     args = parser.parse_args()
 
     logging.basicConfig(level=LOG_LEVEL, format="%(asctime)s [%(levelname)s] %(message)s")
 
-    run_scrape(category=args.category, limit=args.limit)
+    run_scrape(category=args.category, limit=args.limit, parliament=args.parliament)
 
     logging.info("Done")
 
