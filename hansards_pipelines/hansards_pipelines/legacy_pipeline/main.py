@@ -74,7 +74,7 @@ def process_legacy_pipeline(*, partition_key: str, s3_client, logger) -> None:
     except ClientError as e:
         # key does not exist
         if e.response["Error"]["Code"] in ("404", "NoSuchKey"):
-            logger.info("Manually cleaned CSV not found -> run pipeline | %s", partition_key)
+            logger.info("Manually cleaned CSV not found -> run process textracted pipeline | %s", partition_key)
         else:
             raise
 

@@ -21,9 +21,11 @@ from difflib import SequenceMatcher
 from ..author_matching import perform_author_matching
 from ..utils.text_utils import house_mapper, preprocess_malaya, get_sitting_object
 import warnings
+import psycopg2
 from botocore import UNSIGNED
 from botocore.config import Config
-from ..settings import S3_TEXTRACT_BUCKET, DEV_API_URL
+from ..settings import S3_TEXTRACT_BUCKET, DEV_API_URL, HANSARD_DB_URL
+from ..direct_sitting_ingest import ingest_sitting_to_db
 
 import boto3
 import botocore
@@ -85,6 +87,12 @@ class SimpleLogger:
         def error(self, msg):
             print(f"[ERROR] {msg}")
     log = Log()
+
+def get_db_connection():
+    """Create and return a database connection."""
+    if not HANSARD_DB_URL:
+        raise ValueError("HANSARD_DB_URL environment variable not set")
+    return psycopg2.connect(HANSARD_DB_URL)
 
 def parse_timestamp(txt):
 
@@ -457,7 +465,7 @@ def prepare_db_payload(df_speech, prefix, date_str):
 
     return df_speech, payload
 
-def insert_to_db(payload):
+def insert_to_db_via_api(payload):
     print("\nSending request to backend...")
     try:
         # log the json payload
@@ -481,6 +489,24 @@ def insert_to_db(payload):
 
     except requests.exceptions.HTTPError as e:
         print(f"❌ Failed to insert: {response.status_code} - {response.text}")
+
+def insert_to_db(payload, logger):
+    logger.info("Inserting directly into database...")
+
+    conn = None
+    try:
+        conn = get_db_connection()
+        ingest_sitting_to_db(payload, conn)
+        conn.commit()
+        logger.info("Inserted to DB")
+    except Exception:
+        if conn:
+            conn.rollback()
+        logger.error("Insert failed")
+        raise
+    finally:
+        if conn:
+            conn.close()
 
 
 def run_batch(prefix, start_year, end_year):
@@ -584,9 +610,9 @@ def process_and_insert(prefix, key, date_str, logger):
     df_speech, payload = prepare_db_payload(df_speech, prefix, date_str)
 
     print("\nInserting payload to DB ...")
-    insert_to_db(payload)
+    insert_to_db(payload, logger)
 
-def process_from_processed_csv(prefix, date_str, insert=False):
+def process_from_processed_csv(prefix, date_str, insert=False, logger=None):
     s3 = session.client("s3")
     pdf_key = f"{house_mapper.to_code(prefix).upper()}-{datetime.strptime(date_str, '%Y-%m-%d').strftime('%d%m%Y')}"
     sitting_obj = get_sitting_object(pdf_key)
@@ -603,7 +629,7 @@ def process_from_processed_csv(prefix, date_str, insert=False):
     df_speech, payload = prepare_db_payload(df_speech, prefix, date_str)
 
     if insert:
-        insert_to_db(payload)
+        insert_to_db(payload, logger)
 
     return df_speech
 
