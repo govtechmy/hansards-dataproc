@@ -543,7 +543,8 @@ def run_batch(prefix, start_year, end_year):
         for f in failed_files:
             print(f" - {f}")
 
-def process_and_insert(prefix, key, date_str):
+def process_and_insert(prefix, key, date_str, logger):
+
     s3 = session.client("s3")
     print(f"\n==== PROCESSING: {key}")
     obj = s3.get_object(Bucket=S3_TEXTRACT_BUCKET, Key=key)

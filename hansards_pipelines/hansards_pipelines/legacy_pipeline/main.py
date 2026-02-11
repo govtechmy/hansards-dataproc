@@ -6,15 +6,6 @@ from hansards_pipelines.settings import S3_TEXTRACT_BUCKET
 from datetime import datetime
 from botocore.exceptions import ClientError
 
-import logging 
-
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s'
-)
-logger = logging.getLogger(__name__)
-
-
 def partition_key_to_insert_args(partition_key: str):
     """
     Convert partition key to arguments for insertion. 
@@ -46,7 +37,7 @@ def partition_key_to_insert_args(partition_key: str):
 
     return prefix, s3_key, date_str
 
-def run_process_textracted(prefix: str, date_str: str) -> None:
+def run_process_textracted(prefix: str, date_str: str, logger) -> None:
     """
     Entry point for Dagster legacy job.
     """
@@ -54,10 +45,10 @@ def run_process_textracted(prefix: str, date_str: str) -> None:
     filename = f"{house_code}_{date_str}_layout.csv"
     key = f"{prefix}/{filename}"
 
-    pipeline_process_and_insert(prefix, key, date_str)
+    pipeline_process_and_insert(prefix, key, date_str, logger=logger)
 
 
-def process_legacy_pipeline(*, partition_key: str, s3_client) -> None:
+def process_legacy_pipeline(*, partition_key: str, s3_client, logger) -> None:
     """
     Process a single partition key for S3 and insert the corresponding data into the database.
 
@@ -77,7 +68,7 @@ def process_legacy_pipeline(*, partition_key: str, s3_client) -> None:
 
         logger.info("Manually cleaned CSV exists -> direct csv insert into DB | %s", manual_key)
 
-        csv_process_and_insert(prefix=prefix, key=manual_key, date_str=date_str)
+        csv_process_and_insert(prefix=prefix, key=manual_key, date_str=date_str, logger=logger)
         return
 
     except ClientError as e:
@@ -87,5 +78,5 @@ def process_legacy_pipeline(*, partition_key: str, s3_client) -> None:
         else:
             raise
 
-    run_process_textracted(prefix=prefix, date_str=date_str)
+    run_process_textracted(prefix=prefix, date_str=date_str, logger=logger)
 

@@ -26,11 +26,6 @@ from ..author_matching import perform_author_matching
 
 from ..settings import S3_TEXTRACT_BUCKET, DEV_API_URL, AWS_REGION, HANSARD_DB_URL
 
-# Configure logging
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s'
-)
 logger = logging.getLogger(__name__)
 
 class SimpleContext:
@@ -65,7 +60,7 @@ def get_db_connection():
         raise ValueError("HANSARD_DB_URL environment variable not set")
     return psycopg2.connect(HANSARD_DB_URL)
 
-def prepare_db_payload(df_speech: pd.DataFrame, prefix: str, date_str: str) -> Tuple[pd.DataFrame, Dict[str, Any]]:
+def prepare_db_payload(df_speech: pd.DataFrame, prefix: str, date_str: str, logger) -> Tuple[pd.DataFrame, Dict[str, Any]]:
     """
     Prepares the payload for database insertion from the speech DataFrame.
     
@@ -235,7 +230,7 @@ def prepare_db_payload(df_speech: pd.DataFrame, prefix: str, date_str: str) -> T
 #         logger.error("Request error: %s", str(e))
 #         return False
 
-def insert_to_db(payload):
+def insert_to_db(payload, logger):
     logger.info("Inserting directly into database...")
 
     conn = None
@@ -256,7 +251,7 @@ def insert_to_db(payload):
         if conn:
             conn.close()
 
-def process_and_insert(prefix: str, key: str, date_str: str) -> bool:
+def process_and_insert(prefix: str, key: str, date_str: str, logger) -> bool:
     """
     Process a single CSV file from S3 and insert to database.
     
@@ -274,11 +269,12 @@ def process_and_insert(prefix: str, key: str, date_str: str) -> bool:
     try:
         obj = s3.get_object(Bucket=S3_TEXTRACT_BUCKET, Key=key)
         df_speech = pd.read_csv(BytesIO(obj["Body"].read()))
-        df_speech, payload = prepare_db_payload(df_speech, prefix, date_str)
+        df_speech, payload = prepare_db_payload(df_speech, prefix, date_str, logger)
         
-        return insert_to_db(payload)
+        return insert_to_db(payload, logger)
+
     except Exception as e:
-        logger.error("Error processing %s: %s", key, str(e))
+        logger.error("Error processing %s", key)
         raise
 
 
@@ -320,7 +316,7 @@ def run_batch(prefix: str, start_year: int, end_year: int) -> Dict[str, int]:
 
     for key, date_str in all_files:
         try:
-            process_and_insert(prefix, key, date_str)
+            process_and_insert(prefix, key, date_str, logger)
             success += 1
         except ValueError as ve:
             if str(ve) == SKIPPED_NO_SPEECH_ERROR:
@@ -362,7 +358,7 @@ if __name__ == "__main__":
 
             date_str = match.group(1)
             key = f"{args.prefix}/{args.filename}"
-            success = process_and_insert(args.prefix, key, date_str)
+            success = process_and_insert(args.prefix, key, date_str, logger)
             if not success:
                 logger.error("Processing failed")
                 exit(1)

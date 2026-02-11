@@ -1409,7 +1409,7 @@ def dg_legacy_sitting(context: AssetExecutionContext):
     partition_key = context.partition_key
     context.log.info(f"Processing legacy sitting: {partition_key}...")
 
-    process_legacy_pipeline(partition_key=partition_key, s3_client=s3_client)
+    process_legacy_pipeline(partition_key=partition_key, s3_client=s3_client, logger=context.log)
 
 
 @asset

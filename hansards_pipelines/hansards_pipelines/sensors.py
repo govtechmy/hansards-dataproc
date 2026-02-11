@@ -196,6 +196,12 @@ def trigger_sittings_legacy_job(context):
     minimum_interval_seconds=300,
 )
 def trigger_register_sitting_legacy_partition_sensor(context):
+    """
+    This sensor checks for the presence of a legacy_partitions.ready.json file in S3.
+    If found, it reads the partitions listed in the file and registers them
+    as dynamic partitions for the 'sitting_legacy_partitions_def' partitioned asset.
+    It also triggers runs of the 'register_sitting_legacy_partition_job' for each partition.
+    """
 
     LEGACY_READY_QUEUE_KEY = "legacy/queue/legacy_partitions.ready.json"
 
