@@ -1368,11 +1368,11 @@ def dg_move_arkib_pdf_to_s3_root(context: AssetExecutionContext):
 def dg_build_legacy_partition_queue(context: AssetExecutionContext):
     """
     Build legacy partition queue JSON file (1959-2007) based on PDFs in S3 PUBLIC.
-    Writes legacy/queue/legacy_sittings.pending.json.
+    Writes legacy/queue/legacy_partitions.ready.json
     """
 
-    LEGACY_MIN_YEAR = 2006
-    LEGACY_MAX_YEAR = 2007
+    LEGACY_MIN_YEAR = ARKIB_PARTITION_MIN_YEAR
+    LEGACY_MAX_YEAR = ARKIB_PARTITION_MAX_YEAR
 
     LEGACY_READY_QUEUE_KEY = "legacy/queue/legacy_partitions.ready.json"
 
@@ -1402,11 +1402,20 @@ def dg_legacy_sitting(context: AssetExecutionContext):
     Insert one legacy sitting (1959-2007).
 
     Logic:
-    - If manual CSV exists → CSV → DB
-    - Else → PDF → layout → parse → DB
+    Checks if manually edited CSV exists in S3 DATAPROC.
+    - If exists, CSV -> insert to DB
+    - Else, PDF -> parse -> tabulate as CSV -> insert payload to DB
     """
     partition_key = context.partition_key
     context.log.info(f"Processing legacy sitting: {partition_key}...")
 
     process_legacy_pipeline(partition_key=partition_key, s3_client=s3_client)
 
+
+@asset
+def noop_partition_registration():
+    """
+    No-op asset for partition registration. Intentionally does nothing.
+    This is manually triggered to create the partitions.
+    """
+    return None

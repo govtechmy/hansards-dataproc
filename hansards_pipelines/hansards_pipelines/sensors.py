@@ -12,7 +12,7 @@ from hansards_pipelines.assets import (
     sitting_legacy_partitions_def,
     s3_client,
 )
-from hansards_pipelines.jobs import sittings_job, move_arkib_pdfs_job, sittings_legacy_job
+from hansards_pipelines.jobs import sittings_job, move_arkib_pdfs_job, sittings_legacy_job, register_sitting_legacy_partition_job
 from hansards_pipelines.settings import PENDING_QUEUE_KEY, READY_QUEUE_KEY, S3_DATAPROC_BUCKET
 
 
@@ -187,5 +187,38 @@ def trigger_sittings_legacy_job(context):
         run_requests=run_requests,
         dynamic_partitions_requests=[
             sitting_legacy_partitions_def.build_add_request(partitions)
+        ],
+    )
+
+
+@sensor(
+    job=register_sitting_legacy_partition_job,
+    minimum_interval_seconds=300,
+)
+def trigger_register_sitting_legacy_partition_sensor(context):
+
+    LEGACY_READY_QUEUE_KEY = "legacy/queue/legacy_partitions.ready.json"
+
+    try:
+        obj = s3_client.get_object(
+            Bucket=S3_DATAPROC_BUCKET,
+            Key=LEGACY_READY_QUEUE_KEY,
+        )
+    except s3_client.exceptions.ClientError:
+        return SensorResult()
+
+    payload = json.loads(obj["Body"].read())
+    partitions = payload.get("partitions", [])
+
+    if not partitions:
+        return SensorResult()
+
+    return SensorResult(
+        dynamic_partitions_requests=[
+            sitting_legacy_partitions_def.build_add_request(partitions)
+        ],
+        run_requests=[
+            RunRequest(run_key=f"register-{p}", partition_key=None)
+            for p in partitions
         ],
     )
