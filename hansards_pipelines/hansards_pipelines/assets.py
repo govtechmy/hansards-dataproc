@@ -52,7 +52,7 @@ from hansards_pipelines.utils.s3_utils import (
     build_path,
 )
 
-from hansards_pipelines.settings import S3_DATAPROC_BUCKET, S3_PUBLIC_BUCKET, DEV_API_URL, PROD_API_URL, FRONTEND_URL, FRONTEND_TOKEN, HANSARD_DB_URL, AWS_REGION, ARKIB_PARTITION_MIN_YEAR, ARKIB_PARTITION_MAX_YEAR, READY_QUEUE_KEY, PENDING_QUEUE_KEY
+from hansards_pipelines.settings import S3_DATAPROC_BUCKET, S3_PUBLIC_BUCKET, DEV_API_URL, PROD_API_URL, FRONTEND_URL, FRONTEND_TOKEN, HANSARD_DB_URL, AWS_REGION, ARKIB_PARTITION_MIN_YEAR, ARKIB_PARTITION_MAX_YEAR, READY_QUEUE_KEY, PENDING_QUEUE_KEY, LEGACY_PARTITION_MIN_YEAR, LEGACY_PARTITION_MAX_YEAR, LEGACY_READY_QUEUE_KEY
 from hansards_pipelines.scrape_parliamentary_cycle import (
     scrape_arkib_cycles,
     scrape_active_cycles,
@@ -1371,10 +1371,8 @@ def dg_build_legacy_partition_queue(context: AssetExecutionContext):
     Writes legacy/queue/legacy_partitions.ready.json
     """
 
-    LEGACY_MIN_YEAR = ARKIB_PARTITION_MIN_YEAR
-    LEGACY_MAX_YEAR = ARKIB_PARTITION_MAX_YEAR
-
-    LEGACY_READY_QUEUE_KEY = "legacy/queue/legacy_partitions.ready.json"
+    LEGACY_MIN_YEAR = LEGACY_PARTITION_MIN_YEAR
+    LEGACY_MAX_YEAR = LEGACY_PARTITION_MAX_YEAR
 
     payload = build_arkib_partition_queue(
         s3_client=s3_client,

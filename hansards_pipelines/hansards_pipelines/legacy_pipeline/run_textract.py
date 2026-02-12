@@ -104,10 +104,10 @@ def process_pdf(pdf_key):
             tmp_path = tmp.name
 
         s3.upload_file(tmp_path, S3_TEXTRACT_BUCKET, output_key)
-        print(f" ✅ Uploaded {output_key} to s3://{S3_TEXTRACT_BUCKET}/{output_key}")
+        print(f" Uploaded {output_key} to s3://{S3_TEXTRACT_BUCKET}/{output_key}")
 
     except Exception as e:
-        print(f"  ❌ Failed {pdf_key}: {e}")
+        print(f"Failed {pdf_key}: {e}")
     finally:
         if 'tmp_path' in locals() and os.path.exists(tmp_path):
             os.remove(tmp_path)
