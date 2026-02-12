@@ -189,11 +189,12 @@ def format_table(text, bold, italics, table, hansard_date, house, is_pipeline=Fa
             f.write(f"Table text similarity score is: {table_text_similarity_score}\n")
             f.write(f"Table text is:\n___\n{table_text}\n___\n\n")
             f.write(f"Candidate text is:\n___\n{candidate_text}\n___\n\n")
-    for key in table_alphanumeric_count.keys():
-        if table_alphanumeric_count[key] != candidate_text_alphanumeric_count[key]:
+    all_keys = set(table_alphanumeric_count.keys()) | set(candidate_text_alphanumeric_count.keys())
+    for key in all_keys:
+        if table_alphanumeric_count.get(key, 0) != candidate_text_alphanumeric_count.get(key, 0):
             print(
-                f"Alphanumeric counts do not match: {table_alphanumeric_count[key]} vs "
-                f"{candidate_text_alphanumeric_count[key]} for key {key}"
+                f"Alphanumeric counts do not match: {table_alphanumeric_count.get(key, 0)} vs "
+                f"{candidate_text_alphanumeric_count.get(key, 0)} for key {key}"
             )
 
     # replace the entire block between start_idx and end_idx with the table
