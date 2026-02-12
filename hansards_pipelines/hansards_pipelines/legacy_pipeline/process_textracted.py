@@ -94,6 +94,9 @@ def get_db_connection():
         raise ValueError("HANSARD_DB_URL environment variable not set")
     return psycopg2.connect(HANSARD_DB_URL)
 
+def build_textracted_key(prefix: str, filename: str) -> str:
+    return f"textracted/{prefix}/{filename}"
+
 def parse_timestamp(txt):
 
     if txt.startswith(("DN.", "DR.")):  # DN.28.11.2002
@@ -483,12 +486,12 @@ def insert_to_db_via_api(payload):
                 print(f"⚠️ Data integrity warning: {response_data['warning']}")
             elif "speech_errors" in response_data:
                 print(f"⚠️ Speech errors: {response_data['speech_errors']}")
-            print("✅ Inserted to DB")
+            print("Inserted to DB")
         else:
             response.raise_for_status()
 
     except requests.exceptions.HTTPError as e:
-        print(f"❌ Failed to insert: {response.status_code} - {response.text}")
+        print(f"Failed to insert: {response.status_code} - {response.text}")
 
 def insert_to_db(payload, logger):
     logger.info("Inserting directly into database...")
@@ -572,7 +575,7 @@ def run_batch(prefix, start_year, end_year):
 def process_and_insert(prefix, key, date_str, logger):
 
     s3 = session.client("s3")
-    print(f"\n==== PROCESSING: {key}")
+    logger.info(f"\nProcessing: {key}")
     obj = s3.get_object(Bucket=S3_TEXTRACT_BUCKET, Key=key)
 
     df = pd.read_csv(BytesIO(obj["Body"].read()))
@@ -602,9 +605,9 @@ def process_and_insert(prefix, key, date_str, logger):
     # store raw processed file
     pdf_key = f"{house_mapper.to_code(prefix).upper()}-{datetime.strptime(date_str, '%Y-%m-%d').strftime('%d%m%Y')}"
     sitting_obj = get_sitting_object(pdf_key)
-    s3_key = f"post_textracted{prefix}/{sitting_obj['renamed_filename']}.csv"
+    s3_key = f"post_textracted/{prefix}/{sitting_obj['renamed_filename']}.csv"
     s3.put_object(Bucket=S3_TEXTRACT_BUCKET, Key=s3_key, Body=buffer.getvalue())
-    print(f"\n✅ Saved to {s3_key}")
+    print(f"\nSaved to {s3_key}")
 
     # final processed file with matched author name (no need to store in S3. its stored in DB)
     df_speech, payload = prepare_db_payload(df_speech, prefix, date_str)
@@ -616,8 +619,8 @@ def process_from_processed_csv(prefix, date_str, insert=False, logger=None):
     s3 = session.client("s3")
     pdf_key = f"{house_mapper.to_code(prefix).upper()}-{datetime.strptime(date_str, '%Y-%m-%d').strftime('%d%m%Y')}"
     sitting_obj = get_sitting_object(pdf_key)
-    key = f"post_textracted{prefix}/{sitting_obj['renamed_filename']}.csv"
-    print(f"\n📄 Loading processed speech CSV from: {key}")
+    key = f"post_textracted/{prefix}/{sitting_obj['renamed_filename']}.csv"
+    print(f"\nLoading processed speech CSV from: {key}")
 
     obj = s3.get_object(Bucket=S3_TEXTRACT_BUCKET, Key=key)
     df_speech = pd.read_csv(BytesIO(obj["Body"].read()))
@@ -670,7 +673,7 @@ if __name__ == "__main__":
         if not match:
             raise ValueError("Could not extract date from filename. Expected format like 'dn_1991-02-18_layout.csv'")
         date_str = match.group(1)
-        key = f"{args.prefix}/{args.filename}"
+        key = build_textracted_key(args.prefix, args.filename)
         process_and_insert(args.prefix, key, date_str)
     elif args.start_year and args.end_year:
         run_batch(args.prefix, args.start_year, args.end_year)

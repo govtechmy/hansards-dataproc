@@ -210,7 +210,7 @@ def prepare_db_payload(df_speech: pd.DataFrame, prefix: str, date_str: str, logg
 #                 logger.warning("Data integrity warning: %s", response_data['warning'])
 #             elif "speech_errors" in response_data:
 #                 logger.warning("Speech errors: %s", response_data['speech_errors'])
-#             logger.info("✅ Inserted to DB")
+#             logger.info("Inserted to DB")
 #             return True
 #         else:
 #             response.raise_for_status()
@@ -238,7 +238,7 @@ def insert_to_db(payload, logger):
         conn = get_db_connection()
         ingest_sitting_to_db(payload, conn)
         conn.commit()
-        logger.info("✅ Inserted to DB")
+        logger.info("Inserted to DB")
         return True
 
     except Exception as e:

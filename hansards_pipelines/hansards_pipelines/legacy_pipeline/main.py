@@ -1,7 +1,7 @@
 import boto3
 from hansards_pipelines.utils.text_utils import house_mapper
 from hansards_pipelines.legacy_pipeline.insert_sitting_csv_to_db import process_and_insert as csv_process_and_insert
-from hansards_pipelines.legacy_pipeline.process_textracted import process_and_insert as pipeline_process_and_insert
+from hansards_pipelines.legacy_pipeline.process_textracted import build_textracted_key, process_and_insert as pipeline_process_and_insert
 from hansards_pipelines.settings import S3_TEXTRACT_BUCKET
 from datetime import datetime
 from botocore.exceptions import ClientError
@@ -43,7 +43,8 @@ def run_process_textracted(prefix: str, date_str: str, logger) -> None:
     """
     house_code = house_mapper.to_code(prefix).lower()
     filename = f"{house_code}_{date_str}_layout.csv"
-    key = f"{prefix}/{filename}"
+    key = build_textracted_key(prefix, filename)
+
 
     pipeline_process_and_insert(prefix, key, date_str, logger=logger)
 
@@ -66,7 +67,7 @@ def process_legacy_pipeline(*, partition_key: str, s3_client, logger) -> None:
     try:
         s3_client.head_object(Bucket=S3_TEXTRACT_BUCKET, Key=manual_key)
 
-        logger.info("Manually cleaned CSV exists -> direct csv insert into DB | %s", manual_key)
+        logger.info("Manually cleaned CSV found -> direct csv insert into DB | %s", manual_key)
 
         csv_process_and_insert(prefix=prefix, key=manual_key, date_str=date_str, logger=logger)
         return
