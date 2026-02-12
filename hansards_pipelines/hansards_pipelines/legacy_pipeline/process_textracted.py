@@ -1,3 +1,13 @@
+"""
+This module processes textracted CSV files of parliamentary sittings, extracts table of contents (TOC),
+timestamps, speakers, and speeches, and prepares the data for insertion into a database.
+
+Example usage:
+# python process_textracted.py --prefix dewannegara --start-year 1991 --end-year 1991
+# python process_textracted.py --prefix dewannegara --filename dn_1991-02-18_layout.csv
+# python process_textracted.py --prefix dewannegara --processed-date 1991-02-18 --insert
+
+"""
 import argparse
 import re
 import boto3
@@ -8,12 +18,14 @@ import os
 from io import BytesIO
 from datetime import datetime, time
 from difflib import SequenceMatcher
-from author_matching import perform_author_matching
-from utils.text_utils import house_mapper, preprocess_malaya, get_sitting_object
+from ..author_matching import perform_author_matching
+from ..utils.text_utils import house_mapper, preprocess_malaya, get_sitting_object
 import warnings
+import psycopg2
 from botocore import UNSIGNED
 from botocore.config import Config
-from hansards_pipelines.settings import S3_TEXTRACT_BUCKET, DEV_API_URL
+from ..settings import S3_TEXTRACT_BUCKET, DEV_API_URL, HANSARD_DB_URL
+from ..direct_sitting_ingest import ingest_sitting_to_db
 
 import boto3
 import botocore
@@ -75,6 +87,15 @@ class SimpleLogger:
         def error(self, msg):
             print(f"[ERROR] {msg}")
     log = Log()
+
+def get_db_connection():
+    """Create and return a database connection."""
+    if not HANSARD_DB_URL:
+        raise ValueError("HANSARD_DB_URL environment variable not set")
+    return psycopg2.connect(HANSARD_DB_URL)
+
+def build_textracted_key(prefix: str, filename: str) -> str:
+    return f"textracted/{prefix}/{filename}"
 
 def parse_timestamp(txt):
 
@@ -447,7 +468,7 @@ def prepare_db_payload(df_speech, prefix, date_str):
 
     return df_speech, payload
 
-def insert_to_db(payload):
+def insert_to_db_via_api(payload):
     print("\nSending request to backend...")
     try:
         # log the json payload
@@ -465,12 +486,30 @@ def insert_to_db(payload):
                 print(f"⚠️ Data integrity warning: {response_data['warning']}")
             elif "speech_errors" in response_data:
                 print(f"⚠️ Speech errors: {response_data['speech_errors']}")
-            print("✅ Inserted to DB")
+            print("Inserted to DB")
         else:
             response.raise_for_status()
 
     except requests.exceptions.HTTPError as e:
-        print(f"❌ Failed to insert: {response.status_code} - {response.text}")
+        print(f"Failed to insert: {response.status_code} - {response.text}")
+
+def insert_to_db(payload, logger):
+    logger.info("Inserting directly into database...")
+
+    conn = None
+    try:
+        conn = get_db_connection()
+        ingest_sitting_to_db(payload, conn)
+        conn.commit()
+        logger.info("Inserted to DB")
+    except Exception:
+        if conn:
+            conn.rollback()
+        logger.error("Insert failed")
+        raise
+    finally:
+        if conn:
+            conn.close()
 
 
 def run_batch(prefix, start_year, end_year):
@@ -533,9 +572,10 @@ def run_batch(prefix, start_year, end_year):
         for f in failed_files:
             print(f" - {f}")
 
-def process_and_insert(prefix, key, date_str):
+def process_and_insert(prefix, key, date_str, logger):
+
     s3 = session.client("s3")
-    print(f"\n==== PROCESSING: {key}")
+    logger.info(f"\nProcessing: {key}")
     obj = s3.get_object(Bucket=S3_TEXTRACT_BUCKET, Key=key)
 
     df = pd.read_csv(BytesIO(obj["Body"].read()))
@@ -565,22 +605,22 @@ def process_and_insert(prefix, key, date_str):
     # store raw processed file
     pdf_key = f"{house_mapper.to_code(prefix).upper()}-{datetime.strptime(date_str, '%Y-%m-%d').strftime('%d%m%Y')}"
     sitting_obj = get_sitting_object(pdf_key)
-    s3_key = f"processed/{prefix}/{sitting_obj['renamed_filename']}.csv"
+    s3_key = f"post_textracted/{prefix}/{sitting_obj['renamed_filename']}.csv"
     s3.put_object(Bucket=S3_TEXTRACT_BUCKET, Key=s3_key, Body=buffer.getvalue())
-    print(f"\n✅ Saved to {s3_key}")
+    print(f"\nSaved to {s3_key}")
 
     # final processed file with matched author name (no need to store in S3. its stored in DB)
     df_speech, payload = prepare_db_payload(df_speech, prefix, date_str)
 
     print("\nInserting payload to DB ...")
-    insert_to_db(payload)
+    insert_to_db(payload, logger)
 
-def process_from_processed_csv(prefix, date_str, insert=False):
+def process_from_processed_csv(prefix, date_str, insert=False, logger=None):
     s3 = session.client("s3")
     pdf_key = f"{house_mapper.to_code(prefix).upper()}-{datetime.strptime(date_str, '%Y-%m-%d').strftime('%d%m%Y')}"
     sitting_obj = get_sitting_object(pdf_key)
-    key = f"processed/{prefix}/{sitting_obj['renamed_filename']}.csv"
-    print(f"\n📄 Loading processed speech CSV from: {key}")
+    key = f"post_textracted/{prefix}/{sitting_obj['renamed_filename']}.csv"
+    print(f"\nLoading processed speech CSV from: {key}")
 
     obj = s3.get_object(Bucket=S3_TEXTRACT_BUCKET, Key=key)
     df_speech = pd.read_csv(BytesIO(obj["Body"].read()))
@@ -592,7 +632,7 @@ def process_from_processed_csv(prefix, date_str, insert=False):
     df_speech, payload = prepare_db_payload(df_speech, prefix, date_str)
 
     if insert:
-        insert_to_db(payload)
+        insert_to_db(payload, logger)
 
     return df_speech
 
@@ -633,17 +673,11 @@ if __name__ == "__main__":
         if not match:
             raise ValueError("Could not extract date from filename. Expected format like 'dn_1991-02-18_layout.csv'")
         date_str = match.group(1)
-        key = f"{args.prefix}/{args.filename}"
+        key = build_textracted_key(args.prefix, args.filename)
         process_and_insert(args.prefix, key, date_str)
     elif args.start_year and args.end_year:
         run_batch(args.prefix, args.start_year, args.end_year)
     else:
         raise ValueError("Must provide --processed-date, --filename, or both --start-year and --end-year.")
-
-
-# example commands
-# python process_textracted.py --prefix dewannegara --start-year 1991 --end-year 1991
-# python process_textracted.py --prefix dewannegara --filename dn_1991-02-18_layout.csv
-# python process_textracted.py --prefix dewannegara --processed-date 1991-02-18 --insert
 
 

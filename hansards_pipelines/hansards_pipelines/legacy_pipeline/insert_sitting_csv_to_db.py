@@ -1,3 +1,9 @@
+"""
+# example commands
+# python insert_sitting_csv_to_db.py --prefix dewannegara --start-year 1991 --end-year 1991
+# python insert_sitting_csv_to_db.py --prefix dewannegara --filename dn_1991-02-18.csv
+"""
+
 import argparse
 import re
 import boto3
@@ -14,16 +20,17 @@ import warnings
 from botocore.config import Config
 from pandas.errors import SettingWithCopyWarning
 
-from direct_sitting_ingest import ingest_sitting_to_db
-from utils.text_utils import house_mapper, get_sitting_object, preprocess_malaya
-from settings import S3_TEXTRACT_BUCKET, DEV_API_URL, AWS_REGION, HANSARD_DB_URL
+from ..direct_sitting_ingest import ingest_sitting_to_db
+from ..utils.text_utils import house_mapper, get_sitting_object, preprocess_malaya
+from ..author_matching import perform_author_matching
 
-# Configure logging
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s'
-)
+from ..settings import S3_TEXTRACT_BUCKET, DEV_API_URL, AWS_REGION, HANSARD_DB_URL
+
 logger = logging.getLogger(__name__)
+
+class SimpleContext:
+    def __init__(self, logger):
+        self.log = logger
 
 # Constants
 ANNOTATION_KEYWORD = "ANNOTATION"
@@ -53,7 +60,7 @@ def get_db_connection():
         raise ValueError("HANSARD_DB_URL environment variable not set")
     return psycopg2.connect(HANSARD_DB_URL)
 
-def prepare_db_payload(df_speech: pd.DataFrame, prefix: str, date_str: str) -> Tuple[pd.DataFrame, Dict[str, Any]]:
+def prepare_db_payload(df_speech: pd.DataFrame, prefix: str, date_str: str, logger) -> Tuple[pd.DataFrame, Dict[str, Any]]:
     """
     Prepares the payload for database insertion from the speech DataFrame.
     
@@ -82,6 +89,9 @@ def prepare_db_payload(df_speech: pd.DataFrame, prefix: str, date_str: str) -> T
     df_speech["index"] = df_speech.reset_index().index
     df_speech["sitting"] = sitting_obj["proper_date_str"]
 
+    df_speech["date"] = pd.to_datetime(sitting_obj["proper_date_str"])
+    df_speech["house"] = sitting_obj["house_display"]
+
     # ---- Core fields ----
     df_speech["author"] = df_speech["author"].where(pd.notna(df_speech["author"]), None)
     df_speech["timestamp"] = df_speech["timestamp"].fillna("")
@@ -100,6 +110,34 @@ def prepare_db_payload(df_speech: pd.DataFrame, prefix: str, date_str: str) -> T
     df_speech = df_speech[df_speech["speech_tokens"].str.len() > 0]
     if df_speech.empty:
         raise ValueError(SKIPPED_NO_SPEECH_ERROR)
+
+    # ---- Author matching ----
+    r = requests.get(f"{DEV_API_URL}/api/author-history", timeout=30)
+    r.raise_for_status()
+    df_author_history = pd.DataFrame(r.json())
+    if not df_author_history.empty:
+        df_author_history["area"] = df_author_history.area_name.str[5:]
+
+    r = requests.get(f"{DEV_API_URL}/api/author", timeout=30)
+    r.raise_for_status()
+    df_author = pd.DataFrame(r.json())
+
+    context = SimpleContext(logger)
+
+    df_speech = perform_author_matching(
+        df_speech,
+        df_author,
+        df_author_history,
+        context,
+    )
+
+    # ---- Finalize author_id ----
+    if "author_id_y" in df_speech.columns:
+        df_speech["author_id"] = df_speech["author_id_y"]
+    elif "author_id" not in df_speech.columns:
+        logger.warning("Author matching skipped for legacy CSV | date=%s | prefix=%s", date_str, prefix)
+        df_speech["author_id"] = None
+
 
     # ---- Token length ----
     df_speech["length"] = df_speech["speech_tokens"].apply(len)
@@ -172,7 +210,7 @@ def prepare_db_payload(df_speech: pd.DataFrame, prefix: str, date_str: str) -> T
 #                 logger.warning("Data integrity warning: %s", response_data['warning'])
 #             elif "speech_errors" in response_data:
 #                 logger.warning("Speech errors: %s", response_data['speech_errors'])
-#             logger.info("✅ Inserted to DB")
+#             logger.info("Inserted to DB")
 #             return True
 #         else:
 #             response.raise_for_status()
@@ -192,7 +230,7 @@ def prepare_db_payload(df_speech: pd.DataFrame, prefix: str, date_str: str) -> T
 #         logger.error("Request error: %s", str(e))
 #         return False
 
-def insert_to_db(payload):
+def insert_to_db(payload, logger):
     logger.info("Inserting directly into database...")
 
     conn = None
@@ -200,7 +238,7 @@ def insert_to_db(payload):
         conn = get_db_connection()
         ingest_sitting_to_db(payload, conn)
         conn.commit()
-        logger.info("✅ Inserted to DB")
+        logger.info("Inserted to DB")
         return True
 
     except Exception as e:
@@ -213,7 +251,7 @@ def insert_to_db(payload):
         if conn:
             conn.close()
 
-def process_and_insert(prefix: str, key: str, date_str: str) -> bool:
+def process_and_insert(prefix: str, key: str, date_str: str, logger) -> bool:
     """
     Process a single CSV file from S3 and insert to database.
     
@@ -231,11 +269,12 @@ def process_and_insert(prefix: str, key: str, date_str: str) -> bool:
     try:
         obj = s3.get_object(Bucket=S3_TEXTRACT_BUCKET, Key=key)
         df_speech = pd.read_csv(BytesIO(obj["Body"].read()))
-        df_speech, payload = prepare_db_payload(df_speech, prefix, date_str)
+        df_speech, payload = prepare_db_payload(df_speech, prefix, date_str, logger)
         
-        return insert_to_db(payload)
+        return insert_to_db(payload, logger)
+
     except Exception as e:
-        logger.error("Error processing %s: %s", key, str(e))
+        logger.error("Error processing %s", key)
         raise
 
 
@@ -277,7 +316,7 @@ def run_batch(prefix: str, start_year: int, end_year: int) -> Dict[str, int]:
 
     for key, date_str in all_files:
         try:
-            process_and_insert(prefix, key, date_str)
+            process_and_insert(prefix, key, date_str, logger)
             success += 1
         except ValueError as ve:
             if str(ve) == SKIPPED_NO_SPEECH_ERROR:
@@ -300,32 +339,14 @@ def run_batch(prefix: str, start_year: int, end_year: int) -> Dict[str, int]:
     
     return {"success": success, "skipped": skipped, "failed": failed}
 
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         description="Process Hansard speeches from S3 and insert to database"
     )
-    parser.add_argument(
-        "--prefix",
-        required=True,
-        choices=["dewanrakyat", "dewannegara", "kamarkhas"],
-        help="House prefix for the Hansard documents"
-    )
-    parser.add_argument(
-        "--filename",
-        type=str,
-        help="Process a single CSV file (e.g., dr_1987-10-29.csv)"
-    )
-    parser.add_argument(
-        "--start-year",
-        type=int,
-        help="Batch mode start year (inclusive)"
-    )
-    parser.add_argument(
-        "--end-year",
-        type=int,
-        help="Batch mode end year (inclusive)"
-    )
+    parser.add_argument("--prefix", required=True, choices=["dewanrakyat", "dewannegara", "kamarkhas"], help="House prefix for the Hansard documents")
+    parser.add_argument("--filename", type=str, help="Process a single CSV file (e.g., dr_1987-10-29.csv)")
+    parser.add_argument("--start-year", type=int, help="Batch mode start year (inclusive)")
+    parser.add_argument("--end-year", type=int, help="Batch mode end year (inclusive)")
 
     args = parser.parse_args()
 
@@ -337,7 +358,7 @@ if __name__ == "__main__":
 
             date_str = match.group(1)
             key = f"{args.prefix}/{args.filename}"
-            success = process_and_insert(args.prefix, key, date_str)
+            success = process_and_insert(args.prefix, key, date_str, logger)
             if not success:
                 logger.error("Processing failed")
                 exit(1)
@@ -352,7 +373,3 @@ if __name__ == "__main__":
     except Exception as e:
         logger.exception("Fatal error: %s", str(e))
         exit(1)
-
-# example commands
-# python prepare_payload.py --prefix dewannegara --start-year 1991 --end-year 1991
-# python prepare_payload.py --prefix dewannegara --filename dn_1991-02-18.csv

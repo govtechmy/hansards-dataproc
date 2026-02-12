@@ -83,4 +83,5 @@ def build_arkib_partition_queue(
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "criteria": {"min_year": min_year, "max_year": max_year},
         "partitions": sorted(partitions),
+        "partitions": sorted(partitions, key=lambda p: extract_date_from_partition(p) or datetime.min,),
     }

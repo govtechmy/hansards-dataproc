@@ -1,3 +1,11 @@
+"""
+Batch extract layout.csv using AWS Textract LAYOUT.
+
+Example commands:
+# python run_textract.py --prefix dewannegara --start-year 1991 --end-year 1991
+# python run_textract.py --prefix dewannegara --filename dn_1959-09-12.pdf
+
+"""
 import boto3
 import os
 import re
@@ -11,7 +19,7 @@ from textractor import Textractor
 from textractor.data.constants import TextractFeatures
 import os
 from dotenv import load_dotenv
-from hansards_pipelines.settings import S3_PUBLIC_BUCKET, S3_TEXTRACT_BUCKET, AWS_REGION
+from ..settings import S3_PUBLIC_BUCKET, S3_TEXTRACT_BUCKET, AWS_REGION
 
 PREFIX_OPTIONS = ["dewannegara", "dewanrakyat", "kamarkhas"]
 MAX_CONCURRENT_JOBS = 5
@@ -96,10 +104,10 @@ def process_pdf(pdf_key):
             tmp_path = tmp.name
 
         s3.upload_file(tmp_path, S3_TEXTRACT_BUCKET, output_key)
-        print(f" ✅ Uploaded {output_key} to s3://{S3_TEXTRACT_BUCKET}/{output_key}")
+        print(f" Uploaded {output_key} to s3://{S3_TEXTRACT_BUCKET}/{output_key}")
 
     except Exception as e:
-        print(f"  ❌ Failed {pdf_key}: {e}")
+        print(f"Failed {pdf_key}: {e}")
     finally:
         if 'tmp_path' in locals() and os.path.exists(tmp_path):
             os.remove(tmp_path)
@@ -139,6 +147,3 @@ if __name__ == "__main__":
         run(args.prefix, (args.start_year, args.end_year))
 
     print("\nDone.")
-
-# python run_textract.py --prefix dewannegara --start-year 1991 --end-year 1991
-# python run_textract.py --prefix dewannegara --filename dn_1959-09-12.pdf
