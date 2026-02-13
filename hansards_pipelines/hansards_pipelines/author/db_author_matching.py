@@ -16,10 +16,10 @@ Options:
     --dry-run: If set, the script will not update the database.
 
 Example:
-    python -m hansards_pipelines.db_author_matching --sitting-ids 22959 --dry-run
-    python -m hansards_pipelines.db_author_matching --sitting-ids 22959 22960 22961 --dry-run
-    python -m hansards_pipelines.db_author_matching --date-from 1960-02-22 --date-to 1960-02-29 --dry-run
-    python -m hansards_pipelines.db_author_matching --filename dr_1960-02-22 --dry-run
+    python -m hansards_pipelines.author.db_author_matching --sitting-ids 22959 --dry-run
+    python -m hansards_pipelines.author.db_author_matching --sitting-ids 22959 22960 22961 --dry-run
+    python -m hansards_pipelines.author.db_author_matching --date-from 1960-02-22 --date-to 1960-02-29 --dry-run
+    python -m hansards_pipelines.author.db_author_matching --filename dr_1960-02-22 --dry-run
     
 """
 from __future__ import annotations
