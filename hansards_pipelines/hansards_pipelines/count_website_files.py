@@ -30,9 +30,7 @@ from __future__ import annotations
 import argparse
 import json
 import logging
-import os
 import re
-import time
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Dict, List, Set
@@ -40,7 +38,6 @@ from urllib.parse import urljoin, urlparse
 
 import requests
 from bs4 import BeautifulSoup
-from requests.adapters import HTTPAdapter, Retry
 
 from hansards_pipelines.scrape_arkib import (
     make_session,
@@ -51,7 +48,6 @@ from hansards_pipelines.scrape_arkib import (
 
 PDF_BASE_URL = "https://www.parlimen.gov.my"
 ROOT_ID = "0"
-REQUEST_DELAY = 0.2
 LOG_LEVEL = logging.INFO
 
 CATEGORIES = {
@@ -74,7 +70,7 @@ CATEGORIES = {
 
 
 # Shared functions imported from scrape_arkib.py:
-# - make_session: Creates HTTP session with TLS verification and retry logic
+# - make_session: Creates HTTP session with TLS verification disabled and retry logic
 # - fetch_html: Fetches HTML from parliament archive API
 # - extract_child_ids: Extracts child node IDs from HTML
 # - seed_kamarkhas_start_nodes: Seeds Kamar Khas parliament nodes
@@ -99,6 +95,7 @@ def extract_pdfs(html: str) -> List[Dict[str, str]]:
         m = re.search(
             r"loadResult\(['\"]([^'\"]+\.pdf)['\"],['\"]([^'\"]+)['\"]\)",
             u.text or "",
+            flags=re.IGNORECASE,
         )
         if m:
             path, name = m.groups()
@@ -316,9 +313,14 @@ def run_scrape_structured(
     
     # Write to file
     output_path = Path(output_file)
-    output_path.write_text(json.dumps(output_data, indent=2, ensure_ascii=False))
-    logging.info("Structured data written to %s", output_path.absolute())
-    
+    try:
+        # Ensure the output directory exists
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+        output_path.write_text(json.dumps(output_data, indent=2, ensure_ascii=False))
+        logging.info("Structured data written to %s", output_path.absolute())
+    except OSError as exc:
+        logging.error("Failed to write structured data to %s: %s", output_path.absolute(), exc)
+        raise
     return output_data
 
 
