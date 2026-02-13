@@ -19,10 +19,14 @@ This script walks the parliament archive tree and creates a hierarchical JSON st
 }
 
 Usage:
-    python -m hansards_pipelines.scrape_hansard_structured
-    python -m hansards_pipelines.scrape_hansard_structured --category dewannegara
-    python -m hansards_pipelines.scrape_hansard_structured --category dewannegara --parliament 13
-    python -m hansards_pipelines.scrape_hansard_structured --category dewannegara --parliament-range 10 15
+    python -m hansards_pipelines.count_website_files
+    python -m hansards_pipelines.count_website_files --category dewannegara
+    python -m hansards_pipelines.count_website_files --category dewannegara --parliament 13
+    python -m hansards_pipelines.count_website_files --category dewannegara --parliament-range 10 15
+
+Environment Variables:
+    DISABLE_TLS_VERIFY: Set to 'true', '1', or 'yes' to disable TLS certificate verification
+                        (only use if encountering SSL errors with the parliament website)
 """
 
 from __future__ import annotations
@@ -30,6 +34,7 @@ from __future__ import annotations
 import argparse
 import json
 import logging
+import os
 import re
 import time
 from datetime import datetime, timezone
@@ -67,7 +72,12 @@ CATEGORIES = {
 
 
 def make_session() -> requests.Session:
-    """Create HTTP session with retry logic and custom headers."""
+    """
+    Create HTTP session with retry logic and custom headers.
+    
+    TLS verification is enabled by default for security. To disable (not recommended),
+    set the DISABLE_TLS_VERIFY environment variable to 'true', '1', or 'yes'.
+    """
     session = requests.Session()
     session.headers.update(
         {"User-Agent": "hansards-dataproc/structured-scraper"}
@@ -83,9 +93,11 @@ def make_session() -> requests.Session:
     session.mount("https://", adapter)
     session.mount("http://", adapter)
 
-    logging.warning("TLS verification disabled")
-    session.verify = False
-    urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+    # Only disable TLS verification if explicitly requested via environment variable
+    if os.getenv("DISABLE_TLS_VERIFY", "").lower() in ("true", "1", "yes"):
+        logging.warning("TLS verification disabled (DISABLE_TLS_VERIFY is set)")
+        session.verify = False
+        urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
     return session
 
@@ -380,7 +392,7 @@ def run_scrape_structured(
     output_data = {
         "metadata": {
             "generated_at": datetime.now(timezone.utc).isoformat(),
-            "script": "scrape_hansard_structured.py",
+            "script": "count_website_files.py",
             "category_filter": category,
             "parliament_filter": parliament,
             "parliament_range_filter": parliament_range,
@@ -398,7 +410,7 @@ def run_scrape_structured(
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Scrape hansard PDFs and organize by parliament/session/meeting"
+        description="Count hansard PDFs and organize by parliament/session/meeting"
     )
     parser.add_argument(
         "--category",
@@ -427,6 +439,16 @@ def main():
     # Validate that both parliament and parliament-range are not specified
     if args.parliament and args.parliament_range:
         parser.error("Cannot specify both --parliament and --parliament-range")
+    # Validate individual parliament value (if provided)
+    if args.parliament is not None and args.parliament < 1:
+        parser.error("--parliament must be a positive integer (>= 1)")
+    # Validate parliament range values (if provided)
+    if args.parliament_range:
+        start, end = args.parliament_range
+        if start < 1 or end < 1:
+            parser.error("--parliament-range values must be positive integers (>= 1)")
+        if start > end:
+            parser.error("Invalid --parliament-range: START must be less than or equal to END")
     
     parliament_range = tuple(args.parliament_range) if args.parliament_range else None
     
