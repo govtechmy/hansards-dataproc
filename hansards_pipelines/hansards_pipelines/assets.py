@@ -67,8 +67,8 @@ from hansards_pipelines.move_and_rename_pdf import move_arkib_pdfs_to_public_mai
 from hansards_pipelines.author import load_author_csv_to_db
 from pathlib import Path
 
-from hansards_pipelines.arkib.build_arkib_partition_queue import build_arkib_partition_queue
-from hansards_pipelines.arkib.promote_pdfs import promote_arkib_pdfs
+from hansards_pipelines.arkib_sittings.build_arkib_partition_queue import build_arkib_partition_queue
+from hansards_pipelines.arkib_sittings.promote_pdfs import promote_arkib_pdfs
 
 from hansards_pipelines.legacy_pipeline.main import process_legacy_pipeline
 
