@@ -39,7 +39,6 @@ from typing import Dict, List, Set
 from urllib.parse import urljoin, urlparse
 
 import requests
-import urllib3
 from bs4 import BeautifulSoup
 from requests.adapters import HTTPAdapter, Retry
 
