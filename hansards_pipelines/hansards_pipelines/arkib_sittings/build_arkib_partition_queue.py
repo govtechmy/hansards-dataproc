@@ -1,7 +1,7 @@
 from datetime import datetime, timezone
 from typing import List, Dict, Set
 
-from hansards_pipelines.arkib.convert_key import convert_arkib_key_to_partition
+from hansards_pipelines.arkib_sittings.convert_key import convert_arkib_key_to_partition
 
 
 def extract_date_from_partition(partition: str) -> datetime | None:
