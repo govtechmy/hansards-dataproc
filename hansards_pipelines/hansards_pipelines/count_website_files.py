@@ -23,10 +23,6 @@ Usage:
     python -m hansards_pipelines.count_website_files --category dewannegara
     python -m hansards_pipelines.count_website_files --category dewannegara --parliament 13
     python -m hansards_pipelines.count_website_files --category dewannegara --parliament-range 10 15
-
-Environment Variables:
-    DISABLE_TLS_VERIFY: Set to 'true', '1', or 'yes' to disable TLS certificate verification
-                        (only use if encountering SSL errors with the parliament website)
 """
 
 from __future__ import annotations
@@ -46,6 +42,13 @@ import requests
 import urllib3
 from bs4 import BeautifulSoup
 from requests.adapters import HTTPAdapter, Retry
+
+from hansards_pipelines.scrape_arkib import (
+    make_session,
+    fetch_html,
+    extract_child_ids,
+    seed_kamarkhas_start_nodes,
+)
 
 PDF_BASE_URL = "https://www.parlimen.gov.my"
 ROOT_ID = "0"
@@ -71,69 +74,11 @@ CATEGORIES = {
 }
 
 
-def make_session() -> requests.Session:
-    """
-    Create HTTP session with retry logic and custom headers.
-    
-    TLS verification is enabled by default for security. To disable (not recommended),
-    set the DISABLE_TLS_VERIFY environment variable to 'true', '1', or 'yes'.
-    """
-    session = requests.Session()
-    session.headers.update(
-        {"User-Agent": "hansards-dataproc/structured-scraper"}
-    )
-
-    retries = Retry(
-        total=5,
-        backoff_factor=1.0,
-        status_forcelist=[429, 500, 502, 503, 504],
-        raise_on_status=False,
-    )
-    adapter = HTTPAdapter(max_retries=retries)
-    session.mount("https://", adapter)
-    session.mount("http://", adapter)
-
-    # Only disable TLS verification if explicitly requested via environment variable
-    if os.getenv("DISABLE_TLS_VERIFY", "").lower() in ("true", "1", "yes"):
-        logging.warning("TLS verification disabled (DISABLE_TLS_VERIFY is set)")
-        session.verify = False
-        urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-
-    return session
-
-
-def fetch_html(session: requests.Session, base_url: str, uweb: str, node_id: str) -> str:
-    """Fetch HTML from parliament archive API."""
-    max_attempts = 3
-    for attempt in range(max_attempts):
-        try:
-            resp = session.get(
-                base_url,
-                params={
-                    "uweb": uweb,
-                    "arkib": "yes",
-                    "ajx": "1",
-                    "id": node_id,
-                },
-                timeout=30,
-            )
-            resp.raise_for_status()
-
-            if REQUEST_DELAY:
-                time.sleep(REQUEST_DELAY)
-
-            return resp.text
-        except requests.exceptions.RequestException as e:
-            if attempt < max_attempts - 1:
-                wait_time = 5 * (attempt + 1)
-                logging.warning(
-                    f"Timeout on attempt {attempt + 1}/{max_attempts}, "
-                    f"retrying in {wait_time}s: {e}"
-                )
-                time.sleep(wait_time)
-            else:
-                logging.error(f"Failed after {max_attempts} attempts: {e}")
-                raise
+# Shared functions imported from scrape_arkib.py:
+# - make_session: Creates HTTP session with TLS verification and retry logic
+# - fetch_html: Fetches HTML from parliament archive API
+# - extract_child_ids: Extracts child node IDs from HTML
+# - seed_kamarkhas_start_nodes: Seeds Kamar Khas parliament nodes
 
 
 def extract_pdfs(html: str) -> List[Dict[str, str]]:
@@ -164,11 +109,6 @@ def extract_pdfs(html: str) -> List[Dict[str, str]]:
             })
 
     return pdfs
-
-
-def extract_child_ids(html: str) -> Set[str]:
-    """Extract child node IDs from HTML."""
-    return set(re.findall(r"<item[^>]+id=['\"]([^'\"]+)['\"]", html))
 
 
 def parse_node_id(node_id: str) -> Dict[str, int | None]:
@@ -305,31 +245,6 @@ def crawl_structured(
             structure=structure,
             seen_pdfs=seen_pdfs,
         )
-
-
-def seed_kamarkhas_start_nodes(session: requests.Session) -> List[str]:
-    """
-    Kamar Khas does not list parliament nodes at root (id=0),
-    so try possible IDs and keep valid ones.
-    """
-    seeds = []
-    
-    for parlimen in range(1, 50):
-        node_id = f"0_{parlimen}"
-        try:
-            html = fetch_html(
-                session,
-                base_url=CATEGORIES["kamarkhas"]["base_url"],
-                uweb="dr",
-                node_id=node_id,
-            )
-        except Exception:
-            continue
-        
-        if extract_child_ids(html):
-            seeds.append(node_id)
-    
-    return seeds
 
 
 def run_scrape_structured(
