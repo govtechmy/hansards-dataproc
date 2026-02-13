@@ -6,13 +6,13 @@ It generates a report summarizing any sittings with missing files and uploads th
 Reason: To ensure data integrity by confirming that all sittings have their associated PDF and CSV files available in S3.
 
 Usage:
-    python validate_sittings_pdf_csv_in_S3.py [--houses dewanrakyat dewannegara kamarkhas] [--dry-run]
+    python check_pdf_csv.py [--houses dewanrakyat dewannegara kamarkhas] [--dry-run]
 Options:
     --houses: Specify which houses to check. Default checks all three houses.
     --dry-run: If set, the report will not be uploaded to S3; it will only be printed to the console.
 
 Example:
-    python validate_sittings_pdf_csv_in_S3.py --houses dewanrakyat kamarkhas
+    python check_pdf_csv.py --houses dewanrakyat kamarkhas
 
 """
 
