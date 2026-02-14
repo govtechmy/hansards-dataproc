@@ -10,6 +10,22 @@ from thefuzz import process
 from datetime import datetime
 
 
+def is_structural_noise(line: str) -> bool:
+    """
+    True if line contains no letters (A–Z / a–z).
+    Covers: 1., 2., -, •, roman numerals, OCR junk.
+    """
+    return not re.search(r'[A-Za-z]', line)
+
+
+# Pattern to detect number-only lines (handles variations like "1", "1.", "1 )", "1 :")
+number_only_pattern = re.compile(r'^\d+\s*[\.\):]?$')
+
+def is_number_only(text):
+    """Returns True if text is only a number (with optional punctuation)."""
+    return bool(number_only_pattern.match(text.strip()))
+
+
 def more_than_30_minutes_past(time_str1, time_str2):
     try:
         # Parse the time strings to datetime objects
@@ -378,6 +394,11 @@ def possible_author(text, bold, italics, idx, num_rows, house, is_pipeline=False
 def insert_speech(current):
     if current["speech"] == "":
         return []
+    # Skip speeches where level_2 is ONLY a number
+    if current["level_2"] and is_number_only(current["level_2"]):
+        print(f"[INSERT_SPEECH_FILTER] Blocking number-only level_2: '{current['level_2']}' (level_1: '{current['level_1']}')")
+        return []
+    
     return [
         [
             current["level_1"],
@@ -893,8 +914,15 @@ def tabulate(
                 # usually a chain of bolds
                 # make sure it is not the chain of italicised bolds typically following Titah
                 add_idx = 1
-                current["level_2"] = text[row_id]
-                current["level_3"] = ""
+                # Filter number-only lines (like "1.", "2.", "3.")
+                if not is_number_only(text[row_id]):
+                    current["level_2"] = text[row_id]
+                    current["level_3"] = ""
+                else:
+                    # Skip this row if it's just a number
+                    print(f"[FILTER] Skipping number-only in level_2: '{text[row_id]}'")
+                    row_id += 1
+                    continue
                 while (
                     row_id + add_idx < num_rows
                     and prop_of_1_among_binary(bold[row_id + add_idx]) > 0.8
@@ -1002,7 +1030,14 @@ def tabulate(
                 current["speech_italics"] = ""
                 current["level_3"] = ""
                 add_idx = 1
-                current["level_2"] = text[row_id]
+                # Filter number-only lines (like "1.", "2.", "3.")
+                if not is_number_only(text[row_id]):
+                    current["level_2"] = text[row_id]
+                else:
+                    # Skip this row if it's just a number
+                    print(f"[FILTER] Skipping number-only in level_2: '{text[row_id]}'")
+                    row_id += 1
+                    continue
                 # allow empty lines as separator
                 while (
                     row_id + add_idx < num_rows

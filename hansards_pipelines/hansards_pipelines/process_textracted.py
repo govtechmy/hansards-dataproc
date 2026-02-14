@@ -29,6 +29,13 @@ ts_search = re.compile(r'(\d{1,2})\.(\d{2})', re.IGNORECASE)
 
 period = re.compile(r'\b(ptg|petang|pagi|tgh|tengah hari|mlm|a\.?m\.?|p\.?m\.?)\b', re.IGNORECASE)
 
+# Pattern to detect number-only lines (handles variations like "1", "1.", "1 )", "1 :")
+number_only_pattern = re.compile(r'^\d+\s*[\.\):]?$')
+
+def is_number_only(text):
+    """Returns True if text is only a number (with optional punctuation)."""
+    return bool(number_only_pattern.match(text.strip()))
+
 TOC_KEYWORDS = ['KANDUNGAN', 'CONTENTS', 'KANDONGAN']
 DOA_KEYWORDS = ['DOA', 'DOA PENDAHULUAN', 'DUA', "DO'A", "PRAYERS", "PRAYER", "D OA", "D0A"]
 
@@ -173,6 +180,11 @@ def extract_toc_block(df, filename=None, fallback_max_lines=30):
         line = ln.strip()
         if not line or any(keyword in line.upper() for keyword in TOC_KEYWORDS):
             continue
+        # Skip number-only lines (e.g., "1.", "2.", "3.")
+        if is_number_only(line):
+            print(f"[TOC] Skipping number-only line: '{line}'")
+            continue
+        
         up_count = sum(1 for c in line if c.isupper())
         low_count = sum(1 for c in line if c.islower())
         if up_count > low_count:
@@ -247,8 +259,15 @@ def process_layout(df, toc_df, filename=None):
     post['level_2'] = ''
     for idx, row in post.iterrows():
         text = row['clean']
+        #  numbering-only rows before ANY logic runs
+        if is_number_only(text):
+            print(f"Skipping numbering line: '{text}'")
+            post.at[idx, 'level_1'] = l1
+            post.at[idx, 'level_2'] = l2
+            continue
+        
         norm = re.sub(r"[^\w\s]", '', text).upper().strip()
-        if row['is_upper']:
+        if row['is_upper'] and not is_number_only(text):
             print(f"\nProcessing line [{idx}]: {text}")
             print(f"   Normalized: {norm}")
 
@@ -261,7 +280,7 @@ def process_layout(df, toc_df, filename=None):
                     best_l2_l1 = toc['level_1']
             print(f"    Best L2 match score: {best_l2_score:.2f} (matched to: {best_l2_l1})")
 
-            if best_l2_score >= 0.6:
+            if best_l2_score >= 0.6 and not is_number_only(text):
                 l1, l2 = best_l2_l1, text
                 print(f" ✅ Assigned as level_2 under: {l1}")
             else:
@@ -320,7 +339,7 @@ def process_layout(df, toc_df, filename=None):
             current_speech = parts[1].strip() if len(parts) > 1 else ''
             current_level1 = row['level_1']
             current_level2 = row['level_2']
-        elif row['is_upper'] and not row['is_speaker']:
+        elif row['is_upper'] and not row['is_speaker'] and not is_number_only(row['clean']):
             # heading without speaker
             segments.append({
                 'level_1': row['level_1'],
