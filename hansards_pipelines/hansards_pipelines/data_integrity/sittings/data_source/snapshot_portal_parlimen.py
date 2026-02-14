@@ -1,8 +1,18 @@
 """
-Structured snapshot of parliamentary Hansard PDFs from source website.
+Structured snapshot of parliamentary Hansard sittings from source website.
 
-Uploads artifact to S3 at:
-checks/sittings/source/runs/YYYYMMDD/run_TIMESTAMP.json
+Output is written to:
+    data_integrity/sittings/source/runs/YYYYMMDD/run_TIMESTAMP.json
+
+Usage:
+    python snapshot_parlimen_portal.py [--category CATEGORY] [--term term] [--term-range START END]
+
+Example:
+    python snapshot_parlimen_portal.py --category dewannegara --term 14
+    python snapshot_parlimen_portal.py --term-range 13 14
+
+Usage:
+    python snapshot_portal_parlimen.py --category dewannegara --term 14 --max-nodes 10
 """
 
 from __future__ import annotations
@@ -31,7 +41,7 @@ from hansards_pipelines.settings import (
     S3_DATAPROC_BUCKET,
 )
 
-PDF_BASE_URL = "https://www.parlimen.gov.my"
+sitting_BASE_URL = "https://www.parlimen.gov.my"
 ROOT_ID = "0"
 LOG_LEVEL = logging.INFO
 
@@ -56,14 +66,14 @@ CATEGORIES = {
 # Extraction
 # ----------------------------
 
-def extract_pdfs(html: str) -> List[Dict[str, str]]:
-    pdfs = []
+def extract_sittings(html: str) -> List[Dict[str, str]]:
+    sittings = []
     soup = BeautifulSoup(html, "html.parser")
 
     for a in soup.select("a[href$='.pdf'], a[href$='.PDF']"):
-        url = urljoin(PDF_BASE_URL, a["href"])
+        url = urljoin(sitting_BASE_URL, a["href"])
         filename = urlparse(url).path.split("/")[-1]
-        pdfs.append({"filename": filename, "url": url})
+        sittings.append({"filename": filename, "url": url})
 
     for u in soup.find_all("userdata"):
         m = re.search(
@@ -73,12 +83,12 @@ def extract_pdfs(html: str) -> List[Dict[str, str]]:
         )
         if m:
             path, name = m.groups()
-            pdfs.append({
+            sittings.append({
                 "filename": name,
-                "url": urljoin(PDF_BASE_URL, path),
+                "url": urljoin(sitting_BASE_URL, path),
             })
 
-    return pdfs
+    return sittings
 
 
 def parse_node_id(node_id: str):
@@ -107,7 +117,7 @@ def crawl_structured(
     node_id: str,
     visited: Set[str],
     structure: Dict,
-    seen_pdfs: Set[str],
+    seen_sittings: Set[str],
     max_nodes: int | None,
     node_counter: Dict[str, int],
 ):
@@ -133,16 +143,16 @@ def crawl_structured(
     )
 
     html = fetch_html(session, base_url, uweb, node_id)
-    all_pdfs = extract_pdfs(html)
+    all_sittings = extract_sittings(html)
 
-    pdfs = []
-    for pdf in all_pdfs:
-        key = f"{house_name}/{pdf['filename']}"
-        if key not in seen_pdfs:
-            seen_pdfs.add(key)
-            pdfs.append(pdf)
+    sittings = []
+    for sitting in all_sittings:
+        key = f"{house_name}/{sitting['filename']}"
+        if key not in seen_sittings:
+            seen_sittings.add(key)
+            sittings.append(sitting)
 
-    if not pdfs or hierarchy["term"] is None:
+    if not sittings or hierarchy["term"] is None:
         # still continue recursion
         for child in sorted(
             extract_child_ids(html),
@@ -156,7 +166,7 @@ def crawl_structured(
                 child,
                 visited,
                 structure,
-                seen_pdfs,
+                seen_sittings,
                 max_nodes,
                 node_counter,
             )
@@ -169,11 +179,11 @@ def crawl_structured(
     term_key = str(hierarchy["term"])
     structure[house_name]["term"].setdefault(
         term_key,
-        {"pdf_count": 0, "session": {}},
+        {"sitting_count": 0, "session": {}},
     )
 
     # Add to term-level count
-    structure[house_name]["term"][term_key]["pdf_count"] += len(pdfs)
+    structure[house_name]["term"][term_key]["sitting_count"] += len(sittings)
 
     # Session level
     if hierarchy["session"] is not None:
@@ -181,20 +191,20 @@ def crawl_structured(
         session_key = str(hierarchy["session"])
         structure[house_name]["term"][term_key]["session"].setdefault(
             session_key,
-            {"pdf_count": 0, "meeting": {}},
+            {"sitting_count": 0, "meeting": {}},
         )
 
-        structure[house_name]["term"][term_key]["session"][session_key]["pdf_count"] += len(pdfs)
+        structure[house_name]["term"][term_key]["session"][session_key]["sitting_count"] += len(sittings)
 
         # Meeting level
         if hierarchy["meeting"] is not None:
             meeting_key = str(hierarchy["meeting"])
             structure[house_name]["term"][term_key]["session"][session_key]["meeting"].setdefault(
                 meeting_key,
-                {"pdf_count": 0},
+                {"sitting_count": 0},
             )
 
-            structure[house_name]["term"][term_key]["session"][session_key]["meeting"][meeting_key]["pdf_count"] += len(pdfs)
+            structure[house_name]["term"][term_key]["session"][session_key]["meeting"][meeting_key]["sitting_count"] += len(sittings)
 
     # Continue recursion
     for child in sorted(
@@ -209,7 +219,7 @@ def crawl_structured(
             child,
             visited,
             structure,
-            seen_pdfs,
+            seen_sittings,
             max_nodes,
             node_counter,
         )
@@ -223,12 +233,12 @@ def compute_summary(structure: Dict) -> Dict:
     total_terms = 0
     total_sessions = 0
     total_meetings = 0
-    total_pdfs = 0
+    total_sittings = 0
 
     for house in structure.values():
         for term in house.get("term", {}).values():
             total_terms += 1
-            total_pdfs += term.get("pdf_count", 0)
+            total_sittings += term.get("sitting_count", 0)
 
             for session in term.get("session", {}).values():
                 total_sessions += 1
@@ -240,7 +250,7 @@ def compute_summary(structure: Dict) -> Dict:
         "total_terms": total_terms,
         "total_sessions": total_sessions,
         "total_meetings": total_meetings,
-        "total_pdfs": total_pdfs,
+        "total_sittings": total_sittings,
     }
 
 
@@ -252,7 +262,7 @@ def build_snapshot(structure, category, term, term_range):
     return {
         "metadata": {
             "generated_at": datetime.now(timezone.utc).isoformat(),
-            "artifact_type": "source_snapshot",
+            "artifact_type": "portal_parlimen_snapshot",
             "check_scope": "sittings",
             "category_filter": category,
             "term_filter": term,
@@ -292,7 +302,7 @@ def run_source_snapshot(category=None, term=None, term_range=None, max_nodes=Non
 
     session = make_session()
     structure: Dict = {}
-    seen_pdfs: Set[str] = set()
+    seen_sittings: Set[str] = set()
     node_counter = {"count": 0}
 
     categories = {category: CATEGORIES[category]} if category else CATEGORIES
@@ -315,7 +325,7 @@ def run_source_snapshot(category=None, term=None, term_range=None, max_nodes=Non
                 start_id,
                 visited=set(),
                 structure=structure,
-                seen_pdfs=seen_pdfs,
+                seen_sittings=seen_sittings,
                 max_nodes=max_nodes,
                 node_counter=node_counter,
             )
