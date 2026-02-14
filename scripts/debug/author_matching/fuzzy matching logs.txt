@@ -1,0 +1,203 @@
+(env) (base) asyiq@MacBook-Pro-2 hansards_pipelines % cd hansards_pipelines
+(env) (base) asyiq@MacBook-Pro-2 hansards_pipelines % python process_textracted.py --prefix dewannegara --filename dn_2007-05-07_layout.csv
+/Users/asyiq/Documents/github/hansards-dataproc/env/lib/python3.11/site-packages/malaya/tokenizer.py:214: FutureWarning: Possible nested set at position 3397
+  self.tok = re.compile(r'({})'.format('|'.join(pipeline)))
+/Users/asyiq/Documents/github/hansards-dataproc/env/lib/python3.11/site-packages/malaya/tokenizer.py:214: FutureWarning: Possible nested set at position 3927
+  self.tok = re.compile(r'({})'.format('|'.join(pipeline)))
+/Users/asyiq/Documents/github/hansards-dataproc/env/lib/python3.11/site-packages/malaya/tokenizer.py:214: FutureWarning: Possible nested set at position 1752
+  self.tok = re.compile(r'({})'.format('|'.join(pipeline)))
+/Users/asyiq/Documents/github/hansards-dataproc/env/lib/python3.11/site-packages/malaya/tokenizer.py:214: FutureWarning: Possible nested set at position 1775
+  self.tok = re.compile(r'({})'.format('|'.join(pipeline)))
+
+==== PROCESSING: dewannegara/dn_2007-05-07_layout.csv
+✅ Found DOA keyword: 'DOA' at line 35
+✅ Found TOC keyword: 'KANDUNGAN' at line 6
+
+[TOC] Extracting block from line 6 to 20 ...
+
+Extracted TOC:
+                                         level_1                                                                                                                       level_2
+                               MENGANGKAT SUMPAH                                                                                                                              
+                               MENGANGKAT SUMPAH                                                                                                                   (Halaman 1)
+               PEMILIHAN TIMBALAN YANG DI-PERTUA                                                                                                                              
+               PEMILIHAN TIMBALAN YANG DI-PERTUA                                                                                                                   (Halaman 1)
+        PEMASYHURAN DARIPADA TUAN YANG DI-PERTUA                                                                                                                              
+        PEMASYHURAN DARIPADA TUAN YANG DI-PERTUA                                                                            - Mengalu-alukan Pemilihan Timbalan Yang di-Pertua
+        PEMASYHURAN DARIPADA TUAN YANG DI-PERTUA                                                                                                                   (Halaman 2)
+        PEMASYHURAN DARIPADA TUAN YANG DI-PERTUA                                                                                             - Mengangkat Sumpah Di Luar Dewan
+        PEMASYHURAN DARIPADA TUAN YANG DI-PERTUA                                                                                                                   (Halaman 2)
+        PEMASYHURAN DARIPADA TUAN YANG DI-PERTUA                                                                      - Titah Ucapan Seri Paduka Baginda Yang di-Pertuan Agong
+        PEMASYHURAN DARIPADA TUAN YANG DI-PERTUA                                                                                                                   (Halaman 3)
+        PEMASYHURAN DARIPADA TUAN YANG DI-PERTUA                                                                                                    - Memperkenankan Akta-akta
+        PEMASYHURAN DARIPADA TUAN YANG DI-PERTUA                                                                                             - Perutusan Daripada Dewan Rakyat
+        PEMASYHURAN DARIPADA TUAN YANG DI-PERTUA                                                                                                                   (Halaman 3)
+        PEMASYHURAN DARIPADA TUAN YANG DI-PERTUA                                                                                                            - Urusan Mesyuarat
+        PEMASYHURAN DARIPADA TUAN YANG DI-PERTUA                                                                                                                   (Halaman 4)
+        PEMASYHURAN DARIPADA TUAN YANG DI-PERTUA                                                                                                - Cuti Kepada Ahli - Kebenaran
+        PEMASYHURAN DARIPADA TUAN YANG DI-PERTUA                                                                                                                   (Halaman 4)
+        PEMASYHURAN DARIPADA TUAN YANG DI-PERTUA                                                                                                                   (Halaman 4)
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN                                                                                                                              
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN                                                                                                                   (Halaman 5)
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN                                                                                      USUL-USUL: Jalan-jalan Masuk Ke Parlimen
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN                                                                                                                  (Halaman 27)
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN Menjunjung Kasih Titah Ucapan Seri Paduka Baginda\nYang di-Pertuan Agong\n- Dato' Haji Kamarudin bin Haji Ambok\t(Halaman 28)
+JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN                                                                                                              Diterbitkan Oleh
+                          CAWANGAN PENYATA RASMI                                                                                                                              
+                               PARLIMEN MALAYSIA                                                                                                                              
+                               PARLIMEN MALAYSIA                                                                                                                          2007
+                                     DR 7.5.2007                                                                                                                              
+                          AHLI-AHLI DEWAN NEGARA                                                                                                                              
+✅ Found DOA keyword: 'DOA' at line 35
+Found timestamp: DR 7.5.2007 - hour: 17, minute: 20
+Found timestamp: DR 7.5.2007 - hour: 17, minute: 20
+Found timestamp: DR 7.5.2007 - hour: 17, minute: 20
+Found timestamp: DR 7.5.2007 - hour: 17, minute: 20
+Found timestamp: Mesyuarat dimulakan pada pukul 10.00 pagi DOA [Tuan Yang di-Pertua mempengerusikan Mesyuarat] - hour: 10, minute: 0
+Found timestamp: DR 7.5.2007 - hour: 17, minute: 20
+✅ Found an initial timestamp before DOA: DR 7.5.2007 -> 1720
+
+Processing line [0]: MENGANGKAT SUMPAH
+   Normalized: MENGANGKAT SUMPAH
+    Best L2 match score: 0.71 (matched to: PEMASYHURAN DARIPADA TUAN YANG DI-PERTUA)
+ ✅ Assigned as level_2 under: PEMASYHURAN DARIPADA TUAN YANG DI-PERTUA
+
+Processing line [2]: PEMILIHAN TIMBALAN YANG DI-PERTUA
+   Normalized: PEMILIHAN TIMBALAN YANG DIPERTUA
+    Best L2 match score: 0.82 (matched to: PEMASYHURAN DARIPADA TUAN YANG DI-PERTUA)
+ ✅ Assigned as level_2 under: PEMASYHURAN DARIPADA TUAN YANG DI-PERTUA
+
+Processing line [8]: PEMASYHURAN TUAN YANG DI-PERTUA
+   Normalized: PEMASYHURAN TUAN YANG DIPERTUA
+    Best L2 match score: 0.63 (matched to: PEMASYHURAN DARIPADA TUAN YANG DI-PERTUA)
+ ✅ Assigned as level_2 under: PEMASYHURAN DARIPADA TUAN YANG DI-PERTUA
+
+Processing line [9]: MENGALU-ALUKAN PEMILIHAN TIMBALAN YANG DI-PERTUA
+   Normalized: MENGALUALUKAN PEMILIHAN TIMBALAN YANG DIPERTUA
+    Best L2 match score: 1.00 (matched to: PEMASYHURAN DARIPADA TUAN YANG DI-PERTUA)
+ ✅ Assigned as level_2 under: PEMASYHURAN DARIPADA TUAN YANG DI-PERTUA
+
+Processing line [12]: MENGANGKAT SUMPAH DI LUAR DEWAN
+   Normalized: MENGANGKAT SUMPAH DI LUAR DEWAN
+    Best L2 match score: 1.00 (matched to: PEMASYHURAN DARIPADA TUAN YANG DI-PERTUA)
+ ✅ Assigned as level_2 under: PEMASYHURAN DARIPADA TUAN YANG DI-PERTUA
+
+Processing line [16]: TITAH UCAPAN SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG
+   Normalized: TITAH UCAPAN SERI PADUKA BAGINDA YANG DIPERTUAN AGONG
+    Best L2 match score: 1.00 (matched to: PEMASYHURAN DARIPADA TUAN YANG DI-PERTUA)
+ ✅ Assigned as level_2 under: PEMASYHURAN DARIPADA TUAN YANG DI-PERTUA
+
+Processing line [19]: MEMPERKENANKAN AKTA-AKTA
+   Normalized: MEMPERKENANKAN AKTAAKTA
+    Best L2 match score: 1.00 (matched to: PEMASYHURAN DARIPADA TUAN YANG DI-PERTUA)
+ ✅ Assigned as level_2 under: PEMASYHURAN DARIPADA TUAN YANG DI-PERTUA
+
+Processing line [22]: PERUTUSAN DARIPADA DEWAN RAKYAT
+   Normalized: PERUTUSAN DARIPADA DEWAN RAKYAT
+    Best L2 match score: 1.00 (matched to: PEMASYHURAN DARIPADA TUAN YANG DI-PERTUA)
+ ✅ Assigned as level_2 under: PEMASYHURAN DARIPADA TUAN YANG DI-PERTUA
+
+Processing line [30]: Yang ikhlas, t.t "YANG DI-PERTUA DEWAN RAKYAT"
+   Normalized: YANG IKHLAS TT YANG DIPERTUA DEWAN RAKYAT
+    Best L2 match score: 0.53 (matched to: PEMASYHURAN DARIPADA TUAN YANG DI-PERTUA)
+    Best L1 match score: 0.55 (matched to: PEMASYHURAN DARIPADA TUAN YANG DI-PERTUA)
+ ⚠️ Fallback: treated as level_1 via exp1
+
+Processing line [31]: URUSAN MESYUARAT
+   Normalized: URUSAN MESYUARAT
+    Best L2 match score: 1.00 (matched to: PEMASYHURAN DARIPADA TUAN YANG DI-PERTUA)
+ ✅ Assigned as level_2 under: PEMASYHURAN DARIPADA TUAN YANG DI-PERTUA
+
+Processing line [34]: CUTI KEPADA AHLI - KEBENARAN
+   Normalized: CUTI KEPADA AHLI  KEBENARAN
+    Best L2 match score: 1.00 (matched to: PEMASYHURAN DARIPADA TUAN YANG DI-PERTUA)
+ ✅ Assigned as level_2 under: PEMASYHURAN DARIPADA TUAN YANG DI-PERTUA
+
+Processing line [36]: JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN
+   Normalized: JAWAPANJAWAPAN LISAN BAGI PERTANYAANPERTANYAAN
+    Best L2 match score: 0.44 (matched to: PEMASYHURAN DARIPADA TUAN YANG DI-PERTUA)
+    Best L1 match score: 1.00 (matched to: JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN)
+ ✅ Assigned as level_1: JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN
+
+Processing line [240]: USUL-USUL
+   Normalized: USULUSUL
+    Best L2 match score: 0.36 (matched to: JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN)
+    Best L1 match score: 0.16 (matched to: MENGANGKAT SUMPAH)
+ ⚠️ Fallback: treated as level_1 via exp1
+
+Processing line [241]: JALAN-JALAN MASUK KE PARLIMEN
+   Normalized: JALANJALAN MASUK KE PARLIMEN
+    Best L2 match score: 0.86 (matched to: JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN)
+ ✅ Assigned as level_2 under: JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN
+
+Processing line [247]: USUL
+   Normalized: USUL
+    Best L2 match score: 0.30 (matched to: PEMASYHURAN DARIPADA TUAN YANG DI-PERTUA)
+    Best L1 match score: 0.19 (matched to: MENGANGKAT SUMPAH)
+ ⚠️ Fallback: treated as level_1 via exp1
+
+Processing line [248]: MENJUNJUNG KASIH TITAH UCAPAN SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG
+   Normalized: MENJUNJUNG KASIH TITAH UCAPAN SERI PADUKA BAGINDA YANG DIPERTUAN AGONG
+    Best L2 match score: 0.86 (matched to: PEMASYHURAN DARIPADA TUAN YANG DI-PERTUA)
+ ✅ Assigned as level_2 under: PEMASYHURAN DARIPADA TUAN YANG DI-PERTUA
+
+Processing line [639]: TITAH SERI PADUKA BAGINDA YANG DI-PERTUAN AGONG AL-WATHIQU BILLAH TUANKU MIZAN ZAINAL ABIDIN IBNI ALMARHUM SULTAN MAHMUD AL-MUKTAFI BILLAH SHAH
+   Normalized: TITAH SERI PADUKA BAGINDA YANG DIPERTUAN AGONG ALWATHIQU BILLAH TUANKU MIZAN ZAINAL ABIDIN IBNI ALMARHUM SULTAN MAHMUD ALMUKTAFI BILLAH SHAH
+    Best L2 match score: 0.51 (matched to: JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN)
+    Best L1 match score: 0.29 (matched to: PEMASYHURAN DARIPADA TUAN YANG DI-PERTUA)
+ ⚠️ Fallback: treated as level_1 via exp1
+Found timestamp: 12.06 tgh. - hour: 12, minute: 6
+Found timestamp: 12.47 tgh. - hour: 12, minute: 47
+Found timestamp: 2.33 ptg. - hour: 14, minute: 33
+Found timestamp: 3.12 ptg. - hour: 15, minute: 12
+Found timestamp: 4.28 ptg. - hour: 16, minute: 28
+
+✅ Saved to processed/dewannegara/dn_2007-05-07.csv
+[INFO] Speech columns: Index(['level_1', 'level_2', 'level_3', 'timestamp', 'author', 'speech',
+       'index', 'date', 'house'],
+      dtype='object')
+[INFO] Valid position a: 0
+[INFO] Valid position b: 0
+[INFO] Name matches: 138/318
+[INFO] Null authors: 180/318
+[INFO] Constituency A matches: 139/318
+[INFO] Still null authors: 179/318
+[INFO] Constituency B matches: 139/318
+[INFO] Still null authors: 179/318
+[INFO] Position A matches: 139/318
+[INFO] Still null authors: 179/318
+[INFO] Position B matches: 139/318
+[INFO] Match rate: 43.71% (139/318 records)
+Sample matched rows (speaker is NOT null):
+    index                                             author author_id                               speaker
+4       4  Menteri di Jabatan Perdana Menteri [Dato' Seri...    2368.0  MOHAMED NAZRI BIN TAN SRI ABDUL AZIZ
+5       5  Timbalan Menteri di Jabatan Perdana Menteri [D...    5038.0              SUHAILI BIN ABDUL RAHMAN
+22     22  Menteri di Jabatan Perdana Menteri [Dato' Seri...    2368.0  MOHAMED NAZRI BIN TAN SRI ABDUL AZIZ
+27     27  Menteri di Jabatan Perdana Menteri [Dato' Seri...    2368.0  MOHAMED NAZRI BIN TAN SRI ABDUL AZIZ
+29     29                                Tuan Lee Sing Chooi   20887.0                         LEE TIAN SING
+31     31                                Tuan Lee Sing Chooi   20887.0                         LEE TIAN SING
+32     32            Dato' Seri Mohamed Nazri bin Abdul Aziz    2368.0  MOHAMED NAZRI BIN TAN SRI ABDUL AZIZ
+33     33                   Dr. Haji Mohd. Puad bin Zarkashi    3506.0                MOHD PUAD BIN ZARKASHI
+34     34            Dato' Seri Mohamed Nazri bin Abdul Aziz    2368.0  MOHAMED NAZRI BIN TAN SRI ABDUL AZIZ
+36     36            Dato' Seri Mohamed Nazri bin Abdul Aziz    2368.0  MOHAMED NAZRI BIN TAN SRI ABDUL AZIZ
+37     37                 Dato' Hajah Samsiah binti Samsudin   20832.0      JAMILAH @ HALIMAH BINTI SULAIMAN
+38     38            Dato' Seri Mohamed Nazri bin Abdul Aziz    2368.0  MOHAMED NAZRI BIN TAN SRI ABDUL AZIZ
+40     40  Setiausaha Parlimen Kementerian Perdagangan An...    2436.0                           TAN YEE KEW
+44     44                       Datin Paduka Dr. Tan Yee Kew    2436.0                           TAN YEE KEW
+46     46                  Dato' Musa bin Haji Sheikh Fadzir    3310.0            ABD AZIZ BIN SHEIKH FADZIR
+48     48                                 Tuan Ismail Kassim    3285.0                      ISMAIL BIN KASIM
+50     50                       Datin Paduka Dr. Tan Yee Kew    2436.0                           TAN YEE KEW
+53     53                           Dato' Seri S. Samy Vellu   21229.0         VELL PAARI A/L TUN SAMY VELLU
+56     56                Dato' Haji Kamarudin bin Haji Ambok    3311.0                  KAMARUDIN BIN JAFFAR
+57     57                           Dato' Seri S. Samy Vellu   21229.0         VELL PAARI A/L TUN SAMY VELLU
+Sample unmatched rows (speaker IS NULL):
+   index                                             author author_id
+0      0                                               None      None
+1      1                                               None      None
+2      2  Ahli Yang Berhormat yang tersebut di bawah ini...      None
+3      3                                Tuan Yang di-Pertua      None
+6      6                                               None      None
+
+Inserting payload to DB ...
+
+Sending request to backend...
+✅ Inserted to DB

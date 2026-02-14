@@ -46,3 +46,15 @@ move_arkib_pdfs_job = define_asset_job(
     "move_arkib_pdfs_job",
     selection=[assets.dg_move_arkib_pdf_to_s3_root],
 )
+
+
+sittings_legacy_job = define_asset_job(
+    "sittings_legacy_job",
+    selection=[assets.dg_legacy_sitting]
+)
+
+
+register_sitting_legacy_partition_job = define_asset_job(
+    name="register_sitting_legacy_partition_job",
+    selection=["noop_partition_registration"],
+)

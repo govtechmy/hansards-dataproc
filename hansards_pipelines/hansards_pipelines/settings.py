@@ -89,6 +89,12 @@ HANSARD_DB_URL: Optional[str] = get_env_str("HANSARD_DB_URL")
 ARKIB_PARTITION_MIN_YEAR: Optional[int] = get_env_int("ARKIB_PARTITION_MIN_YEAR", 2025)
 ARKIB_PARTITION_MAX_YEAR: Optional[int] = get_env_int("ARKIB_PARTITION_MAX_YEAR", 2026) or None
 
+LEGACY_PARTITION_MIN_YEAR: Optional[int] = get_env_int("LEGACY_PARTITION_MIN_YEAR", 1959)
+LEGACY_PARTITION_MAX_YEAR: Optional[int] = get_env_int("LEGACY_PARTITION_MAX_YEAR", 2007) or None
+
 # Constants for arkib sittings partition
 READY_QUEUE_KEY = "arkib/queue/arkib_partitions.ready.json"
 PENDING_QUEUE_KEY = "arkib/queue/arkib_partitions.pending.json"
+
+# Constants for legacy sittings partition
+LEGACY_READY_QUEUE_KEY = "legacy/queue/legacy_partitions.ready.json"

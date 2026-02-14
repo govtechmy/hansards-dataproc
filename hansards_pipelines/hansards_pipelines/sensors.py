@@ -1,33 +1,19 @@
 from dagster import (
-    run_status_sensor,
     sensor,
     DagsterRunStatus,
-    RunStatusSensorContext,
     SensorEvaluationContext,
-    AssetMaterialization,
-    asset_sensor,
     RunRequest,
-    SkipReason,
     RunsFilter,
     SensorResult,
-    AssetKey,
-    define_asset_job,
-    EventRecordsFilter,
-    DagsterEventType,
 )
-import requests
-import datetime
 import json
-from hansards_pipelines.utils.text_utils import get_sitting_object
-from hansards_pipelines.utils.discord_utils import send_discord_message
 from hansards_pipelines.assets import (
     sitting_partitions_def,
-    S3_DATAPROC_BUCKET,
+    sitting_legacy_partitions_def,
     s3_client,
 )
-from hansards_pipelines.jobs import sittings_job, move_arkib_pdfs_job
-from hansards_pipelines.assets import FRONTEND_URL, S3_PUBLIC_BUCKET
-from hansards_pipelines.settings import PENDING_QUEUE_KEY, READY_QUEUE_KEY
+from hansards_pipelines.jobs import sittings_job, move_arkib_pdfs_job, sittings_legacy_job, register_sitting_legacy_partition_job
+from hansards_pipelines.settings import PENDING_QUEUE_KEY, READY_QUEUE_KEY, S3_DATAPROC_BUCKET
 
 
 @sensor(job=sittings_job, minimum_interval_seconds=900)
@@ -163,222 +149,82 @@ def trigger_sittings_job_arkib_sensor(context):
     )
 
 
-@run_status_sensor(run_status=DagsterRunStatus.SUCCESS, job_selection=[sittings_job])
-def my_discord_on_run_frontend_success(context: RunStatusSensorContext):
+
+@sensor(job=sittings_legacy_job, minimum_interval_seconds=300)
+def trigger_sittings_legacy_job(context):
     """
-    Send a notification to Discord when a Dagster run succeeds.
-
-    This sensor uses a Discord webhook to post messages about successful pipeline runs.
-    Configure the DISCORD_WEBHOOK_URL environment variable to use this sensor.
-
-    This sensor is triggered when the revalidate_frontend job succeeds. However, tagging to the revalidate_frontend job
-    does not capture the Materialized Result metadata from the asset.
+    Trigger sittings_legacy_job for partitions listed in legacy_sittings.ready.json.
     """
 
-    # Get information about the run
-    context.log.info(f"Event: {context.dagster_event}")
-    run = context.dagster_run
-    context.log.info(f"Run : {run}")
-    run_id = run.run_id
-    job_name = run.job_name
-    if context.partition_key:
-        partition_key = context.partition_key
-        sitting_object = get_sitting_object(partition_key)
-        hansard_route = f"/hansard/{sitting_object['house_display']}/{sitting_object['proper_date_str']}"
-        fe_url = f"{FRONTEND_URL}{hansard_route}"
-    else:
-        partition_key = "unknown"
-        fe_url = "unknown"
-    if run.asset_selection:
-        asset_key = next(iter(run.asset_selection))
-        asset_name = asset_key.path[-1] if asset_key and asset_key.path else job_name
-    else:
-        asset_name = (
-            run.step_keys_to_execute[0] if run.step_keys_to_execute else job_name
-        )
-
-    # Format completion time
-    completion_time = datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC")
-
-    # run config: run_config={'ops': {'revalidate_frontend': {'config': {'partition': 'DN-10032025'}}}}
-    # run_config = run.run_config
-    # if (
-    #     run_config
-    #     and "ops" in run_config
-    #     and "revalidate_frontend" in run_config["ops"]
-    #     and "config" in run_config["ops"]["revalidate_frontend"]
-    #     and "partition" in run_config["ops"]["revalidate_frontend"]["config"]
-    # ):
-    #     partition = run_config["ops"]["revalidate_frontend"]["config"]["partition"]
-    #     sitting_object = get_sitting_object(partition)
-    #     hansard_route = f"/hansard/{sitting_object['house_display']}/{sitting_object['proper_date_str']}"
-    #     fe_url = f"{FRONTEND_URL}{hansard_route}"
-    # else:
-    #     raise ValueError("No partition found in run config")
-
-    # metadata not available after tagging to the revalidate_frontend job
-    # if (
-    #     "metadata" in context.dagster_event
-    #     and context.dagster_event.metadata
-    #     and "hansard_route" in context.dagster_event.metadata
-    # ):
-    #     fe_url = f"{FRONTEND_URL}{context.dagster_event.metadata['hansard_route']}"
-    # else:
-    #     raise ValueError("No hansard route found in metadata")
-
-    message_fields = [
-        # {"name": "Partition", "value": partition_key, "inline": True},
-        {"name": "FE Link", "value": f"[View in FE]({fe_url})", "inline": True},
-        {"name": "Run ID", "value": run_id, "inline": True},
-        {"name": "Completed At", "value": completion_time, "inline": True},
-    ]
-    footer = {"text": "Hansards Data Pipeline"}
-
-    # Send the message to Discord
+    LEGACY_READY_QUEUE_KEY = "legacy/queue/legacy_partitions.ready.json"
     try:
-        send_discord_message(
-            run_id,
-            f"✅ {asset_name} Successful",
-            3066993,
-            message_fields,
-            footer,
-            context,
+        obj = s3_client.get_object(
+            Bucket=S3_DATAPROC_BUCKET,
+            Key=LEGACY_READY_QUEUE_KEY,
         )
-        context.log.info(f"Successfully sent Discord notification for run {run_id}")
-    except Exception as e:
-        context.log.error(f"Failed to send Discord notification: {str(e)}")
+    except s3_client.exceptions.ClientError:
+        return SensorResult()
 
+    payload = json.loads(obj["Body"].read())
+    partitions = payload.get("partitions", [])
 
-@run_status_sensor(run_status=DagsterRunStatus.FAILURE)
-def my_discord_on_run_failure(context: RunStatusSensorContext):
-    """
-    Send a notification to Discord when a Dagster run fails.
+    if not partitions:
+        return SensorResult()
 
-    This sensor uses a Discord webhook to post messages about failed pipeline runs.
-    Configure the DISCORD_WEBHOOK_URL environment variable to use this sensor.
-    """
-    # Get information about the run
-    context.log.info(f"Event: {context.dagster_event}")
-    run = context.dagster_run
-    context.log.info(f"Run : {run}")
-    if context.partition_key:
-        partition_key = context.partition_key
-    else:
-        partition_key = "unknown"
-
-    run_id = run.run_id
-    job_name = run.job_name
-
-    # Format completion time
-    failure_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S UTC")
-
-    # Create message content
-    message_fields = [
-        {"name": "Partition", "value": partition_key, "inline": True},
-        {"name": "Run ID", "value": run_id, "inline": True},
-        {"name": "Failed At", "value": failure_time, "inline": True},
+    run_requests = [
+        RunRequest(
+            partition_key=p,
+            run_key=f"legacy-{p}",
+            tags={
+                "pdf_source": "legacy",
+                "range": "1959_2007",
+            },
+        )
+        for p in partitions
     ]
-    footer = {"text": "Hansards Data Pipeline"}
-    # Stack trace in description
-    stack_trace, failure_node_handle = extract_stack_trace(context.dagster_event)
-    description = f"Stack trace:\n```\n{stack_trace}```"
-    # Send the message to Discord
-    try:
-        send_discord_message(
-            run_id,
-            f"❌ {failure_node_handle} Failed",
-            15158332,
-            message_fields,
-            footer,
-            context,
-            description=description,
-        )
-        context.log.info(
-            f"Successfully sent Discord notification for failed run {run_id}"
-        )
-    except Exception as e:
-        context.log.error(f"Failed to send Discord notification: {str(e)}")
+
+    return SensorResult(
+        run_requests=run_requests,
+        dynamic_partitions_requests=[
+            sitting_legacy_partitions_def.build_add_request(partitions)
+        ],
+    )
 
 
-# @asset_sensor(
-#     asset_key=AssetKey("insert_to_prod_db"),
-#     job=revalidate_frontend_job,
-#     minimum_interval_seconds=60,
-# )
-# def ingest_success_sensor(context: SensorEvaluationContext, asset_event):
-
-#     materialization: AssetMaterialization = (
-#         asset_event.dagster_event.event_specific_data.materialization
-#     )
-
-#     if materialization.metadata["revalidate_frontend"]:
-#         yield RunRequest(
-#             run_key=context.cursor,
-#             run_config={
-#                 "ops": {
-#                     "revalidate_frontend": {
-#                         "config": {"partition": materialization.partition}
-#                     }
-#                 }
-#             },
-#         )
-#     else:
-#         yield SkipReason("Asset materialization skipped for backfills")
-
-
-def extract_stack_trace(dagster_event):
-    """Extract stack trace from a DagsterEvent, preserving newlines.
-
-    Handles both main error stack trace and cause stack trace if available.
+@sensor(
+    job=register_sitting_legacy_partition_job,
+    minimum_interval_seconds=300,
+)
+def trigger_register_sitting_legacy_partition_sensor(context):
     """
-    full_trace = []
-    failure_node_handle = None
-    # Try to get the main stack trace
-    if (
-        hasattr(dagster_event, "event_specific_data")
-        and dagster_event.event_specific_data
-    ):
-        if (
-            hasattr(dagster_event.event_specific_data, "error")
-            and dagster_event.event_specific_data.error
-        ):
-            # Direct error on the event
-            error_info = dagster_event.event_specific_data.error
-            if hasattr(error_info, "stack") and error_info.stack:
-                full_trace.append("Main error:")
-                full_trace.append("".join(error_info.stack))
+    This sensor checks for the presence of a legacy_partitions.ready.json file in S3.
+    If found, it reads the partitions listed in the file and registers them
+    as dynamic partitions for the 'sitting_legacy_partitions_def' partitioned asset.
+    It also triggers runs of the 'register_sitting_legacy_partition_job' for each partition.
+    """
 
-            # Check for cause
-            if hasattr(error_info, "cause") and error_info.cause:
-                full_trace.append("\nCaused by:")
-                full_trace.append("".join(error_info.cause.stack))
+    LEGACY_READY_QUEUE_KEY = "legacy/queue/legacy_partitions.ready.json"
 
-        # Check for step failure event
-        elif hasattr(dagster_event.event_specific_data, "first_step_failure_event"):
-            step_event = dagster_event.event_specific_data.first_step_failure_event
-            if (
-                hasattr(step_event, "event_specific_data")
-                and step_event.event_specific_data
-            ):
-                if (
-                    hasattr(step_event.event_specific_data, "error")
-                    and step_event.event_specific_data.error
-                ):
-                    error_info = step_event.event_specific_data.error
-                    # if hasattr(error_info, "stack") and error_info.stack:
-                    #     full_trace.append("Main error:")
-                    #     full_trace.append("".join(error_info.stack))
+    try:
+        obj = s3_client.get_object(
+            Bucket=S3_DATAPROC_BUCKET,
+            Key=LEGACY_READY_QUEUE_KEY,
+        )
+    except s3_client.exceptions.ClientError:
+        return SensorResult()
 
-                    # Check for cause
-                    if hasattr(error_info, "cause") and error_info.cause:
-                        full_trace.append("\nCaused by:")
-                        full_trace.append("".join(error_info.cause.stack))
-            if hasattr(step_event, "step_handle") and step_event.step_handle:
-                step_handle = step_event.step_handle
-                if hasattr(step_handle, "node_handle") and step_handle.node_handle:
-                    failure_node_handle = step_handle.node_handle.name
+    payload = json.loads(obj["Body"].read())
+    partitions = payload.get("partitions", [])
 
-    return (
-        "\n".join(full_trace) if full_trace else "No stack trace available",
-        failure_node_handle,
+    if not partitions:
+        return SensorResult()
+
+    return SensorResult(
+        dynamic_partitions_requests=[
+            sitting_legacy_partitions_def.build_add_request(partitions)
+        ],
+        run_requests=[
+            RunRequest(run_key=f"register-{p}", partition_key=None)
+            for p in partitions
+        ],
     )
