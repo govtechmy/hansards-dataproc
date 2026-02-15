@@ -1008,3 +1008,32 @@ def get_sitting_object(pdf_file_key: str, logger=None):
         "renamed_filename": renamed_filename,  # dr_2024-12-12
         "renamed_filename_key": renamed_filename_key,  # dewanrakyat/dr_2024-12-12.pdf
     }
+
+
+def is_number_only(text: str) -> bool:
+    """
+    Returns True if text is only a number with optional trailing punctuation.
+    Handles variations like "1", "1.", "1 )", "1 :".
+    """
+    s = text.strip()
+    
+    if not s:
+        return False
+    i = 0
+    n = len(s)
+
+    while i < n and s[i].isdigit():
+        i += 1
+ 
+    if i == 0:
+        return False
+    while i < n and s[i].isspace():
+        i += 1
+
+    if i == n:
+        return True
+    
+    if i == n - 1 and s[i] in ".:)":
+        return True
+    
+    return False

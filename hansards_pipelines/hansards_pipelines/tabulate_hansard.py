@@ -8,22 +8,7 @@ import csv
 import pandas as pd
 from thefuzz import process
 from datetime import datetime
-
-
-def is_structural_noise(line: str) -> bool:
-    """
-    True if line contains no letters (A–Z / a–z).
-    Covers: 1., 2., -, •, roman numerals, OCR junk.
-    """
-    return not re.search(r'[A-Za-z]', line)
-
-
-# Pattern to detect number-only lines (handles variations like "1", "1.", "1 )", "1 :")
-number_only_pattern = re.compile(r'^\d+\s*[\.\):]?$')
-
-def is_number_only(text):
-    """Returns True if text is only a number (with optional punctuation)."""
-    return bool(number_only_pattern.match(text.strip()))
+from .utils.text_utils import is_number_only
 
 
 def more_than_30_minutes_past(time_str1, time_str2):
@@ -921,7 +906,6 @@ def tabulate(
                 else:
                     # Skip this row if it's just a number
                     print(f"[FILTER] Skipping number-only in level_2: '{text[row_id]}'")
-                    row_id += 1
                     continue
                 while (
                     row_id + add_idx < num_rows
@@ -1036,7 +1020,6 @@ def tabulate(
                 else:
                     # Skip this row if it's just a number
                     print(f"[FILTER] Skipping number-only in level_2: '{text[row_id]}'")
-                    row_id += 1
                     continue
                 # allow empty lines as separator
                 while (
