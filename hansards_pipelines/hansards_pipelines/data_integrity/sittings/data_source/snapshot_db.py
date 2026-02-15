@@ -1,8 +1,15 @@
 """
 Structured snapshot of parliamentary sittings from database.
 
-Uploads artifact to S3 at:
-checks/sittings/db/runs/YYYYMMDD/run_TIMESTAMP.json
+Output is written to:
+    checks/sittings/db/runs/YYYYMMDD/run_TIMESTAMP.json
+
+Usage:
+    python snapshot_db.py [--category CATEGORY] [--term term] [--term-range START END] [--dry-run]
+
+Example:
+    python snapshot_db.py --category dewannegara --term 14
+    python snapshot_db.py --term-range 13 14 -- dry-run
 """
 
 from __future__ import annotations
