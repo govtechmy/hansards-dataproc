@@ -1418,7 +1418,7 @@ def noop_partition_registration():
     """
     return None
 
-from hansards_pipelines.data_integrity.sittings.data_source.utils.upload_partition_artifact import upload_partition_artifact
+from hansards_pipelines.data_integrity.sittings.data_source.utils.upload_partition_snapshot import upload_partition_snapshot
 from hansards_pipelines.data_integrity.sittings.data_source.snapshot_db import fetch_db_structure, build_snapshot as build_db_snapshot
 from hansards_pipelines.data_integrity.sittings.data_source.snapshot_portal_parlimen import run_source_snapshot, build_snapshot as build_portal_snapshot
 from hansards_pipelines.data_integrity.sittings.data_source.verify_sittings_integrity import build_integrity_report
@@ -1453,7 +1453,7 @@ def snapshot_portal_parlimen(context: AssetExecutionContext):
 
     context.log.info(f"Uploading snapshot to S3...")
 
-    upload_partition_artifact(
+    upload_partition_snapshot(
         layer="source",
         house=house,
         term=term,
@@ -1490,7 +1490,7 @@ def snapshot_db_sittings(context):
 
     context.log.info(f"Uploading snapshot to S3...")
 
-    upload_partition_artifact(
+    upload_partition_snapshot(
         layer="db",
         house=house,
         term=term,
@@ -1501,7 +1501,7 @@ def snapshot_db_sittings(context):
     return snapshot
 
 @asset(partitions_def=HANSARD_PARTITIONS, group_name="data_integrity")
-def sittings_integrity_report(
+def report_sittings_integrity(
     context: AssetExecutionContext,
     snapshot_portal_parlimen,
     snapshot_db_sittings,
@@ -1538,7 +1538,7 @@ def sittings_integrity_report(
 
     context.log.info(f"Uploading integrity report to S3...")
 
-    upload_partition_artifact(
+    upload_partition_snapshot(
         layer="integrity",
         house=house,
         term=term,

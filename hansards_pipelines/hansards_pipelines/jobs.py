@@ -58,3 +58,11 @@ register_sitting_legacy_partition_job = define_asset_job(
     name="register_sitting_legacy_partition_job",
     selection=["noop_partition_registration"],
 )
+
+report_sittings_integrity_job = define_asset_job(
+    name="report_sittings_integrity_job",
+    selection=[
+        "snapshot_db_sittings",
+        "snapshot_portal_parlimen",
+        "report_sittings_integrity",
+    ])
