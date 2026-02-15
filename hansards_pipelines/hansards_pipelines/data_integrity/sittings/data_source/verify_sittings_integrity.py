@@ -2,6 +2,9 @@
 This script compares the sitting counts from the source (portal.parlimen.gov.my) against the counts in the database for a given scope (category, term, session). 
 - It generates a report of any discrepancies found and uploads the report to S3.
 
+Uploads report to S3 at:
+checks/sittings/integrity/runs/{run_id}/integrity.json
+
 Usage:
     python verify_sittings_integrity.py [--category CATEGORY] [--term term] [--term-range START END] [--dry-run]
 Example:

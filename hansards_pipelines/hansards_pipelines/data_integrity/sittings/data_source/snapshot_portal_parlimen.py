@@ -2,17 +2,16 @@
 Structured snapshot of parliamentary Hansard sittings from source website.
 
 Output is written to:
-    data_integrity/sittings/source/runs/YYYYMMDD/run_TIMESTAMP.json
+    checks/sittings/source/runs/YYYYMMDD/run_TIMESTAMP.json
 
 Usage:
-    python snapshot_parlimen_portal.py [--category CATEGORY] [--term term] [--term-range START END]
+    python snapshot_parlimen_portal.py [--category CATEGORY] [--term term] [--term-range START END] [--max-nodes N] [--dry-run]
 
 Example:
     python snapshot_parlimen_portal.py --category dewannegara --term 14
     python snapshot_parlimen_portal.py --term-range 13 14
+    python snapshot_parlimen_portal.py --category dewanrakyat --term 14 --dry-run --max-nodes 10
 
-Usage:
-    python snapshot_portal_parlimen.py --category dewannegara --term 14 --max-nodes 10
 """
 
 from __future__ import annotations
