@@ -37,7 +37,7 @@ from hansards_pipelines.settings import (
 
 DEFAULT_HOUSES: Tuple[str, ...] = ("dewanrakyat", "dewannegara", "kamarkhas")
 
-DATAPROC_PREFIX: str = "checks/sittings/pdf_csv"
+DATAPROC_PREFIX: str = "checks/s3/pdf_csv"
 
 def get_db_connection():
     if not HANSARD_DB_URL:

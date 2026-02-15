@@ -1418,10 +1418,10 @@ def noop_partition_registration():
     """
     return None
 
-from hansards_pipelines.data_integrity.sittings.data_source.utils.upload_partition_snapshot import upload_partition_snapshot
-from hansards_pipelines.data_integrity.sittings.data_source.snapshot_db import fetch_db_structure, build_snapshot as build_db_snapshot
-from hansards_pipelines.data_integrity.sittings.data_source.snapshot_portal_parlimen import run_source_snapshot, build_snapshot as build_portal_snapshot
-from hansards_pipelines.data_integrity.sittings.data_source.verify_sittings_integrity import build_integrity_report
+from hansards_pipelines.data_integrity.sittings.source.utils.upload_partition_snapshot import upload_partition_snapshot
+from hansards_pipelines.data_integrity.sittings.source.snapshot_db import fetch_db_structure, build_snapshot as build_db_snapshot
+from hansards_pipelines.data_integrity.sittings.source.snapshot_portal_parlimen import run_source_snapshot, build_snapshot as build_portal_snapshot
+from hansards_pipelines.data_integrity.sittings.source.validate_sittings_integrity import build_integrity_report
 from datetime import datetime, timezone
 
 

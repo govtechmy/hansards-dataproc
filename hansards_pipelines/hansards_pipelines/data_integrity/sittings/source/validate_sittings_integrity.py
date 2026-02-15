@@ -6,11 +6,11 @@ Uploads report to S3 at:
 checks/sittings/integrity/runs/{run_id}/integrity.json
 
 Usage:
-    python verify_sittings_integrity.py [--category CATEGORY] [--term term] [--term-range START END] [--dry-run]
+    python validate_sittings_integrity.py [--category CATEGORY] [--term term] [--term-range START END] [--dry-run]
 Example:
-    python verify_sittings_integrity.py --category dewannegara --term 14
-    python verify_sittings_integrity.py --term-range 13 14
-    python verify_sittings_integrity.py --category dewanrakyat --term 14 --dry-run
+    python validate_sittings_integrity.py --category dewannegara --term 14
+    python validate_sittings_integrity.py --term-range 13 14
+    python validate_sittings_integrity.py --category dewanrakyat --term 14 --dry-run
 
 """
 
@@ -30,12 +30,12 @@ from hansards_pipelines.settings import (
     S3_DATAPROC_BUCKET,
 )
 
-from hansards_pipelines.data_integrity.sittings.data_source.snapshot_portal_parlimen import (
+from hansards_pipelines.data_integrity.sittings.source.snapshot_portal_parlimen import (
     run_source_snapshot,
     build_snapshot as build_source_snapshot,
 )
 
-from hansards_pipelines.data_integrity.sittings.data_source.snapshot_db import (
+from hansards_pipelines.data_integrity.sittings.source.snapshot_db import (
     fetch_db_structure,
     build_snapshot as build_db_snapshot,
 )
