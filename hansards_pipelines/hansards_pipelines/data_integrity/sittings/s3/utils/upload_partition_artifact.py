@@ -1,13 +1,11 @@
-from hansards_pipelines.settings import AWS_REGION, S3_DATAPROC_BUCKET
+import json
 from datetime import datetime, timezone
 import boto3
-import json
+from hansards_pipelines.settings import AWS_REGION, S3_DATAPROC_BUCKET
 
-
-def upload_partition_snapshot(
+def upload_partition_artifact_by_house(
     layer: str,
     house: str,
-    term: int,
     payload: dict,
     run_id: str,
 ):
@@ -17,9 +15,8 @@ def upload_partition_snapshot(
     s3 = session.client("s3")
 
     run_key = (
-        f"checks/sittings/{layer}/"
+        f"checks/{layer}/"
         f"{house}/"
-        f"{term}/"
         f"runs/run_{timestamp}_{run_id}.json"
     )
 
@@ -31,9 +28,8 @@ def upload_partition_snapshot(
     )
 
     latest_key = (
-        f"checks/sittings/{layer}/"
+        f"checks/{layer}/"
         f"{house}/"
-        f"{term}/"
         f"latest.json"
     )
 

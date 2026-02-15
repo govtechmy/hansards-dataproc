@@ -1418,14 +1418,14 @@ def noop_partition_registration():
     """
     return None
 
-from hansards_pipelines.data_integrity.sittings.source.utils.upload_partition_snapshot import upload_partition_snapshot
+from hansards_pipelines.data_integrity.sittings.source.utils.upload_partition_artifact import upload_partition_artifact_by_house_term
 from hansards_pipelines.data_integrity.sittings.source.snapshot_db import fetch_db_structure, build_snapshot as build_db_snapshot
 from hansards_pipelines.data_integrity.sittings.source.snapshot_portal_parlimen import run_source_snapshot, build_snapshot as build_portal_snapshot
 from hansards_pipelines.data_integrity.sittings.source.validate_sittings_integrity import build_integrity_report
 from datetime import datetime, timezone
 
 
-from hansards_pipelines.partitions import HANSARD_PARTITIONS
+from hansards_pipelines.partitions import HANSARD_PARTITIONS, HOUSE_PARTITIONS
 
 @asset(partitions_def=HANSARD_PARTITIONS, group_name="data_integrity")
 def snapshot_portal_parlimen(context: AssetExecutionContext):
@@ -1453,7 +1453,7 @@ def snapshot_portal_parlimen(context: AssetExecutionContext):
 
     context.log.info(f"Uploading snapshot to S3...")
 
-    upload_partition_snapshot(
+    upload_partition_artifact_by_house_term(
         layer="source",
         house=house,
         term=term,
@@ -1490,7 +1490,7 @@ def snapshot_db_sittings(context):
 
     context.log.info(f"Uploading snapshot to S3...")
 
-    upload_partition_snapshot(
+    upload_partition_artifact_by_house_term(
         layer="db",
         house=house,
         term=term,
@@ -1538,7 +1538,7 @@ def report_sittings_integrity(
 
     context.log.info(f"Uploading integrity report to S3...")
 
-    upload_partition_snapshot(
+    upload_partition_artifact_by_house_term(
         layer="integrity",
         house=house,
         term=term,
@@ -1548,3 +1548,29 @@ def report_sittings_integrity(
 
 
     return report
+
+from hansards_pipelines.data_integrity.sittings.s3.snapshot_pdf_csv import run_for_houses
+from hansards_pipelines.data_integrity.sittings.s3.utils.upload_partition_artifact import upload_partition_artifact_by_house
+
+@asset(partitions_def=HOUSE_PARTITIONS, group_name="data_integrity")
+def report_s3_downloads_pdf_csv(context: AssetExecutionContext):
+
+    house = context.partition_key
+
+    context.log.info(f"Running S3 downloadsPDF/CSV validation for house={house}")
+    report = run_for_houses([house])
+
+    context.log.info(f"Uploading PDF/CSV validation report to S3...")
+    upload_partition_artifact_by_house(
+        layer="s3",
+        house=house,
+        payload=report,
+        run_id=context.run_id,
+    )
+
+    context.log.info(f"Completed PDF/CSV validation. Uploaded report to S3.")
+
+    return report
+
+
+
