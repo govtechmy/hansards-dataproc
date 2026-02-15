@@ -1417,3 +1417,134 @@ def noop_partition_registration():
     This is manually triggered to create the partitions.
     """
     return None
+
+from hansards_pipelines.data_integrity.sittings.data_source.utils.upload_partition_artifact import upload_partition_artifact
+from hansards_pipelines.data_integrity.sittings.data_source.snapshot_db import fetch_db_structure, build_snapshot as build_db_snapshot
+from hansards_pipelines.data_integrity.sittings.data_source.snapshot_portal_parlimen import run_source_snapshot, build_snapshot as build_portal_snapshot
+from hansards_pipelines.data_integrity.sittings.data_source.verify_sittings_integrity import build_integrity_report
+from datetime import datetime, timezone
+
+
+from hansards_pipelines.partitions import HANSARD_PARTITIONS
+
+@asset(partitions_def=HANSARD_PARTITIONS, group_name="data_integrity")
+def snapshot_portal_parlimen(context: AssetExecutionContext):
+
+    partition = context.partition_key.keys_by_dimension
+    house = partition["house"]
+    term = int(partition["term"])
+
+    context.log.info(f"Starting Portal Parlimen sitting snapshot for house={house}, term={term}, run_id={context.run_id}...")
+
+    structure = run_source_snapshot(
+        category=house,
+        term=term,
+        term_range=None,
+    )
+
+    context.log.info(f"Building snapshot...")
+
+    snapshot = build_portal_snapshot(
+        structure,
+        category=house,
+        term=term,
+        term_range=None,
+    )
+
+    context.log.info(f"Uploading snapshot to S3...")
+
+    upload_partition_artifact(
+        layer="source",
+        house=house,
+        term=term,
+        payload=snapshot,
+        run_id=context.run_id,
+    )
+
+    return snapshot
+
+
+@asset(partitions_def=HANSARD_PARTITIONS, group_name="data_integrity")
+def snapshot_db_sittings(context):
+
+    partition = context.partition_key.keys_by_dimension
+    house = partition["house"]
+    term = int(partition["term"])
+
+    context.log.info(f"Starting DB sitting snapshot for house={house}, term={term}, run_id={context.run_id}...")
+
+    structure = fetch_db_structure(
+        category=house,
+        term=term,
+        term_range=None,
+    )
+
+    context.log.info(f"Building snapshot...")
+
+    snapshot = build_db_snapshot(
+        structure,
+        category=house,
+        term=term,
+        term_range=None,
+    )
+
+    context.log.info(f"Uploading snapshot to S3...")
+
+    upload_partition_artifact(
+        layer="db",
+        house=house,
+        term=term,
+        payload=snapshot,
+        run_id=context.run_id,
+    )
+
+    return snapshot
+
+@asset(partitions_def=HANSARD_PARTITIONS, group_name="data_integrity")
+def sittings_integrity_report(
+    context: AssetExecutionContext,
+    snapshot_portal_parlimen,
+    snapshot_db_sittings,
+):
+    """
+    Compare the portal snapshot and db snapshot for the given partition, and generate an integrity report.
+    """
+
+    partition = context.partition_key.keys_by_dimension
+    house = partition["house"]
+    term = int(partition["term"])
+
+    context.log.info(f"Starting integrity check for house={house}, term={term}...")
+
+    run_id = context.run_id
+
+    scope = {
+        "run_id": run_id,
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "scope": {
+            "category": house,
+            "term": term,
+            "term_range": None,
+        }
+    }
+
+    context.log.info(f"Building integrity report...")
+
+    report = build_integrity_report(
+        snapshot_portal_parlimen,
+        snapshot_db_sittings,
+        scope,
+    )
+
+    context.log.info(f"Uploading integrity report to S3...")
+
+    upload_partition_artifact(
+        layer="integrity",
+        house=house,
+        term=term,
+        payload=report,
+        run_id=context.run_id,
+    )
+
+
+    return report

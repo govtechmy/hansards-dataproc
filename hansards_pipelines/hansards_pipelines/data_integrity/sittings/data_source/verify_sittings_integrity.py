@@ -30,12 +30,12 @@ from hansards_pipelines.settings import (
     S3_DATAPROC_BUCKET,
 )
 
-from snapshot_portal_parlimen import (
+from hansards_pipelines.data_integrity.sittings.data_source.snapshot_portal_parlimen import (
     run_source_snapshot,
     build_snapshot as build_source_snapshot,
 )
 
-from snapshot_db import (
+from hansards_pipelines.data_integrity.sittings.data_source.snapshot_db import (
     fetch_db_structure,
     build_snapshot as build_db_snapshot,
 )
