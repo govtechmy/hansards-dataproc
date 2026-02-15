@@ -198,12 +198,16 @@ def crawl_structured(
         # Meeting level
         if hierarchy["meeting"] is not None:
             meeting_key = str(hierarchy["meeting"])
-            structure[house_name]["term"][term_key]["session"][session_key]["meeting"].setdefault(
+            meeting_obj = structure[house_name]["term"][term_key]["session"][session_key]["meeting"].setdefault(
                 meeting_key,
-                {"sitting_count": 0},
+                {"sitting_count": 0, "filenames": []},
             )
 
-            structure[house_name]["term"][term_key]["session"][session_key]["meeting"][meeting_key]["sitting_count"] += len(sittings)
+            meeting_obj["sitting_count"] += len(sittings)
+
+            for s in sittings:
+                meeting_obj["filenames"].append(s["filename"])
+
 
     # Continue recursion
     for child in sorted(

@@ -41,6 +41,7 @@ from snapshot_db import (
 )
 
 LOG_LEVEL = logging.INFO
+MAX_FILENAMES_PER_ISSUE = 50
 
 
 # -------------------------------------------------
@@ -102,6 +103,37 @@ def normalize_meeting_value(meeting: str) -> str:
         return "0"
 
     return meeting
+
+
+def build_file_diff(
+    source_files: set[str],
+    db_files: set[str],
+) -> Dict:
+    """
+    Build a diff of missing and extra files between source and DB, with truncation if the list exceeds MAX_FILENAMES_PER_ISSUE.
+    """
+
+    missing_files = sorted(source_files - db_files)
+    extra_files = sorted(db_files - source_files)
+
+    truncated = False
+
+    if len(missing_files) > MAX_FILENAMES_PER_ISSUE:
+        missing_files = missing_files[:MAX_FILENAMES_PER_ISSUE]
+        truncated = True
+
+    if len(extra_files) > MAX_FILENAMES_PER_ISSUE:
+        extra_files = extra_files[:MAX_FILENAMES_PER_ISSUE]
+        truncated = True
+
+    return {
+        "missing_file_count": len(source_files - db_files),
+        "missing_filenames": missing_files,
+        "extra_file_count": len(db_files - source_files),
+        "extra_filenames": extra_files,
+        "truncated": truncated,
+    }
+
 
 # -------------------------------------------------
 # DIFF ENGINE
@@ -227,76 +259,69 @@ def build_integrity_report(source: Dict, db: Dict, scope: Dict) -> Dict:
                 unormalized_src_meetings = src_sessions[session].get("meeting", {})
                 unormalized_db_meetings = db_sessions[session].get("meeting", {})
 
-                src_meetings = {normalize_meeting_value(m): v for m, v in unormalized_src_meetings.items()}
+                src_meetings = {
+                    normalize_meeting_value(m): v
+                    for m, v in unormalized_src_meetings.items()
+                }
 
-                db_meetings = {normalize_meeting_value(m): v for m, v in unormalized_db_meetings.items()}
+                db_meetings = {
+                    normalize_meeting_value(m): v
+                    for m, v in unormalized_db_meetings.items()
+                }
 
                 for meeting in sorted(set(src_meetings) | set(db_meetings)):
 
-                    src_count = src_meetings.get(meeting, {}).get("sitting_count", 0)
-                    db_count = db_meetings.get(meeting, {}).get("sitting_count", 0)
+                    src_payload = src_meetings.get(meeting, {})
+                    db_payload = db_meetings.get(meeting, {})
 
+                    src_count = src_payload.get("sitting_count", 0)
+                    db_count = db_payload.get("sitting_count", 0)
+
+                    issue_type = None
 
                     if meeting not in db_meetings:
                         structural_counts["missing_meetings"] += 1
                         issue_type = "MISSING_IN_DB"
 
-                        issue = {
-                            "type": issue_type,
-                            "level": "meeting",
-                            "category": house,
-                            "term": int(term),
-                            "session": int(session),
-                            "meeting": int(meeting),
-                            "source_sitting_count": src_count,
-                            "db_sitting_count": 0,
-                            "action": map_issue_to_action(issue_type)
-                        }
-
-                        issues.append(issue)
-
                     elif meeting not in src_meetings:
                         structural_counts["extra_meetings"] += 1
                         issue_type = "EXTRA_IN_DB"
-
-                        issue = {
-                            "type": issue_type,
-                            "level": "meeting",
-                            "category": house,
-                            "term": int(term),
-                            "session": int(session),
-                            "meeting": int(meeting),
-                            "source_sitting_count": 0,
-                            "db_sitting_count": db_count,
-                            "action": map_issue_to_action(issue_type)
-                        }
-
-                        issues.append(issue)
 
                     elif src_count != db_count:
                         quantitative_issue_count += 1
                         issue_type = "COUNT_MISMATCH"
 
-                        issue = {
-                            "type": issue_type,
-                            "level": "meeting",
-                            "category": house,
-                            "term": int(term),
-                            "session": int(session),
-                            "meeting": int(meeting),
-                            "source_sitting_count": src_count,
-                            "db_sitting_count": db_count,
-                            "action": map_issue_to_action(issue_type)
-                        }
-
-                        issues.append(issue)
-
                     else:
                         continue
+
+                    issue = {
+                        "type": issue_type,
+                        "level": "meeting",
+                        "category": house,
+                        "term": int(term),
+                        "session": int(session),
+                        "meeting": int(meeting),
+                        "source_sitting_count": src_count,
+                        "db_sitting_count": db_count,
+                        "action": map_issue_to_action(issue_type),
+                    }
+
+                    # -------- FILE DIFF ENRICHMENT (CLEANLY SEPARATED) --------
+                    src_files = set(src_payload.get("filenames", []))
+                    db_files = set(db_payload.get("filenames", []))
+
+                    if src_files or db_files:
+                        issue["file_diff"] = build_file_diff(
+                            src_files,
+                            db_files,
+                        )
+
+                    issues.append(issue)
 
                     issue_summary_by_level["meeting"] += 1
                     issue_summary_by_type[issue_type] += 1
                     issue_summary_by_term[term] += 1
+
 
     sitting_delta = (
         db["summary"]["total_sittings"]
