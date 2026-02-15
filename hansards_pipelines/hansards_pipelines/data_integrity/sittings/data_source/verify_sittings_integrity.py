@@ -44,6 +44,39 @@ LOG_LEVEL = logging.INFO
 
 
 # -------------------------------------------------
+# ACTION MAPPING
+# -------------------------------------------------
+
+def map_issue_to_action(issue_type: str) -> Dict:
+    """
+    Maps issue type to deterministic action policy.
+    """
+
+    if issue_type == "MISSING_IN_DB":
+        return {
+            "name": "TRIGGER_INGEST",
+            "safe_to_auto_execute": True,
+        }
+
+    if issue_type == "EXTRA_IN_DB":
+        return {
+            "name": "FLAG_FOR_REVIEW",
+            "safe_to_auto_execute": False,
+        }
+
+    if issue_type == "COUNT_MISMATCH":
+        return {
+            "name": "REPROCESS_MEETING",
+            "safe_to_auto_execute": True,
+        }
+
+    return {
+        "name": "NO_ACTION",
+        "safe_to_auto_execute": False,
+    }
+
+
+# -------------------------------------------------
 # DIFF ENGINE
 # -------------------------------------------------
 
@@ -79,33 +112,45 @@ def build_integrity_report(source: Dict, db: Dict, scope: Dict) -> Dict:
 
         for term in sorted(set(src_terms) | set(db_terms)):
 
+            # ---------------- TERM LEVEL ----------------
+
             if term not in db_terms:
                 structural_counts["missing_terms"] += 1
-                issue_summary_by_level["term"] += 1
-                issue_summary_by_type["MISSING_IN_DB"] += 1
-                issue_summary_by_term[term] += 1
+                issue_type = "MISSING_IN_DB"
 
-                issues.append({
-                    "type": "MISSING_IN_DB",
+                issue = {
+                    "type": issue_type,
                     "level": "term",
                     "category": house,
                     "term": int(term),
-                })
+                    "action": map_issue_to_action(issue_type)
+                }
+
+                issues.append(issue)
+                issue_summary_by_level["term"] += 1
+                issue_summary_by_type[issue_type] += 1
+                issue_summary_by_term[term] += 1
                 continue
 
             if term not in src_terms:
                 structural_counts["extra_terms"] += 1
-                issue_summary_by_level["term"] += 1
-                issue_summary_by_type["EXTRA_IN_DB"] += 1
-                issue_summary_by_term[term] += 1
+                issue_type = "EXTRA_IN_DB"
 
-                issues.append({
-                    "type": "EXTRA_IN_DB",
+                issue = {
+                    "type": issue_type,
                     "level": "term",
                     "category": house,
                     "term": int(term),
-                })
+                    "action": map_issue_to_action(issue_type)
+                }
+
+                issues.append(issue)
+                issue_summary_by_level["term"] += 1
+                issue_summary_by_type[issue_type] += 1
+                issue_summary_by_term[term] += 1
                 continue
+
+            # ---------------- SESSION LEVEL ----------------
 
             src_sessions = src_terms[term].get("session", {})
             db_sessions = db_terms[term].get("session", {})
@@ -114,33 +159,43 @@ def build_integrity_report(source: Dict, db: Dict, scope: Dict) -> Dict:
 
                 if session not in db_sessions:
                     structural_counts["missing_sessions"] += 1
-                    issue_summary_by_level["session"] += 1
-                    issue_summary_by_type["MISSING_IN_DB"] += 1
-                    issue_summary_by_term[term] += 1
+                    issue_type = "MISSING_IN_DB"
 
-                    issues.append({
-                        "type": "MISSING_IN_DB",
+                    issue = {
+                        "type": issue_type,
                         "level": "session",
                         "category": house,
                         "term": int(term),
                         "session": int(session),
-                    })
+                        "action": map_issue_to_action(issue_type)
+                    }
+
+                    issues.append(issue)
+                    issue_summary_by_level["session"] += 1
+                    issue_summary_by_type[issue_type] += 1
+                    issue_summary_by_term[term] += 1
                     continue
 
                 if session not in src_sessions:
                     structural_counts["extra_sessions"] += 1
-                    issue_summary_by_level["session"] += 1
-                    issue_summary_by_type["EXTRA_IN_DB"] += 1
-                    issue_summary_by_term[term] += 1
+                    issue_type = "EXTRA_IN_DB"
 
-                    issues.append({
-                        "type": "EXTRA_IN_DB",
+                    issue = {
+                        "type": issue_type,
                         "level": "session",
                         "category": house,
                         "term": int(term),
                         "session": int(session),
-                    })
+                        "action": map_issue_to_action(issue_type)
+                    }
+
+                    issues.append(issue)
+                    issue_summary_by_level["session"] += 1
+                    issue_summary_by_type[issue_type] += 1
+                    issue_summary_by_term[term] += 1
                     continue
+
+                # ---------------- MEETING LEVEL ----------------
 
                 src_meetings = src_sessions[session].get("meeting", {})
                 db_meetings = db_sessions[session].get("meeting", {})
@@ -152,12 +207,10 @@ def build_integrity_report(source: Dict, db: Dict, scope: Dict) -> Dict:
 
                     if meeting not in db_meetings:
                         structural_counts["missing_meetings"] += 1
-                        issue_summary_by_level["meeting"] += 1
-                        issue_summary_by_type["MISSING_IN_DB"] += 1
-                        issue_summary_by_term[term] += 1
+                        issue_type = "MISSING_IN_DB"
 
-                        issues.append({
-                            "type": "MISSING_IN_DB",
+                        issue = {
+                            "type": issue_type,
                             "level": "meeting",
                             "category": house,
                             "term": int(term),
@@ -165,17 +218,17 @@ def build_integrity_report(source: Dict, db: Dict, scope: Dict) -> Dict:
                             "meeting": int(meeting),
                             "source_sitting_count": src_count,
                             "db_sitting_count": 0,
-                        })
-                        continue
+                            "action": map_issue_to_action(issue_type)
+                        }
 
-                    if meeting not in src_meetings:
+                        issues.append(issue)
+
+                    elif meeting not in src_meetings:
                         structural_counts["extra_meetings"] += 1
-                        issue_summary_by_level["meeting"] += 1
-                        issue_summary_by_type["EXTRA_IN_DB"] += 1
-                        issue_summary_by_term[term] += 1
+                        issue_type = "EXTRA_IN_DB"
 
-                        issues.append({
-                            "type": "EXTRA_IN_DB",
+                        issue = {
+                            "type": issue_type,
                             "level": "meeting",
                             "category": house,
                             "term": int(term),
@@ -183,17 +236,17 @@ def build_integrity_report(source: Dict, db: Dict, scope: Dict) -> Dict:
                             "meeting": int(meeting),
                             "source_sitting_count": 0,
                             "db_sitting_count": db_count,
-                        })
-                        continue
+                            "action": map_issue_to_action(issue_type)
+                        }
 
-                    if src_count != db_count:
+                        issues.append(issue)
+
+                    elif src_count != db_count:
                         quantitative_issue_count += 1
-                        issue_summary_by_level["meeting"] += 1
-                        issue_summary_by_type["COUNT_MISMATCH"] += 1
-                        issue_summary_by_term[term] += 1
+                        issue_type = "COUNT_MISMATCH"
 
-                        issues.append({
-                            "type": "COUNT_MISMATCH",
+                        issue = {
+                            "type": issue_type,
                             "level": "meeting",
                             "category": house,
                             "term": int(term),
@@ -201,9 +254,18 @@ def build_integrity_report(source: Dict, db: Dict, scope: Dict) -> Dict:
                             "meeting": int(meeting),
                             "source_sitting_count": src_count,
                             "db_sitting_count": db_count,
-                        })
+                            "action": map_issue_to_action(issue_type)
+                        }
 
-    # Deltas
+                        issues.append(issue)
+
+                    else:
+                        continue
+
+                    issue_summary_by_level["meeting"] += 1
+                    issue_summary_by_type[issue_type] += 1
+                    issue_summary_by_term[term] += 1
+
     sitting_delta = (
         db["summary"]["total_sittings"]
         - source["summary"]["total_sittings"]
