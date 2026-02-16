@@ -379,15 +379,19 @@ def possible_author(text, bold, italics, idx, num_rows, house, is_pipeline=False
 def insert_speech(current):
     if current["speech"] == "":
         return []
-    # Skip speeches where level_2 is ONLY a number
-    if current["level_2"] and is_number_only(current["level_2"]):
-        print(f"[INSERT_SPEECH_FILTER] Blocking number-only level_2: '{current['level_2']}' (level_1: '{current['level_1']}')")
-        return []
+    
+    # Create a copy of level_2 to avoid modifying the current state
+    level_2_value = current["level_2"]
+    
+    # Clear number-only level_2 values (like "1.", "2.", etc.) but keep the speech
+    if level_2_value and is_number_only(level_2_value):
+        print(f"[INSERT_SPEECH_FILTER] Clearing number-only level_2: '{level_2_value}' (level_1: '{current['level_1']}')")
+        level_2_value = ""
     
     return [
         [
             current["level_1"],
-            current["level_2"],
+            level_2_value,
             current["level_3"],
             current["timestamp"],
             current["author"],
