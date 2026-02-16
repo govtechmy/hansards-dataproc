@@ -66,3 +66,9 @@ report_sittings_integrity_job = define_asset_job(
         "snapshot_portal_parlimen",
         "report_sittings_integrity",
     ])
+
+
+report_overall_sittings_integrity_job = define_asset_job(
+    name="report_overall_sittings_integrity_job",
+    selection=["report_overall_sittings_integrity"],
+)

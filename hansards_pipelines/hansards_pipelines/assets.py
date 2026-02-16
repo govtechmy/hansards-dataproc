@@ -1538,13 +1538,15 @@ def report_sittings_integrity(
 
     context.log.info(f"Uploading integrity report to S3...")
 
-    upload_partition_artifact_by_house_term(
+    key = upload_partition_artifact_by_house_term(
         layer="integrity",
         house=house,
         term=term,
         payload=report,
         run_id=context.run_id,
     )
+
+    context.log.info(f"Completed integrity report. Uploaded report to {key}")
 
 
     return report
@@ -1561,16 +1563,35 @@ def report_s3_downloads_pdf_csv(context: AssetExecutionContext):
     report = run_for_houses([house])
 
     context.log.info(f"Uploading PDF/CSV validation report to S3...")
-    upload_partition_artifact_by_house(
+    key = upload_partition_artifact_by_house(
         layer="s3",
         house=house,
         payload=report,
         run_id=context.run_id,
     )
 
-    context.log.info(f"Completed PDF/CSV validation. Uploaded report to S3.")
+    context.log.info(f"Completed PDF/CSV validation. Uploaded report to {key}")
 
     return report
 
+from hansards_pipelines.data_integrity.sittings.source.build_sittings_global_matrix import build_sittings_global_matrix, consolidate_all_latest_json_into_one
+from hansards_pipelines.data_integrity.sittings.source.utils.upload_global_artifact import upload_global_artifact
 
+@asset(group_name="data_integrity")
+def report_overall_sittings_integrity(context: AssetExecutionContext):
+
+    houses = HOUSE_PARTITIONS.get_partition_keys()
+
+    context.log.info("Building global reconciliation matrix...")
+
+    result = consolidate_all_latest_json_into_one(houses)
+
+    key = upload_global_artifact(
+        layer="report",
+        payload=result,
+    )
+
+    context.log.info(f"Uploaded global matrix to {key}")
+
+    return result
 

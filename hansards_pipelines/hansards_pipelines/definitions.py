@@ -37,6 +37,7 @@ defs = Definitions(
         jobs.sittings_legacy_job,
         jobs.register_sitting_legacy_partition_job,
         jobs.report_sittings_integrity_job,
+        jobs.report_overall_sittings_integrity_job
     ],
     sensors=[
         sittings_sensor,
