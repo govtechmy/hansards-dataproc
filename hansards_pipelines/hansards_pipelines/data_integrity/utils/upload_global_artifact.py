@@ -7,7 +7,7 @@ def upload_global_artifact(layer: str, payload: dict):
     session = boto3.Session(region_name=AWS_REGION)
     s3 = session.client("s3")
 
-    key = f"checks/{layer}/all_latest.json"
+    key = f"checks/{layer}/report.json"
 
     s3.put_object(
         Bucket=S3_DATAPROC_BUCKET,

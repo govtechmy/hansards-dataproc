@@ -1574,49 +1574,37 @@ def report_s3_downloads_pdf_csv(context: AssetExecutionContext):
 
     return report
 
-from hansards_pipelines.data_integrity.sittings.source.build_sittings_global_matrix import build_sittings_global_matrix, consolidate_all_latest_json_into_one
+from hansards_pipelines.data_integrity.sittings.source.build_sittings_comparison_source_db import build_sittings_integrity_comparison_source_db, consolidate_all_latest_json_into_one
 from hansards_pipelines.data_integrity.utils.upload_global_artifact import upload_global_artifact
-
-
-from hansards_pipelines.data_integrity.utils.build_governance_report import build_governance_report
-from hansards_pipelines.data_integrity.utils.upload_report_entrypoint import upload_report_entrypoint
-
 
 @asset(group_name="data_integrity")
 def report_overall_sittings_integrity(context: AssetExecutionContext):
 
     houses = HOUSE_PARTITIONS.get_partition_keys()
 
-    context.log.info("Consolidating all latest.json into a single file...")
+    context.log.info("Consolidating all sitting's integrity status by term (latest.json) into a single file...")
     summary = consolidate_all_latest_json_into_one(houses)
 
-    context.log.info("Building global meeting matrix...")
-    matrix = build_sittings_global_matrix(houses)
+    context.log.info("Building sitting's source & db comparison detail...")
+    matrix = build_sittings_integrity_comparison_source_db(houses)
 
-    context.log.info("Uploading global term summary...")
+    context.log.info("Uploading report for sitting's integrity status by term...")
     summary_key = upload_global_artifact(
-        layer="report/global_term_summary",
+        layer="report/sittings_integrity_status_by_term",
         payload=summary,
     )
 
-    context.log.info("Uploading global meeting matrix...")
+    context.log.info("Uploading report for sitting's source & db comparison detail...")
     matrix_key = upload_global_artifact(
-        layer="report/global_meeting_matrix",
+        layer="report/sittings_source_db_comparison_detail",
         payload=matrix,
     )
 
-    context.log.info("Building governance entrypoint...")
-    governance_payload = build_governance_report(summary, matrix)
-
-    governance_key = upload_report_entrypoint(governance_payload)
-
-    context.log.info(f"Uploaded summary to {summary_key}")
-    context.log.info(f"Uploaded matrix to {matrix_key}")
-    context.log.info(f"Uploaded governance entrypoint to {governance_key}")
+    context.log.info(f"Uploaded report to {summary_key}")
+    context.log.info(f"Uploaded report to {matrix_key}")
 
     return {
         "summary_key": summary_key,
         "matrix_key": matrix_key,
-        "governance_key": governance_key,
     }
 
