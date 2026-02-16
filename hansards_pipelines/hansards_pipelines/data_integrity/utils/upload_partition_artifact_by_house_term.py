@@ -16,12 +16,9 @@ def upload_partition_artifact_by_house_term(
     session = boto3.Session(region_name=AWS_REGION)
     s3 = session.client("s3")
 
-    run_key = (
-        f"checks/sittings/{layer}/"
-        f"{house}/"
-        f"{term}/"
-        f"runs/run_{timestamp}_{run_id}.json"
-    )
+    prefix=f"checks/sittings/{layer}/{house}/{term}"
+
+    run_key = f"{prefix}/runs/run_{timestamp}_{run_id}.json"
 
     s3.put_object(
         Bucket=S3_DATAPROC_BUCKET,
@@ -30,19 +27,9 @@ def upload_partition_artifact_by_house_term(
         ContentType="application/json",
     )
 
-    latest_key = (
-        f"checks/sittings/{layer}/"
-        f"{house}/"
-        f"{term}/"
-        f"latest.json"
-    )
+    latest_key = f"{prefix}/latest.json"
 
-    latest_payload = {
-        "run_id": run_id,
-        "generated_at": timestamp,
-        "status": payload.get("status"),
-        "summary": payload.get("summary"),
-    }
+    latest_payload = payload
 
     s3.put_object(
         Bucket=S3_DATAPROC_BUCKET,

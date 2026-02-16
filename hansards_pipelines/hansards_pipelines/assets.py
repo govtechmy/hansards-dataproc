@@ -1418,7 +1418,7 @@ def noop_partition_registration():
     """
     return None
 
-from hansards_pipelines.data_integrity.sittings.source.utils.upload_partition_artifact import upload_partition_artifact_by_house_term
+from hansards_pipelines.data_integrity.utils.upload_partition_artifact_by_house_term import upload_partition_artifact_by_house_term
 from hansards_pipelines.data_integrity.sittings.source.snapshot_db import fetch_db_structure, build_snapshot as build_db_snapshot
 from hansards_pipelines.data_integrity.sittings.source.snapshot_portal_parlimen import run_source_snapshot, build_snapshot as build_portal_snapshot
 from hansards_pipelines.data_integrity.sittings.source.validate_sittings_integrity import build_integrity_report
@@ -1552,7 +1552,7 @@ def report_sittings_integrity(
     return report
 
 from hansards_pipelines.data_integrity.sittings.s3.snapshot_pdf_csv import run_for_houses
-from hansards_pipelines.data_integrity.sittings.s3.utils.upload_partition_artifact import upload_partition_artifact_by_house
+from hansards_pipelines.data_integrity.utils.upload_partition_artifact_by_house import upload_partition_artifact_by_house
 
 @asset(partitions_def=HOUSE_PARTITIONS, group_name="data_integrity")
 def report_s3_downloads_pdf_csv(context: AssetExecutionContext):
@@ -1575,23 +1575,48 @@ def report_s3_downloads_pdf_csv(context: AssetExecutionContext):
     return report
 
 from hansards_pipelines.data_integrity.sittings.source.build_sittings_global_matrix import build_sittings_global_matrix, consolidate_all_latest_json_into_one
-from hansards_pipelines.data_integrity.sittings.source.utils.upload_global_artifact import upload_global_artifact
+from hansards_pipelines.data_integrity.utils.upload_global_artifact import upload_global_artifact
+
+
+from hansards_pipelines.data_integrity.utils.build_governance_report import build_governance_report
+from hansards_pipelines.data_integrity.utils.upload_report_entrypoint import upload_report_entrypoint
+
 
 @asset(group_name="data_integrity")
 def report_overall_sittings_integrity(context: AssetExecutionContext):
 
     houses = HOUSE_PARTITIONS.get_partition_keys()
 
-    context.log.info("Building global reconciliation matrix...")
+    context.log.info("Consolidating all latest.json into a single file...")
+    summary = consolidate_all_latest_json_into_one(houses)
 
-    result = consolidate_all_latest_json_into_one(houses)
+    context.log.info("Building global meeting matrix...")
+    matrix = build_sittings_global_matrix(houses)
 
-    key = upload_global_artifact(
-        layer="report",
-        payload=result,
+    context.log.info("Uploading global term summary...")
+    summary_key = upload_global_artifact(
+        layer="report/global_term_summary",
+        payload=summary,
     )
 
-    context.log.info(f"Uploaded global matrix to {key}")
+    context.log.info("Uploading global meeting matrix...")
+    matrix_key = upload_global_artifact(
+        layer="report/global_meeting_matrix",
+        payload=matrix,
+    )
 
-    return result
+    context.log.info("Building governance entrypoint...")
+    governance_payload = build_governance_report(summary, matrix)
+
+    governance_key = upload_report_entrypoint(governance_payload)
+
+    context.log.info(f"Uploaded summary to {summary_key}")
+    context.log.info(f"Uploaded matrix to {matrix_key}")
+    context.log.info(f"Uploaded governance entrypoint to {governance_key}")
+
+    return {
+        "summary_key": summary_key,
+        "matrix_key": matrix_key,
+        "governance_key": governance_key,
+    }
 
