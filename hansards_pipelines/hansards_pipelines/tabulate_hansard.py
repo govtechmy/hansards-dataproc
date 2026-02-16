@@ -346,6 +346,16 @@ def get_author_and_speech(text, bold, italics, house, warn="", is_pipeline=False
 def possible_author(text, bold, italics, idx, num_rows, house, is_pipeline=False):
     # check if this line or the combination of the next is a valid author
     # return true if so
+    
+    # Author detection must meet these criteria:
+    # Must end with colon ":"
+    current_line = text[idx].strip()
+    if not current_line.endswith(":"):
+        return False
+
+    if "[" not in current_line and "(" not in current_line:
+        return False
+    
     if (
         get_author_and_speech(
             text[idx],
@@ -357,10 +367,17 @@ def possible_author(text, bold, italics, idx, num_rows, house, is_pipeline=False
         != ""
     ):
         return True
+    
     if idx + 1 < num_rows and not (
         text[idx + 1].startswith("[") and italics[idx + 1][1] == "1"
     ):
         concat_rows = f"{text[idx].strip()} {text[idx + 1]}"
+        
+        if not concat_rows.strip().endswith(":"):
+            return False
+        if "[" not in concat_rows and "(" not in concat_rows:
+            return False
+        
         concat_rows_bold = f"{bold[idx].strip()} {bold[idx + 1]}"
         concat_rows_italics = f"{italics[idx].strip()} {italics[idx + 1]}"
         return (
@@ -818,6 +835,51 @@ def tabulate(
                 current["speech_bold"] = ""
                 current["speech_italics"] = ""
                 current["timestamp"] = text[row_id].strip()
+                continue
+
+            if re.match(r"^\d{1,2}\.\s+", text[row_id].strip()):
+                # Check if this is a question (has minta/meminta/bertanya)
+                if re.search(r"(minta|Minta|meminta|Meminta|bertanya|Bertanya)\b", text[row_id]):
+                    # Insert previous speech before processing this question
+                    speeches += insert_speech(current)
+                    # Now add this question as new speech with no author
+                    current["author"] = ""
+                    current["speech"] = text[row_id]
+                    current["speech_bold"] = bold[row_id]
+                    current["speech_italics"] = italics[row_id]
+                    # Extract the numbering as level_2
+                    match = re.match(r"^(\d{1,2}\.)\s+", text[row_id].strip())
+                    if match:
+                        current["level_2"] = match.group(1)
+                    continue
+
+            # Question format: "Datuk Name [Constituency]." on one line
+            #                  "minta Menteri..." on next line
+            # This should be treated as speech, not author speaking
+            if (
+                row_id + 1 < num_rows
+                and text[row_id + 1].strip().lower().startswith(("minta", "meminta", "bertanya"))
+                and text[row_id].strip().endswith(".")
+                and not text[row_id].strip().endswith(":")
+                and ("[" in text[row_id] or re.match(r"^\d{1,2}\.", text[row_id].strip()))
+            ):
+                # Treat as continuation of speech instead of author
+                current["speech"] += text[row_id]
+                current["speech_bold"] += bold[row_id]
+                current["speech_italics"] += italics[row_id]
+                continue
+
+            # Detect DR/DN/KDKK question format (same-line format, no colon)
+            # Example:
+            # Datuk Halimah binti Mohd. Sadique [Tenggara] minta Menteri ...
+            if re.search(
+                r"\[[^\]]+\]\s+(minta|Minta|meminta|Meminta|bertanya|Bertanya)\b",
+                text[row_id],
+            ):
+                # Treat entire line as speech, NOT author
+                current["speech"] += text[row_id]
+                current["speech_bold"] += bold[row_id]
+                current["speech_italics"] += italics[row_id]
                 continue
 
             (
