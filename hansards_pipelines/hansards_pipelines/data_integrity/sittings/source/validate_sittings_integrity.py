@@ -49,44 +49,6 @@ MAX_FILENAMES_PER_ISSUE = 50
 # ACTION MAPPING
 # -------------------------------------------------
 
-# def map_issue_to_action(issue_type: str) -> Dict:
-#     """
-#     Maps issue type to deterministic action.
-#     """
-
-#     if issue_type == "MISSING_IN_DB":
-#         return {
-#             "name": "INGEST_MEETING_INTO_DB",
-#             "details": (
-#                 "This meeting exists in the source, but does not exist in the database. "
-#                 "Add the meeting in db. Run the pipeline to ingest the sitting data for this meeting. "
-#                 "If the meeting already exists but with a different meeting number, investigate and correct the meeting number in the database to ensure it matches the source."
-#             ),
-#         }
-
-#     if issue_type == "EXTRA_IN_DB":
-#         return {
-#             "name": "REVIEW_MEETING_IN_DB",
-#             "details": (
-#                 "This meeting exists in the database, but not in the source. "
-#                 "Investigate whether the meeting is valid. If it is invalid or incorrectly mapped, correct or remove it."
-#             ),
-#         }
-
-#     if issue_type == "SITTING_COUNT_MISMATCH_IN_MEETING":
-#         return {
-#             "name": "REVIEW_SITTING_IN_DB",
-#             "details": (
-#                 "The meeting exists in both source and database, but the number of sittings differs. "
-#                 "Investigate the missing sitting(s) in the database and add them if they are valid. Run the pipeline to ingest into db. "
-#             ),
-#         }
-
-#     return {
-#         "name": "NO_ACTION",
-#         "details": "No automated action is defined for this issue type.",
-#     }
-
 def map_issue_to_action(issue_type: str, level: str) -> Dict:
     """
     Maps issue type + level to deterministic action.
@@ -106,7 +68,7 @@ def map_issue_to_action(issue_type: str, level: str) -> Dict:
             "name": f"REVIEW_{level.upper()}",
             "details": (
                 f"This {level} exists in the database but not in the source (Portal Parlimen). "
-                f"Validate whether the {level} is valid. If invalid, correct or remove it. Ensure that the sittings under this {level} are also corrected/removed accordingly."
+                f"Validate whether the {level} is valid. If valid, keep it in db. If invalid, correct or remove it. Ensure that the sittings under this {level} are also corrected/removed accordingly."
             ),
         }
 
@@ -325,17 +287,32 @@ def build_integrity_report(source: Dict, db: Dict, scope: Dict) -> Dict:
                     structural_counts["missing_sessions"] += 1
                     issue_type = "MISSING_IN_DB"
 
+                    src_meetings = src_sessions[session].get("meeting", {})
+
+                    total_sittings = 0
+                    src_all_files = []
+
+                    for meeting_payload in src_meetings.values():
+                        total_sittings += meeting_payload.get("sitting_count", 0)
+                        src_all_files.extend(meeting_payload.get("filenames", []))
+
                     issue = {
                         "type": issue_type,
                         "level": "session",
                         "category": house,
                         "term": int(term),
                         "session": int(session),
+                        "source_sitting_count": total_sittings,
+                        "file_diff": {
+                            "missing_file_count": len(src_all_files),
+                            "missing_filenames": src_all_files[:MAX_FILENAMES_PER_ISSUE],
+                            "truncated": len(src_all_files) > MAX_FILENAMES_PER_ISSUE,
+                        },
                         "action": map_issue_to_action(issue_type, "session")
-
                     }
 
                     issues.append(issue)
+
                     issue_summary_by_level["session"] += 1
                     issue_summary_by_type[issue_type] += 1
                     issue_summary_by_term[term] += 1
@@ -345,16 +322,32 @@ def build_integrity_report(source: Dict, db: Dict, scope: Dict) -> Dict:
                     structural_counts["extra_sessions"] += 1
                     issue_type = "EXTRA_IN_DB"
 
+                    db_meetings = db_sessions[session].get("meeting", {})
+
+                    total_sittings = 0
+                    db_all_files = []
+
+                    for meeting_payload in db_meetings.values():
+                        total_sittings += meeting_payload.get("sitting_count", 0)
+                        db_all_files.extend(meeting_payload.get("filenames", []))
+
                     issue = {
                         "type": issue_type,
                         "level": "session",
                         "category": house,
                         "term": int(term),
                         "session": int(session),
+                        "db_sitting_count": total_sittings,
+                        "file_diff": {
+                            "extra_file_count": len(db_all_files),
+                            "extra_filenames": db_all_files[:MAX_FILENAMES_PER_ISSUE],
+                            "truncated": len(db_all_files) > MAX_FILENAMES_PER_ISSUE,
+                        },
                         "action": map_issue_to_action(issue_type, "session")
                     }
 
                     issues.append(issue)
+
                     issue_summary_by_level["session"] += 1
                     issue_summary_by_type[issue_type] += 1
                     issue_summary_by_term[term] += 1
@@ -390,6 +383,7 @@ def build_integrity_report(source: Dict, db: Dict, scope: Dict) -> Dict:
                         issue_type = "MISSING_IN_DB"
 
                         structural_diff["missing_meetings"].append({
+                            "house": house,
                             "term": int(term),
                             "session": int(session),
                             "meeting": int(meeting),
@@ -453,29 +447,6 @@ def build_integrity_report(source: Dict, db: Dict, scope: Dict) -> Dict:
     total_issues = structural_issue_count + quantitative_issue_count
 
     status = "PASS" if total_issues == 0 else "FAIL"
-
-    # return {
-    #     "meta": scope,
-    #     "status": status,
-    #     "summary": {
-    #         "sitting_delta": sitting_delta,
-    #         "meeting_delta": meeting_delta,
-    #         "structural_issue_count": structural_issue_count,
-    #         "quantitative_issue_count": quantitative_issue_count,
-    #         "total_issues": total_issues
-    #     },
-    #     "issue_summary_by_level": dict(issue_summary_by_level),
-    #     "issue_summary_by_type": dict(issue_summary_by_type),
-    #     "issue_summary_by_term": dict(issue_summary_by_term),
-    #     "breakdown": {
-    #         "structural": structural_counts,
-    #         "quantitative": {
-    #             "count_mismatches": quantitative_issue_count
-    #         }
-    #     },
-    #     "structural_diff": structural_diff,
-    #     "issues": issues
-    # }
 
     # ensure deterministic ordering for cycle_diff
     for k in structural_diff:
