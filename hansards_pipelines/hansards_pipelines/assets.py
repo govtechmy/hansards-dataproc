@@ -1539,7 +1539,7 @@ def report_sittings_integrity(
     context.log.info(f"Uploading integrity report to S3...")
 
     key = upload_partition_artifact_by_house_term(
-        layer="integrity",
+        layer="integrity_check",
         house=house,
         term=term,
         payload=report,

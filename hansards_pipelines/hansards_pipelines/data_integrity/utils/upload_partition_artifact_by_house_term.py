@@ -27,7 +27,7 @@ def upload_partition_artifact_by_house_term(
         ContentType="application/json",
     )
 
-    latest_key = f"{prefix}/latest.json"
+    latest_key = f"{prefix}/latest_run.json"
 
     latest_payload = payload
 

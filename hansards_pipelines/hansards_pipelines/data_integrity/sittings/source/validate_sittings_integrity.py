@@ -3,7 +3,7 @@ This script compares the sitting counts from the source (portal.parlimen.gov.my)
 - It generates a report of any discrepancies found and uploads the report to S3.
 
 Uploads report to S3 at:
-checks/sittings/integrity/runs/{run_id}/integrity.json
+checks/sittings/integrity_check/runs/{run_id}/integrity.json
 
 Usage:
     python validate_sittings_integrity.py [--category CATEGORY] [--term term] [--term-range START END] [--dry-run]
@@ -367,7 +367,7 @@ def build_integrity_report(source: Dict, db: Dict, scope: Dict) -> Dict:
 
 def upload_to_s3(run_id: str, payload: Dict):
 
-    key = f"checks/sittings/integrity/runs/{run_id}/integrity.json"
+    key = f"checks/sittings/integrity_check/runs/{run_id}/integrity.json"
 
     session = boto3.Session(region_name=AWS_REGION)
     s3 = session.client("s3")
