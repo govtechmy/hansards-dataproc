@@ -153,12 +153,13 @@ def consolidate_all_latest_json_into_one(houses: List[str]) -> Dict:
                 "house": house,
                 "term": int(term),
                 "status": latest.get("status"),
-                "structural_issue_count": summary.get("structural_issue_count"),
-                "quantitative_issue_count": summary.get("quantitative_issue_count"),
+                "cycle_issue_count": summary.get("cycle_issue_count"),
+                "meeting_count_mismatches": summary.get("meeting_count_mismatches"),
                 "total_issues": summary.get("total_issues"),
                 "run_id": meta.get("run_id"),
                 "generated_at": meta.get("generated_at"),
             })
+
 
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(),

@@ -202,6 +202,10 @@ def build_integrity_report(source: Dict, db: Dict, scope: Dict) -> Dict:
         "missing_meetings": 0,
         "extra_meetings": 0,
     }
+    structural_diff = {
+        "missing_meetings": [],
+        "extra_meetings": [],
+    }
 
     quantitative_issue_count = 0
 
@@ -334,9 +338,22 @@ def build_integrity_report(source: Dict, db: Dict, scope: Dict) -> Dict:
                         structural_counts["missing_meetings"] += 1
                         issue_type = "MISSING_IN_DB"
 
+                        structural_diff["missing_meetings"].append({
+                            "term": int(term),
+                            "session": int(session),
+                            "meeting": int(meeting),
+                        })
+
                     elif meeting not in src_meetings:
                         structural_counts["extra_meetings"] += 1
                         issue_type = "EXTRA_IN_DB"
+
+                        structural_diff["extra_meetings"].append({
+                            "term": int(term),
+                            "session": int(session),
+                            "meeting": int(meeting),
+                        })
+
 
                     elif src_count != db_count:
                         quantitative_issue_count += 1
@@ -386,27 +403,73 @@ def build_integrity_report(source: Dict, db: Dict, scope: Dict) -> Dict:
 
     status = "PASS" if total_issues == 0 else "FAIL"
 
+    # return {
+    #     "meta": scope,
+    #     "status": status,
+    #     "summary": {
+    #         "sitting_delta": sitting_delta,
+    #         "meeting_delta": meeting_delta,
+    #         "structural_issue_count": structural_issue_count,
+    #         "quantitative_issue_count": quantitative_issue_count,
+    #         "total_issues": total_issues
+    #     },
+    #     "issue_summary_by_level": dict(issue_summary_by_level),
+    #     "issue_summary_by_type": dict(issue_summary_by_type),
+    #     "issue_summary_by_term": dict(issue_summary_by_term),
+    #     "breakdown": {
+    #         "structural": structural_counts,
+    #         "quantitative": {
+    #             "count_mismatches": quantitative_issue_count
+    #         }
+    #     },
+    #     "structural_diff": structural_diff,
+    #     "issues": issues
+    # }
+
+    # ensure deterministic ordering for cycle_diff
+    for k in structural_diff:
+        structural_diff[k] = sorted(
+            structural_diff[k],
+            key=lambda x: (x["term"], x["session"], x["meeting"])
+        )
+
     return {
         "meta": scope,
+
         "status": status,
+
         "summary": {
             "sitting_delta": sitting_delta,
             "meeting_delta": meeting_delta,
-            "structural_issue_count": structural_issue_count,
-            "quantitative_issue_count": quantitative_issue_count,
-            "total_issues": total_issues
+
+            # hierarchy-level issues (term/session/meeting existence)
+            "cycle_issue_count": structural_issue_count,
+
+            # meeting-level sitting count mismatches
+            "meeting_count_mismatches": quantitative_issue_count,
+
+            "total_issues": total_issues,
         },
-        "issue_summary_by_level": dict(issue_summary_by_level),
-        "issue_summary_by_type": dict(issue_summary_by_type),
-        "issue_summary_by_term": dict(issue_summary_by_term),
-        "breakdown": {
-            "structural": structural_counts,
-            "quantitative": {
-                "count_mismatches": quantitative_issue_count
-            }
+
+        # aggregated statistics
+        "issue_summary": {
+            "by_level": dict(issue_summary_by_level),
+            "by_type": dict(issue_summary_by_type),
+            "by_term": dict(issue_summary_by_term),
         },
-        "issues": issues
+
+        # structural hierarchy breakdown only
+        "issue_breakdown": {
+            "cycle": structural_counts
+        },
+
+        # explicit hierarchy diff (no filenames)
+        "cycle_diff": structural_diff,
+
+        # full detailed issues (includes file diff)
+        "issues": issues,
     }
+
 
 
 # -------------------------------------------------
