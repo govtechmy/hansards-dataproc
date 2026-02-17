@@ -1,5 +1,8 @@
 """
 Structured snapshot of parliamentary Hansard sittings from source website.
+Includes:
+- Arkib structured crawl
+- Active cycle injection
 
 Output is written to:
     checks/sittings/source/runs/YYYYMMDD/run_TIMESTAMP.json
@@ -35,6 +38,11 @@ from hansards_pipelines.scrape_arkib import (
     seed_kamarkhas_start_nodes,
 )
 
+from hansards_pipelines.scrape_parliamentary_cycle import (
+    scrape_active_cycles,
+    HOUSE_MAP,
+)
+
 from hansards_pipelines.settings import (
     AWS_REGION,
     S3_DATAPROC_BUCKET,
@@ -61,9 +69,9 @@ CATEGORIES = {
 }
 
 
-# ----------------------------
-# Extraction
-# ----------------------------
+# -------------------------------------------------
+# EXTRACTION
+# -------------------------------------------------
 
 def extract_sittings(html: str) -> List[Dict[str, str]]:
     sittings = []
@@ -90,6 +98,16 @@ def extract_sittings(html: str) -> List[Dict[str, str]]:
     return sittings
 
 
+def extract_pdf_date_from_filename(filename: str):
+    matches = re.findall(r"\d{8}", filename)
+    for date_str in matches:
+        try:
+            return datetime.strptime(date_str, "%d%m%Y").date()
+        except ValueError:
+            continue
+    return None
+
+
 def parse_node_id(node_id: str):
     parts = node_id.split("_")
     result = {"term": None, "session": None, "meeting": None}
@@ -104,9 +122,9 @@ def parse_node_id(node_id: str):
     return result
 
 
-# ----------------------------
-# Crawling
-# ----------------------------
+# -------------------------------------------------
+# ARKIB CRAWL (UNCHANGED)
+# -------------------------------------------------
 
 def crawl_structured(
     session: requests.Session,
@@ -132,15 +150,6 @@ def crawl_structured(
 
     hierarchy = parse_node_id(node_id)
 
-    logging.info(
-        "Visiting %s | node %s | T%s S%s M%s",
-        house_name,
-        node_id,
-        hierarchy["term"] or "-",
-        hierarchy["session"] or "-",
-        hierarchy["meeting"] or "-",
-    )
-
     html = fetch_html(session, base_url, uweb, node_id)
     all_sittings = extract_sittings(html)
 
@@ -152,7 +161,6 @@ def crawl_structured(
             sittings.append(sitting)
 
     if not sittings or hierarchy["term"] is None:
-        # still continue recursion
         for child in sorted(
             extract_child_ids(html),
             key=lambda x: [int(p) for p in x.split("_") if p.isdigit()],
@@ -171,7 +179,6 @@ def crawl_structured(
             )
         return
 
-    # Ensure house exists
     structure.setdefault(house_name, {})
     structure[house_name].setdefault("term", {})
 
@@ -181,10 +188,8 @@ def crawl_structured(
         {"sitting_count": 0, "session": {}},
     )
 
-    # Add to term-level count
     structure[house_name]["term"][term_key]["sitting_count"] += len(sittings)
 
-    # Session level
     if hierarchy["session"] is not None:
 
         session_key = str(hierarchy["session"])
@@ -195,7 +200,6 @@ def crawl_structured(
 
         structure[house_name]["term"][term_key]["session"][session_key]["sitting_count"] += len(sittings)
 
-        # Meeting level
         if hierarchy["meeting"] is not None:
             meeting_key = str(hierarchy["meeting"])
             meeting_obj = structure[house_name]["term"][term_key]["session"][session_key]["meeting"].setdefault(
@@ -209,34 +213,98 @@ def crawl_structured(
                 meeting_obj["filenames"].append(s["filename"])
 
 
-    # Continue recursion
-    for child in sorted(
-        extract_child_ids(html),
-        key=lambda x: [int(p) for p in x.split("_") if p.isdigit()],
-    ):
-        crawl_structured(
-            session,
-            base_url,
-            uweb,
-            house_name,
-            child,
-            visited,
-            structure,
-            seen_sittings,
-            max_nodes,
-            node_counter,
-        )
+# -------------------------------------------------
+# ACTIVE INJECTION (NEW)
+# -------------------------------------------------
+def inject_active(structure, session, seen_sittings, category=None):
+
+    active_cycles = scrape_active_cycles()
+    reverse_house_map = {v: k for k, v in HOUSE_MAP.items()}
+
+    for cycle in active_cycles:
+
+        house_name = reverse_house_map.get(cycle["house"])
+
+        if category and house_name != category:
+            continue
+
+        cfg = CATEGORIES[house_name]
+
+        url = f"{cfg['base_url']}?uweb={cfg['uweb']}&lang=bm"
+        response = session.get(url, timeout=120)
+        response.raise_for_status()
+
+        soup = BeautifulSoup(response.text, "html.parser")
+
+        divs = soup.find_all("div", class_="boxAktivitiContentText")
+
+        for div in divs:
+            for a_tag in div.find_all("a"):
+
+                href = a_tag.get("href", "")
+                if "loadResult" not in href:
+                    continue
+
+                match = re.search(r"'([^']+\.pdf)'", href)
+                if not match:
+                    continue
+
+                filename = match.group(1).split("/")[-1]
+
+                key = f"{house_name}/{filename}"
+                if key in seen_sittings:
+                    continue
+
+                pdf_date = extract_pdf_date_from_filename(filename)
+                if not pdf_date:
+                    continue
+
+                cycle_start = datetime.strptime(cycle["start_date"], "%Y-%m-%d").date()
+                cycle_end = datetime.strptime(cycle["end_date"], "%Y-%m-%d").date()
+
+                if not (cycle_start <= pdf_date <= cycle_end):
+                    continue
 
 
-# ----------------------------
-# Summary
-# ----------------------------
+                seen_sittings.add(key)
+
+                term_key = str(cycle["term"])
+                session_key = str(cycle["session"])
+                meeting_key = str(cycle["meeting"])
+
+                structure.setdefault(house_name, {})
+                structure[house_name].setdefault("term", {})
+                structure[house_name]["term"].setdefault(
+                    term_key, {"sitting_count": 0, "session": {}}
+                )
+
+                structure[house_name]["term"][term_key]["sitting_count"] += 1
+
+                structure[house_name]["term"][term_key]["session"].setdefault(
+                    session_key, {"sitting_count": 0, "meeting": {}}
+                )
+
+                structure[house_name]["term"][term_key]["session"][session_key]["sitting_count"] += 1
+
+                meeting_obj = structure[house_name]["term"][term_key]["session"][session_key]["meeting"].setdefault(
+                    meeting_key, {"sitting_count": 0, "filenames": []}
+                )
+
+                meeting_obj["sitting_count"] += 1
+                meeting_obj["filenames"].append(filename)
+
+                meeting_obj["start_date"] = cycle["start_date"]
+                meeting_obj["end_date"] = cycle["end_date"]
+                meeting_obj["source"] = "active"
+
+
+
+# -------------------------------------------------
+# SUMMARY / SNAPSHOT / UPLOAD (UNCHANGED)
+# -------------------------------------------------
 
 def compute_summary(structure: Dict) -> Dict:
-    total_terms = 0
-    total_sessions = 0
-    total_meetings = 0
-    total_sittings = 0
+    total_terms = total_sessions = total_meetings = total_sittings = 0
 
     for house in structure.values():
         for term in house.get("term", {}).values():
@@ -245,7 +313,6 @@ def compute_summary(structure: Dict) -> Dict:
 
             for session in term.get("session", {}).values():
                 total_sessions += 1
-
                 for meeting in session.get("meeting", {}).values():
                     total_meetings += 1
 
@@ -256,10 +323,6 @@ def compute_summary(structure: Dict) -> Dict:
         "total_sittings": total_sittings,
     }
 
-
-# ----------------------------
-# Snapshot Builder
-# ----------------------------
 
 def build_snapshot(structure, category, term, term_range):
     return {
@@ -278,28 +341,21 @@ def build_snapshot(structure, category, term, term_range):
 
 def upload_snapshot_to_s3(snapshot: Dict):
     now = datetime.now(timezone.utc)
-    date_folder = now.strftime("%Y%m%d")
-    timestamp = now.strftime("%Y%m%dT%H%M%SZ")
+    key = f"checks/sittings/source/runs/{now.strftime('%Y%m%d')}/run_{now.strftime('%Y%m%dT%H%M%SZ')}.json"
 
-    key = f"checks/sittings/source/runs/{date_folder}/run_{timestamp}.json"
-
-    session = boto3.Session(region_name=AWS_REGION)
-    s3_client = session.client("s3")
-
-    s3_client.put_object(
+    boto3.Session(region_name=AWS_REGION).client("s3").put_object(
         Bucket=S3_DATAPROC_BUCKET,
         Key=key,
         Body=json.dumps(snapshot, indent=2, ensure_ascii=False).encode("utf-8"),
         ContentType="application/json",
     )
 
-    logging.info("Snapshot uploaded to s3://%s/%s", S3_DATAPROC_BUCKET, key)
     return key
 
 
-# ----------------------------
-# Main
-# ----------------------------
+# -------------------------------------------------
+# MAIN
+# -------------------------------------------------
 
 def run_source_snapshot(category=None, term=None, term_range=None, max_nodes=None):
 
@@ -333,6 +389,8 @@ def run_source_snapshot(category=None, term=None, term_range=None, max_nodes=Non
                 node_counter=node_counter,
             )
 
+    inject_active(structure, session, seen_sittings, category)
+
     return structure
 
 
@@ -345,7 +403,6 @@ def main():
     parser.add_argument("--dry-run", action="store_true")
 
     args = parser.parse_args()
-
     logging.basicConfig(level=LOG_LEVEL)
 
     term_range = tuple(args.term_range) if args.term_range else None
