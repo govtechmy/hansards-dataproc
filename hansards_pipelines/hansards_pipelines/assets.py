@@ -1582,7 +1582,7 @@ def report_overall_sittings_integrity(context: AssetExecutionContext):
 
     houses = HOUSE_PARTITIONS.get_partition_keys()
 
-    context.log.info("Consolidating all sitting's integrity status by term (latest.json) into a single file...")
+    context.log.info("Consolidating all sitting's integrity status by term (latest_run.json) into a single file...")
     summary = consolidate_all_latest_json_into_one(houses)
 
     context.log.info("Building sitting's source & db comparison detail...")

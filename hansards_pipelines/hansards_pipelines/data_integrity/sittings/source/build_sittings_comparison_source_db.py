@@ -154,7 +154,7 @@ def consolidate_all_latest_json_into_one(houses: List[str]) -> Dict:
                 "term": int(term),
                 "status": latest.get("status"),
                 "cycle_issue_count": summary.get("cycle_issue_count"),
-                "meeting_count_mismatches": summary.get("meeting_count_mismatches"),
+                "sitting_count_mismatches": summary.get("sitting_count_mismatches"),
                 "total_issues": summary.get("total_issues"),
                 "run_id": meta.get("run_id"),
                 "generated_at": meta.get("generated_at"),

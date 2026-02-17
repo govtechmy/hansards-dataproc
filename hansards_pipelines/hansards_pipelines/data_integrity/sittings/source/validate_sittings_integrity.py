@@ -49,33 +49,82 @@ MAX_FILENAMES_PER_ISSUE = 50
 # ACTION MAPPING
 # -------------------------------------------------
 
-def map_issue_to_action(issue_type: str) -> Dict:
+# def map_issue_to_action(issue_type: str) -> Dict:
+#     """
+#     Maps issue type to deterministic action.
+#     """
+
+#     if issue_type == "MISSING_IN_DB":
+#         return {
+#             "name": "INGEST_MEETING_INTO_DB",
+#             "details": (
+#                 "This meeting exists in the source, but does not exist in the database. "
+#                 "Add the meeting in db. Run the pipeline to ingest the sitting data for this meeting. "
+#                 "If the meeting already exists but with a different meeting number, investigate and correct the meeting number in the database to ensure it matches the source."
+#             ),
+#         }
+
+#     if issue_type == "EXTRA_IN_DB":
+#         return {
+#             "name": "REVIEW_MEETING_IN_DB",
+#             "details": (
+#                 "This meeting exists in the database, but not in the source. "
+#                 "Investigate whether the meeting is valid. If it is invalid or incorrectly mapped, correct or remove it."
+#             ),
+#         }
+
+#     if issue_type == "SITTING_COUNT_MISMATCH_IN_MEETING":
+#         return {
+#             "name": "REVIEW_SITTING_IN_DB",
+#             "details": (
+#                 "The meeting exists in both source and database, but the number of sittings differs. "
+#                 "Investigate the missing sitting(s) in the database and add them if they are valid. Run the pipeline to ingest into db. "
+#             ),
+#         }
+
+#     return {
+#         "name": "NO_ACTION",
+#         "details": "No automated action is defined for this issue type.",
+#     }
+
+def map_issue_to_action(issue_type: str, level: str) -> Dict:
     """
-    Maps issue type to deterministic action policy.
+    Maps issue type + level to deterministic action.
     """
 
     if issue_type == "MISSING_IN_DB":
         return {
-            "name": "TRIGGER_INGEST",
-            "safe_to_auto_execute": True,
+            "name": f"INGEST_{level.upper()}",
+            "details": (
+                f"This {level} exists in the source (Portal Parlimen) but is missing in the database. "
+                f"Add the missing {level} and all dependent sittings in the db."
+            ),
         }
 
     if issue_type == "EXTRA_IN_DB":
         return {
-            "name": "FLAG_FOR_REVIEW",
-            "safe_to_auto_execute": False,
+            "name": f"REVIEW_{level.upper()}",
+            "details": (
+                f"This {level} exists in the database but not in the source (Portal Parlimen). "
+                f"Validate whether the {level} is valid. If invalid, correct or remove it. Ensure that the sittings under this {level} are also corrected/removed accordingly."
+            ),
         }
 
-    if issue_type == "COUNT_MISMATCH":
+    if issue_type == "SITTING_COUNT_MISMATCH_IN_MEETING":
         return {
-            "name": "REPROCESS_MEETING",
-            "safe_to_auto_execute": True,
+            "name": "REVIEW_SITTING_IN_DB",
+            "details": (
+                "The meeting exists in both source (Portal Parlimen) and database, but the number of sittings differs. "
+                "Investigate the sittings. If valid, add them in db. If invalid, correct or remove it. "
+            ),
         }
 
     return {
         "name": "NO_ACTION",
-        "safe_to_auto_execute": False,
+        "details": "No automated action is defined for this issue type.",
     }
+
+
 
 # -------------------------------------------------
 # NORMALIZATION RULES
@@ -237,7 +286,7 @@ def build_integrity_report(source: Dict, db: Dict, scope: Dict) -> Dict:
                     "level": "term",
                     "category": house,
                     "term": int(term),
-                    "action": map_issue_to_action(issue_type)
+                    "action": map_issue_to_action(issue_type, "term")
                 }
 
                 issues.append(issue)
@@ -255,7 +304,8 @@ def build_integrity_report(source: Dict, db: Dict, scope: Dict) -> Dict:
                     "level": "term",
                     "category": house,
                     "term": int(term),
-                    "action": map_issue_to_action(issue_type)
+                    "action": map_issue_to_action(issue_type, "term")
+
                 }
 
                 issues.append(issue)
@@ -281,7 +331,8 @@ def build_integrity_report(source: Dict, db: Dict, scope: Dict) -> Dict:
                         "category": house,
                         "term": int(term),
                         "session": int(session),
-                        "action": map_issue_to_action(issue_type)
+                        "action": map_issue_to_action(issue_type, "session")
+
                     }
 
                     issues.append(issue)
@@ -300,7 +351,7 @@ def build_integrity_report(source: Dict, db: Dict, scope: Dict) -> Dict:
                         "category": house,
                         "term": int(term),
                         "session": int(session),
-                        "action": map_issue_to_action(issue_type)
+                        "action": map_issue_to_action(issue_type, "session")
                     }
 
                     issues.append(issue)
@@ -357,7 +408,7 @@ def build_integrity_report(source: Dict, db: Dict, scope: Dict) -> Dict:
 
                     elif src_count != db_count:
                         quantitative_issue_count += 1
-                        issue_type = "COUNT_MISMATCH"
+                        issue_type = "SITTING_COUNT_MISMATCH_IN_MEETING"
 
                     else:
                         continue
@@ -371,7 +422,7 @@ def build_integrity_report(source: Dict, db: Dict, scope: Dict) -> Dict:
                         "meeting": int(meeting),
                         "source_sitting_count": src_count,
                         "db_sitting_count": db_count,
-                        "action": map_issue_to_action(issue_type),
+                        "action": map_issue_to_action(issue_type, "meeting")
                     }
 
                     # -------- FILE DIFF ENRICHMENT (CLEANLY SEPARATED) --------
@@ -446,7 +497,7 @@ def build_integrity_report(source: Dict, db: Dict, scope: Dict) -> Dict:
             "cycle_issue_count": structural_issue_count,
 
             # meeting-level sitting count mismatches
-            "meeting_count_mismatches": quantitative_issue_count,
+            "sitting_count_mismatches": quantitative_issue_count,
 
             "total_issues": total_issues,
         },
