@@ -20,6 +20,7 @@ import argparse
 import json
 import logging
 from datetime import datetime, timezone
+import re
 from typing import Dict, Tuple
 from collections import defaultdict
 
@@ -104,35 +105,85 @@ def normalize_meeting_value(meeting: str) -> str:
 
     return meeting
 
+def normalize_filename(name: str) -> str | None:
+    """
+    Convert both source and DB filename formats into canonical YYYY-MM-DD.
+
+    Handles:
+    - KKDR-15032023.pdf
+    - KKDR-15032023-1.pdf
+    - KKDR-13102025.PindaanTimMDN.pdf
+    - KKDR-3042023 .pdf
+    - kkdr_2023-03-15
+    """
+
+    if not name:
+        return None
+
+    name = name.strip().lower()
+
+    # -----------------------
+    # DB FORMAT: kkdr_2023-03-15
+    # -----------------------
+    if name.startswith("kkdr_"):
+        return name.replace("kkdr_", "")
+
+    # -----------------------
+    # SOURCE FORMAT: kkdr-15032023(-anything).pdf
+    # -----------------------
+    match = re.search(r"kkdr-(\d{1,2})(\d{1,2})(\d{4})", name)
+    if match:
+        day, month, year = match.groups()
+
+        try:
+            dt = datetime(int(year), int(month), int(day))
+            return dt.strftime("%Y-%m-%d")
+        except ValueError:
+            return None
+
+    return None
+
+def build_canonical_map(files: list[str]) -> dict[str, str]:
+    mapping = {}
+    for f in files:
+        canon = normalize_filename(f)
+        if canon:
+            mapping[canon] = f.strip()
+    return mapping
 
 def build_file_diff(
-    source_files: set[str],
-    db_files: set[str],
+    src_map: dict[str, str],
+    db_map: dict[str, str],
 ) -> Dict:
-    """
-    Build a diff of missing and extra files between source and DB, with truncation if the list exceeds MAX_FILENAMES_PER_ISSUE.
-    """
 
-    missing_files = sorted(source_files - db_files)
-    extra_files = sorted(db_files - source_files)
+    src_keys = set(src_map.keys())
+    db_keys = set(db_map.keys())
+
+    missing_keys = sorted(src_keys - db_keys)
+    extra_keys = sorted(db_keys - src_keys)
 
     truncated = False
 
-    if len(missing_files) > MAX_FILENAMES_PER_ISSUE:
-        missing_files = missing_files[:MAX_FILENAMES_PER_ISSUE]
+    if len(missing_keys) > MAX_FILENAMES_PER_ISSUE:
+        missing_keys = missing_keys[:MAX_FILENAMES_PER_ISSUE]
         truncated = True
 
-    if len(extra_files) > MAX_FILENAMES_PER_ISSUE:
-        extra_files = extra_files[:MAX_FILENAMES_PER_ISSUE]
+    if len(extra_keys) > MAX_FILENAMES_PER_ISSUE:
+        extra_keys = extra_keys[:MAX_FILENAMES_PER_ISSUE]
         truncated = True
 
     return {
-        "missing_file_count": len(source_files - db_files),
-        "missing_filenames": missing_files,
-        "extra_file_count": len(db_files - source_files),
-        "extra_filenames": extra_files,
+        "missing_file_count": len(src_keys - db_keys),
+        "missing_filenames": [
+            src_map[k] for k in missing_keys
+        ],
+        "extra_file_count": len(db_keys - src_keys),
+        "extra_filenames": [
+            db_map[k] for k in extra_keys
+        ],
         "truncated": truncated,
     }
+
 
 
 # -------------------------------------------------
@@ -307,14 +358,11 @@ def build_integrity_report(source: Dict, db: Dict, scope: Dict) -> Dict:
                     }
 
                     # -------- FILE DIFF ENRICHMENT (CLEANLY SEPARATED) --------
-                    src_files = set(src_payload.get("filenames", []))
-                    db_files = set(db_payload.get("filenames", []))
+                    src_map = build_canonical_map(src_payload.get("filenames", []))
+                    db_map = build_canonical_map(db_payload.get("filenames", []))
 
-                    if src_files or db_files:
-                        issue["file_diff"] = build_file_diff(
-                            src_files,
-                            db_files,
-                        )
+                    if src_map or db_map:
+                        issue["file_diff"] = build_file_diff(src_map, db_map)
 
                     issues.append(issue)
 
