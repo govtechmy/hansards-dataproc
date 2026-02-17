@@ -1582,21 +1582,21 @@ def report_overall_sittings_integrity(context: AssetExecutionContext):
 
     houses = HOUSE_PARTITIONS.get_partition_keys()
 
-    context.log.info("Consolidating all sitting's integrity status by term (latest_run.json) into a single file...")
+    context.log.info("Consolidating all sitting's integrity by house & term (latest_run.json) into a single summary file...")
     summary = consolidate_all_latest_json_into_one(houses)
 
-    context.log.info("Building sitting's source & db comparison detail...")
+    context.log.info("Building report for sitting's source & db comparison by meeting...")
     matrix = build_sittings_integrity_comparison_source_db(houses)
 
-    context.log.info("Uploading report for sitting's integrity status by term...")
+    context.log.info("Uploading consolidated report about sittings integrity summary...")
     summary_key = upload_global_artifact(
-        layer="report/sittings_integrity_status_by_term",
+        layer="report/sittings_integrity_summary_by_house_and_term",
         payload=summary,
     )
 
-    context.log.info("Uploading report for sitting's source & db comparison detail...")
+    context.log.info("Uploading report about sitting's source & db comparison by meeting...")
     matrix_key = upload_global_artifact(
-        layer="report/sittings_source_db_comparison_detail",
+        layer="report/sittings_count_comparison_by_meeting",
         payload=matrix,
     )
 

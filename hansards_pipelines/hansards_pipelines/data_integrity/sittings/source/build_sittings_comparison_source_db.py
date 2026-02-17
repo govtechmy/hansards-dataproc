@@ -5,7 +5,6 @@ from typing import Dict, List
 
 from hansards_pipelines.settings import AWS_REGION, S3_DATAPROC_BUCKET
 
-
 # -------------------------------------------------
 # SHARED NORMALIZATION
 # -------------------------------------------------
@@ -20,7 +19,7 @@ def normalize_meeting_value(meeting: str) -> str:
 
 
 # -------------------------------------------------
-# MEETING-LEVEL COUNT COMPARISON
+# MEETING-LEVEL COUNT + STRUCTURAL COMPARISON
 # -------------------------------------------------
 
 def build_sittings_integrity_comparison_source_db(houses: List[str]) -> Dict:
@@ -89,8 +88,27 @@ def build_sittings_integrity_comparison_source_db(houses: List[str]) -> Dict:
 
                 for meeting_id in all_meetings:
 
+                    src_exists = meeting_id in src_meetings
+                    db_exists = meeting_id in db_meetings
+
                     src_count = src_meetings.get(meeting_id, {}).get("sitting_count", 0)
                     db_count = db_meetings.get(meeting_id, {}).get("sitting_count", 0)
+
+                    # -------------------------------------------------
+                    # CLASSIFY STATUS (STRUCTURAL + QUANTITATIVE)
+                    # -------------------------------------------------
+
+                    if not db_exists and src_exists:
+                        status = "MEETING_MISSING_IN_DB"
+
+                    elif not src_exists and db_exists:
+                        status = "MEETING_EXTRA_IN_DB"
+
+                    elif db_count != src_count:
+                        status = "SITTING_COUNT_MISMATCH"
+
+                    else:
+                        status = "MATCH"
 
                     delta = db_count - src_count
 
@@ -102,20 +120,28 @@ def build_sittings_integrity_comparison_source_db(houses: List[str]) -> Dict:
                         "source_sitting_count": src_count,
                         "db_sitting_count": db_count,
                         "delta": delta,
-                        "status": "MATCH" if delta == 0 else "MISMATCH",
+                        "status": status,
                     })
 
-    # ---------- SUMMARY ----------
-    total_matches = sum(1 for r in rows if r["status"] == "MATCH")
-    total_mismatches = sum(1 for r in rows if r["status"] == "MISMATCH")
+    # -------------------------------------------------
+    # SUMMARY
+    # -------------------------------------------------
+
+    total_rows = len(rows)
+
+    status_counts = {}
+    for r in rows:
+        status_counts[r["status"]] = status_counts.get(r["status"], 0) + 1
 
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(),
 
         "summary": {
-            "total_rows": len(rows),
-            "total_matches": total_matches,
-            "total_mismatches": total_mismatches,
+            "total_rows": total_rows,
+            "total_match": status_counts.get("MATCH", 0),
+            "total_meeting_missing_in_db": status_counts.get("MEETING_MISSING_IN_DB", 0),
+            "total_meeting_extra_in_db": status_counts.get("MEETING_EXTRA_IN_DB", 0),
+            "total_sitting_count_mismatch": status_counts.get("SITTING_COUNT_MISMATCH", 0),
             "houses_checked": sorted(set(r["house"] for r in rows)),
         },
 
@@ -129,6 +155,7 @@ def build_sittings_integrity_comparison_source_db(houses: List[str]) -> Dict:
             ),
         ),
     }
+
 
 
 # -------------------------------------------------
