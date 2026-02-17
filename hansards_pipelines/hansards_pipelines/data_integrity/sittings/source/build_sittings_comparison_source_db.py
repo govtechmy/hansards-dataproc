@@ -6,14 +6,22 @@ from typing import Dict, List
 from hansards_pipelines.settings import AWS_REGION, S3_DATAPROC_BUCKET
 
 
+# -------------------------------------------------
+# SHARED NORMALIZATION
+# -------------------------------------------------
+
 def normalize_meeting_value(meeting: str) -> str:
     """
     Apply the SAME normalization logic used in integrity engine.
     """
-    if meeting in {"11"}: # {"11", "-1"}:
+    if meeting in {"11"}:
         return "0"
     return meeting
 
+
+# -------------------------------------------------
+# MEETING-LEVEL COUNT COMPARISON
+# -------------------------------------------------
 
 def build_sittings_integrity_comparison_source_db(houses: List[str]) -> Dict:
 
@@ -97,9 +105,20 @@ def build_sittings_integrity_comparison_source_db(houses: List[str]) -> Dict:
                         "status": "MATCH" if delta == 0 else "MISMATCH",
                     })
 
+    # ---------- SUMMARY ----------
+    total_matches = sum(1 for r in rows if r["status"] == "MATCH")
+    total_mismatches = sum(1 for r in rows if r["status"] == "MISMATCH")
+
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "total_rows": len(rows),
+
+        "summary": {
+            "total_rows": len(rows),
+            "total_matches": total_matches,
+            "total_mismatches": total_mismatches,
+            "houses_checked": sorted(set(r["house"] for r in rows)),
+        },
+
         "rows": sorted(
             rows,
             key=lambda x: (
@@ -111,6 +130,10 @@ def build_sittings_integrity_comparison_source_db(houses: List[str]) -> Dict:
         ),
     }
 
+
+# -------------------------------------------------
+# CONSOLIDATE LATEST INTEGRITY REPORTS
+# -------------------------------------------------
 
 def consolidate_all_latest_json_into_one(houses: List[str]) -> Dict:
 
@@ -153,17 +176,25 @@ def consolidate_all_latest_json_into_one(houses: List[str]) -> Dict:
                 "house": house,
                 "term": int(term),
                 "status": latest.get("status"),
-                "cycle_issue_count": summary.get("cycle_issue_count"),
-                "sitting_count_mismatches": summary.get("sitting_count_mismatches"),
-                "total_issues": summary.get("total_issues"),
+                "cycle_issue_count": summary.get("cycle_issue_count", 0),
+                "sitting_count_mismatches": summary.get("sitting_count_mismatches", 0),
+                "total_issues": summary.get("total_issues", 0),
                 "run_id": meta.get("run_id"),
                 "generated_at": meta.get("generated_at"),
             })
 
+    total_fail = sum(1 for r in rows if r["status"] == "FAIL")
+    total_pass = sum(1 for r in rows if r["status"] == "PASS")
 
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "total_rows": len(rows),
+
+        "summary": {
+            "total_terms": len(rows),
+            "total_pass": total_pass,
+            "total_fail": total_fail,
+        },
+
         "rows": sorted(
             rows,
             key=lambda x: (x["house"], x["term"]),
