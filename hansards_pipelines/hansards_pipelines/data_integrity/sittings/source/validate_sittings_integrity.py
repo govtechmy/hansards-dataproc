@@ -121,9 +121,10 @@ def normalize_filename(name: str) -> str | None:
 
     Handles:
     - KKDR-15032023.pdf
+    - DN-23101978.pdf
+    - DR-10121990.pdf
     - KKDR-15032023-1.pdf
     - KKDR-13102025.PindaanTimMDN.pdf
-    - KKDR-3042023 .pdf
     - kkdr_2023-03-15
     """
 
@@ -135,16 +136,17 @@ def normalize_filename(name: str) -> str | None:
     # -----------------------
     # DB FORMAT: kkdr_2023-03-15
     # -----------------------
-    if name.startswith("kkdr_"):
-        return name.replace("kkdr_", "")
+    if "_" in name and re.search(r"\d{4}-\d{2}-\d{2}", name):
+        match = re.search(r"(\d{4}-\d{2}-\d{2})", name)
+        if match:
+            return match.group(1)
 
     # -----------------------
-    # SOURCE FORMAT: kkdr-15032023(-anything).pdf
+    # SOURCE FORMAT: PREFIX-DDMMYYYY
     # -----------------------
-    match = re.search(r"kkdr-(\d{1,2})(\d{1,2})(\d{4})", name)
+    match = re.search(r"-(\d{1,2})(\d{1,2})(\d{4})", name) # -anything-DDMMYYYY
     if match:
         day, month, year = match.groups()
-
         try:
             dt = datetime(int(year), int(month), int(day))
             return dt.strftime("%Y-%m-%d")
@@ -152,6 +154,7 @@ def normalize_filename(name: str) -> str | None:
             return None
 
     return None
+
 
 def build_canonical_map(files: list[str]) -> dict[str, str]:
     mapping = {}
@@ -372,7 +375,10 @@ def build_integrity_report(source: Dict, db: Dict, scope: Dict) -> Dict:
                     src_payload = src_meetings.get(meeting, {})
                     db_payload = db_meetings.get(meeting, {})
 
-                    src_count = src_payload.get("sitting_count", 0)
+                    src_files = src_payload.get("filenames", [])
+                    src_map = build_canonical_map(src_files) # normalize filenames to canonical YYYY-MM-DD and deduplicate by date (one sitting per unique date)
+                    src_count = len(src_map)   # unique canonical dates
+
                     db_count = db_payload.get("sitting_count", 0)
 
                     issue_type = None
