@@ -44,6 +44,8 @@ from hansards_pipelines.scrape_parliamentary_cycle import (
     HOUSE_MAP,
 )
 
+from hansards_pipelines.data_integrity.utils.normalize_meeting_value import normalize_meeting_value
+
 from hansards_pipelines.settings import (
     AWS_REGION,
     S3_DATAPROC_BUCKET,
@@ -204,7 +206,7 @@ def crawl_structured(
         structure[house_name]["term"][term_key]["session"][session_key]["sitting_count"] += len(sittings)
 
         if hierarchy["meeting"] is not None:
-            meeting_key = str(hierarchy["meeting"])
+            meeting_key = normalize_meeting_value(str(hierarchy["meeting"]))
             meeting_obj = structure[house_name]["term"][term_key]["session"][session_key]["meeting"].setdefault(
                 meeting_key,
                 {"sitting_count": 0, "filenames": []},
@@ -213,11 +215,13 @@ def crawl_structured(
             # Attach cycle date (arkib)
             house_code = HOUSE_MAP.get(house_name)
 
+            meeting_norm = int(normalize_meeting_value(str(hierarchy["meeting"])))
+
             lookup_key = (
                 house_code,
                 hierarchy["term"],
                 hierarchy["session"],
-                hierarchy["meeting"],
+                meeting_norm,
             )
 
             cycle_info = cycle_lookup.get(lookup_key)
@@ -291,7 +295,7 @@ def inject_active(structure, session, seen_sittings, category=None):
 
                 term_key = str(cycle["term"])
                 session_key = str(cycle["session"])
-                meeting_key = str(cycle["meeting"])
+                meeting_key = normalize_meeting_value(str(cycle["meeting"]))
 
                 structure.setdefault(house_name, {})
                 structure[house_name].setdefault("term", {})
@@ -320,16 +324,31 @@ def inject_active(structure, session, seen_sittings, category=None):
 
 
 def build_cycle_lookup():
+    """
+    Build a lookup of cycle dates keyed by house, term, session, meeting
+    Combines arkib and active cycles and normalizes meeting values (e.g. source "11" -> "0") so cycle dates align with the db.
+    """
     cycles = scrape_arkib_cycles() + scrape_active_cycles()
 
     lookup = {}
     for c in cycles:
-        key = (c["house"], c["term"], c["session"], c["meeting"])
+
+        meeting_norm = normalize_meeting_value(str(c["meeting"]))
+
+        key = (
+            c["house"],
+            c["term"],
+            c["session"],
+            int(meeting_norm),
+        )
+
         lookup[key] = {
             "start_date": c["start_date"],
             "end_date": c["end_date"],
         }
+
     return lookup
+
 
 # -------------------------------------------------
 # SUMMARY / SNAPSHOT / UPLOAD (UNCHANGED)

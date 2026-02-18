@@ -87,7 +87,7 @@ def map_issue_to_action(issue_type: str, level: str) -> Dict:
             "name": "REVIEW_CYCLE_DATES_IN_DB",
             "details": (
                 "The meeting exists in both source and database, but the cycle dates (start_date/end_date) differ. "
-                "Fix the cycle dates in the db."
+                "Validate which date range is correct and update the database if necessary."
             ),
         }
 
@@ -96,33 +96,6 @@ def map_issue_to_action(issue_type: str, level: str) -> Dict:
         "details": "No automated action is defined for this issue type.",
     }
 
-# -------------------------------------------------
-# NORMALIZATION RULES
-# -------------------------------------------------
-
-def normalize_meeting_value(meeting: str) -> str:
-    """
-    Normalize meeting identifiers so source and DB align.
- 
-    Issues observed:
-    - The Portal Parlimen (source) uses "11" to denote the mesyuarat khas, while the DB uses "0" for the same meeting.
-    For info our db schema defines the following mapping for:
-        0 - Mesyuarat Khas
-        1 - Mesyuarat Pertama
-        2 - Mesyuarat Kedua
-        3 - Mesyuarat Ketiga
-        -1 - Hidden (not displayed in the front end)
-
-    So the normalization rule needs to account for this discrepancy.
-
-    Rule:
-    - Source meeting 11 == DB meeting 0
-    """
-
-    if meeting == "11":
-        return "0"
-
-    return meeting
 
 def normalize_filename(name: str) -> str | None:
     """
@@ -366,18 +339,8 @@ def build_integrity_report(source: Dict, db: Dict, scope: Dict) -> Dict:
 
                 # ---------------- MEETING LEVEL ----------------
 
-                unormalized_src_meetings = src_sessions[session].get("meeting", {})
-                unormalized_db_meetings = db_sessions[session].get("meeting", {})
-
-                src_meetings = {
-                    normalize_meeting_value(m): v
-                    for m, v in unormalized_src_meetings.items()
-                }
-
-                db_meetings = {
-                    normalize_meeting_value(m): v
-                    for m, v in unormalized_db_meetings.items()
-                }
+                src_meetings = src_sessions[session].get("meeting", {})
+                db_meetings = db_sessions[session].get("meeting", {})
 
                 for meeting in sorted(set(src_meetings) | set(db_meetings)):
 
