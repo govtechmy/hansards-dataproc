@@ -81,6 +81,15 @@ def map_issue_to_action(issue_type: str, level: str) -> Dict:
                 "Investigate the missing or extra sittings and reconcile with source."
             ),
         }
+    
+    if issue_type == "MEETING_CYCLE_DATE_MISMATCH":
+        return {
+            "name": "REVIEW_CYCLE_DATES_IN_DB",
+            "details": (
+                "The meeting exists in both source and database, but the cycle dates (start_date/end_date) differ. "
+                "Fix the cycle dates in the db."
+            ),
+        }
 
     return {
         "name": "NO_ACTION",
@@ -372,71 +381,132 @@ def build_integrity_report(source: Dict, db: Dict, scope: Dict) -> Dict:
 
                 for meeting in sorted(set(src_meetings) | set(db_meetings)):
 
-                    src_payload = src_meetings.get(meeting, {})
-                    db_payload = db_meetings.get(meeting, {})
+                    src_payload = src_meetings.get(meeting)
+                    db_payload = db_meetings.get(meeting)
 
-                    src_files = src_payload.get("filenames", [])
-                    src_map = build_canonical_map(src_files) # normalize filenames to canonical YYYY-MM-DD and deduplicate by date (one sitting per unique date)
-                    src_count = len(src_map)   # unique canonical dates
-
-                    db_count = db_payload.get("sitting_count", 0)
-
-                    issue_type = None
+                    # -------------------------------------------------
+                    # STRUCTURAL ISSUES (existence)
+                    # -------------------------------------------------
 
                     if meeting not in db_meetings:
                         structural_counts["missing_meetings"] += 1
-                        issue_type = "MEETING_MISSING_IN_DB"
 
-                        structural_diff["missing_meetings"].append({
-                            "house": house,
+                        issue = {
+                            "type": "MEETING_MISSING_IN_DB",
+                            "level": "meeting",
+                            "category": house,
                             "term": int(term),
                             "session": int(session),
                             "meeting": int(meeting),
-                        })
 
-                    elif meeting not in src_meetings:
-                        structural_counts["extra_meetings"] += 1
-                        issue_type = "MEETING_EXTRA_IN_DB"
+                            "source": {
+                                "sitting_count": src_payload.get("sitting_count", 0),
+                                "start_date": src_payload.get("start_date"),
+                                "end_date": src_payload.get("end_date"),
+                            },
 
-                        structural_diff["extra_meetings"].append({
-                            "term": int(term),
-                            "session": int(session),
-                            "meeting": int(meeting),
-                        })
+                            "db": None,
 
+                            "action": map_issue_to_action("MEETING_MISSING_IN_DB", "meeting"),
+                        }
 
-                    elif src_count != db_count:
-                        quantitative_issue_count += 1
-                        issue_type = "MEETING_SITTING_COUNT_MISMATCH"
-
-                    else:
+                        issues.append(issue)
+                        issue_summary_by_level["meeting"] += 1
+                        issue_summary_by_type["MEETING_MISSING_IN_DB"] += 1
+                        issue_summary_by_term[term] += 1
                         continue
 
-                    issue = {
-                        "type": issue_type,
-                        "level": "meeting",
-                        "category": house,
-                        "term": int(term),
-                        "session": int(session),
-                        "meeting": int(meeting),
-                        "source_sitting_count": src_count,
-                        "db_sitting_count": db_count,
-                        "action": map_issue_to_action(issue_type, "meeting")
-                    }
+                    if meeting not in src_meetings:
+                        structural_counts["extra_meetings"] += 1
 
-                    # -------- FILE DIFF ENRICHMENT (CLEANLY SEPARATED) --------
+                        issue = {
+                            "type": "MEETING_EXTRA_IN_DB",
+                            "level": "meeting",
+                            "category": house,
+                            "term": int(term),
+                            "session": int(session),
+                            "meeting": int(meeting),
+
+                            "source": None,
+
+                            "db": {
+                                "sitting_count": db_payload.get("sitting_count", 0),
+                                "start_date": db_payload.get("start_date"),
+                                "end_date": db_payload.get("end_date"),
+                            },
+
+                            "action": map_issue_to_action("MEETING_EXTRA_IN_DB", "meeting"),
+                        }
+
+                        issues.append(issue)
+                        issue_summary_by_level["meeting"] += 1
+                        issue_summary_by_type["MEETING_EXTRA_IN_DB"] += 1
+                        issue_summary_by_term[term] += 1
+                        continue
+
+                    # -------------------------------------------------
+                    # QUANTITATIVE ISSUES (can have multiple)
+                    # -------------------------------------------------
+
+                    meeting_issues = []
+
+                    # Normalize files
                     src_map = build_canonical_map(src_payload.get("filenames", []))
                     db_map = build_canonical_map(db_payload.get("filenames", []))
 
-                    if src_map or db_map:
-                        issue["file_diff"] = build_file_diff(src_map, db_map)
+                    src_count = len(src_map)
+                    db_count = db_payload.get("sitting_count", 0)
 
-                    issues.append(issue)
+                    # Cycle date mismatch
+                    if (
+                        src_payload.get("start_date") != db_payload.get("start_date")
+                        or
+                        src_payload.get("end_date") != db_payload.get("end_date")
+                    ):
+                        meeting_issues.append("MEETING_CYCLE_DATE_MISMATCH")
 
-                    issue_summary_by_level["meeting"] += 1
-                    issue_summary_by_type[issue_type] += 1
-                    issue_summary_by_term[term] += 1
+                    # Sitting count mismatch
+                    if src_count != db_count:
+                        meeting_issues.append("MEETING_SITTING_COUNT_MISMATCH")
 
+                    if not meeting_issues:
+                        continue
+
+                    for issue_type in meeting_issues:
+
+                        quantitative_issue_count += 1
+
+                        issue = {
+                            "type": issue_type,
+                            "level": "meeting",
+                            "category": house,
+                            "term": int(term),
+                            "session": int(session),
+                            "meeting": int(meeting),
+
+                            "source": {
+                                "sitting_count": src_count,
+                                "start_date": src_payload.get("start_date"),
+                                "end_date": src_payload.get("end_date"),
+                            },
+
+                            "db": {
+                                "sitting_count": db_count,
+                                "start_date": db_payload.get("start_date"),
+                                "end_date": db_payload.get("end_date"),
+                            },
+
+                            "action": map_issue_to_action(issue_type, "meeting"),
+                        }
+
+                        if src_map or db_map:
+                            issue["file_diff"] = build_file_diff(src_map, db_map)
+
+                        issues.append(issue)
+
+                        issue_summary_by_level["meeting"] += 1
+                        issue_summary_by_type[issue_type] += 1
+                        issue_summary_by_term[term] += 1
 
     sitting_delta = (
         db["summary"]["total_sittings"]

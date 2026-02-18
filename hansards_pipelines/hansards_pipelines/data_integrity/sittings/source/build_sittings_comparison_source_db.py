@@ -88,39 +88,72 @@ def build_sittings_integrity_comparison_source_db(houses: List[str]) -> Dict:
 
                 for meeting_id in all_meetings:
 
-                    src_exists = meeting_id in src_meetings
-                    db_exists = meeting_id in db_meetings
-
-                    src_count = src_meetings.get(meeting_id, {}).get("sitting_count", 0)
-                    db_count = db_meetings.get(meeting_id, {}).get("sitting_count", 0)
-
                     # -------------------------------------------------
                     # CLASSIFY STATUS (STRUCTURAL + QUANTITATIVE)
                     # -------------------------------------------------
 
-                    if not db_exists and src_exists:
-                        status = "MEETING_MISSING_IN_DB"
+                    issues = []
 
-                    elif not src_exists and db_exists:
-                        status = "MEETING_EXTRA_IN_DB"
+                    src_payload = src_meetings.get(meeting_id, {})
+                    db_payload = db_meetings.get(meeting_id, {})
 
-                    elif db_count != src_count:
-                        status = "SITTING_COUNT_MISMATCH"
+                    src_exists = meeting_id in src_meetings
+                    db_exists = meeting_id in db_meetings
 
-                    else:
-                        status = "MATCH"
+                    src_count = src_payload.get("sitting_count", 0)
+                    db_count = db_payload.get("sitting_count", 0)
 
-                    delta = db_count - src_count
+                    src_start = src_payload.get("start_date")
+                    src_end = src_payload.get("end_date")
+
+                    db_start = db_payload.get("start_date")
+                    db_end = db_payload.get("end_date")
+
+                    # -------------------------------------------------
+                    # Structural Issues (Independent)
+                    # -------------------------------------------------
+
+                    if src_exists and not db_exists:
+                        issues.append("MEETING_MISSING_IN_DB")
+
+                    if db_exists and not src_exists:
+                        issues.append("MEETING_EXTRA_IN_DB")
+
+                    # -------------------------------------------------
+                    # Quantitative Checks (Only if both exist)
+                    # -------------------------------------------------
+
+                    if src_exists and db_exists:
+
+                        if src_start != db_start or src_end != db_end:
+                            issues.append("CYCLE_DATE_MISMATCH")
+
+                        if db_count != src_count:
+                            issues.append("SITTING_COUNT_MISMATCH")
+
+                    # -------------------------------------------------
+                    # Default
+                    # -------------------------------------------------
+
+                    if not issues:
+                        issues = ["MATCH"]
 
                     rows.append({
                         "house": house,
                         "term": int(term),
                         "session": int(session_id),
                         "meeting": int(meeting_id),
+
                         "source_sitting_count": src_count,
                         "db_sitting_count": db_count,
-                        "delta": delta,
-                        "status": status,
+                        "delta": db_count - src_count,
+
+                        "source_start_date": src_start,
+                        "source_end_date": src_end,
+                        "db_start_date": db_start,
+                        "db_end_date": db_end,
+
+                        "status": "|".join(sorted(issues)),
                     })
 
     # -------------------------------------------------
@@ -131,7 +164,8 @@ def build_sittings_integrity_comparison_source_db(houses: List[str]) -> Dict:
 
     status_counts = {}
     for r in rows:
-        status_counts[r["status"]] = status_counts.get(r["status"], 0) + 1
+        for s in r["status"].split("|"):
+            status_counts[s] = status_counts.get(s, 0) + 1
 
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -142,6 +176,7 @@ def build_sittings_integrity_comparison_source_db(houses: List[str]) -> Dict:
             "total_meeting_missing_in_db": status_counts.get("MEETING_MISSING_IN_DB", 0),
             "total_meeting_extra_in_db": status_counts.get("MEETING_EXTRA_IN_DB", 0),
             "total_sitting_count_mismatch": status_counts.get("SITTING_COUNT_MISMATCH", 0),
+            "total_cycle_date_mismatch": status_counts.get("CYCLE_DATE_MISMATCH", 0),
             "houses_checked": sorted(set(r["house"] for r in rows)),
         },
 

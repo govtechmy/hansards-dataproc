@@ -39,7 +39,8 @@ from hansards_pipelines.scrape_arkib import (
 )
 
 from hansards_pipelines.scrape_parliamentary_cycle import (
-    scrape_active_cycles,
+    scrape_active_cycles, 
+    scrape_arkib_cycles,
     HOUSE_MAP,
 )
 
@@ -137,6 +138,7 @@ def crawl_structured(
     seen_sittings: Set[str],
     max_nodes: int | None,
     node_counter: Dict[str, int],
+    cycle_lookup: Dict,
 ):
 
     if max_nodes is not None and node_counter["count"] >= max_nodes:
@@ -176,6 +178,7 @@ def crawl_structured(
                 seen_sittings,
                 max_nodes,
                 node_counter,
+                cycle_lookup,
             )
         return
 
@@ -206,6 +209,24 @@ def crawl_structured(
                 meeting_key,
                 {"sitting_count": 0, "filenames": []},
             )
+
+            # Attach cycle date (arkib)
+            house_code = HOUSE_MAP.get(house_name)
+
+            lookup_key = (
+                house_code,
+                hierarchy["term"],
+                hierarchy["session"],
+                hierarchy["meeting"],
+            )
+
+            cycle_info = cycle_lookup.get(lookup_key)
+
+            if cycle_info:
+                meeting_obj["start_date"] = cycle_info["start_date"]
+                meeting_obj["end_date"] = cycle_info["end_date"]
+                meeting_obj["source"] = "arkib"
+
 
             meeting_obj["sitting_count"] += len(sittings)
 
@@ -298,6 +319,17 @@ def inject_active(structure, session, seen_sittings, category=None):
                 meeting_obj["source"] = "active"
 
 
+def build_cycle_lookup():
+    cycles = scrape_arkib_cycles() + scrape_active_cycles()
+
+    lookup = {}
+    for c in cycles:
+        key = (c["house"], c["term"], c["session"], c["meeting"])
+        lookup[key] = {
+            "start_date": c["start_date"],
+            "end_date": c["end_date"],
+        }
+    return lookup
 
 # -------------------------------------------------
 # SUMMARY / SNAPSHOT / UPLOAD (UNCHANGED)
@@ -363,6 +395,7 @@ def run_source_snapshot(category=None, term=None, term_range=None, max_nodes=Non
     structure: Dict = {}
     seen_sittings: Set[str] = set()
     node_counter = {"count": 0}
+    cycle_lookup = build_cycle_lookup()
 
     categories = {category: CATEGORIES[category]} if category else CATEGORIES
 
@@ -387,6 +420,7 @@ def run_source_snapshot(category=None, term=None, term_range=None, max_nodes=Non
                 seen_sittings=seen_sittings,
                 max_nodes=max_nodes,
                 node_counter=node_counter,
+                cycle_lookup=cycle_lookup,
             )
 
     inject_active(structure, session, seen_sittings, category)

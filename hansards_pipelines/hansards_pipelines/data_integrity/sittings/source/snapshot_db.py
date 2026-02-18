@@ -66,13 +66,15 @@ def build_sql(category=None, term=None, term_range=None):
             c.term,
             c.session,
             c.meeting,
+            c.start_date,
+            c.end_date,
             COUNT(s.sitting_id) AS sitting_count,
             json_agg(s.filename ORDER BY s.filename) AS filenames
         FROM public.api_sitting s
         JOIN public.api_parliamentary_cycle c
             ON s.cycle_id = c.cycle_id
         {where_clause}
-        GROUP BY c.house, c.term, c.session, c.meeting
+        GROUP BY c.house, c.term, c.session, c.meeting, c.start_date, c.end_date
     ),
 
     meeting_level AS (
@@ -84,7 +86,9 @@ def build_sql(category=None, term=None, term_range=None):
                 meeting::text,
                 json_build_object(
                     'sitting_count', sitting_count,
-                    'filenames', filenames
+                    'filenames', filenames,
+                    'start_date', start_date,
+                    'end_date', end_date
                 )
                 ORDER BY meeting
             ) AS meeting_json,
