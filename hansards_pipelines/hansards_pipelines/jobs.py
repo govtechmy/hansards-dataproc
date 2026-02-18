@@ -53,11 +53,15 @@ sittings_legacy_job = define_asset_job(
     selection=[assets.dg_legacy_sitting]
 )
 
-
 register_sitting_legacy_partition_job = define_asset_job(
     name="register_sitting_legacy_partition_job",
     selection=["noop_partition_registration"],
 )
+
+
+# ======================================
+# Integrity - Sittings integrity jobs
+# ======================================
 
 report_sittings_integrity_job = define_asset_job(
     name="report_sittings_integrity_job",
@@ -71,4 +75,18 @@ report_sittings_integrity_job = define_asset_job(
 report_overall_sittings_integrity_job = define_asset_job(
     name="report_overall_sittings_integrity_job",
     selection=["report_overall_sittings_integrity"],
+)
+
+# ======================================
+# Integrity - S3 PDF/CSV integrity jobs
+# ======================================
+
+report_s3_pdf_csv_integrity = define_asset_job(
+    name="report_s3_downloads_pdf_csv_job",
+    selection=["report_s3_downloads_pdf_csv"],
+)
+
+report_overall_s3_pdf_csv_integrity = define_asset_job(
+    name="report_overall_s3_downloads_pdf_csv_integrity_job",
+    selection=["report_overall_s3_pdf_csv_integrity"],
 )
