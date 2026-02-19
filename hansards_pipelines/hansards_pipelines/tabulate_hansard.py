@@ -795,7 +795,15 @@ def tabulate(
 
         # determine whether the current line is a continuation of speech
         # first check whether it is an annotation
-        if text[row_id].startswith("[") and italics[row_id][1] == "1":
+        # if text[row_id].startswith("[") and italics[row_id][1] == "1":
+
+        line = text[row_id].strip()
+
+        if (
+            line.startswith("[")
+            and line.endswith("]")
+            and _is_majority_italic_bracket(text[row_id], italics[row_id], 0)
+        ):
 
             if text[row_id].startswith("[Dewan ditangguhkan") or text[row_id].startswith("[Mesyuarat ditangguhkan"):
                 dewan_tangguh = True
