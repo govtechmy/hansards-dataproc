@@ -37,7 +37,7 @@ from hansards_pipelines.settings import (
 
 DEFAULT_HOUSES: Tuple[str, ...] = ("dewanrakyat", "dewannegara", "kamarkhas")
 
-DATAPROC_PREFIX: str = "checks/sittings/pdf_csv"
+DATAPROC_PREFIX: str = "checks/sittings/s3/pdf_csv"
 
 def get_db_connection():
     if not HANSARD_DB_URL:
@@ -187,6 +187,42 @@ def build_report(summary, grouped, houses, output_key):
         "details": grouped,
         "output_key": output_key,
     }
+
+
+
+def run_for_houses(houses):
+    """
+    Main function to run the PDF/CSV integrity check for specified houses.
+        Steps:
+        1. Fetch filenames from the database for the specified houses.
+        2. List files in the S3 public bucket and group them by base filename.
+        3. Analyze the data to find sittings with missing PDF and/or CSV files.
+        4. Build a report summarizing the findings.
+    """
+
+    session = boto3.Session(region_name=AWS_REGION)
+    s3_client = session.client("s3")
+
+    with get_db_connection() as conn:
+        db_rows = fetch_db_filenames(conn, houses)
+
+    s3_files = list_s3_files_grouped(
+        s3_client,
+        S3_PUBLIC_BUCKET,
+        houses,
+    )
+
+    summary, grouped = analyze_sittings(db_rows, s3_files)
+
+    report = {
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "houses_scanned": list(houses),
+        "summary": summary,
+        "details": grouped,
+    }
+
+    return report
+
 
 
 # CLI
