@@ -474,6 +474,37 @@ def add_formatting(text, bold, italics):
         result += markdownify(current_text, current_bold == "1", current_italics == "1")
     return result
 
+def _is_majority_italic_bracket(text_line, italics_line, start_idx):
+    """
+    Returns True if the bracket segment is mostly italic.
+    Used to distinguish real procedural annotations
+    from inline legal references like [Akta 4].
+    """
+    end_idx = text_line.find("]", start_idx)
+    if end_idx == -1:
+        return False
+
+    segment_text = text_line[start_idx:end_idx + 1]
+    segment_italics = italics_line[start_idx:end_idx + 1]
+
+    # Count non-space characters only
+    total_chars = sum(
+        1 for i in range(len(segment_text))
+        if segment_text[i] != " "
+    )
+
+    if total_chars == 0:
+        return False
+
+    italic_chars = sum(
+        1 for i in range(len(segment_text))
+        if segment_text[i] != " " and segment_italics[i] == "1"
+    )
+
+    ratio = italic_chars / total_chars
+
+    return ratio > 0.8  # threshold for "mostly italic"
+
 
 def put_annotations_on_new_line(text, bold, italics):
     # assumptions
@@ -513,9 +544,13 @@ def put_annotations_on_new_line(text, bold, italics):
                     num_unclosed_brackets += 1
             elif (
                 text[row_id][letter_id] == "["
-                and letter_id + 1 < len(text[row_id])
-                and italics[row_id][letter_id + 1] == "1"
+                and _is_majority_italic_bracket(
+                    text[row_id],
+                    italics[row_id],
+                    letter_id
+                )
             ):
+
                 # annotation detected
                 num_unclosed_brackets = 1
                 if letter_id - 1 >= 0 and text[row_id][letter_id - 1] != "\n":
@@ -761,57 +796,60 @@ def tabulate(
         # determine whether the current line is a continuation of speech
         # first check whether it is an annotation
         if text[row_id].startswith("[") and italics[row_id][1] == "1":
-            if text[row_id].startswith("[Dewan ditangguhkan") or text[
-                row_id
-            ].startswith("[Mesyuarat ditangguhkan"):
+
+            if text[row_id].startswith("[Dewan ditangguhkan") or text[row_id].startswith("[Mesyuarat ditangguhkan"):
                 dewan_tangguh = True
-            # annotation detected
-            speeches += insert_speech(current)
-            old_author = current["author"]
-            current["speech"] = text[row_id]
-            current["speech_bold"] = bold[row_id]
-            current["speech_italics"] = italics[row_id]
-            current["author"] = "ANNOTATION"
+
+            # Flush previous speech if exists
+            if current["speech"]:
+                speeches += insert_speech(current)
+                current["speech"] = ""
+                current["speech_bold"] = ""
+                current["speech_italics"] = ""
+
+            # Build full annotation (handle multi-line brackets)
+            annotation_text = text[row_id]
+            annotation_bold = bold[row_id]
+            annotation_italics = italics[row_id]
+
             add_idx = 1
-            num_unclosed_brackets = text[row_id].count("[") - text[row_id].count("]")
-            # keep on looping until we tally up the correct number of brackets
+            num_unclosed_brackets = annotation_text.count("[") - annotation_text.count("]")
+
             while add_idx + row_id < num_rows and num_unclosed_brackets > 0:
-                if (
-                    len(text[row_id + add_idx].strip()) > 5
-                    and prop_of_1_among_binary(italics[row_id + add_idx]) == 0
-                    and not (hansard_date == "26032018" and house.upper() == "DR")
-                ):
-                    # most likely the annotation is missing a ]
-                    # we will assume that the annotation is closed
-                    # turn off autoclosing for 26032018 where a whole chunk of annotation is not italicized
-                    if not is_pipeline:
-                        with open(f"dump/{house}/autoclosed_annotation.txt", "a") as f:
-                            f.write(f"{hansard_date}\n")
-                            f.write(f'{current["speech"]}\n')
-                            f.write("AUTOCLOSED AS IT IS FOLLOWED BY\n")
-                            f.write(f"{text[row_id + add_idx]}")
-                            f.write(f"{bold[row_id + add_idx]}")
-                            f.write(f"{italics[row_id + add_idx]}")
-                            f.write("\n")
-                    break
-                current["speech"] += text[row_id + add_idx]
-                current["speech_bold"] += bold[row_id + add_idx]
-                current["speech_italics"] += italics[row_id + add_idx]
-                num_unclosed_brackets += text[row_id + add_idx].count("[") - text[
-                    row_id + add_idx
-                ].count("]")
-                if text[row_id + add_idx].startswith("[Dewan ditangguhkan") or text[
-                    row_id + add_idx
-                ].startswith("[Mesyuarat ditangguhkan"):
+                annotation_text += text[row_id + add_idx]
+                annotation_bold += bold[row_id + add_idx]
+                annotation_italics += italics[row_id + add_idx]
+                num_unclosed_brackets += (
+                    text[row_id + add_idx].count("[")
+                    - text[row_id + add_idx].count("]")
+                )
+
+                if text[row_id + add_idx].startswith("[Dewan ditangguhkan") or text[row_id + add_idx].startswith("[Mesyuarat ditangguhkan"):
                     dewan_tangguh = True
+
                 add_idx += 1
+
+            # Insert annotation row WITHOUT touching speaker state
+            annotation_row = {
+                "level_1": current["level_1"],
+                "level_2": current["level_2"],
+                "level_3": current["level_3"],
+                "timestamp": current["timestamp"],
+                "author": "ANNOTATION",
+                "speech": annotation_text,
+                "speech_bold": annotation_bold,
+                "speech_italics": annotation_italics,
+            }
+
+            speeches += insert_speech(annotation_row)
+
             row_id += add_idx - 1
-            speeches += insert_speech(current)
-            current["author"] = old_author
-            current["speech"] = ""
-            current["speech_bold"] = ""
-            current["speech_italics"] = ""
+
+            # DO NOT modify current["author"]
+            # DO NOT reset level context
+
             continue
+
         # now check if it is author or title etc
         if "1" not in bold[row_id]:
             # if there is no bold in a line
