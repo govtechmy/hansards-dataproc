@@ -26,27 +26,27 @@ def normalize_house(house: str) -> int:
 # Nested speech JSON (EXACT backend parity)
 # ---------------------------------------------------------------------
 
-def _add_to_result(levels: List[str], data: Dict, result: List):
+def _add_to_result(levels, data, result):
     if not levels:
         result.append(data)
         return
 
     current = result
+
     for level in levels:
-        found = None
-        for item in current:
-            if level in item:
-                found = item[level]
-                break
+        if not level:
+            continue
 
-        if not found:
-            entry = {level: []}
-            current.append(entry)
-            found = entry[level]
-
-        current = found
+        # only compare with LAST node
+        if current and level in current[-1]:
+            current = current[-1][level]
+        else:
+            new_entry = {level: []}
+            current.append(new_entry)
+            current = new_entry[level]
 
     current.append(data)
+
 
 
 def build_nested_speech_json(flat_speeches: List[Dict]) -> List:
