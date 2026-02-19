@@ -19,7 +19,7 @@ from io import BytesIO
 from datetime import datetime, time
 from difflib import SequenceMatcher
 from ..author_matching import perform_author_matching
-from ..utils.text_utils import house_mapper, preprocess_malaya, get_sitting_object
+from ..utils.text_utils import house_mapper, preprocess_malaya, get_sitting_object, is_number_only
 import warnings
 import psycopg2
 from botocore import UNSIGNED
@@ -194,6 +194,11 @@ def extract_toc_block(df, filename=None, fallback_max_lines=30):
         line = ln.strip()
         if not line or any(keyword in line.upper() for keyword in TOC_KEYWORDS):
             continue
+        # Skip number-only lines (e.g., "1.", "2.", "3.")
+        if is_number_only(line):
+            print(f"[TOC] Skipping number-only line: '{line}'")
+            continue
+        
         up_count = sum(1 for c in line if c.isupper())
         low_count = sum(1 for c in line if c.islower())
         if up_count > low_count:
@@ -268,6 +273,13 @@ def process_layout(df, toc_df, filename=None):
     post['level_2'] = ''
     for idx, row in post.iterrows():
         text = row['clean']
+        # Skip numbering-only rows before ANY logic runs
+        if is_number_only(text):
+            print(f"Skipping numbering line: '{text}'")
+            post.at[idx, 'level_1'] = l1
+            post.at[idx, 'level_2'] = l2
+            continue
+        
         norm = re.sub(r"[^\w\s]", '', text).upper().strip()
         if row['is_upper']:
             print(f"\nProcessing line [{idx}]: {text}")

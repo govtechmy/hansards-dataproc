@@ -1033,6 +1033,7 @@ def prepare_db_payload(context: AssetExecutionContext):
     csv_path = build_path("tabulated", "result.csv", sitting_object)
     csv_data = s3_client.get_object(Bucket=S3_DATAPROC_BUCKET, Key=csv_path)
     df = pd.read_csv(io.BytesIO(csv_data["Body"].read()))
+    context.log.info(f"CSV rows read from {csv_path}: {len(df)}")
     df["date"] = sitting_object["proper_date_str"]
     df = process_tabulated(df, sitting_object["house"])
 
@@ -1052,12 +1053,13 @@ def prepare_db_payload(context: AssetExecutionContext):
 
     # df_speech = df[df.author != "ANNOTATION"]
     df_speech = df.dropna(subset="speech")
+    context.log.info(f"Rows after dropna: {len(df_speech)}")
     df_speech.length = df_speech.length.astype(int)
     df_speech.reset_index(names="index", inplace=True)
 
-    df_speech = df_speech[
-        df_speech.speech_tokens.str.len() > 0
-    ]  # remove cleaned til empty speeches
+    df_speech["speech_tokens"] = df_speech["speech_tokens"].apply(
+        lambda x: x if isinstance(x, list) else []
+    )
 
     # context.log.info(f"Converting speech tokens to PostgreSQL array string")
     # df_speech.speech_tokens = df_speech.speech_tokens.apply(
