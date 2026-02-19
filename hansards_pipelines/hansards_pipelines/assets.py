@@ -1055,9 +1055,9 @@ def prepare_db_payload(context: AssetExecutionContext):
     df_speech.length = df_speech.length.astype(int)
     df_speech.reset_index(names="index", inplace=True)
 
-    df_speech = df_speech[
-        df_speech.speech_tokens.str.len() > 0
-    ]  # remove cleaned til empty speeches
+    df_speech["speech_tokens"] = df_speech["speech_tokens"].apply(
+        lambda x: x if isinstance(x, list) else []
+    )
 
     # context.log.info(f"Converting speech tokens to PostgreSQL array string")
     # df_speech.speech_tokens = df_speech.speech_tokens.apply(
