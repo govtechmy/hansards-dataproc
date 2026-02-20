@@ -68,7 +68,8 @@ def standardise_timestamp(timestamp):
     # strip cid
     timestamp = re.sub(r"\(cid:[12]\)", "", timestamp)
     numbers = "".join(re.findall(r"\d+", timestamp))
-    assert len(numbers) != 0
+    if len(numbers) == 0:
+        return None
     if len(numbers) < 3:
         # 10 pagi
         numbers += "00"
@@ -119,7 +120,12 @@ def category_probability(text, categories, check_upper_lower=True):
         # probably not a category
         return 0
 
-    candidate_category, match_score = process.extractOne(text, categories)
+    result = process.extractOne(text, categories)
+
+    if result is None:
+        return 0
+
+    candidate_category, match_score = result
     return match_score / 100
 
 
@@ -509,11 +515,13 @@ def _is_majority_italic_bracket(text_line, italics_line, start_idx):
 def put_annotations_on_new_line(text, bold, italics):
     # assumptions
     # 1. [ does not end on a line
-    for row in text:
-        assert row.strip()[-1] != "[", f"Error [ on end of line: {row}"
     row_id = 0
     num_unclosed_brackets = 0
+    
     while row_id < len(text):
+        if not text[row_id] or text[row_id] == "\n":
+            row_id += 1
+            continue
         letter_id = 0
         while letter_id < len(text[row_id]):
             if num_unclosed_brackets > 0:
@@ -575,6 +583,8 @@ def put_annotations_on_new_line(text, bold, italics):
 
 def format_attendance(text):
     # process attendance list
+    if not isinstance(text, str) or not text.strip():
+        return None, None
     replacement_dict = {
         "(johorbaru)": "(johorbahru)",
         "(kulimbandarbaharu)": "(kulim-bandarbaharu)",

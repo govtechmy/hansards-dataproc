@@ -1103,6 +1103,18 @@ def prepare_db_payload(context: AssetExecutionContext):
         lambda date: date.strftime("%Y-%m-%d")
     )
     context.log.info(df_speech_matched.columns.tolist())
+    if df_speech_matched["timestamp"].isna().any():
+        context.log.warning("NaN values found in timestamp column")
+        # log rows with NaN timestamp
+        df_speech_matched["timestamp"]=df_speech_matched["timestamp"].fillna(method="ffill")
+        first_valid=df_speech_matched["timestamp"].dropna()
+        if not first_valid.empty:
+            fallback_ts=first_valid.iloc[0]
+        else:
+            context.log.warning("No valid timestamps found — using fallback date")
+            fallback_ts=pd.Timestamp(sitting_object["proper_date_str"])
+        df_speech_matched["timestamp"]=df_speech_matched["timestamp"].fillna(fallback_ts)
+        context.log.info("Filled NaN timestamps with fallback value")
     # data completeness checking by column
     assert df_speech_matched["timestamp"].notna().all(), "timestamp column has NaN"
     assert df_speech_matched["index"].notna().all(), "index column has NaN"

@@ -149,8 +149,13 @@ def get_categories(hansard_date, house, root_dir=INPUT_PIPELINE_DIR, file_conten
     bold_lines = spaced_bold.split("\n")
     # get the line index where the TOC starts
     toc_start_idx = 0
-    while not re.search(r"K *A *N *D *U *N *G *A *N", lines[toc_start_idx]):
+    toc_pattern = re.compile(r"K *A *N *D *U *N *G *A *N")
+
+    while toc_start_idx < len(lines) and not toc_pattern.search(lines[toc_start_idx]):
         toc_start_idx += 1
+
+    if toc_start_idx >= len(lines):
+        toc_start_idx = 0 
 
     lines = lines[toc_start_idx + 1 :]
     bold_lines = bold_lines[toc_start_idx + 1 :]

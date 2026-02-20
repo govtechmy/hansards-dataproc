@@ -3,6 +3,14 @@
 import json
 import re
 
+def ensure_json_string(data):
+    """Ensure data is serialized to JSON string for downstream assets."""
+    if data is None:
+        return None
+    if isinstance(data, (str, bytes, bytearray)):
+        return data
+    return json.dumps(data)
+
 
 def read_and_modify_table(hansard_date, old_table, new_table, file_contents=None):
 
@@ -60,6 +68,13 @@ def read_and_add_toc_entry(hansard_date, toc_entry, file_contents=None):
 
 
 def add_toc_entry(toc, toc_entry):
+    if not isinstance(toc, list):
+        try:
+            toc = json.loads(toc) if toc else []
+        except Exception:
+            print("Invalid JSON format for TOC, initializing as empty list")
+            toc = []
+
     if toc_entry not in toc:
         toc.append(toc_entry)
     return toc
@@ -442,16 +457,25 @@ def post_parsing_edits_dn(
             }
         ],
     }
-    if date and date not in table_modifications:
-        tablejson_file_contents = None
-        categories_file_contents = None
-        table_modifications = []
-    elif date and date in table_modifications:
-        table_modifications = table_modifications[date]
-    else:
-        table_modifications = [
-            item for sublist in table_modifications.values() for item in sublist
+    # Normalize table_modifications into a flat list
+    normalized_modifications = []
+
+    if date:
+        # Get modifications for specific date (or empty list if none)
+        items = table_modifications.get(date, [])
+        normalized_modifications = [
+            {**item, "date": date}
+            for item in items
         ]
+    else:
+        # Flatten all dates and inject date into each item
+        for date_key, sublist in table_modifications.items():
+            normalized_modifications.extend(
+                {**item, "date": date_key}
+                for item in sublist
+            )
+
+    table_modifications = normalized_modifications
 
     # Apply all table modifications
     for modification in table_modifications:
@@ -461,7 +485,11 @@ def post_parsing_edits_dn(
             new_table=modification["new_table"],
             file_contents=tablejson_file_contents,
         )
+    tablejson_file_contents = ensure_json_string(tablejson_file_contents)
+    categories_file_contents = ensure_json_string(categories_file_contents)
+
     return tablejson_file_contents, categories_file_contents
+
 
 
 def post_parsing_edits_dr(
@@ -557,24 +585,25 @@ def post_parsing_edits_dr(
             }
         ],
     }
-    if date and date not in table_modifications:
-        tablejson_file_contents = None
-        table_modifications = []
-    elif date and date in table_modifications:
-        table_modifications = table_modifications[date]
-    else:
-        table_modifications = [
-            item for sublist in table_modifications.values() for item in sublist
-        ]
+    # Normalize table_modifications into a flat list
+    normalized_modifications = []
 
-    # Apply all table modifications
-    for modification in table_modifications:
-        tablejson_file_contents = read_and_modify_table(
-            hansard_date=modification["date"],
-            old_table=modification["old_table"],
-            new_table=modification["new_table"],
-            file_contents=tablejson_file_contents,
-        )
+    if date:
+        # Get modifications for specific date (or empty list if none)
+        items = table_modifications.get(date, [])
+        normalized_modifications = [
+            {**item, "date": date}
+            for item in items
+        ]
+    else:
+        # Flatten all dates and inject date into each item
+        for date_key, sublist in table_modifications.items():
+            normalized_modifications.extend(
+                {**item, "date": date_key}
+                for item in sublist
+            )
+
+    table_modifications = normalized_modifications
 
     # Handle TOC entries
     toc_entries = {
@@ -602,7 +631,11 @@ def post_parsing_edits_dr(
             date, entry, categories_file_contents
         )
 
+    tablejson_file_contents = ensure_json_string(tablejson_file_contents)
+    categories_file_contents = ensure_json_string(categories_file_contents)
+
     return tablejson_file_contents, categories_file_contents
+
 
 
 def post_parsing_edits_kk(
@@ -718,7 +751,11 @@ def post_parsing_edits_kk(
             new_table=modification["new_table"],
             file_contents=tablejson_file_contents,
         )
+    tablejson_file_contents = ensure_json_string(tablejson_file_contents)
+    categories_file_contents = ensure_json_string(categories_file_contents)
+
     return tablejson_file_contents, categories_file_contents
+
 
 
 if __name__ == "__main__":
