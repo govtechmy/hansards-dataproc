@@ -703,8 +703,6 @@ def dg_pre_tabulate(context: AssetExecutionContext):
     """
     sitting_object = get_sitting_object(context.partition_key)
     context.log.info(f"Pre tabulating {context.partition_key}")
-    context.log.info(f"INI CODE BARU... {context.partition_key}")
-
 
     plaintext = read_txt_file(
         s3_client,
