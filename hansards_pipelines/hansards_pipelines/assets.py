@@ -882,16 +882,19 @@ def dg_tabulate(context: AssetExecutionContext):
     # read categories.json from root folder
     categories = read_json_file(s3_client, S3_DATAPROC_BUCKET, "categories.json")
 
+    # override for non-DN
     if sitting_object["house"] != "DN":
-        categories = json.loads(
-            read_json_file(
-                s3_client,
-                S3_DATAPROC_BUCKET,
-                build_path("get_categories", "categories.json", sitting_object),
-            )
+        categories = read_json_file(
+            s3_client,
+            S3_DATAPROC_BUCKET,
+            build_path("get_categories", "categories.json", sitting_object),
         )
 
-    print(type(categories))
+    # safety normalization (handles double-encoded JSON)
+    if isinstance(categories, str):
+        categories = json.loads(categories)
+
+    context.log.info(type(categories))
 
     try:
         attendance = read_txt_file(
@@ -904,6 +907,9 @@ def dg_tabulate(context: AssetExecutionContext):
     except botocore.exceptions.ClientError as e:
         context.log.warning(f"No attendance.txt found for {context.partition_key}")
         attendance = None
+
+    if isinstance(categories, str):
+        categories = json.loads(categories)
 
     speeches, absent_text, attended_text = tabulate(
         sitting_object["date_str"],
