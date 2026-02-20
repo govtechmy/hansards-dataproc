@@ -456,7 +456,7 @@ def post_parsing_edits_dn(
     # Apply all table modifications
     for modification in table_modifications:
         tablejson_file_contents = read_and_modify_table(
-            hansard_date=modification["date"],
+            hansard_date=date,
             old_table=modification["old_table"],
             new_table=modification["new_table"],
             file_contents=tablejson_file_contents,
@@ -570,7 +570,7 @@ def post_parsing_edits_dr(
     # Apply all table modifications
     for modification in table_modifications:
         tablejson_file_contents = read_and_modify_table(
-            hansard_date=modification["date"],
+            hansard_date=date,
             old_table=modification["old_table"],
             new_table=modification["new_table"],
             file_contents=tablejson_file_contents,
@@ -713,7 +713,7 @@ def post_parsing_edits_kk(
     # Apply all table modifications
     for modification in table_modifications:
         tablejson_file_contents = read_and_modify_table(
-            hansard_date=modification["date"],
+            hansard_date=date,
             old_table=modification["old_table"],
             new_table=modification["new_table"],
             file_contents=tablejson_file_contents,
