@@ -67,8 +67,8 @@ from hansards_pipelines.move_and_rename_pdf import move_arkib_pdfs_to_public_mai
 from hansards_pipelines.author import load_author_csv_to_db
 from pathlib import Path
 
-from hansards_pipelines.arkib.build_arkib_partition_queue import build_arkib_partition_queue
-from hansards_pipelines.arkib.promote_pdfs import promote_arkib_pdfs
+from hansards_pipelines.arkib_sittings.build_arkib_partition_queue import build_arkib_partition_queue
+from hansards_pipelines.arkib_sittings.promote_pdfs import promote_arkib_pdfs
 
 from hansards_pipelines.legacy_pipeline.main import process_legacy_pipeline
 
@@ -1035,6 +1035,7 @@ def prepare_db_payload(context: AssetExecutionContext):
     csv_path = build_path("tabulated", "result.csv", sitting_object)
     csv_data = s3_client.get_object(Bucket=S3_DATAPROC_BUCKET, Key=csv_path)
     df = pd.read_csv(io.BytesIO(csv_data["Body"].read()))
+    context.log.info(f"CSV rows read from {csv_path}: {len(df)}")
     df["date"] = sitting_object["proper_date_str"]
     df = process_tabulated(df, sitting_object["house"])
 
@@ -1054,12 +1055,13 @@ def prepare_db_payload(context: AssetExecutionContext):
 
     # df_speech = df[df.author != "ANNOTATION"]
     df_speech = df.dropna(subset="speech")
+    context.log.info(f"Rows after dropna: {len(df_speech)}")
     df_speech.length = df_speech.length.astype(int)
     df_speech.reset_index(names="index", inplace=True)
 
-    df_speech = df_speech[
-        df_speech.speech_tokens.str.len() > 0
-    ]  # remove cleaned til empty speeches
+    df_speech["speech_tokens"] = df_speech["speech_tokens"].apply(
+        lambda x: x if isinstance(x, list) else []
+    )
 
     # context.log.info(f"Converting speech tokens to PostgreSQL array string")
     # df_speech.speech_tokens = df_speech.speech_tokens.apply(
@@ -1419,3 +1421,209 @@ def noop_partition_registration():
     This is manually triggered to create the partitions.
     """
     return None
+
+
+# =========================
+# DATA INTEGRITY ASSETS
+# =========================
+
+from hansards_pipelines.data_integrity.utils.upload_partition_artifact_by_house_term import upload_partition_artifact_by_house_term
+from hansards_pipelines.data_integrity.sittings.source.snapshot_db import fetch_db_structure, build_snapshot as build_db_snapshot
+from hansards_pipelines.data_integrity.sittings.source.snapshot_portal_parlimen import run_source_snapshot, build_snapshot as build_portal_snapshot
+from hansards_pipelines.data_integrity.sittings.source.validate_sittings_integrity import build_integrity_report
+from datetime import datetime, timezone
+
+from hansards_pipelines.partitions import HANSARD_PARTITIONS, HOUSE_PARTITIONS
+
+from hansards_pipelines.data_integrity.sittings.s3.snapshot_pdf_csv import run_for_houses
+from hansards_pipelines.data_integrity.utils.upload_partition_artifact_by_house import upload_partition_artifact_by_house
+from hansards_pipelines.data_integrity.sittings.s3.build_s3_pdf_csv_consolidation import consolidate_all_latest_s3_pdf_csv_into_one
+
+from hansards_pipelines.data_integrity.sittings.source.build_sittings_comparison_source_db import build_sittings_integrity_comparison_source_db, consolidate_all_latest_json_into_one
+from hansards_pipelines.data_integrity.utils.upload_global_artifact import upload_global_artifact
+
+@asset(partitions_def=HANSARD_PARTITIONS, group_name="data_integrity")
+def snapshot_portal_parlimen(context: AssetExecutionContext):
+
+    partition = context.partition_key.keys_by_dimension
+    house = partition["house"]
+    term = int(partition["term"])
+
+    context.log.info(f"Starting Portal Parlimen sitting snapshot for house={house}, term={term}, run_id={context.run_id}...")
+    structure = run_source_snapshot(
+        category=house,
+        term=term,
+        term_range=None,
+    )
+
+    context.log.info(f"Building snapshot...")
+    snapshot = build_portal_snapshot(
+        structure,
+        category=house,
+        term=term,
+        term_range=None,
+    )
+
+    context.log.info(f"Uploading snapshot to S3...")
+    upload_partition_artifact_by_house_term(
+        layer="source",
+        house=house,
+        term=term,
+        payload=snapshot,
+        run_id=context.run_id,
+    )
+
+    return snapshot
+
+
+@asset(partitions_def=HANSARD_PARTITIONS, group_name="data_integrity")
+def snapshot_db_sittings(context):
+
+    partition = context.partition_key.keys_by_dimension
+    house = partition["house"]
+    term = int(partition["term"])
+
+    context.log.info(f"Starting DB sitting snapshot for house={house}, term={term}, run_id={context.run_id}...")
+    structure = fetch_db_structure(
+        category=house,
+        term=term,
+        term_range=None,
+    )
+
+    context.log.info(f"Building snapshot...")
+    snapshot = build_db_snapshot(
+        structure,
+        category=house,
+        term=term,
+        term_range=None,
+    )
+
+    context.log.info(f"Uploading snapshot to S3...")
+    upload_partition_artifact_by_house_term(
+        layer="db",
+        house=house,
+        term=term,
+        payload=snapshot,
+        run_id=context.run_id,
+    )
+
+    return snapshot
+
+@asset(partitions_def=HANSARD_PARTITIONS, group_name="data_integrity")
+def report_sittings_integrity(
+    context: AssetExecutionContext,
+    snapshot_portal_parlimen,
+    snapshot_db_sittings,
+):
+    """
+    Compare the portal snapshot and db snapshot for the given partition, and generate an integrity report.
+    """
+
+    partition = context.partition_key.keys_by_dimension
+    house = partition["house"]
+    term = int(partition["term"])
+
+    context.log.info(f"Starting integrity check for house={house}, term={term}...")
+    run_id = context.run_id
+
+    scope = {
+        "run_id": run_id,
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "scope": {
+            "category": house,
+            "term": term,
+            "term_range": None,
+        }
+    }
+
+    context.log.info(f"Building integrity report...")
+    report = build_integrity_report(
+        snapshot_portal_parlimen,
+        snapshot_db_sittings,
+        scope,
+    )
+
+    context.log.info(f"Uploading integrity report to S3...")
+    key = upload_partition_artifact_by_house_term(
+        layer="integrity_check",
+        house=house,
+        term=term,
+        payload=report,
+        run_id=context.run_id,
+    )
+    context.log.info(f"Completed integrity report. Uploaded report to {key}")
+
+    return report
+
+@asset(partitions_def=HOUSE_PARTITIONS, group_name="data_integrity")
+def report_s3_downloads_pdf_csv(context: AssetExecutionContext):
+
+    house = context.partition_key
+
+    context.log.info(f"Running S3 downloadsPDF/CSV validation for house={house}")
+    report = run_for_houses([house])
+
+    context.log.info(f"Uploading PDF/CSV validation report to S3...")
+    key = upload_partition_artifact_by_house(
+        layer="s3",
+        house=house,
+        payload=report,
+        run_id=context.run_id,
+    )
+
+    context.log.info(f"Completed PDF/CSV validation. Uploaded report to {key}")
+
+    return report
+
+@asset(group_name="data_integrity")
+def report_overall_s3_pdf_csv_integrity(context: AssetExecutionContext):
+
+    houses = HOUSE_PARTITIONS.get_partition_keys()
+
+    context.log.info("Consolidating latest S3 PDF/CSV validation reports by house...")
+    consolidated = consolidate_all_latest_s3_pdf_csv_into_one(houses)
+
+    context.log.info("Uploading consolidated S3 PDF/CSV report...")
+    key = upload_global_artifact(
+        layer="report/sittings_pdf_csv_in_s3_check",
+        payload=consolidated,
+    )
+
+    context.log.info(f"Uploaded consolidated S3 PDF/CSV report to {key}")
+
+    return {
+        "report_key": key,
+    }
+
+
+@asset(group_name="data_integrity")
+def report_overall_sittings_integrity(context: AssetExecutionContext):
+
+    houses = HOUSE_PARTITIONS.get_partition_keys()
+
+    context.log.info("Consolidating all sitting's integrity by house & term (latest_run.json) into a single summary file...")
+    summary = consolidate_all_latest_json_into_one(houses)
+
+    context.log.info("Building report for sitting's source & db comparison by meeting...")
+    matrix = build_sittings_integrity_comparison_source_db(houses)
+
+    context.log.info("Uploading consolidated report about sittings integrity summary...")
+    summary_key = upload_global_artifact(
+        layer="report/sittings_integrity_summary_by_house_and_term",
+        payload=summary,
+    )
+
+    context.log.info("Uploading report about sitting's source & db comparison by meeting...")
+    matrix_key = upload_global_artifact(
+        layer="report/sittings_count_comparison_by_meeting",
+        payload=matrix,
+    )
+
+    context.log.info(f"Uploaded report to {summary_key}")
+    context.log.info(f"Uploaded report to {matrix_key}")
+
+    return {
+        "summary_key": summary_key,
+        "matrix_key": matrix_key,
+    }
+
