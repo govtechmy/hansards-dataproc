@@ -55,9 +55,15 @@ def read_and_add_toc_entry(hansard_date, toc_entry, file_contents=None):
         except FileNotFoundError:
             print(f"{hansard_date} not found, skipping")
     else:
-        toc = add_toc_entry(file_contents, toc_entry)
-        return toc
+        toc = file_contents
+        # normalize type here
+        if isinstance(toc, str):
+            toc = json.loads(toc)
+        if toc is None:
+            toc = []
 
+        toc = add_toc_entry(toc, toc_entry)
+        return toc
 
 def add_toc_entry(toc, toc_entry):
     if toc_entry not in toc:
