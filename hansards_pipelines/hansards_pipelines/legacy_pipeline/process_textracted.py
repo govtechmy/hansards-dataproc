@@ -647,16 +647,28 @@ def clean_speech_using_layout(
                 fixed_words.append(word)
                 continue
 
-            cleaned = ''.join(c for c in word if ord(c) < 128)
+            # --- Remove non-ascii ---
+            ascii_only = ''.join(c for c in word if ord(c) < 128)
 
-            # preserve trailing punctuation
+            if not ascii_only:
+                fixed_words.append(word)
+                continue
+
+            # --- Extract prefix (leading punctuation) ---
+            prefix = ''
+            while ascii_only and not ascii_only[0].isalnum():
+                prefix += ascii_only[0]
+                ascii_only = ascii_only[1:]
+
+            # --- Extract suffix (trailing punctuation) ---
             suffix = ''
-            if cleaned and not cleaned[-1].isalnum():
-                suffix = cleaned[-1]
-                cleaned = cleaned[:-1]
+            while ascii_only and not ascii_only[-1].isalnum():
+                suffix = ascii_only[-1] + suffix
+                ascii_only = ascii_only[:-1]
 
+            core = ascii_only
 
-            if not cleaned:
+            if not core:
                 fixed_words.append(word)
                 continue
 
@@ -664,21 +676,34 @@ def clean_speech_using_layout(
             best_ratio = 0
 
             for lw in layout_words:
-                ratio = SequenceMatcher(None, cleaned.lower(), lw.lower()).ratio()
+                ratio = SequenceMatcher(None, core.lower(), lw.lower()).ratio()
                 if ratio > best_ratio:
                     best_ratio = ratio
                     best_match = lw
 
-            final_word = cleaned
+            final_core = core
 
-            if best_match:
-                if best_ratio >= similarity_threshold or is_small_edit_distance(cleaned.lower(), best_match.lower()):
-                    final_word = best_match + suffix
-                    correction_count += 1
-                else:
-                    final_word = cleaned + suffix
+            if best_match and (
+                best_ratio >= similarity_threshold
+                or is_small_edit_distance(core.lower(), best_match.lower())
+            ):
+                final_core = best_match
+                correction_count += 1
 
-            logger.info(f"[CLEANUP] original='{word}' | cleaned='{cleaned}' | best='{best_match}' | ratio={best_ratio:.3f} | final='{final_word}'")
+            # --- Preserve original casing pattern ---
+            if core.istitle():
+                final_core = final_core.title()
+            elif core.isupper():
+                final_core = final_core.upper()
+            elif core.islower():
+                final_core = final_core.lower()
+
+            final_word = prefix + final_core + suffix
+
+            logger.info(
+                f"[CLEANUP] original='{word}' | core='{core}' | "
+                f"best='{best_match}' | ratio={best_ratio:.3f} | final='{final_word}'"
+            )
 
             fixed_words.append(final_word)
 
