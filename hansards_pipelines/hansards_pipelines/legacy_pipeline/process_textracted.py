@@ -584,6 +584,114 @@ def run_batch(prefix, start_year, end_year):
         for f in failed_files:
             print(f" - {f}")
 
+def clean_speech_using_layout(
+    df_speech,
+    df_layout,
+    logger,
+    similarity_threshold=0.85,
+):
+    """
+    Character corruption cleanup.
+    - Only modifies words containing corrupted characters
+    - Uses layout text as reference to fix corrupted words, which means it can only correct to words that exist in the textracted layout.
+    """
+
+    logger.info("Running corruption cleanup...")
+
+    # Build reference word set from layout text
+    # layout_text = " ".join(df_layout["text"].astype(str).tolist())
+    # layout_words = set(re.sub(r"[^\w]", "", w) for w in layout_text.split())
+    # layout_words = {w for w in layout_words if w}
+
+    layout_text = " ".join(df_layout["text"].astype(str).tolist())
+    speech_text = " ".join(df_speech["speech"].astype(str).tolist())
+
+    combined_text = layout_text + " " + speech_text
+
+    layout_words = set(re.sub(r"[^\w]", "", w) for w in combined_text.split())
+    layout_words = {w for w in layout_words if w}
+
+
+    corrupted_chars = ['�', '\ufffd', '£', '€', '«', '§', '°', '¢']
+
+    def has_corruption(word):
+        if not isinstance(word, str):
+            return False
+        if any(c in word for c in corrupted_chars):
+            return True
+        if any(ord(c) > 127 for c in word):
+            return True
+        return False
+
+    correction_count = 0
+
+    def is_small_edit_distance(a, b, fallback_threshold=0.80):
+        """
+        Allow slightly lower similarity for corrupted words (handles missing character cases like pencerobhan -> pencerobohan)
+        """
+        ratio = SequenceMatcher(None, a, b).ratio()
+        return ratio >= fallback_threshold
+
+    def fix_cell(text):
+        nonlocal correction_count
+
+        if not isinstance(text, str):
+            return text
+
+        words = text.split()
+        fixed_words = []
+
+        for word in words:
+
+            if not has_corruption(word):
+                fixed_words.append(word)
+                continue
+
+            cleaned = ''.join(c for c in word if ord(c) < 128)
+
+            # preserve trailing punctuation
+            suffix = ''
+            if cleaned and not cleaned[-1].isalnum():
+                suffix = cleaned[-1]
+                cleaned = cleaned[:-1]
+
+
+            if not cleaned:
+                fixed_words.append(word)
+                continue
+
+            best_match = None
+            best_ratio = 0
+
+            for lw in layout_words:
+                ratio = SequenceMatcher(None, cleaned.lower(), lw.lower()).ratio()
+                if ratio > best_ratio:
+                    best_ratio = ratio
+                    best_match = lw
+
+            final_word = cleaned
+
+            if best_match:
+                if best_ratio >= similarity_threshold or is_small_edit_distance(cleaned.lower(), best_match.lower()):
+                    final_word = best_match + suffix
+                    correction_count += 1
+                else:
+                    final_word = cleaned + suffix
+
+            logger.info(f"[CLEANUP] original='{word}' | cleaned='{cleaned}' | best='{best_match}' | ratio={best_ratio:.3f} | final='{final_word}'")
+
+            fixed_words.append(final_word)
+
+        return " ".join(fixed_words)
+
+
+    df_speech["speech"] = df_speech["speech"].apply(fix_cell)
+
+    logger.info(f"Cleanup corrections made: {correction_count}")
+
+    return df_speech
+
+
 def process_and_insert(prefix, key, date_str, logger):
 
     s3 = session.client("s3")
@@ -606,8 +714,10 @@ def process_and_insert(prefix, key, date_str, logger):
     toc_df = extract_toc_block(df, filename=key.split("/")[-1])
     df_speech = process_layout(df, toc_df, filename=key.split("/")[-1])
 
+    df_speech = clean_speech_using_layout(df_speech, df, logger)
+
     if df_speech.empty:
-        print(f"⚠️ Skipping {key} - No speech content parsed from PDF. Skip upload to S3 & skip prepare_db_payload process.")
+        logger.warning(f"Skipping {key} - No speech content parsed from PDF. Skip upload to S3 & skip prepare_db_payload process.")
         raise ValueError("SKIPPED_NO_SPEECH")
     
     buffer = BytesIO()
