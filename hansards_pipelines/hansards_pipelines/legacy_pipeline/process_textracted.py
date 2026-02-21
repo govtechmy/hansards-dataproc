@@ -638,20 +638,27 @@ def clean_speech_using_layout(
         if not isinstance(text, str):
             return text
 
-        words = text.split()
-        fixed_words = []
+        tokens = re.split(r'(\s+)', text)  # keep whitespace
+        fixed_tokens = []
 
-        for word in words:
+        for token in tokens:
+
+            # Keep whitespace exactly as-is
+            if token.isspace():
+                fixed_tokens.append(token)
+                continue
+
+            word = token
 
             if not has_corruption(word):
-                fixed_words.append(word)
+                fixed_tokens.append(word)
                 continue
 
             # --- Remove non-ascii ---
             ascii_only = ''.join(c for c in word if ord(c) < 128)
 
             if not ascii_only:
-                fixed_words.append(word)
+                fixed_tokens.append(word)
                 continue
 
             # --- Extract prefix (leading punctuation) ---
@@ -669,7 +676,7 @@ def clean_speech_using_layout(
             core = ascii_only
 
             if not core:
-                fixed_words.append(word)
+                fixed_tokens.append(word)
                 continue
 
             best_match = None
@@ -705,10 +712,9 @@ def clean_speech_using_layout(
                 f"best='{best_match}' | ratio={best_ratio:.3f} | final='{final_word}'"
             )
 
-            fixed_words.append(final_word)
+            fixed_tokens.append(final_word)
 
-        return " ".join(fixed_words)
-
+        return "".join(fixed_tokens)
 
     df_speech["speech"] = df_speech["speech"].apply(fix_cell)
 
