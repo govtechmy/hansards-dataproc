@@ -24,7 +24,7 @@ import warnings
 import psycopg2
 from botocore import UNSIGNED
 from botocore.config import Config
-from ..settings import S3_TEXTRACT_BUCKET, DEV_API_URL, HANSARD_DB_URL
+from ..settings import S3_TEXTRACT_BUCKET, DEV_API_URL, HANSARD_DB_URL, S3_PUBLIC_BUCKET
 from ..direct_sitting_ingest import ingest_sitting_to_db
 
 import boto3
@@ -799,8 +799,8 @@ def process_and_insert(prefix, key, date_str, logger):
     # store raw processed file
     pdf_key = f"{house_mapper.to_code(prefix).upper()}-{datetime.strptime(date_str, '%Y-%m-%d').strftime('%d%m%Y')}"
     sitting_obj = get_sitting_object(pdf_key)
-    s3_key = f"post_textracted/{prefix}/{sitting_obj['renamed_filename']}.csv"
-    s3.put_object(Bucket=S3_TEXTRACT_BUCKET, Key=s3_key, Body=buffer.getvalue())
+    s3_key = f"{prefix}/{sitting_obj['renamed_filename']}.csv"
+    s3.put_object(Bucket=S3_PUBLIC_BUCKET, Key=s3_key, Body=buffer.getvalue(), ContentType="text/csv")
     print(f"\nSaved to {s3_key}")
 
     # final processed file with matched author name (no need to store in S3. its stored in DB)
