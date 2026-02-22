@@ -24,7 +24,7 @@ import warnings
 import psycopg2
 from botocore import UNSIGNED
 from botocore.config import Config
-from ..settings import S3_TEXTRACT_BUCKET, DEV_API_URL, HANSARD_DB_URL
+from ..settings import S3_TEXTRACT_BUCKET, DEV_API_URL, HANSARD_DB_URL, S3_PUBLIC_BUCKET
 from ..direct_sitting_ingest import ingest_sitting_to_db
 
 import boto3
@@ -217,9 +217,14 @@ def extract_toc_block(df, filename=None, fallback_max_lines=30):
 
     return toc_out
 
+def find_non_speaker_verbs(author_text):
+    NON_SPEAKER_VERBS = ["reported", "resolved", "considered", "ordered", "amended", "adopted", "debated", "passed", "read", "proposed", "moved", "seconded", "agreed", "adjourned", "appeal", "bill", "quote", "declare", "reads", "follows", "proposal", "kata", "seperti", "berikut", "menyatakan", "memutuskan", "mempertimbangkan", "mengusulkan", "mengajukan", "mengadopsi", "membahas", "melanjutkan", "menyetujui", "menolak", "mengutip", "mengumumkan", "sebarang", "iaitu", "adalah", "berhajat", "berbunyi"]
+    lower = author_text.lower()
+    return any(verb in lower for verb in NON_SPEAKER_VERBS)
+
 def process_layout(df, toc_df, filename=None):
     df['is_timestamp'] = df['clean'].str.match(ts_full)
-    df['is_speaker'] = df['clean'].str.contains(r'^.{3,}?:', regex=True)
+    df['is_speaker'] = df['clean'].str.match(r'^(?!\d+\.)[^:]{3,}?:')
 
     doa_keywords = DOA_KEYWORDS.copy()
     if filename and filename in DOA_KEYWORDS_OVERRIDE:
@@ -335,8 +340,29 @@ def process_layout(df, toc_df, filename=None):
             t = parse_timestamp(row['clean'])
             if t:
                 ts_cur = t
+
         if row['is_speaker']:
-            # save previous speaker block
+
+            parts = row['clean'].split(':', 1)
+            possible_author = parts[0].strip()
+
+            # Filter out non-speaker lines that are misclassified as speaker due to the presence of a colon.
+            if find_non_speaker_verbs(possible_author):
+                # treat as normal paragraph instead
+                if current_author:
+                    current_speech += '\n' + row['clean']
+                else:
+                    segments.append({
+                        'level_1': row['level_1'],
+                        'level_2': row['level_2'],
+                        'level_3': '',
+                        'timestamp': ts_cur.strftime('%H%M') if ts_cur else '',
+                        'author': None,
+                        'speech': row['clean'].strip()
+                    })
+                continue
+
+            # REAL SPEAKER
             if current_author:
                 segments.append({
                     'level_1': current_level1,
@@ -347,9 +373,7 @@ def process_layout(df, toc_df, filename=None):
                     'speech': current_speech.strip()
                 })
 
-            # start new speaker
-            parts = row['clean'].split(':', 1)
-            current_author = parts[0].strip()
+            current_author = possible_author
             current_speech = parts[1].strip() if len(parts) > 1 else ''
             current_level1 = row['level_1']
             current_level2 = row['level_2']
@@ -584,6 +608,175 @@ def run_batch(prefix, start_year, end_year):
         for f in failed_files:
             print(f" - {f}")
 
+def clean_speech_using_layout(
+    df_speech,
+    df_layout,
+    logger,
+    similarity_threshold=0.85,
+):
+    """
+    Character corruption cleanup.
+    - Only modifies words containing corrupted characters
+    - Uses layout text as reference to fix corrupted words, which means it can only correct to words that exist in the textracted layout.
+    """
+
+    logger.info("Running corruption cleanup...")
+
+    # Build reference word set from layout text
+    layout_text = " ".join(df_layout["text"].astype(str).tolist())
+    layout_words = set(re.sub(r"[^\w]", "", w) for w in layout_text.split())
+    layout_words = {w for w in layout_words if w}
+
+    corrupted_chars = ['�', '\ufffd', '£', '€', '«', '§', '°', '¢']
+
+    def has_corruption(word):
+        if not isinstance(word, str):
+            return False
+        if any(c in word for c in corrupted_chars):
+            return True
+        if any(ord(c) > 127 for c in word):
+            return True
+        return False
+
+    correction_count = 0
+
+    def is_small_edit_distance(a, b, fallback_threshold=0.80):
+        """
+        Allow slightly lower similarity for corrupted words (handles missing character cases like pencerobhan -> pencerobohan)
+        """
+        ratio = SequenceMatcher(None, a, b).ratio()
+        return ratio >= fallback_threshold
+
+    def fix_cell(text):
+        nonlocal correction_count
+
+        if not isinstance(text, str):
+            return text
+
+        tokens = re.split(r'(\s+)', text)  # keep whitespace
+        fixed_tokens = []
+
+        for token in tokens:
+
+            # Keep whitespace exactly as-is
+            if token.isspace():
+                fixed_tokens.append(token)
+                continue
+
+            word = token
+
+            if not has_corruption(word):
+                fixed_tokens.append(word)
+                continue
+
+            # --- Remove non-ascii ---
+            ascii_only = ''.join(c for c in word if ord(c) < 128)
+
+            if not ascii_only:
+                fixed_tokens.append(word)
+                continue
+
+            # --- Extract prefix (leading punctuation) ---
+            prefix = ''
+            while ascii_only and not ascii_only[0].isalnum():
+                prefix += ascii_only[0]
+                ascii_only = ascii_only[1:]
+
+            # --- Extract suffix (trailing punctuation) ---
+            suffix = ''
+            while ascii_only and not ascii_only[-1].isalnum():
+                suffix = ascii_only[-1] + suffix
+                ascii_only = ascii_only[:-1]
+
+            core = ascii_only
+
+            if not core:
+                fixed_tokens.append(word)
+                continue
+
+            best_match = None
+            best_ratio = 0
+
+            for lw in layout_words:
+                ratio = SequenceMatcher(None, core.lower(), lw.lower()).ratio()
+                if ratio > best_ratio:
+                    best_ratio = ratio
+                    best_match = lw
+
+            final_core = core
+
+            if best_match and (
+                best_ratio >= similarity_threshold
+                or is_small_edit_distance(core.lower(), best_match.lower())
+            ):
+                final_core = best_match
+                correction_count += 1
+
+            # --- Preserve original casing pattern ---
+            if core.istitle():
+                final_core = final_core.title()
+            elif core.isupper():
+                final_core = final_core.upper()
+            elif core.islower():
+                final_core = final_core.lower()
+
+            final_word = prefix + final_core + suffix
+
+            logger.info(
+                f"[CLEANUP] original='{word}' | core='{core}' | "
+                f"best='{best_match}' | ratio={best_ratio:.3f} | final='{final_word}'"
+            )
+
+            fixed_tokens.append(final_word)
+
+        return "".join(fixed_tokens)
+
+    df_speech["speech"] = df_speech["speech"].apply(fix_cell)
+    for col in ["level_1", "level_2", "level_3", "author"]:
+        if col in df_speech.columns:
+            df_speech[col] = df_speech[col].apply(fix_cell)
+
+    logger.info(f"Cleanup corrections made: {correction_count}")
+
+    return df_speech
+
+def merge_question_blocks(df: pd.DataFrame) -> pd.DataFrame:
+    if df.empty:
+        return df
+
+    merged = []
+    prev = df.iloc[0].to_dict()
+
+    for _, row in df.iloc[1:].iterrows():
+        curr = row.to_dict()
+
+        same_heading = (
+            curr["level_1"] == prev["level_1"]
+            and curr["timestamp"] == prev["timestamp"]
+        )
+
+        both_no_author = (
+            not curr.get("author")
+            and not prev.get("author")
+        )
+
+        if same_heading and both_no_author and prev.get("speech") and curr.get("speech"):
+            prev_speech = (prev.get("speech") or "").rstrip()
+            curr_speech = (curr.get("speech") or "").lstrip()
+
+            # ensure clean newline separation
+            if prev_speech:
+                prev["speech"] = prev_speech + "\n" + curr_speech
+            else:
+                prev["speech"] = curr_speech
+        else:
+            merged.append(prev)
+            prev = curr
+
+    merged.append(prev)
+    return pd.DataFrame(merged)
+
+
 def process_and_insert(prefix, key, date_str, logger):
 
     s3 = session.client("s3")
@@ -603,11 +796,18 @@ def process_and_insert(prefix, key, date_str, logger):
     df = df[~df['layout'].str.contains('Page', case=False, na=False)]
     df['clean'] = df['text'].fillna('').str.strip()
 
+    # Normalize whitespace: replace multiple newlines with a single space, multiple spaces with a single space, and trim leading/trailing whitespace
+    df['clean'] = df['clean'].str.replace(r'\n+', ' ', regex=True)
+    df['clean'] = df['clean'].str.replace(r'\s{2,}', ' ', regex=True)
+    df['clean'] = df['clean'].str.strip()
+
     toc_df = extract_toc_block(df, filename=key.split("/")[-1])
     df_speech = process_layout(df, toc_df, filename=key.split("/")[-1])
+    df_speech = merge_question_blocks(df_speech)
+    df_speech = clean_speech_using_layout(df_speech, df, logger)
 
     if df_speech.empty:
-        print(f"⚠️ Skipping {key} - No speech content parsed from PDF. Skip upload to S3 & skip prepare_db_payload process.")
+        logger.warning(f"Skipping {key} - No speech content parsed from PDF. Skip upload to S3 & skip prepare_db_payload process.")
         raise ValueError("SKIPPED_NO_SPEECH")
     
     buffer = BytesIO()
@@ -617,8 +817,8 @@ def process_and_insert(prefix, key, date_str, logger):
     # store raw processed file
     pdf_key = f"{house_mapper.to_code(prefix).upper()}-{datetime.strptime(date_str, '%Y-%m-%d').strftime('%d%m%Y')}"
     sitting_obj = get_sitting_object(pdf_key)
-    s3_key = f"post_textracted/{prefix}/{sitting_obj['renamed_filename']}.csv"
-    s3.put_object(Bucket=S3_TEXTRACT_BUCKET, Key=s3_key, Body=buffer.getvalue())
+    s3_key = f"{prefix}/{sitting_obj['renamed_filename']}.csv"
+    s3.put_object(Bucket=S3_PUBLIC_BUCKET, Key=s3_key, Body=buffer.getvalue(), ContentType="text/csv")
     print(f"\nSaved to {s3_key}")
 
     # final processed file with matched author name (no need to store in S3. its stored in DB)

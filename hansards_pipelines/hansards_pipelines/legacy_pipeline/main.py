@@ -49,35 +49,47 @@ def run_process_textracted(prefix: str, date_str: str, logger) -> None:
     pipeline_process_and_insert(prefix, key, date_str, logger=logger)
 
 
+# def process_legacy_pipeline(*, partition_key: str, s3_client, logger) -> None:
+#     """
+#     Process a single partition key for S3 and insert the corresponding data into the database.
+
+#     There is a conditional check to see if a manual CSV exists for the given partition key. 
+#     - If it exists, it processes and inserts that CSV directly.
+#     - If not, it runs the pipeline to parse the PDF, generate the CSV, and then insert the data.
+
+#     Args:        
+#     partition_key: A string in the format "HOUSE-DDMMYYYY" (e.g., "DN-29042007")
+#     """
+#     prefix, s3_key, date_str = partition_key_to_insert_args(partition_key)
+
+#     manual_key = f"manual_cleanup/{prefix}/{s3_key.split('/')[-1]}"
+
+#     try:
+#         s3_client.head_object(Bucket=S3_TEXTRACT_BUCKET, Key=manual_key)
+
+#         logger.info("Manually cleaned CSV found -> direct csv insert into DB | %s", manual_key)
+
+#         csv_process_and_insert(prefix=prefix, key=manual_key, date_str=date_str, logger=logger)
+#         return
+
+#     except ClientError as e:
+#         # key does not exist
+#         if e.response["Error"]["Code"] in ("404", "NoSuchKey"):
+#             logger.info("Manually cleaned CSV not found -> run process textracted pipeline | %s", partition_key)
+#         else:
+#             raise
+
+#     run_process_textracted(prefix=prefix, date_str=date_str, logger=logger)
+
 def process_legacy_pipeline(*, partition_key: str, s3_client, logger) -> None:
     """
-    Process a single partition key for S3 and insert the corresponding data into the database.
-
-    There is a conditional check to see if a manual CSV exists for the given partition key. 
-    - If it exists, it processes and inserts that CSV directly.
-    - If not, it runs the pipeline to parse the PDF, generate the CSV, and then insert the data.
-
-    Args:        
-    partition_key: A string in the format "HOUSE-DDMMYYYY" (e.g., "DN-29042007")
+    Always run the process textracted pipeline to parse the PDF, generate the CSV, and then insert the data.
+    Ignore the existence of manually cleaned CSV for now, as we want to prioritise having the textracted pipeline 
+    as the source of truth and have a consistent process for all partitions.
     """
+
     prefix, s3_key, date_str = partition_key_to_insert_args(partition_key)
 
-    manual_key = f"manual_cleanup/{prefix}/{s3_key.split('/')[-1]}"
-
-    try:
-        s3_client.head_object(Bucket=S3_TEXTRACT_BUCKET, Key=manual_key)
-
-        logger.info("Manually cleaned CSV found -> direct csv insert into DB | %s", manual_key)
-
-        csv_process_and_insert(prefix=prefix, key=manual_key, date_str=date_str, logger=logger)
-        return
-
-    except ClientError as e:
-        # key does not exist
-        if e.response["Error"]["Code"] in ("404", "NoSuchKey"):
-            logger.info("Manually cleaned CSV not found -> run process textracted pipeline | %s", partition_key)
-        else:
-            raise
+    logger.info("Running textracted pipeline | %s", partition_key)
 
     run_process_textracted(prefix=prefix, date_str=date_str, logger=logger)
-
