@@ -217,9 +217,8 @@ def extract_toc_block(df, filename=None, fallback_max_lines=30):
 
     return toc_out
 
-
 def find_non_speaker_verbs(author_text):
-    NON_SPEAKER_VERBS = ["reported", "resolved", "considered", "ordered", "amended", "adopted", "debated", "passed", "read", "proposed", "moved", "seconded", "agreed", "adjourned", "appeal", "bill", "quote", "declare", "reads", "follows", "proposal", "kata"]
+    NON_SPEAKER_VERBS = ["reported", "resolved", "considered", "ordered", "amended", "adopted", "debated", "passed", "read", "proposed", "moved", "seconded", "agreed", "adjourned", "appeal", "bill", "quote", "declare", "reads", "follows", "proposal", "kata", "seperti", "berikut", "menyatakan", "memutuskan", "mempertimbangkan", "mengusulkan", "mengajukan", "mengadopsi", "membahas", "melanjutkan", "menyetujui", "menolak", "mengutip", "mengumumkan", "sebarang", "iaitu", "adalah", "berhajat", "berbunyi"]
     lower = author_text.lower()
     return any(verb in lower for verb in NON_SPEAKER_VERBS)
 
@@ -761,7 +760,7 @@ def merge_question_blocks(df: pd.DataFrame) -> pd.DataFrame:
             and not prev.get("author")
         )
 
-        if same_heading and both_no_author:
+        if same_heading and both_no_author and prev.get("speech") and curr.get("speech"):
             prev_speech = (prev.get("speech") or "").rstrip()
             curr_speech = (curr.get("speech") or "").lstrip()
 
