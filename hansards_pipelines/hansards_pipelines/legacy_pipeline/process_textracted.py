@@ -219,7 +219,7 @@ def extract_toc_block(df, filename=None, fallback_max_lines=30):
 
 def process_layout(df, toc_df, filename=None):
     df['is_timestamp'] = df['clean'].str.match(ts_full)
-    df['is_speaker'] = df['clean'].str.contains(r'^.{3,}?:', regex=True)
+    df['is_speaker'] = df['clean'].str.match(r'^(?!\d+\.)[^:]{3,}?:')
 
     doa_keywords = DOA_KEYWORDS.copy()
     if filename and filename in DOA_KEYWORDS_OVERRIDE:
@@ -722,6 +722,42 @@ def clean_speech_using_layout(
 
     return df_speech
 
+def merge_question_blocks(df: pd.DataFrame) -> pd.DataFrame:
+    if df.empty:
+        return df
+
+    merged = []
+    prev = df.iloc[0].to_dict()
+
+    for _, row in df.iloc[1:].iterrows():
+        curr = row.to_dict()
+
+        same_heading = (
+            curr["level_1"] == prev["level_1"]
+            and curr["timestamp"] == prev["timestamp"]
+        )
+
+        both_no_author = (
+            not curr.get("author")
+            and not prev.get("author")
+        )
+
+        if same_heading and both_no_author:
+            prev_speech = (prev.get("speech") or "").rstrip()
+            curr_speech = (curr.get("speech") or "").lstrip()
+
+            # ensure clean newline separation
+            if prev_speech:
+                prev["speech"] = prev_speech + "\n" + curr_speech
+            else:
+                prev["speech"] = curr_speech
+        else:
+            merged.append(prev)
+            prev = curr
+
+    merged.append(prev)
+    return pd.DataFrame(merged)
+
 
 def process_and_insert(prefix, key, date_str, logger):
 
@@ -742,9 +778,14 @@ def process_and_insert(prefix, key, date_str, logger):
     df = df[~df['layout'].str.contains('Page', case=False, na=False)]
     df['clean'] = df['text'].fillna('').str.strip()
 
+    # Normalize whitespace: replace multiple newlines with a single space, multiple spaces with a single space, and trim leading/trailing whitespace
+    df['clean'] = df['clean'].str.replace(r'\n+', ' ', regex=True)
+    df['clean'] = df['clean'].str.replace(r'\s{2,}', ' ', regex=True)
+    df['clean'] = df['clean'].str.strip()
+
     toc_df = extract_toc_block(df, filename=key.split("/")[-1])
     df_speech = process_layout(df, toc_df, filename=key.split("/")[-1])
-
+    df_speech = merge_question_blocks(df_speech)
     df_speech = clean_speech_using_layout(df_speech, df, logger)
 
     if df_speech.empty:
