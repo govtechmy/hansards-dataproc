@@ -599,18 +599,9 @@ def clean_speech_using_layout(
     logger.info("Running corruption cleanup...")
 
     # Build reference word set from layout text
-    # layout_text = " ".join(df_layout["text"].astype(str).tolist())
-    # layout_words = set(re.sub(r"[^\w]", "", w) for w in layout_text.split())
-    # layout_words = {w for w in layout_words if w}
-
     layout_text = " ".join(df_layout["text"].astype(str).tolist())
-    speech_text = " ".join(df_speech["speech"].astype(str).tolist())
-
-    combined_text = layout_text + " " + speech_text
-
-    layout_words = set(re.sub(r"[^\w]", "", w) for w in combined_text.split())
+    layout_words = set(re.sub(r"[^\w]", "", w) for w in layout_text.split())
     layout_words = {w for w in layout_words if w}
-
 
     corrupted_chars = ['�', '\ufffd', '£', '€', '«', '§', '°', '¢']
 
