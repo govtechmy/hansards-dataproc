@@ -717,6 +717,9 @@ def clean_speech_using_layout(
         return "".join(fixed_tokens)
 
     df_speech["speech"] = df_speech["speech"].apply(fix_cell)
+    for col in ["level_1", "level_2", "level_3"]:
+        if col in df_speech.columns:
+            df_speech[col] = df_speech[col].apply(fix_cell)
 
     logger.info(f"Cleanup corrections made: {correction_count}")
 
