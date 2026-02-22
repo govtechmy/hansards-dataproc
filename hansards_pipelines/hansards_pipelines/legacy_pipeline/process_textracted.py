@@ -217,6 +217,12 @@ def extract_toc_block(df, filename=None, fallback_max_lines=30):
 
     return toc_out
 
+
+def find_non_speaker_verbs(author_text):
+    NON_SPEAKER_VERBS = ["reported", "resolved", "considered", "ordered", "amended", "adopted", "debated", "passed", "read", "proposed", "moved", "seconded", "agreed", "adjourned", "appeal", "bill", "quote", "declare", "reads", "follows", "proposal", "kata"]
+    lower = author_text.lower()
+    return any(verb in lower for verb in NON_SPEAKER_VERBS)
+
 def process_layout(df, toc_df, filename=None):
     df['is_timestamp'] = df['clean'].str.match(ts_full)
     df['is_speaker'] = df['clean'].str.match(r'^(?!\d+\.)[^:]{3,}?:')
@@ -335,8 +341,29 @@ def process_layout(df, toc_df, filename=None):
             t = parse_timestamp(row['clean'])
             if t:
                 ts_cur = t
+
         if row['is_speaker']:
-            # save previous speaker block
+
+            parts = row['clean'].split(':', 1)
+            possible_author = parts[0].strip()
+
+            # Filter out non-speaker lines that are misclassified as speaker due to the presence of a colon.
+            if find_non_speaker_verbs(possible_author):
+                # treat as normal paragraph instead
+                if current_author:
+                    current_speech += '\n' + row['clean']
+                else:
+                    segments.append({
+                        'level_1': row['level_1'],
+                        'level_2': row['level_2'],
+                        'level_3': '',
+                        'timestamp': ts_cur.strftime('%H%M') if ts_cur else '',
+                        'author': None,
+                        'speech': row['clean'].strip()
+                    })
+                continue
+
+            # REAL SPEAKER
             if current_author:
                 segments.append({
                     'level_1': current_level1,
@@ -347,9 +374,7 @@ def process_layout(df, toc_df, filename=None):
                     'speech': current_speech.strip()
                 })
 
-            # start new speaker
-            parts = row['clean'].split(':', 1)
-            current_author = parts[0].strip()
+            current_author = possible_author
             current_speech = parts[1].strip() if len(parts) > 1 else ''
             current_level1 = row['level_1']
             current_level2 = row['level_2']
