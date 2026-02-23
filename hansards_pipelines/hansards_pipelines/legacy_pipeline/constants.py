@@ -6,4 +6,5 @@ NON_SPEAKER_VERBS = [
     "mengumumkan", "sebarang", "iaitu", "adalah", "berhajat", "berbunyi", "bagi", "bahawa", "terdapat", "sebab", "tendency",
     "irony", "ialah", "berkata", "menyatakan", "mengatakan", "menjelaskan", "menegaskan", "mengumumkan", "mengungkapkan", "menyampaikan", "memperjelas", "mempertegas", "mempertebal",
     "report", "resolve", "consider", "order", "amend", "adopt", "debate", "pass", "read",
+    "antara", "dengan", "untuk", "sebagai", "sehingga", "karena", "sampai", "selama", "ketika", "waktu", "sebelum", "sesudah", "selanjutnya", "kemudian", "setelah", "sebelumnya", "berlangsung", "langsung", "berlangsung",
     ]
