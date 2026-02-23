@@ -26,6 +26,7 @@ from botocore import UNSIGNED
 from botocore.config import Config
 from ..settings import S3_TEXTRACT_BUCKET, DEV_API_URL, HANSARD_DB_URL, S3_PUBLIC_BUCKET
 from ..direct_sitting_ingest import ingest_sitting_to_db
+from hansards_pipelines.legacy_pipeline.constants import NON_SPEAKER_VERBS
 
 import boto3
 import botocore
@@ -218,7 +219,6 @@ def extract_toc_block(df, filename=None, fallback_max_lines=30):
     return toc_out
 
 def find_non_speaker_verbs(author_text):
-    NON_SPEAKER_VERBS = ["reported", "resolved", "considered", "ordered", "amended", "adopted", "debated", "passed", "read", "proposed", "moved", "seconded", "agreed", "adjourned", "appeal", "bill", "quote", "declare", "reads", "follows", "proposal", "kata", "seperti", "berikut", "menyatakan", "memutuskan", "mempertimbangkan", "mengusulkan", "mengajukan", "mengadopsi", "membahas", "melanjutkan", "menyetujui", "menolak", "mengutip", "mengumumkan", "sebarang", "iaitu", "adalah", "berhajat", "berbunyi", "adalah", "bagi", "bahawa", "terdapat", "sebab", "tendency"]
     lower = author_text.lower()
     return any(verb in lower for verb in NON_SPEAKER_VERBS)
 
