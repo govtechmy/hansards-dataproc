@@ -5,4 +5,5 @@ NON_SPEAKER_VERBS = [
     "mengusulkan", "mengajukan", "mengadopsi", "membahas", "melanjutkan", "menyetujui", "menolak", "mengutip", 
     "mengumumkan", "sebarang", "iaitu", "adalah", "berhajat", "berbunyi", "bagi", "bahawa", "terdapat", "sebab", "tendency",
     "irony", "ialah", "berkata", "menyatakan", "mengatakan", "menjelaskan", "menegaskan", "mengumumkan", "mengungkapkan", "menyampaikan", "memperjelas", "mempertegas", "mempertebal",
+    "report", "resolve", "consider", "order", "amend", "adopt", "debate", "pass", "read",
     ]
