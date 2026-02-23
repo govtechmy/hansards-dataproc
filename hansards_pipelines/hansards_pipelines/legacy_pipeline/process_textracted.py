@@ -637,6 +637,9 @@ def clean_speech_using_layout(
             return True
         if any(ord(c) > 127 for c in word):
             return True
+        # Detect ASCII placeholder blocks like ???????
+        if len(word) >= 3 and set(word) == {"?"}:
+            return True
         return False
 
     correction_count = 0
