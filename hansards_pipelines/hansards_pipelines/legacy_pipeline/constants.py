@@ -13,5 +13,6 @@ NON_SPEAKER_VERBS = [
     "statement", "important", "significant", "notable", "remarkable", "noteworthy",
     "task", "nevertheless", "however", "although", "though", "despite", "in spite of", "regardless of", "nonetheless", "notwithstanding", "even though", "while", "whereas", "issues", "deleted", "berita", "said", "occasion", "pepatah", "belongs", "berbelah-bahagi", "understanding", "understood", "understands", "understand",
     "also", "unfortunately", "fortunately", "additionally", "moreover", "furthermore", "in addition", "as well as", "besides", "what's more", "on top of that",
-    "not only that", "and also", "Peringatan", "Taman", "colonial", "kepada", "clear", "rata", "mengikut", "Dalam", "Pemandu", "Latehan", 
+    "not only that", "and also", "Peringatan", "Taman", "colonial", "kepada", "clear", "rata", "mengikut", "Dalam", "Pemandu", "Latehan", "warning", "ranchangan", "relative", "Jumlah", "further", "menurut","di-luluskan","academic", "merayu", "employed", "left", "pikul", "very", "sometimes", "units",
+    "izin", "yesterday", "allegations", "Dental", "pelajar", "Tambahan", "lalang", "purpose", "consult", "kilang", "Pelateh", "trained", "says", "personnel", "conditions", "berjaya", "another", "jawatan","acting", "rhyme", "incorruptible", "consequence", "kesalahan", "rural"
 ]
