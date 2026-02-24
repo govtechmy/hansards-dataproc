@@ -739,7 +739,15 @@ def clean_speech_using_layout(
                     re.sub(r"[^\w]", "", best_match.lower())
                 )
             ):
-                final_core = best_match
+                # handle case where layout match may include punctuation (e.g. "Negara;").
+                # Strip edges to avoid stacking like: "n��gara," -> "negara;,".
+                clean_best = re.sub(r"^[^\w]+|[^\w]+$", "", best_match)
+
+                # if stripping made it empty, fallback to core
+                if not clean_best:
+                    clean_best = core
+
+                final_core = clean_best
                 correction_count += 1
 
             # --- Preserve original casing pattern ---
