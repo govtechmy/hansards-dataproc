@@ -628,14 +628,12 @@ def clean_speech_using_layout(
     layout_words = set(w.strip() for w in layout_text.split())
     layout_words = {w for w in layout_words if w}
 
-    corrupted_chars = ['�', '\ufffd', '£', '€', '«', '§', '°', '¢']
+    corrupted_chars = ['�', '\ufffd']
 
     def has_corruption(word):
         if not isinstance(word, str):
             return False
         if any(c in word for c in corrupted_chars):
-            return True
-        if any(ord(c) > 127 for c in word):
             return True
         # Detect ASCII placeholder blocks like ???????
         if len(word) >= 3 and set(word) == {"?"}:
@@ -702,6 +700,13 @@ def clean_speech_using_layout(
 
             core = ascii_only
 
+            # do not fuzzy match purely numeric tokens e.g 3.15
+            if re.fullmatch(r'\d+(\.\d+)?', core):
+                correction_count += 1
+                logger.info(f"[CLEANUP] Stripped corruption from numeric token: '{word}' -> '{core}'")
+                fixed_tokens.append(prefix + core + suffix)
+                continue
+
             if not core:
                 fixed_tokens.append(word)
                 continue
@@ -710,6 +715,11 @@ def clean_speech_using_layout(
             best_ratio = 0
 
             for lw in layout_words:
+  
+                # skip corrupted layout words as reference. We only want to match against clean words in the layout.
+                if has_corruption(lw):
+                    continue
+
                 # Normalize both sides ONLY for comparison
                 norm_core = re.sub(r"[^\w]", "", core.lower())
                 norm_lw = re.sub(r"[^\w]", "", lw.lower())
