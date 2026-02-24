@@ -644,13 +644,6 @@ def clean_speech_using_layout(
 
     correction_count = 0
 
-    def is_small_edit_distance(a, b, fallback_threshold=0.80):
-        """
-        Allow slightly lower similarity for corrupted words (handles missing character cases like pencerobhan -> pencerobohan)
-        """
-        ratio = SequenceMatcher(None, a, b).ratio()
-        return ratio >= fallback_threshold
-
     def fix_cell(text):
         nonlocal correction_count
 
@@ -749,7 +742,6 @@ def clean_speech_using_layout(
                 else:
                     if (
                         best_ratio >= similarity_threshold
-                        or is_small_edit_distance(norm_core, norm_best)
                     ):
                         should_replace = True
 
