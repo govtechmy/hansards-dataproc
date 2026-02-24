@@ -628,14 +628,12 @@ def clean_speech_using_layout(
     layout_words = set(w.strip() for w in layout_text.split())
     layout_words = {w for w in layout_words if w}
 
-    corrupted_chars = ['�', '\ufffd', '£', '€', '«', '§', '°', '¢']
+    corrupted_chars = ['�', '\ufffd']
 
     def has_corruption(word):
         if not isinstance(word, str):
             return False
         if any(c in word for c in corrupted_chars):
-            return True
-        if any(ord(c) > 127 for c in word):
             return True
         # Detect ASCII placeholder blocks like ???????
         if len(word) >= 3 and set(word) == {"?"}:
