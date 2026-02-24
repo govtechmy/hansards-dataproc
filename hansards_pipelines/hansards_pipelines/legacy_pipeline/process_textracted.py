@@ -42,7 +42,7 @@ ts_search = re.compile(r'(\d{1,2})\.(\d{2})', re.IGNORECASE)
 
 period = re.compile(r'\b(ptg|petang|pagi|tgh|tengah hari|mlm|a\.?m\.?|p\.?m\.?)\b', re.IGNORECASE)
 
-TOC_KEYWORDS = ['KANDUNGAN', 'CONTENTS', 'KANDONGAN']
+TOC_KEYWORDS = ['KANDUNGAN', 'CONTENTS', 'KANDONGAN', 'KANDUNGANNYA', 'KANDUNGANNYA.']
 DOA_KEYWORDS = ['DOA', 'DOA PENDAHULUAN', 'DUA', "DO'A", "PRAYERS", "PRAYER", "D OA", "D0A", "D O A", "DO A"]
 
 # Override for problematic files. Map -  filename : custom DOA keyword
@@ -164,7 +164,7 @@ def extract_toc_block(df, filename=None, fallback_max_lines=30, logger=None):
             break
 
     if pd.isna(kandungan_idx):
-        logger.error(f"No keyword from {TOC_KEYWORDS} found in TOC. Skipping processing. Action: Investigate the PDF & add a relevant keyword in TOC_KEYWORDS list.")
+        logger.warning(f"No TOC keyword found. Proceeding but without TOC matching. Action: Investigate the PDF & add a relevant keyword in TOC_KEYWORDS list, to get better TOC matching results.")
         return pd.DataFrame(columns=['level_1', 'level_2', 'norm_l1', 'norm_l2'])
 
 
