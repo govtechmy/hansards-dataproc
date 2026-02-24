@@ -4,7 +4,14 @@ NON_SPEAKER_VERBS = [
     "follows", "proposal", "kata", "seperti", "berikut", "menyatakan", "memutuskan", "mempertimbangkan", 
     "mengusulkan", "mengajukan", "mengadopsi", "membahas", "melanjutkan", "menyetujui", "menolak", "mengutip", 
     "mengumumkan", "sebarang", "iaitu", "adalah", "berhajat", "berbunyi", "bagi", "bahawa", "terdapat", "sebab", "tendency",
-    "irony", "ialah", "berkata", "menyatakan", "mengatakan", "menjelaskan", "menegaskan", "mengumumkan", "mengungkapkan", "menyampaikan", "memperjelas", "mempertegas", "mempertebal",
-    "report", "resolve", "consider", "order", "amend", "adopt", "debate", "pass", "read",
-    "antara", "dengan", "untuk", "sebagai", "sehingga", "karena", "sampai", "selama", "ketika", "waktu", "sebelum", "sesudah", "selanjutnya", "kemudian", "setelah", "sebelumnya", "berlangsung", "langsung", "berlangsung",
-    ]
+    "irony", "ialah", "berkata", "mengatakan", "menjelaskan", "menegaskan", "mengungkapkan", "menyampaikan", "memperjelas", "mempertegas", "mempertebal",
+    "report", "resolve", "consider", "order", "amend", "adopt", "debate", "pass",
+    "antara", "dengan", "untuk", "sebagai", "sehingga", "karena", "sampai", "selama", "ketika", "waktu", "sebelum", "sesudah", "selanjutnya", "kemudian", "setelah", "sebelumnya", "berlangsung", "langsung",
+    "menchadangkan", "sumpah", "berikrar", "berjanji", "mengikrarkan", "criticism", "election", "Opposition", "Perkhidmatan", "Akitek", "bahagian", "tahan", "composition", "Dalam",
+    "Pemandu", "atau", "Bursary", "Biasiswa", "Kerajaan", "Kerajaan Persekutuan", "Kerajaan Negeri", "Kerajaan Tempatan", "Kerajaan Pusat", "Hadiah",
+    "language", "advance", "quota", "conclude", "various", "four", "contributions", "contribution", "contributed", "contributing", "contributor", "contributes", "Fasal", "question", "soalan", "jawapan", "pertanyaan", "menjawab",
+    "statement", "important", "significant", "notable", "remarkable", "noteworthy",
+    "task", "nevertheless", "however", "although", "though", "despite", "in spite of", "regardless of", "nonetheless", "notwithstanding", "even though", "while", "whereas", "issues", "deleted", "berita", "said", "occasion", "pepatah", "belongs", "berbelah-bahagi", "understanding", "understood", "understands", "understand",
+    "also", "unfortunately", "fortunately", "additionally", "moreover", "furthermore", "in addition", "as well as", "besides", "what's more", "on top of that",
+    "not only that", "and also", "Peringatan", "Taman", "colonial", "kepada", "clear", "rata", "mengikut", "Dalam", "Pemandu", "Latehan", 
+]
