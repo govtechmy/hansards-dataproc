@@ -700,6 +700,13 @@ def clean_speech_using_layout(
 
             core = ascii_only
 
+            # do not fuzzy match purely numeric tokens e.g 3.15
+            if re.fullmatch(r'\d+(\.\d+)?', core):
+                correction_count += 1
+                logger.info(f"[CLEANUP] Stripped corruption from numeric token: '{word}' -> '{core}'")
+                fixed_tokens.append(prefix + core + suffix)
+                continue
+
             if not core:
                 fixed_tokens.append(word)
                 continue
@@ -708,6 +715,11 @@ def clean_speech_using_layout(
             best_ratio = 0
 
             for lw in layout_words:
+  
+                # skip corrupted layout words as reference. We only want to match against clean words in the layout.
+                if has_corruption(lw):
+                    continue
+
                 # Normalize both sides ONLY for comparison
                 norm_core = re.sub(r"[^\w]", "", core.lower())
                 norm_lw = re.sub(r"[^\w]", "", lw.lower())
