@@ -209,7 +209,9 @@ def extract_toc_block(df, filename=None, fallback_max_lines=30, logger=None):
             if current_l1:
                 toc.append({'level_1': current_l1, 'level_2': line})
 
-    toc_out = pd.DataFrame(toc)
+    # ensure schema exists even if TOC list is empty to avoid key errors regarding missing columns downstream
+    toc_out = pd.DataFrame(toc, columns=["level_1", "level_2"])
+    
     toc_out['norm_l1'] = toc_out['level_1'].str.replace(r"[^\w\s]", '', regex=True).str.upper().str.strip()
     toc_out['norm_l2'] = toc_out['level_2'].str.replace(r"[^\w\s]", '', regex=True).str.upper().str.strip()
 
