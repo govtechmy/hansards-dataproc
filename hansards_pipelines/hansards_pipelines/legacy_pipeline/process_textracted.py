@@ -624,7 +624,8 @@ def clean_speech_using_layout(
 
     # Build reference word set from layout text
     layout_text = " ".join(df_layout["text"].astype(str).tolist())
-    layout_words = set(re.sub(r"[^\w]", "", w) for w in layout_text.split())
+    # Keep original words (including hyphen)
+    layout_words = set(w.strip() for w in layout_text.split())
     layout_words = {w for w in layout_words if w}
 
     corrupted_chars = ['�', '\ufffd', '£', '€', '«', '§', '°', '¢']
@@ -635,6 +636,9 @@ def clean_speech_using_layout(
         if any(c in word for c in corrupted_chars):
             return True
         if any(ord(c) > 127 for c in word):
+            return True
+        # Detect ASCII placeholder blocks like ???????
+        if len(word) >= 3 and set(word) == {"?"}:
             return True
         return False
 
@@ -665,15 +669,23 @@ def clean_speech_using_layout(
 
             word = token
 
+            # if not has_corruption(word):
+            #     fixed_tokens.append(word)
+            #     continue
+
+            # Remove non-ascii first
+            ascii_only = ''.join(c for c in word if ord(c) < 128)
+
+            # If no corruption at all, keep original immediately
             if not has_corruption(word):
                 fixed_tokens.append(word)
                 continue
 
-            # --- Remove non-ascii ---
-            ascii_only = ''.join(c for c in word if ord(c) < 128)
-
-            if not ascii_only:
-                fixed_tokens.append(word)
+            # Now we know it contains corruption
+            # If stripping corruption leaves nothing meaningful, drop it
+            if not ascii_only or not any(c.isalnum() for c in ascii_only):
+                correction_count += 1
+                logger.info(f"[CLEANUP] Dropping corrupted garbage token: '{word}'")
                 continue
 
             # --- Extract prefix (leading punctuation) ---
@@ -698,16 +710,24 @@ def clean_speech_using_layout(
             best_ratio = 0
 
             for lw in layout_words:
-                ratio = SequenceMatcher(None, core.lower(), lw.lower()).ratio()
+                # Normalize both sides ONLY for comparison
+                norm_core = re.sub(r"[^\w]", "", core.lower())
+                norm_lw = re.sub(r"[^\w]", "", lw.lower())
+
+                ratio = SequenceMatcher(None, norm_core, norm_lw).ratio()
+
                 if ratio > best_ratio:
                     best_ratio = ratio
-                    best_match = lw
+                    best_match = lw  # Keep ORIGINAL word (with hyphen)
 
             final_core = core
 
             if best_match and (
                 best_ratio >= similarity_threshold
-                or is_small_edit_distance(core.lower(), best_match.lower())
+                or is_small_edit_distance(
+                    re.sub(r"[^\w]", "", core.lower()),
+                    re.sub(r"[^\w]", "", best_match.lower())
+                )
             ):
                 final_core = best_match
                 correction_count += 1
@@ -729,7 +749,15 @@ def clean_speech_using_layout(
 
             fixed_tokens.append(final_word)
 
-        return "".join(fixed_tokens)
+        cleaned = "".join(fixed_tokens)
+        # Collapse multiple spaces caused by token removal
+        cleaned = re.sub(r'\s{2,}', ' ', cleaned)
+        # Remove empty parentheses like "()"
+        cleaned = re.sub(r'\(\s*\)', '', cleaned)
+        # Trim leading/trailing whitespace
+        cleaned = cleaned.strip()
+
+        return cleaned
 
     df_speech["speech"] = df_speech["speech"].apply(fix_cell)
     for col in ["level_1", "level_2", "level_3", "author"]:
