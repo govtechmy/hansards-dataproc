@@ -734,13 +734,26 @@ def clean_speech_using_layout(
 
             final_core = core
 
-            if best_match and (
-                best_ratio >= similarity_threshold
-                or is_small_edit_distance(
-                    re.sub(r"[^\w]", "", core.lower()),
-                    re.sub(r"[^\w]", "", best_match.lower())
-                )
-            ):
+            # normalize once for reuse
+            norm_core = re.sub(r"[^\w]", "", core.lower())
+            norm_best = re.sub(r"[^\w]", "", best_match.lower()) if best_match else ""
+
+            should_replace = False
+
+            if best_match:
+                # short words (<=4 chars) are dangerous for fuzzy matching
+                # e.g. found a case where "Ahli??" -> Ali". It has high similarity ratio, but wrong. So, we increase the threshold for short words.
+                if len(norm_core) <= 4:
+                    if SequenceMatcher(None, norm_core, norm_best).ratio() >= 0.95:
+                        should_replace = True
+                else:
+                    if (
+                        best_ratio >= similarity_threshold
+                        or is_small_edit_distance(norm_core, norm_best)
+                    ):
+                        should_replace = True
+
+            if should_replace:
                 # handle case where layout match may include punctuation (e.g. "Negara;").
                 # Strip edges to avoid stacking like: "n��gara," -> "negara;,".
                 clean_best = re.sub(r"^[^\w]+|[^\w]+$", "", best_match)
