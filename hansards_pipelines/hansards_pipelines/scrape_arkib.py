@@ -267,13 +267,15 @@ def seed_kamarkhas_start_nodes(session) -> List[str]:
     return seeds
 
 
-def write_manifest_to_s3(s3, items: List[Dict]):
+def write_manifest_to_s3(s3, house_folder: str, items: List[Dict]):
     manifest = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
+        "house": house_folder,
+        "total_items": len(items),
         "items": items,
     }
 
-    key = "arkib/manifest.json"
+    key = f"arkib/{house_folder}/manifest.json"
 
     s3.put_object(
         Bucket=S3_DATAPROC_BUCKET,
@@ -282,7 +284,7 @@ def write_manifest_to_s3(s3, items: List[Dict]):
         ContentType="application/json",
     )
 
-    logging.info("Manifest written -> s3://%s/%s", S3_DATAPROC_BUCKET, key)
+    logging.info(f"Manifest written -> s3://{S3_DATAPROC_BUCKET}/{key} (total={len(items)})")
 
 def run_scrape(
     *,
@@ -334,7 +336,7 @@ def run_scrape(
 
         logging.info("=== END %s ===", name)
 
-    write_manifest_to_s3(s3, collected_items)
+        write_manifest_to_s3(s3, cfg["house_folder"], collected_items)
 
 
 def main():

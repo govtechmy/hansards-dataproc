@@ -32,7 +32,7 @@ sittings_job = define_asset_job(
 )
 
 scrape_arkib_job = define_asset_job(
-    "scrape_arkib_website_job",
+    "scrape_website_arkib_job",
     selection=[assets.scrape_website_arkib, assets.move_arkib_pdfs_to_public, assets.dg_build_arkib_partition_queue],
 )
 

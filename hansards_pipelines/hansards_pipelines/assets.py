@@ -53,6 +53,8 @@ from hansards_pipelines.utils.s3_utils import (
 )
 
 from hansards_pipelines.settings import S3_DATAPROC_BUCKET, S3_PUBLIC_BUCKET, DEV_API_URL, PROD_API_URL, FRONTEND_URL, FRONTEND_TOKEN, HANSARD_DB_URL, AWS_REGION, ARKIB_PARTITION_MIN_YEAR, ARKIB_PARTITION_MAX_YEAR, READY_QUEUE_KEY, PENDING_QUEUE_KEY, LEGACY_PARTITION_MIN_YEAR, LEGACY_PARTITION_MAX_YEAR, LEGACY_READY_QUEUE_KEY
+from hansards_pipelines.partitions import HANSARD_PARTITIONS, HOUSE_PARTITIONS
+
 from hansards_pipelines.scrape_parliamentary_cycle import (
     scrape_arkib_cycles,
     scrape_active_cycles,
@@ -1258,15 +1260,16 @@ def direct_insert_to_db(context: AssetExecutionContext, prepare_db_payload: dict
 # )
 
 
-@asset(group_name="scrape")
+@asset(partitions_def=HOUSE_PARTITIONS, group_name="scrape")
 def scrape_website_arkib(context: AssetExecutionContext):
     """Scrape arkib Hansard listings."""
-
-    # limit = 5
+    house = context.partition_key
+    limit = 5
     
-    context.log.info(f"Starting arkib scrape (all PDFs)")
-    run_scrape(limit=None)
-    context.log.info("Completed arkib scrape")
+    context.log.info(f"Starting arkib scrape | house={house}")
+    run_scrape(category=house, limit=5)
+
+    context.log.info(f"Completed arkib scrape | house={house}")
 
 @asset(group_name="scrape", deps=[scrape_website_arkib])
 def move_arkib_pdfs_to_public(context: AssetExecutionContext):
@@ -1436,8 +1439,6 @@ from hansards_pipelines.data_integrity.sittings.source.snapshot_db import fetch_
 from hansards_pipelines.data_integrity.sittings.source.snapshot_portal_parlimen import run_source_snapshot, build_snapshot as build_portal_snapshot
 from hansards_pipelines.data_integrity.sittings.source.validate_sittings_integrity import build_integrity_report
 from datetime import datetime, timezone
-
-from hansards_pipelines.partitions import HANSARD_PARTITIONS, HOUSE_PARTITIONS
 
 from hansards_pipelines.data_integrity.sittings.s3.snapshot_pdf_csv import run_for_houses
 from hansards_pipelines.data_integrity.utils.upload_partition_artifact_by_house import upload_partition_artifact_by_house
