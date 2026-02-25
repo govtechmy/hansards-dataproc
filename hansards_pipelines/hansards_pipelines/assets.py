@@ -1260,16 +1260,21 @@ def direct_insert_to_db(context: AssetExecutionContext, prepare_db_payload: dict
 # )
 
 
-@asset(partitions_def=HOUSE_PARTITIONS, group_name="scrape")
+@asset(partitions_def=HANSARD_PARTITIONS, group_name="scrape")
 def scrape_website_arkib(context: AssetExecutionContext):
     """Scrape arkib Hansard listings."""
-    house = context.partition_key
+
+    partition = context.partition_key
+
+    house = partition.keys_by_dimension["house"]
+    term = partition.keys_by_dimension["term"]
+
     # limit = 5
     
-    context.log.info(f"Starting arkib scrape | house={house}")
-    run_scrape(category=house, limit=None)
+    context.log.info(f"Starting arkib scrape | house={house} | term={term}")
+    run_scrape(category=house, parliament=int(term), limit=None)
 
-    context.log.info(f"Completed arkib scrape | house={house}")
+    context.log.info(f"Completed arkib scrape | house={house} | term={term}")
 
 @asset(group_name="scrape", deps=[scrape_website_arkib])
 def move_arkib_pdfs_to_public(context: AssetExecutionContext):
@@ -1278,6 +1283,19 @@ def move_arkib_pdfs_to_public(context: AssetExecutionContext):
     context.log.info("Moving and renaming arkib PDFs to public bucket...")
     move_arkib_pdfs_to_public_main(category=None, logger=context.log)
     context.log.info("Completed moving arkib PDFs")
+
+@asset(partitions_def=HOUSE_PARTITIONS, group_name="arkib")
+def move_arkib_pdfs_to_public(context: AssetExecutionContext):
+    """Move and rename arkib PDFs from dataproc bucket to public bucket (per house) with the renamed filenames."""
+
+    house = context.partition_key
+
+    context.log.info(f"Moving renamed arkib PDFs from dataproc to public | house={house}")
+    move_arkib_pdfs_to_public_main(
+        category=house,
+        logger=context.log,
+    )
+    context.log.info(f"Completed moving renamed arkib PDFs from dataproc to public | house={house}")
 
 
 @asset(group_name="author")

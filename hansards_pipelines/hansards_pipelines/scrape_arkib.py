@@ -267,15 +267,25 @@ def seed_kamarkhas_start_nodes(session) -> List[str]:
     return seeds
 
 
-def write_manifest_to_s3(s3, house_folder: str, items: List[Dict]):
+def write_manifest_to_s3(
+    s3,
+    *,
+    house_folder: str,
+    parliament: int | None,
+    items: List[Dict],
+):
     manifest = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "house": house_folder,
+        "parliament": parliament,
         "total_items": len(items),
         "items": items,
     }
 
-    key = f"arkib/{house_folder}/manifest.json"
+    if parliament is not None:
+        key = f"arkib/{house_folder}/manifest/manifest_term_{parliament}.json"
+    else:
+        key = f"arkib/{house_folder}/manifest/manifest_all_terms.json"
 
     s3.put_object(
         Bucket=S3_DATAPROC_BUCKET,
@@ -284,7 +294,7 @@ def write_manifest_to_s3(s3, house_folder: str, items: List[Dict]):
         ContentType="application/json",
     )
 
-    logging.info(f"Manifest written -> s3://{S3_DATAPROC_BUCKET}/{key} (total={len(items)})")
+    logging.info(f"Manifest written -> s3://{S3_DATAPROC_BUCKET}/{key} (total_items={len(items)})")
 
 def run_scrape(
     *,
@@ -295,10 +305,6 @@ def run_scrape(
     session = make_session()
     s3 = boto3.client("s3", region_name=AWS_REGION)
 
-    collected_items: List[Dict] = []
-    counter = {"count": 0}
-    seen_files: set[str] = set()
-
     categories = (
         {category: CATEGORIES[category]}
         if category
@@ -306,6 +312,11 @@ def run_scrape(
     )
 
     for name, cfg in categories.items():
+
+        collected_items: List[Dict] = []
+        counter = {"count": 0}
+        seen_files: set[str] = set()
+
         logging.info("=== START %s ===", name)
 
         if name == "kamarkhas":
@@ -336,7 +347,7 @@ def run_scrape(
 
         logging.info("=== END %s ===", name)
 
-        write_manifest_to_s3(s3, cfg["house_folder"], collected_items)
+        write_manifest_to_s3(s3, house_folder=cfg["house_folder"], parliament=parliament, items=collected_items)
 
 
 def main():
