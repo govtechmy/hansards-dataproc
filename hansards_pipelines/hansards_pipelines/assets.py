@@ -1264,10 +1264,10 @@ def direct_insert_to_db(context: AssetExecutionContext, prepare_db_payload: dict
 def scrape_website_arkib(context: AssetExecutionContext):
     """Scrape arkib Hansard listings."""
     house = context.partition_key
-    limit = 5
+    # limit = 5
     
     context.log.info(f"Starting arkib scrape | house={house}")
-    run_scrape(category=house, limit=5)
+    run_scrape(category=house, limit=None)
 
     context.log.info(f"Completed arkib scrape | house={house}")
 
@@ -1295,7 +1295,7 @@ def load_author_data_to_db(context: AssetExecutionContext):
     )
 
 
-@asset(deps=[move_arkib_pdfs_to_public], group_name="arkib")
+@asset(deps=[move_arkib_pdfs_to_public], group_name="arkib", partitions_def=HOUSE_PARTITIONS)
 def dg_build_arkib_partition_queue(context: AssetExecutionContext):
     """
     Build arkib partition queue JSON file (with min_year conditions) based on list of scraped PDFs that is put in S3 PUBLIC arkib/.
@@ -1314,14 +1314,17 @@ def dg_build_arkib_partition_queue(context: AssetExecutionContext):
     - then trigger sittings_job on those partitions.
     """
 
+    house = context.partition_key
+
     MIN_YEAR = ARKIB_PARTITION_MIN_YEAR
     MAX_YEAR = ARKIB_PARTITION_MAX_YEAR
-    PENDING_QUEUE_KEY = "arkib/queue/arkib_partitions.pending.json"
+    
+    context.log.info(f"Building arkib partition queue... | house={house}, min_year={MIN_YEAR} & max_year={MAX_YEAR}")
 
     payload = build_arkib_partition_queue(
         s3_client=s3_client,
         bucket=S3_PUBLIC_BUCKET,
-        # prefix="arkib/"
+        prefix=f"arkib/{house}/",
         min_year=MIN_YEAR,
         max_year=MAX_YEAR,
         logger=context.log,
