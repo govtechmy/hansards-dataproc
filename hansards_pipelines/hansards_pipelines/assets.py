@@ -1262,10 +1262,10 @@ def direct_insert_to_db(context: AssetExecutionContext, prepare_db_payload: dict
 def scrape_website_arkib(context: AssetExecutionContext):
     """Scrape arkib Hansard listings."""
 
-    limit = 5
+    # limit = 5
     
     context.log.info(f"Starting arkib scrape (all PDFs)")
-    run_scrape(limit=limit)
+    run_scrape(limit=None)
     context.log.info("Completed arkib scrape")
 
 @asset(group_name="scrape", deps=[scrape_website_arkib])
