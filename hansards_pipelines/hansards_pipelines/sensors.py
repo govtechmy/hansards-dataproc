@@ -89,18 +89,25 @@ def sittings_sensor(context: SensorEvaluationContext):
         ),
     )
 
-
 @sensor(job=move_arkib_pdfs_job, minimum_interval_seconds=300)
 def trigger_arkib_pdf_move_sensor(context):
     """
     Trigger move_arkib_pdfs_job when there is a pending arkib_partitions.pending.json file in S3_PUBLIC_BUCKET
     """
     try:
-        s3_client.head_object(
+        obj = s3_client.get_object(
             Bucket=S3_DATAPROC_BUCKET,
             Key=PENDING_QUEUE_KEY,
         )
     except s3_client.exceptions.ClientError:
+        return SensorResult()
+
+    payload = json.loads(obj["Body"].read())
+
+    partitions = payload.get("partitions", [])
+
+    if not partitions:
+        context.log.info("Arkib queue json exists but no partitions found. Skipping trigger.")
         return SensorResult()
 
     return SensorResult(

@@ -83,7 +83,7 @@ def move_arkib_pdfs_to_public(
             )
             deleted += 1
 
-            log.info("Moved & cleanup old copy %s -> %s", source_key, dest_key)
+            log.info(f"Moved & cleanup file S3 dataproc -> S3 downloads: {S3_DATAPROC_BUCKET}/{source_key} -> {S3_PUBLIC_BUCKET}/{dest_key}")
 
         except ClientError:
             log.exception("Failed during move+cleanup for %s", source_key)

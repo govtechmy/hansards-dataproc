@@ -59,7 +59,7 @@ def build_arkib_partition_queue(
 
             date = extract_date_from_partition(partition)
             if not date:
-                logger.warning("Skip arkib partition with invalid date | key=%s | partition=%s", key, partition)
+                logger.warning(f"Skip arkib partition with invalid date | key={key} | partition={partition}")
                 continue
 
             if date.year < min_year:
@@ -70,14 +70,7 @@ def build_arkib_partition_queue(
 
             partitions.add(partition)
     
-    logger.info(
-        "Arkib queue built: %s partitions found in S3 %s %s. Following criteria: min_year=%s, max_year=%s",
-        len(partitions),
-        bucket,
-        prefix,
-        min_year,
-        max_year,
-    )
+    logger.info(f"Arkib queue built: {len(partitions)} partitions found in S3 {bucket} {prefix}. Following criteria: min_year={min_year}, max_year={max_year}")
 
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(),
