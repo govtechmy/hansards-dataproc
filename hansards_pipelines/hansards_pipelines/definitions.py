@@ -32,6 +32,7 @@ defs = Definitions(
         jobs.sittings_job,
         jobs.scrape_job,
         jobs.scrape_arkib_job,
+        jobs.move_renamed_file_and_build_arkib_partition_queue_job,
         jobs.author_load_job,
         jobs.move_arkib_pdfs_job,
         jobs.sittings_legacy_job,

@@ -31,10 +31,29 @@ sittings_job = define_asset_job(
     ),
 )
 
+#=======================================
+# Scrape + Move/Queue jobs for Arkib sittings
+#=======================================
+# IMPORTANT OPERATIONAL NOTE:
+# Do NOT run `build_arkib_partition_queue_job` while `scrape_arkib_job` is running for the same house.
+#
+# Reason:
+# - scrape writes to DATAPROC arkib/<house>/
+# - move+queue reads and deletes from the same prefix
+# - running them concurrently may cause race conditions.
+#
+# Always ensure scraping for a house is fully completed  before running the move+queue job for that house.
+
 scrape_arkib_job = define_asset_job(
     "scrape_website_arkib_job",
-    selection=[assets.scrape_website_arkib, assets.move_arkib_pdfs_to_public, assets.dg_build_arkib_partition_queue],
+    selection=[assets.scrape_website_arkib],
 )
+
+move_renamed_file_and_build_arkib_partition_queue_job = define_asset_job(
+    "move_renamed_file_and_build_arkib_partition_queue_job",
+    selection=[assets.move_arkib_pdfs_to_public, assets.dg_build_arkib_partition_queue],
+)
+#=======================================
 
 
 author_load_job = define_asset_job(
