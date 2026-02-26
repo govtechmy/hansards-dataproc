@@ -213,7 +213,8 @@ def calculate_name_specificity_score(input_name, candidate_name):
     Calculate a specificity score to prefer more complete name matches.
     Helps distinguish cases like "Abdul Razak" vs "Najib bin Abdul Razak".
     
-    Returns a bonus score (0-10) to add to the fuzzy match score.
+    Returns an integer adjustment score (bonus or penalty), typically in the
+    range -10 to +5, to add to the fuzzy match score.
     """
     input_parts = set(input_name.upper().split())
     candidate_parts = set(candidate_name.upper().split())
@@ -306,10 +307,21 @@ def enhanced_match_names(
         # Log unmatched names for review
         best_match = matches[0] if matches else None
         if best_match:
-            with open("unmatched_names.json", "a+") as f:
-                json.dump(
-                    {"name": name, "matched_with": best_match[0], "score": best_match[1]}, f, indent=4
+            with open("unmatched_names.json", "a+", encoding="utf-8") as f:
+                # Ensure we maintain a valid JSON array of unmatched names
+                f.seek(0)
+                try:
+                    existing_data = json.load(f)
+                    if not isinstance(existing_data, list):
+                        existing_data = [existing_data]
+                except json.JSONDecodeError:
+                    existing_data = []
+                existing_data.append(
+                    {"name": name, "matched_with": best_match[0], "score": best_match[1]}
                 )
+                f.seek(0)
+                f.truncate()
+                json.dump(existing_data, f, indent=4)
         return []
     
     return valid_matches
