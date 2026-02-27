@@ -107,14 +107,14 @@ def get_hansard_db_filenames(houses: Optional[List[str]] = None) -> Set[str]:
             if houses:
                 # Filter by house prefix in filename
                 houses_lower = [h.lower() for h in houses]
-                placeholders = ','.join(['%s'] * len(houses_lower))
-                query = f"""
+                patterns = [f"{h}_%" for h in houses_lower]
+                query = """
                     SELECT DISTINCT filename
                     FROM api_sitting
-                    WHERE filename LIKE ANY(ARRAY[{','.join([f"'{h}_%'" for h in houses_lower])}])
+                    WHERE filename LIKE ANY(%s)
                     ORDER BY filename
                 """
-                cur.execute(query)
+                cur.execute(query, (patterns,))
             else:
                 cur.execute("""
                     SELECT DISTINCT filename
