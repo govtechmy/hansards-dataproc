@@ -67,7 +67,7 @@ def partition_key_to_filename(partition_key: str) -> str:
         filename = f"{house_lower}_{year}-{month}-{day}"
         
         return filename
-    except Exception as e:
+    except ValueError as e:
         print(f"Warning: Failed to convert partition key '{partition_key}': {e}")
         return None
 
