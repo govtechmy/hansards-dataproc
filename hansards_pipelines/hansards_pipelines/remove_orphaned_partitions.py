@@ -74,6 +74,8 @@ def partition_key_to_filename(partition_key: str) -> str:
 
 def get_dagster_partitions(houses: Optional[List[str]] = None, partition_def_name: str = DEFAULT_PARTITION_DEF_NAME) -> Set[str]:
     """Fetch all partitions from Dagster database."""
+    if DAGSTER_DB_URL is None:
+        raise RuntimeError("DAGSTER_DB_URL is not set; cannot connect to Dagster database.")
     conn_str = DAGSTER_DB_URL.replace("postgresql+psycopg2://", "postgresql://")
     with psycopg2.connect(conn_str) as conn:
         with conn.cursor() as cur:
