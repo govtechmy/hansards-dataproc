@@ -173,30 +173,28 @@ def delete_orphaned_partitions(partitions: List[str], partition_def_name: str = 
         print(f"\n[DRY RUN] Would delete {len(partitions)} orphaned partitions")
         return len(partitions)
     
-    conn = psycopg2.connect(DAGSTER_DB_URL.replace("postgresql+psycopg2://", "postgresql://"))
-    cur = conn.cursor()
-    
-    try:
-        # Delete partitions
-        cur.execute("""
-            DELETE FROM dynamic_partitions
-            WHERE partitions_def_name = %s
-              AND partition = ANY(%s)
-        """, (partition_def_name, partitions))
-        
-        deleted_count = cur.rowcount
-        conn.commit()
-        
-        print(f"\n✓ Successfully deleted {deleted_count} orphaned partitions from Dagster")
-        return deleted_count
-        
-    except Exception as e:
-        conn.rollback()
-        print(f"\n✗ Error deleting partitions: {e}")
-        raise
-    finally:
-        cur.close()
-        conn.close()
+    # Use context managers to ensure the connection and cursor are properly closed
+    conn_str = DAGSTER_DB_URL.replace("postgresql+psycopg2://", "postgresql://")
+    with psycopg2.connect(conn_str) as conn:
+        with conn.cursor() as cur:
+            try:
+                # Delete partitions
+                cur.execute("""
+                    DELETE FROM dynamic_partitions
+                    WHERE partitions_def_name = %s
+                      AND partition = ANY(%s)
+                """, (partition_def_name, partitions))
+                
+                deleted_count = cur.rowcount
+                conn.commit()
+                
+                print(f"\n✓ Successfully deleted {deleted_count} orphaned partitions from Dagster")
+                return deleted_count
+            
+            except Exception as e:
+                conn.rollback()
+                print(f"\n✗ Error deleting partitions: {e}")
+                raise
 
 
 def save_results(orphaned: List[Dict[str, str]], output_file: str):
