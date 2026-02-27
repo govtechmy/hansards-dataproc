@@ -42,8 +42,8 @@ ts_search = re.compile(r'(\d{1,2})\.(\d{2})', re.IGNORECASE)
 
 period = re.compile(r'\b(ptg|petang|pagi|tgh|tengah hari|mlm|a\.?m\.?|p\.?m\.?)\b', re.IGNORECASE)
 
-TOC_KEYWORDS = ['KANDUNGAN', 'CONTENTS', 'KANDONGAN']
-DOA_KEYWORDS = ['DOA', 'DOA PENDAHULUAN', 'DUA', "DO'A", "PRAYERS", "PRAYER", "D OA", "D0A"]
+TOC_KEYWORDS = ['KANDUNGAN', 'CONTENTS', 'KANDONGAN', 'KANDUNGANNYA', 'KANDUNGANNYA.']
+DOA_KEYWORDS = ['DOA', 'DOA PENDAHULUAN', 'DUA', "DO'A", "PRAYERS", "PRAYER", "D OA", "D0A", "D O A", "DO A"]
 
 # Override for problematic files. Map -  filename : custom DOA keyword
 DOA_KEYWORDS_OVERRIDE = {
@@ -129,7 +129,7 @@ def parse_timestamp(txt):
     print(f"Found timestamp: {txt} - hour: {h}, minute: {mnt}")
     return time(h, mnt)
 
-def extract_toc_block(df, filename=None, fallback_max_lines=30):
+def extract_toc_block(df, filename=None, fallback_max_lines=30, logger=None):
     toc_df = df[~df['layout'].isin(['Header', 'Footer'])].copy()
     toc_df['txt'] = toc_df['text'].fillna('').astype(str)
 
@@ -139,17 +139,17 @@ def extract_toc_block(df, filename=None, fallback_max_lines=30):
 
     if filename and filename in DOA_KEYWORDS_OVERRIDE:
         doa_keywords.insert(0, DOA_KEYWORDS_OVERRIDE[filename])
-        print(f"⚠️ Overriding DOA keywords for {filename}: using '{DOA_KEYWORDS_OVERRIDE[filename]}'")
+        logger.info(f"Overriding DOA keywords for {filename}: using '{DOA_KEYWORDS_OVERRIDE[filename]}'")
 
     for keyword in doa_keywords:
         match = df[df['text'].str.contains(fr'\b{re.escape(keyword)}\b', case=True, na=False)]
         if not match.empty:
             doa_idx = match.index.min()
-            print(f"✅ Found DOA keyword: '{keyword}' at line {doa_idx}")
+            logger.info(f"Found DOA keyword: '{keyword}' at line {doa_idx} to extract TOC block")
             break
 
     if pd.isna(doa_idx):
-        print("⚠️ No DOA-like keyword found for TOC extraction. Skipping processing.")
+        logger.error("No DOA-like keyword found for TOC extraction. Skipping processing. Action: Investigate the PDF & add a relevant keyword in DOA_KEYWORDS or DOA_KEYWORDS_OVERRIDE list.")
         return pd.DataFrame()
 
     # Limit TOC search to before DOA
@@ -159,12 +159,12 @@ def extract_toc_block(df, filename=None, fallback_max_lines=30):
     for keyword in TOC_KEYWORDS:
         match_idx = pre_doa_df[pre_doa_df['txt'].str.contains(fr'\b{keyword}\b', case=True, na=False)].index.min()
         if not pd.isna(match_idx):
-            print(f"✅ Found TOC keyword: '{keyword}' at line {match_idx}")
+            logger.info(f"Found TOC keyword: '{keyword}' at line {match_idx}")
             kandungan_idx = match_idx
             break
 
     if pd.isna(kandungan_idx):
-        print(f"⚠️ No keyword from {TOC_KEYWORDS} found in TOC. Skipping processing for this csv.")
+        logger.warning(f"No TOC keyword found. Proceeding but without TOC matching. Action: Investigate the PDF & add a relevant keyword in TOC_KEYWORDS list, to get better TOC matching results.")
         return pd.DataFrame(columns=['level_1', 'level_2', 'norm_l1', 'norm_l2'])
 
 
@@ -209,7 +209,9 @@ def extract_toc_block(df, filename=None, fallback_max_lines=30):
             if current_l1:
                 toc.append({'level_1': current_l1, 'level_2': line})
 
-    toc_out = pd.DataFrame(toc)
+    # ensure schema exists even if TOC list is empty to avoid key errors regarding missing columns downstream
+    toc_out = pd.DataFrame(toc, columns=["level_1", "level_2"])
+    
     toc_out['norm_l1'] = toc_out['level_1'].str.replace(r"[^\w\s]", '', regex=True).str.upper().str.strip()
     toc_out['norm_l2'] = toc_out['level_2'].str.replace(r"[^\w\s]", '', regex=True).str.upper().str.strip()
 
@@ -222,26 +224,26 @@ def find_non_speaker_verbs(author_text):
     lower = author_text.lower()
     return any(verb in lower for verb in NON_SPEAKER_VERBS)
 
-def process_layout(df, toc_df, filename=None):
+def process_layout(df, toc_df, filename=None, logger=None):
     df['is_timestamp'] = df['clean'].str.match(ts_full)
     df['is_speaker'] = df['clean'].str.match(r'^(?!\d+\.)[^:]{3,}?:')
 
     doa_keywords = DOA_KEYWORDS.copy()
     if filename and filename in DOA_KEYWORDS_OVERRIDE:
         doa_keywords.insert(0, DOA_KEYWORDS_OVERRIDE[filename])
-        print(f"⚠️ Overriding DOA keywords for {filename}: using '{DOA_KEYWORDS_OVERRIDE[filename]}'")
+        logger.info(f"Overriding DOA keywords for {filename}: using '{DOA_KEYWORDS_OVERRIDE[filename]}'")
 
     doai = pd.NA
     for keyword in doa_keywords:
         match = df[df['text'].str.contains(fr'\b{re.escape(keyword)}\b', case=True, na=False)]
         if not match.empty:
             doai = match.index.min()
-            print(f"✅ Found DOA keyword: '{keyword}' at line {doai}")
+            logger.info(f"Found DOA keyword: '{keyword}' at line {doai} to start speech processing")
             break
 
     if pd.isna(doai):
-        print("⚠️ No DOA-like keyword found to start speech processing. Skipping processing.")
-        return pd.DataFrame()  # 🔥 IMPORTANT: exit here to avoid slicing with pd.NA
+        logger.error("No DOA-like keyword found to start speech processing. Skipping processing. Action: Investigate the PDF & add a relevant keyword in DOA_KEYWORDS or DOA_KEYWORDS_OVERRIDE list.")
+        return pd.DataFrame()  # IMPORTANT: exit here to avoid slicing with pd.NA
 
     # Detect timestamp BEFORE DOA
     pre = df.loc[:doai] if not pd.isna(doai) else df
@@ -642,13 +644,6 @@ def clean_speech_using_layout(
 
     correction_count = 0
 
-    def is_small_edit_distance(a, b, fallback_threshold=0.80):
-        """
-        Allow slightly lower similarity for corrupted words (handles missing character cases like pencerobhan -> pencerobohan)
-        """
-        ratio = SequenceMatcher(None, a, b).ratio()
-        return ratio >= fallback_threshold
-
     def fix_cell(text):
         nonlocal correction_count
 
@@ -732,14 +727,34 @@ def clean_speech_using_layout(
 
             final_core = core
 
-            if best_match and (
-                best_ratio >= similarity_threshold
-                or is_small_edit_distance(
-                    re.sub(r"[^\w]", "", core.lower()),
-                    re.sub(r"[^\w]", "", best_match.lower())
-                )
-            ):
-                final_core = best_match
+            # normalize once for reuse
+            norm_core = re.sub(r"[^\w]", "", core.lower())
+            norm_best = re.sub(r"[^\w]", "", best_match.lower()) if best_match else ""
+
+            should_replace = False
+
+            if best_match:
+                # short words (<=4 chars) are dangerous for fuzzy matching
+                # e.g. found a case where "Ahli??" -> Ali". It has high similarity ratio, but wrong. So, we increase the threshold for short words.
+                if len(norm_core) <= 4:
+                    if SequenceMatcher(None, norm_core, norm_best).ratio() >= 0.95:
+                        should_replace = True
+                else:
+                    if (
+                        best_ratio >= similarity_threshold
+                    ):
+                        should_replace = True
+
+            if should_replace:
+                # handle case where layout match may include punctuation (e.g. "Negara;").
+                # Strip edges to avoid stacking like: "n��gara," -> "negara;,".
+                clean_best = re.sub(r"^[^\w]+|[^\w]+$", "", best_match)
+
+                # if stripping made it empty, fallback to core
+                if not clean_best:
+                    clean_best = core
+
+                final_core = clean_best
                 correction_count += 1
 
             # --- Preserve original casing pattern ---
@@ -839,8 +854,8 @@ def process_and_insert(prefix, key, date_str, logger):
     df['clean'] = df['clean'].str.replace(r'\s{2,}', ' ', regex=True)
     df['clean'] = df['clean'].str.strip()
 
-    toc_df = extract_toc_block(df, filename=key.split("/")[-1])
-    df_speech = process_layout(df, toc_df, filename=key.split("/")[-1])
+    toc_df = extract_toc_block(df, filename=key.split("/")[-1], logger=logger)
+    df_speech = process_layout(df, toc_df, filename=key.split("/")[-1], logger=logger)
     df_speech = merge_question_blocks(df_speech)
     df_speech = clean_speech_using_layout(df_speech, df, logger)
 

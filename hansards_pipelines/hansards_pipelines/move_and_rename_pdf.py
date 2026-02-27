@@ -24,7 +24,6 @@ from hansards_pipelines.settings import S3_DATAPROC_BUCKET, S3_PUBLIC_BUCKET
 from hansards_pipelines.utils.s3_utils import s3_object_exists
 from hansards_pipelines.utils.text_utils import get_sitting_object
 
-MANIFEST_KEY = "arkib/manifest.json"
 
 logging.basicConfig(
     level=logging.INFO,
@@ -83,7 +82,7 @@ def move_arkib_pdfs_to_public(
             )
             deleted += 1
 
-            log.info("Moved & cleanup old copy %s -> %s", source_key, dest_key)
+            log.info(f"Moved {S3_DATAPROC_BUCKET}/{source_key} -> {S3_PUBLIC_BUCKET}/{dest_key}")
 
         except ClientError:
             log.exception("Failed during move+cleanup for %s", source_key)
@@ -113,7 +112,7 @@ def move_arkib_pdfs_to_public_main(
     s3 = boto3.client("s3")
 
     prefix = f"arkib/{category}/" if category else "arkib/"
-    log.info("Listing PDFs in s3://%s/%s", S3_DATAPROC_BUCKET, prefix)
+    log.info(f"Listing PDFs in s3://{S3_DATAPROC_BUCKET}/{prefix}")
 
     paginator = s3.get_paginator("list_objects_v2")
     page_iterator = paginator.paginate(
@@ -129,7 +128,7 @@ def move_arkib_pdfs_to_public_main(
             if len(parts) == 3 and key.endswith(".pdf"):
                 items.append((parts[1], parts[2]))
 
-    log.info("Moving %d PDFs", len(items))
+    log.info("Starting to move:  %d pdfs...", len(items))
 
     move_arkib_pdfs_to_public(s3, items, logger=log)
 
