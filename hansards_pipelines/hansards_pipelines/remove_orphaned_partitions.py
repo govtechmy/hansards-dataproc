@@ -232,8 +232,8 @@ def main():
     parser.add_argument(
         "--houses",
         nargs="+",
-        choices=["DR", "DN", "KK", "dr", "dn", "kk"],
-        help="Limit to specific houses (DR=Dewan Rakyat, DN=Dewan Negara, KK=Kamar Khas)"
+        choices=["DR", "DN", "KKDR", "dr", "dn", "kkdr"],
+        help="Limit to specific houses (DR=Dewan Rakyat, DN=Dewan Negara, KKDR=Kamar Khas)"
     )
     parser.add_argument(
         "--output",
