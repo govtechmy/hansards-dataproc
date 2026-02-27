@@ -101,6 +101,8 @@ def get_dagster_partitions(houses: Optional[List[str]] = None, partition_def_nam
 
 def get_hansard_db_filenames(houses: Optional[List[str]] = None) -> Set[str]:
     """Fetch all sitting filenames from Hansard application database."""
+    if HANSARD_DB_URL is None:
+        raise RuntimeError("HANSARD_DB_URL is not set; cannot connect to Hansard database.")
     conn_str = HANSARD_DB_URL.replace("postgresql+psycopg2://", "postgresql://")
     with psycopg2.connect(conn_str) as conn:
         with conn.cursor() as cur:
