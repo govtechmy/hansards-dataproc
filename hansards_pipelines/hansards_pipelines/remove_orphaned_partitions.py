@@ -207,10 +207,13 @@ def save_results(orphaned: List[Dict[str, str]], output_file: str):
         "orphaned_partitions": orphaned,
     }
     
-    with open(output_file, "w") as f:
-        json.dump(output, f, indent=2)
-    
-    print(f"\nResults saved to: {output_file}")
+    try:
+        with open(output_file, "w") as f:
+            json.dump(output, f, indent=2)
+        print(f"\nResults saved to: {output_file}")
+    except OSError as e:
+        print(f"\n✗ Failed to save results to '{output_file}': {e}")
+        raise
 
 
 def main():
