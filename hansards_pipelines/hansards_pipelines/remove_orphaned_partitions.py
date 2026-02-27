@@ -74,64 +74,54 @@ def partition_key_to_filename(partition_key: str) -> str:
 
 def get_dagster_partitions(houses: Optional[List[str]] = None, partition_def_name: str = DEFAULT_PARTITION_DEF_NAME) -> Set[str]:
     """Fetch all partitions from Dagster database."""
-    conn = psycopg2.connect(DAGSTER_DB_URL.replace("postgresql+psycopg2://", "postgresql://"))
-    cur = conn.cursor()
-    
-    try:
-        cur.execute("""
-            SELECT partition
-            FROM dynamic_partitions
-            WHERE partitions_def_name = %s
-            ORDER BY partition
-        """, (partition_def_name,))
-        
-        all_partitions = {row[0] for row in cur.fetchall()}
-        
-        # Filter by house if specified
-        if houses:
-            houses_upper = [h.upper() for h in houses]
-            all_partitions = {
-                p for p in all_partitions 
-                if any(p.startswith(f"{h}-") for h in houses_upper)
-            }
-        
-        return all_partitions
-    finally:
-        cur.close()
-        conn.close()
+    conn_str = DAGSTER_DB_URL.replace("postgresql+psycopg2://", "postgresql://")
+    with psycopg2.connect(conn_str) as conn:
+        with conn.cursor() as cur:
+            cur.execute("""
+                SELECT partition
+                FROM dynamic_partitions
+                WHERE partitions_def_name = %s
+                ORDER BY partition
+            """, (partition_def_name,))
+
+            all_partitions = {row[0] for row in cur.fetchall()}
+
+            # Filter by house if specified
+            if houses:
+                houses_upper = [h.upper() for h in houses]
+                all_partitions = {
+                    p for p in all_partitions
+                    if any(p.startswith(f"{h}-") for h in houses_upper)
+                }
+
+            return all_partitions
 
 
 def get_hansard_db_filenames(houses: Optional[List[str]] = None) -> Set[str]:
     """Fetch all sitting filenames from Hansard application database."""
-    conn = psycopg2.connect(HANSARD_DB_URL.replace("postgresql+psycopg2://", "postgresql://"))
-    cur = conn.cursor()
-    
-    try:
-        if houses:
-            # Filter by house prefix in filename
-            houses_lower = [h.lower() for h in houses]
-            placeholders = ','.join(['%s'] * len(houses_lower))
-            query = f"""
-                SELECT DISTINCT filename
-                FROM api_sitting
-                WHERE filename LIKE ANY(ARRAY[{','.join([f"'{h}_%'" for h in houses_lower])}])
-                ORDER BY filename
-            """
-            cur.execute(query)
-        else:
-            cur.execute("""
-                SELECT DISTINCT filename
-                FROM api_sitting
-                ORDER BY filename
-            """)
-        
-        filenames = {row[0] for row in cur.fetchall()}
-        return filenames
-    finally:
-        cur.close()
-        conn.close()
+    conn_str = HANSARD_DB_URL.replace("postgresql+psycopg2://", "postgresql://")
+    with psycopg2.connect(conn_str) as conn:
+        with conn.cursor() as cur:
+            if houses:
+                # Filter by house prefix in filename
+                houses_lower = [h.lower() for h in houses]
+                placeholders = ','.join(['%s'] * len(houses_lower))
+                query = f"""
+                    SELECT DISTINCT filename
+                    FROM api_sitting
+                    WHERE filename LIKE ANY(ARRAY[{','.join([f"'{h}_%'" for h in houses_lower])}])
+                    ORDER BY filename
+                """
+                cur.execute(query)
+            else:
+                cur.execute("""
+                    SELECT DISTINCT filename
+                    FROM api_sitting
+                    ORDER BY filename
+                """)
 
-
+            filenames = {row[0] for row in cur.fetchall()}
+            return filenames
 def find_orphaned_partitions(
     dagster_partitions: Set[str], 
     db_filenames: Set[str]
