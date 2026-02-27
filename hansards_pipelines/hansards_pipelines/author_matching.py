@@ -806,7 +806,40 @@ def perform_author_matching(speech_df, author_df, author_hist_df, context):
         f"Match rate: {match_rate:.2f}% ({len(df_result) - len(unmatched)}/{len(df_result)} records)"
     )
 
+    # Log unmatched authors before setting NO MATCH to None
+    if not unmatched.empty:
+        unmatched_counts = unmatched["author"].value_counts(dropna=False)
+        unique_unmatched = unmatched["author"].unique()
+        total_unmatched_mentions = len(unmatched)
+        if len(unique_unmatched) > 0:
+            unmatched_log_lines = [f"Authors that could not be matched (Total: {len(unique_unmatched)}, {total_unmatched_mentions} mentions):"]
+            for author in sorted(unique_unmatched, key=lambda x: str(x)):
+                if pd.isna(author):
+                    count = unmatched["author"].isna().sum()
+                else:
+                    count = unmatched_counts[author]
+                unmatched_log_lines.append(f"  {author} ({count} mention{'s' if count > 1 else ''})")
+            context.log.info("\n".join(unmatched_log_lines))
+
     df_result.loc[df_result["author_id"] == "NO MATCH", "author_id"] = None
+
+    # Log author matching results
+    matched_authors = df_result[df_result["author_id"].notna()].copy()
+    if not matched_authors.empty:
+
+        author_id_to_name = author_df.set_index("new_author_id")["name"].to_dict()
+        matched_authors["matched_name"] = matched_authors["author_id"].map(author_id_to_name)
+        matched_counts = matched_authors["author"].value_counts()
+        total_matched_mentions = len(matched_authors)
+        unique_matches = matched_authors[["author", "matched_name"]].drop_duplicates()
+        unique_matches = unique_matches.sort_values("matched_name")
+        
+        log_lines = [f"Final author matching results (Total: {len(unique_matches)}, {total_matched_mentions} mentions):"]
+        for _, row in unique_matches.iterrows():
+            count = matched_counts[row['author']]
+            log_lines.append(f"  {row['author']} → {row['matched_name']} ({count} mention{'s' if count > 1 else ''})")
+        
+        context.log.info("\n".join(log_lines))
 
     # Merge with original speech dataframe
     speech_df_final = speech_df.merge(
