@@ -800,6 +800,17 @@ def perform_author_matching(speech_df, author_df, author_hist_df, context):
     # 4. Analyze match rate
     match_rate = (df_result["author_id"] != "NO MATCH").mean() * 100
 
+    # Check if any matched author_ids are invalid (not in author_df)
+    # These should be treated as unmatched
+    matched_mask = df_result["author_id"] != "NO MATCH"
+    if matched_mask.any():
+        author_id_to_name = author_df.set_index("new_author_id")["name"].to_dict()
+        invalid_matches = df_result[matched_mask].copy()
+        invalid_matches["test_name"] = invalid_matches["author_id"].map(author_id_to_name)
+        invalid_mask = invalid_matches["test_name"].isna()
+        if invalid_mask.any():
+            df_result.loc[invalid_matches[invalid_mask].index, "author_id"] = "NO MATCH"
+            
     # 5. Review unmatched records
     unmatched = df_result[df_result["author_id"] == "NO MATCH"]
     context.log.info(
@@ -826,18 +837,21 @@ def perform_author_matching(speech_df, author_df, author_hist_df, context):
     # Log author matching results
     matched_authors = df_result[df_result["author_id"].notna()].copy()
     if not matched_authors.empty:
-
         author_id_to_name = author_df.set_index("new_author_id")["name"].to_dict()
         matched_authors["matched_name"] = matched_authors["author_id"].map(author_id_to_name)
         matched_counts = matched_authors["author"].value_counts()
         total_matched_mentions = len(matched_authors)
         unique_matches = matched_authors[["author", "matched_name"]].drop_duplicates()
-        unique_matches = unique_matches.sort_values("matched_name")
+        unique_matches = unique_matches.sort_values("matched_name", na_position="last")
         
         log_lines = [f"Final author matching results (Total: {len(unique_matches)}, {total_matched_mentions} mentions):"]
         for _, row in unique_matches.iterrows():
-            count = matched_counts[row['author']]
-            log_lines.append(f"  {row['author']} → {row['matched_name']} ({count} mention{'s' if count > 1 else ''})")
+            author = row["author"]
+            if pd.isna(author):
+                count = matched_authors["author"].isna().sum()
+            else:
+                count = matched_counts[author]
+            log_lines.append(f"  {author} → {row['matched_name']} ({count} mention{'s' if count > 1 else ''})")
         
         context.log.info("\n".join(log_lines))
 
