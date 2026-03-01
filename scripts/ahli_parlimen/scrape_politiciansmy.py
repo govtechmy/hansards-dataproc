@@ -244,20 +244,20 @@ def main():
     # STEP 1 — SCRAPE (OPTIONAL)
     # ==========================================
 
-    # slugs = get_slugs_from_rsc()
-    # results = []
+    slugs = get_slugs_from_rsc()
+    results = []
 
-    # for slug in slugs:
-    #     print("Fetching:", slug)
-    #     data = fetch_politician(slug)
-    #     if data:
-    #         results.append(data)
-    #     time.sleep(0.3)
+    for slug in slugs:
+        print("Fetching:", slug)
+        data = fetch_politician(slug)
+        if data:
+            results.append(data)
+        time.sleep(0.3)
 
-    # with open(RAW_FILE, "w", encoding="utf-8") as f:
-    #     json.dump(results, f, indent=2, ensure_ascii=False)
+    with open(RAW_FILE, "w", encoding="utf-8") as f:
+        json.dump(results, f, indent=2, ensure_ascii=False)
 
-    # print("Saved raw:", len(results), "politicians")
+    print("Saved raw:", len(results), "politicians")
 
     # ==========================================
     # STEP 2 — CLEAN
