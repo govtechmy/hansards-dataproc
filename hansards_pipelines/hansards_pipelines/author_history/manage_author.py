@@ -23,18 +23,17 @@ import pandas as pd
 import boto3
 from dotenv import load_dotenv
 import psycopg
+from hansards_pipelines.settings import HANSARD_DB_URL, S3_DATAPROC_BUCKET
 
 # Load environment variables
 load_dotenv()
-db_url = os.environ.get("HANSARD_DB_URL")
-
 
 def get_db_connection():
-    if not db_url:
+    if not HANSARD_DB_URL:
         print("Error: HANSARD_DB_URL environment variable is missing.")
         sys.exit(1)
     try:
-        return psycopg.connect(db_url)
+        return psycopg.connect(HANSARD_DB_URL)
     except Exception as e:
         print(f"Error connecting to database: {e}")
         sys.exit(1)
@@ -510,6 +509,9 @@ def handle_local_csv():
 
 
 def main():
+    S3_AUTHOR_KEY = "canonical/author.csv"
+    S3_AUTHOR_HISTORY_KEY = "canonical/author_history.csv"
+
     parser = argparse.ArgumentParser(description="Manage authors in the Hansards database.")
     subparsers = parser.add_subparsers(dest="command", help="Command to run")
     
@@ -520,9 +522,9 @@ def main():
     
     # s3 mode subparser
     parser_sync = subparsers.add_parser("s3", help="Sync authors from S3.")
-    parser_sync.add_argument("--bucket", type=str, default=os.getenv("S3_DATAPROC_BUCKET"), help="S3 bucket name")
-    parser_sync.add_argument("--author-key", type=str, default=os.getenv("S3_AUTHOR_KEY", "canonical/author.csv"), help="S3 key for author.csv")
-    parser_sync.add_argument("--history-key", type=str, default=os.getenv("S3_AUTHOR_HISTORY_KEY", "canonical/author_history.csv"), help="S3 key for author_history.csv (optional)")
+    parser_sync.add_argument("--bucket", type=str, default=S3_DATAPROC_BUCKET, help="S3 bucket name")
+    parser_sync.add_argument("--author-key", type=str, default=S3_AUTHOR_KEY, help="S3 key for author.csv")
+    parser_sync.add_argument("--history-key", type=str, default=S3_AUTHOR_HISTORY_KEY, help="S3 key for author_history.csv (optional)")
 
     # local mode subparser
     subparsers.add_parser("local", help="Sync authors from local CSV files (paths set in .env).")
