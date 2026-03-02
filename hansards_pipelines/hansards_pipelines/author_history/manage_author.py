@@ -1,3 +1,20 @@
+"""
+Manage api_author and api_author_history in Hansards DB.
+
+Usage:
+
+# Manual mode (default)
+python manage_author.py
+python manage_author.py manual
+
+# Sync from S3
+python manage_author.py s3
+python manage_author.py s3 --bucket my-bucket
+
+# Sync from local CSV (.env paths)
+python manage_author.py local
+"""
+
 import os
 import argparse
 import sys
