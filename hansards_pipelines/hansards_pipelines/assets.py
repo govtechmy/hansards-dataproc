@@ -66,7 +66,7 @@ from hansards_pipelines.direct_sitting_ingest import ingest_sitting_to_db
 
 from hansards_pipelines.scrape_arkib import run_scrape
 from hansards_pipelines.move_and_rename_pdf import move_arkib_pdfs_to_public_main
-from hansards_pipelines.author import load_author_csv_to_db
+from hansards_pipelines.seed_data.author import load_author_csv_to_db
 from pathlib import Path
 
 from hansards_pipelines.arkib_sittings.build_arkib_partition_queue import build_arkib_partition_queue
