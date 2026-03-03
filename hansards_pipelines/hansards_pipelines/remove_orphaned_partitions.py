@@ -30,7 +30,7 @@ Usage:
     # Save results to file
     python remove_orphaned_partitions.py --output orphaned.json
 
-Reason: Over time, partitions may be created in Dagster but fail to insert into the database,
+Reason: Partitions may be created in Dagster but fail to insert into the database, typos in partition keys may occur,
 or sittings may be manually removed from the database.
 """
 
@@ -46,7 +46,7 @@ from hansards_pipelines.settings import DAGSTER_DB_URL, HANSARD_DB_URL
 DEFAULT_PARTITION_DEF_NAME = "house_sittings"
 
 
-def partition_key_to_filename(partition_key: str) -> str:
+def partition_key_to_filename(partition_key: str) -> Optional[str]:
     """
     Convert Dagster partition key to database filename format.
     
@@ -56,15 +56,13 @@ def partition_key_to_filename(partition_key: str) -> str:
     """
     try:
         house_code, dmy = partition_key.split("-", 1)
-        
-        # Parse DDMMYYYY
-        day = dmy[0:2]
-        month = dmy[2:4]
-        year = dmy[4:8]
-        
+
+        # Validate and parse date in DDMMYYYY format
+        parse_date = datetime.strptime(dmy, "%d%m%Y")
+
         # Convert to house_YYYY-MM-DD format
         house_lower = house_code.lower()
-        filename = f"{house_lower}_{year}-{month}-{day}"
+        filename = f"{house_lower}_{parse_date.strftime('%Y-%m-%d')}"
         
         return filename
     except ValueError as e:
@@ -126,6 +124,8 @@ def get_hansard_db_filenames(houses: Optional[List[str]] = None) -> Set[str]:
 
             filenames = {row[0] for row in cur.fetchall()}
             return filenames
+        
+
 def find_orphaned_partitions(
     dagster_partitions: Set[str], 
     db_filenames: Set[str]
@@ -177,6 +177,9 @@ def delete_orphaned_partitions(partitions: List[str], partition_def_name: str = 
         print(f"\n[DRY RUN] Would delete {len(partitions)} orphaned partitions")
         return len(partitions)
     
+    if DAGSTER_DB_URL is None:
+        raise RuntimeError("DAGSTER_DB_URL is not set; cannot connect to Dagster database.")
+    
     # Use context managers to ensure the connection and cursor are properly closed
     conn_str = DAGSTER_DB_URL.replace("postgresql+psycopg2://", "postgresql://")
     with psycopg2.connect(conn_str) as conn:
@@ -195,7 +198,7 @@ def delete_orphaned_partitions(partitions: List[str], partition_def_name: str = 
                 print(f"\n✓ Successfully deleted {deleted_count} orphaned partitions from Dagster")
                 return deleted_count
             
-            except Exception as e:
+            except psycopg2.Error as e:
                 conn.rollback()
                 print(f"\n✗ Error deleting partitions: {e}")
                 raise
@@ -215,7 +218,6 @@ def save_results(orphaned: List[Dict[str, str]], output_file: str):
         print(f"\nResults saved to: {output_file}")
     except OSError as e:
         print(f"\n✗ Failed to save results to '{output_file}': {e}")
-        raise
 
 
 def main():
