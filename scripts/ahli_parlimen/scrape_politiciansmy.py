@@ -7,9 +7,16 @@ import json
 import time
 import csv
 import os
+import sys
+from pathlib import Path
 from dotenv import load_dotenv
 
-# Load environment variables from .env file
+
+repo_root = Path(__file__).parent.parent.parent
+sys.path.insert(0, str(repo_root / "hansards_pipelines"))
+
+from hansards_pipelines.utils.date_utils import normalize_date, normalize_end_date_with_month_last_day
+
 load_dotenv()
 
 BASE = "https://www.politicians.my"
@@ -183,64 +190,9 @@ def export_author_schema(cleaned_json_file, author_file, author_history_file):
             start_date = party.get("start_date")
             end_date = party.get("end_date")
 
-            # Normalize start_date to DD/MM/YYYY
-            if start_date and isinstance(start_date, str):
-                start_date = start_date.strip()
-                if "/" in start_date:
-                    # Already has slashes (e.g., "1/1/71" or "24/06/2016")
-                    parts = start_date.split("/")
-                    if len(parts) == 3:
-                        day, month, year = parts[0], parts[1], parts[2]
-                        # Handle 2-digit years
-                        if len(year) == 2:
-                            year = f"19{year}" if int(year) > 50 else f"20{year}"
-                        start_date = f"{day.zfill(2)}/{month.zfill(2)}/{year}"
-                elif "-" in start_date:
-                    parts = start_date.split("-")
-                    if len(parts) == 3:
-                        # YYYY-MM-DD format
-                        start_date = f"{parts[2].zfill(2)}/{parts[1].zfill(2)}/{parts[0]}"
-                    elif len(parts) == 2:
-                        # YYYY-MM format - use 01 as day
-                        start_date = f"01/{parts[1].zfill(2)}/{parts[0]}"
-                else:
-                    # Just a year (YYYY) - use 01/01/YYYY
-                    if start_date.isdigit() and len(start_date) == 4:
-                        start_date = f"01/01/{start_date}"
-
-            # Normalize end_date to DD/MM/YYYY
-            if end_date == "current":
-                end_date = None
-            elif end_date and isinstance(end_date, str):
-                end_date = end_date.strip()
-                if "/" in end_date:
-                    # Already has slashes (e.g., "8/9/16" or "24/06/2016")
-                    parts = end_date.split("/")
-                    if len(parts) == 3:
-                        day, month, year = parts[0], parts[1], parts[2]
-                        # Handle 2-digit years
-                        if len(year) == 2:
-                            year = f"19{year}" if int(year) > 50 else f"20{year}"
-                        end_date = f"{day.zfill(2)}/{month.zfill(2)}/{year}"
-                elif "-" in end_date:
-                    parts = end_date.split("-")
-                    if len(parts) == 3:
-                        # YYYY-MM-DD format
-                        end_date = f"{parts[2].zfill(2)}/{parts[1].zfill(2)}/{parts[0]}"
-                    elif len(parts) == 2:
-                        # YYYY-MM format - use last day of month
-                        month_days = {
-                            "01": "31", "02": "28", "03": "31", "04": "30",
-                            "05": "31", "06": "30", "07": "31", "08": "31",
-                            "09": "30", "10": "31", "11": "30", "12": "31"
-                        }
-                        month = parts[1].zfill(2)
-                        day = month_days.get(month, "31")
-                        end_date = f"{day}/{month}/{parts[0]}"
-                else:
-                    # Just a year (YYYY) - use 01/01/YYYY (we don't know the actual date)
-                    if end_date.isdigit() and len(end_date) == 4:
-                        end_date = f"01/01/{end_date}"
+            # Normalize dates to DD/MM/YYYY using shared utility functions
+            start_date = normalize_date(start_date)
+            end_date = normalize_end_date_with_month_last_day(end_date)
 
             history_rows.append({
                 "record_id": record_counter,

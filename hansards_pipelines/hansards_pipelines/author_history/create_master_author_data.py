@@ -11,6 +11,8 @@ from pathlib import Path
 import psycopg2
 from psycopg2.extras import RealDictCursor
 from dotenv import load_dotenv
+from hansards_pipelines import settings
+from hansards_pipelines.utils.date_utils import normalize_date
 
 load_dotenv()
 logger = logging.getLogger(__name__)
@@ -112,46 +114,6 @@ def normalize_name(name):
     return str(name).strip().upper()
 
 
-def normalize_date(date_str):
-    """Normalize date to DD/MM/YYYY format."""
-    if pd.isna(date_str) or not date_str:
-        return None
-    
-    date_str = str(date_str).strip()
-    
-    if not date_str:
-        return None
-    
-    # Already in DD/MM/YYYY or similar format with slashes
-    if "/" in date_str:
-        parts = date_str.split("/")
-        if len(parts) == 3:
-            day, month, year = parts[0], parts[1], parts[2]
-            # Handle 2-digit years
-            if len(year) == 2:
-                year = f"19{year}" if int(year) > 50 else f"20{year}"
-            return f"{day.zfill(2)}/{month.zfill(2)}/{year}"
-    
-    # Date with hyphens
-    elif "-" in date_str:
-        parts = date_str.split("-")
-        if len(parts) == 3:
-            # YYYY-MM-DD format
-            return f"{parts[2].zfill(2)}/{parts[1].zfill(2)}/{parts[0]}"
-        elif len(parts) == 2:
-            # YYYY-MM format - use 01 as day for start dates, last day for end dates
-            # We'll use 01 as default here
-            return f"01/{parts[1].zfill(2)}/{parts[0]}"
-    
-    # Just a year (YYYY)
-    else:
-        if date_str.isdigit() and len(date_str) == 4:
-            # Default to 01/01 for start dates, this can be adjusted if needed
-            return f"01/01/{date_str}"
-    
-    return date_str  # Return as-is if format not recognized
-
-
 def load_scraped_data(scraped_author_file, scraped_author_history_file):
     """Load scraped author and history data."""
     logger.info("Loading scraped files...")
@@ -210,7 +172,6 @@ def create_master_csv(db_authors, db_history, scraped_authors, scraped_history, 
     logger.info(f"Built db_history lookup with {len(db_history_lookup)} entries")
     
     master_rows = []
-    used_db_authors = set()
     
     # First, process all database data
     logger.info("Processing database records...")
@@ -227,7 +188,6 @@ def create_master_csv(db_authors, db_history, scraped_authors, scraped_history, 
             continue
             
         author_row = author_row.iloc[0]
-        used_db_authors.add(author_id)
         
         # Get area_id, record_id and lookup area details
         record_id = hist_row.get('record_id')
@@ -283,19 +243,26 @@ def create_master_csv(db_authors, db_history, scraped_authors, scraped_history, 
         elif name in name_map:
             db_author_id = name_map[name]
         
-        if db_author_id is not None:
-            duplicate_records += 1
-            continue
-        
-        # New author not in database
-        new_records += 1
-        
+        # Normalize history dates for this row
         start_date = normalize_date(hist_row.get('start_date'))
         end_date = normalize_date(hist_row.get('end_date'))
         
+        # Use the database author id when available; otherwise fall back to the scraped author id
+        effective_author_id = db_author_id if db_author_id is not None else scraped_author_id
+        
         # Try to find area_id and record_id from db_history by matching author_id, start_date, end_date
-        lookup_key = (scraped_author_id, start_date, end_date)
+        lookup_key = (effective_author_id, start_date, end_date)
         history_info = db_history_lookup.get(lookup_key, {})
+        
+        # If this exact history row already exists, treat it as a duplicate and skip just this row
+        if history_info:
+            duplicate_records += 1
+            continue
+        
+        # New history row: count a new author only when the author was not already in the database
+        if db_author_id is None:
+            new_records += 1
+        
         record_id = history_info.get('record_id')
         area_id = history_info.get('area_id')
         
@@ -306,7 +273,7 @@ def create_master_csv(db_authors, db_history, scraped_authors, scraped_history, 
         
         master_rows.append({
             'record_id': record_id,
-            'author_id': scraped_author_id,
+            'author_id': effective_author_id,
             'author_name': author_row.get('name') or author_row.get('full_name'),
             'party': hist_row.get('party'),
             'area_id': area_id,
@@ -384,24 +351,28 @@ def main():
     
     # Upload to S3
     logger.info("Uploading to S3...")
-    s3_bucket = os.getenv("S3_DATAPROC_BUCKET")
+    s3_bucket = settings.S3_DATAPROC_BUCKET
     aws_region = os.getenv("AWS_REGION", "ap-southeast-5")
     s3_key = "canonical/preprocessing/master/author_history.csv"
     
-    try:
-        s3_client = boto3.client("s3", region_name=aws_region)
+    if not s3_bucket:
+        logger.error("Environment variable S3_DATAPROC_BUCKET is not set; skipping S3 upload.")
+        logger.warning("File saved locally but S3 upload was skipped because the S3 bucket is not configured.")
+    else:
+        try:
+            s3_client = boto3.client("s3", region_name=aws_region)
+            
+            logger.info(f"Uploading to s3://{s3_bucket}/{s3_key}...")
+            s3_client.upload_file(
+                str(MASTER_CSV),
+                s3_bucket,
+                s3_key
+            )
+            logger.info(f"Successfully uploaded to S3: s3://{s3_bucket}/{s3_key}")
         
-        logger.info(f"Uploading to s3://{s3_bucket}/{s3_key}...")
-        s3_client.upload_file(
-            str(MASTER_CSV),
-            s3_bucket,
-            s3_key
-        )
-        logger.info(f"Successfully uploaded to S3: s3://{s3_bucket}/{s3_key}")
-    
-    except Exception as e:
-        logger.error(f"Uploading to S3: {e}")
-        logger.warning("File saved locally but S3 upload failed")
+        except Exception as e:
+            logger.error(f"Failed uploading to S3: {e}")
+            logger.warning("File saved locally but S3 upload failed")
     
     logger.info("MERGE COMPLETE!")
 

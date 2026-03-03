@@ -8,6 +8,7 @@ import boto3
 from dotenv import load_dotenv
 from io import StringIO
 import pandas as pd
+from hansards_pipelines import settings
 
 # Load environment variables
 load_dotenv()
@@ -115,7 +116,7 @@ def upload_to_s3(s3_client, df, bucket, key):
 
 def main():
     # Configuration
-    bucket = os.getenv('S3_DATAPROC_BUCKET', 'my.gov.parlimen.hsd-dataproc-bucket-dev')
+    bucket = settings.S3_DATAPROC_BUCKET
     aws_region = os.getenv('AWS_REGION', 'ap-southeast-5')
     input_key = 'canonical/preprocessing/master/author_history.csv'
     output_key = 'canonical/seed/author_history.csv'
