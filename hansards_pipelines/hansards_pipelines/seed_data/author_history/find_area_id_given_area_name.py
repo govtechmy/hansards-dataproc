@@ -23,7 +23,7 @@ import pandas as pd
 import psycopg
 from dotenv import load_dotenv
 
-from ...settings import HANSARD_DB_URL, S3_DATAPROC_BUCKET, AWS_REGION
+from hansards_pipelines.settings import HANSARD_DB_URL, S3_DATAPROC_BUCKET, AWS_REGION
 
 load_dotenv()
 
