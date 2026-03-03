@@ -216,6 +216,14 @@ def calculate_name_specificity_score(input_name, candidate_name):
     Returns an integer adjustment score (bonus or penalty), typically in the
     range -10 to +5, to add to the fuzzy match score.
     """
+    # Handle None or NaN values
+    if not input_name or pd.isna(input_name) or not candidate_name or pd.isna(candidate_name):
+        return 0
+    
+    # Ensure strings
+    input_name = str(input_name)
+    candidate_name = str(candidate_name)
+    
     input_parts = set(input_name.upper().split())
     candidate_parts = set(candidate_name.upper().split())
     
@@ -292,6 +300,9 @@ def enhanced_match_names(
     # Adjust scores based on name specificity to better handle father/son cases
     adjusted_matches = []
     for match, score in matches:
+        # Skip None or empty matches
+        if not match or pd.isna(match):
+            continue
         # Add specificity adjustment
         specificity_bonus = calculate_name_specificity_score(name, match)
         adjusted_score = min(100, max(0, score + specificity_bonus))
@@ -356,8 +367,10 @@ def match_by_name(speech_df, author_df, author_hist_df=None, column_name="name",
         speech_dates = name_speeches["date"].dropna() if "date" in name_speeches.columns else pd.Series()
         
         # Get multiple candidate matches
+        # Filter out None/NaN values from author names
+        clean_author_names = [n for n in author_df["name_up"].unique() if n and not pd.isna(n)]
         match_results = enhanced_match_names(
-            name, author_df["name_up"].unique(), threshold=threshold, limit=5
+            name, clean_author_names, threshold=threshold, limit=5
         )
         
         if not match_results:
@@ -406,8 +419,10 @@ def match_by_constituency(speech_df, author_hist_df, column_name, threshold=70):
             constituency_matches[constituency] = None
             continue
 
+        # Filter out None/NaN values from constituency areas
+        clean_areas = [a for a in author_hist_df["area_up"].unique() if a and not pd.isna(a)]
         match_results = enhanced_match_names(
-            constituency, author_hist_df["area_up"].unique(), threshold=threshold, limit=3
+            constituency, clean_areas, threshold=threshold, limit=3
         )
         if match_results:
             # Take the best match
