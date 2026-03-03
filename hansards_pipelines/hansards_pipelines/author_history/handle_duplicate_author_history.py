@@ -73,15 +73,6 @@ def remove_duplicates(df):
     return df_deduped
 
 
-def reassign_record_ids(df):
-    """Reassign sequential record_id values starting from 1"""
-    if 'record_id' in df.columns:
-        logger.info("\nReassigning record_ids...")
-        df['record_id'] = range(1, len(df) + 1)
-        logger.info(f"  Assigned record_ids from 1 to {len(df)}")
-    return df
-
-
 def upload_to_s3(s3_client, df, bucket, key):
     """Upload DataFrame as CSV to S3"""
     logger.info(f"\nUploading to S3...")
@@ -116,20 +107,25 @@ def main():
     output_key = 'canonical/preprocessing/master/author_history.csv'
     logger.info("AUTHOR HISTORY DUPLICATE REMOVER")
     
-
+    # Initialize S3 client
     s3_client = boto3.client("s3", region_name=aws_region)
     
     # Download input CSV from S3
     df = download_from_s3(s3_client, bucket, input_key)
-    logger.info(f"\nColumns in CSV: {list(df.columns)}")
+    
+    # Show current columns
+    logger.info(f"Columns in CSV: {list(df.columns)}")
+    
+    # Remove duplicates (keeps existing record_id from first occurrence)
     df_deduped = remove_duplicates(df)
-    df_final = reassign_record_ids(df_deduped)
-    upload_to_s3(s3_client, df_final, bucket, output_key)
-
+    
+    # Upload deduplicated CSV to S3
+    upload_to_s3(s3_client, df_deduped, bucket, output_key)
+    
     logger.info("COMPLETE!")
-    logger.info(f"Input: s3://{bucket}/{input_key}")
+    logger.info(f"Input:  s3://{bucket}/{input_key}")
     logger.info(f"Output: s3://{bucket}/{output_key}")
-    logger.info(f"Records: {len(df)} → {len(df_final)} (removed {len(df) - len(df_final)})")
+    logger.info(f"Records: {len(df)} → {len(df_deduped)} (removed {len(df) - len(df_deduped)})")
 
 
 if __name__ == "__main__":
