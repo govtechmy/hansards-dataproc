@@ -1,9 +1,5 @@
 """
 Prepare seed data for author_history table
-
-Input: s3://dataproc/canonical/preprocessing/master/author_history.csv
-Output: s3://dataproc/canonical/seed/author_history.csv
-
 Removes helper columns (author_name, area_name, area_state) to match database schema.
 """
 import os
