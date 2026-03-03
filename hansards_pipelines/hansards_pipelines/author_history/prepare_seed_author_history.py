@@ -44,13 +44,13 @@ def prepare_seed_data(df):
     
     Database schema columns (api_author_history):
     - record_id
-    - author_id
     - party
     - area_id
     - exec_posts
     - service_posts
     - start_date
     - end_date
+    - author_id
     
     Columns to remove:
     - author_name (helper)
@@ -62,13 +62,13 @@ def prepare_seed_data(df):
     # Define the columns to keep (matching database schema)
     db_columns = [
         'record_id',
-        'author_id',
         'party',
         'area_id',
         'exec_posts',
         'service_posts',
         'start_date',
-        'end_date'
+        'end_date',
+        'author_id'
     ]
     
     # Check which columns exist in the DataFrame
