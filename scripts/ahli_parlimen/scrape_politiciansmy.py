@@ -6,6 +6,18 @@ import re
 import json
 import time
 import csv
+import os
+import sys
+from pathlib import Path
+from dotenv import load_dotenv
+
+
+repo_root = Path(__file__).parent.parent.parent
+sys.path.insert(0, str(repo_root / "hansards_pipelines"))
+
+from hansards_pipelines.utils.date_utils import normalize_date, normalize_end_date_with_month_last_day
+
+load_dotenv()
 
 BASE = "https://www.politicians.my"
 HEADERS = {"User-Agent": "Mozilla/5.0"}
@@ -56,8 +68,8 @@ def fetch_politician(slug):
     text = r.text
 
     # Find the politician key directly
-    key_inde= text.find('"politician":{')
-    if key_inde== -1:
+    key_index = text.find('"politician":{')
+    if key_index == -1:
         print(f"politician key not found for {slug}")
         return None
 
@@ -178,8 +190,9 @@ def export_author_schema(cleaned_json_file, author_file, author_history_file):
             start_date = party.get("start_date")
             end_date = party.get("end_date")
 
-            if end_date == "current":
-                end_date = None
+            # Normalize dates to DD/MM/YYYY using shared utility functions
+            start_date = normalize_date(start_date)
+            end_date = normalize_end_date_with_month_last_day(end_date)
 
             history_rows.append({
                 "record_id": record_counter,
@@ -235,10 +248,13 @@ def export_author_schema(cleaned_json_file, author_file, author_history_file):
 
 def main():
 
-    RAW_FILE = "outputs/politicians.json"
-    CLEANED_FILE = "outputs/politicians_cleaned.json"
-    AUTHOR_FILE = "outputs/author.csv"
-    AUTHOR_HISTORY_FILE = "outputs/author_history.csv"
+    # Get file paths from environment variables with defaults
+    OUTPUT_DIR = os.getenv("SCRAPER_OUTPUT_DIR", "scripts/ahli_parlimen/outputs")
+    
+    RAW_FILE = f"{OUTPUT_DIR}/politicians.json"
+    CLEANED_FILE = f"{OUTPUT_DIR}/politicians_cleaned.json"
+    AUTHOR_FILE = f"{OUTPUT_DIR}/author.csv"
+    AUTHOR_HISTORY_FILE = f"{OUTPUT_DIR}/author_history.csv"
 
     # ==========================================
     # STEP 1 — SCRAPE (OPTIONAL)

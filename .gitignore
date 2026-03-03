@@ -171,3 +171,5 @@ cython_debug/
 # Generated output files from scrapers
 website_file_count.json
 *_file_count.json
+
+outputs/
