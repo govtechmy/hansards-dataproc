@@ -24,8 +24,9 @@ Usage:
     # Delete orphaned legacy partitions
     python remove_orphaned_partitions.py --partition-def house_sittings_legacy --execute
     
-    # Limit to specific houses
+    # Limit to specific houses (DR=Dewan Rakyat, DN=Dewan Negara, KKDR=Kamar Khas)
     python remove_orphaned_partitions.py --houses DR DN
+    python remove_orphaned_partitions.py --houses KKDR
     
     # Save results to file
     python remove_orphaned_partitions.py --output orphaned.json
@@ -70,7 +71,7 @@ def partition_key_to_filename(partition_key: str) -> Optional[str]:
         return None
 
 
-def get_dagster_partitions(houses: Optional[List[str]] = None, partition_def_name: str = DEFAULT_PARTITION_DEF_NAME) -> Set[str]:
+def get_dagster_partitions(houses: Optional[List[str]] = None, partition_def_name: str = DEFAULT_PARTITION_DEF_NAME) -> List[str]:
     """Fetch all partitions from Dagster database."""
     if DAGSTER_DB_URL is None:
         raise RuntimeError("DAGSTER_DB_URL is not set; cannot connect to Dagster database.")
@@ -84,15 +85,15 @@ def get_dagster_partitions(houses: Optional[List[str]] = None, partition_def_nam
                 ORDER BY partition
             """, (partition_def_name,))
 
-            all_partitions = {row[0] for row in cur.fetchall()}
+            all_partitions = [row[0] for row in cur.fetchall()]
 
             # Filter by house if specified
             if houses:
                 houses_upper = [h.upper() for h in houses]
-                all_partitions = {
+                all_partitions = [
                     p for p in all_partitions
                     if any(p.startswith(f"{h}-") for h in houses_upper)
-                }
+                ]
 
             return all_partitions
 
@@ -111,7 +112,8 @@ def get_hansard_db_filenames(houses: Optional[List[str]] = None) -> Set[str]:
                 query = """
                     SELECT DISTINCT filename
                     FROM api_sitting
-                    WHERE filename LIKE ANY(%s)
+                    WHERE filename IS NOT NULL
+                      AND filename LIKE ANY(%s)
                     ORDER BY filename
                 """
                 cur.execute(query, (patterns,))
@@ -119,6 +121,7 @@ def get_hansard_db_filenames(houses: Optional[List[str]] = None) -> Set[str]:
                 cur.execute("""
                     SELECT DISTINCT filename
                     FROM api_sitting
+                    WHERE filename IS NOT NULL
                     ORDER BY filename
                 """)
 
@@ -127,7 +130,7 @@ def get_hansard_db_filenames(houses: Optional[List[str]] = None) -> Set[str]:
         
 
 def find_orphaned_partitions(
-    dagster_partitions: Set[str], 
+    dagster_partitions: List[str], 
     db_filenames: Set[str]
 ) -> List[Dict[str, str]]:
     """
@@ -213,8 +216,8 @@ def save_results(orphaned: List[Dict[str, str]], output_file: str):
     }
     
     try:
-        with open(output_file, "w") as f:
-            json.dump(output, f, indent=2)
+        with open(output_file, "w", encoding="utf-8") as f:
+            json.dump(output, f, indent=2, ensure_ascii=False)
         print(f"\nResults saved to: {output_file}")
     except OSError as e:
         print(f"\n✗ Failed to save results to '{output_file}': {e}")
