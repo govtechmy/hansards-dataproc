@@ -13,23 +13,23 @@ The script performs the following steps:
 
 Usage:
     # Dry run (default) - only shows what would be deleted
-    python remove_orphaned_partitions.py
+    python -m hansards_pipelines.remove_orphaned_partitions
     
     # Check legacy partitions
-    python remove_orphaned_partitions.py --partition-def house_sittings_legacy
+    python -m hansards_pipelines.remove_orphaned_partitions --partition-def house_sittings_legacy
     
     # Actually delete orphaned partitions
-    python remove_orphaned_partitions.py --execute
+    python -m hansards_pipelines.remove_orphaned_partitions --execute
     
     # Delete orphaned legacy partitions
-    python remove_orphaned_partitions.py --partition-def house_sittings_legacy --execute
+    python -m hansards_pipelines.remove_orphaned_partitions --partition-def house_sittings_legacy --execute
     
     # Limit to specific houses (DR=Dewan Rakyat, DN=Dewan Negara, KKDR=Kamar Khas)
-    python remove_orphaned_partitions.py --houses DR DN
-    python remove_orphaned_partitions.py --houses KKDR
+    python -m hansards_pipelines.remove_orphaned_partitions --houses DR DN
+    python -m hansards_pipelines.remove_orphaned_partitions --houses KKDR
     
     # Save results to file
-    python remove_orphaned_partitions.py --output orphaned.json
+    python -m hansards_pipelines.remove_orphaned_partitions --output orphaned.json
 
 Reason: Partitions may be created in Dagster but fail to insert into the database, typos in partition keys may occur,
 or sittings may be manually removed from the database.
