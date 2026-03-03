@@ -353,11 +353,6 @@ def main():
             match_rate = (~matched["author_id"].isna()).mean() * 100
             logger.info(f"Match rate: {match_rate:.2f}%")
 
-            # Save matched results to CSV for review
-            output_file = f"matched_authors_{sitting.get('filename', sitting['sitting_id'])}.csv"
-            matched[['index', 'author', 'author_id', 'date']].to_csv(output_file, index=False)
-            logger.info(f"Matched results saved to: {output_file}")
-
             if args.dry_run:
                 logger.info("Dry-run enabled -> skipping update")
                 continue
