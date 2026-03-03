@@ -2,9 +2,8 @@
 Handle duplicate author_history records from S3 CSV
 Removes duplicate rows based on: author_name + party + area_id + start_date + end_date
 """
-import logging
 import os
-import csv
+import logging
 import boto3
 from dotenv import load_dotenv
 from io import StringIO
@@ -17,8 +16,8 @@ logger = logging.getLogger(__name__)
 def download_from_s3(s3_client, bucket, key):
     """Download CSV file from S3 and return as pandas DataFrame"""
     logger.info(f"Downloading from S3...")
-    logger.info(f"  Bucket: {bucket}")
-    logger.info(f"  Key: {key}")
+    logger.info(f" Bucket: {bucket}")
+    logger.info(f" Key: {key}")
 
     try:
         response = s3_client.get_object(Bucket=bucket, Key=key)
@@ -41,8 +40,6 @@ def remove_duplicates(df):
     - area_id
     - start_date
     - end_date
-    
-    Keeps the first occurrence of each duplicate set.
     """
     logger.info("\nRemoving duplicates...")
     
@@ -57,9 +54,9 @@ def remove_duplicates(df):
     missing_columns = [col for col in duplicate_columns if col not in df.columns]
     
     if missing_columns:
-        logger.warning(f"  Warning: Missing columns for duplicate detection: {missing_columns}")
+        logger.warning(f" Warning: Missing columns for duplicate detection: {missing_columns}")
 
-    logger.info(f"  Using duplicate detection columns: {existing_columns}")
+    logger.info(f" Using duplicate detection columns: {existing_columns}")
 
     # Remove duplicates - keep first occurrence
     df_deduped = df.drop_duplicates(subset=existing_columns, keep='first')
@@ -67,11 +64,11 @@ def remove_duplicates(df):
     final_count = len(df_deduped)
     removed_count = initial_count - final_count
 
-    logger.info(f"  Final records: {final_count}")
-    logger.info(f"  Removed {removed_count} duplicate rows")
+    logger.info(f" Final records: {final_count}")
+    logger.info(f" Removed {removed_count} duplicate rows")
 
     if removed_count > 0:
-        logger.info(f"  Duplicate removal rate: {(removed_count/initial_count)*100:.2f}%")
+        logger.info(f" Duplicate removal rate: {(removed_count/initial_count)*100:.2f}%")
 
     return df_deduped
 
@@ -88,9 +85,9 @@ def reassign_record_ids(df):
 def upload_to_s3(s3_client, df, bucket, key):
     """Upload DataFrame as CSV to S3"""
     logger.info(f"\nUploading to S3...")
-    logger.info(f"  Bucket: {bucket}")
-    logger.info(f"  Key: {key}")
-    logger.info(f"  Records: {len(df)}")
+    logger.info(f" Bucket: {bucket}")
+    logger.info(f" Key: {key}")
+    logger.info(f" Records: {len(df)}")
 
     try:
         csv_buffer = StringIO()
@@ -130,7 +127,7 @@ def main():
     upload_to_s3(s3_client, df_final, bucket, output_key)
 
     logger.info("COMPLETE!")
-    logger.info(f"Input:  s3://{bucket}/{input_key}")
+    logger.info(f"Input: s3://{bucket}/{input_key}")
     logger.info(f"Output: s3://{bucket}/{output_key}")
     logger.info(f"Records: {len(df)} → {len(df_final)} (removed {len(df) - len(df_final)})")
 

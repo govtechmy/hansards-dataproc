@@ -2,15 +2,15 @@
 Merge author data from scraped CSV files with database CSV files.
 Creates a master_author.csv with deduplicated data.
 """
+import os
 import csv
 import logging
+import boto3
 import pandas as pd
 from pathlib import Path
 import psycopg2
 from psycopg2.extras import RealDictCursor
-import os
 from dotenv import load_dotenv
-import boto3
 
 load_dotenv()
 logger = logging.getLogger(__name__)
@@ -33,8 +33,6 @@ def get_db_connection():
 
 def load_area_mapping():
     """Load area_id to area_name and area_state mapping from PostgreSQL."""
-    logger.info("Loading area mapping from PostgreSQL...")
-    
     conn = get_db_connection()
     if not conn:
         return {}
@@ -55,7 +53,7 @@ def load_area_mapping():
                 'state': row['state']
             }
         
-        logger.info(f"  - Loaded {len(area_map)} area mappings from database")
+        logger.info(f"Loaded {len(area_map)} area mappings from database")
         cursor.close()
         conn.close()
         
@@ -86,7 +84,7 @@ def load_db_data_from_postgres():
         """, conn)
         # Add full_name column as None since it doesn't exist in the table
         db_authors['full_name'] = None
-        logger.info(f"    Loaded {len(db_authors)} authors from database")
+        logger.info(f" Loaded {len(db_authors)} authors from database")
         
         # Load author history from api_author_history table
         logger.info("  - Fetching api_author_history table...")
@@ -94,7 +92,7 @@ def load_db_data_from_postgres():
             SELECT record_id, author_id, party, area_id, exec_posts, service_posts, start_date, end_date
             FROM api_author_history
         """, conn)
-        logger.info(f"    Loaded {len(db_history)} history records from database")
+        logger.info(f" Loaded {len(db_history)} history records from database")
         
         conn.close()
         
@@ -386,12 +384,12 @@ def main():
     
     # Upload to S3
     logger.info("Uploading to S3...")
+    s3_bucket = os.getenv("S3_DATAPROC_BUCKET")
+    aws_region = os.getenv("AWS_REGION", "ap-southeast-5")
+    s3_key = "canonical/preprocessing/master/author_history.csv"
     
     try:
-        s3_bucket = os.getenv("S3_DATAPROC_BUCKET")
-        aws_region = os.getenv("AWS_REGION", "ap-southeast-5")
         s3_client = boto3.client("s3", region_name=aws_region)
-        s3_key = "canonical/preprocessing/master/author_history.csv"
         
         logger.info(f"Uploading to s3://{s3_bucket}/{s3_key}...")
         s3_client.upload_file(

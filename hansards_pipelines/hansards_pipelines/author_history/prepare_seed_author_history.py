@@ -96,10 +96,10 @@ def prepare_seed_data(df):
 def upload_to_s3(s3_client, df, bucket, key):
     """Upload DataFrame as CSV to S3"""
     logger.info("Uploading to S3...")
-    logger.info(f"  Bucket: {bucket}")
-    logger.info(f"  Key: {key}")
-    logger.info(f"  Records: {len(df)}")
-    logger.info(f"  Columns: {list(df.columns)}")
+    logger.info(f" Bucket: {bucket}")
+    logger.info(f" Key: {key}")
+    logger.info(f" Records: {len(df)}")
+    logger.info(f" Columns: {list(df.columns)}")
     
     try:
         # Convert DataFrame to CSV string
@@ -129,9 +129,7 @@ def main():
     input_key = 'canonical/preprocessing/master/author_history.csv'
     output_key = 'canonical/seed/author_history.csv'
     
-    logger.info("=" * 80)
     logger.info("PREPARE SEED AUTHOR HISTORY")
-    logger.info("=" * 80)
     
     # Initialize S3 client
     s3_client = boto3.client("s3", region_name=aws_region)
@@ -145,13 +143,10 @@ def main():
     # Upload seed CSV to S3
     upload_to_s3(s3_client, df_seed, bucket, output_key)
     
-    logger.info("=" * 80)
     logger.info("COMPLETE!")
-    logger.info(f"Input:  s3://{bucket}/{input_key}")
     logger.info(f"Output: s3://{bucket}/{output_key}")
     logger.info(f"Records: {len(df)} → {len(df_seed)}")
     logger.info(f"Columns: {len(df.columns)} → {len(df_seed.columns)}")
-    logger.info("=" * 80)
 
 
 if __name__ == "__main__":
