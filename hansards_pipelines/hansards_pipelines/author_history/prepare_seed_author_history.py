@@ -51,11 +51,6 @@ def prepare_seed_data(df):
     - start_date
     - end_date
     - author_id
-    
-    Columns to remove:
-    - author_name (helper)
-    - area_name (helper)
-    - area_state (helper)
     """
     logger.info("Preparing seed data...")
     
