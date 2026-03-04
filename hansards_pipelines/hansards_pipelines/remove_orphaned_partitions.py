@@ -311,7 +311,7 @@ def main():
     print("\n" + "=" * 70)
     print("SUMMARY")
     print("=" * 70)
-    print(f"Total partitions in Dagster: {len(dagster_partitions)}")
+    print(f"Total partitions in Dagster ({args.partition_def}): {len(dagster_partitions)}")
     print(f"Total sittings in database:  {len(db_filenames)}")
     print(f"Orphaned partitions found:   {len(orphaned)}")
     
