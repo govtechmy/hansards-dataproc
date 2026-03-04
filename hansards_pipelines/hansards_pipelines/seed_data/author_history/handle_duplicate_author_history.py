@@ -8,6 +8,7 @@ import boto3
 from dotenv import load_dotenv
 from io import StringIO
 import pandas as pd
+from hansards_pipelines import settings
 
 load_dotenv()
 logger = logging.getLogger(__name__)
@@ -54,7 +55,12 @@ def remove_duplicates(df):
     missing_columns = [col for col in duplicate_columns if col not in df.columns]
     
     if missing_columns:
-        logger.warning(f" Warning: Missing columns for duplicate detection: {missing_columns}")
+        error_msg = (
+            f"Cannot proceed with deduplication: missing required columns {missing_columns}. "
+            f"Deduplication requires all of: {duplicate_columns}"
+        )
+        logger.error(f" Error: {error_msg}")
+        raise ValueError(error_msg)
 
     logger.info(f" Using duplicate detection columns: {existing_columns}")
 
@@ -101,7 +107,7 @@ def upload_to_s3(s3_client, df, bucket, key):
 
 def main():
     # Configuration
-    bucket = os.getenv('S3_DATAPROC_BUCKET', 'my.gov.parlimen.hsd-dataproc-bucket-dev')
+    bucket = settings.S3_DATAPROC_BUCKET
     aws_region = os.getenv('AWS_REGION', 'ap-southeast-5')
     input_key = 'canonical/preprocessing/author_history/resolved/author_history.csv'
     output_key = 'canonical/preprocessing/master/author_history.csv'
