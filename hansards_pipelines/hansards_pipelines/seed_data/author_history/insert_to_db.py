@@ -22,11 +22,8 @@ import argparse
 import boto3
 import pandas as pd
 import psycopg
-from dotenv import load_dotenv
 
 from hansards_pipelines.settings import HANSARD_DB_URL, S3_DATAPROC_BUCKET, AWS_REGION
-
-load_dotenv()
 
 # --------------------------------------------------------------------------- #
 # S3 path
