@@ -5,12 +5,10 @@ Removes duplicate rows based on: author_name + party + area_id + start_date + en
 import os
 import logging
 import boto3
-from dotenv import load_dotenv
 from io import StringIO
 import pandas as pd
 from hansards_pipelines import settings
 
-load_dotenv()
 logger = logging.getLogger(__name__)
 
 
@@ -108,7 +106,7 @@ def upload_to_s3(s3_client, df, bucket, key):
 def main():
     # Configuration
     bucket = settings.S3_DATAPROC_BUCKET
-    aws_region = os.getenv('AWS_REGION', 'ap-southeast-5')
+    aws_region = settings.AWS_REGION or 'ap-southeast-5'
     input_key = 'canonical/preprocessing/author_history/resolved/author_history.csv'
     output_key = 'canonical/preprocessing/master/author_history.csv'
     logger.info("AUTHOR HISTORY DUPLICATE REMOVER")

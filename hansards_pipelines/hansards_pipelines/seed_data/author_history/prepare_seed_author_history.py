@@ -5,13 +5,10 @@ Removes helper columns (author_name, area_name, area_state) to match database sc
 import os
 import logging
 import boto3
-from dotenv import load_dotenv
 from io import StringIO
 import pandas as pd
 from hansards_pipelines import settings
 
-# Load environment variables
-load_dotenv()
 logger = logging.getLogger(__name__)
 
 
@@ -117,7 +114,7 @@ def upload_to_s3(s3_client, df, bucket, key):
 def main():
     # Configuration
     bucket = settings.S3_DATAPROC_BUCKET
-    aws_region = os.getenv('AWS_REGION', 'ap-southeast-5')
+    aws_region = settings.AWS_REGION or 'ap-southeast-5'
     input_key = 'canonical/preprocessing/master/author_history.csv'
     output_key = 'canonical/seed/author_history.csv'
     
