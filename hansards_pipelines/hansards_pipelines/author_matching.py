@@ -395,8 +395,13 @@ def match_by_name(speech_df, author_df, author_hist_df=None, column_name="name",
                 for author_id, score, matched_name in candidate_authors
                 if _is_temporally_valid(author_id, speech_dates, author_hist_df)
             ]
-            candidates_to_use = valid_temporal_matches if valid_temporal_matches else candidate_authors
+            # If temporal validation is applicable but no valid matches found, leave blank
+            if not valid_temporal_matches:
+                matches[name] = None
+                continue
+            candidates_to_use = valid_temporal_matches
         else:
+            # No temporal validation possible, use all candidates
             candidates_to_use = candidate_authors
         
         # Select best match by score
