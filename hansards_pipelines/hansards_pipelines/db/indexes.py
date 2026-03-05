@@ -1,6 +1,8 @@
 import psycopg
 from psycopg import sql
 from hansards_pipelines import settings
+import argparse
+import os
 
 import logging
 logger = logging.getLogger(__name__)
@@ -107,9 +109,6 @@ def add_index(conn, table_name, columns, index_name=None, unique=False, method="
             )
             
             cur.execute(create_sql)
-            
-            if not concurrently:
-                conn.commit()
                 
             logger.info(f"[CREATE] {table_name}.{index_name} created{' (concurrently)' if concurrently else ''}")
     finally:
@@ -211,14 +210,23 @@ def create_index_api_parliamentary_cycle(conn, concurrently=False):
         concurrently=concurrently
     )
 
+    add_index(
+        conn,
+        table,
+        ["house", "start_date", "end_date"],
+        index_name="idx_api_parliamentary_cycle_house_date_range",
+        concurrently=concurrently
+    )
 
-def main():
+
+def main(concurrently=None):
     """
     Main entry point for creating/updating database indexes.
-    
-    To use CREATE INDEX CONCURRENTLY for production environments with large tables,
-    modify the create_index_* function calls to pass concurrently=True.
     """
+    if concurrently is None:
+        env_value = os.getenv("INDEX_CONCURRENTLY", "false").lower()
+        concurrently = env_value in ('true', '1', 'yes')
+    
     db_url = settings.HANSARD_DB_URL
     
     if not db_url:
@@ -227,23 +235,35 @@ def main():
     
     logger.info("Connecting to database...")
     
+    if concurrently:
+        logger.info("Mode: CONCURRENTLY (safe for production, will not block writes)")
+    else:
+        logger.info("Mode: STANDARD (faster but may briefly block writes on large tables)")
+    
     try:
         with psycopg.connect(db_url) as conn:
             logger.info("Connected successfully\n")
             logger.info("Creating indexes for api_author")
-            create_index_api_author(conn)
+            create_index_api_author(conn, concurrently=concurrently)
             
             logger.info("\n" + "="*60)
             logger.info("Creating indexes for api_author_history")
-            create_index_api_author_history(conn)
+            create_index_api_author_history(conn, concurrently=concurrently)
             
             logger.info("\n" + "="*60)
             logger.info("Creating indexes for api_area")
-            create_index_api_area(conn)
+            create_index_api_area(conn, concurrently=concurrently)
             
             logger.info("\n" + "="*60)
             logger.info("Creating indexes for api_parliamentary_cycle")
-            create_index_api_parliamentary_cycle(conn)
+            create_index_api_parliamentary_cycle(conn, concurrently=concurrently)
+            
+            # Only commit if not using concurrently (CONCURRENTLY uses autocommit)
+            if not concurrently:
+                conn.commit()
+            
+            logger.info("\n" + "="*60)
+            logger.info("All indexes created successfully")
             
     except Exception as e:
         logger.error(f"Failed to create indexes: {e}")
@@ -252,4 +272,16 @@ def main():
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
-    main()
+    
+    parser = argparse.ArgumentParser(
+        description="Create and manage database indexes for hansards tables",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+    )
+    parser.add_argument(
+        '--concurrently',
+        action='store_true',
+        help='Use CREATE INDEX CONCURRENTLY to avoid blocking writes (recommended for production)'
+    )
+    
+    args = parser.parse_args()
+    main(concurrently=args.concurrently if args.concurrently else None)
