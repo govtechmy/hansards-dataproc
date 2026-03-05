@@ -21,12 +21,8 @@ import sys
 import io
 import pandas as pd
 import boto3
-from dotenv import load_dotenv
 import psycopg
-from hansards_pipelines.settings import HANSARD_DB_URL, S3_DATAPROC_BUCKET
-
-# Load environment variables
-load_dotenv()
+from hansards_pipelines.settings import HANSARD_DB_URL, S3_DATAPROC_BUCKET, AWS_REGION
 
 def get_db_connection():
     if not HANSARD_DB_URL:
@@ -182,7 +178,7 @@ def handle_manual_entry():
                     if name:
                         name = name.upper()
                     birth_year = prompt_input("Birth Year (YYYY)", required=False, type_func=int, default=existing_author[1])
-                    ethnicity = prompt_choice("Ethnicity", choices=ethnicity_choices, required=False, default=existing_author[2])
+                    ethnicity = prompt_choice("Ethnicity", choices=ethnicity_choices, required=True, default=existing_author[2])
                     sex = prompt_choice("Sex", choices=sex_choices, required=False, default=existing_author[3])
                     
                     cur.execute("""
@@ -196,7 +192,7 @@ def handle_manual_entry():
                 if name:
                     name = name.upper()
                 birth_year = prompt_input("Birth Year (YYYY)", required=False, type_func=int)
-                ethnicity = prompt_choice("Ethnicity", choices=ethnicity_choices, required=False)
+                ethnicity = prompt_choice("Ethnicity", choices=ethnicity_choices, required=True)
                 sex = prompt_choice("Sex", choices=sex_choices, required=False)
                 
                 cur.execute("""
@@ -271,7 +267,7 @@ def handle_s3_sync(s3_bucket, author_key, history_key):
     conn = get_db_connection()
     
     # We will use the region from the environment, defaulting to ap-southeast-5
-    aws_region = os.environ.get("AWS_REGION", "ap-southeast-5")
+    aws_region = AWS_REGION 
     s3_client = boto3.client("s3", region_name=aws_region)
     
     try:
@@ -297,12 +293,19 @@ def handle_s3_sync(s3_bucket, author_key, history_key):
                     df_author[col] = None
             
             author_upsert_count = 0
+            ethnicity_defaulted = 0
             for _, row in df_author.iterrows():
                 new_author_id = int(row["new_author_id"])
                 name = row["name"]
                 birth_year = None if pd.isna(row["birth_year"]) or row["birth_year"] == "" else int(row["birth_year"])
-                ethnicity = None if pd.isna(row["ethnicity"]) or row["ethnicity"] == "" else row["ethnicity"]
                 sex = None if pd.isna(row["sex"]) or row["sex"] == "" else row["sex"]
+                
+                # ethnicity is NOT NULL in the DB — default to 'others' if missing
+                if pd.isna(row["ethnicity"]) or row["ethnicity"] == "":
+                    ethnicity = "others"
+                    ethnicity_defaulted += 1
+                else:
+                    ethnicity = row["ethnicity"]
                 
                 cur.execute("""
                     INSERT INTO api_author (new_author_id, name, birth_year, ethnicity, sex)
@@ -314,6 +317,9 @@ def handle_s3_sync(s3_bucket, author_key, history_key):
                         sex = EXCLUDED.sex
                 """, (new_author_id, name, birth_year, ethnicity, sex))
                 author_upsert_count += 1
+            
+            if ethnicity_defaulted:
+                print(f"  ⚠ {ethnicity_defaulted} row(s) had null ethnicity — defaulted to 'others'.")
             print(f"Upserted {author_upsert_count} authors.")
 
             # 2. Sync Author Histories

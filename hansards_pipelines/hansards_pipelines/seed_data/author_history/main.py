@@ -16,6 +16,15 @@ Usage:
 import argparse
 import logging
 import sys
+import boto3
+
+import find_area_id_given_area_name as find_area_id_step
+import handle_duplicate_author_history as handle_duplicates_step
+import prepare_seed_author_history as prepare_seed_step
+import insert_to_db as insert_to_db_step
+from hansards_pipelines.settings import AWS_REGION, S3_DATAPROC_BUCKET, HANSARD_DB_URL
+
+
 
 logging.basicConfig(
     level=logging.INFO,
@@ -26,65 +35,57 @@ logger = logging.getLogger(__name__)
 
 def run_find_area_id(args):
     """Step 1: Resolve area_id and generate missing record_ids."""
-    import find_area_id_given_area_name as step
 
     logger.info("\n" + "=" * 60)
     logger.info("STEP 1 — find_area_id_given_area_name")
     logger.info("=" * 60)
-
-    from hansards_pipelines.settings import AWS_REGION
-    import boto3
 
     bucket = args.bucket
     if not bucket:
         logger.error("Error: S3_DATAPROC_BUCKET is not set.")
         sys.exit(1)
 
-    conn = step.get_db_connection()
+    conn = find_area_id_step.get_db_connection()
     try:
-        area_lookup = step.build_area_lookup(conn)
+        area_lookup = find_area_id_step.build_area_lookup(conn)
     finally:
         conn.close()
 
     s3_client = boto3.client("s3", region_name=AWS_REGION)
-    df = step.read_csv_from_s3(s3_client, bucket, step.INPUT_KEY)
-    df = step.resolve_area_ids(df, area_lookup)
-    df = step.generate_record_ids(df, start_id=3000)
-    df = step.enforce_column_order(df)
+    df = find_area_id_step.read_csv_from_s3(s3_client, bucket, find_area_id_step.INPUT_KEY)
+    df = find_area_id_step.resolve_area_ids(df, area_lookup)
+    df = find_area_id_step.generate_record_ids(df, start_id=3000)
+    df = find_area_id_step.enforce_column_order(df)
 
     if args.dry_run:
         logger.info("\n[DRY-RUN] Skipping S3 upload. Preview of first 5 rows:")
         logger.info(df.head().to_string(index=False))
     else:
-        step.upload_csv_to_s3(s3_client, df, bucket, step.OUTPUT_KEY)
+        find_area_id_step.upload_csv_to_s3(s3_client, df, bucket, find_area_id_step.OUTPUT_KEY)
 
     logger.info("Step 1 complete.\n")
 
 
 def run_handle_duplicates(args):
     """Step 2: Remove duplicate rows from the resolved CSV."""
-    import handle_duplicate_author_history as step
 
     logger.info("\n" + "=" * 60)
     logger.info("STEP 2 — handle_duplicate_author_history")
     logger.info("=" * 60)
 
-    import os
-    import boto3
-
-    bucket = args.bucket or os.getenv("S3_DATAPROC_BUCKET", "my.gov.parlimen.hsd-dataproc-bucket-dev")
-    aws_region = os.getenv("AWS_REGION", "ap-southeast-5")
+    bucket = args.bucket or S3_DATAPROC_BUCKET
+    aws_region = AWS_REGION 
     input_key = "canonical/preprocessing/author_history/resolved/author_history.csv"
     output_key = "canonical/preprocessing/master/author_history.csv"
 
     s3_client = boto3.client("s3", region_name=aws_region)
-    df = step.download_from_s3(s3_client, bucket, input_key)
-    df_deduped = step.remove_duplicates(df)
+    df = handle_duplicates_step.download_from_s3(s3_client, bucket, input_key)
+    df_deduped = handle_duplicates_step.remove_duplicates(df)
 
     if args.dry_run:
         logger.info(f"\n[DRY-RUN] Skipping S3 upload. Records after dedup: {len(df_deduped)}")
     else:
-        step.upload_to_s3(s3_client, df_deduped, bucket, output_key)
+        handle_duplicates_step.upload_to_s3(s3_client, df_deduped, bucket, output_key)
 
     logger.info(f"Records: {len(df)} → {len(df_deduped)} (removed {len(df) - len(df_deduped)})")
     logger.info("Step 2 complete.\n")
@@ -92,28 +93,24 @@ def run_handle_duplicates(args):
 
 def run_prepare_seed(args):
     """Step 3: Strip helper columns to produce the seed CSV."""
-    import prepare_seed_author_history as step
 
     logger.info("\n" + "=" * 60)
     logger.info("STEP 3 — prepare_seed_author_history")
     logger.info("=" * 60)
 
-    import os
-    import boto3
-
-    bucket = args.bucket or os.getenv("S3_DATAPROC_BUCKET", "my.gov.parlimen.hsd-dataproc-bucket-dev")
-    aws_region = os.getenv("AWS_REGION", "ap-southeast-5")
+    bucket = args.bucket or S3_DATAPROC_BUCKET
+    aws_region = AWS_REGION
     input_key = "canonical/preprocessing/master/author_history.csv"
     output_key = "canonical/seed/author_history.csv"
 
     s3_client = boto3.client("s3", region_name=aws_region)
-    df = step.download_from_s3(s3_client, bucket, input_key)
-    df_seed = step.prepare_seed_data(df)
+    df = prepare_seed_step.download_from_s3(s3_client, bucket, input_key)
+    df_seed = prepare_seed_step.prepare_seed_data(df)
 
     if args.dry_run:
         logger.info(f"\n[DRY-RUN] Skipping S3 upload. Seed rows: {len(df_seed)}, columns: {list(df_seed.columns)}")
     else:
-        step.upload_to_s3(s3_client, df_seed, bucket, output_key)
+        prepare_seed_step.upload_to_s3(s3_client, df_seed, bucket, output_key)
 
     logger.info(f"Columns: {len(df.columns)} → {len(df_seed.columns)}")
     logger.info("Step 3 complete.\n")
@@ -121,14 +118,10 @@ def run_prepare_seed(args):
 
 def run_insert_to_db(args):
     """Step 4: Insert seed CSV rows into api_author_history."""
-    import insert_to_db as step
 
     logger.info("\n" + "=" * 60)
     logger.info("STEP 4 — insert_to_db")
     logger.info("=" * 60)
-
-    from hansards_pipelines.settings import AWS_REGION
-    import boto3
 
     bucket = args.bucket
     if not bucket:
@@ -136,14 +129,13 @@ def run_insert_to_db(args):
         sys.exit(1)
 
     s3_client = boto3.client("s3", region_name=AWS_REGION)
-    df = step.read_csv_from_s3(s3_client, bucket, step.INPUT_KEY)
-    step.insert_author_history(df, dry_run=args.dry_run)
+    df = insert_to_db_step.read_csv_from_s3(s3_client, bucket, insert_to_db_step.INPUT_KEY)
+    insert_to_db_step.insert_author_history(df, dry_run=args.dry_run)
 
     logger.info("Step 4 complete.\n")
 
 
 def main():
-    from hansards_pipelines.settings import S3_DATAPROC_BUCKET
 
     parser = argparse.ArgumentParser(
         description="Run the full author_history pipeline (steps 1-4)."
