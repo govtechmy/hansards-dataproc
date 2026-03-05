@@ -18,10 +18,10 @@ import logging
 import sys
 import boto3
 
-import find_area_id_given_area_name as find_area_id_step
-import handle_duplicate_author_history as handle_duplicates_step
-import prepare_seed_author_history as prepare_seed_step
-import insert_to_db as insert_to_db_step
+from hansards_pipelines.seed_data.author_history.find_area_id_given_area_name as find_area_id_step
+import hansards_pipelines.seed_data.author_history.handle_duplicate_author_history as handle_duplicates_step
+import hansards_pipelines.seed_data.author_history.prepare_seed_author_history as prepare_seed_step
+import hansards_pipelines.seed_data.author_history.insert_to_db as insert_to_db_step
 from hansards_pipelines.settings import AWS_REGION, S3_DATAPROC_BUCKET, HANSARD_DB_URL
 
 
@@ -74,6 +74,10 @@ def run_handle_duplicates(args):
     logger.info("=" * 60)
 
     bucket = args.bucket or S3_DATAPROC_BUCKET
+    if not bucket:
+        logger.error("Error: S3_DATAPROC_BUCKET is not set.")
+        sys.exit(1)
+
     aws_region = AWS_REGION 
     input_key = "canonical/preprocessing/author_history/resolved/author_history.csv"
     output_key = "canonical/preprocessing/master/author_history.csv"
@@ -99,6 +103,10 @@ def run_prepare_seed(args):
     logger.info("=" * 60)
 
     bucket = args.bucket or S3_DATAPROC_BUCKET
+    if not bucket:
+        logger.error("Error: S3_DATAPROC_BUCKET is not set.")
+        sys.exit(1)
+
     aws_region = AWS_REGION
     input_key = "canonical/preprocessing/master/author_history.csv"
     output_key = "canonical/seed/author_history.csv"
