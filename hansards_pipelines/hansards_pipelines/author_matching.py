@@ -367,18 +367,24 @@ def _is_temporally_valid(author_id, speech_dates, author_hist_df):
 
 
 def match_by_name(speech_df, author_df, author_hist_df=None, column_name="name", threshold=70):
-    """
-    Match speech records to authors by name with temporal validation"""
+    """Match speech records to authors by name with temporal validation"""
+
     matches = {}
 
+    # Build candidate list ONCE
+    clean_author_names = [
+        n for n in author_df["name_up"].unique() if n and not pd.isna(n)
+    ]
+
     for name in speech_df[column_name].dropna().unique():
-        # Get speech dates for this name
+
         name_speeches = speech_df[speech_df[column_name] == name]
-        speech_dates = name_speeches["date"].dropna() if "date" in name_speeches.columns else pd.Series()
-        
-        # Get multiple candidate matches
-        # Filter out None/NaN values from author names
-        clean_author_names = [n for n in author_df["name_up"].unique() if n and not pd.isna(n)]
+        speech_dates = (
+            name_speeches["date"].dropna()
+            if "date" in name_speeches.columns
+            else pd.Series()
+        )
+
         match_results = enhanced_match_names(
             name, clean_author_names, threshold=threshold, limit=5
         )
