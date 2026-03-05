@@ -311,6 +311,15 @@ def enhanced_match_names(
     
     # Re-sort by adjusted score
     adjusted_matches.sort(key=lambda x: x[1], reverse=True)
+
+    # Detect ambiguous matches (top candidates too similar)
+    if len(adjusted_matches) >= 2:
+        top_score = adjusted_matches[0][1]
+        second_score = adjusted_matches[1][1]
+
+        # Check if top 2 matches are very close in score, if so, consider it ambiguous and return empty to avoid incorrect matches
+        if top_score - second_score < 3:
+            return []
     
     # Filter by threshold
     valid_matches = [(match, score) for match, score in adjusted_matches if score >= threshold]
