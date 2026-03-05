@@ -2,6 +2,7 @@ import re
 import pandas as pd
 from thefuzz import fuzz, process
 import json
+import ast
 
 
 def normalize_malaysian_name(name, remove_titles=True, standardize_spacing=True):
@@ -657,9 +658,7 @@ def match_position_to_author(author_hist_df):
             # Handle different data formats (string, list, etc.)
             if isinstance(exec_posts, str):
                 try:
-                    exec_posts = eval(
-                        exec_posts
-                    )  # If stored as string representation of list
+                    exec_posts = ast.literal_eval(exec_posts) # If stored as string representation of list
                 except:
                     exec_posts = [exec_posts]  # Single string
             elif not isinstance(exec_posts, list):
@@ -689,7 +688,8 @@ def match_position_to_author(author_hist_df):
             # Handle different data formats
             if isinstance(service_posts, str):
                 try:
-                    service_posts = eval(service_posts)
+                    service_posts = ast.literal_eval(service_posts)
+
                 except:
                     service_posts = [service_posts]
             elif not isinstance(service_posts, list):
