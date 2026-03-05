@@ -2,6 +2,7 @@ import re
 import pandas as pd
 from thefuzz import fuzz, process
 import json
+import ast
 
 
 def normalize_malaysian_name(name, remove_titles=True, standardize_spacing=True):
@@ -208,6 +209,49 @@ def normalize_malaysian_name(name, remove_titles=True, standardize_spacing=True)
     return normalized_name
 
 
+def calculate_name_specificity_score(input_name, candidate_name):
+    """
+    Calculate a specificity score to prefer more complete name matches.
+    Helps distinguish cases like "Abdul Razak" vs "Najib bin Abdul Razak".
+    
+    Returns an integer adjustment score (bonus or penalty), typically in the
+    range -10 to +5, to add to the fuzzy match score.
+    """
+    # Handle None or NaN values
+    if not input_name or pd.isna(input_name) or not candidate_name or pd.isna(candidate_name):
+        return 0
+    
+    # Ensure strings
+    input_name = str(input_name)
+    candidate_name = str(candidate_name)
+    
+    input_parts = set(input_name.upper().split())
+    candidate_parts = set(candidate_name.upper().split())
+    
+    # If all input parts are in candidate but candidate has more, it's less specific
+    if input_parts.issubset(candidate_parts):
+        extra_parts = len(candidate_parts - input_parts)
+        if extra_parts > 0:
+            # Penalize matches where the candidate has many extra words
+            # This helps prevent "Abdul Razak" matching "Najib bin Abdul Razak"
+            return -5 * min(extra_parts, 2)
+    
+    # If candidate parts are subset of input, give bonus
+    if candidate_parts.issubset(input_parts):
+        return 5
+    
+    # Calculate overlap ratio
+    overlap = len(input_parts & candidate_parts)
+    max_parts = max(len(input_parts), len(candidate_parts))
+    if max_parts > 0:
+        overlap_ratio = overlap / max_parts
+        # Prefer matches with higher overlap
+        if overlap_ratio > 0.8:
+            return 3
+    
+    return 0
+
+
 def preprocess_names_for_matching(df, name_column, output_column=None):
     """
     Preprocess a column of names in a dataframe for better matching
@@ -241,46 +285,144 @@ def preprocess_names_for_matching(df, name_column, output_column=None):
 
 
 def enhanced_match_names(
-    name, clean_names_list, scorer=fuzz.token_set_ratio, threshold=70
+    name, clean_names_list, scorer=fuzz.token_set_ratio, threshold=70, limit=5
 ):
     """
-    Function to match a name to a list of names with enhanced scoring
-    Returns the matched name and score if above threshold, otherwise None
+    Function to match a name to a list of names with enhanced scoring.
+    Returns all matches above threshold for better disambiguation.
     """
     # Skip empty strings
     if not name or pd.isna(name) or name.strip() == "":
-        return None, None
+        return []
 
-    match, score = process.extractOne(name, clean_names_list, scorer=scorer)
+    # Get all matches
+    matches = process.extract(name, clean_names_list, scorer=scorer, limit=limit)
+    
+    # Adjust scores based on name specificity to better handle father/son cases
+    adjusted_matches = []
+    for match, score in matches:
+        # Skip None or empty matches
+        if not match or pd.isna(match):
+            continue
+        # Add specificity adjustment
+        specificity_bonus = calculate_name_specificity_score(name, match)
+        adjusted_score = min(100, max(0, score + specificity_bonus))
+        adjusted_matches.append((match, adjusted_score))
+    
+    # Re-sort by adjusted score
+    adjusted_matches.sort(key=lambda x: x[1], reverse=True)
 
-    if score < threshold:
+    # Detect ambiguous matches (top candidates too similar)
+    if len(adjusted_matches) >= 2:
+        top_score = adjusted_matches[0][1]
+        second_score = adjusted_matches[1][1]
+
+        # Check if top 2 matches are very close in score, if so, consider it ambiguous and return empty to avoid incorrect matches
+        if top_score - second_score < 3:
+            return []
+    
+    # Filter by threshold
+    valid_matches = [(match, score) for match, score in adjusted_matches if score >= threshold]
+    
+    if not valid_matches:
         # Log unmatched names for review
-        with open("unmatched_names.json", "a+") as f:
-            json.dump(
-                {"name": name, "matched_with": match, "score": score}, f, indent=4
-            )
-        return None, None
-    else:
-        return match, score
+        best_match = matches[0] if matches else None
+        if best_match:
+            with open("unmatched_names.json", "a+", encoding="utf-8") as f:
+                # Ensure we maintain a valid JSON array of unmatched names
+                f.seek(0)
+                try:
+                    existing_data = json.load(f)
+                    if not isinstance(existing_data, list):
+                        existing_data = [existing_data]
+                except json.JSONDecodeError:
+                    existing_data = []
+                existing_data.append(
+                    {"name": name, "matched_with": best_match[0], "score": best_match[1]}
+                )
+                f.seek(0)
+                f.truncate()
+                json.dump(existing_data, f, indent=4)
+        return []
+    
+    return valid_matches
 
 
-def match_by_name(speech_df, author_df, column_name, threshold=70):
-    """Match speech records to authors by name"""
+def _is_temporally_valid(author_id, speech_dates, author_hist_df):
+    """Check if any speech date falls within author's active period"""
+    author_history = author_hist_df[author_hist_df["new_author_id"] == author_id]
+    if author_history.empty:
+        return False
+    
+    for speech_date in speech_dates:
+        # Check if speech_date falls within any history record's date range
+        for _, hist_row in author_history.iterrows():
+            start_date, end_date = hist_row["start_date"], hist_row["end_date"]
+            if pd.notna(start_date):
+                if pd.isna(end_date) and speech_date >= start_date:
+                    return True
+                elif pd.notna(end_date) and start_date <= speech_date <= end_date:
+                    return True
+    return False
+
+
+def match_by_name(speech_df, author_df, author_hist_df=None, column_name="name", threshold=70):
+    """Match speech records to authors by name with temporal validation"""
+
     matches = {}
 
+    # Build candidate list ONCE
+    clean_author_names = [
+        n for n in author_df["name_up"].unique() if n and not pd.isna(n)
+    ]
+
     for name in speech_df[column_name].dropna().unique():
-        result = enhanced_match_names(
-            name, author_df["name_up"].unique(), threshold=threshold
+
+        name_speeches = speech_df[speech_df[column_name] == name]
+        speech_dates = (
+            name_speeches["date"].dropna()
+            if "date" in name_speeches.columns
+            else pd.Series()
         )
-        if result[0] is not None:
-            match, score = result
-            matched_author = author_df[author_df["name_up"] == match]
-            if not matched_author.empty:
-                matches[name] = matched_author.iloc[0]["new_author_id"]
-            else:
-                matches[name] = None
-        else:
+
+        match_results = enhanced_match_names(
+            name, clean_author_names, threshold=threshold, limit=5
+        )
+        
+        if not match_results:
             matches[name] = None
+            continue
+            
+        # Collect all potential author matches with their scores
+        candidate_authors = [
+            (author["new_author_id"], score, matched_name)
+            for matched_name, score in match_results
+            for _, author in author_df[author_df["name_up"] == matched_name].iterrows()
+        ]
+        
+        if not candidate_authors:
+            matches[name] = None
+            continue
+        
+        # Apply temporal validation if we have date data
+        if author_hist_df is not None and not speech_dates.empty:
+            valid_temporal_matches = [
+                (author_id, score, matched_name)
+                for author_id, score, matched_name in candidate_authors
+                if _is_temporally_valid(author_id, speech_dates, author_hist_df)
+            ]
+            # If temporal validation is applicable but no valid matches found, leave blank
+            if not valid_temporal_matches:
+                matches[name] = None
+                continue
+            candidates_to_use = valid_temporal_matches
+        else:
+            # No temporal validation possible, use all candidates
+            candidates_to_use = candidate_authors
+        
+        # Select best match by score
+        best_match = max(candidates_to_use, key=lambda x: x[1])[0]
+        matches[name] = best_match
 
     return matches
 
@@ -298,11 +440,14 @@ def match_by_constituency(speech_df, author_hist_df, column_name, threshold=70):
             constituency_matches[constituency] = None
             continue
 
-        result = enhanced_match_names(
-            constituency, author_hist_df["area_up"].unique(), threshold=threshold
+        # Filter out None/NaN values from constituency areas
+        clean_areas = [a for a in author_hist_df["area_up"].unique() if a and not pd.isna(a)]
+        match_results = enhanced_match_names(
+            constituency, clean_areas, threshold=threshold, limit=3
         )
-        if result[0] is not None:
-            match, score = result
+        if match_results:
+            # Take the best match
+            match, score = match_results[0]
             matched_records = author_hist_df[author_hist_df["area_up"] == match]
             if not matched_records.empty:
                 # Get the most recent record if multiple matches (MPs may change over time)
@@ -528,9 +673,7 @@ def match_position_to_author(author_hist_df):
             # Handle different data formats (string, list, etc.)
             if isinstance(exec_posts, str):
                 try:
-                    exec_posts = eval(
-                        exec_posts
-                    )  # If stored as string representation of list
+                    exec_posts = ast.literal_eval(exec_posts) # If stored as string representation of list
                 except:
                     exec_posts = [exec_posts]  # Single string
             elif not isinstance(exec_posts, list):
@@ -560,7 +703,8 @@ def match_position_to_author(author_hist_df):
             # Handle different data formats
             if isinstance(service_posts, str):
                 try:
-                    service_posts = eval(service_posts)
+                    service_posts = ast.literal_eval(service_posts)
+
                 except:
                     service_posts = [service_posts]
             elif not isinstance(service_posts, list):
@@ -754,12 +898,12 @@ def perform_author_matching(speech_df, author_df, author_hist_df, context):
     author_hist_df["end_date"] = pd.to_datetime(author_hist_df["end_date"])
 
     # Perform matching
-    # 1. Get matches by name
+    # 1. Get matches by name with temporal validation
     name_matches_a = match_by_name(
-        df_speech_only, author_df, "author_a_up", threshold=70
+        df_speech_only, author_df, author_hist_df, "author_a_up", threshold=70
     )
     name_matches_b = match_by_name(
-        df_speech_only, author_df, "author_b_up", threshold=70
+        df_speech_only, author_df, author_hist_df, "author_b_up", threshold=70
     )
 
     # 2. Get matches by constituency
