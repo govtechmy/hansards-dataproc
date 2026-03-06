@@ -5,12 +5,10 @@ Removes duplicate rows based on: author_name + party + area_id + start_date + en
 import os
 import logging
 import boto3
-from dotenv import load_dotenv
 from io import StringIO
 import pandas as pd
 from hansards_pipelines import settings
 
-load_dotenv()
 logger = logging.getLogger(__name__)
 
 
@@ -64,6 +62,14 @@ def remove_duplicates(df):
 
     logger.info(f" Using duplicate detection columns: {existing_columns}")
 
+    # Identify duplicate rows
+    duplicates = df[df.duplicated(subset=existing_columns, keep=False)]
+
+    if not duplicates.empty:
+        logger.info("\nDuplicate rows detected:")
+        logger.info("Showing first 20 duplicate rows:")
+        logger.info(duplicates.head(20).to_string(index=False))
+
     # Remove duplicates - keep first occurrence
     df_deduped = df.drop_duplicates(subset=existing_columns, keep='first')
     
@@ -72,9 +78,6 @@ def remove_duplicates(df):
 
     logger.info(f" Final records: {final_count}")
     logger.info(f" Removed {removed_count} duplicate rows")
-
-    if removed_count > 0:
-        logger.info(f" Duplicate removal rate: {(removed_count/initial_count)*100:.2f}%")
 
     return df_deduped
 
@@ -108,9 +111,9 @@ def upload_to_s3(s3_client, df, bucket, key):
 def main():
     # Configuration
     bucket = settings.S3_DATAPROC_BUCKET
-    aws_region = os.getenv('AWS_REGION', 'ap-southeast-5')
+    aws_region = settings.AWS_REGION or 'ap-southeast-5'
     input_key = 'canonical/preprocessing/author_history/resolved/author_history.csv'
-    output_key = 'canonical/preprocessing/master/author_history.csv'
+    output_key = 'canonical/master/author_history.csv'
     logger.info("AUTHOR HISTORY DUPLICATE REMOVER")
     
     # Initialize S3 client

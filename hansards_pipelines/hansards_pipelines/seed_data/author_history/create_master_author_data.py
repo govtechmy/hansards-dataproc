@@ -10,18 +10,16 @@ import pandas as pd
 from pathlib import Path
 import psycopg2
 from psycopg2.extras import RealDictCursor
-from dotenv import load_dotenv
 from hansards_pipelines import settings
 from hansards_pipelines.utils.date_utils import normalize_date
 
-load_dotenv()
 logger = logging.getLogger(__name__)
 
 
 def get_db_connection():
-    """Get PostgreSQL database connection using HANSARD_DB_URL from .env."""
+    """Get PostgreSQL database connection using HANSARD_DB_URL from settings."""
     try:
-        db_url = os.getenv("HANSARD_DB_URL")
+        db_url = settings.HANSARD_DB_URL
         if not db_url:
             logger.warning("HANSARD_DB_URL not found in environment variables")
             return None
@@ -352,8 +350,8 @@ def main():
     # Upload to S3
     logger.info("Uploading to S3...")
     s3_bucket = settings.S3_DATAPROC_BUCKET
-    aws_region = os.getenv("AWS_REGION", "ap-southeast-5")
-    s3_key = "canonical/preprocessing/master/author_history.csv"
+    aws_region = settings.AWS_REGION or "ap-southeast-5"
+    s3_key = "canonical/master/author_history.csv"
     
     if not s3_bucket:
         logger.error("Environment variable S3_DATAPROC_BUCKET is not set; skipping S3 upload.")
