@@ -129,6 +129,10 @@ def insert_author_history(df: pd.DataFrame, dry_run: bool = False) -> None:
     skipped_no_start_date = 0
     attempted = 0
 
+    skipped_rows_missing_record_id = []
+    skipped_rows_missing_author_id = []
+    skipped_rows_missing_start_date = []
+
     rows_to_insert = []
     for _, row in df.iterrows():
         record_id  = None if pd.isna(row.get("record_id"))  else row["record_id"]
@@ -138,12 +142,15 @@ def insert_author_history(df: pd.DataFrame, dry_run: bool = False) -> None:
 
         if record_id is None:
             skipped_no_record_id += 1
+            skipped_rows_missing_record_id.append(row.to_dict())
             continue
         if author_id is None:
             skipped_no_author_id += 1
+            skipped_rows_missing_author_id.append(row.to_dict())
             continue
         if start_date is None:
             skipped_no_start_date += 1
+            skipped_rows_missing_start_date.append(row.to_dict())
             continue
 
         rows_to_insert.append(coerce_row(row))
@@ -152,10 +159,22 @@ def insert_author_history(df: pd.DataFrame, dry_run: bool = False) -> None:
     print(f"\n  Rows to attempt  : {attempted}")
     if skipped_no_record_id:
         print(f"  Skipped (no record_id) : {skipped_no_record_id}")
+        skipped_df = pd.DataFrame(skipped_rows_missing_record_id)
+        print("\n  Sample of rows missing (record_id):")
+        print(skipped_df.head(10).to_string(index=False))
+
     if skipped_no_author_id:
         print(f"  Skipped (no author_id) : {skipped_no_author_id}")
+        skipped_df = pd.DataFrame(skipped_rows_missing_author_id)
+        print("\n  Sample of rows missing (author_id):")
+        print(skipped_df.head(10).to_string(index=False))
+
     if skipped_no_start_date:
         print(f"  Skipped (no start_date) : {skipped_no_start_date}")
+        skipped_df = pd.DataFrame(skipped_rows_missing_start_date)
+        print("\n  Sample of rows missing (start_date):")
+        print(skipped_df.head(10).to_string(index=False))
+
 
     if dry_run:
         print("\n  [DRY-RUN] No changes written to the database.")
@@ -182,7 +201,7 @@ def insert_author_history(df: pd.DataFrame, dry_run: bool = False) -> None:
         conflicts = attempted - (inserted if inserted >= 0 else 0)
         print(f"\n  Inserted : {inserted if inserted >= 0 else 'unknown'}")
         if inserted >= 0:
-            print(f"  Skipped (conflict) : {conflicts}")
+            print(f"  Safely skipped. Already existed record_id : {conflicts}")
         print("  Committed successfully.")
     except Exception as exc:
         conn.rollback()
