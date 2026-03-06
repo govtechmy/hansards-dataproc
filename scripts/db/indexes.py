@@ -17,6 +17,7 @@ QUERIES = [
 
     # api_author
     "CREATE UNIQUE INDEX IF NOT EXISTS api_author_pkey ON api_author(new_author_id)",
+    "CREATE INDEX IF NOT EXISTS idx_api_author_name ON api_author(name)",
 
     # api_author_history
     "CREATE UNIQUE INDEX IF NOT EXISTS author_history_pkey ON api_author_history(record_id)",
