@@ -2,7 +2,7 @@
 Resolve area_id for each row in author_history.csv by looking up area_name in api_area.
 Also generates record_id for any rows missing it, starting from 3000.
 
-Input  : s3://<S3_DATAPROC_BUCKET>/canonical/preprocessing/master/author_history.csv
+Input  : s3://<S3_DATAPROC_BUCKET>/canonical/master/author_history.csv
           Columns: record_id, author_id, author_name, party, area_id, area_name,
                    area_state, exec_posts, service_posts, start_date, end_date
 
@@ -28,7 +28,7 @@ from hansards_pipelines.settings import HANSARD_DB_URL, S3_DATAPROC_BUCKET, AWS_
 # --------------------------------------------------------------------------- #
 # S3 paths
 # --------------------------------------------------------------------------- #
-INPUT_KEY  = "canonical/preprocessing/master/author_history.csv"
+INPUT_KEY  = "canonical/master/author_history.csv"
 OUTPUT_KEY = "canonical/preprocessing/author_history/resolved/author_history.csv"
 
 # Expected columns (in output order)

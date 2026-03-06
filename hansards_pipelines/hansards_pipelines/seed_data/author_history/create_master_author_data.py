@@ -351,7 +351,7 @@ def main():
     logger.info("Uploading to S3...")
     s3_bucket = settings.S3_DATAPROC_BUCKET
     aws_region = settings.AWS_REGION or "ap-southeast-5"
-    s3_key = "canonical/preprocessing/master/author_history.csv"
+    s3_key = "canonical/master/author_history.csv"
     
     if not s3_bucket:
         logger.error("Environment variable S3_DATAPROC_BUCKET is not set; skipping S3 upload.")

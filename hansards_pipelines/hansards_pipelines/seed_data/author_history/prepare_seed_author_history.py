@@ -115,7 +115,7 @@ def main():
     # Configuration
     bucket = settings.S3_DATAPROC_BUCKET
     aws_region = settings.AWS_REGION or 'ap-southeast-5'
-    input_key = 'canonical/preprocessing/master/author_history.csv'
+    input_key = 'canonical/master/author_history.csv'
     output_key = 'canonical/seed/author_history.csv'
     
     logger.info("PREPARE SEED AUTHOR HISTORY")
