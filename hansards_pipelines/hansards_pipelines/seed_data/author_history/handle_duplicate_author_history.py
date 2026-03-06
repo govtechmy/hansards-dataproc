@@ -62,6 +62,14 @@ def remove_duplicates(df):
 
     logger.info(f" Using duplicate detection columns: {existing_columns}")
 
+    # Identify duplicate rows
+    duplicates = df[df.duplicated(subset=existing_columns, keep=False)]
+
+    if not duplicates.empty:
+        logger.info("\nDuplicate rows detected:")
+        logger.info("Showing first 20 duplicate rows:")
+        logger.info(duplicates.head(20).to_string(index=False))
+
     # Remove duplicates - keep first occurrence
     df_deduped = df.drop_duplicates(subset=existing_columns, keep='first')
     
@@ -70,9 +78,6 @@ def remove_duplicates(df):
 
     logger.info(f" Final records: {final_count}")
     logger.info(f" Removed {removed_count} duplicate rows")
-
-    if removed_count > 0:
-        logger.info(f" Duplicate removal rate: {(removed_count/initial_count)*100:.2f}%")
 
     return df_deduped
 
