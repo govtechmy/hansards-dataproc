@@ -18,7 +18,7 @@ import logging
 import sys
 import boto3
 
-from hansards_pipelines.seed_data.author_history.find_area_id_given_area_name as find_area_id_step
+import hansards_pipelines.seed_data.author_history.find_area_id_given_area_name as find_area_id_step
 import hansards_pipelines.seed_data.author_history.handle_duplicate_author_history as handle_duplicates_step
 import hansards_pipelines.seed_data.author_history.prepare_seed_author_history as prepare_seed_step
 import hansards_pipelines.seed_data.author_history.insert_to_db as insert_to_db_step

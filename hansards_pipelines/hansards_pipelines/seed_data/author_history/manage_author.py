@@ -266,7 +266,7 @@ def handle_s3_sync(s3_bucket, author_key, history_key):
     print("=== S3 Author Sync ===")
     conn = get_db_connection()
     
-    # We will use the region from the environment, defaulting to ap-southeast-5
+    # We will use the region from the environment
     aws_region = AWS_REGION 
     s3_client = boto3.client("s3", region_name=aws_region)
     
@@ -341,7 +341,7 @@ def handle_s3_sync(s3_bucket, author_key, history_key):
 
                 history_upsert_count = 0
                 for _, row in df_history.iterrows():
-                    record_id_col = "record_id" if "record_id" in row else "history_id"
+                    record_id_col = "record_id" if "record_id" in df_history.columns else "history_id"
                     record_id = int(row[record_id_col])
                     author_id = int(row["author_id"]) if not pd.isna(row["author_id"]) else None
                     if not author_id:
@@ -471,7 +471,7 @@ def handle_local_csv():
 
                     history_upsert_count = 0
                     for _, row in df_history.iterrows():
-                        record_id_col = "record_id" if "record_id" in row else "history_id"
+                        record_id_col = "record_id" if "record_id" in row.index else "history_id"
                         record_id = int(row[record_id_col])
                         author_id = int(row["author_id"]) if not pd.isna(row["author_id"]) else None
                         if not author_id:
