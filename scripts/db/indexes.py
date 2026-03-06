@@ -21,13 +21,18 @@ QUERIES = [
 
     # api_author_history
     "CREATE UNIQUE INDEX IF NOT EXISTS author_history_pkey ON api_author_history(record_id)",
+    "CREATE INDEX IF NOT EXISTS idx_author_history_author ON api_author_history(author_id)",
+    "CREATE INDEX IF NOT EXISTS idx_author_history_author_dates ON api_author_history(author_id, start_date, end_date)",
 
     # api_parliamentary_cycle
     "CREATE UNIQUE INDEX IF NOT EXISTS parliamentary_cycle_pkey ON api_parliamentary_cycle(cycle_id)",
+    "CREATE INDEX IF NOT EXISTS idx_cycle_house ON api_parliamentary_cycle(house)",
 
     # api_sitting
     "CREATE UNIQUE INDEX IF NOT EXISTS sitting_filename_fec75e75_uniq ON api_sitting(filename)",
     "CREATE UNIQUE INDEX IF NOT EXISTS sitting_pkey ON api_sitting(sitting_id)",
+    "CREATE INDEX IF NOT EXISTS idx_sitting_date ON api_sitting(date)",
+    "CREATE INDEX IF NOT EXISTS idx_sitting_cycle_date ON api_sitting(cycle_id, date)",
 
     # api_speech
     "CREATE INDEX IF NOT EXISTS api_speech_sitting_id_4dc75622 ON api_speech(sitting_id)",
@@ -35,6 +40,7 @@ QUERIES = [
     "CREATE INDEX IF NOT EXISTS api_speech_speaker_id_8b151e1f ON api_speech(speaker_id)",
     "CREATE INDEX IF NOT EXISTS api_speech_speech__c0087e_gin ON api_speech USING gin(speech_vector)",
     "CREATE UNIQUE INDEX IF NOT EXISTS speech_pkey ON api_speech(speech_id)",
+    "CREATE INDEX IF NOT EXISTS idx_speech_sitting_id_speaker_id ON api_speech(sitting_id, speaker_id)",
 ]
 
 
