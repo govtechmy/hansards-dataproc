@@ -78,11 +78,10 @@ def run_handle_duplicates(args):
         logger.error("Error: S3_DATAPROC_BUCKET is not set.")
         sys.exit(1)
 
-    aws_region = AWS_REGION 
     input_key = "canonical/preprocessing/author_history/resolved/author_history.csv"
     output_key = "canonical/preprocessing/master/author_history.csv"
 
-    s3_client = boto3.client("s3", region_name=aws_region)
+    s3_client = boto3.client("s3", region_name=AWS_REGION)
     df = download_from_s3(s3_client, bucket, input_key)
     df_deduped = remove_duplicates(df)
 
@@ -107,11 +106,10 @@ def run_prepare_seed(args):
         logger.error("Error: S3_DATAPROC_BUCKET is not set.")
         sys.exit(1)
 
-    aws_region = AWS_REGION
     input_key = "canonical/preprocessing/master/author_history.csv"
     output_key = "canonical/seed/author_history.csv"
 
-    s3_client = boto3.client("s3", region_name=aws_region)
+    s3_client = boto3.client("s3", region_name=AWS_REGION)
     df = download_from_s3(s3_client, bucket, input_key)
     df_seed = prepare_seed_data(df)
 
