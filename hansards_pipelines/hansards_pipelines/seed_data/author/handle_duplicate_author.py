@@ -170,7 +170,12 @@ def save_output(df, output_dir):
     # Ensure output directory exists
     os.makedirs(output_dir, exist_ok=True)
     
-    output_path = os.path.join(output_dir, 'author_deduplicated.csv')
+    # Remove full_name column if it exists (DB doesn't have it)
+    if 'full_name' in df.columns:
+        df = df.drop(columns=['full_name'])
+        logger.info("Removed 'full_name' column (not in database schema)")
+    
+    output_path = os.path.join(output_dir, 'author.csv')
     
     # Save to CSV
     df.to_csv(output_path, index=False)
