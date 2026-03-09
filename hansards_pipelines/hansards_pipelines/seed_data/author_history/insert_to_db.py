@@ -6,8 +6,10 @@ Input : s3://<S3_DATAPROC_BUCKET>/canonical/seed/author_history.csv
                  exec_posts, service_posts, start_date, end_date
 
 Behaviour:
-    ON CONFLICT (record_id) DO NOTHING
-    i.e. rows whose record_id already exists in the table are silently skipped.
+    UPSERT behaviour using ON CONFLICT (record_id) DO UPDATE.
+
+    - If record_id does not exist -> row is inserted
+    - If record_id already exists -> row is updated with the new values
 
 Usage:
     python insert_to_db.py
@@ -116,8 +118,11 @@ def coerce_row(row: pd.Series) -> tuple:
 
 def insert_author_history(df: pd.DataFrame, dry_run: bool = False) -> None:
     """
-    Insert rows from df into api_author_history.
-    ON CONFLICT (record_id) DO NOTHING — skips any row whose record_id already exists.
+    Insert rows from df into api_author_history using UPSERT.
+
+    ON CONFLICT (record_id) DO UPDATE:
+        - Inserts new rows
+        - Updates existing rows with values from the seed CSV
     """
     # Ensure optional columns exist so coerce_row won't KeyError
     for col in DB_COLUMNS:
@@ -189,28 +194,34 @@ def insert_author_history(df: pd.DataFrame, dry_run: bool = False) -> None:
             (record_id, author_id, party, area_id, exec_posts, service_posts, start_date, end_date)
         VALUES
             (%s, %s, %s, %s, %s, %s, %s, %s)
-        ON CONFLICT (record_id) DO NOTHING
+        ON CONFLICT (record_id)
+        DO UPDATE SET
+            author_id = EXCLUDED.author_id,
+            party = EXCLUDED.party,
+            area_id = EXCLUDED.area_id,
+            exec_posts = EXCLUDED.exec_posts,
+            service_posts = EXCLUDED.service_posts,
+            start_date = EXCLUDED.start_date,
+            end_date = EXCLUDED.end_date
     """
 
     conn = get_db_connection()
     try:
         with conn.cursor() as cur:
             cur.executemany(INSERT_SQL, rows_to_insert)
-            inserted = cur.rowcount  # rows actually inserted (conflicts excluded)
+
         conn.commit()
-        conflicts = attempted - (inserted if inserted >= 0 else 0)
-        print(f"\n  Inserted : {inserted if inserted >= 0 else 'unknown'}")
-        if inserted >= 0:
-            print(f"  Safely skipped. Already existed record_id : {conflicts}")
-        print("  Committed successfully.")
+
+        print(f"\n  Rows upserted : {attempted}")
+        print("  Upsert completed successfully.")
+
     except Exception as exc:
         conn.rollback()
         print(f"\nError during insert — rolled back: {exc}")
         sys.exit(1)
+
     finally:
         conn.close()
-
-
 # --------------------------------------------------------------------------- #
 # Entry point
 # --------------------------------------------------------------------------- #
