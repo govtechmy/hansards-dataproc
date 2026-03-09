@@ -42,7 +42,7 @@ def load_db_data(db_url):
         raise
 
 
-def check_csv_duplicates(df, source_name="CSV"):
+def check_duplicates(df, source_name="CSV"):
     """Check for duplicates within a dataframe"""
     logger.info(f"CHECKING {source_name} DUPLICATES")
     
@@ -50,12 +50,16 @@ def check_csv_duplicates(df, source_name="CSV"):
         logger.error(f"Missing 'name' column in {source_name}")
         return
     
-    # Create normalized name for comparison
-    df['_normalized_name'] = df['name'].str.lower().str.strip()
+    # Create normalized name as a local Series (don't mutate input DataFrame)
+    normalized_names = df['name'].str.lower().str.strip()
+    
+    # Create a temporary DataFrame with normalized names for duplicate detection
+    temp_df = df.copy()
+    temp_df['_normalized_name'] = normalized_names
     
     # Find duplicates
-    duplicates_mask = df.duplicated(subset=['_normalized_name'], keep=False)
-    duplicates = df[duplicates_mask].sort_values('_normalized_name')
+    duplicates_mask = temp_df.duplicated(subset=['_normalized_name'], keep=False)
+    duplicates = temp_df[duplicates_mask].sort_values('_normalized_name')
     
     if duplicates.empty:
         logger.info(f"✓ No duplicates found in {source_name}")
@@ -71,9 +75,6 @@ def check_csv_duplicates(df, source_name="CSV"):
             for idx, row in instances.iterrows():
                 logger.info(f" - ID: {row.get('new_author_id', 'N/A')}, Name: {row['name']}")
     
-    # Clean up temporary column
-    df.drop(columns=['_normalized_name'], inplace=True)
-    
     return duplicates
 
 
@@ -85,13 +86,13 @@ def check_cross_duplicates(csv_df, db_df):
         logger.info("Skipping cross-check (no database data)")
         return
     
-    # Normalize names for comparison
-    csv_df['_normalized_name'] = csv_df['name'].str.lower().str.strip()
-    db_df['_normalized_name'] = db_df['name'].str.lower().str.strip()
+    # Create normalized names as local Series (don't mutate input DataFrames)
+    csv_normalized = csv_df['name'].str.lower().str.strip()
+    db_normalized = db_df['name'].str.lower().str.strip()
     
     # Find overlaps
-    csv_names = set(csv_df['_normalized_name'])
-    db_names = set(db_df['_normalized_name'])
+    csv_names = set(csv_normalized)
+    db_names = set(db_normalized)
     
     overlapping_names = csv_names.intersection(db_names)
     
@@ -103,17 +104,14 @@ def check_cross_duplicates(csv_df, db_df):
         logger.warning(f"\n✗ Found {len(overlapping_names)} names that exist in BOTH CSV and Database")
         logger.info("\nFirst 20 overlapping names:")
         for name in list(overlapping_names)[:20]:
-            csv_instance = csv_df[csv_df['_normalized_name'] == name].iloc[0]
-            db_instance = db_df[db_df['_normalized_name'] == name].iloc[0]
+            # Use the normalized Series for comparison
+            csv_instance = csv_df[csv_normalized == name].iloc[0]
+            db_instance = db_df[db_normalized == name].iloc[0]
             logger.info(f" '{csv_instance['name']}'")
             logger.info(f" CSV ID: {csv_instance.get('new_author_id', 'N/A')}")
             logger.info(f" DB ID:  {db_instance.get('new_author_id', 'N/A')}")
     else:
         logger.info("✓ No overlapping names between CSV and Database")
-    
-    # Clean up
-    csv_df.drop(columns=['_normalized_name'], inplace=True)
-    db_df.drop(columns=['_normalized_name'], inplace=True)
 
 
 def merge_and_deduplicate(csv_df, db_df):
@@ -140,6 +138,27 @@ def merge_and_deduplicate(csv_df, db_df):
     
     # Normalize names for deduplication
     combined['_normalized_name'] = combined['name'].str.lower().str.strip()
+    
+    # Before deduplication, log cases where the same normalized name has conflicting attributes
+    conflict_cols = [col for col in ['new_author_id', 'birth_year', 'ethnicity', 'sex'] if col in combined.columns]
+    if conflict_cols:
+        grouped = combined.groupby('_normalized_name', dropna=False)
+        for normalized_name, group in grouped:
+            if len(group) < 2:
+                continue
+            has_conflict = False
+            for col in conflict_cols:
+                if group[col].nunique(dropna=False) > 1:
+                    has_conflict = True
+                    break
+            if has_conflict:
+                cols_to_show = ['name'] + conflict_cols + ['_source']
+                logger.warning(
+                    "Deduplicating authors with same normalized name '%s' but conflicting attributes; "
+                    "keeping first occurrence based on source priority. Conflicting rows:\n%s",
+                    normalized_name,
+                    group[cols_to_show].to_string(index=False),
+                )
     
     # Sort by source (DB first, then CSV) so DB records are kept
     combined['_source_priority'] = combined['_source'].map({'DB': 0, 'CSV': 1})
@@ -208,11 +227,11 @@ def main():
     db_df = load_db_data(db_url) if db_url else pd.DataFrame()
     
     # Step 3: Check for duplicates in CSV
-    check_csv_duplicates(csv_df, "CSV")
+    check_duplicates(csv_df, "CSV")
     
     # Step 4: Check for duplicates in DB (if available)
     if not db_df.empty:
-        check_csv_duplicates(db_df, "DATABASE")
+        check_duplicates(db_df, "DATABASE")
     
     # Step 5: Check for cross-duplicates
     if not db_df.empty:

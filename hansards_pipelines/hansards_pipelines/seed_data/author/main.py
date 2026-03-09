@@ -1,12 +1,11 @@
 import argparse
 import logging
-import sys
 from pathlib import Path
 
 from hansards_pipelines.seed_data.author.handle_duplicate_author import (
     load_csv_data,
     load_db_data,
-    check_csv_duplicates,
+    check_duplicates,
     check_cross_duplicates,
     merge_and_deduplicate,
     save_output,
@@ -39,18 +38,15 @@ def run_handle_duplicates(args):
     # Step 1: Load CSV data
     csv_df = load_csv_data(str(csv_path))
 
-    # Step 2: Load DB data (if available)
-    db_df = load_db_data(db_url) if db_url else None
-    if db_df is None:
-        import pandas as pd
-        db_df = pd.DataFrame()
+    # Step 2: Load DB data
+    db_df = load_db_data(db_url)
 
     # Step 3: Check for duplicates in CSV
-    check_csv_duplicates(csv_df, "CSV")
+    check_duplicates(csv_df, "CSV")
 
     # Step 4: Check for duplicates in DB (if available)
     if not db_df.empty:
-        check_csv_duplicates(db_df, "DATABASE")
+        check_duplicates(db_df, "DATABASE")
 
     # Step 5: Check for cross-duplicates
     if not db_df.empty:
