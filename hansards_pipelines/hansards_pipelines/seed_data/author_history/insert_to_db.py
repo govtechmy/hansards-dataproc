@@ -66,7 +66,7 @@ def read_csv_from_s3(s3_client, bucket: str, key: str) -> pd.DataFrame:
         response = s3_client.get_object(Bucket=bucket, Key=key)
         content = response["Body"].read()
         df = pd.read_csv(io.BytesIO(content))
-        print(f"  Loaded {len(df)} rows, columns: {list(df.columns)}")
+        print(f"  Loaded total rows: {len(df)}, columns: {list(df.columns)}")
         return df
     except Exception as exc:
         print(f"Failed to read s3://{bucket}/{key}: {exc}")
@@ -161,24 +161,24 @@ def insert_author_history(df: pd.DataFrame, dry_run: bool = False) -> None:
         rows_to_insert.append(coerce_row(row))
         attempted += 1
 
-    print(f"\n  Rows to attempt  : {attempted}")
+    print(f"\n  Rows to attempt : {attempted}")
     if skipped_no_record_id:
         print(f"  Skipped (no record_id) : {skipped_no_record_id}")
         skipped_df = pd.DataFrame(skipped_rows_missing_record_id)
-        print("\n  Sample of rows missing (record_id):")
-        print(skipped_df.head(10).to_string(index=False))
+        print("\n  Sample of rows missing (record_id) and skipped:")
+        print(skipped_df.head(5).to_string(index=False))
 
     if skipped_no_author_id:
         print(f"  Skipped (no author_id) : {skipped_no_author_id}")
         skipped_df = pd.DataFrame(skipped_rows_missing_author_id)
-        print("\n  Sample of rows missing (author_id):")
-        print(skipped_df.head(10).to_string(index=False))
+        print("\n  Sample of rows missing (author_id) and skipped:")
+        print(skipped_df.head(5).to_string(index=False))
 
     if skipped_no_start_date:
         print(f"  Skipped (no start_date) : {skipped_no_start_date}")
         skipped_df = pd.DataFrame(skipped_rows_missing_start_date)
-        print("\n  Sample of rows missing (start_date):")
-        print(skipped_df.head(10).to_string(index=False))
+        print("\n  Sample of rows missing (start_date) and skipped:")
+        print(skipped_df.head(5).to_string(index=False))
 
 
     if dry_run:
