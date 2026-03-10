@@ -61,20 +61,7 @@ def load_author_csv_to_db(
     
     with psycopg.connect(db_url) as conn:
         with conn.cursor() as cur:
-            # Create table if it doesn't exist
-            context.log.info("Ensuring api_author table exists...")
-            cur.execute("""
-                CREATE TABLE IF NOT EXISTS api_author (
-                    new_author_id INTEGER PRIMARY KEY,
-                    name VARCHAR(255) NOT NULL,
-                    birth_year INTEGER,
-                    ethnicity VARCHAR(100),
-                    sex VARCHAR(50)
-                )
-            """)
-            conn.commit()
-            context.log.info("Table api_author is ready")
-            
+
             # Get existing authors to track what will be inserted vs updated
             context.log.info("Checking existing authors in database...")
             cur.execute("SELECT new_author_id, name, birth_year, ethnicity, sex FROM api_author")
@@ -101,28 +88,20 @@ def load_author_csv_to_db(
                     birth_year = EXCLUDED.birth_year,
                     ethnicity = EXCLUDED.ethnicity,
                     sex = EXCLUDED.sex
+                WHERE
+                    api_author.name IS DISTINCT FROM EXCLUDED.name OR
+                    api_author.birth_year IS DISTINCT FROM EXCLUDED.birth_year OR
+                    api_author.ethnicity IS DISTINCT FROM EXCLUDED.ethnicity OR
+                    api_author.sex IS DISTINCT FROM EXCLUDED.sex
                 """,
                 records
             )
 
-            inserted_count = len(records)
-            updated_count = 0
-            skipped_count = 0
-            
             conn.commit()
-            
-            context.log.info(
-                f"Summary: "
-                f"{len(df_author)} total records "
-                f"{inserted_count} inserted, "
-                f"{updated_count} updated, "
-                f"{skipped_count} skipped"
-            )
-    
+
+    context.log.info(f"UPSERT complete: {len(records)} authors processed")
+
     return {
-        "total_records": len(df_author),
-        "inserted": inserted_count,
-        "updated": updated_count,
-        "skipped": skipped_count,
+        "total_records": len(records),
         "s3_path": f"s3://{s3_bucket}/{s3_key}"
     }
