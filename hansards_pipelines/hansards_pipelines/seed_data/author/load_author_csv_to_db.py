@@ -88,11 +88,6 @@ def load_author_csv_to_db(
                     birth_year = EXCLUDED.birth_year,
                     ethnicity = EXCLUDED.ethnicity,
                     sex = EXCLUDED.sex
-                WHERE
-                    api_author.name IS DISTINCT FROM EXCLUDED.name OR
-                    api_author.birth_year IS DISTINCT FROM EXCLUDED.birth_year OR
-                    api_author.ethnicity IS DISTINCT FROM EXCLUDED.ethnicity OR
-                    api_author.sex IS DISTINCT FROM EXCLUDED.sex
                 """,
                 records
             )
