@@ -57,8 +57,12 @@ def download_from_s3(s3_client, bucket, key):
     logger.info(f" Loaded {len(df)} records")
     logger.info(f" Columns: {list(df.columns)}")
 
-    if "name" not in df.columns:
-        raise ValueError("CSV must contain a 'name' column")
+    required_columns = ["new_author_id", "name", "birth_year", "sex"]
+
+    missing = [c for c in required_columns if c not in df.columns]
+
+    if missing:
+        raise ValueError(f"CSV missing required columns: {missing}")
 
     return df
 

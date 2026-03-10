@@ -131,6 +131,7 @@ def main():
 
     except ValueError as e:
         logger.error(f"\nPipeline failed: {e}")
+        raise
 
 
 if __name__ == "__main__":
