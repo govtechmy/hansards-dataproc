@@ -1,95 +1,136 @@
+"""
+Main entry point for the author seed pipeline.
+
+Pipeline:
+1. Download author CSV from S3
+2. Validate primary key (new_author_id)
+3. Normalize names
+4. Detect duplicate names
+5. Detect attribute conflicts
+6. Deduplicate records
+7. Upload cleaned CSV to S3
+8. Load cleaned CSV into database
+
+Usage:
+    python main.py --dry-run
+"""
+
+
 import argparse
 import logging
-from pathlib import Path
+import boto3
 
 from hansards_pipelines.seed_data.author.handle_duplicate_author import (
-    load_csv_data,
-    load_db_data,
+    download_from_s3,
     check_duplicates,
-    check_cross_duplicates,
-    merge_and_deduplicate,
-    save_output,
+    check_duplicate_ids,
+    detect_conflicts,
+    deduplicate,
+    upload_to_s3,
+    normalize_names,
 )
+
+from hansards_pipelines.seed_data.author.load_author_csv_to_db import (
+    load_author_csv_to_db
+)
+
 from hansards_pipelines import settings
 
 logging.basicConfig(
     level=logging.INFO,
     format="%(message)s",
 )
+
 logger = logging.getLogger(__name__)
 
 
-def run_handle_duplicates(args):
-    """Step 1: Check CSV and DB for duplicates, merge and deduplicate."""
+def run_handle_duplicates_author(args):
+    """Step 1: Deduplicate author CSV in S3."""
 
     logger.info("STEP 1 — handle_duplicate_author")
 
-    # Configuration
-    project_root = Path(__file__).parent.parent.parent.parent.parent
-    csv_path = project_root / "scripts" / "ahli_parlimen" / "outputs" / "author.csv"
-    output_dir = Path(__file__).parent / "output"
-    db_url = settings.HANSARD_DB_URL
+    bucket = settings.S3_DATAPROC_BUCKET
+    region = settings.AWS_REGION or "ap-southeast-5"
 
-    logger.info(f"\nConfiguration:")
-    logger.info(f"  CSV Input: {csv_path}")
-    logger.info(f"  Output Dir: {output_dir}")
-    logger.info(f"  DB URL: {'Configured' if db_url else 'Not configured'}")
+    input_key = "canonical/master/author.csv"
+    output_key = "canonical/seed/author.csv"
 
-    # Step 1: Load CSV data
-    csv_df = load_csv_data(str(csv_path))
+    logger.info("\nConfiguration:")
+    logger.info(f"  Input : s3://{bucket}/{input_key}")
+    logger.info(f"  Output: s3://{bucket}/{output_key}")
 
-    # Step 2: Load DB data
-    db_df = load_db_data(db_url)
+    s3_client = boto3.client("s3", region_name=region)
 
-    # Step 3: Check for duplicates in CSV
-    check_duplicates(csv_df, "CSV")
+    df = download_from_s3(s3_client, bucket, input_key)
 
-    # Step 4: Check for duplicates in DB (if available)
-    if not db_df.empty:
-        check_duplicates(db_df, "DATABASE")
+    check_duplicate_ids(df)
 
-    # Step 5: Check for cross-duplicates
-    if not db_df.empty:
-        check_cross_duplicates(csv_df, db_df)
+    df["_normalized_name"] = normalize_names(df)
 
-    # Step 6: Merge and deduplicate
-    final_df = merge_and_deduplicate(csv_df, db_df)
+    check_duplicates(df)
 
-    # Step 7: Save output
+    detect_conflicts(df)
+
+    final_df = deduplicate(df)
+
+    final_df = final_df.drop(columns=["_normalized_name"])
+
     if args.dry_run:
-        logger.info(f"\n[DRY-RUN] Skipping file write. Preview of first 5 rows:")
+        logger.info("\n[DRY-RUN] Preview:")
         logger.info(final_df.head().to_string(index=False))
     else:
-        output_path = save_output(final_df, str(output_dir))
-        logger.info(f"\nOutput saved to: {output_path}")
+        upload_to_s3(s3_client, final_df, bucket, output_key)
 
-    logger.info(f"\nRecords: CSV={len(csv_df)}, DB={len(db_df)} → Final={len(final_df)}")
+    logger.info(
+        f"\nRecords: input={len(df)} → output={len(final_df)} "
+        f"(removed {len(df) - len(final_df)})"
+    )
+
     logger.info("Step 1 complete.\n")
 
-    return final_df
+    return output_key
+
+
+def run_load_to_db(s3_key):
+    """Step 2: Load cleaned CSV into database."""
+
+    logger.info("STEP 2 — load_author_csv_to_db")
+
+    result = load_author_csv_to_db(
+        s3_bucket=settings.S3_DATAPROC_BUCKET,
+        s3_key=s3_key,
+        db_url=settings.HANSARD_DB_URL,
+        context=type("obj", (), {"log": logger}),
+        aws_region=settings.AWS_REGION,
+    )
+
+    logger.info(f"\nDB Load Result: {result}")
+    logger.info("Step 2 complete.\n")
 
 
 def main():
-    """Main execution"""
 
-    parser = argparse.ArgumentParser(
-        description="Run the author deduplication pipeline."
-    )
-    parser.add_argument(
-        "--dry-run",
-        action="store_true",
-        help="Process data but skip file writes (preview only).",
-    )
+    parser = argparse.ArgumentParser(description="Run the author seed pipeline.")
+    parser.add_argument("--dry-run", action="store_true", help="Run deduplication only, skip DB load.")
     args = parser.parse_args()
 
     logger.info("AUTHOR PIPELINE")
+
     if args.dry_run:
-        logger.info("  [DRY-RUN mode — no file writes]")
+        logger.info("  [DRY-RUN mode — no uploads or DB writes]")
 
-    # Run deduplication
-    run_handle_duplicates(args)
+    try:
+        # Step 1
+        seed_key = run_handle_duplicates_author(args)
 
-    logger.info("ALL STEPS COMPLETE")
+        # Step 2
+        if not args.dry_run:
+            run_load_to_db(seed_key)
+
+        logger.info("ALL STEPS COMPLETE")
+
+    except ValueError as e:
+        logger.error(f"\nPipeline failed: {e}")
 
 
 if __name__ == "__main__":
