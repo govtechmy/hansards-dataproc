@@ -81,6 +81,23 @@ def remove_duplicates(df):
 
     return df_deduped
 
+def check_duplicate_history_ids(df):
+    """Ensure author_id + start_date combination is unique"""
+
+    if "record_id" not in df.columns:
+        raise ValueError("CSV missing required columns for validation")
+
+    duplicates = df[df.duplicated(["record_id"], keep=False)]
+
+    if duplicates.empty:
+        logger.info("No duplicate author history primary keys found")
+        return
+
+    logger.error("Duplicate author history primary keys detected. Fix the csv before proceeding.")
+    logger.error("Showing first 20 duplicate records:")
+    logger.error(duplicates.head(20).to_string(index=False))
+
+    raise ValueError("Duplicate author history records detected")
 
 def upload_to_s3(s3_client, df, bucket, key):
     """Upload DataFrame as CSV to S3"""
@@ -106,40 +123,3 @@ def upload_to_s3(s3_client, df, bucket, key):
     except Exception as e:
         logger.error(f"Error uploading to S3: {e}")
         raise
-
-
-def main():
-    # Configuration
-    bucket = settings.S3_DATAPROC_BUCKET
-    aws_region = settings.AWS_REGION or 'ap-southeast-5'
-    input_key = 'canonical/preprocessing/author_history/resolved/author_history.csv'
-    output_key = 'canonical/master/author_history.csv'
-    logger.info("AUTHOR HISTORY DUPLICATE REMOVER")
-    
-    # Initialize S3 client
-    s3_client = boto3.client("s3", region_name=aws_region)
-    
-    # Download input CSV from S3
-    df = download_from_s3(s3_client, bucket, input_key)
-    
-    # Show current columns
-    logger.info(f"Columns in CSV: {list(df.columns)}")
-    
-    # Remove duplicates (keeps existing record_id from first occurrence)
-    df_deduped = remove_duplicates(df)
-    
-    # Upload deduplicated CSV to S3
-    upload_to_s3(s3_client, df_deduped, bucket, output_key)
-    
-    logger.info("COMPLETE!")
-    logger.info(f"Input:  s3://{bucket}/{input_key}")
-    logger.info(f"Output: s3://{bucket}/{output_key}")
-    logger.info(f"Records: {len(df)} → {len(df_deduped)} (removed {len(df) - len(df_deduped)})")
-
-
-if __name__ == "__main__":
-    logging.basicConfig(
-        level=logging.INFO,
-        format='%(message)s'
-    )
-    main()

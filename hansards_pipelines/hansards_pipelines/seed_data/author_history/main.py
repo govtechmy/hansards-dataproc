@@ -30,6 +30,7 @@ from hansards_pipelines.seed_data.author_history.find_area_id_given_area_name im
     upload_csv_to_s3 as upload_resolved_csv_to_s3,
 )
 from hansards_pipelines.seed_data.author_history.handle_duplicate_author_history import (
+    check_duplicate_history_ids,
     download_from_s3 as download_resolved_from_s3,
     remove_duplicates,
     upload_to_s3 as upload_master_to_s3,
@@ -109,6 +110,7 @@ def run_handle_duplicates(args):
 
     s3_client = boto3.client("s3", region_name=AWS_REGION)
     df = download_resolved_from_s3(s3_client, bucket, DEDUP_INPUT_KEY)
+    check_duplicate_history_ids(df)
     df_deduped = remove_duplicates(df)
 
     if args.dry_run:
