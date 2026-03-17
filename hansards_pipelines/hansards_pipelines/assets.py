@@ -1095,10 +1095,23 @@ def prepare_db_payload(context: AssetExecutionContext):
     author = response.json()
     df_author = pd.DataFrame(author)
     context.log.info(f"Author: {len(df_author)} records")
-    df_speech_matched = perform_author_matching(
+    df_speech_matched, unmatched_authors = perform_author_matching(
         df_speech, df_author, df_author_history, context
     )
     matched_speeches_rate = (~df_speech_matched["author_id"].isna()).mean() * 100
+
+    if unmatched_authors:
+        house = sitting_object["house"].lower()
+        key = f"unmatched_authors/{house}/{sitting_object['renamed_filename']}.json"
+
+        s3_client.put_object(
+            Bucket=S3_DATAPROC_BUCKET,
+            Key=key,
+            Body=json.dumps(unmatched_authors, indent=2),
+            ContentType="application/json"
+        )
+
+        context.log.info(f"Uploaded unmatched authors to S3: {key}")
 
     # rename to backend model names
     df_speech_matched = df_speech_matched.rename(
