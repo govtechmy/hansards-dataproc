@@ -963,9 +963,11 @@ def perform_author_matching(speech_df, author_df, author_hist_df, context):
             
     # 5. Review unmatched records
     unmatched = df_result[df_result["author_id"] == "NO MATCH"]
-    context.log.info(
-        f"Match rate: {match_rate:.2f}% ({len(df_result) - len(unmatched)}/{len(df_result)} records)"
-    )
+    unmatched_authors = [
+        None if pd.isna(author) else author
+        for author in unmatched["author"].drop_duplicates()
+    ]
+    context.log.info(f"Match rate: {match_rate:.2f}% ({len(df_result) - len(unmatched)}/{len(df_result)} records)")
 
     # Log unmatched authors before setting NO MATCH to None
     if not unmatched.empty:
@@ -1012,4 +1014,4 @@ def perform_author_matching(speech_df, author_df, author_hist_df, context):
         how="left",
     )
 
-    return speech_df_final
+    return speech_df_final, unmatched_authors
