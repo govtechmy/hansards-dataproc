@@ -1298,19 +1298,19 @@ def move_arkib_pdfs_to_public(context: AssetExecutionContext):
     context.log.info(f"Completed moving renamed arkib PDFs from dataproc to public | house={house}")
 
 
-@asset(group_name="author")
-def load_author_data_to_db(context: AssetExecutionContext):
-    """
-    Load author data from S3 into the api_author table in the database.
-    CSV file should be manually uploaded to S3 at: canonical/author.csv
-    """
-    return load_author_csv_to_db(
-        s3_bucket=S3_DATAPROC_BUCKET,
-        s3_key="canonical/author.csv",
-        db_url=HANSARD_DB_URL,
-        context=context,
-        aws_region=AWS_REGION
-    )
+# @asset(group_name="author")
+# def load_author_data_to_db(context: AssetExecutionContext):
+#     """
+#     Load author data from S3 into the api_author table in the database.
+#     CSV file should be manually uploaded to S3 at: canonical/author.csv
+#     """
+#     return load_author_csv_to_db(
+#         s3_bucket=S3_DATAPROC_BUCKET,
+#         s3_key="canonical/author.csv",
+#         db_url=HANSARD_DB_URL,
+#         context=context,
+#         aws_region=AWS_REGION
+#     )
 
 
 @asset(deps=[move_arkib_pdfs_to_public], group_name="arkib", partitions_def=HOUSE_PARTITIONS)

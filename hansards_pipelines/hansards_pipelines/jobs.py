@@ -56,10 +56,10 @@ move_renamed_file_and_build_arkib_partition_queue_job = define_asset_job(
 #=======================================
 
 
-author_load_job = define_asset_job(
-    "author_load_job",
-    selection=[assets.load_author_data_to_db],
-)
+# author_load_job = define_asset_job(
+#     "author_load_job",
+#     selection=[assets.load_author_data_to_db],
+# )
 
 move_arkib_pdfs_job = define_asset_job(
     "move_arkib_pdfs_job",
