@@ -285,7 +285,7 @@ def preprocess_names_for_matching(df, name_column, output_column=None):
 
 
 def enhanced_match_names(
-    name, clean_names_list, scorer=fuzz.token_set_ratio, threshold=70, limit=5
+    name, clean_names_list, scorer=fuzz.token_sort_ratio, threshold=85, limit=5, enforce_first_token=True
 ):
     """
     Function to match a name to a list of names with enhanced scoring.
@@ -306,6 +306,12 @@ def enhanced_match_names(
             continue
         # Add specificity adjustment
         specificity_bonus = calculate_name_specificity_score(name, match)
+        if enforce_first_token:
+            try:
+                if name.split()[0] != match.split()[0]:
+                    continue  # strongly prefer matches with the same first name e.g ANWAR BIN IBRAHIM vs AHMAD BIN IBRAHIM is not a good match, so we skip it entirely.
+            except:
+                continue # in case of any issues with splitting (e.g., empty strings), we skip the match
         adjusted_score = min(100, max(0, score + specificity_bonus))
         adjusted_matches.append((match, adjusted_score))
     
@@ -386,7 +392,7 @@ def match_by_name(speech_df, author_df, author_hist_df=None, column_name="name",
         )
 
         match_results = enhanced_match_names(
-            name, clean_author_names, threshold=threshold, limit=5
+            name, clean_author_names, threshold=threshold, limit=5, enforce_first_token=True
         )
         
         if not match_results:
@@ -443,7 +449,7 @@ def match_by_constituency(speech_df, author_hist_df, column_name, threshold=70):
         # Filter out None/NaN values from constituency areas
         clean_areas = [a for a in author_hist_df["area_up"].unique() if a and not pd.isna(a)]
         match_results = enhanced_match_names(
-            constituency, clean_areas, threshold=threshold, limit=3
+            constituency, clean_areas, threshold=threshold, limit=3, enforce_first_token=False
         )
         if match_results:
             # Take the best match
@@ -900,10 +906,10 @@ def perform_author_matching(speech_df, author_df, author_hist_df, context):
     # Perform matching
     # 1. Get matches by name with temporal validation
     name_matches_a = match_by_name(
-        df_speech_only, author_df, author_hist_df, "author_a_up", threshold=70
+        df_speech_only, author_df, author_hist_df, "author_a_up", threshold=85
     )
     name_matches_b = match_by_name(
-        df_speech_only, author_df, author_hist_df, "author_b_up", threshold=70
+        df_speech_only, author_df, author_hist_df, "author_b_up", threshold=85
     )
 
     # 2. Get matches by constituency
