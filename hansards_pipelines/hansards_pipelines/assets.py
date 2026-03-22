@@ -14,6 +14,7 @@ from dagster import (
     DagsterRunStatus,
     MaterializeResult,
     Output,
+    Failure
 )
 import os
 import io
@@ -22,10 +23,11 @@ import pickle
 from bs4 import BeautifulSoup
 import boto3
 import botocore
+import re
 import requests
 import pandas as pd
 from urllib.parse import urljoin
-from typing import List, Tuple, Dict
+from typing import List, Tuple, Dict, Optional
 from io import BytesIO
 import pdfplumber
 from datetime import datetime
@@ -50,7 +52,27 @@ from hansards_pipelines.utils.s3_utils import (
     build_path,
 )
 
-from hansards_pipelines.settings import S3_DATAPROC_BUCKET, S3_PUBLIC_BUCKET, DEV_API_URL, PROD_API_URL, FRONTEND_URL, FRONTEND_TOKEN
+from hansards_pipelines.settings import S3_DATAPROC_BUCKET, S3_PUBLIC_BUCKET, DEV_API_URL, PROD_API_URL, FRONTEND_URL, FRONTEND_TOKEN, HANSARD_DB_URL, AWS_REGION, ARKIB_PARTITION_MIN_YEAR, ARKIB_PARTITION_MAX_YEAR, READY_QUEUE_KEY, PENDING_QUEUE_KEY, LEGACY_PARTITION_MIN_YEAR, LEGACY_PARTITION_MAX_YEAR, LEGACY_READY_QUEUE_KEY
+from hansards_pipelines.partitions import HANSARD_PARTITIONS, HOUSE_PARTITIONS
+
+from hansards_pipelines.scrape_parliamentary_cycle import (
+    scrape_arkib_cycles,
+    scrape_active_cycles,
+    fetch_db_cycles,
+    upsert_cycles_via_api,
+)
+import psycopg
+from hansards_pipelines.direct_sitting_ingest import ingest_sitting_to_db
+
+from hansards_pipelines.scrape_arkib import run_scrape
+from hansards_pipelines.move_and_rename_pdf import move_arkib_pdfs_to_public_main
+from hansards_pipelines.seed_data.author import load_author_csv_to_db
+from pathlib import Path
+
+from hansards_pipelines.arkib_sittings.build_arkib_partition_queue import build_arkib_partition_queue
+from hansards_pipelines.arkib_sittings.promote_pdfs import promote_arkib_pdfs
+
+from hansards_pipelines.legacy_pipeline.main import process_legacy_pipeline
 
 # main pipeline
 # 1. scrape from the website, push pdf to s3 hansards-new
@@ -76,11 +98,10 @@ from hansards_pipelines.tabulate_hansard import tabulate
 
 s3_client = boto3.client("s3")
 
-
 house_names = ["DR", "DN", "KKDR"]
 
-
 sitting_partitions_def = DynamicPartitionsDefinition(name="house_sittings")
+sitting_legacy_partitions_def = DynamicPartitionsDefinition(name="house_sittings_legacy")
 # https://github.com/dagster-io/dagster/discussions/20508
 
 
@@ -102,15 +123,90 @@ def _generate_new_hansard_message(
             {"name": "Skipped PDFs", "value": skipped_file_name_str, "inline": True}
         )
     footer = {"text": "Parliament Hansards Web Scraper"}
-    send_discord_message(
-        "",
-        f"✨ New Hansards Scraped!",
-        3066993,
-        message_fields,
-        footer,
-        context,
-        deeplink=False,
+    try:
+        send_discord_message(
+            "",
+            f"✨ New Hansards Scraped!",
+            3066993,
+            message_fields,
+            footer,
+            context,
+            deeplink=False,
+        )
+    except Exception as e:
+        context.log.warning(f"Discord notification failed (ignored): {e}")
+
+
+
+@asset(group_name="scrape")
+def scrape_parliamentary_cycle_arkib(context: AssetExecutionContext) -> Dict:
+    """
+    Scrape parliamentary cycle data (Parlimen, Penggal, Mesyuarat + date ranges)
+    from Portal Rasmi Parlimen archive for DR, DN, KKDR and upsert via
+    POST /api/parliamentary-cycle.
+    
+    This scrapes COMPLETED sessions from the archive tree structure.
+    """
+    # Scrape cycles from arkib
+    cycles = scrape_arkib_cycles(context=context)
+    
+    # Fetch existing cycles from database
+    context.log.info("[arkib] Fetching existing cycles from database...")
+    existing_keys = fetch_db_cycles(HANSARD_DB_URL, context)
+    
+    # Upsert via API
+    api_endpoint = f"{DEV_API_URL}/api/parliamentary-cycle"
+    context.log.info(f"[arkib] Using API endpoint: {api_endpoint}")
+    
+    stats = upsert_cycles_via_api(
+        cycles=cycles,
+        existing_keys=existing_keys,
+        api_endpoint=api_endpoint,
+        log_prefix="arkib",
+        context=context
     )
+    
+    summary = {
+        "total_scraped": len(cycles),
+        **stats,
+    }
+    
+    context.log.info(f"[arkib] Summary: {summary}")
+    return summary
+
+
+@asset(group_name="scrape")
+def scrape_parliamentary_cycle_active(context: AssetExecutionContext) -> Dict:
+    """
+    Scrape ACTIVE parliamentary cycle data (Parlimen, Penggal, Mesyuarat + date ranges)
+    from Portal Rasmi Parlimen main pages for DR, DN, KKDR.
+    """
+    # Scrape active cycles
+    cycles = scrape_active_cycles(context=context)
+    
+    # Fetch existing cycles from database
+    context.log.info("[active] Fetching existing cycles from database...")
+    existing_keys = fetch_db_cycles(HANSARD_DB_URL, context)
+    
+    # Upsert via API
+    api_endpoint = f"{DEV_API_URL}/api/parliamentary-cycle"
+    context.log.info(f"[active] Using API endpoint: {api_endpoint}")
+    
+    stats = upsert_cycles_via_api(
+        cycles=cycles,
+        existing_keys=existing_keys,
+        api_endpoint=api_endpoint,
+        log_prefix="active",
+        context=context
+    )
+    
+    summary = {
+        "total_scraped": len(cycles),
+        **stats,
+    }
+    
+    context.log.info(f"[active] Summary: {summary}")
+    return summary
 
 
 @asset(group_name="scrape")
@@ -177,6 +273,7 @@ def scrape_website(context: AssetExecutionContext) -> List:
                 pdf_path = extract_pdf_url(a_tag.get("href"))
                 pdf_url = urljoin(base_url, pdf_path)
                 if pdf_url.endswith(".pdf"):
+                    should_upload = False
                     # Determine the PDF file name
                     pdf_name = os.path.basename(pdf_url).split(".")[
                         0
@@ -218,13 +315,32 @@ def scrape_website(context: AssetExecutionContext) -> List:
                             context.log.info(f"S3 object not found: {full_s3_key}")
                         else:
                             raise
+                        
+                    # Step 1b: Check if file already exists in PUBLIC (canonical location)
+                    exists_in_public = False
+                    sitting_object = get_sitting_object(pdf_name[:-4])
+                    public_house_folder = sitting_object["house_folder"]
+                    renamed_public_key = f"{public_house_folder}/{sitting_object['renamed_filename']}.pdf"
+                    try:
+                        s3_client.head_object(
+                            Bucket=S3_PUBLIC_BUCKET,
+                            Key=renamed_public_key,
+                        )
+                        exists_in_public = True
+                    except botocore.exceptions.ClientError:
+                        pass
 
-                    if exists_in_s3:
-                        context.log.info(f"Skip {pdf_name} - Still in S3, hasn't completed ingestion. No need to upload again.")
+
+                    if exists_in_s3 and not exists_in_public:
+                        # Stranded file: uploaded before but never moved to PUBLIC
+                        context.log.warning(f"{pdf_name} exists in new/ but not in PUBLIC. No need to upload again, but re-queueing for move")
+                        should_upload = False
+                        new_pdfs.append((pdf_name, s3_key, f"s3://{S3_DATAPROC_BUCKET}/{full_s3_key}"))
+                    elif exists_in_s3 and exists_in_public:
                         should_upload = False
                     else:
                         # Step 2: Download and open PDF to determine is_final_pdf flag
-                        pdf_response = requests.get(pdf_url, verify=False)
+                        pdf_response = requests.get(pdf_url, verify=False, timeout=300)
                         pdf_response.raise_for_status()
                         is_final_pdf = True
                         with pdfplumber.open(BytesIO(pdf_response.content)) as pdf:
@@ -340,10 +456,10 @@ def move_and_rename_all_hansards(
 
         sitting_object = get_sitting_object(new_pdf[:-4])
 
-        # Read from S3
+        # Read from S3 using the actual key that was uploaded
         pdf_response = s3_client.get_object(
             Bucket=S3_DATAPROC_BUCKET,
-            Key=f"new/{sitting_object['house_folder']}/{sitting_object['original_filename']}",
+            Key=f"new/{s3_key}",
         )
         new_pdf_name = (
             f"{sitting_object['house_folder']}/{sitting_object['renamed_filename']}.pdf"
@@ -359,22 +475,39 @@ def move_and_rename_all_hansards(
 
         context.log.info(f"Renamed and moved {s3_key} to {new_pdf_name}")
 
-@asset(
-    partitions_def=sitting_partitions_def,
-    # deps=[move_and_rename_hansards],
-    group_name="parse"
-)
-def dg_parse_hansard(context: AssetExecutionContext):
+def _dg_parse_hansard_impl(
+    *,
+    context: AssetExecutionContext,
+    pdf_key: str,
+):
     """Parse hansard
     Output of this is parsed_pdf folder - plaintext, bold, italics, tables, attendance.txt
     """
+    # only if sittings_job is triggered by sensor trigger_sittings_job_arkib_sensor, delete the READY_QUEUE_KEY
+    if context.run.tags.get("pdf_source") == "arkib":
+
+        try:
+            s3_client.delete_object(
+                Bucket=S3_DATAPROC_BUCKET,
+                Key=READY_QUEUE_KEY,
+            )
+            context.log.info(f"Deleted READY_QUEUE_KEY: {READY_QUEUE_KEY}")
+        except Exception as e:
+            context.log.warning(f"Failed to delete READY_QUEUE_KEY: {e}")
+
     sitting_object = get_sitting_object(context.partition_key)
     context.log.info(f"Parsing {sitting_object['original_filename']}")
 
     # read pdf from s3
-    pdf_response = s3_client.get_object(
-        Bucket=S3_PUBLIC_BUCKET, Key=sitting_object["renamed_filename_key"]
-    )
+    try:
+        pdf_response = s3_client.get_object(
+            Bucket=S3_PUBLIC_BUCKET,
+            Key=pdf_key,
+        )
+    except botocore.exceptions.ClientError as e:
+        context.log.error(f"PDF not found in {S3_PUBLIC_BUCKET} for {context.partition_key}. Likely move & rename step did not run.")
+        raise
+
     text, spaced_bold, spaced_italics, tables, attn_text, is_final = parse_hansard(
         sitting_object["date_str"],
         sitting_object["house"],
@@ -403,6 +536,30 @@ def dg_parse_hansard(context: AssetExecutionContext):
         s3_client.put_object(Bucket=S3_DATAPROC_BUCKET, Key=s3_key, Body=attn_text)
         context.log.info(f"Uploaded attendance to {s3_key}")
 
+
+@asset(
+    partitions_def=sitting_partitions_def,
+    group_name="parse",
+)
+def dg_parse_hansard(context: AssetExecutionContext):
+    """
+    Parse hansard PDF for a sitting. Always reads from S3 PUBLIC ROOT.
+    """
+
+    sitting_object = get_sitting_object(context.partition_key)
+
+    pdf_key = sitting_object["renamed_filename_key"]
+
+    context.log.info(f"dg_parse_hansard | partition={context.partition_key} | key={pdf_key}")
+
+    _dg_parse_hansard_impl(context=context, pdf_key=pdf_key)
+
+    return {
+        "partition": context.partition_key,
+        "pdf_key": pdf_key,
+    }
+
+
 @asset(
     partitions_def=sitting_partitions_def, deps=[dg_parse_hansard], group_name="parse"
 )
@@ -423,10 +580,13 @@ def dg_get_categories(context: AssetExecutionContext):
     - kkdr_subcategories_non_bold
     """
     sitting_object = get_sitting_object(context.partition_key)
-    context.log.info(f"Getting categories for {sitting_object['original_filename']}")
+
+    pdf_key = sitting_object["renamed_filename_key"]
+
+    context.log.info(f"Getting categories | key={pdf_key}")
 
     pdf_response = s3_client.get_object(
-        Bucket=S3_PUBLIC_BUCKET, Key=sitting_object["renamed_filename_key"]
+        Bucket=S3_PUBLIC_BUCKET, Key=pdf_key
     )
     (
         long_toc,
@@ -724,16 +884,19 @@ def dg_tabulate(context: AssetExecutionContext):
     # read categories.json from root folder
     categories = read_json_file(s3_client, S3_DATAPROC_BUCKET, "categories.json")
 
+    # override for non-DN
     if sitting_object["house"] != "DN":
-        categories = json.loads(
-            read_json_file(
-                s3_client,
-                S3_DATAPROC_BUCKET,
-                build_path("get_categories", "categories.json", sitting_object),
-            )
+        categories = read_json_file(
+            s3_client,
+            S3_DATAPROC_BUCKET,
+            build_path("get_categories", "categories.json", sitting_object),
         )
 
-    print(type(categories))
+    # safety normalization (handles double-encoded JSON)
+    if isinstance(categories, str):
+        categories = json.loads(categories)
+
+    context.log.info(type(categories))
 
     try:
         attendance = read_txt_file(
@@ -746,6 +909,9 @@ def dg_tabulate(context: AssetExecutionContext):
     except botocore.exceptions.ClientError as e:
         context.log.warning(f"No attendance.txt found for {context.partition_key}")
         attendance = None
+
+    if isinstance(categories, str):
+        categories = json.loads(categories)
 
     speeches, absent_text, attended_text = tabulate(
         sitting_object["date_str"],
@@ -875,6 +1041,7 @@ def prepare_db_payload(context: AssetExecutionContext):
     csv_path = build_path("tabulated", "result.csv", sitting_object)
     csv_data = s3_client.get_object(Bucket=S3_DATAPROC_BUCKET, Key=csv_path)
     df = pd.read_csv(io.BytesIO(csv_data["Body"].read()))
+    context.log.info(f"CSV rows read from {csv_path}: {len(df)}")
     df["date"] = sitting_object["proper_date_str"]
     df = process_tabulated(df, sitting_object["house"])
 
@@ -894,12 +1061,13 @@ def prepare_db_payload(context: AssetExecutionContext):
 
     # df_speech = df[df.author != "ANNOTATION"]
     df_speech = df.dropna(subset="speech")
+    context.log.info(f"Rows after dropna: {len(df_speech)}")
     df_speech.length = df_speech.length.astype(int)
     df_speech.reset_index(names="index", inplace=True)
 
-    df_speech = df_speech[
-        df_speech.speech_tokens.str.len() > 0
-    ]  # remove cleaned til empty speeches
+    df_speech["speech_tokens"] = df_speech["speech_tokens"].apply(
+        lambda x: x if isinstance(x, list) else []
+    )
 
     # context.log.info(f"Converting speech tokens to PostgreSQL array string")
     # df_speech.speech_tokens = df_speech.speech_tokens.apply(
@@ -927,10 +1095,23 @@ def prepare_db_payload(context: AssetExecutionContext):
     author = response.json()
     df_author = pd.DataFrame(author)
     context.log.info(f"Author: {len(df_author)} records")
-    df_speech_matched = perform_author_matching(
+    df_speech_matched, unmatched_authors = perform_author_matching(
         df_speech, df_author, df_author_history, context
     )
     matched_speeches_rate = (~df_speech_matched["author_id"].isna()).mean() * 100
+
+    if unmatched_authors:
+        house = sitting_object["house"].lower()
+        key = f"unmatched_authors/{house}/{sitting_object['renamed_filename']}.json"
+
+        s3_client.put_object(
+            Bucket=S3_DATAPROC_BUCKET,
+            Key=key,
+            Body=json.dumps(unmatched_authors, indent=2),
+            ContentType="application/json"
+        )
+
+        context.log.info(f"Uploaded unmatched authors to S3: {key}")
 
     # rename to backend model names
     df_speech_matched = df_speech_matched.rename(
@@ -1032,6 +1213,28 @@ def insert_to_prod_db(context: AssetExecutionContext, prepare_db_payload: dict):
     """
     _insert_to_db(PROD_API_URL, prepare_db_payload, context)
 
+@asset(partitions_def=sitting_partitions_def, deps=[prepare_db_payload], group_name="parse",
+)
+def direct_insert_to_db(context: AssetExecutionContext, prepare_db_payload: dict,
+):
+    context.log.info(
+        f"Direct DB insert start | filename={prepare_db_payload['filename']}"
+    )
+
+    with psycopg.connect(HANSARD_DB_URL) as conn:
+        with conn.transaction():
+            ingest_sitting_to_db(prepare_db_payload, conn)
+
+    context.log.info("Direct DB insert completed")
+
+    return {
+        "filename": prepare_db_payload["filename"],
+        "date": prepare_db_payload["date"],
+        "is_final": prepare_db_payload["is_final"],
+    }
+
+
+
 
 # @asset(group_name="frontend")
 # def revalidate_frontend(context: AssetExecutionContext, config: dict):
@@ -1068,3 +1271,398 @@ def insert_to_prod_db(context: AssetExecutionContext, prepare_db_payload: dict):
 #         "hansard_route": hansard_route,
 #     }
 # )
+
+
+@asset(partitions_def=HANSARD_PARTITIONS, group_name="scrape")
+def scrape_website_arkib(context: AssetExecutionContext):
+    """Scrape arkib Hansard listings."""
+
+    partition = context.partition_key
+
+    house = partition.keys_by_dimension["house"]
+    term = partition.keys_by_dimension["term"]
+
+    # limit = 5
+    
+    context.log.info(f"Starting arkib scrape | house={house} | term={term}")
+    run_scrape(category=house, parliament=int(term), limit=None)
+
+    context.log.info(f"Completed arkib scrape | house={house} | term={term}")
+
+@asset(group_name="scrape", deps=[scrape_website_arkib])
+def move_arkib_pdfs_to_public(context: AssetExecutionContext):
+    """Move and rename arkib PDFs from the dataproc bucket to the public bucket with renamed filenames."""
+
+    context.log.info("Moving and renaming arkib PDFs to public bucket...")
+    move_arkib_pdfs_to_public_main(category=None, logger=context.log)
+    context.log.info("Completed moving arkib PDFs")
+
+@asset(partitions_def=HOUSE_PARTITIONS, group_name="arkib")
+def move_arkib_pdfs_to_public(context: AssetExecutionContext):
+    """Move and rename arkib PDFs from dataproc bucket to public bucket (per house) with the renamed filenames."""
+
+    house = context.partition_key
+
+    context.log.info(f"Moving renamed arkib PDFs from dataproc to public | house={house}")
+    move_arkib_pdfs_to_public_main(
+        category=house,
+        logger=context.log,
+    )
+    context.log.info(f"Completed moving renamed arkib PDFs from dataproc to public | house={house}")
+
+
+# @asset(group_name="author")
+# def load_author_data_to_db(context: AssetExecutionContext):
+#     """
+#     Load author data from S3 into the api_author table in the database.
+#     CSV file should be manually uploaded to S3 at: canonical/author.csv
+#     """
+#     return load_author_csv_to_db(
+#         s3_bucket=S3_DATAPROC_BUCKET,
+#         s3_key="canonical/author.csv",
+#         db_url=HANSARD_DB_URL,
+#         context=context,
+#         aws_region=AWS_REGION
+#     )
+
+
+@asset(deps=[move_arkib_pdfs_to_public], group_name="arkib", partitions_def=HOUSE_PARTITIONS)
+def dg_build_arkib_partition_queue(context: AssetExecutionContext):
+    """
+    Build arkib partition queue JSON file (with min_year conditions) based on list of scraped PDFs that is put in S3 PUBLIC arkib/.
+    - reads and list pdfs in S3 PUBLIC arkib/ bucket
+    - writes queue/arkib_partitions.pending.json to S3 DATAPROC queue
+    - sensor 'trigger_arkib_pdf_move' will pick up this pending.json, and trigger job move_arkib_pdfs_job (asset: dg_move_arkib_pdf_to_s3_root).
+
+    TODO: add dependency.
+    - Asset must depend on 'move_arkib_pdfs_to_public' asset
+    - because the partition queue is built by listing all the pdfs in S3 PUBLIC (once moved & renamed).
+
+    Conditions:
+    - only for sittings from year MIN_YEAR onwards (and optionally up to MAX_YEAR),
+    - this is due to a lot of manual(human) edits have been made to older sittings (2007 & below),
+    - to avoid overwriting those manual edits with arkib PDFs, we only refresh PDFs from MIN_YEAR onwards.
+    - then trigger sittings_job on those partitions.
+    """
+
+    house = context.partition_key
+
+    MIN_YEAR = ARKIB_PARTITION_MIN_YEAR
+    MAX_YEAR = ARKIB_PARTITION_MAX_YEAR
+    
+    context.log.info(f"Building arkib partition queue... | house={house}, min_year={MIN_YEAR} & max_year={MAX_YEAR}")
+
+    payload = build_arkib_partition_queue(
+        s3_client=s3_client,
+        bucket=S3_PUBLIC_BUCKET,
+        prefix=f"arkib/{house}/",
+        min_year=MIN_YEAR,
+        max_year=MAX_YEAR,
+        logger=context.log,
+    )
+
+    s3_client.put_object(
+        Bucket=S3_DATAPROC_BUCKET,
+        Key=PENDING_QUEUE_KEY,
+        Body=json.dumps(payload, indent=2).encode(),
+        ContentType="application/json",
+    )
+
+
+@asset(group_name="arkib")
+def dg_move_arkib_pdf_to_s3_root(context: AssetExecutionContext):
+    """
+    Works with sensor 'trigger_arkib_pdf_move' to process arkib partition queue.
+    Promote/move arkib PDFs from S3 PUBLIC arkib/ to S3 PUBLIC root.
+    - reads queue/arkib_partitions.pending.json from S3_DATAPROC_BUCKET
+    - writes queue/arkib_partitions.ready.json to S3_DATAPROC_BUCKET 
+    - deletes queue/arkib_partitions.pending.json from S3_DATAPROC_BUCKET after done processing.
+    """
+
+    obj = s3_client.get_object(Bucket=S3_DATAPROC_BUCKET, Key=PENDING_QUEUE_KEY)
+    payload = json.loads(obj["Body"].read())
+
+    moved = promote_arkib_pdfs(
+        s3_client=s3_client,
+        bucket=S3_PUBLIC_BUCKET,
+        partitions=payload["partitions"],
+        get_sitting_object=get_sitting_object,
+        logger=context.log,
+    )
+
+    context.log.info(f"Promoted arkib PDFs to S3 PUBLIC root | Total pdfs moved: {moved}")
+
+    context.log.info(f"Creating {READY_QUEUE_KEY}... Ready for sensor to trigger sitting jobs on arkib partitions.")
+
+    s3_client.put_object(
+        Bucket=S3_DATAPROC_BUCKET,
+        Key=READY_QUEUE_KEY,
+        Body=json.dumps(payload, indent=2).encode(),
+        ContentType="application/json",
+    )
+
+    context.log.info(f"Deleting {PENDING_QUEUE_KEY}.")
+
+    s3_client.delete_object(
+        Bucket=S3_DATAPROC_BUCKET,
+        Key=PENDING_QUEUE_KEY,
+    )
+
+
+@asset(group_name="legacy_queue")
+def dg_build_legacy_partition_queue(context: AssetExecutionContext):
+    """
+    Build legacy partition queue JSON file (1959-2007) based on PDFs in S3 PUBLIC.
+    Writes legacy/queue/legacy_partitions.ready.json
+    """
+
+    LEGACY_MIN_YEAR = LEGACY_PARTITION_MIN_YEAR
+    LEGACY_MAX_YEAR = LEGACY_PARTITION_MAX_YEAR
+
+    payload = build_arkib_partition_queue(
+        s3_client=s3_client,
+        bucket=S3_PUBLIC_BUCKET,
+        # prefix="legacy/",
+        min_year=LEGACY_MIN_YEAR,
+        max_year=LEGACY_MAX_YEAR,
+        logger=context.log,
+    )
+
+    s3_client.put_object(
+        Bucket=S3_DATAPROC_BUCKET,
+        Key=LEGACY_READY_QUEUE_KEY,
+        Body=json.dumps(payload, indent=2).encode(),
+        ContentType="application/json",
+    )
+
+
+@asset(
+    partitions_def=sitting_legacy_partitions_def,
+    group_name="legacy_sittings",
+)
+def dg_legacy_sitting(context: AssetExecutionContext):
+    """
+    Insert one legacy sitting (1959-2007).
+
+    Logic:
+    Checks if manually edited CSV exists in S3 DATAPROC.
+    - If exists, CSV -> insert to DB
+    - Else, PDF -> parse -> tabulate as CSV -> insert payload to DB
+    """
+    partition_key = context.partition_key
+    context.log.info(f"Processing legacy sitting: {partition_key}...")
+
+    process_legacy_pipeline(partition_key=partition_key, s3_client=s3_client, logger=context.log)
+
+
+@asset
+def noop_partition_registration():
+    """
+    No-op asset for partition registration. Intentionally does nothing.
+    This is manually triggered to create the partitions.
+    """
+    return None
+
+
+# =========================
+# DATA INTEGRITY ASSETS
+# =========================
+
+from hansards_pipelines.data_integrity.utils.upload_partition_artifact_by_house_term import upload_partition_artifact_by_house_term
+from hansards_pipelines.data_integrity.sittings.source.snapshot_db import fetch_db_structure, build_snapshot as build_db_snapshot
+from hansards_pipelines.data_integrity.sittings.source.snapshot_portal_parlimen import run_source_snapshot, build_snapshot as build_portal_snapshot
+from hansards_pipelines.data_integrity.sittings.source.validate_sittings_integrity import build_integrity_report
+from datetime import datetime, timezone
+
+from hansards_pipelines.data_integrity.sittings.s3.snapshot_pdf_csv import run_for_houses
+from hansards_pipelines.data_integrity.utils.upload_partition_artifact_by_house import upload_partition_artifact_by_house
+from hansards_pipelines.data_integrity.sittings.s3.build_s3_pdf_csv_consolidation import consolidate_all_latest_s3_pdf_csv_into_one
+
+from hansards_pipelines.data_integrity.sittings.source.build_sittings_comparison_source_db import build_sittings_integrity_comparison_source_db, consolidate_all_latest_json_into_one
+from hansards_pipelines.data_integrity.utils.upload_global_artifact import upload_global_artifact
+
+@asset(partitions_def=HANSARD_PARTITIONS, group_name="data_integrity")
+def snapshot_portal_parlimen(context: AssetExecutionContext):
+
+    partition = context.partition_key.keys_by_dimension
+    house = partition["house"]
+    term = int(partition["term"])
+
+    context.log.info(f"Starting Portal Parlimen sitting snapshot for house={house}, term={term}, run_id={context.run_id}...")
+    structure = run_source_snapshot(
+        category=house,
+        term=term,
+        term_range=None,
+    )
+
+    context.log.info(f"Building snapshot...")
+    snapshot = build_portal_snapshot(
+        structure,
+        category=house,
+        term=term,
+        term_range=None,
+    )
+
+    context.log.info(f"Uploading snapshot to S3...")
+    upload_partition_artifact_by_house_term(
+        layer="source",
+        house=house,
+        term=term,
+        payload=snapshot,
+        run_id=context.run_id,
+    )
+
+    return snapshot
+
+
+@asset(partitions_def=HANSARD_PARTITIONS, group_name="data_integrity")
+def snapshot_db_sittings(context):
+
+    partition = context.partition_key.keys_by_dimension
+    house = partition["house"]
+    term = int(partition["term"])
+
+    context.log.info(f"Starting DB sitting snapshot for house={house}, term={term}, run_id={context.run_id}...")
+    structure = fetch_db_structure(
+        category=house,
+        term=term,
+        term_range=None,
+    )
+
+    context.log.info(f"Building snapshot...")
+    snapshot = build_db_snapshot(
+        structure,
+        category=house,
+        term=term,
+        term_range=None,
+    )
+
+    context.log.info(f"Uploading snapshot to S3...")
+    upload_partition_artifact_by_house_term(
+        layer="db",
+        house=house,
+        term=term,
+        payload=snapshot,
+        run_id=context.run_id,
+    )
+
+    return snapshot
+
+@asset(partitions_def=HANSARD_PARTITIONS, group_name="data_integrity")
+def report_sittings_integrity(
+    context: AssetExecutionContext,
+    snapshot_portal_parlimen,
+    snapshot_db_sittings,
+):
+    """
+    Compare the portal snapshot and db snapshot for the given partition, and generate an integrity report.
+    """
+
+    partition = context.partition_key.keys_by_dimension
+    house = partition["house"]
+    term = int(partition["term"])
+
+    context.log.info(f"Starting integrity check for house={house}, term={term}...")
+    run_id = context.run_id
+
+    scope = {
+        "run_id": run_id,
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "scope": {
+            "category": house,
+            "term": term,
+            "term_range": None,
+        }
+    }
+
+    context.log.info(f"Building integrity report...")
+    report = build_integrity_report(
+        snapshot_portal_parlimen,
+        snapshot_db_sittings,
+        scope,
+    )
+
+    context.log.info(f"Uploading integrity report to S3...")
+    key = upload_partition_artifact_by_house_term(
+        layer="integrity_check",
+        house=house,
+        term=term,
+        payload=report,
+        run_id=context.run_id,
+    )
+    context.log.info(f"Completed integrity report. Uploaded report to {key}")
+
+    return report
+
+@asset(partitions_def=HOUSE_PARTITIONS, group_name="data_integrity")
+def report_s3_downloads_pdf_csv(context: AssetExecutionContext):
+
+    house = context.partition_key
+
+    context.log.info(f"Running S3 downloadsPDF/CSV validation for house={house}")
+    report = run_for_houses([house])
+
+    context.log.info(f"Uploading PDF/CSV validation report to S3...")
+    key = upload_partition_artifact_by_house(
+        layer="s3",
+        house=house,
+        payload=report,
+        run_id=context.run_id,
+    )
+
+    context.log.info(f"Completed PDF/CSV validation. Uploaded report to {key}")
+
+    return report
+
+@asset(group_name="data_integrity")
+def report_overall_s3_pdf_csv_integrity(context: AssetExecutionContext):
+
+    houses = HOUSE_PARTITIONS.get_partition_keys()
+
+    context.log.info("Consolidating latest S3 PDF/CSV validation reports by house...")
+    consolidated = consolidate_all_latest_s3_pdf_csv_into_one(houses)
+
+    context.log.info("Uploading consolidated S3 PDF/CSV report...")
+    key = upload_global_artifact(
+        layer="report/sittings_pdf_csv_in_s3_check",
+        payload=consolidated,
+    )
+
+    context.log.info(f"Uploaded consolidated S3 PDF/CSV report to {key}")
+
+    return {
+        "report_key": key,
+    }
+
+
+@asset(group_name="data_integrity")
+def report_overall_sittings_integrity(context: AssetExecutionContext):
+
+    houses = HOUSE_PARTITIONS.get_partition_keys()
+
+    context.log.info("Consolidating all sitting's integrity by house & term (latest_run.json) into a single summary file...")
+    summary = consolidate_all_latest_json_into_one(houses)
+
+    context.log.info("Building report for sitting's source & db comparison by meeting...")
+    matrix = build_sittings_integrity_comparison_source_db(houses)
+
+    context.log.info("Uploading consolidated report about sittings integrity summary...")
+    summary_key = upload_global_artifact(
+        layer="report/sittings_integrity_summary_by_house_and_term",
+        payload=summary,
+    )
+
+    context.log.info("Uploading report about sitting's source & db comparison by meeting...")
+    matrix_key = upload_global_artifact(
+        layer="report/sittings_count_comparison_by_meeting",
+        payload=matrix,
+    )
+
+    context.log.info(f"Uploaded report to {summary_key}")
+    context.log.info(f"Uploaded report to {matrix_key}")
+
+    return {
+        "summary_key": summary_key,
+        "matrix_key": matrix_key,
+    }
+

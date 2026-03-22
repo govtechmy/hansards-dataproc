@@ -55,9 +55,15 @@ def read_and_add_toc_entry(hansard_date, toc_entry, file_contents=None):
         except FileNotFoundError:
             print(f"{hansard_date} not found, skipping")
     else:
-        toc = add_toc_entry(file_contents, toc_entry)
-        return toc
+        toc = file_contents
+        # normalize type here
+        if isinstance(toc, str):
+            toc = json.loads(toc)
+        if toc is None:
+            toc = []
 
+        toc = add_toc_entry(toc, toc_entry)
+        return toc
 
 def add_toc_entry(toc, toc_entry):
     if toc_entry not in toc:
@@ -456,7 +462,7 @@ def post_parsing_edits_dn(
     # Apply all table modifications
     for modification in table_modifications:
         tablejson_file_contents = read_and_modify_table(
-            hansard_date=modification["date"],
+            hansard_date=date,
             old_table=modification["old_table"],
             new_table=modification["new_table"],
             file_contents=tablejson_file_contents,
@@ -570,7 +576,7 @@ def post_parsing_edits_dr(
     # Apply all table modifications
     for modification in table_modifications:
         tablejson_file_contents = read_and_modify_table(
-            hansard_date=modification["date"],
+            hansard_date=date,
             old_table=modification["old_table"],
             new_table=modification["new_table"],
             file_contents=tablejson_file_contents,
@@ -713,7 +719,7 @@ def post_parsing_edits_kk(
     # Apply all table modifications
     for modification in table_modifications:
         tablejson_file_contents = read_and_modify_table(
-            hansard_date=modification["date"],
+            hansard_date=date,
             old_table=modification["old_table"],
             new_table=modification["new_table"],
             file_contents=tablejson_file_contents,

@@ -1,5 +1,13 @@
-from dagster import define_asset_job
+from dagster import define_asset_job, AssetSelection
 from . import assets
+
+scrape_parliamentary_cycle_job = define_asset_job(
+    "scrape_parliamentary_cycle_job",
+    selection=[
+        # assets.scrape_parliamentary_cycle_arkib,
+        assets.scrape_parliamentary_cycle_active,
+    ],
+)
 
 scrape_job = define_asset_job(
     "scrape_website_job",
@@ -8,16 +16,96 @@ scrape_job = define_asset_job(
 
 sittings_job = define_asset_job(
     "sittings_job",
+    selection=AssetSelection.keys(
+        "dg_parse_hansard",
+        "dg_get_categories",
+        "dg_post_parsing_edits",
+        "dg_pre_tabulate",
+        "dg_edit_hansards",
+        "dg_tabulate",
+        "remove_parsed_hansards",
+        "prepare_db_payload",
+        "direct_insert_to_db",
+        # "insert_to_dev_db",
+        # "insert_to_prod_db",
+    ),
+)
+
+#=======================================
+# Scrape + Move/Queue jobs for Arkib sittings
+#=======================================
+# IMPORTANT OPERATIONAL NOTE:
+# Do NOT run `build_arkib_partition_queue_job` while `scrape_arkib_job` is running for the same house.
+#
+# Reason:
+# - scrape writes to DATAPROC arkib/<house>/
+# - move+queue reads and deletes from the same prefix
+# - running them concurrently may cause race conditions.
+#
+# Always ensure scraping for a house is fully completed  before running the move+queue job for that house.
+
+scrape_arkib_job = define_asset_job(
+    "scrape_website_arkib_job",
+    selection=[assets.scrape_website_arkib],
+)
+
+move_renamed_file_and_build_arkib_partition_queue_job = define_asset_job(
+    "move_renamed_file_and_build_arkib_partition_queue_job",
+    selection=[assets.move_arkib_pdfs_to_public, assets.dg_build_arkib_partition_queue],
+)
+#=======================================
+
+
+# author_load_job = define_asset_job(
+#     "author_load_job",
+#     selection=[assets.load_author_data_to_db],
+# )
+
+move_arkib_pdfs_job = define_asset_job(
+    "move_arkib_pdfs_job",
+    selection=[assets.dg_move_arkib_pdf_to_s3_root],
+)
+
+
+sittings_legacy_job = define_asset_job(
+    "sittings_legacy_job",
+    selection=[assets.dg_legacy_sitting]
+)
+
+register_sitting_legacy_partition_job = define_asset_job(
+    name="register_sitting_legacy_partition_job",
+    selection=["noop_partition_registration"],
+)
+
+
+# ======================================
+# Integrity - Sittings integrity jobs
+# ======================================
+
+report_sittings_integrity_job = define_asset_job(
+    name="report_sittings_integrity_job",
     selection=[
-        assets.dg_parse_hansard,
-        assets.dg_get_categories,
-        assets.dg_post_parsing_edits,
-        assets.dg_pre_tabulate,
-        assets.dg_edit_hansards,
-        assets.dg_tabulate,
-        assets.remove_parsed_hansards,
-        assets.prepare_db_payload,
-        assets.insert_to_dev_db,
-        # assets.insert_to_prod_db,
-    ],
+        "snapshot_db_sittings",
+        "snapshot_portal_parlimen",
+        "report_sittings_integrity",
+    ])
+
+
+report_overall_sittings_integrity_job = define_asset_job(
+    name="report_overall_sittings_integrity_job",
+    selection=["report_overall_sittings_integrity"],
+)
+
+# ======================================
+# Integrity - S3 PDF/CSV integrity jobs
+# ======================================
+
+report_s3_pdf_csv_integrity = define_asset_job(
+    name="report_s3_downloads_pdf_csv_job",
+    selection=["report_s3_downloads_pdf_csv"],
+)
+
+report_overall_s3_pdf_csv_integrity = define_asset_job(
+    name="report_overall_s3_downloads_pdf_csv_integrity_job",
+    selection=["report_overall_s3_pdf_csv_integrity"],
 )

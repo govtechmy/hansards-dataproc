@@ -1,0 +1,23 @@
+NON_SPEAKER_VERBS = [
+    "reported", "resolved", "considered", "ordered", "amended", "adopted", "debated", "passed", "read", 
+    "proposed", "moved", "seconded", "agreed", "adjourned", "appeal", "bill", "quote", "declare", "reads", 
+    "follows", "proposal", "kata", "seperti", "berikut", "menyatakan", "memutuskan", "mempertimbangkan", 
+    "mengusulkan", "mengajukan", "mengadopsi", "membahas", "melanjutkan", "menyetujui", "menolak", "mengutip", 
+    "mengumumkan", "sebarang", "iaitu", "adalah", "berhajat", "berbunyi", "bagi", "bahawa", "terdapat", "sebab", "tendency",
+    "irony", "ialah", "berkata", "mengatakan", "menjelaskan", "menegaskan", "mengungkapkan", "menyampaikan", "memperjelas", "mempertegas", "mempertebal",
+    "report", "resolve", "consider", "order", "amend", "adopt", "debate", "pass",
+    "antara", "dengan", "untuk", "sebagai", "sehingga", "karena", "sampai", "selama", "ketika", "waktu", "sebelum", "sesudah", "selanjutnya", "kemudian", "setelah", "sebelumnya", "berlangsung", "langsung",
+    "menchadangkan", "sumpah", "berikrar", "berjanji", "mengikrarkan", "criticism", "election", "Opposition", "Perkhidmatan", "Akitek", "bahagian", "tahan", "composition", "Dalam",
+    "Pemandu", "atau", "Bursary", "Biasiswa", "Kerajaan", "Kerajaan Persekutuan", "Kerajaan Negeri", "Kerajaan Tempatan", "Kerajaan Pusat", "Hadiah",
+    "language", "advance", "quota", "conclude", "various", "four", "contributions", "contribution", "contributed", "contributing", "contributor", "contributes", "Fasal", "question", "soalan", "jawapan", "pertanyaan", "menjawab",
+    "statement", "important", "significant", "notable", "remarkable", "noteworthy",
+    "task", "nevertheless", "however", "although", "though", "despite", "in spite of", "regardless of", "nonetheless", "notwithstanding", "even though", "while", "whereas", "issues", "deleted", "berita", "said", "occasion", "pepatah", "belongs", "berbelah-bahagi", "understanding", "understood", "understands", "understand",
+    "also", "unfortunately", "fortunately", "additionally", "moreover", "furthermore", "in addition", "as well as", "besides", "what's more", "on top of that",
+    "not only that", "and also", "Peringatan", "Taman", "colonial", "kepada", "clear", "rata", "mengikut", "Pemandu", "Latehan", "warning", "ranchangan", "relative", "Jumlah", "further", "menurut","di-luluskan","academic", "merayu", "employed", "left", "pikul", "very", "sometimes", "units",
+    "izin", "yesterday", "allegations", "Dental", "pelajar", "Tambahan", "lalang", "purpose", "consult", "kilang", "Pelateh", "trained", "says", "personnel", "conditions", "berjaya", "another", "jawatan","acting", "rhyme", "incorruptible", "consequence", "kesalahan", "rural",
+    "mengapa", "mengambil", "tersebut", "dimainkan", "ditelitikan", "mengelirukan", "tetapi", "bertanya", "diterbitkan", "rakyat", "menandatangani",
+    "pengurus", "peruntukan", "dimuliakan", "kekurangan", "bangunan-bangunan", "sekalilah", "mengelakkan", "environmental", "incidence",
+    "pacific", "kenapakah", "samping", "strategi", "dilaporkan", "mencadangkan", "mengenai", "menanya", "dilaporkan", "dimanakah", "tanah",
+    "menggalak", "mendahulukan", "penganiayaan", "dianjurkan", "tandatangan", "overhaul", "mengandungi", "tatatertib", "ataupun", "sure", "getting",
+    "dapati", "begitu", "menjalankan", "mengadakan", "kelas", "fasal", "clause", "point", "following", "against", "difficult", "because"
+]
