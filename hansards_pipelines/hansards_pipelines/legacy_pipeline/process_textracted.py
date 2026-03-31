@@ -24,7 +24,7 @@ import warnings
 import psycopg2
 from botocore import UNSIGNED
 from botocore.config import Config
-from ..settings import S3_TEXTRACT_BUCKET, DEV_API_URL, HANSARD_DB_URL, S3_PUBLIC_BUCKET
+from ..settings import S3_TEXTRACT_BUCKET, DEV_API_URL, HANSARD_DB_URL, S3_PUBLIC_BUCKET, S3_DATAPROC_BUCKET
 from ..direct_sitting_ingest import ingest_sitting_to_db
 from hansards_pipelines.legacy_pipeline.constants import NON_SPEAKER_VERBS
 
@@ -445,7 +445,22 @@ def prepare_db_payload(df_speech, prefix, date_str):
         df_author_hist["area"] = df_author_hist["area_name"].str[5:]
 
         logger = SimpleLogger()
-        df_speech = perform_author_matching(df_speech, df_author, df_author_hist, logger)
+        df_speech, unmatched_authors = perform_author_matching(df_speech, df_author, df_author_hist, logger)
+
+        if unmatched_authors:
+            house = sitting_obj["house"].lower()
+            key = f"unmatched_authors/{house}/{sitting_obj['renamed_filename']}.json"
+
+            s3_client = session.client("s3")
+
+            s3_client.put_object(
+                Bucket=S3_DATAPROC_BUCKET,
+                Key=key,
+                Body=json.dumps(unmatched_authors, indent=2),
+                ContentType="application/json"
+            )
+
+            print(f"Uploaded unmatched authors to S3: {key}")
 
         # Replace "NO MATCH" with None
         df_speech.loc[df_speech["author_id"] == "NO MATCH", "author_id"] = None
