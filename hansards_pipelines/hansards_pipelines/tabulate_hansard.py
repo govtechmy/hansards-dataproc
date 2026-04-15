@@ -968,44 +968,54 @@ def tabulate(
 
             # sometimes the author has too long name and overflow to second line
             # but make sure this is not an annotation
-            # if row_id + 1 < num_rows and not (
-            #     text[row_id + 1].startswith("[") and italics[row_id + 1][1] == "1"
-            # ):
             if (
                 row_id + 1 < num_rows
                 and ":" not in text[row_id]          # don't merge if current line is a speaker
-                and ":" not in text[row_id + 1]      # don't merge if next line is a speaker
                 and not re.match(r"^\d+\.", text[row_id + 1].strip())   # don't merge if next line is question number
                 and not (text[row_id + 1].startswith("[") and italics[row_id + 1][1] == "1") # don't merge if next line is annotation
             ):
-                concat_rows = f"{text[row_id].strip()} {text[row_id + 1]}"
-                concat_rows_bold = f"{bold[row_id].strip()} {bold[row_id + 1]}"
-                concat_rows_italics = f"{italics[row_id].strip()} {italics[row_id + 1]}"
-                (
-                    author,
-                    speech,
-                    speech_bold,
-                    speech_italics,
-                    subtopic,
-                ) = get_author_and_speech(
-                    concat_rows,
-                    concat_rows_bold,
-                    concat_rows_italics,
+                next_author, *_ = get_author_and_speech(
+                    text[row_id + 1],
+                    bold[row_id + 1],
+                    italics[row_id + 1],
                     house=house,
                     is_pipeline=is_pipeline,
                 )
-                if author != "":
-                    speeches += insert_speech(current)
-                    current["author"] = author
-                    current["speech"] = speech
-                    current["speech_bold"] = speech_bold
-                    current["speech_italics"] = speech_italics
-                    if subtopic:
-                        current["level_2"] = subtopic
-                        current["level_3"] = ""
-                    # add to the loop counter additionally
-                    row_id += 1
-                    continue
+
+                if next_author != "":
+                    # next line is already a speaker → DON'T merge
+                    pass
+                else:
+                    concat_rows = f"{text[row_id].strip()} {text[row_id + 1]}"
+                    concat_rows_bold = f"{bold[row_id].strip()} {bold[row_id + 1]}"
+                    concat_rows_italics = f"{italics[row_id].strip()} {italics[row_id + 1]}"
+
+                    (
+                        author,
+                        speech,
+                        speech_bold,
+                        speech_italics,
+                        subtopic,
+                    ) = get_author_and_speech(
+                        concat_rows,
+                        concat_rows_bold,
+                        concat_rows_italics,
+                        house=house,
+                        is_pipeline=is_pipeline,
+                    )
+
+                    if author != "":
+                        speeches += insert_speech(current)
+                        current["author"] = author
+                        current["speech"] = speech
+                        current["speech_bold"] = speech_bold
+                        current["speech_italics"] = speech_italics
+                        if subtopic:
+                            current["level_2"] = subtopic
+                            current["level_3"] = ""
+                        # add to the loop counter additionally
+                        row_id += 1
+                        continue
 
             if bold[row_id].count("1") < 4:
                 # most likely it is just a stray bold
