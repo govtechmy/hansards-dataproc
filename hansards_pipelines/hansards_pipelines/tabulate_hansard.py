@@ -130,6 +130,30 @@ def get_author_and_speech(text, bold, italics, house, warn="", is_pipeline=False
     speech_italics = ""
     subtopic = ""
 
+    line = text.strip()
+
+    # robust speaker detection
+    if ":" in line and not line.startswith("["):
+        candidate = line.split(":", 1)[0].strip()
+
+        if (
+            # strongest signal: has constituency
+            ("[" in candidate and "]" in candidate)
+
+            # OR has common Malaysian titles
+            or re.search(
+                r"\b(Tuan|Datuk|Dato['’]?|Tan Sri|Puan|Dr\.|Menteri|Perdana|Timbalan|Yang Berhormat)\b",
+                candidate,
+                re.IGNORECASE
+            )
+        ):
+            split_idx = text.find(":")
+            author = text[:split_idx].strip()
+            speech = text[split_idx + 1:]
+            speech_bold = bold[split_idx + 1:]
+            speech_italics = italics[split_idx + 1:]
+            return author, speech, speech_bold, speech_italics, ""
+
     # If RUKUN NEGARA make sure author is set to ANNOTATION
     # They begun to implement this starting from DR-04022025
     if (
