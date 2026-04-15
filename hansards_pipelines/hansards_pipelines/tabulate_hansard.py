@@ -1394,8 +1394,10 @@ def tabulate(
                     )
 
     # export speeches to csv
+    # utf-8-sig adds a BOM so Excel opens the file as UTF-8 instead of the
+    # system locale (MacRoman/Windows-1252), preventing mojibake like â€™ or ‚Äô.
     if not is_pipeline:
-        with open(f"{dir_path}result.csv", mode="w", newline="") as file:
+        with open(f"{dir_path}result.csv", mode="w", newline="", encoding="utf-8-sig") as file:
             writer = csv.writer(file)
             writer.writerow(
                 [
