@@ -205,6 +205,17 @@ def normalize_malaysian_name(name, remove_titles=True, standardize_spacing=True)
         if not unique_words or word != unique_words[-1]:
             unique_words.append(word)
     normalized_name = " ".join(unique_words)
+    
+    # Remove standalone punctuation tokens (e.g., leading/trailing dots, commas)
+    # This handles cases like ". MAHATHIR" or "MAHATHIR ."
+    cleaned_words = []
+    for word in normalized_name.split():
+        # Strip leading/trailing punctuation from each word
+        cleaned_word = word.strip('.,;:!?-–—')
+        # Only keep non-empty words that aren't pure punctuation
+        if cleaned_word and not all(c in '.,;:!?-–—()[]{}' for c in cleaned_word):
+            cleaned_words.append(cleaned_word)
+    normalized_name = " ".join(cleaned_words)
 
     return normalized_name
 
