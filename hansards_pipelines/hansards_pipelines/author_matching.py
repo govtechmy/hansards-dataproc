@@ -182,9 +182,6 @@ def normalize_malaysian_name(name, remove_titles=True, standardize_spacing=True)
 
         # Remove parenthesized content (often contains titles or alternate names)
         normalized_name = re.sub(r"\([^)]*\)", "", normalized_name)
-        
-        # Remove bracketed content (often contains constituencies like [Langkawi])
-        normalized_name = re.sub(r"\[[^\]]*\]", "", normalized_name)
 
         # Clean up any resulting multiple spaces
         if standardize_spacing:
