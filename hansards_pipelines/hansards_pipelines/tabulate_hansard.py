@@ -822,6 +822,7 @@ def tabulate(
         if (
             line.startswith("[")
             and line.endswith("]")
+            and current["author"] == ""
             and _is_majority_italic_bracket(text[row_id], italics[row_id], 0)
         ):
 
@@ -829,7 +830,7 @@ def tabulate(
                 dewan_tangguh = True
 
             # Flush previous speech if exists
-            if current["speech"]:
+            if current["speech"].strip():
                 speeches += insert_speech(current)
                 current["speech"] = ""
                 current["speech_bold"] = ""
