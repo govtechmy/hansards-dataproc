@@ -935,6 +935,7 @@ def tabulate(
                     current["speech"] = text[row_id]
                     current["speech_bold"] = bold[row_id]
                     current["speech_italics"] = italics[row_id]
+                    continue
 
             # Question format: "Datuk Name [Constituency]." on one line
             #                  "minta Menteri..." on next line
