@@ -142,7 +142,7 @@ def get_author_and_speech(text, bold, italics, house, warn="", is_pipeline=False
 
             # OR has common Malaysian titles
             or re.search(
-                r"\b(Tuan|Datuk|Dato['’]?|Tan Sri|Puan|Dr\.|Menteri|Perdana|Timbalan|Yang Berhormat)\b",
+                r"\b(Tuan|Datuk|Dato['’ʼ]?|Tan Sri|Puan|Dr\.|Menteri|Perdana|Timbalan|Yang Berhormat)\b",
                 candidate,
                 re.IGNORECASE
             )
@@ -882,6 +882,33 @@ def tabulate(
 
             continue
 
+        # ALWAYS try detect speaker FIRST
+        (
+            author,
+            speech,
+            speech_bold,
+            speech_italics,
+            subtopic,
+        ) = get_author_and_speech(
+            text[row_id],
+            bold[row_id],
+            italics[row_id],
+            house=house,
+            is_pipeline=is_pipeline,
+        )
+
+        if author != "":
+            speeches += insert_speech(current)
+            current["author"] = author
+            current["speech"] = speech
+            current["speech_bold"] = speech_bold
+            current["speech_italics"] = speech_italics
+            if subtopic:
+                current["level_2"] = subtopic
+                current["level_3"] = ""
+            continue
+
+        # THEN fallback → continuation
         # now check if it is author or title etc
         if "1" not in bold[row_id]:
             # if there is no bold in a line
@@ -950,31 +977,6 @@ def tabulate(
                 current["speech"] += text[row_id]
                 current["speech_bold"] += bold[row_id]
                 current["speech_italics"] += italics[row_id]
-                continue
-
-            (
-                author,
-                speech,
-                speech_bold,
-                speech_italics,
-                subtopic,
-            ) = get_author_and_speech(
-                text[row_id],
-                bold[row_id],
-                italics[row_id],
-                house=house,
-                is_pipeline=is_pipeline,
-            )
-            if author != "":
-                speeches += insert_speech(current)
-                current["author"] = author
-                assert speech[-1] == "\n", f"Speech does not end with newline: {speech}"
-                current["speech"] = speech
-                current["speech_bold"] = speech_bold
-                current["speech_italics"] = speech_italics
-                if subtopic:
-                    current["level_2"] = subtopic
-                    current["level_3"] = ""
                 continue
 
             # sometimes the author has too long name and overflow to second line
