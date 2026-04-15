@@ -9,6 +9,7 @@ import pandas as pd
 from thefuzz import process
 from datetime import datetime
 from .utils.text_utils import is_number_only
+from hansards_pipelines.legacy_pipeline.constants import NON_SPEAKER_VERBS
 
 
 def more_than_30_minutes_past(time_str1, time_str2):
@@ -132,6 +133,9 @@ def get_author_and_speech(text, bold, italics, house, warn="", is_pipeline=False
 
     line = text.strip()
 
+    if any(re.search(rf"\b{kw}\b", line, re.IGNORECASE) for kw in NON_SPEAKER_VERBS):
+        return "", "", "", "", ""
+
     # robust speaker detection
     if ":" in line and not line.startswith("["):
         candidate = line.split(":", 1)[0].strip()
@@ -147,6 +151,7 @@ def get_author_and_speech(text, bold, italics, house, warn="", is_pipeline=False
         if (
             # strongest signal: has constituency
             ("[" in candidate and "]" in candidate)
+            and not any(re.search(rf"\b{kw}\b", candidate, re.IGNORECASE) for kw in NON_SPEAKER_VERBS) # e.g [Akta 172]
 
             # OR has common Malaysian titles
             or re.search(
@@ -902,15 +907,18 @@ def tabulate(
         line = text[row_id].strip()
 
         # HARD BREAK: numbered line -> never append to previous speaker
-        if re.match(r"^\d{1,2}\.\s+", line):
+        if (
+            re.match(r"^\d{1,2}\.\s+", line)
+            and re.search(r"\[[^\]]+\]", line)   # has constituency -> strong MP signal
+        ):
             speeches += insert_speech(current)
 
             current["author"] = ""
             current["speech"] = text[row_id]
             current["speech_bold"] = bold[row_id]
             current["speech_italics"] = italics[row_id]
-
             continue
+
         # THEN fallback → continuation
         # now check if it is author or title etc
         if "1" not in bold[row_id]:
