@@ -136,6 +136,14 @@ def get_author_and_speech(text, bold, italics, house, warn="", is_pipeline=False
     if ":" in line and not line.startswith("["):
         candidate = line.split(":", 1)[0].strip()
 
+        # block numbered question pretending to be speaker e.g "1. Dato Ali minta:""
+        if re.match(r"^\d+\.", line):
+            return "", "", "", "", ""
+
+        # block question lines that includes speaker-like patterns but are not actually speakers, example "1. Dato Ali minta"
+        if re.search(r"\b(minta|meminta|bertanya)\b", line, re.IGNORECASE):
+            return "", "", "", "", ""
+
         if (
             # strongest signal: has constituency
             ("[" in candidate and "]" in candidate)
@@ -241,23 +249,6 @@ def get_author_and_speech(text, bold, italics, house, warn="", is_pipeline=False
         speech = text[split_idx + 1 :]
         speech_bold = bold[split_idx + 1 :]
         speech_italics = italics[split_idx + 1 :]
-    elif re.search(
-        r"^\d{1,2}\.? [A-Za-z `.’\'@\/\-()]+(\[[A-Za-z \-]+]:?)? *[Mm](em)?inta", text
-    ):
-        # JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN
-        # 1. Tuan Tan Kok Wai [Cheras] minta Menteri Pembangunan Usahawan menyatakan,
-        split_idx = text.find("minta")
-        if split_idx == -1:
-            split_idx = text.find("Minta")
-        author = text[:split_idx].strip()
-        if author.endswith(":"):
-            author = author[:-1]
-        speech = text[split_idx:]
-        speech_bold = bold[split_idx:]
-        speech_italics = italics[split_idx:]
-        # get the numbering
-        subtopic, author = author.split(" ", maxsplit=1)
-
     elif (
         not warn
         and re.search(r"] ?:", text)
@@ -944,11 +935,6 @@ def tabulate(
                     current["speech"] = text[row_id]
                     current["speech_bold"] = bold[row_id]
                     current["speech_italics"] = italics[row_id]
-                    # Extract the numbering as level_2
-                    match = re.match(r"^(\d{1,2}\.)\s+", text[row_id].strip())
-                    if match:
-                        current["level_2"] = match.group(1)
-                    continue
 
             # Question format: "Datuk Name [Constituency]." on one line
             #                  "minta Menteri..." on next line
@@ -986,11 +972,10 @@ def tabulate(
             # ):
             if (
                 row_id + 1 < num_rows
-                and ":" not in text[row_id]          # don't merge if current line is header
-                and ":" not in text[row_id + 1]      # don't merge if next line is speaker
-                and not (
-                    text[row_id + 1].startswith("[") and italics[row_id + 1][1] == "1"
-                )
+                and ":" not in text[row_id]          # don't merge if current line is a speaker
+                and ":" not in text[row_id + 1]      # don't merge if next line is a speaker
+                and not re.match(r"^\d+\.", text[row_id + 1].strip())   # don't merge if next line is question number
+                and not (text[row_id + 1].startswith("[") and italics[row_id + 1][1] == "1") # don't merge if next line is annotation
             ):
                 concat_rows = f"{text[row_id].strip()} {text[row_id + 1]}"
                 concat_rows_bold = f"{bold[row_id].strip()} {bold[row_id + 1]}"
