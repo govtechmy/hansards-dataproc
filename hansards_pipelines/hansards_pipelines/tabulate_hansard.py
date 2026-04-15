@@ -981,8 +981,16 @@ def tabulate(
 
             # sometimes the author has too long name and overflow to second line
             # but make sure this is not an annotation
-            if row_id + 1 < num_rows and not (
-                text[row_id + 1].startswith("[") and italics[row_id + 1][1] == "1"
+            # if row_id + 1 < num_rows and not (
+            #     text[row_id + 1].startswith("[") and italics[row_id + 1][1] == "1"
+            # ):
+            if (
+                row_id + 1 < num_rows
+                and ":" not in text[row_id]          # don't merge if current line is header
+                and ":" not in text[row_id + 1]      # don't merge if next line is speaker
+                and not (
+                    text[row_id + 1].startswith("[") and italics[row_id + 1][1] == "1"
+                )
             ):
                 concat_rows = f"{text[row_id].strip()} {text[row_id + 1]}"
                 concat_rows_bold = f"{bold[row_id].strip()} {bold[row_id + 1]}"
@@ -1117,6 +1125,7 @@ def tabulate(
                 while (
                     row_id + add_idx < num_rows
                     and upper_lower_ratio(text[row_id + add_idx]) > 1
+                    and ":" not in text[row_id + add_idx] # dont merge with speaker lines
                     and category_probability(
                         current_category + " " + text[row_id + add_idx].strip(),
                         categories,
