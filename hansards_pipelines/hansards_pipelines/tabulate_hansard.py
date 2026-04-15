@@ -899,6 +899,18 @@ def tabulate(
                 current["level_3"] = ""
             continue
 
+        line = text[row_id].strip()
+
+        # HARD BREAK: numbered line -> never append to previous speaker
+        if re.match(r"^\d{1,2}\.\s+", line):
+            speeches += insert_speech(current)
+
+            current["author"] = ""
+            current["speech"] = text[row_id]
+            current["speech_bold"] = bold[row_id]
+            current["speech_italics"] = italics[row_id]
+
+            continue
         # THEN fallback → continuation
         # now check if it is author or title etc
         if "1" not in bold[row_id]:
