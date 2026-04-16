@@ -9,6 +9,7 @@ import pandas as pd
 from thefuzz import process
 from datetime import datetime
 from .utils.text_utils import is_number_only
+from hansards_pipelines.legacy_pipeline.constants import NON_SPEAKER_VERBS
 
 
 def more_than_30_minutes_past(time_str1, time_str2):
@@ -122,6 +123,12 @@ def category_probability(text, categories, check_upper_lower=True):
     candidate_category, match_score = process.extractOne(text, categories)
     return match_score / 100
 
+def is_procedural_annotation(line: str) -> bool:
+    return bool(re.match(
+        r"^\[(Soalan|Mesyuarat|Dewan|Ditangguhkan|Tangguh|Usul)",
+        line.strip(),
+        re.IGNORECASE
+    ))
 
 def get_author_and_speech(text, bold, italics, house, warn="", is_pipeline=False):
     author = ""
@@ -132,21 +139,28 @@ def get_author_and_speech(text, bold, italics, house, warn="", is_pipeline=False
 
     line = text.strip()
 
+    # ONLY block verbs if it's NOT a speaker line
+    if ":" not in line and any(
+        re.search(rf"\b{kw}\b", line, re.IGNORECASE) for kw in NON_SPEAKER_VERBS
+    ):
+        return "", "", "", "", ""
+
     # robust speaker detection
     if ":" in line and not line.startswith("["):
         candidate = line.split(":", 1)[0].strip()
 
-        # block numbered question pretending to be speaker e.g "1. Dato Ali minta:""
+        # block numbered question pretending to be speaker e.g "1. Dato Ali:""
         if re.match(r"^\d+\.", line):
             return "", "", "", "", ""
 
-        # block question lines that includes speaker-like patterns but are not actually speakers, example "1. Dato Ali minta"
-        if re.search(r"\b(minta|meminta|bertanya)\b", line, re.IGNORECASE):
-            return "", "", "", "", ""
+        # # block question lines that includes speaker-like patterns but are not actually speakers if its numbered question, example "1. Dato Ali minta"
+        # if re.match(r"^\d+\.", line) and re.search(r"\b(minta|meminta|bertanya)\b", line, re.IGNORECASE):
+        #     return "", "", "", "", ""
 
         if (
             # strongest signal: has constituency
             ("[" in candidate and "]" in candidate)
+            and not any(re.search(rf"\b{kw}\b", candidate, re.IGNORECASE) for kw in NON_SPEAKER_VERBS) # e.g [Akta 172]
 
             # OR has common Malaysian titles
             or re.search(
@@ -818,13 +832,14 @@ def tabulate(
             line.startswith("[")
             and line.endswith("]")
             and _is_majority_italic_bracket(text[row_id], italics[row_id], 0)
+            and is_procedural_annotation(line)
         ):
 
             if text[row_id].startswith("[Dewan ditangguhkan") or text[row_id].startswith("[Mesyuarat ditangguhkan"):
                 dewan_tangguh = True
 
             # Flush previous speech if exists
-            if current["speech"]:
+            if current["speech"].strip():
                 speeches += insert_speech(current)
                 current["speech"] = ""
                 current["speech_bold"] = ""
@@ -897,6 +912,21 @@ def tabulate(
             if subtopic:
                 current["level_2"] = subtopic
                 current["level_3"] = ""
+            continue
+
+        line = text[row_id].strip()
+
+        # HARD BREAK: numbered line -> never append to previous speaker
+        if (
+            re.match(r"^\d{1,2}\.\s+", line)
+            and re.search(r"\[[^\]]+\]", line)   # has constituency -> strong MP signal
+        ):
+            speeches += insert_speech(current)
+
+            current["author"] = ""
+            current["speech"] = text[row_id]
+            current["speech_bold"] = bold[row_id]
+            current["speech_italics"] = italics[row_id]
             continue
 
         # THEN fallback → continuation
