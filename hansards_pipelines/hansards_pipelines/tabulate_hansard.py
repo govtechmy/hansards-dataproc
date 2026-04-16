@@ -133,20 +133,23 @@ def get_author_and_speech(text, bold, italics, house, warn="", is_pipeline=False
 
     line = text.strip()
 
-    if any(re.search(rf"\b{kw}\b", line, re.IGNORECASE) for kw in NON_SPEAKER_VERBS):
+    # ONLY block verbs if it's NOT a speaker line
+    if ":" not in line and any(
+        re.search(rf"\b{kw}\b", line, re.IGNORECASE) for kw in NON_SPEAKER_VERBS
+    ):
         return "", "", "", "", ""
 
     # robust speaker detection
     if ":" in line and not line.startswith("["):
         candidate = line.split(":", 1)[0].strip()
 
-        # block numbered question pretending to be speaker e.g "1. Dato Ali minta:""
+        # block numbered question pretending to be speaker e.g "1. Dato Ali:""
         if re.match(r"^\d+\.", line):
             return "", "", "", "", ""
 
-        # block question lines that includes speaker-like patterns but are not actually speakers, example "1. Dato Ali minta"
-        if re.search(r"\b(minta|meminta|bertanya)\b", line, re.IGNORECASE):
-            return "", "", "", "", ""
+        # # block question lines that includes speaker-like patterns but are not actually speakers if its numbered question, example "1. Dato Ali minta"
+        # if re.match(r"^\d+\.", line) and re.search(r"\b(minta|meminta|bertanya)\b", line, re.IGNORECASE):
+        #     return "", "", "", "", ""
 
         if (
             # strongest signal: has constituency
