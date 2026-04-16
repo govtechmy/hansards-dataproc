@@ -123,6 +123,12 @@ def category_probability(text, categories, check_upper_lower=True):
     candidate_category, match_score = process.extractOne(text, categories)
     return match_score / 100
 
+def is_procedural_annotation(line: str) -> bool:
+    return bool(re.match(
+        r"^\[(Soalan|Mesyuarat|Dewan|Ditangguhkan|Tangguh|Usul)",
+        line.strip(),
+        re.IGNORECASE
+    ))
 
 def get_author_and_speech(text, bold, italics, house, warn="", is_pipeline=False):
     author = ""
@@ -825,8 +831,8 @@ def tabulate(
         if (
             line.startswith("[")
             and line.endswith("]")
-            and current["author"] == ""
             and _is_majority_italic_bracket(text[row_id], italics[row_id], 0)
+            and is_procedural_annotation(line)
         ):
 
             if text[row_id].startswith("[Dewan ditangguhkan") or text[row_id].startswith("[Mesyuarat ditangguhkan"):
