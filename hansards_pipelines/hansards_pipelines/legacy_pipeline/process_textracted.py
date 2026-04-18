@@ -129,6 +129,14 @@ def parse_timestamp(txt):
     print(f"Found timestamp: {txt} - hour: {h}, minute: {mnt}")
     return time(h, mnt)
 
+def is_question_line(text: str) -> bool:
+    text = text.lower().strip()
+
+    return (
+        re.match(r'^\d+\.\s+', text)
+        and re.search(r'\b(minta|meminta|bertanya)\b', text)
+    )
+
 def extract_toc_block(df, filename=None, fallback_max_lines=30, logger=None):
     toc_df = df[~df['layout'].isin(['Header', 'Footer'])].copy()
     toc_df['txt'] = toc_df['text'].fillna('').astype(str)
@@ -226,7 +234,7 @@ def find_non_speaker_verbs(author_text):
 
 def process_layout(df, toc_df, filename=None, logger=None):
     df['is_timestamp'] = df['clean'].str.match(ts_full)
-    df['is_speaker'] = df['clean'].str.match(r'^(?!\d+\.)[^:]{3,}?:')
+    df['is_speaker'] = df['clean'].str.match(r'^(?!\d+\.)[A-Z][^:]{3,}:') #r'^(?!\d+\.)[A-Z][^:]{3,}:\s')
 
     doa_keywords = DOA_KEYWORDS.copy()
     if filename and filename in DOA_KEYWORDS_OVERRIDE:
@@ -337,13 +345,49 @@ def process_layout(df, toc_df, filename=None, logger=None):
     current_level1 = ''
     current_level2 = ''
     ts_cur = ts_init
+
+    in_question_block = False
+
     for idx, row in post.iterrows():
+
+        line = row['clean']
+
         if row['is_timestamp']:
             t = parse_timestamp(row['clean'])
             if t:
                 ts_cur = t
 
-        if row['is_speaker']:
+        if is_question_line(line):
+
+            # flush previous speaker
+            if current_author:
+                segments.append({
+                    'level_1': current_level1,
+                    'level_2': current_level2,
+                    'level_3': '',
+                    'timestamp': ts_cur.strftime('%H%M') if ts_cur else '',
+                    'author': current_author,
+                    'speech': current_speech.strip()
+                })
+
+            # start question block (NO speaker)
+            segments.append({
+                'level_1': row['level_1'],
+                'level_2': row['level_2'],
+                'level_3': '',
+                'timestamp': ts_cur.strftime('%H%M') if ts_cur else '',
+                'author': None,
+                'speech': row['clean'].strip()
+            })
+
+            current_author = None
+            current_speech = ''
+            in_question_block = True
+
+            continue
+
+        if row['is_speaker'] and not is_question_line(line):
+            in_question_block = False
 
             parts = row['clean'].split(':', 1)
             possible_author = parts[0].strip()
@@ -380,6 +424,7 @@ def process_layout(df, toc_df, filename=None, logger=None):
             current_level1 = row['level_1']
             current_level2 = row['level_2']
         elif row['is_upper'] and not row['is_speaker']:
+            in_question_block = False
             # heading without speaker
             segments.append({
                 'level_1': row['level_1'],
@@ -389,11 +434,18 @@ def process_layout(df, toc_df, filename=None, logger=None):
                 'author': None,
                 'speech': ''
             })
+
         elif not row['is_upper'] and not row['is_timestamp']:
+
+            # CONTINUE QUESTION BLOCK
+            if in_question_block:
+                if segments and segments[-1]['author'] is None:
+                    segments[-1]['speech'] += '\n' + row['clean']
+                continue
+
             if current_author:
                 current_speech += '\n' + row['clean']
             else:
-                # orphaned paragraph — no speaker
                 segments.append({
                     'level_1': row['level_1'],
                     'level_2': row['level_2'],
@@ -435,10 +487,10 @@ def prepare_db_payload(df_speech, prefix, date_str):
     sitting_obj = get_sitting_object(pdf_key)
 
     try:
-        df_speech["index"] = df_speech.reset_index().index
         df_speech["date"] = pd.to_datetime(date_str)
         df_speech["house"] = house_mapper.to_display(prefix)
         df_speech["is_annotation"] = (df_speech["author"].astype(str).str.strip().str.upper() == "ANNOTATION")
+        df_speech["index"] = df_speech.reset_index().index
 
         df_author = pd.DataFrame(requests.get(f"{DEV_API_URL}/api/author").json())
         df_author_hist = pd.DataFrame(requests.get(f"{DEV_API_URL}/api/author-history").json())
@@ -482,7 +534,6 @@ def prepare_db_payload(df_speech, prefix, date_str):
         raise RuntimeError("Aborting because author matching is required to continue.")
 
     df_speech["sitting"] = sitting_obj["proper_date_str"]
-    df_speech["index"] = df_speech.reset_index().index
     df_speech["proc_speech"] = df_speech["speech"]
     df_speech["speech_tokens"] = df_speech["proc_speech"].apply(preprocess_malaya)
     df_speech["length"] = df_speech["speech_tokens"].apply(len)
@@ -871,7 +922,6 @@ def process_and_insert(prefix, key, date_str, logger):
 
     toc_df = extract_toc_block(df, filename=key.split("/")[-1], logger=logger)
     df_speech = process_layout(df, toc_df, filename=key.split("/")[-1], logger=logger)
-    df_speech = merge_question_blocks(df_speech)
     df_speech = clean_speech_using_layout(df_speech, df, logger)
 
     if df_speech.empty:
