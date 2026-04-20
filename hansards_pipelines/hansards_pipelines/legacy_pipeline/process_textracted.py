@@ -300,6 +300,7 @@ def process_layout(df, toc_df, filename=None, logger=None):
             print(f"\nProcessing line [{idx}]: {text}")
             print(f"   Normalized: {norm}")
 
+            # --- compute L2 first ---
             best_l2_score = 0
             best_l2_l1 = None
             for _, toc in toc_df.iterrows():
@@ -307,36 +308,39 @@ def process_layout(df, toc_df, filename=None, logger=None):
                 if score > best_l2_score:
                     best_l2_score = score
                     best_l2_l1 = toc['level_1']
-            print(f"    Best L2 match score: {best_l2_score:.2f} (matched to: {best_l2_l1})")
 
-            if best_l2_score >= 0.6:
-                l1, l2 = best_l2_l1, text
-                print(f" ✅ Assigned as level_2 under: {l1}")
+            # --- compute L1 ---
+            best_l1_score = 0
+            best_l1_match = None
+            for _, toc in toc_df.iterrows():
+                score = SequenceMatcher(None, norm, toc['norm_l1']).ratio()
+                if score > best_l1_score:
+                    best_l1_score = score
+                    best_l1_match = toc['level_1']
+
+            # --- DECISION BLOCK ---
+            if best_l1_score >= 0.6:
+                l1 = text
+                l2 = ''
+                print(f"[L1][TOC] {text}")
+
+            elif best_l2_score >= 0.6:
+                if not l1:
+                    l1 = best_l2_l1
+                l2 = text
+                print(f"[L2][TOC] {text} under {l1}")
+
             else:
-                best_l1_score = 0
-                best_l1_match = None
-                for _, toc in toc_df.iterrows():
-                    score = SequenceMatcher(None, norm, toc['norm_l1']).ratio()
-                    if score > best_l1_score:
-                        best_l1_score = score
-                        best_l1_match = toc['level_1']
-                print(f"    Best L1 match score: {best_l1_score:.2f} (matched to: {best_l1_match})")
-
-                if best_l1_score >= 0.6:
-                    l1, l2 = text, ''
-                    print(f" ✅ Assigned as level_1: {l1}")
+                if l1:
+                    l2 = text
+                    print(f"[L2][FALLBACK] {text} under {l1}")
                 else:
-                    if exp1:
-                        l1, l2 = text, ''
-                        print(f" ⚠️ Fallback: treated as level_1 via exp1")
-                    else:
-                        l2 = text
-                        print(f" ⚠️ Fallback: treated as level_2 via exp1")
-                    exp1 = not exp1
-        else:
-            exp1 = True
-        post.at[idx, 'level_1'] = l1
-        post.at[idx, 'level_2'] = l2
+                    l1 = text
+                    l2 = ''
+                    print(f"[L1][FALLBACK_FIRST] {text}")
+
+            post.at[idx, 'level_1'] = l1
+            post.at[idx, 'level_2'] = l2
 
     # To capture headings with speaker
     segments = []
@@ -421,19 +425,19 @@ def process_layout(df, toc_df, filename=None, logger=None):
 
             current_author = possible_author
             current_speech = parts[1].strip() if len(parts) > 1 else ''
-            current_level1 = row['level_1']
-            current_level2 = row['level_2']
+            if row['level_1']:
+                current_level1 = row['level_1']
+
+            if row['level_2']:
+                current_level2 = row['level_2']
         elif row['is_upper'] and not row['is_speaker']:
             in_question_block = False
-            # heading without speaker
-            segments.append({
-                'level_1': row['level_1'],
-                'level_2': row['level_2'],
-                'level_3': '',
-                'timestamp': ts_cur.strftime('%H%M') if ts_cur else '',
-                'author': None,
-                'speech': ''
-            })
+
+            # just update context, DO NOT create segment
+            if row['level_1']:
+                current_level1 = row['level_1']
+            if row['level_2']:
+                current_level2 = row['level_2']
 
         elif not row['is_upper'] and not row['is_timestamp']:
 
