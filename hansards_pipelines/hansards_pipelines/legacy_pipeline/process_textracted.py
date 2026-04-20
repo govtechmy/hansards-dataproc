@@ -430,10 +430,31 @@ def process_layout(df, toc_df, filename=None, logger=None):
 
             if row['level_2']:
                 current_level2 = row['level_2']
+        # elif row['is_upper'] and not row['is_speaker']:
+        #     in_question_block = False
+
+        #     # just update context, DO NOT create segment
+        #     if row['level_1']:
+        #         current_level1 = row['level_1']
+        #     if row['level_2']:
+        #         current_level2 = row['level_2']
+
         elif row['is_upper'] and not row['is_speaker']:
             in_question_block = False
 
-            # just update context, DO NOT create segment
+            if current_author:
+                segments.append({
+                    'level_1': current_level1,
+                    'level_2': current_level2,
+                    'level_3': '',
+                    'timestamp': ts_cur.strftime('%H%M') if ts_cur else '',
+                    'author': current_author,
+                    'speech': current_speech.strip()
+                })
+                current_author = None
+                current_speech = ''
+
+            # THEN update heading
             if row['level_1']:
                 current_level1 = row['level_1']
             if row['level_2']:
