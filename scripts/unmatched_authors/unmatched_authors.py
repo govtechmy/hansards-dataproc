@@ -1,8 +1,7 @@
 """
-Aggregate Unmatched Authors from S3
+Unmatched Authors from S3
 
 This script reads unmatched authors JSON files from S3 bucket:
-    s3://my.gov.parlimen.hsd-dataproc-bucket-dev/unmatched_authors/{dn,dr,kkdr}/
 
 And aggregates them into a single summary file per house, saving to:
     s3://my.gov.parlimen.hsd-dataproc-bucket-dev/unmatched_authors/unmatched_authors_years/{house}_unmatched_authors.csv
@@ -10,9 +9,6 @@ And aggregates them into a single summary file per house, saving to:
 
 Output format:
     author | total_mentions | years_appeared | documents_list
-
-JSON format: Each file is a list of author names (strings or null)
-Filename format: {house}_{YYYY-MM-DD}.json (e.g., dr_1980-11-25.json)
 """
 
 import os
@@ -49,7 +45,7 @@ def get_s3_client(profile_name: Optional[str] = None):
             return session.client("s3")
         return boto3.client("s3")
     except (TokenRetrievalError, NoCredentialsError) as e:
-        print(f"\n❌ AWS Credentials Error: {e}")
+        print(f"\nAWS Credentials Error: {e}")
         print("\nPlease ensure you have valid AWS credentials.")
         print("Options:")
         print("  1. Run 'aws sso login --profile <profile_name>' to refresh SSO token")
@@ -97,9 +93,15 @@ def read_json_from_s3(s3_client, bucket: str, key: str) -> list:
         response = s3_client.get_object(Bucket=bucket, Key=key)
         content = response["Body"].read().decode("utf-8")
         return json.loads(content)
-    except Exception as e:
-        print(f"Error reading {key}: {e}")
-        return []
+    except ClientError as e:
+        print(f"Error reading S3 object {key}: {e}")
+        raise SystemExit(1)
+    except UnicodeDecodeError as e:
+        print(f"Error decoding UTF-8 content from {key}: {e}")
+        raise SystemExit(1)
+    except json.JSONDecodeError as e:
+        print(f"Error parsing JSON from {key}: {e}")
+        raise SystemExit(1)
 
 
 def aggregate_all_data(s3_client, bucket: str, house: str) -> list:
@@ -134,7 +136,8 @@ def aggregate_all_data(s3_client, bucket: str, house: str) -> list:
         
         # Add each author to records
         for author in authors:
-            author_name = author if author is not None else "(NULL/EMPTY)"
+            # Normalize None and empty/whitespace-only strings
+            author_name = "(NULL/EMPTY)" if author is None or not str(author).strip() else author
             all_records.append({
                 "author": author_name,
                 "document": filename.replace(".json", ""),
@@ -183,14 +186,14 @@ def save_to_s3(s3_client, bucket: str, df: pd.DataFrame, house: str):
     """Save DataFrame to S3 as both CSV and XLSX."""
     base_key = f"{S3_PREFIX}/unmatched_authors_years/{house}_unmatched_authors"
     
-    # Save CSV
+    # Save CSV (utf-8-sig for Excel compatibility with non-ASCII characters)
     csv_buffer = io.StringIO()
-    df.to_csv(csv_buffer, index=False, encoding="utf-8")
+    df.to_csv(csv_buffer, index=False)
     csv_key = f"{base_key}.csv"
     s3_client.put_object(
         Bucket=bucket,
         Key=csv_key,
-        Body=csv_buffer.getvalue().encode("utf-8"),
+        Body=csv_buffer.getvalue().encode("utf-8-sig"),
         ContentType="text/csv"
     )
     print(f"  Uploaded: s3://{bucket}/{csv_key}")
@@ -215,9 +218,9 @@ def save_to_local(df: pd.DataFrame, output_dir: str, house: str):
     
     base_path = os.path.join(output_dir, f"{house}_unmatched_authors")
     
-    # Save CSV
+    # Save CSV (utf-8-sig for Excel compatibility with non-ASCII characters)
     csv_path = f"{base_path}.csv"
-    df.to_csv(csv_path, index=False, encoding="utf-8")
+    df.to_csv(csv_path, index=False, encoding="utf-8-sig")
     print(f"  Saved: {csv_path}")
     
     # Save XLSX
