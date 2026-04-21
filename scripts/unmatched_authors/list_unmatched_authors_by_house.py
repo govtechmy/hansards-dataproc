@@ -23,7 +23,7 @@ import boto3
 from botocore.exceptions import ClientError, TokenRetrievalError, NoCredentialsError
 import pandas as pd
 
-from hansards_pipelines.settings import S3_DATAPROC_BUCKET
+from hansards_pipelines.hansards_pipelines.settings import S3_DATAPROC_BUCKET
 
 # S3 Configuration
 S3_BUCKET = S3_DATAPROC_BUCKET
