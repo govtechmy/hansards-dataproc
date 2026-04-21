@@ -361,7 +361,30 @@ def process_layout(df, toc_df, filename=None, logger=None):
             if t:
                 ts_cur = t
 
-        if is_question_line(line):
+        elif row['is_upper'] and not row['is_speaker']:
+            in_question_block = False
+
+            # flush current speaker FIRST
+            if current_author:
+                segments.append({
+                    'level_1': current_level1,
+                    'level_2': current_level2,
+                    'level_3': '',
+                    'timestamp': ts_cur.strftime('%H%M') if ts_cur else '',
+                    'author': current_author,
+                    'speech': current_speech.strip()
+                })
+                current_author = None
+                current_speech = ''
+
+            # just update state, DO NOT append
+            if row['level_1']:
+                current_level1 = row['level_1']
+
+            if row['level_2']:
+                current_level2 = row['level_2']
+
+        elif is_question_line(line):
 
             # flush previous speaker
             if current_author:
@@ -376,8 +399,8 @@ def process_layout(df, toc_df, filename=None, logger=None):
 
             # start question block (NO speaker)
             segments.append({
-                'level_1': row['level_1'],
-                'level_2': row['level_2'],
+                'level_1': current_level1,
+                'level_2': current_level2,
                 'level_3': '',
                 'timestamp': ts_cur.strftime('%H%M') if ts_cur else '',
                 'author': None,
@@ -429,29 +452,6 @@ def process_layout(df, toc_df, filename=None, logger=None):
 
             current_author = possible_author
             current_speech = parts[1].strip()
-
-        elif row['is_upper'] and not row['is_speaker']:
-            in_question_block = False
-
-            # flush current speaker FIRST
-            if current_author:
-                segments.append({
-                    'level_1': current_level1,
-                    'level_2': current_level2,
-                    'level_3': '',
-                    'timestamp': ts_cur.strftime('%H%M') if ts_cur else '',
-                    'author': current_author,
-                    'speech': current_speech.strip()
-                })
-                current_author = None
-                current_speech = ''
-
-            # just update state, DO NOT append
-            if row['level_1']:
-                current_level1 = row['level_1']
-
-            if row['level_2']:
-                current_level2 = row['level_2']
 
         elif not row['is_upper'] and not row['is_timestamp']:
 
