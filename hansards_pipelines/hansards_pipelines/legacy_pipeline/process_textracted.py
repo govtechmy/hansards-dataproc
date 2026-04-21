@@ -425,14 +425,7 @@ def process_layout(df, toc_df, filename=None, logger=None):
                 if current_author:
                     current_speech += '\n' + row['clean']
                 else:
-                    segments.append({
-                        'level_1': row['level_1'],
-                        'level_2': row['level_2'],
-                        'level_3': '',
-                        'timestamp': ts_cur.strftime('%H%M') if ts_cur else '',
-                        'author': None,
-                        'speech': row['clean'].strip()
-                    })
+                    pass
                 continue
 
             # REAL SPEAKER
@@ -464,14 +457,7 @@ def process_layout(df, toc_df, filename=None, logger=None):
             if current_author:
                 current_speech += '\n' + row['clean']
             else:
-                segments.append({
-                    'level_1': row['level_1'],
-                    'level_2': row['level_2'],
-                    'level_3': '',
-                    'timestamp': ts_cur.strftime('%H%M') if ts_cur else '',
-                    'author': None,
-                    'speech': row['clean'].strip()
-                })
+                pass
 
     if current_author:
         segments.append({
