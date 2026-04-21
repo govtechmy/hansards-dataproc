@@ -3,9 +3,9 @@ Unmatched Authors from S3
 
 This script reads unmatched authors JSON files from S3 bucket:
 
-And aggregates them into a single summary file per house, saving to:
-    s3://my.gov.parlimen.hsd-dataproc-bucket-dev/unmatched_authors/unmatched_authors_years/{house}_unmatched_authors.csv
-    s3://my.gov.parlimen.hsd-dataproc-bucket-dev/unmatched_authors/unmatched_authors_years/{house}_unmatched_authors.xlsx
+Output:
+    s3://<bucket>/unmatched_authors/unmatched_authors_years/{house}_unmatched_authors.csv
+    s3://<bucket>/unmatched_authors/unmatched_authors_years/{house}_unmatched_authors.xlsx
 
 Output format:
     author | total_mentions | years_appeared | documents_list
@@ -22,13 +22,12 @@ from typing import Optional
 import boto3
 from botocore.exceptions import ClientError, TokenRetrievalError, NoCredentialsError
 import pandas as pd
-from dotenv import load_dotenv
 
-load_dotenv()
+from hansards_pipelines.settings import S3_DATAPROC_BUCKET
 
 # S3 Configuration
-S3_BUCKET = os.getenv("S3_DATAPROC_BUCKET", "my.gov.parlimen.hsd-dataproc-bucket-dev")
-S3_PREFIX = "unmatched_authors"
+S3_BUCKET = S3_DATAPROC_BUCKET
+S3_UNMATCHED_AUTHORS = "unmatched_authors"
 HOUSES = ["dn", "dr", "kkdr"]
 
 
@@ -111,7 +110,7 @@ def aggregate_all_data(s3_client, bucket: str, house: str) -> list:
     Returns:
         list: [{"author": ..., "document": ..., "year": ...}, ...]
     """
-    prefix = f"{S3_PREFIX}/{house}/"
+    prefix = f"{S3_UNMATCHED_AUTHORS}/{house}/"
     files = list_json_files(s3_client, bucket, prefix)
     
     print(f"Found {len(files)} files for house: {house}")
@@ -184,7 +183,7 @@ def create_summary_dataframe(all_records: list) -> pd.DataFrame:
 
 def save_to_s3(s3_client, bucket: str, df: pd.DataFrame, house: str):
     """Save DataFrame to S3 as both CSV and XLSX."""
-    base_key = f"{S3_PREFIX}/unmatched_authors_years/{house}_unmatched_authors"
+    base_key = f"{S3_UNMATCHED_AUTHORS}/unmatched_authors_years/{house}_unmatched_authors"
     
     # Save CSV (utf-8-sig for Excel compatibility with non-ASCII characters)
     csv_buffer = io.StringIO()
