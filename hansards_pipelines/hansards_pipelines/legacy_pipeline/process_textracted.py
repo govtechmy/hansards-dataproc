@@ -347,8 +347,7 @@ def process_layout(df, toc_df, filename=None, logger=None):
     current_author = None
     current_speech = ''
     current_level1 = ''
-    current_level2 = ''
-    pending_l2 = None
+    current_level2 = ''# to handle cases where heading and speaker are on the same line, we apply heading only after flushing speaker to avoid misassigning heading as speaker
     ts_cur = ts_init
 
     in_question_block = False
@@ -363,11 +362,6 @@ def process_layout(df, toc_df, filename=None, logger=None):
                 ts_cur = t
 
         if is_question_line(line):
-
-            # APPLY pending heading BEFORE question
-            if pending_l2:
-                current_level2 = pending_l2
-                pending_l2 = None
 
             # flush previous speaker
             if current_author:
@@ -402,10 +396,6 @@ def process_layout(df, toc_df, filename=None, logger=None):
             parts = row['clean'].split(':', 1)
             possible_author = parts[0].strip()
 
-            # apply pending topic here
-            if pending_l2:
-                current_level2 = pending_l2
-                pending_l2 = None
             # Filter out non-speaker lines that are misclassified as speaker due to the presence of a colon.
             if find_non_speaker_verbs(possible_author):
                 # treat as normal paragraph instead
@@ -433,19 +423,42 @@ def process_layout(df, toc_df, filename=None, logger=None):
                     'speech': current_speech.strip()
                 })
 
-            current_author = possible_author
-            current_speech = parts[1].strip() if len(parts) > 1 else ''
+            # ONLY update level AFTER flush
             if row['level_1']:
                 current_level1 = row['level_1']
+
+            current_author = possible_author
+            current_speech = parts[1].strip()
 
         elif row['is_upper'] and not row['is_speaker']:
             in_question_block = False
 
+            # flush current speaker FIRST
+            if current_author:
+                segments.append({
+                    'level_1': current_level1,
+                    'level_2': current_level2,
+                    'level_3': '',
+                    'timestamp': ts_cur.strftime('%H%M') if ts_cur else '',
+                    'author': current_author,
+                    'speech': current_speech.strip()
+                })
+                current_author = None
+                current_speech = ''
+            
             if row['level_1']:
                 current_level1 = row['level_1']
 
-            if row['level_2']:
-                pending_l2 = row['level_2']
+            current_level2 = ''
+
+            segments.append({
+                'level_1': row['level_1'],
+                'level_2': row['level_2'],
+                'level_3': '',
+                'timestamp': ts_cur.strftime('%H%M') if ts_cur else '',
+                'author': None,
+                'speech': row['clean'].strip()
+            })
 
         elif not row['is_upper'] and not row['is_timestamp']:
 
@@ -934,6 +947,7 @@ def process_and_insert(prefix, key, date_str, logger):
 
     toc_df = extract_toc_block(df, filename=key.split("/")[-1], logger=logger)
     df_speech = process_layout(df, toc_df, filename=key.split("/")[-1], logger=logger)
+    df_speech = merge_question_blocks(df_speech)
     df_speech = clean_speech_using_layout(df_speech, df, logger)
 
     if df_speech.empty:
