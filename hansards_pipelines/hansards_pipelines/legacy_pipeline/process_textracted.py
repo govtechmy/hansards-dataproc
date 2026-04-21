@@ -457,7 +457,7 @@ def process_layout(df, toc_df, filename=None, logger=None):
                 'level_3': '',
                 'timestamp': ts_cur.strftime('%H%M') if ts_cur else '',
                 'author': None,
-                'speech': row['clean'].strip()
+                'speech': ''
             })
 
         elif not row['is_upper'] and not row['is_timestamp']:
