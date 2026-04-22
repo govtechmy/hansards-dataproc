@@ -15,7 +15,7 @@ import numpy as np
 from botocore.exceptions import ClientError, TokenRetrievalError, NoCredentialsError, ProfileNotFound
 import pandas as pd
 
-from hansards_pipelines.settings import S3_DATAPROC_BUCKET
+from hansards_pipelines.settings import S3_DATAPROC_BUCKET #type: ignore
 
 
 
@@ -145,7 +145,7 @@ def validate_row(row: pd.Series) -> bool:
     Validate a row has correct data types:
     - author: string (not a number or date fragment)
     - total_mentions: int
-    - years_appeared: int
+    - years_appeared: string of years (e.g., "1990, 1991, 1992")
     - documents_list: doc names that start with dr_, dn_, or kkdr_
     
     Returns True if row is valid, False otherwise.
@@ -161,12 +161,15 @@ def validate_row(row: pd.Series) -> bool:
     if not isinstance(total_mentions, (int, np.integer)):
         return False
     
-
+    # years_appeared should be a string of years like "1990, 1991, 1992"
     years_appeared = row["years_appeared"]
-    if isinstance(years_appeared, str):
+    if not isinstance(years_appeared, str):
         return False
-    if not isinstance(years_appeared, (int, np.integer)):
-        return False
+    # Validate each year is a 4-digit number
+    years = [y.strip() for y in years_appeared.split(",")]
+    for year in years:
+        if not year.isdigit() or len(year) != 4:
+            return False
     
     if not isinstance(row["documents_list"], str):
         return False
@@ -207,7 +210,8 @@ def create_summary_dataframe(all_records: list) -> pd.DataFrame:
     
     summary["total_mentions"] = summary["document"].apply(len)
     
-    summary["years_appeared"] = summary["year"].apply(len)
+    # Convert years list to comma-separated string (e.g., "1990, 1991, 1992")
+    summary["years_appeared"] = summary["year"].apply(lambda x: ", ".join(str(y) for y in sorted(set(x))))
     
     summary["documents_list"] = summary["document"].apply(lambda x: ", ".join(sorted(set(x))))
     
