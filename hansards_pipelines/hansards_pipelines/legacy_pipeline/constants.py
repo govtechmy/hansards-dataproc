@@ -20,5 +20,6 @@ NON_SPEAKER_VERBS = [
     "pacific", "kenapakah", "samping", "strategi", "dilaporkan", "mencadangkan", "mengenai", "menanya", "dilaporkan", "dimanakah", "tanah",
     "menggalak", "mendahulukan", "penganiayaan", "dianjurkan", "tandatangan", "overhaul", "mengandungi", "tatatertib", "ataupun", "sure", "getting",
     "dapati", "begitu", "menjalankan", "mengadakan", "kelas", "fasal", "clause", "point", "following", "against", "difficult", "because",
-    "akta", "pindaan", "perintah", "duti"
+    "akta", "pindaan", "perintah", "duti", "wow", "ketawa", "riuh", "sepotong", "menggunakan", "reputation", "tepuk", "disampuk", "tingkatan", "peratus", 
+    "broadband", "berhenti", "bulan", "tajuk", "perkara", "mereka", "pembinaan", 
 ]
