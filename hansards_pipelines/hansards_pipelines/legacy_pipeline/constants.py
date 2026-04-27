@@ -25,7 +25,7 @@ NON_SPEAKER_VERBS = [
     "b", "bahasa", "baik", "bangun", "banyak", "baru", "begini", "berapa", "berbahas", "berbelanja", "daripada", "tolong", "sorak", "jelaskan", "hendak", "telah", "oleh", "boleh", "bukan",
     "buku","butir", "sangat", "lagi", "pervesion", "pula", "dari", "dasar", "datang", "and", "mana", "saya", "diajar", "diambil", "diberikan", "dibuat", "dimana",
     "tunjuk", "sebut", "din", "jika", "don't", "dran)", "hari", "empat", "estetika", "friend", "lebih", "going", "tinggi", "kepada", "hendak", "hingga", "members", "hubungan", "ibadatnya", "ini", "kalau", 
-    "itu", "iuan", "jawab", "jelas", "jika", "juga", "kasih", "ke?", "kertas", "meliputi", "memohon", "kehendak", "Kedua", "Keenam", "Kelima", "sebelah", "dikeluarkan", "sebelah", "kemalangan", "bukan", "telah", "kenaikan",
+    "itu", "iuan", "jawab", "jelas", "jika", "juga", "kasih", "ke?", "kertas", "meliputi", "memohon", "kehendak", "sebelah", "dikeluarkan", "sebelah", "kemalangan", "bukan", "telah", "kenaikan",
     "Kepala", "ramai", "kerana", "kurang", "menunjukkan", "jangan", "lagi", "laporan", "lawatan", "lebih", "lewat", "lihat", "minit", "merujuk", "macam", "maksud", "melalui", "melihat", "membalak", "membentuk", "meminta", "memperbaiki",
     "sistem", "menambah", "menarik", "membatalkan", "kerana", "tadi", "memberikan", "termasuklah", "disorak", "menyeru", "merangkap", "mesti", "minat", "minta", "mungkin", "belum", "nama", "nisbah",
     "wonder", "No.", "dominance", "over", "nota", "now", "number", "kilat", "nyatakan", "objektif", "down", "reach", "sum", "sebuah", "okey", "called", "this", "would", "ongoing", "opsyen", "supaya", "hendak", "orang", "ordinan", "other", "bising", 
