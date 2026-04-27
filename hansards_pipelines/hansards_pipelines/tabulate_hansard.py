@@ -1001,6 +1001,7 @@ def tabulate(
             if (
                 row_id + 1 < num_rows
                 and ":" not in text[row_id]          # don't merge if current line is a speaker
+                and upper_lower_ratio(text[row_id]) <= 1
                 and not re.match(r"^\d+\.", text[row_id + 1].strip())   # don't merge if next line is question number
                 and not (text[row_id + 1].startswith("[") and italics[row_id + 1][1] == "1") # don't merge if next line is annotation
             ):
@@ -1014,7 +1015,35 @@ def tabulate(
 
                 if next_author != "":
                     # next line is already a speaker → DON'T merge
-                    pass
+                    # pass
+                    combined = text[row_id].rstrip("\n") + " " + text[row_id + 1].lstrip()
+
+                    combined_bold = bold[row_id].rstrip("\n") + " " + bold[row_id + 1].lstrip()
+                    combined_italics = italics[row_id].rstrip("\n") + " " + italics[row_id + 1].lstrip()
+
+                    author, speech, speech_bold, speech_italics, subtopic = get_author_and_speech(
+                        combined,
+                        combined_bold,
+                        combined_italics,
+                        house=house,
+                        is_pipeline=is_pipeline,
+                    )
+
+                    if author != "":
+                        speeches += insert_speech(current)
+
+                        current["author"] = author
+                        current["speech"] = speech
+                        current["speech_bold"] = speech_bold
+                        current["speech_italics"] = speech_italics
+
+                        if subtopic:
+                            current["level_2"] = subtopic
+                            current["level_3"] = ""
+
+                        row_id += 1
+                        continue
+                
                 else:
                     concat_rows = f"{text[row_id].strip()} {text[row_id + 1]}"
                     concat_rows_bold = f"{bold[row_id].strip()} {bold[row_id + 1]}"
