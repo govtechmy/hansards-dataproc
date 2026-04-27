@@ -21,7 +21,17 @@ NON_SPEAKER_VERBS = [
     "menggalak", "mendahulukan", "penganiayaan", "dianjurkan", "tandatangan", "overhaul", "mengandungi", "tatatertib", "ataupun", "sure", "getting",
     "dapati", "begitu", "menjalankan", "mengadakan", "kelas", "fasal", "clause", "point", "following", "against", "difficult", "because",
     "akta", "pindaan", "perintah", "duti", "wow", "ketawa", "riuh", "sepotong", "menggunakan", "reputation", "tepuk", "disampuk", "tingkatan", "peratus", 
-    "broadband", "berhenti", "bulan", "tajuk", "perkara", "mereka", "pembinaan", "quran"
+    "broadband", "berhenti", "bulan", "tajuk", "perkara", "mereka", "pembinaan", "quran", "Loceng", "hari ini", "ada", "masing", "Tidak", "nota", "akan", "ampun", "and", "sopan", "sini", "apa", "apakah", "membaca", "himself", "cadangan", 
+    "b", "bahasa", "baik", "bangun", "banyak", "baru", "begini", "berapa", "berbahas", "berbelanja", "daripada", "tolong", "sorak", "jelaskan", "hendak", "telah", "oleh", "boleh", "bukan",
+    "buku","butir", "sangat", "lagi", "pervesion", "pula", "dari", "dasar", "datang", "and", "mana", "saya", "diajar", "diambil", "diberikan", "dibuat", "dimana",
+    "tunjuk", "sebut", "din", "jika", "don't", "dran)", "hari", "empat", "estetika", "friend", "lebih", "going", "tinggi", "kepada", "hendak", "hingga", "members", "hubungan", "ibadatnya", "ini", "kalau", 
+    "itu", "iuan", "jawab", "jelas", "jika", "juga", "kasih", "ke?", "kertas", "meliputi", "memohon", "kehendak", "Kedua", "Keenam", "Kelima", "sebelah", "dikeluarkan", "sebelah", "kemalangan", "bukan", "telah", "kenaikan",
+    "Kepala", "ramai", "kerana", "kurang", "menunjukkan", "jangan", "lagi", "laporan", "lawatan", "lebih", "lewat", "lihat", "minit", "merujuk", "macam", "maksud", "melalui", "melihat", "membalak", "membentuk", "meminta", "memperbaiki",
+    "sistem", "menambah", "menarik", "membatalkan", "kerana", "tadi", "memberikan", "termasuklah", "disorak", "menyeru", "merangkap", "mesti", "minat", "minta", "mungkin", "belum", "nama", "nisbah",
+    "wonder", "No.", "dominance", "over", "nota", "now", "number", "kilat", "nyatakan", "objektif", "down", "reach", "sum", "sebuah", "okey", "called", "this", "would", "ongoing", "opsyen", "supaya", "hendak", "orang", "ordinan", "other", "bising", 
+    "overaged", "broadcasting", "anggaran", "package", "pada", "padang", "panduan", "papan", "para", "paragaf", "paragraph", "parcel", "parit", "parlimen", "parliament", "part", "pasaran", "pasifik", "pasokan", "patah", "saperti", 
+    "pecahan", "pechahan", "pegawai", "pelaboran", "perbahasan", "perseorangan", "pemaliman", "pemasyhuran", "pembabitan", "kemiskinan", "pembaziran", "pembelaan", "pembelian", "pemberian", "pembuangan", "pemegang", "sempena", "penal",
+    "nothing", "Div.", "Causeway", "penanggohan", "penangguhan", "pendaftar", "menengah", "dikemukakan", "Ugama", "potongan", "pengantin", "pengarang", "pengedar", "membaca"
 ]
 
 
