@@ -7,7 +7,7 @@ NON_SPEAKER_VERBS = [
     "irony", "ialah", "berkata", "mengatakan", "menjelaskan", "menegaskan", "mengungkapkan", "menyampaikan", "memperjelas", "mempertegas", "mempertebal",
     "report", "resolve", "consider", "order", "amend", "adopt", "debate", "pass",
     "antara", "dengan", "untuk", "sebagai", "sehingga", "karena", "sampai", "selama", "ketika", "waktu", "sebelum", "sesudah", "selanjutnya", "kemudian", "setelah", "sebelumnya", "berlangsung", "langsung",
-    "menchadangkan", "sumpah", "berikrar", "berjanji", "mengikrarkan", "criticism", "election", "Opposition", "Perkhidmatan", "Akitek", "bahagian", "tahan", "composition", "Dalam",
+    "menchadangkan", "sumpah", "berikrar", "berjanji", "mengikrarkan", "criticism", "election", "Opposition", "Perkhidmatan", "Akitek", "bahagian", "tahan", "composition",
     "Pemandu", "atau", "Bursary", "Biasiswa", "Kerajaan", "Kerajaan Persekutuan", "Kerajaan Negeri", "Kerajaan Tempatan", "Kerajaan Pusat", "Hadiah",
     "language", "advance", "quota", "conclude", "various", "four", "contributions", "contribution", "contributed", "contributing", "contributor", "contributes", "Fasal", "question", "soalan", "jawapan", "pertanyaan", "menjawab",
     "statement", "important", "significant", "notable", "remarkable", "noteworthy",
