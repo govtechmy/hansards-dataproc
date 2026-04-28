@@ -39,5 +39,6 @@ NON_SPEAKER_VERBS = [
     "kakitangan", "kategori", "kaum", "komen", "kriteria", "kursus", "lain", "lampu", "langkah", "lepasan", "umur", "penoh", "majlis", "anggota", "system", "fikiran", "matapelajaran", "metodologi", "many", "next", "present", "comments", "misi", "menanam", "news", "page", "pengumuman", "puncha", "penguatkuasaan", "pentujuk", "penutup",
     "penyelesaian", "penyertaan", "penyunting", "peraturan", "percent", "perenggan", "periksaan", "peringkat", "period", "peristiwa", "pilihan", "merangkum", "pilihan", "status", "porah", "premium", "prioriti",
     "procedure", "progress", "promorion", "cukuplah", "qualification", "rang", "sec", "sifir", "sir", "skim", "source", "stages", "sugar","syarat", "susu", "tarikh", "than", "tujuan", "vital", "tahun", "tak", "tarikh", "terjemahannya",
-    "cara", "petang", "samalah", "rendah", "sedang", "sekali", "verdict", "unions", "unemployment", "ammunition", "timescale", "tariff", "skop", "sesi", "sastera", "radio","penyakit", "monoplies", "unity", "kredit", "jurutera", "attendance", "divides", "services", "di", "defence"
+    "cara", "petang", "samalah", "rendah", "sedang", "sekali", "verdict", "unions", "unemployment", "ammunition", "timescale", "tariff", "skop", "sesi", "sastera", "radio","penyakit", "monoplies", "unity", "kredit", "jurutera", "attendance", "divides", "services", "di", "defence", "pay", "million",
+    "nanti", "skilled", "quality", "terminal", "allowance", "ayat", "warganegara", "visit"
 ]
