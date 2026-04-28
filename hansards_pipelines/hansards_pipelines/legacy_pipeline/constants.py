@@ -31,8 +31,12 @@ NON_SPEAKER_VERBS = [
     "wonder", "No.", "dominance", "over", "nota", "now", "number", "kilat", "nyatakan", "objektif", "down", "reach", "sum", "sebuah", "okey", "called", "this", "would", "ongoing", "opsyen", "supaya", "hendak", "orang", "ordinan", "other", "bising", 
     "overaged", "broadcasting", "anggaran", "package", "pada", "padang", "panduan", "papan", "para", "paragaf", "paragraph", "parcel", "parit", "parlimen", "parliament", "part", "pasaran", "pasifik", "pasokan", "patah", "saperti", 
     "pecahan", "pechahan", "pegawai", "pelaboran", "perbahasan", "perseorangan", "pemaliman", "pemasyhuran", "pembabitan", "kemiskinan", "pembaziran", "pembelaan", "pembelian", "pemberian", "pembuangan", "pemegang", "sempena", "penal",
-    "nothing", "Div.", "Causeway", "penanggohan", "penangguhan", "pendaftar", "menengah", "dikemukakan", "Ugama", "potongan", "pengantin", "pengarang", "pengedar", "membaca"
+    "nothing", "Div.", "Causeway", "penanggohan", "penangguhan", "pendaftar", "menengah", "dikemukakan", "Ugama", "potongan", "pengantin", "pengarang", "pengedar", "membaca", "note","divided","usul","jadual", "catitan", "present", "tahun", "CATATAN", "CHATETAN", 
+    "Contohnya", "Cuti", "text", "Diputuskan", "Erti-nya", "Ertinya", "FIRST SCHEDULE", "Jadual 1", "Misalnya", "Perumahan", "Jadual", "Schedule", "terms","Umpamanya", "sejahtera", "power", "per", "rations", "tahun", "%", "penggunaan", "dikira", "English", "perlu",
+    "(a)", "(i)", "words", "guilty", "dialog", "additional", "again", "pihak", "lain", "alamat", "alasan", "pangkat", "answer", "Architects", "article", "these", "aturan", "average", "CATTTAN", "CHATITAN","salah", "Co.", "category", "cause", "catitan", "certificate", "change", "preferential", "chapter", "coming",
+    "contoh", "currently", "there", "cycling", "division", "army", "tahun", "latinnya", "falsafahnya", "surat", "seterusnya", "dear", "deaths", "demam", "here", "he", "hanya", "ha", "huraian", "ground", "give", "gaji", "from", "firman", "priority", "aid", "finally", "fasa", "full", "canned", "Experience", "Explanation",
+    "example", "ways", "total", "diputuskan", "muka", "digicam", "teachers", "concerned", "huraiannya", "come", "referred", "repeat", "quite", "some", "fruits", "approved", "written", "stated", "inflasi", "infrastruktur", "insentif", "involved", "goes", "therefore", "item", "items", "jadi", "peluru", "jual", "kajian",
+    "kakitangan", "kategori", "kaum", "komen", "kriteria", "kursus", "lain", "lampu", "langkah", "lepasan", "umur", "penoh", "majlis", "anggota", "system", "fikiran", "matapelajaran", "metodologi", "many", "next", "present", "comments", "misi", "menanam", "news", "page", "pengumuman", "puncha", "penguatkuasaan", "pentujuk", "penutup",
+    "penyelesaian", "penyertaan", "penyunting", "peraturan", "percent", "perenggan", "periksaan", "peringkat", "period", "peristiwa", "pilihan", "merangkum", "pilihan", "status", "porah", "premium", "prioriti",
+    "procedure", "progress", "promorion", "cukuplah", "qualification", "rang", "sec", "sifir", "sir", "skim", "source", "stages", "sugar","syarat", "susu", "tarikh", "than", "tujuan", "vital", "tahun", "tak", "tarikh", "terjemahannya"
 ]
-
-
-
