@@ -130,6 +130,14 @@ def is_procedural_annotation(line: str) -> bool:
         re.IGNORECASE
     ))
 
+
+def _contains_non_speaker_verb(text: str) -> bool:
+    # Escape each keyword to avoid regex parse errors from punctuation in constants.
+    return any(
+        re.search(rf"(?<!\w){re.escape(kw)}(?!\w)", text, re.IGNORECASE)
+        for kw in NON_SPEAKER_VERBS
+    )
+
 def get_author_and_speech(text, bold, italics, house, warn="", is_pipeline=False):
     author = ""
     speech = ""
@@ -140,9 +148,7 @@ def get_author_and_speech(text, bold, italics, house, warn="", is_pipeline=False
     line = text.strip()
 
     # ONLY block verbs if it's NOT a speaker line
-    if ":" not in line and any(
-        re.search(rf"\b{kw}\b", line, re.IGNORECASE) for kw in NON_SPEAKER_VERBS
-    ):
+    if ":" not in line and _contains_non_speaker_verb(line):
         return "", "", "", "", ""
 
     # robust speaker detection
@@ -160,7 +166,7 @@ def get_author_and_speech(text, bold, italics, house, warn="", is_pipeline=False
         if (
             # strongest signal: has constituency
             ("[" in candidate and "]" in candidate)
-            and not any(re.search(rf"\b{kw}\b", candidate, re.IGNORECASE) for kw in NON_SPEAKER_VERBS) # e.g [Akta 172]
+            and not _contains_non_speaker_verb(candidate) # e.g [Akta 172]
 
             # OR has common Malaysian titles
             or re.search(
