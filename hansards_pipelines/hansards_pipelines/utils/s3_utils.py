@@ -43,8 +43,15 @@ def prepare_json_for_s3(json_dict: dict) -> str:
 
 
 def prepare_csv_for_s3(text_lines: List[str]) -> str:
-    """Convert list of strings to CSV"""
+    """Convert list of strings to CSV with a UTF-8 BOM.
+
+    The BOM (U+FEFF) causes Excel to interpret the file as UTF-8 rather
+    than the system locale, preventing mojibake like ‚Äô instead of '.
+    boto3 encodes the returned string as UTF-8 when uploading, so the BOM
+    bytes (EF BB BF) are written correctly to S3.
+    """
     output = io.StringIO()
+    output.write("\ufeff")  # UTF-8 BOM
     writer = csv.writer(output)
     writer.writerow(["level_1", "level_2", "level_3", "timestamp", "author", "speech"])
     writer.writerows(text_lines)

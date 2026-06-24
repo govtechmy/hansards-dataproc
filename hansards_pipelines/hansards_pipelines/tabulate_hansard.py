@@ -9,6 +9,7 @@ import pandas as pd
 from thefuzz import process
 from datetime import datetime
 from .utils.text_utils import is_number_only
+from hansards_pipelines.legacy_pipeline.constants import NON_SPEAKER_VERBS
 
 
 def more_than_30_minutes_past(time_str1, time_str2):
@@ -122,6 +123,20 @@ def category_probability(text, categories, check_upper_lower=True):
     candidate_category, match_score = process.extractOne(text, categories)
     return match_score / 100
 
+def is_procedural_annotation(line: str) -> bool:
+    return bool(re.match(
+        r"^\[(Soalan|Mesyuarat|Dewan|Ditangguhkan|Tangguh|Usul)",
+        line.strip(),
+        re.IGNORECASE
+    ))
+
+
+def _contains_non_speaker_verb(text: str) -> bool:
+    # Escape each keyword to avoid regex parse errors from punctuation in constants.
+    return any(
+        re.search(rf"(?<!\w){re.escape(kw)}(?!\w)", text, re.IGNORECASE)
+        for kw in NON_SPEAKER_VERBS
+    )
 
 def get_author_and_speech(text, bold, italics, house, warn="", is_pipeline=False):
     author = ""
@@ -129,6 +144,43 @@ def get_author_and_speech(text, bold, italics, house, warn="", is_pipeline=False
     speech_bold = ""
     speech_italics = ""
     subtopic = ""
+
+    line = text.strip()
+
+    # ONLY block verbs if it's NOT a speaker line
+    if ":" not in line and _contains_non_speaker_verb(line):
+        return "", "", "", "", ""
+
+    # robust speaker detection
+    if ":" in line and not line.startswith("["):
+        candidate = line.split(":", 1)[0].strip()
+
+        # block numbered question pretending to be speaker e.g "1. Dato Ali:""
+        if re.match(r"^\d+\.", line):
+            return "", "", "", "", ""
+
+        # # block question lines that includes speaker-like patterns but are not actually speakers if its numbered question, example "1. Dato Ali minta"
+        # if re.match(r"^\d+\.", line) and re.search(r"\b(minta|meminta|bertanya)\b", line, re.IGNORECASE):
+        #     return "", "", "", "", ""
+
+        if (
+            # strongest signal: has constituency
+            ("[" in candidate and "]" in candidate)
+            and not _contains_non_speaker_verb(candidate) # e.g [Akta 172]
+
+            # OR has common Malaysian titles
+            or re.search(
+                r"\b(Tuan|Datuk|Dato['’ʼ]?|Tan Sri|Puan|Dr\.|Menteri|Perdana|Timbalan|Yang Berhormat)\b",
+                candidate,
+                re.IGNORECASE
+            )
+        ):
+            split_idx = text.find(":")
+            author = text[:split_idx].strip()
+            speech = text[split_idx + 1:]
+            speech_bold = bold[split_idx + 1:]
+            speech_italics = italics[split_idx + 1:]
+            return author, speech, speech_bold, speech_italics, ""
 
     # If RUKUN NEGARA make sure author is set to ANNOTATION
     # They begun to implement this starting from DR-04022025
@@ -217,23 +269,6 @@ def get_author_and_speech(text, bold, italics, house, warn="", is_pipeline=False
         speech = text[split_idx + 1 :]
         speech_bold = bold[split_idx + 1 :]
         speech_italics = italics[split_idx + 1 :]
-    elif re.search(
-        r"^\d{1,2}\.? [A-Za-z `.’\'@\/\-()]+(\[[A-Za-z \-]+]:?)? *[Mm](em)?inta", text
-    ):
-        # JAWAPAN-JAWAPAN LISAN BAGI PERTANYAAN-PERTANYAAN
-        # 1. Tuan Tan Kok Wai [Cheras] minta Menteri Pembangunan Usahawan menyatakan,
-        split_idx = text.find("minta")
-        if split_idx == -1:
-            split_idx = text.find("Minta")
-        author = text[:split_idx].strip()
-        if author.endswith(":"):
-            author = author[:-1]
-        speech = text[split_idx:]
-        speech_bold = bold[split_idx:]
-        speech_italics = italics[split_idx:]
-        # get the numbering
-        subtopic, author = author.split(" ", maxsplit=1)
-
     elif (
         not warn
         and re.search(r"] ?:", text)
@@ -803,13 +838,14 @@ def tabulate(
             line.startswith("[")
             and line.endswith("]")
             and _is_majority_italic_bracket(text[row_id], italics[row_id], 0)
+            and is_procedural_annotation(line)
         ):
 
             if text[row_id].startswith("[Dewan ditangguhkan") or text[row_id].startswith("[Mesyuarat ditangguhkan"):
                 dewan_tangguh = True
 
             # Flush previous speech if exists
-            if current["speech"]:
+            if current["speech"].strip():
                 speeches += insert_speech(current)
                 current["speech"] = ""
                 current["speech_bold"] = ""
@@ -858,6 +894,48 @@ def tabulate(
 
             continue
 
+        # ALWAYS try detect speaker FIRST
+        (
+            author,
+            speech,
+            speech_bold,
+            speech_italics,
+            subtopic,
+        ) = get_author_and_speech(
+            text[row_id],
+            bold[row_id],
+            italics[row_id],
+            house=house,
+            is_pipeline=is_pipeline,
+        )
+
+        if author != "":
+            speeches += insert_speech(current)
+            current["author"] = author
+            current["speech"] = speech
+            current["speech_bold"] = speech_bold
+            current["speech_italics"] = speech_italics
+            if subtopic:
+                current["level_2"] = subtopic
+                current["level_3"] = ""
+            continue
+
+        line = text[row_id].strip()
+
+        # HARD BREAK: numbered line -> never append to previous speaker
+        if (
+            re.match(r"^\d{1,2}\.\s+", line)
+            and re.search(r"\[[^\]]+\]", line)   # has constituency -> strong MP signal
+        ):
+            speeches += insert_speech(current)
+
+            current["author"] = ""
+            current["speech"] = text[row_id]
+            current["speech_bold"] = bold[row_id]
+            current["speech_italics"] = italics[row_id]
+            continue
+
+        # THEN fallback → continuation
         # now check if it is author or title etc
         if "1" not in bold[row_id]:
             # if there is no bold in a line
@@ -893,10 +971,6 @@ def tabulate(
                     current["speech"] = text[row_id]
                     current["speech_bold"] = bold[row_id]
                     current["speech_italics"] = italics[row_id]
-                    # Extract the numbering as level_2
-                    match = re.match(r"^(\d{1,2}\.)\s+", text[row_id].strip())
-                    if match:
-                        current["level_2"] = match.group(1)
                     continue
 
             # Question format: "Datuk Name [Constituency]." on one line
@@ -928,64 +1002,85 @@ def tabulate(
                 current["speech_italics"] += italics[row_id]
                 continue
 
-            (
-                author,
-                speech,
-                speech_bold,
-                speech_italics,
-                subtopic,
-            ) = get_author_and_speech(
-                text[row_id],
-                bold[row_id],
-                italics[row_id],
-                house=house,
-                is_pipeline=is_pipeline,
-            )
-            if author != "":
-                speeches += insert_speech(current)
-                current["author"] = author
-                assert speech[-1] == "\n", f"Speech does not end with newline: {speech}"
-                current["speech"] = speech
-                current["speech_bold"] = speech_bold
-                current["speech_italics"] = speech_italics
-                if subtopic:
-                    current["level_2"] = subtopic
-                    current["level_3"] = ""
-                continue
-
             # sometimes the author has too long name and overflow to second line
             # but make sure this is not an annotation
-            if row_id + 1 < num_rows and not (
-                text[row_id + 1].startswith("[") and italics[row_id + 1][1] == "1"
+            if (
+                row_id + 1 < num_rows
+                and ":" not in text[row_id]          # don't merge if current line is a speaker
+                and upper_lower_ratio(text[row_id]) <= 1
+                and not re.match(r"^\d+\.", text[row_id + 1].strip())   # don't merge if next line is question number
+                and not (text[row_id + 1].startswith("[") and italics[row_id + 1][1] == "1") # don't merge if next line is annotation
             ):
-                concat_rows = f"{text[row_id].strip()} {text[row_id + 1]}"
-                concat_rows_bold = f"{bold[row_id].strip()} {bold[row_id + 1]}"
-                concat_rows_italics = f"{italics[row_id].strip()} {italics[row_id + 1]}"
-                (
-                    author,
-                    speech,
-                    speech_bold,
-                    speech_italics,
-                    subtopic,
-                ) = get_author_and_speech(
-                    concat_rows,
-                    concat_rows_bold,
-                    concat_rows_italics,
+                next_author, *_ = get_author_and_speech(
+                    text[row_id + 1],
+                    bold[row_id + 1],
+                    italics[row_id + 1],
                     house=house,
                     is_pipeline=is_pipeline,
                 )
-                if author != "":
-                    speeches += insert_speech(current)
-                    current["author"] = author
-                    current["speech"] = speech
-                    current["speech_bold"] = speech_bold
-                    current["speech_italics"] = speech_italics
-                    if subtopic:
-                        current["level_2"] = subtopic
-                        current["level_3"] = ""
-                    # add to the loop counter additionally
-                    row_id += 1
-                    continue
+
+                if next_author != "":
+                    # next line is already a speaker → DON'T merge
+                    # pass
+                    combined = text[row_id].rstrip("\n") + " " + text[row_id + 1].lstrip()
+
+                    combined_bold = bold[row_id].rstrip("\n") + " " + bold[row_id + 1].lstrip()
+                    combined_italics = italics[row_id].rstrip("\n") + " " + italics[row_id + 1].lstrip()
+
+                    author, speech, speech_bold, speech_italics, subtopic = get_author_and_speech(
+                        combined,
+                        combined_bold,
+                        combined_italics,
+                        house=house,
+                        is_pipeline=is_pipeline,
+                    )
+
+                    if author != "":
+                        speeches += insert_speech(current)
+
+                        current["author"] = author
+                        current["speech"] = speech
+                        current["speech_bold"] = speech_bold
+                        current["speech_italics"] = speech_italics
+
+                        if subtopic:
+                            current["level_2"] = subtopic
+                            current["level_3"] = ""
+
+                        row_id += 1
+                        continue
+                
+                else:
+                    concat_rows = f"{text[row_id].strip()} {text[row_id + 1]}"
+                    concat_rows_bold = f"{bold[row_id].strip()} {bold[row_id + 1]}"
+                    concat_rows_italics = f"{italics[row_id].strip()} {italics[row_id + 1]}"
+
+                    (
+                        author,
+                        speech,
+                        speech_bold,
+                        speech_italics,
+                        subtopic,
+                    ) = get_author_and_speech(
+                        concat_rows,
+                        concat_rows_bold,
+                        concat_rows_italics,
+                        house=house,
+                        is_pipeline=is_pipeline,
+                    )
+
+                    if author != "":
+                        speeches += insert_speech(current)
+                        current["author"] = author
+                        current["speech"] = speech
+                        current["speech_bold"] = speech_bold
+                        current["speech_italics"] = speech_italics
+                        if subtopic:
+                            current["level_2"] = subtopic
+                            current["level_3"] = ""
+                        # add to the loop counter additionally
+                        row_id += 1
+                        continue
 
             if bold[row_id].count("1") < 4:
                 # most likely it is just a stray bold
@@ -1091,6 +1186,7 @@ def tabulate(
                 while (
                     row_id + add_idx < num_rows
                     and upper_lower_ratio(text[row_id + add_idx]) > 1
+                    and ":" not in text[row_id + add_idx] # dont merge with speaker lines
                     and category_probability(
                         current_category + " " + text[row_id + add_idx].strip(),
                         categories,
@@ -1394,8 +1490,10 @@ def tabulate(
                     )
 
     # export speeches to csv
+    # utf-8-sig adds a BOM so Excel opens the file as UTF-8 instead of the
+    # system locale (MacRoman/Windows-1252), preventing mojibake like â€™ or ‚Äô.
     if not is_pipeline:
-        with open(f"{dir_path}result.csv", mode="w", newline="") as file:
+        with open(f"{dir_path}result.csv", mode="w", newline="", encoding="utf-8-sig") as file:
             writer = csv.writer(file)
             writer.writerow(
                 [

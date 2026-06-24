@@ -24,7 +24,7 @@ import warnings
 import psycopg2
 from botocore import UNSIGNED
 from botocore.config import Config
-from ..settings import S3_TEXTRACT_BUCKET, DEV_API_URL, HANSARD_DB_URL, S3_PUBLIC_BUCKET
+from ..settings import S3_TEXTRACT_BUCKET, DEV_API_URL, HANSARD_DB_URL, S3_PUBLIC_BUCKET, S3_DATAPROC_BUCKET
 from ..direct_sitting_ingest import ingest_sitting_to_db
 from hansards_pipelines.legacy_pipeline.constants import NON_SPEAKER_VERBS
 
@@ -129,6 +129,14 @@ def parse_timestamp(txt):
     print(f"Found timestamp: {txt} - hour: {h}, minute: {mnt}")
     return time(h, mnt)
 
+def is_question_line(text: str) -> bool:
+    text = text.lower().strip()
+
+    return (
+        re.match(r'^\d+\.\s+', text)
+        and re.search(r'\b(minta|meminta|bertanya)\b', text)
+    )
+
 def extract_toc_block(df, filename=None, fallback_max_lines=30, logger=None):
     toc_df = df[~df['layout'].isin(['Header', 'Footer'])].copy()
     toc_df['txt'] = toc_df['text'].fillna('').astype(str)
@@ -226,7 +234,7 @@ def find_non_speaker_verbs(author_text):
 
 def process_layout(df, toc_df, filename=None, logger=None):
     df['is_timestamp'] = df['clean'].str.match(ts_full)
-    df['is_speaker'] = df['clean'].str.match(r'^(?!\d+\.)[^:]{3,}?:')
+    df['is_speaker'] = df['clean'].str.match(r'^(?!\d+\.)[A-Z][^:]{3,}:') #r'^(?!\d+\.)[A-Z][^:]{3,}:\s')
 
     doa_keywords = DOA_KEYWORDS.copy()
     if filename and filename in DOA_KEYWORDS_OVERRIDE:
@@ -292,6 +300,7 @@ def process_layout(df, toc_df, filename=None, logger=None):
             print(f"\nProcessing line [{idx}]: {text}")
             print(f"   Normalized: {norm}")
 
+            # --- compute L2 first ---
             best_l2_score = 0
             best_l2_l1 = None
             for _, toc in toc_df.iterrows():
@@ -299,51 +308,113 @@ def process_layout(df, toc_df, filename=None, logger=None):
                 if score > best_l2_score:
                     best_l2_score = score
                     best_l2_l1 = toc['level_1']
-            print(f"    Best L2 match score: {best_l2_score:.2f} (matched to: {best_l2_l1})")
 
-            if best_l2_score >= 0.6:
-                l1, l2 = best_l2_l1, text
-                print(f" ✅ Assigned as level_2 under: {l1}")
+            # --- compute L1 ---
+            best_l1_score = 0
+            best_l1_match = None
+            for _, toc in toc_df.iterrows():
+                score = SequenceMatcher(None, norm, toc['norm_l1']).ratio()
+                if score > best_l1_score:
+                    best_l1_score = score
+                    best_l1_match = toc['level_1']
+
+            # --- DECISION BLOCK ---
+            if best_l1_score >= 0.6:
+                l1 = text
+                l2 = ''
+                print(f"[L1][TOC] {text}")
+
+            elif best_l2_score >= 0.6:
+                if not l1:
+                    l1 = best_l2_l1
+                l2 = text
+                print(f"[L2][TOC] {text} under {l1}")
+
             else:
-                best_l1_score = 0
-                best_l1_match = None
-                for _, toc in toc_df.iterrows():
-                    score = SequenceMatcher(None, norm, toc['norm_l1']).ratio()
-                    if score > best_l1_score:
-                        best_l1_score = score
-                        best_l1_match = toc['level_1']
-                print(f"    Best L1 match score: {best_l1_score:.2f} (matched to: {best_l1_match})")
-
-                if best_l1_score >= 0.6:
-                    l1, l2 = text, ''
-                    print(f" ✅ Assigned as level_1: {l1}")
+                if l1:
+                    l2 = text
+                    print(f"[L2][FALLBACK] {text} under {l1}")
                 else:
-                    if exp1:
-                        l1, l2 = text, ''
-                        print(f" ⚠️ Fallback: treated as level_1 via exp1")
-                    else:
-                        l2 = text
-                        print(f" ⚠️ Fallback: treated as level_2 via exp1")
-                    exp1 = not exp1
-        else:
-            exp1 = True
-        post.at[idx, 'level_1'] = l1
-        post.at[idx, 'level_2'] = l2
+                    l1 = text
+                    l2 = ''
+                    print(f"[L1][FALLBACK_FIRST] {text}")
+
+            post.at[idx, 'level_1'] = l1
+            post.at[idx, 'level_2'] = l2
 
     # To capture headings with speaker
     segments = []
     current_author = None
     current_speech = ''
     current_level1 = ''
-    current_level2 = ''
+    current_level2 = ''# to handle cases where heading and speaker are on the same line, we apply heading only after flushing speaker to avoid misassigning heading as speaker
     ts_cur = ts_init
+
+    in_question_block = False
+
     for idx, row in post.iterrows():
+
+        line = row['clean']
+
         if row['is_timestamp']:
             t = parse_timestamp(row['clean'])
             if t:
                 ts_cur = t
 
-        if row['is_speaker']:
+        elif row['is_upper'] and not row['is_speaker']:
+            in_question_block = False
+
+            # flush current speaker FIRST
+            if current_author:
+                segments.append({
+                    'level_1': current_level1,
+                    'level_2': current_level2,
+                    'level_3': '',
+                    'timestamp': ts_cur.strftime('%H%M') if ts_cur else '',
+                    'author': current_author,
+                    'speech': current_speech.strip()
+                })
+                current_author = None
+                current_speech = ''
+
+            # just update state, DO NOT append
+            if row['level_1']:
+                current_level1 = row['level_1']
+
+            if row['level_2']:
+                current_level2 = row['level_2']
+
+        elif is_question_line(line):
+
+            # flush previous speaker
+            if current_author:
+                segments.append({
+                    'level_1': current_level1,
+                    'level_2': current_level2,
+                    'level_3': '',
+                    'timestamp': ts_cur.strftime('%H%M') if ts_cur else '',
+                    'author': current_author,
+                    'speech': current_speech.strip()
+                })
+
+            # start question block (NO speaker)
+            segments.append({
+                'level_1': current_level1,
+                'level_2': current_level2,
+                'level_3': '',
+                'timestamp': ts_cur.strftime('%H%M') if ts_cur else '',
+                'author': None,
+                'speech': row['clean'].strip()
+            })
+
+            current_author = None
+            current_speech = ''
+            in_question_block = True
+
+            continue
+
+        if row['is_speaker'] and not is_question_line(line):
+            in_question_block = False
 
             parts = row['clean'].split(':', 1)
             possible_author = parts[0].strip()
@@ -354,14 +425,7 @@ def process_layout(df, toc_df, filename=None, logger=None):
                 if current_author:
                     current_speech += '\n' + row['clean']
                 else:
-                    segments.append({
-                        'level_1': row['level_1'],
-                        'level_2': row['level_2'],
-                        'level_3': '',
-                        'timestamp': ts_cur.strftime('%H%M') if ts_cur else '',
-                        'author': None,
-                        'speech': row['clean'].strip()
-                    })
+                    pass
                 continue
 
             # REAL SPEAKER
@@ -375,33 +439,25 @@ def process_layout(df, toc_df, filename=None, logger=None):
                     'speech': current_speech.strip()
                 })
 
+            # ONLY update level AFTER flush
+            if row['level_1']:
+                current_level1 = row['level_1']
+
             current_author = possible_author
-            current_speech = parts[1].strip() if len(parts) > 1 else ''
-            current_level1 = row['level_1']
-            current_level2 = row['level_2']
-        elif row['is_upper'] and not row['is_speaker']:
-            # heading without speaker
-            segments.append({
-                'level_1': row['level_1'],
-                'level_2': row['level_2'],
-                'level_3': '',
-                'timestamp': ts_cur.strftime('%H%M') if ts_cur else '',
-                'author': None,
-                'speech': ''
-            })
+            current_speech = parts[1].strip()
+
         elif not row['is_upper'] and not row['is_timestamp']:
+
+            # CONTINUE QUESTION BLOCK
+            if in_question_block:
+                if segments and segments[-1]['author'] is None:
+                    segments[-1]['speech'] += '\n' + row['clean']
+                continue
+
             if current_author:
                 current_speech += '\n' + row['clean']
             else:
-                # orphaned paragraph — no speaker
-                segments.append({
-                    'level_1': row['level_1'],
-                    'level_2': row['level_2'],
-                    'level_3': '',
-                    'timestamp': ts_cur.strftime('%H%M') if ts_cur else '',
-                    'author': None,
-                    'speech': row['clean'].strip()
-                })
+                pass
 
     if current_author:
         segments.append({
@@ -435,17 +491,32 @@ def prepare_db_payload(df_speech, prefix, date_str):
     sitting_obj = get_sitting_object(pdf_key)
 
     try:
-        df_speech["index"] = df_speech.reset_index().index
         df_speech["date"] = pd.to_datetime(date_str)
         df_speech["house"] = house_mapper.to_display(prefix)
         df_speech["is_annotation"] = (df_speech["author"].astype(str).str.strip().str.upper() == "ANNOTATION")
+        df_speech["index"] = df_speech.reset_index().index
 
         df_author = pd.DataFrame(requests.get(f"{DEV_API_URL}/api/author").json())
         df_author_hist = pd.DataFrame(requests.get(f"{DEV_API_URL}/api/author-history").json())
         df_author_hist["area"] = df_author_hist["area_name"].str[5:]
 
         logger = SimpleLogger()
-        df_speech = perform_author_matching(df_speech, df_author, df_author_hist, logger)
+        df_speech, unmatched_authors = perform_author_matching(df_speech, df_author, df_author_hist, logger)
+
+        if unmatched_authors:
+            house = sitting_obj["house"].lower()
+            key = f"unmatched_authors/{house}/{sitting_obj['renamed_filename']}.json"
+
+            s3_client = session.client("s3")
+
+            s3_client.put_object(
+                Bucket=S3_DATAPROC_BUCKET,
+                Key=key,
+                Body=json.dumps(unmatched_authors, indent=2),
+                ContentType="application/json"
+            )
+
+            print(f"Uploaded unmatched authors to S3: {key}")
 
         # Replace "NO MATCH" with None
         df_speech.loc[df_speech["author_id"] == "NO MATCH", "author_id"] = None
@@ -467,7 +538,6 @@ def prepare_db_payload(df_speech, prefix, date_str):
         raise RuntimeError("Aborting because author matching is required to continue.")
 
     df_speech["sitting"] = sitting_obj["proper_date_str"]
-    df_speech["index"] = df_speech.reset_index().index
     df_speech["proc_speech"] = df_speech["speech"]
     df_speech["speech_tokens"] = df_speech["proc_speech"].apply(preprocess_malaya)
     df_speech["length"] = df_speech["speech_tokens"].apply(len)
