@@ -7,6 +7,7 @@ import json
 import csv
 import pandas as pd
 from thefuzz import process
+from thefuzz import fuzz
 from datetime import datetime
 from .utils.text_utils import is_number_only
 from hansards_pipelines.legacy_pipeline.constants import NON_SPEAKER_VERBS
@@ -112,7 +113,9 @@ def upper_lower_ratio(text):
     return upper / lower
 
 
-def category_probability(text, categories, check_upper_lower=True):
+def category_probability(text, categories, check_upper_lower=True, scorer=None):
+    if not categories:
+        return 0
     direct_match = text in categories
     if direct_match:
         return 1
@@ -120,7 +123,12 @@ def category_probability(text, categories, check_upper_lower=True):
         # probably not a category
         return 0
 
-    candidate_category, match_score = process.extractOne(text, categories)
+    if scorer is None:
+        candidate_category, match_score = process.extractOne(text, categories)
+    else:
+        candidate_category, match_score = process.extractOne(
+            text, categories, scorer=scorer
+        )
     return match_score / 100
 
 def is_procedural_annotation(line: str) -> bool:
@@ -1153,6 +1161,62 @@ def tabulate(
                         f.write(f"{hansard_date}\n{text[row_id]}{bold[row_id]}\n")
                 continue
 
+            if house.upper() == "KKDR":
+                # Try KKDR level_2 headings before generic capitalized logic.
+                # Otherwise wrapped continuation lines can be taken as standalone level_2 values.
+                add_idx = 1
+                current_subcategory = text[row_id].strip()
+
+                current_subcategory_probability = category_probability(
+                    current_subcategory,
+                    subcategories,
+                    check_upper_lower=False,
+                    scorer=fuzz.ratio,
+                )
+                if current_subcategory_probability > 0.2:
+                    while (
+                        row_id + add_idx < num_rows
+                        and not is_timestamp(text[row_id + add_idx])
+                        and get_author_and_speech(
+                            text[row_id + add_idx],
+                            bold[row_id + add_idx],
+                            italics[row_id + add_idx],
+                            house=house,
+                            is_pipeline=is_pipeline,
+                        )[0]
+                        == ""
+                        and category_probability(
+                            current_subcategory
+                            + " "
+                            + text[row_id + add_idx].strip(),
+                            subcategories,
+                            check_upper_lower=False,
+                            scorer=fuzz.ratio,
+                        )
+                        >= current_subcategory_probability
+                    ):
+                        current_subcategory += " " + text[row_id + add_idx].strip()
+                        current_subcategory_probability = category_probability(
+                            current_subcategory,
+                            subcategories,
+                            check_upper_lower=False,
+                            scorer=fuzz.ratio,
+                        )
+                        add_idx += 1
+
+                if current_subcategory_probability > 0.9:
+                    print(f"KKDR level_2: {current_subcategory}")
+                    speeches += insert_speech(current)
+                    current["author"] = ""
+                    current["level_1"] = current["level_1"]
+                    current["level_2"] = current_subcategory
+                    current["level_3"] = ""
+                    current["speech"] = ""
+                    current["speech_bold"] = ""
+                    current["speech_italics"] = ""
+                    row_id += add_idx - 1
+                    continue
+
             if upper_lower_ratio(text[row_id]) > 1:
                 # could be a new category
                 # Only possible to parse as category when the speech is non-empty
@@ -1262,48 +1326,6 @@ def tabulate(
                     with open(f"warnings/{house}/capitalised_level_2.txt", "a") as f:
                         f.write(f"{hansard_date}\n{current['level_2']}\n")
                 continue
-            elif house.upper() == "KKDR":
-                # try and see if KKDR level_2 headings
-                add_idx = 1
-                current_subcategory = text[row_id].strip()
-
-                current_subcategory_probability = category_probability(
-                    current_subcategory, subcategories, check_upper_lower=False
-                )
-                if current_subcategory_probability > 0.2:
-                    while (
-                        row_id + add_idx < num_rows
-                        and category_probability(
-                            current_subcategory + " " + text[row_id + add_idx].strip(),
-                            subcategories,
-                            check_upper_lower=False,
-                        )
-                        >= current_subcategory_probability
-                    ):
-                        current_subcategory += " " + text[row_id + add_idx].strip()
-                        current_subcategory_probability = category_probability(
-                            current_subcategory, subcategories, check_upper_lower=False
-                        )
-                        add_idx += 1
-
-                if current_subcategory_probability > 0.9:
-                    print(f"KKDR level_2: {current_subcategory}")
-                    speeches += insert_speech(current)
-                    current["author"] = ""
-                    current["level_1"] = current_category
-                    current["level_2"] = current_subcategory
-                    current["level_3"] = ""
-                    current["speech"] = ""
-                    current["speech_bold"] = ""
-                    current["speech_italics"] = ""
-                    row_id += add_idx - 1
-                    # if current_category_probability < 1:
-                    #     with open(f"warnings/{house}/matched_categories.csv", "a") as f:
-                    #         f.write(
-                    #             f"{hansard_date},{current_category},{current_category_probability}\n"
-                    #         )
-                    continue
-
             # these are lower-cased bold sentences
             # most likely a level_3 subtopic
             if re.search(
