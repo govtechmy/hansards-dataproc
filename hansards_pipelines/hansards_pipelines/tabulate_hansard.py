@@ -483,6 +483,43 @@ def track_speech_page(current, metadata):
         current.setdefault("pdf_pages", []).append(int(pdf_page))
 
 
+def get_pdf_page(metadata):
+    """Return a normalized physical PDF page number, if available."""
+    if not metadata or metadata.get("pdf_page") is None:
+        return None
+    return int(metadata["pdf_page"])
+
+
+def flush_speech_at_pdf_page_boundary(current, metadata):
+    """Close an active speech before appending content from another PDF page.
+
+    Author, timestamp and category state deliberately remain on ``current`` so
+    the next row is represented as a continuation of the same speaker/context.
+    """
+    incoming_pdf_page = get_pdf_page(metadata)
+    active_pdf_pages = current.get("pdf_pages", [])
+    if (
+        not current.get("speech", "").strip()
+        or incoming_pdf_page is None
+        or not active_pdf_pages
+        or int(active_pdf_pages[-1]) == incoming_pdf_page
+    ):
+        return []
+
+    rows = insert_speech(current)
+    current["speech"] = ""
+    current["speech_bold"] = ""
+    current["speech_italics"] = ""
+    return rows
+
+
+def same_pdf_page(first_metadata, second_metadata):
+    """Whether two lines may safely be combined into one page-bound row."""
+    first_page = get_pdf_page(first_metadata)
+    second_page = get_pdf_page(second_metadata)
+    return first_page is None or second_page is None or first_page == second_page
+
+
 def markdownify(text, is_bold, is_italics):
     text = text.replace("*", "\*")
     suffix = ""
@@ -890,6 +927,13 @@ def tabulate(
                 current["timestamp"] = text[row_id].split("pukul")[-1].strip()
             continue
 
+        # A DB speech row must contain content from only one physical PDF page.
+        # Keep the current speaker/context, but close its accumulated text before
+        # processing the first line on the next page.
+        speeches += flush_speech_at_pdf_page_boundary(
+            current, page_metadata[row_id]
+        )
+
         # determine whether the current line is a continuation of speech
         # first check whether it is an annotation
         # if text[row_id].startswith("[") and italics[row_id][1] == "1":
@@ -915,16 +959,12 @@ def tabulate(
 
             # Build full annotation (handle multi-line brackets)
             annotation_text = text[row_id]
-            annotation_bold = bold[row_id]
-            annotation_italics = italics[row_id]
 
             add_idx = 1
             num_unclosed_brackets = annotation_text.count("[") - annotation_text.count("]")
 
             while add_idx + row_id < num_rows and num_unclosed_brackets > 0:
                 annotation_text += text[row_id + add_idx]
-                annotation_bold += bold[row_id + add_idx]
-                annotation_italics += italics[row_id + add_idx]
                 num_unclosed_brackets += (
                     text[row_id + add_idx].count("[")
                     - text[row_id + add_idx].count("]")
@@ -935,23 +975,36 @@ def tabulate(
 
                 add_idx += 1
 
-            # Insert annotation row WITHOUT touching speaker state
-            annotation_row = {
-                "level_1": current["level_1"],
-                "level_2": current["level_2"],
-                "level_3": current["level_3"],
-                "timestamp": current["timestamp"],
-                "author": "ANNOTATION",
-                "speech": annotation_text,
-                "speech_bold": annotation_bold,
-                "speech_italics": annotation_italics,
-                "source_pages": [],
-                "pdf_pages": [],
-            }
+            # Insert annotations page by page without touching speaker state.
+            # A multi-line bracket can itself cross a PDF page boundary.
+            annotation_row = None
             for annotation_idx in range(row_id, row_id + add_idx):
-                track_speech_page(annotation_row, page_metadata[annotation_idx])
+                annotation_metadata = page_metadata[annotation_idx]
+                if annotation_row is not None:
+                    emitted = flush_speech_at_pdf_page_boundary(
+                        annotation_row, annotation_metadata
+                    )
+                    speeches += emitted
+                if annotation_row is None:
+                    annotation_row = {
+                        "level_1": current["level_1"],
+                        "level_2": current["level_2"],
+                        "level_3": current["level_3"],
+                        "timestamp": current["timestamp"],
+                        "author": "ANNOTATION",
+                        "speech": "",
+                        "speech_bold": "",
+                        "speech_italics": "",
+                        "source_pages": [],
+                        "pdf_pages": [],
+                    }
+                annotation_row["speech"] += text[annotation_idx]
+                annotation_row["speech_bold"] += bold[annotation_idx]
+                annotation_row["speech_italics"] += italics[annotation_idx]
+                track_speech_page(annotation_row, annotation_metadata)
 
-            speeches += insert_speech(annotation_row)
+            if annotation_row is not None:
+                speeches += insert_speech(annotation_row)
 
             row_id += add_idx - 1
 
@@ -1078,6 +1131,9 @@ def tabulate(
             # but make sure this is not an annotation
             if (
                 row_id + 1 < num_rows
+                and same_pdf_page(
+                    page_metadata[row_id], page_metadata[row_id + 1]
+                )
                 and ":" not in text[row_id]          # don't merge if current line is a speaker
                 and upper_lower_ratio(text[row_id]) <= 1
                 and not re.match(r"^\d+\.", text[row_id + 1].strip())   # don't merge if next line is question number
