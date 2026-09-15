@@ -448,7 +448,9 @@ def insert_speech(current):
         print(f"[INSERT_SPEECH_FILTER] Clearing number-only level_2: '{level_2_value}' (level_1: '{current['level_1']}')")
         level_2_value = ""
     
-    return [
+    source_pages = current.get("source_pages", [])
+    pdf_pages = current.get("pdf_pages", [])
+    result = [
         [
             current["level_1"],
             level_2_value,
@@ -456,10 +458,29 @@ def insert_speech(current):
             current["timestamp"],
             current["author"],
             current["speech"],
+            min(source_pages) if source_pages else None,
+            max(source_pages) if source_pages else None,
+            min(pdf_pages) if pdf_pages else None,
+            max(pdf_pages) if pdf_pages else None,
             current["speech_bold"],
             current["speech_italics"],
         ]
     ]
+    current["source_pages"] = []
+    current["pdf_pages"] = []
+    return result
+
+
+def track_speech_page(current, metadata):
+    """Add one content line's page identifiers to the active speech."""
+    if not metadata:
+        return
+    source_page = metadata.get("source_page")
+    pdf_page = metadata.get("pdf_page")
+    if source_page is not None:
+        current.setdefault("source_pages", []).append(int(source_page))
+    if pdf_page is not None:
+        current.setdefault("pdf_pages", []).append(int(pdf_page))
 
 
 def markdownify(text, is_bold, is_italics):
@@ -549,7 +570,7 @@ def _is_majority_italic_bracket(text_line, italics_line, start_idx):
     return ratio > 0.8  # threshold for "mostly italic"
 
 
-def put_annotations_on_new_line(text, bold, italics):
+def put_annotations_on_new_line(text, bold, italics, page_metadata=None):
     # assumptions
     # 1. [ does not end on a line
     for row in text:
@@ -610,10 +631,33 @@ def put_annotations_on_new_line(text, bold, italics):
                     letter_id += 1
             letter_id += 1
         row_id += 1
-    text = [x.strip() + "\n" for x in ("".join(text)).split("\n") if x.strip()]
-    bold = [x.strip() + "\n" for x in ("".join(bold)).split("\n") if x.strip()]
-    italics = [x.strip() + "\n" for x in ("".join(italics)).split("\n") if x.strip()]
-    return text, bold, italics
+    if page_metadata is None:
+        text = [x.strip() + "\n" for x in ("".join(text)).split("\n") if x.strip()]
+        bold = [x.strip() + "\n" for x in ("".join(bold)).split("\n") if x.strip()]
+        italics = [x.strip() + "\n" for x in ("".join(italics)).split("\n") if x.strip()]
+        return text, bold, italics
+
+    output_text = []
+    output_bold = []
+    output_italics = []
+    output_pages = []
+    for text_row, bold_row, italics_row, metadata in zip(
+        text, bold, italics, page_metadata
+    ):
+        text_parts = text_row.split("\n")
+        bold_parts = bold_row.split("\n")
+        italics_parts = italics_row.split("\n")
+        assert len(text_parts) == len(bold_parts) == len(italics_parts)
+        for text_part, bold_part, italics_part in zip(
+            text_parts, bold_parts, italics_parts
+        ):
+            if not text_part.strip():
+                continue
+            output_text.append(text_part.strip() + "\n")
+            output_bold.append(bold_part.strip() + "\n")
+            output_italics.append(italics_part.strip() + "\n")
+            output_pages.append(metadata.copy() if metadata else None)
+    return output_text, output_bold, output_italics, output_pages
 
 
 def format_attendance(text):
@@ -680,6 +724,7 @@ def tabulate(
     italics=None,
     categories=None,
     attendance_txt=None,
+    page_metadata=None,
     is_pipeline=False,
 ):
     print(hansard_date)
@@ -722,6 +767,11 @@ def tabulate(
     assert (
         len(text) == len(bold) == len(italics)
     ), f"Length of text, bold and italics do not match: {len(text)} vs {len(bold)} vs {len(italics)}"
+    if page_metadata is None:
+        page_metadata = [None] * len(text)
+    assert len(text) == len(page_metadata), (
+        f"Length of text and page metadata do not match: {len(text)} vs {len(page_metadata)}"
+    )
 
     if house.upper() != "DN" and not is_pipeline:
         with open(
@@ -800,7 +850,9 @@ def tabulate(
     ):
         categories += fuzzy_jawapan
 
-    text, bold, italics = put_annotations_on_new_line(text, bold, italics)
+    text, bold, italics, page_metadata = put_annotations_on_new_line(
+        text, bold, italics, page_metadata
+    )
 
     doa_seen = False
     num_rows = len(text)
@@ -814,6 +866,8 @@ def tabulate(
         "level_1": "",
         "level_2": "",
         "level_3": "",
+        "source_pages": [],
+        "pdf_pages": [],
     }
     current = blank_speech
     row_id = -1
@@ -891,7 +945,11 @@ def tabulate(
                 "speech": annotation_text,
                 "speech_bold": annotation_bold,
                 "speech_italics": annotation_italics,
+                "source_pages": [],
+                "pdf_pages": [],
             }
+            for annotation_idx in range(row_id, row_id + add_idx):
+                track_speech_page(annotation_row, page_metadata[annotation_idx])
 
             speeches += insert_speech(annotation_row)
 
@@ -923,6 +981,7 @@ def tabulate(
             current["speech"] = speech
             current["speech_bold"] = speech_bold
             current["speech_italics"] = speech_italics
+            track_speech_page(current, page_metadata[row_id])
             if subtopic:
                 current["level_2"] = subtopic
                 current["level_3"] = ""
@@ -941,6 +1000,7 @@ def tabulate(
             current["speech"] = text[row_id]
             current["speech_bold"] = bold[row_id]
             current["speech_italics"] = italics[row_id]
+            track_speech_page(current, page_metadata[row_id])
             continue
 
         # THEN fallback → continuation
@@ -951,6 +1011,7 @@ def tabulate(
             current["speech"] += text[row_id]
             current["speech_bold"] += bold[row_id]
             current["speech_italics"] += italics[row_id]
+            track_speech_page(current, page_metadata[row_id])
             continue
         else:
             if text[row_id].strip().lower() == "lampiran":
@@ -979,6 +1040,7 @@ def tabulate(
                     current["speech"] = text[row_id]
                     current["speech_bold"] = bold[row_id]
                     current["speech_italics"] = italics[row_id]
+                    track_speech_page(current, page_metadata[row_id])
                     continue
 
             # Question format: "Datuk Name [Constituency]." on one line
@@ -995,6 +1057,7 @@ def tabulate(
                 current["speech"] += text[row_id]
                 current["speech_bold"] += bold[row_id]
                 current["speech_italics"] += italics[row_id]
+                track_speech_page(current, page_metadata[row_id])
                 continue
 
             # Detect DR/DN/KDKK question format (same-line format, no colon)
@@ -1008,6 +1071,7 @@ def tabulate(
                 current["speech"] += text[row_id]
                 current["speech_bold"] += bold[row_id]
                 current["speech_italics"] += italics[row_id]
+                track_speech_page(current, page_metadata[row_id])
                 continue
 
             # sometimes the author has too long name and overflow to second line
@@ -1050,6 +1114,8 @@ def tabulate(
                         current["speech"] = speech
                         current["speech_bold"] = speech_bold
                         current["speech_italics"] = speech_italics
+                        track_speech_page(current, page_metadata[row_id])
+                        track_speech_page(current, page_metadata[row_id + 1])
 
                         if subtopic:
                             current["level_2"] = subtopic
@@ -1083,6 +1149,8 @@ def tabulate(
                         current["speech"] = speech
                         current["speech_bold"] = speech_bold
                         current["speech_italics"] = speech_italics
+                        track_speech_page(current, page_metadata[row_id])
+                        track_speech_page(current, page_metadata[row_id + 1])
                         if subtopic:
                             current["level_2"] = subtopic
                             current["level_3"] = ""
@@ -1096,6 +1164,7 @@ def tabulate(
                 current["speech"] += text[row_id]
                 current["speech_bold"] += bold[row_id]
                 current["speech_italics"] += italics[row_id]
+                track_speech_page(current, page_metadata[row_id])
                 if not is_pipeline:
                     with open(f"warnings/{house}/stray_bolds.txt", "a") as f:
                         f.write(
@@ -1156,6 +1225,7 @@ def tabulate(
                 current["speech"] += text[row_id]
                 current["speech_bold"] += bold[row_id]
                 current["speech_italics"] += italics[row_id]
+                track_speech_page(current, page_metadata[row_id])
                 if not is_pipeline:
                     with open(f"warnings/{house}/mixed_bolds.txt", "a") as f:
                         f.write(f"{hansard_date}\n{text[row_id]}{bold[row_id]}\n")
@@ -1386,6 +1456,7 @@ def tabulate(
                 current["speech"] += text[row_id]
                 current["speech_bold"] += bold[row_id]
                 current["speech_italics"] += italics[row_id]
+                track_speech_page(current, page_metadata[row_id])
                 continue
             elif (hansard_date == "02112018" and house.upper() == "DR") and (
                 re.search(r"^Strategi \d+:", text[row_id])
@@ -1409,19 +1480,21 @@ def tabulate(
             current["speech"] += text[row_id]
             current["speech_bold"] += bold[row_id]
             current["speech_italics"] += italics[row_id]
+            track_speech_page(current, page_metadata[row_id])
 
     speeches += insert_speech(current)
 
     # remove trailing newlines
     for idx in range(len(speeches)):
-        for idx2 in range(len(current)):
-            speeches[idx][idx2] = speeches[idx][idx2].strip()
+        for idx2 in range(len(speeches[idx])):
+            if isinstance(speeches[idx][idx2], str):
+                speeches[idx][idx2] = speeches[idx][idx2].strip()
 
     # add in formatting for bold and italics
     for idx in range(len(speeches)):
         if speeches[idx][4] != "ANNOTATION":
             speeches[idx][5] = add_formatting(
-                speeches[idx][5], speeches[idx][6], speeches[idx][7]
+                speeches[idx][5], speeches[idx][10], speeches[idx][11]
             )
         speeches[idx] = speeches[idx][:-2]
 
@@ -1526,6 +1599,10 @@ def tabulate(
                     "timestamp",
                     "author",
                     "speech",
+                    "source_page_start",
+                    "source_page_end",
+                    "pdf_page_start",
+                    "pdf_page_end",
                 ]
             )
             writer.writerows(speeches)

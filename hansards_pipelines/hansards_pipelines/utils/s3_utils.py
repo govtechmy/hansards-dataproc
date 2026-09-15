@@ -53,7 +53,10 @@ def prepare_csv_for_s3(text_lines: List[str]) -> str:
     output = io.StringIO()
     output.write("\ufeff")  # UTF-8 BOM
     writer = csv.writer(output)
-    writer.writerow(["level_1", "level_2", "level_3", "timestamp", "author", "speech"])
+    writer.writerow([
+        "level_1", "level_2", "level_3", "timestamp", "author", "speech",
+        "source_page_start", "source_page_end", "pdf_page_start", "pdf_page_end",
+    ])
     writer.writerows(text_lines)
     output.seek(0)
     return output.getvalue()

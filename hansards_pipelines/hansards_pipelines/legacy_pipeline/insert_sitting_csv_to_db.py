@@ -152,6 +152,12 @@ def prepare_db_payload(df_speech: pd.DataFrame, prefix: str, date_str: str, logg
             )
     df_speech = df_speech.where(pd.notna(df_speech), None)
 
+    for col in [
+        "source_page_start", "source_page_end", "pdf_page_start", "pdf_page_end"
+    ]:
+        if col not in df_speech.columns:
+            df_speech[col] = None
+
     speech_data = df_speech[
         [
             "index",
@@ -167,6 +173,10 @@ def prepare_db_payload(df_speech: pd.DataFrame, prefix: str, date_str: str, logg
             "level_3",
             "is_annotation",
             "sitting",
+            "source_page_start",
+            "source_page_end",
+            "pdf_page_start",
+            "pdf_page_end",
         ]
     ].rename(columns={"author_id": "speaker"}).to_dict(orient="records")
 

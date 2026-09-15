@@ -508,7 +508,7 @@ def _dg_parse_hansard_impl(
         context.log.error(f"PDF not found in {S3_PUBLIC_BUCKET} for {context.partition_key}. Likely move & rename step did not run.")
         raise
 
-    text, spaced_bold, spaced_italics, tables, attn_text, is_final = parse_hansard(
+    text, spaced_bold, spaced_italics, tables, attn_text, is_final, page_metadata = parse_hansard(
         sitting_object["date_str"],
         sitting_object["house"],
         "DEFAULT_DATA_DIR",
@@ -531,6 +531,9 @@ def _dg_parse_hansard_impl(
     s3_key = build_path("parsed_pdf", "tables.json", sitting_object)
     s3_client.put_object(Bucket=S3_DATAPROC_BUCKET, Key=s3_key, Body=json.dumps(tables))
     context.log.info(f"Uploaded tables to {s3_key}")
+    s3_key = build_path("parsed_pdf", "page_metadata.json", sitting_object)
+    s3_client.put_object(Bucket=S3_DATAPROC_BUCKET, Key=s3_key, Body=json.dumps(page_metadata))
+    context.log.info(f"Uploaded page metadata to {s3_key}")
     if attn_text != "":
         s3_key = build_path("parsed_pdf", "attendance.txt", sitting_object)
         s3_client.put_object(Bucket=S3_DATAPROC_BUCKET, Key=s3_key, Body=attn_text)
@@ -726,6 +729,11 @@ def dg_pre_tabulate(context: AssetExecutionContext):
         S3_DATAPROC_BUCKET,
         build_path("parsed_pdf", "tables.json", sitting_object),
     )
+    page_metadata = read_json_file(
+        s3_client,
+        S3_DATAPROC_BUCKET,
+        build_path("parsed_pdf", "page_metadata.json", sitting_object),
+    )
 
     # check and warn if contents are empty
     if not plaintext:
@@ -735,13 +743,14 @@ def dg_pre_tabulate(context: AssetExecutionContext):
     if not italics:
         context.log.warning(f"No italics.txt found for {context.partition_key}")
 
-    processed_text, processed_bold, processed_italics = preprocess(
+    processed_text, processed_bold, processed_italics, processed_page_metadata = preprocess(
         sitting_object["date_str"],
         sitting_object["house"],
         plaintext,
         bold,
         italics,
         tables,
+        page_metadata,
         is_pipeline=True,
     )
 
@@ -762,6 +771,9 @@ def dg_pre_tabulate(context: AssetExecutionContext):
         Body=prepare_text_for_s3(processed_italics),
     )
     context.log.info(f"Uploaded italics to {s3_key}")
+    s3_key = build_path("pretabulation", "page_metadata.json", sitting_object)
+    s3_client.put_object(Bucket=S3_DATAPROC_BUCKET, Key=s3_key, Body=json.dumps(processed_page_metadata))
+    context.log.info(f"Uploaded page metadata to {s3_key}")
 
 
 @asset(
@@ -798,7 +810,6 @@ def dg_edit_hansards(context: AssetExecutionContext):
         S3_DATAPROC_BUCKET,
         build_path("pretabulation", "italics.txt", sitting_object),
     )
-
     text, bold, italics, num_edits = edit_hansards(
         sitting_object["house"],
         sitting_object["date_str"],
@@ -877,6 +888,11 @@ def dg_tabulate(context: AssetExecutionContext):
         S3_DATAPROC_BUCKET,
         build_path("pretabulation", "italics.txt", sitting_object),
     )
+    page_metadata = read_json_file(
+        s3_client,
+        S3_DATAPROC_BUCKET,
+        build_path("pretabulation", "page_metadata.json", sitting_object),
+    )
     print(f"length of plaintext: {len(plaintext)}")
     print(f"length of bold: {len(bold)}")
     print(f"length of italics: {len(italics)}")
@@ -921,6 +937,7 @@ def dg_tabulate(context: AssetExecutionContext):
         italics,
         categories,
         attendance,
+        page_metadata=page_metadata,
         is_pipeline=True,
     )
 
@@ -1042,6 +1059,26 @@ def prepare_db_payload(context: AssetExecutionContext):
     csv_data = s3_client.get_object(Bucket=S3_DATAPROC_BUCKET, Key=csv_path)
     df = pd.read_csv(io.BytesIO(csv_data["Body"].read()))
     context.log.info(f"CSV rows read from {csv_path}: {len(df)}")
+    page_fields = [
+        "source_page_start",
+        "source_page_end",
+        "pdf_page_start",
+        "pdf_page_end",
+    ]
+    missing_page_fields = [field for field in page_fields if field not in df.columns]
+    if missing_page_fields:
+        context.log.warning(
+            "Tabulated CSV is missing page metadata columns "
+            f"{missing_page_fields}; continuing without page metadata."
+        )
+    else:
+        missing_pdf_pages = df[["pdf_page_start", "pdf_page_end"]].isna().any(axis=1)
+    if not missing_page_fields and missing_pdf_pages.any():
+        bad_rows = df.index[missing_pdf_pages].tolist()[:10]
+        context.log.warning(
+            "Tabulated CSV contains speeches without physical PDF page ranges "
+            f"at row indexes {bad_rows}; continuing with null page metadata."
+        )
     df["date"] = sitting_object["proper_date_str"]
     df = process_tabulated(df, sitting_object["house"])
 
@@ -1128,7 +1165,24 @@ def prepare_db_payload(context: AssetExecutionContext):
     assert df_speech_matched["speech"].notna().all(), "speech column has NaN"
     # note: this speech_data is only as payload to backend ingestion, not the final JSON
     # speech_data = speeches_to_json(df_speech_matched)
-    speech_data = [{k: (v if isinstance(v, (list, dict)) else None if pd.isna(v) else v) for k, v in row.items()} for row in df_speech_matched.to_dict(orient="records")]
+    page_fields = {
+        "source_page_start", "source_page_end", "pdf_page_start", "pdf_page_end"
+    }
+    speech_data = [
+        {
+            k: (
+                v
+                if isinstance(v, (list, dict))
+                else None
+                if pd.isna(v)
+                else int(v)
+                if k in page_fields
+                else v
+            )
+            for k, v in row.items()
+        }
+        for row in df_speech_matched.to_dict(orient="records")
+    ]
 
     # show row and column with NaN - speaker column NaN
     context.log.info(speech_data[0])
@@ -1665,4 +1719,3 @@ def report_overall_sittings_integrity(context: AssetExecutionContext):
         "summary_key": summary_key,
         "matrix_key": matrix_key,
     }
-

@@ -61,6 +61,14 @@ def build_nested_speech_json(flat_speeches: List[Dict]) -> List:
             "is_annotation": row["is_annotation"],
             "index": row["index"],
         }
+        for page_field in (
+            "source_page_start",
+            "source_page_end",
+            "pdf_page_start",
+            "pdf_page_end",
+        ):
+            if page_field in row:
+                speech_obj[page_field] = row[page_field]
 
         levels = [
             row.get("level_1"),
