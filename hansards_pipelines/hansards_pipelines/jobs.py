@@ -2,11 +2,15 @@ from dagster import define_asset_job, AssetSelection
 from . import assets
 
 scrape_parliamentary_cycle_job = define_asset_job(
-    "scrape_parliamentary_cycle_job",
+    "scrape_parliamentary_cycle_active_job",
     selection=[
-        # assets.scrape_parliamentary_cycle_arkib,
         assets.scrape_parliamentary_cycle_active,
     ],
+)
+
+scrape_parliamentary_cycle_arkib_job = define_asset_job(
+    "scrape_parliamentary_cycle_arkib_job",
+    selection=[assets.scrape_parliamentary_cycle_arkib],
 )
 
 scrape_job = define_asset_job(

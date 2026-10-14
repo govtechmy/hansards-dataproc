@@ -29,6 +29,7 @@ defs = Definitions(
     assets=all_assets,
     jobs=[
         jobs.scrape_parliamentary_cycle_job,
+        jobs.scrape_parliamentary_cycle_arkib_job,
         jobs.sittings_job,
         jobs.scrape_job,
         jobs.scrape_arkib_job,
