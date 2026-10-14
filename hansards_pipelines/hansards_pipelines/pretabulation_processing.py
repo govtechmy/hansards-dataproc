@@ -33,6 +33,23 @@ def get_page_number(header_text):
         return re.split("DR|DN", header_text)[0].replace(" ", "")
 
 
+def _source_page_number(header_text):
+    """Return a validated printed page number, or None for header-only rows."""
+    value = get_page_number(header_text)
+    if value.isdigit():
+        return int(value)
+
+    # KKDR headers can contain a number on both sides of the house/date text.
+    # Use the edge where the printed page number is conventionally located.
+    stripped = header_text.strip()
+    numbers = re.findall(r"\d+", stripped)
+    if not numbers:
+        return None
+    if re.match(r"^(?:KK)?D[RN]", stripped):
+        return int(numbers[-1])
+    return int(numbers[0])
+
+
 def mimic_table_as_plaintext(table):
     table_text = ""
     for row in table:
@@ -55,7 +72,7 @@ def mimic_table_as_plaintext(table):
     return table_text
 
 
-def format_table(text, bold, italics, table, hansard_date, house, is_pipeline=False):
+def format_table(text, bold, italics, page_metadata, table, hansard_date, house, is_pipeline=False):
     # replace None with empty strings
     for row_idx in range(len(table)):
         for cell_idx in range(len(table[row_idx])):
@@ -211,8 +228,14 @@ def format_table(text, bold, italics, table, hansard_date, house, is_pipeline=Fa
     text = text[: start_idx + 1] + markdown_table + text[end_idx:]
     bold = bold[: start_idx + 1] + plainly_formatted_table + bold[end_idx:]
     italics = italics[: start_idx + 1] + plainly_formatted_table + italics[end_idx:]
+    table_page = page_metadata[anchor_idx]
+    page_metadata = (
+        page_metadata[: start_idx + 1]
+        + [table_page.copy() for _ in markdown_table]
+        + page_metadata[end_idx:]
+    )
 
-    return text, bold, italics
+    return text, bold, italics, page_metadata
 
 
 def preprocess(
@@ -222,6 +245,7 @@ def preprocess(
     bold=None,
     italics=None,
     wrapped_tables_of_page=[],
+    page_metadata=None,
     is_pipeline=False,
 ):
     if not is_pipeline:
@@ -252,6 +276,24 @@ def preprocess(
     assert (
         len(text) == len(bold) == len(italics)
     ), f"Length of text, bold and italics do not match: {len(text)} vs {len(bold)} vs {len(italics)}"
+    if page_metadata is None:
+        page_metadata = [
+            {"pdf_page": None, "source_page": None} for _ in text
+        ]
+    assert len(text) == len(page_metadata), (
+        f"Length of text and page metadata do not match: {len(text)} vs {len(page_metadata)}"
+    )
+
+    # Resolve the printed page once per physical PDF page before headers are
+    # removed. All lines from that physical page receive the same value.
+    source_by_pdf_page = {}
+    for line, meta in zip(text, page_metadata):
+        if is_header(line):
+            source_page = _source_page_number(line)
+            if source_page is not None:
+                source_by_pdf_page[meta.get("pdf_page")] = source_page
+    for meta in page_metadata:
+        meta["source_page"] = source_by_pdf_page.get(meta.get("pdf_page"))
 
     # Escape pipe symbols with a temporary marker before validation
     # Use a unique placeholder that won't appear in the text
@@ -283,8 +325,8 @@ def preprocess(
             tables[3] = edit_05102021
     for table in tables:
         try:
-            escaped_text, bold, italics = format_table(
-                escaped_text, bold, italics, table, hansard_date, house, is_pipeline
+            escaped_text, bold, italics, page_metadata = format_table(
+                escaped_text, bold, italics, page_metadata, table, hansard_date, house, is_pipeline
             )
         except AssertionError as e:
             print(e)
@@ -330,9 +372,11 @@ def preprocess(
             italics[row_id] = "\n"
 
     # delete excessive newlines
-    text = [row for row in text if row != "\n"]
-    bold = [row for row in bold if row != "\n"]
-    italics = [row for row in italics if row != "\n"]
+    retained = [idx for idx, row in enumerate(text) if row != "\n"]
+    text = [text[idx] for idx in retained]
+    bold = [bold[idx] for idx in retained]
+    italics = [italics[idx] for idx in retained]
+    page_metadata = [page_metadata[idx] for idx in retained]
 
     if not is_pipeline:
         with open(f"{output_dir_path}plaintext.txt", "w") as f:
@@ -342,7 +386,7 @@ def preprocess(
         with open(f"{output_dir_path}italics.txt", "w") as f:
             f.writelines(italics)
     else:
-        return text, bold, italics
+        return text, bold, italics, page_metadata
 
 
 if __name__ == "__main__":

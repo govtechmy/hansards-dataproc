@@ -233,6 +233,12 @@ def find_non_speaker_verbs(author_text):
     return any(verb in lower for verb in NON_SPEAKER_VERBS)
 
 def process_layout(df, toc_df, filename=None, logger=None):
+    def page_number(value):
+        try:
+            return int(float(value))
+        except (TypeError, ValueError):
+            return None
+
     df['is_timestamp'] = df['clean'].str.match(ts_full)
     df['is_speaker'] = df['clean'].str.match(r'^(?!\d+\.)[A-Z][^:]{3,}:') #r'^(?!\d+\.)[A-Z][^:]{3,}:\s')
 
@@ -346,6 +352,8 @@ def process_layout(df, toc_df, filename=None, logger=None):
     segments = []
     current_author = None
     current_speech = ''
+    current_page_start = None
+    current_page_end = None
     current_level1 = ''
     current_level2 = ''# to handle cases where heading and speaker are on the same line, we apply heading only after flushing speaker to avoid misassigning heading as speaker
     ts_cur = ts_init
@@ -355,6 +363,7 @@ def process_layout(df, toc_df, filename=None, logger=None):
     for idx, row in post.iterrows():
 
         line = row['clean']
+        line_page = page_number(row.get('page'))
 
         if row['is_timestamp']:
             t = parse_timestamp(row['clean'])
@@ -372,10 +381,13 @@ def process_layout(df, toc_df, filename=None, logger=None):
                     'level_3': '',
                     'timestamp': ts_cur.strftime('%H%M') if ts_cur else '',
                     'author': current_author,
-                    'speech': current_speech.strip()
+                    'speech': current_speech.strip(),
+                    'source_page_start': None, 'source_page_end': None,
+                    'pdf_page_start': current_page_start, 'pdf_page_end': current_page_end,
                 })
                 current_author = None
                 current_speech = ''
+                current_page_start = current_page_end = None
 
             # just update state, DO NOT append
             if row['level_1']:
@@ -394,7 +406,9 @@ def process_layout(df, toc_df, filename=None, logger=None):
                     'level_3': '',
                     'timestamp': ts_cur.strftime('%H%M') if ts_cur else '',
                     'author': current_author,
-                    'speech': current_speech.strip()
+                    'speech': current_speech.strip(),
+                    'source_page_start': None, 'source_page_end': None,
+                    'pdf_page_start': current_page_start, 'pdf_page_end': current_page_end,
                 })
 
             # start question block (NO speaker)
@@ -404,11 +418,14 @@ def process_layout(df, toc_df, filename=None, logger=None):
                 'level_3': '',
                 'timestamp': ts_cur.strftime('%H%M') if ts_cur else '',
                 'author': None,
-                'speech': row['clean'].strip()
+                'speech': row['clean'].strip(),
+                'source_page_start': None, 'source_page_end': None,
+                'pdf_page_start': line_page, 'pdf_page_end': line_page,
             })
 
             current_author = None
             current_speech = ''
+            current_page_start = current_page_end = None
             in_question_block = True
 
             continue
@@ -424,6 +441,9 @@ def process_layout(df, toc_df, filename=None, logger=None):
                 # treat as normal paragraph instead
                 if current_author:
                     current_speech += '\n' + row['clean']
+                    if line_page is not None:
+                        current_page_start = line_page if current_page_start is None else min(current_page_start, line_page)
+                        current_page_end = line_page if current_page_end is None else max(current_page_end, line_page)
                 else:
                     pass
                 continue
@@ -436,7 +456,9 @@ def process_layout(df, toc_df, filename=None, logger=None):
                     'level_3': '',
                     'timestamp': ts_cur.strftime('%H%M') if ts_cur else '',
                     'author': current_author,
-                    'speech': current_speech.strip()
+                    'speech': current_speech.strip(),
+                    'source_page_start': None, 'source_page_end': None,
+                    'pdf_page_start': current_page_start, 'pdf_page_end': current_page_end,
                 })
 
             # ONLY update level AFTER flush
@@ -445,6 +467,7 @@ def process_layout(df, toc_df, filename=None, logger=None):
 
             current_author = possible_author
             current_speech = parts[1].strip()
+            current_page_start = current_page_end = line_page
 
         elif not row['is_upper'] and not row['is_timestamp']:
 
@@ -452,10 +475,18 @@ def process_layout(df, toc_df, filename=None, logger=None):
             if in_question_block:
                 if segments and segments[-1]['author'] is None:
                     segments[-1]['speech'] += '\n' + row['clean']
+                    if line_page is not None:
+                        start = segments[-1].get('pdf_page_start')
+                        end = segments[-1].get('pdf_page_end')
+                        segments[-1]['pdf_page_start'] = line_page if pd.isna(start) else min(start, line_page)
+                        segments[-1]['pdf_page_end'] = line_page if pd.isna(end) else max(end, line_page)
                 continue
 
             if current_author:
                 current_speech += '\n' + row['clean']
+                if line_page is not None:
+                    current_page_start = line_page if current_page_start is None else min(current_page_start, line_page)
+                    current_page_end = line_page if current_page_end is None else max(current_page_end, line_page)
             else:
                 pass
 
@@ -466,7 +497,9 @@ def process_layout(df, toc_df, filename=None, logger=None):
             'level_3': '',
             'timestamp': ts_cur.strftime('%H%M') if ts_cur else '',
             'author': current_author,
-            'speech': current_speech.strip()
+            'speech': current_speech.strip(),
+            'source_page_start': None, 'source_page_end': None,
+            'pdf_page_start': current_page_start, 'pdf_page_end': current_page_end,
         })
 
     # df_speech = pd.DataFrame(segments)
@@ -555,11 +588,20 @@ def prepare_db_payload(df_speech, prefix, date_str):
     # Filter out speeches with empty token list 
     df_speech = df_speech[df_speech["speech_tokens"].apply(lambda tokens: bool(tokens))]
 
+    for col in ["source_page_start", "source_page_end", "pdf_page_start", "pdf_page_end"]:
+        if col not in df_speech.columns:
+            df_speech[col] = None
+
     speech_data = df_speech[[
         "index", "author", "author_id", "timestamp", "speech", "proc_speech",
         "speech_tokens", "length", "level_1", "level_2", "level_3",
-        "is_annotation", "sitting"
+        "is_annotation", "sitting", "source_page_start", "source_page_end",
+        "pdf_page_start", "pdf_page_end"
     ]].rename(columns={"author_id": "speaker"}).to_dict(orient="records")
+    page_fields = ("source_page_start", "source_page_end", "pdf_page_start", "pdf_page_end")
+    for row in speech_data:
+        for field in page_fields:
+            row[field] = int(row[field]) if pd.notna(row[field]) else None
 
     payload = {
         "date": sitting_obj["proper_date_str"],
@@ -892,6 +934,11 @@ def merge_question_blocks(df: pd.DataFrame) -> pd.DataFrame:
                 prev["speech"] = prev_speech + "\n" + curr_speech
             else:
                 prev["speech"] = curr_speech
+            for prefix in ("source_page", "pdf_page"):
+                starts = [v for v in (prev.get(f"{prefix}_start"), curr.get(f"{prefix}_start")) if pd.notna(v)]
+                ends = [v for v in (prev.get(f"{prefix}_end"), curr.get(f"{prefix}_end")) if pd.notna(v)]
+                prev[f"{prefix}_start"] = min(starts) if starts else None
+                prev[f"{prefix}_end"] = max(ends) if ends else None
         else:
             merged.append(prev)
             prev = curr
@@ -1014,5 +1061,3 @@ if __name__ == "__main__":
         run_batch(args.prefix, args.start_year, args.end_year)
     else:
         raise ValueError("Must provide --processed-date, --filename, or both --start-year and --end-year.")
-
-

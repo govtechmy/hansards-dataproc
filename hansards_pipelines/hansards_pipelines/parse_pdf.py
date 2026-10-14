@@ -71,6 +71,7 @@ def parse_hansard(hansard_date, house, source_dir=DEFAULT_DATA_DIR, file_content
     italics = []
     tables = []
     text = ""
+    page_metadata = []
     dir_path = BASE_PATH / "parsed_pdf" / house / year
     if not file_content:
         dir_path.mkdir(parents=True, exist_ok=True)
@@ -129,7 +130,14 @@ def parse_hansard(hansard_date, house, source_dir=DEFAULT_DATA_DIR, file_content
                     if extract_attn_start:
                         attn_text += extracted
                     continue
-            text += extracted + "\n"  # add newline to separate pages
+            page_text = extracted + "\n"
+            text += page_text  # add newline to separate pages
+            # Keep physical PDF pages aligned with plaintext lines.  Printed
+            # Hansard page numbers are resolved later from page headers.
+            page_metadata.extend(
+                {"pdf_page": idx + 1, "source_page": None}
+                for _ in page_text.splitlines(keepends=True)
+            )
             if hansard_date == "09072019" or (
                 house == "kkdr" and hansard_date == "15112023"
             ):
@@ -197,7 +205,7 @@ def parse_hansard(hansard_date, house, source_dir=DEFAULT_DATA_DIR, file_content
 
     if file_content:
         # pipeline run, return the parsed content
-        return text, spaced_bold, spaced_italics, tables, attn_text, is_final
+        return text, spaced_bold, spaced_italics, tables, attn_text, is_final, page_metadata
     else:
         with open(str(dir_path / "plaintext.txt"), "w") as f:
             f.write(text)
@@ -207,6 +215,8 @@ def parse_hansard(hansard_date, house, source_dir=DEFAULT_DATA_DIR, file_content
             f.write(spaced_italics)
         with open(str(dir_path / "tables.json"), "w") as f:
             json.dump(tables, f, indent=4)
+        with open(str(dir_path / "page_metadata.json"), "w") as f:
+            json.dump(page_metadata, f, indent=4)
         if has_attendance:
             with open(str(dir_path / "attendance.txt"), "w") as f:
                 f.write(attn_text)
