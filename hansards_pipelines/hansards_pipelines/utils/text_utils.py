@@ -1,6 +1,6 @@
 import re
-import string
 import logging
+from .token_utils import punctuation_only
 import pandas as pd
 from datetime import datetime
 
@@ -648,7 +648,7 @@ def preprocess_malaya(speech):
     for tok in _malaya_tokenizer.tokenize(speech, lowercase=True):
         if tok in stopwords_all:
             continue
-        if any(subtok in string.punctuation + "–" for subtok in tok):
+        if punctuation_only(tok):
             continue
         toks.append(tok)
     return [x for x in toks if x != ""]
