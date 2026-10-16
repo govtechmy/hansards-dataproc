@@ -1,6 +1,7 @@
 import re
 import logging
 from .token_utils import punctuation_only
+from .additional_stopwords import ADDITIONAL_STOPWORDS
 import pandas as pd
 from datetime import datetime
 
@@ -478,7 +479,7 @@ def _ensure_malaya():
         )
     if _stopwords_bm is None:
         stopwords_malaya = get_stopwords()
-        _stopwords_bm = list(set(stopwords_mhc + stopwords_malaya + custom_sw))
+        _stopwords_bm = list(set(stopwords_mhc + stopwords_malaya + custom_sw + ADDITIONAL_STOPWORDS))
 
 
 def _ensure_nltk():
