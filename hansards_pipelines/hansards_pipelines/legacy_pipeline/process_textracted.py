@@ -26,7 +26,7 @@ from botocore import UNSIGNED
 from botocore.config import Config
 from ..settings import S3_TEXTRACT_BUCKET, DEV_API_URL, HANSARD_DB_URL, S3_PUBLIC_BUCKET, S3_DATAPROC_BUCKET
 from ..direct_sitting_ingest import ingest_sitting_to_db
-from hansards_pipelines.legacy_pipeline.speech_blocks import split_speaker, segment_blocks
+from hansards_pipelines.legacy_pipeline.speech_blocks import attach_source_pages, split_speaker, segment_blocks
 
 import boto3
 import botocore
@@ -757,7 +757,10 @@ def merge_question_blocks(df: pd.DataFrame) -> pd.DataFrame:
                 prev["speech"] = prev_speech + "\n" + curr_speech
             else:
                 prev["speech"] = curr_speech
-            for prefix in ("source_page", "pdf_page"):
+            # Printed boundaries follow the first and last contributing blocks;
+            # retain NULL if a boundary scan has no observed printed marker.
+            prev["source_page_end"] = curr.get("source_page_end")
+            for prefix in ("pdf_page",):
                 starts = [v for v in (prev.get(f"{prefix}_start"), curr.get(f"{prefix}_start")) if pd.notna(v)]
                 ends = [v for v in (prev.get(f"{prefix}_end"), curr.get(f"{prefix}_end")) if pd.notna(v)]
                 prev[f"{prefix}_start"] = min(starts) if starts else None
@@ -786,6 +789,7 @@ def process_and_insert(prefix, key, date_str, logger):
         'Page number': 'page', 'Layout': 'layout', 'Text': 'text',
         'Reading Order': 'order', 'Confidence score % (Layout)': 'confidence'
     })
+    df = attach_source_pages(df)
     df = df[~df['layout'].str.contains('Page', case=False, na=False)]
     df['clean'] = df['text'].fillna('').str.strip()
 

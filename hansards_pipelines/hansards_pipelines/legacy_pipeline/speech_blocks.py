@@ -51,12 +51,41 @@ def split_speaker(text):
     return author, " ".join([*(n.strip() for n in notes), speech.strip()]).strip()
 
 
+def attach_source_pages(df):
+    """Retain observed printed-number ranges before layout headers are removed.
+
+    Old scans can contain two printed columns/pages. The CSV has no bounding
+    boxes, so the range applies to the whole scan, not an individual column.
+    Do not interpret numbers in body text or invent missing page numbers.
+    """
+    df = df.copy()
+    markers = {}
+    for _, row in df.iterrows():
+        layout = str(row.get("layout", "")).upper()
+        if not any(kind in layout for kind in ("PAGE_NUMBER", "HEADER", "FOOTER")):
+            continue
+        if "SECTION" in layout:
+            continue
+        text = str(row.get("text", "")).strip()
+        if re.fullmatch(r"[0-9]+", text) and int(text) > 0:
+            markers.setdefault(str(row["page"]), []).append(int(text))
+    df["source_page_start"] = df["page"].map(
+        lambda page: markers.get(str(page), [None])[0]
+    )
+    df["source_page_end"] = df["page"].map(
+        lambda page: markers.get(str(page), [None])[-1]
+    )
+    return df
+
+
 def segment_blocks(post, initial_timestamp, parse_timestamp, is_question_line):
     """Preserve every body block, with explicit speaker and heading boundaries."""
     segments = []
     author = None
     content = []
     pages = []
+    source_starts = []
+    source_ends = []
     level1 = level2 = ""
     timestamp = initial_timestamp
 
@@ -66,12 +95,15 @@ def segment_blocks(post, initial_timestamp, parse_timestamp, is_question_line):
                 "level_1": level1, "level_2": level2, "level_3": "",
                 "timestamp": timestamp.strftime("%H%M") if timestamp else "",
                 "author": author, "speech": "\n".join(content),
-                "source_page_start": None, "source_page_end": None,
+                "source_page_start": source_starts[0] if source_starts else None,
+                "source_page_end": source_ends[-1] if source_ends else None,
                 "pdf_page_start": min(pages) if pages else None,
                 "pdf_page_end": max(pages) if pages else None,
             })
         content.clear()
         pages.clear()
+        source_starts.clear()
+        source_ends.clear()
 
     for _, row in post.iterrows():
         text = row["clean"].strip()
@@ -106,6 +138,13 @@ def segment_blocks(post, initial_timestamp, parse_timestamp, is_question_line):
             flush()
             author = None
         content.append(text)
+        # Preserve unknown boundaries as NULL rather than substituting a marker
+        # from a later/earlier scan in the same speech.
+        for field, values in (("source_page_start", source_starts), ("source_page_end", source_ends)):
+            try:
+                values.append(int(float(row.get(field))))
+            except (TypeError, ValueError, OverflowError):
+                values.append(None)
         try:
             pages.append(int(float(row.get("page"))))
         except (TypeError, ValueError, OverflowError):
