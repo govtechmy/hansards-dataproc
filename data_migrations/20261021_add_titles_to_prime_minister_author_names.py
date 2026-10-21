@@ -63,6 +63,8 @@ def main():
     parser.add_argument('--env-file', required=True)
     parser.add_argument('--region', default='ap-southeast-5')
     parser.add_argument('--apply', action='store_true')
+    parser.add_argument('--s3-only', action='store_true',
+                        help='Update master and seed only; do not connect to the DB')
     args = parser.parse_args()
     s3 = boto3.Session(profile_name=args.profile).client('s3', region_name=args.region)
     originals, etags = {}, {}
@@ -83,6 +85,23 @@ def main():
             raise ValueError(f'Seed deduplication changed author {author_id}')
     print('MODE:', 'APPLY' if args.apply else 'PREVIEW', 'BUCKET:', args.bucket,
           'ENV FILE:', args.env_file)
+    def apply_sources():
+        for key, frame in ((MASTER, master), (SEED, seed)):
+            if not frame.equals(originals[key]):
+                put_csv(s3, args.bucket, key, frame, etags[key])
+            readback = pd.read_csv(BytesIO(s3.get_object(Bucket=args.bucket, Key=key)['Body'].read()))
+            pd.testing.assert_frame_equal(readback, frame)
+
+    if args.s3_only:
+        for author_id, (_, new, _) in CHANGES.items():
+            old = originals[MASTER].loc[originals[MASTER].new_author_id == author_id, 'name'].iloc[0]
+            print(author_id, old, '->', new)
+        if args.apply:
+            apply_sources()
+            print('Verified S3 master and seed. No DB connection or DB changes.')
+        else:
+            print('Preview complete. No S3 writes or DB connection.')
+        return
     url = dotenv_values(args.env_file).get('HANSARD_DB_URL')
     if not url:
         raise ValueError('HANSARD_DB_URL missing from the selected env file')
@@ -103,11 +122,7 @@ def main():
             if not args.apply:
                 print('Preview complete. No S3 or DB writes.')
                 return
-            for key, frame in ((MASTER, master), (SEED, seed)):
-                if not frame.equals(originals[key]):
-                    put_csv(s3, args.bucket, key, frame, etags[key])
-                readback = pd.read_csv(BytesIO(s3.get_object(Bucket=args.bucket, Key=key)['Body'].read()))
-                pd.testing.assert_frame_equal(readback, frame)
+            apply_sources()
             cur.executemany('UPDATE api_author SET name=%s WHERE new_author_id=%s',
                             [(change[1], author_id) for author_id, change in CHANGES.items()])
             cur.execute('SELECT new_author_id,name FROM api_author WHERE new_author_id = ANY(%s)',
