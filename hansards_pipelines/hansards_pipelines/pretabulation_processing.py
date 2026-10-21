@@ -223,7 +223,9 @@ def format_table(text, bold, italics, page_metadata, table, hansard_date, house,
         row.replace("\n", "") + "\n" for row in markdown_table
     ]  # remove in-cell newlines
     # add marker to the end of the table to know when to append new lines in the future
-    markdown_table[-1] += "<END_TABLE_MARKER>"
+    # Keep the marker on the final table row. An embedded newline here creates
+    # an extra row when the serialized text is read back, without page metadata.
+    markdown_table[-1] = markdown_table[-1].rstrip("\n") + "<END_TABLE_MARKER>\n"
     plainly_formatted_table = [re.sub(r"\S", "0", row) for row in markdown_table]
     text = text[: start_idx + 1] + markdown_table + text[end_idx:]
     bold = bold[: start_idx + 1] + plainly_formatted_table + bold[end_idx:]

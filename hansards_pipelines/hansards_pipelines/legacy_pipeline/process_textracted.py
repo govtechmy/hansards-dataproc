@@ -26,12 +26,11 @@ from botocore import UNSIGNED
 from botocore.config import Config
 from ..settings import S3_TEXTRACT_BUCKET, DEV_API_URL, HANSARD_DB_URL, S3_PUBLIC_BUCKET, S3_DATAPROC_BUCKET
 from ..direct_sitting_ingest import ingest_sitting_to_db
-from hansards_pipelines.legacy_pipeline.constants import NON_SPEAKER_VERBS
+from hansards_pipelines.legacy_pipeline.speech_blocks import attach_source_pages, split_speaker, segment_blocks
 
 import boto3
 import botocore
 session = boto3.Session()
-credentials = session.get_credentials().get_frozen_credentials()
 
 
 warnings.filterwarnings("ignore", category=FutureWarning)
@@ -228,19 +227,9 @@ def extract_toc_block(df, filename=None, fallback_max_lines=30, logger=None):
 
     return toc_out
 
-def find_non_speaker_verbs(author_text):
-    lower = author_text.lower()
-    return any(verb in lower for verb in NON_SPEAKER_VERBS)
-
 def process_layout(df, toc_df, filename=None, logger=None):
-    def page_number(value):
-        try:
-            return int(float(value))
-        except (TypeError, ValueError):
-            return None
-
     df['is_timestamp'] = df['clean'].str.match(ts_full)
-    df['is_speaker'] = df['clean'].str.match(r'^(?!\d+\.)[A-Z][^:]{3,}:') #r'^(?!\d+\.)[A-Z][^:]{3,}:\s')
+    df['is_speaker'] = df['clean'].apply(lambda text: split_speaker(text) is not None)
 
     doa_keywords = DOA_KEYWORDS.copy()
     if filename and filename in DOA_KEYWORDS_OVERRIDE:
@@ -275,7 +264,7 @@ def process_layout(df, toc_df, filename=None, logger=None):
     else:
         print("⚠️ No initial timestamp found before DOA keyword.")
 
-    post = df.loc[doai+1:].copy()
+    post = df.loc[doai:].copy()
     exclude = (
         (post['layout'].str.contains('Footer', case=False) |
          (post['layout'].str.contains('Header', case=False) &
@@ -302,7 +291,7 @@ def process_layout(df, toc_df, filename=None, logger=None):
             continue
         
         norm = re.sub(r"[^\w\s]", '', text).upper().strip()
-        if row['is_upper']:
+        if (row['is_upper'] or 'SECTION_HEADER' in str(row['layout']).upper()) and not row['is_speaker']:
             print(f"\nProcessing line [{idx}]: {text}")
             print(f"   Normalized: {norm}")
 
@@ -348,174 +337,7 @@ def process_layout(df, toc_df, filename=None, logger=None):
             post.at[idx, 'level_1'] = l1
             post.at[idx, 'level_2'] = l2
 
-    # To capture headings with speaker
-    segments = []
-    current_author = None
-    current_speech = ''
-    current_page_start = None
-    current_page_end = None
-    current_level1 = ''
-    current_level2 = ''# to handle cases where heading and speaker are on the same line, we apply heading only after flushing speaker to avoid misassigning heading as speaker
-    ts_cur = ts_init
-
-    in_question_block = False
-
-    for idx, row in post.iterrows():
-
-        line = row['clean']
-        line_page = page_number(row.get('page'))
-
-        if row['is_timestamp']:
-            t = parse_timestamp(row['clean'])
-            if t:
-                ts_cur = t
-
-        elif row['is_upper'] and not row['is_speaker']:
-            in_question_block = False
-
-            # flush current speaker FIRST
-            if current_author:
-                segments.append({
-                    'level_1': current_level1,
-                    'level_2': current_level2,
-                    'level_3': '',
-                    'timestamp': ts_cur.strftime('%H%M') if ts_cur else '',
-                    'author': current_author,
-                    'speech': current_speech.strip(),
-                    'source_page_start': None, 'source_page_end': None,
-                    'pdf_page_start': current_page_start, 'pdf_page_end': current_page_end,
-                })
-                current_author = None
-                current_speech = ''
-                current_page_start = current_page_end = None
-
-            # just update state, DO NOT append
-            if row['level_1']:
-                current_level1 = row['level_1']
-
-            if row['level_2']:
-                current_level2 = row['level_2']
-
-        elif is_question_line(line):
-
-            # flush previous speaker
-            if current_author:
-                segments.append({
-                    'level_1': current_level1,
-                    'level_2': current_level2,
-                    'level_3': '',
-                    'timestamp': ts_cur.strftime('%H%M') if ts_cur else '',
-                    'author': current_author,
-                    'speech': current_speech.strip(),
-                    'source_page_start': None, 'source_page_end': None,
-                    'pdf_page_start': current_page_start, 'pdf_page_end': current_page_end,
-                })
-
-            # start question block (NO speaker)
-            segments.append({
-                'level_1': current_level1,
-                'level_2': current_level2,
-                'level_3': '',
-                'timestamp': ts_cur.strftime('%H%M') if ts_cur else '',
-                'author': None,
-                'speech': row['clean'].strip(),
-                'source_page_start': None, 'source_page_end': None,
-                'pdf_page_start': line_page, 'pdf_page_end': line_page,
-            })
-
-            current_author = None
-            current_speech = ''
-            current_page_start = current_page_end = None
-            in_question_block = True
-
-            continue
-
-        if row['is_speaker'] and not is_question_line(line):
-            in_question_block = False
-
-            parts = row['clean'].split(':', 1)
-            possible_author = parts[0].strip()
-
-            # Filter out non-speaker lines that are misclassified as speaker due to the presence of a colon.
-            if find_non_speaker_verbs(possible_author):
-                # treat as normal paragraph instead
-                if current_author:
-                    current_speech += '\n' + row['clean']
-                    if line_page is not None:
-                        current_page_start = line_page if current_page_start is None else min(current_page_start, line_page)
-                        current_page_end = line_page if current_page_end is None else max(current_page_end, line_page)
-                else:
-                    pass
-                continue
-
-            # REAL SPEAKER
-            if current_author:
-                segments.append({
-                    'level_1': current_level1,
-                    'level_2': current_level2,
-                    'level_3': '',
-                    'timestamp': ts_cur.strftime('%H%M') if ts_cur else '',
-                    'author': current_author,
-                    'speech': current_speech.strip(),
-                    'source_page_start': None, 'source_page_end': None,
-                    'pdf_page_start': current_page_start, 'pdf_page_end': current_page_end,
-                })
-
-            # ONLY update level AFTER flush
-            if row['level_1']:
-                current_level1 = row['level_1']
-
-            current_author = possible_author
-            current_speech = parts[1].strip()
-            current_page_start = current_page_end = line_page
-
-        elif not row['is_upper'] and not row['is_timestamp']:
-
-            # CONTINUE QUESTION BLOCK
-            if in_question_block:
-                if segments and segments[-1]['author'] is None:
-                    segments[-1]['speech'] += '\n' + row['clean']
-                    if line_page is not None:
-                        start = segments[-1].get('pdf_page_start')
-                        end = segments[-1].get('pdf_page_end')
-                        segments[-1]['pdf_page_start'] = line_page if pd.isna(start) else min(start, line_page)
-                        segments[-1]['pdf_page_end'] = line_page if pd.isna(end) else max(end, line_page)
-                continue
-
-            if current_author:
-                current_speech += '\n' + row['clean']
-                if line_page is not None:
-                    current_page_start = line_page if current_page_start is None else min(current_page_start, line_page)
-                    current_page_end = line_page if current_page_end is None else max(current_page_end, line_page)
-            else:
-                pass
-
-    if current_author:
-        segments.append({
-            'level_1': current_level1,
-            'level_2': current_level2,
-            'level_3': '',
-            'timestamp': ts_cur.strftime('%H%M') if ts_cur else '',
-            'author': current_author,
-            'speech': current_speech.strip(),
-            'source_page_start': None, 'source_page_end': None,
-            'pdf_page_start': current_page_start, 'pdf_page_end': current_page_end,
-        })
-
-    # df_speech = pd.DataFrame(segments)
-
-    # # Assign 'ANNOTATION' when there's a heading, but no author & no speech. 
-    # df_speech['author'] = df_speech.apply(
-    #     lambda row: 'ANNOTATION'
-    #     if (not row['author'] or pd.isna(row['author']))
-    #     and (not row['speech'] or pd.isna(row['speech']))
-    #     and (row['level_1'] or row['level_2'])
-    #     else row['author'],
-    #     axis=1
-    # )
-
-    # return df_speech
-    return pd.DataFrame(segments)
+    return pd.DataFrame(segment_blocks(post, ts_init, parse_timestamp, is_question_line))
 
 def prepare_db_payload(df_speech, prefix, date_str):
 
@@ -917,6 +739,7 @@ def merge_question_blocks(df: pd.DataFrame) -> pd.DataFrame:
 
         same_heading = (
             curr["level_1"] == prev["level_1"]
+            and curr["level_2"] == prev["level_2"]
             and curr["timestamp"] == prev["timestamp"]
         )
 
@@ -934,7 +757,10 @@ def merge_question_blocks(df: pd.DataFrame) -> pd.DataFrame:
                 prev["speech"] = prev_speech + "\n" + curr_speech
             else:
                 prev["speech"] = curr_speech
-            for prefix in ("source_page", "pdf_page"):
+            # Printed boundaries follow the first and last contributing blocks;
+            # retain NULL if a boundary scan has no observed printed marker.
+            prev["source_page_end"] = curr.get("source_page_end")
+            for prefix in ("pdf_page",):
                 starts = [v for v in (prev.get(f"{prefix}_start"), curr.get(f"{prefix}_start")) if pd.notna(v)]
                 ends = [v for v in (prev.get(f"{prefix}_end"), curr.get(f"{prefix}_end")) if pd.notna(v)]
                 prev[f"{prefix}_start"] = min(starts) if starts else None
@@ -963,6 +789,7 @@ def process_and_insert(prefix, key, date_str, logger):
         'Page number': 'page', 'Layout': 'layout', 'Text': 'text',
         'Reading Order': 'order', 'Confidence score % (Layout)': 'confidence'
     })
+    df = attach_source_pages(df)
     df = df[~df['layout'].str.contains('Page', case=False, na=False)]
     df['clean'] = df['text'].fillna('').str.strip()
 

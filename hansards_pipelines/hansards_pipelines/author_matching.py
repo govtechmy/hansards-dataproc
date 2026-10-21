@@ -3,6 +3,8 @@ import pandas as pd
 from thefuzz import fuzz, process
 import json
 import ast
+from functools import lru_cache
+from hansards_pipelines.utils.author_history_utils import UNVERIFIED_DERIVED
 
 
 def normalize_malaysian_name(name, remove_titles=True, standardize_spacing=True):
@@ -89,6 +91,8 @@ def normalize_malaysian_name(name, remove_titles=True, standardize_spacing=True)
             "SHEIKH",
             "SYEIKH",
         ],
+        # Historical Malay Hansards use Enche' where modern ones use Encik.
+        "forms_of_address": ["ENCHE", "ENCIK", "CIK"],
         # Professional titles
         "professional": [
             "DR",
@@ -295,8 +299,9 @@ def preprocess_names_for_matching(df, name_column, output_column=None):
     return result_df
 
 
-def enhanced_match_names(
-    name, clean_names_list, scorer=fuzz.token_sort_ratio, threshold=85, limit=5, enforce_first_token=True
+def _uncached_enhanced_match_names(
+    name, clean_names_list, scorer=fuzz.token_sort_ratio, threshold=85, limit=5, enforce_first_token=True,
+    log_unmatched=True,
 ):
     """
     Function to match a name to a list of names with enhanced scoring.
@@ -305,6 +310,11 @@ def enhanced_match_names(
     # Skip empty strings
     if not name or pd.isna(name) or name.strip() == "":
         return []
+
+    if enforce_first_token:
+        first = name.split()[0]
+        clean_names_list = [candidate for candidate in clean_names_list
+                            if candidate and candidate.split() and candidate.split()[0] == first]
 
     # Get all matches
     matches = process.extract(name, clean_names_list, scorer=scorer, limit=limit)
@@ -344,7 +354,7 @@ def enhanced_match_names(
     if not valid_matches:
         # Log unmatched names for review
         best_match = matches[0] if matches else None
-        if best_match:
+        if best_match and log_unmatched:
             with open("unmatched_names.json", "a+", encoding="utf-8") as f:
                 # Ensure we maintain a valid JSON array of unmatched names
                 f.seek(0)
@@ -365,6 +375,31 @@ def enhanced_match_names(
     return valid_matches
 
 
+@lru_cache(maxsize=16)
+def _shared_name_choices(choices):
+    # Reuse one immutable choice tuple across cached queries for this source.
+    return choices
+
+
+@lru_cache(maxsize=20000)
+def _cached_name_matches(name, choices, scorer, threshold, limit, enforce_first_token):
+    return tuple(_uncached_enhanced_match_names(
+        name, choices, scorer=scorer, threshold=threshold, limit=limit,
+        enforce_first_token=enforce_first_token, log_unmatched=False))
+
+
+def enhanced_match_names(
+    name, clean_names_list, scorer=fuzz.token_sort_ratio, threshold=85, limit=5,
+    enforce_first_token=True, log_unmatched=True,
+):
+    if not log_unmatched:
+        choices = _shared_name_choices(tuple(clean_names_list))
+        return list(_cached_name_matches(name, choices, scorer, threshold, limit, enforce_first_token))
+    return _uncached_enhanced_match_names(
+        name, clean_names_list, scorer=scorer, threshold=threshold, limit=limit,
+        enforce_first_token=enforce_first_token, log_unmatched=True)
+
+
 def _is_temporally_valid(author_id, speech_dates, author_hist_df):
     """Check if any speech date falls within author's active period"""
     author_history = author_hist_df[author_hist_df["new_author_id"] == author_id]
@@ -374,6 +409,8 @@ def _is_temporally_valid(author_id, speech_dates, author_hist_df):
     for speech_date in speech_dates:
         # Check if speech_date falls within any history record's date range
         for _, hist_row in author_history.iterrows():
+            if str(hist_row.get('exec_posts')) == UNVERIFIED_DERIVED:
+                continue
             start_date, end_date = hist_row["start_date"], hist_row["end_date"]
             if pd.notna(start_date):
                 if pd.isna(end_date) and speech_date >= start_date:
@@ -383,10 +420,55 @@ def _is_temporally_valid(author_id, speech_dates, author_hist_df):
     return False
 
 
-def match_by_name(speech_df, author_df, author_hist_df=None, column_name="name", threshold=70):
+def abbreviated_given_name_candidates(name, author_df):
+    """Expand leading MOHD only when the entire remaining name agrees.
+
+    Keep all owners so a collision remains ambiguous instead of using the first
+    row. Full spellings are not generally interchangeable with one another.
+    """
+    spellings = {'MOHD', 'MOHAMED', 'MOHAMAD', 'MOHAMMAD', 'MUHAMMAD', 'MUHAMAD'}
+    parts = str(name).split()
+    if len(parts) < 2 or parts[0] not in spellings:
+        return set()
+    candidates = set()
+    has_abbreviation = parts[0] == 'MOHD'
+    for row in author_df[['new_author_id', 'name_up']].itertuples(index=False):
+        candidate = str(row.name_up).split()
+        if candidate and candidate[0] in spellings and candidate[1:] == parts[1:]:
+            candidates.add(row.new_author_id)
+            has_abbreviation |= candidate[0] == 'MOHD'
+    return candidates if has_abbreviation else set()
+
+
+def _anchored_name_key(value):
+    return ' '.join(token for token in re.findall(r'[^\W\d_]+', str(value).upper())
+                    if token not in {'BIN', 'BINTI', 'IBNI'})
+
+
+def build_anchored_name_index(author_df):
+    index = {}
+    for row in author_df[['new_author_id', 'name_up']].itertuples(index=False):
+        parts = _anchored_name_key(row.name_up).split()
+        for length in range(2, len(parts) + 1):
+            index.setdefault(' '.join(parts[:length]), set()).add(row.new_author_id)
+    return index
+
+
+def anchored_name_candidates(name, author_df, index=None):
+    """A shortened name starts at the person's first name, never a patronymic.
+
+    The caller must validate service dates and retain multiple active owners.
+    """
+    index = build_anchored_name_index(author_df) if index is None else index
+    return index.get(_anchored_name_key(name), set())
+
+
+def match_by_name(speech_df, author_df, author_hist_df=None, column_name="name", threshold=70,
+                  log_unmatched=True, name_index=None):
     """Match speech records to authors by name with temporal validation"""
 
     matches = {}
+    name_index = build_anchored_name_index(author_df) if name_index is None else name_index
 
     # Build candidate list ONCE
     clean_author_names = [
@@ -402,8 +484,30 @@ def match_by_name(speech_df, author_df, author_hist_df=None, column_name="name",
             else pd.Series()
         )
 
+        anchored = anchored_name_candidates(name, author_df, name_index)
+        if anchored:
+            active = {owner for owner in anchored if author_hist_df is None or speech_dates.empty
+                      or _is_temporally_valid(owner, speech_dates, author_hist_df)}
+            matches[name] = next(iter(active)) if len(active) == 1 else None
+            continue
+
+        abbreviated = abbreviated_given_name_candidates(name, author_df)
+        if abbreviated:
+            # This exact remainder is stronger evidence than a fuzzy name.
+            # Multiple owners must stay unmatched, even with a high score.
+            if len(abbreviated) != 1:
+                matches[name] = None
+            else:
+                author_id = next(iter(abbreviated))
+                matches[name] = author_id if (
+                    author_hist_df is None or speech_dates.empty or
+                    _is_temporally_valid(author_id, speech_dates, author_hist_df)
+                ) else None
+            continue
+
         match_results = enhanced_match_names(
-            name, clean_author_names, threshold=threshold, limit=5, enforce_first_token=True
+            name, clean_author_names, threshold=threshold, limit=5, enforce_first_token=True,
+            log_unmatched=log_unmatched,
         )
         
         if not match_results:
@@ -444,7 +548,7 @@ def match_by_name(speech_df, author_df, author_hist_df=None, column_name="name",
     return matches
 
 
-def match_by_constituency(speech_df, author_hist_df, column_name, threshold=70):
+def match_by_constituency(speech_df, author_hist_df, column_name, threshold=70, log_unmatched=True):
     """Match speech records to authors by constituency"""
     constituency_matches = {}
 
@@ -460,7 +564,8 @@ def match_by_constituency(speech_df, author_hist_df, column_name, threshold=70):
         # Filter out None/NaN values from constituency areas
         clean_areas = [a for a in author_hist_df["area_up"].unique() if a and not pd.isna(a)]
         match_results = enhanced_match_names(
-            constituency, clean_areas, threshold=threshold, limit=3, enforce_first_token=False
+            constituency, clean_areas, threshold=threshold, limit=3, enforce_first_token=False,
+            log_unmatched=log_unmatched,
         )
         if match_results:
             # Take the best match
@@ -591,6 +696,14 @@ def apply_matches_with_date_context(
             df.loc[~valid_position_a_mask, "position_a_id"] = None
             df.loc[~valid_position_b_mask, "position_b_id"] = None
 
+            for column in ("constituency_a_id", "constituency_b_id"):
+                valid = df.apply(
+                    lambda row: is_date_valid(row[column], row["date"])
+                    if pd.notna(row[column]) else False,
+                    axis=1,
+                )
+                df.loc[~valid, column] = None
+
             return df
 
         # Apply the vectorized date validation
@@ -623,7 +736,7 @@ def apply_matches_with_date_context(
     null_mask = result_df["author_id"].isna()
     context.log.info(f"Null authors: {null_mask.sum()}/{len(result_df)}")
     result_df.loc[null_mask, "author_id"] = result_df.loc[
-        null_mask, "constituency_a_id"
+        null_mask, "constituency_a_author_id"
     ]
     context.log.info(
         f"Constituency A matches: {(~result_df['author_id'].isna()).sum()}/{len(result_df)}"
@@ -632,7 +745,7 @@ def apply_matches_with_date_context(
     still_null_mask = result_df["author_id"].isna()
     context.log.info(f"Still null authors: {still_null_mask.sum()}/{len(result_df)}")
     result_df.loc[still_null_mask, "author_id"] = result_df.loc[
-        still_null_mask, "constituency_b_id"
+        still_null_mask, "constituency_b_author_id"
     ]
     context.log.info(
         f"Constituency B matches: {(~result_df['author_id'].isna()).sum()}/{len(result_df)}"
@@ -642,7 +755,7 @@ def apply_matches_with_date_context(
     still_null_mask = result_df["author_id"].isna()
     context.log.info(f"Still null authors: {still_null_mask.sum()}/{len(result_df)}")
     result_df.loc[still_null_mask, "author_id"] = result_df.loc[
-        still_null_mask, "position_a_id"
+        still_null_mask, "position_a_author_id"
     ]
     context.log.info(
         f"Position A matches: {(~result_df['author_id'].isna()).sum()}/{len(result_df)}"
@@ -650,7 +763,7 @@ def apply_matches_with_date_context(
     still_null_mask = result_df["author_id"].isna()
     context.log.info(f"Still null authors: {still_null_mask.sum()}/{len(result_df)}")
     result_df.loc[still_null_mask, "author_id"] = result_df.loc[
-        still_null_mask, "position_b_id"
+        still_null_mask, "position_b_author_id"
     ]
     context.log.info(
         f"Position B matches: {(~result_df['author_id'].isna()).sum()}/{len(result_df)}"
@@ -706,6 +819,7 @@ def match_position_to_author(author_hist_df):
                     position_to_author[position].append(
                         {
                             "author_id": author_id,
+                            "owner_id": row["new_author_id"],
                             # "author": author_name,
                             "start_date": (
                                 row["start_date"] if "start_date" in row else None
@@ -737,6 +851,7 @@ def match_position_to_author(author_hist_df):
                     position_to_author[position].append(
                         {
                             "author_id": author_id,
+                            "owner_id": row["new_author_id"],
                             # "author": author_name,
                             "start_date": (
                                 row["start_date"] if "start_date" in row else None
@@ -746,6 +861,19 @@ def match_position_to_author(author_hist_df):
                     )
 
     return position_to_author
+
+
+def _position_key(position):
+    # Formatting differences are harmless; missing departments and office
+    # qualifiers are not. Do not fuzzily equate unrelated ministerial titles.
+    key = ' '.join(re.findall(r'\w+', str(position).upper()))
+    # Whole-title translations only: qualifiers such as deputy must survive.
+    return {
+        'PRIME MINISTER': 'PERDANA MENTERI',
+        'THE PRIME MINISTER': 'PERDANA MENTERI',
+        'DEPUTY PRIME MINISTER': 'TIMBALAN PERDANA MENTERI',
+        'THE DEPUTY PRIME MINISTER': 'TIMBALAN PERDANA MENTERI',
+    }.get(key, key)
 
 
 def match_author_by_position(
@@ -763,7 +891,7 @@ def match_author_by_position(
     date_column : str, optional
         Column name containing speech date for temporal verification
     threshold : int, default=70
-        Threshold for fuzzy matching
+        Retained for caller compatibility. Office matching is normalized exact.
 
     Returns:
     --------
@@ -771,50 +899,34 @@ def match_author_by_position(
         Dictionary mapping author_a values to author IDs
     """
     position_matches = {}
-    all_positions = list(position_to_author.keys())
+    normalized_positions = {}
+    for position, holders in position_to_author.items():
+        normalized_positions.setdefault(_position_key(position), []).extend(holders)
+
+    def choose_history(matches, position):
+        # Select the office holder at the speech date, not the latest person
+        # ever to hold that position. A sitting normally has one unique date.
+        dates = (speech_df.loc[speech_df[column_name] == position, date_column].dropna().unique()
+                 if date_column and date_column in speech_df else [])
+        if len(dates):
+            matches = [m for m in matches if pd.notna(m['start_date']) and all(
+                m['start_date'] <= d and (pd.isna(m['end_date']) or d <= m['end_date'])
+                for d in dates)]
+        if not matches or len({m.get('owner_id',m['author_id']) for m in matches}) != 1:
+            return None
+        matches = sorted(matches, key=lambda m: (
+            m['start_date'] if pd.notna(m['start_date']) else pd.Timestamp.min,
+            -m['author_id']), reverse=True)
+        return matches[0]['author_id']
 
     # For each unique position in column_name
     for position in speech_df[column_name].dropna().unique():
-        # Skip if it doesn't look like a position
-        if any(term in position.upper() for term in ["area", "PARLIMEN", "P."]):
-            continue
-
-        # Try exact match first
-        if position.upper() in position_to_author:
-            matches = position_to_author[position.upper()]
-            if matches:
-                # Sort by recency if multiple matches
-                recent_matches = sorted(
-                    [m for m in matches if pd.notna(m["end_date"])],
-                    key=lambda x: x["end_date"],
-                    reverse=True,
-                )
-                position_matches[position] = (
-                    recent_matches[0]["author_id"]
-                    if recent_matches
-                    else matches[0]["author_id"]
-                )
-                continue
-
-        # Try fuzzy matching if no exact match
-        match_result = process.extractOne(
-            position.upper(), all_positions, scorer=fuzz.token_set_ratio
-        )
-        if match_result and match_result[1] >= threshold:
-            matched_position = match_result[0]
-            matches = position_to_author[matched_position]
-            if matches:
-                # Sort by recency if multiple matches
-                recent_matches = sorted(
-                    [m for m in matches if pd.notna(m["end_date"])],
-                    key=lambda x: x["end_date"],
-                    reverse=True,
-                )
-                position_matches[position] = (
-                    recent_matches[0]["author_id"]
-                    if recent_matches
-                    else matches[0]["author_id"]
-                )
+        key = _position_key(position)
+        matches = normalized_positions.get(key, [])
+        # An unspecified minister or member does not name a unique office.
+        if key in {'MENTERI', 'MINISTER', 'AHLI', 'MEMBER'}:
+            matches = []
+        position_matches[position] = choose_history(matches, position)
 
     return position_matches
 
@@ -873,8 +985,19 @@ def apply_position_matches_to_speeches(
     return result_df
 
 
-def perform_author_matching(speech_df, author_df, author_hist_df, context):
+def perform_author_matching(speech_df, author_df, author_hist_df, context, *,
+                            exclude_derived=False, log_unmatched=True, use_constituency=True,
+                            authors_preprocessed=False, name_index=None):
     """Perform author matching on speech dataframe"""
+    # Source review can invalidate an inferred period without deleting an ID.
+    # Apply this uniformly to name, constituency and office matching.
+    author_hist_df = author_hist_df[
+        author_hist_df['exec_posts'] != UNVERIFIED_DERIVED
+    ].copy()
+    if exclude_derived:
+        author_hist_df = author_hist_df[
+            author_hist_df['exec_posts'] != 'derived_years_mentioned'
+        ].copy()
 
     # filter out annotation rows
     df_speech_only = speech_df[speech_df["is_annotation"] == False].drop(
@@ -887,12 +1010,13 @@ def perform_author_matching(speech_df, author_df, author_hist_df, context):
 
     df_speech_only = df_speech_only.loc[:, columns_to_keep]
 
-    # extract author_a [author_b] from author column
+    # Historical labels use parentheses; modern ones use square brackets.
+    # Keep the inner person/constituency available during matching.
     df_speech_only["author_a"] = df_speech_only["author"].str.extract(
-        r"^(.*?)(?:\s*\[(.*?)\])?$"
+        r"^(.*?)(?:\s*[\[(](.*?)[\])])?$"
     )[0]
     df_speech_only["author_b"] = df_speech_only["author"].str.extract(
-        r"^(.*?)\s*\[(.*?)\]$"
+        r"^(.*?)\s*[\[(](.*?)[\])]$"
     )[1]
 
     df_speech_only["date"] = pd.to_datetime(df_speech_only["date"])
@@ -904,11 +1028,15 @@ def perform_author_matching(speech_df, author_df, author_hist_df, context):
     df_speech_only = preprocess_names_for_matching(
         df_speech_only, "author_b", "author_b_up"
     )
-    author_df = preprocess_names_for_matching(author_df, "name", "name_norm")
+    if not authors_preprocessed:
+        author_df = preprocess_names_for_matching(author_df, "name", "name_norm")
+    else:
+        author_df = author_df.copy()
 
     # Ensure consistent case for matching
     author_hist_df["area_up"] = author_hist_df["area"].str.upper()
     author_df["name_up"] = author_df["name_norm"].str.upper()
+    name_index = build_anchored_name_index(author_df) if name_index is None else name_index
 
     # Ensure the date column is in datetime format
     author_hist_df["start_date"] = pd.to_datetime(author_hist_df["start_date"])
@@ -917,19 +1045,25 @@ def perform_author_matching(speech_df, author_df, author_hist_df, context):
     # Perform matching
     # 1. Get matches by name with temporal validation
     name_matches_a = match_by_name(
-        df_speech_only, author_df, author_hist_df, "author_a_up", threshold=85
+        df_speech_only, author_df, author_hist_df, "author_a_up", threshold=85,
+        log_unmatched=log_unmatched,
+        name_index=name_index,
     )
     name_matches_b = match_by_name(
-        df_speech_only, author_df, author_hist_df, "author_b_up", threshold=85
+        df_speech_only, author_df, author_hist_df, "author_b_up", threshold=85,
+        log_unmatched=log_unmatched,
+        name_index=name_index,
     )
 
     # 2. Get matches by constituency
     constituency_matches_a = match_by_constituency(
-        df_speech_only, author_hist_df, "author_a_up", threshold=70
-    )
+        df_speech_only, author_hist_df, "author_a_up", threshold=70,
+        log_unmatched=log_unmatched,
+    ) if use_constituency else {}
     constituency_matches_b = match_by_constituency(
-        df_speech_only, author_hist_df, "author_b_up", threshold=70
-    )
+        df_speech_only, author_hist_df, "author_b_up", threshold=70,
+        log_unmatched=log_unmatched,
+    ) if use_constituency else {}
 
     # 3. Get matches by position/jawatan
     position_to_author = match_position_to_author(author_hist_df)
@@ -957,6 +1091,16 @@ def perform_author_matching(speech_df, author_df, author_hist_df, context):
         ah_to_author_id,
         context,
     )
+
+    # A named person inside an office label must be matched as that person.
+    # An unresolved name is not permission to substitute an office holder.
+    df_result['author_id'] = df_result['author_id'].astype('object')
+    role = re.compile(r'\b(?:MENTERI|MINISTER|SETIAUSAHA|SECRETARY|SPEAKER|PRESIDENT|PENGERUSI|PERTUA|CHAIRMAN)\b')
+    for idx, row in df_speech_only.iterrows():
+        if pd.notna(row['author_b_up']) and role.search(str(row['author_a_up'])):
+            named_owner = name_matches_b.get(row['author_b_up'])
+            if named_owner is None or pd.isna(named_owner) or df_result.at[idx, 'author_id'] != named_owner:
+                df_result.at[idx, 'author_id'] = 'NO MATCH'
 
     # 4. Analyze match rate
     match_rate = (df_result["author_id"] != "NO MATCH").mean() * 100

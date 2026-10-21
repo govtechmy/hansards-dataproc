@@ -20,6 +20,11 @@ parliamentary_cycle_schedule = ScheduleDefinition(
     cron_schedule="0 16 * * 5",  # Sat 00:00 MY
 )
 
+parliamentary_cycle_arkib_schedule = ScheduleDefinition(
+    job=jobs.scrape_parliamentary_cycle_arkib_job,
+    cron_schedule="0 16 * * 5",  # Sat 00:00 MY
+)
+
 scrape_arkib_schedule = ScheduleDefinition(
     job=jobs.scrape_arkib_job,
     cron_schedule="0 16 * * 5",  # Sat 00:00 MY
@@ -29,6 +34,7 @@ defs = Definitions(
     assets=all_assets,
     jobs=[
         jobs.scrape_parliamentary_cycle_job,
+        jobs.scrape_parliamentary_cycle_arkib_job,
         jobs.sittings_job,
         jobs.scrape_job,
         jobs.scrape_arkib_job,
@@ -52,6 +58,7 @@ defs = Definitions(
     schedules=[
         scrape_schedule,
         parliamentary_cycle_schedule,
+        parliamentary_cycle_arkib_schedule,
         scrape_arkib_schedule,
     ],
 )
