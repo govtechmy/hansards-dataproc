@@ -1,5 +1,6 @@
 import json
 from typing import Dict, List, Optional
+from hansards_pipelines.utils.author_history_utils import UNVERIFIED_DERIVED
 
 
 # ---------------------------------------------------------------------
@@ -205,24 +206,30 @@ def ingest_sitting_to_db(payload: Dict, conn) -> None:
         if author_ids:
             cur.execute(
                 """
-                SELECT ah.record_id, a.new_author_id, ah.end_date
+                SELECT ah.record_id, a.new_author_id
                 FROM api_author_history ah
                 JOIN api_author a ON a.new_author_id = ah.author_id
                 WHERE a.new_author_id = ANY(%s)
                 AND ah.start_date <= %s
                 AND (ah.end_date >= %s OR ah.end_date IS NULL)
+                AND ah.exec_posts IS DISTINCT FROM %s
                 ORDER BY
                 a.new_author_id,
-                ah.end_date IS NULL,
-                ah.end_date DESC
+                CASE WHEN ah.exec_posts = 'derived_years_mentioned' THEN 1 ELSE 0 END,
+                CASE WHEN NULLIF(btrim(ah.exec_posts), '') IS NOT NULL
+                          AND ah.exec_posts <> 'derived_years_mentioned' THEN 0 ELSE 1 END,
+                ah.start_date DESC,
+                ah.record_id ASC
                 """,
-                (list(author_ids), date, date),
+                (list(author_ids), date, date, UNVERIFIED_DERIVED),
             )
 
-            for record_id, author_id, end_date in cur.fetchall():
+            # Prefer a non-derived history valid on the sitting date. Within
+            # that class prefer a role period over a plain MP period, then use
+            # the most recently started period. Keep the first
+            # result instead of overwriting it with older placeholder records.
+            for record_id, author_id in cur.fetchall():
                 if author_id not in author_history_map:
-                    author_history_map[author_id] = record_id
-                elif end_date is not None:
                     author_history_map[author_id] = record_id
 
         # --------------------------------------------------
