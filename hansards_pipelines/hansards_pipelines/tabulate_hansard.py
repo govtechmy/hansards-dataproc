@@ -12,6 +12,11 @@ from datetime import datetime
 from .utils.text_utils import is_number_only
 from hansards_pipelines.legacy_pipeline.constants import NON_SPEAKER_VERBS
 
+_NON_SPEAKER_VERB_PATTERN = re.compile(
+    r'(?<!\w)(?:' + '|'.join(re.escape(word) for word in NON_SPEAKER_VERBS) + r')(?!\w)',
+    re.IGNORECASE,
+)
+
 
 def more_than_30_minutes_past(time_str1, time_str2):
     try:
@@ -140,11 +145,7 @@ def is_procedural_annotation(line: str) -> bool:
 
 
 def _contains_non_speaker_verb(text: str) -> bool:
-    # Escape each keyword to avoid regex parse errors from punctuation in constants.
-    return any(
-        re.search(rf"(?<!\w){re.escape(kw)}(?!\w)", text, re.IGNORECASE)
-        for kw in NON_SPEAKER_VERBS
-    )
+    return bool(_NON_SPEAKER_VERB_PATTERN.search(text))
 
 def get_author_and_speech(text, bold, italics, house, warn="", is_pipeline=False):
     author = ""

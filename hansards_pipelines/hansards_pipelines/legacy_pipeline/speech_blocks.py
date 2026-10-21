@@ -10,7 +10,7 @@ _CONNECTORS = {"the", "of", "for", "and", "di", "yang", "bin", "binti", "a/l", "
 _LABEL_START = re.compile(
     r"^(?:(?:Mr|Mrs|Ms|Dr|Sir|Lord|Dato|Datuk|Datin|Tun|Tunku|Tengku|Raja|Nik|"
     r"Tan|Sri|Tuan|Puan|Encik|Enche|Haji|Hajah|Lt|Kol|Y\.B|Yang|Timbalan|"
-    r"Menteri|Setiausaha|Pengerusi|Speaker|President)\b|"
+    r"Menteri|Perdana|Setiausaha|Pengerusi|Speaker|President)\b|"
     r"(?:The\s+)?(?:Prime Minister|Deputy|Minister|Parliamentary Secretary|"
     r"Speaker|President|Chairman|Clerk)\b)"
 )
