@@ -74,6 +74,9 @@ def add_toc_entry(toc, toc_entry):
 def post_parsing_edits(
     house, date=None, tablejson_file_contents=None, categories_file_contents=None
 ):
+    if house.upper() == "MMS":
+        # Ordinary DN corrections are date-specific and do not apply to ceremonies.
+        return tablejson_file_contents, categories_file_contents
     if house.upper() == "DN":
         return post_parsing_edits_dn(
             date, tablejson_file_contents, categories_file_contents

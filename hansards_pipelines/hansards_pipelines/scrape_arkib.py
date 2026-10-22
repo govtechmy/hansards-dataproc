@@ -47,6 +47,11 @@ REQUEST_DELAY = 0.2
 LOG_LEVEL = logging.INFO
 
 CATEGORIES = {
+    "mms": {
+        "base_url": "https://www.parlimen.gov.my/hansard-majlis.html",
+        "uweb": "dn",
+        "house_folder": "dewannegara",
+    },
     "dewannegara": {
         "base_url": "https://www.parlimen.gov.my/hansard-dewan-negara.html",
         "uweb": "dn",
@@ -97,7 +102,7 @@ def fetch_html(session, base_url, uweb, node_id) -> str:
                 params={
                     "uweb": uweb,
                     "arkib": "yes",
-                    "ajx": "1",
+                    "ajx": "0" if "hansard-majlis" in base_url and node_id == ROOT_ID else "1",
                     "id": node_id,
                 },
                 timeout=30,
@@ -273,6 +278,7 @@ def write_manifest_to_s3(
     house_folder: str,
     parliament: int | None,
     items: List[Dict],
+    document_prefix: str | None = None,
 ):
     manifest = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -286,6 +292,9 @@ def write_manifest_to_s3(
         key = f"arkib/{house_folder}/manifest/manifest_term_{parliament}.json"
     else:
         key = f"arkib/{house_folder}/manifest/manifest_all_terms.json"
+
+    if document_prefix:
+        key = key.replace("/manifest/", f"/manifest/{document_prefix}/")
 
     s3.put_object(
         Bucket=S3_DATAPROC_BUCKET,
@@ -308,7 +317,7 @@ def run_scrape(
     categories = (
         {category: CATEGORIES[category]}
         if category
-        else CATEGORIES
+        else {name: cfg for name, cfg in CATEGORIES.items() if name != "mms"}
     )
 
     for name, cfg in categories.items():
@@ -347,7 +356,10 @@ def run_scrape(
 
         logging.info("=== END %s ===", name)
 
-        write_manifest_to_s3(s3, house_folder=cfg["house_folder"], parliament=parliament, items=collected_items)
+        write_manifest_to_s3(
+            s3, house_folder=cfg["house_folder"], parliament=parliament,
+            items=collected_items, document_prefix="mms" if name == "mms" else None,
+        )
 
 
 def main():

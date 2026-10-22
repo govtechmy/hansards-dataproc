@@ -15,7 +15,7 @@ def is_header(text):
     # 2                                                               DR 8.3.2018
     # DR 8.3.2018
     # 2 KKDR.9.10.2023                                                                 1
-    return re.fullmatch(r"[ .\d]*(KK)?[D][R|N][ .\d]*\n", text)
+    return re.fullmatch(r"[ .\d]*(?:(KK)?[D][R|N]|MMS)[ .\d]*\n", text)
 
 
 def get_page_number(header_text):
@@ -23,14 +23,14 @@ def get_page_number(header_text):
     # special case of 12.11.2019
     if "12.11.201 " in header_text:
         header_text = header_text.replace("12.11.201 ", "12.11.2019 ")
-    if header_text.startswith(("DR", "DN")):
+    if header_text.startswith(("DR", "DN", "MMS")):
         # some numbers might be in the form 1  1
         # some years are 2023.
         # some years missing end (2019 becomes 201)
         # get the page number after the year
         return re.split(r"\d{4}\.?", header_text)[-1].replace(" ", "")
     else:
-        return re.split("DR|DN", header_text)[0].replace(" ", "")
+        return re.split("DR|DN|MMS", header_text)[0].replace(" ", "")
 
 
 def _source_page_number(header_text):
@@ -399,7 +399,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "house",
         help="parliament house. Possible values: 'dr' or 'dn' or 'kkdr'",
-        choices=["dr", "dn", "kkdr"],
+        choices=["dr", "dn", "kkdr", "mms"],
         default="kkdr",
         nargs="?",
     )

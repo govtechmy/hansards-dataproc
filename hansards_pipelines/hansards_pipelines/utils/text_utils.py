@@ -855,7 +855,7 @@ def extract_pdf_url(js_string):
 
 def rename_pdf(filename):
     """DR-DDMMYYYY.pdf -> dr_yyyy-mm-dd.pdf"""
-    match = re.search(r"(DR|DN|KKDR)-(\d{2})(\d{2})(\d{4})", filename, re.IGNORECASE)
+    match = re.search(r"(DR|DN|KKDR|MMS)-(\d{2})(\d{2})(\d{4})", filename, re.IGNORECASE)
     if match is not None:
         house, day, month, year = match.groups()
         new_filename = f"{house.lower()}_{year}-{month}-{day}"
@@ -937,7 +937,10 @@ def get_sitting_object(pdf_file_key: str, logger=None):
         # Expected formats: DN01051961, DR12122024, KKDR12122024
         # House codes: DR (2 chars), DN (2 chars), KKDR (4 chars)
         
-        if base_name.startswith(("KKDR", "kkdr")):
+        if base_name.upper().startswith("MMS"):
+            house = "MMS"
+            date_str = base_name[3:].strip()
+        elif base_name.startswith(("KKDR", "kkdr")):
             house = base_name[:4].upper()  # KKDR
             date_str = base_name[4:].strip()  # 12122024
         elif len(base_name) >= 10:  # Minimum: 2 char house + 8 char date
@@ -949,7 +952,7 @@ def get_sitting_object(pdf_file_key: str, logger=None):
     
     # Validate house code
     try:
-        house_folder = house_mapper.to_canonical(house.lower())  # dr -> dewanrakyat (for s3)
+        house_folder = house_mapper.to_canonical("dn" if house == "MMS" else house.lower())
     except (KeyError, AttributeError) as e:
         log.warning("Invalid house code: '%s' in filename '%s', skipped", house, pdf_file_key)
         return None
@@ -1001,7 +1004,7 @@ def get_sitting_object(pdf_file_key: str, logger=None):
     return {
         "house": house,  # DR
         "house_folder": house_folder,  # dewanrakyat
-        "house_display": house_mapper.to_display(house),  # dewan-rakyat
+        "house_display": house_mapper.to_display("DN" if house == "MMS" else house),
         "date_str": date_str,  # 12122024
         "proper_date_str": proper_date_str,  # 2024-12-12
         "date": date,

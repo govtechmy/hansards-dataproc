@@ -237,7 +237,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "house",
         help="parliament house. Possible values: 'dr' or 'dn'",
-        choices=["dr", "dn", "kkdr"],
+        choices=["dr", "dn", "kkdr", "mms"],
         default="kkdr",
         nargs="?",
     )

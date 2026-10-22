@@ -31,6 +31,24 @@ def replace_kkdr_category(kkdr_subcategories_processed, to_replace, replacement)
 
 def get_categories(hansard_date, house, root_dir=INPUT_PIPELINE_DIR, file_content=None):
     print(f"Get categories: {hansard_date} {house}")
+    if house.upper() == "MMS":
+        # Ceremonies can omit KANDUNGAN. Read headings from the proceedings,
+        # after DOA, rather than treating the cover as a table of contents.
+        from hansards_pipelines.parse_pdf import parse_hansard
+
+        text, bold, italics, _, _, _, _ = parse_hansard(
+            hansard_date, house, source_dir=root_dir, file_content=file_content
+        )
+        from hansards_pipelines.parse_mms import extract_categories
+
+        categories = extract_categories(text)
+        if file_content:
+            return False, text, bold, italics, False, False, json.dumps(categories)
+        date = f"{hansard_date[-4:]}-{hansard_date[2:4]}-{hansard_date[:2]}"
+        path = BASE_PATH / "parsed_pdf" / house / hansard_date[-4:] / date
+        path.mkdir(parents=True, exist_ok=True)
+        (path / "categories.json").write_text(json.dumps(categories, indent=2))
+        return
     year = hansard_date[-4:]
     bold = []
     italics = []

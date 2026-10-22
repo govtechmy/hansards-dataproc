@@ -11,7 +11,8 @@ def build_path(current_key: str, filename: str, sitting_object: dict):
     path_parts = [
         current_key,
         sitting_object["house_folder"],
-        sitting_object["date_str"],
+        (f"MMS-{sitting_object['date_str']}"
+         if sitting_object["house"] == "MMS" else sitting_object["date_str"]),
         filename,
     ]
     return "/".join(path_parts)

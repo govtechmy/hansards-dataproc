@@ -95,10 +95,11 @@ from hansards_pipelines.post_parsing_edits import post_parsing_edits
 from hansards_pipelines.pretabulation_processing import preprocess
 from hansards_pipelines.edit_hansards import edit_hansards
 from hansards_pipelines.tabulate_hansard import tabulate
+from hansards_pipelines.parse_mms import tabulate_mms
 
 s3_client = boto3.client("s3")
 
-house_names = ["DR", "DN", "KKDR"]
+house_names = ["DR", "DN", "KKDR", "MMS"]
 
 sitting_partitions_def = DynamicPartitionsDefinition(name="house_sittings")
 sitting_legacy_partitions_def = DynamicPartitionsDefinition(name="house_sittings_legacy")
@@ -242,6 +243,10 @@ def scrape_website(context: AssetExecutionContext) -> List:
             "https://www.parlimen.gov.my/hansard-dewan-khas.html?uweb=dr",
             "kamarkhas",
         ),
+        (
+            "https://www.parlimen.gov.my/hansard-majlis.html?uweb=dn",
+            "dewannegara",
+        ),
     ]
     new_pdfs = []
     skipped_pdfs = []
@@ -371,13 +376,17 @@ def scrape_website(context: AssetExecutionContext) -> List:
                         is_final_db = False                  
                         try:
                             proper_date = f"{date[4:]}-{date[2:4]}-{date[:2]}"  # DDMMYYYY -> YYYY-MM-DD
-                            house_sitting  = house_mapper.code_to_display(house.lower())
+                            house_sitting = sitting_object["house_display"]
                             api_url = f"{DEV_API_URL}/api/sitting/?house={house_sitting}&date={proper_date}"
-                            db_response = requests.get(api_url, timeout=15)
-                            if db_response.ok:               
-                                is_final_db = db_response.json().get("meta", {}).get("is_final", False)
+                            if house == "MMS":
+                                # A regular DN sitting on this date is a different document.
+                                context.log.info("Skipping date-only backend final-status lookup for MMS")
                             else:
-                                context.log.warning(f"API returned non-200 for {pdf_name}: {db_response.status_code} - {db_response.text}")
+                                db_response = requests.get(api_url, timeout=15)
+                                if db_response.ok:
+                                    is_final_db = db_response.json().get("meta", {}).get("is_final", False)
+                                else:
+                                    context.log.warning(f"API returned non-200 for {pdf_name}: {db_response.status_code} - {db_response.text}")
                         except Exception as db_err:
                             context.log.warning(f"DB check failed for {pdf_name}: {db_err}")
 
@@ -929,7 +938,8 @@ def dg_tabulate(context: AssetExecutionContext):
     if isinstance(categories, str):
         categories = json.loads(categories)
 
-    speeches, absent_text, attended_text = tabulate(
+    tabulator = tabulate_mms if sitting_object["house"] == "MMS" else tabulate
+    speeches, absent_text, attended_text = tabulator(
         sitting_object["date_str"],
         sitting_object["house"],
         plaintext,
@@ -1117,7 +1127,7 @@ def prepare_db_payload(context: AssetExecutionContext):
     f"Sitting parsed: date={sitting_object['proper_date_str']}, "
     f"filename={sitting_object['renamed_filename']}, "
     f"is_final={is_final}, "
-    f"house={house_mapper.code_to_display(sitting_object['house'])}")
+    f"house={sitting_object['house_display']}")
 
     response = requests.get(f"{DEV_API_URL}/api/author-history")
     response.raise_for_status()
@@ -1192,7 +1202,7 @@ def prepare_db_payload(context: AssetExecutionContext):
         "filename": sitting_object["renamed_filename"],
         "is_final": is_final,
         "speech_data": json.dumps(speech_data, ensure_ascii=False),
-        "house": house_mapper.code_to_display(sitting_object["house"]),
+        "house": sitting_object["house_display"],
     }
 
     # # TEMP: save sitting_payload to pickle
