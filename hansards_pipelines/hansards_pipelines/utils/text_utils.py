@@ -1,6 +1,6 @@
 import re
 import logging
-from .token_utils import punctuation_only
+from .token_utils import punctuation_or_symbol_only
 from .additional_stopwords import ADDITIONAL_STOPWORDS
 import pandas as pd
 from datetime import datetime
@@ -649,7 +649,7 @@ def preprocess_malaya(speech):
     for tok in _malaya_tokenizer.tokenize(speech, lowercase=True):
         if tok in stopwords_all:
             continue
-        if punctuation_only(tok):
+        if punctuation_or_symbol_only(tok):
             continue
         toks.append(tok)
     return [x for x in toks if x != ""]
