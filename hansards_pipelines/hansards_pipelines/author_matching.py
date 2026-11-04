@@ -463,6 +463,38 @@ def anchored_name_candidates(name, author_df, index=None):
     return index.get(_anchored_name_key(name), set())
 
 
+def _strong_named_identity(name, owner, author_df, name_index):
+    """Distinguish structural name evidence from a fuzzy spelling score.
+
+    Used only when a named office label conflicts with its dated holder.
+    Ordinary name matching and its temporal checks remain unchanged.
+    """
+    key = _anchored_name_key(name)
+    names = author_df[['new_author_id', 'name_up']]
+    canonical = names.loc[names.new_author_id == owner, 'name_up']
+    if any(_anchored_name_key(value) == key for value in canonical):
+        return True
+    if owner in anchored_name_candidates(name, author_df, name_index):
+        return True
+    if owner in abbreviated_given_name_candidates(name, author_df):
+        return True
+
+    # A source can omit an internal initial, e.g. JEFFREY G KITINGAN.
+    # Retain the first and last tokens, and require a unique canonical owner.
+    def without_internal_initials(value):
+        parts = _anchored_name_key(value).split()
+        if len(parts) < 2:
+            return ()
+        return tuple([parts[0], *(p for p in parts[1:-1] if len(p) > 1), parts[-1]])
+
+    reduced = without_internal_initials(name)
+    if not reduced:
+        return False
+    candidates = {row.new_author_id for row in names.itertuples(index=False)
+                  if without_internal_initials(row.name_up) == reduced}
+    return candidates == {owner}
+
+
 def match_by_name(speech_df, author_df, author_hist_df=None, column_name="name", threshold=70,
                   log_unmatched=True, name_index=None):
     """Match speech records to authors by name with temporal validation"""
@@ -1081,6 +1113,14 @@ def perform_author_matching(speech_df, author_df, author_hist_df, context, *,
                 else:
                     df_result.at[idx, 'author_id'] = 'NO MATCH'
             elif df_result.at[idx, 'author_id'] != named_owner:
+                df_result.at[idx, 'author_id'] = 'NO MATCH'
+            elif (pd.notna(row['date']) and office_owner is not None
+                    and office_owner != named_owner
+                    and not _strong_named_identity(
+                        row['author_b_up'], named_owner, author_df, name_index)):
+                # A fuzzy spelling winner must not override an independent
+                # dated office holder. Do not substitute the holder either:
+                # an unverified spelling variant stays unresolved.
                 df_result.at[idx, 'author_id'] = 'NO MATCH'
 
     # 4. Analyze match rate
