@@ -463,6 +463,38 @@ def anchored_name_candidates(name, author_df, index=None):
     return index.get(_anchored_name_key(name), set())
 
 
+def _strong_named_identity(name, owner, author_df, name_index):
+    """Distinguish structural name evidence from a fuzzy spelling score.
+
+    Used only when a named office label conflicts with its dated holder.
+    Ordinary name matching and its temporal checks remain unchanged.
+    """
+    key = _anchored_name_key(name)
+    names = author_df[['new_author_id', 'name_up']]
+    canonical = names.loc[names.new_author_id == owner, 'name_up']
+    if any(_anchored_name_key(value) == key for value in canonical):
+        return True
+    if owner in anchored_name_candidates(name, author_df, name_index):
+        return True
+    if owner in abbreviated_given_name_candidates(name, author_df):
+        return True
+
+    # A source can omit an internal initial, e.g. JEFFREY G KITINGAN.
+    # Retain the first and last tokens, and require a unique canonical owner.
+    def without_internal_initials(value):
+        parts = _anchored_name_key(value).split()
+        if len(parts) < 2:
+            return ()
+        return tuple([parts[0], *(p for p in parts[1:-1] if len(p) > 1), parts[-1]])
+
+    reduced = without_internal_initials(name)
+    if not reduced:
+        return False
+    candidates = {row.new_author_id for row in names.itertuples(index=False)
+                  if without_internal_initials(row.name_up) == reduced}
+    return candidates == {owner}
+
+
 def match_by_name(speech_df, author_df, author_hist_df=None, column_name="name", threshold=70,
                   log_unmatched=True, name_index=None):
     """Match speech records to authors by name with temporal validation"""
@@ -776,90 +808,49 @@ def apply_matches_with_date_context(
 
 
 # position/jawatan matching
+def _recorded_positions(value):
+    """Split portfolios only where a delimiter introduces another office."""
+    if isinstance(value, str):
+        try:
+            parsed = ast.literal_eval(value)
+        except (ValueError, SyntaxError):
+            parsed = value
+        values = parsed if isinstance(parsed, (list, tuple)) else [value]
+    elif isinstance(value, (list, tuple)):
+        values = value
+    elif value is None or pd.isna(value):
+        return []
+    else:
+        values = [str(value)]
+    values = [item for item in values if isinstance(item, str) and item.strip()]
+    office = r'(?:(?:TIMBALAN\s+)?(?:PERDANA\s+)?MENTERI|(?:DEPUTY\s+)?(?:PRIME\s+)?MINISTER)\b'
+    positions = []
+    for item in values:
+        if not item:
+            continue
+        positions.extend(re.split(
+            r'(?:,\s*|\s+(?:DAN|AND)\s+)(?=' + office + ')',
+            str(item).upper()))
+    # Retain the full recorded title as well as separate portfolios so labels
+    # that already matched a combined office continue to work.
+    originals = [str(item).strip().upper() for item in values if item]
+    return list(dict.fromkeys(
+        position.strip() for position in originals + positions if position.strip()))
+
+
 def match_position_to_author(author_hist_df):
-    """
-    Create a mapping from positions to author IDs
-
-    Parameters:
-    -----------
-    author_hist_df : pandas.DataFrame
-        The author history dataframe with exec_posts and service_posts
-
-    Returns:
-    --------
-    dict
-        Dictionary mapping positions to author IDs
-    """
+    """Index each independently recorded office with its holder and dates."""
     position_to_author = {}
-
-    # For each author in the history dataframe
     for _, row in author_hist_df.iterrows():
-        author_id = row["record_id"]
-        # author_name = row["author"]
-
-        # Process exec_posts (already a list or can be converted to one)
-        if "exec_posts" in row and pd.notna(row["exec_posts"]):
-            exec_posts = row["exec_posts"]
-            # Handle different data formats (string, list, etc.)
-            if isinstance(exec_posts, str):
-                try:
-                    exec_posts = ast.literal_eval(exec_posts) # If stored as string representation of list
-                except:
-                    exec_posts = [exec_posts]  # Single string
-            elif not isinstance(exec_posts, list):
-                exec_posts = [exec_posts]  # Convert other types to list
-
-            # Add each position to the mapping
-            for position in exec_posts:
-                if position:
-                    position = position.upper()  # Standardize case
-                    if position not in position_to_author:
-                        position_to_author[position] = []
-
-                    position_to_author[position].append(
-                        {
-                            "author_id": author_id,
-                            "owner_id": row["new_author_id"],
-                            # "author": author_name,
-                            "start_date": (
-                                row["start_date"] if "start_date" in row else None
-                            ),
-                            "end_date": row["end_date"] if "end_date" in row else None,
-                        }
-                    )
-
-        # Same for service_posts
-        if "service_posts" in row and pd.notna(row["service_posts"]):
-            service_posts = row["service_posts"]
-            # Handle different data formats
-            if isinstance(service_posts, str):
-                try:
-                    service_posts = ast.literal_eval(service_posts)
-
-                except:
-                    service_posts = [service_posts]
-            elif not isinstance(service_posts, list):
-                service_posts = [service_posts]
-
-            # Add each position to the mapping
-            for position in service_posts:
-                if position:
-                    position = position.upper()  # Standardize case
-                    if position not in position_to_author:
-                        position_to_author[position] = []
-
-                    position_to_author[position].append(
-                        {
-                            "author_id": author_id,
-                            "owner_id": row["new_author_id"],
-                            # "author": author_name,
-                            "start_date": (
-                                row["start_date"] if "start_date" in row else None
-                            ),
-                            "end_date": row["end_date"] if "end_date" in row else None,
-                        }
-                    )
-
+        post = row.get('exec_posts')
+        if isinstance(post, str) and post in ('derived_years_mentioned', UNVERIFIED_DERIVED):
+            continue
+        for field in ('exec_posts', 'service_posts'):
+            for position in _recorded_positions(row.get(field)):
+                position_to_author.setdefault(position, []).append({
+                    'author_id': row['record_id'], 'owner_id': row['new_author_id'],
+                    'start_date': row.get('start_date'), 'end_date': row.get('end_date'),
+                })
     return position_to_author
 
 
@@ -867,8 +858,13 @@ def _position_key(position):
     # Formatting differences are harmless; missing departments and office
     # qualifiers are not. Do not fuzzily equate unrelated ministerial titles.
     key = ' '.join(re.findall(r'\w+', str(position).upper()))
+    key = re.sub(r'^THE ', '', key)
     # Whole-title translations only: qualifiers such as deputy must survive.
     return {
+        'MINISTER OF DEFENCE': 'MENTERI PERTAHANAN',
+        'MINISTER OF DEFENSE': 'MENTERI PERTAHANAN',
+        'DEPUTY MINISTER OF DEFENCE': 'TIMBALAN MENTERI PERTAHANAN',
+        'DEPUTY MINISTER OF DEFENSE': 'TIMBALAN MENTERI PERTAHANAN',
         'PRIME MINISTER': 'PERDANA MENTERI',
         'THE PRIME MINISTER': 'PERDANA MENTERI',
         'DEPUTY PRIME MINISTER': 'TIMBALAN PERDANA MENTERI',
@@ -1093,13 +1089,38 @@ def perform_author_matching(speech_df, author_df, author_hist_df, context, *,
     )
 
     # A named person inside an office label must be matched as that person.
-    # An unresolved name is not permission to substitute an office holder.
+    # Existing resolved names retain precedence over potentially incomplete
+    # office-history data. A shortened unresolved name may be disambiguated
+    # only by a dated unique office whose holder is a name-prefix candidate.
     df_result['author_id'] = df_result['author_id'].astype('object')
     role = re.compile(r'\b(?:MENTERI|MINISTER|SETIAUSAHA|SECRETARY|SPEAKER|PRESIDENT|PENGERUSI|PERTUA|CHAIRMAN)\b')
     for idx, row in df_speech_only.iterrows():
         if pd.notna(row['author_b_up']) and role.search(str(row['author_a_up'])):
             named_owner = name_matches_b.get(row['author_b_up'])
-            if named_owner is None or pd.isna(named_owner) or df_result.at[idx, 'author_id'] != named_owner:
+            office_record = position_matches_a.get(row['author_a_up'])
+            office_owner = ah_to_author_id.get(office_record)
+            if named_owner is None or pd.isna(named_owner):
+                # An independently dated unique office may disambiguate a
+                # shortened name, but cannot authorize a different name.
+                candidates = anchored_name_candidates(row['author_b_up'], author_df, name_index)
+                explicit = set(author_df.loc[
+                    author_df['name_up'].map(_anchored_name_key)
+                    == _anchored_name_key(row['author_b_up']), 'new_author_id'])
+                if (pd.notna(row['date']) and office_owner is not None
+                        and office_owner in candidates
+                        and (not explicit or office_owner in explicit)):
+                    df_result.at[idx, 'author_id'] = office_owner
+                else:
+                    df_result.at[idx, 'author_id'] = 'NO MATCH'
+            elif df_result.at[idx, 'author_id'] != named_owner:
+                df_result.at[idx, 'author_id'] = 'NO MATCH'
+            elif (pd.notna(row['date']) and office_owner is not None
+                    and office_owner != named_owner
+                    and not _strong_named_identity(
+                        row['author_b_up'], named_owner, author_df, name_index)):
+                # A fuzzy spelling winner must not override an independent
+                # dated office holder. Do not substitute the holder either:
+                # an unverified spelling variant stays unresolved.
                 df_result.at[idx, 'author_id'] = 'NO MATCH'
 
     # 4. Analyze match rate
