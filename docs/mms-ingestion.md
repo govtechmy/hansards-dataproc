@@ -20,7 +20,7 @@ same date. Existing DR, DN and KKDR paths remain unchanged.
 MMS uses the normal Dagster scrape and sitting jobs. Run the parser checks with:
 
 ```sh
-env/bin/python -m pytest tests/test_mms_support.py tests/test_parse_mms.py -q
+PYTHONPATH=hansards_pipelines env/bin/python -m pytest tests/test_mms_support.py tests/test_parse_mms.py tests/test_mms_archive_job.py -q
 ```
 
 MMS headings and transcript rows use the dedicated `parse_mms.py` module. Ordinary
@@ -46,11 +46,34 @@ The normal `scrape_website_job` includes the MMS active page alongside DR, DN an
 KKDR. No environment toggle is required. Discovered MMS PDFs use the existing
 move/queue and sitting pipeline.
 
-The archive scraper supports explicit `--category mms`. It is excluded from the
-default archive run. Its manifests use `arkib/dewannegara/manifest/mms/` to avoid
-replacing regular DN manifests. Existing house/term orchestration does not yet
-automatically consume these MMS manifests; use explicit reviewed ingestion.
-Running the archive scraper uploads to S3.
+For archived MMS, launch the separate Dagster job `scrape_mms_arkib_job` and
+select a parliamentary term partition, for example `15`. There is no house
+selection: MMS belongs to Dewan Negara. After the job succeeds, open the existing
+`sittings_job`, select the `MMS-…` partitions listed in the archive asset metadata
+and launch them manually. Do not select all DN partitions. No MMS archive sensor
+is registered and no sitting runs are launched automatically.
+
+The job scrapes MMS for that term, promotes selected PDFs to their public keys,
+and registers the MMS sitting partitions only after promotion completes. Existing
+`ARKIB_PARTITION_MIN_YEAR` and `ARKIB_PARTITION_MAX_YEAR` limits apply; a term
+outside those bounds can produce no partitions. Check these settings before
+launching historical terms. No separate ordinary archive move job is needed.
+
+MMS uses isolated storage paths:
+
+- Raw PDFs: dataproc bucket `arkib/dewannegara/mms/MMS-DDMMYYYY.pdf`.
+- Manifests: dataproc bucket `arkib/dewannegara/manifest/mms/manifest_term_<term>.json`.
+- Temporary promotion: public bucket `arkib/mms/dewannegara/mms_YYYY-MM-DD.pdf`.
+- Final PDFs: public bucket `dewannegara/mms_YYYY-MM-DD.pdf`.
+
+Raw PDFs remain available for retries. Regular DN archive staging, manifests
+and queues are unchanged. The CLI still supports explicit `--category mms`, but the CLI alone
+only scrapes; the Dagster job also promotes PDFs and registers partitions.
+MMS remains excluded from the default DN/DR/KK archive scrape.
+
+Ingestion uses the filename date and the same containing-cycle rule as DN/DR.
+A date outside every Dewan Negara cycle fails ingestion; neither PDF content
+nor the nearest cycle overrides this rule.
 
 ## Backend/FE handoff (no database migration)
 
@@ -62,9 +85,8 @@ Running the archive scraper uploads to S3.
 - Retrieval must distinguish regular DN and MMS on the same date by filename or
   sitting ID; the existing house/date-only lookup is ambiguous. Dataproc skips
   that date-only final-status lookup for MMS to avoid using a regular DN result.
-- Cycle assignment needs explicit agreement. Current backend ingestion requires
-  a cycle containing the document date, but ceremonies can occur outside the
-  ordinary meeting date range. Do not invent a cycle from the nearest date.
+- Cycle assignment requires a Dewan Negara cycle containing the filename date,
+  just as for ordinary DN documents.
 
 ## Pilot observations
 

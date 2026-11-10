@@ -53,7 +53,8 @@ from hansards_pipelines.utils.s3_utils import (
 )
 
 from hansards_pipelines.settings import S3_DATAPROC_BUCKET, S3_PUBLIC_BUCKET, DEV_API_URL, PROD_API_URL, FRONTEND_URL, FRONTEND_TOKEN, HANSARD_DB_URL, AWS_REGION, ARKIB_PARTITION_MIN_YEAR, ARKIB_PARTITION_MAX_YEAR, READY_QUEUE_KEY, PENDING_QUEUE_KEY, LEGACY_PARTITION_MIN_YEAR, LEGACY_PARTITION_MAX_YEAR, LEGACY_READY_QUEUE_KEY
-from hansards_pipelines.partitions import HANSARD_PARTITIONS, HOUSE_PARTITIONS
+from hansards_pipelines.partitions import HANSARD_PARTITIONS, HOUSE_PARTITIONS, TERM_PARTITIONS
+from hansards_pipelines.arkib_sittings.mms_archive import prepare_mms_archive
 
 from hansards_pipelines.scrape_parliamentary_cycle import (
     scrape_arkib_cycles,
@@ -1335,6 +1336,28 @@ def direct_insert_to_db(context: AssetExecutionContext, prepare_db_payload: dict
 #         "hansard_route": hansard_route,
 #     }
 # )
+
+
+@asset(partitions_def=TERM_PARTITIONS, group_name="arkib_mms")
+def scrape_mms_arkib(context: AssetExecutionContext):
+    """Prepare MMS PDFs and register partitions for manual sittings_job runs."""
+    parliament = int(context.partition_key)
+    run_scrape(category="mms", parliament=parliament, limit=None)
+    payload = prepare_mms_archive(
+        s3=s3_client, dataproc_bucket=S3_DATAPROC_BUCKET,
+        public_bucket=S3_PUBLIC_BUCKET, parliament=parliament,
+        min_year=ARKIB_PARTITION_MIN_YEAR,
+        max_year=ARKIB_PARTITION_MAX_YEAR,
+        get_sitting_object=get_sitting_object, logger=context.log,
+    )
+    partitions = payload["partitions"]
+    if partitions:
+        context.instance.add_dynamic_partitions(sitting_partitions_def.name, partitions)
+    context.log.info(f"MMS partitions ready for manual sittings_job runs: {partitions}")
+    return MaterializeResult(metadata={
+        "parliament": parliament, "prepared_partitions": len(partitions),
+        "partitions": partitions,
+    })
 
 
 @asset(partitions_def=HANSARD_PARTITIONS, group_name="scrape")

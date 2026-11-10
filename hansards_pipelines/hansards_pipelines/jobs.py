@@ -53,6 +53,11 @@ scrape_arkib_job = define_asset_job(
     selection=[assets.scrape_website_arkib],
 )
 
+scrape_mms_arkib_job = define_asset_job(
+    "scrape_mms_arkib_job",
+    selection=[assets.scrape_mms_arkib],
+)
+
 move_renamed_file_and_build_arkib_partition_queue_job = define_asset_job(
     "move_renamed_file_and_build_arkib_partition_queue_job",
     selection=[assets.move_arkib_pdfs_to_public, assets.dg_build_arkib_partition_queue],

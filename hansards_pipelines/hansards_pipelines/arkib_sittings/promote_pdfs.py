@@ -5,6 +5,7 @@ def promote_arkib_pdfs(
     partitions: list[str],
     get_sitting_object,
     logger,
+    archive_prefix: str = "arkib",
 ) -> int:
     moved_count = 0
 
@@ -15,7 +16,7 @@ def promote_arkib_pdfs(
         # Example: arkib/dewannegara/dn_2026-01-19.pdf
         house_folder = sitting["house_folder"]
         arkib_filename = f"{sitting['renamed_filename']}.pdf"
-        arkib_key = f"arkib/{house_folder}/{arkib_filename}"
+        arkib_key = f"{archive_prefix}/{house_folder}/{arkib_filename}"
         root_key = sitting["renamed_filename_key"]
 
         logger.info(f"Promoting(moving) {arkib_key} -> {root_key}")

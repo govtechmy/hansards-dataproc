@@ -3,6 +3,7 @@ Scrape Dewan Negara hansard archive pages and upload into S3.
 
 S3 layout:
 s3://<S3_DATAPROC_BUCKET>/arkib/<house-folder>/<filename>.pdf
+MMS originals use arkib/dewannegara/mms/<filename>.pdf.
 
 Example:
 s3://my-bucket/arkib/dewannegara/dr_2025-01-01.pdf
@@ -186,6 +187,7 @@ def crawl(
     counter: Dict[str, int],
     limit: int | None,
     seen_files: set[str],
+    document_prefix: str | None = None,
 ):
     if limit is not None and counter["count"] >= limit:
         return
@@ -206,7 +208,8 @@ def crawl(
 
         seen_files.add(key_id)
 
-        key = f"arkib/{house_folder}/{filename}"
+        subdirectory = f"{document_prefix}/" if document_prefix else ""
+        key = f"arkib/{house_folder}/{subdirectory}{filename}"
         download_pdf_to_s3(
             session=session,
             s3=s3,
@@ -243,6 +246,7 @@ def crawl(
             counter,
             limit,
             seen_files=seen_files,
+            document_prefix=document_prefix,
         )
 
 def seed_kamarkhas_start_nodes(session) -> List[str]:
@@ -352,6 +356,7 @@ def run_scrape(
                 counter=counter,
                 limit=limit,
                 seen_files=seen_files,
+                document_prefix="mms" if name == "mms" else None,
             )
 
         logging.info("=== END %s ===", name)
