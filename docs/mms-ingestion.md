@@ -54,10 +54,10 @@ and launch them manually. Do not select all DN partitions. No MMS archive sensor
 is registered and no sitting runs are launched automatically.
 
 The job scrapes MMS for that term, promotes selected PDFs to their public keys,
-and registers the MMS sitting partitions only after promotion completes. Existing
-`ARKIB_PARTITION_MIN_YEAR` and `ARKIB_PARTITION_MAX_YEAR` limits apply; a term
-outside those bounds can produce no partitions. Check these settings before
-launching historical terms. No separate ordinary archive move job is needed.
+and registers the MMS sitting partitions only after promotion completes. All MMS
+documents in the selected term are prepared, regardless of year. The ordinary
+archive settings `ARKIB_PARTITION_MIN_YEAR` and `ARKIB_PARTITION_MAX_YEAR` do not
+apply to MMS. No separate ordinary archive move job is needed.
 
 MMS uses isolated storage paths:
 

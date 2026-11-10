@@ -1346,8 +1346,6 @@ def scrape_mms_arkib(context: AssetExecutionContext):
     payload = prepare_mms_archive(
         s3=s3_client, dataproc_bucket=S3_DATAPROC_BUCKET,
         public_bucket=S3_PUBLIC_BUCKET, parliament=parliament,
-        min_year=ARKIB_PARTITION_MIN_YEAR,
-        max_year=ARKIB_PARTITION_MAX_YEAR,
         get_sitting_object=get_sitting_object, logger=context.log,
     )
     partitions = payload["partitions"]

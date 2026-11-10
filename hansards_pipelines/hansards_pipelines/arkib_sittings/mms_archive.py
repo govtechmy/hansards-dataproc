@@ -10,7 +10,7 @@ MMS_ARCHIVE_PREFIX = 'arkib/mms'
 
 
 def prepare_mms_archive(*, s3, dataproc_bucket, public_bucket, parliament,
-                        min_year, max_year, get_sitting_object, logger):
+                        get_sitting_object, logger):
     """Consume one term's manifest and promote its PDFs for manual sitting runs.
 
     MMS source and staging prefixes are isolated from the ordinary DN mover.
@@ -34,8 +34,6 @@ def prepare_mms_archive(*, s3, dataproc_bucket, public_bucket, parliament,
         if sitting['house'] != 'MMS' or sitting['house_folder'] != 'dewannegara':
             raise ValueError('MMS archive item did not resolve to Dewan Negara')
         day = datetime.strptime(sitting['date_str'], '%d%m%Y')
-        if day.year < min_year or (max_year is not None and day.year > max_year):
-            continue
         selected[f'MMS-{day:%d%m%Y}'] = (filename, sitting)
 
     partitions = sorted(selected, key=lambda p: datetime.strptime(p[4:], '%d%m%Y'))
