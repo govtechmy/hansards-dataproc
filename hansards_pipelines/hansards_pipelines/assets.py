@@ -1355,6 +1355,8 @@ def scrape_mms_arkib(context: AssetExecutionContext):
     return MaterializeResult(metadata={
         "parliament": parliament, "prepared_partitions": len(partitions),
         "partitions": partitions,
+        "skipped_count": len(payload["skipped"]),
+        "skipped_items": payload["skipped"],
     })
 
 

@@ -57,7 +57,10 @@ The job scrapes MMS for that term, promotes selected PDFs to their public keys,
 and registers the MMS sitting partitions only after promotion completes. All MMS
 documents in the selected term are prepared, regardless of year. The ordinary
 archive settings `ARKIB_PARTITION_MIN_YEAR` and `ARKIB_PARTITION_MAX_YEAR` do not
-apply to MMS. No separate ordinary archive move job is needed.
+apply to MMS. Invalid filenames are skipped with warnings and listed with reasons
+in the asset metadata (`skipped_items` and `skipped_count`); valid files continue.
+S3 failures and invalid manifest structure still fail the job.
+No separate ordinary archive move job is needed.
 
 MMS uses isolated storage paths:
 

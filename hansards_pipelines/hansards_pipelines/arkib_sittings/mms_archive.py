@@ -1,7 +1,6 @@
 """MMS-only archive preparation for manual sitting runs; database house remains DN."""
 from datetime import datetime
 import json
-import re
 
 from hansards_pipelines.arkib_sittings.promote_pdfs import promote_arkib_pdfs
 
@@ -25,16 +24,26 @@ def prepare_mms_archive(*, s3, dataproc_bucket, public_bucket, parliament,
     if not isinstance(items, list):
         raise ValueError('MMS archive manifest items must be a list')
     selected = {}
+    skipped = []
     for item in items:
-        filename = item['filename']
-        if (item.get('house_folder') != 'dewannegara'
-                or not re.fullmatch(r'MMS-\d{8}\.pdf', filename, re.I)):
-            raise ValueError(f'Non-MMS item in MMS archive manifest: {filename}')
-        sitting = get_sitting_object(filename)
-        if sitting['house'] != 'MMS' or sitting['house_folder'] != 'dewannegara':
-            raise ValueError('MMS archive item did not resolve to Dewan Negara')
-        day = datetime.strptime(sitting['date_str'], '%d%m%Y')
-        selected[f'MMS-{day:%d%m%Y}'] = (filename, sitting)
+        filename = item.get('filename') if isinstance(item, dict) else None
+        try:
+            if (not isinstance(filename, str) or not filename
+                    or any(char in filename for char in ('/', '\\', '\x00'))):
+                raise ValueError('Missing filename or filename contains a directory path')
+            if item.get('house_folder') != 'dewannegara':
+                raise ValueError('Item must belong to Dewan Negara')
+            sitting = get_sitting_object(filename)
+            if not sitting or sitting['house'] != 'MMS' or sitting['house_folder'] != 'dewannegara':
+                raise ValueError('Filename did not resolve to MMS under Dewan Negara')
+            day = datetime.strptime(sitting['date_str'], '%d%m%Y')
+        except ValueError as exc:
+            skipped.append(dict(filename=filename, reason=str(exc)))
+            logger.warning(f'Skipped MMS archive item {filename!r}: {exc}')
+            continue
+        partition = f'MMS-{day:%d%m%Y}'
+        # Normalize metadata for public paths; retain the exact raw S3 filename.
+        selected[partition] = (filename, get_sitting_object(partition))
 
     partitions = sorted(selected, key=lambda p: datetime.strptime(p[4:], '%d%m%Y'))
     for partition in partitions:
@@ -50,4 +59,4 @@ def prepare_mms_archive(*, s3, dataproc_bucket, public_bucket, parliament,
         get_sitting_object=get_sitting_object, logger=logger,
         archive_prefix=MMS_ARCHIVE_PREFIX,
     )
-    return dict(parliament=parliament, partitions=partitions)
+    return dict(parliament=parliament, partitions=partitions, skipped=skipped)
