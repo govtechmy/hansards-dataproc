@@ -6,13 +6,36 @@ from hansards_pipelines.tabulate_hansard import (
 )
 
 _HEADING_START = re.compile(
-    r"^(?:MENGANGKAT SUMPAH\b|LANTIKAN\b|PEMASYHURAN\b|UCAPAN\b|MENGALU-ALUKAN\b)"
+    r"^(?:MENGANGKAT SUMPAH\b|LANTIKAN\b|PEMASYHURAN\b|PENGUMUMAN\b|"
+    r"PELANTIKAN\b|USUL\b|PEMILIHAN\b|TUAN YANG DI-PERTUA MENGANGKAT SUMPAH\b|"
+    r"UCAPAN\b|MENGALU-ALUKAN\b)"
 )
-_PAGE_HEADER = re.compile(r"^[ .\d]*MMS[ .\d]*$")
+_PAGE_HEADER = re.compile(r"^[ .\d]*(?:MMS|DN)[ .\d]*$")
+_OPENING = re.compile(r"Mesyuarat dimulakan pada pukul\s+", re.I)
+_CLOCK = re.compile(r"(?:[■◼▪]\s*\d{4}\.?|\d{1,2}[.:]\d{2}\s*(?:pg|ptg|pagi|petang|malam|tgh)\.?)", re.I)
+_SPEAKER_START = re.compile(
+    r"^(?:(?:Yang Berhormat\s+)?(?:Tuan|Puan|Datuk|Dato[’']?|Datin|Tan Sri|Tun|Dr\.|"
+    r"Tengku|Raja|Haji|Hajah|Ustaz|Prof\.)\b|(?:Timbalan\s+)?(?:Perdana\s+)?Menteri\b|"
+    r"(?:Timbalan\s+)?(?:Tuan\s+)?Yang di-Pertua\b|Setiausaha\b)", re.I)
+
+
+def proceedings_opening(line):
+    """A timed meeting opening distinguishes proceedings from covers and contents."""
+    return bool(_OPENING.search(line))
+
+
+def _speaker_label(candidate):
+    candidate = " ".join(candidate.split())
+    if not _SPEAKER_START.match(candidate):
+        return False
+    # Introductions and narrative addressed to members are not speaker labels.
+    if re.search(r"\b(?:yang tersebut|telah mengangkat|saya|ingin|menjemput|berikut|ialah)\b", candidate, re.I):
+        return False
+    return candidate.count("[") == candidate.count("]")
 
 
 def heading_spans(lines):
-    """Join wrapped uppercase titles; uppercase prose alone is not a title.
+    """Join wrapped uppercase titles after DOA or a timed proceedings opening.
 
     Known ceremony title openings anchor detection. Subsequent uppercase lines
     continue a title unless they begin another title. Blank lines may separate
@@ -23,11 +46,11 @@ def heading_spans(lines):
     index = 0
     while index < len(lines):
         line = lines[index].strip()
-        if re.fullmatch(r"D\s*O\s*A", line):
+        if re.fullmatch(r"D\s*O\s*A", line) or proceedings_opening(line):
             active = True
-        if active and line.isupper() and _HEADING_START.match(line) and ":" not in line:
+        if active and line.isupper() and _HEADING_START.match(line) and ":" not in line.rstrip(":").rstrip():
             end = index + 1
-            parts = [line]
+            parts = [line.rstrip(":").rstrip()]
             while end < len(lines):
                 candidate = lines[end].strip()
                 if (not candidate or not candidate.isupper()
@@ -97,27 +120,35 @@ def tabulate_mms(hansard_date, house, text, bold, italics, categories=None,
     while index < len(text):
         line = text[index].strip()
         if not active:
-            if "Mesyuarat dimulakan pada pukul " in line:
-                timestamp = standardise_timestamp(line.split("pukul ", 1)[1])
-            if re.fullmatch(r"D\s*O\s*A", line):
+            opening = _OPENING.search(line)
+            if opening:
+                timestamp = standardise_timestamp(line[opening.end():])
+            if re.fullmatch(r"D\s*O\s*A", line) or proceedings_opening(line):
                 active = True
             index += 1
             continue
         if index in headings:
             flush()
             index, title = headings[index]
-            if title.startswith(("MENGANGKAT SUMPAH", "PEMASYHURAN")) or not levels[0]:
+            if (title.startswith("MENGANGKAT SUMPAH") and levels[0]
+                    and title != levels[0]
+                    and levels[0].startswith(("PENGUMUMAN", "PELANTIKAN", "MENGANGKAT SUMPAH"))):
+                levels[1:] = [title, ""]
+            elif title.startswith("LANTIKAN") and levels[1].startswith("MENGANGKAT SUMPAH"):
+                levels[2] = title
+            elif title.startswith(("MENGANGKAT SUMPAH", "PEMASYHURAN", "PENGUMUMAN", "PELANTIKAN", "USUL")) or not levels[0]:
                 levels[:] = [title, "", ""]
             elif title.startswith("UCAPAN ") and levels[1] and title.startswith(levels[1] + " "):
                 levels[2] = title
             else:
                 levels[1:] = [title, ""]
-            speaker = ""
+            if title.startswith(("MENGANGKAT SUMPAH", "LANTIKAN", "PELANTIKAN")):
+                speaker = ""
             continue
-        if not line or _PAGE_HEADER.fullmatch(line):
+        if not line or _PAGE_HEADER.fullmatch(line) or re.fullmatch(r"D\s*O\s*A", line):
             index += 1
             continue
-        if re.fullmatch(r"[■◼▪]\s*\d{4}\.?", line):
+        if _CLOCK.fullmatch(line):
             flush()
             timestamp = standardise_timestamp(line)
             index += 1
@@ -140,14 +171,45 @@ def tabulate_mms(hansard_date, house, text, bold, italics, categories=None,
         # Preserve aligned masks for the existing speaker/markdown helpers.
         current_text = text[index]
         current_bold, current_italic = bold[index], italics[index]
-        if re.match(r"^\s*Setiausaha\s*:", current_text):
-            colon = current_text.index(":")
-            author = current_text[:colon].strip()
-            body, body_bold, body_italic = current_text[colon + 1:], current_bold[colon + 1:], current_italic[colon + 1:]
-        else:
+        consumed = 1
+        # Only join a wrapped label when it begins like a speaker and reaches a
+        # valid colon on the same physical page. Formatting masks stay aligned.
+        if (":" not in current_text and _SPEAKER_START.match(line)
+                and not line.endswith((".", ";", "!", "?"))):
+            pieces = [current_text]
+            for offset in range(1, 4):
+                pos = index + offset
+                if pos >= len(text) or pos in headings or not text[pos].strip():
+                    break
+                if pages[index] and pages[pos] and pages[index].get("pdf_page") != pages[pos].get("pdf_page"):
+                    break
+                # Never absorb the next speaker or a completed prose sentence.
+                if (_SPEAKER_START.match(text[pos].strip())
+                        and ":" in text[pos]
+                        and _speaker_label(text[pos].split(":", 1)[0])):
+                    break
+                if text[pos].strip().endswith((".", ";", "!", "?")) and ":" not in text[pos]:
+                    break
+                pieces.append(text[pos])
+                combined = "".join(pieces)
+                if ":" in combined:
+                    if _speaker_label(combined.split(":", 1)[0]):
+                        consumed = offset + 1
+                        current_text = combined
+                        current_bold = "".join(bold[index:index + consumed])
+                        current_italic = "".join(italics[index:index + consumed])
+                    break
+        candidate = current_text.split(":", 1)[0] if ":" in current_text else ""
+        author = ""
+        if candidate and _speaker_label(candidate):
             author, body, body_bold, body_italic, _ = get_author_and_speech(
                 current_text, current_bold, current_italic, "MMS", is_pipeline=True
             )
+            if candidate.strip().lower() == "setiausaha":
+                colon = current_text.index(":")
+                author = candidate.strip()
+                body, body_bold, body_italic = current_text[colon + 1:], current_bold[colon + 1:], current_italic[colon + 1:]
+            author = " ".join(author.split())
         if author:
             flush()
             speaker = author
@@ -160,8 +222,8 @@ def tabulate_mms(hansard_date, house, text, bold, italics, categories=None,
         chunks.append(body)
         bold_chunks.append(body_bold)
         italic_chunks.append(body_italic)
-        metadata.append(pages[index])
-        index += 1
+        metadata.extend(pages[index:index + consumed])
+        index += consumed
     flush()
     if not rows:
         raise ValueError("No MMS transcript rows found; review this PDF layout")

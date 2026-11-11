@@ -27,16 +27,22 @@ MMS headings and transcript rows use the dedicated `parse_mms.py` module. Ordina
 DR/DN/KKDR tabulation is not used for MMS. Low-level PDF extraction, preprocessing,
 speaker recognition and markdown formatting helpers are reused.
 
-Headings are extracted after DOA because these PDFs may have no KANDUNGAN. Known
+Proceedings start at DOA or the timed “Mesyuarat dimulakan pada pukul” opening,
+so MMS without DOA or KANDUNGAN can be parsed. Known
 ceremony heading openings anchor detection; consecutive uppercase continuation
 lines are joined. Uppercase prose such as `KESEDAR.` stays in its speech. The
 parser retains section hierarchy, timestamps, physical/printed page ranges and
 speaker resumption after annotations. Bracketed stage directions and closing
 lines become separate `ANNOTATION` rows, as do oath-taking lists without an
-explicit speaker. The normal draft/final detector is reused.
+explicit speaker. Colon-ended appointment headings are recognised, wrapped
+speaker labels are joined within a physical page, and narrative introductions
+are excluded from speaker detection. Standalone `10.07 pg.` / `3.12 ptg.` times
+are supported alongside square-marker times. A speaker can continue across a
+new speech subheading without repeating their label. The normal draft/final
+detector is reused.
 
-Unfamiliar headings and layouts still need review, especially wrapped speaker
-labels, headings separated by blank lines/pages, or documents without DOA.
+Unfamiliar headings and layouts still need review, particularly speaker labels
+that cross physical pages or layouts without a recognisable proceedings opening.
 Inspect extracted text and headings before bulk ingestion. This parser does not
 resolve contradictory source cycle labels.
 

@@ -114,7 +114,8 @@ def parse_hansard(hansard_date, house, source_dir=DEFAULT_DATA_DIR, file_content
                     print("Ahli-Ahli Yang Hadir", page)
                     continue
                 if (
-                    "DOA" in extracted
+                    (house.upper() == "MMS" and re.search(r"Mesyuarat dimulakan pada pukul\s+", extracted, re.I))
+                    or "DOA" in extracted
                     or "D O A" in extracted  # DR-29042008
                     or (
                         # detect first content page for KKDRs without DOA
