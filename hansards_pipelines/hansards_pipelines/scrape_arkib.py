@@ -43,6 +43,8 @@ from requests.adapters import HTTPAdapter, Retry
 from hansards_pipelines.settings import S3_DATAPROC_BUCKET, AWS_REGION
 
 PDF_BASE_URL = "https://www.parlimen.gov.my"
+from hansards_pipelines.scrape_mms_parlimen_penggal import assignment_from_node
+
 ROOT_ID = "0"
 REQUEST_DELAY = 0.2
 LOG_LEVEL = logging.INFO
@@ -202,8 +204,13 @@ def crawl(
         if limit is not None and counter["count"] >= limit:
             return
 
+        assignment = assignment_from_node(node_id) if document_prefix == "mms" else {}
         key_id = f"{house_folder}/{filename}"
         if key_id in seen_files:
+            if document_prefix == "mms":
+                previous = next(item for item in collected_items if item["filename"] == filename)
+                if any(previous[k] != assignment[k] for k in ("term", "session")):
+                    raise ValueError(f"Conflicting MMS assignments for {filename}")
             continue
 
         seen_files.add(key_id)
@@ -222,6 +229,7 @@ def crawl(
             {
                 "house_folder": house_folder,
                 "filename": filename,
+                **assignment,
             }
         )
 
@@ -379,6 +387,30 @@ def main():
     run_scrape(category=args.category, limit=args.limit, parliament=args.parliament)
 
     logging.info("Done")
+
+
+def scrape_mms_parlimen_penggal():
+    """Metadata-only index for active MMS discovery; no PDF downloads."""
+    session = make_session()
+    cfg = CATEGORIES["mms"]
+    assignments = {}
+    visited = set()
+
+    def visit(node):
+        if node in visited:
+            return
+        visited.add(node)
+        html = fetch_html(session, cfg["base_url"], cfg["uweb"], node)
+        for filename, _ in extract_pdfs(html):
+            assignment = assignment_from_node(node)
+            previous = assignments.get(filename)
+            if previous and any(previous[k] != assignment[k] for k in ("term", "session")):
+                raise ValueError(f"Conflicting MMS assignments for {filename}")
+            assignments[filename] = assignment
+        for child in extract_child_ids(html):
+            visit(child)
+    visit(ROOT_ID)
+    return assignments
 
 
 if __name__ == "__main__":

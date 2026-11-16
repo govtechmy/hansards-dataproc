@@ -4,6 +4,7 @@ Contains both arkib and active scraping strategies.
 """
 
 import re
+from hansards_pipelines.scrape_mms_parlimen_penggal import scrape_mms_cycles
 import xml.etree.ElementTree as ET
 import requests
 import psycopg
@@ -122,8 +123,8 @@ def fetch_db_cycles(
                         term,
                         session,
                         meeting,
-                        start_date.isoformat() if hasattr(start_date, 'isoformat') else str(start_date),
-                        end_date.isoformat() if hasattr(end_date, 'isoformat') else str(end_date)
+                        start_date.isoformat() if start_date is not None else None,
+                        end_date.isoformat() if end_date is not None else None
                     )
                     existing_keys.add(key)
                     
@@ -463,6 +464,8 @@ def scrape_arkib_cycles(context: Optional[AssetExecutionContext] = None) -> List
         if context:
             context.log.info(f"[arkib] Found {len(cycles)} cycles for {house_code}")
 
+    all_cycles.extend(scrape_mms_cycles(context=context))
+
     # Deduplicate
     unique = {}
     for c in all_cycles:
@@ -677,4 +680,5 @@ def scrape_active_cycles(
     if context:
         context.log.info(f"[active] Total active cycles found: {len(all_cycles)}")
     
+    all_cycles.extend(scrape_mms_cycles(context=context))
     return all_cycles

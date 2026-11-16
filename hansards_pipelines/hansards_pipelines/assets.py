@@ -20,6 +20,8 @@ import os
 import io
 import json
 import pickle
+from hansards_pipelines.scrape_mms_parlimen_penggal import load_assignment, save_assignment
+from hansards_pipelines.scrape_arkib import scrape_mms_parlimen_penggal
 from bs4 import BeautifulSoup
 import boto3
 import botocore
@@ -251,6 +253,7 @@ def scrape_website(context: AssetExecutionContext) -> List:
     ]
     new_pdfs = []
     skipped_pdfs = []
+    mms_assignments = None
     for source in sources:
 
         source_url = source[0]
@@ -306,6 +309,14 @@ def scrape_website(context: AssetExecutionContext) -> List:
                         skipped_pdfs.append(pdf_name)
                         continue
                     pdf_name = f"{house}-{date}.pdf"
+
+                    if house.upper() == "MMS":
+                        if mms_assignments is None:
+                            mms_assignments = scrape_mms_parlimen_penggal()
+                        if pdf_name not in mms_assignments:
+                            raise ValueError(f"MMS has no verified website assignment: {pdf_name}")
+                        normalized = get_sitting_object(pdf_name)["renamed_filename"]
+                        save_assignment(s3_client, S3_DATAPROC_BUCKET, normalized, mms_assignments[pdf_name])
 
                     s3_key = f"{house_folder}/{pdf_name}"
                     full_s3_key = f"new/{s3_key}"
@@ -1065,6 +1076,9 @@ def prepare_db_payload(context: AssetExecutionContext):
     sitting_object = get_sitting_object(context.partition_key)
     context.log.info(f"sitting_object: {sitting_object}")
 
+    mms_assignment = (load_assignment(s3_client, S3_DATAPROC_BUCKET, sitting_object["renamed_filename"])
+                      if sitting_object["house"] == "MMS" else {})
+
     context.log.info(f"Start processing tabulated data")
     csv_path = build_path("tabulated", "result.csv", sitting_object)
     csv_data = s3_client.get_object(Bucket=S3_DATAPROC_BUCKET, Key=csv_path)
@@ -1204,6 +1218,7 @@ def prepare_db_payload(context: AssetExecutionContext):
         "is_final": is_final,
         "speech_data": json.dumps(speech_data, ensure_ascii=False),
         "house": sitting_object["house_display"],
+        **mms_assignment,
     }
 
     # # TEMP: save sitting_payload to pickle

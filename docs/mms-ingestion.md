@@ -1,15 +1,16 @@
-# MMS under Dewan Negara
+# MMS as house 3
 
-MMS is identified by its filename, with no new database field or ingestion payload
-field. The pipeline retains `MMS` as its internal parsing identity, while public
-storage and backend house assignment belong to Dewan Negara.
+MMS keeps its existing parser and S3 paths, but database/API identity is
+`majlis-mengangkat-sumpah` (`house=3`). Parlimen/Penggal comes from the website
+hierarchy, not the document date. This requires the companion API/schema changes
+below before deploying dataproc or running cycle jobs.
 
 | Value | Example |
 | --- | --- |
 | Original/partition filename | `MMS-29092026` |
 | Normalized filename | `mms_2026-09-29` |
 | Public PDF key | `dewannegara/mms_2026-09-29.pdf` |
-| API house | `dewan-negara` |
+| API house | `majlis-mengangkat-sumpah` (`3`) |
 | Intermediate artifact directory | `parsed_pdf/dewannegara/MMS-29092026/` |
 
 Intermediate directories include MMS to avoid overwriting DN artifacts on the
@@ -54,7 +55,7 @@ move/queue and sitting pipeline.
 
 For archived MMS, launch the separate Dagster job `scrape_mms_arkib_job` and
 select a parliamentary term partition, for example `15`. There is no house
-selection: MMS belongs to Dewan Negara. After the job succeeds, open the existing
+selection: this is an MMS-only job; storage stays under Dewan Negara. After the job succeeds, open the existing
 `sittings_job`, select the `MMS-…` partitions listed in the archive asset metadata
 and launch them manually. Do not select all DN partitions. No MMS archive sensor
 is registered and no sitting runs are launched automatically.
@@ -80,31 +81,189 @@ and queues are unchanged. The CLI still supports explicit `--category mms`, but 
 only scrapes; the Dagster job also promotes PDFs and registers partitions.
 MMS remains excluded from the default DN/DR/KK archive scrape.
 
-Ingestion uses the filename date and the same containing-cycle rule as DN/DR.
-A date outside every Dewan Negara cycle fails ingestion; neither PDF content
-nor the nearest cycle overrides this rule.
+## Cycle seed and document assignment
 
-## Backend/FE handoff (no database migration)
+Both existing `scrape_parliamentary_cycle_active_job` and
+`scrape_parliamentary_cycle_arkib_job` now read the MMS hierarchy at
+`hansard-majlis.html`. That tree exposes current and historical Parlimen/Penggal;
+there is no need to derive membership from a meeting header on the active page.
+They post rows through the existing `/api/parliamentary-cycle` endpoint:
 
-- Dataproc submits `filename: mms_YYYY-MM-DD` and `house: dewan-negara` using
-  the existing payload schema.
-- Backend derives the MMS type from the `mms_` prefix and exposes it in catalogue
-  and sitting responses. Agree on the response field name with FE.
-- FE displays “Majlis Mengangkat Sumpah” on the date card in the DN catalogue.
-- Retrieval must distinguish regular DN and MMS on the same date by filename or
-  sitting ID; the existing house/date-only lookup is ambiguous. Dataproc skips
-  that date-only final-status lookup for MMS to avoid using a regular DN result.
-- Cycle assignment requires a Dewan Negara cycle containing the filename date,
-  just as for ordinary DN documents.
+```json
+{"house":3,"term":15,"session":5,"meeting":null,"start_date":null,"end_date":null}
+```
 
-## Pilot observations
+The archive cycle job seeds historical MMS rows; both existing weekly cycle
+schedules can maintain them. The API must make creation safe across concurrent
+runs. Dataproc's existing-cycle comparison now preserves SQL NULL as Python None,
+so subsequent runs recognise identical MMS rows.
 
-Local parsing succeeded for MMS dated 23 July 2025, 2 September 2026 and
-29 September 2026, producing respectively 9, 13 and 14 transcript rows including
-annotations. Closing annotations are separate in all three samples; printed
-speaker labels, timestamps and page references were checked. These are layout
-smoke checks, not verified author matching
-or full archive coverage. The 29 September 2026 sample has conflicting penggal
-labels on its cover and proceedings page. The archive places 23 July 2025 under
-a meeting whose displayed date range starts in August. Preserve these findings
-for cycle review before ingestion.
+The MMS document archive scraper includes `term`, `session`, and `source_node`
+on every manifest item. Archive preparation persists a per-document assignment
+at `metadata/mms/mms_YYYY-MM-DD.json` in the dataproc bucket before registering
+partitions. Active PDF discovery also reads the authoritative hierarchy and saves
+this metadata before queuing an MMS. Both paths reject conflicting assignments.
+
+`prepare_db_payload` reads that saved metadata and adds `term` and `session` to
+the MMS payload. `direct_insert_to_db` resolves exactly one cycle using
+`house=3 + term + session`, requiring NULL meeting/dates. Missing assignments,
+missing cycles, and duplicate cycle matches fail rather than guessing. Ordinary
+DR/DN/KK date lookup is unchanged. Old MMS-as-DN payloads are rejected.
+
+Existing manifests without membership must be re-scraped. There is no automated
+PDF fallback: unresolved or contradictory source metadata requires manual review
+of the source/PDF and a verified correction before ingestion.
+
+## Required companion changes: hansard-mod-api (not hansards-back)
+
+These are instructions only; this change does not edit the API repository.
+Paths below are relative to `hansard-mod-api`.
+
+1. **Stored house identity and all-house filters:** In `src/types/enum.ts`, add
+   `majlis-mengangkat-sumpah` to `HOUSE` and map `MAJLIS_MENGANGKAT_SUMPAH=3`.
+   IMPORTANT: `SEMUA` currently also equals 3. Remove that collision: treat
+   `semua` as a filter sentinel (for example -1), never as a stored house.
+   Update `src/controllers/search.controller.ts` to expand `semua`, including
+   array inputs, to `[0,1,2,3]`. Update `getSittingList` in
+   `src/controllers/sitting.controller.ts` similarly; its current mapping can
+   otherwise treat `semua` as MMS. Keep all-house filtering out of single-sitting
+   and cycle-create operations. Audit other HOUSE_TO_CODE consumers.
+
+2. **Database migration and model:** In
+   `src/models/parliamentary-cycle.model.ts`, permit NULL for `meeting`,
+   `start_date`, and `end_date`. Apply corresponding database ALTER statements.
+   Add conditional constraints so house 3 requires all three to be NULL and
+   houses 0/1/2 still require meeting/dates. Check existing rows before adding
+   constraints; do not silently rewrite ordinary cycles. Add a partial unique
+   index on `(house,term,session) WHERE house=3` to prevent concurrent duplicates.
+   Keep `Sitting.cycle_id` required; MMS references a real house-3 cycle.
+   No new table or sitting column is needed. Suggested migration shape:
+
+   ```sql
+   ALTER TABLE api_parliamentary_cycle
+     ALTER COLUMN meeting DROP NOT NULL,
+     ALTER COLUMN start_date DROP NOT NULL,
+     ALTER COLUMN end_date DROP NOT NULL;
+   ALTER TABLE api_parliamentary_cycle ADD CONSTRAINT cycle_shape CHECK (
+     (house=3 AND meeting IS NULL AND start_date IS NULL AND end_date IS NULL)
+     OR (house IN (0,1,2) AND meeting IS NOT NULL
+         AND start_date IS NOT NULL AND end_date IS NOT NULL)
+   );
+   CREATE UNIQUE INDEX unique_mms_session
+     ON api_parliamentary_cycle (house,term,session) WHERE house=3;
+   ```
+
+3. **Validation and response serialization:** Update
+   `src/schema/parliamentary/request.schema.ts` to accept house 3, positive MMS
+   term/session, and NULL meeting/dates only for MMS. Keep existing ordinary
+   meeting validation. Make the corresponding fields nullable in
+   `src/schema/parliamentary/response.schema.ts`,
+   `src/schema/sitting/response.schema.ts`, `src/types/entities.ts`, and
+   `src/types/sql-rows.ts`. Check all nested cycle responses so Fastify/Zod does
+   not reject or strip NULL fields. In `getSittingList`, omit empty coverage
+   dates or return documented nullable dates and update its response schema.
+
+4. **Cycle creation:** `src/controllers/parliamentary-cycle.controller.ts`
+   currently calls `create` unconditionally. For MMS, find/create by
+   `(house,term,session)` under the unique index; return 201 when created and
+   200 with the existing cycle when already present. Handle concurrent insert
+   conflicts by retrieving the existing row. This works with dataproc's current
+   handling of 200/201. Do not fabricate meeting numbers or date ranges.
+
+5. **Catalogue:** `src/utils/catalogue/cycle-map.util.ts` currently converts
+   `meeting` using `Number(...)`, which turns NULL into 0. Branch for house 3:
+   attach MMS sittings directly under the session as `sitting_list`; never create
+   a `0`, `null`, or other synthetic meeting folder. Adjust
+   `src/controllers/catalogue.controller.ts` as needed to pass the category.
+   Extend `src/schema/catalogue/response.schema.ts` and utility types to support
+   this shape (including `dropdown` mode), preserving the ordinary shape:
+
+   ```json
+   {"catalogue_list":{"15":{"start_date":null,"end_date":null,
+     "5":{"start_date":null,"end_date":null,"sitting_list":[
+       {"sitting_id":123,"date":"2026-09-29","filename":"mms_2026-09-29","is_final":false}
+     ]}}},"total_count":1}
+   ```
+
+   Dates here represent absent cycle dates, not inferred session boundaries.
+   UI may omit the year labels or derive document coverage for display only.
+
+6. **Document retrieval and optional API ingestion:**
+   `src/controllers/sitting.controller.ts:getSitting` already filters by the
+   mapped house plus date, so mapping MMS to 3 separates it from same-day DN.
+   Its current `findOne` can silently select one of multiple same-category
+   documents; this design assumes one normalized MMS document per day.
+   No filename query parameter is required for the DN/MMS collision.
+   `upsertSitting` still resolves every house by date: if that endpoint remains
+   supported for MMS, add required MMS `term`/`session` in
+   `src/schema/sitting/request.schema.ts` and resolve the house-3 cycle by them,
+   with missing/ambiguous assignments rejected. Dataproc's selected sitting job
+   writes directly to DB and does not require this endpoint.
+
+7. **Acceptance checks:** Seed the same MMS cycle twice and concurrently; expect
+   one DB row. Round-trip NULL fields through cycle, sitting and catalogue
+   endpoints. Retrieve DN and MMS on the same date separately. Test MMS-only and
+   `semua` search/list filters, including arrays, and existing DR/DN/KK catalogues.
+
+## Required companion changes: hansards-front
+
+These are instructions only; no frontend files are edited here.
+
+1. In `lib/routes.ts`, add `/katalog/majlis-mengangkat-sumpah` and
+   `/hansard/majlis-mengangkat-sumpah` constants and relevant route lists.
+   Add the MMS tab in `data-catalogue/layout.tsx`, plus labels in the existing
+   locale JSON files under `public/locales`. Update category/search option
+   definitions in `lib/options.ts` and consumers where applicable.
+2. Add `pages/katalog/majlis-mengangkat-sumpah/index.tsx`, using the existing
+   catalogue request pattern with `house=majlis-mengangkat-sumpah`.
+3. Update `lib/types.ts`, `data-catalogue/index.tsx`, and
+   `data-catalogue/penggal.tsx` for session-level `sitting_list`. The current
+   index filters out terms/sessions with no dates, so explicitly support MMS
+   NULL dates; do not let its folders disappear. Render date rows immediately
+   under Penggal. Keep ordinary Mesyuarat rendering. Support two-level hash
+   navigation for MMS; the existing hash handler expects three levels.
+4. In `data-catalogue/dates.tsx`, detect `mms_` before the default DN branch and
+   link to `/hansard/majlis-mengangkat-sumpah/YYYY-MM-DD`. Update other document
+   link generators (search results, shares, citations and sidebar navigation)
+   to use the same category resolver.
+5. Add `pages/hansard/majlis-mengangkat-sumpah/[...date].tsx` using
+   `house=majlis-mengangkat-sumpah` in the API request. Update
+   `data-catalogue/hansard/sidebar.tsx` and `data-catalogue/hansard/hansard.tsx`
+   to omit the Mesyuarat label for MMS, handle NULL cycle dates, and display its
+   category correctly. Existing header logic slicing two filename characters
+   needs an explicit MMS case. DN and MMS retain different document URLs.
+6. Keep PDF/CSV download storage under `dewannegara/mms_YYYY-MM-DD.*`.
+   `lib/downloads.ts` currently defaults non-DR/KK prefixes to DN, which remains
+   compatible; make MMS explicit if consolidating the resolver. Do not change
+   bucket folders just because the page route/house changes.
+7. Verify desktop/mobile tabs, direct links, session folders without dates,
+   downloads, shared links, and same-day DN/MMS navigation. Existing DN URLs
+   remain DN; they cannot identify a legacy MMS link without a document marker.
+
+## Rollout and backfill
+
+1. Deploy the API migration and MMS-compatible validation/catalogue code first.
+2. Deploy dataproc, then run the existing archive cycle job to seed house-3 rows.
+   Both cycle strategies use the same MMS hierarchy; no additional schedule or
+   independent seed list is needed.
+3. Re-run `scrape_mms_arkib_job` for terms 12–15 (the MMS portal's currently
+   exposed terms, verified during implementation). This refreshes assignments
+   and prepares partitions; it does not launch sitting runs automatically.
+4. Download the newly generated MMS manifests. Generate a SQL preview with:
+
+   ```sh
+   PYTHONPATH=hansards_pipelines env/bin/python scripts/mms/preview_cycle_backfill.py manifest_term_*.json > /tmp/mms-backfill.sql
+   ```
+
+   The script never connects to a database. Its SQL defaults to ROLLBACK, checks
+   every assignment has exactly one house-3 cycle, and changes only existing
+   MMS sittings' cycle_id. IDs, speeches, summaries, DN records, and PDFs are
+   preserved. It lists missing/unmapped records for review; source/PDF review
+   remains necessary for unresolved assignments. Review before a separately
+   approved live run. Do not reingest existing speeches merely to change a link.
+5. Run selected new MMS sitting partitions only after their assignments/cycles
+   exist. Deploy the frontend once the API response contract is available.
+6. Verify live counts and a known same-day DN/MMS pair after the approved rollout.
+
+No deployment, live DB writes, or PDF fallback/backfill verification is performed
+by the local implementation/checks.

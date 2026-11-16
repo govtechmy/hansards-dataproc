@@ -1,4 +1,5 @@
 import json
+from hansards_pipelines.scrape_mms_parlimen_penggal import MMS_HOUSE, validate_assignment
 from typing import Dict, List, Optional
 from hansards_pipelines.utils.author_history_utils import UNVERIFIED_DERIVED
 
@@ -15,6 +16,7 @@ def normalize_house(house: str) -> int:
         "dewan-rakyat": 0,
         "dewan-negara": 1,
         "kamar-khas": 2,
+        MMS_HOUSE: 3,
     }
 
     if house not in mapping:
@@ -114,21 +116,39 @@ def ingest_sitting_to_db(payload: Dict, conn) -> None:
         # --------------------------------------------------
         # Resolve ParliamentaryCycle
         # --------------------------------------------------
-        cur.execute(
-            """
-            SELECT cycle_id
-            FROM api_parliamentary_cycle
-            WHERE house = %s
-              AND start_date <= %s
-              AND end_date >= %s
-            """,
-            (house, date, date),
-        )
-        row = cur.fetchone()
-        if not row:
-            raise RuntimeError(
-                f"No ParliamentaryCycle found for house={house}, date={date}"
+        if filename.lower().startswith("mms_") and house != 3:
+            raise ValueError("MMS must use house=majlis-mengangkat-sumpah")
+        if house == 3:
+            assignment = validate_assignment(payload)
+            cur.execute(
+                """SELECT cycle_id FROM api_parliamentary_cycle
+                   WHERE house = %s AND term = %s AND session = %s
+                     AND meeting IS NULL AND start_date IS NULL AND end_date IS NULL""",
+                (house, assignment["term"], assignment["session"]),
             )
+            matches = cur.fetchall()
+            if len(matches) != 1:
+                raise RuntimeError(
+                    f"Expected one MMS ParliamentaryCycle for {assignment}, found {len(matches)}; "
+                    "run the cycle job first and resolve duplicate cycle rows"
+                )
+            row = matches[0]
+        else:
+            cur.execute(
+                """
+                SELECT cycle_id
+                FROM api_parliamentary_cycle
+                WHERE house = %s
+                  AND start_date <= %s
+                  AND end_date >= %s
+                """,
+                (house, date, date),
+            )
+            row = cur.fetchone()
+            if not row:
+                raise RuntimeError(
+                    f"No ParliamentaryCycle found for house={house}, date={date}"
+                )
 
         cycle_id = row[0]
 

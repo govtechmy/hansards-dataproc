@@ -1004,7 +1004,7 @@ def get_sitting_object(pdf_file_key: str, logger=None):
     return {
         "house": house,  # DR
         "house_folder": house_folder,  # dewanrakyat
-        "house_display": house_mapper.to_display("DN" if house == "MMS" else house),
+        "house_display": "majlis-mengangkat-sumpah" if house == "MMS" else house_mapper.to_display(house),
         "date_str": date_str,  # 12122024
         "proper_date_str": proper_date_str,  # 2024-12-12
         "date": date,

@@ -1,6 +1,7 @@
-"""MMS-only archive preparation for manual sitting runs; database house remains DN."""
+"""MMS-only archive preparation for manual sitting runs; database membership comes from the scraped hierarchy."""
 from datetime import datetime
 import json
+from hansards_pipelines.scrape_mms_parlimen_penggal import validate_assignment, save_assignment
 
 from hansards_pipelines.arkib_sittings.promote_pdfs import promote_arkib_pdfs
 
@@ -23,6 +24,11 @@ def prepare_mms_archive(*, s3, dataproc_bucket, public_bucket, parliament,
     items = manifest['items']
     if not isinstance(items, list):
         raise ValueError('MMS archive manifest items must be a list')
+    # Old manifests must be re-scraped; never infer a session from dates.
+    for item in items:
+        assignment = validate_assignment(item)
+        if assignment["term"] != parliament:
+            raise ValueError("MMS item Parlimen does not match manifest")
     selected = {}
     skipped = []
     for item in items:
@@ -43,11 +49,14 @@ def prepare_mms_archive(*, s3, dataproc_bucket, public_bucket, parliament,
             continue
         partition = f'MMS-{day:%d%m%Y}'
         # Normalize metadata for public paths; retain the exact raw S3 filename.
-        selected[partition] = (filename, get_sitting_object(partition))
+        if partition in selected and any(selected[partition][2][k] != item[k] for k in ("term", "session")):
+            raise ValueError(f"Conflicting MMS assignments for {filename}")
+        selected[partition] = (filename, get_sitting_object(partition), item)
 
     partitions = sorted(selected, key=lambda p: datetime.strptime(p[4:], '%d%m%Y'))
     for partition in partitions:
-        filename, sitting = selected[partition]
+        filename, sitting, assignment = selected[partition]
+        save_assignment(s3, dataproc_bucket, sitting["renamed_filename"], assignment)
         s3.copy_object(
             Bucket=public_bucket,
             Key=f"{MMS_ARCHIVE_PREFIX}/dewannegara/{sitting['renamed_filename']}.pdf",
