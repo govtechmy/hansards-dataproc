@@ -101,8 +101,12 @@ so subsequent runs recognise identical MMS rows.
 The MMS document archive scraper includes `term`, `session`, and `source_node`
 on every manifest item. Archive preparation persists a per-document assignment
 at `metadata/mms/mms_YYYY-MM-DD.json` in the dataproc bucket before registering
-partitions. Active PDF discovery also reads the authoritative hierarchy and saves
-this metadata before queuing an MMS. Both paths reject conflicting assignments.
+partitions. Active PDF discovery uses the hierarchy when the document is listed.
+Otherwise it reads PDF pages 1 and 2, preferring the page-1 cover. If the cover
+has no complete pair, page 2 can supply it. Disagreements are logged and retained
+in `pdf_evidence` with `metadata_conflict=true`; cover values take precedence.
+The metadata is saved before queuing, even for already downloaded documents.
+The same PDF download is reused for draft/final detection when needed.
 
 `prepare_db_payload` reads that saved metadata and adds `term` and `session` to
 the MMS payload. `direct_insert_to_db` resolves exactly one cycle using
@@ -110,9 +114,10 @@ the MMS payload. `direct_insert_to_db` resolves exactly one cycle using
 missing cycles, and duplicate cycle matches fail rather than guessing. Ordinary
 DR/DN/KK date lookup is unchanged. Old MMS-as-DN payloads are rejected.
 
-Existing manifests without membership must be re-scraped. There is no automated
-PDF fallback: unresolved or contradictory source metadata requires manual review
-of the source/PDF and a verified correction before ingestion.
+Existing manifests without membership must be re-scraped. Active documents use
+the PDF fallback above. Missing, unreadable, or ambiguous within-page PDF labels
+fail without inferring a session from dates. Archive hierarchy conflicts still
+fail for review.
 
 ## Required companion changes: hansard-mod-api (not hansards-back)
 

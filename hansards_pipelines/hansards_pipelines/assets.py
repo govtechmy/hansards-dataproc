@@ -20,8 +20,7 @@ import os
 import io
 import json
 import pickle
-from hansards_pipelines.scrape_mms_parlimen_penggal import load_assignment, save_assignment
-from hansards_pipelines.scrape_arkib import scrape_mms_parlimen_penggal
+from hansards_pipelines.scrape_mms_parlimen_penggal import ActiveMmsScraper, load_assignment
 from bs4 import BeautifulSoup
 import boto3
 import botocore
@@ -67,7 +66,7 @@ from hansards_pipelines.scrape_parliamentary_cycle import (
 import psycopg
 from hansards_pipelines.direct_sitting_ingest import ingest_sitting_to_db
 
-from hansards_pipelines.scrape_arkib import run_scrape
+from hansards_pipelines.scrape_arkib import run_scrape, scrape_mms_parlimen_penggal
 from hansards_pipelines.move_and_rename_pdf import move_arkib_pdfs_to_public_main
 from hansards_pipelines.seed_data.author import load_author_csv_to_db
 from pathlib import Path
@@ -253,7 +252,10 @@ def scrape_website(context: AssetExecutionContext) -> List:
     ]
     new_pdfs = []
     skipped_pdfs = []
-    mms_assignments = None
+    mms_scraper = ActiveMmsScraper(
+        s3=s3_client, bucket=S3_DATAPROC_BUCKET, logger=context.log,
+        scrape_assignments=scrape_mms_parlimen_penggal,
+    )
     for source in sources:
 
         source_url = source[0]
@@ -310,13 +312,9 @@ def scrape_website(context: AssetExecutionContext) -> List:
                         continue
                     pdf_name = f"{house}-{date}.pdf"
 
+                    pdf_response = None
                     if house.upper() == "MMS":
-                        if mms_assignments is None:
-                            mms_assignments = scrape_mms_parlimen_penggal()
-                        if pdf_name not in mms_assignments:
-                            raise ValueError(f"MMS has no verified website assignment: {pdf_name}")
-                        normalized = get_sitting_object(pdf_name)["renamed_filename"]
-                        save_assignment(s3_client, S3_DATAPROC_BUCKET, normalized, mms_assignments[pdf_name])
+                        pdf_response = mms_scraper.prepare(pdf_name, pdf_url)
 
                     s3_key = f"{house_folder}/{pdf_name}"
                     full_s3_key = f"new/{s3_key}"
@@ -357,8 +355,9 @@ def scrape_website(context: AssetExecutionContext) -> List:
                         should_upload = False
                     else:
                         # Step 2: Download and open PDF to determine is_final_pdf flag
-                        pdf_response = requests.get(pdf_url, verify=False, timeout=300)
-                        pdf_response.raise_for_status()
+                        if pdf_response is None:
+                            pdf_response = requests.get(pdf_url, verify=False, timeout=300)
+                            pdf_response.raise_for_status()
                         is_final_pdf = True
                         with pdfplumber.open(BytesIO(pdf_response.content)) as pdf:
                             for page in pdf.pages:
