@@ -70,6 +70,14 @@ in the asset metadata (`skipped_items` and `skipped_count`); valid files continu
 S3 failures and invalid manifest structure still fail the job.
 No separate ordinary archive move job is needed.
 
+DN-prefixed files found in the MMS manifest are opened from the isolated raw MMS
+storage and checked for `Majlis Mengangkat Sumpah` on PDF page 1. Confirmed files
+use MMS partitions/public names while retaining the original raw filename and
+scraped Parlimen/Penggal. Saved metadata includes `source_filename` and the PDF
+cover verification source. Covers without that title, including unreadable or
+empty covers, are skipped with a review warning. S3 read failures fail the job
+for retry. This does not reclassify files in the ordinary DN archive flow.
+
 MMS uses isolated storage paths:
 
 - Raw PDFs: dataproc bucket `arkib/dewannegara/mms/MMS-DDMMYYYY.pdf`.

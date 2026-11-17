@@ -1,12 +1,32 @@
 """MMS-only archive preparation for manual sitting runs; database membership comes from the scraped hierarchy."""
 from datetime import datetime
+from io import BytesIO
 import json
+import re
+
+import pdfplumber
+
 from hansards_pipelines.scrape_mms_parlimen_penggal import validate_assignment, save_assignment
 
 from hansards_pipelines.arkib_sittings.promote_pdfs import promote_arkib_pdfs
 
 MMS_SOURCE_PREFIX = 'arkib/dewannegara/mms/'
 MMS_ARCHIVE_PREFIX = 'arkib/mms'
+
+
+def verify_mms_pdf_cover(content):
+    """Confirm a DN-labelled archive candidate is MMS from its physical cover."""
+    try:
+        with pdfplumber.open(BytesIO(content)) as pdf:
+            cover = ''
+            if pdf.pages:
+                cover = pdf.pages[0].extract_text() or ''
+    except Exception as exc:
+        raise ValueError('Could not read PDF cover to verify MMS document type') from exc
+    if not re.search(r'\bMAJLIS\s+MENGANGKAT\s+SUMPAH\b', cover, re.IGNORECASE):
+        raise ValueError('PDF cover does not identify Majlis Mengangkat Sumpah')
+    return dict(verified_document_type='MMS', document_type_source='pdf_cover',
+                document_type_source_page=1)
 
 
 def prepare_mms_archive(*, s3, dataproc_bucket, public_bucket, parliament,
@@ -40,9 +60,19 @@ def prepare_mms_archive(*, s3, dataproc_bucket, public_bucket, parliament,
             if item.get('house_folder') != 'dewannegara':
                 raise ValueError('Item must belong to Dewan Negara')
             sitting = get_sitting_object(filename)
-            if not sitting or sitting['house'] != 'MMS' or sitting['house_folder'] != 'dewannegara':
-                raise ValueError('Filename did not resolve to MMS under Dewan Negara')
+            if not sitting or sitting['house_folder'] != 'dewannegara':
+                raise ValueError('Filename did not resolve under Dewan Negara')
             day = datetime.strptime(sitting['date_str'], '%d%m%Y')
+            assignment = {**item, 'source_filename': filename}
+            if sitting['house'] == 'DN':
+                # This manifest is MMS-only. Verify the actual PDF rather than
+                # trusting the DN prefix or applying a global filename override.
+                raw_pdf = s3.get_object(Bucket=dataproc_bucket,
+                                        Key=MMS_SOURCE_PREFIX + filename)['Body'].read()
+                assignment.update(verify_mms_pdf_cover(raw_pdf))
+                logger.info(f'PDF cover confirms MMS despite DN filename: {filename}')
+            elif sitting['house'] != 'MMS':
+                raise ValueError('Filename did not resolve to an MMS or DN candidate')
         except ValueError as exc:
             skipped.append(dict(filename=filename, reason=str(exc)))
             logger.warning(f'Skipped MMS archive item {filename!r}: {exc}')
@@ -51,7 +81,7 @@ def prepare_mms_archive(*, s3, dataproc_bucket, public_bucket, parliament,
         # Normalize metadata for public paths; retain the exact raw S3 filename.
         if partition in selected and any(selected[partition][2][k] != item[k] for k in ("term", "session")):
             raise ValueError(f"Conflicting MMS assignments for {filename}")
-        selected[partition] = (filename, get_sitting_object(partition), item)
+        selected[partition] = (filename, get_sitting_object(partition), assignment)
 
     partitions = sorted(selected, key=lambda p: datetime.strptime(p[4:], '%d%m%Y'))
     for partition in partitions:
