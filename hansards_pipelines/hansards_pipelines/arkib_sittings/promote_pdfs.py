@@ -14,7 +14,7 @@ def promote_arkib_pdfs(
 
         # Build arkib key explicitly
         # Example: arkib/dewannegara/dn_2026-01-19.pdf
-        house_folder = sitting["house_folder"]
+        house_folder = sitting.get("public_house_folder", sitting["house_folder"])
         arkib_filename = f"{sitting['renamed_filename']}.pdf"
         arkib_key = f"{archive_prefix}/{house_folder}/{arkib_filename}"
         root_key = sitting["renamed_filename_key"]

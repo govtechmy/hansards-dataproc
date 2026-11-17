@@ -3,7 +3,7 @@ Scrape Dewan Negara hansard archive pages and upload into S3.
 
 S3 layout:
 s3://<S3_DATAPROC_BUCKET>/arkib/<house-folder>/<filename>.pdf
-MMS originals use arkib/dewannegara/mms/<filename>.pdf.
+MMS originals use arkib/majlismengangkatsumpah/pdfs/<filename>.pdf.
 
 Example:
 s3://my-bucket/arkib/dewannegara/dr_2025-01-01.pdf
@@ -33,6 +33,7 @@ import time
 from datetime import datetime, timezone
 from typing import Set, List, Dict
 from urllib.parse import urljoin, urlparse
+from zoneinfo import ZoneInfo
 
 import boto3
 import requests
@@ -43,7 +44,7 @@ from requests.adapters import HTTPAdapter, Retry
 from hansards_pipelines.settings import S3_DATAPROC_BUCKET, AWS_REGION
 
 PDF_BASE_URL = "https://www.parlimen.gov.my"
-from hansards_pipelines.scrape_mms_parlimen_penggal import assignment_from_node
+from hansards_pipelines.scrape_mms_parlimen_penggal import MMS_ARCHIVE_ROOT, assignment_from_node
 
 ROOT_ID = "0"
 REQUEST_DELAY = 0.2
@@ -216,7 +217,8 @@ def crawl(
         seen_files.add(key_id)
 
         subdirectory = f"{document_prefix}/" if document_prefix else ""
-        key = f"arkib/{house_folder}/{subdirectory}{filename}"
+        key = (f"{MMS_ARCHIVE_ROOT}/pdfs/{filename}" if document_prefix == "mms"
+               else f"arkib/{house_folder}/{subdirectory}{filename}")
         download_pdf_to_s3(
             session=session,
             s3=s3,
@@ -292,8 +294,9 @@ def write_manifest_to_s3(
     items: List[Dict],
     document_prefix: str | None = None,
 ):
+    generated_at = datetime.now(timezone.utc)
     manifest = {
-        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "generated_at": generated_at.isoformat(),
         "house": house_folder,
         "parliament": parliament,
         "total_items": len(items),
@@ -308,14 +311,25 @@ def write_manifest_to_s3(
     if document_prefix:
         key = key.replace("/manifest/", f"/manifest/{document_prefix}/")
 
-    s3.put_object(
-        Bucket=S3_DATAPROC_BUCKET,
-        Key=key,
-        Body=json.dumps(manifest, indent=2).encode("utf-8"),
-        ContentType="application/json",
-    )
+    keys = [key]
+    if document_prefix == "mms":
+        filename = key.rsplit("/", 1)[1]
+        directory = f"{MMS_ARCHIVE_ROOT}/manifest"
+        scrape_date = generated_at.astimezone(ZoneInfo("Asia/Kuala_Lumpur")).date().isoformat()
+        # Preserve the daily snapshot before publishing the current manifest.
+        # Same-day reruns replace that day's file; earlier dates remain intact.
+        keys = [f"{directory}/{scrape_date}/{filename}",
+                f"{directory}/latest/{filename}"]
 
-    logging.info(f"Manifest written -> s3://{S3_DATAPROC_BUCKET}/{key} (total_items={len(items)})")
+    body = json.dumps(manifest, indent=2).encode("utf-8")
+    for manifest_key in keys:
+        s3.put_object(
+            Bucket=S3_DATAPROC_BUCKET,
+            Key=manifest_key,
+            Body=body,
+            ContentType="application/json",
+        )
+        logging.info(f"Manifest written -> s3://{S3_DATAPROC_BUCKET}/{manifest_key} (total_items={len(items)})")
 
 def run_scrape(
     *,

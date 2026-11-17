@@ -10,6 +10,7 @@ import requests
 from hansards_pipelines.utils.malay_numbers import malay_ordinal_to_number
 from hansards_pipelines.utils.text_utils import get_sitting_object
 
+MMS_ARCHIVE_ROOT = "arkib/majlismengangkatsumpah"
 MMS_HOUSE = "majlis-mengangkat-sumpah"
 MMS_URL = "https://www.parlimen.gov.my/hansard-majlis.html"
 

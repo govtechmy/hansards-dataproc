@@ -8,7 +8,7 @@ Reason: To ensure data integrity by confirming that all sittings have their asso
 Usage:
     python check_pdf_csv.py [--houses dewanrakyat dewannegara kamarkhas] [--dry-run]
 Options:
-    --houses: Specify which houses to check. Default checks all three houses.
+    --houses: Specify which houses to check. Default checks all four categories.
     --dry-run: If set, the report will not be uploaded to S3; it will only be printed to the console.
 
 Example:
@@ -35,7 +35,7 @@ from hansards_pipelines.settings import (
     S3_PUBLIC_BUCKET,
 )
 
-DEFAULT_HOUSES: Tuple[str, ...] = ("dewanrakyat", "dewannegara", "kamarkhas")
+DEFAULT_HOUSES: Tuple[str, ...] = ("dewanrakyat", "dewannegara", "kamarkhas", "majlismengangkatsumpah")
 
 DATAPROC_PREFIX: str = "checks/sittings/s3/pdf_csv"
 
@@ -50,6 +50,7 @@ def fetch_db_filenames(conn, houses: Sequence[str]) -> List[Tuple[int, str]]:
         "dewanrakyat": "dr_%",
         "dewannegara": "dn_%",
         "kamarkhas": "kkdr_%",
+        "majlismengangkatsumpah": "mms_%",
     }
 
     like_patterns = [prefix_map[h] for h in houses if h in prefix_map]

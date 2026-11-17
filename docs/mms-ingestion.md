@@ -1,6 +1,7 @@
 # MMS as house 3
 
-MMS keeps its existing parser and S3 paths, but database/API identity is
+MMS keeps its existing parser and intermediate artifact paths. Public downloads
+use `majlismengangkatsumpah/`; database/API identity is
 `majlis-mengangkat-sumpah` (`house=3`). Parlimen/Penggal comes from the website
 hierarchy, not the document date. The database migration is required before
 running cycle jobs. Backend/frontend changes are required to serve MMS, but
@@ -10,7 +11,7 @@ cycle seeding writes directly to DB and does not require the cycle API.
 | --- | --- |
 | Original/partition filename | `MMS-29092026` |
 | Normalized filename | `mms_2026-09-29` |
-| Public PDF key | `dewannegara/mms_2026-09-29.pdf` |
+| Public PDF key | `majlismengangkatsumpah/mms_2026-09-29.pdf` |
 | API house | `majlis-mengangkat-sumpah` (`3`) |
 | Intermediate artifact directory | `parsed_pdf/dewannegara/MMS-29092026/` |
 
@@ -80,10 +81,21 @@ for retry. This does not reclassify files in the ordinary DN archive flow.
 
 MMS uses isolated storage paths:
 
-- Raw PDFs: dataproc bucket `arkib/dewannegara/mms/MMS-DDMMYYYY.pdf`.
-- Manifests: dataproc bucket `arkib/dewannegara/manifest/mms/manifest_term_<term>.json`.
-- Temporary promotion: public bucket `arkib/mms/dewannegara/mms_YYYY-MM-DD.pdf`.
-- Final PDFs: public bucket `dewannegara/mms_YYYY-MM-DD.pdf`.
+- Raw PDFs: dataproc bucket `arkib/majlismengangkatsumpah/pdfs/MMS-DDMMYYYY.pdf`.
+- Daily manifests: dataproc bucket `arkib/majlismengangkatsumpah/manifest/YYYY-MM-DD/manifest_term_<term>.json`.
+- Current manifests: dataproc bucket `arkib/majlismengangkatsumpah/manifest/latest/manifest_term_<term>.json`.
+- Temporary promotion: public bucket `arkib/majlismengangkatsumpah/majlismengangkatsumpah/mms_YYYY-MM-DD.pdf`.
+- Final PDFs: public bucket `majlismengangkatsumpah/mms_YYYY-MM-DD.pdf`.
+
+The folder date uses Asia/Kuala_Lumpur; `generated_at` remains a UTC timestamp.
+Each scrape writes the dated snapshot first, then the identical `latest` copy.
+Same-day reruns replace that day's file for the selected Parlimen; older days
+and other Parlimen files are preserved. Archive preparation reads `latest`.
+Re-scrape a term to populate the new paths. Legacy raw PDFs and manifests under
+`arkib/dewannegara/` are not read or deleted by the new code. Public MMS PDFs/CSVs
+use `majlismengangkatsumpah/`; ordinary DN downloads stay under `dewannegara/`.
+Intermediate/raw active paths stay unchanged; `get_sitting_object` exposes a
+separate `public_house_folder` so parser artifacts do not need relocating.
 
 Raw PDFs remain available for retries. Regular DN archive staging, manifests
 and queues are unchanged. The CLI still supports explicit `--category mms`, but the CLI alone
@@ -220,6 +232,13 @@ Paths below are relative to `hansard-mod-api`.
    with missing/ambiguous assignments rejected. Dataproc's selected sitting job
    writes directly to DB and does not require this endpoint.
 
+   Public MMS objects now use `majlismengangkatsumpah/mms_YYYY-MM-DD.pdf` (or
+   `.csv`). `src/controllers/file.controller.ts` and `src/services/s3.svc.ts`
+   sign the caller-supplied object key without a house-folder resolver, so callers
+   must supply the new key. No prefix-specific backend change is needed in those
+   inspected methods; include the new folder in any deployment-side IAM/proxy
+   allowlists. Old public MMS object keys are removed, not retained as aliases.
+
 7. **Acceptance checks:** Seed the same MMS cycle twice and concurrently; expect
    one DB row. Round-trip NULL fields through cycle, sitting and catalogue
    endpoints. Retrieve DN and MMS on the same date separately. Test MMS-only and
@@ -252,10 +271,13 @@ These are instructions only; no frontend files are edited here.
    to omit the Mesyuarat label for MMS, handle NULL cycle dates, and display its
    category correctly. Existing header logic slicing two filename characters
    needs an explicit MMS case. DN and MMS retain different document URLs.
-6. Keep PDF/CSV download storage under `dewannegara/mms_YYYY-MM-DD.*`.
-   `lib/downloads.ts` currently defaults non-DR/KK prefixes to DN, which remains
-   compatible; make MMS explicit if consolidating the resolver. Do not change
-   bucket folders just because the page route/house changes.
+6. Route every `mms_` PDF/CSV download to `majlismengangkatsumpah/`.
+   In `lib/downloads.ts:getHansardPrefix`, add the `mms_` branch and extend its
+   return union. In `data-catalogue/hansard/hansard.tsx`, update the inline
+   `hansard_url` folder resolver (currently defaults to DN) so embedded viewers
+   and download links use the same mapping. No legacy MMS copies/redirects are
+   retained under `dewannegara/`; old MMS links will stop working. DN paths do
+   not change. If a proxy/CDN has a category allowlist, add the new folder.
 7. Verify desktop/mobile tabs, direct links, session folders without dates,
    downloads, shared links, and same-day DN/MMS navigation. Existing DN URLs
    remain DN; they cannot identify a legacy MMS link without a document marker.
@@ -289,8 +311,10 @@ These are instructions only; no frontend files are edited here.
    exist. Deploy the frontend once the API response contract is available.
 6. Verify live counts and a known same-day DN/MMS pair after the approved rollout.
 
-The dev schema migration was applied on 2026-11-16. Local pipeline tests use
-mocks; the direct cycle writer is additionally checked against temporary dev
-PostgreSQL tables. These checks do not seed live MMS cycles or relink sittings.
-PDF fallback was verified against the two September 2026 active PDFs. Production
-migration, live data backfill, and full Dagster ingestion remain separate steps.
+The dev schema migration was applied on 2026-11-16. Dev has 17 MMS cycles;
+three historical sitting links were corrected and both September 2026 active
+MMS ingestions were verified. On 2026-11-17, 55 public PDFs and 55 CSVs were moved
+from `dewannegara/mms_*` to `majlismengangkatsumpah/`, SHA-256 verified, and their
+old public copies deleted. Deploy the updated dataproc code before rerunning
+jobs so old workers do not recreate the legacy public paths. BE/FE download
+routing must use the new folder. Production changes remain pending.

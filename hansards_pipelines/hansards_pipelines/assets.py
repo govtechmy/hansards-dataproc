@@ -316,7 +316,7 @@ def scrape_website(context: AssetExecutionContext) -> List:
                     # Step 1b: Check if file already exists in PUBLIC (canonical location)
                     exists_in_public = False
                     sitting_object = get_sitting_object(pdf_name[:-4])
-                    public_house_folder = sitting_object["house_folder"]
+                    public_house_folder = sitting_object["public_house_folder"]
                     renamed_public_key = f"{public_house_folder}/{sitting_object['renamed_filename']}.pdf"
                     try:
                         s3_client.head_object(
@@ -463,9 +463,7 @@ def move_and_rename_all_hansards(
             Bucket=S3_DATAPROC_BUCKET,
             Key=f"new/{s3_key}",
         )
-        new_pdf_name = (
-            f"{sitting_object['house_folder']}/{sitting_object['renamed_filename']}.pdf"
-        )
+        new_pdf_name = sitting_object["renamed_filename_key"]
 
         # Rename and move the file
         s3_client.put_object(
@@ -950,7 +948,7 @@ def dg_tabulate(context: AssetExecutionContext):
     )
     context.log.info(f"Uploaded result.csv to {s3_key}")
     s3_csv_key = (
-        f"{sitting_object['house_folder']}/{sitting_object['renamed_filename']}.csv"
+        f"{sitting_object['public_house_folder']}/{sitting_object['renamed_filename']}.csv"
     )
     s3_client.put_object(
         Bucket=S3_PUBLIC_BUCKET,

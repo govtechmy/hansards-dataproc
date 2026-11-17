@@ -997,13 +997,15 @@ def get_sitting_object(pdf_file_key: str, logger=None):
     proper_date_str = date.strftime("%Y-%m-%d")  # 2024-12-12 or 1961-05-01
     original_filename = base_name + ".pdf"
     renamed_filename = rename_pdf(base_name)  # DR-12122024 -> dr_2024-12-12
+    public_house_folder = "majlismengangkatsumpah" if house == "MMS" else house_folder
     renamed_filename_key = (
-        f"{house_folder}/{renamed_filename}.pdf"  # dewanrakyat/dr_2024-12-12.pdf
+        f"{public_house_folder}/{renamed_filename}.pdf"  # dewanrakyat/dr_2024-12-12.pdf
     )
     
     return {
         "house": house,  # DR
-        "house_folder": house_folder,  # dewanrakyat
+        "house_folder": house_folder,  # Intermediate/raw artifact folder
+        "public_house_folder": public_house_folder,
         "house_display": "majlis-mengangkat-sumpah" if house == "MMS" else house_mapper.to_display(house),
         "date_str": date_str,  # 12122024
         "proper_date_str": proper_date_str,  # 2024-12-12

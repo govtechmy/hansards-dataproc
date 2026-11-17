@@ -6,12 +6,12 @@ import re
 
 import pdfplumber
 
-from hansards_pipelines.scrape_mms_parlimen_penggal import validate_assignment, save_assignment
+from hansards_pipelines.scrape_mms_parlimen_penggal import MMS_ARCHIVE_ROOT, validate_assignment, save_assignment
 
 from hansards_pipelines.arkib_sittings.promote_pdfs import promote_arkib_pdfs
 
-MMS_SOURCE_PREFIX = 'arkib/dewannegara/mms/'
-MMS_ARCHIVE_PREFIX = 'arkib/mms'
+MMS_SOURCE_PREFIX = f'{MMS_ARCHIVE_ROOT}/pdfs/'
+MMS_ARCHIVE_PREFIX = MMS_ARCHIVE_ROOT
 
 
 def verify_mms_pdf_cover(content):
@@ -37,7 +37,7 @@ def prepare_mms_archive(*, s3, dataproc_bucket, public_bucket, parliament,
     Raw sources are retained so retries can repeat promotion after a partial
     failure. Return partitions only after every selected PDF is promoted.
     """
-    manifest_key = f'arkib/dewannegara/manifest/mms/manifest_term_{parliament}.json'
+    manifest_key = f'{MMS_ARCHIVE_ROOT}/manifest/latest/manifest_term_{parliament}.json'
     manifest = json.loads(s3.get_object(Bucket=dataproc_bucket, Key=manifest_key)['Body'].read())
     if manifest.get('house') != 'dewannegara' or manifest.get('parliament') != parliament:
         raise ValueError('MMS archive manifest has an unexpected house or parliament')
@@ -89,7 +89,7 @@ def prepare_mms_archive(*, s3, dataproc_bucket, public_bucket, parliament,
         save_assignment(s3, dataproc_bucket, sitting["renamed_filename"], assignment)
         s3.copy_object(
             Bucket=public_bucket,
-            Key=f"{MMS_ARCHIVE_PREFIX}/dewannegara/{sitting['renamed_filename']}.pdf",
+            Key=f"{MMS_ARCHIVE_PREFIX}/{sitting['public_house_folder']}/{sitting['renamed_filename']}.pdf",
             CopySource={'Bucket': dataproc_bucket, 'Key': MMS_SOURCE_PREFIX + filename},
             ContentType='application/pdf',
         )
