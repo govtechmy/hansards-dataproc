@@ -60,8 +60,7 @@ from hansards_pipelines.arkib_sittings.mms_archive import prepare_mms_archive
 from hansards_pipelines.scrape_parliamentary_cycle import (
     scrape_arkib_cycles,
     scrape_active_cycles,
-    fetch_db_cycles,
-    upsert_cycles_via_api,
+    insert_cycles_to_db,
 )
 import psycopg
 from hansards_pipelines.direct_sitting_ingest import ingest_sitting_to_db
@@ -145,30 +144,20 @@ def _generate_new_hansard_message(
 def scrape_parliamentary_cycle_arkib(context: AssetExecutionContext) -> Dict:
     """
     Scrape parliamentary cycle data (Parlimen, Penggal, Mesyuarat + date ranges)
-    from Portal Rasmi Parlimen archive for DR, DN, KKDR and upsert via
-    POST /api/parliamentary-cycle.
-    
-    This scrapes COMPLETED sessions from the archive tree structure.
+    from the archive for DR, DN, KKDR, plus MMS Parlimen/Penggal.
+    Insert missing cycles directly into the configured database.
     """
+    if not HANSARD_DB_URL:
+        raise ValueError("HANSARD_DB_URL is not configured")
+
     # Scrape cycles from arkib
     cycles = scrape_arkib_cycles(context=context)
     
-    # Fetch existing cycles from database
-    context.log.info("[arkib] Fetching existing cycles from database...")
-    existing_keys = fetch_db_cycles(HANSARD_DB_URL, context)
-    
-    # Upsert via API
-    api_endpoint = f"{DEV_API_URL}/api/parliamentary-cycle"
-    context.log.info(f"[arkib] Using API endpoint: {api_endpoint}")
-    
-    stats = upsert_cycles_via_api(
-        cycles=cycles,
-        existing_keys=existing_keys,
-        api_endpoint=api_endpoint,
-        log_prefix="arkib",
-        context=context
-    )
-    
+    with psycopg.connect(HANSARD_DB_URL) as conn:
+        stats = insert_cycles_to_db(
+            cycles=cycles, conn=conn, log_prefix="arkib", context=context,
+        )
+
     summary = {
         "total_scraped": len(cycles),
         **stats,
@@ -182,27 +171,20 @@ def scrape_parliamentary_cycle_arkib(context: AssetExecutionContext) -> Dict:
 def scrape_parliamentary_cycle_active(context: AssetExecutionContext) -> Dict:
     """
     Scrape ACTIVE parliamentary cycle data (Parlimen, Penggal, Mesyuarat + date ranges)
-    from Portal Rasmi Parlimen main pages for DR, DN, KKDR.
+    from main pages for DR, DN, KKDR, plus the MMS hierarchy.
+    Insert missing cycles directly into the configured database.
     """
+    if not HANSARD_DB_URL:
+        raise ValueError("HANSARD_DB_URL is not configured")
+
     # Scrape active cycles
     cycles = scrape_active_cycles(context=context)
     
-    # Fetch existing cycles from database
-    context.log.info("[active] Fetching existing cycles from database...")
-    existing_keys = fetch_db_cycles(HANSARD_DB_URL, context)
-    
-    # Upsert via API
-    api_endpoint = f"{DEV_API_URL}/api/parliamentary-cycle"
-    context.log.info(f"[active] Using API endpoint: {api_endpoint}")
-    
-    stats = upsert_cycles_via_api(
-        cycles=cycles,
-        existing_keys=existing_keys,
-        api_endpoint=api_endpoint,
-        log_prefix="active",
-        context=context
-    )
-    
+    with psycopg.connect(HANSARD_DB_URL) as conn:
+        stats = insert_cycles_to_db(
+            cycles=cycles, conn=conn, log_prefix="active", context=context,
+        )
+
     summary = {
         "total_scraped": len(cycles),
         **stats,

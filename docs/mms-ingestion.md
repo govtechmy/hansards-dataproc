@@ -2,8 +2,9 @@
 
 MMS keeps its existing parser and S3 paths, but database/API identity is
 `majlis-mengangkat-sumpah` (`house=3`). Parlimen/Penggal comes from the website
-hierarchy, not the document date. This requires the companion API/schema changes
-below before deploying dataproc or running cycle jobs.
+hierarchy, not the document date. The database migration is required before
+running cycle jobs. Backend/frontend changes are required to serve MMS, but
+cycle seeding writes directly to DB and does not require the cycle API.
 
 | Value | Example |
 | --- | --- |
@@ -87,16 +88,20 @@ Both existing `scrape_parliamentary_cycle_active_job` and
 `scrape_parliamentary_cycle_arkib_job` now read the MMS hierarchy at
 `hansard-majlis.html`. That tree exposes current and historical Parlimen/Penggal;
 there is no need to derive membership from a meeting header on the active page.
-They post rows through the existing `/api/parliamentary-cycle` endpoint:
+They insert missing rows directly into the configured database, with this shape:
 
 ```json
 {"house":3,"term":15,"session":5,"meeting":null,"start_date":null,"end_date":null}
 ```
 
 The archive cycle job seeds historical MMS rows; both existing weekly cycle
-schedules can maintain them. The API must make creation safe across concurrent
-runs. Dataproc's existing-cycle comparison now preserves SQL NULL as Python None,
-so subsequent runs recognise identical MMS rows.
+schedules can maintain them. Both jobs use `insert_cycles_to_db` in a transaction
+and acquire the same PostgreSQL advisory lock before reading/inserting cycles.
+Reruns skip existing `(house, term, session, meeting)` identities, including NULL
+meeting for MMS. Existing dates are preserved if portal dates differ. Errors
+roll back the batch and fail the job. The MMS partial unique index also protects
+against duplicate MMS sessions from other writers. Other writers do not
+participate in the jobs' advisory lock unless explicitly implemented.
 
 The MMS document archive scraper includes `term`, `session`, and `source_node`
 on every manifest item. Archive preparation persists a per-document assignment
@@ -168,12 +173,14 @@ Paths below are relative to `hansard-mod-api`.
    not reject or strip NULL fields. In `getSittingList`, omit empty coverage
    dates or return documented nullable dates and update its response schema.
 
-4. **Cycle creation:** `src/controllers/parliamentary-cycle.controller.ts`
+4. **Optional API cycle creation:** Dataproc cycle jobs no longer call this
+   endpoint. If retained for MMS, `src/controllers/parliamentary-cycle.controller.ts`
    currently calls `create` unconditionally. For MMS, find/create by
    `(house,term,session)` under the unique index; return 201 when created and
    200 with the existing cycle when already present. Handle concurrent insert
-   conflicts by retrieving the existing row. This works with dataproc's current
-   handling of 200/201. Do not fabricate meeting numbers or date ranges.
+   conflicts by retrieving the existing row. Add the 200 response schema in
+   `src/routes/parliamentary-cycle.route.ts` alongside 201. Do not fabricate
+   meeting numbers or date ranges.
 
 5. **Catalogue:** `src/utils/catalogue/cycle-map.util.ts` currently converts
    `meeting` using `Number(...)`, which turns NULL into 0. Branch for house 3:
@@ -247,8 +254,12 @@ These are instructions only; no frontend files are edited here.
 
 ## Rollout and backfill
 
-1. Deploy the API migration and MMS-compatible validation/catalogue code first.
-2. Deploy dataproc, then run the existing archive cycle job to seed house-3 rows.
+1. Apply `migrations/20261116_support_mms_parliamentary_cycles.sql` to the target
+   database first (already applied to dev on 2026-11-16). Backend/frontend rollout
+   remains required before exposing MMS; legacy `semua` mappings and NULL response
+   fields are not compatible with MMS yet.
+2. Deploy dataproc, then run the existing archive cycle job to seed house-3 rows
+   directly into DB. Backend cycle endpoint deployment is no longer required.
    Both cycle strategies use the same MMS hierarchy; no additional schedule or
    independent seed list is needed.
 3. Re-run `scrape_mms_arkib_job` for terms 12–15 (the MMS portal's currently
@@ -270,5 +281,8 @@ These are instructions only; no frontend files are edited here.
    exist. Deploy the frontend once the API response contract is available.
 6. Verify live counts and a known same-day DN/MMS pair after the approved rollout.
 
-No deployment, live DB writes, or PDF fallback/backfill verification is performed
-by the local implementation/checks.
+The dev schema migration was applied on 2026-11-16. Local pipeline tests use
+mocks; the direct cycle writer is additionally checked against temporary dev
+PostgreSQL tables. These checks do not seed live MMS cycles or relink sittings.
+PDF fallback was verified against the two September 2026 active PDFs. Production
+migration, live data backfill, and full Dagster ingestion remain separate steps.

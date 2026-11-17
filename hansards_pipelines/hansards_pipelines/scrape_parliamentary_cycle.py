@@ -8,10 +8,9 @@ from hansards_pipelines.scrape_mms_parlimen_penggal import scrape_mms_cycles
 from hansards_pipelines.utils.malay_numbers import malay_ordinal_to_number
 import xml.etree.ElementTree as ET
 import requests
-import psycopg
 from bs4 import BeautifulSoup
 from datetime import datetime
-from typing import Optional, List, Dict, Set, Tuple
+from typing import Optional, List, Dict
 from dagster import AssetExecutionContext
 
 BASE_URL = "https://www.parlimen.gov.my"
@@ -34,166 +33,65 @@ MALAY_MONTHS = {
 
 
 
-def fetch_db_cycles(
-    hansard_db_url: str, 
-    context: Optional[AssetExecutionContext] = None
-) -> Set[Tuple]:
-    """Fetch existing parliamentary cycles from database to prevent duplicates."""
-    existing_keys = set()
-    
-    try:
-        if not hansard_db_url:
-            raise ValueError("HANSARD_DB_URL is not configured.")
-        
-        if context:
-            context.log.info("[parliamentary_cycle] Connecting to database...")
-        
-        with psycopg.connect(hansard_db_url) as conn:
-            with conn.cursor() as cur:
-                cur.execute("""
-                    SELECT house, term, session, meeting, start_date, end_date
-                    FROM api_parliamentary_cycle
-                """)
-                existing_cycles = cur.fetchall()
-                
-                if context:
-                    context.log.info(f"[parliamentary_cycle] Database returned {len(existing_cycles)} existing cycles")
-                
-                for row in existing_cycles:
-                    house, term, session, meeting, start_date, end_date = row
-                    key = (
-                        house,
-                        term,
-                        session,
-                        meeting,
-                        start_date.isoformat() if start_date is not None else None,
-                        end_date.isoformat() if end_date is not None else None
-                    )
-                    existing_keys.add(key)
-                    
-        if context:
-            context.log.info(f"[parliamentary_cycle] Built {len(existing_keys)} unique keys from database")
-                
-    except Exception as e:
-        if context:
-            context.log.error(f"[parliamentary_cycle] ERROR fetching existing cycles: {type(e).__name__}: {e}")
-        existing_keys = set()
-    
-    return existing_keys
-
-
-def upsert_cycles_via_api(
+def insert_cycles_to_db(
     cycles: List[Dict],
-    existing_keys: Set[Tuple],
-    api_endpoint: str,
+    conn,
     log_prefix: str = "parliamentary_cycle",
-    context: Optional[AssetExecutionContext] = None
+    context: Optional[AssetExecutionContext] = None,
 ) -> Dict:
-    """
-    Upsert cycles via API and return summary statistics.
-    """
-    inserted = updated = skipped = failed = 0
+    """Insert missing cycles atomically; preserve existing identities and dates.
 
+    Both Dagster cycle jobs take the same transaction-level advisory lock before
+    reading existing rows, so concurrent runs cannot race to insert a cycle.
+    Other writers must use the same lock or their own database uniqueness rules.
+    Errors propagate and roll back the batch instead of reporting job success.
+    """
+    fields = ("house", "term", "session", "meeting", "start_date", "end_date")
+    rows = []
     for cycle in cycles:
-        try:
-            # Check cycle identity (house, term, session, meeting)
-            cycle_identity = (
-                cycle["house"],
-                cycle["term"],
-                cycle["session"],
-                cycle["meeting"]
-            )
-            
-            # Check full cycle key including dates
-            cycle_key = (
-                cycle["house"],
-                cycle["term"],
-                cycle["session"],
-                cycle["meeting"],
-                cycle["start_date"],
-                cycle["end_date"]
-            )
-            
-            # Only skip if EXACT match 
-            if cycle_key in existing_keys:
-                if context:
-                    context.log.info(f"[{log_prefix}] Skipping identical cycle: {cycle}")
-                skipped += 1
-                continue
-            
-            # Check if cycle identity exists 
-            identity_exists = any(
-                (k[0], k[1], k[2], k[3]) == cycle_identity 
-                for k in existing_keys
-            )
-            
-            if identity_exists:
-                # Cycle exists but dates are different / Portal updated the dates
-                if context:
-                    context.log.warning(
-                        f"[{log_prefix}] ⚠️  Cycle already exists in DB with different dates. "
-                        f"Portal may have updated dates. Skipping POST: {cycle}"
-                    )
-                skipped += 1
-                continue
-            
-            if context:
-                context.log.info(f"[{log_prefix}] NEW cycle, posting to API: {cycle}")
+        row = tuple(cycle[field] for field in fields)
+        house, term, session, meeting, start, end = row
+        if type(house) is not int or house not in (0, 1, 2, 3):
+            raise ValueError(f"Invalid cycle house: {house}")
+        if any(type(value) is not int or value <= 0 for value in (term, session)):
+            raise ValueError("Cycle term/session must be positive integers")
+        if house == 3:
+            if any(value is not None for value in (meeting, start, end)):
+                raise ValueError("MMS cycles must have NULL meeting and dates")
+        elif type(meeting) is not int or meeting < 0 or start is None or end is None:
+            raise ValueError("Ordinary cycles require meeting and dates")
+        rows.append(row)
 
-            response = requests.post(api_endpoint, json=cycle, timeout=300)
-
-            if response.status_code == 409:
-                skipped += 1
-                continue
-            
-            if response.status_code == 400:
-                try:
-                    error_data = response.json()
-                    error_message = (
-                        error_data.get("detail", "")
-                        or error_data.get("message", "")
-                        or response.text
-                    )
-                except (ValueError, KeyError):
-                    error_message = response.text
-                
-                if context:
-                    context.log.error(f"[{log_prefix}] API validation error {response.status_code}: {error_message}")
-                failed += 1
-                continue
-            
-            if response.status_code >= 400:
-                if context:
-                    context.log.error(f"[{log_prefix}] API error {response.status_code}: {response.text}")
-                failed += 1
-                continue
-            
-            # Success responses (2xx)
-            if response.status_code == 201:
-                if context:
-                    context.log.info(f"[{log_prefix}] Inserted: {cycle}")
+    inserted = skipped = 0
+    with conn.transaction():
+        with conn.cursor() as cur:
+            # Shared by active/archive jobs; released on transaction completion.
+            cur.execute("SELECT pg_advisory_xact_lock(684213, 1)")
+            cur.execute("SELECT house, term, session, meeting, start_date, end_date FROM api_parliamentary_cycle")
+            existing = {tuple(row[:4]): row[4:] for row in cur.fetchall()}
+            for row in rows:
+                identity = row[:4]
+                if identity in existing:
+                    skipped += 1
+                    if context:
+                        stored_dates = tuple(value.isoformat() if hasattr(value, "isoformat") else value
+                                             for value in existing[identity])
+                        scraped_dates = tuple(value.isoformat() if hasattr(value, "isoformat") else value
+                                              for value in row[4:])
+                        if stored_dates != scraped_dates:
+                            context.log.warning(
+                                f"[{log_prefix}] Existing cycle {identity} has different dates; preserving DB values"
+                            )
+                    continue
+                cur.execute(
+                    """INSERT INTO api_parliamentary_cycle
+                       (house, term, session, meeting, start_date, end_date)
+                       VALUES (%s, %s, %s, %s, %s, %s)""",
+                    row,
+                )
+                existing[identity] = row[4:]
                 inserted += 1
-                existing_keys.add(cycle_key)
-            elif response.status_code == 200:
-                if context:
-                    context.log.info(f"[{log_prefix}] Updated: {cycle}")
-                updated += 1
-            else:
-                if context:
-                    context.log.warning(f"[{log_prefix}] Unexpected success code {response.status_code}: {cycle}")
-                updated += 1
-                
-        except Exception as e:
-            if context:
-                context.log.error(f"[{log_prefix}] Failed to upsert cycle: {e}")
-            failed += 1
-
-    return {
-        "inserted": inserted,
-        "updated": updated,
-        "skipped": skipped,
-        "failed": failed,
-    }
+    return {"inserted": inserted, "updated": 0, "skipped": skipped, "failed": 0}
 
 
 # ============================================================================
