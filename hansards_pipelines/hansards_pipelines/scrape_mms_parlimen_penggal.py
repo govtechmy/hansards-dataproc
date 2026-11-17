@@ -105,7 +105,7 @@ def assignment_key(filename):
 def save_assignment(s3, bucket, filename, assignment):
     validate_assignment(assignment)
     s3.put_object(Bucket=bucket, Key=assignment_key(filename),
-                  Body=json.dumps({"filename": filename, **assignment}).encode(),
+                  Body=json.dumps({**assignment, "filename": filename}).encode(),
                   ContentType="application/json")
 
 
