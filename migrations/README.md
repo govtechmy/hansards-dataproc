@@ -22,3 +22,18 @@ Rollback: before seeding MMS, restore NOT NULL on `meeting`, `start_date`, and
 `end_date`, then drop `api_parliamentary_cycle_mms_shape_check` and
 `api_parliamentary_cycle_mms_session_unique`. After seeding, review dependent
 sitting links first; do not delete referenced cycles.
+
+## 20261117_set_sitting_updated_at_on_insert_and_update.sql
+
+Sets `updated_at` on both INSERT and UPDATE, including direct DB ingestion.
+Adds a current-time default and replaces the old UPDATE-only trigger.
+Existing timestamps and historical NULL values are not backfilled.
+
+```sh
+psql "$DATABASE_URL" -X -v ON_ERROR_STOP=1 \
+  -f migrations/20261117_set_sitting_updated_at_on_insert_and_update.sql
+```
+
+Applied and verified on dev on 2026-11-17; production is pending.
+Transactional and safe to rerun. Rollback: restore the UPDATE-only trigger and
+remove the column default; timestamps already recorded remain intact.
