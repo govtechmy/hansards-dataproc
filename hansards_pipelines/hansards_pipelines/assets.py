@@ -27,7 +27,7 @@ import botocore
 import re
 import requests
 import pandas as pd
-from urllib.parse import urljoin
+from urllib.parse import unquote, urljoin
 from typing import List, Tuple, Dict, Optional
 from io import BytesIO
 import pdfplumber
@@ -267,31 +267,17 @@ def scrape_website(context: AssetExecutionContext) -> List:
                 pdf_url = urljoin(base_url, pdf_path)
                 if pdf_url.endswith(".pdf"):
                     should_upload = False
-                    # Determine the PDF file name
-                    pdf_name = os.path.basename(pdf_url).split(".")[
-                        0
-                    ]  # KKDR-20022025-1
-
-                    # Try to rename and correct PDF file name here eg. KKDR-20022025-1
-                    pdf_name_parts = pdf_name.split("-")
-                    if len(pdf_name_parts) != 2:
-                        context.log.warning(
-                            f"WARNING: PDF file name is not in the correct format: {pdf_name}"
-                        )
-                    house = pdf_name_parts[0]
-                    date = pdf_name_parts[1]
-                    if house not in house_names:
-                        context.log.warning(
-                            f"ERROR: House is not valid: {house}. Skipping"
-                        )
-                        skipped_pdfs.append(pdf_name)
+                    # Parse the original filename with the shared date validator.
+                    # Portal suffixes such as "KKDR-16112026 - 1" are preserved
+                    # in the download URL but not in the canonical partition ID.
+                    source_filename = unquote(os.path.basename(pdf_url))
+                    sitting = get_sitting_object(source_filename, logger=context.log)
+                    if not sitting or sitting["house"] not in house_names:
+                        context.log.warning(f"Invalid sitting filename: {source_filename}. Skipping")
+                        skipped_pdfs.append(source_filename)
                         continue
-                    if len(date) != 8:
-                        context.log.warning(
-                            f"ERROR: Date portion is not 8 digits: {date}. Skipping"
-                        )
-                        skipped_pdfs.append(pdf_name)
-                        continue
+                    house = sitting["house"]
+                    date = sitting["date_str"]
                     pdf_name = f"{house}-{date}.pdf"
 
                     pdf_response = None
