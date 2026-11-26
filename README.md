@@ -94,65 +94,9 @@ One should check `toc_mismatch.txt` after running `tabulate.py` for any discrepa
 - There are 7 files with natural occurences of `*`. 22102019, 24112020, 30112020, 15122020, 08112021, 09122021, 13032023. We escape them with `\*`.
 
 ## On annotations
-- Keep inline notes in the speech, including notes wrapped across PDF lines.
-- Separate standalone source notes under the author `ANNOTATION`. Do not use
-  italics or a PDF newline alone to decide placement. A named speaker's action
-  (for example `Tuan Ahmad: [Bangun]`) keeps that speaker association.
-- For 2008 onward, PDF extraction retains line coordinates and paragraph evidence
-  in `page_metadata.json`. Re-run extraction and preprocessing to populate these
-  fields in older cached artifacts; standalone reactions without layout evidence
-  stay with surrounding content and emit `AnnotationLayoutWarning` for review.
-- For the pre-2008 legacy pipeline, note boundaries are detected in the original
-  OCR blocks before speaker segmentation. Round brackets and unbracketed sitting
-  events are supported, and speaker context resumes after independent notes.
-  New Textract exports also retain bounding boxes. Existing CSVs without those
-  columns remain supported, with review warnings for ambiguous placements.
-- The same reaction can be inline or standalone. Unknown notes and uncertain
-  layouts are preserved for review rather than classified from their words alone.
-- Standalone annotation rows do not receive speech font styling.
-- Common annotations include
-  - _[Tepuk]_
-  - _[Ketawa]_
-  - _[Dewan ketawa]_
-  - _[Dewan riuh]_
-  - _[Pembesar suara dimatikan]_
-
-Annotation regressions: `env/bin/python -m pytest -q tests/test_annotation_layout.py`.
-
-For modern sittings (2008 onward), `LAFAZ IKRAR RUKUN NEGARA` has bounded
-formatting: source paragraph gaps and separate principle lines are retained in
-Markdown, and the principles cannot become subheadings. The rule requires a
-later recognised table-of-contents section title; without that boundary the
-existing parser remains in control. It does not change general speech layout or
-the legacy pipeline. Reprocess from PDF extraction/pretabulation to retain source
-blank-line metadata. Cached line coordinates can also recover larger gaps.
-Post-tabulation payload cleanup preserves this section's Markdown verbatim;
-generic speech line-break cleanup must not collapse the retained spacing.
-If the tabulated CSV already contains the correct spacing, rerun from
-`prepare_db_payload` through database insertion; PDF extraction is unnecessary.
-Regression checks: `env/bin/python -m pytest -q tests/test_rukun_negara.py tests/test_rukun_ingestion_formatting.py`.
-
-Decimal numbered lists: payload cleanup recognises consecutive source-line
-markers such as `1.` / `2.` or `13.` / `14.`, preserves item boundaries, and
-joins PDF wraps inside each item (including `(Pindaan)` continuations).
-Isolated numbers, decimal values, and years keep the existing cleanup rules.
-Existing correctly extracted CSVs only need reprocessing from `prepare_db_payload`
-through database insertion. The frontend must separately retain ordered-list
-start numbers. Checks: `env/bin/python -m pytest -q tests/test_numbered_speech_formatting.py`.
-
-Legacy transcript integrity: opening keywords are resolved against actual
-opening context so contents-page matches do not start proceedings. Chair events
-inside OCR header blocks are retained. Speaker changes are detected on original
-OCR lines, including wrapped labels and Malay titles containing `dan`.
-Nonempty speech/action rows remain in the database payload even when search
-tokenisation returns an empty list. Replay saved OCR (without rerunning Textract)
-to apply these fixes. Checks: `env/bin/python -m pytest -q tests/test_legacy_transcript_repairs.py`.
-
-With the report's local evidence folder present, replay the saved January source
-and four legacy OCR samples using
-`env/bin/python experimental/validate_annotation_layout.py`.
-This writes local results under `experimental/annotation-validation/` and does
-not update S3 or the database.
+- Inline notes stay within the speech. Standalone procedural notes use the author `ANNOTATION`.
+- Named actions such as `Tuan Ahmad: [Bangun]` keep their speaker association.
+- Common notes include _[Tepuk]_, _[Ketawa]_, _[Dewan riuh]_, and _[Pembesar suara dimatikan]_.
 
 ## On debugging tables
 - Start jupyter notebook and use `debug_tables.ipynb`. Many real examples are there that culminates in the current way of detecting tables.

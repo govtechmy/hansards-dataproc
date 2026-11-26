@@ -212,6 +212,37 @@ def _note_units(post):
         previous = row
 
 
+def _remove_repeated_headings(segments, heading_prefixes):
+    """Keep recognised headings in metadata rather than duplicate speech text.
+
+    A heading without any body in its section remains untouched: the current
+    database format cannot represent a section without a speech row.
+    """
+    candidates = {}
+    body_contexts = set()
+    for index, segment in enumerate(segments):
+        context = (segment['level_1'], segment['level_2'])
+        first, separator, rest = segment['speech'].partition('\n')
+        body = segment['speech']
+        if segment['author'] is None and (*context, first) in heading_prefixes:
+            candidates[index] = rest if separator else ''
+            body = candidates[index]
+        if body.strip():
+            body_contexts.add(context)
+            # A parent heading is still displayed above its child sections.
+            body_contexts.add((context[0], ''))
+
+    result = []
+    for index, segment in enumerate(segments):
+        context = (segment['level_1'], segment['level_2'])
+        if index in candidates and context in body_contexts:
+            segment = dict(segment, speech=candidates[index])
+            if not segment['speech'].strip():
+                continue
+        result.append(segment)
+    return result
+
+
 def segment_blocks(post, initial_timestamp, parse_timestamp, is_question_line):
     """Preserve every body block, with explicit speaker and heading boundaries."""
     segments = []
@@ -223,6 +254,7 @@ def segment_blocks(post, initial_timestamp, parse_timestamp, is_question_line):
     level1 = level2 = ""
     timestamp = initial_timestamp
     review_refs = []
+    heading_prefixes = set()
 
     def flush():
         if content:
@@ -276,7 +308,11 @@ def segment_blocks(post, initial_timestamp, parse_timestamp, is_question_line):
             flush()
             author = None
             level1, level2 = row["level_1"], row["level_2"]
-            # Preserve the heading itself as unattributed content too.
+            # Defer deduplication until we know this section has body content.
+            # Some OCR time markers pass the uppercase/heading heuristic;
+            # they must not be removed by heading cleanup.
+            if text in (level1, level2) and parse_timestamp(text) is None:
+                heading_prefixes.add((level1, level2, text))
         elif speaker:
             flush()
             author, text = speaker
@@ -306,4 +342,4 @@ def segment_blocks(post, initial_timestamp, parse_timestamp, is_question_line):
             pass
     flush()
     warn_review(list(dict.fromkeys(review_refs)))
-    return segments
+    return _remove_repeated_headings(segments, heading_prefixes)
