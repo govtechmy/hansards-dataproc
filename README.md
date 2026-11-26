@@ -94,16 +94,35 @@ One should check `toc_mismatch.txt` after running `tabulate.py` for any discrepa
 - There are 7 files with natural occurences of `*`. 22102019, 24112020, 30112020, 15122020, 08112021, 09122021, 13032023. We escape them with `\*`.
 
 ## On annotations
-- Annotations are usually italicised and wrapped with square brackets [ ].
-- Some occur in-text and some occur on a newline.
-- We parse them as a new row under the "author" `ANNOTATION`.
-- We do not style annotations
+- Keep inline notes in the speech, including notes wrapped across PDF lines.
+- Separate standalone source notes under the author `ANNOTATION`. Do not use
+  italics or a PDF newline alone to decide placement. A named speaker's action
+  (for example `Tuan Ahmad: [Bangun]`) keeps that speaker association.
+- For 2008 onward, PDF extraction retains line coordinates and paragraph evidence
+  in `page_metadata.json`. Re-run extraction and preprocessing to populate these
+  fields in older cached artifacts; standalone reactions without layout evidence
+  stay with surrounding content and emit `AnnotationLayoutWarning` for review.
+- For the pre-2008 legacy pipeline, note boundaries are detected in the original
+  OCR blocks before speaker segmentation. Round brackets and unbracketed sitting
+  events are supported, and speaker context resumes after independent notes.
+  New Textract exports also retain bounding boxes. Existing CSVs without those
+  columns remain supported, with review warnings for ambiguous placements.
+- The same reaction can be inline or standalone. Unknown notes and uncertain
+  layouts are preserved for review rather than classified from their words alone.
+- Standalone annotation rows do not receive speech font styling.
 - Common annotations include
   - _[Tepuk]_
   - _[Ketawa]_
   - _[Dewan ketawa]_
   - _[Dewan riuh]_
   - _[Pembesar suara dimatikan]_
+
+Annotation regressions: `env/bin/python -m pytest -q tests/test_annotation_layout.py`.
+With the report's local evidence folder present, replay the saved January source
+and four legacy OCR samples using
+`env/bin/python experimental/validate_annotation_layout.py`.
+This writes local results under `experimental/annotation-validation/` and does
+not update S3 or the database.
 
 ## On debugging tables
 - Start jupyter notebook and use `debug_tables.ipynb`. Many real examples are there that culminates in the current way of detecting tables.

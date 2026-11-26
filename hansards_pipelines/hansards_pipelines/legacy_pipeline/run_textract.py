@@ -81,7 +81,8 @@ def process_pdf(pdf_key):
         with tempfile.NamedTemporaryFile("w", delete=False, suffix=".csv", encoding="utf-8") as tmp:
             writer = csv.writer(tmp, quoting=csv.QUOTE_MINIMAL)
             writer.writerow([
-                "Page number", "Layout", "Text", "Reading Order", "Confidence"
+                "Page number", "Layout", "Text", "Reading Order", "Confidence",
+                "Left", "Top", "Width", "Height"
             ])
 
             for page in doc.pages:
@@ -98,7 +99,8 @@ def process_pdf(pdf_key):
                         f"{label} {seq}",
                         layout.text,
                         layout.reading_order,
-                        layout.confidence
+                        layout.confidence,
+                        layout.x, layout.y, layout.width, layout.height
                     ])
 
             tmp_path = tmp.name

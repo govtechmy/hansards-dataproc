@@ -1,6 +1,10 @@
 """Interpret existing OCR blocks without performing OCR or accessing services."""
 
 import re
+import math
+from ..annotation_layout import (
+    bracket_spans, note_kind, is_note_only, is_event_narration, paragraph_decision, warn_review,
+)
 
 
 _TRANSLATION = re.compile(
@@ -78,6 +82,97 @@ def attach_source_pages(df):
     return df
 
 
+def _block_paragraph(row, previous):
+    """Use optional OCR geometry; older layout CSVs remain readable."""
+    if previous is None or str(row.get("page")) != str(previous.get("page")):
+        return {}
+    try:
+        left, top, height = (float(row[key]) for key in ("Left", "Top", "Height"))
+        prev_left, prev_top, prev_height = (
+            float(previous[key]) for key in ("Left", "Top", "Height")
+        )
+        if not all(math.isfinite(value) for value in (left, top, height, prev_left, prev_top, prev_height)):
+            return {}
+        if height <= 0 or prev_height <= 0:
+            return {}
+        line_height = prev_height / max(1, len(str(previous.get("text", "")).splitlines()))
+        # Do not infer paragraphs across columns or in reverse reading order.
+        if abs(left - prev_left) > max(height, line_height) * 8 or top < prev_top:
+            return {}
+        new_paragraph = bool(
+            left - prev_left > line_height * 1.2
+            or top - (prev_top + prev_height) > line_height * .8
+        )
+        return {"paragraph_start": True} if new_paragraph else {}
+    except (KeyError, TypeError, ValueError):
+        return {}
+
+
+def _note_units(post):
+    """Separate source note paragraphs before interpreting speaker labels.
+
+    OCR sometimes joins a chairing note and the next speaker into one block.
+    Split only a whole note/block or an event on its own original source line.
+    Never detach a reaction from text on the same source line.
+    """
+    previous = None
+    for index, row in post.iterrows():
+        raw = str(row.get("text", row["clean"]))
+        # Named speakers can have annotation-only turns, such as [Bangun].
+        speaker = split_speaker(row["clean"])
+        body = speaker[1].strip() if speaker else ""
+        annotation_only_turn = is_note_only(body)
+        if speaker and annotation_only_turn and not raw.lstrip().startswith(("[", "(")):
+            yield row, False, None
+            previous = row
+            continue
+        if is_event_narration(raw):
+            yield row, True, None
+            previous = row
+            continue
+        cuts = []
+        review = bool(raw.lstrip().startswith(("[", "("))
+                      and not list(bracket_spans(raw)) and note_kind(raw))
+        for start, stop in bracket_spans(raw):
+            kind = note_kind(raw[start:stop])
+            if not kind:
+                continue
+            prefix, suffix = raw[:start], raw[stop:]
+            line_prefix = prefix.rsplit("\n", 1)[-1]
+            line_suffix = suffix.split("\n", 1)[0]
+            # A following speaker can be glued to the note by OCR.
+            following_speaker = not prefix.strip() and split_speaker(" ".join(suffix.split()))
+            alone = not prefix.strip() and not suffix.strip()
+            own_line = not line_prefix.strip() and not line_suffix.strip(" \t\r.")
+            if not (alone or own_line or following_speaker):
+                continue
+            decision = paragraph_decision(kind, _block_paragraph(row, previous) if alone else {})
+            if decision == "standalone":
+                if not line_suffix.strip(" \t\r."):
+                    # Keep punctuation with its note instead of creating a
+                    # new speech fragment containing only a full stop.
+                    stop += len(line_suffix)
+                cuts.append((start, stop))
+            elif decision == "review":
+                review = True
+        if not cuts:
+            yield row, False, index if review else None
+        else:
+            cursor = 0
+            for start, stop in cuts:
+                for value, annotation in ((raw[cursor:start], False), (raw[start:stop], True)):
+                    if value.strip():
+                        part = row.copy()
+                        part["clean"] = " ".join(value.split())
+                        yield part, annotation, index if review else None
+                cursor = stop
+            if raw[cursor:].strip():
+                part = row.copy()
+                part["clean"] = " ".join(raw[cursor:].split())
+                yield part, False, index if review else None
+        previous = row
+
+
 def segment_blocks(post, initial_timestamp, parse_timestamp, is_question_line):
     """Preserve every body block, with explicit speaker and heading boundaries."""
     segments = []
@@ -88,6 +183,7 @@ def segment_blocks(post, initial_timestamp, parse_timestamp, is_question_line):
     source_ends = []
     level1 = level2 = ""
     timestamp = initial_timestamp
+    review_refs = []
 
     def flush():
         if content:
@@ -105,12 +201,32 @@ def segment_blocks(post, initial_timestamp, parse_timestamp, is_question_line):
         source_starts.clear()
         source_ends.clear()
 
-    for _, row in post.iterrows():
+    for row, annotation, review_ref in _note_units(post):
         text = row["clean"].strip()
         if not text:
             continue
+        if review_ref is not None:
+            review_refs.append(f"OCR row {review_ref}, PDF page {row.get('page')}")
+        if annotation:
+            flush()
+            saved_author = author
+            author = "ANNOTATION"
+            content.append(text)
+            for field, values in (("source_page_start", source_starts), ("source_page_end", source_ends)):
+                try:
+                    values.append(int(float(row.get(field))))
+                except (TypeError, ValueError, OverflowError):
+                    values.append(None)
+            try:
+                pages.append(int(float(row.get("page"))))
+            except (TypeError, ValueError, OverflowError):
+                pass
+            flush()
+            author = saved_author
+            continue
         speaker = split_speaker(text)
-        heading = (row["is_upper"] or "SECTION_HEADER" in str(row.get("layout", "")).upper()) and speaker is None
+        heading = ((row["is_upper"] or "SECTION_HEADER" in str(row.get("layout", "")).upper())
+                   and speaker is None and not is_note_only(text))
         if row["is_timestamp"]:
             new_timestamp = parse_timestamp(text)
             if new_timestamp:
@@ -129,7 +245,7 @@ def segment_blocks(post, initial_timestamp, parse_timestamp, is_question_line):
             flush()
             author = None
         # A procedural OCR list is not part of the preceding speaker's speech.
-        elif "LIST" in str(row.get("layout", "")).upper() or re.match(
+        elif (review_ref is None and "LIST" in str(row.get("layout", "")).upper()) or re.match(
             r"^(?:(?:Whereupon|Thereupon)\b|The following Members\b|"
             r"(?:The (?:President|Speaker|Members|House)\b).*?"
             r"\b(?:took|subscribed|adjourned|sat down)\b|(?:Senate|House) adjourned\b)",
@@ -150,4 +266,5 @@ def segment_blocks(post, initial_timestamp, parse_timestamp, is_question_line):
         except (TypeError, ValueError, OverflowError):
             pass
     flush()
+    warn_review(list(dict.fromkeys(review_refs)))
     return segments

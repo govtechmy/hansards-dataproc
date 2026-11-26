@@ -16,6 +16,7 @@ import json
 import pandas as pd
 import pdfplumber
 from tqdm import tqdm
+from .annotation_layout import pdf_line_metadata
 from pathlib import Path
 from hansards_pipelines.config import DEFAULT_DATA_DIR, BASE_PATH
 
@@ -135,10 +136,7 @@ def parse_hansard(hansard_date, house, source_dir=DEFAULT_DATA_DIR, file_content
             text += page_text  # add newline to separate pages
             # Keep physical PDF pages aligned with plaintext lines.  Printed
             # Hansard page numbers are resolved later from page headers.
-            page_metadata.extend(
-                {"pdf_page": idx + 1, "source_page": None}
-                for _ in page_text.splitlines(keepends=True)
-            )
+            page_metadata.extend(pdf_line_metadata(page, page_text, idx + 1))
             if hansard_date == "09072019" or (
                 house == "kkdr" and hansard_date == "15112023"
             ):

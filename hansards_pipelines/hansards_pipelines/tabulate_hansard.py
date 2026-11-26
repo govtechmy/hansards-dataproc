@@ -10,6 +10,7 @@ from thefuzz import process
 from thefuzz import fuzz
 from datetime import datetime
 from .utils.text_utils import is_number_only
+from .annotation_layout import annotation_line_groups, is_note_only, warn_review
 from hansards_pipelines.legacy_pipeline.constants import NON_SPEAKER_VERBS
 
 _NON_SPEAKER_VERB_PATTERN = re.compile(
@@ -135,13 +136,6 @@ def category_probability(text, categories, check_upper_lower=True, scorer=None):
             text, categories, scorer=scorer
         )
     return match_score / 100
-
-def is_procedural_annotation(line: str) -> bool:
-    return bool(re.match(
-        r"^\[(Soalan|Mesyuarat|Dewan|Ditangguhkan|Tangguh|Usul)",
-        line.strip(),
-        re.IGNORECASE
-    ))
 
 
 def _contains_non_speaker_verb(text: str) -> bool:
@@ -576,126 +570,29 @@ def add_formatting(text, bold, italics):
         result += markdownify(current_text, current_bold == "1", current_italics == "1")
     return result
 
-def _is_majority_italic_bracket(text_line, italics_line, start_idx):
-    """
-    Returns True if the bracket segment is mostly italic.
-    Used to distinguish real procedural annotations
-    from inline legal references like [Akta 4].
-    """
-    end_idx = text_line.find("]", start_idx)
-    if end_idx == -1:
-        return False
-
-    segment_text = text_line[start_idx:end_idx + 1]
-    segment_italics = italics_line[start_idx:end_idx + 1]
-
-    # Count non-space characters only
-    total_chars = sum(
-        1 for i in range(len(segment_text))
-        if segment_text[i] != " "
-    )
-
-    if total_chars == 0:
-        return False
-
-    italic_chars = sum(
-        1 for i in range(len(segment_text))
-        if segment_text[i] != " " and segment_italics[i] == "1"
-    )
-
-    ratio = italic_chars / total_chars
-
-    return ratio > 0.8  # threshold for "mostly italic"
-
-
 def put_annotations_on_new_line(text, bold, italics, page_metadata=None):
-    # assumptions
-    # 1. [ does not end on a line
-    for row in text:
-        assert row.strip()[-1] != "[", f"Error [ on end of line: {row}"
-    row_id = 0
-    num_unclosed_brackets = 0
-    while row_id < len(text):
-        letter_id = 0
-        while letter_id < len(text[row_id]):
-            if num_unclosed_brackets > 0:
-                # we are currently in an annotation
-                if text[row_id][letter_id] == "]":
-                    num_unclosed_brackets -= 1
-                    if num_unclosed_brackets == 0:
-                        # end of annotation
-                        if text[row_id][: letter_id + 1] == "\n":
-                            assert letter_id + 1 == len(text[row_id])
-                            continue
-                        text[row_id] = (
-                            text[row_id][: letter_id + 1]
-                            + "\n"
-                            + text[row_id][letter_id + 1 :]
-                        )
-                        bold[row_id] = (
-                            bold[row_id][: letter_id + 1]
-                            + "\n"
-                            + bold[row_id][letter_id + 1 :]
-                        )
-                        italics[row_id] = (
-                            italics[row_id][: letter_id + 1]
-                            + "\n"
-                            + italics[row_id][letter_id + 1 :]
-                        )
-                elif text[row_id][letter_id] == "[":
-                    num_unclosed_brackets += 1
-            elif (
-                text[row_id][letter_id] == "["
-                and _is_majority_italic_bracket(
-                    text[row_id],
-                    italics[row_id],
-                    letter_id
-                )
-            ):
+    """Retain source lines; mark standalone notes instead of splitting italics.
 
-                # annotation detected
-                num_unclosed_brackets = 1
-                if letter_id - 1 >= 0 and text[row_id][letter_id - 1] != "\n":
-                    # split to newline
-                    text[row_id] = (
-                        text[row_id][:letter_id] + "\n" + text[row_id][letter_id:]
-                    )
-                    bold[row_id] = (
-                        bold[row_id][:letter_id] + "\n" + bold[row_id][letter_id:]
-                    )
-                    italics[row_id] = (
-                        italics[row_id][:letter_id] + "\n" + italics[row_id][letter_id:]
-                    )
-                    letter_id += 1
-            letter_id += 1
-        row_id += 1
-    if page_metadata is None:
-        text = [x.strip() + "\n" for x in ("".join(text)).split("\n") if x.strip()]
-        bold = [x.strip() + "\n" for x in ("".join(bold)).split("\n") if x.strip()]
-        italics = [x.strip() + "\n" for x in ("".join(italics)).split("\n") if x.strip()]
-        return text, bold, italics
+    The historical function name is retained for callers. Inline brackets,
+    including wrapped brackets, are never moved into their own rows here.
+    """
+    supplied_metadata = page_metadata is not None
+    if page_metadata is not None and len(page_metadata) != len(text):
+        raise ValueError("Annotation text and page metadata must have the same length")
+    pages = [dict(meta or {}) for meta in (page_metadata or [None] * len(text))]
+    for meta in pages:
+        meta.pop("annotation_line_count", None)
+        meta.pop("annotation_review", None)
+    groups, review = annotation_line_groups(text, pages)
+    for index, count in groups.items():
+        pages[index]["annotation_line_count"] = count
+    for index in review:
+        pages[index]["annotation_review"] = "paragraph placement uncertain"
+    warn_review([f"line {index + 1}, PDF page {pages[index].get('pdf_page')}" for index in review])
+    if supplied_metadata:
+        return text, bold, italics, pages
+    return text, bold, italics
 
-    output_text = []
-    output_bold = []
-    output_italics = []
-    output_pages = []
-    for text_row, bold_row, italics_row, metadata in zip(
-        text, bold, italics, page_metadata
-    ):
-        text_parts = text_row.split("\n")
-        bold_parts = bold_row.split("\n")
-        italics_parts = italics_row.split("\n")
-        assert len(text_parts) == len(bold_parts) == len(italics_parts)
-        for text_part, bold_part, italics_part in zip(
-            text_parts, bold_parts, italics_parts
-        ):
-            if not text_part.strip():
-                continue
-            output_text.append(text_part.strip() + "\n")
-            output_bold.append(bold_part.strip() + "\n")
-            output_italics.append(italics_part.strip() + "\n")
-            output_pages.append(metadata.copy() if metadata else None)
-    return output_text, output_bold, output_italics, output_pages
 
 
 def format_attendance(text):
@@ -801,6 +698,10 @@ def tabulate(
             bold = f.readlines()
         with open(f"{input_dir}italics.txt", "r") as f:
             italics = f.readlines()
+        metadata_path = f"{input_dir}page_metadata.json"
+        if page_metadata is None and os.path.exists(metadata_path):
+            with open(metadata_path) as f:
+                page_metadata = json.load(f)
 
     assert (
         len(text) == len(bold) == len(italics)
@@ -941,40 +842,18 @@ def tabulate(
 
         line = text[row_id].strip()
 
-        if (
-            line.startswith("[")
-            and line.endswith("]")
-            and _is_majority_italic_bracket(text[row_id], italics[row_id], 0)
-            and is_procedural_annotation(line)
-        ):
-
-            if text[row_id].startswith("[Dewan ditangguhkan") or text[row_id].startswith("[Mesyuarat ditangguhkan"):
+        annotation_count = (page_metadata[row_id] or {}).get("annotation_line_count", 0)
+        if annotation_count:
+            if re.match(r"^[\[(]?(?:Dewan|Mesyuarat) ditangguhkan", line, re.I):
                 dewan_tangguh = True
 
-            # Flush previous speech if exists
             if current["speech"].strip():
                 speeches += insert_speech(current)
                 current["speech"] = ""
                 current["speech_bold"] = ""
                 current["speech_italics"] = ""
 
-            # Build full annotation (handle multi-line brackets)
-            annotation_text = text[row_id]
-
-            add_idx = 1
-            num_unclosed_brackets = annotation_text.count("[") - annotation_text.count("]")
-
-            while add_idx + row_id < num_rows and num_unclosed_brackets > 0:
-                annotation_text += text[row_id + add_idx]
-                num_unclosed_brackets += (
-                    text[row_id + add_idx].count("[")
-                    - text[row_id + add_idx].count("]")
-                )
-
-                if text[row_id + add_idx].startswith("[Dewan ditangguhkan") or text[row_id + add_idx].startswith("[Mesyuarat ditangguhkan"):
-                    dewan_tangguh = True
-
-                add_idx += 1
+            add_idx = annotation_count
 
             # Insert annotations page by page without touching speaker state.
             # A multi-line bracket can itself cross a PDF page boundary.
@@ -1012,6 +891,15 @@ def tabulate(
             # DO NOT modify current["author"]
             # DO NOT reset level context
 
+            continue
+
+        # Notes retained inline must not become headings just because their
+        # source font is bold or their words are uppercase.
+        if is_note_only(line):
+            current["speech"] += text[row_id]
+            current["speech_bold"] += bold[row_id]
+            current["speech_italics"] += italics[row_id]
+            track_speech_page(current, page_metadata[row_id])
             continue
 
         # ALWAYS try detect speaker FIRST

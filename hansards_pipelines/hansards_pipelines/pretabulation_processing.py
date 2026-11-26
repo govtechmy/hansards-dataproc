@@ -274,6 +274,10 @@ def preprocess(
         # load tables from file
         with open(f"{input_dir}tables.json", "r") as f:
             wrapped_tables_of_page = json.load(f)
+        metadata_path = f"{input_dir}page_metadata.json"
+        if page_metadata is None and os.path.exists(metadata_path):
+            with open(metadata_path) as f:
+                page_metadata = json.load(f)
 
     assert (
         len(text) == len(bold) == len(italics)
@@ -387,6 +391,8 @@ def preprocess(
             f.writelines(bold)
         with open(f"{output_dir_path}italics.txt", "w") as f:
             f.writelines(italics)
+        with open(f"{output_dir_path}page_metadata.json", "w") as f:
+            json.dump(page_metadata, f, indent=2)
     else:
         return text, bold, italics, page_metadata
 

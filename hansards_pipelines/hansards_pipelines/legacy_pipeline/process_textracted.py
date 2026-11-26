@@ -27,6 +27,7 @@ from botocore.config import Config
 from ..settings import S3_TEXTRACT_BUCKET, DEV_API_URL, HANSARD_DB_URL, S3_PUBLIC_BUCKET, S3_DATAPROC_BUCKET
 from ..direct_sitting_ingest import ingest_sitting_to_db
 from hansards_pipelines.legacy_pipeline.speech_blocks import attach_source_pages, split_speaker, segment_blocks
+from hansards_pipelines.annotation_layout import is_note_only
 
 import boto3
 import botocore
@@ -291,7 +292,8 @@ def process_layout(df, toc_df, filename=None, logger=None):
             continue
         
         norm = re.sub(r"[^\w\s]", '', text).upper().strip()
-        if (row['is_upper'] or 'SECTION_HEADER' in str(row['layout']).upper()) and not row['is_speaker']:
+        if ((row['is_upper'] or 'SECTION_HEADER' in str(row['layout']).upper())
+                and not row['is_speaker'] and not is_note_only(text)):
             print(f"\nProcessing line [{idx}]: {text}")
             print(f"   Normalized: {norm}")
 
