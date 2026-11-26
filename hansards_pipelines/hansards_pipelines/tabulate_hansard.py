@@ -12,6 +12,7 @@ from datetime import datetime
 from .utils.text_utils import is_number_only
 from .annotation_layout import annotation_line_groups, is_note_only, warn_review
 from hansards_pipelines.legacy_pipeline.constants import NON_SPEAKER_VERBS
+from hansards_pipelines.legacy_pipeline.speech_blocks import split_speaker
 
 _NON_SPEAKER_VERB_PATTERN = re.compile(
     r'(?<!\w)(?:' + '|'.join(re.escape(word) for word in NON_SPEAKER_VERBS) + r')(?!\w)',
@@ -141,6 +142,22 @@ def category_probability(text, categories, check_upper_lower=True, scorer=None):
 def _contains_non_speaker_verb(text: str) -> bool:
     return bool(_NON_SPEAKER_VERB_PATTERN.search(text))
 
+def _plausible_speaker_label(label):
+    """Keep inline actions and dates out of missing-colon speaker repair."""
+    label = label.strip()
+    if label.startswith("Yang ") and not re.match(
+        r"^Yang (?:di[- ]|Berhormat\b|Amat Berhormat\b|Berbahagia\b|Mulia\b)", label
+    ):
+        return False
+    validation_label = re.sub(r"\bdan\b", "and", label).replace(",", " ")
+    if split_speaker(validation_label + ":") is not None:
+        return True
+    if re.match(r"^(?:YM|Ustaz|Kapten|Ir\.|Datu|Cik|Laksamana|Mejar|Komander|"
+                r"Seri Paduka|Hajah|Brig|Prof\.)\b", label):
+        return split_speaker("Tuan " + validation_label + ":") is not None
+    return False
+
+
 def get_author_and_speech(text, bold, italics, house, warn="", is_pipeline=False):
     author = ""
     speech = ""
@@ -166,7 +183,7 @@ def get_author_and_speech(text, bold, italics, house, warn="", is_pipeline=False
         # if re.match(r"^\d+\.", line) and re.search(r"\b(minta|meminta|bertanya)\b", line, re.IGNORECASE):
         #     return "", "", "", "", ""
 
-        if (
+        if _plausible_speaker_label(candidate) and (
             # strongest signal: has constituency
             ("[" in candidate and "]" in candidate)
             and not _contains_non_speaker_verb(candidate) # e.g [Akta 172]
@@ -338,6 +355,7 @@ def get_author_and_speech(text, bold, italics, house, warn="", is_pipeline=False
         and not text.endswith("]")
         and not text.rsplit("]", maxsplit=1)[1].strip().startswith(":")
         and text.count("[") == text.count("]")
+        and _plausible_speaker_label(text[:text.rfind("]") + 1])
     ):
         # some of the unparsed authors are due to a missing colon :
         edit_idx = text.rfind("]")
