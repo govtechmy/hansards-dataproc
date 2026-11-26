@@ -10,7 +10,7 @@ from ..annotation_layout import (
 _TRANSLATION = re.compile(
     r"\s*\((?:translated\s+from\s+[^)]+|terjemahan[^)]*)\)", re.I
 )
-_CONNECTORS = {"the", "of", "for", "and", "di", "yang", "bin", "binti", "a/l", "a/p"}
+_CONNECTORS = {"the", "of", "for", "and", "dan", "di", "yang", "bin", "binti", "a/l", "a/p"}
 _LABEL_START = re.compile(
     r"^(?:(?:Mr|Mrs|Ms|Dr|Sir|Lord|Dato|Datuk|Datin|Tun|Tunku|Tengku|Raja|Nik|"
     r"Tan|Sri|Tuan|Puan|Encik|Enche|Haji|Hajah|Lt|Kol|Y\.B|Yang|Timbalan|"
@@ -108,6 +108,44 @@ def _block_paragraph(row, previous):
         return {}
 
 
+def split_ocr_speaker_blocks(post):
+    """Split validated speaker turns on raw OCR lines before flattening text.
+
+    A label can wrap across up to four source lines. Colons inside ordinary
+    prose or quoted labels do not qualify as a source-line speaker prefix.
+    """
+    records = []
+    for _, row in post.iterrows():
+        raw = str(row.get('text', row['clean']))
+        lines = raw.splitlines(keepends=True)
+        starts = [0]
+        label_end = 0
+        for index, line in enumerate(lines):
+            if index < label_end:
+                continue
+            if not _LABEL_START.match(line.strip()):
+                continue
+            for end in range(index + 1, min(index + 4, len(lines)) + 1):
+                candidate = ' '.join(''.join(lines[index:end]).split())
+                if ':' not in candidate:
+                    continue
+                if split_speaker(candidate):
+                    starts.append(index)
+                    label_end = end
+                break
+        starts = sorted(set(starts))
+        if len(starts) == 1:
+            records.append(row.to_dict())
+            continue
+        for start, end in zip(starts, starts[1:] + [len(lines)]):
+            part = row.to_dict()
+            part['text'] = ''.join(lines[start:end])
+            part['clean'] = ' '.join(part['text'].split())
+            part['is_upper'] = sum(c.isupper() for c in part['clean']) > sum(c.islower() for c in part['clean'])
+            records.append(part)
+    return post.__class__(records, columns=post.columns).reset_index(drop=True)
+
+
 def _note_units(post):
     """Separate source note paragraphs before interpreting speaker labels.
 
@@ -115,6 +153,7 @@ def _note_units(post):
     Split only a whole note/block or an event on its own original source line.
     Never detach a reaction from text on the same source line.
     """
+    post = split_ocr_speaker_blocks(post)
     previous = None
     for index, row in post.iterrows():
         raw = str(row.get("text", row["clean"]))

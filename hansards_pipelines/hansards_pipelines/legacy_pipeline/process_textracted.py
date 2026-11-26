@@ -28,6 +28,7 @@ from ..settings import S3_TEXTRACT_BUCKET, DEV_API_URL, HANSARD_DB_URL, S3_PUBLI
 from ..direct_sitting_ingest import ingest_sitting_to_db
 from hansards_pipelines.legacy_pipeline.speech_blocks import attach_source_pages, split_speaker, segment_blocks
 from hansards_pipelines.annotation_layout import is_note_only
+from .opening import find_proceedings_start, body_blocks
 
 import boto3
 import botocore
@@ -100,13 +101,24 @@ def build_textracted_key(prefix: str, filename: str) -> str:
 
 def parse_timestamp(txt):
 
-    if txt.startswith(("DN.", "DR.")):  # DN.28.11.2002
+    if re.match(r'^\s*(?:\d+\s+)?(?:DN|DR|KKDR|MMS)[ .]*\d', txt):
+        # Running document dates such as "DR 3.12.2007" are not 3:12 p.m.
         return None
     
     m = ts_search.search(txt)
     if not m:
-        return None
-    h, mnt = int(m.group(1)), int(m.group(2))
+        # Early English records use e.g. "Ten o'clock a.m." or "10 a.m.".
+        english_time = re.search(
+            r"\b(\d{1,2}|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve)"
+            r"\s*(?:o['’]clock\s*)?(a\.?m\.?|p\.?m\.?)\b", txt, re.I,
+        )
+        if not english_time:
+            return None
+        words = ['one','two','three','four','five','six','seven','eight','nine','ten','eleven','twelve']
+        hour = english_time.group(1).lower()
+        h, mnt = (int(hour) if hour.isdigit() else words.index(hour) + 1), 0
+    else:
+        h, mnt = int(m.group(1)), int(m.group(2))
     p = period.search(txt)
     per = p.group(1).lower() if p else ''
 
@@ -149,12 +161,7 @@ def extract_toc_block(df, filename=None, fallback_max_lines=30, logger=None):
         doa_keywords.insert(0, DOA_KEYWORDS_OVERRIDE[filename])
         logger.info(f"Overriding DOA keywords for {filename}: using '{DOA_KEYWORDS_OVERRIDE[filename]}'")
 
-    for keyword in doa_keywords:
-        match = df[df['text'].str.contains(fr'\b{re.escape(keyword)}\b', case=True, na=False)]
-        if not match.empty:
-            doa_idx = match.index.min()
-            logger.info(f"Found DOA keyword: '{keyword}' at line {doa_idx} to extract TOC block")
-            break
+    doa_idx = find_proceedings_start(df, doa_keywords)
 
     if pd.isna(doa_idx):
         logger.error("No DOA-like keyword found for TOC extraction. Skipping processing. Action: Investigate the PDF & add a relevant keyword in DOA_KEYWORDS or DOA_KEYWORDS_OVERRIDE list.")
@@ -238,12 +245,7 @@ def process_layout(df, toc_df, filename=None, logger=None):
         logger.info(f"Overriding DOA keywords for {filename}: using '{DOA_KEYWORDS_OVERRIDE[filename]}'")
 
     doai = pd.NA
-    for keyword in doa_keywords:
-        match = df[df['text'].str.contains(fr'\b{re.escape(keyword)}\b', case=True, na=False)]
-        if not match.empty:
-            doai = match.index.min()
-            logger.info(f"Found DOA keyword: '{keyword}' at line {doai} to start speech processing")
-            break
+    doai = find_proceedings_start(df, doa_keywords)
 
     if pd.isna(doai):
         logger.error("No DOA-like keyword found to start speech processing. Skipping processing. Action: Investigate the PDF & add a relevant keyword in DOA_KEYWORDS or DOA_KEYWORDS_OVERRIDE list.")
@@ -254,7 +256,10 @@ def process_layout(df, toc_df, filename=None, logger=None):
 
     # Filter all rows that actually parse into a valid time
     valid_ts_rows = pre[pre['clean'].apply(lambda x: parse_timestamp(x) is not None)]
-    init_ts_row = valid_ts_rows.head(1)
+    opening_times = valid_ts_rows[valid_ts_rows['clean'].str.contains(
+        r'Mesyuarat\s+dimulakan|The\s+.{0,50}\bmet\s+at', case=False, regex=True,
+    )]
+    init_ts_row = (opening_times if not opening_times.empty else valid_ts_rows).head(1)
 
     ts_init = None
     if not init_ts_row.empty:
@@ -265,7 +270,9 @@ def process_layout(df, toc_df, filename=None, logger=None):
     else:
         print("⚠️ No initial timestamp found before DOA keyword.")
 
-    post = df.loc[doai:].copy()
+    post = body_blocks(df.loc[doai:])
+    post['is_timestamp'] = post['clean'].str.match(ts_full)
+    post['is_speaker'] = post['clean'].apply(lambda text: split_speaker(text) is not None)
     exclude = (
         (post['layout'].str.contains('Footer', case=False) |
          (post['layout'].str.contains('Header', case=False) &
@@ -409,8 +416,9 @@ def prepare_db_payload(df_speech, prefix, date_str):
     if df_speech["timestamp"].isna().any():
         print("Problem: Found a null timestamp. Fix it before proceed.")
 
-    # Filter out speeches with empty token list 
-    df_speech = df_speech[df_speech["speech_tokens"].apply(lambda tokens: bool(tokens))]
+    # NLP tokens support search; an empty list must not delete real transcript
+    # turns such as "Ya." or a named [Bangun] action.
+    df_speech = df_speech[df_speech["speech"].fillna("").astype(str).str.strip().ne("")]
 
     for col in ["source_page_start", "source_page_end", "pdf_page_start", "pdf_page_end"]:
         if col not in df_speech.columns:

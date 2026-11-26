@@ -127,6 +127,15 @@ existing parser remains in control. It does not change general speech layout or
 the legacy pipeline. Reprocess from PDF extraction/pretabulation to retain source
 blank-line metadata. Cached line coordinates can also recover larger gaps.
 Regression checks: `env/bin/python -m pytest -q tests/test_rukun_negara.py`.
+
+Legacy transcript integrity: opening keywords are resolved against actual
+opening context so contents-page matches do not start proceedings. Chair events
+inside OCR header blocks are retained. Speaker changes are detected on original
+OCR lines, including wrapped labels and Malay titles containing `dan`.
+Nonempty speech/action rows remain in the database payload even when search
+tokenisation returns an empty list. Replay saved OCR (without rerunning Textract)
+to apply these fixes. Checks: `env/bin/python -m pytest -q tests/test_legacy_transcript_repairs.py`.
+
 With the report's local evidence folder present, replay the saved January source
 and four legacy OCR samples using
 `env/bin/python experimental/validate_annotation_layout.py`.
