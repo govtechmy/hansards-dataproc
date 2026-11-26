@@ -2,6 +2,7 @@ import re
 import logging
 from .token_utils import punctuation_or_symbol_only
 from .additional_stopwords import ADDITIONAL_STOPWORDS
+from ..rukun_negara import TITLE as RUKUN_TITLE, normalized_title
 import pandas as pd
 from datetime import datetime
 
@@ -750,6 +751,14 @@ def process_tabulated(df_all: pd.DataFrame, house: str):
     df_all["length"] = df_all.speech.str.split().str.len()
     df_all["date"] = pd.to_datetime(df_all.date)
     df_all["proc_speech"] = df_all.speech.map(_process_line_breaks)
+    # The bounded Rukun Negara parser has already distinguished paragraph and
+    # principle breaks from PDF wrapping. Generic prose cleanup must not undo
+    # that structure before proc_speech is written to the database.
+    rukun = (
+        df_all.level_1.fillna("").astype(str).map(normalized_title).eq(normalized_title(RUKUN_TITLE))
+        & df_all["date"].dt.year.ge(2008)
+    )
+    df_all.loc[rukun, "proc_speech"] = df_all.loc[rukun, "speech"]
 
     df_all.level_1 = df_all.level_1.fillna("")
     df_all.level_2 = df_all.level_2.fillna("")

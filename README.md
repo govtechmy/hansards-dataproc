@@ -126,7 +126,11 @@ later recognised table-of-contents section title; without that boundary the
 existing parser remains in control. It does not change general speech layout or
 the legacy pipeline. Reprocess from PDF extraction/pretabulation to retain source
 blank-line metadata. Cached line coordinates can also recover larger gaps.
-Regression checks: `env/bin/python -m pytest -q tests/test_rukun_negara.py`.
+Post-tabulation payload cleanup preserves this section's Markdown verbatim;
+generic speech line-break cleanup must not collapse the retained spacing.
+If the tabulated CSV already contains the correct spacing, rerun from
+`prepare_db_payload` through database insertion; PDF extraction is unnecessary.
+Regression checks: `env/bin/python -m pytest -q tests/test_rukun_negara.py tests/test_rukun_ingestion_formatting.py`.
 
 Legacy transcript integrity: opening keywords are resolved against actual
 opening context so contents-page matches do not start proceedings. Chair events
