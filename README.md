@@ -132,6 +132,14 @@ If the tabulated CSV already contains the correct spacing, rerun from
 `prepare_db_payload` through database insertion; PDF extraction is unnecessary.
 Regression checks: `env/bin/python -m pytest -q tests/test_rukun_negara.py tests/test_rukun_ingestion_formatting.py`.
 
+Decimal numbered lists: payload cleanup recognises consecutive source-line
+markers such as `1.` / `2.` or `13.` / `14.`, preserves item boundaries, and
+joins PDF wraps inside each item (including `(Pindaan)` continuations).
+Isolated numbers, decimal values, and years keep the existing cleanup rules.
+Existing correctly extracted CSVs only need reprocessing from `prepare_db_payload`
+through database insertion. The frontend must separately retain ordered-list
+start numbers. Checks: `env/bin/python -m pytest -q tests/test_numbered_speech_formatting.py`.
+
 Legacy transcript integrity: opening keywords are resolved against actual
 opening context so contents-page matches do not start proceedings. Chair events
 inside OCR header blocks are retained. Speaker changes are detected on original

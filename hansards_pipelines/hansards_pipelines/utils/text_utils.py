@@ -665,8 +665,38 @@ def _process_line_breaks(speech):
 
     lines = speech.split("\n")
     processed_lines = []
+    # Confirm decimal list markers with a consecutive neighbour. This excludes
+    # years, decimals, and isolated numbers in prose without guessing PDF wraps.
+    candidates = []
+    for index, line in enumerate(lines):
+        match = re.match(r"^\s*(\d{1,3})\.\s+\S", line)
+        if match:
+            candidates.append((index, int(match.group(1))))
+    numbered_starts = set()
+    for (left, number), (right, following) in zip(candidates, candidates[1:]):
+        if following == number + 1:
+            numbered_starts.update((left, right))
+    in_numbered_item = False
 
     for i in range(len(lines)):
+        if i in numbered_starts:
+            in_numbered_item = True
+        next_numbered = i + 1 in numbered_starts
+
+        if in_numbered_item:
+            # Parenthesised continuation text such as '(Pindaan)' belongs to
+            # this item, rather than being a new bullet. Join PDF wraps until
+            # the item terminator or the next confirmed numbered item.
+            item_end = bool(re.search(r"(?:[;.]|;\s+(?:dan|atau))\s*$", lines[i]))
+            if next_numbered or item_end or not lines[i].strip() or i == len(lines) - 1:
+                processed_lines.append(lines[i].strip())
+                if i != len(lines) - 1:
+                    processed_lines.append("\n\n")
+                in_numbered_item = False
+            else:
+                processed_lines.append(lines[i].strip() + " ")
+            continue
+
         # Check if next line starts with bullet point pattern eg (a), (b)
         is_next_bullet = i < len(lines) - 1 and lines[i + 1].startswith(("(", ") "))
 
@@ -682,6 +712,7 @@ def _process_line_breaks(speech):
             i == len(lines) - 1
             or lines[i].endswith(tuple(punctuation))
             or is_next_bullet
+            or next_numbered
         ):
             processed_lines.append(lines[i])
             if i != len(lines) - 1:  # Don't add a newline after the last line
