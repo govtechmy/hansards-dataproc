@@ -350,6 +350,7 @@ def preprocess(
 
     # Done with table parsing
     expected_page_num = -1
+    source_blank_rows = {index for index, row in enumerate(text) if not row.strip()}
     for row_id in range(len(text)):
         # discard header rows
         if is_header(text[row_id]):
@@ -376,6 +377,22 @@ def preprocess(
             text[row_id] = "\n"
             bold[row_id] = "\n"
             italics[row_id] = "\n"
+
+    # Retain source paragraph-gap evidence before blank rows are discarded.
+    # This metadata is consumed only by explicitly supported formatted sections.
+    blank_before = False
+    previous_page = None
+    for index, (row, meta) in enumerate(zip(text, page_metadata)):
+        meta.pop("source_blank_before", None)
+        if meta.get("pdf_page") != previous_page:
+            blank_before = False
+        previous_page = meta.get("pdf_page")
+        if row == "\n":
+            blank_before |= index in source_blank_rows
+        else:
+            if blank_before:
+                meta["source_blank_before"] = True
+            blank_before = False
 
     # delete excessive newlines
     retained = [idx for idx, row in enumerate(text) if row != "\n"]

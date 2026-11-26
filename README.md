@@ -118,6 +118,15 @@ One should check `toc_mismatch.txt` after running `tabulate.py` for any discrepa
   - _[Pembesar suara dimatikan]_
 
 Annotation regressions: `env/bin/python -m pytest -q tests/test_annotation_layout.py`.
+
+For modern sittings (2008 onward), `LAFAZ IKRAR RUKUN NEGARA` has bounded
+formatting: source paragraph gaps and separate principle lines are retained in
+Markdown, and the principles cannot become subheadings. The rule requires a
+later recognised table-of-contents section title; without that boundary the
+existing parser remains in control. It does not change general speech layout or
+the legacy pipeline. Reprocess from PDF extraction/pretabulation to retain source
+blank-line metadata. Cached line coordinates can also recover larger gaps.
+Regression checks: `env/bin/python -m pytest -q tests/test_rukun_negara.py`.
 With the report's local evidence folder present, replay the saved January source
 and four legacy OCR samples using
 `env/bin/python experimental/validate_annotation_layout.py`.

@@ -13,6 +13,7 @@ from .utils.text_utils import is_number_only
 from .annotation_layout import annotation_line_groups, is_note_only, warn_review
 from hansards_pipelines.legacy_pipeline.constants import NON_SPEAKER_VERBS
 from hansards_pipelines.legacy_pipeline.speech_blocks import split_speaker
+from .rukun_negara import TITLE as RUKUN_TITLE, section_spans, formatted_lines
 
 _NON_SPEAKER_VERB_PATTERN = re.compile(
     r'(?<!\w)(?:' + '|'.join(re.escape(word) for word in NON_SPEAKER_VERBS) + r')(?!\w)',
@@ -810,6 +811,7 @@ def tabulate(
     text, bold, italics, page_metadata = put_annotations_on_new_line(
         text, bold, italics, page_metadata
     )
+    rukun_sections = section_spans(text, bold, categories) if int(year) >= 2008 else {}
 
     doa_seen = False
     num_rows = len(text)
@@ -845,6 +847,34 @@ def tabulate(
             # ignore rows before DOA except for the starting time
             if "Mesyuarat dimulakan" in text[row_id]:
                 current["timestamp"] = text[row_id].split("pukul")[-1].strip()
+            continue
+
+        if row_id in rukun_sections:
+            content_start, section_end, boundary = rukun_sections[row_id]
+            speeches += insert_speech(current)
+            current.update(author="ANNOTATION", level_1=RUKUN_TITLE,
+                           level_2="", level_3="", speech="",
+                           speech_bold="", speech_italics="")
+            # Keep physical-page row boundaries, as with ordinary speeches.
+            start = content_start
+            while start < section_end:
+                end = start + 1
+                while end < section_end and same_pdf_page(page_metadata[start], page_metadata[end]):
+                    end += 1
+                current["speech"] = formatted_lines(
+                    text[start:end], bold[start:end], italics[start:end],
+                    page_metadata[start:end], add_formatting,
+                )
+                for meta in page_metadata[start:end]:
+                    track_speech_page(current, meta)
+                speeches += insert_speech(current)
+                start = end
+            # Consume the confirmed next title and establish normal context.
+            # It must not be swallowed by the pledge or classified as level_2.
+            boundary_end, boundary_title = boundary
+            current.update(author="", level_1=boundary_title, level_2="", level_3="",
+                           speech="", speech_bold="", speech_italics="")
+            row_id = boundary_end - 1
             continue
 
         # A DB speech row must contain content from only one physical PDF page.
