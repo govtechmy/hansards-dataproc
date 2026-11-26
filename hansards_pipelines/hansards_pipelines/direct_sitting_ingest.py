@@ -1,4 +1,5 @@
 import json
+import pandas as pd
 from hansards_pipelines.scrape_mms_parlimen_penggal import MMS_HOUSE, validate_assignment
 from typing import Dict, List, Optional
 from hansards_pipelines.utils.author_history_utils import UNVERIFIED_DERIVED
@@ -105,6 +106,12 @@ def ingest_sitting_to_db(payload: Dict, conn) -> None:
         if isinstance(speech_data_raw, str)
         else speech_data_raw
     )
+    # DataFrame records may carry NaN for unmatched authors/annotations.
+    # Normalize before both JSON serialization and AuthorHistory resolution.
+    flat_speeches = [
+        {**row, "speaker": None if pd.isna(row.get("speaker")) else int(row["speaker"])}
+        for row in flat_speeches
+    ]
 
     nested_speech_json = json.dumps(
         build_nested_speech_json(flat_speeches),

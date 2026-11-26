@@ -424,6 +424,7 @@ def prepare_db_payload(df_speech, prefix, date_str):
     ]].rename(columns={"author_id": "speaker"}).to_dict(orient="records")
     page_fields = ("source_page_start", "source_page_end", "pdf_page_start", "pdf_page_end")
     for row in speech_data:
+        row["speaker"] = int(row["speaker"]) if pd.notna(row["speaker"]) else None
         for field in page_fields:
             row[field] = int(row[field]) if pd.notna(row[field]) else None
 
