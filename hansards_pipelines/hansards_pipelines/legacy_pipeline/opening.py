@@ -1,7 +1,7 @@
 """Locate actual proceedings and retain body events mislabelled as headers."""
 import re
 
-from ..annotation_layout import bracket_spans, note_kind
+from ..annotation_layout import bracket_spans, note_kind, is_note_only
 
 
 _OPENING = re.compile(r"Mesyuarat\s+dimulakan\b|The\s+[^\n]{0,50}\bmet\s+at\b", re.I)
@@ -46,6 +46,8 @@ def find_proceedings_start(df, keywords):
 def body_blocks(post):
     """Remove opening mastheads, not the chair events embedded within them."""
     result = post.copy()
+    opening_row = True
+    masthead_rows = []
     for index, row in result.iterrows():
         raw = str(row['text']).replace('\r\n', '\n').replace('\r', '\n')
         trimmed = _MALAY_OPENING.sub('', raw, count=1) if index == post.index[0] else raw
@@ -64,6 +66,12 @@ def body_blocks(post):
             result.at[index, 'layout'] = 'LAYOUT_TEXT'
         elif trimmed != raw:
             result.at[index, 'layout'] = 'LAYOUT_TEXT'
+        # OCR can put the chamber masthead after DOA. Ignore only the
+        # opening standalone label, allowing a chair annotation before it.
+        if opening_row and trimmed.strip() and not is_note_only(trimmed):
+            opening_row = False
+            if ' '.join(trimmed.split()).upper() in {'DEWAN RAKYAT', 'DEWAN NEGARA'}:
+                masthead_rows.append(index)
         result.at[index, 'text'] = trimmed
         result.at[index, 'clean'] = ' '.join(trimmed.split())
-    return result
+    return result.drop(index=masthead_rows)
