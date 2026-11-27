@@ -11,6 +11,27 @@ _TRANSLATION = re.compile(
     r"\s*\((?:translated\s+from\s+[^)]+|terjemahan[^)]*)\)", re.I
 )
 _CONNECTORS = {"the", "of", "for", "and", "dan", "di", "yang", "bin", "binti", "a/l", "a/p"}
+_LIST_ITEM = re.compile(
+    r"^\s*(?:\((?:\d+|[a-z]|[ivxlcdm]+)\)|\d+[.)]|[a-z][.)])\s+", re.I,
+)
+
+
+def _speech_text(row):
+    """Keep source list boundaries while joining ordinary wrapped lines."""
+    raw = str(row.get("text", row["clean"]))
+    lines = [line.strip() for line in raw.splitlines() if line.strip()]
+    if sum(bool(_LIST_ITEM.match(line)) for line in lines) < 2:
+        return row["clean"].strip()
+    items = []
+    for line in lines:
+        line = " ".join(line.split())
+        if not items or _LIST_ITEM.match(line):
+            items.append(line)
+        else:
+            items[-1] += " " + line
+    return "\n".join(items)
+
+
 _LABEL_START = re.compile(
     r"^(?:(?:Mr|Mrs|Ms|Dr|Sir|Lord|Dato|Datuk|Datin|Tun|Tunku|Tengku|Raja|Nik|"
     r"Tan|Sri|Tuan|Puan|Encik|Enche|Haji|Hajah|Lt|Kol|Y\.B|Yang|Timbalan|"
@@ -202,11 +223,13 @@ def _note_units(post):
                 for value, annotation in ((raw[cursor:start], False), (raw[start:stop], True)):
                     if value.strip():
                         part = row.copy()
+                        part["text"] = value
                         part["clean"] = " ".join(value.split())
                         yield part, annotation, index if review else None
                 cursor = stop
             if raw[cursor:].strip():
                 part = row.copy()
+                part["text"] = raw[cursor:]
                 part["clean"] = " ".join(raw[cursor:].split())
                 yield part, False, index if review else None
         previous = row
@@ -273,7 +296,7 @@ def segment_blocks(post, initial_timestamp, parse_timestamp, is_question_line):
         source_ends.clear()
 
     for row, annotation, review_ref in _note_units(post):
-        text = row["clean"].strip()
+        text = _speech_text(row)
         if not text:
             continue
         if review_ref is not None:
